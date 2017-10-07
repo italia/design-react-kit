@@ -8,10 +8,11 @@ const Text = props => {
         children,
         smooth,
         clean,
+        size,
         weight,
-        normal,
         secondary,
-        italic,
+        styleNormal,
+        styleItalic,
         preformatted,
         ...rest
     } = props;
@@ -23,10 +24,16 @@ const Text = props => {
             'u-textWeight-400': weight === 400,
             'u-textWeight-600': weight === 600,
             'u-textWeight-700': weight === 700,
-            'u-textNormal': normal && !italic,
-            'u-textItalic': italic,
+            'u-textNormal': styleNormal,
+            'u-textItalic': styleItalic,
             'u-textSecondary': secondary,
             'u-textPreformatted': preformatted,
+            [`u-text-${size}`]:
+                !!size &&
+                ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(size),
+            [`u-text-r-${size}`]:
+                !!size &&
+                ['xxl', 'xl', 'l', 'm', 's', 'xs', 'xxs'].includes(size),
         },
         className,
     );
@@ -54,9 +61,9 @@ const Text = props => {
 Text.defaultProps = {
     smooth: false,
     clean: false,
-    normal: false,
+    styleNormal: false,
     secondary: false,
-    italic: false,
+    styleItalic: false,
     preformatted: false,
 };
 
@@ -66,10 +73,26 @@ Text.propTypes = {
     smooth: PropTypes.bool,
     clean: PropTypes.bool,
     weight: PropTypes.oneOf([400, 600, 700]),
-    normal: PropTypes.bool,
+    styleNormal: PropTypes.bool,
     secondary: PropTypes.bool,
-    italic: PropTypes.bool,
+    styleItalic: PropTypes.bool,
     preformatted: PropTypes.bool,
+    size: PropTypes.oneOf([
+        'xxl',
+        'xl',
+        'l',
+        'm',
+        's',
+        'xs',
+        'xxs',
+        'p',
+        'h1',
+        'h2',
+        'h3',
+        'h4',
+        'h5',
+        'h6',
+    ]),
 };
 
 export default Text;
