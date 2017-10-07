@@ -4,18 +4,9 @@ import PropTypes from 'prop-types';
 import classname from 'classnames';
 
 const Separator = ({colorTop, colorBottom, classNames}) => {
-    const styleTop = classname(
-        {
-            'Separator-room': true,
-        },
-        colorTop,
-        classNames.top
-    );
+    const styleTop = classname('Separator-room', colorTop, classNames.top);
     const styleBottom = classname(
-        {
-            Separator: true,
-            'Separator--up': true,
-        },
+        'Separator Separator--up',
         colorBottom,
         classNames.bottom
     );
