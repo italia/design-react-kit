@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --fix src/",
     "storybook": "start-storybook -p 8010 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o storybook-prod"
+    "build-storybook": "build-storybook -c .storybook -o storybook-prod",
+    "postinstall": "cd node_modules/design-web-toolkit && npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "prettier": "^1.7.4"
   },
   "dependencies": {
+    "design-web-toolkit": "github:italia/design-web-toolkit",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   }

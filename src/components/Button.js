@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({onClick, children}) => (
-    <button onClick={onClick}>{children}</button>
-);
+// import 'design-web-toolkit/build/build.css';
+
+const Button = ({children, ...rest}) => {
+    return (<button className="Button" {...rest}>{children}</button>);
+};
 
 Button.propTypes = {
-    onClick: PropTypes.func,
+    type: PropTypes.oneOf(['info', 'danger']),
     children: PropTypes.node,
 };
 
