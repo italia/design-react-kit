@@ -30,10 +30,10 @@ const Text = props => {
             'u-textPreformatted': preformatted,
             [`u-text-${size}`]:
                 !!size &&
-                ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(size),
+                ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'].indexOf(size) > -1,
             [`u-text-r-${size}`]:
                 !!size &&
-                ['xxl', 'xl', 'l', 'm', 's', 'xs', 'xxs'].includes(size),
+                ['xxl', 'xl', 'l', 'm', 's', 'xs', 'xxs'].indexOf(size) > -1,
         },
         className,
     );
