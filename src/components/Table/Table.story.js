@@ -7,7 +7,7 @@ storiesOf('Table', module)
     .add(
         'Default',
         withInfo('Default')(() => (
-            <Table bordered NameName="u-text-r-xs">
+            <Table bordered className="u-text-r-xs">
                 <caption className="u-hiddenVisually">maiores eius et</caption>
                 <thead>
                     <tr className="u-border-bottom-xs">
