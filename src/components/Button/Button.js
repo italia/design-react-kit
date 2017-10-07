@@ -15,12 +15,6 @@ const Button = ({style, shadow, round, children, link, ...rest}) => {
 
     let ButtonTag = link ? 'a' : 'button';
 
-    // let Element = props => <button type="button" {...props} />;
-    // if (link) {
-    //     Element = function elementA(props) {
-    //         return <a role="button" {...props} />;
-    //     };
-    // }
     return (
         <ButtonTag
             type={!link ? 'button' : undefined}
