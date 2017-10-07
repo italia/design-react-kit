@@ -1,0 +1,10 @@
+language: node_js
+dist: trusty
+
+deploy: 
+  - npm run deploy-storybook
+
+branches:
+  only:
+    - master
+
