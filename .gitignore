@@ -1,3 +1,5 @@
 node_modules
 package-lock.json
+storybook-prod
+npm-debug.log
 .out
