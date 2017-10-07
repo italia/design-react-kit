@@ -2,7 +2,10 @@ language: node_js
 dist: trusty
 
 deploy: 
-  - npm run deploy-storybook
+  provider: script
+  script: npm run deploy-storybook
+  on:
+    branch: master
 
 branches:
   only:
