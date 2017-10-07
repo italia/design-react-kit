@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.org/Roma-JS/design-react.png?branch=master)](https://travis-ci.org/Roma-JS/design-react)
+
 # design-react
 A React toolkit that implements the Italia design system
 
@@ -17,6 +20,8 @@ Just clone the repo and run `npm install` to install dependencies and `npm run s
 The Storybook is then available at http://localhost:8010
 
 ![storybook](/doc/storybook.png?raw=true)
+
+A public version of Storybook is available [here](https://roma-js.github.io/design-react).
 
 ## How to create a new component
 
