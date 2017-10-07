@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --fix src/",
     "storybook": "start-storybook -p 8010 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o storybook-prod",
+    "build-storybook": "build-storybook -c .storybook -o .out",
+    "deploy-storybook": "storybook-to-ghpages",
     "postinstall": "cd node_modules/design-web-toolkit && npm install && npm run build"
   },
   "repository": {
@@ -26,6 +27,7 @@
     "@storybook/addon-console": "^1.0.0",
     "@storybook/addon-info": "^3.2.9",
     "@storybook/react": "^3.2.8",
+    "@storybook/storybook-deployer": "^2.0.0",
     "babel-eslint": "^7.2.3",
     "eslint": "^4.8.0",
     "eslint-config-prettier": "^2.6.0",
