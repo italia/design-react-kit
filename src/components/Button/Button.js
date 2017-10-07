@@ -2,16 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-const Button = ({style, shadow, round, children, link, ...rest}) => {
-    const classes = classnames({
-        Button: true,
-        'Button--default': !style || style === 'default',
-        'Button--info': style === 'info',
-        'Button--danger': style === 'danger',
-        'Button--round': round,
-        'Button--shadow': shadow,
-        'u-text-r-xs': true,
-    });
+const Button = ({type, shadow, round, children, link, className, ...rest}) => {
+    const classes = classnames(
+        {
+            Button: true,
+            'Button--default': !type || type === 'default',
+            'Button--info': type === 'info',
+            'Button--danger': type === 'danger',
+            'Button--round': round,
+            'Button--shadow': shadow,
+        },
+        className,
+    );
 
     let ButtonTag = link ? 'a' : 'button';
 
@@ -27,17 +29,18 @@ const Button = ({style, shadow, round, children, link, ...rest}) => {
 };
 
 Button.defaultProps = {
-    style: 'default',
+    type: 'default',
     shadow: false,
     round: false,
     link: false,
 };
 
 Button.propTypes = {
-    style: PropTypes.oneOf(['info', 'danger', 'default']),
+    type: PropTypes.oneOf(['info', 'danger', 'default']),
     shadow: PropTypes.bool,
     round: PropTypes.bool,
     link: PropTypes.bool,
+    className: PropTypes.string,
     children: PropTypes.node,
 };
 

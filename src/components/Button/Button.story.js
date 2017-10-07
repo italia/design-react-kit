@@ -8,39 +8,53 @@ storiesOf('Button', module)
     .add(
         'Default Button',
         withInfo('Default button')(() => (
-            <div>
-                <Button type="default">Button default</Button>
-                <br />
-                <br />
-                <Button disabled>Button default disabled</Button>
-                <br />
-                <br />
-                <Button shadow>Button default shadow</Button>
-                <br />
-                <br />
-                <Button round>Button default round</Button>
-                <br />
-                <br />
-                <Button shadow round>
-                    Button default round shadow
-                </Button>
-                <br />
-                <br />
-                <Button shadow round link>
-                    LinkButton default round shadow
-                </Button>
-            </div>
+            <ul style={{listStyleType: 'none'}}>
+                <li>
+                    <Button type="default" className="u-text-r-xs">
+                        Button default
+                    </Button>
+                </li>
+                <li>
+                    <Button className="u-text-r-xs" disabled>
+                        Button default disabled
+                    </Button>
+                </li>
+                <li>
+                    <Button className="u-text-r-xs" shadow>
+                        Button default shadow
+                    </Button>
+                </li>
+                <li>
+                    <Button className="u-text-r-xs" round>
+                        Button default round
+                    </Button>
+                </li>
+                <li>
+                    <Button className="u-text-r-xs" shadow round>
+                        Button default round shadow
+                    </Button>
+                </li>
+                <li>
+                    <Button className="u-text-r-xs" shadow round link>
+                        LinkButton default round shadow
+                    </Button>
+                </li>
+            </ul>
         )),
     )
     .add(
         'Info Button',
         withInfo('Info button')(() => (
-            <Button type="info">I am a button</Button>
+            <Button className="u-text-r-xs" type="info">
+                I am a button
+            </Button>
         )),
     )
     .add(
         'Danger Button',
         withInfo('Danger button')(() => (
-            <Button type="danger">I am a button</Button>
+            <Button className="u-text-r-xs" type="danger">
+                I am a button
+            </Button>
         )),
     );
