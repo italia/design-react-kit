@@ -9,7 +9,7 @@ node_js:
 install: npm install
 
 script:
-  - npm test:ci
+  - npm run test:ci
   - npm run build-storybook
 
 deploy:
