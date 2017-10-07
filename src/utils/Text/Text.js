@@ -45,7 +45,10 @@ const Text = props => {
             </div>
         );
     }
-    return React.cloneElement(children, {className: textClass, ...rest});
+    return React.cloneElement(children, {
+        className: classnames(textClass, children.props.className),
+        ...rest,
+    });
 };
 
 Text.defaultProps = {
