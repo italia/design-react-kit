@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jest --watch",
+    "test:ci": "jest",
     "build": "webpack --config webpack.prod.config.js",
     "lint": "eslint --fix src/",
     "storybook": "start-storybook -p 8010 -c .storybook",
