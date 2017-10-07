@@ -8,8 +8,7 @@
     "lint": "eslint --fix src/",
     "storybook": "start-storybook -p 8010 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o .out",
-    "deploy-storybook": "storybook-to-ghpages",
-    "postinstall": "cd node_modules/design-web-toolkit && npm install && npm run build"
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
