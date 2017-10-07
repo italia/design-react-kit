@@ -82,6 +82,7 @@ import {Button, Nav, Alert} from '<package-name>';
 ...
 ```
 
+You can find an example of this [in this repository](https://github.com/Roma-JS/design-react-demo).
 #### Preprocessors
 
 If you're using preprocessors as SASS or Less you can import the CSS directly into your `main` file:
