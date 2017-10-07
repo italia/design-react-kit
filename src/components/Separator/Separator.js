@@ -1,12 +1,43 @@
 import React from 'react';
 
-const Separator = () => {
-  return (
-    <div>
-      <hr className="Separator-room u-background-50" />
-      <hr className="Separator Separator--up u-background-grey-20" />
-    </div>
-  );
+import PropTypes from 'prop-types';
+import classname from 'classnames';
+
+const Separator = ({colorTop, colorBottom, classNames}) => {
+    const styleTop = classname(
+        {
+            'Separator-room': true,
+        },
+        colorTop,
+        classNames.top
+    );
+    const styleBottom = classname(
+        {
+            Separator: true,
+            'Separator--up': true,
+        },
+        colorBottom,
+        classNames.bottom
+    );
+    return (
+        <div>
+            <hr className={styleTop} />
+            <hr className={styleBottom} />
+        </div>
+    );
+};
+
+Separator.propTypes = {
+    colorTop: PropTypes.string,
+    colorBottom: PropTypes.string,
+    classNames: PropTypes.shape({
+        top: PropTypes.string,
+        bottom: PropTypes.string,
+    }),
+};
+
+Separator.defaultProps = {
+    classNames: {},
 };
 
 export default Separator;

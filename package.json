@@ -37,6 +37,7 @@
     "prettier": "^1.7.4"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "design-web-toolkit": "github:italia/design-web-toolkit",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
