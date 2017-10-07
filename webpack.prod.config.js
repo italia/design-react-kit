@@ -17,13 +17,6 @@ module.exports = {
                 test: /\.jsx?/,
                 loader: 'babel-loader',
                 include: path.join(__dirname, 'src'),
-                query: {
-                    presets: ['airbnb'],
-                    plugins: [
-                        'transform-object-rest-spread',
-                        'transform-class-properties',
-                    ],
-                },
             },
             {
                 test: /\.json$/,
