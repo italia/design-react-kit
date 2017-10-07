@@ -4,18 +4,10 @@ dist: trusty
 node_js:
   - "8.4"
 
-install: npm install
-
-script:
-  - npm test
-  - npm run build-storybook
-
 deploy:
-  provider: pages
-  repo: roma-js/design-react
+  provider: script
+  script: npm run deploy-storybook
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: .out
   on:
     branch: master
 
