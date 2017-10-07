@@ -2,9 +2,10 @@
   "name": "italia-design-react",
   "version": "1.0.0",
   "description": "Italia UI Toolkit",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "webpack --config webpack.prod.config.js",
     "lint": "eslint --fix src/",
     "storybook": "start-storybook -p 8010 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o .out",
@@ -15,7 +16,7 @@
     "url": "git+https://github.com/italia/design-react.git"
   },
   "author": "",
-  "license": "GNU Lesser General Public License v2.1",
+  "license": "LGPLv2.1",
   "bugs": {
     "url": "https://github.com/italia/design-react/issues"
   },
@@ -28,6 +29,7 @@
     "@storybook/react": "^3.2.8",
     "@storybook/storybook-deployer": "^2.0.0",
     "babel-eslint": "^7.2.3",
+    "babel-preset-airbnb": "^2.4.0",
     "eslint": "^4.8.0",
     "eslint-config-prettier": "^2.6.0",
     "eslint-plugin-flowtype": "^2.39.1",
@@ -35,6 +37,7 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
+    "extract-text-webpack-plugin": "^3.0.1",
     "prettier": "^1.7.4"
   },
   "dependencies": {
