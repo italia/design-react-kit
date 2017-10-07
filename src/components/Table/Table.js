@@ -38,7 +38,7 @@ class Table extends React.Component {
 
         if (responsive) {
             // eslint-disable-next-line
-            console.log('TODO: responsive behaviour not implemented yet!');
+            console.info('TODO: responsive behaviour not implemented yet!');
         }
 
         const styles = classnames(
