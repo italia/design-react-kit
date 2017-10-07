@@ -64,7 +64,31 @@ The static pages of the building process are stored in the `out` folder.
 
 ### Module
 
-TBD
+To use the React UIKit as module in the app you can install it directly from npm:
+
+```sh
+$ npm install <package-name>
+```
+
+Then start to use the components in your app:
+
+```jsx
+import React from 'react';
+import {Button, Nav, Alert} from '<package-name>';
+
+// If you want to handle the css with webpack uncomment this line
+// import '<package-name>/lib/index.css';
+
+...
+```
+
+#### Preprocessors
+
+If you're using preprocessors as SASS or Less you can import the CSS directly into your `main` file:
+
+```scss
+@import '<package-name>/lib/index.css;
+```
 
 ## Continuous Integration
 
