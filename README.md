@@ -16,7 +16,7 @@ Just clone the repo and run `npm install` to install dependencies and `npm run s
 
 The Storybook is then available at http://localhost:8010
 
-![storybook](/doc/storybook.png\)
+![storybook](/doc/storybook.png?raw=true)
 
 ## How to create a new component
 
