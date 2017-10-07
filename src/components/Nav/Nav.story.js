@@ -22,5 +22,5 @@ storiesOf('Navscroll', module).add(
             <NavItem onClick={action('clicked')}>Modi nostrum expedita</NavItem>
             <NavItem onClick={action('clicked')}>Et dolores quae</NavItem>
         </Nav>
-    )),
+    ))
 );

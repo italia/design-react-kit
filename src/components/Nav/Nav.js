@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import NavItem from './NavItem';
 
 const Nav = ({children}) => {
     return (
@@ -10,7 +11,7 @@ const Nav = ({children}) => {
 };
 
 Nav.propTypes = {
-    children: PropTypes.node,
+    children: PropTypes.oneOfType([PropTypes.arrayOf(NavItem), NavItem]),
 };
 
 export default Nav;
