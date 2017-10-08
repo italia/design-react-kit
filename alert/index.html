@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<title>Alerts</title>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<link rel="stylesheet" href="https://italia.github.io/design-web-toolkit/components/raw/alert/index.css"></link>
+<script src="https://fb.me/react-0.14.3.js"></script><script src="https://fb.me/react-dom-0.14.3.js"></script><script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script><script type="text/babel" src="http://appleseed-apps.it/hackdev//views/react_components/Alert.jsx"></script><link rel="stylesheet" href="https://italia.github.io/design-web-toolkit/build/build.css"></link>
+</head>
+<body>
+	
+
+<pre>
+	&lt;Alert /&gt;
+	&lt;Alert type=&quot;error&quot; title=&quot;Error&quot; /&gt;
+	&lt;Alert type=&quot;warning&quot; title=&quot;Warning&quot; /&gt;
+	&lt;Alert type=&quot;success&quot; title=&quot;Success&quot; /&gt;
+	&lt;Alert type=&quot;info&quot; title=&quot;Info&quot; /&gt;
+	
+</pre>
+
+<div id="alert"></div>
+<div id="alert1"></div>
+<div id="alert2"></div>
+<div id="alert3"></div>
+<div id="alert4"></div>
+<div id="alert5"></div>
+<script type="text/babel">
+
+ReactDOM.render(
+	<Alert />,
+	document.getElementById("alert1")
+);
+ReactDOM.render(
+<Alert type="error" title="Error" />,
+	document.getElementById("alert2")
+);
+ReactDOM.render(
+<Alert type="warning" title="Warning" />,
+	document.getElementById("alert3")
+);
+ReactDOM.render(
+<Alert type="success" title="Success" />,
+	document.getElementById("alert4")
+);
+ReactDOM.render(
+<Alert type="info" title="Info" />,
+	document.getElementById("alert5")
+);
+
+</script>
+
+</body>
+</html>

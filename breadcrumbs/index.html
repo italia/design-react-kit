@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+<script src="https://fb.me/react-0.14.3.js"></script><script src="https://fb.me/react-dom-0.14.3.js"></script><script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel" src="http://appleseed-apps.it/hackdev//views/react_components/Breadcrumbs.jsx"></script><link rel="stylesheet" href="https://italia.github.io/design-web-toolkit/build/build.css"></link>
+</head>
+<body>
+<div id="breadcrumb"></div>
+<script type="text/babel">
+
+ReactDOM.render(
+<Breadcrumbs>
+	<BreadcrumbItem url="#">Home</BreadcrumbItem>
+	<BreadcrumbItem url="#"><img src="http://via.placeholder.com/15x15"/>Page</BreadcrumbItem>
+</Breadcrumbs>,
+document.getElementById("breadcrumb")
+);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css"></link>
+
+
+<script src="https://fb.me/react-0.14.3.js"></script><script src="https://fb.me/react-dom-0.14.3.js"></script><script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel" src="http://appleseed-apps.it/hackdev//views/react_components/DateInput.jsx"></script><script type="text/babel" src="http://appleseed-apps.it/hackdev//views/react_components/DatePicker.jsx"></script><link rel="stylesheet" href="https://italia.github.io/design-web-toolkit/build/build.css"></link>
+</head>
+<body>
+	
+	
+  <div class="u-margin-all-m">
+  <h2>Senza datepicker</h2></div>
+
+<div class="u-margin-all-m">
+
+  <form class="Form Form--spaced u-padding-all-xl u-background-grey-10 u-text-r-xs u-layout-prose"  id="datainput">
+    
+  </form>
+
+</div>
+
+<div class="u-margin-all-m">
+  <h2>Con datepicker</h2></div>
+
+<div class="u-margin-all-m">
+<form  class="Form Form--spaced u-padding-all-xl u-background-grey-10 u-text-r-xs u-layout-prose" id="datapick"></form>
+
+</div>
+	
+	
+	
+<script type="text/babel">
+
+ReactDOM.render(
+<DatePicker />,
+document.getElementById("datapick")
+);
+ReactDOM.render(
+<DateInput />,
+document.getElementById("datainput")
+);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<title>Callouts</title>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<link rel="stylesheet" href="https://italia.github.io/design-web-toolkit/components/raw/callout/index.css"></link>
+<script src="https://fb.me/react-0.14.3.js"></script><script src="https://fb.me/react-dom-0.14.3.js"></script><script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script><script type="text/babel" src="http://appleseed-apps.it/hackdev/component/views/react_components/Callout.jsx"></script><link rel="stylesheet" href="https://italia.github.io/design-web-toolkit/build/build.css"></link>
+</head>
+<body>
+<div id="callout"></div>
+<div id="callout1"></div>
+<div id="callout2"></div>
+<div id="callout3"></div>
+<div id="callout4"></div>
+<div id="callout5"></div>
+<script type="text/babel">
+
+ReactDOM.render(
+	<Callout />,
+	document.getElementById("callout1")
+);
+ReactDOM.render(
+<Callout type="must" title="must" />,
+	document.getElementById("callout2")
+);
+ReactDOM.render(
+<Callout type="should" title="should" />,
+	document.getElementById("callout3")
+);
+ReactDOM.render(
+<Callout type="could" title="could" />,
+	document.getElementById("callout4")
+);
+ReactDOM.render(
+<Callout type="example" title="example" />,
+	document.getElementById("callout5")
+);
+
+</script>
+
+</body>
+</html>
+
