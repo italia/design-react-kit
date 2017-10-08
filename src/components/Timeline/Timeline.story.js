@@ -9,7 +9,7 @@ storiesOf('Timeline', module).add(
     withInfo('Default')(() => (
         <div className="u-padding-all-xxl u-background-grey-15 u-sizeFull">
             <Timeline
-                title={<div className="u-textWeight-700">et</div>}
+                title="et"
                 background="u-background-95"
                 color="u-color-white">
                 <TimelineContent
@@ -27,7 +27,7 @@ storiesOf('Timeline', module).add(
                 </TimelineContent>
             </Timeline>
             <Timeline
-                title={<div className="u-textWeight-700">minima</div>}
+                title={<span className="u-textWeight-700">minima</span>}
                 background="u-background-95"
                 color="u-color-white">
                 <TimelineContent
@@ -45,7 +45,7 @@ storiesOf('Timeline', module).add(
                 </TimelineContent>
             </Timeline>
             <Timeline
-                title={<div className="u-textWeight-700">et</div>}
+                title="et"
                 background="u-background-95"
                 color="u-color-white">
                 <TimelineContent

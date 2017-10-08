@@ -27,6 +27,7 @@
     "@storybook/addon-actions": "^3.2.6",
     "@storybook/addon-console": "^1.0.0",
     "@storybook/addon-info": "^3.2.9",
+    "@storybook/addon-storyshots": "^3.2.12",
     "@storybook/react": "^3.2.8",
     "@storybook/storybook-deployer": "^2.0.0",
     "babel-eslint": "^7.2.3",
@@ -41,7 +42,8 @@
     "extract-text-webpack-plugin": "^3.0.1",
     "jest": "^21.2.1",
     "prettier": "^1.7.4",
-    "raw-loader": "^0.5.1"
+    "raw-loader": "^0.5.1",
+    "react-test-renderer": "^15.6.1"
   },
   "dependencies": {
     "classnames": "^2.2.5",
