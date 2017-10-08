@@ -67,6 +67,11 @@ $ npm run build-storybook
 
 The static pages of the building process are stored in the `out` folder.
 
+#### known issues (open pull requests)
+
+  - [Show JSX if PropVal is a React element](https://github.com/storybooks/storybook/pull/1455)
+  - [Fixed prop type validation errors in info addon](https://github.com/storybooks/storybook/pull/1374)
+
 ### Module
 
 To use the React UIKit as module in the app you can install it directly from npm:
@@ -99,5 +104,4 @@ If you're using preprocessors as SASS or Less you can import the CSS directly in
 ## Continuous Integration
 
 There's a TravisCI instance configured to run on this repository every time the `master` branch is updated. Currently only the Storybook build is deployed to the `gh-pages` branch and it is publicly visible at `https://<user>.github.io/design-react` - you need to configure Travis for your repo.
-
 
