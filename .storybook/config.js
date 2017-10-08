@@ -1,4 +1,5 @@
-import {configure} from '@storybook/react';
+import React from 'react';
+import {configure, addDecorator} from '@storybook/react';
 import '@storybook/addon-actions/register';
 import '@storybook/addon-console';
 import '../src/index.css';
@@ -11,4 +12,5 @@ function loadStories() {
     req.keys().forEach(filename => req(filename));
 }
 
+addDecorator(story => <div className="c-hideFocus">{story()}</div>);
 configure(loadStories, module);
