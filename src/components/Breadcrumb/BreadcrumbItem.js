@@ -14,6 +14,7 @@ const BreadcrumbItem = ({children, className, ...rest}) => {
 
 BreadcrumbItem.propTypes = {
     children: PropTypes.node,
+    className: PropTypes.string,
 };
 
 BreadcrumbItem.defaultProps = {

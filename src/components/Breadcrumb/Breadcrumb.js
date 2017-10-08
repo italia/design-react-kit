@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BreadcrumbItem from './BreadcrumbItem';
+// import BreadcrumbItem from './BreadcrumbItem';
 
 const Breadcrumb = ({children}) => {
     return (
@@ -10,18 +10,16 @@ const Breadcrumb = ({children}) => {
     );
 };
 
+/**
+ * è stato necessario disabilitare il typecheck per un'incompatibilità su storybook in caso di
+ * un unico figlio
+ */
 Breadcrumb.propTypes = {
-    children: PropTypes.oneOfType([
-        PropTypes.arrayOf(BreadcrumbItem),
-        BreadcrumbItem,
-    ]),
+    children: PropTypes.node,
+    // children: PropTypes.oneOfType([
+    //     PropTypes.arrayOf(BreadcrumbItem),
+    //     BreadcrumbItem,
+    // ]),
 };
 
 export default Breadcrumb;
-
-//     <ul class="Breadcrumb">
-//     <li class="Breadcrumb-item"><a class="Breadcrumb-link u-color-50" href="/">Home</a></li>
-//     <li class="Breadcrumb-item"><a class="Breadcrumb-link u-color-50" href="/">pagina interna</a></li>
-//     <li class="Breadcrumb-item"><a class="Breadcrumb-link u-color-50" href="/">pagina interna</a></li>
-//     <li class="Breadcrumb-item"><a class="Breadcrumb-link u-color-50" href="#main">pagina corrente</a></li>
-// </ul>
