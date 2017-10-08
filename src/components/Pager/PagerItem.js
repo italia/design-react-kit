@@ -21,15 +21,17 @@ const PagerItem = ({
     const wrapperStyle = classnames('Grid-cell u-textCenter', {
         'u-hidden u-md-inlineBlock u-lg-inlineBlock': responsive,
     });
-    const inner = linkable ? (
+    const link = (
         <a href={href} className={style} onClick={onClick} {...rest}>
             {children}
         </a>
-    ) : (
+    );
+    const spanTag = (
         <span className={style} {...rest}>
             {children}
         </span>
     );
+    const inner = linkable ? link : spanTag;
 
     return (
         <li className={wrapperStyle} aria-hidden={`${!linkable}`}>
