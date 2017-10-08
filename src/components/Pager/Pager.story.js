@@ -4,7 +4,6 @@ import {withInfo} from '@storybook/addon-info';
 import Pager from './Pager';
 import PagerItem from './PagerItem';
 import {findTheReadme} from '../../../.storybook/helpers';
-console.log(findTheReadme('pager'));
 
 storiesOf('Pager', module)
     .add(
@@ -86,11 +85,15 @@ storiesOf('Pager', module)
                     <span className="u-text-r-m">...</span>
                 </PagerItem>
                 <PagerItem
-                    responsive
                     aria-label="Pagina 12"
                     href="/page-12"
                     className="u-padding-r-all u-background-50 u-color-white">
-                    <span className="u-text-r-m">12</span>
+                    <span className="u-text-r-s">
+                        <span className="u-md-hidden u-lg-hidden">
+                            Pagina
+                        </span>{' '}
+                        12
+                    </span>
                 </PagerItem>
                 <PagerItem
                     responsive
@@ -106,7 +109,7 @@ storiesOf('Pager', module)
                     className="u-padding-r-all u-color-50">
                     <span className="u-text-r-m">14</span>
                 </PagerItem>
-                <PagerItem responsive className="u-color-50">
+                <PagerItem className="u-color-50">
                     <span
                         className="Icon-chevron-right u-text-r-m"
                         role="presentation"
