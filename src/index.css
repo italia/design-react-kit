@@ -1,1 +1,5 @@
 @import './styles/build.css';
+
+body {
+    font-family: Titillium Web,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+}
