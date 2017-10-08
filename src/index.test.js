@@ -16,9 +16,18 @@ test('Nav is defined', () => {
 test('NavItem is defined', () => {
     expect(UI.NavItem).toBeDefined();
 });
+test('Table is defined', () => {
+    expect(UI.Pager).toBeDefined();
+});
+test('Table is defined', () => {
+    expect(UI.PagerItem).toBeDefined();
+});
 test('Separator is defined', () => {
     expect(UI.Separator).toBeDefined();
 });
 test('Table is defined', () => {
     expect(UI.Table).toBeDefined();
+});
+test('Table is defined', () => {
+    expect(UI.Text).toBeDefined();
 });
