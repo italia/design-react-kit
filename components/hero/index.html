@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+<script src="https://fb.me/react-0.14.3.js"></script><script src="https://fb.me/react-dom-0.14.3.js"></script><script crossorigin charset="utf-8" src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script type="text/babel" src="../../views/react_components/Button.jsx"></script><script type="text/babel" src="../../views/react_components/Hero.jsx"></script><link rel="stylesheet" href="https://italia.github.io/design-web-toolkit/build/build.css"></link>
+</head>
+<body>
+<div id="hero"></div>
+<script type="text/babel">
+
+ReactDOM.render(
+<Hero background="http://via.placeholder.com/350x150">
+	<p className="u-padding-r-bottom u-padding-r-top u-text-r-xs">
+		<a href="#" className="u-textClean u-color-60 u-text-h4"><span className="Dot u-background-60"></span>categoria</a>
+	</p>
+	<h2 className="u-text-h2 u-color-95">aut dolores exercitationem</h2>
+	<p className="u-padding-r-bottom u-padding-r-top u-text-p u-margin-r-bottom">Quis et id repellat harum eligendi natus. Animi voluptatem adipisci ea autem possimus laboriosam vitae deleniti voluptas. Optio veritatis in hic non illo. Dolores nam in veniam repellat aut id qui dolor.</p>
+	<Button text="aut dolores exercitationem" shadow={true} round={true} link="#"/>,
+</Hero>,
+document.getElementById("hero")
+);
+</script>
+
+</body>
+</html>

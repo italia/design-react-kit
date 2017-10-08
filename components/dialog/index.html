@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>Dialog</title>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://italia.github.io/design-web-toolkit/build/vendor/modernizr.js"></script>
+
+		<script type="text/javascript" src="https://github.com/frend/frend.co/blob/gh-pages/_components/dialogmodal/dialogmodal.js"></script>
+		<script type="text/javascript" src="../../assets/fr-dialogmodal.js"></script>
+						<script src="https://fb.me/react-0.14.3.js"></script><script src="https://fb.me/react-dom-0.14.3.js"></script><script crossorigin charset="utf-8" src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>		<script type="text/babel" src="../../views/react_components/Button.jsx"></script><script type="text/babel" src="../../views/react_components/Dialog.jsx"></script>		<link rel="stylesheet" href="https://github.com/frend/frend.co/blob/gh-pages/_components/dialogmodal/dialogmodal.css"></link>
+		<link rel="stylesheet" href="https://italia.github.io/design-web-toolkit/build/build.css"></link>
+	</head>
+	<body>
+		<div id="dialog"></div>
+		<script type="text/babel">
+			ReactDOM.render(
+				<div>
+					<Button dialog="open" dialogcontrol={"moddalino"} text="Apriaml"/>
+					<Dialog control={"moddalino"}>
+						<DialogTitle />
+						<p>
+							Consequatur in quis nemo quidem. In laborum eum repellendus aut. Non similique iure magni iusto numquam nam delectus eum. Enim possimus dolorum similique architecto sed iste. Nobis eligendi labore sit. Maiores architecto ut culpa blanditiis voluptatem.
+							Facere qui cumque ducimus vitae qui consequuntur totam ut. Aut delectus sint vitae nemo explicabo rerum molestiae id tempora. Quod dolor voluptatem quia aspernatur. Soluta vel et. Tempore est earum laborum neque totam ad officiis perferendis
+							enim. Aliquid necessitatibus soluta aut harum est sed. Voluptates blanditiis eos est. Asperiores doloremque beatae modi reprehenderit eveniet ullam distinctio consequatur.
+						</p>
+						<Button dialog="close" style="danger" dialogcontrol={"moddalino"} text="Chiudiaml" classes="u-floatRight" />
+					</Dialog>
+				</div>,
+				document.getElementById('dialog')
+			);
+		</script>
+
+
+	</body>
+</html>

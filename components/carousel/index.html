@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<title>Carousel</title>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://italia.github.io/design-web-toolkit/build/vendor/modernizr.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"></link>
+<link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"></link>
+<script src="https://fb.me/react-0.14.3.js"></script><script src="https://fb.me/react-dom-0.14.3.js"></script>
+<script crossorigin charset="utf-8" src="https://unpkg.com/babel-standalone@6/babel.min.js" charset="utf-8"></script>
+<script type="text/babel" src="../../views/react_components/Carousel.jsx"></script><script type="text/babel" src="../../views/react_components/PlaceholderFigure.jsx"></script><link rel="stylesheet" href="https://italia.github.io/design-web-toolkit/build/build.css"></link>
+</head>
+<body>
+	
+	
+	
+	<div id="carouselcontainer"></div>
+<script type="text/babel">
+
+	ReactDOM.render(
+		<Carousel>
+			<CarouselItem>
+				<PlaceholderFigure src="//placehold.it/370x205?text=7" title="Foto" content="Amet adipisci cumque odio voluptas." />
+			</CarouselItem>
+			<CarouselItem>
+				<PlaceholderFigure src="//placehold.it/370x205?text=7" title="Foto" content="Amet adipisci cumque odio voluptas." />
+			</CarouselItem>
+			<CarouselItem>
+				<PlaceholderFigure src="//placehold.it/370x205?text=7" title="Foto" content="Amet adipisci cumque odio voluptas." />
+			</CarouselItem>
+			<CarouselItem>
+				<PlaceholderFigure src="//placehold.it/370x205?text=7" title="Foto" content="Amet adipisci cumque odio voluptas." />
+			</CarouselItem>
+			<CarouselItem>
+				<PlaceholderFigure src="//placehold.it/370x205?text=7" title="Foto" content="Amet adipisci cumque odio voluptas." />
+			</CarouselItem>
+			<p className="u-padding-r-top u-text-r-xl">
+				<a href="#" className="u-layout-centerLeft u-padding-r-top u-text-h4 u-textWeight-700 u-color-teal-50">Vedi tutte le gallerie</a>
+			</p>
+		</Carousel>,
+		document.getElementById('carouselcontainer')
+	);
+</script>
+
+</body>
+</html>
+
+
+

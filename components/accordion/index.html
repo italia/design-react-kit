@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<script src="../../assets/fraccordion.min.js"></script>
+
+<script src="https://fb.me/react-0.14.3.js"></script><script src="https://fb.me/react-dom-0.14.3.js"></script><script crossorigin charset="utf-8" src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel" src="../../views/react_components/Accordion.jsx"></script><link rel="stylesheet" href="https://italia.github.io/design-web-toolkit/build/build.css"></link>
+<link rel="stylesheet" href="https://italia.github.io/design-web-toolkit/components/raw/accordion/index.css"></link>
+</head>
+<body>
+
+
+<pre>
+&lt;Accordion multi=&quot;false&quot; &gt;
+	&lt;AccordionItemTitle title=&quot;1&quot; /&gt;
+	&lt;AccordionItem &gt;
+		&lt;p className=&quot;u-layout-prose u-color-grey-90 u-text-p u-padding-r-all&quot;&gt;
+		Voluptate ut voluptatem sit earum ipsam sint. Aut unde explicabo eos dolor rerum eum et. Maxime aliquam deserunt. Non officiis eos fugit in perferendis.
+		&lt;/p&gt;
+	&lt;/AccordionItem&gt;
+	&lt;AccordionItemTitle title=&quot;Titolo&quot; /&gt;
+	&lt;AccordionItem &gt;
+		&lt;p className=&quot;u-layout-prose u-color-grey-90 u-text-p u-padding-r-all&quot;&gt;
+		Voluptate ut voluptatem sit earum ipsam sint. Aut unde explicabo eos dolor rerum eum et. Maxime aliquam deserunt. Non officiis eos fugit in perferendis.
+		&lt;/p&gt;
+	&lt;/AccordionItem&gt;
+	&lt;AccordionItemTitle title=&quot;2&quot;/&gt;
+	&lt;AccordionItem &gt;
+		&lt;p className=&quot;u-layout-prose u-color-grey-90 u-text-p u-padding-r-all&quot;&gt;
+		Voluptate ut voluptatem sit earum ipsam sint. Aut unde explicabo eos dolor rerum eum et. Maxime aliquam deserunt. Non officiis eos fugit in perferendis.
+		&lt;/p&gt;
+	&lt;/AccordionItem&gt;
+	&lt;AccordionItemTitle title=&quot;3&quot;/&gt;
+	&lt;AccordionItem &gt;
+		&lt;p className=&quot;u-layout-prose u-color-grey-90 u-text-p u-padding-r-all&quot;&gt;
+		Voluptate ut voluptatem sit earum ipsam sint. Aut unde explicabo eos dolor rerum eum et. Maxime aliquam deserunt. Non officiis eos fugit in perferendis.
+		&lt;/p&gt;
+	&lt;/AccordionItem&gt;
+&lt;/Accordion&gt;
+</pre>
+
+<div id="accordion"></div>
+
+<script type="text/babel">
+
+ReactDOM.render(
+<Accordion multi="false" >
+	<AccordionItemTitle title="1" />
+	<AccordionItem >
+		<p className="u-layout-prose u-color-grey-90 u-text-p u-padding-r-all">
+		Voluptate ut voluptatem sit earum ipsam sint. Aut unde explicabo eos dolor rerum eum et. Maxime aliquam deserunt. Non officiis eos fugit in perferendis.
+		</p>
+	</AccordionItem>
+	<AccordionItemTitle title="Titolo" />
+	<AccordionItem >
+		<p className="u-layout-prose u-color-grey-90 u-text-p u-padding-r-all">
+		Voluptate ut voluptatem sit earum ipsam sint. Aut unde explicabo eos dolor rerum eum et. Maxime aliquam deserunt. Non officiis eos fugit in perferendis.
+		</p>
+	</AccordionItem>
+	<AccordionItemTitle title="2"/>
+	<AccordionItem >
+		<p className="u-layout-prose u-color-grey-90 u-text-p u-padding-r-all">
+		Voluptate ut voluptatem sit earum ipsam sint. Aut unde explicabo eos dolor rerum eum et. Maxime aliquam deserunt. Non officiis eos fugit in perferendis.
+		</p>
+	</AccordionItem>
+	<AccordionItemTitle title="3"/>
+	<AccordionItem >
+		<p className="u-layout-prose u-color-grey-90 u-text-p u-padding-r-all">
+		Voluptate ut voluptatem sit earum ipsam sint. Aut unde explicabo eos dolor rerum eum et. Maxime aliquam deserunt. Non officiis eos fugit in perferendis.
+		</p>
+	</AccordionItem>
+</Accordion>,
+document.getElementById("accordion")
+);
+</script>
+
+</body>
+</html>
