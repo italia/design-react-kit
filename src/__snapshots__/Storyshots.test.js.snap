@@ -4116,7 +4116,7 @@ exports[`Storyshots Breadcrumb Breadcrumb 1`] = `
                     children
                   </td>
                   <td>
-                    other
+                    node
                   </td>
                   <td>
                     no
@@ -4176,6 +4176,21 @@ exports[`Storyshots Breadcrumb Breadcrumb 1`] = `
                   </td>
                   <td>
                     node
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    className
+                  </td>
+                  <td>
+                    string
                   </td>
                   <td>
                     no
