@@ -16,7 +16,8 @@
     "type": "git",
     "url": "git+https://github.com/italia/design-react.git"
   },
-  "author": "",
+  "author": { "name" : "RomaJS", "url" : "http://romajs.org/"},
+  "contributors": ["Matteo Manchi <matteo.manchi@gmail.com>", "Marco Liberati <dej611@gmail.com>", "Paolo Mariotti <mariotti.pro@gmail.com>"],
   "license": "LGPLv2.1",
   "bugs": {
     "url": "https://github.com/italia/design-react/issues"
