@@ -10,6 +10,10 @@ const Nav = ({children}) => {
     );
 };
 
+/**
+ * è stato necessario disabilitare il typecheck per un'incompatibilità su storybook in caso di
+ * un unico figlio
+ */
 Nav.propTypes = {
     children: PropTypes.node,
     // children: PropTypes.oneOfType([PropTypes.arrayOf(NavItem), NavItem]),

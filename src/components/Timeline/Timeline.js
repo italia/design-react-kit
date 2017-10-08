@@ -27,6 +27,10 @@ Timeline.defaultProps = {
     children: <TimelineContent />,
 };
 
+/**
+ * è stato necessario disabilitare il typecheck per un'incompatibilità su storybook in caso di
+ * un unico figlio
+ */
 Timeline.propTypes = {
     children: PropTypes.node.isRequired,
     // children: PropTypes.oneOfType([TimelineContent]).isRequired,
