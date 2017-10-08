@@ -12,6 +12,6 @@ export {default as Table} from './components/Table/Table';
 export {default as Timeline} from './components/Timeline/Timeline';
 export {
     default as TimelineContent,
-} from './components/TimelineContent/TimelineContent';
+} from './components/Timeline/TimelineContent';
 
 export {default as Text} from './utils/Text/Text';
