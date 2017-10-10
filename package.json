@@ -16,8 +16,15 @@
     "type": "git",
     "url": "git+https://github.com/italia/design-react.git"
   },
-  "author": { "name" : "RomaJS", "url" : "http://romajs.org/"},
-  "contributors": ["Matteo Manchi <matteo.manchi@gmail.com>", "Marco Liberati <dej611@gmail.com>", "Paolo Mariotti <mariotti.pro@gmail.com>"],
+  "author": {
+    "name": "RomaJS",
+    "url": "http://romajs.org/"
+  },
+  "contributors": [
+    "Matteo Manchi <matteo.manchi@gmail.com>",
+    "Marco Liberati <dej611@gmail.com>",
+    "Paolo Mariotti <mariotti.pro@gmail.com>"
+  ],
   "license": "LGPLv2.1",
   "bugs": {
     "url": "https://github.com/italia/design-react/issues"
@@ -32,6 +39,7 @@
     "@storybook/react": "^3.2.8",
     "@storybook/storybook-deployer": "^2.0.0",
     "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-airbnb": "^2.4.0",
     "eslint": "^4.8.0",
     "eslint-config-prettier": "^2.6.0",
