@@ -1,0 +1,26 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+
+node_js:
+  - "8.4"
+
+install: npm install
+
+script:
+  - npm run test:ci
+  - npm run build-storybook
+
+deploy:
+  provider: pages
+  repo: roma-js/design-react
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: .out
+  on:
+    branch: master
+
+branches:
+  only:
+    - master
