@@ -1,6 +1,6 @@
 
 [![Build Status](https://travis-ci.org/Roma-JS/design-react.svg?branch=master)](https://travis-ci.org/Roma-JS/design-react)
-[![Join the #design-react channel](https://img.shields.io/badge/Slack%20channel-%23design--react-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
+[![Join the #design-js channel](https://img.shields.io/badge/Slack%20channel-%23design--js-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
 [![Get invited](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
 
 
