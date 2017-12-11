@@ -5,6 +5,7 @@ cache:
 
 node_js:
   - "8.7"
+  - "9"
 
 install: npm install
 
@@ -14,7 +15,7 @@ script:
 
 deploy:
   provider: pages
-  repo: roma-js/design-react
+  repo: italia/design-react
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: .out
