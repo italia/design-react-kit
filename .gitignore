@@ -1,6 +1,8 @@
+# Dependencies
 node_modules
-package-lock.json
-storybook-prod
+
+# Outputs
+dist
+
+# Logs
 npm-debug.log
-.out
-lib
