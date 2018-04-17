@@ -59,7 +59,8 @@ export {
   ListGroup,
   Form,
   FormFeedback,
-  FormGroup,
+  // Overridden below
+  // FormGroup,
   FormText,
   Input,
   InputGroup,
@@ -86,3 +87,11 @@ export {
   UncontrolledTooltip,
   Util
 } from "reactstrap";
+
+export { default as Autocomplete } from "./Autocomplete";
+export { default as FormGroup } from "./FormGroup";
+export { default as PasswordInput } from "./PasswordInput";
+export { default as PasswordMeter } from "./PasswordMeter";
+export { default as Scrollspy } from "./Scrollspy";
+export { default as Select } from "./Select";
+export { default as Toggle } from "./Toggle";

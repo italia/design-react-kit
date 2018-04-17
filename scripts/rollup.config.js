@@ -33,7 +33,13 @@ export default [
         include: "node_modules/**"
       }),
       babel({
-        plugins: ["external-helpers"]
+        exclude: "node_modules/**",
+        presets: [["env", { modules: false }], "react"],
+        plugins: [
+          "transform-class-properties",
+          "transform-object-rest-spread",
+          "external-helpers"
+        ]
       })
     ]
   }
