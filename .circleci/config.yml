@@ -1,0 +1,71 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+
+aliases:
+  - &working_directory
+    ~/repo
+
+  - &restore_cache
+    keys:
+    - v1-dependencies-{{ checksum "package.json" }}
+    # fallback to using the latest cache if no exact match is found
+    - v1-dependencies-
+
+  - &npm_install
+    name: Install Packages
+    command: npm install
+
+  - &save_cache
+    paths:
+      - node_modules
+    key: v1-dependencies-{{ checksum "package.json" }}
+
+defaults: &defaults
+  docker:
+    # specify the version you desire here
+    - image: circleci/node:8
+
+  working_directory: *working_directory
+
+jobs:
+  build:
+    <<: *defaults
+
+    steps:
+      - checkout
+
+      - run:
+          name: Check versions
+          command: |
+            node --version
+            npm --version
+            docker --version
+
+      # Download and cache dependencies
+      - restore_cache: *restore_cache
+      - run: *npm_install
+      - save_cache: *save_cache
+
+      - run:
+          name: Build
+          command: npm run build
+
+      # Persist the specified paths (workspace/echo-output) into the workspace 
+      # for use in downstream job. Must be an absolute path, or relative path 
+      # from working_directory. This is a directory on the container which is 
+      # taken to be the root directory of the workspace.
+      - persist_to_workspace:
+          root: *working_directory
+          paths:
+            - dist
+
+# Workflows enable multiple jobs in parallel
+workflows:
+  version: 2
+
+  deploy:
+    jobs:
+      - build
