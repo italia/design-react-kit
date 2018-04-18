@@ -1,0 +1,5 @@
+.circleci
+.storybook
+scripts
+stories
+storybook-static
