@@ -35,14 +35,14 @@
 		"lint": "eslint --fix src/"
 	},
 	"devDependencies": {
-		"@improntaadvance/eslint-config": "^0.8.2",
+		"@sambego/storybook-state": "^1.0.7",
 		"@storybook/addon-actions": "^3.4.1",
 		"@storybook/addon-console": "^1.0.0",
 		"@storybook/addon-knobs": "^3.4.1",
 		"@storybook/addon-info": "^3.4.1",
 		"@storybook/addon-options": "^3.4.1",
-        "@storybook/addon-storyshots": "^3.4.1",
-        "@storybook/addon-viewport": "4.0.0-alpha.1",
+		"@storybook/addon-storyshots": "^3.4.1",
+		"@storybook/addon-viewport": "4.0.0-alpha.1",
 		"@storybook/addons": "^3.4.1",
 		"@storybook/react": "^3.4.1",
 		"@storybook/storybook-deployer": "^2.0.0",
