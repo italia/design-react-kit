@@ -23,6 +23,12 @@ aliases:
       - node_modules
     key: v1-dependencies-{{ checksum "package.json" }}
 
+  - &tag_filters
+    branches:
+      ignore: /.*/
+    tags:
+      only: /^v?[0-9]+(\.[0-9]+)*/
+
 defaults: &defaults
   docker:
     # specify the version you desire here
@@ -82,14 +88,42 @@ jobs:
             npm run storybook-build
             npm run storybook-deploy
 
+  npm-publish:
+    <<: *defaults
+
+    steps:
+      - checkout
+
+      - attach_workspace:
+          # Must be absolute path or relative path from working_directory
+          at: .
+
+      - run:
+          name: npm publish
+          command: |
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+            npm publish
+
 # Workflows enable multiple jobs in parallel
 workflows:
   version: 2
 
   deploy:
     jobs:
-      - build
+      - build:
+          # Note: The build job must also have a filters tags section, as it 
+          # is a transient dependency of the deploy job.
+          filters:
+            branches:
+              ignore: gh-pages
+            tags:
+              only: /.*/
 
       - deploy-github-pages:
           requires:
             - build
+
+      - npm-publish:
+          requires:
+            - build
+          filters: *tag_filters
