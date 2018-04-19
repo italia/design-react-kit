@@ -1,0 +1,3 @@
+### Inline forms
+
+<!-- STORY -->

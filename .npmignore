@@ -1,5 +1,6 @@
 .circleci
 .storybook
+assets
 scripts
 stories
 storybook-static

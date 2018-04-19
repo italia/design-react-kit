@@ -76,6 +76,7 @@ export {
   TabContent,
   TabPane,
   Jumbotron,
+  Jumbotron as Hero,
   Collapse,
   ListGroupItem,
   ListGroupItemText,

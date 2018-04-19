@@ -1,0 +1,5 @@
+### Dimensioni opzionali
+
+Le modali hanno due dimensioni opzionali, disponibili tramite la proprietà `size` da posizionare su un `Modal`. Queste dimensioni entrano in gioco in determinati breakpoint per evitare barre di scorrimento orizzontali su finestre più strette.
+
+<!-- STORY -->

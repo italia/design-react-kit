@@ -3,6 +3,7 @@ import { setOptions } from "@storybook/addon-options";
 
 import "bootstrap-italia/dist/css/bootstrap-italia.min.css";
 import "bootstrap-italia/dist/css/italia-icon-font.css";
+import "../assets/docs.min.css";
 
 // addon-options
 // https://github.com/storybooks/storybook/tree/master/addons/options
