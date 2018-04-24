@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, select, boolean, text } from "@storybook/addon-knobs/react";
-import { withDocs } from "../utils";
+import { withDocs, envIs } from "../utils";
 import { State, Store } from "@sambego/storybook-state";
 
 import { Popover, PopoverHeader, PopoverBody, Button } from "../../src";
@@ -23,20 +23,27 @@ stories.add(
 );
 stories.add(
   "Elementi disabilitati",
-  withDocs(ElementiDisabilitati, () => (
-    <div>
-      <Button color="primary" id="Example" disabled>
-        Popover disabilitato
-      </Button>
-      <Popover placement="right" target="Example">
-        <PopoverHeader>Titolo del popover</PopoverHeader>
-        <PopoverBody>
-          Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente. Non
-          trovi?
-        </PopoverBody>
-      </Popover>
-    </div>
-  ))
+  withDocs(ElementiDisabilitati, () => {
+    if (envIs("test")) {
+      // Current story has a dependency on the DOM, skip it for now
+      return null;
+    }
+
+    return (
+      <div>
+        <Button color="primary" id="Example" disabled>
+          Popover disabilitato
+        </Button>
+        <Popover placement="right" target="Example">
+          <PopoverHeader>Titolo del popover</PopoverHeader>
+          <PopoverBody>
+            Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente. Non
+            trovi?
+          </PopoverBody>
+        </Popover>
+      </div>
+    );
+  })
 );
 
 const store = new Store({
@@ -49,6 +56,11 @@ knobsStories.addDecorator(withKnobs);
 knobsStories.add(
   "Esempi interattivi",
   withDocs(EsempiInterattivi, () => {
+    if (envIs("test")) {
+      // Current story has a dependency on the DOM, skip it for now
+      return null;
+    }
+
     const disabled = boolean("Disabilitato", false);
     const placements = ["top", "bottom", "left", "right"];
     const placement = select("Posizione", placements, placements[0]);

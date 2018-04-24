@@ -85,8 +85,8 @@ jobs:
             git config --global user.email "$GIT_AUTHOR_EMAIL"
             git config --global user.name "$GIT_AUTHOR_NAME"
             npx npm-install-peers
-            npm run storybook-build
-            npm run storybook-deploy
+            npm run storybook:build
+            npm run storybook:deploy
 
   npm-publish:
     <<: *defaults
