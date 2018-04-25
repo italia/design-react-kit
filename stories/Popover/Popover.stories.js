@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, select, boolean, text } from "@storybook/addon-knobs/react";
-import { withDocs, envIs } from "../utils";
+import { withDocs } from "../utils";
 import { State, Store } from "@sambego/storybook-state";
 
 import { Popover, PopoverHeader, PopoverBody, Button } from "../../src";
@@ -24,17 +24,16 @@ stories.add(
 stories.add(
   "Elementi disabilitati",
   withDocs(ElementiDisabilitati, () => {
-    if (envIs("test")) {
-      // Current story has a dependency on the DOM, skip it for now
-      return null;
-    }
+    const id = "example";
+    // Avoid Jest complaints
+    const target = () => document.getElementById(id);
 
     return (
       <div>
-        <Button color="primary" id="Example" disabled>
+        <Button color="primary" id={id} disabled>
           Popover disabilitato
         </Button>
-        <Popover placement="right" target="Example">
+        <Popover placement="right" target={target}>
           <PopoverHeader>Titolo del popover</PopoverHeader>
           <PopoverBody>
             Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente. Non
@@ -56,11 +55,6 @@ knobsStories.addDecorator(withKnobs);
 knobsStories.add(
   "Esempi interattivi",
   withDocs(EsempiInterattivi, () => {
-    if (envIs("test")) {
-      // Current story has a dependency on the DOM, skip it for now
-      return null;
-    }
-
     const disabled = boolean("Disabilitato", false);
     const placements = ["top", "bottom", "left", "right"];
     const placement = select("Posizione", placements, placements[0]);
@@ -70,20 +64,25 @@ knobsStories.add(
       "Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente. Non trovi?"
     );
 
+    const id = "example";
+    // Avoid Jest complaints
+    const target = () => document.getElementById(id);
+
     return (
       <div style={{ padding: 250 }}>
         <Button
+          id={id}
           color="primary"
-          id="Example"
           disabled={disabled}
           onClick={() => store.set({ isOpen: !store.get("isOpen") })}
         >
           Popover {disabled ? "Disabilitato" : ""}
         </Button>
+
         <State store={store}>
           <Popover
             placement={placement}
-            target="Example"
+            target={target}
             toggle={() => store.set({ isOpen: !store.get("isOpen") })}
             isOpen={store.get("isOpen")}
           >

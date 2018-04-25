@@ -8,8 +8,6 @@ import {
   PopoverBody
 } from "../../src";
 
-import { envIs } from "../utils";
-
 class PopoverExample extends React.Component {
   state = {
     popoverOpen: false
@@ -22,20 +20,20 @@ class PopoverExample extends React.Component {
   };
 
   render() {
-    if (envIs("test")) {
-      // Current story has a dependency on the DOM, skip it for now
-      return null;
-    }
+    const id = "example";
+    // Avoid Jest complaints
+    const target = () => document.getElementById(id);
 
     return (
       <div>
-        <Button color="danger" id="Example" onClick={this.togglePopover}>
+        <Button color="danger" id={id} onClick={this.togglePopover}>
           Clicca par attivare/disattivare il popover
         </Button>
+
         <Popover
           placement="right"
+          target={target}
           isOpen={this.state.popoverOpen}
-          target="Example"
           toggle={this.togglePopover}
         >
           <PopoverHeader>Titolo del popover</PopoverHeader>

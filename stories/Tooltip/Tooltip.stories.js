@@ -19,11 +19,14 @@ stories.add(
       return null;
     }
 
+    const ids = ["Example1", "Example2", "Example3"];
+    const target = i => document.getElementById(ids[i]);
+
     return (
       <div className="bd-example tooltip-demo">
         <p className="muted">
           Ecco un{" "}
-          <a href="#" id="Example1">
+          <a href="#" id={ids[0]}>
             bianco scenario
           </a>
           <br />
@@ -32,7 +35,7 @@ stories.add(
           degli oggetti di sfondo che pur vivono.
           <br />
           Non ne sarò{" "}
-          <a href="#" id="Example2">
+          <a href="#" id={ids[1]}>
             l’artefice
           </a>{" "}
           impaziente.
@@ -49,7 +52,7 @@ stories.add(
           <br />
           Per adesso è deserto.
           <br />
-          <a href="#" id="Example3">
+          <a href="#" id={ids[2]}>
             Il mondo può rifarsi senza me
           </a>,
           <br />
@@ -59,13 +62,13 @@ stories.add(
           <em>La città nuova, Alda Merini</em>
         </p>
 
-        <UncontrolledTooltip placement="top" target="Example1">
+        <UncontrolledTooltip placement="top" target={() => target(0)}>
           Primo tooltip
         </UncontrolledTooltip>
-        <UncontrolledTooltip placement="top" target="Example2">
+        <UncontrolledTooltip placement="top" target={() => target(1)}>
           Secondo tooltip
         </UncontrolledTooltip>
-        <UncontrolledTooltip placement="top" target="Example3">
+        <UncontrolledTooltip placement="top" target={() => target(2)}>
           Terzo tooltip
         </UncontrolledTooltip>
       </div>
@@ -80,37 +83,40 @@ stories.add(
       return null;
     }
 
+    const ids = ["example1", "example2", "example3", "example4", "example5"];
+    const target = i => document.getElementById(ids[i]);
+
     return (
       <div style={{ padding: 100 }}>
-        <Button id="Example1" className="m-3">
+        <Button id={ids[0]} className="m-3">
           Tooltip in alto
         </Button>
-        <Button id="Example2" className="m-3">
+        <Button id={ids[1]} className="m-3">
           Tooltip a destra
         </Button>
-        <Button id="Example3" className="m-3">
+        <Button id={ids[2]} className="m-3">
           Tooltip in basso
         </Button>
-        <Button id="Example4" className="m-3">
+        <Button id={ids[3]} className="m-3">
           Tooltip a sinistra
         </Button>
-        <Button id="Example5" className="m-3">
+        <Button id={ids[4]} className="m-3">
           Tooltip con HTML
         </Button>
 
-        <UncontrolledTooltip placement="top" target="Example1">
+        <UncontrolledTooltip placement="top" target={() => target(0)}>
           Tooltip on top
         </UncontrolledTooltip>
-        <UncontrolledTooltip placement="right" target="Example2">
+        <UncontrolledTooltip placement="right" target={() => target(1)}>
           Tooltip on right
         </UncontrolledTooltip>
-        <UncontrolledTooltip placement="bottom" target="Example3">
+        <UncontrolledTooltip placement="bottom" target={() => target(2)}>
           Tooltip on bottom
         </UncontrolledTooltip>
-        <UncontrolledTooltip placement="left" target="Example4">
+        <UncontrolledTooltip placement="left" target={() => target(3)}>
           Tooltip on left
         </UncontrolledTooltip>
-        <UncontrolledTooltip placement="top" target="Example5">
+        <UncontrolledTooltip placement="top" target={() => target(4)}>
           <em>Tooltip</em> <u>with</u> <b>HTML</b>
         </UncontrolledTooltip>
       </div>
@@ -129,17 +135,20 @@ knobsStories.add(
       return null;
     }
 
+    const id = "example";
+    const target = () => document.getElementById(id);
+
     const placements = ["top", "bottom", "left", "right"];
     const placement = select("Posizione", placements, placements[0]);
     const body = text("Body", "Tooltip");
 
     return (
       <div style={{ padding: 200 }}>
-        <Button id="Example1" className="m-3">
+        <Button id={id} className="m-3">
           Tooltip
         </Button>
 
-        <UncontrolledTooltip placement={placement} target="Example1">
+        <UncontrolledTooltip placement={placement} target={target}>
           {body}
         </UncontrolledTooltip>
       </div>

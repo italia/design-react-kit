@@ -1,8 +1,6 @@
 import React from "react";
 import { Button, Popover, PopoverHeader, PopoverBody } from "../../src";
 
-import { envIs } from "../utils";
-
 class PopoverItem extends React.Component {
   state = {
     popoverOpen: false
@@ -15,12 +13,16 @@ class PopoverItem extends React.Component {
   };
 
   render() {
+    const id = `Popover-${this.props.id}`;
+    // Avoid Jest complaints
+    const target = () => document.getElementById(id);
+
     return (
       <span>
         <Button
           className="mr-1"
           color="secondary"
-          id={"Popover-" + this.props.id}
+          id={id}
           onClick={this.toggle}
         >
           Popover {this.props.item.text}
@@ -28,7 +30,7 @@ class PopoverItem extends React.Component {
         <Popover
           placement={this.props.item.placement}
           isOpen={this.state.popoverOpen}
-          target={"Popover-" + this.props.id}
+          target={target}
           toggle={this.toggle}
         >
           <PopoverBody>
@@ -51,11 +53,6 @@ class PopoverPositionExample extends React.Component {
   };
 
   render() {
-    if (envIs("test")) {
-      // Current story has a dependency on the DOM, skip it for now
-      return null;
-    }
-
     return (
       <div style={{ padding: 200 }}>
         {this.state.popovers.map((popover, i) => {

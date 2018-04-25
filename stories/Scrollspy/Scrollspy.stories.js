@@ -11,11 +11,6 @@ const stories = storiesOf("Componenti/Scrollspy", module);
 stories.add(
   "Esempi",
   withDocs(Esempi, () => {
-    if (envIs("test")) {
-      // Current story has a dependency on the DOM, skip it for now
-      return null;
-    }
-
     return <ScrollspyExample />;
   })
 );

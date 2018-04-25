@@ -36,6 +36,10 @@ class InViewport extends React.PureComponent {
 
   initIntersectionObserver = () => {
     let options = {};
+    if (typeof IntersectionObserver === "undefined") {
+      return;
+    }
+
     if (!this.observer) {
       this.observer = new IntersectionObserver(
         this.handleIntersection,

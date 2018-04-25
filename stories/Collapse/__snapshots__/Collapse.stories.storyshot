@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Collapse Accordion 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      id="accordion"
+      role="tablist"
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="card-header"
+          id="headingOne"
+          role="tab"
+        >
+          <h5
+            className="mb-0"
+          >
+            <button
+              className="btn btn-link "
+              data-toggle="collapse"
+              onClick={[Function]}
+            >
+              <i
+                className="pr-3 collapse-icon"
+              />
+              Collapsible Group Item #1
+            </button>
+          </h5>
+        </div>
+        <div
+          className="collapse show"
+          role="tabpanel"
+        >
+          <div
+            className="card-body"
+          >
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div
+        className="card"
+      >
+        <div
+          className="card-header"
+          id="headingTwo"
+          role="tab"
+        >
+          <h5
+            className="mb-0"
+          >
+            <button
+              className="btn btn-link collapsed"
+              data-toggle="collapse"
+              onClick={[Function]}
+            >
+              <i
+                className="pr-3 collapse-icon"
+              />
+              Collapsible Group Item #2
+            </button>
+          </h5>
+        </div>
+        <div
+          className="collapse "
+          role="tabpanel"
+        >
+          <div
+            className="card-body"
+          >
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div
+        className="card"
+      >
+        <div
+          className="card-header"
+          id="headingThree"
+          role="tab"
+        >
+          <h5
+            className="mb-0"
+          >
+            <button
+              className="btn btn-link collapsed"
+              data-toggle="collapse"
+              onClick={[Function]}
+            >
+              <i
+                className="pr-3 collapse-icon"
+              />
+              Collapsible Group Item #3
+            </button>
+          </h5>
+        </div>
+        <div
+          className="collapse "
+          role="tabpanel"
+        >
+          <div
+            className="card-body"
+          >
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Accordion.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Collapse Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <button
+        className="btn btn-primary"
+        onClick={[Function]}
+        style={
+          Object {
+            "marginBottom": "1rem",
+          }
+        }
+        type="button"
+      >
+        Toggle
+      </button>
+      <div
+        className="collapse"
+        style={Object {}}
+      >
+        <div
+          className="card"
+        >
+          <div
+            className="card-body"
+          >
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
