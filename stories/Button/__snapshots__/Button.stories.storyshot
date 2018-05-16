@@ -1,0 +1,469 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Button Dimensioni 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <div>
+        <button
+          className="btn btn-primary btn-lg"
+          onClick={[Function]}
+          type={undefined}
+        >
+          Large Button
+        </button>
+         
+        <button
+          className="btn btn-secondary btn-lg"
+          onClick={[Function]}
+          type={undefined}
+        >
+          Large Button
+        </button>
+        <div
+          className="mt-3"
+        />
+        <button
+          className="btn btn-primary btn-sm"
+          onClick={[Function]}
+          type={undefined}
+        >
+          Small Button
+        </button>
+         
+        <button
+          className="btn btn-secondary btn-sm"
+          onClick={[Function]}
+          type={undefined}
+        >
+          Small Button
+        </button>
+        <div
+          className="mt-3"
+        />
+        <button
+          className="btn btn-primary btn-block"
+          onClick={[Function]}
+          type={undefined}
+        >
+          Block level button
+        </button>
+        <button
+          className="btn btn-secondary btn-block"
+          onClick={[Function]}
+          type={undefined}
+        >
+          Block level button
+        </button>
+      </div>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Dimensioni.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Button Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <button
+        className="mr-1 btn btn-italia"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Italia
+      </button>
+      <button
+        className="mr-1 btn btn-primary"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Primary
+      </button>
+      <button
+        className="mr-1 btn btn-secondary"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Secondary
+      </button>
+      <button
+        className="mr-1 btn btn-tertiary"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Tertiary
+      </button>
+      <button
+        className="mr-1 btn btn-quaternary"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Quaternary
+      </button>
+      <button
+        className="mr-1 btn btn-success"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Success
+      </button>
+      <button
+        className="mr-1 btn btn-info"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Info
+      </button>
+      <button
+        className="mr-1 btn btn-danger"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Danger
+      </button>
+      <button
+        className="mr-1 btn btn-warning"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Warning
+      </button>
+      <button
+        className="mr-1 btn btn-link"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Link
+      </button>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Button Esempi interattivi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <button
+      className="btn btn-italia active"
+      disabled={false}
+      onClick={[Function]}
+      type={undefined}
+    >
+      
+       
+      italia
+       
+      sm
+       
+      
+       
+      attivo
+       
+      
+    </button>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "EsempiInterattivi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Button Stato Attivo 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <button
+        className="mr-1 btn btn-italia active"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Italia
+      </button>
+      <button
+        className="mr-1 btn btn-primary active"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Primary
+      </button>
+      <button
+        className="mr-1 btn btn-secondary active"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Secondary
+      </button>
+      <button
+        className="mr-1 btn btn-tertiary active"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Tertiary
+      </button>
+      <button
+        className="mr-1 btn btn-quaternary active"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Quaternary
+      </button>
+      <button
+        className="mr-1 btn btn-success active"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Success
+      </button>
+      <button
+        className="mr-1 btn btn-info active"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Info
+      </button>
+      <button
+        className="mr-1 btn btn-danger active"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Danger
+      </button>
+      <button
+        className="mr-1 btn btn-warning active"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Warning
+      </button>
+      <button
+        className="mr-1 btn btn-link active"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Link
+      </button>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "StatoAttivo.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Button Stato Disabilitato 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <button
+        className="mr-1 btn btn-italia disabled"
+        disabled={true}
+        onClick={[Function]}
+        type={undefined}
+      >
+        Italia
+      </button>
+      <button
+        className="mr-1 btn btn-primary disabled"
+        disabled={true}
+        onClick={[Function]}
+        type={undefined}
+      >
+        Primary
+      </button>
+      <button
+        className="mr-1 btn btn-secondary disabled"
+        disabled={true}
+        onClick={[Function]}
+        type={undefined}
+      >
+        Secondary
+      </button>
+      <button
+        className="mr-1 btn btn-tertiary disabled"
+        disabled={true}
+        onClick={[Function]}
+        type={undefined}
+      >
+        Tertiary
+      </button>
+      <button
+        className="mr-1 btn btn-quaternary disabled"
+        disabled={true}
+        onClick={[Function]}
+        type={undefined}
+      >
+        Quaternary
+      </button>
+      <button
+        className="mr-1 btn btn-success disabled"
+        disabled={true}
+        onClick={[Function]}
+        type={undefined}
+      >
+        Success
+      </button>
+      <button
+        className="mr-1 btn btn-info disabled"
+        disabled={true}
+        onClick={[Function]}
+        type={undefined}
+      >
+        Info
+      </button>
+      <button
+        className="mr-1 btn btn-danger disabled"
+        disabled={true}
+        onClick={[Function]}
+        type={undefined}
+      >
+        Danger
+      </button>
+      <button
+        className="mr-1 btn btn-warning disabled"
+        disabled={true}
+        onClick={[Function]}
+        type={undefined}
+      >
+        Warning
+      </button>
+      <button
+        className="mr-1 btn btn-link disabled"
+        disabled={true}
+        onClick={[Function]}
+        type={undefined}
+      >
+        Link
+      </button>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "StatoDisabilitato.md",
+      }
+    }
+  />
+</div>
+`;

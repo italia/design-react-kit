@@ -1,0 +1,3630 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Form Checkbox e radio 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <form
+      className="m-3"
+    >
+      <div
+        className="   form-check"
+      >
+        <input
+          className="form-check-input"
+          id="checkbox1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+        />
+        <label
+          className="form-check-label "
+          htmlFor="checkbox1"
+        >
+          Checkbox di esempio
+        </label>
+      </div>
+      <div
+        className="   form-check"
+      >
+        <input
+          className="form-check-input"
+          defaultChecked={true}
+          id="radio1"
+          name="gruppo1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label "
+          htmlFor="radio1"
+        >
+          Radio di esempio 1
+        </label>
+      </div>
+      <div
+        className="   form-check"
+      >
+        <input
+          className="form-check-input"
+          id="radio2"
+          name="gruppo1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label "
+          htmlFor="radio2"
+        >
+          Radio di esempio 2
+        </label>
+      </div>
+    </form>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "CheckboxRadio.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Dimensioni 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <form
+        className="m-3"
+      >
+        <input
+          className="form-control-lg form-control"
+          placeholder="lg"
+          type="text"
+        />
+        <input
+          className="form-control"
+          placeholder="Input predefinito"
+          type="text"
+        />
+        <input
+          className="form-control-sm form-control"
+          placeholder="sm"
+          type="text"
+        />
+      </form>
+      <form
+        className="m-3"
+      >
+        <div
+          className="select-container select-wrapper custom-select  form-control-lg"
+          id={undefined}
+          onKeyDown={[Function]}
+        >
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            className="css-17l7ekz"
+            role="status"
+          >
+            1 result available.
+          </span>
+          <div
+            className="select-control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <span
+              className="caret it-expand"
+            />
+            <div
+              className="select-control-value-container"
+            >
+              <input
+                className="select-placeholder dropdown select-dropdown"
+                onClick={[Function]}
+                readOnly={true}
+                type="text"
+                value="Select grande"
+              />
+              <div
+                className="select-input-container search-wrap d-none"
+                style={
+                  Object {
+                    "backgroundColor": "#FFF",
+                    "height": 45,
+                    "left": 0,
+                    "margin": "0 24px 0 6px",
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 45,
+                    "zIndex": 1000,
+                  }
+                }
+              >
+                <input
+                  className="select-input search"
+                  onChange={[Function]}
+                  placeholder={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="select-indicators"
+            />
+          </div>
+        </div>
+        <div
+          className="select-container select-wrapper custom-select  "
+          id={undefined}
+          onKeyDown={[Function]}
+        >
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            className="css-17l7ekz"
+            role="status"
+          >
+            1 result available.
+          </span>
+          <div
+            className="select-control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <span
+              className="caret it-expand"
+            />
+            <div
+              className="select-control-value-container"
+            >
+              <input
+                className="select-placeholder dropdown select-dropdown"
+                onClick={[Function]}
+                readOnly={true}
+                type="text"
+                value="Select predefinita"
+              />
+              <div
+                className="select-input-container search-wrap d-none"
+                style={
+                  Object {
+                    "backgroundColor": "#FFF",
+                    "height": 45,
+                    "left": 0,
+                    "margin": "0 24px 0 6px",
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 45,
+                    "zIndex": 1000,
+                  }
+                }
+              >
+                <input
+                  className="select-input search"
+                  onChange={[Function]}
+                  placeholder={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="select-indicators"
+            />
+          </div>
+        </div>
+        <div
+          className="select-container select-wrapper custom-select  form-control-sm"
+          id={undefined}
+          onKeyDown={[Function]}
+        >
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            className="css-17l7ekz"
+            role="status"
+          >
+            1 result available.
+          </span>
+          <div
+            className="select-control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <span
+              className="caret it-expand"
+            />
+            <div
+              className="select-control-value-container"
+            >
+              <input
+                className="select-placeholder dropdown select-dropdown"
+                onClick={[Function]}
+                readOnly={true}
+                type="text"
+                value="Select piccola"
+              />
+              <div
+                className="select-input-container search-wrap d-none"
+                style={
+                  Object {
+                    "backgroundColor": "#FFF",
+                    "height": 45,
+                    "left": 0,
+                    "margin": "0 24px 0 6px",
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 45,
+                    "zIndex": 1000,
+                  }
+                }
+              >
+                <input
+                  className="select-input search"
+                  onChange={[Function]}
+                  placeholder={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="select-indicators"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Dimensioni.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Disabilitato 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <form
+        className="m-3"
+      >
+        <div
+          className="   form-check"
+        >
+          <input
+            className="form-check-input"
+            disabled={true}
+            id="checkbox1"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="form-check-label "
+            htmlFor="checkbox1"
+          >
+            Checkbox disabilitato non selezionato
+          </label>
+        </div>
+        <div
+          className="   form-check"
+        >
+          <input
+            className="form-check-input"
+            defaultChecked={true}
+            disabled={true}
+            id="checkbox2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="form-check-label "
+            htmlFor="checkbox2"
+          >
+            Checkbox disabilitato selezionato
+          </label>
+        </div>
+      </form>
+      <form
+        className="m-3"
+      >
+        <div
+          className="   form-check"
+        >
+          <input
+            className="form-check-input"
+            defaultChecked={true}
+            disabled={true}
+            id="radio1"
+            name="gruppo1"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="radio"
+          />
+          <label
+            className="form-check-label "
+            htmlFor="radio1"
+          >
+            Opzione disabilitata selezionata
+          </label>
+        </div>
+        <div
+          className="   form-check"
+        >
+          <input
+            className="form-check-input"
+            disabled={true}
+            id="radio2"
+            name="gruppo1"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="radio"
+          />
+          <label
+            className="form-check-label "
+            htmlFor="radio2"
+          >
+            Opzione disabilitata non selezionata
+          </label>
+        </div>
+      </form>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Disabilitato.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Gruppi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <div
+        className="m-5 row"
+      >
+        <div
+          className="col-md-5"
+        >
+          <form
+            className=""
+          >
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                defaultChecked={true}
+                id="checkbox1"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="checkbox"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="checkbox1"
+              >
+                Checkbox selezionato
+              </label>
+            </div>
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                id="checkbox2"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="checkbox"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="checkbox2"
+              >
+                Checkbox non selezionato
+              </label>
+            </div>
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                disabled={true}
+                id="checkbox3"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="checkbox"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="checkbox3"
+              >
+                Checkbox disabilitato non selezionato
+              </label>
+            </div>
+          </form>
+        </div>
+        <div
+          className="col-md-2"
+        />
+        <div
+          className="col-md-5"
+        >
+          <form
+            className=""
+          >
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                defaultChecked={true}
+                id="checkbox4"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="checkbox"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="checkbox4"
+              >
+                Checkbox selezionato
+              </label>
+              <small
+                className="form-text text-muted"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+              </small>
+            </div>
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                id="checkbox5"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="checkbox"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="checkbox5"
+              >
+                Checkbox non selezionato
+              </label>
+              <small
+                className="form-text text-muted"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+              </small>
+            </div>
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                disabled={true}
+                id="checkbox6"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="checkbox"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="checkbox6"
+              >
+                Checkbox disabilitato non selezionato
+              </label>
+              <small
+                className="form-text text-muted"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+              </small>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div
+        className="m-5 row"
+      >
+        <div
+          className="col-md-5"
+        >
+          <form
+            className=""
+          >
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                defaultChecked={true}
+                id="radio1"
+                name="group1"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="radio"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="radio1"
+              >
+                Opzione 1
+              </label>
+            </div>
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                id="radio2"
+                name="group1"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="radio"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="radio2"
+              >
+                Opzione 2
+              </label>
+            </div>
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                disabled={true}
+                id="radio3"
+                name="group1"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="radio"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="radio3"
+              >
+                Opzione 3
+              </label>
+            </div>
+          </form>
+        </div>
+        <div
+          className="col-md-2"
+        />
+        <div
+          className="col-md-5"
+        >
+          <form
+            className=""
+          >
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                defaultChecked={true}
+                id="radio3"
+                name="group2"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="radio"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="radio3"
+              >
+                Opzione 1
+              </label>
+              <small
+                className="form-text text-muted"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+              </small>
+            </div>
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                id="radio4"
+                name="group2"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="radio"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="radio4"
+              >
+                Opzione 2
+              </label>
+              <small
+                className="form-text text-muted"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+              </small>
+            </div>
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                disabled={true}
+                id="radio5"
+                name="group2"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="radio"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="radio5"
+              >
+                Opzione 3
+              </label>
+              <small
+                className="form-text text-muted"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+              </small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Gruppi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Gruppi di Toggles 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="m-5 row"
+    >
+      <div
+        className="col-md-5"
+      >
+        <form
+          className=""
+        >
+          <div
+            className="form-check-group   form-check"
+          >
+            <div
+              className="toggles"
+            >
+              <label
+                className="form-check-label "
+                htmlFor={undefined}
+              >
+                Toggle acceso
+                <input
+                  className="form-check-input"
+                  defaultChecked={true}
+                  type="checkbox"
+                />
+                <span
+                  className="lever"
+                />
+              </label>
+            </div>
+          </div>
+          <div
+            className="form-check-group   form-check"
+          >
+            <div
+              className="toggles"
+            >
+              <label
+                className="form-check-label "
+                htmlFor={undefined}
+              >
+                Toggle spento
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                />
+                <span
+                  className="lever"
+                />
+              </label>
+            </div>
+          </div>
+          <div
+            className="form-check-group   form-check"
+          >
+            <div
+              className="toggles"
+            >
+              <label
+                className="form-check-label "
+                htmlFor={undefined}
+              >
+                Toggle disabilitato
+                <input
+                  className="form-check-input"
+                  disabled={true}
+                  type="checkbox"
+                />
+                <span
+                  className="lever"
+                />
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div
+        className="col-md-2"
+      />
+      <div
+        className="col-md-5"
+      >
+        <form
+          className=""
+        >
+          <div
+            className="form-check-group   form-check"
+          >
+            <div
+              className="toggles"
+            >
+              <label
+                className="form-check-label "
+                htmlFor={undefined}
+              >
+                Toggle acceso
+                <input
+                  className="form-check-input"
+                  defaultChecked={true}
+                  type="checkbox"
+                />
+                <span
+                  className="lever"
+                />
+              </label>
+            </div>
+            <small
+              className="form-text text-muted"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+            </small>
+          </div>
+          <div
+            className="form-check-group   form-check"
+          >
+            <div
+              className="toggles"
+            >
+              <label
+                className="form-check-label "
+                htmlFor={undefined}
+              >
+                Toggle spento
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                />
+                <span
+                  className="lever"
+                />
+              </label>
+            </div>
+            <small
+              className="form-text text-muted"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+            </small>
+          </div>
+          <div
+            className="form-check-group   form-check"
+          >
+            <div
+              className="toggles"
+            >
+              <label
+                className="form-check-label "
+                htmlFor={undefined}
+              >
+                Toggle disabilitato
+                <input
+                  className="form-check-input"
+                  disabled={true}
+                  type="checkbox"
+                />
+                <span
+                  className="lever"
+                />
+              </label>
+            </div>
+            <small
+              className="form-text text-muted"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+            </small>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "GruppiToggles.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Icone aggiuntive 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <form
+      className=""
+    >
+      <div
+        className="m-3   form-group"
+      >
+        <i
+          className="ico-prefix it-youtube"
+        />
+        <input
+          className="form-control"
+          id="videoYoutube"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+        <label
+          className=""
+          htmlFor="videoYoutube"
+        >
+          Link video di youtube
+        </label>
+      </div>
+      <div
+        className="m-3   form-group"
+      >
+        <i
+          className="ico-prefix it-youtube"
+        />
+        <div
+          className="select-container select-wrapper custom-select  "
+          id={undefined}
+          onKeyDown={[Function]}
+        >
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            className="css-17l7ekz"
+            role="status"
+          >
+            3 results available.
+          </span>
+          <div
+            className="select-control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <span
+              className="caret it-expand"
+            />
+            <div
+              className="select-control-value-container"
+            >
+              <input
+                className="select-placeholder dropdown select-dropdown"
+                onClick={[Function]}
+                readOnly={true}
+                type="text"
+                value="Seleziona una opzione"
+              />
+              <div
+                className="select-input-container search-wrap d-none"
+                style={
+                  Object {
+                    "backgroundColor": "#FFF",
+                    "height": 45,
+                    "left": 0,
+                    "margin": "0 24px 0 6px",
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 45,
+                    "zIndex": 1000,
+                  }
+                }
+              >
+                <input
+                  className="select-input search"
+                  onChange={[Function]}
+                  placeholder="Cerca una regione"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="select-indicators"
+            />
+          </div>
+        </div>
+        <label
+          className=""
+          htmlFor={undefined}
+        >
+          Label di esempio
+        </label>
+      </div>
+    </form>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "IconeAggiuntive.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Inline 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <form
+        className="m-3"
+      >
+        <div
+          className="   form-check form-check-inline"
+        >
+          <input
+            className="form-check-input"
+            id="checkbox1"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="form-check-label "
+            htmlFor="checkbox1"
+          >
+            Checkbox non selezionato
+          </label>
+        </div>
+        <div
+          className="   form-check form-check-inline"
+        >
+          <input
+            className="form-check-input"
+            defaultChecked={true}
+            id="checkbox2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="checkbox"
+          />
+          <label
+            className="form-check-label "
+            htmlFor="checkbox2"
+          >
+            Checkbox selezionato
+          </label>
+        </div>
+      </form>
+      <form
+        className="m-3"
+      >
+        <div
+          className="   form-check form-check-inline"
+        >
+          <input
+            className="form-check-input"
+            defaultChecked={true}
+            id="radio1"
+            name="gruppo1"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="radio"
+          />
+          <label
+            className="form-check-label "
+            htmlFor="radio1"
+          >
+            Opzione 1
+          </label>
+        </div>
+        <div
+          className="   form-check form-check-inline"
+        >
+          <input
+            className="form-check-input"
+            id="radio2"
+            name="gruppo1"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="radio"
+          />
+          <label
+            className="form-check-label "
+            htmlFor="radio2"
+          >
+            Opzione 2
+          </label>
+        </div>
+      </form>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Inline.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Input autocomplete 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="m-3   form-group"
+    >
+      <div
+        className="autocomplete-container autocomplete-wrapper custom-autocomplete "
+        id={undefined}
+        onKeyDown={[Function]}
+      >
+        <span
+          aria-atomic="true"
+          aria-live="polite"
+          className="css-17l7ekz"
+          role="status"
+        >
+          20 results available.
+        </span>
+        <div
+          className="autocomplete-control"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <button
+            className="autocomplete-clear"
+            onClick={[Function]}
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            <svg
+              fill="#000000"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="https://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </button>
+          <div
+            className="autocomplete-value-container"
+          >
+            <div
+              className="react-select__placeholder css-16ucli7"
+            />
+            <div
+              className="autocomplete-input-container search-wrap"
+            >
+              <input
+                aria-activedescendant={undefined}
+                aria-autocomplete="list"
+                aria-busy={false}
+                aria-describedby={undefined}
+                aria-expanded={false}
+                aria-haspopup={false}
+                aria-label={undefined}
+                aria-labelledby={undefined}
+                aria-owns={undefined}
+                autoCapitalize="none"
+                autoComplete="off"
+                autoCorrect="off"
+                className="form-control autocomplete"
+                id="react-select-3-input"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                role="combobox"
+                spellCheck="false"
+                tabIndex="0"
+                type="search"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="select-indicators"
+          />
+        </div>
+      </div>
+      <label
+        className=""
+        style={
+          Object {
+            "pointerEvents": "none",
+          }
+        }
+      >
+        Regione
+      </label>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "InputAutocomplete.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Input file 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <form
+      className=""
+    >
+      <div
+        className="   form-group"
+      >
+        <input
+          className="form-control-file"
+          id="exampleFormControlFile"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="file"
+        />
+        <label
+          className=""
+          htmlFor="exampleFormControlFile"
+        >
+          Esempio campo senza personalizzazione grafica
+        </label>
+      </div>
+      <div
+        className="form-file   form-group"
+      >
+        <input
+          className="form-control-file"
+          id="file"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="file"
+        />
+        <label
+          className=""
+          htmlFor="file"
+        >
+          Esempio campo per l'upload di un singolo file
+        </label>
+        <span
+          className="form-file-name"
+        >
+          
+        </span>
+      </div>
+      <div
+        className="form-file   form-group"
+      >
+        <input
+          className="form-control-file"
+          id="fileM"
+          multiple={true}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="file"
+        />
+        <label
+          className=""
+          htmlFor="fileM"
+        >
+          Esempio campo per l'upload multiplo di file
+        </label>
+        <span
+          className="form-file-name"
+        >
+          
+        </span>
+      </div>
+    </form>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "InputFile.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Input password 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <form
+      className=""
+    >
+      <div
+        className="   form-group"
+      >
+        <input
+          className="form-control"
+          id="input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+        <label
+          className=""
+          htmlFor="input"
+        >
+          Password
+        </label>
+      </div>
+      <div
+        className="   form-group"
+      >
+        <span
+          className="btn-eye eye-on"
+          onClick={[Function]}
+        />
+        <input
+          className="form-control"
+          id="exampleInputPassword"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="password"
+        />
+        <label
+          className=""
+          htmlFor="exampleInputPassword"
+        >
+          Password
+        </label>
+      </div>
+      <div
+        className="   form-group"
+      >
+        <i
+          className="ico-prefix it-lock"
+        />
+        <span
+          className="btn-eye eye-on"
+          onClick={[Function]}
+        />
+        <input
+          className="form-control"
+          id="exampleInputPassword3"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Password"
+          type="password"
+        />
+        <small
+          className="form-text text-muted"
+          id="infoPassword"
+        >
+          inserisci almeno 8 caratteri e una lettera maiuscola
+        </small>
+      </div>
+      <div
+        className="   form-group"
+      >
+        <span
+          className="btn-eye eye-on"
+          onClick={[Function]}
+        />
+        <input
+          className="form-control form-password form-control"
+          id="exampleInputPassword2"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="password"
+        />
+        <label
+          className=""
+          htmlFor="exampleInputPassword2"
+        >
+          Password con strength meter
+        </label>
+        <div
+          className="psw-wrapper"
+        >
+          <span
+            className="psw-text text-danger danger"
+          >
+            inserisci almeno 8 caratteri e una lettera maiuscola
+          </span>
+          <div
+            className="progress rounded-0 position-relative psw-meter"
+          >
+            <div
+              className="row position-absolute w-100 m-0"
+            >
+              <div
+                className="col-3 border-left border-right border-white"
+              />
+              <div
+                className="col-3 border-left border-right border-white"
+              />
+              <div
+                className="col-3 border-left border-right border-white"
+              />
+              <div
+                className="col-3 border-left border-right border-white"
+              />
+            </div>
+            <div
+              className="progress-bar bg-danger danger"
+              style={
+                Object {
+                  "width": "0%",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "InputPassword.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Input text 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <form
+      className=""
+    >
+      <div
+        className="pb-3 input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text it-search"
+            id="basic-addon1"
+          />
+        </div>
+        <input
+          className="form-control"
+          placeholder="Username"
+          type="text"
+        />
+      </div>
+      <div
+        className="   form-group"
+      >
+        <input
+          className="form-control"
+          id="exampleInputText"
+          name="text"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+        <label
+          className=""
+          htmlFor="exampleInputText"
+        >
+          Nominativo
+        </label>
+      </div>
+      <div
+        className="   form-group"
+      >
+        <input
+          className="form-control"
+          id="exampleInputNumber"
+          name="number"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="number"
+        />
+        <label
+          className=""
+          htmlFor="exampleInputNumber"
+        >
+          Numero partecipanti
+        </label>
+      </div>
+      <div
+        className="   form-group"
+      >
+        <input
+          className="form-control"
+          id="exampleInputEmail1"
+          name="email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="email"
+        />
+        <label
+          className=""
+          htmlFor="exampleInputEmail1"
+        >
+          Numero partecipanti
+        </label>
+        <small
+          className="form-text text-muted"
+        >
+          Non condivideremo mai la tua email con nessun altro.
+        </small>
+      </div>
+    </form>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Readonly 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <form
+      className="m-3"
+    >
+      <input
+        className="form-control"
+        placeholder="Contenuto in sola lettura"
+        readOnly={true}
+        type="text"
+      />
+    </form>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Readonly.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Readonly normalizzato 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <form
+      className="m-3"
+    >
+      <div
+        className="   form-group"
+      >
+        <p
+          className="form-control-plaintext"
+          id="staticEmail"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          readOnly={true}
+          type="text"
+        >
+          email@example.com
+        </p>
+        <label
+          className=""
+          htmlFor="staticEmail"
+        >
+          Email
+        </label>
+      </div>
+    </form>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "ReadonlyNormalizzato.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Select 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="m-3   form-group"
+    >
+      <div
+        className="select-container select-wrapper custom-select  "
+        id={undefined}
+        onKeyDown={[Function]}
+      >
+        <span
+          aria-atomic="true"
+          aria-live="polite"
+          className="css-17l7ekz"
+          role="status"
+        >
+          3 results available.
+        </span>
+        <div
+          className="select-control"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <span
+            className="caret it-expand"
+          />
+          <div
+            className="select-control-value-container"
+          >
+            <input
+              className="select-placeholder dropdown select-dropdown"
+              onClick={[Function]}
+              readOnly={true}
+              type="text"
+              value="Seleziona una opzione"
+            />
+            <div
+              className="select-input-container search-wrap d-none"
+              style={
+                Object {
+                  "backgroundColor": "#FFF",
+                  "height": 45,
+                  "left": 0,
+                  "margin": "0 24px 0 6px",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 45,
+                  "zIndex": 1000,
+                }
+              }
+            >
+              <input
+                className="select-input search"
+                onChange={[Function]}
+                placeholder="Cerca una regione"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="select-indicators"
+          />
+        </div>
+      </div>
+      <label
+        className=""
+        htmlFor={undefined}
+      >
+        Label di esempio
+      </label>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Select.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Select con gruppi di opzioni 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="m-3   form-group"
+    >
+      <div
+        className="select-container select-wrapper custom-select  "
+        id={undefined}
+        onKeyDown={[Function]}
+      >
+        <span
+          aria-atomic="true"
+          aria-live="polite"
+          className="css-17l7ekz"
+          role="status"
+        >
+          20 results available.
+        </span>
+        <div
+          className="select-control"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <span
+            className="caret it-expand"
+          />
+          <div
+            className="select-control-value-container"
+          >
+            <input
+              className="select-placeholder dropdown select-dropdown"
+              onClick={[Function]}
+              readOnly={true}
+              type="text"
+              value="Seleziona una o più regioni"
+            />
+            <div
+              className="select-input-container search-wrap d-none"
+              style={
+                Object {
+                  "backgroundColor": "#FFF",
+                  "height": 45,
+                  "left": 0,
+                  "margin": "0 24px 0 6px",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 45,
+                  "zIndex": 1000,
+                }
+              }
+            >
+              <input
+                className="select-input search"
+                onChange={[Function]}
+                placeholder="Cerca una regione"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="select-indicators"
+          />
+        </div>
+      </div>
+      <label
+        className=""
+        htmlFor={undefined}
+      >
+        Label di esempio
+      </label>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "SelectGruppi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Select con ricerca 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="m-3   form-group"
+    >
+      <div
+        className="select-container select-wrapper custom-select  "
+        id={undefined}
+        onKeyDown={[Function]}
+      >
+        <span
+          aria-atomic="true"
+          aria-live="polite"
+          className="css-17l7ekz"
+          role="status"
+        >
+          20 results available.
+        </span>
+        <div
+          className="select-control"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <span
+            className="caret it-expand"
+          />
+          <div
+            className="select-control-value-container"
+          >
+            <input
+              className="select-placeholder dropdown select-dropdown"
+              onClick={[Function]}
+              readOnly={true}
+              type="text"
+              value="Seleziona una opzione"
+            />
+            <div
+              className="select-input-container search-wrap d-none"
+              style={
+                Object {
+                  "backgroundColor": "#FFF",
+                  "height": 45,
+                  "left": 0,
+                  "margin": "0 24px 0 6px",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 45,
+                  "zIndex": 1000,
+                }
+              }
+            >
+              <input
+                className="select-input search"
+                onChange={[Function]}
+                placeholder="Cerca una regione"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="select-indicators"
+          />
+        </div>
+      </div>
+      <label
+        className=""
+        htmlFor={undefined}
+      >
+        Label di esempio
+      </label>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "SelectRicerca.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Select multipla 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="m-3   form-group"
+    >
+      <div
+        className="select-container select-wrapper custom-select  "
+        id={undefined}
+        onKeyDown={[Function]}
+      >
+        <span
+          aria-atomic="true"
+          aria-live="polite"
+          className="css-17l7ekz"
+          role="status"
+        >
+          20 results available.
+        </span>
+        <div
+          className="select-control"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <span
+            className="caret it-expand"
+          />
+          <div
+            className="select-control-value-container"
+          >
+            <input
+              className="select-placeholder dropdown select-dropdown"
+              onClick={[Function]}
+              readOnly={true}
+              type="text"
+              value="Seleziona una o più regioni"
+            />
+            <div
+              className="select-input-container search-wrap d-none"
+              style={
+                Object {
+                  "backgroundColor": "#FFF",
+                  "height": 45,
+                  "left": 0,
+                  "margin": "0 24px 0 6px",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 45,
+                  "zIndex": 1000,
+                }
+              }
+            >
+              <input
+                className="select-input search"
+                onChange={[Function]}
+                placeholder="Cerca una regione"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="select-indicators"
+          />
+        </div>
+      </div>
+      <label
+        className=""
+        htmlFor={undefined}
+      >
+        Label di esempio
+      </label>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "SelectMultipla.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Textarea 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <form
+      className=""
+    >
+      <div
+        className="   form-group"
+      >
+        <textarea
+          className="form-control"
+          id="exampleText"
+          name="text"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          rows="3"
+          type="textarea"
+        />
+        <label
+          className=""
+          htmlFor="exampleText"
+        >
+          Example textarea
+        </label>
+      </div>
+    </form>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Textarea.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Toggles 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-6"
+      >
+        <div
+          className="m-3   form-check"
+        >
+          <div
+            className="toggles"
+          >
+            <label
+              className="form-check-label "
+              htmlFor={undefined}
+            >
+              Label dell'interruttore 1
+              <input
+                className="form-check-input"
+                disabled={undefined}
+                type="checkbox"
+              />
+              <span
+                className="lever"
+              />
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-sm-6"
+      >
+        <div
+          className="m-3   form-check"
+        >
+          <div
+            className="toggles"
+          >
+            <label
+              className="form-check-label "
+              htmlFor={undefined}
+            >
+              <span>
+                Label dell'interruttore 2
+              </span>
+              <input
+                className="form-check-input"
+                defaultChecked={true}
+                disabled={undefined}
+                type="checkbox"
+              />
+              <span
+                className="lever"
+              />
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Toggles.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form Toggles Disabilitate 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-6"
+      >
+        <div
+          className="m-3   form-check"
+        >
+          <div
+            className="toggles"
+          >
+            <label
+              className="form-check-label "
+              htmlFor={undefined}
+            >
+              Label dell'interruttore 1
+              <input
+                className="form-check-input"
+                disabled={true}
+                type="checkbox"
+              />
+              <span
+                className="lever"
+              />
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-sm-6"
+      >
+        <div
+          className="m-3   form-check"
+        >
+          <div
+            className="toggles"
+          >
+            <label
+              className="form-check-label "
+              htmlFor={undefined}
+            >
+              <span>
+                Label dell'interruttore 2
+              </span>
+              <input
+                className="form-check-input"
+                defaultChecked={true}
+                disabled={true}
+                type="checkbox"
+              />
+              <span
+                className="lever"
+              />
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "TogglesDisabilitate.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form/Layout Auto-dimensionamento 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <form
+      className="m-3 form-inline"
+    >
+      <div
+        className="form-row align-items-center"
+      >
+        <div
+          className="col-auto"
+        >
+          <label
+            className="sr-only "
+            htmlFor="inlineFormInput"
+          >
+            Nome
+          </label>
+          <input
+            className="form-control"
+            id="inlineFormInput"
+            placeholder="Mario Rossi"
+            type="text"
+          />
+        </div>
+        <div
+          className="col-auto"
+        >
+          <label
+            className="sr-only "
+            htmlFor="inlineFormInputGroup"
+          >
+            Username
+          </label>
+          <div
+            className="input-group"
+          >
+            <div
+              className="input-group-prepend"
+            >
+              <div
+                className="input-group-text"
+              >
+                @
+              </div>
+            </div>
+            <input
+              className="form-control"
+              id="inlineFormInputGroup"
+              placeholder="Username"
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          className="col-auto"
+        >
+          <div
+            className="form-check m-0"
+          >
+            <input
+              className="form-check-input"
+              id="autoSizingCheck"
+              type="checkbox"
+            />
+            <label
+              className="form-check-label "
+              htmlFor="autoSizingCheck"
+            >
+              Ricordami
+            </label>
+          </div>
+        </div>
+        <div
+          className="col-auto"
+        >
+          <button
+            className="btn btn-primary"
+            onClick={[Function]}
+            type="submit"
+          >
+            Invia
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "AutoDimensionamento.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form/Layout Dimensione delle colonne 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <form
+        className="m-3"
+      >
+        <div
+          className="form-row"
+        >
+          <div
+            className="col-7   form-group"
+          >
+            <label
+              className="col-sm-7 col-form-label"
+              htmlFor="Citta"
+            >
+              Città
+            </label>
+            <input
+              className="form-control"
+              id="Citta"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+            />
+          </div>
+          <div
+            className="  col form-group"
+          >
+            <label
+              className="col-sm-1 col-form-label"
+              htmlFor="Comune"
+            >
+              Comune
+            </label>
+            <input
+              className="form-control"
+              id="Comune"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+            />
+          </div>
+          <div
+            className="  col form-group"
+          >
+            <label
+              className="col-sm-1 col-form-label"
+              htmlFor="CAP"
+            >
+              CAP
+            </label>
+            <input
+              className="form-control"
+              id="CAP"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "DimensioneColonne.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form/Layout Form a griglia 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <form
+        className=""
+      >
+        <div
+          className="m-3 row"
+        >
+          <div
+            className="  col form-group"
+          >
+            <label
+              className=""
+              htmlFor="formNome"
+            >
+              Nome
+            </label>
+            <input
+              className="form-control"
+              id="formNome"
+              name="text"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+            />
+          </div>
+          <div
+            className="  col form-group"
+          >
+            <label
+              className=""
+              htmlFor="formCognome"
+            >
+              Cognome
+            </label>
+            <input
+              className="form-control"
+              id="formCognome"
+              name="text"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+            />
+          </div>
+        </div>
+      </form>
+      <form
+        className="m-3"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-6   form-group"
+          >
+            <input
+              className="form-control"
+              id="inputEmail4"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="email"
+            />
+            <label
+              className=""
+              htmlFor="inputEmail4"
+            >
+              Email
+            </label>
+          </div>
+          <div
+            className="col-md-6   form-group"
+          >
+            <span
+              className="btn-eye eye-on"
+              onClick={[Function]}
+            />
+            <input
+              className="form-control"
+              id="inputPassword4"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="password"
+            />
+            <label
+              className=""
+              htmlFor="inputPassword4"
+            >
+              Password
+            </label>
+          </div>
+        </div>
+        <div
+          className="   form-group"
+        >
+          <input
+            className="form-control"
+            id="inputAddress"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value="1234 Main St"
+          />
+          <label
+            className=""
+            htmlFor="inputAddress"
+          >
+            Indirizzo
+          </label>
+        </div>
+        <div
+          className="   form-group"
+        >
+          <input
+            className="form-control"
+            id="inputAddress2"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value="Apartment, studio, or floor"
+          />
+          <label
+            className=""
+            htmlFor="inputAddress2"
+          >
+            Indirizzo secondario
+          </label>
+        </div>
+        <div
+          className="form-row"
+        >
+          <div
+            className="col-md-6   form-group"
+          >
+            <input
+              className="form-control"
+              id="inputCity"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+            />
+            <label
+              className=""
+              htmlFor="inputCity"
+            >
+              Città
+            </label>
+          </div>
+          <div
+            className="col-md-4   form-group"
+          >
+            <div
+              className="select-container select-wrapper custom-select  "
+              id={undefined}
+              onKeyDown={[Function]}
+            >
+              <span
+                aria-atomic="true"
+                aria-live="polite"
+                className="css-17l7ekz"
+                role="status"
+              >
+                1 result available.
+              </span>
+              <div
+                className="select-control"
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+              >
+                <span
+                  className="caret it-expand"
+                />
+                <div
+                  className="select-control-value-container"
+                >
+                  <input
+                    className="select-placeholder dropdown select-dropdown"
+                    onClick={[Function]}
+                    readOnly={true}
+                    type="text"
+                    value="Scegli..."
+                  />
+                  <div
+                    className="select-input-container search-wrap d-none"
+                    style={
+                      Object {
+                        "backgroundColor": "#FFF",
+                        "height": 45,
+                        "left": 0,
+                        "margin": "0 24px 0 6px",
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 45,
+                        "zIndex": 1000,
+                      }
+                    }
+                  >
+                    <input
+                      className="select-input search"
+                      onChange={[Function]}
+                      placeholder={undefined}
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div
+                  className="select-indicators"
+                />
+              </div>
+            </div>
+            <label
+              className=""
+              htmlFor="inputState"
+            >
+              Comune
+            </label>
+          </div>
+          <div
+            className="col-md-2   form-group"
+          >
+            <input
+              className="form-control"
+              id="inputCAP"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+            />
+            <label
+              className=""
+              htmlFor="inputCAP"
+            >
+              CAP
+            </label>
+          </div>
+        </div>
+        <div
+          className="form-row"
+        >
+          <div
+            className="col-md-6   form-check"
+          >
+            <input
+              className="form-check-input"
+              id="checkbox1a"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="checkbox"
+            />
+            <label
+              className=""
+              htmlFor="checkbox1a"
+            >
+              Attivazione
+            </label>
+          </div>
+          <div
+            className="  col form-group"
+          >
+            <input
+              className="form-control"
+              id="campofac"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+            />
+            <label
+              className=""
+              htmlFor="campofac"
+            >
+              Campo facoltativo
+            </label>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "FormGriglia.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form/Layout Form disabilitato 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section
+      className="m-3"
+    >
+      <form
+        className=""
+      >
+        <fieldset
+          disabled={true}
+        >
+          <div
+            className="   form-group"
+          >
+            <input
+              className="form-control"
+              disabled={true}
+              id="disabledTextInput"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Disabled input"
+              type="text"
+            />
+            <label
+              className=""
+              htmlFor="disabledTextInput"
+            >
+              Input 
+            </label>
+          </div>
+          <div
+            className="   form-group"
+          >
+            <div
+              className="select-container select-wrapper custom-select  "
+              id="exampleSelect"
+              onKeyDown={[Function]}
+            >
+              <span
+                aria-atomic="true"
+                aria-live="polite"
+                className="css-17l7ekz"
+                role="status"
+              >
+                1 result available.
+              </span>
+              <div
+                className="select-control"
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+              >
+                <span
+                  className="caret it-expand"
+                />
+                <div
+                  className="select-control-value-container"
+                >
+                  <input
+                    className="select-placeholder dropdown select-dropdown"
+                    onClick={[Function]}
+                    readOnly={true}
+                    type="text"
+                    value="Scegli..."
+                  />
+                  <div
+                    className="select-input-container search-wrap d-none"
+                    style={
+                      Object {
+                        "backgroundColor": "#FFF",
+                        "height": 45,
+                        "left": 0,
+                        "margin": "0 24px 0 6px",
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 45,
+                        "zIndex": 1000,
+                      }
+                    }
+                  >
+                    <input
+                      className="select-input search"
+                      onChange={[Function]}
+                      placeholder={undefined}
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div
+                  className="select-indicators"
+                />
+              </div>
+            </div>
+            <label
+              className=""
+              htmlFor="exampleSelect"
+            >
+              Select disabilitata
+            </label>
+          </div>
+          <div
+            className="   form-group"
+          >
+            <select
+              className="form-control"
+              id="disabledSelect"
+            >
+              <option>
+                Disabled select
+              </option>
+            </select>
+            <label
+              className=""
+              htmlFor="disabledSelect"
+            >
+              Select default disabilitata
+            </label>
+          </div>
+          <div
+            className="form-check-label"
+          >
+            <input
+              className="form-check-input"
+              disabled={true}
+              id="disabledFieldsetCheck"
+              type="checkbox"
+            />
+            <label
+              className="form-check-label "
+              htmlFor="disabledFieldsetCheck"
+            >
+              Check disabilitato
+            </label>
+          </div>
+          <button
+            className="mt-3 btn btn-primary disabled"
+            disabled={true}
+            onClick={[Function]}
+            type="submit"
+          >
+            Submit
+          </button>
+        </fieldset>
+      </form>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "FormDisabilitato.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form/Layout Form group 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <form
+      className=""
+    >
+      <div
+        className="   form-group"
+      >
+        <label
+          className=""
+          htmlFor="FormGroupExampleInput"
+        >
+          Esempio di etichetta
+        </label>
+        <input
+          className="form-control"
+          id="FormGroupExampleInput"
+          name="text"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="   form-group"
+      >
+        <label
+          className=""
+          htmlFor="FormGroupExampleInput2"
+        >
+          Altro esempio di etichetta
+        </label>
+        <input
+          className="form-control"
+          id="FormGroupExampleInput2"
+          name="text"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+    </form>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "FormGroup.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form/Layout Inline forms 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <form
+        className="m-3 form-inline"
+      >
+        <div
+          className="form-row align-items-center"
+        >
+          <div
+            className="col-auto"
+          >
+            <label
+              className="sr-only "
+              htmlFor="inlineFormInput"
+            >
+              Nome
+            </label>
+            <input
+              className="form-control"
+              id="inlineFormInput"
+              placeholder="Mario Rossi"
+              type="text"
+            />
+          </div>
+          <div
+            className="col-auto"
+          >
+            <label
+              className="sr-only "
+              htmlFor="inlineFormInputGroup"
+            >
+              Username
+            </label>
+            <div
+              className="input-group"
+            >
+              <div
+                className="input-group-prepend"
+              >
+                <div
+                  className="input-group-text"
+                >
+                  @
+                </div>
+              </div>
+              <input
+                className="form-control"
+                id="inlineFormInputGroup"
+                placeholder="Username"
+                type="text"
+              />
+            </div>
+          </div>
+          <div
+            className="col-auto"
+          >
+            <div
+              className="form-check m-0"
+            >
+              <input
+                className="form-check-input"
+                id="autoSizingCheck"
+                type="checkbox"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="autoSizingCheck"
+              >
+                Ricordami
+              </label>
+            </div>
+          </div>
+          <div
+            className="col-auto"
+          >
+            <button
+              className="btn btn-primary"
+              onClick={[Function]}
+              type="submit"
+            >
+              Invia
+            </button>
+          </div>
+        </div>
+      </form>
+      <form
+        className="m-3 form-inline"
+      >
+        <label
+          className="my-1 mr-2 "
+          htmlFor="inlineFormCustomSelectPref"
+        >
+          Preference
+        </label>
+        <div
+          className="select-container select-wrapper custom-select  "
+          id="inlineFormCustomSelectPref"
+          onKeyDown={[Function]}
+        >
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            className="css-17l7ekz"
+            role="status"
+          >
+            3 results available.
+          </span>
+          <div
+            className="select-control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <span
+              className="caret it-expand"
+            />
+            <div
+              className="select-control-value-container"
+            >
+              <input
+                className="select-placeholder dropdown select-dropdown"
+                onClick={[Function]}
+                readOnly={true}
+                type="text"
+                value="Choose..."
+              />
+              <div
+                className="select-input-container search-wrap d-none"
+                style={
+                  Object {
+                    "backgroundColor": "#FFF",
+                    "height": 45,
+                    "left": 0,
+                    "margin": "0 24px 0 6px",
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 45,
+                    "zIndex": 1000,
+                  }
+                }
+              >
+                <input
+                  className="select-input search"
+                  onChange={[Function]}
+                  placeholder={undefined}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="select-indicators"
+            />
+          </div>
+        </div>
+        <div
+          className="custom-control custom-checkbox my-1 mr-sm-2"
+        >
+          <input
+            className="custom-control-input form-check-input"
+            id="customControlInline"
+            type="checkbox"
+          />
+          <label
+            className="custom-control-label "
+            htmlFor="customControlInline"
+          >
+            Remember my preference
+          </label>
+        </div>
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "InlineForms.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Form/Layout Testo di aiuto 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <form
+        className="m-2"
+      >
+        <div
+          className="   form-group"
+        >
+          <span
+            className="btn-eye eye-on"
+            onClick={[Function]}
+          />
+          <input
+            className="form-control form-control"
+            id="inputPassword5"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="password"
+          />
+          <label
+            className=""
+            htmlFor="inputPassword5"
+          >
+            Password
+          </label>
+          <small
+            className="form-text text-muted"
+            id="passwordHelpBlock"
+          >
+            La tua password deve essere lunga 8-20 caratteri, contenere lettere e numeri e non deve contenere spazi, caratteri speciali o emoji.
+          </small>
+        </div>
+      </form>
+      <form
+        className="form-inline"
+      >
+        <div
+          className="   form-group"
+        >
+          <span
+            className="btn-eye eye-on"
+            onClick={[Function]}
+          />
+          <input
+            className="mx-sm-3 form-control"
+            id="inputPassword6"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="password"
+          />
+          <label
+            className=""
+            htmlFor="inputPassword6"
+          >
+            Password
+          </label>
+          <small
+            className="form-text text-muted"
+            id="passwordHelpInline"
+          >
+            Deve essere lunga 8-20 caratteri.
+          </small>
+        </div>
+      </form>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "TestoAiuto.md",
+      }
+    }
+  />
+</div>
+`;

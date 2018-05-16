@@ -1,0 +1,407 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Badge Arrotondati 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <span
+        className="badge badge-italia badge-pill"
+      >
+        Italia
+      </span>
+      <span
+        className="badge badge-primary badge-pill"
+      >
+        Primary
+      </span>
+      <span
+        className="badge badge-secondary badge-pill"
+      >
+        Secondary
+      </span>
+      <span
+        className="badge badge-tertiary badge-pill"
+      >
+        Tertiary
+      </span>
+      <span
+        className="badge badge-quaternary badge-pill"
+      >
+        Quaternary
+      </span>
+      <span
+        className="badge badge-success badge-pill"
+      >
+        Success
+      </span>
+      <span
+        className="badge badge-danger badge-pill"
+      >
+        Danger
+      </span>
+      <span
+        className="badge badge-warning badge-pill"
+      >
+        Warning
+      </span>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Arrotondati.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Badge Contatore 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+      type={undefined}
+    >
+      Notifiche 
+      <span
+        className="badge badge-secondary"
+      >
+        4
+      </span>
+    </button>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Contatore.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Badge Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <h1>
+        Titolo di esempio 
+        <span
+          className="badge badge-secondary"
+        >
+          New
+        </span>
+      </h1>
+      <h2>
+        Titolo di esempio 
+        <span
+          className="badge badge-secondary"
+        >
+          New
+        </span>
+      </h2>
+      <h3>
+        Titolo di esempio 
+        <span
+          className="badge badge-secondary"
+        >
+          New
+        </span>
+      </h3>
+      <h4>
+        Titolo di esempio 
+        <span
+          className="badge badge-secondary"
+        >
+          New
+        </span>
+      </h4>
+      <h5>
+        Titolo di esempio 
+        <span
+          className="badge badge-secondary"
+        >
+          New
+        </span>
+      </h5>
+      <h6>
+        Titolo di esempio 
+        <span
+          className="badge badge-secondary"
+        >
+          New
+        </span>
+      </h6>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Badge Esempi interattivi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <span
+      className="badge badge-italia badge-pill"
+    >
+      
+      italia
+    </span>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "EsempiInterattivi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Badge Link 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <a
+        className="badge badge-italia"
+        href="#"
+      >
+        Italia
+      </a>
+      <a
+        className="badge badge-primary"
+        href="#"
+      >
+        Primary
+      </a>
+      <a
+        className="badge badge-secondary"
+        href="#"
+      >
+        Secondary
+      </a>
+      <a
+        className="badge badge-tertiary"
+        href="#"
+      >
+        Tertiary
+      </a>
+      <a
+        className="badge badge-quaternary"
+        href="#"
+      >
+        Quaternary
+      </a>
+      <a
+        className="badge badge-success"
+        href="#"
+      >
+        Success
+      </a>
+      <a
+        className="badge badge-danger"
+        href="#"
+      >
+        Danger
+      </a>
+      <a
+        className="badge badge-warning"
+        href="#"
+      >
+        Warning
+      </a>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Link.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Badge Variazioni 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <span
+        className="badge badge-italia"
+      >
+        Italia
+      </span>
+      <span
+        className="badge badge-primary"
+      >
+        Primary
+      </span>
+      <span
+        className="badge badge-secondary"
+      >
+        Secondary
+      </span>
+      <span
+        className="badge badge-tertiary"
+      >
+        Tertiary
+      </span>
+      <span
+        className="badge badge-quaternary"
+      >
+        Quaternary
+      </span>
+      <span
+        className="badge badge-success"
+      >
+        Success
+      </span>
+      <span
+        className="badge badge-danger"
+      >
+        Danger
+      </span>
+      <span
+        className="badge badge-warning"
+      >
+        Warning
+      </span>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Variazioni.md",
+      }
+    }
+  />
+</div>
+`;

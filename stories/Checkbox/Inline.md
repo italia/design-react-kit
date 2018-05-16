@@ -1,0 +1,3 @@
+### Checkbox inline
+
+<!-- STORY -->

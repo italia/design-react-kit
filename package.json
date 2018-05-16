@@ -1,71 +1,70 @@
 {
-  "name": "italia-design-react",
-  "version": "1.0.0",
-  "description": "Italia UI Toolkit",
-  "main": "lib/index.js",
+  "name": "design-react-kit",
+  "version": "0.0.2",
+  "description": "Componenti React per Bootstrap 4",
+  "author": "Presidenza del Consiglio dei Ministri",
+  "license": "BSD-3-Clause",
+  "main": "dist/design-react-kit.cjs.js",
+  "module": "dist/design-react-kit.es.js",
+  "engines": {
+    "npm": "^5.0.0"
+  },
   "scripts": {
-    "test": "jest --watch",
-    "test:ci": "jest",
-    "build": "webpack --config webpack.prod.config.js",
-    "lint": "eslint --fix src/",
-    "storybook": "start-storybook -p 8010 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o .out",
-    "deploy-storybook": "storybook-to-ghpages"
+    "install-dependencies": "if [ ! -d node_modules ]; then npm install && npx npm-install-peers; fi",
+    "prebuild": "npm run install-dependencies",
+    "build": "rollup -c scripts/rollup.config.js",
+    "prestorybook": "npm run install-dependencies",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook",
+    "storybook:deploy": "gh-pages -d storybook-static -m 'Update GitHub Pages [ci skip]'",
+    "test": "CI=true react-scripts test --env=jsdom"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/italia/design-react.git"
+    "url": "git+https://github.com/italia/design-react-kit.git"
   },
-  "author": {
-    "name": "RomaJS",
-    "url": "http://romajs.org/"
-  },
-  "contributors": [
-    "Matteo Manchi <matteo.manchi@gmail.com>",
-    "Marco Liberati <dej611@gmail.com>",
-    "Paolo Mariotti <mariotti.pro@gmail.com>"
-  ],
-  "license": "LGPLv2.1",
   "bugs": {
-    "url": "https://github.com/italia/design-react/issues"
+    "url": "https://github.com/italia/design-react-kit/issues"
   },
-  "homepage": "https://github.com/italia/design-react#README",
+  "homepage": "https://github.com/italia/design-react-kit#readme",
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
   "devDependencies": {
-    "@improntaadvance/eslint-config": "^0.8.2",
-    "@storybook/addon-actions": "^3.2.6",
-    "@storybook/addon-console": "^1.0.0",
-    "@storybook/addon-info": "^3.2.9",
-    "@storybook/addon-storyshots": "^3.2.12",
-    "@storybook/react": "^3.2.8",
-    "@storybook/storybook-deployer": "^2.0.0",
+    "@sambego/storybook-state": "^1.0.7",
+    "@storybook/addon-knobs": "^3.4.2",
+    "@storybook/addon-options": "^3.4.2",
+    "@storybook/addon-storyshots": "^3.4.2",
+    "@storybook/addon-viewport": "4.0.0-alpha.1",
+    "@storybook/addons": "^3.4.2",
+    "@storybook/react": "^3.4.2",
+    "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
+    "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-airbnb": "^2.4.0",
-    "eslint": "^4.8.0",
-    "eslint-config-prettier": "^2.6.0",
-    "eslint-plugin-flowtype": "^2.39.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-prettier": "^2.3.1",
-    "eslint-plugin-react": "^7.4.0",
-    "extract-text-webpack-plugin": "^3.0.1",
-    "jest": "^21.2.1",
-    "prettier": "^1.7.4",
-    "raw-loader": "^0.5.1",
-    "react-test-renderer": "^15.6.1"
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "bootstrap-italia": "^0.7.1",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-babel": "^5.0.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "gh-pages": "^1.1.0",
+    "jest": "^22.4.3",
+    "prettier": "^1.12.1",
+    "react-scripts": "^1.1.4",
+    "react-select": "^2.0.0-alpha.11",
+    "react-test-renderer": "^16.3.2",
+    "reactstrap": "^5.0.0",
+    "rollup": "^0.58.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "storybook-readme": "^3.3.0"
   },
-  "dependencies": {
-    "classnames": "^2.2.5",
-    "design-web-toolkit": "github:italia/design-web-toolkit",
-    "jquery": "^3.2.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "tablesaw": "^3.0.3"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
-    }
-  }
+  "dependencies": {}
 }

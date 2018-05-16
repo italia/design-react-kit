@@ -1,0 +1,935 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Input Group Aggiunta bottoni 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <div
+        className="mb-3 input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <button
+            className="btn btn-primary"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Bottone
+          </button>
+        </div>
+        <input
+          className="form-control"
+          placeholder=""
+          type="text"
+        />
+      </div>
+      <div
+        className="input-group mb-3 input-group"
+      >
+        <input
+          className="form-control"
+          placeholder="Contenitore"
+          type="text"
+        />
+        <div
+          className="input-group-append"
+        >
+          <button
+            className="btn btn-primary"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Bottone
+          </button>
+        </div>
+      </div>
+      <div
+        className="input-group mb-3 input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <button
+            className="btn btn-primary"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Bottone
+          </button>
+          <button
+            className="btn btn-primary"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Bottone
+          </button>
+        </div>
+        <input
+          className="form-control"
+          placeholder=""
+          type="text"
+        />
+      </div>
+      <div
+        className="input-group input-group"
+      >
+        <input
+          className="form-control"
+          placeholder="Contenitore"
+          type="text"
+        />
+        <div
+          className="input-group-append"
+        >
+          <button
+            className="btn btn-primary"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Bottone
+          </button>
+          <button
+            className="btn btn-primary"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Bottone
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "AggiuntaBottoni.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Input Group Aggiunte multiple 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <div
+        className="mb-3 input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+          >
+            €
+          </span>
+          <span
+            className="input-group-text"
+          >
+            0,00
+          </span>
+        </div>
+        <input
+          className="form-control"
+          type="text"
+        />
+      </div>
+      <div
+        className="input-group"
+      >
+        <input
+          className="form-control"
+          type="text"
+        />
+        <div
+          className="input-group-append"
+        >
+          <span
+            className="input-group-text"
+          >
+            €
+          </span>
+          <span
+            className="input-group-text"
+          >
+            0,00
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "AggiunteMultiple.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Input Group Bottoni con dropdown 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <div
+        className="mb-3 input-group"
+      >
+        <div
+          className="input-group-prepend"
+          onKeyDown={[Function]}
+        >
+          <button
+            aria-expanded={false}
+            aria-haspopup={true}
+            className="dropdown-toggle btn btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            Dropdown
+          </button>
+          <div
+            aria-hidden={true}
+            className="dropdown-menu"
+            role="menu"
+            tabIndex="-1"
+          >
+            <h6
+              className="dropdown-header"
+              onClick={[Function]}
+              tabIndex="-1"
+              type={undefined}
+            >
+              Header
+            </h6>
+            <button
+              className="disabled dropdown-item"
+              disabled={true}
+              onClick={[Function]}
+              tabIndex="-1"
+              type="button"
+            >
+              Action
+            </button>
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Another Action
+            </button>
+            <div
+              className="dropdown-divider"
+              onClick={[Function]}
+              tabIndex="-1"
+              type={undefined}
+            />
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Another Action
+            </button>
+          </div>
+        </div>
+        <input
+          className="form-control"
+          type="text"
+        />
+      </div>
+      <div
+        className="input-group"
+      >
+        <input
+          className="form-control"
+          type="text"
+        />
+        <div
+          className="input-group-append"
+          onKeyDown={[Function]}
+        >
+          <button
+            aria-expanded={false}
+            aria-haspopup={true}
+            className="dropdown-toggle btn btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            Dropdown
+          </button>
+          <div
+            aria-hidden={true}
+            className="dropdown-menu"
+            role="menu"
+            tabIndex="-1"
+          >
+            <h6
+              className="dropdown-header"
+              onClick={[Function]}
+              tabIndex="-1"
+              type={undefined}
+            >
+              Header
+            </h6>
+            <button
+              className="disabled dropdown-item"
+              disabled={true}
+              onClick={[Function]}
+              tabIndex="-1"
+              type="button"
+            >
+              Action
+            </button>
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Another Action
+            </button>
+            <div
+              className="dropdown-divider"
+              onClick={[Function]}
+              tabIndex="-1"
+              type={undefined}
+            />
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Another Action
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "BottoniDropdown.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Input Group Checkbox e radio 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <div
+        className="mb-3 input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <div
+            className="input-group"
+          >
+            <input
+              className="form-check-input"
+              type="checkbox"
+            />
+          </div>
+        </div>
+        <input
+          className="form-control"
+          type="text"
+        />
+      </div>
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <div
+            className="input-group"
+          >
+            <input
+              className="form-check-input"
+              type="radio"
+            />
+          </div>
+        </div>
+        <input
+          className="form-control"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "CheckboxRadio.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Input Group Dimensioni 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <div
+        className="mb-3 input-group input-group-sm"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+          >
+            Testo piccolo
+          </span>
+        </div>
+        <input
+          className="form-control"
+          type="text"
+        />
+      </div>
+      <div
+        className="mb-3 input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+          >
+            Testo predefinito
+          </span>
+        </div>
+        <input
+          className="form-control"
+          type="text"
+        />
+      </div>
+      <div
+        className="input-group input-group-lg"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+          >
+            Testo grande
+          </span>
+        </div>
+        <input
+          className="form-control"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Dimensioni.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Input Group Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="p-3"
+    >
+      <div
+        className="pb-3 input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+          >
+            @
+          </span>
+        </div>
+        <input
+          className="form-control"
+          placeholder="Username"
+          type="text"
+        />
+      </div>
+      <div
+        className="pb-3 input-group"
+      >
+        <input
+          className="form-control"
+          placeholder="Mail utente"
+          type="text"
+        />
+        <div
+          className="input-group-append"
+        >
+          <span
+            className="input-group-text"
+          >
+            @esempio.it
+          </span>
+        </div>
+      </div>
+      <div
+        className="   form-group"
+      >
+        <div
+          className="pb-3 input-group"
+        >
+          <div
+            className="input-group-prepend"
+          >
+            <span
+              className="input-group-text"
+            >
+              https://esempio.it/utente/
+            </span>
+          </div>
+          <input
+            className="form-control"
+            id="basic-url"
+            type="text"
+          />
+        </div>
+        <label
+          className=""
+          htmlFor="basic-url"
+        >
+          La tua URL
+        </label>
+      </div>
+      <div
+        className="pb-3 input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+          >
+            €
+          </span>
+        </div>
+        <input
+          className="form-control"
+          type="number"
+        />
+        <div
+          className="input-group-append"
+        >
+          <span
+            className="input-group-text"
+          >
+            ,00
+          </span>
+        </div>
+      </div>
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+          >
+            Textarea
+          </span>
+        </div>
+        <textarea
+          className="form-control"
+          type="textarea"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Input Group Input multipli 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="input-group-text"
+          >
+            Nominativo
+          </span>
+        </div>
+        <input
+          className="form-control"
+          placeholder="Nome"
+          type="text"
+        />
+        <input
+          className="form-control"
+          placeholder="Cognome"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "InputMultipli.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Input Group Pulsanti segmentati 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <div
+        className="mb-3 input-group"
+      >
+        <div
+          className="input-group-prepend"
+          onKeyDown={[Function]}
+        >
+          <button
+            aria-expanded={false}
+            aria-haspopup={true}
+            className="dropdown-toggle btn btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            Dropdown
+          </button>
+          <div
+            aria-hidden={true}
+            className="dropdown-menu"
+            role="menu"
+            tabIndex="-1"
+          >
+            <h6
+              className="dropdown-header"
+              onClick={[Function]}
+              tabIndex="-1"
+              type={undefined}
+            >
+              Header
+            </h6>
+            <button
+              className="disabled dropdown-item"
+              disabled={true}
+              onClick={[Function]}
+              tabIndex="-1"
+              type="button"
+            >
+              Action
+            </button>
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Another Action
+            </button>
+            <div
+              className="dropdown-divider"
+              onClick={[Function]}
+              tabIndex="-1"
+              type={undefined}
+            />
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Another Action
+            </button>
+          </div>
+        </div>
+        <input
+          className="form-control"
+          type="text"
+        />
+      </div>
+      <div
+        className="input-group"
+      >
+        <input
+          className="form-control"
+          type="text"
+        />
+        <div
+          className="input-group-append"
+          onKeyDown={[Function]}
+        >
+          <div>
+            <button
+              className="btn btn-primary"
+              onClick={[Function]}
+              type={undefined}
+            >
+              Action
+            </button>
+            <button
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle dropdown-toggle-split btn btn-primary"
+              onClick={[Function]}
+              type="button"
+            >
+              <span
+                className="sr-only"
+              >
+                Toggle Dropdown
+              </span>
+            </button>
+          </div>
+          <div
+            aria-hidden={true}
+            className="dropdown-menu"
+            role="menu"
+            tabIndex="-1"
+          >
+            <h6
+              className="dropdown-header"
+              onClick={[Function]}
+              tabIndex="-1"
+              type={undefined}
+            >
+              Header
+            </h6>
+            <button
+              className="disabled dropdown-item"
+              disabled={true}
+              onClick={[Function]}
+              tabIndex="-1"
+              type="button"
+            >
+              Action
+            </button>
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Another Action
+            </button>
+            <div
+              className="dropdown-divider"
+              onClick={[Function]}
+              tabIndex="-1"
+              type={undefined}
+            />
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Another Action
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "PulsantiSegmentati.md",
+      }
+    }
+  />
+</div>
+`;

@@ -1,0 +1,129 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+
+aliases:
+  - &working_directory
+    ~/repo
+
+  - &restore_cache
+    keys:
+    - v1-dependencies-{{ checksum "package.json" }}
+    # fallback to using the latest cache if no exact match is found
+    - v1-dependencies-
+
+  - &npm_install
+    name: Install Packages
+    command: npm install
+
+  - &save_cache
+    paths:
+      - node_modules
+    key: v1-dependencies-{{ checksum "package.json" }}
+
+  - &tag_filters
+    branches:
+      ignore: /.*/
+    tags:
+      only: /^v?[0-9]+(\.[0-9]+)*/
+
+defaults: &defaults
+  docker:
+    # specify the version you desire here
+    - image: circleci/node:8
+
+  working_directory: *working_directory
+
+jobs:
+  build:
+    <<: *defaults
+
+    steps:
+      - checkout
+
+      - run:
+          name: Check versions
+          command: |
+            node --version
+            npm --version
+            docker --version
+
+      # Download and cache dependencies
+      - restore_cache: *restore_cache
+      - run: *npm_install
+      - save_cache: *save_cache
+
+      - run:
+          name: Build
+          command: npm run build
+
+      # Persist the specified paths (workspace/echo-output) into the workspace 
+      # for use in downstream job. Must be an absolute path, or relative path 
+      # from working_directory. This is a directory on the container which is 
+      # taken to be the root directory of the workspace.
+      - persist_to_workspace:
+          root: *working_directory
+          paths:
+            - dist
+
+  deploy-github-pages:
+    <<: *defaults
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache: *restore_cache
+      - run: *npm_install
+      - save_cache: *save_cache
+        
+      - run:
+          name: Deploy GitHub Pages
+          command: |
+            git config --global user.email "$GIT_AUTHOR_EMAIL"
+            git config --global user.name "$GIT_AUTHOR_NAME"
+            npx npm-install-peers
+            npm run storybook:build
+            npm run storybook:deploy
+
+  npm-publish:
+    <<: *defaults
+
+    steps:
+      - checkout
+
+      - attach_workspace:
+          # Must be absolute path or relative path from working_directory
+          at: .
+
+      - run:
+          name: npm publish
+          command: |
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+            npm publish
+
+# Workflows enable multiple jobs in parallel
+workflows:
+  version: 2
+
+  deploy:
+    jobs:
+      - build:
+          # Note: The build job must also have a filters tags section, as it 
+          # is a transient dependency of the deploy job.
+          filters:
+            branches:
+              ignore: gh-pages
+            tags:
+              only: /.*/
+
+      - deploy-github-pages:
+          requires:
+            - build
+
+      - npm-publish:
+          requires:
+            - build
+          filters: *tag_filters

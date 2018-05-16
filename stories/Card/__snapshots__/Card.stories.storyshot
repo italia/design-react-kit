@@ -1,0 +1,711 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Card Colonne 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="card-columns"
+    >
+      <div
+        className="card"
+      >
+        <img
+          alt="Immagine"
+          className="card-img-top"
+          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+          width="100%"
+        />
+        <div
+          className="card-body"
+        >
+          <h5
+            className="card-title"
+          >
+            Titolo card
+          </h5>
+          <h6
+            className="card-subtitle"
+          >
+            Sottotitolo card
+          </h6>
+          <p
+            className="card-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div
+        className="card"
+      >
+        <div
+          className="card-body"
+        >
+          <p
+            className="card-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div
+        className="card"
+      >
+        <img
+          alt="Immagine"
+          className="card-img-top"
+          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+          width="100%"
+        />
+        <div
+          className="card-body"
+        >
+          <h5
+            className="card-title"
+          >
+            Titolo card
+          </h5>
+          <h6
+            className="card-subtitle"
+          >
+            Sottotitolo card
+          </h6>
+          <p
+            className="card-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div
+        className="card text-white card-body bg-primary"
+      >
+        <h5
+          className="card-title"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.
+        </h5>
+      </div>
+      <div
+        className="card"
+      >
+        <img
+          alt="Immagine"
+          className="card-img-top"
+          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+          width="100%"
+        />
+      </div>
+      <div
+        className="card"
+      >
+        <div
+          className="card-body"
+        >
+          <p
+            className="card-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div
+        className="card"
+      >
+        <div
+          className="card-body"
+        >
+          <p
+            className="card-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div
+        className="card text-white card-body"
+        style={
+          Object {
+            "backgroundColor": "#333",
+            "borderColor": "#333",
+          }
+        }
+      >
+        <h5
+          className="card-title"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Colonne.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Card Contenuti 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="w-50 card"
+    >
+      <div
+        className="card-body"
+      >
+        <h5
+          className="card-title"
+        >
+          Titolo card
+        </h5>
+        <h6
+          className="card-subtitle"
+        >
+          Sottotitolo card
+        </h6>
+        <p
+          className="card-text"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </p>
+        <a
+          className="card-link"
+          href="#"
+        >
+          Card Link
+        </a>
+        <a
+          className="card-link"
+          href="#"
+        >
+          Altro Link
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Contenuti.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Card Deck 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="card-deck"
+    >
+      <div
+        className="card"
+      >
+        <img
+          alt="Immagine"
+          className="card-img-top"
+          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+          width="100%"
+        />
+        <div
+          className="card-body"
+        >
+          <h5
+            className="card-title"
+          >
+            Titolo card
+          </h5>
+          <p
+            className="card-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div
+            className="card-footer"
+          >
+            Ultimo aggiornamento 3 minuti fa
+          </div>
+        </div>
+      </div>
+      <div
+        className="card"
+      >
+        <img
+          alt="Immagine"
+          className="card-img-top"
+          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+          width="100%"
+        />
+        <div
+          className="card-body"
+        >
+          <h5
+            className="card-title"
+          >
+            Titolo card
+          </h5>
+          <p
+            className="card-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div
+            className="card-footer"
+          >
+            Ultimo aggiornamento 3 minuti fa
+          </div>
+        </div>
+      </div>
+      <div
+        className="card"
+      >
+        <img
+          alt="Immagine"
+          className="card-img-top"
+          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+          width="100%"
+        />
+        <div
+          className="card-body"
+        >
+          <h5
+            className="card-title"
+          >
+            Titolo card
+          </h5>
+          <p
+            className="card-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div
+            className="card-footer"
+          >
+            Ultimo aggiornamento 3 minuti fa
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Deck.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Card Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="w-50 card"
+    >
+      <img
+        alt="Immagine"
+        className="card-img-top"
+        src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+        width="100%"
+      />
+      <div
+        className="card-body"
+      >
+        <h5
+          className="card-title"
+        >
+          Titolo esempio Card
+        </h5>
+        <p
+          className="card-text"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type={undefined}
+        >
+          Vai avanti
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Card Gruppi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="card-group"
+    >
+      <div
+        className="card"
+      >
+        <img
+          alt="Immagine"
+          className="card-img-top"
+          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+          width="100%"
+        />
+        <div
+          className="card-body"
+        >
+          <h5
+            className="card-title"
+          >
+            Titolo card
+          </h5>
+          <p
+            className="card-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div
+            className="card-footer"
+          >
+            Ultimo aggiornamento 3 minuti fa
+          </div>
+        </div>
+      </div>
+      <div
+        className="card"
+      >
+        <img
+          alt="Immagine"
+          className="card-img-top"
+          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+          width="100%"
+        />
+        <div
+          className="card-body"
+        >
+          <h5
+            className="card-title"
+          >
+            Titolo card
+          </h5>
+          <p
+            className="card-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div
+            className="card-footer"
+          >
+            Ultimo aggiornamento 3 minuti fa
+          </div>
+        </div>
+      </div>
+      <div
+        className="card"
+      >
+        <img
+          alt="Immagine"
+          className="card-img-top"
+          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+          width="100%"
+        />
+        <div
+          className="card-body"
+        >
+          <h5
+            className="card-title"
+          >
+            Titolo card
+          </h5>
+          <p
+            className="card-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div
+            className="card-footer"
+          >
+            Ultimo aggiornamento 3 minuti fa
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Gruppi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Card Header e Footer 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="w-50 mt-5 card"
+    >
+      <div
+        className="card-header"
+      >
+        Featured
+      </div>
+      <div
+        className="card-body"
+      >
+        <h5
+          className="card-title"
+        >
+          Titolo card
+        </h5>
+        <p
+          className="card-text"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </p>
+        <button
+          className="btn btn-secondary"
+          onClick={[Function]}
+          type={undefined}
+        >
+          Vai avanti
+        </button>
+      </div>
+      <div
+        className="text-center card-footer"
+      >
+        2 giorni fa
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "HeaderFooter.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Card Immagini 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <div
+        className="w-50 card"
+      >
+        <img
+          alt="Immagine"
+          className="card-img-top"
+          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+          width="100%"
+        />
+        <div
+          className="card-body"
+        >
+          <p
+            className="card-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+      </div>
+      <div
+        className="w-50 mt-5 card text-white"
+      >
+        <img
+          alt="Immagine"
+          className="card-img"
+          src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97270&w=318&h=270&bg=333333&txtclr=666666"
+          width="100%"
+        />
+        <div
+          className="card-img-overlay"
+        >
+          <h5
+            className="card-title"
+          >
+            Titolo card
+          </h5>
+          <p
+            className="card-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+          <p
+            className="card-text"
+          >
+            <small
+              className="text-muted"
+            >
+              Ultimo aggiornamento 3 minuti fa
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Immagini.md",
+      }
+    }
+  />
+</div>
+`;

@@ -1,0 +1,677 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Pagination Dimensione e allineamento 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <ul
+        className="mb-3 pagination pagination-lg"
+      >
+        <li
+          className="page-item disabled"
+        >
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <span
+                className="it-chevron-left"
+              />
+            </span>
+            <span
+              className="sr-only"
+            >
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="page-item active"
+        >
+          <a
+            aria-label={undefined}
+            className="page-link"
+            href="#"
+          >
+            1
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label={undefined}
+            className="page-link"
+            href="#"
+          >
+            2
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label={undefined}
+            className="page-link"
+            href="#"
+          >
+            3
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <span
+                className="it-chevron-right"
+              />
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
+      <ul
+        className="justify-content-end mb-3 pagination pagination-sm"
+      >
+        <li
+          className="page-item disabled"
+        >
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <span
+                className="it-chevron-left"
+              />
+            </span>
+            <span
+              className="sr-only"
+            >
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="page-item active"
+        >
+          <a
+            aria-label={undefined}
+            className="page-link"
+            href="#"
+          >
+            1
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label={undefined}
+            className="page-link"
+            href="#"
+          >
+            2
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label={undefined}
+            className="page-link"
+            href="#"
+          >
+            3
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <span
+                className="it-chevron-right"
+              />
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "DimensioneAllineamento.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Pagination Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <ul
+      className="pagination"
+    >
+      <li
+        className="page-item"
+      >
+        <a
+          aria-label="Previous"
+          className="page-link"
+          href="#"
+        >
+          <span
+            aria-hidden="true"
+          >
+            <span
+              className="it-chevron-left"
+            />
+          </span>
+          <span
+            className="sr-only"
+          >
+            Previous
+          </span>
+        </a>
+      </li>
+      <li
+        className="page-item"
+      >
+        <a
+          aria-label={undefined}
+          className="page-link"
+          href="#"
+        >
+          1
+        </a>
+      </li>
+      <li
+        className="page-item"
+      >
+        <a
+          aria-label={undefined}
+          className="page-link"
+          href="#"
+        >
+          2
+        </a>
+      </li>
+      <li
+        className="page-item"
+      >
+        <a
+          aria-label={undefined}
+          className="page-link"
+          href="#"
+        >
+          3
+        </a>
+      </li>
+      <li
+        className="page-item"
+      >
+        <a
+          aria-label="Next"
+          className="page-link"
+          href="#"
+        >
+          <span
+            aria-hidden="true"
+          >
+            <span
+              className="it-chevron-right"
+            />
+          </span>
+          <span
+            className="sr-only"
+          >
+            Next
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Pagination Esempi interattivi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <ul
+      className="pagination pagination-sm"
+    >
+      <li
+        className="page-item"
+      >
+        <a
+          aria-label="Previous"
+          className="page-link"
+          href="#"
+        >
+          <span
+            aria-hidden="true"
+          >
+            <span
+              className="it-chevron-left"
+            />
+          </span>
+          <span
+            className="sr-only"
+          >
+            Previous
+          </span>
+        </a>
+      </li>
+      <li
+        className="page-item"
+      >
+        <a
+          aria-label={undefined}
+          className="page-link"
+          href="#"
+        >
+          1
+        </a>
+      </li>
+      <li
+        className="page-item"
+      >
+        <a
+          aria-label="Next"
+          className="page-link"
+          href="#"
+        >
+          <span
+            aria-hidden="true"
+          >
+            <span
+              className="it-chevron-right"
+            />
+          </span>
+          <span
+            className="sr-only"
+          >
+            Next
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "EsempiInterattivi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Pagination Responsive 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <ul
+      className="mb-3 pagination"
+    >
+      <li
+        className="page-item"
+      >
+        <a
+          aria-label="Previous"
+          className="page-link"
+          href="#"
+        >
+          <span
+            aria-hidden="true"
+          >
+            <span
+              className="it-chevron-left"
+            />
+          </span>
+          <span
+            className="sr-only"
+          >
+            Previous
+          </span>
+        </a>
+      </li>
+      <li
+        className="d-none d-sm-block page-item"
+      >
+        <span
+          className="p-3"
+        >
+          ...
+        </span>
+      </li>
+      <li
+        className="d-none d-sm-block page-item"
+      >
+        <a
+          aria-label={undefined}
+          className="page-link"
+          href="#"
+        >
+          9
+        </a>
+      </li>
+      <li
+        className="d-none d-sm-block page-item"
+      >
+        <a
+          aria-label={undefined}
+          className="page-link"
+          href="#"
+        >
+          10
+        </a>
+      </li>
+      <li
+        className="page-item active"
+      >
+        <a
+          aria-label={undefined}
+          className="page-link"
+          href="#"
+        >
+          11
+        </a>
+      </li>
+      <li
+        className="d-none d-sm-block page-item"
+      >
+        <a
+          aria-label={undefined}
+          className="page-link"
+          href="#"
+        >
+          12
+        </a>
+      </li>
+      <li
+        className="d-none d-sm-block page-item"
+      >
+        <a
+          aria-label={undefined}
+          className="page-link"
+          href="#"
+        >
+          13
+        </a>
+      </li>
+      <li
+        className="d-none d-sm-block page-item"
+      >
+        <span
+          className="p-3"
+        >
+          ...
+        </span>
+      </li>
+      <li
+        className="page-item"
+      >
+        <a
+          aria-label="Next"
+          className="page-link"
+          href="#"
+        >
+          <span
+            aria-hidden="true"
+          >
+            <span
+              className="it-chevron-right"
+            />
+          </span>
+          <span
+            className="sr-only"
+          >
+            Next
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Responsive.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Pagination Stato disabilitato e attivo 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <ul
+      className="pagination"
+    >
+      <li
+        className="page-item disabled"
+      >
+        <a
+          aria-label="Previous"
+          className="page-link"
+          href="#"
+        >
+          <span
+            aria-hidden="true"
+          >
+            <span
+              className="it-chevron-left"
+            />
+          </span>
+          <span
+            className="sr-only"
+          >
+            Previous
+          </span>
+        </a>
+      </li>
+      <li
+        className="page-item active"
+      >
+        <a
+          aria-label={undefined}
+          className="page-link"
+          href="#"
+        >
+          1
+        </a>
+      </li>
+      <li
+        className="page-item"
+      >
+        <a
+          aria-label={undefined}
+          className="page-link"
+          href="#"
+        >
+          2
+        </a>
+      </li>
+      <li
+        className="page-item"
+      >
+        <a
+          aria-label={undefined}
+          className="page-link"
+          href="#"
+        >
+          3
+        </a>
+      </li>
+      <li
+        className="page-item"
+      >
+        <a
+          aria-label="Next"
+          className="page-link"
+          href="#"
+        >
+          <span
+            aria-hidden="true"
+          >
+            <span
+              className="it-chevron-right"
+            />
+          </span>
+          <span
+            className="sr-only"
+          >
+            Next
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "StatoDisabilitatoAttivo.md",
+      }
+    }
+  />
+</div>
+`;

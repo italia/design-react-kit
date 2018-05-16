@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Introduzione Benvenuto 1`] = `
+<article
+  className="m-3"
+>
+  <h1>
+    Benvenuto su 
+    <code>
+      design-react-kit
+    </code>
+  </h1>
+  <p>
+    Questo è uno showcase dei componenti UI presenti nella libreria.
+  </p>
+  <p>
+    Il sorgente è presente nella directory 
+    <code>
+      stories
+    </code>
+     del progetto.
+    <br />
+    Una 
+    <code>
+      story
+    </code>
+     è un singolo stato di uno o più componenti UI.
+    <br />
+    (In pratica una 
+    <code>
+      story
+    </code>
+     è come un visual test case.)
+  </p>
+</article>
+`;
