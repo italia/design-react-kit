@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Popover Elementi disabilitati 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <button
+        className="btn btn-primary disabled"
+        disabled={true}
+        id="example"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Popover disabilitato
+      </button>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "ElementiDisabilitati.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Popover Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <button
+        className="btn btn-danger"
+        id="example"
+        onClick={[Function]}
+        type="button"
+      >
+        Clicca par attivare/disattivare il popover
+      </button>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Popover Esempi interattivi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "padding": 250,
+        }
+      }
+    >
+      <button
+        className="btn btn-primary"
+        disabled={false}
+        id="example"
+        onClick={[Function]}
+        type="button"
+      >
+        Popover 
+        
+      </button>
+      <div />
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "EsempiInterattivi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Popover Le quattro direzioni 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "padding": 200,
+        }
+      }
+    >
+      <span>
+        <button
+          className="mr-1 btn btn-secondary"
+          id="Popover-0"
+          onClick={[Function]}
+          type="button"
+        >
+          Popover 
+          in alto
+        </button>
+      </span>
+      <span>
+        <button
+          className="mr-1 btn btn-secondary"
+          id="Popover-1"
+          onClick={[Function]}
+          type="button"
+        >
+          Popover 
+          in basso
+        </button>
+      </span>
+      <span>
+        <button
+          className="mr-1 btn btn-secondary"
+          id="Popover-2"
+          onClick={[Function]}
+          type="button"
+        >
+          Popover 
+          a sinistra
+        </button>
+      </span>
+      <span>
+        <button
+          className="mr-1 btn btn-secondary"
+          id="Popover-3"
+          onClick={[Function]}
+          type="button"
+        >
+          Popover 
+          a destra
+        </button>
+      </span>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "QuattroDirezioni.md",
+      }
+    }
+  />
+</div>
+`;

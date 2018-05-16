@@ -1,0 +1,572 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Radio Button Disabilitati 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <form
+      className="m-3"
+    >
+      <div
+        className="   form-check"
+      >
+        <input
+          className="form-check-input"
+          defaultChecked={true}
+          disabled={true}
+          id="radio1"
+          name="gruppo1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label "
+          htmlFor="radio1"
+        >
+          Opzione 1
+        </label>
+      </div>
+      <div
+        className="   form-check"
+      >
+        <input
+          className="form-check-input"
+          disabled={true}
+          id="radio2"
+          name="gruppo1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label "
+          htmlFor="radio2"
+        >
+          Opzione 2
+        </label>
+      </div>
+      <div
+        className="   form-check"
+      >
+        <input
+          className="form-check-input"
+          disabled={true}
+          id="radio3"
+          name="gruppo1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label "
+          htmlFor="radio3"
+        >
+          Opzione 3
+        </label>
+      </div>
+    </form>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Disabilitati.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Radio Button Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <form
+      className="m-3"
+    >
+      <div
+        className="   form-check"
+      >
+        <input
+          className="form-check-input"
+          defaultChecked={true}
+          id="radio1"
+          name="gruppo1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label "
+          htmlFor="radio1"
+        >
+          Opzione 1
+        </label>
+      </div>
+      <div
+        className="   form-check"
+      >
+        <input
+          className="form-check-input"
+          id="radio2"
+          name="gruppo1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label "
+          htmlFor="radio2"
+        >
+          Opzione 2
+        </label>
+      </div>
+      <div
+        className="   form-check"
+      >
+        <input
+          className="form-check-input"
+          id="radio3"
+          name="gruppo1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label "
+          htmlFor="radio3"
+        >
+          Opzione 3
+        </label>
+      </div>
+    </form>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Radio Button Esempi interattivi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <form
+      className=""
+    >
+      <div
+        className="   form-check"
+      >
+        <input
+          checked={true}
+          className="form-check-input"
+          disabled={false}
+          id="radio1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label "
+          htmlFor="radio1"
+        >
+          Opzione
+           
+          Selezionato
+           
+          
+           
+          
+        </label>
+      </div>
+      <div
+        className="   form-check"
+      >
+        <input
+          checked={false}
+          className="form-check-input"
+          disabled={false}
+          id="radio1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label "
+          htmlFor="radio1"
+        >
+          Opzione
+           inversa 
+          
+           
+          
+           
+          
+        </label>
+      </div>
+    </form>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "EsempiInterattivi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Radio Button Gruppi di radio buttons 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="m-5 row"
+    >
+      <div
+        className="col-md-5"
+      >
+        <form
+          className=""
+        >
+          <div
+            className="form-check-group   form-check"
+          >
+            <input
+              className="form-check-input"
+              defaultChecked={true}
+              id="radio1"
+              name="group1"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="radio"
+            />
+            <label
+              className="form-check-label "
+              htmlFor="radio1"
+            >
+              Opzione 1
+            </label>
+          </div>
+          <div
+            className="form-check-group   form-check"
+          >
+            <input
+              className="form-check-input"
+              id="radio2"
+              name="group1"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="radio"
+            />
+            <label
+              className="form-check-label "
+              htmlFor="radio2"
+            >
+              Opzione 2
+            </label>
+          </div>
+          <div
+            className="form-check-group   form-check"
+          >
+            <input
+              className="form-check-input"
+              disabled={true}
+              id="radio3"
+              name="group1"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="radio"
+            />
+            <label
+              className="form-check-label "
+              htmlFor="radio3"
+            >
+              Opzione 3
+            </label>
+          </div>
+        </form>
+      </div>
+      <div
+        className="col-md-2"
+      />
+      <div
+        className="col-md-5"
+      >
+        <form
+          className=""
+        >
+          <div
+            className="form-check-group   form-check"
+          >
+            <input
+              className="form-check-input"
+              defaultChecked={true}
+              id="radio3"
+              name="group2"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="radio"
+            />
+            <label
+              className="form-check-label "
+              htmlFor="radio3"
+            >
+              Opzione 1
+            </label>
+            <small
+              className="form-text text-muted"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+            </small>
+          </div>
+          <div
+            className="form-check-group   form-check"
+          >
+            <input
+              className="form-check-input"
+              id="radio4"
+              name="group2"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="radio"
+            />
+            <label
+              className="form-check-label "
+              htmlFor="radio4"
+            >
+              Opzione 2
+            </label>
+            <small
+              className="form-text text-muted"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+            </small>
+          </div>
+          <div
+            className="form-check-group   form-check"
+          >
+            <input
+              className="form-check-input"
+              disabled={true}
+              id="radio5"
+              name="group2"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="radio"
+            />
+            <label
+              className="form-check-label "
+              htmlFor="radio5"
+            >
+              Opzione 3
+            </label>
+            <small
+              className="form-text text-muted"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+            </small>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "GruppiRadioButtons.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Radio Button Inline 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <form
+      className="m-3"
+    >
+      <div
+        className="   form-check form-check-inline"
+      >
+        <input
+          className="form-check-input"
+          defaultChecked={true}
+          id="radio1"
+          name="gruppo1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label "
+          htmlFor="radio1"
+        >
+          Opzione 1
+        </label>
+      </div>
+      <div
+        className="   form-check form-check-inline"
+      >
+        <input
+          className="form-check-input"
+          id="radio2"
+          name="gruppo1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label "
+          htmlFor="radio2"
+        >
+          Opzione 2
+        </label>
+      </div>
+      <div
+        className="   form-check form-check-inline"
+      >
+        <input
+          className="form-check-input"
+          id="radio3"
+          name="gruppo1"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label "
+          htmlFor="radio3"
+        >
+          Opzione 3
+        </label>
+      </div>
+    </form>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Inline.md",
+      }
+    }
+  />
+</div>
+`;

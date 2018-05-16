@@ -1,0 +1,581 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Toggles Disabilitati 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <div
+        className="row"
+      >
+        <div
+          className="col-sm-6"
+        >
+          <div
+            className="m-3   form-check"
+          >
+            <div
+              className="toggles"
+            >
+              <label
+                className="form-check-label "
+                htmlFor={undefined}
+              >
+                Label dell'interruttore 1
+                <input
+                  className="form-check-input"
+                  disabled={true}
+                  type="checkbox"
+                />
+                <span
+                  className="lever"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-sm-6"
+        >
+          <div
+            className="m-3   form-check"
+          >
+            <div
+              className="toggles"
+            >
+              <label
+                className="form-check-label "
+                htmlFor={undefined}
+              >
+                <span>
+                  Label dell'interruttore 2
+                </span>
+                <input
+                  className="form-check-input"
+                  defaultChecked={true}
+                  disabled={true}
+                  type="checkbox"
+                />
+                <span
+                  className="lever"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Disabilitati.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Toggles Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <div
+        className="row"
+      >
+        <div
+          className="col-sm-6"
+        >
+          <div
+            className="m-3   form-check"
+          >
+            <div
+              className="toggles"
+            >
+              <label
+                className="form-check-label "
+                htmlFor={undefined}
+              >
+                Label dell'interruttore 1
+                <input
+                  className="form-check-input"
+                  disabled={undefined}
+                  type="checkbox"
+                />
+                <span
+                  className="lever"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-sm-6"
+        >
+          <div
+            className="m-3   form-check"
+          >
+            <div
+              className="toggles"
+            >
+              <label
+                className="form-check-label "
+                htmlFor={undefined}
+              >
+                <span>
+                  Label dell'interruttore 2
+                </span>
+                <input
+                  className="form-check-input"
+                  defaultChecked={true}
+                  disabled={undefined}
+                  type="checkbox"
+                />
+                <span
+                  className="lever"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Toggles Esempi con markup 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <div
+        className="row"
+      >
+        <div
+          className="col-sm-6"
+        >
+          <div
+            className="m-3   form-check"
+          >
+            <div
+              className="toggles"
+            >
+              <label
+                className=""
+                htmlFor="toggleEsempio1a"
+              >
+                Label dell'interruttore 1
+                <input
+                  className="form-check-input"
+                  id="toggleEsempio1a"
+                  type="checkbox"
+                />
+                <span
+                  className="lever"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-sm-6"
+        >
+          <div
+            className="m-3   form-check"
+          >
+            <div
+              className="toggles"
+            >
+              <label
+                className=""
+                htmlFor="toggleEsempio1b"
+              >
+                Label dell'interruttore 2
+                <input
+                  className="form-check-input"
+                  id="toggleEsempio1b"
+                  type="checkbox"
+                />
+                <span
+                  className="lever leverRight"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "EsempiMarkup.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Toggles Esempi interattivi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-6"
+      >
+        <div
+          className="m-3   form-check"
+        >
+          <div
+            className="toggles"
+          >
+            <label
+              className="form-check-label "
+              htmlFor={undefined}
+            >
+              Label Selezionato  
+              <input
+                checked={true}
+                className="form-check-input"
+                disabled={false}
+                onChange={[Function]}
+                type="checkbox"
+              />
+              <span
+                className="lever"
+              />
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-sm-6"
+      >
+        <div
+          className="m-3   form-check"
+        >
+          <div
+            className="toggles"
+          >
+            <label
+              className="form-check-label "
+              htmlFor={undefined}
+            >
+              Label inverso   
+              <input
+                checked={false}
+                className="form-check-input"
+                disabled={false}
+                onChange={[Function]}
+                type="checkbox"
+              />
+              <span
+                className="lever"
+              />
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "EsempiInterattivi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Toggles Gruppi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <div
+        className="m-5 row"
+      >
+        <div
+          className="col-md-5"
+        >
+          <form
+            className=""
+          >
+            <div
+              className="form-check-group   form-check"
+            >
+              <div
+                className="toggles"
+              >
+                <label
+                  className="form-check-label "
+                  htmlFor={undefined}
+                >
+                  Toggle acceso
+                  <input
+                    className="form-check-input"
+                    defaultChecked={true}
+                    type="checkbox"
+                  />
+                  <span
+                    className="lever"
+                  />
+                </label>
+              </div>
+            </div>
+            <div
+              className="form-check-group   form-check"
+            >
+              <div
+                className="toggles"
+              >
+                <label
+                  className="form-check-label "
+                  htmlFor={undefined}
+                >
+                  Toggle spento
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                  />
+                  <span
+                    className="lever"
+                  />
+                </label>
+              </div>
+            </div>
+            <div
+              className="form-check-group   form-check"
+            >
+              <div
+                className="toggles"
+              >
+                <label
+                  className="form-check-label "
+                  htmlFor={undefined}
+                >
+                  Toggle disabilitato
+                  <input
+                    className="form-check-input"
+                    disabled={true}
+                    type="checkbox"
+                  />
+                  <span
+                    className="lever"
+                  />
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div
+          className="col-md-2"
+        />
+        <div
+          className="col-md-5"
+        >
+          <form
+            className=""
+          >
+            <div
+              className="form-check-group   form-check"
+            >
+              <div
+                className="toggles"
+              >
+                <label
+                  className="form-check-label "
+                  htmlFor={undefined}
+                >
+                  Toggle acceso
+                  <input
+                    className="form-check-input"
+                    defaultChecked={true}
+                    type="checkbox"
+                  />
+                  <span
+                    className="lever"
+                  />
+                </label>
+              </div>
+              <small
+                className="form-text text-muted"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+              </small>
+            </div>
+            <div
+              className="form-check-group   form-check"
+            >
+              <div
+                className="toggles"
+              >
+                <label
+                  className="form-check-label "
+                  htmlFor={undefined}
+                >
+                  Toggle spento
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                  />
+                  <span
+                    className="lever"
+                  />
+                </label>
+              </div>
+              <small
+                className="form-text text-muted"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+              </small>
+            </div>
+            <div
+              className="form-check-group   form-check"
+            >
+              <div
+                className="toggles"
+              >
+                <label
+                  className="form-check-label "
+                  htmlFor={undefined}
+                >
+                  Toggle disabilitato
+                  <input
+                    className="form-check-input"
+                    disabled={true}
+                    type="checkbox"
+                  />
+                  <span
+                    className="lever"
+                  />
+                </label>
+              </div>
+              <small
+                className="form-text text-muted"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+              </small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Gruppi.md",
+      }
+    }
+  />
+</div>
+`;

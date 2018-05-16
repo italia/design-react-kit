@@ -1,0 +1,927 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Navbar Brand 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <nav
+        className="bg-light mb-3 navbar navbar-light"
+      >
+        <a
+          className="navbar-brand"
+          href="#"
+        >
+          Navbar
+        </a>
+      </nav>
+      <nav
+        className="bg-light navbar navbar-light"
+      >
+        <h1
+          className="navbar-brand"
+          href="#"
+        >
+          Navbar
+        </h1>
+      </nav>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Brand.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Navbar Color schemes 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <nav
+        className="bg-dark mb-3 navbar navbar-expand-lg navbar-dark"
+      >
+        <a
+          className="navbar-brand"
+          href="#"
+        >
+          Navbar
+        </a>
+        <div
+          className="collapse show navbar-collapse"
+          style={Object {}}
+        >
+          <ul
+            className="navbar-nav"
+          >
+            <li
+              className="nav-item active"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                Home
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                Features
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                Pricing
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form
+          className="my-2 my-lg-0 form-inline"
+        >
+          <input
+            className="form-control mr-sm-2 form-control"
+            placeholder="Search"
+            type="search"
+          />
+          <button
+            className="my-2 my-sm-0 btn btn-outline-secondary"
+            onClick={[Function]}
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </nav>
+      <nav
+        className="bg-primary mb-3 navbar navbar-expand-lg navbar-dark"
+      >
+        <a
+          className="navbar-brand"
+          href="#"
+        >
+          Navbar
+        </a>
+        <div
+          className="collapse show navbar-collapse"
+          style={Object {}}
+        >
+          <ul
+            className="navbar-nav"
+          >
+            <li
+              className="nav-item active"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                Home
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                Features
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                Pricing
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form
+          className="my-2 my-lg-0 form-inline"
+        >
+          <input
+            className="form-control mr-sm-2 form-control"
+            placeholder="Search"
+            type="search"
+          />
+          <button
+            className="my-2 my-sm-0 btn btn-outline-secondary"
+            onClick={[Function]}
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </nav>
+      <nav
+        className="mb-3 navbar navbar-expand-lg navbar-light"
+        style={
+          Object {
+            "backgroundColor": "#e3f2fd",
+          }
+        }
+      >
+        <a
+          className="navbar-brand"
+          href="#"
+        >
+          Navbar
+        </a>
+        <div
+          className="collapse show navbar-collapse"
+          style={Object {}}
+        >
+          <ul
+            className="navbar-nav"
+          >
+            <li
+              className="nav-item active"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                Home
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                Features
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                Pricing
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form
+          className="my-2 my-lg-0 form-inline"
+        >
+          <input
+            className="form-control mr-sm-2 form-control"
+            placeholder="Search"
+            type="search"
+          />
+          <button
+            className="my-2 my-sm-0 btn btn-outline-primary"
+            onClick={[Function]}
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </nav>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "ColorSchemes.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Navbar Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <nav
+      className="bg-light navbar navbar-expand-lg navbar-light"
+    >
+      <a
+        className="navbar-brand"
+        href="#"
+      >
+        Navbar
+      </a>
+      <button
+        className="navbar-toggler"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        className="collapse navbar-collapse"
+        style={Object {}}
+      >
+        <ul
+          className="mr-auto navbar-nav"
+        >
+          <li
+            className="nav-item active"
+          >
+            <a
+              className="nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Home
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Link
+            </a>
+          </li>
+          <li
+            className="dropdown nav-item"
+            onKeyDown={[Function]}
+          >
+            <a
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Dropdown
+            </a>
+            <div
+              aria-hidden={true}
+              className="dropdown-menu"
+              role="menu"
+              tabIndex="-1"
+            >
+              <button
+                className="dropdown-item"
+                onClick={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                Action
+              </button>
+              <button
+                className="dropdown-item"
+                onClick={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                Another action
+              </button>
+              <div
+                className="dropdown-divider"
+                onClick={[Function]}
+                tabIndex="-1"
+                type={undefined}
+              />
+              <button
+                className="dropdown-item"
+                onClick={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                Something else here
+              </button>
+            </div>
+          </li>
+          <li
+            className="nav-item"
+            disabled={true}
+          >
+            <a
+              className="nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Link
+            </a>
+          </li>
+        </ul>
+        <form
+          className="my-2 my-lg-0 form-inline"
+        >
+          <input
+            className="form-control mr-sm-2 form-control"
+            placeholder="Search"
+            type="search"
+          />
+          <button
+            className="my-2 my-sm-0 btn btn-outline-success"
+            onClick={[Function]}
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Navbar Esempi interattivi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <nav
+      className="bg- navbar navbar-expand-lg navbar-light"
+      style={
+        Object {
+          "backgroundColor": "#e3f2fd",
+        }
+      }
+    >
+      <a
+        className="navbar-brand"
+        href="#"
+      >
+        Brand
+      </a>
+    </nav>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "EsempiInterattivi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Navbar Forms 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <nav
+        className="bg-light mb-3 navbar navbar-expand-lg navbar-light"
+      >
+        <form
+          className="my-2 my-lg-0 form-inline"
+        >
+          <input
+            className="form-control mr-sm-2 form-control"
+            placeholder="Search"
+            type="search"
+          />
+          <button
+            className="my-2 my-sm-0 btn btn-outline-success"
+            onClick={[Function]}
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </nav>
+      <nav
+        className="bg-light justify-content-between mb-3 navbar navbar-expand-lg navbar-light"
+      >
+        <a
+          className="navbar-brand"
+          href="#"
+        >
+          Navbar
+        </a>
+        <form
+          className="my-2 my-lg-0 form-inline"
+        >
+          <input
+            className="form-control mr-sm-2 form-control"
+            placeholder="Search"
+            type="search"
+          />
+          <button
+            className="my-2 my-sm-0 btn btn-outline-success"
+            onClick={[Function]}
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </nav>
+      <nav
+        className="bg-light justify-content-between mb-3 navbar navbar-expand-lg navbar-light"
+      >
+        <form
+          className="my-2 my-lg-0 form-inline"
+        >
+          <div
+            className="input-group"
+          >
+            <div
+              className="input-group-prepend"
+            >
+              <span
+                className="input-group-text"
+              >
+                @
+              </span>
+            </div>
+            <input
+              className="form-control"
+              placeholder="Username"
+              type="text"
+            />
+          </div>
+        </form>
+      </nav>
+      <nav
+        className="bg-light justify-content-between mb-3 navbar navbar-expand-lg navbar-light"
+      >
+        <form
+          className="my-2 my-lg-0 form-inline"
+        >
+          <button
+            className="btn btn-outline-success"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Main button
+          </button>
+          <button
+            className="btn btn-outline-secondary"
+            onClick={[Function]}
+            type={undefined}
+          >
+            Smaller button
+          </button>
+        </form>
+      </nav>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Forms.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Navbar Nav 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <nav
+      className="bg-light navbar navbar-expand-lg navbar-light"
+    >
+      <a
+        className="navbar-brand"
+        href="#"
+      >
+        Navbar
+      </a>
+      <div
+        className="collapse show"
+        style={Object {}}
+      >
+        <ul
+          className="navbar-nav"
+        >
+          <li
+            className="nav-item active"
+          >
+            <a
+              className="nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Home
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Features
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Pricing
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link disabled"
+              disabled={true}
+              href="#"
+              onClick={[Function]}
+            >
+              Disabled
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Nav.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Navbar Placement 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="container"
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
+      <nav
+        className="bg-light mb-3 navbar navbar-expand-lg navbar-light"
+      >
+        <a
+          className="navbar-brand"
+          href="#"
+        >
+          Default
+        </a>
+      </nav>
+      <nav
+        className="bg-light mb-3 navbar navbar-expand-lg navbar-light fixed-top"
+      >
+        <a
+          className="navbar-brand"
+          href="#"
+        >
+          Fixed top
+        </a>
+      </nav>
+      <nav
+        className="bg-light mb-3 navbar navbar-expand-lg navbar-light fixed-bottom"
+      >
+        <a
+          className="navbar-brand"
+          href="#"
+        >
+          Fixed bottom
+        </a>
+      </nav>
+      <nav
+        className="bg-light mb-3 navbar navbar-expand-lg navbar-light sticky-top"
+      >
+        <a
+          className="navbar-brand"
+          href="#"
+        >
+          Sticky top
+        </a>
+      </nav>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Placement.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Navbar Text 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <nav
+        className="bg-light mb-3 navbar navbar-expand-lg navbar-light"
+      >
+        <span
+          className="navbar-text"
+        >
+          Navbar text with an inline element
+        </span>
+      </nav>
+      <nav
+        className="bg-light navbar navbar-expand-lg navbar-light"
+      >
+        <a
+          className="navbar-brand"
+          href="#"
+        >
+          Navbar w/ text
+        </a>
+        <div
+          className="collapse show navbar-collapse"
+          style={Object {}}
+        >
+          <ul
+            className="navbar-nav"
+          >
+            <li
+              className="nav-item active"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                Home
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                Features
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                Pricing
+              </a>
+            </li>
+          </ul>
+        </div>
+        <span
+          className="navbar-text"
+        >
+          Navbar text with an inline element
+        </span>
+      </nav>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Text.md",
+      }
+    }
+  />
+</div>
+`;

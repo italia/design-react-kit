@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Breadcrumb Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <ol
+        className="breadcrumb"
+      >
+        <li
+          className="active breadcrumb-item"
+        >
+          Home
+        </li>
+      </ol>
+      <ol
+        className="breadcrumb"
+      >
+        <li
+          className="breadcrumb-item"
+        >
+          <a
+            href="#"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          className="active breadcrumb-item"
+        >
+          Library
+        </li>
+      </ol>
+      <ol
+        className="breadcrumb"
+      >
+        <li
+          className="breadcrumb-item"
+        >
+          <a
+            href="#"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          <a
+            href="#"
+          >
+            Library
+          </a>
+        </li>
+        <li
+          className="active breadcrumb-item"
+        >
+          Data
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;

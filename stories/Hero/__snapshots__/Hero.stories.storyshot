@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Hero Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="hero w-50 jumbotron"
+    >
+      <h1
+        className="hero-heading display-4"
+      >
+        Ciao, mondo!
+      </h1>
+      <p
+        className="lead"
+      >
+        Questa è una semplice unità hero, un semplice per richiamare un'attenzione particolare al contenuto o alle informazioni in primo piano.
+      </p>
+      <hr
+        className="my-4"
+      />
+      <p>
+        Utilizza le classi di utilità per la tipografia e la spaziatura per l'ingombro del contenuto all'interno del contenitore più grande.
+      </p>
+      <p
+        className="lead"
+      >
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type={undefined}
+        >
+          Per saperne di più
+        </button>
+      </p>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Hero Fluid 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="hero m-3 jumbotron jumbotron-fluid"
+    >
+      <div
+        className="container-fluid"
+      >
+        <h1
+          className="hero-heading display-4"
+        >
+          Hero fluido
+        </h1>
+        <p
+          className="lead"
+        >
+          Questo è un hero modificato che occupa l'intero spazio orizzontale del suo contenitore.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Fluid.md",
+      }
+    }
+  />
+</div>
+`;
