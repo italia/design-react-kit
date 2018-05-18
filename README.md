@@ -1,5 +1,5 @@
 [![Stato Build](https://circleci.com/gh/italia/design-react.svg?branch=master)](https://circleci.com/gh/italia/design-react)
-[![Partecipa sul canale #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--js-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
+[![Partecipa sul canale #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--devel-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
 [![Ricevi un invito a Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
 
 # design-react
@@ -152,7 +152,7 @@ Avendo a disposizione il preprocessore [Sass](https://sass-lang.com/) sarà poss
 ## Continuous Integration
 
 E' disponibile un'istanza di CircleCI configurata per effettuare la build del repository ad ogni aggiornamento del branch `master`. 
-La build di Storybook è deployata sul branch `gh-pages` ed è disponibile pubblicamente su `https://italia.github.io/design-react`.
+La build di Storybook è deployata sul branch `gh-pages` ed è disponibile pubblicamente su [italia.github.io/design-react](https://italia.github.io/design-react).
 
 ### Job `build`
 
