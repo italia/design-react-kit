@@ -72,6 +72,15 @@ jobs:
     <<: *defaults
 
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            # Fingerprint comes from a key that is published here:
+            # https://github.com/italia/bootstrap-italia/settings/keys and
+            # https://circleci.com/gh/italia/bootstrap-italia/edit#ssh
+            # Details can be found here:
+            # https://circleci.com/docs/1.0/adding-read-write-deployment-key/ (no 2.0 docs yet)
+            # https://circleci.com/docs/2.0/configuration-reference/#add_ssh_keys
+            - "7b:d5:88:c3:9c:9f:08:e6:b5:53:03:b3:93:2e:53:a3"
       - checkout
 
       # Download and cache dependencies
