@@ -1,15 +1,15 @@
 {
-	"name": "design-react",
+	"name": "design-react-kit",
 	"version": "2.0.0",
 	"description": "Componenti React per Bootstrap 4",
 	"author": "Presidenza del Consiglio dei Ministri",
-	"homepage": "https://github.com/italia/design-react#README",
+	"homepage": "https://github.com/italia/design-react-kit#README",
 	"license": "BSD-3-Clause",
 	"main": "dist/design-react-kit.cjs.js",
 	"module": "dist/design-react-kit.es.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/italia/design-react.git"
+		"url": "git+https://github.com/italia/design-react-kit.git"
 	},
 	"contributors": [
 		"Matteo Manchi <matteo.manchi@gmail.com>",
@@ -17,7 +17,7 @@
 		"Paolo Mariotti <mariotti.pro@gmail.com>"
 	],
 	"bugs": {
-		"url": "https://github.com/italia/design-react/issues"
+		"url": "https://github.com/italia/design-react-kit/issues"
 	},
 	"engines": {
 		"npm": "^5.0.0"
