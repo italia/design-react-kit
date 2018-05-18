@@ -1,4 +1,3 @@
-[![Stato Build](https://travis-ci.org/italia/design-react.svg?branch=master)](https://travis-ci.org/italia/design-react)
 [![Stato Build](https://circleci.com/gh/italia/design-react.svg?branch=master)](https://circleci.com/gh/italia/design-react)
 [![Partecipa sul canale #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--js-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
 [![Ricevi un invito a Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
