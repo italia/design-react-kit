@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Autocomplete Input autocomplete 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <div
+        className="m-3   form-group"
+      >
+        <div
+          className="autocomplete-container autocomplete-wrapper custom-autocomplete "
+          id={undefined}
+          onKeyDown={[Function]}
+        >
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            className="css-17l7ekz"
+            role="status"
+          >
+            20 results available.
+          </span>
+          <div
+            className="autocomplete-control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <button
+              className="autocomplete-clear"
+              onClick={[Function]}
+              style={
+                Object {
+                  "visibility": "hidden",
+                }
+              }
+            >
+              <svg
+                fill="#000000"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="https://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </button>
+            <div
+              className="autocomplete-value-container"
+            >
+              <div
+                className="react-select__placeholder css-16ucli7"
+              />
+              <div
+                className="autocomplete-input-container search-wrap"
+              >
+                <input
+                  aria-activedescendant={undefined}
+                  aria-autocomplete="list"
+                  aria-busy={false}
+                  aria-describedby={undefined}
+                  aria-expanded={false}
+                  aria-haspopup={false}
+                  aria-label={undefined}
+                  aria-labelledby={undefined}
+                  aria-owns={undefined}
+                  autoCapitalize="none"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  className="form-control autocomplete"
+                  id="react-select-2-input"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  role="combobox"
+                  spellCheck="false"
+                  tabIndex="0"
+                  type="search"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="select-indicators"
+            />
+          </div>
+        </div>
+        <label
+          className=""
+          style={
+            Object {
+              "pointerEvents": "none",
+            }
+          }
+        >
+          Regione
+        </label>
+      </div>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "InputAutocomplete.md",
+      }
+    }
+  />
+</div>
+`;

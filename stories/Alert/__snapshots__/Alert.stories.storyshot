@@ -1,0 +1,323 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Alert Contenuto aggiuntivo 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="alert alert-success fade"
+      role="alert"
+    >
+      <h4
+        className="alert-heading"
+      >
+        Avviso di successo!
+      </h4>
+      <p>
+        Stai leggendo questo importante messaggio di avviso di successo. Questo testo di esempio sarà più a lungo in modo da poter vedere come funzioni la spaziatura all'interno di un avviso con questo tipo di contenuto.
+      </p>
+      <hr />
+      <p
+        className="mb-0"
+      >
+        Quando necessario, assicurarti di inserire le utilità di margine per mantenere gli spazi equilibrati.
+      </p>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "ContenutoAggiuntivo.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Alert Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <div
+        className="alert alert-success fade"
+        role="alert"
+      >
+        Questo è un alert di 
+        <em>
+          success
+        </em>
+        !
+      </div>
+      <div
+        className="alert alert-danger fade"
+        role="alert"
+      >
+        Questo è un alert di 
+        <em>
+          danger
+        </em>
+        !
+      </div>
+      <div
+        className="alert alert-warning fade"
+        role="alert"
+      >
+        Questo è un alert di 
+        <em>
+          warning
+        </em>
+        !
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Alert Esempi interattivi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="alert alert-success fade"
+      role="alert"
+    >
+      Questo è un alert di 
+      <em>
+        success
+      </em>
+      !
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "EsempiInterattivi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Alert Link evidenziato 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="alert alert-danger fade"
+      role="alert"
+    >
+      Questo è un alert con un esempio di
+       
+      <a
+        className="alert-link"
+        href="#"
+      >
+        link
+      </a>
+       
+      evidenziato.
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "LinkEvidenziato.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Alert/Chiusura Controllata 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="alert alert-warning alert-dismissible fade"
+      role="alert"
+    >
+      <button
+        aria-label="Close"
+        className="close"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          aria-hidden="true"
+        >
+          ×
+        </span>
+      </button>
+      <strong>
+        Attenzione
+      </strong>
+       Alcuni campi inseriti sono da controllare.
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Chiusura.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Alert/Chiusura Non controllata 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="alert alert-warning alert-dismissible fade"
+      role="alert"
+    >
+      <button
+        aria-label="Close"
+        className="close"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          aria-hidden="true"
+        >
+          ×
+        </span>
+      </button>
+      <strong>
+        Attenzione
+      </strong>
+       Alcuni campi inseriti sono da controllare.
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Chiusura.md",
+      }
+    }
+  />
+</div>
+`;

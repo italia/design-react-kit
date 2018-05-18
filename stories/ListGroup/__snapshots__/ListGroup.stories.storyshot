@@ -1,0 +1,635 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/ListGroup Bottoni 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <ul
+      className="w-50 list-group"
+    >
+      <button
+        className="list-group-item-action list-group-item"
+      >
+        Cras justo odio
+      </button>
+      <button
+        className="active list-group-item-action list-group-item"
+      >
+        Dapibus ac facilisis in
+      </button>
+      <button
+        className="list-group-item-action list-group-item"
+      >
+        Morbi leo risus
+      </button>
+      <button
+        className="list-group-item-action list-group-item"
+      >
+        Porta ac consectetur ac
+      </button>
+      <button
+        className="disabled list-group-item-action list-group-item"
+        onClick={[Function]}
+      >
+        Vestibulum at eros
+      </button>
+    </ul>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Bottoni.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/ListGroup Classi contestuali 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <ul
+      className="w-50 list-group list-group-flush"
+    >
+      <li
+        className="list-group-item-action list-group-item-italia list-group-item"
+      >
+        This is a italia list group item
+      </li>
+      <li
+        className="list-group-item-action list-group-item-primary list-group-item"
+      >
+        This is a primary list group item
+      </li>
+      <li
+        className="list-group-item-action list-group-item-secondary list-group-item"
+      >
+        This is a secondary list group item
+      </li>
+      <li
+        className="list-group-item-action list-group-item-tertiary list-group-item"
+      >
+        This is a tertiary list group item
+      </li>
+      <li
+        className="list-group-item-action list-group-item-quaternary list-group-item"
+      >
+        This is a quaternary list group item
+      </li>
+      <li
+        className="list-group-item-action list-group-item-success list-group-item"
+      >
+        This is a success list group item
+      </li>
+      <li
+        className="list-group-item-action list-group-item-danger list-group-item"
+      >
+        This is a danger list group item
+      </li>
+      <li
+        className="list-group-item-action list-group-item-warning list-group-item"
+      >
+        This is a warning list group item
+      </li>
+    </ul>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "ClassiContestuali.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/ListGroup Con i badge 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <ul
+      className="w-50 list-group"
+    >
+      <li
+        className="justify-content-between list-group-item"
+      >
+        Cras justo odio
+         
+        <span
+          className="badge badge-primary badge-pill"
+        >
+          14
+        </span>
+      </li>
+      <li
+        className="justify-content-between list-group-item"
+      >
+        Dapibus ac facilisis in
+         
+        <span
+          className="badge badge-primary badge-pill"
+        >
+          2
+        </span>
+      </li>
+      <li
+        className="justify-content-between list-group-item"
+      >
+        Morbi leo risus
+         
+        <span
+          className="badge badge-primary badge-pill"
+        >
+          1
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "ConBadge.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/ListGroup Contenuto personalizzato 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <ul
+      className="w-50 list-group"
+    >
+      <li
+        className="flex-column align-items-start active list-group-item-action list-group-item"
+      >
+        <div
+          className="d-flex w-100 justify-content-between"
+        >
+          <h5
+            className="mb-1"
+          >
+            Intestazione dell'elemento dell'elenco
+          </h5>
+          <small>
+            3 days ago
+          </small>
+        </div>
+        <p
+          className="mb-1"
+        >
+          Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+        </p>
+        <small>
+          Donec id elit non mi porta.
+        </small>
+      </li>
+      <li
+        className="flex-column align-items-start list-group-item-action list-group-item"
+      >
+        <div
+          className="d-flex w-100 justify-content-between"
+        >
+          <h5
+            className="mb-1"
+          >
+            Intestazione dell'elemento dell'elenco
+          </h5>
+          <small
+            className="text-muted"
+          >
+            3 giorni fa
+          </small>
+        </div>
+        <p
+          className="mb-1"
+        >
+          Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+        </p>
+        <small
+          className="text-muted"
+        >
+          Donec id elit non mi porta.
+        </small>
+      </li>
+      <li
+        className="flex-column align-items-start list-group-item-action list-group-item"
+      >
+        <div
+          className="d-flex w-100 justify-content-between"
+        >
+          <h5
+            className="mb-1"
+          >
+            Intestazione dell'elemento dell'elenco
+          </h5>
+          <small
+            className="text-muted"
+          >
+            3 giorni fa
+          </small>
+        </div>
+        <p
+          className="mb-1"
+        >
+          Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+        </p>
+        <small
+          className="text-muted"
+        >
+          Donec id elit non mi porta.
+        </small>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "ContenutoPersonalizzato.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/ListGroup Elementi attivi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <ul
+      className="w-50 list-group"
+    >
+      <li
+        className="list-group-item"
+      >
+        Cras justo odio
+      </li>
+      <li
+        className="active list-group-item"
+      >
+        Dapibus ac facilisis in
+      </li>
+      <li
+        className="list-group-item"
+      >
+        Morbi leo risus
+      </li>
+      <li
+        className="list-group-item"
+      >
+        Porta ac consectetur ac
+      </li>
+      <li
+        className="list-group-item"
+      >
+        Vestibulum at eros
+      </li>
+    </ul>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "ElementiAttivi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/ListGroup Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <ul
+      className="w-50 list-group"
+    >
+      <li
+        className="list-group-item"
+      >
+        Cras justo odio
+      </li>
+      <li
+        className="list-group-item"
+      >
+        Dapibus ac facilisis in
+      </li>
+      <li
+        className="list-group-item"
+      >
+        Morbi leo risus
+      </li>
+      <li
+        className="list-group-item"
+      >
+        Porta ac consectetur ac
+      </li>
+      <li
+        className="list-group-item"
+      >
+        Vestibulum at eros
+      </li>
+    </ul>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/ListGroup Esempi interattivi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <ul
+      className="list-group"
+    >
+      <li
+        className="list-group-item-action list-group-item-italia list-group-item"
+        href={undefined}
+      >
+        Dapibus ac facilisis in
+      </li>
+    </ul>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "EsempiInterattivi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/ListGroup Flush 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <ul
+      className="w-50 list-group list-group-flush"
+    >
+      <li
+        className="list-group-item"
+      >
+        Cras justo odio
+      </li>
+      <li
+        className="active list-group-item"
+      >
+        Dapibus ac facilisis in
+      </li>
+      <li
+        className="list-group-item"
+      >
+        Morbi leo risus
+      </li>
+      <li
+        className="list-group-item"
+      >
+        Porta ac consectetur ac
+      </li>
+      <li
+        className="disabled list-group-item"
+        onClick={[Function]}
+      >
+        Vestibulum at eros
+      </li>
+    </ul>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Flush.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/ListGroup Link 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <ul
+      className="w-50 list-group"
+    >
+      <a
+        className="list-group-item-action list-group-item"
+        href="#"
+      >
+        Cras justo odio
+      </a>
+      <a
+        className="active list-group-item-action list-group-item"
+        href="#"
+      >
+        Dapibus ac facilisis in
+      </a>
+      <a
+        className="list-group-item-action list-group-item"
+        href="#"
+      >
+        Morbi leo risus
+      </a>
+      <a
+        className="list-group-item-action list-group-item"
+        href="#"
+      >
+        Porta ac consectetur ac
+      </a>
+      <a
+        className="disabled list-group-item-action list-group-item"
+        href="#"
+        onClick={[Function]}
+      >
+        Vestibulum at eros
+      </a>
+    </ul>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Link.md",
+      }
+    }
+  />
+</div>
+`;

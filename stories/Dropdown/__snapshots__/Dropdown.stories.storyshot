@@ -1,0 +1,1052 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Dropdown Allineamento orizzontale 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="dropdown"
+      onKeyDown={[Function]}
+    >
+      <button
+        aria-expanded={false}
+        aria-haspopup={true}
+        className="dropdown-toggle btn btn-secondary"
+        onClick={[Function]}
+        type="button"
+      >
+        Dropdown allineato a destra
+      </button>
+      <div
+        aria-hidden={true}
+        className="dropdown-menu dropdown-menu-right"
+        role="menu"
+        tabIndex="-1"
+      >
+        <h6
+          className="dropdown-header"
+          onClick={[Function]}
+          tabIndex="-1"
+          type={undefined}
+        >
+          Header
+        </h6>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 1
+        </button>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 2
+        </button>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 3
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "AllineamentoOrizzontale.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown Bottoni 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="btn-group"
+      onKeyDown={[Function]}
+    >
+      <button
+        aria-expanded={false}
+        aria-haspopup={true}
+        className="dropdown-toggle btn btn-secondary"
+        onClick={[Function]}
+        type="button"
+      >
+        Apri dropdown
+      </button>
+      <div
+        aria-hidden={true}
+        className="dropdown-menu"
+        role="menu"
+        tabIndex="-1"
+      >
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 1
+        </button>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 2
+        </button>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 3
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Bottoni.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown Bottoni divisi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="btn-group"
+      role="group"
+    >
+      <button
+        className="btn btn-secondary"
+        onClick={[Function]}
+        type={undefined}
+      >
+        Bottone diviso
+      </button>
+      <div
+        className="btn-group"
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle btn btn-secondary"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="sr-only"
+          >
+            Toggle Dropdown
+          </span>
+        </button>
+        <div
+          aria-hidden={true}
+          className="dropdown-menu"
+          role="menu"
+          tabIndex="-1"
+        >
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 1
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 2
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 3
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "BottoniDivisi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown Dimensioni 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div>
+      <div
+        className="mt-0 btn-group-lg dropdown"
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle btn btn-secondary"
+          onClick={[Function]}
+          type="button"
+        >
+          Dropdown
+        </button>
+        <div
+          aria-hidden={true}
+          className="dropdown-menu"
+          role="menu"
+          tabIndex="-1"
+        >
+          <div>
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Azione 1
+            </button>
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Azione 2
+            </button>
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Azione 3
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="mt-3 dropdown"
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle btn btn-secondary"
+          onClick={[Function]}
+          type="button"
+        >
+          Dropdown
+        </button>
+        <div
+          aria-hidden={true}
+          className="dropdown-menu"
+          role="menu"
+          tabIndex="-1"
+        >
+          <div>
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Azione 1
+            </button>
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Azione 2
+            </button>
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Azione 3
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="mt-3 btn-group-sm dropdown"
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle btn btn-secondary"
+          onClick={[Function]}
+          type="button"
+        >
+          Dropdown
+        </button>
+        <div
+          aria-hidden={true}
+          className="dropdown-menu"
+          role="menu"
+          tabIndex="-1"
+        >
+          <div>
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Azione 1
+            </button>
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Azione 2
+            </button>
+            <button
+              className="dropdown-item"
+              onClick={[Function]}
+              tabIndex="0"
+              type="button"
+            >
+              Azione 3
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Dimensioni.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown Direzioni Dropdown 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "padding": 200,
+        }
+      }
+    >
+      <div
+        className="dropup dropdown"
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle btn btn-secondary"
+          onClick={[Function]}
+          type="button"
+        >
+          Dropup
+        </button>
+        <div
+          aria-hidden={true}
+          className="dropdown-menu"
+          role="menu"
+          tabIndex="-1"
+        >
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 1
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 2
+          </button>
+        </div>
+      </div>
+      <div
+        className="mt-3 dropleft dropdown"
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle btn btn-secondary"
+          onClick={[Function]}
+          type="button"
+        >
+          Dropleft
+        </button>
+        <div
+          aria-hidden={true}
+          className="dropdown-menu"
+          role="menu"
+          tabIndex="-1"
+        >
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 1
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 2
+          </button>
+        </div>
+      </div>
+      <div
+        className="mt-3 dropright dropdown"
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle btn btn-secondary"
+          onClick={[Function]}
+          type="button"
+        >
+          Dropright
+        </button>
+        <div
+          aria-hidden={true}
+          className="dropdown-menu"
+          role="menu"
+          tabIndex="-1"
+        >
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 1
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 2
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "DirezioniDropdown.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown Dropdown a tutta larghezza 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="mt-0 btn-group-lg dropdown"
+      onKeyDown={[Function]}
+    >
+      <button
+        aria-expanded={false}
+        aria-haspopup={true}
+        className="dropdown-toggle btn btn-secondary"
+        onClick={[Function]}
+        type="button"
+      >
+        Dropdown
+      </button>
+      <div
+        aria-hidden={true}
+        className="full-width dropdown-menu"
+        role="menu"
+        tabIndex="-1"
+      >
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 1
+        </button>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 2
+        </button>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 3
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "DropdownLarghezza.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="dropdown"
+      onKeyDown={[Function]}
+    >
+      <button
+        aria-expanded={false}
+        aria-haspopup={true}
+        className="dropdown-toggle btn btn-secondary"
+        onClick={[Function]}
+        type="button"
+      >
+        Dropdown
+      </button>
+      <div
+        aria-hidden={true}
+        className="dropdown-menu"
+        role="menu"
+        tabIndex="-1"
+      >
+        <h6
+          className="dropdown-header"
+          onClick={[Function]}
+          tabIndex="-1"
+          type={undefined}
+        >
+          Header 1
+        </h6>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 1
+        </button>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 2
+        </button>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 3
+        </button>
+        <div
+          className="dropdown-divider"
+          onClick={[Function]}
+          tabIndex="-1"
+          type={undefined}
+        />
+        <h6
+          className="dropdown-header"
+          onClick={[Function]}
+          tabIndex="-1"
+          type={undefined}
+        >
+          Header 2
+        </h6>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 4
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown Variante Bottoni 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="btn-group"
+      onKeyDown={[Function]}
+    >
+      <button
+        aria-expanded={false}
+        aria-haspopup={true}
+        className="dropdown-toggle btn btn-danger"
+        onClick={[Function]}
+        type="button"
+      >
+        Apri dropdown
+      </button>
+      <div
+        aria-hidden={true}
+        className="dropdown-menu"
+        role="menu"
+        tabIndex="-1"
+      >
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 1
+        </button>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 2
+        </button>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 3
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "VarianteBottoni.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown Voci di menù attive 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "paddingBottom": 150,
+        }
+      }
+    >
+      <div
+        className="dropdown show"
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-expanded={true}
+          aria-haspopup={true}
+          className="dropdown-toggle btn btn-secondary"
+          onClick={[Function]}
+          type="button"
+        >
+          Dropdown
+        </button>
+        <div
+          aria-hidden={false}
+          className="dropdown-menu show"
+          data-placement={undefined}
+          data-x-out-of-boundaries={undefined}
+          role="menu"
+          style={
+            Object {
+              "opacity": 0,
+              "pointerEvents": "none",
+              "position": "absolute",
+            }
+          }
+          tabIndex="-1"
+        >
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 1
+          </button>
+          <button
+            className="dropdown-item active"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 2
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 3
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "VociMenuAttive.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown Voci di menù disabilitate 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "paddingBottom": 150,
+        }
+      }
+    >
+      <div
+        className="dropdown show"
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-expanded={true}
+          aria-haspopup={true}
+          className="dropdown-toggle btn btn-secondary"
+          onClick={[Function]}
+          type="button"
+        >
+          Dropdown
+        </button>
+        <div
+          aria-hidden={false}
+          className="dropdown-menu show"
+          data-placement={undefined}
+          data-x-out-of-boundaries={undefined}
+          role="menu"
+          style={
+            Object {
+              "opacity": 0,
+              "pointerEvents": "none",
+              "position": "absolute",
+            }
+          }
+          tabIndex="-1"
+        >
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 1
+          </button>
+          <button
+            className="disabled dropdown-item"
+            disabled={true}
+            onClick={[Function]}
+            tabIndex="-1"
+            type="button"
+          >
+            Azione 2
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 3
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "VociMenuDisabilitate.md",
+      }
+    }
+  />
+</div>
+`;

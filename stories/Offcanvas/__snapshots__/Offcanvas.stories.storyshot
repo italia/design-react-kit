@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Offcanvas Esempio 1`] = `
+<nav
+  className="bg-dark navbar navbar-expand-md navbar-dark fixed-top"
+>
+  <a
+    className="navbar-brand"
+    href="#"
+  >
+    Esempio Offcanvas
+  </a>
+  <button
+    className="navbar-toggler p-0 border-0 ml-auto nav-item"
+    data-toggle="offcanvas"
+    onClick={[Function]}
+  >
+    <span
+      className="navbar-toggler-icon"
+    />
+  </button>
+  <div
+    className="navbar-collapse offcanvas-collapse px-2 "
+    id="navbarsExampleDefault"
+  >
+    <ul
+      className="navbar-nav mr-auto"
+    >
+      <li
+        className="nav-item active"
+      >
+        <a
+          className="nav-link"
+          href="#"
+          onClick={[Function]}
+        >
+          Link 1
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="#"
+          onClick={[Function]}
+        >
+          Link 2
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="#"
+          onClick={[Function]}
+        >
+          Link 3
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link"
+          href="#"
+          onClick={[Function]}
+        >
+          Link 4
+        </a>
+      </li>
+      <li
+        className="dropdown nav-item"
+        onKeyDown={[Function]}
+      >
+        <a
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle nav-link"
+          href="#"
+          onClick={[Function]}
+        >
+          Dropdown
+        </a>
+        <div
+          aria-hidden={true}
+          className="dropdown-menu"
+          role="menu"
+          tabIndex="-1"
+        >
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 1
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 2
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 3
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            Azione 4
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;

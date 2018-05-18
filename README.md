@@ -1,110 +1,167 @@
-
-[![Build Status](https://travis-ci.org/italia/design-react.svg?branch=master)](https://travis-ci.org/italia/design-react)
-[![Join the #design-js channel](https://img.shields.io/badge/Slack%20channel-%23design--js-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
-[![Get invited](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
-
+[![Stato Build](https://circleci.com/gh/italia/design-react.svg?branch=master)](https://circleci.com/gh/italia/design-react)
+[![Partecipa sul canale #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--devel-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
+[![Ricevi un invito a Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
 
 # design-react
-A React toolkit that implements the Italia design system
+Un toolkit React che implementa [Bootstrap Italia](https://italia.github.io/bootstrap-italia/).
 
-An easy-to-use showcase tool called Storybook is available to browse the library and view the components in action.
+Uno showcase di semplice utilizzo, [Storybook](https://storybook.js.org/), è disponibile per navigare la libreria e visualizzare i componenti in azione.
 
-
-### Requirements
-
-
-* NodeJS & npm installed
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-## Getting started
+  - [Requisiti](#requisiti)
+- [Come iniziare](#come-iniziare)
+- [Come creare nuovi componenti](#come-creare-nuovi-componenti)
+  - [Storybook](#storybook)
+- [Publishing](#publishing)
+  - [Storybook](#storybook-1)
+    - [Problemi noti](#problemi-noti)
+  - [Package](#package)
+    - [Peer dependencies](#peer-dependencies)
+    - [Stili CSS](#stili-css)
+    - [Preprocessori](#preprocessori)
+- [Continuous Integration](#continuous-integration)
+  - [Job `build`](#job-build)
+  - [Job `deploy-github-pages`](#job-deploy-github-pages)
+  - [Job `npm-publish`](#job-npm-publish)
 
-Just clone the repo and run `npm install` to install dependencies and `npm run storybook` to run the server.
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-The Storybook is then available at http://localhost:8010
+### Requisiti
+
+* NodeJS
+* npm@5+
+
+## Come iniziare
+
+Clona il repository ed esegui `npm run storybook` per avviare il server di sviluppo.
+Uno script si occuperà di eseguire il comando `npm install` necessario ad installare le dipendenze. 
+
+Storybook sarà quindi disponibile all'indirizzo http://localhost:6006
 
 ![storybook](/doc/storybook.png?raw=true)
 
-A public version of Storybook is available [here](https://roma-js.github.io/design-react).
+La versione pubblica dello Storybook è disponibile [qui](https://italia.github.io/design-react).
 
-## How to create a new component
+## Come creare nuovi componenti
 
-This section will guide you to the creation of a new component in the repository.
-All the components live in the components folder: each component has its own folder with all the content it needs to work, the test files and the storybook story to publish.
-As example the Button component lives in the components/Button folder and structure is the following:
+Questa sezione guiderà alla creazione di nuovi componenti nel repository.
+Tutti i componenti risiedono nella folder `components`: ogni componente possiede una sua folder con tutto ciò che è necessario per farlo funzionare.
+Le storie `Storybook` invece sono sotto `stories`. 
+Il componente `Button` ad esempio è presente sotto il path `src/components/Button` e la sua struttura è la seguente:
 
 ```
-components
+src
+    └── components
+        └── Button
+            ├── Button.js
+stories
     └── Button
-        ├── Button.js
-        └── Button.story.js
+        ├── Button.stories.js
 ```
 
-Some basic rules to follow when structuring the component:
+Alcune regole di base per strutturare i componenti:
 
-* The components use a static CSS file imported in the main root.
-    * The CSS file comes from the `design-web-toolkit` repository and it has been built from there
-* The JS file for the component uses the JSX syntax.
-    * Some components use some jQuery plugins.
-* The .story.js file should only contains content related to that component.
+* I file JS file del componente utilizza la sintassi JSX.
+* I file `.stories.js` dovrebbero contenere solo quanto relativo al componente stesso.
 
-
-Once created a new component and started Storybook check that the new component has been added properly and it renders as it should.
-
+Una volta creato un nuovo componente, con la sua story, avviando Storybook sarà  possibile controllare che tutto funzioni come dovrebbe.
 
 ### Storybook
 
-Storybook has been enriched with few addons to make the debug experience easier: if any validation or runtime errors are met the error will be printed in the page console.
-In the component page it is also possible to access directly to the source code of the page, making Storybook a source of documentation.
-
+Storybook è stato arricchito con alcuni `addons` che lo rendono più parlante.
 
 ## Publishing
 
-
 ### Storybook
 
-There's a command to build a static version of the Storybook catalog so that it can be deployed anywere without any need of a webserver.
+E' disponibile un comando per generare una versione statica del catalogo Storybook così che possa essere deployato senza utilizzo di un webserver.
 
 ```sh
-$ npm run build-storybook
+$ npm run storybook:build
 ```
 
-The static pages of the building process are stored in the `out` folder.
+Le pagine statiche ottenute dal processo di build saranno generate sotto la folder  `storybook-static`.
 
-#### known issues (open pull requests)
+#### Problemi noti
 
-  - [Show JSX if PropVal is a React element](https://github.com/storybooks/storybook/pull/1455)
-  - [Fixed prop type validation errors in info addon](https://github.com/storybooks/storybook/pull/1374)
+- 
 
-### Module
+### Package
 
-To use the React UIKit as module in the app you can install it directly from npm:
+Per utilizzare Design React come dipendenza in un'app è possibile installarla da [npm](https://www.npmjs.com/~italia):
 
 ```sh
-$ npm install <package-name>
+$ npm install design-react
 ```
 
-Then start to use the components in your app:
+Quindi importa ed utilizza il componente:
 
 ```jsx
 import React from 'react';
-import {Button, Nav, Alert} from '<package-name>';
+import { Alert } from "design-react-kit";
 
-// If you want to handle the css with webpack uncomment this line
-// import '<package-name>/lib/index.css';
-
-...
+const Example = () => {
+  return (
+    <Alert>
+        Questo è un alert
+    </Alert>
+  );
+};
 ```
 
-You can find an example of this [in this repository](https://github.com/Roma-JS/design-react-demo).
-#### Preprocessors
+#### Peer dependencies
 
-If you're using preprocessors as SASS or Less you can import the CSS directly into your `main` file:
+La libreria non include `react` e `react-dom`, evitando clashing di versioni e aumento inutile delle dimensioni del bundle.
+Per questo motivo per lo sviluppo in locale sarà necessario installare manualmente le dipendenze.
+
+Il comando da eseguire è
+```sh
+$ npm run install-dependencies
+```
+oppure in alternativa manualmente
+```sh
+$ npm install react react-dom
+```
+
+#### Stili CSS
+
+La libreria è composta da una parte di stili, ereditati dal package [bootstrap-italia](https://italia.github.io/bootstrap-italia/) che possono essere importati avendo installato la stessa con:
+
+```sh
+$ npm install bootstrap-italia
+```
+
+A seconda del bundler utilizzato, e delle sue configurazioni, si potranno importare direttamente gli stili CSS generati:
+
+```js
+import "bootstrap-italia/dist/css/bootstrap-italia.min.css";
+import "bootstrap-italia/dist/css/italia-icon-font.css";
+```
+
+#### Preprocessori
+
+Avendo a disposizione il preprocessore [Sass](https://sass-lang.com/) sarà possibile integrare (e customizzare) i sorgenti della stessa:
 
 ```scss
-@import '<package-name>/lib/index.css;
+@import "bootstrap-italia/src/scss/bootstrap-italia.scss";
 ```
 
 ## Continuous Integration
 
-There's a TravisCI instance configured to run on this repository every time the `master` branch is updated. Currently only the Storybook build is deployed to the `gh-pages` branch and it is publicly visible at `https://<user>.github.io/design-react` - you need to configure Travis for your repo.
+E' disponibile un'istanza di CircleCI configurata per effettuare la build del repository ad ogni aggiornamento del branch `master`. 
+La build di Storybook è deployata sul branch `gh-pages` ed è disponibile pubblicamente su [italia.github.io/design-react](https://italia.github.io/design-react).
 
+### Job `build`
+
+Prenderà in carico l'esecuzione di `npm run build`, avviando Rollup ed integrando le ultime modifiche effettuate su branch `master` e `tag`.
+
+### Job `deploy-github-pages`
+
+Eseguirà i due comandi `npm run storybook:build` e `npm run storybook:deploy` necessari per buildare e deploylare la documentazione Storybook presente sulle GitHub Pages.
+
+### Job `npm-publish`
+
+Effettuerà il `npm publish` necessario ad aggiornare il package [npm](https://www.npmjs.com/~italia).

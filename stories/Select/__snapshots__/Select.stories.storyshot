@@ -1,0 +1,417 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Select Con gruppi di opzioni 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="m-3   form-group"
+    >
+      <div
+        className="select-container select-wrapper custom-select  "
+        id={undefined}
+        onKeyDown={[Function]}
+      >
+        <span
+          aria-atomic="true"
+          aria-live="polite"
+          className="css-17l7ekz"
+          role="status"
+        >
+          20 results available.
+        </span>
+        <div
+          className="select-control"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <span
+            className="caret it-expand"
+          />
+          <div
+            className="select-control-value-container"
+          >
+            <input
+              className="select-placeholder dropdown select-dropdown"
+              onClick={[Function]}
+              readOnly={true}
+              type="text"
+              value="Seleziona una o più regioni"
+            />
+            <div
+              className="select-input-container search-wrap d-none"
+              style={
+                Object {
+                  "backgroundColor": "#FFF",
+                  "height": 45,
+                  "left": 0,
+                  "margin": "0 24px 0 6px",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 45,
+                  "zIndex": 1000,
+                }
+              }
+            >
+              <input
+                className="select-input search"
+                onChange={[Function]}
+                placeholder="Cerca una regione"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="select-indicators"
+          />
+        </div>
+      </div>
+      <label
+        className=""
+        htmlFor={undefined}
+      >
+        Label di esempio
+      </label>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "ConGruppiOpzioni.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Select Con ricerca 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="m-3   form-group"
+    >
+      <div
+        className="select-container select-wrapper custom-select  "
+        id={undefined}
+        onKeyDown={[Function]}
+      >
+        <span
+          aria-atomic="true"
+          aria-live="polite"
+          className="css-17l7ekz"
+          role="status"
+        >
+          20 results available.
+        </span>
+        <div
+          className="select-control"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <span
+            className="caret it-expand"
+          />
+          <div
+            className="select-control-value-container"
+          >
+            <input
+              className="select-placeholder dropdown select-dropdown"
+              onClick={[Function]}
+              readOnly={true}
+              type="text"
+              value="Seleziona una opzione"
+            />
+            <div
+              className="select-input-container search-wrap d-none"
+              style={
+                Object {
+                  "backgroundColor": "#FFF",
+                  "height": 45,
+                  "left": 0,
+                  "margin": "0 24px 0 6px",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 45,
+                  "zIndex": 1000,
+                }
+              }
+            >
+              <input
+                className="select-input search"
+                onChange={[Function]}
+                placeholder="Cerca una regione"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="select-indicators"
+          />
+        </div>
+      </div>
+      <label
+        className=""
+        htmlFor={undefined}
+      >
+        Label di esempio
+      </label>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "ConRicerca.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Select Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="m-3   form-group"
+    >
+      <div
+        className="select-container select-wrapper custom-select  "
+        id={undefined}
+        onKeyDown={[Function]}
+      >
+        <span
+          aria-atomic="true"
+          aria-live="polite"
+          className="css-17l7ekz"
+          role="status"
+        >
+          3 results available.
+        </span>
+        <div
+          className="select-control"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <span
+            className="caret it-expand"
+          />
+          <div
+            className="select-control-value-container"
+          >
+            <input
+              className="select-placeholder dropdown select-dropdown"
+              onClick={[Function]}
+              readOnly={true}
+              type="text"
+              value="Seleziona una opzione"
+            />
+            <div
+              className="select-input-container search-wrap d-none"
+              style={
+                Object {
+                  "backgroundColor": "#FFF",
+                  "height": 45,
+                  "left": 0,
+                  "margin": "0 24px 0 6px",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 45,
+                  "zIndex": 1000,
+                }
+              }
+            >
+              <input
+                className="select-input search"
+                onChange={[Function]}
+                placeholder="Cerca una regione"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="select-indicators"
+          />
+        </div>
+      </div>
+      <label
+        className=""
+        htmlFor={undefined}
+      >
+        Label di esempio
+      </label>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Select Multipla 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="m-3   form-group"
+    >
+      <div
+        className="select-container select-wrapper custom-select  "
+        id={undefined}
+        onKeyDown={[Function]}
+      >
+        <span
+          aria-atomic="true"
+          aria-live="polite"
+          className="css-17l7ekz"
+          role="status"
+        >
+          20 results available.
+        </span>
+        <div
+          className="select-control"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <span
+            className="caret it-expand"
+          />
+          <div
+            className="select-control-value-container"
+          >
+            <input
+              className="select-placeholder dropdown select-dropdown"
+              onClick={[Function]}
+              readOnly={true}
+              type="text"
+              value="Seleziona una o più regioni"
+            />
+            <div
+              className="select-input-container search-wrap d-none"
+              style={
+                Object {
+                  "backgroundColor": "#FFF",
+                  "height": 45,
+                  "left": 0,
+                  "margin": "0 24px 0 6px",
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 45,
+                  "zIndex": 1000,
+                }
+              }
+            >
+              <input
+                className="select-input search"
+                onChange={[Function]}
+                placeholder="Cerca una regione"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="select-indicators"
+          />
+        </div>
+      </div>
+      <label
+        className=""
+        htmlFor={undefined}
+      >
+        Label di esempio
+      </label>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Multipla.md",
+      }
+    }
+  />
+</div>
+`;

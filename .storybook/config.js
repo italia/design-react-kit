@@ -1,16 +1,21 @@
-import React from 'react';
-import {configure, addDecorator} from '@storybook/react';
-import '@storybook/addon-actions/register';
-import '@storybook/addon-console';
-import '../src/index.css';
-import './utils.css';
+import { configure } from "@storybook/react";
+import { setOptions } from "@storybook/addon-options";
 
-// Get all files inside `components` directory which ends with `.story.js`
-const req = require.context('../src', true, /\.story\.js$/);
+import "bootstrap-italia/dist/css/bootstrap-italia.min.css";
+import "bootstrap-italia/dist/css/italia-icon-font.css";
+import "../assets/docs.min.css";
+
+// addon-options
+// https://github.com/storybooks/storybook/tree/master/addons/options
+setOptions({
+  // name to display in the top left corner
+  name: "design-react-kit",
+  // URL for name in top left corner to link to
+  url: "https://github.com/italia/design-react-kit/"
+});
 
 function loadStories() {
-    req.keys().forEach(filename => req(filename));
+  require('../stories');
 }
 
-addDecorator(story => <div className="c-hideFocus">{story()}</div>);
 configure(loadStories, module);
