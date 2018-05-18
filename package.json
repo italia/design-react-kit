@@ -23,7 +23,7 @@
 		"npm": "^5.0.0"
 	},
 	"scripts": {
-        "install-dependencies": "if [ ! -d node_modules ]; then npm install && npx npm-install-peers; fi",
+		"install-dependencies": "if [ ! -d node_modules ]; then npm install && npx npm-install-peers; fi",
 		"prebuild": "npm run install-dependencies",
 		"build": "rollup -c scripts/rollup.config.js",
 		"prestorybook": "npm run install-dependencies",

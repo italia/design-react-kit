@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 import { FormGroup, Input, Label } from "reactstrap";
 
-import PasswordInput from "./PasswordInput";
-import Autocomplete from "./Autocomplete";
+import PasswordInput from "../PasswordInput/PasswordInput";
+import Autocomplete from "../Autocomplete/Autocomplete";
 
 class EnhancedFormGroup extends Component {
   state = {

@@ -89,10 +89,10 @@ export {
   Util
 } from "reactstrap";
 
-export { default as Autocomplete } from "./Autocomplete";
-export { default as FormGroup } from "./FormGroup";
-export { default as PasswordInput } from "./PasswordInput";
-export { default as PasswordMeter } from "./PasswordMeter";
-export { default as Scrollspy } from "./Scrollspy";
-export { default as Select } from "./Select";
-export { default as Toggle } from "./Toggle";
+export { default as Autocomplete } from "./components/Autocomplete/Autocomplete";
+export { default as FormGroup } from "./components/FormGroup/FormGroup";
+export { default as PasswordInput } from "./components/PasswordInput/PasswordInput";
+export { default as PasswordMeter } from "./components/PasswordMeter/PasswordMeter";
+export { default as Scrollspy } from "./components/Scrollspy/Scrollspy";
+export { default as Select } from "./components/Select/Select";
+export { default as Toggle } from "./components/Toggle/Toggle";
