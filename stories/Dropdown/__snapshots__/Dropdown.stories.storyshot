@@ -779,6 +779,85 @@ exports[`Storyshots Componenti/Dropdown Esempi 1`] = `
 </div>
 `;
 
+exports[`Storyshots Componenti/Dropdown Link 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="dropdown"
+      onKeyDown={[Function]}
+    >
+      <span
+        aria-expanded={false}
+        aria-haspopup={true}
+        className="btn btn-dropdown dropdown-toggle"
+        onClick={[Function]}
+      >
+        Apri dropdown
+      </span>
+      <div
+        aria-hidden={true}
+        className="dropdown-menu"
+        role="menu"
+        tabIndex="-1"
+        x-placement={undefined}
+      >
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 1
+        </button>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 2
+        </button>
+        <button
+          className="dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 3
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "VarianteBottoni.md",
+      }
+    }
+  />
+</div>
+`;
+
 exports[`Storyshots Componenti/Dropdown Variante Bottoni 1`] = `
 <div
   style={
@@ -1045,6 +1124,746 @@ exports[`Storyshots Componenti/Dropdown Voci di menù disabilitate 1`] = `
     dangerouslySetInnerHTML={
       Object {
         "__html": "VociMenuDisabilitate.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown/Dropdown menu Menu con voci large 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="dropdown show"
+      onKeyDown={[Function]}
+    >
+      <button
+        aria-expanded={true}
+        aria-haspopup={true}
+        className="btn-dropdown btn btn-"
+        onClick={[Function]}
+        type="button"
+      >
+        Dropdown
+         
+      </button>
+      <div
+        aria-hidden={false}
+        className="dropdown-menu show"
+        data-placement={undefined}
+        data-x-out-of-boundaries={undefined}
+        role="menu"
+        style={
+          Object {
+            "opacity": 0,
+            "pointerEvents": "none",
+            "position": "absolute",
+          }
+        }
+        tabIndex="-1"
+        x-placement="bottom-start"
+      >
+        <button
+          className="large dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 1
+        </button>
+        <button
+          className="large dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 2
+        </button>
+        <button
+          className="large dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 3
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "MenuLarge.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown/Dropdown menu Menà voci attive 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      aria-hidden={true}
+      className="d-block dropdown-menu"
+      isOpen={true}
+      role="menu"
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+      tabIndex="-1"
+      x-placement={undefined}
+    >
+      <button
+        className="dropdown-item"
+        onClick={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        Azione 1
+      </button>
+      <button
+        className="dropdown-item active"
+        onClick={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        Azione 2
+      </button>
+      <button
+        className="dropdown-item"
+        onClick={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        Azione 3
+      </button>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "MenuVociAttive.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù dark 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      aria-hidden={true}
+      className="d-block dark dropdown-menu"
+      isOpen={true}
+      role="menu"
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+      tabIndex="-1"
+      x-placement={undefined}
+    >
+      <div
+        className="link-list-wrapper"
+      >
+        <ul
+          className="link-list"
+        >
+          <li>
+            <h3>
+              Header
+            </h3>
+          </li>
+          <li>
+            <a
+              className="list-item right-icon active"
+              href="#"
+            >
+              <span>
+                Azione 1 (attivo)
+              </span>
+              <i
+                className="it-info right"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              className="list-item right-icon"
+              href="#"
+            >
+              <span>
+                Azione 2
+              </span>
+              <i
+                className="it-info right"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              className="list-item right-icon"
+              href="#"
+            >
+              <span>
+                Azione 3
+              </span>
+              <i
+                className="it-info right"
+              />
+            </a>
+          </li>
+          <li>
+            <span
+              className="divider"
+            />
+          </li>
+          <li>
+            <a
+              className="list-item right-icon"
+              href="#"
+            >
+              <span>
+                Azione 4
+              </span>
+              <i
+                className="it-info right"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              className="list-item right-icon disabled"
+              href="#"
+            >
+              <span>
+                Azione 5 (disabilitato)
+              </span>
+              <i
+                className="it-info right"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "MenuDark.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù full width 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="dropdown show"
+      onKeyDown={[Function]}
+    >
+      <button
+        aria-expanded={true}
+        aria-haspopup={true}
+        className="btn-dropdown btn btn-"
+        onClick={[Function]}
+        type="button"
+      >
+        Dropdown
+         
+      </button>
+      <div
+        aria-hidden={false}
+        className="full-width dropdown-menu show"
+        data-placement={undefined}
+        data-x-out-of-boundaries={undefined}
+        role="menu"
+        style={
+          Object {
+            "opacity": 0,
+            "pointerEvents": "none",
+            "position": "absolute",
+          }
+        }
+        tabIndex="-1"
+        x-placement="bottom-start"
+      >
+        <button
+          className="large dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 1
+        </button>
+        <button
+          className="large dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 2
+        </button>
+        <button
+          className="large dropdown-item"
+          onClick={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          Azione 3
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "MenuFull.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù headers e separatori 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      aria-hidden={true}
+      className="d-block dropdown-menu"
+      isOpen={true}
+      role="menu"
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+      tabIndex="-1"
+      x-placement={undefined}
+    >
+      <h6
+        className="dropdown-header"
+        onClick={[Function]}
+        tabIndex="-1"
+        type={undefined}
+      >
+        Header
+      </h6>
+      <button
+        className="dropdown-item"
+        onClick={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        Azione 1
+      </button>
+      <button
+        className="dropdown-item"
+        onClick={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        Azione 2
+      </button>
+      <button
+        className="dropdown-item"
+        onClick={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        Azione 3
+      </button>
+      <div
+        className="dropdown-divider"
+        onClick={[Function]}
+        tabIndex="-1"
+        type={undefined}
+      />
+      <button
+        className="dropdown-item"
+        onClick={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        Azione 4
+      </button>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "MenuHeaderDivider.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù icona a destra 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      aria-hidden={true}
+      className="d-block dropdown-menu"
+      isOpen={true}
+      role="menu"
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+      tabIndex="-1"
+      x-placement={undefined}
+    >
+      <div
+        className="link-list-wrapper"
+      >
+        <ul
+          className="link-list"
+        >
+          <li>
+            <a
+              className="list-item right-icon"
+              href="#"
+            >
+              <span>
+                Azione 1
+              </span>
+              <i
+                className="it-info right"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              className="list-item right-icon"
+              href="#"
+            >
+              <span>
+                Azione 2
+              </span>
+              <i
+                className="it-info right"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              className="list-item right-icon"
+              href="#"
+            >
+              <span>
+                Azione 3
+              </span>
+              <i
+                className="it-info right"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "MenuIconRight.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù icona a sinistra 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      aria-hidden={true}
+      className="d-block dropdown-menu"
+      isOpen={true}
+      role="menu"
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+      tabIndex="-1"
+      x-placement={undefined}
+    >
+      <div
+        className="link-list-wrapper"
+      >
+        <ul
+          className="link-list"
+        >
+          <li>
+            <a
+              className="list-item left-icon"
+              href="#"
+            >
+              <i
+                className="it-info left"
+              />
+              <span>
+                Azione 1
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              className="list-item left-icon"
+              href="#"
+            >
+              <i
+                className="it-info left"
+              />
+              <span>
+                Azione 2
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              className="list-item left-icon"
+              href="#"
+            >
+              <i
+                className="it-info left"
+              />
+              <span>
+                Azione 3
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "MenuIconLeft.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù voci disabilitate 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      aria-hidden={true}
+      className="d-block dropdown-menu"
+      isOpen={true}
+      role="menu"
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+      tabIndex="-1"
+      x-placement={undefined}
+    >
+      <button
+        className="dropdown-item"
+        onClick={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        Azione 1
+      </button>
+      <button
+        className="disabled dropdown-item"
+        disabled={true}
+        onClick={[Function]}
+        tabIndex="-1"
+        type="button"
+      >
+        Azione 2
+      </button>
+      <button
+        className="dropdown-item"
+        onClick={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        Azione 3
+      </button>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "MenuVociDisabilitate.md",
       }
     }
   />
