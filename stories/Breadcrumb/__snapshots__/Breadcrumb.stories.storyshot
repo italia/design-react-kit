@@ -1,5 +1,95 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Componenti/Breadcrumb Con icone 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <nav
+        className="breadcrumb-container"
+      >
+        <ol
+          className="breadcrumb"
+        >
+          <li
+            className="breadcrumb-item"
+          >
+            <i
+              className="it-favorite"
+            />
+            <a
+              href="#"
+            >
+              Home
+              <span
+                className="separator"
+              >
+                /
+              </span>
+            </a>
+          </li>
+          <li
+            className="breadcrumb-item"
+          >
+            <i
+              className="it-favorite"
+            />
+            <a
+              href="#"
+            >
+              Subsection
+              <span
+                className="separator"
+              >
+                /
+              </span>
+            </a>
+          </li>
+          <li
+            className="active breadcrumb-item"
+          >
+            <i
+              className="it-favorite"
+            />
+            <a
+              href="#"
+            >
+              Current section
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Icone.md",
+      }
+    }
+  />
+</div>
+`;
+
 exports[`Storyshots Componenti/Breadcrumb Esempi 1`] = `
 <div
   style={
@@ -84,6 +174,195 @@ exports[`Storyshots Componenti/Breadcrumb Esempi 1`] = `
     dangerouslySetInnerHTML={
       Object {
         "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <nav
+        className="breadcrumb-container"
+      >
+        <ol
+          className="dark breadcrumb"
+        >
+          <li
+            className="breadcrumb-item"
+          >
+            <a
+              href="#"
+            >
+              Home
+              <span
+                className="separator"
+              >
+                /
+              </span>
+            </a>
+          </li>
+          <li
+            className="breadcrumb-item"
+          >
+            <a
+              href="#"
+            >
+              Subsection
+              <span
+                className="separator"
+              >
+                /
+              </span>
+            </a>
+          </li>
+          <li
+            className="active breadcrumb-item"
+          >
+            <a
+              href="#"
+            >
+              Current section
+            </a>
+          </li>
+        </ol>
+      </nav>
+      <nav
+        className="breadcrumb-container"
+      >
+        <ol
+          className="dark breadcrumb"
+        >
+          <li
+            className="breadcrumb-item"
+          >
+            <i
+              className="it-favorite"
+            />
+            <a
+              href="#"
+            >
+              Home
+              <span
+                className="separator"
+              >
+                /
+              </span>
+            </a>
+          </li>
+          <li
+            className="breadcrumb-item"
+          >
+            <i
+              className="it-favorite"
+            />
+            <a
+              href="#"
+            >
+              Subsection
+              <span
+                className="separator"
+              >
+                /
+              </span>
+            </a>
+          </li>
+          <li
+            className="active breadcrumb-item"
+          >
+            <i
+              className="it-favorite"
+            />
+            <a
+              href="#"
+            >
+              Current section
+            </a>
+          </li>
+        </ol>
+      </nav>
+      <nav
+        className="breadcrumb-container"
+      >
+        <ol
+          className="dark breadcrumb"
+        >
+          <li
+            className="breadcrumb-item"
+          >
+            <i
+              className="it-favorite"
+            />
+            <a
+              href="#"
+            >
+              Home
+              <span
+                className="separator"
+              >
+                &gt;
+              </span>
+            </a>
+          </li>
+          <li
+            className="breadcrumb-item"
+          >
+            <i
+              className="it-favorite"
+            />
+            <a
+              href="#"
+            >
+              Subsection
+              <span
+                className="separator"
+              >
+                &gt;
+              </span>
+            </a>
+          </li>
+          <li
+            className="active breadcrumb-item"
+          >
+            <i
+              className="it-favorite"
+            />
+            <a
+              href="#"
+            >
+              Current section
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Background.md",
       }
     }
   />
