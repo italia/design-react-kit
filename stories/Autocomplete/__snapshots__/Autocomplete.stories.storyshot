@@ -34,7 +34,7 @@ exports[`Storyshots Componenti/Autocomplete Input autocomplete 1`] = `
           <span
             aria-atomic="true"
             aria-live="polite"
-            className="css-17l7ekz"
+            className="css-1uvvha"
             role="status"
           >
             20 results available.
@@ -73,7 +73,7 @@ exports[`Storyshots Componenti/Autocomplete Input autocomplete 1`] = `
               className="autocomplete-value-container"
             >
               <div
-                className="react-select__placeholder css-16ucli7"
+                className="css-1492t68"
               />
               <div
                 className="autocomplete-input-container search-wrap"
@@ -92,6 +92,7 @@ exports[`Storyshots Componenti/Autocomplete Input autocomplete 1`] = `
                   autoComplete="off"
                   autoCorrect="off"
                   className="form-control autocomplete"
+                  cx={[Function]}
                   id="react-select-2-input"
                   onBlur={[Function]}
                   onChange={[Function]}

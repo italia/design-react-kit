@@ -33,7 +33,7 @@ exports[`Storyshots Componenti/Select Con gruppi di opzioni 1`] = `
         <span
           aria-atomic="true"
           aria-live="polite"
-          className="css-17l7ekz"
+          className="css-1uvvha"
           role="status"
         >
           20 results available.
@@ -137,7 +137,7 @@ exports[`Storyshots Componenti/Select Con ricerca 1`] = `
         <span
           aria-atomic="true"
           aria-live="polite"
-          className="css-17l7ekz"
+          className="css-1uvvha"
           role="status"
         >
           20 results available.
@@ -241,7 +241,7 @@ exports[`Storyshots Componenti/Select Esempi 1`] = `
         <span
           aria-atomic="true"
           aria-live="polite"
-          className="css-17l7ekz"
+          className="css-1uvvha"
           role="status"
         >
           3 results available.
@@ -345,7 +345,7 @@ exports[`Storyshots Componenti/Select Multipla 1`] = `
         <span
           aria-atomic="true"
           aria-live="polite"
-          className="css-17l7ekz"
+          className="css-1uvvha"
           role="status"
         >
           20 results available.
