@@ -148,7 +148,7 @@ exports[`Storyshots Componenti/Form Dimensioni 1`] = `
           <span
             aria-atomic="true"
             aria-live="polite"
-            className="css-17l7ekz"
+            className="css-1uvvha"
             role="status"
           >
             1 result available.
@@ -208,7 +208,7 @@ exports[`Storyshots Componenti/Form Dimensioni 1`] = `
           <span
             aria-atomic="true"
             aria-live="polite"
-            className="css-17l7ekz"
+            className="css-1uvvha"
             role="status"
           >
             1 result available.
@@ -268,7 +268,7 @@ exports[`Storyshots Componenti/Form Dimensioni 1`] = `
           <span
             aria-atomic="true"
             aria-live="polite"
-            className="css-17l7ekz"
+            className="css-1uvvha"
             role="status"
           >
             1 result available.
@@ -1062,7 +1062,7 @@ exports[`Storyshots Componenti/Form Icone aggiuntive 1`] = `
           <span
             aria-atomic="true"
             aria-live="polite"
-            className="css-17l7ekz"
+            className="css-1uvvha"
             role="status"
           >
             3 results available.
@@ -1287,7 +1287,7 @@ exports[`Storyshots Componenti/Form Input autocomplete 1`] = `
         <span
           aria-atomic="true"
           aria-live="polite"
-          className="css-17l7ekz"
+          className="css-1uvvha"
           role="status"
         >
           20 results available.
@@ -1326,7 +1326,7 @@ exports[`Storyshots Componenti/Form Input autocomplete 1`] = `
             className="autocomplete-value-container"
           >
             <div
-              className="react-select__placeholder css-16ucli7"
+              className="css-1492t68"
             />
             <div
               className="autocomplete-input-container search-wrap"
@@ -1345,6 +1345,7 @@ exports[`Storyshots Componenti/Form Input autocomplete 1`] = `
                 autoComplete="off"
                 autoCorrect="off"
                 className="form-control autocomplete"
+                cx={[Function]}
                 id="react-select-3-input"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -1904,7 +1905,7 @@ exports[`Storyshots Componenti/Form Select 1`] = `
         <span
           aria-atomic="true"
           aria-live="polite"
-          className="css-17l7ekz"
+          className="css-1uvvha"
           role="status"
         >
           3 results available.
@@ -2008,7 +2009,7 @@ exports[`Storyshots Componenti/Form Select con gruppi di opzioni 1`] = `
         <span
           aria-atomic="true"
           aria-live="polite"
-          className="css-17l7ekz"
+          className="css-1uvvha"
           role="status"
         >
           20 results available.
@@ -2112,7 +2113,7 @@ exports[`Storyshots Componenti/Form Select con ricerca 1`] = `
         <span
           aria-atomic="true"
           aria-live="polite"
-          className="css-17l7ekz"
+          className="css-1uvvha"
           role="status"
         >
           20 results available.
@@ -2216,7 +2217,7 @@ exports[`Storyshots Componenti/Form Select multipla 1`] = `
         <span
           aria-atomic="true"
           aria-live="polite"
-          className="css-17l7ekz"
+          className="css-1uvvha"
           role="status"
         >
           20 results available.
@@ -2932,7 +2933,7 @@ exports[`Storyshots Componenti/Form/Layout Form a griglia 1`] = `
               <span
                 aria-atomic="true"
                 aria-live="polite"
-                className="css-17l7ekz"
+                className="css-1uvvha"
                 role="status"
               >
                 1 result available.
@@ -3126,7 +3127,7 @@ exports[`Storyshots Componenti/Form/Layout Form disabilitato 1`] = `
               <span
                 aria-atomic="true"
                 aria-live="polite"
-                className="css-17l7ekz"
+                className="css-1uvvha"
                 role="status"
               >
                 1 result available.
@@ -3441,7 +3442,7 @@ exports[`Storyshots Componenti/Form/Layout Inline forms 1`] = `
           <span
             aria-atomic="true"
             aria-live="polite"
-            className="css-17l7ekz"
+            className="css-1uvvha"
             role="status"
           >
             3 results available.
