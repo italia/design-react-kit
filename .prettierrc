@@ -1,6 +1,5 @@
 {
   "trailingComma": "es5",
-  "bracketSpacing": false,
   "jsxBracketSameLine": true,
   "parser": "flow",
   "tabWidth": 4
