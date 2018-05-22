@@ -1,0 +1,1455 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/LinkList Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="link-list-wrapper"
+    >
+      <ul
+        className="link-list"
+      >
+        <li>
+          <a
+            className="list-item"
+            href="#"
+          >
+            <span>
+              Link list 1
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="list-item"
+            href="#"
+          >
+            <span>
+              Link list 2
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="list-item"
+            href="#"
+          >
+            <span>
+              Link list 3
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/LinkList Header e Divider 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <div
+        className="link-list-wrapper"
+      >
+        <ul
+          className="link-list"
+        >
+          <li>
+            <h3
+              className="header list-item"
+              href="#"
+            >
+              Heading senza link
+            </h3>
+          </li>
+          <li>
+            <a
+              className="list-item"
+              href="#"
+            >
+              <span>
+                Link list 1
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              className="list-item"
+              href="#"
+            >
+              <span>
+                Link list 2
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              className="list-item"
+              href="#"
+            >
+              <span>
+                Link list 3
+              </span>
+            </a>
+          </li>
+          <li>
+            <span
+              className="divider list-item"
+              href="#"
+            />
+          </li>
+          <li>
+            <a
+              className="list-item"
+              href="#"
+            >
+              <span>
+                Link list 4
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="link-list-wrapper"
+      >
+        <ul
+          className="link-list"
+        >
+          <li>
+            <h3>
+              <a
+                className="header list-item"
+                href="#"
+              >
+                Heading con link
+              </a>
+            </h3>
+          </li>
+          <li>
+            <a
+              className="list-item"
+              href="#"
+            >
+              <span>
+                Link list 1
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              className="list-item"
+              href="#"
+            >
+              <span>
+                Link list 2
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              className="list-item"
+              href="#"
+            >
+              <span>
+                Link list 3
+              </span>
+            </a>
+          </li>
+          <li>
+            <span
+              className="divider list-item"
+              href="#"
+            />
+          </li>
+          <li>
+            <a
+              className="list-item"
+              href="#"
+            >
+              <span>
+                Link list 4
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "HeaderDivider.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/LinkList Sizing 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="link-list-wrapper"
+    >
+      <ul
+        className="link-list"
+      >
+        <li>
+          <h3>
+            <a
+              className="header list-item"
+              href="#"
+            >
+              Heading
+            </a>
+          </h3>
+        </li>
+        <li>
+          <a
+            className="large list-item"
+            href="#"
+          >
+            <span>
+              Link list 1
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="large list-item"
+            href="#"
+          >
+            <span>
+              Link list 2
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="large list-item"
+            href="#"
+          >
+            <span>
+              Link list 3
+            </span>
+          </a>
+        </li>
+        <li>
+          <span
+            className="divider list-item"
+            href="#"
+          />
+        </li>
+        <li>
+          <a
+            className="large list-item"
+            href="#"
+          >
+            <span>
+              Link list 4
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Large.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/LinkList Stato Attivo 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="link-list-wrapper"
+    >
+      <ul
+        className="link-list"
+      >
+        <li>
+          <a
+            className="list-item"
+            href="#"
+          >
+            <span>
+              Link list 1
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="active list-item"
+            href="#"
+          >
+            <span>
+              Link list 2 active
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="list-item"
+            href="#"
+          >
+            <span>
+              Link list 3
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "StatoAttivo.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/LinkList Stato Disabilitato 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="link-list-wrapper"
+    >
+      <ul
+        className="link-list"
+      >
+        <li>
+          <a
+            className="list-item"
+            href="#"
+          >
+            <span>
+              Link list 1
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="disabled list-item"
+            href="#"
+            onClick={[Function]}
+          >
+            <span>
+              Link list 2 disabled
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="list-item"
+            href="#"
+          >
+            <span>
+              Link list 3
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "StatoDisabilitato.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/LinkList/Con controlli Con avatar 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="link-list-wrapper"
+    >
+      <ul
+        className="link-list"
+      >
+        <li>
+          <a
+            className="avatar active list-item"
+            href="#"
+          >
+            <img
+              className="avatar"
+              src="http://via.placeholder.com/40x40"
+              title="avatartitle"
+            />
+            <span>
+              Link list 1 active 
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="avatar list-item"
+            href="#"
+          >
+            <img
+              className="avatar"
+              src="http://via.placeholder.com/40x40"
+              title="avatartitle"
+            />
+            <span>
+              Link list 2 
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="avatar disabled list-item"
+            href="#"
+            onClick={[Function]}
+          >
+            <img
+              className="avatar"
+              src="http://via.placeholder.com/40x40"
+              title="avatartitle"
+            />
+            <span>
+              Link list 3 disabled 
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Avatar.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/LinkList/Con controlli Con checkbox 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="link-list-wrapper"
+    >
+      <ul
+        className="link-list"
+      >
+        <li>
+          <div
+            className="active list-item"
+            href="#"
+          >
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                defaultChecked={true}
+                id="checkbox1"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="checkbox"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="checkbox1"
+              >
+                Checkbox selezionato
+              </label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            className="active list-item"
+            href="#"
+          >
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                id="checkbox2"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="checkbox"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="checkbox2"
+              >
+                Checkbox non selezionato
+              </label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            className="disabled list-item"
+            href="#"
+            onClick={[Function]}
+          >
+            <div
+              className="form-check-group   form-check"
+            >
+              <input
+                className="form-check-input"
+                disabled={true}
+                id="checkbox3"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="checkbox"
+              />
+              <label
+                className="form-check-label "
+                htmlFor="checkbox3"
+              >
+                Checkbox disabilitato non selezionato
+              </label>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Checkbox.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/LinkList/Con controlli Con switch 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="link-list-wrapper"
+    >
+      <ul
+        className="link-list"
+      >
+        <li>
+          <div
+            className="active list-item"
+            href="#"
+          >
+            <div
+              className="toggles"
+            >
+              <label
+                className="form-check-label "
+                htmlFor={undefined}
+              >
+                Label per toggle
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                />
+                <span
+                  className="lever"
+                />
+              </label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            className="disabled list-item"
+            href="#"
+            onClick={[Function]}
+          >
+            <div
+              className="toggles"
+            >
+              <label
+                className="form-check-label "
+                htmlFor={undefined}
+              >
+                Label per disabled toggle
+                <input
+                  className="form-check-input"
+                  disabled={true}
+                  type="checkbox"
+                />
+                <span
+                  className="lever"
+                />
+              </label>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Switch.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/LinkList/Con controlli Primary Action 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="link-list-wrapper"
+    >
+      <ul
+        className="link-list"
+      >
+        <li>
+          <a
+            className="left-icon active list-item"
+            href="#"
+          >
+            <i
+              aria-hidden="true"
+              className="it-chevron-right left"
+            />
+            <span>
+              Link list 1 active
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="left-icon list-item"
+            href="#"
+          >
+            <i
+              aria-hidden="true"
+              className="it-chevron-right left"
+            />
+            <span>
+              Link list 2
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="left-icon disabled list-item"
+            href="#"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden="true"
+              className="it-chevron-right left"
+            />
+            <span>
+              Link list 3 disabled
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Controlli.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/LinkList/Con controlli Primary e Secondary Action 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="link-list-wrapper"
+    >
+      <ul
+        className="link-list"
+      >
+        <li>
+          <a
+            className="left-icon right-icon active list-item"
+            href="#"
+          >
+            <i
+              className="it-favorite left"
+            />
+            <span>
+              Link list 1 active
+            </span>
+            <i
+              className="it-app right secondary"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            className="left-icon right-icon list-item"
+            href="#"
+          >
+            <i
+              className="it-favorite left"
+            />
+            <span>
+              Link list 2
+            </span>
+            <i
+              className="it-app right secondary"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            className="left-icon right-icon disabled list-item"
+            href="#"
+            onClick={[Function]}
+          >
+            <i
+              className="it-favorite left"
+            />
+            <span>
+              Link list 3 disabled
+            </span>
+            <i
+              className="it-app right secondary"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "ControlliPrimariSecondari.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/LinkList/Con controlli Secondary Action 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="link-list-wrapper"
+    >
+      <ul
+        className="link-list"
+      >
+        <li>
+          <a
+            className="right-icon active list-item"
+            href="#"
+          >
+            <span>
+              Link list 1 active
+            </span>
+            <i
+              className="it-app right secondary"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            className="right-icon list-item"
+            href="#"
+          >
+            <span>
+              Link list 2
+            </span>
+            <i
+              className="it-app right secondary"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            className="right-icon disabled list-item"
+            href="#"
+            onClick={[Function]}
+          >
+            <span>
+              Link list 3 disabled
+            </span>
+            <i
+              className="it-app right secondary"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "ControlliSecondari.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/LinkList/Multiline Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="multiline link-list-wrapper"
+    >
+      <ul
+        className="link-list"
+      >
+        <li>
+          <a
+            className="right-icon active list-item"
+            href="#"
+          >
+            <span>
+              Link list 1 active
+            </span>
+            <i
+              className="it-chevron-right right"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+            </p>
+          </a>
+        </li>
+        <li>
+          <span
+            className="divider list-item"
+            href="#"
+          />
+        </li>
+        <li>
+          <a
+            className="right-icon list-item"
+            href="#"
+          >
+            <span>
+              Link list 2
+            </span>
+            <i
+              className="it-chevron-right right"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+            </p>
+          </a>
+        </li>
+        <li>
+          <span
+            className="divider list-item"
+            href="#"
+          />
+        </li>
+        <li>
+          <a
+            className="right-icon disabled list-item"
+            href="#"
+            onClick={[Function]}
+          >
+            <span>
+              Link list 3 disabled
+            </span>
+            <i
+              className="it-chevron-right right"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Multiline.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="link-list-wrapper"
+    >
+      <ul
+        className="link-list"
+      >
+        <li>
+          <a
+            className="right-icon medium list-item"
+            href="#"
+            onClick={[Function]}
+          >
+            <span>
+              Link list 1 
+            </span>
+            <i
+              className="it-expand right"
+            />
+          </a>
+        </li>
+        <div
+          className="collapse"
+          style={Object {}}
+        >
+          <ul
+            className="link-sublist"
+          >
+            <li>
+              <a
+                className="list-item"
+                href="#"
+              >
+                <span>
+                  Link list 4 
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+                href="#"
+              >
+                <span>
+                  Link list 5 
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+                href="#"
+              >
+                <span>
+                  Link list 6 
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <li>
+          <a
+            className="right-icon medium list-item"
+            href="#"
+            onClick={[Function]}
+          >
+            <span>
+              Link list 2 
+            </span>
+            <i
+              className="it-expand right"
+            />
+          </a>
+        </li>
+        <div
+          className="collapse"
+          style={Object {}}
+        >
+          <ul
+            className="link-sublist"
+          >
+            <li>
+              <a
+                className="list-item"
+                href="#"
+              >
+                <span>
+                  Link list 7 
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+                href="#"
+              >
+                <span>
+                  Link list 8 
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+                href="#"
+              >
+                <span>
+                  Link list 9 
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <li>
+          <a
+            className="right-icon medium list-item"
+            href="#"
+            onClick={[Function]}
+          >
+            <span>
+              Link list 3 
+            </span>
+            <i
+              className="it-expand right"
+            />
+          </a>
+        </li>
+        <div
+          className="collapse"
+          style={Object {}}
+        >
+          <ul
+            className="link-sublist"
+          >
+            <li>
+              <a
+                className="list-item"
+                href="#"
+              >
+                <span>
+                  Link list 10 
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+                href="#"
+              >
+                <span>
+                  Link list 11 
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+                href="#"
+              >
+                <span>
+                  Link list 12 
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Collapsible.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/LinkList/Nested navigation Fixed 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <div
+      className="link-list-wrapper"
+    >
+      <ul
+        className="link-list"
+      >
+        <li>
+          <a
+            className="right-icon medium list-item"
+            href="#"
+          >
+            <span>
+              Link list 1 
+            </span>
+            <i
+              className="it-favorite right"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            className="right-icon medium list-item"
+            href="#"
+          >
+            <span>
+              Link list 2 
+            </span>
+            <i
+              className="it-favorite right"
+            />
+          </a>
+        </li>
+        <ul
+          className="link-sublist"
+        >
+          <li>
+            <a
+              className="list-item"
+              href="#"
+            >
+              <span>
+                Link list 4 
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              className="list-item"
+              href="#"
+            >
+              <span>
+                Link list 5 
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              className="list-item"
+              href="#"
+            >
+              <span>
+                Link list 6 
+              </span>
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a
+            className="right-icon medium list-item"
+            href="#"
+          >
+            <span>
+              Link list 3 
+            </span>
+            <i
+              className="it-favorite right"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Navigation.md",
+      }
+    }
+  />
+</div>
+`;
