@@ -1,5 +1,12 @@
 import React from "react";
-import {Dropdown, DropdownToggle, DropdownMenu, DropdownItem} from "../../src";
+import {
+    Dropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+    LinkList,
+    LinkListItem
+} from "../../src";
 
 class DropdownExample extends React.Component {
     state = {
@@ -13,21 +20,22 @@ class DropdownExample extends React.Component {
     };
 
     render() {
-        const {tag} = this.props;
+        const { tag } = this.props;
         return (
             <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                 <DropdownToggle
-                    className={`${tag === "span" ? "btn" : ""} btn-dropdown`}
+                    className={`btn btn-dropdown`}
                     color=""
                     tag={tag ? tag : "button"}
-                    caret
-                >
+                    caret>
                     Apri dropdown
                 </DropdownToggle>
                 <DropdownMenu>
-                    <DropdownItem>Azione 1</DropdownItem>
-                    <DropdownItem>Azione 2</DropdownItem>
-                    <DropdownItem>Azione 3</DropdownItem>
+                    <LinkList>
+                        <LinkListItem>Azione 1</LinkListItem>
+                        <LinkListItem>Azione 2</LinkListItem>
+                        <LinkListItem>Azione 3</LinkListItem>
+                    </LinkList>
                 </DropdownMenu>
             </Dropdown>
         );

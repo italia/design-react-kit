@@ -4,6 +4,8 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
+    LinkList,
+    LinkListItem,
 } from "../../src";
 
 class DropdownButtonExample extends React.Component {
@@ -18,7 +20,7 @@ class DropdownButtonExample extends React.Component {
     };
 
     render() {
-        const {color} = this.props;
+        const { color } = this.props;
         return (
             <ButtonDropdown
                 className="mr-3"
@@ -28,9 +30,11 @@ class DropdownButtonExample extends React.Component {
                     Apri dropdown
                 </DropdownToggle>
                 <DropdownMenu>
-                    <DropdownItem>Azione 1</DropdownItem>
-                    <DropdownItem>Azione 2</DropdownItem>
-                    <DropdownItem>Azione 3</DropdownItem>
+                    <LinkList>
+                        <LinkListItem>Azione 1</LinkListItem>
+                        <LinkListItem>Azione 2</LinkListItem>
+                        <LinkListItem>Azione 3</LinkListItem>
+                    </LinkList>
                 </DropdownMenu>
             </ButtonDropdown>
         );
