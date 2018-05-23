@@ -301,6 +301,394 @@ exports[`Storyshots Componenti/Navbar Color schemes 1`] = `
 </div>
 `;
 
+exports[`Storyshots Componenti/Navbar Con Dropdown 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <nav
+        className="navbar navbar-expand-lg"
+      >
+        <a
+          className="navbar-brand"
+        />
+        <button
+          className="custom-navbar-toggler navbar-toggler"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="it-list"
+          />
+        </button>
+        <div
+          className="navbar-collapsable collapse navbar-collapse"
+          style={Object {}}
+        >
+          <ul
+            className="mt-0 navbar-nav"
+          >
+            <li
+              className="nav-item active"
+            >
+              <a
+                className="nav-link active"
+                href="#"
+                onClick={[Function]}
+              >
+                link 1 active
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link disabled"
+                disabled={true}
+                href="#"
+                onClick={[Function]}
+              >
+                link 2 disabilitato
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                link 3
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                link 4
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                link 5
+              </a>
+            </li>
+            <li
+              className="dropdown nav-item"
+              onKeyDown={[Function]}
+            >
+              <a
+                aria-expanded={false}
+                aria-haspopup={true}
+                className="dropdown-toggle nav-link"
+                href="#"
+                onClick={[Function]}
+              >
+                Dropdown item
+              </a>
+              <div
+                aria-hidden={true}
+                className="dropdown-menu"
+                role="menu"
+                tabIndex="-1"
+                x-placement={undefined}
+              >
+                <div
+                  className="link-list-wrapper"
+                >
+                  <ul
+                    className="link-list"
+                  >
+                    <li>
+                      <h3
+                        className="header list-item"
+                        href="#"
+                      >
+                        Header
+                      </h3>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                      >
+                        <span>
+                          Link list 1
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                      >
+                        <span>
+                          Link list 2
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                      >
+                        <span>
+                          Link list 3
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <span
+                        className="divider list-item"
+                        href="#"
+                      />
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                      >
+                        <span>
+                          Link list 4
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Dropdown.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Navbar Con Megamenu (in progress) 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section>
+      <nav
+        className="megamenu navbar navbar-expand-lg"
+      >
+        <a
+          className="navbar-brand"
+        />
+        <button
+          className="custom-navbar-toggler navbar-toggler"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="it-list"
+          />
+        </button>
+        <div
+          className="navbar-collapsable collapse navbar-collapse"
+          style={Object {}}
+        >
+          <ul
+            className="mt-0 navbar-nav"
+          >
+            <li
+              className="nav-item active"
+            >
+              <li
+                className="dropdown nav-item"
+                onKeyDown={[Function]}
+              >
+                <a
+                  aria-expanded={false}
+                  aria-haspopup={true}
+                  className="dropdown-toggle nav-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  Megamenu 1
+                </a>
+                <div
+                  aria-hidden={true}
+                  className="dropdown-menu"
+                  role="menu"
+                  tabIndex="-1"
+                  x-placement={undefined}
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <h3
+                          className="header list-item"
+                          href="#"
+                        >
+                          Header
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <li
+                className="dropdown nav-item"
+                onKeyDown={[Function]}
+              >
+                <a
+                  aria-expanded={false}
+                  aria-haspopup={true}
+                  className="dropdown-toggle nav-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  Megamenu 2
+                </a>
+                <div
+                  aria-hidden={true}
+                  className="dropdown-menu"
+                  role="menu"
+                  tabIndex="-1"
+                  x-placement={undefined}
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <h3
+                          className="header list-item"
+                          href="#"
+                        >
+                          Header
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <li
+                className="dropdown nav-item"
+                onKeyDown={[Function]}
+              >
+                <a
+                  aria-expanded={false}
+                  aria-haspopup={true}
+                  className="dropdown-toggle nav-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  Megamenu 3
+                </a>
+                <div
+                  aria-hidden={true}
+                  className="dropdown-menu"
+                  role="menu"
+                  tabIndex="-1"
+                  x-placement={undefined}
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <h3
+                          className="header list-item"
+                          href="#"
+                        >
+                          Header
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Megamenu.md",
+      }
+    }
+  />
+</div>
+`;
+
 exports[`Storyshots Componenti/Navbar Esempi 1`] = `
 <div
   style={
@@ -637,6 +1025,211 @@ exports[`Storyshots Componenti/Navbar Forms 1`] = `
     dangerouslySetInnerHTML={
       Object {
         "__html": "Forms.md",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Componenti/Navbar Inline Menù 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <nav
+      className="inline-menu"
+    >
+      <div
+        className="link-list-wrapper"
+      >
+        <ul
+          className="link-list"
+        >
+          <li>
+            <a
+              className="right-icon large medium list-item"
+              href="#"
+              onClick={[Function]}
+            >
+              <span>
+                Link list 1 
+              </span>
+              <i
+                className="it-expand right"
+              />
+            </a>
+          </li>
+          <div
+            className="collapse"
+            style={Object {}}
+          >
+            <ul
+              className="link-sublist"
+            >
+              <li>
+                <a
+                  className="list-item"
+                  href="#"
+                >
+                  <span>
+                    Link list 4 
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                  href="#"
+                >
+                  <span>
+                    Link list 5 
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                  href="#"
+                >
+                  <span>
+                    Link list 6 
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <li>
+            <a
+              className="right-icon large medium list-item"
+              href="#"
+              onClick={[Function]}
+            >
+              <span>
+                Link list 2 
+              </span>
+              <i
+                className="it-expand right"
+              />
+            </a>
+          </li>
+          <div
+            className="collapse"
+            style={Object {}}
+          >
+            <ul
+              className="link-sublist"
+            >
+              <li>
+                <a
+                  className="list-item"
+                  href="#"
+                >
+                  <span>
+                    Link list 7 
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                  href="#"
+                >
+                  <span>
+                    Link list 8 
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                  href="#"
+                >
+                  <span>
+                    Link list 9 
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <li>
+            <a
+              className="right-icon large medium list-item"
+              href="#"
+              onClick={[Function]}
+            >
+              <span>
+                Link list 3 
+              </span>
+              <i
+                className="it-expand right"
+              />
+            </a>
+          </li>
+          <div
+            className="collapse"
+            style={Object {}}
+          >
+            <ul
+              className="link-sublist"
+            >
+              <li>
+                <a
+                  className="list-item"
+                  href="#"
+                >
+                  <span>
+                    Link list 10 
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                  href="#"
+                >
+                  <span>
+                    Link list 11 
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                  href="#"
+                >
+                  <span>
+                    Link list 12 
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Inline.md",
       }
     }
   />
