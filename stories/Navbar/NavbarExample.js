@@ -1,83 +1,123 @@
 import React from "react";
 import {
-  Navbar,
-  NavbarBrand,
-  NavbarToggler,
-  Collapse,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Form,
-  Input,
-  Button
+    Navbar,
+    NavbarBrand,
+    NavbarToggler,
+    Collapse,
+    Nav,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+    Form,
+    Input,
+    Button,
+    LinkList,
+    LinkListItem
 } from "../../src";
 
 class NavbarExample extends React.Component {
-  state = {
-    isOpen: false
-  };
+    state = {
+        isOpen: false
+    };
 
-  toggle = () => {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  };
+    toggle = () => {
+        this.setState({
+            isOpen: !this.state.isOpen
+        });
+    };
 
-  render() {
-    return (
-      <Navbar light expand="lg" className="bg-light">
-        <NavbarBrand href="#">Navbar</NavbarBrand>
-        <NavbarToggler onClick={this.toggle} />
+    render() {
+        const { isOpen } = this.state;
+        const { dropdown } = this.props;
+        return (
+            <section>
+                <Navbar expand="lg">
+                    <NavbarBrand />
+                    <NavbarToggler
+                        className="custom-navbar-toggler"
+                        onClick={this.toggle}
+                    >
+                        <span className="it-list" />
+                    </NavbarToggler>
 
-        <Collapse isOpen={this.state.isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem active>
-              <NavLink href="#">Home</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#">Link</NavLink>
-            </NavItem>
-
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Dropdown
-              </DropdownToggle>
-              <DropdownMenu>
-                <DropdownItem>Action</DropdownItem>
-                <DropdownItem>Another action</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Something else here</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-
-            <NavItem disabled>
-              <NavLink href="#">Link</NavLink>
-            </NavItem>
-          </Nav>
-
-          <Form inline className="my-2 my-lg-0">
-            <Input
-              className="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-            />
-            <Button
-              outline
-              color="success"
-              className="my-2 my-sm-0"
-              type="submit"
-            >
-              Search
-            </Button>
-          </Form>
-        </Collapse>
-      </Navbar>
-    );
-  }
+                    <Collapse
+                        isOpen={isOpen}
+                        navbar
+                        className="navbar-collapsable"
+                        // We need to override `navbar-collapsable` (needed for styles) rules
+                        // This can be improved and moved into a customization of `Collapse`
+                        style={
+                            isOpen
+                                ? {
+                                    position: "relative",
+                                    display: "block"
+                                }
+                                : {}
+                        }
+                    >
+                        <Nav navbar className="mt-0">
+                            <NavItem active>
+                                <NavLink active href="#">
+                                    link 1 active
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink disabled href="#">
+                                    link 2 disabilitato
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="#">link 3</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="#">link 4</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="#">link 5</NavLink>
+                            </NavItem>
+                            {(() => {
+                                if (dropdown) {
+                                    return (
+                                        <UncontrolledDropdown nav inNavbar>
+                                            <DropdownToggle nav caret>
+                                                Dropdown item
+                                            </DropdownToggle>
+                                            <DropdownMenu>
+                                                <LinkList>
+                                                    <LinkListItem header>Header</LinkListItem>
+                                                    <LinkListItem>
+                                                        <span>Link list 1</span>
+                                                    </LinkListItem>
+                                                    <LinkListItem>
+                                                        <span>Link list 2</span>
+                                                    </LinkListItem>
+                                                    <LinkListItem>
+                                                        <span>Link list 3</span>
+                                                    </LinkListItem>
+                                                    <LinkListItem divider />
+                                                    <LinkListItem>
+                                                        <span>Link list 4</span>
+                                                    </LinkListItem>
+                                                </LinkList>
+                                            </DropdownMenu>
+                                        </UncontrolledDropdown>
+                                    );
+                                }
+                                return (
+                                    <NavItem>
+                                        <NavLink href="#">link 6</NavLink>
+                                    </NavItem>
+                                );
+                            })()}
+                        </Nav>
+                    </Collapse>
+                </Navbar>
+            </section>
+        );
+    }
 }
 
 export default NavbarExample;
