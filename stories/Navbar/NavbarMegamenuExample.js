@@ -1,0 +1,112 @@
+import React from "react";
+import {
+    Navbar,
+    NavbarBrand,
+    NavbarToggler,
+    Collapse,
+    Nav,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+    Form,
+    Input,
+    Button,
+    LinkList,
+    LinkListItem
+} from "../../src";
+
+class NavbarMegamenuExample extends React.Component {
+    state = {
+        isOpen: false
+    };
+
+    toggle = () => {
+        this.setState({
+            isOpen: !this.state.isOpen
+        });
+    };
+
+    render() {
+        const { isOpen } = this.state;
+
+        return (
+            <section>
+                <Navbar expand="lg" className="megamenu">
+                    <NavbarBrand />
+                    <NavbarToggler
+                        className="custom-navbar-toggler"
+                        onClick={this.toggle}
+                    >
+                        <span className="it-list" />
+                    </NavbarToggler>
+
+                    <Collapse
+                        isOpen={isOpen}
+                        navbar
+                        className="navbar-collapsable"
+                        // We need to override `navbar-collapsable` (needed for styles) rules
+                        // This can be improved and moved into a customization of `Collapse`
+                        style={
+                            isOpen
+                                ? {
+                                    position: "relative",
+                                    display: "block"
+                                }
+                                : {}
+                        }
+                    >
+                        <Nav navbar className="mt-0">
+                            <NavItem active>
+                                <UncontrolledDropdown nav inNavbar>
+                                    <DropdownToggle nav caret>
+                                        Megamenu 1
+                                    </DropdownToggle>
+                                    <DropdownMenu>
+                                        <LinkList>
+                                            <LinkListItem header>
+                                                Header
+                                            </LinkListItem>
+                                        </LinkList>
+                                    </DropdownMenu>
+                                </UncontrolledDropdown>
+                            </NavItem>
+                            <NavItem>
+                                <UncontrolledDropdown nav inNavbar>
+                                    <DropdownToggle nav caret>
+                                        Megamenu 2
+                                    </DropdownToggle>
+                                    <DropdownMenu>
+                                        <LinkList>
+                                            <LinkListItem header>
+                                                Header
+                                            </LinkListItem>
+                                        </LinkList>
+                                    </DropdownMenu>
+                                </UncontrolledDropdown>
+                            </NavItem>
+                            <NavItem>
+                                <UncontrolledDropdown nav inNavbar>
+                                    <DropdownToggle nav caret>
+                                        Megamenu 3
+                                    </DropdownToggle>
+                                    <DropdownMenu>
+                                        <LinkList>
+                                            <LinkListItem header>
+                                                Header
+                                            </LinkListItem>
+                                        </LinkList>
+                                    </DropdownMenu>
+                                </UncontrolledDropdown>
+                            </NavItem>
+                        </Nav>
+                    </Collapse>
+                </Navbar>
+            </section>
+        );
+    }
+}
+
+export default NavbarMegamenuExample;
