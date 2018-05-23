@@ -25,10 +25,12 @@ import {
 } from "../../src";
 
 import NavbarExample from "./NavbarExample";
+import NavbarOffcanvasExample from "./NavbarOffcanvasExample";
 import NavbarMegamenuExample from "./NavbarMegamenuExample";
 import NavbarInlineExample from "./NavbarInlineExample";
 
 import Esempi from "./Esempi.md";
+import Offcanvas from "./Offcanvas.md";
 import Dropdown from "./Dropdown.md";
 import Megamenu from "./Megamenu.md";
 import Inline from "./Inline.md";
@@ -38,6 +40,10 @@ const stories = storiesOf("Componenti/Navbar", module);
 
 // TODO update stories with new Offcanvas example
 stories.add("Esempi", withDocs(Esempi, () => <NavbarExample />));
+stories.add(
+    "Con Offcanvas",
+    withDocs(Offcanvas, () => <NavbarOffcanvasExample />)
+);
 stories.add(
     "Con Dropdown",
     withDocs(Dropdown, () => <NavbarExample dropdown />)
