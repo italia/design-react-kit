@@ -90,21 +90,23 @@ export {
     UncontrolledDropdown,
     UncontrolledNavDropdown,
     UncontrolledTooltip,
-    Util,
+    Util
 } from "reactstrap";
 
 export {
-    default as Autocomplete,
+    default as Autocomplete
 } from "./components/Autocomplete/Autocomplete";
 export { default as FormGroup } from "./components/FormGroup/FormGroup";
 export { default as LinkList } from "./components/LinkList/LinkList";
 export { default as LinkListItem } from "./components/LinkList/LinkListItem";
 export {
-    default as PasswordInput,
+    default as PasswordInput
 } from "./components/PasswordInput/PasswordInput";
 export {
-    default as PasswordMeter,
+    default as PasswordMeter
 } from "./components/PasswordMeter/PasswordMeter";
 export { default as Scrollspy } from "./components/Scrollspy/Scrollspy";
 export { default as Select } from "./components/Select/Select";
+export { default as Skiplink } from "./components/Skiplink/Skiplink";
+export { default as SkiplinkItem } from "./components/Skiplink/SkiplinkItem";
 export { default as Toggle } from "./components/Toggle/Toggle";
