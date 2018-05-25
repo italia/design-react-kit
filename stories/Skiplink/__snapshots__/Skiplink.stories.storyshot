@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Skiplink Esempi 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "border": "1px dashed #e5e5e5",
+        "boxSizing": "border-box",
+        "margin": "16px 0 16px 0",
+        "padding": "50px 35px",
+        "position": "relative",
+        "textAlign": "initial",
+        "transition": "background-color 0.2s",
+      }
+    }
+  >
+    <section
+      tabIndex="-1"
+    >
+      <div
+        id="#main"
+      />
+      <div
+        id="#footer"
+      />
+      <div
+        className="skiplinks"
+      >
+        <a
+          className="sr-only sr-only-focusable"
+        />
+        <a
+          className="sr-only sr-only-focusable"
+          href="#main"
+        >
+          Skip to main content
+        </a>
+        <a
+          className="sr-only sr-only-focusable"
+          href="#footer"
+        >
+          Skip to footer
+        </a>
+      </div>
+    </section>
+  </div>
+  <div
+    className="markdown-body"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Esempi.md",
+      }
+    }
+  />
+</div>
+`;

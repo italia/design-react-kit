@@ -1,5 +1,6 @@
 import React from "react";
 import { Skiplink, SkiplinkItem } from "../../src";
+import { envIs } from "../utils";
 
 class SkipLinkExample extends React.Component {
     constructor(props) {
@@ -10,7 +11,7 @@ class SkipLinkExample extends React.Component {
     componentDidMount() {
         // We focus the container here since it is hosted inside Storybook's iframe
         const container = this.container.current;
-        container.focus();
+        container && container.focus();
     }
 
     render() {

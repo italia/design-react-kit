@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withDocs, envIs } from "../utils";
+import { withDocs } from "../utils";
 
 import ScrollspyExample from "./ScrollspyExample";
 
