@@ -1,21 +1,15 @@
 import React from "react";
 import { Button, Collapse, Card, CardBody } from "../../src";
 
-class CollapseAccordionExample extends React.Component {
-    defaultState = {
-        collapseOpen1: false,
-        collapseOpen2: false,
-        collapseOpen3: false
-    };
-
+class CollapseGroupsExample extends React.Component {
     state = {
-        ...this.defaultState,
-        collapseOpen1: true
+        collapseOpen1: true,
+        collapseOpen2: true,
+        collapseOpen3: false,
     };
 
     toggle = id => {
         this.setState({
-            ...this.defaultState,
             [`collapseOpen${id}`]: !this.state[`collapseOpen${id}`]
         });
     };
@@ -24,7 +18,7 @@ class CollapseAccordionExample extends React.Component {
         const { collapseOpen1, collapseOpen2, collapseOpen3 } = this.state;
 
         return (
-            <div className="collapse-div">
+            <div className="collapse-div" role="tablist">
                 <div className="collapse-header">
                     <button
                         data-toggle="collapse"
@@ -32,10 +26,14 @@ class CollapseAccordionExample extends React.Component {
                         className={collapseOpen1 ? "" : "collapsed"}
                         onClick={() => this.toggle(1)}
                     >
-                        Accordion Group Item #1
+                        Collapsible Group Item #1
                     </button>
                 </div>
-                <div className={`collapse ${collapseOpen1 ? "show" : ""}`}>
+                <div
+                    className={`collapse ${collapseOpen1 ? "show" : ""}`}
+                    role="tabpanel"
+                    aria-labelledby="heading1"
+                >
                     <div className="collapse-body">
                         Anim pariatur cliche reprehenderit, enim eiusmod high
                         life accusamus terry richardson ad squid. 3 wolf moon
@@ -49,10 +47,14 @@ class CollapseAccordionExample extends React.Component {
                         className={collapseOpen2 ? "" : "collapsed"}
                         onClick={() => this.toggle(2)}
                     >
-                        Accordion Group Item #2
+                        Collapsible Group Item #2
                     </button>
                 </div>
-                <div className={`collapse ${collapseOpen2 ? "show" : ""}`}>
+                <div
+                    className={`collapse ${collapseOpen2 ? "show" : ""}`}
+                    role="tabpanel"
+                    aria-labelledby="heading2"
+                >
                     <div className="collapse-body">
                         Ad vegan excepteur butcher vice lomo. Leggings occaecat
                         craft beer farm-to-table, raw denim aesthetic synth
@@ -67,10 +69,14 @@ class CollapseAccordionExample extends React.Component {
                         className={collapseOpen3 ? "" : "collapsed"}
                         onClick={() => this.toggle(3)}
                     >
-                        Accordion Group Item #3
+                        Collapsible Group Item #3
                     </button>
                 </div>
-                <div className={`collapse ${collapseOpen3 ? "show" : ""}`}>
+                <div
+                    className={`collapse ${collapseOpen3 ? "show" : ""}`}
+                    role="tabpanel"
+                    aria-labelledby="heading3"
+                >
                     <div className="collapse-body">
                         Food truck quinoa nesciunt laborum eiusmod. Brunch 3
                         wolf moon tempor, sunt aliqua put a bird on it squid
@@ -84,4 +90,4 @@ class CollapseAccordionExample extends React.Component {
     }
 }
 
-export default CollapseAccordionExample;
+export default CollapseGroupsExample;
