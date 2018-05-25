@@ -36,7 +36,7 @@ class CheckboxGroupsExample extends Component {
               <Label for="checkbox4" check>
                 Checkbox selezionato
               </Label>
-              <FormText color="muted">
+              <FormText color="">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Maecenas molestie libero
               </FormText>
@@ -46,7 +46,7 @@ class CheckboxGroupsExample extends Component {
               <Label for="checkbox5" check>
                 Checkbox non selezionato
               </Label>
-              <FormText color="muted">
+              <FormText color="">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Maecenas molestie libero
               </FormText>
@@ -56,7 +56,7 @@ class CheckboxGroupsExample extends Component {
               <Label for="checkbox6" check>
                 Checkbox disabilitato non selezionato
               </Label>
-              <FormText color="muted">
+              <FormText color="">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Maecenas molestie libero
               </FormText>

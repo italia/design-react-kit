@@ -25,19 +25,6 @@ stories.add(
           Label di esempio
         </Label>
       </FormGroup>
-      <FormGroup check>
-        <Input name="gruppo1" type="radio" id="radio1" defaultChecked />
-        <Label check for="radio1">
-          Opzione 1
-        </Label>
-      </FormGroup>
-
-      <FormGroup check>
-        <Input name="gruppo1" type="radio" id="radio2" />
-        <Label check for="radio2">
-          Opzione 2
-        </Label>
-      </FormGroup>
     </Form>
   ))
 );
@@ -45,13 +32,13 @@ stories.add(
   "Inline",
   withDocs(Inline, () => (
     <Form>
-      <FormGroup check inline>
+        <FormGroup check inline>
         <Input id="checkbox1" type="checkbox" />
         <Label for="checkbox1" check>
           Checkbox non selezionato
         </Label>
       </FormGroup>
-      <FormGroup check inline>
+          <FormGroup check inline>
         <Input id="checkbox2" type="checkbox" defaultChecked />
         <Label for="checkbox2" check>
           Checkbox selezionato
