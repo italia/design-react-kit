@@ -36,7 +36,7 @@ class RadioGroupsExample extends Component {
               <Label for="radio3" check>
                 Opzione 1
               </Label>
-              <FormText color="muted">
+              <FormText color="">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Maecenas molestie libero
               </FormText>
@@ -46,7 +46,7 @@ class RadioGroupsExample extends Component {
               <Label for="radio4" check>
                 Opzione 2
               </Label>
-              <FormText color="muted">
+              <FormText color="">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Maecenas molestie libero
               </FormText>
@@ -56,7 +56,7 @@ class RadioGroupsExample extends Component {
               <Label for="radio5" check>
                 Opzione 3
               </Label>
-              <FormText color="muted">
+              <FormText color="">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Maecenas molestie libero
               </FormText>
