@@ -62,7 +62,6 @@ export {
     // Overridden below
     // FormGroup,
     FormText,
-    Input,
     InputGroup,
     InputGroupAddon,
     InputGroupButton,
@@ -97,6 +96,7 @@ export {
     default as Autocomplete
 } from "./components/Autocomplete/Autocomplete";
 export { default as FormGroup } from "./components/FormGroup/FormGroup";
+export { default as Input } from "./components/Input/Input";
 export { default as LinkList } from "./components/LinkList/LinkList";
 export { default as LinkListItem } from "./components/LinkList/LinkListItem";
 export {
