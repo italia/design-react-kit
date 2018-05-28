@@ -104,6 +104,7 @@ export { default as FormGroup } from "./components/FormGroup/FormGroup";
 export { default as Input } from "./components/Input/Input";
 export { default as LinkList } from "./components/LinkList/LinkList";
 export { default as LinkListItem } from "./components/LinkList/LinkListItem";
+export { default as Offcanvas } from "./components/Offcanvas/Offcanvas";
 export {
     default as PasswordInput
 } from "./components/PasswordInput/PasswordInput";
