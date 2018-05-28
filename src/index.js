@@ -92,6 +92,11 @@ export {
     Util
 } from "reactstrap";
 
+export { default as Accordion } from "./components/Accordion/Accordion";
+export {
+    default as AccordionHeader
+} from "./components/Accordion/AccordionHeader";
+export { default as AccordionBody } from "./components/Accordion/AccordionBody";
 export {
     default as Autocomplete
 } from "./components/Autocomplete/Autocomplete";
