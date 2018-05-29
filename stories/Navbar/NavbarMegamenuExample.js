@@ -43,21 +43,7 @@ class NavbarMegamenuExample extends React.Component {
                         <span className="it-list" />
                     </NavbarToggler>
 
-                    <Collapse
-                        isOpen={isOpen}
-                        navbar
-                        className="navbar-collapsable"
-                        // We need to override `navbar-collapsable` (needed for styles) rules
-                        // This can be improved and moved into a customization of `Collapse`
-                        style={
-                            isOpen
-                                ? {
-                                    position: "relative",
-                                    display: "block"
-                                }
-                                : {}
-                        }
-                    >
+                    <Collapse isOpen={isOpen} navbar>
                         <Nav navbar className="mt-0">
                             <NavItem active>
                                 <UncontrolledDropdown nav inNavbar>
