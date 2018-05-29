@@ -10,13 +10,13 @@ class TogglesExample extends Component {
       <Row>
         <Col sm="6">
           <FormGroup check className="m-3">
-            <Toggle label="Label dell'interruttore 1" disabled={disabled} />
+            <Toggle label="Label dell&apos;interruttore 1" disabled={disabled} />
           </FormGroup>
         </Col>
         <Col sm="6">
           <FormGroup check className="m-3">
             <Toggle
-              label={<span>Label dell'interruttore 2</span>}
+              label={<span>Label dell&apos;interruttore 2</span>}
               defaultChecked
               disabled={disabled}
             />

@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, select, boolean } from "@storybook/addon-knobs/react";
+import { checkA11y } from "@storybook/addon-a11y";
 import { withDocs } from "../utils";
 
 import {
@@ -10,7 +11,7 @@ import {
     Form,
     FormGroup,
     Input,
-    Label,
+    Label
 } from "../../src";
 import PageChangerExample from "./PageChangerExample";
 
@@ -27,6 +28,7 @@ import Total from "./Total.md";
 import EsempiInterattivi from "./EsempiInterattivi.md";
 
 const stories = storiesOf("Componenti/Pager", module);
+stories.addDecorator(checkA11y);
 
 stories.add(
     "Esempi",
@@ -171,6 +173,8 @@ stories.add(
     ))
 );
 const moreStories = storiesOf("Componenti/Pager/Funzioni aggiuntive", module);
+moreStories.addDecorator(checkA11y);
+
 moreStories.add(
     "More",
     withDocs(More, () => (
@@ -452,6 +456,7 @@ moreStories.add(
 );
 
 const knobsStories = storiesOf("Componenti/Pager", module);
+knobsStories.addDecorator(checkA11y);
 knobsStories.addDecorator(withKnobs);
 
 knobsStories.add(
@@ -465,7 +470,7 @@ knobsStories.add(
         let current = {};
         if (active) {
             current = {
-                "aria-current": "page",
+                "aria-current": "page"
             };
         }
         return (

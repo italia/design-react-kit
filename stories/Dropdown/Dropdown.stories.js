@@ -1,5 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
+import { checkA11y } from "@storybook/addon-a11y";
 import { withDocs } from "../utils";
 
 import {
@@ -8,7 +9,7 @@ import {
     DropdownItem,
     DropdownToggle,
     LinkList,
-    LinkListItem,
+    LinkListItem
 } from "../../src";
 
 import DropdownExample from "./DropdownExample";
@@ -27,6 +28,7 @@ import MenuIconLeft from "./MenuIconLeft.md";
 import MenuDark from "./MenuDark.md";
 
 const stories = storiesOf("Componenti/Dropdown", module);
+stories.addDecorator(checkA11y);
 
 stories.add("Esempi", withDocs(Esempi, () => <DropdownExample />));
 stories.add(
@@ -42,13 +44,16 @@ stories.add(
 stories.add("Link", withDocs(Link, () => <DropdownExample tag="span" />));
 
 const menuStories = storiesOf("Componenti/Dropdown/Dropdown menu", module);
+menuStories.addDecorator(checkA11y);
+
 menuStories.add(
-    "Menà voci attive",
+    "Menù voci attive",
     withDocs(MenuVociAttive, () => (
         <DropdownMenu
             isOpen
             className="d-block"
-            style={{ position: "relative" }}>
+            style={{ position: "relative" }}
+        >
             <LinkList>
                 <LinkListItem active>
                     <span>Azione 1</span>
@@ -69,7 +74,8 @@ menuStories.add(
         <DropdownMenu
             isOpen
             className="d-block"
-            style={{ position: "relative" }}>
+            style={{ position: "relative" }}
+        >
             <LinkList>
                 <LinkListItem>
                     <span>Azione 1</span>
@@ -90,7 +96,8 @@ menuStories.add(
         <DropdownMenu
             isOpen
             className="d-block"
-            style={{ position: "relative" }}>
+            style={{ position: "relative" }}
+        >
             <LinkList>
                 <LinkListItem header>Header</LinkListItem>
                 <LinkListItem>
@@ -116,7 +123,8 @@ menuStories.add(
         <DropdownMenu
             isOpen
             className="d-block"
-            style={{ position: "relative" }}>
+            style={{ position: "relative" }}
+        >
             <LinkList>
                 <LinkListItem size="large">
                     <span>Azione 1</span>
@@ -137,7 +145,8 @@ menuStories.add(
         <DropdownMenu
             isOpen
             className="d-block full-width"
-            style={{ position: "relative" }}>
+            style={{ position: "relative" }}
+        >
             <LinkList>
                 <LinkListItem size="large">
                     <span>Azione 1</span>
@@ -164,7 +173,8 @@ menuStories.add(
         <DropdownMenu
             isOpen
             className="d-block"
-            style={{ position: "relative" }}>
+            style={{ position: "relative" }}
+        >
             <LinkList>
                 <LinkListItem className="right-icon">
                     <span>Azione 1</span>
@@ -188,7 +198,8 @@ menuStories.add(
         <DropdownMenu
             isOpen
             className="d-block"
-            style={{ position: "relative" }}>
+            style={{ position: "relative" }}
+        >
             <LinkList>
                 <LinkListItem className="left-icon">
                     <i className="it-info left" />
@@ -213,7 +224,8 @@ menuStories.add(
         <DropdownMenu
             isOpen
             className="d-block dark"
-            style={{ position: "relative" }}>
+            style={{ position: "relative" }}
+        >
             <LinkList>
                 <LinkListItem header>Header</LinkListItem>
                 <LinkListItem active className="right-icon">

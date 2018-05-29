@@ -1,5 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
+import { checkA11y } from "@storybook/addon-a11y";
 import { withDocs } from "../utils";
 
 import CarouselExample from "./CarouselExample";
@@ -10,21 +11,22 @@ import ConIndicatori from "./ConIndicatori.md";
 import ConDidascalie from "./ConDidascalie.md";
 
 const stories = storiesOf("Componenti/Carousel", module);
+stories.addDecorator(checkA11y);
 
 stories.add("Solo diapositive", withDocs(Esempi, () => <CarouselExample />));
 stories.add(
-  "Con i controlli",
-  withDocs(ConControlli, () => <CarouselExample controls={true} />)
+    "Con i controlli",
+    withDocs(ConControlli, () => <CarouselExample controls={true} />)
 );
 stories.add(
-  "Con gli indicatori",
-  withDocs(ConIndicatori, () => (
-    <CarouselExample controls={true} indicators={true} />
-  ))
+    "Con gli indicatori",
+    withDocs(ConIndicatori, () => (
+        <CarouselExample controls={true} indicators={true} />
+    ))
 );
 stories.add(
-  "Con le didascalie",
-  withDocs(ConDidascalie, () => (
-    <CarouselExample controls={true} indicators={true} captions={true} />
-  ))
+    "Con le didascalie",
+    withDocs(ConDidascalie, () => (
+        <CarouselExample controls={true} indicators={true} captions={true} />
+    ))
 );

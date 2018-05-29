@@ -1,5 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
+import { checkA11y } from "@storybook/addon-a11y";
 import { withDocs } from "../utils";
 
 import CollapseExample from "./CollapseExample";
@@ -13,6 +14,7 @@ import Accordion from "./Accordion.md";
 import Innestati from "./Innestati.md";
 
 const stories = storiesOf("Componenti/Collapse", module);
+stories.addDecorator(checkA11y);
 
 stories.add("Esempi", withDocs(Esempi, () => <CollapseExample />));
 stories.add(
