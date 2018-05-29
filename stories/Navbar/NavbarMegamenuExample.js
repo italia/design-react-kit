@@ -60,7 +60,7 @@ class NavbarMegamenuExample extends React.Component {
                     >
                         <Nav navbar className="mt-0">
                             <NavItem active>
-                                <UncontrolledDropdown nav inNavbar>
+                                <UncontrolledDropdown tag="div" nav inNavbar>
                                     <DropdownToggle nav caret>
                                         Megamenu 1
                                     </DropdownToggle>
@@ -74,7 +74,7 @@ class NavbarMegamenuExample extends React.Component {
                                 </UncontrolledDropdown>
                             </NavItem>
                             <NavItem>
-                                <UncontrolledDropdown nav inNavbar>
+                                <UncontrolledDropdown tag="div" nav inNavbar>
                                     <DropdownToggle nav caret>
                                         Megamenu 2
                                     </DropdownToggle>
@@ -88,7 +88,7 @@ class NavbarMegamenuExample extends React.Component {
                                 </UncontrolledDropdown>
                             </NavItem>
                             <NavItem>
-                                <UncontrolledDropdown nav inNavbar>
+                                <UncontrolledDropdown tag="div" nav inNavbar>
                                     <DropdownToggle nav caret>
                                         Megamenu 3
                                     </DropdownToggle>

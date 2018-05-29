@@ -106,7 +106,6 @@ class Input extends Component {
   render() {
     const { getStyles, innerRef, isHidden, selectProps, ...rest } = this.props;
     const classNames = "autocomplete-input-container search-wrap";
-    console.log(this.props);
 
     return (
       <div className={classNames}>
