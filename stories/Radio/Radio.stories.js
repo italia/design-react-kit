@@ -20,88 +20,107 @@ stories.addDecorator(checkA11y);
 stories.add(
     "Esempi",
     withDocs(Esempi, () => (
-        <Form className="m-3">
-            <FormGroup check>
-                <Input name="gruppo1" type="radio" id="radio1" defaultChecked />
-                <Label check for="radio1">
-                    Opzione 1
-                </Label>
-            </FormGroup>
+        <fieldset>
+            <legend>Radio</legend>
+            <Form className="m-3">
+                <FormGroup check>
+                    <Input
+                        name="gruppo1"
+                        type="radio"
+                        id="radio1"
+                        defaultChecked
+                    />
+                    <Label check for="radio1">
+                        Opzione 1
+                    </Label>
+                </FormGroup>
 
-            <FormGroup check>
-                <Input name="gruppo1" type="radio" id="radio2" />
-                <Label check for="radio2">
-                    Opzione 2
-                </Label>
-            </FormGroup>
+                <FormGroup check>
+                    <Input name="gruppo1" type="radio" id="radio2" />
+                    <Label check for="radio2">
+                        Opzione 2
+                    </Label>
+                </FormGroup>
 
-            <FormGroup check>
-                <Input name="gruppo1" type="radio" id="radio3" />
-                <Label check for="radio3">
-                    Opzione 3
-                </Label>
-            </FormGroup>
-        </Form>
+                <FormGroup check>
+                    <Input name="gruppo1" type="radio" id="radio3" />
+                    <Label check for="radio3">
+                        Opzione 3
+                    </Label>
+                </FormGroup>
+            </Form>
+        </fieldset>
     ))
 );
 stories.add(
     "Inline",
     withDocs(Inline, () => (
-        <Form className="m-3">
-            <FormGroup check inline>
-                <Input name="gruppo1" type="radio" id="radio1" defaultChecked />
-                <Label check for="radio1">
-                    Opzione 1
-                </Label>
-            </FormGroup>
+        <fieldset>
+            <legend>Radio</legend>
+            <Form className="m-3">
+                <FormGroup check inline>
+                    <Input
+                        name="gruppo1"
+                        type="radio"
+                        id="radio1"
+                        defaultChecked
+                    />
+                    <Label check for="radio1">
+                        Opzione 1
+                    </Label>
+                </FormGroup>
 
-            <FormGroup check inline>
-                <Input name="gruppo1" type="radio" id="radio2" />
-                <Label check for="radio2">
-                    Opzione 2
-                </Label>
-            </FormGroup>
+                <FormGroup check inline>
+                    <Input name="gruppo1" type="radio" id="radio2" />
+                    <Label check for="radio2">
+                        Opzione 2
+                    </Label>
+                </FormGroup>
 
-            <FormGroup check inline>
-                <Input name="gruppo1" type="radio" id="radio3" />
-                <Label check for="radio3">
-                    Opzione 3
-                </Label>
-            </FormGroup>
-        </Form>
+                <FormGroup check inline>
+                    <Input name="gruppo1" type="radio" id="radio3" />
+                    <Label check for="radio3">
+                        Opzione 3
+                    </Label>
+                </FormGroup>
+            </Form>
+        </fieldset>
     ))
 );
 stories.add(
     "Disabilitati",
     withDocs(Disabilitati, () => (
-        <Form className="m-3">
-            <FormGroup check>
-                <Input
-                    name="gruppo1"
-                    type="radio"
-                    id="radio1"
-                    defaultChecked
-                    disabled
-                />
-                <Label check for="radio1">
-                    Opzione 1
-                </Label>
-            </FormGroup>
+        <fieldset>
+            <legend>Radio</legend>
+            <Form className="m-3">
+                <FormGroup check>
+                    <Input
+                        name="gruppo1"
+                        type="radio"
+                        id="radio1"
+                        defaultChecked
+                        disabled
+                    />
+                    <Label check for="radio1">
+                        Opzione 1
+                    </Label>
+                </FormGroup>
 
-            <FormGroup check>
-                <Input name="gruppo1" type="radio" id="radio2" disabled />
-                <Label check for="radio2">
-                    Opzione 2
-                </Label>
-            </FormGroup>
+                <FormGroup check>
+                    <Input name="gruppo1" type="radio" id="radio2" disabled />
+                    <Label check for="radio2">
+                        Opzione 2
+                    </Label>
+                </FormGroup>
 
-            <FormGroup check>
-                <Input name="gruppo1" type="radio" id="radio3" disabled />
-                <Label check for="radio3">
-                    Opzione 3
-                </Label>
-            </FormGroup>
-        </Form>
+                <FormGroup check>
+                    <Input name="gruppo1" type="radio" id="radio3" disabled />
+                    <Label check for="radio3">
+                        Opzione 3
+                    </Label>
+                </FormGroup>
+            </Form>
+        </fieldset>
     ))
 );
 stories.add(
@@ -139,13 +158,13 @@ knobsStories.add(
                 </FormGroup>
                 <FormGroup check inline={inline}>
                     <Input
-                        id="radio1"
+                        id="radio2"
                         type="radio"
                         checked={!checked}
                         disabled={disabled}
                         onChange={() => {}}
                     />
-                    <Label for="radio1" check>
+                    <Label for="radio2" check>
                         {label} inversa {!checked ? "Selezionato" : ""}{" "}
                         {disabled ? "Disabilitato" : ""}{" "}
                         {inline ? "Inline" : ""}

@@ -72,7 +72,11 @@ stories.add(
                         id="basic-addon1"
                     />
                 </InputGroupAddon>
-                <Input type="text" placeholder="Username" />
+                <Input
+                    type="text"
+                    placeholder="Username"
+                    aria-label="Username"
+                />
             </InputGroup>
             <FormGroup>
                 <Input type="text" name="text" id="exampleInputText" />
@@ -143,9 +147,9 @@ stories.add(
     withDocs(Dimensioni, () => (
         <section>
             <Form className="m-3">
-                <Input placeholder="lg" bsSize="lg" />
-                <Input placeholder="Input predefinito" />
-                <Input placeholder="sm" bsSize="sm" />
+                <Input placeholder="lg" bsSize="lg" aria-label="lg" />
+                <Input placeholder="Input predefinito" aria-label="Input" />
+                <Input placeholder="sm" bsSize="sm" aria-label="sm" />
             </Form>
 
             <Form className="m-3">
@@ -174,6 +178,7 @@ stories.add(
             <Input
                 type="text"
                 placeholder="Contenuto in sola lettura"
+                aria-label="Contenuto in sola lettura"
                 readOnly
             />
         </Form>
@@ -196,26 +201,38 @@ stories.add(
     "Checkbox e radio",
     withDocs(CheckboxRadio, () => (
         <Form className="m-3">
-            <FormGroup check>
-                <Input id="checkbox1" type="checkbox" />
-                <Label for="checkbox1" check>
-                    Checkbox di esempio
-                </Label>
-            </FormGroup>
+            <fieldset>
+                <legend>Checkbox</legend>
+                <FormGroup check>
+                    <Input id="checkbox1" type="checkbox" />
+                    <Label for="checkbox1" check>
+                        Checkbox di esempio
+                    </Label>
+                </FormGroup>
+            </fieldset>
 
-            <FormGroup check>
-                <Input name="gruppo1" type="radio" id="radio1" defaultChecked />
-                <Label check for="radio1">
-                    Radio di esempio 1
-                </Label>
-            </FormGroup>
+            <fieldset>
+                <legend>Radio</legend>
 
-            <FormGroup check>
-                <Input name="gruppo1" type="radio" id="radio2" />
-                <Label check for="radio2">
-                    Radio di esempio 2
-                </Label>
-            </FormGroup>
+                <FormGroup check>
+                    <Input
+                        name="gruppo1"
+                        type="radio"
+                        id="radio1"
+                        defaultChecked
+                    />
+                    <Label check for="radio1">
+                        Radio di esempio 1
+                    </Label>
+                </FormGroup>
+
+                <FormGroup check>
+                    <Input name="gruppo1" type="radio" id="radio2" />
+                    <Label check for="radio2">
+                        Radio di esempio 2
+                    </Label>
+                </FormGroup>
+            </fieldset>
         </Form>
     ))
 );
@@ -223,40 +240,46 @@ stories.add(
     "Inline",
     withDocs(Inline, () => (
         <section>
-            <Form className="m-3">
-                <FormGroup check inline>
-                    <Input id="checkbox1" type="checkbox" />
-                    <Label for="checkbox1" check>
-                        Checkbox non selezionato
-                    </Label>
-                </FormGroup>
-                <FormGroup check inline>
-                    <Input id="checkbox2" type="checkbox" defaultChecked />
-                    <Label for="checkbox2" check>
-                        Checkbox selezionato
-                    </Label>
-                </FormGroup>
-            </Form>
+            <fieldset>
+                <legend>Checkbox</legend>
+                <Form className="m-3">
+                    <FormGroup check inline>
+                        <Input id="checkbox1" type="checkbox" />
+                        <Label for="checkbox1" check>
+                            Checkbox non selezionato
+                        </Label>
+                    </FormGroup>
+                    <FormGroup check inline>
+                        <Input id="checkbox2" type="checkbox" defaultChecked />
+                        <Label for="checkbox2" check>
+                            Checkbox selezionato
+                        </Label>
+                    </FormGroup>
+                </Form>
+            </fieldset>
 
-            <Form className="m-3">
-                <FormGroup check inline>
-                    <Input
-                        name="gruppo1"
-                        type="radio"
-                        id="radio1"
-                        defaultChecked
-                    />
-                    <Label check for="radio1">
-                        Opzione 1
-                    </Label>
-                </FormGroup>
-                <FormGroup check inline>
-                    <Input name="gruppo1" type="radio" id="radio2" />
-                    <Label check for="radio2">
-                        Opzione 2
-                    </Label>
-                </FormGroup>
-            </Form>
+            <fieldset>
+                <legend>Radio</legend>
+                <Form className="m-3">
+                    <FormGroup check inline>
+                        <Input
+                            name="gruppo1"
+                            type="radio"
+                            id="radio1"
+                            defaultChecked
+                        />
+                        <Label check for="radio1">
+                            Opzione 1
+                        </Label>
+                    </FormGroup>
+                    <FormGroup check inline>
+                        <Input name="gruppo1" type="radio" id="radio2" />
+                        <Label check for="radio2">
+                            Opzione 2
+                        </Label>
+                    </FormGroup>
+                </Form>
+            </fieldset>
         </section>
     ))
 );
@@ -264,46 +287,57 @@ stories.add(
     "Disabilitato",
     withDocs(Disabilitato, () => (
         <section>
-            <Form className="m-3">
-                <FormGroup check>
-                    <Input disabled id="checkbox1" type="checkbox" />
-                    <Label for="checkbox1" check>
-                        Checkbox disabilitato non selezionato
-                    </Label>
-                </FormGroup>
-                <FormGroup check>
-                    <Input
-                        disabled
-                        id="checkbox2"
-                        type="checkbox"
-                        defaultChecked
-                    />
-                    <Label for="checkbox2" check>
-                        Checkbox disabilitato selezionato
-                    </Label>
-                </FormGroup>
-            </Form>
+            <fieldset>
+                <legend>Checkbox</legend>
+                <Form className="m-3">
+                    <FormGroup check>
+                        <Input disabled id="checkbox1" type="checkbox" />
+                        <Label for="checkbox1" check>
+                            Checkbox disabilitato non selezionato
+                        </Label>
+                    </FormGroup>
+                    <FormGroup check>
+                        <Input
+                            disabled
+                            id="checkbox2"
+                            type="checkbox"
+                            defaultChecked
+                        />
+                        <Label for="checkbox2" check>
+                            Checkbox disabilitato selezionato
+                        </Label>
+                    </FormGroup>
+                </Form>
+            </fieldset>
 
-            <Form className="m-3">
-                <FormGroup check>
-                    <Input
-                        disabled
-                        name="gruppo1"
-                        type="radio"
-                        id="radio1"
-                        defaultChecked
-                    />
-                    <Label check for="radio1">
-                        Opzione disabilitata selezionata
-                    </Label>
-                </FormGroup>
-                <FormGroup check>
-                    <Input disabled name="gruppo1" type="radio" id="radio2" />
-                    <Label check for="radio2">
-                        Opzione disabilitata non selezionata
-                    </Label>
-                </FormGroup>
-            </Form>
+            <fieldset>
+                <legend>Radio</legend>
+                <Form className="m-3">
+                    <FormGroup check>
+                        <Input
+                            disabled
+                            name="gruppo1"
+                            type="radio"
+                            id="radio1"
+                            defaultChecked
+                        />
+                        <Label check for="radio1">
+                            Opzione disabilitata selezionata
+                        </Label>
+                    </FormGroup>
+                    <FormGroup check>
+                        <Input
+                            disabled
+                            name="gruppo1"
+                            type="radio"
+                            id="radio2"
+                        />
+                        <Label check for="radio2">
+                            Opzione disabilitata non selezionata
+                        </Label>
+                    </FormGroup>
+                </Form>
+            </fieldset>
         </section>
     ))
 );

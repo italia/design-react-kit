@@ -106,6 +106,7 @@ class Input extends Component {
   render() {
     const { getStyles, innerRef, isHidden, selectProps, ...rest } = this.props;
     const classNames = "autocomplete-input-container search-wrap";
+    console.log(this.props);
 
     return (
       <div className={classNames}>
@@ -197,6 +198,7 @@ class AutocompleteComponent extends Component {
           options={options}
           components={this.components}
           inputValue={inputText}
+          aria-label={placeholder}
         />
         <label className={classNames} style={{ pointerEvents: "none" }}>
           {placeholder}

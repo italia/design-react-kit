@@ -33,11 +33,19 @@ stories.add(
         <div className="p-3">
             <InputGroup className="pb-3">
                 <InputGroupAddon addonType="prepend">@</InputGroupAddon>
-                <Input type="text" placeholder="Username" />
+                <Input
+                    type="text"
+                    placeholder="Username"
+                    aria-label="Username"
+                />
             </InputGroup>
 
             <InputGroup className="pb-3">
-                <Input type="text" placeholder="Mail utente" />
+                <Input
+                    type="text"
+                    placeholder="Mail utente"
+                    aria-label="Mail utente"
+                />
                 <InputGroupAddon addonType="append">
                     @esempio.it
                 </InputGroupAddon>
@@ -55,13 +63,13 @@ stories.add(
 
             <InputGroup className="pb-3">
                 <InputGroupAddon addonType="prepend">€</InputGroupAddon>
-                <Input type="number" />
+                <Input type="number" aria-label="€" />
                 <InputGroupAddon addonType="append">,00</InputGroupAddon>
             </InputGroup>
 
             <InputGroup>
                 <InputGroupAddon addonType="prepend">Textarea</InputGroupAddon>
-                <Input type="textarea" />
+                <Input type="textarea" aria-label="Textarea" />
             </InputGroup>
         </div>
     ))
@@ -74,21 +82,21 @@ stories.add(
                 <InputGroupAddon addonType="prepend">
                     Testo piccolo
                 </InputGroupAddon>
-                <Input type="text" />
+                <Input type="text" aria-label="Testo piccolo" />
             </InputGroup>
 
             <InputGroup className="mb-3">
                 <InputGroupAddon addonType="prepend">
                     Testo predefinito
                 </InputGroupAddon>
-                <Input type="text" />
+                <Input type="text" aria-label="Testo predefinito" />
             </InputGroup>
 
             <InputGroup size="lg">
                 <InputGroupAddon addonType="prepend">
                     Testo grande
                 </InputGroupAddon>
-                <Input type="text" />
+                <Input type="text" aria-label="Testo grande" />
             </InputGroup>
         </div>
     ))
@@ -100,19 +108,19 @@ stories.add(
             <InputGroup className="mb-3">
                 <InputGroupAddon addonType="prepend">
                     <InputGroup>
-                        <Input type="checkbox" />
+                        <Input type="checkbox" aria-label="Addon" />
                     </InputGroup>
                 </InputGroupAddon>
-                <Input type="text" />
+                <Input type="text" aria-label="Addon" />
             </InputGroup>
 
             <InputGroup>
                 <InputGroupAddon addonType="prepend">
                     <InputGroup>
-                        <Input type="radio" />
+                        <Input type="radio" aria-label="Addon" />
                     </InputGroup>
                 </InputGroupAddon>
-                <Input type="text" />
+                <Input type="text" aria-label="Addon" />
             </InputGroup>
         </div>
     ))
@@ -125,8 +133,8 @@ stories.add(
                 <InputGroupAddon addonType="prepend">
                     Nominativo
                 </InputGroupAddon>
-                <Input type="text" placeholder="Nome" />
-                <Input type="text" placeholder="Cognome" />
+                <Input type="text" placeholder="Nome" aria-label="Nome" />
+                <Input type="text" placeholder="Cognome" aria-label="Cognome" />
             </InputGroup>
         </div>
     ))
@@ -140,11 +148,11 @@ stories.add(
                     <InputGroupText>€</InputGroupText>
                     <InputGroupText>0,00</InputGroupText>
                 </InputGroupAddon>
-                <Input type="text" />
+                <Input type="text" aria-label="€" />
             </InputGroup>
 
             <InputGroup>
-                <Input type="text" />
+                <Input type="text" aria-label="€" />
                 <InputGroupAddon addonType="append">
                     <InputGroupText>€</InputGroupText>
                     <InputGroupText>0,00</InputGroupText>
@@ -161,11 +169,15 @@ stories.add(
                 <InputGroupAddon addonType="prepend">
                     <Button color="primary">Bottone</Button>
                 </InputGroupAddon>
-                <Input type="text" placeholder="" />
+                <Input type="text" placeholder="" aria-label="Bottone" />
             </InputGroup>
 
             <InputGroup className="input-group mb-3">
-                <Input type="text" placeholder="Contenitore" />
+                <Input
+                    type="text"
+                    placeholder="Contenitore"
+                    aria-label="Contenitore"
+                />
                 <InputGroupAddon addonType="append">
                     <Button color="primary">Bottone</Button>
                 </InputGroupAddon>
@@ -176,11 +188,15 @@ stories.add(
                     <Button color="primary">Bottone</Button>
                     <Button color="primary">Bottone</Button>
                 </InputGroupAddon>
-                <Input type="text" placeholder="" />
+                <Input type="text" placeholder="" aria-label="Bottone" />
             </InputGroup>
 
             <InputGroup className="input-group">
-                <Input type="text" placeholder="Contenitore" />
+                <Input
+                    type="text"
+                    placeholder="Contenitore"
+                    aria-label="Contenitore"
+                />
                 <InputGroupAddon addonType="append">
                     <Button color="primary">Bottone</Button>
                     <Button color="primary">Bottone</Button>
