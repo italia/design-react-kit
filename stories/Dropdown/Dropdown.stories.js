@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { checkA11y } from "@storybook/addon-a11y";
+import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
 import {
@@ -30,25 +31,72 @@ import MenuDark from "./MenuDark.md";
 const stories = storiesOf("Componenti/Dropdown", module);
 stories.addDecorator(checkA11y);
 
-stories.add("Esempi", withDocs(Esempi, () => <DropdownExample />));
+stories.add(
+    "Esempi",
+    withDocs(
+        Esempi,
+        withInfo({
+            propTables: [
+                Dropdown,
+                DropdownMenu,
+                DropdownItem,
+                DropdownToggle,
+                LinkList,
+                LinkListItem
+            ],
+            propTablesExclude: [DropdownExample]
+        })(() => <DropdownExample />)
+    )
+);
+
+const VarianteComponent = () => (
+    <section>
+        <DropdownButtonExample color="primary" />
+        <DropdownButtonExample color="secondary" />
+        <DropdownButtonExample color="danger" />
+    </section>
+);
 stories.add(
     "Variante Bottoni",
-    withDocs(VarianteBottoni, () => (
-        <section>
-            <DropdownButtonExample color="primary" />
-            <DropdownButtonExample color="secondary" />
-            <DropdownButtonExample color="danger" />
-        </section>
-    ))
+    withDocs(
+        VarianteBottoni,
+        withInfo({
+            propTables: [
+                Dropdown,
+                DropdownMenu,
+                DropdownItem,
+                DropdownToggle,
+                LinkList,
+                LinkListItem
+            ],
+            propTablesExclude: [DropdownButtonExample]
+        })(VarianteComponent)
+    )
 );
-stories.add("Link", withDocs(Link, () => <DropdownExample tag="span" />));
+
+stories.add(
+    "Link",
+    withDocs(
+        Link,
+        withInfo({
+            propTables: [
+                Dropdown,
+                DropdownMenu,
+                DropdownItem,
+                DropdownToggle,
+                LinkList,
+                LinkListItem
+            ],
+            propTablesExclude: [DropdownExample]
+        })(() => <DropdownExample tag="span" />)
+    )
+);
 
 const menuStories = storiesOf("Componenti/Dropdown/Dropdown menu", module);
 menuStories.addDecorator(checkA11y);
 
-menuStories.add(
-    "Menù voci attive",
-    withDocs(MenuVociAttive, () => (
+const MenuVociAttiveComponent = () => (
+    <div className="clearfix">
         <DropdownMenu
             isOpen
             className="d-block"
@@ -66,11 +114,15 @@ menuStories.add(
                 </LinkListItem>
             </LinkList>
         </DropdownMenu>
-    ))
+    </div>
 );
 menuStories.add(
-    "Menù voci disabilitate",
-    withDocs(MenuVociDisabilitate, () => (
+    "Menù voci attive",
+    withDocs(MenuVociAttive, withInfo()(MenuVociAttiveComponent))
+);
+
+const MenuVociDisabilitateComponent = () => (
+    <div className="clearfix">
         <DropdownMenu
             isOpen
             className="d-block"
@@ -88,11 +140,15 @@ menuStories.add(
                 </LinkListItem>
             </LinkList>
         </DropdownMenu>
-    ))
+    </div>
 );
 menuStories.add(
-    "Menù headers e separatori",
-    withDocs(MenuHeaderDivider, () => (
+    "Menù voci disabilitate",
+    withDocs(MenuVociDisabilitate, withInfo()(MenuVociDisabilitateComponent))
+);
+
+const MenuHeaderDividerComponent = () => (
+    <div className="clearfix">
         <DropdownMenu
             isOpen
             className="d-block"
@@ -115,11 +171,15 @@ menuStories.add(
                 </LinkListItem>
             </LinkList>
         </DropdownMenu>
-    ))
+    </div>
 );
 menuStories.add(
-    "Menu con voci large",
-    withDocs(MenuLarge, () => (
+    "Menù headers e separatori",
+    withDocs(MenuHeaderDivider, withInfo()(MenuHeaderDividerComponent))
+);
+
+const MenuLargeComponent = () => (
+    <div className="clearfix">
         <DropdownMenu
             isOpen
             className="d-block"
@@ -137,11 +197,15 @@ menuStories.add(
                 </LinkListItem>
             </LinkList>
         </DropdownMenu>
-    ))
+    </div>
 );
 menuStories.add(
-    "Menù full width",
-    withDocs(MenuFull, () => (
+    "Menu con voci large",
+    withDocs(MenuLarge, withInfo()(MenuLargeComponent))
+);
+
+const MenuFullComponent = () => (
+    <div className="clearfix">
         <DropdownMenu
             isOpen
             className="d-block full-width"
@@ -165,62 +229,73 @@ menuStories.add(
                 </LinkListItem>
             </LinkList>
         </DropdownMenu>
-    ))
+    </div>
+);
+menuStories.add(
+    "Menù full width",
+    withDocs(MenuFull, withInfo()(MenuFullComponent))
+);
+
+const MenuIconRightComponent = () => (
+    <div className="clearfix">
+        <DropdownMenu
+            isOpen
+            className="d-block"
+            style={{ position: "relative" }}
+        >
+            <LinkList>
+                <LinkListItem className="right-icon">
+                    <span>Azione 1</span>
+                    <i className="it-info right" />
+                </LinkListItem>
+                <LinkListItem className="right-icon">
+                    <span>Azione 2</span>
+                    <i className="it-info right" />
+                </LinkListItem>
+                <LinkListItem className="right-icon">
+                    <span>Azione 3</span>
+                    <i className="it-info right" />
+                </LinkListItem>
+            </LinkList>
+        </DropdownMenu>
+    </div>
 );
 menuStories.add(
     "Menù icona a destra",
-    withDocs(MenuIconRight, () => (
+    withDocs(MenuIconRight, withInfo()(MenuIconRightComponent))
+);
+
+const MenuIconLeftComponent = () => (
+    <div className="clearfix">
         <DropdownMenu
             isOpen
             className="d-block"
             style={{ position: "relative" }}
         >
             <LinkList>
-                <LinkListItem className="right-icon">
+                <LinkListItem className="left-icon">
+                    <i className="it-info left" />
                     <span>Azione 1</span>
-                    <i className="it-info right" />
                 </LinkListItem>
-                <LinkListItem className="right-icon">
+                <LinkListItem className="left-icon">
+                    <i className="it-info left" />
                     <span>Azione 2</span>
-                    <i className="it-info right" />
                 </LinkListItem>
-                <LinkListItem className="right-icon">
+                <LinkListItem className="left-icon">
+                    <i className="it-info left" />
                     <span>Azione 3</span>
-                    <i className="it-info right" />
                 </LinkListItem>
             </LinkList>
         </DropdownMenu>
-    ))
+    </div>
 );
 menuStories.add(
     "Menù icona a sinistra",
-    withDocs(MenuIconLeft, () => (
-        <DropdownMenu
-            isOpen
-            className="d-block"
-            style={{ position: "relative" }}
-        >
-            <LinkList>
-                <LinkListItem className="left-icon">
-                    <i className="it-info left" />
-                    <span>Azione 1</span>
-                </LinkListItem>
-                <LinkListItem className="left-icon">
-                    <i className="it-info left" />
-                    <span>Azione 2</span>
-                </LinkListItem>
-                <LinkListItem className="left-icon">
-                    <i className="it-info left" />
-                    <span>Azione 3</span>
-                </LinkListItem>
-            </LinkList>
-        </DropdownMenu>
-    ))
+    withDocs(MenuIconLeft, withInfo()(MenuIconLeftComponent))
 );
 
-menuStories.add(
-    "Menù dark",
-    withDocs(MenuDark, () => (
+const MenuDarkComponent = () => (
+    <div className="clearfix">
         <DropdownMenu
             isOpen
             className="d-block dark"
@@ -251,5 +326,6 @@ menuStories.add(
                 </LinkListItem>
             </LinkList>
         </DropdownMenu>
-    ))
+    </div>
 );
+menuStories.add("Menù dark", withDocs(MenuDark, withInfo()(MenuDarkComponent)));

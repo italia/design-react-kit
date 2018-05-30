@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, select, boolean } from "@storybook/addon-knobs/react";
 import { checkA11y } from "@storybook/addon-a11y";
+import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
 import { Alert, UncontrolledAlert } from "../../src";
@@ -17,83 +18,102 @@ import EsempiInterattivi from "./EsempiInterattivi.md";
 const stories = storiesOf("Componenti/Alert", module);
 stories.addDecorator(checkA11y);
 
-stories.add(
-    "Esempi",
-    withDocs(Esempi, () => (
-        <div>
-            <Alert color="success">
-                Questo è un alert di <em>success</em>!
-            </Alert>
-            <Alert color="danger">
-                Questo è un alert di <em>danger</em>!
-            </Alert>
-            <Alert color="warning">
-                Questo è un alert di <em>warning</em>!
-            </Alert>
-        </div>
-    ))
+const EsempiComponent = () => (
+    <div>
+        <Alert color="success">
+            Questo è un alert di <em>success</em>!
+        </Alert>
+        <Alert color="danger">
+            Questo è un alert di <em>danger</em>!
+        </Alert>
+        <Alert color="warning">
+            Questo è un alert di <em>warning</em>!
+        </Alert>
+    </div>
+);
+stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
+
+const LinkComponent = () => (
+    <Alert color="danger">
+        Questo è un alert con un esempio di{" "}
+        <a href="#" className="alert-link">
+            link
+        </a>{" "}
+        evidenziato.
+    </Alert>
 );
 stories.add(
     "Link evidenziato",
-    withDocs(LinkEvidenziato, () => (
-        <Alert color="danger">
-            Questo è un alert con un esempio di{" "}
-            <a href="#" className="alert-link">
-                link
-            </a>{" "}
-            evidenziato.
-        </Alert>
-    ))
+    withDocs(LinkEvidenziato, withInfo()(LinkComponent))
+);
+
+const ContenutoComponenet = () => (
+    <Alert>
+        <h4 className="alert-heading">Avviso di successo!</h4>
+        <p>
+            Stai leggendo questo importante messaggio di avviso di successo.
+            Questo testo di esempio sarà più a lungo in modo da poter vedere
+            come funzioni la spaziatura all&apos;interno di un avviso con questo
+            tipo di contenuto.
+        </p>
+        <hr />
+        <p className="mb-0">
+            Quando necessario, assicurarti di inserire le utilità di margine per
+            mantenere gli spazi equilibrati.
+        </p>
+    </Alert>
 );
 stories.add(
     "Contenuto aggiuntivo",
-    withDocs(ContenutoAggiuntivo, () => (
-        <Alert>
-            <h4 className="alert-heading">Avviso di successo!</h4>
-            <p>
-                Stai leggendo questo importante messaggio di avviso di successo.
-                Questo testo di esempio sarà più a lungo in modo da poter vedere
-                come funzioni la spaziatura all&apos;interno di un avviso con
-                questo tipo di contenuto.
-            </p>
-            <hr />
-            <p className="mb-0">
-                Quando necessario, assicurarti di inserire le utilità di margine
-                per mantenere gli spazi equilibrati.
-            </p>
-        </Alert>
-    ))
+    withDocs(ContenutoAggiuntivo, withInfo()(ContenutoComponenet))
 );
 
 const moreStories = storiesOf("Componenti/Alert/Chiusura", module);
 moreStories.addDecorator(checkA11y);
 
+const ChiusuraNonControllataComponent = () => (
+    <UncontrolledAlert color="warning">
+        <strong>Attenzione</strong> Alcuni campi inseriti sono da controllare.
+    </UncontrolledAlert>
+);
 moreStories.add(
     "Non controllata",
-    withDocs(Chiusura, () => (
-        <UncontrolledAlert color="warning">
-            <strong>Attenzione</strong> Alcuni campi inseriti sono da
-            controllare.
-        </UncontrolledAlert>
-    ))
+    withDocs(
+        Chiusura,
+        withInfo({
+            propTables: null
+        })(ChiusuraNonControllataComponent)
+    )
 );
-moreStories.add("Controllata", withDocs(Chiusura, () => <AlertExample />));
+
+moreStories.add(
+    "Controllata",
+    withDocs(
+        Chiusura,
+        withInfo({
+            propTables: [Alert],
+            propTablesExclude: [AlertExample],
+            // source: false
+        })(() => <AlertExample />)
+    )
+);
 
 const knobsStories = storiesOf("Componenti/Alert", module);
 knobsStories.addDecorator(checkA11y);
 knobsStories.addDecorator(withKnobs);
 
+const EsempiInterattiviComponent = () => {
+    const colors = ["success", "danger", "warning"];
+    const color = select("Variazioni", colors, colors[0]);
+    const open = boolean("Visible", true);
+
+    return (
+        <Alert color={color} isOpen={open}>
+            Questo è un alert di <em>{color}</em>!
+        </Alert>
+    );
+};
 knobsStories.add(
     "Esempi interattivi",
-    withDocs(EsempiInterattivi, () => {
-        const colors = ["success", "danger", "warning"];
-        const color = select("Variazioni", colors, colors[0]);
-        const open = boolean("Visible", true);
-
-        return (
-            <Alert color={color} isOpen={open}>
-                Questo è un alert di <em>{color}</em>!
-            </Alert>
-        );
-    })
+    withDocs(EsempiInterattivi, withInfo()(EsempiInterattiviComponent))
 );
