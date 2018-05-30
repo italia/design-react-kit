@@ -1,14 +1,16 @@
 import React from "react";
-import {storiesOf} from "@storybook/react";
-import {withDocs} from "../utils";
+import { storiesOf } from "@storybook/react";
+import { checkA11y } from "@storybook/addon-a11y";
+import { withDocs } from "../utils";
 
-import {Breadcrumb, BreadcrumbItem} from "../../src";
+import { Breadcrumb, BreadcrumbItem } from "../../src";
 
 import Esempi from "./Esempi.md";
 import Icone from "./Icone.md";
 import Background from "./Background.md";
 
 const stories = storiesOf("Componenti/Breadcrumb", module);
+stories.addDecorator(checkA11y);
 
 stories.add(
     "Esempi",

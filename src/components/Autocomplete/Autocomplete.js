@@ -61,7 +61,7 @@ class ValueContainer extends Component {
           return React.Children.map(children, child => {
             if (child === null) return;
 
-            const { isDisabled, ...rest } = child.props;
+            const { isDisabled, cx, ...rest } = child.props;
             switch (child.type) {
               case defaultComponents.Input:
               case components.Input:
@@ -197,6 +197,7 @@ class AutocompleteComponent extends Component {
           options={options}
           components={this.components}
           inputValue={inputText}
+          aria-label={placeholder}
         />
         <label className={classNames} style={{ pointerEvents: "none" }}>
           {placeholder}

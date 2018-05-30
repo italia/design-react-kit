@@ -211,6 +211,7 @@ const Placeholder = props => {
       type="text"
       className="select-placeholder dropdown select-dropdown"
       value={placeholder}
+      aria-label={placeholder}
       readOnly
       {...innerProps}
     />
@@ -336,7 +337,7 @@ class SelectComponent extends Component {
 
   render() {
     const { menuIsOpen, searchInput } = this.state;
-    const { options, isSearchable, disabled } = this.props;
+    const { options, isSearchable, disabled, placeholder } = this.props;
 
     return (
       <Select
@@ -354,6 +355,7 @@ class SelectComponent extends Component {
         toggleMenuIsOpen={this.toggleMenuIsOpen}
         updateSearchInput={this.updateSearchInput}
         components={this.components}
+        aria-label={placeholder}
       />
     );
   }

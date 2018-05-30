@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, select, boolean, text } from "@storybook/addon-knobs/react";
+import { checkA11y } from "@storybook/addon-a11y";
 import { withDocs } from "../utils";
 
 import {
@@ -9,7 +10,7 @@ import {
     Toggle,
     Input,
     Label,
-    FormGroup,
+    FormGroup
 } from "../../src";
 
 import LinkListCollapsibleExample from "./LinkListCollapsibleExample";
@@ -30,6 +31,7 @@ import Navigation from "./Navigation.md";
 import Collapsible from "./Collapsible.md";
 
 const stories = storiesOf("Componenti/LinkList", module);
+stories.addDecorator(checkA11y);
 
 stories.add(
     "Esempi",
@@ -146,6 +148,7 @@ stories.add(
 );
 
 const multilineStories = storiesOf("Componenti/LinkList/Multiline", module);
+multilineStories.addDecorator(checkA11y);
 
 multilineStories.add(
     "Esempi",
@@ -173,6 +176,7 @@ multilineStories.add(
 );
 
 const controlStories = storiesOf("Componenti/LinkList/Con controlli", module);
+multilineStories.addDecorator(checkA11y);
 
 controlStories.add(
     "Primary Action",
@@ -314,6 +318,7 @@ const navigationStories = storiesOf(
     "Componenti/LinkList/Nested navigation",
     module
 );
+navigationStories.addDecorator(checkA11y);
 
 navigationStories.add(
     "Fixed",
@@ -347,7 +352,5 @@ navigationStories.add(
 );
 navigationStories.add(
     "Collapsible",
-    withDocs(Collapsible, () => (
-        <LinkListCollapsibleExample />
-    ))
+    withDocs(Collapsible, () => <LinkListCollapsibleExample />)
 );

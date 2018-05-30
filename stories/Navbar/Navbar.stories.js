@@ -6,6 +6,7 @@ import {
     boolean,
     color
 } from "@storybook/addon-knobs/react";
+import { checkA11y } from "@storybook/addon-a11y";
 import { withDocs } from "../utils";
 
 import {
@@ -37,8 +38,8 @@ import Inline from "./Inline.md";
 import EsempiInterattivi from "./EsempiInterattivi.md";
 
 const stories = storiesOf("Componenti/Navbar", module);
+stories.addDecorator(checkA11y);
 
-// TODO update stories with new Offcanvas example
 stories.add("Esempi", withDocs(Esempi, () => <NavbarExample />));
 stories.add(
     "Con Offcanvas",
@@ -55,6 +56,7 @@ stories.add(
 stories.add("Inline Menù", withDocs(Inline, () => <NavbarInlineExample />));
 
 const knobsStories = storiesOf("Componenti/Navbar", module);
+knobsStories.addDecorator(checkA11y);
 knobsStories.addDecorator(withKnobs);
 
 knobsStories.add(

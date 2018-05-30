@@ -41,7 +41,7 @@ class FormInputFileExample extends Component {
         <FormGroup className="form-file">
           <Input type="file" id="file" onChange={this.onFileUpdate} />
           <Label for="file">
-            Esempio campo per l'upload di un singolo file
+            Esempio campo per l&apos;upload di un singolo file
           </Label>
           <span className="form-file-name">{this.state.fileName}</span>
         </FormGroup>
@@ -52,7 +52,7 @@ class FormInputFileExample extends Component {
             multiple
             onChange={this.onMultipleFileUpdate}
           />
-          <Label for="fileM">Esempio campo per l'upload multiplo di file</Label>
+          <Label for="fileM">Esempio campo per l&apos;upload multiplo di file</Label>
           <span className="form-file-name">{this.state.fileNames}</span>
         </FormGroup>
       </Form>

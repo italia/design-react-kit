@@ -49,11 +49,11 @@ class InputGroupDropdownExample extends React.Component {
               <DropdownItem>Another Action</DropdownItem>
             </DropdownMenu>
           </InputGroupButtonDropdown>
-          <Input type="text" />
+          <Input type="text" aria-label="Addon" />
         </InputGroup>
 
         <InputGroup>
-          <Input type="text" />
+          <Input type="text" aria-label="Addon" />
           <InputGroupButtonDropdown
             addonType="append"
             isOpen={this.state.splitButtonOpen}

@@ -94,19 +94,22 @@ class CarouselExample extends React.Component {
               key={item.src}
               onExiting={this.onExiting}
               onExited={this.onExited}
+
             >
-              <img src={item.src} alt={item.altText} />
-              {(() => {
-                if (captions) {
-                  return (
-                    <CarouselCaption
-                      captionText={item.caption}
-                      captionHeader={item.caption}
-                    />
-                  );
-                }
-                return null;
-              })()}
+                <div role="option">
+                    <img src={item.src} alt={item.altText} />
+                    {(() => {
+                        if (captions) {
+                            return (
+                                <CarouselCaption
+                                    captionText={item.caption}
+                                    captionHeader={item.caption}
+                                />
+                            );
+                        }
+                        return null;
+                    })()}
+                </div>
             </CarouselItem>
           );
         })}
