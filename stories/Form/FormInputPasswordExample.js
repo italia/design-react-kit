@@ -30,7 +30,7 @@ class FormInputPasswordExample extends Component {
         return (
             <Form>
                 <FormGroup>
-                    <Input id="input" />
+                    <Input id="input" type="password" />
                     <Label for="input">Password</Label>
                 </FormGroup>
                 <FormGroup>

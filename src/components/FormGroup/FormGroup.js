@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import { FormGroup, Input, Label } from "reactstrap";
+import { FormGroup as ReactStrapFormGroup, Input, Label } from "reactstrap";
 
 import PasswordInput from "../PasswordInput/PasswordInput";
 import Autocomplete from "../Autocomplete/Autocomplete";
 
-class EnhancedFormGroup extends Component {
+class FormGroup extends Component {
   state = {
     active: this.props.active || false,
     value: null
@@ -68,7 +68,7 @@ class EnhancedFormGroup extends Component {
     ].join(" ");
 
     return (
-      <FormGroup {...rest} className={classNames}>
+      <ReactStrapFormGroup {...rest} className={classNames}>
         {(() => {
           {
             return React.Children.map(children, child => {
@@ -118,13 +118,13 @@ class EnhancedFormGroup extends Component {
             });
           }
         })()}
-      </FormGroup>
+      </ReactStrapFormGroup>
     );
   }
 }
 
-EnhancedFormGroup.propTypes = {
+FormGroup.propTypes = {
   ...FormGroup.propTypes
 };
 
-export default EnhancedFormGroup;
+export default FormGroup;

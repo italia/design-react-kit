@@ -3,7 +3,7 @@
 
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import Select from "react-select";
+import { default as ReactSelect } from "react-select";
 
 const SelectContainer = props => {
   const { children, innerProps, selectProps } = props;
@@ -269,7 +269,7 @@ export const GroupHeading = (props: any) => {
   );
 };
 
-class SelectComponent extends Component {
+class Select extends Component {
   state = {
     menuIsOpen: false,
     searchInput: ""
@@ -340,7 +340,7 @@ class SelectComponent extends Component {
     const { options, isSearchable, disabled, placeholder } = this.props;
 
     return (
-      <Select
+      <ReactSelect
         {...this.props}
         ref={el => {
           this.container = el;
@@ -361,4 +361,4 @@ class SelectComponent extends Component {
   }
 }
 
-export default SelectComponent;
+export default Select;
