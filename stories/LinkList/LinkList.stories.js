@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, select, boolean, text } from "@storybook/addon-knobs/react";
 import { checkA11y } from "@storybook/addon-a11y";
+import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
 import {
@@ -10,7 +11,8 @@ import {
     Toggle,
     Input,
     Label,
-    FormGroup
+    FormGroup,
+    Collapse
 } from "../../src";
 
 import LinkListCollapsibleExample from "./LinkListCollapsibleExample";
@@ -33,285 +35,297 @@ import Collapsible from "./Collapsible.md";
 const stories = storiesOf("Componenti/LinkList", module);
 stories.addDecorator(checkA11y);
 
-stories.add(
-    "Esempi",
-    withDocs(Esempi, () => (
-        <LinkList>
-            <LinkListItem>
-                <span>Link list 1</span>
-            </LinkListItem>
-            <LinkListItem>
-                <span>Link list 2</span>
-            </LinkListItem>
-            <LinkListItem>
-                <span>Link list 3</span>
-            </LinkListItem>
-        </LinkList>
-    ))
+const EsempiComponent = () => (
+    <LinkList>
+        <LinkListItem>
+            <span>Link list 1</span>
+        </LinkListItem>
+        <LinkListItem>
+            <span>Link list 2</span>
+        </LinkListItem>
+        <LinkListItem>
+            <span>Link list 3</span>
+        </LinkListItem>
+    </LinkList>
+);
+stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
+
+const StatoAttivoComponent = () => (
+    <LinkList>
+        <LinkListItem>
+            <span>Link list 1</span>
+        </LinkListItem>
+        <LinkListItem active>
+            <span>Link list 2 active</span>
+        </LinkListItem>
+        <LinkListItem>
+            <span>Link list 3</span>
+        </LinkListItem>
+    </LinkList>
 );
 stories.add(
     "Stato Attivo",
-    withDocs(StatoAttivo, () => (
-        <LinkList>
-            <LinkListItem>
-                <span>Link list 1</span>
-            </LinkListItem>
-            <LinkListItem active>
-                <span>Link list 2 active</span>
-            </LinkListItem>
-            <LinkListItem>
-                <span>Link list 3</span>
-            </LinkListItem>
-        </LinkList>
-    ))
+    withDocs(StatoAttivo, withInfo()(StatoAttivoComponent))
+);
+
+const StatoDisabilitatoComponent = () => (
+    <LinkList>
+        <LinkListItem>
+            <span>Link list 1</span>
+        </LinkListItem>
+        <LinkListItem disabled>
+            <span>Link list 2 disabled</span>
+        </LinkListItem>
+        <LinkListItem>
+            <span>Link list 3</span>
+        </LinkListItem>
+    </LinkList>
 );
 stories.add(
     "Stato Disabilitato",
-    withDocs(StatoDisabilitato, () => (
-        <LinkList>
-            <LinkListItem>
-                <span>Link list 1</span>
-            </LinkListItem>
-            <LinkListItem disabled>
-                <span>Link list 2 disabled</span>
-            </LinkListItem>
-            <LinkListItem>
-                <span>Link list 3</span>
-            </LinkListItem>
-        </LinkList>
-    ))
+    withDocs(StatoDisabilitato, withInfo()(StatoDisabilitatoComponent))
 );
-stories.add(
-    "Header e Divider",
-    withDocs(HeaderDivider, () => (
-        <section>
-            <LinkList>
-                <LinkListItem header>Heading senza link</LinkListItem>
-                <LinkListItem>
-                    <span>Link list 1</span>
-                </LinkListItem>
-                <LinkListItem>
-                    <span>Link list 2</span>
-                </LinkListItem>
-                <LinkListItem>
-                    <span>Link list 3</span>
-                </LinkListItem>
-                <LinkListItem divider />
-                <LinkListItem>
-                    <span>Link list 4</span>
-                </LinkListItem>
-            </LinkList>
 
-            <LinkList>
-                <LinkListItem header href="#">
-                    Heading con link
-                </LinkListItem>
-                <LinkListItem>
-                    <span>Link list 1</span>
-                </LinkListItem>
-                <LinkListItem>
-                    <span>Link list 2</span>
-                </LinkListItem>
-                <LinkListItem>
-                    <span>Link list 3</span>
-                </LinkListItem>
-                <LinkListItem divider />
-                <LinkListItem>
-                    <span>Link list 4</span>
-                </LinkListItem>
-            </LinkList>
-        </section>
-    ))
-);
-stories.add(
-    "Sizing",
-    withDocs(Large, () => (
+const HeaderDividerComponent = () => (
+    <section>
         <LinkList>
-            <LinkListItem header href="#">
-                Heading
-            </LinkListItem>
-            <LinkListItem size="large">
+            <LinkListItem header>Heading senza link</LinkListItem>
+            <LinkListItem>
                 <span>Link list 1</span>
             </LinkListItem>
-            <LinkListItem size="large">
+            <LinkListItem>
                 <span>Link list 2</span>
             </LinkListItem>
-            <LinkListItem size="large">
+            <LinkListItem>
                 <span>Link list 3</span>
             </LinkListItem>
             <LinkListItem divider />
-            <LinkListItem size="large">
+            <LinkListItem>
                 <span>Link list 4</span>
             </LinkListItem>
         </LinkList>
-    ))
+
+        <LinkList>
+            <LinkListItem header href="#">
+                Heading con link
+            </LinkListItem>
+            <LinkListItem>
+                <span>Link list 1</span>
+            </LinkListItem>
+            <LinkListItem>
+                <span>Link list 2</span>
+            </LinkListItem>
+            <LinkListItem>
+                <span>Link list 3</span>
+            </LinkListItem>
+            <LinkListItem divider />
+            <LinkListItem>
+                <span>Link list 4</span>
+            </LinkListItem>
+        </LinkList>
+    </section>
 );
+stories.add(
+    "Header e Divider",
+    withDocs(HeaderDivider, withInfo()(HeaderDividerComponent))
+);
+
+const LargeComponent = () => (
+    <LinkList>
+        <LinkListItem header href="#">
+            Heading
+        </LinkListItem>
+        <LinkListItem size="large">
+            <span>Link list 1</span>
+        </LinkListItem>
+        <LinkListItem size="large">
+            <span>Link list 2</span>
+        </LinkListItem>
+        <LinkListItem size="large">
+            <span>Link list 3</span>
+        </LinkListItem>
+        <LinkListItem divider />
+        <LinkListItem size="large">
+            <span>Link list 4</span>
+        </LinkListItem>
+    </LinkList>
+);
+stories.add("Sizing", withDocs(Large, withInfo()(LargeComponent)));
 
 const multilineStories = storiesOf("Componenti/LinkList/Multiline", module);
 multilineStories.addDecorator(checkA11y);
 
+const MultilineComponent = () => (
+    <LinkList multiline>
+        <LinkListItem active className="right-icon">
+            <span>Link list 1 active</span>
+            <i className="it-chevron-right right" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
+        </LinkListItem>
+        <LinkListItem divider />
+        <LinkListItem className="right-icon">
+            <span>Link list 2</span>
+            <i className="it-chevron-right right" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
+        </LinkListItem>
+        <LinkListItem divider />
+        <LinkListItem disabled className="right-icon">
+            <span>Link list 3 disabled</span>
+            <i className="it-chevron-right right" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
+        </LinkListItem>
+    </LinkList>
+);
 multilineStories.add(
     "Esempi",
-    withDocs(Multiline, () => (
-        <LinkList multiline>
-            <LinkListItem active className="right-icon">
-                <span>Link list 1 active</span>
-                <i className="it-chevron-right right" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
-            </LinkListItem>
-            <LinkListItem divider />
-            <LinkListItem className="right-icon">
-                <span>Link list 2</span>
-                <i className="it-chevron-right right" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
-            </LinkListItem>
-            <LinkListItem divider />
-            <LinkListItem disabled className="right-icon">
-                <span>Link list 3 disabled</span>
-                <i className="it-chevron-right right" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
-            </LinkListItem>
-        </LinkList>
-    ))
+    withDocs(Multiline, withInfo()(MultilineComponent))
 );
 
 const controlStories = storiesOf("Componenti/LinkList/Con controlli", module);
 multilineStories.addDecorator(checkA11y);
 
+const ControlliComponent = () => (
+    <LinkList>
+        <LinkListItem active className="left-icon">
+            <i className="it-chevron-right left" aria-hidden="true" />
+            <span>Link list 1 active</span>
+        </LinkListItem>
+        <LinkListItem className="left-icon">
+            <i className="it-chevron-right left" aria-hidden="true" />
+            <span>Link list 2</span>
+        </LinkListItem>
+        <LinkListItem disabled className="left-icon">
+            <i className="it-chevron-right left" aria-hidden="true" />
+            <span>Link list 3 disabled</span>
+        </LinkListItem>
+    </LinkList>
+);
 controlStories.add(
     "Primary Action",
-    withDocs(Controlli, () => (
-        <LinkList>
-            <LinkListItem active className="left-icon">
-                <i className="it-chevron-right left" aria-hidden="true" />
-                <span>Link list 1 active</span>
-            </LinkListItem>
-            <LinkListItem className="left-icon">
-                <i className="it-chevron-right left" aria-hidden="true" />
-                <span>Link list 2</span>
-            </LinkListItem>
-            <LinkListItem disabled className="left-icon">
-                <i className="it-chevron-right left" aria-hidden="true" />
-                <span>Link list 3 disabled</span>
-            </LinkListItem>
-        </LinkList>
-    ))
+    withDocs(Controlli, withInfo()(ControlliComponent))
+);
+
+const ControlliSecondariComponent = () => (
+    <LinkList>
+        <LinkListItem active className="right-icon">
+            <span>Link list 1 active</span>
+            <i className="it-app right secondary" />
+        </LinkListItem>
+        <LinkListItem className="right-icon">
+            <span>Link list 2</span>
+            <i className="it-app right secondary" />
+        </LinkListItem>
+        <LinkListItem disabled className="right-icon">
+            <span>Link list 3 disabled</span>
+            <i className="it-app right secondary" />
+        </LinkListItem>
+    </LinkList>
 );
 controlStories.add(
     "Secondary Action",
-    withDocs(ControlliSecondari, () => (
-        <LinkList>
-            <LinkListItem active className="right-icon">
-                <span>Link list 1 active</span>
-                <i className="it-app right secondary" />
-            </LinkListItem>
-            <LinkListItem className="right-icon">
-                <span>Link list 2</span>
-                <i className="it-app right secondary" />
-            </LinkListItem>
-            <LinkListItem disabled className="right-icon">
-                <span>Link list 3 disabled</span>
-                <i className="it-app right secondary" />
-            </LinkListItem>
-        </LinkList>
-    ))
+    withDocs(ControlliSecondari, withInfo()(ControlliSecondariComponent))
+);
+
+const ControlliPrimariSecondariComponent = () => (
+    <LinkList>
+        <LinkListItem active className="left-icon right-icon">
+            <i className="it-favorite left" />
+            <span>Link list 1 active</span>
+            <i className="it-app right secondary" />
+        </LinkListItem>
+        <LinkListItem className="left-icon right-icon">
+            <i className="it-favorite left" />
+            <span>Link list 2</span>
+            <i className="it-app right secondary" />
+        </LinkListItem>
+        <LinkListItem disabled className="left-icon right-icon">
+            <i className="it-favorite left" />
+            <span>Link list 3 disabled</span>
+            <i className="it-app right secondary" />
+        </LinkListItem>
+    </LinkList>
 );
 controlStories.add(
     "Primary e Secondary Action",
-    withDocs(ControlliPrimariSecondari, () => (
-        <LinkList>
-            <LinkListItem active className="left-icon right-icon">
-                <i className="it-favorite left" />
-                <span>Link list 1 active</span>
-                <i className="it-app right secondary" />
-            </LinkListItem>
-            <LinkListItem className="left-icon right-icon">
-                <i className="it-favorite left" />
-                <span>Link list 2</span>
-                <i className="it-app right secondary" />
-            </LinkListItem>
-            <LinkListItem disabled className="left-icon right-icon">
-                <i className="it-favorite left" />
-                <span>Link list 3 disabled</span>
-                <i className="it-app right secondary" />
-            </LinkListItem>
-        </LinkList>
-    ))
+    withDocs(
+        ControlliPrimariSecondari,
+        withInfo()(ControlliPrimariSecondariComponent)
+    )
 );
-controlStories.add(
-    "Con avatar",
-    withDocs(Avatar, () => (
-        <LinkList>
-            <LinkListItem active className="avatar">
-                <img
-                    className="avatar"
-                    src="http://via.placeholder.com/40x40"
-                    title="avatartitle"
-                />
-                <span>Link list 1 active </span>
-            </LinkListItem>
-            <LinkListItem className="avatar">
-                <img
-                    className="avatar"
-                    src="http://via.placeholder.com/40x40"
-                    title="avatartitle"
-                />
-                <span>Link list 2 </span>
-            </LinkListItem>
-            <LinkListItem disabled className="avatar">
-                <img
-                    className="avatar"
-                    src="http://via.placeholder.com/40x40"
-                    title="avatartitle"
-                />
-                <span>Link list 3 disabled </span>
-            </LinkListItem>
-        </LinkList>
-    ))
+
+const AvatarComponent = () => (
+    <LinkList>
+        <LinkListItem active className="avatar">
+            <img
+                className="avatar"
+                src="http://via.placeholder.com/40x40"
+                title="avatartitle"
+            />
+            <span>Link list 1 active </span>
+        </LinkListItem>
+        <LinkListItem className="avatar">
+            <img
+                className="avatar"
+                src="http://via.placeholder.com/40x40"
+                title="avatartitle"
+            />
+            <span>Link list 2 </span>
+        </LinkListItem>
+        <LinkListItem disabled className="avatar">
+            <img
+                className="avatar"
+                src="http://via.placeholder.com/40x40"
+                title="avatartitle"
+            />
+            <span>Link list 3 disabled </span>
+        </LinkListItem>
+    </LinkList>
 );
-controlStories.add(
-    "Con switch",
-    withDocs(Switch, () => (
-        <LinkList>
-            <LinkListItem tag="div" active>
-                <Toggle label="Label per toggle" />
-            </LinkListItem>
-            <LinkListItem tag="div" disabled>
-                <Toggle disabled label="Label per disabled toggle" />
-            </LinkListItem>
-        </LinkList>
-    ))
+controlStories.add("Con avatar", withDocs(Avatar, withInfo()(AvatarComponent)));
+
+const SwitchComponent = () => (
+    <LinkList>
+        <LinkListItem tag="div" active>
+            <Toggle label="Label per toggle" />
+        </LinkListItem>
+        <LinkListItem tag="div" disabled>
+            <Toggle disabled label="Label per disabled toggle" />
+        </LinkListItem>
+    </LinkList>
+);
+controlStories.add("Con switch", withDocs(Switch, withInfo()(SwitchComponent)));
+
+const CheckboxComponent = () => (
+    <LinkList>
+        <LinkListItem tag="div" active>
+            <FormGroup check className="form-check-group">
+                <Input id="checkbox1" type="checkbox" defaultChecked />
+                <Label for="checkbox1" check>
+                    Checkbox selezionato
+                </Label>
+            </FormGroup>
+        </LinkListItem>
+        <LinkListItem tag="div" active>
+            <FormGroup check className="form-check-group">
+                <Input id="checkbox2" type="checkbox" />
+                <Label for="checkbox2" check>
+                    Checkbox non selezionato
+                </Label>
+            </FormGroup>
+        </LinkListItem>
+        <LinkListItem tag="div" disabled>
+            <FormGroup check className="form-check-group">
+                <Input id="checkbox3" type="checkbox" disabled />
+                <Label for="checkbox3" check>
+                    Checkbox disabilitato non selezionato
+                </Label>
+            </FormGroup>
+        </LinkListItem>
+    </LinkList>
 );
 controlStories.add(
     "Con checkbox",
-    withDocs(Checkbox, () => (
-        <LinkList>
-            <LinkListItem tag="div" active>
-                <FormGroup check className="form-check-group">
-                    <Input id="checkbox1" type="checkbox" defaultChecked />
-                    <Label for="checkbox1" check>
-                        Checkbox selezionato
-                    </Label>
-                </FormGroup>
-            </LinkListItem>
-            <LinkListItem tag="div" active>
-                <FormGroup check className="form-check-group">
-                    <Input id="checkbox2" type="checkbox" />
-                    <Label for="checkbox2" check>
-                        Checkbox non selezionato
-                    </Label>
-                </FormGroup>
-            </LinkListItem>
-            <LinkListItem tag="div" disabled>
-                <FormGroup check className="form-check-group">
-                    <Input id="checkbox3" type="checkbox" disabled />
-                    <Label for="checkbox3" check>
-                        Checkbox disabilitato non selezionato
-                    </Label>
-                </FormGroup>
-            </LinkListItem>
-        </LinkList>
-    ))
+    withDocs(Checkbox, withInfo()(CheckboxComponent))
 );
 
 const navigationStories = storiesOf(
@@ -320,37 +334,45 @@ const navigationStories = storiesOf(
 );
 navigationStories.addDecorator(checkA11y);
 
-navigationStories.add(
-    "Fixed",
-    withDocs(Navigation, () => (
-        <LinkList>
-            <LinkListItem size="medium" className="right-icon">
-                <span>Link list 1 </span>
-                <i className="it-favorite right" />
+const NavigationComponent = () => (
+    <LinkList>
+        <LinkListItem size="medium" className="right-icon">
+            <span>Link list 1 </span>
+            <i className="it-favorite right" />
+        </LinkListItem>
+        <LinkListItem size="medium" className="right-icon">
+            <span>Link list 2 </span>
+            <i className="it-favorite right" />
+        </LinkListItem>
+        <LinkList sublist>
+            <LinkListItem>
+                <span>Link list 4 </span>
             </LinkListItem>
-            <LinkListItem size="medium" className="right-icon">
-                <span>Link list 2 </span>
-                <i className="it-favorite right" />
+            <LinkListItem>
+                <span>Link list 5 </span>
             </LinkListItem>
-            <LinkList sublist>
-                <LinkListItem>
-                    <span>Link list 4 </span>
-                </LinkListItem>
-                <LinkListItem>
-                    <span>Link list 5 </span>
-                </LinkListItem>
-                <LinkListItem>
-                    <span>Link list 6 </span>
-                </LinkListItem>
-            </LinkList>
-            <LinkListItem size="medium" className="right-icon">
-                <span>Link list 3 </span>
-                <i className="it-favorite right" />
+            <LinkListItem>
+                <span>Link list 6 </span>
             </LinkListItem>
         </LinkList>
-    ))
+        <LinkListItem size="medium" className="right-icon">
+            <span>Link list 3 </span>
+            <i className="it-favorite right" />
+        </LinkListItem>
+    </LinkList>
 );
 navigationStories.add(
+    "Fixed",
+    withDocs(Navigation, withInfo()(NavigationComponent))
+);
+
+navigationStories.add(
     "Collapsible",
-    withDocs(Collapsible, () => <LinkListCollapsibleExample />)
+    withDocs(
+        Collapsible,
+        withInfo({
+            propTables: [Collapse, LinkList, LinkListItem],
+            propTablesExclude: [LinkListCollapsibleExample]
+        })(() => <LinkListCollapsibleExample />)
+    )
 );

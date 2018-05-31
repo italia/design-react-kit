@@ -1,7 +1,10 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { checkA11y } from "@storybook/addon-a11y";
+import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
+
+import { Scrollspy } from "../../src";
 
 import ScrollspyExample from "./ScrollspyExample";
 
@@ -12,7 +15,13 @@ stories.addDecorator(checkA11y);
 
 stories.add(
     "Esempi",
-    withDocs(Esempi, () => {
-        return <ScrollspyExample />;
-    })
+    withDocs(
+        Esempi,
+        withInfo({
+            propTables: [Scrollspy],
+            propTablesExclude: [ScrollspyExample]
+        })(() => {
+            return <ScrollspyExample />;
+        })
+    )
 );

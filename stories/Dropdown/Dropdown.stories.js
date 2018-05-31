@@ -97,11 +97,7 @@ menuStories.addDecorator(checkA11y);
 
 const MenuVociAttiveComponent = () => (
     <div className="clearfix">
-        <DropdownMenu
-            isOpen
-            className="d-block"
-            style={{ position: "relative" }}
-        >
+        <DropdownMenu isOpen className="d-block position-relative">
             <LinkList>
                 <LinkListItem active>
                     <span>Azione 1</span>
@@ -123,11 +119,7 @@ menuStories.add(
 
 const MenuVociDisabilitateComponent = () => (
     <div className="clearfix">
-        <DropdownMenu
-            isOpen
-            className="d-block"
-            style={{ position: "relative" }}
-        >
+        <DropdownMenu isOpen className="d-block position-relative">
             <LinkList>
                 <LinkListItem>
                     <span>Azione 1</span>
@@ -149,11 +141,7 @@ menuStories.add(
 
 const MenuHeaderDividerComponent = () => (
     <div className="clearfix">
-        <DropdownMenu
-            isOpen
-            className="d-block"
-            style={{ position: "relative" }}
-        >
+        <DropdownMenu isOpen className="d-block position-relative">
             <LinkList>
                 <LinkListItem header>Header</LinkListItem>
                 <LinkListItem>
@@ -180,11 +168,7 @@ menuStories.add(
 
 const MenuLargeComponent = () => (
     <div className="clearfix">
-        <DropdownMenu
-            isOpen
-            className="d-block"
-            style={{ position: "relative" }}
-        >
+        <DropdownMenu isOpen className="d-block position-relative">
             <LinkList>
                 <LinkListItem size="large">
                     <span>Azione 1</span>
@@ -206,11 +190,7 @@ menuStories.add(
 
 const MenuFullComponent = () => (
     <div className="clearfix">
-        <DropdownMenu
-            isOpen
-            className="d-block full-width"
-            style={{ position: "relative" }}
-        >
+        <DropdownMenu isOpen className="d-block full-width position-relative">
             <LinkList>
                 <LinkListItem size="large">
                     <span>Azione 1</span>
@@ -238,11 +218,7 @@ menuStories.add(
 
 const MenuIconRightComponent = () => (
     <div className="clearfix">
-        <DropdownMenu
-            isOpen
-            className="d-block"
-            style={{ position: "relative" }}
-        >
+        <DropdownMenu isOpen className="d-block position-relative">
             <LinkList>
                 <LinkListItem className="right-icon">
                     <span>Azione 1</span>
@@ -267,11 +243,7 @@ menuStories.add(
 
 const MenuIconLeftComponent = () => (
     <div className="clearfix">
-        <DropdownMenu
-            isOpen
-            className="d-block"
-            style={{ position: "relative" }}
-        >
+        <DropdownMenu isOpen className="d-block position-relative">
             <LinkList>
                 <LinkListItem className="left-icon">
                     <i className="it-info left" />
@@ -296,11 +268,7 @@ menuStories.add(
 
 const MenuDarkComponent = () => (
     <div className="clearfix">
-        <DropdownMenu
-            isOpen
-            className="d-block dark"
-            style={{ position: "relative" }}
-        >
+        <DropdownMenu isOpen className="d-block dark position-relative">
             <LinkList>
                 <LinkListItem header>Header</LinkListItem>
                 <LinkListItem active className="right-icon">

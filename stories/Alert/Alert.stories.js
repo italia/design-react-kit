@@ -47,7 +47,7 @@ stories.add(
     withDocs(LinkEvidenziato, withInfo()(LinkComponent))
 );
 
-const ContenutoComponenet = () => (
+const ContenutoComponent = () => (
     <Alert>
         <h4 className="alert-heading">Avviso di successo!</h4>
         <p>
@@ -65,7 +65,7 @@ const ContenutoComponenet = () => (
 );
 stories.add(
     "Contenuto aggiuntivo",
-    withDocs(ContenutoAggiuntivo, withInfo()(ContenutoComponenet))
+    withDocs(ContenutoAggiuntivo, withInfo()(ContenutoComponent))
 );
 
 const moreStories = storiesOf("Componenti/Alert/Chiusura", module);
