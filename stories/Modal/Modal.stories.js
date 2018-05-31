@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { checkA11y } from "@storybook/addon-a11y";
+import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from "../../src";
@@ -22,50 +23,111 @@ import Dimensioni from "./Dimensioni.md";
 const stories = storiesOf("Componenti/Modal", module);
 stories.addDecorator(checkA11y);
 
+const EsempiComponent = () => (
+    <div style={{ padding: "0px 290px" }}>
+        <div className="modal-content">
+            <ModalHeader>Titolo della modale</ModalHeader>
+            <ModalBody>Il testo del corpo della modale va qui.</ModalBody>
+            <ModalFooter>
+                <Button color="secondary">Chiudi</Button>
+                <Button color="primary">Salva le modifiche</Button>
+            </ModalFooter>
+        </div>
+    </div>
+);
 stories.add(
     "Esempi",
-    withDocs(Esempi, () => (
-        <div style={{ padding: "100px 300px" }}>
-            <div className="modal-content">
-                <ModalHeader>Titolo della modale</ModalHeader>
-                <ModalBody>Il testo del corpo della modale va qui.</ModalBody>
-                <ModalFooter>
-                    <Button color="secondary">Chiudi</Button>
-                    <Button color="primary">Salva le modifiche</Button>
-                </ModalFooter>
-            </div>
-        </div>
-    ))
+    withDocs(
+        Esempi,
+        withInfo({
+            propTablesExclude: [Button]
+        })(EsempiComponent)
+    )
+);
+
+const BottoneChiusuraComponent = () => (
+    <div className="p-3">
+        <Button className="close position-absolute">&times;</Button>
+    </div>
 );
 stories.add(
     "Bottone di chiusura",
-    withDocs(BottoneChiusura, () => (
-        <div style={{ position: "relative", padding: 10 }}>
-            <Button className="close" style={{ position: "absolute" }}>
-                &times;
-            </Button>
-        </div>
-    ))
+    withDocs(BottoneChiusura, withInfo()(BottoneChiusuraComponent))
 );
-stories.add("Demo", withDocs(Demo, () => <ModalExample />));
+
+stories.add(
+    "Demo",
+    withDocs(
+        Demo,
+        withInfo({
+            propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+            propTablesExclude: [ModalExample]
+        })(() => <ModalExample />)
+    )
+);
+
 stories.add(
     "Scroll di contenuti lunghi",
-    withDocs(ScrollContenutiLunghi, () => <ModalExample long />)
+    withDocs(
+        ScrollContenutiLunghi,
+        withInfo({
+            propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+            propTablesExclude: [ModalExample]
+        })(() => <ModalExample long />)
+    )
 );
+
 stories.add(
     "Centratura verticale",
-    withDocs(CentraturaVerticale, () => <ModalExample centered />)
+    withDocs(
+        CentraturaVerticale,
+        withInfo({
+            propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+            propTablesExclude: [ModalExample]
+        })(() => <ModalExample centered />)
+    )
 );
+
 stories.add(
     "Tooltip and popover",
-    withDocs(TooltipPopover, () => <ModalTooltipExample />)
+    withDocs(
+        TooltipPopover,
+        withInfo({
+            propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+            propTablesExclude: [ModalTooltipExample]
+        })(() => <ModalTooltipExample />)
+    )
 );
+
 stories.add(
     "Uso della griglia",
-    withDocs(UsoGriglia, () => <ModalGridExample />)
+    withDocs(
+        UsoGriglia,
+        withInfo({
+            propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+            propTablesExclude: [ModalGridExample]
+        })(() => <ModalGridExample />)
+    )
 );
+
 stories.add(
     "Rimuovere l’animazione",
-    withDocs(RimuovereAnimazione, () => <ModalExample fade={false} />)
+    withDocs(
+        RimuovereAnimazione,
+        withInfo({
+            propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+            propTablesExclude: [ModalExample]
+        })(() => <ModalExample fade={false} />)
+    )
 );
-stories.add("Dimensioni", withDocs(Dimensioni, () => <ModalExample sizing />));
+
+stories.add(
+    "Dimensioni",
+    withDocs(
+        Dimensioni,
+        withInfo({
+            propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+            propTablesExclude: [ModalExample]
+        })(() => <ModalExample sizing />)
+    )
+);

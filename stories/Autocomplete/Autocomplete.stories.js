@@ -4,6 +4,7 @@ import { checkA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
+import { Autocomplete } from "../../src/";
 import AutocompleteExample from "./AutocompleteExample";
 
 import InputAutocomplete from "./InputAutocomplete.md";
@@ -16,8 +17,7 @@ stories.add(
     withDocs(
         InputAutocomplete,
         withInfo({
-            propTables: null,
-            // source: false
+            propTablesExclude: [AutocompleteExample]
         })(() => <AutocompleteExample />)
     )
 );

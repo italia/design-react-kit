@@ -1,8 +1,10 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { checkA11y } from "@storybook/addon-a11y";
+import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
+import { Select } from "../../src";
 import SelectExample from "./SelectExample";
 
 import Esempi from "./Esempi.md";
@@ -13,13 +15,46 @@ import ConGruppiOpzioni from "./ConGruppiOpzioni.md";
 const stories = storiesOf("Componenti/Select", module);
 stories.addDecorator(checkA11y);
 
-stories.add("Esempi", withDocs(Esempi, () => <SelectExample />));
-stories.add("Multipla", withDocs(Multipla, () => <SelectExample multi />));
+stories.add(
+    "Esempi",
+    withDocs(
+        Esempi,
+        withInfo({
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample />)
+    )
+);
+
+stories.add(
+    "Multipla",
+    withDocs(
+        Multipla,
+        withInfo({
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample multi />)
+    )
+);
+
 stories.add(
     "Con ricerca",
-    withDocs(ConRicerca, () => <SelectExample search />)
+    withDocs(
+        ConRicerca,
+        withInfo({
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample search />)
+    )
 );
+
 stories.add(
     "Con gruppi di opzioni",
-    withDocs(ConGruppiOpzioni, () => <SelectExample group multi />)
+    withDocs(
+        ConGruppiOpzioni,
+        withInfo({
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample group multi />)
+    )
 );

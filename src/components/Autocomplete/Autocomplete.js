@@ -4,7 +4,8 @@ import React, { Component, Fragment } from "react";
 import ReactDOM from "react-dom";
 import {
     default as ReactSelect,
-    components as defaultComponents
+    components as defaultComponents,
+    SelectBase
 } from "react-select";
 
 const SelectContainer = props => {
@@ -138,12 +139,6 @@ class Autocomplete extends Component {
         inputText: ""
     };
 
-    static defaultProps = {
-        onInputChange: null,
-        onInputClear: null,
-        onChange: null
-    };
-
     components = {
         SelectContainer,
         Control,
@@ -226,3 +221,5 @@ class Autocomplete extends Component {
 }
 
 export default Autocomplete;
+
+Autocomplete.defaultProps = SelectBase.defaultProps;

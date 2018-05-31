@@ -1,9 +1,10 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { checkA11y } from "@storybook/addon-a11y";
+import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
-import { Nav, NavItem, NavLink } from "../../src";
+import { Nav, NavItem, NavLink, TabContent, TabPane } from "../../src";
 
 import TabExample from "./TabExample";
 import TabButtonExample from "./TabButtonExample";
@@ -18,58 +19,100 @@ import AllineamentoVerticale from "./AllineamentoVerticale.md";
 const stories = storiesOf("Componenti/Tab", module);
 stories.addDecorator(checkA11y);
 
-stories.add(
-    "Esempi",
-    withDocs(Esempi, () => (
-        <div>
-            <Nav tabs className="mb-3">
-                <NavItem>
-                    <NavLink href="#" active>
-                        Link Attivo
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#">Link</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#">Link</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#" disabled>
-                        Link disabilitato
-                    </NavLink>
-                </NavItem>
-            </Nav>
+const EsempiComponent = () => (
+    <div>
+        <Nav tabs className="mb-3">
+            <NavItem>
+                <NavLink href="#" active>
+                    Link Attivo
+                </NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink href="#">Link</NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink href="#">Link</NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink href="#" disabled>
+                    Link disabilitato
+                </NavLink>
+            </NavItem>
+        </Nav>
 
-            <Nav tabs className="nav-dark">
-                <NavItem>
-                    <NavLink href="#" active>
-                        Link Attivo
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#">Link</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#">Link</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#" disabled>
-                        Link disabilitato
-                    </NavLink>
-                </NavItem>
-            </Nav>
-        </div>
-    ))
+        <Nav tabs className="nav-dark">
+            <NavItem>
+                <NavLink href="#" active>
+                    Link Attivo
+                </NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink href="#">Link</NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink href="#">Link</NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink href="#" disabled>
+                    Link disabilitato
+                </NavLink>
+            </NavItem>
+        </Nav>
+    </div>
 );
-stories.add("Contenuto", withDocs(Contenuto, () => <TabExample text />));
-stories.add("Icone", withDocs(Icone, () => <TabExample icons />));
+stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
+
+stories.add(
+    "Contenuto",
+    withDocs(
+        Contenuto,
+        withInfo({
+            propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+            propTablesExclude: [TabExample]
+        })(() => <TabExample text />)
+    )
+);
+
+stories.add(
+    "Icone",
+    withDocs(
+        Icone,
+        withInfo({
+            propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+            propTablesExclude: [TabExample]
+        })(() => <TabExample icons />)
+    )
+);
+
 stories.add(
     "Icone e testo",
-    withDocs(IconeTesto, () => <TabExample text icons />)
+    withDocs(
+        IconeTesto,
+        withInfo({
+            propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+            propTablesExclude: [TabExample]
+        })(() => <TabExample text icons />)
+    )
 );
-stories.add("Tab a bottoni", withDocs(TabBottoni, () => <TabButtonExample />));
+
+stories.add(
+    "Tab a bottoni",
+    withDocs(
+        TabBottoni,
+        withInfo({
+            propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+            propTablesExclude: [TabButtonExample]
+        })(() => <TabButtonExample />)
+    )
+);
+
 stories.add(
     "Allineamento Verticale",
-    withDocs(AllineamentoVerticale, () => <TabButtonExample vertical />)
+    withDocs(
+        AllineamentoVerticale,
+        withInfo({
+            propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+            propTablesExclude: [TabButtonExample]
+        })(() => <TabButtonExample vertical />)
+    )
 );

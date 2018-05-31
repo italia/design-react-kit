@@ -79,7 +79,6 @@ export {
     TabContent,
     TabPane,
     Jumbotron,
-    Jumbotron as Hero,
     // Overridden below
     // Collapse,
     ListGroupItem,
@@ -103,6 +102,7 @@ export {
 } from "./components/Autocomplete/Autocomplete";
 export { default as Collapse } from "./components/Collapse/Collapse";
 export { default as FormGroup } from "./components/FormGroup/FormGroup";
+export { default as Hero } from "./components/Hero/Hero";
 export { default as Input } from "./components/Input/Input";
 export { default as LinkList } from "./components/LinkList/LinkList";
 export { default as LinkListItem } from "./components/LinkList/LinkListItem";
