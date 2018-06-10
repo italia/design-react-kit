@@ -1,7 +1,7 @@
 // Customized components for https://github.com/JedWatson/react-select/tree/v2/src
-// We might want to follow up on https://github.com/JedWatson/react-select/issues/2393
 
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import ReactDOM from "react-dom";
 import { default as ReactSelect, SelectBase } from "react-select";
 
@@ -22,6 +22,12 @@ const SelectContainer = props => {
     );
 };
 
+SelectContainer.propTypes = {
+    selectProps: PropTypes.shape(SelectPropTypes),
+    children: PropTypes.node,
+    innerProps: PropTypes.any
+};
+
 const Control = props => {
     const { children, innerProps } = props;
     const { innerRef, ...rest } = innerProps;
@@ -33,11 +39,16 @@ const Control = props => {
     );
 };
 
+Control.propTypes = {
+    children: PropTypes.node,
+    innerProps: PropTypes.any
+};
+
 class ValueContainer extends Component {
     shouldScrollBottom = false;
     node = null;
 
-    componentWillUpdate() {
+    UNSAFE_componentWillUpdate() {
         if (!this.props.isMulti) return;
 
         // scroll only if the user was already at the bottom
@@ -80,11 +91,17 @@ class ValueContainer extends Component {
                     handleInputClick={toggleMenuIsOpen}
                     placeholder={selected}
                 />
-                <Input selectProps={selectProps} />
             </div>
         );
     }
 }
+
+ValueContainer.propTypes = {
+    selectProps: PropTypes.shape(SelectPropTypes),
+    isMulti: PropTypes.bool,
+    hasValue: PropTypes.bool,
+    getValue: PropTypes.func
+};
 
 function getMenuPlacement({
     maxHeight,
@@ -132,30 +149,35 @@ class Menu extends Component {
         return { ...this.props, placement, maxHeight: this.state.maxHeight };
     };
 
-    styles = {
-        position: "absolute",
-        transform: "translate3d(0px, 45px, 0px)",
-        top: 0,
-        left: 0,
-        willChange: "transform",
-        display: "block"
-    };
-
     render() {
-        const { children, innerProps } = this.props;
+        const { children, innerProps, selectProps } = this.props;
 
         return (
             <div
-                className="select-menu dropdown-menu dropdown-menu-container"
-                style={this.styles}
+                className="select-menu dropdown-menu dropdown-menu-container d-block"
                 ref={this.getPlacement}
                 {...innerProps}
             >
+                <Input selectProps={selectProps} />
                 {children}
             </div>
         );
     }
 }
+
+Menu.propTypes = {
+    selectProps: PropTypes.shape(SelectPropTypes),
+    children: PropTypes.node,
+    innerProps: PropTypes.any,
+    /* Minimum height of the menu before flipping */
+    maxMenuHeight: PropTypes.number,
+    /* Maximum height of the menu before scrolling */
+    minMenuHeight: PropTypes.number,
+    /* Default placement of the menu in relation to the control. 'auto' will flip
+       when there isn't enough space below the control. */
+    menuPlacement: PropTypes.oneOf(["auto", "bottom", "top"]),
+    scrollMenuIntoView: PropTypes.bool
+};
 
 class MenuList extends Component {
     state = { inputValue: "" };
@@ -166,8 +188,6 @@ class MenuList extends Component {
         });
     };
 
-    styles = { marginTop: 45 };
-
     render() {
         const { children, innerProps, selectProps } = this.props;
         const { innerRef, ...rest } = innerProps;
@@ -177,7 +197,7 @@ class MenuList extends Component {
             <div className="select-menu-list dropdown-menu-list" {...rest}>
                 {(() => {
                     if (isSearchable) {
-                        return <div style={this.styles} />;
+                        return <div />;
                     }
                 })()}
                 <li className="select-menu-list-placeholder disabled">
@@ -188,6 +208,12 @@ class MenuList extends Component {
         );
     }
 }
+
+MenuList.propTypes = {
+    selectProps: PropTypes.shape(SelectPropTypes),
+    children: PropTypes.node,
+    innerProps: PropTypes.any
+};
 
 const Option = props => {
     const { children, isSelected, innerProps } = props;
@@ -202,6 +228,12 @@ const Option = props => {
             <span>{children}</span>
         </li>
     );
+};
+
+Option.propTypes = {
+    children: PropTypes.node,
+    innerProps: PropTypes.any,
+    isSelected: PropTypes.bool
 };
 
 const Placeholder = props => {
@@ -219,19 +251,16 @@ const Placeholder = props => {
     );
 };
 
-class Input extends Component {
-    styles = {
-        position: "absolute",
-        // zIndex for menu is 999
-        zIndex: 1000,
-        backgroundColor: "#FFF",
-        margin: "0 24px 0 6px",
-        top: 45,
-        right: 0,
-        left: 0,
-        height: 45
-    };
+Placeholder.propTypes = {
+    innerProps: PropTypes.any,
+    placeholder: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.arrayOf(PropTypes.string)
+    ]),
+    handleInputClick: PropTypes.func
+};
 
+class Input extends Component {
     render() {
         const { selectProps, handleBlur, ...props } = this.props;
         const {
@@ -246,10 +275,11 @@ class Input extends Component {
         const classNames = `select-input-container search-wrap ${shouldShow}`;
 
         return (
-            <div className={classNames} style={this.styles}>
+            <div className={classNames}>
                 <input
                     type="text"
                     {...props}
+                    autoFocus
                     className="select-input search"
                     placeholder={searchPlaceholder}
                     value={searchInput}
@@ -259,6 +289,11 @@ class Input extends Component {
         );
     }
 }
+
+Input.propTypes = {
+    selectProps: PropTypes.shape(SelectPropTypes),
+    handleBlur: PropTypes.func
+};
 
 export const GroupHeading = (props: any) => {
     const { children } = props;
@@ -363,5 +398,75 @@ class Select extends Component {
 }
 
 export default Select;
+
+export const SelectComponentsPropTypes = {
+    ClearIndicator: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    Control: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    DropdownIndicator: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    DownChevron: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    CrossIcon: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    Group: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    GroupHeading: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    IndicatorsContainer: PropTypes.oneOfType([
+        PropTypes.element,
+        PropTypes.func
+    ]),
+    IndicatorSeparator: PropTypes.oneOfType([
+        PropTypes.element,
+        PropTypes.func
+    ]),
+    Input: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    LoadingIndicator: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    Menu: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    MenuList: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    MenuPortal: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    LoadingMessage: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    NoOptionsMessage: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    MultiValue: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    MultiValueContainer: PropTypes.oneOfType([
+        PropTypes.element,
+        PropTypes.func
+    ]),
+    MultiValueLabel: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    MultiValueRemove: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    Option: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    Placeholder: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    SelectContainer: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    SingleValue: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    ValueContainer: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
+};
+
+export const SelectPropTypes = {
+    /* Bootstrap's input size */
+    bsSize: PropTypes.string,
+    /*
+      This complex object includes all the compositional components that are used
+      in `react-select`. If you wish to overwrite a component, pass in an object
+      with the appropriate namespace.
+
+      If you only wish to restyle a component, we recommend using the `styles` prop
+      instead. For a list of the components that can be passed in, and the shape
+      that will be passed to them
+    */
+    components: PropTypes.shape(SelectComponentsPropTypes),
+    disabled: PropTypes.bool,
+    /* The value of the search input */
+    inputValue: PropTypes.string,
+    /* Whether to enable search functionality */
+    isSearchable: PropTypes.bool,
+    /* Whether the menu is open */
+    menuIsOpen: PropTypes.bool,
+    /* Array of options that populate the select menu */
+    options: PropTypes.arrayOf(PropTypes.any),
+    onInputClear: PropTypes.func,
+    /* Placeholder text for the select value */
+    placeholder: PropTypes.string,
+    searchInput: PropTypes.string,
+    searchPlaceholder: PropTypes.string,
+    toggleMenuIsOpen: PropTypes.func,
+    updateSearchInput: PropTypes.func
+};
+
+Select.propTypes = SelectPropTypes;
 
 Select.defaultProps = SelectBase.defaultProps;

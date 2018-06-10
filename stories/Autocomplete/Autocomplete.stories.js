@@ -17,6 +17,7 @@ stories.add(
     withDocs(
         InputAutocomplete,
         withInfo({
+            propTables: [Autocomplete],
             propTablesExclude: [AutocompleteExample]
         })(() => <AutocompleteExample />)
     )

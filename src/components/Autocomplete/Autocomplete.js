@@ -1,12 +1,15 @@
 // Customized components for https://github.com/JedWatson/react-select/tree/v2/src
 
 import React, { Component, Fragment } from "react";
+import PropTypes from "prop-types";
 import ReactDOM from "react-dom";
 import {
     default as ReactSelect,
-    components as defaultComponents,
-    SelectBase
+    SelectBase,
+    components as defaultComponents
 } from "react-select";
+
+import { SelectPropTypes } from "../Select/Select";
 
 const SelectContainer = props => {
     const { children, innerProps, selectProps } = props;
@@ -22,6 +25,12 @@ const SelectContainer = props => {
             {children}
         </div>
     );
+};
+
+SelectContainer.propTypes = {
+    selectProps: PropTypes.shape(SelectPropTypes),
+    children: PropTypes.node,
+    innerProps: PropTypes.any
 };
 
 const Control = props => {
@@ -54,9 +63,15 @@ const Control = props => {
     );
 };
 
+Control.propTypes = {
+    selectProps: PropTypes.shape(SelectPropTypes),
+    children: PropTypes.node,
+    innerProps: PropTypes.any
+};
+
 class ValueContainer extends Component {
     render() {
-        const { selectProps, children } = this.props;
+        const { children, selectProps } = this.props;
         const { components } = selectProps;
 
         return (
@@ -87,6 +102,11 @@ class ValueContainer extends Component {
     }
 }
 
+ValueContainer.propTypes = {
+    selectProps: PropTypes.shape(SelectPropTypes),
+    children: PropTypes.node
+};
+
 class MenuList extends Component {
     styles = {
         top: -16
@@ -104,11 +124,21 @@ class MenuList extends Component {
     }
 }
 
+MenuList.propTypes = {
+    children: PropTypes.node,
+    innerProps: PropTypes.any
+};
+
 const Option = props => {
     const { children, innerProps } = props;
     const { innerRef, ...rest } = innerProps;
 
     return <li {...rest}>{children}</li>;
+};
+
+Option.propTypes = {
+    children: PropTypes.node,
+    innerProps: PropTypes.any
 };
 
 class Input extends Component {
@@ -133,6 +163,13 @@ class Input extends Component {
         );
     }
 }
+
+Input.propTypes = {
+    selectProps: PropTypes.shape(SelectPropTypes),
+    getStyles: PropTypes.func,
+    isHidden: PropTypes.bool,
+    innerRef: PropTypes.func
+};
 
 class Autocomplete extends Component {
     state = {
@@ -192,14 +229,20 @@ class Autocomplete extends Component {
 
     render() {
         const { inputText } = this.state;
-        const { options, placeholder, isLabelActive } = this.props;
+        const {
+            options,
+            placeholder,
+            isLabelActive,
+            menuIsOpen,
+            ...rest
+        } = this.props;
 
         const classNames = isLabelActive ? "active" : "";
 
         return (
             <Fragment>
                 <ReactSelect
-                    {...this.props}
+                    {...rest}
                     onInputChange={this.onInputChange}
                     onInputClear={this.onInputClear}
                     onChange={this.onChange}
@@ -221,5 +264,7 @@ class Autocomplete extends Component {
 }
 
 export default Autocomplete;
+
+Autocomplete.propTypes = SelectPropTypes;
 
 Autocomplete.defaultProps = SelectBase.defaultProps;
