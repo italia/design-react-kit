@@ -27,6 +27,17 @@ stories.add(
 );
 
 stories.add(
+    "Con valore predefinito",
+    withDocs(
+        Esempi,
+        withInfo({
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample defaultValue />)
+    )
+);
+
+stories.add(
     "Multipla",
     withDocs(
         Multipla,

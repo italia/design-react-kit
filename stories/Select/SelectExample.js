@@ -61,7 +61,7 @@ export const groupedOptions = [
 
 class SelectExample extends React.Component {
     render() {
-        const { multi, search, group, icon } = this.props;
+        const { multi, search, group, icon, defaultValue } = this.props;
         let options = defaultOptions;
         if (multi || search) {
             options = multiOptions;
@@ -69,6 +69,11 @@ class SelectExample extends React.Component {
             options = groupedOptions;
         } else if (icon) {
             options = iconOptions;
+        }
+
+        let option;
+        if (defaultValue) {
+            option = options[0];
         }
 
         return (
@@ -80,6 +85,7 @@ class SelectExample extends React.Component {
                 })()}
                 <Select
                     options={options}
+                    defaultValue={option}
                     placeholder={
                         multi
                             ? "Seleziona una o più regioni"
@@ -101,5 +107,6 @@ SelectExample.propTypes = {
     multi: PropTypes.bool,
     search: PropTypes.bool,
     group: PropTypes.bool,
-    icon: PropTypes.bool
+    icon: PropTypes.bool,
+    defaultValue: PropTypes.bool
 };
