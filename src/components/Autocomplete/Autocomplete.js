@@ -175,6 +175,13 @@ class Autocomplete extends Component {
         inputText: ""
     };
 
+    componentDidMount() {
+        const { defaultValue } = this.props;
+
+        // It has to trigger its `FormGroup` as well
+        defaultValue && this.onChange(defaultValue);
+    }
+
     components = {
         SelectContainer,
         Control,

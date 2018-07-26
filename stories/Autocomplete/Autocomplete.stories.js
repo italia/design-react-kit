@@ -22,3 +22,14 @@ stories.add(
         })(() => <AutocompleteExample />)
     )
 );
+
+stories.add(
+    "Input autocomplete con valore predefinito",
+    withDocs(
+        InputAutocomplete,
+        withInfo({
+            propTables: [Autocomplete],
+            propTablesExclude: [AutocompleteExample]
+        })(() => <AutocompleteExample defaultValue />)
+    )
+);
