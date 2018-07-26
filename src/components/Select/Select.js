@@ -190,11 +190,10 @@ class MenuList extends Component {
 
     render() {
         const { children, innerProps, selectProps } = this.props;
-        const { innerRef, ...rest } = innerProps;
         const { isSearchable, placeholder } = selectProps;
 
         return (
-            <div className="select-menu-list dropdown-menu-list" {...rest}>
+            <div className="select-menu-list dropdown-menu-list">
                 {(() => {
                     if (isSearchable) {
                         return <div />;
