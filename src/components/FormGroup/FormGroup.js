@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import { FormGroup as ReactStrapFormGroup, Input, Label } from "reactstrap";
+import { FormGroup as ReactStrapFormGroup } from "reactstrap";
+import { Input, Label } from "../../../src";
 
 import PasswordInput from "../PasswordInput/PasswordInput";
 import Autocomplete from "../Autocomplete/Autocomplete";
@@ -107,9 +108,30 @@ class FormGroup extends Component {
                                     });
                                     break;
                                 case Label:
-                                    const classNames = hasValue
-                                        ? [className, "active"].join(" ")
-                                        : className;
+                                    let hasChildValue = false;
+
+                                    React.Children.toArray(children)
+                                        .filter(child => {
+                                            switch (child.type) {
+                                                case Input:
+                                                case PasswordInput:
+                                                    return true;
+                                                    break;
+                                                default:
+                                                    return false;
+                                                    break;
+                                            }
+                                        })
+                                        .map(child => {
+                                            if (child.props.value) {
+                                                hasChildValue = true;
+                                            }
+                                        });
+
+                                    const classNames =
+                                        hasValue || hasChildValue
+                                            ? [className, "active"].join(" ")
+                                            : className;
 
                                     return React.cloneElement(child, {
                                         ...child.props,

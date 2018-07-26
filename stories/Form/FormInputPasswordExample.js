@@ -33,10 +33,12 @@ class FormInputPasswordExample extends Component {
                     <Input id="input" type="password" />
                     <Label for="input">Password</Label>
                 </FormGroup>
+
                 <FormGroup>
                     <PasswordInput id="exampleInputPassword" />
                     <Label for="exampleInputPassword">Password</Label>
                 </FormGroup>
+
                 <FormGroup>
                     <i className="ico-prefix it-lock" />
                     <PasswordInput
@@ -48,6 +50,7 @@ class FormInputPasswordExample extends Component {
                         inserisci almeno 8 caratteri e una lettera maiuscola
                     </FormText>
                 </FormGroup>
+
                 <FormGroup>
                     <PasswordInput
                         className="form-control form-password"
