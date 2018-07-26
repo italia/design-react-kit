@@ -114,10 +114,9 @@ class MenuList extends Component {
 
     render() {
         const { children, innerProps } = this.props;
-        const { innerRef, ...rest } = innerProps;
 
         return (
-            <ul className="autocomplete-wrap" style={this.styles} {...rest}>
+            <ul className="autocomplete-wrap" style={this.styles}>
                 {children}
             </ul>
         );

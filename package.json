@@ -70,7 +70,7 @@
 		"prettier": "^1.12.1",
 		"prop-types": "^15.6.1",
 		"react-scripts": "^1.1.4",
-		"react-select": "^2.0.0-beta.6",
+		"react-select": "^2.0.0",
 		"react-test-renderer": "^16.3.2",
 		"react-transition-group": "^2.3.1",
 		"reactstrap": "^6.0.1",
@@ -80,10 +80,10 @@
 		"rollup-plugin-node-resolve": "^3.3.0",
 		"storybook-readme": "^3.3.0"
 	},
-	"dependencies": {},
 	"peerDependencies": {
 		"react": "^16.0.0",
 		"react-dom": "^16.0.0"
 	},
-	"jest": {}
+	"jest": {},
+	"dependencies": {}
 }
