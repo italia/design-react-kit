@@ -1,82 +1,94 @@
-import React from "react";
+import React, { Component } from "react";
 import { withDocs as withDefaults } from "storybook-readme";
 
-export const StoryPreview = props => (
-  <div
-    style={{
-      position: "relative",
-      boxSizing: "border-box",
-      margin: "16px 0 16px 0",
-      padding: "50px 35px",
-      border: "1px dashed #e5e5e5",
-      backgroundColor: "#ffffff",
-      transition: "background-color 0.2s",
-      textAlign: "initial"
-    }}
-  >
-    {props.children}
-  </div>
-);
+export class StoryPreview extends Component {
+    componentDidMount() {
+        setTimeout(() => {
+            document.documentElement.scroll(0, 0);
+        }, 0);
+    }
+
+    render() {
+        const { children } = this.props;
+
+        return (
+            <div
+                style={{
+                    position: "relative",
+                    boxSizing: "border-box",
+                    margin: "16px 0 16px 0",
+                    padding: "50px 35px",
+                    border: "1px dashed #e5e5e5",
+                    backgroundColor: "#ffffff",
+                    transition: "background-color 0.2s",
+                    textAlign: "initial"
+                }}
+            >
+                {children}
+            </div>
+        );
+    }
+}
 
 export const FooterDocs = props => (
-  <div
-    style={{
-      borderTop: "1px dashed #e5e5e5",
-      paddingTop: "16px"
-    }}
-  >
-    {props.children}
-  </div>
+    <div
+        style={{
+            borderTop: "1px dashed #e5e5e5",
+            paddingTop: "16px"
+        }}
+    >
+        {props.children}
+    </div>
 );
 
 export const withDocs = withDefaults({
-  PreviewComponent: StoryPreview,
-  FooterComponent: FooterDocs
+    PreviewComponent: StoryPreview,
+    FooterComponent: FooterDocs
 });
 
 export const requireContextPolyfill = () => {
-  if (process.env.NODE_ENV === "test") {
-    const fs = require("fs");
-    const path = require("path");
+    if (process.env.NODE_ENV === "test") {
+        const fs = require("fs");
+        const path = require("path");
 
-    require.context = (
-      base = ".",
-      scanSubDirectories = false,
-      regularExpression = /\.js$/
-    ) => {
-      const files = {};
+        require.context = (
+            base = ".",
+            scanSubDirectories = false,
+            regularExpression = /\.js$/
+        ) => {
+            const files = {};
 
-      function readDirectory(directory) {
-        fs.readdirSync(directory).forEach(file => {
-          const fullPath = path.resolve(directory, file);
+            function readDirectory(directory) {
+                fs.readdirSync(directory).forEach(file => {
+                    const fullPath = path.resolve(directory, file);
 
-          if (fs.statSync(fullPath).isDirectory()) {
-            if (scanSubDirectories) readDirectory(fullPath);
+                    if (fs.statSync(fullPath).isDirectory()) {
+                        if (scanSubDirectories) readDirectory(fullPath);
 
-            return;
-          }
+                        return;
+                    }
 
-          if (!regularExpression.test(fullPath)) return;
+                    if (!regularExpression.test(fullPath)) return;
 
-          files[fullPath] = true;
-        });
-      }
+                    files[fullPath] = true;
+                });
+            }
 
-      readDirectory(path.resolve(__dirname, base));
+            readDirectory(path.resolve(__dirname, base));
 
-      function Module(file) {
-        return require(file);
-      }
+            function Module(file) {
+                return require(file);
+            }
 
-      Module.keys = () => Object.keys(files);
+            Module.keys = () => Object.keys(files);
 
-      return Module;
-    };
+            return Module;
+        };
 
-    return require.context;
-  }
+        return require.context;
+    }
 };
 
 export const envIs = env => {
-  return process.env.NODE_ENV === env;
+    return process.env.NODE_ENV === env;
 };
