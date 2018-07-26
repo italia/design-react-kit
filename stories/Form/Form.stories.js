@@ -75,17 +75,20 @@ const EsempiComponent = () => (
             </InputGroupAddon>
             <Input type="text" placeholder="Username" aria-label="Username" />
         </InputGroup>
+
         <FormGroup>
             <Input type="text" name="text" id="exampleInputText" />
             <Label for="exampleInputText">Nominativo</Label>
         </FormGroup>
+
         <FormGroup>
             <Input type="number" name="number" id="exampleInputNumber" />
             <Label for="exampleInputNumber">Numero partecipanti</Label>
         </FormGroup>
+
         <FormGroup>
             <Input type="email" name="email" id="exampleInputEmail1" />
-            <Label for="exampleInputEmail1">Numero partecipanti</Label>
+            <Label for="exampleInputEmail1">Email</Label>
             <FormText color="muted">
                 Non condivideremo mai la tua email con nessun altro.
             </FormText>
