@@ -16,38 +16,30 @@ import EsempiInterattivi from "./EsempiInterattivi.md";
 const stories = storiesOf("Componenti/Button", module);
 stories.addDecorator(checkA11y);
 
+const colors = [
+    "Primary",
+    "Secondary",
+    "Tertiary",
+    "Quaternary",
+    "Success",
+    "Info",
+    "Danger",
+    "Warning",
+    "Link"
+];
+
 const EsempiComponent = () => (
     <div>
-        <Button color="italia" className="mr-1">
-            Italia
-        </Button>
-        <Button color="primary" className="mr-1">
-            Primary
-        </Button>
-        <Button color="secondary" className="mr-1">
-            Secondary
-        </Button>
-        <Button color="tertiary" className="mr-1">
-            Tertiary
-        </Button>
-        <Button color="quaternary" className="mr-1">
-            Quaternary
-        </Button>
-        <Button color="success" className="mr-1">
-            Success
-        </Button>
-        <Button color="info" className="mr-1">
-            Info
-        </Button>
-        <Button color="danger" className="mr-1">
-            Danger
-        </Button>
-        <Button color="warning" className="mr-1">
-            Warning
-        </Button>
-        <Button color="link" className="mr-1">
-            Link
-        </Button>
+        {colors.map(color => (
+            <div key={color} className="mb-2">
+                <Button color={color.toLowerCase()} className="mr-1">
+                    {color}
+                </Button>
+                <Button outline color={color.toLowerCase()} className="mr-1">
+                    {color} Outline
+                </Button>
+            </div>
+        ))}
     </div>
 );
 stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
@@ -55,25 +47,32 @@ stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
 const DimensioniComponent = () => (
     <section>
         <div>
-            <Button color="primary" size="lg">
-                Large Button
-            </Button>{" "}
+            <Button color="primary" size="lg" className="mr-1">
+                Primary Large
+            </Button>
             <Button color="secondary" size="lg">
-                Large Button
+                Secondary Large
             </Button>
             <div className="mt-3" />
-            <Button color="primary" size="sm">
-                Small Button
-            </Button>{" "}
+            <Button color="primary" size="sm" className="mr-1">
+                Primary Small
+            </Button>
             <Button color="secondary" size="sm">
-                Small Button
+                Secondary Small
+            </Button>
+            <div className="mt-3" />
+            <Button color="primary" size="xs" className="mr-1">
+                Primary Mini
+            </Button>
+            <Button color="secondary" size="xs">
+                Secondary Mini
             </Button>
             <div className="mt-3" />
             <Button color="primary" block>
-                Block level button
+                Primary Block
             </Button>
             <Button color="secondary" block>
-                Block level button
+                Secondary Block
             </Button>
         </div>
     </section>
@@ -85,36 +84,16 @@ stories.add(
 
 const StatoAttivoComponent = () => (
     <div>
-        <Button color="italia" active className="mr-1">
-            Italia
-        </Button>
-        <Button color="primary" active className="mr-1">
-            Primary
-        </Button>
-        <Button color="secondary" active className="mr-1">
-            Secondary
-        </Button>
-        <Button color="tertiary" active className="mr-1">
-            Tertiary
-        </Button>
-        <Button color="quaternary" active className="mr-1">
-            Quaternary
-        </Button>
-        <Button color="success" active className="mr-1">
-            Success
-        </Button>
-        <Button color="info" active className="mr-1">
-            Info
-        </Button>
-        <Button color="danger" active className="mr-1">
-            Danger
-        </Button>
-        <Button color="warning" active className="mr-1">
-            Warning
-        </Button>
-        <Button color="link" active className="mr-1">
-            Link
-        </Button>
+        {colors.map(color => (
+            <Button
+                key={color}
+                color={color.toLowerCase()}
+                active
+                className="mr-1"
+            >
+                {color}
+            </Button>
+        ))}
     </div>
 );
 stories.add(
@@ -124,36 +103,16 @@ stories.add(
 
 const StatoDisabilitatoComponent = () => (
     <div>
-        <Button color="italia" disabled className="mr-1">
-            Italia
-        </Button>
-        <Button color="primary" disabled className="mr-1">
-            Primary
-        </Button>
-        <Button color="secondary" disabled className="mr-1">
-            Secondary
-        </Button>
-        <Button color="tertiary" disabled className="mr-1">
-            Tertiary
-        </Button>
-        <Button color="quaternary" disabled className="mr-1">
-            Quaternary
-        </Button>
-        <Button color="success" disabled className="mr-1">
-            Success
-        </Button>
-        <Button color="info" disabled className="mr-1">
-            Info
-        </Button>
-        <Button color="danger" disabled className="mr-1">
-            Danger
-        </Button>
-        <Button color="warning" disabled className="mr-1">
-            Warning
-        </Button>
-        <Button color="link" disabled className="mr-1">
-            Link
-        </Button>
+        {colors.map(color => (
+            <Button
+                key={color}
+                color={color.toLowerCase()}
+                disabled
+                className="mr-1"
+            >
+                {color}
+            </Button>
+        ))}
     </div>
 );
 stories.add(
@@ -167,7 +126,6 @@ knobsStories.addDecorator(withKnobs);
 
 const EsempiInterattiviComponent = () => {
     const colors = [
-        "italia",
         "primary",
         "secondary",
         "tertiary",
