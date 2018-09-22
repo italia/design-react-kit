@@ -99,10 +99,7 @@ const FlushComponent = () => (
 stories.add("Flush", withDocs(Flush, withInfo()(FlushComponent)));
 
 const ClassiContestualiComponent = () => (
-    <ListGroup className="w-50" flush>
-        <ListGroupItem action color="italia">
-            This is a italia list group item
-        </ListGroupItem>
+    <ListGroup className="w-50">
         <ListGroupItem action color="primary">
             This is a primary list group item
         </ListGroupItem>
@@ -132,26 +129,50 @@ stories.add(
 );
 
 const ConBadgeComponent = () => (
-    <ListGroup className="w-50">
-        <ListGroupItem className="justify-content-between">
-            Cras justo odio{" "}
-            <Badge color="primary" pill>
-                14
-            </Badge>
-        </ListGroupItem>
-        <ListGroupItem className="justify-content-between">
-            Dapibus ac facilisis in{" "}
-            <Badge color="primary" pill>
-                2
-            </Badge>
-        </ListGroupItem>
-        <ListGroupItem className="justify-content-between">
-            Morbi leo risus{" "}
-            <Badge color="primary" pill>
-                1
-            </Badge>
-        </ListGroupItem>
-    </ListGroup>
+    <div>
+        <h4>Con badge allineati a sinistra</h4>
+        <ListGroup className="w-50">
+            <ListGroupItem className="justify-content-between">
+                Cras justo odio{" "}
+                <Badge color="primary" pill>
+                    14
+                </Badge>
+            </ListGroupItem>
+            <ListGroupItem className="justify-content-between">
+                Dapibus ac facilisis in{" "}
+                <Badge color="primary" pill>
+                    2
+                </Badge>
+            </ListGroupItem>
+            <ListGroupItem className="justify-content-between">
+                Morbi leo risus{" "}
+                <Badge color="primary" pill>
+                    1
+                </Badge>
+            </ListGroupItem>
+        </ListGroup>
+        <h4>Con badge allineati a destra</h4>
+        <ListGroup className="w-50">
+            <ListGroupItem className="d-flex justify-content-between align-items-center">
+                Cras justo odio{" "}
+                <Badge color="primary" pill>
+                    14
+                </Badge>
+            </ListGroupItem>
+            <ListGroupItem className="d-flex justify-content-between align-items-center">
+                Dapibus ac facilisis in{" "}
+                <Badge color="primary" pill>
+                    2
+                </Badge>
+            </ListGroupItem>
+            <ListGroupItem className="d-flex justify-content-between align-items-center">
+                Morbi leo risus{" "}
+                <Badge color="primary" pill>
+                    1
+                </Badge>
+            </ListGroupItem>
+        </ListGroup>
+    </div>
 );
 stories.add("Con i badge", withDocs(ConBadge, withInfo()(ConBadgeComponent)));
 
