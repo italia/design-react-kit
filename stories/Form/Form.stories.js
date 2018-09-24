@@ -5,7 +5,6 @@ import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
 import {
-    Col,
     Row,
     Form,
     FormGroup,
@@ -130,6 +129,14 @@ stories.add(
     )
 );
 
+const SelectComponent = () => (
+    <div>
+        <h4>Select Classica</h4>
+        <SelectExample classic />
+        <h4>Select Personalizzata</h4>
+        <SelectExample />
+    </div>
+);
 stories.add(
     "Select",
     withDocs(
@@ -137,7 +144,7 @@ stories.add(
         withInfo({
             propTables: [],
             propTablesExclude: [SelectExample]
-        })(() => <SelectExample />)
+        })(SelectComponent)
     )
 );
 

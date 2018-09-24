@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import ReactDOM from "react-dom";
 import { default as ReactSelect, SelectBase } from "react-select";
+import { Input } from "./../../";
 
 const SelectContainer = props => {
     const { children, innerProps, selectProps } = props;
@@ -259,7 +260,7 @@ Placeholder.propTypes = {
     handleInputClick: PropTypes.func
 };
 
-class Input extends Component {
+class SelectInput extends Component {
     render() {
         const { selectProps, handleBlur, ...props } = this.props;
         const {
@@ -289,7 +290,7 @@ class Input extends Component {
     }
 }
 
-Input.propTypes = {
+SelectInput.propTypes = {
     selectProps: PropTypes.shape(SelectPropTypes),
     handleBlur: PropTypes.func
 };
@@ -370,11 +371,38 @@ class Select extends Component {
         return options;
     };
 
-    render() {
-        const { menuIsOpen, searchInput } = this.state;
-        const { options, isSearchable, disabled, placeholder } = this.props;
+    renderClassicSelect = () => {
+        const { options, placeholder, disabled } = this.props;
 
         return (
+            <Input type="select" disabled={disabled}>
+                {placeholder ? (
+                    <option value="" defaultValue>
+                        {placeholder}
+                    </option>
+                ) : null}
+                {options.map(option => (
+                    <option key={option.value} value={option.value}>
+                        {option.label}
+                    </option>
+                ))}
+            </Input>
+        );
+    };
+
+    render() {
+        const { menuIsOpen, searchInput } = this.state;
+        const {
+            options,
+            isSearchable,
+            disabled,
+            placeholder,
+            classic
+        } = this.props;
+
+        return classic ? (
+            this.renderClassicSelect()
+        ) : (
             <ReactSelect
                 {...this.props}
                 ref={el => {
@@ -414,7 +442,7 @@ export const SelectComponentsPropTypes = {
         PropTypes.element,
         PropTypes.func
     ]),
-    Input: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+    SelectInput: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
     LoadingIndicator: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
     Menu: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
     MenuList: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
@@ -463,7 +491,9 @@ export const SelectPropTypes = {
     searchInput: PropTypes.string,
     searchPlaceholder: PropTypes.string,
     toggleMenuIsOpen: PropTypes.func,
-    updateSearchInput: PropTypes.func
+    updateSearchInput: PropTypes.func,
+    /* Use the standard native select tag without additional functionalities */
+    classic: PropTypes.bool
 };
 
 Select.propTypes = SelectPropTypes;
