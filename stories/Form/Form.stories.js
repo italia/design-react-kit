@@ -660,9 +660,12 @@ const FormDisabilitatoComponent = () => (
                 </FormGroup>
 
                 <FormGroup className="mt-3">
-                    <select id="disabledSelect" className="form-control">
-                        <option>Disabled select</option>
-                    </select>
+                    <Select
+                        classic
+                        className="form-control"
+                        placeholder="Select disabilitato"
+                        disabled
+                    />
                     <Label for="disabledSelect">
                         Select default disabilitata
                     </Label>

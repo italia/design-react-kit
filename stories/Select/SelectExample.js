@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { FormGroup, InputGroup, Label, Select } from "../../src";
+import { FormGroup, Label, Select } from "../../src";
 
 const defaultOptions = [
     { value: "option-1", label: "Opzione 1" },

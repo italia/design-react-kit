@@ -159,7 +159,7 @@ class Menu extends Component {
                 ref={this.getPlacement}
                 {...innerProps}
             >
-                <Input selectProps={selectProps} />
+                <SelectInput selectProps={selectProps} />
                 {children}
             </div>
         );
@@ -372,10 +372,10 @@ class Select extends Component {
     };
 
     renderClassicSelect = () => {
-        const { options, placeholder, disabled } = this.props;
+        const { options, placeholder, disabled, ...attributes } = this.props;
 
         return (
-            <Input type="select" disabled={disabled}>
+            <Input {...attributes} type="select" disabled={disabled}>
                 {placeholder ? (
                     <option value="" defaultValue>
                         {placeholder}
