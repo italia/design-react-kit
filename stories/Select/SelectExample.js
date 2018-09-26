@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { FormGroup, InputGroup, Label, Select } from "../../src";
+import { FormGroup, Label, Select } from "../../src";
 
 const defaultOptions = [
     { value: "option-1", label: "Opzione 1" },
@@ -61,9 +61,16 @@ export const groupedOptions = [
 
 class SelectExample extends React.Component {
     render() {
-        const { multi, search, group, icon, defaultValue } = this.props;
+        const {
+            classic,
+            multi,
+            search,
+            group,
+            icon,
+            defaultValue
+        } = this.props;
         let options = defaultOptions;
-        if (multi || search) {
+        if ((multi || search) && !group && !icon) {
             options = multiOptions;
         } else if (group) {
             options = groupedOptions;
@@ -78,16 +85,13 @@ class SelectExample extends React.Component {
 
         return (
             <FormGroup className="m-3">
-                {(() => {
-                    if (icon) {
-                        return <i className="ico-prefix it-youtube" />;
-                    }
-                })()}
+                {icon ? <i className="ico-prefix it-youtube" /> : null}
                 <Select
+                    classic={classic}
                     options={options}
                     defaultValue={option}
                     placeholder={
-                        multi
+                        multi && !group
                             ? "Seleziona una o più regioni"
                             : "Seleziona una opzione"
                     }
@@ -104,6 +108,7 @@ class SelectExample extends React.Component {
 export default SelectExample;
 
 SelectExample.propTypes = {
+    classic: PropTypes.bool,
     multi: PropTypes.bool,
     search: PropTypes.bool,
     group: PropTypes.bool,

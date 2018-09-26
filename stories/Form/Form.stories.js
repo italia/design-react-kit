@@ -5,7 +5,6 @@ import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
 import {
-    Col,
     Row,
     Form,
     FormGroup,
@@ -130,6 +129,14 @@ stories.add(
     )
 );
 
+const SelectComponent = () => (
+    <div>
+        <h4>Select Classica</h4>
+        <SelectExample classic />
+        <h4>Select Personalizzata</h4>
+        <SelectExample />
+    </div>
+);
 stories.add(
     "Select",
     withDocs(
@@ -137,7 +144,7 @@ stories.add(
         withInfo({
             propTables: [],
             propTablesExclude: [SelectExample]
-        })(() => <SelectExample />)
+        })(SelectComponent)
     )
 );
 
@@ -642,7 +649,7 @@ const FormDisabilitatoComponent = () => (
                     <Label for="disabledTextInput">Input </Label>
                 </FormGroup>
 
-                <FormGroup>
+                <FormGroup className="mt-3">
                     <Select
                         id="exampleSelect"
                         placeholder="Scegli..."
@@ -652,25 +659,27 @@ const FormDisabilitatoComponent = () => (
                     <Label for="exampleSelect">Select disabilitata</Label>
                 </FormGroup>
 
-                <FormGroup>
-                    <select id="disabledSelect" className="form-control">
-                        <option>Disabled select</option>
-                    </select>
+                <FormGroup className="mt-3">
+                    <Select
+                        classic
+                        className="form-control"
+                        placeholder="Select disabilitato"
+                        disabled
+                    />
                     <Label for="disabledSelect">
                         Select default disabilitata
                     </Label>
                 </FormGroup>
 
-                <div className="form-check-label">
-                    <Input
-                        type="checkbox"
-                        id="disabledFieldsetCheck"
-                        disabled
-                    />
-                    <Label check for="disabledFieldsetCheck">
-                        Check disabilitato
-                    </Label>
+                <div className="form-row">
+                    <FormGroup check className="mt-3">
+                        <Input id="disabledFieldsetCheck" type="checkbox" />
+                        <Label for="disabledFieldsetCheck">
+                            Checkbox disabilitato
+                        </Label>
+                    </FormGroup>
                 </div>
+
                 <Button color="primary" className="mt-3" type="submit" disabled>
                     Submit
                 </Button>

@@ -38,7 +38,7 @@ stories.add(
         withInfo({
             propTables: [Carousel, CarouselItem, CarouselControl],
             propTablesExclude: [CarouselExample]
-        })(() => <CarouselExample controls={true} />)
+        })(() => <CarouselExample controls />)
     )
 );
 stories.add(
@@ -48,7 +48,7 @@ stories.add(
         withInfo({
             propTables: [Carousel, CarouselItem, CarouselIndicators],
             propTablesExclude: [CarouselExample]
-        })(() => <CarouselExample controls={true} indicators={true} />)
+        })(() => <CarouselExample controls indicators />)
     )
 );
 stories.add(
@@ -58,12 +58,6 @@ stories.add(
         withInfo({
             propTables: [Carousel, CarouselItem, CarouselCaption],
             propTablesExclude: [CarouselExample]
-        })(() => (
-            <CarouselExample
-                controls={true}
-                indicators={true}
-                captions={true}
-            />
-        ))
+        })(() => <CarouselExample controls indicators captions />)
     )
 );

@@ -49,7 +49,7 @@ stories.add(
             propTablesExclude: [Button]
         })(() => (
             <Button color="primary">
-                Notifiche <Badge color="secondary">4</Badge>
+                Notifiche <Badge color="light">4</Badge>
             </Button>
         ))
     )
@@ -57,14 +57,13 @@ stories.add(
 
 const VariazioniComponent = () => (
     <div>
-        <Badge color="italia">Italia</Badge>
-        <Badge color="primary">Primary</Badge>
-        <Badge color="secondary">Secondary</Badge>
-        <Badge color="tertiary">Tertiary</Badge>
-        <Badge color="quaternary">Quaternary</Badge>
-        <Badge color="success">Success</Badge>
-        <Badge color="danger">Danger</Badge>
-        <Badge color="warning">Warning</Badge>
+        <Badge className="mr-1" color="primary">Primary</Badge>
+        <Badge className="mr-1" color="secondary">Secondary</Badge>
+        <Badge className="mr-1" color="tertiary">Tertiary</Badge>
+        <Badge className="mr-1" color="quaternary">Quaternary</Badge>
+        <Badge className="mr-1" color="success">Success</Badge>
+        <Badge className="mr-1" color="danger">Danger</Badge>
+        <Badge className="mr-1" color="warning">Warning</Badge>
     </div>
 );
 stories.add(
@@ -74,28 +73,25 @@ stories.add(
 
 const ArrotondatiComponent = () => (
     <div>
-        <Badge color="italia" pill>
-            Italia
-        </Badge>
-        <Badge color="primary" pill>
+        <Badge className="mr-1" color="primary" pill>
             Primary
         </Badge>
-        <Badge color="secondary" pill>
+        <Badge className="mr-1" color="secondary" pill>
             Secondary
         </Badge>
-        <Badge color="tertiary" pill>
+        <Badge className="mr-1" color="tertiary" pill>
             Tertiary
         </Badge>
-        <Badge color="quaternary" pill>
+        <Badge className="mr-1" color="quaternary" pill>
             Quaternary
         </Badge>
-        <Badge color="success" pill>
+        <Badge className="mr-1" color="success" pill>
             Success
         </Badge>
-        <Badge color="danger" pill>
+        <Badge className="mr-1" color="danger" pill>
             Danger
         </Badge>
-        <Badge color="warning" pill>
+        <Badge className="mr-1" color="warning" pill>
             Warning
         </Badge>
     </div>
@@ -107,28 +103,25 @@ stories.add(
 
 const LinkComponent = () => (
     <div>
-        <Badge href="#" color="italia">
-            Italia
-        </Badge>
-        <Badge href="#" color="primary">
+        <Badge className="mr-1" href="#" color="primary">
             Primary
         </Badge>
-        <Badge href="#" color="secondary">
+        <Badge className="mr-1" href="#" color="secondary">
             Secondary
         </Badge>
-        <Badge href="#" color="tertiary">
+        <Badge className="mr-1" href="#" color="tertiary">
             Tertiary
         </Badge>
-        <Badge href="#" color="quaternary">
+        <Badge className="mr-1" href="#" color="quaternary">
             Quaternary
         </Badge>
-        <Badge href="#" color="success">
+        <Badge className="mr-1" href="#" color="success">
             Success
         </Badge>
-        <Badge href="#" color="danger">
+        <Badge className="mr-1" href="#" color="danger">
             Danger
         </Badge>
-        <Badge href="#" color="warning">
+        <Badge className="mr-1" href="#" color="warning">
             Warning
         </Badge>
     </div>
@@ -141,7 +134,6 @@ knobsStories.addDecorator(withKnobs);
 
 const EsempiInterattiviComponent = () => {
     const colors = [
-        "italia",
         "primary",
         "secondary",
         "tertiary",
@@ -155,7 +147,7 @@ const EsempiInterattiviComponent = () => {
     const label = text("Label", "");
 
     return (
-        <Badge color={color} pill={pill}>
+        <Badge className="mr-1" color={color} pill={pill}>
             {label}
             {color}
         </Badge>

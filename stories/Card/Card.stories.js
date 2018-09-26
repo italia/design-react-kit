@@ -18,13 +18,19 @@ import {
     CardGroup,
     CardDeck,
     CardColumns,
-    Button
+    Button,
+    ListGroup,
+    ListGroupItem,
+    Nav,
+    NavLink
 } from "../../src";
 
 import Esempi from "./Esempi.md";
 import Contenuti from "./Contenuti.md";
 import Immagini from "./Immagini.md";
 import HeaderFooter from "./HeaderFooter.md";
+import Elenchi from "./Elenchi.md";
+import NavBar from "./NavBar.md";
 import Gruppi from "./Gruppi.md";
 import Deck from "./Deck.md";
 import Colonne from "./Colonne.md";
@@ -61,18 +67,45 @@ stories.add(
 );
 
 const ContenutiComponent = () => (
-    <Card className="w-50">
-        <CardBody>
-            <CardTitle>Titolo card</CardTitle>
-            <CardSubtitle>Sottotitolo card</CardSubtitle>
-            <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </CardText>
-            <CardLink href="#">Card Link</CardLink>
-            <CardLink href="#">Altro Link</CardLink>
-        </CardBody>
-    </Card>
+    <div>
+        <h4>Card con solo Body</h4>
+        <Card className="w-50">
+            <CardBody>
+                <CardText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua
+                </CardText>
+            </CardBody>
+        </Card>
+        <hr />
+        <h4>Card con Titolo e Body</h4>
+        <Card className="w-50">
+            <CardBody>
+                <CardTitle>Titolo card</CardTitle>
+                <CardText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua
+                </CardText>
+            </CardBody>
+        </Card>
+        <hr />
+        <h4>Card con Titolo, Sottotitolo, Body e Link</h4>
+        <Card className="w-50">
+            <CardBody>
+                <CardTitle>Titolo card</CardTitle>
+                <CardSubtitle>Sottotitolo card</CardSubtitle>
+                <CardText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua
+                </CardText>
+                <CardLink href="#">Card Link</CardLink>
+                <CardLink href="#">Altro Link</CardLink>
+            </CardBody>
+        </Card>
+    </div>
 );
 stories.add("Contenuti", withDocs(Contenuti, withInfo()(ContenutiComponent)));
 
@@ -134,10 +167,81 @@ const HeaderFooterComponent = () => (
 );
 stories.add(
     "Header e Footer",
-    withDocs(HeaderFooter, withInfo({
-        propTablesExclude: [Button]
-    })(HeaderFooterComponent))
+    withDocs(
+        HeaderFooter,
+        withInfo({
+            propTablesExclude: [Button]
+        })(HeaderFooterComponent)
+    )
 );
+
+const ElenchiComponent = () => (
+    <Card className="w-50">
+        <CardBody>
+            <CardTitle>Titolo card</CardTitle>
+            <CardText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </CardText>
+        </CardBody>
+        <ListGroup flush>
+            <ListGroupItem>Cras justo odio</ListGroupItem>
+            <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
+            <ListGroupItem>Vestibulum at eros</ListGroupItem>
+        </ListGroup>
+    </Card>
+);
+stories.add("Elenchi", withDocs(Elenchi, withInfo()(ElenchiComponent)));
+
+const NavBarComponent = () => (
+    <div>
+        <h4>Card con Menù a tab</h4>
+        <Card>
+            <CardHeader>
+                <Nav tabs card>
+                    <NavLink active href="#">
+                        Link Attivo
+                    </NavLink>
+                    <NavLink href="#">Link</NavLink>
+                    <NavLink disabled href="#">
+                        Link Disabilitato
+                    </NavLink>
+                </Nav>
+            </CardHeader>
+            <CardBody>
+                <CardTitle>Titolo card</CardTitle>
+                <CardText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                </CardText>
+            </CardBody>
+        </Card>
+        <h4 className="mt-5">Card con Menù a bottoni</h4>
+        <Card>
+            <CardHeader>
+                <Nav pills card>
+                    <NavLink active href="#">
+                        Link Attivo
+                    </NavLink>
+                    <NavLink href="#">Link</NavLink>
+                    <NavLink disabled href="#">
+                        Link Disabilitato
+                    </NavLink>
+                </Nav>
+            </CardHeader>
+            <CardBody>
+                <CardTitle>Titolo card</CardTitle>
+                <CardText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                </CardText>
+            </CardBody>
+        </Card>
+    </div>
+);
+stories.add("Menù", withDocs(NavBar, withInfo()(NavBarComponent)));
 
 const GruppiComponent = () => (
     <CardGroup>
