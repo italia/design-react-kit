@@ -69,11 +69,6 @@ export {
     InputGroupText,
     Label,
     Media,
-    // Avoid breaking changes until next major release
-    Pagination,
-    PaginationItem,
-    PaginationLink,
-    Pagination as Pager,
     PaginationItem as PagerItem,
     PaginationLink as PagerLink,
     TabContent,
@@ -107,6 +102,8 @@ export { default as Input } from "./components/Input/Input";
 export { default as LinkList } from "./components/LinkList/LinkList";
 export { default as LinkListItem } from "./components/LinkList/LinkListItem";
 export { default as Offcanvas } from "./components/Offcanvas/Offcanvas";
+export { default as Pager } from "./components/Pager/Pager";
+export { default as PagerList } from "./components/PagerList/PagerList";
 export {
     default as PasswordInput
 } from "./components/PasswordInput/PasswordInput";
