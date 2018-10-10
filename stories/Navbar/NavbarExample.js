@@ -10,10 +10,6 @@ import {
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem,
-    Form,
-    Input,
-    Button,
     LinkList,
     LinkListItem
 } from "../../src";
@@ -32,6 +28,7 @@ class NavbarExample extends React.Component {
     render() {
         const { isOpen } = this.state;
         const { dropdown } = this.props;
+
         return (
             <section>
                 <Navbar expand="lg">
@@ -64,42 +61,37 @@ class NavbarExample extends React.Component {
                             <NavItem>
                                 <NavLink href="#">link 5</NavLink>
                             </NavItem>
-                            {(() => {
-                                if (dropdown) {
-                                    return (
-                                        <UncontrolledDropdown nav inNavbar>
-                                            <DropdownToggle nav caret>
-                                                Dropdown item
-                                            </DropdownToggle>
-                                            <DropdownMenu>
-                                                <LinkList>
-                                                    <LinkListItem header>
-                                                        Header
-                                                    </LinkListItem>
-                                                    <LinkListItem>
-                                                        <span>Link list 1</span>
-                                                    </LinkListItem>
-                                                    <LinkListItem>
-                                                        <span>Link list 2</span>
-                                                    </LinkListItem>
-                                                    <LinkListItem>
-                                                        <span>Link list 3</span>
-                                                    </LinkListItem>
-                                                    <LinkListItem divider />
-                                                    <LinkListItem>
-                                                        <span>Link list 4</span>
-                                                    </LinkListItem>
-                                                </LinkList>
-                                            </DropdownMenu>
-                                        </UncontrolledDropdown>
-                                    );
-                                }
-                                return (
-                                    <NavItem>
-                                        <NavLink href="#">link 6</NavLink>
-                                    </NavItem>
-                                );
-                            })()}
+                            {dropdown ? (
+                                <UncontrolledDropdown nav inNavbar>
+                                    <DropdownToggle nav caret>
+                                        Dropdown item
+                                    </DropdownToggle>
+                                    <DropdownMenu>
+                                        <LinkList>
+                                            <LinkListItem header>
+                                                Header
+                                            </LinkListItem>
+                                            <LinkListItem>
+                                                <span>Link list 1</span>
+                                            </LinkListItem>
+                                            <LinkListItem>
+                                                <span>Link list 2</span>
+                                            </LinkListItem>
+                                            <LinkListItem>
+                                                <span>Link list 3</span>
+                                            </LinkListItem>
+                                            <LinkListItem divider />
+                                            <LinkListItem>
+                                                <span>Link list 4</span>
+                                            </LinkListItem>
+                                        </LinkList>
+                                    </DropdownMenu>
+                                </UncontrolledDropdown>
+                            ) : (
+                                <NavItem>
+                                    <NavLink href="#">link 6</NavLink>
+                                </NavItem>
+                            )}
                         </Nav>
                     </Collapse>
                 </Navbar>

@@ -21,23 +21,15 @@ import {
     UncontrolledDropdown,
     DropdownMenu,
     DropdownToggle,
-    Form,
-    Input,
-    Button,
-    InputGroup,
-    InputGroupAddon,
-    Container,
     LinkList,
     LinkListItem
 } from "../../src";
 
 import NavbarExample from "./NavbarExample";
-import NavbarOffcanvasExample from "./NavbarOffcanvasExample";
 import NavbarMegamenuExample from "./NavbarMegamenuExample";
 import NavbarInlineExample from "./NavbarInlineExample";
 
 import Esempi from "./Esempi.md";
-import Offcanvas from "./Offcanvas.md";
 import Dropdown from "./Dropdown.md";
 import Megamenu from "./Megamenu.md";
 import Inline from "./Inline.md";
@@ -61,24 +53,6 @@ stories.add(
             ],
             propTablesExclude: [NavbarExample]
         })(() => <NavbarExample />)
-    )
-);
-
-stories.add(
-    "Con Offcanvas",
-    withDocs(
-        Offcanvas,
-        withInfo({
-            propTables: [
-                Navbar,
-                NavbarToggler,
-                Offcanvas,
-                Nav,
-                NavItem,
-                NavLink
-            ],
-            propTablesExclude: [NavbarOffcanvasExample]
-        })(() => <NavbarOffcanvasExample />)
     )
 );
 
