@@ -9,6 +9,7 @@ import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from "../../src";
 import ModalExample from "./ModalExample";
 import ModalTooltipExample from "./ModalTooltipExample";
 import ModalGridExample from "./ModalGridExample";
+import ModalDynamicExample from "./ModalDynamicExample";
 
 import Esempi from "./Esempi.md";
 import BottoneChiusura from "./BottoneChiusura.md";
@@ -19,6 +20,7 @@ import TooltipPopover from "./TooltipPopover.md";
 import UsoGriglia from "./UsoGriglia.md";
 import RimuovereAnimazione from "./RimuovereAnimazione.md";
 import Dimensioni from "./Dimensioni.md";
+import ModalVariabile from "./ModalVariabile.md";
 
 const stories = storiesOf("Componenti/Modal", module);
 stories.addDecorator(checkA11y);
@@ -47,7 +49,7 @@ stories.add(
 
 const BottoneChiusuraComponent = () => (
     <div className="p-3">
-        <Button className="close position-absolute">&times;</Button>
+        <button className="close position-absolute">&times;</button>
     </div>
 );
 stories.add(
@@ -107,6 +109,17 @@ stories.add(
             propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
             propTablesExclude: [ModalGridExample]
         })(() => <ModalGridExample />)
+    )
+);
+
+stories.add(
+    "Contenuto della modale variabile",
+    withDocs(
+        ModalVariabile,
+        withInfo({
+            propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+            propTablesExclude: [ModalDynamicExample]
+        })(() => <ModalDynamicExample />)
     )
 );
 
