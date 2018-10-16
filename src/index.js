@@ -87,6 +87,8 @@ export {
     Util
 } from "reactstrap";
 
+export { default as Scrollspy } from "react-scrollspy";
+
 export { default as Accordion } from "./components/Accordion/Accordion";
 export {
     default as AccordionHeader
@@ -110,7 +112,6 @@ export {
 export {
     default as PasswordMeter
 } from "./components/PasswordMeter/PasswordMeter";
-export { default as Scrollspy } from "./components/Scrollspy/Scrollspy";
 export { default as Select } from "./components/Select/Select";
 export { default as Skiplink } from "./components/Skiplink/Skiplink";
 export { default as SkiplinkItem } from "./components/Skiplink/SkiplinkItem";
