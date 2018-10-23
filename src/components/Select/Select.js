@@ -295,7 +295,7 @@ SelectInput.propTypes = {
     handleBlur: PropTypes.func
 };
 
-export const GroupHeading = (props: any) => {
+export const GroupHeading = (props) => {
     const { children } = props;
 
     return (
@@ -304,6 +304,10 @@ export const GroupHeading = (props: any) => {
         </li>
     );
 };
+
+GroupHeading.propTypes = {
+  children: PropTypes.node
+}
 
 class Select extends Component {
     state = {
@@ -339,7 +343,8 @@ class Select extends Component {
     handle = e => {
         if (e.type === "touchend") this.isTouch = true;
         if (e.type === "click" && this.isTouch) return;
-
+        
+        /* eslint-disable-next-line react/no-find-dom-node */
         const el = ReactDOM.findDOMNode(this.container);
         if (el && !el.contains(e.target)) this.toggleMenuIsOpen(false);
     };

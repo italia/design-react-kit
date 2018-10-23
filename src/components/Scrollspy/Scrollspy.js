@@ -1,9 +1,9 @@
+/* eslint-disable */
 import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 
 const propTypes = {
-    // className: PropTypes.string
     onEnter: PropTypes.func,
     onLeave: PropTypes.func,
     children: PropTypes.oneOfType([

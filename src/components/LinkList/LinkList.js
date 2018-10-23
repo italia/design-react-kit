@@ -6,6 +6,7 @@ const propTypes = {
     tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
     className: PropTypes.string,
     multiline: PropTypes.bool,
+    sublist: PropTypes.bool,
 };
 
 const defaultProps = {
