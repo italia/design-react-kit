@@ -13,7 +13,7 @@ const defaultProps = {
     tag: "button"
 };
 
-export default function AccordionHeader(props, context) {
+export default function AccordionHeader(props) {
     const { className, tag: Tag, active, onToggle, ...attributes } = props;
     const classes = classNames("collapse-header");
     const toggleClasses = classNames(className, {

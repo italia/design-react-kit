@@ -1,8 +1,8 @@
+/* eslint no-unused-vars: ["error", { "ignoreRestSiblings": true }] */
 // Customized components for https://github.com/JedWatson/react-select/tree/v2/src
 
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
-import ReactDOM from "react-dom";
 import {
     default as ReactSelect,
     SelectBase,
@@ -90,10 +90,8 @@ class ValueContainer extends Component {
                                         selectProps={selectProps}
                                     />
                                 );
-                                break;
                             default:
                                 return child;
-                                break;
                         }
                     });
                 })()}
@@ -113,7 +111,7 @@ class MenuList extends Component {
     };
 
     render() {
-        const { children, innerProps } = this.props;
+        const { children } = this.props;
 
         return (
             <ul className="autocomplete-wrap" style={this.styles}>

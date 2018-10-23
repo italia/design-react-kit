@@ -3,7 +3,8 @@
     "env": {
         "browser": true,
         "commonjs": true,
-        "es6": true
+        "es6": true,
+        "node": true
     },
     "extends": [
         "eslint:recommended", 
@@ -23,6 +24,7 @@
         "jsx-a11y"
     ],
     "rules": {
-      "react/no-unsafe": "error"
+      "react/no-unsafe": "error",
+      "no-case-declarations": "off"
     }
 }

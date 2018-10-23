@@ -1,4 +1,6 @@
 // Customized components for https://github.com/JedWatson/react-select/tree/v2/src
+/* eslint-disable react/no-unsafe */
+/* eslint no-unused-vars: ["error", { "ignoreRestSiblings": true }] */
 
 import React, { Component } from "react";
 import PropTypes from "prop-types";
@@ -104,13 +106,7 @@ ValueContainer.propTypes = {
     getValue: PropTypes.func
 };
 
-function getMenuPlacement({
-    maxHeight,
-    menuEl,
-    minHeight,
-    placement,
-    shouldScroll
-}) {
+function getMenuPlacement(maxHeight) {
     const optimisticState = { placement: "bottom", maxHeight };
     return optimisticState;
 }
@@ -122,32 +118,13 @@ class Menu extends Component {
     };
 
     getPlacement = ref => {
-        const {
-            minMenuHeight,
-            maxMenuHeight,
-            menuPlacement,
-            scrollMenuIntoView
-        } = this.props;
+        const { maxMenuHeight } = this.props;
 
         if (!ref) return;
 
-        const state = getMenuPlacement({
-            maxHeight: maxMenuHeight,
-            menuEl: ref,
-            minHeight: minMenuHeight,
-            placement: menuPlacement,
-            shouldScroll: scrollMenuIntoView
-        });
+        const state = getMenuPlacement(maxMenuHeight);
 
         this.setState(state);
-    };
-
-    getState = () => {
-        const { menuPlacement } = this.props;
-        const placement =
-            this.state.placement || coercePlacement(menuPlacement);
-
-        return { ...this.props, placement, maxHeight: this.state.maxHeight };
     };
 
     render() {
@@ -190,7 +167,7 @@ class MenuList extends Component {
     };
 
     render() {
-        const { children, innerProps, selectProps } = this.props;
+        const { children, selectProps } = this.props;
         const { isSearchable, placeholder } = selectProps;
 
         return (
@@ -354,7 +331,7 @@ class Select extends Component {
         if (disabled) return;
 
         const isDefined = status !== undefined;
-        this.setState((prevState, props) => {
+        this.setState((prevState) => {
             return { menuIsOpen: isDefined ? status : !prevState.menuIsOpen };
         });
     };
