@@ -6,6 +6,7 @@
         "es6": true
     },
     "extends": [
+        "eslint:recommended", 
         "plugin:react/recommended",
         "prettier/react"
     ],
@@ -21,5 +22,7 @@
         "babel",
         "jsx-a11y"
     ],
-    "rules": {}
+    "rules": {
+      "react/no-unsafe": "error"
+    }
 }
