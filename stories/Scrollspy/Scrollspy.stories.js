@@ -6,22 +6,37 @@ import { withDocs } from "../utils";
 
 import { Scrollspy } from "../../src";
 
-import ScrollspyExample from "./ScrollspyExample";
+import ComponenteBarraDiNavigazione from "./ComponenteBarraDiNavigazione";
+import ComponenteListaElenco from "./ComponenteListaElenco";
 
-import Esempi from "./Esempi.md";
+import BarraDiNavigazione from "./BarraDiNavigazione.md";
+import ListaElenco from "./ListaElenco.md";
 
 const stories = storiesOf("Componenti/Scrollspy", module);
 stories.addDecorator(checkA11y);
 
 stories.add(
-    "Esempi",
+    "Esempio in barra di navigazione",
     withDocs(
-        Esempi,
+        BarraDiNavigazione,
         withInfo({
             propTables: [Scrollspy],
-            propTablesExclude: [ScrollspyExample]
+            propTablesExclude: [ComponenteBarraDiNavigazione]
         })(() => {
-            return <ScrollspyExample />;
+            return <ComponenteBarraDiNavigazione />;
+        })
+    )
+);
+
+stories.add(
+    "Esempio con una lista elenco",
+    withDocs(
+        ListaElenco,
+        withInfo({
+            propTables: [Scrollspy],
+            propTablesExclude: [ComponenteListaElenco]
+        })(() => {
+            return <ComponenteListaElenco />;
         })
     )
 );
