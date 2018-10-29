@@ -1,5 +1,4 @@
 // Customized components for https://github.com/JedWatson/react-select/tree/v2/src
-/* eslint-disable react/no-unsafe */
 /* eslint no-unused-vars: ["error", { "ignoreRestSiblings": true }] */
 
 import React, { Component } from "react";
@@ -48,24 +47,24 @@ Control.propTypes = {
 };
 
 class ValueContainer extends Component {
-    shouldScrollBottom = false;
     node = null;
 
-    UNSAFE_componentWillUpdate() {
-        if (!this.props.isMulti) return;
-
+    getSnapshotBeforeUpdate(prevProps) {
+      if (!prevProps.isMulti) return;
+      
         // scroll only if the user was already at the bottom
         const total = this.node.scrollTop + this.node.offsetHeight;
-        this.shouldScrollBottom = total === this.node.scrollHeight;
+        const shouldScrollBottom = total === this.node.scrollHeight;
+        return shouldScrollBottom;
     }
-
-    componentDidUpdate() {
-        const { isMulti } = this.props;
+    
+    componentDidUpdate(prevProps, prevState, shouldScrollBottom) {
+        const { isMulti } = prevProps;
 
         if (!isMulti) return;
 
         // ensure we're showing items being added by forcing scroll to the bottom
-        if (this.shouldScrollBottom && this.node) {
+        if (shouldScrollBottom && this.node) {
             this.node.scrollTop = this.node.scrollHeight;
         }
     }
