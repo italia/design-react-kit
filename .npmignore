@@ -4,3 +4,4 @@ assets
 scripts
 stories
 storybook-static
+!dist
