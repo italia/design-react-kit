@@ -1,4 +1,5 @@
 // Customized components for https://github.com/JedWatson/react-select/tree/v2/src
+/* eslint no-unused-vars: ["error", { "ignoreRestSiblings": true }] */
 
 import React, { Component } from "react";
 import PropTypes from "prop-types";
@@ -46,24 +47,24 @@ Control.propTypes = {
 };
 
 class ValueContainer extends Component {
-    shouldScrollBottom = false;
     node = null;
 
-    UNSAFE_componentWillUpdate() {
-        if (!this.props.isMulti) return;
-
+    getSnapshotBeforeUpdate(prevProps) {
+      if (!prevProps.isMulti) return;
+      
         // scroll only if the user was already at the bottom
         const total = this.node.scrollTop + this.node.offsetHeight;
-        this.shouldScrollBottom = total === this.node.scrollHeight;
+        const shouldScrollBottom = total === this.node.scrollHeight;
+        return shouldScrollBottom;
     }
-
-    componentDidUpdate() {
-        const { isMulti } = this.props;
+    
+    componentDidUpdate(prevProps, prevState, shouldScrollBottom) {
+        const { isMulti } = prevProps;
 
         if (!isMulti) return;
 
         // ensure we're showing items being added by forcing scroll to the bottom
-        if (this.shouldScrollBottom && this.node) {
+        if (shouldScrollBottom && this.node) {
             this.node.scrollTop = this.node.scrollHeight;
         }
     }
@@ -104,13 +105,7 @@ ValueContainer.propTypes = {
     getValue: PropTypes.func
 };
 
-function getMenuPlacement({
-    maxHeight,
-    menuEl,
-    minHeight,
-    placement,
-    shouldScroll
-}) {
+function getMenuPlacement(maxHeight) {
     const optimisticState = { placement: "bottom", maxHeight };
     return optimisticState;
 }
@@ -122,32 +117,13 @@ class Menu extends Component {
     };
 
     getPlacement = ref => {
-        const {
-            minMenuHeight,
-            maxMenuHeight,
-            menuPlacement,
-            scrollMenuIntoView
-        } = this.props;
+        const { maxMenuHeight } = this.props;
 
         if (!ref) return;
 
-        const state = getMenuPlacement({
-            maxHeight: maxMenuHeight,
-            menuEl: ref,
-            minHeight: minMenuHeight,
-            placement: menuPlacement,
-            shouldScroll: scrollMenuIntoView
-        });
+        const state = getMenuPlacement(maxMenuHeight);
 
         this.setState(state);
-    };
-
-    getState = () => {
-        const { menuPlacement } = this.props;
-        const placement =
-            this.state.placement || coercePlacement(menuPlacement);
-
-        return { ...this.props, placement, maxHeight: this.state.maxHeight };
     };
 
     render() {
@@ -190,7 +166,7 @@ class MenuList extends Component {
     };
 
     render() {
-        const { children, innerProps, selectProps } = this.props;
+        const { children, selectProps } = this.props;
         const { isSearchable, placeholder } = selectProps;
 
         return (
@@ -295,7 +271,7 @@ SelectInput.propTypes = {
     handleBlur: PropTypes.func
 };
 
-export const GroupHeading = (props: any) => {
+export const GroupHeading = (props) => {
     const { children } = props;
 
     return (
@@ -304,6 +280,10 @@ export const GroupHeading = (props: any) => {
         </li>
     );
 };
+
+GroupHeading.propTypes = {
+  children: PropTypes.node
+}
 
 class Select extends Component {
     state = {
@@ -339,7 +319,8 @@ class Select extends Component {
     handle = e => {
         if (e.type === "touchend") this.isTouch = true;
         if (e.type === "click" && this.isTouch) return;
-
+        
+        /* eslint-disable-next-line react/no-find-dom-node */
         const el = ReactDOM.findDOMNode(this.container);
         if (el && !el.contains(e.target)) this.toggleMenuIsOpen(false);
     };
@@ -349,7 +330,7 @@ class Select extends Component {
         if (disabled) return;
 
         const isDefined = status !== undefined;
-        this.setState((prevState, props) => {
+        this.setState((prevState) => {
             return { menuIsOpen: isDefined ? status : !prevState.menuIsOpen };
         });
     };

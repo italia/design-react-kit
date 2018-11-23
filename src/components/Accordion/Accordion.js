@@ -11,7 +11,7 @@ const defaultProps = {
     tag: "div"
 };
 
-export default function Accordion(props, context) {
+export default function Accordion(props) {
     const { className, tag: Tag, ...attributes } = props;
     const classes = classNames("collapse-div", className);
 

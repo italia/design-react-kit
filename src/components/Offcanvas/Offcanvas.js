@@ -61,7 +61,6 @@ function getTransitionClass(status) {
 export default class Offcanvas extends Component {
     render() {
         const {
-            className,
             tag: Tag,
             children,
             isOpen,

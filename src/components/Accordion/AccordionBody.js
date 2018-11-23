@@ -83,7 +83,6 @@ export default class AccordionBody extends Component {
             tag: Tag,
             active,
             children,
-            onToggle,
             ...attributes
         } = this.props;
         const { height } = this.state;

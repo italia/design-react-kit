@@ -32,7 +32,13 @@
 		"storybook:deploy": "npx gh-pages -d storybook-static -m 'Update GitHub Pages [ci skip]'",
 		"test": "react-scripts test --env=jsdom",
 		"test:ci": "CI=true react-scripts test --env=jsdom",
-		"lint": "eslint --fix src/"
+		"lint": "eslint src/",
+		"lint:fix": "eslint --fix src/"
+	},
+	"husky": {
+		"hooks": {
+			"pre-push": "npm run lint"
+		}
 	},
 	"devDependencies": {
 		"@sambego/storybook-state": "^1.0.7",
@@ -65,7 +71,8 @@
 		"eslint-plugin-import": "^2.7.0",
 		"eslint-plugin-jsx-a11y": "^5.1.1",
 		"eslint-plugin-prettier": "^2.6.0",
-		"eslint-plugin-react": "^7.7.0",
+		"eslint-plugin-react": "^7.11.0",
+		"husky": "1.1.2",
 		"jest": "^22.4.3",
 		"prettier": "^1.12.1",
 		"prop-types": "^15.6.1",

@@ -19,12 +19,9 @@ class Toggle extends Component {
     }
 }
 
-Toggle.propTypes = Object.assign(
-    {},
-    {
-        label: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
-    },
-    Input.propTypes
-);
+Toggle.propTypes = {
+    label: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+    ...Input.propTypes
+};
 
 export default Toggle;

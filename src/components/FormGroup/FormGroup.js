@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 
 import { FormGroup as ReactStrapFormGroup } from "reactstrap";
 import { Input, Label } from "../../../src";
@@ -106,7 +105,6 @@ class FormGroup extends Component {
                                         },
                                         ...isLabelActive
                                     });
-                                    break;
                                 case Label:
                                     let hasChildValue = false;
 
@@ -116,10 +114,8 @@ class FormGroup extends Component {
                                                 case Input:
                                                 case PasswordInput:
                                                     return true;
-                                                    break;
                                                 default:
                                                     return false;
-                                                    break;
                                             }
                                         })
                                         .map(child => {
@@ -137,10 +133,8 @@ class FormGroup extends Component {
                                         ...child.props,
                                         className: classNames
                                     });
-                                    break;
                                 default:
                                     return child;
-                                    break;
                             }
                         });
                     }
