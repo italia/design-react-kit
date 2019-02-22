@@ -6,8 +6,8 @@
 Fixes #
 
 #### PR Checklist
-
-- [ ] I have read the [Contribution Guide](CONTRIBUTING.md) and my PR follows them.
+<!-- To Mark a Checklist box, put "x" inside the square brackets. For Example - [ ] becomes [x] -->
+- [ ] I have read the [Contribution Guide](https://github.com/italia/design-react-kit/.github/CONTRIBUTING.md) and my PR follows them.
 - [ ] My branch is up-to-date with the Upstream `development` branch.
 - [ ] The unit tests pass locally with my changes <!-- use `nosetests tests/all` to run all the tests -->
 - [ ] I have added tests that prove my fix is effective or that my feature works
