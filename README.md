@@ -2,10 +2,12 @@
 [![Partecipa sul canale #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--devel-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
 [![Ricevi un invito a Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
 
-# design-react-kit
+*Read this in other languages: [English](README.EN.md).*
+
+# Design React Kit
 Un toolkit React che implementa [Bootstrap Italia](https://italia.github.io/bootstrap-italia/).
 
-Uno showcase di semplice utilizzo, [Storybook](https://storybook.js.org/), è disponibile per navigare la libreria e visualizzare i componenti in azione.
+Uno showcase di semplice utilizzo, [Storybook](https://storybook.js.org/), è disponibile per navigare la libreria e visualizzare i componenti in azione. La versione pubblica dello Storybook è disponibile [qui](https://italia.github.io/design-react-kit).
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -43,7 +45,6 @@ Storybook sarà quindi disponibile all'indirizzo http://localhost:6006
 
 ![storybook](/doc/storybook.png?raw=true)
 
-La versione pubblica dello Storybook è disponibile [qui](https://italia.github.io/design-react-kit).
 
 ## Come creare nuovi componenti
 
@@ -75,8 +76,6 @@ Storybook è stato arricchito con alcuni `addons` che lo rendono più parlante.
 
 ## Publishing
 
-### Storybook
-
 E' disponibile un comando per generare una versione statica del catalogo Storybook così che possa essere deployato senza utilizzo di un webserver.
 
 ```sh
@@ -84,10 +83,6 @@ $ npm run storybook:build
 ```
 
 Le pagine statiche ottenute dal processo di build saranno generate sotto la folder  `storybook-static`.
-
-#### Problemi noti
-
-- 
 
 ### Package
 
@@ -138,8 +133,9 @@ A seconda del bundler utilizzato, e delle sue configurazioni, si potranno import
 
 ```js
 import "bootstrap-italia/dist/css/bootstrap-italia.min.css";
-import "bootstrap-italia/dist/css/italia-icon-font.css";
 ```
+
+Nota: a partire dalla versione 1
 
 #### Preprocessori
 
