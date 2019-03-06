@@ -6,7 +6,9 @@ import { requireContextPolyfill } from "./utils";
 import Welcome from "./Welcome";
 
 const stories = storiesOf("Introduzione", module);
-stories.add("Benvenuto", () => <Welcome />);
+stories
+  .addParameters({ options: { showAddonPanel: false } })
+  .add("Benvenuto", () => <Welcome />);
 
 // Used by Jest
 if (process.env.NODE_ENV === "test") {
