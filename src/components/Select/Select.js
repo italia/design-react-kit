@@ -25,7 +25,7 @@ const SelectContainer = props => {
 };
 
 SelectContainer.propTypes = {
-    selectProps: PropTypes.shape(SelectPropTypes),
+    selectProps: PropTypes.shape(PropTypes),
     children: PropTypes.node,
     innerProps: PropTypes.any
 };
@@ -51,13 +51,13 @@ class ValueContainer extends Component {
 
     getSnapshotBeforeUpdate(prevProps) {
       if (!prevProps.isMulti) return;
-      
+
         // scroll only if the user was already at the bottom
         const total = this.node.scrollTop + this.node.offsetHeight;
         const shouldScrollBottom = total === this.node.scrollHeight;
         return shouldScrollBottom;
     }
-    
+
     componentDidUpdate(prevProps, prevState, shouldScrollBottom) {
         const { isMulti } = prevProps;
 
@@ -99,7 +99,7 @@ class ValueContainer extends Component {
 }
 
 ValueContainer.propTypes = {
-    selectProps: PropTypes.shape(SelectPropTypes),
+    selectProps: PropTypes.shape(PropTypes),
     isMulti: PropTypes.bool,
     hasValue: PropTypes.bool,
     getValue: PropTypes.func
@@ -143,7 +143,7 @@ class Menu extends Component {
 }
 
 Menu.propTypes = {
-    selectProps: PropTypes.shape(SelectPropTypes),
+    selectProps: PropTypes.shape(PropTypes),
     children: PropTypes.node,
     innerProps: PropTypes.any,
     /* Minimum height of the menu before flipping */
@@ -186,7 +186,7 @@ class MenuList extends Component {
 }
 
 MenuList.propTypes = {
-    selectProps: PropTypes.shape(SelectPropTypes),
+    selectProps: PropTypes.shape(PropTypes),
     children: PropTypes.node,
     innerProps: PropTypes.any
 };
@@ -267,7 +267,7 @@ class SelectInput extends Component {
 }
 
 SelectInput.propTypes = {
-    selectProps: PropTypes.shape(SelectPropTypes),
+    selectProps: PropTypes.shape(PropTypes),
     handleBlur: PropTypes.func
 };
 
@@ -319,7 +319,7 @@ class Select extends Component {
     handle = e => {
         if (e.type === "touchend") this.isTouch = true;
         if (e.type === "click" && this.isTouch) return;
-        
+
         /* eslint-disable-next-line react/no-find-dom-node */
         const el = ReactDOM.findDOMNode(this.container);
         if (el && !el.contains(e.target)) this.toggleMenuIsOpen(false);

@@ -1,28 +1,26 @@
-import { configure } from "@storybook/react";
-import { setOptions } from "@storybook/addon-options";
-import { setDefaults } from "@storybook/addon-info";
+import { addParameters, addDecorator, configure } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import {default as theme} from './theme.js';
 
 import "bootstrap-italia/dist/css/bootstrap-italia.min.css";
-import "bootstrap-italia/dist/css/italia-icon-font.css";
 import "../assets/docs.min.css";
+import "../assets/css/fonts.css";
 
-// addon-info
-setDefaults({
-    header: false,
-    inline: true
-});
+addDecorator(
+    withInfo()
+);
 
-// addon-options
-// https://github.com/storybooks/storybook/tree/master/addons/options
-setOptions({
-    // name to display in the top left corner
-    name: "design-react-kit",
-    // URL for name in top left corner to link to
-    url: "https://github.com/italia/design-react-kit/"
+addParameters({
+    options: {
+        name: 'Design React Kit',
+        url: 'https://github.com/italia/design-react-kit',
+        theme: theme,
+    },
 });
 
 function loadStories() {
-    require("../stories");
+    require('../stories/index.js');
+    // You can require as many stories as you need.
 }
 
 configure(loadStories, module);

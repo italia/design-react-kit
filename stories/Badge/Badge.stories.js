@@ -2,20 +2,15 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, select, boolean, text } from "@storybook/addon-knobs/react";
 import { checkA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
 
 import { Badge, Button } from "../../src";
 
-import Esempi from "./Esempi.md";
-import Contatore from "./Contatore.md";
-import Variazioni from "./Variazioni.md";
-import Arrotondati from "./Arrotondati.md";
-import Link from "./Link.md";
-import EsempiInterattivi from "./EsempiInterattivi.md";
-
-const stories = storiesOf("Componenti/Badge", module);
-stories.addDecorator(checkA11y);
+import Esempi from "./docs/Esempi.md";
+import Contatore from "./docs/Contatore.md";
+import Variazioni from "./docs/Variazioni.md";
+import Arrotondati from "./docs/Arrotondati.md";
+import Link from "./docs/Link.md";
+import EsempiInterattivi from "./docs/EsempiInterattivi.md";
 
 const EsempiComponent = () => (
     <div>
@@ -39,20 +34,11 @@ const EsempiComponent = () => (
         </h6>
     </div>
 );
-stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
 
-stories.add(
-    "Contatore",
-    withDocs(
-        Contatore,
-        withInfo({
-            propTablesExclude: [Button]
-        })(() => (
-            <Button color="primary">
-                Notifiche <Badge color="light">4</Badge>
-            </Button>
-        ))
-    )
+const ContatoreComponent = () => (
+    <Button color="primary">
+        Notifiche <Badge color="light">4</Badge>
+    </Button>
 );
 
 const VariazioniComponent = () => (
@@ -65,10 +51,6 @@ const VariazioniComponent = () => (
         <Badge className="mr-1" color="danger">Danger</Badge>
         <Badge className="mr-1" color="warning">Warning</Badge>
     </div>
-);
-stories.add(
-    "Variazioni",
-    withDocs(Variazioni, withInfo()(VariazioniComponent))
 );
 
 const ArrotondatiComponent = () => (
@@ -96,10 +78,6 @@ const ArrotondatiComponent = () => (
         </Badge>
     </div>
 );
-stories.add(
-    "Arrotondati",
-    withDocs(Arrotondati, withInfo()(ArrotondatiComponent))
-);
 
 const LinkComponent = () => (
     <div>
@@ -126,11 +104,8 @@ const LinkComponent = () => (
         </Badge>
     </div>
 );
-stories.add("Link", withDocs(Link, withInfo()(LinkComponent)));
 
-const knobsStories = storiesOf("Componenti/Badge", module);
-knobsStories.addDecorator(checkA11y);
-knobsStories.addDecorator(withKnobs);
+
 
 const EsempiInterattiviComponent = () => {
     const colors = [
@@ -153,7 +128,13 @@ const EsempiInterattiviComponent = () => {
         </Badge>
     );
 };
-knobsStories.add(
-    "Esempi interattivi",
-    withDocs(EsempiInterattivi, withInfo()(EsempiInterattiviComponent))
-);
+
+storiesOf("Componenti/Badge", module)
+    .addDecorator(checkA11y)
+    .add("Esempi", EsempiComponent, {info:{text: Esempi}})
+    .add("Contatore", ContatoreComponent, {info:{text: Contatore}})
+    .add("Variazioni", VariazioniComponent, {info:{text: Variazioni}})
+    .add("Bordi Arrotondati", ArrotondatiComponent, {info:{text: Arrotondati}})
+    .add("Con Link", LinkComponent, {info:{text: Link}})
+    .addDecorator(withKnobs)
+    .add("Esempi Interattivi", EsempiInterattiviComponent, {info:{text: EsempiInterattivi}})

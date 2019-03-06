@@ -1,3 +1,15 @@
+import WebFont from 'webfontloader';
+
+WebFont.load({
+    custom: {
+        families: [
+            'Titillium Web:300,400,600,700:latin-ext',
+            'Lora:400,700:latin-ext',
+            'Roboto Mono:400,700:latin-ext'
+        ]
+    }
+});
+
 export {
     Alert,
     Container,

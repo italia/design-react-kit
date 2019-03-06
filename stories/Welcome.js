@@ -25,6 +25,8 @@ const Welcome = props => (
                         target="_blank" rel="noopener noreferrer">Bootstrap
                         Italia <i className="it-external-link"></i></a>. Per iniziare, è sufficiente installare il pacchetto <code>npm</code> attraverso il seguente comando:</p>
                 <p className="text-center"><code>npm install design-react-kit --save</code></p>
+                <p>È necessario includere i file dei font attraverso un CSS separato, di cui si può trovare i sorgenti ed un esempio <a
+                    href="https://github.com/italia/design-react-kit/tree/master/assets">qui</a>.</p>
                 <p>È possibile contribuire al progetto con il proprio codice o attraverso la segnalazione di bug al <a
                         href="https://italia.github.io/bootstrap-italia/">repository
                         ufficiale</a> di React Kit o scrivendoci sul <a

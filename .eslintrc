@@ -1,5 +1,10 @@
 {
     "parser": "babel-eslint",
+    "settings": {
+        "react": {
+            "version": "detect" // React version. "detect" automatically picks the version you have installed.
+        }
+    },
     "env": {
         "browser": true,
         "commonjs": true,
@@ -7,7 +12,7 @@
         "node": true
     },
     "extends": [
-        "eslint:recommended", 
+        "eslint:recommended",
         "plugin:react/recommended",
         "prettier/react"
     ],

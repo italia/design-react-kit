@@ -34,11 +34,14 @@ export default [
       }),
       babel({
         exclude: "node_modules/**",
-        presets: [["env", { modules: false }], "react"],
+        presets: [
+            ["@babel/preset-env", {
+                "loose": true,
+                "modules": false
+            }], "@babel/preset-react"],
         plugins: [
-          "transform-class-properties",
-          "transform-object-rest-spread",
-          "external-helpers"
+            "@babel/plugin-proposal-class-properties",
+            "@babel/plugin-proposal-object-rest-spread"
         ]
       })
     ]
