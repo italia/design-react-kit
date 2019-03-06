@@ -15,6 +15,7 @@
         "eslint:recommended",
         "plugin:react/recommended",
         "prettier/react"
+        // "airbnb-base"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -29,7 +30,19 @@
         "jsx-a11y"
     ],
     "rules": {
-      "react/no-unsafe": "error",
-      "no-case-declarations": "off"
+        "react/no-unsafe": "error",
+        "no-case-declarations": "off",
+        "treatUndefinedAsUnspecified": false,
+        "no-shadow": [
+            "error",
+            {
+                "builtinGlobals": false,
+                "hoist": "never",
+                "allow": [
+                    "child",
+                    "className"
+                ]
+            }
+        ]
     }
 }

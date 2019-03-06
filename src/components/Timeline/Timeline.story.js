@@ -1,12 +1,12 @@
 import React from 'react';
-import {storiesOf} from '@storybook/react';
-import {withInfo} from '@storybook/addon-info';
+import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import Timeline from './Timeline';
 import TimelineContent from './TimelineContent';
 
 storiesOf('Timeline', module).add(
-    'Default',
-    withInfo('Default')(() => (
+  'Default',
+  withInfo('Default')(() => (
         <div className="u-padding-all-xxl u-background-grey-15 u-sizeFull">
             <Timeline
                 title="et"
@@ -63,5 +63,5 @@ storiesOf('Timeline', module).add(
                 </TimelineContent>
             </Timeline>
         </div>
-    )),
+  )),
 );

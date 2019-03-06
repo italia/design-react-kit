@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TimelineContent = ({children, color, background, ...rest}) => (
+const TimelineContent = ({
+  children, color, background, ...rest
+}) => (
     <div className={`Timeline-content ${color}`} {...rest}>
         <div
             className={`Timeline-arrow Icon-drop-down ${background.replace(
-                'background',
-                'color',
+              'background',
+              'color',
             )}`}
         />
         <div
@@ -17,9 +19,9 @@ const TimelineContent = ({children, color, background, ...rest}) => (
 );
 
 TimelineContent.propTypes = {
-    children: PropTypes.node,
-    color: PropTypes.string,
-    background: PropTypes.string,
+  children: PropTypes.node,
+  color: PropTypes.string,
+  background: PropTypes.string,
 };
 
 export default TimelineContent;

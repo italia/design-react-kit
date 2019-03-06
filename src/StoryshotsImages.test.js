@@ -6,13 +6,11 @@ import { imageSnapshot } from '@storybook/addon-storyshots-puppeteer';
 const storybookUrl = `file:///${process.cwd()}/storybook-static`;
 
 // https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pagegobackoptions
-const getGotoOptions = () => {
-  return {
-    waitUntil: "load"
-  };
-};
+const getGotoOptions = () => ({
+  waitUntil: 'load',
+});
 
 initStoryshots({
-  suite: "Image Storyshots",
-  test: imageSnapshot({ storybookUrl, getGotoOptions })
+  suite: 'Image Storyshots',
+  test: imageSnapshot({ storybookUrl, getGotoOptions }),
 });
