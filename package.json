@@ -70,7 +70,6 @@
         "install-dependencies:win32": "npm install && npx npm-install-peers",
         "prebuild": "npm run install-dependencies",
         "build": "rollup -c scripts/rollup.config.js",
-        "prestorybook": "npm run install-dependencies",
         "storybook": "start-storybook -p 9001 -c .storybook -s ./static",
         "lint": "eslint src/",
         "lint:fix": "eslint --fix src/",
