@@ -33,7 +33,6 @@ export {
   DropdownMenu,
   DropdownToggle,
   Fade,
-  Badge,
   Card,
   CardLink,
   CardGroup,
@@ -71,8 +70,6 @@ export {
   ListGroup,
   Form,
   FormFeedback,
-  // Overridden below
-  // FormGroup,
   FormText,
   InputGroup,
   InputGroupAddon,
@@ -86,8 +83,6 @@ export {
   TabContent,
   TabPane,
   Jumbotron,
-  // Overridden below
-  // Collapse,
   ListGroupItem,
   ListGroupItemText,
   ListGroupItemHeading,
@@ -109,6 +104,7 @@ export { default as AccordionBody } from './components/Accordion/AccordionBody';
 export {
   default as Autocomplete,
 } from './components/Autocomplete/Autocomplete';
+export { default as Badge } from './components/Badge/Badge';
 export { default as Collapse } from './components/Collapse/Collapse';
 export { default as FormGroup } from './components/FormGroup/FormGroup';
 export { default as Hero } from './components/Hero/Hero';
@@ -118,6 +114,7 @@ export { default as LinkListItem } from './components/LinkList/LinkListItem';
 export { default as Offcanvas } from './components/Offcanvas/Offcanvas';
 export { default as Pager } from './components/Pager/Pager';
 export { default as PagerList } from './components/PagerList/PagerList';
+
 export {
   default as PasswordInput,
 } from './components/PasswordInput/PasswordInput';

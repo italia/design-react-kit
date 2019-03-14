@@ -2,15 +2,17 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, select, boolean, text } from "@storybook/addon-knobs/react";
 import { checkA11y } from "@storybook/addon-a11y";
+import { withInfo } from "@storybook/addon-info";
+import { withDocs } from "../utils";
 
 import { Badge, Button } from "../../src";
 
-import Esempi from "./docs/Esempi.md";
-import Contatore from "./docs/Contatore.md";
-import Variazioni from "./docs/Variazioni.md";
-import Arrotondati from "./docs/Arrotondati.md";
-import Link from "./docs/Link.md";
-import EsempiInterattivi from "./docs/EsempiInterattivi.md";
+import Esempi from "./Esempi.md";
+import Contatore from "./Contatore.md";
+import Variazioni from "./Variazioni.md";
+import Arrotondati from "./Arrotondati.md";
+import Link from "./Link.md";
+import EsempiInterattivi from "./EsempiInterattivi.md";
 
 const EsempiComponent = () => (
     <div>
@@ -131,10 +133,10 @@ const EsempiInterattiviComponent = () => {
 
 storiesOf("Componenti/Badge", module)
     .addDecorator(checkA11y)
-    .add("Esempi", EsempiComponent, {info:{text: Esempi}})
-    .add("Contatore", ContatoreComponent, {info:{text: Contatore}})
-    .add("Variazioni", VariazioniComponent, {info:{text: Variazioni}})
-    .add("Bordi Arrotondati", ArrotondatiComponent, {info:{text: Arrotondati}})
-    .add("Con Link", LinkComponent, {info:{text: Link}})
     .addDecorator(withKnobs)
-    .add("Esempi Interattivi", EsempiInterattiviComponent, {info:{text: EsempiInterattivi}})
+    .add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)))
+    .add("Contatore", withDocs(Contatore, withInfo({propTablesExclude: [Button]})(ContatoreComponent)))
+    .add("Variazioni", withDocs(Variazioni, withInfo()(VariazioniComponent)))
+    .add("Bordi Arrotondati", withDocs(Arrotondati, withInfo()(ArrotondatiComponent)))
+    .add("Con Link", withDocs(Link, withInfo()(LinkComponent)))
+    .add("Esempi Interattivi", withDocs(EsempiInterattivi, withInfo()(EsempiInterattiviComponent)));
