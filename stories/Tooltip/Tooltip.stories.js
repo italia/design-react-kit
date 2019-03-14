@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, text, select } from "@storybook/addon-knobs/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs, envIs } from "../utils";
 
@@ -12,7 +12,7 @@ import Posizioni from "./Posizioni.md";
 import EsempiInterattivi from "./EsempiInterattivi.md";
 
 const stories = storiesOf("Componenti/Tooltip", module);
-stories.addDecorator(checkA11y);
+stories.addDecorator(withA11y);
 
 const EsempiComponent = () => {
     if (envIs("test")) {
@@ -125,7 +125,7 @@ const PosizioniComponent = () => {
 stories.add("Posizioni", withDocs(Posizioni, withInfo()(PosizioniComponent)));
 
 const knobsStories = storiesOf("Componenti/Tooltip", module);
-knobsStories.addDecorator(checkA11y);
+knobsStories.addDecorator(withA11y);
 knobsStories.addDecorator(withKnobs);
 
 const EsempiInterattiviComponent = () => {

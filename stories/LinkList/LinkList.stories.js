@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, select, boolean, text } from "@storybook/addon-knobs/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
@@ -33,7 +33,7 @@ import Navigation from "./Navigation.md";
 import Collapsible from "./Collapsible.md";
 
 const stories = storiesOf("Componenti/LinkList", module);
-stories.addDecorator(checkA11y);
+stories.addDecorator(withA11y);
 
 const EsempiComponent = () => (
     <LinkList>
@@ -153,7 +153,7 @@ const LargeComponent = () => (
 stories.add("Sizing", withDocs(Large, withInfo()(LargeComponent)));
 
 const multilineStories = storiesOf("Componenti/LinkList/Multiline", module);
-multilineStories.addDecorator(checkA11y);
+multilineStories.addDecorator(withA11y);
 
 const MultilineComponent = () => (
     <LinkList multiline>
@@ -182,7 +182,7 @@ multilineStories.add(
 );
 
 const controlStories = storiesOf("Componenti/LinkList/Con controlli", module);
-multilineStories.addDecorator(checkA11y);
+multilineStories.addDecorator(withA11y);
 
 const ControlliComponent = () => (
     <LinkList>
@@ -332,7 +332,7 @@ const navigationStories = storiesOf(
     "Componenti/LinkList/Nested navigation",
     module
 );
-navigationStories.addDecorator(checkA11y);
+navigationStories.addDecorator(withA11y);
 
 const NavigationComponent = () => (
     <LinkList>

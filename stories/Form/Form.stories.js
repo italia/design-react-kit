@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
@@ -61,7 +61,7 @@ import TestoAiuto from "./TestoAiuto.md";
 import FormDisabilitato from "./FormDisabilitato.md";
 
 const stories = storiesOf("Componenti/Form", module);
-stories.addDecorator(checkA11y);
+stories.addDecorator(withA11y);
 
 const EsempiComponent = () => (
     <Form>
@@ -464,7 +464,7 @@ stories.add(
 );
 
 const moreStories = storiesOf("Componenti/Form/Layout", module);
-moreStories.addDecorator(checkA11y);
+moreStories.addDecorator(withA11y);
 
 const FormGroupEsempioComponent = () => (
     <Form>

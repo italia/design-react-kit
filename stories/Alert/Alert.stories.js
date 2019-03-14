@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 
 import { withKnobs, select, boolean } from "@storybook/addon-knobs/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
@@ -79,7 +79,7 @@ const EsempiInterattiviComponent = () => {
 };
 
 storiesOf("Componenti/Alert", module)
-    .addDecorator(checkA11y)
+    .addDecorator(withA11y)
     .add("Esempi", EsempiComponent, {info:{text: Esempi}})
     .add("Link evidenziato", LinkEvidenziatoComponent, {info:{text: LinkEvidenziato}})
     .add("Contenuto aggiuntivo", ContenutoAggiuntivoComponent, {info:{text: ContenutoAggiuntivo}})
@@ -87,7 +87,7 @@ storiesOf("Componenti/Alert", module)
     .add("Esempi Interattivi", EsempiInterattiviComponent, {info:{text: EsempiInterattivi}})
 
 storiesOf("Componenti/Alert/Chiusura", module)
-    .addDecorator(checkA11y)
+    .addDecorator(withA11y)
     .add("Non controllata", ChiusuraNonControllataComponent, {
         info:{
             text: Chiusura,

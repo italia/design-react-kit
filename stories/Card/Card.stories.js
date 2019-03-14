@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
@@ -36,7 +36,7 @@ import Deck from "./Deck.md";
 import Colonne from "./Colonne.md";
 
 const stories = storiesOf("Componenti/Card", module);
-stories.addDecorator(checkA11y);
+stories.addDecorator(withA11y);
 
 const EsempiComponent = () => (
     <Card className="w-50">

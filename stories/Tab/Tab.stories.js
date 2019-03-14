@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
@@ -17,7 +17,7 @@ import TabBottoni from "./TabBottoni.md";
 import AllineamentoVerticale from "./AllineamentoVerticale.md";
 
 const stories = storiesOf("Componenti/Tab", module);
-stories.addDecorator(checkA11y);
+stories.addDecorator(withA11y);
 
 const EsempiComponent = () => (
     <div>
