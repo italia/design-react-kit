@@ -1,14 +1,9 @@
 import { addParameters, addDecorator, configure } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import {default as theme} from './theme.js';
+import { default as theme } from './theme.js';
 
 import "bootstrap-italia/dist/css/bootstrap-italia.min.css";
 import "../assets/docs.min.css";
 import "../assets/css/fonts.css";
-
-addDecorator(
-    withInfo()
-);
 
 addParameters({
     options: {
