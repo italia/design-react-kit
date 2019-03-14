@@ -8,6 +8,8 @@
 - *Storybook v5.0.0*
 - *Bootstrap Italia stabile v1.2.2*
 
+Preview del branch `next` qui: https://kind-ramanujan-f0d53e.netlify.com/
+
 ## Intro
 
 **Design React kit** è un set di componenti React che [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) e gli stili presenti su [Design UI Kit](https://github.com/italia/design-ui-kit), come [mostrato su InVision](https://invis.io/TWMUZS6VFP5).
