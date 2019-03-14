@@ -36,12 +36,11 @@
         "@storybook/addon-links": "^5.0.0",
         "@storybook/addon-notes": "^5.0.0",
         "@storybook/addon-storyshots": "^5.0.0",
-        "@storybook/addon-storyshots-puppeteer": "^5.0.0",
         "@storybook/addon-viewport": "^5.0.0",
         "@storybook/addons": "^5.0.0",
         "@storybook/react": "^5.0.0",
         "babel-loader": "^8.0.5",
-        "bootstrap-italia": "^1.2.1",
+        "bootstrap-italia": "^1.2.3",
         "eslint": "^5.15.1",
         "eslint-config-prettier": "^4.1.0",
         "eslint-plugin-babel": "^5.3.0",
@@ -66,21 +65,21 @@
         "react-dom": "^16.8.3"
     },
     "scripts": {
-        "install-dependencies": "if [ ! -d node_modules ]; then npm install && npx npm-install-peers; fi",
-        "install-dependencies:win32": "npm install && npx npm-install-peers",
-        "prebuild": "npm run install-dependencies",
+        "install-dependencies": "yarn install --peers",
+        "prebuild": "yarn install-dependencies",
         "build": "rollup -c scripts/rollup.config.js",
-        "prestorybook": "npm run install-dependencies",
-        "storybook": "start-storybook -p 9001 -c .storybook -s ./static",
+        "prestorybook": "yarn install-dependencies",
+        "storybook": "build-storybook -c .storybook -s ./static",
+        "storybook-serve": "start-storybook -p 9001 -c .storybook -s ./static",
         "lint": "eslint src/",
         "lint:fix": "eslint --fix src/",
         "test": "export SKIP_PREFLIGHT_CHECK=true && react-scripts test --env=jsdom",
         "test:ci": "CI=true react-scripts test --env=jsdom",
-        "start": "npm run storybook"
+        "start": "yarn run storybook"
     },
     "husky": {
         "hooks": {
-            "pre-push": "npm run lint"
+            "pre-push": "yarn run lint"
         }
     }
 }
