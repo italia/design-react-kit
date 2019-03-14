@@ -43,12 +43,12 @@ Public version of Storybook (built from `master` branch) is available [here](htt
 ### Requirements
 
 * NodeJS
-* npm@5+
+* Yarn
 
 ## Getting started
 
-Clone the repo and run `npm run storybook` to start the development server.
-A script takes care of running the `npm install` command needed to install dependencies.
+Clone the repo and run `yarn storybook` to start the development server.
+A script takes care of running the `yarn install` command needed to install dependencies.
 
 Storybook will therefore be available at http://localhost:6006
 
@@ -89,7 +89,7 @@ Storybook has been enriched with some `addons` that make it more talented. Check
 A command is available to reach a static version of the Storybook catalog as it can be deployed without using a webserver.
 
 ```sh
-$ npm run storybook: build
+$ yarn run storybook
 ```
 
 Static pages obtained from the compilation process generate under the `storybook-static` directory.
@@ -124,11 +124,11 @@ For this reason, for local development it will be necessary to manually install 
 
 The command to be executed is
 ```sh
-$ npm run install-dependencies
+$ yarn install --peers
 ```
 or alternatively manually
 ```sh
-$ npm install react react-dom
+$ yarn install react react-dom
 ```
 
 #### CSS styles
@@ -136,7 +136,7 @@ $ npm install react react-dom
 The library is composed of a part of the states, inherited from the [bootstrap-italia](https://italia.github.io/bootstrap-italia/) package, that can be imported and installed with the following:
 
 ```sh
-$ npm install bootstrap-italia
+$ yarn install bootstrap-italia
 ```
 
 A second part of the package, and its actions, are directly imported from the same CSS generated:
@@ -152,20 +152,3 @@ Having the preprocessor [SASS](https://sass-lang.com/) available, it will be pos
 ```scss
 @import "bootstrap-italia/src/scss/bootstrap-italia.scss";
 ```
-
-## Continuous Integration
-
-An instance of CircleCI is available and it is configured to build the repository every time the `master` branch is updated.
-The Storybook build is deployed on the `gh-pages` branch and is publicly available on [italia.github.io/design-react-kit](https://italia.github.io/design-react-kit).
-
-### `build` job
-
-It will take care of running `npm run build`, starting Rollup and integrating the latest changes made to the` master` and `tag` branches.
-
-### `deploy-github-pages` job
-
-It will run `npm run storybook:build` and `npm run storybook:deploy` commands to build and deploy the Storybook documentation on the GitHub Pages.
-
-### `npm-publish` job
-
-It will run the `npm publish` command necessary to update the package [npm](https://www.npmjs.com/~italia).

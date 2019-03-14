@@ -44,12 +44,12 @@ La versione pubblica dello Storybook (relativa al branch `master`) è disponibil
 ### Requisiti
 
 * NodeJS
-* npm@5+
+* Yarn
 
 ## Come iniziare
 
-Clona il repository ed esegui `npm run storybook` per avviare il server di sviluppo.
-Uno script si occuperà di eseguire il comando `npm install` necessario ad installare le dipendenze. 
+Clona il repository ed esegui `yarn storybook-serve` per avviare il server di sviluppo.
+Uno script si occuperà di eseguire il comando `yarn install` necessario ad installare le dipendenze. 
 
 Storybook sarà quindi disponibile all'indirizzo http://localhost:6006
 
@@ -89,7 +89,7 @@ Storybook è stato arricchito con alcuni `addons` che lo rendono più parlante.
 E' disponibile un comando per generare una versione statica del catalogo Storybook così che possa essere deployato senza utilizzo di un webserver.
 
 ```sh
-$ npm run storybook:build
+$ yarn run storybook
 ```
 
 Le pagine statiche ottenute dal processo di build saranno generate sotto la folder  `storybook-static`.
@@ -124,11 +124,11 @@ Per questo motivo per lo sviluppo in locale sarà necessario installare manualme
 
 Il comando da eseguire è
 ```sh
-$ npm run install-dependencies
+$ yarn install --peers
 ```
 oppure in alternativa manualmente
 ```sh
-$ npm install react react-dom
+$ yarn install react react-dom
 ```
 
 #### Stili CSS
@@ -136,7 +136,7 @@ $ npm install react react-dom
 La libreria è composta da una parte di stili, ereditati dal package [bootstrap-italia](https://italia.github.io/bootstrap-italia/) che possono essere importati avendo installato la stessa con:
 
 ```sh
-$ npm install bootstrap-italia
+$ yarn install bootstrap-italia
 ```
 
 A seconda del bundler utilizzato, e delle sue configurazioni, si potranno importare direttamente gli stili CSS generati:
@@ -154,20 +154,3 @@ Avendo a disposizione il preprocessore [Sass](https://sass-lang.com/) sarà poss
 ```scss
 @import "bootstrap-italia/src/scss/bootstrap-italia.scss";
 ```
-
-## Continuous Integration
-
-E' disponibile un'istanza di CircleCI configurata per effettuare la build del repository ad ogni aggiornamento del branch `master`. 
-La build di Storybook è deployata sul branch `gh-pages` ed è disponibile pubblicamente su [italia.github.io/design-react-kit](https://italia.github.io/design-react-kit).
-
-### Job `build`
-
-Prenderà in carico l'esecuzione di `npm run build`, avviando Rollup ed integrando le ultime modifiche effettuate su branch `master` e `tag`.
-
-### Job `deploy-github-pages`
-
-Eseguirà i due comandi `npm run storybook:build` e `npm run storybook:deploy` necessari per buildare e deploylare la documentazione Storybook presente sulle GitHub Pages.
-
-### Job `npm-publish`
-
-Effettuerà il `npm publish` necessario ad aggiornare il package [npm](https://www.npmjs.com/~italia).
