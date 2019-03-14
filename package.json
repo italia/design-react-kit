@@ -27,22 +27,23 @@
         "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
         "@babel/preset-env": "^7.3.4",
         "@babel/preset-react": "^7.0.0",
+        "classnames": "^2.2.6",
         "@sambego/storybook-state": "^1.3.3",
-        "@storybook/addon-a11y": "^5.0.0",
-        "@storybook/addon-actions": "^5.0.0",
+        "@storybook/addon-a11y": "^5.0.1",
+        "@storybook/addon-actions": "^5.0.1",
         "@storybook/addon-console": "^1.1.0",
-        "@storybook/addon-info": "^5.0.0",
-        "@storybook/addon-knobs": "^5.0.0",
-        "@storybook/addon-links": "^5.0.0",
-        "@storybook/addon-notes": "^5.0.0",
-        "@storybook/addon-storyshots": "^5.0.0",
-        "@storybook/addon-storyshots-puppeteer": "^5.0.0",
-        "@storybook/addon-viewport": "^5.0.0",
-        "@storybook/addons": "^5.0.0",
-        "@storybook/react": "^5.0.0",
+        "@storybook/addon-info": "^5.0.1",
+        "@storybook/addon-knobs": "^5.0.1",
+        "@storybook/addon-links": "^5.0.1",
+        "@storybook/addon-notes": "^5.0.1",
+        "@storybook/addon-storyshots": "^5.0.1",
+        "@storybook/addon-viewport": "^5.0.1",
+        "@storybook/addons": "^5.0.1",
+        "@storybook/react": "^5.0.1",
         "babel-loader": "^8.0.5",
-        "bootstrap-italia": "^1.2.1",
+        "bootstrap-italia": "^1.2.3",
         "eslint": "^5.15.1",
+        "eslint-config-airbnb": "^17.1.0",
         "eslint-config-prettier": "^4.1.0",
         "eslint-plugin-babel": "^5.3.0",
         "eslint-plugin-jsx-a11y": "^6.2.1",
@@ -50,36 +51,42 @@
         "husky": "^1.3.1",
         "react-scripts": "^2.1.5",
         "react-scrollspy": "^3.3.5",
-        "react-select": "^2.4.1",
         "react-test-renderer": "^16.8.3",
-        "reactstrap": "^7.1.0",
         "rollup": "^1.4.1",
         "rollup-plugin-babel": "^4.3.2",
         "rollup-plugin-commonjs": "^9.2.1",
         "rollup-plugin-node-resolve": "^4.0.1",
         "run-script-os": "^1.0.5",
-        "storybook-readme": "^4.0.5",
-        "webfontloader": "^1.6.28"
+        "storybook-readme": "^4.0.5"
     },
     "peerDependencies": {
         "react": "^16.8.3",
         "react-dom": "^16.8.3"
     },
     "scripts": {
-        "install-dependencies": "if [ ! -d node_modules ]; then npm install && npx npm-install-peers; fi",
-        "install-dependencies:win32": "npm install && npx npm-install-peers",
-        "prebuild": "npm run install-dependencies",
+        "install-dependencies": "yarn install --peers",
+        "prebuild": "yarn install-dependencies",
         "build": "rollup -c scripts/rollup.config.js",
-        "storybook": "start-storybook -p 9001 -c .storybook -s ./static",
+        "prestorybook": "yarn install-dependencies",
+        "storybook": "build-storybook -c .storybook -s ./static",
+        "storybook:serve": "start-storybook -p 9001 -c .storybook -s ./static",
         "lint": "eslint src/",
         "lint:fix": "eslint --fix src/",
         "test": "export SKIP_PREFLIGHT_CHECK=true && react-scripts test --env=jsdom",
         "test:ci": "CI=true react-scripts test --env=jsdom",
-        "start": "npm run storybook"
+        "start": "yarn run storybook"
     },
     "husky": {
         "hooks": {
-            "pre-push": "npm run lint"
+            "pre-push": "yarn run lint"
         }
+    },
+    "dependencies": {
+        "jquery": "^3.3.1",
+        "prop-types": "^15.7.2",
+        "reactstrap": "^7.1.0",
+        "react-select": "^2.4.1",
+        "react-transition-group": "^2.6.0",
+        "webfontloader": "^1.6.28"
     }
 }

@@ -7,7 +7,7 @@ Fixes #
 
 #### PR Checklist
 <!-- To Mark a Checklist box, put "x" inside the square brackets. For Example - [ ] becomes [x] -->
-- [ ] My branch is up-to-date with the Upstream `master` branch.
+- [ ] My branch is up-to-date with the Upstream `next` branch.
 - [ ] The unit tests pass locally with my changes
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] I have added necessary documentation (if appropriate)

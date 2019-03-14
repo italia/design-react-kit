@@ -1,12 +1,12 @@
 import React from 'react';
-import {storiesOf} from '@storybook/react';
-import {withInfo} from '@storybook/addon-info';
+import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import Table from './Table';
 
 storiesOf('Table', module)
-    .add(
-        'Default',
-        withInfo('Default')(() => (
+  .add(
+    'Default',
+    withInfo('Default')(() => (
             <Table bordered className="u-text-r-xs">
                 <caption className="u-hiddenVisually">maiores eius et</caption>
                 <thead>
@@ -44,11 +44,11 @@ storiesOf('Table', module)
                     </tr>
                 </tbody>
             </Table>
-        ))
-    )
-    .add(
-        'Compact',
-        withInfo('Compact')(() => (
+    )),
+  )
+  .add(
+    'Compact',
+    withInfo('Compact')(() => (
             <Table
                 bordered
                 compact
@@ -89,11 +89,11 @@ storiesOf('Table', module)
                     </tr>
                 </tbody>
             </Table>
-        ))
-    )
-    .add(
-        'Complex',
-        withInfo('Complex')(() => (
+    )),
+  )
+  .add(
+    'Complex',
+    withInfo('Complex')(() => (
             <Table striped hoverable bordered>
                 <caption className="u-hiddenVisually">maiores eius et</caption>
                 <thead>
@@ -131,11 +131,11 @@ storiesOf('Table', module)
                     </tr>
                 </tbody>
             </Table>
-        ))
-    )
-    .add(
-        'Irregular',
-        withInfo('Irregular')(() => (
+    )),
+  )
+  .add(
+    'Irregular',
+    withInfo('Irregular')(() => (
             <Table bordered>
                 <caption className="u-hiddenVisually">maiores eius et</caption>
                 <colgroup span="2" />
@@ -200,11 +200,11 @@ storiesOf('Table', module)
                     </tr>
                 </tbody>
             </Table>
-        ))
-    )
-    .add(
-        'Responsive',
-        withInfo('Responsive')(() => (
+    )),
+  )
+  .add(
+    'Responsive',
+    withInfo('Responsive')(() => (
             <Table
                 bordered
                 responsive
@@ -276,11 +276,11 @@ storiesOf('Table', module)
                     </tr>
                 </tbody>
             </Table>
-        ))
-    )
-    .add(
-        'Swipe',
-        withInfo('Swipe')(() => (
+    )),
+  )
+  .add(
+    'Swipe',
+    withInfo('Swipe')(() => (
             <Table
                 bordered
                 responsive
@@ -358,11 +358,11 @@ storiesOf('Table', module)
                     </tr>
                 </tbody>
             </Table>
-        ))
-    )
-    .add(
-        'Two headers',
-        withInfo('Two headers')(() => (
+    )),
+  )
+  .add(
+    'Two headers',
+    withInfo('Two headers')(() => (
             <Table bordered>
                 <caption className="u-padding-r-bottom u-textLeft">
                     Delivery slots:
@@ -396,5 +396,5 @@ storiesOf('Table', module)
                     </tr>
                 </tbody>
             </Table>
-        ))
-    );
+    )),
+  );
