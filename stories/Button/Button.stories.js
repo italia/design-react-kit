@@ -136,7 +136,7 @@ const EsempiInterattiviComponent = () => {
         "warning",
         "link"
     ];
-    const dimensions = ["sm", "", "lg"];
+    const dimensions = ["xs", "sm", "lg"];
     const color = select("Variazioni", colors, colors[0]);
     const dimension = select("Dimensioni", dimensions, dimensions[0]);
     const block = boolean("Block", false);
@@ -145,7 +145,7 @@ const EsempiInterattiviComponent = () => {
     const label = text("Label", "");
 
     return (
-        <Button color={color} block={block} active={active} disabled={disabled}>
+        <Button color={color} block={block} size={dimension} active={active} disabled={disabled}>
             {label} {color} {dimension} {block ? "block" : ""}{" "}
             {active ? "attivo" : ""} {disabled ? "disabilitato" : ""}
         </Button>
