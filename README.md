@@ -48,7 +48,7 @@ La versione pubblica dello Storybook (relativa al branch `master`) è disponibil
 
 ## Come iniziare
 
-Clona il repository ed esegui `yarn storybook-serve` per avviare il server di sviluppo.
+Clona il repository ed esegui `yarn storybook:serve` per avviare il server di sviluppo.
 Uno script si occuperà di eseguire il comando `yarn install` necessario ad installare le dipendenze. 
 
 Storybook sarà quindi disponibile all'indirizzo http://localhost:6006

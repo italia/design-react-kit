@@ -47,7 +47,7 @@ Public version of Storybook (built from `master` branch) is available [here](htt
 
 ## Getting started
 
-Clone the repo and run `yarn storybook` to start the development server.
+Clone the repo and run `yarn storybook:serve` to start the development server.
 A script takes care of running the `yarn install` command needed to install dependencies.
 
 Storybook will therefore be available at http://localhost:6006
