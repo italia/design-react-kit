@@ -171,7 +171,7 @@ const ResponsiveComponent = () => (
                 </PagerItem>
                 <PagerItem>
                     <PagerLink aria-current="page" href="#">
-                        {/* <span className="d-sm-none">Pagina&nbsp;</span>11 */}
+                        <span className="d-sm-none">Pagina&nbsp;</span>11
                     </PagerLink>
                 </PagerItem>
                 <PagerItem className="d-sm-block">
