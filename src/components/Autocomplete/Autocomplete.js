@@ -217,10 +217,11 @@ class Autocomplete extends Component {
     const {
       options,
       placeholder,
-      isLabelActive,
       menuIsOpen,
       ...rest
     } = this.props;
+
+    const isLabelActive = !!inputText;
 
     const classNames = isLabelActive ? 'active' : '';
 
