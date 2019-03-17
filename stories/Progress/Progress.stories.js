@@ -24,18 +24,18 @@ stories.addDecorator(checkA11y);
 
 const EsempiComponent = () => (
     <div>
-        <Progress />
-        <Progress value="25" className="mt-3" />
-        <Progress value={50} className="mt-3" />
-        <Progress value={75} className="mt-3" />
-        <Progress value="100" className="mt-3" />
+        <Progress value="0" className="mt-3" style={{ height: 10 }}/>
+        <Progress value="25" className="mt-3" style={{ height: 10 }}/>
+        <Progress value={50} className="mt-3" style={{ height: 10 }}/>
+        <Progress value={75}     className="mt-3" style={{ height: 10 }}/>
+        <Progress value="100" className="mt-3" style={{ height: 10 }}/>
     </div>
 );
 stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
 
 stories.add(
     "Etichette",
-    withDocs(Etichette, withInfo()(() => <Progress value="25">25%</Progress>))
+    withDocs(Etichette, withInfo()(() => <Progress value="25" style={{ height: 20 }}>25%</Progress>))
 );
 
 const AltezzaComponent = () => (
