@@ -74,7 +74,7 @@ class ComponenteBarraDiNavigazione extends React.Component {
                                     href="#"
                                     onClick={this.onNavToggle}
                                     active={
-                                        inView && inView.startsWith("cap-3-")
+                                        inView && inView.startsWith("cap-3")
                                     }
                                 >
                                     <span className="dropdown-toggle">
@@ -82,13 +82,13 @@ class ComponenteBarraDiNavigazione extends React.Component {
                                     </span>
                                 </NavLink>
                                 <DropdownMenu>
-                                    <DropdownItem active={inView === "cap-3-1"}>
+                                    <DropdownItem active={inView === "cap-3-1"} href="#cap-3-1" >
                                         Capitolo 3 - 1
                                     </DropdownItem>
-                                    <DropdownItem active={inView === "cap-3-2"}>
+                                    <DropdownItem active={inView === "cap-3-2"} href="#cap-3-2">
                                         Capitolo 3 - 2
                                     </DropdownItem>
-                                    <DropdownItem active={inView === "cap-3-3"}>
+                                    <DropdownItem active={inView === "cap-3-3"} href="#cap-3-3">
                                         Capitolo 3 - 3
                                     </DropdownItem>
                                 </DropdownMenu>
