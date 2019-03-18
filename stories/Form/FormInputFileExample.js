@@ -34,7 +34,7 @@ class FormInputFileExample extends Component {
       <Form>
         <FormGroup>
           <Input type="file" id="exampleFormControlFile" />
-          <Label for="exampleFormControlFile">
+          <Label for="exampleFormControlFile" style={{position:'static'}}>
             Esempio campo senza personalizzazione grafica
           </Label>
         </FormGroup>
