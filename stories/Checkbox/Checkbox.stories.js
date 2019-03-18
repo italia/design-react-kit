@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, boolean, text } from "@storybook/addon-knobs/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
@@ -16,7 +16,7 @@ import Gruppi from "./Gruppi.md";
 import EsempiInterattivi from "./EsempiInterattivi.md";
 
 const stories = storiesOf("Componenti/Checkbox", module);
-stories.addDecorator(checkA11y);
+stories.addDecorator(withA11y);
 
 const EsempiComponent = () => (
     <Form>
@@ -101,7 +101,7 @@ stories.add(
 );
 
 const knobsStories = storiesOf("Componenti/Checkbox", module);
-knobsStories.addDecorator(checkA11y);
+knobsStories.addDecorator(withA11y);
 knobsStories.addDecorator(withKnobs);
 
 const EsempiInterattiviComponent = () => {

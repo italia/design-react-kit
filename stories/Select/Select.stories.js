@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
@@ -13,7 +13,7 @@ import ConRicerca from "./ConRicerca.md";
 import ConGruppiOpzioni from "./ConGruppiOpzioni.md";
 
 const stories = storiesOf("Componenti/Select", module);
-stories.addDecorator(checkA11y);
+stories.addDecorator(withA11y);
 
 stories.add(
     "Esempi",

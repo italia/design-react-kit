@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
@@ -29,7 +29,7 @@ import MenuIconLeft from "./MenuIconLeft.md";
 import MenuDark from "./MenuDark.md";
 
 const stories = storiesOf("Componenti/Dropdown", module);
-stories.addDecorator(checkA11y);
+stories.addDecorator(withA11y);
 
 stories.add(
     "Esempi",
@@ -93,7 +93,7 @@ stories.add(
 );
 
 const menuStories = storiesOf("Componenti/Dropdown/Dropdown menu", module);
-menuStories.addDecorator(checkA11y);
+menuStories.addDecorator(withA11y);
 
 const MenuVociAttiveComponent = () => (
     <div className="clearfix">
