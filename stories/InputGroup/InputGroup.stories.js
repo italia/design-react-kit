@@ -54,7 +54,7 @@ const EsempiComponent = () => (
                 </InputGroupAddon>
                 <Input type="text" id="basic-url" />
             </InputGroup>
-            <Label for="basic-url">La tua URL</Label>
+            <Label for="basic-url" style={{top: 'unset'}}>La tua URL</Label>
         </FormGroup>
 
         <InputGroup className="pb-3">
