@@ -7,7 +7,7 @@ import {
     select,
     boolean
 } from "@storybook/addon-knobs/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
@@ -20,22 +20,22 @@ import Background from "./Background.md";
 import EsempiInterattivi from "./EsempiInterattivi.md";
 
 const stories = storiesOf("Componenti/Progress", module);
-stories.addDecorator(checkA11y);
+stories.addDecorator(withA11y);
 
 const EsempiComponent = () => (
     <div>
-        <Progress />
-        <Progress value="25" className="mt-3" />
-        <Progress value={50} className="mt-3" />
-        <Progress value={75} className="mt-3" />
-        <Progress value="100" className="mt-3" />
+        <Progress value="0" className="mt-3" style={{ height: 10 }}/>
+        <Progress value="25" className="mt-3" style={{ height: 10 }}/>
+        <Progress value={50} className="mt-3" style={{ height: 10 }}/>
+        <Progress value={75} className="mt-3" style={{ height: 10 }}/>
+        <Progress value="100" className="mt-3" style={{ height: 10 }}/>
     </div>
 );
 stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
 
 stories.add(
     "Etichette",
-    withDocs(Etichette, withInfo()(() => <Progress value="25">25%</Progress>))
+    withDocs(Etichette, withInfo()(() => <Progress value="25" style={{ height: 20 }}>25%</Progress>))
 );
 
 const AltezzaComponent = () => (
@@ -61,7 +61,7 @@ stories.add(
 );
 
 const knobsStories = storiesOf("Componenti/Progress", module);
-knobsStories.addDecorator(checkA11y);
+knobsStories.addDecorator(withA11y);
 knobsStories.addDecorator(withKnobs);
 
 const EsempiInterattiviComponent = () => {

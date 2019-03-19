@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, select, boolean, text } from "@storybook/addon-knobs/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
@@ -132,7 +132,7 @@ const EsempiInterattiviComponent = () => {
 };
 
 storiesOf("Componenti/Badge", module)
-    .addDecorator(checkA11y)
+    .addDecorator(withA11y)
     .addDecorator(withKnobs)
     .add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)))
     .add("Contatore", withDocs(Contatore, withInfo({propTablesExclude: [Button]})(ContatoreComponent)))

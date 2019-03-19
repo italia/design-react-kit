@@ -99,7 +99,8 @@ class SelectExample extends React.Component {
                     isMulti={multi}
                     searchPlaceholder="Cerca una regione"
                 />
-                <Label>Label di esempio</Label>
+                <br/>
+                <Label style={{top: 'unset'}}>Label di esempio</Label>
             </FormGroup>
         );
     }

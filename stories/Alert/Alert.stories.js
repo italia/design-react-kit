@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 
 import { withKnobs, select, boolean } from "@storybook/addon-knobs/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
@@ -10,11 +10,11 @@ import { Alert, UncontrolledAlert } from "../../src";
 
 import AlertExample from "./AlertExample";
 
-import Esempi from "./docs/Esempi.md";
-import LinkEvidenziato from "./docs/LinkEvidenziato.md";
-import ContenutoAggiuntivo from "./docs/ContenutoAggiuntivo.md";
-import Chiusura from "./docs/Chiusura.md";
-import EsempiInterattivi from "./docs/EsempiInterattivi.md";
+import Esempi from "./Esempi.md";
+import LinkEvidenziato from "./LinkEvidenziato.md";
+import ContenutoAggiuntivo from "./ContenutoAggiuntivo.md";
+import Chiusura from "./Chiusura.md";
+import EsempiInterattivi from "./EsempiInterattivi.md";
 
 
 const EsempiComponent = () => (
@@ -79,25 +79,17 @@ const EsempiInterattiviComponent = () => {
 };
 
 storiesOf("Componenti/Alert", module)
-    .addDecorator(checkA11y)
-    .add("Esempi", EsempiComponent, {info:{text: Esempi}})
-    .add("Link evidenziato", LinkEvidenziatoComponent, {info:{text: LinkEvidenziato}})
-    .add("Contenuto aggiuntivo", ContenutoAggiuntivoComponent, {info:{text: ContenutoAggiuntivo}})
+    .addDecorator(withA11y)
+    .add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)))
+    .add("Link evidenziato", withDocs(LinkEvidenziato, withInfo()(LinkEvidenziatoComponent)))
+    .add("Contenuto aggiuntivo", withDocs(ContenutoAggiuntivo, withInfo()(ContenutoAggiuntivoComponent)))
     .addDecorator(withKnobs)
-    .add("Esempi Interattivi", EsempiInterattiviComponent, {info:{text: EsempiInterattivi}})
+    .add("Esempi Interattivi", withDocs(EsempiInterattivi, withInfo()(EsempiInterattiviComponent)))
 
 storiesOf("Componenti/Alert/Chiusura", module)
-    .addDecorator(checkA11y)
-    .add("Non controllata", ChiusuraNonControllataComponent, {
-        info:{
-            text: Chiusura,
-            propTables: null
-        }
-    })
-    .add("Controllata", ChiusuraControllataComponent, {
-        info:{
-            text: Chiusura,
-            propTables: [Alert],
-            propTablesExclude: [AlertExample],
-        }
-    })
+    .add("Non controllata", withDocs(Chiusura,withInfo({text: Chiusura,propTables:null})(ChiusuraNonControllataComponent)))
+    .add("Controllata", withDocs(Chiusura, withInfo({
+        text: Chiusura,
+        propTables: [Alert],
+        propTablesExclude: [AlertExample],
+    })(ChiusuraControllataComponent)))

@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, select, boolean } from "@storybook/addon-knobs/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
@@ -30,7 +30,7 @@ import Total from "./Total.md";
 import EsempiInterattivi from "./EsempiInterattivi.md";
 
 const stories = storiesOf("Componenti/Pager", module);
-stories.addDecorator(checkA11y);
+stories.addDecorator(withA11y);
 
 
 const EsempiComponent = () => (
@@ -195,7 +195,7 @@ stories.addParameters({viewport: {defaultViewport: 'iphone6'}})
 );
 
 const moreStories = storiesOf("Componenti/Pager/Funzioni aggiuntive", module);
-moreStories.addDecorator(checkA11y);
+moreStories.addDecorator(withA11y);
 
 const MoreComponent = () => (
     <Pager className="mb-3">
@@ -495,7 +495,7 @@ const TotalComponent = () => (
 moreStories.add("Total number", withDocs(Total, withInfo()(TotalComponent)));
 
 const knobsStories = storiesOf("Componenti/Pager", module);
-knobsStories.addDecorator(checkA11y);
+knobsStories.addDecorator(withA11y);
 knobsStories.addDecorator(withKnobs);
 
 const EsempiInterattiviComponent = () => {

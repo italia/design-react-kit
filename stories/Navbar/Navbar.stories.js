@@ -6,7 +6,7 @@ import {
     boolean,
     color
 } from "@storybook/addon-knobs/react";
-import { checkA11y } from "@storybook/addon-a11y";
+import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
@@ -36,7 +36,7 @@ import Inline from "./Inline.md";
 import EsempiInterattivi from "./EsempiInterattivi.md";
 
 const stories = storiesOf("Componenti/Navbar", module);
-stories.addDecorator(checkA11y);
+stories.addDecorator(withA11y);
 
 stories.add(
     "Esempi",
@@ -112,7 +112,7 @@ stories.add(
 );
 
 const knobsStories = storiesOf("Componenti/Navbar", module);
-knobsStories.addDecorator(checkA11y);
+knobsStories.addDecorator(withA11y);
 knobsStories.addDecorator(withKnobs);
 
 const EsempiInterattiviComponent = () => {
