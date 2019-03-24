@@ -95,7 +95,7 @@ const EsempiInterattiviComponent = () => {
     const target = () => document.getElementById(id);
 
     return (
-        <div style={{ padding: 250 }}>
+        <div style={{ padding: 250, textAlign: "center"}}>
             <Button
                 id={id}
                 color="primary"
