@@ -86,6 +86,7 @@ class SelectExample extends React.Component {
         return (
             <FormGroup className="m-3">
                 {icon ? <i className="ico-prefix it-youtube" /> : null}
+                <Label style={{position:'static'}}>Label di esempio</Label>
                 <Select
                     classic={classic}
                     options={options}
@@ -100,7 +101,6 @@ class SelectExample extends React.Component {
                     searchPlaceholder="Cerca una regione"
                 />
                 <br/>
-                <Label style={{top: 'unset'}}>Label di esempio</Label>
             </FormGroup>
         );
     }
