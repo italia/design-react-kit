@@ -72,10 +72,6 @@ stories.add(
     )
 );
 
-const store = new Store({
-    isOpen: false
-});
-
 const knobsStories = storiesOf("Componenti/Popover", module);
 knobsStories.addDecorator(withA11y);
 knobsStories.addDecorator(withKnobs);
@@ -89,7 +85,9 @@ const EsempiInterattiviComponent = () => {
         "Body",
         "Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente. Non trovi?"
     );
-
+    const store = new Store({
+        isOpen: false
+    });
     const id = "example";
     // Avoid Jest complaints
     const target = () => document.getElementById(id);
