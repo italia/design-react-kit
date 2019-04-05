@@ -9,7 +9,7 @@
 - *Storybook updated to v5.0.0*
 - *Bootstrap Italia dependency updated to stable version v1.2.2*
 
-`next` branch preview is on Netlify here: https://kind-ramanujan-f0d53e.netlify.com/
+`next` branch preview is on Netlify here: https://design-react-kit.netlify.com/
 
 ## Intro
 
@@ -17,7 +17,7 @@
 
 Components are showcased with [Storybook](https://storybook.js.org/).
 
-Public version of Storybook (built from `master` branch) is available [here](https://italia.github.io/design-react-kit).
+Public version of Storybook (built from `master` branch) is available here: https://italia.github.io/design-react-kit.
 
 ## Table of contents
 
