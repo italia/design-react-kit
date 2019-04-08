@@ -255,25 +255,25 @@ controlStories.add(
 
 const AvatarComponent = () => (
     <LinkList>
-        <LinkListItem active className="avatar">
+        <LinkListItem active>
             <img
-                className="avatar"
+                className="avatar lg-size"
                 src="http://via.placeholder.com/40x40"
                 title="avatartitle"
             />
             <span>Link list 1 active </span>
         </LinkListItem>
-        <LinkListItem className="avatar">
+        <LinkListItem>
             <img
-                className="avatar"
+                className="avatar lg-size"
                 src="http://via.placeholder.com/40x40"
                 title="avatartitle"
             />
             <span>Link list 2 </span>
         </LinkListItem>
-        <LinkListItem disabled className="avatar">
+        <LinkListItem disabled>
             <img
-                className="avatar"
+                className="avatar lg-size"
                 src="http://via.placeholder.com/40x40"
                 title="avatartitle"
             />
