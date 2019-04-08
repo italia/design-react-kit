@@ -24,35 +24,73 @@ stories.addDecorator(withA11y);
 
 const EsempiComponent = () => (
     <div>
-        <Progress value="0" className="mt-3" style={{ height: 10 }}/>
-        <Progress value="25" className="mt-3" style={{ height: 10 }}/>
-        <Progress value={50} className="mt-3" style={{ height: 10 }}/>
-        <Progress value={75} className="mt-3" style={{ height: 10 }}/>
-        <Progress value="100" className="mt-3" style={{ height: 10 }}/>
+        <div className="progress" style={{marginBottom: "2em"}}>
+            <div className="progress-bar" role="progressbar" style={{width: "0%"}} aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div className="progress" style={{marginBottom: "2em"}}>
+            <div className="progress-bar" role="progressbar" style={{width: "25%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div className="progress" style={{marginBottom: "2em"}}>
+            <div className="progress-bar" role="progressbar" style={{width: "50%"}} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div className="progress" style={{marginBottom: "2em"}}>
+            <div className="progress-bar" role="progressbar" style={{width: "75%"}} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div className="progress" style={{marginBottom: "2em"}}>
+            <div className="progress-bar" role="progressbar" style={{width: "100%"}} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
     </div>
 );
 stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
 
+const EtichetteComponent = () => {
+
+      <div>
+            <div className="progress-bar-wrapper">
+                  <div className="progress-bar-label">
+                  <span className="sr-only">Progresso </span>35%
+                  </div>
+                  <div className="progress">
+                        <div className="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+            </div>
+      </div>
+};
+
 stories.add(
     "Etichette",
-    withDocs(Etichette, withInfo()(() => <Progress value="25" style={{ height: 20 }}>25%</Progress>))
+    withDocs(Etichette, withInfo()(EtichetteComponent))
 );
 
 const AltezzaComponent = () => (
     <div>
-        <Progress value="25" style={{ height: 1 }} />
-        <Progress value="25" style={{ height: 10 }} className="mt-3" />
-        <Progress value="25" style={{ height: 20 }} className="mt-3" />
+          <div className="progress" style={{marginBottom: "2em"}}>
+            <div className="progress-bar" role="progressbar" style={{width: "25%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div className="progress" style={{marginBottom: "2em", height:"1em"}}>
+            <div className="progress-bar" role="progressbar" style={{width: "25%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div className="progress" style={{marginBottom: "2em", height:"2em"}}>
+            <div className="progress-bar" role="progressbar" style={{width: "25%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
     </div>
 );
 stories.add("Altezza", withDocs(Altezza, withInfo()(AltezzaComponent)));
 
 const BackgroundComponent = () => (
     <div>
-        <Progress color="success" value="25" className="mt-3" />
-        <Progress color="info" value={50} className="mt-3" />
-        <Progress color="warning" value={75} className="mt-3" />
-        <Progress color="danger" value="100" className="mt-3" />
+        <div className="progress progress-color" style={{marginBottom: "2em"}}>
+            <div className="progress-bar bg-success" role="progressbar" style={{width: "25%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      <div className="progress progress-color" style={{marginBottom: "2em"}}>
+            <div className="progress-bar bg-info" role="progressbar" style={{width: "33%"}} aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div className="progress progress-color" style={{marginBottom: "2em"}}>
+            <div className="progress-bar bg-warning" role="progressbar" style={{width: "50%"}} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div className="progress progress-color" style={{marginBottom: "2em"}}>
+            <div className="progress-bar bg-danger" role="progressbar" style={{width: "66%"}} aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
     </div>
 );
 stories.add(
@@ -72,14 +110,19 @@ const EsempiInterattiviComponent = () => {
     const label = text("Etichetta", "");
 
     return (
-        <Progress
-            color={color}
-            value={value}
-            className="m-3"
-            style={{ height }}
-        >
-            {label}
-        </Progress>
+      <div>
+            <div className="progress-bar-wrapper">
+                  <div className="progress-bar-label">
+                        <span className="sr-only">Progresso </span>{value}%
+                  </div>
+
+                  <div className="progress progress-color" style={{marginBottom: "2em", height:`${height}px`}}>
+                        <div className={`progress-bar bg-${color}`} role="progressbar" style={{width: `${value}%`}} aria-valuenow={`${value}`} aria-valuemin="0" aria-valuemax="100">{label}</div>
+                  </div>
+            </div>
+      </div>
+
+
     );
 };
 knobsStories.add(
