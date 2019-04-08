@@ -48,13 +48,13 @@ const EsempiComponent = () => (
         </InputGroup>
 
         <FormGroup>
+        <Label for="basic-url" style={{position: 'static'}}>La tua URL</Label>
             <InputGroup className="pb-3">
                 <InputGroupAddon addonType="prepend">
                     https://esempio.it/utente/
                 </InputGroupAddon>
                 <Input type="text" id="basic-url" />
             </InputGroup>
-            <Label for="basic-url">La tua URL</Label>
         </FormGroup>
 
         <InputGroup className="pb-3">
