@@ -640,35 +640,35 @@ const FormDisabilitatoComponent = () => (
         <Form>
             <fieldset disabled>
                 <FormGroup>
+                <Label for="disabledTextInput" style = {{position : ' static ' }}>Input </Label>
                     <Input
                         id="disabledTextInput"
                         type="text"
                         placeholder="Disabled input"
                         disabled
                     />
-                    <Label for="disabledTextInput">Input </Label>
                 </FormGroup>
 
                 <FormGroup className="mt-3">
+                <Label for="exampleSelect" style = {{position : ' static ' }}>Select disabilitata</Label>
                     <Select
                         id="exampleSelect"
                         placeholder="Scegli..."
                         options={[{ value: "", label: "..." }]}
                         disabled
-                    />
-                    <Label for="exampleSelect">Select disabilitata</Label>
+                    />    
                 </FormGroup>
 
                 <FormGroup className="mt-3">
+                <Label for="disabledSelect" style = {{position : ' static ' }}>
+                Select default disabilitata
+            </Label>
                     <Select
                         classic
                         className="form-control"
                         placeholder="Select disabilitato"
                         disabled
                     />
-                    <Label for="disabledSelect">
-                        Select default disabilitata
-                    </Label>
                 </FormGroup>
 
                 <div className="form-row">
