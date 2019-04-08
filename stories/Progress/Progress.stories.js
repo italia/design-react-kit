@@ -19,7 +19,7 @@ import Altezza from "./Altezza.md";
 import Background from "./Background.md";
 import EsempiInterattivi from "./EsempiInterattivi.md";
 
-const stories = storiesOf("Componenti/Progress", module);
+const stories = storiesOf("Componenti/Progress Indicators", module);
 stories.addDecorator(withA11y);
 
 const EsempiComponent = () => (
