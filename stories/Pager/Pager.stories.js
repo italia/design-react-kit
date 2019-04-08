@@ -1,7 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs, select, boolean } from "@storybook/addon-knobs/react";
-import { Viewport } from "@storybook/addon-viewport";
 import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
@@ -32,6 +31,7 @@ import EsempiInterattivi from "./EsempiInterattivi.md";
 
 const stories = storiesOf("Componenti/Pager", module);
 stories.addDecorator(withA11y);
+
 
 const EsempiComponent = () => (
     <Pager>
@@ -156,7 +156,6 @@ stories.add(
 );
 
 const ResponsiveComponent = () => (
-    <Viewport name="iphone6">
         <Pager className="mb-3">
             <PagerList>
                 <PagerItem>
@@ -164,10 +163,10 @@ const ResponsiveComponent = () => (
                         <i className="it-chevron-left" />
                     </PagerLink>
                 </PagerItem>
-                <PagerItem className="d-none d-sm-block">
+                <PagerItem className="d-sm-block">
                     <PagerLink href="#">9</PagerLink>
                 </PagerItem>
-                <PagerItem className="d-none d-sm-block">
+                <PagerItem className="d-sm-block">
                     <PagerLink href="#">10</PagerLink>
                 </PagerItem>
                 <PagerItem>
@@ -175,10 +174,10 @@ const ResponsiveComponent = () => (
                         <span className="d-sm-none">Pagina&nbsp;</span>11
                     </PagerLink>
                 </PagerItem>
-                <PagerItem className="d-none d-sm-block">
+                <PagerItem className="d-sm-block">
                     <PagerLink href="#">12</PagerLink>
                 </PagerItem>
-                <PagerItem className="d-none d-sm-block">
+                <PagerItem className="d-sm-block">
                     <PagerLink href="#">13</PagerLink>
                 </PagerItem>
                 <PagerItem>
@@ -188,9 +187,9 @@ const ResponsiveComponent = () => (
                 </PagerItem>
             </PagerList>
         </Pager>
-    </Viewport>
 );
-stories.add(
+stories.addParameters({viewport: {defaultViewport: 'iphone6'}})
+.add(
     "Responsive",
     withDocs(Responsive, withInfo()(ResponsiveComponent))
 );
