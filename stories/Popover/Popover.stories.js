@@ -84,15 +84,6 @@ knobsStories.addDecorator(withKnobs);
 class EsempiInterattiviComponent extends React.Component {
     constructor(props) {
         super(props);
-        //All the constants required by Component are changed to Class Members
-        this.disabled = boolean("Disabilitato", false);
-        this.placements = ["top", "bottom", "left", "right"];
-        this.placement = select("Posizione", this.placements, this.placements[0]);
-        this.title = text("Titolo", "Titolo del popover");
-        this.body = text(
-            "Body",
-            "Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente. Non trovi?"
-        );
         this.id = "example";
         // Avoid Jest complaints
         this.target = () => document.getElementById(this.id);
@@ -107,21 +98,21 @@ class EsempiInterattiviComponent extends React.Component {
                 <Button
                     id={this.id}
                     color="primary"
-                    disabled={this.disabled}
+                    disabled={this.props.disabled}
                     onClick={() => store.set({ isOpen: !store.get("isOpen") })}
                 >
-                    Popover {this.disabled ? "Disabilitato" : ""}
+                    Popover {this.props.disabled ? "Disabilitato" : ""}
                 </Button>
 
                 <State store={store}>
                     <Popover
-                        placement={this.placement}
+                        placement={this.props.placement}
                         target={this.target}
                         toggle={() => store.set({ isOpen: !store.get("isOpen") })}
                         isOpen={store.get("isOpen")}
                     >
-                        <PopoverHeader>{this.title}</PopoverHeader>
-                        <PopoverBody>{this.body}</PopoverBody>
+                        <PopoverHeader>{this.props.title}</PopoverHeader>
+                        <PopoverBody>{this.props.body}</PopoverBody>
                     </Popover>
                 </State>
             </div>
@@ -134,6 +125,23 @@ knobsStories.add(
         EsempiInterattivi,
         withInfo({
             propTablesExclude: [Button, State]
-        })(props => <EsempiInterattiviComponent {...props} />)
+        })(props => {
+            //All the proerties for Addon Knobs are placed back in the function
+            const disabled = boolean("Disabilitato", false);
+            const placements = ["top", "bottom", "left", "right"];
+            const placement = select("Posizione", placements, placements[0]);
+            const title = text("Titolo", "Titolo del popover");
+            const body = text(
+                "Body",
+                "Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente. Non trovi?"
+            );
+            //All the knob properties are passed as props
+            return <EsempiInterattiviComponent
+                disabled={disabled}
+                placement={placement}
+                title={title}
+                body={body}
+                {...props} />
+        })
     )
 );
