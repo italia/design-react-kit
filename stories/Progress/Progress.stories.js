@@ -43,7 +43,7 @@ const EsempiComponent = () => (
 );
 stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
 
-const EtichetteComponent = () => {
+const EtichetteComponent = () => (
 
       <div>
             <div className="progress-bar-wrapper">
@@ -51,11 +51,11 @@ const EtichetteComponent = () => {
                   <span className="sr-only">Progresso </span>35%
                   </div>
                   <div className="progress">
-                        <div className="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div className="progress-bar" role="progressbar" style={{width: "35%"}} aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
             </div>
       </div>
-};
+);
 
 stories.add(
     "Etichette",
