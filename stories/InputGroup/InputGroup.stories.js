@@ -28,47 +28,67 @@ import AggiuntaBottoni from "./AggiuntaBottoni.md";
 import BottoniDropdown from "./BottoniDropdown.md";
 import PulsantiSegmentati from "./PulsantiSegmentati.md";
 
-const stories = storiesOf("Componenti/Input Group", module);
+const stories = storiesOf("Componenti/Form/Input Group", module);
 stories.addDecorator(withA11y);
 
 const EsempiComponent = () => (
-    <div className="p-3">
-        <InputGroup className="pb-3">
-            <InputGroupAddon addonType="prepend">@</InputGroupAddon>
-            <Input type="text" placeholder="Username" aria-label="Username" />
-        </InputGroup>
+      <div className="p-3">
+      <div className="form-group">
+            <input type="text" className="form-control" id="exampleInputText" />
+            <label htmlFor="exampleInputText">Campo di tipo testuale</label>
+      </div>
+      <div className="form-group">
+            <input type="email" className="form-control" id="exampleInputEmail1" aria-labelledby="emailHelp1" />
+            <label htmlFor="exampleInputEmail1">Campo di tipo email</label>
+      </div>
+      <div className="form-group">
+            <input type="number" className="form-control" id="exampleInputNumber" />
+            <label htmlFor="exampleInputNumber">Campo di tipo numerico</label>
+      </div>
+      <div className="form-group">
+            <input type="tel" className="form-control" id="exampleInputTelephone" />
+            <label htmlFor="exampleInputTelephone">Campo di tipo telefono</label>
+      </div>
+      <div className="form-group">
+            <input type="time" className="form-control" id="exampleInputTime" min="9:00" max="18:00" />
+            <label htmlFor="exampleInputTime">Campo di tipo ora</label>
+      </div>
 
-        <InputGroup className="pb-3">
-            <Input
-                type="text"
-                placeholder="Mail utente"
-                aria-label="Mail utente"
-            />
-            <InputGroupAddon addonType="append">@esempio.it</InputGroupAddon>
-        </InputGroup>
+      <div className="form-group">
+            <input type="password" className="form-control input-password" id="exampleInputPassword"
+                  aria-labelledby="infoPassword" />
+            <label htmlFor="exampleInputPassword">Password con label, placeholder e testo di aiuto</label>
+            <small id="infoPassword" className="form-text text-muted">Inserisci almeno 8 caratteri e una lettera
+                  maiuscola</small>
+      </div>
+      <div className="form-group">
+            <input type="password" className="form-control input-password input-password-strength-meter"
+                  id="exampleInputPassword3" />
+            <label htmlFor="exampleInputPassword3">Password con strength meter</label>
+      </div>
+      <div className="form-group">
+            <input className="form-control" type="text" id="input-text-disabled" disabled />
+            <label htmlFor="input-text-disabled">Contenuto disabilitato</label>
+      </div>
+      <div className="form-group">
+            <input type="search" className="autocomplete" placeholder="Testo da cercare" id="autocomplete-regioni"
+                  name="autocomplete-regioni"
+                  data-autocomplete='[{"text":"Abruzzo","link":"#"},{"text":"Basilicata","link":"#"},{"text":"Calabria","link":"#"},{"text":"Campania","link":"#"},{"text":"Emilia Romagna","link":"#"},{"text":"Friuli Venezia Giulia","link":"#"},{"text":"Lazio","link":"#"},{"text":"Liguria","link":"#"},{"text":"Lombardia","link":"#"},{"text":"Marche","link":"#"},{"text":"Molise","link":"#"},{"text":"Piemonte","link":"#"},{"text":"Puglia","link":"#"},{"text":"Sardegna","link":"#"},{"text":"Sicilia","link":"#"},{"text":"Toscana","link":"#"},{"text":"Trentino Alto Adige","link":"#"},{"text":"Umbria","link":"#"},{"text":"Valle d’Aosta","link":"#"},{"text":"Veneto","link":"#"}]' />
+            <span className="autocomplete-icon" aria-hidden="true">
+                  <svg className="icon icon-sm">
+                        <use xlinkHref="/bootstrap-italia/dist/svg/sprite.svg#it-search"></use>
+                  </svg>
+            </span>
+            <label htmlFor="autocomplete-regioni" className="sr-only">Cerca nel sito</label>
+      </div>
+      <div className="form-group">
+            <textarea id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label htmlFor="exampleFormControlTextarea1">Esempio di area di testo</label>
+      </div>
+</div>
 
-        <FormGroup>
-            <InputGroup className="pb-3">
-                <InputGroupAddon addonType="prepend">
-                    https://esempio.it/utente/
-                </InputGroupAddon>
-                <Input type="text" id="basic-url" />
-            </InputGroup>
-            <Label for="basic-url">La tua URL</Label>
-        </FormGroup>
-
-        <InputGroup className="pb-3">
-            <InputGroupAddon addonType="prepend">€</InputGroupAddon>
-            <Input type="number" aria-label="€" />
-            <InputGroupAddon addonType="append">,00</InputGroupAddon>
-        </InputGroup>
-
-        <InputGroup>
-            <InputGroupAddon addonType="prepend">Textarea</InputGroupAddon>
-            <Input type="textarea" aria-label="Textarea" />
-        </InputGroup>
-    </div>
 );
+
 stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
 
 const DimensioniComponent = () => (
@@ -90,6 +110,7 @@ const DimensioniComponent = () => (
             <Input type="text" aria-label="Testo grande" />
         </InputGroup>
     </div>
+
 );
 stories.add(
     "Dimensioni",
