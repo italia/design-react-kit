@@ -98,7 +98,7 @@ stories.add(
     withDocs(Background, withInfo()(BackgroundComponent))
 );
 
-const knobsStories = storiesOf("Componenti/Progress", module);
+const knobsStories = storiesOf("Componenti/Progress Indicators", module);
 knobsStories.addDecorator(withA11y);
 knobsStories.addDecorator(withKnobs);
 
