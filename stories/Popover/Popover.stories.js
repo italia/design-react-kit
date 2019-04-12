@@ -80,44 +80,44 @@ const knobsStories = storiesOf("Componenti/Popover", module);
 knobsStories.addDecorator(withA11y);
 knobsStories.addDecorator(withKnobs);
 
-const EsempiInterattiviComponent = () => {
-    const disabled = boolean("Disabilitato", false);
-    const placements = ["top", "bottom", "left", "right"];
-    const placement = select("Posizione", placements, placements[0]);
-    const title = text("Titolo", "Titolo del popover");
-    const body = text(
-        "Body",
-        "Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente. Non trovi?"
-    );
-
-    const id = "example";
-    // Avoid Jest complaints
-    const target = () => document.getElementById(id);
-
-    return (
-        <div style={{ padding: 250, textAlign: "center"}}>
-            <Button
-                id={id}
-                color="primary"
-                disabled={disabled}
-                onClick={() => store.set({ isOpen: !store.get("isOpen") })}
-            >
-                Popover {disabled ? "Disabilitato" : ""}
-            </Button>
-
-            <State store={store}>
-                <Popover
-                    placement={placement}
-                    target={target}
-                    toggle={() => store.set({ isOpen: !store.get("isOpen") })}
-                    isOpen={store.get("isOpen")}
+//Changed The Functional Component to a Class
+class EsempiInterattiviComponent extends React.Component {
+    constructor(props) {
+        super(props);
+        this.id = "example";
+        // Avoid Jest complaints
+        this.target = () => document.getElementById(this.id);
+    }
+    //All a LifeCycle Method to manage the store State when components unrender.
+    componentWillUnmount() {
+        store.set({ isOpen: false });
+    }
+    render() {
+        return (
+            <div style={{ padding: 250, textAlign: "center" }}>
+                <Button
+                    id={this.id}
+                    color="primary"
+                    disabled={this.props.disabled}
+                    onClick={() => store.set({ isOpen: !store.get("isOpen") })}
                 >
-                    <PopoverHeader>{title}</PopoverHeader>
-                    <PopoverBody>{body}</PopoverBody>
-                </Popover>
-            </State>
-        </div>
-    );
+                    Popover {this.props.disabled ? "Disabilitato" : ""}
+                </Button>
+
+                <State store={store}>
+                    <Popover
+                        placement={this.props.placement}
+                        target={this.target}
+                        toggle={() => store.set({ isOpen: !store.get("isOpen") })}
+                        isOpen={store.get("isOpen")}
+                    >
+                        <PopoverHeader>{this.props.title}</PopoverHeader>
+                        <PopoverBody>{this.props.body}</PopoverBody>
+                    </Popover>
+                </State>
+            </div>
+        );
+    }
 };
 knobsStories.add(
     "Esempi interattivi",
@@ -125,6 +125,23 @@ knobsStories.add(
         EsempiInterattivi,
         withInfo({
             propTablesExclude: [Button, State]
-        })(EsempiInterattiviComponent)
+        })(props => {
+            //All the proerties for Addon Knobs are placed back in the function
+            const disabled = boolean("Disabilitato", false);
+            const placements = ["top", "bottom", "left", "right"];
+            const placement = select("Posizione", placements, placements[0]);
+            const title = text("Titolo", "Titolo del popover");
+            const body = text(
+                "Body",
+                "Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente. Non trovi?"
+            );
+            //All the knob properties are passed as props
+            return <EsempiInterattiviComponent
+                disabled={disabled}
+                placement={placement}
+                title={title}
+                body={body}
+                {...props} />
+        })
     )
 );
