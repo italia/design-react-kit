@@ -35,16 +35,24 @@ class ExampleInputText extends React.Component {
             }
       }
 
-      toggleLabel = () => {
+      toggleFocusLabel = () => {
             this.setState({
-                  isFocused: !this.state.isFocused
+                  isFocused: true
             });
+      }
+
+      toggleBlurLabel = (e) => {
+            if(e.target.value===""){
+                  this.setState({
+                        isFocused: !this.state.isFocused
+                  });
+            }
       }
 
       render() {
             return(
                   <div className="form-group">
-        <input type="text" className={this.state.isFocused? "form-control focus--mouse": "form-control"} onFocus={this.toggleLabel} onBlur={this.toggleLabel} id="exampleInputText" />
+        <input type="text" className={this.state.isFocused? "form-control focus--mouse": "form-control"} onFocus={this.toggleFocusLabel} onBlur={(e)=>this.toggleBlurLabel(e)} id="exampleInputText" />
         <label htmlFor="exampleInputText" className={this.state.isFocused?"active":""}>Campo di tipo testuale</label>
       </div>
             )
@@ -59,16 +67,24 @@ class ExampleInputEmail extends React.Component {
             }
       }
 
-      toggleLabel = () => {
+      toggleFocusLabel = () => {
             this.setState({
-                  isFocused: !this.state.isFocused
+                  isFocused: true
             });
+      }
+
+      toggleBlurLabel = (e) => {
+            if(e.target.value===""){
+                  this.setState({
+                        isFocused: !this.state.isFocused
+                  });
+            }
       }
 
       render() {
             return(
                   <div className="form-group">
-        <input type="email" className={this.state.isFocused? "form-control focus--mouse": "form-control"} onFocus={this.toggleLabel} onBlur={this.toggleLabel} id="exampleInputEmail" />
+        <input type="email" className={this.state.isFocused? "form-control focus--mouse": "form-control"} onFocus={this.toggleFocusLabel} onBlur={(e)=>this.toggleBlurLabel(e)} id="exampleInputEmail" />
         <label htmlFor="exampleInputEmail" className={this.state.isFocused?"active":""}>Campo di tipo email</label>
       </div>
             )
@@ -83,16 +99,24 @@ class ExampleInputNumber extends React.Component {
             }
       }
 
-      toggleLabel = () => {
+      toggleFocusLabel = () => {
             this.setState({
-                  isFocused: !this.state.isFocused
+                  isFocused: true
             });
+      }
+
+      toggleBlurLabel = (e) => {
+            if(e.target.value===""){
+                  this.setState({
+                        isFocused: !this.state.isFocused
+                  });
+            }
       }
 
       render() {
             return(
                   <div className="form-group">
-        <input type="number" className={this.state.isFocused? "form-control focus--mouse": "form-control"} onFocus={this.toggleLabel} onBlur={this.toggleLabel} id="exampleInputNumber" />
+        <input type="number" className={this.state.isFocused? "form-control focus--mouse": "form-control"} onFocus={this.toggleFocusLabel} onBlur={(e)=>this.toggleBlurLabel(e)} id="exampleInputNumber" />
         <label htmlFor="exampleInputNumber" className={this.state.isFocused?"active":""}>Campo di tipo numerico</label>
       </div>
             )
@@ -107,16 +131,24 @@ class ExampleInputTelephone extends React.Component {
             }
       }
 
-      toggleLabel = () => {
+      toggleFocusLabel = () => {
             this.setState({
-                  isFocused: !this.state.isFocused
+                  isFocused: true
             });
+      }
+
+      toggleBlurLabel = (e) => {
+            if(e.target.value===""){
+                  this.setState({
+                        isFocused: !this.state.isFocused
+                  });
+            }
       }
 
       render() {
             return(
                   <div className="form-group">
-        <input type="tel" className={this.state.isFocused? "form-control focus--mouse": "form-control"} onFocus={this.toggleLabel} onBlur={this.toggleLabel} id="exampleInputTelephone" />
+        <input type="tel" className={this.state.isFocused? "form-control focus--mouse": "form-control"} onFocus={this.toggleFocusLabel} onBlur={(e)=>this.toggleBlurLabel(e)} id="exampleInputTelephone" />
         <label htmlFor="exampleInputTelephone" className={this.state.isFocused?"active":""}>Campo di tipo telefono</label>
       </div>
             )
@@ -131,16 +163,24 @@ class ExampleInputTime extends React.Component {
             }
       }
 
-      toggleLabel = () => {
+      toggleFocusLabel = () => {
             this.setState({
-                  isFocused: !this.state.isFocused
+                  isFocused: true
             });
+      }
+
+      toggleBlurLabel = (e) => {
+            if(e.target.value===""){
+                  this.setState({
+                        isFocused: !this.state.isFocused
+                  });
+            }
       }
 
       render() {
             return(
                   <div className="form-group">
-        <input type="time" className={this.state.isFocused? "form-control focus--mouse": "form-control"} onFocus={this.toggleLabel} onBlur={this.toggleLabel} id="exampleInputTime" min="9:00" max="18:00" />
+        <input type="time" className={this.state.isFocused? "form-control focus--mouse": "form-control"} onFocus={this.toggleFocusLabel} onBlur={()=>this.toggleBlurLabel(e)} id="exampleInputTime" min="9:00" max="18:00" />
         <label htmlFor="exampleInputTime" className={this.state.isFocused?"active":""}>Campo di tipo ora</label>
       </div>
             )
@@ -155,16 +195,24 @@ class ExampleInputPassword extends React.Component {
             }
       }
 
-      toggleLabel = () => {
+      toggleFocusLabel = () => {
             this.setState({
-                  isFocused: !this.state.isFocused
+                  isFocused: true
             });
+      }
+
+      toggleBlurLabel = (e) => {
+            if(e.target.value===""){
+                  this.setState({
+                        isFocused: !this.state.isFocused
+                  });
+            }
       }
 
       render() {
             return(
                   <div className="form-group">
-        <input type="password" className={this.state.isFocused? "form-control input-password focus--mouse": "form-control input-password"} onFocus={this.toggleLabel} onBlur={this.toggleLabel} id="exampleInputPassword"  aria-labelledby="infoPassword"/>
+        <input type="password" className={this.state.isFocused? "form-control input-password focus--mouse": "form-control input-password"} onFocus={this.toggleFocusLabel} onBlur={()=>this.toggleBlurLabel(e)} id="exampleInputPassword"  aria-labelledby="infoPassword"/>
         <label htmlFor="exampleInputPassword" className={this.state.isFocused?"active":""}>Password con label, placeholder e testo di aiuto</label>
         <small id="infoPassword" className="form-text text-muted">Inserisci almeno 8 caratteri e una lettera maiuscola</small>
       </div>
@@ -180,16 +228,24 @@ class ExampleInputPasswordConfirm extends React.Component {
             }
       }
 
-      toggleLabel = () => {
+      toggleFocusLabel = () => {
             this.setState({
-                  isFocused: !this.state.isFocused
+                  isFocused: true
             });
+      }
+
+      toggleBlurLabel = (e) => {
+            if(e.target.value===""){
+                  this.setState({
+                        isFocused: !this.state.isFocused
+                  });
+            }
       }
 
       render() {
             return(
                   <div className="form-group">
-        <input type="password" className={this.state.isFocused? "form-control input-password input-password-strength-meter focus--mouse": "form-control input-password input-password-strength-meter"} onFocus={this.toggleLabel} onBlur={this.toggleLabel} id="exampleInputPassword3" />
+        <input type="password" className={this.state.isFocused? "form-control input-password input-password-strength-meter focus--mouse": "form-control input-password input-password-strength-meter"} onFocus={this.toggleFocusLabel} onBlur={(e)=>this.toggleBlurLabel(e)} id="exampleInputPassword3" />
         <label htmlFor="exampleInputPassword3" className={this.state.isFocused?"active":""}>Password con strength meter</label>
       </div>
             )
@@ -204,16 +260,24 @@ class ExampleInputDisable extends React.Component {
             }
       }
 
-      toggleLabel = () => {
+      toggleFocusLabel = () => {
             this.setState({
-                  isFocused: !this.state.isFocused
+                  isFocused: true
             });
+      }
+
+      toggleBlurLabel = (e) => {
+            if(e.target.value===""){
+                  this.setState({
+                        isFocused: !this.state.isFocused
+                  });
+            }
       }
 
       render() {
             return(
                   <div className="form-group">
-        <input type="text" className={this.state.isFocused? "form-control focus--mouse": "form-control"} onFocus={this.toggleLabel} onBlur={this.toggleLabel} id="input-text-disabled" disabled/>
+        <input type="text" className={this.state.isFocused? "form-control focus--mouse": "form-control"} onFocus={this.toggleFocusLabel} onBlur={(e)=>this.toggleBlurLabel(e)} id="input-text-disabled" disabled/>
         <label htmlFor="input-text-disabled" className={this.state.isFocused?"active":""}>Contenuto disabilitato</label>
       </div>
             )
@@ -231,9 +295,9 @@ class ExampleInputAutoComplete extends React.Component {
             }
       }
 
-      toggleLabel = () => {
+      toggleFocusLabel = () => {
             this.setState({
-                  isFocused: !this.state.isFocused
+                  isFocused: true
             });
       }
 
@@ -257,16 +321,24 @@ class ExampleInputTextArea extends React.Component {
             }
       }
 
-      toggleLabel = () => {
+      toggleFocusLabel = () => {
             this.setState({
-                  isFocused: !this.state.isFocused
+                  isFocused: true
             });
+      }
+
+      toggleBlurLabel = (e) => {
+            if(e.target.value===""){
+                  this.setState({
+                        isFocused: !this.state.isFocused
+                  });
+            }
       }
 
       render() {
             return(
                   <div className="form-group">
-        <textarea className={this.state.isFocused? "focus--mouse": ""} onFocus={this.toggleLabel} onBlur={this.toggleLabel} id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea className={this.state.isFocused? "focus--mouse": ""} onFocus={this.toggleFocusLabel} onBlur={(e)=>this.toggleBlurLabel(e)} id="exampleFormControlTextarea1" rows="3"></textarea>
         <label htmlFor="exampleFormControlTextarea1" className={this.state.isFocused?"active":""}>Esempio di area di testo</label>
       </div>
             )
