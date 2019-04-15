@@ -39,58 +39,6 @@ const EsempiComponent = () => (
 
 stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
 
-const DimensioniComponent = () => (
-    <div>
-        <InputGroup size="sm" className="mb-3">
-            <InputGroupAddon addonType="prepend">Testo piccolo</InputGroupAddon>
-            <Input type="text" aria-label="Testo piccolo" />
-        </InputGroup>
-
-        <InputGroup className="mb-3">
-            <InputGroupAddon addonType="prepend">
-                Testo predefinito
-            </InputGroupAddon>
-            <Input type="text" aria-label="Testo predefinito" />
-        </InputGroup>
-
-        <InputGroup size="lg">
-            <InputGroupAddon addonType="prepend">Testo grande</InputGroupAddon>
-            <Input type="text" aria-label="Testo grande" />
-        </InputGroup>
-    </div>
-
-);
-stories.add(
-    "Dimensioni",
-    withDocs(Dimensioni, withInfo()(DimensioniComponent))
-);
-
-const CheckboxRadioComponent = () => (
-    <div>
-        <InputGroup className="mb-3">
-            <InputGroupAddon addonType="prepend">
-                <InputGroup>
-                    <Input type="checkbox" aria-label="Addon" />
-                </InputGroup>
-            </InputGroupAddon>
-            <Input type="text" aria-label="Addon" />
-        </InputGroup>
-
-        <InputGroup>
-            <InputGroupAddon addonType="prepend">
-                <InputGroup>
-                    <Input type="radio" aria-label="Addon" />
-                </InputGroup>
-            </InputGroupAddon>
-            <Input type="text" aria-label="Addon" />
-        </InputGroup>
-    </div>
-);
-stories.add(
-    "Checkbox e radio",
-    withDocs(CheckboxRadio, withInfo()(CheckboxRadioComponent))
-);
-
 const InputMultipliComponent = () => (
     <div>
         <InputGroup>
