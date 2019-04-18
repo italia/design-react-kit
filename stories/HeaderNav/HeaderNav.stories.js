@@ -5,14 +5,17 @@ import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 import { withKnobs } from "@storybook/addon-knobs/react";
 
-import { Navbar, NavbarToggler, Offcanvas } from "../../src";
+import { Navbar, NavbarToggler, } from "../../src";
 
-import OffcanvasExample from "./OffcanvasExample";
+import HeaderNavExample from './HeaderNavExample'
 
 import Esempi from "./Esempi.md";
 
+const EsempiComponent = () => (
+    <HeaderNavExample></HeaderNavExample>
+);
 
-storiesOf("Componenti/Offcanvas", module)
+storiesOf("Componenti/HeaderNav", module)
     .addDecorator(withA11y)
     .addDecorator(withKnobs)
     .addParameters({ viewport: { defaultViewport: "iphone6" } })
@@ -21,8 +24,8 @@ storiesOf("Componenti/Offcanvas", module)
         withDocs(
             Esempi,
             withInfo({
-                propTables: [Navbar, NavbarToggler, Offcanvas],
-                propTablesExclude: [OffcanvasExample]
-            })(() => <OffcanvasExample />)
+                propTables: [Navbar, NavbarToggler],
+                propTablesExclude: [HeaderNavExample]
+            })(EsempiComponent)
         )
     );
