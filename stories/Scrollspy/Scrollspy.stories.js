@@ -11,7 +11,7 @@ import ComponenteMenuInline from "./ComponenteMenuInline";
 import PosizionamentoFondoPagina from "./PosizionamentoFondoPagina";
 import PosizionamentoTestaAlla from "./PosizionamentoTestaAlla";
 
-const stories = storiesOf("Componenti/Scrollspy", module);
+const stories = storiesOf("Componenti/NavScroll", module);
 stories.addDecorator(withA11y);
 
 stories.add(
