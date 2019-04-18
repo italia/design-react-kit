@@ -4,39 +4,48 @@ import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 import { withDocs } from "../utils";
 
-import { Scrollspy } from "../../src";
-
-import ComponenteBarraDiNavigazione from "./ComponenteBarraDiNavigazione";
-import ComponenteListaElenco from "./ComponenteListaElenco";
-
-import BarraDiNavigazione from "./BarraDiNavigazione.md";
-import ListaElenco from "./ListaElenco.md";
+import MenuInline from "./MenuInline.md";
+import PosizionamentoFondo from "./PosizionamentoFondo.md";
+import PosizionamentoTesta from "./PosizionamentoTestaAlla.md";
+import ComponenteMenuInline from "./ComponenteMenuInline";
+import PosizionamentoFondoPagina from "./PosizionamentoFondoPagina";
+import PosizionamentoTestaAlla from "./PosizionamentoTestaAlla";
 
 const stories = storiesOf("Componenti/Scrollspy", module);
 stories.addDecorator(withA11y);
 
 stories.add(
-    "Esempio in barra di navigazione",
-    withDocs(
-        BarraDiNavigazione,
-        withInfo({
-            propTables: [Scrollspy],
-            propTablesExclude: [ComponenteBarraDiNavigazione]
-        })(() => {
-            return <ComponenteBarraDiNavigazione />;
-        })
-    )
-);
+      "Posizionamento a fondo pagina con linea a sinistra",
+      withDocs(
+          PosizionamentoFondo,
+          withInfo({
+              propTables: [PosizionamentoFondoPagina]
+          })(() => {
+              return <PosizionamentoFondoPagina />;
+          })
+      )
+  );
 
 stories.add(
-    "Esempio con una lista elenco",
-    withDocs(
-        ListaElenco,
-        withInfo({
-            propTables: [Scrollspy],
-            propTablesExclude: [ComponenteListaElenco]
-        })(() => {
-            return <ComponenteListaElenco />;
-        })
-    )
-);
+      "Posizionamento in testa alla pagina con linea a destra",
+      withDocs(
+          PosizionamentoTesta,
+          withInfo({
+              propTables: [PosizionamentoTestaAlla]
+          })(() => {
+              return <PosizionamentoTestaAlla />;
+          })
+      )
+  );
+
+stories.add(
+      "Menu Inline",
+      withDocs(
+          MenuInline,
+          withInfo({
+              propTables: [ComponenteMenuInline]
+          })(() => {
+              return <ComponenteMenuInline />;
+          })
+      )
+  );
