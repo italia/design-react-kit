@@ -18,7 +18,7 @@ const EsempiComponent = () => (
 storiesOf("Componenti/HeaderNav", module)
     .addDecorator(withA11y)
     .addDecorator(withKnobs)
-    .addParameters({ viewport: { defaultViewport: "iphone6" } })
+    // .addParameters({ viewport: { defaultViewport: "iphone6" } })
     .add(
         "Esempio",
         withDocs(
