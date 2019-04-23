@@ -34,7 +34,6 @@ stories.addDecorator(withA11y);
 
 const EsempiComponent = () => (
 <InputGroupExample></InputGroupExample>
-
 );
 
 stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));

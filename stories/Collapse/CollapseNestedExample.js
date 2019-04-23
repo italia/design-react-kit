@@ -75,6 +75,7 @@ class CollapseNestedPanel extends React.Component {
 
     toggle = id => {
         this.setState({
+            ...this.defaultState,
             [`collapseOpen${id}`]: !this.state[`collapseOpen${id}`]
         });
     };

@@ -63,7 +63,7 @@ class InputGroupDropdownExample extends React.Component {
               if (split) {
                 return (
                   <div>
-                    <Button color="primary">Action</Button>
+                    <Button color="primary" size="lg" className="mt-3" >Action</Button>
                     <DropdownToggle split color="primary" />
                   </div>
                 );
