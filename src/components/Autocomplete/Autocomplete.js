@@ -30,30 +30,12 @@ SelectContainer.propTypes = {
 };
 
 const Control = (props) => {
-  const { children, innerProps, selectProps } = props;
+  const { children, innerProps } = props;
   const { innerRef, ...rest } = innerProps;
-  const { inputValue, onInputClear } = selectProps;
 
-  const hasValue = !!inputValue;
 
   return (
     <div className="autocomplete-control" {...rest}>
-      <button
-        className="autocomplete-clear"
-        style={{ visibility: hasValue ? 'visible' : 'hidden' }}
-        onClick={onInputClear}
-      >
-        <svg
-          fill="#000000"
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="https://www.w3.org/2000/svg"
-        >
-          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
-          <path d="M0 0h24v24H0z" fill="none" />
-        </svg>
-      </button>
       {children}
     </div>
   );
@@ -235,10 +217,11 @@ class Autocomplete extends Component {
     const {
       options,
       placeholder,
-      isLabelActive,
       menuIsOpen,
       ...rest
     } = this.props;
+
+    const isLabelActive = !!inputText;
 
     const classNames = isLabelActive ? 'active' : '';
 
