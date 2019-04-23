@@ -18,12 +18,12 @@ import PopoverHoverExample from "./PopoverHoverExample";
 
 import PopoverExample from "./PopoverExample";
 import PopoverPositionExample from "./PopoverPositionExample";
-import DismissiblePopover from "./DismissiblePopover.md";
+import DismissAlClickSuccessivo from "./DismissAlClickSuccessivo.md";
 import Esempi from "./Esempi.md";
 import QuattroDirezioni from "./QuattroDirezioni.md";
 import ElementiDisabilitati from "./ElementiDisabilitati.md";
 import EsempiInterattivi from "./EsempiInterattivi.md";
-import AperturaHover from "./AperturaHover.md";
+import ModalitàHover from "./ModalitàHover.md";
 const stories = storiesOf("Componenti/Popover", module);
 stories.addDecorator(withA11y);
 
@@ -38,9 +38,9 @@ stories.add(
     )
 );
 stories.add(
-    "AperturaHover",
+    "Modalità Hover",
     withDocs(
-        AperturaHover,
+        ModalitàHover,
         withInfo({
             propTables: [Popover, PopoverHeader, PopoverBody],
             propTablesExclude: [PopoverExample]
@@ -89,7 +89,7 @@ stories.add(
     )
 );
 
-const DismissiblePopoverComponent = () => {
+const DismissAlClickSuccessivoComponent = () => {
     return (
         <div>
             <Button id="PopoverFocus" color="primary" type="button">
@@ -111,12 +111,12 @@ const DismissiblePopoverComponent = () => {
     );
 };
 stories.add(
-    "Dismissible Popover",
+    " Dismiss al click successivo",
     withDocs(
-        DismissiblePopover,
+        DismissAlClickSuccessivo,
         withInfo({
             propTablesExclude: [Button]
-        })(DismissiblePopoverComponent)
+        })(DismissAlClickSuccessivoComponent)
     )
 );
 
