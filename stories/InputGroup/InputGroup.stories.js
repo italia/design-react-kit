@@ -27,100 +27,16 @@ import AggiunteMultiple from "./AggiunteMultiple.md";
 import AggiuntaBottoni from "./AggiuntaBottoni.md";
 import BottoniDropdown from "./BottoniDropdown.md";
 import PulsantiSegmentati from "./PulsantiSegmentati.md";
+import InputGroupExample from "./InputGroupExample";
 
-const stories = storiesOf("Componenti/Input Group", module);
+const stories = storiesOf("Componenti/Form/Input Group", module);
 stories.addDecorator(withA11y);
 
 const EsempiComponent = () => (
-    <div className="p-3">
-        <InputGroup className="pb-3">
-            <InputGroupAddon addonType="prepend">@</InputGroupAddon>
-            <Input type="text" placeholder="Username" aria-label="Username" />
-        </InputGroup>
-
-        <InputGroup className="pb-3">
-            <Input
-                type="text"
-                placeholder="Mail utente"
-                aria-label="Mail utente"
-            />
-            <InputGroupAddon addonType="append">@esempio.it</InputGroupAddon>
-        </InputGroup>
-
-        <FormGroup>
-        <Label for="basic-url" style={{position: 'static'}}>La tua URL</Label>
-            <InputGroup className="pb-3">
-                <InputGroupAddon addonType="prepend">
-                    https://esempio.it/utente/
-                </InputGroupAddon>
-                <Input type="text" id="basic-url" />
-            </InputGroup>
-        </FormGroup>
-
-        <InputGroup className="pb-3">
-            <InputGroupAddon addonType="prepend">€</InputGroupAddon>
-            <Input type="number" aria-label="€" />
-            <InputGroupAddon addonType="append">,00</InputGroupAddon>
-        </InputGroup>
-
-        <InputGroup>
-            <InputGroupAddon addonType="prepend">Textarea</InputGroupAddon>
-            <Input type="textarea" aria-label="Textarea" />
-        </InputGroup>
-    </div>
+<InputGroupExample></InputGroupExample>
 );
+
 stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
-
-const DimensioniComponent = () => (
-    <div>
-        <InputGroup size="sm" className="mb-3">
-            <InputGroupAddon addonType="prepend">Testo piccolo</InputGroupAddon>
-            <Input type="text" aria-label="Testo piccolo" />
-        </InputGroup>
-
-        <InputGroup className="mb-3">
-            <InputGroupAddon addonType="prepend">
-                Testo predefinito
-            </InputGroupAddon>
-            <Input type="text" aria-label="Testo predefinito" />
-        </InputGroup>
-
-        <InputGroup size="lg">
-            <InputGroupAddon addonType="prepend">Testo grande</InputGroupAddon>
-            <Input type="text" aria-label="Testo grande" />
-        </InputGroup>
-    </div>
-);
-stories.add(
-    "Dimensioni",
-    withDocs(Dimensioni, withInfo()(DimensioniComponent))
-);
-
-const CheckboxRadioComponent = () => (
-    <div>
-        <InputGroup className="mb-3">
-            <InputGroupAddon addonType="prepend">
-                <InputGroup>
-                    <Input type="checkbox" aria-label="Addon" />
-                </InputGroup>
-            </InputGroupAddon>
-            <Input type="text" aria-label="Addon" />
-        </InputGroup>
-
-        <InputGroup>
-            <InputGroupAddon addonType="prepend">
-                <InputGroup>
-                    <Input type="radio" aria-label="Addon" />
-                </InputGroup>
-            </InputGroupAddon>
-            <Input type="text" aria-label="Addon" />
-        </InputGroup>
-    </div>
-);
-stories.add(
-    "Checkbox e radio",
-    withDocs(CheckboxRadio, withInfo()(CheckboxRadioComponent))
-);
 
 const InputMultipliComponent = () => (
     <div>
