@@ -7,16 +7,23 @@ import { withDocs } from "../utils";
 
 import { State, Store } from "@sambego/storybook-state";
 
-import { Popover, PopoverHeader, PopoverBody, Button } from "../../src";
+import {
+    Popover,
+    PopoverHeader,
+    PopoverBody,
+    Button,
+    UncontrolledPopover
+} from "../../src";
+import PopoverHoverExample from "./PopoverHoverExample";
 
 import PopoverExample from "./PopoverExample";
 import PopoverPositionExample from "./PopoverPositionExample";
-
+import DismissiblePopover from "./DismissiblePopover.md";
 import Esempi from "./Esempi.md";
 import QuattroDirezioni from "./QuattroDirezioni.md";
 import ElementiDisabilitati from "./ElementiDisabilitati.md";
 import EsempiInterattivi from "./EsempiInterattivi.md";
-
+import AperturaHover from "./AperturaHover.md";
 const stories = storiesOf("Componenti/Popover", module);
 stories.addDecorator(withA11y);
 
@@ -28,6 +35,16 @@ stories.add(
             propTables: [Popover, PopoverHeader, PopoverBody],
             propTablesExclude: [PopoverExample]
         })(() => <PopoverExample />)
+    )
+);
+stories.add(
+    "AperturaHover",
+    withDocs(
+        AperturaHover,
+        withInfo({
+            propTables: [Popover, PopoverHeader, PopoverBody],
+            propTablesExclude: [PopoverExample]
+        })(() => <PopoverHoverExample />)
     )
 );
 
@@ -72,6 +89,37 @@ stories.add(
     )
 );
 
+const DismissiblePopoverComponent = () => {
+    return (
+        <div>
+            <Button id="PopoverFocus" color="primary" type="button">
+                Launch Popover (Focus)
+            </Button>
+            <UncontrolledPopover
+                trigger="focus"
+                placement="bottom"
+                target="PopoverFocus"
+            >
+                <PopoverHeader>Focus Trigger</PopoverHeader>
+                <PopoverBody>
+                    Focusing on the trigging element makes this popover appear.
+                    Blurring (clicking away) makes it disappear. You cannot
+                    select this text as the popover will disappear when you try.
+                </PopoverBody>
+            </UncontrolledPopover>
+        </div>
+    );
+};
+stories.add(
+    "Dismissible Popover",
+    withDocs(
+        DismissiblePopover,
+        withInfo({
+            propTablesExclude: [Button]
+        })(DismissiblePopoverComponent)
+    )
+);
+
 const store = new Store({
     isOpen: false
 });
@@ -108,7 +156,9 @@ class EsempiInterattiviComponent extends React.Component {
                     <Popover
                         placement={this.props.placement}
                         target={this.target}
-                        toggle={() => store.set({ isOpen: !store.get("isOpen") })}
+                        toggle={() =>
+                            store.set({ isOpen: !store.get("isOpen") })
+                        }
                         isOpen={store.get("isOpen")}
                     >
                         <PopoverHeader>{this.props.title}</PopoverHeader>
@@ -118,7 +168,7 @@ class EsempiInterattiviComponent extends React.Component {
             </div>
         );
     }
-};
+}
 knobsStories.add(
     "Esempi interattivi",
     withDocs(
@@ -136,12 +186,15 @@ knobsStories.add(
                 "Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente. Non trovi?"
             );
             //All the knob properties are passed as props
-            return <EsempiInterattiviComponent
-                disabled={disabled}
-                placement={placement}
-                title={title}
-                body={body}
-                {...props} />
+            return (
+                <EsempiInterattiviComponent
+                    disabled={disabled}
+                    placement={placement}
+                    title={title}
+                    body={body}
+                    {...props}
+                />
+            );
         })
     )
 );
