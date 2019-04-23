@@ -619,7 +619,7 @@ const TestoAiutoComponent = () => (
             </FormGroup>
         </Form>
 
-        <Form inline>
+        <Form >
             <FormGroup>
                 <PasswordInput id="inputPassword6" className="mx-sm-3" />
                 <Label for="inputPassword6">Password</Label>

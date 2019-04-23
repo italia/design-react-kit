@@ -69,12 +69,12 @@ class FormGroupsExample extends Component {
             <Input type="text" id="inputCity" />
             <Label for="inputCity">Città</Label>
           </FormGroup>
-          <FormGroup className="col-md-4">
+          <FormGroup className="col-md-4" style={{bottom:"50px"}}>
+            <Label for="inputState" style={{position:"static"}}>Comune</Label>
             <Select
               placeholder="Scegli..."
               options={[{ value: "", label: "..." }]}
             />
-            <Label for="inputState">Comune</Label>
           </FormGroup>
           <FormGroup className="col-md-2">
             <Input type="text" id="inputCAP" />
