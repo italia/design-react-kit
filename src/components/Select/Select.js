@@ -193,8 +193,9 @@ MenuList.propTypes = {
 };
 
 const Option = (props) => {
-  const { children, isSelected, innerProps } = props;
+  const { children, isSelected, innerProps, selectProps } = props;
   const { innerRef, ...rest } = innerProps;
+  const { toggleMenuIsOpen } = selectProps;
   const classNames = [
     'select-menu-option dropdown-menu-list-option',
     isSelected ? 'active' : '',
@@ -202,7 +203,7 @@ const Option = (props) => {
 
   return (
     <li className={classNames} {...rest}>
-      <span>{children}</span>
+      <span onClick={()=>toggleMenuIsOpen(false)}>{children}</span>
     </li>
   );
 };
@@ -211,6 +212,7 @@ Option.propTypes = {
   children: PropTypes.node,
   innerProps: PropTypes.any,
   isSelected: PropTypes.bool,
+  selectProps: PropTypes.any
 };
 
 const Placeholder = (props) => {
