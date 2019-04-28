@@ -195,7 +195,7 @@ MenuList.propTypes = {
 const Option = (props) => {
   const { children, isSelected, innerProps, selectProps } = props;
   const { innerRef, ...rest } = innerProps;
-  const { toggleMenuIsOpen } = selectProps;
+  const { toggleMenuIsOpen, isMulti } = selectProps;
   const classNames = [
     'select-menu-option dropdown-menu-list-option',
     isSelected ? 'active' : '',
@@ -203,7 +203,7 @@ const Option = (props) => {
 
   return (
     <li className={classNames} {...rest}>
-      <span onClick={()=>toggleMenuIsOpen(false)}>{children}</span>
+      <span onClick={()=>{ isMulti?toggleMenuIsOpen(true):toggleMenuIsOpen(false) }}>{children}</span>
     </li>
   );
 };
