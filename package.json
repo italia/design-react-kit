@@ -86,7 +86,7 @@
         "prop-types": "^15.7.2",
         "react-select": "^2.4.1",
         "react-transition-group": "^2.6.0",
-        "reactstrap": "^7.1.0",
+        "reactstrap": "^8.0.0",
         "webfontloader": "^1.6.28"
     }
 }
