@@ -57,7 +57,7 @@
         "rollup-plugin-commonjs": "^9.2.1",
         "rollup-plugin-node-resolve": "^4.0.1",
         "run-script-os": "^1.0.5",
-        "storybook-readme": "^4.0.5"
+        "storybook-readme": "^5.0.3"
     },
     "peerDependencies": {
         "react": "^16.8.3",

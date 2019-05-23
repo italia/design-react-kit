@@ -80,7 +80,13 @@ const EsempiInterattiviComponent = () => {
 
 storiesOf("Componenti/Alert", module)
     .addDecorator(withA11y)
-    .add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)))
+    .add("Esempi",EsempiComponent,
+    {
+        readme: {
+        // override docs
+        sidebar: Esempi,
+        
+      },})
     .add("Link evidenziato", withDocs(LinkEvidenziato, withInfo()(LinkEvidenziatoComponent)))
     .add("Contenuto aggiuntivo", withDocs(ContenutoAggiuntivo, withInfo()(ContenutoAggiuntivoComponent)))
     .addDecorator(withKnobs)
