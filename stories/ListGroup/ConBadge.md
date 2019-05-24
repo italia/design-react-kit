@@ -1,3 +1,0 @@
-### Con i badge
-
-<!-- STORY -->
