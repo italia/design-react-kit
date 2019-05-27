@@ -19,27 +19,25 @@ stories.addDecorator(withA11y);
 const colors = [
     "Primary",
     "Secondary",
-    "Tertiary",
-    "Quaternary",
     "Success",
     "Info",
     "Danger",
-    "Warning",
+    "Warning", 
     "Link"
 ];
 
 const EsempiComponent = () => (
     <div>
-        {colors.map(color => (
-            <div key={color} className="mb-2">
-                <Button color={color.toLowerCase()} className="mr-1">
-                    {color}
-                </Button>
-                <Button outline color={color.toLowerCase()} className="mr-1">
-                    {color} Outline
-                </Button>
-            </div>
-        ))}
+    {colors.map(color => (
+        <div key={color} className="mb-2">
+            <button type="button" className={`btn btn-${color.toLowerCase()}`}>
+                {color}
+            </button>{' '}
+            <button type="button" className={`btn btn-outline-${color.toLowerCase()}`}>
+                {color}
+            </button>     
+        </div>
+    ))}
     </div>
 );
 stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
@@ -47,12 +45,8 @@ stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
 const DimensioniComponent = () => (
     <section>
         <div>
-            <Button color="primary" size="lg" className="mr-1">
-                Primary Large
-            </Button>
-            <Button color="secondary" size="lg">
-                Secondary Large
-            </Button>
+        <button type="button" class="btn btn-primary">Primary</button>{' '}
+        <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
             <div className="mt-3" />
             <Button color="primary" size="sm" className="mr-1">
                 Primary Small
