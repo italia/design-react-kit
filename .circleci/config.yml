@@ -121,11 +121,11 @@ workflows:
             tags:
               only: /.*/
 
-      - deploy-github-pages:
-          requires:
-            - build
-
-      - npm-publish:
-          requires:
-            - build
-          filters: *tag_filters
+#      - deploy-github-pages:
+#          requires:
+#            - build
+#
+#      - npm-publish:
+#          requires:
+#            - build
+#          filters: *tag_filters
