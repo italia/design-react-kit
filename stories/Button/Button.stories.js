@@ -45,49 +45,37 @@ stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
 const DimensioniComponent = () => (
     <section>
         <div>
-        <button type="button" class="btn btn-primary">Primary</button>{' '}
-        <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+            <button type="button" class="btn btn-primary btn-lg">Primary Large</button>{' '}
+            <button type="button" class="btn btn-secondary btn-lg">Secondary Large</button>
+            
             <div className="mt-3" />
-            <Button color="primary" size="sm" className="mr-1">
-                Primary Small
-            </Button>
-            <Button color="secondary" size="sm">
-                Secondary Small
-            </Button>
+            <button type="button" class="btn btn-primary btn-sm">Primary Small</button>{' '}
+            <button type="button" class="btn btn-secondary btn-sm">Secondary Small</button>
+
             <div className="mt-3" />
-            <Button color="primary" size="xs" className="mr-1">
-                Primary Mini
-            </Button>
-            <Button color="secondary" size="xs">
-                Secondary Mini
-            </Button>
+            <button type="button" class="btn btn-primary btn-xs">Primary Mini</button>{' '}
+            <button type="button" class="btn btn-secondary btn-xs">Secondary Mini</button>
+
             <div className="mt-3" />
-            <Button color="primary" block>
-                Primary Block
-            </Button>
-            <Button color="secondary" block>
-                Secondary Block
-            </Button>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Primary Block</button>{' '}
+            <button type="button" class="btn btn-secondary btn-lg btn-block">Secondary Block</button>
         </div>
     </section>
 );
 stories.add(
-    "Dimensioni",
+    "Varianti di dimensione",
     withDocs(Dimensioni, withInfo()(DimensioniComponent))
 );
 
 const StatoAttivoComponent = () => (
     <div>
-        {colors.map(color => (
-            <Button
-                key={color}
-                color={color.toLowerCase()}
-                active
-                className="mr-1"
-            >
+    {colors.map(color => (
+        <span>
+            <button type="button" className={`btn btn-${color.toLowerCase()}`}>
                 {color}
-            </Button>
-        ))}
+            </button>{' '}     
+        </span>
+    ))}
     </div>
 );
 stories.add(
