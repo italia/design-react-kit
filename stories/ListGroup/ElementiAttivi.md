@@ -1,3 +1,0 @@
-### Elementi attivi
-
-<!-- STORY -->
