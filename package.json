@@ -40,7 +40,7 @@
         "@storybook/addons": "^5.0.1",
         "@storybook/react": "^5.0.1",
         "babel-loader": "^8.0.5",
-        "bootstrap-italia": "^1.2.3",
+        "bootstrap-italia": "1.2.10",
         "classnames": "^2.2.6",
         "eslint": "^5.15.1",
         "eslint-config-airbnb": "^17.1.0",

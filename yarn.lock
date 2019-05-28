@@ -3069,14 +3069,14 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap-italia@^1.2.3:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-1.2.6.tgz#575be56c8ae91c3b2afd21eedfa621cde017d43b"
-  integrity sha512-MSxfSyaY3Y7SJ1JP9cxf6jJauIn6umUVOfetU6ckQUw+nELjVMslg3pfXEbRxmUKZSST8H09CSeIUMx3iLvEOw==
+bootstrap-italia@1.2.10:
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-1.2.10.tgz#20c962b02dfbfb839e8aeff9d0a7f3d2a864b6e8"
+  integrity sha512-iAsgYxc0X+1/jhrjEa6kZBbC3g4tTkkJ6TCWc36pJ6eo2vN/40lUN2BJ1k9BAz/jS/fVf9iDOHnovVw0ratvYw==
   dependencies:
     bootstrap "4.3.1"
     bootstrap-select "1.13.5"
-    jquery "3.3.1"
+    jquery "^3.4.1"
     owl.carousel "2.3.4"
     popper.js "1.14.7"
     svgxuse "1.2.6"
@@ -7444,15 +7444,15 @@ joi@^11.1.1:
     isemail "3.x.x"
     topo "2.x.x"
 
-jquery@3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
-  integrity sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
-
 jquery@>=1.8.3:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.0.tgz#8de513fa0fa4b2c7d2e48a530e26f0596936efdf"
   integrity sha512-ggRCXln9zEqv6OqAGXFEcshF5dSBvCkzj6Gm2gzuR5fWawaX8t7cxKVkkygKODrDAzKdoYw3l/e3pm3vlT4IbQ==
+
+jquery@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
+  integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
 
 js-beautify@^1.8.9:
   version "1.9.1"
