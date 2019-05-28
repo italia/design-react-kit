@@ -114,19 +114,19 @@ stories.add(
 const ButtonIconComponent = () => (
     <div>
         <button class="btn btn-success btn-lg btn-icon">
-            <svg class="icon icon-white">{/*Add Icon Later */}</svg>
+            <svg class="icon icon-white"><use xlinkHref="/svg/sprite.svg#it-star-full"></use></svg>
             <span>Icon Button Lg</span>
         </button>{" "}
         <button class="btn btn-primary btn-icon">
-            <svg class="icon icon-white">{/*Add Icon Later */}</svg>
+            <svg class="icon icon-white"><use xlinkHref="/svg/sprite.svg#it-star-full"></use></svg>
             <span>Icon Button</span>
         </button>{" "}
         <button class="btn btn-danger btn-sm btn-icon">
-            <svg class="icon icon-secondary">{/*Add Icon Later */}</svg>
+            <svg class="icon icon-secondary"><use xlinkHref="/svg/sprite.svg#it-star-full"></use></svg>
             <span>Icon Button Sm</span>
         </button>{" "}
         <button class="btn btn-info btn-xs btn-icon">
-            <svg class="icon icon-danger">{/*Add Icon Later */}</svg>
+            <svg class="icon icon-danger"><use xlinkHref="/svg/sprite.svg#it-star-full"></use></svg>
             <span>Icon Button Xs</span>
         </button>
     </div>
@@ -179,15 +179,6 @@ knobsStories.addDecorator(withA11y);
 knobsStories.addDecorator(withKnobs);
 
 const EsempiInterattiviComponent = () => {
-    const colors = [
-        "primary",
-        "secondary",
-        "success",
-        "info",
-        "danger",
-        "warning",
-        "link"
-    ];
     const dimensions = ["btn-xs", "btn-sm", "btn-lg"];
     const color = select("Variazioni", colors, colors[0]);
     const dimension = select("Dimensioni", dimensions, dimensions[0]);

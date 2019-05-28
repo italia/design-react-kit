@@ -34,7 +34,7 @@ class PosizionamentoTestaAlla extends React.Component {
                   <a className="it-back-button" href="#" style={(this.state.isNavOpen)?{display: "block"
                         }:{display: "none" }} onClick={this.onNavScrollToggle}><svg
                               className="icon icon-sm icon-primary align-top">
-                              <use xlinkHref="/bootstrap-italia/dist/svg/sprite.svg#it-chevron-left"></use>
+                              <use xlinkHref="/svg/sprite.svg#it-chevron-left"></use>
                         </svg><span>Back </span></a>
                   <div className="menu-wrapper">
                         <div className="link-list-wrapper">

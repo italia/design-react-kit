@@ -9,14 +9,14 @@ class ComponenteMenuInline extends React.Component {
         return (
             <Fragment>
                 <nav className="inline-menu">
-  <div className="link-list-wrapper">
-    <ul className="link-list">
-      <ComponenteMenuList collapseN="One"></ComponenteMenuList>
-      <ComponenteMenuList collapseN="Two"></ComponenteMenuList>
-      <ComponenteMenuList collapseN="Three"></ComponenteMenuList>
-    </ul>
-  </div>
-</nav>
+                    <div className="link-list-wrapper">
+                        <ul className="link-list">
+                            <ComponenteMenuList collapseN="One"></ComponenteMenuList>
+                            <ComponenteMenuList collapseN="Two"></ComponenteMenuList>
+                            <ComponenteMenuList collapseN="Three"></ComponenteMenuList>
+                        </ul>
+                    </div>
+                </nav>
             </Fragment>
         );
     }
@@ -44,18 +44,18 @@ class ComponenteMenuList extends React.Component {
       render() {
             const collapseN = this.props.CollapseN;
             return (
-                  <li>
-                  <a className={this.state.isNavOpen?"list-item large medium right-icon":"list-item large medium right-icon collapsed"} href={`#collapse${collapseN}`} data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne" onClick={(e)=>this.onNavScrollToggle(e)}><span>Link list 1</span><svg className="icon icon-xs icon-primary right"><use xlinkHref="/bootstrap-italia/dist/svg/sprite.svg#it-expand"></use></svg></a>
-              <ul className={this.state.isNavOpen?"link-sublist collapse show":"link-sublist collapse"} id="collapseOne">
-                <li><a className="list-item" href="#"><span>Link list 1</span></a>
+                <li>
+                    <a className={this.state.isNavOpen?"list-item large medium right-icon":"list-item large medium right-icon collapsed"} href={`#collapse${collapseN}`} data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne" onClick={(e)=>this.onNavScrollToggle(e)}>
+                        <span>Link list 1</span>
+                        <svg className="icon icon-primary icon-sm"><use xlinkHref="/svg/sprite.svg#it-expand"></use></svg>
+                    </a>
+                    <ul className={this.state.isNavOpen?"link-sublist collapse show":"link-sublist collapse"} id="collapseOne">
+                        <li><a className="list-item" href="#"><span>Link list 1</span></a></li>
+                        <li><a className="list-item" href="#"><span>Link list 1</span></a></li>
+                        <li><a className="list-item" href="#"><span>Link list 1</span></a></li>
+                    </ul>
                 </li>
-                <li><a className="list-item" href="#"><span>Link list 1</span></a>
-                </li>
-                <li><a className="list-item" href="#"><span>Link list 1</span></a>
-                </li>
-              </ul>
-            </li>
-            
+
             );
       }
 
