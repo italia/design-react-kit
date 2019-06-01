@@ -11,11 +11,13 @@ import { Popover, PopoverHeader, PopoverBody, Button } from "../../src";
 
 import PopoverExample from "./PopoverExample";
 import PopoverPositionExample from "./PopoverPositionExample";
+import PopoverIconLink from "./PopoverIconLink";
 
 import Esempi from "./Esempi.md";
 import QuattroDirezioni from "./QuattroDirezioni.md";
 import ElementiDisabilitati from "./ElementiDisabilitati.md";
 import EsempiInterattivi from "./EsempiInterattivi.md";
+import IconLink from "./IconLink.md"
 
 const stories = storiesOf("Componenti/Popover", module);
 stories.addDecorator(withA11y);
@@ -30,6 +32,17 @@ stories.add(
         })(() => <PopoverExample />)
     )
 );
+stories.add(
+    "Titolo con icona e link",
+    withDocs(
+        IconLink,
+        withInfo({
+            propTables: [Popover, PopoverHeader, PopoverBody],
+            propTablesExclude: [PopoverExample]
+        })(() => <PopoverIconLink />)
+    )
+);
+
 
 stories.add(
     "Le quattro direzioni",
