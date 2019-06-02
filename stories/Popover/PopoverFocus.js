@@ -1,9 +1,5 @@
 import React from "react";
-import {
-    Popover,
-    PopoverHeader,
-    PopoverBody
-} from "../../src";
+import { Popover, PopoverHeader, PopoverBody } from "../../src";
 
 class PopoverFocus extends React.Component {
     state = {
@@ -30,7 +26,6 @@ class PopoverFocus extends React.Component {
                     data-toggle="popover"
                     data-trigger="focus"
                     id={id}
-                    onClick={this.togglePopover}
                 >
                     Dismissible popover
                 </a>
