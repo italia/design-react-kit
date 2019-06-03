@@ -67,7 +67,9 @@ const SimpleArticleComponent = () => (
           <span class="card-signature">di Federico De Paolis</span>
           <a class="read-more" href="#">
             <span class="text">Leggi di più</span>
-            {/*Add Icon Later*/}
+              <svg class="icon">
+              <use xlinkHref="/svg/sprite.svg#it-arrow-right"></use>
+            </svg>
           </a>
         </div>
       </div>
@@ -84,7 +86,12 @@ const CardIconComponent = () => (
     <div class="card-wrapper">
       <div class="card">
         <div class="card-body">
-          {/*Add Icon Later*/}
+        <div class="categoryicon-top">
+            <svg class="icon">
+              <use xlinkHref="/svg/sprite.svg#it-file"></use>
+            </svg>
+            <span class="text">Category<br/>Name</span>
+          </div>
           <a href="#">
             <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h5>
           </a>
@@ -108,7 +115,9 @@ const CardShadingComponent = () => (
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a class="read-more" href="#">
             <span class="text">Leggi di più</span>
-            {/*Add Icon Later*/}
+            <svg class="icon">
+              <use xlinkHref="/svg/sprite.svg#it-arrow-right"></use>
+            </svg>
           </a>
         </div>
       </div>
@@ -126,13 +135,19 @@ const BigCardComponent = () => (
       <div class="card card-bg card-big">
         <div class="card-body">
           <div class="top-icon">
-            {/*Add Icon Later*/}
+          <div class="top-icon">
+            <svg class="icon">
+              <use xlinkHref="/svg/sprite.svg#it-card"></use>
+            </svg>
+          </div> 
           </div>
           <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h5>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a class="read-more" href="#">
             <span class="text">Leggi di più</span>
-            {/*Add Icon Later*/}
+            <svg class="icon">
+              <use xlinkHref="/svg/sprite.svg#it-arrow-right"></use>
+            </svg>
           </a>
         </div>
       </div>
@@ -182,7 +197,9 @@ const CardImageComponent = () => (
           <div class="card-body">
             <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit…</h5>
             <p class="card-text"></p><a class="read-more" href="#"><span class="text">Leggi di più</span>
-              {/*Add Icon Later*/}</a>
+            <svg class="icon">
+            <use xlinkHref="/svg/sprite.svg#it-arrow-right"></use>
+          </svg></a>
           </div>
         </div>
       </div>
