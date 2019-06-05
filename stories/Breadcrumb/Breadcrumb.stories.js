@@ -60,18 +60,36 @@ const IconeComponent = () => (
             <Breadcrumb>
                 <BreadcrumbItem>
                     <i className="it-favorite" />
+                    <svg
+                        class="icon icon-sm icon-secondary align-top mr-1"
+                        aria-hidden="true"
+                    >
+                        <use xlinkHref="/svg/sprite.svg#it-star-outline" />
+                    </svg>
                     <a href="#">
                         Home<span className="separator">/</span>
                     </a>
                 </BreadcrumbItem>
                 <BreadcrumbItem>
                     <i className="it-favorite" />
+                    <svg
+                        class="icon icon-sm icon-secondary align-top mr-1"
+                        aria-hidden="true"
+                    >
+                        <use xlinkHref="/svg/sprite.svg#it-star-outline" />
+                    </svg>
                     <a href="#">
                         Subsection<span className="separator">/</span>
                     </a>
                 </BreadcrumbItem>
                 <BreadcrumbItem active>
                     <i className="it-favorite" />
+                    <svg
+                        class="icon icon-sm icon-secondary align-top mr-1"
+                        aria-hidden="true"
+                    >
+                        <use xlinkHref="/svg/sprite.svg#it-star-outline" />
+                    </svg>
                     <a href="#">Current section</a>
                 </BreadcrumbItem>
             </Breadcrumb>
@@ -82,64 +100,88 @@ stories.add("Con icone", withDocs(Icone, withInfo()(IconeComponent)));
 
 const BackgroundComponent = () => (
     <section>
-        <nav className="breadcrumb-container">
-            <Breadcrumb className="dark">
-                <BreadcrumbItem>
-                    <a href="#">
-                        Home<span className="separator">/</span>
-                    </a>
-                </BreadcrumbItem>
-                <BreadcrumbItem>
-                    <a href="#">
-                        Subsection<span className="separator">/</span>
-                    </a>
-                </BreadcrumbItem>
-                <BreadcrumbItem active>
+        <nav class="breadcrumb-container" aria-label="breadcrumb">
+            <ol class="breadcrumb dark">
+                <li class="breadcrumb-item">
+                    <a href="#">Home</a>
+                    <span class="separator">/</span>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Subsection</a>
+                    <span class="separator">/</span>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
                     <a href="#">Current section</a>
-                </BreadcrumbItem>
-            </Breadcrumb>
+                </li>
+            </ol>
         </nav>
 
-        <nav className="breadcrumb-container">
-            <Breadcrumb className="dark">
-                <BreadcrumbItem>
-                    <i className="it-favorite" />
-                    <a href="#">
-                        Home<span className="separator">/</span>
-                    </a>
-                </BreadcrumbItem>
-                <BreadcrumbItem>
-                    <i className="it-favorite" />
-                    <a href="#">
-                        Subsection<span className="separator">/</span>
-                    </a>
-                </BreadcrumbItem>
-                <BreadcrumbItem active>
-                    <i className="it-favorite" />
+        <nav class="breadcrumb-container" aria-label="breadcrumb">
+            <ol class="breadcrumb dark">
+                <li class="breadcrumb-item">
+                    <svg
+                        class="icon icon-sm icon-white align-top mr-1"
+                        aria-hidden="true"
+                    >
+                        <use xlinkHref="/svg/sprite.svg#it-star-outline" />
+                    </svg>
+                    <a href="#">Home</a>
+                    <span class="separator">/</span>
+                </li>
+                <li class="breadcrumb-item">
+                    <svg
+                        class="icon icon-sm icon-white align-top mr-1"
+                        aria-hidden="true"
+                    >
+                        <use xlinkHref="/svg/sprite.svg#it-star-outline" />
+                    </svg>
+                    <a href="#">Subsection</a>
+                    <span class="separator">/</span>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <svg
+                        class="icon icon-sm icon-white align-top mr-1"
+                        aria-hidden="true"
+                    >
+                        <use xlinkHref="/svg/sprite.svg#it-star-outline" />
+                    </svg>
                     <a href="#">Current section</a>
-                </BreadcrumbItem>
-            </Breadcrumb>
+                </li>
+            </ol>
         </nav>
 
-        <nav className="breadcrumb-container">
-            <Breadcrumb className="dark">
-                <BreadcrumbItem>
-                    <i className="it-favorite" />
-                    <a href="#">
-                        Home<span className="separator">&gt;</span>
-                    </a>
-                </BreadcrumbItem>
-                <BreadcrumbItem>
-                    <i className="it-favorite" />
-                    <a href="#">
-                        Subsection<span className="separator">&gt;</span>
-                    </a>
-                </BreadcrumbItem>
-                <BreadcrumbItem active>
-                    <i className="it-favorite" />
+        <nav class="breadcrumb-container" aria-label="breadcrumb">
+            <ol class="breadcrumb dark">
+                <li class="breadcrumb-item">
+                    <svg
+                        class="icon icon-sm icon-white align-top mr-1"
+                        aria-hidden="true"
+                    >
+                        <use xlinkHref="/svg/sprite.svg#it-star-outline" />
+                    </svg>
+                    <a href="#">Home</a>
+                    <span class="separator">&gt;</span>
+                </li>
+                <li class="breadcrumb-item">
+                    <svg
+                        class="icon icon-sm icon-white align-top mr-1"
+                        aria-hidden="true"
+                    >
+                        <use xlinkHref="/svg/sprite.svg#it-star-outline" />
+                    </svg>
+                    <a href="#">Subsection</a>
+                    <span class="separator">&gt;</span>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <svg
+                        class="icon icon-sm icon-white align-top mr-1"
+                        aria-hidden="true"
+                    >
+                        <use xlinkHref="/svg/sprite.svg#it-star-outline" />
+                    </svg>
                     <a href="#">Current section</a>
-                </BreadcrumbItem>
-            </Breadcrumb>
+                </li>
+            </ol>
         </nav>
     </section>
 );
