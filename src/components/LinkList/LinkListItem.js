@@ -62,7 +62,7 @@ const LinkListItem = (props) => {
         if (header && href) {
           return (
             <Tag>
-              <a
+              <a // eslint-disable-line jsx-a11y/anchor-has-content
                 href={href || '#'}
                 {...attributes}
                 className={classes}
