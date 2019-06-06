@@ -152,7 +152,7 @@ const LargeComponent = () => (
 );
 stories.add("Sizing", withDocs(Large, withInfo()(LargeComponent)));
 
-const multilineStories = storiesOf("Componenti/LinkList/Multiline", module);
+const multilineStories = storiesOf("Componenti/LinkList.Multiline", module);
 multilineStories.addDecorator(withA11y);
 
 const MultilineComponent = () => (
@@ -184,7 +184,7 @@ multilineStories.add(
     withDocs(Multiline, withInfo()(MultilineComponent))
 );
 
-const controlStories = storiesOf("Componenti/LinkList/Con controlli", module);
+const controlStories = storiesOf("Componenti/LinkList.Con controlli", module);
 multilineStories.addDecorator(withA11y);
 
 const ControlliComponent = () => (
@@ -341,7 +341,7 @@ controlStories.add(
 );
 
 const navigationStories = storiesOf(
-    "Componenti/LinkList/Nested navigation",
+    "Componenti/LinkList.Nested navigation",
     module
 );
 navigationStories.addDecorator(withA11y);

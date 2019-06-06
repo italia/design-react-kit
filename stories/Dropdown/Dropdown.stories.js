@@ -92,7 +92,7 @@ stories.add(
     )
 );
 
-const menuStories = storiesOf("Componenti/Dropdown/Dropdown menu", module);
+const menuStories = storiesOf("Componenti/Dropdown.Dropdown menu", module);
 menuStories.addDecorator(withA11y);
 
 const MenuVociAttiveComponent = () => (

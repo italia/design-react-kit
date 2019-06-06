@@ -10,6 +10,9 @@ addParameters({
         name: 'Design React Kit',
         url: 'https://github.com/italia/design-react-kit',
         theme: theme,
+        hierarchySeparator: /\/|\./,
+        hierarchyRootSeparator: '/',
+
     },
 });
 

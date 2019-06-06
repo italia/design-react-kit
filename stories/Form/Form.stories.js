@@ -463,7 +463,7 @@ stories.add(
     )
 );
 
-const moreStories = storiesOf("Componenti/Form/Layout", module);
+const moreStories = storiesOf("Componenti/Form.Layout", module);
 moreStories.addDecorator(withA11y);
 
 const FormGroupEsempioComponent = () => (

@@ -1,18 +1,22 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
+import { storiesOf, addParameters } from "@storybook/react";
 
 import { requireContextPolyfill } from "./utils";
 
 import Welcome from "./Welcome";
 
-const stories = storiesOf("Introduzione", module);
+const stories = storiesOf("Introduzione/Introduzione", module);
 stories
-  .addParameters({ options: { showAddonPanel: false } })
-  .add("Benvenuto", () => <Welcome />);
+    .addParameters({
+        options: {
+            showAddonPanel: false,
+        }
+    })
+    .add("Benvenuto", () => <Welcome />);
 
 // Used by Jest
 if (process.env.NODE_ENV === "test") {
-  require.context = requireContextPolyfill();
+    require.context = requireContextPolyfill();
 }
 
 // automatically import all files ending in *.stories.js

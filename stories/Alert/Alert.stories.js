@@ -86,7 +86,7 @@ storiesOf("Componenti/Alert", module)
     .addDecorator(withKnobs)
     .add("Esempi Interattivi", withDocs(EsempiInterattivi, withInfo()(EsempiInterattiviComponent)))
 
-storiesOf("Componenti/Alert/Chiusura", module)
+storiesOf("Componenti/Alert.Chiusura", module)
     .add("Non controllata", withDocs(Chiusura,withInfo({text: Chiusura,propTables:null})(ChiusuraNonControllataComponent)))
     .add("Controllata", withDocs(Chiusura, withInfo({
         text: Chiusura,
