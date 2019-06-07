@@ -4,7 +4,7 @@ import { FormGroup as ReactStrapFormGroup } from 'reactstrap';
 import { Input, Label } from '../..';
 
 import PasswordInput from '../PasswordInput/PasswordInput';
-import Autocomplete from '../Autocomplete/Autocomplete';
+//import Autocomplete from '../Autocomplete/Autocomplete';
 
 class FormGroup extends Component {
   state = {
@@ -92,13 +92,13 @@ class FormGroup extends Component {
           switch (child.type) {
             case Input:
             case PasswordInput:
-            case Autocomplete:
+            //case Autocomplete:
               let isLabelActive = null;
-              if (child.type === Autocomplete) {
-                isLabelActive = {
-                  isLabelActive: hasValue,
-                };
-              }
+              //if (child.type === Autocomplete) {
+              //  isLabelActive = {
+              //    isLabelActive: hasValue,
+              //  };
+              //}
 
               return React.cloneElement(child, {
                 ...child.props,
