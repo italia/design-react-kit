@@ -4,18 +4,16 @@ import { storiesOf } from "@storybook/react";
 import { withKnobs, select, boolean } from "@storybook/addon-knobs/react";
 import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
 
-import { Alert, UncontrolledAlert } from "../../src";
+import { Alert } from "../../src";
 
 import AlertExample from "./AlertExample";
 
-import Esempi from "./Esempi.md";
-import LinkEvidenziato from "./LinkEvidenziato.md";
-import ContenutoAggiuntivo from "./ContenutoAggiuntivo.md";
-import Chiusura from "./Chiusura.md";
-import EsempiInterattivi from "./EsempiInterattivi.md";
-
+import Esempi from "./docs/Esempi.md";
+import EsempiInterattivi from "./docs/EsempiInterattivi.md";
+import LinkEvidenziato from "./docs/LinkEvidenziato.md";
+import ContenutoAggiuntivo from "./docs/ContenutoAggiuntivo.md";
+import ChiusuraControllata from "./docs/ChiusuraControllata.md";
 
 const EsempiComponent = () => (
     <div>
@@ -58,12 +56,6 @@ const ContenutoAggiuntivoComponent = () => (
     </Alert>
 );
 
-const ChiusuraNonControllataComponent = () => (
-    <UncontrolledAlert color="warning">
-        <strong>Attenzione</strong> Alcuni campi inseriti sono da controllare.
-    </UncontrolledAlert>
-);
-
 const ChiusuraControllataComponent = () => (<AlertExample />);
 
 const EsempiInterattiviComponent = () => {
@@ -80,16 +72,21 @@ const EsempiInterattiviComponent = () => {
 
 storiesOf("Componenti/Alert", module)
     .addDecorator(withA11y)
-    .add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)))
-    .add("Link evidenziato", withDocs(LinkEvidenziato, withInfo()(LinkEvidenziatoComponent)))
-    .add("Contenuto aggiuntivo", withDocs(ContenutoAggiuntivo, withInfo()(ContenutoAggiuntivoComponent)))
+    .add("Esempi", withInfo({
+        text: Esempi
+    })(EsempiComponent))
+    .add("Esempi Interattivi", withInfo({
+        text: EsempiInterattivi
+    })(EsempiInterattiviComponent))
+    .add("Link evidenziato", withInfo({
+        text: LinkEvidenziato
+    })(LinkEvidenziatoComponent))
+    .add("Contenuto aggiuntivo", withInfo({
+        text: ContenutoAggiuntivo
+    })(ContenutoAggiuntivoComponent))
     .addDecorator(withKnobs)
-    .add("Esempi Interattivi", withDocs(EsempiInterattivi, withInfo()(EsempiInterattiviComponent)))
-
-storiesOf("Componenti/Alert.Chiusura", module)
-    .add("Non controllata", withDocs(Chiusura,withInfo({text: Chiusura,propTables:null})(ChiusuraNonControllataComponent)))
-    .add("Controllata", withDocs(Chiusura, withInfo({
-        text: Chiusura,
+    .add("Chiusura Controllata", withInfo({
+        text: ChiusuraControllata,
         propTables: [Alert],
         propTablesExclude: [AlertExample],
-    })(ChiusuraControllataComponent)))
+    })(ChiusuraControllataComponent))

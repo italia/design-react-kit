@@ -1,3 +1,4 @@
+/*
 import React, { Component } from "react";
 import { withDocs as withDefaults } from "storybook-readme";
 
@@ -18,7 +19,7 @@ export class StoryPreview extends Component {
                     boxSizing: "border-box",
                     margin: "16px 0 16px 0",
                     padding: "50px 35px",
-                    border: "1px dashed #e5e5e5",
+                    border: "1px dashed red",
                     backgroundColor: "#ffffff",
                     transition: "background-color 0.2s",
                     textAlign: "initial"
@@ -92,3 +93,4 @@ export const requireContextPolyfill = () => {
 export const envIs = env => {
     return process.env.NODE_ENV === env;
 };
+*/

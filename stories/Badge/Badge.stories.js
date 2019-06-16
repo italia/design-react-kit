@@ -1,18 +1,18 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withKnobs, select, boolean, text } from "@storybook/addon-knobs/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
+import {storiesOf} from "@storybook/react";
 
-import { Badge, Button } from "../../src";
+import {withKnobs, select, boolean, text} from "@storybook/addon-knobs/react";
+import {withA11y} from "@storybook/addon-a11y";
+import {withInfo} from "@storybook/addon-info";
 
-import Esempi from "./Esempi.md";
-import Contatore from "./Contatore.md";
-import Variazioni from "./Variazioni.md";
-import Arrotondati from "./Arrotondati.md";
-import Link from "./Link.md";
-import EsempiInterattivi from "./EsempiInterattivi.md";
+import {Badge, Button} from "../../src";
+
+import Esempi from "./docs/Esempi.md";
+import EsempiInterattivi from "./docs/EsempiInterattivi.md";
+import Contatore from "./docs/Contatore.md";
+import Variazioni from "./docs/Variazioni.md";
+import BordiArrotondati from "./docs/BordiArrotondati.md";
+import Link from "./docs/Link.md";
 
 const EsempiComponent = () => (
     <div>
@@ -107,8 +107,6 @@ const LinkComponent = () => (
     </div>
 );
 
-
-
 const EsempiInterattiviComponent = () => {
     const colors = [
         "primary",
@@ -124,19 +122,36 @@ const EsempiInterattiviComponent = () => {
     const label = text("Label", "");
 
     return (
-        <Badge className="mr-1" color={color} pill={pill}>
-            {label}
-            {color}
-        </Badge>
+        <p>
+            Testo di esempio
+            <Badge className="mx-1" color={color} pill={pill}>
+                {label}
+                {color}
+            </Badge>
+        </p>
+
     );
 };
 
 storiesOf("Componenti/Badge", module)
     .addDecorator(withA11y)
     .addDecorator(withKnobs)
-    .add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)))
-    .add("Contatore", withDocs(Contatore, withInfo({propTablesExclude: [Button]})(ContatoreComponent)))
-    .add("Variazioni", withDocs(Variazioni, withInfo()(VariazioniComponent)))
-    .add("Bordi Arrotondati", withDocs(Arrotondati, withInfo()(ArrotondatiComponent)))
-    .add("Con Link", withDocs(Link, withInfo()(LinkComponent)))
-    .add("Esempi Interattivi", withDocs(EsempiInterattivi, withInfo()(EsempiInterattiviComponent)));
+    .add("Esempi", withInfo({
+        text: Esempi
+    })(EsempiComponent))
+    .add("Esempi Interattivi", withInfo({
+        text: EsempiInterattivi
+    })(EsempiInterattiviComponent))
+    .add("Contatore", withInfo({
+        text: Contatore,
+        propTablesExclude: [Button]
+    })(ContatoreComponent))
+    .add("Variazioni", withInfo({
+        text: Variazioni
+    })(VariazioniComponent))
+    .add("Bordi Arrotondati", withInfo({
+        text: BordiArrotondati
+    })(ArrotondatiComponent))
+    .add("Con Link", withInfo({
+        text: Link
+    })(LinkComponent));
