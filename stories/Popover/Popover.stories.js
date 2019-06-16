@@ -94,8 +94,8 @@ const ElementiDisabilitatiComponent = () => {
             <Popover placement="right" target={target}>
                 <PopoverHeader>Titolo del popover</PopoverHeader>
                 <PopoverBody>
-                    Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente.
-                    Non trovi?
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vel finibus augue.
                 </PopoverBody>
             </Popover>
         </div>
@@ -172,7 +172,7 @@ knobsStories.add(
             const title = text("Titolo", "Titolo del popover");
             const body = text(
                 "Body",
-                "Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente. Non trovi?"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue."
             );
             //All the knob properties are passed as props
             return <EsempiInterattiviComponent
