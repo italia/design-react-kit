@@ -39,8 +39,8 @@ class PopoverFocus extends React.Component {
                 >
                     <PopoverHeader>Dismissible popover</PopoverHeader>
                     <PopoverBody>
-                        Ed ecco alcuni contenuti sorprendenti. È molto
-                        coinvolgente. Non trovi?
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc vel finibus augue.
                     </PopoverBody>
                 </Popover>
             </div>
