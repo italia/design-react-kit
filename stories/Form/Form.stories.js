@@ -15,7 +15,7 @@ import {
     FormText,
     Button,
     PasswordInput,
-    Select,
+    // Select,
     PasswordMeter,
     Toggle
 } from "../../src";
@@ -25,21 +25,21 @@ import FormGroupsExample from "./FormGroupsExample";
 import FormSizingExample from "./FormSizingExample";
 import FormInputPasswordExample from "./FormInputPasswordExample";
 
-import SelectExample from "../Select/SelectExample";
+// import SelectExample from "../Select/SelectExample";
 import CheckboxGroupsExample from "../Checkbox/CheckboxGroupsExample";
 import RadioGroupsExample from "../Radio/RadioGroupsExample";
-import AutocompleteExample from "../Autocomplete/AutocompleteExample";
+// import AutocompleteExample from "../Autocomplete/AutocompleteExample";
 import TogglesExample from "../Toggle/TogglesExample";
 import TogglesGroupsExample from "../Toggle/TogglesGroupsExample";
 
 import Esempi from "./Esempi.md";
 import InputPassword from "./InputPassword.md";
 import InputFile from "./InputFile.md";
-import InputAutocomplete from "./InputAutocomplete.md";
-import SelectEsempio from "./Select.md";
-import SelectMultipla from "./SelectMultipla.md";
-import SelectRicerca from "./SelectRicerca.md";
-import SelectGruppi from "./SelectGruppi.md";
+// import InputAutocomplete from "./InputAutocomplete.md";
+// import SelectEsempio from "./Select.md";
+// import SelectMultipla from "./SelectMultipla.md";
+// import SelectRicerca from "./SelectRicerca.md";
+// import SelectGruppi from "./SelectGruppi.md";
 import Textarea from "./Textarea.md";
 import IconeAggiuntive from "./IconeAggiuntive.md";
 import Dimensioni from "./Dimensioni.md";
@@ -52,7 +52,7 @@ import Gruppi from "./Gruppi.md";
 import Toggles from "./Toggles.md";
 import TogglesDisabilitate from "./TogglesDisabilitate.md";
 import GruppiToggles from "./GruppiToggles.md";
-import FormGroupEsempio from "./FormGroup.md";
+// import FormGroupEsempio from "./FormGroup.md";
 import FormGriglia from "./FormGriglia.md";
 import DimensioneColonne from "./DimensioneColonne.md";
 import AutoDimensionamento from "./AutoDimensionamento.md";
@@ -118,7 +118,7 @@ stories.add(
     )
 );
 
-stories.add(
+/*stories.add(
     "Input autocomplete",
     withDocs(
         InputAutocomplete,
@@ -127,59 +127,60 @@ stories.add(
             propTablesExclude: [AutocompleteExample]
         })(() => <AutocompleteExample />)
     )
-);
+);*/
 
-const SelectComponent = () => (
-    <div>
-        <h4>Select Classica</h4>
-        <SelectExample classic />
-        <h4>Select Personalizzata</h4>
-        <SelectExample />
-    </div>
-);
-stories.add(
-    "Select",
-    withDocs(
-        SelectEsempio,
-        withInfo({
-            propTables: [],
-            propTablesExclude: [SelectExample]
-        })(SelectComponent)
-    )
-);
-
-stories.add(
-    "Select multipla",
-    withDocs(
-        SelectMultipla,
-        withInfo({
-            propTables: [],
-            propTablesExclude: [SelectExample]
-        })(() => <SelectExample multi />)
-    )
-);
-
-stories.add(
-    "Select con ricerca",
-    withDocs(
-        SelectRicerca,
-        withInfo({
-            propTables: [],
-            propTablesExclude: [SelectExample]
-        })(() => <SelectExample search />)
-    )
-);
-
-stories.add(
-    "Select con gruppi di opzioni",
-    withDocs(
-        SelectGruppi,
-        withInfo({
-            propTables: [],
-            propTablesExclude: [SelectExample]
-        })(() => <SelectExample group multi />)
-    )
-);
+// const SelectComponent = () => (
+//     <div>
+//         <h4>Select Classica</h4>
+//         <SelectExample classic />
+//         <h4>Select Personalizzata</h4>
+//         <SelectExample />
+//     </div>
+// );
+//
+// stories.add(
+//     "Select",
+//     withDocs(
+//         SelectEsempio,
+//         withInfo({
+//             propTables: [],
+//             propTablesExclude: [SelectExample]
+//         })(SelectComponent)
+//     )
+// );
+//
+// stories.add(
+//     "Select multipla",
+//     withDocs(
+//         SelectMultipla,
+//         withInfo({
+//             propTables: [],
+//             propTablesExclude: [SelectExample]
+//         })(() => <SelectExample multi />)
+//     )
+// );
+//
+// stories.add(
+//     "Select con ricerca",
+//     withDocs(
+//         SelectRicerca,
+//         withInfo({
+//             propTables: [],
+//             propTablesExclude: [SelectExample]
+//         })(() => <SelectExample search />)
+//     )
+// );
+//
+// stories.add(
+//     "Select con gruppi di opzioni",
+//     withDocs(
+//         SelectGruppi,
+//         withInfo({
+//             propTables: [],
+//             propTablesExclude: [SelectExample]
+//         })(() => <SelectExample group multi />)
+//     )
+// );
 
 const TextareaComponent = () => (
     <Form>
@@ -191,63 +192,63 @@ const TextareaComponent = () => (
 );
 stories.add("Textarea", withDocs(Textarea, withInfo()(TextareaComponent)));
 
-const IconeAggiuntiveComponent = () => (
-    <Form>
-        <FormGroup className="m-3">
-            <i className="ico-prefix it-youtube" />
-            <Input type="text" id="videoYoutube" />
-            <Label for="videoYoutube">Link video di youtube</Label>
-        </FormGroup>
-        <SelectExample icon />
-    </Form>
-);
-stories.add(
-    "Icone aggiuntive",
-    withDocs(
-        IconeAggiuntive,
-        withInfo({
-            propTables: [],
-            propTablesExclude: [SelectExample]
-        })(IconeAggiuntiveComponent)
-    )
-);
+// const IconeAggiuntiveComponent = () => (
+//     <Form>
+//         <FormGroup className="m-3">
+//             <i className="ico-prefix it-youtube" />
+//             <Input type="text" id="videoYoutube" />
+//             <Label for="videoYoutube">Link video di youtube</Label>
+//         </FormGroup>
+//         <SelectExample icon />
+//     </Form>
+// );
+// stories.add(
+//     "Icone aggiuntive",
+//     withDocs(
+//         IconeAggiuntive,
+//         withInfo({
+//             propTables: [],
+//             propTablesExclude: [SelectExample]
+//         })(IconeAggiuntiveComponent)
+//     )
+// );
 
-const DimensioniComponent = () => (
-    <section>
-        <Form className="m-3">
-            <Input placeholder="lg" bsSize="lg" aria-label="lg" />
-            <Input placeholder="Input predefinito" aria-label="Input" />
-            <Input placeholder="sm" bsSize="sm" aria-label="sm" />
-        </Form>
-
-        <Form className="m-3">
-            <Select
-                bsSize="lg"
-                placeholder="Select grande"
-                options={[{ value: "", label: "Select grande" }]}
-            />
-            <Select
-                placeholder="Select predefinita"
-                options={[{ value: "", label: "Select predefinita" }]}
-            />
-            <Select
-                bsSize="sm"
-                placeholder="Select piccola"
-                options={[{ value: "", label: "Select piccola" }]}
-            />
-        </Form>
-    </section>
-);
-stories.add(
-    "Dimensioni",
-    withDocs(
-        Dimensioni,
-        withInfo({
-            propTables: [],
-            propTablesExclude: [SelectExample]
-        })(DimensioniComponent)
-    )
-);
+// const DimensioniComponent = () => (
+//     <section>
+//         <Form className="m-3">
+//             <Input placeholder="lg" bsSize="lg" aria-label="lg" />
+//             <Input placeholder="Input predefinito" aria-label="Input" />
+//             <Input placeholder="sm" bsSize="sm" aria-label="sm" />
+//         </Form>
+//
+//         <Form className="m-3">
+//             <Select
+//                 bsSize="lg"
+//                 placeholder="Select grande"
+//                 options={[{ value: "", label: "Select grande" }]}
+//             />
+//             <Select
+//                 placeholder="Select predefinita"
+//                 options={[{ value: "", label: "Select predefinita" }]}
+//             />
+//             <Select
+//                 bsSize="sm"
+//                 placeholder="Select piccola"
+//                 options={[{ value: "", label: "Select piccola" }]}
+//             />
+//         </Form>
+//     </section>
+// );
+// stories.add(
+//     "Dimensioni",
+//     withDocs(
+//         Dimensioni,
+//         withInfo({
+//             propTables: [],
+//             propTablesExclude: [SelectExample]
+//         })(DimensioniComponent)
+//     )
+// );
 
 const ReadonlyComponent = () => (
     <Form className="m-3">
@@ -466,7 +467,7 @@ stories.add(
 const moreStories = storiesOf("Componenti/Form.Layout", module);
 moreStories.addDecorator(withA11y);
 
-const FormGroupEsempioComponent = () => (
+/*const FormGroupEsempioComponent = () => (
     <Form>
         <FormGroup>
             <Label for="FormGroupExampleInput">Esempio di etichetta</Label>
@@ -483,7 +484,7 @@ const FormGroupEsempioComponent = () => (
 moreStories.add(
     "Form group",
     withDocs(FormGroupEsempio, withInfo()(FormGroupEsempioComponent))
-);
+);*/
 
 const FormGrigliaComponent = () => (
     <section>
@@ -561,7 +562,7 @@ const InlineFormsComponent = () => (
         <FormSizingExample inline />
 
         <Form inline className="m-3">
-            <Label className="my-1 mr-2" for="inlineFormCustomSelectPref">
+            {/*<Label className="my-1 mr-2" for="inlineFormCustomSelectPref">
                 Preference
             </Label>
             <Select
@@ -572,7 +573,7 @@ const InlineFormsComponent = () => (
                     { value: "2", label: "Two" },
                     { value: "3", label: "Three" }
                 ]}
-            />
+            />*/}
 
             <div className="custom-control custom-checkbox my-1 mr-sm-2">
                 <Input
@@ -649,7 +650,7 @@ const FormDisabilitatoComponent = () => (
                     />
                 </FormGroup>
 
-                <FormGroup className="mt-3">
+                {/*<FormGroup className="mt-3">
                 <Label for="exampleSelect" style = {{position : ' static ' }}>Select disabilitata</Label>
                     <Select
                         id="exampleSelect"
@@ -657,9 +658,9 @@ const FormDisabilitatoComponent = () => (
                         options={[{ value: "", label: "..." }]}
                         disabled
                     />    
-                </FormGroup>
+                </FormGroup>*/}
 
-                <FormGroup className="mt-3">
+                {/*<FormGroup className="mt-3">
                 <Label for="disabledSelect" style = {{position : ' static ' }}>
                 Select default disabilitata
             </Label>
@@ -669,7 +670,7 @@ const FormDisabilitatoComponent = () => (
                         placeholder="Select disabilitato"
                         disabled
                     />
-                </FormGroup>
+                </FormGroup>*/}
 
                 <div className="form-row">
                     <FormGroup check className="mt-3">
