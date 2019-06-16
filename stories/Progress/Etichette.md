@@ -1,5 +1,7 @@
 ### Etichette
 
-Aggiungi le etichette alle barre di avanzamento posizionando il testo all'interno di `Progress`.
+Per aggiungere etichette con testo che indica il progresso racchiudere la Progress Bar in un <div> con classe `.progress-bar-wrapper` e aggiungere un <div> interno con classe `.progress-bar-label`.
+
+Non dimenticare il testo esplicativo dedicato agli Screen Reader all’interno di questo elemento.
 
 <!-- STORY -->

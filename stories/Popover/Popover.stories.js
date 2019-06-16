@@ -11,11 +11,17 @@ import { Popover, PopoverHeader, PopoverBody, Button } from "../../src";
 
 import PopoverExample from "./PopoverExample";
 import PopoverPositionExample from "./PopoverPositionExample";
+import PopoverIconLink from "./PopoverIconLink";
+import PopoverHover from "./PopoverHover";
+import PopoverFocus from "./PopoverFocus";
 
 import Esempi from "./Esempi.md";
 import QuattroDirezioni from "./QuattroDirezioni.md";
 import ElementiDisabilitati from "./ElementiDisabilitati.md";
 import EsempiInterattivi from "./EsempiInterattivi.md";
+import IconLink from "./IconLink.md";
+import Hover from "./Hover.md";
+import Focus from "./Focus.md";
 
 const stories = storiesOf("Componenti/Popover", module);
 stories.addDecorator(withA11y);
@@ -42,6 +48,39 @@ stories.add(
     )
 );
 
+stories.add(
+    "Titolo con icona e link",
+    withDocs(
+        IconLink,
+        withInfo({
+            propTables: [Popover, PopoverHeader, PopoverBody],
+            propTablesExclude: [PopoverExample]
+        })(() => <PopoverIconLink />)
+    )
+);
+
+stories.add(
+    "Modalità Hover",
+    withDocs(
+        Hover,
+        withInfo({
+            propTables: [Popover, PopoverHeader, PopoverBody],
+            propTablesExclude: [PopoverExample]
+        })(() => <PopoverHover />)
+    )
+);
+
+stories.add(
+    "Dismiss al click successivo",
+    withDocs(
+        Focus,
+        withInfo({
+            propTables: [Popover, PopoverHeader, PopoverBody],
+            propTablesExclude: [PopoverExample]
+        })(() => <PopoverFocus />)
+    )
+);
+
 const ElementiDisabilitatiComponent = () => {
     const id = "example";
     // Avoid Jest complaints
@@ -55,8 +94,8 @@ const ElementiDisabilitatiComponent = () => {
             <Popover placement="right" target={target}>
                 <PopoverHeader>Titolo del popover</PopoverHeader>
                 <PopoverBody>
-                    Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente.
-                    Non trovi?
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vel finibus augue.
                 </PopoverBody>
             </Popover>
         </div>
@@ -133,7 +172,7 @@ knobsStories.add(
             const title = text("Titolo", "Titolo del popover");
             const body = text(
                 "Body",
-                "Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente. Non trovi?"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue."
             );
             //All the knob properties are passed as props
             return <EsempiInterattiviComponent
