@@ -15,7 +15,7 @@ const {
 } = Util;
 
 const propTypes = {
-  ...Transition.propTypes,
+  ...Transition.propTypes, // eslint-disable-line react/forbid-foreign-prop-types
   isOpen: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),

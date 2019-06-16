@@ -29,7 +29,7 @@ import BottoniDropdown from "./BottoniDropdown.md";
 import PulsantiSegmentati from "./PulsantiSegmentati.md";
 import InputGroupExample from "./InputGroupExample";
 
-const stories = storiesOf("Componenti/Form/Input Group", module);
+const stories = storiesOf("Componenti/Form.Input Group", module);
 stories.addDecorator(withA11y);
 
 const EsempiComponent = () => (
