@@ -44,11 +44,11 @@ class PopoverItem extends React.Component {
 
 class PopoverPositionExample extends React.Component {
     state = {
-        popovers: [
+        popovers: [ 
+            { placement: "left", text: "a sinistra" },
             { placement: "top", text: "in alto" },
             { placement: "bottom", text: "in basso" },
-            { placement: "left", text: "a sinistra" },
-            { placement: "right", text: "a destra" }
+            { placement: "right", text: "a destra" }, 
         ]
     };
 
@@ -61,10 +61,10 @@ class PopoverPositionExample extends React.Component {
                     flexDirection: "column",
                     alignItems: "center"
                 }}
-            >
+            ><span>
                 {this.state.popovers.map((popover, i) => (
                     <PopoverItem key={i} item={popover} id={i} />
-                ))}
+                ))}</span>
             </div>
         );
     }
