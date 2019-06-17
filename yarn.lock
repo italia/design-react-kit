@@ -3167,22 +3167,22 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap-italia@1.2.11:
-  version "1.2.11"
-  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-1.2.11.tgz#47b94d7c63377da9575125871c5d91cb558eb248"
-  integrity sha512-jWnRqGry7XdRTNSRL+xsxr+PlryNwieYa93ectmB7lFvH4l2K2/iS1cZ6viYFD/S1JzUKeyB7IZxE9bQwc1F2Q==
+bootstrap-italia@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-1.3.0.tgz#c747593907f0254de2a4caa1d6d67f177b4ff4b4"
+  integrity sha512-cQGEe111apk9vb3d6U3DiRIi8654ff805BBkXoehMYooSQZFwDAr+UdORcg+YLGd52qNxBu/1AnKS2JoChnZDw==
   dependencies:
     bootstrap "4.3.1"
-    bootstrap-select "1.13.5"
+    bootstrap-select "1.13.10"
     jquery "^3.4.1"
     owl.carousel "2.3.4"
     popper.js "1.14.7"
     svgxuse "1.2.6"
 
-bootstrap-select@1.13.5:
-  version "1.13.5"
-  resolved "https://registry.yarnpkg.com/bootstrap-select/-/bootstrap-select-1.13.5.tgz#12f000b25a95ed642fe371ae9e311d3afbb8c53f"
-  integrity sha512-1uYsYLB4FvGdwM6qzIfTxp6sP5gDqjPgWNHJztBfYUTIo1GUYG5zzmMVWiJvdxJlsvBXZ9AObmeZdzi0eg2jaA==
+bootstrap-select@1.13.10:
+  version "1.13.10"
+  resolved "https://registry.yarnpkg.com/bootstrap-select/-/bootstrap-select-1.13.10.tgz#b0cf57f8d448bc0488faba04ecaa2f4c5216e144"
+  integrity sha512-mwfyd+VWHY8wDN4je4Y8PPEaOAzDPUz95z5F5zxzlIqebqxtbrujclFWLrhkVOyETpsgZCL1rsfyEnHpAugtGg==
 
 bootstrap@4.3.1:
   version "4.3.1"
