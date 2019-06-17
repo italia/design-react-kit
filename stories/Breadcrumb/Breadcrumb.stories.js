@@ -2,7 +2,6 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
 
 import { Breadcrumb, BreadcrumbItem } from "../../src";
 
@@ -52,7 +51,9 @@ const EsempiComponent = () => (
         </nav>
     </section>
 );
-stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
+stories.add("Esempi", withInfo({
+    text: Esempi
+})(EsempiComponent));
 
 const IconeComponent = () => (
     <section>
@@ -96,7 +97,9 @@ const IconeComponent = () => (
         </nav>
     </section>
 );
-stories.add("Con icone", withDocs(Icone, withInfo()(IconeComponent)));
+stories.add("Con icone",withInfo({
+    text: Icone
+})(IconeComponent));
 
 const BackgroundComponent = () => (
     <section>
@@ -186,6 +189,6 @@ const BackgroundComponent = () => (
     </section>
 );
 stories.add(
-    "Su sfondo scuro",
-    withDocs(Background, withInfo()(BackgroundComponent))
-);
+    "Su sfondo scuro", withInfo({
+        text: Background, 
+    })(BackgroundComponent));

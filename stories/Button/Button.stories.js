@@ -3,7 +3,6 @@ import { storiesOf } from "@storybook/react";
 import { withKnobs, select, boolean, text } from "@storybook/addon-knobs/react";
 import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
 
 import Esempi from "./Esempi.md";
 import Dimensioni from "./Dimensioni.md";
@@ -46,7 +45,9 @@ const EsempiComponent = () => (
         ))}
     </div>
 );
-stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
+stories.add("Esempi", withInfo({
+    text: Esempi,
+})(EsempiComponent));
 
 const DarkBackgroundComponent = () => (
     <div className="bg-dark py-1">
@@ -69,9 +70,9 @@ const DarkBackgroundComponent = () => (
     </div>
 );
 stories.add(
-    "Sfondo scuro",
-    withDocs(DarkBackground, withInfo()(DarkBackgroundComponent))
-);
+    "Sfondo scuro", withInfo({
+        text: DarkBackground,
+    })(DarkBackgroundComponent));
 
 const DimensioniComponent = () => (
     <section>
@@ -107,9 +108,9 @@ const DimensioniComponent = () => (
     </section>
 );
 stories.add(
-    "Varianti di dimensione",
-    withDocs(Dimensioni, withInfo()(DimensioniComponent))
-);
+    "Varianti di dimensione", withInfo({
+        text: Dimensioni,
+    })(DimensioniComponent));
 
 const ButtonIconComponent = () => (
     <div>
@@ -132,9 +133,9 @@ const ButtonIconComponent = () => (
     </div>
 );
 stories.add(
-    "Bottoni con icona",
-    withDocs(ButtonIcon, withInfo()(ButtonIconComponent))
-);
+    "Bottoni con icona", withInfo({
+        text: ButtonIcon,
+    })(ButtonIconComponent));
 
 const StatoAttivoComponent = () => (
     <div>
@@ -151,9 +152,9 @@ const StatoAttivoComponent = () => (
     </div>
 );
 stories.add(
-    "Stato Attivo",
-    withDocs(StatoAttivo, withInfo()(StatoAttivoComponent))
-);
+    "Stato Attivo", withInfo({
+        text: StatoAttivo,
+    })(StatoAttivoComponent));
 
 const StatoDisabilitatoComponent = () => (
     <div>
@@ -170,9 +171,9 @@ const StatoDisabilitatoComponent = () => (
     </div>
 );
 stories.add(
-    "Stato Disabilitato",
-    withDocs(StatoDisabilitato, withInfo()(StatoDisabilitatoComponent))
-);
+    "Stato Disabilitato", withInfo({
+        text: StatoDisabilitato,
+    })(StatoDisabilitatoComponent));
 
 const knobsStories = storiesOf("Componenti/Button", module);
 knobsStories.addDecorator(withA11y);
@@ -199,6 +200,6 @@ const EsempiInterattiviComponent = () => {
     );
 };
 knobsStories.add(
-    "Esempi interattivi",
-    withDocs(EsempiInterattivi, withInfo()(EsempiInterattiviComponent))
-);
+    "Esempi interattivi", withInfo({
+        text: EsempiInterattivi,
+    })(EsempiInterattiviComponent));
