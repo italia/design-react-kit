@@ -116,3 +116,41 @@
 //     icon: PropTypes.bool,
 //     defaultValue: PropTypes.bool
 // };
+
+
+import React from 'react';
+import Select from 'react-select';
+
+const options = [
+  { value: 'Value 1', label: 'Opzione 1' },
+  { value: 'Value 2', label: 'Opzione 2' },
+  { value: 'Value 3', label: 'Opzione 3' },
+  { value: 'Value 4', label: 'Opzione 4' },
+  { value: 'Value 5', label: 'Opzione 5' },
+];
+
+class SelectExample extends React.Component {
+  state = {
+    selectedOption: null,
+    placeholder: "Scegli una opzione",
+    isDisabled: false,
+  };
+  handleChange = selectedOption => {
+    this.setState({ selectedOption });
+  };
+  render() {
+    const { selectedOption, placeholder, disabled } = this.props;
+
+    return (
+      <Select
+        value={selectedOption}
+        onChange={this.handleChange}
+        options={options}
+        placeholder={placeholder}
+        isDisabled={disabled ? true : false}
+      />
+    );
+  }
+}
+
+export default SelectExample;
