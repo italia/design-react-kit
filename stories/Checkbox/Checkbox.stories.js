@@ -26,7 +26,6 @@ const EsempiComponent = () => (
     </Form>
 );
 
-
 const InlineComponent = () => (
     <Form>
         <FormGroup check inline>
@@ -119,7 +118,7 @@ storiesOf("Componenti/Checkbox", module)
     .add("Gruppi di Checkbox", withInfo({
         text: Gruppi,
         propTablesExclude: [CheckboxGroupsExample]
-    })(() => <CheckboxGroupsExample/>))
+    })(() => <CheckboxGroupsExample/>));
 
 storiesOf("Componenti/Checkbox", module)
     .addDecorator(withA11y)
@@ -127,4 +126,4 @@ storiesOf("Componenti/Checkbox", module)
     .add("Esempi interattivi", withInfo({
         text: EsempiInterattivi,
         propTablesExclude: [Form, FormGroup]
-    })(EsempiInterattiviComponent))
+    })(EsempiInterattiviComponent));
