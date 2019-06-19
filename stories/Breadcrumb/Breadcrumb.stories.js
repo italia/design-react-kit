@@ -5,9 +5,9 @@ import { withInfo } from "@storybook/addon-info";
 
 import { Breadcrumb, BreadcrumbItem } from "../../src";
 
-import Esempi from "./Esempi.md";
-import Icone from "./Icone.md";
-import Background from "./Background.md";
+import Esempi from "./docs/Esempi.md";
+import Icone from "./docs/Icone.md";
+import Background from "./docs/Background.md";
 
 const stories = storiesOf("Componenti/Breadcrumb", module);
 stories.addDecorator(withA11y);
@@ -190,5 +190,5 @@ const BackgroundComponent = () => (
 );
 stories.add(
     "Su sfondo scuro", withInfo({
-        text: Background, 
+        text: Background,
     })(BackgroundComponent));

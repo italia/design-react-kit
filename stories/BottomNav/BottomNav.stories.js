@@ -5,95 +5,95 @@ import { withInfo } from "@storybook/addon-info";
 
 import { Nav } from "../../src";
 
-import Esempi from "./Esempi.md";
-import Badge from "./Badge.md";
-import Alert from "./Alert.md";
+import Esempi from "./docs/Esempi.md";
+import Badge from "./docs/Badge.md";
+import Alert from "./docs/Alert.md";
 const EsempiComponent = () => (
-    <nav class="bottom-nav">
+    <nav className="bottom-nav">
         <ul>
             <li>
-                <a href="#" class="active">
-                    <svg class="icon ">
+                <a href="#" className="active">
+                    <svg className="icon ">
                         <use xlinkHref="/svg/sprite.svg#it-comment" />
                     </svg>
-                    <span class="bottom-nav-label">messaggi</span>
+                    <span className="bottom-nav-label">messaggi</span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <svg class="icon">
+                    <svg className="icon">
                         <use xlinkHref="/svg/sprite.svg#it-camera" />
                     </svg>
-                    <span class="bottom-nav-label">immagini</span>
+                    <span className="bottom-nav-label">immagini</span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <svg class="icon">
+                    <svg className="icon">
                         <use xlinkHref="/svg/sprite.svg#it-file" />
                     </svg>
-                    <span class="bottom-nav-label">documenti</span>
+                    <span className="bottom-nav-label">documenti</span>
                 </a>
             </li>
         </ul>
     </nav>
 );
 const BadgeComponent = () => (
-    <nav class="bottom-nav">
+    <nav className="bottom-nav">
         <ul>
             <li>
                 <a href="#">
-                    <div class="badge-wrapper">
-                        <span class="bottom-nav-badge">1</span>
+                    <div className="badge-wrapper">
+                        <span className="bottom-nav-badge">1</span>
                     </div>
-                    <svg class="icon">
+                    <svg className="icon">
                         <use xlinkHref="/svg/sprite.svg#it-comment" />
                     </svg>
-                    <span class="bottom-nav-label">
-                        messaggi<span class="sr-only"> - 1 da leggere</span>
+                    <span className="bottom-nav-label">
+                        messaggi<span className="sr-only"> - 1 da leggere</span>
                     </span>
                 </a>
             </li>
             <li>
-                <a href="#" class="active">
-                    <div class="badge-wrapper">
-                        <span class="bottom-nav-badge">2</span>
+                <a href="#" className="active">
+                    <div className="badge-wrapper">
+                        <span className="bottom-nav-badge">2</span>
                     </div>
-                    <svg class="icon">
+                    <svg className="icon">
                         <use xlinkHref="/svg/sprite.svg#it-camera" />
                     </svg>
-                    <span class="bottom-nav-label">
-                        immagini<span class="sr-only"> - 2 da vedere</span>
+                    <span className="bottom-nav-label">
+                        immagini<span className="sr-only"> - 2 da vedere</span>
                     </span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <div class="badge-wrapper">
-                        <span class="bottom-nav-badge">88</span>
+                    <div className="badge-wrapper">
+                        <span className="bottom-nav-badge">88</span>
                     </div>
-                    <svg class="icon">
+                    <svg className="icon">
                         <use xlinkHref="/svg/sprite.svg#it-file" />
                     </svg>
-                    <span class="bottom-nav-label">
-                        documenti<span class="sr-only"> - 88 da esaminare</span>
+                    <span className="bottom-nav-label">
+                        documenti<span className="sr-only"> - 88 da esaminare</span>
                     </span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <svg class="icon">
+                    <svg className="icon">
                         <use xlinkHref="/svg/sprite.svg#it-star-outline" />
                     </svg>
-                    <span class="bottom-nav-label">preferiti</span>
+                    <span className="bottom-nav-label">preferiti</span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <svg class="icon">
+                    <svg className="icon">
                         <use xlinkHref="/svg/sprite.svg#it-settings" />
                     </svg>
-                    <span class="bottom-nav-label">preferenze</span>
+                    <span className="bottom-nav-label">preferenze</span>
                 </a>
             </li>
         </ul>
@@ -101,19 +101,19 @@ const BadgeComponent = () => (
 );
 
 const AlertComponent = () => (
-    <nav class="bottom-nav">
+    <nav className="bottom-nav">
         <ul>
             <li>
-                <a href="#" class="active">
-                    <div class="badge-wrapper">
-                        <span class="bottom-nav-alert" />
+                <a href="#" className="active">
+                    <div className="badge-wrapper">
+                        <span className="bottom-nav-alert" />
                     </div>
-                    <svg class="icon">
+                    <svg className="icon">
                         <use xlinkHref="/svg/sprite.svg#it-comment" />
                     </svg>
-                    <span class="bottom-nav-label">
+                    <span className="bottom-nav-label">
                         messaggi
-                        <span class="sr-only">
+                        <span className="sr-only">
                             {" "}
                             - nuovo contenuto disponibile
                         </span>
@@ -122,23 +122,23 @@ const AlertComponent = () => (
             </li>
             <li>
                 <a href="#">
-                    <svg class="icon">
+                    <svg className="icon">
                         <use xlinkHref="/svg/sprite.svg#it-camera" />
                     </svg>
-                    <span class="bottom-nav-label">immagini</span>
+                    <span className="bottom-nav-label">immagini</span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <div class="badge-wrapper">
-                        <span class="bottom-nav-alert" />
+                    <div className="badge-wrapper">
+                        <span className="bottom-nav-alert" />
                     </div>
-                    <svg class="icon">
+                    <svg className="icon">
                         <use xlinkHref="/svg/sprite.svg#it-file" />
                     </svg>
-                    <span class="bottom-nav-label">
+                    <span className="bottom-nav-label">
                         documenti
-                        <span class="sr-only">
+                        <span className="sr-only">
                             {" "}
                             - nuovo contenuto disponibile
                         </span>
@@ -147,18 +147,18 @@ const AlertComponent = () => (
             </li>
             <li>
                 <a href="#">
-                    <svg class="icon">
+                    <svg className="icon">
                         <use xlinkHref="/svg/sprite.svg#it-star-outline" />
                     </svg>
-                    <span class="bottom-nav-label">preferiti</span>
+                    <span className="bottom-nav-label">preferiti</span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <svg class="icon">
+                    <svg className="icon">
                         <use xlinkHref="/svg/sprite.svg#it-settings" />
                     </svg>
-                    <span class="bottom-nav-label">preferenze</span>
+                    <span className="bottom-nav-label">preferenze</span>
                 </a>
             </li>
         </ul>
