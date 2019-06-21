@@ -1,14 +1,12 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
+import {storiesOf} from "@storybook/react";
 import {
     withKnobs,
     select,
-    boolean,
     color
 } from "@storybook/addon-knobs/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
+import {withA11y} from "@storybook/addon-a11y";
+import {withInfo} from "@storybook/addon-info";
 
 import {
     Navbar,
@@ -29,91 +27,11 @@ import NavbarExample from "./NavbarExample";
 import NavbarMegamenuExample from "./NavbarMegamenuExample";
 import NavbarInlineExample from "./NavbarInlineExample";
 
-import Esempi from "./Esempi.md";
-import Dropdown from "./Dropdown.md";
-import Megamenu from "./Megamenu.md";
-import Inline from "./Inline.md";
-import EsempiInterattivi from "./EsempiInterattivi.md";
-
-const stories = storiesOf("Componenti/Navbar", module);
-stories.addDecorator(withA11y);
-
-stories.add(
-    "Esempi",
-    withDocs(
-        Esempi,
-        withInfo({
-            propTables: [
-                Navbar,
-                NavbarToggler,
-                Collapse,
-                Nav,
-                NavItem,
-                NavLink
-            ],
-            propTablesExclude: [NavbarExample]
-        })(() => <NavbarExample />)
-    )
-);
-
-stories.add(
-    "Con Dropdown",
-    withDocs(
-        Dropdown,
-        withInfo({
-            propTables: [
-                Navbar,
-                NavbarToggler,
-                Collapse,
-                Nav,
-                NavItem,
-                NavLink,
-                UncontrolledDropdown,
-                DropdownToggle,
-                DropdownMenu
-            ],
-            propTablesExclude: [NavbarExample]
-        })(() => <NavbarExample dropdown />)
-    )
-);
-
-stories.add(
-    "Con Megamenu (in progress)",
-    withDocs(
-        Megamenu,
-        withInfo({
-            propTables: [
-                Navbar,
-                NavbarToggler,
-                Collapse,
-                Nav,
-                NavItem,
-                NavLink,
-                UncontrolledDropdown,
-                DropdownToggle,
-                DropdownMenu,
-                LinkList,
-                LinkListItem
-            ],
-            propTablesExclude: [NavbarMegamenuExample]
-        })(() => <NavbarMegamenuExample />)
-    )
-);
-
-stories.add(
-    "Inline Menù",
-    withDocs(
-        Inline,
-        withInfo({
-            propTables: [LinkList, LinkListItem, Collapse],
-            propTablesExclude: [NavbarInlineExample]
-        })(() => <NavbarInlineExample />)
-    )
-);
-
-const knobsStories = storiesOf("Componenti/Navbar", module);
-knobsStories.addDecorator(withA11y);
-knobsStories.addDecorator(withKnobs);
+import Esempi from "./docs/Esempi.md";
+import Dropdown from "./docs/Dropdown.md";
+import Megamenu from "./docs/Megamenu.md";
+import Inline from "./docs/Inline.md";
+import EsempiInterattivi from "./docs/EsempiInterattivi.md";
 
 const EsempiInterattiviComponent = () => {
     const variations = ["", "primary", "dark"];
@@ -121,7 +39,6 @@ const EsempiInterattiviComponent = () => {
     const selectedColor = color("Color", "#e3f2fd");
     const placements = ["", "top", "bottom"];
     const placement = select("Posizionamento", placements, placements[0]);
-    const sticky = boolean("Sticky", false);
 
     return (
         <Navbar
@@ -130,13 +47,39 @@ const EsempiInterattiviComponent = () => {
             fixed={placement}
             sticky={placement}
             className={`bg-${variation}`}
-            style={{ backgroundColor: selectedColor }}
+            style={{backgroundColor: selectedColor}}
         >
             <NavbarBrand href="#">Brand</NavbarBrand>
         </Navbar>
     );
 };
-knobsStories.add(
-    "Esempi interattivi",
-    withDocs(EsempiInterattivi, withInfo()(EsempiInterattiviComponent))
-);
+
+storiesOf("Componenti/Navbar", module)
+    .addDecorator(withA11y)
+    .add("Esempi", withInfo({
+        text: Esempi,
+        propTables: [Navbar, NavbarToggler, Collapse, Nav, NavItem, NavLink],
+        propTablesExclude: [NavbarExample]
+    })(() => <NavbarExample/>))
+    .add("Con Dropdown", withInfo({
+        text: Dropdown,
+        propTables: [Navbar, NavbarToggler, Collapse, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu],
+        propTablesExclude: [NavbarExample]
+    })(() => <NavbarExample dropdown/>))
+    .add("Con Megamenu (in progress)", withInfo({
+        text: Megamenu,
+        propTables: [Navbar, NavbarToggler, Collapse, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, LinkList, LinkListItem],
+        propTablesExclude: [NavbarExample]
+    })(() => <NavbarMegamenuExample/>))
+    .add("Inline Menù", withInfo({
+        text: Inline,
+        propTables: [LinkList, LinkListItem, Collapse],
+        propTablesExclude: [NavbarInlineExample]
+    })(() => <NavbarInlineExample/>));
+
+storiesOf("Componenti/Navbar", module)
+    .addDecorator(withA11y)
+    .addDecorator(withKnobs)
+    .add("Esempi interattivi", withInfo({
+        text: EsempiInterattivi
+    })(EsempiInterattiviComponent));
