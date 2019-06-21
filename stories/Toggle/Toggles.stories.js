@@ -3,67 +3,22 @@ import { storiesOf } from "@storybook/react";
 import { withKnobs, boolean, text } from "@storybook/addon-knobs/react";
 import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
 
 import {
     Row,
     Col,
-    Form,
     FormGroup,
     FormText,
-    Label,
-    Input,
     Toggle
 } from "../../src";
 
 import TogglesExample from "./TogglesExample";
 import TogglesGroupsExample from "./TogglesGroupsExample";
 
-import Esempi from "./Esempi.md";
-import Disabilitati from "./Disabilitati.md";
-import Gruppi from "./Gruppi.md";
-import EsempiMarkup from "./EsempiMarkup.md";
-import EsempiInterattivi from "./EsempiInterattivi.md";
-
-const stories = storiesOf("Componenti/Toggles", module);
-stories.addDecorator(withA11y);
-
-stories.add(
-    "Esempi",
-    withDocs(
-        Esempi,
-        withInfo({
-            propTables: [FormGroup, Toggle],
-            propTablesExclude: [TogglesExample]
-        })(() => <TogglesExample />)
-    )
-);
-
-stories.add(
-    "Disabilitati",
-    withDocs(
-        Disabilitati,
-        withInfo({
-            propTables: [FormGroup, Toggle],
-            propTablesExclude: [TogglesExample]
-        })(() => <TogglesExample disabled />)
-    )
-);
-
-stories.add(
-    "Gruppi",
-    withDocs(
-        Gruppi,
-        withInfo({
-            propTables: [FormGroup, Toggle, FormText],
-            propTablesExclude: [TogglesGroupsExample]
-        })(() => <TogglesGroupsExample />)
-    )
-);
-
-const knobsStories = storiesOf("Componenti/Toggles", module);
-knobsStories.addDecorator(withA11y);
-knobsStories.addDecorator(withKnobs);
+import Esempi from "./docs/Esempi.md";
+import Disabilitati from "./docs/Disabilitati.md";
+import Gruppi from "./docs/Gruppi.md";
+import EsempiInterattivi from "./docs/EsempiInterattivi.md";
 
 const EsempiInterattiviComponent = () => {
     const checked = boolean("Selezionato", true);
@@ -77,7 +32,7 @@ const EsempiInterattiviComponent = () => {
                     <Toggle
                         label={`${label} ${checked ? "Selezionato" : ""}  ${
                             disabled ? "Disabilitato" : ""
-                        }`}
+                            }`}
                         disabled={disabled}
                         checked={checked}
                         onChange={() => {}}
@@ -89,7 +44,7 @@ const EsempiInterattiviComponent = () => {
                     <Toggle
                         label={`${label} inverso ${
                             !checked ? "Selezionato" : ""
-                        }  ${disabled ? "Disabilitato" : ""}`}
+                            }  ${disabled ? "Disabilitato" : ""}`}
                         disabled={disabled}
                         checked={!checked}
                         onChange={() => {}}
@@ -99,7 +54,28 @@ const EsempiInterattiviComponent = () => {
         </Row>
     );
 };
-knobsStories.add(
-    "Esempi interattivi",
-    withDocs(EsempiInterattivi, withInfo()(EsempiInterattiviComponent))
-);
+
+storiesOf("Componenti/Toggles", module)
+    .addDecorator(withA11y)
+    .add("Esempi", withInfo({
+        text: Esempi,
+        propTables: [FormGroup, Toggle],
+        propTablesExclude: [TogglesExample]
+    })(() => <TogglesExample />))
+    .add("Disabilitati", withInfo({
+        text: Disabilitati,
+        propTables: [FormGroup, Toggle],
+        propTablesExclude: [TogglesExample]
+    })(() => <TogglesExample disabled />))
+    .add("Gruppi", withInfo({
+        text: Gruppi,
+        propTables: [FormGroup, Toggle, FormText],
+        propTablesExclude: [TogglesGroupsExample]
+    })(() => <TogglesGroupsExample />));
+
+storiesOf("Componenti/Toggles", module)
+    .addDecorator(withA11y)
+    .addDecorator(withKnobs)
+    .add("Esempi interattivi", withInfo({
+        text: EsempiInterattivi
+    })(EsempiInterattiviComponent));

@@ -118,10 +118,7 @@ storiesOf("Componenti/Checkbox", module)
     .add("Gruppi di Checkbox", withInfo({
         text: Gruppi,
         propTablesExclude: [CheckboxGroupsExample]
-    })(() => <CheckboxGroupsExample/>));
-
-storiesOf("Componenti/Checkbox", module)
-    .addDecorator(withA11y)
+    })(() => <CheckboxGroupsExample/>))
     .addDecorator(withKnobs)
     .add("Esempi interattivi", withInfo({
         text: EsempiInterattivi,

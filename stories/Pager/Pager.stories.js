@@ -497,7 +497,11 @@ storiesOf("Componenti/Pager", module)
     .addParameters({viewport: {defaultViewport: 'iphone6'}})
     .add("Responsive", withInfo({
         text: Responsive
-    })(ResponsiveComponent));
+    })(ResponsiveComponent))
+    .addDecorator(withKnobs)
+    .add("Esempi interattivi", withInfo({
+        text: EsempiInterattivi
+    })(EsempiInterattiviComponent));
 
 storiesOf("Componenti/Pager/Funzioni aggiuntive", module)
     .addDecorator(withA11y)
@@ -521,10 +525,3 @@ storiesOf("Componenti/Pager/Funzioni aggiuntive", module)
     .add("Total number", withInfo({
         text: Total
     })(TotalComponent));
-
-storiesOf("Componenti/Pager", module)
-    .addDecorator(withA11y)
-    .addDecorator(withKnobs)
-    .add("Esempi interattivi", withInfo({
-        text: EsempiInterattivi
-    })(EsempiInterattiviComponent));

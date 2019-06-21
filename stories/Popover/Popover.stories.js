@@ -43,38 +43,6 @@ const ElementiDisabilitatiComponent = () => {
     );
 };
 
-storiesOf("Componenti/Popover", module)
-    .addDecorator(withA11y)
-    .add("Esempi", withInfo({
-        text: Esempi,
-        propTables: [Popover, PopoverHeader, PopoverBody],
-        propTablesExclude: [PopoverExample]
-    })(() => <PopoverExample/>))
-    .add("Le quattro direzioni", withInfo({
-        text: QuattroDirezioni,
-        propTables: [Popover, PopoverHeader, PopoverBody],
-        propTablesExclude: [PopoverPositionExample]
-    })(() => <PopoverPositionExample/>))
-    .add("Titolo con icona e link", withInfo({
-        text: IconLink,
-        propTables: [Popover, PopoverHeader, PopoverBody],
-        propTablesExclude: [PopoverExample]
-    })(() => <PopoverIconLink/>))
-    .add("Modalità Hover", withInfo({
-        text: Hover,
-        propTables: [Popover, PopoverHeader, PopoverBody],
-        propTablesExclude: [PopoverExample]
-    })(() => <PopoverHover/>))
-    .add("Dismiss al click successivo", withInfo({
-        text: Focus,
-        propTables: [Popover, PopoverHeader, PopoverBody],
-        propTablesExclude: [PopoverExample]
-    })(() => <PopoverFocus/>))
-    .add("Elementi disabilitati", withInfo({
-        text: ElementiDisabilitati,
-        propTablesExclude: [Button]
-    })(ElementiDisabilitatiComponent));
-
 const store = new Store({
     isOpen: false
 });
@@ -124,6 +92,35 @@ class EsempiInterattiviComponent extends React.Component {
 
 storiesOf("Componenti/Popover", module)
     .addDecorator(withA11y)
+    .add("Esempi", withInfo({
+        text: Esempi,
+        propTables: [Popover, PopoverHeader, PopoverBody],
+        propTablesExclude: [PopoverExample]
+    })(() => <PopoverExample/>))
+    .add("Le quattro direzioni", withInfo({
+        text: QuattroDirezioni,
+        propTables: [Popover, PopoverHeader, PopoverBody],
+        propTablesExclude: [PopoverPositionExample]
+    })(() => <PopoverPositionExample/>))
+    .add("Titolo con icona e link", withInfo({
+        text: IconLink,
+        propTables: [Popover, PopoverHeader, PopoverBody],
+        propTablesExclude: [PopoverExample]
+    })(() => <PopoverIconLink/>))
+    .add("Modalità Hover", withInfo({
+        text: Hover,
+        propTables: [Popover, PopoverHeader, PopoverBody],
+        propTablesExclude: [PopoverExample]
+    })(() => <PopoverHover/>))
+    .add("Dismiss al click successivo", withInfo({
+        text: Focus,
+        propTables: [Popover, PopoverHeader, PopoverBody],
+        propTablesExclude: [PopoverExample]
+    })(() => <PopoverFocus/>))
+    .add("Elementi disabilitati", withInfo({
+        text: ElementiDisabilitati,
+        propTablesExclude: [Button]
+    })(ElementiDisabilitatiComponent))
     .addDecorator(withKnobs)
     .add("Esempi interattivi", withInfo({
         text: EsempiInterattivi,

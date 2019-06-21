@@ -75,10 +75,7 @@ storiesOf("Componenti/Navbar", module)
         text: Inline,
         propTables: [LinkList, LinkListItem, Collapse],
         propTablesExclude: [NavbarInlineExample]
-    })(() => <NavbarInlineExample/>));
-
-storiesOf("Componenti/Navbar", module)
-    .addDecorator(withA11y)
+    })(() => <NavbarInlineExample/>))
     .addDecorator(withKnobs)
     .add("Esempi interattivi", withInfo({
         text: EsempiInterattivi
