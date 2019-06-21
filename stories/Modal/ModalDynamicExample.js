@@ -30,8 +30,8 @@ class ModalExample extends React.Component {
     };
 
     render() {
-        const { centered, fade } = this.props;
-        const { username } = this.state;
+        const {centered, fade} = this.props;
+        const {username} = this.state;
 
         return (
             <div>

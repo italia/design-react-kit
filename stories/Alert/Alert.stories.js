@@ -1,11 +1,11 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
+import {storiesOf} from "@storybook/react";
 
-import { withKnobs, select, boolean } from "@storybook/addon-knobs/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import {withKnobs, select, boolean} from "@storybook/addon-knobs/react";
+import {withA11y} from "@storybook/addon-a11y";
+import {withInfo} from "@storybook/addon-info";
 
-import { Alert } from "../../src";
+import {Alert} from "../../src";
 
 import AlertExample from "./AlertExample";
 
@@ -48,7 +48,7 @@ const ContenutoAggiuntivoComponent = () => (
             come funzioni la spaziatura all&apos;interno di un avviso con questo
             tipo di contenuto.
         </p>
-        <hr />
+        <hr/>
         <p className="mb-0">
             Quando necessario, assicurarti di inserire le utilità di margine per
             mantenere gli spazi equilibrati.
@@ -56,7 +56,7 @@ const ContenutoAggiuntivoComponent = () => (
     </Alert>
 );
 
-const ChiusuraControllataComponent = () => (<AlertExample />);
+const ChiusuraControllataComponent = () => (<AlertExample/>);
 
 const EsempiInterattiviComponent = () => {
     const colors = ["success", "danger", "warning"];
@@ -89,4 +89,4 @@ storiesOf("Componenti/Alert", module)
         text: ChiusuraControllata,
         propTables: [Alert],
         propTablesExclude: [AlertExample],
-    })(ChiusuraControllataComponent))
+    })(ChiusuraControllataComponent));

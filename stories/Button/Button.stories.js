@@ -111,28 +111,28 @@ const ButtonIconComponent = () => (
     <div>
         <button className="btn btn-success btn-lg btn-icon">
             <svg className="icon icon-white">
-                <use xlinkHref="/svg/sprite.svg#it-star-full"></use>
+                <use xlinkHref="/svg/sprite.svg#it-star-full" />
             </svg>
             <span>Icon Button Lg</span>
         </button>
         {" "}
         <button className="btn btn-primary btn-icon">
             <svg className="icon icon-white">
-                <use xlinkHref="/svg/sprite.svg#it-star-full"></use>
+                <use xlinkHref="/svg/sprite.svg#it-star-full" />
             </svg>
             <span>Icon Button</span>
         </button>
         {" "}
         <button className="btn btn-danger btn-sm btn-icon">
             <svg className="icon icon-secondary">
-                <use xlinkHref="/svg/sprite.svg#it-star-full"></use>
+                <use xlinkHref="/svg/sprite.svg#it-star-full" />
             </svg>
             <span>Icon Button Sm</span>
         </button>
         {" "}
         <button className="btn btn-info btn-xs btn-icon">
             <svg className="icon icon-danger">
-                <use xlinkHref="/svg/sprite.svg#it-star-full"></use>
+                <use xlinkHref="/svg/sprite.svg#it-star-full" />
             </svg>
             <span>Icon Button Xs</span>
         </button>

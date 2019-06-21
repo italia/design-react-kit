@@ -1,9 +1,9 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import {storiesOf} from "@storybook/react";
+import {withA11y} from "@storybook/addon-a11y";
+import {withInfo} from "@storybook/addon-info";
 
-import { Button } from "../../src";
+import {Button} from "../../src";
 
 import SimpleCard from "./docs/SimpleCard.md";
 import SimpleArticle from "./docs/SimpleArticle.md";
@@ -77,7 +77,7 @@ const CardIconComponent = () => (
                     <div className="card-body">
                         <div className="categoryicon-top">
                             <svg className="icon">
-                                <use xlinkHref="/svg/sprite.svg#it-file"></use>
+                                <use xlinkHref="/svg/sprite.svg#it-file"/>
                             </svg>
                             <span className="text">Category<br/>Name</span>
                         </div>
@@ -114,7 +114,7 @@ const CardShadingComponent = () => (
                             <span className="text">Leggi di più</span>
                             <svg className="icon">
                                 <use
-                                    xlinkHref="/svg/sprite.svg#it-arrow-right"></use>
+                                    xlinkHref="/svg/sprite.svg#it-arrow-right"/>
                             </svg>
                         </a>
                     </div>
@@ -136,7 +136,7 @@ const BigCardComponent = () => (
                             <div className="top-icon">
                                 <svg className="icon">
                                     <use
-                                        xlinkHref="/svg/sprite.svg#it-card"></use>
+                                        xlinkHref="/svg/sprite.svg#it-card"/>
                                 </svg>
                             </div>
                         </div>
@@ -150,7 +150,7 @@ const BigCardComponent = () => (
                             <span className="text">Leggi di più</span>
                             <svg className="icon">
                                 <use
-                                    xlinkHref="/svg/sprite.svg#it-arrow-right"></use>
+                                    xlinkHref="/svg/sprite.svg#it-arrow-right"/>
                             </svg>
                         </a>
                     </div>
@@ -202,21 +202,22 @@ const CardImageComponent = () => (
                             <div className="img-wrapper">
                                 <img
                                     src="https://via.placeholder.com/310x190/ebebeb/808080/?text=Immagine"
-                                    title="img title" alt="imagealt"></img>
+                                    title="img title"
+                                    alt="imagealt"
+                                />
                             </div>
                         </div>
                     </div>
                     <div className="card-body">
                         <h5 className="card-title">Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit…</h5>
-                        <p className="card-text"></p><a className="read-more"
-                                                        href="#"><span
-                        className="text">Leggi di più</span>
-                        <svg className="icon">
-                            <use
-                                xlinkHref="/svg/sprite.svg#it-arrow-right"></use>
-                        </svg>
-                    </a>
+                        <p className="card-text"/>
+                        <a className="read-more" href="#">
+                            <span className="text">Leggi di più</span>
+                            <svg className="icon">
+                                <use xlinkHref="/svg/sprite.svg#it-arrow-right"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -236,7 +237,9 @@ const SpecialCardComponent = () => (
                             <div className="img-wrapper">
                                 <img
                                     src="https://via.placeholder.com/310x190/ebebeb/808080/?text=Immagine"
-                                    title="img title" alt="imagealt"></img>
+                                    title="img title"
+                                    alt="imagealt"
+                                />
                             </div>
                         </div>
                     </div>

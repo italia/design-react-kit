@@ -1,12 +1,9 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
+import {storiesOf} from "@storybook/react";
+import {withA11y} from "@storybook/addon-a11y";
+import {withInfo} from "@storybook/addon-info";
 
 import {
-    FormGroup,
-    Label,
     Input,
     InputGroup,
     InputGroupAddon,
@@ -17,39 +14,28 @@ import {
     Button
 } from "../../src";
 
+import InputGroupExample from "./InputGroupExample";
 import InputGroupDropdownExample from "./InputGroupDropdownExample";
 
-import Esempi from "./Esempi.md";
-import Dimensioni from "./Dimensioni.md";
-import CheckboxRadio from "./CheckboxRadio.md";
-import InputMultipli from "./InputMultipli.md";
-import AggiunteMultiple from "./AggiunteMultiple.md";
-import AggiuntaBottoni from "./AggiuntaBottoni.md";
-import BottoniDropdown from "./BottoniDropdown.md";
-import PulsantiSegmentati from "./PulsantiSegmentati.md";
-import InputGroupExample from "./InputGroupExample";
-
-const stories = storiesOf("Componenti/Form.Input Group", module);
-stories.addDecorator(withA11y);
+import Esempi from "./docs/Esempi.md";
+import InputMultipli from "./docs/InputMultipli.md";
+import AggiunteMultiple from "./docs/AggiunteMultiple.md";
+import AggiuntaBottoni from "./docs/AggiuntaBottoni.md";
+import BottoniDropdown from "./docs/BottoniDropdown.md";
+import PulsantiSegmentati from "./docs/PulsantiSegmentati.md";
 
 const EsempiComponent = () => (
-<InputGroupExample></InputGroupExample>
+    <InputGroupExample/>
 );
-
-stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
 
 const InputMultipliComponent = () => (
     <div>
         <InputGroup>
             <InputGroupAddon addonType="prepend">Nominativo</InputGroupAddon>
-            <Input type="text" placeholder="Nome" aria-label="Nome" />
-            <Input type="text" placeholder="Cognome" aria-label="Cognome" />
+            <Input type="text" placeholder="Nome" aria-label="Nome"/>
+            <Input type="text" placeholder="Cognome" aria-label="Cognome"/>
         </InputGroup>
     </div>
-);
-stories.add(
-    "Input multipli",
-    withDocs(InputMultipli, withInfo()(InputMultipliComponent))
 );
 
 const AggiunteMultipleComponent = () => (
@@ -59,21 +45,17 @@ const AggiunteMultipleComponent = () => (
                 <InputGroupText>€</InputGroupText>
                 <InputGroupText>0,00</InputGroupText>
             </InputGroupAddon>
-            <Input type="text" aria-label="€" />
+            <Input type="text" aria-label="€"/>
         </InputGroup>
 
         <InputGroup>
-            <Input type="text" aria-label="€" />
+            <Input type="text" aria-label="€"/>
             <InputGroupAddon addonType="append">
                 <InputGroupText>€</InputGroupText>
                 <InputGroupText>0,00</InputGroupText>
             </InputGroupAddon>
         </InputGroup>
     </div>
-);
-stories.add(
-    "Aggiunte multiple",
-    withDocs(AggiunteMultiple, withInfo()(AggiunteMultipleComponent))
 );
 
 const AggiuntaBottoniComponent = () => (
@@ -82,7 +64,7 @@ const AggiuntaBottoniComponent = () => (
             <InputGroupAddon addonType="prepend">
                 <Button color="primary">Bottone</Button>
             </InputGroupAddon>
-            <Input type="text" placeholder="" aria-label="Bottone" />
+            <Input type="text" placeholder="" aria-label="Bottone"/>
         </InputGroup>
 
         <InputGroup className="input-group mb-3">
@@ -101,7 +83,7 @@ const AggiuntaBottoniComponent = () => (
                 <Button color="primary">Bottone</Button>
                 <Button color="primary">Bottone</Button>
             </InputGroupAddon>
-            <Input type="text" placeholder="" aria-label="Bottone" />
+            <Input type="text" placeholder="" aria-label="Bottone"/>
         </InputGroup>
 
         <InputGroup className="input-group">
@@ -117,39 +99,28 @@ const AggiuntaBottoniComponent = () => (
         </InputGroup>
     </div>
 );
-stories.add(
-    "Aggiunta bottoni",
-    withDocs(AggiuntaBottoni, withInfo()(AggiuntaBottoniComponent))
-);
 
-stories.add(
-    "Bottoni con dropdown",
-    withDocs(
-        BottoniDropdown,
-        withInfo({
-            propTables: [
-                InputGroup,
-                InputGroupButtonDropdown,
-                DropdownToggle,
-                DropdownItem
-            ],
-            propTablesExclude: [InputGroupDropdownExample]
-        })(() => <InputGroupDropdownExample />)
-    )
-);
-
-stories.add(
-    "Pulsanti segmentati",
-    withDocs(
-        PulsantiSegmentati,
-        withInfo({
-            propTables: [
-                InputGroup,
-                InputGroupButtonDropdown,
-                DropdownToggle,
-                DropdownItem
-            ],
-            propTablesExclude: [InputGroupDropdownExample]
-        })(() => <InputGroupDropdownExample split />)
-    )
-);
+storiesOf("Componenti/Form.Input Group", module)
+    .addDecorator(withA11y)
+    .add("Esempi", withInfo({
+        text: Esempi
+    })(EsempiComponent))
+    .add("Input multipli", withInfo({
+        text: InputMultipli
+    })(InputMultipliComponent))
+    .add("Aggiunte multiple", withInfo({
+        text: AggiunteMultiple
+    })(AggiunteMultipleComponent))
+    .add("Aggiunta bottoni", withInfo({
+        text: AggiuntaBottoni
+    })(AggiuntaBottoniComponent))
+    .add("Bottoni con dropdown", withInfo({
+        text: BottoniDropdown,
+        propTables: [InputGroup, InputGroupButtonDropdown, DropdownToggle, DropdownItem],
+        propTablesExclude: [InputGroupDropdownExample]
+    })(() => <InputGroupDropdownExample/>))
+    .add("Pulsanti segmentati", withInfo({
+        text: PulsantiSegmentati,
+        propTables: [InputGroup, InputGroupButtonDropdown, DropdownToggle, DropdownItem],
+        propTablesExclude: [InputGroupDropdownExample]
+    })(() => <InputGroupDropdownExample split/>));
