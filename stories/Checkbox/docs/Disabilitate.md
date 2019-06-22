@@ -1,3 +1,2 @@
-### Checkbox disabilitate
 
-<!-- STORY -->
+

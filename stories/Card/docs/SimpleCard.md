@@ -1,4 +1,3 @@
-## Cards
 
 ### A content container with many options and variations.
 

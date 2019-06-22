@@ -1,3 +1,2 @@
-### Gruppi di Checkbox
 
-<!-- STORY -->
+

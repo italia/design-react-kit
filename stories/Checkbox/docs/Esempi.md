@@ -1,5 +1,1 @@
-## Esempi
-
 Checkbox classico
-
-<!-- STORY -->
