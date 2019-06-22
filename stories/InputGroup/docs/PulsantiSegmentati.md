@@ -1,3 +1,0 @@
-### Pulsanti segmentati
-
-<!-- STORY -->

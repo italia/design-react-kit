@@ -1,3 +1,0 @@
-### Bottoni con dropdown
-
-<!-- STORY -->

@@ -1,5 +1,3 @@
-## Posizionamento a fondo pagina con linea a sinistra
-
 In questo esempio, la linea che limita la barra di navigazione è posizionata a destra. Su dispositivi con schermi a dimensione inferiore a 992px, la barra che permette di aprire la navigazione si sposterà in alto nella pagina.
 
-<!-- STORY -->
+

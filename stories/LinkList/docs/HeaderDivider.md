@@ -5,4 +5,4 @@ Questi vengono aggiunti tramite `LinkListItem` con proprietà `header` o `divide
 L’header è costituito dall’elemento `<h3>` all’interno del tag `<li>`.
 Il separatore è costituito dal tag `<span>` con classe `divider` all’interno del tag `<li>`.
 
-<!-- STORY -->
+
