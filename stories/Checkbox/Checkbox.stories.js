@@ -3,106 +3,63 @@ import { storiesOf } from "@storybook/react";
 import { withKnobs, boolean, text } from "@storybook/addon-knobs/react";
 import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
 
 import { Form, FormGroup, Label, Input } from "../../src";
 
 import CheckboxGroupsExample from "./CheckboxGroupsExample";
 
-import Esempi from "./Esempi.md";
-import Inline from "./Inline.md";
-import Disabilitate from "./Disabilitate.md";
-import Gruppi from "./Gruppi.md";
-import EsempiInterattivi from "./EsempiInterattivi.md";
+import Esempi from "./docs/Esempi.md";
+import Inline from "./docs/Inline.md";
+import Disabilitate from "./docs/Disabilitate.md";
+import Gruppi from "./docs/Gruppi.md";
+import EsempiInterattivi from "./docs/EsempiInterattivi.md";
 
-const stories = storiesOf("Componenti/Checkbox", module);
-stories.addDecorator(withA11y);
 
 const EsempiComponent = () => (
     <Form>
         <FormGroup check>
-            <Input id="checkbox1" type="checkbox" />
+            <Input id="checkbox1" type="checkbox"/>
             <Label for="checkbox1" check>
                 Label di esempio
             </Label>
         </FormGroup>
     </Form>
 );
-stories.add(
-    "Esempi",
-    withDocs(
-        Esempi,
-        withInfo({
-            propTablesExclude: [Form, FormGroup]
-        })(EsempiComponent)
-    )
-);
 
 const InlineComponent = () => (
     <Form>
         <FormGroup check inline>
-            <Input id="checkbox1" type="checkbox" />
+            <Input id="checkbox1" type="checkbox"/>
             <Label for="checkbox1" check>
                 Checkbox non selezionato
             </Label>
         </FormGroup>
         <FormGroup check inline>
-            <Input id="checkbox2" type="checkbox" defaultChecked />
+            <Input id="checkbox2" type="checkbox" defaultChecked/>
             <Label for="checkbox2" check>
                 Checkbox selezionato
             </Label>
         </FormGroup>
     </Form>
 );
-stories.add(
-    "Inline",
-    withDocs(
-        Inline,
-        withInfo({
-            propTablesExclude: [Form, FormGroup]
-        })(InlineComponent)
-    )
-);
+
 
 const DisabilitateComponent = () => (
     <Form>
         <FormGroup check>
-            <Input id="checkbox1" type="checkbox" disabled />
+            <Input id="checkbox1" type="checkbox" disabled/>
             <Label for="checkbox1" check>
                 Checkbox disabilitato non selezionato
             </Label>
         </FormGroup>
         <FormGroup check>
-            <Input id="checkbox2" type="checkbox" disabled defaultChecked />
+            <Input id="checkbox2" type="checkbox" disabled defaultChecked/>
             <Label for="checkbox2" check>
                 Checkbox disabilitato selezionato
             </Label>
         </FormGroup>
     </Form>
 );
-stories.add(
-    "Disabilitate",
-    withDocs(
-        Disabilitate,
-        withInfo({
-            propTablesExclude: [Form, FormGroup]
-        })(DisabilitateComponent)
-    )
-);
-
-stories.add(
-    "Gruppi di Checkbox",
-    withDocs(
-        Gruppi,
-        withInfo({
-            propTablesExclude: [CheckboxGroupsExample]
-        })(() => <CheckboxGroupsExample />)
-    )
-);
-
-const knobsStories = storiesOf("Componenti/Checkbox", module);
-knobsStories.addDecorator(withA11y);
-knobsStories.addDecorator(withKnobs);
 
 const EsempiInterattiviComponent = () => {
     const checked = boolean("Selezionato", true);
@@ -118,7 +75,8 @@ const EsempiInterattiviComponent = () => {
                     type="checkbox"
                     checked={checked}
                     disabled={disabled}
-                    onChange={() => {}}
+                    onChange={() => {
+                    }}
                 />
                 <Label for="checkbox1" check>
                     {label} {checked ? "Selezionato" : ""}{" "}
@@ -131,7 +89,8 @@ const EsempiInterattiviComponent = () => {
                     type="checkbox"
                     checked={!checked}
                     disabled={disabled}
-                    onChange={() => {}}
+                    onChange={() => {
+                    }}
                 />
                 <Label for="checkbox1" check>
                     {label} inverso {!checked ? "Selezionato" : ""}{" "}
@@ -141,9 +100,27 @@ const EsempiInterattiviComponent = () => {
         </Form>
     );
 };
-knobsStories.add(
-    "Esempi interattivi",
-    withDocs(EsempiInterattivi, withInfo({
+
+storiesOf("Componenti/Checkbox", module)
+    .addDecorator(withA11y)
+    .add("Esempi", withInfo({
+        text: Esempi,
         propTablesExclude: [Form, FormGroup]
-    })(EsempiInterattiviComponent))
-);
+    })(EsempiComponent))
+    .add("Inline", withInfo({
+        text: Inline,
+        propTablesExclude: [Form, FormGroup]
+    })(InlineComponent))
+    .add("Disabilitate", withInfo({
+        text: Disabilitate,
+        propTablesExclude: [Form, FormGroup]
+    })(DisabilitateComponent))
+    .add("Gruppi di Checkbox", withInfo({
+        text: Gruppi,
+        propTablesExclude: [CheckboxGroupsExample]
+    })(() => <CheckboxGroupsExample/>))
+    .addDecorator(withKnobs)
+    .add("Esempi interattivi", withInfo({
+        text: EsempiInterattivi,
+        propTablesExclude: [Form, FormGroup]
+    })(EsempiInterattiviComponent));

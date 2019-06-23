@@ -1,3 +1,0 @@
-### Su sfondo scuro
-
-<!-- STORY -->

@@ -1,3 +1,0 @@
-## Esempi
-
-<!-- STORY -->

@@ -1,51 +1,3 @@
-import React, { Component } from "react";
-import { withDocs as withDefaults } from "storybook-readme";
-
-export class StoryPreview extends Component {
-    componentDidMount() {
-        setTimeout(() => {
-            document.documentElement.scroll(0, 0);
-        }, 0);
-    }
-
-    render() {
-        const { children } = this.props;
-
-        return (
-            <div
-                style={{
-                    position: "relative",
-                    boxSizing: "border-box",
-                    margin: "16px 0 16px 0",
-                    padding: "50px 35px",
-                    border: "1px dashed #e5e5e5",
-                    backgroundColor: "#ffffff",
-                    transition: "background-color 0.2s",
-                    textAlign: "initial"
-                }}
-            >
-                {children}
-            </div>
-        );
-    }
-}
-
-export const FooterDocs = props => (
-    <div
-        style={{
-            borderTop: "1px dashed #e5e5e5",
-            paddingTop: "16px"
-        }}
-    >
-        {props.children}
-    </div>
-);
-
-export const withDocs = withDefaults({
-    PreviewComponent: StoryPreview,
-    FooterComponent: FooterDocs
-});
-
 export const requireContextPolyfill = () => {
     if (process.env.NODE_ENV === "test") {
         const fs = require("fs");
@@ -92,3 +44,4 @@ export const requireContextPolyfill = () => {
 export const envIs = env => {
     return process.env.NODE_ENV === env;
 };
+

@@ -11,21 +11,39 @@ const styles = {
     boxSizing: 'border-box',
     margin: '0',
     padding: '48px 32px',
-    border: '1px solid #F3F3F5',
-    backgroundColor: '#FFF',
-    transition: 'background-color 0.2s',
     textAlign: 'initial'
 };
 const CenterDecorator = storyFn => <div style={styles}>{storyFn()}</div>;
 
 addParameters({
     options: {
-        name: 'Design React Kit',
-        url: 'https://github.com/italia/design-react-kit',
+        /**
+         * display panel that shows a list of stories
+         * @type {Boolean}
+         */
+        showNav: true,
+        /**
+         * display panel that shows addon configurations
+         * @type {Boolean}
+         */
+        showPanel: true,
+        /**
+         * where to show the addon panel
+         * @type {('bottom'|'right')}
+         */
+        panelPosition: 'bottom',
+        /**
+         * regex for finding the hierarchy root separator
+         * @example:
+         *   null - turn off multiple hierarchy roots
+         *   /\|/ - split by `|`
+         * @type {Regex}
+         */
+        hierarchyRootSeparator: /\//,
+        /**
+         * theme storybook, see link below
+         */
         theme: theme,
-        hierarchySeparator: /\/|\./,
-        hierarchyRootSeparator: '/',
-
     },
 });
 

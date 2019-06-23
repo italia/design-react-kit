@@ -2,7 +2,6 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
 
 import {
     Dropdown,
@@ -16,84 +15,25 @@ import {
 import DropdownExample from "./DropdownExample";
 import DropdownButtonExample from "./DropdownButtonExample";
 
-import Esempi from "./Esempi.md";
-import VarianteBottoni from "./VarianteBottoni.md";
-import Link from "./Link.md";
-import MenuVociAttive from "./MenuVociAttive.md";
-import MenuVociDisabilitate from "./MenuVociDisabilitate.md";
-import MenuHeaderDivider from "./MenuHeaderDivider.md";
-import MenuLarge from "./MenuLarge.md";
-import MenuFull from "./MenuFull.md";
-import MenuIconRight from "./MenuIconRight.md";
-import MenuIconLeft from "./MenuIconLeft.md";
-import MenuDark from "./MenuDark.md";
-
-const stories = storiesOf("Componenti/Dropdown", module);
-stories.addDecorator(withA11y);
-
-stories.add(
-    "Esempi",
-    withDocs(
-        Esempi,
-        withInfo({
-            propTables: [
-                Dropdown,
-                DropdownMenu,
-                DropdownItem,
-                DropdownToggle,
-                LinkList,
-                LinkListItem
-            ],
-            propTablesExclude: [DropdownExample]
-        })(() => <DropdownExample />)
-    )
-);
+import Esempi from "./docs/Esempi.md";
+import VarianteBottoni from "./docs/VarianteBottoni.md";
+import Link from "./docs/Link.md";
+import MenuVociAttive from "./docs/MenuVociAttive.md";
+import MenuVociDisabilitate from "./docs/MenuVociDisabilitate.md";
+import MenuHeaderDivider from "./docs/MenuHeaderDivider.md";
+import MenuLarge from "./docs/MenuLarge.md";
+import MenuFull from "./docs/MenuFull.md";
+import MenuIconRight from "./docs/MenuIconRight.md";
+import MenuIconLeft from "./docs/MenuIconLeft.md";
+import MenuDark from "./docs/MenuDark.md";
 
 const VarianteComponent = () => (
     <section>
-        <DropdownButtonExample color="primary" />
-        <DropdownButtonExample color="secondary" />
-        <DropdownButtonExample color="danger" />
+        <DropdownButtonExample color="primary"/>
+        <DropdownButtonExample color="secondary"/>
+        <DropdownButtonExample color="danger"/>
     </section>
 );
-stories.add(
-    "Variante Bottoni",
-    withDocs(
-        VarianteBottoni,
-        withInfo({
-            propTables: [
-                Dropdown,
-                DropdownMenu,
-                DropdownItem,
-                DropdownToggle,
-                LinkList,
-                LinkListItem
-            ],
-            propTablesExclude: [DropdownButtonExample]
-        })(VarianteComponent)
-    )
-);
-
-stories.add(
-    "Link",
-    withDocs(
-        Link,
-        withInfo({
-            propTables: [
-                Dropdown,
-                DropdownMenu,
-                DropdownItem,
-                DropdownToggle,
-                LinkList,
-                LinkListItem
-            ],
-            propTablesExclude: [DropdownExample]
-        })(() => <DropdownExample tag="span" />)
-    )
-);
-
-const menuStories = storiesOf("Componenti/Dropdown.Dropdown menu", module);
-menuStories.addDecorator(withA11y);
 
 const MenuVociAttiveComponent = () => (
     <div className="clearfix">
@@ -111,10 +51,6 @@ const MenuVociAttiveComponent = () => (
             </LinkList>
         </DropdownMenu>
     </div>
-);
-menuStories.add(
-    "Menù voci attive",
-    withDocs(MenuVociAttive, withInfo()(MenuVociAttiveComponent))
 );
 
 const MenuVociDisabilitateComponent = () => (
@@ -134,10 +70,6 @@ const MenuVociDisabilitateComponent = () => (
         </DropdownMenu>
     </div>
 );
-menuStories.add(
-    "Menù voci disabilitate",
-    withDocs(MenuVociDisabilitate, withInfo()(MenuVociDisabilitateComponent))
-);
 
 const MenuHeaderDividerComponent = () => (
     <div className="clearfix">
@@ -153,17 +85,13 @@ const MenuHeaderDividerComponent = () => (
                 <LinkListItem>
                     <span>Azione 3</span>
                 </LinkListItem>
-                <LinkListItem divider />
+                <LinkListItem divider/>
                 <LinkListItem>
                     <span>Azione 4</span>
                 </LinkListItem>
             </LinkList>
         </DropdownMenu>
     </div>
-);
-menuStories.add(
-    "Menù headers e separatori",
-    withDocs(MenuHeaderDivider, withInfo()(MenuHeaderDividerComponent))
 );
 
 const MenuLargeComponent = () => (
@@ -182,10 +110,6 @@ const MenuLargeComponent = () => (
             </LinkList>
         </DropdownMenu>
     </div>
-);
-menuStories.add(
-    "Menu con voci large",
-    withDocs(MenuLarge, withInfo()(MenuLargeComponent))
 );
 
 const MenuFullComponent = () => (
@@ -211,10 +135,6 @@ const MenuFullComponent = () => (
         </DropdownMenu>
     </div>
 );
-menuStories.add(
-    "Menù full width",
-    withDocs(MenuFull, withInfo()(MenuFullComponent))
-);
 
 const MenuIconRightComponent = () => (
     <div className="clearfix">
@@ -222,23 +142,19 @@ const MenuIconRightComponent = () => (
             <LinkList>
                 <LinkListItem className="right-icon">
                     <span>Azione 1</span>
-                    <i className="it-info right" />
+                    <i className="it-info right"/>
                 </LinkListItem>
                 <LinkListItem className="right-icon">
                     <span>Azione 2</span>
-                    <i className="it-info right" />
+                    <i className="it-info right"/>
                 </LinkListItem>
                 <LinkListItem className="right-icon">
                     <span>Azione 3</span>
-                    <i className="it-info right" />
+                    <i className="it-info right"/>
                 </LinkListItem>
             </LinkList>
         </DropdownMenu>
     </div>
-);
-menuStories.add(
-    "Menù icona a destra",
-    withDocs(MenuIconRight, withInfo()(MenuIconRightComponent))
 );
 
 const MenuIconLeftComponent = () => (
@@ -246,24 +162,20 @@ const MenuIconLeftComponent = () => (
         <DropdownMenu isOpen className="d-block position-relative">
             <LinkList>
                 <LinkListItem className="left-icon">
-                    <i className="it-info left" />
+                    <i className="it-info left"/>
                     <span>Azione 1</span>
                 </LinkListItem>
                 <LinkListItem className="left-icon">
-                    <i className="it-info left" />
+                    <i className="it-info left"/>
                     <span>Azione 2</span>
                 </LinkListItem>
                 <LinkListItem className="left-icon">
-                    <i className="it-info left" />
+                    <i className="it-info left"/>
                     <span>Azione 3</span>
                 </LinkListItem>
             </LinkList>
         </DropdownMenu>
     </div>
-);
-menuStories.add(
-    "Menù icona a sinistra",
-    withDocs(MenuIconLeft, withInfo()(MenuIconLeftComponent))
 );
 
 const MenuDarkComponent = () => (
@@ -273,27 +185,71 @@ const MenuDarkComponent = () => (
                 <LinkListItem header>Header</LinkListItem>
                 <LinkListItem active className="right-icon">
                     <span>Azione 1 (attivo)</span>
-                    <i className="it-info right" />
+                    <i className="it-info right"/>
                 </LinkListItem>
                 <LinkListItem className="right-icon">
                     <span>Azione 2</span>
-                    <i className="it-info right" />
+                    <i className="it-info right"/>
                 </LinkListItem>
                 <LinkListItem className="right-icon">
                     <span>Azione 3</span>
-                    <i className="it-info right" />
+                    <i className="it-info right"/>
                 </LinkListItem>
-                <LinkListItem divider />
+                <LinkListItem divider/>
                 <LinkListItem className="right-icon">
                     <span>Azione 4</span>
-                    <i className="it-info right" />
+                    <i className="it-info right"/>
                 </LinkListItem>
                 <LinkListItem disabled className="right-icon">
                     <span>Azione 5 (disabilitato)</span>
-                    <i className="it-info right" />
+                    <i className="it-info right"/>
                 </LinkListItem>
             </LinkList>
         </DropdownMenu>
     </div>
 );
-menuStories.add("Menù dark", withDocs(MenuDark, withInfo()(MenuDarkComponent)));
+
+storiesOf("Componenti/Dropdown", module)
+    .addDecorator(withA11y)
+    .add("Esempi", withInfo({
+        text: Esempi,
+        propTables: [Dropdown, DropdownMenu, DropdownItem, DropdownToggle, LinkList, LinkListItem],
+        propTablesExclude: [DropdownExample]
+    })(() => <DropdownExample/>))
+    .add("Variante Bottoni", withInfo({
+        text: VarianteBottoni,
+        propTables: [Dropdown, DropdownMenu, DropdownItem, DropdownToggle, LinkList, LinkListItem],
+        propTablesExclude: [DropdownButtonExample]
+    })(VarianteComponent))
+    .add("Link", withInfo({
+        text: Link,
+        propTables: [Dropdown, DropdownMenu, DropdownItem, DropdownToggle, LinkList, LinkListItem],
+        propTablesExclude: [DropdownExample]
+    })(() => <DropdownExample tag="span"/>));
+
+storiesOf("Componenti/Dropdown.Dropdown menu", module)
+    .addDecorator(withA11y)
+    .add("Menù voci attive", withInfo({
+        text: MenuVociAttive
+    })(MenuVociAttiveComponent))
+    .add("Menù voci disabilitate", withInfo({
+        text: MenuVociDisabilitate
+    })(MenuVociDisabilitateComponent))
+    .add("Menù headers e separatori", withInfo({
+        text: MenuHeaderDivider
+    })(MenuHeaderDividerComponent))
+    .add("Menu con voci large", withInfo({
+        text: MenuLarge
+    })(MenuLargeComponent))
+    .add("Menù full width", withInfo({
+        text: MenuFull
+    })(MenuFullComponent))
+    .add("Menù icona a destra", withInfo({
+        text: MenuIconRight
+    })(MenuIconRightComponent))
+    .add("Menù icona a sinistra", withInfo({
+        text: MenuIconLeft
+    })(MenuIconLeftComponent))
+    .add("Menù dark", withInfo({
+        text: MenuDark
+    })(MenuDarkComponent));

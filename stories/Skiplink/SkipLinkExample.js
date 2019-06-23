@@ -1,6 +1,5 @@
 import React from "react";
 import { Skiplink, SkiplinkItem } from "../../src";
-import { envIs } from "../utils";
 
 class SkipLinkExample extends React.Component {
     constructor(props) {

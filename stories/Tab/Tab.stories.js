@@ -1,23 +1,19 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
+import {storiesOf} from "@storybook/react";
+import {withA11y} from "@storybook/addon-a11y";
+import {withInfo} from "@storybook/addon-info";
 
-import { Nav, NavItem, NavLink, TabContent, TabPane } from "../../src";
+import {Nav, NavItem, NavLink, TabContent, TabPane} from "../../src";
 
 import TabExample from "./TabExample";
 import TabButtonExample from "./TabButtonExample";
 
-import Esempi from "./Esempi.md";
-import Contenuto from "./Contenuto.md";
-import Icone from "./Icone.md";
-import IconeTesto from "./IconeTesto.md";
-import TabBottoni from "./TabBottoni.md";
-import AllineamentoVerticale from "./AllineamentoVerticale.md";
-
-const stories = storiesOf("Componenti/Tab", module);
-stories.addDecorator(withA11y);
+import Esempi from "./docs/Esempi.md";
+import Contenuto from "./docs/Contenuto.md";
+import Icone from "./docs/Icone.md";
+import IconeTesto from "./docs/IconeTesto.md";
+import TabBottoni from "./docs/TabBottoni.md";
+import AllineamentoVerticale from "./docs/AllineamentoVerticale.md";
 
 const EsempiComponent = () => (
     <div>
@@ -60,59 +56,33 @@ const EsempiComponent = () => (
         </Nav>
     </div>
 );
-stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
-
-stories.add(
-    "Contenuto",
-    withDocs(
-        Contenuto,
-        withInfo({
-            propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-            propTablesExclude: [TabExample]
-        })(() => <TabExample text />)
-    )
-);
-
-stories.add(
-    "Icone",
-    withDocs(
-        Icone,
-        withInfo({
-            propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-            propTablesExclude: [TabExample]
-        })(() => <TabExample icons />)
-    )
-);
-
-stories.add(
-    "Icone e testo",
-    withDocs(
-        IconeTesto,
-        withInfo({
-            propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-            propTablesExclude: [TabExample]
-        })(() => <TabExample text icons />)
-    )
-);
-
-stories.add(
-    "Tab a bottoni",
-    withDocs(
-        TabBottoni,
-        withInfo({
-            propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-            propTablesExclude: [TabButtonExample]
-        })(() => <TabButtonExample />)
-    )
-);
-
-stories.add(
-    "Allineamento Verticale",
-    withDocs(
-        AllineamentoVerticale,
-        withInfo({
-            propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-            propTablesExclude: [TabButtonExample]
-        })(() => <TabButtonExample vertical />)
-    )
-);
+storiesOf("Componenti/Tab", module)
+    .addDecorator(withA11y)
+    .add("Esempi", withInfo({
+        text: Esempi
+    })(EsempiComponent))
+    .add("Contenuto", withInfo({
+        text: Contenuto,
+        propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+        propTablesExclude: [TabExample]
+    })(() => <TabExample text/>))
+    .add("Icone", withInfo({
+        text: Icone,
+        propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+        propTablesExclude: [TabExample]
+    })(() => <TabExample icons/>))
+    .add("Icone e testo", withInfo({
+        text: IconeTesto,
+        propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+        propTablesExclude: [TabExample]
+    })(() => <TabExample text icons/>))
+    .add("Tab a bottoni", withInfo({
+        text: TabBottoni,
+        propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+        propTablesExclude: [TabButtonExample]
+    })(() => <TabButtonExample/>))
+    .add("Allineamento Verticale", withInfo({
+        text: AllineamentoVerticale,
+        propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+        propTablesExclude: [TabButtonExample]
+    })(() => <TabButtonExample vertical/>));

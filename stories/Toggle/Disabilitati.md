@@ -1,3 +1,0 @@
-### Disabilitati
-
-<!-- STORY -->
