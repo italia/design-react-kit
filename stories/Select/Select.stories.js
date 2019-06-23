@@ -5,12 +5,12 @@ import { withInfo } from "@storybook/addon-info";
 import SelectExample from "./SelectExample";
 import Select from "react-select";
 
-import Esempi from "./Esempi.md";
-import Disabled from "./Disabled.md";
-import Reset from "./Reset.md";
-import Searchable from "./Searchable.md";
-import Multipla from "./Multipla.md";
-import Grouped from "./Grouped.md";
+import Esempi from "./docs/Esempi.md";
+import Disabled from "./docs/Disabled.md";
+import Reset from "./docs/Reset.md";
+import Searchable from "./docs/Searchable.md";
+import Multipla from "./docs/Multipla.md";
+import Grouped from "./docs/Grouped.md";
 
 const stories = storiesOf("Componenti/Select", module);
 
