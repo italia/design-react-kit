@@ -45,7 +45,7 @@
         "classnames": "^2.2.6",
         "eslint": "^5.15.1",
         "eslint-config-airbnb": "^17.1.0",
-        "eslint-config-prettier": "^4.3.0",
+        "eslint-config-prettier": "^5.0.0",
         "eslint-plugin-babel": "^5.3.0",
         "eslint-plugin-jsx-a11y": "^6.2.1",
         "eslint-plugin-react": "^7.13.0",
@@ -57,8 +57,7 @@
         "rollup-plugin-babel": "^4.3.2",
         "rollup-plugin-commonjs": "^10.0.0",
         "rollup-plugin-node-resolve": "^5.0.2",
-        "run-script-os": "^1.0.5",
-        "storybook-readme": "^5.0.3"
+        "run-script-os": "^1.0.5"
     },
     "peerDependencies": {
         "react": "^16.8.3",

@@ -7,7 +7,7 @@
 // import { Autocomplete } from "../../src/";
 // import AutocompleteExample from "./AutocompleteExample";
 
-// import InputAutocomplete from "./InputAutocomplete.md";
+// import InputAutocomplete from "./docs/InputAutocomplete.md";
 
 // const stories = storiesOf("Componenti/Autocomplete", module);
 // stories.addDecorator(withA11y);

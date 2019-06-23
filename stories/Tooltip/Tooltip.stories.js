@@ -3,22 +3,13 @@ import { storiesOf } from "@storybook/react";
 import { withKnobs, text, select } from "@storybook/addon-knobs/react";
 import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
-import { withDocs, envIs } from "../utils";
-
 import { Tooltip, UncontrolledTooltip, Button } from "../../src";
 
-import Esempi from "./Esempi.md";
-import Posizioni from "./Posizioni.md";
-import EsempiInterattivi from "./EsempiInterattivi.md";
-
-const stories = storiesOf("Componenti/Tooltip", module);
-stories.addDecorator(withA11y);
+import Esempi from "./docs/Esempi.md";
+import Posizioni from "./docs/Posizioni.md";
+import EsempiInterattivi from "./docs/EsempiInterattivi.md";
 
 const EsempiComponent = () => {
-    if (envIs("test")) {
-        // Current story has a dependency on the DOM, skip it for now
-        return null;
-    }
 
     const ids = ["Example1", "Example2", "Example3"];
     const target = i => document.getElementById(ids[i]);
@@ -75,13 +66,8 @@ const EsempiComponent = () => {
         </div>
     );
 };
-stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
 
 const PosizioniComponent = () => {
-    if (envIs("test")) {
-        // Current story has a dependency on the DOM, skip it for now
-        return null;
-    }
 
     const ids = ["example1", "example2", "example3", "example4", "example5"];
     const target = i => document.getElementById(ids[i]);
@@ -122,17 +108,8 @@ const PosizioniComponent = () => {
         </div>
     );
 };
-stories.add("Posizioni", withDocs(Posizioni, withInfo()(PosizioniComponent)));
-
-const knobsStories = storiesOf("Componenti/Tooltip", module);
-knobsStories.addDecorator(withA11y);
-knobsStories.addDecorator(withKnobs);
 
 const EsempiInterattiviComponent = () => {
-    if (envIs("test")) {
-        // Current story has a dependency on the DOM, skip it for now
-        return null;
-    }
 
     const id = "example";
     const target = () => document.getElementById(id);
@@ -153,7 +130,16 @@ const EsempiInterattiviComponent = () => {
         </div>
     );
 };
-knobsStories.add(
-    "Esempi interattivi",
-    withDocs(EsempiInterattivi, withInfo()(EsempiInterattiviComponent))
-);
+
+storiesOf("Componenti/Tooltip", module)
+    .addDecorator(withA11y)
+    .add("Esempi", withInfo({
+        text: Esempi
+    })(EsempiComponent))
+    .add("Posizioni", withInfo({
+        text: Posizioni
+    })(PosizioniComponent))
+    .addDecorator(withKnobs)
+    .add("Esempi interattivi", withInfo({
+        text: EsempiInterattivi
+    })(EsempiInterattiviComponent));
