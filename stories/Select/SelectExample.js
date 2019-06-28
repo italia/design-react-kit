@@ -40,6 +40,31 @@ const DropdownIndicator = props => {
     );
 };
 
+const GroupHeading = props => (
+    <div>
+        <components.GroupHeading {...props} />
+    </div>
+);
+
+const IndicatorSeparator = ({ innerProps }) => {
+    return <span {...innerProps} />;
+};
+
+const CustomClearText = () => "Annulla";
+
+const ClearIndicator = props => {
+    const {
+        children = <CustomClearText />,
+        getStyles,
+        innerProps: { ref, ...restInnerProps }
+    } = props;
+    return (
+        <div className="select-pill text-primary" {...restInnerProps} ref={ref}>
+            <div style={{ padding: "0px 5px" }}>{children}</div>
+        </div>
+    );
+};
+
 const defaultOptions = [
     { value: "Value 1", label: "Opzione 1" },
     { value: "Value 2", label: "Opzione 2" },
@@ -111,15 +136,19 @@ class SelectExample extends React.Component {
         }
 
         return (
-            <div class="bootstrap-select-wrapper">
+            <div className="bootstrap-select-wrapper">
                 <Label for="selectExample">Etichetta di esempio</Label>
                 <Select
                     components={{
                         MenuList,
                         Option,
                         SelectContainer,
-                        DropdownIndicator
+                        DropdownIndicator,
+                        ClearIndicator,
+                        GroupHeading,
+                        IndicatorSeparator: null
                     }}
+                    id="selectExample"
                     value={selectedOption}
                     onChange={this.handleChange}
                     options={options}
