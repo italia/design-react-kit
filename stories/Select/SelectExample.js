@@ -1,7 +1,44 @@
 import React from "react";
-import Select from "react-select";
+import Select, { components } from "react-select";
 import PropTypes from "prop-types";
 import { Label } from "../../src";
+
+const SelectContainer = ({ children, ...props }) => {
+    return (
+        <div>
+            <components.SelectContainer {...props}>
+                {children}
+            </components.SelectContainer>
+        </div>
+    );
+};
+
+const Option = props => {
+    return (
+        <div className="select-pill text-primary">
+            <components.Option {...props} />
+        </div>
+    );
+};
+const MenuList = props => {
+    return (
+        <div>
+            <components.MenuList {...props}>
+                {props.children}
+            </components.MenuList>
+        </div>
+    );
+};
+
+const DropdownIndicator = props => {
+    return (
+        <components.DropdownIndicator {...props}>
+            <svg class="icon">
+                <use xlinkHref="/svg/sprite.svg#it-arrow-down-triangle" />
+            </svg>
+        </components.DropdownIndicator>
+    );
+};
 
 const defaultOptions = [
     { value: "Value 1", label: "Opzione 1" },
@@ -77,6 +114,12 @@ class SelectExample extends React.Component {
             <div class="bootstrap-select-wrapper">
                 <Label for="selectExample">Etichetta di esempio</Label>
                 <Select
+                    components={{
+                        MenuList,
+                        Option,
+                        SelectContainer,
+                        DropdownIndicator
+                    }}
                     value={selectedOption}
                     onChange={this.handleChange}
                     options={options}
