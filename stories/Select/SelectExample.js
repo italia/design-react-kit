@@ -1,11 +1,10 @@
 import React from "react";
 import Select, { components } from "react-select";
 import PropTypes from "prop-types";
-import { Label } from "../../src";
 
 const SelectContainer = ({ children, ...props }) => {
     return (
-        <div>
+        <div >
             <components.SelectContainer {...props}>
                 {children}
             </components.SelectContainer>
@@ -137,7 +136,7 @@ class SelectExample extends React.Component {
 
         return (
             <div className="bootstrap-select-wrapper">
-                <Label for="selectExample">Etichetta di esempio</Label>
+                <label for="selectExample">Etichetta di esempio</label>
                 <Select
                     components={{
                         MenuList,
@@ -157,6 +156,7 @@ class SelectExample extends React.Component {
                     isSearchable={search ? true : false}
                     isMulti={multi ? true : false}
                     isClearable={reset ? true : false}
+                    aria-label={this.state.placeholder}
                 />
             </div>
         );
