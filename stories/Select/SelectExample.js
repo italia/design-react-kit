@@ -157,6 +157,7 @@ class SelectExample extends React.Component {
                     isMulti={multi ? true : false}
                     isClearable={reset ? true : false}
                     aria-label={this.state.placeholder}
+                    classNamePrefix={"react-select"}
                 />
             </div>
         );
