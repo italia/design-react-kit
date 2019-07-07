@@ -1,9 +1,21 @@
-react-select__control {
-    border: 2px dashed red;
-    border-radius: 0px;
+.react-select__control {
+    border-radius: 0px !important;
+    border-bottom: solid #435a70 1px !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
 }
-
-#selectExample {
-    border: 2px dashed red;
-    border-radius: 0px;
+.react-select__control--is-focused {
+    border-style: none !important;
+    border-bottom: solid #435a70 1.25px !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    outline-width: 0ch !important;
+}
+.react-select__indicator {
+    fill: #435a70;
+}
+.react-select__placeholder {
+    color: #435a70 !important;
 }
