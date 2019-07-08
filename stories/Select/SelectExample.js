@@ -1,6 +1,7 @@
 import React from "react";
 import Select, { components } from "react-select";
 import PropTypes from "prop-types";
+import '!style-loader!css-loader!./assets/css/select-styles.css';
 
 const SelectContainer = ({ children, ...props }) => {
     return (
