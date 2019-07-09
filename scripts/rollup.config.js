@@ -39,10 +39,10 @@ export default [
                 "loose": true,
                 "modules": false
             }], "@babel/preset-react"],
-        plugins: [
+        /*plugins: [
             "@babel/plugin-proposal-class-properties",
             "@babel/plugin-proposal-object-rest-spread"
-        ]
+        ]*/
       })
     ]
   }
