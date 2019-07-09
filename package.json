@@ -49,13 +49,14 @@
         "husky": "^3.0.0",
         "react-scripts": "^3.0.1",
         "react-scrollspy": "^3.4.0",
-        "react-test-renderer": "^16.8.3"
+        "react-test-renderer": "^16.8.3",
+        "webpack-node-externals": "^1.7.2"
     },
     "peerDependencies": {
         "@babel/core": "^7.4.5",
+        "babel-loader": "^8.0.6",
         "react": "^16.8.3",
-        "react-dom": "^16.8.3",
-        "babel-loader": "^8.0.6"
+        "react-dom": "^16.8.3"
     },
     "scripts": {
         "install-dependencies": "yarn install --peers",
