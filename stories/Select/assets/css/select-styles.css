@@ -1,0 +1,37 @@
+.react-select__control {
+    border-radius: 0px !important;
+    border-bottom: solid #435a70 1px !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+}
+.react-select__control:focus {
+    box-shadow: none !important;
+    border-bottom: solid #435a70 1.25px !important;
+}
+.react-select__control:hover {
+    box-shadow: none !important;
+    border-bottom: solid #435a70 1.25px !important;
+}
+.react-select__control--is-focused {
+    box-shadow: none !important;
+    border-style: none !important;
+    border-bottom: solid #435a70 1.25px !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+}
+.react-select__indicator {
+    fill: #435a70;
+}
+.react-select__placeholder {
+    color: #435a70 !important;
+}
+.react-select__single-value {
+    color: #435a70 !important;
+    font-weight: bold;
+}
+.react-select__single-value:hover {
+    color: black !important;
+    font-weight: bold;
+}
