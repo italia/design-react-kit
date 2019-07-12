@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
+import Select from "react-select";
 
 import {
     Row,
@@ -14,7 +15,6 @@ import {
     FormText,
     Button,
     PasswordInput,
-    // Select,
     PasswordMeter,
     Toggle
 } from "../../src";
@@ -24,7 +24,6 @@ import FormGroupsExample from "./FormGroupsExample";
 import FormSizingExample from "./FormSizingExample";
 import FormInputPasswordExample from "./FormInputPasswordExample";
 
-// import SelectExample from "../Select/SelectExample";
 import CheckboxGroupsExample from "../Checkbox/CheckboxGroupsExample";
 import RadioGroupsExample from "../Radio/RadioGroupsExample";
 // import AutocompleteExample from "../Autocomplete/AutocompleteExample";
@@ -35,12 +34,7 @@ import Esempi from "./docs/Esempi.md";
 import InputPassword from "./docs/InputPassword.md";
 import InputFile from "./docs/InputFile.md";
 // import InputAutocomplete from "./docs/InputAutocomplete.md";
-// import SelectEsempio from "./docs/Select.md";
-// import SelectMultipla from "./docs/SelectMultipla.md";
-// import SelectRicerca from "./docs/SelectRicerca.md";
-// import SelectGruppi from "./docs/SelectGruppi.md";
 import Textarea from "./docs/Textarea.md";
-// import IconeAggiuntive from "./docs/IconeAggiuntive.md";
 // import Dimensioni from "./docs/Dimensioni.md";
 import Readonly from "./docs/Readonly.md";
 import ReadonlyNormalizzato from "./docs/ReadonlyNormalizzato.md";
@@ -102,60 +96,7 @@ stories.add(
         })(() => <AutocompleteExample />)
     )
 );
-
-const SelectComponent = () => (
-    <div>
-        <h4>Select Classica</h4>
-        <SelectExample classic />
-        <h4>Select Personalizzata</h4>
-        <SelectExample />
-    </div>
-);
-
-stories.add(
-    "Select",
-    withDocs(
-        SelectEsempio,
-        withInfo({
-            propTables: [],
-            propTablesExclude: [SelectExample]
-        })(SelectComponent)
-    )
-);
-
-stories.add(
-    "Select multipla",
-    withDocs(
-        SelectMultipla,
-        withInfo({
-            propTables: [],
-            propTablesExclude: [SelectExample]
-        })(() => <SelectExample multi />)
-    )
-);
-
-stories.add(
-    "Select con ricerca",
-    withDocs(
-        SelectRicerca,
-        withInfo({
-            propTables: [],
-            propTablesExclude: [SelectExample]
-        })(() => <SelectExample search />)
-    )
-);
-
-stories.add(
-    "Select con gruppi di opzioni",
-    withDocs(
-        SelectGruppi,
-        withInfo({
-            propTables: [],
-            propTablesExclude: [SelectExample]
-        })(() => <SelectExample group multi />)
-    )
-); */
-
+*/
 const TextareaComponent = () => (
     <Form>
         <FormGroup>
@@ -454,7 +395,7 @@ const InlineFormsComponent = () => (
         <FormSizingExample inline/>
 
         <Form inline className="m-3">
-            {/*<Label className="my-1 mr-2" for="inlineFormCustomSelectPref">
+            <Label className="my-1 mr-2" for="inlineFormCustomSelectPref">
                 Preference
             </Label>
             <Select
@@ -465,7 +406,7 @@ const InlineFormsComponent = () => (
                     { value: "2", label: "Two" },
                     { value: "3", label: "Three" }
                 ]}
-            />*/}
+            />
 
             <div className="custom-control custom-checkbox my-1 mr-sm-2">
                 <Input
@@ -529,7 +470,7 @@ const FormDisabilitatoComponent = () => (
                     />
                 </FormGroup>
 
-                {/*<FormGroup className="mt-3">
+                <FormGroup className="mt-3">
                 <Label for="exampleSelect" style = {{position : ' static ' }}>Select disabilitata</Label>
                     <Select
                         id="exampleSelect"
@@ -537,9 +478,9 @@ const FormDisabilitatoComponent = () => (
                         options={[{ value: "", label: "..." }]}
                         disabled
                     />
-                </FormGroup>*/}
+                </FormGroup>
 
-                {/*<FormGroup className="mt-3">
+                <FormGroup className="mt-3">
                 <Label for="disabledSelect" style = {{position : ' static ' }}>
                 Select default disabilitata
             </Label>
@@ -549,7 +490,7 @@ const FormDisabilitatoComponent = () => (
                         placeholder="Select disabilitato"
                         disabled
                     />
-                </FormGroup>*/}
+                </FormGroup>
 
                 <div className="form-row">
                     <FormGroup check className="mt-3">
