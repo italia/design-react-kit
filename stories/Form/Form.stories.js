@@ -533,6 +533,8 @@ storiesOf("Componenti/Form", module)
     .add("Input Readonly normalizzato", withInfo({
         text: ReadonlyNormalizzato
     })(ReadonlyNormalizzatoComponent))
+storiesOf("Componenti/Form.Checkbox and radio", module)
+    .addDecorator(withA11y)    
     .add("Checkbox e radio", withInfo({
         text: CheckboxRadio
     })(CheckboxRadioComponent))
@@ -547,6 +549,8 @@ storiesOf("Componenti/Form", module)
         propTables: [Input, Label, FormText],
         propTablesExclude: [CheckboxGroupsExample, RadioGroupsExample]
     })(GruppiComponent))
+storiesOf("Componenti/Form.Toggles", module)
+    .addDecorator(withA11y) 
     .add("Toggles", withInfo({
         text: Toggles,
         propTables: [Toggle],
