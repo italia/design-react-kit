@@ -30,7 +30,9 @@ const BasicSidebarComponent = () => (
             <LinkListItem medium>
                 <span>Link list</span>
             </LinkListItem>
-            <Sidebar secondary />
+        </LinkList>
+        <Sidebar secondary />
+        <LinkList>
             <LinkListItem>
                 <span>Secondary item</span>
             </LinkListItem>
@@ -87,7 +89,9 @@ const ConIconaSidebarComponent = () => (
                 </svg>
                 <span>Link list</span>
             </LinkListItem>
-            <Sidebar secondary />
+        </LinkList>
+        <Sidebar secondary />
+        <LinkList>
             <LinkListItem>
                 <span>Secondary item</span>
             </LinkListItem>
@@ -128,7 +132,9 @@ const ConLineaDestraSidebarComponent = () => (
             <LinkListItem medium>
                 <span>Link list</span>
             </LinkListItem>
-            <Sidebar secondary />
+        </LinkList>
+        <Sidebar secondary />
+        <LinkList>
             <LinkListItem>
                 <span>Secondary item</span>
             </LinkListItem>
@@ -169,7 +175,9 @@ const ConLineaSinistraSidebarComponent = () => (
             <LinkListItem medium>
                 <span>Link list</span>
             </LinkListItem>
-            <Sidebar secondary />
+        </LinkList>
+        <Sidebar secondary />
+        <LinkList>
             <LinkListItem>
                 <span>Secondary item</span>
             </LinkListItem>
@@ -220,7 +228,9 @@ const ScuraSidebarComponent = () => (
             <LinkListItem medium>
                 <span>Link list</span>
             </LinkListItem>
-            <Sidebar secondary />
+        </LinkList>
+        <Sidebar secondary />
+        <LinkList>
             <LinkListItem>
                 <span>Secondary item</span>
             </LinkListItem>
