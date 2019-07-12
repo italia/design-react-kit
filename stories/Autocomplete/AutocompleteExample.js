@@ -1,8 +1,31 @@
 import React from "react";
+import { components } from "react-select";
+import AsyncSelect from "react-select/async";
 
-import { Autocomplete, FormGroup } from "../../src";
+const DropdownIndicator = props => {
+    return (
+        <components.DropdownIndicator {...props}>
+            <span style={{ padding: "0px 5px" }} aria-hidden="true">
+                <svg className="icon icon-sm">
+                    <use xlinkHref="/svg/sprite.svg#it-search" />
+                </svg>
+            </span>
+        </components.DropdownIndicator>
+    );
+};
 
-const defaultOptions = [
+const Input = props => {
+    if (props.isHidden) {
+        return <components.Input {...props} />;
+    }
+    return (
+        <div style={{ border: `1px dotted blue}` }}>
+            <components.Input {...props} />
+        </div>
+    );
+};
+
+const multiOptions = [
     { value: "1", label: "Abruzzo" },
     { value: "2", label: "Basilicata" },
     { value: "3", label: "Calabria" },
@@ -25,21 +48,47 @@ const defaultOptions = [
     { value: "20", label: "Veneto" }
 ];
 
-class AutocompleteExample extends React.Component {
-    render() {
-        let options = defaultOptions;
-        let defaultOption = this.props.defaultValue && defaultOptions[10];
+const filterOptions = inputValue => {
+    return multiOptions.filter(i =>
+        i.label.toLowerCase().includes(inputValue.toLowerCase())
+    );
+};
 
+const loadOptions = (inputValue, callback) => {
+    setTimeout(() => {
+        callback(filterOptions(inputValue));
+    }, 1000);
+};
+
+export default class AutocompleteExample extends React.Component {
+    state = { inputValue: "", placeholder: "Testo da cercare" };
+
+    handleInputChange = newValue => {
+        const inputValue = newValue.replace(/\W/g, "");
+        this.setState({ inputValue });
+        return inputValue;
+    };
+    render() {
         return (
-            <FormGroup className="m-3">
-                <Autocomplete
-                    options={options}
-                    placeholder="Regione"
-                    defaultValue={defaultOption}
+            <div className="form-group">
+                <AsyncSelect
+                    id="autocomplete-regioni"
+                    components={{
+                        DropdownIndicator,
+                        Input,
+                        IndicatorSeparator: null
+                    }}
+                    cacheOptions
+                    loadOptions={loadOptions}
+                    defaultOptions
+                    placeholder={this.state.placeholder}
+                    onInputChange={this.handleInputChange}
+
                 />
-            </FormGroup>
+                <label htmlFor="autocomplete-regioni" className="sr-only">
+                    Cerca nel sito
+                </label>
+            </div>
         );
     }
 }
-
-export default AutocompleteExample;
