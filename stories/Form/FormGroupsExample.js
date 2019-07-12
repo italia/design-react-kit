@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Select from "react-select";
 import {
   Form,
   Label,
@@ -8,7 +8,6 @@ import {
   Col,
   FormGroup,
   PasswordInput,
-  // Select
 } from "../../src";
 
 class FormGroupsExample extends Component {
@@ -69,13 +68,13 @@ class FormGroupsExample extends Component {
             <Input type="text" id="inputCity" />
             <Label for="inputCity">Città</Label>
           </FormGroup>
-          {/*<FormGroup className="col-md-4" style={{bottom:"50px"}}>
+          <FormGroup className="col-md-4" style={{bottom:"50px"}}>
             <Label for="inputState" style={{position:"static"}}>Comune</Label>
             <Select
               placeholder="Scegli..."
               options={[{ value: "", label: "..." }]}
             />
-          </FormGroup>*/}
+          </FormGroup>
           <FormGroup className="col-md-2">
             <Input type="text" id="inputCAP" />
             <Label for="inputCAP">CAP</Label>
