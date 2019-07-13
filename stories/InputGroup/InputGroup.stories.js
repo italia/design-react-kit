@@ -100,27 +100,27 @@ const AggiuntaBottoniComponent = () => (
     </div>
 );
 
-storiesOf("Componenti/Form.Input Group", module)
-    .addDecorator(withA11y)
-    .add("Esempi", withInfo({
-        text: Esempi
-    })(EsempiComponent))
-    .add("Input multipli", withInfo({
-        text: InputMultipli
-    })(InputMultipliComponent))
-    .add("Aggiunte multiple", withInfo({
-        text: AggiunteMultiple
-    })(AggiunteMultipleComponent))
-    .add("Aggiunta bottoni", withInfo({
-        text: AggiuntaBottoni
-    })(AggiuntaBottoniComponent))
-    .add("Bottoni con dropdown", withInfo({
-        text: BottoniDropdown,
-        propTables: [InputGroup, InputGroupButtonDropdown, DropdownToggle, DropdownItem],
-        propTablesExclude: [InputGroupDropdownExample]
-    })(() => <InputGroupDropdownExample/>))
-    .add("Pulsanti segmentati", withInfo({
-        text: PulsantiSegmentati,
-        propTables: [InputGroup, InputGroupButtonDropdown, DropdownToggle, DropdownItem],
-        propTablesExclude: [InputGroupDropdownExample]
-    })(() => <InputGroupDropdownExample split/>));
+// storiesOf("Componenti/Form.Input Group", module)
+//     .addDecorator(withA11y)
+//     .add("Esempi", withInfo({
+//         text: Esempi
+//     })(EsempiComponent))
+//     .add("Input multipli", withInfo({
+//         text: InputMultipli
+//     })(InputMultipliComponent))
+//     .add("Aggiunte multiple", withInfo({
+//         text: AggiunteMultiple
+//     })(AggiunteMultipleComponent))
+//     .add("Aggiunta bottoni", withInfo({
+//         text: AggiuntaBottoni
+//     })(AggiuntaBottoniComponent))
+//     .add("Bottoni con dropdown", withInfo({
+//         text: BottoniDropdown,
+//         propTables: [InputGroup, InputGroupButtonDropdown, DropdownToggle, DropdownItem],
+//         propTablesExclude: [InputGroupDropdownExample]
+//     })(() => <InputGroupDropdownExample/>))
+//     .add("Pulsanti segmentati", withInfo({
+//         text: PulsantiSegmentati,
+//         propTables: [InputGroup, InputGroupButtonDropdown, DropdownToggle, DropdownItem],
+//         propTablesExclude: [InputGroupDropdownExample]
+//     })(() => <InputGroupDropdownExample split/>));
