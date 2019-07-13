@@ -7,11 +7,13 @@ import InputGroupExample from "./input/example/InputGroupExample";
 import InputLabel from "./input/placeholderLabel/InputLabel";
 import InputPlaceHolderLabel from "./input/placeholderLabel/InputPlaceholderLabel";
 import InputInformation from "./input/placeholderLabel/InputInformation";
+import InputIconButtonExample from "./input/InputIcon/InputIconButtonExample";
+import InputPasswordExample from "./input/Password/InputPasswordExample";
 
 import Esempi from "./docs/Esempi.md";
 import Placeholder from "./docs/Placeholder.md";
-
-const EsempiComponent = () => <InputGroupExample />;
+import IconButton from "./docs/IconButton.md";
+import Password from "./docs/Password.md";
 
 const InputPlaceHolderLabelComponent = () => (
     <div>
@@ -27,11 +29,23 @@ storiesOf("Componenti/Form.Input", module)
         "Esempi di campi di input",
         withInfo({
             text: Esempi
-        })(EsempiComponent)
+        })(() => <InputGroupExample />)
     )
     .add(
         "Utilizzo di placeholder e label",
         withInfo({
             text: Placeholder
         })(InputPlaceHolderLabelComponent)
+    )
+    .add(
+        "Input con icona o bottoni",
+        withInfo({
+            text: IconButton
+        })(() => <InputIconButtonExample />)
+    )
+    .add(
+        "Input password",
+        withInfo({
+            text: Password
+        })(() => <InputPasswordExample />)
     );
