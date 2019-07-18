@@ -5,8 +5,6 @@ import { withInfo } from "@storybook/addon-info";
 
 import InputGroupExample from "./input/example/InputGroupExample";
 import InputLabel from "./input/placeholderLabel/InputLabel";
-import InputPlaceHolderLabel from "./input/placeholderLabel/InputPlaceholderLabel";
-import InputInformation from "./input/placeholderLabel/InputInformation";
 import InputIconButtonExample from "./input/InputIcon/InputIconButtonExample";
 import InputPasswordExample from "./input/Password/InputPasswordExample";
 
@@ -14,12 +12,22 @@ import Esempi from "./docs/Esempi.md";
 import Placeholder from "./docs/Placeholder.md";
 import IconButton from "./docs/IconButton.md";
 import Password from "./docs/Password.md";
+import { Input } from "../../src";
 
 const InputPlaceHolderLabelComponent = () => (
     <div>
         <InputLabel />
-        <InputPlaceHolderLabel />
-        <InputInformation />
+        <Input
+            label="Etichetta di esempio"
+            type="text"
+            Placeholder="Testo di esempio"
+        />
+        <Input
+            label="Etichetta di esempio"
+            type="text"
+            Placeholder="Testo di esempio"
+            infoText="Ulteriore testo informativo"
+        />
     </div>
 );
 
