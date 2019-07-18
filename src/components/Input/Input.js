@@ -148,7 +148,7 @@ class Input extends React.Component {
                   <label htmlFor="inputLabel" className="active">
                       {this.props.label}
                   </label>
-                  <small class="form-text text-muted">
+                  <small className="form-text text-muted">
                     {this.props.infoText}
                 </small>
               </div>
