@@ -3152,10 +3152,10 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap-italia@1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-1.3.2.tgz#bc055c22af8a75600f7282d6355e8b1684e31ee0"
-  integrity sha512-Aen1eu/I9L+MDUUQbMhPAB4EquBwZu4IWLcbbN2Q66zc1LPAZRSsAK4q/wH+A7d0xD3hjHy5MMJDJxE3MwpNmg=
+bootstrap-italia@1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-1.3.3.tgz#254ad1905d1a6ae9cd8b9ee32073816762bbfa51"
+  integrity sha512-9/jj7FC0iwY8vH/25CIMIELEK6rNwjOTuw0LOKOgvMhJZW6P2/qe/+uts/zFhGL73YLODRXn/Mr+yC9nXIhhVg==
   dependencies:
     bootstrap "4.3.1"
     bootstrap-select "1.13.10"
