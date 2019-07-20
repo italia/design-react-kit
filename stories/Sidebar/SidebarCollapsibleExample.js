@@ -36,7 +36,7 @@ class SidebarCollapseExample extends React.Component {
                     >
                         <span>Link list 1 </span>
                         <i className="it-expand right" />
-                        <svg class="icon icon-primary right">
+                        <svg className="icon icon-primary right">
                             <use xlinkHref="/svg/sprite.svg#it-expand" />
                         </svg>
                     </LinkListItem>
@@ -61,7 +61,7 @@ class SidebarCollapseExample extends React.Component {
                     >
                         <span>Link list 2 </span>
                         <i className="it-expand right" />
-                        <svg class="icon icon-primary right">
+                        <svg className="icon icon-primary right">
                             <use xlinkHref="/svg/sprite.svg#it-expand" />
                         </svg>
                     </LinkListItem>
@@ -86,7 +86,7 @@ class SidebarCollapseExample extends React.Component {
                     >
                         <span>Link list 3 </span>
                         <i className="it-expand right" />
-                        <svg class="icon icon-primary right">
+                        <svg className="icon icon-primary right">
                             <use xlinkHref="/svg/sprite.svg#it-expand" />
                         </svg>
                     </LinkListItem>
