@@ -308,35 +308,3 @@ class ExampleInputAutoComplete extends React.Component {
 }
 
 
-class ExampleInputTextArea extends React.Component {
-      constructor(){
-            super();
-            this.state = {
-                  isFocused: false
-            }
-      }
-
-      toggleFocusLabel = () => {
-            this.setState({
-                  isFocused: true
-            });
-      }
-
-      toggleBlurLabel = (e) => {
-            if(e.target.value===""){
-                  this.setState({
-                        isFocused: !this.state.isFocused
-                  });
-            }
-      }
-
-      render() {
-            return(
-                  <div className="form-group">
-        <textarea className={this.state.isFocused? "focus--mouse": ""} onFocus={this.toggleFocusLabel} onBlur={(e)=>this.toggleBlurLabel(e)} id="exampleFormControlTextarea1" rows="3"></textarea>
-        <label htmlFor="exampleFormControlTextarea1" className={this.state.isFocused?"active":""}>Esempio di area di testo</label>
-      </div>
-            )
-      }
-}
-

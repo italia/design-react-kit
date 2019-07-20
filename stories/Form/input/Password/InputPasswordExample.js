@@ -5,7 +5,8 @@ class InputPasswordExample extends React.Component {
         super();
         this.state = {
             isFocused: false,
-            hidden: true
+            hidden: true,
+            icon: true
         };
         this.toggleShow = this.toggleShow.bind(this);
     }
@@ -25,7 +26,7 @@ class InputPasswordExample extends React.Component {
     };
 
     toggleShow() {
-        this.setState({ hidden: !this.state.hidden });
+        this.setState({ hidden: !this.state.hidden, icon: !this.state.icon });
     }
 
     render() {
@@ -48,7 +49,11 @@ class InputPasswordExample extends React.Component {
                         class="password-icon-visible icon icon-sm"
                         onClick={this.toggleShow}
                     >
-                        <use xlinkHref="/svg/sprite.svg#it-password-visible" />
+                        <use
+                            xlinkHref={`/svg/sprite.svg#it-password-${
+                                this.state.icon ? "visible" : "invisible"
+                            }`}
+                        />
                     </svg>
                 </span>
                 <label
