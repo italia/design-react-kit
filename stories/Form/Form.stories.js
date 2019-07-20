@@ -3,11 +3,11 @@ import { storiesOf } from "@storybook/react";
 import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 
-import InputGroupExample from "./input/example/InputGroupExample";
-import InputLabel from "./input/InputLabel/InputLabel";
-import InputIconButtonExample from "./input/InputIcon/InputIconButtonExample";
-import InputPasswordExample from "./input/Password/InputPasswordExample";
-import TextArea from "./input/TextArea/TextArea";
+import InputGroupExample from "./Input/example/InputGroupExample";
+import InputLabel from "./Input/InputLabel/InputLabel";
+import InputIconButtonExample from "./Input/InputIcon/InputIconButtonExample";
+import InputPasswordExample from "./Input/Password/InputPasswordExample";
+import TextArea from "./Input/TextArea/TextArea";
 import CheckboxGroupsExample from "./CheckboxRadio/CheckboxGroupsExample";
 import RadioGroupsExample from "./CheckboxRadio/RadioGroupsExample";
 import TogglesExample from "./Toggles/TogglesExample";
@@ -22,6 +22,8 @@ import Disabled from "./docs/Input/Disabled.md";
 import Readonly from "./docs/Input/Readonly.md";
 import Normalize from "./docs/Input/Normalize.md";
 import Textarea from "./docs/Input/Textarea.md";
+import SelectExample from "./Select/SelectExample";
+import Select from "react-select";
 
 import CheckboxRadio from "./docs/CheckboxRadio/CheckboxRadio.md";
 import Disabilitato from "./docs/CheckboxRadio/Disabilitato.md";
@@ -31,6 +33,13 @@ import Inline from "./docs/CheckboxRadio/Inline.md";
 import GruppiToggles from "./docs/Toggles/GruppiToggles.md";
 import Toggles from "./docs/Toggles/Toggles.md";
 import TogglesDisabilitate from "./docs/Toggles/TogglesDisabilitate.md";
+
+import SelectEsempi from "./docs/Select/Esempi.md";
+import SelectDisabled from "./docs/Select/Disabled.md";
+import SelectReset from "./docs/Select/Reset.md";
+import SelectSearchable from "./docs/Select/Searchable.md";
+import SelectMultipla from "./docs/Select/Multipla.md";
+import SelectGrouped from "./docs/Select/Grouped.md";
 
 const InputPlaceHolderLabelComponent = () => (
     <div>
@@ -181,6 +190,7 @@ const GruppiComponent = () => (
     </section>
 );
 
+
 storiesOf("Componenti/Form.Input", module)
     .addDecorator(withA11y)
     .add(
@@ -298,3 +308,54 @@ storiesOf("Componenti/Form.Toggles", module)
             propTablesExclude: [TogglesGroupsExample]
         })(() => <TogglesGroupsExample />)
     );
+
+storiesOf("Componenti/Form.Select", module)
+    .addDecorator(withA11y)
+    .add(
+        "Select classica",
+        withInfo({
+            text: SelectEsempi,
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample />)
+    )
+    .add(
+        "Select disabilitata",
+        withInfo({
+            text: SelectDisabled,
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample disabled/>)
+    )
+    .add(
+        "Select con reset",
+        withInfo({
+            text: SelectReset,
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample reset/>)
+    )
+    .add(
+        "Select con ricerca",
+        withInfo({
+            text: SelectSearchable,
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample search/>)
+    )
+    .add(
+        "Select Multipla",
+        withInfo({
+            text: SelectMultipla,
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample multi/>)
+    )
+    .add(
+        "Select con gruppi",
+        withInfo({
+            text: SelectGrouped,
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample group/>)
+    )
