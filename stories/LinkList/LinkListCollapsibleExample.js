@@ -34,7 +34,7 @@ class CollapseExample extends React.Component {
                     {...(collapseOpen1 ? expanded : {})}>
                     <span>Link list 1 </span>
                     <i className="it-expand right" />
-                    <svg class="icon icon-primary right"><use xlinkHref="/svg/sprite.svg#it-expand"></use></svg>
+                    <svg className="icon icon-primary right"><use xlinkHref="/svg/sprite.svg#it-expand"></use></svg>
                 </LinkListItem>
                 <Collapse isOpen={collapseOpen1}>
                     <LinkList sublist>
@@ -56,7 +56,7 @@ class CollapseExample extends React.Component {
                     {...(collapseOpen2 ? expanded : {})}>
                     <span>Link list 2 </span>
                     <i className="it-expand right" />
-                    <svg class="icon icon-primary right"><use xlinkHref="/svg/sprite.svg#it-expand"></use></svg>
+                    <svg className="icon icon-primary right"><use xlinkHref="/svg/sprite.svg#it-expand"></use></svg>
                 </LinkListItem>
                 <Collapse isOpen={collapseOpen2}>
                     <LinkList sublist>
@@ -78,7 +78,7 @@ class CollapseExample extends React.Component {
                     {...(collapseOpen3 ? expanded : {})}>
                     <span>Link list 3 </span>
                     <i className="it-expand right" />
-                    <svg class="icon icon-primary right"><use xlinkHref="/svg/sprite.svg#it-expand"></use></svg>
+                    <svg className="icon icon-primary right"><use xlinkHref="/svg/sprite.svg#it-expand"></use></svg>
                 </LinkListItem>
                 <Collapse isOpen={collapseOpen3}>
                     <LinkList sublist>
