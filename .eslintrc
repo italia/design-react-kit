@@ -32,7 +32,6 @@
     "rules": {
         "react/no-unsafe": "error",
         "no-case-declarations": "off",
-        "treatUndefinedAsUnspecified": false,
         "no-shadow": [
             "error",
             {
