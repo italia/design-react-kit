@@ -8,16 +8,29 @@ import InputLabel from "./input/InputLabel/InputLabel";
 import InputIconButtonExample from "./input/InputIcon/InputIconButtonExample";
 import InputPasswordExample from "./input/Password/InputPasswordExample";
 import TextArea from "./input/TextArea/TextArea";
-import { Input } from "../../src";
+import CheckboxGroupsExample from "./CheckboxRadio/CheckboxGroupsExample";
+import RadioGroupsExample from "./CheckboxRadio/RadioGroupsExample";
+import TogglesExample from "./Toggles/TogglesExample";
+import TogglesGroupsExample from "./Toggles/TogglesGroupsExample";
+import { Form, FormGroup, Label, Input, FormText, Toggle } from "../../src";
 
-import Esempi from "./docs/Esempi.md";
-import Placeholder from "./docs/Placeholder.md";
-import IconButton from "./docs/IconButton.md";
-import Password from "./docs/Password.md";
-import Disabled from "./docs/Disabled.md";
-import Readonly from "./docs/Readonly.md";
-import Normalize from "./docs/Normalize.md";
-import Textarea from "./docs/Textarea.md";
+import Esempi from "./docs/Input/Esempi.md";
+import Placeholder from "./docs/Input/Placeholder.md";
+import IconButton from "./docs/Input/IconButton.md";
+import Password from "./docs/Input/Password.md";
+import Disabled from "./docs/Input/Disabled.md";
+import Readonly from "./docs/Input/Readonly.md";
+import Normalize from "./docs/Input/Normalize.md";
+import Textarea from "./docs/Input/Textarea.md";
+
+import CheckboxRadio from "./docs/CheckboxRadio/CheckboxRadio.md";
+import Disabilitato from "./docs/CheckboxRadio/Disabilitato.md";
+import Gruppi from "./docs/CheckboxRadio/Gruppi.md";
+import Inline from "./docs/CheckboxRadio/Inline.md";
+
+import GruppiToggles from "./docs/Toggles/GruppiToggles.md";
+import Toggles from "./docs/Toggles/Toggles.md";
+import TogglesDisabilitate from "./docs/Toggles/TogglesDisabilitate.md";
 
 const InputPlaceHolderLabelComponent = () => (
     <div>
@@ -34,6 +47,138 @@ const InputPlaceHolderLabelComponent = () => (
             infoText="Ulteriore testo informativo"
         />
     </div>
+);
+
+const CheckboxRadioComponent = () => (
+    <Form className="m-3">
+        <fieldset>
+            <legend>Checkbox</legend>
+            <FormGroup check>
+                <Input id="checkbox1" type="checkbox" />
+                <Label for="checkbox1" check>
+                    Checkbox di esempio
+                </Label>
+            </FormGroup>
+        </fieldset>
+
+        <fieldset>
+            <legend>Radio</legend>
+
+            <FormGroup check>
+                <Input name="gruppo1" type="radio" id="radio1" defaultChecked />
+                <Label check for="radio1">
+                    Radio di esempio 1
+                </Label>
+            </FormGroup>
+
+            <FormGroup check>
+                <Input name="gruppo1" type="radio" id="radio2" />
+                <Label check for="radio2">
+                    Radio di esempio 2
+                </Label>
+            </FormGroup>
+        </fieldset>
+    </Form>
+);
+const InlineComponent = () => (
+    <section>
+        <fieldset>
+            <legend>Checkbox</legend>
+            <Form className="m-3">
+                <FormGroup check inline>
+                    <Input id="checkbox1" type="checkbox" />
+                    <Label for="checkbox1" check>
+                        Checkbox non selezionato
+                    </Label>
+                </FormGroup>
+                <FormGroup check inline>
+                    <Input id="checkbox2" type="checkbox" defaultChecked />
+                    <Label for="checkbox2" check>
+                        Checkbox selezionato
+                    </Label>
+                </FormGroup>
+            </Form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Radio</legend>
+            <Form className="m-3">
+                <FormGroup check inline>
+                    <Input
+                        name="gruppo1"
+                        type="radio"
+                        id="radio1"
+                        defaultChecked
+                    />
+                    <Label check for="radio1">
+                        Opzione 1
+                    </Label>
+                </FormGroup>
+                <FormGroup check inline>
+                    <Input name="gruppo1" type="radio" id="radio2" />
+                    <Label check for="radio2">
+                        Opzione 2
+                    </Label>
+                </FormGroup>
+            </Form>
+        </fieldset>
+    </section>
+);
+const DisabilitatoComponent = () => (
+    <section>
+        <fieldset>
+            <legend>Checkbox</legend>
+            <Form className="m-3">
+                <FormGroup check>
+                    <Input disabled id="checkbox1" type="checkbox" />
+                    <Label for="checkbox1" check>
+                        Checkbox disabilitato non selezionato
+                    </Label>
+                </FormGroup>
+                <FormGroup check>
+                    <Input
+                        disabled
+                        id="checkbox2"
+                        type="checkbox"
+                        defaultChecked
+                    />
+                    <Label for="checkbox2" check>
+                        Checkbox disabilitato selezionato
+                    </Label>
+                </FormGroup>
+            </Form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Radio</legend>
+            <Form className="m-3">
+                <FormGroup check>
+                    <Input
+                        disabled
+                        name="gruppo1"
+                        type="radio"
+                        id="radio1"
+                        defaultChecked
+                    />
+                    <Label check for="radio1">
+                        Opzione disabilitata selezionata
+                    </Label>
+                </FormGroup>
+                <FormGroup check>
+                    <Input disabled name="gruppo1" type="radio" id="radio2" />
+                    <Label check for="radio2">
+                        Opzione disabilitata non selezionata
+                    </Label>
+                </FormGroup>
+            </Form>
+        </fieldset>
+    </section>
+);
+const GruppiComponent = () => (
+    <section>
+        <CheckboxGroupsExample />
+        <RadioGroupsExample />
+    </section>
 );
 
 storiesOf("Componenti/Form.Input", module)
@@ -98,4 +243,58 @@ storiesOf("Componenti/Form.Input", module)
                 placeholder="Testo di esempio"
             />
         ))
+    );
+storiesOf("Componenti/Form.Checkbox and radio", module)
+    .addDecorator(withA11y)
+    .add(
+        "Checkbox e radio",
+        withInfo({
+            text: CheckboxRadio
+        })(CheckboxRadioComponent)
+    )
+    .add(
+        "Inline",
+        withInfo({
+            text: Inline
+        })(InlineComponent)
+    )
+    .add(
+        "Disabilitato",
+        withInfo({
+            text: Disabilitato
+        })(DisabilitatoComponent)
+    )
+    .add(
+        "Gruppi",
+        withInfo({
+            text: Gruppi,
+            propTables: [Input, Label, FormText],
+            propTablesExclude: [CheckboxGroupsExample, RadioGroupsExample]
+        })(GruppiComponent)
+    );
+storiesOf("Componenti/Form.Toggles", module)
+    .addDecorator(withA11y)
+    .add(
+        "Toggles",
+        withInfo({
+            text: Toggles,
+            propTables: [Toggle],
+            propTablesExclude: [TogglesExample]
+        })(() => <TogglesExample />)
+    )
+    .add(
+        "Toggles Disabilitate",
+        withInfo({
+            text: TogglesDisabilitate,
+            propTables: [Toggle],
+            propTablesExclude: [TogglesExample]
+        })(() => <TogglesExample disabled />)
+    )
+    .add(
+        "Gruppi di Toggles",
+        withInfo({
+            text: GruppiToggles,
+            propTables: [Toggle, FormText],
+            propTablesExclude: [TogglesGroupsExample]
+        })(() => <TogglesGroupsExample />)
     );
