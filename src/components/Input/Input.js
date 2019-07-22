@@ -74,7 +74,6 @@ class Input extends React.Component {
             infoText,
             placeholder,
             normalized,
-            id,
             ...attributes
         } = this.props;
         let { bsSize, valid, invalid } = this.props;
