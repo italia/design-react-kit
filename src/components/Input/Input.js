@@ -13,6 +13,7 @@ const propTypes = {
     size: PropTypes.string,
     label: PropTypes.string,
     placeholder: PropTypes.string,
+    id: PropTypes.string,
     infoText: PropTypes.string,
     normalized: PropTypes.bool,
     bsSize: PropTypes.string,
