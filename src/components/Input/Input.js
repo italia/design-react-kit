@@ -11,6 +11,10 @@ const propTypes = {
     children: PropTypes.node,
     type: PropTypes.string,
     size: PropTypes.string,
+    label: PropTypes.string,
+    placeholder: PropTypes.string,
+    infoText: PropTypes.string,
+    normalized: PropTypes.bool,
     bsSize: PropTypes.string,
     state: deprecated(
         PropTypes.string,
@@ -28,9 +32,7 @@ const propTypes = {
     plaintext: PropTypes.bool,
     addon: PropTypes.bool,
     className: PropTypes.string,
-    cssModule: PropTypes.object,
-    label: PropTypes.string,
-    infoText: PropTypes.string,
+    cssModule: PropTypes.object
 };
 
 const defaultProps = {
@@ -38,6 +40,25 @@ const defaultProps = {
 };
 
 class Input extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            isFocused: false
+        };
+    }
+    toggleFocusLabel = () => {
+        this.setState({
+            isFocused: true
+        });
+    };
+
+    toggleBlurLabel = e => {
+        if (e.target.value === "") {
+            this.setState({
+                isFocused: !this.state.isFocused
+            });
+        }
+    };
     render() {
         const {
             className,
@@ -51,6 +72,9 @@ class Input extends React.Component {
             innerRef,
             label,
             infoText,
+            placeholder,
+            normalized,
+            id,
             ...attributes
         } = this.props;
         let { bsSize, valid, invalid } = this.props;
@@ -135,25 +159,77 @@ class Input extends React.Component {
             );
             delete attributes.children;
         }
-
+        if (placeholder) {
+            return (
+                <div className={wrapperClass}>
+                    <Tag
+                        {...attributes}
+                        ref={innerRef}
+                        className={classes}
+                        id={this.props.id}
+                        onFocus={this.toggleFocusLabel}
+                        onBlur={e => this.toggleBlurLabel(e)}
+                        placeholder={this.props.placeholder}
+                    />
+                    <label htmlFor={this.props.id} className="active">
+                        {this.props.label}
+                    </label>
+                    <small className="form-text text-muted">
+                        {this.props.infoText}
+                    </small>
+                </div>
+            );
+        }
+        if (normalized) {
+            return (
+                <div className={wrapperClass}>
+                    <Tag
+                        {...attributes}
+                        className={
+                            this.state.isFocused
+                                ? "form-control-plaintext focus--mouse"
+                                : "form-control-plaintext"
+                        }
+                        onFocus={this.toggleFocusLabel}
+                        onBlur={e => this.toggleBlurLabel(e)}
+                        id={this.props.id}
+                        readOnly
+                    />
+                    <label
+                        htmlFor={this.props.id}
+                        className={this.state.isFocused ? "active" : ""}
+                    >
+                        {this.props.label}
+                    </label>
+                    <small className="form-text text-muted">
+                        {this.props.infoText}
+                    </small>
+                </div>
+            );
+        }
         if (label || infoText) {
-          return (
-              <div className={wrapperClass}>
-                  <Tag
-                      {...attributes}
-                      ref={innerRef}
-                      className={classes}
-                      id="inputLabel"
-                  />
-                  <label htmlFor="inputLabel" className="active">
-                      {this.props.label}
-                  </label>
-                  <small className="form-text text-muted">
-                    {this.props.infoText}
-                </small>
-              </div>
-          );
-      }
+            return (
+                <div className={wrapperClass}>
+                    <Tag
+                        {...attributes}
+                        ref={innerRef}
+                        className={classes}
+                        id={this.props.id}
+                        onFocus={this.toggleFocusLabel}
+                        onBlur={e => this.toggleBlurLabel(e)}
+                    />
+                    <label
+                        htmlFor={this.props.id}
+                        className={this.state.isFocused ? "active" : ""}
+                    >
+                        {this.props.label}
+                    </label>
+                    <small className="form-text text-muted">
+                        {this.props.infoText}
+                    </small>
+                </div>
+            );
+        }
 
         return <Tag {...attributes} ref={innerRef} className={classes} />;
     }

@@ -4,7 +4,6 @@ import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 
 import InputGroupExample from "./Input/example/InputGroupExample";
-import InputLabel from "./Input/InputLabel/InputLabel";
 import InputIconButtonExample from "./Input/InputIcon/InputIconButtonExample";
 import InputPasswordExample from "./Input/Password/InputPasswordExample";
 import TextArea from "./Input/TextArea/TextArea";
@@ -43,17 +42,19 @@ import SelectGrouped from "./docs/Select/Grouped.md";
 
 const InputPlaceHolderLabelComponent = () => (
     <div>
-        <InputLabel label="Etichetta di esempio" />
+        <Input label="Etichetta di esempio" id="exampleLabel" />
         <Input
             label="Etichetta di esempio"
             type="text"
             placeholder="Testo di esempio"
+            id="examplePlaceholder"
         />
         <Input
             label="Etichetta di esempio"
             type="text"
             placeholder="Testo di esempio"
             infoText="Ulteriore testo informativo"
+            id="exampleinfoText"
         />
     </div>
 );
@@ -190,7 +191,6 @@ const GruppiComponent = () => (
     </section>
 );
 
-
 storiesOf("Componenti/Form.Input", module)
     .addDecorator(withA11y)
     .add(
@@ -221,19 +221,19 @@ storiesOf("Componenti/Form.Input", module)
         "Disabilitato",
         withInfo({
             text: Disabled
-        })(() => <InputLabel label="Contenuto disabilitato" disabled />)
+        })(() => <Input label="Contenuto disabilitato" id="exampleDisabled" disabled />)
     )
     .add(
         "Readonly",
         withInfo({
             text: Readonly
-        })(() => <InputLabel label="Contenuto in sola lettura" readOnly />)
+        })(() => <Input label="Contenuto in sola lettura" id="examplereadOnly" readOnly />)
     )
     .add(
         "Readonly normalizzato",
         withInfo({
             text: Normalize
-        })(() => <InputLabel label="Contenuto in sola lettura" normalized />)
+        })(() => <Input label="Contenuto in sola lettura" id="exampleNormalized" normalized />)
     )
     .add(
         "Area di testo",
@@ -325,7 +325,7 @@ storiesOf("Componenti/Form.Select", module)
             text: SelectDisabled,
             propTables: [Select],
             propTablesExclude: [SelectExample]
-        })(() => <SelectExample disabled/>)
+        })(() => <SelectExample disabled />)
     )
     .add(
         "Select con reset",
@@ -333,7 +333,7 @@ storiesOf("Componenti/Form.Select", module)
             text: SelectReset,
             propTables: [Select],
             propTablesExclude: [SelectExample]
-        })(() => <SelectExample reset/>)
+        })(() => <SelectExample reset />)
     )
     .add(
         "Select con ricerca",
@@ -341,7 +341,7 @@ storiesOf("Componenti/Form.Select", module)
             text: SelectSearchable,
             propTables: [Select],
             propTablesExclude: [SelectExample]
-        })(() => <SelectExample search/>)
+        })(() => <SelectExample search />)
     )
     .add(
         "Select Multipla",
@@ -349,7 +349,7 @@ storiesOf("Componenti/Form.Select", module)
             text: SelectMultipla,
             propTables: [Select],
             propTablesExclude: [SelectExample]
-        })(() => <SelectExample multi/>)
+        })(() => <SelectExample multi />)
     )
     .add(
         "Select con gruppi",
@@ -357,5 +357,5 @@ storiesOf("Componenti/Form.Select", module)
             text: SelectGrouped,
             propTables: [Select],
             propTablesExclude: [SelectExample]
-        })(() => <SelectExample group/>)
-    )
+        })(() => <SelectExample group />)
+    );
