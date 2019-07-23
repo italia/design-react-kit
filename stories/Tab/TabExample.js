@@ -33,7 +33,7 @@ class TabExample extends React.Component {
                                 if (icons) {
                                     return (
                                         <span>
-                                        <svg class="icon icon-primary"><use xlinkHref="/svg/sprite.svg#it-link"></use></svg>
+                                        <svg className="icon icon-primary"><use xlinkHref="/svg/sprite.svg#it-link"></use></svg>
                                         <i
                                             className="it-ico-lg it-file d-block text-center"
                                             aria-label={titles[0]}
@@ -60,7 +60,7 @@ class TabExample extends React.Component {
                                 if (icons) {
                                     return (
                                         <span>
-                                        <svg class="icon icon-primary"><use xlinkHref="/svg/sprite.svg#it-calendar"></use></svg>
+                                        <svg className="icon icon-primary"><use xlinkHref="/svg/sprite.svg#it-calendar"></use></svg>
                                         <i
                                             className="it-ico-lg it-calendar d-block text-center"
                                             aria-label={titles[1]}
@@ -87,7 +87,7 @@ class TabExample extends React.Component {
                                 if (icons) {
                                     return (
                                         <span>
-                                        <svg class="icon icon-primary"><use xlinkHref="/svg/sprite.svg#it-comment"></use></svg>
+                                        <svg className="icon icon-primary"><use xlinkHref="/svg/sprite.svg#it-comment"></use></svg>
                                         <i
                                             className="it-ico-lg it-comment d-block text-center"
                                             aria-label={titles[2]}

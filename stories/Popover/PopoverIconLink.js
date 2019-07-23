@@ -22,7 +22,7 @@ class PopoverIconLink extends React.Component {
             <div>
                 <button
                     type="button"
-                    class="btn btn-secondary"
+                    className="btn btn-secondary"
                     data-container="body"
                     data-toggle="popover" 
                     data-placement="right"
@@ -40,7 +40,7 @@ class PopoverIconLink extends React.Component {
                     toggle={this.togglePopover}
                 >
                     <PopoverHeader>
-                        <svg class="icon icon-white">
+                        <svg className="icon icon-white">
                             <use xlinkHref="/svg/sprite.svg#it-help-circle" />
                         </svg>{" "}
                         Titolo con icona
@@ -48,9 +48,9 @@ class PopoverIconLink extends React.Component {
                     <PopoverBody>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nunc vel finibus augue.
-                        <a href="#" class="popover-inner-link">
+                        <a href="#" className="popover-inner-link">
                             More info
-                            <svg class="icon">
+                            <svg className="icon">
                                 <use xlinkhref="/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right" />
                             </svg>
                         </a>

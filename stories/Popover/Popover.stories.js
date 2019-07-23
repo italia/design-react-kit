@@ -87,7 +87,7 @@ class EsempiInterattiviComponent extends React.Component {
       </div>
     )
   }
-};
+}
 
 storiesOf('Componenti/Popover', module)
   .addDecorator(withA11y)

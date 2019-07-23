@@ -20,8 +20,8 @@ class PopoverFocus extends React.Component {
         return (
             <div>
                 <a
-                    tabindex="0"
-                    class="btn btn-lg btn-danger"
+                    tabIndex="0"
+                    className="btn btn-lg btn-danger"
                     role="button"
                     data-toggle="popover"
                     data-trigger="focus"

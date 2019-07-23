@@ -33,7 +33,7 @@ const MenuList = props => {
 const DropdownIndicator = props => {
     return (
         <components.DropdownIndicator {...props}>
-            <svg class="icon">
+            <svg className="icon">
                 <use xlinkHref="/svg/sprite.svg#it-arrow-down-triangle" />
             </svg>
         </components.DropdownIndicator>
@@ -137,7 +137,7 @@ class SelectExample extends React.Component {
 
         return (
             <div className="bootstrap-select-wrapper">
-                <label for="selectExample">Etichetta di esempio</label>
+                <label htmlFor="selectExample">Etichetta di esempio</label>
                 <Select
                     components={{
                         MenuList,

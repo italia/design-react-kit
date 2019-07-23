@@ -24,11 +24,11 @@ class InputIconButtonExample extends React.Component {
     render() {
         return (
             <div>
-                <div class="form-group">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">
-                                <svg class="icon icon-sm">
+                <div className="form-group">
+                    <div className="input-group">
+                        <div className="input-group-prepend">
+                            <div className="input-group-text">
+                                <svg className="icon icon-sm">
                                     <use xlinkHref="/svg/sprite.svg#it-pencil" />
                                 </svg>
                             </div>
@@ -51,23 +51,23 @@ class InputIconButtonExample extends React.Component {
                             id="input-group-1"
                             name="input-group-1"
                         />
-                        <div class="input-group-append">
-                            <button class="btn" type="button" id="button-1">
+                        <div className="input-group-append">
+                            <button className="btn" type="button" id="button-1">
                                 Invio
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">
-                                <svg class="icon icon-sm icon-danger">
+                <div className="form-group">
+                    <div className="input-group">
+                        <div className="input-group-prepend">
+                            <div className="input-group-text">
+                                <svg className="icon icon-sm icon-danger">
                                     <use xlinkHref="/svg/sprite.svg#it-pencil" />
                                 </svg>
                             </div>
                         </div>
-                        <label for="input-group-2" className="active">
+                        <label htmlFor="input-group-2" className="active">
                             Con Etichetta e placeholder
                         </label>
                         <input
@@ -83,24 +83,24 @@ class InputIconButtonExample extends React.Component {
                             name="input-group-2"
                             placeholder="Lorem Ipsum"
                         />
-                        <div class="input-group-append">
-                            <button class="btn" type="button" id="button-2">
+                        <div className="input-group-append">
+                            <button className="btn" type="button" id="button-2">
                                 Invio
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">
-                                <svg class="icon icon-sm icon-primary">
+                <div className="form-group">
+                    <div className="input-group">
+                        <div className="input-group-prepend">
+                            <div className="input-group-text">
+                                <svg className="icon icon-sm icon-primary">
                                     <use xlinkHref="/svg/sprite.svg#it-pencil" />
                                 </svg>
                             </div>
                         </div>
                         <label
-                            for="input-group-3"
+                            htmlFor="input-group-3"
                             className={this.state.isFocused ? "active" : ""}
                         >
                             Con Etichetta e bottone "primary"
@@ -117,9 +117,9 @@ class InputIconButtonExample extends React.Component {
                             id="input-group-3"
                             name="input-group-3"
                         />
-                        <div class="input-group-append">
+                        <div className="input-group-append">
                             <button
-                                class="btn btn-primary"
+                                className="btn btn-primary"
                                 type="button"
                                 id="button-3"
                             >

@@ -21,7 +21,7 @@ class PopoverHover extends React.Component {
             <div>
                 <button
                     type="button"
-                    class="btn btn-secondary"
+                    className="btn btn-secondary"
                     data-container="body"
                     data-toggle="popover"
                     data-trigger="hover"
