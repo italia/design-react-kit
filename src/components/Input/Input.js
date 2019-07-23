@@ -204,9 +204,9 @@ class Input extends React.Component {
                         id={this.props.id}
                         placeholder={this.props.placeholder}
                     />
-                    <span class="password-icon" aria-hidden="true">
+                    <span className="password-icon" aria-hidden="true">
                         <svg
-                            class="password-icon-visible icon icon-sm"
+                            className="password-icon-visible icon icon-sm"
                             onClick={this.toggleShow}
                         >
                             <use
