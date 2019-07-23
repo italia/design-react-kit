@@ -2,7 +2,6 @@
 node_modules
 
 # Outputs
-dist
 storybook-static
 
 # Logs
