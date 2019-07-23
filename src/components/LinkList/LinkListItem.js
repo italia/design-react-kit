@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const propTypes = {
   active: PropTypes.bool,
@@ -10,16 +10,16 @@ const propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.any,
   href: PropTypes.string,
-  size: PropTypes.string,
-};
+  size: PropTypes.string
+}
 
 const defaultProps = {
-  tag: 'a',
-};
+  tag: 'a'
+}
 
 const handleDisabledOnClick = (e) => {
-  e.preventDefault();
-};
+  e.preventDefault()
+}
 
 const LinkListItem = (props) => {
   const {
@@ -31,10 +31,10 @@ const LinkListItem = (props) => {
     href,
     size,
     ...attributes
-  } = props;
+  } = props
   let {
-    tag: Tag,
-  } = props;
+    tag: Tag
+  } = props
   const classes = classNames(
     className,
     active ? 'active' : false,
@@ -42,18 +42,18 @@ const LinkListItem = (props) => {
     header ? 'header' : false,
     divider ? 'divider' : false,
     size || false,
-    'list-item',
-  );
+    'list-item'
+  )
 
   // Prevent click event when disabled.
   if (disabled) {
-    attributes.onClick = handleDisabledOnClick;
+    attributes.onClick = handleDisabledOnClick
   }
 
   if (header) {
-    Tag = 'h3';
+    Tag = 'h3'
   } else if (divider) {
-    Tag = 'span';
+    Tag = 'span'
   }
 
   return (
@@ -68,7 +68,7 @@ const LinkListItem = (props) => {
                 className={classes}
               />
             </Tag>
-          );
+          )
         }
 
         return (
@@ -77,13 +77,13 @@ const LinkListItem = (props) => {
             {...attributes}
             className={classes}
           />
-        );
+        )
       })()}
     </li>
-  );
-};
+  )
+}
 
-LinkListItem.propTypes = propTypes;
-LinkListItem.defaultProps = defaultProps;
+LinkListItem.propTypes = propTypes
+LinkListItem.defaultProps = defaultProps
 
-export default LinkListItem;
+export default LinkListItem

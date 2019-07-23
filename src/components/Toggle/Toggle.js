@@ -1,27 +1,27 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-import { Label, Input } from '../..';
+import { Label, Input } from '../..'
 
 class Toggle extends Component {
-  render() {
-    const { label, ...rest } = this.props;
+  render () {
+    const { label, ...rest } = this.props
 
     return (
-            <div className="toggles">
-                <Label check>
-                    {label}
-                    <Input type="checkbox" {...rest} />
-                    <span className="lever" />
-                </Label>
-            </div>
-    );
+      <div className='toggles'>
+        <Label check>
+          {label}
+          <Input type='checkbox' {...rest} />
+          <span className='lever' />
+        </Label>
+      </div>
+    )
   }
 }
 
 Toggle.propTypes = {
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
-  ...Input.propTypes,
-};
+  ...Input.propTypes
+}
 
-export default Toggle;
+export default Toggle

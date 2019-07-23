@@ -1,30 +1,30 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const propTypes = {
   className: PropTypes.string,
   size: PropTypes.string,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-};
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
+}
 
 const defaultProps = {
-  tag: 'ul',
-};
+  tag: 'ul'
+}
 
 const PagerList = (props) => {
   const {
     className, size, tag: Tag, ...attributes
-  } = props;
+  } = props
 
   const listClasses = classNames(className, 'pagination', {
-    [`pagination-${size}`]: !!size,
-  });
+    [`pagination-${size}`]: !!size
+  })
 
-  return <Tag {...attributes} className={listClasses} />;
-};
+  return <Tag {...attributes} className={listClasses} />
+}
 
-PagerList.propTypes = propTypes;
-PagerList.defaultProps = defaultProps;
+PagerList.propTypes = propTypes
+PagerList.defaultProps = defaultProps
 
-export default PagerList;
+export default PagerList

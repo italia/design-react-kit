@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classnames from 'classnames';
+import React from 'react'
+import PropTypes from 'prop-types'
+import classnames from 'classnames'
 
-import TimelineContent from './TimelineContent';
+import TimelineContent from './TimelineContent'
 
 const Timeline = ({
   children, title, background, color, ...rest
@@ -10,24 +10,24 @@ const Timeline = ({
   const pointClassname = classnames(
     'Timeline-point-content',
     background,
-    color,
-  );
+    color
+  )
 
   return (
-        <div className="Timeline u-layout-prose u-layoutCenter" {...rest}>
-            <div className="Timeline-point">
-                <div className={pointClassname}>{title}</div>
-            </div>
-            {React.Children.only(children)}
-        </div>
-  );
-};
+    <div className='Timeline u-layout-prose u-layoutCenter' {...rest}>
+      <div className='Timeline-point'>
+        <div className={pointClassname}>{title}</div>
+      </div>
+      {React.Children.only(children)}
+    </div>
+  )
+}
 
 Timeline.defaultProps = {
   background: 'u-background-95',
   color: 'u-color-white',
-  children: <TimelineContent />,
-};
+  children: <TimelineContent />
+}
 
 /**
  * è stato necessario disabilitare il typecheck per un'incompatibilità su storybook in caso di
@@ -38,7 +38,7 @@ Timeline.propTypes = {
   // children: PropTypes.oneOfType([TimelineContent]).isRequired,
   title: PropTypes.node.isRequired,
   background: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
-};
+  color: PropTypes.string.isRequired
+}
 
-export default Timeline;
+export default Timeline

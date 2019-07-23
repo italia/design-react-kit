@@ -33,7 +33,6 @@
 //   const { children, innerProps } = props;
 //   const { innerRef, ...rest } = innerProps;
 
-
 //   return (
 //     <div className="autocomplete-control" {...rest}>
 //       {children}
