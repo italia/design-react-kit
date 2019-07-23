@@ -9,7 +9,7 @@
 - *Storybook updated to v5.0.0*
 - *Bootstrap Italia dependency updated to stable version v1.2.2*
 
-~`next` branch preview is on Netlify here: https://design-react-kit.netlify.com/~ (not available atm)
+`next` branch preview is on Netlify here: https://design-react-kit.netlify.com/
 
 ## Intro
 

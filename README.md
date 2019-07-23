@@ -8,7 +8,7 @@
 - *Storybook v5.0.0*
 - *Bootstrap Italia stabile v1.2.2*
 
-~Preview del branch `next` qui: https://design-react-kit.netlify.com/~ (temporaneamente non disponibile)
+Preview del branch `next` qui: https://design-react-kit.netlify.com/
 
 ## Intro
 
