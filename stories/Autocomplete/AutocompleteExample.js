@@ -1,6 +1,7 @@
 import React from "react";
 import { components } from "react-select";
 import AsyncSelect from "react-select/async";
+import '!style-loader!css-loader!./assets/css/autocomplete-styles.css';
 
 const DropdownIndicator = props => {
     return (
@@ -83,6 +84,7 @@ export default class AutocompleteExample extends React.Component {
                     defaultOptions
                     placeholder={this.state.placeholder}
                     onInputChange={this.handleInputChange}
+                    classNamePrefix={"react-autocomplete"}
 
                 />
                 <label htmlFor="autocomplete-regioni" className="sr-only">

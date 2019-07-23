@@ -1,0 +1,33 @@
+.react-autocomplete__control {
+    border-radius: 0px !important;
+    border-bottom: solid #435a70 1px !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+}
+.react-autocomplete__control:focus {
+    box-shadow: none !important;
+    border-bottom: solid #435a70 1.25px !important;
+}
+.react-autocomplete__control--is-focused {
+    box-shadow: none !important;
+    border-style: none !important;
+    border-bottom: solid #435a70 1.25px !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+}
+.react-autocomplete__indicator {
+    fill: #435a70;
+}
+.react-autocomplete__placeholder {
+    color: #435a70 !important;
+}
+.react-autocomplete__single-value {
+    color: #435a70 !important;
+    font-weight: bold;
+}
+.react-autocomplete__single-value:hover {
+    color: black !important;
+    font-weight: bold;
+}
