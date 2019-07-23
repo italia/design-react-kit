@@ -2,190 +2,87 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
+
+import InputIconButtonExample from "./Input/InputIcon/InputIconButtonExample";
+import TextArea from "./Input/TextArea/TextArea";
+import CheckboxGroupsExample from "./CheckboxRadio/CheckboxGroupsExample";
+import RadioGroupsExample from "./CheckboxRadio/RadioGroupsExample";
+import TogglesExample from "./Toggles/TogglesExample";
+import TogglesGroupsExample from "./Toggles/TogglesGroupsExample";
+import { Form, FormGroup, Label, Input, FormText, Toggle } from "../../src";
+
+import Esempi from "./docs/Input/Esempi.md";
+import Placeholder from "./docs/Input/Placeholder.md";
+import IconButton from "./docs/Input/IconButton.md";
+import Password from "./docs/Input/Password.md";
+import Disabled from "./docs/Input/Disabled.md";
+import Readonly from "./docs/Input/Readonly.md";
+import Normalize from "./docs/Input/Normalize.md";
+import Textarea from "./docs/Input/Textarea.md";
+import SelectExample from "./Select/SelectExample";
 import Select from "react-select";
 
-import {
-    Row,
-    Form,
-    FormGroup,
-    Label,
-    InputGroup,
-    InputGroupAddon,
-    Input,
-    FormText,
-    Button,
-    PasswordInput,
-    PasswordMeter,
-    Toggle
-} from "../../src";
+import CheckboxRadio from "./docs/CheckboxRadio/CheckboxRadio.md";
+import Disabilitato from "./docs/CheckboxRadio/Disabilitato.md";
+import Gruppi from "./docs/CheckboxRadio/Gruppi.md";
+import Inline from "./docs/CheckboxRadio/Inline.md";
 
-import FormInputFileExample from "./FormInputFileExample";
-import FormGroupsExample from "./FormGroupsExample";
-import FormSizingExample from "./FormSizingExample";
-import FormInputPasswordExample from "./FormInputPasswordExample";
+import GruppiToggles from "./docs/Toggles/GruppiToggles.md";
+import Toggles from "./docs/Toggles/Toggles.md";
+import TogglesDisabilitate from "./docs/Toggles/TogglesDisabilitate.md";
 
-import CheckboxGroupsExample from "../Checkbox/CheckboxGroupsExample";
-import RadioGroupsExample from "../Radio/RadioGroupsExample";
-// import AutocompleteExample from "../Autocomplete/AutocompleteExample";
-import TogglesExample from "../Toggle/TogglesExample";
-import TogglesGroupsExample from "../Toggle/TogglesGroupsExample";
+import SelectEsempi from "./docs/Select/Esempi.md";
+import SelectDisabled from "./docs/Select/Disabled.md";
+import SelectReset from "./docs/Select/Reset.md";
+import SelectSearchable from "./docs/Select/Searchable.md";
+import SelectMultipla from "./docs/Select/Multipla.md";
+import SelectGrouped from "./docs/Select/Grouped.md";
 
-import Esempi from "./docs/Esempi.md";
-import InputPassword from "./docs/InputPassword.md";
-import InputFile from "./docs/InputFile.md";
-// import InputAutocomplete from "./docs/InputAutocomplete.md";
-import Textarea from "./docs/Textarea.md";
-// import Dimensioni from "./docs/Dimensioni.md";
-import Readonly from "./docs/Readonly.md";
-import ReadonlyNormalizzato from "./docs/ReadonlyNormalizzato.md";
-import CheckboxRadio from "./docs/CheckboxRadio.md";
-import Inline from "./docs/Inline.md";
-import Disabilitato from "./docs/Disabilitato.md";
-import Gruppi from "./docs/Gruppi.md";
-import Toggles from "./docs/Toggles.md";
-import TogglesDisabilitate from "./docs/TogglesDisabilitate.md";
-import GruppiToggles from "./docs/GruppiToggles.md";
-// import FormGroupEsempio from "./docs/FormGroup.md";
-import FormGriglia from "./docs/FormGriglia.md";
-import DimensioneColonne from "./docs/DimensioneColonne.md";
-import AutoDimensionamento from "./docs/AutoDimensionamento.md";
-import InlineForms from "./docs/InlineForms.md";
-import TestoAiuto from "./docs/TestoAiuto.md";
-import FormDisabilitato from "./docs/FormDisabilitato.md";
-
-const EsempiComponent = () => (
-    <Form>
-        <InputGroup className="pb-3">
-            <InputGroupAddon addonType="prepend">
-                <span
-                    className="input-group-text it-search"
-                    id="basic-addon1"
-                />
-            </InputGroupAddon>
-            <Input type="text" placeholder="Username" aria-label="Username"/>
-        </InputGroup>
-
-        <FormGroup>
-            <Input type="text" name="text" id="exampleInputText"/>
-            <Label for="exampleInputText">Nominativo</Label>
-        </FormGroup>
-
-        <FormGroup>
-            <Input type="number" name="number" id="exampleInputNumber"/>
-            <Label for="exampleInputNumber">Numero partecipanti</Label>
-        </FormGroup>
-
-        <FormGroup>
-            <Input type="email" name="email" id="exampleInputEmail1"/>
-            <Label for="exampleInputEmail1">Email</Label>
-            <FormText color="muted">
-                Non condivideremo mai la tua email con nessun altro.
-            </FormText>
-        </FormGroup>
-    </Form>
-);
-
-/*
-stories.add(
-    "Input autocomplete",
-    withDocs(
-        InputAutocomplete,
-        withInfo({
-            propTables: [],
-            propTablesExclude: [AutocompleteExample]
-        })(() => <AutocompleteExample />)
-    )
-);
-*/
-const TextareaComponent = () => (
-    <Form>
-        <FormGroup>
-            <Input type="textarea" name="text" id="exampleText" rows="3"/>
-            <Label for="exampleText">Example textarea</Label>
-        </FormGroup>
-    </Form>
-);
-
-/*
-const IconeAggiuntiveComponent = () => (
-    <Form>
-        <FormGroup className="m-3">
-            <i className="ico-prefix it-youtube" />
-            <Input type="text" id="videoYoutube" />
-            <Label for="videoYoutube">Link video di youtube</Label>
-        </FormGroup>
-        <SelectExample icon />
-    </Form>
-);
-stories.add(
-    "Icone aggiuntive",
-    withDocs(
-        IconeAggiuntive,
-        withInfo({
-            propTables: [],
-            propTablesExclude: [SelectExample]
-        })(IconeAggiuntiveComponent)
-    )
-);
-
-const DimensioniComponent = () => (
-    <section>
-        <Form className="m-3">
-            <Input placeholder="lg" bsSize="lg" aria-label="lg" />
-            <Input placeholder="Input predefinito" aria-label="Input" />
-            <Input placeholder="sm" bsSize="sm" aria-label="sm" />
-        </Form>
-
-        <Form className="m-3">
-            <Select
-                bsSize="lg"
-                placeholder="Select grande"
-                options={[{ value: "", label: "Select grande" }]}
-            />
-            <Select
-                placeholder="Select predefinita"
-                options={[{ value: "", label: "Select predefinita" }]}
-            />
-            <Select
-                bsSize="sm"
-                placeholder="Select piccola"
-                options={[{ value: "", label: "Select piccola" }]}
-            />
-        </Form>
-    </section>
-);
-stories.add(
-    "Dimensioni",
-    withDocs(
-        Dimensioni,
-        withInfo({
-            propTables: [],
-            propTablesExclude: [SelectExample]
-        })(DimensioniComponent)
-    )
-);
-*/
-
-const ReadonlyComponent = () => (
-    <Form className="m-3">
+const InputTypesExamples = () => (
+    <div>
         <Input
             type="text"
-            placeholder="Contenuto in sola lettura"
-            aria-label="Contenuto in sola lettura"
-            readOnly
+            label="Campo di tipo testuale"
+            id="exampleInputText"
         />
-    </Form>
+        <Input
+            type="email"
+            label="Campo di tipo email"
+            id="exampleInputEmail"
+        />
+        <Input
+            type="number"
+            label="Campo di tipo numerico"
+            id="exampleInputNumber"
+        />
+        <Input type="tel" label="Campo di tipo telefono" id="exampleInputTel" />
+        <Input
+            type="time"
+            label="Campo di tipo ora"
+            id="exampleInputTime"
+            min="9:00"
+            max="18:00"
+        />
+    </div>
 );
 
-const ReadonlyNormalizzatoComponent = () => (
-    <Form className="m-3">
-        <FormGroup>
-            <Input plaintext readOnly id="staticEmail">
-                email@example.com
-            </Input>
-            <Label for="staticEmail">Email</Label>
-        </FormGroup>
-    </Form>
+const InputPlaceHolderLabelComponent = () => (
+    <div>
+        <Input label="Etichetta di esempio" id="exampleLabel" />
+        <Input
+            label="Etichetta di esempio"
+            type="text"
+            placeholder="Testo di esempio"
+            id="examplePlaceholder"
+        />
+        <Input
+            label="Etichetta di esempio"
+            type="text"
+            placeholder="Testo di esempio"
+            infoText="Ulteriore testo informativo"
+            id="exampleinfoText"
+        />
+    </div>
 );
 
 const CheckboxRadioComponent = () => (
@@ -193,7 +90,7 @@ const CheckboxRadioComponent = () => (
         <fieldset>
             <legend>Checkbox</legend>
             <FormGroup check>
-                <Input id="checkbox1" type="checkbox"/>
+                <Input id="checkbox1" type="checkbox" />
                 <Label for="checkbox1" check>
                     Checkbox di esempio
                 </Label>
@@ -204,14 +101,14 @@ const CheckboxRadioComponent = () => (
             <legend>Radio</legend>
 
             <FormGroup check>
-                <Input name="gruppo1" type="radio" id="radio1" defaultChecked/>
+                <Input name="gruppo1" type="radio" id="radio1" defaultChecked />
                 <Label check for="radio1">
                     Radio di esempio 1
                 </Label>
             </FormGroup>
 
             <FormGroup check>
-                <Input name="gruppo1" type="radio" id="radio2"/>
+                <Input name="gruppo1" type="radio" id="radio2" />
                 <Label check for="radio2">
                     Radio di esempio 2
                 </Label>
@@ -219,20 +116,19 @@ const CheckboxRadioComponent = () => (
         </fieldset>
     </Form>
 );
-
 const InlineComponent = () => (
     <section>
         <fieldset>
             <legend>Checkbox</legend>
             <Form className="m-3">
                 <FormGroup check inline>
-                    <Input id="checkbox1" type="checkbox"/>
+                    <Input id="checkbox1" type="checkbox" />
                     <Label for="checkbox1" check>
                         Checkbox non selezionato
                     </Label>
                 </FormGroup>
                 <FormGroup check inline>
-                    <Input id="checkbox2" type="checkbox" defaultChecked/>
+                    <Input id="checkbox2" type="checkbox" defaultChecked />
                     <Label for="checkbox2" check>
                         Checkbox selezionato
                     </Label>
@@ -255,7 +151,7 @@ const InlineComponent = () => (
                     </Label>
                 </FormGroup>
                 <FormGroup check inline>
-                    <Input name="gruppo1" type="radio" id="radio2"/>
+                    <Input name="gruppo1" type="radio" id="radio2" />
                     <Label check for="radio2">
                         Opzione 2
                     </Label>
@@ -264,14 +160,13 @@ const InlineComponent = () => (
         </fieldset>
     </section>
 );
-
 const DisabilitatoComponent = () => (
     <section>
         <fieldset>
             <legend>Checkbox</legend>
             <Form className="m-3">
                 <FormGroup check>
-                    <Input disabled id="checkbox1" type="checkbox"/>
+                    <Input disabled id="checkbox1" type="checkbox" />
                     <Label for="checkbox1" check>
                         Checkbox disabilitato non selezionato
                     </Label>
@@ -306,7 +201,7 @@ const DisabilitatoComponent = () => (
                     </Label>
                 </FormGroup>
                 <FormGroup check>
-                    <Input disabled name="gruppo1" type="radio" id="radio2"/>
+                    <Input disabled name="gruppo1" type="radio" id="radio2" />
                     <Label check for="radio2">
                         Opzione disabilitata non selezionata
                     </Label>
@@ -315,281 +210,203 @@ const DisabilitatoComponent = () => (
         </fieldset>
     </section>
 );
-
 const GruppiComponent = () => (
     <section>
-        <CheckboxGroupsExample/>
-        <RadioGroupsExample/>
+        <CheckboxGroupsExample />
+        <RadioGroupsExample />
     </section>
 );
 
-/*
-const FormGroupEsempioComponent = () => (
-    <Form>
-        <FormGroup>
-            <Label for="FormGroupExampleInput">Esempio di etichetta</Label>
-            <Input type="text" name="text" id="FormGroupExampleInput" />
-        </FormGroup>
-        <FormGroup>
-            <Label for="FormGroupExampleInput2">
-                Altro esempio di etichetta
-            </Label>
-            <Input type="text" name="text" id="FormGroupExampleInput2" />
-        </FormGroup>
-    </Form>
-);
-moreStories.add(
-    "Form group",
-    withDocs(FormGroupEsempio, withInfo()(FormGroupEsempioComponent))
-);
-*/
-
-const DimensioneColonneComponent = () => (
-    <section>
-        <Form className="m-3">
-            <div className="form-row">
-                <FormGroup className="col-7">
-                    <Label for="Citta" sm={7}>
-                        Città
-                    </Label>
-                    <Input type="text" id="Citta"/>
-                </FormGroup>
-                <FormGroup col>
-                    <Label for="Comune" sm={1}>
-                        Comune
-                    </Label>
-                    <Input type="text" id="Comune"/>
-                </FormGroup>
-                <FormGroup col>
-                    <Label for="CAP" sm={1}>
-                        CAP
-                    </Label>
-                    <Input type="text" id="CAP"/>
-                </FormGroup>
-            </div>
-        </Form>
-    </section>
-);
-
-const FormGrigliaComponent = () => (
-    <section>
-        <Form>
-            <Row className="m-3">
-                <FormGroup col>
-                    <Label for="formNome">Nome</Label>
-                    <Input type="text" name="text" id="formNome"/>
-                </FormGroup>
-                <FormGroup col>
-                    <Label for="formCognome">Cognome</Label>
-                    <Input type="text" name="text" id="formCognome"/>
-                </FormGroup>
-            </Row>
-        </Form>
-
-        <FormGroupsExample/>
-    </section>
-);
-
-const InlineFormsComponent = () => (
-    <section>
-        <FormSizingExample inline/>
-
-        <Form inline className="m-3">
-            <Label className="my-1 mr-2" for="inlineFormCustomSelectPref">
-                Preference
-            </Label>
-            <Select
-                id="inlineFormCustomSelectPref"
-                placeholder="Choose..."
-                options={[
-                    { value: "1", label: "One" },
-                    { value: "2", label: "Two" },
-                    { value: "3", label: "Three" }
-                ]}
+storiesOf("Componenti/Form.Input", module)
+    .addDecorator(withA11y)
+    .add(
+        "Esempi di campi di input",
+        withInfo({
+            text: Esempi
+        })(InputTypesExamples)
+    )
+    .add(
+        "Utilizzo di placeholder e label",
+        withInfo({
+            text: Placeholder
+        })(InputPlaceHolderLabelComponent)
+    )
+    .add(
+        "Input con icona o bottoni",
+        withInfo({
+            text: IconButton
+        })(() => <InputIconButtonExample />)
+    )
+    .add(
+        "Input password",
+        withInfo({
+            text: Password
+        })(() => (
+            <Input
+                type="password"
+                id="exampleInputPassword"
+                label="Password con label, placeholder e testo di aiuto"
+                infoText="Inserisci almeno 8 caratteri e una lettera maiuscola"
             />
+        ))
+    )
+    .add(
+        "Disabilitato",
+        withInfo({
+            text: Disabled
+        })(() => (
+            <Input
+                label="Contenuto disabilitato"
+                id="exampleDisabled"
+                disabled
+            />
+        ))
+    )
+    .add(
+        "Readonly",
+        withInfo({
+            text: Readonly
+        })(() => (
+            <Input
+                label="Contenuto in sola lettura"
+                id="examplereadOnly"
+                readOnly
+            />
+        ))
+    )
+    .add(
+        "Readonly normalizzato",
+        withInfo({
+            text: Normalize
+        })(() => (
+            <Input
+                label="Contenuto in sola lettura"
+                id="exampleNormalized"
+                normalized
+            />
+        ))
+    )
+    .add(
+        "Area di testo",
+        withInfo({
+            text: Textarea
+        })(() => <TextArea rows="3" label="Esempio di area di testo" />)
+    )
 
-            <div className="custom-control custom-checkbox my-1 mr-sm-2">
-                <Input
-                    type="checkbox"
-                    id="customControlInline"
-                    className="custom-control-input"
-                />
-                <Label
-                    className="custom-control-label"
-                    for="customControlInline"
-                >
-                    Remember my preference
-                </Label>
-            </div>
-
-            <Button color="primary" type="submit">
-                Submit
-            </Button>
-        </Form>
-    </section>
-);
-
-const TestoAiutoComponent = () => (
-    <section>
-        <Form className="m-2">
-            <FormGroup>
-                <PasswordInput id="inputPassword5" className="form-control"/>
-                <Label for="inputPassword5">Password</Label>
-                <FormText id="passwordHelpBlock" color="muted">
-                    La tua password deve essere lunga 8-20 caratteri, contenere
-                    lettere e numeri e non deve contenere spazi, caratteri
-                    speciali o emoji.
-                </FormText>
-            </FormGroup>
-        </Form>
-
-        <Form>
-            <FormGroup>
-                <PasswordInput id="inputPassword6" className="mx-sm-3"/>
-                <Label for="inputPassword6">Password</Label>
-                <FormText id="passwordHelpInline" color="muted">
-                    Deve essere lunga 8-20 caratteri.
-                </FormText>
-            </FormGroup>
-        </Form>
-    </section>
-);
-
-const FormDisabilitatoComponent = () => (
-    <section className="m-3">
-        <Form>
-            <fieldset disabled>
-                <FormGroup>
-                    <Label for="disabledTextInput"
-                           style={{ position: " static " }}>Input </Label>
-                    <Input
-                        id="disabledTextInput"
-                        type="text"
-                        placeholder="Disabled input"
-                        disabled
-                    />
-                </FormGroup>
-
-                <FormGroup className="mt-3">
-                <Label for="exampleSelect" style = {{position : ' static ' }}>Select disabilitata</Label>
-                    <Select
-                        id="exampleSelect"
-                        placeholder="Scegli..."
-                        options={[{ value: "", label: "..." }]}
-                        disabled
-                    />
-                </FormGroup>
-
-                <FormGroup className="mt-3">
-                <Label for="disabledSelect" style = {{position : ' static ' }}>
-                Select default disabilitata
-            </Label>
-                    <Select
-                        classic
-                        className="form-control"
-                        placeholder="Select disabilitato"
-                        disabled
-                    />
-                </FormGroup>
-
-                <div className="form-row">
-                    <FormGroup check className="mt-3">
-                        <Input id="disabledFieldsetCheck" type="checkbox"/>
-                        <Label for="disabledFieldsetCheck">
-                            Checkbox disabilitato
-                        </Label>
-                    </FormGroup>
-                </div>
-
-                <Button color="primary" className="mt-3" type="submit" disabled>
-                    Submit
-                </Button>
-            </fieldset>
-        </Form>
-    </section>
-);
-
-storiesOf("Componenti/Form", module)
-    .addDecorator(withA11y)
-    .add("Input text", withInfo({
-        text: Esempi
-    })(EsempiComponent))
-    .add("Input password", withInfo({
-        text: InputPassword,
-        propTables: [Label, FormText, PasswordInput, PasswordMeter],
-        propTablesExclude: [FormInputPasswordExample]
-    })(() => <FormInputPasswordExample/>))
-    .add("Input file", withInfo({
-        text: InputFile,
-        propTables: [Input, Label],
-        propTablesExclude: [FormInputFileExample]
-    })(() => <FormInputFileExample/>))
-    .add("Textarea", withInfo({
-        text: Textarea
-    })(TextareaComponent))
-    .add("Input Readonly", withInfo({
-        text: Readonly
-    })(ReadonlyComponent))
-    .add("Input Readonly normalizzato", withInfo({
-        text: ReadonlyNormalizzato
-    })(ReadonlyNormalizzatoComponent))
+    .add(
+        "Area di testo con segnaposto",
+        withInfo({
+            text: Textarea
+        })(() => (
+            <TextArea
+                rows="3"
+                label="Esempio di area di testo"
+                placeholder="Testo di esempio"
+            />
+        ))
+    );
 storiesOf("Componenti/Form.Checkbox and radio", module)
-    .addDecorator(withA11y)    
-    .add("Checkbox e radio", withInfo({
-        text: CheckboxRadio
-    })(CheckboxRadioComponent))
-    .add("Inline", withInfo({
-        text: Inline
-    })(InlineComponent))
-    .add("Disabilitato", withInfo({
-        text: Disabilitato
-    })(DisabilitatoComponent))
-    .add("Gruppi", withInfo({
-        text: Gruppi,
-        propTables: [Input, Label, FormText],
-        propTablesExclude: [CheckboxGroupsExample, RadioGroupsExample]
-    })(GruppiComponent))
-storiesOf("Componenti/Form.Toggles", module)
-    .addDecorator(withA11y) 
-    .add("Toggles", withInfo({
-        text: Toggles,
-        propTables: [Toggle],
-        propTablesExclude: [TogglesExample]
-    })(() => <TogglesExample/>))
-    .add("Toggles Disabilitate", withInfo({
-        text: TogglesDisabilitate,
-        propTables: [Toggle],
-        propTablesExclude: [TogglesExample]
-    })(() => <TogglesExample disabled/>))
-    .add("Gruppi di Toggles", withInfo({
-        text: GruppiToggles,
-        propTables: [Toggle, FormText],
-        propTablesExclude: [TogglesGroupsExample]
-    })(() => <TogglesGroupsExample/>));
-
-storiesOf("Componenti/Form.Layout", module)
     .addDecorator(withA11y)
-    .add("Form a griglia", withInfo({
-        text: FormGriglia,
-        propTables: [],
-        propTablesExclude: [FormGroupsExample]
-    })(FormGrigliaComponent))
-    .add("Dimensione delle colonne", withInfo({
-        text: DimensioneColonne
-    })(DimensioneColonneComponent))
-    .add("Auto dimensionamento", withInfo({
-        text: AutoDimensionamento,
-        propTables: [Input, InputGroup, InputGroupAddon],
-        propTablesExclude: [FormSizingExample]
-    })(() => <FormSizingExample/>))
-    .add("Inline forms", withInfo({
-        text: InlineForms,
-        propTables: [],
-        propTablesExclude: [Button, FormSizingExample]
-    })(InlineFormsComponent))
-    .add("Testo di aiuto", withInfo({
-        text: TestoAiuto
-    })(TestoAiutoComponent))
-    .add("Form disabilitato", withInfo({
-        text: FormDisabilitato
-    })(FormDisabilitatoComponent));
+    .add(
+        "Checkbox e radio",
+        withInfo({
+            text: CheckboxRadio
+        })(CheckboxRadioComponent)
+    )
+    .add(
+        "Inline",
+        withInfo({
+            text: Inline
+        })(InlineComponent)
+    )
+    .add(
+        "Disabilitato",
+        withInfo({
+            text: Disabilitato
+        })(DisabilitatoComponent)
+    )
+    .add(
+        "Gruppi",
+        withInfo({
+            text: Gruppi,
+            propTables: [Input, Label, FormText],
+            propTablesExclude: [CheckboxGroupsExample, RadioGroupsExample]
+        })(GruppiComponent)
+    );
+storiesOf("Componenti/Form.Toggles", module)
+    .addDecorator(withA11y)
+    .add(
+        "Toggles",
+        withInfo({
+            text: Toggles,
+            propTables: [Toggle],
+            propTablesExclude: [TogglesExample]
+        })(() => <TogglesExample />)
+    )
+    .add(
+        "Toggles Disabilitate",
+        withInfo({
+            text: TogglesDisabilitate,
+            propTables: [Toggle],
+            propTablesExclude: [TogglesExample]
+        })(() => <TogglesExample disabled />)
+    )
+    .add(
+        "Gruppi di Toggles",
+        withInfo({
+            text: GruppiToggles,
+            propTables: [Toggle, FormText],
+            propTablesExclude: [TogglesGroupsExample]
+        })(() => <TogglesGroupsExample />)
+    );
+
+storiesOf("Componenti/Form.Select", module)
+    .addDecorator(withA11y)
+    .add(
+        "Select classica",
+        withInfo({
+            text: SelectEsempi,
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample />)
+    )
+    .add(
+        "Select disabilitata",
+        withInfo({
+            text: SelectDisabled,
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample disabled />)
+    )
+    .add(
+        "Select con reset",
+        withInfo({
+            text: SelectReset,
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample reset />)
+    )
+    .add(
+        "Select con ricerca",
+        withInfo({
+            text: SelectSearchable,
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample search />)
+    )
+    .add(
+        "Select Multipla",
+        withInfo({
+            text: SelectMultipla,
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample multi />)
+    )
+    .add(
+        "Select con gruppi",
+        withInfo({
+            text: SelectGrouped,
+            propTables: [Select],
+            propTablesExclude: [SelectExample]
+        })(() => <SelectExample group />)
+    );
