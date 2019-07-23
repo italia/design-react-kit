@@ -7,7 +7,7 @@ class HeaderNavExample extends React.Component {
     state = {
             isDropdownOpen: false,
             isMegamenuOpen: false,
-            isMainMenuOpen: false
+            isMainMenuOpen: true
         };
     toggleDropdown = () => {
         this.setState({ isDropdownOpen: !this.state.isDropdownOpen });
