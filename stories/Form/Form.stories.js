@@ -4,7 +4,6 @@ import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 
 import InputIconButtonExample from "./Input/InputIcon/InputIconButtonExample";
-import InputPasswordExample from "./Input/Password/InputPasswordExample";
 import TextArea from "./Input/TextArea/TextArea";
 import CheckboxGroupsExample from "./CheckboxRadio/CheckboxGroupsExample";
 import RadioGroupsExample from "./CheckboxRadio/RadioGroupsExample";
@@ -56,11 +55,7 @@ const InputTypesExamples = () => (
             label="Campo di tipo numerico"
             id="exampleInputNumber"
         />
-        <Input
-            type="tel"
-            label="Campo di tipo telefono"
-            id="exampleInputTel"
-        />
+        <Input type="tel" label="Campo di tipo telefono" id="exampleInputTel" />
         <Input
             type="time"
             label="Campo di tipo ora"
@@ -246,25 +241,50 @@ storiesOf("Componenti/Form.Input", module)
         "Input password",
         withInfo({
             text: Password
-        })(() => <InputPasswordExample />)
+        })(() => (
+            <Input
+                type="password"
+                id="exampleInputPassword"
+                label="Password con label, placeholder e testo di aiuto"
+                infoText="Inserisci almeno 8 caratteri e una lettera maiuscola"
+            />
+        ))
     )
     .add(
         "Disabilitato",
         withInfo({
             text: Disabled
-        })(() => <Input label="Contenuto disabilitato" id="exampleDisabled" disabled />)
+        })(() => (
+            <Input
+                label="Contenuto disabilitato"
+                id="exampleDisabled"
+                disabled
+            />
+        ))
     )
     .add(
         "Readonly",
         withInfo({
             text: Readonly
-        })(() => <Input label="Contenuto in sola lettura" id="examplereadOnly" readOnly />)
+        })(() => (
+            <Input
+                label="Contenuto in sola lettura"
+                id="examplereadOnly"
+                readOnly
+            />
+        ))
     )
     .add(
         "Readonly normalizzato",
         withInfo({
             text: Normalize
-        })(() => <Input label="Contenuto in sola lettura" id="exampleNormalized" normalized />)
+        })(() => (
+            <Input
+                label="Contenuto in sola lettura"
+                id="exampleNormalized"
+                normalized
+            />
+        ))
     )
     .add(
         "Area di testo",

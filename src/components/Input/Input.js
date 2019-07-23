@@ -44,8 +44,11 @@ class Input extends React.Component {
     constructor() {
         super();
         this.state = {
-            isFocused: false
+            isFocused: false,
+            hidden: true,
+            icon: true
         };
+        this.toggleShow = this.toggleShow.bind(this);
     }
     toggleFocusLabel = () => {
         this.setState({
@@ -60,6 +63,10 @@ class Input extends React.Component {
             });
         }
     };
+
+    toggleShow() {
+        this.setState({ hidden: !this.state.hidden, icon: !this.state.icon });
+    }
     render() {
         const {
             className,
@@ -172,6 +179,47 @@ class Input extends React.Component {
                         placeholder={this.props.placeholder}
                     />
                     <label htmlFor={this.props.id} className="active">
+                        {this.props.label}
+                    </label>
+                    <small className="form-text text-muted">
+                        {this.props.infoText}
+                    </small>
+                </div>
+            );
+        }
+        if (attributes.type === "password") {
+            return (
+                <div className={wrapperClass}>
+                    <Tag
+                        {...attributes}
+                        ref={innerRef}
+                        type={this.state.hidden ? "password" : "text"}
+                        className={
+                            this.state.isFocused
+                                ? "form-control input-password focus--mouse"
+                                : "form-control input-password"
+                        }
+                        onFocus={this.toggleFocusLabel}
+                        onBlur={e => this.toggleBlurLabel(e)}
+                        id={this.props.id}
+                        placeholder={this.props.placeholder}
+                    />
+                    <span class="password-icon" aria-hidden="true">
+                        <svg
+                            class="password-icon-visible icon icon-sm"
+                            onClick={this.toggleShow}
+                        >
+                            <use
+                                xlinkHref={`/svg/sprite.svg#it-password-${
+                                    this.state.icon ? "visible" : "invisible"
+                                }`}
+                            />
+                        </svg>
+                    </span>
+                    <label
+                        htmlFor={this.props.id}
+                        className={this.state.isFocused ? "active" : ""}
+                    >
                         {this.props.label}
                     </label>
                     <small className="form-text text-muted">
