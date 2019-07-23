@@ -1,0 +1,1 @@
+Aggiungi l’attributo `disabled` ad un input per impedire la modifica del valore contenuto e non inviare i dati in esso contenuti.
