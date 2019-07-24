@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Transition from 'react-transition-group/Transition'
 
-import { Util } from 'reactstrap'
-import { Button } from '../..'
+import { Util, Button } from 'reactstrap'
 
 const {
   TransitionTimeouts,

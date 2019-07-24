@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import { Label, Input } from '../..'
+import { Label, Input } from 'reactstrap'
 
 class Toggle extends Component {
   render () {

@@ -1213,11 +1213,6 @@ if (process.env.NODE_ENV !== 'production') {
 }
 });
 
-var PropTypes = /*#__PURE__*/Object.freeze({
-	'default': propTypes,
-	__moduleExports: propTypes
-});
-
 var classnames = createCommonjsModule(function (module) {
 /*!
   Copyright (c) 2017 Jed Watson.
@@ -6529,7 +6524,7 @@ var reactLifecyclesCompat_es = /*#__PURE__*/Object.freeze({
 	polyfill: polyfill
 });
 
-var PropTypes$1 = createCommonjsModule(function (module, exports) {
+var PropTypes = createCommonjsModule(function (module, exports) {
 
 exports.__esModule = true;
 exports.classNamesShape = exports.timeoutsShape = void 0;
@@ -6559,16 +6554,16 @@ var classNamesShape = process.env.NODE_ENV !== 'production' ? _propTypes.default
 exports.classNamesShape = classNamesShape;
 });
 
-unwrapExports(PropTypes$1);
-var PropTypes_1 = PropTypes$1.classNamesShape;
-var PropTypes_2 = PropTypes$1.timeoutsShape;
+unwrapExports(PropTypes);
+var PropTypes_1 = PropTypes.classNamesShape;
+var PropTypes_2 = PropTypes.timeoutsShape;
 
 var Transition_1 = createCommonjsModule(function (module, exports) {
 
 exports.__esModule = true;
 exports.default = exports.EXITING = exports.ENTERED = exports.ENTERING = exports.EXITED = exports.UNMOUNTED = void 0;
 
-var PropTypes = _interopRequireWildcard(propTypes);
+var PropTypes$1 = _interopRequireWildcard(propTypes);
 
 var _react = _interopRequireDefault(React__default);
 
@@ -6989,7 +6984,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 Transition.contextTypes = {
-  transitionGroup: PropTypes.object
+  transitionGroup: PropTypes$1.object
 };
 Transition.childContextTypes = {
   transitionGroup: function transitionGroup() {}
@@ -7009,12 +7004,12 @@ Transition.propTypes = process.env.NODE_ENV !== "production" ? {
    * </Transition>
    * ```
    */
-  children: PropTypes.oneOfType([PropTypes.func.isRequired, PropTypes.element.isRequired]).isRequired,
+  children: PropTypes$1.oneOfType([PropTypes$1.func.isRequired, PropTypes$1.element.isRequired]).isRequired,
 
   /**
    * Show the component; triggers the enter or exit states
    */
-  in: PropTypes.bool,
+  in: PropTypes$1.bool,
 
   /**
    * By default the child component is mounted immediately along with
@@ -7022,13 +7017,13 @@ Transition.propTypes = process.env.NODE_ENV !== "production" ? {
    * first `in={true}` you can set `mountOnEnter`. After the first enter transition the component will stay
    * mounted, even on "exited", unless you also specify `unmountOnExit`.
    */
-  mountOnEnter: PropTypes.bool,
+  mountOnEnter: PropTypes$1.bool,
 
   /**
    * By default the child component stays mounted after it reaches the `'exited'` state.
    * Set `unmountOnExit` if you'd prefer to unmount the component after it finishes exiting.
    */
-  unmountOnExit: PropTypes.bool,
+  unmountOnExit: PropTypes$1.bool,
 
   /**
    * Normally a component is not transitioned if it is shown when the `<Transition>` component mounts.
@@ -7037,17 +7032,17 @@ Transition.propTypes = process.env.NODE_ENV !== "production" ? {
    *
    * > Note: there are no specific "appear" states. `appear` only adds an additional `enter` transition.
    */
-  appear: PropTypes.bool,
+  appear: PropTypes$1.bool,
 
   /**
    * Enable or disable enter transitions.
    */
-  enter: PropTypes.bool,
+  enter: PropTypes$1.bool,
 
   /**
    * Enable or disable exit transitions.
    */
-  exit: PropTypes.bool,
+  exit: PropTypes$1.bool,
 
   /**
    * The duration of the transition, in milliseconds.
@@ -7076,7 +7071,7 @@ Transition.propTypes = process.env.NODE_ENV !== "production" ? {
    * @type {number | { enter?: number, exit?: number, appear?: number }}
    */
   timeout: function timeout(props) {
-    var pt = PropTypes$1.timeoutsShape;
+    var pt = PropTypes.timeoutsShape;
     if (!props.addEndListener) pt = pt.isRequired;
 
     for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -7098,7 +7093,7 @@ Transition.propTypes = process.env.NODE_ENV !== "production" ? {
    * }}
    * ```
    */
-  addEndListener: PropTypes.func,
+  addEndListener: PropTypes$1.func,
 
   /**
    * Callback fired before the "entering" status is applied. An extra parameter
@@ -7106,7 +7101,7 @@ Transition.propTypes = process.env.NODE_ENV !== "production" ? {
    *
    * @type Function(node: HtmlElement, isAppearing: bool) -> void
    */
-  onEnter: PropTypes.func,
+  onEnter: PropTypes$1.func,
 
   /**
    * Callback fired after the "entering" status is applied. An extra parameter
@@ -7114,7 +7109,7 @@ Transition.propTypes = process.env.NODE_ENV !== "production" ? {
    *
    * @type Function(node: HtmlElement, isAppearing: bool)
    */
-  onEntering: PropTypes.func,
+  onEntering: PropTypes$1.func,
 
   /**
    * Callback fired after the "entered" status is applied. An extra parameter
@@ -7122,28 +7117,28 @@ Transition.propTypes = process.env.NODE_ENV !== "production" ? {
    *
    * @type Function(node: HtmlElement, isAppearing: bool) -> void
    */
-  onEntered: PropTypes.func,
+  onEntered: PropTypes$1.func,
 
   /**
    * Callback fired before the "exiting" status is applied.
    *
    * @type Function(node: HtmlElement) -> void
    */
-  onExit: PropTypes.func,
+  onExit: PropTypes$1.func,
 
   /**
    * Callback fired after the "exiting" status is applied.
    *
    * @type Function(node: HtmlElement) -> void
    */
-  onExiting: PropTypes.func,
+  onExiting: PropTypes$1.func,
 
   /**
    * Callback fired after the "exited" status is applied.
    *
    * @type Function(node: HtmlElement) -> void
    */
-  onExited: PropTypes.func // Name the function so it is clearer in the documentation
+  onExited: PropTypes$1.func // Name the function so it is clearer in the documentation
 
 } : {};
 
@@ -7174,7 +7169,7 @@ var _default = (0, reactLifecyclesCompat_es.polyfill)(Transition);
 exports.default = _default;
 });
 
-unwrapExports(Transition_1);
+var Transition = unwrapExports(Transition_1);
 var Transition_2 = Transition_1.EXITING;
 var Transition_3 = Transition_1.ENTERED;
 var Transition_4 = Transition_1.ENTERING;
@@ -7186,7 +7181,7 @@ var CSSTransition_1 = createCommonjsModule(function (module, exports) {
 exports.__esModule = true;
 exports.default = void 0;
 
-var PropTypes = _interopRequireWildcard(propTypes);
+var PropTypes$1 = _interopRequireWildcard(propTypes);
 
 var _addClass = _interopRequireDefault(addClass_1);
 
@@ -7493,7 +7488,7 @@ CSSTransition.propTypes = process.env.NODE_ENV !== "production" ? _extends({}, _
    *  exitDone?: string,
    * }}
    */
-  classNames: PropTypes$1.classNamesShape,
+  classNames: PropTypes.classNamesShape,
 
   /**
    * A `<Transition>` callback fired immediately after the 'enter' or 'appear' class is
@@ -7501,7 +7496,7 @@ CSSTransition.propTypes = process.env.NODE_ENV !== "production" ? _extends({}, _
    *
    * @type Function(node: HtmlElement, isAppearing: bool)
    */
-  onEnter: PropTypes.func,
+  onEnter: PropTypes$1.func,
 
   /**
    * A `<Transition>` callback fired immediately after the 'enter-active' or
@@ -7509,7 +7504,7 @@ CSSTransition.propTypes = process.env.NODE_ENV !== "production" ? _extends({}, _
    *
    * @type Function(node: HtmlElement, isAppearing: bool)
    */
-  onEntering: PropTypes.func,
+  onEntering: PropTypes$1.func,
 
   /**
    * A `<Transition>` callback fired immediately after the 'enter' or
@@ -7517,7 +7512,7 @@ CSSTransition.propTypes = process.env.NODE_ENV !== "production" ? _extends({}, _
    *
    * @type Function(node: HtmlElement, isAppearing: bool)
    */
-  onEntered: PropTypes.func,
+  onEntered: PropTypes$1.func,
 
   /**
    * A `<Transition>` callback fired immediately after the 'exit' class is
@@ -7525,14 +7520,14 @@ CSSTransition.propTypes = process.env.NODE_ENV !== "production" ? _extends({}, _
    *
    * @type Function(node: HtmlElement)
    */
-  onExit: PropTypes.func,
+  onExit: PropTypes$1.func,
 
   /**
    * A `<Transition>` callback fired immediately after the 'exit-active' is applied.
    *
    * @type Function(node: HtmlElement)
    */
-  onExiting: PropTypes.func,
+  onExiting: PropTypes$1.func,
 
   /**
    * A `<Transition>` callback fired immediately after the 'exit' classes
@@ -7540,7 +7535,7 @@ CSSTransition.propTypes = process.env.NODE_ENV !== "production" ? _extends({}, _
    *
    * @type Function(node: HtmlElement)
    */
-  onExited: PropTypes.func
+  onExited: PropTypes$1.func
 }) : {};
 var _default = CSSTransition;
 exports.default = _default;
@@ -10758,12 +10753,124 @@ FormText.propTypes = propTypes$P;
 FormText.defaultProps = defaultProps$N;
 
 var propTypes$Q = {
+  children: propTypes.node,
+  type: propTypes.string,
+  size: propTypes.string,
+  bsSize: propTypes.string,
+  valid: propTypes.bool,
+  invalid: propTypes.bool,
+  tag: tagPropType,
+  innerRef: propTypes.oneOfType([propTypes.object, propTypes.func, propTypes.string]),
+  plaintext: propTypes.bool,
+  addon: propTypes.bool,
+  className: propTypes.string,
+  cssModule: propTypes.object
+};
+var defaultProps$O = {
+  type: 'text'
+};
+
+var Input =
+/*#__PURE__*/
+function (_React$Component) {
+  _inheritsLoose(Input, _React$Component);
+
+  function Input(props) {
+    var _this;
+
+    _this = _React$Component.call(this, props) || this;
+    _this.getRef = _this.getRef.bind(_assertThisInitialized(_this));
+    _this.focus = _this.focus.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  var _proto = Input.prototype;
+
+  _proto.getRef = function getRef(ref) {
+    if (this.props.innerRef) {
+      this.props.innerRef(ref);
+    }
+
+    this.ref = ref;
+  };
+
+  _proto.focus = function focus() {
+    if (this.ref) {
+      this.ref.focus();
+    }
+  };
+
+  _proto.render = function render() {
+    var _this$props = this.props,
+        className = _this$props.className,
+        cssModule = _this$props.cssModule,
+        type = _this$props.type,
+        bsSize = _this$props.bsSize,
+        valid = _this$props.valid,
+        invalid = _this$props.invalid,
+        tag = _this$props.tag,
+        addon = _this$props.addon,
+        plaintext = _this$props.plaintext,
+        innerRef = _this$props.innerRef,
+        attributes = _objectWithoutPropertiesLoose(_this$props, ["className", "cssModule", "type", "bsSize", "valid", "invalid", "tag", "addon", "plaintext", "innerRef"]);
+
+    var checkInput = ['radio', 'checkbox'].indexOf(type) > -1;
+    var isNotaNumber = new RegExp('\\D', 'g');
+    var fileInput = type === 'file';
+    var textareaInput = type === 'textarea';
+    var selectInput = type === 'select';
+    var Tag = tag || (selectInput || textareaInput ? type : 'input');
+    var formControlClass = 'form-control';
+
+    if (plaintext) {
+      formControlClass = formControlClass + "-plaintext";
+      Tag = tag || 'input';
+    } else if (fileInput) {
+      formControlClass = formControlClass + "-file";
+    } else if (checkInput) {
+      if (addon) {
+        formControlClass = null;
+      } else {
+        formControlClass = 'form-check-input';
+      }
+    }
+
+    if (attributes.size && isNotaNumber.test(attributes.size)) {
+      warnOnce('Please use the prop "bsSize" instead of the "size" to bootstrap\'s input sizing.');
+      bsSize = attributes.size;
+      delete attributes.size;
+    }
+
+    var classes = mapToCssModules(classnames(className, invalid && 'is-invalid', valid && 'is-valid', bsSize ? "form-control-" + bsSize : false, formControlClass), cssModule);
+
+    if (Tag === 'input' || tag && typeof tag === 'function') {
+      attributes.type = type;
+    }
+
+    if (attributes.children && !(plaintext || type === 'select' || typeof Tag !== 'string' || Tag === 'select')) {
+      warnOnce("Input with a type of \"" + type + "\" cannot have children. Please use \"value\"/\"defaultValue\" instead.");
+      delete attributes.children;
+    }
+
+    return React__default.createElement(Tag, _extends({}, attributes, {
+      ref: innerRef,
+      className: classes
+    }));
+  };
+
+  return Input;
+}(React__default.Component);
+
+Input.propTypes = propTypes$Q;
+Input.defaultProps = defaultProps$O;
+
+var propTypes$R = {
   tag: tagPropType,
   size: propTypes.string,
   className: propTypes.string,
   cssModule: propTypes.object
 };
-var defaultProps$O = {
+var defaultProps$P = {
   tag: 'div'
 };
 
@@ -10780,15 +10887,15 @@ var InputGroup = function InputGroup(props) {
   }));
 };
 
-InputGroup.propTypes = propTypes$Q;
-InputGroup.defaultProps = defaultProps$O;
+InputGroup.propTypes = propTypes$R;
+InputGroup.defaultProps = defaultProps$P;
 
-var propTypes$R = {
+var propTypes$S = {
   tag: tagPropType,
   className: propTypes.string,
   cssModule: propTypes.object
 };
-var defaultProps$P = {
+var defaultProps$Q = {
   tag: 'span'
 };
 
@@ -10804,17 +10911,17 @@ var InputGroupText = function InputGroupText(props) {
   }));
 };
 
-InputGroupText.propTypes = propTypes$R;
-InputGroupText.defaultProps = defaultProps$P;
+InputGroupText.propTypes = propTypes$S;
+InputGroupText.defaultProps = defaultProps$Q;
 
-var propTypes$S = {
+var propTypes$T = {
   tag: tagPropType,
   addonType: propTypes.oneOf(['prepend', 'append']).isRequired,
   children: propTypes.node,
   className: propTypes.string,
   cssModule: propTypes.object
 };
-var defaultProps$Q = {
+var defaultProps$R = {
   tag: 'div'
 };
 
@@ -10842,10 +10949,10 @@ var InputGroupAddon = function InputGroupAddon(props) {
   }));
 };
 
-InputGroupAddon.propTypes = propTypes$S;
-InputGroupAddon.defaultProps = defaultProps$Q;
+InputGroupAddon.propTypes = propTypes$T;
+InputGroupAddon.defaultProps = defaultProps$R;
 
-var propTypes$T = {
+var propTypes$U = {
   addonType: propTypes.oneOf(['prepend', 'append']).isRequired,
   children: propTypes.node
 };
@@ -10854,7 +10961,7 @@ var InputGroupButtonDropdown = function InputGroupButtonDropdown(props) {
   return React__default.createElement(Dropdown, props);
 };
 
-InputGroupButtonDropdown.propTypes = propTypes$T;
+InputGroupButtonDropdown.propTypes = propTypes$U;
 
 var colWidths$1 = ['xs', 'sm', 'md', 'lg', 'xl'];
 var stringOrNumberProp$1 = propTypes.oneOfType([propTypes.number, propTypes.string]);
@@ -10863,7 +10970,7 @@ var columnProps$1 = propTypes.oneOfType([propTypes.string, propTypes.number, pro
   order: stringOrNumberProp$1,
   offset: stringOrNumberProp$1
 })]);
-var propTypes$U = {
+var propTypes$V = {
   children: propTypes.node,
   hidden: propTypes.bool,
   check: propTypes.bool,
@@ -10879,7 +10986,7 @@ var propTypes$U = {
   xl: columnProps$1,
   widths: propTypes.array
 };
-var defaultProps$R = {
+var defaultProps$S = {
   tag: 'label',
   widths: colWidths$1
 };
@@ -10936,10 +11043,10 @@ var Label = function Label(props) {
   }));
 };
 
-Label.propTypes = propTypes$U;
-Label.defaultProps = defaultProps$R;
+Label.propTypes = propTypes$V;
+Label.defaultProps = defaultProps$S;
 
-var propTypes$V = {
+var propTypes$W = {
   body: propTypes.bool,
   bottom: propTypes.bool,
   children: propTypes.node,
@@ -11002,9 +11109,9 @@ var Media = function Media(props) {
   }));
 };
 
-Media.propTypes = propTypes$V;
+Media.propTypes = propTypes$W;
 
-var propTypes$W = {
+var propTypes$X = {
   active: propTypes.bool,
   children: propTypes.node,
   className: propTypes.string,
@@ -11012,7 +11119,7 @@ var propTypes$W = {
   disabled: propTypes.bool,
   tag: tagPropType
 };
-var defaultProps$S = {
+var defaultProps$T = {
   tag: 'li'
 };
 
@@ -11033,10 +11140,10 @@ var PaginationItem = function PaginationItem(props) {
   }));
 };
 
-PaginationItem.propTypes = propTypes$W;
-PaginationItem.defaultProps = defaultProps$S;
+PaginationItem.propTypes = propTypes$X;
+PaginationItem.defaultProps = defaultProps$T;
 
-var propTypes$X = {
+var propTypes$Y = {
   'aria-label': propTypes.string,
   children: propTypes.node,
   className: propTypes.string,
@@ -11047,7 +11154,7 @@ var propTypes$X = {
   last: propTypes.bool,
   tag: tagPropType
 };
-var defaultProps$T = {
+var defaultProps$U = {
   tag: 'a'
 };
 
@@ -11113,8 +11220,8 @@ var PaginationLink = function PaginationLink(props) {
   }), children);
 };
 
-PaginationLink.propTypes = propTypes$X;
-PaginationLink.defaultProps = defaultProps$T;
+PaginationLink.propTypes = propTypes$Y;
+PaginationLink.defaultProps = defaultProps$U;
 
 /**
  * TabContext
@@ -11125,13 +11232,13 @@ PaginationLink.defaultProps = defaultProps$T;
 
 var TabContext = React__default.createContext({});
 
-var propTypes$Y = {
+var propTypes$Z = {
   tag: tagPropType,
   activeTab: propTypes.any,
   className: propTypes.string,
   cssModule: propTypes.object
 };
-var defaultProps$U = {
+var defaultProps$V = {
   tag: 'div'
 };
 
@@ -11167,7 +11274,7 @@ function (_Component) {
         className = _this$props.className,
         cssModule = _this$props.cssModule,
         Tag = _this$props.tag;
-    var attributes = omit(this.props, Object.keys(propTypes$Y));
+    var attributes = omit(this.props, Object.keys(propTypes$Z));
     var classes = mapToCssModules(classnames('tab-content', className), cssModule);
     return React__default.createElement(TabContext.Provider, {
       value: {
@@ -11182,16 +11289,16 @@ function (_Component) {
 }(React.Component);
 
 polyfill(TabContent);
-TabContent.propTypes = propTypes$Y;
-TabContent.defaultProps = defaultProps$U;
+TabContent.propTypes = propTypes$Z;
+TabContent.defaultProps = defaultProps$V;
 
-var propTypes$Z = {
+var propTypes$_ = {
   tag: tagPropType,
   className: propTypes.string,
   cssModule: propTypes.object,
   tabId: propTypes.any
 };
-var defaultProps$V = {
+var defaultProps$W = {
   tag: 'div'
 };
 function TabPane(props) {
@@ -11214,16 +11321,16 @@ function TabPane(props) {
     }));
   });
 }
-TabPane.propTypes = propTypes$Z;
-TabPane.defaultProps = defaultProps$V;
+TabPane.propTypes = propTypes$_;
+TabPane.defaultProps = defaultProps$W;
 
-var propTypes$_ = {
+var propTypes$$ = {
   tag: tagPropType,
   fluid: propTypes.bool,
   className: propTypes.string,
   cssModule: propTypes.object
 };
-var defaultProps$W = {
+var defaultProps$X = {
   tag: 'div'
 };
 
@@ -11240,10 +11347,10 @@ var Jumbotron = function Jumbotron(props) {
   }));
 };
 
-Jumbotron.propTypes = propTypes$_;
-Jumbotron.defaultProps = defaultProps$W;
+Jumbotron.propTypes = propTypes$$;
+Jumbotron.defaultProps = defaultProps$X;
 
-var propTypes$$ = {
+var propTypes$10 = {
   children: propTypes.node,
   className: propTypes.string,
   closeClassName: propTypes.string,
@@ -11257,7 +11364,7 @@ var propTypes$$ = {
   transition: propTypes.shape(Fade.propTypes),
   innerRef: propTypes.oneOfType([propTypes.object, propTypes.string, propTypes.func])
 };
-var defaultProps$X = {
+var defaultProps$Y = {
   color: 'success',
   isOpen: true,
   tag: 'div',
@@ -11309,10 +11416,10 @@ function Alert(props) {
   }, "\xD7")) : null, children);
 }
 
-Alert.propTypes = propTypes$$;
-Alert.defaultProps = defaultProps$X;
+Alert.propTypes = propTypes$10;
+Alert.defaultProps = defaultProps$Y;
 
-var propTypes$10 = {
+var propTypes$11 = {
   tag: tagPropType,
   active: propTypes.bool,
   disabled: propTypes.bool,
@@ -11321,7 +11428,7 @@ var propTypes$10 = {
   className: propTypes.any,
   cssModule: propTypes.object
 };
-var defaultProps$Y = {
+var defaultProps$Z = {
   tag: 'li'
 };
 
@@ -11350,15 +11457,15 @@ var ListGroupItem = function ListGroupItem(props) {
   }));
 };
 
-ListGroupItem.propTypes = propTypes$10;
-ListGroupItem.defaultProps = defaultProps$Y;
+ListGroupItem.propTypes = propTypes$11;
+ListGroupItem.defaultProps = defaultProps$Z;
 
-var propTypes$11 = {
+var propTypes$12 = {
   tag: tagPropType,
   className: propTypes.any,
   cssModule: propTypes.object
 };
-var defaultProps$Z = {
+var defaultProps$_ = {
   tag: 'h5'
 };
 
@@ -11374,15 +11481,15 @@ var ListGroupItemHeading = function ListGroupItemHeading(props) {
   }));
 };
 
-ListGroupItemHeading.propTypes = propTypes$11;
-ListGroupItemHeading.defaultProps = defaultProps$Z;
+ListGroupItemHeading.propTypes = propTypes$12;
+ListGroupItemHeading.defaultProps = defaultProps$_;
 
-var propTypes$12 = {
+var propTypes$13 = {
   tag: tagPropType,
   className: propTypes.any,
   cssModule: propTypes.object
 };
-var defaultProps$_ = {
+var defaultProps$$ = {
   tag: 'p'
 };
 
@@ -11398,8 +11505,8 @@ var ListGroupItemText = function ListGroupItemText(props) {
   }));
 };
 
-ListGroupItemText.propTypes = propTypes$12;
-ListGroupItemText.defaultProps = defaultProps$_;
+ListGroupItemText.propTypes = propTypes$13;
+ListGroupItemText.defaultProps = defaultProps$$;
 
 var UncontrolledAlert =
 /*#__PURE__*/
@@ -12153,11 +12260,11 @@ function _assertThisInitialized$2(self) {
   return self;
 }
 
-var propTypes$13 = {
+var propTypes$14 = {
   tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
   className: propTypes.string
 };
-var defaultProps$$ = {
+var defaultProps$10 = {
   tag: 'div'
 };
 function Accordion(props) {
@@ -12170,16 +12277,16 @@ function Accordion(props) {
     className: classes
   }));
 }
-Accordion.propTypes = propTypes$13;
-Accordion.defaultProps = defaultProps$$;
+Accordion.propTypes = propTypes$14;
+Accordion.defaultProps = defaultProps$10;
 
-var propTypes$14 = {
+var propTypes$15 = {
   tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
   className: propTypes.string,
   active: propTypes.bool,
   onToggle: propTypes.func
 };
-var defaultProps$10 = {
+var defaultProps$11 = {
   tag: 'button'
 };
 function AccordionHeader(props) {
@@ -12202,604 +12309,8 @@ function AccordionHeader(props) {
     onClick: onToggle
   }, attributes)));
 }
-AccordionHeader.propTypes = propTypes$14;
-AccordionHeader.defaultProps = defaultProps$10;
-
-var config = {
-  disabled: false
-};
-
-var timeoutsShape = process.env.NODE_ENV !== 'production' ? propTypes.oneOfType([propTypes.number, propTypes.shape({
-  enter: propTypes.number,
-  exit: propTypes.number,
-  appear: propTypes.number
-}).isRequired]) : null;
-var classNamesShape = process.env.NODE_ENV !== 'production' ? propTypes.oneOfType([propTypes.string, propTypes.shape({
-  enter: propTypes.string,
-  exit: propTypes.string,
-  active: propTypes.string
-}), propTypes.shape({
-  enter: propTypes.string,
-  enterDone: propTypes.string,
-  enterActive: propTypes.string,
-  exit: propTypes.string,
-  exitDone: propTypes.string,
-  exitActive: propTypes.string
-})]) : null;
-
-var TransitionGroupContext = React__default.createContext(null);
-
-var UNMOUNTED = 'unmounted';
-var EXITED = 'exited';
-var ENTERING = 'entering';
-var ENTERED = 'entered';
-var EXITING = 'exiting';
-/**
- * The Transition component lets you describe a transition from one component
- * state to another _over time_ with a simple declarative API. Most commonly
- * it's used to animate the mounting and unmounting of a component, but can also
- * be used to describe in-place transition states as well.
- *
- * ---
- *
- * **Note**: `Transition` is a platform-agnostic base component. If you're using
- * transitions in CSS, you'll probably want to use
- * [`CSSTransition`](https://reactcommunity.org/react-transition-group/css-transition)
- * instead. It inherits all the features of `Transition`, but contains
- * additional features necessary to play nice with CSS transitions (hence the
- * name of the component).
- *
- * ---
- *
- * By default the `Transition` component does not alter the behavior of the
- * component it renders, it only tracks "enter" and "exit" states for the
- * components. It's up to you to give meaning and effect to those states. For
- * example we can add styles to a component when it enters or exits:
- *
- * ```jsx
- * import { Transition } from 'react-transition-group';
- *
- * const duration = 300;
- *
- * const defaultStyle = {
- *   transition: `opacity ${duration}ms ease-in-out`,
- *   opacity: 0,
- * }
- *
- * const transitionStyles = {
- *   entering: { opacity: 1 },
- *   entered:  { opacity: 1 },
- *   exiting:  { opacity: 0 },
- *   exited:  { opacity: 0 },
- * };
- *
- * const Fade = ({ in: inProp }) => (
- *   <Transition in={inProp} timeout={duration}>
- *     {state => (
- *       <div style={{
- *         ...defaultStyle,
- *         ...transitionStyles[state]
- *       }}>
- *         I'm a fade Transition!
- *       </div>
- *     )}
- *   </Transition>
- * );
- * ```
- *
- * There are 4 main states a Transition can be in:
- *  - `'entering'`
- *  - `'entered'`
- *  - `'exiting'`
- *  - `'exited'`
- *
- * Transition state is toggled via the `in` prop. When `true` the component
- * begins the "Enter" stage. During this stage, the component will shift from
- * its current transition state, to `'entering'` for the duration of the
- * transition and then to the `'entered'` stage once it's complete. Let's take
- * the following example (we'll use the
- * [useState](https://reactjs.org/docs/hooks-reference.html#usestate) hook):
- *
- * ```jsx
- * function App() {
- *   const [inProp, setInProp] = useState(false);
- *   return (
- *     <div>
- *       <Transition in={inProp} timeout={500}>
- *         {state => (
- *           // ...
- *         )}
- *       </Transition>
- *       <button onClick={() => setInProp(true)}>
- *         Click to Enter
- *       </button>
- *     </div>
- *   );
- * }
- * ```
- *
- * When the button is clicked the component will shift to the `'entering'` state
- * and stay there for 500ms (the value of `timeout`) before it finally switches
- * to `'entered'`.
- *
- * When `in` is `false` the same thing happens except the state moves from
- * `'exiting'` to `'exited'`.
- */
-
-var Transition =
-/*#__PURE__*/
-function (_React$Component) {
-  _inheritsLoose(Transition, _React$Component);
-
-  function Transition(props, context) {
-    var _this;
-
-    _this = _React$Component.call(this, props, context) || this;
-    var parentGroup = context; // In the context of a TransitionGroup all enters are really appears
-
-    var appear = parentGroup && !parentGroup.isMounting ? props.enter : props.appear;
-    var initialStatus;
-    _this.appearStatus = null;
-
-    if (props.in) {
-      if (appear) {
-        initialStatus = EXITED;
-        _this.appearStatus = ENTERING;
-      } else {
-        initialStatus = ENTERED;
-      }
-    } else {
-      if (props.unmountOnExit || props.mountOnEnter) {
-        initialStatus = UNMOUNTED;
-      } else {
-        initialStatus = EXITED;
-      }
-    }
-
-    _this.state = {
-      status: initialStatus
-    };
-    _this.nextCallback = null;
-    return _this;
-  }
-
-  Transition.getDerivedStateFromProps = function getDerivedStateFromProps(_ref, prevState) {
-    var nextIn = _ref.in;
-
-    if (nextIn && prevState.status === UNMOUNTED) {
-      return {
-        status: EXITED
-      };
-    }
-
-    return null;
-  }; // getSnapshotBeforeUpdate(prevProps) {
-  //   let nextStatus = null
-  //   if (prevProps !== this.props) {
-  //     const { status } = this.state
-  //     if (this.props.in) {
-  //       if (status !== ENTERING && status !== ENTERED) {
-  //         nextStatus = ENTERING
-  //       }
-  //     } else {
-  //       if (status === ENTERING || status === ENTERED) {
-  //         nextStatus = EXITING
-  //       }
-  //     }
-  //   }
-  //   return { nextStatus }
-  // }
-
-
-  var _proto = Transition.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    this.updateStatus(true, this.appearStatus);
-  };
-
-  _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
-    var nextStatus = null;
-
-    if (prevProps !== this.props) {
-      var status = this.state.status;
-
-      if (this.props.in) {
-        if (status !== ENTERING && status !== ENTERED) {
-          nextStatus = ENTERING;
-        }
-      } else {
-        if (status === ENTERING || status === ENTERED) {
-          nextStatus = EXITING;
-        }
-      }
-    }
-
-    this.updateStatus(false, nextStatus);
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    this.cancelNextCallback();
-  };
-
-  _proto.getTimeouts = function getTimeouts() {
-    var timeout = this.props.timeout;
-    var exit, enter, appear;
-    exit = enter = appear = timeout;
-
-    if (timeout != null && typeof timeout !== 'number') {
-      exit = timeout.exit;
-      enter = timeout.enter; // TODO: remove fallback for next major
-
-      appear = timeout.appear !== undefined ? timeout.appear : enter;
-    }
-
-    return {
-      exit: exit,
-      enter: enter,
-      appear: appear
-    };
-  };
-
-  _proto.updateStatus = function updateStatus(mounting, nextStatus) {
-    if (mounting === void 0) {
-      mounting = false;
-    }
-
-    if (nextStatus !== null) {
-      // nextStatus will always be ENTERING or EXITING.
-      this.cancelNextCallback();
-      var node = ReactDOM.findDOMNode(this);
-
-      if (nextStatus === ENTERING) {
-        this.performEnter(node, mounting);
-      } else {
-        this.performExit(node);
-      }
-    } else if (this.props.unmountOnExit && this.state.status === EXITED) {
-      this.setState({
-        status: UNMOUNTED
-      });
-    }
-  };
-
-  _proto.performEnter = function performEnter(node, mounting) {
-    var _this2 = this;
-
-    var enter = this.props.enter;
-    var appearing = this.context ? this.context.isMounting : mounting;
-    var timeouts = this.getTimeouts();
-    var enterTimeout = appearing ? timeouts.appear : timeouts.enter; // no enter animation skip right to ENTERED
-    // if we are mounting and running this it means appear _must_ be set
-
-    if (!mounting && !enter || config.disabled) {
-      this.safeSetState({
-        status: ENTERED
-      }, function () {
-        _this2.props.onEntered(node);
-      });
-      return;
-    }
-
-    this.props.onEnter(node, appearing);
-    this.safeSetState({
-      status: ENTERING
-    }, function () {
-      _this2.props.onEntering(node, appearing);
-
-      _this2.onTransitionEnd(node, enterTimeout, function () {
-        _this2.safeSetState({
-          status: ENTERED
-        }, function () {
-          _this2.props.onEntered(node, appearing);
-        });
-      });
-    });
-  };
-
-  _proto.performExit = function performExit(node) {
-    var _this3 = this;
-
-    var exit = this.props.exit;
-    var timeouts = this.getTimeouts(); // no exit animation skip right to EXITED
-
-    if (!exit || config.disabled) {
-      this.safeSetState({
-        status: EXITED
-      }, function () {
-        _this3.props.onExited(node);
-      });
-      return;
-    }
-
-    this.props.onExit(node);
-    this.safeSetState({
-      status: EXITING
-    }, function () {
-      _this3.props.onExiting(node);
-
-      _this3.onTransitionEnd(node, timeouts.exit, function () {
-        _this3.safeSetState({
-          status: EXITED
-        }, function () {
-          _this3.props.onExited(node);
-        });
-      });
-    });
-  };
-
-  _proto.cancelNextCallback = function cancelNextCallback() {
-    if (this.nextCallback !== null) {
-      this.nextCallback.cancel();
-      this.nextCallback = null;
-    }
-  };
-
-  _proto.safeSetState = function safeSetState(nextState, callback) {
-    // This shouldn't be necessary, but there are weird race conditions with
-    // setState callbacks and unmounting in testing, so always make sure that
-    // we can cancel any pending setState callbacks after we unmount.
-    callback = this.setNextCallback(callback);
-    this.setState(nextState, callback);
-  };
-
-  _proto.setNextCallback = function setNextCallback(callback) {
-    var _this4 = this;
-
-    var active = true;
-
-    this.nextCallback = function (event) {
-      if (active) {
-        active = false;
-        _this4.nextCallback = null;
-        callback(event);
-      }
-    };
-
-    this.nextCallback.cancel = function () {
-      active = false;
-    };
-
-    return this.nextCallback;
-  };
-
-  _proto.onTransitionEnd = function onTransitionEnd(node, timeout, handler) {
-    this.setNextCallback(handler);
-    var doesNotHaveTimeoutOrListener = timeout == null && !this.props.addEndListener;
-
-    if (!node || doesNotHaveTimeoutOrListener) {
-      setTimeout(this.nextCallback, 0);
-      return;
-    }
-
-    if (this.props.addEndListener) {
-      this.props.addEndListener(node, this.nextCallback);
-    }
-
-    if (timeout != null) {
-      setTimeout(this.nextCallback, timeout);
-    }
-  };
-
-  _proto.render = function render() {
-    var status = this.state.status;
-
-    if (status === UNMOUNTED) {
-      return null;
-    }
-
-    var _this$props = this.props,
-        children = _this$props.children,
-        childProps = _objectWithoutPropertiesLoose(_this$props, ["children"]); // filter props for Transtition
-
-
-    delete childProps.in;
-    delete childProps.mountOnEnter;
-    delete childProps.unmountOnExit;
-    delete childProps.appear;
-    delete childProps.enter;
-    delete childProps.exit;
-    delete childProps.timeout;
-    delete childProps.addEndListener;
-    delete childProps.onEnter;
-    delete childProps.onEntering;
-    delete childProps.onEntered;
-    delete childProps.onExit;
-    delete childProps.onExiting;
-    delete childProps.onExited;
-
-    if (typeof children === 'function') {
-      // allows for nested Transitions
-      return React__default.createElement(TransitionGroupContext.Provider, {
-        value: null
-      }, children(status, childProps));
-    }
-
-    var child = React__default.Children.only(children);
-    return (// allows for nested Transitions
-      React__default.createElement(TransitionGroupContext.Provider, {
-        value: null
-      }, React__default.cloneElement(child, childProps))
-    );
-  };
-
-  return Transition;
-}(React__default.Component);
-
-Transition.contextType = TransitionGroupContext;
-Transition.propTypes = process.env.NODE_ENV !== "production" ? {
-  /**
-   * A `function` child can be used instead of a React element. This function is
-   * called with the current transition status (`'entering'`, `'entered'`,
-   * `'exiting'`, `'exited'`), which can be used to apply context
-   * specific props to a component.
-   *
-   * ```jsx
-   * <Transition in={this.state.in} timeout={150}>
-   *   {state => (
-   *     <MyComponent className={`fade fade-${state}`} />
-   *   )}
-   * </Transition>
-   * ```
-   */
-  children: undefined([undefined, undefined]).isRequired,
-
-  /**
-   * Show the component; triggers the enter or exit states
-   */
-  in: undefined,
-
-  /**
-   * By default the child component is mounted immediately along with
-   * the parent `Transition` component. If you want to "lazy mount" the component on the
-   * first `in={true}` you can set `mountOnEnter`. After the first enter transition the component will stay
-   * mounted, even on "exited", unless you also specify `unmountOnExit`.
-   */
-  mountOnEnter: undefined,
-
-  /**
-   * By default the child component stays mounted after it reaches the `'exited'` state.
-   * Set `unmountOnExit` if you'd prefer to unmount the component after it finishes exiting.
-   */
-  unmountOnExit: undefined,
-
-  /**
-   * Normally a component is not transitioned if it is shown when the `<Transition>` component mounts.
-   * If you want to transition on the first mount set `appear` to `true`, and the
-   * component will transition in as soon as the `<Transition>` mounts.
-   *
-   * > Note: there are no specific "appear" states. `appear` only adds an additional `enter` transition.
-   */
-  appear: undefined,
-
-  /**
-   * Enable or disable enter transitions.
-   */
-  enter: undefined,
-
-  /**
-   * Enable or disable exit transitions.
-   */
-  exit: undefined,
-
-  /**
-   * The duration of the transition, in milliseconds.
-   * Required unless `addEndListener` is provided.
-   *
-   * You may specify a single timeout for all transitions:
-   *
-   * ```jsx
-   * timeout={500}
-   * ```
-   *
-   * or individually:
-   *
-   * ```jsx
-   * timeout={{
-   *  appear: 500,
-   *  enter: 300,
-   *  exit: 500,
-   * }}
-   * ```
-   *
-   * - `appear` defaults to the value of `enter`
-   * - `enter` defaults to `0`
-   * - `exit` defaults to `0`
-   *
-   * @type {number | { enter?: number, exit?: number, appear?: number }}
-   */
-  timeout: function timeout(props) {
-    var pt = timeoutsShape;
-    if (!props.addEndListener) pt = pt.isRequired;
-
-    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-
-    return pt.apply(void 0, [props].concat(args));
-  },
-
-  /**
-   * Add a custom transition end trigger. Called with the transitioning
-   * DOM node and a `done` callback. Allows for more fine grained transition end
-   * logic. **Note:** Timeouts are still used as a fallback if provided.
-   *
-   * ```jsx
-   * addEndListener={(node, done) => {
-   *   // use the css transitionend event to mark the finish of a transition
-   *   node.addEventListener('transitionend', done, false);
-   * }}
-   * ```
-   */
-  addEndListener: undefined,
-
-  /**
-   * Callback fired before the "entering" status is applied. An extra parameter
-   * `isAppearing` is supplied to indicate if the enter stage is occurring on the initial mount
-   *
-   * @type Function(node: HtmlElement, isAppearing: bool) -> void
-   */
-  onEnter: undefined,
-
-  /**
-   * Callback fired after the "entering" status is applied. An extra parameter
-   * `isAppearing` is supplied to indicate if the enter stage is occurring on the initial mount
-   *
-   * @type Function(node: HtmlElement, isAppearing: bool)
-   */
-  onEntering: undefined,
-
-  /**
-   * Callback fired after the "entered" status is applied. An extra parameter
-   * `isAppearing` is supplied to indicate if the enter stage is occurring on the initial mount
-   *
-   * @type Function(node: HtmlElement, isAppearing: bool) -> void
-   */
-  onEntered: undefined,
-
-  /**
-   * Callback fired before the "exiting" status is applied.
-   *
-   * @type Function(node: HtmlElement) -> void
-   */
-  onExit: undefined,
-
-  /**
-   * Callback fired after the "exiting" status is applied.
-   *
-   * @type Function(node: HtmlElement) -> void
-   */
-  onExiting: undefined,
-
-  /**
-   * Callback fired after the "exited" status is applied.
-   *
-   * @type Function(node: HtmlElement) -> void
-   */
-  onExited: undefined // Name the function so it is clearer in the documentation
-
-} : {};
-
-function noop$2() {}
-
-Transition.defaultProps = {
-  in: false,
-  mountOnEnter: false,
-  unmountOnExit: false,
-  appear: false,
-  enter: true,
-  exit: true,
-  onEnter: noop$2,
-  onEntering: noop$2,
-  onEntered: noop$2,
-  onExit: noop$2,
-  onExiting: noop$2,
-  onExited: noop$2
-};
-Transition.UNMOUNTED = 0;
-Transition.EXITED = 1;
-Transition.ENTERING = 2;
-Transition.ENTERED = 3;
-Transition.EXITING = 4;
+AccordionHeader.propTypes = propTypes$15;
+AccordionHeader.defaultProps = defaultProps$11;
 
 var _transitionStatusToCl;
 var TransitionTimeouts$1 = TransitionTimeouts,
@@ -12808,7 +12319,7 @@ var TransitionTimeouts$1 = TransitionTimeouts,
     pick$1 = pick,
     omit$1 = omit;
 
-var propTypes$15 = _objectSpread2({}, Transition.propTypes, {
+var propTypes$16 = _objectSpread2({}, Transition.propTypes, {
   // eslint-disable-line react/forbid-foreign-prop-types
   children: propTypes.oneOfType([propTypes.arrayOf(propTypes.node), propTypes.node]),
   tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
@@ -12817,7 +12328,7 @@ var propTypes$15 = _objectSpread2({}, Transition.propTypes, {
   onToggle: propTypes.func
 });
 
-var defaultProps$11 = _objectSpread2({}, Transition.defaultProps, {
+var defaultProps$12 = _objectSpread2({}, Transition.defaultProps, {
   timeout: TransitionTimeouts$1.Collapse,
   tag: 'div'
 });
@@ -12931,10 +12442,10 @@ function (_Component) {
 
   return AccordionBody;
 }(React.Component);
-AccordionBody.propTypes = propTypes$15;
-AccordionBody.defaultProps = defaultProps$11;
+AccordionBody.propTypes = propTypes$16;
+AccordionBody.defaultProps = defaultProps$12;
 
-var propTypes$16 = {
+var propTypes$17 = {
   color: propTypes.string,
   pill: propTypes.bool,
   tag: propTypes.string,
@@ -12942,7 +12453,7 @@ var propTypes$16 = {
   cssModule: propTypes.object,
   className: propTypes.string
 };
-var defaultProps$12 = {
+var defaultProps$13 = {
   color: 'secondary',
   pill: false,
   tag: 'span'
@@ -12953,8 +12464,8 @@ var Badge$1 = function Badge$1(props) {
   return React__default.createElement(Badge, props, children);
 };
 
-Badge$1.propTypes = propTypes$16;
-Badge$1.defaultProps = defaultProps$12;
+Badge$1.propTypes = propTypes$17;
+Badge$1.defaultProps = defaultProps$13;
 
 var _transitionStatusToCl$1;
 var mapToCssModules$1 = mapToCssModules,
@@ -12964,7 +12475,7 @@ var mapToCssModules$1 = mapToCssModules,
     TransitionPropTypeKeys$2 = TransitionPropTypeKeys,
     TransitionStatuses$2 = TransitionStatuses;
 
-var propTypes$17 = _objectSpread2({}, Transition.propTypes, {
+var propTypes$18 = _objectSpread2({}, Transition.propTypes, {
   // eslint-disable-line react/forbid-foreign-prop-types
   isOpen: propTypes.bool,
   children: propTypes.oneOfType([propTypes.arrayOf(propTypes.node), propTypes.node]),
@@ -12974,7 +12485,7 @@ var propTypes$17 = _objectSpread2({}, Transition.propTypes, {
   cssModule: propTypes.object
 });
 
-var defaultProps$13 = _objectSpread2({}, Transition.defaultProps, {
+var defaultProps$14 = _objectSpread2({}, Transition.defaultProps, {
   isOpen: false,
   appear: false,
   enter: true,
@@ -13101,13 +12612,174 @@ function (_Component) {
   return Collapse;
 }(React.Component);
 
-Collapse.propTypes = propTypes$17;
-Collapse.defaultProps = defaultProps$13;
+Collapse.propTypes = propTypes$18;
+Collapse.defaultProps = defaultProps$14;
+
+var FormGroup$1 =
+/*#__PURE__*/
+function (_Component) {
+  _inheritsLoose$2(FormGroup$1, _Component);
+
+  function FormGroup$1() {
+    var _this;
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _Component.call.apply(_Component, [this].concat(args)) || this;
+
+    _defineProperty$2(_assertThisInitialized$2(_this), "state", {
+      active: _this.props.active || false,
+      value: null
+    });
+
+    _defineProperty$2(_assertThisInitialized$2(_this), "onFocus", function (callback, active) {
+      if (active === void 0) {
+        active = true;
+      }
+
+      _this.setState({
+        active: active
+      }, function () {
+        if (callback) {
+          callback();
+        }
+      });
+    });
+
+    _defineProperty$2(_assertThisInitialized$2(_this), "onBlur", function (callback, active) {
+      if (active === void 0) {
+        active = false;
+      }
+
+      _this.setState({
+        active: active
+      }, function () {
+        if (callback) {
+          callback();
+        }
+      });
+    });
+
+    _defineProperty$2(_assertThisInitialized$2(_this), "onChange", function (callback, event) {
+      var value;
+      var target;
+
+      if (event && event.persist) {
+        // SyntheticEvent
+        event.persist();
+        target = {
+          event: event
+        };
+        value = {
+          target: target
+        };
+      } else if (event.label) {
+        // Autocomplete
+        value = event.label;
+      }
+
+      _this.setState({
+        value: value
+      }, function () {
+        if (callback) {
+          callback(event);
+        }
+      });
+    });
+
+    return _this;
+  }
+
+  var _proto = FormGroup$1.prototype;
+
+  _proto.render = function render() {
+    var _this2 = this;
+
+    var _this$state = this.state,
+        active = _this$state.active,
+        value = _this$state.value;
+
+    var _this$props = this.props,
+        children = _this$props.children,
+        className = _this$props.className,
+        col = _this$props.col,
+        rest = _objectWithoutPropertiesLoose$2(_this$props, ["children", "className", "col"]);
+
+    var hasValue = !!value;
+    var classNames = [className, active ? 'active' : '', col ? 'col' : ''].join(' ');
+    return React__default.createElement(FormGroup, _extends$2({}, rest, {
+      className: classNames
+    }), function () {
+      return React__default.Children.map(children, function (child) {
+        if (child === null) return;
+        var _child$props = child.props,
+            _onFocus = _child$props.onFocus,
+            _onBlur = _child$props.onBlur,
+            _onChange = _child$props.onChange,
+            className = _child$props.className;
+
+        switch (child.type) {
+          case Input:
+            var isLabelActive = null;
+            return React__default.cloneElement(child, _objectSpread2({}, child.props, {
+              onFocus: function onFocus() {
+                _this2.onFocus(_onFocus);
+              },
+              onBlur: function onBlur() {
+                _this2.onBlur(_onBlur);
+              },
+              onChange: function onChange(e) {
+                _this2.onChange(_onChange, e);
+              }
+            }, isLabelActive));
+
+          case Label:
+            var hasChildValue = false;
+            React__default.Children.toArray(children).filter(function (child) {
+              switch (child.type) {
+                case Input:
+                  return true;
+
+                default:
+                  return false;
+              }
+            }).map(function (child) {
+              if (child.props.value) {
+                hasChildValue = true;
+              }
+
+              return false;
+            });
+            classNames = hasValue || hasChildValue ? [className, 'active'].join(' ') : className;
+            return React__default.cloneElement(child, _objectSpread2({}, child.props, {
+              className: classNames
+            }));
+
+          default:
+            return child;
+        }
+      });
+    }());
+  };
+
+  return FormGroup$1;
+}(React.Component);
+
+FormGroup$1.defaultProps = FormGroup.defaultProps;
+FormGroup$1.propTypes = FormGroup.propTypes;
+
+function Hero(props) {
+  return React__default.createElement(Jumbotron, props);
+}
+Hero.defaultProps = Jumbotron.defaultProps;
+Hero.propTypes = Jumbotron.propTypes;
 
 var mapToCssModules$2 = mapToCssModules,
     deprecated$1 = deprecated,
     warnOnce$1 = warnOnce;
-var propTypes$18 = {
+var propTypes$19 = {
   children: propTypes.node,
   type: propTypes.string,
   size: propTypes.string,
@@ -13128,11 +12800,11 @@ var propTypes$18 = {
   className: propTypes.string,
   cssModule: propTypes.object
 };
-var defaultProps$14 = {
+var defaultProps$15 = {
   type: "text"
 };
 
-var Input =
+var Input$1 =
 /*#__PURE__*/
 function (_React$Component) {
   _inheritsLoose$2(Input, _React$Component);
@@ -13344,241 +13016,16 @@ function (_React$Component) {
   return Input;
 }(React__default.Component);
 
-Input.propTypes = propTypes$18;
-Input.defaultProps = defaultProps$14;
+Input$1.propTypes = propTypes$19;
+Input$1.defaultProps = defaultProps$15;
 
-var PasswordInput =
-/*#__PURE__*/
-function (_Component) {
-  _inheritsLoose$2(PasswordInput, _Component);
-
-  function PasswordInput() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _Component.call.apply(_Component, [this].concat(args)) || this;
-
-    _defineProperty$2(_assertThisInitialized$2(_this), "state", {
-      showPassword: false
-    });
-
-    _defineProperty$2(_assertThisInitialized$2(_this), "onPasswordToggle", function () {
-      _this.setState(function (prevState) {
-        return {
-          showPassword: !prevState.showPassword
-        };
-      });
-    });
-
-    return _this;
-  }
-
-  var _proto = PasswordInput.prototype;
-
-  _proto.render = function render() {
-    var showPassword = this.state.showPassword;
-
-    var _this$props = this.props,
-        type = _this$props.type,
-        rest = _objectWithoutPropertiesLoose$2(_this$props, ["type"]);
-
-    var classNames = ['btn-eye', showPassword ? 'eye-off' : 'eye-on'].join(' ');
-    return React__default.createElement(React.Fragment, null, React__default.createElement("span", {
-      className: classNames,
-      onClick: this.onPasswordToggle
-    }), React__default.createElement(Input, _extends$2({}, rest, {
-      type: showPassword ? 'text' : type
-    })));
-  };
-
-  return PasswordInput;
-}(React.Component);
-
-_defineProperty$2(PasswordInput, "defaultProps", {
-  type: 'password'
-});
-
-PasswordInput.propTypes = _objectSpread2({}, Input.propTypes);
-
-var FormGroup$1 =
-/*#__PURE__*/
-function (_Component) {
-  _inheritsLoose$2(FormGroup$1, _Component);
-
-  function FormGroup$1() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _Component.call.apply(_Component, [this].concat(args)) || this;
-
-    _defineProperty$2(_assertThisInitialized$2(_this), "state", {
-      active: _this.props.active || false,
-      value: null
-    });
-
-    _defineProperty$2(_assertThisInitialized$2(_this), "onFocus", function (callback, active) {
-      if (active === void 0) {
-        active = true;
-      }
-
-      _this.setState({
-        active: active
-      }, function () {
-        if (callback) {
-          callback();
-        }
-      });
-    });
-
-    _defineProperty$2(_assertThisInitialized$2(_this), "onBlur", function (callback, active) {
-      if (active === void 0) {
-        active = false;
-      }
-
-      _this.setState({
-        active: active
-      }, function () {
-        if (callback) {
-          callback();
-        }
-      });
-    });
-
-    _defineProperty$2(_assertThisInitialized$2(_this), "onChange", function (callback, event) {
-      var value;
-      var target;
-
-      if (event && event.persist) {
-        // SyntheticEvent
-        event.persist();
-        target = {
-          event: event
-        };
-        value = {
-          target: target
-        };
-      } else if (event.label) {
-        // Autocomplete
-        value = event.label;
-      }
-
-      _this.setState({
-        value: value
-      }, function () {
-        if (callback) {
-          callback(event);
-        }
-      });
-    });
-
-    return _this;
-  }
-
-  var _proto = FormGroup$1.prototype;
-
-  _proto.render = function render() {
-    var _this2 = this;
-
-    var _this$state = this.state,
-        active = _this$state.active,
-        value = _this$state.value;
-
-    var _this$props = this.props,
-        children = _this$props.children,
-        className = _this$props.className,
-        col = _this$props.col,
-        rest = _objectWithoutPropertiesLoose$2(_this$props, ["children", "className", "col"]);
-
-    var hasValue = !!value;
-    var classNames = [className, active ? 'active' : '', col ? 'col' : ''].join(' ');
-    return React__default.createElement(FormGroup, _extends$2({}, rest, {
-      className: classNames
-    }), function () {
-      return React__default.Children.map(children, function (child) {
-        if (child === null) return;
-        var _child$props = child.props,
-            _onFocus = _child$props.onFocus,
-            _onBlur = _child$props.onBlur,
-            _onChange = _child$props.onChange,
-            className = _child$props.className;
-
-        switch (child.type) {
-          case Input:
-          case PasswordInput:
-            //case Autocomplete:
-            var isLabelActive = null; //if (child.type === Autocomplete) {
-            //  isLabelActive = {
-            //    isLabelActive: hasValue,
-            //  };
-            //}
-
-            return React__default.cloneElement(child, _objectSpread2({}, child.props, {
-              onFocus: function onFocus() {
-                _this2.onFocus(_onFocus);
-              },
-              onBlur: function onBlur() {
-                _this2.onBlur(_onBlur);
-              },
-              onChange: function onChange(e) {
-                _this2.onChange(_onChange, e);
-              }
-            }, isLabelActive));
-
-          case Label:
-            var hasChildValue = false;
-            React__default.Children.toArray(children).filter(function (child) {
-              switch (child.type) {
-                case Input:
-                case PasswordInput:
-                  return true;
-
-                default:
-                  return false;
-              }
-            }).map(function (child) {
-              if (child.props.value) {
-                hasChildValue = true;
-              }
-
-              return false;
-            });
-            classNames = hasValue || hasChildValue ? [className, 'active'].join(' ') : className;
-            return React__default.cloneElement(child, _objectSpread2({}, child.props, {
-              className: classNames
-            }));
-
-          default:
-            return child;
-        }
-      });
-    }());
-  };
-
-  return FormGroup$1;
-}(React.Component);
-
-FormGroup$1.defaultProps = FormGroup.defaultProps;
-FormGroup$1.propTypes = FormGroup.propTypes;
-
-function Hero(props) {
-  return React__default.createElement(Jumbotron, props);
-}
-Hero.defaultProps = Jumbotron.defaultProps;
-Hero.propTypes = Jumbotron.propTypes;
-
-var propTypes$19 = {
+var propTypes$1a = {
   tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
   className: propTypes.string,
   multiline: propTypes.bool,
   sublist: propTypes.bool
 };
-var defaultProps$15 = {
+var defaultProps$16 = {
   tag: 'div'
 };
 
@@ -13605,10 +13052,10 @@ var LinkList = function LinkList(props) {
   })));
 };
 
-LinkList.propTypes = propTypes$19;
-LinkList.defaultProps = defaultProps$15;
+LinkList.propTypes = propTypes$1a;
+LinkList.defaultProps = defaultProps$16;
 
-var propTypes$1a = {
+var propTypes$1b = {
   active: propTypes.bool,
   disabled: propTypes.bool,
   header: propTypes.bool,
@@ -13618,7 +13065,7 @@ var propTypes$1a = {
   href: propTypes.string,
   size: propTypes.string
 };
-var defaultProps$16 = {
+var defaultProps$17 = {
   tag: 'a'
 };
 
@@ -13667,8 +13114,8 @@ var LinkListItem = function LinkListItem(props) {
   }());
 };
 
-LinkListItem.propTypes = propTypes$1a;
-LinkListItem.defaultProps = defaultProps$16;
+LinkListItem.propTypes = propTypes$1b;
+LinkListItem.defaultProps = defaultProps$17;
 
 var _transitionStatusToCl$2;
 var TransitionTimeouts$3 = TransitionTimeouts,
@@ -13677,7 +13124,7 @@ var TransitionTimeouts$3 = TransitionTimeouts,
     pick$3 = pick,
     omit$3 = omit;
 
-var propTypes$1b = _objectSpread2({}, Transition.propTypes, {
+var propTypes$1c = _objectSpread2({}, Transition.propTypes, {
   // eslint-disable-line react/forbid-foreign-prop-types
   children: propTypes.oneOfType([propTypes.arrayOf(propTypes.node), propTypes.node]),
   tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
@@ -13686,7 +13133,7 @@ var propTypes$1b = _objectSpread2({}, Transition.propTypes, {
   isOpen: propTypes.bool
 });
 
-var defaultProps$17 = _objectSpread2({}, Transition.defaultProps, {
+var defaultProps$18 = _objectSpread2({}, Transition.defaultProps, {
   timeout: TransitionTimeouts$3.Collapse,
   tag: 'div'
 });
@@ -13757,16 +13204,16 @@ function (_Component) {
 
   return Offcanvas;
 }(React.Component);
-Offcanvas.propTypes = propTypes$1b;
-Offcanvas.defaultProps = defaultProps$17;
+Offcanvas.propTypes = propTypes$1c;
+Offcanvas.defaultProps = defaultProps$18;
 
-var propTypes$1c = {
+var propTypes$1d = {
   children: propTypes.node,
   className: propTypes.string,
   tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
   'aria-label': propTypes.string
 };
-var defaultProps$18 = {
+var defaultProps$19 = {
   tag: 'nav',
   'aria-label': 'pagination'
 };
@@ -13783,15 +13230,15 @@ var Pager = function Pager(props) {
   }, children);
 };
 
-Pager.propTypes = propTypes$1c;
-Pager.defaultProps = defaultProps$18;
+Pager.propTypes = propTypes$1d;
+Pager.defaultProps = defaultProps$19;
 
-var propTypes$1d = {
+var propTypes$1e = {
   className: propTypes.string,
   size: propTypes.string,
   tag: propTypes.oneOfType([propTypes.func, propTypes.string])
 };
-var defaultProps$19 = {
+var defaultProps$1a = {
   tag: 'ul'
 };
 
@@ -13809,8 +13256,64 @@ var PagerList = function PagerList(props) {
   }));
 };
 
-PagerList.propTypes = propTypes$1d;
-PagerList.defaultProps = defaultProps$19;
+PagerList.propTypes = propTypes$1e;
+PagerList.defaultProps = defaultProps$1a;
+
+var PasswordInput =
+/*#__PURE__*/
+function (_Component) {
+  _inheritsLoose$2(PasswordInput, _Component);
+
+  function PasswordInput() {
+    var _this;
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _Component.call.apply(_Component, [this].concat(args)) || this;
+
+    _defineProperty$2(_assertThisInitialized$2(_this), "state", {
+      showPassword: false
+    });
+
+    _defineProperty$2(_assertThisInitialized$2(_this), "onPasswordToggle", function () {
+      _this.setState(function (prevState) {
+        return {
+          showPassword: !prevState.showPassword
+        };
+      });
+    });
+
+    return _this;
+  }
+
+  var _proto = PasswordInput.prototype;
+
+  _proto.render = function render() {
+    var showPassword = this.state.showPassword;
+
+    var _this$props = this.props,
+        type = _this$props.type,
+        rest = _objectWithoutPropertiesLoose$2(_this$props, ["type"]);
+
+    var classNames = ['btn-eye', showPassword ? 'eye-off' : 'eye-on'].join(' ');
+    return React__default.createElement(React.Fragment, null, React__default.createElement("span", {
+      className: classNames,
+      onClick: this.onPasswordToggle
+    }), React__default.createElement(Input$1, _extends$2({}, rest, {
+      type: showPassword ? 'text' : type
+    })));
+  };
+
+  return PasswordInput;
+}(React.Component);
+
+_defineProperty$2(PasswordInput, "defaultProps", {
+  type: 'password'
+});
+
+PasswordInput.propTypes = _objectSpread2({}, Input$1.propTypes);
 
 var defaultSteps = [{
   score: 0,
@@ -13897,11 +13400,11 @@ PasswordMeter.propTypes = {
   }))
 };
 
-var propTypes$1e = {
+var propTypes$1f = {
   tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
   className: propTypes.string
 };
-var defaultProps$1a = {
+var defaultProps$1b = {
   tag: 'div'
 };
 
@@ -13916,14 +13419,14 @@ var Skiplink = function Skiplink(props) {
   }, attributes));
 };
 
-Skiplink.propTypes = propTypes$1e;
-Skiplink.defaultProps = defaultProps$1a;
+Skiplink.propTypes = propTypes$1f;
+Skiplink.defaultProps = defaultProps$1b;
 
-var propTypes$1f = {
+var propTypes$1g = {
   tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
   className: propTypes.string
 };
-var defaultProps$1b = {
+var defaultProps$1c = {
   tag: 'a'
 };
 
@@ -13938,8 +13441,8 @@ var SkiplinkItem = function SkiplinkItem(props) {
   }, attributes));
 };
 
-SkiplinkItem.propTypes = propTypes$1f;
-SkiplinkItem.defaultProps = defaultProps$1b;
+SkiplinkItem.propTypes = propTypes$1g;
+SkiplinkItem.defaultProps = defaultProps$1c;
 
 var Toggle =
 /*#__PURE__*/
@@ -13975,7 +13478,7 @@ Toggle.propTypes = _objectSpread2({
   label: propTypes.oneOfType([propTypes.string, propTypes.element])
 }, Input.propTypes);
 
-var propTypes$1g = {
+var propTypes$1h = {
   tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
   className: propTypes.string,
   secondary: propTypes.bool,
@@ -13983,7 +13486,7 @@ var propTypes$1g = {
   right: propTypes.bool,
   dark: propTypes.bool
 };
-var defaultProps$1c = {
+var defaultProps$1d = {
   tag: 'div'
 };
 
@@ -14012,8 +13515,8 @@ var Sidebar = function Sidebar(props) {
   })));
 };
 
-Sidebar.propTypes = propTypes$1g;
-Sidebar.defaultProps = defaultProps$1c;
+Sidebar.propTypes = propTypes$1h;
+Sidebar.defaultProps = defaultProps$1d;
 
 webfontloader.load({
   custom: {
@@ -14063,7 +13566,7 @@ exports.FormFeedback = FormFeedback;
 exports.FormGroup = FormGroup$1;
 exports.FormText = FormText;
 exports.Hero = Hero;
-exports.Input = Input;
+exports.Input = Input$1;
 exports.InputGroup = InputGroup;
 exports.InputGroupAddon = InputGroupAddon;
 exports.InputGroupButtonDropdown = InputGroupButtonDropdown;

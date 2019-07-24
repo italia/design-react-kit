@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 
 import { FormGroup as ReactStrapFormGroup } from 'reactstrap';
-import { Input, Label } from '../..';
-
-import PasswordInput from '../PasswordInput/PasswordInput';
-//import Autocomplete from '../Autocomplete/Autocomplete';
+import { Input, Label } from 'reactstrap';
 
 class FormGroup extends Component {
   state = {
@@ -91,14 +88,7 @@ class FormGroup extends Component {
 
           switch (child.type) {
             case Input:
-            case PasswordInput:
-            //case Autocomplete:
               let isLabelActive = null;
-              //if (child.type === Autocomplete) {
-              //  isLabelActive = {
-              //    isLabelActive: hasValue,
-              //  };
-              //}
 
               return React.cloneElement(child, {
                 ...child.props,
@@ -120,7 +110,6 @@ class FormGroup extends Component {
                 .filter((child) => {
                   switch (child.type) {
                     case Input:
-                    case PasswordInput:
                       return true;
                     default:
                       return false;

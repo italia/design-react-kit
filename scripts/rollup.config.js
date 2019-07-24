@@ -30,10 +30,10 @@ export default [
     plugins: [
       nodeResolve(),
       commonjs({
-        include: "node_modules/**"
+        include: /node_modules/,
       }),
       babel({
-        exclude: "node_modules/**",
+        exclude: /node_modules/,
         presets: [
             ["@babel/preset-env", {
                 "loose": true,
