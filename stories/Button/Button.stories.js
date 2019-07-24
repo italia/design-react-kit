@@ -12,6 +12,8 @@ import EsempiInterattivi from './docs/EsempiInterattivi.md'
 import ButtonIcon from './docs/ButtonIcon.md'
 import DarkBackground from './docs/DarkBackground.md'
 
+import { Button } from '../../src'
+
 const colors = [
   'Primary',
   'Secondary',
@@ -26,19 +28,10 @@ const EsempiComponent = () => (
   <div>
     {colors.map(color => (
       <div key={color} className='mb-2'>
-        <button
-          type='button'
-          className={`btn btn-${color.toLowerCase()}`}
-        >
-          {color}
-        </button>
-        {' '}
-        <button
-          type='button'
-          className={`btn btn-outline-${color.toLowerCase()}`}
-        >
-          {color}
-        </button>
+        <Button color={color.toLowerCase()}>{color}</Button>{' '}
+        <Button outline color={color.toLowerCase()}>
+          {color} Outline
+        </Button>
       </div>
     ))}
   </div>
@@ -48,19 +41,10 @@ const DarkBackgroundComponent = () => (
   <div className='bg-dark py-1'>
     {colors.map(color => (
       <div key={color} className='mb-2'>
-        <button
-          type='button'
-          className={`btn btn-${color.toLowerCase()}`}
-        >
-          {color}
-        </button>
-        {' '}
-        <button
-          type='button'
-          className={`btn btn-outline-${color.toLowerCase()}`}
-        >
-          {color}
-        </button>
+        <Button color={color.toLowerCase()}>{color}</Button>{' '}
+        <Button outline color={color.toLowerCase()}>
+          {color} Outline
+        </Button>
       </div>
     ))}
   </div>
@@ -69,71 +53,63 @@ const DarkBackgroundComponent = () => (
 const DimensioniComponent = () => (
   <section>
     <div>
-      <button type='button' className='btn btn-primary btn-lg'>
+      <Button color='primary' size='lg'>
                 Primary Large
-      </button>
-      {' '}
-      <button type='button' className='btn btn-secondary btn-lg'>
+      </Button>{' '}
+      <Button color='secondary' size='lg'>
                 Secondary Large
-      </button>
+      </Button>{' '}
       <div className='mt-3' />
-      <button type='button' className='btn btn-primary btn-sm'>
+      <Button color='primary' size='sm'>
                 Primary Small
-      </button>
-      {' '}
-      <button type='button' className='btn btn-secondary btn-sm'>
+      </Button>{' '}
+      <Button color='secondary' size='sm'>
                 Secondary Small
-      </button>
+      </Button>{' '}
       <div className='mt-3' />
-      <button type='button' className='btn btn-primary btn-xs'>
+      <Button color='primary' size='xs'>
                 Primary Mini
-      </button>
-      {' '}
-      <button type='button' className='btn btn-secondary btn-xs'>
+      </Button>{' '}
+      <Button color='secondary' size='xs'>
                 Secondary Mini
-      </button>
+      </Button>{' '}
       <div className='mt-3' />
-      <button type='button' className='btn btn-primary btn-lg btn-block'>
+      <Button color='primary' block>
                 Primary Block
-      </button>
-      {' '}
-      <button type='button'
-        className='btn btn-secondary btn-lg btn-block'>
+      </Button>{' '}
+      <Button color='secondary' block>
                 Secondary Block
-      </button>
+      </Button>{' '}
     </div>
   </section>
 )
 
 const ButtonIconComponent = () => (
   <div>
-    <button className='btn btn-success btn-lg btn-icon'>
+    <Button color='success' size='lg' className='btn-icon'>
       <svg className='icon icon-white'>
         <use xlinkHref='/svg/sprite.svg#it-star-full' />
       </svg>
-      <span>Icon Button Lg</span>
-    </button>
-    {' '}
-    <button className='btn btn-primary btn-icon'>
+            Icon Button Lg
+    </Button>{' '}
+    <Button color='primary' className='btn-icon'>
       <svg className='icon icon-white'>
         <use xlinkHref='/svg/sprite.svg#it-star-full' />
       </svg>
-      <span>Icon Button</span>
-    </button>
-    {' '}
-    <button className='btn btn-danger btn-sm btn-icon'>
+            Icon Button
+    </Button>{' '}
+    <Button color='danger' size='sm' className='btn-icon'>
       <svg className='icon icon-secondary'>
         <use xlinkHref='/svg/sprite.svg#it-star-full' />
       </svg>
-      <span>Icon Button Sm</span>
-    </button>
-    {' '}
-    <button className='btn btn-info btn-xs btn-icon'>
+            Icon Button Sm
+    </Button>{' '}
+    <Button color='info' size='xs' className='btn-icon'>
       <svg className='icon icon-danger'>
         <use xlinkHref='/svg/sprite.svg#it-star-full' />
       </svg>
-      <span>Icon Button Xs</span>
-    </button>
+            Icon Button Xs
+    </Button>
   </div>
 )
 
@@ -141,13 +117,7 @@ const StatoAttivoComponent = () => (
   <div>
     {colors.map(color => (
       <span key={color}>
-        <button
-          type='button'
-          className={`btn btn-${color.toLowerCase()}`}
-        >
-          {color}
-        </button>
-        {' '}
+        <Button color={color.toLowerCase()}>{color}</Button>{' '}
       </span>
     ))}
   </div>
@@ -157,20 +127,16 @@ const StatoDisabilitatoComponent = () => (
   <div>
     {colors.map(color => (
       <span key={color}>
-        <button
-          type='button'
-          className={`btn btn-${color.toLowerCase()} disabled`}
-        >
+        <Button color={color.toLowerCase()} disabled>
           {color}
-        </button>
-        {' '}
+        </Button>{' '}
       </span>
     ))}
   </div>
 )
 
 const EsempiInterattiviComponent = () => {
-  const dimensions = ['btn-xs', 'btn-sm', 'btn-lg']
+  const dimensions = [' ', 'xs', 'sm', 'lg']
   const color = select('Variazioni', colors, colors[0])
   const dimension = select('Dimensioni', dimensions, dimensions[0])
   const block = boolean('Block', false)
@@ -178,42 +144,63 @@ const EsempiInterattiviComponent = () => {
   const label = text('Label', '')
 
   return (
-    <button
-      type='button'
-      className={`btn btn-${color.toLowerCase()} ${dimension} ${
-        disabled ? 'disabled' : ' '
-      } ${block ? 'btn-block' : ''}`}
+    <Button
+      color={color.toLowerCase()}
+      disabled={disabled}
+      block={block}
+      size={dimension}
     >
       {label} {color} {dimension} {block ? 'block' : ''}{' '}
       {disabled ? 'disabled' : ' '}
-    </button>
+    </Button>
   )
 }
 
 storiesOf('Componenti/Button', module)
   .addDecorator(withA11y)
-  .add('Esempi', withInfo({
-    text: Esempi
-  })(EsempiComponent))
-  .add('Sfondo scuro', withInfo({
-    text: DarkBackground
-  })(DarkBackgroundComponent))
-  .add('Varianti di dimensione', withInfo({
-    text: Dimensioni
-  })(DimensioniComponent))
-  .add('Bottoni con icona', withInfo({
-    text: ButtonIcon
-  })(ButtonIconComponent))
-  .add('Stato Attivo', withInfo({
-    text: StatoAttivo
-  })(StatoAttivoComponent))
-  .add('Stato Disabilitato', withInfo({
-    text: StatoDisabilitato
-  })(StatoDisabilitatoComponent))
+  .add(
+    'Esempi',
+    withInfo({
+      text: Esempi
+    })(EsempiComponent)
+  )
+  .add(
+    'Sfondo scuro',
+    withInfo({
+      text: DarkBackground
+    })(DarkBackgroundComponent)
+  )
+  .add(
+    'Varianti di dimensione',
+    withInfo({
+      text: Dimensioni
+    })(DimensioniComponent)
+  )
+  .add(
+    'Bottoni con icona',
+    withInfo({
+      text: ButtonIcon
+    })(ButtonIconComponent)
+  )
+  .add(
+    'Stato Attivo',
+    withInfo({
+      text: StatoAttivo
+    })(StatoAttivoComponent)
+  )
+  .add(
+    'Stato Disabilitato',
+    withInfo({
+      text: StatoDisabilitato
+    })(StatoDisabilitatoComponent)
+  )
 
 storiesOf('Componenti/Button', module)
   .addDecorator(withA11y)
   .addDecorator(withKnobs)
-  .add('Esempi interattivi', withInfo({
-    text: EsempiInterattivi
-  })(EsempiInterattiviComponent))
+  .add(
+    'Esempi interattivi',
+    withInfo({
+      text: EsempiInterattivi
+    })(EsempiInterattiviComponent)
+  )
