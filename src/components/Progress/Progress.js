@@ -9,17 +9,15 @@ const propTypes = {
     label: PropTypes.string,
     minValue: PropTypes.number,
     maxValue: PropTypes.number,
-    role: PropTypes.string,
     intermediate: PropTypes.bool,
-    color: PropTypes.string
+    color: PropTypes.string,
+    spinner: PropTypes.bool
 };
 
 const defaultProps = {
     tag: "div",
     role: "progressbar",
-    minValue: "0",
-    maxValue: "100",
-    intermediate: false,
+    intermediate: false
 };
 
 class Progress extends React.Component {
@@ -27,13 +25,13 @@ class Progress extends React.Component {
         const {
             className,
             tag: Tag,
-            role,
             value,
             label,
             minValue,
             maxValue,
             intermediate,
             color,
+            spinner,
             ...attributes
         } = this.props;
         const wrapperClasses = classNames("progress-bar-wrapper");
@@ -48,6 +46,12 @@ class Progress extends React.Component {
             "progress-bar",
             color ? `bg-${this.props.color}` : false
         );
+        const spinnerWrapperClasses = classNames();
+        const spinnerClasses = classNames(className, "progress-spinner");
+
+        if (spinner) {
+            return <Tag />;
+        }
 
         if (label && value) {
             return (
@@ -63,8 +67,8 @@ class Progress extends React.Component {
                             role={this.props.role}
                             style={{ width: this.props.value + "%" }}
                             aria-valuenow={this.props.value}
-                            aria-valuemin={this.props.minValue}
-                            aria-valuemax={this.props.maxValue}
+                            aria-valuemin="0"
+                            aria-valuemax="100"
                         />
                     </Tag>
                 </Tag>
@@ -82,8 +86,8 @@ class Progress extends React.Component {
                     role={this.props.role}
                     style={{ width: this.props.value + "%" }}
                     aria-valuenow={this.props.value}
-                    aria-valuemin={this.props.minValue}
-                    aria-valuemax={this.props.maxValue}
+                    aria-valuemin="0"
+                    aria-valuemax="100"
                 />
             </Tag>
         );
