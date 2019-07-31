@@ -25,8 +25,6 @@ class Progress extends React.Component {
             tag: Tag,
             value,
             label,
-            minValue,
-            maxValue,
             intermediate,
             color,
             // spinner,
@@ -62,7 +60,7 @@ class Progress extends React.Component {
                         <div
                             {...attributes}
                             className={classes}
-                            role={this.props.role}
+                            role="progressbar"
                             style={{ width: this.props.value + "%" }}
                             aria-valuenow={this.props.value}
                             aria-valuemin="0"
@@ -81,7 +79,7 @@ class Progress extends React.Component {
                 <div
                     {...attributes}
                     className={classes}
-                    role={this.props.role}
+                    role="progressbar"
                     style={{ width: this.props.value + "%" }}
                     aria-valuenow={this.props.value}
                     aria-valuemin="0"
