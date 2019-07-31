@@ -43,14 +43,14 @@ class Spinner extends React.Component {
         <Tag className={wrapperClasses}>
           <div className={innerClasses} />
           <div className={innerClasses} />
-          <Tag {...attributes} className={classes} />
+          <Tag {...attributes} className={classes}>Caricamento...</Tag>
         </Tag>
       )
     }
 
     return (
       <Tag className={wrapperClasses}>
-        <Tag {...attributes} className={classes} />
+        <Tag {...attributes} className={classes}>Caricamento...</Tag>
       </Tag>
     )
   }
