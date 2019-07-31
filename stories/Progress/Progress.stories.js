@@ -4,14 +4,14 @@ import { withKnobs, number, text, select } from "@storybook/addon-knobs/react";
 import { withA11y } from "@storybook/addon-a11y";
 import { withInfo } from "@storybook/addon-info";
 
-import { Progress, Button } from "../../src";
+import { Progress, Button, Spinner } from "../../src";
 
 import Esempi from "./docs/Esempi.md";
 import Etichette from "./docs/Etichette.md";
 import Indeterminato from "./docs/Indeterminato.md";
 import Colori from "./docs/Colori.md";
 import ButtonProgress from "./docs/ButtonProgress.md";
-import Spinner from "./docs/Spinner.md";
+import SpinnerDocs from "./docs/SpinnerDocs.md";
 import SpinnerDoppio from "./docs/SpinnerDoppio.md";
 import EsempiInterattivi from "./docs/EsempiInterattivi.md";
 
@@ -117,33 +117,25 @@ const SpinnerComponent = () => (
                 <p className="mb-3">
                     <strong>Spinner standard</strong>
                 </p>
-                <div className="progress-spinner">
-                    <span className="sr-only">Caricamento...</span>
-                </div>
+                <Spinner />
             </div>
             <div className="col-6 col-lg-3">
                 <p className="mb-3">
                     <strong>Spinner Attivo</strong>
                 </p>
-                <div className="progress-spinner progress-spinner-active">
-                    <span className="sr-only">Caricamento...</span>
-                </div>
+                <Spinner active />
             </div>
             <div className="col-6 col-lg-3 mt-3 mt-lg-0">
                 <p className="mb-3">
                     <strong>Small</strong>
                 </p>
-                <div className="progress-spinner size-sm">
-                    <span className="sr-only">Caricamento...</span>
-                </div>
+                <Spinner small />
             </div>
             <div className="col-6 col-lg-3 mt-3 mt-lg-0">
                 <p className="mb-3">
                     <strong>Small attivo</strong>
                 </p>
-                <div className="progress-spinner progress-spinner-active size-sm">
-                    <span className="sr-only">Caricamento...</span>
-                </div>
+                <Spinner small active />
             </div>
         </div>
     </div>
@@ -156,41 +148,25 @@ const SpinnerDoppioComponent = () => (
                 <p className="mb-3">
                     <strong>Spinner doppio</strong>
                 </p>
-                <div className="progress-spinner progress-spinner-double">
-                    <div className="progress-spinner-inner" />
-                    <div className="progress-spinner-inner" />
-                    <span className="sr-only">Caricamento...</span>
-                </div>
+                <Spinner double />
             </div>
             <div className="col-6 col-lg-3">
                 <p className="mb-3">
                     <strong>Doppio attivo</strong>
                 </p>
-                <div className="progress-spinner progress-spinner-double progress-spinner-active">
-                    <div className="progress-spinner-inner" />
-                    <div className="progress-spinner-inner" />
-                    <span className="sr-only">Caricamento...</span>
-                </div>
+                <Spinner double active />
             </div>
             <div className="col-6 col-lg-3 mt-3 mt-lg-0">
                 <p className="mb-3">
                     <strong>Doppio small</strong>
                 </p>
-                <div className="progress-spinner progress-spinner-double size-sm">
-                    <div className="progress-spinner-inner" />
-                    <div className="progress-spinner-inner" />
-                    <span className="sr-only">Caricamento...</span>
-                </div>
+                <Spinner double small />
             </div>
             <div className="col-6 col-lg-3 mt-3 mt-lg-0">
                 <p className="mb-3">
                     <strong>Doppio small attivo</strong>
                 </p>
-                <div className="progress-spinner progress-spinner-double size-sm progress-spinner-active">
-                    <div className="progress-spinner-inner" />
-                    <div className="progress-spinner-inner" />
-                    <span className="sr-only">Caricamento...</span>
-                </div>
+                <Spinner double small active />
             </div>
         </div>
     </div>
@@ -240,7 +216,7 @@ storiesOf("Componenti/Progress Indicators.Spinners", module)
     .add(
         "Spinner",
         withInfo({
-            text: Spinner
+            text: SpinnerDocs
         })(SpinnerComponent)
     )
     .add(
