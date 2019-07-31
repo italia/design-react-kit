@@ -7,11 +7,9 @@ const propTypes = {
     className: PropTypes.string,
     value: PropTypes.number,
     label: PropTypes.string,
-    minValue: PropTypes.number,
-    maxValue: PropTypes.number,
     intermediate: PropTypes.bool,
     color: PropTypes.string,
-    spinner: PropTypes.bool
+    // spinner: PropTypes.bool
 };
 
 const defaultProps = {
@@ -31,7 +29,7 @@ class Progress extends React.Component {
             maxValue,
             intermediate,
             color,
-            spinner,
+            // spinner,
             ...attributes
         } = this.props;
         const wrapperClasses = classNames("progress-bar-wrapper");
@@ -46,12 +44,12 @@ class Progress extends React.Component {
             "progress-bar",
             color ? `bg-${this.props.color}` : false
         );
-        const spinnerWrapperClasses = classNames();
-        const spinnerClasses = classNames(className, "progress-spinner");
+        // const spinnerWrapperClasses = classNames();
+        // const spinnerClasses = classNames(className, "progress-spinner");
 
-        if (spinner) {
-            return <Tag />;
-        }
+        // if (spinner) {
+        //     return <Tag />;
+        // }
 
         if (label && value) {
             return (
