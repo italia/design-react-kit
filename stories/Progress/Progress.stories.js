@@ -42,7 +42,7 @@ const EtichetteComponent = () => (
 )
 
 const ProgressoIndeterminato = () => (
-  <Progress intermediate label='In elaborazione...' />
+  <Progress indeterminate label='In elaborazione...' />
 )
 
 const ColoriComponent = () => (

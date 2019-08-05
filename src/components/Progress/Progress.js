@@ -7,14 +7,14 @@ const propTypes = {
   className: PropTypes.string,
   value: PropTypes.number,
   label: PropTypes.string,
-  intermediate: PropTypes.bool,
+  indeterminate: PropTypes.bool,
   color: PropTypes.string
 }
 
 const defaultProps = {
   tag: 'div',
   role: 'progressbar',
-  intermediate: false
+  indeterminate: false
 }
 
 class Progress extends React.Component {
@@ -24,14 +24,14 @@ class Progress extends React.Component {
       tag: Tag,
       value,
       label,
-      intermediate,
+      indeterminate,
       color,
       ...attributes
     } = this.props
     const wrapperClasses = classNames('progress-bar-wrapper')
     const secondaryWrapperClasses = classNames(
       className,
-      intermediate ? 'progress-indeterminate' : false,
+      indeterminate ? 'progress-indeterminate' : false,
       color ? 'progress-color' : false,
       'progress'
     )
