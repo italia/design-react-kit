@@ -54,7 +54,6 @@ export {
   Popover,
   PopoverBody,
   PopoverHeader,
-  Progress,
   Modal,
   ModalHeader,
   ModalBody,
@@ -120,3 +119,5 @@ export { default as Skiplink } from './components/Skiplink/Skiplink'
 export { default as SkiplinkItem } from './components/Skiplink/SkiplinkItem'
 export { default as Toggle } from './components/Toggle/Toggle'
 export { default as Sidebar } from './components/Sidebar/Sidebar'
+export { default as Progress } from './components/Progress/Progress'
+export { default as Spinner } from './components/Spinner/Spinner'
