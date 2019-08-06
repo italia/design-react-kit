@@ -3,6 +3,7 @@ import commonjs from "rollup-plugin-commonjs";
 import babel from "rollup-plugin-babel";
 import minify from 'rollup-plugin-babel-minify';
 import replace from 'rollup-plugin-replace';
+import svg from 'rollup-plugin-svg'
 
 import packageJson from "../package.json";
 
@@ -38,12 +39,9 @@ function baseConfig() {
                     "@babel/plugin-proposal-export-namespace-from",
                     "@babel/plugin-proposal-class-properties"
                 ]
-            })
+            }),
+            svg({base64:true})
         ]
-                /*plugins: [
-                    "@babel/plugin-proposal-class-properties",
-                    "@babel/plugin-proposal-object-rest-spread"
-                ]*/
     };
 }
 
@@ -108,7 +106,7 @@ if (missingGlobals.length) {
 
 const umdFullConfigMin = baseUmdConfig(true);
 umdFullConfigMin.output = [
-    { globals: globals(), sourcemap: true, name: 'DesignReactKit', file: packageJson.module + 'full.min.js', format: 'umd' },
+    { globals: globals(), sourcemap: true, name: 'DesignReactKit', file: packageJson.module + '.full.min.js', format: 'umd' },
 ];
 
 const external = umdFullConfig.external.slice();

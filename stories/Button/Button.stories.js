@@ -12,7 +12,7 @@ import EsempiInterattivi from './docs/EsempiInterattivi.md'
 import ButtonIcon from './docs/ButtonIcon.md'
 import DarkBackground from './docs/DarkBackground.md'
 
-import { Button } from '../../src'
+import { Button, Icon } from '../../src'
 
 const colors = [
   'Primary',
@@ -86,29 +86,17 @@ const DimensioniComponent = () => (
 
 const ButtonIconComponent = () => (
   <div>
-    <Button color='success' size='lg' className='btn-icon'>
-      <svg className='icon icon-white'>
-        <use xlinkHref='/svg/sprite.svg#it-star-full' />
-      </svg>
-            Icon Button Lg
+    <Button color='primary' size='lg' className='btn-icon'>
+        <Icon color={'icon-white'} /> Icon Button Large
     </Button>{' '}
-    <Button color='primary' className='btn-icon'>
-      <svg className='icon icon-white'>
-        <use xlinkHref='/svg/sprite.svg#it-star-full' />
-      </svg>
-            Icon Button
+    <Button color='success' className='btn-icon'>
+        <Icon color={'icon-white'} /> Icon Button
     </Button>{' '}
     <Button color='danger' size='sm' className='btn-icon'>
-      <svg className='icon icon-secondary'>
-        <use xlinkHref='/svg/sprite.svg#it-star-full' />
-      </svg>
-            Icon Button Sm
+        <Icon color={'icon-primary'} /> Icon Button Small
     </Button>{' '}
     <Button color='info' size='xs' className='btn-icon'>
-      <svg className='icon icon-danger'>
-        <use xlinkHref='/svg/sprite.svg#it-star-full' />
-      </svg>
-            Icon Button Xs
+        <Icon color={'icon-black'} icon={'it-help'}/> Icon Button Extra Small
     </Button>
   </div>
 )
