@@ -13,6 +13,7 @@ const propTypes = {
     size: PropTypes.string,
     label: PropTypes.string,
     placeholder: PropTypes.string,
+    value: PropTypes.string,
     id: PropTypes.string,
     infoText: PropTypes.string,
     normalized: PropTypes.bool,
@@ -82,6 +83,7 @@ class Input extends React.Component {
             infoText,
             placeholder,
             normalized,
+            value,
             ...attributes
         } = this.props;
         let { bsSize, valid, invalid } = this.props;
@@ -95,6 +97,7 @@ class Input extends React.Component {
         let Tag = tag || (selectInput || textareaInput ? type : "input");
 
         let formControlClass = "form-control";
+        let infoTextControlClass = "form-text text-muted";
 
         if (plaintext || staticInput) {
             formControlClass = `${formControlClass}-plaintext`;
@@ -110,6 +113,10 @@ class Input extends React.Component {
                 formControlClass = 'form-check-input';
             }
             */
+        }
+        if (valid || invalid)
+        {
+            infoTextControlClass = null;
         }
 
         if (
@@ -146,6 +153,13 @@ class Input extends React.Component {
             classNames(className, "form-group"),
             cssModule
         );
+        const infoTextClass = mapToCssModules(
+            classNames(className,
+            valid ? 'valid-feedback': false,
+            invalid ? 'invalid-feedback': false,
+            infoTextControlClass
+            )
+        );
 
         if (Tag === "input" || typeof tag !== "string") {
             attributes.type = type;
@@ -166,7 +180,7 @@ class Input extends React.Component {
             );
             delete attributes.children;
         }
-        if (placeholder) {
+        if (placeholder || value) {
             return (
                 <div className={wrapperClass}>
                     <Tag
@@ -177,11 +191,12 @@ class Input extends React.Component {
                         onFocus={this.toggleFocusLabel}
                         onBlur={e => this.toggleBlurLabel(e)}
                         placeholder={this.props.placeholder}
+                        value={this.props.value}
                     />
                     <label htmlFor={this.props.id} className="active">
                         {this.props.label}
                     </label>
-                    <small className="form-text text-muted">
+                    <small className={infoTextClass}>
                         {this.props.infoText}
                     </small>
                 </div>
@@ -203,6 +218,7 @@ class Input extends React.Component {
                         onBlur={e => this.toggleBlurLabel(e)}
                         id={this.props.id}
                         placeholder={this.props.placeholder}
+                        value={this.props.value}
                     />
                     <span className="password-icon" aria-hidden="true">
                         <svg
@@ -222,7 +238,7 @@ class Input extends React.Component {
                     >
                         {this.props.label}
                     </label>
-                    <small className="form-text text-muted">
+                    <small className={infoTextClass}>
                         {this.props.infoText}
                     </small>
                 </div>
@@ -241,6 +257,7 @@ class Input extends React.Component {
                         onFocus={this.toggleFocusLabel}
                         onBlur={e => this.toggleBlurLabel(e)}
                         id={this.props.id}
+                        value={this.props.value}
                         readOnly
                     />
                     <label
@@ -249,7 +266,7 @@ class Input extends React.Component {
                     >
                         {this.props.label}
                     </label>
-                    <small className="form-text text-muted">
+                    <small className={infoTextClass}>
                         {this.props.infoText}
                     </small>
                 </div>
@@ -265,6 +282,7 @@ class Input extends React.Component {
                         id={this.props.id}
                         onFocus={this.toggleFocusLabel}
                         onBlur={e => this.toggleBlurLabel(e)}
+                        value={this.props.value}
                     />
                     <label
                         htmlFor={this.props.id}
@@ -272,7 +290,7 @@ class Input extends React.Component {
                     >
                         {this.props.label}
                     </label>
-                    <small className="form-text text-muted">
+                    <small className={infoTextClass}>
                         {this.props.infoText}
                     </small>
                 </div>
