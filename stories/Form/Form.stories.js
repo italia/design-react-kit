@@ -217,16 +217,16 @@ const GruppiComponent = () => (
     <CheckboxGroupsExample />
     <RadioGroupsExample />
   </section>
-);
+)
 
-const FormExampleComponent = () =>(
+const FormExampleComponent = () => (
   <div>
-    <Input label="Valid Input" valid/>
-    <Input label="Invalid Input" invalid/>
-    <Input value="Mario" label="First name" infoText="Validated!" valid />
-    <Input label="Username" infoText="Please choose a username." invalid />
+    <Input label='Valid Input' valid />
+    <Input label='Invalid Input' invalid />
+    <Input value='Mario' label='First name' infoText='Validated!' valid />
+    <Input label='Username' infoText='Please choose a username.' invalid />
   </div>
-);
+)
 
 storiesOf('Componenti/Form.Input', module)
   .addDecorator(withA11y)
@@ -421,7 +421,6 @@ storiesOf('Componenti/Form.Select', module)
       propTablesExclude: [SelectExample]
     })(() => <SelectExample group />)
   )
-
 
 storiesOf('Componenti/Form.Form Validation', module)
   .addDecorator(withA11y)
