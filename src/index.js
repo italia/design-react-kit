@@ -32,7 +32,6 @@ export {
   DropdownMenu,
   DropdownToggle,
   Fade,
-  Card,
   CardLink,
   CardGroup,
   CardDeck,
@@ -122,3 +121,4 @@ export { default as Toggle } from './components/Toggle/Toggle'
 export { default as Sidebar } from './components/Sidebar/Sidebar'
 export { default as Progress } from './components/Progress/Progress'
 export { default as Spinner } from './components/Spinner/Spinner'
+export { default as Card } from './components/Card/Card'
