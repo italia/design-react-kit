@@ -91,7 +91,7 @@ class Card extends React.Component {
         <Tag className={cardWrapperClasses} {...attributes}>
           <div className={innerCardWrapperClasses}>
             <div className='card-body'>
-              <div classNames='categoryicon-top'>
+              <div className='categoryicon-top'>
                 <Icon icon={this.props.iconName} />
                 <span className='text'>
                   {this.props.category}
@@ -100,9 +100,11 @@ class Card extends React.Component {
                 </span>
               </div>
               <a href={this.props.link}>
-                <h5 className='card-title'>{this.props.title} </h5>
+                <h5 className='card-title'>
+                  {this.props.title}
+                </h5>
               </a>
-              <p className='card-text'>{this.props.text} </p>
+              <p className='card-text'>{this.props.text}</p>
             </div>
           </div>
         </Tag>
@@ -184,7 +186,10 @@ class Card extends React.Component {
     if (image && specialCard) {
       return (
         <div className='card-wrapper'>
-          <a className='card card-img no-after special-card' href={this.props.link}>
+          <a
+            className='card card-img no-after special-card'
+            href={this.props.link}
+          >
             <div className='img-responsive-wrapper'>
               <div className='img-responsive'>
                 <div className='img-wrapper'>
@@ -200,8 +205,7 @@ class Card extends React.Component {
               <div className='head-tags'>
                 <span className='data'>{this.props.date}</span>
               </div>
-              <h5 className='card-title'>{this.props.title}
-              </h5>
+              <h5 className='card-title'>{this.props.title}</h5>
             </div>
           </a>
         </div>
