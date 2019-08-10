@@ -4,31 +4,31 @@ import classNames from 'classnames'
 import iconSprite from 'bootstrap-italia/dist/svg/sprite.svg'
 
 const propTypes = {
-    color: PropTypes.string,
-    size: PropTypes.string,
-    icon: PropTypes.string
+  color: PropTypes.string,
+  size: PropTypes.string,
+  icon: PropTypes.string
 }
 
 const defaultProps = {
-    color: '',
-    size: '',
-    icon: 'it-tool'
+  color: '',
+  size: '',
+  icon: 'it-tool'
 }
 
 class Icon extends React.Component {
-    render () {
-        const {
-            color,
-            size
-        } = this.props
-        const classes = classNames('icon', color, size)
-        const iconName = this.props.icon
-        return (
-            <svg className={classes}>
-                <use xlinkHref={`${iconSprite}#${iconName}`}/>
-            </svg>
-        )
-    }
+  render () {
+    const {
+      color,
+      size
+    } = this.props
+    const classes = classNames('icon', color, size)
+    const iconName = this.props.icon
+    return (
+      <svg className={classes}>
+        <use xlinkHref={`${iconSprite}#${iconName}`} />
+      </svg>
+    )
+  }
 }
 
 Icon.propTypes = propTypes
