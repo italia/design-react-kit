@@ -1,6 +1,6 @@
 import WebFont from 'webfontloader';
 import { Util, Badge as Badge$1, FormGroup as FormGroup$1, Input as Input$1, Label, Jumbotron, Button } from 'reactstrap';
-export { Alert, Breadcrumb, BreadcrumbItem, Button, ButtonDropdown, ButtonGroup, ButtonToolbar, Card, CardBody, CardColumns, CardDeck, CardFooter, CardGroup, CardHeader, CardImg, CardImgOverlay, CardLink, CardSubtitle, CardText, CardTitle, Carousel, CarouselCaption, CarouselControl, CarouselIndicators, CarouselItem, Col, Container, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Fade, Form, FormFeedback, FormText, InputGroup, InputGroupAddon, InputGroupButtonDropdown, InputGroupText, Jumbotron, Label, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Media, Modal, ModalBody, ModalFooter, ModalHeader, Nav, NavItem, NavLink, Navbar, NavbarBrand, NavbarToggler, PaginationItem as PagerItem, PaginationLink as PagerLink, Popover, PopoverBody, PopoverHeader, PopperContent, PopperTargetHelper, Row, TabContent, TabPane, Table, Tooltip, UncontrolledAlert, UncontrolledButtonDropdown, UncontrolledCarousel, UncontrolledDropdown, UncontrolledTooltip, Util } from 'reactstrap';
+export { Alert, Breadcrumb, BreadcrumbItem, Button, ButtonDropdown, ButtonGroup, ButtonToolbar, CardBody, CardColumns, CardDeck, CardFooter, CardGroup, CardHeader, CardImg, CardImgOverlay, CardLink, CardSubtitle, CardText, CardTitle, Carousel, CarouselCaption, CarouselControl, CarouselIndicators, CarouselItem, Col, Container, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Fade, Form, FormFeedback, FormText, InputGroup, InputGroupAddon, InputGroupButtonDropdown, InputGroupText, Jumbotron, Label, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Media, Modal, ModalBody, ModalFooter, ModalHeader, Nav, NavItem, NavLink, Navbar, NavbarBrand, NavbarToggler, PaginationItem as PagerItem, PaginationLink as PagerLink, Popover, PopoverBody, PopoverHeader, PopperContent, PopperTargetHelper, Row, TabContent, TabPane, Table, Tooltip, UncontrolledAlert, UncontrolledButtonDropdown, UncontrolledCarousel, UncontrolledDropdown, UncontrolledTooltip, Util } from 'reactstrap';
 import PropTypes from 'prop-types';
 import React, { Component, Fragment } from 'react';
 import Transition from 'react-transition-group/Transition';
@@ -1265,6 +1265,7 @@ var propTypes$6 = {
   size: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
+  value: PropTypes.string,
   id: PropTypes.string,
   infoText: PropTypes.string,
   normalized: PropTypes.bool,
@@ -1343,7 +1344,8 @@ function (_React$Component) {
         infoText = _this$props.infoText,
         placeholder = _this$props.placeholder,
         normalized = _this$props.normalized,
-        attributes = _objectWithoutPropertiesLoose(_this$props, ["className", "cssModule", "type", "state", "tag", "addon", "static", "plaintext", "innerRef", "label", "infoText", "placeholder", "normalized"]);
+        value = _this$props.value,
+        attributes = _objectWithoutPropertiesLoose(_this$props, ["className", "cssModule", "type", "state", "tag", "addon", "static", "plaintext", "innerRef", "label", "infoText", "placeholder", "normalized", "value"]);
 
     var _this$props2 = this.props,
         bsSize = _this$props2.bsSize,
@@ -1356,6 +1358,7 @@ function (_React$Component) {
     var selectInput = type === "select";
     var Tag = tag || (selectInput || textareaInput ? type : "input");
     var formControlClass = "form-control";
+    var infoTextControlClass = "form-text text-muted";
 
     if (plaintext || staticInput) {
       formControlClass = formControlClass + "-plaintext";
@@ -1374,6 +1377,10 @@ function (_React$Component) {
 
     }
 
+    if (valid || invalid) {
+      infoTextControlClass = null;
+    }
+
     if (state && typeof valid === "undefined" && typeof invalid === "undefined") {
       if (state === "danger") {
         invalid = true;
@@ -1390,6 +1397,7 @@ function (_React$Component) {
 
     var classes = mapToCssModules$1(classnames(className, invalid && "is-invalid", valid && "is-valid", bsSize ? "form-control-" + bsSize : false, formControlClass), cssModule);
     var wrapperClass = mapToCssModules$1(classnames(className, "form-group"), cssModule);
+    var infoTextClass = mapToCssModules$1(classnames(className, valid ? 'valid-feedback' : false, invalid ? 'invalid-feedback' : false, infoTextControlClass));
 
     if (Tag === "input" || typeof tag !== "string") {
       attributes.type = type;
@@ -1400,7 +1408,7 @@ function (_React$Component) {
       delete attributes.children;
     }
 
-    if (placeholder) {
+    if (placeholder || value) {
       return React.createElement("div", {
         className: wrapperClass
       }, React.createElement(Tag, _extends({}, attributes, {
@@ -1411,12 +1419,13 @@ function (_React$Component) {
         onBlur: function onBlur(e) {
           return _this2.toggleBlurLabel(e);
         },
-        placeholder: this.props.placeholder
+        placeholder: this.props.placeholder,
+        value: this.props.value
       })), React.createElement("label", {
         htmlFor: this.props.id,
         className: "active"
       }, this.props.label), React.createElement("small", {
-        className: "form-text text-muted"
+        className: infoTextClass
       }, this.props.infoText));
     }
 
@@ -1432,7 +1441,8 @@ function (_React$Component) {
           return _this2.toggleBlurLabel(e);
         },
         id: this.props.id,
-        placeholder: this.props.placeholder
+        placeholder: this.props.placeholder,
+        value: this.props.value
       })), React.createElement("span", {
         className: "password-icon",
         "aria-hidden": "true"
@@ -1445,7 +1455,7 @@ function (_React$Component) {
         htmlFor: this.props.id,
         className: this.state.isFocused ? "active" : ""
       }, this.props.label), React.createElement("small", {
-        className: "form-text text-muted"
+        className: infoTextClass
       }, this.props.infoText));
     }
 
@@ -1459,12 +1469,13 @@ function (_React$Component) {
           return _this2.toggleBlurLabel(e);
         },
         id: this.props.id,
+        value: this.props.value,
         readOnly: true
       })), React.createElement("label", {
         htmlFor: this.props.id,
         className: this.state.isFocused ? "active" : ""
       }, this.props.label), React.createElement("small", {
-        className: "form-text text-muted"
+        className: infoTextClass
       }, this.props.infoText));
     }
 
@@ -1478,12 +1489,13 @@ function (_React$Component) {
         onFocus: this.toggleFocusLabel,
         onBlur: function onBlur(e) {
           return _this2.toggleBlurLabel(e);
-        }
+        },
+        value: this.props.value
       })), React.createElement("label", {
         htmlFor: this.props.id,
         className: this.state.isFocused ? "active" : ""
       }, this.props.label), React.createElement("small", {
-        className: "form-text text-muted"
+        className: infoTextClass
       }, this.props.infoText));
     }
 
@@ -2146,11 +2158,282 @@ function (_React$Component) {
 Spinner.propTypes = propTypes$g;
 Spinner.defaultProps = defaultProps$g;
 
+var propTypes$h = {
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  className: PropTypes.node,
+  title: PropTypes.node,
+  text: PropTypes.node,
+  shade: PropTypes.node,
+  big: PropTypes.node,
+  after: PropTypes.node,
+  space: PropTypes.node,
+  article: PropTypes.node,
+  category: PropTypes.node,
+  signature: PropTypes.node,
+  date: PropTypes.node,
+  link: PropTypes.node,
+  icon: PropTypes.node,
+  name: PropTypes.node,
+  iconName: PropTypes.node,
+  tagCard: PropTypes.node,
+  tagName: PropTypes.node,
+  image: PropTypes.node,
+  imageTitle: PropTypes.node,
+  specialCard: PropTypes.node
+};
+var defaultProps$h = {
+  tag: 'div',
+  link: '#'
+};
+
+var Card =
+/*#__PURE__*/
+function (_React$Component) {
+  _inheritsLoose(Card, _React$Component);
+
+  function Card() {
+    return _React$Component.apply(this, arguments) || this;
+  }
+
+  var _proto = Card.prototype;
+
+  _proto.render = function render() {
+    var _this$props = this.props,
+        className = _this$props.className,
+        Tag = _this$props.tag,
+        title = _this$props.title,
+        text = _this$props.text,
+        shade = _this$props.shade,
+        big = _this$props.big,
+        after = _this$props.after,
+        space = _this$props.space,
+        article = _this$props.article,
+        category = _this$props.category,
+        signature = _this$props.signature,
+        date = _this$props.date,
+        link = _this$props.link,
+        icon = _this$props.icon,
+        name = _this$props.name,
+        iconName = _this$props.iconName,
+        tagCard = _this$props.tagCard,
+        tagName = _this$props.tagName,
+        image = _this$props.image,
+        imageTitle = _this$props.imageTitle,
+        specialCard = _this$props.specialCard,
+        attributes = _objectWithoutPropertiesLoose(_this$props, ["className", "tag", "title", "text", "shade", "big", "after", "space", "article", "category", "signature", "date", "link", "icon", "name", "iconName", "tagCard", "tagName", "image", "imageTitle", "specialCard"]);
+
+    var cardWrapperClasses = classnames(space ? 'card-space' : false, 'card-wrapper');
+    var innerCardWrapperClasses = classnames(shade ? 'card-bg' : false, big ? 'card-big' : false, after ? 'no-after' : false, 'card');
+
+    if (shade || space) {
+      return React.createElement(Tag, _extends({
+        className: cardWrapperClasses
+      }, attributes), React.createElement("div", {
+        className: innerCardWrapperClasses
+      }, React.createElement("div", {
+        className: "card-body"
+      }, React.createElement("h5", {
+        className: "card-title"
+      }, this.props.title), React.createElement("p", {
+        className: "card-text"
+      }, this.props.text), React.createElement("a", {
+        className: "read-more",
+        href: this.props.link
+      }, React.createElement("span", {
+        className: "text"
+      }, "Leggi di pi\xF9"), React.createElement(Icon, {
+        icon: 'it-arrow-right'
+      })))));
+    }
+
+    if (icon) {
+      return React.createElement(Tag, _extends({
+        className: cardWrapperClasses
+      }, attributes), React.createElement("div", {
+        className: innerCardWrapperClasses
+      }, React.createElement("div", {
+        className: "card-body"
+      }, React.createElement("div", {
+        classNames: "categoryicon-top"
+      }, React.createElement(Icon, {
+        icon: this.props.iconName
+      }), React.createElement("span", {
+        className: "text"
+      }, this.props.category, React.createElement("br", null), this.props.name)), React.createElement("a", {
+        href: this.props.link
+      }, React.createElement("h5", {
+        className: "card-title"
+      }, this.props.title, " ")), React.createElement("p", {
+        className: "card-text"
+      }, this.props.text, " "))));
+    }
+
+    if (article) {
+      return React.createElement(Tag, _extends({
+        className: cardWrapperClasses
+      }, attributes), React.createElement("div", {
+        className: innerCardWrapperClasses
+      }, React.createElement("div", {
+        className: "card-body"
+      }, React.createElement("div", {
+        className: "category-top"
+      }, React.createElement("a", {
+        className: "category",
+        href: this.props.link
+      }, this.props.category), React.createElement("span", {
+        className: "data"
+      }, this.props.date)), React.createElement("h5", {
+        className: "card-title big-heading"
+      }, this.props.title), React.createElement("p", {
+        className: "card-text"
+      }, this.props.text, " "), React.createElement("span", {
+        className: "card-signature"
+      }, this.props.signature), React.createElement("a", {
+        className: "read-more",
+        href: this.props.link
+      }, React.createElement("span", {
+        className: "text"
+      }, "Leggi di pi\xF9"), React.createElement(Icon, {
+        icon: 'it-arrow-right'
+      })))));
+    }
+
+    if (big && tagCard) {
+      return React.createElement("div", {
+        className: "card-wrapper card-space"
+      }, React.createElement("div", {
+        className: "card card-bg card-big no-after"
+      }, React.createElement("div", {
+        className: "card-body"
+      }, React.createElement("div", {
+        className: "head-tags"
+      }, React.createElement("a", {
+        className: "card-tag",
+        href: this.props.link
+      }, this.props.tagName), React.createElement("span", {
+        className: "data"
+      }, this.props.date)), React.createElement("h5", {
+        className: "card-title"
+      }, this.props.title), React.createElement("p", {
+        className: "card-text"
+      }, this.props.text), React.createElement("div", {
+        className: "it-card-footer"
+      }, React.createElement("span", {
+        className: "card-signature"
+      }, this.props.signature), React.createElement(Button, {
+        outline: true,
+        color: "primary",
+        size: "sm"
+      }, "Action")))));
+    }
+
+    if (big) {
+      return React.createElement("div", {
+        className: "card-wrapper card-space"
+      }, React.createElement("div", {
+        className: "card card-bg card-big"
+      }, React.createElement("div", {
+        className: "card-body"
+      }, React.createElement("div", {
+        className: "top-icon"
+      }, React.createElement(Icon, {
+        icon: this.props.iconName
+      })), React.createElement("h5", {
+        className: "card-title"
+      }, this.props.title), React.createElement("p", {
+        className: "card-text"
+      }, this.props.text), React.createElement("a", {
+        className: "read-more",
+        href: this.props.link
+      }, React.createElement("span", {
+        className: "text"
+      }, "Leggi di pi\xF9"), React.createElement(Icon, {
+        icon: 'it-arrow-right'
+      })))));
+    }
+
+    if (image && specialCard) {
+      return React.createElement("div", {
+        className: "card-wrapper"
+      }, React.createElement("a", {
+        className: "card card-img no-after special-card",
+        href: this.props.link
+      }, React.createElement("div", {
+        className: "img-responsive-wrapper"
+      }, React.createElement("div", {
+        className: "img-responsive"
+      }, React.createElement("div", {
+        className: "img-wrapper"
+      }, React.createElement("img", {
+        src: this.props.image,
+        title: this.props.imageTitle,
+        alt: "imagealt"
+      })))), React.createElement("div", {
+        className: "card-body"
+      }, React.createElement("div", {
+        className: "head-tags"
+      }, React.createElement("span", {
+        className: "data"
+      }, this.props.date)), React.createElement("h5", {
+        className: "card-title"
+      }, this.props.title))));
+    }
+
+    if (image) {
+      return React.createElement("div", {
+        className: "card-wrapper"
+      }, React.createElement("div", {
+        className: "card card-img no-after"
+      }, React.createElement("div", {
+        className: "img-responsive-wrapper"
+      }, React.createElement("div", {
+        className: "img-responsive"
+      }, React.createElement("figure", {
+        className: "img-wrapper"
+      }, React.createElement("img", {
+        src: this.props.image,
+        title: this.props.imageTitle,
+        alt: "ExampleImage"
+      })))), React.createElement("div", {
+        className: "card-body"
+      }, React.createElement("h5", {
+        className: "card-title"
+      }, this.props.title), React.createElement("p", {
+        className: "card-text"
+      }), React.createElement("a", {
+        className: "read-more",
+        href: this.props.link
+      }, React.createElement("span", {
+        className: "text"
+      }, "Leggi di pi\xF9"), React.createElement(Icon, {
+        icon: 'it-arrow-right'
+      })))));
+    }
+
+    return React.createElement(Tag, _extends({
+      className: cardWrapperClasses
+    }, attributes), React.createElement("div", {
+      className: innerCardWrapperClasses
+    }, React.createElement("div", {
+      className: "card-body"
+    }, React.createElement("h5", {
+      className: "card-title"
+    }, this.props.title), React.createElement("p", {
+      className: "card-text"
+    }, this.props.text))));
+  };
+
+  return Card;
+}(React.Component);
+
+Card.propTypes = propTypes$h;
+Card.defaultProps = defaultProps$h;
+
 WebFont.load({
   custom: {
     families: ['Titillium Web:300,400,600,700:latin-ext', 'Lora:400,700:latin-ext', 'Roboto Mono:400,700:latin-ext']
   }
 });
 
-export { Accordion, AccordionBody, AccordionHeader, Badge, Collapse, FormGroup, Hero, Icon, Input, LinkList, LinkListItem, Offcanvas, Pager, PagerList, PasswordInput, PasswordMeter, Progress, Scrollspy, Sidebar, Skiplink, SkiplinkItem, Spinner, Toggle };
+export { Accordion, AccordionBody, AccordionHeader, Badge, Card, Collapse, FormGroup, Hero, Icon, Input, LinkList, LinkListItem, Offcanvas, Pager, PagerList, PasswordInput, PasswordMeter, Progress, Scrollspy, Sidebar, Skiplink, SkiplinkItem, Spinner, Toggle };
 //# sourceMappingURL=design-react-kit.es.js.map
