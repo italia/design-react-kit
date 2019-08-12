@@ -33,7 +33,7 @@ const Welcome = props => (
                           href='https://developersitalia.slack.com/messages/C7VPAUVB3/'
                           target='_blank' rel='noopener noreferrer'>canale dedicato <i
             className='it-external-link' /></a> su Slack.</p>
-        <p>Il codice sorgente è presente nella directory <code>stories</code> del progetto. Una <code>story</code> è un singolo stato di uno o più componenti UI. Per maggiori informazioni, puoi far riferimento all'ambiente usato per mostrare i componenti:: <a
+        <p>Il codice sorgente è presente nella directory <code>stories</code> del progetto. Una <code>story</code> è un singolo stato di uno o più componenti UI. Per maggiori informazioni, puoi far riferimento all'ambiente usato per mostrare i componenti: <a
           href='https://storybook.js.org/'>Storybook
         </a>.
         </p>
