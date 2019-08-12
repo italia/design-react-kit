@@ -7,244 +7,123 @@ import { Icon, Button } from '../../../src'
 const propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.node,
-  title: PropTypes.node,
-  text: PropTypes.node,
-  shade: PropTypes.node,
-  big: PropTypes.node,
-  after: PropTypes.node,
-  space: PropTypes.node,
-  article: PropTypes.node,
-  category: PropTypes.node,
-  signature: PropTypes.node,
-  date: PropTypes.node,
-  link: PropTypes.node,
-  icon: PropTypes.node,
-  name: PropTypes.node,
-  iconName: PropTypes.node,
-  tagCard: PropTypes.node,
-  tagName: PropTypes.node,
-  image: PropTypes.node,
-  imageTitle: PropTypes.node,
-  specialCard: PropTypes.node
+  isBig: PropTypes.bool,
+  hasShade: PropTypes.bool,
+  hasSpace: PropTypes.bool,
+  hasCTA: PropTypes.bool,
+  hasLinkOnTitle: PropTypes.bool,
+  isIconCard: PropTypes.bool,
+  isSpecialCard: PropTypes.bool,
+  isArticleCard: PropTypes.bool,
+  title: PropTypes.string,
+  text: PropTypes.string,
+  after: PropTypes.string,
+  articleCategoryName: PropTypes.string,
+  articleCategoryLink: PropTypes.string,
+  articleDate: PropTypes.string,
+  signature: PropTypes.string,
+  link: PropTypes.string,
+  iconName: PropTypes.string,
+  tags: PropTypes.array,
+  imageSrc: PropTypes.string,
+  imageTitle: PropTypes.string,
+  imageAlt: PropTypes.string
 }
 
 const defaultProps = {
   tag: 'div',
-  link: '#'
+  link: false
 }
 
 class Card extends React.Component {
   render () {
     const {
-      className,
-      tag: Tag,
-      title,
-      text,
-      shade,
-      big,
-      after,
-      space,
-      article,
-      category,
-      signature,
-      date,
-      link,
-      icon,
-      name,
-      iconName,
-      tagCard,
-      tagName,
-      image,
-      imageTitle,
-      specialCard,
-      ...attributes
+      tag: Tag
     } = this.props
 
     const cardWrapperClasses = classNames(
-      space ? 'card-space' : false,
+      this.props.hasSpace ? 'card-space' : false,
       'card-wrapper'
     )
     const innerCardWrapperClasses = classNames(
-      shade ? 'card-bg' : false,
-      big ? 'card-big' : false,
-      after ? 'no-after' : false,
+      this.props.hasShade ? 'card-bg' : false,
+      this.props.isBig ? 'card-big' : false,
+      this.props.imageSrc ? 'card-img' : false,
+      this.props.isSpecialCard ? 'special-card' : false,
+      this.props.after ? 'no-after' : false,
       'card'
     )
-    if (shade || space) {
-      return (
-        <Tag className={cardWrapperClasses} {...attributes}>
-          <div className={innerCardWrapperClasses}>
-            <div className='card-body'>
-              <h5 className='card-title'>{this.props.title}</h5>
-              <p className='card-text'>{this.props.text}</p>
-              <a className='read-more' href={this.props.link}>
-                <span className='text'>Leggi di più</span>
-                <Icon icon={'it-arrow-right'} />
-              </a>
-            </div>
-          </div>
-        </Tag>
-      )
-    }
-    if (icon) {
-      return (
-        <Tag className={cardWrapperClasses} {...attributes}>
-          <div className={innerCardWrapperClasses}>
-            <div className='card-body'>
-              <div className='categoryicon-top'>
-                <Icon icon={this.props.iconName} />
-                <span className='text'>
-                  {this.props.category}
-                  <br />
-                  {this.props.name}
-                </span>
-              </div>
-              <a href={this.props.link}>
-                <h5 className='card-title'>
-                  {this.props.title}
-                </h5>
-              </a>
-              <p className='card-text'>{this.props.text}</p>
-            </div>
-          </div>
-        </Tag>
-      )
-    }
-    if (article) {
-      return (
-        <Tag className={cardWrapperClasses} {...attributes}>
-          <div className={innerCardWrapperClasses}>
-            <div className='card-body'>
-              <div className='category-top'>
-                <a className='category' href={this.props.link}>
-                  {this.props.category}
-                </a>
-                <span className='data'>{this.props.date}</span>
-              </div>
-              <h5 className='card-title big-heading'>
-                {this.props.title}
-              </h5>
-              <p className='card-text'>{this.props.text} </p>
-              <span className='card-signature'>
-                {this.props.signature}
-              </span>
-              <a className='read-more' href={this.props.link}>
-                <span className='text'>Leggi di più</span>
-                <Icon icon={'it-arrow-right'} />
-              </a>
-            </div>
-          </div>
-        </Tag>
-      )
-    }
-    if (big && tagCard) {
-      return (
-        <div className='card-wrapper card-space'>
-          <div className='card card-bg card-big no-after'>
-            <div className='card-body'>
-              <div className='head-tags'>
-                <a className='card-tag' href={this.props.link}>
-                  {this.props.tagName}
-                </a>
-                <span className='data'>{this.props.date}</span>
-              </div>
-              <h5 className='card-title'>{this.props.title}</h5>
-              <p className='card-text'>{this.props.text}</p>
-              <div className='it-card-footer'>
-                <span className='card-signature'>
-                  {this.props.signature}
-                </span>
-                <Button outline color='primary' size='sm'>
-                                    Action
-                </Button>
-              </div>
-            </div>
-          </div>
+
+    const iconTag = (this.props.isIconCard)
+      ? <div className='categoryicon-top'>
+        <Icon icon={this.props.iconName} />
+        <span className='text'>{this.props.articleCategoryName}</span>
+      </div> : false
+    let titleTag = <h5 className='card-title'>{this.props.title}</h5>
+    const imageTag = (this.props.imageSrc)
+      ? <div className='img-responsive-wrapper'>
+        <div className='img-responsive'>
+          <figure className='img-wrapper'>
+            <img src={this.props.imageSrc}
+              title={this.props.imageTitle}
+              alt={this.props.imageAlt} />
+          </figure>
         </div>
-      )
+      </div> : false
+    const dateTag = (this.props.articleDate)
+      ? <span className='data'>{this.props.articleDate}</span> : false
+    const signatureTag = (this.props.signature) ? <span
+      className='card-signature'>{this.props.signature}</span> : false
+    const callToActionTag = (this.props.hasCTA)
+      ? <Button outline color='primary' size='sm'>Action</Button> : false
+    const cardFooterTag = (signatureTag || callToActionTag)
+      ? <div className='it-card-footer'>
+        {signatureTag}
+        {callToActionTag}
+      </div> : false
+
+    let cardHeaderTag
+    let readMoreTag
+
+    if (this.props.link) {
+      if (this.props.hasLinkOnTitle) {
+        titleTag = <a href={this.props.link}>
+          <h5 className='card-title'>{this.props.title}</h5>
+        </a>
+      } else {
+        readMoreTag = <a className='read-more' href={this.props.link}>
+          <span className='text'>Leggi di più</span>
+          <Icon icon={'it-arrow-right'} />
+        </a>
+      }
     }
 
-    if (big) {
-      return (
-        <div className='card-wrapper card-space'>
-          <div className='card card-bg card-big'>
-            <div className='card-body'>
-              <div className='top-icon'>
-                <Icon icon={this.props.iconName} />
-              </div>
-              <h5 className='card-title'>{this.props.title}</h5>
-              <p className='card-text'>{this.props.text}</p>
-              <a className='read-more' href={this.props.link}>
-                <span className='text'>Leggi di più</span>
-                <Icon icon={'it-arrow-right'} />
-              </a>
-            </div>
-          </div>
-        </div>
-      )
-    }
-    if (image && specialCard) {
-      return (
-        <div className='card-wrapper'>
-          <a
-            className='card card-img no-after special-card'
-            href={this.props.link}
-          >
-            <div className='img-responsive-wrapper'>
-              <div className='img-responsive'>
-                <div className='img-wrapper'>
-                  <img
-                    src={this.props.image}
-                    title={this.props.imageTitle}
-                    alt='imagealt'
-                  />
-                </div>
-              </div>
-            </div>
-            <div className='card-body'>
-              <div className='head-tags'>
-                <span className='data'>{this.props.date}</span>
-              </div>
-              <h5 className='card-title'>{this.props.title}</h5>
-            </div>
-          </a>
-        </div>
-      )
-    }
-    if (image) {
-      return (
-        <div className='card-wrapper'>
-          <div className='card card-img no-after'>
-            <div className='img-responsive-wrapper'>
-              <div className='img-responsive'>
-                <figure className='img-wrapper'>
-                  <img
-                    src={this.props.image}
-                    title={this.props.imageTitle}
-                    alt='ExampleImage'
-                  />
-                </figure>
-              </div>
-            </div>
-            <div className='card-body'>
-              <h5 className='card-title'>{this.props.title}</h5>
-              <p className='card-text' />
-              <a className='read-more' href={this.props.link}>
-                <span className='text'>Leggi di più</span>
-                <Icon icon={'it-arrow-right'} />
-              </a>
-            </div>
-          </div>
-        </div>
-      )
+    if (this.props.isArticleCard) {
+      cardHeaderTag = <div className='category-top'>
+        <a className='category'
+          href='{this.props.articleCategoryLink}'>{this.props.articleCategoryName}</a>
+        {dateTag}
+      </div>
+    } else if (this.props.tags && this.props.tags.split(',').length) {
+      cardHeaderTag = <div className='head-tags'>
+        {this.props.tags.split(',').map((item, index) => (
+          <span className='card-tag' key={index}>{item}</span>
+        ))}
+        {dateTag}
+      </div>
     }
 
     return (
-      <Tag className={cardWrapperClasses} {...attributes}>
+      <Tag className={cardWrapperClasses}>
         <div className={innerCardWrapperClasses}>
+          {imageTag}
           <div className='card-body'>
-            <h5 className='card-title'>{this.props.title}</h5>
+            {cardHeaderTag}
+            {iconTag}
+            {titleTag}
             <p className='card-text'>{this.props.text}</p>
+            {cardFooterTag}
+            {readMoreTag}
           </div>
         </div>
       </Tag>

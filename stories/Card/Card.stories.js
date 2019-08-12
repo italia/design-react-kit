@@ -2,6 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
+import { withKnobs, text, boolean } from '@storybook/addon-knobs'
 
 import { Card, Button } from '../../src'
 
@@ -13,12 +14,14 @@ import BigCard from './docs/BigCard.md'
 import BigCardTag from './docs/BigCardTag.md'
 import CardImage from './docs/CardImage.md'
 import SpecialCard from './docs/SpecialCard.md'
+import EsempiInterattivi from '../Button/docs/EsempiInterattivi.md'
 
 const SimpleCardComponent = () => (
   <div className='row'>
     <div className='col-12 col-lg-4'>
       {/* start card */}
       <Card
+        link='#'
         title='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…'
         text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       />
@@ -32,9 +35,11 @@ const SimpleArticleComponent = () => (
     <div className='col-12 col-lg-6'>
       {/* start card */}
       <Card
-        article
-        category='Category'
-        date='10/12/2018'
+        isArticleCard
+        articleCategoryName='Category Name'
+        articleCategoryLink='#'
+        articleDate='10/12/2018'
+        link='#'
         title='Lorem ipsum dolor sit amet, consectetur adipiscing elit…'
         text='Lorem ipsum dolor sit amet, consectetur adipiscing
                       elit, sed do eiusmod tempor incididunt ut labore et
@@ -51,11 +56,9 @@ const CardIconComponent = () => (
   <div className='row'>
     <div className='col-12 col-lg-6'>
       {/* Start card */}
-      <Card
-        icon
+      <Card isIconCard
         iconName='it-file'
-        category='Category'
-        name='Name'
+        articleCategoryName='Category name'
         title=' Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor…'
         text=' Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -73,8 +76,9 @@ const CardShadingComponent = () => (
     <div className='col-12 col-lg-6'>
       {/* Start card */}
       <Card
-        space
-        shade
+        hasSpace
+        hasShade
+        link='#'
         title='Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor…'
         text='Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -92,8 +96,9 @@ const BigCardComponent = () => (
     <div className='col-12 col-lg-8'>
       {/* Start card */}
       <Card
-        big
+        isBig
         iconName='it-card'
+        link='#'
         title='Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor…'
         text='Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -109,10 +114,10 @@ const BigCardTagComponent = () => (
     <div className='col-12 col-lg-6'>
       {/* Start card */}
       <Card
-        big
-        tagCard
-        tagName='Tag'
-        date='10/12/2018'
+        isBig
+        hasCTA
+        tags='Tag 1, Tag 2'
+        articleDate='10/12/2018'
         title='Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor…'
         text='Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -130,8 +135,10 @@ const CardImageComponent = () => (
     <div className='col-12 col-lg-6'>
       {/* Start card */}
       <Card
-        image='https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+        link='#'
+        imageSrc='https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
         imageTitle='img title'
+        imageAlt='img alt'
         title='Lorem ipsum dolor sit amet, consectetur adipiscing elit…'
       />
       {/* end card */}
@@ -144,16 +151,46 @@ const SpecialCardComponent = () => (
     <div className='col-12 col-lg-6'>
       {/* Start card */}
       <Card
-        specialCard
-        image='https://via.placeholder.com/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO'
+        isSpecialCard
+        imageSrc='https://via.placeholder.com/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO'
         imageTitle='img title'
-        date='10/12/2018'
+        imageAlt='img alt'
+        articleDate='10/12/2018'
         title='Lorem ipsum dolor sit amet, consectetur adipiscing elit…'
       />
       {/* end card */}
     </div>
   </div>
 )
+
+const EsempiInterattiviComponent = () => {
+  const isSpecialCardOption = boolean('Speciale', false)
+  const hasShadeOption = boolean('Ombreggiatura', false)
+  const hasLinkOnTitleOption = boolean('Link su titolo', false)
+  const linkOption = text('Link', '#')
+  const titleOption = text('Titolo', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit…')
+  const textOption = text('Testo', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+
+  return (
+    <div className='row'>
+      <div className='col-12 col-lg-6'>
+        {/* Start card */}
+        <Card
+          isSpecialCard={isSpecialCardOption}
+          imageSrc={isSpecialCardOption ? 'https://via.placeholder.com/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO' : false}
+          imageTitle={isSpecialCardOption ? 'img title' : false}
+          imageAlt={isSpecialCardOption ? 'img alt' : false}
+          link={linkOption}
+          hasShade={hasShadeOption}
+          hasLinkOnTitle={hasLinkOnTitleOption}
+          title={titleOption}
+          text={textOption}
+        />
+        {/* end card */}
+      </div>
+    </div>
+  )
+}
 
 storiesOf('Componenti/Cards', module)
   .addDecorator(withA11y)
@@ -214,4 +251,14 @@ storiesOf('Componenti/Cards', module)
       text: SpecialCard,
       propTables: [Card]
     })(SpecialCardComponent)
+  )
+
+storiesOf('Componenti/Cards', module)
+  .addDecorator(withA11y)
+  .addDecorator(withKnobs)
+  .add(
+    'Esempi interattivi',
+    withInfo({
+      text: EsempiInterattivi
+    })(EsempiInterattiviComponent)
   )
