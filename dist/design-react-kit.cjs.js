@@ -2167,29 +2167,31 @@ Spinner.defaultProps = defaultProps$g;
 var propTypes$h = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.node,
-  title: PropTypes.node,
-  text: PropTypes.node,
-  shade: PropTypes.node,
-  big: PropTypes.node,
-  after: PropTypes.node,
-  space: PropTypes.node,
-  article: PropTypes.node,
-  category: PropTypes.node,
-  signature: PropTypes.node,
-  date: PropTypes.node,
-  link: PropTypes.node,
-  icon: PropTypes.node,
-  name: PropTypes.node,
-  iconName: PropTypes.node,
-  tagCard: PropTypes.node,
-  tagName: PropTypes.node,
-  image: PropTypes.node,
-  imageTitle: PropTypes.node,
-  specialCard: PropTypes.node
+  isBig: PropTypes.bool,
+  hasShade: PropTypes.bool,
+  hasSpace: PropTypes.bool,
+  hasCTA: PropTypes.bool,
+  hasLinkOnTitle: PropTypes.bool,
+  isIconCard: PropTypes.bool,
+  isSpecialCard: PropTypes.bool,
+  isArticleCard: PropTypes.bool,
+  title: PropTypes.string,
+  text: PropTypes.string,
+  after: PropTypes.string,
+  articleCategoryName: PropTypes.string,
+  articleCategoryLink: PropTypes.string,
+  articleDate: PropTypes.string,
+  signature: PropTypes.string,
+  link: PropTypes.string,
+  iconName: PropTypes.string,
+  tags: PropTypes.array,
+  imageSrc: PropTypes.string,
+  imageTitle: PropTypes.string,
+  imageAlt: PropTypes.string
 };
 var defaultProps$h = {
   tag: 'div',
-  link: '#'
+  link: false
 };
 
 var Card =
@@ -2204,229 +2206,93 @@ function (_React$Component) {
   var _proto = Card.prototype;
 
   _proto.render = function render() {
-    var _this$props = this.props,
-        className = _this$props.className,
-        Tag = _this$props.tag,
-        title = _this$props.title,
-        text = _this$props.text,
-        shade = _this$props.shade,
-        big = _this$props.big,
-        after = _this$props.after,
-        space = _this$props.space,
-        article = _this$props.article,
-        category = _this$props.category,
-        signature = _this$props.signature,
-        date = _this$props.date,
-        link = _this$props.link,
-        icon = _this$props.icon,
-        name = _this$props.name,
-        iconName = _this$props.iconName,
-        tagCard = _this$props.tagCard,
-        tagName = _this$props.tagName,
-        image = _this$props.image,
-        imageTitle = _this$props.imageTitle,
-        specialCard = _this$props.specialCard,
-        attributes = _objectWithoutPropertiesLoose(_this$props, ["className", "tag", "title", "text", "shade", "big", "after", "space", "article", "category", "signature", "date", "link", "icon", "name", "iconName", "tagCard", "tagName", "image", "imageTitle", "specialCard"]);
+    var Tag = this.props.tag;
+    var cardWrapperClasses = classnames(this.props.hasSpace ? 'card-space' : false, 'card-wrapper');
+    var innerCardWrapperClasses = classnames(this.props.hasShade ? 'card-bg' : false, this.props.isBig ? 'card-big' : false, this.props.imageSrc ? 'card-img' : false, this.props.isSpecialCard ? 'special-card' : false, this.props.after ? 'no-after' : false, 'card');
+    var iconTag = this.props.isIconCard ? React__default.createElement("div", {
+      className: "categoryicon-top"
+    }, React__default.createElement(Icon, {
+      icon: this.props.iconName
+    }), React__default.createElement("span", {
+      className: "text"
+    }, this.props.articleCategoryName)) : false;
+    var titleTag = React__default.createElement("h5", {
+      className: "card-title"
+    }, this.props.title);
+    var imageTag = this.props.imageSrc ? React__default.createElement("div", {
+      className: "img-responsive-wrapper"
+    }, React__default.createElement("div", {
+      className: "img-responsive"
+    }, React__default.createElement("figure", {
+      className: "img-wrapper"
+    }, React__default.createElement("img", {
+      src: this.props.imageSrc,
+      title: this.props.imageTitle,
+      alt: this.props.imageAlt
+    })))) : false;
+    var dateTag = this.props.articleDate ? React__default.createElement("span", {
+      className: "data"
+    }, this.props.articleDate) : false;
+    var signatureTag = this.props.signature ? React__default.createElement("span", {
+      className: "card-signature"
+    }, this.props.signature) : false;
+    var callToActionTag = this.props.hasCTA ? React__default.createElement(reactstrap.Button, {
+      outline: true,
+      color: "primary",
+      size: "sm"
+    }, "Action") : false;
+    var cardFooterTag = signatureTag || callToActionTag ? React__default.createElement("div", {
+      className: "it-card-footer"
+    }, signatureTag, callToActionTag) : false;
+    var cardHeaderTag;
+    var readMoreTag;
 
-    var cardWrapperClasses = classnames(space ? 'card-space' : false, 'card-wrapper');
-    var innerCardWrapperClasses = classnames(shade ? 'card-bg' : false, big ? 'card-big' : false, after ? 'no-after' : false, 'card');
-
-    if (shade || space) {
-      return React__default.createElement(Tag, _extends({
-        className: cardWrapperClasses
-      }, attributes), React__default.createElement("div", {
-        className: innerCardWrapperClasses
-      }, React__default.createElement("div", {
-        className: "card-body"
-      }, React__default.createElement("h5", {
-        className: "card-title"
-      }, this.props.title), React__default.createElement("p", {
-        className: "card-text"
-      }, this.props.text), React__default.createElement("a", {
-        className: "read-more",
-        href: this.props.link
-      }, React__default.createElement("span", {
-        className: "text"
-      }, "Leggi di pi\xF9"), React__default.createElement(Icon, {
-        icon: 'it-arrow-right'
-      })))));
+    if (this.props.link) {
+      if (this.props.hasLinkOnTitle) {
+        titleTag = React__default.createElement("a", {
+          href: this.props.link
+        }, React__default.createElement("h5", {
+          className: "card-title"
+        }, this.props.title));
+      } else {
+        readMoreTag = React__default.createElement("a", {
+          className: "read-more",
+          href: this.props.link
+        }, React__default.createElement("span", {
+          className: "text"
+        }, "Leggi di pi\xF9"), React__default.createElement(Icon, {
+          icon: 'it-arrow-right'
+        }));
+      }
     }
 
-    if (icon) {
-      return React__default.createElement(Tag, _extends({
-        className: cardWrapperClasses
-      }, attributes), React__default.createElement("div", {
-        className: innerCardWrapperClasses
-      }, React__default.createElement("div", {
-        className: "card-body"
-      }, React__default.createElement("div", {
-        classNames: "categoryicon-top"
-      }, React__default.createElement(Icon, {
-        icon: this.props.iconName
-      }), React__default.createElement("span", {
-        className: "text"
-      }, this.props.category, React__default.createElement("br", null), this.props.name)), React__default.createElement("a", {
-        href: this.props.link
-      }, React__default.createElement("h5", {
-        className: "card-title"
-      }, this.props.title, " ")), React__default.createElement("p", {
-        className: "card-text"
-      }, this.props.text, " "))));
-    }
-
-    if (article) {
-      return React__default.createElement(Tag, _extends({
-        className: cardWrapperClasses
-      }, attributes), React__default.createElement("div", {
-        className: innerCardWrapperClasses
-      }, React__default.createElement("div", {
-        className: "card-body"
-      }, React__default.createElement("div", {
+    if (this.props.isArticleCard) {
+      cardHeaderTag = React__default.createElement("div", {
         className: "category-top"
       }, React__default.createElement("a", {
         className: "category",
-        href: this.props.link
-      }, this.props.category), React__default.createElement("span", {
-        className: "data"
-      }, this.props.date)), React__default.createElement("h5", {
-        className: "card-title big-heading"
-      }, this.props.title), React__default.createElement("p", {
-        className: "card-text"
-      }, this.props.text, " "), React__default.createElement("span", {
-        className: "card-signature"
-      }, this.props.signature), React__default.createElement("a", {
-        className: "read-more",
-        href: this.props.link
-      }, React__default.createElement("span", {
-        className: "text"
-      }, "Leggi di pi\xF9"), React__default.createElement(Icon, {
-        icon: 'it-arrow-right'
-      })))));
-    }
-
-    if (big && tagCard) {
-      return React__default.createElement("div", {
-        className: "card-wrapper card-space"
-      }, React__default.createElement("div", {
-        className: "card card-bg card-big no-after"
-      }, React__default.createElement("div", {
-        className: "card-body"
-      }, React__default.createElement("div", {
+        href: "{this.props.articleCategoryLink}"
+      }, this.props.articleCategoryName), dateTag);
+    } else if (this.props.tags && this.props.tags.split(',').length) {
+      cardHeaderTag = React__default.createElement("div", {
         className: "head-tags"
-      }, React__default.createElement("a", {
-        className: "card-tag",
-        href: this.props.link
-      }, this.props.tagName), React__default.createElement("span", {
-        className: "data"
-      }, this.props.date)), React__default.createElement("h5", {
-        className: "card-title"
-      }, this.props.title), React__default.createElement("p", {
-        className: "card-text"
-      }, this.props.text), React__default.createElement("div", {
-        className: "it-card-footer"
-      }, React__default.createElement("span", {
-        className: "card-signature"
-      }, this.props.signature), React__default.createElement(reactstrap.Button, {
-        outline: true,
-        color: "primary",
-        size: "sm"
-      }, "Action")))));
+      }, this.props.tags.split(',').map(function (item, index) {
+        return React__default.createElement("span", {
+          className: "card-tag",
+          key: index
+        }, item);
+      }), dateTag);
     }
 
-    if (big) {
-      return React__default.createElement("div", {
-        className: "card-wrapper card-space"
-      }, React__default.createElement("div", {
-        className: "card card-bg card-big"
-      }, React__default.createElement("div", {
-        className: "card-body"
-      }, React__default.createElement("div", {
-        className: "top-icon"
-      }, React__default.createElement(Icon, {
-        icon: this.props.iconName
-      })), React__default.createElement("h5", {
-        className: "card-title"
-      }, this.props.title), React__default.createElement("p", {
-        className: "card-text"
-      }, this.props.text), React__default.createElement("a", {
-        className: "read-more",
-        href: this.props.link
-      }, React__default.createElement("span", {
-        className: "text"
-      }, "Leggi di pi\xF9"), React__default.createElement(Icon, {
-        icon: 'it-arrow-right'
-      })))));
-    }
-
-    if (image && specialCard) {
-      return React__default.createElement("div", {
-        className: "card-wrapper"
-      }, React__default.createElement("a", {
-        className: "card card-img no-after special-card",
-        href: this.props.link
-      }, React__default.createElement("div", {
-        className: "img-responsive-wrapper"
-      }, React__default.createElement("div", {
-        className: "img-responsive"
-      }, React__default.createElement("div", {
-        className: "img-wrapper"
-      }, React__default.createElement("img", {
-        src: this.props.image,
-        title: this.props.imageTitle,
-        alt: "imagealt"
-      })))), React__default.createElement("div", {
-        className: "card-body"
-      }, React__default.createElement("div", {
-        className: "head-tags"
-      }, React__default.createElement("span", {
-        className: "data"
-      }, this.props.date)), React__default.createElement("h5", {
-        className: "card-title"
-      }, this.props.title))));
-    }
-
-    if (image) {
-      return React__default.createElement("div", {
-        className: "card-wrapper"
-      }, React__default.createElement("div", {
-        className: "card card-img no-after"
-      }, React__default.createElement("div", {
-        className: "img-responsive-wrapper"
-      }, React__default.createElement("div", {
-        className: "img-responsive"
-      }, React__default.createElement("figure", {
-        className: "img-wrapper"
-      }, React__default.createElement("img", {
-        src: this.props.image,
-        title: this.props.imageTitle,
-        alt: "ExampleImage"
-      })))), React__default.createElement("div", {
-        className: "card-body"
-      }, React__default.createElement("h5", {
-        className: "card-title"
-      }, this.props.title), React__default.createElement("p", {
-        className: "card-text"
-      }), React__default.createElement("a", {
-        className: "read-more",
-        href: this.props.link
-      }, React__default.createElement("span", {
-        className: "text"
-      }, "Leggi di pi\xF9"), React__default.createElement(Icon, {
-        icon: 'it-arrow-right'
-      })))));
-    }
-
-    return React__default.createElement(Tag, _extends({
+    return React__default.createElement(Tag, {
       className: cardWrapperClasses
-    }, attributes), React__default.createElement("div", {
-      className: innerCardWrapperClasses
     }, React__default.createElement("div", {
+      className: innerCardWrapperClasses
+    }, imageTag, React__default.createElement("div", {
       className: "card-body"
-    }, React__default.createElement("h5", {
-      className: "card-title"
-    }, this.props.title), React__default.createElement("p", {
+    }, cardHeaderTag, iconTag, titleTag, React__default.createElement("p", {
       className: "card-text"
-    }, this.props.text))));
+    }, this.props.text), cardFooterTag, readMoreTag)));
   };
 
   return Card;
@@ -2434,6 +2300,90 @@ function (_React$Component) {
 
 Card.propTypes = propTypes$h;
 Card.defaultProps = defaultProps$h;
+
+var propTypes$i = {
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  className: PropTypes.string
+};
+var defaultProps$i = {
+  tag: 'nav'
+};
+
+var BottomNav = function BottomNav(props) {
+  var Tag = props.tag,
+      attributes = _objectWithoutPropertiesLoose(props, ["tag"]);
+
+  var wrapperClasses = classnames('bottom-nav');
+  return React__default.createElement(Tag, {
+    className: wrapperClasses
+  }, React__default.createElement("ul", attributes));
+};
+
+BottomNav.propTypes = propTypes$i;
+BottomNav.defaultProps = defaultProps$i;
+
+var propTypes$j = {
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  className: PropTypes.string,
+  active: PropTypes.bool,
+  link: PropTypes.string,
+  label: PropTypes.string,
+  iconName: PropTypes.string,
+  srText: PropTypes.string,
+  alert: PropTypes.bool,
+  badge: PropTypes.bool
+};
+var defaultProps$j = {
+  tag: 'a',
+  link: '#',
+  iconName: 'it-comment',
+  srText: false
+};
+
+var BottomNavItem =
+/*#__PURE__*/
+function (_React$Component) {
+  _inheritsLoose(BottomNavItem, _React$Component);
+
+  function BottomNavItem() {
+    return _React$Component.apply(this, arguments) || this;
+  }
+
+  var _proto = BottomNavItem.prototype;
+
+  _proto.render = function render() {
+    var _this$props = this.props,
+        Tag = _this$props.tag,
+        attributes = _objectWithoutPropertiesLoose(_this$props, ["tag"]);
+
+    var activeClass = classnames(this.props.active ? 'active' : false);
+    var badgeWrapper = this.props.badge ? React__default.createElement("div", {
+      className: "badge-wrapper"
+    }, React__default.createElement("span", {
+      className: "bottom-nav-badge"
+    }, this.props.badge)) : false;
+    var alertWrapper = this.props.alert ? React__default.createElement("div", {
+      className: "badge-wrapper"
+    }, React__default.createElement("span", {
+      className: "bottom-nav-alert"
+    })) : false;
+    return React__default.createElement("li", attributes, React__default.createElement(Tag, {
+      href: this.props.link,
+      className: activeClass
+    }, badgeWrapper, alertWrapper, React__default.createElement(Icon, {
+      icon: this.props.iconName
+    }), React__default.createElement("span", {
+      className: "bottom-nav-label"
+    }, this.props.label, React__default.createElement("span", {
+      className: "sr-only"
+    }, this.props.srText))));
+  };
+
+  return BottomNavItem;
+}(React__default.Component);
+
+BottomNavItem.propTypes = propTypes$j;
+BottomNavItem.defaultProps = defaultProps$j;
 
 WebFont.load({
   custom: {
@@ -2883,6 +2833,8 @@ exports.Accordion = Accordion;
 exports.AccordionBody = AccordionBody;
 exports.AccordionHeader = AccordionHeader;
 exports.Badge = Badge;
+exports.BottomNav = BottomNav;
+exports.BottomNavItem = BottomNavItem;
 exports.Card = Card;
 exports.Collapse = Collapse;
 exports.FormGroup = FormGroup;
