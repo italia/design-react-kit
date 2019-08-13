@@ -1271,6 +1271,7 @@ var propTypes$6 = {
   size: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
+  value: PropTypes.string,
   id: PropTypes.string,
   infoText: PropTypes.string,
   normalized: PropTypes.bool,
@@ -1349,7 +1350,8 @@ function (_React$Component) {
         infoText = _this$props.infoText,
         placeholder = _this$props.placeholder,
         normalized = _this$props.normalized,
-        attributes = _objectWithoutPropertiesLoose(_this$props, ["className", "cssModule", "type", "state", "tag", "addon", "static", "plaintext", "innerRef", "label", "infoText", "placeholder", "normalized"]);
+        value = _this$props.value,
+        attributes = _objectWithoutPropertiesLoose(_this$props, ["className", "cssModule", "type", "state", "tag", "addon", "static", "plaintext", "innerRef", "label", "infoText", "placeholder", "normalized", "value"]);
 
     var _this$props2 = this.props,
         bsSize = _this$props2.bsSize,
@@ -1362,6 +1364,7 @@ function (_React$Component) {
     var selectInput = type === "select";
     var Tag = tag || (selectInput || textareaInput ? type : "input");
     var formControlClass = "form-control";
+    var infoTextControlClass = "form-text text-muted";
 
     if (plaintext || staticInput) {
       formControlClass = formControlClass + "-plaintext";
@@ -1380,6 +1383,10 @@ function (_React$Component) {
 
     }
 
+    if (valid || invalid) {
+      infoTextControlClass = null;
+    }
+
     if (state && typeof valid === "undefined" && typeof invalid === "undefined") {
       if (state === "danger") {
         invalid = true;
@@ -1396,6 +1403,7 @@ function (_React$Component) {
 
     var classes = mapToCssModules$1(classnames(className, invalid && "is-invalid", valid && "is-valid", bsSize ? "form-control-" + bsSize : false, formControlClass), cssModule);
     var wrapperClass = mapToCssModules$1(classnames(className, "form-group"), cssModule);
+    var infoTextClass = mapToCssModules$1(classnames(className, valid ? 'valid-feedback' : false, invalid ? 'invalid-feedback' : false, infoTextControlClass));
 
     if (Tag === "input" || typeof tag !== "string") {
       attributes.type = type;
@@ -1406,7 +1414,7 @@ function (_React$Component) {
       delete attributes.children;
     }
 
-    if (placeholder) {
+    if (placeholder || value) {
       return React__default.createElement("div", {
         className: wrapperClass
       }, React__default.createElement(Tag, _extends({}, attributes, {
@@ -1417,12 +1425,13 @@ function (_React$Component) {
         onBlur: function onBlur(e) {
           return _this2.toggleBlurLabel(e);
         },
-        placeholder: this.props.placeholder
+        placeholder: this.props.placeholder,
+        value: this.props.value
       })), React__default.createElement("label", {
         htmlFor: this.props.id,
         className: "active"
       }, this.props.label), React__default.createElement("small", {
-        className: "form-text text-muted"
+        className: infoTextClass
       }, this.props.infoText));
     }
 
@@ -1438,7 +1447,8 @@ function (_React$Component) {
           return _this2.toggleBlurLabel(e);
         },
         id: this.props.id,
-        placeholder: this.props.placeholder
+        placeholder: this.props.placeholder,
+        value: this.props.value
       })), React__default.createElement("span", {
         className: "password-icon",
         "aria-hidden": "true"
@@ -1451,7 +1461,7 @@ function (_React$Component) {
         htmlFor: this.props.id,
         className: this.state.isFocused ? "active" : ""
       }, this.props.label), React__default.createElement("small", {
-        className: "form-text text-muted"
+        className: infoTextClass
       }, this.props.infoText));
     }
 
@@ -1465,12 +1475,13 @@ function (_React$Component) {
           return _this2.toggleBlurLabel(e);
         },
         id: this.props.id,
+        value: this.props.value,
         readOnly: true
       })), React__default.createElement("label", {
         htmlFor: this.props.id,
         className: this.state.isFocused ? "active" : ""
       }, this.props.label), React__default.createElement("small", {
-        className: "form-text text-muted"
+        className: infoTextClass
       }, this.props.infoText));
     }
 
@@ -1484,12 +1495,13 @@ function (_React$Component) {
         onFocus: this.toggleFocusLabel,
         onBlur: function onBlur(e) {
           return _this2.toggleBlurLabel(e);
-        }
+        },
+        value: this.props.value
       })), React__default.createElement("label", {
         htmlFor: this.props.id,
         className: this.state.isFocused ? "active" : ""
       }, this.props.label), React__default.createElement("small", {
-        className: "form-text text-muted"
+        className: infoTextClass
       }, this.props.infoText));
     }
 
@@ -2152,6 +2164,277 @@ function (_React$Component) {
 Spinner.propTypes = propTypes$g;
 Spinner.defaultProps = defaultProps$g;
 
+var propTypes$h = {
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  className: PropTypes.node,
+  title: PropTypes.node,
+  text: PropTypes.node,
+  shade: PropTypes.node,
+  big: PropTypes.node,
+  after: PropTypes.node,
+  space: PropTypes.node,
+  article: PropTypes.node,
+  category: PropTypes.node,
+  signature: PropTypes.node,
+  date: PropTypes.node,
+  link: PropTypes.node,
+  icon: PropTypes.node,
+  name: PropTypes.node,
+  iconName: PropTypes.node,
+  tagCard: PropTypes.node,
+  tagName: PropTypes.node,
+  image: PropTypes.node,
+  imageTitle: PropTypes.node,
+  specialCard: PropTypes.node
+};
+var defaultProps$h = {
+  tag: 'div',
+  link: '#'
+};
+
+var Card =
+/*#__PURE__*/
+function (_React$Component) {
+  _inheritsLoose(Card, _React$Component);
+
+  function Card() {
+    return _React$Component.apply(this, arguments) || this;
+  }
+
+  var _proto = Card.prototype;
+
+  _proto.render = function render() {
+    var _this$props = this.props,
+        className = _this$props.className,
+        Tag = _this$props.tag,
+        title = _this$props.title,
+        text = _this$props.text,
+        shade = _this$props.shade,
+        big = _this$props.big,
+        after = _this$props.after,
+        space = _this$props.space,
+        article = _this$props.article,
+        category = _this$props.category,
+        signature = _this$props.signature,
+        date = _this$props.date,
+        link = _this$props.link,
+        icon = _this$props.icon,
+        name = _this$props.name,
+        iconName = _this$props.iconName,
+        tagCard = _this$props.tagCard,
+        tagName = _this$props.tagName,
+        image = _this$props.image,
+        imageTitle = _this$props.imageTitle,
+        specialCard = _this$props.specialCard,
+        attributes = _objectWithoutPropertiesLoose(_this$props, ["className", "tag", "title", "text", "shade", "big", "after", "space", "article", "category", "signature", "date", "link", "icon", "name", "iconName", "tagCard", "tagName", "image", "imageTitle", "specialCard"]);
+
+    var cardWrapperClasses = classnames(space ? 'card-space' : false, 'card-wrapper');
+    var innerCardWrapperClasses = classnames(shade ? 'card-bg' : false, big ? 'card-big' : false, after ? 'no-after' : false, 'card');
+
+    if (shade || space) {
+      return React__default.createElement(Tag, _extends({
+        className: cardWrapperClasses
+      }, attributes), React__default.createElement("div", {
+        className: innerCardWrapperClasses
+      }, React__default.createElement("div", {
+        className: "card-body"
+      }, React__default.createElement("h5", {
+        className: "card-title"
+      }, this.props.title), React__default.createElement("p", {
+        className: "card-text"
+      }, this.props.text), React__default.createElement("a", {
+        className: "read-more",
+        href: this.props.link
+      }, React__default.createElement("span", {
+        className: "text"
+      }, "Leggi di pi\xF9"), React__default.createElement(Icon, {
+        icon: 'it-arrow-right'
+      })))));
+    }
+
+    if (icon) {
+      return React__default.createElement(Tag, _extends({
+        className: cardWrapperClasses
+      }, attributes), React__default.createElement("div", {
+        className: innerCardWrapperClasses
+      }, React__default.createElement("div", {
+        className: "card-body"
+      }, React__default.createElement("div", {
+        classNames: "categoryicon-top"
+      }, React__default.createElement(Icon, {
+        icon: this.props.iconName
+      }), React__default.createElement("span", {
+        className: "text"
+      }, this.props.category, React__default.createElement("br", null), this.props.name)), React__default.createElement("a", {
+        href: this.props.link
+      }, React__default.createElement("h5", {
+        className: "card-title"
+      }, this.props.title, " ")), React__default.createElement("p", {
+        className: "card-text"
+      }, this.props.text, " "))));
+    }
+
+    if (article) {
+      return React__default.createElement(Tag, _extends({
+        className: cardWrapperClasses
+      }, attributes), React__default.createElement("div", {
+        className: innerCardWrapperClasses
+      }, React__default.createElement("div", {
+        className: "card-body"
+      }, React__default.createElement("div", {
+        className: "category-top"
+      }, React__default.createElement("a", {
+        className: "category",
+        href: this.props.link
+      }, this.props.category), React__default.createElement("span", {
+        className: "data"
+      }, this.props.date)), React__default.createElement("h5", {
+        className: "card-title big-heading"
+      }, this.props.title), React__default.createElement("p", {
+        className: "card-text"
+      }, this.props.text, " "), React__default.createElement("span", {
+        className: "card-signature"
+      }, this.props.signature), React__default.createElement("a", {
+        className: "read-more",
+        href: this.props.link
+      }, React__default.createElement("span", {
+        className: "text"
+      }, "Leggi di pi\xF9"), React__default.createElement(Icon, {
+        icon: 'it-arrow-right'
+      })))));
+    }
+
+    if (big && tagCard) {
+      return React__default.createElement("div", {
+        className: "card-wrapper card-space"
+      }, React__default.createElement("div", {
+        className: "card card-bg card-big no-after"
+      }, React__default.createElement("div", {
+        className: "card-body"
+      }, React__default.createElement("div", {
+        className: "head-tags"
+      }, React__default.createElement("a", {
+        className: "card-tag",
+        href: this.props.link
+      }, this.props.tagName), React__default.createElement("span", {
+        className: "data"
+      }, this.props.date)), React__default.createElement("h5", {
+        className: "card-title"
+      }, this.props.title), React__default.createElement("p", {
+        className: "card-text"
+      }, this.props.text), React__default.createElement("div", {
+        className: "it-card-footer"
+      }, React__default.createElement("span", {
+        className: "card-signature"
+      }, this.props.signature), React__default.createElement(reactstrap.Button, {
+        outline: true,
+        color: "primary",
+        size: "sm"
+      }, "Action")))));
+    }
+
+    if (big) {
+      return React__default.createElement("div", {
+        className: "card-wrapper card-space"
+      }, React__default.createElement("div", {
+        className: "card card-bg card-big"
+      }, React__default.createElement("div", {
+        className: "card-body"
+      }, React__default.createElement("div", {
+        className: "top-icon"
+      }, React__default.createElement(Icon, {
+        icon: this.props.iconName
+      })), React__default.createElement("h5", {
+        className: "card-title"
+      }, this.props.title), React__default.createElement("p", {
+        className: "card-text"
+      }, this.props.text), React__default.createElement("a", {
+        className: "read-more",
+        href: this.props.link
+      }, React__default.createElement("span", {
+        className: "text"
+      }, "Leggi di pi\xF9"), React__default.createElement(Icon, {
+        icon: 'it-arrow-right'
+      })))));
+    }
+
+    if (image && specialCard) {
+      return React__default.createElement("div", {
+        className: "card-wrapper"
+      }, React__default.createElement("a", {
+        className: "card card-img no-after special-card",
+        href: this.props.link
+      }, React__default.createElement("div", {
+        className: "img-responsive-wrapper"
+      }, React__default.createElement("div", {
+        className: "img-responsive"
+      }, React__default.createElement("div", {
+        className: "img-wrapper"
+      }, React__default.createElement("img", {
+        src: this.props.image,
+        title: this.props.imageTitle,
+        alt: "imagealt"
+      })))), React__default.createElement("div", {
+        className: "card-body"
+      }, React__default.createElement("div", {
+        className: "head-tags"
+      }, React__default.createElement("span", {
+        className: "data"
+      }, this.props.date)), React__default.createElement("h5", {
+        className: "card-title"
+      }, this.props.title))));
+    }
+
+    if (image) {
+      return React__default.createElement("div", {
+        className: "card-wrapper"
+      }, React__default.createElement("div", {
+        className: "card card-img no-after"
+      }, React__default.createElement("div", {
+        className: "img-responsive-wrapper"
+      }, React__default.createElement("div", {
+        className: "img-responsive"
+      }, React__default.createElement("figure", {
+        className: "img-wrapper"
+      }, React__default.createElement("img", {
+        src: this.props.image,
+        title: this.props.imageTitle,
+        alt: "ExampleImage"
+      })))), React__default.createElement("div", {
+        className: "card-body"
+      }, React__default.createElement("h5", {
+        className: "card-title"
+      }, this.props.title), React__default.createElement("p", {
+        className: "card-text"
+      }), React__default.createElement("a", {
+        className: "read-more",
+        href: this.props.link
+      }, React__default.createElement("span", {
+        className: "text"
+      }, "Leggi di pi\xF9"), React__default.createElement(Icon, {
+        icon: 'it-arrow-right'
+      })))));
+    }
+
+    return React__default.createElement(Tag, _extends({
+      className: cardWrapperClasses
+    }, attributes), React__default.createElement("div", {
+      className: innerCardWrapperClasses
+    }, React__default.createElement("div", {
+      className: "card-body"
+    }, React__default.createElement("h5", {
+      className: "card-title"
+    }, this.props.title), React__default.createElement("p", {
+      className: "card-text"
+    }, this.props.text))));
+  };
+
+  return Card;
+}(React__default.Component);
+
+Card.propTypes = propTypes$h;
+Card.defaultProps = defaultProps$h;
+
 WebFont.load({
   custom: {
     families: ['Titillium Web:300,400,600,700:latin-ext', 'Lora:400,700:latin-ext', 'Roboto Mono:400,700:latin-ext']
@@ -2198,12 +2481,6 @@ Object.defineProperty(exports, 'ButtonToolbar', {
 	enumerable: true,
 	get: function () {
 		return reactstrap.ButtonToolbar;
-	}
-});
-Object.defineProperty(exports, 'Card', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Card;
 	}
 });
 Object.defineProperty(exports, 'CardBody', {
@@ -2606,6 +2883,7 @@ exports.Accordion = Accordion;
 exports.AccordionBody = AccordionBody;
 exports.AccordionHeader = AccordionHeader;
 exports.Badge = Badge;
+exports.Card = Card;
 exports.Collapse = Collapse;
 exports.FormGroup = FormGroup;
 exports.Hero = Hero;
