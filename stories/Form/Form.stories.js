@@ -4,6 +4,7 @@ import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 
 import InputIconButtonExample from './Input/InputIcon/InputIconButtonExample'
+import AutocompleteExample from './Autocomplete/AutocompleteExample'
 import TextArea from './Input/TextArea/TextArea'
 import CheckboxGroupsExample from './CheckboxRadio/CheckboxGroupsExample'
 import RadioGroupsExample from './CheckboxRadio/RadioGroupsExample'
@@ -19,6 +20,7 @@ import Disabled from './docs/Input/Disabled.md'
 import Readonly from './docs/Input/Readonly.md'
 import Normalize from './docs/Input/Normalize.md'
 import Textarea from './docs/Input/Textarea.md'
+import InputAutocomplete from './docs/Input/InputAutocomplete.md'
 import SelectExample from './Select/SelectExample'
 import Select from 'react-select'
 
@@ -298,12 +300,17 @@ storiesOf('Componenti/Form.Input', module)
     ))
   )
   .add(
+    'Input autocomplete',
+    withInfo({
+      text: InputAutocomplete
+    })(() => <AutocompleteExample />)
+  )
+  .add(
     'Area di testo',
     withInfo({
       text: Textarea
     })(() => <TextArea rows='3' label='Esempio di area di testo' />)
   )
-
   .add(
     'Area di testo con segnaposto',
     withInfo({

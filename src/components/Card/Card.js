@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-import { Icon, Button } from '../../../src'
+import { default as Icon } from '../Icon/Icon'
+import { Button } from 'reactstrap'
 
 const propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),

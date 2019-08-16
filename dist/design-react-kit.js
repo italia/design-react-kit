@@ -9360,103 +9360,13 @@
 	LinkListItem.propTypes = propTypes$1a;
 	LinkListItem.defaultProps = defaultProps$16;
 
-	var _transitionStatusToCl$2;
-	var TransitionTimeouts$3 = TransitionTimeouts,
-	    TransitionPropTypeKeys$3 = TransitionPropTypeKeys,
-	    TransitionStatuses$3 = TransitionStatuses,
-	    pick$3 = pick,
-	    omit$3 = omit;
-
-	var propTypes$1b = _extends$1({}, Transition.propTypes, {
-	  // eslint-disable-line react/forbid-foreign-prop-types
-	  children: propTypes.oneOfType([propTypes.arrayOf(propTypes.node), propTypes.node]),
-	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
-	  className: propTypes.string,
-	  onClose: propTypes.func,
-	  isOpen: propTypes.bool
-	});
-
-	var defaultProps$17 = _extends$1({}, Transition.defaultProps, {
-	  timeout: TransitionTimeouts$3.Collapse,
-	  tag: 'div'
-	});
-
-	var transitionStatusToClassHash$2 = (_transitionStatusToCl$2 = {}, _transitionStatusToCl$2[TransitionStatuses$3.ENTERING] = 'navbar-collapsable d-block', _transitionStatusToCl$2[TransitionStatuses$3.ENTERED] = 'navbar-collapsable d-block expanded', _transitionStatusToCl$2[TransitionStatuses$3.EXITING] = 'navbar-collapsable d-block', _transitionStatusToCl$2[TransitionStatuses$3.EXITED] = 'navbar-collapsable', _transitionStatusToCl$2);
-	var defaultStyle = {
-	  transition: '400ms ease-in-out',
-	  transitionProperty: 'opacity'
-	};
-	var transitionStyles = {
-	  entering: {
-	    opacity: 0
-	  },
-	  entered: {
-	    opacity: 1
-	  },
-	  exiting: {
-	    opacity: 0
-	  }
-	};
-
-	function getTransitionClass$2(status) {
-	  return transitionStatusToClassHash$2[status] || '';
-	}
-
-	var Offcanvas =
-	/*#__PURE__*/
-	function (_Component) {
-	  _inheritsLoose$1(Offcanvas, _Component);
-
-	  function Offcanvas() {
-	    return _Component.apply(this, arguments) || this;
-	  }
-
-	  var _proto = Offcanvas.prototype;
-
-	  _proto.render = function render() {
-	    var _this$props = this.props,
-	        Tag = _this$props.tag,
-	        children = _this$props.children,
-	        isOpen = _this$props.isOpen,
-	        onClose = _this$props.onClose,
-	        attributes = _objectWithoutPropertiesLoose$1(_this$props, ["tag", "children", "isOpen", "onClose"]);
-
-	    var transitionProps = pick$3(attributes, TransitionPropTypeKeys$3);
-	    var childProps = omit$3(attributes, TransitionPropTypeKeys$3);
-	    return React__default.createElement(Transition, _extends$1({}, transitionProps, {
-	      "in": isOpen
-	    }), function (status) {
-	      var transitionClass = getTransitionClass$2(status);
-	      var currentStyles = transitionStyles[status];
-	      return React__default.createElement("div", _extends$1({
-	        className: transitionClass,
-	        style: _extends$1({}, defaultStyle, {}, childProps.style, {}, currentStyles)
-	      }, childProps), React__default.createElement("div", {
-	        className: "close-div",
-	        onClick: onClose
-	      }, React__default.createElement(Button, {
-	        className: "close-menu",
-	        color: ""
-	      }, React__default.createElement("span", {
-	        className: "it-close"
-	      }), "close")), React__default.createElement("div", {
-	        className: "menu-wrapper"
-	      }, React__default.createElement(Tag, null, children)));
-	    });
-	  };
-
-	  return Offcanvas;
-	}(React.Component);
-	Offcanvas.propTypes = propTypes$1b;
-	Offcanvas.defaultProps = defaultProps$17;
-
-	var propTypes$1c = {
+	var propTypes$1b = {
 	  children: propTypes.node,
 	  className: propTypes.string,
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  'aria-label': propTypes.string
 	};
-	var defaultProps$18 = {
+	var defaultProps$17 = {
 	  tag: 'nav',
 	  'aria-label': 'pagination'
 	};
@@ -9473,15 +9383,15 @@
 	  }, children);
 	};
 
-	Pager.propTypes = propTypes$1c;
-	Pager.defaultProps = defaultProps$18;
+	Pager.propTypes = propTypes$1b;
+	Pager.defaultProps = defaultProps$17;
 
-	var propTypes$1d = {
+	var propTypes$1c = {
 	  className: propTypes.string,
 	  size: propTypes.string,
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string])
 	};
-	var defaultProps$19 = {
+	var defaultProps$18 = {
 	  tag: 'ul'
 	};
 
@@ -9499,8 +9409,8 @@
 	  }));
 	};
 
-	PagerList.propTypes = propTypes$1d;
-	PagerList.defaultProps = defaultProps$19;
+	PagerList.propTypes = propTypes$1c;
+	PagerList.defaultProps = defaultProps$18;
 
 	var PasswordInput =
 	/*#__PURE__*/
@@ -9643,11 +9553,11 @@
 	  }))
 	};
 
-	var propTypes$1e = {
+	var propTypes$1d = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string
 	};
-	var defaultProps$1a = {
+	var defaultProps$19 = {
 	  tag: 'div'
 	};
 
@@ -9662,14 +9572,14 @@
 	  }, attributes));
 	};
 
-	Skiplink.propTypes = propTypes$1e;
-	Skiplink.defaultProps = defaultProps$1a;
+	Skiplink.propTypes = propTypes$1d;
+	Skiplink.defaultProps = defaultProps$19;
 
-	var propTypes$1f = {
+	var propTypes$1e = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string
 	};
-	var defaultProps$1b = {
+	var defaultProps$1a = {
 	  tag: 'a'
 	};
 
@@ -9684,8 +9594,8 @@
 	  }, attributes));
 	};
 
-	SkiplinkItem.propTypes = propTypes$1f;
-	SkiplinkItem.defaultProps = defaultProps$1b;
+	SkiplinkItem.propTypes = propTypes$1e;
+	SkiplinkItem.defaultProps = defaultProps$1a;
 
 	var Toggle =
 	/*#__PURE__*/
@@ -9721,7 +9631,7 @@
 	  label: propTypes.oneOfType([propTypes.string, propTypes.element])
 	}, Input.propTypes);
 
-	var propTypes$1g = {
+	var propTypes$1f = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  secondary: propTypes.bool,
@@ -9729,7 +9639,7 @@
 	  right: propTypes.bool,
 	  dark: propTypes.bool
 	};
-	var defaultProps$1c = {
+	var defaultProps$1b = {
 	  tag: 'div'
 	};
 
@@ -9758,10 +9668,10 @@
 	  })));
 	};
 
-	Sidebar.propTypes = propTypes$1g;
-	Sidebar.defaultProps = defaultProps$1c;
+	Sidebar.propTypes = propTypes$1f;
+	Sidebar.defaultProps = defaultProps$1b;
 
-	var propTypes$1h = {
+	var propTypes$1g = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  value: propTypes.number,
@@ -9769,7 +9679,7 @@
 	  indeterminate: propTypes.bool,
 	  color: propTypes.string
 	};
-	var defaultProps$1d = {
+	var defaultProps$1c = {
 	  tag: 'div',
 	  role: 'progressbar',
 	  indeterminate: false
@@ -9842,17 +9752,17 @@
 	  return Progress;
 	}(React__default.Component);
 
-	Progress.propTypes = propTypes$1h;
-	Progress.defaultProps = defaultProps$1d;
+	Progress.propTypes = propTypes$1g;
+	Progress.defaultProps = defaultProps$1c;
 
-	var propTypes$1i = {
+	var propTypes$1h = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  active: propTypes.bool,
 	  small: propTypes.bool,
 	  "double": propTypes.bool
 	};
-	var defaultProps$1e = {
+	var defaultProps$1d = {
 	  tag: 'span',
 	  indeterminate: false,
 	  active: false,
@@ -9906,10 +9816,10 @@
 	  return Spinner;
 	}(React__default.Component);
 
-	Spinner.propTypes = propTypes$1i;
-	Spinner.defaultProps = defaultProps$1e;
+	Spinner.propTypes = propTypes$1h;
+	Spinner.defaultProps = defaultProps$1d;
 
-	var propTypes$1j = {
+	var propTypes$1i = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.node,
 	  isBig: propTypes.bool,
@@ -9934,7 +9844,7 @@
 	  imageTitle: propTypes.string,
 	  imageAlt: propTypes.string
 	};
-	var defaultProps$1f = {
+	var defaultProps$1e = {
 	  tag: 'div',
 	  link: false
 	};
@@ -10043,14 +9953,14 @@
 	  return Card;
 	}(React__default.Component);
 
-	Card.propTypes = propTypes$1j;
-	Card.defaultProps = defaultProps$1f;
+	Card.propTypes = propTypes$1i;
+	Card.defaultProps = defaultProps$1e;
 
-	var propTypes$1k = {
+	var propTypes$1j = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string
 	};
-	var defaultProps$1g = {
+	var defaultProps$1f = {
 	  tag: 'nav'
 	};
 
@@ -10064,10 +9974,10 @@
 	  }, React__default.createElement("ul", attributes));
 	};
 
-	BottomNav.propTypes = propTypes$1k;
-	BottomNav.defaultProps = defaultProps$1g;
+	BottomNav.propTypes = propTypes$1j;
+	BottomNav.defaultProps = defaultProps$1f;
 
-	var propTypes$1l = {
+	var propTypes$1k = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  active: propTypes.bool,
@@ -10078,7 +9988,7 @@
 	  alert: propTypes.bool,
 	  badge: propTypes.bool
 	};
-	var defaultProps$1h = {
+	var defaultProps$1g = {
 	  tag: 'a',
 	  link: '#',
 	  iconName: 'it-comment',
@@ -10127,8 +10037,8 @@
 	  return BottomNavItem;
 	}(React__default.Component);
 
-	BottomNavItem.propTypes = propTypes$1l;
-	BottomNavItem.defaultProps = defaultProps$1h;
+	BottomNavItem.propTypes = propTypes$1k;
+	BottomNavItem.defaultProps = defaultProps$1g;
 
 	webfontloader.load({
 	  custom: {
@@ -10205,7 +10115,6 @@
 	exports.Navbar = Navbar;
 	exports.NavbarBrand = NavbarBrand;
 	exports.NavbarToggler = NavbarToggler;
-	exports.Offcanvas = Offcanvas;
 	exports.Pager = Pager;
 	exports.PagerItem = PaginationItem;
 	exports.PagerLink = PaginationLink;

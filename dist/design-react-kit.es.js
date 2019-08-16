@@ -1609,103 +1609,13 @@ var LinkListItem = function LinkListItem(props) {
 LinkListItem.propTypes = propTypes$8;
 LinkListItem.defaultProps = defaultProps$8;
 
-var _transitionStatusToCl$2;
-var TransitionTimeouts$2 = Util.TransitionTimeouts,
-    TransitionPropTypeKeys$2 = Util.TransitionPropTypeKeys,
-    TransitionStatuses$2 = Util.TransitionStatuses,
-    pick$2 = Util.pick,
-    omit$2 = Util.omit;
-
-var propTypes$9 = _extends({}, Transition.propTypes, {
-  // eslint-disable-line react/forbid-foreign-prop-types
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-  className: PropTypes.string,
-  onClose: PropTypes.func,
-  isOpen: PropTypes.bool
-});
-
-var defaultProps$9 = _extends({}, Transition.defaultProps, {
-  timeout: TransitionTimeouts$2.Collapse,
-  tag: 'div'
-});
-
-var transitionStatusToClassHash$2 = (_transitionStatusToCl$2 = {}, _transitionStatusToCl$2[TransitionStatuses$2.ENTERING] = 'navbar-collapsable d-block', _transitionStatusToCl$2[TransitionStatuses$2.ENTERED] = 'navbar-collapsable d-block expanded', _transitionStatusToCl$2[TransitionStatuses$2.EXITING] = 'navbar-collapsable d-block', _transitionStatusToCl$2[TransitionStatuses$2.EXITED] = 'navbar-collapsable', _transitionStatusToCl$2);
-var defaultStyle = {
-  transition: '400ms ease-in-out',
-  transitionProperty: 'opacity'
-};
-var transitionStyles = {
-  entering: {
-    opacity: 0
-  },
-  entered: {
-    opacity: 1
-  },
-  exiting: {
-    opacity: 0
-  }
-};
-
-function getTransitionClass$2(status) {
-  return transitionStatusToClassHash$2[status] || '';
-}
-
-var Offcanvas =
-/*#__PURE__*/
-function (_Component) {
-  _inheritsLoose(Offcanvas, _Component);
-
-  function Offcanvas() {
-    return _Component.apply(this, arguments) || this;
-  }
-
-  var _proto = Offcanvas.prototype;
-
-  _proto.render = function render() {
-    var _this$props = this.props,
-        Tag = _this$props.tag,
-        children = _this$props.children,
-        isOpen = _this$props.isOpen,
-        onClose = _this$props.onClose,
-        attributes = _objectWithoutPropertiesLoose(_this$props, ["tag", "children", "isOpen", "onClose"]);
-
-    var transitionProps = pick$2(attributes, TransitionPropTypeKeys$2);
-    var childProps = omit$2(attributes, TransitionPropTypeKeys$2);
-    return React.createElement(Transition, _extends({}, transitionProps, {
-      "in": isOpen
-    }), function (status) {
-      var transitionClass = getTransitionClass$2(status);
-      var currentStyles = transitionStyles[status];
-      return React.createElement("div", _extends({
-        className: transitionClass,
-        style: _extends({}, defaultStyle, {}, childProps.style, {}, currentStyles)
-      }, childProps), React.createElement("div", {
-        className: "close-div",
-        onClick: onClose
-      }, React.createElement(Button, {
-        className: "close-menu",
-        color: ""
-      }, React.createElement("span", {
-        className: "it-close"
-      }), "close")), React.createElement("div", {
-        className: "menu-wrapper"
-      }, React.createElement(Tag, null, children)));
-    });
-  };
-
-  return Offcanvas;
-}(Component);
-Offcanvas.propTypes = propTypes$9;
-Offcanvas.defaultProps = defaultProps$9;
-
-var propTypes$a = {
+var propTypes$9 = {
   children: PropTypes.node,
   className: PropTypes.string,
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   'aria-label': PropTypes.string
 };
-var defaultProps$a = {
+var defaultProps$9 = {
   tag: 'nav',
   'aria-label': 'pagination'
 };
@@ -1722,15 +1632,15 @@ var Pager = function Pager(props) {
   }, children);
 };
 
-Pager.propTypes = propTypes$a;
-Pager.defaultProps = defaultProps$a;
+Pager.propTypes = propTypes$9;
+Pager.defaultProps = defaultProps$9;
 
-var propTypes$b = {
+var propTypes$a = {
   className: PropTypes.string,
   size: PropTypes.string,
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
 };
-var defaultProps$b = {
+var defaultProps$a = {
   tag: 'ul'
 };
 
@@ -1748,8 +1658,8 @@ var PagerList = function PagerList(props) {
   }));
 };
 
-PagerList.propTypes = propTypes$b;
-PagerList.defaultProps = defaultProps$b;
+PagerList.propTypes = propTypes$a;
+PagerList.defaultProps = defaultProps$a;
 
 var PasswordInput =
 /*#__PURE__*/
@@ -1892,11 +1802,11 @@ PasswordMeter.propTypes = {
   }))
 };
 
-var propTypes$c = {
+var propTypes$b = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string
 };
-var defaultProps$c = {
+var defaultProps$b = {
   tag: 'div'
 };
 
@@ -1911,14 +1821,14 @@ var Skiplink = function Skiplink(props) {
   }, attributes));
 };
 
-Skiplink.propTypes = propTypes$c;
-Skiplink.defaultProps = defaultProps$c;
+Skiplink.propTypes = propTypes$b;
+Skiplink.defaultProps = defaultProps$b;
 
-var propTypes$d = {
+var propTypes$c = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string
 };
-var defaultProps$d = {
+var defaultProps$c = {
   tag: 'a'
 };
 
@@ -1933,8 +1843,8 @@ var SkiplinkItem = function SkiplinkItem(props) {
   }, attributes));
 };
 
-SkiplinkItem.propTypes = propTypes$d;
-SkiplinkItem.defaultProps = defaultProps$d;
+SkiplinkItem.propTypes = propTypes$c;
+SkiplinkItem.defaultProps = defaultProps$c;
 
 var Toggle =
 /*#__PURE__*/
@@ -1970,7 +1880,7 @@ Toggle.propTypes = _extends({
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
 }, Input$1.propTypes);
 
-var propTypes$e = {
+var propTypes$d = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
   secondary: PropTypes.bool,
@@ -1978,7 +1888,7 @@ var propTypes$e = {
   right: PropTypes.bool,
   dark: PropTypes.bool
 };
-var defaultProps$e = {
+var defaultProps$d = {
   tag: 'div'
 };
 
@@ -2007,10 +1917,10 @@ var Sidebar = function Sidebar(props) {
   })));
 };
 
-Sidebar.propTypes = propTypes$e;
-Sidebar.defaultProps = defaultProps$e;
+Sidebar.propTypes = propTypes$d;
+Sidebar.defaultProps = defaultProps$d;
 
-var propTypes$f = {
+var propTypes$e = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
   value: PropTypes.number,
@@ -2018,7 +1928,7 @@ var propTypes$f = {
   indeterminate: PropTypes.bool,
   color: PropTypes.string
 };
-var defaultProps$f = {
+var defaultProps$e = {
   tag: 'div',
   role: 'progressbar',
   indeterminate: false
@@ -2091,17 +2001,17 @@ function (_React$Component) {
   return Progress;
 }(React.Component);
 
-Progress.propTypes = propTypes$f;
-Progress.defaultProps = defaultProps$f;
+Progress.propTypes = propTypes$e;
+Progress.defaultProps = defaultProps$e;
 
-var propTypes$g = {
+var propTypes$f = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
   active: PropTypes.bool,
   small: PropTypes.bool,
   "double": PropTypes.bool
 };
-var defaultProps$g = {
+var defaultProps$f = {
   tag: 'span',
   indeterminate: false,
   active: false,
@@ -2155,10 +2065,10 @@ function (_React$Component) {
   return Spinner;
 }(React.Component);
 
-Spinner.propTypes = propTypes$g;
-Spinner.defaultProps = defaultProps$g;
+Spinner.propTypes = propTypes$f;
+Spinner.defaultProps = defaultProps$f;
 
-var propTypes$h = {
+var propTypes$g = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.node,
   isBig: PropTypes.bool,
@@ -2183,7 +2093,7 @@ var propTypes$h = {
   imageTitle: PropTypes.string,
   imageAlt: PropTypes.string
 };
-var defaultProps$h = {
+var defaultProps$g = {
   tag: 'div',
   link: false
 };
@@ -2292,14 +2202,14 @@ function (_React$Component) {
   return Card;
 }(React.Component);
 
-Card.propTypes = propTypes$h;
-Card.defaultProps = defaultProps$h;
+Card.propTypes = propTypes$g;
+Card.defaultProps = defaultProps$g;
 
-var propTypes$i = {
+var propTypes$h = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string
 };
-var defaultProps$i = {
+var defaultProps$h = {
   tag: 'nav'
 };
 
@@ -2313,10 +2223,10 @@ var BottomNav = function BottomNav(props) {
   }, React.createElement("ul", attributes));
 };
 
-BottomNav.propTypes = propTypes$i;
-BottomNav.defaultProps = defaultProps$i;
+BottomNav.propTypes = propTypes$h;
+BottomNav.defaultProps = defaultProps$h;
 
-var propTypes$j = {
+var propTypes$i = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
   active: PropTypes.bool,
@@ -2327,7 +2237,7 @@ var propTypes$j = {
   alert: PropTypes.bool,
   badge: PropTypes.bool
 };
-var defaultProps$j = {
+var defaultProps$i = {
   tag: 'a',
   link: '#',
   iconName: 'it-comment',
@@ -2376,8 +2286,8 @@ function (_React$Component) {
   return BottomNavItem;
 }(React.Component);
 
-BottomNavItem.propTypes = propTypes$j;
-BottomNavItem.defaultProps = defaultProps$j;
+BottomNavItem.propTypes = propTypes$i;
+BottomNavItem.defaultProps = defaultProps$i;
 
 WebFont.load({
   custom: {
@@ -2385,5 +2295,5 @@ WebFont.load({
   }
 });
 
-export { Accordion, AccordionBody, AccordionHeader, Badge, BottomNav, BottomNavItem, Card, Collapse, FormGroup, Hero, Icon, Input, LinkList, LinkListItem, Offcanvas, Pager, PagerList, PasswordInput, PasswordMeter, Progress, Scrollspy, Sidebar, Skiplink, SkiplinkItem, Spinner, Toggle };
+export { Accordion, AccordionBody, AccordionHeader, Badge, BottomNav, BottomNavItem, Card, Collapse, FormGroup, Hero, Icon, Input, LinkList, LinkListItem, Pager, PagerList, PasswordInput, PasswordMeter, Progress, Scrollspy, Sidebar, Skiplink, SkiplinkItem, Spinner, Toggle };
 //# sourceMappingURL=design-react-kit.es.js.map
