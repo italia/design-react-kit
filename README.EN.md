@@ -90,29 +90,32 @@ Static pages obtained from the compilation process generate under the `storybook
 
 ### Package
 
-To use Design React as a dependency in an app you can install it from [npm](https://www.npmjs.com/~italia):
+To use Design React as a dependency in an app you can install it from [npm](https://www.npmjs.com/~italia). We suggest to use `create-react-app` to create a new React webapp from scratch as follows:
 
 ```sh
-$ npm install design-react-kit
+$ create-react-app nome-app
+$ cd nome-app
+$ yarn add design-react-kit --save
 ```
 
-Then, you need to import CSS e font (already included in the `design-react-kit` npm package) as shown:
+Then, you just need to import CSS e font that are already included in the `design-react-kit` npm package, editing `./src/App.js` as shown:
 
 ```jsx
 import React from 'react';
+import './App.css';
 import { Alert } from 'design-react-kit';
 import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
 import 'typeface-titillium-web';
 import 'typeface-roboto-mono';
 import 'typeface-lora';
 
-const Example = () => {
-  return (
-    <Alert>
-        Questo è un alert
-    </Alert>
-  );
+const App = () => {
+    return (
+        <Alert>This is an Alert</Alert>
+    );
 };
+
+export default App;
 ```
 
 #### Peer dependencies
