@@ -46,7 +46,7 @@ Then run the `yarn storybook:serve` command to start the development server.
 
 Storybook will therefore be available at http://localhost:9001/
 
-![storybook](/static/assets/storybook-screenshot.jpg?raw=true)
+![storybook](/assets/storybook-screenshot.jpg?raw=true)
 
 Public version of the Storybook is available [here](https://italia.github.io/design-react-kit).
 

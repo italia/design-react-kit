@@ -47,7 +47,7 @@ Quindi esegui `yarn storybook:serve` per avviare il server di sviluppo.
 
 Storybook sarà quindi disponibile all'indirizzo http://localhost:9001/
 
-![storybook](/static/assets/storybook-screenshot.jpg?raw=true)
+![storybook](/assets/storybook-screenshot.jpg?raw=true)
 
 ## Come creare nuovi componenti
 
