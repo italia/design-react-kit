@@ -74,7 +74,7 @@ exports[`Storyshots Componenti/Popover Esempi 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Clicca par attivare/disattivare il popover
+        Clicca per attivare/disattivare il popover
       </button>
     </div>
   </div>

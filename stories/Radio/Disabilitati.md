@@ -1,3 +1,0 @@
-### Radio button disabilitati
-
-<!-- STORY -->

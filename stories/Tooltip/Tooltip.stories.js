@@ -1,159 +1,142 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withKnobs, text, select } from "@storybook/addon-knobs/react";
-import { checkA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
-import { withDocs, envIs } from "../utils";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withKnobs, text, select } from '@storybook/addon-knobs/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
+import { UncontrolledTooltip, Button } from '../../src'
 
-import { Tooltip, UncontrolledTooltip, Button } from "../../src";
-
-import Esempi from "./Esempi.md";
-import Posizioni from "./Posizioni.md";
-import EsempiInterattivi from "./EsempiInterattivi.md";
-
-const stories = storiesOf("Componenti/Tooltip", module);
-stories.addDecorator(checkA11y);
+import Esempi from './docs/Esempi.md'
+import Posizioni from './docs/Posizioni.md'
+import EsempiInterattivi from './docs/EsempiInterattivi.md'
 
 const EsempiComponent = () => {
-    if (envIs("test")) {
-        // Current story has a dependency on the DOM, skip it for now
-        return null;
-    }
+  const ids = ['Example1', 'Example2', 'Example3']
+  const target = i => document.getElementById(ids[i])
 
-    const ids = ["Example1", "Example2", "Example3"];
-    const target = i => document.getElementById(ids[i]);
-
-    return (
-        <div className="bd-example tooltip-demo">
-            <p className="muted">
-                Ecco un{" "}
-                <a href="#" id={ids[0]}>
+  return (
+    <div className='bd-example tooltip-demo'>
+      <p className='muted'>
+                Ecco un{' '}
+        <a href='#' id={ids[0]}>
                     bianco scenario
-                </a>
-                <br />
+        </a>
+        <br />
                 per tratteggiarvi l’accompagnamento
-                <br />
+        <br />
                 degli oggetti di sfondo che pur vivono.
-                <br />
-                Non ne sarò{" "}
-                <a href="#" id={ids[1]}>
+        <br />
+                Non ne sarò{' '}
+        <a href='#' id={ids[1]}>
                     l’artefice
-                </a>{" "}
+        </a>{' '}
                 impaziente.
-                <br />
+        <br />
                 Berrò alle coppe della nostalgia,
-                <br />
+        <br />
                 avrò preteso d’ozio nelle lacrime...
-                <br />
+        <br />
                 perché non mi ribello alla natura:
-                <br />
+        <br />
                 la mia lentezza li esaspera...
-                <br />
+        <br />
                 La mia lentezza? No, la mia fiducia.
-                <br />
+        <br />
                 Per adesso è deserto.
-                <br />
-                <a href="#" id={ids[2]}>
+        <br />
+        <a href='#' id={ids[2]}>
                     Il mondo può rifarsi senza me
-                </a>,
-                <br />
+        </a>,
+        <br />
                 E intanto gli altri mi denigreranno
-            </p>
-            <p>
-                <em>La città nuova, Alda Merini</em>
-            </p>
+      </p>
+      <p>
+        <em>La città nuova, Alda Merini</em>
+      </p>
 
-            <UncontrolledTooltip placement="top" target={() => target(0)}>
+      <UncontrolledTooltip placement='top' target={() => target(0)}>
                 Primo tooltip
-            </UncontrolledTooltip>
-            <UncontrolledTooltip placement="top" target={() => target(1)}>
+      </UncontrolledTooltip>
+      <UncontrolledTooltip placement='top' target={() => target(1)}>
                 Secondo tooltip
-            </UncontrolledTooltip>
-            <UncontrolledTooltip placement="top" target={() => target(2)}>
+      </UncontrolledTooltip>
+      <UncontrolledTooltip placement='top' target={() => target(2)}>
                 Terzo tooltip
-            </UncontrolledTooltip>
-        </div>
-    );
-};
-stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
+      </UncontrolledTooltip>
+    </div>
+  )
+}
 
 const PosizioniComponent = () => {
-    if (envIs("test")) {
-        // Current story has a dependency on the DOM, skip it for now
-        return null;
-    }
+  const ids = ['example1', 'example2', 'example3', 'example4', 'example5']
+  const target = i => document.getElementById(ids[i])
 
-    const ids = ["example1", "example2", "example3", "example4", "example5"];
-    const target = i => document.getElementById(ids[i]);
-
-    return (
-        <div style={{ padding: 100 }}>
-            <Button id={ids[0]} className="m-3">
+  return (
+    <div style={{ padding: 100 }}>
+      <Button id={ids[0]} className='m-3'>
                 Tooltip in alto
-            </Button>
-            <Button id={ids[1]} className="m-3">
+      </Button>
+      <Button id={ids[1]} className='m-3'>
                 Tooltip a destra
-            </Button>
-            <Button id={ids[2]} className="m-3">
+      </Button>
+      <Button id={ids[2]} className='m-3'>
                 Tooltip in basso
-            </Button>
-            <Button id={ids[3]} className="m-3">
+      </Button>
+      <Button id={ids[3]} className='m-3'>
                 Tooltip a sinistra
-            </Button>
-            <Button id={ids[4]} className="m-3">
+      </Button>
+      <Button id={ids[4]} className='m-3'>
                 Tooltip con HTML
-            </Button>
+      </Button>
 
-            <UncontrolledTooltip placement="top" target={() => target(0)}>
+      <UncontrolledTooltip placement='top' target={() => target(0)}>
                 Tooltip on top
-            </UncontrolledTooltip>
-            <UncontrolledTooltip placement="right" target={() => target(1)}>
+      </UncontrolledTooltip>
+      <UncontrolledTooltip placement='right' target={() => target(1)}>
                 Tooltip on right
-            </UncontrolledTooltip>
-            <UncontrolledTooltip placement="bottom" target={() => target(2)}>
+      </UncontrolledTooltip>
+      <UncontrolledTooltip placement='bottom' target={() => target(2)}>
                 Tooltip on bottom
-            </UncontrolledTooltip>
-            <UncontrolledTooltip placement="left" target={() => target(3)}>
+      </UncontrolledTooltip>
+      <UncontrolledTooltip placement='left' target={() => target(3)}>
                 Tooltip on left
-            </UncontrolledTooltip>
-            <UncontrolledTooltip placement="top" target={() => target(4)}>
-                <em>Tooltip</em> <u>with</u> <b>HTML</b>
-            </UncontrolledTooltip>
-        </div>
-    );
-};
-stories.add("Posizioni", withDocs(Posizioni, withInfo()(PosizioniComponent)));
-
-const knobsStories = storiesOf("Componenti/Tooltip", module);
-knobsStories.addDecorator(checkA11y);
-knobsStories.addDecorator(withKnobs);
+      </UncontrolledTooltip>
+      <UncontrolledTooltip placement='top' target={() => target(4)}>
+        <em>Tooltip</em> <u>with</u> <b>HTML</b>
+      </UncontrolledTooltip>
+    </div>
+  )
+}
 
 const EsempiInterattiviComponent = () => {
-    if (envIs("test")) {
-        // Current story has a dependency on the DOM, skip it for now
-        return null;
-    }
+  const id = 'example'
+  const target = () => document.getElementById(id)
 
-    const id = "example";
-    const target = () => document.getElementById(id);
+  const placements = ['top', 'bottom', 'left', 'right']
+  const placement = select('Posizione', placements, placements[0])
+  const body = text('Body', 'Tooltip')
 
-    const placements = ["top", "bottom", "left", "right"];
-    const placement = select("Posizione", placements, placements[0]);
-    const body = text("Body", "Tooltip");
-
-    return (
-        <div style={{ padding: 200 }}>
-            <Button id={id} className="m-3">
+  return (
+    <div style={{ padding: 200 }}>
+      <Button id={id} className='m-3'>
                 Tooltip
-            </Button>
+      </Button>
 
-            <UncontrolledTooltip placement={placement} target={target}>
-                {body}
-            </UncontrolledTooltip>
-        </div>
-    );
-};
-knobsStories.add(
-    "Esempi interattivi",
-    withDocs(EsempiInterattivi, withInfo()(EsempiInterattiviComponent))
-);
+      <UncontrolledTooltip placement={placement} target={target}>
+        {body}
+      </UncontrolledTooltip>
+    </div>
+  )
+}
+
+storiesOf('Componenti/Tooltip', module)
+  .addDecorator(withA11y)
+  .add('Esempi', withInfo({
+    text: Esempi
+  })(EsempiComponent))
+  .add('Posizioni', withInfo({
+    text: Posizioni
+  })(PosizioniComponent))
+  .addDecorator(withKnobs)
+  .add('Esempi interattivi', withInfo({
+    text: EsempiInterattivi
+  })(EsempiInterattiviComponent))

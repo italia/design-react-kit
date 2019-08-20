@@ -1,3 +1,0 @@
-### Radio buttons inline
-
-<!-- STORY -->

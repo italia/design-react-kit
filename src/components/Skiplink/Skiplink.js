@@ -1,25 +1,25 @@
-import React from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const propTypes = {
-    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-    className: PropTypes.string
-};
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  className: PropTypes.string
+}
 
 const defaultProps = {
-    tag: "div"
-};
+  tag: 'div'
+}
 
-const Skiplink = props => {
-    const { className, tag: Tag, ...attributes } = props;
+const Skiplink = (props) => {
+  const { className, tag: Tag, ...attributes } = props
 
-    const classes = classNames(className, "skiplinks");
+  const classes = classNames(className, 'skiplinks')
 
-    return <Tag className={classes} {...attributes} />;
-};
+  return <Tag className={classes} {...attributes} />
+}
 
-Skiplink.propTypes = propTypes;
-Skiplink.defaultProps = defaultProps;
+Skiplink.propTypes = propTypes
+Skiplink.defaultProps = defaultProps
 
-export default Skiplink;
+export default Skiplink

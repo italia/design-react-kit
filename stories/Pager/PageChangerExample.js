@@ -3,7 +3,6 @@ import {
     Dropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem,
     LinkList,
     LinkListItem
 } from "../../src";

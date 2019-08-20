@@ -1,28 +1,57 @@
-import { configure } from "@storybook/react";
-import { setOptions } from "@storybook/addon-options";
-import { setDefaults } from "@storybook/addon-info";
+import React from 'react';
+import {addParameters, addDecorator, configure} from '@storybook/react';
+import {default as theme} from './theme.js';
 
-import "bootstrap-italia/dist/css/bootstrap-italia.min.css";
-import "bootstrap-italia/dist/css/italia-icon-font.css";
-import "../assets/docs.min.css";
+import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
+import '../assets/css/fonts.css';
 
-// addon-info
-setDefaults({
-    header: false,
-    inline: true
+
+const styles = {
+    position: 'relative',
+    boxSizing: 'border-box',
+    margin: '0',
+    padding: '48px 32px',
+    textAlign: 'initial'
+};
+const CenterDecorator = storyFn => <div style={styles}>{storyFn()}</div>;
+
+addParameters({
+    options: {
+        /**
+         * display panel that shows a list of stories
+         * @type {Boolean}
+         */
+        showNav: true,
+        /**
+         * display panel that shows addon configurations
+         * @type {Boolean}
+         */
+        showPanel: true,
+        /**
+         * where to show the addon panel
+         * @type {('bottom'|'right')}
+         */
+        panelPosition: 'bottom',
+        /**
+         * regex for finding the hierarchy root separator
+         * @example:
+         *   null - turn off multiple hierarchy roots
+         *   /\|/ - split by `|`
+         * @type {Regex}
+         */
+        hierarchyRootSeparator: /\//,
+        /**
+         * theme storybook, see link below
+         */
+        theme: theme,
+    },
 });
 
-// addon-options
-// https://github.com/storybooks/storybook/tree/master/addons/options
-setOptions({
-    // name to display in the top left corner
-    name: "design-react-kit",
-    // URL for name in top left corner to link to
-    url: "https://github.com/italia/design-react-kit/"
-});
+addDecorator(CenterDecorator);
 
 function loadStories() {
-    require("../stories");
+    require('../stories/index.js');
+    // You can require as many stories as you need.
 }
 
 configure(loadStories, module);

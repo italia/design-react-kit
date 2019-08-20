@@ -1,3 +1,0 @@
-## Esempi con markup
-
-<!-- STORY -->

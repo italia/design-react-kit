@@ -1,0 +1,1 @@
+Per creare una sidebar con linea separatrice a destra è sufficiente aggiungere la  parola chiave `right` al wrapper più esterno: `<Sidebar right>`.

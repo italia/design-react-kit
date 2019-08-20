@@ -1,130 +1,152 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withKnobs, select, boolean, text } from "@storybook/addon-knobs/react";
-import { checkA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
+import React from 'react'
+import PropTypes from "prop-types";
+import { storiesOf } from '@storybook/react'
+import { withKnobs, select, boolean, text } from '@storybook/addon-knobs/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
-import { State, Store } from "@sambego/storybook-state";
+import { State, Store } from '@sambego/storybook-state'
 
-import { Popover, PopoverHeader, PopoverBody, Button } from "../../src";
+import { Popover, PopoverHeader, PopoverBody, Button } from '../../src'
 
-import PopoverExample from "./PopoverExample";
-import PopoverPositionExample from "./PopoverPositionExample";
+import PopoverExample from './PopoverExample'
+import PopoverPositionExample from './PopoverPositionExample'
+import PopoverIconLink from './PopoverIconLink'
+import PopoverHover from './PopoverHover'
+import PopoverFocus from './PopoverFocus'
 
-import Esempi from "./Esempi.md";
-import QuattroDirezioni from "./QuattroDirezioni.md";
-import ElementiDisabilitati from "./ElementiDisabilitati.md";
-import EsempiInterattivi from "./EsempiInterattivi.md";
-
-const stories = storiesOf("Componenti/Popover", module);
-stories.addDecorator(checkA11y);
-
-stories.add(
-    "Esempi",
-    withDocs(
-        Esempi,
-        withInfo({
-            propTables: [Popover, PopoverHeader, PopoverBody],
-            propTablesExclude: [PopoverExample]
-        })(() => <PopoverExample />)
-    )
-);
-
-stories.add(
-    "Le quattro direzioni",
-    withDocs(
-        QuattroDirezioni,
-        withInfo({
-            propTables: [Popover, PopoverHeader, PopoverBody],
-            propTablesExclude: [PopoverPositionExample]
-        })(() => <PopoverPositionExample />)
-    )
-);
+import Esempi from './docs/Esempi.md'
+import QuattroDirezioni from './docs/QuattroDirezioni.md'
+import ElementiDisabilitati from './docs/ElementiDisabilitati.md'
+import EsempiInterattivi from './docs/EsempiInterattivi.md'
+import IconLink from './docs/IconLink.md'
+import Hover from './docs/Hover.md'
+import Focus from './docs/Focus.md'
 
 const ElementiDisabilitatiComponent = () => {
-    const id = "example";
-    // Avoid Jest complaints
-    const target = () => document.getElementById(id);
+  const id = 'example'
+  // Avoid Jest complaints
+  const target = () => document.getElementById(id)
 
-    return (
-        <div>
-            <Button color="primary" id={id} disabled>
+  return (
+    <div>
+      <Button color='primary' id={id} disabled>
                 Popover disabilitato
-            </Button>
-            <Popover placement="right" target={target}>
-                <PopoverHeader>Titolo del popover</PopoverHeader>
-                <PopoverBody>
-                    Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente.
-                    Non trovi?
-                </PopoverBody>
-            </Popover>
-        </div>
-    );
-};
-stories.add(
-    "Elementi disabilitati",
-    withDocs(
-        ElementiDisabilitati,
-        withInfo({
-            propTablesExclude: [Button]
-        })(ElementiDisabilitatiComponent)
-    )
-);
+      </Button>
+      <Popover placement='right' target={target}>
+        <PopoverHeader>Titolo del popover</PopoverHeader>
+        <PopoverBody>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vel finibus augue.
+        </PopoverBody>
+      </Popover>
+    </div>
+  )
+}
 
 const store = new Store({
-    isOpen: false
-});
+  isOpen: false
+})
 
-const knobsStories = storiesOf("Componenti/Popover", module);
-knobsStories.addDecorator(checkA11y);
-knobsStories.addDecorator(withKnobs);
-
-const EsempiInterattiviComponent = () => {
-    const disabled = boolean("Disabilitato", false);
-    const placements = ["top", "bottom", "left", "right"];
-    const placement = select("Posizione", placements, placements[0]);
-    const title = text("Titolo", "Titolo del popover");
-    const body = text(
-        "Body",
-        "Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente. Non trovi?"
-    );
-
-    const id = "example";
+// Changed The Functional Component to a Class
+class EsempiInterattiviComponent extends React.Component {
+  constructor (props) {
+    super(props)
+    this.id = 'example'
     // Avoid Jest complaints
-    const target = () => document.getElementById(id);
+    this.target = () => document.getElementById(this.id)
+  }
 
+  // All a LifeCycle Method to manage the store State when components unrender.
+  componentWillUnmount () {
+    store.set({ isOpen: false })
+  }
+
+  render () {
     return (
-        <div style={{ padding: 250 }}>
-            <Button
-                id={id}
-                color="primary"
-                disabled={disabled}
-                onClick={() => store.set({ isOpen: !store.get("isOpen") })}
-            >
-                Popover {disabled ? "Disabilitato" : ""}
-            </Button>
+      <div style={{ padding: 250, textAlign: 'center' }}>
+        <Button
+          id={this.id}
+          color='primary'
+          disabled={this.props.disabled}
+          onClick={() => store.set({ isOpen: !store.get('isOpen') })}
+        >
+                    Popover {this.props.disabled ? 'Disabilitato' : ''}
+        </Button>
 
-            <State store={store}>
-                <Popover
-                    placement={placement}
-                    target={target}
-                    toggle={() => store.set({ isOpen: !store.get("isOpen") })}
-                    isOpen={store.get("isOpen")}
-                >
-                    <PopoverHeader>{title}</PopoverHeader>
-                    <PopoverBody>{body}</PopoverBody>
-                </Popover>
-            </State>
-        </div>
-    );
-};
-knobsStories.add(
-    "Esempi interattivi",
-    withDocs(
-        EsempiInterattivi,
-        withInfo({
-            propTablesExclude: [Button, State]
-        })(EsempiInterattiviComponent)
+        <State store={store}>
+          <Popover
+            placement={this.props.placement}
+            target={this.target}
+            toggle={() => store.set({ isOpen: !store.get('isOpen') })}
+            isOpen={store.get('isOpen')}
+          >
+            <PopoverHeader>{this.props.title}</PopoverHeader>
+            <PopoverBody>{this.props.body}</PopoverBody>
+          </Popover>
+        </State>
+      </div>
     )
-);
+  }
+}
+
+EsempiInterattiviComponent.propTypes = {
+  disabled: PropTypes.bool,
+  placement: PropTypes.string,
+  title: PropTypes.string,
+  body: PropTypes.string
+}
+
+storiesOf('Componenti/Popover', module)
+  .addDecorator(withA11y)
+  .add('Esempi', withInfo({
+    text: Esempi,
+    propTables: [Popover, PopoverHeader, PopoverBody],
+    propTablesExclude: [PopoverExample]
+  })(() => <PopoverExample />))
+  .add('Le quattro direzioni', withInfo({
+    text: QuattroDirezioni,
+    propTables: [Popover, PopoverHeader, PopoverBody],
+    propTablesExclude: [PopoverPositionExample]
+  })(() => <PopoverPositionExample />))
+  .add('Titolo con icona e link', withInfo({
+    text: IconLink,
+    propTables: [Popover, PopoverHeader, PopoverBody],
+    propTablesExclude: [PopoverExample]
+  })(() => <PopoverIconLink />))
+  .add('Modalità Hover', withInfo({
+    text: Hover,
+    propTables: [Popover, PopoverHeader, PopoverBody],
+    propTablesExclude: [PopoverExample]
+  })(() => <PopoverHover />))
+  .add('Dismiss al click successivo', withInfo({
+    text: Focus,
+    propTables: [Popover, PopoverHeader, PopoverBody],
+    propTablesExclude: [PopoverExample]
+  })(() => <PopoverFocus />))
+  .add('Elementi disabilitati', withInfo({
+    text: ElementiDisabilitati,
+    propTablesExclude: [Button]
+  })(ElementiDisabilitatiComponent))
+  .addDecorator(withKnobs)
+  .add('Esempi interattivi', withInfo({
+    text: EsempiInterattivi,
+    propTablesExclude: [Button, State]
+  })(props => {
+    // All the proerties for Addon Knobs are placed back in the function
+    const disabled = boolean('Disabilitato', false)
+    const placements = ['top', 'bottom', 'left', 'right']
+    const placement = select('Posizione', placements, placements[0])
+    const title = text('Titolo', 'Titolo del popover')
+    const body = text(
+      'Body',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.'
+    )
+    // All the knob properties are passed as props
+    return <EsempiInterattiviComponent
+      disabled={disabled}
+      placement={placement}
+      title={title}
+      body={body}
+      {...props} />
+  }))

@@ -1,3 +1,0 @@
-### Contenuto personalizzato
-
-<!-- STORY -->

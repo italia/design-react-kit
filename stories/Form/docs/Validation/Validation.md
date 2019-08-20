@@ -1,0 +1,1 @@
+Use the keywords `valid` and `invalid` to validate the fields. The keyword `infoText` can be used to display small info below the input fields.

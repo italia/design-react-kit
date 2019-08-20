@@ -4,12 +4,19 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Util } from "reactstrap";
+
 const { mapToCssModules, deprecated, warnOnce } = Util;
 
 const propTypes = {
     children: PropTypes.node,
     type: PropTypes.string,
     size: PropTypes.string,
+    label: PropTypes.string,
+    placeholder: PropTypes.string,
+    value: PropTypes.string,
+    id: PropTypes.string,
+    infoText: PropTypes.string,
+    normalized: PropTypes.bool,
     bsSize: PropTypes.string,
     state: deprecated(
         PropTypes.string,
@@ -35,22 +42,51 @@ const defaultProps = {
 };
 
 class Input extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            isFocused: false,
+            hidden: true,
+            icon: true
+        };
+        this.toggleShow = this.toggleShow.bind(this);
+    }
+    toggleFocusLabel = () => {
+        this.setState({
+            isFocused: true
+        });
+    };
+
+    toggleBlurLabel = e => {
+        if (e.target.value === "") {
+            this.setState({
+                isFocused: !this.state.isFocused
+            });
+        }
+    };
+
+    toggleShow() {
+        this.setState({ hidden: !this.state.hidden, icon: !this.state.icon });
+    }
     render() {
-        let {
+        const {
             className,
             cssModule,
             type,
-            bsSize,
             state,
-            valid,
-            invalid,
             tag,
             addon,
             static: staticInput,
             plaintext,
             innerRef,
+            label,
+            infoText,
+            placeholder,
+            normalized,
+            value,
             ...attributes
         } = this.props;
+        let { bsSize, valid, invalid } = this.props;
 
         const checkInput = ["radio", "checkbox"].indexOf(type) > -1;
         const isNotaNumber = new RegExp("\\D", "g");
@@ -61,6 +97,7 @@ class Input extends React.Component {
         let Tag = tag || (selectInput || textareaInput ? type : "input");
 
         let formControlClass = "form-control";
+        let infoTextControlClass = "form-text text-muted";
 
         if (plaintext || staticInput) {
             formControlClass = `${formControlClass}-plaintext`;
@@ -76,6 +113,10 @@ class Input extends React.Component {
                 formControlClass = 'form-check-input';
             }
             */
+        }
+        if (valid || invalid)
+        {
+            infoTextControlClass = null;
         }
 
         if (
@@ -108,6 +149,17 @@ class Input extends React.Component {
             ),
             cssModule
         );
+        const wrapperClass = mapToCssModules(
+            classNames(className, "form-group"),
+            cssModule
+        );
+        const infoTextClass = mapToCssModules(
+            classNames(className,
+            valid ? 'valid-feedback': false,
+            invalid ? 'invalid-feedback': false,
+            infoTextControlClass
+            )
+        );
 
         if (Tag === "input" || typeof tag !== "string") {
             attributes.type = type;
@@ -127,6 +179,122 @@ class Input extends React.Component {
                 `Input with a type of "${type}" cannot have children. Please use "value"/"defaultValue" instead.`
             );
             delete attributes.children;
+        }
+        if (placeholder || value) {
+            return (
+                <div className={wrapperClass}>
+                    <Tag
+                        {...attributes}
+                        ref={innerRef}
+                        className={classes}
+                        id={this.props.id}
+                        onFocus={this.toggleFocusLabel}
+                        onBlur={e => this.toggleBlurLabel(e)}
+                        placeholder={this.props.placeholder}
+                        value={this.props.value}
+                    />
+                    <label htmlFor={this.props.id} className="active">
+                        {this.props.label}
+                    </label>
+                    <small className={infoTextClass}>
+                        {this.props.infoText}
+                    </small>
+                </div>
+            );
+        }
+        if (attributes.type === "password") {
+            return (
+                <div className={wrapperClass}>
+                    <Tag
+                        {...attributes}
+                        ref={innerRef}
+                        type={this.state.hidden ? "password" : "text"}
+                        className={
+                            this.state.isFocused
+                                ? "form-control input-password focus--mouse"
+                                : "form-control input-password"
+                        }
+                        onFocus={this.toggleFocusLabel}
+                        onBlur={e => this.toggleBlurLabel(e)}
+                        id={this.props.id}
+                        placeholder={this.props.placeholder}
+                        value={this.props.value}
+                    />
+                    <span className="password-icon" aria-hidden="true">
+                        <svg
+                            className="password-icon-visible icon icon-sm"
+                            onClick={this.toggleShow}
+                        >
+                            <use
+                                xlinkHref={`/svg/sprite.svg#it-password-${
+                                    this.state.icon ? "visible" : "invisible"
+                                }`}
+                            />
+                        </svg>
+                    </span>
+                    <label
+                        htmlFor={this.props.id}
+                        className={this.state.isFocused ? "active" : ""}
+                    >
+                        {this.props.label}
+                    </label>
+                    <small className={infoTextClass}>
+                        {this.props.infoText}
+                    </small>
+                </div>
+            );
+        }
+        if (normalized) {
+            return (
+                <div className={wrapperClass}>
+                    <Tag
+                        {...attributes}
+                        className={
+                            this.state.isFocused
+                                ? "form-control-plaintext focus--mouse"
+                                : "form-control-plaintext"
+                        }
+                        onFocus={this.toggleFocusLabel}
+                        onBlur={e => this.toggleBlurLabel(e)}
+                        id={this.props.id}
+                        value={this.props.value}
+                        readOnly
+                    />
+                    <label
+                        htmlFor={this.props.id}
+                        className={this.state.isFocused ? "active" : ""}
+                    >
+                        {this.props.label}
+                    </label>
+                    <small className={infoTextClass}>
+                        {this.props.infoText}
+                    </small>
+                </div>
+            );
+        }
+        if (label || infoText) {
+            return (
+                <div className={wrapperClass}>
+                    <Tag
+                        {...attributes}
+                        ref={innerRef}
+                        className={classes}
+                        id={this.props.id}
+                        onFocus={this.toggleFocusLabel}
+                        onBlur={e => this.toggleBlurLabel(e)}
+                        value={this.props.value}
+                    />
+                    <label
+                        htmlFor={this.props.id}
+                        className={this.state.isFocused ? "active" : ""}
+                    >
+                        {this.props.label}
+                    </label>
+                    <small className={infoTextClass}>
+                        {this.props.infoText}
+                    </small>
+                </div>
+            );
         }
 
         return <Tag {...attributes} ref={innerRef} className={classes} />;

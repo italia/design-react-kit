@@ -1,25 +1,25 @@
-import React from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const propTypes = {
-    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-    className: PropTypes.string
-};
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  className: PropTypes.string
+}
 
 const defaultProps = {
-    tag: "a"
-};
+  tag: 'a'
+}
 
-const SkiplinkItem = props => {
-    const { className, tag: Tag, ...attributes } = props;
+const SkiplinkItem = (props) => {
+  const { className, tag: Tag, ...attributes } = props
 
-    const classes = classNames(className, "sr-only", "sr-only-focusable");
+  const classes = classNames(className, 'sr-only', 'sr-only-focusable')
 
-    return <Tag className={classes} {...attributes} />;
-};
+  return <Tag className={classes} {...attributes} />
+}
 
-SkiplinkItem.propTypes = propTypes;
-SkiplinkItem.defaultProps = defaultProps;
+SkiplinkItem.propTypes = propTypes
+SkiplinkItem.defaultProps = defaultProps
 
-export default SkiplinkItem;
+export default SkiplinkItem

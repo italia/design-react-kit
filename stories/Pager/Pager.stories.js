@@ -1,539 +1,526 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withKnobs, select, boolean } from "@storybook/addon-knobs/react";
-import { Viewport } from "@storybook/addon-viewport";
-import { checkA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withKnobs, select, boolean } from '@storybook/addon-knobs/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
 import {
-    Pager,
-    PagerList,
-    PagerItem,
-    PagerLink,
-    Form,
-    FormGroup,
-    Input,
-    Label
-} from "../../src";
-import PageChangerExample from "./PageChangerExample";
+  Pager,
+  PagerList,
+  PagerItem,
+  PagerLink,
+  Form,
+  FormGroup,
+  Input,
+  Label
+} from '../../src'
+import PageChangerExample from './PageChangerExample'
 
-import Esempi from "./Esempi.md";
-import StatoDisabilitatoAttivo from "./StatoDisabilitatoAttivo.md";
-import Allineamento from "./Allineamento.md";
-import Responsive from "./Responsive.md";
-import More from "./More.md";
-import Changer from "./Changer.md";
-import Jump from "./Jump.md";
-import Simple from "./Simple.md";
-import Link from "./Link.md";
-import Total from "./Total.md";
-import EsempiInterattivi from "./EsempiInterattivi.md";
-
-const stories = storiesOf("Componenti/Pager", module);
-stories.addDecorator(checkA11y);
+import Esempi from './docs/Esempi.md'
+import StatoDisabilitatoAttivo from './docs/StatoDisabilitatoAttivo.md'
+import Allineamento from './docs/Allineamento.md'
+import Responsive from './docs/Responsive.md'
+import More from './docs/More.md'
+import Changer from './docs/Changer.md'
+import Jump from './docs/Jump.md'
+import Simple from './docs/Simple.md'
+import Link from './docs/Link.md'
+import Total from './docs/Total.md'
+import EsempiInterattivi from './docs/EsempiInterattivi.md'
 
 const EsempiComponent = () => (
-    <Pager>
-        <PagerList>
-            <PagerItem>
-                <PagerLink previous href="#">
-                    <i className="it-chevron-left" />
-                </PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink href="#">1</PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink href="#">2</PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink href="#">3</PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink next href="#">
-                    <i className="it-chevron-right" />
-                </PagerLink>
-            </PagerItem>
-        </PagerList>
-    </Pager>
-);
-stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
+  <Pager>
+    <PagerList>
+      <PagerItem>
+        <PagerLink previous href='#'>
+          <i className='it-chevron-left' />
+        </PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink href='#'>1</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink href='#'>2</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink href='#'>3</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink next href='#'>
+          <i className='it-chevron-right' />
+        </PagerLink>
+      </PagerItem>
+    </PagerList>
+  </Pager>
+)
 
 const StatoDisabilitatoAttivoComponent = () => (
-    <Pager>
-        <PagerList>
-            <PagerItem disabled>
-                <PagerLink previous href="#">
-                    <i className="it-chevron-left" />
-                </PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink aria-current="page" href="#">
+  <Pager>
+    <PagerList>
+      <PagerItem disabled>
+        <PagerLink previous href='#'>
+          <i className='it-chevron-left' />
+        </PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink aria-current='page' href='#'>
                     1
-                </PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink href="#">2</PagerLink>
-            </PagerItem>
-            <PagerItem disabled>
-                <PagerLink href="#">3</PagerLink>
-            </PagerItem>
-            <PagerItem disabled>
-                <PagerLink next href="#">
-                    <i className="it-chevron-right" />
-                </PagerLink>
-            </PagerItem>
-        </PagerList>
-    </Pager>
-);
-stories.add(
-    "Stato disabilitato e attivo",
-    withDocs(
-        StatoDisabilitatoAttivo,
-        withInfo()(StatoDisabilitatoAttivoComponent)
-    )
-);
+        </PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink href='#'>2</PagerLink>
+      </PagerItem>
+      <PagerItem disabled>
+        <PagerLink href='#'>3</PagerLink>
+      </PagerItem>
+      <PagerItem disabled>
+        <PagerLink next href='#'>
+          <i className='it-chevron-right' />
+        </PagerLink>
+      </PagerItem>
+    </PagerList>
+  </Pager>
+)
 
 const AllineamentoComponent = () => (
-    <section>
-        <Pager size="sm" className="justify-content-center mb-3">
-            <PagerList>
-                <PagerItem disabled>
-                    <PagerLink previous href="#">
-                        <i className="it-chevron-left" />
-                    </PagerLink>
-                </PagerItem>
-                <PagerItem>
-                    <PagerLink aria-current="page" href="#">
+  <section>
+    <Pager size='sm' className='justify-content-center mb-3'>
+      <PagerList>
+        <PagerItem disabled>
+          <PagerLink previous href='#'>
+            <i className='it-chevron-left' />
+          </PagerLink>
+        </PagerItem>
+        <PagerItem>
+          <PagerLink aria-current='page' href='#'>
                         1
-                    </PagerLink>
-                </PagerItem>
-                <PagerItem>
-                    <PagerLink href="#">2</PagerLink>
-                </PagerItem>
-                <PagerItem>
-                    <PagerLink href="#">3</PagerLink>
-                </PagerItem>
-                <PagerItem>
-                    <PagerLink next href="#">
-                        <i className="it-chevron-right" />
-                    </PagerLink>
-                </PagerItem>
-            </PagerList>
-        </Pager>
+          </PagerLink>
+        </PagerItem>
+        <PagerItem>
+          <PagerLink href='#'>2</PagerLink>
+        </PagerItem>
+        <PagerItem>
+          <PagerLink href='#'>3</PagerLink>
+        </PagerItem>
+        <PagerItem>
+          <PagerLink next href='#'>
+            <i className='it-chevron-right' />
+          </PagerLink>
+        </PagerItem>
+      </PagerList>
+    </Pager>
 
-        <Pager size="sm" className="justify-content-end mb-3">
-            <PagerList>
-                <PagerItem disabled>
-                    <PagerLink previous href="#">
-                        <i className="it-chevron-left" />
-                    </PagerLink>
-                </PagerItem>
-                <PagerItem>
-                    <PagerLink aria-current="page" href="#">
+    <Pager size='sm' className='justify-content-end mb-3'>
+      <PagerList>
+        <PagerItem disabled>
+          <PagerLink previous href='#'>
+            <i className='it-chevron-left' />
+          </PagerLink>
+        </PagerItem>
+        <PagerItem>
+          <PagerLink aria-current='page' href='#'>
                         1
-                    </PagerLink>
-                </PagerItem>
-                <PagerItem>
-                    <PagerLink href="#">2</PagerLink>
-                </PagerItem>
-                <PagerItem>
-                    <PagerLink href="#">3</PagerLink>
-                </PagerItem>
-                <PagerItem>
-                    <PagerLink next href="#">
-                        <i className="it-chevron-right" />
-                    </PagerLink>
-                </PagerItem>
-            </PagerList>
-        </Pager>
-    </section>
-);
-stories.add(
-    "Allineamento",
-    withDocs(Allineamento, withInfo()(AllineamentoComponent))
-);
+          </PagerLink>
+        </PagerItem>
+        <PagerItem>
+          <PagerLink href='#'>2</PagerLink>
+        </PagerItem>
+        <PagerItem>
+          <PagerLink href='#'>3</PagerLink>
+        </PagerItem>
+        <PagerItem>
+          <PagerLink next href='#'>
+            <i className='it-chevron-right' />
+          </PagerLink>
+        </PagerItem>
+      </PagerList>
+    </Pager>
+  </section>
+)
 
 const ResponsiveComponent = () => (
-    <Viewport name="iphone6">
-        <Pager className="mb-3">
-            <PagerList>
-                <PagerItem>
-                    <PagerLink previous href="#">
-                        <i className="it-chevron-left" />
-                    </PagerLink>
-                </PagerItem>
-                <PagerItem className="d-none d-sm-block">
-                    <PagerLink href="#">9</PagerLink>
-                </PagerItem>
-                <PagerItem className="d-none d-sm-block">
-                    <PagerLink href="#">10</PagerLink>
-                </PagerItem>
-                <PagerItem>
-                    <PagerLink aria-current="page" href="#">
-                        <span className="d-sm-none">Pagina&nbsp;</span>11
-                    </PagerLink>
-                </PagerItem>
-                <PagerItem className="d-none d-sm-block">
-                    <PagerLink href="#">12</PagerLink>
-                </PagerItem>
-                <PagerItem className="d-none d-sm-block">
-                    <PagerLink href="#">13</PagerLink>
-                </PagerItem>
-                <PagerItem>
-                    <PagerLink next href="#">
-                        <i className="it-chevron-right" />
-                    </PagerLink>
-                </PagerItem>
-            </PagerList>
-        </Pager>
-    </Viewport>
-);
-stories.add(
-    "Responsive",
-    withDocs(Responsive, withInfo()(ResponsiveComponent))
-);
-
-const moreStories = storiesOf("Componenti/Pager/Funzioni aggiuntive", module);
-moreStories.addDecorator(checkA11y);
+  <Pager className='mb-3'>
+    <PagerList>
+      <PagerItem>
+        <PagerLink previous href='#'>
+          <i className='it-chevron-left' />
+        </PagerLink>
+      </PagerItem>
+      <PagerItem className='d-sm-block'>
+        <PagerLink href='#'>9</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-sm-block'>
+        <PagerLink href='#'>10</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink aria-current='page' href='#'>
+          <span className='d-sm-none'>Pagina&nbsp;</span>11
+        </PagerLink>
+      </PagerItem>
+      <PagerItem className='d-sm-block'>
+        <PagerLink href='#'>12</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-sm-block'>
+        <PagerLink href='#'>13</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink next href='#'>
+          <i className='it-chevron-right' />
+        </PagerLink>
+      </PagerItem>
+    </PagerList>
+  </Pager>
+)
 
 const MoreComponent = () => (
-    <Pager className="mb-3">
-        <PagerList>
-            <PagerItem>
-                <PagerLink previous href="#">
-                    <i className="it-chevron-left" />
-                </PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">1</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink tag="span">…</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">24</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">25</PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink aria-current="page" href="#">
+  <Pager className='mb-3'>
+    <PagerList>
+      <PagerItem>
+        <PagerLink previous href='#'>
+          <i className='it-chevron-left' />
+        </PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>1</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink tag='span'>…</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>24</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>25</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink aria-current='page' href='#'>
                     26
-                </PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">27</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">28</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink tag="span">…</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">50</PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink next href="#">
-                    <i className="it-chevron-right" />
-                </PagerLink>
-            </PagerItem>
-        </PagerList>
-    </Pager>
-);
-moreStories.add("More", withDocs(More, withInfo()(MoreComponent)));
+        </PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>27</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>28</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink tag='span'>…</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>50</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink next href='#'>
+          <i className='it-chevron-right' />
+        </PagerLink>
+      </PagerItem>
+    </PagerList>
+  </Pager>
+)
 
 const ChangerComponent = () => (
-    <Pager className="mb-3">
-        <PagerList>
-            <PagerItem>
-                <PagerLink previous href="#">
-                    <i className="it-chevron-left" />
-                </PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">1</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink tag="span">…</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">24</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">25</PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink aria-current="page" href="#">
+  <Pager className='mb-3'>
+    <PagerList>
+      <PagerItem>
+        <PagerLink previous href='#'>
+          <i className='it-chevron-left' />
+        </PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>1</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink tag='span'>…</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>24</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>25</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink aria-current='page' href='#'>
                     26
-                </PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">27</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">28</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink tag="span">…</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">50</PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink next href="#">
-                    <i className="it-chevron-right" />
-                </PagerLink>
-            </PagerItem>
-        </PagerList>
-        <PageChangerExample />
-    </Pager>
-);
-moreStories.add(
-    "Page changer",
-    withDocs(
-        Changer,
-        withInfo({
-            propTablesExclude: [PageChangerExample]
-        })(ChangerComponent)
-    )
-);
+        </PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>27</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>28</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink tag='span'>…</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>50</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink next href='#'>
+          <i className='it-chevron-right' />
+        </PagerLink>
+      </PagerItem>
+    </PagerList>
+    <PageChangerExample />
+  </Pager>
+)
 
 const PageJumper = () => (
-    <Form>
-        <FormGroup>
-            <Input
-                id="jumpToPage"
-                type="text"
-                className="form-control"
-                maxLength="2"
-            />
-            <Label for="jumpToPage">Vai a ...</Label>
-        </FormGroup>
-    </Form>
-);
+  <Form>
+    <FormGroup>
+      <Input
+        id='jumpToPage'
+        type='text'
+        className='form-control'
+        maxLength='2'
+      />
+      <Label for='jumpToPage'>Vai a ...</Label>
+    </FormGroup>
+  </Form>
+)
 
 const JumpComponent = () => (
-    <Pager className="mb-3">
-        <PagerList>
-            <PagerItem>
-                <PagerLink previous href="#">
-                    <i className="it-chevron-left" />
-                </PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">1</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink tag="span">…</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">24</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">25</PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink aria-current="page" href="#">
+  <Pager className='mb-3'>
+    <PagerList>
+      <PagerItem>
+        <PagerLink previous href='#'>
+          <i className='it-chevron-left' />
+        </PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>1</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink tag='span'>…</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>24</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>25</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink aria-current='page' href='#'>
                     26
-                </PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">27</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">28</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink tag="span">…</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">50</PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink next href="#">
-                    <i className="it-chevron-right" />
-                </PagerLink>
-            </PagerItem>
-        </PagerList>
-        <PageJumper />
-    </Pager>
-);
-moreStories.add(
-    "Jump to page",
-    withDocs(
-        Jump,
-        withInfo({
-            propTablesExclude: [Form, FormGroup, Input, Label]
-        })(JumpComponent)
-    )
-);
+        </PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>27</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>28</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink tag='span'>…</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>50</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink next href='#'>
+          <i className='it-chevron-right' />
+        </PagerLink>
+      </PagerItem>
+    </PagerList>
+    <PageJumper />
+  </Pager>
+)
 
 const SimpleComponent = () => (
-    <Pager className="mb-3">
-        <PagerList>
-            <PagerItem disabled>
-                <PagerLink previous href="#">
-                    <i className="it-chevron-left" />
-                </PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink tag="span">1</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink tag="span">/</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink tag="span">5</PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink next href="#">
-                    <i className="it-chevron-right" />
-                </PagerLink>
-            </PagerItem>
-        </PagerList>
-    </Pager>
-);
-moreStories.add("Simple mode", withDocs(Simple, withInfo()(SimpleComponent)));
+  <Pager className='mb-3'>
+    <PagerList>
+      <PagerItem disabled>
+        <PagerLink previous href='#'>
+          <i className='it-chevron-left' />
+        </PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink tag='span'>1</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink tag='span'>/</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink tag='span'>5</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink next href='#'>
+          <i className='it-chevron-right' />
+        </PagerLink>
+      </PagerItem>
+    </PagerList>
+  </Pager>
+)
 
 const LinkComponent = () => (
-    <Pager className="mb-3">
-        <PagerList>
-            <PagerItem>
-                <PagerLink previous href="#" className="text">
+  <Pager className='mb-3'>
+    <PagerList>
+      <PagerItem>
+        <PagerLink previous href='#' className='text'>
                     Precedente
-                </PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">1</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink tag="span">…</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">24</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">25</PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink aria-current="page" href="#">
+        </PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>1</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink tag='span'>…</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>24</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>25</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink aria-current='page' href='#'>
                     26
-                </PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">27</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">28</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink tag="span">…</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">50</PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink next href="#" className="text">
+        </PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>27</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>28</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink tag='span'>…</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>50</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink next href='#' className='text'>
                     Successiva
-                </PagerLink>
-            </PagerItem>
-        </PagerList>
-    </Pager>
-);
-moreStories.add("Link testuali", withDocs(Link, withInfo()(LinkComponent)));
+        </PagerLink>
+      </PagerItem>
+    </PagerList>
+  </Pager>
+)
 
 const TotalComponent = () => (
-    <Pager className="pagination-total mb-3">
-        <PagerList>
-            <PagerItem>
-                <PagerLink previous href="#">
-                    <i className="it-chevron-left" />
-                </PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">1</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink tag="span">…</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink aria-current="page" href="#">
+  <Pager className='pagination-total mb-3'>
+    <PagerList>
+      <PagerItem>
+        <PagerLink previous href='#'>
+          <i className='it-chevron-left' />
+        </PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>1</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink tag='span'>…</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink aria-current='page' href='#'>
                     24
-                </PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">25</PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink href="#">26</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">27</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">28</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink tag="span">…</PagerLink>
-            </PagerItem>
-            <PagerItem className="d-none d-sm-block">
-                <PagerLink href="#">50</PagerLink>
-            </PagerItem>
-            <PagerItem>
-                <PagerLink next href="#">
-                    <i className="it-chevron-right" />
-                </PagerLink>
-            </PagerItem>
-        </PagerList>
-        <p>
-            <span className="sr-only">Pagina</span> 24 di 50
-        </p>
-    </Pager>
-);
-moreStories.add("Total number", withDocs(Total, withInfo()(TotalComponent)));
-
-const knobsStories = storiesOf("Componenti/Pager", module);
-knobsStories.addDecorator(checkA11y);
-knobsStories.addDecorator(withKnobs);
+        </PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>25</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink href='#'>26</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>27</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>28</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink tag='span'>…</PagerLink>
+      </PagerItem>
+      <PagerItem className='d-none d-sm-block'>
+        <PagerLink href='#'>50</PagerLink>
+      </PagerItem>
+      <PagerItem>
+        <PagerLink next href='#'>
+          <i className='it-chevron-right' />
+        </PagerLink>
+      </PagerItem>
+    </PagerList>
+    <p>
+      <span className='sr-only'>Pagina</span> 24 di 50
+    </p>
+  </Pager>
+)
 
 const EsempiInterattiviComponent = () => {
-    const active = boolean("Attivo", false);
-    const disabled = boolean("Disabilitato", false);
-    const sizes = ["sm", "", "lg"];
-    const size = select("Dimensioni", sizes, sizes[0]);
+  const active = boolean('Attivo', false)
+  const disabled = boolean('Disabilitato', false)
+  const sizes = ['sm', '', 'lg']
+  const size = select('Dimensioni', sizes, sizes[0])
 
-    let current = {};
-    if (active) {
-        current = {
-            "aria-current": "page"
-        };
+  let current = {}
+  if (active) {
+    current = {
+      'aria-current': 'page'
     }
-    return (
-        <Pager size={size}>
-            <PagerList>
-                <PagerItem disabled={disabled}>
-                    <PagerLink {...current} previous href="#">
-                        <i className="it-chevron-left" />
-                    </PagerLink>
-                </PagerItem>
-                <PagerItem disabled={disabled}>
-                    <PagerLink {...current} href="#">
+  }
+  return (
+    <Pager size={size}>
+      <PagerList>
+        <PagerItem disabled={disabled}>
+          <PagerLink {...current} previous href='#'>
+            <i className='it-chevron-left' />
+          </PagerLink>
+        </PagerItem>
+        <PagerItem disabled={disabled}>
+          <PagerLink {...current} href='#'>
                         1
-                    </PagerLink>
-                </PagerItem>
-                <PagerItem disabled={disabled}>
-                    <PagerLink {...current} next href="#">
-                        <i className="it-chevron-right" />
-                    </PagerLink>
-                </PagerItem>
-            </PagerList>
-        </Pager>
-    );
-};
-knobsStories.add(
-    "Esempi interattivi",
-    withDocs(EsempiInterattivi, withInfo()(EsempiInterattiviComponent))
-);
+          </PagerLink>
+        </PagerItem>
+        <PagerItem disabled={disabled}>
+          <PagerLink {...current} next href='#'>
+            <i className='it-chevron-right' />
+          </PagerLink>
+        </PagerItem>
+      </PagerList>
+    </Pager>
+  )
+}
+
+storiesOf('Componenti/Pager', module)
+  .addDecorator(withA11y)
+  .add('Esempi', withInfo({
+    text: Esempi
+  })(EsempiComponent))
+  .add('Stato disabilitato e attivo', withInfo({
+    text: StatoDisabilitatoAttivo
+  })(StatoDisabilitatoAttivoComponent))
+  .add('Allineamento', withInfo({
+    text: Allineamento
+  })(AllineamentoComponent))
+  .addParameters({ viewport: { defaultViewport: 'iphone6' } })
+  .add('Responsive', withInfo({
+    text: Responsive
+  })(ResponsiveComponent))
+  .addDecorator(withKnobs)
+  .add('Esempi interattivi', withInfo({
+    text: EsempiInterattivi
+  })(EsempiInterattiviComponent))
+
+storiesOf('Componenti/Pager/Funzioni aggiuntive', module)
+  .addDecorator(withA11y)
+  .add('More', withInfo({
+    text: More
+  })(MoreComponent))
+  .add('Page changer', withInfo({
+    text: Changer,
+    propTablesExclude: [PageChangerExample]
+  })(ChangerComponent))
+  .add('Jump to page', withInfo({
+    text: Jump,
+    propTablesExclude: [Form, FormGroup, Input, Label]
+  })(JumpComponent))
+  .add('Simple mode', withInfo({
+    text: Simple
+  })(SimpleComponent))
+  .add('Link testuali', withInfo({
+    text: Link
+  })(LinkComponent))
+  .add('Total number', withInfo({
+    text: Total
+  })(TotalComponent))

@@ -1,3 +1,0 @@
-### Textarea
-
-<!-- STORY -->

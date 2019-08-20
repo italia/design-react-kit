@@ -1,5 +1,0 @@
-## Esempi
-
-Checkbox classico
-
-<!-- STORY -->

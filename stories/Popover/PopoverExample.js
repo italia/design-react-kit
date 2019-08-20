@@ -1,8 +1,6 @@
 import React from "react";
 import {
   Button,
-  Tooltip,
-  UncontrolledTooltip,
   Popover,
   PopoverHeader,
   PopoverBody
@@ -27,7 +25,7 @@ class PopoverExample extends React.Component {
     return (
       <div>
         <Button color="danger" id={id} onClick={this.togglePopover}>
-          Clicca par attivare/disattivare il popover
+          Clicca per attivare o disattivare il popover
         </Button>
 
         <Popover
@@ -38,8 +36,8 @@ class PopoverExample extends React.Component {
         >
           <PopoverHeader>Titolo del popover</PopoverHeader>
           <PopoverBody>
-            Ed ecco alcuni contenuti sorprendenti. È molto coinvolgente. Non
-            trovi?
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Nunc vel finibus augue.
           </PopoverBody>
         </Popover>
       </div>

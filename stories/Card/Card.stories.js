@@ -1,449 +1,264 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { checkA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
+import { withKnobs, text, boolean } from '@storybook/addon-knobs'
 
-import {
-    Card,
-    CardImg,
-    CardBody,
-    CardTitle,
-    CardSubtitle,
-    CardText,
-    CardLink,
-    CardImgOverlay,
-    CardHeader,
-    CardFooter,
-    CardGroup,
-    CardDeck,
-    CardColumns,
-    Button,
-    ListGroup,
-    ListGroupItem,
-    Nav,
-    NavLink
-} from "../../src";
+import { Card, Button } from '../../src'
 
-import Esempi from "./Esempi.md";
-import Contenuti from "./Contenuti.md";
-import Immagini from "./Immagini.md";
-import HeaderFooter from "./HeaderFooter.md";
-import Elenchi from "./Elenchi.md";
-import NavBar from "./NavBar.md";
-import Gruppi from "./Gruppi.md";
-import Deck from "./Deck.md";
-import Colonne from "./Colonne.md";
+import SimpleCard from './docs/SimpleCard.md'
+import SimpleArticle from './docs/SimpleArticle.md'
+import CardIcon from './docs/CardIcon.md'
+import CardShading from './docs/CardShading.md'
+import BigCard from './docs/BigCard.md'
+import BigCardTag from './docs/BigCardTag.md'
+import CardImage from './docs/CardImage.md'
+import SpecialCard from './docs/SpecialCard.md'
+import EsempiInterattivi from '../Button/docs/EsempiInterattivi.md'
 
-const stories = storiesOf("Componenti/Card", module);
-stories.addDecorator(checkA11y);
-
-const EsempiComponent = () => (
-    <Card className="w-50">
-        <CardImg
-            top
-            width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
-            alt="Immagine"
-        />
-        <CardBody>
-            <CardTitle>Titolo esempio Card</CardTitle>
-            <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </CardText>
-            <Button color="primary">Vai avanti</Button>
-        </CardBody>
-    </Card>
-);
-stories.add(
-    "Esempi",
-    withDocs(
-        Esempi,
-        withInfo({
-            propTablesExclude: [Button]
-        })(EsempiComponent)
-    )
-);
-
-const ContenutiComponent = () => (
-    <div>
-        <h4>Card con solo Body</h4>
-        <Card className="w-50">
-            <CardBody>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua
-                </CardText>
-            </CardBody>
-        </Card>
-        <hr />
-        <h4>Card con Titolo e Body</h4>
-        <Card className="w-50">
-            <CardBody>
-                <CardTitle>Titolo card</CardTitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua
-                </CardText>
-            </CardBody>
-        </Card>
-        <hr />
-        <h4>Card con Titolo, Sottotitolo, Body e Link</h4>
-        <Card className="w-50">
-            <CardBody>
-                <CardTitle>Titolo card</CardTitle>
-                <CardSubtitle>Sottotitolo card</CardSubtitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua
-                </CardText>
-                <CardLink href="#">Card Link</CardLink>
-                <CardLink href="#">Altro Link</CardLink>
-            </CardBody>
-        </Card>
+const SimpleCardComponent = () => (
+  <div className='row'>
+    <div className='col-12 col-lg-4'>
+      {/* start card */}
+      <Card
+        link='#'
+        title='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…'
+        text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      />
+      {/* end card */}
     </div>
-);
-stories.add("Contenuti", withDocs(Contenuti, withInfo()(ContenutiComponent)));
+  </div>
+)
 
-const ImmaginiComponent = () => (
-    <div>
-        <Card className="w-50">
-            <CardImg
-                top
-                width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
-                alt="Immagine"
-            />
-            <CardBody>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua
-                </CardText>
-            </CardBody>
-        </Card>
+const SimpleArticleComponent = () => (
+  <div className='row'>
+    <div className='col-12 col-lg-6'>
+      {/* start card */}
+      <Card
+        isArticleCard
+        articleCategoryName='Category Name'
+        articleCategoryLink='#'
+        articleDate='10/12/2018'
+        link='#'
+        title='Lorem ipsum dolor sit amet, consectetur adipiscing elit…'
+        text='Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit, sed do eiusmod tempor incididunt ut labore et
+                      dolore magna aliqua.'
+        signature='di Federico De Paolis'
+      />
 
-        <Card inverse className="w-50 mt-5">
-            <CardImg
-                width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97270&w=318&h=270&bg=333333&txtclr=666666"
-                alt="Immagine"
-            />
-            <CardImgOverlay>
-                <CardTitle>Titolo card</CardTitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua
-                </CardText>
-                <CardText>
-                    <small className="text-muted">
-                        Ultimo aggiornamento 3 minuti fa
-                    </small>
-                </CardText>
-            </CardImgOverlay>
-        </Card>
+      {/* end card */}
     </div>
-);
-stories.add("Immagini", withDocs(Immagini, withInfo()(ImmaginiComponent)));
+  </div>
+)
 
-const HeaderFooterComponent = () => (
-    <Card className="w-50 mt-5">
-        <CardHeader>Featured</CardHeader>
-        <CardBody>
-            <CardTitle>Titolo card</CardTitle>
-            <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </CardText>
-            <Button>Vai avanti</Button>
-        </CardBody>
-        <CardFooter className="text-center">2 giorni fa</CardFooter>
-    </Card>
-);
-stories.add(
-    "Header e Footer",
-    withDocs(
-        HeaderFooter,
-        withInfo({
-            propTablesExclude: [Button]
-        })(HeaderFooterComponent)
-    )
-);
+const CardIconComponent = () => (
+  <div className='row'>
+    <div className='col-12 col-lg-6'>
+      {/* Start card */}
+      <Card isIconCard
+        iconName='it-file'
+        articleCategoryName='Category name'
+        title=' Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor…'
+        text=' Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.'
+      />
 
-const ElenchiComponent = () => (
-    <Card className="w-50">
-        <CardBody>
-            <CardTitle>Titolo card</CardTitle>
-            <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </CardText>
-        </CardBody>
-        <ListGroup flush>
-            <ListGroupItem>Cras justo odio</ListGroupItem>
-            <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-            <ListGroupItem>Vestibulum at eros</ListGroupItem>
-        </ListGroup>
-    </Card>
-);
-stories.add("Elenchi", withDocs(Elenchi, withInfo()(ElenchiComponent)));
-
-const NavBarComponent = () => (
-    <div>
-        <h4>Card con Menù a tab</h4>
-        <Card>
-            <CardHeader>
-                <Nav tabs card>
-                    <NavLink active href="#">
-                        Link Attivo
-                    </NavLink>
-                    <NavLink href="#">Link</NavLink>
-                    <NavLink disabled href="#">
-                        Link Disabilitato
-                    </NavLink>
-                </Nav>
-            </CardHeader>
-            <CardBody>
-                <CardTitle>Titolo card</CardTitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </CardText>
-            </CardBody>
-        </Card>
-        <h4 className="mt-5">Card con Menù a bottoni</h4>
-        <Card>
-            <CardHeader>
-                <Nav pills card>
-                    <NavLink active href="#">
-                        Link Attivo
-                    </NavLink>
-                    <NavLink href="#">Link</NavLink>
-                    <NavLink disabled href="#">
-                        Link Disabilitato
-                    </NavLink>
-                </Nav>
-            </CardHeader>
-            <CardBody>
-                <CardTitle>Titolo card</CardTitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </CardText>
-            </CardBody>
-        </Card>
+      {/* end card */}
     </div>
-);
-stories.add("Menù", withDocs(NavBar, withInfo()(NavBarComponent)));
+  </div>
+)
 
-const GruppiComponent = () => (
-    <CardGroup>
-        <Card>
-            <CardImg
-                top
-                width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-                alt="Immagine"
-            />
-            <CardBody>
-                <CardTitle>Titolo card</CardTitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </CardText>
-                <CardFooter>Ultimo aggiornamento 3 minuti fa</CardFooter>
-            </CardBody>
-        </Card>
-        <Card>
-            <CardImg
-                top
-                width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-                alt="Immagine"
-            />
-            <CardBody>
-                <CardTitle>Titolo card</CardTitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </CardText>
-                <CardFooter>Ultimo aggiornamento 3 minuti fa</CardFooter>
-            </CardBody>
-        </Card>
-        <Card>
-            <CardImg
-                top
-                width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-                alt="Immagine"
-            />
-            <CardBody>
-                <CardTitle>Titolo card</CardTitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </CardText>
-                <CardFooter>Ultimo aggiornamento 3 minuti fa</CardFooter>
-            </CardBody>
-        </Card>
-    </CardGroup>
-);
-stories.add("Gruppi", withDocs(Gruppi, withInfo()(GruppiComponent)));
+const CardShadingComponent = () => (
+  <div className='row'>
+    <div className='col-12 col-lg-6'>
+      {/* Start card */}
+      <Card
+        hasSpace
+        hasShade
+        link='#'
+        title='Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor…'
+        text='Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.'
+      />
 
-const DeckComponent = () => (
-    <CardDeck>
-        <Card>
-            <CardImg
-                top
-                width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-                alt="Immagine"
-            />
-            <CardBody>
-                <CardTitle>Titolo card</CardTitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </CardText>
-                <CardFooter>Ultimo aggiornamento 3 minuti fa</CardFooter>
-            </CardBody>
-        </Card>
-        <Card>
-            <CardImg
-                top
-                width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-                alt="Immagine"
-            />
-            <CardBody>
-                <CardTitle>Titolo card</CardTitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </CardText>
-                <CardFooter>Ultimo aggiornamento 3 minuti fa</CardFooter>
-            </CardBody>
-        </Card>
-        <Card>
-            <CardImg
-                top
-                width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-                alt="Immagine"
-            />
-            <CardBody>
-                <CardTitle>Titolo card</CardTitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </CardText>
-                <CardFooter>Ultimo aggiornamento 3 minuti fa</CardFooter>
-            </CardBody>
-        </Card>
-    </CardDeck>
-);
-stories.add("Deck", withDocs(Deck, withInfo()(DeckComponent)));
+      {/* end card */}
+    </div>
+  </div>
+)
 
-const ColonneComponent = () => (
-    <CardColumns>
-        <Card>
-            <CardImg
-                top
-                width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-                alt="Immagine"
-            />
-            <CardBody>
-                <CardTitle>Titolo card</CardTitle>
-                <CardSubtitle>Sottotitolo card</CardSubtitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </CardText>
-            </CardBody>
-        </Card>
-        <Card>
-            <CardBody>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </CardText>
-            </CardBody>
-        </Card>
-        <Card>
-            <CardImg
-                top
-                width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-                alt="Immagine"
-            />
-            <CardBody>
-                <CardTitle>Titolo card</CardTitle>
-                <CardSubtitle>Sottotitolo card</CardSubtitle>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </CardText>
-            </CardBody>
-        </Card>
-        <Card body inverse color="primary">
-            <CardTitle>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                posuere erat.
-            </CardTitle>
-        </Card>
-        <Card>
-            <CardImg
-                top
-                width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
-                alt="Immagine"
-            />
-        </Card>
-        <Card>
-            <CardBody>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </CardText>
-            </CardBody>
-        </Card>
-        <Card>
-            <CardBody>
-                <CardText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </CardText>
-            </CardBody>
-        </Card>
+const BigCardComponent = () => (
+  <div className='row'>
+    <div className='col-12 col-lg-8'>
+      {/* Start card */}
+      <Card
+        isBig
+        iconName='it-card'
+        link='#'
+        title='Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor…'
+        text='Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.'
+      />
+      {/* end card */}
+    </div>
+  </div>
+)
+const BigCardTagComponent = () => (
+  <div className='row'>
+    <div className='col-12 col-lg-6'>
+      {/* Start card */}
+      <Card
+        isBig
+        hasCTA
+        tags='Tag 1, Tag 2'
+        articleDate='10/12/2018'
+        title='Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor…'
+        text='Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.'
+        signature='di Federico De Paolis'
+      />
+      {/* end card */}
+    </div>
+  </div>
+)
+
+const CardImageComponent = () => (
+  <div className='row'>
+    <div className='col-12 col-lg-6'>
+      {/* Start card */}
+      <Card
+        link='#'
+        imageSrc='https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+        imageTitle='img title'
+        imageAlt='img alt'
+        title='Lorem ipsum dolor sit amet, consectetur adipiscing elit…'
+      />
+      {/* end card */}
+    </div>
+  </div>
+)
+
+const SpecialCardComponent = () => (
+  <div className='row'>
+    <div className='col-12 col-lg-6'>
+      {/* Start card */}
+      <Card
+        isSpecialCard
+        imageSrc='https://via.placeholder.com/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO'
+        imageTitle='img title'
+        imageAlt='img alt'
+        articleDate='10/12/2018'
+        title='Lorem ipsum dolor sit amet, consectetur adipiscing elit…'
+      />
+      {/* end card */}
+    </div>
+  </div>
+)
+
+const EsempiInterattiviComponent = () => {
+  const isSpecialCardOption = boolean('Speciale', false)
+  const hasShadeOption = boolean('Ombreggiatura', false)
+  const hasLinkOnTitleOption = boolean('Link su titolo', false)
+  const linkOption = text('Link', '#')
+  const titleOption = text('Titolo', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit…')
+  const textOption = text('Testo', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+
+  return (
+    <div className='row'>
+      <div className='col-12 col-lg-6'>
+        {/* Start card */}
         <Card
-            body
-            inverse
-            style={{ backgroundColor: "#333", borderColor: "#333" }}
-        >
-            <CardTitle>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                posuere erat.
-            </CardTitle>
-        </Card>
-    </CardColumns>
-);
-stories.add("Colonne", withDocs(Colonne, withInfo()(ColonneComponent)));
+          isSpecialCard={isSpecialCardOption}
+          imageSrc={isSpecialCardOption ? 'https://via.placeholder.com/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO' : false}
+          imageTitle={isSpecialCardOption ? 'img title' : false}
+          imageAlt={isSpecialCardOption ? 'img alt' : false}
+          link={linkOption}
+          hasShade={hasShadeOption}
+          hasLinkOnTitle={hasLinkOnTitleOption}
+          title={titleOption}
+          text={textOption}
+        />
+        {/* end card */}
+      </div>
+    </div>
+  )
+}
+
+storiesOf('Componenti/Cards', module)
+  .addDecorator(withA11y)
+  .add(
+    'Simple Card',
+    withInfo({
+      text: SimpleCard,
+      propTables: [Card],
+      propTablesExclude: [Button]
+    })(SimpleCardComponent)
+  )
+  .add(
+    'Simple Article',
+    withInfo({
+      text: SimpleArticle,
+      propTables: [Card]
+    })(SimpleArticleComponent)
+  )
+  .add(
+    'Card with icon',
+    withInfo({
+      text: CardIcon,
+      propTables: [Card]
+    })(CardIconComponent)
+  )
+  .add(
+    'Card with shading',
+    withInfo({
+      text: CardShading,
+      propTables: [Card],
+      propTablesExclude: [Button]
+    })(CardShadingComponent)
+  )
+  .add(
+    'Big card',
+    withInfo({
+      text: BigCard,
+      propTables: [Card]
+    })(BigCardComponent)
+  )
+  .add(
+    'Big card with tag',
+    withInfo({
+      text: BigCardTag,
+      propTables: [Card]
+    })(BigCardTagComponent)
+  )
+  .add(
+    'Card with image',
+    withInfo({
+      text: CardImage,
+      propTables: [Card]
+    })(CardImageComponent)
+  )
+  .add(
+    'Special cards',
+    withInfo({
+      text: SpecialCard,
+      propTables: [Card]
+    })(SpecialCardComponent)
+  )
+
+storiesOf('Componenti/Cards', module)
+  .addDecorator(withA11y)
+  .addDecorator(withKnobs)
+  .add(
+    'Esempi interattivi',
+    withInfo({
+      text: EsempiInterattivi
+    })(EsempiInterattiviComponent)
+  )

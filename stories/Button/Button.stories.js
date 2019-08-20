@@ -1,157 +1,194 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withKnobs, select, boolean, text } from "@storybook/addon-knobs/react";
-import { checkA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withKnobs, select, boolean, text } from '@storybook/addon-knobs/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
-import { Button } from "../../src";
+import Esempi from './docs/Esempi.md'
+import Dimensioni from './docs/Dimensioni.md'
+import StatoAttivo from './docs/StatoAttivo.md'
+import StatoDisabilitato from './docs/StatoDisabilitato.md'
+import EsempiInterattivi from './docs/EsempiInterattivi.md'
+import ButtonIcon from './docs/ButtonIcon.md'
+import DarkBackground from './docs/DarkBackground.md'
 
-import Esempi from "./Esempi.md";
-import Dimensioni from "./Dimensioni.md";
-import StatoAttivo from "./StatoAttivo.md";
-import StatoDisabilitato from "./StatoDisabilitato.md";
-import EsempiInterattivi from "./EsempiInterattivi.md";
-
-const stories = storiesOf("Componenti/Button", module);
-stories.addDecorator(checkA11y);
+import { Button, Icon } from '../../src'
 
 const colors = [
-    "Primary",
-    "Secondary",
-    "Tertiary",
-    "Quaternary",
-    "Success",
-    "Info",
-    "Danger",
-    "Warning",
-    "Link"
-];
+  'Primary',
+  'Secondary',
+  'Success',
+  'Info',
+  'Danger',
+  'Warning',
+  'Link'
+]
 
 const EsempiComponent = () => (
-    <div>
-        {colors.map(color => (
-            <div key={color} className="mb-2">
-                <Button color={color.toLowerCase()} className="mr-1">
-                    {color}
-                </Button>
-                <Button outline color={color.toLowerCase()} className="mr-1">
-                    {color} Outline
-                </Button>
-            </div>
-        ))}
-    </div>
-);
-stories.add("Esempi", withDocs(Esempi, withInfo()(EsempiComponent)));
+  <div>
+    {colors.map(color => (
+      <div key={color} className='mb-2'>
+        <Button color={color.toLowerCase()}>{color}</Button>{' '}
+        <Button outline color={color.toLowerCase()}>
+          {color} Outline
+        </Button>
+      </div>
+    ))}
+  </div>
+)
+
+const DarkBackgroundComponent = () => (
+  <div className='bg-dark py-1'>
+    {colors.map(color => (
+      <div key={color} className='mb-2'>
+        <Button color={color.toLowerCase()}>{color}</Button>{' '}
+        <Button outline color={color.toLowerCase()}>
+          {color} Outline
+        </Button>
+      </div>
+    ))}
+  </div>
+)
 
 const DimensioniComponent = () => (
-    <section>
-        <div>
-            <Button color="primary" size="lg" className="mr-1">
+  <section>
+    <div>
+      <Button color='primary' size='lg'>
                 Primary Large
-            </Button>
-            <Button color="secondary" size="lg">
+      </Button>{' '}
+      <Button color='secondary' size='lg'>
                 Secondary Large
-            </Button>
-            <div className="mt-3" />
-            <Button color="primary" size="sm" className="mr-1">
+      </Button>{' '}
+      <div className='mt-3' />
+      <Button color='primary' size='sm'>
                 Primary Small
-            </Button>
-            <Button color="secondary" size="sm">
+      </Button>{' '}
+      <Button color='secondary' size='sm'>
                 Secondary Small
-            </Button>
-            <div className="mt-3" />
-            <Button color="primary" size="xs" className="mr-1">
+      </Button>{' '}
+      <div className='mt-3' />
+      <Button color='primary' size='xs'>
                 Primary Mini
-            </Button>
-            <Button color="secondary" size="xs">
+      </Button>{' '}
+      <Button color='secondary' size='xs'>
                 Secondary Mini
-            </Button>
-            <div className="mt-3" />
-            <Button color="primary" block>
+      </Button>{' '}
+      <div className='mt-3' />
+      <Button color='primary' block>
                 Primary Block
-            </Button>
-            <Button color="secondary" block>
+      </Button>{' '}
+      <Button color='secondary' block>
                 Secondary Block
-            </Button>
-        </div>
-    </section>
-);
-stories.add(
-    "Dimensioni",
-    withDocs(Dimensioni, withInfo()(DimensioniComponent))
-);
+      </Button>{' '}
+    </div>
+  </section>
+)
+
+const ButtonIconComponent = () => (
+  <div>
+    <Button color='primary' size='lg' className='btn-icon'>
+      <Icon color={'icon-white'} /> Icon Button Large
+    </Button>{' '}
+    <Button color='success' className='btn-icon'>
+      <Icon color={'icon-white'} /> Icon Button
+    </Button>{' '}
+    <Button color='danger' size='sm' className='btn-icon'>
+      <Icon color={'icon-primary'} /> Icon Button Small
+    </Button>{' '}
+    <Button color='info' size='xs' className='btn-icon'>
+      <Icon color={'icon-black'} icon={'it-help'} /> Icon Button Extra Small
+    </Button>
+  </div>
+)
 
 const StatoAttivoComponent = () => (
-    <div>
-        {colors.map(color => (
-            <Button
-                key={color}
-                color={color.toLowerCase()}
-                active
-                className="mr-1"
-            >
-                {color}
-            </Button>
-        ))}
-    </div>
-);
-stories.add(
-    "Stato Attivo",
-    withDocs(StatoAttivo, withInfo()(StatoAttivoComponent))
-);
+  <div>
+    {colors.map(color => (
+      <span key={color}>
+        <Button color={color.toLowerCase()}>{color}</Button>{' '}
+      </span>
+    ))}
+  </div>
+)
 
 const StatoDisabilitatoComponent = () => (
-    <div>
-        {colors.map(color => (
-            <Button
-                key={color}
-                color={color.toLowerCase()}
-                disabled
-                className="mr-1"
-            >
-                {color}
-            </Button>
-        ))}
-    </div>
-);
-stories.add(
-    "Stato Disabilitato",
-    withDocs(StatoDisabilitato, withInfo()(StatoDisabilitatoComponent))
-);
-
-const knobsStories = storiesOf("Componenti/Button", module);
-knobsStories.addDecorator(checkA11y);
-knobsStories.addDecorator(withKnobs);
+  <div>
+    {colors.map(color => (
+      <span key={color}>
+        <Button color={color.toLowerCase()} disabled>
+          {color}
+        </Button>{' '}
+      </span>
+    ))}
+  </div>
+)
 
 const EsempiInterattiviComponent = () => {
-    const colors = [
-        "primary",
-        "secondary",
-        "tertiary",
-        "quaternary",
-        "success",
-        "info",
-        "danger",
-        "warning",
-        "link"
-    ];
-    const dimensions = ["sm", "", "lg"];
-    const color = select("Variazioni", colors, colors[0]);
-    const dimension = select("Dimensioni", dimensions, dimensions[0]);
-    const block = boolean("Block", false);
-    const active = boolean("Attivo", true);
-    const disabled = boolean("Disabilitato", false);
-    const label = text("Label", "");
+  const dimensions = [' ', 'xs', 'sm', 'lg']
+  const color = select('Variazioni', colors, colors[0])
+  const dimension = select('Dimensioni', dimensions, dimensions[0])
+  const block = boolean('Block', false)
+  const disabled = boolean('Disabilitato', false)
+  const label = text('Label', '')
 
-    return (
-        <Button color={color} block={block} active={active} disabled={disabled}>
-            {label} {color} {dimension} {block ? "block" : ""}{" "}
-            {active ? "attivo" : ""} {disabled ? "disabilitato" : ""}
-        </Button>
-    );
-};
-knobsStories.add(
-    "Esempi interattivi",
-    withDocs(EsempiInterattivi, withInfo()(EsempiInterattiviComponent))
-);
+  return (
+    <Button
+      color={color.toLowerCase()}
+      disabled={disabled}
+      block={block}
+      size={dimension}
+    >
+      {label} {color} {dimension} {block ? 'block' : ''}{' '}
+      {disabled ? 'disabled' : ' '}
+    </Button>
+  )
+}
+
+storiesOf('Componenti/Button', module)
+  .addDecorator(withA11y)
+  .add(
+    'Esempi',
+    withInfo({
+      text: Esempi
+    })(EsempiComponent)
+  )
+  .add(
+    'Sfondo scuro',
+    withInfo({
+      text: DarkBackground
+    })(DarkBackgroundComponent)
+  )
+  .add(
+    'Varianti di dimensione',
+    withInfo({
+      text: Dimensioni
+    })(DimensioniComponent)
+  )
+  .add(
+    'Bottoni con icona',
+    withInfo({
+      text: ButtonIcon
+    })(ButtonIconComponent)
+  )
+  .add(
+    'Stato Attivo',
+    withInfo({
+      text: StatoAttivo
+    })(StatoAttivoComponent)
+  )
+  .add(
+    'Stato Disabilitato',
+    withInfo({
+      text: StatoDisabilitato
+    })(StatoDisabilitatoComponent)
+  )
+
+storiesOf('Componenti/Button', module)
+  .addDecorator(withA11y)
+  .addDecorator(withKnobs)
+  .add(
+    'Esempi interattivi',
+    withInfo({
+      text: EsempiInterattivi
+    })(EsempiInterattiviComponent)
+  )

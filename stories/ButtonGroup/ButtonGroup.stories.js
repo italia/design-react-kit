@@ -1,37 +1,33 @@
+/*
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withDocs } from "../utils";
+import { withA11y } from "@storybook/addon-a11y";
+import { withInfo } from "@storybook/addon-info";
 
 import { ButtonToolbar, ButtonGroup, Button } from "../../src";
 
 import ButtonGroupDropdownExample from "./ButtonGroupDropdownExample";
 
-import Esempi from "./Esempi.md";
-import Toolbar from "./Toolbar.md";
-import Dimensioni from "./Dimensioni.md";
-import Vertical from "./Vertical.md";
-import Nesting from "./Nesting.md";
+import Esempi from "./docs/Esempi.md";
+import Toolbar from "./docs/Toolbar.md";
+import Dimensioni from "./docs/Dimensioni.md";
+import Vertical from "./docs/Vertical.md";
+import Nesting from "./docs/Nesting.md";
 
-// const stories = storiesOf("Componenti/Button Group", module);
-const stories = {
-    add: story => {
-        console.info(`'${story}' story has been disabled`);
-    }
-};
-
-stories.add(
-    "Esempi",
-    withDocs(Esempi, () => (
+storiesOf("Componenti/Button Group", module)
+    .addDecorator(withA11y)
+    .add("Esempi", withInfo({
+        text: Esempi,
+    })(() => (
         <ButtonGroup>
             <Button>Left</Button>
             <Button>Middle</Button>
             <Button>Right</Button>
         </ButtonGroup>
-    ))
-);
-stories.add(
-    "Toolbar",
-    withDocs(Toolbar, () => (
+    )))
+    .add("Toolbar", withInfo({
+        text: Toolbar,
+    })(() => (
         <ButtonToolbar>
             <ButtonGroup className="mr-1">
                 <Button>1</Button>
@@ -48,11 +44,10 @@ stories.add(
                 <Button>8</Button>
             </ButtonGroup>
         </ButtonToolbar>
-    ))
-);
-stories.add(
-    "Dimensioni",
-    withDocs(Dimensioni, () => (
+    )))
+    .add("Dimensioni", withInfo({
+        text: Dimensioni,
+    })(() => (
         <section>
             <div>
                 <ButtonGroup size="lg">
@@ -76,11 +71,10 @@ stories.add(
                 </ButtonGroup>
             </div>
         </section>
-    ))
-);
-stories.add(
-    "Vertical",
-    withDocs(Vertical, () => (
+    )))
+    .add("Vertical", withInfo({
+        text: Vertical,
+    })(() => (
         <ButtonGroup vertical>
             <Button>Button</Button>
             <Button>Button</Button>
@@ -89,17 +83,10 @@ stories.add(
             <Button>Button</Button>
             <Button>Button</Button>
         </ButtonGroup>
-    ))
-);
+    )));
 
-// const moreStories = storiesOf("Componenti/Button Group/Nesting", module);
-const moreStories = {
-    add: story => {
-        console.info(`'${story}' story has been disabled`);
-    }
-};
-
-moreStories.add(
-    "Esempi",
-    withDocs(Nesting, () => <ButtonGroupDropdownExample />)
-);
+storiesOf("Componenti/Button Group/Nesting", module)
+    .add("Esempi",withInfo({
+        text: Nesting
+    })(() => <ButtonGroupDropdownExample />))
+*/

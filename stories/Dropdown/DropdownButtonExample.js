@@ -1,9 +1,14 @@
 import React from "react";
+import PropTypes from "prop-types";
+
+const propTypes = {
+  color: PropTypes.string,
+};
+
 import {
     ButtonDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem,
     LinkList,
     LinkListItem,
 } from "../../src";
@@ -42,3 +47,5 @@ class DropdownButtonExample extends React.Component {
 }
 
 export default DropdownButtonExample;
+
+DropdownButtonExample.propTypes = propTypes;

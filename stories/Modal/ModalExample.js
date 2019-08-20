@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "../../src";
+import PropTypes from "prop-types";
+import {Button, Modal, ModalHeader, ModalBody, ModalFooter} from "../../src";
 
 class ModalExample extends React.Component {
     state = {
@@ -110,7 +111,7 @@ class ModalExample extends React.Component {
     );
 
     render() {
-        const { long, centered, fade, sizing } = this.props;
+        const {long, centered, fade, sizing} = this.props;
 
         return (
             <div>
@@ -169,6 +170,14 @@ class ModalExample extends React.Component {
             </div>
         );
     }
+}
+
+ModalExample.propTypes = {
+  long: PropTypes.bool,
+  centered: PropTypes.bool,
+  fade: PropTypes.bool,
+  sizing: PropTypes.bool,
+  className: PropTypes.string
 }
 
 export default ModalExample;

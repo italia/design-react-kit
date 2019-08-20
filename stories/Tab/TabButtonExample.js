@@ -9,6 +9,7 @@ import {
   Row,
   Col
 } from "../../src";
+import PropTypes from "prop-types";
 
 class TabButtonExample extends React.Component {
   state = {
@@ -102,6 +103,10 @@ class TabButtonExample extends React.Component {
       </Container>
     );
   }
+}
+
+TabButtonExample.propTypes = {
+  vertical: PropTypes.bool
 }
 
 export default TabButtonExample;

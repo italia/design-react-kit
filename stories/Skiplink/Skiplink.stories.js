@@ -1,25 +1,18 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { checkA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
-import { withDocs } from "../utils";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
-import { Skiplink, SkiplinkItem } from "../../src";
+import { Skiplink, SkiplinkItem } from '../../src'
 
-import SkipLinkExample from "./SkipLinkExample";
+import SkipLinkExample from './SkipLinkExample'
 
-import Esempi from "./Esempi.md";
+import Esempi from './docs/Esempi.md'
 
-const stories = storiesOf("Componenti/Skiplink", module);
-stories.addDecorator(checkA11y);
-
-stories.add(
-    "Esempi",
-    withDocs(
-        Esempi,
-        withInfo({
-            propTables: [Skiplink, SkiplinkItem],
-            propTablesExclude: [SkipLinkExample]
-        })(() => <SkipLinkExample />)
-    )
-);
+storiesOf('Componenti/Skiplink', module)
+  .addDecorator(withA11y)
+  .add('Esempi', withInfo({
+    text: Esempi,
+    propTables: [Skiplink, SkiplinkItem],
+    propTablesExclude: [SkipLinkExample]
+  })(() => <SkipLinkExample />))
