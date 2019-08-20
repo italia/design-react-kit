@@ -16,7 +16,7 @@ aliases:
 
   - &npm_install
     name: Install Packages
-    command: npm install
+    command: yarn install
 
   - &save_cache
     paths:
@@ -32,7 +32,7 @@ aliases:
 defaults: &defaults
   docker:
     # specify the version you desire here
-    - image: circleci/node:8
+    - image: circleci/node:10
 
   working_directory: *working_directory
 
@@ -47,7 +47,7 @@ jobs:
           name: Check versions
           command: |
             node --version
-            npm --version
+            yarn --version
             docker --version
 
       # Download and cache dependencies
@@ -57,7 +57,7 @@ jobs:
 
       - run:
           name: Build
-          command: npm run build
+          command: yarn build
 
       # Persist the specified paths (workspace/echo-output) into the workspace
       # for use in downstream job. Must be an absolute path, or relative path
@@ -84,9 +84,8 @@ jobs:
           command: |
             git config --global user.email "$GIT_AUTHOR_EMAIL"
             git config --global user.name "$GIT_AUTHOR_NAME"
-            npx npm-install-peers
-            npm run storybook:build
-            npm run storybook:deploy
+            yarn storybook:build
+            yarn storybook:deploy
 
   npm-publish:
     <<: *defaults

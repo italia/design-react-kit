@@ -25,19 +25,6 @@ const Welcome = () => (
               target='_blank' rel='noopener noreferrer'>Bootstrap
                         Italia <i className='it-external-link' /></a>. Per iniziare, è sufficiente installare il pacchetto <code>npm</code> attraverso il seguente comando:</p>
         <p className='text-center'><code>npm install design-react-kit --save</code></p>
-        <p>È necessario includere i file dei font attraverso un CSS separato, di cui si può trovare i sorgenti ed un esempio <a
-          href='https://github.com/italia/design-react-kit/tree/master/assets'>qui</a>.</p>
-        <p>È possibile contribuire al progetto con il proprio codice o attraverso la segnalazione di bug al <a
-          href='https://italia.github.io/bootstrap-italia/'>repository
-                        ufficiale</a> di React Kit o scrivendoci sul <a
-                          href='https://developersitalia.slack.com/messages/C7VPAUVB3/'
-                          target='_blank' rel='noopener noreferrer'>canale dedicato <i
-            className='it-external-link' /></a> su Slack.</p>
-        <p>Il codice sorgente è presente nella directory <code>stories</code> del progetto. Una <code>story</code> è un singolo stato di uno o più componenti UI. Per maggiori informazioni, puoi far riferimento all’ambiente usato per mostrare i componenti: <a
-          href='https://storybook.js.org/'>Storybook
-        </a>.
-        </p>
-
         <p className='font-weight-bold small text-center'>Attenzione: la libreria è ancora in fase di sviluppo e non contiene tutti i componenti disponibili nello UI Kit o in Bootstrap Italia.</p>
         <p className='small'>Il progetto è distribuito con licenza BSD-3 (consultabile nel file <a
           href='https://github.com/italia/design-react-kit/blob/master/LICENSE'>LICENSE</a>), un modello ancora più permissivo della classica licenza GPL, in quanto consente di modificare e ridistribuire questo software secondo varie modalità, anche di tipo closed-source.</p>
