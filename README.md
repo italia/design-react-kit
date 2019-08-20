@@ -97,7 +97,7 @@ $ cd nome-app
 $ yarn add design-react-kit --save
 ```
 
-A questo punto, è sufficiente importare esplicitamente nella app CSS e font già inclusi nel pacchetto npm `design-react-kit` (se si è usato `create-react-app` si tratta del file _App.js_ dentro la cartella `src`:
+A questo punto, è sufficiente importare esplicitamente nella app CSS e font già inclusi nel pacchetto npm `design-react-kit`, se si è usato `create-react-app` all'interno del file `./src/App.js`:
 
 ```jsx
 import React from 'react';
