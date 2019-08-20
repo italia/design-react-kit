@@ -13,6 +13,10 @@ const SelectContainer = ({ children, ...props }) => {
     );
 };
 
+SelectContainer.propTypes = {
+  children: PropTypes.node
+};
+
 const Option = props => {
     return (
         <div className="select-pill text-primary">
@@ -20,15 +24,19 @@ const Option = props => {
         </div>
     );
 };
-const MenuList = props => {
+const MenuList = ({ children, ...props }) => {
     return (
         <div>
             <components.MenuList {...props}>
-                {props.children}
+                {children}
             </components.MenuList>
         </div>
     );
 };
+
+MenuList.propTypes = {
+  children: PropTypes.node
+}
 
 const DropdownIndicator = props => {
     return (
@@ -46,16 +54,11 @@ const GroupHeading = props => (
     </div>
 );
 
-const IndicatorSeparator = ({ innerProps }) => {
-    return <span {...innerProps} />;
-};
-
 const CustomClearText = () => "Annulla";
 
 const ClearIndicator = props => {
     const {
         children = <CustomClearText />,
-        getStyles,
         innerProps: { ref, ...restInnerProps }
     } = props;
     return (
@@ -64,6 +67,11 @@ const ClearIndicator = props => {
         </div>
     );
 };
+
+ClearIndicator.propTypes = {
+  children: PropTypes.node,
+  innerProps: PropTypes.object
+}
 
 const defaultOptions = [
     { value: "Value 1", label: "Opzione 1" },
@@ -168,10 +176,11 @@ class SelectExample extends React.Component {
 export default SelectExample;
 
 SelectExample.propTypes = {
+  selectedOption: PropTypes.string,
     disabled: PropTypes.bool,
     reset: PropTypes.bool,
     search: PropTypes.bool,
     multi: PropTypes.bool,
     group: PropTypes.bool,
-    placeholder: PropTypes.string
+    placeholder: PropTypes.string,
 };

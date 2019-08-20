@@ -1,8 +1,6 @@
 import React from "react";
 import {
   Button,
-  Tooltip,
-  UncontrolledTooltip,
   Popover,
   PopoverHeader,
   PopoverBody

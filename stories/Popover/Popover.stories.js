@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from "prop-types";
 import { storiesOf } from '@storybook/react'
 import { withKnobs, select, boolean, text } from '@storybook/addon-knobs/react'
 import { withA11y } from '@storybook/addon-a11y'
@@ -87,6 +88,13 @@ class EsempiInterattiviComponent extends React.Component {
       </div>
     )
   }
+}
+
+EsempiInterattiviComponent.propTypes = {
+  disabled: PropTypes.bool,
+  placement: PropTypes.string,
+  title: PropTypes.string,
+  body: PropTypes.string
 }
 
 storiesOf('Componenti/Popover', module)

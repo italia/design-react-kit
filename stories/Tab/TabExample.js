@@ -1,5 +1,6 @@
 import React from "react";
 import { Nav, NavItem, NavLink, TabContent, TabPane } from "../../src";
+import PropTypes from "prop-types";
 
 const titles = ["Tab titolo 1", "Tab titolo 2", "Tab titolo 3"];
 
@@ -143,6 +144,11 @@ class TabExample extends React.Component {
             </div>
         );
     }
+}
+
+TabExample.propTypes = {
+  text: PropTypes.string,
+  icons: PropTypes.bool
 }
 
 export default TabExample;

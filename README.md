@@ -4,12 +4,6 @@
 
 *Read this in other languages: [English](README.EN.md).*
 
-*Il branch di default è ora `next`, dove sono in fase di sviluppo e di fix i componenti che faranno uso di:*
-- *Storybook v5.0.0*
-- *Bootstrap Italia stabile v1.2.2*
-
-Preview del branch `next` qui: https://design-react-kit.netlify.com/
-
 ## Intro
 
 **Design React kit** è un set di componenti React che implementa [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) e gli stili presenti su [Design UI Kit](https://github.com/italia/design-ui-kit), come [mostrato su InVision](https://invis.io/TWMUZS6VFP5).
@@ -102,11 +96,15 @@ Per utilizzare Design React come dipendenza in un'app è possibile installarla d
 $ npm install design-react-kit
 ```
 
-Quindi importa ed utilizza il componente:
+È necessario importare esplicitamente CSS e font (già inclusi nel pacchetto npm `design-react-kit`) come indicato di seguito:
 
 ```jsx
 import React from 'react';
-import { Alert } from "design-react-kit";
+import { Alert } from 'design-react-kit';
+import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
+import 'typeface-titillium-web';
+import 'typeface-roboto-mono';
+import 'typeface-lora';
 
 const Example = () => {
   return (
@@ -129,28 +127,4 @@ $ yarn install --peers
 oppure in alternativa manualmente
 ```sh
 $ yarn install react react-dom
-```
-
-#### Stili CSS
-
-La libreria è composta da una parte di stili, ereditati dal package [bootstrap-italia](https://italia.github.io/bootstrap-italia/) che possono essere importati avendo installato la stessa con:
-
-```sh
-$ yarn install bootstrap-italia
-```
-
-A seconda del bundler utilizzato, e delle sue configurazioni, si potranno importare direttamente gli stili CSS generati:
-
-```js
-import "bootstrap-italia/dist/css/bootstrap-italia.min.css";
-```
-
-Nota: a partire dalla versione 1
-
-#### Preprocessori
-
-Avendo a disposizione il preprocessore [Sass](https://sass-lang.com/) sarà possibile integrare (e customizzare) i sorgenti della stessa:
-
-```scss
-@import "bootstrap-italia/src/scss/bootstrap-italia.scss";
 ```

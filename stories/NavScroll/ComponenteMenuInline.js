@@ -42,7 +42,7 @@ class ComponenteMenuList extends React.Component {
       };
 
       render() {
-            const collapseN = this.props.CollapseN;
+            const collapseN = this.props.collapseN;
             return (
                 <li>
                     <a className={this.state.isNavOpen?"list-item large medium right-icon":"list-item large medium right-icon collapsed"} href={`#collapse${collapseN}`} data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne" onClick={(e)=>this.onNavScrollToggle(e)}>
