@@ -89,29 +89,32 @@ Le pagine statiche ottenute dal processo di build saranno generate sotto la fold
 
 ### Package
 
-Per utilizzare Design React come dipendenza in un'app è possibile installarla da [npm](https://www.npmjs.com/~italia):
+Per utilizzare Design React come dipendenza in un'app è possibile installarla da [npm](https://www.npmjs.com/~italia). Suggeriamo di usare `create-react-app` per creare una nuova webapp React, come segue:
 
 ```sh
-$ npm install design-react-kit
+$ create-react-app nome-app
+$ cd nome-app
+$ yarn add design-react-kit --save
 ```
 
-È necessario importare esplicitamente CSS e font (già inclusi nel pacchetto npm `design-react-kit`) come indicato di seguito:
+A questo punto, è sufficiente importare esplicitamente nella app CSS e font già inclusi nel pacchetto npm `design-react-kit` (se si è usato `create-react-app` si tratta del file _App.js_ dentro la cartella `src`:
 
 ```jsx
 import React from 'react';
+import './App.css';
 import { Alert } from 'design-react-kit';
 import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
 import 'typeface-titillium-web';
 import 'typeface-roboto-mono';
 import 'typeface-lora';
 
-const Example = () => {
-  return (
-    <Alert>
-        Questo è un alert
-    </Alert>
-  );
+const App = () => {
+    return (
+        <Alert>This is an Alert</Alert>
+    );
 };
+
+export default App;
 ```
 
 #### Peer dependencies
