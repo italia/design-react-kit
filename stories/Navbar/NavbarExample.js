@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import {
     Navbar,
     NavbarBrand,
@@ -98,6 +99,10 @@ class NavbarExample extends React.Component {
             </section>
         );
     }
+}
+
+NavbarExample.propTypes = {
+  dropdown: PropTypes.bool
 }
 
 export default NavbarExample;

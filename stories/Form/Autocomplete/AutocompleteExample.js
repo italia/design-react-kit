@@ -2,6 +2,11 @@ import React from "react";
 import { components } from "react-select";
 import AsyncSelect from "react-select/async";
 import '!style-loader!css-loader!./assets/css/autocomplete-styles.css';
+import PropTypes from "prop-types";
+
+const propTypes = {
+  isHidden: PropTypes.bool,
+};
 
 const DropdownIndicator = props => {
     return (
@@ -94,3 +99,5 @@ export default class AutocompleteExample extends React.Component {
         );
     }
 }
+
+Input.propTypes = propTypes;

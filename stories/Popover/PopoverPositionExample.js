@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Popover, PopoverBody } from "../../src";
+import PropTypes from "prop-types";
 
 class PopoverItem extends React.Component {
     state = {
@@ -42,13 +43,18 @@ class PopoverItem extends React.Component {
     }
 }
 
+PopoverItem.propTypes = {
+  id: PropTypes.string,
+  item: PropTypes.object
+}
+
 class PopoverPositionExample extends React.Component {
     state = {
-        popovers: [ 
+        popovers: [
             { placement: "left", text: "a sinistra" },
             { placement: "top", text: "in alto" },
             { placement: "bottom", text: "in basso" },
-            { placement: "right", text: "a destra" }, 
+            { placement: "right", text: "a destra" },
         ]
     };
 

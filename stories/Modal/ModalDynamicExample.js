@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import {
     Button,
     Modal,
@@ -94,6 +95,12 @@ class ModalExample extends React.Component {
             </div>
         );
     }
+}
+
+ModalExample.propTypes = {
+  centered: PropTypes.bool,
+  fade: PropTypes.bool,
+  className: PropTypes.string
 }
 
 export default ModalExample;

@@ -102,9 +102,7 @@ class InputIconButtonExample extends React.Component {
                         <label
                             htmlFor="input-group-3"
                             className={this.state.isFocused ? "active" : ""}
-                        >
-                            Con Etichetta e bottone "primary"
-                        </label>
+                        >Con Etichetta e bottone di tipo primary</label>
                         <input
                             type="text"
                             className={

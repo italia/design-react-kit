@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { withKnobs, text, select } from '@storybook/addon-knobs/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
-import { Tooltip, UncontrolledTooltip, Button } from '../../src'
+import { UncontrolledTooltip, Button } from '../../src'
 
 import Esempi from './docs/Esempi.md'
 import Posizioni from './docs/Posizioni.md'

@@ -5,7 +5,6 @@ import {
     ModalHeader,
     ModalBody,
     ModalFooter,
-    Tooltip,
     UncontrolledTooltip,
     Popover,
     PopoverHeader,

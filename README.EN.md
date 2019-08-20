@@ -5,12 +5,6 @@
 
 *Read this in other languages: [Italiano](README.md).*
 
-*Default branch is now `next`, in order to host development and bring stable components with the following features:*
-- *Storybook updated to v5.0.0*
-- *Bootstrap Italia dependency updated to stable version v1.2.2*
-
-`next` branch preview is on Netlify here: https://design-react-kit.netlify.com/
-
 ## Intro
 
 **Design React kit** is a set of React components that implements [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) and [Design UI Kit](https://github.com/italia/design-ui-kit) styling, as [shown on InVision](https://invis.io/TWMUZS6VFP5).
@@ -102,11 +96,15 @@ To use Design React as a dependency in an app you can install it from [npm](http
 $ npm install design-react-kit
 ```
 
-So it imports and uses the component:
+Then, you need to import CSS e font (already included in the `design-react-kit` npm package) as shown:
 
 ```jsx
 import React from 'react';
-import { Alert } from "design-react-kit";
+import { Alert } from 'design-react-kit';
+import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
+import 'typeface-titillium-web';
+import 'typeface-roboto-mono';
+import 'typeface-lora';
 
 const Example = () => {
   return (
@@ -129,26 +127,4 @@ $ yarn install --peers
 or alternatively manually
 ```sh
 $ yarn install react react-dom
-```
-
-#### CSS styles
-
-The library is composed of a part of the states, inherited from the [bootstrap-italia](https://italia.github.io/bootstrap-italia/) package, that can be imported and installed with the following:
-
-```sh
-$ yarn install bootstrap-italia
-```
-
-A second part of the package, and its actions, are directly imported from the same CSS generated:
-
-```js
-import "bootstrap-italia/dist/css/bootstrap-italia.min.css";
-```
-
-#### Preprocessors
-
-Having the preprocessor [SASS](https://sass-lang.com/) available, it will be possible to integrate (and customize) the sources of the same:
-
-```scss
-@import "bootstrap-italia/src/scss/bootstrap-italia.scss";
 ```

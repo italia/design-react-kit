@@ -32,7 +32,7 @@ class TextArea extends React.Component {
     };
 
     render() {
-        const { rows, cols, label, placeholder, ...attributes } = this.props;
+        const { label, placeholder, ...attributes } = this.props;
 
         if (placeholder) {
             return (
