@@ -18,16 +18,11 @@ La versione pubblica dello Storybook (relativa al branch `master`) è disponibil
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
   - [Requisiti](#requisiti)
+- [Come usare il kit](#come-usare-il-kit)
+    - [Peer dependencies](#peer-dependencies)
 - [Come iniziare](#come-iniziare)
 - [Come creare nuovi componenti](#come-creare-nuovi-componenti)
-  - [Storybook](#storybook)
 - [Publishing](#publishing)
-  - [Storybook](#storybook-1)
-    - [Problemi noti](#problemi-noti)
-  - [Package](#package)
-    - [Peer dependencies](#peer-dependencies)
-    - [Stili CSS](#stili-css)
-    - [Preprocessori](#preprocessori)
 - [Continuous Integration](#continuous-integration)
   - [Job `build`](#job-build)
   - [Job `deploy-github-pages`](#job-deploy-github-pages)
@@ -40,54 +35,7 @@ La versione pubblica dello Storybook (relativa al branch `master`) è disponibil
 * NodeJS
 * Yarn
 
-## Come iniziare
-
-Clona il repository ed esegui `yarn` per installare le dipendenze.
-Quindi esegui `yarn storybook:serve` per avviare il server di sviluppo.
-
-Storybook sarà quindi disponibile all'indirizzo http://localhost:9001/
-
-![storybook](/assets/storybook-screenshot.jpg?raw=true)
-
-## Come creare nuovi componenti
-
-Questa sezione guiderà alla creazione di nuovi componenti nel repository.
-Tutti i componenti risiedono nella folder `components`: ogni componente possiede una sua folder con tutto ciò che è necessario per farlo funzionare.
-Le storie `Storybook` invece sono sotto `stories`. 
-Il componente `Button` ad esempio è presente sotto il path `src/components/Button` e la sua struttura è la seguente:
-
-```
-src
-    └── components
-        └── Button
-            ├── Button.js
-stories
-    └── Button
-        ├── Button.stories.js
-```
-
-Alcune regole di base per strutturare i componenti:
-
-* I file JS file del componente utilizza la sintassi JSX.
-* I file `.stories.js` dovrebbero contenere solo quanto relativo al componente stesso.
-
-Una volta creato un nuovo componente, con la sua story, avviando Storybook sarà  possibile controllare che tutto funzioni come dovrebbe.
-
-### Storybook
-
-Storybook è stato arricchito con alcuni `addons` che lo rendono più parlante.
-
-## Publishing
-
-E' disponibile un comando per generare una versione statica del catalogo Storybook così che possa essere deployato senza utilizzo di un webserver.
-
-```sh
-$ yarn run storybook
-```
-
-Le pagine statiche ottenute dal processo di build saranno generate sotto la folder  `storybook-static`.
-
-### Package
+## Come usare il kit
 
 Per utilizzare Design React come dipendenza in un'app è possibile installarla da [npm](https://www.npmjs.com/~italia). Suggeriamo di usare `create-react-app` per creare una nuova webapp React, come segue:
 
@@ -130,3 +78,48 @@ oppure in alternativa manualmente
 ```sh
 $ yarn install react react-dom
 ```
+
+## Come iniziare
+
+Clona il repository ed esegui `yarn` per installare le dipendenze.
+Quindi esegui `yarn storybook:serve` per avviare il server di sviluppo.
+
+Storybook sarà quindi disponibile all'indirizzo http://localhost:9001/
+
+![storybook](/assets/storybook-screenshot.jpg?raw=true)
+
+Storybook è stato arricchito con alcuni `addons` che lo rendono più parlante.
+
+## Come creare nuovi componenti
+
+Questa sezione guiderà alla creazione di nuovi componenti nel repository.
+Tutti i componenti risiedono nella folder `components`: ogni componente possiede una sua folder con tutto ciò che è necessario per farlo funzionare.
+Le storie `Storybook` invece sono sotto `stories`. 
+Il componente `Button` ad esempio è presente sotto il path `src/components/Button` e la sua struttura è la seguente:
+
+```
+src
+    └── components
+        └── Button
+            ├── Button.js
+stories
+    └── Button
+        ├── Button.stories.js
+```
+
+Alcune regole di base per strutturare i componenti:
+
+* I file JS file del componente utilizza la sintassi JSX.
+* I file `.stories.js` dovrebbero contenere solo quanto relativo al componente stesso.
+
+Una volta creato un nuovo componente, con la sua story, avviando Storybook sarà  possibile controllare che tutto funzioni come dovrebbe.
+
+## Publishing
+
+E' disponibile un comando per generare una versione statica del catalogo Storybook così che possa essere deployato senza utilizzo di un webserver.
+
+```sh
+$ yarn run storybook
+```
+
+Le pagine statiche ottenute dal processo di build saranno generate sotto la folder  `storybook-static`.
