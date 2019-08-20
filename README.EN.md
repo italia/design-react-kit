@@ -19,14 +19,11 @@ Public version of Storybook (built from `master` branch) is available here: http
 <!-- DO NOT MODIFY THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Requirements](#requirements)
-- [Getting Started](#getting-started)
+- [Usage](#usage)
+  - [Peer dependencies](#peer-dependencies)
+- [Compiling Storybook](#compiling-storybook)
 - [How to create new components](#how-to-create-new-components)
-  - [Storybook](#storybook)
 - [Publishing](#publishing)
-  - [Package](#package)
-    - [Peer dependencies](#peer-dependencies)
-    - [CSS Styles](#css-styles)
-    - [Preprocessors](#preprocessors)
 - [Continuous integration](#continuous-integration)
   - [`build` job](#build-job)
   - [`deploy-github-pages` job](#deploy-github-pages-job)
@@ -39,58 +36,9 @@ Public version of Storybook (built from `master` branch) is available here: http
 * NodeJS
 * Yarn
 
-## Getting started
+## Usage
 
-Clone the repo and run `yarn` to install the dependencies.
-Then run the `yarn storybook:serve` command to start the development server.
-
-Storybook will therefore be available at http://localhost:9001/
-
-![storybook](/assets/storybook-screenshot.jpg?raw=true)
-
-Public version of the Storybook is available [here](https://italia.github.io/design-react-kit).
-
-## How to create new components
-
-This section explains how to create new components in the repository.
-All components reside in the `components` directory: each component is a folder with all that is needed to make it work. *Storybook* stories are instead under `stories`.
-
-i.e. the `Button` component is shown below the `src/components/Button` path and its structure is as follows:
-
-```
-src
-    └── components
-        └── Button
-            ├── Button.js
-stories
-    └── Button
-        ├── Button.stories.js
-```
-
-Some basic rules for structuring the components:
-
-* JS file component files use JSX syntax.
-* The `.stories.js` files only restore the relative component only.
-
-Once you have created a new component, with its history, starting *Storybook* will be able to check that everything works as it should.
-
-### Storybook
-
-Storybook has been enriched with some `addons` that make it more talented. Check dependencies on the `package.json` file for details.
-
-## Publishing
-
-A command is available to reach a static version of the Storybook catalog as it can be deployed without using a webserver.
-
-```sh
-$ yarn run storybook
-```
-
-Static pages obtained from the compilation process generate under the `storybook-static` directory.
-
-### Package
-
-To use Design React as a dependency in an app you can install it from [npm](https://www.npmjs.com/~italia). We suggest to use `create-react-app` to create a new React webapp from scratch as follows:
+To use Design React as a dependency in your React project you can install it from [npm](https://www.npmjs.com/~italia). We suggest to use `create-react-app` to create a new React webapp from scratch as follows:
 
 ```sh
 $ create-react-app nome-app
@@ -118,7 +66,7 @@ const App = () => {
 export default App;
 ```
 
-#### Peer dependencies
+### Peer dependencies
 
 The library does not include `react` and `react-dom`, avoiding versions clashing and increasing the size of the bundle.
 For this reason, for local development it will be necessary to manually install dependencies.
@@ -131,3 +79,50 @@ or alternatively manually
 ```sh
 $ yarn install react react-dom
 ```
+
+## Compiling Storybook
+
+Clone the repo and run `yarn` to install the dependencies.
+Then run the `yarn storybook:serve` command to start the development server.
+
+Storybook will therefore be available at http://localhost:9001/
+
+![storybook](/assets/storybook-screenshot.jpg?raw=true)
+
+Public version of the Storybook is available [here](https://italia.github.io/design-react-kit).
+
+Storybook has been enriched with some `addons` that make it more talented. Check dependencies on the `package.json` file for details.
+
+## How to create new components
+
+This section explains how to create new components in the repository.
+All components reside in the `components` directory: each component is a folder with all that is needed to make it work. *Storybook* stories are instead under `stories`.
+
+i.e. the `Button` component is shown below the `src/components/Button` path and its structure is as follows:
+
+```
+src
+    └── components
+        └── Button
+            ├── Button.js
+stories
+    └── Button
+        ├── Button.stories.js
+```
+
+Some basic rules for structuring the components:
+
+* JS file component files use JSX syntax.
+* The `.stories.js` files only restore the relative component only.
+
+Once you have created a new component, with its history, starting *Storybook* will be able to check that everything works as it should.
+
+## Publishing
+
+A command is available to reach a static version of the Storybook catalog as it can be deployed without using a webserver.
+
+```sh
+$ yarn run storybook
+```
+
+Static pages obtained from the compilation process generate under the `storybook-static` directory.
