@@ -3,7 +3,6 @@ import {addParameters, addDecorator, configure} from '@storybook/react';
 import {default as theme} from './theme.js';
 
 import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
-import '../assets/docs.min.css';
 import '../assets/css/fonts.css';
 
 
