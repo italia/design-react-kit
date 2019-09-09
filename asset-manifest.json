@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/italia/design-react-kit/main.css",
-    "main.js": "/italia/design-react-kit/main.e6da506cf9cb623e0f38.bundle.js",
+    "main.js": "/italia/design-react-kit/main.50f789560114df636c2a.bundle.js",
     "main.css.map": "/italia/design-react-kit/main.css.map",
-    "main.js.map": "/italia/design-react-kit/main.e6da506cf9cb623e0f38.bundle.js.map",
-    "runtime~main.js": "/italia/design-react-kit/runtime~main.e6da506cf9cb623e0f38.bundle.js",
-    "runtime~main.js.map": "/italia/design-react-kit/runtime~main.e6da506cf9cb623e0f38.bundle.js.map",
+    "main.js.map": "/italia/design-react-kit/main.50f789560114df636c2a.bundle.js.map",
+    "runtime~main.js": "/italia/design-react-kit/runtime~main.50f789560114df636c2a.bundle.js",
+    "runtime~main.js.map": "/italia/design-react-kit/runtime~main.50f789560114df636c2a.bundle.js.map",
     "vendors~main.css": "/italia/design-react-kit/vendors~main.css",
-    "vendors~main.js": "/italia/design-react-kit/vendors~main.e6da506cf9cb623e0f38.bundle.js",
+    "vendors~main.js": "/italia/design-react-kit/vendors~main.50f789560114df636c2a.bundle.js",
     "vendors~main.css.map": "/italia/design-react-kit/vendors~main.css.map",
-    "vendors~main.js.map": "/italia/design-react-kit/vendors~main.e6da506cf9cb623e0f38.bundle.js.map",
+    "vendors~main.js.map": "/italia/design-react-kit/vendors~main.50f789560114df636c2a.bundle.js.map",
     "iframe.html": "/italia/design-react-kit/iframe.html",
-    "precache-manifest.978018eed0cb3baba4586be693d945cb.js": "/italia/design-react-kit/precache-manifest.978018eed0cb3baba4586be693d945cb.js",
+    "precache-manifest.337c480e9a27b4c5042131fbae152bd6.js": "/italia/design-react-kit/precache-manifest.337c480e9a27b4c5042131fbae152bd6.js",
     "service-worker.js": "/italia/design-react-kit/service-worker.js",
     "static/media/fonts.css": "/italia/design-react-kit/static/media/TitilliumWeb-SemiBold.eb6768ff.woff2",
-    "static/media/sprite.svg": "/italia/design-react-kit/static/media/sprite.fed911e6.svg"
+    "static/media/sprite.svg": "/italia/design-react-kit/static/media/sprite.c452d70a.svg"
   }
 }
