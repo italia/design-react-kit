@@ -1,2 +1,4 @@
-The special card is distinguished by the class `.special-card` applied to the tag `a.card`. 
-The whole card is a link to its contents. The optimal image proportions for this card are 17:21.
+## Card speciali
+
+La card speciale è contraddistinta dalla classe `.special-card` applicata al component `Card` e la prop `tag` impostata su `a`.
+Tutta la card è un link al relativo contenuto. Le proporzioni ottimali dell’immagine per questa card sono 17:21.

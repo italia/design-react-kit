@@ -1,2 +1,5 @@
-To insert tags and / or date on the top of the card to use the element `.head-tags`. 
-To insert the button in the bottom card, use the element `.it-card-footer`. In the following example, the signature and button have been inserted in the card footer. Use the class `.no-after` applied to the div `.card` if you want to reduce the lower space of the card.
+## Card grande con Tag
+
+L’esempio seguente contiene una icona custom (non SVG ma CSS) ed una categorizzazione con icona SVG. L’icona custom viene creata dal div `.flag-icon`.
+La categorizzazione dal div con classe `.etichetta`.
+Per creare un bordo di colore primario a chiusura card, potete utilizzare la classe `.border-bottom-card` applicata al component `Card`
