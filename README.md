@@ -45,7 +45,17 @@ $ cd nome-app
 $ yarn add design-react-kit --save
 ```
 
-A questo punto, è sufficiente importare esplicitamente nella app CSS e font già inclusi nel pacchetto npm `design-react-kit`, se si è usato `create-react-app` all'interno del file `./src/App.js`:
+## Aggiungere bootstrap-italia ed i font
+
+Il `design-react-kit` non include il CSS ed i file font, ed è quindi necessario installarli a parte:
+
+```sh
+$ yarn add bootstrap-italia typeface-lora typeface-roboto-mono typeface-titillium-web --save
+```
+
+## App.js
+
+A questo punto, è sufficiente importare esplicitamente nella app CSS e font se si è usato `create-react-app` all'interno del file `./src/App.js`:
 
 ```jsx
 import React from 'react';
