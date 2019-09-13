@@ -1,10 +1,10 @@
 import React from 'react';
-import {string} from 'prop-types';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const propTypes = {
-  tag: string,
-  className: string
+  tag: PropTypes.string,
+  className: PropTypes.string
 };
 
 const defaultProps = {

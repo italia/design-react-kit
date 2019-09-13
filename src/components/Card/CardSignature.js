@@ -1,9 +1,9 @@
 import React from 'react';
-import {string} from 'prop-types';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const propTypes = {
-    className: string
+    className: PropTypes.string
 };
 
 const CardSignature = (props) => {

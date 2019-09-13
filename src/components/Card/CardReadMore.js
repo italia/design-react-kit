@@ -1,14 +1,14 @@
 import React from 'react';
-import {string} from 'prop-types';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import Icon from '../Icon/Icon';
 
 const propTypes = {
-    className: string,
-    iconName: string,
-    href: string,
-    text: string
+    className: PropTypes.string,
+    iconName: PropTypes.string,
+    href: PropTypes.string,
+    text: PropTypes.string
 };
 
 const defaultTypes = {

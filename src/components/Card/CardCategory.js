@@ -1,13 +1,13 @@
 import React from 'react';
-import {string} from 'prop-types';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import Icon from '../Icon/Icon';
 
 const propTypes = {
-    iconName: string,
-    date: string,
-    href: string
+    iconName: PropTypes.string,
+    date: PropTypes.string,
+    href: PropTypes.string
 };
 
 const CardCategory = (props) => {

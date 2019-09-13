@@ -1,9 +1,9 @@
 import React from 'react';
-import {node, string} from 'prop-types';
+import PropTypes from 'prop-types';
 
 const propTypes = {
-    children: node,
-    date: string
+    children: PropTypes.node,
+    date: PropTypes.string
 };
 
 const CardTagsHeader = (props) => {

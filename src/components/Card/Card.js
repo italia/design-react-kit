@@ -1,13 +1,13 @@
 import React from 'react';
-import {bool} from 'prop-types';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import {Card as CardBase} from 'reactstrap';
 
 const propTypes = {
   // eslint-disable-next-line react/forbid-foreign-prop-types
   ...CardBase.propTypes,
-  teaser: bool,
-  spacing: bool
+  teaser: PropTypes.bool,
+  spacing: PropTypes.bool
 }
 
 const Card = (props) => {
