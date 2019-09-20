@@ -6,8 +6,15 @@ import { NavbarToggler } from 'reactstrap';
 import HeaderContext, { SLIM, NAVBAR } from './HeaderContext';
 
 const propTypes = {
+    /** Tipo di elemento DOM da utilizzare: di default "a" per Header Slim, "button" per altri tipi di Header.
+     * Se fornito questo sovrascriverà il valore di default.
+     */
     tag: PropTypes.string,
+    /** Indica l'attributo "type" sull'elemento DOM. Di default '' per Header Slim, "button" per altri tipi di Header.
+     * Se fornito questo sovrascriverà il valore di default.
+     */
     type: PropTypes.string,
+    /** Classi addizionali per il componente HeaderToggler */
     className: PropTypes.string
 };
 

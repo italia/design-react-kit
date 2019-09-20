@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+import { boolean, select } from '@storybook/addon-knobs/react'
 import { Header, HeaderContent, HeaderSearch, HeaderRightZone, HeaderSocialsZone, Icon, Nav, NavItem, NavLink, HeaderBrand } from '../../../src';
 
-export default class CenterHeader extends Component {
-  render() {
+const CenterHeader = () => {
+
+    const theme = select('Tema', {default: '', light: 'light'}, '');
+    const isSmall = boolean('Versione Small', false);
+
     return (
-      <Header type="center">
+      <Header type="center" theme={theme} small={isSmall}>
         <HeaderContent>
           <HeaderBrand iconName="it-code-circle">
             <h2>Lorem Ipsum Lorem Ipsum</h2>
@@ -35,5 +39,6 @@ export default class CenterHeader extends Component {
           </HeaderRightZone>
         </HeaderContent>
       </Header>)
-  }
-}
+  };
+
+  export default CenterHeader;

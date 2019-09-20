@@ -4,7 +4,6 @@ import {NavbarBrand} from 'reactstrap';
 import HeaderContext, { CENTER } from './HeaderContext';
 import Icon from '../Icon/Icon';
 
-
 const propTypes = {
     ...NavbarBrand.propTypes
 };

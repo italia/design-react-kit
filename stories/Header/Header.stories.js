@@ -4,22 +4,27 @@ import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 import { withKnobs } from '@storybook/addon-knobs/react'
 
-import { Navbar, NavbarToggler } from '../../src'
+// Components to exclude from the table
+import { Button, Collapse, Icon, Nav, NavItem, NavLink, DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown } from '../../src'
+// Components to include
+import { Header, HeaderContent, HeaderLinkZone, HeaderRightZone, HeaderBrand, HeaderSearch, HeaderSocialsZone, HeaderToggler } from '../../src';
+
 
 import SlimHeaderBasic from './SlimHeader/basic'
-import SlimHeaderLight from './SlimHeader/light'
+import SlimHeaderFull from './SlimHeader/basic-full-responsive'
 import CenterHeaderBasic from './CenterHeader/basic'
-import CenterHeaderSmall from './CenterHeader/small'
-import CenterHeaderLight from './CenterHeader/light'
 import NavHeaderBasic from './NavHeader/basic'
-import NavHeaderLight from './NavHeader/light-desktop'
-import NavHeaderDark from './NavHeader/dark-mobile'
-import CompleteHeaderBasic from './CompleteHeader/basic'
-import CompleteHeaderLight from './CompleteHeader/light'
+import CompleteHeaderBasic, {SlimHeader, CenterHeader, NavHeader} from './CompleteHeader/basic'
 
 import Introduction from './Introduction'
 
-import Esempi from './docs/Esempi.md'
+import SlimBasicDoc from './SlimHeader/basic.md'
+import SlimFullDoc from './SlimHeader/basic-full-responsive.md'
+import CenterBasicDoc from './CenterHeader/basic.md'
+import NavBasicDoc from './NavHeader/basic.md'
+import CompleteBasicDoc from './CompleteHeader/basic.md'
+
+const ComponentsToExclude = [Button, Collapse, Icon, Nav, NavItem, NavLink, DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown];
 
 storiesOf('Componenti/Header', module)
   .addParameters({
@@ -29,83 +34,49 @@ storiesOf('Componenti/Header', module)
   })
   .add('Introduzione', () => <Introduction />)
 
-storiesOf('Componenti/Header.Slim', module)
+storiesOf('Componenti/Header', module)
   .addDecorator(withA11y)
   .addDecorator(withKnobs)
-  // .addParameters({ viewport: { defaultViewport: "iphone6" } })
   .add(
     'Header slim', withInfo({
-      text: Esempi,
-      propTables: [Navbar, NavbarToggler],
-      propTablesExclude: [SlimHeaderBasic]
-    })(() => <SlimHeaderBasic />))
+      text: SlimBasicDoc,
+      propTables: [Header, HeaderContent, HeaderLinkZone, HeaderRightZone, HeaderBrand, HeaderToggler],
+      propTablesExclude: [SlimHeaderBasic, ...ComponentsToExclude]
+    })(SlimHeaderBasic))
     .add(
-      'Header slim - light theme', withInfo({
-        text: Esempi,
-        propTables: [Navbar, NavbarToggler],
-        propTablesExclude: [SlimHeaderLight]
-      })(() => <SlimHeaderLight />))
+      'Header slim with full button', withInfo({
+        text: SlimFullDoc,
+        propTables: [Header, HeaderContent, HeaderLinkZone, HeaderRightZone, HeaderBrand, HeaderToggler],
+        propTablesExclude: [SlimHeaderFull, ...ComponentsToExclude]
+      })(SlimHeaderFull))
 
 
-storiesOf('Componenti/Header.Center', module)
+storiesOf('Componenti/Header', module)
   .addDecorator(withA11y)
   .addDecorator(withKnobs)
-  // .addParameters({ viewport: { defaultViewport: "iphone6" } })
   .add(
     'Header center', withInfo({
-      text: Esempi,
-      propTables: [Navbar, NavbarToggler],
-      propTablesExclude: [CenterHeaderBasic]
-    })(() => <CenterHeaderBasic />))
-  .add(
-    'Header center - small', withInfo({
-      text: Esempi,
-      propTables: [Navbar, NavbarToggler],
-      propTablesExclude: [CenterHeaderSmall]
-    })(() => <CenterHeaderSmall />))
-    .add(
-      'Header center - light theme', withInfo({
-        text: Esempi,
-        propTables: [Navbar, NavbarToggler],
-        propTablesExclude: [CenterHeaderLight]
-      })(() => <CenterHeaderLight />))
+      text: CenterBasicDoc,
+      propTables: [Header, HeaderBrand, HeaderContent, HeaderSearch, HeaderRightZone, HeaderSocialsZone],
+      propTablesExclude: [CenterHeaderBasic, ...ComponentsToExclude]
+    })(CenterHeaderBasic))
 
-storiesOf('Componenti/Header.Nav', module)
+storiesOf('Componenti/Header', module)
   .addDecorator(withA11y)
   .addDecorator(withKnobs)
-  // .addParameters({ viewport: { defaultViewport: "iphone6" } })
   .add(
     'Header nav', withInfo({
-      text: Esempi,
-      propTables: [Navbar, NavbarToggler],
-      propTablesExclude: [NavHeaderBasic]
-    })(() => <NavHeaderBasic />))
-  .add(
-    'Header nav - light desktop theme', withInfo({
-      text: Esempi,
-      propTables: [Navbar, NavbarToggler],
-      propTablesExclude: [NavHeaderLight]
-    })(() => <NavHeaderLight />))
-  .add(
-    'Header nav - dark mobile theme', withInfo({
-      text: Esempi,
-      propTables: [Navbar, NavbarToggler],
-      propTablesExclude: [NavHeaderDark]
-    })(() => <NavHeaderDark />))
+      text: NavBasicDoc,
+      propTables: [Header, HeaderContent, HeaderToggler],
+      propTablesExclude: [NavHeaderBasic, ...ComponentsToExclude]
+    })(NavHeaderBasic));
 
-storiesOf('Componenti/Header.Complete', module)
+storiesOf('Componenti/Header', module)
   .addDecorator(withA11y)
   .addDecorator(withKnobs)
-  // .addParameters({ viewport: { defaultViewport: "iphone6" } })
   .add(
     'Header Complete', withInfo({
-      text: Esempi,
-      propTables: [Navbar, NavbarToggler],
-      propTablesExclude: [CompleteHeaderBasic]
-    })(() => <CompleteHeaderBasic />))
-    .add(
-      'Header Complete - light theme', withInfo({
-        text: Esempi,
-        propTables: [Navbar, NavbarToggler],
-        propTablesExclude: [CompleteHeaderLight]
-      })(() => <CompleteHeaderLight />))
+      text: CompleteBasicDoc,
+      propTables: [Headers, Header],
+      propTablesExclude: [CompleteHeaderBasic, SlimHeader, CenterHeader, NavHeader, ...ComponentsToExclude]
+    })(CompleteHeaderBasic))

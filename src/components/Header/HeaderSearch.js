@@ -5,9 +5,13 @@ import classNames from 'classnames';
 import Icon from '../Icon/Icon';
 
 const propTypes = {
+  /** Classi addizionali per il componente HeaderSearch */
     className: PropTypes.string,
+    /** Etichetta di testo da applicare all'elemento. In caso di stringa vuota non verrà mostrato alcun testo */
     label: PropTypes.string,
+    /** Nome dell'icona da utilizzare */
     iconName: PropTypes.string,
+    /** Indirizzo di indirizzamento al click dell'icona */
     href: PropTypes.string
 };
 

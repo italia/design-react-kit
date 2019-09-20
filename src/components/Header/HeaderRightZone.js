@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import HeaderContext, { SLIM } from './HeaderContext';
 
 const propTypes = {
+    /** Classi addizionali per il componente HeaderRightZone */
     className: PropTypes.string,
 };
 

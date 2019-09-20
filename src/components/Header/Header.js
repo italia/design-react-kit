@@ -2,17 +2,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import HeaderContext, {SLIM, CENTER, NAVBAR} from './HeaderContext';
+import HeaderContext, {CENTER, NAVBAR} from './HeaderContext';
 
 const propTypes = {
+    /** Classi addizionali per il componente Header */
     className: PropTypes.string,
-    type: PropTypes.oneOf([SLIM, CENTER, NAVBAR]).isRequired,
+    // cannot use variables above here or storybook writes the full import stacktrace
+    /** Tipo di componente Header: può essere solamente uno di questi tre tipi */
+    type: PropTypes.oneOf(['slim', 'center', 'navbar']).isRequired,
+    /** Quando abilitato render il componente "sticky", ovvero fisso in alto quando si scorre la pagina */
     sticky: PropTypes.bool,
+    /** Riduce la grandezza del componente Header. Funziona solamente con Header "center". */
     small: PropTypes.bool,
-    theme: PropTypes.oneOf(['light', 'dark-mobile', 'light-desk'])
+    /** Imposta il tema per il componente Header. Per gli Header di tipo "slim" o "center"
+     *  il valore di default è "dark". Per l'Header di tipo "nav" il tema di default è "light" 
+     *  in mobile, mentre "dark" in versione desktop.
+     */
+    theme: PropTypes.oneOf(['light', 'dark'])
 };
 
-const defaultProps = {};
+const defaultProps = {
+    small: false,
+    sticky: false
+};
 
 const Header = ({className, small, sticky, theme, type, ...attributes}) => {
     // use context here as theme
@@ -20,7 +32,9 @@ const Header = ({className, small, sticky, theme, type, ...attributes}) => {
         [`it-header-${type}-wrapper`]: type,
         'it-header-sticky': sticky,
         'it-small-header': type === CENTER && small,
-        [`theme-${theme}`]: theme
+        [`theme-${theme}`]: type !== NAVBAR && theme,
+        'theme-dark-mobile': type === NAVBAR && theme === 'dark',
+        'theme-light-desk': type === NAVBAR && theme === 'light'
     });
     return (
         <HeaderContext.Provider value={{type}}>
