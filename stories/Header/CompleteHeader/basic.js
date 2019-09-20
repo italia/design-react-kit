@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { select } from '@storybook/addon-knobs/react'
 import { Button, Collapse, DropdownToggle, DropdownMenu, DropdownItem, Header, Headers, HeaderContent, HeaderSearch, HeaderRightZone, HeaderSocialsZone, HeaderToggler, HeaderLinkZone, Icon, Nav, NavItem, NavLink, HeaderBrand, UncontrolledDropdown } from '../../../src';
 
+// eslint rule has to be disable for few lines here as Storybook addons will go in error
+// if PropTypes are declared in these components
 export class SlimHeader extends Component {
 
     state = {
@@ -10,43 +12,44 @@ export class SlimHeader extends Component {
     }
 
     render() {
-
-        return (<Header type="slim" theme={this.props.theme}>
-            <HeaderContent>
-                <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
-                <HeaderLinkZone>
-                    <HeaderToggler onClick={() => this.setState({ collapsed: !this.state.collapsed })}>
-                        <span>Ente appartenenza/Owner</span>
-                        <Icon icon="it-expand" />
-                    </HeaderToggler>
-                    <Collapse isOpen={this.state.collapsed} header>
-                        <Nav inHeader>
-                            <NavItem><NavLink href="#">Link 1</NavLink></NavItem>
-                            <NavItem active><NavLink href="#">Link 2 Active</NavLink></NavItem>
-                        </Nav>
-                    </Collapse>
-                </HeaderLinkZone>
-                <HeaderRightZone>
-                    <UncontrolledDropdown nav tag="div">
-                        <DropdownToggle nav caret>
-                            ITA
-                        <Icon icon="it-expand" />
-                        </DropdownToggle>
-                        <DropdownMenu>
-                            <DropdownItem>
+        return (
+            // eslint-disable-next-line react/prop-types
+            <Header type="slim" theme={this.props.theme}>
+                <HeaderContent>
+                    <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
+                    <HeaderLinkZone>
+                        <HeaderToggler onClick={() => this.setState({ collapsed: !this.state.collapsed })}>
+                            <span>Ente appartenenza/Owner</span>
+                            <Icon icon="it-expand" />
+                        </HeaderToggler>
+                        <Collapse isOpen={this.state.collapsed} header>
+                            <Nav inHeader>
+                                <NavItem><NavLink href="#">Link 1</NavLink></NavItem>
+                                <NavItem active><NavLink href="#">Link 2 Active</NavLink></NavItem>
+                            </Nav>
+                        </Collapse>
+                    </HeaderLinkZone>
+                    <HeaderRightZone>
+                        <UncontrolledDropdown nav tag="div">
+                            <DropdownToggle nav caret>
                                 ITA
+                        <Icon icon="it-expand" />
+                            </DropdownToggle>
+                            <DropdownMenu>
+                                <DropdownItem>
+                                    ITA
                         </DropdownItem>
-                            <DropdownItem>
-                                ENG
+                                <DropdownItem>
+                                    ENG
                         </DropdownItem>
-                        </DropdownMenu>
-                    </UncontrolledDropdown>
-                    <div className="it-access-top-wrapper">
-                        <Button color="primary" size="sm">Accedi</Button>
-                    </div>
-                </HeaderRightZone>
-            </HeaderContent>
-        </Header>)
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
+                        <div className="it-access-top-wrapper">
+                            <Button color="primary" size="sm">Accedi</Button>
+                        </div>
+                    </HeaderRightZone>
+                </HeaderContent>
+            </Header>)
     }
 }
 
@@ -54,6 +57,7 @@ export class CenterHeader extends Component {
 
     render() {
         return (
+            // eslint-disable-next-line react/prop-types
             <Header type="center" theme={this.props.theme}>
                 <HeaderContent>
                     <HeaderBrand iconName="it-code-circle">
@@ -95,6 +99,7 @@ export class NavHeader extends Component {
     }
     render() {
         return (
+            // eslint-disable-next-line react/prop-types
             <Header type="navbar" theme={this.props.theme}>
                 <HeaderContent expand="lg" megamenu>
                     <HeaderToggler onClick={() => this.setState({ collapsed: !this.state.collapsed })} aria-controls="nav1" aria-expanded="false" aria-label="Toggle navigation">
