@@ -85,7 +85,7 @@
         "lint:fix": "eslint --fix src/",
         "test": "export SKIP_PREFLIGHT_CHECK=true && react-scripts test --env=jsdom",
         "test:ci": "CI=true react-scripts test --env=jsdom",
-        "start": "yarn run storybook"
+        "start": "yarn run storybook:serve"
     },
     "husky": {
         "hooks": {

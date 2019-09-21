@@ -1,14 +1,14 @@
 
-### A content container with many options and variations.
+### Un contenitore di contenuti con molte opzioni e varianti.
 
-The **cards** are flexible and extendable containers. Built with flexbox, they offer easy positioning in the grid and combine well with other components.
-By default, the cards fully extend to 100% of their container element.
+Le **card** sono contenitori flessibili ed estendibili. Costruite con flexbox, offrono un facile posizionamento nella griglia e si combinano bene con altri componenti.
+Di default le card si estendono completamente al 100% del loro elemento contenitore
 
-## Simple Card
+## Carta semplice
 
-In the following example the card is inside a columnar bootstrap structure. 
-The beginning of the actual card is indicated by the comment `start card`.
- 
-Example of a simple card with title and text
+Negli esempi seguenti le card sono all’interno di una struttura colonnare di bootstrap.
+L’inizio della card vera e propria è segnalata dal commento `start card`.
+
+Esempio di card semplice con titolo e testo
 
 <!-- STORY -->

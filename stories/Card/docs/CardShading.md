@@ -1,5 +1,6 @@
-Shaded cards are characterized by classes:
+## Card con ombreggiatura
 
-`.card-space`: used in the most external div (`card-wrapper`) it serves to distance the cards in their mobile version.
+Le card con ombreggiatura sono caratterizzate dalla proprietà:
 
-`.card-bg`: used in the div (`card`) to create background and shadow of the card.
+`space`: utilizzata nel componente `Card` serve a distanziare le card nella loro versione mobile.
+`.card-bg`: class utilizzata nel componente `Card` serve a creare background e ombra della card.

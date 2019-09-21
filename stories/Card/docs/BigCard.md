@@ -1,9 +1,10 @@
-Cards with large shading are characterized by classes:
+## Card grande
 
-`.card-bg`: used in the div (`card`) to create background and shadow of the card.
+Le card con ombreggiatura grandi sono caratterizzate dalle classi:
 
-`.card-big`: used in the div (`card`) is used for the sizing of its contents.
+`.card-bg`: utilizzata nel componente `Card` serve a creare background e ombra della card.
+`.card-big`: utilizzata nel componente `Card` serve a al dimensionamento dei suoi contenuti.
 
-In the following example a large icon has been inserted before the card title, the div containing the icon is class `.top-icon`.
+Nell’esempio seguente è stata inserita un icona grande prima del titolo della card, il div contenente l’icona è di classe `.top-icon`.
 
 
