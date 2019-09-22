@@ -21,6 +21,9 @@ class HeaderRightZone extends PureComponent {
         const { className, ...attributes } = this.props;
         const { type } = this.context;
         const classes = classNames(className, {
+            // BI >= 1.3.6
+            'it-header-slim-right-zone': type === SLIM,
+            // BI < 1.3.6
             'header-slim-right-zone': type === SLIM,
             'it-right-zone': type !== SLIM
         });
