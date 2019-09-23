@@ -36,12 +36,21 @@ export class SlimHeader extends Component {
                         <Icon icon="it-expand" />
                             </DropdownToggle>
                             <DropdownMenu>
-                                <DropdownItem>
-                                    ITA
-                        </DropdownItem>
-                                <DropdownItem>
-                                    ENG
-                        </DropdownItem>
+                            <div className="row">
+                                <div className="col-12">
+                                    <div className="link-list-wrapper">
+                                        <ul className="link-list">
+                                            <li>
+                                                <DropdownItem href="#" className="list-item">
+                                                    <span>ITA</span>
+                                            </DropdownItem></li>
+                                            <li><DropdownItem href="#" className="list-item">
+                                                <span>ENG</span>
+                                </DropdownItem></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                             </DropdownMenu>
                         </UncontrolledDropdown>
                         <div className="it-access-top-wrapper">
@@ -130,21 +139,18 @@ export class NavHeader extends Component {
                                             <Icon icon="it-expand" />
                                         </DropdownToggle>
                                         <DropdownMenu>
-                                            <DropdownItem>
-                                                <h3 className="no_toc">Heading</h3>
-                                            </DropdownItem>
-                                            <DropdownItem>
-                                                Link 1
-                                            </DropdownItem>
-                                            <DropdownItem>
-                                                Link 2
-                                            </DropdownItem>
-                                            <DropdownItem>
-                                                Link 3
-                                            </DropdownItem>
-                                            <DropdownItem>
-                                                Link 4
-                                            </DropdownItem>
+                                        <div className="link-list-wrapper">
+                                            <ul className="link-list">
+                                                <li>
+                                                    <h3 className="no_toc" id="heading-es-1">Heading</h3>
+                                                </li>
+                                                <li><DropdownItem className="list-item" href="#"><span>Link list 1</span></DropdownItem></li>
+                                                <li><DropdownItem className="list-item" href="#"><span>Link list 2</span></DropdownItem></li>
+                                                <li><DropdownItem className="list-item" href="#"><span>Link list 3</span></DropdownItem></li>
+                                                <li><span className="divider"></span></li>
+                                                <li><DropdownItem className="list-item" href="#"><span>Link list 4</span></DropdownItem></li>
+                                            </ul>
+                                        </div>
                                         </DropdownMenu>
                                     </UncontrolledDropdown>
                                 </NavItem>

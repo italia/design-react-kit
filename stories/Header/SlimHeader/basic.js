@@ -27,15 +27,24 @@ const SlimHeader = () => {
                     <UncontrolledDropdown nav tag="div">
                         <DropdownToggle nav caret>
                             ITA
-                                <Icon icon="it-expand" />
+                            <Icon icon="it-expand" />
                         </DropdownToggle>
                         <DropdownMenu>
-                            <DropdownItem>
-                                ITA
-                                </DropdownItem>
-                            <DropdownItem>
-                                ENG
-                                </DropdownItem>
+                            <div className="row">
+                                <div className="col-12">
+                                    <div className="link-list-wrapper">
+                                        <ul className="link-list">
+                                            <li>
+                                                <DropdownItem href="#" className="list-item">
+                                                    <span>ITA</span>
+                                            </DropdownItem></li>
+                                            <li><DropdownItem href="#" className="list-item">
+                                                <span>ENG</span>
+                                </DropdownItem></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </DropdownMenu>
                     </UncontrolledDropdown>
                     <div className="it-access-top-wrapper">
