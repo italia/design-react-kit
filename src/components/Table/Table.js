@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import classnames from "classnames";
-import $ from "jquery";
+import React from 'react'
+import PropTypes from 'prop-types'
+import classnames from 'classnames'
+import $ from 'jquery'
 
 class Table extends React.Component {
   static propTypes = {
@@ -12,15 +12,15 @@ class Table extends React.Component {
     striped: PropTypes.bool,
     hoverable: PropTypes.bool,
     responsive: PropTypes.bool
-  };
+  }
 
   defaultProps = {
     bordered: true
-  };
+  }
 
   componentDidMount() {
     if (this.props.responsive) {
-      $(this.table).trigger("enhance.tablesaw");
+      $(this.table).trigger('enhance.tablesaw')
     }
   }
 
@@ -34,7 +34,7 @@ class Table extends React.Component {
       hoverable,
       responsive,
       ...rest
-    } = this.props;
+    } = this.props
 
     if (responsive) {
       // eslint-disable-next-line
@@ -44,26 +44,25 @@ class Table extends React.Component {
     const styles = classnames(
       {
         Table: true,
-        "Table--withBorder": bordered,
-        "Table--compact": compact,
-        "Table--striped": striped,
-        "Table--hover": hoverable
+        'Table--withBorder': bordered,
+        'Table--compact': compact,
+        'Table--striped': striped,
+        'Table--hover': hoverable
       },
       className
-    );
+    )
 
     return (
       <table
         ref={el => {
-          this.table = el;
+          this.table = el
         }}
         className={styles}
-        {...rest}
-      >
+        {...rest}>
         {children}
       </table>
-    );
+    )
   }
 }
 
-export default Table;
+export default Table

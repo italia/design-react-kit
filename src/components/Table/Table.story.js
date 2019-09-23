@@ -1,12 +1,12 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import Table from "./Table";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
+import Table from './Table'
 
-storiesOf("Table", module)
+storiesOf('Table', module)
   .add(
-    "Default",
-    withInfo("Default")(() => (
+    'Default',
+    withInfo('Default')(() => (
       <Table bordered className="u-text-r-xs">
         <caption className="u-hiddenVisually">maiores eius et</caption>
         <thead>
@@ -47,14 +47,13 @@ storiesOf("Table", module)
     ))
   )
   .add(
-    "Compact",
-    withInfo("Compact")(() => (
+    'Compact',
+    withInfo('Compact')(() => (
       <Table
         bordered
         compact
         className="u-text-r-xxs"
-        aria-describedby="description"
-      >
+        aria-describedby="description">
         <thead>
           <tr className="u-border-bottom-xs">
             <th>Tab. 1</th>
@@ -93,8 +92,8 @@ storiesOf("Table", module)
     ))
   )
   .add(
-    "Complex",
-    withInfo("Complex")(() => (
+    'Complex',
+    withInfo('Complex')(() => (
       <Table striped hoverable bordered>
         <caption className="u-hiddenVisually">maiores eius et</caption>
         <thead>
@@ -135,8 +134,8 @@ storiesOf("Table", module)
     ))
   )
   .add(
-    "Irregular",
-    withInfo("Irregular")(() => (
+    'Irregular',
+    withInfo('Irregular')(() => (
       <Table bordered>
         <caption className="u-hiddenVisually">maiores eius et</caption>
         <colgroup span="2" />
@@ -147,15 +146,13 @@ storiesOf("Table", module)
             <th
               className="u-textCenter u-border-right-xxs u-border-left-xxs u-background-grey-10"
               colSpan="2"
-              scope="colgroup"
-            >
+              scope="colgroup">
               Mars
             </th>
             <th
               className="u-textCenter u-background-grey-10"
               colSpan="2"
-              scope="colgroup"
-            >
+              scope="colgroup">
               Venus
             </th>
           </tr>
@@ -196,14 +193,13 @@ storiesOf("Table", module)
     ))
   )
   .add(
-    "Responsive",
-    withInfo("Responsive")(() => (
+    'Responsive',
+    withInfo('Responsive')(() => (
       <Table
         bordered
         responsive
         className="js-TableResponsive tablesaw tablesaw-stack"
-        data-tablesaw-mode="stack"
-      >
+        data-tablesaw-mode="stack">
         <caption className="u-hiddenVisually">maiores eius et</caption>
         <thead>
           <tr>
@@ -261,14 +257,13 @@ storiesOf("Table", module)
     ))
   )
   .add(
-    "Swipe",
-    withInfo("Swipe")(() => (
+    'Swipe',
+    withInfo('Swipe')(() => (
       <Table
         bordered
         responsive
         className="js-TableResponsive tablesaw tablesaw-swipe"
-        data-tablesaw-mode="swipe"
-      >
+        data-tablesaw-mode="swipe">
         <caption className="u-hiddenVisually">maiores eius et</caption>
         <thead>
           <tr>
@@ -332,8 +327,8 @@ storiesOf("Table", module)
     ))
   )
   .add(
-    "Two headers",
-    withInfo("Two headers")(() => (
+    'Two headers',
+    withInfo('Two headers')(() => (
       <Table bordered>
         <caption className="u-padding-r-bottom u-textLeft">
           Delivery slots:
@@ -368,4 +363,4 @@ storiesOf("Table", module)
         </tbody>
       </Table>
     ))
-  );
+  )

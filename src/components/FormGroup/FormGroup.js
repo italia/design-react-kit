@@ -1,13 +1,12 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
-import { FormGroup as ReactStrapFormGroup } from "reactstrap";
-import { Input, Label } from "reactstrap";
+import { FormGroup as ReactStrapFormGroup, Input, Label } from 'reactstrap'
 
 class FormGroup extends Component {
   state = {
     active: this.props.active || false,
     value: null
-  };
+  }
 
   onFocus = (callback, active = true) => {
     this.setState(
@@ -16,11 +15,11 @@ class FormGroup extends Component {
       },
       () => {
         if (callback) {
-          callback();
+          callback()
         }
       }
-    );
-  };
+    )
+  }
 
   onBlur = (callback, active = false) => {
     this.setState(
@@ -29,23 +28,23 @@ class FormGroup extends Component {
       },
       () => {
         if (callback) {
-          callback();
+          callback()
         }
       }
-    );
-  };
+    )
+  }
 
   onChange = (callback, event) => {
-    let value;
-    let target;
+    let value
+    let target
     if (event && event.persist) {
       // SyntheticEvent
-      event.persist();
-      target = { event };
-      value = { target };
+      event.persist()
+      target = { event }
+      value = { target }
     } else if (event.label) {
       // Autocomplete
-      value = event.label;
+      value = event.label
     }
 
     this.setState(
@@ -54,85 +53,85 @@ class FormGroup extends Component {
       },
       () => {
         if (callback) {
-          callback(event);
+          callback(event)
         }
       }
-    );
-  };
+    )
+  }
 
   render() {
-    const { active, value } = this.state;
-    const { children, className, col, ...rest } = this.props;
+    const { active, value } = this.state
+    const { children, className, col, ...rest } = this.props
 
-    const hasValue = !!value;
+    const hasValue = !!value
 
-    let classNames = [className, active ? "active" : "", col ? "col" : ""].join(
-      " "
-    );
+    let classNames = [className, active ? 'active' : '', col ? 'col' : ''].join(
+      ' '
+    )
 
     return (
       <ReactStrapFormGroup {...rest} className={classNames}>
         {(() =>
           React.Children.map(children, child => {
-            if (child === null) return;
+            if (child === null) return
 
-            const { onFocus, onBlur, onChange, className } = child.props;
+            const { onFocus, onBlur, onChange, className } = child.props
 
             switch (child.type) {
               case Input:
-                let isLabelActive = null;
+                const isLabelActive = null
 
                 return React.cloneElement(child, {
                   ...child.props,
                   onFocus: () => {
-                    this.onFocus(onFocus);
+                    this.onFocus(onFocus)
                   },
                   onBlur: () => {
-                    this.onBlur(onBlur);
+                    this.onBlur(onBlur)
                   },
                   onChange: e => {
-                    this.onChange(onChange, e);
+                    this.onChange(onChange, e)
                   },
                   ...isLabelActive
-                });
+                })
               case Label:
-                let hasChildValue = false;
+                let hasChildValue = false
 
                 React.Children.toArray(children)
                   .filter(child => {
                     switch (child.type) {
                       case Input:
-                        return true;
+                        return true
                       default:
-                        return false;
+                        return false
                     }
                   })
                   .map(child => {
                     if (child.props.value) {
-                      hasChildValue = true;
+                      hasChildValue = true
                     }
-                    return false;
-                  });
+                    return false
+                  })
 
                 classNames =
                   hasValue || hasChildValue
-                    ? [className, "active"].join(" ")
-                    : className;
+                    ? [className, 'active'].join(' ')
+                    : className
 
                 return React.cloneElement(child, {
                   ...child.props,
                   className: classNames
-                });
+                })
               default:
-                return child;
+                return child
             }
           }))()}
       </ReactStrapFormGroup>
-    );
+    )
   }
 }
 
-FormGroup.defaultProps = ReactStrapFormGroup.defaultProps;
-FormGroup.propTypes = ReactStrapFormGroup.propTypes;
+FormGroup.defaultProps = ReactStrapFormGroup.defaultProps
+FormGroup.propTypes = ReactStrapFormGroup.propTypes
 
-export default FormGroup;
+export default FormGroup

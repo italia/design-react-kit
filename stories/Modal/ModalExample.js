@@ -1,19 +1,19 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "../../src";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from '../../src'
 
 class ModalExample extends React.Component {
   state = {
     modal: false,
-    size: ""
-  };
+    size: ''
+  }
 
-  toggle = (size = "") => {
+  toggle = (size = '') => {
     this.setState({
       modal: !this.state.modal,
       size
-    });
-  };
+    })
+  }
 
   renderLongBody = () => (
     <div>
@@ -102,10 +102,10 @@ class ModalExample extends React.Component {
         ullamcorper nulla non metus auctor fringilla.
       </p>
     </div>
-  );
+  )
 
   render() {
-    const { long, centered, fade, sizing } = this.props;
+    const { long, centered, fade, sizing } = this.props
 
     return (
       <div>
@@ -113,12 +113,11 @@ class ModalExample extends React.Component {
           <div>
             <Button
               color="primary"
-              onClick={() => this.toggle("lg")}
-              className="mr-3"
-            >
+              onClick={() => this.toggle('lg')}
+              className="mr-3">
               Modale grande
             </Button>
-            <Button color="primary" onClick={() => this.toggle("sm")}>
+            <Button color="primary" onClick={() => this.toggle('sm')}>
               Modale piccola
             </Button>
           </div>
@@ -134,8 +133,7 @@ class ModalExample extends React.Component {
           centered={centered}
           isOpen={this.state.modal}
           toggle={this.toggle}
-          className={this.props.className}
-        >
+          className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Titolo della modale</ModalHeader>
           <ModalBody>
             {long ? (
@@ -154,7 +152,7 @@ class ModalExample extends React.Component {
           </ModalFooter>
         </Modal>
       </div>
-    );
+    )
   }
 }
 
@@ -164,6 +162,6 @@ ModalExample.propTypes = {
   fade: PropTypes.bool,
   sizing: PropTypes.bool,
   className: PropTypes.string
-};
+}
 
-export default ModalExample;
+export default ModalExample

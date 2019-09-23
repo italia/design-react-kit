@@ -1,7 +1,7 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
 import {
   Dropdown,
@@ -10,22 +10,22 @@ import {
   DropdownToggle,
   LinkList,
   LinkListItem
-} from "../../src";
+} from '../../src'
 
-import DropdownExample from "./DropdownExample";
-import DropdownButtonExample from "./DropdownButtonExample";
+import DropdownExample from './DropdownExample'
+import DropdownButtonExample from './DropdownButtonExample'
 
-import Esempi from "./docs/Esempi.md";
-import VarianteBottoni from "./docs/VarianteBottoni.md";
-import Link from "./docs/Link.md";
-import MenuVociAttive from "./docs/MenuVociAttive.md";
-import MenuVociDisabilitate from "./docs/MenuVociDisabilitate.md";
-import MenuHeaderDivider from "./docs/MenuHeaderDivider.md";
-import MenuLarge from "./docs/MenuLarge.md";
-import MenuFull from "./docs/MenuFull.md";
-import MenuIconRight from "./docs/MenuIconRight.md";
-import MenuIconLeft from "./docs/MenuIconLeft.md";
-import MenuDark from "./docs/MenuDark.md";
+import Esempi from './docs/Esempi.md'
+import VarianteBottoni from './docs/VarianteBottoni.md'
+import Link from './docs/Link.md'
+import MenuVociAttive from './docs/MenuVociAttive.md'
+import MenuVociDisabilitate from './docs/MenuVociDisabilitate.md'
+import MenuHeaderDivider from './docs/MenuHeaderDivider.md'
+import MenuLarge from './docs/MenuLarge.md'
+import MenuFull from './docs/MenuFull.md'
+import MenuIconRight from './docs/MenuIconRight.md'
+import MenuIconLeft from './docs/MenuIconLeft.md'
+import MenuDark from './docs/MenuDark.md'
 
 const VarianteComponent = () => (
   <section>
@@ -33,7 +33,7 @@ const VarianteComponent = () => (
     <DropdownButtonExample color="secondary" />
     <DropdownButtonExample color="danger" />
   </section>
-);
+)
 
 const MenuVociAttiveComponent = () => (
   <div className="clearfix">
@@ -51,7 +51,7 @@ const MenuVociAttiveComponent = () => (
       </LinkList>
     </DropdownMenu>
   </div>
-);
+)
 
 const MenuVociDisabilitateComponent = () => (
   <div className="clearfix">
@@ -69,7 +69,7 @@ const MenuVociDisabilitateComponent = () => (
       </LinkList>
     </DropdownMenu>
   </div>
-);
+)
 
 const MenuHeaderDividerComponent = () => (
   <div className="clearfix">
@@ -92,7 +92,7 @@ const MenuHeaderDividerComponent = () => (
       </LinkList>
     </DropdownMenu>
   </div>
-);
+)
 
 const MenuLargeComponent = () => (
   <div className="clearfix">
@@ -110,7 +110,7 @@ const MenuLargeComponent = () => (
       </LinkList>
     </DropdownMenu>
   </div>
-);
+)
 
 const MenuFullComponent = () => (
   <div className="clearfix">
@@ -134,7 +134,7 @@ const MenuFullComponent = () => (
       </LinkList>
     </DropdownMenu>
   </div>
-);
+)
 
 const MenuIconRightComponent = () => (
   <div className="clearfix">
@@ -155,7 +155,7 @@ const MenuIconRightComponent = () => (
       </LinkList>
     </DropdownMenu>
   </div>
-);
+)
 
 const MenuIconLeftComponent = () => (
   <div className="clearfix">
@@ -176,7 +176,7 @@ const MenuIconLeftComponent = () => (
       </LinkList>
     </DropdownMenu>
   </div>
-);
+)
 
 const MenuDarkComponent = () => (
   <div className="clearfix">
@@ -207,12 +207,12 @@ const MenuDarkComponent = () => (
       </LinkList>
     </DropdownMenu>
   </div>
-);
+)
 
-storiesOf("Componenti/Dropdown", module)
+storiesOf('Componenti/Dropdown', module)
   .addDecorator(withA11y)
   .add(
-    "Esempi",
+    'Esempi',
     withInfo({
       text: Esempi,
       propTables: [
@@ -227,7 +227,7 @@ storiesOf("Componenti/Dropdown", module)
     })(() => <DropdownExample />)
   )
   .add(
-    "Variante Bottoni",
+    'Variante Bottoni',
     withInfo({
       text: VarianteBottoni,
       propTables: [
@@ -242,7 +242,7 @@ storiesOf("Componenti/Dropdown", module)
     })(VarianteComponent)
   )
   .add(
-    "Link",
+    'Link',
     withInfo({
       text: Link,
       propTables: [
@@ -255,55 +255,55 @@ storiesOf("Componenti/Dropdown", module)
       ],
       propTablesExclude: [DropdownExample]
     })(() => <DropdownExample tag="span" />)
-  );
+  )
 
-storiesOf("Componenti/Dropdown.Dropdown menu", module)
+storiesOf('Componenti/Dropdown.Dropdown menu', module)
   .addDecorator(withA11y)
   .add(
-    "Menù voci attive",
+    'Menù voci attive',
     withInfo({
       text: MenuVociAttive
     })(MenuVociAttiveComponent)
   )
   .add(
-    "Menù voci disabilitate",
+    'Menù voci disabilitate',
     withInfo({
       text: MenuVociDisabilitate
     })(MenuVociDisabilitateComponent)
   )
   .add(
-    "Menù headers e separatori",
+    'Menù headers e separatori',
     withInfo({
       text: MenuHeaderDivider
     })(MenuHeaderDividerComponent)
   )
   .add(
-    "Menu con voci large",
+    'Menu con voci large',
     withInfo({
       text: MenuLarge
     })(MenuLargeComponent)
   )
   .add(
-    "Menù full width",
+    'Menù full width',
     withInfo({
       text: MenuFull
     })(MenuFullComponent)
   )
   .add(
-    "Menù icona a destra",
+    'Menù icona a destra',
     withInfo({
       text: MenuIconRight
     })(MenuIconRightComponent)
   )
   .add(
-    "Menù icona a sinistra",
+    'Menù icona a sinistra',
     withInfo({
       text: MenuIconLeft
     })(MenuIconLeftComponent)
   )
   .add(
-    "Menù dark",
+    'Menù dark',
     withInfo({
       text: MenuDark
     })(MenuDarkComponent)
-  );
+  )

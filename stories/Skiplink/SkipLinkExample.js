@@ -1,16 +1,16 @@
-import React from "react";
-import { Skiplink, SkiplinkItem } from "../../src";
+import React from 'react'
+import { Skiplink, SkiplinkItem } from '../../src'
 
 class SkipLinkExample extends React.Component {
   constructor(props) {
-    super(props);
-    this.container = React.createRef();
+    super(props)
+    this.container = React.createRef()
   }
 
   componentDidMount() {
     // We focus the container here since it is hosted inside Storybook's iframe
-    const container = this.container.current;
-    container && container.focus();
+    const container = this.container.current
+    container && container.focus()
   }
 
   render() {
@@ -25,8 +25,8 @@ class SkipLinkExample extends React.Component {
           <SkiplinkItem href="#footer">Skip to footer</SkiplinkItem>
         </Skiplink>
       </section>
-    );
+    )
   }
 }
 
-export default SkipLinkExample;
+export default SkipLinkExample

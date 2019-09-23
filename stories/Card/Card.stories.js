@@ -1,8 +1,8 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
-import { withKnobs, text, boolean } from "@storybook/addon-knobs";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
+import { withKnobs, text, boolean } from '@storybook/addon-knobs'
 
 import {
   Card,
@@ -15,18 +15,18 @@ import {
   CardReadMore,
   Icon,
   CardTagsHeader
-} from "../../src";
+} from '../../src'
 
-import SimpleCard from "./docs/SimpleCard.md";
-import SimpleCardMultipleColumns from "./docs/SimpleCardMultipleColumns.md";
-import SimpleArticle from "./docs/SimpleArticle.md";
-import CardIcon from "./docs/CardIcon.md";
-import CardShading from "./docs/CardShading.md";
-import BigCard from "./docs/BigCard.md";
-import BigCardTag from "./docs/BigCardTag.md";
-import CardImage from "./docs/CardImage.md";
-import SpecialCard from "./docs/SpecialCard.md";
-import EsempiInterattivi from "../Button/docs/EsempiInterattivi.md";
+import SimpleCard from './docs/SimpleCard.md'
+import SimpleCardMultipleColumns from './docs/SimpleCardMultipleColumns.md'
+import SimpleArticle from './docs/SimpleArticle.md'
+import CardIcon from './docs/CardIcon.md'
+import CardShading from './docs/CardShading.md'
+import BigCard from './docs/BigCard.md'
+import BigCardTag from './docs/BigCardTag.md'
+import CardImage from './docs/CardImage.md'
+import SpecialCard from './docs/SpecialCard.md'
+import EsempiInterattivi from '../Button/docs/EsempiInterattivi.md'
 
 const SimpleCardComponent = () => (
   <div className="row">
@@ -47,7 +47,7 @@ const SimpleCardComponent = () => (
       {/* end card */}
     </div>
   </div>
-);
+)
 
 const SimpleCardMultipleColumnsComponent = () => (
   <div className="row">
@@ -68,7 +68,7 @@ const SimpleCardMultipleColumnsComponent = () => (
       </div>
     ))}
   </div>
-);
+)
 
 const SimpleArticleComponent = () => (
   <div className="row">
@@ -91,7 +91,7 @@ const SimpleArticleComponent = () => (
       {/* end card */}
     </div>
   </div>
-);
+)
 
 const CardIconComponent = () => (
   <div className="row">
@@ -122,7 +122,7 @@ const CardIconComponent = () => (
       {/* end card */}
     </div>
   </div>
-);
+)
 
 const CardShadingComponent = () => (
   <div className="row">
@@ -144,7 +144,7 @@ const CardShadingComponent = () => (
       {/* end card */}
     </div>
   </div>
-);
+)
 
 const BigCardComponent = () => (
   <div className="row">
@@ -169,7 +169,7 @@ const BigCardComponent = () => (
       {/* end card */}
     </div>
   </div>
-);
+)
 const BigCardTagComponent = () => (
   <div className="row">
     <div className="col-12 col-lg-6">
@@ -198,7 +198,7 @@ const BigCardTagComponent = () => (
       {/* end card */}
     </div>
   </div>
-);
+)
 
 const CardImageComponent = () => (
   <div className="row">
@@ -231,7 +231,7 @@ const CardImageComponent = () => (
       {/* end card */}
     </div>
   </div>
-);
+)
 
 const SpecialCardComponent = () => (
   <div className="row">
@@ -264,20 +264,20 @@ const SpecialCardComponent = () => (
       {/* end card */}
     </div>
   </div>
-);
+)
 
 const EsempiInterattiviComponent = () => {
-  const hasSpace = boolean("Extra mobile spacing", false);
-  const isTeaser = boolean("Card Anteprima", false);
-  const linkOption = text("Link", "#");
+  const hasSpace = boolean('Extra mobile spacing', false)
+  const isTeaser = boolean('Card Anteprima', false)
+  const linkOption = text('Link', '#')
   const titleOption = text(
-    "Titolo",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit…"
-  );
+    'Titolo',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit…'
+  )
   const textOption = text(
-    "Testo",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  );
+    'Testo',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  )
 
   return (
     <div className="row">
@@ -297,13 +297,13 @@ const EsempiInterattiviComponent = () => {
         {/* end card */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-storiesOf("Componenti/Cards", module)
+storiesOf('Componenti/Cards', module)
   .addDecorator(withA11y)
   .add(
-    "Simple Card",
+    'Simple Card',
     withInfo({
       text: SimpleCard,
       propTables: [Card],
@@ -311,7 +311,7 @@ storiesOf("Componenti/Cards", module)
     })(SimpleCardComponent)
   )
   .add(
-    "Simple Card in multiple columns",
+    'Simple Card in multiple columns',
     withInfo({
       text: SimpleCardMultipleColumns,
       propTables: [Card],
@@ -319,21 +319,21 @@ storiesOf("Componenti/Cards", module)
     })(SimpleCardMultipleColumnsComponent)
   )
   .add(
-    "Simple Article",
+    'Simple Article',
     withInfo({
       text: SimpleArticle,
       propTables: [Card]
     })(SimpleArticleComponent)
   )
   .add(
-    "Card with icon",
+    'Card with icon',
     withInfo({
       text: CardIcon,
       propTables: [Card]
     })(CardIconComponent)
   )
   .add(
-    "Card with shading",
+    'Card with shading',
     withInfo({
       text: CardShading,
       propTables: [Card],
@@ -341,40 +341,40 @@ storiesOf("Componenti/Cards", module)
     })(CardShadingComponent)
   )
   .add(
-    "Big card",
+    'Big card',
     withInfo({
       text: BigCard,
       propTables: [Card]
     })(BigCardComponent)
   )
   .add(
-    "Big card with tag",
+    'Big card with tag',
     withInfo({
       text: BigCardTag,
       propTables: [Card]
     })(BigCardTagComponent)
   )
   .add(
-    "Card with image",
+    'Card with image',
     withInfo({
       text: CardImage,
       propTables: [Card]
     })(CardImageComponent)
   )
   .add(
-    "Special cards",
+    'Special cards',
     withInfo({
       text: SpecialCard,
       propTables: [Card]
     })(SpecialCardComponent)
-  );
+  )
 
-storiesOf("Componenti/Cards", module)
+storiesOf('Componenti/Cards', module)
   .addDecorator(withA11y)
   .addDecorator(withKnobs)
   .add(
-    "Esempi interattivi",
+    'Esempi interattivi',
     withInfo({
       text: EsempiInterattivi
     })(EsempiInterattiviComponent)
-  );
+  )

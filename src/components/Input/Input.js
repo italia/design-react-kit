@@ -1,11 +1,11 @@
 /* eslint react/prefer-stateless-function: 0 */
 
-import React from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
-import { Util } from "reactstrap";
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
+import { Util } from 'reactstrap'
 
-const { mapToCssModules, deprecated, warnOnce } = Util;
+const { mapToCssModules, deprecated, warnOnce } = Util
 
 const propTypes = {
   children: PropTypes.node,
@@ -35,39 +35,41 @@ const propTypes = {
   addon: PropTypes.bool,
   className: PropTypes.string,
   cssModule: PropTypes.object
-};
+}
 
 const defaultProps = {
-  type: "text"
-};
+  type: 'text'
+}
 
 class Input extends React.Component {
   constructor() {
-    super();
+    super()
     this.state = {
       isFocused: false,
       hidden: true,
       icon: true
-    };
-    this.toggleShow = this.toggleShow.bind(this);
+    }
+    this.toggleShow = this.toggleShow.bind(this)
   }
+
   toggleFocusLabel = () => {
     this.setState({
       isFocused: true
-    });
-  };
+    })
+  }
 
   toggleBlurLabel = e => {
-    if (e.target.value === "") {
+    if (e.target.value === '') {
       this.setState({
         isFocused: !this.state.isFocused
-      });
+      })
     }
-  };
+  }
 
   toggleShow() {
-    this.setState({ hidden: !this.state.hidden, icon: !this.state.icon });
+    this.setState({ hidden: !this.state.hidden, icon: !this.state.icon })
   }
+
   render() {
     const {
       className,
@@ -85,28 +87,28 @@ class Input extends React.Component {
       normalized,
       value,
       ...attributes
-    } = this.props;
-    let { bsSize, valid, invalid } = this.props;
+    } = this.props
+    let { bsSize, valid, invalid } = this.props
 
-    const checkInput = ["radio", "checkbox"].indexOf(type) > -1;
-    const isNotaNumber = new RegExp("\\D", "g");
+    const checkInput = ['radio', 'checkbox'].indexOf(type) > -1
+    const isNotaNumber = new RegExp('\\D', 'g')
 
-    const fileInput = type === "file";
-    const textareaInput = type === "textarea";
-    const selectInput = type === "select";
-    let Tag = tag || (selectInput || textareaInput ? type : "input");
+    const fileInput = type === 'file'
+    const textareaInput = type === 'textarea'
+    const selectInput = type === 'select'
+    let Tag = tag || (selectInput || textareaInput ? type : 'input')
 
-    let formControlClass = "form-control";
-    let infoTextControlClass = "form-text text-muted";
+    let formControlClass = 'form-control'
+    let infoTextControlClass = 'form-text text-muted'
 
     if (plaintext || staticInput) {
-      formControlClass = `${formControlClass}-plaintext`;
-      Tag = tag || "p";
+      formControlClass = `${formControlClass}-plaintext`
+      Tag = tag || 'p'
     } else if (fileInput) {
-      formControlClass = `${formControlClass}-file`;
+      formControlClass = `${formControlClass}-file`
     } else if (checkInput) {
       if (addon) {
-        formControlClass = null;
+        formControlClass = null
       }
       /* Causes a regression with `bootstrap-italia`
             else {
@@ -115,54 +117,54 @@ class Input extends React.Component {
             */
     }
     if (valid || invalid) {
-      infoTextControlClass = null;
+      infoTextControlClass = null
     }
 
     if (
       state &&
-      typeof valid === "undefined" &&
-      typeof invalid === "undefined"
+      typeof valid === 'undefined' &&
+      typeof invalid === 'undefined'
     ) {
-      if (state === "danger") {
-        invalid = true;
-      } else if (state === "success") {
-        valid = true;
+      if (state === 'danger') {
+        invalid = true
+      } else if (state === 'success') {
+        valid = true
       }
     }
 
     if (attributes.size && isNotaNumber.test(attributes.size)) {
       warnOnce(
         'Please use the prop "bsSize" instead of the "size" to bootstrap\'s input sizing.'
-      );
-      bsSize = attributes.size;
-      delete attributes.size;
+      )
+      bsSize = attributes.size
+      delete attributes.size
     }
 
     const classes = mapToCssModules(
       classNames(
         className,
-        invalid && "is-invalid",
-        valid && "is-valid",
+        invalid && 'is-invalid',
+        valid && 'is-valid',
         bsSize ? `form-control-${bsSize}` : false,
         formControlClass
       ),
       cssModule
-    );
+    )
     const wrapperClass = mapToCssModules(
-      classNames(className, "form-group"),
+      classNames(className, 'form-group'),
       cssModule
-    );
+    )
     const infoTextClass = mapToCssModules(
       classNames(
         className,
-        valid ? "valid-feedback" : false,
-        invalid ? "invalid-feedback" : false,
+        valid ? 'valid-feedback' : false,
+        invalid ? 'invalid-feedback' : false,
         infoTextControlClass
       )
-    );
+    )
 
-    if (Tag === "input" || typeof tag !== "string") {
-      attributes.type = type;
+    if (Tag === 'input' || typeof tag !== 'string') {
+      attributes.type = type
     }
 
     if (
@@ -170,15 +172,15 @@ class Input extends React.Component {
       !(
         plaintext ||
         staticInput ||
-        type === "select" ||
-        typeof Tag !== "string" ||
-        Tag === "select"
+        type === 'select' ||
+        typeof Tag !== 'string' ||
+        Tag === 'select'
       )
     ) {
       warnOnce(
         `Input with a type of "${type}" cannot have children. Please use "value"/"defaultValue" instead.`
-      );
-      delete attributes.children;
+      )
+      delete attributes.children
     }
     if (placeholder || value) {
       return (
@@ -198,19 +200,19 @@ class Input extends React.Component {
           </label>
           <small className={infoTextClass}>{this.props.infoText}</small>
         </div>
-      );
+      )
     }
-    if (attributes.type === "password") {
+    if (attributes.type === 'password') {
       return (
         <div className={wrapperClass}>
           <Tag
             {...attributes}
             ref={innerRef}
-            type={this.state.hidden ? "password" : "text"}
+            type={this.state.hidden ? 'password' : 'text'}
             className={
               this.state.isFocused
-                ? "form-control input-password focus--mouse"
-                : "form-control input-password"
+                ? 'form-control input-password focus--mouse'
+                : 'form-control input-password'
             }
             onFocus={this.toggleFocusLabel}
             onBlur={e => this.toggleBlurLabel(e)}
@@ -221,24 +223,22 @@ class Input extends React.Component {
           <span className="password-icon" aria-hidden="true">
             <svg
               className="password-icon-visible icon icon-sm"
-              onClick={this.toggleShow}
-            >
+              onClick={this.toggleShow}>
               <use
                 xlinkHref={`/svg/sprite.svg#it-password-${
-                  this.state.icon ? "visible" : "invisible"
+                  this.state.icon ? 'visible' : 'invisible'
                 }`}
               />
             </svg>
           </span>
           <label
             htmlFor={this.props.id}
-            className={this.state.isFocused ? "active" : ""}
-          >
+            className={this.state.isFocused ? 'active' : ''}>
             {this.props.label}
           </label>
           <small className={infoTextClass}>{this.props.infoText}</small>
         </div>
-      );
+      )
     }
     if (normalized) {
       return (
@@ -247,8 +247,8 @@ class Input extends React.Component {
             {...attributes}
             className={
               this.state.isFocused
-                ? "form-control-plaintext focus--mouse"
-                : "form-control-plaintext"
+                ? 'form-control-plaintext focus--mouse'
+                : 'form-control-plaintext'
             }
             onFocus={this.toggleFocusLabel}
             onBlur={e => this.toggleBlurLabel(e)}
@@ -258,13 +258,12 @@ class Input extends React.Component {
           />
           <label
             htmlFor={this.props.id}
-            className={this.state.isFocused ? "active" : ""}
-          >
+            className={this.state.isFocused ? 'active' : ''}>
             {this.props.label}
           </label>
           <small className={infoTextClass}>{this.props.infoText}</small>
         </div>
-      );
+      )
     }
     if (label || infoText) {
       return (
@@ -280,20 +279,19 @@ class Input extends React.Component {
           />
           <label
             htmlFor={this.props.id}
-            className={this.state.isFocused ? "active" : ""}
-          >
+            className={this.state.isFocused ? 'active' : ''}>
             {this.props.label}
           </label>
           <small className={infoTextClass}>{this.props.infoText}</small>
         </div>
-      );
+      )
     }
 
-    return <Tag {...attributes} ref={innerRef} className={classes} />;
+    return <Tag {...attributes} ref={innerRef} className={classes} />
   }
 }
 
-Input.propTypes = propTypes;
-Input.defaultProps = defaultProps;
+Input.propTypes = propTypes
+Input.defaultProps = defaultProps
 
-export default Input;
+export default Input

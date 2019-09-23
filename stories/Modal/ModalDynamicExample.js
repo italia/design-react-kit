@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react'
+import PropTypes from 'prop-types'
 import {
   Button,
   Modal,
@@ -9,41 +9,40 @@ import {
   ModalHeader,
   ModalBody,
   ModalFooter
-} from "../../src";
+} from '../../src'
 
 class ModalExample extends React.Component {
   state = {
     modal: false,
-    username: ""
-  };
+    username: ''
+  }
 
   openModal = name => {
     this.setState({
       modal: !this.state.modal,
       username: name
-    });
-  };
+    })
+  }
 
   toggle = () => {
     this.setState({
       modal: !this.state.modal
-    });
-  };
+    })
+  }
 
   render() {
-    const { centered, fade } = this.props;
-    const { username } = this.state;
+    const { centered, fade } = this.props
+    const { username } = this.state
 
     return (
       <div>
         <div>
-          {["Mario", "Paola", "Luca"].map(name => (
+          {['Mario', 'Paola', 'Luca'].map(name => (
             <Button
               key={name}
               color="primary"
               onClick={() => this.openModal(name)}
-              className="mr-3"
-            >
+              className="mr-3">
               Apri la modale per {name}
             </Button>
           ))}
@@ -55,8 +54,7 @@ class ModalExample extends React.Component {
           centered={centered}
           isOpen={this.state.modal}
           toggle={this.toggle}
-          className={this.props.className}
-        >
+          className={this.props.className}>
           <ModalHeader toggle={this.toggle}>
             New message for {username}
           </ModalHeader>
@@ -82,7 +80,7 @@ class ModalExample extends React.Component {
           </ModalFooter>
         </Modal>
       </div>
-    );
+    )
   }
 }
 
@@ -90,6 +88,6 @@ ModalExample.propTypes = {
   centered: PropTypes.bool,
   fade: PropTypes.bool,
   className: PropTypes.string
-};
+}
 
-export default ModalExample;
+export default ModalExample

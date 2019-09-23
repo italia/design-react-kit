@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
 const propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
@@ -8,15 +8,15 @@ const propTypes = {
   active: PropTypes.bool,
   small: PropTypes.bool,
   double: PropTypes.bool
-};
+}
 
 const defaultProps = {
-  tag: "span",
+  tag: 'span',
   indeterminate: false,
   active: false,
   small: false,
   double: false
-};
+}
 
 class Spinner extends React.Component {
   render() {
@@ -27,17 +27,17 @@ class Spinner extends React.Component {
       small,
       double,
       ...attributes
-    } = this.props;
+    } = this.props
 
     const wrapperClasses = classNames(
-      active ? "progress-spinner-active" : false,
-      small ? "size-sm" : false,
-      double ? "progress-spinner-double" : false,
-      "progress-spinner"
-    );
-    const innerClasses = classNames("progress-spinner-inner");
+      active ? 'progress-spinner-active' : false,
+      small ? 'size-sm' : false,
+      double ? 'progress-spinner-double' : false,
+      'progress-spinner'
+    )
+    const innerClasses = classNames('progress-spinner-inner')
 
-    const classes = classNames(className, "sr-only");
+    const classes = classNames(className, 'sr-only')
     if (double) {
       return (
         <Tag className={wrapperClasses}>
@@ -47,7 +47,7 @@ class Spinner extends React.Component {
             Caricamento...
           </Tag>
         </Tag>
-      );
+      )
     }
 
     return (
@@ -56,11 +56,11 @@ class Spinner extends React.Component {
           Caricamento...
         </Tag>
       </Tag>
-    );
+    )
   }
 }
 
-Spinner.propTypes = propTypes;
-Spinner.defaultProps = defaultProps;
+Spinner.propTypes = propTypes
+Spinner.defaultProps = defaultProps
 
-export default Spinner;
+export default Spinner

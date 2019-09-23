@@ -1,21 +1,21 @@
-import React from "react";
-import { Accordion, AccordionHeader, AccordionBody } from "../../src";
+import React from 'react'
+import { Accordion, AccordionHeader, AccordionBody } from '../../src'
 
 class CollapseGroupsExample extends React.Component {
   state = {
     collapseOpen1: true,
     collapseOpen2: true,
     collapseOpen3: false
-  };
+  }
 
   toggle = id => {
     this.setState({
       [`collapseOpen${id}`]: !this.state[`collapseOpen${id}`]
-    });
-  };
+    })
+  }
 
   render() {
-    const { collapseOpen1, collapseOpen2, collapseOpen3 } = this.state;
+    const { collapseOpen1, collapseOpen2, collapseOpen3 } = this.state
 
     return (
       <Accordion>
@@ -47,8 +47,8 @@ class CollapseGroupsExample extends React.Component {
           labore wes anderson cred nesciunt sapiente ea proident.
         </AccordionBody>
       </Accordion>
-    );
+    )
   }
 }
 
-export default CollapseGroupsExample;
+export default CollapseGroupsExample

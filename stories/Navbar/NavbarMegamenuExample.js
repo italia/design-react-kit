@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Navbar,
   NavbarBrand,
@@ -11,21 +11,21 @@ import {
   DropdownMenu,
   LinkList,
   LinkListItem
-} from "../../src";
+} from '../../src'
 
 class NavbarMegamenuExample extends React.Component {
   state = {
     isOpen: false
-  };
+  }
 
   toggle = () => {
     this.setState({
       isOpen: !this.state.isOpen
-    });
-  };
+    })
+  }
 
   render() {
-    const { isOpen } = this.state;
+    const { isOpen } = this.state
 
     return (
       <section>
@@ -33,8 +33,7 @@ class NavbarMegamenuExample extends React.Component {
           <NavbarBrand />
           <NavbarToggler
             className="custom-navbar-toggler"
-            onClick={this.toggle}
-          >
+            onClick={this.toggle}>
             <span className="it-list" />
           </NavbarToggler>
 
@@ -80,8 +79,8 @@ class NavbarMegamenuExample extends React.Component {
           </Collapse>
         </Navbar>
       </section>
-    );
+    )
   }
 }
 
-export default NavbarMegamenuExample;
+export default NavbarMegamenuExample

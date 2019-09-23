@@ -1,26 +1,27 @@
-import React from "react";
+import React from 'react'
 
 class InputIconButtonExample extends React.Component {
   constructor() {
-    super();
+    super()
     this.state = {
       isFocused: false
-    };
+    }
   }
 
   toggleFocusLabel = () => {
     this.setState({
       isFocused: true
-    });
-  };
+    })
+  }
 
   toggleBlurLabel = e => {
-    if (e.target.value === "") {
+    if (e.target.value === '') {
       this.setState({
         isFocused: !this.state.isFocused
-      });
+      })
     }
-  };
+  }
+
   render() {
     return (
       <div>
@@ -35,16 +36,15 @@ class InputIconButtonExample extends React.Component {
             </div>
             <label
               htmlFor="input-group-1"
-              className={this.state.isFocused ? "active" : ""}
-            >
+              className={this.state.isFocused ? 'active' : ''}>
               Con Etichetta
             </label>
             <input
               type="text"
               className={
                 this.state.isFocused
-                  ? "form-control focus--mouse"
-                  : "form-control"
+                  ? 'form-control focus--mouse'
+                  : 'form-control'
               }
               onFocus={this.toggleFocusLabel}
               onBlur={e => this.toggleBlurLabel(e)}
@@ -74,8 +74,8 @@ class InputIconButtonExample extends React.Component {
               type="text"
               className={
                 this.state.isFocused
-                  ? "form-control focus--mouse"
-                  : "form-control"
+                  ? 'form-control focus--mouse'
+                  : 'form-control'
               }
               onFocus={this.toggleFocusLabel}
               onBlur={e => this.toggleBlurLabel(e)}
@@ -101,16 +101,15 @@ class InputIconButtonExample extends React.Component {
             </div>
             <label
               htmlFor="input-group-3"
-              className={this.state.isFocused ? "active" : ""}
-            >
+              className={this.state.isFocused ? 'active' : ''}>
               Con Etichetta e bottone di tipo primary
             </label>
             <input
               type="text"
               className={
                 this.state.isFocused
-                  ? "form-control focus--mouse"
-                  : "form-control"
+                  ? 'form-control focus--mouse'
+                  : 'form-control'
               }
               onFocus={this.toggleFocusLabel}
               onBlur={e => this.toggleBlurLabel(e)}
@@ -125,7 +124,7 @@ class InputIconButtonExample extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
-export default InputIconButtonExample;
+export default InputIconButtonExample

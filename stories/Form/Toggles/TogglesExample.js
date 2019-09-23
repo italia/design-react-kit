@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
-import { Row, Col, FormGroup, Toggle } from "../../../src";
-import PropTypes from "prop-types";
+import { Row, Col, FormGroup, Toggle } from '../../../src'
+import PropTypes from 'prop-types'
 
 class TogglesExample extends Component {
   render() {
-    const { disabled } = this.props;
+    const { disabled } = this.props
 
     return (
       <Row>
@@ -24,12 +24,12 @@ class TogglesExample extends Component {
           </FormGroup>
         </Col>
       </Row>
-    );
+    )
   }
 }
 
 TogglesExample.propTypes = {
   disabled: PropTypes.bool
-};
+}
 
-export default TogglesExample;
+export default TogglesExample

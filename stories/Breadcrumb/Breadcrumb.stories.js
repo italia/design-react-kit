@@ -1,13 +1,13 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
-import { Breadcrumb, BreadcrumbItem } from "../../src";
+import { Breadcrumb, BreadcrumbItem } from '../../src'
 
-import Esempi from "./docs/Esempi.md";
-import Icone from "./docs/Icone.md";
-import Background from "./docs/Background.md";
+import Esempi from './docs/Esempi.md'
+import Icone from './docs/Icone.md'
+import Background from './docs/Background.md'
 
 const EsempiComponent = () => (
   <section>
@@ -47,7 +47,7 @@ const EsempiComponent = () => (
       </Breadcrumb>
     </nav>
   </section>
-);
+)
 
 const IconeComponent = () => (
   <section>
@@ -57,8 +57,7 @@ const IconeComponent = () => (
           <i className="it-favorite" />
           <svg
             className="icon icon-sm icon-secondary align-top mr-1"
-            aria-hidden="true"
-          >
+            aria-hidden="true">
             <use xlinkHref="/svg/sprite.svg#it-star-outline" />
           </svg>
           <a href="#">
@@ -69,8 +68,7 @@ const IconeComponent = () => (
           <i className="it-favorite" />
           <svg
             className="icon icon-sm icon-secondary align-top mr-1"
-            aria-hidden="true"
-          >
+            aria-hidden="true">
             <use xlinkHref="/svg/sprite.svg#it-star-outline" />
           </svg>
           <a href="#">
@@ -81,8 +79,7 @@ const IconeComponent = () => (
           <i className="it-favorite" />
           <svg
             className="icon icon-sm icon-secondary align-top mr-1"
-            aria-hidden="true"
-          >
+            aria-hidden="true">
             <use xlinkHref="/svg/sprite.svg#it-star-outline" />
           </svg>
           <a href="#">Current section</a>
@@ -90,7 +87,7 @@ const IconeComponent = () => (
       </Breadcrumb>
     </nav>
   </section>
-);
+)
 
 const BackgroundComponent = () => (
   <section>
@@ -115,8 +112,7 @@ const BackgroundComponent = () => (
         <li className="breadcrumb-item">
           <svg
             className="icon icon-sm icon-white align-top mr-1"
-            aria-hidden="true"
-          >
+            aria-hidden="true">
             <use xlinkHref="/svg/sprite.svg#it-star-outline" />
           </svg>
           <a href="#">Home</a>
@@ -125,8 +121,7 @@ const BackgroundComponent = () => (
         <li className="breadcrumb-item">
           <svg
             className="icon icon-sm icon-white align-top mr-1"
-            aria-hidden="true"
-          >
+            aria-hidden="true">
             <use xlinkHref="/svg/sprite.svg#it-star-outline" />
           </svg>
           <a href="#">Subsection</a>
@@ -135,8 +130,7 @@ const BackgroundComponent = () => (
         <li className="breadcrumb-item active" aria-current="page">
           <svg
             className="icon icon-sm icon-white align-top mr-1"
-            aria-hidden="true"
-          >
+            aria-hidden="true">
             <use xlinkHref="/svg/sprite.svg#it-star-outline" />
           </svg>
           <a href="#">Current section</a>
@@ -149,8 +143,7 @@ const BackgroundComponent = () => (
         <li className="breadcrumb-item">
           <svg
             className="icon icon-sm icon-white align-top mr-1"
-            aria-hidden="true"
-          >
+            aria-hidden="true">
             <use xlinkHref="/svg/sprite.svg#it-star-outline" />
           </svg>
           <a href="#">Home</a>
@@ -159,8 +152,7 @@ const BackgroundComponent = () => (
         <li className="breadcrumb-item">
           <svg
             className="icon icon-sm icon-white align-top mr-1"
-            aria-hidden="true"
-          >
+            aria-hidden="true">
             <use xlinkHref="/svg/sprite.svg#it-star-outline" />
           </svg>
           <a href="#">Subsection</a>
@@ -169,8 +161,7 @@ const BackgroundComponent = () => (
         <li className="breadcrumb-item active" aria-current="page">
           <svg
             className="icon icon-sm icon-white align-top mr-1"
-            aria-hidden="true"
-          >
+            aria-hidden="true">
             <use xlinkHref="/svg/sprite.svg#it-star-outline" />
           </svg>
           <a href="#">Current section</a>
@@ -178,25 +169,25 @@ const BackgroundComponent = () => (
       </ol>
     </nav>
   </section>
-);
+)
 
-storiesOf("Componenti/Breadcrumb", module)
+storiesOf('Componenti/Breadcrumb', module)
   .addDecorator(withA11y)
   .add(
-    "Esempi",
+    'Esempi',
     withInfo({
       text: Esempi
     })(EsempiComponent)
   )
   .add(
-    "Con icone",
+    'Con icone',
     withInfo({
       text: Icone
     })(IconeComponent)
   )
   .add(
-    "Su sfondo scuro",
+    'Su sfondo scuro',
     withInfo({
       text: Background
     })(BackgroundComponent)
-  );
+  )

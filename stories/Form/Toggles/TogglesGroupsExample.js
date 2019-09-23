@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
-import { Row, Col, Form, FormGroup, FormText, Toggle } from "../../../src";
+import { Row, Col, Form, FormGroup, FormText, Toggle } from '../../../src'
 
 class TogglesGroupsExample extends Component {
   render() {
@@ -46,8 +46,8 @@ class TogglesGroupsExample extends Component {
           </Form>
         </Col>
       </Row>
-    );
+    )
   }
 }
 
-export default TogglesGroupsExample;
+export default TogglesGroupsExample

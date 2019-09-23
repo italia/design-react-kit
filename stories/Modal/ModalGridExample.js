@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Button,
   Modal,
@@ -8,18 +8,18 @@ import {
   Container,
   Row,
   Col
-} from "../../src";
+} from '../../src'
 
 class ModalGridExample extends React.Component {
   state = {
     modal: false
-  };
+  }
 
   toggle = () => {
     this.setState({
       modal: !this.state.modal
-    });
-  };
+    })
+  }
 
   render() {
     return (
@@ -77,8 +77,8 @@ class ModalGridExample extends React.Component {
           </ModalFooter>
         </Modal>
       </div>
-    );
+    )
   }
 }
 
-export default ModalGridExample;
+export default ModalGridExample

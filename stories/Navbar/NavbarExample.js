@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react'
+import PropTypes from 'prop-types'
 import {
   Navbar,
   NavbarBrand,
@@ -13,22 +13,22 @@ import {
   DropdownMenu,
   LinkList,
   LinkListItem
-} from "../../src";
+} from '../../src'
 
 class NavbarExample extends React.Component {
   state = {
     isOpen: false
-  };
+  }
 
   toggle = () => {
     this.setState({
       isOpen: !this.state.isOpen
-    });
-  };
+    })
+  }
 
   render() {
-    const { isOpen } = this.state;
-    const { dropdown } = this.props;
+    const { isOpen } = this.state
+    const { dropdown } = this.props
 
     return (
       <section>
@@ -36,8 +36,7 @@ class NavbarExample extends React.Component {
           <NavbarBrand />
           <NavbarToggler
             className="custom-navbar-toggler"
-            onClick={this.toggle}
-          >
+            onClick={this.toggle}>
             <span className="it-list" />
           </NavbarToggler>
 
@@ -95,12 +94,12 @@ class NavbarExample extends React.Component {
           </Collapse>
         </Navbar>
       </section>
-    );
+    )
   }
 }
 
 NavbarExample.propTypes = {
   dropdown: PropTypes.bool
-};
+}
 
-export default NavbarExample;
+export default NavbarExample

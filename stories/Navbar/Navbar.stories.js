@@ -1,8 +1,8 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withKnobs, select, color } from "@storybook/addon-knobs/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withKnobs, select, color } from '@storybook/addon-knobs/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
 import {
   Navbar,
@@ -17,24 +17,24 @@ import {
   DropdownToggle,
   LinkList,
   LinkListItem
-} from "../../src";
+} from '../../src'
 
-import NavbarExample from "./NavbarExample";
-import NavbarMegamenuExample from "./NavbarMegamenuExample";
-import NavbarInlineExample from "./NavbarInlineExample";
+import NavbarExample from './NavbarExample'
+import NavbarMegamenuExample from './NavbarMegamenuExample'
+import NavbarInlineExample from './NavbarInlineExample'
 
-import Esempi from "./docs/Esempi.md";
-import Dropdown from "./docs/Dropdown.md";
-import Megamenu from "./docs/Megamenu.md";
-import Inline from "./docs/Inline.md";
-import EsempiInterattivi from "./docs/EsempiInterattivi.md";
+import Esempi from './docs/Esempi.md'
+import Dropdown from './docs/Dropdown.md'
+import Megamenu from './docs/Megamenu.md'
+import Inline from './docs/Inline.md'
+import EsempiInterattivi from './docs/EsempiInterattivi.md'
 
 const EsempiInterattiviComponent = () => {
-  const variations = ["", "primary", "dark"];
-  const variation = select("Variazioni", variations, variations[0]);
-  const selectedColor = color("Color", "#e3f2fd");
-  const placements = ["", "top", "bottom"];
-  const placement = select("Posizionamento", placements, placements[0]);
+  const variations = ['', 'primary', 'dark']
+  const variation = select('Variazioni', variations, variations[0])
+  const selectedColor = color('Color', '#e3f2fd')
+  const placements = ['', 'top', 'bottom']
+  const placement = select('Posizionamento', placements, placements[0])
 
   return (
     <Navbar
@@ -43,17 +43,16 @@ const EsempiInterattiviComponent = () => {
       fixed={placement}
       sticky={placement}
       className={`bg-${variation}`}
-      style={{ backgroundColor: selectedColor }}
-    >
+      style={{ backgroundColor: selectedColor }}>
       <NavbarBrand href="#">Brand</NavbarBrand>
     </Navbar>
-  );
-};
+  )
+}
 
-storiesOf("Componenti/Navbar", module)
+storiesOf('Componenti/Navbar', module)
   .addDecorator(withA11y)
   .add(
-    "Esempi",
+    'Esempi',
     withInfo({
       text: Esempi,
       propTables: [Navbar, NavbarToggler, Collapse, Nav, NavItem, NavLink],
@@ -61,7 +60,7 @@ storiesOf("Componenti/Navbar", module)
     })(() => <NavbarExample />)
   )
   .add(
-    "Con Dropdown",
+    'Con Dropdown',
     withInfo({
       text: Dropdown,
       propTables: [
@@ -79,7 +78,7 @@ storiesOf("Componenti/Navbar", module)
     })(() => <NavbarExample dropdown />)
   )
   .add(
-    "Con Megamenu (in progress)",
+    'Con Megamenu (in progress)',
     withInfo({
       text: Megamenu,
       propTables: [
@@ -99,7 +98,7 @@ storiesOf("Componenti/Navbar", module)
     })(() => <NavbarMegamenuExample />)
   )
   .add(
-    "Inline Menù",
+    'Inline Menù',
     withInfo({
       text: Inline,
       propTables: [LinkList, LinkListItem, Collapse],
@@ -108,8 +107,8 @@ storiesOf("Componenti/Navbar", module)
   )
   .addDecorator(withKnobs)
   .add(
-    "Esempi interattivi",
+    'Esempi interattivi',
     withInfo({
       text: EsempiInterattivi
     })(EsempiInterattiviComponent)
-  );
+  )

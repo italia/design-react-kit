@@ -1,14 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
-import {
-  Row,
-  Col,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  FormText
-} from "../../../src";
+import { Row, Col, Form, FormGroup, Label, Input, FormText } from '../../../src'
 
 class CheckboxGroupsExample extends Component {
   render() {
@@ -78,8 +70,8 @@ class CheckboxGroupsExample extends Component {
           </fieldset>
         </Col>
       </Row>
-    );
+    )
   }
 }
 
-export default CheckboxGroupsExample;
+export default CheckboxGroupsExample

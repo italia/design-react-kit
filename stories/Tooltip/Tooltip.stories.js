@@ -1,22 +1,22 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withKnobs, text, select } from "@storybook/addon-knobs/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
-import { UncontrolledTooltip, Button } from "../../src";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withKnobs, text, select } from '@storybook/addon-knobs/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
+import { UncontrolledTooltip, Button } from '../../src'
 
-import Esempi from "./docs/Esempi.md";
-import Posizioni from "./docs/Posizioni.md";
-import EsempiInterattivi from "./docs/EsempiInterattivi.md";
+import Esempi from './docs/Esempi.md'
+import Posizioni from './docs/Posizioni.md'
+import EsempiInterattivi from './docs/EsempiInterattivi.md'
 
 const EsempiComponent = () => {
-  const ids = ["Example1", "Example2", "Example3"];
-  const target = i => document.getElementById(ids[i]);
+  const ids = ['Example1', 'Example2', 'Example3']
+  const target = i => document.getElementById(ids[i])
 
   return (
     <div className="bd-example tooltip-demo">
       <p className="muted">
-        Ecco un{" "}
+        Ecco un{' '}
         <a href="#" id={ids[0]}>
           bianco scenario
         </a>
@@ -25,10 +25,10 @@ const EsempiComponent = () => {
         <br />
         degli oggetti di sfondo che pur vivono.
         <br />
-        Non ne sarò{" "}
+        Non ne sarò{' '}
         <a href="#" id={ids[1]}>
           l’artefice
-        </a>{" "}
+        </a>{' '}
         impaziente.
         <br />
         Berrò alle coppe della nostalgia,
@@ -63,12 +63,12 @@ const EsempiComponent = () => {
         Terzo tooltip
       </UncontrolledTooltip>
     </div>
-  );
-};
+  )
+}
 
 const PosizioniComponent = () => {
-  const ids = ["example1", "example2", "example3", "example4", "example5"];
-  const target = i => document.getElementById(ids[i]);
+  const ids = ['example1', 'example2', 'example3', 'example4', 'example5']
+  const target = i => document.getElementById(ids[i])
 
   return (
     <div style={{ padding: 100 }}>
@@ -104,16 +104,16 @@ const PosizioniComponent = () => {
         <em>Tooltip</em> <u>with</u> <b>HTML</b>
       </UncontrolledTooltip>
     </div>
-  );
-};
+  )
+}
 
 const EsempiInterattiviComponent = () => {
-  const id = "example";
-  const target = () => document.getElementById(id);
+  const id = 'example'
+  const target = () => document.getElementById(id)
 
-  const placements = ["top", "bottom", "left", "right"];
-  const placement = select("Posizione", placements, placements[0]);
-  const body = text("Body", "Tooltip");
+  const placements = ['top', 'bottom', 'left', 'right']
+  const placement = select('Posizione', placements, placements[0])
+  const body = text('Body', 'Tooltip')
 
   return (
     <div style={{ padding: 200 }}>
@@ -125,27 +125,27 @@ const EsempiInterattiviComponent = () => {
         {body}
       </UncontrolledTooltip>
     </div>
-  );
-};
+  )
+}
 
-storiesOf("Componenti/Tooltip", module)
+storiesOf('Componenti/Tooltip', module)
   .addDecorator(withA11y)
   .add(
-    "Esempi",
+    'Esempi',
     withInfo({
       text: Esempi
     })(EsempiComponent)
   )
   .add(
-    "Posizioni",
+    'Posizioni',
     withInfo({
       text: Posizioni
     })(PosizioniComponent)
   )
   .addDecorator(withKnobs)
   .add(
-    "Esempi interattivi",
+    'Esempi interattivi',
     withInfo({
       text: EsempiInterattivi
     })(EsempiInterattiviComponent)
-  );
+  )

@@ -1,7 +1,7 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
 import {
   LinkList,
@@ -11,24 +11,24 @@ import {
   Label,
   FormGroup,
   Collapse
-} from "../../src";
+} from '../../src'
 
-import LinkListCollapsibleExample from "./LinkListCollapsibleExample";
+import LinkListCollapsibleExample from './LinkListCollapsibleExample'
 
-import Esempi from "./docs/Esempi.md";
-import StatoAttivo from "./docs/StatoAttivo.md";
-import StatoDisabilitato from "./docs/StatoDisabilitato.md";
-import HeaderDivider from "./docs/HeaderDivider.md";
-import Large from "./docs/Large.md";
-import Multiline from "./docs/Multiline.md";
-import Controlli from "./docs/Controlli.md";
-import ControlliSecondari from "./docs/ControlliSecondari.md";
-import ControlliPrimariSecondari from "./docs/ControlliPrimariSecondari.md";
-import Avatar from "./docs/Avatar.md";
-import Switch from "./docs/Switch.md";
-import Checkbox from "./docs/Checkbox.md";
-import Navigation from "./docs/Navigation.md";
-import Collapsible from "./docs/Collapsible.md";
+import Esempi from './docs/Esempi.md'
+import StatoAttivo from './docs/StatoAttivo.md'
+import StatoDisabilitato from './docs/StatoDisabilitato.md'
+import HeaderDivider from './docs/HeaderDivider.md'
+import Large from './docs/Large.md'
+import Multiline from './docs/Multiline.md'
+import Controlli from './docs/Controlli.md'
+import ControlliSecondari from './docs/ControlliSecondari.md'
+import ControlliPrimariSecondari from './docs/ControlliPrimariSecondari.md'
+import Avatar from './docs/Avatar.md'
+import Switch from './docs/Switch.md'
+import Checkbox from './docs/Checkbox.md'
+import Navigation from './docs/Navigation.md'
+import Collapsible from './docs/Collapsible.md'
 
 const EsempiComponent = () => (
   <LinkList>
@@ -42,7 +42,7 @@ const EsempiComponent = () => (
       <span>Link list 3</span>
     </LinkListItem>
   </LinkList>
-);
+)
 
 const StatoAttivoComponent = () => (
   <LinkList>
@@ -56,7 +56,7 @@ const StatoAttivoComponent = () => (
       <span>Link list 3</span>
     </LinkListItem>
   </LinkList>
-);
+)
 
 const StatoDisabilitatoComponent = () => (
   <LinkList>
@@ -70,7 +70,7 @@ const StatoDisabilitatoComponent = () => (
       <span>Link list 3</span>
     </LinkListItem>
   </LinkList>
-);
+)
 
 const HeaderDividerComponent = () => (
   <section>
@@ -110,7 +110,7 @@ const HeaderDividerComponent = () => (
       </LinkListItem>
     </LinkList>
   </section>
-);
+)
 
 const LargeComponent = () => (
   <LinkList>
@@ -131,7 +131,7 @@ const LargeComponent = () => (
       <span>Link list 4</span>
     </LinkListItem>
   </LinkList>
-);
+)
 
 const MultilineComponent = () => (
   <LinkList multiline>
@@ -162,7 +162,7 @@ const MultilineComponent = () => (
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
     </LinkListItem>
   </LinkList>
-);
+)
 
 const ControlliComponent = () => (
   <LinkList>
@@ -188,7 +188,7 @@ const ControlliComponent = () => (
       <span>Link list 3 disabled</span>
     </LinkListItem>
   </LinkList>
-);
+)
 
 const ControlliSecondariComponent = () => (
   <LinkList>
@@ -214,7 +214,7 @@ const ControlliSecondariComponent = () => (
       </svg>
     </LinkListItem>
   </LinkList>
-);
+)
 
 const ControlliPrimariSecondariComponent = () => (
   <LinkList>
@@ -243,7 +243,7 @@ const ControlliPrimariSecondariComponent = () => (
       <i className="it-app right secondary" />
     </LinkListItem>
   </LinkList>
-);
+)
 
 const AvatarComponent = () => (
   <LinkList>
@@ -275,7 +275,7 @@ const AvatarComponent = () => (
       <span>Link list 3 disabled </span>
     </LinkListItem>
   </LinkList>
-);
+)
 
 const SwitchComponent = () => (
   <LinkList>
@@ -286,7 +286,7 @@ const SwitchComponent = () => (
       <Toggle disabled label="Label per disabled toggle" />
     </LinkListItem>
   </LinkList>
-);
+)
 
 const CheckboxComponent = () => (
   <LinkList>
@@ -315,7 +315,7 @@ const CheckboxComponent = () => (
       </FormGroup>
     </LinkListItem>
   </LinkList>
-);
+)
 
 const NavigationComponent = () => (
   <LinkList>
@@ -352,102 +352,102 @@ const NavigationComponent = () => (
       </svg>
     </LinkListItem>
   </LinkList>
-);
+)
 
-storiesOf("Componenti/LinkList", module)
+storiesOf('Componenti/LinkList', module)
   .addDecorator(withA11y)
   .add(
-    "Esempi",
+    'Esempi',
     withInfo({
       text: Esempi
     })(EsempiComponent)
   )
   .add(
-    "Stato Attivo",
+    'Stato Attivo',
     withInfo({
       text: StatoAttivo
     })(StatoAttivoComponent)
   )
   .add(
-    "Stato Disabilitato",
+    'Stato Disabilitato',
     withInfo({
       text: StatoDisabilitato
     })(StatoDisabilitatoComponent)
   )
   .add(
-    "Header e Divider",
+    'Header e Divider',
     withInfo({
       text: HeaderDivider
     })(HeaderDividerComponent)
   )
   .add(
-    "Sizing",
+    'Sizing',
     withInfo({
       text: Large
     })(LargeComponent)
-  );
+  )
 
-storiesOf("Componenti/LinkList.Multiline", module)
+storiesOf('Componenti/LinkList.Multiline', module)
   .addDecorator(withA11y)
   .add(
-    "Esempio Multiline",
+    'Esempio Multiline',
     withInfo({
       text: Multiline
     })(MultilineComponent)
-  );
+  )
 
-storiesOf("Componenti/LinkList.Con controlli", module)
+storiesOf('Componenti/LinkList.Con controlli', module)
   .addDecorator(withA11y)
   .add(
-    "Primary Action",
+    'Primary Action',
     withInfo({
       text: Controlli
     })(ControlliComponent)
   )
   .add(
-    "Secondary Action",
+    'Secondary Action',
     withInfo({
       text: ControlliSecondari
     })(ControlliSecondariComponent)
   )
   .add(
-    "Primary e Secondary Action",
+    'Primary e Secondary Action',
     withInfo({
       text: ControlliPrimariSecondari
     })(ControlliPrimariSecondariComponent)
   )
   .add(
-    "Con avatar",
+    'Con avatar',
     withInfo({
       text: Avatar
     })(AvatarComponent)
   )
   .add(
-    "Con switch",
+    'Con switch',
     withInfo({
       text: Switch
     })(SwitchComponent)
   )
   .add(
-    "Con checkbox",
+    'Con checkbox',
     withInfo({
       text: Checkbox
     })(CheckboxComponent)
-  );
+  )
 
-storiesOf("Componenti/LinkList.Nested navigation", module)
+storiesOf('Componenti/LinkList.Nested navigation', module)
   .addDecorator(withA11y)
   .add(
-    "Fixed",
+    'Fixed',
     withInfo({
       text: Navigation
     })(NavigationComponent)
   )
   .add(
-    "Collapsible",
+    'Collapsible',
     withInfo({
       text: Collapsible,
       propTables: [Collapse, LinkList, LinkListItem],
       propTablesExclude: [LinkListCollapsibleExample]
     })(() => <LinkListCollapsibleExample />)
-  );
+  )

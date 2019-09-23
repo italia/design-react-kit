@@ -1,19 +1,19 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withKnobs, number, text, select } from "@storybook/addon-knobs/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withKnobs, number, text, select } from '@storybook/addon-knobs/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
-import { Progress, Button, Spinner } from "../../src";
+import { Progress, Button, Spinner } from '../../src'
 
-import Esempi from "./docs/Esempi.md";
-import Etichette from "./docs/Etichette.md";
-import Indeterminato from "./docs/Indeterminato.md";
-import Colori from "./docs/Colori.md";
-import ButtonProgress from "./docs/ButtonProgress.md";
-import SpinnerDocs from "./docs/SpinnerDocs.md";
-import SpinnerDoppio from "./docs/SpinnerDoppio.md";
-import EsempiInterattivi from "./docs/EsempiInterattivi.md";
+import Esempi from './docs/Esempi.md'
+import Etichette from './docs/Etichette.md'
+import Indeterminato from './docs/Indeterminato.md'
+import Colori from './docs/Colori.md'
+import ButtonProgress from './docs/ButtonProgress.md'
+import SpinnerDocs from './docs/SpinnerDocs.md'
+import SpinnerDoppio from './docs/SpinnerDoppio.md'
+import EsempiInterattivi from './docs/EsempiInterattivi.md'
 
 const EsempiComponent = () => (
   <div>
@@ -33,17 +33,17 @@ const EsempiComponent = () => (
       <Progress value="100" />
     </div>
   </div>
-);
+)
 
 const EtichetteComponent = () => (
   <div>
     <Progress value="35" label="progresso" />
   </div>
-);
+)
 
 const ProgressoIndeterminato = () => (
   <Progress indeterminate label="In elaborazione..." />
-);
+)
 
 const ColoriComponent = () => (
   <div>
@@ -60,7 +60,7 @@ const ColoriComponent = () => (
       <Progress value="66" color="danger" />
     </div>
   </div>
-);
+)
 
 const ButtonProgressComponent = () => (
   <div className="container">
@@ -70,7 +70,7 @@ const ButtonProgressComponent = () => (
           <strong>Bottone primario</strong>
         </p>
         <Button color="primary" className="btn-progress" disabled>
-          Label bottone{" "}
+          Label bottone{' '}
           <svg className="icon icon-light">
             <use xlinkHref="/svg/sprite.svg#it-github" />
           </svg>
@@ -84,7 +84,7 @@ const ButtonProgressComponent = () => (
           <strong>Bottone secondario</strong>
         </p>
         <Button color="secondary" className="btn-progress" disabled>
-          Label bottone{" "}
+          Label bottone{' '}
           <svg className="icon icon-light">
             <use xlinkHref="/svg/sprite.svg#it-github" />
           </svg>
@@ -95,20 +95,20 @@ const ButtonProgressComponent = () => (
       </div>
     </div>
   </div>
-);
+)
 
 const EsempiInterattiviComponent = () => {
-  const value = number("Valore", 25);
-  const colors = ["", "success", "info", "warning", "danger"];
-  const color = select("Color", colors, colors[0]);
-  const label = text("Etichetta", "progresso");
+  const value = number('Valore', 25)
+  const colors = ['', 'success', 'info', 'warning', 'danger']
+  const color = select('Color', colors, colors[0])
+  const label = text('Etichetta', 'progresso')
 
   return (
     <div>
       <Progress value={value} label={label} color={color} />
     </div>
-  );
-};
+  )
+}
 
 const SpinnerComponent = () => (
   <div className="container">
@@ -139,7 +139,7 @@ const SpinnerComponent = () => (
       </div>
     </div>
   </div>
-);
+)
 
 const SpinnerDoppioComponent = () => (
   <div className="container">
@@ -170,58 +170,58 @@ const SpinnerDoppioComponent = () => (
       </div>
     </div>
   </div>
-);
+)
 
-storiesOf("Componenti/Progress Indicators", module)
+storiesOf('Componenti/Progress Indicators', module)
   .addDecorator(withA11y)
   .add(
-    "Esempi",
+    'Esempi',
     withInfo({
       text: Esempi
     })(EsempiComponent)
   )
   .add(
-    "Etichette",
+    'Etichette',
     withInfo({
       text: Etichette
     })(EtichetteComponent)
   )
   .add(
-    "Progresso Indeterminato",
+    'Progresso Indeterminato',
     withInfo({
       text: Indeterminato
     })(ProgressoIndeterminato)
   )
   .add(
-    "Colori",
+    'Colori',
     withInfo({
       text: Colori
     })(ColoriComponent)
   )
   .add(
-    "Bottone con Progress Bar",
+    'Bottone con Progress Bar',
     withInfo({
       text: ButtonProgress
     })(ButtonProgressComponent)
   )
   .addDecorator(withKnobs)
   .add(
-    "Esempi interattivi",
+    'Esempi interattivi',
     withInfo({
       text: EsempiInterattivi
     })(EsempiInterattiviComponent)
-  );
+  )
 
-storiesOf("Componenti/Progress Indicators.Spinners", module)
+storiesOf('Componenti/Progress Indicators.Spinners', module)
   .add(
-    "Spinner",
+    'Spinner',
     withInfo({
       text: SpinnerDocs
     })(SpinnerComponent)
   )
   .add(
-    "Spinner Doppio",
+    'Spinner Doppio',
     withInfo({
       text: SpinnerDoppio
     })(SpinnerDoppioComponent)
-  );
+  )

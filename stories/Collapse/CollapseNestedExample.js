@@ -1,21 +1,21 @@
-import React from "react";
-import { Accordion, AccordionHeader, AccordionBody } from "../../src";
+import React from 'react'
+import { Accordion, AccordionHeader, AccordionBody } from '../../src'
 
 class CollapseNestedExample extends React.Component {
   state = {
     collapseOpen1: true,
     collapseOpen2: false,
     collapseOpen3: false
-  };
+  }
 
   toggle = id => {
     this.setState({
       [`collapseOpen${id}`]: !this.state[`collapseOpen${id}`]
-    });
-  };
+    })
+  }
 
   render() {
-    const { collapseOpen1, collapseOpen2, collapseOpen3 } = this.state;
+    const { collapseOpen1, collapseOpen2, collapseOpen3 } = this.state
 
     return (
       <Accordion>
@@ -45,7 +45,7 @@ class CollapseNestedExample extends React.Component {
           labore wes anderson cred nesciunt sapiente ea proident.
         </AccordionBody>
       </Accordion>
-    );
+    )
   }
 }
 
@@ -54,23 +54,23 @@ class CollapseNestedPanel extends React.Component {
     collapseOpen1: false,
     collapseOpen2: false,
     collapseOpen3: false
-  };
+  }
 
   state = {
     ...this.defaultState,
     collapseOpen1: true,
     collapseOpen2: true
-  };
+  }
 
   toggle = id => {
     this.setState({
       ...this.defaultState,
       [`collapseOpen${id}`]: !this.state[`collapseOpen${id}`]
-    });
-  };
+    })
+  }
 
   render() {
-    const { collapseOpen1, collapseOpen2, collapseOpen3 } = this.state;
+    const { collapseOpen1, collapseOpen2, collapseOpen3 } = this.state
 
     return (
       <Accordion>
@@ -102,8 +102,8 @@ class CollapseNestedPanel extends React.Component {
           labore wes anderson cred nesciunt sapiente ea proident.
         </AccordionBody>
       </Accordion>
-    );
+    )
   }
 }
 
-export default CollapseNestedExample;
+export default CollapseNestedExample

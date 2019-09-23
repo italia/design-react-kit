@@ -1,21 +1,21 @@
-import React from "react";
-import { Popover, PopoverHeader, PopoverBody } from "../../src";
+import React from 'react'
+import { Popover, PopoverHeader, PopoverBody } from '../../src'
 
 class PopoverIconLink extends React.Component {
   state = {
     popoverOpen: false
-  };
+  }
 
   togglePopover = () => {
     this.setState({
       popoverOpen: !this.state.popoverOpen
-    });
-  };
+    })
+  }
 
   render() {
-    const id = "example";
+    const id = 'example'
     // Avoid Jest complaints
-    const target = () => document.getElementById(id);
+    const target = () => document.getElementById(id)
 
     return (
       <div>
@@ -27,8 +27,7 @@ class PopoverIconLink extends React.Component {
           data-placement="right"
           data-html="true"
           id={id}
-          onClick={this.togglePopover}
-        >
+          onClick={this.togglePopover}>
           Popover con icona e link
         </button>
 
@@ -36,12 +35,11 @@ class PopoverIconLink extends React.Component {
           placement="right"
           target={target}
           isOpen={this.state.popoverOpen}
-          toggle={this.togglePopover}
-        >
+          toggle={this.togglePopover}>
           <PopoverHeader>
             <svg className="icon icon-white">
               <use xlinkHref="/svg/sprite.svg#it-help-circle" />
-            </svg>{" "}
+            </svg>{' '}
             Titolo con icona
           </PopoverHeader>
           <PopoverBody>
@@ -56,8 +54,8 @@ class PopoverIconLink extends React.Component {
           </PopoverBody>
         </Popover>
       </div>
-    );
+    )
   }
 }
 
-export default PopoverIconLink;
+export default PopoverIconLink

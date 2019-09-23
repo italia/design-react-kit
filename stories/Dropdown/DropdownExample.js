@@ -1,9 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
-
-const propTypes = {
-  tag: PropTypes.string
-};
+import React from 'react'
+import PropTypes from 'prop-types'
 
 import {
   Dropdown,
@@ -11,29 +7,32 @@ import {
   DropdownMenu,
   LinkList,
   LinkListItem
-} from "../../src";
+} from '../../src'
+
+const propTypes = {
+  tag: PropTypes.string
+}
 
 class DropdownExample extends React.Component {
   state = {
     dropdownOpen: false
-  };
+  }
 
   toggle = () => {
     this.setState({
       dropdownOpen: !this.state.dropdownOpen
-    });
-  };
+    })
+  }
 
   render() {
-    const { tag } = this.props;
+    const { tag } = this.props
     return (
       <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle
           className={`btn btn-dropdown`}
           color=""
-          tag={tag ? tag : "button"}
-          caret
-        >
+          tag={tag || 'button'}
+          caret>
           Apri dropdown
         </DropdownToggle>
         <DropdownMenu>
@@ -44,10 +43,10 @@ class DropdownExample extends React.Component {
           </LinkList>
         </DropdownMenu>
       </Dropdown>
-    );
+    )
   }
 }
 
-export default DropdownExample;
+export default DropdownExample
 
-DropdownExample.propTypes = propTypes;
+DropdownExample.propTypes = propTypes

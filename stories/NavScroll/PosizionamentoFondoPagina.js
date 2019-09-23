@@ -1,16 +1,16 @@
-import React, { Fragment } from "react";
+import React, { Fragment } from 'react'
 
 class PosizionamentoFondoPagina extends React.Component {
   state = {
     isNavOpen: false
-  };
+  }
 
   onNavScrollToggle = () => {
     this.setState(prevState => ({
       ...prevState,
       isNavOpen: !prevState.isNavOpen
-    }));
-  };
+    }))
+  }
 
   render() {
     return (
@@ -19,37 +19,34 @@ class PosizionamentoFondoPagina extends React.Component {
           <button
             className={
               this.state.isNavOpen
-                ? "custom-navbar-toggler focus--mouse"
-                : "custom-navbar-toggler"
+                ? 'custom-navbar-toggler focus--mouse'
+                : 'custom-navbar-toggler'
             }
             type="button"
             aria-controls="navbarNav"
-            aria-expanded={this.state.isNavOpen ? "true" : "false"}
+            aria-expanded={this.state.isNavOpen ? 'true' : 'false'}
             aria-label="Toggle navigation"
             data-target="#navbarNav"
-            onClick={this.onNavScrollToggle}
-          >
+            onClick={this.onNavScrollToggle}>
             <span className="it-list"></span>1. Introduzione
           </button>
           <div
             className={
               this.state.isNavOpen
-                ? "navbar-collapsable expanded"
-                : "navbar-collapsable"
+                ? 'navbar-collapsable expanded'
+                : 'navbar-collapsable'
             }
             id="navbarNav"
             style={
-              this.state.isNavOpen ? { display: "block" } : { display: "none" }
-            }
-          >
+              this.state.isNavOpen ? { display: 'block' } : { display: 'none' }
+            }>
             <div
               className="overlay"
               style={
                 this.state.isNavOpen
-                  ? { display: "block" }
-                  : { display: "none" }
-              }
-            ></div>
+                  ? { display: 'block' }
+                  : { display: 'none' }
+              }></div>
             <div className="close-div sr-only">
               <button className="btn close-menu" type="button">
                 <span className="it-close"></span>close
@@ -60,11 +57,10 @@ class PosizionamentoFondoPagina extends React.Component {
               href="#"
               style={
                 this.state.isNavOpen
-                  ? { display: "block" }
-                  : { display: "none" }
+                  ? { display: 'block' }
+                  : { display: 'none' }
               }
-              onClick={this.onNavScrollToggle}
-            >
+              onClick={this.onNavScrollToggle}>
               <svg className="icon icon-sm icon-primary align-top">
                 <use xlinkHref="/svg/sprite.svg#it-chevron-left"></use>
               </svg>
@@ -156,8 +152,8 @@ class PosizionamentoFondoPagina extends React.Component {
           </div>
         </nav>
       </Fragment>
-    );
+    )
   }
 }
 
-export default PosizionamentoFondoPagina;
+export default PosizionamentoFondoPagina

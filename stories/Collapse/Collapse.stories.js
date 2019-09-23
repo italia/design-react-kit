@@ -1,24 +1,24 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
-import { Collapse, Accordion, AccordionHeader, AccordionBody } from "../../src";
+import { Collapse, Accordion, AccordionHeader, AccordionBody } from '../../src'
 
-import CollapseExample from "./CollapseExample";
-import CollapseGroupsExample from "./CollapseGroupsExample";
-import CollapseAccordionExample from "./CollapseAccordionExample";
-import CollapseNestedExample from "./CollapseNestedExample";
+import CollapseExample from './CollapseExample'
+import CollapseGroupsExample from './CollapseGroupsExample'
+import CollapseAccordionExample from './CollapseAccordionExample'
+import CollapseNestedExample from './CollapseNestedExample'
 
-import Esempi from "./docs/Esempi.md";
-import Gruppi from "./docs/Gruppi.md";
-import AccordionEsempio from "./docs/AccordionEsempio.md";
-import Innestati from "./docs/Innestati.md";
+import Esempi from './docs/Esempi.md'
+import Gruppi from './docs/Gruppi.md'
+import AccordionEsempio from './docs/AccordionEsempio.md'
+import Innestati from './docs/Innestati.md'
 
-storiesOf("Componenti/Collapse", module)
+storiesOf('Componenti/Collapse', module)
   .addDecorator(withA11y)
   .add(
-    "Esempi",
+    'Esempi',
     withInfo({
       text: Esempi,
       propTables: [Collapse],
@@ -26,7 +26,7 @@ storiesOf("Componenti/Collapse", module)
     })(() => <CollapseExample />)
   )
   .add(
-    "Gruppi di elementi richiudibili",
+    'Gruppi di elementi richiudibili',
     withInfo({
       text: Gruppi,
       propTables: [Accordion, AccordionHeader, AccordionBody],
@@ -34,7 +34,7 @@ storiesOf("Componenti/Collapse", module)
     })(() => <CollapseGroupsExample />)
   )
   .add(
-    "Accordion",
+    'Accordion',
     withInfo({
       text: AccordionEsempio,
       propTables: [Accordion, AccordionHeader, AccordionBody],
@@ -42,10 +42,10 @@ storiesOf("Componenti/Collapse", module)
     })(() => <CollapseAccordionExample />)
   )
   .add(
-    "Collapse e Accordion innestati",
+    'Collapse e Accordion innestati',
     withInfo({
       text: Innestati,
       propTables: [Collapse],
       propTablesExclude: [Accordion, AccordionHeader, AccordionBody]
     })(() => <CollapseNestedExample />)
-  );
+  )

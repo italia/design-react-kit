@@ -1,21 +1,21 @@
-import React from "react";
-import { Popover, PopoverHeader, PopoverBody } from "../../src";
+import React from 'react'
+import { Popover, PopoverHeader, PopoverBody } from '../../src'
 
 class PopoverFocus extends React.Component {
   state = {
     popoverOpen: false
-  };
+  }
 
   togglePopover = () => {
     this.setState({
       popoverOpen: !this.state.popoverOpen
-    });
-  };
+    })
+  }
 
   render() {
-    const id = "example";
+    const id = 'example'
     // Avoid Jest complaints
-    const target = () => document.getElementById(id);
+    const target = () => document.getElementById(id)
 
     return (
       <div>
@@ -25,8 +25,7 @@ class PopoverFocus extends React.Component {
           role="button"
           data-toggle="popover"
           data-trigger="focus"
-          id={id}
-        >
+          id={id}>
           Dismissible popover
         </a>
 
@@ -35,8 +34,7 @@ class PopoverFocus extends React.Component {
           trigger="focus"
           target={target}
           isOpen={this.state.popoverOpen}
-          toggle={this.togglePopover}
-        >
+          toggle={this.togglePopover}>
           <PopoverHeader>Dismissible popover</PopoverHeader>
           <PopoverBody>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
@@ -44,8 +42,8 @@ class PopoverFocus extends React.Component {
           </PopoverBody>
         </Popover>
       </div>
-    );
+    )
   }
 }
 
-export default PopoverFocus;
+export default PopoverFocus

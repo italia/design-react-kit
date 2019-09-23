@@ -1,20 +1,23 @@
-import React from "react";
+import React from 'react'
 
 class HeaderNavExample extends React.Component {
   state = {
     isDropdownOpen: false,
     isMegamenuOpen: false,
     isMainMenuOpen: true
-  };
+  }
+
   toggleDropdown = () => {
-    this.setState({ isDropdownOpen: !this.state.isDropdownOpen });
-  };
+    this.setState({ isDropdownOpen: !this.state.isDropdownOpen })
+  }
+
   toggleMegamenu = () => {
-    this.setState({ isMegamenuOpen: !this.state.isMegamenuOpen });
-  };
+    this.setState({ isMegamenuOpen: !this.state.isMegamenuOpen })
+  }
+
   toggleMainMenu = () => {
-    this.setState({ isMainMenuOpen: !this.state.isMainMenuOpen });
-  };
+    this.setState({ isMainMenuOpen: !this.state.isMainMenuOpen })
+  }
 
   render() {
     return (
@@ -22,17 +25,16 @@ class HeaderNavExample extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              {/*start nav */}
+              {/* start nav */}
               <nav className="navbar navbar-expand-lg has-megamenu">
                 <button
                   className="custom-navbar-toggler"
                   type="button"
                   aria-controls="nav1"
-                  aria-expanded={this.state.isMainMenuOpen ? "true" : "false"}
+                  aria-expanded={this.state.isMainMenuOpen ? 'true' : 'false'}
                   aria-label="Toggle navigation"
                   data-target="#nav1"
-                  onClick={this.toggleMainMenu}
-                >
+                  onClick={this.toggleMainMenu}>
                   <svg className="icon icon-primary">
                     <use xlinkHref="/svg/sprite.svg#it-burger"></use>
                   </svg>
@@ -40,21 +42,19 @@ class HeaderNavExample extends React.Component {
                 <div
                   className={
                     this.state.isMainMenuOpen
-                      ? "navbar-collapsable expanded"
-                      : "expanded"
+                      ? 'navbar-collapsable expanded'
+                      : 'expanded'
                   }
                   id="nav1"
                   style={{
-                    display: this.state.isMainMenuOpen ? "block" : "none"
-                  }}
-                >
+                    display: this.state.isMainMenuOpen ? 'block' : 'none'
+                  }}>
                   <div
                     className="overlay"
                     style={{
-                      display: this.state.isMainMenuOpen ? "block" : "none"
+                      display: this.state.isMainMenuOpen ? 'block' : 'none'
                     }}
-                    onClick={this.toggleMainMenu}
-                  ></div>
+                    onClick={this.toggleMainMenu}></div>
                   <div className="close-div sr-only">
                     <button className="btn close-menu" type="button">
                       <span className="it-close"></span>close
@@ -85,14 +85,12 @@ class HeaderNavExample extends React.Component {
                       </li>
                       <li
                         className="nav-item dropdown"
-                        onClick={this.toggleDropdown}
-                      >
+                        onClick={this.toggleDropdown}>
                         <a
                           className="nav-link dropdown-toggle"
                           href=" javascript:void(0)"
                           data-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                          aria-expanded="false">
                           <span>Dropdown item</span>
                           <svg className="icon icon-xs">
                             <use xlinkHref="/svg/sprite.svg#it-expand"></use>
@@ -101,10 +99,9 @@ class HeaderNavExample extends React.Component {
                         <div
                           className={
                             this.state.isDropdownOpen
-                              ? "dropdown-menu show"
-                              : "dropdown-menu"
-                          }
-                        >
+                              ? 'dropdown-menu show'
+                              : 'dropdown-menu'
+                          }>
                           <div className="link-list-wrapper">
                             <ul className="link-list">
                               <li>
@@ -143,16 +140,14 @@ class HeaderNavExample extends React.Component {
                         onClick={this.toggleMegamenu}
                         className={
                           this.state.isMegamenuOpen
-                            ? "nav-item dropdown megamenu show"
-                            : "nav-item dropdown megamenu"
-                        }
-                      >
+                            ? 'nav-item dropdown megamenu show'
+                            : 'nav-item dropdown megamenu'
+                        }>
                         <a
                           className="nav-link dropdown-toggle"
                           href=" javascript:void(0)"
                           data-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                          aria-expanded="false">
                           <span>Megamenu Label</span>
                           <svg className="icon icon-xs">
                             <use xlinkHref="/svg/sprite.svg#it-expand"></use>
@@ -161,10 +156,9 @@ class HeaderNavExample extends React.Component {
                         <div
                           className={
                             this.state.isMegamenuOpen
-                              ? "dropdown-menu show"
-                              : "dropdown-menu"
-                          }
-                        >
+                              ? 'dropdown-menu show'
+                              : 'dropdown-menu'
+                          }>
                           <div className="row">
                             <div className="col-12 col-lg-4">
                               <div className="link-list-wrapper">
@@ -249,8 +243,8 @@ class HeaderNavExample extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default HeaderNavExample;
+export default HeaderNavExample

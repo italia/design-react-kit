@@ -1,19 +1,19 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
-import { Nav, NavItem, NavLink, TabContent, TabPane } from "../../src";
+import { Nav, NavItem, NavLink, TabContent, TabPane } from '../../src'
 
-import TabExample from "./TabExample";
-import TabButtonExample from "./TabButtonExample";
+import TabExample from './TabExample'
+import TabButtonExample from './TabButtonExample'
 
-import Esempi from "./docs/Esempi.md";
-import Contenuto from "./docs/Contenuto.md";
-import Icone from "./docs/Icone.md";
-import IconeTesto from "./docs/IconeTesto.md";
-import TabBottoni from "./docs/TabBottoni.md";
-import AllineamentoVerticale from "./docs/AllineamentoVerticale.md";
+import Esempi from './docs/Esempi.md'
+import Contenuto from './docs/Contenuto.md'
+import Icone from './docs/Icone.md'
+import IconeTesto from './docs/IconeTesto.md'
+import TabBottoni from './docs/TabBottoni.md'
+import AllineamentoVerticale from './docs/AllineamentoVerticale.md'
 
 const EsempiComponent = () => (
   <div>
@@ -55,17 +55,17 @@ const EsempiComponent = () => (
       </NavItem>
     </Nav>
   </div>
-);
-storiesOf("Componenti/Tab", module)
+)
+storiesOf('Componenti/Tab', module)
   .addDecorator(withA11y)
   .add(
-    "Esempi",
+    'Esempi',
     withInfo({
       text: Esempi
     })(EsempiComponent)
   )
   .add(
-    "Contenuto",
+    'Contenuto',
     withInfo({
       text: Contenuto,
       propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
@@ -73,7 +73,7 @@ storiesOf("Componenti/Tab", module)
     })(() => <TabExample text />)
   )
   .add(
-    "Icone",
+    'Icone',
     withInfo({
       text: Icone,
       propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
@@ -81,7 +81,7 @@ storiesOf("Componenti/Tab", module)
     })(() => <TabExample icons />)
   )
   .add(
-    "Icone e testo",
+    'Icone e testo',
     withInfo({
       text: IconeTesto,
       propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
@@ -89,7 +89,7 @@ storiesOf("Componenti/Tab", module)
     })(() => <TabExample text icons />)
   )
   .add(
-    "Tab a bottoni",
+    'Tab a bottoni',
     withInfo({
       text: TabBottoni,
       propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
@@ -97,10 +97,10 @@ storiesOf("Componenti/Tab", module)
     })(() => <TabButtonExample />)
   )
   .add(
-    "Allineamento Verticale",
+    'Allineamento Verticale',
     withInfo({
       text: AllineamentoVerticale,
       propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
       propTablesExclude: [TabButtonExample]
     })(() => <TabButtonExample vertical />)
-  );
+  )

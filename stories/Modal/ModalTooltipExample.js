@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Button,
   Modal,
@@ -9,25 +9,25 @@ import {
   Popover,
   PopoverHeader,
   PopoverBody
-} from "../../src";
+} from '../../src'
 
 class ModalTooltipExample extends React.Component {
   state = {
     modal: false,
     popoverOpen: false
-  };
+  }
 
   toggle = () => {
     this.setState({
       modal: !this.state.modal
-    });
-  };
+    })
+  }
 
   togglePopover = () => {
     this.setState({
       popoverOpen: !this.state.popoverOpen
-    });
-  };
+    })
+  }
 
   render() {
     return (
@@ -40,21 +40,19 @@ class ModalTooltipExample extends React.Component {
           <ModalBody>
             <h5>Popover in una modale</h5>
             <p>
-              Questo{" "}
+              Questo{' '}
               <Button
                 color="secondary"
                 id="Example"
-                onClick={this.togglePopover}
-              >
+                onClick={this.togglePopover}>
                 Pulsante
-              </Button>{" "}
+              </Button>{' '}
               attiva un popover al click.
               <Popover
                 placement="right"
                 isOpen={this.state.popoverOpen}
                 target="Example"
-                toggle={this.togglePopover}
-              >
+                toggle={this.togglePopover}>
                 <PopoverHeader>Titolo del popover</PopoverHeader>
                 <PopoverBody>
                   Il contenuto del corpo del popover è impostato in questo
@@ -67,11 +65,11 @@ class ModalTooltipExample extends React.Component {
             <p>
               <a href="#" title="Tooltip" id="Example1">
                 Questo link
-              </a>{" "}
-              e{" "}
+              </a>{' '}
+              e{' '}
               <a href="#" title="Tooltip" id="Example2">
                 questo link
-              </a>{" "}
+              </a>{' '}
               attivano un tooltip al passaggio del mouse.
               <UncontrolledTooltip placement="top" target="Example1">
                 Tooltip
@@ -91,8 +89,8 @@ class ModalTooltipExample extends React.Component {
           </ModalFooter>
         </Modal>
       </div>
-    );
+    )
   }
 }
 
-export default ModalTooltipExample;
+export default ModalTooltipExample

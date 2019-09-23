@@ -1,35 +1,34 @@
-import React from "react";
-import { Nav, NavItem, NavLink, TabContent, TabPane } from "../../src";
-import PropTypes from "prop-types";
+import React from 'react'
+import { Nav, NavItem, NavLink, TabContent, TabPane } from '../../src'
+import PropTypes from 'prop-types'
 
-const titles = ["Tab titolo 1", "Tab titolo 2", "Tab titolo 3"];
+const titles = ['Tab titolo 1', 'Tab titolo 2', 'Tab titolo 3']
 
 class TabExample extends React.Component {
   state = {
-    activeTab: "1"
-  };
+    activeTab: '1'
+  }
 
   toggle = tab => {
     if (this.state.activeTab !== tab) {
       this.setState({
         activeTab: tab
-      });
+      })
     }
-  };
+  }
 
   render() {
-    const { text, icons } = this.props;
+    const { text, icons } = this.props
     return (
       <div>
         <Nav tabs className="mb-3">
           <NavItem>
             <NavLink
               href="#"
-              active={this.state.activeTab === "1"}
+              active={this.state.activeTab === '1'}
               onClick={() => {
-                this.toggle("1");
-              }}
-            >
+                this.toggle('1')
+              }}>
               {(() => {
                 if (icons) {
                   return (
@@ -42,12 +41,12 @@ class TabExample extends React.Component {
                         aria-label={titles[0]}
                       />
                     </span>
-                  );
+                  )
                 }
               })()}
               {(() => {
                 if (text) {
-                  return <span>{titles[0]}</span>;
+                  return <span>{titles[0]}</span>
                 }
               })()}
             </NavLink>
@@ -55,11 +54,10 @@ class TabExample extends React.Component {
           <NavItem>
             <NavLink
               href="#"
-              active={this.state.activeTab === "2"}
+              active={this.state.activeTab === '2'}
               onClick={() => {
-                this.toggle("2");
-              }}
-            >
+                this.toggle('2')
+              }}>
               {(() => {
                 if (icons) {
                   return (
@@ -72,12 +70,12 @@ class TabExample extends React.Component {
                         aria-label={titles[1]}
                       />
                     </span>
-                  );
+                  )
                 }
               })()}
               {(() => {
                 if (text) {
-                  return <span>{titles[1]}</span>;
+                  return <span>{titles[1]}</span>
                 }
               })()}
             </NavLink>
@@ -85,11 +83,10 @@ class TabExample extends React.Component {
           <NavItem>
             <NavLink
               href="#"
-              active={this.state.activeTab === "3"}
+              active={this.state.activeTab === '3'}
               onClick={() => {
-                this.toggle("3");
-              }}
-            >
+                this.toggle('3')
+              }}>
               {(() => {
                 if (icons) {
                   return (
@@ -102,12 +99,12 @@ class TabExample extends React.Component {
                         aria-label={titles[2]}
                       />
                     </span>
-                  );
+                  )
                 }
               })()}
               {(() => {
                 if (text) {
-                  return <span>{titles[2]}</span>;
+                  return <span>{titles[2]}</span>
                 }
               })()}
             </NavLink>
@@ -144,13 +141,13 @@ class TabExample extends React.Component {
           </TabPane>
         </TabContent>
       </div>
-    );
+    )
   }
 }
 
 TabExample.propTypes = {
   text: PropTypes.string,
   icons: PropTypes.bool
-};
+}
 
-export default TabExample;
+export default TabExample

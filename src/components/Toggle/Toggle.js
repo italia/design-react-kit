@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-import { Label, Input } from "reactstrap";
+import { Label, Input } from 'reactstrap'
 
 class Toggle extends Component {
   render() {
-    const { label, ...rest } = this.props;
+    const { label, ...rest } = this.props
 
     return (
       <div className="toggles">
@@ -15,13 +15,13 @@ class Toggle extends Component {
           <span className="lever" />
         </Label>
       </div>
-    );
+    )
   }
 }
 
 Toggle.propTypes = {
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   ...Input.propTypes
-};
+}
 
-export default Toggle;
+export default Toggle

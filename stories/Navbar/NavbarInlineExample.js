@@ -1,30 +1,30 @@
-import React from "react";
-import { Collapse, LinkList, LinkListItem } from "../../src";
+import React from 'react'
+import { Collapse, LinkList, LinkListItem } from '../../src'
 
 class NavbarInlineExample extends React.Component {
   defaultState = {
     collapseOpen1: false,
     collapseOpen2: false,
     collapseOpen3: false
-  };
+  }
 
   state = {
     ...this.defaultState
-  };
+  }
 
   toggle = (e, id) => {
-    e.preventDefault();
+    e.preventDefault()
     this.setState({
       [`collapseOpen${id}`]: !this.state[`collapseOpen${id}`]
-    });
-  };
+    })
+  }
 
   render() {
-    const { collapseOpen1, collapseOpen2, collapseOpen3 } = this.state;
+    const { collapseOpen1, collapseOpen2, collapseOpen3 } = this.state
 
     const expanded = {
-      "aria-expanded": true
-    };
+      'aria-expanded': true
+    }
     return (
       <nav className="inline-menu">
         <LinkList>
@@ -32,8 +32,7 @@ class NavbarInlineExample extends React.Component {
             size="large medium"
             className="right-icon"
             onClick={e => this.toggle(e, 1)}
-            {...(collapseOpen1 ? expanded : {})}
-          >
+            {...(collapseOpen1 ? expanded : {})}>
             <span>Link list 1 </span>
             <i className="it-expand right" />
           </LinkListItem>
@@ -54,8 +53,7 @@ class NavbarInlineExample extends React.Component {
             size="large medium"
             className="right-icon"
             onClick={e => this.toggle(e, 2)}
-            {...(collapseOpen2 ? expanded : {})}
-          >
+            {...(collapseOpen2 ? expanded : {})}>
             <span>Link list 2 </span>
             <i className="it-expand right" />
           </LinkListItem>
@@ -76,8 +74,7 @@ class NavbarInlineExample extends React.Component {
             size="large medium"
             className="right-icon"
             onClick={e => this.toggle(e, 3)}
-            {...(collapseOpen3 ? expanded : {})}
-          >
+            {...(collapseOpen3 ? expanded : {})}>
             <span>Link list 3 </span>
             <i className="it-expand right" />
           </LinkListItem>
@@ -96,8 +93,8 @@ class NavbarInlineExample extends React.Component {
           </Collapse>
         </LinkList>
       </nav>
-    );
+    )
   }
 }
 
-export default NavbarInlineExample;
+export default NavbarInlineExample

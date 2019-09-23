@@ -1,28 +1,28 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
-import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from "../../src";
+import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from '../../src'
 
-import ModalExample from "./ModalExample";
-import ModalTooltipExample from "./ModalTooltipExample";
-import ModalGridExample from "./ModalGridExample";
-import ModalDynamicExample from "./ModalDynamicExample";
+import ModalExample from './ModalExample'
+import ModalTooltipExample from './ModalTooltipExample'
+import ModalGridExample from './ModalGridExample'
+import ModalDynamicExample from './ModalDynamicExample'
 
-import Esempi from "./docs/Esempi.md";
-import BottoneChiusura from "./docs/BottoneChiusura.md";
-import Demo from "./docs/Demo.md";
-import ScrollContenutiLunghi from "./docs/ScrollContenutiLunghi.md";
-import CentraturaVerticale from "./docs/CentraturaVerticale.md";
-import TooltipPopover from "./docs/TooltipPopover.md";
-import UsoGriglia from "./docs/UsoGriglia.md";
-import RimuovereAnimazione from "./docs/RimuovereAnimazione.md";
-import Dimensioni from "./docs/Dimensioni.md";
-import ModalVariabile from "./docs/ModalVariabile.md";
+import Esempi from './docs/Esempi.md'
+import BottoneChiusura from './docs/BottoneChiusura.md'
+import Demo from './docs/Demo.md'
+import ScrollContenutiLunghi from './docs/ScrollContenutiLunghi.md'
+import CentraturaVerticale from './docs/CentraturaVerticale.md'
+import TooltipPopover from './docs/TooltipPopover.md'
+import UsoGriglia from './docs/UsoGriglia.md'
+import RimuovereAnimazione from './docs/RimuovereAnimazione.md'
+import Dimensioni from './docs/Dimensioni.md'
+import ModalVariabile from './docs/ModalVariabile.md'
 
 const EsempiComponent = () => (
-  <div style={{ padding: "0px 290px" }}>
+  <div style={{ padding: '0px 290px' }}>
     <div className="modal-content">
       <ModalHeader>Titolo della modale</ModalHeader>
       <ModalBody>Il testo del corpo della modale va qui.</ModalBody>
@@ -32,32 +32,32 @@ const EsempiComponent = () => (
       </ModalFooter>
     </div>
   </div>
-);
+)
 
 const BottoneChiusuraComponent = () => (
   <div className="p-3">
     <button className="close position-absolute">&times;</button>
   </div>
-);
+)
 
-storiesOf("Componenti/Modal", module)
+storiesOf('Componenti/Modal', module)
   .addDecorator(withA11y)
   .add(
-    "Esempi",
+    'Esempi',
     withInfo({
       text: Esempi,
       propTablesExclude: [Button]
     })(EsempiComponent)
   )
   .add(
-    "Bottone di chiusura",
+    'Bottone di chiusura',
     withInfo({
       text: BottoneChiusura,
       propTablesExclude: [Button]
     })(BottoneChiusuraComponent)
   )
   .add(
-    "Demo",
+    'Demo',
     withInfo({
       text: Demo,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
@@ -65,7 +65,7 @@ storiesOf("Componenti/Modal", module)
     })(() => <ModalExample />)
   )
   .add(
-    "Scroll di contenuti lunghi",
+    'Scroll di contenuti lunghi',
     withInfo({
       text: ScrollContenutiLunghi,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
@@ -73,7 +73,7 @@ storiesOf("Componenti/Modal", module)
     })(() => <ModalExample long />)
   )
   .add(
-    "Centratura verticale",
+    'Centratura verticale',
     withInfo({
       text: CentraturaVerticale,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
@@ -81,7 +81,7 @@ storiesOf("Componenti/Modal", module)
     })(() => <ModalExample centered />)
   )
   .add(
-    "Tooltip and popover",
+    'Tooltip and popover',
     withInfo({
       text: TooltipPopover,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
@@ -89,7 +89,7 @@ storiesOf("Componenti/Modal", module)
     })(() => <ModalTooltipExample />)
   )
   .add(
-    "Uso della griglia",
+    'Uso della griglia',
     withInfo({
       text: UsoGriglia,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
@@ -97,7 +97,7 @@ storiesOf("Componenti/Modal", module)
     })(() => <ModalGridExample />)
   )
   .add(
-    "Contenuto della modale variabile",
+    'Contenuto della modale variabile',
     withInfo({
       text: ModalVariabile,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
@@ -105,7 +105,7 @@ storiesOf("Componenti/Modal", module)
     })(() => <ModalDynamicExample />)
   )
   .add(
-    "Rimuovere l’animazione",
+    'Rimuovere l’animazione',
     withInfo({
       text: RimuovereAnimazione,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
@@ -113,10 +113,10 @@ storiesOf("Componenti/Modal", module)
     })(() => <ModalExample fade={false} />)
   )
   .add(
-    "Dimensioni",
+    'Dimensioni',
     withInfo({
       text: Dimensioni,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
       propTablesExclude: [ModalExample]
     })(() => <ModalExample sizing />)
-  );
+  )

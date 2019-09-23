@@ -1,46 +1,46 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
-import InputIconButtonExample from "./Input/InputIcon/InputIconButtonExample";
-import AutocompleteExample from "./Autocomplete/AutocompleteExample";
-import TextArea from "./Input/TextArea/TextArea";
-import CheckboxGroupsExample from "./CheckboxRadio/CheckboxGroupsExample";
-import RadioGroupsExample from "./CheckboxRadio/RadioGroupsExample";
-import TogglesExample from "./Toggles/TogglesExample";
-import TogglesGroupsExample from "./Toggles/TogglesGroupsExample";
-import { Form, FormGroup, Label, Input, FormText, Toggle } from "../../src";
+import InputIconButtonExample from './Input/InputIcon/InputIconButtonExample'
+import AutocompleteExample from './Autocomplete/AutocompleteExample'
+import TextArea from './Input/TextArea/TextArea'
+import CheckboxGroupsExample from './CheckboxRadio/CheckboxGroupsExample'
+import RadioGroupsExample from './CheckboxRadio/RadioGroupsExample'
+import TogglesExample from './Toggles/TogglesExample'
+import TogglesGroupsExample from './Toggles/TogglesGroupsExample'
+import { Form, FormGroup, Label, Input, FormText, Toggle } from '../../src'
 
-import Esempi from "./docs/Input/Esempi.md";
-import Placeholder from "./docs/Input/Placeholder.md";
-import IconButton from "./docs/Input/IconButton.md";
-import Password from "./docs/Input/Password.md";
-import Disabled from "./docs/Input/Disabled.md";
-import Readonly from "./docs/Input/Readonly.md";
-import Normalize from "./docs/Input/Normalize.md";
-import Textarea from "./docs/Input/Textarea.md";
-import InputAutocomplete from "./docs/Input/InputAutocomplete.md";
-import SelectExample from "./Select/SelectExample";
-import Select from "react-select";
+import Esempi from './docs/Input/Esempi.md'
+import Placeholder from './docs/Input/Placeholder.md'
+import IconButton from './docs/Input/IconButton.md'
+import Password from './docs/Input/Password.md'
+import Disabled from './docs/Input/Disabled.md'
+import Readonly from './docs/Input/Readonly.md'
+import Normalize from './docs/Input/Normalize.md'
+import Textarea from './docs/Input/Textarea.md'
+import InputAutocomplete from './docs/Input/InputAutocomplete.md'
+import SelectExample from './Select/SelectExample'
+import Select from 'react-select'
 
-import CheckboxRadio from "./docs/CheckboxRadio/CheckboxRadio.md";
-import Disabilitato from "./docs/CheckboxRadio/Disabilitato.md";
-import Gruppi from "./docs/CheckboxRadio/Gruppi.md";
-import Inline from "./docs/CheckboxRadio/Inline.md";
+import CheckboxRadio from './docs/CheckboxRadio/CheckboxRadio.md'
+import Disabilitato from './docs/CheckboxRadio/Disabilitato.md'
+import Gruppi from './docs/CheckboxRadio/Gruppi.md'
+import Inline from './docs/CheckboxRadio/Inline.md'
 
-import GruppiToggles from "./docs/Toggles/GruppiToggles.md";
-import Toggles from "./docs/Toggles/Toggles.md";
-import TogglesDisabilitate from "./docs/Toggles/TogglesDisabilitate.md";
+import GruppiToggles from './docs/Toggles/GruppiToggles.md'
+import Toggles from './docs/Toggles/Toggles.md'
+import TogglesDisabilitate from './docs/Toggles/TogglesDisabilitate.md'
 
-import SelectEsempi from "./docs/Select/Esempi.md";
-import SelectDisabled from "./docs/Select/Disabled.md";
-import SelectReset from "./docs/Select/Reset.md";
-import SelectSearchable from "./docs/Select/Searchable.md";
-import SelectMultipla from "./docs/Select/Multipla.md";
-import SelectGrouped from "./docs/Select/Grouped.md";
+import SelectEsempi from './docs/Select/Esempi.md'
+import SelectDisabled from './docs/Select/Disabled.md'
+import SelectReset from './docs/Select/Reset.md'
+import SelectSearchable from './docs/Select/Searchable.md'
+import SelectMultipla from './docs/Select/Multipla.md'
+import SelectGrouped from './docs/Select/Grouped.md'
 
-import Validation from "./docs/Validation/Validation.md";
+import Validation from './docs/Validation/Validation.md'
 
 const InputTypesExamples = () => (
   <div>
@@ -60,7 +60,7 @@ const InputTypesExamples = () => (
       max="18:00"
     />
   </div>
-);
+)
 
 const InputPlaceHolderLabelComponent = () => (
   <div>
@@ -79,7 +79,7 @@ const InputPlaceHolderLabelComponent = () => (
       id="exampleinfoText"
     />
   </div>
-);
+)
 
 const CheckboxRadioComponent = () => (
   <Form className="m-3">
@@ -111,7 +111,7 @@ const CheckboxRadioComponent = () => (
       </FormGroup>
     </fieldset>
   </Form>
-);
+)
 const InlineComponent = () => (
   <section>
     <fieldset>
@@ -150,7 +150,7 @@ const InlineComponent = () => (
       </Form>
     </fieldset>
   </section>
-);
+)
 const DisabilitatoComponent = () => (
   <section>
     <fieldset>
@@ -195,13 +195,13 @@ const DisabilitatoComponent = () => (
       </Form>
     </fieldset>
   </section>
-);
+)
 const GruppiComponent = () => (
   <section>
     <CheckboxGroupsExample />
     <RadioGroupsExample />
   </section>
-);
+)
 
 const FormExampleComponent = () => (
   <div>
@@ -210,30 +210,30 @@ const FormExampleComponent = () => (
     <Input value="Mario" label="First name" infoText="Validated!" valid />
     <Input label="Username" infoText="Please choose a username." invalid />
   </div>
-);
+)
 
-storiesOf("Componenti/Form.Input", module)
+storiesOf('Componenti/Form.Input', module)
   .addDecorator(withA11y)
   .add(
-    "Esempi di campi di input",
+    'Esempi di campi di input',
     withInfo({
       text: Esempi
     })(InputTypesExamples)
   )
   .add(
-    "Utilizzo di placeholder e label",
+    'Utilizzo di placeholder e label',
     withInfo({
       text: Placeholder
     })(InputPlaceHolderLabelComponent)
   )
   .add(
-    "Input con icona o bottoni",
+    'Input con icona o bottoni',
     withInfo({
       text: IconButton
     })(() => <InputIconButtonExample />)
   )
   .add(
-    "Input password",
+    'Input password',
     withInfo({
       text: Password
     })(() => (
@@ -246,7 +246,7 @@ storiesOf("Componenti/Form.Input", module)
     ))
   )
   .add(
-    "Disabilitato",
+    'Disabilitato',
     withInfo({
       text: Disabled
     })(() => (
@@ -254,7 +254,7 @@ storiesOf("Componenti/Form.Input", module)
     ))
   )
   .add(
-    "Readonly",
+    'Readonly',
     withInfo({
       text: Readonly
     })(() => (
@@ -262,7 +262,7 @@ storiesOf("Componenti/Form.Input", module)
     ))
   )
   .add(
-    "Readonly normalizzato",
+    'Readonly normalizzato',
     withInfo({
       text: Normalize
     })(() => (
@@ -274,19 +274,19 @@ storiesOf("Componenti/Form.Input", module)
     ))
   )
   .add(
-    "Input autocomplete",
+    'Input autocomplete',
     withInfo({
       text: InputAutocomplete
     })(() => <AutocompleteExample />)
   )
   .add(
-    "Area di testo",
+    'Area di testo',
     withInfo({
       text: Textarea
     })(() => <TextArea rows="3" label="Esempio di area di testo" />)
   )
   .add(
-    "Area di testo con segnaposto",
+    'Area di testo con segnaposto',
     withInfo({
       text: Textarea
     })(() => (
@@ -296,39 +296,39 @@ storiesOf("Componenti/Form.Input", module)
         placeholder="Testo di esempio"
       />
     ))
-  );
-storiesOf("Componenti/Form.Checkbox and radio", module)
+  )
+storiesOf('Componenti/Form.Checkbox and radio', module)
   .addDecorator(withA11y)
   .add(
-    "Checkbox e radio",
+    'Checkbox e radio',
     withInfo({
       text: CheckboxRadio
     })(CheckboxRadioComponent)
   )
   .add(
-    "Inline",
+    'Inline',
     withInfo({
       text: Inline
     })(InlineComponent)
   )
   .add(
-    "Disabilitato",
+    'Disabilitato',
     withInfo({
       text: Disabilitato
     })(DisabilitatoComponent)
   )
   .add(
-    "Gruppi",
+    'Gruppi',
     withInfo({
       text: Gruppi,
       propTables: [Input, Label, FormText],
       propTablesExclude: [CheckboxGroupsExample, RadioGroupsExample]
     })(GruppiComponent)
-  );
-storiesOf("Componenti/Form.Toggles", module)
+  )
+storiesOf('Componenti/Form.Toggles', module)
   .addDecorator(withA11y)
   .add(
-    "Toggles",
+    'Toggles',
     withInfo({
       text: Toggles,
       propTables: [Toggle],
@@ -336,7 +336,7 @@ storiesOf("Componenti/Form.Toggles", module)
     })(() => <TogglesExample />)
   )
   .add(
-    "Toggles Disabilitate",
+    'Toggles Disabilitate',
     withInfo({
       text: TogglesDisabilitate,
       propTables: [Toggle],
@@ -344,18 +344,18 @@ storiesOf("Componenti/Form.Toggles", module)
     })(() => <TogglesExample disabled />)
   )
   .add(
-    "Gruppi di Toggles",
+    'Gruppi di Toggles',
     withInfo({
       text: GruppiToggles,
       propTables: [Toggle, FormText],
       propTablesExclude: [TogglesGroupsExample]
     })(() => <TogglesGroupsExample />)
-  );
+  )
 
-storiesOf("Componenti/Form.Select", module)
+storiesOf('Componenti/Form.Select', module)
   .addDecorator(withA11y)
   .add(
-    "Select classica",
+    'Select classica',
     withInfo({
       text: SelectEsempi,
       propTables: [Select],
@@ -363,7 +363,7 @@ storiesOf("Componenti/Form.Select", module)
     })(() => <SelectExample />)
   )
   .add(
-    "Select disabilitata",
+    'Select disabilitata',
     withInfo({
       text: SelectDisabled,
       propTables: [Select],
@@ -371,7 +371,7 @@ storiesOf("Componenti/Form.Select", module)
     })(() => <SelectExample disabled />)
   )
   .add(
-    "Select con reset",
+    'Select con reset',
     withInfo({
       text: SelectReset,
       propTables: [Select],
@@ -379,7 +379,7 @@ storiesOf("Componenti/Form.Select", module)
     })(() => <SelectExample reset />)
   )
   .add(
-    "Select con ricerca",
+    'Select con ricerca',
     withInfo({
       text: SelectSearchable,
       propTables: [Select],
@@ -387,7 +387,7 @@ storiesOf("Componenti/Form.Select", module)
     })(() => <SelectExample search />)
   )
   .add(
-    "Select Multipla",
+    'Select Multipla',
     withInfo({
       text: SelectMultipla,
       propTables: [Select],
@@ -395,20 +395,20 @@ storiesOf("Componenti/Form.Select", module)
     })(() => <SelectExample multi />)
   )
   .add(
-    "Select con gruppi",
+    'Select con gruppi',
     withInfo({
       text: SelectGrouped,
       propTables: [Select],
       propTablesExclude: [SelectExample]
     })(() => <SelectExample group />)
-  );
+  )
 
-storiesOf("Componenti/Form.Form Validation", module)
+storiesOf('Componenti/Form.Form Validation', module)
   .addDecorator(withA11y)
   .add(
-    "Example",
+    'Example',
     withInfo({
       text: Validation,
       propTables: [Input]
     })(FormExampleComponent)
-  );
+  )

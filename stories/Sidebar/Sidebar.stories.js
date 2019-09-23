@@ -1,18 +1,18 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
-import BasicSidebar from "./docs/BasicSidebar.md";
-import ConIcona from "./docs/ConIcona.md";
-import ConLineaDestra from "./docs/ConLineaDestra.md";
-import ConLineaSinistra from "./docs/ConLineaSinistra.md";
-import Annidata from "./docs/Annidata.md";
-import ScuraSidebar from "./docs/ScuraSidebar.md";
+import BasicSidebar from './docs/BasicSidebar.md'
+import ConIcona from './docs/ConIcona.md'
+import ConLineaDestra from './docs/ConLineaDestra.md'
+import ConLineaSinistra from './docs/ConLineaSinistra.md'
+import Annidata from './docs/Annidata.md'
+import ScuraSidebar from './docs/ScuraSidebar.md'
 
-import { LinkList, LinkListItem, Sidebar } from "../../src";
+import { LinkList, LinkListItem, Sidebar } from '../../src'
 
-import SidebarCollapseExample from "./SidebarCollapsibleExample";
+import SidebarCollapseExample from './SidebarCollapsibleExample'
 
 const BasicSidebarComponent = () => (
   <Sidebar>
@@ -44,18 +44,18 @@ const BasicSidebarComponent = () => (
       </LinkListItem>
     </LinkList>
   </Sidebar>
-);
+)
 
-storiesOf("Componenti/Sidebar.Basic Sidebar", module)
+storiesOf('Componenti/Sidebar.Basic Sidebar', module)
   .addDecorator(withA11y)
   .add(
-    "Basic Sidebar",
+    'Basic Sidebar',
     withInfo({
       text: BasicSidebar,
       propTables: [Sidebar],
       propTablesExclude: [LinkList, LinkListItem]
     })(BasicSidebarComponent)
-  );
+  )
 
 const ConIconaSidebarComponent = () => (
   <Sidebar>
@@ -103,18 +103,18 @@ const ConIconaSidebarComponent = () => (
       </LinkListItem>
     </LinkList>
   </Sidebar>
-);
+)
 
-storiesOf("Componenti/Sidebar.Basic Sidebar", module)
+storiesOf('Componenti/Sidebar.Basic Sidebar', module)
   .addDecorator(withA11y)
   .add(
-    "Con icona",
+    'Con icona',
     withInfo({
       text: ConIcona,
       propTables: [Sidebar],
       propTablesExclude: [LinkList, LinkListItem]
     })(ConIconaSidebarComponent)
-  );
+  )
 
 const ConLineaDestraSidebarComponent = () => (
   <Sidebar right>
@@ -146,18 +146,18 @@ const ConLineaDestraSidebarComponent = () => (
       </LinkListItem>
     </LinkList>
   </Sidebar>
-);
+)
 
-storiesOf("Componenti/Sidebar.Basic Sidebar", module)
+storiesOf('Componenti/Sidebar.Basic Sidebar', module)
   .addDecorator(withA11y)
   .add(
-    "Con linea a destra",
+    'Con linea a destra',
     withInfo({
       text: ConLineaDestra,
       propTables: [Sidebar],
       propTablesExclude: [LinkList, LinkListItem]
     })(ConLineaDestraSidebarComponent)
-  );
+  )
 
 const ConLineaSinistraSidebarComponent = () => (
   <Sidebar left>
@@ -189,28 +189,28 @@ const ConLineaSinistraSidebarComponent = () => (
       </LinkListItem>
     </LinkList>
   </Sidebar>
-);
+)
 
-storiesOf("Componenti/Sidebar.Basic Sidebar", module)
+storiesOf('Componenti/Sidebar.Basic Sidebar', module)
   .addDecorator(withA11y)
   .add(
-    "Con linea a sinistra",
+    'Con linea a sinistra',
     withInfo({
       text: ConLineaSinistra,
       propTables: [Sidebar],
       propTablesExclude: [LinkList, LinkListItem]
     })(ConLineaSinistraSidebarComponent)
-  );
-storiesOf("Componenti/Sidebar", module)
+  )
+storiesOf('Componenti/Sidebar', module)
   .addDecorator(withA11y)
   .add(
-    "Annidata",
+    'Annidata',
     withInfo({
       text: Annidata,
       propTables: [Sidebar],
       propTablesExclude: [LinkList, LinkListItem]
     })(() => <SidebarCollapseExample />)
-  );
+  )
 
 const ScuraSidebarComponent = () => (
   <Sidebar dark>
@@ -242,15 +242,15 @@ const ScuraSidebarComponent = () => (
       </LinkListItem>
     </LinkList>
   </Sidebar>
-);
+)
 
-storiesOf("Componenti/Sidebar", module)
+storiesOf('Componenti/Sidebar', module)
   .addDecorator(withA11y)
   .add(
-    "Sidebar versione scura",
+    'Sidebar versione scura',
     withInfo({
       text: ScuraSidebar,
       propTables: [Sidebar],
       propTablesExclude: [LinkList, LinkListItem]
     })(ScuraSidebarComponent)
-  );
+  )

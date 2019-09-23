@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import PropTypes from "prop-types";
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
 
 class ComponenteMenuInline extends React.Component {
   render() {
@@ -15,43 +15,38 @@ class ComponenteMenuInline extends React.Component {
           </div>
         </nav>
       </Fragment>
-    );
+    )
   }
 }
 
-export default ComponenteMenuInline;
+export default ComponenteMenuInline
 
 class ComponenteMenuList extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  state = { isNavOpen: false };
+  state = { isNavOpen: false }
 
   onNavScrollToggle = e => {
-    e.preventDefault();
+    e.preventDefault()
     this.setState(prevState => ({
       ...prevState,
       isNavOpen: !prevState.isNavOpen
-    }));
-  };
+    }))
+  }
 
   render() {
-    const collapseN = this.props.collapseN;
+    const collapseN = this.props.collapseN
     return (
       <li>
         <a
           className={
             this.state.isNavOpen
-              ? "list-item large medium right-icon"
-              : "list-item large medium right-icon collapsed"
+              ? 'list-item large medium right-icon'
+              : 'list-item large medium right-icon collapsed'
           }
           href={`#collapse${collapseN}`}
           data-toggle="collapse"
           aria-expanded="false"
           aria-controls="collapseOne"
-          onClick={e => this.onNavScrollToggle(e)}
-        >
+          onClick={e => this.onNavScrollToggle(e)}>
           <span>Link list 1</span>
           <svg className="icon icon-primary icon-sm">
             <use xlinkHref="/svg/sprite.svg#it-expand"></use>
@@ -60,11 +55,10 @@ class ComponenteMenuList extends React.Component {
         <ul
           className={
             this.state.isNavOpen
-              ? "link-sublist collapse show"
-              : "link-sublist collapse"
+              ? 'link-sublist collapse show'
+              : 'link-sublist collapse'
           }
-          id="collapseOne"
-        >
+          id="collapseOne">
           <li>
             <a className="list-item" href="#">
               <span>Link list 1</span>
@@ -82,10 +76,10 @@ class ComponenteMenuList extends React.Component {
           </li>
         </ul>
       </li>
-    );
+    )
   }
 }
 
 ComponenteMenuList.propTypes = {
   collapseN: PropTypes.string
-};
+}

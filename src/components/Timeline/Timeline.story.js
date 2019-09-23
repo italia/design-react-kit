@@ -1,12 +1,12 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import Timeline from "./Timeline";
-import TimelineContent from "./TimelineContent";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
+import Timeline from './Timeline'
+import TimelineContent from './TimelineContent'
 
-storiesOf("Timeline", module).add(
-  "Default",
-  withInfo("Default")(() => (
+storiesOf('Timeline', module).add(
+  'Default',
+  withInfo('Default')(() => (
     <div className="u-padding-all-xxl u-background-grey-15 u-sizeFull">
       <Timeline title="et" background="u-background-95" color="u-color-white">
         <TimelineContent color="u-color-black" background="u-background-white">
@@ -23,8 +23,7 @@ storiesOf("Timeline", module).add(
       <Timeline
         title={<span className="u-textWeight-700">minima</span>}
         background="u-background-95"
-        color="u-color-white"
-      >
+        color="u-color-white">
         <TimelineContent color="u-color-black" background="u-background-white">
           <h2 className="u-text-r-xs u-padding-r-bottom">rerum at labore</h2>
           <p className="u-text-p u-textSecondary">
@@ -49,4 +48,4 @@ storiesOf("Timeline", module).add(
       </Timeline>
     </div>
   ))
-);
+)

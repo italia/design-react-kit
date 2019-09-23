@@ -1,13 +1,13 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
-import { BottomNav, BottomNavItem } from "../../src";
+import { BottomNav, BottomNavItem } from '../../src'
 
-import Esempi from "./docs/Esempi.md";
-import Badge from "./docs/Badge.md";
-import Alert from "./docs/Alert.md";
+import Esempi from './docs/Esempi.md'
+import Badge from './docs/Badge.md'
+import Alert from './docs/Alert.md'
 
 const EsempiComponent = () => (
   <BottomNav>
@@ -15,7 +15,7 @@ const EsempiComponent = () => (
     <BottomNavItem label="immagini" iconName="it-camera" />
     <BottomNavItem label="documenti" iconName="it-file" />
   </BottomNav>
-);
+)
 
 const BadgeComponent = () => (
   <BottomNav>
@@ -36,7 +36,7 @@ const BadgeComponent = () => (
     <BottomNavItem label="preferiti" iconName="it-star-outline" />
     <BottomNavItem label="preferenze" iconName="it-settings" />
   </BottomNav>
-);
+)
 
 const AlertComponent = () => (
   <BottomNav>
@@ -55,28 +55,28 @@ const AlertComponent = () => (
     <BottomNavItem label="preferiti" iconName="it-star-outline" />
     <BottomNavItem label="preferenze" iconName="it-settings" />
   </BottomNav>
-);
+)
 
-storiesOf("Componenti/BottomNav", module)
+storiesOf('Componenti/BottomNav', module)
   .addDecorator(withA11y)
   .add(
-    "Esempi",
+    'Esempi',
     withInfo({
       text: Esempi,
       propTables: [BottomNav, BottomNavItem]
     })(EsempiComponent)
   )
   .add(
-    "Badge",
+    'Badge',
     withInfo({
       text: Badge,
       propTables: [BottomNav, BottomNavItem]
     })(BadgeComponent)
   )
   .add(
-    "Alert",
+    'Alert',
     withInfo({
       text: Alert,
       propTables: [BottomNav, BottomNavItem]
     })(AlertComponent)
-  );
+  )

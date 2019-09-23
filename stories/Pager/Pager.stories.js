@@ -1,8 +1,8 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withKnobs, select, boolean } from "@storybook/addon-knobs/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withKnobs, select, boolean } from '@storybook/addon-knobs/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
 import {
   Pager,
@@ -13,20 +13,20 @@ import {
   FormGroup,
   Input,
   Label
-} from "../../src";
-import PageChangerExample from "./PageChangerExample";
+} from '../../src'
+import PageChangerExample from './PageChangerExample'
 
-import Esempi from "./docs/Esempi.md";
-import StatoDisabilitatoAttivo from "./docs/StatoDisabilitatoAttivo.md";
-import Allineamento from "./docs/Allineamento.md";
-import Responsive from "./docs/Responsive.md";
-import More from "./docs/More.md";
-import Changer from "./docs/Changer.md";
-import Jump from "./docs/Jump.md";
-import Simple from "./docs/Simple.md";
-import Link from "./docs/Link.md";
-import Total from "./docs/Total.md";
-import EsempiInterattivi from "./docs/EsempiInterattivi.md";
+import Esempi from './docs/Esempi.md'
+import StatoDisabilitatoAttivo from './docs/StatoDisabilitatoAttivo.md'
+import Allineamento from './docs/Allineamento.md'
+import Responsive from './docs/Responsive.md'
+import More from './docs/More.md'
+import Changer from './docs/Changer.md'
+import Jump from './docs/Jump.md'
+import Simple from './docs/Simple.md'
+import Link from './docs/Link.md'
+import Total from './docs/Total.md'
+import EsempiInterattivi from './docs/EsempiInterattivi.md'
 
 const EsempiComponent = () => (
   <Pager>
@@ -52,7 +52,7 @@ const EsempiComponent = () => (
       </PagerItem>
     </PagerList>
   </Pager>
-);
+)
 
 const StatoDisabilitatoAttivoComponent = () => (
   <Pager>
@@ -80,7 +80,7 @@ const StatoDisabilitatoAttivoComponent = () => (
       </PagerItem>
     </PagerList>
   </Pager>
-);
+)
 
 const AllineamentoComponent = () => (
   <section>
@@ -136,7 +136,7 @@ const AllineamentoComponent = () => (
       </PagerList>
     </Pager>
   </section>
-);
+)
 
 const ResponsiveComponent = () => (
   <Pager className="mb-3">
@@ -170,7 +170,7 @@ const ResponsiveComponent = () => (
       </PagerItem>
     </PagerList>
   </Pager>
-);
+)
 
 const MoreComponent = () => (
   <Pager className="mb-3">
@@ -216,7 +216,7 @@ const MoreComponent = () => (
       </PagerItem>
     </PagerList>
   </Pager>
-);
+)
 
 const ChangerComponent = () => (
   <Pager className="mb-3">
@@ -263,7 +263,7 @@ const ChangerComponent = () => (
     </PagerList>
     <PageChangerExample />
   </Pager>
-);
+)
 
 const PageJumper = () => (
   <Form>
@@ -277,7 +277,7 @@ const PageJumper = () => (
       <Label for="jumpToPage">Vai a ...</Label>
     </FormGroup>
   </Form>
-);
+)
 
 const JumpComponent = () => (
   <Pager className="mb-3">
@@ -324,7 +324,7 @@ const JumpComponent = () => (
     </PagerList>
     <PageJumper />
   </Pager>
-);
+)
 
 const SimpleComponent = () => (
   <Pager className="mb-3">
@@ -350,7 +350,7 @@ const SimpleComponent = () => (
       </PagerItem>
     </PagerList>
   </Pager>
-);
+)
 
 const LinkComponent = () => (
   <Pager className="mb-3">
@@ -396,7 +396,7 @@ const LinkComponent = () => (
       </PagerItem>
     </PagerList>
   </Pager>
-);
+)
 
 const TotalComponent = () => (
   <Pager className="pagination-total mb-3">
@@ -445,19 +445,19 @@ const TotalComponent = () => (
       <span className="sr-only">Pagina</span> 24 di 50
     </p>
   </Pager>
-);
+)
 
 const EsempiInterattiviComponent = () => {
-  const active = boolean("Attivo", false);
-  const disabled = boolean("Disabilitato", false);
-  const sizes = ["sm", "", "lg"];
-  const size = select("Dimensioni", sizes, sizes[0]);
+  const active = boolean('Attivo', false)
+  const disabled = boolean('Disabilitato', false)
+  const sizes = ['sm', '', 'lg']
+  const size = select('Dimensioni', sizes, sizes[0])
 
-  let current = {};
+  let current = {}
   if (active) {
     current = {
-      "aria-current": "page"
-    };
+      'aria-current': 'page'
+    }
   }
   return (
     <Pager size={size}>
@@ -479,81 +479,81 @@ const EsempiInterattiviComponent = () => {
         </PagerItem>
       </PagerList>
     </Pager>
-  );
-};
+  )
+}
 
-storiesOf("Componenti/Pager", module)
+storiesOf('Componenti/Pager', module)
   .addDecorator(withA11y)
   .add(
-    "Esempi",
+    'Esempi',
     withInfo({
       text: Esempi
     })(EsempiComponent)
   )
   .add(
-    "Stato disabilitato e attivo",
+    'Stato disabilitato e attivo',
     withInfo({
       text: StatoDisabilitatoAttivo
     })(StatoDisabilitatoAttivoComponent)
   )
   .add(
-    "Allineamento",
+    'Allineamento',
     withInfo({
       text: Allineamento
     })(AllineamentoComponent)
   )
-  .addParameters({ viewport: { defaultViewport: "iphone6" } })
+  .addParameters({ viewport: { defaultViewport: 'iphone6' } })
   .add(
-    "Responsive",
+    'Responsive',
     withInfo({
       text: Responsive
     })(ResponsiveComponent)
   )
   .addDecorator(withKnobs)
   .add(
-    "Esempi interattivi",
+    'Esempi interattivi',
     withInfo({
       text: EsempiInterattivi
     })(EsempiInterattiviComponent)
-  );
+  )
 
-storiesOf("Componenti/Pager/Funzioni aggiuntive", module)
+storiesOf('Componenti/Pager/Funzioni aggiuntive', module)
   .addDecorator(withA11y)
   .add(
-    "More",
+    'More',
     withInfo({
       text: More
     })(MoreComponent)
   )
   .add(
-    "Page changer",
+    'Page changer',
     withInfo({
       text: Changer,
       propTablesExclude: [PageChangerExample]
     })(ChangerComponent)
   )
   .add(
-    "Jump to page",
+    'Jump to page',
     withInfo({
       text: Jump,
       propTablesExclude: [Form, FormGroup, Input, Label]
     })(JumpComponent)
   )
   .add(
-    "Simple mode",
+    'Simple mode',
     withInfo({
       text: Simple
     })(SimpleComponent)
   )
   .add(
-    "Link testuali",
+    'Link testuali',
     withInfo({
       text: Link
     })(LinkComponent)
   )
   .add(
-    "Total number",
+    'Total number',
     withInfo({
       text: Total
     })(TotalComponent)
-  );
+  )

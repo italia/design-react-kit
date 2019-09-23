@@ -1,14 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
-import {
-  Row,
-  Col,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  FormText
-} from "../../../src";
+import { Row, Col, Form, FormGroup, Label, Input, FormText } from '../../../src'
 
 class RadioGroupsExample extends Component {
   render() {
@@ -78,8 +70,8 @@ class RadioGroupsExample extends Component {
           </fieldset>
         </Col>
       </Row>
-    );
+    )
   }
 }
 
-export default RadioGroupsExample;
+export default RadioGroupsExample
