@@ -35,7 +35,7 @@ export default class HeaderToggler extends PureComponent {
             "it-opener d-lg-none": HeaderType === SLIM,
             "custom-navbar-toggler": HeaderType === NAVBAR
         }, className);
-        return <NavbarToggler className={classes} {...attributes} tag={tag || defaultTag} type={type || defaultType} />
+        return <NavbarToggler className={classes} {...attributes} tag={tag || defaultTag} type={type || defaultType} href="#"/>
     }
 }
 
