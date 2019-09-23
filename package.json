@@ -54,6 +54,11 @@
         "eslint-plugin-jsx-a11y": "^6.2.3",
         "eslint-plugin-prettier": "^3.1.1",
         "eslint-plugin-react": "^7.14.3",
+        "eslint-config-standard": "^14.1.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-node": "^10.0.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.1",
         "husky": "^3.0.5",
         "react-scripts": "^3.1.1",
         "react-scrollspy": "^3.3.5",
@@ -94,11 +99,6 @@
         }
     },
     "dependencies": {
-        "eslint-config-standard": "^14.1.0",
-        "eslint-plugin-import": "^2.18.2",
-        "eslint-plugin-node": "^10.0.0",
-        "eslint-plugin-promise": "^4.2.1",
-        "eslint-plugin-standard": "^4.0.1",
         "prop-types": "^15.7.2",
         "react-select": "^3.0.4",
         "react-transition-group": "^2.3.1",
