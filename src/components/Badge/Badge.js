@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Badge as BadgeReact } from 'reactstrap'
+import React from "react";
+import PropTypes from "prop-types";
+import { Badge as BadgeReact } from "reactstrap";
 
 const propTypes = {
   color: PropTypes.string,
@@ -9,20 +9,20 @@ const propTypes = {
   children: PropTypes.node,
   cssModule: PropTypes.object,
   className: PropTypes.string
-}
+};
 
 const defaultProps = {
-  color: 'secondary',
+  color: "secondary",
   pill: false,
-  tag: 'span'
-}
+  tag: "span"
+};
 
 const Badge = props => {
-  const { children } = props
-  return <BadgeReact {...props}>{children}</BadgeReact>
-}
+  const { children } = props;
+  return <BadgeReact {...props}>{children}</BadgeReact>;
+};
 
-Badge.propTypes = propTypes
-Badge.defaultProps = defaultProps
+Badge.propTypes = propTypes;
+Badge.defaultProps = defaultProps;
 
-export default Badge
+export default Badge;

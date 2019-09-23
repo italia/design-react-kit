@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import Transition from 'react-transition-group/Transition'
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import Transition from "react-transition-group/Transition";
 
-import { Util, Button } from 'reactstrap'
+import { Util, Button } from "reactstrap";
 
 const {
   TransitionTimeouts,
@@ -10,7 +10,7 @@ const {
   TransitionStatuses,
   pick,
   omit
-} = Util
+} = Util;
 
 const propTypes = {
   ...Transition.propTypes, // eslint-disable-line react/forbid-foreign-prop-types
@@ -22,25 +22,25 @@ const propTypes = {
   className: PropTypes.string,
   onClose: PropTypes.func,
   isOpen: PropTypes.bool
-}
+};
 
 const defaultProps = {
   ...Transition.defaultProps,
   timeout: TransitionTimeouts.Collapse,
-  tag: 'div'
-}
+  tag: "div"
+};
 
 const transitionStatusToClassHash = {
-  [TransitionStatuses.ENTERING]: 'navbar-collapsable d-block',
-  [TransitionStatuses.ENTERED]: 'navbar-collapsable d-block expanded',
-  [TransitionStatuses.EXITING]: 'navbar-collapsable d-block',
-  [TransitionStatuses.EXITED]: 'navbar-collapsable'
-}
+  [TransitionStatuses.ENTERING]: "navbar-collapsable d-block",
+  [TransitionStatuses.ENTERED]: "navbar-collapsable d-block expanded",
+  [TransitionStatuses.EXITING]: "navbar-collapsable d-block",
+  [TransitionStatuses.EXITED]: "navbar-collapsable"
+};
 
 const defaultStyle = {
-  transition: '400ms ease-in-out',
-  transitionProperty: 'opacity'
-}
+  transition: "400ms ease-in-out",
+  transitionProperty: "opacity"
+};
 
 const transitionStyles = {
   entering: {
@@ -52,30 +52,24 @@ const transitionStyles = {
   exiting: {
     opacity: 0
   }
-}
+};
 
-function getTransitionClass (status) {
-  return transitionStatusToClassHash[status] || ''
+function getTransitionClass(status) {
+  return transitionStatusToClassHash[status] || "";
 }
 
 export default class Offcanvas extends Component {
-  render () {
-    const {
-      tag: Tag,
-      children,
-      isOpen,
-      onClose,
-      ...attributes
-    } = this.props
+  render() {
+    const { tag: Tag, children, isOpen, onClose, ...attributes } = this.props;
 
-    const transitionProps = pick(attributes, TransitionPropTypeKeys)
-    const childProps = omit(attributes, TransitionPropTypeKeys)
+    const transitionProps = pick(attributes, TransitionPropTypeKeys);
+    const childProps = omit(attributes, TransitionPropTypeKeys);
 
     return (
       <Transition {...transitionProps} in={isOpen}>
-        {(status) => {
-          const transitionClass = getTransitionClass(status)
-          const currentStyles = transitionStyles[status]
+        {status => {
+          const transitionClass = getTransitionClass(status);
+          const currentStyles = transitionStyles[status];
 
           return (
             <div
@@ -87,21 +81,22 @@ export default class Offcanvas extends Component {
               }}
               {...childProps}
             >
-              <div className='close-div' onClick={onClose}>
-                <Button className='close-menu' color=''>
-                  <span className='it-close' />close
+              <div className="close-div" onClick={onClose}>
+                <Button className="close-menu" color="">
+                  <span className="it-close" />
+                  close
                 </Button>
               </div>
-              <div className='menu-wrapper'>
+              <div className="menu-wrapper">
                 <Tag>{children}</Tag>
               </div>
             </div>
-          )
+          );
         }}
       </Transition>
-    )
+    );
   }
 }
 
-Offcanvas.propTypes = propTypes
-Offcanvas.defaultProps = defaultProps
+Offcanvas.propTypes = propTypes;
+Offcanvas.defaultProps = defaultProps;

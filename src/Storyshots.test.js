@@ -2,8 +2,8 @@
 // Current config is inherited from react-scripts
 import initStoryshots, {
   multiSnapshotWithOptions
-} from '@storybook/addon-storyshots'
+} from "@storybook/addon-storyshots";
 
 initStoryshots({
   test: multiSnapshotWithOptions({})
-})
+});

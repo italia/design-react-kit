@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classnames from 'classnames';
-import $ from 'jquery';
+import React from "react";
+import PropTypes from "prop-types";
+import classnames from "classnames";
+import $ from "jquery";
 
 class Table extends React.Component {
   static propTypes = {
@@ -11,16 +11,16 @@ class Table extends React.Component {
     compact: PropTypes.bool,
     striped: PropTypes.bool,
     hoverable: PropTypes.bool,
-    responsive: PropTypes.bool,
+    responsive: PropTypes.bool
   };
 
   defaultProps = {
-    bordered: true,
+    bordered: true
   };
 
   componentDidMount() {
     if (this.props.responsive) {
-      $(this.table).trigger('enhance.tablesaw');
+      $(this.table).trigger("enhance.tablesaw");
     }
   }
 
@@ -44,16 +44,22 @@ class Table extends React.Component {
     const styles = classnames(
       {
         Table: true,
-        'Table--withBorder': bordered,
-        'Table--compact': compact,
-        'Table--striped': striped,
-        'Table--hover': hoverable,
+        "Table--withBorder": bordered,
+        "Table--compact": compact,
+        "Table--striped": striped,
+        "Table--hover": hoverable
       },
-      className,
+      className
     );
 
     return (
-      <table ref={(el) => { this.table = el; }} className={styles} {...rest}>
+      <table
+        ref={el => {
+          this.table = el;
+        }}
+        className={styles}
+        {...rest}
+      >
         {children}
       </table>
     );

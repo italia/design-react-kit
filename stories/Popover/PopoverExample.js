@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Button,
-  Popover,
-  PopoverHeader,
-  PopoverBody
-} from "../../src";
+import { Button, Popover, PopoverHeader, PopoverBody } from "../../src";
 
 class PopoverExample extends React.Component {
   state = {
@@ -36,8 +31,8 @@ class PopoverExample extends React.Component {
         >
           <PopoverHeader>Titolo del popover</PopoverHeader>
           <PopoverBody>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Nunc vel finibus augue.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
+            finibus augue.
           </PopoverBody>
         </Popover>
       </div>

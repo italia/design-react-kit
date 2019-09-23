@@ -1,45 +1,45 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import Transition from 'react-transition-group/Transition';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import classNames from "classnames";
+import Transition from "react-transition-group/Transition";
 
-import { Util } from 'reactstrap';
+import { Util } from "reactstrap";
 
 const {
   TransitionTimeouts,
   TransitionPropTypeKeys,
   TransitionStatuses,
   pick,
-  omit,
+  omit
 } = Util;
 
 const propTypes = {
   ...Transition.propTypes, // eslint-disable-line react/forbid-foreign-prop-types
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
+    PropTypes.node
   ]),
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
   active: PropTypes.bool,
-  onToggle: PropTypes.func,
+  onToggle: PropTypes.func
 };
 
 const defaultProps = {
   ...Transition.defaultProps,
   timeout: TransitionTimeouts.Collapse,
-  tag: 'div',
+  tag: "div"
 };
 
 const transitionStatusToClassHash = {
-  [TransitionStatuses.ENTERING]: 'collapsing',
-  [TransitionStatuses.ENTERED]: 'collapse show',
-  [TransitionStatuses.EXITING]: 'collapsing',
-  [TransitionStatuses.EXITED]: 'collapse',
+  [TransitionStatuses.ENTERING]: "collapsing",
+  [TransitionStatuses.ENTERED]: "collapse show",
+  [TransitionStatuses.EXITING]: "collapsing",
+  [TransitionStatuses.EXITED]: "collapse"
 };
 
 function getTransitionClass(status) {
-  return transitionStatusToClassHash[status] || 'collapse';
+  return transitionStatusToClassHash[status] || "collapse";
 }
 
 function getHeight(node) {
@@ -48,7 +48,7 @@ function getHeight(node) {
 
 export default class AccordionBody extends Component {
   state = {
-    height: null,
+    height: null
   };
 
   onEntering = (node, isAppearing) => {
@@ -61,30 +61,24 @@ export default class AccordionBody extends Component {
     this.props.onEntered(node, isAppearing);
   };
 
-  onExit = (node) => {
+  onExit = node => {
     this.setState({ height: getHeight(node) });
     this.props.onExit(node);
   };
 
-  onExiting = (node) => {
+  onExiting = node => {
     // getting this variable triggers a reflow
     this.setState({ height: 0 });
     this.props.onExiting(node);
   };
 
-  onExited = (node) => {
+  onExited = node => {
     this.setState({ height: null });
     this.props.onExited(node);
   };
 
   render() {
-    const {
-      className,
-      tag: Tag,
-      active,
-      children,
-      ...attributes
-    } = this.props;
+    const { className, tag: Tag, active, children, ...attributes } = this.props;
     const { height } = this.state;
 
     const transitionProps = pick(attributes, TransitionPropTypeKeys);
@@ -100,12 +94,9 @@ export default class AccordionBody extends Component {
         onExiting={this.onExiting}
         onExited={this.onExited}
       >
-        {(status) => {
+        {status => {
           const transitionClass = getTransitionClass(status);
-          const classes = classNames(
-            className,
-            transitionClass,
-          );
+          const classes = classNames(className, transitionClass);
 
           const style = height === null ? null : { height };
 
@@ -115,9 +106,7 @@ export default class AccordionBody extends Component {
               style={{ ...childProps.style, ...style }}
               {...childProps}
             >
-              <div className="collapse-body">
-                {children}
-              </div>
+              <div className="collapse-body">{children}</div>
             </Tag>
           );
         }}

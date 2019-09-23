@@ -1,30 +1,28 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import {Card as CardBase} from 'reactstrap';
+import React from "react";
+import PropTypes from "prop-types";
+import classNames from "classnames";
+import { Card as CardBase } from "reactstrap";
 
 const propTypes = {
   // eslint-disable-next-line react/forbid-foreign-prop-types
   ...CardBase.propTypes,
   teaser: PropTypes.bool,
   spacing: PropTypes.bool
-}
+};
 
-const Card = (props) => {
-  const {
-    teaser, spacing, ...attributes
-  } = props
-  const wrapperClasses = classNames('card-wrapper', {
-    'card-space': spacing,
-    'card-teaser-wrapper': teaser
+const Card = props => {
+  const { teaser, spacing, ...attributes } = props;
+  const wrapperClasses = classNames("card-wrapper", {
+    "card-space": spacing,
+    "card-teaser-wrapper": teaser
   });
   const cardClasses = classNames(attributes.className, {
-    'card-teaser': teaser,
+    "card-teaser": teaser
   });
 
   return (
     <div className={wrapperClasses}>
-      <CardBase {...attributes} className={cardClasses}/>
+      <CardBase {...attributes} className={cardClasses} />
     </div>
   );
 };

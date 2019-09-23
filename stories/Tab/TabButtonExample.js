@@ -107,6 +107,6 @@ class TabButtonExample extends React.Component {
 
 TabButtonExample.propTypes = {
   vertical: PropTypes.bool
-}
+};
 
 export default TabButtonExample;
