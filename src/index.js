@@ -102,7 +102,9 @@ export { default as HeaderContent } from './components/Header/HeaderContent'
 export { default as HeaderLinkZone } from './components/Header/HeaderLinkZone'
 export { default as HeaderRightZone } from './components/Header/HeaderRightZone'
 export { default as HeaderSearch } from './components/Header/HeaderSearch'
-export { default as HeaderSocialsZone } from './components/Header/HeaderSocialsZone'
+export {
+  default as HeaderSocialsZone
+} from './components/Header/HeaderSocialsZone'
 export { default as HeaderToggler } from './components/Header/HeaderToggler'
 export { default as Hero } from './components/Hero/Hero'
 export { default as Icon } from './components/Icon/Icon'

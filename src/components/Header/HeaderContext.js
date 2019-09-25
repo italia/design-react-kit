@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 /**
  * HeaderContext
@@ -7,8 +7,8 @@ import React from 'react';
  * }
  */
 
- export default React.createContext({});
+export default React.createContext({})
 
- export const SLIM = 'slim';
- export const CENTER = 'center';
- export const NAVBAR = 'navbar';
+export const SLIM = 'slim'
+export const CENTER = 'center'
+export const NAVBAR = 'navbar'
