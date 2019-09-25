@@ -21,7 +21,7 @@ const CardReadMore = props => {
   return (
     <a className={classes} {...attributes}>
       <span className="text">{text}</span>
-      <Icon icon={iconName} />
+      {iconName && <Icon icon={iconName} />}
     </a>
   )
 }
