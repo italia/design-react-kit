@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Button,
   ButtonGroup,
@@ -6,18 +6,18 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem
-} from "../../src";
+} from '../../src'
 
 class ButtonGroupDropdownExample extends React.Component {
   state = {
     dropdownOpen: false
-  };
+  }
 
   toggle = () => {
     this.setState({
       dropdownOpen: !this.state.dropdownOpen
-    });
-  };
+    })
+  }
 
   render() {
     return (
@@ -32,8 +32,8 @@ class ButtonGroupDropdownExample extends React.Component {
           </DropdownMenu>
         </ButtonDropdown>
       </ButtonGroup>
-    );
+    )
   }
 }
 
-export default ButtonGroupDropdownExample;
+export default ButtonGroupDropdownExample

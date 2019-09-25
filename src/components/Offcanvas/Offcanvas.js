@@ -54,26 +54,20 @@ const transitionStyles = {
   }
 }
 
-function getTransitionClass (status) {
+function getTransitionClass(status) {
   return transitionStatusToClassHash[status] || ''
 }
 
 export default class Offcanvas extends Component {
-  render () {
-    const {
-      tag: Tag,
-      children,
-      isOpen,
-      onClose,
-      ...attributes
-    } = this.props
+  render() {
+    const { tag: Tag, children, isOpen, onClose, ...attributes } = this.props
 
     const transitionProps = pick(attributes, TransitionPropTypeKeys)
     const childProps = omit(attributes, TransitionPropTypeKeys)
 
     return (
       <Transition {...transitionProps} in={isOpen}>
-        {(status) => {
+        {status => {
           const transitionClass = getTransitionClass(status)
           const currentStyles = transitionStyles[status]
 
@@ -85,14 +79,14 @@ export default class Offcanvas extends Component {
                 ...childProps.style,
                 ...currentStyles
               }}
-              {...childProps}
-            >
-              <div className='close-div' onClick={onClose}>
-                <Button className='close-menu' color=''>
-                  <span className='it-close' />close
+              {...childProps}>
+              <div className="close-div" onClick={onClose}>
+                <Button className="close-menu" color="">
+                  <span className="it-close" />
+                  close
                 </Button>
               </div>
-              <div className='menu-wrapper'>
+              <div className="menu-wrapper">
                 <Tag>{children}</Tag>
               </div>
             </div>

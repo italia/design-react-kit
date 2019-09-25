@@ -11,8 +11,11 @@ import Esempi from './docs/Esempi.md'
 
 storiesOf('Componenti/Skiplink', module)
   .addDecorator(withA11y)
-  .add('Esempi', withInfo({
-    text: Esempi,
-    propTables: [Skiplink, SkiplinkItem],
-    propTablesExclude: [SkipLinkExample]
-  })(() => <SkipLinkExample />))
+  .add(
+    'Esempi',
+    withInfo({
+      text: Esempi,
+      propTables: [Skiplink, SkiplinkItem],
+      propTablesExclude: [SkipLinkExample]
+    })(() => <SkipLinkExample />)
+  )

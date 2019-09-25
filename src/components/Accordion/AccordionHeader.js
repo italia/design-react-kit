@@ -13,10 +13,8 @@ const defaultProps = {
   tag: 'button'
 }
 
-export default function AccordionHeader (props) {
-  const {
-    className, tag: Tag, active, onToggle, ...attributes
-  } = props
+export default function AccordionHeader(props) {
+  const { className, tag: Tag, active, onToggle, ...attributes } = props
   const classes = classNames('collapse-header')
   const toggleClasses = classNames(className, {
     collapsed: active
@@ -25,7 +23,7 @@ export default function AccordionHeader (props) {
   return (
     <div className={classes}>
       <Tag
-        data-toggle='collapse'
+        data-toggle="collapse"
         aria-expanded={active ? 'true' : 'false'}
         className={toggleClasses}
         onClick={onToggle}

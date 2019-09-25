@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Nav,
   NavItem,
@@ -8,65 +8,62 @@ import {
   Container,
   Row,
   Col
-} from "../../src";
-import PropTypes from "prop-types";
+} from '../../src'
+import PropTypes from 'prop-types'
 
 class TabButtonExample extends React.Component {
   state = {
-    activeTab: "1"
-  };
+    activeTab: '1'
+  }
 
   toggle = tab => {
     if (this.state.activeTab !== tab) {
       this.setState({
         activeTab: tab
-      });
+      })
     }
-  };
+  }
 
   render() {
-    const { vertical } = this.props;
+    const { vertical } = this.props
     return (
       <Container className="m-3">
         <Row>
-          <Col sm={vertical ? "3" : "12"}>
+          <Col sm={vertical ? '3' : '12'}>
             <Nav pills className="mb-3" vertical={vertical}>
               <NavItem>
                 <NavLink
                   href="#"
-                  active={this.state.activeTab === "1"}
+                  active={this.state.activeTab === '1'}
                   onClick={() => {
-                    this.toggle("1");
-                  }}
-                >
+                    this.toggle('1')
+                  }}>
                   Tab 1
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
                   href="#"
-                  active={this.state.activeTab === "2"}
+                  active={this.state.activeTab === '2'}
                   onClick={() => {
-                    this.toggle("2");
-                  }}
-                >
+                    this.toggle('2')
+                  }}>
                   Tab 2
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
                   href="#"
-                  active={this.state.activeTab === "3"}
+                  active={this.state.activeTab === '3'}
                   onClick={() => {
-                    this.toggle("3");
-                  }}
-                >
+                    this.toggle('3')
+                  }}>
                   Tab 3
                 </NavLink>
               </NavItem>
             </Nav>
           </Col>
-          <Col sm={vertical ? "9" : "12"}>
+          <Col sm={vertical ? '9' : '12'}>
             <TabContent activeTab={this.state.activeTab}>
               <TabPane tabId="1" className="p-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -101,7 +98,7 @@ class TabButtonExample extends React.Component {
           </Col>
         </Row>
       </Container>
-    );
+    )
   }
 }
 
@@ -109,4 +106,4 @@ TabButtonExample.propTypes = {
   vertical: PropTypes.bool
 }
 
-export default TabButtonExample;
+export default TabButtonExample

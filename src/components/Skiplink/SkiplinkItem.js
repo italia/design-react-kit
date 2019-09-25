@@ -11,7 +11,7 @@ const defaultProps = {
   tag: 'a'
 }
 
-const SkiplinkItem = (props) => {
+const SkiplinkItem = props => {
   const { className, tag: Tag, ...attributes } = props
 
   const classes = classNames(className, 'sr-only', 'sr-only-focusable')

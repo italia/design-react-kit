@@ -18,7 +18,7 @@ const defaultProps = {
 }
 
 class Progress extends React.Component {
-  render () {
+  render() {
     const {
       className,
       tag: Tag,
@@ -44,19 +44,19 @@ class Progress extends React.Component {
     if (label && value) {
       return (
         <Tag className={wrapperClasses}>
-          <div className='progress-bar-label'>
-            <span className='sr-only'>{this.props.label}</span>
+          <div className="progress-bar-label">
+            <span className="sr-only">{this.props.label}</span>
             {this.props.value + '%'}
           </div>
           <Tag className={secondaryWrapperClasses}>
             <div
               {...attributes}
               className={classes}
-              role='progressbar'
+              role="progressbar"
               style={{ width: this.props.value + '%' }}
               aria-valuenow={this.props.value}
-              aria-valuemin='0'
-              aria-valuemax='100'
+              aria-valuemin="0"
+              aria-valuemax="100"
             />
           </Tag>
         </Tag>
@@ -65,17 +65,17 @@ class Progress extends React.Component {
 
     return (
       <Tag className={secondaryWrapperClasses}>
-        <div className='progress-bar-label'>
-          <span className='sr-only'>{this.props.label}</span>
+        <div className="progress-bar-label">
+          <span className="sr-only">{this.props.label}</span>
         </div>
         <div
           {...attributes}
           className={classes}
-          role='progressbar'
+          role="progressbar"
           style={{ width: this.props.value + '%' }}
           aria-valuenow={this.props.value}
-          aria-valuemin='0'
-          aria-valuemax='100'
+          aria-valuemin="0"
+          aria-valuemax="100"
         />
       </Tag>
     )

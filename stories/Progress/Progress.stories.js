@@ -17,79 +17,79 @@ import EsempiInterattivi from './docs/EsempiInterattivi.md'
 
 const EsempiComponent = () => (
   <div>
-    <div className='mb-3'>
-      <Progress value='0' />
+    <div className="mb-3">
+      <Progress value="0" />
     </div>
-    <div className='mb-3'>
-      <Progress value='25' />
+    <div className="mb-3">
+      <Progress value="25" />
     </div>
-    <div className='mb-3'>
-      <Progress value='50' />
+    <div className="mb-3">
+      <Progress value="50" />
     </div>
-    <div className='mb-3'>
-      <Progress value='75' />
+    <div className="mb-3">
+      <Progress value="75" />
     </div>
-    <div className='mb-3'>
-      <Progress value='100' />
+    <div className="mb-3">
+      <Progress value="100" />
     </div>
   </div>
 )
 
 const EtichetteComponent = () => (
   <div>
-    <Progress value='35' label='progresso' />
+    <Progress value="35" label="progresso" />
   </div>
 )
 
 const ProgressoIndeterminato = () => (
-  <Progress indeterminate label='In elaborazione...' />
+  <Progress indeterminate label="In elaborazione..." />
 )
 
 const ColoriComponent = () => (
   <div>
-    <div className='mb-3'>
-      <Progress value='25' color='success' />
+    <div className="mb-3">
+      <Progress value="25" color="success" />
     </div>
-    <div className='mb-3'>
-      <Progress value='33' color='info' />
+    <div className="mb-3">
+      <Progress value="33" color="info" />
     </div>
-    <div className='mb-3'>
-      <Progress value='50' color='warning' />
+    <div className="mb-3">
+      <Progress value="50" color="warning" />
     </div>
-    <div className='mb-3'>
-      <Progress value='66' color='danger' />
+    <div className="mb-3">
+      <Progress value="66" color="danger" />
     </div>
   </div>
 )
 
 const ButtonProgressComponent = () => (
-  <div className='container'>
-    <div className='row'>
-      <div className='col-12 col-sm-6'>
+  <div className="container">
+    <div className="row">
+      <div className="col-12 col-sm-6">
         <p>
           <strong>Bottone primario</strong>
         </p>
-        <Button color='primary' className='btn-progress' disabled>
-                    Label bottone{' '}
-          <svg className='icon icon-light'>
-            <use xlinkHref='/svg/sprite.svg#it-github' />
+        <Button color="primary" className="btn-progress" disabled>
+          Label bottone{' '}
+          <svg className="icon icon-light">
+            <use xlinkHref="/svg/sprite.svg#it-github" />
           </svg>
           <span>
-            <Progress value='50' />
+            <Progress value="50" />
           </span>
         </Button>
       </div>
-      <div className='col-12 col-sm-6'>
+      <div className="col-12 col-sm-6">
         <p>
           <strong>Bottone secondario</strong>
         </p>
-        <Button color='secondary' className='btn-progress' disabled>
-                    Label bottone{' '}
-          <svg className='icon icon-light'>
-            <use xlinkHref='/svg/sprite.svg#it-github' />
+        <Button color="secondary" className="btn-progress" disabled>
+          Label bottone{' '}
+          <svg className="icon icon-light">
+            <use xlinkHref="/svg/sprite.svg#it-github" />
           </svg>
           <span>
-            <Progress value='50' />
+            <Progress value="50" />
           </span>
         </Button>
       </div>
@@ -111,28 +111,28 @@ const EsempiInterattiviComponent = () => {
 }
 
 const SpinnerComponent = () => (
-  <div className='container'>
-    <div className='row'>
-      <div className='col-6 col-lg-3'>
-        <p className='mb-3'>
+  <div className="container">
+    <div className="row">
+      <div className="col-6 col-lg-3">
+        <p className="mb-3">
           <strong>Spinner standard</strong>
         </p>
         <Spinner />
       </div>
-      <div className='col-6 col-lg-3'>
-        <p className='mb-3'>
+      <div className="col-6 col-lg-3">
+        <p className="mb-3">
           <strong>Spinner Attivo</strong>
         </p>
         <Spinner active />
       </div>
-      <div className='col-6 col-lg-3 mt-3 mt-lg-0'>
-        <p className='mb-3'>
+      <div className="col-6 col-lg-3 mt-3 mt-lg-0">
+        <p className="mb-3">
           <strong>Small</strong>
         </p>
         <Spinner small />
       </div>
-      <div className='col-6 col-lg-3 mt-3 mt-lg-0'>
-        <p className='mb-3'>
+      <div className="col-6 col-lg-3 mt-3 mt-lg-0">
+        <p className="mb-3">
           <strong>Small attivo</strong>
         </p>
         <Spinner small active />
@@ -142,28 +142,28 @@ const SpinnerComponent = () => (
 )
 
 const SpinnerDoppioComponent = () => (
-  <div className='container'>
-    <div className='row'>
-      <div className='col-6 col-lg-3'>
-        <p className='mb-3'>
+  <div className="container">
+    <div className="row">
+      <div className="col-6 col-lg-3">
+        <p className="mb-3">
           <strong>Spinner doppio</strong>
         </p>
         <Spinner double />
       </div>
-      <div className='col-6 col-lg-3'>
-        <p className='mb-3'>
+      <div className="col-6 col-lg-3">
+        <p className="mb-3">
           <strong>Doppio attivo</strong>
         </p>
         <Spinner double active />
       </div>
-      <div className='col-6 col-lg-3 mt-3 mt-lg-0'>
-        <p className='mb-3'>
+      <div className="col-6 col-lg-3 mt-3 mt-lg-0">
+        <p className="mb-3">
           <strong>Doppio small</strong>
         </p>
         <Spinner double small />
       </div>
-      <div className='col-6 col-lg-3 mt-3 mt-lg-0'>
-        <p className='mb-3'>
+      <div className="col-6 col-lg-3 mt-3 mt-lg-0">
+        <p className="mb-3">
           <strong>Doppio small attivo</strong>
         </p>
         <Spinner double small active />

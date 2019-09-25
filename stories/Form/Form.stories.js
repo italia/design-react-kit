@@ -44,59 +44,51 @@ import Validation from './docs/Validation/Validation.md'
 
 const InputTypesExamples = () => (
   <div>
+    <Input type="text" label="Campo di tipo testuale" id="exampleInputText" />
+    <Input type="email" label="Campo di tipo email" id="exampleInputEmail" />
     <Input
-      type='text'
-      label='Campo di tipo testuale'
-      id='exampleInputText'
+      type="number"
+      label="Campo di tipo numerico"
+      id="exampleInputNumber"
     />
+    <Input type="tel" label="Campo di tipo telefono" id="exampleInputTel" />
     <Input
-      type='email'
-      label='Campo di tipo email'
-      id='exampleInputEmail'
-    />
-    <Input
-      type='number'
-      label='Campo di tipo numerico'
-      id='exampleInputNumber'
-    />
-    <Input type='tel' label='Campo di tipo telefono' id='exampleInputTel' />
-    <Input
-      type='time'
-      label='Campo di tipo ora'
-      id='exampleInputTime'
-      min='9:00'
-      max='18:00'
+      type="time"
+      label="Campo di tipo ora"
+      id="exampleInputTime"
+      min="9:00"
+      max="18:00"
     />
   </div>
 )
 
 const InputPlaceHolderLabelComponent = () => (
   <div>
-    <Input label='Etichetta di esempio' id='exampleLabel' />
+    <Input label="Etichetta di esempio" id="exampleLabel" />
     <Input
-      label='Etichetta di esempio'
-      type='text'
-      placeholder='Testo di esempio'
-      id='examplePlaceholder'
+      label="Etichetta di esempio"
+      type="text"
+      placeholder="Testo di esempio"
+      id="examplePlaceholder"
     />
     <Input
-      label='Etichetta di esempio'
-      type='text'
-      placeholder='Testo di esempio'
-      infoText='Ulteriore testo informativo'
-      id='exampleinfoText'
+      label="Etichetta di esempio"
+      type="text"
+      placeholder="Testo di esempio"
+      infoText="Ulteriore testo informativo"
+      id="exampleinfoText"
     />
   </div>
 )
 
 const CheckboxRadioComponent = () => (
-  <Form className='m-3'>
+  <Form className="m-3">
     <fieldset>
       <legend>Checkbox</legend>
       <FormGroup check>
-        <Input id='checkbox1' type='checkbox' />
-        <Label for='checkbox1' check>
-                    Checkbox di esempio
+        <Input id="checkbox1" type="checkbox" />
+        <Label for="checkbox1" check>
+          Checkbox di esempio
         </Label>
       </FormGroup>
     </fieldset>
@@ -105,16 +97,16 @@ const CheckboxRadioComponent = () => (
       <legend>Radio</legend>
 
       <FormGroup check>
-        <Input name='gruppo1' type='radio' id='radio1' defaultChecked />
-        <Label check for='radio1'>
-                    Radio di esempio 1
+        <Input name="gruppo1" type="radio" id="radio1" defaultChecked />
+        <Label check for="radio1">
+          Radio di esempio 1
         </Label>
       </FormGroup>
 
       <FormGroup check>
-        <Input name='gruppo1' type='radio' id='radio2' />
-        <Label check for='radio2'>
-                    Radio di esempio 2
+        <Input name="gruppo1" type="radio" id="radio2" />
+        <Label check for="radio2">
+          Radio di esempio 2
         </Label>
       </FormGroup>
     </fieldset>
@@ -124,17 +116,17 @@ const InlineComponent = () => (
   <section>
     <fieldset>
       <legend>Checkbox</legend>
-      <Form className='m-3'>
+      <Form className="m-3">
         <FormGroup check inline>
-          <Input id='checkbox1' type='checkbox' />
-          <Label for='checkbox1' check>
-                        Checkbox non selezionato
+          <Input id="checkbox1" type="checkbox" />
+          <Label for="checkbox1" check>
+            Checkbox non selezionato
           </Label>
         </FormGroup>
         <FormGroup check inline>
-          <Input id='checkbox2' type='checkbox' defaultChecked />
-          <Label for='checkbox2' check>
-                        Checkbox selezionato
+          <Input id="checkbox2" type="checkbox" defaultChecked />
+          <Label for="checkbox2" check>
+            Checkbox selezionato
           </Label>
         </FormGroup>
       </Form>
@@ -142,22 +134,17 @@ const InlineComponent = () => (
 
     <fieldset>
       <legend>Radio</legend>
-      <Form className='m-3'>
+      <Form className="m-3">
         <FormGroup check inline>
-          <Input
-            name='gruppo1'
-            type='radio'
-            id='radio1'
-            defaultChecked
-          />
-          <Label check for='radio1'>
-                        Opzione 1
+          <Input name="gruppo1" type="radio" id="radio1" defaultChecked />
+          <Label check for="radio1">
+            Opzione 1
           </Label>
         </FormGroup>
         <FormGroup check inline>
-          <Input name='gruppo1' type='radio' id='radio2' />
-          <Label check for='radio2'>
-                        Opzione 2
+          <Input name="gruppo1" type="radio" id="radio2" />
+          <Label check for="radio2">
+            Opzione 2
           </Label>
         </FormGroup>
       </Form>
@@ -168,22 +155,17 @@ const DisabilitatoComponent = () => (
   <section>
     <fieldset>
       <legend>Checkbox</legend>
-      <Form className='m-3'>
+      <Form className="m-3">
         <FormGroup check>
-          <Input disabled id='checkbox1' type='checkbox' />
-          <Label for='checkbox1' check>
-                        Checkbox disabilitato non selezionato
+          <Input disabled id="checkbox1" type="checkbox" />
+          <Label for="checkbox1" check>
+            Checkbox disabilitato non selezionato
           </Label>
         </FormGroup>
         <FormGroup check>
-          <Input
-            disabled
-            id='checkbox2'
-            type='checkbox'
-            defaultChecked
-          />
-          <Label for='checkbox2' check>
-                        Checkbox disabilitato selezionato
+          <Input disabled id="checkbox2" type="checkbox" defaultChecked />
+          <Label for="checkbox2" check>
+            Checkbox disabilitato selezionato
           </Label>
         </FormGroup>
       </Form>
@@ -191,23 +173,23 @@ const DisabilitatoComponent = () => (
 
     <fieldset>
       <legend>Radio</legend>
-      <Form className='m-3'>
+      <Form className="m-3">
         <FormGroup check>
           <Input
             disabled
-            name='gruppo1'
-            type='radio'
-            id='radio1'
+            name="gruppo1"
+            type="radio"
+            id="radio1"
             defaultChecked
           />
-          <Label check for='radio1'>
-                        Opzione disabilitata selezionata
+          <Label check for="radio1">
+            Opzione disabilitata selezionata
           </Label>
         </FormGroup>
         <FormGroup check>
-          <Input disabled name='gruppo1' type='radio' id='radio2' />
-          <Label check for='radio2'>
-                        Opzione disabilitata non selezionata
+          <Input disabled name="gruppo1" type="radio" id="radio2" />
+          <Label check for="radio2">
+            Opzione disabilitata non selezionata
           </Label>
         </FormGroup>
       </Form>
@@ -223,10 +205,10 @@ const GruppiComponent = () => (
 
 const FormExampleComponent = () => (
   <div>
-    <Input label='Valid Input' valid />
-    <Input label='Invalid Input' invalid />
-    <Input value='Mario' label='First name' infoText='Validated!' valid />
-    <Input label='Username' infoText='Please choose a username.' invalid />
+    <Input label="Valid Input" valid />
+    <Input label="Invalid Input" invalid />
+    <Input value="Mario" label="First name" infoText="Validated!" valid />
+    <Input label="Username" infoText="Please choose a username." invalid />
   </div>
 )
 
@@ -256,10 +238,10 @@ storiesOf('Componenti/Form.Input', module)
       text: Password
     })(() => (
       <Input
-        type='password'
-        id='exampleInputPassword'
-        label='Password con label, placeholder e testo di aiuto'
-        infoText='Inserisci almeno 8 caratteri e una lettera maiuscola'
+        type="password"
+        id="exampleInputPassword"
+        label="Password con label, placeholder e testo di aiuto"
+        infoText="Inserisci almeno 8 caratteri e una lettera maiuscola"
       />
     ))
   )
@@ -268,11 +250,7 @@ storiesOf('Componenti/Form.Input', module)
     withInfo({
       text: Disabled
     })(() => (
-      <Input
-        label='Contenuto disabilitato'
-        id='exampleDisabled'
-        disabled
-      />
+      <Input label="Contenuto disabilitato" id="exampleDisabled" disabled />
     ))
   )
   .add(
@@ -280,11 +258,7 @@ storiesOf('Componenti/Form.Input', module)
     withInfo({
       text: Readonly
     })(() => (
-      <Input
-        label='Contenuto in sola lettura'
-        id='examplereadOnly'
-        readOnly
-      />
+      <Input label="Contenuto in sola lettura" id="examplereadOnly" readOnly />
     ))
   )
   .add(
@@ -293,8 +267,8 @@ storiesOf('Componenti/Form.Input', module)
       text: Normalize
     })(() => (
       <Input
-        label='Contenuto in sola lettura'
-        id='exampleNormalized'
+        label="Contenuto in sola lettura"
+        id="exampleNormalized"
         normalized
       />
     ))
@@ -309,7 +283,7 @@ storiesOf('Componenti/Form.Input', module)
     'Area di testo',
     withInfo({
       text: Textarea
-    })(() => <TextArea rows='3' label='Esempio di area di testo' />)
+    })(() => <TextArea rows="3" label="Esempio di area di testo" />)
   )
   .add(
     'Area di testo con segnaposto',
@@ -317,9 +291,9 @@ storiesOf('Componenti/Form.Input', module)
       text: Textarea
     })(() => (
       <TextArea
-        rows='3'
-        label='Esempio di area di testo'
-        placeholder='Testo di esempio'
+        rows="3"
+        label="Esempio di area di testo"
+        placeholder="Testo di esempio"
       />
     ))
   )
@@ -431,7 +405,10 @@ storiesOf('Componenti/Form.Select', module)
 
 storiesOf('Componenti/Form.Form Validation', module)
   .addDecorator(withA11y)
-  .add('Example', withInfo({
-    text: Validation,
-    propTables: [Input]
-  })(FormExampleComponent))
+  .add(
+    'Example',
+    withInfo({
+      text: Validation,
+      propTables: [Input]
+    })(FormExampleComponent)
+  )

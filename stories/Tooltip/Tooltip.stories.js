@@ -14,53 +14,53 @@ const EsempiComponent = () => {
   const target = i => document.getElementById(ids[i])
 
   return (
-    <div className='bd-example tooltip-demo'>
-      <p className='muted'>
-                Ecco un{' '}
-        <a href='#' id={ids[0]}>
-                    bianco scenario
+    <div className="bd-example tooltip-demo">
+      <p className="muted">
+        Ecco un{' '}
+        <a href="#" id={ids[0]}>
+          bianco scenario
         </a>
         <br />
-                per tratteggiarvi l’accompagnamento
+        per tratteggiarvi l’accompagnamento
         <br />
-                degli oggetti di sfondo che pur vivono.
+        degli oggetti di sfondo che pur vivono.
         <br />
-                Non ne sarò{' '}
-        <a href='#' id={ids[1]}>
-                    l’artefice
+        Non ne sarò{' '}
+        <a href="#" id={ids[1]}>
+          l’artefice
         </a>{' '}
-                impaziente.
+        impaziente.
         <br />
-                Berrò alle coppe della nostalgia,
+        Berrò alle coppe della nostalgia,
         <br />
-                avrò preteso d’ozio nelle lacrime...
+        avrò preteso d’ozio nelle lacrime...
         <br />
-                perché non mi ribello alla natura:
+        perché non mi ribello alla natura:
         <br />
-                la mia lentezza li esaspera...
+        la mia lentezza li esaspera...
         <br />
-                La mia lentezza? No, la mia fiducia.
+        La mia lentezza? No, la mia fiducia.
         <br />
-                Per adesso è deserto.
+        Per adesso è deserto.
         <br />
-        <a href='#' id={ids[2]}>
-                    Il mondo può rifarsi senza me
-        </a>,
-        <br />
-                E intanto gli altri mi denigreranno
+        <a href="#" id={ids[2]}>
+          Il mondo può rifarsi senza me
+        </a>
+        ,
+        <br />E intanto gli altri mi denigreranno
       </p>
       <p>
         <em>La città nuova, Alda Merini</em>
       </p>
 
-      <UncontrolledTooltip placement='top' target={() => target(0)}>
-                Primo tooltip
+      <UncontrolledTooltip placement="top" target={() => target(0)}>
+        Primo tooltip
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement='top' target={() => target(1)}>
-                Secondo tooltip
+      <UncontrolledTooltip placement="top" target={() => target(1)}>
+        Secondo tooltip
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement='top' target={() => target(2)}>
-                Terzo tooltip
+      <UncontrolledTooltip placement="top" target={() => target(2)}>
+        Terzo tooltip
       </UncontrolledTooltip>
     </div>
   )
@@ -72,35 +72,35 @@ const PosizioniComponent = () => {
 
   return (
     <div style={{ padding: 100 }}>
-      <Button id={ids[0]} className='m-3'>
-                Tooltip in alto
+      <Button id={ids[0]} className="m-3">
+        Tooltip in alto
       </Button>
-      <Button id={ids[1]} className='m-3'>
-                Tooltip a destra
+      <Button id={ids[1]} className="m-3">
+        Tooltip a destra
       </Button>
-      <Button id={ids[2]} className='m-3'>
-                Tooltip in basso
+      <Button id={ids[2]} className="m-3">
+        Tooltip in basso
       </Button>
-      <Button id={ids[3]} className='m-3'>
-                Tooltip a sinistra
+      <Button id={ids[3]} className="m-3">
+        Tooltip a sinistra
       </Button>
-      <Button id={ids[4]} className='m-3'>
-                Tooltip con HTML
+      <Button id={ids[4]} className="m-3">
+        Tooltip con HTML
       </Button>
 
-      <UncontrolledTooltip placement='top' target={() => target(0)}>
-                Tooltip on top
+      <UncontrolledTooltip placement="top" target={() => target(0)}>
+        Tooltip on top
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement='right' target={() => target(1)}>
-                Tooltip on right
+      <UncontrolledTooltip placement="right" target={() => target(1)}>
+        Tooltip on right
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement='bottom' target={() => target(2)}>
-                Tooltip on bottom
+      <UncontrolledTooltip placement="bottom" target={() => target(2)}>
+        Tooltip on bottom
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement='left' target={() => target(3)}>
-                Tooltip on left
+      <UncontrolledTooltip placement="left" target={() => target(3)}>
+        Tooltip on left
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement='top' target={() => target(4)}>
+      <UncontrolledTooltip placement="top" target={() => target(4)}>
         <em>Tooltip</em> <u>with</u> <b>HTML</b>
       </UncontrolledTooltip>
     </div>
@@ -117,8 +117,8 @@ const EsempiInterattiviComponent = () => {
 
   return (
     <div style={{ padding: 200 }}>
-      <Button id={id} className='m-3'>
-                Tooltip
+      <Button id={id} className="m-3">
+        Tooltip
       </Button>
 
       <UncontrolledTooltip placement={placement} target={target}>
@@ -130,13 +130,22 @@ const EsempiInterattiviComponent = () => {
 
 storiesOf('Componenti/Tooltip', module)
   .addDecorator(withA11y)
-  .add('Esempi', withInfo({
-    text: Esempi
-  })(EsempiComponent))
-  .add('Posizioni', withInfo({
-    text: Posizioni
-  })(PosizioniComponent))
+  .add(
+    'Esempi',
+    withInfo({
+      text: Esempi
+    })(EsempiComponent)
+  )
+  .add(
+    'Posizioni',
+    withInfo({
+      text: Posizioni
+    })(PosizioniComponent)
+  )
   .addDecorator(withKnobs)
-  .add('Esempi interattivi', withInfo({
-    text: EsempiInterattivi
-  })(EsempiInterattiviComponent))
+  .add(
+    'Esempi interattivi',
+    withInfo({
+      text: EsempiInterattivi
+    })(EsempiInterattiviComponent)
+  )

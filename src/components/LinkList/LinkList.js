@@ -13,18 +13,13 @@ const defaultProps = {
   tag: 'div'
 }
 
-const LinkList = (props) => {
-  const {
-    className, tag: Tag, multiline, sublist, ...attributes
-  } = props
+const LinkList = props => {
+  const { className, tag: Tag, multiline, sublist, ...attributes } = props
   const wrapperClasses = classNames(
     multiline ? 'multiline' : false,
     'link-list-wrapper'
   )
-  const classes = classNames(
-    className,
-    sublist ? 'link-sublist' : 'link-list'
-  )
+  const classes = classNames(className, sublist ? 'link-sublist' : 'link-list')
 
   if (sublist) {
     return <ul {...attributes} className={classes} />

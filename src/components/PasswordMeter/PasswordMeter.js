@@ -1,48 +1,48 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 const defaultSteps = [
   {
     score: 0,
     label: 'inserisci almeno 8 caratteri e una lettera maiuscola',
-    className: 'danger',
+    className: 'danger'
   },
   {
     score: 1,
     label: 'password troppo debole',
-    className: 'danger',
+    className: 'danger'
   },
   {
     score: 25,
     label: 'password debole',
-    className: 'danger',
+    className: 'danger'
   },
   {
     score: 50,
     label: 'password sicura',
-    className: 'warning',
+    className: 'warning'
   },
   {
     score: 75,
     label: 'password molto sicura',
-    className: 'success',
-  },
-];
+    className: 'success'
+  }
+]
 
 class PasswordMeter extends Component {
   static defaultProps = {
     score: 0,
-    steps: defaultSteps,
-  };
+    steps: defaultSteps
+  }
 
   render() {
-    const { steps, score } = this.props;
+    const { steps, score } = this.props
 
     const currentStep = steps
       .filter(step => step.score <= score)
-      .reduce((acc, current) => (acc.score > current.score ? acc : current));
+      .reduce((acc, current) => (acc.score > current.score ? acc : current))
 
-    const { label, className } = currentStep;
+    const { label, className } = currentStep
 
     return (
       <div className="psw-wrapper">
@@ -62,7 +62,7 @@ class PasswordMeter extends Component {
           />
         </div>
       </div>
-    );
+    )
   }
 }
 
@@ -72,9 +72,9 @@ PasswordMeter.propTypes = {
     PropTypes.shape({
       score: PropTypes.number,
       label: PropTypes.string,
-      className: PropTypes.string,
-    }),
-  ),
-};
+      className: PropTypes.string
+    })
+  )
+}
 
-export default PasswordMeter;
+export default PasswordMeter

@@ -1,12 +1,12 @@
-import React from "react";
-import { Button, Collapse, Card, CardBody } from "../../src";
+import React from 'react'
+import { Button, Collapse, Card, CardBody } from '../../src'
 
 class CollapseExample extends React.Component {
-  state = { collapse: false };
+  state = { collapse: false }
 
   toggle = () => {
-    this.setState({ collapse: !this.state.collapse });
-  };
+    this.setState({ collapse: !this.state.collapse })
+  }
 
   render() {
     return (
@@ -14,8 +14,7 @@ class CollapseExample extends React.Component {
         <Button
           color="primary"
           onClick={this.toggle}
-          style={{ marginBottom: "1rem" }}
-        >
+          style={{ marginBottom: '1rem' }}>
           Toggle
         </Button>
         <Collapse isOpen={this.state.collapse}>
@@ -29,8 +28,8 @@ class CollapseExample extends React.Component {
           </Card>
         </Collapse>
       </div>
-    );
+    )
   }
 }
 
-export default CollapseExample;
+export default CollapseExample

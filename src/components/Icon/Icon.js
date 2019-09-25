@@ -16,11 +16,8 @@ const defaultProps = {
 }
 
 class Icon extends React.Component {
-  render () {
-    const {
-      color,
-      size
-    } = this.props
+  render() {
+    const { color, size } = this.props
     const classes = classNames('icon', color, size)
     const iconName = this.props.icon
     return (

@@ -17,11 +17,11 @@ const defaultProps = {
   tag: 'a'
 }
 
-const handleDisabledOnClick = (e) => {
+const handleDisabledOnClick = e => {
   e.preventDefault()
 }
 
-const LinkListItem = (props) => {
+const LinkListItem = props => {
   const {
     className,
     active,
@@ -32,9 +32,7 @@ const LinkListItem = (props) => {
     size,
     ...attributes
   } = props
-  let {
-    tag: Tag
-  } = props
+  let { tag: Tag } = props
   const classes = classNames(
     className,
     active ? 'active' : false,
@@ -71,13 +69,7 @@ const LinkListItem = (props) => {
           )
         }
 
-        return (
-          <Tag
-            href={href || '#'}
-            {...attributes}
-            className={classes}
-          />
-        )
+        return <Tag href={href || '#'} {...attributes} className={classes} />
       })()}
     </li>
   )

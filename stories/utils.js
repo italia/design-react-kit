@@ -10,7 +10,7 @@ export const requireContextPolyfill = () => {
     ) => {
       const files = {}
 
-      function readDirectory (directory) {
+      function readDirectory(directory) {
         fs.readdirSync(directory).forEach(file => {
           const fullPath = path.resolve(directory, file)
 
@@ -28,7 +28,7 @@ export const requireContextPolyfill = () => {
 
       readDirectory(path.resolve(__dirname, base))
 
-      function Module (file) {
+      function Module(file) {
         return require(file)
       }
 

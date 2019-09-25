@@ -14,13 +14,8 @@ const defaultProps = {
   'aria-label': 'pagination'
 }
 
-const Pager = (props) => {
-  const {
-    children,
-    className,
-    tag: Tag,
-    'aria-label': label
-  } = props
+const Pager = props => {
+  const { children, className, tag: Tag, 'aria-label': label } = props
 
   const classes = classNames(className, 'pagination-wrapper')
 

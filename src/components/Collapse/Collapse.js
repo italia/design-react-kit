@@ -44,56 +44,55 @@ const transitionStatusToClassHash = {
   [TransitionStatuses.EXITED]: 'collapse'
 }
 
-function getTransitionClass (status) {
+function getTransitionClass(status) {
   return transitionStatusToClassHash[status] || 'collapse'
 }
 
-function getHeight (node) {
+function getHeight(node) {
   return node.scrollHeight
 }
 
 class Collapse extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
 
     this.state = {
       height: null
-    };
-
-    ['onEntering', 'onEntered', 'onExit', 'onExiting', 'onExited'].forEach(
-      (name) => {
+    }
+    ;['onEntering', 'onEntered', 'onExit', 'onExiting', 'onExited'].forEach(
+      name => {
         this[name] = this[name].bind(this)
       }
     )
   }
 
-  onEntering (node, isAppearing) {
+  onEntering(node, isAppearing) {
     this.setState({ height: getHeight(node) })
     this.props.onEntering(node, isAppearing)
   }
 
-  onEntered (node, isAppearing) {
+  onEntered(node, isAppearing) {
     this.setState({ height: null })
     this.props.onEntered(node, isAppearing)
   }
 
-  onExit (node) {
+  onExit(node) {
     this.setState({ height: getHeight(node) })
     this.props.onExit(node)
   }
 
-  onExiting (node) {
+  onExiting(node) {
     // getting this variable triggers a reflow
     this.setState({ height: 0 })
     this.props.onExiting(node)
   }
 
-  onExited (node) {
+  onExited(node) {
     this.setState({ height: null })
     this.props.onExited(node)
   }
 
-  render () {
+  render() {
     const {
       tag: Tag,
       isOpen,
@@ -128,9 +127,8 @@ class Collapse extends Component {
         onEntered={this.onEntered}
         onExit={this.onExit}
         onExiting={this.onExiting}
-        onExited={this.onExited}
-      >
-        {(status) => {
+        onExited={this.onExited}>
+        {status => {
           const collapseClass = getTransitionClass(status)
           const classes = mapToCssModules(
             classNames(
@@ -145,9 +143,9 @@ class Collapse extends Component {
           // Needed for `bootstrap-italia`
           const customStyles = isOpen
             ? {
-              position: 'relative',
-              display: 'block'
-            }
+                position: 'relative',
+                display: 'block'
+              }
             : {}
 
           return (
@@ -158,8 +156,7 @@ class Collapse extends Component {
                 ...style,
                 ...customStyles
               }}
-              className={classes}
-            >
+              className={classes}>
               {children}
             </Tag>
           )

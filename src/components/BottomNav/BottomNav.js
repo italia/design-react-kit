@@ -11,13 +11,9 @@ const defaultProps = {
   tag: 'nav'
 }
 
-const BottomNav = (props) => {
-  const {
-    tag: Tag, ...attributes
-  } = props
-  const wrapperClasses = classNames(
-    'bottom-nav'
-  )
+const BottomNav = props => {
+  const { tag: Tag, ...attributes } = props
+  const wrapperClasses = classNames('bottom-nav')
   return (
     <Tag className={wrapperClasses}>
       <ul {...attributes} />

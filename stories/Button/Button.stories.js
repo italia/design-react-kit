@@ -27,7 +27,7 @@ const colors = [
 const EsempiComponent = () => (
   <div>
     {colors.map(color => (
-      <div key={color} className='mb-2'>
+      <div key={color} className="mb-2">
         <Button color={color.toLowerCase()}>{color}</Button>{' '}
         <Button outline color={color.toLowerCase()}>
           {color} Outline
@@ -38,9 +38,9 @@ const EsempiComponent = () => (
 )
 
 const DarkBackgroundComponent = () => (
-  <div className='bg-dark py-1'>
+  <div className="bg-dark py-1">
     {colors.map(color => (
-      <div key={color} className='mb-2'>
+      <div key={color} className="mb-2">
         <Button color={color.toLowerCase()}>{color}</Button>{' '}
         <Button outline color={color.toLowerCase()}>
           {color} Outline
@@ -53,32 +53,32 @@ const DarkBackgroundComponent = () => (
 const DimensioniComponent = () => (
   <section>
     <div>
-      <Button color='primary' size='lg'>
-                Primary Large
+      <Button color="primary" size="lg">
+        Primary Large
       </Button>{' '}
-      <Button color='secondary' size='lg'>
-                Secondary Large
+      <Button color="secondary" size="lg">
+        Secondary Large
       </Button>{' '}
-      <div className='mt-3' />
-      <Button color='primary' size='sm'>
-                Primary Small
+      <div className="mt-3" />
+      <Button color="primary" size="sm">
+        Primary Small
       </Button>{' '}
-      <Button color='secondary' size='sm'>
-                Secondary Small
+      <Button color="secondary" size="sm">
+        Secondary Small
       </Button>{' '}
-      <div className='mt-3' />
-      <Button color='primary' size='xs'>
-                Primary Mini
+      <div className="mt-3" />
+      <Button color="primary" size="xs">
+        Primary Mini
       </Button>{' '}
-      <Button color='secondary' size='xs'>
-                Secondary Mini
+      <Button color="secondary" size="xs">
+        Secondary Mini
       </Button>{' '}
-      <div className='mt-3' />
-      <Button color='primary' block>
-                Primary Block
+      <div className="mt-3" />
+      <Button color="primary" block>
+        Primary Block
       </Button>{' '}
-      <Button color='secondary' block>
-                Secondary Block
+      <Button color="secondary" block>
+        Secondary Block
       </Button>{' '}
     </div>
   </section>
@@ -86,16 +86,16 @@ const DimensioniComponent = () => (
 
 const ButtonIconComponent = () => (
   <div>
-    <Button color='primary' size='lg' className='btn-icon'>
+    <Button color="primary" size="lg" className="btn-icon">
       <Icon color={'icon-white'} /> Icon Button Large
     </Button>{' '}
-    <Button color='success' className='btn-icon'>
+    <Button color="success" className="btn-icon">
       <Icon color={'icon-white'} /> Icon Button
     </Button>{' '}
-    <Button color='danger' size='sm' className='btn-icon'>
+    <Button color="danger" size="sm" className="btn-icon">
       <Icon color={'icon-primary'} /> Icon Button Small
     </Button>{' '}
-    <Button color='info' size='xs' className='btn-icon'>
+    <Button color="info" size="xs" className="btn-icon">
       <Icon color={'icon-black'} icon={'it-help'} /> Icon Button Extra Small
     </Button>
   </div>
@@ -136,8 +136,7 @@ const EsempiInterattiviComponent = () => {
       color={color.toLowerCase()}
       disabled={disabled}
       block={block}
-      size={dimension}
-    >
+      size={dimension}>
       {label} {color} {dimension} {block ? 'block' : ''}{' '}
       {disabled ? 'disabled' : ' '}
     </Button>

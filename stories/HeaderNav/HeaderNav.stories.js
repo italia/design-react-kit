@@ -10,17 +10,17 @@ import HeaderNavExample from './HeaderNavExample'
 
 import Esempi from './docs/Esempi.md'
 
-const EsempiComponent = () => (
-  <HeaderNavExample />
-)
+const EsempiComponent = () => <HeaderNavExample />
 
 storiesOf('Componenti/HeaderNav', module)
   .addDecorator(withA11y)
   .addDecorator(withKnobs)
-// .addParameters({ viewport: { defaultViewport: "iphone6" } })
+  // .addParameters({ viewport: { defaultViewport: "iphone6" } })
   .add(
-    'Esempio', withInfo({
+    'Esempio',
+    withInfo({
       text: Esempi,
       propTables: [Navbar, NavbarToggler],
       propTablesExclude: [HeaderNavExample]
-    })(EsempiComponent))
+    })(EsempiComponent)
+  )
