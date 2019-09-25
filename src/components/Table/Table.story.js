@@ -7,10 +7,10 @@ storiesOf('Table', module)
   .add(
     'Default',
     withInfo('Default')(() => (
-      <Table bordered className='u-text-r-xs'>
-        <caption className='u-hiddenVisually'>maiores eius et</caption>
+      <Table bordered className="u-text-r-xs">
+        <caption className="u-hiddenVisually">maiores eius et</caption>
         <thead>
-          <tr className='u-border-bottom-xs'>
+          <tr className="u-border-bottom-xs">
             <th>Tab. 1</th>
             <th>Tab. 2</th>
             <th>Tab. 3</th>
@@ -52,10 +52,10 @@ storiesOf('Table', module)
       <Table
         bordered
         compact
-        className='u-text-r-xxs'
-        aria-describedby='description'>
+        className="u-text-r-xxs"
+        aria-describedby="description">
         <thead>
-          <tr className='u-border-bottom-xs'>
+          <tr className="u-border-bottom-xs">
             <th>Tab. 1</th>
             <th>Tab. 2</th>
             <th>Tab. 3</th>
@@ -95,39 +95,39 @@ storiesOf('Table', module)
     'Complex',
     withInfo('Complex')(() => (
       <Table striped hoverable bordered>
-        <caption className='u-hiddenVisually'>maiores eius et</caption>
+        <caption className="u-hiddenVisually">maiores eius et</caption>
         <thead>
-          <tr className='u-border-bottom-xs'>
-            <th className='u-textLeft'>Tab. txt</th>
-            <th className='u-textLeft'>Tab. txt</th>
-            <th className='u-textRight'>Tab. num</th>
-            <th className='u-textRight'>Tab. num</th>
+          <tr className="u-border-bottom-xs">
+            <th className="u-textLeft">Tab. txt</th>
+            <th className="u-textLeft">Tab. txt</th>
+            <th className="u-textRight">Tab. num</th>
+            <th className="u-textRight">Tab. num</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className='u-textLeft'>Tab. txt</td>
-            <td className='u-textLeft'>Tab. txt</td>
-            <td className='u-textRight'>Tab. num</td>
-            <td className='u-textRight'>Tab. num</td>
+            <td className="u-textLeft">Tab. txt</td>
+            <td className="u-textLeft">Tab. txt</td>
+            <td className="u-textRight">Tab. num</td>
+            <td className="u-textRight">Tab. num</td>
           </tr>
           <tr>
-            <td className='u-textLeft'>Tab. txt</td>
-            <td className='u-textLeft'>Tab. txt</td>
-            <td className='u-textRight'>Tab. num</td>
-            <td className='u-textRight'>Tab. num</td>
+            <td className="u-textLeft">Tab. txt</td>
+            <td className="u-textLeft">Tab. txt</td>
+            <td className="u-textRight">Tab. num</td>
+            <td className="u-textRight">Tab. num</td>
           </tr>
           <tr>
-            <td className='u-textLeft'>Tab. txt</td>
-            <td className='u-textLeft'>Tab. txt</td>
-            <td className='u-textRight'>Tab. num</td>
-            <td className='u-textRight'>Tab. num</td>
+            <td className="u-textLeft">Tab. txt</td>
+            <td className="u-textLeft">Tab. txt</td>
+            <td className="u-textRight">Tab. num</td>
+            <td className="u-textRight">Tab. num</td>
           </tr>
           <tr>
-            <td className='u-textLeft'>Tab. txt</td>
-            <td className='u-textLeft'>Tab. txt</td>
-            <td className='u-textRight'>Tab. num</td>
-            <td className='u-textRight'>Tab. num</td>
+            <td className="u-textLeft">Tab. txt</td>
+            <td className="u-textLeft">Tab. txt</td>
+            <td className="u-textRight">Tab. num</td>
+            <td className="u-textRight">Tab. num</td>
           </tr>
         </tbody>
       </Table>
@@ -137,66 +137,56 @@ storiesOf('Table', module)
     'Irregular',
     withInfo('Irregular')(() => (
       <Table bordered>
-        <caption className='u-hiddenVisually'>maiores eius et</caption>
-        <colgroup span='2' />
-        <colgroup span='2' />
+        <caption className="u-hiddenVisually">maiores eius et</caption>
+        <colgroup span="2" />
+        <colgroup span="2" />
         <tbody>
           <tr>
-            <td rowSpan='2' />
+            <td rowSpan="2" />
             <th
-              className='u-textCenter u-border-right-xxs u-border-left-xxs u-background-grey-10'
-              colSpan='2'
-              scope='colgroup'>
-                            Mars
+              className="u-textCenter u-border-right-xxs u-border-left-xxs u-background-grey-10"
+              colSpan="2"
+              scope="colgroup">
+              Mars
             </th>
             <th
-              className='u-textCenter u-background-grey-10'
-              colSpan='2'
-              scope='colgroup'>
-                            Venus
+              className="u-textCenter u-background-grey-10"
+              colSpan="2"
+              scope="colgroup">
+              Venus
             </th>
           </tr>
-          <tr className='u-background-grey-10'>
-            <th className='u-textCenter' scope='col'>
-                            Produced
+          <tr className="u-background-grey-10">
+            <th className="u-textCenter" scope="col">
+              Produced
             </th>
-            <th
-              className='u-textCenter u-border-right-xxs'
-              scope='col'>
-                            Sold
+            <th className="u-textCenter u-border-right-xxs" scope="col">
+              Sold
             </th>
-            <th className='u-textCenter' scope='col'>
-                            Produced
+            <th className="u-textCenter" scope="col">
+              Produced
             </th>
-            <th className='u-textCenter' scope='col'>
-                            Sold
+            <th className="u-textCenter" scope="col">
+              Sold
             </th>
           </tr>
           <tr>
-            <th scope='row' className='u-background-grey-10'>
-                            Teddy Bears
+            <th scope="row" className="u-background-grey-10">
+              Teddy Bears
             </th>
-            <td className='u-textCenter u-border-left-xxs'>
-                            50,000
-            </td>
-            <td className='u-textCenter u-border-right-xxs'>
-                            30,000
-            </td>
-            <td className='u-textCenter'>100,000</td>
-            <td className='u-textCenter'>80,000</td>
+            <td className="u-textCenter u-border-left-xxs">50,000</td>
+            <td className="u-textCenter u-border-right-xxs">30,000</td>
+            <td className="u-textCenter">100,000</td>
+            <td className="u-textCenter">80,000</td>
           </tr>
           <tr>
-            <th scope='row' className='u-background-grey-10'>
-                            Board Games
+            <th scope="row" className="u-background-grey-10">
+              Board Games
             </th>
-            <td className='u-textCenter u-border-left-xxs'>
-                            10,000
-            </td>
-            <td className='u-textCenter u-border-right-xxs'>
-                            5,000
-            </td>
-            <td className='u-textCenter'>12,000</td>
-            <td className='u-textCenter'>9,000</td>
+            <td className="u-textCenter u-border-left-xxs">10,000</td>
+            <td className="u-textCenter u-border-right-xxs">5,000</td>
+            <td className="u-textCenter">12,000</td>
+            <td className="u-textCenter">9,000</td>
           </tr>
         </tbody>
       </Table>
@@ -208,15 +198,15 @@ storiesOf('Table', module)
       <Table
         bordered
         responsive
-        className='js-TableResponsive tablesaw tablesaw-stack'
-        data-tablesaw-mode='stack'>
-        <caption className='u-hiddenVisually'>maiores eius et</caption>
+        className="js-TableResponsive tablesaw tablesaw-stack"
+        data-tablesaw-mode="stack">
+        <caption className="u-hiddenVisually">maiores eius et</caption>
         <thead>
           <tr>
-            <th scope='col'>Tab. 1</th>
-            <th scope='col'>Tab. 2</th>
-            <th scope='col'>Tab. 3</th>
-            <th scope='col'>Tab. 4</th>
+            <th scope="col">Tab. 1</th>
+            <th scope="col">Tab. 2</th>
+            <th scope="col">Tab. 3</th>
+            <th scope="col">Tab. 4</th>
           </tr>
         </thead>
         <tbody>
@@ -227,10 +217,7 @@ storiesOf('Table', module)
 
             <td>Quam id non.</td>
 
-            <td>
-                            Et commodi mollitia eius rerum dolorem et dolorum
-                            dolorem.
-            </td>
+            <td>Et commodi mollitia eius rerum dolorem et dolorum dolorem.</td>
           </tr>
 
           <tr>
@@ -238,10 +225,7 @@ storiesOf('Table', module)
 
             <td>Quam id non.</td>
 
-            <td>
-                            Et commodi mollitia eius rerum dolorem et dolorum
-                            dolorem.
-            </td>
+            <td>Et commodi mollitia eius rerum dolorem et dolorum dolorem.</td>
 
             <td>Quia ex deleniti.</td>
           </tr>
@@ -249,10 +233,7 @@ storiesOf('Table', module)
           <tr>
             <td>Quam id non.</td>
 
-            <td>
-                            Et commodi mollitia eius rerum dolorem et dolorum
-                            dolorem.
-            </td>
+            <td>Et commodi mollitia eius rerum dolorem et dolorum dolorem.</td>
 
             <td>Quia ex deleniti.</td>
 
@@ -260,18 +241,15 @@ storiesOf('Table', module)
           </tr>
 
           <tr>
-            <td>
-                            Et commodi mollitia eius rerum dolorem et dolorum
-                            dolorem.
-            </td>
+            <td>Et commodi mollitia eius rerum dolorem et dolorum dolorem.</td>
 
             <td>Quia ex deleniti.</td>
 
             <td>Amet adipisci cumque odio voluptas.</td>
 
             <td>
-                            Quisquam reiciendis molestias fugiat minus
-                            laudantium soluta dolorum et vitae.
+              Quisquam reiciendis molestias fugiat minus laudantium soluta
+              dolorum et vitae.
             </td>
           </tr>
         </tbody>
@@ -284,57 +262,46 @@ storiesOf('Table', module)
       <Table
         bordered
         responsive
-        className='js-TableResponsive tablesaw tablesaw-swipe'
-        data-tablesaw-mode='swipe'>
-        <caption className='u-hiddenVisually'>maiores eius et</caption>
+        className="js-TableResponsive tablesaw tablesaw-swipe"
+        data-tablesaw-mode="swipe">
+        <caption className="u-hiddenVisually">maiores eius et</caption>
         <thead>
           <tr>
-            <th scope='col' data-tablesaw-priority='persist'>
-                            Tab. 1
+            <th scope="col" data-tablesaw-priority="persist">
+              Tab. 1
             </th>
-            <th scope='col'>Tab. 2</th>
-            <th scope='col'>Tab. 3</th>
-            <th scope='col'>Tab. 4</th>
+            <th scope="col">Tab. 2</th>
+            <th scope="col">Tab. 3</th>
+            <th scope="col">Tab. 4</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className='u-textWeight-600'>
-                            Dolor itaque ad asperiores et.
-            </td>
+            <td className="u-textWeight-600">Dolor itaque ad asperiores et.</td>
 
             <td>Odit perspiciatis dignissimos velit architecto.</td>
 
             <td>Quam id non.</td>
 
-            <td>
-                            Et commodi mollitia eius rerum dolorem et dolorum
-                            dolorem.
-            </td>
+            <td>Et commodi mollitia eius rerum dolorem et dolorum dolorem.</td>
           </tr>
 
           <tr>
-            <td className='u-textWeight-600'>
-                            Odit perspiciatis dignissimos velit architecto.
+            <td className="u-textWeight-600">
+              Odit perspiciatis dignissimos velit architecto.
             </td>
 
             <td>Quam id non.</td>
 
-            <td>
-                            Et commodi mollitia eius rerum dolorem et dolorum
-                            dolorem.
-            </td>
+            <td>Et commodi mollitia eius rerum dolorem et dolorum dolorem.</td>
 
             <td>Quia ex deleniti.</td>
           </tr>
 
           <tr>
-            <td className='u-textWeight-600'>Quam id non.</td>
+            <td className="u-textWeight-600">Quam id non.</td>
 
-            <td>
-                            Et commodi mollitia eius rerum dolorem et dolorum
-                            dolorem.
-            </td>
+            <td>Et commodi mollitia eius rerum dolorem et dolorum dolorem.</td>
 
             <td>Quia ex deleniti.</td>
 
@@ -342,9 +309,8 @@ storiesOf('Table', module)
           </tr>
 
           <tr>
-            <td className='u-textWeight-600'>
-                            Et commodi mollitia eius rerum dolorem et dolorum
-                            dolorem.
+            <td className="u-textWeight-600">
+              Et commodi mollitia eius rerum dolorem et dolorum dolorem.
             </td>
 
             <td>Quia ex deleniti.</td>
@@ -352,8 +318,8 @@ storiesOf('Table', module)
             <td>Amet adipisci cumque odio voluptas.</td>
 
             <td>
-                            Quisquam reiciendis molestias fugiat minus
-                            laudantium soluta dolorum et vitae.
+              Quisquam reiciendis molestias fugiat minus laudantium soluta
+              dolorum et vitae.
             </td>
           </tr>
         </tbody>
@@ -364,22 +330,22 @@ storiesOf('Table', module)
     'Two headers',
     withInfo('Two headers')(() => (
       <Table bordered>
-        <caption className='u-padding-r-bottom u-textLeft'>
-                    Delivery slots:
+        <caption className="u-padding-r-bottom u-textLeft">
+          Delivery slots:
         </caption>
         <thead>
           <tr>
             <td />
-            <th scope='col'>Monday</th>
-            <th scope='col'>Tuesday</th>
-            <th scope='col'>Wednesday</th>
-            <th scope='col'>Thursday</th>
-            <th scope='col'>Friday</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">Thursday</th>
+            <th scope="col">Friday</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope='row'>09:00 - 11:00</th>
+            <th scope="row">09:00 - 11:00</th>
             <td>Closed</td>
             <td>Open</td>
             <td>Open</td>
@@ -387,7 +353,7 @@ storiesOf('Table', module)
             <td>Closed</td>
           </tr>
           <tr>
-            <th scope='row'>11:00 - 13:00</th>
+            <th scope="row">11:00 - 13:00</th>
             <td>Open</td>
             <td>Open</td>
             <td>Closed</td>

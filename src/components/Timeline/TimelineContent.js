@@ -1,9 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const TimelineContent = ({
-  children, color, background, ...rest
-}) => (
+const TimelineContent = ({ children, color, background, ...rest }) => (
   <div className={`Timeline-content ${color}`} {...rest}>
     <div
       className={`Timeline-arrow Icon-drop-down ${background.replace(

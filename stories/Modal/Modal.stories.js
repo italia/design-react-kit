@@ -23,70 +23,100 @@ import ModalVariabile from './docs/ModalVariabile.md'
 
 const EsempiComponent = () => (
   <div style={{ padding: '0px 290px' }}>
-    <div className='modal-content'>
+    <div className="modal-content">
       <ModalHeader>Titolo della modale</ModalHeader>
       <ModalBody>Il testo del corpo della modale va qui.</ModalBody>
       <ModalFooter>
-        <Button color='secondary'>Chiudi</Button>
-        <Button color='primary'>Salva le modifiche</Button>
+        <Button color="secondary">Chiudi</Button>
+        <Button color="primary">Salva le modifiche</Button>
       </ModalFooter>
     </div>
   </div>
 )
 
 const BottoneChiusuraComponent = () => (
-  <div className='p-3'>
-    <button className='close position-absolute'>&times;</button>
+  <div className="p-3">
+    <button className="close position-absolute">&times;</button>
   </div>
 )
 
 storiesOf('Componenti/Modal', module)
   .addDecorator(withA11y)
-  .add('Esempi', withInfo({
-    text: Esempi,
-    propTablesExclude: [Button]
-  })(EsempiComponent))
-  .add('Bottone di chiusura', withInfo({
-    text: BottoneChiusura,
-    propTablesExclude: [Button]
-  })(BottoneChiusuraComponent))
-  .add('Demo', withInfo({
-    text: Demo,
-    propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
-    propTablesExclude: [ModalExample]
-  })(() => <ModalExample />))
-  .add('Scroll di contenuti lunghi', withInfo({
-    text: ScrollContenutiLunghi,
-    propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
-    propTablesExclude: [ModalExample]
-  })(() => <ModalExample long />))
-  .add('Centratura verticale', withInfo({
-    text: CentraturaVerticale,
-    propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
-    propTablesExclude: [ModalExample]
-  })(() => <ModalExample centered />))
-  .add('Tooltip and popover', withInfo({
-    text: TooltipPopover,
-    propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
-    propTablesExclude: [ModalTooltipExample]
-  })(() => <ModalTooltipExample />))
-  .add('Uso della griglia', withInfo({
-    text: UsoGriglia,
-    propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
-    propTablesExclude: [ModalGridExample]
-  })(() => <ModalGridExample />))
-  .add('Contenuto della modale variabile', withInfo({
-    text: ModalVariabile,
-    propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
-    propTablesExclude: [ModalDynamicExample]
-  })(() => <ModalDynamicExample />))
-  .add('Rimuovere l’animazione', withInfo({
-    text: RimuovereAnimazione,
-    propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
-    propTablesExclude: [ModalExample]
-  })(() => <ModalExample fade={false} />))
-  .add('Dimensioni', withInfo({
-    text: Dimensioni,
-    propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
-    propTablesExclude: [ModalExample]
-  })(() => <ModalExample sizing />))
+  .add(
+    'Esempi',
+    withInfo({
+      text: Esempi,
+      propTablesExclude: [Button]
+    })(EsempiComponent)
+  )
+  .add(
+    'Bottone di chiusura',
+    withInfo({
+      text: BottoneChiusura,
+      propTablesExclude: [Button]
+    })(BottoneChiusuraComponent)
+  )
+  .add(
+    'Demo',
+    withInfo({
+      text: Demo,
+      propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+      propTablesExclude: [ModalExample]
+    })(() => <ModalExample />)
+  )
+  .add(
+    'Scroll di contenuti lunghi',
+    withInfo({
+      text: ScrollContenutiLunghi,
+      propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+      propTablesExclude: [ModalExample]
+    })(() => <ModalExample long />)
+  )
+  .add(
+    'Centratura verticale',
+    withInfo({
+      text: CentraturaVerticale,
+      propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+      propTablesExclude: [ModalExample]
+    })(() => <ModalExample centered />)
+  )
+  .add(
+    'Tooltip and popover',
+    withInfo({
+      text: TooltipPopover,
+      propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+      propTablesExclude: [ModalTooltipExample]
+    })(() => <ModalTooltipExample />)
+  )
+  .add(
+    'Uso della griglia',
+    withInfo({
+      text: UsoGriglia,
+      propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+      propTablesExclude: [ModalGridExample]
+    })(() => <ModalGridExample />)
+  )
+  .add(
+    'Contenuto della modale variabile',
+    withInfo({
+      text: ModalVariabile,
+      propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+      propTablesExclude: [ModalDynamicExample]
+    })(() => <ModalDynamicExample />)
+  )
+  .add(
+    'Rimuovere l’animazione',
+    withInfo({
+      text: RimuovereAnimazione,
+      propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+      propTablesExclude: [ModalExample]
+    })(() => <ModalExample fade={false} />)
+  )
+  .add(
+    'Dimensioni',
+    withInfo({
+      text: Dimensioni,
+      propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
+      propTablesExclude: [ModalExample]
+    })(() => <ModalExample sizing />)
+  )

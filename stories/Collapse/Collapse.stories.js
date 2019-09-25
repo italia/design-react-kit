@@ -17,23 +17,35 @@ import Innestati from './docs/Innestati.md'
 
 storiesOf('Componenti/Collapse', module)
   .addDecorator(withA11y)
-  .add('Esempi', withInfo({
-    text: Esempi,
-    propTables: [Collapse],
-    propTablesExclude: [CollapseExample]
-  })(() => <CollapseExample />))
-  .add('Gruppi di elementi richiudibili', withInfo({
-    text: Gruppi,
-    propTables: [Accordion, AccordionHeader, AccordionBody],
-    propTablesExclude: [CollapseGroupsExample]
-  })(() => <CollapseGroupsExample />))
-  .add('Accordion', withInfo({
-    text: AccordionEsempio,
-    propTables: [Accordion, AccordionHeader, AccordionBody],
-    propTablesExclude: [CollapseAccordionExample]
-  })(() => <CollapseAccordionExample />))
-  .add('Collapse e Accordion innestati', withInfo({
-    text: Innestati,
-    propTables: [Collapse],
-    propTablesExclude: [Accordion, AccordionHeader, AccordionBody]
-  })(() => <CollapseNestedExample />))
+  .add(
+    'Esempi',
+    withInfo({
+      text: Esempi,
+      propTables: [Collapse],
+      propTablesExclude: [CollapseExample]
+    })(() => <CollapseExample />)
+  )
+  .add(
+    'Gruppi di elementi richiudibili',
+    withInfo({
+      text: Gruppi,
+      propTables: [Accordion, AccordionHeader, AccordionBody],
+      propTablesExclude: [CollapseGroupsExample]
+    })(() => <CollapseGroupsExample />)
+  )
+  .add(
+    'Accordion',
+    withInfo({
+      text: AccordionEsempio,
+      propTables: [Accordion, AccordionHeader, AccordionBody],
+      propTablesExclude: [CollapseAccordionExample]
+    })(() => <CollapseAccordionExample />)
+  )
+  .add(
+    'Collapse e Accordion innestati',
+    withInfo({
+      text: Innestati,
+      propTables: [Collapse],
+      propTablesExclude: [Accordion, AccordionHeader, AccordionBody]
+    })(() => <CollapseNestedExample />)
+  )

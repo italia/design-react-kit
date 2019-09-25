@@ -4,15 +4,15 @@ import PropTypes from 'prop-types'
 import { Label, Input } from 'reactstrap'
 
 class Toggle extends Component {
-  render () {
+  render() {
     const { label, ...rest } = this.props
 
     return (
-      <div className='toggles'>
+      <div className="toggles">
         <Label check>
           {label}
-          <Input type='checkbox' {...rest} />
-          <span className='lever' />
+          <Input type="checkbox" {...rest} />
+          <span className="lever" />
         </Label>
       </div>
     )

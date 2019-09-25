@@ -32,22 +32,22 @@ const EsempiComponent = () => (
   <Pager>
     <PagerList>
       <PagerItem>
-        <PagerLink previous href='#'>
-          <i className='it-chevron-left' />
+        <PagerLink previous href="#">
+          <i className="it-chevron-left" />
         </PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink href='#'>1</PagerLink>
+        <PagerLink href="#">1</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink href='#'>2</PagerLink>
+        <PagerLink href="#">2</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink href='#'>3</PagerLink>
+        <PagerLink href="#">3</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink next href='#'>
-          <i className='it-chevron-right' />
+        <PagerLink next href="#">
+          <i className="it-chevron-right" />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -58,24 +58,24 @@ const StatoDisabilitatoAttivoComponent = () => (
   <Pager>
     <PagerList>
       <PagerItem disabled>
-        <PagerLink previous href='#'>
-          <i className='it-chevron-left' />
+        <PagerLink previous href="#">
+          <i className="it-chevron-left" />
         </PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink aria-current='page' href='#'>
-                    1
+        <PagerLink aria-current="page" href="#">
+          1
         </PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink href='#'>2</PagerLink>
+        <PagerLink href="#">2</PagerLink>
       </PagerItem>
       <PagerItem disabled>
-        <PagerLink href='#'>3</PagerLink>
+        <PagerLink href="#">3</PagerLink>
       </PagerItem>
       <PagerItem disabled>
-        <PagerLink next href='#'>
-          <i className='it-chevron-right' />
+        <PagerLink next href="#">
+          <i className="it-chevron-right" />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -84,53 +84,53 @@ const StatoDisabilitatoAttivoComponent = () => (
 
 const AllineamentoComponent = () => (
   <section>
-    <Pager size='sm' className='justify-content-center mb-3'>
+    <Pager size="sm" className="justify-content-center mb-3">
       <PagerList>
         <PagerItem disabled>
-          <PagerLink previous href='#'>
-            <i className='it-chevron-left' />
+          <PagerLink previous href="#">
+            <i className="it-chevron-left" />
           </PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink aria-current='page' href='#'>
-                        1
+          <PagerLink aria-current="page" href="#">
+            1
           </PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink href='#'>2</PagerLink>
+          <PagerLink href="#">2</PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink href='#'>3</PagerLink>
+          <PagerLink href="#">3</PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink next href='#'>
-            <i className='it-chevron-right' />
+          <PagerLink next href="#">
+            <i className="it-chevron-right" />
           </PagerLink>
         </PagerItem>
       </PagerList>
     </Pager>
 
-    <Pager size='sm' className='justify-content-end mb-3'>
+    <Pager size="sm" className="justify-content-end mb-3">
       <PagerList>
         <PagerItem disabled>
-          <PagerLink previous href='#'>
-            <i className='it-chevron-left' />
+          <PagerLink previous href="#">
+            <i className="it-chevron-left" />
           </PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink aria-current='page' href='#'>
-                        1
+          <PagerLink aria-current="page" href="#">
+            1
           </PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink href='#'>2</PagerLink>
+          <PagerLink href="#">2</PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink href='#'>3</PagerLink>
+          <PagerLink href="#">3</PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink next href='#'>
-            <i className='it-chevron-right' />
+          <PagerLink next href="#">
+            <i className="it-chevron-right" />
           </PagerLink>
         </PagerItem>
       </PagerList>
@@ -139,33 +139,33 @@ const AllineamentoComponent = () => (
 )
 
 const ResponsiveComponent = () => (
-  <Pager className='mb-3'>
+  <Pager className="mb-3">
     <PagerList>
       <PagerItem>
-        <PagerLink previous href='#'>
-          <i className='it-chevron-left' />
+        <PagerLink previous href="#">
+          <i className="it-chevron-left" />
         </PagerLink>
       </PagerItem>
-      <PagerItem className='d-sm-block'>
-        <PagerLink href='#'>9</PagerLink>
+      <PagerItem className="d-sm-block">
+        <PagerLink href="#">9</PagerLink>
       </PagerItem>
-      <PagerItem className='d-sm-block'>
-        <PagerLink href='#'>10</PagerLink>
+      <PagerItem className="d-sm-block">
+        <PagerLink href="#">10</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink aria-current='page' href='#'>
-          <span className='d-sm-none'>Pagina&nbsp;</span>11
+        <PagerLink aria-current="page" href="#">
+          <span className="d-sm-none">Pagina&nbsp;</span>11
         </PagerLink>
       </PagerItem>
-      <PagerItem className='d-sm-block'>
-        <PagerLink href='#'>12</PagerLink>
+      <PagerItem className="d-sm-block">
+        <PagerLink href="#">12</PagerLink>
       </PagerItem>
-      <PagerItem className='d-sm-block'>
-        <PagerLink href='#'>13</PagerLink>
+      <PagerItem className="d-sm-block">
+        <PagerLink href="#">13</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink next href='#'>
-          <i className='it-chevron-right' />
+        <PagerLink next href="#">
+          <i className="it-chevron-right" />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -173,45 +173,45 @@ const ResponsiveComponent = () => (
 )
 
 const MoreComponent = () => (
-  <Pager className='mb-3'>
+  <Pager className="mb-3">
     <PagerList>
       <PagerItem>
-        <PagerLink previous href='#'>
-          <i className='it-chevron-left' />
+        <PagerLink previous href="#">
+          <i className="it-chevron-left" />
         </PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>1</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">1</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink tag='span'>…</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink tag="span">…</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>24</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">24</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>25</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">25</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink aria-current='page' href='#'>
-                    26
+        <PagerLink aria-current="page" href="#">
+          26
         </PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>27</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">27</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>28</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">28</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink tag='span'>…</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink tag="span">…</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>50</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">50</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink next href='#'>
-          <i className='it-chevron-right' />
+        <PagerLink next href="#">
+          <i className="it-chevron-right" />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -219,45 +219,45 @@ const MoreComponent = () => (
 )
 
 const ChangerComponent = () => (
-  <Pager className='mb-3'>
+  <Pager className="mb-3">
     <PagerList>
       <PagerItem>
-        <PagerLink previous href='#'>
-          <i className='it-chevron-left' />
+        <PagerLink previous href="#">
+          <i className="it-chevron-left" />
         </PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>1</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">1</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink tag='span'>…</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink tag="span">…</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>24</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">24</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>25</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">25</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink aria-current='page' href='#'>
-                    26
+        <PagerLink aria-current="page" href="#">
+          26
         </PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>27</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">27</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>28</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">28</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink tag='span'>…</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink tag="span">…</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>50</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">50</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink next href='#'>
-          <i className='it-chevron-right' />
+        <PagerLink next href="#">
+          <i className="it-chevron-right" />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -269,56 +269,56 @@ const PageJumper = () => (
   <Form>
     <FormGroup>
       <Input
-        id='jumpToPage'
-        type='text'
-        className='form-control'
-        maxLength='2'
+        id="jumpToPage"
+        type="text"
+        className="form-control"
+        maxLength="2"
       />
-      <Label for='jumpToPage'>Vai a ...</Label>
+      <Label for="jumpToPage">Vai a ...</Label>
     </FormGroup>
   </Form>
 )
 
 const JumpComponent = () => (
-  <Pager className='mb-3'>
+  <Pager className="mb-3">
     <PagerList>
       <PagerItem>
-        <PagerLink previous href='#'>
-          <i className='it-chevron-left' />
+        <PagerLink previous href="#">
+          <i className="it-chevron-left" />
         </PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>1</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">1</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink tag='span'>…</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink tag="span">…</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>24</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">24</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>25</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">25</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink aria-current='page' href='#'>
-                    26
+        <PagerLink aria-current="page" href="#">
+          26
         </PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>27</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">27</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>28</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">28</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink tag='span'>…</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink tag="span">…</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>50</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">50</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink next href='#'>
-          <i className='it-chevron-right' />
+        <PagerLink next href="#">
+          <i className="it-chevron-right" />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -327,25 +327,25 @@ const JumpComponent = () => (
 )
 
 const SimpleComponent = () => (
-  <Pager className='mb-3'>
+  <Pager className="mb-3">
     <PagerList>
       <PagerItem disabled>
-        <PagerLink previous href='#'>
-          <i className='it-chevron-left' />
+        <PagerLink previous href="#">
+          <i className="it-chevron-left" />
         </PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink tag='span'>1</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink tag="span">1</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink tag='span'>/</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink tag="span">/</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink tag='span'>5</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink tag="span">5</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink next href='#'>
-          <i className='it-chevron-right' />
+        <PagerLink next href="#">
+          <i className="it-chevron-right" />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -353,45 +353,45 @@ const SimpleComponent = () => (
 )
 
 const LinkComponent = () => (
-  <Pager className='mb-3'>
+  <Pager className="mb-3">
     <PagerList>
       <PagerItem>
-        <PagerLink previous href='#' className='text'>
-                    Precedente
+        <PagerLink previous href="#" className="text">
+          Precedente
         </PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>1</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">1</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink tag='span'>…</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink tag="span">…</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>24</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">24</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>25</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">25</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink aria-current='page' href='#'>
-                    26
+        <PagerLink aria-current="page" href="#">
+          26
         </PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>27</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">27</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>28</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">28</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink tag='span'>…</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink tag="span">…</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>50</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">50</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink next href='#' className='text'>
-                    Successiva
+        <PagerLink next href="#" className="text">
+          Successiva
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -399,50 +399,50 @@ const LinkComponent = () => (
 )
 
 const TotalComponent = () => (
-  <Pager className='pagination-total mb-3'>
+  <Pager className="pagination-total mb-3">
     <PagerList>
       <PagerItem>
-        <PagerLink previous href='#'>
-          <i className='it-chevron-left' />
+        <PagerLink previous href="#">
+          <i className="it-chevron-left" />
         </PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>1</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">1</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink tag='span'>…</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink tag="span">…</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink aria-current='page' href='#'>
-                    24
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink aria-current="page" href="#">
+          24
         </PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>25</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">25</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink href='#'>26</PagerLink>
+        <PagerLink href="#">26</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>27</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">27</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>28</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">28</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink tag='span'>…</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink tag="span">…</PagerLink>
       </PagerItem>
-      <PagerItem className='d-none d-sm-block'>
-        <PagerLink href='#'>50</PagerLink>
+      <PagerItem className="d-none d-sm-block">
+        <PagerLink href="#">50</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink next href='#'>
-          <i className='it-chevron-right' />
+        <PagerLink next href="#">
+          <i className="it-chevron-right" />
         </PagerLink>
       </PagerItem>
     </PagerList>
     <p>
-      <span className='sr-only'>Pagina</span> 24 di 50
+      <span className="sr-only">Pagina</span> 24 di 50
     </p>
   </Pager>
 )
@@ -463,18 +463,18 @@ const EsempiInterattiviComponent = () => {
     <Pager size={size}>
       <PagerList>
         <PagerItem disabled={disabled}>
-          <PagerLink {...current} previous href='#'>
-            <i className='it-chevron-left' />
+          <PagerLink {...current} previous href="#">
+            <i className="it-chevron-left" />
           </PagerLink>
         </PagerItem>
         <PagerItem disabled={disabled}>
-          <PagerLink {...current} href='#'>
-                        1
+          <PagerLink {...current} href="#">
+            1
           </PagerLink>
         </PagerItem>
         <PagerItem disabled={disabled}>
-          <PagerLink {...current} next href='#'>
-            <i className='it-chevron-right' />
+          <PagerLink {...current} next href="#">
+            <i className="it-chevron-right" />
           </PagerLink>
         </PagerItem>
       </PagerList>
@@ -484,43 +484,76 @@ const EsempiInterattiviComponent = () => {
 
 storiesOf('Componenti/Pager', module)
   .addDecorator(withA11y)
-  .add('Esempi', withInfo({
-    text: Esempi
-  })(EsempiComponent))
-  .add('Stato disabilitato e attivo', withInfo({
-    text: StatoDisabilitatoAttivo
-  })(StatoDisabilitatoAttivoComponent))
-  .add('Allineamento', withInfo({
-    text: Allineamento
-  })(AllineamentoComponent))
+  .add(
+    'Esempi',
+    withInfo({
+      text: Esempi
+    })(EsempiComponent)
+  )
+  .add(
+    'Stato disabilitato e attivo',
+    withInfo({
+      text: StatoDisabilitatoAttivo
+    })(StatoDisabilitatoAttivoComponent)
+  )
+  .add(
+    'Allineamento',
+    withInfo({
+      text: Allineamento
+    })(AllineamentoComponent)
+  )
   .addParameters({ viewport: { defaultViewport: 'iphone6' } })
-  .add('Responsive', withInfo({
-    text: Responsive
-  })(ResponsiveComponent))
+  .add(
+    'Responsive',
+    withInfo({
+      text: Responsive
+    })(ResponsiveComponent)
+  )
   .addDecorator(withKnobs)
-  .add('Esempi interattivi', withInfo({
-    text: EsempiInterattivi
-  })(EsempiInterattiviComponent))
+  .add(
+    'Esempi interattivi',
+    withInfo({
+      text: EsempiInterattivi
+    })(EsempiInterattiviComponent)
+  )
 
 storiesOf('Componenti/Pager/Funzioni aggiuntive', module)
   .addDecorator(withA11y)
-  .add('More', withInfo({
-    text: More
-  })(MoreComponent))
-  .add('Page changer', withInfo({
-    text: Changer,
-    propTablesExclude: [PageChangerExample]
-  })(ChangerComponent))
-  .add('Jump to page', withInfo({
-    text: Jump,
-    propTablesExclude: [Form, FormGroup, Input, Label]
-  })(JumpComponent))
-  .add('Simple mode', withInfo({
-    text: Simple
-  })(SimpleComponent))
-  .add('Link testuali', withInfo({
-    text: Link
-  })(LinkComponent))
-  .add('Total number', withInfo({
-    text: Total
-  })(TotalComponent))
+  .add(
+    'More',
+    withInfo({
+      text: More
+    })(MoreComponent)
+  )
+  .add(
+    'Page changer',
+    withInfo({
+      text: Changer,
+      propTablesExclude: [PageChangerExample]
+    })(ChangerComponent)
+  )
+  .add(
+    'Jump to page',
+    withInfo({
+      text: Jump,
+      propTablesExclude: [Form, FormGroup, Input, Label]
+    })(JumpComponent)
+  )
+  .add(
+    'Simple mode',
+    withInfo({
+      text: Simple
+    })(SimpleComponent)
+  )
+  .add(
+    'Link testuali',
+    withInfo({
+      text: Link
+    })(LinkComponent)
+  )
+  .add(
+    'Total number',
+    withInfo({
+      text: Total
+    })(TotalComponent)
+  )

@@ -61,31 +61,31 @@ const ConIconaSidebarComponent = () => (
   <Sidebar>
     <LinkList>
       <LinkListItem header>HEADER</LinkListItem>
-      <LinkListItem medium active className='left-icon'>
-        <i className='it-chevron-right left' aria-hidden='true' />
-        <svg className='icon icon-sm left'>
-          <use xlinkHref='/svg/sprite.svg#it-star-outline' />
+      <LinkListItem medium active className="left-icon">
+        <i className="it-chevron-right left" aria-hidden="true" />
+        <svg className="icon icon-sm left">
+          <use xlinkHref="/svg/sprite.svg#it-star-outline" />
         </svg>
         <span>Link list active</span>
       </LinkListItem>
       <LinkListItem medium disabled>
-        <i className='it-chevron-right left' aria-hidden='true' />
-        <svg className='icon icon-sm left'>
-          <use xlinkHref='/svg/sprite.svg#it-star-outline' />
+        <i className="it-chevron-right left" aria-hidden="true" />
+        <svg className="icon icon-sm left">
+          <use xlinkHref="/svg/sprite.svg#it-star-outline" />
         </svg>
         <span>Link list disabled</span>
       </LinkListItem>
       <LinkListItem medium>
-        <i className='it-chevron-right left' aria-hidden='true' />
-        <svg className='icon icon-sm left'>
-          <use xlinkHref='/svg/sprite.svg#it-star-outline' />
+        <i className="it-chevron-right left" aria-hidden="true" />
+        <svg className="icon icon-sm left">
+          <use xlinkHref="/svg/sprite.svg#it-star-outline" />
         </svg>
         <span>Link list</span>
       </LinkListItem>
       <LinkListItem medium>
-        <i className='it-chevron-right left' aria-hidden='true' />
-        <svg className='icon icon-sm left'>
-          <use xlinkHref='/svg/sprite.svg#it-star-outline' />
+        <i className="it-chevron-right left" aria-hidden="true" />
+        <svg className="icon icon-sm left">
+          <use xlinkHref="/svg/sprite.svg#it-star-outline" />
         </svg>
         <span>Link list</span>
       </LinkListItem>

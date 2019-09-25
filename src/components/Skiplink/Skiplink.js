@@ -11,7 +11,7 @@ const defaultProps = {
   tag: 'div'
 }
 
-const Skiplink = (props) => {
+const Skiplink = props => {
   const { className, tag: Tag, ...attributes } = props
 
   const classes = classNames(className, 'skiplinks')

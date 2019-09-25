@@ -12,10 +12,8 @@ const defaultProps = {
   tag: 'ul'
 }
 
-const PagerList = (props) => {
-  const {
-    className, size, tag: Tag, ...attributes
-  } = props
+const PagerList = props => {
+  const { className, size, tag: Tag, ...attributes } = props
 
   const listClasses = classNames(className, 'pagination', {
     [`pagination-${size}`]: !!size

@@ -7,9 +7,6 @@ import Separator from './Separator'
 storiesOf('Separator', module).add(
   'Separator',
   withInfo('Basic version')(() => (
-    <Separator
-      colorTop='u-background-50'
-      colorBottom='u-background-grey-20'
-    />
+    <Separator colorTop="u-background-50" colorBottom="u-background-grey-20" />
   ))
 )

@@ -17,40 +17,40 @@ import AllineamentoVerticale from './docs/AllineamentoVerticale.md'
 
 const EsempiComponent = () => (
   <div>
-    <Nav tabs className='mb-3'>
+    <Nav tabs className="mb-3">
       <NavItem>
-        <NavLink href='#' active>
-                    Link Attivo
+        <NavLink href="#" active>
+          Link Attivo
         </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href='#'>Link</NavLink>
+        <NavLink href="#">Link</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href='#'>Link</NavLink>
+        <NavLink href="#">Link</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href='#' disabled>
-                    Link disabilitato
+        <NavLink href="#" disabled>
+          Link disabilitato
         </NavLink>
       </NavItem>
     </Nav>
 
-    <Nav tabs className='nav-dark'>
+    <Nav tabs className="nav-dark">
       <NavItem>
-        <NavLink href='#' active>
-                    Link Attivo
+        <NavLink href="#" active>
+          Link Attivo
         </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href='#'>Link</NavLink>
+        <NavLink href="#">Link</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href='#'>Link</NavLink>
+        <NavLink href="#">Link</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href='#' disabled>
-                    Link disabilitato
+        <NavLink href="#" disabled>
+          Link disabilitato
         </NavLink>
       </NavItem>
     </Nav>
@@ -58,31 +58,49 @@ const EsempiComponent = () => (
 )
 storiesOf('Componenti/Tab', module)
   .addDecorator(withA11y)
-  .add('Esempi', withInfo({
-    text: Esempi
-  })(EsempiComponent))
-  .add('Contenuto', withInfo({
-    text: Contenuto,
-    propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-    propTablesExclude: [TabExample]
-  })(() => <TabExample text />))
-  .add('Icone', withInfo({
-    text: Icone,
-    propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-    propTablesExclude: [TabExample]
-  })(() => <TabExample icons />))
-  .add('Icone e testo', withInfo({
-    text: IconeTesto,
-    propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-    propTablesExclude: [TabExample]
-  })(() => <TabExample text icons />))
-  .add('Tab a bottoni', withInfo({
-    text: TabBottoni,
-    propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-    propTablesExclude: [TabButtonExample]
-  })(() => <TabButtonExample />))
-  .add('Allineamento Verticale', withInfo({
-    text: AllineamentoVerticale,
-    propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-    propTablesExclude: [TabButtonExample]
-  })(() => <TabButtonExample vertical />))
+  .add(
+    'Esempi',
+    withInfo({
+      text: Esempi
+    })(EsempiComponent)
+  )
+  .add(
+    'Contenuto',
+    withInfo({
+      text: Contenuto,
+      propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+      propTablesExclude: [TabExample]
+    })(() => <TabExample text />)
+  )
+  .add(
+    'Icone',
+    withInfo({
+      text: Icone,
+      propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+      propTablesExclude: [TabExample]
+    })(() => <TabExample icons />)
+  )
+  .add(
+    'Icone e testo',
+    withInfo({
+      text: IconeTesto,
+      propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+      propTablesExclude: [TabExample]
+    })(() => <TabExample text icons />)
+  )
+  .add(
+    'Tab a bottoni',
+    withInfo({
+      text: TabBottoni,
+      propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+      propTablesExclude: [TabButtonExample]
+    })(() => <TabButtonExample />)
+  )
+  .add(
+    'Allineamento Verticale',
+    withInfo({
+      text: AllineamentoVerticale,
+      propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+      propTablesExclude: [TabButtonExample]
+    })(() => <TabButtonExample vertical />)
+  )

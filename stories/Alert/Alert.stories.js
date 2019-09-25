@@ -17,46 +17,45 @@ import ChiusuraControllata from './docs/ChiusuraControllata.md'
 
 const EsempiComponent = () => (
   <div>
-    <Alert color='success'>
-            Questo è un alert di <em>success</em>!
+    <Alert color="success">
+      Questo è un alert di <em>success</em>!
     </Alert>
-    <Alert color='danger'>
-            Questo è un alert di <em>danger</em>!
+    <Alert color="danger">
+      Questo è un alert di <em>danger</em>!
     </Alert>
-    <Alert color='warning'>
-            Questo è un alert di <em>warning</em>!
+    <Alert color="warning">
+      Questo è un alert di <em>warning</em>!
     </Alert>
   </div>
 )
 
 const LinkEvidenziatoComponent = () => (
-  <Alert color='danger'>
-        Questo è un alert con un esempio di{' '}
-    <a href='#' className='alert-link'>
-            link
+  <Alert color="danger">
+    Questo è un alert con un esempio di{' '}
+    <a href="#" className="alert-link">
+      link
     </a>{' '}
-        evidenziato.
+    evidenziato.
   </Alert>
 )
 
 const ContenutoAggiuntivoComponent = () => (
   <Alert>
-    <h4 className='alert-heading'>Avviso di successo!</h4>
+    <h4 className="alert-heading">Avviso di successo!</h4>
     <p>
-            Stai leggendo questo importante messaggio di avviso di successo.
-            Questo testo di esempio sarà più a lungo in modo da poter vedere
-            come funzioni la spaziatura all&apos;interno di un avviso con questo
-            tipo di contenuto.
+      Stai leggendo questo importante messaggio di avviso di successo. Questo
+      testo di esempio sarà più a lungo in modo da poter vedere come funzioni la
+      spaziatura all&apos;interno di un avviso con questo tipo di contenuto.
     </p>
     <hr />
-    <p className='mb-0'>
-            Quando necessario, assicurarti di inserire le utilità di margine per
-            mantenere gli spazi equilibrati.
+    <p className="mb-0">
+      Quando necessario, assicurarti di inserire le utilità di margine per
+      mantenere gli spazi equilibrati.
     </p>
   </Alert>
 )
 
-const ChiusuraControllataComponent = () => (<AlertExample />)
+const ChiusuraControllataComponent = () => <AlertExample />
 
 const EsempiInterattiviComponent = () => {
   const colors = ['success', 'danger', 'warning']
@@ -65,28 +64,43 @@ const EsempiInterattiviComponent = () => {
 
   return (
     <Alert color={color} isOpen={open}>
-            Questo è un alert di <em>{color}</em>!
+      Questo è un alert di <em>{color}</em>!
     </Alert>
   )
 }
 
 storiesOf('Componenti/Alert', module)
   .addDecorator(withA11y)
-  .add('Esempi', withInfo({
-    text: Esempi
-  })(EsempiComponent))
-  .add('Esempi Interattivi', withInfo({
-    text: EsempiInterattivi
-  })(EsempiInterattiviComponent))
-  .add('Link evidenziato', withInfo({
-    text: LinkEvidenziato
-  })(LinkEvidenziatoComponent))
-  .add('Contenuto aggiuntivo', withInfo({
-    text: ContenutoAggiuntivo
-  })(ContenutoAggiuntivoComponent))
+  .add(
+    'Esempi',
+    withInfo({
+      text: Esempi
+    })(EsempiComponent)
+  )
+  .add(
+    'Esempi Interattivi',
+    withInfo({
+      text: EsempiInterattivi
+    })(EsempiInterattiviComponent)
+  )
+  .add(
+    'Link evidenziato',
+    withInfo({
+      text: LinkEvidenziato
+    })(LinkEvidenziatoComponent)
+  )
+  .add(
+    'Contenuto aggiuntivo',
+    withInfo({
+      text: ContenutoAggiuntivo
+    })(ContenutoAggiuntivoComponent)
+  )
   .addDecorator(withKnobs)
-  .add('Chiusura Controllata', withInfo({
-    text: ChiusuraControllata,
-    propTables: [Alert],
-    propTablesExclude: [AlertExample]
-  })(ChiusuraControllataComponent))
+  .add(
+    'Chiusura Controllata',
+    withInfo({
+      text: ChiusuraControllata,
+      propTables: [Alert],
+      propTablesExclude: [AlertExample]
+    })(ChiusuraControllataComponent)
+  )
