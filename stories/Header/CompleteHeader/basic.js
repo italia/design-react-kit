@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import classNames from 'classnames'
 
 import { select } from '@storybook/addon-knobs/react'
 import {
@@ -72,7 +73,7 @@ const SlimHeaderFullResponsive = ({ theme }) => {
 // if PropTypes are declared in these components
 export class SlimHeader extends Component {
   state = {
-    collapsed: false
+    collapsed: true
   }
 
   render() {
@@ -89,7 +90,7 @@ export class SlimHeader extends Component {
               <span>Ente appartenenza/Owner</span>
               <Icon icon="it-expand" />
             </HeaderToggler>
-            <Collapse isOpen={this.state.collapsed} header>
+            <Collapse isOpen={!this.state.collapsed} header>
               <Nav inHeader>
                 <NavItem>
                   <NavLink href="#">Link 1</NavLink>
@@ -183,7 +184,7 @@ export class NavHeader extends Component {
       <Header type="navbar" theme={this.props.theme}>
         <HeaderContent expand="lg" megamenu>
           <HeaderToggler
-            onClick={() => this.setState({ collapsed: !this.state.collapsed })}
+            onClick={() => this.setState({ collapsed: isOpen })}
             aria-controls="nav1"
             aria-expanded="false"
             aria-label="Toggle navigation">
@@ -222,6 +223,7 @@ export class NavHeader extends Component {
                     <DropdownMenu>
                       <LinkList>
                         <LinkListItem
+                          header
                           tag="h3"
                           className="no_toc"
                           id="heading-es-1">

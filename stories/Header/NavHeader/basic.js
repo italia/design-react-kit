@@ -30,7 +30,7 @@ const NavHeader = () => {
       <HeaderContent expand="lg" megamenu>
         <HeaderToggler
           onClick={() => {
-            /* set logic state  */
+            /* set logic open state  */
           }}
           aria-controls="nav1"
           aria-expanded="false"
@@ -72,6 +72,7 @@ const NavHeader = () => {
                   <DropdownMenu>
                     <LinkList>
                       <LinkListItem
+                        header
                         tag="h3"
                         className="no_toc"
                         id="heading-es-1">
