@@ -6,9 +6,9 @@ import { withInfo } from '@storybook/addon-info'
 
 import Homepage from './homepage/Homepage';
 
-storiesOf('Introduzione/Templates', module)
+storiesOf('Introduzione/Introduzione', module)
 .addDecorator(withA11y)
 .addDecorator(withKnobs)
-  .add('Homepage', withInfo({
+  .add('Homepage Template', withInfo({
     // text: Esempi
   })(Homepage))
