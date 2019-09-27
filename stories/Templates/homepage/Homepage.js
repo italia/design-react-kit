@@ -140,7 +140,10 @@ export class NavHeader extends Component {
           <Collapse
             isOpen={this.state.collapsed}
             navbar
-            className="navbar-collapsable">
+            header
+            onOverlayClick={() =>
+              this.setState({ collapsed: !this.state.collapsed })
+            }>
             <div className="menu-wrapper">
               <Nav navbar>
                 <NavItem>
