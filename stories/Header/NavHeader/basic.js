@@ -35,7 +35,13 @@ const NavHeader = () => {
           aria-label="Toggle navigation">
           <Icon icon="it-burger" />
         </HeaderToggler>
-        <Collapse isOpen={isOpen} navbar className="navbar-collapsable">
+        <Collapse
+          navbar
+          header
+          isOpen={isOpen}
+          onOverlayClick={() => {
+            /* set close logic here */
+          }}>
           <div className="menu-wrapper">
             <Nav navbar>
               <NavItem active>

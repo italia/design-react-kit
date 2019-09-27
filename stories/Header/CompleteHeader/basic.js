@@ -134,10 +134,11 @@ export class CenterHeader extends Component {
 
 export class NavHeader extends Component {
   state = {
-    collapsed: false
+    collapsed: true
   }
 
   render() {
+    const isOpen = !this.state.collapsed
     return (
       // eslint-disable-next-line react/prop-types
       <Header type="navbar" theme={this.props.theme}>
@@ -150,9 +151,10 @@ export class NavHeader extends Component {
             <Icon icon="it-burger" />
           </HeaderToggler>
           <Collapse
-            isOpen={this.state.collapsed}
+            isOpen={isOpen}
             navbar
-            className="navbar-collapsable">
+            header
+            onOverlayClick={() => this.setState({ collapsed: isOpen })}>
             <div className="menu-wrapper">
               <Nav navbar>
                 <NavItem active>
