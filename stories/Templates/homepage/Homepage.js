@@ -202,12 +202,14 @@ const Homepage = () => {
     <>
       <Headers>
         <SlimHeader theme={theme} />
-        <CenterHeader
-          theme={theme}
-          townName={townName}
-          townTagLine={townTagLine}
-        />
-        <NavHeader theme={theme} />
+        <div className="it-nav-wrapper">
+          <CenterHeader
+            theme={theme}
+            townName={townName}
+            townTagLine={townTagLine}
+          />
+          <NavHeader theme={theme} />
+        </div>
       </Headers>
       <section id="head-section">
         <Container>

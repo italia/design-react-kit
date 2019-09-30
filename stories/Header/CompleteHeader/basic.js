@@ -276,8 +276,10 @@ const CompleteHeader = () => {
   return (
     <Headers>
       <SlimTag theme={theme} />
-      <CenterHeader theme={theme} />
-      <NavHeader theme={theme} />
+      <div className="it-nav-wrapper">
+        <CenterHeader theme={theme} />
+        <NavHeader theme={theme} />
+      </div>
     </Headers>
   )
 }
