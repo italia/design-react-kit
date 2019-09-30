@@ -4,6 +4,8 @@ import { select } from '@storybook/addon-knobs/react'
 import {
   Button,
   Collapse,
+  Row,
+  Col,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
@@ -16,6 +18,8 @@ import {
   HeaderToggler,
   HeaderLinkZone,
   Icon,
+  LinkList,
+  LinkListItem,
   Nav,
   NavItem,
   NavLink,
@@ -23,11 +27,52 @@ import {
   UncontrolledDropdown
 } from '../../../src'
 
+// eslint-disable-next-line react/prop-types
+const SlimHeaderFullResponsive = ({ theme }) => {
+  return (
+    <Header type="slim" theme={theme}>
+      <HeaderContent>
+        <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
+        <HeaderRightZone>
+          <UncontrolledDropdown nav tag="div">
+            <DropdownToggle nav caret>
+              ITA
+              <Icon icon="it-expand" />
+            </DropdownToggle>
+            <DropdownMenu>
+              <Row>
+                <Col size="12">
+                  <LinkList>
+                    <LinkListItem tag={DropdownItem} href="#">
+                      <span>ITA</span>
+                    </LinkListItem>
+                    <LinkListItem tag={DropdownItem} href="#">
+                      <span>ENG</span>
+                    </LinkListItem>
+                  </LinkList>
+                </Col>
+              </Row>
+            </DropdownMenu>
+          </UncontrolledDropdown>
+          <Button color="primary" size="full" className="btn-icon" href="#">
+            <span className="rounded-icon">
+              <Icon color="primary" icon="it-user" />
+            </span>
+            <span className="d-none d-lg-block">
+              Accedi all&#39;area personale
+            </span>
+          </Button>
+        </HeaderRightZone>
+      </HeaderContent>
+    </Header>
+  )
+}
+
 // eslint rule has to be disable for few lines here as Storybook addons will go in error
 // if PropTypes are declared in these components
 export class SlimHeader extends Component {
   state = {
-    collapsed: false
+    collapsed: true
   }
 
   render() {
@@ -44,7 +89,7 @@ export class SlimHeader extends Component {
               <span>Ente appartenenza/Owner</span>
               <Icon icon="it-expand" />
             </HeaderToggler>
-            <Collapse isOpen={this.state.collapsed} header>
+            <Collapse isOpen={!this.state.collapsed} header>
               <Nav inHeader>
                 <NavItem>
                   <NavLink href="#">Link 1</NavLink>
@@ -62,24 +107,18 @@ export class SlimHeader extends Component {
                 <Icon icon="it-expand" />
               </DropdownToggle>
               <DropdownMenu>
-                <div className="row">
-                  <div className="col-12">
-                    <div className="link-list-wrapper">
-                      <ul className="link-list">
-                        <li>
-                          <DropdownItem href="#" className="list-item">
-                            <span>ITA</span>
-                          </DropdownItem>
-                        </li>
-                        <li>
-                          <DropdownItem href="#" className="list-item">
-                            <span>ENG</span>
-                          </DropdownItem>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                <Row>
+                  <Col size="12">
+                    <LinkList>
+                      <LinkListItem tag={DropdownItem} href="#">
+                        <span>ITA</span>
+                      </LinkListItem>
+                      <LinkListItem tag={DropdownItem} href="#">
+                        <span>ENG</span>
+                      </LinkListItem>
+                    </LinkList>
+                  </Col>
+                </Row>
               </DropdownMenu>
             </UncontrolledDropdown>
             <div className="it-access-top-wrapper">
@@ -144,7 +183,7 @@ export class NavHeader extends Component {
       <Header type="navbar" theme={this.props.theme}>
         <HeaderContent expand="lg" megamenu>
           <HeaderToggler
-            onClick={() => this.setState({ collapsed: !this.state.collapsed })}
+            onClick={() => this.setState({ collapsed: isOpen })}
             aria-controls="nav1"
             aria-expanded="false"
             aria-label="Toggle navigation">
@@ -181,38 +220,28 @@ export class NavHeader extends Component {
                       <Icon icon="it-expand" />
                     </DropdownToggle>
                     <DropdownMenu>
-                      <div className="link-list-wrapper">
-                        <ul className="link-list">
-                          <li>
-                            <h3 className="no_toc" id="heading-es-1">
-                              Heading
-                            </h3>
-                          </li>
-                          <li>
-                            <DropdownItem className="list-item" href="#">
-                              <span>Link list 1</span>
-                            </DropdownItem>
-                          </li>
-                          <li>
-                            <DropdownItem className="list-item" href="#">
-                              <span>Link list 2</span>
-                            </DropdownItem>
-                          </li>
-                          <li>
-                            <DropdownItem className="list-item" href="#">
-                              <span>Link list 3</span>
-                            </DropdownItem>
-                          </li>
-                          <li>
-                            <span className="divider"></span>
-                          </li>
-                          <li>
-                            <DropdownItem className="list-item" href="#">
-                              <span>Link list 4</span>
-                            </DropdownItem>
-                          </li>
-                        </ul>
-                      </div>
+                      <LinkList>
+                        <LinkListItem
+                          header
+                          tag="h3"
+                          className="no_toc"
+                          id="heading-es-1">
+                          Heading
+                        </LinkListItem>
+                        <LinkListItem tag={DropdownItem} href="#">
+                          <span>Link list 1</span>
+                        </LinkListItem>
+                        <LinkListItem tag={DropdownItem} href="#">
+                          <span>Link list 2</span>
+                        </LinkListItem>
+                        <LinkListItem tag={DropdownItem} href="#">
+                          <span>Link list 3</span>
+                        </LinkListItem>
+                        <LinkListItem divider />
+                        <LinkListItem tag={DropdownItem} href="#">
+                          <span>Link list 4</span>
+                        </LinkListItem>
+                      </LinkList>
                     </DropdownMenu>
                   </UncontrolledDropdown>
                 </NavItem>
@@ -236,11 +265,20 @@ const CompleteHeader = () => {
     { default: '', light: 'light', dark: 'dark' },
     ''
   )
+  const slimHeaderType = select(
+    'Tipo Slim Header',
+    ['default', 'Full responsive'],
+    'default'
+  )
+  const SlimTag =
+    slimHeaderType === 'default' ? SlimHeader : SlimHeaderFullResponsive
   return (
     <Headers>
-      <SlimHeader theme={theme} />
-      <CenterHeader theme={theme} />
-      <NavHeader theme={theme} />
+      <SlimTag theme={theme} />
+      <div className="it-nav-wrapper">
+        <CenterHeader theme={theme} />
+        <NavHeader theme={theme} />
+      </div>
     </Headers>
   )
 }

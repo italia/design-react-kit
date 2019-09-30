@@ -35,11 +35,13 @@ const LinkListItem = props => {
   let { tag: Tag } = props
   const classes = classNames(
     className,
-    active ? 'active' : false,
-    disabled ? 'disabled' : false,
-    header ? 'header' : false,
-    divider ? 'divider' : false,
-    size || false,
+    {
+      active,
+      disabled,
+      header,
+      divider,
+      size
+    },
     'list-item'
   )
 
@@ -56,21 +58,17 @@ const LinkListItem = props => {
 
   return (
     <li>
-      {(() => {
-        if (header && href) {
-          return (
-            <Tag>
-              <a // eslint-disable-line jsx-a11y/anchor-has-content
-                href={href || '#'}
-                {...attributes}
-                className={classes}
-              />
-            </Tag>
-          )
-        }
-
-        return <Tag href={href || '#'} {...attributes} className={classes} />
-      })()}
+      {header && href ? (
+        <Tag>
+          <a // eslint-disable-line jsx-a11y/anchor-has-content
+            href={href || '#'}
+            {...attributes}
+            className={classes}
+          />
+        </Tag>
+      ) : (
+        <Tag href={href || '#'} {...attributes} className={classes} />
+      )}
     </li>
   )
 }

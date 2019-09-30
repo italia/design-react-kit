@@ -11,7 +11,11 @@ import {
   DropdownItem,
   DropdownMenu,
   DropdownToggle,
-  UncontrolledDropdown
+  UncontrolledDropdown,
+  Row,
+  Col,
+  LinkList,
+  LinkListItem
 } from '../../../src'
 
 const SlimHeader = () => {
@@ -27,29 +31,23 @@ const SlimHeader = () => {
               <Icon icon="it-expand" />
             </DropdownToggle>
             <DropdownMenu>
-              <div className="row">
-                <div className="col-12">
-                  <div className="link-list-wrapper">
-                    <ul className="link-list">
-                      <li>
-                        <DropdownItem href="#" className="list-item">
-                          <span>ITA</span>
-                        </DropdownItem>
-                      </li>
-                      <li>
-                        <DropdownItem href="#" className="list-item">
-                          <span>ENG</span>
-                        </DropdownItem>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <Row>
+                <Col size="12">
+                  <LinkList>
+                    <LinkListItem tag={DropdownItem} href="#">
+                      <span>ITA</span>
+                    </LinkListItem>
+                    <LinkListItem tag={DropdownItem} href="#">
+                      <span>ENG</span>
+                    </LinkListItem>
+                  </LinkList>
+                </Col>
+              </Row>
             </DropdownMenu>
           </UncontrolledDropdown>
           <Button color="primary" size="full" className="btn-icon" href="#">
             <span className="rounded-icon">
-              <Icon color="icon-primary" icon="it-user" />
+              <Icon color="primary" icon="it-user" />
             </span>
             <span className="d-none d-lg-block">
               Accedi all&#39;area personale

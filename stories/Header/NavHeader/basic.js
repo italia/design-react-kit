@@ -13,7 +13,9 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem
+  DropdownItem,
+  LinkList,
+  LinkListItem
 } from '../../../src'
 
 const NavHeader = () => {
@@ -28,7 +30,7 @@ const NavHeader = () => {
       <HeaderContent expand="lg" megamenu>
         <HeaderToggler
           onClick={() => {
-            /* set logic state  */
+            /* set logic open state  */
           }}
           aria-controls="nav1"
           aria-expanded="false"
@@ -68,38 +70,28 @@ const NavHeader = () => {
                     <Icon icon="it-expand" />
                   </DropdownToggle>
                   <DropdownMenu>
-                    <div className="link-list-wrapper">
-                      <ul className="link-list">
-                        <li>
-                          <h3 className="no_toc" id="heading-es-1">
-                            Heading
-                          </h3>
-                        </li>
-                        <li>
-                          <DropdownItem className="list-item" href="#">
-                            <span>Link list 1</span>
-                          </DropdownItem>
-                        </li>
-                        <li>
-                          <DropdownItem className="list-item" href="#">
-                            <span>Link list 2</span>
-                          </DropdownItem>
-                        </li>
-                        <li>
-                          <DropdownItem className="list-item" href="#">
-                            <span>Link list 3</span>
-                          </DropdownItem>
-                        </li>
-                        <li>
-                          <span className="divider"></span>
-                        </li>
-                        <li>
-                          <DropdownItem className="list-item" href="#">
-                            <span>Link list 4</span>
-                          </DropdownItem>
-                        </li>
-                      </ul>
-                    </div>
+                    <LinkList>
+                      <LinkListItem
+                        header
+                        tag="h3"
+                        className="no_toc"
+                        id="heading-es-1">
+                        Heading
+                      </LinkListItem>
+                      <LinkListItem tag={DropdownItem} href="#">
+                        <span>Link list 1</span>
+                      </LinkListItem>
+                      <LinkListItem tag={DropdownItem} href="#">
+                        <span>Link list 2</span>
+                      </LinkListItem>
+                      <LinkListItem tag={DropdownItem} href="#">
+                        <span>Link list 3</span>
+                      </LinkListItem>
+                      <LinkListItem divider />
+                      <LinkListItem tag={DropdownItem} href="#">
+                        <span>Link list 4</span>
+                      </LinkListItem>
+                    </LinkList>
                   </DropdownMenu>
                 </UncontrolledDropdown>
               </NavItem>

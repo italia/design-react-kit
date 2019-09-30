@@ -80,6 +80,7 @@ export {
   ListGroupItemHeading,
   UncontrolledAlert,
   UncontrolledButtonDropdown,
+  UncontrolledCollapse,
   UncontrolledDropdown,
   UncontrolledTooltip,
   Util

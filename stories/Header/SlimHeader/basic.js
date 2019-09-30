@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { boolean, select } from '@storybook/addon-knobs/react'
+import { boolean, select, text } from '@storybook/addon-knobs/react'
 import {
   Button,
   Collapse,
@@ -9,6 +9,8 @@ import {
   HeaderLinkZone,
   HeaderRightZone,
   Icon,
+  LinkList,
+  LinkListItem,
   Nav,
   NavItem,
   NavLink,
@@ -17,22 +19,25 @@ import {
   DropdownItem,
   DropdownMenu,
   DropdownToggle,
+  Row,
+  Col,
   UncontrolledDropdown
 } from '../../../src'
 
 const SlimHeader = () => {
   const theme = select('Tema', { default: '', light: 'light' }, '')
   const isOpen = boolean('Aperto (mobile)', false)
+  const brandText = text('Brand/Ente', 'Ente appartenenza/Owner')
   return (
     <Header type="slim" theme={theme}>
       <HeaderContent>
-        <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
+        <HeaderBrand>{brandText}</HeaderBrand>
         <HeaderLinkZone>
           <HeaderToggler
             onClick={() => {
               /* open logic state here */
             }}>
-            <span>Ente appartenenza/Owner</span>
+            <span>{brandText}</span>
             <Icon icon="it-expand" />
           </HeaderToggler>
           <Collapse isOpen={isOpen} header>
@@ -52,27 +57,25 @@ const SlimHeader = () => {
           <UncontrolledDropdown nav tag="div">
             <DropdownToggle nav caret>
               ITA
-              <Icon icon="it-expand" />
+              <Icon
+                icon="it-expand"
+                color="icon-white"
+                className="d-none d-lg-block"
+              />
             </DropdownToggle>
             <DropdownMenu>
-              <div className="row">
-                <div className="col-12">
-                  <div className="link-list-wrapper">
-                    <ul className="link-list">
-                      <li>
-                        <DropdownItem href="#" className="list-item">
-                          <span>ITA</span>
-                        </DropdownItem>
-                      </li>
-                      <li>
-                        <DropdownItem href="#" className="list-item">
-                          <span>ENG</span>
-                        </DropdownItem>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <Row>
+                <Col size="12">
+                  <LinkList>
+                    <LinkListItem tag={DropdownItem} href="#">
+                      <span>ITA</span>
+                    </LinkListItem>
+                    <LinkListItem tag={DropdownItem} href="#">
+                      <span>ENG</span>
+                    </LinkListItem>
+                  </LinkList>
+                </Col>
+              </Row>
             </DropdownMenu>
           </UncontrolledDropdown>
           <div className="it-access-top-wrapper">
