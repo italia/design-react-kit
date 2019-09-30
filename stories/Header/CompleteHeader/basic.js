@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import classNames from 'classnames'
 
 import { select } from '@storybook/addon-knobs/react'
 import {
