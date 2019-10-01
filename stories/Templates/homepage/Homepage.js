@@ -43,7 +43,7 @@ export class SlimHeader extends Component {
       // eslint-disable-next-line react/prop-types
       <Header type="slim" theme={this.props.theme}>
         <HeaderContent>
-          <HeaderBrand>{regionName}</HeaderBrand>
+          <HeaderBrand responsive>{regionName}</HeaderBrand>
           <HeaderRightZone>
             <UncontrolledDropdown nav tag="div">
               <DropdownToggle nav caret>

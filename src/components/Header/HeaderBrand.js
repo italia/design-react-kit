@@ -1,15 +1,19 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { NavbarBrand } from 'reactstrap'
 import HeaderContext, { CENTER } from './HeaderContext'
 import Icon from '../Icon/Icon'
 
 const propTypes = {
-  ...NavbarBrand.propTypes
+  ...NavbarBrand.propTypes,
+  /** Da usare con il componente Header Nav in versione "responsive" */
+  responsive: PropTypes.bool
 }
 
 const defaultProps = {
-  ...NavbarBrand.defaultProps
+  ...NavbarBrand.defaultProps,
+  responsive: false
 }
 
 export default class HeaderBrand extends PureComponent {
@@ -33,10 +37,19 @@ export default class HeaderBrand extends PureComponent {
   }
 
   render() {
-    const { className, href, iconName, children, ...attributes } = this.props
+    const {
+      className,
+      href,
+      iconName,
+      children,
+      responsive,
+      ...attributes
+    } = this.props
     const { type } = this.context
     if (type !== CENTER) {
-      const classes = classNames('d-none d-lg-block', className)
+      const classes = classNames('d-lg-block', className, {
+        'd-none': !responsive
+      })
       return (
         <NavbarBrand className={classes} href={href} {...attributes}>
           {children}
