@@ -18,7 +18,7 @@ const propTypes = {
    *  il valore di default è "dark". Per l'Header di tipo "nav" il tema di default è "light"
    *  in mobile, mentre "dark" in versione desktop.
    */
-  theme: PropTypes.oneOf(['light', 'dark'])
+  theme: PropTypes.oneOf(['', 'light', 'dark'])
 }
 
 const defaultProps = {

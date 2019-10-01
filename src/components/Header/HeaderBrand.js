@@ -6,13 +6,27 @@ import HeaderContext, { CENTER } from './HeaderContext'
 import Icon from '../Icon/Icon'
 
 const propTypes = {
-  ...NavbarBrand.propTypes,
+  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  /** Classi aggiuntive da usare per il componente HeaderBrand */
+  className: PropTypes.string,
+  /** Da usare per la sovrascrittura di classi predefinite */
+  cssModule: PropTypes.object,
   /** Da usare con il componente Header Nav in versione "responsive" */
-  responsive: PropTypes.bool
+  responsive: PropTypes.bool,
+  /** Da utilizzare per specificare URL risorsa esterna. */
+  href: PropTypes.string,
+  /** Icona da utilizzare nel componente. Utilizzata unicamente quando l'Header è di tipo Center.  */
+  iconName: PropTypes.string,
+  /** Elementi React da renderizzare al proprio interno. */
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ])
 }
 
 const defaultProps = {
-  ...NavbarBrand.defaultProps,
+  tag: 'a',
   responsive: false
 }
 

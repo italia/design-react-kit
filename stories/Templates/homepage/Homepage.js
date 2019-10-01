@@ -94,23 +94,23 @@ export class CenterHeader extends Component {
           </HeaderBrand>
           <HeaderRightZone>
             <HeaderSocialsZone label="Seguici su">
-              <Nav inHeader>
-                <NavItem>
-                  <NavLink href="#" aria-label="Facebook" target="_blank">
+              <ul>
+                <li>
+                  <a href="#" aria-label="Facebook" target="_blank">
                     <Icon icon="it-facebook" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#" aria-label="Github" target="_blank">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Github" target="_blank">
                     <Icon icon="it-github" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#" aria-label="Twitter" target="_blank">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Twitter" target="_blank">
                     <Icon icon="it-twitter" />
-                  </NavLink>
-                </NavItem>
-              </Nav>
+                  </a>
+                </li>
+              </ul>
             </HeaderSocialsZone>
             <HeaderSearch label="Cerca" iconName="it-search" />
           </HeaderRightZone>
@@ -161,7 +161,7 @@ export class NavHeader extends Component {
                   <NavLink href="#">Documenti e Dati</NavLink>
                 </NavItem>
               </Nav>
-              <Nav navbar class="navbar-secondary">
+              <Nav navbar className="navbar-secondary">
                 <NavItem>
                   <NavLink href="#">
                     <span>Argomento 1</span>
@@ -266,9 +266,7 @@ const Homepage = () => {
                     <CardBody className="p-4">
                       <CardCategory>
                         <Icon icon="it-pa" />
-                        <a className="category" href="#">
-                          Giunta e consiglio
-                        </a>
+                        Giunta e consiglio
                       </CardCategory>
                       <CardTitle className="font-weight-semibold">
                         Mario Rossi
@@ -291,15 +289,13 @@ const Homepage = () => {
                     href="/design-comuni-prototipi/esempi/bootstrap-italia/template-amministrazione.html"
                   />
                 </Card>
-                <Card teaser noWrapper class="no-after rounded shadow">
-                  <CardBody class="pb-5">
+                <Card teaser noWrapper className="no-after rounded shadow">
+                  <CardBody className="pb-5">
                     <CardCategory>
                       <Icon icon="it-pa" />
-                      <a className="category" href="#">
-                        Pagamenti
-                      </a>
+                      Pagamenti
                     </CardCategory>
-                    <CardTitle class="font-weight-semibold">
+                    <CardTitle className="font-weight-semibold">
                       TARI - Tassa dei rifiuti
                     </CardTitle>
                     <CardText>
@@ -314,15 +310,13 @@ const Homepage = () => {
                     href="#"
                   />
                 </Card>
-                <Card noWrapper teaser class="no-after rounded shadow">
-                  <CardBody class="pb-5">
+                <Card noWrapper teaser className="no-after rounded shadow">
+                  <CardBody className="pb-5">
                     <CardCategory>
                       <Icon icon="it-pa" />
-                      <a className="category" href="#">
-                        Bandi
-                      </a>
+                      Bandi
                     </CardCategory>
-                    <CardTitle class="font-weight-semibold">
+                    <CardTitle className="font-weight-semibold">
                       Come partecipare ad un bando
                     </CardTitle>
                     <CardText>

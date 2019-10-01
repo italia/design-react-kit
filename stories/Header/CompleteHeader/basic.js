@@ -90,14 +90,12 @@ export class SlimHeader extends Component {
               <Icon icon="it-expand" />
             </HeaderToggler>
             <Collapse isOpen={!this.state.collapsed} header>
-              <Nav inHeader>
-                <NavItem>
-                  <NavLink href="#">Link 1</NavLink>
-                </NavItem>
-                <NavItem active>
-                  <NavLink href="#">Link 2 Active</NavLink>
-                </NavItem>
-              </Nav>
+              <LinkList>
+                <LinkListItem href="#">Link 1</LinkListItem>
+                <LinkListItem href="#" active>
+                  Link 2 Active
+                </LinkListItem>
+              </LinkList>
             </Collapse>
           </HeaderLinkZone>
           <HeaderRightZone>
@@ -145,23 +143,23 @@ export class CenterHeader extends Component {
           </HeaderBrand>
           <HeaderRightZone>
             <HeaderSocialsZone label="Seguici su">
-              <Nav inHeader>
-                <NavItem>
-                  <NavLink href="#" aria-label="Facebook" target="_blank">
+              <ul>
+                <li>
+                  <a href="#" aria-label="Facebook" target="_blank">
                     <Icon icon="it-facebook" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#" aria-label="Github" target="_blank">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Github" target="_blank">
                     <Icon icon="it-github" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#" aria-label="Twitter" target="_blank">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Twitter" target="_blank">
                     <Icon icon="it-twitter" />
-                  </NavLink>
-                </NavItem>
-              </Nav>
+                  </a>
+                </li>
+              </ul>
             </HeaderSocialsZone>
             <HeaderSearch label="Cerca" iconName="it-search" />
           </HeaderRightZone>

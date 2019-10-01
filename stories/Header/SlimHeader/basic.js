@@ -11,9 +11,6 @@ import {
   Icon,
   LinkList,
   LinkListItem,
-  Nav,
-  NavItem,
-  NavLink,
   HeaderBrand,
   HeaderToggler,
   DropdownItem,
@@ -41,16 +38,12 @@ const SlimHeader = () => {
             <Icon icon="it-expand" />
           </HeaderToggler>
           <Collapse isOpen={isOpen} header>
-            <Nav inHeader>
-              <NavItem>
-                <NavLink href="#">Link 1</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#" active>
-                  Link 2 Active
-                </NavLink>
-              </NavItem>
-            </Nav>
+            <LinkList>
+              <LinkListItem href="#">Link 1</LinkListItem>
+              <LinkListItem href="#" active>
+                Link 2 Active
+              </LinkListItem>
+            </LinkList>
           </Collapse>
         </HeaderLinkZone>
         <HeaderRightZone>

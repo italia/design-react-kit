@@ -8,9 +8,6 @@ import {
   HeaderRightZone,
   HeaderSocialsZone,
   Icon,
-  Nav,
-  NavItem,
-  NavLink,
   HeaderBrand
 } from '../../../src'
 
@@ -27,23 +24,23 @@ const CenterHeader = () => {
         </HeaderBrand>
         <HeaderRightZone>
           <HeaderSocialsZone label="Seguici su">
-            <Nav inHeader>
-              <NavItem>
-                <NavLink href="#" aria-label="Facebook" target="_blank">
+            <ul>
+              <li>
+                <a href="#" aria-label="Facebook" target="_blank">
                   <Icon icon="it-facebook" />
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#" aria-label="Github" target="_blank">
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="Github" target="_blank">
                   <Icon icon="it-github" />
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#" aria-label="Twitter" target="_blank">
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="Twitter" target="_blank">
                   <Icon icon="it-twitter" />
-                </NavLink>
-              </NavItem>
-            </Nav>
+                </a>
+              </li>
+            </ul>
           </HeaderSocialsZone>
           <HeaderSearch label="Cerca" iconName="it-search" />
         </HeaderRightZone>

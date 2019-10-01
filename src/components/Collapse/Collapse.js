@@ -55,7 +55,7 @@ const Collapse = ({
       className={classes}
       {...attributes}
       navbar={navbar}
-      inOpen={isOpen}>
+      isOpen={isOpen}>
       {children}
     </CollapseBase>
   )
