@@ -212,38 +212,6 @@ export class NavHeader extends Component {
                   <NavLink href="#">Link 4</NavLink>
                 </NavItem>
                 <NavItem>
-                  <UncontrolledDropdown nav tag="div">
-                    <DropdownToggle nav caret>
-                      Dropdown item
-                      <Icon icon="it-expand" />
-                    </DropdownToggle>
-                    <DropdownMenu>
-                      <LinkList>
-                        <LinkListItem
-                          header
-                          tag="h3"
-                          className="no_toc"
-                          id="heading-es-1">
-                          Heading
-                        </LinkListItem>
-                        <LinkListItem tag={DropdownItem} href="#">
-                          <span>Link list 1</span>
-                        </LinkListItem>
-                        <LinkListItem tag={DropdownItem} href="#">
-                          <span>Link list 2</span>
-                        </LinkListItem>
-                        <LinkListItem tag={DropdownItem} href="#">
-                          <span>Link list 3</span>
-                        </LinkListItem>
-                        <LinkListItem divider />
-                        <LinkListItem tag={DropdownItem} href="#">
-                          <span>Link list 4</span>
-                        </LinkListItem>
-                      </LinkList>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
-                </NavItem>
-                <NavItem>
                   <NavLink href="#" disabled>
                     Megamenu label
                   </NavLink>
