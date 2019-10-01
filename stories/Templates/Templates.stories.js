@@ -3,14 +3,14 @@ import { withKnobs } from '@storybook/addon-knobs/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 
-import Homepage from './homepage/Homepage'
-import Amministrazione from './amministrazione/Amministrazione'
-import Servizi from './servizi/Servizi'
+import Homepage from './others/Homepage'
+import Amministrazione from './first-level/Amministrazione'
+import Servizi from './first-level/Servizi'
 
 // doc
-import HomepageText from './homepage/Homepage.md'
-import AmministrazioneText from './amministrazione/Amministrazione.md'
-import ServiziText from './servizi/Servizi.md'
+import HomepageText from './docs/Homepage.md'
+import AmministrazioneText from './docs/Amministrazione.md'
+import ServiziText from './docs/Servizi.md'
 
 storiesOf('Introduzione/Introduzione/Kit Comuni', module)
   .addDecorator(withA11y)
@@ -22,13 +22,13 @@ storiesOf('Introduzione/Introduzione/Kit Comuni', module)
     })(Homepage)
   )
   .add(
-    'Amministrazione Template',
+    'Amministrazione - Primo livello - Template',
     withInfo({
       text: AmministrazioneText
     })(Amministrazione)
   )
   .add(
-    'Servizi Template',
+    'Servizi  - Primo livello - Template',
     withInfo({
       text: ServiziText
     })(Servizi)
