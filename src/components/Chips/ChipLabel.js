@@ -13,12 +13,8 @@ const defaultProps = {
 
 const ChipLabel = props => {
   const { className, tag: Tag, ...attributes } = props
-  const classes = classNames(
-    'chip-label'
-  )
-  return (
-    <span {...attributes} className={classes} />
-  )
+  const classes = classNames('chip-label')
+  return <span {...attributes} className={classes} />
 }
 
 ChipLabel.propTypes = propTypes

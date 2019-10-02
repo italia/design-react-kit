@@ -12,67 +12,83 @@ import DisabledChip from './docs/DisabledChip.md'
 import ChipGroups from './docs/ChipGroups.md'
 
 const VersioneStandardComponent = () => (
-  <div class='row'>
-    <div class='col-12 col-md-6'>
+  <div className="row">
+    <div className="col-12 col-md-6">
       <h4>Versione Standard</h4>
-      <p class='mt-4 mb-2'>Solo testo</p>
+      <p className="mt-4 mb-2">Solo testo</p>
       <Chip simple>
         <ChipLabel>Label</ChipLabel>
       </Chip>
-      <p class='mt-4 mb-2'>Testo e chiusura</p>
+      <p className="mt-4 mb-2">Testo e chiusura</p>
       <Chip>
         <ChipLabel>Label</ChipLabel>
-        <Button close><Icon icon='it-close' /></Button>
+        <Button close>
+          <Icon icon="it-close" />
+        </Button>
       </Chip>
-      <p class='mt-4 mb-2'>Icona, testo e chiusura</p>
+      <p className="mt-4 mb-2">Icona, testo e chiusura</p>
       <Chip>
-        <Icon icon='it-github' size='icon-xs' />
+        <Icon icon="it-github" size="icon-xs" />
         <ChipLabel>Label</ChipLabel>
-        <Button close><Icon icon='it-close' /></Button>
+        <Button close>
+          <Icon icon="it-close" />
+        </Button>
       </Chip>
-      <p class='mt-4 mb-2'>Avatar, testo e chiusura</p>
+      <p className="mt-4 mb-2">Avatar, testo e chiusura</p>
       <Chip>
-        <div class='avatar size-xs'>
-          <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
+        <div className="avatar size-xs">
+          <img
+            src="https://randomuser.me/api/portraits/men/46.jpg"
+            alt="Mario Rossi"
+          />
         </div>
         <ChipLabel>Label</ChipLabel>
-        <Button close><Icon icon='it-close' /></Button>
+        <Button close>
+          <Icon icon="it-close" />
+        </Button>
       </Chip>
     </div>
   </div>
-
 )
 
 const GreatVersionComponent = () => (
-  <div class='row'>
-    <div class='col-12 col-md-6'>
+  <div className="row">
+    <div className="col-12 col-md-6">
       <h4>Versione Grande</h4>
-      <p class='mt-4 mb-2'>Solo testo</p>
+      <p className="mt-4 mb-2">Solo testo</p>
       <Chip simple large>
         <ChipLabel>Label</ChipLabel>
       </Chip>
-      <p class='mt-4 mb-2'>Testo e chiusura</p>
+      <p className="mt-4 mb-2">Testo e chiusura</p>
       <Chip large>
         <ChipLabel>Label</ChipLabel>
-        <Button close><Icon icon='it-close' /></Button>
+        <Button close>
+          <Icon icon="it-close" />
+        </Button>
       </Chip>
-      <p class='mt-4 mb-2'>Icona, testo e chiusura</p>
+      <p className="mt-4 mb-2">Icona, testo e chiusura</p>
       <Chip large>
-        <Icon icon='it-github' size='icon-xs' />
+        <Icon icon="it-github" size="icon-xs" />
         <ChipLabel>Label</ChipLabel>
-        <Button close><Icon icon='it-close' /></Button>
+        <Button close>
+          <Icon icon="it-close" />
+        </Button>
       </Chip>
-      <p class='mt-4 mb-2'>Avatar, testo e chiusura</p>
+      <p className="mt-4 mb-2">Avatar, testo e chiusura</p>
       <Chip large>
-        <div class='avatar size-xs'>
-          <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
+        <div className="avatar size-xs">
+          <img
+            src="https://randomuser.me/api/portraits/men/46.jpg"
+            alt="Mario Rossi"
+          />
         </div>
         <ChipLabel>Label</ChipLabel>
-        <Button close><Icon icon='it-close' /></Button>
+        <Button close>
+          <Icon icon="it-close" />
+        </Button>
       </Chip>
     </div>
   </div>
-
 )
 
 const DisabledChipComponent = () => (
@@ -82,21 +98,29 @@ const DisabledChipComponent = () => (
     </Chip>
     <Chip simple large disabled>
       <ChipLabel>Label Disabled</ChipLabel>
-      <Button close disabled><Icon icon='it-close' /></Button>
+      <Button close disabled>
+        <Icon icon="it-close" />
+      </Button>
     </Chip>
     <Chip large disabled>
-      <Icon icon='it-github' size='icon-xs' />
+      <Icon icon="it-github" size="icon-xs" />
       <ChipLabel>Label Disabled</ChipLabel>
-      <Button close disabled><Icon icon='it-close' /></Button>
+      <Button close disabled>
+        <Icon icon="it-close" />
+      </Button>
     </Chip>
     <Chip large disabled>
-      <div class='avatar size-xs'>
-        <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
+      <div className="avatar size-xs">
+        <img
+          src="https://randomuser.me/api/portraits/men/46.jpg"
+          alt="Mario Rossi"
+        />
       </div>
       <ChipLabel>Label</ChipLabel>
-      <Button close disabled><Icon icon='it-close' /></Button>
+      <Button close disabled>
+        <Icon icon="it-close" />
+      </Button>
     </Chip>
-
   </div>
 )
 
@@ -107,19 +131,28 @@ const ChipGroupsComponent = () => (
     </Chip>
     <Chip>
       <ChipLabel>Label</ChipLabel>
-      <Button close><Icon icon='it-close' /></Button>
+      <Button close>
+        <Icon icon="it-close" />
+      </Button>
     </Chip>
     <Chip>
-      <Icon icon='it-github' size='icon-xs' />
+      <Icon icon="it-github" size="icon-xs" />
       <ChipLabel>Label </ChipLabel>
-      <Button close><Icon icon='it-close' /></Button>
+      <Button close>
+        <Icon icon="it-close" />
+      </Button>
     </Chip>
     <Chip>
-      <div class='avatar size-xs'>
-        <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
+      <div className="avatar size-xs">
+        <img
+          src="https://randomuser.me/api/portraits/men/46.jpg"
+          alt="Mario Rossi"
+        />
       </div>
       <ChipLabel>Label</ChipLabel>
-      <Button close><Icon icon='it-close' /></Button>
+      <Button close>
+        <Icon icon="it-close" />
+      </Button>
     </Chip>
     <hr />
     <Chip simple large>
@@ -127,21 +160,29 @@ const ChipGroupsComponent = () => (
     </Chip>
     <Chip large>
       <ChipLabel>Label</ChipLabel>
-      <Button close><Icon icon='it-close' /></Button>
+      <Button close>
+        <Icon icon="it-close" />
+      </Button>
     </Chip>
     <Chip large>
-      <Icon icon='it-github' size='icon-xs' />
+      <Icon icon="it-github" size="icon-xs" />
       <ChipLabel>Label </ChipLabel>
-      <Button close><Icon icon='it-close' /></Button>
+      <Button close>
+        <Icon icon="it-close" />
+      </Button>
     </Chip>
     <Chip large>
-      <div class='avatar size-xs'>
-        <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
+      <div className="avatar size-xs">
+        <img
+          src="https://randomuser.me/api/portraits/men/46.jpg"
+          alt="Mario Rossi"
+        />
       </div>
       <ChipLabel>Label</ChipLabel>
-      <Button close><Icon icon='it-close' /></Button>
+      <Button close>
+        <Icon icon="it-close" />
+      </Button>
     </Chip>
-
   </div>
 )
 
@@ -151,55 +192,31 @@ storiesOf('Componenti/Chips', module)
     'Standard Version',
     withInfo({
       text: VersioneStandard,
-      propTables: [
-        Chip,
-        ChipLabel
-      ],
-      propTablesExclude: [
-        Button,
-        Icon
-      ]
+      propTables: [Chip, ChipLabel],
+      propTablesExclude: [Button, Icon]
     })(VersioneStandardComponent)
   )
   .add(
     'Great Version',
     withInfo({
       text: GreatVersion,
-      propTables: [
-        Chip,
-        ChipLabel
-      ],
-      propTablesExclude: [
-        Button,
-        Icon
-      ]
+      propTables: [Chip, ChipLabel],
+      propTablesExclude: [Button, Icon]
     })(GreatVersionComponent)
   )
   .add(
     'Disabled Chip',
     withInfo({
       text: DisabledChip,
-      propTables: [
-        Chip,
-        ChipLabel
-      ],
-      propTablesExclude: [
-        Button,
-        Icon
-      ]
+      propTables: [Chip, ChipLabel],
+      propTablesExclude: [Button, Icon]
     })(DisabledChipComponent)
   )
   .add(
     'Chip Groups',
     withInfo({
       text: ChipGroups,
-      propTables: [
-        Chip,
-        ChipLabel
-      ],
-      propTablesExclude: [
-        Button,
-        Icon
-      ]
+      propTables: [Chip, ChipLabel],
+      propTablesExclude: [Button, Icon]
     })(ChipGroupsComponent)
   )

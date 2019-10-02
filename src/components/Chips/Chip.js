@@ -16,7 +16,8 @@ const defaultProps = {
 
 const Chip = props => {
   const { className, tag: Tag, simple, large, disabled, ...attributes } = props
-  const wrapperClasses = classNames(className,
+  const wrapperClasses = classNames(
+    className,
     simple ? 'chip-simple' : false,
     large ? 'chip-lg' : false,
     disabled ? 'chip-disabled' : false,
@@ -25,15 +26,10 @@ const Chip = props => {
 
   //   const classes = classNames(className, sublist ? 'link-sublist' : 'link-list')
 
-  return (
-    <Tag className={wrapperClasses} {...attributes} />
-
-  )
+  return <Tag className={wrapperClasses} {...attributes} />
 }
 
 Chip.propTypes = propTypes
 Chip.defaultProps = defaultProps
 
 export default Chip
-
-
