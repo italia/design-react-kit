@@ -5,7 +5,7 @@ import { withInfo } from '@storybook/addon-info'
 
 import { Skiplink, SkiplinkItem } from '../../src'
 
-import SkipLinkExample from './SkipLinkExample'
+import SkiplinkExample from './SkiplinkExample'
 
 import Esempi from './docs/Esempi.md'
 
@@ -16,6 +16,6 @@ storiesOf('Componenti/Skiplink', module)
     withInfo({
       text: Esempi,
       propTables: [Skiplink, SkiplinkItem],
-      propTablesExclude: [SkipLinkExample]
-    })(() => <SkipLinkExample />)
+      propTablesExclude: [SkiplinkExample]
+    })(() => <SkiplinkExample />)
   )
