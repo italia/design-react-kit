@@ -11,14 +11,10 @@ class CollapseExample extends React.Component {
   render() {
     return (
       <div>
-        <Button
-          color="primary"
-          onClick={this.toggle}>
+        <Button color="primary" onClick={this.toggle}>
           Link with href
         </Button>{' '}
-        <Button
-          color="primary"
-          onClick={this.toggle}>
+        <Button color="primary" onClick={this.toggle}>
           Button with data-target
         </Button>
         <Collapse isOpen={this.state.collapse}>
@@ -30,7 +26,7 @@ class CollapseExample extends React.Component {
               ea proident.
             </CardBody>
           </Card>
-        </Collapse>  
+        </Collapse>
       </div>
     )
   }
