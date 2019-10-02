@@ -83,6 +83,7 @@ class Collapse extends Component {
 
   onExiting(node) {
     // getting this variable triggers a reflow
+    const _unused = node.offsetHeight;
     this.setState({ height: 0 })
     this.props.onExiting(node)
   }
