@@ -1,0 +1,1 @@
+Adding the keyword `disabled` to the `<Chip>` and `<Button>` component disables the chip.

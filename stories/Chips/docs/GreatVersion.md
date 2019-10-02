@@ -1,0 +1,1 @@
+Adding the keyword `large` to the `<Chip>` component gives a larger version of the Chip.

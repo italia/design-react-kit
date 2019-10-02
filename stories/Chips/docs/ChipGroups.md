@@ -1,0 +1,1 @@
+Chip groups are displayed inline.
