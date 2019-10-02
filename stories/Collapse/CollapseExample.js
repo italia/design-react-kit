@@ -14,13 +14,11 @@ class CollapseExample extends React.Component {
         <Button
           color="primary"
           onClick={this.toggle}
-          style={{ marginBottom: '1rem' }}>
           Link with href
-        </Button>
+        </Button>{' '}
         <Button
           color="primary"
           onClick={this.toggle}
-          style={{ marginBottom: '1rem', marginLeft: '5px' }}>
           Button with data-target
         </Button>
         <Collapse isOpen={this.state.collapse}>
