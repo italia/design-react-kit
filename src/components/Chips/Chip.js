@@ -19,15 +19,13 @@ const defaultProps = {
 
 const Chip = props => {
   const { className, tag: Tag, simple, large, disabled, ...attributes } = props
-  const wrapperClasses = classNames(
-    className,
-    simple ? 'chip-simple' : false,
-    large ? 'chip-lg' : false,
-    disabled ? 'chip-disabled' : false,
-    'chip'
-  )
+  const Classes = classNames('chip', className, {
+    'chip-simple': simple,
+    'chip-lg': large,
+    'chip-disabled': disabled
+  })
 
-  return <Tag className={wrapperClasses} {...attributes} />
+  return <Tag className={Classes} {...attributes} />
 }
 
 Chip.propTypes = propTypes

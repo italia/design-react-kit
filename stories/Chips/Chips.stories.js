@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 
-import { Chip, ChipLabel, Button, Icon } from '../../src'
+import { Chip, ChipLabel, Button, Icon, Row, Col } from '../../src'
 
 import VersioneStandard from './docs/VersioneStandard.md'
 import GreatVersion from './docs/GreatVersion.md'
@@ -12,8 +12,8 @@ import DisabledChip from './docs/DisabledChip.md'
 import ChipGroups from './docs/ChipGroups.md'
 
 const VersioneStandardComponent = () => (
-  <div className="row">
-    <div className="col-12 col-md-6">
+  <Row>
+    <Col xs="12" md={{ size: 6 }}>
       <h4>Versione Standard</h4>
       <p className="mt-4 mb-2">Solo testo</p>
       <Chip simple>
@@ -47,13 +47,13 @@ const VersioneStandardComponent = () => (
           <Icon icon="it-close" />
         </Button>
       </Chip>
-    </div>
-  </div>
+    </Col>
+  </Row>
 )
 
 const GreatVersionComponent = () => (
-  <div className="row">
-    <div className="col-12 col-md-6">
+  <Row>
+    <Col xs="12" md={{ size: 6 }}>
       <h4>Versione Grande</h4>
       <p className="mt-4 mb-2">Solo testo</p>
       <Chip simple large>
@@ -87,8 +87,8 @@ const GreatVersionComponent = () => (
           <Icon icon="it-close" />
         </Button>
       </Chip>
-    </div>
-  </div>
+    </Col>
+  </Row>
 )
 
 const DisabledChipComponent = () => (
