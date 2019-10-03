@@ -11,7 +11,10 @@ const propTypes = {
 }
 
 const defaultProps = {
-  tag: 'div'
+  tag: 'div',
+  simple: false,
+  large: false,
+  disabled: false
 }
 
 const Chip = props => {
@@ -23,8 +26,6 @@ const Chip = props => {
     disabled ? 'chip-disabled' : false,
     'chip'
   )
-
-  //   const classes = classNames(className, sublist ? 'link-sublist' : 'link-list')
 
   return <Tag className={wrapperClasses} {...attributes} />
 }
