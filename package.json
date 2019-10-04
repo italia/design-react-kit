@@ -62,10 +62,11 @@
         "eslint-plugin-promise": "^4.2.1",
         "eslint-plugin-react": "^7.14.3",
         "eslint-plugin-standard": "^4.0.1",
+        "glob": "^7.1.4",
         "husky": "^3.0.5",
         "react-scripts": "^3.1.1",
-        "react-scrollspy": "^3.3.5",
         "react-test-renderer": "^16.9.0",
+        "react-to-typescript-definitions": "^2.0.0",
         "rollup": "^1.21.2",
         "rollup-plugin-babel": "^4.3.3",
         "rollup-plugin-babel-minify": "^9.0.0",
@@ -103,11 +104,10 @@
         }
     },
     "dependencies": {
-        "glob": "^7.1.4",
         "prop-types": "^15.7.2",
         "react-select": "^3.0.4",
-        "react-to-typescript-definitions": "^2.0.0",
         "react-transition-group": "^2.3.1",
+        "react-scrollspy": "^3.3.5",
         "reactstrap": "^8.0.0",
         "webfontloader": "^1.6.28"
     }
