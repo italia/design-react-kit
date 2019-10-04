@@ -95,7 +95,6 @@ export {
 export { default as AccordionBody } from './components/Accordion/AccordionBody'
 export { default as Badge } from './components/Badge/Badge'
 export { default as Collapse } from './components/Collapse/Collapse'
-export { default as CookieBtn } from './components/CookieBar/CookieBtn'
 export { default as FormGroup } from './components/FormGroup/FormGroup'
 export { default as Hero } from './components/Hero/Hero'
 export { default as Icon } from './components/Icon/Icon'
