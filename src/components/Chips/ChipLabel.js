@@ -14,7 +14,7 @@ const defaultProps = {
 const ChipLabel = props => {
   const { className, tag: Tag, ...attributes } = props
   const classes = classNames(className, 'chip-label')
-  return <span {...attributes} className={classes} />
+  return <Tag {...attributes} className={classes} />
 }
 
 ChipLabel.propTypes = propTypes
