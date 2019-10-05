@@ -1,1 +1,1 @@
-Adding the keyword `disabled` to the `<Chip>` and `<Button>` component disables the chip.
+Aggiungendo la prop `disabled` al componente `Chip` viene renderizzata una versione disabilitata del componente `Chip`.

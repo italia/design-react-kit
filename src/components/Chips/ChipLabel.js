@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 const propTypes = {
+  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  /** Classi aggiuntive da usare per il componente ChipLabel */
   className: PropTypes.string
 }
 

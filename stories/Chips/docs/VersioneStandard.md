@@ -1,2 +1,2 @@
-A "chip" component is composed of two inner components `Chip` and `ChipLabel`.
-The action required to remove the chip will be associated with the `Button` Component. 
+Un elemento `Chip` è composto da due componenti: `Chip` e `ChipLabel`.
+L'azione richiesta per rimuovere un elemento `Chip` viene implementata tramite un componente `Button`.
