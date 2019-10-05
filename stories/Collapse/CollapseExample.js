@@ -11,11 +11,11 @@ class CollapseExample extends React.Component {
   render() {
     return (
       <div>
-        <Button
-          color="primary"
-          onClick={this.toggle}
-          style={{ marginBottom: '1rem' }}>
-          Toggle
+        <Button color="primary" onClick={this.toggle}>
+          Link with href
+        </Button>{' '}
+        <Button color="primary" onClick={this.toggle}>
+          Button with data-target
         </Button>
         <Collapse isOpen={this.state.collapse}>
           <Card>
