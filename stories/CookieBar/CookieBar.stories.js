@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
+import React, { Component } from 'react'
 import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 
-import { CookieBtn } from '../../src' 
 import {Button} from '../../src' 
 //#[TODO] replace docs with correct file
 import Esempi from '../Collapse/docs/Innestati.md'
-import { underline } from 'ansi-colors';
+
 
 //styling of the CookieBar
 const textStyle = {color: "white", 
@@ -38,16 +37,42 @@ const divStyle2 = {backgroundColor: "#435A70",
 }
 
 
-const CookieBarExample = () => (
+const CookieBarExample = (props) => (
    <div style={divStyle} >
      <p style={textStyle}>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br/> Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
       <div style={divStyle2}>
-          <a href="https://designers.italia.it/privacy-policy/" style={{backgroundColor:"#435A70" ,color:"white",textTransform:"uppercase", fontSize:14, fontWeight:"bold"}}>Preferences</a>
-          <Button color="link" style={{backgroundColor:"#435A70",color:"white",textTransform:"uppercase",fontSize:14, 
-          fontWeight:"bold",marginTop:-24}}>I Accept</Button>
+          <a href="https://designers.italia.it/privacy-policy/" style={{backgroundColor:"#435A70" ,color:"#E6ECF2",textTransform:"uppercase", fontSize:14, fontWeight:"bold"}}>Preferenzo</a>
+          <Button color="link" style={{backgroundColor:"#435A70",color:"#E6ECF2",textTransform:"uppercase",fontSize:14, 
+          fontWeight:"bold",marginTop:-24,borderWidth:0}} onClick={props.addTrip}>accetto</Button>
       </div>
    </div>
 )
+const Empty = () => (
+  <div>
+  </div>
+)
+
+class App extends Component{
+  constructor(props){
+    super(props)
+    this.state = { isEmptyState: true}
+  }
+  triggerAddTripState = () => {
+    this.setState({
+      ...this.state,
+      isEmptyState: false,
+      isAddTripState: true
+    })
+  }
+  render(){
+    return(
+      <div>
+         {this.state.isEmptyState && <CookieBarExample addTrip = {this.triggerAddTripState} />}
+         {this.state.isAddTripState && <Empty />}
+      </div>
+    )
+  }
+}
 
 storiesOf('Componenti/CookieBar', module)
   .addDecorator(withA11y)
@@ -57,5 +82,5 @@ storiesOf('Componenti/CookieBar', module)
       text: Esempi,
       propTables: [CookieBarExample],
       propTablesExclude: [CookieBarExample]
-    })(CookieBarExample)
+    })(()=><App/>)
   )
