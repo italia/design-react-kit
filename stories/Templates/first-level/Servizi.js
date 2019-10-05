@@ -221,31 +221,44 @@ const Servizi = () => {
             <Container className="px-4">
               <Row>
                 <Col>
-                  <h3 className="mb-4">Tutta l&#39;Amministrazione</h3>
+                  <h3 className="mb-4">Tutti i Servizi</h3>
                 </Col>
               </Row>
               <Row>
                 {[
-                  'Organi di governo',
-                  'Aree amministrative',
-                  'Uffici',
-                  'Politici',
-                  'Funzionari Amministrativi',
-                  'Enti e fondazioni',
-                  'Luoghi'
+                  'Anagrafe e stato civile',
+                  'Cultura e tempo libero',
+                  'Vita lavorativa',
+                  'Attività produttiva e commercio',
+                  'Appalti pubblici',
+                  'Catasto e urbanistica',
+                  'Turismo',
+                  'Mobilità e trasporti',
+                  'Educazione e formazione',
+                  'Giustizia e sicurezza pubblica',
+                  'Tributi e finanze',
+                  'Ambiente',
+                  'Salute, benessere e assistenza',
+                  'Autorizzazioni',
+                  'Agricoltura'
                 ].map(label => {
                   return (
                     <Col size="12" sm={6} lg={4} key={label}>
                       <Card>
                         <CardBody>
-                          <a href="#">
-                            <CardTitle tag="h5">{label}</CardTitle>
-                          </a>
+                          <CardTitle tag="h5" className="big-heading">
+                            {label}
+                          </CardTitle>
                           <CardText>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua.
                           </CardText>
+                          <CardReadMore
+                            icon="it-arrow-right"
+                            text="Leggi di più"
+                            href="#"
+                          />
                         </CardBody>
                       </Card>
                     </Col>
@@ -263,21 +276,15 @@ const Servizi = () => {
               </Row>
               <Row>
                 <div className="col text-center">
-                  <a href="#">
-                    <span className="chip chip-simple chip-primary">
-                      <span className="chip-label">Cultura</span>
-                    </span>
-                  </a>
-                  <a href="#">
-                    <span className="chip chip-simple chip-primary">
-                      <span className="chip-label">Muoversi</span>
-                    </span>
-                  </a>
-                  <a href="#">
-                    <span className="chip chip-simple chip-primary">
-                      <span className="chip-label">Argomento di esempio</span>
-                    </span>
-                  </a>
+                  {['Cultura', 'Muoversi', 'Argomento di esempio'].map(
+                    label => (
+                      <a href="#" key={label}>
+                        <span className="chip chip-simple chip-primary">
+                          <span className="chip-label">{label}</span>
+                        </span>
+                      </a>
+                    )
+                  )}
                 </div>
               </Row>
             </Container>
