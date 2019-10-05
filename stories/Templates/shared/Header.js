@@ -30,7 +30,7 @@ const SlimHeaderFullResponsive = ({ theme }) => {
   return (
     <Header type="slim" theme={theme}>
       <HeaderContent>
-        <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
+        <HeaderBrand responsive>Ente appartenenza/Owner</HeaderBrand>
         <HeaderRightZone>
           <UncontrolledDropdown nav tag="div">
             <DropdownToggle nav caret>
