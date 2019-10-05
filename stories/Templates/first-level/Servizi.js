@@ -73,7 +73,7 @@ const Servizi = () => {
                   <label
                     htmlFor="ricerca-amministrazione"
                     style={{ width: 'auto' }}>
-                    Cerca contenuti in "Servizi"
+                    Cerca contenuti in &quot;Servizi&quot;
                   </label>
                   <span aria-hidden="true" className="autocomplete-icon">
                     <Icon icon="it-search" size="sm" />
