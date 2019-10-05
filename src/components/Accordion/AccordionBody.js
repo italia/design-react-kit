@@ -68,6 +68,7 @@ export default class AccordionBody extends Component {
 
   onExiting = node => {
     // getting this variable triggers a reflow
+    const _unused = node.offsetHeight // eslint-disable-line no-unused-vars
     this.setState({ height: 0 })
     this.props.onExiting(node)
   }
