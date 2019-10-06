@@ -12,7 +12,6 @@ const propTypes = {
 
 const defaultProps = {
   tag: 'span',
-  indeterminate: false,
   active: false,
   small: false,
   double: false
