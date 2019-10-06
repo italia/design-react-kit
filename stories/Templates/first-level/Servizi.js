@@ -11,6 +11,7 @@ import {
   CardReadMore,
   Container,
   Icon,
+  Input,
   Row,
   Col,
   LinkListItem,
@@ -69,12 +70,11 @@ const Servizi = () => {
               </p>
               <div className="form-group mt-5">
                 <form>
-                  <input id="ricerca-amministrazione" type="search" />
-                  <label
-                    htmlFor="ricerca-amministrazione"
-                    style={{ width: 'auto' }}>
-                    Cerca contenuti in &quot;Servizi&quot;
-                  </label>
+                  <Input
+                    id="ricerca-servizi"
+                    type="search"
+                    label='Cerca contenuti in "Servizi"'
+                  />
                   <span aria-hidden="true" className="autocomplete-icon">
                     <Icon icon="it-search" size="sm" />
                   </span>
