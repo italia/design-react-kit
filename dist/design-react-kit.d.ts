@@ -13,6 +13,8 @@ declare module "design-react-kit"{
     export {default as CardSignature} from "src/components/Card/CardSignature"
     export {default as CardTag} from "src/components/Card/CardTag"
     export {default as CardTagsHeader} from "src/components/Card/CardTagsHeader"
+    export {default as Chip} from "src/components/Chips/Chip"
+    export {default as ChipLabel} from "src/components/Chips/ChipLabel"
     export {default as Collapse} from "src/components/Collapse/Collapse"
     export {default as FormGroup} from "src/components/FormGroup/FormGroup"
     export {default as Header} from "src/components/Header/Header"
@@ -276,6 +278,64 @@ declare module 'src/components/Card/CardTagsHeader' {
     const CardTagsHeader: React.FC<CardTagsHeaderProps>;
 
     export default CardTagsHeader;
+
+}
+
+declare module 'src/components/Chips/Chip' {
+    import * as React from 'react';
+
+    export type ChipTag = ((...args: any[])=>any) | string;
+
+    export interface ChipProps extends React.HTMLAttributes<HTMLElement> {
+    [key: string]: any;
+        /**
+         * Utilizzarlo in caso di utilizzo di componenti personalizzati
+         */
+        tag?: ChipTag;
+        /**
+         * Classi aggiuntive da usare per il componente Chip
+         */
+        className?: string;
+        /**
+         * Impostarlo su `true` per centrare la label all'interno
+         */
+        simple?: boolean;
+        /**
+         * Impostarlo su `true` per una versione più grande del componente Chip.
+         */
+        large?: boolean;
+        /**
+         * Impostarlo su `true` per renderizzare il componente Chip come disabilitato
+         */
+        disabled?: boolean;
+    }
+
+    const Chip: React.FC<ChipProps>;
+
+    export default Chip;
+
+}
+
+declare module 'src/components/Chips/ChipLabel' {
+    import * as React from 'react';
+
+    export type ChipLabelTag = ((...args: any[])=>any) | string;
+
+    export interface ChipLabelProps extends React.HTMLAttributes<HTMLElement> {
+    [key: string]: any;
+        /**
+         * Utilizzarlo in caso di utilizzo di componenti personalizzati
+         */
+        tag?: ChipLabelTag;
+        /**
+         * Classi aggiuntive da usare per il componente ChipLabel
+         */
+        className?: string;
+    }
+
+    const ChipLabel: React.FC<ChipLabelProps>;
+
+    export default ChipLabel;
 
 }
 

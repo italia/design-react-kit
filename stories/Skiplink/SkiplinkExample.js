@@ -1,7 +1,7 @@
 import React from 'react'
 import { Skiplink, SkiplinkItem } from '../../src'
 
-class SkipLinkExample extends React.Component {
+class SkiplinkExample extends React.Component {
   constructor(props) {
     super(props)
     this.container = React.createRef()
@@ -29,4 +29,4 @@ class SkipLinkExample extends React.Component {
   }
 }
 
-export default SkipLinkExample
+export default SkiplinkExample
