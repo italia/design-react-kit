@@ -9883,6 +9883,12 @@
 	LinkList.propTypes = propTypes$1l;
 	LinkList.defaultProps = defaultProps$1g;
 
+
+
+
+
+
+
 	var propTypes$1m = {
 	  active: propTypes.bool,
 	  disabled: propTypes.bool,
@@ -10790,6 +10796,37 @@
 	  }
 	});
 
+	var propTypes$1G = {
+		tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
+		className: propTypes.string,
+		sublist: propTypes.string,
+		highlight: propTypes.bool
+	}
+	
+	var defaultProps$1u = {
+		tag: 'div'
+	}
+	
+	var Callout = function Callout(props) {
+		var { className, tag: Tag, highlight, sublist  } = props
+		var attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "highlight", "sublist"]);
+		var wrapperClasses = mapToCssModules(classnames(
+			sublist,
+			'callout',
+			highlight ? 'callout-highlight' : false
+		))
+		var classes = classnames(className, 'callout-title')
+	  
+		return React__default.createElement(Tag, {
+			className: wrapperClasses
+		}, React__default.createElement("div", _extends$1({}, attributes, {
+			className: classes
+		})));
+	};
+	
+	Callout.propTypes = propTypes$1G
+	Callout.defaultProps = defaultProps$1u
+
 	exports.Accordion = Accordion;
 	exports.AccordionBody = AccordionBody;
 	exports.AccordionHeader = AccordionHeader;
@@ -10860,6 +10897,7 @@
 	exports.Jumbotron = Jumbotron;
 	exports.Label = Label;
 	exports.LinkList = LinkList;
+	exports.Callout = Callout;
 	exports.LinkListItem = LinkListItem;
 	exports.ListGroup = ListGroup;
 	exports.ListGroupItem = ListGroupItem;
