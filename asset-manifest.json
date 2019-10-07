@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/italia/design-react-kit/main.css",
-    "main.js": "/italia/design-react-kit/main.2de65637f149feb64067.bundle.js",
+    "main.js": "/italia/design-react-kit/main.de7edf1d587c6e7cb4a1.bundle.js",
     "main.css.map": "/italia/design-react-kit/main.css.map",
-    "main.js.map": "/italia/design-react-kit/main.2de65637f149feb64067.bundle.js.map",
-    "runtime~main.js": "/italia/design-react-kit/runtime~main.2de65637f149feb64067.bundle.js",
-    "runtime~main.js.map": "/italia/design-react-kit/runtime~main.2de65637f149feb64067.bundle.js.map",
+    "main.js.map": "/italia/design-react-kit/main.de7edf1d587c6e7cb4a1.bundle.js.map",
+    "runtime~main.js": "/italia/design-react-kit/runtime~main.de7edf1d587c6e7cb4a1.bundle.js",
+    "runtime~main.js.map": "/italia/design-react-kit/runtime~main.de7edf1d587c6e7cb4a1.bundle.js.map",
     "vendors~main.css": "/italia/design-react-kit/vendors~main.css",
-    "vendors~main.js": "/italia/design-react-kit/vendors~main.2de65637f149feb64067.bundle.js",
+    "vendors~main.js": "/italia/design-react-kit/vendors~main.de7edf1d587c6e7cb4a1.bundle.js",
     "vendors~main.css.map": "/italia/design-react-kit/vendors~main.css.map",
-    "vendors~main.js.map": "/italia/design-react-kit/vendors~main.2de65637f149feb64067.bundle.js.map",
+    "vendors~main.js.map": "/italia/design-react-kit/vendors~main.de7edf1d587c6e7cb4a1.bundle.js.map",
     "iframe.html": "/italia/design-react-kit/iframe.html",
-    "precache-manifest.64ea392ad3ab662ce06e473317ceb88d.js": "/italia/design-react-kit/precache-manifest.64ea392ad3ab662ce06e473317ceb88d.js",
+    "precache-manifest.a7daedd158ab1654736dbbc31111daf5.js": "/italia/design-react-kit/precache-manifest.a7daedd158ab1654736dbbc31111daf5.js",
     "service-worker.js": "/italia/design-react-kit/service-worker.js",
     "static/media/fonts.css": "/italia/design-react-kit/static/media/TitilliumWeb-SemiBold.eb6768ff.woff2",
     "static/media/sprite.svg": "/italia/design-react-kit/static/media/sprite.c452d70a.svg"
   },
   "entrypoints": [
-    "runtime~main.2de65637f149feb64067.bundle.js",
+    "runtime~main.de7edf1d587c6e7cb4a1.bundle.js",
     "vendors~main.css",
-    "vendors~main.2de65637f149feb64067.bundle.js",
+    "vendors~main.de7edf1d587c6e7cb4a1.bundle.js",
     "main.css",
-    "main.2de65637f149feb64067.bundle.js"
+    "main.de7edf1d587c6e7cb4a1.bundle.js"
   ]
 }
