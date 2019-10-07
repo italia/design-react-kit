@@ -22,4 +22,3 @@ function CookieBar(props){
 CookieBar.propTypes = propTypes
 CookieBar.defaultProps = defaultProps
 export default CookieBar
-///home/ankush/Hacktoberfest/design-react-kit/node_modules/bootstrap-italia
