@@ -176,9 +176,10 @@ export class NavHeader extends Component {
 
   render() {
     const isOpen = !this.state.collapsed
+    // eslint-disable-next-line react/prop-types
+    const { active, theme } = this.props
     return (
-      // eslint-disable-next-line react/prop-types
-      <Header type="navbar" theme={this.props.theme}>
+      <Header type="navbar" theme={theme}>
         <HeaderContent expand="lg" megamenu>
           <HeaderToggler
             onClick={() => this.setState({ collapsed: isOpen })}
@@ -194,60 +195,39 @@ export class NavHeader extends Component {
             onOverlayClick={() => this.setState({ collapsed: isOpen })}>
             <div className="menu-wrapper">
               <Nav navbar>
-                <NavItem active>
-                  <NavLink href="#" active>
-                    <span>link 1 active </span>
-                    <span className="sr-only">current</span>
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#" disabled>
-                    Link 2
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#">Link 3</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#">Link 4</NavLink>
-                </NavItem>
-                <NavItem>
-                  <UncontrolledDropdown nav tag="div">
-                    <DropdownToggle nav caret>
-                      Dropdown item
-                      <Icon icon="it-expand" />
-                    </DropdownToggle>
-                    <DropdownMenu>
-                      <LinkList>
-                        <LinkListItem
-                          header
-                          tag="h3"
-                          className="no_toc"
-                          id="heading-es-1">
-                          Heading
-                        </LinkListItem>
-                        <LinkListItem tag={DropdownItem} href="#">
-                          <span>Link list 1</span>
-                        </LinkListItem>
-                        <LinkListItem tag={DropdownItem} href="#">
-                          <span>Link list 2</span>
-                        </LinkListItem>
-                        <LinkListItem tag={DropdownItem} href="#">
-                          <span>Link list 3</span>
-                        </LinkListItem>
-                        <LinkListItem divider />
-                        <LinkListItem tag={DropdownItem} href="#">
-                          <span>Link list 4</span>
-                        </LinkListItem>
-                      </LinkList>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#" disabled>
-                    Megamenu label
-                  </NavLink>
-                </NavItem>
+                {[
+                  'Amministrazione',
+                  'Novità',
+                  'Servizi',
+                  'Documenti e Dati'
+                ].map(label => {
+                  const isActive = label === active
+                  return (
+                    <NavItem active={isActive} key={label}>
+                      <NavLink href="#" active={isActive}>
+                        <span>{label}</span>
+                        {isActive && <span className="sr-only">current</span>}
+                      </NavLink>
+                    </NavItem>
+                  )
+                })}
+              </Nav>
+              <Nav navbar className="navbar-secondary">
+                {[
+                  { label: 'Argomento 1' },
+                  { label: 'Argomento 2' },
+                  { label: 'Tutti gli argomenti...', bold: true }
+                ].map(({ label, bold }) => {
+                  return (
+                    <NavItem key={label}>
+                      <NavLink href="#">
+                        <span className={`${bold ? 'font-weight-bold' : ''}`}>
+                          {label}
+                        </span>
+                      </NavLink>
+                    </NavItem>
+                  )
+                })}
               </Nav>
             </div>
           </Collapse>
@@ -258,7 +238,7 @@ export class NavHeader extends Component {
 }
 
 // eslint-disable-next-line react/prop-types
-const CompleteHeader = ({ theme, type, townName, townTagLine }) => {
+const CompleteHeader = ({ page, theme, type, townName, townTagLine }) => {
   const SlimTag = type === 'default' ? SlimHeader : SlimHeaderFullResponsive
   return (
     <Headers>
@@ -269,7 +249,7 @@ const CompleteHeader = ({ theme, type, townName, townTagLine }) => {
           townName={townName}
           townTagLine={townTagLine}
         />
-        <NavHeader theme={theme} />
+        <NavHeader theme={theme} active={page} />
       </div>
     </Headers>
   )

@@ -37,6 +37,7 @@ const Amministrazione = () => {
         theme={theme}
         townName={townName}
         townTagLine={townTagLine}
+        page="Amministrazione"
       />
       <main>
         <Container tag="section" id="briciole" className="px-4 my-4">
