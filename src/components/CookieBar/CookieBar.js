@@ -1,5 +1,4 @@
 import React,{Component} from "react";
-//import styles from "bootstrap-italia/dist/css/bootstrap-italia.min.css";
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 

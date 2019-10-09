@@ -10,15 +10,15 @@ const propTypes = {
 
 const defaultProps = {
     tag: 'button',
-    link: '#'
+    link: 'href'
 }
 
 class CookieBarButton extends React.Component{
     render(){
-        const { tag: Tag, ...attributes} = this.props
-        const activeClass = classNames("cookiebar-btn")
+        const { tag: Tag, className, ...attributes} = this.props
+        const activeClass = classNames(className, "cookiebar-btn")
         return (
-            <Tag href = {this.props.link} 
+            <Tag href 
               className = {activeClass} {...attributes}/>
             
         )
