@@ -9883,6 +9883,12 @@
 	LinkList.propTypes = propTypes$1l;
 	LinkList.defaultProps = defaultProps$1g;
 
+
+
+
+
+
+
 	var propTypes$1m = {
 	  active: propTypes.bool,
 	  disabled: propTypes.bool,
@@ -10729,32 +10735,39 @@
 	  large: propTypes.bool,
 
 	  /** Impostarlo su `true` per renderizzare il componente Chip come disabilitato */
-	  disabled: propTypes.bool
+		disabled: propTypes.bool,
+		color: propTypes.string
 	};
 	var defaultProps$1u = {
 	  tag: 'div',
 	  simple: false,
 	  large: false,
-	  disabled: false
+		disabled: false,
+		color: ''
 	};
 
 	var Chip = function Chip(props) {
 	  var className = props.className,
-	      Tag = props.tag,
+				Tag = props.tag,
+				cssModule = props.cssModule,
 	      simple = props.simple,
 	      large = props.large,
-	      disabled = props.disabled,
-	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "simple", "large", "disabled"]);
+				disabled = props.disabled,
+				color = props.color,
+				attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "simple","cssModule", "large", "disabled", "color"]);
 
-	  var classes = classnames('chip', className, {
-	    'chip-simple': simple,
-	    'chip-lg': large,
-	    'chip-disabled': disabled
-	  });
+	  var classes = mapToCssModules(classnames('chip', className, 
+	    simple ? 'chip-simple' : false,
+	    large ? 'chip-lg' : false,
+			disabled ? 'chip-disabled' : false,
+			'chip-' + color 
+		
+	  ),cssModule);
 	  return React__default.createElement(Tag, _extends$1({
 	    className: classes
 	  }, attributes));
 	};
+	
 
 	Chip.propTypes = propTypes$1E;
 	Chip.defaultProps = defaultProps$1u;
@@ -10789,6 +10802,37 @@
 	    families: ['Titillium Web:300,400,600,700:latin-ext', 'Lora:400,700:latin-ext', 'Roboto Mono:400,700:latin-ext']
 	  }
 	});
+
+	var propTypes$1G = {
+		tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
+		className: propTypes.string,
+		sublist: propTypes.string,
+		highlight: propTypes.bool
+	}
+	
+	var defaultProps$1u = {
+		tag: 'div'
+	}
+	
+	var Callout = function Callout(props) {
+		var { className, tag: Tag, highlight, sublist  } = props
+		var attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "highlight", "sublist"]);
+		var wrapperClasses = mapToCssModules(classnames(
+			sublist,
+			'callout',
+			highlight ? 'callout-highlight' : false
+		))
+		var classes = classnames(className, 'callout-title')
+	  
+		return React__default.createElement(Tag, {
+			className: wrapperClasses
+		}, React__default.createElement("div", _extends$1({}, attributes, {
+			className: classes
+		})));
+	};
+	
+	Callout.propTypes = propTypes$1G
+	Callout.defaultProps = defaultProps$1u
 
 	exports.Accordion = Accordion;
 	exports.AccordionBody = AccordionBody;
@@ -10860,6 +10904,7 @@
 	exports.Jumbotron = Jumbotron;
 	exports.Label = Label;
 	exports.LinkList = LinkList;
+	exports.Callout = Callout;
 	exports.LinkListItem = LinkListItem;
 	exports.ListGroup = ListGroup;
 	exports.ListGroupItem = ListGroupItem;

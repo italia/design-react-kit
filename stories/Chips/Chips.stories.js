@@ -186,6 +186,26 @@ const ChipGroupsComponent = () => (
   </div>
 )
 
+const ColorChangeChipComponent = () => (
+  <div>
+    <Chip color = "primary">
+      <ChipLabel>Primary</ChipLabel>
+    </Chip>
+    <Chip color = "warning">
+      <ChipLabel>Warning</ChipLabel>
+    </Chip>
+    <Chip color = "success">
+      <ChipLabel>Success</ChipLabel>
+    </Chip>
+    <Chip color = "danger">
+      <ChipLabel>Danger</ChipLabel>
+    </Chip>
+    <Chip color = "info">
+      <ChipLabel>Info</ChipLabel>
+    </Chip>
+  </div>
+)
+
 storiesOf('Componenti/Chips', module)
   .addDecorator(withA11y)
   .add(
@@ -219,4 +239,12 @@ storiesOf('Componenti/Chips', module)
       propTables: [Chip, ChipLabel],
       propTablesExclude: [Button, Icon]
     })(ChipGroupsComponent)
+  )
+  .add(
+    'Chip Color ',
+    withInfo({
+      text: ChipGroups,
+      propTables: [Chip, ChipLabel],
+      propTablesExclude: [Button, Icon]
+    })(ColorChangeChipComponent)
   )
