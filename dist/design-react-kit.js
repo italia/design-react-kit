@@ -10670,47 +10670,39 @@
 	  srText: false
 	};
 
-	var BottomNavItem =
-	/*#__PURE__*/
-	function (_React$Component) {
-	  _inheritsLoose$1(BottomNavItem, _React$Component);
+	var BottomNavItem = function BottomNavItem(_ref) {
+	  var active = _ref.active,
+	      badge = _ref.badge,
+	      alert = _ref.alert,
+	      link = _ref.link,
+	      srText = _ref.srText,
+	      iconName = _ref.iconName,
+	      label = _ref.label,
+	      Tag = _ref.tag,
+	      attributes = _objectWithoutPropertiesLoose$1(_ref, ["active", "badge", "alert", "link", "srText", "iconName", "label", "tag"]);
 
-	  function BottomNavItem() {
-	    return _React$Component.apply(this, arguments) || this;
-	  }
-
-	  var _proto = BottomNavItem.prototype;
-
-	  _proto.render = function render() {
-	    var _this$props = this.props,
-	        Tag = _this$props.tag,
-	        attributes = _objectWithoutPropertiesLoose$1(_this$props, ["tag"]);
-
-	    var activeClass = classnames(this.props.active ? 'active' : false);
-	    var badgeWrapper = this.props.badge ? React__default.createElement("div", {
-	      className: "badge-wrapper"
-	    }, React__default.createElement("span", {
-	      className: "bottom-nav-badge"
-	    }, this.props.badge)) : false;
-	    var alertWrapper = this.props.alert ? React__default.createElement("div", {
-	      className: "badge-wrapper"
-	    }, React__default.createElement("span", {
-	      className: "bottom-nav-alert"
-	    })) : false;
-	    return React__default.createElement("li", attributes, React__default.createElement(Tag, {
-	      href: this.props.link,
-	      className: activeClass
-	    }, badgeWrapper, alertWrapper, React__default.createElement(Icon, {
-	      icon: this.props.iconName
-	    }), React__default.createElement("span", {
-	      className: "bottom-nav-label"
-	    }, this.props.label, React__default.createElement("span", {
-	      className: "sr-only"
-	    }, this.props.srText))));
-	  };
-
-	  return BottomNavItem;
-	}(React__default.Component);
+	  var activeClass = classnames(active ? 'active' : false);
+	  var badgeWrapper = badge ? React__default.createElement("div", {
+	    className: "badge-wrapper"
+	  }, React__default.createElement("span", {
+	    className: "bottom-nav-badge"
+	  }, badge)) : false;
+	  var alertWrapper = alert ? React__default.createElement("div", {
+	    className: "badge-wrapper"
+	  }, React__default.createElement("span", {
+	    className: "bottom-nav-alert"
+	  })) : false;
+	  return React__default.createElement("li", attributes, React__default.createElement(Tag, {
+	    href: link,
+	    className: activeClass
+	  }, badgeWrapper, alertWrapper, React__default.createElement(Icon, {
+	    icon: iconName
+	  }), React__default.createElement("span", {
+	    className: "bottom-nav-label"
+	  }, label, React__default.createElement("span", {
+	    className: "sr-only"
+	  }, srText))));
+	};
 
 	BottomNavItem.propTypes = propTypes$1D;
 	BottomNavItem.defaultProps = defaultProps$1t;

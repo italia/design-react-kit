@@ -6,642 +6,13 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 
 var WebFont = _interopDefault(require('webfontloader'));
 var reactstrap = require('reactstrap');
-var PropTypes = _interopDefault(require('prop-types'));
+var reactScrollspy = _interopDefault(require('react-scrollspy'));
 var React = require('react');
 var React__default = _interopDefault(React);
+var PropTypes = _interopDefault(require('prop-types'));
 var Transition = _interopDefault(require('react-transition-group/Transition'));
 
-function unwrapExports (x) {
-	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
-}
-
-function createCommonjsModule(fn, module) {
-	return module = { exports: {} }, fn(module, module.exports), module.exports;
-}
-
-var interopRequireDefault = createCommonjsModule(function (module) {
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      "default": obj
-    };
-  }
-
-  module.exports = _interopRequireDefault;
-});
-unwrapExports(interopRequireDefault);
-
-var _extends_1 = createCommonjsModule(function (module) {
-  function _extends() {
-    module.exports = _extends = Object.assign || function (target) {
-      for (var i = 1; i < arguments.length; i++) {
-        var source = arguments[i];
-
-        for (var key in source) {
-          if (Object.prototype.hasOwnProperty.call(source, key)) {
-            target[key] = source[key];
-          }
-        }
-      }
-
-      return target;
-    };
-
-    return _extends.apply(this, arguments);
-  }
-
-  module.exports = _extends;
-});
-
 function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-var defineProperty = _defineProperty;
-
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) {
-    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
-      arr2[i] = arr[i];
-    }
-
-    return arr2;
-  }
-}
-
-var arrayWithoutHoles = _arrayWithoutHoles;
-
-function _iterableToArray(iter) {
-  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
-}
-
-var iterableToArray = _iterableToArray;
-
-function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance");
-}
-
-var nonIterableSpread = _nonIterableSpread;
-
-function _toConsumableArray(arr) {
-  return arrayWithoutHoles(arr) || iterableToArray(arr) || nonIterableSpread();
-}
-
-var toConsumableArray = _toConsumableArray;
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-var classCallCheck = _classCallCheck;
-
-var _typeof_1 = createCommonjsModule(function (module) {
-  function _typeof2(obj) {
-    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      _typeof2 = function _typeof2(obj) {
-        return typeof obj;
-      };
-    } else {
-      _typeof2 = function _typeof2(obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-      };
-    }
-
-    return _typeof2(obj);
-  }
-
-  function _typeof(obj) {
-    if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
-      module.exports = _typeof = function _typeof(obj) {
-        return _typeof2(obj);
-      };
-    } else {
-      module.exports = _typeof = function _typeof(obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
-      };
-    }
-
-    return _typeof(obj);
-  }
-
-  module.exports = _typeof;
-});
-
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-var assertThisInitialized = _assertThisInitialized;
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof_1(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return assertThisInitialized(self);
-}
-
-var possibleConstructorReturn = _possibleConstructorReturn;
-
-var getPrototypeOf = createCommonjsModule(function (module) {
-  function _getPrototypeOf(o) {
-    module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-      return o.__proto__ || Object.getPrototypeOf(o);
-    };
-    return _getPrototypeOf(o);
-  }
-
-  module.exports = _getPrototypeOf;
-});
-
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
-}
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-var createClass = _createClass;
-
-var setPrototypeOf = createCommonjsModule(function (module) {
-  function _setPrototypeOf(o, p) {
-    module.exports = _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-      o.__proto__ = p;
-      return o;
-    };
-
-    return _setPrototypeOf(o, p);
-  }
-
-  module.exports = _setPrototypeOf;
-});
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) setPrototypeOf(subClass, superClass);
-}
-
-var inherits = _inherits;
-
-var classnames = createCommonjsModule(function (module) {
-  /*!
-    Copyright (c) 2017 Jed Watson.
-    Licensed under the MIT License (MIT), see
-    http://jedwatson.github.io/classnames
-  */
-
-  /* global define */
-  (function () {
-
-    var hasOwn = {}.hasOwnProperty;
-
-    function classNames() {
-      var classes = [];
-
-      for (var i = 0; i < arguments.length; i++) {
-        var arg = arguments[i];
-        if (!arg) continue;
-        var argType = typeof arg;
-
-        if (argType === 'string' || argType === 'number') {
-          classes.push(arg);
-        } else if (Array.isArray(arg) && arg.length) {
-          var inner = classNames.apply(null, arg);
-
-          if (inner) {
-            classes.push(inner);
-          }
-        } else if (argType === 'object') {
-          for (var key in arg) {
-            if (hasOwn.call(arg, key) && arg[key]) {
-              classes.push(key);
-            }
-          }
-        }
-      }
-
-      return classes.join(' ');
-    }
-
-    if ( module.exports) {
-      classNames["default"] = classNames;
-      module.exports = classNames;
-    } else {
-      window.classNames = classNames;
-    }
-  })();
-});
-
-var throttle_1 = createCommonjsModule(function (module, exports) {
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports["default"] = void 0;
-
-  var throttle = function throttle(fn) {
-    var threshold = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 100;
-    var last;
-    var timer;
-    return function () {
-      var now = +new Date();
-      var timePassed = !!last && now < last + threshold;
-
-      if (timePassed) {
-        clearTimeout(timer);
-        timer = setTimeout(function () {
-          last = now;
-          fn();
-        }, threshold);
-      } else {
-        last = now;
-        fn();
-      }
-    };
-  };
-
-  var _default = throttle;
-  exports["default"] = _default;
-});
-unwrapExports(throttle_1);
-
-var Scrollspy_1 = createCommonjsModule(function (module, exports) {
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports["default"] = void 0;
-
-  var _extends2 = interopRequireDefault(_extends_1);
-
-  var _defineProperty2 = interopRequireDefault(defineProperty);
-
-  var _toConsumableArray2 = interopRequireDefault(toConsumableArray);
-
-  var _classCallCheck2 = interopRequireDefault(classCallCheck);
-
-  var _possibleConstructorReturn2 = interopRequireDefault(possibleConstructorReturn);
-
-  var _getPrototypeOf2 = interopRequireDefault(getPrototypeOf);
-
-  var _assertThisInitialized2 = interopRequireDefault(assertThisInitialized);
-
-  var _createClass2 = interopRequireDefault(createClass);
-
-  var _inherits2 = interopRequireDefault(inherits);
-
-  var _propTypes = interopRequireDefault(PropTypes);
-
-  var _react = interopRequireDefault(React__default);
-
-  var _classnames = interopRequireDefault(classnames);
-
-  var _throttle = interopRequireDefault(throttle_1);
-
-  function isEqualArray(a, b) {
-    return a.length === b.length && a.every(function (item, index) {
-      return item === b[index];
-    });
-  }
-
-  var Scrollspy =
-  /*#__PURE__*/
-  function (_React$Component) {
-    (0, _inherits2["default"])(Scrollspy, _React$Component);
-    (0, _createClass2["default"])(Scrollspy, null, [{
-      key: "propTypes",
-      get: function get() {
-        return {
-          items: _propTypes["default"].arrayOf(_propTypes["default"].string).isRequired,
-          currentClassName: _propTypes["default"].string.isRequired,
-          scrolledPastClassName: _propTypes["default"].string,
-          style: _propTypes["default"].object,
-          componentTag: _propTypes["default"].oneOfType([_propTypes["default"].string, _propTypes["default"].func]),
-          offset: _propTypes["default"].number,
-          rootEl: _propTypes["default"].string,
-          onUpdate: _propTypes["default"].func
-        };
-      }
-    }, {
-      key: "defaultProps",
-      get: function get() {
-        return {
-          items: [],
-          currentClassName: '',
-          style: {},
-          componentTag: 'ul',
-          offset: 0,
-          onUpdate: function onUpdate() {}
-        };
-      }
-    }]);
-
-    function Scrollspy(props) {
-      var _this;
-
-      (0, _classCallCheck2["default"])(this, Scrollspy);
-      _this = (0, _possibleConstructorReturn2["default"])(this, (0, _getPrototypeOf2["default"])(Scrollspy).call(this, props));
-      _this.state = {
-        targetItems: [],
-        inViewState: [],
-        isScrolledPast: [] // manually bind as ES6 does not apply this
-        // auto binding as React.createClass does
-
-      };
-      _this._handleSpy = _this._handleSpy.bind((0, _assertThisInitialized2["default"])(_this));
-      return _this;
-    }
-
-    (0, _createClass2["default"])(Scrollspy, [{
-      key: "_initSpyTarget",
-      value: function _initSpyTarget(items) {
-        var targetItems = items.map(function (item) {
-          return document.getElementById(item);
-        });
-        return targetItems;
-      } // https://github.com/makotot/react-scrollspy/pull/45
-
-    }, {
-      key: "_fillArray",
-      value: function _fillArray(array, val) {
-        var newArray = [];
-
-        for (var i = 0, max = array.length; i < max; i++) {
-          newArray[i] = val;
-        }
-
-        return newArray;
-      }
-    }, {
-      key: "_isScrolled",
-      value: function _isScrolled() {
-        return this._getScrollDimension().scrollTop > 0;
-      }
-    }, {
-      key: "_getScrollDimension",
-      value: function _getScrollDimension() {
-        var doc = document;
-        var rootEl = this.props.rootEl;
-        var scrollTop = rootEl ? doc.querySelector(rootEl).scrollTop : doc.documentElement.scrollTop || doc.body.parentNode.scrollTop || doc.body.scrollTop;
-        var scrollHeight = rootEl ? doc.querySelector(rootEl).scrollHeight : doc.documentElement.scrollHeight || doc.body.parentNode.scrollHeight || doc.body.scrollHeight;
-        return {
-          scrollTop: scrollTop,
-          scrollHeight: scrollHeight
-        };
-      }
-    }, {
-      key: "_getElemsViewState",
-      value: function _getElemsViewState(targets) {
-        var elemsInView = [];
-        var elemsOutView = [];
-        var viewStatusList = [];
-        var targetItems = targets ? targets : this.state.targetItems;
-        var hasInViewAlready = false;
-
-        for (var i = 0, max = targetItems.length; i < max; i++) {
-          var currentContent = targetItems[i];
-          var isInView = hasInViewAlready ? false : this._isInView(currentContent);
-
-          if (isInView) {
-            hasInViewAlready = true;
-            elemsInView.push(currentContent);
-          } else {
-            elemsOutView.push(currentContent);
-          }
-
-          var isLastItem = i === max - 1;
-
-          var isScrolled = this._isScrolled(); // https://github.com/makotot/react-scrollspy/pull/26#issue-167413769
-
-
-          var isLastShortItemAtBottom = this._isAtBottom() && this._isInView(currentContent) && !isInView && isLastItem && isScrolled;
-
-          if (isLastShortItemAtBottom) {
-            elemsOutView.pop();
-            elemsOutView.push.apply(elemsOutView, (0, _toConsumableArray2["default"])(elemsInView));
-            elemsInView = [currentContent];
-            viewStatusList = this._fillArray(viewStatusList, false);
-            isInView = true;
-          }
-
-          viewStatusList.push(isInView);
-        }
-
-        return {
-          inView: elemsInView,
-          outView: elemsOutView,
-          viewStatusList: viewStatusList,
-          scrolledPast: this.props.scrolledPastClassName && this._getScrolledPast(viewStatusList)
-        };
-      }
-    }, {
-      key: "_isInView",
-      value: function _isInView(el) {
-        if (!el) {
-          return false;
-        }
-
-        var _this$props = this.props,
-            rootEl = _this$props.rootEl,
-            offset = _this$props.offset;
-        var rootRect;
-
-        if (rootEl) {
-          rootRect = document.querySelector(rootEl).getBoundingClientRect();
-        }
-
-        var rect = el.getBoundingClientRect();
-        var winH = rootEl ? rootRect.height : window.innerHeight;
-
-        var _this$_getScrollDimen = this._getScrollDimension(),
-            scrollTop = _this$_getScrollDimen.scrollTop;
-
-        var scrollBottom = scrollTop + winH;
-        var elTop = rootEl ? rect.top + scrollTop - rootRect.top + offset : rect.top + scrollTop + offset;
-        var elBottom = elTop + el.offsetHeight;
-        return elTop < scrollBottom && elBottom > scrollTop;
-      }
-    }, {
-      key: "_isAtBottom",
-      value: function _isAtBottom() {
-        var rootEl = this.props.rootEl;
-
-        var _this$_getScrollDimen2 = this._getScrollDimension(),
-            scrollTop = _this$_getScrollDimen2.scrollTop,
-            scrollHeight = _this$_getScrollDimen2.scrollHeight;
-
-        var winH = rootEl ? document.querySelector(rootEl).getBoundingClientRect().height : window.innerHeight;
-        var scrolledToBottom = scrollTop + winH >= scrollHeight;
-        return scrolledToBottom;
-      }
-    }, {
-      key: "_getScrolledPast",
-      value: function _getScrolledPast(viewStatusList) {
-        if (!viewStatusList.some(function (item) {
-          return item;
-        })) {
-          return viewStatusList;
-        }
-
-        var hasFoundInView = false;
-        var scrolledPastItems = viewStatusList.map(function (item) {
-          if (item && !hasFoundInView) {
-            hasFoundInView = true;
-            return false;
-          }
-
-          return !hasFoundInView;
-        });
-        return scrolledPastItems;
-      }
-    }, {
-      key: "_spy",
-      value: function _spy(targets) {
-        var _this2 = this;
-
-        var elemensViewState = this._getElemsViewState(targets);
-
-        var currentStatuses = this.state.inViewState;
-        this.setState({
-          inViewState: elemensViewState.viewStatusList,
-          isScrolledPast: elemensViewState.scrolledPast
-        }, function () {
-          _this2._update(currentStatuses);
-        });
-      }
-    }, {
-      key: "_update",
-      value: function _update(prevStatuses) {
-        if (isEqualArray(this.state.inViewState, prevStatuses)) {
-          return;
-        }
-
-        this.props.onUpdate(this.state.targetItems[this.state.inViewState.indexOf(true)]);
-      }
-    }, {
-      key: "_handleSpy",
-      value: function _handleSpy() {
-        (0, _throttle["default"])(this._spy(), 100);
-      }
-    }, {
-      key: "_initFromProps",
-      value: function _initFromProps() {
-        var targetItems = this._initSpyTarget(this.props.items);
-
-        this.setState({
-          targetItems: targetItems
-        });
-
-        this._spy(targetItems);
-      }
-    }, {
-      key: "offEvent",
-      value: function offEvent() {
-        var el = this.props.rootEl ? document.querySelector(this.props.rootEl) : window;
-        el.removeEventListener('scroll', this._handleSpy);
-      }
-    }, {
-      key: "onEvent",
-      value: function onEvent() {
-        var el = this.props.rootEl ? document.querySelector(this.props.rootEl) : window;
-        el.addEventListener('scroll', this._handleSpy);
-      }
-    }, {
-      key: "componentDidMount",
-      value: function componentDidMount() {
-        this._initFromProps();
-
-        this.onEvent();
-      }
-    }, {
-      key: "componentWillUnmount",
-      value: function componentWillUnmount() {
-        this.offEvent();
-      }
-    }, {
-      key: "componentWillReceiveProps",
-      value: function componentWillReceiveProps() {
-        this._initFromProps();
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        var _this3 = this;
-
-        var Tag = this.props.componentTag;
-        var _this$props2 = this.props,
-            children = _this$props2.children,
-            className = _this$props2.className,
-            scrolledPastClassName = _this$props2.scrolledPastClassName,
-            style = _this$props2.style;
-        var counter = 0;
-
-        var items = _react["default"].Children.map(children, function (child, idx) {
-          var _classNames;
-
-          if (!child) {
-            return null;
-          }
-
-          var ChildTag = child.type;
-          var isScrolledPast = scrolledPastClassName && _this3.state.isScrolledPast[idx];
-          var childClass = (0, _classnames["default"])((_classNames = {}, (0, _defineProperty2["default"])(_classNames, "".concat(child.props.className), child.props.className), (0, _defineProperty2["default"])(_classNames, "".concat(_this3.props.currentClassName), _this3.state.inViewState[idx]), (0, _defineProperty2["default"])(_classNames, "".concat(_this3.props.scrolledPastClassName), isScrolledPast), _classNames));
-          return _react["default"].createElement(ChildTag, (0, _extends2["default"])({}, child.props, {
-            className: childClass,
-            key: counter++
-          }), child.props.children);
-        });
-
-        var itemClass = (0, _classnames["default"])((0, _defineProperty2["default"])({}, "".concat(className), className));
-        return _react["default"].createElement(Tag, {
-          className: itemClass,
-          style: style
-        }, items);
-      }
-    }]);
-    return Scrollspy;
-  }(_react["default"].Component);
-
-  exports["default"] = Scrollspy;
-});
-var Scrollspy = unwrapExports(Scrollspy_1);
-
-function _defineProperty$1(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -695,13 +66,66 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   return target;
 }
 
-function _assertThisInitialized$1(self) {
+function _assertThisInitialized(self) {
   if (self === void 0) {
     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
   }
 
   return self;
 }
+
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var classnames = createCommonjsModule(function (module) {
+  /*!
+    Copyright (c) 2017 Jed Watson.
+    Licensed under the MIT License (MIT), see
+    http://jedwatson.github.io/classnames
+  */
+
+  /* global define */
+  (function () {
+
+    var hasOwn = {}.hasOwnProperty;
+
+    function classNames() {
+      var classes = [];
+
+      for (var i = 0; i < arguments.length; i++) {
+        var arg = arguments[i];
+        if (!arg) continue;
+        var argType = typeof arg;
+
+        if (argType === 'string' || argType === 'number') {
+          classes.push(arg);
+        } else if (Array.isArray(arg) && arg.length) {
+          var inner = classNames.apply(null, arg);
+
+          if (inner) {
+            classes.push(inner);
+          }
+        } else if (argType === 'object') {
+          for (var key in arg) {
+            if (hasOwn.call(arg, key) && arg[key]) {
+              classes.push(key);
+            }
+          }
+        }
+      }
+
+      return classes.join(' ');
+    }
+
+    if ( module.exports) {
+      classNames["default"] = classNames;
+      module.exports = classNames;
+    } else {
+      window.classNames = classNames;
+    }
+  })();
+});
 
 var propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
@@ -800,11 +224,11 @@ function (_Component) {
 
     _this = _Component.call.apply(_Component, [this].concat(args)) || this;
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "state", {
+    _defineProperty(_assertThisInitialized(_this), "state", {
       height: null
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onEntering", function (node, isAppearing) {
+    _defineProperty(_assertThisInitialized(_this), "onEntering", function (node, isAppearing) {
       _this.setState({
         height: getHeight(node)
       });
@@ -812,7 +236,7 @@ function (_Component) {
       _this.props.onEntering(node, isAppearing);
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onEntered", function (node, isAppearing) {
+    _defineProperty(_assertThisInitialized(_this), "onEntered", function (node, isAppearing) {
       _this.setState({
         height: null
       });
@@ -820,7 +244,7 @@ function (_Component) {
       _this.props.onEntered(node, isAppearing);
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onExit", function (node) {
+    _defineProperty(_assertThisInitialized(_this), "onExit", function (node) {
       _this.setState({
         height: getHeight(node)
       });
@@ -828,7 +252,7 @@ function (_Component) {
       _this.props.onExit(node);
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onExiting", function (node) {
+    _defineProperty(_assertThisInitialized(_this), "onExiting", function (node) {
       // getting this variable triggers a reflow
       var _unused = node.offsetHeight; // eslint-disable-line no-unused-vars
 
@@ -839,7 +263,7 @@ function (_Component) {
       _this.props.onExiting(node);
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onExited", function (node) {
+    _defineProperty(_assertThisInitialized(_this), "onExited", function (node) {
       _this.setState({
         height: null
       });
@@ -989,12 +413,12 @@ function (_Component) {
 
     _this = _Component.call.apply(_Component, [this].concat(args)) || this;
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "state", {
+    _defineProperty(_assertThisInitialized(_this), "state", {
       active: _this.props.active || false,
       value: null
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onFocus", function (callback, active) {
+    _defineProperty(_assertThisInitialized(_this), "onFocus", function (callback, active) {
       if (active === void 0) {
         active = true;
       }
@@ -1008,7 +432,7 @@ function (_Component) {
       });
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onBlur", function (callback, active) {
+    _defineProperty(_assertThisInitialized(_this), "onBlur", function (callback, active) {
       if (active === void 0) {
         active = false;
       }
@@ -1022,7 +446,7 @@ function (_Component) {
       });
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onChange", function (callback, event) {
+    _defineProperty(_assertThisInitialized(_this), "onChange", function (callback, event) {
       var value;
       var target;
 
@@ -1344,11 +768,11 @@ function (_PureComponent) {
   return HeaderBrand;
 }(React.PureComponent);
 
-_defineProperty$1(HeaderBrand, "propTypes", propTypes$8);
+_defineProperty(HeaderBrand, "propTypes", propTypes$8);
 
-_defineProperty$1(HeaderBrand, "defaultProps", defaultProps$7);
+_defineProperty(HeaderBrand, "defaultProps", defaultProps$7);
 
-_defineProperty$1(HeaderBrand, "contextType", HeaderContext);
+_defineProperty(HeaderBrand, "contextType", HeaderContext);
 
 var propTypes$9 = {
   /** Classi addizionali per il componente HeaderContent */
@@ -1403,11 +827,11 @@ function (_PureComponent) {
   return HeaderContent;
 }(React.PureComponent);
 
-_defineProperty$1(HeaderContent, "propTypes", propTypes$9);
+_defineProperty(HeaderContent, "propTypes", propTypes$9);
 
-_defineProperty$1(HeaderContent, "defaultProps", defaultProps$8);
+_defineProperty(HeaderContent, "defaultProps", defaultProps$8);
 
-_defineProperty$1(HeaderContent, "contextType", HeaderContext);
+_defineProperty(HeaderContent, "contextType", HeaderContext);
 
 var propTypes$a = {
   /** Classi addizionali per il componente HeaderLinkZone, applicata all'element "nav" annidato */
@@ -1468,11 +892,11 @@ function (_PureComponent) {
   return HeaderRightZone;
 }(React.PureComponent);
 
-_defineProperty$1(HeaderRightZone, "propTypes", propTypes$b);
+_defineProperty(HeaderRightZone, "propTypes", propTypes$b);
 
-_defineProperty$1(HeaderRightZone, "defaultProps", defaultProps$a);
+_defineProperty(HeaderRightZone, "defaultProps", defaultProps$a);
 
-_defineProperty$1(HeaderRightZone, "contextType", HeaderContext);
+_defineProperty(HeaderRightZone, "contextType", HeaderContext);
 
 var propTypes$c = {
   /** Classi addizionali per il componente HeaderSearch */
@@ -1596,11 +1020,11 @@ function (_PureComponent) {
   return HeaderToggler;
 }(React.PureComponent);
 
-_defineProperty$1(HeaderToggler, "propTypes", propTypes$e);
+_defineProperty(HeaderToggler, "propTypes", propTypes$e);
 
-_defineProperty$1(HeaderToggler, "defaultProps", defaultProps$d);
+_defineProperty(HeaderToggler, "defaultProps", defaultProps$d);
 
-_defineProperty$1(HeaderToggler, "contextType", HeaderContext);
+_defineProperty(HeaderToggler, "contextType", HeaderContext);
 
 function Hero(props) {
   return React__default.createElement(reactstrap.Jumbotron, props);
@@ -1647,13 +1071,13 @@ function (_React$Component) {
 
     _this = _React$Component.call(this) || this;
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "toggleFocusLabel", function () {
+    _defineProperty(_assertThisInitialized(_this), "toggleFocusLabel", function () {
       _this.setState({
         isFocused: true
       });
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "toggleBlurLabel", function (e) {
+    _defineProperty(_assertThisInitialized(_this), "toggleBlurLabel", function (e) {
       if (e.target.value === '') {
         _this.setState({
           isFocused: !_this.state.isFocused
@@ -1666,7 +1090,7 @@ function (_React$Component) {
       hidden: true,
       icon: true
     };
-    _this.toggleShow = _this.toggleShow.bind(_assertThisInitialized$1(_this));
+    _this.toggleShow = _this.toggleShow.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -2069,11 +1493,11 @@ function (_Component) {
 
     _this = _Component.call.apply(_Component, [this].concat(args)) || this;
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "state", {
+    _defineProperty(_assertThisInitialized(_this), "state", {
       showPassword: false
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onPasswordToggle", function () {
+    _defineProperty(_assertThisInitialized(_this), "onPasswordToggle", function () {
       _this.setState(function (prevState) {
         return {
           showPassword: !prevState.showPassword
@@ -2105,7 +1529,7 @@ function (_Component) {
   return PasswordInput;
 }(React.Component);
 
-_defineProperty$1(PasswordInput, "defaultProps", {
+_defineProperty(PasswordInput, "defaultProps", {
   type: 'password'
 });
 
@@ -2182,7 +1606,7 @@ function (_Component) {
   return PasswordMeter;
 }(React.Component);
 
-_defineProperty$1(PasswordMeter, "defaultProps", {
+_defineProperty(PasswordMeter, "defaultProps", {
   score: 0,
   steps: defaultSteps
 });
@@ -2686,47 +2110,39 @@ var defaultProps$s = {
   srText: false
 };
 
-var BottomNavItem =
-/*#__PURE__*/
-function (_React$Component) {
-  _inheritsLoose(BottomNavItem, _React$Component);
+var BottomNavItem = function BottomNavItem(_ref) {
+  var active = _ref.active,
+      badge = _ref.badge,
+      alert = _ref.alert,
+      link = _ref.link,
+      srText = _ref.srText,
+      iconName = _ref.iconName,
+      label = _ref.label,
+      Tag = _ref.tag,
+      attributes = _objectWithoutPropertiesLoose(_ref, ["active", "badge", "alert", "link", "srText", "iconName", "label", "tag"]);
 
-  function BottomNavItem() {
-    return _React$Component.apply(this, arguments) || this;
-  }
-
-  var _proto = BottomNavItem.prototype;
-
-  _proto.render = function render() {
-    var _this$props = this.props,
-        Tag = _this$props.tag,
-        attributes = _objectWithoutPropertiesLoose(_this$props, ["tag"]);
-
-    var activeClass = classnames(this.props.active ? 'active' : false);
-    var badgeWrapper = this.props.badge ? React__default.createElement("div", {
-      className: "badge-wrapper"
-    }, React__default.createElement("span", {
-      className: "bottom-nav-badge"
-    }, this.props.badge)) : false;
-    var alertWrapper = this.props.alert ? React__default.createElement("div", {
-      className: "badge-wrapper"
-    }, React__default.createElement("span", {
-      className: "bottom-nav-alert"
-    })) : false;
-    return React__default.createElement("li", attributes, React__default.createElement(Tag, {
-      href: this.props.link,
-      className: activeClass
-    }, badgeWrapper, alertWrapper, React__default.createElement(Icon, {
-      icon: this.props.iconName
-    }), React__default.createElement("span", {
-      className: "bottom-nav-label"
-    }, this.props.label, React__default.createElement("span", {
-      className: "sr-only"
-    }, this.props.srText))));
-  };
-
-  return BottomNavItem;
-}(React__default.Component);
+  var activeClass = classnames(active ? 'active' : false);
+  var badgeWrapper = badge ? React__default.createElement("div", {
+    className: "badge-wrapper"
+  }, React__default.createElement("span", {
+    className: "bottom-nav-badge"
+  }, badge)) : false;
+  var alertWrapper = alert ? React__default.createElement("div", {
+    className: "badge-wrapper"
+  }, React__default.createElement("span", {
+    className: "bottom-nav-alert"
+  })) : false;
+  return React__default.createElement("li", attributes, React__default.createElement(Tag, {
+    href: link,
+    className: activeClass
+  }, badgeWrapper, alertWrapper, React__default.createElement(Icon, {
+    icon: iconName
+  }), React__default.createElement("span", {
+    className: "bottom-nav-label"
+  }, label, React__default.createElement("span", {
+    className: "sr-only"
+  }, srText))));
+};
 
 BottomNavItem.propTypes = propTypes$y;
 BottomNavItem.defaultProps = defaultProps$s;
@@ -2807,443 +2223,444 @@ WebFont.load({
 });
 
 Object.defineProperty(exports, 'Alert', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Alert;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Alert;
+  }
 });
 Object.defineProperty(exports, 'Breadcrumb', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Breadcrumb;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Breadcrumb;
+  }
 });
 Object.defineProperty(exports, 'BreadcrumbItem', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.BreadcrumbItem;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.BreadcrumbItem;
+  }
 });
 Object.defineProperty(exports, 'Button', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Button;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Button;
+  }
 });
 Object.defineProperty(exports, 'ButtonDropdown', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.ButtonDropdown;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.ButtonDropdown;
+  }
 });
 Object.defineProperty(exports, 'ButtonGroup', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.ButtonGroup;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.ButtonGroup;
+  }
 });
 Object.defineProperty(exports, 'ButtonToolbar', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.ButtonToolbar;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.ButtonToolbar;
+  }
 });
 Object.defineProperty(exports, 'CardBody', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CardBody;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CardBody;
+  }
 });
 Object.defineProperty(exports, 'CardColumns', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CardColumns;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CardColumns;
+  }
 });
 Object.defineProperty(exports, 'CardDeck', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CardDeck;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CardDeck;
+  }
 });
 Object.defineProperty(exports, 'CardFooter', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CardFooter;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CardFooter;
+  }
 });
 Object.defineProperty(exports, 'CardGroup', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CardGroup;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CardGroup;
+  }
 });
 Object.defineProperty(exports, 'CardHeader', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CardHeader;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CardHeader;
+  }
 });
 Object.defineProperty(exports, 'CardImg', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CardImg;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CardImg;
+  }
 });
 Object.defineProperty(exports, 'CardImgOverlay', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CardImgOverlay;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CardImgOverlay;
+  }
 });
 Object.defineProperty(exports, 'CardLink', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CardLink;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CardLink;
+  }
 });
 Object.defineProperty(exports, 'CardSubtitle', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CardSubtitle;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CardSubtitle;
+  }
 });
 Object.defineProperty(exports, 'CardText', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CardText;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CardText;
+  }
 });
 Object.defineProperty(exports, 'CardTitle', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CardTitle;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CardTitle;
+  }
 });
 Object.defineProperty(exports, 'Carousel', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Carousel;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Carousel;
+  }
 });
 Object.defineProperty(exports, 'CarouselCaption', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CarouselCaption;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CarouselCaption;
+  }
 });
 Object.defineProperty(exports, 'CarouselControl', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CarouselControl;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CarouselControl;
+  }
 });
 Object.defineProperty(exports, 'CarouselIndicators', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CarouselIndicators;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CarouselIndicators;
+  }
 });
 Object.defineProperty(exports, 'CarouselItem', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.CarouselItem;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.CarouselItem;
+  }
 });
 Object.defineProperty(exports, 'Col', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Col;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Col;
+  }
 });
 Object.defineProperty(exports, 'Container', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Container;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Container;
+  }
 });
 Object.defineProperty(exports, 'Dropdown', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Dropdown;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Dropdown;
+  }
 });
 Object.defineProperty(exports, 'DropdownItem', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.DropdownItem;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.DropdownItem;
+  }
 });
 Object.defineProperty(exports, 'DropdownMenu', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.DropdownMenu;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.DropdownMenu;
+  }
 });
 Object.defineProperty(exports, 'DropdownToggle', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.DropdownToggle;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.DropdownToggle;
+  }
 });
 Object.defineProperty(exports, 'Fade', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Fade;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Fade;
+  }
 });
 Object.defineProperty(exports, 'Form', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Form;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Form;
+  }
 });
 Object.defineProperty(exports, 'FormFeedback', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.FormFeedback;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.FormFeedback;
+  }
 });
 Object.defineProperty(exports, 'FormText', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.FormText;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.FormText;
+  }
 });
 Object.defineProperty(exports, 'InputGroup', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.InputGroup;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.InputGroup;
+  }
 });
 Object.defineProperty(exports, 'InputGroupAddon', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.InputGroupAddon;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.InputGroupAddon;
+  }
 });
 Object.defineProperty(exports, 'InputGroupButtonDropdown', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.InputGroupButtonDropdown;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.InputGroupButtonDropdown;
+  }
 });
 Object.defineProperty(exports, 'InputGroupText', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.InputGroupText;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.InputGroupText;
+  }
 });
 Object.defineProperty(exports, 'Jumbotron', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Jumbotron;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Jumbotron;
+  }
 });
 Object.defineProperty(exports, 'Label', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Label;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Label;
+  }
 });
 Object.defineProperty(exports, 'ListGroup', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.ListGroup;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.ListGroup;
+  }
 });
 Object.defineProperty(exports, 'ListGroupItem', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.ListGroupItem;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.ListGroupItem;
+  }
 });
 Object.defineProperty(exports, 'ListGroupItemHeading', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.ListGroupItemHeading;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.ListGroupItemHeading;
+  }
 });
 Object.defineProperty(exports, 'ListGroupItemText', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.ListGroupItemText;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.ListGroupItemText;
+  }
 });
 Object.defineProperty(exports, 'Media', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Media;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Media;
+  }
 });
 Object.defineProperty(exports, 'Modal', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Modal;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Modal;
+  }
 });
 Object.defineProperty(exports, 'ModalBody', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.ModalBody;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.ModalBody;
+  }
 });
 Object.defineProperty(exports, 'ModalFooter', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.ModalFooter;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.ModalFooter;
+  }
 });
 Object.defineProperty(exports, 'ModalHeader', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.ModalHeader;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.ModalHeader;
+  }
 });
 Object.defineProperty(exports, 'NavItem', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.NavItem;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.NavItem;
+  }
 });
 Object.defineProperty(exports, 'NavLink', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.NavLink;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.NavLink;
+  }
 });
 Object.defineProperty(exports, 'Navbar', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Navbar;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Navbar;
+  }
 });
 Object.defineProperty(exports, 'NavbarBrand', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.NavbarBrand;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.NavbarBrand;
+  }
 });
 Object.defineProperty(exports, 'NavbarToggler', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.NavbarToggler;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.NavbarToggler;
+  }
 });
 Object.defineProperty(exports, 'PagerItem', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.PaginationItem;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.PaginationItem;
+  }
 });
 Object.defineProperty(exports, 'PagerLink', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.PaginationLink;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.PaginationLink;
+  }
 });
 Object.defineProperty(exports, 'Popover', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Popover;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Popover;
+  }
 });
 Object.defineProperty(exports, 'PopoverBody', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.PopoverBody;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.PopoverBody;
+  }
 });
 Object.defineProperty(exports, 'PopoverHeader', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.PopoverHeader;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.PopoverHeader;
+  }
 });
 Object.defineProperty(exports, 'PopperContent', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.PopperContent;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.PopperContent;
+  }
 });
 Object.defineProperty(exports, 'PopperTargetHelper', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.PopperTargetHelper;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.PopperTargetHelper;
+  }
 });
 Object.defineProperty(exports, 'Row', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Row;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Row;
+  }
 });
 Object.defineProperty(exports, 'TabContent', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.TabContent;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.TabContent;
+  }
 });
 Object.defineProperty(exports, 'TabPane', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.TabPane;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.TabPane;
+  }
 });
 Object.defineProperty(exports, 'Table', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Table;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Table;
+  }
 });
 Object.defineProperty(exports, 'Tooltip', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Tooltip;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Tooltip;
+  }
 });
 Object.defineProperty(exports, 'UncontrolledAlert', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.UncontrolledAlert;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.UncontrolledAlert;
+  }
 });
 Object.defineProperty(exports, 'UncontrolledButtonDropdown', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.UncontrolledButtonDropdown;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.UncontrolledButtonDropdown;
+  }
 });
 Object.defineProperty(exports, 'UncontrolledCarousel', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.UncontrolledCarousel;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.UncontrolledCarousel;
+  }
 });
 Object.defineProperty(exports, 'UncontrolledCollapse', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.UncontrolledCollapse;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.UncontrolledCollapse;
+  }
 });
 Object.defineProperty(exports, 'UncontrolledDropdown', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.UncontrolledDropdown;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.UncontrolledDropdown;
+  }
 });
 Object.defineProperty(exports, 'UncontrolledTooltip', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.UncontrolledTooltip;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.UncontrolledTooltip;
+  }
 });
 Object.defineProperty(exports, 'Util', {
-	enumerable: true,
-	get: function () {
-		return reactstrap.Util;
-	}
+  enumerable: true,
+  get: function () {
+    return reactstrap.Util;
+  }
 });
+exports.Scrollspy = reactScrollspy;
 exports.Accordion = Accordion;
 exports.AccordionBody = AccordionBody;
 exports.AccordionHeader = AccordionHeader;
@@ -3281,7 +2698,6 @@ exports.PagerList = PagerList;
 exports.PasswordInput = PasswordInput;
 exports.PasswordMeter = PasswordMeter;
 exports.Progress = Progress;
-exports.Scrollspy = Scrollspy;
 exports.Sidebar = Sidebar;
 exports.Skiplink = Skiplink;
 exports.SkiplinkItem = SkiplinkItem;

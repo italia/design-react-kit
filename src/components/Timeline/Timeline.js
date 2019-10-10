@@ -30,7 +30,7 @@ Timeline.defaultProps = {
 Timeline.propTypes = {
   children: PropTypes.node.isRequired,
   // children: PropTypes.oneOfType([TimelineContent]).isRequired,
-  title: PropTypes.node.isRequired,
+  title: PropTypes.oneOf([PropTypes.string, PropTypes.node]).isRequired,
   background: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired
 }

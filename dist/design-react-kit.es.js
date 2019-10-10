@@ -1,641 +1,12 @@
 import WebFont from 'webfontloader';
 import { Util, Badge as Badge$1, Collapse as Collapse$1, FormGroup as FormGroup$1, Input as Input$1, Label, NavbarBrand, Navbar, NavbarToggler, Jumbotron, Nav as Nav$1, Card as Card$1 } from 'reactstrap';
 export { Alert, Breadcrumb, BreadcrumbItem, Button, ButtonDropdown, ButtonGroup, ButtonToolbar, CardBody, CardColumns, CardDeck, CardFooter, CardGroup, CardHeader, CardImg, CardImgOverlay, CardLink, CardSubtitle, CardText, CardTitle, Carousel, CarouselCaption, CarouselControl, CarouselIndicators, CarouselItem, Col, Container, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Fade, Form, FormFeedback, FormText, InputGroup, InputGroupAddon, InputGroupButtonDropdown, InputGroupText, Jumbotron, Label, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Media, Modal, ModalBody, ModalFooter, ModalHeader, NavItem, NavLink, Navbar, NavbarBrand, NavbarToggler, PaginationItem as PagerItem, PaginationLink as PagerLink, Popover, PopoverBody, PopoverHeader, PopperContent, PopperTargetHelper, Row, TabContent, TabPane, Table, Tooltip, UncontrolledAlert, UncontrolledButtonDropdown, UncontrolledCarousel, UncontrolledCollapse, UncontrolledDropdown, UncontrolledTooltip, Util } from 'reactstrap';
-import PropTypes from 'prop-types';
+export { default as Scrollspy } from 'react-scrollspy';
 import React, { Component, PureComponent, Fragment } from 'react';
+import PropTypes from 'prop-types';
 import Transition from 'react-transition-group/Transition';
 
-function unwrapExports (x) {
-	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
-}
-
-function createCommonjsModule(fn, module) {
-	return module = { exports: {} }, fn(module, module.exports), module.exports;
-}
-
-var interopRequireDefault = createCommonjsModule(function (module) {
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      "default": obj
-    };
-  }
-
-  module.exports = _interopRequireDefault;
-});
-unwrapExports(interopRequireDefault);
-
-var _extends_1 = createCommonjsModule(function (module) {
-  function _extends() {
-    module.exports = _extends = Object.assign || function (target) {
-      for (var i = 1; i < arguments.length; i++) {
-        var source = arguments[i];
-
-        for (var key in source) {
-          if (Object.prototype.hasOwnProperty.call(source, key)) {
-            target[key] = source[key];
-          }
-        }
-      }
-
-      return target;
-    };
-
-    return _extends.apply(this, arguments);
-  }
-
-  module.exports = _extends;
-});
-
 function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-var defineProperty = _defineProperty;
-
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) {
-    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
-      arr2[i] = arr[i];
-    }
-
-    return arr2;
-  }
-}
-
-var arrayWithoutHoles = _arrayWithoutHoles;
-
-function _iterableToArray(iter) {
-  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
-}
-
-var iterableToArray = _iterableToArray;
-
-function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance");
-}
-
-var nonIterableSpread = _nonIterableSpread;
-
-function _toConsumableArray(arr) {
-  return arrayWithoutHoles(arr) || iterableToArray(arr) || nonIterableSpread();
-}
-
-var toConsumableArray = _toConsumableArray;
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-var classCallCheck = _classCallCheck;
-
-var _typeof_1 = createCommonjsModule(function (module) {
-  function _typeof2(obj) {
-    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      _typeof2 = function _typeof2(obj) {
-        return typeof obj;
-      };
-    } else {
-      _typeof2 = function _typeof2(obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-      };
-    }
-
-    return _typeof2(obj);
-  }
-
-  function _typeof(obj) {
-    if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
-      module.exports = _typeof = function _typeof(obj) {
-        return _typeof2(obj);
-      };
-    } else {
-      module.exports = _typeof = function _typeof(obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
-      };
-    }
-
-    return _typeof(obj);
-  }
-
-  module.exports = _typeof;
-});
-
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-var assertThisInitialized = _assertThisInitialized;
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof_1(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return assertThisInitialized(self);
-}
-
-var possibleConstructorReturn = _possibleConstructorReturn;
-
-var getPrototypeOf = createCommonjsModule(function (module) {
-  function _getPrototypeOf(o) {
-    module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-      return o.__proto__ || Object.getPrototypeOf(o);
-    };
-    return _getPrototypeOf(o);
-  }
-
-  module.exports = _getPrototypeOf;
-});
-
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
-}
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-var createClass = _createClass;
-
-var setPrototypeOf = createCommonjsModule(function (module) {
-  function _setPrototypeOf(o, p) {
-    module.exports = _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-      o.__proto__ = p;
-      return o;
-    };
-
-    return _setPrototypeOf(o, p);
-  }
-
-  module.exports = _setPrototypeOf;
-});
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) setPrototypeOf(subClass, superClass);
-}
-
-var inherits = _inherits;
-
-var classnames = createCommonjsModule(function (module) {
-  /*!
-    Copyright (c) 2017 Jed Watson.
-    Licensed under the MIT License (MIT), see
-    http://jedwatson.github.io/classnames
-  */
-
-  /* global define */
-  (function () {
-
-    var hasOwn = {}.hasOwnProperty;
-
-    function classNames() {
-      var classes = [];
-
-      for (var i = 0; i < arguments.length; i++) {
-        var arg = arguments[i];
-        if (!arg) continue;
-        var argType = typeof arg;
-
-        if (argType === 'string' || argType === 'number') {
-          classes.push(arg);
-        } else if (Array.isArray(arg) && arg.length) {
-          var inner = classNames.apply(null, arg);
-
-          if (inner) {
-            classes.push(inner);
-          }
-        } else if (argType === 'object') {
-          for (var key in arg) {
-            if (hasOwn.call(arg, key) && arg[key]) {
-              classes.push(key);
-            }
-          }
-        }
-      }
-
-      return classes.join(' ');
-    }
-
-    if ( module.exports) {
-      classNames["default"] = classNames;
-      module.exports = classNames;
-    } else {
-      window.classNames = classNames;
-    }
-  })();
-});
-
-var throttle_1 = createCommonjsModule(function (module, exports) {
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports["default"] = void 0;
-
-  var throttle = function throttle(fn) {
-    var threshold = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 100;
-    var last;
-    var timer;
-    return function () {
-      var now = +new Date();
-      var timePassed = !!last && now < last + threshold;
-
-      if (timePassed) {
-        clearTimeout(timer);
-        timer = setTimeout(function () {
-          last = now;
-          fn();
-        }, threshold);
-      } else {
-        last = now;
-        fn();
-      }
-    };
-  };
-
-  var _default = throttle;
-  exports["default"] = _default;
-});
-unwrapExports(throttle_1);
-
-var Scrollspy_1 = createCommonjsModule(function (module, exports) {
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports["default"] = void 0;
-
-  var _extends2 = interopRequireDefault(_extends_1);
-
-  var _defineProperty2 = interopRequireDefault(defineProperty);
-
-  var _toConsumableArray2 = interopRequireDefault(toConsumableArray);
-
-  var _classCallCheck2 = interopRequireDefault(classCallCheck);
-
-  var _possibleConstructorReturn2 = interopRequireDefault(possibleConstructorReturn);
-
-  var _getPrototypeOf2 = interopRequireDefault(getPrototypeOf);
-
-  var _assertThisInitialized2 = interopRequireDefault(assertThisInitialized);
-
-  var _createClass2 = interopRequireDefault(createClass);
-
-  var _inherits2 = interopRequireDefault(inherits);
-
-  var _propTypes = interopRequireDefault(PropTypes);
-
-  var _react = interopRequireDefault(React);
-
-  var _classnames = interopRequireDefault(classnames);
-
-  var _throttle = interopRequireDefault(throttle_1);
-
-  function isEqualArray(a, b) {
-    return a.length === b.length && a.every(function (item, index) {
-      return item === b[index];
-    });
-  }
-
-  var Scrollspy =
-  /*#__PURE__*/
-  function (_React$Component) {
-    (0, _inherits2["default"])(Scrollspy, _React$Component);
-    (0, _createClass2["default"])(Scrollspy, null, [{
-      key: "propTypes",
-      get: function get() {
-        return {
-          items: _propTypes["default"].arrayOf(_propTypes["default"].string).isRequired,
-          currentClassName: _propTypes["default"].string.isRequired,
-          scrolledPastClassName: _propTypes["default"].string,
-          style: _propTypes["default"].object,
-          componentTag: _propTypes["default"].oneOfType([_propTypes["default"].string, _propTypes["default"].func]),
-          offset: _propTypes["default"].number,
-          rootEl: _propTypes["default"].string,
-          onUpdate: _propTypes["default"].func
-        };
-      }
-    }, {
-      key: "defaultProps",
-      get: function get() {
-        return {
-          items: [],
-          currentClassName: '',
-          style: {},
-          componentTag: 'ul',
-          offset: 0,
-          onUpdate: function onUpdate() {}
-        };
-      }
-    }]);
-
-    function Scrollspy(props) {
-      var _this;
-
-      (0, _classCallCheck2["default"])(this, Scrollspy);
-      _this = (0, _possibleConstructorReturn2["default"])(this, (0, _getPrototypeOf2["default"])(Scrollspy).call(this, props));
-      _this.state = {
-        targetItems: [],
-        inViewState: [],
-        isScrolledPast: [] // manually bind as ES6 does not apply this
-        // auto binding as React.createClass does
-
-      };
-      _this._handleSpy = _this._handleSpy.bind((0, _assertThisInitialized2["default"])(_this));
-      return _this;
-    }
-
-    (0, _createClass2["default"])(Scrollspy, [{
-      key: "_initSpyTarget",
-      value: function _initSpyTarget(items) {
-        var targetItems = items.map(function (item) {
-          return document.getElementById(item);
-        });
-        return targetItems;
-      } // https://github.com/makotot/react-scrollspy/pull/45
-
-    }, {
-      key: "_fillArray",
-      value: function _fillArray(array, val) {
-        var newArray = [];
-
-        for (var i = 0, max = array.length; i < max; i++) {
-          newArray[i] = val;
-        }
-
-        return newArray;
-      }
-    }, {
-      key: "_isScrolled",
-      value: function _isScrolled() {
-        return this._getScrollDimension().scrollTop > 0;
-      }
-    }, {
-      key: "_getScrollDimension",
-      value: function _getScrollDimension() {
-        var doc = document;
-        var rootEl = this.props.rootEl;
-        var scrollTop = rootEl ? doc.querySelector(rootEl).scrollTop : doc.documentElement.scrollTop || doc.body.parentNode.scrollTop || doc.body.scrollTop;
-        var scrollHeight = rootEl ? doc.querySelector(rootEl).scrollHeight : doc.documentElement.scrollHeight || doc.body.parentNode.scrollHeight || doc.body.scrollHeight;
-        return {
-          scrollTop: scrollTop,
-          scrollHeight: scrollHeight
-        };
-      }
-    }, {
-      key: "_getElemsViewState",
-      value: function _getElemsViewState(targets) {
-        var elemsInView = [];
-        var elemsOutView = [];
-        var viewStatusList = [];
-        var targetItems = targets ? targets : this.state.targetItems;
-        var hasInViewAlready = false;
-
-        for (var i = 0, max = targetItems.length; i < max; i++) {
-          var currentContent = targetItems[i];
-          var isInView = hasInViewAlready ? false : this._isInView(currentContent);
-
-          if (isInView) {
-            hasInViewAlready = true;
-            elemsInView.push(currentContent);
-          } else {
-            elemsOutView.push(currentContent);
-          }
-
-          var isLastItem = i === max - 1;
-
-          var isScrolled = this._isScrolled(); // https://github.com/makotot/react-scrollspy/pull/26#issue-167413769
-
-
-          var isLastShortItemAtBottom = this._isAtBottom() && this._isInView(currentContent) && !isInView && isLastItem && isScrolled;
-
-          if (isLastShortItemAtBottom) {
-            elemsOutView.pop();
-            elemsOutView.push.apply(elemsOutView, (0, _toConsumableArray2["default"])(elemsInView));
-            elemsInView = [currentContent];
-            viewStatusList = this._fillArray(viewStatusList, false);
-            isInView = true;
-          }
-
-          viewStatusList.push(isInView);
-        }
-
-        return {
-          inView: elemsInView,
-          outView: elemsOutView,
-          viewStatusList: viewStatusList,
-          scrolledPast: this.props.scrolledPastClassName && this._getScrolledPast(viewStatusList)
-        };
-      }
-    }, {
-      key: "_isInView",
-      value: function _isInView(el) {
-        if (!el) {
-          return false;
-        }
-
-        var _this$props = this.props,
-            rootEl = _this$props.rootEl,
-            offset = _this$props.offset;
-        var rootRect;
-
-        if (rootEl) {
-          rootRect = document.querySelector(rootEl).getBoundingClientRect();
-        }
-
-        var rect = el.getBoundingClientRect();
-        var winH = rootEl ? rootRect.height : window.innerHeight;
-
-        var _this$_getScrollDimen = this._getScrollDimension(),
-            scrollTop = _this$_getScrollDimen.scrollTop;
-
-        var scrollBottom = scrollTop + winH;
-        var elTop = rootEl ? rect.top + scrollTop - rootRect.top + offset : rect.top + scrollTop + offset;
-        var elBottom = elTop + el.offsetHeight;
-        return elTop < scrollBottom && elBottom > scrollTop;
-      }
-    }, {
-      key: "_isAtBottom",
-      value: function _isAtBottom() {
-        var rootEl = this.props.rootEl;
-
-        var _this$_getScrollDimen2 = this._getScrollDimension(),
-            scrollTop = _this$_getScrollDimen2.scrollTop,
-            scrollHeight = _this$_getScrollDimen2.scrollHeight;
-
-        var winH = rootEl ? document.querySelector(rootEl).getBoundingClientRect().height : window.innerHeight;
-        var scrolledToBottom = scrollTop + winH >= scrollHeight;
-        return scrolledToBottom;
-      }
-    }, {
-      key: "_getScrolledPast",
-      value: function _getScrolledPast(viewStatusList) {
-        if (!viewStatusList.some(function (item) {
-          return item;
-        })) {
-          return viewStatusList;
-        }
-
-        var hasFoundInView = false;
-        var scrolledPastItems = viewStatusList.map(function (item) {
-          if (item && !hasFoundInView) {
-            hasFoundInView = true;
-            return false;
-          }
-
-          return !hasFoundInView;
-        });
-        return scrolledPastItems;
-      }
-    }, {
-      key: "_spy",
-      value: function _spy(targets) {
-        var _this2 = this;
-
-        var elemensViewState = this._getElemsViewState(targets);
-
-        var currentStatuses = this.state.inViewState;
-        this.setState({
-          inViewState: elemensViewState.viewStatusList,
-          isScrolledPast: elemensViewState.scrolledPast
-        }, function () {
-          _this2._update(currentStatuses);
-        });
-      }
-    }, {
-      key: "_update",
-      value: function _update(prevStatuses) {
-        if (isEqualArray(this.state.inViewState, prevStatuses)) {
-          return;
-        }
-
-        this.props.onUpdate(this.state.targetItems[this.state.inViewState.indexOf(true)]);
-      }
-    }, {
-      key: "_handleSpy",
-      value: function _handleSpy() {
-        (0, _throttle["default"])(this._spy(), 100);
-      }
-    }, {
-      key: "_initFromProps",
-      value: function _initFromProps() {
-        var targetItems = this._initSpyTarget(this.props.items);
-
-        this.setState({
-          targetItems: targetItems
-        });
-
-        this._spy(targetItems);
-      }
-    }, {
-      key: "offEvent",
-      value: function offEvent() {
-        var el = this.props.rootEl ? document.querySelector(this.props.rootEl) : window;
-        el.removeEventListener('scroll', this._handleSpy);
-      }
-    }, {
-      key: "onEvent",
-      value: function onEvent() {
-        var el = this.props.rootEl ? document.querySelector(this.props.rootEl) : window;
-        el.addEventListener('scroll', this._handleSpy);
-      }
-    }, {
-      key: "componentDidMount",
-      value: function componentDidMount() {
-        this._initFromProps();
-
-        this.onEvent();
-      }
-    }, {
-      key: "componentWillUnmount",
-      value: function componentWillUnmount() {
-        this.offEvent();
-      }
-    }, {
-      key: "componentWillReceiveProps",
-      value: function componentWillReceiveProps() {
-        this._initFromProps();
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        var _this3 = this;
-
-        var Tag = this.props.componentTag;
-        var _this$props2 = this.props,
-            children = _this$props2.children,
-            className = _this$props2.className,
-            scrolledPastClassName = _this$props2.scrolledPastClassName,
-            style = _this$props2.style;
-        var counter = 0;
-
-        var items = _react["default"].Children.map(children, function (child, idx) {
-          var _classNames;
-
-          if (!child) {
-            return null;
-          }
-
-          var ChildTag = child.type;
-          var isScrolledPast = scrolledPastClassName && _this3.state.isScrolledPast[idx];
-          var childClass = (0, _classnames["default"])((_classNames = {}, (0, _defineProperty2["default"])(_classNames, "".concat(child.props.className), child.props.className), (0, _defineProperty2["default"])(_classNames, "".concat(_this3.props.currentClassName), _this3.state.inViewState[idx]), (0, _defineProperty2["default"])(_classNames, "".concat(_this3.props.scrolledPastClassName), isScrolledPast), _classNames));
-          return _react["default"].createElement(ChildTag, (0, _extends2["default"])({}, child.props, {
-            className: childClass,
-            key: counter++
-          }), child.props.children);
-        });
-
-        var itemClass = (0, _classnames["default"])((0, _defineProperty2["default"])({}, "".concat(className), className));
-        return _react["default"].createElement(Tag, {
-          className: itemClass,
-          style: style
-        }, items);
-      }
-    }]);
-    return Scrollspy;
-  }(_react["default"].Component);
-
-  exports["default"] = Scrollspy;
-});
-var Scrollspy = unwrapExports(Scrollspy_1);
-
-function _defineProperty$1(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -689,13 +60,66 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   return target;
 }
 
-function _assertThisInitialized$1(self) {
+function _assertThisInitialized(self) {
   if (self === void 0) {
     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
   }
 
   return self;
 }
+
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var classnames = createCommonjsModule(function (module) {
+  /*!
+    Copyright (c) 2017 Jed Watson.
+    Licensed under the MIT License (MIT), see
+    http://jedwatson.github.io/classnames
+  */
+
+  /* global define */
+  (function () {
+
+    var hasOwn = {}.hasOwnProperty;
+
+    function classNames() {
+      var classes = [];
+
+      for (var i = 0; i < arguments.length; i++) {
+        var arg = arguments[i];
+        if (!arg) continue;
+        var argType = typeof arg;
+
+        if (argType === 'string' || argType === 'number') {
+          classes.push(arg);
+        } else if (Array.isArray(arg) && arg.length) {
+          var inner = classNames.apply(null, arg);
+
+          if (inner) {
+            classes.push(inner);
+          }
+        } else if (argType === 'object') {
+          for (var key in arg) {
+            if (hasOwn.call(arg, key) && arg[key]) {
+              classes.push(key);
+            }
+          }
+        }
+      }
+
+      return classes.join(' ');
+    }
+
+    if ( module.exports) {
+      classNames["default"] = classNames;
+      module.exports = classNames;
+    } else {
+      window.classNames = classNames;
+    }
+  })();
+});
 
 var propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
@@ -794,11 +218,11 @@ function (_Component) {
 
     _this = _Component.call.apply(_Component, [this].concat(args)) || this;
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "state", {
+    _defineProperty(_assertThisInitialized(_this), "state", {
       height: null
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onEntering", function (node, isAppearing) {
+    _defineProperty(_assertThisInitialized(_this), "onEntering", function (node, isAppearing) {
       _this.setState({
         height: getHeight(node)
       });
@@ -806,7 +230,7 @@ function (_Component) {
       _this.props.onEntering(node, isAppearing);
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onEntered", function (node, isAppearing) {
+    _defineProperty(_assertThisInitialized(_this), "onEntered", function (node, isAppearing) {
       _this.setState({
         height: null
       });
@@ -814,7 +238,7 @@ function (_Component) {
       _this.props.onEntered(node, isAppearing);
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onExit", function (node) {
+    _defineProperty(_assertThisInitialized(_this), "onExit", function (node) {
       _this.setState({
         height: getHeight(node)
       });
@@ -822,7 +246,7 @@ function (_Component) {
       _this.props.onExit(node);
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onExiting", function (node) {
+    _defineProperty(_assertThisInitialized(_this), "onExiting", function (node) {
       // getting this variable triggers a reflow
       var _unused = node.offsetHeight; // eslint-disable-line no-unused-vars
 
@@ -833,7 +257,7 @@ function (_Component) {
       _this.props.onExiting(node);
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onExited", function (node) {
+    _defineProperty(_assertThisInitialized(_this), "onExited", function (node) {
       _this.setState({
         height: null
       });
@@ -983,12 +407,12 @@ function (_Component) {
 
     _this = _Component.call.apply(_Component, [this].concat(args)) || this;
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "state", {
+    _defineProperty(_assertThisInitialized(_this), "state", {
       active: _this.props.active || false,
       value: null
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onFocus", function (callback, active) {
+    _defineProperty(_assertThisInitialized(_this), "onFocus", function (callback, active) {
       if (active === void 0) {
         active = true;
       }
@@ -1002,7 +426,7 @@ function (_Component) {
       });
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onBlur", function (callback, active) {
+    _defineProperty(_assertThisInitialized(_this), "onBlur", function (callback, active) {
       if (active === void 0) {
         active = false;
       }
@@ -1016,7 +440,7 @@ function (_Component) {
       });
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onChange", function (callback, event) {
+    _defineProperty(_assertThisInitialized(_this), "onChange", function (callback, event) {
       var value;
       var target;
 
@@ -1338,11 +762,11 @@ function (_PureComponent) {
   return HeaderBrand;
 }(PureComponent);
 
-_defineProperty$1(HeaderBrand, "propTypes", propTypes$8);
+_defineProperty(HeaderBrand, "propTypes", propTypes$8);
 
-_defineProperty$1(HeaderBrand, "defaultProps", defaultProps$7);
+_defineProperty(HeaderBrand, "defaultProps", defaultProps$7);
 
-_defineProperty$1(HeaderBrand, "contextType", HeaderContext);
+_defineProperty(HeaderBrand, "contextType", HeaderContext);
 
 var propTypes$9 = {
   /** Classi addizionali per il componente HeaderContent */
@@ -1397,11 +821,11 @@ function (_PureComponent) {
   return HeaderContent;
 }(PureComponent);
 
-_defineProperty$1(HeaderContent, "propTypes", propTypes$9);
+_defineProperty(HeaderContent, "propTypes", propTypes$9);
 
-_defineProperty$1(HeaderContent, "defaultProps", defaultProps$8);
+_defineProperty(HeaderContent, "defaultProps", defaultProps$8);
 
-_defineProperty$1(HeaderContent, "contextType", HeaderContext);
+_defineProperty(HeaderContent, "contextType", HeaderContext);
 
 var propTypes$a = {
   /** Classi addizionali per il componente HeaderLinkZone, applicata all'element "nav" annidato */
@@ -1462,11 +886,11 @@ function (_PureComponent) {
   return HeaderRightZone;
 }(PureComponent);
 
-_defineProperty$1(HeaderRightZone, "propTypes", propTypes$b);
+_defineProperty(HeaderRightZone, "propTypes", propTypes$b);
 
-_defineProperty$1(HeaderRightZone, "defaultProps", defaultProps$a);
+_defineProperty(HeaderRightZone, "defaultProps", defaultProps$a);
 
-_defineProperty$1(HeaderRightZone, "contextType", HeaderContext);
+_defineProperty(HeaderRightZone, "contextType", HeaderContext);
 
 var propTypes$c = {
   /** Classi addizionali per il componente HeaderSearch */
@@ -1590,11 +1014,11 @@ function (_PureComponent) {
   return HeaderToggler;
 }(PureComponent);
 
-_defineProperty$1(HeaderToggler, "propTypes", propTypes$e);
+_defineProperty(HeaderToggler, "propTypes", propTypes$e);
 
-_defineProperty$1(HeaderToggler, "defaultProps", defaultProps$d);
+_defineProperty(HeaderToggler, "defaultProps", defaultProps$d);
 
-_defineProperty$1(HeaderToggler, "contextType", HeaderContext);
+_defineProperty(HeaderToggler, "contextType", HeaderContext);
 
 function Hero(props) {
   return React.createElement(Jumbotron, props);
@@ -1641,13 +1065,13 @@ function (_React$Component) {
 
     _this = _React$Component.call(this) || this;
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "toggleFocusLabel", function () {
+    _defineProperty(_assertThisInitialized(_this), "toggleFocusLabel", function () {
       _this.setState({
         isFocused: true
       });
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "toggleBlurLabel", function (e) {
+    _defineProperty(_assertThisInitialized(_this), "toggleBlurLabel", function (e) {
       if (e.target.value === '') {
         _this.setState({
           isFocused: !_this.state.isFocused
@@ -1660,7 +1084,7 @@ function (_React$Component) {
       hidden: true,
       icon: true
     };
-    _this.toggleShow = _this.toggleShow.bind(_assertThisInitialized$1(_this));
+    _this.toggleShow = _this.toggleShow.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -2063,11 +1487,11 @@ function (_Component) {
 
     _this = _Component.call.apply(_Component, [this].concat(args)) || this;
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "state", {
+    _defineProperty(_assertThisInitialized(_this), "state", {
       showPassword: false
     });
 
-    _defineProperty$1(_assertThisInitialized$1(_this), "onPasswordToggle", function () {
+    _defineProperty(_assertThisInitialized(_this), "onPasswordToggle", function () {
       _this.setState(function (prevState) {
         return {
           showPassword: !prevState.showPassword
@@ -2099,7 +1523,7 @@ function (_Component) {
   return PasswordInput;
 }(Component);
 
-_defineProperty$1(PasswordInput, "defaultProps", {
+_defineProperty(PasswordInput, "defaultProps", {
   type: 'password'
 });
 
@@ -2176,7 +1600,7 @@ function (_Component) {
   return PasswordMeter;
 }(Component);
 
-_defineProperty$1(PasswordMeter, "defaultProps", {
+_defineProperty(PasswordMeter, "defaultProps", {
   score: 0,
   steps: defaultSteps
 });
@@ -2680,47 +2104,39 @@ var defaultProps$s = {
   srText: false
 };
 
-var BottomNavItem =
-/*#__PURE__*/
-function (_React$Component) {
-  _inheritsLoose(BottomNavItem, _React$Component);
+var BottomNavItem = function BottomNavItem(_ref) {
+  var active = _ref.active,
+      badge = _ref.badge,
+      alert = _ref.alert,
+      link = _ref.link,
+      srText = _ref.srText,
+      iconName = _ref.iconName,
+      label = _ref.label,
+      Tag = _ref.tag,
+      attributes = _objectWithoutPropertiesLoose(_ref, ["active", "badge", "alert", "link", "srText", "iconName", "label", "tag"]);
 
-  function BottomNavItem() {
-    return _React$Component.apply(this, arguments) || this;
-  }
-
-  var _proto = BottomNavItem.prototype;
-
-  _proto.render = function render() {
-    var _this$props = this.props,
-        Tag = _this$props.tag,
-        attributes = _objectWithoutPropertiesLoose(_this$props, ["tag"]);
-
-    var activeClass = classnames(this.props.active ? 'active' : false);
-    var badgeWrapper = this.props.badge ? React.createElement("div", {
-      className: "badge-wrapper"
-    }, React.createElement("span", {
-      className: "bottom-nav-badge"
-    }, this.props.badge)) : false;
-    var alertWrapper = this.props.alert ? React.createElement("div", {
-      className: "badge-wrapper"
-    }, React.createElement("span", {
-      className: "bottom-nav-alert"
-    })) : false;
-    return React.createElement("li", attributes, React.createElement(Tag, {
-      href: this.props.link,
-      className: activeClass
-    }, badgeWrapper, alertWrapper, React.createElement(Icon, {
-      icon: this.props.iconName
-    }), React.createElement("span", {
-      className: "bottom-nav-label"
-    }, this.props.label, React.createElement("span", {
-      className: "sr-only"
-    }, this.props.srText))));
-  };
-
-  return BottomNavItem;
-}(React.Component);
+  var activeClass = classnames(active ? 'active' : false);
+  var badgeWrapper = badge ? React.createElement("div", {
+    className: "badge-wrapper"
+  }, React.createElement("span", {
+    className: "bottom-nav-badge"
+  }, badge)) : false;
+  var alertWrapper = alert ? React.createElement("div", {
+    className: "badge-wrapper"
+  }, React.createElement("span", {
+    className: "bottom-nav-alert"
+  })) : false;
+  return React.createElement("li", attributes, React.createElement(Tag, {
+    href: link,
+    className: activeClass
+  }, badgeWrapper, alertWrapper, React.createElement(Icon, {
+    icon: iconName
+  }), React.createElement("span", {
+    className: "bottom-nav-label"
+  }, label, React.createElement("span", {
+    className: "sr-only"
+  }, srText))));
+};
 
 BottomNavItem.propTypes = propTypes$y;
 BottomNavItem.defaultProps = defaultProps$s;
@@ -2800,5 +2216,5 @@ WebFont.load({
   }
 });
 
-export { Accordion, AccordionBody, AccordionHeader, Badge, BottomNav, BottomNavItem, Card, CardCategory, CardFooterCTA, CardReadMore, CardSignature, CardTag, CardTagsHeader, Chip, ChipLabel, Collapse, FormGroup, Header, HeaderBrand, HeaderContent, HeaderLinkZone, HeaderRightZone, HeaderSearch, HeaderSocialsZone, HeaderToggler, Headers, Hero, Icon, Input, LinkList, LinkListItem, Nav, Pager, PagerList, PasswordInput, PasswordMeter, Progress, Scrollspy, Sidebar, Skiplink, SkiplinkItem, Spinner, Toggle };
+export { Accordion, AccordionBody, AccordionHeader, Badge, BottomNav, BottomNavItem, Card, CardCategory, CardFooterCTA, CardReadMore, CardSignature, CardTag, CardTagsHeader, Chip, ChipLabel, Collapse, FormGroup, Header, HeaderBrand, HeaderContent, HeaderLinkZone, HeaderRightZone, HeaderSearch, HeaderSocialsZone, HeaderToggler, Headers, Hero, Icon, Input, LinkList, LinkListItem, Nav, Pager, PagerList, PasswordInput, PasswordMeter, Progress, Sidebar, Skiplink, SkiplinkItem, Spinner, Toggle };
 //# sourceMappingURL=design-react-kit.es.js.map
