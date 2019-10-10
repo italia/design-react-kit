@@ -52,7 +52,12 @@ const SlimHeaderFullResponsive = ({ theme }) => {
               </Row>
             </DropdownMenu>
           </UncontrolledDropdown>
-          <Button color="primary" size="full" className="btn-icon" href="#">
+          <Button
+            color="primary"
+            size="full"
+            className="btn-icon"
+            href="#"
+            title="Accedi all'area personale">
             <span className="rounded-icon">
               <Icon color="primary" icon="it-user" />
             </span>
