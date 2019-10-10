@@ -187,23 +187,31 @@ const ChipGroupsComponent = () => (
 )
 
 const ColorChangeChipComponent = () => (
-  <div>
-    <Chip color = "primary">
+    <Row>
+    <Col xs="12" md={{ size: 6 }}>
+      <h4>Change Color of Chips</h4>
+      <p className="mt-4 mb-2">Primary color</p>
+    <Chip simple color = "primary">
       <ChipLabel>Primary</ChipLabel>
     </Chip>
-    <Chip color = "warning">
+    <p className="mt-4 mb-2">Warning Color</p>
+    <Chip simple color = "warning">
       <ChipLabel>Warning</ChipLabel>
     </Chip>
-    <Chip color = "success">
+    <p className="mt-4 mb-2">Success Color</p>
+    <Chip simple color = "success">
       <ChipLabel>Success</ChipLabel>
     </Chip>
-    <Chip color = "danger">
+    <p className="mt-4 mb-2">Danger Color</p>
+    <Chip simple color = "danger">
       <ChipLabel>Danger</ChipLabel>
     </Chip>
-    <Chip color = "info">
+    <p className="mt-4 mb-2">Info Color</p>
+    <Chip simple color = "info">
       <ChipLabel>Info</ChipLabel>
     </Chip>
-  </div>
+  </Col>
+  </Row>
 )
 
 storiesOf('Componenti/Chips', module)
