@@ -12,23 +12,27 @@ const propTypes = {
   /** Impostarlo su `true` per una versione più grande del componente Chip. */
   large: PropTypes.bool,
   /** Impostarlo su `true` per renderizzare il componente Chip come disabilitato */
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  color: PropTypes.string
 }
 
 const defaultProps = {
   tag: 'div',
   simple: false,
   large: false,
-  disabled: false
+  disabled: false,
+  color: 'chip-primary'
 }
 
 const Chip = props => {
-  const { className, tag: Tag, simple, large, disabled, ...attributes } = props
-  const classes = classNames('chip', className, {
-    'chip-simple': simple,
-    'chip-lg': large,
-    'chip-disabled': disabled
-  })
+  const { className, color, tag: Tag, simple, large, disabled, ...attributes } = props
+  var classes = classNames('chip', className, 
+  simple ? 'chip-simple' : false,
+  large ? 'chip-lg' : false,
+  disabled ? 'chip-disabled' : false,
+  'chip-' + color 
+
+);
 
   return <Tag className={classes} {...attributes} />
 }

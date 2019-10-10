@@ -10735,32 +10735,39 @@
 	  large: propTypes.bool,
 
 	  /** Impostarlo su `true` per renderizzare il componente Chip come disabilitato */
-	  disabled: propTypes.bool
+		disabled: propTypes.bool,
+		color: propTypes.string
 	};
 	var defaultProps$1u = {
 	  tag: 'div',
 	  simple: false,
 	  large: false,
-	  disabled: false
+		disabled: false,
+		color: ''
 	};
 
 	var Chip = function Chip(props) {
 	  var className = props.className,
-	      Tag = props.tag,
+				Tag = props.tag,
+				cssModule = props.cssModule,
 	      simple = props.simple,
 	      large = props.large,
-	      disabled = props.disabled,
-	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "simple", "large", "disabled"]);
+				disabled = props.disabled,
+				color = props.color,
+				attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "simple","cssModule", "large", "disabled", "color"]);
 
-	  var classes = classnames('chip', className, {
-	    'chip-simple': simple,
-	    'chip-lg': large,
-	    'chip-disabled': disabled
-	  });
+	  var classes = mapToCssModules(classnames('chip', className, 
+	    simple ? 'chip-simple' : false,
+	    large ? 'chip-lg' : false,
+			disabled ? 'chip-disabled' : false,
+			'chip-' + color 
+		
+	  ),cssModule);
 	  return React__default.createElement(Tag, _extends$1({
 	    className: classes
 	  }, attributes));
 	};
+	
 
 	Chip.propTypes = propTypes$1E;
 	Chip.defaultProps = defaultProps$1u;
