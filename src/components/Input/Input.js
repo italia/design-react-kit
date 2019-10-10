@@ -15,12 +15,6 @@ const propTypes = {
   children: PropTypes.node,
   type: PropTypes.string,
   size: PropTypes.string,
-  label: PropTypes.string,
-  placeholder: PropTypes.string,
-  value: PropTypes.string,
-  id: PropTypes.string,
-  infoText: PropTypes.string,
-  normalized: PropTypes.bool,
   bsSize: PropTypes.string,
   state: deprecated(
     PropTypes.string,
@@ -76,20 +70,17 @@ class Input extends React.Component {
       className,
       cssModule,
       type,
+      bsSize,
       state,
+      valid,
+      invalid,
       tag,
       addon,
       static: staticInput,
       plaintext,
       innerRef,
-      label,
-      infoText,
-      placeholder,
-      normalized,
-      value,
       ...attributes
     } = this.props
-    let { bsSize, valid, invalid } = this.props
 
     const Tag = getTag({ tag, plaintext, staticInput, type })
     const formControlClass = getFormControlClass({

@@ -61,6 +61,7 @@ export {
   Table,
   ListGroup,
   Form,
+  FormGroup,
   FormFeedback,
   FormText,
   InputGroup,
@@ -95,7 +96,7 @@ export { default as AccordionBody } from './components/Accordion/AccordionBody'
 export { default as Badge } from './components/Badge/Badge'
 export { default as Button } from './components/Button/Button'
 export { default as Collapse } from './components/Collapse/Collapse'
-export { default as FormGroup } from './components/FormGroup/FormGroup'
+// export { default as FormGroup } from './components/FormGroup/FormGroup'
 export { default as Header } from './components/Header/Header'
 export { default as Headers } from './components/Header/Headers'
 export { default as HeaderBrand } from './components/Header/HeaderBrand'
