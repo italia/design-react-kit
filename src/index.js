@@ -18,7 +18,6 @@ export {
   Navbar,
   NavbarBrand,
   NavbarToggler,
-  Nav,
   NavItem,
   NavLink,
   Breadcrumb,
@@ -81,6 +80,7 @@ export {
   ListGroupItemHeading,
   UncontrolledAlert,
   UncontrolledButtonDropdown,
+  UncontrolledCollapse,
   UncontrolledDropdown,
   UncontrolledTooltip,
   Util
@@ -96,11 +96,23 @@ export { default as AccordionBody } from './components/Accordion/AccordionBody'
 export { default as Badge } from './components/Badge/Badge'
 export { default as Collapse } from './components/Collapse/Collapse'
 export { default as FormGroup } from './components/FormGroup/FormGroup'
+export { default as Header } from './components/Header/Header'
+export { default as Headers } from './components/Header/Headers'
+export { default as HeaderBrand } from './components/Header/HeaderBrand'
+export { default as HeaderContent } from './components/Header/HeaderContent'
+export { default as HeaderLinkZone } from './components/Header/HeaderLinkZone'
+export { default as HeaderRightZone } from './components/Header/HeaderRightZone'
+export { default as HeaderSearch } from './components/Header/HeaderSearch'
+export {
+  default as HeaderSocialsZone
+} from './components/Header/HeaderSocialsZone'
+export { default as HeaderToggler } from './components/Header/HeaderToggler'
 export { default as Hero } from './components/Hero/Hero'
 export { default as Icon } from './components/Icon/Icon'
 export { default as Input } from './components/Input/Input'
 export { default as LinkList } from './components/LinkList/LinkList'
 export { default as LinkListItem } from './components/LinkList/LinkListItem'
+export { default as Nav } from './components/Nav/Nav'
 export { default as Pager } from './components/Pager/Pager'
 export { default as PagerList } from './components/PagerList/PagerList'
 
@@ -126,5 +138,11 @@ export { default as CardReadMore } from './components/Card/CardReadMore'
 export { default as BottomNav } from './components/BottomNav/BottomNav'
 export { default as BottomNavItem } from './components/BottomNav/BottomNavItem'
 export { default as CookieBar } from './components/CookieBar/CookieBar'
-export { default as CookieBarButtons } from './components/CookieBar/CookieBarButtons'
-export { default as CookieBarButton } from './components/CookieBar/CookieBarButton'
+export {
+  default as CookieBarButtons
+} from './components/CookieBar/CookieBarButtons'
+export {
+  default as CookieBarButton
+} from './components/CookieBar/CookieBarButton'
+export { default as Chip } from './components/Chips/Chip'
+export { default as ChipLabel } from './components/Chips/ChipLabel'

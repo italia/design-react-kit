@@ -1,0 +1,1 @@
+Aggiungendo la prop `large` al component `Chip` viene renderizzata una versione più grande.
