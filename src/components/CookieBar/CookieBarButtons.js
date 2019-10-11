@@ -12,8 +12,8 @@ const defaultProps = {
 }
 
 const CookieBarButtons = props => {
-  const { tag: Tag, ...attributes } = props
-  const buttonClasses = classNames('cookiebar-buttons')
+  const { className, tag: Tag, ...attributes } = props
+  const buttonClasses = classNames(className, 'cookiebar-buttons')
   return <Tag className={buttonClasses} {...attributes} />
 }
 

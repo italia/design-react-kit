@@ -4,13 +4,10 @@ import classNames from 'classnames'
 
 const propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-  className: PropTypes.string,
-  link: PropTypes.string
 }
 
 const defaultProps = {
-  tag: 'button',
-  link: 'href'
+  tag: 'button'
 }
 
 class CookieBarButton extends React.Component {

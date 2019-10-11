@@ -10,7 +10,7 @@ import { CookieBar, CookieBarButtons, CookieBarButton } from '../../src'
 
 const CookieBarComponent = () => {
   const open = boolean('show', true)
-  if (!open) return <div></div>
+  if (!open) return (null)
   else {
     return (
       <CookieBar>
