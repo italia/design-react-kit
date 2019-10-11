@@ -137,5 +137,12 @@ export { default as CardFooterCTA } from './components/Card/CardFooterCTA'
 export { default as CardReadMore } from './components/Card/CardReadMore'
 export { default as BottomNav } from './components/BottomNav/BottomNav'
 export { default as BottomNavItem } from './components/BottomNav/BottomNavItem'
+export { default as CookieBar } from './components/CookieBar/CookieBar'
+export {
+  default as CookieBarButtons
+} from './components/CookieBar/CookieBarButtons'
+export {
+  default as CookieBarButton
+} from './components/CookieBar/CookieBarButton'
 export { default as Chip } from './components/Chips/Chip'
 export { default as ChipLabel } from './components/Chips/ChipLabel'
