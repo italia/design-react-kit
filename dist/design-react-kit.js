@@ -10749,20 +10749,20 @@
 	var Chip = function Chip(props) {
 	  var className = props.className,
 				Tag = props.tag,
-				cssModule = props.cssModule,
 	      simple = props.simple,
 	      large = props.large,
 				disabled = props.disabled,
 				color = props.color,
-				attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "simple","cssModule", "large", "disabled", "color"]);
+				attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "simple", "large", "disabled", "color"]);
 
-	  var classes = mapToCssModules(classnames('chip', className, 
-	    simple ? 'chip-simple' : false,
-	    large ? 'chip-lg' : false,
-			disabled ? 'chip-disabled' : false,
-			'chip-' + color 
+				const classes = classNames('chip', className, {
+					'chip-simple': simple,
+					'chip-lg': large,
+					'chip-disabled': disabled,
+					[`chip-${color}`]: color
+				})
 		
-	  ),cssModule);
+	  ));
 	  return React__default.createElement(Tag, _extends$1({
 	    className: classes
 	  }, attributes));
@@ -10814,25 +10814,7 @@
 		tag: 'div'
 	}
 	
-	var Callout = function Callout(props) {
-		var { className, tag: Tag, highlight, sublist  } = props
-		var attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "highlight", "sublist"]);
-		var wrapperClasses = mapToCssModules(classnames(
-			sublist,
-			'callout',
-			highlight ? 'callout-highlight' : false
-		))
-		var classes = classnames(className, 'callout-title')
-	  
-		return React__default.createElement(Tag, {
-			className: wrapperClasses
-		}, React__default.createElement("div", _extends$1({}, attributes, {
-			className: classes
-		})));
-	};
 	
-	Callout.propTypes = propTypes$1G
-	Callout.defaultProps = defaultProps$1u
 
 	exports.Accordion = Accordion;
 	exports.AccordionBody = AccordionBody;
@@ -10904,7 +10886,6 @@
 	exports.Jumbotron = Jumbotron;
 	exports.Label = Label;
 	exports.LinkList = LinkList;
-	exports.Callout = Callout;
 	exports.LinkListItem = LinkListItem;
 	exports.ListGroup = ListGroup;
 	exports.ListGroupItem = ListGroupItem;

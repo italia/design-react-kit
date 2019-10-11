@@ -208,7 +208,7 @@ const ColorChangeChipComponent = () => (
     </Chip>
     <p className="mt-4 mb-2">Info Color</p>
     <Chip simple color = "info">
-      <ChipLabel>Info</ChipLabel>
+      <ChipLabel>Information</ChipLabel>
     </Chip>
   </Col>
   </Row>
