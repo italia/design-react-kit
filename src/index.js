@@ -22,7 +22,6 @@ export {
   NavLink,
   Breadcrumb,
   BreadcrumbItem,
-  Button,
   ButtonDropdown,
   ButtonGroup,
   ButtonToolbar,
@@ -94,6 +93,7 @@ export {
 } from './components/Accordion/AccordionHeader'
 export { default as AccordionBody } from './components/Accordion/AccordionBody'
 export { default as Badge } from './components/Badge/Badge'
+export { default as Button } from './components/Button/Button'
 export { default as Collapse } from './components/Collapse/Collapse'
 export { default as FormGroup } from './components/FormGroup/FormGroup'
 export { default as Header } from './components/Header/Header'
