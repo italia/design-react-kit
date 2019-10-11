@@ -129,7 +129,23 @@ Una volta creato un nuovo componente, con la sua story, avviando Storybook sarà
 E' disponibile un comando per generare una versione statica del catalogo Storybook così che possa essere deployato senza utilizzo di un webserver.
 
 ```sh
-$ yarn run storybook
+$ yarn storybook:build
 ```
 
 Le pagine statiche ottenute dal processo di build saranno generate sotto la folder  `storybook-static`.
+
+## Compilazione libreria
+
+Per compilare la libreria e generare i file nella cartella `dist`, è sufficiente lanciare il comando dedicato:
+
+```sh
+$ yarn build
+```
+
+## TypeScript typings 
+
+Per generare il file delle definizioni per i _typing_ Typescript, è sufficiente lanciare il comando dedicato:
+
+```sh
+$ yarn typescript:dts
+```

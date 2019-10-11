@@ -7,18 +7,35 @@ const propTypes = {
   // eslint-disable-next-line react/forbid-foreign-prop-types
   ...CardBase.propTypes,
   teaser: PropTypes.bool,
-  spacing: PropTypes.bool
+  spacing: PropTypes.bool,
+  noWrapper: PropTypes.bool,
+  wrapperClassName: PropTypes.string
 }
 
-const Card = props => {
-  const { teaser, spacing, ...attributes } = props
-  const wrapperClasses = classNames('card-wrapper', {
+const defaultProps = {
+  // eslint-disable-next-line react/forbid-foreign-prop-types
+  ...CardBase.defaultProps,
+  noWrapper: false
+}
+
+const Card = ({
+  teaser,
+  spacing,
+  noWrapper,
+  wrapperClassName,
+  ...attributes
+}) => {
+  const wrapperClasses = classNames('card-wrapper', wrapperClassName, {
     'card-space': spacing,
     'card-teaser-wrapper': teaser
   })
   const cardClasses = classNames(attributes.className, {
     'card-teaser': teaser
   })
+
+  if (noWrapper) {
+    return <CardBase {...attributes} className={cardClasses} />
+  }
 
   return (
     <div className={wrapperClasses}>
@@ -28,6 +45,6 @@ const Card = props => {
 }
 
 Card.propTypes = propTypes
-Card.defaultProps = CardBase.defaultProps
+Card.defaultProps = defaultProps
 
 export default Card

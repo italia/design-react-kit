@@ -132,7 +132,23 @@ Once you have created a new component, with its history, starting *Storybook* wi
 A command is available to reach a static version of the Storybook catalog as it can be deployed without using a webserver.
 
 ```sh
-$ yarn run storybook
+$ yarn storybook:build
 ```
 
 Static pages obtained from the compilation process generate under the `storybook-static` directory.
+
+## Building library
+
+To build the library and add files into the `dist` folder:
+
+```sh
+$ yarn build
+```
+
+## TypeScript typing definitions 
+
+To generate Typescript typing definitions file:
+
+```sh
+$ yarn typescript:dts
+```

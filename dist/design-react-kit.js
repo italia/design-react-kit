@@ -882,10 +882,14 @@
 	      m = b ? Symbol["for"]("react.concurrent_mode") : 60111,
 	      n = b ? Symbol["for"]("react.forward_ref") : 60112,
 	      p = b ? Symbol["for"]("react.suspense") : 60113,
-	      q = b ? Symbol["for"]("react.memo") : 60115,
-	      r = b ? Symbol["for"]("react.lazy") : 60116;
+	      q = b ? Symbol["for"]("react.suspense_list") : 60120,
+	      r = b ? Symbol["for"]("react.memo") : 60115,
+	      t = b ? Symbol["for"]("react.lazy") : 60116,
+	      v = b ? Symbol["for"]("react.fundamental") : 60117,
+	      w = b ? Symbol["for"]("react.responder") : 60118,
+	      x = b ? Symbol["for"]("react.scope") : 60119;
 
-	  function t(a) {
+	  function y(a) {
 	    if ("object" === typeof a && null !== a) {
 	      var u = a.$$typeof;
 
@@ -913,19 +917,19 @@
 
 	          }
 
+	        case t:
 	        case r:
-	        case q:
 	        case d:
 	          return u;
 	      }
 	    }
 	  }
 
-	  function v(a) {
-	    return t(a) === m;
+	  function z(a) {
+	    return y(a) === m;
 	  }
 
-	  exports.typeOf = t;
+	  exports.typeOf = y;
 	  exports.AsyncMode = l;
 	  exports.ConcurrentMode = m;
 	  exports.ContextConsumer = k;
@@ -933,29 +937,29 @@
 	  exports.Element = c;
 	  exports.ForwardRef = n;
 	  exports.Fragment = e;
-	  exports.Lazy = r;
-	  exports.Memo = q;
+	  exports.Lazy = t;
+	  exports.Memo = r;
 	  exports.Portal = d;
 	  exports.Profiler = g;
 	  exports.StrictMode = f;
 	  exports.Suspense = p;
 
 	  exports.isValidElementType = function (a) {
-	    return "string" === typeof a || "function" === typeof a || a === e || a === m || a === g || a === f || a === p || "object" === typeof a && null !== a && (a.$$typeof === r || a.$$typeof === q || a.$$typeof === h || a.$$typeof === k || a.$$typeof === n);
+	    return "string" === typeof a || "function" === typeof a || a === e || a === m || a === g || a === f || a === p || a === q || "object" === typeof a && null !== a && (a.$$typeof === t || a.$$typeof === r || a.$$typeof === h || a.$$typeof === k || a.$$typeof === n || a.$$typeof === v || a.$$typeof === w || a.$$typeof === x);
 	  };
 
 	  exports.isAsyncMode = function (a) {
-	    return v(a) || t(a) === l;
+	    return z(a) || y(a) === l;
 	  };
 
-	  exports.isConcurrentMode = v;
+	  exports.isConcurrentMode = z;
 
 	  exports.isContextConsumer = function (a) {
-	    return t(a) === k;
+	    return y(a) === k;
 	  };
 
 	  exports.isContextProvider = function (a) {
-	    return t(a) === h;
+	    return y(a) === h;
 	  };
 
 	  exports.isElement = function (a) {
@@ -963,35 +967,35 @@
 	  };
 
 	  exports.isForwardRef = function (a) {
-	    return t(a) === n;
+	    return y(a) === n;
 	  };
 
 	  exports.isFragment = function (a) {
-	    return t(a) === e;
+	    return y(a) === e;
 	  };
 
 	  exports.isLazy = function (a) {
-	    return t(a) === r;
+	    return y(a) === t;
 	  };
 
 	  exports.isMemo = function (a) {
-	    return t(a) === q;
+	    return y(a) === r;
 	  };
 
 	  exports.isPortal = function (a) {
-	    return t(a) === d;
+	    return y(a) === d;
 	  };
 
 	  exports.isProfiler = function (a) {
-	    return t(a) === g;
+	    return y(a) === g;
 	  };
 
 	  exports.isStrictMode = function (a) {
-	    return t(a) === f;
+	    return y(a) === f;
 	  };
 
 	  exports.isSuspense = function (a) {
-	    return t(a) === p;
+	    return y(a) === p;
 	  };
 	});
 	unwrapExports(reactIs_production_min);
@@ -1690,6 +1694,7 @@
 	var focusableElements = ['a[href]', 'area[href]', 'input:not([disabled]):not([type=hidden])', 'select:not([disabled])', 'textarea:not([disabled])', 'button:not([disabled])', 'object', 'embed', '[tabindex]:not(.modal)', 'audio[controls]', 'video[controls]', '[contenteditable]:not([contenteditable="false"])'];
 
 	var utils = /*#__PURE__*/Object.freeze({
+		__proto__: null,
 		getScrollbarWidth: getScrollbarWidth,
 		setScrollbarWidth: setScrollbarWidth,
 		isBodyOverflowing: isBodyOverflowing,
@@ -3165,6 +3170,7 @@
 	}
 
 	var reactLifecyclesCompat_es = /*#__PURE__*/Object.freeze({
+		__proto__: null,
 		polyfill: polyfill
 	});
 
@@ -4611,10 +4617,45 @@
 
 	var propTypes$m = {
 	  tag: tagPropType,
+	  inverse: propTypes.bool,
+	  color: propTypes.string,
+	  body: propTypes.bool,
+	  outline: propTypes.bool,
+	  className: propTypes.string,
+	  cssModule: propTypes.object,
+	  innerRef: propTypes.oneOfType([propTypes.object, propTypes.string, propTypes.func])
+	};
+	var defaultProps$k = {
+	  tag: 'div'
+	};
+
+	var Card = function Card(props) {
+	  var className = props.className,
+	      cssModule = props.cssModule,
+	      color = props.color,
+	      body = props.body,
+	      inverse = props.inverse,
+	      outline = props.outline,
+	      Tag = props.tag,
+	      innerRef = props.innerRef,
+	      attributes = _objectWithoutPropertiesLoose(props, ["className", "cssModule", "color", "body", "inverse", "outline", "tag", "innerRef"]);
+
+	  var classes = mapToCssModules(classnames(className, 'card', inverse ? 'text-white' : false, body ? 'card-body' : false, color ? (outline ? 'border' : 'bg') + "-" + color : false), cssModule);
+	  return React__default.createElement(Tag, _extends({}, attributes, {
+	    className: classes,
+	    ref: innerRef
+	  }));
+	};
+
+	Card.propTypes = propTypes$m;
+	Card.defaultProps = defaultProps$k;
+
+	var propTypes$n = {
+	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$k = {
+	var defaultProps$l = {
 	  tag: 'div'
 	};
 
@@ -4630,15 +4671,15 @@
 	  }));
 	};
 
-	CardGroup.propTypes = propTypes$m;
-	CardGroup.defaultProps = defaultProps$k;
+	CardGroup.propTypes = propTypes$n;
+	CardGroup.defaultProps = defaultProps$l;
 
-	var propTypes$n = {
+	var propTypes$o = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$l = {
+	var defaultProps$m = {
 	  tag: 'div'
 	};
 
@@ -4654,15 +4695,15 @@
 	  }));
 	};
 
-	CardDeck.propTypes = propTypes$n;
-	CardDeck.defaultProps = defaultProps$l;
+	CardDeck.propTypes = propTypes$o;
+	CardDeck.defaultProps = defaultProps$m;
 
-	var propTypes$o = {
+	var propTypes$p = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$m = {
+	var defaultProps$n = {
 	  tag: 'div'
 	};
 
@@ -4678,16 +4719,16 @@
 	  }));
 	};
 
-	CardColumns.propTypes = propTypes$o;
-	CardColumns.defaultProps = defaultProps$m;
+	CardColumns.propTypes = propTypes$p;
+	CardColumns.defaultProps = defaultProps$n;
 
-	var propTypes$p = {
+	var propTypes$q = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object,
 	  innerRef: propTypes.oneOfType([propTypes.object, propTypes.string, propTypes.func])
 	};
-	var defaultProps$n = {
+	var defaultProps$o = {
 	  tag: 'div'
 	};
 
@@ -4705,16 +4746,16 @@
 	  }));
 	};
 
-	CardBody.propTypes = propTypes$p;
-	CardBody.defaultProps = defaultProps$n;
+	CardBody.propTypes = propTypes$q;
+	CardBody.defaultProps = defaultProps$o;
 
-	var propTypes$q = {
+	var propTypes$r = {
 	  tag: tagPropType,
 	  innerRef: propTypes.oneOfType([propTypes.object, propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$o = {
+	var defaultProps$p = {
 	  tag: 'a'
 	};
 
@@ -4732,15 +4773,15 @@
 	  }));
 	};
 
-	CardLink.propTypes = propTypes$q;
-	CardLink.defaultProps = defaultProps$o;
+	CardLink.propTypes = propTypes$r;
+	CardLink.defaultProps = defaultProps$p;
 
-	var propTypes$r = {
+	var propTypes$s = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$p = {
+	var defaultProps$q = {
 	  tag: 'div'
 	};
 
@@ -4756,15 +4797,15 @@
 	  }));
 	};
 
-	CardFooter.propTypes = propTypes$r;
-	CardFooter.defaultProps = defaultProps$p;
+	CardFooter.propTypes = propTypes$s;
+	CardFooter.defaultProps = defaultProps$q;
 
-	var propTypes$s = {
+	var propTypes$t = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$q = {
+	var defaultProps$r = {
 	  tag: 'div'
 	};
 
@@ -4780,17 +4821,17 @@
 	  }));
 	};
 
-	CardHeader.propTypes = propTypes$s;
-	CardHeader.defaultProps = defaultProps$q;
+	CardHeader.propTypes = propTypes$t;
+	CardHeader.defaultProps = defaultProps$r;
 
-	var propTypes$t = {
+	var propTypes$u = {
 	  tag: tagPropType,
 	  top: propTypes.bool,
 	  bottom: propTypes.bool,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$r = {
+	var defaultProps$s = {
 	  tag: 'img'
 	};
 
@@ -4818,15 +4859,15 @@
 	  }));
 	};
 
-	CardImg.propTypes = propTypes$t;
-	CardImg.defaultProps = defaultProps$r;
+	CardImg.propTypes = propTypes$u;
+	CardImg.defaultProps = defaultProps$s;
 
-	var propTypes$u = {
+	var propTypes$v = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$s = {
+	var defaultProps$t = {
 	  tag: 'div'
 	};
 
@@ -4842,8 +4883,8 @@
 	  }));
 	};
 
-	CardImgOverlay.propTypes = propTypes$u;
-	CardImgOverlay.defaultProps = defaultProps$s;
+	CardImgOverlay.propTypes = propTypes$v;
+	CardImgOverlay.defaultProps = defaultProps$t;
 
 	var CarouselItem =
 	/*#__PURE__*/
@@ -5304,7 +5345,7 @@
 	  className: propTypes.string
 	};
 
-	var propTypes$v = {
+	var propTypes$w = {
 	  items: propTypes.array.isRequired,
 	  indicators: propTypes.bool,
 	  controls: propTypes.bool,
@@ -5420,19 +5461,19 @@
 	  return UncontrolledCarousel;
 	}(React.Component);
 
-	UncontrolledCarousel.propTypes = propTypes$v;
+	UncontrolledCarousel.propTypes = propTypes$w;
 	UncontrolledCarousel.defaultProps = {
 	  controls: true,
 	  indicators: true,
 	  autoPlay: true
 	};
 
-	var propTypes$w = {
+	var propTypes$x = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$t = {
+	var defaultProps$u = {
 	  tag: 'div'
 	};
 
@@ -5448,15 +5489,15 @@
 	  }));
 	};
 
-	CardSubtitle.propTypes = propTypes$w;
-	CardSubtitle.defaultProps = defaultProps$t;
+	CardSubtitle.propTypes = propTypes$x;
+	CardSubtitle.defaultProps = defaultProps$u;
 
-	var propTypes$x = {
+	var propTypes$y = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$u = {
+	var defaultProps$v = {
 	  tag: 'p'
 	};
 
@@ -5472,15 +5513,15 @@
 	  }));
 	};
 
-	CardText.propTypes = propTypes$x;
-	CardText.defaultProps = defaultProps$u;
+	CardText.propTypes = propTypes$y;
+	CardText.defaultProps = defaultProps$v;
 
-	var propTypes$y = {
+	var propTypes$z = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$v = {
+	var defaultProps$w = {
 	  tag: 'div'
 	};
 
@@ -5496,12 +5537,12 @@
 	  }));
 	};
 
-	CardTitle.propTypes = propTypes$y;
-	CardTitle.defaultProps = defaultProps$v;
+	CardTitle.propTypes = propTypes$z;
+	CardTitle.defaultProps = defaultProps$w;
 
 	function noop() {}
 
-	var propTypes$z = {
+	var propTypes$A = {
 	  children: propTypes.node.isRequired,
 	  popperClassName: propTypes.string,
 	  placement: propTypes.string,
@@ -5522,7 +5563,7 @@
 	  fade: propTypes.bool,
 	  transition: propTypes.shape(Fade.propTypes)
 	};
-	var defaultProps$w = {
+	var defaultProps$x = {
 	  boundariesElement: 'scrollParent',
 	  placement: 'auto',
 	  hideArrow: false,
@@ -5697,8 +5738,8 @@
 	  return PopperContent;
 	}(React__default.Component);
 
-	PopperContent.propTypes = propTypes$z;
-	PopperContent.defaultProps = defaultProps$w;
+	PopperContent.propTypes = propTypes$A;
+	PopperContent.defaultProps = defaultProps$x;
 
 	var PopperTargetHelper = function PopperTargetHelper(props, context) {
 	  context.popperManager.setTargetNode(getTarget(props.target));
@@ -5712,7 +5753,7 @@
 	  target: targetPropType.isRequired
 	};
 
-	var propTypes$A = {
+	var propTypes$B = {
 	  placement: propTypes.oneOf(PopperPlacements),
 	  target: targetPropType.isRequired,
 	  container: targetPropType,
@@ -5743,7 +5784,7 @@
 	  show: 0,
 	  hide: 0
 	};
-	var defaultProps$x = {
+	var defaultProps$y = {
 	  isOpen: false,
 	  hideArrow: false,
 	  autohide: false,
@@ -6019,7 +6060,7 @@
 	        offset = _this$props.offset,
 	        fade = _this$props.fade,
 	        flip = _this$props.flip;
-	    var attributes = omit(this.props, Object.keys(propTypes$A));
+	    var attributes = omit(this.props, Object.keys(propTypes$B));
 	    var popperClasses = mapToCssModules(popperClassName, cssModule);
 	    var classes = mapToCssModules(innerClassName, cssModule);
 	    return React__default.createElement(PopperContent, {
@@ -6053,10 +6094,10 @@
 	  return TooltipPopoverWrapper;
 	}(React__default.Component);
 
-	TooltipPopoverWrapper.propTypes = propTypes$A;
-	TooltipPopoverWrapper.defaultProps = defaultProps$x;
+	TooltipPopoverWrapper.propTypes = propTypes$B;
+	TooltipPopoverWrapper.defaultProps = defaultProps$y;
 
-	var defaultProps$y = {
+	var defaultProps$z = {
 	  placement: 'right',
 	  placementPrefix: 'bs-popover',
 	  trigger: 'click'
@@ -6071,15 +6112,15 @@
 	  }));
 	};
 
-	Popover.propTypes = propTypes$A;
-	Popover.defaultProps = defaultProps$y;
+	Popover.propTypes = propTypes$B;
+	Popover.defaultProps = defaultProps$z;
 
-	var propTypes$B = {
+	var propTypes$C = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$z = {
+	var defaultProps$A = {
 	  tag: 'h3'
 	};
 
@@ -6095,15 +6136,15 @@
 	  }));
 	};
 
-	PopoverHeader.propTypes = propTypes$B;
-	PopoverHeader.defaultProps = defaultProps$z;
+	PopoverHeader.propTypes = propTypes$C;
+	PopoverHeader.defaultProps = defaultProps$A;
 
-	var propTypes$C = {
+	var propTypes$D = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$A = {
+	var defaultProps$B = {
 	  tag: 'div'
 	};
 
@@ -6119,10 +6160,10 @@
 	  }));
 	};
 
-	PopoverBody.propTypes = propTypes$C;
-	PopoverBody.defaultProps = defaultProps$A;
+	PopoverBody.propTypes = propTypes$D;
+	PopoverBody.defaultProps = defaultProps$B;
 
-	var propTypes$D = {
+	var propTypes$E = {
 	  children: propTypes.node.isRequired,
 	  node: propTypes.any
 	};
@@ -6162,12 +6203,12 @@
 	  return Portal;
 	}(React__default.Component);
 
-	Portal.propTypes = propTypes$D;
+	Portal.propTypes = propTypes$E;
 
 	function noop$1() {}
 
 	var FadePropTypes = propTypes.shape(Fade.propTypes);
-	var propTypes$E = {
+	var propTypes$F = {
 	  isOpen: propTypes.bool,
 	  autoFocus: propTypes.bool,
 	  centered: propTypes.bool,
@@ -6198,8 +6239,8 @@
 	  unmountOnClose: propTypes.bool,
 	  returnFocusAfterClose: propTypes.bool
 	};
-	var propsToOmit = Object.keys(propTypes$E);
-	var defaultProps$B = {
+	var propsToOmit = Object.keys(propTypes$F);
+	var defaultProps$C = {
 	  isOpen: false,
 	  autoFocus: true,
 	  centered: false,
@@ -6548,11 +6589,11 @@
 	  return Modal;
 	}(React__default.Component);
 
-	Modal.propTypes = propTypes$E;
-	Modal.defaultProps = defaultProps$B;
+	Modal.propTypes = propTypes$F;
+	Modal.defaultProps = defaultProps$C;
 	Modal.openCount = 0;
 
-	var propTypes$F = {
+	var propTypes$G = {
 	  tag: tagPropType,
 	  wrapTag: tagPropType,
 	  toggle: propTypes.func,
@@ -6563,7 +6604,7 @@
 	  charCode: propTypes.oneOfType([propTypes.string, propTypes.number]),
 	  close: propTypes.object
 	};
-	var defaultProps$C = {
+	var defaultProps$D = {
 	  tag: 'h5',
 	  wrapTag: 'div',
 	  closeAriaLabel: 'Close',
@@ -6605,15 +6646,15 @@
 	  }, children), close || closeButton);
 	};
 
-	ModalHeader.propTypes = propTypes$F;
-	ModalHeader.defaultProps = defaultProps$C;
+	ModalHeader.propTypes = propTypes$G;
+	ModalHeader.defaultProps = defaultProps$D;
 
-	var propTypes$G = {
+	var propTypes$H = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$D = {
+	var defaultProps$E = {
 	  tag: 'div'
 	};
 
@@ -6629,15 +6670,15 @@
 	  }));
 	};
 
-	ModalBody.propTypes = propTypes$G;
-	ModalBody.defaultProps = defaultProps$D;
+	ModalBody.propTypes = propTypes$H;
+	ModalBody.defaultProps = defaultProps$E;
 
-	var propTypes$H = {
+	var propTypes$I = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$E = {
+	var defaultProps$F = {
 	  tag: 'div'
 	};
 
@@ -6653,10 +6694,10 @@
 	  }));
 	};
 
-	ModalFooter.propTypes = propTypes$H;
-	ModalFooter.defaultProps = defaultProps$E;
+	ModalFooter.propTypes = propTypes$I;
+	ModalFooter.defaultProps = defaultProps$F;
 
-	var defaultProps$F = {
+	var defaultProps$G = {
 	  placement: 'top',
 	  autohide: true,
 	  placementPrefix: 'bs-tooltip',
@@ -6672,10 +6713,10 @@
 	  }));
 	};
 
-	Tooltip.propTypes = propTypes$A;
-	Tooltip.defaultProps = defaultProps$F;
+	Tooltip.propTypes = propTypes$B;
+	Tooltip.defaultProps = defaultProps$G;
 
-	var propTypes$I = {
+	var propTypes$J = {
 	  className: propTypes.string,
 	  cssModule: propTypes.object,
 	  size: propTypes.string,
@@ -6689,7 +6730,7 @@
 	  responsiveTag: tagPropType,
 	  innerRef: propTypes.oneOfType([propTypes.func, propTypes.string, propTypes.object])
 	};
-	var defaultProps$G = {
+	var defaultProps$H = {
 	  tag: 'table',
 	  responsiveTag: 'div'
 	};
@@ -6725,16 +6766,16 @@
 	  return table;
 	};
 
-	Table.propTypes = propTypes$I;
-	Table.defaultProps = defaultProps$G;
+	Table.propTypes = propTypes$J;
+	Table.defaultProps = defaultProps$H;
 
-	var propTypes$J = {
+	var propTypes$K = {
 	  tag: tagPropType,
 	  flush: propTypes.bool,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$H = {
+	var defaultProps$I = {
 	  tag: 'ul'
 	};
 
@@ -6751,10 +6792,10 @@
 	  }));
 	};
 
-	ListGroup.propTypes = propTypes$J;
-	ListGroup.defaultProps = defaultProps$H;
+	ListGroup.propTypes = propTypes$K;
+	ListGroup.defaultProps = defaultProps$I;
 
-	var propTypes$K = {
+	var propTypes$L = {
 	  children: propTypes.node,
 	  inline: propTypes.bool,
 	  tag: tagPropType,
@@ -6762,7 +6803,7 @@
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$I = {
+	var defaultProps$J = {
 	  tag: 'form'
 	};
 
@@ -6815,10 +6856,10 @@
 	  return Form;
 	}(React.Component);
 
-	Form.propTypes = propTypes$K;
-	Form.defaultProps = defaultProps$I;
+	Form.propTypes = propTypes$L;
+	Form.defaultProps = defaultProps$J;
 
-	var propTypes$L = {
+	var propTypes$M = {
 	  children: propTypes.node,
 	  tag: tagPropType,
 	  className: propTypes.string,
@@ -6826,7 +6867,7 @@
 	  valid: propTypes.bool,
 	  tooltip: propTypes.bool
 	};
-	var defaultProps$J = {
+	var defaultProps$K = {
 	  tag: 'div',
 	  valid: undefined
 	};
@@ -6846,10 +6887,10 @@
 	  }));
 	};
 
-	FormFeedback.propTypes = propTypes$L;
-	FormFeedback.defaultProps = defaultProps$J;
+	FormFeedback.propTypes = propTypes$M;
+	FormFeedback.defaultProps = defaultProps$K;
 
-	var propTypes$M = {
+	var propTypes$N = {
 	  children: propTypes.node,
 	  row: propTypes.bool,
 	  check: propTypes.bool,
@@ -6859,7 +6900,7 @@
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$K = {
+	var defaultProps$L = {
 	  tag: 'div'
 	};
 
@@ -6884,10 +6925,10 @@
 	  }));
 	};
 
-	FormGroup.propTypes = propTypes$M;
-	FormGroup.defaultProps = defaultProps$K;
+	FormGroup.propTypes = propTypes$N;
+	FormGroup.defaultProps = defaultProps$L;
 
-	var propTypes$N = {
+	var propTypes$O = {
 	  children: propTypes.node,
 	  inline: propTypes.bool,
 	  tag: tagPropType,
@@ -6895,7 +6936,7 @@
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$L = {
+	var defaultProps$M = {
 	  tag: 'small',
 	  color: 'muted'
 	};
@@ -6914,10 +6955,10 @@
 	  }));
 	};
 
-	FormText.propTypes = propTypes$N;
-	FormText.defaultProps = defaultProps$L;
+	FormText.propTypes = propTypes$O;
+	FormText.defaultProps = defaultProps$M;
 
-	var propTypes$O = {
+	var propTypes$P = {
 	  children: propTypes.node,
 	  type: propTypes.string,
 	  size: propTypes.string,
@@ -6931,7 +6972,7 @@
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$M = {
+	var defaultProps$N = {
 	  type: 'text'
 	};
 
@@ -7026,16 +7067,16 @@
 	  return Input;
 	}(React__default.Component);
 
-	Input.propTypes = propTypes$O;
-	Input.defaultProps = defaultProps$M;
+	Input.propTypes = propTypes$P;
+	Input.defaultProps = defaultProps$N;
 
-	var propTypes$P = {
+	var propTypes$Q = {
 	  tag: tagPropType,
 	  size: propTypes.string,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$N = {
+	var defaultProps$O = {
 	  tag: 'div'
 	};
 
@@ -7052,15 +7093,15 @@
 	  }));
 	};
 
-	InputGroup.propTypes = propTypes$P;
-	InputGroup.defaultProps = defaultProps$N;
+	InputGroup.propTypes = propTypes$Q;
+	InputGroup.defaultProps = defaultProps$O;
 
-	var propTypes$Q = {
+	var propTypes$R = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$O = {
+	var defaultProps$P = {
 	  tag: 'span'
 	};
 
@@ -7076,17 +7117,17 @@
 	  }));
 	};
 
-	InputGroupText.propTypes = propTypes$Q;
-	InputGroupText.defaultProps = defaultProps$O;
+	InputGroupText.propTypes = propTypes$R;
+	InputGroupText.defaultProps = defaultProps$P;
 
-	var propTypes$R = {
+	var propTypes$S = {
 	  tag: tagPropType,
 	  addonType: propTypes.oneOf(['prepend', 'append']).isRequired,
 	  children: propTypes.node,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$P = {
+	var defaultProps$Q = {
 	  tag: 'div'
 	};
 
@@ -7114,10 +7155,10 @@
 	  }));
 	};
 
-	InputGroupAddon.propTypes = propTypes$R;
-	InputGroupAddon.defaultProps = defaultProps$P;
+	InputGroupAddon.propTypes = propTypes$S;
+	InputGroupAddon.defaultProps = defaultProps$Q;
 
-	var propTypes$S = {
+	var propTypes$T = {
 	  addonType: propTypes.oneOf(['prepend', 'append']).isRequired,
 	  children: propTypes.node
 	};
@@ -7126,7 +7167,7 @@
 	  return React__default.createElement(Dropdown, props);
 	};
 
-	InputGroupButtonDropdown.propTypes = propTypes$S;
+	InputGroupButtonDropdown.propTypes = propTypes$T;
 
 	var colWidths$1 = ['xs', 'sm', 'md', 'lg', 'xl'];
 	var stringOrNumberProp$1 = propTypes.oneOfType([propTypes.number, propTypes.string]);
@@ -7135,7 +7176,7 @@
 	  order: stringOrNumberProp$1,
 	  offset: stringOrNumberProp$1
 	})]);
-	var propTypes$T = {
+	var propTypes$U = {
 	  children: propTypes.node,
 	  hidden: propTypes.bool,
 	  check: propTypes.bool,
@@ -7151,7 +7192,7 @@
 	  xl: columnProps$1,
 	  widths: propTypes.array
 	};
-	var defaultProps$Q = {
+	var defaultProps$R = {
 	  tag: 'label',
 	  widths: colWidths$1
 	};
@@ -7208,10 +7249,10 @@
 	  }));
 	};
 
-	Label.propTypes = propTypes$T;
-	Label.defaultProps = defaultProps$Q;
+	Label.propTypes = propTypes$U;
+	Label.defaultProps = defaultProps$R;
 
-	var propTypes$U = {
+	var propTypes$V = {
 	  body: propTypes.bool,
 	  bottom: propTypes.bool,
 	  children: propTypes.node,
@@ -7274,9 +7315,9 @@
 	  }));
 	};
 
-	Media.propTypes = propTypes$U;
+	Media.propTypes = propTypes$V;
 
-	var propTypes$V = {
+	var propTypes$W = {
 	  active: propTypes.bool,
 	  children: propTypes.node,
 	  className: propTypes.string,
@@ -7284,7 +7325,7 @@
 	  disabled: propTypes.bool,
 	  tag: tagPropType
 	};
-	var defaultProps$R = {
+	var defaultProps$S = {
 	  tag: 'li'
 	};
 
@@ -7305,10 +7346,10 @@
 	  }));
 	};
 
-	PaginationItem.propTypes = propTypes$V;
-	PaginationItem.defaultProps = defaultProps$R;
+	PaginationItem.propTypes = propTypes$W;
+	PaginationItem.defaultProps = defaultProps$S;
 
-	var propTypes$W = {
+	var propTypes$X = {
 	  'aria-label': propTypes.string,
 	  children: propTypes.node,
 	  className: propTypes.string,
@@ -7319,7 +7360,7 @@
 	  last: propTypes.bool,
 	  tag: tagPropType
 	};
-	var defaultProps$S = {
+	var defaultProps$T = {
 	  tag: 'a'
 	};
 
@@ -7385,8 +7426,8 @@
 	  }), children);
 	};
 
-	PaginationLink.propTypes = propTypes$W;
-	PaginationLink.defaultProps = defaultProps$S;
+	PaginationLink.propTypes = propTypes$X;
+	PaginationLink.defaultProps = defaultProps$T;
 
 	/**
 	 * TabContext
@@ -7397,13 +7438,13 @@
 
 	var TabContext = React__default.createContext({});
 
-	var propTypes$X = {
+	var propTypes$Y = {
 	  tag: tagPropType,
 	  activeTab: propTypes.any,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$T = {
+	var defaultProps$U = {
 	  tag: 'div'
 	};
 
@@ -7439,7 +7480,7 @@
 	        className = _this$props.className,
 	        cssModule = _this$props.cssModule,
 	        Tag = _this$props.tag;
-	    var attributes = omit(this.props, Object.keys(propTypes$X));
+	    var attributes = omit(this.props, Object.keys(propTypes$Y));
 	    var classes = mapToCssModules(classnames('tab-content', className), cssModule);
 	    return React__default.createElement(TabContext.Provider, {
 	      value: {
@@ -7454,16 +7495,16 @@
 	}(React.Component);
 
 	polyfill(TabContent);
-	TabContent.propTypes = propTypes$X;
-	TabContent.defaultProps = defaultProps$T;
+	TabContent.propTypes = propTypes$Y;
+	TabContent.defaultProps = defaultProps$U;
 
-	var propTypes$Y = {
+	var propTypes$Z = {
 	  tag: tagPropType,
 	  className: propTypes.string,
 	  cssModule: propTypes.object,
 	  tabId: propTypes.any
 	};
-	var defaultProps$U = {
+	var defaultProps$V = {
 	  tag: 'div'
 	};
 	function TabPane(props) {
@@ -7486,16 +7527,16 @@
 	    }));
 	  });
 	}
-	TabPane.propTypes = propTypes$Y;
-	TabPane.defaultProps = defaultProps$U;
+	TabPane.propTypes = propTypes$Z;
+	TabPane.defaultProps = defaultProps$V;
 
-	var propTypes$Z = {
+	var propTypes$_ = {
 	  tag: tagPropType,
 	  fluid: propTypes.bool,
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$V = {
+	var defaultProps$W = {
 	  tag: 'div'
 	};
 
@@ -7512,10 +7553,10 @@
 	  }));
 	};
 
-	Jumbotron.propTypes = propTypes$Z;
-	Jumbotron.defaultProps = defaultProps$V;
+	Jumbotron.propTypes = propTypes$_;
+	Jumbotron.defaultProps = defaultProps$W;
 
-	var propTypes$_ = {
+	var propTypes$$ = {
 	  children: propTypes.node,
 	  className: propTypes.string,
 	  closeClassName: propTypes.string,
@@ -7529,7 +7570,7 @@
 	  transition: propTypes.shape(Fade.propTypes),
 	  innerRef: propTypes.oneOfType([propTypes.object, propTypes.string, propTypes.func])
 	};
-	var defaultProps$W = {
+	var defaultProps$X = {
 	  color: 'success',
 	  isOpen: true,
 	  tag: 'div',
@@ -7581,10 +7622,142 @@
 	  }, "\xD7")) : null, children);
 	}
 
-	Alert.propTypes = propTypes$_;
-	Alert.defaultProps = defaultProps$W;
+	Alert.propTypes = propTypes$$;
+	Alert.defaultProps = defaultProps$X;
 
-	var propTypes$$ = {
+	var _transitionStatusToCl;
+
+	var propTypes$10 = _objectSpread({}, reactTransitionGroup_1.propTypes, {
+	  isOpen: propTypes.bool,
+	  children: propTypes.oneOfType([propTypes.arrayOf(propTypes.node), propTypes.node]),
+	  tag: tagPropType,
+	  className: propTypes.node,
+	  navbar: propTypes.bool,
+	  cssModule: propTypes.object,
+	  innerRef: propTypes.oneOfType([propTypes.func, propTypes.string, propTypes.object])
+	});
+
+	var defaultProps$Y = _objectSpread({}, reactTransitionGroup_1.defaultProps, {
+	  isOpen: false,
+	  appear: false,
+	  enter: true,
+	  exit: true,
+	  tag: 'div',
+	  timeout: TransitionTimeouts.Collapse
+	});
+
+	var transitionStatusToClassHash = (_transitionStatusToCl = {}, _transitionStatusToCl[TransitionStatuses.ENTERING] = 'collapsing', _transitionStatusToCl[TransitionStatuses.ENTERED] = 'collapse show', _transitionStatusToCl[TransitionStatuses.EXITING] = 'collapsing', _transitionStatusToCl[TransitionStatuses.EXITED] = 'collapse', _transitionStatusToCl);
+
+	function getTransitionClass(status) {
+	  return transitionStatusToClassHash[status] || 'collapse';
+	}
+
+	function getHeight(node) {
+	  return node.scrollHeight;
+	}
+
+	var Collapse =
+	/*#__PURE__*/
+	function (_Component) {
+	  _inheritsLoose(Collapse, _Component);
+
+	  function Collapse(props) {
+	    var _this;
+
+	    _this = _Component.call(this, props) || this;
+	    _this.state = {
+	      height: null
+	    };
+	    ['onEntering', 'onEntered', 'onExit', 'onExiting', 'onExited'].forEach(function (name) {
+	      _this[name] = _this[name].bind(_assertThisInitialized(_this));
+	    });
+	    return _this;
+	  }
+
+	  var _proto = Collapse.prototype;
+
+	  _proto.onEntering = function onEntering(node, isAppearing) {
+	    this.setState({
+	      height: getHeight(node)
+	    });
+	    this.props.onEntering(node, isAppearing);
+	  };
+
+	  _proto.onEntered = function onEntered(node, isAppearing) {
+	    this.setState({
+	      height: null
+	    });
+	    this.props.onEntered(node, isAppearing);
+	  };
+
+	  _proto.onExit = function onExit(node) {
+	    this.setState({
+	      height: getHeight(node)
+	    });
+	    this.props.onExit(node);
+	  };
+
+	  _proto.onExiting = function onExiting(node) {
+	    // getting this variable triggers a reflow
+	    var _unused = node.offsetHeight; // eslint-disable-line no-unused-vars
+
+	    this.setState({
+	      height: 0
+	    });
+	    this.props.onExiting(node);
+	  };
+
+	  _proto.onExited = function onExited(node) {
+	    this.setState({
+	      height: null
+	    });
+	    this.props.onExited(node);
+	  };
+
+	  _proto.render = function render() {
+	    var _this2 = this;
+
+	    var _this$props = this.props,
+	        Tag = _this$props.tag,
+	        isOpen = _this$props.isOpen,
+	        className = _this$props.className,
+	        navbar = _this$props.navbar,
+	        cssModule = _this$props.cssModule,
+	        children = _this$props.children,
+	        innerRef = _this$props.innerRef,
+	        otherProps = _objectWithoutPropertiesLoose(_this$props, ["tag", "isOpen", "className", "navbar", "cssModule", "children", "innerRef"]);
+
+	    var height = this.state.height;
+	    var transitionProps = pick(otherProps, TransitionPropTypeKeys);
+	    var childProps = omit(otherProps, TransitionPropTypeKeys);
+	    return React__default.createElement(reactTransitionGroup_1, _extends({}, transitionProps, {
+	      "in": isOpen,
+	      onEntering: this.onEntering,
+	      onEntered: this.onEntered,
+	      onExit: this.onExit,
+	      onExiting: this.onExiting,
+	      onExited: this.onExited
+	    }), function (status) {
+	      var collapseClass = getTransitionClass(status);
+	      var classes = mapToCssModules(classnames(className, collapseClass, navbar && 'navbar-collapse'), cssModule);
+	      var style = height === null ? null : {
+	        height: height
+	      };
+	      return React__default.createElement(Tag, _extends({}, childProps, {
+	        style: _objectSpread({}, childProps.style, style),
+	        className: classes,
+	        ref: _this2.props.innerRef
+	      }), children);
+	    });
+	  };
+
+	  return Collapse;
+	}(React.Component);
+
+	Collapse.propTypes = propTypes$10;
+	Collapse.defaultProps = defaultProps$Y;
+
+	var propTypes$11 = {
 	  tag: tagPropType,
 	  active: propTypes.bool,
 	  disabled: propTypes.bool,
@@ -7593,7 +7766,7 @@
 	  className: propTypes.any,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$X = {
+	var defaultProps$Z = {
 	  tag: 'li'
 	};
 
@@ -7622,15 +7795,15 @@
 	  }));
 	};
 
-	ListGroupItem.propTypes = propTypes$$;
-	ListGroupItem.defaultProps = defaultProps$X;
+	ListGroupItem.propTypes = propTypes$11;
+	ListGroupItem.defaultProps = defaultProps$Z;
 
-	var propTypes$10 = {
+	var propTypes$12 = {
 	  tag: tagPropType,
 	  className: propTypes.any,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$Y = {
+	var defaultProps$_ = {
 	  tag: 'h5'
 	};
 
@@ -7646,15 +7819,15 @@
 	  }));
 	};
 
-	ListGroupItemHeading.propTypes = propTypes$10;
-	ListGroupItemHeading.defaultProps = defaultProps$Y;
+	ListGroupItemHeading.propTypes = propTypes$12;
+	ListGroupItemHeading.defaultProps = defaultProps$_;
 
-	var propTypes$11 = {
+	var propTypes$13 = {
 	  tag: tagPropType,
 	  className: propTypes.any,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$Z = {
+	var defaultProps$$ = {
 	  tag: 'p'
 	};
 
@@ -7670,8 +7843,8 @@
 	  }));
 	};
 
-	ListGroupItemText.propTypes = propTypes$11;
-	ListGroupItemText.defaultProps = defaultProps$Z;
+	ListGroupItemText.propTypes = propTypes$13;
+	ListGroupItemText.defaultProps = defaultProps$$;
 
 	var UncontrolledAlert =
 	/*#__PURE__*/
@@ -7746,7 +7919,73 @@
 	  defaultOpen: propTypes.bool
 	}, ButtonDropdown.propTypes);
 
-	var omitKeys$1 = ['defaultOpen'];
+	var omitKeys$1 = ['toggleEvents', 'defaultOpen'];
+	var propTypes$14 = {
+	  defaultOpen: propTypes.bool,
+	  toggler: propTypes.string.isRequired,
+	  toggleEvents: propTypes.arrayOf(propTypes.string)
+	};
+	var defaultProps$10 = {
+	  toggleEvents: defaultToggleEvents
+	};
+
+	var UncontrolledCollapse =
+	/*#__PURE__*/
+	function (_Component) {
+	  _inheritsLoose(UncontrolledCollapse, _Component);
+
+	  function UncontrolledCollapse(props) {
+	    var _this;
+
+	    _this = _Component.call(this, props) || this;
+	    _this.togglers = null;
+	    _this.removeEventListeners = null;
+	    _this.toggle = _this.toggle.bind(_assertThisInitialized(_this));
+	    _this.state = {
+	      isOpen: props.defaultOpen || false
+	    };
+	    return _this;
+	  }
+
+	  var _proto = UncontrolledCollapse.prototype;
+
+	  _proto.componentDidMount = function componentDidMount() {
+	    this.togglers = findDOMElements(this.props.toggler);
+
+	    if (this.togglers.length) {
+	      this.removeEventListeners = addMultipleEventListeners(this.togglers, this.toggle, this.props.toggleEvents);
+	    }
+	  };
+
+	  _proto.componentWillUnmount = function componentWillUnmount() {
+	    if (this.togglers.length && this.removeEventListeners) {
+	      this.removeEventListeners();
+	    }
+	  };
+
+	  _proto.toggle = function toggle(e) {
+	    this.setState(function (_ref) {
+	      var isOpen = _ref.isOpen;
+	      return {
+	        isOpen: !isOpen
+	      };
+	    });
+	    e.preventDefault();
+	  };
+
+	  _proto.render = function render() {
+	    return React__default.createElement(Collapse, _extends({
+	      isOpen: this.state.isOpen
+	    }, omit(this.props, omitKeys$1)));
+	  };
+
+	  return UncontrolledCollapse;
+	}(React.Component);
+
+	UncontrolledCollapse.propTypes = propTypes$14;
+	UncontrolledCollapse.defaultProps = defaultProps$10;
+
+	var omitKeys$2 = ['defaultOpen'];
 
 	var UncontrolledDropdown =
 	/*#__PURE__*/
@@ -7776,7 +8015,7 @@
 	    return React__default.createElement(Dropdown, _extends({
 	      isOpen: this.state.isOpen,
 	      toggle: this.toggle
-	    }, omit(this.props, omitKeys$1)));
+	    }, omit(this.props, omitKeys$2)));
 	  };
 
 	  return UncontrolledDropdown;
@@ -7785,7 +8024,7 @@
 	  defaultOpen: propTypes.bool
 	}, Dropdown.propTypes);
 
-	var omitKeys$2 = ['defaultOpen'];
+	var omitKeys$3 = ['defaultOpen'];
 
 	var UncontrolledTooltip =
 	/*#__PURE__*/
@@ -7815,7 +8054,7 @@
 	    return React__default.createElement(Tooltip, _extends({
 	      isOpen: this.state.isOpen,
 	      toggle: this.toggle
-	    }, omit(this.props, omitKeys$2)));
+	    }, omit(this.props, omitKeys$3)));
 	  };
 
 	  return UncontrolledTooltip;
@@ -8448,11 +8687,11 @@
 	  return self;
 	}
 
-	var propTypes$12 = {
+	var propTypes$15 = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string
 	};
-	var defaultProps$_ = {
+	var defaultProps$11 = {
 	  tag: 'div'
 	};
 	function Accordion(props) {
@@ -8465,16 +8704,16 @@
 	    className: classes
 	  }));
 	}
-	Accordion.propTypes = propTypes$12;
-	Accordion.defaultProps = defaultProps$_;
+	Accordion.propTypes = propTypes$15;
+	Accordion.defaultProps = defaultProps$11;
 
-	var propTypes$13 = {
+	var propTypes$16 = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  active: propTypes.bool,
 	  onToggle: propTypes.func
 	};
-	var defaultProps$$ = {
+	var defaultProps$12 = {
 	  tag: 'button'
 	};
 	function AccordionHeader(props) {
@@ -8497,17 +8736,17 @@
 	    onClick: onToggle
 	  }, attributes)));
 	}
-	AccordionHeader.propTypes = propTypes$13;
-	AccordionHeader.defaultProps = defaultProps$$;
+	AccordionHeader.propTypes = propTypes$16;
+	AccordionHeader.defaultProps = defaultProps$12;
 
-	var _transitionStatusToCl;
+	var _transitionStatusToCl$1;
 	var TransitionTimeouts$1 = TransitionTimeouts,
 	    TransitionPropTypeKeys$1 = TransitionPropTypeKeys,
 	    TransitionStatuses$1 = TransitionStatuses,
 	    pick$1 = pick,
 	    omit$1 = omit;
 
-	var propTypes$14 = _extends$1({}, Transition.propTypes, {
+	var propTypes$17 = _extends$1({}, Transition.propTypes, {
 	  // eslint-disable-line react/forbid-foreign-prop-types
 	  children: propTypes.oneOfType([propTypes.arrayOf(propTypes.node), propTypes.node]),
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
@@ -8516,18 +8755,18 @@
 	  onToggle: propTypes.func
 	});
 
-	var defaultProps$10 = _extends$1({}, Transition.defaultProps, {
+	var defaultProps$13 = _extends$1({}, Transition.defaultProps, {
 	  timeout: TransitionTimeouts$1.Collapse,
 	  tag: 'div'
 	});
 
-	var transitionStatusToClassHash = (_transitionStatusToCl = {}, _transitionStatusToCl[TransitionStatuses$1.ENTERING] = 'collapsing', _transitionStatusToCl[TransitionStatuses$1.ENTERED] = 'collapse show', _transitionStatusToCl[TransitionStatuses$1.EXITING] = 'collapsing', _transitionStatusToCl[TransitionStatuses$1.EXITED] = 'collapse', _transitionStatusToCl);
+	var transitionStatusToClassHash$1 = (_transitionStatusToCl$1 = {}, _transitionStatusToCl$1[TransitionStatuses$1.ENTERING] = 'collapsing', _transitionStatusToCl$1[TransitionStatuses$1.ENTERED] = 'collapse show', _transitionStatusToCl$1[TransitionStatuses$1.EXITING] = 'collapsing', _transitionStatusToCl$1[TransitionStatuses$1.EXITED] = 'collapse', _transitionStatusToCl$1);
 
-	function getTransitionClass(status) {
-	  return transitionStatusToClassHash[status] || 'collapse';
+	function getTransitionClass$1(status) {
+	  return transitionStatusToClassHash$1[status] || 'collapse';
 	}
 
-	function getHeight(node) {
+	function getHeight$1(node) {
 	  return node.scrollHeight;
 	}
 
@@ -8551,7 +8790,7 @@
 
 	    _defineProperty$2(_assertThisInitialized$2(_this), "onEntering", function (node, isAppearing) {
 	      _this.setState({
-	        height: getHeight(node)
+	        height: getHeight$1(node)
 	      });
 
 	      _this.props.onEntering(node, isAppearing);
@@ -8567,7 +8806,7 @@
 
 	    _defineProperty$2(_assertThisInitialized$2(_this), "onExit", function (node) {
 	      _this.setState({
-	        height: getHeight(node)
+	        height: getHeight$1(node)
 	      });
 
 	      _this.props.onExit(node);
@@ -8575,6 +8814,8 @@
 
 	    _defineProperty$2(_assertThisInitialized$2(_this), "onExiting", function (node) {
 	      // getting this variable triggers a reflow
+	      var _unused = node.offsetHeight; // eslint-disable-line no-unused-vars
+
 	      _this.setState({
 	        height: 0
 	      });
@@ -8614,7 +8855,7 @@
 	      onExiting: this.onExiting,
 	      onExited: this.onExited
 	    }), function (status) {
-	      var transitionClass = getTransitionClass(status);
+	      var transitionClass = getTransitionClass$1(status);
 	      var classes = classnames(className, transitionClass);
 	      var style = height === null ? null : {
 	        height: height
@@ -8630,10 +8871,10 @@
 
 	  return AccordionBody;
 	}(React.Component);
-	AccordionBody.propTypes = propTypes$14;
-	AccordionBody.defaultProps = defaultProps$10;
+	AccordionBody.propTypes = propTypes$17;
+	AccordionBody.defaultProps = defaultProps$13;
 
-	var propTypes$15 = {
+	var propTypes$18 = {
 	  color: propTypes.string,
 	  pill: propTypes.bool,
 	  tag: propTypes.string,
@@ -8641,7 +8882,7 @@
 	  cssModule: propTypes.object,
 	  className: propTypes.string
 	};
-	var defaultProps$11 = {
+	var defaultProps$14 = {
 	  color: 'secondary',
 	  pill: false,
 	  tag: 'span'
@@ -8652,156 +8893,71 @@
 	  return React__default.createElement(Badge, props, children);
 	};
 
-	Badge$1.propTypes = propTypes$15;
-	Badge$1.defaultProps = defaultProps$11;
+	Badge$1.propTypes = propTypes$18;
+	Badge$1.defaultProps = defaultProps$14;
 
-	var _transitionStatusToCl$1;
-	var mapToCssModules$1 = mapToCssModules,
-	    omit$2 = omit,
-	    pick$2 = pick,
-	    TransitionTimeouts$2 = TransitionTimeouts,
-	    TransitionPropTypeKeys$2 = TransitionPropTypeKeys,
-	    TransitionStatuses$2 = TransitionStatuses;
-
-	var propTypes$16 = _extends$1({}, Transition.propTypes, {
+	var propTypes$19 = _extends$1({}, Collapse.propTypes, {
 	  // eslint-disable-line react/forbid-foreign-prop-types
-	  isOpen: propTypes.bool,
-	  children: propTypes.oneOfType([propTypes.arrayOf(propTypes.node), propTypes.node]),
-	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
-	  className: propTypes.node,
-	  navbar: propTypes.bool,
-	  cssModule: propTypes.object
+
+	  /** Indica se il componente Collapse è usato all'interno di un componente Header */
+	  header: propTypes.bool,
+
+	  /** Indica se il menu HeaderNav sia aperto o meno. Usato unicamente nel caso della HeaderNav, ovvero con navbar e header entrambi true */
+	  inOpen: propTypes.bool,
+
+	  /** Funzione chiamata su click di overlay dell'HeaderNav aperto. Usato unicamente nel caso della HeaderNav, ovvero con navbar e header entrambi true */
+	  onOverlayClick: propTypes.func
 	});
 
-	var defaultProps$12 = _extends$1({}, Transition.defaultProps, {
-	  isOpen: false,
-	  appear: false,
-	  enter: true,
-	  exit: true,
-	  tag: 'div',
-	  timeout: TransitionTimeouts$2.Collapse
-	});
+	var Collapse$1 = function Collapse$1(_ref) {
+	  var header = _ref.header,
+	      className = _ref.className,
+	      navbar = _ref.navbar,
+	      children = _ref.children,
+	      isOpen = _ref.isOpen,
+	      onOverlayClick = _ref.onOverlayClick,
+	      attributes = _objectWithoutPropertiesLoose$1(_ref, ["header", "className", "navbar", "children", "isOpen", "onOverlayClick"]);
 
-	var transitionStatusToClassHash$1 = (_transitionStatusToCl$1 = {}, _transitionStatusToCl$1[TransitionStatuses$2.ENTERING] = 'collapsing', _transitionStatusToCl$1[TransitionStatuses$2.ENTERED] = 'collapse show', _transitionStatusToCl$1[TransitionStatuses$2.EXITING] = 'collapsing', _transitionStatusToCl$1[TransitionStatuses$2.EXITED] = 'collapse', _transitionStatusToCl$1);
-
-	function getTransitionClass$1(status) {
-	  return transitionStatusToClassHash$1[status] || 'collapse';
-	}
-
-	function getHeight$1(node) {
-	  return node.scrollHeight;
-	}
-
-	var Collapse =
-	/*#__PURE__*/
-	function (_Component) {
-	  _inheritsLoose$1(Collapse, _Component);
-
-	  function Collapse(props) {
-	    var _this;
-
-	    _this = _Component.call(this, props) || this;
-	    _this.state = {
-	      height: null
-	    };
-	    ['onEntering', 'onEntered', 'onExit', 'onExiting', 'onExited'].forEach(function (name) {
-	      _this[name] = _this[name].bind(_assertThisInitialized$2(_this));
+	  if (navbar && header) {
+	    var _classes = classnames(className, 'navbar-collapsable', {
+	      expanded: isOpen
 	    });
-	    return _this;
+
+	    return React__default.createElement(Collapse, _extends$1({
+	      className: _classes,
+	      navbar: navbar,
+	      style: {
+	        display: isOpen ? 'block' : 'none'
+	      }
+	    }, attributes), React__default.createElement("div", {
+	      className: "overlay",
+	      style: {
+	        display: isOpen ? 'block' : 'none'
+	      },
+	      onClick: onOverlayClick
+	    }), React__default.createElement("div", {
+	      className: "close-div sr-only"
+	    }, React__default.createElement("button", {
+	      className: "btn close-menu",
+	      type: "button"
+	    }, React__default.createElement("span", {
+	      className: "it-close"
+	    }), "close")), children);
 	  }
 
-	  var _proto = Collapse.prototype;
+	  var classes = classnames(className, {
+	    'link-list-wrapper': header
+	  });
+	  return React__default.createElement(Collapse, _extends$1({
+	    className: classes
+	  }, attributes, {
+	    navbar: navbar,
+	    isOpen: isOpen
+	  }), children);
+	};
 
-	  _proto.onEntering = function onEntering(node, isAppearing) {
-	    this.setState({
-	      height: getHeight$1(node)
-	    });
-	    this.props.onEntering(node, isAppearing);
-	  };
-
-	  _proto.onEntered = function onEntered(node, isAppearing) {
-	    this.setState({
-	      height: null
-	    });
-	    this.props.onEntered(node, isAppearing);
-	  };
-
-	  _proto.onExit = function onExit(node) {
-	    this.setState({
-	      height: getHeight$1(node)
-	    });
-	    this.props.onExit(node);
-	  };
-
-	  _proto.onExiting = function onExiting(node) {
-	    // getting this variable triggers a reflow
-	    this.setState({
-	      height: 0
-	    });
-	    this.props.onExiting(node);
-	  };
-
-	  _proto.onExited = function onExited(node) {
-	    this.setState({
-	      height: null
-	    });
-	    this.props.onExited(node);
-	  };
-
-	  _proto.render = function render() {
-	    var _this$props = this.props,
-	        Tag = _this$props.tag,
-	        isOpen = _this$props.isOpen,
-	        className = _this$props.className,
-	        navbar = _this$props.navbar,
-	        cssModule = _this$props.cssModule,
-	        children = _this$props.children,
-	        otherProps = _objectWithoutPropertiesLoose$1(_this$props, ["tag", "isOpen", "className", "navbar", "cssModule", "children"]);
-
-	    var height = this.state.height; // In NODE_ENV=production the Transition.propTypes are wrapped which results in an
-	    // empty object "{}". This is the result of the `react-transition-group` babel
-	    // configuration settings. Therefore, to ensure that production builds work without
-	    // error, we can either explicitly define keys or use the Transition.defaultProps.
-	    // Using the Transition.defaultProps excludes any required props. Thus, the best
-	    // solution is to explicitly define required props in our utilities and reference these.
-	    // This also gives us more flexibility in the future to remove the prop-types
-	    // dependency in distribution builds (Similar to how `react-transition-group` does).
-	    // Note: Without omitting the `react-transition-group` props, the resulting child
-	    // Tag component would inherit the Transition properties as attributes for the HTML
-	    // element which results in errors/warnings for non-valid attributes.
-
-	    var transitionProps = pick$2(otherProps, TransitionPropTypeKeys$2);
-	    var childProps = omit$2(otherProps, TransitionPropTypeKeys$2);
-	    return React__default.createElement(Transition, _extends$1({}, transitionProps, {
-	      "in": isOpen,
-	      onEntering: this.onEntering,
-	      onEntered: this.onEntered,
-	      onExit: this.onExit,
-	      onExiting: this.onExiting,
-	      onExited: this.onExited
-	    }), function (status) {
-	      var collapseClass = getTransitionClass$1(status);
-	      var classes = mapToCssModules$1(classnames(className, collapseClass, navbar && 'navbar-collapse', navbar && 'navbar-collapsable'), cssModule);
-	      var style = height === null ? null : {
-	        height: height // Needed for `bootstrap-italia`
-
-	      };
-	      var customStyles = isOpen ? {
-	        position: 'relative',
-	        display: 'block'
-	      } : {};
-	      return React__default.createElement(Tag, _extends$1({}, childProps, {
-	        style: _extends$1({}, childProps.style, {}, style, {}, customStyles),
-	        className: classes
-	      }), children);
-	    });
-	  };
-
-	  return Collapse;
-	}(React.Component);
-
-	Collapse.propTypes = propTypes$16;
-	Collapse.defaultProps = defaultProps$12;
+	Collapse$1.propTypes = propTypes$19;
+	Collapse$1.defaultProps = Collapse.defaultProps;
 
 	var FormGroup$1 =
 	/*#__PURE__*/
@@ -8958,59 +9114,488 @@
 	FormGroup$1.defaultProps = FormGroup.defaultProps;
 	FormGroup$1.propTypes = FormGroup.propTypes;
 
+	/**
+	 * HeaderContext
+	 * {
+	 *  type: PropTypes.oneOf([SLIM, CENTER, NAVBAR]).isRequired
+	 * }
+	 */
+
+	var HeaderContext = React__default.createContext({});
+	var SLIM = 'slim';
+	var CENTER = 'center';
+	var NAVBAR = 'navbar';
+
+	var propTypes$1a = {
+	  /** Classi addizionali per il componente Header */
+	  className: propTypes.string,
+	  // cannot use variables above here or storybook writes the full import stacktrace
+
+	  /** Tipo di componente Header: può essere solamente uno di questi tre tipi */
+	  type: propTypes.oneOf(['slim', 'center', 'navbar']).isRequired,
+
+	  /** Quando abilitato render il componente "sticky", ovvero fisso in alto quando si scorre la pagina */
+	  sticky: propTypes.bool,
+
+	  /** Riduce la grandezza del componente Header. Funziona solamente con Header "center". */
+	  small: propTypes.bool,
+
+	  /** Imposta il tema per il componente Header. Per gli Header di tipo "slim" o "center"
+	   *  il valore di default è "dark". Per l'Header di tipo "nav" il tema di default è "light"
+	   *  in mobile, mentre "dark" in versione desktop.
+	   */
+	  theme: propTypes.oneOf(['', 'light', 'dark'])
+	};
+	var defaultProps$15 = {
+	  small: false,
+	  sticky: false
+	};
+
+	var Header = function Header(_ref) {
+	  var _classNames;
+
+	  var className = _ref.className,
+	      small = _ref.small,
+	      sticky = _ref.sticky,
+	      theme = _ref.theme,
+	      type = _ref.type,
+	      attributes = _objectWithoutPropertiesLoose$1(_ref, ["className", "small", "sticky", "theme", "type"]);
+
+	  // use context here as theme
+	  var classes = classnames(className, (_classNames = {}, _classNames["it-header-" + type + "-wrapper"] = type, _classNames['it-header-sticky'] = sticky, _classNames['it-small-header'] = type === CENTER && small, _classNames["theme-" + theme] = type !== NAVBAR && theme, _classNames['theme-dark-mobile'] = type === NAVBAR && theme === 'dark', _classNames['theme-light-desk'] = type === NAVBAR && theme === 'light', _classNames));
+	  return React__default.createElement(HeaderContext.Provider, {
+	    value: {
+	      type: type
+	    }
+	  }, React__default.createElement("div", _extends$1({
+	    className: classes
+	  }, attributes)));
+	};
+
+	Header.propTypes = propTypes$1a;
+	Header.defaultProps = defaultProps$15;
+
+	var propTypes$1b = {
+	  /** Aggiunge un ombra per enfatizzare il componente rispetto alla pagina in cui è contenuto */
+	  shadow: propTypes.bool,
+
+	  /** Classi addizionali per il componente Headers */
+	  className: propTypes.string
+	};
+	var defaultProps$16 = {
+	  shadow: false
+	};
+
+	var Headers = function Headers(_ref) {
+	  var className = _ref.className,
+	      shadow = _ref.shadow,
+	      attributes = _objectWithoutPropertiesLoose$1(_ref, ["className", "shadow"]);
+
+	  var classes = classnames('it-header-wrapper', {
+	    'it-shadow': shadow
+	  }, className);
+	  return React__default.createElement("div", _extends$1({
+	    className: classes
+	  }, attributes));
+	};
+
+	Headers.propTypes = propTypes$1b;
+	Headers.defaultProps = defaultProps$16;
+
+	var iconSprite = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctZG93biIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTcuOSAxMy4ybC01LjQgNS4zVjNoLTF2MTUuNWwtNS40LTUuMy0uNy43IDYuNiA2LjUgNi42LTYuNXpNMTIgMTl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctZG93bi1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE1LjYgMTMuMmwuNy43LTQuMyA0LjMtNC4zLTQuMy43LS43IDMuMSAzLjFWN2gxdjkuMnpNMjIgMTJBMTAgMTAgMCAxMTEyIDJhMTAgMTAgMCAwMTEwIDEwem0tMSAwYTkgOSAwIDEwLTkgOSA5IDkgMCAwMDktOXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1hcnJvdy1kb3duLXRyaWFuZ2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik05LjIgMTJoNS42YTEgMSAwIDAxLjcgMS43TDEyIDE3LjNsLTMuNS0zLjZhMSAxIDAgMDEuNy0xLjd6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctbGVmdCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjEgMTEuNUg1LjVsNS4zLTUuNC0uNy0uN0wzLjYgMTJsNi41IDYuNi43LS43LTUuMy01LjRIMjF6TTUgMTJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctbGVmdC1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTcuNyAxMS41SDE3djFINy44bDMgMy4xLS43LjdMNS44IDEybDQuMy00LjMuNy43ek0yMiAxMkExMCAxMCAwIDExMTIgMmExMCAxMCAwIDAxMTAgMTB6bS0xIDBhOSA5IDAgMTAtOSA5IDkgOSAwIDAwOS05eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWFycm93LWxlZnQtdHJpYW5nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDkuMnY1LjZhMSAxIDAgMDEtMS43LjdMNi44IDEybDMuNS0zLjVhMSAxIDAgMDExLjcuN3oiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1hcnJvdy1yaWdodCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTMuOSA1LjRsLS43LjcgNS4zIDUuNEgzdjFoMTUuNWwtNS4zIDUuNC43LjcgNi42LTYuNnpNMTkgMTJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctcmlnaHQtY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMy45IDcuN2w0LjMgNC4zLTQuMyA0LjMtLjctLjcgMy4xLTMuMUg3di0xaDkuMmwtMy0zLjF6TTIyIDEyQTEwIDEwIDAgMTExMiAyYTEwIDEwIDAgMDExMCAxMHptLTEgMGE5IDkgMCAxMC05IDkgOSA5IDAgMDA5LTl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctcmlnaHQtdHJpYW5nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDE0LjhWOS4yYTEgMSAwIDAxMS43LS43bDMuNSAzLjUtMy41IDMuNWExIDEgMCAwMS0xLjctLjd6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctdXAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE4LjYgMTAuMUwxMiAzLjVsLTYuNiA2LjYuNy43IDUuNC01LjNWMjFoMVY1LjVsNS40IDUuM3pNMTIgNXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1hcnJvdy11cC1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDUuOGw0LjMgNC4zLS43LjctMy4xLTMuMVYxN2gtMVY3LjhsLTMuMSAzLS43LS43ek0yMiAxMkExMCAxMCAwIDExMTIgMmExMCAxMCAwIDAxMTAgMTB6bS0xIDBhOSA5IDAgMTAtOSA5IDkgOSAwIDAwOS05eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWFycm93LXVwLXRyaWFuZ2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNC44IDEySDkuMmExIDEgMCAwMS0uNy0xLjdMMTIgNi44bDMuNSAzLjVhMSAxIDAgMDEtLjcgMS43eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWJlaGFuY2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik03LjgzIDUuNzVhOCA4IDAgMDExLjYuMTUgMy4zOCAzLjM4IDAgMDExLjI0LjUxYy4zNDUuMjMzLjYyLjU1NC44LjkzLjIwMi40NTYuMjk4Ljk1Mi4yOCAxLjQ1YTIuNjggMi42OCAwIDAxLS40MiAxLjU0IDMuMDUgMy4wNSAwIDAxLTEuMjUgMSAyLjkyIDIuOTIgMCAwMTEuNjggMS4xNWMuMzkzLjU5LjU5IDEuMjkuNTYgMmEzLjM5IDMuMzkgMCAwMS0uMzIgMS41OSAzLjA4IDMuMDggMCAwMS0xIDEuMTEgNC4yNyA0LjI3IDAgMDEtMS40LjY0QTYgNiAwIDAxOCAxOEgyVjUuNzVoNS44M3ptLS4zNSA1YTIgMiAwIDAwMS4xOS0uMzVjLjMyOC0uMjcuNS0uNjg3LjQ2LTEuMTFBMS40NyAxLjQ3IDAgMDA5IDguNTRhMS4xNiAxLjE2IDAgMDAtLjQyLS40M0ExLjggMS44IDAgMDA4IDcuOWEzLjI2IDMuMjYgMCAwMC0uNy0uMDZINC43NHYyLjg3bDIuNzQuMDR6bS4xNSA1LjIyYy4yNTIuMDAzLjUwMy0uMDIuNzUtLjA3YTIgMiAwIDAwLjYyLS4zIDEuMzkgMS4zOSAwIDAwLjQ0LS40OSAxLjczIDEuNzMgMCAwMC4xNi0uOEExLjY0IDEuNjQgMCAwMDkuMDkgMTNhMi4zMyAyLjMzIDAgMDAtMS40MS0uNEg0Ljc0djMuMzhsMi44OS0uMDF6bTguNTQtLjA4YTIuMTggMi4xOCAwIDAwMS41OC41NCAyLjI0IDIuMjQgMCAwMDEuMjUtLjM3IDEuNiAxLjYgMCAwMC42NS0uNzloMi4xNWE0LjA2IDQuMDYgMCAwMS0xLjU4IDIuMjkgNC42NCA0LjY0IDAgMDEtMi41OC42OSA1LjIzIDUuMjMgMCAwMS0xLjktLjMzIDQgNCAwIDAxLTIuMzMtMi40NCA1LjI1IDUuMjUgMCAwMS0uMzItMS44OSA1LjEyIDUuMTIgMCAwMS4zMy0xLjg2IDQuMTQgNC4xNCAwIDAxLjkzLTEuNDkgNC40OCA0LjQ4IDAgMDExLjQ0LTEgNC41OSA0LjU5IDAgMDExLjg1LS4zNiA0LjMxIDQuMzEgMCAwMTIgLjQ0QTQgNCAwIDAxMjEgMTAuNWMuMzcuNTA1LjYzNiAxLjA4Ljc4IDEuNjlhNi4xOCA2LjE4IDAgMDEuMTcgMmgtNi4zOGEyLjUgMi41IDAgMDAuNiAxLjd6TTE5IDExLjIyYTEuODMgMS44MyAwIDAwLTEuMzgtLjQ5IDIgMiAwIDAwLTEgLjIgMS44IDEuOCAwIDAwLS42Mi40OSAxLjYyIDEuNjIgMCAwMC0uMzMuNjIgMi44NyAyLjg3IDAgMDAtLjExLjU5aDRhMi40IDIuNCAwIDAwLS41Ni0xLjQxem0tMy45My00LjY1aDQuOTh2MS4yMWgtNC45OFY2LjU3eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYnVyZ2VyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMiA1djFIMlY1ek0yIDEyLjVoMjB2LTFIMnpNMiAxOWgyMHYtMUgyeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWNhbGVuZGFyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMC41IDRIMTdWM2gtMXYxSDhWM0g3djFIMy41QTEuNSAxLjUgMCAwMDIgNS41djEzQTEuNSAxLjUgMCAwMDMuNSAyMGgxN2ExLjUgMS41IDAgMDAxLjUtMS41di0xM0ExLjUgMS41IDAgMDAyMC41IDR6bS41IDE0LjVhLjUuNSAwIDAxLS41LjVoLTE3YS41LjUgMCAwMS0uNS0uNXYtMTNhLjUuNSAwIDAxLjUtLjVIN3YxaDFWNWg4djFoMVY1aDMuNWEuNS41IDAgMDEuNS41ek00IDhoMTZ2MUg0eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWNhbWVyYSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAuNSAyMGgtMTdBMS41IDEuNSAwIDAxMiAxOC41di0xMEExLjUgMS41IDAgMDEzLjUgN2g0LjNsMS41LTIuM2ExLjUgMS41IDAgMDExLjItLjdoM2ExLjUgMS41IDAgMDExLjIuN0wxNi4yIDdoNC4zQTEuNSAxLjUgMCAwMTIyIDguNXYxMGExLjUgMS41IDAgMDEtMS41IDEuNXpNMy41IDhhLjUuNSAwIDAwLS41LjV2MTBhLjUuNSAwIDAwLjUuNWgxN2EuNS41IDAgMDAuNS0uNXYtMTBhLjUuNSAwIDAwLS41LS41aC00LjhsLTEuOC0yLjgtLjQtLjJoLTNsLS40LjJMOC4zIDh6TTEyIDE4YTUgNSAwIDExNS01IDUgNSAwIDAxLTUgNXptMC05YTQgNCAwIDEwNCA0IDQgNCAwIDAwLTQtNHpNNyA1SDR2MWgzeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWNhcmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwLjUgNWgtMTdBMS41IDEuNSAwIDAwMiA2LjV2MTFBMS41IDEuNSAwIDAwMy41IDE5aDE3YTEuNSAxLjUgMCAwMDEuNS0xLjV2LTExQTEuNSAxLjUgMCAwMDIwLjUgNXpNMyA5aDE4djNIM3ptMTggOC41YS41LjUgMCAwMS0uNS41aC0xN2EuNS41IDAgMDEtLjUtLjVWMTNoMTh6TTMgOFY2LjVhLjUuNSAwIDAxLjUtLjVoMTdhLjUuNSAwIDAxLjUuNVY4em01IDdINHYtMWg0eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWNoZWNrIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik05LjYgMTYuOUw0IDExLjRsLjgtLjcgNC44IDQuOCA4LjUtOC40LjcuN3oiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1jaGVjay1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE3LjEgNy45bC43LjctNy44IDcuNi00LjctNC42LjctLjcgNCAzLjl6TTIyIDEyQTEwIDEwIDAgMTExMiAyYTEwIDEwIDAgMDExMCAxMHptLTEgMGE5IDkgMCAxMC05IDkgOSA5IDAgMDA5LTl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY2hldnJvbi1sZWZ0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNC42IDE3LjJMOSAxMS42IDE0LjYgNmwuOC43LTQuOSA0LjkgNC45IDQuOXoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWNoZXZyb24tcmlnaHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTkuOCAxNy4ybC0uOC0uNyA0LjktNC45TDkgNi43bC44LS43IDUuNiA1LjZ6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1jbGlwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMSAyMmEyLjkgMi45IDAgMDEtMy0zVjZhNCA0IDAgMDE4IDB2MTBoLTFWNmEzIDMgMCAwMC02IDB2MTNhMiAyIDAgMDA0IDBWOGExIDEgMCAwMC0yIDB2OGgtMVY4YTIgMiAwIDAxNCAwdjExYTIuOSAyLjkgMCAwMS0zIDN6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY2xvY2siIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjUgNWgxdjcuNUg3di0xaDQuNXpNMjIgMTJBMTAgMTAgMCAxMTEyIDJhMTAgMTAgMCAwMTEwIDEwem0tMSAwYTkgOSAwIDEwLTkgOSA5IDkgMCAwMDktOXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1jbG9zZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIuNyAxMmwzLjcgMy42LS44LjgtMy42LTMuNy0zLjYgMy43LS44LS44IDMuNy0zLjYtMy43LTMuNi44LS44IDMuNiAzLjcgMy42LTMuNy44Ljh6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY2xvc2UtYmlnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMi43IDEybDYuNyA2LjYtLjguOC02LjYtNi43LTYuNiA2LjctLjgtLjggNi43LTYuNi02LjctNi42LjgtLjggNi42IDYuNyA2LjYtNi43LjguOHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1jbG9zZS1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE2LjMgOC4zTDEyLjYgMTJsMy43IDMuNi0uNy43LTMuNy0zLjYtMy42IDMuNi0uNy0uNyAzLjYtMy42LTMuNi0zLjcuNy0uNyAzLjYgMy43IDMuNy0zLjd6TTIyIDEyQTEwIDEwIDAgMTExMiAyYTEwIDEwIDAgMDExMCAxMHptLTEgMGE5IDkgMCAxMC05IDkgOSA5IDAgMDA5LTl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY29kZS1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE5IDEybC0yLjkgMi45LS43LS44IDIuMS0yLjEtMi4xLTIuMS43LS44ek03LjkgOS4xTDUgMTJsMi45IDIuOS43LS44TDYuNSAxMmwyLjEtMi4xek0yMiAxMkExMCAxMCAwIDExMTIgMmExMCAxMCAwIDAxMTAgMTB6bS0xIDBhOSA5IDAgMTAtOSA5IDkgOSAwIDAwOS05ek05LjYgMTYuNWwxIC4zIDMuNy05LjMtLjktLjN6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY29sbGFwc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE2LjUgMTUuNGwtNC45LTQuOS00LjkgNC45LS43LS44TDExLjYgOWw1LjYgNS42eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY29tbWVudCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkgM0g1YTIgMiAwIDAwLTIgMnYxMGEyIDIgMCAwMDIgMmgydjUuNGwxLjctMS43IDMuNy0zLjdIMTlhMiAyIDAgMDAyLTJWNWEyIDIgMCAwMC0yLTJ6bTEgMTJhLjkuOSAwIDAxLTEgMWgtN2wtNCA0di00SDVhLjkuOSAwIDAxLTEtMVY1YS45LjkgMCAwMTEtMWgxNGEuOS45IDAgMDExIDF6TTkgMTBhLjkuOSAwIDAxLTEgMSAuOS45IDAgMDEtMS0xIC45LjkgMCAwMTEtMSAuOS45IDAgMDExIDF6bTQgMGExIDEgMCAwMS0yIDAgMSAxIDAgMDEyIDB6bTQgMGExIDEgMCAwMS0yIDAgMSAxIDAgMDEyIDB6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY29weSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkuNSA0SDE4di0uNkExLjUgMS41IDAgMDAxNi41IDJoLTExQTEuNSAxLjUgMCAwMDQgMy40djE1LjJBMS41IDEuNSAwIDAwNS41IDIwSDd2LjZBMS41IDEuNSAwIDAwOC41IDIyaDExYTEuNSAxLjUgMCAwMDEuNS0xLjRWNS40QTEuNSAxLjUgMCAwMDE5LjUgNHpNNSAxOC42VjMuNGEuNS41IDAgMDEuNS0uNGgxMWEuNS41IDAgMDEuNS40djE1LjJhLjUuNSAwIDAxLS41LjRoLTExYS41LjUgMCAwMS0uNS0uNHptMTUgMmEuNS41IDAgMDEtLjUuNGgtMTFhLjUuNSAwIDAxLS41LS40VjIwaDguNWExLjUgMS41IDAgMDAxLjUtMS40VjVoMS41YS41LjUgMCAwMS41LjR6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZGVzaWduZXJzLWl0YWxpYSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC42NjMgMjAuNjc1VjcuNjQxSDEyLjN2MTMuMDU3SDguNjYzdi0uMDIzek0yMi45NTIgMTAuNjFoLTMuMzI1djUuMzU3YzAgLjUzNC4wMjQuODgyLjA0OCAxLjExMy4wMjQuMjEuMTIuMzk1LjI4OS41NTcuMTY5LjE2Mi40MzQuMjMyLjc5NS4yMzJsMi4wNzItLjA0Ni4xNjkgMi43ODNjLTEuMjA1LjI1NS0yLjE0NS4zOTQtMi43NzEuMzk0LTEuNjM5IDAtMi43NDctLjM0OC0zLjMyNS0xLjA2Ny0uNjAzLS42OTYtLjg5Mi0xLjk5NC0uODkyLTMuODk2VjRoMy42Mzl2My42MThoMy4zMjV2Mi45OTJoLS4wMjR6bS0xOS43Ni45OTdjLS42MjYgMC0xLjE1Ni0uMjA5LTEuNTY1LS42MjZBMi4xMTMgMi4xMTMgMCAwMTEgOS40NWMwLS42MDQuMjE3LTEuMTE0LjYwMi0xLjUzMS40MS0uNDE4Ljk0LS42MDMgMS41NjctLjYwMy42MjYgMCAxLjE1Ni4yMDggMS41NjYuNjI2LjQxLjQxNy42MDIuOTI3LjYwMiAxLjU1NCAwIC42MjYtLjE5MiAxLjExMy0uNjAyIDEuNTMtLjM4Ni4zNzEtLjg5Mi41OC0xLjU0Mi41OHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWRvd25sb2FkIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiAxNC4yTDcuNyA5LjlsLjctLjcgMy4xIDMuMVYzaDF2OS4ybDMuMS0zIC43Ljd6bTctMi4ydjcuNWEuNS41IDAgMDEtLjUuNWgtMTNhLjUuNSAwIDAxLS41LS41VjEySDR2Ny41QTEuNSAxLjUgMCAwMDUuNSAyMWgxM2ExLjUgMS41IDAgMDAxLjUtMS41VjEyeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWVycm9yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMS41IDE0LjJWNS43aDEuMnY4LjV6bS0uMSA0LjFoMS4ydi0xLjhoLTEuMnpNMjIgNy45djguM0wxNi4xIDIySDcuOUwyIDE2LjJWNy45TDcuOSAyaDguMnptLTEgLjRMMTUuNyAzSDguM0wzIDguM3Y3LjVMOC4zIDIxaDcuNGw1LjMtNS4yeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWV4Y2hhbmdlLWNpcmNsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMmExMCAxMCAwIDEwMTAgMTBBMTAgMTAgMCAwMDEyIDJ6bTAgMTlhOSA5IDAgMTE5LTkgOSA5IDAgMDEtOSA5em01LjEtOC45bC44LjgtNC4zIDQuM2ExLjUgMS41IDAgMDEtMS4xLjQgMS41IDEuNSAwIDAxLTEuMS0uNEw5IDE0LjdWMTdIOHYtNGg0djFIOS43bDIuNCAyLjVoLjh6bS02LTQuNmwtNC4yIDQuNC0uOC0uOCA0LjMtNC4zYTEuNSAxLjUgMCAwMTEuMS0uNCAxLjUgMS41IDAgMDExLjEuNEwxNSA5LjNWN2gxdjRoLTR2LTFoMi4zbC0yLjQtMi41aC0uOHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1leHBhbmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjYgMTUuNEw2IDkuOGwuNy0uOCA0LjkgNC45TDE2LjUgOWwuNy44eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZXh0ZXJuYWwtbGluayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjEgM3Y2aC0xVjQuN2wtNy42IDcuNy0uOC0uOEwxOS4zIDRIMTVWM3ptLTQgMTYuNWEuNS41IDAgMDEtLjUuNWgtMTJhLjUuNSAwIDAxLS41LS41di0xMmEuNS41IDAgMDEuNS0uNUgxMlY2SDQuNUExLjUgMS41IDAgMDAzIDcuNXYxMkExLjUgMS41IDAgMDA0LjUgMjFoMTJhMS41IDEuNSAwIDAwMS41LTEuNVYxMmgtMXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1mYWNlYm9vayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTEzLjU1IDIydi05LjExaDMuMDdsLjQ2LTMuNTZoLTMuNTNWNy4wNWMwLTEgLjI5LTEuNzMgMS43Ny0xLjczaDEuODdWMi4xNEEyNS4xNCAyNS4xNCAwIDAwMTQuNDUgMmMtMi43MiAwLTQuNTggMS42Ni00LjU4IDQuN3YyLjYySDYuODF2My41N2gzLjA2VjIyaDMuNjh6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1mYWNlYm9vay1zcXVhcmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0yMCAzSDRhMSAxIDAgMDAtMSAxdjE2YTEgMSAwIDAwMSAxaDguNjN2LTYuOTVoLTIuMzd2LTIuNzRoMi4zNHYtMmEzLjI4IDMuMjggMCAwMTMuNS0zLjZjLjcwNSAwIDEuNDEuMDQgMi4xMS4xMnYyLjQ0aC0xLjQ0Yy0xLjEzIDAtMS4zNC41My0xLjM0IDEuMzJ2MS43NGgyLjdsLS4zNSAyLjcyaC0yLjM1djdIMjBhMSAxIDAgMDAxLTFWNGExIDEgMCAwMC0xLTF6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1maWxlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNC43IDJINi41QTEuNSAxLjUgMCAwMDUgMy41djE3QTEuNSAxLjUgMCAwMDYuNSAyMmgxMWExLjUgMS41IDAgMDAxLjUtMS41VjYuM3ptLjMgMS43TDE3LjMgNmgtMS44YS41LjUgMCAwMS0uNS0uNXpNMTcuNSAyMWgtMTFhLjUuNSAwIDAxLS41LS41di0xN2EuNS41IDAgMDEuNS0uNUgxNHYyLjVBMS41IDEuNSAwIDAwMTUuNSA3SDE4djEzLjVhLjUuNSAwIDAxLS41LjV6TTggOWg4djFIOHptMCAyaDh2MUg4em0wIDJoNHYxSDh6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZmlsZXMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE1LjcgMkg3LjVBMS41IDEuNSAwIDAwNiAzLjVWNGgtLjVBMS41IDEuNSAwIDAwNCA1LjV2MTVBMS41IDEuNSAwIDAwNS41IDIyaDExYTEuNSAxLjUgMCAwMDEuNS0xLjVWMjBoLjVhMS41IDEuNSAwIDAwMS41LTEuNVY2LjN6bS4zIDEuN0wxOC4zIDZoLTEuOGEuNS41IDAgMDEtLjUtLjV6bTEgMTYuOGEuNS41IDAgMDEtLjUuNWgtMTFhLjUuNSAwIDAxLS41LS41di0xNWEuNS41IDAgMDEuNS0uNUg2djEzLjVBMS41IDEuNSAwIDAwNy41IDIwSDE3em0xLjUtMS41aC0xMWEuNS41IDAgMDEtLjUtLjV2LTE1YS41LjUgMCAwMS41LS41SDE1djIuNUExLjUgMS41IDAgMDAxNi41IDdIMTl2MTEuNWEuNS41IDAgMDEtLjUuNXpNOSA5aDh2MUg5em0wIDJoOHYxSDl6bTAgMmg0djFIOXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1mbGlja3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxjaXJjbGUgY3g9IjYuNzMiIGN5PSIxMiIgcj0iNC43MyIvPjxjaXJjbGUgY3g9IjE3LjI3IiBjeT0iMTIiIHI9IjQuNzMiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWZsaWNrci1zcXVhcmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0yMCA0YTMuMjYgMy4yNiAwIDAwLTIuMzgtMUg2LjM4QTMuMjYgMy4yNiAwIDAwNCA0YTMuMjYgMy4yNiAwIDAwLTEgMi4zN3YxMS4yNUEzLjI2IDMuMjYgMCAwMDQgMjBhMy4yNiAzLjI2IDAgMDAyLjM5IDFoMTEuMjRBMy4zOCAzLjM4IDAgMDAyMSAxNy42MlY2LjM3QTMuMjYgMy4yNiAwIDAwMjAgNHptLTkuNTYgOS43N2EyLjUgMi41IDAgMDEtMy41MSAwIDIuNDkgMi40OSAwIDAxMC0zLjUyIDIuNSAyLjUgMCAwMTMuNTEgMCAyLjQ5IDIuNDkgMCAwMTAgMy41MnptNi42MSAwQTIuNDkgMi40OSAwIDAxMTIuODIgMTJhMi40OSAyLjQ5IDAgMDE0LjI0LTEuNzYgMi40OSAyLjQ5IDAgMDEwIDMuNTJsLS4wMS4wMXoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWZvbGRlciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAgNmgtOGwtMi0ySDRhMiAyIDAgMDAtMiAydjEyYTIgMiAwIDAwMiAyaDE2YTIgMiAwIDAwMi0yVjhhMiAyIDAgMDAtMi0yem0xIDEyYS45LjkgMCAwMS0xIDFINGEuOS45IDAgMDEtMS0xVjZhLjkuOSAwIDAxMS0xaDUuNmwxLjcgMS43LjMuM0gyMGEuOS45IDAgMDExIDF6TTQgOGgxNnYxSDR6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZ2l0aHViIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNMTIgMmExMCAxMCAwIDAwLTMuMTYgMTkuNDljLjUuMDkuNjgtLjIyLjY4LS40OHYtMS43QzYuNzMgMTkuOTEgNi4xNCAxOCA2LjE0IDE4QTIuNjkgMi42OSAwIDAwNSAxNi41Yy0uOTEtLjYyLjA3LS42MS4wNy0uNjFhMi4xMyAyLjEzIDAgMDExLjUzIDEgMi4xNCAyLjE0IDAgMDAyLjkxLjgzIDIuMTYgMi4xNiAwIDAxLjYzLTEuMzRjLTIuMTQtLjIxLTQuNTItMS4wNy00LjUyLTQuOWEzLjg5IDMuODkgMCAwMTEtMi42OSAzLjU3IDMuNTcgMCAwMS4xLTIuNjRzLjg0LS4yNyAyLjc1IDFhOS42MyA5LjYzIDAgMDE1IDBjMS45MS0xLjI5IDIuNzUtMSAyLjc1LTEgLjM3LjgzNS40MDUgMS43OC4xIDIuNjRhMy44OSAzLjg5IDAgMDExIDIuNjljMCAzLjg0LTIuMzQgNC42OC00LjU3IDQuOTMuNDgyLjQ5LjczIDEuMTY0LjY4IDEuODV2Mi43NWMwIC4zMy4xOC41OC42OS40OEExMCAxMCAwIDAwMTIgMnoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWhlYXJpbmciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwIDlhNi44IDYuOCAwIDAxLTMuNSA2bC0yIDEuMWEzLjMgMy4zIDAgMDAtMS41IDIuN0EzLjIgMy4yIDAgMDE5LjggMjJoLS42YTMuNCAzLjQgMCAwMS0zLTIuMWwuOS0uNUEyLjMgMi4zIDAgMDA5LjIgMjFoLjZhMi4xIDIuMSAwIDAwMS42LS43IDIgMiAwIDAwLjYtMS41IDQgNCAwIDAxMi0zLjVsMi0xLjJBNS45IDUuOSAwIDAwMTkgOWE2IDYgMCAwMC02LTYgNiA2IDAgMDAtNC44IDIuNGwtLjgtLjZBNyA3IDAgMDExMyAyYTcgNyAwIDAxNyA3ek03LjUgMTJBNS41IDUuNSAwIDAwMiA2LjV2MWE0LjUgNC41IDAgMDEwIDl2MUE1LjUgNS41IDAgMDA3LjUgMTJ6TTUgMTJhMi45IDIuOSAwIDAwLTMtM3YxYTIgMiAwIDAxMCA0djFhMi45IDIuOSAwIDAwMy0zem01IDBhOCA4IDAgMDAtOC04djFhNyA3IDAgMDEwIDE0djFhOCA4IDAgMDA4LTh6bTUuOS4zYTQuNSA0LjUgMCAwMDEuMi0zLjIgNC41IDQuNSAwIDAwLTEuMi0zLjIgNC41IDQuNSAwIDAwLTMuMi0xLjRBNC44IDQuOCAwIDAwOS41IDZsLS4zLjMuMi4zYTguOCA4LjggMCAwMTEuMyAzdi40aC40YTEuNSAxLjUgMCAwMTAgM3YxYTIuNSAyLjUgMCAwMDIuNS0yLjUgMi42IDIuNiAwIDAwLTItMi41IDguNSA4LjUgMCAwMC0xLjEtMi42IDMuOSAzLjkgMCAwMTIuMi0uOSAzLjUgMy41IDAgMDEyLjQgMSAzLjUgMy41IDAgMDExIDIuNiAzLjUgMy41IDAgMDEtMSAyLjZ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtaGVscCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIuOCAyMmgtMS40di0yLjFoMS40em0tLjEtNC45aC0xLjJhOS43IDkuNyAwIDAxLS4xLTEuNyAyLjcgMi43IDAgMDEuMy0xLjIgNS42IDUuNiAwIDAxLjctMS4zbDIuMy0yLjFhOS42IDkuNiAwIDAwMS44LTIuMSA0LjUgNC41IDAgMDAuNS0yLjMgMyAzIDAgMDAtMS4xLTIuNiA2LjIgNi4yIDAgMDAtMy40LS43IDIyLjkgMjIuOSAwIDAwLTMuNi41bC0xIC4zLS4yLTEuMmguMWExOC4xIDE4LjEgMCAwMTQuNy0uOCA3LjQgNy40IDAgMDE0LjMgMSA0LjIgNC4yIDAgMDExLjQgMy41IDUgNSAwIDAxLS41IDIuNyA4LjYgOC42IDAgMDEtMS45IDIuMiAxOS43IDE5LjcgMCAwMC0xLjggMS42IDYuMiA2LjIgMCAwMC0uOSAxLjIgMi4zIDIuMyAwIDAwLS40IDEuNHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1oZWxwLWNpcmNsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMmExMCAxMCAwIDEwMTAgMTBBMTAgMTAgMCAwMDEyIDJ6bTAgMTlhOSA5IDAgMTE5LTkgOSA5IDAgMDEtOSA5em0tMS4yLTQuNUgxMnYxLjhoLTEuMnptNC41LThhNC4yIDQuMiAwIDAxLS4zIDEuOCA1LjQgNS40IDAgMDEtMS4zIDEuNEwxMi4zIDEzYTIuOCAyLjggMCAwMC0uNCAxLjJ2LjZIMTFhMyAzIDAgMDEtLjItMSAyLjEgMi4xIDAgMDEuNS0xLjIgOSA5IDAgMDExLjQtMS40IDYuNCA2LjQgMCAwMDEuMi0xLjMgMi42IDIuNiAwIDAwLjMtMS40IDEuNyAxLjcgMCAwMC0uNi0xLjQgMy41IDMuNSAwIDAwLTItLjRMOS4zIDdoLS41di0uOGExMC4yIDEwLjIgMCAwMTMtLjUgNC45IDQuOSAwIDAxMi43LjYgMi43IDIuNyAwIDAxLjggMi4yeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWhvcm4iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUgOWEzIDMgMCAwMDAgNmguNUw3IDE5LjNBMi41IDIuNSAwIDAwOS4zIDIxaC4yYTEuNCAxLjQgMCAwMDEuMi0uNiAxLjQgMS40IDAgMDAuMi0xLjRsLTEuMy00aDEuOGw4LjYgMy44VjQuN0wxMS40IDl6bTUgMTAuM2EuNy43IDAgMDEtLjEuNWwtLjQuMmgtLjJhMS41IDEuNSAwIDAxLTEuNC0xbC0xLjMtNGgxLjl6TTUgMTRhMiAyIDAgMDEwLTRoNnY0em0xNCAzLjJsLTctM1Y5LjhsNy0zLjV6TTIyIDl2NmgtMVY5eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWluZm8tY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiAyYTEwIDEwIDAgMTAxMCAxMEExMCAxMCAwIDAwMTIgMnptMCAxOWE5IDkgMCAxMTktOSA5IDkgMCAwMS05IDl6bS0uNy0xNWgxLjV2MmgtMS41em0wIDNoMS41djloLTEuNXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1pbnN0YWdyYW0iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0xMiA0LjYybC0uMDEuMDhIOC4zNWE1LjEyIDUuMTIgMCAwMC0xLjY3LjMxYy0uMzguMTUtLjcyLjM4Mi0xIC42OC0uMjk4LjI4LS41My42Mi0uNjggMWE1LjEyIDUuMTIgMCAwMC0uMyAxLjY4djcuMjhjLjAxLjU3LjExNCAxLjEzNC4zMSAxLjY3LjE1LjM4LjM4Mi43Mi42OCAxIC4yOC4yOTguNjIuNTMgMSAuNjguNTM2LjE5NiAxLjEuMyAxLjY3LjMxLjk1LjA1IDEuMjQuMDUgMy42NC4wNSAyLjQgMCAyLjY0LS4wNSAzLjY0LS4wNWE1LjEyIDUuMTIgMCAwMDEuNjctLjMxQTMuMDggMy4wOCAwIDAwMTkgMTcuMzFhNS4xMiA1LjEyIDAgMDAuMy0xLjY4Yy4wNS0uOTUuMDUtMS4yNC4wNS0zLjY0IDAtMi40LS4wNS0yLjY0LS4wNS0zLjY0YTUuMTIgNS4xMiAwIDAwLS4zMS0xLjY3IDIuNzcgMi43NyAwIDAwLS42OC0xIDIuNzcgMi43NyAwIDAwLTEtLjY4IDUuMTIgNS4xMiAwIDAwLTEuNjctLjM4SDEyek0xMiAzdi4wNWgzLjcxYTYuOSA2LjkgMCAwMTIuMTkuNDIgNC42NCA0LjY0IDAgMDEyLjY4IDIuNjNBNi45IDYuOSAwIDAxMjEgOC4yOWMwIC45Ni4wNSAxLjI3LjA1IDMuNzFTMjEgMTQuNzEgMjEgMTUuNzFhNi45IDYuOSAwIDAxLS40NyAyLjI0IDQuNjQgNC42NCAwIDAxLTIuNjMgMi42MyA2LjkgNi45IDAgMDEtMi4xOS40MmMtLjk2LjA1LTEuMjcuMDUtMy43MS4wNVM5LjI5IDIxIDguMjkgMjFhNi45IDYuOSAwIDAxLTIuMTktLjQ3IDQuNjQgNC42NCAwIDAxLTIuNjMtMi42MyA2LjkgNi45IDAgMDEtLjQyLTIuMTlWMTIgOC4yOWE2LjkgNi45IDAgMDEuNDItMi4xOUE0LjY0IDQuNjQgMCAwMTYuMSAzLjQyIDYuOSA2LjkgMCAwMTguMjkgM0gxMnptMCA0LjM4YTQuNjIgNC42MiAwIDExMCA5LjI0IDQuNjIgNC42MiAwIDAxMC05LjI0ek0xMiAxNWEzIDMgMCAxMDAtNiAzIDMgMCAwMDAgNnptNC44LTYuNzJhMS4wOCAxLjA4IDAgMTEwLTIuMTYgMS4wOCAxLjA4IDAgMDEwIDIuMTZ6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1rZXkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE4IDEwYTIgMiAwIDEwMiAyIDIgMiAwIDAwLTItMnptMCAzYTEgMSAwIDExMS0xIC45LjkgMCAwMS0xIDF6bS0xLTZhNS4xIDUuMSAwIDAwLTQuNiAzSDMuM2wtMiAyIDMgM0g3di0xaC4zbDEgMUgxMXYtMWgxLjRhNS4xIDUuMSAwIDAwNC42IDMgNSA1IDAgMDAwLTEwem0wIDlhNC4xIDQuMSAwIDAxLTMuOC0yLjdWMTNIMTB2MUg4LjdsLTEtMUg2djFINC43bC0yLTIgMS0xaDkuNHYtLjNBNC4xIDQuMSAwIDAxMTcgOGE0IDQgMCAwMTAgOHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1sZXNzLWNpcmNsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgM2E5IDkgMCAwMTYuMzYgMTUuMzZBOSA5IDAgMDE1LjY0IDUuNjIgOC45MyA4LjkzIDAgMDExMiAzbTAtMWExMCAxMCAwIDEwNy4wNyAyLjkzQTkuOTMgOS45MyAwIDAwMTIgMnoiLz48cmVjdCB4PSI3IiB5PSIxMS4yNSIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEuNSIgcng9Ii43NSIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtbGluayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTMuNCAxMy40bC0uNy0uN2EyLjkgMi45IDAgMDAuOS0yLjEgMi43IDIuNyAwIDAwLS45LTIuMUw5LjIgNC45YTMuMiAzLjIgMCAwMC00LjMgMCAzLjIgMy4yIDAgMDAwIDQuM0w3LjggMTJsLS43LjctMi45LTIuOGE0LjIgNC4yIDAgMDEwLTUuNyA0LjIgNC4yIDAgMDE1LjcgMGwzLjUgMy42YTMuNiAzLjYgMCAwMTEuMiAyLjggMy42IDMuNiAwIDAxLTEuMiAyLjh6bTYuNCA2LjRhNC4yIDQuMiAwIDAwMC01LjdsLTIuOS0yLjgtLjcuNyAyLjkgMi44YTMuMiAzLjIgMCAwMTAgNC4zIDMuMiAzLjIgMCAwMS00LjMgMGwtMy41LTMuNmEyLjcgMi43IDAgMDEtLjktMi4xIDIuOSAyLjkgMCAwMS45LTIuMWwtLjctLjdhMy42IDMuNiAwIDAwLTEuMiAyLjggMy42IDMuNiAwIDAwMS4yIDIuOGwzLjUgMy42YTMuOCAzLjggMCAwMDIuOCAxLjEgMy45IDMuOSAwIDAwMi45LTEuMXptLTYuNy02LjciLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1saW5rZWRpbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTE2LjUzIDguNjhBMy45NCAzLjk0IDAgMDAxMyAxMC42MlY5SDkuMzd2MTJoMy43M3YtNS45NWMwLTEuNTcuMjktMy4wOSAyLjI0LTMuMDkgMS45NSAwIDEuOTMgMS44IDEuOTMgMy4xOVYyMUgyMXYtNi42YzAtMy4yMy0uNjktNS43Mi00LjQ3LTUuNzJ6TTUuMTYgM2EyLjE3IDIuMTcgMCAxMDIuMTYgMi4xOEEyLjE2IDIuMTYgMCAwMDUuMTYgM3pNMy4yOSA5djEySDdWOUgzLjI5em0xMy4yNC0uM0EzLjk0IDMuOTQgMCAwMDEzIDEwLjYyVjlIOS4zN3YxMmgzLjczdi01Ljk1YzAtMS41Ny4yOS0zLjA5IDIuMjQtMy4wOSAxLjk1IDAgMS45MyAxLjggMS45MyAzLjE5VjIxSDIxdi02LjZjMC0zLjIzLS42OS01LjcyLTQuNDctNS43MnYuMDJ6TTMuMjkgMjFIN1Y5SDMuMjl2MTJ6TTUuMTYgM2EyLjE3IDIuMTcgMCAxMDIuMTYgMi4xOEEyLjE2IDIuMTYgMCAwMDUuMTYgM3oiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWxpbmtlZGluLXNxdWFyZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTE5LjY3IDNINC4zM0ExLjMyIDEuMzIgMCAwMDMgNC4zdjE1LjRBMS4zMiAxLjMyIDAgMDA0LjMzIDIxaDE1LjM0QTEuMzIgMS4zMiAwIDAwMjEgMTkuN1Y0LjNBMS4zMiAxLjMyIDAgMDAxOS42NyAzek04LjM0IDE4LjM0SDUuNjdWOS43NWgyLjY3djguNTl6TTcgOC41N0ExLjU1IDEuNTUgMCAxMTguNTUgNyAxLjU0IDEuNTQgMCAwMTcgOC41N3ptMTEuMzQgOS43N2gtMi42N3YtNC4xOGMwLTEgMC0yLjI4LTEuMzktMi4yOHMtMS42IDEuMDktMS42IDIuMjF2NC4yNUgxMFY5Ljc1aDIuNTZ2MS4xN2EyLjgzIDIuODMgMCAwMTIuNTMtMS4zOWMyLjcgMCAzLjIgMS43OCAzLjIgNC4xbC4wNSA0LjcxeiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtbGlzdCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNCAxMmEuOS45IDAgMDEtMSAxIDEgMSAwIDAxMC0yIC45LjkgMCAwMTEgMXpNMyA0LjVhLjkuOSAwIDAwLTEgMSAuOS45IDAgMDAxIDEgLjkuOSAwIDAwMS0xIC45LjkgMCAwMC0xLTF6bTAgMTNhMSAxIDAgMDAwIDIgMSAxIDAgMDAwLTJ6TTYgNXYxaDE2VjV6bTAgNy41aDE2di0xSDZ6TTYgMTloMTZ2LTFINnoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1sb2NrIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xOC41IDguNUgxN1Y4QTUgNSAwIDAwNyA4di41SDUuNUExLjUgMS41IDAgMDA0IDEwdjguNUExLjUgMS41IDAgMDA1LjUgMjBoMTNhMS41IDEuNSAwIDAwMS41LTEuNVYxMGExLjUgMS41IDAgMDAtMS41LTEuNXpNOCA4YTQgNCAwIDAxOCAwdi41SDh6bTExIDEwLjVhLjUuNSAwIDAxLS41LjVoLTEzYS41LjUgMCAwMS0uNS0uNVYxMGEuNS41IDAgMDEuNS0uNWgxM2EuNS41IDAgMDEuNS41eiIvPjxwYXRoIGQ9Ik0xMiAxMy4yNWExIDEgMCAxMS0xIDEgMSAxIDAgMDExLTFtMC0xYTIgMiAwIDEwMiAyIDIgMiAwIDAwLTItMnoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWxvY2tlZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYuNSAxMkgxNlY3YTQgNCAwIDAwLTggMHY1aC0uNWExLjEgMS4xIDAgMDAtMS4xIDEuMXY2LjhBMS4xIDEuMSAwIDAwNy41IDIxaDlhMS4xIDEuMSAwIDAwMS4xLTEuMXYtNi44YTEuMSAxLjEgMCAwMC0xLjEtMS4xek05IDdhMyAzIDAgMDE2IDB2NUg5em03LjYgMTIuOWEuMS4xIDAgMDEtLjEuMWgtOWEuMS4xIDAgMDEtLjEtLjF2LTYuOGg5LjJ6TTEzIDE1LjVhLjguOCAwIDAxLS41Ljh2MS41aC0xdi0xLjVhLjguOCAwIDAxLS41LS44IDEgMSAwIDAxMiAweiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LW1haWwiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwLjUgNWgtMTdBMS41IDEuNSAwIDAwMiA2LjV2MTFBMS41IDEuNSAwIDAwMy41IDE5aDE3YTEuNSAxLjUgMCAwMDEuNS0xLjV2LTExQTEuNSAxLjUgMCAwMDIwLjUgNXptLS4zIDFsLTcuMSA3LjJhMS42IDEuNiAwIDAxLTIuMiAwTDMuOCA2ek0zIDE3LjNWNi42TDguMyAxMnptLjcuN0w5IDEyLjdsMS4yIDEuMmEyLjcgMi43IDAgMDAzLjYgMGwxLjItMS4yIDUuMyA1LjN6bTEyLTZMMjEgNi42djEwLjd6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtbWVkaXVtIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNNSA3LjYzQS43Mi43MiAwIDAwNC44MiA3TDMuMTMgNXYtLjNoNS4yMmw0IDguODQgMy41NC04Ljg0aDVWNWwtMS40MiAxLjRhLjQzLjQzIDAgMDAtLjE2LjR2MTAuMTJhLjQ1LjQ1IDAgMDAuMTYuNDFsMS40IDEuMzd2LjNoLTd2LS4zbDEuNDUtMS40MWMuMTQtLjE0LjE0LS4xOC4xNC0uNFY4LjcxTDExLjM3IDE5aC0uNTVMNi4xMiA4LjcxdjYuODhhLjkzLjkzIDAgMDAuMjYuNzlsMS44OSAyLjI5VjE5SDIuOTF2LS4zbDEuODktMi4zMmEuOTIuOTIgMCAwMC4yLS43OVY3LjYzeiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtbWVkaXVtLXNxdWFyZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTMgM2gxOHYxOEgzVjN6bTQuMyAxMS4zNmEuNjQuNjQgMCAwMS0uMTcuNTRsLTEuMjcgMS41NHYuMmgzLjZ2LS4yTDguMTkgMTQuOWEuNjcuNjcgMCAwMS0uMTktLjU0VjkuNzRsMy4xNiA2LjloLjM3bDIuNzEtNi45djUuNWMwIC4xNSAwIC4xNy0uMDkuMjdsLTEgMXYuMmg0Ljc0di0uMmwtLjg5LS45OGEuMjcuMjcgMCAwMS0uMTEtLjI3di02LjhhLjI4LjI4IDAgMDEuMTEtLjI3bDEtLjkzdi0uMmgtMy4zOUwxMi4yMyAxMyA5LjUyIDcuMDZINnYuMmwxLjE0IDEuMzZBLjUuNSAwIDAxNy4zIDl2NS4zNnoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LW1pbnVzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMCAxMi41SDR2LTFoMTZ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtbWludXMtY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02LjkgMTEuNWgxMHYxaC0xMHpNMjIgMTJBMTAgMTAgMCAxMTEyIDJhMTAgMTAgMCAwMTEwIDEwem0tMSAwYTkgOSAwIDEwLTkgOSA5IDkgMCAwMDktOXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1tb3JlLWFjdGlvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYgMTBhMiAyIDAgMTAyIDIgMiAyIDAgMDAtMi0yem0wIDNhMSAxIDAgMDEwLTIgMSAxIDAgMDEwIDJ6bTYtM2EyIDIgMCAxMDIgMiAyIDIgMCAwMC0yLTJ6bTAgM2ExIDEgMCAxMTEtMSAuOS45IDAgMDEtMSAxem02LTNhMiAyIDAgMTAyIDIgMiAyIDAgMDAtMi0yem0wIDNhMSAxIDAgMTExLTEgLjkuOSAwIDAxLTEgMXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1tb3JlLWl0ZW1zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiAxOGExIDEgMCAxMS0xIDEgLjkuOSAwIDAxMS0xbTAtMWEyIDIgMCAxMDIgMiAyIDIgMCAwMC0yLTJ6bTAtNmExIDEgMCAxMS0xIDEgLjkuOSAwIDAxMS0xbTAtMWEyIDIgMCAxMDIgMiAyIDIgMCAwMC0yLTJ6bTAtNmEuOS45IDAgMDExIDEgMSAxIDAgMDEtMiAwIC45LjkgMCAwMTEtMW0wLTFhMiAyIDAgMTAyIDIgMiAyIDAgMDAtMi0yeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LW5vdGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE4LjUgNGgtMTNBMS41IDEuNSAwIDAwNCA1LjV2MTNBMS41IDEuNSAwIDAwNS41IDIwaDEwLjJsNC4zLTQuM1Y1LjVBMS41IDEuNSAwIDAwMTguNSA0ek01IDE4LjV2LTEzYS41LjUgMCAwMS41LS41aDEzYS41LjUgMCAwMS41LjVWMTVoLTIuNWExLjUgMS41IDAgMDAtMS41IDEuNVYxOUg1LjVhLjUuNSAwIDAxLS41LS41ek0xOC4zIDE2TDE2IDE4LjN2LTEuOGEuNS41IDAgMDEuNS0uNXpNMTYgOUg4VjhoOHptMCAySDh2LTFoOHptLTIgMXYxSDh2LTF6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtcGEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTMgMjFoMTh2MUgzem0wLTFoMTh2LTFIM3pNMjIgOUgybDEwLTd6TTUuMiA4aDEzLjZMMTIgMy4yek02IDE4di04SDV2OHptNCAwdi04SDl2OHptNSAwdi04aC0xdjh6bTQgMHYtOGgtMXY4eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXBhc3N3b3JkLWludmlzaWJsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUgMTJhMy4yIDMuMiAwIDAwLS43LTEuOWwuNC0xLjFhNC4yIDQuMiAwIDAxMS4zIDMgNCA0IDAgMDEtMy45IDRsLjQtMS4xQTIuOSAyLjkgMCAwMDE1IDEyek0zLjEgMTJBOS44IDkuOCAwIDAxMTIgNi41aC40bC40LS45SDEyYTEwLjkgMTAuOSAwIDAwLTkuOCA2TDIgMTJsLjIuNWExMSAxMSAwIDAwNi4xIDUuM2wuMy0uOUE5LjggOS44IDAgMDEzLjEgMTJ6bTE4LjctLjVhMTEgMTEgMCAwMC02LjEtNS4zbC0uMy45YTkuOCA5LjggMCAwMTUuNSA0LjkgOS44IDkuOCAwIDAxLTguOSA1LjVoLS40bC0uNC45aC44YTEwLjkgMTAuOSAwIDAwOS44LTZsLjItLjR6TTExLjUgOS4xbC40LTEuMUE0IDQgMCAwMDggMTJhNC4yIDQuMiAwIDAwMS4zIDNsLjQtMS4xQTMuMiAzLjIgMCAwMTkgMTJhMi45IDIuOSAwIDAxMi41LTIuOXptMy4xLTUuN0w4LjUgMjAuM2wuOS4zIDYuMS0xNi45eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXBhc3N3b3JkLXZpc2libGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIxLjggMTEuNWExMSAxMSAwIDAwLTE5LjYgMEwyIDEybC4yLjVhMTEgMTEgMCAwMDE5LjYgMGwuMi0uNXptLTkuOCA2QTkuOCA5LjggMCAwMTMuMSAxMiA5LjggOS44IDAgMDExMiA2LjVhOS44IDkuOCAwIDAxOC45IDUuNSA5LjggOS44IDAgMDEtOC45IDUuNXpNMTIgOGE0IDQgMCAxMDQgNCA0IDQgMCAwMC00LTR6bTAgN2EzIDMgMCAxMTMtMyAyLjkgMi45IDAgMDEtMyAzeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXBlbmNpbCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAuNSAzLjVhMi45IDIuOSAwIDAwLTIuMS0uOSAzLjEgMy4xIDAgMDAtMi4yLjlMNC42IDE1LjJsLTEgNS4yIDUuMi0xTDIwLjUgNy44YTMgMyAwIDAwMC00LjN6bS01LjcgMi44bC43LS43IDIuOSAyLjktLjcuN3ptLS43LjhsMS4xIDEtOC40IDguNC0xLjEtMS4xek01LjcgMTguM2EuNy43IDAgMDAtLjYtLjNsLjMtMS41IDIuMSAyLjEtMS41LjNhLjcuNyAwIDAwLS4zLS42em0yLjkgMGwtMS4xLTEuMSA4LjQtOC40IDEgMS4xek0xOS44IDcuMWwtLjcuNy0yLjktMi45LjctLjdhMi4yIDIuMiAwIDAxMS41LS42IDIgMiAwIDAxMS40LjYgMi4xIDIuMSAwIDAxMCAyLjl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtcGluIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xOC4xIDE0TDE1IDEwLjNWNC42TDE2LjMgMkg3LjdMOSA0LjZ2NS43TDUuOSAxNGg1LjZ2OGgxdi04ek0xMCA1aDR2NWgtNHptNC43LTJsLS41IDFIOS44bC0uNS0xem0tNSA4aDQuNmwxLjYgMkg4LjF6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtcGx1cyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAgMTIuNWgtNy41VjIwaC0xdi03LjVINHYtMWg3LjVWNGgxdjcuNUgyMHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1wbHVzLWNpcmNsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIuNCAxMS41aDQuNXYxaC00LjVWMTdoLTF2LTQuNUg2Ljl2LTFoNC41VjdoMXptOS42LjVBMTAgMTAgMCAxMTEyIDJhMTAgMTAgMCAwMTEwIDEwem0tMSAwYTkgOSAwIDEwLTkgOSA5IDkgMCAwMDktOXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1wcmVzZW50YXRpb24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQgNXYxMC42QTIuNCAyLjQgMCAwMDYuNCAxOGgzLjFsLTEuMSA0aDFsMS4xLTRoMi43bDEuMiA0aDFsLTEuMi00aDMuNWEyLjMgMi4zIDAgMDAyLjMtMi4zVjV6bTE1IDEwLjdhMS4zIDEuMyAwIDAxLTEuMyAxLjNINi40QTEuNCAxLjQgMCAwMTUgMTUuNlY2aDE0ek0yMSAzdjFIM1Yzem0tOSAxM2E0LjUgNC41IDAgMTAtNC41LTQuNUE0LjUgNC41IDAgMDAxMiAxNnptLS41LTcuOVYxMUg4LjZhMy40IDMuNCAwIDAxMi45LTIuOXptMSAzLjlWOGEzLjUgMy41IDAgMDEtLjUgNyAzLjQgMy40IDAgMDEtMy40LTN6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtcHJpbnQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIxIDkuNUExLjUgMS41IDAgMDAxOS41IDhIMTdWM0g3djVINC41QTEuNSAxLjUgMCAwMDMgOS41VjE2aDJ2M2gydjJoMTB2LTJoMnYtM2gyek04IDRoOHY0SDh6TTYgMTh2LTRoMXY0em0xMCAySDh2LTZoOHY2em0yLTJoLTF2LTRoMXY0em0yLTNoLTF2LTJINXYySDRWOS41YS41LjUgMCAwMS41LS41aDE1YS41LjUgMCAwMS41LjV6TTYgMTFoNHYxSDZ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtc2VhcmNoIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMS45IDIxLjFMMTYgMTUuM2E4LjMgOC4zIDAgMDAyLTUuMyA4IDggMCAxMC04IDggOC4zIDguMyAwIDAwNS4zLTJsNS44IDUuOXpNMTAgMTdhNyA3IDAgMTE3LTcgNyA3IDAgMDEtNyA3eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXNldHRpbmdzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiA3LjVhNC41IDQuNSAwIDEwNC41IDQuNUE0LjUgNC41IDAgMDAxMiA3LjV6bTAgOGEzLjUgMy41IDAgMTEzLjUtMy41IDMuNSAzLjUgMCAwMS0zLjUgMy41em05LjgtMS42QTEyLjMgMTIuMyAwIDAwMjIgMTJhMTIuMyAxMi4zIDAgMDAtLjItMS45bC0yLjEtLjNhOC43IDguNyAwIDAwLS43LTEuN2wxLjMtMS43YTguNyA4LjcgMCAwMC0yLjctMi43TDE1LjkgNWwtMS43LS43LS4zLTIuMUwxMiAybC0xLjkuMi0uMyAyLjEtMS43LjctMS43LTEuM2E4LjcgOC43IDAgMDAtMi43IDIuN0w1IDguMWE4LjcgOC43IDAgMDAtLjcgMS43bC0yLjEuM0ExMi4zIDEyLjMgMCAwMDIgMTJhMTIuMyAxMi4zIDAgMDAuMiAxLjlsMi4xLjNhOC43IDguNyAwIDAwLjcgMS43bC0xLjMgMS43YTguNyA4LjcgMCAwMDIuNyAyLjdMOC4xIDE5bDEuNy43LjMgMi4xIDEuOS4yIDEuOS0uMi4zLTIuMSAxLjctLjcgMS43IDEuM2E4LjcgOC43IDAgMDAyLjctMi43TDE5IDE1LjlhOC43IDguNyAwIDAwLjctMS43em0tMi45LS43bC0uMi43YTMuOSAzLjkgMCAwMS0uNiAxLjVsLS4zLjYuNC41LjggMS4xYTkuMyA5LjMgMCAwMS0xLjQgMS40bC0xLjEtLjgtLjUtLjQtLjYuM2EzLjkgMy45IDAgMDEtMS41LjZsLS43LjJ2LjdsLS4yIDEuM2gtMmwtLjItMS4zdi0uN2wtLjctLjJhMy45IDMuOSAwIDAxLTEuNS0uNmwtLjYtLjMtLjUuNC0xLjEuOEE5LjMgOS4zIDAgMDE1IDE3LjZsLjgtMS4xLjQtLjUtLjMtLjZhMy45IDMuOSAwIDAxLS42LTEuNWwtLjItLjdoLS43TDMuMSAxM2EzLjQgMy40IDAgMDEtLjEtMSAzLjQgMy40IDAgMDEuMS0xbDEuMy0uMmguN2wuMi0uN2EzLjkgMy45IDAgMDEuNi0xLjVsLjMtLjYtLjQtLjVMNSA2LjQgNi40IDVsMS4xLjguNS40LjYtLjNhMy45IDMuOSAwIDAxMS41LS42bC43LS4ydi0uN2wuMi0xLjNoMmwuMiAxLjN2LjdsLjcuMmEzLjkgMy45IDAgMDExLjUuNmwuNi4zLjUtLjQgMS4xLS44QTkuMyA5LjMgMCAwMTE5IDYuNGwtLjggMS4xLS40LjUuMy42YTMuOSAzLjkgMCAwMS42IDEuNWwuMi43aC43bDEuMy4yYTMuNCAzLjQgMCAwMS4xIDEgMy40IDMuNCAwIDAxLS4xIDFsLTEuMy4yeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXNoYXJlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNy41IDE1YTIuNSAyLjUgMCAwMC0yIDFsLTcuNi0zLjRBMS4zIDEuMyAwIDAwOCAxMmExLjMgMS4zIDAgMDAtLjEtLjZMMTUuNSA4YTIuNSAyLjUgMCAxMC0uNS0xLjUgMS4zIDEuMyAwIDAwLjEuNmwtNy42IDMuNGEyLjUgMi41IDAgMTAwIDNsNy42IDMuNGExLjMgMS4zIDAgMDAtLjEuNiAyLjUgMi41IDAgMTAyLjUtMi41em0wLTEwQTEuNSAxLjUgMCAwMTE5IDYuNWExLjUgMS41IDAgMDEtMyAwQTEuNSAxLjUgMCAwMTE3LjUgNXptLTEyIDguNWExLjUgMS41IDAgMDEwLTMgMS41IDEuNSAwIDAxMCAzem0xMiA1LjVhMS41IDEuNSAwIDExMS41LTEuNSAxLjUgMS41IDAgMDEtMS41IDEuNXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1zdGFyLWZ1bGwiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDEuN0w5LjUgOS4ySDEuNkw4IDEzLjlsLTIuNCA3LjYgNi40LTQuNyA2LjQgNC43LTIuNC03LjYgNi40LTQuN2gtNy45TDEyIDEuN3oiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1zdGFyLW91dGxpbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDQuOWwxLjUgNC42LjIuN2g1LjdsLTQgMi45LS42LjQuMi43IDEuNSA0LjctMy45LTIuOS0uNi0uNC0uNi40LTMuOSAyLjlMOSAxNC4ybC4yLS43LS42LS40LTQtMi45aDUuN2wuMi0uN0wxMiA0LjltMC0zLjJMOS41IDkuMkgxLjZMOCAxMy45bC0yLjQgNy42IDYuNC00LjcgNi40IDQuNy0yLjQtNy42IDYuNC00LjdoLTcuOUwxMiAxLjd6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtdGVhbS1kaWdpdGFsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjMuNjQ4IDI0SC4zNTJBLjM1My4zNTMgMCAwMTAgMjMuNjQ4Vi4zNTJDMCAuMTU4LjE1OCAwIC4zNTIgMGgyMy4yOTZjLjE5NCAwIC4zNTIuMTU4LjM1Mi4zNTJ2MjMuMjk2YS4zNTMuMzUzIDAgMDEtLjM1Mi4zNTJ6TTUuODE0IDExLjc5MmExLjU5NiAxLjU5NiAwIDEwMC0zLjE5MiAxLjU5NiAxLjU5NiAwIDAwMCAzLjE5MnpNMTAgMTguOTk0VjE5aDQuNDE4QzE5LjEzIDE5IDIwIDE2LjY4NSAyMCAxMi4yNTMgMjAgNy45MyAxOC45OTUgNiAxNC40MTggNkgxMHYxMi45OTR6bTQuNDE4LTEwLjcwMmMyLjU4NiAwIDIuODM4IDEuMTEgMi44MzggMy45NTUgMCAyLjg5LS4yNTIgNC40NTUtMi44MzggNC40NTVoLTEuNzU2di04LjQxaDEuNzU2eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtdGVsZXBob25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik01IDNoLjE4TTIwIDExLjU2QTcuNTkgNy41OSAwIDAwMTIuNDggNGgtLjA2YS40OS40OSAwIDAwLS40OS40OC41LjUgMCAwMC40OS41MUE2LjYxIDYuNjEgMCAwMTE5IDExLjYyYS41MS41MSAwIDAwLjU0LjQ2LjQ5LjQ5IDAgMDAuNDUtLjQ2cy4wMS0uMDQuMDEtLjA2eiIvPjxwYXRoIGQ9Ik0xNi45MyAxMS42OGE0LjUgNC41IDAgMDAtNC40OC00LjQ4LjUxLjUxIDAgMDAwIDEgMy41IDMuNSAwIDAxMy40OSAzLjQ5LjUuNSAwIDAwLjUuNS41MS41MSAwIDAwLjUtLjUxek0xNS42OCAyMS4xOWExMy4zMiAxMy4zMiAwIDAxLTEyLjgtMTMuMS45Mi45MiAwIDAxLjYyLS44OGMxLjc0LS41NiA0LTEgNC43LjA2YTcuMzkgNy4zOSAwIDAxLjg1IDIuOTF2LjIxYTEuNDggMS40OCAwIDAxLS43IDEuNjguODEuODEgMCAwMC0uNDkuNzEgMTIuNTUgMTIuNTUgMCAwMDMuMzggMy41MS44OC44OCAwIDAwLjQ4LS41NmMuMDktLjUzLjU4LTEgMS43LS44NWguMjFhNyA3IDAgMDEyLjg1Ljg3YzEgLjcyLjYyIDMgLjA5IDQuNzJhMSAxIDAgMDEtLjg5Ljcyek02LjU1IDcuNTJhOS41IDkuNSAwIDAwLTIuNzguNTUgMTIuNDEgMTIuNDEgMCAwMDExLjkxIDEyLjIyYy43My0yLjI2LjY2LTMuNTQuMzEtMy43OGE2LjY2IDYuNjYgMCAwMC0yLjQ2LS43MmgtLjIyYy0uMzIgMC0uNjUgMC0uNjguMTJhMS45IDEuOSAwIDAxLTEuMjcgMS4zNGwtLjIxLjA3LS4xNS0uMTVhMTMuNDQgMTMuNDQgMCAwMS0zLjktNEw3IDEzYTEuNjggMS42OCAwIDAxMS0xLjdjLjEyLS4wNy4zMy0uMTguMjUtLjc1di0uMjJhNi44NCA2Ljg0IDAgMDAtLjctMi41NGMtLjItLjE4LS41NS0uMjctMS0uMjd6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC10b29sIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik03LjcgNWEzLjEgMy4xIDAgMDExLjcuNSAzLjEgMy4xIDAgMDExLjYgMyAzIDMgMCAwMC44IDIuNGw2LjMgNi4zYTEgMSAwIDAxLjIgMS4zIDEgMSAwIDAxLS44LjUuOS45IDAgMDEtLjctLjNsLTYuNC02LjRhMyAzIDAgMDAtMi4xLS44aC0uNmEyLjggMi44IDAgMDEtMi4yLTFoMi43VjYuNEg1LjFhMi43IDIuNyAwIDAxMS4xLTFBMi44IDIuOCAwIDAxNy43IDVtMC0xYTQuNiA0LjYgMCAwMC0yIC41IDQuMSA0LjEgMCAwMC0yLjEgMi45aDMuNnYyLjFIMy43YTUuNCA1LjQgMCAwMDEgMS44IDQuNCA0LjQgMCAwMDMgMS4yaC42YTIuNCAyLjQgMCAwMTEuNC41bDYuNCA2LjRhMiAyIDAgMDAxLjQuNiAxLjkgMS45IDAgMDAxLjYtLjkgMiAyIDAgMDAtLjMtMi42bC02LjMtNi4zYTEuOCAxLjggMCAwMS0uNS0xLjYgNC40IDQuNCAwIDAwLTItNEE0LjYgNC42IDAgMDA3LjcgNHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC10d2l0dGVyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNOC4wOCAyMGExMC45MyAxMC45MyAwIDAwMTEtMTF2LS41YTggOCAwIDAwMS45Mi0yIDcuODUgNy44NSAwIDAxLTIuMjIuNjFBMy44OSAzLjg5IDAgMDAyMC40OCA1YTggOCAwIDAxLTIuNDguOTEgMy44NyAzLjg3IDAgMDAtNi41OSAzLjUyIDExIDExIDAgMDEtOC00IDMuODUgMy44NSAwIDAwMS4xOSA1LjE2IDMuNzYgMy43NiAwIDAxLTEuNzUtLjQ4QTMuODcgMy44NyAwIDAwNiAxMy45MWEzLjczIDMuNzMgMCAwMS0xIC4xNCA0LjMgNC4zIDAgMDEtLjczLS4wNSAzLjg3IDMuODcgMCAwMDMuNjEgMi42OCA3LjczIDcuNzMgMCAwMS00LjggMS42NiA3IDcgMCAwMS0uOTItLjA2QTEwLjkgMTAuOSAwIDAwOC4wOCAyMCIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtdHdpdHRlci1zcXVhcmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0xOS41IDIyaC0xNUEyLjUgMi41IDAgMDEyIDE5LjV2LTE1QTIuNSAyLjUgMCAwMTQuNSAyaDE1QTIuNSAyLjUgMCAwMTIyIDQuNXYxNWEyLjUgMi41IDAgMDEtMi41IDIuNXptLTkuODItNC45MkE3LjI0IDcuMjQgMCAwMDE3IDkuNzl2LS4zM2E1LjIyIDUuMjIgMCAwMDEuMjgtMS4zMyA1LjIyIDUuMjIgMCAwMS0xLjQ4LjQgMi41NiAyLjU2IDAgMDAxLjE0LTEuNDIgNC45MyA0LjkzIDAgMDEtMS42NC42MiAyLjUzIDIuNTMgMCAwMC0xLjg2LS44MSAyLjU3IDIuNTcgMCAwMC0yLjU3IDIuNTdjLjAwMy4xOTUuMDI2LjM5LjA3LjU4YTcuMjYgNy4yNiAwIDAxLTUuMzItMi42OCAyLjU5IDIuNTkgMCAwMC44IDMuNDMgMi43OCAyLjc4IDAgMDEtMS4xNi0uMzIgMi41NyAyLjU3IDAgMDAyLjA1IDIuNTIgMi40NiAyLjQ2IDAgMDEtMS4xNS4wNCAyLjU1IDIuNTUgMCAwMDIuMzkgMS43OEE1LjEzIDUuMTMgMCAwMTYuMzcgMTZhNi4wOCA2LjA4IDAgMDEtLjYxIDAgNy4yMyA3LjIzIDAgMDAzLjkyIDEuMTR2LS4wNnoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXVubG9ja2VkIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNi41IDEySDE2VjZhNCA0IDAgMDAtOCAwdjNoMVY2YTMgMyAwIDAxNiAwdjZINy41YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjYuOEExLjEgMS4xIDAgMDA3LjUgMjFoOWExLjEgMS4xIDAgMDAxLjEtMS4xdi02LjhhMS4xIDEuMSAwIDAwLTEuMS0xLjF6bS4xIDcuOWEuMS4xIDAgMDEtLjEuMWgtOWEuMS4xIDAgMDEtLjEtLjF2LTYuOGg5LjJ6TTEzIDE1LjVhLjguOCAwIDAxLS41Ljh2MS41aC0xdi0xLjVhLjguOCAwIDAxLS41LS44IDEgMSAwIDAxMiAweiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXVwbG9hZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC40IDcuM2wtLjctLjdMMTIgMi4zbDQuMyA0LjMtLjcuNy0zLjEtMy4xdjkuM2gtMVY0LjJ6TTE5IDEydjcuNWEuNS41IDAgMDEtLjUuNWgtMTNhLjUuNSAwIDAxLS41LS41VjEySDR2Ny41QTEuNSAxLjUgMCAwMDUuNSAyMWgxM2ExLjUgMS41IDAgMDAxLjUtMS41VjEyeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXVzZXIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDEzYTQgNCAwIDAwNC00VjZhNCA0IDAgMDAtOCAwdjNhNCA0IDAgMDA0IDR6TTkgNmEzIDMgMCAwMTYgMHYzYTMgMyAwIDAxLTYgMHptMTEgMTZoLTFhNyA3IDAgMDAtMTQgMEg0YTggOCAwIDAxMTYgMHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC12aWRlbyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTcuNSA3LjNWNkExLjUgMS41IDAgMDAxNiA0LjVINS41QTEuNSAxLjUgMCAwMDQgNnY4YTEuNSAxLjUgMCAwMDEuNSAxLjVoMy40TDcuNCAyMWgxbDEuNi01LjVoMS44bDEuNiA1LjVoMWwtMS42LTUuNUgxNmExLjUgMS41IDAgMDAxLjUtMS41di0xLjNsNCAxLjVWNS44em0zIDUuNWwtNC0xLjVWMTRhLjUuNSAwIDAxLS41LjVINS41QS41LjUgMCAwMTUgMTRWNmEuNS41IDAgMDEuNS0uNUgxNmEuNS41IDAgMDEuNS41djIuN2w0LTEuNXpNMiA4aDF2NEgyeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXdhcm5pbmciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyLjUgMTdoLTFWMmgxem0wIDNoLTF2MmgxeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXdhcm5pbmctY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiAyYTEwIDEwIDAgMTAxMCAxMEExMCAxMCAwIDAwMTIgMnptMCAxOWE5IDkgMCAxMTktOSA5IDkgMCAwMS05IDl6bS0uNS02LjhWNS43aDEuMnY4LjV6bS0uMSAyLjNoMS4ydjEuOGgtMS4yeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXdoYXRzYXBwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNMTkuMDkgNC42M2ExMCAxMCAwIDAwLTE1LjY4IDEyTDIgMjEuOGw1LjI4LTEuMzhBMTAgMTAgMCAwMDEyIDIxLjYzYTEwIDEwIDAgMDA3LjA1LTE3aC4wNHpNMTIgMjBhOC4xOCA4LjE4IDAgMDEtNC4yMS0xLjE2bC0uMzEtLjE4LTMuMTMuODMuODQtMy4wNi0uMTktLjM2QTguMjggOC4yOCAwIDExMTIgMjB6bTQuNTQtNi4yYy0uMjUtLjEzLTEuNDctLjczLTEuNy0uODEtLjIzLS4wOC0uMzktLjEzLS41Ni4xMi0uMjQ2LjM0Ny0uNTEuNjgtLjc5IDEtLjE0LjE2LS4yOS4xOC0uNTQuMDZhNi45MiA2LjkyIDAgMDEtMi0xLjIzIDcuMjcgNy4yNyAwIDAxLTEuMzgtMS43M2MtLjE1LS4yNSAwLS4zOC4xMS0uNTFzLjI1LS4yOS4zNy0uNDNhMS41MSAxLjUxIDAgMDAuMjUtLjQyLjQ2LjQ2IDAgMDAwLS40M2MtLjA0LS4yLS41NC0xLjQyLS43NS0xLjkyLS4yMS0uNS0uNC0uNDItLjU2LS40M2gtLjQ3YTEgMSAwIDAwLS42Ny4zMUEyLjgxIDIuODEgMCAwMDcgOS40NSA0LjczIDQuNzMgMCAwMDggMTJhMTEgMTEgMCAwMDQuMjUgMy43NmMuNDY0LjIuOTM4LjM3OCAxLjQyLjUzYTMuMjggMy4yOCAwIDAwMS41Ni4wOSAyLjU0IDIuNTQgMCAwMDEuNjgtMS4xOCAyLjA5IDIuMDkgMCAwMC4xNS0xLjJjLS4wNi0uMDctLjIzLS4xMy0uNDgtLjI1bC0uMDQuMDV6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC13aGF0c2FwcC1zcXVhcmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0xNiA4LjA3YTUuMzQgNS4zNCAwIDAwLTkuMTEgMy43NyA1LjI4IDUuMjggMCAwMC44MiAyLjg0bC4xMi4yLS41MyAyIDItLjUzLjIuMTFjLjgyLjQ5IDEuNzU2Ljc1IDIuNzEuNzVBNS4zNCA1LjM0IDAgMDAxNiA4LjA3em0tLjgzIDUuODNhMS42NiAxLjY2IDAgMDEtMS4wOC43NiAyLjIzIDIuMjMgMCAwMS0xLS4wNmMtLjIzLS4wOC0uNTMtLjE4LS45MS0uMzRhNy4xNiA3LjE2IDAgMDEtMi43OC0yLjQyIDMuMTMgMy4xMyAwIDAxLS42Ni0xLjY2IDEuODMgMS44MyAwIDAxLjU2LTEuMzQuNTkuNTkgMCAwMS40My0uMkgxMGMuMSAwIC4yMyAwIC4zNi4yNy4xMy4yNy40NSAxLjExLjQ5IDEuMTlhLjMuMyAwIDAxMCAuMjggMS4yIDEuMiAwIDAxLS4xNi4yN2MtLjA4LjEtLjE3LjIxLS4yNC4yOC0uMDcuMDctLjE3LjE3LS4wNy4zMy4yMzkuNDEzLjU0Ljc4Ny44OSAxLjExLjM4LjM0LjgxNi42MTIgMS4yOS44LjE2LjA4LjI1LjA2LjM0IDAgLjA5LS4wNi40LS40Ny41MS0uNjMuMTEtLjE2LjIxLS4xNC4zNi0uMDguMTUuMDYuOTQuNDQgMS4xLjUyLjE2LjA4LjI2LjEyLjMuMTlhMS4zNiAxLjM2IDAgMDEtLjAzLjczaC4wM3oiLz48cGF0aCBkPSJNMjEgNy4wOWE4LjI2IDguMjYgMCAwMC0uMDktMS4xNSAzLjQ5IDMuNDkgMCAwMC0xLjg1LTIuNTEgMy44OSAzLjg5IDAgMDAtMS0uMzJBOC4zNiA4LjM2IDAgMDAxNi45MSAzSDcuMDlhOC4yNiA4LjI2IDAgMDAtMS4xNS4wOUEzLjQ5IDMuNDkgMCAwMDMuNDMgNWEzLjg5IDMuODkgMCAwMC0uMzIgMUE4LjM2IDguMzYgMCAwMDMgNy4wOXY5LjgyYy4wMDMuMzg1LjAzMy43Ny4wOSAxLjE1QTMuNDkgMy40OSAwIDAwNSAyMC41N2EzLjg5IDMuODkgMCAwMDEgLjMyYy4zODQuMDYuNzcxLjA5NCAxLjE2LjFoOS44MmE4LjI2IDguMjYgMCAwMDEuMTUtLjA5IDMuNDkgMy40OSAwIDAwMi41MS0xLjg1IDMuODkgMy44OSAwIDAwLjMyLTEgOC4zNiA4LjM2IDAgMDAuMS0xLjE2VjcuNTdjLS4wNi0uMS0uMDYtLjMxLS4wNi0uNDh6bS04LjggMTEuMTdhNi4zOSA2LjM5IDAgMDEtMy4wNi0uNzhsLTMuNDEuODkuOTItMy4zMmE2LjMzIDYuMzMgMCAwMS0uODYtMy4yMSA2LjQxIDYuNDEgMCAwMTExLTQuNTMgNi4zMyA2LjMzIDAgMDExLjg4IDQuNTQgNi40MiA2LjQyIDAgMDEtNi40NyA2LjQxeiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQteW91dHViZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTIxLjU2IDcuMmEyLjUgMi41IDAgMDAtMS43Ni0xLjc3QzE4LjI0IDUgMTIgNSAxMiA1cy02LjI0IDAtNy44LjQyQTIuNSAyLjUgMCAwMDIuNDQgNy4yIDI1LjcyIDI1LjcyIDAgMDAyIDEyYy0uMDEgMS42MS4xMyAzLjIxNy40MiA0LjhhMi41IDIuNSAwIDAwMS43OCAxLjc3QzUuNzYgMTkgMTIgMTkgMTIgMTlzNi4yNCAwIDcuOC0uNDJhMi41IDIuNSAwIDAwMS43Ni0xLjc3QTI1LjcyIDI1LjcyIDAgMDAyMiAxMmEyNS43MiAyNS43MiAwIDAwLS40NC00Ljh6TTEwIDE1VjlsNS4xOSAzTDEwIDE1eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtem9vbS1pbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAuNCA5LjVoMy4zdjFoLTMuM3YzLjJoLTF2LTMuMkg2LjJ2LTFoMy4yVjYuMmgxem0xMC43IDEyLjRMMTUuMyAxNmE4LjMgOC4zIDAgMDEtNS4zIDIgOCA4IDAgMTE4LTggOC4zIDguMyAwIDAxLTIgNS4zbDUuOSA1Ljh6TTE3IDEwYTcgNyAwIDEwLTcgNyA3IDcgMCAwMDctN3oiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC16b29tLW91dCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNi4yIDkuNWg3LjV2MUg2LjJ6bTE0LjkgMTIuNEwxNS4zIDE2YTguMyA4LjMgMCAwMS01LjMgMiA4IDggMCAxMTgtOCA4LjMgOC4zIDAgMDEtMiA1LjNsNS45IDUuOHpNMTcgMTBhNyA3IDAgMTAtNyA3IDcgNyAwIDAwNy03eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48L2RlZnM+PC9zdmc+';
+
+	var propTypes$1c = {
+	  className: propTypes.string,
+	  color: propTypes.string,
+	  size: propTypes.string,
+	  icon: propTypes.string,
+	  padding: propTypes.bool
+	};
+	var defaultProps$17 = {
+	  color: '',
+	  size: '',
+	  icon: '',
+	  padding: false
+	};
+
+	var Icon = function Icon(_ref) {
+	  var _classNames;
+
+	  var color = _ref.color,
+	      size = _ref.size,
+	      icon = _ref.icon,
+	      className = _ref.className,
+	      padding = _ref.padding,
+	      attributes = _objectWithoutPropertiesLoose$1(_ref, ["color", "size", "icon", "className", "padding"]);
+
+	  var classes = classnames('icon', className, (_classNames = {}, _classNames["icon-" + color] = color, _classNames["icon-" + size] = size, _classNames['icon-padded'] = padding, _classNames), size);
+	  return React__default.createElement("svg", _extends$1({
+	    className: classes
+	  }, attributes), React__default.createElement("use", {
+	    xlinkHref: iconSprite + "#" + icon
+	  }));
+	};
+
+	Icon.propTypes = propTypes$1c;
+	Icon.defaultProps = defaultProps$17;
+
+	var propTypes$1d = {
+	  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
+	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
+
+	  /** Classi aggiuntive da usare per il componente HeaderBrand */
+	  className: propTypes.string,
+
+	  /** Da usare per la sovrascrittura di classi predefinite */
+	  cssModule: propTypes.object,
+
+	  /** Da usare con il componente Header Nav in versione "responsive" */
+	  responsive: propTypes.bool,
+
+	  /** Da utilizzare per specificare URL risorsa esterna. */
+	  href: propTypes.string,
+
+	  /** Icona da utilizzare nel componente. Utilizzata unicamente quando l'Header è di tipo Center.  */
+	  iconName: propTypes.string,
+
+	  /** Elementi React da renderizzare al proprio interno. */
+	  children: propTypes.oneOfType([propTypes.arrayOf(propTypes.node), propTypes.node])
+	};
+	var defaultProps$18 = {
+	  tag: 'a',
+	  responsive: false
+	};
+
+	var HeaderBrand =
+	/*#__PURE__*/
+	function (_PureComponent) {
+	  _inheritsLoose$1(HeaderBrand, _PureComponent);
+
+	  function HeaderBrand() {
+	    return _PureComponent.apply(this, arguments) || this;
+	  }
+
+	  var _proto = HeaderBrand.prototype;
+
+	  _proto.addChildClasses = function addChildClasses(child, i) {
+	    // convention here: first item is the main title, while others subtext
+	    var className = classnames(child.props.className, 'no_toc', {
+	      'd-none d-md-block': i
+	    } // subtext is anything but first element
+	    );
+	    var props = {
+	      className: className
+	    };
+	    return React__default.cloneElement(child, props);
+	  };
+
+	  _proto.render = function render() {
+	    var _this = this;
+
+	    var _this$props = this.props,
+	        className = _this$props.className,
+	        href = _this$props.href,
+	        iconName = _this$props.iconName,
+	        children = _this$props.children,
+	        responsive = _this$props.responsive,
+	        attributes = _objectWithoutPropertiesLoose$1(_this$props, ["className", "href", "iconName", "children", "responsive"]);
+
+	    var type = this.context.type;
+
+	    if (type !== CENTER) {
+	      var classes = classnames('d-lg-block', className, {
+	        'd-none': !responsive
+	      });
+	      return React__default.createElement(NavbarBrand, _extends$1({
+	        className: classes,
+	        href: href
+	      }, attributes), children);
+	    }
+
+	    return React__default.createElement("div", {
+	      className: "it-brand-wrapper"
+	    }, React__default.createElement("a", {
+	      href: href
+	    }, iconName && React__default.createElement(Icon, {
+	      icon: iconName
+	    }), React__default.createElement("div", {
+	      className: "it-brand-text"
+	    }, React__default.Children.map(children, function (child, i) {
+	      return _this.addChildClasses(child, i);
+	    }))));
+	  };
+
+	  return HeaderBrand;
+	}(React.PureComponent);
+
+	_defineProperty$2(HeaderBrand, "propTypes", propTypes$1d);
+
+	_defineProperty$2(HeaderBrand, "defaultProps", defaultProps$18);
+
+	_defineProperty$2(HeaderBrand, "contextType", HeaderContext);
+
+	var propTypes$1e = {
+	  /** Classi addizionali per il componente HeaderContent */
+	  className: propTypes.string,
+
+	  /** Da utilizzare per indicare che all'interno dell'Header verrà utilizzato un Megamenu */
+	  megamenu: propTypes.bool,
+
+	  /** Parametro per il controllo responsive del componente: valori Bootstrap standard sono "sm", "md", "lg", "xl" */
+	  expand: propTypes.oneOfType([propTypes.bool, propTypes.string])
+	};
+	var defaultProps$19 = {};
+
+	var HeaderContent =
+	/*#__PURE__*/
+	function (_PureComponent) {
+	  _inheritsLoose$1(HeaderContent, _PureComponent);
+
+	  function HeaderContent() {
+	    return _PureComponent.apply(this, arguments) || this;
+	  }
+
+	  var _proto = HeaderContent.prototype;
+
+	  _proto.render = function render() {
+	    var _this$props = this.props,
+	        className = _this$props.className,
+	        megamenu = _this$props.megamenu,
+	        attributes = _objectWithoutPropertiesLoose$1(_this$props, ["className", "megamenu"]);
+
+	    var type = this.context.type;
+	    var classes = classnames(className, {
+	      'it-header-slim-wrapper-content': type === SLIM,
+	      'it-header-center-content-wrapper': type === CENTER,
+	      navbar: type === NAVBAR,
+	      'has-megamenu': megamenu
+	    });
+	    var Content = type === NAVBAR ? React__default.createElement(Navbar, _extends$1({
+	      className: classes
+	    }, attributes)) : React__default.createElement("div", _extends$1({
+	      className: classes
+	    }, attributes));
+	    return React__default.createElement("div", {
+	      className: "container"
+	    }, React__default.createElement("div", {
+	      className: "row"
+	    }, React__default.createElement("div", {
+	      className: "col-12"
+	    }, Content)));
+	  };
+
+	  return HeaderContent;
+	}(React.PureComponent);
+
+	_defineProperty$2(HeaderContent, "propTypes", propTypes$1e);
+
+	_defineProperty$2(HeaderContent, "defaultProps", defaultProps$19);
+
+	_defineProperty$2(HeaderContent, "contextType", HeaderContext);
+
+	var propTypes$1f = {
+	  /** Classi addizionali per il componente HeaderLinkZone, applicata all'element "nav" annidato */
+	  className: propTypes.string
+	};
+	var defaultProps$1a = {};
+
+	var HeaderLinkZone = function HeaderLinkZone(_ref) {
+	  var className = _ref.className,
+	      attributes = _objectWithoutPropertiesLoose$1(_ref, ["className"]);
+
+	  var classes = classnames(className);
+	  return React__default.createElement("div", {
+	    className: "nav-mobile"
+	  }, React__default.createElement("nav", _extends$1({
+	    className: classes
+	  }, attributes)));
+	};
+
+	HeaderLinkZone.propTypes = propTypes$1f;
+	HeaderLinkZone.defaultProps = defaultProps$1a;
+
+	var propTypes$1g = {
+	  /** Classi addizionali per il componente HeaderRightZone */
+	  className: propTypes.string
+	};
+	var defaultProps$1b = {};
+
+	var HeaderRightZone =
+	/*#__PURE__*/
+	function (_PureComponent) {
+	  _inheritsLoose$1(HeaderRightZone, _PureComponent);
+
+	  function HeaderRightZone() {
+	    return _PureComponent.apply(this, arguments) || this;
+	  }
+
+	  var _proto = HeaderRightZone.prototype;
+
+	  _proto.render = function render() {
+	    var _this$props = this.props,
+	        className = _this$props.className,
+	        attributes = _objectWithoutPropertiesLoose$1(_this$props, ["className"]);
+
+	    var type = this.context.type;
+	    var classes = classnames(className, {
+	      // BI >= 1.3.6
+	      'it-header-slim-right-zone': type === SLIM,
+	      // BI < 1.3.6
+	      'header-slim-right-zone': type === SLIM,
+	      'it-right-zone': type !== SLIM
+	    });
+	    return React__default.createElement("div", _extends$1({
+	      className: classes
+	    }, attributes));
+	  };
+
+	  return HeaderRightZone;
+	}(React.PureComponent);
+
+	_defineProperty$2(HeaderRightZone, "propTypes", propTypes$1g);
+
+	_defineProperty$2(HeaderRightZone, "defaultProps", defaultProps$1b);
+
+	_defineProperty$2(HeaderRightZone, "contextType", HeaderContext);
+
+	var propTypes$1h = {
+	  /** Classi addizionali per il componente HeaderSearch */
+	  className: propTypes.string,
+
+	  /** Etichetta di testo da applicare all'elemento. In caso di stringa vuota non verrà mostrato alcun testo */
+	  label: propTypes.string,
+
+	  /** Nome dell'icona da utilizzare */
+	  iconName: propTypes.string,
+
+	  /** Indirizzo di indirizzamento al click dell'icona */
+	  href: propTypes.string
+	};
+	var defaultProps$1c = {
+	  iconName: 'it-search'
+	};
+
+	var HeaderSearch = function HeaderSearch(_ref) {
+	  var className = _ref.className,
+	      label = _ref.label,
+	      href = _ref.href,
+	      iconName = _ref.iconName,
+	      attributes = _objectWithoutPropertiesLoose$1(_ref, ["className", "label", "href", "iconName"]);
+
+	  var classes = classnames('it-search-wrapper', className);
+	  return React__default.createElement("div", _extends$1({
+	    className: classes
+	  }, attributes), label && React__default.createElement("span", {
+	    className: "d-none d-md-block"
+	  }, label), React__default.createElement("a", {
+	    className: "search-link rounded-icon",
+	    "aria-label": label,
+	    href: href
+	  }, React__default.createElement(Icon, {
+	    icon: iconName
+	  })));
+	};
+
+	HeaderSearch.propTypes = propTypes$1h;
+	HeaderSearch.defaultProps = defaultProps$1c;
+
+	var propTypes$1i = {
+	  /** Classi addizionali per il componente HeaderSocialsZone, verrà applicato all'elemento wrapper più esterno. */
+	  className: propTypes.string,
+
+	  /** Etichetta utilizzata per presentare i social presenti. In caso di stringa vuota non verrà mostrata alcuna etichetta */
+	  label: propTypes.string,
+
+	  /** Utilizzato per elencare i social da mostrare */
+	  children: propTypes.oneOfType([propTypes.arrayOf(propTypes.node), propTypes.node])
+	};
+	var defaultProps$1d = {};
+
+	var HeaderSocialsZone = function HeaderSocialsZone(_ref) {
+	  var className = _ref.className,
+	      children = _ref.children,
+	      label = _ref.label,
+	      attributes = _objectWithoutPropertiesLoose$1(_ref, ["className", "children", "label"]);
+
+	  var classes = classnames('it-socials d-none d-md-flex', className);
+	  return React__default.createElement("div", _extends$1({
+	    className: classes
+	  }, attributes), label && React__default.createElement("span", null, label), children);
+	};
+
+	HeaderSocialsZone.propTypes = propTypes$1i;
+	HeaderSocialsZone.defaultProps = defaultProps$1d;
+
+	var propTypes$1j = {
+	  /** Tipo di elemento DOM da utilizzare: di default "a" per Header Slim, "button" per altri tipi di Header.
+	   * Se fornito questo sovrascriverà il valore di default.
+	   */
+	  tag: propTypes.string,
+
+	  /** Indica l'attributo "type" sull'elemento DOM. Di default '' per Header Slim, "button" per altri tipi di Header.
+	   * Se fornito questo sovrascriverà il valore di default.
+	   */
+	  type: propTypes.string,
+
+	  /** Classi addizionali per il componente HeaderToggler */
+	  className: propTypes.string
+	};
+	var defaultProps$1e = {};
+
+	var HeaderToggler =
+	/*#__PURE__*/
+	function (_PureComponent) {
+	  _inheritsLoose$1(HeaderToggler, _PureComponent);
+
+	  function HeaderToggler() {
+	    return _PureComponent.apply(this, arguments) || this;
+	  }
+
+	  var _proto = HeaderToggler.prototype;
+
+	  _proto.render = function render() {
+	    var _this$props = this.props,
+	        className = _this$props.className,
+	        tag = _this$props.tag,
+	        type = _this$props.type,
+	        attributes = _objectWithoutPropertiesLoose$1(_this$props, ["className", "tag", "type"]);
+
+	    var HeaderType = this.context.type;
+	    var BUTTON = 'button';
+	    var defaultTag = HeaderType === SLIM ? 'a' : BUTTON;
+	    var defaultType = HeaderType === SLIM ? '' : BUTTON;
+	    var classes = classnames({
+	      'it-opener d-lg-none': HeaderType === SLIM,
+	      'custom-navbar-toggler': HeaderType === NAVBAR
+	    }, className);
+	    return React__default.createElement(NavbarToggler, _extends$1({
+	      className: classes
+	    }, attributes, {
+	      tag: tag || defaultTag,
+	      type: type || defaultType,
+	      href: "#"
+	    }));
+	  };
+
+	  return HeaderToggler;
+	}(React.PureComponent);
+
+	_defineProperty$2(HeaderToggler, "propTypes", propTypes$1j);
+
+	_defineProperty$2(HeaderToggler, "defaultProps", defaultProps$1e);
+
+	_defineProperty$2(HeaderToggler, "contextType", HeaderContext);
+
 	function Hero(props) {
 	  return React__default.createElement(Jumbotron, props);
 	}
 	Hero.defaultProps = Jumbotron.defaultProps;
 	Hero.propTypes = Jumbotron.propTypes;
 
-	var iconSprite = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctZG93biIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTcuOSAxMy4ybC01LjQgNS4zVjNoLTF2MTUuNWwtNS40LTUuMy0uNy43IDYuNiA2LjUgNi42LTYuNXpNMTIgMTl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctZG93bi1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE1LjYgMTMuMmwuNy43LTQuMyA0LjMtNC4zLTQuMy43LS43IDMuMSAzLjFWN2gxdjkuMnpNMjIgMTJBMTAgMTAgMCAxIDEgMTIgMmExMCAxMCAwIDAgMSAxMCAxMHptLTEgMGE5IDkgMCAxIDAtOSA5IDkgOSAwIDAgMCA5LTl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctZG93bi10cmlhbmdsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOS4yIDEyaDUuNmExIDEgMCAwIDEgLjcgMS43TDEyIDE3LjNsLTMuNS0zLjZhMSAxIDAgMCAxIC43LTEuN3oiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1hcnJvdy1sZWZ0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMSAxMS41SDUuNWw1LjMtNS40LS43LS43TDMuNiAxMmw2LjUgNi42LjctLjctNS4zLTUuNEgyMXpNNSAxMnoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1hcnJvdy1sZWZ0LWNpcmNsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNy43IDExLjVIMTd2MUg3LjhsMyAzLjEtLjcuN0w1LjggMTJsNC4zLTQuMy43Ljd6TTIyIDEyQTEwIDEwIDAgMSAxIDEyIDJhMTAgMTAgMCAwIDEgMTAgMTB6bS0xIDBhOSA5IDAgMSAwLTkgOSA5IDkgMCAwIDAgOS05eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWFycm93LWxlZnQtdHJpYW5nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDkuMnY1LjZhMSAxIDAgMCAxLTEuNy43TDYuOCAxMmwzLjUtMy41YTEgMSAwIDAgMSAxLjcuN3oiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1hcnJvdy1yaWdodCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTMuOSA1LjRsLS43LjcgNS4zIDUuNEgzdjFoMTUuNWwtNS4zIDUuNC43LjcgNi42LTYuNnpNMTkgMTJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctcmlnaHQtY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMy45IDcuN2w0LjMgNC4zLTQuMyA0LjMtLjctLjcgMy4xLTMuMUg3di0xaDkuMmwtMy0zLjF6TTIyIDEyQTEwIDEwIDAgMSAxIDEyIDJhMTAgMTAgMCAwIDEgMTAgMTB6bS0xIDBhOSA5IDAgMSAwLTkgOSA5IDkgMCAwIDAgOS05eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWFycm93LXJpZ2h0LXRyaWFuZ2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiAxNC44VjkuMmExIDEgMCAwIDEgMS43LS43bDMuNSAzLjUtMy41IDMuNWExIDEgMCAwIDEtMS43LS43eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWFycm93LXVwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xOC42IDEwLjFMMTIgMy41bC02LjYgNi42LjcuNyA1LjQtNS4zVjIxaDFWNS41bDUuNCA1LjN6TTEyIDV6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctdXAtY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiA1LjhsNC4zIDQuMy0uNy43LTMuMS0zLjFWMTdoLTFWNy44bC0zLjEgMy0uNy0uN3pNMjIgMTJBMTAgMTAgMCAxIDEgMTIgMmExMCAxMCAwIDAgMSAxMCAxMHptLTEgMGE5IDkgMCAxIDAtOSA5IDkgOSAwIDAgMCA5LTl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctdXAtdHJpYW5nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0LjggMTJIOS4yYTEgMSAwIDAgMS0uNy0xLjdMMTIgNi44bDMuNSAzLjVhMSAxIDAgMCAxLS43IDEuN3oiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1iZWhhbmNlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNNy44MyA1Ljc1YTggOCAwIDAgMSAxLjYuMTUgMy4zOCAzLjM4IDAgMCAxIDEuMjQuNTFjLjM0NS4yMzMuNjIuNTU0LjguOTMuMjAyLjQ1Ni4yOTguOTUyLjI4IDEuNDVhMi42OCAyLjY4IDAgMCAxLS40MiAxLjU0IDMuMDUgMy4wNSAwIDAgMS0xLjI1IDEgMi45MiAyLjkyIDAgMCAxIDEuNjggMS4xNWMuMzkzLjU5LjU5IDEuMjkuNTYgMmEzLjM5IDMuMzkgMCAwIDEtLjMyIDEuNTkgMy4wOCAzLjA4IDAgMCAxLTEgMS4xMSA0LjI3IDQuMjcgMCAwIDEtMS40LjY0QTYgNiAwIDAgMSA4IDE4SDJWNS43NWg1Ljgzem0tLjM1IDVhMiAyIDAgMCAwIDEuMTktLjM1Yy4zMjgtLjI3LjUtLjY4Ny40Ni0xLjExQTEuNDcgMS40NyAwIDAgMCA5IDguNTRhMS4xNiAxLjE2IDAgMCAwLS40Mi0uNDNBMS44IDEuOCAwIDAgMCA4IDcuOWEzLjI2IDMuMjYgMCAwIDAtLjctLjA2SDQuNzR2Mi44N2wyLjc0LjA0em0uMTUgNS4yMmMuMjUyLjAwMy41MDMtLjAyLjc1LS4wN2EyIDIgMCAwIDAgLjYyLS4zIDEuMzkgMS4zOSAwIDAgMCAuNDQtLjQ5IDEuNzMgMS43MyAwIDAgMCAuMTYtLjhBMS42NCAxLjY0IDAgMCAwIDkuMDkgMTNhMi4zMyAyLjMzIDAgMCAwLTEuNDEtLjRINC43NHYzLjM4bDIuODktLjAxem04LjU0LS4wOGEyLjE4IDIuMTggMCAwIDAgMS41OC41NCAyLjI0IDIuMjQgMCAwIDAgMS4yNS0uMzcgMS42IDEuNiAwIDAgMCAuNjUtLjc5aDIuMTVhNC4wNiA0LjA2IDAgMCAxLTEuNTggMi4yOSA0LjY0IDQuNjQgMCAwIDEtMi41OC42OSA1LjIzIDUuMjMgMCAwIDEtMS45LS4zMyA0IDQgMCAwIDEtMi4zMy0yLjQ0IDUuMjUgNS4yNSAwIDAgMS0uMzItMS44OSA1LjEyIDUuMTIgMCAwIDEgLjMzLTEuODYgNC4xNCA0LjE0IDAgMCAxIC45My0xLjQ5IDQuNDggNC40OCAwIDAgMSAxLjQ0LTEgNC41OSA0LjU5IDAgMCAxIDEuODUtLjM2IDQuMzEgNC4zMSAwIDAgMSAyIC40NEE0IDQgMCAwIDEgMjEgMTAuNWMuMzcuNTA1LjYzNiAxLjA4Ljc4IDEuNjlhNi4xOCA2LjE4IDAgMCAxIC4xNyAyaC02LjM4YTIuNSAyLjUgMCAwIDAgLjYgMS43ek0xOSAxMS4yMmExLjgzIDEuODMgMCAwIDAtMS4zOC0uNDkgMiAyIDAgMCAwLTEgLjIgMS44IDEuOCAwIDAgMC0uNjIuNDkgMS42MiAxLjYyIDAgMCAwLS4zMy42MiAyLjg3IDIuODcgMCAwIDAtLjExLjU5aDRhMi40IDIuNCAwIDAgMC0uNTYtMS40MXptLTMuOTMtNC42NWg0Ljk4djEuMjFoLTQuOThWNi41N3oiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWJ1cmdlciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjIgNXYxSDJWNXpNMiAxMi41aDIwdi0xSDJ6TTIgMTloMjB2LTFIMnoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1jYWxlbmRhciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAuNSA0SDE3VjNoLTF2MUg4VjNIN3YxSDMuNUExLjUgMS41IDAgMCAwIDIgNS41djEzQTEuNSAxLjUgMCAwIDAgMy41IDIwaDE3YTEuNSAxLjUgMCAwIDAgMS41LTEuNXYtMTNBMS41IDEuNSAwIDAgMCAyMC41IDR6bS41IDE0LjVhLjUuNSAwIDAgMS0uNS41aC0xN2EuNS41IDAgMCAxLS41LS41di0xM2EuNS41IDAgMCAxIC41LS41SDd2MWgxVjVoOHYxaDFWNWgzLjVhLjUuNSAwIDAgMSAuNS41ek00IDhoMTZ2MUg0eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWNhbWVyYSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAuNSAyMGgtMTdBMS41IDEuNSAwIDAgMSAyIDE4LjV2LTEwQTEuNSAxLjUgMCAwIDEgMy41IDdoNC4zbDEuNS0yLjNhMS41IDEuNSAwIDAgMSAxLjItLjdoM2ExLjUgMS41IDAgMCAxIDEuMi43TDE2LjIgN2g0LjNBMS41IDEuNSAwIDAgMSAyMiA4LjV2MTBhMS41IDEuNSAwIDAgMS0xLjUgMS41ek0zLjUgOGEuNS41IDAgMCAwLS41LjV2MTBhLjUuNSAwIDAgMCAuNS41aDE3YS41LjUgMCAwIDAgLjUtLjV2LTEwYS41LjUgMCAwIDAtLjUtLjVoLTQuOGwtMS44LTIuOC0uNC0uMmgtM2wtLjQuMkw4LjMgOHpNMTIgMThhNSA1IDAgMSAxIDUtNSA1IDUgMCAwIDEtNSA1em0wLTlhNCA0IDAgMSAwIDQgNCA0IDQgMCAwIDAtNC00ek03IDVINHYxaDN6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY2FyZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAuNSA1aC0xN0ExLjUgMS41IDAgMCAwIDIgNi41djExQTEuNSAxLjUgMCAwIDAgMy41IDE5aDE3YTEuNSAxLjUgMCAwIDAgMS41LTEuNXYtMTFBMS41IDEuNSAwIDAgMCAyMC41IDV6TTMgOWgxOHYzSDN6bTE4IDguNWEuNS41IDAgMCAxLS41LjVoLTE3YS41LjUgMCAwIDEtLjUtLjVWMTNoMTh6TTMgOFY2LjVhLjUuNSAwIDAgMSAuNS0uNWgxN2EuNS41IDAgMCAxIC41LjVWOHptNSA3SDR2LTFoNHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1jaGVjayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOS42IDE2LjlMNCAxMS40bC44LS43IDQuOCA0LjggOC41LTguNC43Ljd6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY2hlY2stY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNy4xIDcuOWwuNy43LTcuOCA3LjYtNC43LTQuNi43LS43IDQgMy45ek0yMiAxMkExMCAxMCAwIDEgMSAxMiAyYTEwIDEwIDAgMCAxIDEwIDEwem0tMSAwYTkgOSAwIDEgMC05IDkgOSA5IDAgMCAwIDktOXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1jaGV2cm9uLWxlZnQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0LjYgMTcuMkw5IDExLjYgMTQuNiA2bC44LjctNC45IDQuOSA0LjkgNC45eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY2hldnJvbi1yaWdodCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOS44IDE3LjJsLS44LS43IDQuOS00LjlMOSA2LjdsLjgtLjcgNS42IDUuNnoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWNsaXAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExIDIyYTIuOSAyLjkgMCAwIDEtMy0zVjZhNCA0IDAgMCAxIDggMHYxMGgtMVY2YTMgMyAwIDAgMC02IDB2MTNhMiAyIDAgMCAwIDQgMFY4YTEgMSAwIDAgMC0yIDB2OGgtMVY4YTIgMiAwIDAgMSA0IDB2MTFhMi45IDIuOSAwIDAgMS0zIDN6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY2xvY2siIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjUgNWgxdjcuNUg3di0xaDQuNXpNMjIgMTJBMTAgMTAgMCAxIDEgMTIgMmExMCAxMCAwIDAgMSAxMCAxMHptLTEgMGE5IDkgMCAxIDAtOSA5IDkgOSAwIDAgMCA5LTl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY2xvc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyLjcgMTJsMy43IDMuNi0uOC44LTMuNi0zLjctMy42IDMuNy0uOC0uOCAzLjctMy42LTMuNy0zLjYuOC0uOCAzLjYgMy43IDMuNi0zLjcuOC44eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWNsb3NlLWJpZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIuNyAxMmw2LjcgNi42LS44LjgtNi42LTYuNy02LjYgNi43LS44LS44IDYuNy02LjYtNi43LTYuNi44LS44IDYuNiA2LjcgNi42LTYuNy44Ljh6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY2xvc2UtY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNi4zIDguM0wxMi42IDEybDMuNyAzLjYtLjcuNy0zLjctMy42LTMuNiAzLjYtLjctLjcgMy42LTMuNi0zLjYtMy43LjctLjcgMy42IDMuNyAzLjctMy43ek0yMiAxMkExMCAxMCAwIDEgMSAxMiAyYTEwIDEwIDAgMCAxIDEwIDEwem0tMSAwYTkgOSAwIDEgMC05IDkgOSA5IDAgMCAwIDktOXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1jb2RlLWNpcmNsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkgMTJsLTIuOSAyLjktLjctLjggMi4xLTIuMS0yLjEtMi4xLjctLjh6TTcuOSA5LjFMNSAxMmwyLjkgMi45LjctLjhMNi41IDEybDIuMS0yLjF6TTIyIDEyQTEwIDEwIDAgMSAxIDEyIDJhMTAgMTAgMCAwIDEgMTAgMTB6bS0xIDBhOSA5IDAgMSAwLTkgOSA5IDkgMCAwIDAgOS05ek05LjYgMTYuNWwxIC4zIDMuNy05LjMtLjktLjN6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY29sbGFwc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE2LjUgMTUuNGwtNC45LTQuOS00LjkgNC45LS43LS44TDExLjYgOWw1LjYgNS42eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY29tbWVudCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkgM0g1YTIgMiAwIDAgMC0yIDJ2MTBhMiAyIDAgMCAwIDIgMmgydjUuNGwxLjctMS43IDMuNy0zLjdIMTlhMiAyIDAgMCAwIDItMlY1YTIgMiAwIDAgMC0yLTJ6bTEgMTJhLjkuOSAwIDAgMS0xIDFoLTdsLTQgNHYtNEg1YS45LjkgMCAwIDEtMS0xVjVhLjkuOSAwIDAgMSAxLTFoMTRhLjkuOSAwIDAgMSAxIDF6TTkgMTBhLjkuOSAwIDAgMS0xIDEgLjkuOSAwIDAgMS0xLTEgLjkuOSAwIDAgMSAxLTEgLjkuOSAwIDAgMSAxIDF6bTQgMGExIDEgMCAwIDEtMiAwIDEgMSAwIDAgMSAyIDB6bTQgMGExIDEgMCAwIDEtMiAwIDEgMSAwIDAgMSAyIDB6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY29weSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkuNSA0SDE4di0uNkExLjUgMS41IDAgMCAwIDE2LjUgMmgtMTFBMS41IDEuNSAwIDAgMCA0IDMuNHYxNS4yQTEuNSAxLjUgMCAwIDAgNS41IDIwSDd2LjZBMS41IDEuNSAwIDAgMCA4LjUgMjJoMTFhMS41IDEuNSAwIDAgMCAxLjUtMS40VjUuNEExLjUgMS41IDAgMCAwIDE5LjUgNHpNNSAxOC42VjMuNGEuNS41IDAgMCAxIC41LS40aDExYS41LjUgMCAwIDEgLjUuNHYxNS4yYS41LjUgMCAwIDEtLjUuNGgtMTFhLjUuNSAwIDAgMS0uNS0uNHptMTUgMmEuNS41IDAgMCAxLS41LjRoLTExYS41LjUgMCAwIDEtLjUtLjRWMjBoOC41YTEuNSAxLjUgMCAwIDAgMS41LTEuNFY1aDEuNWEuNS41IDAgMCAxIC41LjR6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZGVzaWduZXJzLWl0YWxpYSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC42NjMgMjAuNjc1VjcuNjQxSDEyLjN2MTMuMDU3SDguNjYzdi0uMDIzek0yMi45NTIgMTAuNjFoLTMuMzI1djUuMzU3YzAgLjUzNC4wMjQuODgyLjA0OCAxLjExMy4wMjQuMjEuMTIuMzk1LjI4OS41NTcuMTY5LjE2Mi40MzQuMjMyLjc5NS4yMzJsMi4wNzItLjA0Ni4xNjkgMi43ODNjLTEuMjA1LjI1NS0yLjE0NS4zOTQtMi43NzEuMzk0LTEuNjM5IDAtMi43NDctLjM0OC0zLjMyNS0xLjA2Ny0uNjAzLS42OTYtLjg5Mi0xLjk5NC0uODkyLTMuODk2VjRoMy42Mzl2My42MThoMy4zMjV2Mi45OTJoLS4wMjR6bS0xOS43Ni45OTdjLS42MjYgMC0xLjE1Ni0uMjA5LTEuNTY1LS42MjZBMi4xMTMgMi4xMTMgMCAwIDEgMSA5LjQ1YzAtLjYwNC4yMTctMS4xMTQuNjAyLTEuNTMxLjQxLS40MTguOTQtLjYwMyAxLjU2Ny0uNjAzLjYyNiAwIDEuMTU2LjIwOCAxLjU2Ni42MjYuNDEuNDE3LjYwMi45MjcuNjAyIDEuNTU0IDAgLjYyNi0uMTkyIDEuMTEzLS42MDIgMS41My0uMzg2LjM3MS0uODkyLjU4LTEuNTQyLjU4eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZG93bmxvYWQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDE0LjJMNy43IDkuOWwuNy0uNyAzLjEgMy4xVjNoMXY5LjJsMy4xLTMgLjcuN3ptNy0yLjJ2Ny41YS41LjUgMCAwIDEtLjUuNWgtMTNhLjUuNSAwIDAgMS0uNS0uNVYxMkg0djcuNUExLjUgMS41IDAgMCAwIDUuNSAyMWgxM2ExLjUgMS41IDAgMCAwIDEuNS0xLjVWMTJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZXJyb3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjUgMTQuMlY1LjdoMS4ydjguNXptLS4xIDQuMWgxLjJ2LTEuOGgtMS4yek0yMiA3Ljl2OC4zTDE2LjEgMjJINy45TDIgMTYuMlY3LjlMNy45IDJoOC4yem0tMSAuNEwxNS43IDNIOC4zTDMgOC4zdjcuNUw4LjMgMjFoNy40bDUuMy01LjJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZXhjaGFuZ2UtY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiAyYTEwIDEwIDAgMSAwIDEwIDEwQTEwIDEwIDAgMCAwIDEyIDJ6bTAgMTlhOSA5IDAgMSAxIDktOSA5IDkgMCAwIDEtOSA5em01LjEtOC45bC44LjgtNC4zIDQuM2ExLjUgMS41IDAgMCAxLTEuMS40IDEuNSAxLjUgMCAwIDEtMS4xLS40TDkgMTQuN1YxN0g4di00aDR2MUg5LjdsMi40IDIuNWguOHptLTYtNC42bC00LjIgNC40LS44LS44IDQuMy00LjNhMS41IDEuNSAwIDAgMSAxLjEtLjQgMS41IDEuNSAwIDAgMSAxLjEuNEwxNSA5LjNWN2gxdjRoLTR2LTFoMi4zbC0yLjQtMi41aC0uOHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1leHBhbmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjYgMTUuNEw2IDkuOGwuNy0uOCA0LjkgNC45TDE2LjUgOWwuNy44eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZXh0ZXJuYWwtbGluayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjEgM3Y2aC0xVjQuN2wtNy42IDcuNy0uOC0uOEwxOS4zIDRIMTVWM3ptLTQgMTYuNWEuNS41IDAgMCAxLS41LjVoLTEyYS41LjUgMCAwIDEtLjUtLjV2LTEyYS41LjUgMCAwIDEgLjUtLjVIMTJWNkg0LjVBMS41IDEuNSAwIDAgMCAzIDcuNXYxMkExLjUgMS41IDAgMCAwIDQuNSAyMWgxMmExLjUgMS41IDAgMCAwIDEuNS0xLjVWMTJoLTF6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZmFjZWJvb2siIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0xMy41NSAyMnYtOS4xMWgzLjA3bC40Ni0zLjU2aC0zLjUzVjcuMDVjMC0xIC4yOS0xLjczIDEuNzctMS43M2gxLjg3VjIuMTRBMjUuMTQgMjUuMTQgMCAwIDAgMTQuNDUgMmMtMi43MiAwLTQuNTggMS42Ni00LjU4IDQuN3YyLjYySDYuODF2My41N2gzLjA2VjIyaDMuNjh6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1mYWNlYm9vay1zcXVhcmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0yMCAzSDRhMSAxIDAgMCAwLTEgMXYxNmExIDEgMCAwIDAgMSAxaDguNjN2LTYuOTVoLTIuMzd2LTIuNzRoMi4zNHYtMmEzLjI4IDMuMjggMCAwIDEgMy41LTMuNmMuNzA1IDAgMS40MS4wNCAyLjExLjEydjIuNDRoLTEuNDRjLTEuMTMgMC0xLjM0LjUzLTEuMzQgMS4zMnYxLjc0aDIuN2wtLjM1IDIuNzJoLTIuMzV2N0gyMGExIDEgMCAwIDAgMS0xVjRhMSAxIDAgMCAwLTEtMXoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWZpbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0LjcgMkg2LjVBMS41IDEuNSAwIDAgMCA1IDMuNXYxN0ExLjUgMS41IDAgMCAwIDYuNSAyMmgxMWExLjUgMS41IDAgMCAwIDEuNS0xLjVWNi4zem0uMyAxLjdMMTcuMyA2aC0xLjhhLjUuNSAwIDAgMS0uNS0uNXpNMTcuNSAyMWgtMTFhLjUuNSAwIDAgMS0uNS0uNXYtMTdhLjUuNSAwIDAgMSAuNS0uNUgxNHYyLjVBMS41IDEuNSAwIDAgMCAxNS41IDdIMTh2MTMuNWEuNS41IDAgMCAxLS41LjV6TTggOWg4djFIOHptMCAyaDh2MUg4em0wIDJoNHYxSDh6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZmlsZXMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE1LjcgMkg3LjVBMS41IDEuNSAwIDAgMCA2IDMuNVY0aC0uNUExLjUgMS41IDAgMCAwIDQgNS41djE1QTEuNSAxLjUgMCAwIDAgNS41IDIyaDExYTEuNSAxLjUgMCAwIDAgMS41LTEuNVYyMGguNWExLjUgMS41IDAgMCAwIDEuNS0xLjVWNi4zem0uMyAxLjdMMTguMyA2aC0xLjhhLjUuNSAwIDAgMS0uNS0uNXptMSAxNi44YS41LjUgMCAwIDEtLjUuNWgtMTFhLjUuNSAwIDAgMS0uNS0uNXYtMTVhLjUuNSAwIDAgMSAuNS0uNUg2djEzLjVBMS41IDEuNSAwIDAgMCA3LjUgMjBIMTd6bTEuNS0xLjVoLTExYS41LjUgMCAwIDEtLjUtLjV2LTE1YS41LjUgMCAwIDEgLjUtLjVIMTV2Mi41QTEuNSAxLjUgMCAwIDAgMTYuNSA3SDE5djExLjVhLjUuNSAwIDAgMS0uNS41ek05IDloOHYxSDl6bTAgMmg4djFIOXptMCAyaDR2MUg5eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWZsaWNrciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PGNpcmNsZSBjeD0iNi43MyIgY3k9IjEyIiByPSI0LjczIi8+PGNpcmNsZSBjeD0iMTcuMjciIGN5PSIxMiIgcj0iNC43MyIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZmxpY2tyLXNxdWFyZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTIwIDRhMy4yNiAzLjI2IDAgMCAwLTIuMzgtMUg2LjM4QTMuMjYgMy4yNiAwIDAgMCA0IDRhMy4yNiAzLjI2IDAgMCAwLTEgMi4zN3YxMS4yNUEzLjI2IDMuMjYgMCAwIDAgNCAyMGEzLjI2IDMuMjYgMCAwIDAgMi4zOSAxaDExLjI0QTMuMzggMy4zOCAwIDAgMCAyMSAxNy42MlY2LjM3QTMuMjYgMy4yNiAwIDAgMCAyMCA0em0tOS41NiA5Ljc3YTIuNSAyLjUgMCAwIDEtMy41MSAwIDIuNDkgMi40OSAwIDAgMSAwLTMuNTIgMi41IDIuNSAwIDAgMSAzLjUxIDAgMi40OSAyLjQ5IDAgMCAxIDAgMy41MnptNi42MSAwQTIuNDkgMi40OSAwIDAgMSAxMi44MiAxMmEyLjQ5IDIuNDkgMCAwIDEgNC4yNC0xLjc2IDIuNDkgMi40OSAwIDAgMSAwIDMuNTJsLS4wMS4wMXoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWZvbGRlciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAgNmgtOGwtMi0ySDRhMiAyIDAgMCAwLTIgMnYxMmEyIDIgMCAwIDAgMiAyaDE2YTIgMiAwIDAgMCAyLTJWOGEyIDIgMCAwIDAtMi0yem0xIDEyYS45LjkgMCAwIDEtMSAxSDRhLjkuOSAwIDAgMS0xLTFWNmEuOS45IDAgMCAxIDEtMWg1LjZsMS43IDEuNy4zLjNIMjBhLjkuOSAwIDAgMSAxIDF6TTQgOGgxNnYxSDR6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZ2l0aHViIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNMTIgMmExMCAxMCAwIDAgMC0zLjE2IDE5LjQ5Yy41LjA5LjY4LS4yMi42OC0uNDh2LTEuN0M2LjczIDE5LjkxIDYuMTQgMTggNi4xNCAxOEEyLjY5IDIuNjkgMCAwIDAgNSAxNi41Yy0uOTEtLjYyLjA3LS42MS4wNy0uNjFhMi4xMyAyLjEzIDAgMCAxIDEuNTMgMSAyLjE0IDIuMTQgMCAwIDAgMi45MS44MyAyLjE2IDIuMTYgMCAwIDEgLjYzLTEuMzRjLTIuMTQtLjIxLTQuNTItMS4wNy00LjUyLTQuOWEzLjg5IDMuODkgMCAwIDEgMS0yLjY5IDMuNTcgMy41NyAwIDAgMSAuMS0yLjY0cy44NC0uMjcgMi43NSAxYTkuNjMgOS42MyAwIDAgMSA1IDBjMS45MS0xLjI5IDIuNzUtMSAyLjc1LTEgLjM3LjgzNS40MDUgMS43OC4xIDIuNjRhMy44OSAzLjg5IDAgMCAxIDEgMi42OWMwIDMuODQtMi4zNCA0LjY4LTQuNTcgNC45My40ODIuNDkuNzMgMS4xNjQuNjggMS44NXYyLjc1YzAgLjMzLjE4LjU4LjY5LjQ4QTEwIDEwIDAgMCAwIDEyIDJ6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1oZWFyaW5nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMCA5YTYuOCA2LjggMCAwIDEtMy41IDZsLTIgMS4xYTMuMyAzLjMgMCAwIDAtMS41IDIuN0EzLjIgMy4yIDAgMCAxIDkuOCAyMmgtLjZhMy40IDMuNCAwIDAgMS0zLTIuMWwuOS0uNUEyLjMgMi4zIDAgMCAwIDkuMiAyMWguNmEyLjEgMi4xIDAgMCAwIDEuNi0uNyAyIDIgMCAwIDAgLjYtMS41IDQgNCAwIDAgMSAyLTMuNWwyLTEuMkE1LjkgNS45IDAgMCAwIDE5IDlhNiA2IDAgMCAwLTYtNiA2IDYgMCAwIDAtNC44IDIuNGwtLjgtLjZBNyA3IDAgMCAxIDEzIDJhNyA3IDAgMCAxIDcgN3pNNy41IDEyQTUuNSA1LjUgMCAwIDAgMiA2LjV2MWE0LjUgNC41IDAgMCAxIDAgOXYxQTUuNSA1LjUgMCAwIDAgNy41IDEyek01IDEyYTIuOSAyLjkgMCAwIDAtMy0zdjFhMiAyIDAgMCAxIDAgNHYxYTIuOSAyLjkgMCAwIDAgMy0zem01IDBhOCA4IDAgMCAwLTgtOHYxYTcgNyAwIDAgMSAwIDE0djFhOCA4IDAgMCAwIDgtOHptNS45LjNhNC41IDQuNSAwIDAgMCAxLjItMy4yIDQuNSA0LjUgMCAwIDAtMS4yLTMuMiA0LjUgNC41IDAgMCAwLTMuMi0xLjRBNC44IDQuOCAwIDAgMCA5LjUgNmwtLjMuMy4yLjNhOC44IDguOCAwIDAgMSAxLjMgM3YuNGguNGExLjUgMS41IDAgMCAxIDAgM3YxYTIuNSAyLjUgMCAwIDAgMi41LTIuNSAyLjYgMi42IDAgMCAwLTItMi41IDguNSA4LjUgMCAwIDAtMS4xLTIuNiAzLjkgMy45IDAgMCAxIDIuMi0uOSAzLjUgMy41IDAgMCAxIDIuNCAxIDMuNSAzLjUgMCAwIDEgMSAyLjYgMy41IDMuNSAwIDAgMS0xIDIuNnoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1oZWxwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMi44IDIyaC0xLjR2LTIuMWgxLjR6bS0uMS00LjloLTEuMmE5LjcgOS43IDAgMCAxLS4xLTEuNyAyLjcgMi43IDAgMCAxIC4zLTEuMiA1LjYgNS42IDAgMCAxIC43LTEuM2wyLjMtMi4xYTkuNiA5LjYgMCAwIDAgMS44LTIuMSA0LjUgNC41IDAgMCAwIC41LTIuMyAzIDMgMCAwIDAtMS4xLTIuNiA2LjIgNi4yIDAgMCAwLTMuNC0uNyAyMi45IDIyLjkgMCAwIDAtMy42LjVsLTEgLjMtLjItMS4yaC4xYTE4LjEgMTguMSAwIDAgMSA0LjctLjggNy40IDcuNCAwIDAgMSA0LjMgMSA0LjIgNC4yIDAgMCAxIDEuNCAzLjUgNSA1IDAgMCAxLS41IDIuNyA4LjYgOC42IDAgMCAxLTEuOSAyLjIgMTkuNyAxOS43IDAgMCAwLTEuOCAxLjYgNi4yIDYuMiAwIDAgMC0uOSAxLjIgMi4zIDIuMyAwIDAgMC0uNCAxLjR6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtaGVscC1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDJhMTAgMTAgMCAxIDAgMTAgMTBBMTAgMTAgMCAwIDAgMTIgMnptMCAxOWE5IDkgMCAxIDEgOS05IDkgOSAwIDAgMS05IDl6bS0xLjItNC41SDEydjEuOGgtMS4yem00LjUtOGE0LjIgNC4yIDAgMCAxLS4zIDEuOCA1LjQgNS40IDAgMCAxLTEuMyAxLjRMMTIuMyAxM2EyLjggMi44IDAgMCAwLS40IDEuMnYuNkgxMWEzIDMgMCAwIDEtLjItMSAyLjEgMi4xIDAgMCAxIC41LTEuMiA5IDkgMCAwIDEgMS40LTEuNCA2LjQgNi40IDAgMCAwIDEuMi0xLjMgMi42IDIuNiAwIDAgMCAuMy0xLjQgMS43IDEuNyAwIDAgMC0uNi0xLjQgMy41IDMuNSAwIDAgMC0yLS40TDkuMyA3aC0uNXYtLjhhMTAuMiAxMC4yIDAgMCAxIDMtLjUgNC45IDQuOSAwIDAgMSAyLjcuNiAyLjcgMi43IDAgMCAxIC44IDIuMnoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1ob3JuIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik01IDlhMyAzIDAgMCAwIDAgNmguNUw3IDE5LjNBMi41IDIuNSAwIDAgMCA5LjMgMjFoLjJhMS40IDEuNCAwIDAgMCAxLjItLjYgMS40IDEuNCAwIDAgMCAuMi0xLjRsLTEuMy00aDEuOGw4LjYgMy44VjQuN0wxMS40IDl6bTUgMTAuM2EuNy43IDAgMCAxLS4xLjVsLS40LjJoLS4yYTEuNSAxLjUgMCAwIDEtMS40LTFsLTEuMy00aDEuOXpNNSAxNGEyIDIgMCAwIDEgMC00aDZ2NHptMTQgMy4ybC03LTNWOS44bDctMy41ek0yMiA5djZoLTFWOXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1pbmZvLWNpcmNsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMmExMCAxMCAwIDEgMCAxMCAxMEExMCAxMCAwIDAgMCAxMiAyem0wIDE5YTkgOSAwIDEgMSA5LTkgOSA5IDAgMCAxLTkgOXptLS43LTE1aDEuNXYyaC0xLjV6bTAgM2gxLjV2OWgtMS41eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWluc3RhZ3JhbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTEyIDQuNjJsLS4wMS4wOEg4LjM1YTUuMTIgNS4xMiAwIDAgMC0xLjY3LjMxYy0uMzguMTUtLjcyLjM4Mi0xIC42OC0uMjk4LjI4LS41My42Mi0uNjggMWE1LjEyIDUuMTIgMCAwIDAtLjMgMS42OHY3LjI4Yy4wMS41Ny4xMTQgMS4xMzQuMzEgMS42Ny4xNS4zOC4zODIuNzIuNjggMSAuMjguMjk4LjYyLjUzIDEgLjY4LjUzNi4xOTYgMS4xLjMgMS42Ny4zMS45NS4wNSAxLjI0LjA1IDMuNjQuMDUgMi40IDAgMi42NC0uMDUgMy42NC0uMDVhNS4xMiA1LjEyIDAgMCAwIDEuNjctLjMxQTMuMDggMy4wOCAwIDAgMCAxOSAxNy4zMWE1LjEyIDUuMTIgMCAwIDAgLjMtMS42OGMuMDUtLjk1LjA1LTEuMjQuMDUtMy42NCAwLTIuNC0uMDUtMi42NC0uMDUtMy42NGE1LjEyIDUuMTIgMCAwIDAtLjMxLTEuNjcgMi43NyAyLjc3IDAgMCAwLS42OC0xIDIuNzcgMi43NyAwIDAgMC0xLS42OCA1LjEyIDUuMTIgMCAwIDAtMS42Ny0uMzhIMTJ6TTEyIDN2LjA1aDMuNzFhNi45IDYuOSAwIDAgMSAyLjE5LjQyIDQuNjQgNC42NCAwIDAgMSAyLjY4IDIuNjNBNi45IDYuOSAwIDAgMSAyMSA4LjI5YzAgLjk2LjA1IDEuMjcuMDUgMy43MVMyMSAxNC43MSAyMSAxNS43MWE2LjkgNi45IDAgMCAxLS40NyAyLjI0IDQuNjQgNC42NCAwIDAgMS0yLjYzIDIuNjMgNi45IDYuOSAwIDAgMS0yLjE5LjQyYy0uOTYuMDUtMS4yNy4wNS0zLjcxLjA1UzkuMjkgMjEgOC4yOSAyMWE2LjkgNi45IDAgMCAxLTIuMTktLjQ3IDQuNjQgNC42NCAwIDAgMS0yLjYzLTIuNjMgNi45IDYuOSAwIDAgMS0uNDItMi4xOVYxMiA4LjI5YTYuOSA2LjkgMCAwIDEgLjQyLTIuMTlBNC42NCA0LjY0IDAgMCAxIDYuMSAzLjQyIDYuOSA2LjkgMCAwIDEgOC4yOSAzSDEyem0wIDQuMzhhNC42MiA0LjYyIDAgMSAxIDAgOS4yNCA0LjYyIDQuNjIgMCAwIDEgMC05LjI0ek0xMiAxNWEzIDMgMCAxIDAgMC02IDMgMyAwIDAgMCAwIDZ6bTQuOC02LjcyYTEuMDggMS4wOCAwIDEgMSAwLTIuMTYgMS4wOCAxLjA4IDAgMCAxIDAgMi4xNnoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWtleSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTggMTBhMiAyIDAgMSAwIDIgMiAyIDIgMCAwIDAtMi0yem0wIDNhMSAxIDAgMSAxIDEtMSAuOS45IDAgMCAxLTEgMXptLTEtNmE1LjEgNS4xIDAgMCAwLTQuNiAzSDMuM2wtMiAyIDMgM0g3di0xaC4zbDEgMUgxMXYtMWgxLjRhNS4xIDUuMSAwIDAgMCA0LjYgMyA1IDUgMCAwIDAgMC0xMHptMCA5YTQuMSA0LjEgMCAwIDEtMy44LTIuN1YxM0gxMHYxSDguN2wtMS0xSDZ2MUg0LjdsLTItMiAxLTFoOS40di0uM0E0LjEgNC4xIDAgMCAxIDE3IDhhNCA0IDAgMCAxIDAgOHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1sZXNzLWNpcmNsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgM2E5IDkgMCAwIDEgNi4zNiAxNS4zNkE5IDkgMCAwIDEgNS42NCA1LjYyIDguOTMgOC45MyAwIDAgMSAxMiAzbTAtMWExMCAxMCAwIDEgMCA3LjA3IDIuOTNBOS45MyA5LjkzIDAgMCAwIDEyIDJ6Ii8+PHJlY3QgeD0iNyIgeT0iMTEuMjUiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxLjUiIHJ4PSIuNzUiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWxpbmsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjQgMTMuNGwtLjctLjdhMi45IDIuOSAwIDAgMCAuOS0yLjEgMi43IDIuNyAwIDAgMC0uOS0yLjFMOS4yIDQuOWEzLjIgMy4yIDAgMCAwLTQuMyAwIDMuMiAzLjIgMCAwIDAgMCA0LjNMNy44IDEybC0uNy43LTIuOS0yLjhhNC4yIDQuMiAwIDAgMSAwLTUuNyA0LjIgNC4yIDAgMCAxIDUuNyAwbDMuNSAzLjZhMy42IDMuNiAwIDAgMSAxLjIgMi44IDMuNiAzLjYgMCAwIDEtMS4yIDIuOHptNi40IDYuNGE0LjIgNC4yIDAgMCAwIDAtNS43bC0yLjktMi44LS43LjcgMi45IDIuOGEzLjIgMy4yIDAgMCAxIDAgNC4zIDMuMiAzLjIgMCAwIDEtNC4zIDBsLTMuNS0zLjZhMi43IDIuNyAwIDAgMS0uOS0yLjEgMi45IDIuOSAwIDAgMSAuOS0yLjFsLS43LS43YTMuNiAzLjYgMCAwIDAtMS4yIDIuOCAzLjYgMy42IDAgMCAwIDEuMiAyLjhsMy41IDMuNmEzLjggMy44IDAgMCAwIDIuOCAxLjEgMy45IDMuOSAwIDAgMCAyLjktMS4xem0tNi43LTYuNyIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWxpbmtlZGluIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNMTYuNTMgOC42OEEzLjk0IDMuOTQgMCAwIDAgMTMgMTAuNjJWOUg5LjM3djEyaDMuNzN2LTUuOTVjMC0xLjU3LjI5LTMuMDkgMi4yNC0zLjA5IDEuOTUgMCAxLjkzIDEuOCAxLjkzIDMuMTlWMjFIMjF2LTYuNmMwLTMuMjMtLjY5LTUuNzItNC40Ny01Ljcyek01LjE2IDNhMi4xNyAyLjE3IDAgMSAwIDIuMTYgMi4xOEEyLjE2IDIuMTYgMCAwIDAgNS4xNiAzek0zLjI5IDl2MTJIN1Y5SDMuMjl6bTEzLjI0LS4zQTMuOTQgMy45NCAwIDAgMCAxMyAxMC42MlY5SDkuMzd2MTJoMy43M3YtNS45NWMwLTEuNTcuMjktMy4wOSAyLjI0LTMuMDkgMS45NSAwIDEuOTMgMS44IDEuOTMgMy4xOVYyMUgyMXYtNi42YzAtMy4yMy0uNjktNS43Mi00LjQ3LTUuNzJ2LjAyek0zLjI5IDIxSDdWOUgzLjI5djEyek01LjE2IDNhMi4xNyAyLjE3IDAgMSAwIDIuMTYgMi4xOEEyLjE2IDIuMTYgMCAwIDAgNS4xNiAzeiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtbGlua2VkaW4tc3F1YXJlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNMTkuNjcgM0g0LjMzQTEuMzIgMS4zMiAwIDAgMCAzIDQuM3YxNS40QTEuMzIgMS4zMiAwIDAgMCA0LjMzIDIxaDE1LjM0QTEuMzIgMS4zMiAwIDAgMCAyMSAxOS43VjQuM0ExLjMyIDEuMzIgMCAwIDAgMTkuNjcgM3pNOC4zNCAxOC4zNEg1LjY3VjkuNzVoMi42N3Y4LjU5ek03IDguNTdBMS41NSAxLjU1IDAgMSAxIDguNTUgNyAxLjU0IDEuNTQgMCAwIDEgNyA4LjU3em0xMS4zNCA5Ljc3aC0yLjY3di00LjE4YzAtMSAwLTIuMjgtMS4zOS0yLjI4cy0xLjYgMS4wOS0xLjYgMi4yMXY0LjI1SDEwVjkuNzVoMi41NnYxLjE3YTIuODMgMi44MyAwIDAgMSAyLjUzLTEuMzljMi43IDAgMy4yIDEuNzggMy4yIDQuMWwuMDUgNC43MXoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWxpc3QiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQgMTJhLjkuOSAwIDAgMS0xIDEgMSAxIDAgMCAxIDAtMiAuOS45IDAgMCAxIDEgMXpNMyA0LjVhLjkuOSAwIDAgMC0xIDEgLjkuOSAwIDAgMCAxIDEgLjkuOSAwIDAgMCAxLTEgLjkuOSAwIDAgMC0xLTF6bTAgMTNhMSAxIDAgMCAwIDAgMiAxIDEgMCAwIDAgMC0yek02IDV2MWgxNlY1em0wIDcuNWgxNnYtMUg2ek02IDE5aDE2di0xSDZ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtbG9jayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTguNSA4LjVIMTdWOEE1IDUgMCAwIDAgNyA4di41SDUuNUExLjUgMS41IDAgMCAwIDQgMTB2OC41QTEuNSAxLjUgMCAwIDAgNS41IDIwaDEzYTEuNSAxLjUgMCAwIDAgMS41LTEuNVYxMGExLjUgMS41IDAgMCAwLTEuNS0xLjV6TTggOGE0IDQgMCAwIDEgOCAwdi41SDh6bTExIDEwLjVhLjUuNSAwIDAgMS0uNS41aC0xM2EuNS41IDAgMCAxLS41LS41VjEwYS41LjUgMCAwIDEgLjUtLjVoMTNhLjUuNSAwIDAgMSAuNS41eiIvPjxwYXRoIGQ9Ik0xMiAxMy4yNWExIDEgMCAxIDEtMSAxIDEgMSAwIDAgMSAxLTFtMC0xYTIgMiAwIDEgMCAyIDIgMiAyIDAgMCAwLTItMnoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWxvY2tlZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYuNSAxMkgxNlY3YTQgNCAwIDAgMC04IDB2NWgtLjVhMS4xIDEuMSAwIDAgMC0xLjEgMS4xdjYuOEExLjEgMS4xIDAgMCAwIDcuNSAyMWg5YTEuMSAxLjEgMCAwIDAgMS4xLTEuMXYtNi44YTEuMSAxLjEgMCAwIDAtMS4xLTEuMXpNOSA3YTMgMyAwIDAgMSA2IDB2NUg5em03LjYgMTIuOWEuMS4xIDAgMCAxLS4xLjFoLTlhLjEuMSAwIDAgMS0uMS0uMXYtNi44aDkuMnpNMTMgMTUuNWEuOC44IDAgMCAxLS41Ljh2MS41aC0xdi0xLjVhLjguOCAwIDAgMS0uNS0uOCAxIDEgMCAwIDEgMiAweiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LW1haWwiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwLjUgNWgtMTdBMS41IDEuNSAwIDAgMCAyIDYuNXYxMUExLjUgMS41IDAgMCAwIDMuNSAxOWgxN2ExLjUgMS41IDAgMCAwIDEuNS0xLjV2LTExQTEuNSAxLjUgMCAwIDAgMjAuNSA1em0tLjMgMWwtNy4xIDcuMmExLjYgMS42IDAgMCAxLTIuMiAwTDMuOCA2ek0zIDE3LjNWNi42TDguMyAxMnptLjcuN0w5IDEyLjdsMS4yIDEuMmEyLjcgMi43IDAgMCAwIDMuNiAwbDEuMi0xLjIgNS4zIDUuM3ptMTItNkwyMSA2LjZ2MTAuN3oiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1tZWRpdW0iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik01IDcuNjNBLjcyLjcyIDAgMCAwIDQuODIgN0wzLjEzIDV2LS4zaDUuMjJsNCA4Ljg0IDMuNTQtOC44NGg1VjVsLTEuNDIgMS40YS40My40MyAwIDAgMC0uMTYuNHYxMC4xMmEuNDUuNDUgMCAwIDAgLjE2LjQxbDEuNCAxLjM3di4zaC03di0uM2wxLjQ1LTEuNDFjLjE0LS4xNC4xNC0uMTguMTQtLjRWOC43MUwxMS4zNyAxOWgtLjU1TDYuMTIgOC43MXY2Ljg4YS45My45MyAwIDAgMCAuMjYuNzlsMS44OSAyLjI5VjE5SDIuOTF2LS4zbDEuODktMi4zMmEuOTIuOTIgMCAwIDAgLjItLjc5VjcuNjN6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1tZWRpdW0tc3F1YXJlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNMyAzaDE4djE4SDNWM3ptNC4zIDExLjM2YS42NC42NCAwIDAgMS0uMTcuNTRsLTEuMjcgMS41NHYuMmgzLjZ2LS4yTDguMTkgMTQuOWEuNjcuNjcgMCAwIDEtLjE5LS41NFY5Ljc0bDMuMTYgNi45aC4zN2wyLjcxLTYuOXY1LjVjMCAuMTUgMCAuMTctLjA5LjI3bC0xIDF2LjJoNC43NHYtLjJsLS44OS0uOThhLjI3LjI3IDAgMCAxLS4xMS0uMjd2LTYuOGEuMjguMjggMCAwIDEgLjExLS4yN2wxLS45M3YtLjJoLTMuMzlMMTIuMjMgMTMgOS41MiA3LjA2SDZ2LjJsMS4xNCAxLjM2QS41LjUgMCAwIDEgNy4zIDl2NS4zNnoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LW1pbnVzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMCAxMi41SDR2LTFoMTZ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtbWludXMtY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02LjkgMTEuNWgxMHYxaC0xMHpNMjIgMTJBMTAgMTAgMCAxIDEgMTIgMmExMCAxMCAwIDAgMSAxMCAxMHptLTEgMGE5IDkgMCAxIDAtOSA5IDkgOSAwIDAgMCA5LTl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtbW9yZS1hY3Rpb25zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02IDEwYTIgMiAwIDEgMCAyIDIgMiAyIDAgMCAwLTItMnptMCAzYTEgMSAwIDAgMSAwLTIgMSAxIDAgMCAxIDAgMnptNi0zYTIgMiAwIDEgMCAyIDIgMiAyIDAgMCAwLTItMnptMCAzYTEgMSAwIDEgMSAxLTEgLjkuOSAwIDAgMS0xIDF6bTYtM2EyIDIgMCAxIDAgMiAyIDIgMiAwIDAgMC0yLTJ6bTAgM2ExIDEgMCAxIDEgMS0xIC45LjkgMCAwIDEtMSAxeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LW1vcmUtaXRlbXMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDE4YTEgMSAwIDEgMS0xIDEgLjkuOSAwIDAgMSAxLTFtMC0xYTIgMiAwIDEgMCAyIDIgMiAyIDAgMCAwLTItMnptMC02YTEgMSAwIDEgMS0xIDEgLjkuOSAwIDAgMSAxLTFtMC0xYTIgMiAwIDEgMCAyIDIgMiAyIDAgMCAwLTItMnptMC02YS45LjkgMCAwIDEgMSAxIDEgMSAwIDAgMS0yIDAgLjkuOSAwIDAgMSAxLTFtMC0xYTIgMiAwIDEgMCAyIDIgMiAyIDAgMCAwLTItMnoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1ub3RlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xOC41IDRoLTEzQTEuNSAxLjUgMCAwIDAgNCA1LjV2MTNBMS41IDEuNSAwIDAgMCA1LjUgMjBoMTAuMmw0LjMtNC4zVjUuNUExLjUgMS41IDAgMCAwIDE4LjUgNHpNNSAxOC41di0xM2EuNS41IDAgMCAxIC41LS41aDEzYS41LjUgMCAwIDEgLjUuNVYxNWgtMi41YTEuNSAxLjUgMCAwIDAtMS41IDEuNVYxOUg1LjVhLjUuNSAwIDAgMS0uNS0uNXpNMTguMyAxNkwxNiAxOC4zdi0xLjhhLjUuNSAwIDAgMSAuNS0uNXpNMTYgOUg4VjhoOHptMCAySDh2LTFoOHptLTIgMXYxSDh2LTF6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtcGEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTMgMjFoMTh2MUgzem0wLTFoMTh2LTFIM3pNMjIgOUgybDEwLTd6TTUuMiA4aDEzLjZMMTIgMy4yek02IDE4di04SDV2OHptNCAwdi04SDl2OHptNSAwdi04aC0xdjh6bTQgMHYtOGgtMXY4eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXBhc3N3b3JkLWludmlzaWJsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUgMTJhMy4yIDMuMiAwIDAgMC0uNy0xLjlsLjQtMS4xYTQuMiA0LjIgMCAwIDEgMS4zIDMgNCA0IDAgMCAxLTMuOSA0bC40LTEuMUEyLjkgMi45IDAgMCAwIDE1IDEyek0zLjEgMTJBOS44IDkuOCAwIDAgMSAxMiA2LjVoLjRsLjQtLjlIMTJhMTAuOSAxMC45IDAgMCAwLTkuOCA2TDIgMTJsLjIuNWExMSAxMSAwIDAgMCA2LjEgNS4zbC4zLS45QTkuOCA5LjggMCAwIDEgMy4xIDEyem0xOC43LS41YTExIDExIDAgMCAwLTYuMS01LjNsLS4zLjlhOS44IDkuOCAwIDAgMSA1LjUgNC45IDkuOCA5LjggMCAwIDEtOC45IDUuNWgtLjRsLS40LjloLjhhMTAuOSAxMC45IDAgMCAwIDkuOC02bC4yLS40ek0xMS41IDkuMWwuNC0xLjFBNCA0IDAgMCAwIDggMTJhNC4yIDQuMiAwIDAgMCAxLjMgM2wuNC0xLjFBMy4yIDMuMiAwIDAgMSA5IDEyYTIuOSAyLjkgMCAwIDEgMi41LTIuOXptMy4xLTUuN0w4LjUgMjAuM2wuOS4zIDYuMS0xNi45eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXBhc3N3b3JkLXZpc2libGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIxLjggMTEuNWExMSAxMSAwIDAgMC0xOS42IDBMMiAxMmwuMi41YTExIDExIDAgMCAwIDE5LjYgMGwuMi0uNXptLTkuOCA2QTkuOCA5LjggMCAwIDEgMy4xIDEyIDkuOCA5LjggMCAwIDEgMTIgNi41YTkuOCA5LjggMCAwIDEgOC45IDUuNSA5LjggOS44IDAgMCAxLTguOSA1LjV6TTEyIDhhNCA0IDAgMSAwIDQgNCA0IDQgMCAwIDAtNC00em0wIDdhMyAzIDAgMSAxIDMtMyAyLjkgMi45IDAgMCAxLTMgM3oiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1wZW5jaWwiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwLjUgMy41YTIuOSAyLjkgMCAwIDAtMi4xLS45IDMuMSAzLjEgMCAwIDAtMi4yLjlMNC42IDE1LjJsLTEgNS4yIDUuMi0xTDIwLjUgNy44YTMgMyAwIDAgMCAwLTQuM3ptLTUuNyAyLjhsLjctLjcgMi45IDIuOS0uNy43em0tLjcuOGwxLjEgMS04LjQgOC40LTEuMS0xLjF6TTUuNyAxOC4zYS43LjcgMCAwIDAtLjYtLjNsLjMtMS41IDIuMSAyLjEtMS41LjNhLjcuNyAwIDAgMC0uMy0uNnptMi45IDBsLTEuMS0xLjEgOC40LTguNCAxIDEuMXpNMTkuOCA3LjFsLS43LjctMi45LTIuOS43LS43YTIuMiAyLjIgMCAwIDEgMS41LS42IDIgMiAwIDAgMSAxLjQuNiAyLjEgMi4xIDAgMCAxIDAgMi45eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXBpbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTguMSAxNEwxNSAxMC4zVjQuNkwxNi4zIDJINy43TDkgNC42djUuN0w1LjkgMTRoNS42djhoMXYtOHpNMTAgNWg0djVoLTR6bTQuNy0ybC0uNSAxSDkuOGwtLjUtMXptLTUgOGg0LjZsMS42IDJIOC4xeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXBsdXMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwIDEyLjVoLTcuNVYyMGgtMXYtNy41SDR2LTFoNy41VjRoMXY3LjVIMjB6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtcGx1cy1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyLjQgMTEuNWg0LjV2MWgtNC41VjE3aC0xdi00LjVINi45di0xaDQuNVY3aDF6bTkuNi41QTEwIDEwIDAgMSAxIDEyIDJhMTAgMTAgMCAwIDEgMTAgMTB6bS0xIDBhOSA5IDAgMSAwLTkgOSA5IDkgMCAwIDAgOS05eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXByZXNlbnRhdGlvbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNCA1djEwLjZBMi40IDIuNCAwIDAgMCA2LjQgMThoMy4xbC0xLjEgNGgxbDEuMS00aDIuN2wxLjIgNGgxbC0xLjItNGgzLjVhMi4zIDIuMyAwIDAgMCAyLjMtMi4zVjV6bTE1IDEwLjdhMS4zIDEuMyAwIDAgMS0xLjMgMS4zSDYuNEExLjQgMS40IDAgMCAxIDUgMTUuNlY2aDE0ek0yMSAzdjFIM1Yzem0tOSAxM2E0LjUgNC41IDAgMSAwLTQuNS00LjVBNC41IDQuNSAwIDAgMCAxMiAxNnptLS41LTcuOVYxMUg4LjZhMy40IDMuNCAwIDAgMSAyLjktMi45em0xIDMuOVY4YTMuNSAzLjUgMCAwIDEtLjUgNyAzLjQgMy40IDAgMCAxLTMuNC0zeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXByaW50IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMSA5LjVBMS41IDEuNSAwIDAgMCAxOS41IDhIMTdWM0g3djVINC41QTEuNSAxLjUgMCAwIDAgMyA5LjVWMTZoMnYzaDJ2MmgxMHYtMmgydi0zaDJ6TTggNGg4djRIOHpNNiAxOHYtNGgxdjR6bTEwIDJIOHYtNmg4djZ6bTItMmgtMXYtNGgxdjR6bTItM2gtMXYtMkg1djJINFY5LjVhLjUuNSAwIDAgMSAuNS0uNWgxNWEuNS41IDAgMCAxIC41LjV6TTYgMTFoNHYxSDZ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtc2VhcmNoIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMS45IDIxLjFMMTYgMTUuM2E4LjMgOC4zIDAgMCAwIDItNS4zIDggOCAwIDEgMC04IDggOC4zIDguMyAwIDAgMCA1LjMtMmw1LjggNS45ek0xMCAxN2E3IDcgMCAxIDEgNy03IDcgNyAwIDAgMS03IDd6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtc2V0dGluZ3MiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDcuNWE0LjUgNC41IDAgMSAwIDQuNSA0LjVBNC41IDQuNSAwIDAgMCAxMiA3LjV6bTAgOGEzLjUgMy41IDAgMSAxIDMuNS0zLjUgMy41IDMuNSAwIDAgMS0zLjUgMy41em05LjgtMS42QTEyLjMgMTIuMyAwIDAgMCAyMiAxMmExMi4zIDEyLjMgMCAwIDAtLjItMS45bC0yLjEtLjNhOC43IDguNyAwIDAgMC0uNy0xLjdsMS4zLTEuN2E4LjcgOC43IDAgMCAwLTIuNy0yLjdMMTUuOSA1bC0xLjctLjctLjMtMi4xTDEyIDJsLTEuOS4yLS4zIDIuMS0xLjcuNy0xLjctMS4zYTguNyA4LjcgMCAwIDAtMi43IDIuN0w1IDguMWE4LjcgOC43IDAgMCAwLS43IDEuN2wtMi4xLjNBMTIuMyAxMi4zIDAgMCAwIDIgMTJhMTIuMyAxMi4zIDAgMCAwIC4yIDEuOWwyLjEuM2E4LjcgOC43IDAgMCAwIC43IDEuN2wtMS4zIDEuN2E4LjcgOC43IDAgMCAwIDIuNyAyLjdMOC4xIDE5bDEuNy43LjMgMi4xIDEuOS4yIDEuOS0uMi4zLTIuMSAxLjctLjcgMS43IDEuM2E4LjcgOC43IDAgMCAwIDIuNy0yLjdMMTkgMTUuOWE4LjcgOC43IDAgMCAwIC43LTEuN3ptLTIuOS0uN2wtLjIuN2EzLjkgMy45IDAgMCAxLS42IDEuNWwtLjMuNi40LjUuOCAxLjFhOS4zIDkuMyAwIDAgMS0xLjQgMS40bC0xLjEtLjgtLjUtLjQtLjYuM2EzLjkgMy45IDAgMCAxLTEuNS42bC0uNy4ydi43bC0uMiAxLjNoLTJsLS4yLTEuM3YtLjdsLS43LS4yYTMuOSAzLjkgMCAwIDEtMS41LS42bC0uNi0uMy0uNS40LTEuMS44QTkuMyA5LjMgMCAwIDEgNSAxNy42bC44LTEuMS40LS41LS4zLS42YTMuOSAzLjkgMCAwIDEtLjYtMS41bC0uMi0uN2gtLjdMMy4xIDEzYTMuNCAzLjQgMCAwIDEtLjEtMSAzLjQgMy40IDAgMCAxIC4xLTFsMS4zLS4yaC43bC4yLS43YTMuOSAzLjkgMCAwIDEgLjYtMS41bC4zLS42LS40LS41TDUgNi40IDYuNCA1bDEuMS44LjUuNC42LS4zYTMuOSAzLjkgMCAwIDEgMS41LS42bC43LS4ydi0uN2wuMi0xLjNoMmwuMiAxLjN2LjdsLjcuMmEzLjkgMy45IDAgMCAxIDEuNS42bC42LjMuNS0uNCAxLjEtLjhBOS4zIDkuMyAwIDAgMSAxOSA2LjRsLS44IDEuMS0uNC41LjMuNmEzLjkgMy45IDAgMCAxIC42IDEuNWwuMi43aC43bDEuMy4yYTMuNCAzLjQgMCAwIDEgLjEgMSAzLjQgMy40IDAgMCAxLS4xIDFsLTEuMy4yeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXNoYXJlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNy41IDE1YTIuNSAyLjUgMCAwIDAtMiAxbC03LjYtMy40QTEuMyAxLjMgMCAwIDAgOCAxMmExLjMgMS4zIDAgMCAwLS4xLS42TDE1LjUgOGEyLjUgMi41IDAgMSAwLS41LTEuNSAxLjMgMS4zIDAgMCAwIC4xLjZsLTcuNiAzLjRhMi41IDIuNSAwIDEgMCAwIDNsNy42IDMuNGExLjMgMS4zIDAgMCAwLS4xLjYgMi41IDIuNSAwIDEgMCAyLjUtMi41em0wLTEwQTEuNSAxLjUgMCAwIDEgMTkgNi41YTEuNSAxLjUgMCAwIDEtMyAwQTEuNSAxLjUgMCAwIDEgMTcuNSA1em0tMTIgOC41YTEuNSAxLjUgMCAwIDEgMC0zIDEuNSAxLjUgMCAwIDEgMCAzem0xMiA1LjVhMS41IDEuNSAwIDEgMSAxLjUtMS41IDEuNSAxLjUgMCAwIDEtMS41IDEuNXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1zdGFyLWZ1bGwiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDEuN0w5LjUgOS4ySDEuNkw4IDEzLjlsLTIuNCA3LjYgNi40LTQuNyA2LjQgNC43LTIuNC03LjYgNi40LTQuN2gtNy45TDEyIDEuN3oiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1zdGFyLW91dGxpbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDQuOWwxLjUgNC42LjIuN2g1LjdsLTQgMi45LS42LjQuMi43IDEuNSA0LjctMy45LTIuOS0uNi0uNC0uNi40LTMuOSAyLjlMOSAxNC4ybC4yLS43LS42LS40LTQtMi45aDUuN2wuMi0uN0wxMiA0LjltMC0zLjJMOS41IDkuMkgxLjZMOCAxMy45bC0yLjQgNy42IDYuNC00LjcgNi40IDQuNy0yLjQtNy42IDYuNC00LjdoLTcuOUwxMiAxLjd6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtdGVhbS1kaWdpdGFsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjMuNjQ4IDI0SC4zNTJBLjM1My4zNTMgMCAwIDEgMCAyMy42NDhWLjM1MkMwIC4xNTguMTU4IDAgLjM1MiAwaDIzLjI5NmMuMTk0IDAgLjM1Mi4xNTguMzUyLjM1MnYyMy4yOTZhLjM1My4zNTMgMCAwIDEtLjM1Mi4zNTJ6TTUuODE0IDExLjc5MmExLjU5NiAxLjU5NiAwIDEgMCAwLTMuMTkyIDEuNTk2IDEuNTk2IDAgMCAwIDAgMy4xOTJ6TTEwIDE4Ljk5NFYxOWg0LjQxOEMxOS4xMyAxOSAyMCAxNi42ODUgMjAgMTIuMjUzIDIwIDcuOTMgMTguOTk1IDYgMTQuNDE4IDZIMTB2MTIuOTk0em00LjQxOC0xMC43MDJjMi41ODYgMCAyLjgzOCAxLjExIDIuODM4IDMuOTU1IDAgMi44OS0uMjUyIDQuNDU1LTIuODM4IDQuNDU1aC0xLjc1NnYtOC40MWgxLjc1NnoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXRlbGVwaG9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNSAzaC4xOE0yMCAxMS41NkE3LjU5IDcuNTkgMCAwIDAgMTIuNDggNGgtLjA2YS40OS40OSAwIDAgMC0uNDkuNDguNS41IDAgMCAwIC40OS41MUE2LjYxIDYuNjEgMCAwIDEgMTkgMTEuNjJhLjUxLjUxIDAgMCAwIC41NC40Ni40OS40OSAwIDAgMCAuNDUtLjQ2cy4wMS0uMDQuMDEtLjA2eiIvPjxwYXRoIGQ9Ik0xNi45MyAxMS42OGE0LjUgNC41IDAgMCAwLTQuNDgtNC40OC41MS41MSAwIDAgMCAwIDEgMy41IDMuNSAwIDAgMSAzLjQ5IDMuNDkuNS41IDAgMCAwIC41LjUuNTEuNTEgMCAwIDAgLjUtLjUxek0xNS42OCAyMS4xOWExMy4zMiAxMy4zMiAwIDAgMS0xMi44LTEzLjEuOTIuOTIgMCAwIDEgLjYyLS44OGMxLjc0LS41NiA0LTEgNC43LjA2YTcuMzkgNy4zOSAwIDAgMSAuODUgMi45MXYuMjFhMS40OCAxLjQ4IDAgMCAxLS43IDEuNjguODEuODEgMCAwIDAtLjQ5LjcxIDEyLjU1IDEyLjU1IDAgMCAwIDMuMzggMy41MS44OC44OCAwIDAgMCAuNDgtLjU2Yy4wOS0uNTMuNTgtMSAxLjctLjg1aC4yMWE3IDcgMCAwIDEgMi44NS44N2MxIC43Mi42MiAzIC4wOSA0LjcyYTEgMSAwIDAgMS0uODkuNzJ6TTYuNTUgNy41MmE5LjUgOS41IDAgMCAwLTIuNzguNTUgMTIuNDEgMTIuNDEgMCAwIDAgMTEuOTEgMTIuMjJjLjczLTIuMjYuNjYtMy41NC4zMS0zLjc4YTYuNjYgNi42NiAwIDAgMC0yLjQ2LS43MmgtLjIyYy0uMzIgMC0uNjUgMC0uNjguMTJhMS45IDEuOSAwIDAgMS0xLjI3IDEuMzRsLS4yMS4wNy0uMTUtLjE1YTEzLjQ0IDEzLjQ0IDAgMCAxLTMuOS00TDcgMTNhMS42OCAxLjY4IDAgMCAxIDEtMS43Yy4xMi0uMDcuMzMtLjE4LjI1LS43NXYtLjIyYTYuODQgNi44NCAwIDAgMC0uNy0yLjU0Yy0uMi0uMTgtLjU1LS4yNy0xLS4yN3oiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXRvb2wiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTcuNyA1YTMuMSAzLjEgMCAwIDEgMS43LjUgMy4xIDMuMSAwIDAgMSAxLjYgMyAzIDMgMCAwIDAgLjggMi40bDYuMyA2LjNhMSAxIDAgMCAxIC4yIDEuMyAxIDEgMCAwIDEtLjguNS45LjkgMCAwIDEtLjctLjNsLTYuNC02LjRhMyAzIDAgMCAwLTIuMS0uOGgtLjZhMi44IDIuOCAwIDAgMS0yLjItMWgyLjdWNi40SDUuMWEyLjcgMi43IDAgMCAxIDEuMS0xQTIuOCAyLjggMCAwIDEgNy43IDVtMC0xYTQuNiA0LjYgMCAwIDAtMiAuNSA0LjEgNC4xIDAgMCAwLTIuMSAyLjloMy42djIuMUgzLjdhNS40IDUuNCAwIDAgMCAxIDEuOCA0LjQgNC40IDAgMCAwIDMgMS4yaC42YTIuNCAyLjQgMCAwIDEgMS40LjVsNi40IDYuNGEyIDIgMCAwIDAgMS40LjYgMS45IDEuOSAwIDAgMCAxLjYtLjkgMiAyIDAgMCAwLS4zLTIuNmwtNi4zLTYuM2ExLjggMS44IDAgMCAxLS41LTEuNiA0LjQgNC40IDAgMCAwLTItNEE0LjYgNC42IDAgMCAwIDcuNyA0eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXR3aXR0ZXIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik04LjA4IDIwYTEwLjkzIDEwLjkzIDAgMCAwIDExLTExdi0uNWE4IDggMCAwIDAgMS45Mi0yIDcuODUgNy44NSAwIDAgMS0yLjIyLjYxQTMuODkgMy44OSAwIDAgMCAyMC40OCA1YTggOCAwIDAgMS0yLjQ4LjkxIDMuODcgMy44NyAwIDAgMC02LjU5IDMuNTIgMTEgMTEgMCAwIDEtOC00IDMuODUgMy44NSAwIDAgMCAxLjE5IDUuMTYgMy43NiAzLjc2IDAgMCAxLTEuNzUtLjQ4QTMuODcgMy44NyAwIDAgMCA2IDEzLjkxYTMuNzMgMy43MyAwIDAgMS0xIC4xNCA0LjMgNC4zIDAgMCAxLS43My0uMDUgMy44NyAzLjg3IDAgMCAwIDMuNjEgMi42OCA3LjczIDcuNzMgMCAwIDEtNC44IDEuNjYgNyA3IDAgMCAxLS45Mi0uMDZBMTAuOSAxMC45IDAgMCAwIDguMDggMjAiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXR3aXR0ZXItc3F1YXJlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNMTkuNSAyMmgtMTVBMi41IDIuNSAwIDAgMSAyIDE5LjV2LTE1QTIuNSAyLjUgMCAwIDEgNC41IDJoMTVBMi41IDIuNSAwIDAgMSAyMiA0LjV2MTVhMi41IDIuNSAwIDAgMS0yLjUgMi41em0tOS44Mi00LjkyQTcuMjQgNy4yNCAwIDAgMCAxNyA5Ljc5di0uMzNhNS4yMiA1LjIyIDAgMCAwIDEuMjgtMS4zMyA1LjIyIDUuMjIgMCAwIDEtMS40OC40IDIuNTYgMi41NiAwIDAgMCAxLjE0LTEuNDIgNC45MyA0LjkzIDAgMCAxLTEuNjQuNjIgMi41MyAyLjUzIDAgMCAwLTEuODYtLjgxIDIuNTcgMi41NyAwIDAgMC0yLjU3IDIuNTdjLjAwMy4xOTUuMDI2LjM5LjA3LjU4YTcuMjYgNy4yNiAwIDAgMS01LjMyLTIuNjggMi41OSAyLjU5IDAgMCAwIC44IDMuNDMgMi43OCAyLjc4IDAgMCAxLTEuMTYtLjMyIDIuNTcgMi41NyAwIDAgMCAyLjA1IDIuNTIgMi40NiAyLjQ2IDAgMCAxLTEuMTUuMDQgMi41NSAyLjU1IDAgMCAwIDIuMzkgMS43OEE1LjEzIDUuMTMgMCAwIDEgNi4zNyAxNmE2LjA4IDYuMDggMCAwIDEtLjYxIDAgNy4yMyA3LjIzIDAgMCAwIDMuOTIgMS4xNHYtLjA2eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtdW5sb2NrZWQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE2LjUgMTJIMTZWNmE0IDQgMCAwIDAtOCAwdjNoMVY2YTMgMyAwIDAgMSA2IDB2Nkg3LjVhMS4xIDEuMSAwIDAgMC0xLjEgMS4xdjYuOEExLjEgMS4xIDAgMCAwIDcuNSAyMWg5YTEuMSAxLjEgMCAwIDAgMS4xLTEuMXYtNi44YTEuMSAxLjEgMCAwIDAtMS4xLTEuMXptLjEgNy45YS4xLjEgMCAwIDEtLjEuMWgtOWEuMS4xIDAgMCAxLS4xLS4xdi02LjhoOS4yek0xMyAxNS41YS44LjggMCAwIDEtLjUuOHYxLjVoLTF2LTEuNWEuOC44IDAgMCAxLS41LS44IDEgMSAwIDAgMSAyIDB6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtdXBsb2FkIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik04LjQgNy4zbC0uNy0uN0wxMiAyLjNsNC4zIDQuMy0uNy43LTMuMS0zLjF2OS4zaC0xVjQuMnpNMTkgMTJ2Ny41YS41LjUgMCAwIDEtLjUuNWgtMTNhLjUuNSAwIDAgMS0uNS0uNVYxMkg0djcuNUExLjUgMS41IDAgMCAwIDUuNSAyMWgxM2ExLjUgMS41IDAgMCAwIDEuNS0xLjVWMTJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtdXNlciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMTNhNCA0IDAgMCAwIDQtNFY2YTQgNCAwIDAgMC04IDB2M2E0IDQgMCAwIDAgNCA0ek05IDZhMyAzIDAgMCAxIDYgMHYzYTMgMyAwIDAgMS02IDB6bTExIDE2aC0xYTcgNyAwIDAgMC0xNCAwSDRhOCA4IDAgMCAxIDE2IDB6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtdmlkZW8iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE3LjUgNy4zVjZBMS41IDEuNSAwIDAgMCAxNiA0LjVINS41QTEuNSAxLjUgMCAwIDAgNCA2djhhMS41IDEuNSAwIDAgMCAxLjUgMS41aDMuNEw3LjQgMjFoMWwxLjYtNS41aDEuOGwxLjYgNS41aDFsLTEuNi01LjVIMTZhMS41IDEuNSAwIDAgMCAxLjUtMS41di0xLjNsNCAxLjVWNS44em0zIDUuNWwtNC0xLjVWMTRhLjUuNSAwIDAgMS0uNS41SDUuNUEuNS41IDAgMCAxIDUgMTRWNmEuNS41IDAgMCAxIC41LS41SDE2YS41LjUgMCAwIDEgLjUuNXYyLjdsNC0xLjV6TTIgOGgxdjRIMnoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC13YXJuaW5nIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMi41IDE3aC0xVjJoMXptMCAzaC0xdjJoMXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC13YXJuaW5nLWNpcmNsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMmExMCAxMCAwIDEgMCAxMCAxMEExMCAxMCAwIDAgMCAxMiAyem0wIDE5YTkgOSAwIDEgMSA5LTkgOSA5IDAgMCAxLTkgOXptLS41LTYuOFY1LjdoMS4ydjguNXptLS4xIDIuM2gxLjJ2MS44aC0xLjJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtd2hhdHNhcHAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0xOS4wOSA0LjYzYTEwIDEwIDAgMCAwLTE1LjY4IDEyTDIgMjEuOGw1LjI4LTEuMzhBMTAgMTAgMCAwIDAgMTIgMjEuNjNhMTAgMTAgMCAwIDAgNy4wNS0xN2guMDR6TTEyIDIwYTguMTggOC4xOCAwIDAgMS00LjIxLTEuMTZsLS4zMS0uMTgtMy4xMy44My44NC0zLjA2LS4xOS0uMzZBOC4yOCA4LjI4IDAgMSAxIDEyIDIwem00LjU0LTYuMmMtLjI1LS4xMy0xLjQ3LS43My0xLjctLjgxLS4yMy0uMDgtLjM5LS4xMy0uNTYuMTItLjI0Ni4zNDctLjUxLjY4LS43OSAxLS4xNC4xNi0uMjkuMTgtLjU0LjA2YTYuOTIgNi45MiAwIDAgMS0yLTEuMjMgNy4yNyA3LjI3IDAgMCAxLTEuMzgtMS43M2MtLjE1LS4yNSAwLS4zOC4xMS0uNTFzLjI1LS4yOS4zNy0uNDNhMS41MSAxLjUxIDAgMCAwIC4yNS0uNDIuNDYuNDYgMCAwIDAgMC0uNDNjLS4wNC0uMi0uNTQtMS40Mi0uNzUtMS45Mi0uMjEtLjUtLjQtLjQyLS41Ni0uNDNoLS40N2ExIDEgMCAwIDAtLjY3LjMxQTIuODEgMi44MSAwIDAgMCA3IDkuNDUgNC43MyA0LjczIDAgMCAwIDggMTJhMTEgMTEgMCAwIDAgNC4yNSAzLjc2Yy40NjQuMi45MzguMzc4IDEuNDIuNTNhMy4yOCAzLjI4IDAgMCAwIDEuNTYuMDkgMi41NCAyLjU0IDAgMCAwIDEuNjgtMS4xOCAyLjA5IDIuMDkgMCAwIDAgLjE1LTEuMmMtLjA2LS4wNy0uMjMtLjEzLS40OC0uMjVsLS4wNC4wNXoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXdoYXRzYXBwLXNxdWFyZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTE2IDguMDdhNS4zNCA1LjM0IDAgMCAwLTkuMTEgMy43NyA1LjI4IDUuMjggMCAwIDAgLjgyIDIuODRsLjEyLjItLjUzIDIgMi0uNTMuMi4xMWMuODIuNDkgMS43NTYuNzUgMi43MS43NUE1LjM0IDUuMzQgMCAwIDAgMTYgOC4wN3ptLS44MyA1LjgzYTEuNjYgMS42NiAwIDAgMS0xLjA4Ljc2IDIuMjMgMi4yMyAwIDAgMS0xLS4wNmMtLjIzLS4wOC0uNTMtLjE4LS45MS0uMzRhNy4xNiA3LjE2IDAgMCAxLTIuNzgtMi40MiAzLjEzIDMuMTMgMCAwIDEtLjY2LTEuNjYgMS44MyAxLjgzIDAgMCAxIC41Ni0xLjM0LjU5LjU5IDAgMCAxIC40My0uMkgxMGMuMSAwIC4yMyAwIC4zNi4yNy4xMy4yNy40NSAxLjExLjQ5IDEuMTlhLjMuMyAwIDAgMSAwIC4yOCAxLjIgMS4yIDAgMCAxLS4xNi4yN2MtLjA4LjEtLjE3LjIxLS4yNC4yOC0uMDcuMDctLjE3LjE3LS4wNy4zMy4yMzkuNDEzLjU0Ljc4Ny44OSAxLjExLjM4LjM0LjgxNi42MTIgMS4yOS44LjE2LjA4LjI1LjA2LjM0IDAgLjA5LS4wNi40LS40Ny41MS0uNjMuMTEtLjE2LjIxLS4xNC4zNi0uMDguMTUuMDYuOTQuNDQgMS4xLjUyLjE2LjA4LjI2LjEyLjMuMTlhMS4zNiAxLjM2IDAgMCAxLS4wMy43M2guMDN6Ii8+PHBhdGggZD0iTTIxIDcuMDlhOC4yNiA4LjI2IDAgMCAwLS4wOS0xLjE1IDMuNDkgMy40OSAwIDAgMC0xLjg1LTIuNTEgMy44OSAzLjg5IDAgMCAwLTEtLjMyQTguMzYgOC4zNiAwIDAgMCAxNi45MSAzSDcuMDlhOC4yNiA4LjI2IDAgMCAwLTEuMTUuMDlBMy40OSAzLjQ5IDAgMCAwIDMuNDMgNWEzLjg5IDMuODkgMCAwIDAtLjMyIDFBOC4zNiA4LjM2IDAgMCAwIDMgNy4wOXY5LjgyYy4wMDMuMzg1LjAzMy43Ny4wOSAxLjE1QTMuNDkgMy40OSAwIDAgMCA1IDIwLjU3YTMuODkgMy44OSAwIDAgMCAxIC4zMmMuMzg0LjA2Ljc3MS4wOTQgMS4xNi4xaDkuODJhOC4yNiA4LjI2IDAgMCAwIDEuMTUtLjA5IDMuNDkgMy40OSAwIDAgMCAyLjUxLTEuODUgMy44OSAzLjg5IDAgMCAwIC4zMi0xIDguMzYgOC4zNiAwIDAgMCAuMS0xLjE2VjcuNTdjLS4wNi0uMS0uMDYtLjMxLS4wNi0uNDh6bS04LjggMTEuMTdhNi4zOSA2LjM5IDAgMCAxLTMuMDYtLjc4bC0zLjQxLjg5LjkyLTMuMzJhNi4zMyA2LjMzIDAgMCAxLS44Ni0zLjIxIDYuNDEgNi40MSAwIDAgMSAxMS00LjUzIDYuMzMgNi4zMyAwIDAgMSAxLjg4IDQuNTQgNi40MiA2LjQyIDAgMCAxLTYuNDcgNi40MXoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXlvdXR1YmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0yMS41NiA3LjJhMi41IDIuNSAwIDAgMC0xLjc2LTEuNzdDMTguMjQgNSAxMiA1IDEyIDVzLTYuMjQgMC03LjguNDJBMi41IDIuNSAwIDAgMCAyLjQ0IDcuMiAyNS43MiAyNS43MiAwIDAgMCAyIDEyYy0uMDEgMS42MS4xMyAzLjIxNy40MiA0LjhhMi41IDIuNSAwIDAgMCAxLjc4IDEuNzdDNS43NiAxOSAxMiAxOSAxMiAxOXM2LjI0IDAgNy44LS40MmEyLjUgMi41IDAgMCAwIDEuNzYtMS43N0EyNS43MiAyNS43MiAwIDAgMCAyMiAxMmEyNS43MiAyNS43MiAwIDAgMC0uNDQtNC44ek0xMCAxNVY5bDUuMTkgM0wxMCAxNXoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXpvb20taW4iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEwLjQgOS41aDMuM3YxaC0zLjN2My4yaC0xdi0zLjJINi4ydi0xaDMuMlY2LjJoMXptMTAuNyAxMi40TDE1LjMgMTZhOC4zIDguMyAwIDAgMS01LjMgMiA4IDggMCAxIDEgOC04IDguMyA4LjMgMCAwIDEtMiA1LjNsNS45IDUuOHpNMTcgMTBhNyA3IDAgMSAwLTcgNyA3IDcgMCAwIDAgNy03eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXpvb20tb3V0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02LjIgOS41aDcuNXYxSDYuMnptMTQuOSAxMi40TDE1LjMgMTZhOC4zIDguMyAwIDAgMS01LjMgMiA4IDggMCAxIDEgOC04IDguMyA4LjMgMCAwIDEtMiA1LjNsNS45IDUuOHpNMTcgMTBhNyA3IDAgMSAwLTcgNyA3IDcgMCAwIDAgNy03eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48L2RlZnM+PC9zdmc+';
-
-	var propTypes$17 = {
-	  color: propTypes.string,
-	  size: propTypes.string,
-	  icon: propTypes.string
-	};
-	var defaultProps$13 = {
-	  color: '',
-	  size: '',
-	  icon: 'it-tool'
-	};
-
-	var Icon =
-	/*#__PURE__*/
-	function (_React$Component) {
-	  _inheritsLoose$1(Icon, _React$Component);
-
-	  function Icon() {
-	    return _React$Component.apply(this, arguments) || this;
-	  }
-
-	  var _proto = Icon.prototype;
-
-	  _proto.render = function render() {
-	    var _this$props = this.props,
-	        color = _this$props.color,
-	        size = _this$props.size;
-	    var classes = classnames('icon', color, size);
-	    var iconName = this.props.icon;
-	    return React__default.createElement("svg", {
-	      className: classes
-	    }, React__default.createElement("use", {
-	      xlinkHref: iconSprite + "#" + iconName
-	    }));
-	  };
-
-	  return Icon;
-	}(React__default.Component);
-
-	Icon.propTypes = propTypes$17;
-	Icon.defaultProps = defaultProps$13;
-
-	var mapToCssModules$2 = mapToCssModules,
+	var mapToCssModules$1 = mapToCssModules,
 	    deprecated$1 = deprecated,
 	    warnOnce$1 = warnOnce;
-	var propTypes$18 = {
+	var propTypes$1k = {
 	  children: propTypes.node,
 	  type: propTypes.string,
 	  size: propTypes.string,
@@ -9032,8 +9617,8 @@
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$14 = {
-	  type: "text"
+	var defaultProps$1f = {
+	  type: 'text'
 	};
 
 	var Input$1 =
@@ -9053,7 +9638,7 @@
 	    });
 
 	    _defineProperty$2(_assertThisInitialized$2(_this), "toggleBlurLabel", function (e) {
-	      if (e.target.value === "") {
+	      if (e.target.value === '') {
 	        _this.setState({
 	          isFocused: !_this.state.isFocused
 	        });
@@ -9102,18 +9687,18 @@
 	        bsSize = _this$props2.bsSize,
 	        valid = _this$props2.valid,
 	        invalid = _this$props2.invalid;
-	    var checkInput = ["radio", "checkbox"].indexOf(type) > -1;
-	    var isNotaNumber = new RegExp("\\D", "g");
-	    var fileInput = type === "file";
-	    var textareaInput = type === "textarea";
-	    var selectInput = type === "select";
-	    var Tag = tag || (selectInput || textareaInput ? type : "input");
-	    var formControlClass = "form-control";
-	    var infoTextControlClass = "form-text text-muted";
+	    var checkInput = ['radio', 'checkbox'].indexOf(type) > -1;
+	    var isNotaNumber = new RegExp('\\D', 'g');
+	    var fileInput = type === 'file';
+	    var textareaInput = type === 'textarea';
+	    var selectInput = type === 'select';
+	    var Tag = tag || (selectInput || textareaInput ? type : 'input');
+	    var formControlClass = 'form-control';
+	    var infoTextControlClass = 'form-text text-muted';
 
 	    if (plaintext || staticInput) {
 	      formControlClass = formControlClass + "-plaintext";
-	      Tag = tag || "p";
+	      Tag = tag || 'p';
 	    } else if (fileInput) {
 	      formControlClass = formControlClass + "-file";
 	    } else if (checkInput) {
@@ -9121,10 +9706,10 @@
 	        formControlClass = null;
 	      }
 	      /* Causes a regression with `bootstrap-italia`
-	      else {
-	          formControlClass = 'form-check-input';
-	      }
-	      */
+	            else {
+	                formControlClass = 'form-check-input';
+	            }
+	            */
 
 	    }
 
@@ -9132,10 +9717,10 @@
 	      infoTextControlClass = null;
 	    }
 
-	    if (state && typeof valid === "undefined" && typeof invalid === "undefined") {
-	      if (state === "danger") {
+	    if (state && typeof valid === 'undefined' && typeof invalid === 'undefined') {
+	      if (state === 'danger') {
 	        invalid = true;
-	      } else if (state === "success") {
+	      } else if (state === 'success') {
 	        valid = true;
 	      }
 	    }
@@ -9146,15 +9731,15 @@
 	      delete attributes.size;
 	    }
 
-	    var classes = mapToCssModules$2(classnames(className, invalid && "is-invalid", valid && "is-valid", bsSize ? "form-control-" + bsSize : false, formControlClass), cssModule);
-	    var wrapperClass = mapToCssModules$2(classnames(className, "form-group"), cssModule);
-	    var infoTextClass = mapToCssModules$2(classnames(className, valid ? 'valid-feedback' : false, invalid ? 'invalid-feedback' : false, infoTextControlClass));
+	    var classes = mapToCssModules$1(classnames(className, invalid && 'is-invalid', valid && 'is-valid', bsSize ? "form-control-" + bsSize : false, formControlClass), cssModule);
+	    var wrapperClass = mapToCssModules$1(classnames(className, 'form-group'), cssModule);
+	    var infoTextClass = mapToCssModules$1(classnames(className, valid ? 'valid-feedback' : false, invalid ? 'invalid-feedback' : false, infoTextControlClass));
 
-	    if (Tag === "input" || typeof tag !== "string") {
+	    if (Tag === 'input' || typeof tag !== 'string') {
 	      attributes.type = type;
 	    }
 
-	    if (attributes.children && !(plaintext || staticInput || type === "select" || typeof Tag !== "string" || Tag === "select")) {
+	    if (attributes.children && !(plaintext || staticInput || type === 'select' || typeof Tag !== 'string' || Tag === 'select')) {
 	      warnOnce$1("Input with a type of \"" + type + "\" cannot have children. Please use \"value\"/\"defaultValue\" instead.");
 	      delete attributes.children;
 	    }
@@ -9180,13 +9765,13 @@
 	      }, this.props.infoText));
 	    }
 
-	    if (attributes.type === "password") {
+	    if (attributes.type === 'password') {
 	      return React__default.createElement("div", {
 	        className: wrapperClass
 	      }, React__default.createElement(Tag, _extends$1({}, attributes, {
 	        ref: innerRef,
-	        type: this.state.hidden ? "password" : "text",
-	        className: this.state.isFocused ? "form-control input-password focus--mouse" : "form-control input-password",
+	        type: this.state.hidden ? 'password' : 'text',
+	        className: this.state.isFocused ? 'form-control input-password focus--mouse' : 'form-control input-password',
 	        onFocus: this.toggleFocusLabel,
 	        onBlur: function onBlur(e) {
 	          return _this2.toggleBlurLabel(e);
@@ -9201,10 +9786,10 @@
 	        className: "password-icon-visible icon icon-sm",
 	        onClick: this.toggleShow
 	      }, React__default.createElement("use", {
-	        xlinkHref: "/svg/sprite.svg#it-password-" + (this.state.icon ? "visible" : "invisible")
+	        xlinkHref: "/svg/sprite.svg#it-password-" + (this.state.icon ? 'visible' : 'invisible')
 	      }))), React__default.createElement("label", {
 	        htmlFor: this.props.id,
-	        className: this.state.isFocused ? "active" : ""
+	        className: this.state.isFocused ? 'active' : ''
 	      }, this.props.label), React__default.createElement("small", {
 	        className: infoTextClass
 	      }, this.props.infoText));
@@ -9214,7 +9799,7 @@
 	      return React__default.createElement("div", {
 	        className: wrapperClass
 	      }, React__default.createElement(Tag, _extends$1({}, attributes, {
-	        className: this.state.isFocused ? "form-control-plaintext focus--mouse" : "form-control-plaintext",
+	        className: this.state.isFocused ? 'form-control-plaintext focus--mouse' : 'form-control-plaintext',
 	        onFocus: this.toggleFocusLabel,
 	        onBlur: function onBlur(e) {
 	          return _this2.toggleBlurLabel(e);
@@ -9224,7 +9809,7 @@
 	        readOnly: true
 	      })), React__default.createElement("label", {
 	        htmlFor: this.props.id,
-	        className: this.state.isFocused ? "active" : ""
+	        className: this.state.isFocused ? 'active' : ''
 	      }, this.props.label), React__default.createElement("small", {
 	        className: infoTextClass
 	      }, this.props.infoText));
@@ -9244,7 +9829,7 @@
 	        value: this.props.value
 	      })), React__default.createElement("label", {
 	        htmlFor: this.props.id,
-	        className: this.state.isFocused ? "active" : ""
+	        className: this.state.isFocused ? 'active' : ''
 	      }, this.props.label), React__default.createElement("small", {
 	        className: infoTextClass
 	      }, this.props.infoText));
@@ -9259,16 +9844,16 @@
 	  return Input;
 	}(React__default.Component);
 
-	Input$1.propTypes = propTypes$18;
-	Input$1.defaultProps = defaultProps$14;
+	Input$1.propTypes = propTypes$1k;
+	Input$1.defaultProps = defaultProps$1f;
 
-	var propTypes$19 = {
+	var propTypes$1l = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  multiline: propTypes.bool,
 	  sublist: propTypes.bool
 	};
-	var defaultProps$15 = {
+	var defaultProps$1g = {
 	  tag: 'div'
 	};
 
@@ -9295,10 +9880,10 @@
 	  })));
 	};
 
-	LinkList.propTypes = propTypes$19;
-	LinkList.defaultProps = defaultProps$15;
+	LinkList.propTypes = propTypes$1l;
+	LinkList.defaultProps = defaultProps$1g;
 
-	var propTypes$1a = {
+	var propTypes$1m = {
 	  active: propTypes.bool,
 	  disabled: propTypes.bool,
 	  header: propTypes.bool,
@@ -9308,7 +9893,7 @@
 	  href: propTypes.string,
 	  size: propTypes.string
 	};
-	var defaultProps$16 = {
+	var defaultProps$1h = {
 	  tag: 'a'
 	};
 
@@ -9327,7 +9912,13 @@
 	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "active", "disabled", "header", "divider", "href", "size"]);
 
 	  var Tag = props.tag;
-	  var classes = classnames(className, active ? 'active' : false, disabled ? 'disabled' : false, header ? 'header' : false, divider ? 'divider' : false, size || false, 'list-item'); // Prevent click event when disabled.
+	  var classes = classnames(className, {
+	    active: active,
+	    disabled: disabled,
+	    header: header,
+	    divider: divider,
+	    size: size
+	  }, 'list-item'); // Prevent click event when disabled.
 
 	  if (disabled) {
 	    attributes.onClick = handleDisabledOnClick$1;
@@ -9339,34 +9930,70 @@
 	    Tag = 'span';
 	  }
 
-	  return React__default.createElement("li", null, function () {
-	    if (header && href) {
-	      return React__default.createElement(Tag, null, React__default.createElement("a", _extends$1({
-	        // eslint-disable-line jsx-a11y/anchor-has-content
-	        href: href || '#'
-	      }, attributes, {
-	        className: classes
-	      })));
-	    }
-
-	    return React__default.createElement(Tag, _extends$1({
-	      href: href || '#'
-	    }, attributes, {
-	      className: classes
-	    }));
-	  }());
+	  return React__default.createElement("li", null, header && href ? React__default.createElement(Tag, null, React__default.createElement("a", _extends$1({
+	    // eslint-disable-line jsx-a11y/anchor-has-content
+	    href: href || '#'
+	  }, attributes, {
+	    className: classes
+	  }))) : React__default.createElement(Tag, _extends$1({
+	    href: href || '#'
+	  }, attributes, {
+	    className: classes
+	  })));
 	};
 
-	LinkListItem.propTypes = propTypes$1a;
-	LinkListItem.defaultProps = defaultProps$16;
+	LinkListItem.propTypes = propTypes$1m;
+	LinkListItem.defaultProps = defaultProps$1h;
 
-	var propTypes$1b = {
+	var propTypes$1n = {
+	  /** Renderizza i componenti NavItem al suo interno come tab. */
+	  tabs: propTypes.bool,
+
+	  /** Renderizza i componenti NavItem al suo interno come pills. */
+	  pills: propTypes.bool,
+
+	  /** Renderizza i componenti NavItem al suo interno come tab. */
+	  card: propTypes.bool,
+
+	  /** Se abilitato tutti i NavItem all'interno avranno la stessa larghezza */
+	  justified: propTypes.bool,
+
+	  /** Se abilitato i NavItem all'intero occuperanno tutto lo spazio disponibile  */
+	  fill: propTypes.bool,
+
+	  /** Da utilizzare per rendere il componente Nav verticale. Viene abilitato automaticamente in versione mobile. Valori possibili sono `true`, `false` o `"xs"` */
+	  vertical: propTypes.oneOfType([propTypes.bool, propTypes.string]),
+
+	  /** Da utilizzare per cambiare l'allineamento all'interno della Nav. Valori possibili sono `"center"` o `"end"` per posizionare il contenuto a centro o sulla destra. */
+	  horizontal: propTypes.string,
+
+	  /** Se utilizzata all'interno di una navbar, impostarlo su `true`. In caso di Header Nav, impostarlo a `true` insieme a inHeader. */
+	  navbar: propTypes.bool,
+
+	  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
+	  tag: propTypes.oneOfType([propTypes.func, propTypes.string])
+	};
+	var defaultProps$1i = {
+	  tag: 'ul',
+	  vertical: false
+	};
+
+	var Nav$1 = function Nav$1(_ref) {
+	  var attributes = _extends$1({}, _ref);
+
+	  return React__default.createElement(Nav, attributes);
+	};
+
+	Nav$1.propTypes = propTypes$1n;
+	Nav$1.defaultProps = defaultProps$1i;
+
+	var propTypes$1o = {
 	  children: propTypes.node,
 	  className: propTypes.string,
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  'aria-label': propTypes.string
 	};
-	var defaultProps$17 = {
+	var defaultProps$1j = {
 	  tag: 'nav',
 	  'aria-label': 'pagination'
 	};
@@ -9383,15 +10010,15 @@
 	  }, children);
 	};
 
-	Pager.propTypes = propTypes$1b;
-	Pager.defaultProps = defaultProps$17;
+	Pager.propTypes = propTypes$1o;
+	Pager.defaultProps = defaultProps$1j;
 
-	var propTypes$1c = {
+	var propTypes$1p = {
 	  className: propTypes.string,
 	  size: propTypes.string,
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string])
 	};
-	var defaultProps$18 = {
+	var defaultProps$1k = {
 	  tag: 'ul'
 	};
 
@@ -9409,8 +10036,8 @@
 	  }));
 	};
 
-	PagerList.propTypes = propTypes$1c;
-	PagerList.defaultProps = defaultProps$18;
+	PagerList.propTypes = propTypes$1p;
+	PagerList.defaultProps = defaultProps$1k;
 
 	var PasswordInput =
 	/*#__PURE__*/
@@ -9553,11 +10180,11 @@
 	  }))
 	};
 
-	var propTypes$1d = {
+	var propTypes$1q = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string
 	};
-	var defaultProps$19 = {
+	var defaultProps$1l = {
 	  tag: 'div'
 	};
 
@@ -9572,14 +10199,14 @@
 	  }, attributes));
 	};
 
-	Skiplink.propTypes = propTypes$1d;
-	Skiplink.defaultProps = defaultProps$19;
+	Skiplink.propTypes = propTypes$1q;
+	Skiplink.defaultProps = defaultProps$1l;
 
-	var propTypes$1e = {
+	var propTypes$1r = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string
 	};
-	var defaultProps$1a = {
+	var defaultProps$1m = {
 	  tag: 'a'
 	};
 
@@ -9594,8 +10221,8 @@
 	  }, attributes));
 	};
 
-	SkiplinkItem.propTypes = propTypes$1e;
-	SkiplinkItem.defaultProps = defaultProps$1a;
+	SkiplinkItem.propTypes = propTypes$1r;
+	SkiplinkItem.defaultProps = defaultProps$1m;
 
 	var Toggle =
 	/*#__PURE__*/
@@ -9631,7 +10258,7 @@
 	  label: propTypes.oneOfType([propTypes.string, propTypes.element])
 	}, Input.propTypes);
 
-	var propTypes$1f = {
+	var propTypes$1s = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  secondary: propTypes.bool,
@@ -9639,7 +10266,7 @@
 	  right: propTypes.bool,
 	  dark: propTypes.bool
 	};
-	var defaultProps$1b = {
+	var defaultProps$1n = {
 	  tag: 'div'
 	};
 
@@ -9668,10 +10295,10 @@
 	  })));
 	};
 
-	Sidebar.propTypes = propTypes$1f;
-	Sidebar.defaultProps = defaultProps$1b;
+	Sidebar.propTypes = propTypes$1s;
+	Sidebar.defaultProps = defaultProps$1n;
 
-	var propTypes$1g = {
+	var propTypes$1t = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  value: propTypes.number,
@@ -9679,7 +10306,7 @@
 	  indeterminate: propTypes.bool,
 	  color: propTypes.string
 	};
-	var defaultProps$1c = {
+	var defaultProps$1o = {
 	  tag: 'div',
 	  role: 'progressbar',
 	  indeterminate: false
@@ -9752,17 +10379,17 @@
 	  return Progress;
 	}(React__default.Component);
 
-	Progress.propTypes = propTypes$1g;
-	Progress.defaultProps = defaultProps$1c;
+	Progress.propTypes = propTypes$1t;
+	Progress.defaultProps = defaultProps$1o;
 
-	var propTypes$1h = {
+	var propTypes$1u = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  active: propTypes.bool,
 	  small: propTypes.bool,
 	  "double": propTypes.bool
 	};
-	var defaultProps$1d = {
+	var defaultProps$1p = {
 	  tag: 'span',
 	  indeterminate: false,
 	  active: false,
@@ -9816,151 +10443,199 @@
 	  return Spinner;
 	}(React__default.Component);
 
-	Spinner.propTypes = propTypes$1h;
-	Spinner.defaultProps = defaultProps$1d;
+	Spinner.propTypes = propTypes$1u;
+	Spinner.defaultProps = defaultProps$1p;
 
-	var propTypes$1i = {
-	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
-	  className: propTypes.node,
-	  isBig: propTypes.bool,
-	  hasShade: propTypes.bool,
-	  hasSpace: propTypes.bool,
-	  hasCTA: propTypes.bool,
-	  hasLinkOnTitle: propTypes.bool,
-	  isIconCard: propTypes.bool,
-	  isSpecialCard: propTypes.bool,
-	  isArticleCard: propTypes.bool,
-	  title: propTypes.string,
-	  text: propTypes.string,
-	  after: propTypes.string,
-	  articleCategoryName: propTypes.string,
-	  articleCategoryLink: propTypes.string,
-	  articleDate: propTypes.string,
-	  signature: propTypes.string,
-	  link: propTypes.string,
-	  iconName: propTypes.string,
-	  tags: propTypes.array,
-	  imageSrc: propTypes.string,
-	  imageTitle: propTypes.string,
-	  imageAlt: propTypes.string
-	};
-	var defaultProps$1e = {
-	  tag: 'div',
-	  link: false
-	};
+	var propTypes$1v = _extends$1({}, Card.propTypes, {
+	  teaser: propTypes.bool,
+	  spacing: propTypes.bool,
+	  noWrapper: propTypes.bool,
+	  wrapperClassName: propTypes.string
+	});
 
-	var Card =
-	/*#__PURE__*/
-	function (_React$Component) {
-	  _inheritsLoose$1(Card, _React$Component);
+	var defaultProps$1q = _extends$1({}, Card.defaultProps, {
+	  noWrapper: false
+	});
 
-	  function Card() {
-	    return _React$Component.apply(this, arguments) || this;
+	var Card$1 = function Card$1(_ref) {
+	  var teaser = _ref.teaser,
+	      spacing = _ref.spacing,
+	      noWrapper = _ref.noWrapper,
+	      wrapperClassName = _ref.wrapperClassName,
+	      attributes = _objectWithoutPropertiesLoose$1(_ref, ["teaser", "spacing", "noWrapper", "wrapperClassName"]);
+
+	  var wrapperClasses = classnames('card-wrapper', wrapperClassName, {
+	    'card-space': spacing,
+	    'card-teaser-wrapper': teaser
+	  });
+	  var cardClasses = classnames(attributes.className, {
+	    'card-teaser': teaser
+	  });
+
+	  if (noWrapper) {
+	    return React__default.createElement(Card, _extends$1({}, attributes, {
+	      className: cardClasses
+	    }));
 	  }
 
-	  var _proto = Card.prototype;
+	  return React__default.createElement("div", {
+	    className: wrapperClasses
+	  }, React__default.createElement(Card, _extends$1({}, attributes, {
+	    className: cardClasses
+	  })));
+	};
 
-	  _proto.render = function render() {
-	    var Tag = this.props.tag;
-	    var cardWrapperClasses = classnames(this.props.hasSpace ? 'card-space' : false, 'card-wrapper');
-	    var innerCardWrapperClasses = classnames(this.props.hasShade ? 'card-bg' : false, this.props.isBig ? 'card-big' : false, this.props.imageSrc ? 'card-img' : false, this.props.isSpecialCard ? 'special-card' : false, this.props.after ? 'no-after' : false, 'card');
-	    var iconTag = this.props.isIconCard ? React__default.createElement("div", {
-	      className: "categoryicon-top"
-	    }, React__default.createElement(Icon, {
-	      icon: this.props.iconName
-	    }), React__default.createElement("span", {
-	      className: "text"
-	    }, this.props.articleCategoryName)) : false;
-	    var titleTag = React__default.createElement("h5", {
-	      className: "card-title"
-	    }, this.props.title);
-	    var imageTag = this.props.imageSrc ? React__default.createElement("div", {
-	      className: "img-responsive-wrapper"
-	    }, React__default.createElement("div", {
-	      className: "img-responsive"
-	    }, React__default.createElement("figure", {
-	      className: "img-wrapper"
-	    }, React__default.createElement("img", {
-	      src: this.props.imageSrc,
-	      title: this.props.imageTitle,
-	      alt: this.props.imageAlt
-	    })))) : false;
-	    var dateTag = this.props.articleDate ? React__default.createElement("span", {
-	      className: "data"
-	    }, this.props.articleDate) : false;
-	    var signatureTag = this.props.signature ? React__default.createElement("span", {
-	      className: "card-signature"
-	    }, this.props.signature) : false;
-	    var callToActionTag = this.props.hasCTA ? React__default.createElement(Button, {
-	      outline: true,
-	      color: "primary",
-	      size: "sm"
-	    }, "Action") : false;
-	    var cardFooterTag = signatureTag || callToActionTag ? React__default.createElement("div", {
-	      className: "it-card-footer"
-	    }, signatureTag, callToActionTag) : false;
-	    var cardHeaderTag;
-	    var readMoreTag;
+	Card$1.propTypes = propTypes$1v;
+	Card$1.defaultProps = defaultProps$1q;
 
-	    if (this.props.link) {
-	      if (this.props.hasLinkOnTitle) {
-	        titleTag = React__default.createElement("a", {
-	          href: this.props.link
-	        }, React__default.createElement("h5", {
-	          className: "card-title"
-	        }, this.props.title));
-	      } else {
-	        readMoreTag = React__default.createElement("a", {
-	          className: "read-more",
-	          href: this.props.link
-	        }, React__default.createElement("span", {
-	          className: "text"
-	        }, "Leggi di pi\xF9"), React__default.createElement(Icon, {
-	          icon: 'it-arrow-right'
-	        }));
-	      }
-	    }
+	var propTypes$1w = {
+	  iconName: propTypes.string,
+	  date: propTypes.string,
+	  href: propTypes.string
+	};
 
-	    if (this.props.isArticleCard) {
-	      cardHeaderTag = React__default.createElement("div", {
-	        className: "category-top"
-	      }, React__default.createElement("a", {
-	        className: "category",
-	        href: "{this.props.articleCategoryLink}"
-	      }, this.props.articleCategoryName), dateTag);
-	    } else if (this.props.tags && this.props.tags.split(',').length) {
-	      cardHeaderTag = React__default.createElement("div", {
-	        className: "head-tags"
-	      }, this.props.tags.split(',').map(function (item, index) {
-	        return React__default.createElement("span", {
-	          className: "card-tag",
-	          key: index
-	        }, item);
-	      }), dateTag);
-	    }
+	var CardCategory = function CardCategory(props) {
+	  var iconName = props.iconName,
+	      date = props.date,
+	      href = props.href,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["iconName", "date", "href"]);
 
-	    return React__default.createElement(Tag, {
-	      className: cardWrapperClasses
-	    }, React__default.createElement("div", {
-	      className: innerCardWrapperClasses
-	    }, imageTag, React__default.createElement("div", {
-	      className: "card-body"
-	    }, cardHeaderTag, iconTag, titleTag, React__default.createElement("p", {
-	      className: "card-text"
-	    }, this.props.text), cardFooterTag, readMoreTag)));
-	  };
+	  var children = attributes.children,
+	      rest = _objectWithoutPropertiesLoose$1(attributes, ["children"]);
 
-	  return Card;
-	}(React__default.Component);
+	  var classes = classnames({
+	    'category-top': !iconName,
+	    'categoryicon-top': iconName
+	  }); // Simple category link
 
-	Card.propTypes = propTypes$1i;
-	Card.defaultProps = defaultProps$1e;
+	  var categoryLink = !iconName && React__default.createElement("a", {
+	    href: href,
+	    className: "category"
+	  }, children);
+	  var categoryDate = !iconName && React__default.createElement("span", {
+	    className: "data"
+	  }, date); // Category with icon
 
-	var propTypes$1j = {
+	  var categoryText = iconName && React__default.createElement("span", {
+	    className: "text"
+	  }, children);
+	  var categoryIcon = iconName && React__default.createElement(Icon, {
+	    icon: iconName
+	  });
+	  return React__default.createElement("div", _extends$1({
+	    className: classes
+	  }, rest), categoryLink, categoryDate, categoryIcon, categoryText);
+	};
+
+	CardCategory.propTypes = propTypes$1w;
+
+	var propTypes$1x = {
+	  tag: propTypes.string,
+	  className: propTypes.string
+	};
+	var defaultProps$1r = {
+	  tag: 'a'
+	};
+
+	var CardTag = function CardTag(props) {
+	  var className = props.className,
+	      Tag = props.tag,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag"]);
+
+	  var classes = classnames(className, 'card-tag');
+	  return React__default.createElement(Tag, _extends$1({
+	    className: classes
+	  }, attributes));
+	};
+
+	CardTag.propTypes = propTypes$1x;
+	CardTag.defaultProps = defaultProps$1r;
+
+	var propTypes$1y = {
+	  children: propTypes.node,
+	  date: propTypes.string
+	};
+
+	var CardTagsHeader = function CardTagsHeader(props) {
+	  var date = props.date,
+	      children = props.children,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["date", "children"]);
+
+	  return React__default.createElement("div", _extends$1({
+	    className: "head-tags"
+	  }, attributes), children, date && React__default.createElement("span", {
+	    className: "data"
+	  }, date));
+	};
+
+	CardTagsHeader.propTypes = propTypes$1y;
+
+	var propTypes$1z = {
+	  className: propTypes.string
+	};
+
+	var CardSignature = function CardSignature(props) {
+	  var className = props.className,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["className"]);
+
+	  var classes = classnames(className, 'card-signature');
+	  return React__default.createElement("span", _extends$1({
+	    className: classes
+	  }, attributes));
+	};
+
+	CardSignature.propTypes = propTypes$1z;
+
+	var propTypes$1A = {
+	  className: propTypes.string
+	};
+
+	var CardFooterCTA = function CardFooterCTA(props) {
+	  var className = props.className,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["className"]);
+
+	  var classes = classnames(className, 'it-card-footer');
+	  return React__default.createElement("div", _extends$1({
+	    className: classes
+	  }, attributes));
+	};
+
+	CardFooterCTA.propTypes = propTypes$1A;
+
+	var propTypes$1B = {
+	  className: propTypes.string,
+	  iconName: propTypes.string,
+	  href: propTypes.string,
+	  text: propTypes.string
+	};
+	var defaultTypes = {
+	  iconName: 'it-arrow-right'
+	};
+
+	var CardReadMore = function CardReadMore(props) {
+	  var className = props.className,
+	      text = props.text,
+	      iconName = props.iconName,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "text", "iconName"]);
+
+	  var classes = classnames(className, 'read-more');
+	  return React__default.createElement("a", _extends$1({
+	    className: classes
+	  }, attributes), React__default.createElement("span", {
+	    className: "text"
+	  }, text), iconName && React__default.createElement(Icon, {
+	    icon: iconName
+	  }));
+	};
+
+	CardReadMore.propTypes = propTypes$1B;
+	CardReadMore.defaultTypes = defaultTypes;
+
+	var propTypes$1C = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string
 	};
-	var defaultProps$1f = {
+	var defaultProps$1s = {
 	  tag: 'nav'
 	};
 
@@ -9974,10 +10649,10 @@
 	  }, React__default.createElement("ul", attributes));
 	};
 
-	BottomNav.propTypes = propTypes$1j;
-	BottomNav.defaultProps = defaultProps$1f;
+	BottomNav.propTypes = propTypes$1C;
+	BottomNav.defaultProps = defaultProps$1s;
 
-	var propTypes$1k = {
+	var propTypes$1D = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  active: propTypes.bool,
@@ -9988,57 +10663,118 @@
 	  alert: propTypes.bool,
 	  badge: propTypes.bool
 	};
-	var defaultProps$1g = {
+	var defaultProps$1t = {
 	  tag: 'a',
 	  link: '#',
 	  iconName: 'it-comment',
 	  srText: false
 	};
 
-	var BottomNavItem =
-	/*#__PURE__*/
-	function (_React$Component) {
-	  _inheritsLoose$1(BottomNavItem, _React$Component);
+	var BottomNavItem = function BottomNavItem(_ref) {
+	  var active = _ref.active,
+	      badge = _ref.badge,
+	      alert = _ref.alert,
+	      link = _ref.link,
+	      srText = _ref.srText,
+	      iconName = _ref.iconName,
+	      label = _ref.label,
+	      Tag = _ref.tag,
+	      attributes = _objectWithoutPropertiesLoose$1(_ref, ["active", "badge", "alert", "link", "srText", "iconName", "label", "tag"]);
 
-	  function BottomNavItem() {
-	    return _React$Component.apply(this, arguments) || this;
-	  }
+	  var activeClass = classnames(active ? 'active' : false);
+	  var badgeWrapper = badge ? React__default.createElement("div", {
+	    className: "badge-wrapper"
+	  }, React__default.createElement("span", {
+	    className: "bottom-nav-badge"
+	  }, badge)) : false;
+	  var alertWrapper = alert ? React__default.createElement("div", {
+	    className: "badge-wrapper"
+	  }, React__default.createElement("span", {
+	    className: "bottom-nav-alert"
+	  })) : false;
+	  return React__default.createElement("li", attributes, React__default.createElement(Tag, {
+	    href: link,
+	    className: activeClass
+	  }, badgeWrapper, alertWrapper, React__default.createElement(Icon, {
+	    icon: iconName
+	  }), React__default.createElement("span", {
+	    className: "bottom-nav-label"
+	  }, label, React__default.createElement("span", {
+	    className: "sr-only"
+	  }, srText))));
+	};
 
-	  var _proto = BottomNavItem.prototype;
+	BottomNavItem.propTypes = propTypes$1D;
+	BottomNavItem.defaultProps = defaultProps$1t;
 
-	  _proto.render = function render() {
-	    var _this$props = this.props,
-	        Tag = _this$props.tag,
-	        attributes = _objectWithoutPropertiesLoose$1(_this$props, ["tag"]);
+	var propTypes$1E = {
+	  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
+	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 
-	    var activeClass = classnames(this.props.active ? 'active' : false);
-	    var badgeWrapper = this.props.badge ? React__default.createElement("div", {
-	      className: "badge-wrapper"
-	    }, React__default.createElement("span", {
-	      className: "bottom-nav-badge"
-	    }, this.props.badge)) : false;
-	    var alertWrapper = this.props.alert ? React__default.createElement("div", {
-	      className: "badge-wrapper"
-	    }, React__default.createElement("span", {
-	      className: "bottom-nav-alert"
-	    })) : false;
-	    return React__default.createElement("li", attributes, React__default.createElement(Tag, {
-	      href: this.props.link,
-	      className: activeClass
-	    }, badgeWrapper, alertWrapper, React__default.createElement(Icon, {
-	      icon: this.props.iconName
-	    }), React__default.createElement("span", {
-	      className: "bottom-nav-label"
-	    }, this.props.label, React__default.createElement("span", {
-	      className: "sr-only"
-	    }, this.props.srText))));
-	  };
+	  /** Classi aggiuntive da usare per il componente Chip */
+	  className: propTypes.string,
 
-	  return BottomNavItem;
-	}(React__default.Component);
+	  /** Impostarlo su `true` per centrare la label all'interno */
+	  simple: propTypes.bool,
 
-	BottomNavItem.propTypes = propTypes$1k;
-	BottomNavItem.defaultProps = defaultProps$1g;
+	  /** Impostarlo su `true` per una versione più grande del componente Chip. */
+	  large: propTypes.bool,
+
+	  /** Impostarlo su `true` per renderizzare il componente Chip come disabilitato */
+	  disabled: propTypes.bool
+	};
+	var defaultProps$1u = {
+	  tag: 'div',
+	  simple: false,
+	  large: false,
+	  disabled: false
+	};
+
+	var Chip = function Chip(props) {
+	  var className = props.className,
+	      Tag = props.tag,
+	      simple = props.simple,
+	      large = props.large,
+	      disabled = props.disabled,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "simple", "large", "disabled"]);
+
+	  var classes = classnames('chip', className, {
+	    'chip-simple': simple,
+	    'chip-lg': large,
+	    'chip-disabled': disabled
+	  });
+	  return React__default.createElement(Tag, _extends$1({
+	    className: classes
+	  }, attributes));
+	};
+
+	Chip.propTypes = propTypes$1E;
+	Chip.defaultProps = defaultProps$1u;
+
+	var propTypes$1F = {
+	  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
+	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
+
+	  /** Classi aggiuntive da usare per il componente ChipLabel */
+	  className: propTypes.string
+	};
+	var defaultProps$1v = {
+	  tag: 'span'
+	};
+
+	var ChipLabel = function ChipLabel(props) {
+	  var className = props.className,
+	      Tag = props.tag,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag"]);
+
+	  var classes = classnames(className, 'chip-label');
+	  return React__default.createElement(Tag, _extends$1({}, attributes, {
+	    className: classes
+	  }));
+	};
+
+	ChipLabel.propTypes = propTypes$1F;
+	ChipLabel.defaultProps = defaultProps$1v;
 
 	webfontloader.load({
 	  custom: {
@@ -10059,17 +10795,23 @@
 	exports.ButtonDropdown = ButtonDropdown;
 	exports.ButtonGroup = ButtonGroup;
 	exports.ButtonToolbar = ButtonToolbar;
-	exports.Card = Card;
+	exports.Card = Card$1;
 	exports.CardBody = CardBody;
+	exports.CardCategory = CardCategory;
 	exports.CardColumns = CardColumns;
 	exports.CardDeck = CardDeck;
 	exports.CardFooter = CardFooter;
+	exports.CardFooterCTA = CardFooterCTA;
 	exports.CardGroup = CardGroup;
 	exports.CardHeader = CardHeader;
 	exports.CardImg = CardImg;
 	exports.CardImgOverlay = CardImgOverlay;
 	exports.CardLink = CardLink;
+	exports.CardReadMore = CardReadMore;
+	exports.CardSignature = CardSignature;
 	exports.CardSubtitle = CardSubtitle;
+	exports.CardTag = CardTag;
+	exports.CardTagsHeader = CardTagsHeader;
 	exports.CardText = CardText;
 	exports.CardTitle = CardTitle;
 	exports.Carousel = Carousel;
@@ -10077,8 +10819,10 @@
 	exports.CarouselControl = CarouselControl;
 	exports.CarouselIndicators = CarouselIndicators;
 	exports.CarouselItem = CarouselItem;
+	exports.Chip = Chip;
+	exports.ChipLabel = ChipLabel;
 	exports.Col = Col;
-	exports.Collapse = Collapse;
+	exports.Collapse = Collapse$1;
 	exports.Container = Container;
 	exports.Dropdown = Dropdown;
 	exports.DropdownItem = DropdownItem;
@@ -10089,6 +10833,15 @@
 	exports.FormFeedback = FormFeedback;
 	exports.FormGroup = FormGroup$1;
 	exports.FormText = FormText;
+	exports.Header = Header;
+	exports.HeaderBrand = HeaderBrand;
+	exports.HeaderContent = HeaderContent;
+	exports.HeaderLinkZone = HeaderLinkZone;
+	exports.HeaderRightZone = HeaderRightZone;
+	exports.HeaderSearch = HeaderSearch;
+	exports.HeaderSocialsZone = HeaderSocialsZone;
+	exports.HeaderToggler = HeaderToggler;
+	exports.Headers = Headers;
 	exports.Hero = Hero;
 	exports.Icon = Icon;
 	exports.Input = Input$1;
@@ -10109,7 +10862,7 @@
 	exports.ModalBody = ModalBody;
 	exports.ModalFooter = ModalFooter;
 	exports.ModalHeader = ModalHeader;
-	exports.Nav = Nav;
+	exports.Nav = Nav$1;
 	exports.NavItem = NavItem;
 	exports.NavLink = NavLink;
 	exports.Navbar = Navbar;
@@ -10141,6 +10894,7 @@
 	exports.UncontrolledAlert = UncontrolledAlert;
 	exports.UncontrolledButtonDropdown = UncontrolledButtonDropdown;
 	exports.UncontrolledCarousel = UncontrolledCarousel;
+	exports.UncontrolledCollapse = UncontrolledCollapse;
 	exports.UncontrolledDropdown = UncontrolledDropdown;
 	exports.UncontrolledTooltip = UncontrolledTooltip;
 	exports.Util = utils;
