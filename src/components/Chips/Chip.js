@@ -25,15 +25,21 @@ const defaultProps = {
 }
 
 const Chip = props => {
-  const { className, color, tag: Tag, simple, large, disabled, ...attributes } = props
+  const {
+    className,
+    color,
+    tag: Tag,
+    simple,
+    large,
+    disabled,
+    ...attributes
+  } = props
   const classes = classNames('chip', className, {
     'chip-simple': simple,
     'chip-lg': large,
     'chip-disabled': disabled,
     [`chip-${color}`]: color
-  
-  }
-);
+  })
 
   return <Tag className={classes} {...attributes} />
 }
