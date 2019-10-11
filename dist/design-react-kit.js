@@ -9883,6 +9883,12 @@
 	LinkList.propTypes = propTypes$1l;
 	LinkList.defaultProps = defaultProps$1g;
 
+
+
+
+
+
+
 	var propTypes$1m = {
 	  active: propTypes.bool,
 	  disabled: propTypes.bool,
@@ -10721,32 +10727,39 @@
 	  large: propTypes.bool,
 
 	  /** Impostarlo su `true` per renderizzare il componente Chip come disabilitato */
-	  disabled: propTypes.bool
+		disabled: propTypes.bool,
+		color: propTypes.string
 	};
 	var defaultProps$1u = {
 	  tag: 'div',
 	  simple: false,
 	  large: false,
-	  disabled: false
+		disabled: false,
+		color: ''
 	};
 
 	var Chip = function Chip(props) {
 	  var className = props.className,
-	      Tag = props.tag,
+				Tag = props.tag,
 	      simple = props.simple,
 	      large = props.large,
-	      disabled = props.disabled,
-	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "simple", "large", "disabled"]);
+				disabled = props.disabled,
+				color = props.color,
+				attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "simple", "large", "disabled", "color"]);
 
-	  var classes = classnames('chip', className, {
-	    'chip-simple': simple,
-	    'chip-lg': large,
-	    'chip-disabled': disabled
-	  });
+				const classes = classNames('chip', className, {
+					'chip-simple': simple,
+					'chip-lg': large,
+					'chip-disabled': disabled,
+					[`chip-${color}`]: color
+				})
+		
+	  ));
 	  return React__default.createElement(Tag, _extends$1({
 	    className: classes
 	  }, attributes));
 	};
+	
 
 	Chip.propTypes = propTypes$1E;
 	Chip.defaultProps = defaultProps$1u;
@@ -10781,6 +10794,19 @@
 	    families: ['Titillium Web:300,400,600,700:latin-ext', 'Lora:400,700:latin-ext', 'Roboto Mono:400,700:latin-ext']
 	  }
 	});
+
+	var propTypes$1G = {
+		tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
+		className: propTypes.string,
+		sublist: propTypes.string,
+		highlight: propTypes.bool
+	}
+	
+	var defaultProps$1u = {
+		tag: 'div'
+	}
+	
+	
 
 	exports.Accordion = Accordion;
 	exports.AccordionBody = AccordionBody;
