@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { select, text } from '@storybook/addon-knobs/react'
+import { boolean, select, text } from '@storybook/addon-knobs/react'
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -20,8 +20,10 @@ import {
 
 import CompleteHeader from '../shared/Header'
 import Footer from '../shared/Footer'
+import Notification from '../shared/Notification'
 
 const Amministrazione = () => {
+  const notification = boolean('Mostra notifica', true)
   const theme = select(
     'Tema',
     { default: '', light: 'light', dark: 'dark' },
@@ -254,6 +256,7 @@ const Amministrazione = () => {
         </section>
       </main>
       <Footer townName={townName} townTagLine={townTagLine} />
+      {notification && <Notification />}
     </>
   )
 }

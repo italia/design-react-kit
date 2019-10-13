@@ -20,6 +20,7 @@ import {
 
 import Header from '../shared/Header'
 import Footer from '../shared/Footer'
+import Notification from '../shared/Notification'
 
 const Homepage = () => {
   const notification = boolean('Mostra notifica', true)
@@ -780,29 +781,7 @@ const Homepage = () => {
         </div>
       </section>
       <Footer townName={townName} townTagLine={townTagLine} />
-      {notification && (
-        <div
-          className="notification dismissable with-icon"
-          role="alert"
-          id="notification-esempi"
-          aria-labelledby="notification-esempi-title"
-          style={{ display: 'block' }}>
-          <h5 id="notification-esempi-title">
-            <Icon icon="it-info-circle" /> Esempio di utilizzo
-          </h5>
-          <p>
-            <a href="/design-comuni-prototipi/it/kit.html#template-html">
-              Torna alla lista dei template
-            </a>
-          </p>
-          <button type="button" className="btn notification-close">
-            <Icon icon="it-close" />
-            <span className="sr-only">
-              Chiudi notifica: Titolo notification
-            </span>
-          </button>
-        </div>
-      )}
+      {notification && <Notification />}
     </>
   )
 }
