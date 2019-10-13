@@ -1,0 +1,2 @@
+Il template `Servizi` è basato interamente [sul kit Comuni](https://italia.github.io/design-comuni-prototipi/it/kit.html), facendo riferimento alla *Pagina di Primo livello - Servizi* utilizzando unicamente componenti del Design React Kit.
+Per maggiori dettagli componenti `HeaderComplete` e `Footer` fare riferimento alle loro relative storie.

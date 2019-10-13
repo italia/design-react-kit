@@ -182,7 +182,7 @@ const Footer = ({ townName, townTagLine }) => (
                   placeholder="mail@example.com"
                   type="email"
                 />
-                <Button ccolor="primary" className="btn-icon" type="submit">
+                <Button color="primary" className="btn-icon" type="submit">
                   <Icon icon="it-mail" color="white" />
                   <span>Iscriviti</span>
                 </Button>
