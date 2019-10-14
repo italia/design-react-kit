@@ -6,6 +6,7 @@ declare module "design-react-kit"{
     export {default as Badge} from "src/components/Badge/Badge"
     export {default as BottomNav} from "src/components/BottomNav/BottomNav"
     export {default as BottomNavItem} from "src/components/BottomNav/BottomNavItem"
+    export {default as Button} from "src/components/Button/Button"
     export {default as Card} from "src/components/Card/Card"
     export {default as CardCategory} from "src/components/Card/CardCategory"
     export {default as CardFooterCTA} from "src/components/Card/CardFooterCTA"
@@ -16,6 +17,9 @@ declare module "design-react-kit"{
     export {default as Chip} from "src/components/Chips/Chip"
     export {default as ChipLabel} from "src/components/Chips/ChipLabel"
     export {default as Collapse} from "src/components/Collapse/Collapse"
+    export {default as CookieBar} from "src/components/CookieBar/CookieBar"
+    export {default as CookieBarButton} from "src/components/CookieBar/CookieBarButton"
+    export {default as CookieBarButtons} from "src/components/CookieBar/CookieBarButtons"
     export {default as FormGroup} from "src/components/FormGroup/FormGroup"
     export {default as Header} from "src/components/Header/Header"
     export {default as HeaderBrand} from "src/components/Header/HeaderBrand"
@@ -173,6 +177,20 @@ declare module 'src/components/BottomNav/BottomNavItem' {
 
 }
 
+declare module 'src/components/Button/Button' {
+    import * as React from 'react';
+
+    export interface ButtonProps extends React.HTMLAttributes<HTMLElement> {
+    [key: string]: any;
+        icon?: boolean;
+    }
+
+    const Button: React.FC<ButtonProps>;
+
+    export default Button;
+
+}
+
 declare module 'src/components/Card/Card' {
     import * as React from 'react';
 
@@ -308,6 +326,7 @@ declare module 'src/components/Chips/Chip' {
          * Impostarlo su `true` per renderizzare il componente Chip come disabilitato
          */
         disabled?: boolean;
+        color?: string;
     }
 
     const Chip: React.FC<ChipProps>;
@@ -358,6 +377,58 @@ declare module 'src/components/Collapse/Collapse' {
     const Collapse: React.FC<CollapseProps>;
 
     export default Collapse;
+
+}
+
+declare module 'src/components/CookieBar/CookieBar' {
+    import * as React from 'react';
+
+    export type CookieBarTag = ((...args: any[])=>any) | string;
+
+    export interface CookieBarProps extends React.HTMLAttributes<HTMLElement> {
+    [key: string]: any;
+        tag?: CookieBarTag;
+        className?: string;
+    }
+
+    const CookieBar: React.FC<CookieBarProps>;
+
+    export default CookieBar;
+
+}
+
+declare module 'src/components/CookieBar/CookieBarButton' {
+    import * as React from 'react';
+
+    export type CookieBarButtonTag = ((...args: any[])=>any) | string;
+
+    export interface CookieBarButtonProps extends React.HTMLAttributes<HTMLElement> {
+    [key: string]: any;
+        tag?: CookieBarButtonTag;
+        className?: string;
+    }
+
+    export default class CookieBarButton extends React.Component<CookieBarButtonProps, any> {
+        render(): JSX.Element;
+
+    }
+
+}
+
+declare module 'src/components/CookieBar/CookieBarButtons' {
+    import * as React from 'react';
+
+    export type CookieBarButtonsTag = ((...args: any[])=>any) | string;
+
+    export interface CookieBarButtonsProps extends React.HTMLAttributes<HTMLElement> {
+    [key: string]: any;
+        tag?: CookieBarButtonsTag;
+        className?: string;
+    }
+
+    const CookieBarButtons: React.FC<CookieBarButtonsProps>;
+
+    export default CookieBarButtons;
 
 }
 
