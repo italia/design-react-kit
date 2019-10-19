@@ -86,17 +86,17 @@ const DimensioniComponent = () => (
 
 const ButtonIconComponent = () => (
   <div>
-    <Button color="primary" size="lg" className="btn-icon">
-      <Icon color={'icon-white'} /> Icon Button Large
+    <Button color="primary" size="lg" icon>
+      <Icon color="white" icon="it-star-full" /> Icon Button Large
     </Button>{' '}
-    <Button color="success" className="btn-icon">
-      <Icon color={'icon-white'} /> Icon Button
+    <Button color="success" icon>
+      <Icon color="white" icon="it-star-full" /> Icon Button
     </Button>{' '}
-    <Button color="danger" size="sm" className="btn-icon">
-      <Icon color={'icon-primary'} /> Icon Button Small
+    <Button color="danger" size="sm" icon>
+      <Icon color="secondary" icon="it-star-full" /> Icon Button Small
     </Button>{' '}
-    <Button color="info" size="xs" className="btn-icon">
-      <Icon color={'icon-black'} icon={'it-help'} /> Icon Button Extra Small
+    <Button color="info" size="xs" icon>
+      <Icon color="danger" icon="it-star-full" /> Icon Button Extra Small
     </Button>
   </div>
 )

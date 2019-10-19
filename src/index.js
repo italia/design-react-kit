@@ -22,7 +22,6 @@ export {
   NavLink,
   Breadcrumb,
   BreadcrumbItem,
-  Button,
   ButtonDropdown,
   ButtonGroup,
   ButtonToolbar,
@@ -94,6 +93,7 @@ export {
 } from './components/Accordion/AccordionHeader'
 export { default as AccordionBody } from './components/Accordion/AccordionBody'
 export { default as Badge } from './components/Badge/Badge'
+export { default as Button } from './components/Button/Button'
 export { default as Collapse } from './components/Collapse/Collapse'
 export { default as FormGroup } from './components/FormGroup/FormGroup'
 export { default as Header } from './components/Header/Header'
@@ -137,5 +137,12 @@ export { default as CardFooterCTA } from './components/Card/CardFooterCTA'
 export { default as CardReadMore } from './components/Card/CardReadMore'
 export { default as BottomNav } from './components/BottomNav/BottomNav'
 export { default as BottomNavItem } from './components/BottomNav/BottomNavItem'
+export { default as CookieBar } from './components/CookieBar/CookieBar'
+export {
+  default as CookieBarButtons
+} from './components/CookieBar/CookieBarButtons'
+export {
+  default as CookieBarButton
+} from './components/CookieBar/CookieBarButton'
 export { default as Chip } from './components/Chips/Chip'
 export { default as ChipLabel } from './components/Chips/ChipLabel'
