@@ -146,3 +146,6 @@ export {
 } from './components/CookieBar/CookieBarButton'
 export { default as Chip } from './components/Chips/Chip'
 export { default as ChipLabel } from './components/Chips/ChipLabel'
+export {
+  default as Notifications
+} from './components/Notification/NotificationManager'
