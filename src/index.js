@@ -147,5 +147,8 @@ export {
 export { default as Chip } from './components/Chips/Chip'
 export { default as ChipLabel } from './components/Chips/ChipLabel'
 export {
-  default as Notifications
+  default as NotificationHandler
+} from './components/Notification/NotificationHandler'
+export {
+  default as NotificationManager
 } from './components/Notification/NotificationManager'

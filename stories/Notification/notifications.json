@@ -1,19 +1,18 @@
 {
-    "default": { },
+    "default": { 
+        "type": "default"
+    },
     "icon-text-default": {
-        "isWithIcon": true,
         "title": "Notification icon/text",
         "text": "Icon Text Default Content"
     },
     "dismissable": {
-        "isDismissable": true,
-        "isWithIcon": true,
+        "dismissable": true,
         "title": "Notification Dismissable",
         "text": "Dismissable Content"
     },
     "top-fix": {
         "position": "top-fix",
-        "isWithIcon": true,
         "title": "Notification Top Fix",
         "text": "Top Fix Content",
         "timeout": 5000
@@ -21,7 +20,6 @@
     "bottom-fix": {
         "position": "bottom-fix",
         "type": "error",
-        "isWithIcon": true,
         "icon": "it-close-circle",
         "title": "Notification Bottom Fix",
         "text": "Bottom Fix Content",
@@ -30,7 +28,6 @@
     "left-fix": {
         "position": "left-fix",
         "type": "info",
-        "isWithIcon": true,
         "icon": "it-info-circle",
         "title": "Notification Left Fix",
         "text": "Left Fix Content",
@@ -39,7 +36,6 @@
     "right-fix": {
         "position": "right-fix",
         "type": "warning",
-        "isWithIcon": true,
         "icon": "it-error",
         "title": "Notification Right Fix",
         "text": "Right Fix Content",
@@ -47,8 +43,7 @@
     },
     "dismissable-top-fix": {
         "position": "top-fix",
-        "isDismissable": true,
-        "isWithIcon": true,
+        "dismissable": true,
         "icon": "it-error",
         "title": "Dismissable Top Fix",
         "text": "Dismissable Top Fix Content"
@@ -56,8 +51,7 @@
     "dismissable-bottom-fix": {
         "position": "bottom-fix",
         "type": "error",
-        "isDismissable": true,
-        "isWithIcon": true,
+        "dismissable": true,
         "icon": "it-close-circle",
         "title": "Dismissable Bottom Fix",
         "text": "Dismissable Bottom Fix Content"
@@ -65,8 +59,7 @@
     "dismissable-left-fix": {
         "position": "left-fix",
         "type": "info",
-        "isDismissable": true,
-        "isWithIcon": true,
+        "dismissable": true,
         "icon": "it-info-circle",
         "title": "Dismissable Left Fix",
         "text": "Dismissable Left Fix Content"
@@ -74,8 +67,7 @@
     "dismissable-right-fix": {
         "position": "right-fix",
         "type": "warning",
-        "isDismissable": true,
-        "isWithIcon": true,
+        "dismissable": true,
         "icon": "it-error",
         "title": "Dismissable Right Fix",
         "text": "Dismissable Right Fix Content"

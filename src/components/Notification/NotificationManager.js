@@ -8,14 +8,11 @@ const notificationId = () => {
 }
 
 class NotificationManager extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { items: [] }
-  }
+  state = { items: [] }
 
   showNotif = (index, items) => {
     const item = items[index]
-    let { timeout, isDismissable: dismissStatus } = item
+    let { timeout, dismissable: dismissStatus } = item
     if (item.show === true) {
       return
     }
@@ -36,41 +33,44 @@ class NotificationManager extends React.Component {
     }
   }
 
-  add = (key, item) => {
-    item.key = key
+  add = (id, item) => {
+    item.id = id
     item.show = false
     const items = [...this.state.items, item]
     this.showNotif(items.length - 1, items)
   }
 
   show = (event, myItem) => {
-    const key = event.target.id
-    const keyIndex = this.state.items.findIndex(item => item.key === key)
-    if (keyIndex === -1) {
-      this.add(key, myItem)
+    const id = event.target.id
+    if (id) {
+      const idIndex = this.state.items.findIndex(item => item.id === id)
+      if (idIndex === -1) {
+        return this.add(id, myItem)
+      }
+      return this.showNotif(idIndex, this.state.items)
     } else {
-      this.showNotif(keyIndex, this.state.items)
+      const freshId = notificationId()
+      event.target.setAttribute('id', freshId)
+      return this.add(freshId, myItem)
     }
   }
 
-  close = key => {
+  close = id => {
     const items = this.state.items
-    const keyIndex = items.findIndex(item => item.key === key)
-    if (keyIndex !== -1) {
-      items[keyIndex].show = false
-      this.setState(this.state)
+    const idIndex = items.findIndex(item => item.id === id)
+    if (idIndex !== -1) {
+      items[idIndex].show = false
+      const state = Object.assign({}, this.state)
+      this.setState(state)
     }
   }
 
   render() {
     const Notifications = this.state.items.map(item => (
-      <Notification key={item.key} item={item} close={this.close} />
+      <Notification key={item.id} {...item} onClose={this.close} />
     ))
     return <div>{Notifications}</div>
   }
 }
 
-export default {
-  notificationId,
-  NotificationManager
-}
+export default NotificationManager
