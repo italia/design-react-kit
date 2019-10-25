@@ -19,13 +19,6 @@ function getFormControlClassInternal({ plaintext, staticInput, type, addon }) {
 }
 
 export function getFormControlClass(props, cssModule) {
-  if (cssModule) {
-    console.log(
-      getFormControlClassInternal(props),
-      cssModule,
-      mapToCssModules(getFormControlClassInternal(props), cssModule)
-    )
-  }
   return mapToCssModules(getFormControlClassInternal(props), cssModule)
 }
 
