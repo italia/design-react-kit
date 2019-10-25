@@ -34,6 +34,8 @@ declare module "design-react-kit"{
     export {default as Hero} from "src/components/Hero/Hero"
     export {default as Icon} from "src/components/Icon/Icon"
     export {default as Input} from "src/components/Input/Input"
+    export {default as InputContainer} from "src/components/Input/InputContainer"
+    export {default as utils} from "src/components/Input/utils"
     export {default as LinkList} from "src/components/LinkList/LinkList"
     export {default as LinkListItem} from "src/components/LinkList/LinkListItem"
     export {default as Nav} from "src/components/Nav/Nav"
@@ -763,6 +765,32 @@ declare module 'src/components/Input/Input' {
         render(): JSX.Element;
 
     }
+
+}
+
+declare module 'src/components/Input/InputContainer' {
+    import * as React from 'react';
+
+    export interface InputContainerProps extends React.HTMLAttributes<HTMLElement> {
+    [key: string]: any;
+        value?: string;
+        id?: string;
+        label?: string;
+        infoText?: string;
+        wrapperClass?: string;
+        activeClass?: string;
+        infoTextClass?: string;
+        children?: React.ReactNode;
+    }
+
+    const InputContainer: React.FC<InputContainerProps>;
+
+    export default InputContainer;
+
+}
+
+declare module 'src/components/Input/utils' {
+    import * as React from 'react';
 
 }
 
