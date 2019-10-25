@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import { Util } from 'reactstrap'
 const { mapToCssModules } = Util
 
-export function getFormControlClass({ plaintext, staticInput, type, addon }) {
+function getFormControlClassInternal({ plaintext, staticInput, type, addon }) {
   const formControlClass = 'form-control'
   if (plaintext || staticInput) {
     return `${formControlClass}-plaintext`
@@ -16,6 +16,26 @@ export function getFormControlClass({ plaintext, staticInput, type, addon }) {
     }
   }
   return formControlClass
+}
+
+export function getFormControlClass(props, cssModule) {
+  if (cssModule) {
+    console.log(
+      getFormControlClassInternal(props),
+      cssModule,
+      mapToCssModules(getFormControlClassInternal(props), cssModule)
+    )
+  }
+  return mapToCssModules(getFormControlClassInternal(props), cssModule)
+}
+
+export function getInfoTextControlClass({ valid, invalid }, cssModule) {
+  return mapToCssModules(
+    classNames({
+      'form-text text-muted': valid || invalid
+    }),
+    cssModule
+  )
 }
 
 export function getTag({ tag, plaintext, staticInput, type }) {
@@ -49,7 +69,7 @@ export function getClasses(
   },
   cssModule
 ) {
-  const hasPlainCondition = placeholder || value || label || infoText
+  const hasPlainCondition = placeholder || label || infoText
   const baseCondition = hasPlainCondition && !normalized && !inputPassword
   const passwordOnlyCondition =
     inputPassword && (!hasPlainCondition && !normalized)

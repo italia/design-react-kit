@@ -721,6 +721,7 @@ const Evento = () => {
                         id="star5a"
                         name="ratingA"
                         value="5"
+                        cssModule={{ 'form-control': ' ' }}
                       />
                       <Label className="full" for="star5a">
                         <Icon icon="it-star-full" size="sm" />
@@ -731,6 +732,7 @@ const Evento = () => {
                         id="star4a"
                         name="ratingA"
                         value="4"
+                        cssModule={{ 'form-control': ' ' }}
                       />
                       <Label className="full" for="star4a">
                         <Icon icon="it-star-full" size="sm" />
@@ -741,6 +743,7 @@ const Evento = () => {
                         id="star3a"
                         name="ratingA"
                         value="3"
+                        cssModule={{ 'form-control': ' ' }}
                       />
                       <Label className="full" for="star3a">
                         <Icon icon="it-star-full" size="sm" />
@@ -751,6 +754,7 @@ const Evento = () => {
                         id="star2a"
                         name="ratingA"
                         value="2"
+                        cssModule={{ 'form-control': ' ' }}
                       />
                       <Label className="full" for="star2a">
                         <Icon icon="it-star-full" size="sm" />
@@ -761,6 +765,7 @@ const Evento = () => {
                         id="star1a"
                         name="ratingA"
                         value="1"
+                        cssModule={{ 'form-control': ' ' }}
                       />
                       <Label className="full" for="star1a">
                         <Icon icon="it-star-full" size="sm" />

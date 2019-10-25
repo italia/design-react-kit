@@ -7,7 +7,12 @@ import isNumber from 'is-number'
 
 import InputContainer from './InputContainer'
 import Icon from '../Icon/Icon'
-import { getTag, getFormControlClass, getClasses } from './utils'
+import {
+  getTag,
+  getFormControlClass,
+  getClasses,
+  getInfoTextControlClass
+} from './utils'
 
 const { deprecated, warnOnce } = Util
 
@@ -15,6 +20,12 @@ const propTypes = {
   children: PropTypes.node,
   type: PropTypes.string,
   size: PropTypes.string,
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  value: PropTypes.string,
+  id: PropTypes.string,
+  infoText: PropTypes.string,
+  normalized: PropTypes.bool,
   bsSize: PropTypes.string,
   state: deprecated(
     PropTypes.string,
@@ -70,27 +81,35 @@ class Input extends React.Component {
       className,
       cssModule,
       type,
-      bsSize,
       state,
-      valid,
-      invalid,
       tag,
       addon,
       static: staticInput,
       plaintext,
       innerRef,
+      label,
+      infoText,
+      placeholder,
+      normalized,
+      value,
       ...attributes
     } = this.props
+    let { bsSize, valid, invalid } = this.props
 
     const Tag = getTag({ tag, plaintext, staticInput, type })
-    const formControlClass = getFormControlClass({
-      plaintext,
-      staticInput,
-      type,
-      addon
-    })
-    const infoTextControlClass =
-      valid || invalid ? 'form-text text-muted' : null
+    const formControlClass = getFormControlClass(
+      {
+        plaintext,
+        staticInput,
+        type,
+        addon
+      },
+      cssModule
+    )
+    const infoTextControlClass = getInfoTextControlClass(
+      { valid, invalid },
+      cssModule
+    )
 
     if (state && valid == null && invalid == null) {
       invalid = state === 'danger'
@@ -171,7 +190,7 @@ class Input extends React.Component {
       wrapperClass
     }
 
-    if (placeholder || value) {
+    if (placeholder) {
       return (
         <InputContainer {...containerProps}>
           <Tag
