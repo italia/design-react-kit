@@ -5,22 +5,22 @@ import {Icon} from '../../src'
 
 const AvatarWithIcon = () => (
     <AvatarContainer>
-        <AvatarIcon size="size-xs">
+        <AvatarIcon size="xs">
           <Icon icon="it-search" />
         </AvatarIcon>
-        <AvatarIcon size="size-sm">
+        <AvatarIcon size="sm">
           <Icon icon="it-search" />
         </AvatarIcon>
         <AvatarIcon>
           <Icon icon="it-search" />
         </AvatarIcon>
-        <AvatarIcon size="size-lg">
+        <AvatarIcon size="lg">
           <Icon icon="it-search" />
         </AvatarIcon>
-        <AvatarIcon size="size-xl">
+        <AvatarIcon size="xl">
           <Icon icon="it-search" />
         </AvatarIcon>
-        <AvatarIcon size="size-xxl">
+        <AvatarIcon size="xxl">
           <Icon icon="it-search" />
         </AvatarIcon>
     </AvatarContainer>

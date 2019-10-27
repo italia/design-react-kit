@@ -13,10 +13,9 @@ const defaultProps = {
     tag: 'div',
 }
 
-const AvatarListContainer = (props) => {
+const AvatarDropdownContainer = (props) => {
     const { className, tag:Tag, wrapperClassName, ...attributes } = props
-    const wrapperClasses = classNames('link-list-wrapper', wrapperClassName)
-    const listClasses = classNames(className,'link-list avatar-group')
+    const wrapperClasses = classNames('avatar avatar-dropdown size-sm', wrapperClassName)
     return (
         <Tag className={wrapperClasses}>
             <ul {...attributes} className={listClasses}></ul>
@@ -24,7 +23,6 @@ const AvatarListContainer = (props) => {
     )
 }
 
-
-AvatarListContainer.propTypes=propTypes
-AvatarListContainer.defaultProps=defaultProps
-export default AvatarListContainer
+AvatarDropdownContainer.propTypes=propTypes
+AvatarDropdownContainer.defaultProps=defaultProps
+export default AvatarDropdownContainer

@@ -4,34 +4,29 @@ import AvatarIcon from '../../src/components/Avatar/AvatarIcon'
 import { LinkListItem } from '../../src';
 import {Icon} from '../../src'
 
-
-//Custom container was made because the classname is supposed to be link-list avatar-group
-//and in the LinkList component its only link-list
-//[BUG] : The LinkList item always forms a link to #. There is no provision to simply
-//display text without a link.
-const AvatarSmallList = () => {
+const AvatarMediaList = () => {
     return (
         <AvatarListContainer>
             <LinkListItem href="#">
-                <AvatarIcon size="sm">
+                <AvatarIcon size="md">
                     <img src = "https://randomuser.me/api/portraits/men/43.jpg" alt="Mario Rossi"/>
                 </AvatarIcon>
                 <span>Mario Rossi</span>
             </LinkListItem>
             <LinkListItem href="#">
-                <AvatarIcon size="sm" color="orange">
-                   <p aria-hidden="true">A</p>
+                <AvatarIcon size="md" color="green">
+                   <p aria-hidden="true">AG</p>
                 </AvatarIcon>
                 <span>Arianna Gallo</span>
             </LinkListItem>
             <LinkListItem>
-                <AvatarIcon size="sm" color="red">
+                <AvatarIcon size="md" color="primary">
                     <p aria-hidden="true">S</p>
                 </AvatarIcon>
                 <span>Sara Ghione</span>
             </LinkListItem>
             <LinkListItem>
-                <AvatarIcon size="sm">
+                <AvatarIcon size="md">
                     <Icon icon="it-user" />
                 </AvatarIcon>
                 <span>Antonio Esposito</span>
@@ -40,4 +35,4 @@ const AvatarSmallList = () => {
     )
 }
 
-export default AvatarSmallList
+export default AvatarMediaList

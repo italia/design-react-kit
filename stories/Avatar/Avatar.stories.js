@@ -11,6 +11,12 @@ import Esempi from '../Cookiebar/docs/example.md'
 import AvatarIcon from '../../src/components/Avatar/AvatarIcon';
 import AvatarLinkWithTooltip from './AvatarLinkWithTooltip';
 import AvatarSmallList from './AvatarSmallList';
+import AvatarMediaList from './AvatarMediaList';
+import SmallOverlappingAvatars from './SmallOverlappingAvatars';
+import MediumOverlaidAvatars from './MediumOverlaidAvatars'
+import UserPresence from './UserPresence';
+import UserStatus from './UserStatus';
+import AvatarWithAdditionalText from './AvatarWithAdditionalText';
 
 storiesOf('Componenti/Avatar',module)
     .addDecorator(withA11y)
@@ -20,7 +26,7 @@ storiesOf('Componenti/Avatar',module)
             text: Esempi,
             propTables: [AvatarWithImage,AvatarIcon]
         })
-        (()=><AvatarWithImage/>)
+        (AvatarWithImage)
     )
     .add(
         'Avatar with text',
@@ -28,7 +34,7 @@ storiesOf('Componenti/Avatar',module)
             text: Esempi,
             propTables: [AvatarWithText,AvatarIcon]
         })
-        (()=><AvatarWithText/>)
+        (AvatarWithText)
     )
     .add(
         'Avatar with icon',
@@ -36,7 +42,7 @@ storiesOf('Componenti/Avatar',module)
             text: Esempi,
             propTables: [AvatarWithIcon,AvatarIcon]
         })
-        (()=><AvatarWithIcon/>)
+        (AvatarWithIcon)
     )
     .add(
         'Avatar link',
@@ -44,7 +50,7 @@ storiesOf('Componenti/Avatar',module)
             text: Esempi,
             propTables: [AvatarLink,AvatarIcon]
         })
-        (()=><AvatarLink/>)
+        (AvatarLink)
     )
     .add(
         'Avatar link with Tooltip',
@@ -52,7 +58,7 @@ storiesOf('Componenti/Avatar',module)
             text: Esempi,
             propTables: [AvatarLink,AvatarIcon]
         })
-        (()=><AvatarLinkWithTooltip/>)
+        (AvatarLinkWithTooltip)
     )
 
     storiesOf('Componenti/Avatar.Avatar groups.List',module)
@@ -62,6 +68,59 @@ storiesOf('Componenti/Avatar',module)
             text: Esempi,
             propTables: [AvatarLink,AvatarIcon]
         })
-        (()=><AvatarSmallList/>)
+        (AvatarSmallList)
+    )
+    .add(
+        'Media List',
+        withInfo({
+            text: Esempi,
+            propTables: [AvatarLink,AvatarIcon]
+        })
+        (AvatarMediaList)
     )
     
+    storiesOf('Componenti/Avatar.Avatar groups.Overlapping Avatars', module)
+    .add(
+        'Small Overlapping Avatars',
+        withInfo({
+            text: Esempi,
+            propTables: [AvatarLink,AvatarIcon]
+        })
+        (()=><SmallOverlappingAvatars/>)
+    )
+    .add(
+        'Medium Overlaid Avatars',
+        withInfo({
+            text: Esempi,
+            propTables: [AvatarLink,AvatarIcon]
+        })
+        (()=><MediumOverlaidAvatars/>)
+    )
+
+    storiesOf('Componenti/Avatar.Behavior',module)
+    .add(
+        'User Presence',
+        withInfo({
+            text: Esempi,
+            propTables: [AvatarLink, AvatarIcon]
+        })
+        (UserPresence)
+    )
+    .add(
+        'User Status',
+        withInfo({
+            text: Esempi,
+            propTables: [AvatarLink, AvatarIcon]
+        })
+        (UserStatus)
+    )
+    
+    storiesOf('Componenti/Avatar',module)
+    .add(
+        'Avatar with additional text',
+        withInfo({
+            text: Esempi,
+            propTables: [AvatarLink, AvatarIcon]
+        })
+        (AvatarWithAdditionalText)
+    )
