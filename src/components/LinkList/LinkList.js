@@ -3,9 +3,13 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 const propTypes = {
+  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  /** Classi aggiuntive da usare per il componente LinkList */
   className: PropTypes.string,
+  /** Quando è abilitato gestisce una lista in cui ciascun elemento è composto da più componenti/elementi. */
   multiline: PropTypes.bool,
+  /** Quando è abilitato gestisce una lista annidata all'interno di un'altra lista */
   sublist: PropTypes.bool
 }
 
