@@ -20,6 +20,12 @@ const AvatarIcon = (props) => {
         [`size-${size}`]: size,
         [`avatar-${color}`]: color
       })
+      if(href){
+          return (
+                <a href="#" {...attributes} className={typeClass}></a>
+          )
+      }
+
     return (
         <Tag {...attributes} className={typeClass} />
     )
