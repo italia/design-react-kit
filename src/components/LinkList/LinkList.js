@@ -7,6 +7,8 @@ const propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   /** Classi aggiuntive da usare per il componente LinkList */
   className: PropTypes.string,
+  /** Classi aggiuntive da usare per il componente wrapper del LinkList */
+  wrapperClassName: PropTypes.string,
   /** Quando è abilitato gestisce una lista in cui ciascun elemento è composto da più componenti/elementi. */
   multiline: PropTypes.bool,
   sublist: PropTypes.bool,
@@ -20,6 +22,7 @@ const defaultProps = {
 const LinkList = props => {
   const {
     className,
+    wrapperClassName,
     tag: Tag,
     multiline,
     sublist,
@@ -28,7 +31,8 @@ const LinkList = props => {
   } = props
   const wrapperClasses = classNames(
     multiline ? 'multiline' : false,
-    'link-list-wrapper'
+    'link-list-wrapper',
+    wrapperClassName
   )
 
   const classes = classNames(
