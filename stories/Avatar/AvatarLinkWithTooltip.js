@@ -9,13 +9,13 @@ const AvatarLinkWithTooltip = () => {
     return(
     <AvatarContainer>
         <AvatarIcon size="xl" href id={ids[0]}>
-            <UncontrolledTooltip placement="left" target={()=> target(0)}>
+            <UncontrolledTooltip placement="left" target={ids[0]}>
                Anna Barbieri<br/><i>Administrator</i>
             </UncontrolledTooltip>
             <img src="https://randomuser.me/api/portraits/women/41.jpg" alt="Anna Barbieri"></img>
         </AvatarIcon>
-        <AvatarIcon size="xl" type="red" href id={ids[1]}>
-            <UncontrolledTooltip placement="top" target={()=> target(1)}>
+        <AvatarIcon size="xl" color="red" href id={ids[1]}>
+            <UncontrolledTooltip placement="top" target={ids[1]}>
                Mario Rossi<br/><i>Editor</i>
             </UncontrolledTooltip>
             <p aria-hidden="true">MR</p>
@@ -25,7 +25,7 @@ const AvatarLinkWithTooltip = () => {
         </AvatarIcon>
         <AvatarIcon size="xl" href id={ids[3]}>
           <Icon icon="it-search" />
-            <UncontrolledTooltip placement="right" target={()=> target(3)}>
+            <UncontrolledTooltip placement="right" target={ids[3]}>
                Search<br/><i>News Archive</i>
             </UncontrolledTooltip>
         </AvatarIcon>

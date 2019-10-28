@@ -1,7 +1,6 @@
 import React from 'react'
-import AvatarListContainer from '../../src/components/Avatar/AvatarListContainer'
 import AvatarIcon from '../../src/components/Avatar/AvatarIcon'
-import { LinkListItem } from '../../src';
+import { LinkListItem, LinkList } from '../../src';
 import {Icon} from '../../src'
 
 
@@ -11,7 +10,7 @@ import {Icon} from '../../src'
 //display text without a link.
 const AvatarSmallList = () => {
     return (
-        <AvatarListContainer>
+        <LinkList avatar>
             <LinkListItem href="#">
                 <AvatarIcon size="sm">
                     <img src = "https://randomuser.me/api/portraits/men/43.jpg" alt="Mario Rossi"/>
@@ -36,7 +35,7 @@ const AvatarSmallList = () => {
                 </AvatarIcon>
                 <span>Antonio Esposito</span>
             </LinkListItem>
-       </AvatarListContainer>
+       </LinkList>
     )
 }
 

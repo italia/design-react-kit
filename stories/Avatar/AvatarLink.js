@@ -8,7 +8,7 @@ const AvatarLink = () => (
         <AvatarIcon size="xl" href>
             <img src="https://randomuser.me/api/portraits/women/41.jpg" alt="Anna Barbieri"></img>
         </AvatarIcon>
-        <AvatarIcon size="xl" type="avatar-red" href>
+        <AvatarIcon size="xl" color="red" href>
             <p aria-hidden="true">MR</p>
             <span class="sr-only">Mario Rossi</span>
         </AvatarIcon>

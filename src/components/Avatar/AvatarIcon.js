@@ -12,11 +12,10 @@ const propTypes = {
 
 const defaultProps = {
     tag: 'div',
-    link: '#'
 }
 
 const AvatarIcon = (props) => {
-    const {className, tag:Tag, size, href, link, color, ...attributes } = props
+    const {className, tag:Tag, size, href, color, ...attributes } = props
     const typeClass = classNames('avatar',{
         [`size-${size}`]: size,
         [`avatar-${color}`]: color

@@ -1,20 +1,11 @@
 import React from 'react'
 import AvatarIcon from '../../src/components/Avatar/AvatarIcon'
-import {Icon, LinkListItem} from '../../src'
+import {Icon, LinkListItem, UncontrolledDropdown} from '../../src'
 import AvatarGroupContainer from '../../src/components/Avatar/AvatarGroupContainer'
 import {LinkList, Dropdown,DropdownMenu,DropdownToggle } from '../../src'
 
-class SmallOverlappingAvatars extends React.Component {
-    state = {
-        dropdownOpen: false
-      }
-    
-      toggle = () => {
-        this.setState({
-          dropdownOpen: !this.state.dropdownOpen
-        })
-      }
-    render(){
+
+const SmallOverlappingAvatars = () => {
      return (
         <AvatarGroupContainer>
            <li>
@@ -64,7 +55,7 @@ class SmallOverlappingAvatars extends React.Component {
            </li>
            <li>
            <AvatarIcon size="sm" color="dropdown">
-                <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                <UncontrolledDropdown>
                     <DropdownToggle 
                         className={`btn btn-dropdown dropdown-toggle`}
                         href="#" 
@@ -105,12 +96,12 @@ class SmallOverlappingAvatars extends React.Component {
                             </LinkListItem>
                         </LinkList>
                     </DropdownMenu>
-                </Dropdown>
+                </UncontrolledDropdown>
             </AvatarIcon>
            </li> 
         </AvatarGroupContainer>
         )
-    }
 }
+
 
 export default SmallOverlappingAvatars

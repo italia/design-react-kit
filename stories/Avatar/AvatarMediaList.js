@@ -1,12 +1,11 @@
 import React from 'react'
-import AvatarListContainer from '../../src/components/Avatar/AvatarListContainer'
 import AvatarIcon from '../../src/components/Avatar/AvatarIcon'
-import { LinkListItem } from '../../src';
+import { LinkListItem, LinkList } from '../../src';
 import {Icon} from '../../src'
 
 const AvatarMediaList = () => {
     return (
-        <AvatarListContainer>
+        <LinkList avatar>
             <LinkListItem href="#">
                 <AvatarIcon size="md">
                     <img src = "https://randomuser.me/api/portraits/men/43.jpg" alt="Mario Rossi"/>
@@ -31,7 +30,7 @@ const AvatarMediaList = () => {
                 </AvatarIcon>
                 <span>Antonio Esposito</span>
             </LinkListItem>
-       </AvatarListContainer>
+       </LinkList>
     )
 }
 

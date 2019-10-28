@@ -15,7 +15,7 @@ const defaultProps = {
 const AvatarWrapper = (props) => {
     const {className, tag:Tag, extra, ...attributes} = props
     const wrapperClass = classNames('avatar-wrapper',className,{
-        [`avatar-${extra}`]:extra
+        [`avatar-extra-${extra}`]:extra
     })
     return(
         <Tag {...attributes} className={wrapperClass} />

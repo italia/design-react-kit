@@ -2,19 +2,9 @@ import React from 'react'
 import AvatarIcon from '../../src/components/Avatar/AvatarIcon'
 import {Icon, LinkListItem} from '../../src'
 import AvatarGroupContainer from '../../src/components/Avatar/AvatarGroupContainer'
-import {LinkList, Dropdown,DropdownMenu,DropdownToggle } from '../../src'
+import {LinkList, UncontrolledDropdown,DropdownMenu,DropdownToggle } from '../../src'
 
-class MediumOverlaidAvatars extends React.Component {
-    state = {
-        dropdownOpen: false
-      }
-    
-      toggle = () => {
-        this.setState({
-          dropdownOpen: !this.state.dropdownOpen
-        })
-      }
-    render(){
+const MediumOverlaidAvatars = () => {
      return (
         <AvatarGroupContainer>
            <li>
@@ -46,7 +36,7 @@ class MediumOverlaidAvatars extends React.Component {
            </li>
            <li>
            <AvatarIcon size="md" color="dropdown">
-                <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                <UncontrolledDropdown>
                     <DropdownToggle 
                         className={`btn btn-dropdown dropdown-toggle`}
                         href="#" 
@@ -87,12 +77,12 @@ class MediumOverlaidAvatars extends React.Component {
                             </LinkListItem>
                         </LinkList>
                     </DropdownMenu>
-                </Dropdown>
+                </UncontrolledDropdown>
             </AvatarIcon>
            </li> 
         </AvatarGroupContainer>
         )
-    }
 }
+
 
 export default MediumOverlaidAvatars

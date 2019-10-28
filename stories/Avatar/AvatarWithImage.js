@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import AvatarContainer from '../../src/components/Avatar/AvatarContainer'
 import AvatarIcon from '../../src/components/Avatar/AvatarIcon';
 
