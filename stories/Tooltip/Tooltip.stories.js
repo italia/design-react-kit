@@ -11,7 +11,6 @@ import EsempiInterattivi from './docs/EsempiInterattivi.md'
 
 const EsempiComponent = () => {
   const ids = ['Example1', 'Example2', 'Example3']
-  const target = i => document.getElementById(ids[i])
 
   return (
     <div className="bd-example tooltip-demo">
@@ -68,7 +67,6 @@ const EsempiComponent = () => {
 
 const PosizioniComponent = () => {
   const ids = ['example1', 'example2', 'example3', 'example4', 'example5']
-  const target = i => document.getElementById(ids[i])
 
   return (
     <div style={{ padding: 100 }}>
