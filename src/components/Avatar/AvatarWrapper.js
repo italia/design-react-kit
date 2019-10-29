@@ -2,26 +2,24 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-
 const propTypes = {
-    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-    className: PropTypes.string,
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  className: PropTypes.string,
+  extra: PropTypes.string
 }
 
 const defaultProps = {
-    tag: 'div',
+  tag: 'div'
 }
 
-const AvatarWrapper = (props) => {
-    const {className, tag:Tag, extra, ...attributes} = props
-    const wrapperClass = classNames('avatar-wrapper',className,{
-        [`avatar-extra-${extra}`]:extra
-    })
-    return(
-        <Tag {...attributes} className={wrapperClass} />
-    )
+const AvatarWrapper = props => {
+  const { className, tag: Tag, extra, ...attributes } = props
+  const wrapperClass = classNames('avatar-wrapper', className, {
+    [`avatar-extra-${extra}`]: extra
+  })
+  return <Tag {...attributes} className={wrapperClass} />
 }
 
 AvatarWrapper.propTypes = propTypes
-AvatarWrapper.defaultProps=defaultProps
+AvatarWrapper.defaultProps = defaultProps
 export default AvatarWrapper

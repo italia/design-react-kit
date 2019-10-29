@@ -1,29 +1,45 @@
 import React from 'react'
 import AvatarContainer from '../../src/components/Avatar/AvatarContainer'
-import AvatarIcon from '../../src/components/Avatar/AvatarIcon';
+import AvatarIcon from '../../src/components/Avatar/AvatarIcon'
 
 const AvatarWithImage = () => (
-    <AvatarContainer>
+  <AvatarContainer>
     <AvatarIcon size="xs">
-        <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"/>
+      <img
+        src="https://randomuser.me/api/portraits/men/46.jpg"
+        alt="Mario Rossi"
+      />
     </AvatarIcon>
     <AvatarIcon size="sm">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Luisa Neri"/>
+      <img
+        src="https://randomuser.me/api/portraits/women/44.jpg"
+        alt="Luisa Neri"
+      />
     </AvatarIcon>
     <AvatarIcon>
-        <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="Gioacchino Romani"></img>
+      <img
+        src="https://randomuser.me/api/portraits/men/43.jpg"
+        alt="Gioacchino Romani"></img>
     </AvatarIcon>
     <AvatarIcon size="lg">
-        <img src="https://randomuser.me/api/portraits/women/41.jpg" alt="Anna Barbieri"/>
+      <img
+        src="https://randomuser.me/api/portraits/women/41.jpg"
+        alt="Anna Barbieri"
+      />
     </AvatarIcon>
     <AvatarIcon size="xl">
-        <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Carlo Poli"/>
+      <img
+        src="https://randomuser.me/api/portraits/men/33.jpg"
+        alt="Carlo Poli"
+      />
     </AvatarIcon>
     <AvatarIcon size="xxl">
-        <img src="https://randomuser.me/api/portraits/women/24.jpg" alt="Giovanna Ferrero"/>
+      <img
+        src="https://randomuser.me/api/portraits/women/24.jpg"
+        alt="Giovanna Ferrero"
+      />
     </AvatarIcon>
-</AvatarContainer>
-
+  </AvatarContainer>
 )
 
 export default AvatarWithImage
