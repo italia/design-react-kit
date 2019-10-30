@@ -92,6 +92,15 @@ export {
   default as AccordionHeader
 } from './components/Accordion/AccordionHeader'
 export { default as AccordionBody } from './components/Accordion/AccordionBody'
+export { default as AvatarContainer } from './components/Avatar/AvatarContainer'
+export {
+  default as AvatarGroupContainer
+} from './components/Avatar/AvatarGroupContainer'
+export { default as AvatarExtraText } from './components/Avatar/AvatarExtraText'
+export { default as AvatarIcon } from './components/Avatar/AvatarIcon'
+export { default as AvatarPresence } from './components/Avatar/AvatarPresence'
+export { default as AvatarStatus } from './components/Avatar/AvatarStatus'
+export { default as AvatarWrapper } from './components/Avatar/AvatarWrapper'
 export { default as Badge } from './components/Badge/Badge'
 export { default as Button } from './components/Button/Button'
 export { default as Collapse } from './components/Collapse/Collapse'

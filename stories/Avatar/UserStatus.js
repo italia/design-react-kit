@@ -1,9 +1,11 @@
 import React from 'react'
-import AvatarContainer from '../../src/components/Avatar/AvatarContainer'
-import AvatarWrapper from '../../src/components/Avatar/AvatarWrapper'
-import AvatarIcon from '../../src/components/Avatar/AvatarIcon'
-import AvatarStatus from '../../src/components/Avatar/AvatarStatus'
-import { Icon } from '../../src'
+import {
+  AvatarIcon,
+  AvatarContainer,
+  AvatarStatus,
+  AvatarWrapper,
+  Icon
+} from '../../src'
 
 const UserStatus = () => {
   return (

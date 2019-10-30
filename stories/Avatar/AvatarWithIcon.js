@@ -1,7 +1,5 @@
 import React from 'react'
-import AvatarContainer from '../../src/components/Avatar/AvatarContainer'
-import AvatarIcon from '../../src/components/Avatar/AvatarIcon'
-import { Icon } from '../../src'
+import { Icon, AvatarIcon, AvatarContainer } from '../../src'
 
 const AvatarWithIcon = () => (
   <AvatarContainer>

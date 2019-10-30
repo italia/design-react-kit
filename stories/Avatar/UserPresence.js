@@ -1,10 +1,12 @@
 import React from 'react'
 
-import AvatarContainer from '../../src/components/Avatar/AvatarContainer'
-import AvatarIcon from '../../src/components/Avatar/AvatarIcon'
-import AvatarPresence from '../../src/components/Avatar/AvatarPresence'
-import AvatarWrapper from '../../src/components/Avatar/AvatarWrapper'
-import { Icon } from '../../src'
+import {
+  AvatarIcon,
+  AvatarContainer,
+  AvatarPresence,
+  AvatarWrapper,
+  Icon
+} from '../../src'
 
 const UserPresence = () => {
   return (

@@ -21,7 +21,7 @@ const AvatarIcon = props => {
     [`avatar-${color}`]: color
   })
   if (href) {
-    return <a href="#" {...attributes} className={typeClass}></a>
+    return <a href={href} {...attributes} className={typeClass}></a>
   }
 
   return <Tag {...attributes} className={typeClass} />

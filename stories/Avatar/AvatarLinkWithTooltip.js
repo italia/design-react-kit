@@ -1,7 +1,10 @@
 import React from 'react'
-import AvatarContainer from '../../src/components/Avatar/AvatarContainer'
-import AvatarIcon from '../../src/components/Avatar/AvatarIcon'
-import { Icon, UncontrolledTooltip } from '../../src'
+import {
+  Icon,
+  UncontrolledTooltip,
+  AvatarIcon,
+  AvatarContainer
+} from '../../src'
 
 const AvatarLinkWithTooltip = () => {
   const ids = ['Example1', 'Example2', 'Example3', 'Example4']

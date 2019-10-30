@@ -1,6 +1,7 @@
 import React from 'react'
-import AvatarIcon from '../../src/components/Avatar/AvatarIcon'
 import {
+  AvatarIcon,
+  AvatarGroupContainer,
   Icon,
   LinkListItem,
   UncontrolledDropdown,
@@ -8,7 +9,6 @@ import {
   DropdownMenu,
   DropdownToggle
 } from '../../src'
-import AvatarGroupContainer from '../../src/components/Avatar/AvatarGroupContainer'
 
 const SmallOverlappingAvatars = () => {
   return (

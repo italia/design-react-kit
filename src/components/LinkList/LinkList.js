@@ -7,7 +7,7 @@ const propTypes = {
   className: PropTypes.string,
   multiline: PropTypes.bool,
   sublist: PropTypes.bool,
-  avatar: PropTypes.string,
+  avatar: PropTypes.bool,
 }
 
 const defaultProps = {
@@ -15,12 +15,24 @@ const defaultProps = {
 }
 
 const LinkList = props => {
-  const { className, tag: Tag, multiline, sublist, avatar, ...attributes } = props
+  const {
+    className,
+    tag: Tag,
+    multiline,
+    sublist,
+    avatar,
+    ...attributes
+  } = props
   const wrapperClasses = classNames(
     multiline ? 'multiline' : false,
     'link-list-wrapper'
   )
-  const classes = classNames(className, sublist ? 'link-sublist' : 'link-list', avatar ? 'avatar-group':null)
+  
+  const classes = classNames(
+    className,
+    sublist ? 'link-sublist' : 'link-list',
+    avatar && 'avatar-group'
+  )
 
   if (sublist) {
     return <ul {...attributes} className={classes} />

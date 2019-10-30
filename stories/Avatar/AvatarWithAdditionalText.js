@@ -1,8 +1,10 @@
 import React from 'react'
-import AvatarContainer from '../../src/components/Avatar/AvatarContainer'
-import AvatarIcon from '../../src/components/Avatar/AvatarIcon'
-import AvatarExtraText from '../../src/components/Avatar/AvatarExtraText'
-import AvatarWrapper from '../../src/components/Avatar/AvatarWrapper'
+import {
+  AvatarContainer,
+  AvatarIcon,
+  AvatarExtraText,
+  AvatarWrapper
+} from '../../src'
 
 const AvatarWithAdditionalText = () => {
   return (

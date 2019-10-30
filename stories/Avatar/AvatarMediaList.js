@@ -1,6 +1,5 @@
 import React from 'react'
-import AvatarIcon from '../../src/components/Avatar/AvatarIcon'
-import { LinkListItem, LinkList, Icon } from '../../src'
+import { AvatarIcon, LinkListItem, LinkList, Icon } from '../../src'
 
 const AvatarMediaList = () => {
   return (

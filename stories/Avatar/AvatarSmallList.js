@@ -1,6 +1,5 @@
 import React from 'react'
-import AvatarIcon from '../../src/components/Avatar/AvatarIcon'
-import { LinkListItem, LinkList, Icon } from '../../src'
+import { AvatarIcon, LinkListItem, LinkList, Icon } from '../../src'
 
 // Custom container was made because the classname is supposed to be link-list avatar-group
 // and in the LinkList component its only link-list
