@@ -6,7 +6,8 @@ const propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
   multiline: PropTypes.bool,
-  sublist: PropTypes.bool
+  sublist: PropTypes.bool,
+  header: PropTypes.element,
 }
 
 const defaultProps = {
@@ -20,13 +21,19 @@ const LinkList = props => {
     'link-list-wrapper'
   )
   const classes = classNames(className, sublist ? 'link-sublist' : 'link-list')
-  const headerClasses = classNames('no_toc',className)
   if (sublist) {
     return <ul {...attributes} className={classes} />
   }
+  if (header) {
+    return (
+      <Tag className={wrapperClasses}>
+        {header}
+        <ul {...attributes} className={classes} />
+      </Tag>
+    )
+  }
   return (
     <Tag className={wrapperClasses}>
-      <h3 {...attributes} className={headerClasses}>{header}</h3>
       <ul {...attributes} className={classes} />
     </Tag>
   )
