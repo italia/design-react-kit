@@ -3,6 +3,13 @@ declare module "design-react-kit"{
     export {default as AccordionBody} from "src/components/Accordion/AccordionBody"
     export {default as AccordionHeader} from "src/components/Accordion/AccordionHeader"
     export {default as Autocomplete} from "src/components/Autocomplete/Autocomplete"
+    export {default as AvatarContainer} from "src/components/Avatar/AvatarContainer"
+    export {default as AvatarExtraText} from "src/components/Avatar/AvatarExtraText"
+    export {default as AvatarGroupContainer} from "src/components/Avatar/AvatarGroupContainer"
+    export {default as AvatarIcon} from "src/components/Avatar/AvatarIcon"
+    export {default as AvatarPresence} from "src/components/Avatar/AvatarPresence"
+    export {default as AvatarStatus} from "src/components/Avatar/AvatarStatus"
+    export {default as AvatarWrapper} from "src/components/Avatar/AvatarWrapper"
     export {default as Badge} from "src/components/Badge/Badge"
     export {default as BottomNav} from "src/components/BottomNav/BottomNav"
     export {default as BottomNavItem} from "src/components/BottomNav/BottomNavItem"
@@ -114,6 +121,134 @@ declare module 'src/components/Accordion/AccordionHeader' {
 
 declare module 'src/components/Autocomplete/Autocomplete' {
     import * as React from 'react';
+
+}
+
+declare module 'src/components/Avatar/AvatarContainer' {
+    import * as React from 'react';
+
+    export type AvatarContainerTag = ((...args: any[])=>any) | string;
+
+    export interface AvatarContainerProps extends React.HTMLAttributes<HTMLElement> {
+    [key: string]: any;
+        tag?: AvatarContainerTag;
+        className?: string;
+    }
+
+    const AvatarContainer: React.FC<AvatarContainerProps>;
+
+    export default AvatarContainer;
+
+}
+
+declare module 'src/components/Avatar/AvatarExtraText' {
+    import * as React from 'react';
+
+    export type AvatarExtraTextTag = ((...args: any[])=>any) | string;
+
+    export interface AvatarExtraTextProps extends React.HTMLAttributes<HTMLElement> {
+    [key: string]: any;
+        tag?: AvatarExtraTextTag;
+        className?: string;
+    }
+
+    const AvatarExtraText: React.FC<AvatarExtraTextProps>;
+
+    export default AvatarExtraText;
+
+}
+
+declare module 'src/components/Avatar/AvatarGroupContainer' {
+    import * as React from 'react';
+
+    export type AvatarGroupContainerTag = ((...args: any[])=>any) | string;
+
+    export interface AvatarGroupContainerProps extends React.HTMLAttributes<HTMLElement> {
+    [key: string]: any;
+        tag?: AvatarGroupContainerTag;
+        className?: string;
+        wrapperClassName?: string;
+    }
+
+    const AvatarGroupContainer: React.FC<AvatarGroupContainerProps>;
+
+    export default AvatarGroupContainer;
+
+}
+
+declare module 'src/components/Avatar/AvatarIcon' {
+    import * as React from 'react';
+
+    export type AvatarIconTag = ((...args: any[])=>any) | string;
+
+    export type AvatarIconHref = ((...args: any[])=>any) | string;
+
+    export interface AvatarIconProps extends React.HTMLAttributes<HTMLElement> {
+    [key: string]: any;
+        tag?: AvatarIconTag;
+        className?: string;
+        href?: AvatarIconHref;
+        color?: string;
+        size?: string;
+    }
+
+    const AvatarIcon: React.FC<AvatarIconProps>;
+
+    export default AvatarIcon;
+
+}
+
+declare module 'src/components/Avatar/AvatarPresence' {
+    import * as React from 'react';
+
+    export type AvatarPresenceTag = ((...args: any[])=>any) | string;
+
+    export interface AvatarPresenceProps extends React.HTMLAttributes<HTMLElement> {
+    [key: string]: any;
+        tag?: AvatarPresenceTag;
+        className?: string;
+        presence?: string;
+    }
+
+    const AvatarPresence: React.FC<AvatarPresenceProps>;
+
+    export default AvatarPresence;
+
+}
+
+declare module 'src/components/Avatar/AvatarStatus' {
+    import * as React from 'react';
+
+    export type AvatarStatusTag = ((...args: any[])=>any) | string;
+
+    export interface AvatarStatusProps extends React.HTMLAttributes<HTMLElement> {
+    [key: string]: any;
+        tag?: AvatarStatusTag;
+        className?: string;
+        status?: string;
+    }
+
+    const AvatarStatus: React.FC<AvatarStatusProps>;
+
+    export default AvatarStatus;
+
+}
+
+declare module 'src/components/Avatar/AvatarWrapper' {
+    import * as React from 'react';
+
+    export type AvatarWrapperTag = ((...args: any[])=>any) | string;
+
+    export interface AvatarWrapperProps extends React.HTMLAttributes<HTMLElement> {
+    [key: string]: any;
+        tag?: AvatarWrapperTag;
+        className?: string;
+        extra?: string;
+    }
+
+    const AvatarWrapper: React.FC<AvatarWrapperProps>;
+
+    export default AvatarWrapper;
 
 }
 
@@ -773,10 +908,20 @@ declare module 'src/components/LinkList/LinkList' {
 
     export interface LinkListProps extends React.HTMLAttributes<HTMLElement> {
     [key: string]: any;
+        /**
+         * Utilizzarlo in caso di utilizzo di componenti personalizzati
+         */
         tag?: LinkListTag;
+        /**
+         * Classi aggiuntive da usare per il componente LinkList
+         */
         className?: string;
+        /**
+         * Quando è abilitato gestisce una lista in cui ciascun elemento è composto da più componenti/elementi.
+         */
         multiline?: boolean;
         sublist?: boolean;
+        avatar?: boolean;
     }
 
     const LinkList: React.FC<LinkListProps>;
@@ -792,13 +937,37 @@ declare module 'src/components/LinkList/LinkListItem' {
 
     export interface LinkListItemProps extends React.HTMLAttributes<HTMLElement> {
     [key: string]: any;
+        /**
+         * Indica se l'elemento è attivo o no
+         */
         active?: boolean;
+        /**
+         * Indica se l'elemento è disabilitato o no
+         */
         disabled?: boolean;
+        /**
+         * Indica se l'elemento è un titolo.
+         */
         header?: boolean;
+        /**
+         * Indica se l'elemento è un divisore
+         */
         divider?: boolean;
+        /**
+         * Utilizzarlo in caso di utilizzo di componenti personalizzati
+         */
         tag?: LinkListItemTag;
+        /**
+         * Classi aggiuntive da usare per il componente LinkListItem
+         */
         className?: any;
+        /**
+         * Indica il link a cui l'elemento deve puntare.
+         */
         href?: string;
+        /**
+         * Indica la taglia/grandezza dell'elemento
+         */
         size?: string;
     }
 

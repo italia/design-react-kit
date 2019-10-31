@@ -10,7 +10,7 @@ const propTypes = {
   /** Quando è abilitato gestisce una lista in cui ciascun elemento è composto da più componenti/elementi. */
   multiline: PropTypes.bool,
   sublist: PropTypes.bool,
-  avatar: PropTypes.bool,
+  avatar: PropTypes.bool
 }
 
 const defaultProps = {
@@ -30,7 +30,7 @@ const LinkList = props => {
     multiline ? 'multiline' : false,
     'link-list-wrapper'
   )
-  
+
   const classes = classNames(
     className,
     sublist ? 'link-sublist' : 'link-list',

@@ -2,13 +2,11 @@
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react'), require('react-popper'), require('react-dom'), require('react-transition-group/Transition')) :
 	typeof define === 'function' && define.amd ? define(['exports', 'react', 'react-popper', 'react-dom', 'react-transition-group/Transition'], factory) :
 	(global = global || self, factory(global.DesignReactKit = {}, global.React, global.ReactPopper, global.ReactDOM, global.ReactTransitionGroup.Transition));
-}(this, function (exports, React, reactPopper, ReactDOM, Transition) { 'use strict';
+}(this, (function (exports, React, reactPopper, ReactDOM, Transition) { 'use strict';
 
 	var React__default = 'default' in React ? React['default'] : React;
 	ReactDOM = ReactDOM && ReactDOM.hasOwnProperty('default') ? ReactDOM['default'] : ReactDOM;
 	Transition = Transition && Transition.hasOwnProperty('default') ? Transition['default'] : Transition;
-
-	var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
 	function unwrapExports (x) {
 		return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
@@ -1287,169 +1285,6 @@
 	  })();
 	});
 
-	/**
-	 * Lodash (Custom Build) <https://lodash.com/>
-	 * Build: `lodash modularize exports="npm" -o ./`
-	 * Copyright JS Foundation and other contributors <https://js.foundation/>
-	 * Released under MIT license <https://lodash.com/license>
-	 * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
-	 * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 */
-
-	/** `Object#toString` result references. */
-
-	var asyncTag = '[object AsyncFunction]',
-	    funcTag = '[object Function]',
-	    genTag = '[object GeneratorFunction]',
-	    nullTag = '[object Null]',
-	    proxyTag = '[object Proxy]',
-	    undefinedTag = '[object Undefined]';
-	/** Detect free variable `global` from Node.js. */
-
-	var freeGlobal = typeof commonjsGlobal == 'object' && commonjsGlobal && commonjsGlobal.Object === Object && commonjsGlobal;
-	/** Detect free variable `self`. */
-
-	var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
-	/** Used as a reference to the global object. */
-
-	var root = freeGlobal || freeSelf || Function('return this')();
-	/** Used for built-in method references. */
-
-	var objectProto = Object.prototype;
-	/** Used to check objects for own properties. */
-
-	var hasOwnProperty$1 = objectProto.hasOwnProperty;
-	/**
-	 * Used to resolve the
-	 * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
-	 * of values.
-	 */
-
-	var nativeObjectToString = objectProto.toString;
-	/** Built-in value references. */
-
-	var Symbol$1 = root.Symbol,
-	    symToStringTag = Symbol$1 ? Symbol$1.toStringTag : undefined;
-	/**
-	 * The base implementation of `getTag` without fallbacks for buggy environments.
-	 *
-	 * @private
-	 * @param {*} value The value to query.
-	 * @returns {string} Returns the `toStringTag`.
-	 */
-
-	function baseGetTag(value) {
-	  if (value == null) {
-	    return value === undefined ? undefinedTag : nullTag;
-	  }
-
-	  return symToStringTag && symToStringTag in Object(value) ? getRawTag(value) : objectToString(value);
-	}
-	/**
-	 * A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
-	 *
-	 * @private
-	 * @param {*} value The value to query.
-	 * @returns {string} Returns the raw `toStringTag`.
-	 */
-
-
-	function getRawTag(value) {
-	  var isOwn = hasOwnProperty$1.call(value, symToStringTag),
-	      tag = value[symToStringTag];
-
-	  try {
-	    value[symToStringTag] = undefined;
-	    var unmasked = true;
-	  } catch (e) {}
-
-	  var result = nativeObjectToString.call(value);
-
-	  if (unmasked) {
-	    if (isOwn) {
-	      value[symToStringTag] = tag;
-	    } else {
-	      delete value[symToStringTag];
-	    }
-	  }
-
-	  return result;
-	}
-	/**
-	 * Converts `value` to a string using `Object.prototype.toString`.
-	 *
-	 * @private
-	 * @param {*} value The value to convert.
-	 * @returns {string} Returns the converted string.
-	 */
-
-
-	function objectToString(value) {
-	  return nativeObjectToString.call(value);
-	}
-	/**
-	 * Checks if `value` is classified as a `Function` object.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 0.1.0
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is a function, else `false`.
-	 * @example
-	 *
-	 * _.isFunction(_);
-	 * // => true
-	 *
-	 * _.isFunction(/abc/);
-	 * // => false
-	 */
-
-
-	function isFunction(value) {
-	  if (!isObject(value)) {
-	    return false;
-	  } // The use of `Object#toString` avoids issues with the `typeof` operator
-	  // in Safari 9 which returns 'object' for typed arrays and other constructors.
-
-
-	  var tag = baseGetTag(value);
-	  return tag == funcTag || tag == genTag || tag == asyncTag || tag == proxyTag;
-	}
-	/**
-	 * Checks if `value` is the
-	 * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
-	 * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 0.1.0
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
-	 * @example
-	 *
-	 * _.isObject({});
-	 * // => true
-	 *
-	 * _.isObject([1, 2, 3]);
-	 * // => true
-	 *
-	 * _.isObject(_.noop);
-	 * // => true
-	 *
-	 * _.isObject(null);
-	 * // => false
-	 */
-
-
-	function isObject(value) {
-	  var type = typeof value;
-	  return value != null && (type == 'object' || type == 'function');
-	}
-
-	var lodash_isfunction = isFunction;
-
 	function getScrollbarWidth() {
 	  var scrollDiv = document.createElement('div'); // .modal-scrollbar-measure styles // https://github.com/twbs/bootstrap/blob/v4.0.0-alpha.4/scss/_modal.scss#L106-L113
 
@@ -1619,12 +1454,58 @@
 
 	  return false;
 	}
+
+	function getTag(value) {
+	  if (value == null) {
+	    return value === undefined ? '[object Undefined]' : '[object Null]';
+	  }
+
+	  return Object.prototype.toString.call(value);
+	}
+
+	function toNumber(value) {
+	  var type = typeof value;
+	  var NAN = 0 / 0;
+
+	  if (type === 'number') {
+	    return value;
+	  }
+
+	  if (type === 'symbol' || type === 'object' && getTag(value) === '[object Symbol]') {
+	    return NAN;
+	  }
+
+	  if (isObject(value)) {
+	    var other = typeof value.valueOf === 'function' ? value.valueOf() : value;
+	    value = isObject(other) ? "" + other : other;
+	  }
+
+	  if (type !== 'string') {
+	    return value === 0 ? value : +value;
+	  }
+
+	  value = value.replace(/^\s+|\s+$/g, '');
+	  var isBinary = /^0b[01]+$/i.test(value);
+	  return isBinary || /^0o[0-7]+$/i.test(value) ? parseInt(value.slice(2), isBinary ? 2 : 8) : /^[-+]0x[0-9a-f]+$/i.test(value) ? NAN : +value;
+	}
+	function isObject(value) {
+	  var type = typeof value;
+	  return value != null && (type === 'object' || type === 'function');
+	}
+	function isFunction(value) {
+	  if (!isObject(value)) {
+	    return false;
+	  }
+
+	  var tag = getTag(value);
+	  return tag === '[object Function]' || tag === '[object AsyncFunction]' || tag === '[object GeneratorFunction]' || tag === '[object Proxy]';
+	}
 	function findDOMElements(target) {
 	  if (isReactRefObj(target)) {
 	    return target.current;
 	  }
 
-	  if (lodash_isfunction(target)) {
+	  if (isFunction(target)) {
 	    return target();
 	  }
 
@@ -1651,10 +1532,10 @@
 
 	  return Array.isArray(els) || canUseDOM && typeof els.length === 'number';
 	}
-	function getTarget(target) {
+	function getTarget(target, allElements) {
 	  var els = findDOMElements(target);
 
-	  if (isArrayOrNodeList(els)) {
+	  if (isArrayOrNodeList(els) && !allElements) {
 	    return els[0];
 	  }
 
@@ -1716,6 +1597,9 @@
 		PopperPlacements: PopperPlacements,
 		canUseDOM: canUseDOM,
 		isReactRefObj: isReactRefObj,
+		toNumber: toNumber,
+		isObject: isObject,
+		isFunction: isFunction,
 		findDOMElements: findDOMElements,
 		isArrayOrNodeList: isArrayOrNodeList,
 		getTarget: getTarget,
@@ -1778,44 +1662,6 @@
 	Row.propTypes = propTypes$2;
 	Row.defaultProps = defaultProps$1;
 
-	/**
-	 * lodash 3.0.2 (Custom Build) <https://lodash.com/>
-	 * Build: `lodash modern modularize exports="npm" -o ./`
-	 * Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <https://lodash.com/license>
-	 */
-
-	/**
-	 * Checks if `value` is the [language type](https://es5.github.io/#x8) of `Object`.
-	 * (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
-	 * @example
-	 *
-	 * _.isObject({});
-	 * // => true
-	 *
-	 * _.isObject([1, 2, 3]);
-	 * // => true
-	 *
-	 * _.isObject(1);
-	 * // => false
-	 */
-	function isObject$1(value) {
-	  // Avoid a V8 JIT bug in Chrome 19-20.
-	  // See https://code.google.com/p/v8/issues/detail?id=2291 for more details.
-	  var type = typeof value;
-	  return !!value && (type == 'object' || type == 'function');
-	}
-
-	var lodash_isobject = isObject$1;
-
 	var colWidths = ['xs', 'sm', 'md', 'lg', 'xl'];
 	var stringOrNumberProp = propTypes.oneOfType([propTypes.number, propTypes.string]);
 	var columnProps = propTypes.oneOfType([propTypes.bool, propTypes.number, propTypes.string, propTypes.shape({
@@ -1867,7 +1713,7 @@
 
 	    var isXs = !i;
 
-	    if (lodash_isobject(columnProp)) {
+	    if (isObject(columnProp)) {
 	      var _classNames;
 
 	      var colSizeInterfix = isXs ? '-' : "-" + colWidth + "-";
@@ -1991,7 +1837,9 @@
 	      attributes = _objectWithoutPropertiesLoose(props, ["className", "cssModule", "children", "tag"]);
 
 	  var classes = mapToCssModules(classnames(className, 'navbar-toggler'), cssModule);
-	  return React__default.createElement(Tag, _extends({}, attributes, {
+	  return React__default.createElement(Tag, _extends({
+	    "aria-label": "Toggle navigation"
+	  }, attributes, {
 	    className: classes
 	  }), children || React__default.createElement("span", {
 	    className: mapToCssModules('navbar-toggler-icon', cssModule)
@@ -2338,12 +2186,14 @@
 	 *  isOpen: PropTypes.bool.isRequired,
 	 *  direction: PropTypes.oneOf(['up', 'down', 'left', 'right']).isRequired,
 	 *  inNavbar: PropTypes.bool.isRequired,
+	 *  disabled: PropTypes.bool
 	 * }
 	 */
 
 	var DropdownContext = React__default.createContext({});
 
 	var propTypes$d = {
+	  a11y: propTypes.bool,
 	  disabled: propTypes.bool,
 	  direction: propTypes.oneOf(['up', 'down', 'left', 'right']),
 	  group: propTypes.bool,
@@ -2361,6 +2211,7 @@
 	  setActiveFromChild: propTypes.bool
 	};
 	var defaultProps$c = {
+	  a11y: true,
 	  isOpen: false,
 	  direction: 'down',
 	  nav: false,
@@ -2392,10 +2243,11 @@
 
 	  _proto.getContextValue = function getContextValue() {
 	    return {
-	      toggle: this.props.toggle,
+	      toggle: this.toggle,
 	      isOpen: this.props.isOpen,
 	      direction: this.props.direction === 'down' && this.props.dropup ? 'up' : this.props.direction,
-	      inNavbar: this.props.inNavbar
+	      inNavbar: this.props.inNavbar,
+	      disabled: this.props.disabled
 	    };
 	  };
 
@@ -2457,7 +2309,7 @@
 	  _proto.handleKeyDown = function handleKeyDown(e) {
 	    var _this4 = this;
 
-	    if (/input|textarea/i.test(e.target.tagName) || keyCodes.tab === e.which && e.target.getAttribute('role') !== 'menuitem') {
+	    if (/input|textarea/i.test(e.target.tagName) || keyCodes.tab === e.which && (e.target.getAttribute('role') !== 'menuitem' || !this.props.a11y)) {
 	      return;
 	    }
 
@@ -2470,6 +2322,8 @@
 	        setTimeout(function () {
 	          return _this4.getMenuItems()[0].focus();
 	        });
+	      } else if (this.props.isOpen && e.which === keyCodes.esc) {
+	        this.toggle(e);
 	      }
 	    }
 
@@ -2536,7 +2390,7 @@
 	  _proto.render = function render() {
 	    var _classNames, _ref;
 
-	    var _omit = omit(this.props, ['toggle', 'disabled', 'inNavbar']),
+	    var _omit = omit(this.props, ['toggle', 'disabled', 'inNavbar', 'a11y']),
 	        className = _omit.className,
 	        cssModule = _omit.cssModule,
 	        direction = _omit.direction,
@@ -2844,7 +2698,7 @@
 	      var position1 = directionPositionMap[this.context.direction] || 'bottom';
 	      var position2 = right ? 'end' : 'start';
 	      var poperPlacement = position1 + "-" + position2;
-	      var poperModifiers = !flip ? _objectSpread({}, modifiers, noFlipModifier) : modifiers;
+	      var poperModifiers = !flip ? _objectSpread({}, modifiers, {}, noFlipModifier) : modifiers;
 	      var popperPositionFixed = !!positionFixed;
 	      return React__default.createElement(reactPopper.Popper, {
 	        placement: poperPlacement,
@@ -2917,7 +2771,7 @@
 	  var _proto = DropdownToggle.prototype;
 
 	  _proto.onClick = function onClick(e) {
-	    if (this.props.disabled) {
+	    if (this.props.disabled || this.context.disabled) {
 	      e.preventDefault();
 	      return;
 	    }
@@ -5036,7 +4890,7 @@
 	    document.addEventListener('keyup', this.handleKeyPress);
 	  };
 
-	  _proto.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+	  _proto.UNSAFE_componentWillReceiveProps = function UNSAFE_componentWillReceiveProps(nextProps) {
 	    this.setInterval(nextProps); // Calculate the direction to turn
 
 	    if (this.props.activeIndex + 1 === nextProps.activeIndex) {
@@ -5272,6 +5126,9 @@
 	  var screenReaderClasses = mapToCssModules(classnames('sr-only'), cssModule);
 	  return React__default.createElement("a", {
 	    className: anchorClasses,
+	    style: {
+	      cursor: "pointer"
+	    },
 	    role: "button",
 	    tabIndex: "0",
 	    onClick: function onClick(e) {
@@ -5339,8 +5196,8 @@
 	};
 
 	CarouselCaption.propTypes = {
-	  captionHeader: propTypes.string,
-	  captionText: propTypes.string.isRequired,
+	  captionHeader: propTypes.node,
+	  captionText: propTypes.node.isRequired,
 	  cssModule: propTypes.object,
 	  className: propTypes.string
 	};
@@ -5425,10 +5282,11 @@
 
 	    var activeIndex = this.state.activeIndex;
 	    var slides = items.map(function (item) {
+	      var key = item.key || item.src;
 	      return React__default.createElement(CarouselItem, {
 	        onExiting: _this2.onExiting,
 	        onExited: _this2.onExited,
-	        key: item.src
+	        key: key
 	      }, React__default.createElement("img", {
 	        className: "d-block w-100",
 	        src: item.src,
@@ -5587,7 +5445,6 @@
 	    var _this;
 
 	    _this = _React$Component.call(this, props) || this;
-	    _this.handlePlacementChange = _this.handlePlacementChange.bind(_assertThisInitialized(_this));
 	    _this.setTargetNode = _this.setTargetNode.bind(_assertThisInitialized(_this));
 	    _this.getTargetNode = _this.getTargetNode.bind(_assertThisInitialized(_this));
 	    _this.getRef = _this.getRef.bind(_assertThisInitialized(_this));
@@ -5615,7 +5472,7 @@
 	  };
 
 	  _proto.setTargetNode = function setTargetNode(node) {
-	    this.targetNode = node;
+	    this.targetNode = typeof node === 'string' ? getTarget(node) : node;
 	  };
 
 	  _proto.getTargetNode = function getTargetNode() {
@@ -5628,16 +5485,6 @@
 
 	  _proto.getRef = function getRef(ref) {
 	    this._element = ref;
-	  };
-
-	  _proto.handlePlacementChange = function handlePlacementChange(data) {
-	    if (this.state.placement !== data.placement) {
-	      this.setState({
-	        placement: data.placement
-	      });
-	    }
-
-	    return data;
 	  };
 
 	  _proto.onClosed = function onClosed() {
@@ -5667,12 +5514,11 @@
 	        onClosed = _this$props.onClosed,
 	        fade = _this$props.fade,
 	        transition = _this$props.transition,
-	        attrs = _objectWithoutPropertiesLoose(_this$props, ["cssModule", "children", "isOpen", "flip", "target", "offset", "fallbackPlacement", "placementPrefix", "arrowClassName", "hideArrow", "popperClassName", "tag", "container", "modifiers", "boundariesElement", "onClosed", "fade", "transition"]);
+	        placement = _this$props.placement,
+	        attrs = _objectWithoutPropertiesLoose(_this$props, ["cssModule", "children", "isOpen", "flip", "target", "offset", "fallbackPlacement", "placementPrefix", "arrowClassName", "hideArrow", "popperClassName", "tag", "container", "modifiers", "boundariesElement", "onClosed", "fade", "transition", "placement"]);
 
 	    var arrowClassName = mapToCssModules(classnames('arrow', _arrowClassName), cssModule);
-	    var placement = this.state.placement || attrs.placement;
-	    var placementFirstPart = placement.split('-')[0];
-	    var popperClassName = mapToCssModules(classnames(_popperClassName, placementPrefix ? placementPrefix + "-" + placementFirstPart : placementFirstPart), this.props.cssModule);
+	    var popperClassName = mapToCssModules(classnames(_popperClassName, placementPrefix ? placementPrefix + "-auto" : ''), this.props.cssModule);
 
 	    var extendedModifiers = _objectSpread({
 	      offset: {
@@ -5684,15 +5530,10 @@
 	      },
 	      preventOverflow: {
 	        boundariesElement: boundariesElement
-	      },
-	      update: {
-	        enabled: true,
-	        order: 950,
-	        fn: this.handlePlacementChange
 	      }
 	    }, modifiers);
 
-	    var popperTransition = _objectSpread({}, Fade.defaultProps, transition, {
+	    var popperTransition = _objectSpread({}, Fade.defaultProps, {}, transition, {
 	      baseClass: fade ? transition.baseClass : '',
 	      timeout: fade ? transition.timeout : 0
 	    });
@@ -5724,7 +5565,7 @@
 	  };
 
 	  _proto.render = function render() {
-	    this.setTargetNode(getTarget(this.props.target));
+	    this.setTargetNode(this.props.target);
 
 	    if (this.state.isOpen) {
 	      return this.props.container === 'inline' ? this.renderChildren() : ReactDOM.createPortal(React__default.createElement("div", {
@@ -5798,6 +5639,16 @@
 	  return subtreeRoot && (element === subtreeRoot || subtreeRoot.contains(element));
 	}
 
+	function isInDOMSubtrees(element, subtreeRoots) {
+	  if (subtreeRoots === void 0) {
+	    subtreeRoots = [];
+	  }
+
+	  return subtreeRoots && subtreeRoots.length && subtreeRoots.find(function (subTreeRoot) {
+	    return isInDOMSubtree(element, subTreeRoot);
+	  });
+	}
+
 	var TooltipPopoverWrapper =
 	/*#__PURE__*/
 	function (_React$Component) {
@@ -5807,7 +5658,8 @@
 	    var _this;
 
 	    _this = _React$Component.call(this, props) || this;
-	    _this._target = null;
+	    _this._targets = [];
+	    _this.currentTargetElement = null;
 	    _this.addTargetEvents = _this.addTargetEvents.bind(_assertThisInitialized(_this));
 	    _this.handleDocumentClick = _this.handleDocumentClick.bind(_assertThisInitialized(_this));
 	    _this.removeTargetEvents = _this.removeTargetEvents.bind(_assertThisInitialized(_this));
@@ -5820,7 +5672,6 @@
 	    _this.hide = _this.hide.bind(_assertThisInitialized(_this));
 	    _this.onEscKeyDown = _this.onEscKeyDown.bind(_assertThisInitialized(_this));
 	    _this.getRef = _this.getRef.bind(_assertThisInitialized(_this));
-	    _this.onClosed = _this.onClosed.bind(_assertThisInitialized(_this));
 	    _this.state = {
 	      isOpen: props.isOpen
 	    };
@@ -5838,6 +5689,7 @@
 	  _proto.componentWillUnmount = function componentWillUnmount() {
 	    this._isMounted = false;
 	    this.removeTargetEvents();
+	    this._targets = null;
 	    this.clearShowTimeout();
 	    this.clearHideTimeout();
 	  };
@@ -5906,6 +5758,7 @@
 	  _proto.show = function show(e) {
 	    if (!this.props.isOpen) {
 	      this.clearShowTimeout();
+	      this.currentTargetElement = e && e.target;
 	      this.toggle(e);
 	    }
 	  };
@@ -5921,6 +5774,7 @@
 	  _proto.hide = function hide(e) {
 	    if (this.props.isOpen) {
 	      this.clearHideTimeout();
+	      this.currentTargetElement = null;
 	      this.toggle(e);
 	    }
 	  };
@@ -5946,7 +5800,7 @@
 	  _proto.handleDocumentClick = function handleDocumentClick(e) {
 	    var triggers = this.props.trigger.split(' ');
 
-	    if (triggers.indexOf('legacy') > -1 && (this.props.isOpen || isInDOMSubtree(e.target, this._target))) {
+	    if (triggers.indexOf('legacy') > -1 && (this.props.isOpen || isInDOMSubtrees(e.target, this._targets))) {
 	      if (this._hideTimeout) {
 	        this.clearHideTimeout();
 	      }
@@ -5956,7 +5810,7 @@
 	      } else if (!this.props.isOpen) {
 	        this.showWithDelay(e);
 	      }
-	    } else if (triggers.indexOf('click') > -1 && isInDOMSubtree(e.target, this._target)) {
+	    } else if (triggers.indexOf('click') > -1 && isInDOMSubtrees(e.target, this._targets)) {
 	      if (this._hideTimeout) {
 	        this.clearHideTimeout();
 	      }
@@ -5969,6 +5823,18 @@
 	    }
 	  };
 
+	  _proto.addEventOnTargets = function addEventOnTargets(type, handler, isBubble) {
+	    this._targets.forEach(function (target) {
+	      target.addEventListener(type, handler, isBubble);
+	    });
+	  };
+
+	  _proto.removeEventOnTargets = function removeEventOnTargets(type, handler, isBubble) {
+	    this._targets.forEach(function (target) {
+	      target.removeEventListener(type, handler, isBubble);
+	    });
+	  };
+
 	  _proto.addTargetEvents = function addTargetEvents() {
 	    if (this.props.trigger) {
 	      var triggers = this.props.trigger.split(' ');
@@ -5978,47 +5844,42 @@
 	          document.addEventListener('click', this.handleDocumentClick, true);
 	        }
 
-	        if (this._target) {
+	        if (this._targets && this._targets.length) {
 	          if (triggers.indexOf('hover') > -1) {
-	            this._target.addEventListener('mouseover', this.showWithDelay, true);
-
-	            this._target.addEventListener('mouseout', this.hideWithDelay, true);
+	            this.addEventOnTargets('mouseover', this.showWithDelay, true);
+	            this.addEventOnTargets('mouseout', this.hideWithDelay, true);
 	          }
 
 	          if (triggers.indexOf('focus') > -1) {
-	            this._target.addEventListener('focusin', this.show, true);
-
-	            this._target.addEventListener('focusout', this.hide, true);
+	            this.addEventOnTargets('focusin', this.show, true);
+	            this.addEventOnTargets('focusout', this.hide, true);
 	          }
 
-	          this._target.addEventListener('keydown', this.onEscKeyDown, true);
+	          this.addEventOnTargets('keydown', this.onEscKeyDown, true);
 	        }
 	      }
 	    }
 	  };
 
 	  _proto.removeTargetEvents = function removeTargetEvents() {
-	    if (this._target) {
-	      this._target.removeEventListener('mouseover', this.showWithDelay, true);
-
-	      this._target.removeEventListener('mouseout', this.hideWithDelay, true);
-
-	      this._target.removeEventListener('keydown', this.onEscKeyDown, true);
-
-	      this._target.removeEventListener('focusin', this.show, true);
-
-	      this._target.removeEventListener('focusout', this.hide, true);
+	    if (this._targets) {
+	      this.removeEventOnTargets('mouseover', this.showWithDelay, true);
+	      this.removeEventOnTargets('mouseout', this.hideWithDelay, true);
+	      this.removeEventOnTargets('keydown', this.onEscKeyDown, true);
+	      this.removeEventOnTargets('focusin', this.show, true);
+	      this.removeEventOnTargets('focusout', this.hide, true);
 	    }
 
 	    document.removeEventListener('click', this.handleDocumentClick, true);
 	  };
 
 	  _proto.updateTarget = function updateTarget() {
-	    var newTarget = getTarget(this.props.target);
+	    var newTarget = getTarget(this.props.target, true);
 
-	    if (newTarget !== this._target) {
+	    if (newTarget !== this._targets) {
 	      this.removeTargetEvents();
-	      this._target = newTarget;
+	      this._targets = newTarget ? Array.from(newTarget) : [];
+	      this.currentTargetElement = this.currentTargetElement || this._targets[0];
 	      this.addTargetEvents();
 	    }
 	  };
@@ -6031,14 +5892,8 @@
 	    return this.props.toggle(e);
 	  };
 
-	  _proto.onClosed = function onClosed() {
-	    this.setState({
-	      isOpen: false
-	    });
-	  };
-
 	  _proto.render = function render() {
-	    if (!this.state.isOpen) {
+	    if (!this.props.isOpen) {
 	      return null;
 	    }
 
@@ -6065,7 +5920,7 @@
 	    var classes = mapToCssModules(innerClassName, cssModule);
 	    return React__default.createElement(PopperContent, {
 	      className: className,
-	      target: target,
+	      target: this.currentTargetElement || this._targets[0],
 	      isOpen: isOpen,
 	      hideArrow: hideArrow,
 	      boundariesElement: boundariesElement,
@@ -6077,7 +5932,6 @@
 	      modifiers: modifiers,
 	      offset: offset,
 	      cssModule: cssModule,
-	      onClosed: this.onClosed,
 	      fade: fade,
 	      flip: flip
 	    }, React__default.createElement("div", _extends({}, attributes, {
@@ -6552,12 +6406,12 @@
 	      };
 	      var hasTransition = this.props.fade;
 
-	      var modalTransition = _objectSpread({}, Fade.defaultProps, this.props.modalTransition, {
+	      var modalTransition = _objectSpread({}, Fade.defaultProps, {}, this.props.modalTransition, {
 	        baseClass: hasTransition ? this.props.modalTransition.baseClass : '',
 	        timeout: hasTransition ? this.props.modalTransition.timeout : 0
 	      });
 
-	      var backdropTransition = _objectSpread({}, Fade.defaultProps, this.props.backdropTransition, {
+	      var backdropTransition = _objectSpread({}, Fade.defaultProps, {}, this.props.backdropTransition, {
 	        baseClass: hasTransition ? this.props.backdropTransition.baseClass : '',
 	        timeout: hasTransition ? this.props.backdropTransition.timeout : 0
 	      });
@@ -7230,7 +7084,7 @@
 	    var isXs = !i;
 	    var colClass;
 
-	    if (lodash_isobject(columnProp)) {
+	    if (isObject(columnProp)) {
 	      var _classNames;
 
 	      var colSizeInterfix = isXs ? '-' : "-" + colWidth + "-";
@@ -7601,7 +7455,7 @@
 	  }), cssModule);
 	  var closeClasses = mapToCssModules(classnames('close', closeClassName), cssModule);
 
-	  var alertTransition = _objectSpread({}, Fade.defaultProps, transition, {
+	  var alertTransition = _objectSpread({}, Fade.defaultProps, {}, transition, {
 	    baseClass: fade ? transition.baseClass : '',
 	    timeout: fade ? transition.timeout : 0
 	  });
@@ -7744,9 +7598,10 @@
 	        height: height
 	      };
 	      return React__default.createElement(Tag, _extends({}, childProps, {
-	        style: _objectSpread({}, childProps.style, style),
+	        style: _objectSpread({}, childProps.style, {}, style),
 	        className: classes,
-	        ref: _this2.props.innerRef
+	        ref: _this2.props.innerRef,
+	        "aria-expanded": isOpen ? 'true' : 'false'
 	      }), children);
 	    });
 	  };
@@ -8875,6 +8730,191 @@
 	AccordionBody.defaultProps = defaultProps$13;
 
 	var propTypes$18 = {
+	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
+	  className: propTypes.string
+	};
+	var defaultProps$14 = {
+	  tag: 'div'
+	};
+
+	var AvatarContainer = function AvatarContainer(props) {
+	  var className = props.className,
+	      Tag = props.tag,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag"]);
+
+	  var wrapperClasses = classnames('d-flex align-items-center justify-content-around flex-wrap flex-sm-nowrap', className);
+	  return React__default.createElement(Tag, _extends$1({}, attributes, {
+	    className: wrapperClasses
+	  }));
+	};
+
+	AvatarContainer.propTypes = propTypes$18;
+	AvatarContainer.defaultProps = defaultProps$14;
+
+	var propTypes$19 = {
+	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
+	  className: propTypes.string,
+	  wrapperClassName: propTypes.string
+	};
+	var defaultProps$15 = {
+	  tag: 'ul'
+	};
+
+	var AvatarGroupContainer = function AvatarGroupContainer(props) {
+	  var className = props.className,
+	      Tag = props.tag,
+	      wrapperClassName = props.wrapperClassName,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "wrapperClassName"]);
+
+	  var wrapperClasses = classnames('avatar-group-stacked', wrapperClassName);
+	  return React__default.createElement(Tag, _extends$1({}, attributes, {
+	    className: wrapperClasses
+	  }));
+	};
+
+	AvatarGroupContainer.propTypes = propTypes$19;
+	AvatarGroupContainer.defaultProps = defaultProps$15;
+
+	var propTypes$1a = {
+	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
+	  className: propTypes.string
+	};
+	var defaultProps$16 = {
+	  tag: 'div'
+	};
+
+	var AvatarExtraText = function AvatarExtraText(props) {
+	  var className = props.className,
+	      Tag = props.tag,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag"]);
+
+	  var wrapperClass = classnames('extra-text', className);
+	  return React__default.createElement(Tag, _extends$1({
+	    className: wrapperClass
+	  }, attributes));
+	};
+
+	AvatarExtraText.propTypes = propTypes$1a;
+	AvatarExtraText.defaultProps = defaultProps$16;
+
+	var propTypes$1b = {
+	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
+	  className: propTypes.string,
+	  href: propTypes.oneOfType([propTypes.func, propTypes.string]),
+	  color: propTypes.string,
+	  size: propTypes.string
+	};
+	var defaultProps$17 = {
+	  tag: 'div'
+	};
+
+	var AvatarIcon = function AvatarIcon(props) {
+	  var _classNames;
+
+	  var className = props.className,
+	      Tag = props.tag,
+	      size = props.size,
+	      href = props.href,
+	      color = props.color,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "size", "href", "color"]);
+
+	  var typeClass = classnames('avatar', (_classNames = {}, _classNames["size-" + size] = size, _classNames["avatar-" + color] = color, _classNames));
+
+	  if (href) {
+	    return React__default.createElement("a", _extends$1({
+	      href: href
+	    }, attributes, {
+	      className: typeClass
+	    }));
+	  }
+
+	  return React__default.createElement(Tag, _extends$1({}, attributes, {
+	    className: typeClass
+	  }));
+	};
+
+	AvatarIcon.propTypes = propTypes$1b;
+	AvatarIcon.defaultProps = defaultProps$17;
+
+	var propTypes$1c = {
+	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
+	  className: propTypes.string,
+	  presence: propTypes.string
+	};
+	var defaultProps$18 = {
+	  tag: 'div'
+	};
+
+	var AvatarPresence = function AvatarPresence(props) {
+	  var _classNames;
+
+	  var className = props.className,
+	      Tag = props.tag,
+	      presence = props.presence,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "presence"]);
+
+	  var typeClass = classnames('avatar-presence', (_classNames = {}, _classNames["" + presence] = presence, _classNames));
+	  return React__default.createElement(Tag, _extends$1({}, attributes, {
+	    className: typeClass
+	  }));
+	};
+
+	AvatarPresence.propTypes = propTypes$1c;
+	AvatarPresence.defaultProps = defaultProps$18;
+
+	var propTypes$1d = {
+	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
+	  className: propTypes.string,
+	  status: propTypes.string
+	};
+	var defaultProps$19 = {
+	  tag: 'div'
+	};
+
+	var AvatarStatus = function AvatarStatus(props) {
+	  var _classNames;
+
+	  var className = props.className,
+	      Tag = props.tag,
+	      status = props.status,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "status"]);
+
+	  var typeClass = classnames('avatar-status', (_classNames = {}, _classNames["" + status] = status, _classNames));
+	  return React__default.createElement(Tag, _extends$1({}, attributes, {
+	    className: typeClass
+	  }));
+	};
+
+	AvatarStatus.propTypes = propTypes$1d;
+	AvatarStatus.defaultProps = defaultProps$19;
+
+	var propTypes$1e = {
+	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
+	  className: propTypes.string,
+	  extra: propTypes.string
+	};
+	var defaultProps$1a = {
+	  tag: 'div'
+	};
+
+	var AvatarWrapper = function AvatarWrapper(props) {
+	  var _classNames;
+
+	  var className = props.className,
+	      Tag = props.tag,
+	      extra = props.extra,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "extra"]);
+
+	  var wrapperClass = classnames('avatar-wrapper', className, (_classNames = {}, _classNames["avatar-extra-" + extra] = extra, _classNames));
+	  return React__default.createElement(Tag, _extends$1({}, attributes, {
+	    className: wrapperClass
+	  }));
+	};
+
+	AvatarWrapper.propTypes = propTypes$1e;
+	AvatarWrapper.defaultProps = defaultProps$1a;
+
+	var propTypes$1f = {
 	  color: propTypes.string,
 	  pill: propTypes.bool,
 	  tag: propTypes.string,
@@ -8882,7 +8922,7 @@
 	  cssModule: propTypes.object,
 	  className: propTypes.string
 	};
-	var defaultProps$14 = {
+	var defaultProps$1b = {
 	  color: 'secondary',
 	  pill: false,
 	  tag: 'span'
@@ -8893,14 +8933,14 @@
 	  return React__default.createElement(Badge, props, children);
 	};
 
-	Badge$1.propTypes = propTypes$18;
-	Badge$1.defaultProps = defaultProps$14;
+	Badge$1.propTypes = propTypes$1f;
+	Badge$1.defaultProps = defaultProps$1b;
 
-	var propTypes$19 = _extends$1({}, Button.propTypes, {
+	var propTypes$1g = _extends$1({}, Button.propTypes, {
 	  icon: propTypes.bool
 	});
 
-	var defaultProps$15 = _extends$1({}, Button.defaultProps, {
+	var defaultProps$1c = _extends$1({}, Button.defaultProps, {
 	  icon: false
 	});
 
@@ -8917,10 +8957,10 @@
 	  }, attributes));
 	};
 
-	Button$1.propTypes = propTypes$19;
-	Button$1.defaultProps = defaultProps$15;
+	Button$1.propTypes = propTypes$1g;
+	Button$1.defaultProps = defaultProps$1c;
 
-	var propTypes$1a = _extends$1({}, Collapse.propTypes, {
+	var propTypes$1h = _extends$1({}, Collapse.propTypes, {
 	  // eslint-disable-line react/forbid-foreign-prop-types
 
 	  /** Indica se il componente Collapse è usato all'interno di un componente Header */
@@ -8980,7 +9020,7 @@
 	  }), children);
 	};
 
-	Collapse$1.propTypes = propTypes$1a;
+	Collapse$1.propTypes = propTypes$1h;
 	Collapse$1.defaultProps = Collapse.defaultProps;
 
 	var FormGroup$1 =
@@ -9150,7 +9190,7 @@
 	var CENTER = 'center';
 	var NAVBAR = 'navbar';
 
-	var propTypes$1b = {
+	var propTypes$1i = {
 	  /** Classi addizionali per il componente Header */
 	  className: propTypes.string,
 	  // cannot use variables above here or storybook writes the full import stacktrace
@@ -9170,7 +9210,7 @@
 	   */
 	  theme: propTypes.oneOf(['', 'light', 'dark'])
 	};
-	var defaultProps$16 = {
+	var defaultProps$1d = {
 	  small: false,
 	  sticky: false
 	};
@@ -9196,17 +9236,17 @@
 	  }, attributes)));
 	};
 
-	Header.propTypes = propTypes$1b;
-	Header.defaultProps = defaultProps$16;
+	Header.propTypes = propTypes$1i;
+	Header.defaultProps = defaultProps$1d;
 
-	var propTypes$1c = {
+	var propTypes$1j = {
 	  /** Aggiunge un ombra per enfatizzare il componente rispetto alla pagina in cui è contenuto */
 	  shadow: propTypes.bool,
 
 	  /** Classi addizionali per il componente Headers */
 	  className: propTypes.string
 	};
-	var defaultProps$17 = {
+	var defaultProps$1e = {
 	  shadow: false
 	};
 
@@ -9223,19 +9263,19 @@
 	  }, attributes));
 	};
 
-	Headers.propTypes = propTypes$1c;
-	Headers.defaultProps = defaultProps$17;
+	Headers.propTypes = propTypes$1j;
+	Headers.defaultProps = defaultProps$1e;
 
 	var iconSprite = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctZG93biIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTcuOSAxMy4ybC01LjQgNS4zVjNoLTF2MTUuNWwtNS40LTUuMy0uNy43IDYuNiA2LjUgNi42LTYuNXpNMTIgMTl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctZG93bi1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE1LjYgMTMuMmwuNy43LTQuMyA0LjMtNC4zLTQuMy43LS43IDMuMSAzLjFWN2gxdjkuMnpNMjIgMTJBMTAgMTAgMCAxMTEyIDJhMTAgMTAgMCAwMTEwIDEwem0tMSAwYTkgOSAwIDEwLTkgOSA5IDkgMCAwMDktOXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1hcnJvdy1kb3duLXRyaWFuZ2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik05LjIgMTJoNS42YTEgMSAwIDAxLjcgMS43TDEyIDE3LjNsLTMuNS0zLjZhMSAxIDAgMDEuNy0xLjd6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctbGVmdCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjEgMTEuNUg1LjVsNS4zLTUuNC0uNy0uN0wzLjYgMTJsNi41IDYuNi43LS43LTUuMy01LjRIMjF6TTUgMTJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctbGVmdC1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTcuNyAxMS41SDE3djFINy44bDMgMy4xLS43LjdMNS44IDEybDQuMy00LjMuNy43ek0yMiAxMkExMCAxMCAwIDExMTIgMmExMCAxMCAwIDAxMTAgMTB6bS0xIDBhOSA5IDAgMTAtOSA5IDkgOSAwIDAwOS05eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWFycm93LWxlZnQtdHJpYW5nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDkuMnY1LjZhMSAxIDAgMDEtMS43LjdMNi44IDEybDMuNS0zLjVhMSAxIDAgMDExLjcuN3oiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1hcnJvdy1yaWdodCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTMuOSA1LjRsLS43LjcgNS4zIDUuNEgzdjFoMTUuNWwtNS4zIDUuNC43LjcgNi42LTYuNnpNMTkgMTJ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctcmlnaHQtY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMy45IDcuN2w0LjMgNC4zLTQuMyA0LjMtLjctLjcgMy4xLTMuMUg3di0xaDkuMmwtMy0zLjF6TTIyIDEyQTEwIDEwIDAgMTExMiAyYTEwIDEwIDAgMDExMCAxMHptLTEgMGE5IDkgMCAxMC05IDkgOSA5IDAgMDA5LTl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctcmlnaHQtdHJpYW5nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDE0LjhWOS4yYTEgMSAwIDAxMS43LS43bDMuNSAzLjUtMy41IDMuNWExIDEgMCAwMS0xLjctLjd6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYXJyb3ctdXAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE4LjYgMTAuMUwxMiAzLjVsLTYuNiA2LjYuNy43IDUuNC01LjNWMjFoMVY1LjVsNS40IDUuM3pNMTIgNXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1hcnJvdy11cC1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDUuOGw0LjMgNC4zLS43LjctMy4xLTMuMVYxN2gtMVY3LjhsLTMuMSAzLS43LS43ek0yMiAxMkExMCAxMCAwIDExMTIgMmExMCAxMCAwIDAxMTAgMTB6bS0xIDBhOSA5IDAgMTAtOSA5IDkgOSAwIDAwOS05eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWFycm93LXVwLXRyaWFuZ2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNC44IDEySDkuMmExIDEgMCAwMS0uNy0xLjdMMTIgNi44bDMuNSAzLjVhMSAxIDAgMDEtLjcgMS43eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWJlaGFuY2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik03LjgzIDUuNzVhOCA4IDAgMDExLjYuMTUgMy4zOCAzLjM4IDAgMDExLjI0LjUxYy4zNDUuMjMzLjYyLjU1NC44LjkzLjIwMi40NTYuMjk4Ljk1Mi4yOCAxLjQ1YTIuNjggMi42OCAwIDAxLS40MiAxLjU0IDMuMDUgMy4wNSAwIDAxLTEuMjUgMSAyLjkyIDIuOTIgMCAwMTEuNjggMS4xNWMuMzkzLjU5LjU5IDEuMjkuNTYgMmEzLjM5IDMuMzkgMCAwMS0uMzIgMS41OSAzLjA4IDMuMDggMCAwMS0xIDEuMTEgNC4yNyA0LjI3IDAgMDEtMS40LjY0QTYgNiAwIDAxOCAxOEgyVjUuNzVoNS44M3ptLS4zNSA1YTIgMiAwIDAwMS4xOS0uMzVjLjMyOC0uMjcuNS0uNjg3LjQ2LTEuMTFBMS40NyAxLjQ3IDAgMDA5IDguNTRhMS4xNiAxLjE2IDAgMDAtLjQyLS40M0ExLjggMS44IDAgMDA4IDcuOWEzLjI2IDMuMjYgMCAwMC0uNy0uMDZINC43NHYyLjg3bDIuNzQuMDR6bS4xNSA1LjIyYy4yNTIuMDAzLjUwMy0uMDIuNzUtLjA3YTIgMiAwIDAwLjYyLS4zIDEuMzkgMS4zOSAwIDAwLjQ0LS40OSAxLjczIDEuNzMgMCAwMC4xNi0uOEExLjY0IDEuNjQgMCAwMDkuMDkgMTNhMi4zMyAyLjMzIDAgMDAtMS40MS0uNEg0Ljc0djMuMzhsMi44OS0uMDF6bTguNTQtLjA4YTIuMTggMi4xOCAwIDAwMS41OC41NCAyLjI0IDIuMjQgMCAwMDEuMjUtLjM3IDEuNiAxLjYgMCAwMC42NS0uNzloMi4xNWE0LjA2IDQuMDYgMCAwMS0xLjU4IDIuMjkgNC42NCA0LjY0IDAgMDEtMi41OC42OSA1LjIzIDUuMjMgMCAwMS0xLjktLjMzIDQgNCAwIDAxLTIuMzMtMi40NCA1LjI1IDUuMjUgMCAwMS0uMzItMS44OSA1LjEyIDUuMTIgMCAwMS4zMy0xLjg2IDQuMTQgNC4xNCAwIDAxLjkzLTEuNDkgNC40OCA0LjQ4IDAgMDExLjQ0LTEgNC41OSA0LjU5IDAgMDExLjg1LS4zNiA0LjMxIDQuMzEgMCAwMTIgLjQ0QTQgNCAwIDAxMjEgMTAuNWMuMzcuNTA1LjYzNiAxLjA4Ljc4IDEuNjlhNi4xOCA2LjE4IDAgMDEuMTcgMmgtNi4zOGEyLjUgMi41IDAgMDAuNiAxLjd6TTE5IDExLjIyYTEuODMgMS44MyAwIDAwLTEuMzgtLjQ5IDIgMiAwIDAwLTEgLjIgMS44IDEuOCAwIDAwLS42Mi40OSAxLjYyIDEuNjIgMCAwMC0uMzMuNjIgMi44NyAyLjg3IDAgMDAtLjExLjU5aDRhMi40IDIuNCAwIDAwLS41Ni0xLjQxem0tMy45My00LjY1aDQuOTh2MS4yMWgtNC45OFY2LjU3eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtYnVyZ2VyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMiA1djFIMlY1ek0yIDEyLjVoMjB2LTFIMnpNMiAxOWgyMHYtMUgyeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWNhbGVuZGFyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMC41IDRIMTdWM2gtMXYxSDhWM0g3djFIMy41QTEuNSAxLjUgMCAwMDIgNS41djEzQTEuNSAxLjUgMCAwMDMuNSAyMGgxN2ExLjUgMS41IDAgMDAxLjUtMS41di0xM0ExLjUgMS41IDAgMDAyMC41IDR6bS41IDE0LjVhLjUuNSAwIDAxLS41LjVoLTE3YS41LjUgMCAwMS0uNS0uNXYtMTNhLjUuNSAwIDAxLjUtLjVIN3YxaDFWNWg4djFoMVY1aDMuNWEuNS41IDAgMDEuNS41ek00IDhoMTZ2MUg0eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWNhbWVyYSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAuNSAyMGgtMTdBMS41IDEuNSAwIDAxMiAxOC41di0xMEExLjUgMS41IDAgMDEzLjUgN2g0LjNsMS41LTIuM2ExLjUgMS41IDAgMDExLjItLjdoM2ExLjUgMS41IDAgMDExLjIuN0wxNi4yIDdoNC4zQTEuNSAxLjUgMCAwMTIyIDguNXYxMGExLjUgMS41IDAgMDEtMS41IDEuNXpNMy41IDhhLjUuNSAwIDAwLS41LjV2MTBhLjUuNSAwIDAwLjUuNWgxN2EuNS41IDAgMDAuNS0uNXYtMTBhLjUuNSAwIDAwLS41LS41aC00LjhsLTEuOC0yLjgtLjQtLjJoLTNsLS40LjJMOC4zIDh6TTEyIDE4YTUgNSAwIDExNS01IDUgNSAwIDAxLTUgNXptMC05YTQgNCAwIDEwNCA0IDQgNCAwIDAwLTQtNHpNNyA1SDR2MWgzeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWNhcmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwLjUgNWgtMTdBMS41IDEuNSAwIDAwMiA2LjV2MTFBMS41IDEuNSAwIDAwMy41IDE5aDE3YTEuNSAxLjUgMCAwMDEuNS0xLjV2LTExQTEuNSAxLjUgMCAwMDIwLjUgNXpNMyA5aDE4djNIM3ptMTggOC41YS41LjUgMCAwMS0uNS41aC0xN2EuNS41IDAgMDEtLjUtLjVWMTNoMTh6TTMgOFY2LjVhLjUuNSAwIDAxLjUtLjVoMTdhLjUuNSAwIDAxLjUuNVY4em01IDdINHYtMWg0eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWNoZWNrIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik05LjYgMTYuOUw0IDExLjRsLjgtLjcgNC44IDQuOCA4LjUtOC40LjcuN3oiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1jaGVjay1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE3LjEgNy45bC43LjctNy44IDcuNi00LjctNC42LjctLjcgNCAzLjl6TTIyIDEyQTEwIDEwIDAgMTExMiAyYTEwIDEwIDAgMDExMCAxMHptLTEgMGE5IDkgMCAxMC05IDkgOSA5IDAgMDA5LTl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY2hldnJvbi1sZWZ0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNC42IDE3LjJMOSAxMS42IDE0LjYgNmwuOC43LTQuOSA0LjkgNC45IDQuOXoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWNoZXZyb24tcmlnaHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTkuOCAxNy4ybC0uOC0uNyA0LjktNC45TDkgNi43bC44LS43IDUuNiA1LjZ6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1jbGlwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMSAyMmEyLjkgMi45IDAgMDEtMy0zVjZhNCA0IDAgMDE4IDB2MTBoLTFWNmEzIDMgMCAwMC02IDB2MTNhMiAyIDAgMDA0IDBWOGExIDEgMCAwMC0yIDB2OGgtMVY4YTIgMiAwIDAxNCAwdjExYTIuOSAyLjkgMCAwMS0zIDN6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY2xvY2siIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjUgNWgxdjcuNUg3di0xaDQuNXpNMjIgMTJBMTAgMTAgMCAxMTEyIDJhMTAgMTAgMCAwMTEwIDEwem0tMSAwYTkgOSAwIDEwLTkgOSA5IDkgMCAwMDktOXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1jbG9zZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIuNyAxMmwzLjcgMy42LS44LjgtMy42LTMuNy0zLjYgMy43LS44LS44IDMuNy0zLjYtMy43LTMuNi44LS44IDMuNiAzLjcgMy42LTMuNy44Ljh6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY2xvc2UtYmlnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMi43IDEybDYuNyA2LjYtLjguOC02LjYtNi43LTYuNiA2LjctLjgtLjggNi43LTYuNi02LjctNi42LjgtLjggNi42IDYuNyA2LjYtNi43LjguOHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1jbG9zZS1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE2LjMgOC4zTDEyLjYgMTJsMy43IDMuNi0uNy43LTMuNy0zLjYtMy42IDMuNi0uNy0uNyAzLjYtMy42LTMuNi0zLjcuNy0uNyAzLjYgMy43IDMuNy0zLjd6TTIyIDEyQTEwIDEwIDAgMTExMiAyYTEwIDEwIDAgMDExMCAxMHptLTEgMGE5IDkgMCAxMC05IDkgOSA5IDAgMDA5LTl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY29kZS1jaXJjbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE5IDEybC0yLjkgMi45LS43LS44IDIuMS0yLjEtMi4xLTIuMS43LS44ek03LjkgOS4xTDUgMTJsMi45IDIuOS43LS44TDYuNSAxMmwyLjEtMi4xek0yMiAxMkExMCAxMCAwIDExMTIgMmExMCAxMCAwIDAxMTAgMTB6bS0xIDBhOSA5IDAgMTAtOSA5IDkgOSAwIDAwOS05ek05LjYgMTYuNWwxIC4zIDMuNy05LjMtLjktLjN6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY29sbGFwc2UiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE2LjUgMTUuNGwtNC45LTQuOS00LjkgNC45LS43LS44TDExLjYgOWw1LjYgNS42eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY29tbWVudCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkgM0g1YTIgMiAwIDAwLTIgMnYxMGEyIDIgMCAwMDIgMmgydjUuNGwxLjctMS43IDMuNy0zLjdIMTlhMiAyIDAgMDAyLTJWNWEyIDIgMCAwMC0yLTJ6bTEgMTJhLjkuOSAwIDAxLTEgMWgtN2wtNCA0di00SDVhLjkuOSAwIDAxLTEtMVY1YS45LjkgMCAwMTEtMWgxNGEuOS45IDAgMDExIDF6TTkgMTBhLjkuOSAwIDAxLTEgMSAuOS45IDAgMDEtMS0xIC45LjkgMCAwMTEtMSAuOS45IDAgMDExIDF6bTQgMGExIDEgMCAwMS0yIDAgMSAxIDAgMDEyIDB6bTQgMGExIDEgMCAwMS0yIDAgMSAxIDAgMDEyIDB6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtY29weSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTkuNSA0SDE4di0uNkExLjUgMS41IDAgMDAxNi41IDJoLTExQTEuNSAxLjUgMCAwMDQgMy40djE1LjJBMS41IDEuNSAwIDAwNS41IDIwSDd2LjZBMS41IDEuNSAwIDAwOC41IDIyaDExYTEuNSAxLjUgMCAwMDEuNS0xLjRWNS40QTEuNSAxLjUgMCAwMDE5LjUgNHpNNSAxOC42VjMuNGEuNS41IDAgMDEuNS0uNGgxMWEuNS41IDAgMDEuNS40djE1LjJhLjUuNSAwIDAxLS41LjRoLTExYS41LjUgMCAwMS0uNS0uNHptMTUgMmEuNS41IDAgMDEtLjUuNGgtMTFhLjUuNSAwIDAxLS41LS40VjIwaDguNWExLjUgMS41IDAgMDAxLjUtMS40VjVoMS41YS41LjUgMCAwMS41LjR6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZGVzaWduZXJzLWl0YWxpYSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC42NjMgMjAuNjc1VjcuNjQxSDEyLjN2MTMuMDU3SDguNjYzdi0uMDIzek0yMi45NTIgMTAuNjFoLTMuMzI1djUuMzU3YzAgLjUzNC4wMjQuODgyLjA0OCAxLjExMy4wMjQuMjEuMTIuMzk1LjI4OS41NTcuMTY5LjE2Mi40MzQuMjMyLjc5NS4yMzJsMi4wNzItLjA0Ni4xNjkgMi43ODNjLTEuMjA1LjI1NS0yLjE0NS4zOTQtMi43NzEuMzk0LTEuNjM5IDAtMi43NDctLjM0OC0zLjMyNS0xLjA2Ny0uNjAzLS42OTYtLjg5Mi0xLjk5NC0uODkyLTMuODk2VjRoMy42Mzl2My42MThoMy4zMjV2Mi45OTJoLS4wMjR6bS0xOS43Ni45OTdjLS42MjYgMC0xLjE1Ni0uMjA5LTEuNTY1LS42MjZBMi4xMTMgMi4xMTMgMCAwMTEgOS40NWMwLS42MDQuMjE3LTEuMTE0LjYwMi0xLjUzMS40MS0uNDE4Ljk0LS42MDMgMS41NjctLjYwMy42MjYgMCAxLjE1Ni4yMDggMS41NjYuNjI2LjQxLjQxNy42MDIuOTI3LjYwMiAxLjU1NCAwIC42MjYtLjE5MiAxLjExMy0uNjAyIDEuNTMtLjM4Ni4zNzEtLjg5Mi41OC0xLjU0Mi41OHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWRvd25sb2FkIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiAxNC4yTDcuNyA5LjlsLjctLjcgMy4xIDMuMVYzaDF2OS4ybDMuMS0zIC43Ljd6bTctMi4ydjcuNWEuNS41IDAgMDEtLjUuNWgtMTNhLjUuNSAwIDAxLS41LS41VjEySDR2Ny41QTEuNSAxLjUgMCAwMDUuNSAyMWgxM2ExLjUgMS41IDAgMDAxLjUtMS41VjEyeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWVycm9yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMS41IDE0LjJWNS43aDEuMnY4LjV6bS0uMSA0LjFoMS4ydi0xLjhoLTEuMnpNMjIgNy45djguM0wxNi4xIDIySDcuOUwyIDE2LjJWNy45TDcuOSAyaDguMnptLTEgLjRMMTUuNyAzSDguM0wzIDguM3Y3LjVMOC4zIDIxaDcuNGw1LjMtNS4yeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWV4Y2hhbmdlLWNpcmNsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMmExMCAxMCAwIDEwMTAgMTBBMTAgMTAgMCAwMDEyIDJ6bTAgMTlhOSA5IDAgMTE5LTkgOSA5IDAgMDEtOSA5em01LjEtOC45bC44LjgtNC4zIDQuM2ExLjUgMS41IDAgMDEtMS4xLjQgMS41IDEuNSAwIDAxLTEuMS0uNEw5IDE0LjdWMTdIOHYtNGg0djFIOS43bDIuNCAyLjVoLjh6bS02LTQuNmwtNC4yIDQuNC0uOC0uOCA0LjMtNC4zYTEuNSAxLjUgMCAwMTEuMS0uNCAxLjUgMS41IDAgMDExLjEuNEwxNSA5LjNWN2gxdjRoLTR2LTFoMi4zbC0yLjQtMi41aC0uOHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1leHBhbmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjYgMTUuNEw2IDkuOGwuNy0uOCA0LjkgNC45TDE2LjUgOWwuNy44eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZXh0ZXJuYWwtbGluayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjEgM3Y2aC0xVjQuN2wtNy42IDcuNy0uOC0uOEwxOS4zIDRIMTVWM3ptLTQgMTYuNWEuNS41IDAgMDEtLjUuNWgtMTJhLjUuNSAwIDAxLS41LS41di0xMmEuNS41IDAgMDEuNS0uNUgxMlY2SDQuNUExLjUgMS41IDAgMDAzIDcuNXYxMkExLjUgMS41IDAgMDA0LjUgMjFoMTJhMS41IDEuNSAwIDAwMS41LTEuNVYxMmgtMXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1mYWNlYm9vayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTEzLjU1IDIydi05LjExaDMuMDdsLjQ2LTMuNTZoLTMuNTNWNy4wNWMwLTEgLjI5LTEuNzMgMS43Ny0xLjczaDEuODdWMi4xNEEyNS4xNCAyNS4xNCAwIDAwMTQuNDUgMmMtMi43MiAwLTQuNTggMS42Ni00LjU4IDQuN3YyLjYySDYuODF2My41N2gzLjA2VjIyaDMuNjh6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1mYWNlYm9vay1zcXVhcmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0yMCAzSDRhMSAxIDAgMDAtMSAxdjE2YTEgMSAwIDAwMSAxaDguNjN2LTYuOTVoLTIuMzd2LTIuNzRoMi4zNHYtMmEzLjI4IDMuMjggMCAwMTMuNS0zLjZjLjcwNSAwIDEuNDEuMDQgMi4xMS4xMnYyLjQ0aC0xLjQ0Yy0xLjEzIDAtMS4zNC41My0xLjM0IDEuMzJ2MS43NGgyLjdsLS4zNSAyLjcyaC0yLjM1djdIMjBhMSAxIDAgMDAxLTFWNGExIDEgMCAwMC0xLTF6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1maWxlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNC43IDJINi41QTEuNSAxLjUgMCAwMDUgMy41djE3QTEuNSAxLjUgMCAwMDYuNSAyMmgxMWExLjUgMS41IDAgMDAxLjUtMS41VjYuM3ptLjMgMS43TDE3LjMgNmgtMS44YS41LjUgMCAwMS0uNS0uNXpNMTcuNSAyMWgtMTFhLjUuNSAwIDAxLS41LS41di0xN2EuNS41IDAgMDEuNS0uNUgxNHYyLjVBMS41IDEuNSAwIDAwMTUuNSA3SDE4djEzLjVhLjUuNSAwIDAxLS41LjV6TTggOWg4djFIOHptMCAyaDh2MUg4em0wIDJoNHYxSDh6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZmlsZXMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE1LjcgMkg3LjVBMS41IDEuNSAwIDAwNiAzLjVWNGgtLjVBMS41IDEuNSAwIDAwNCA1LjV2MTVBMS41IDEuNSAwIDAwNS41IDIyaDExYTEuNSAxLjUgMCAwMDEuNS0xLjVWMjBoLjVhMS41IDEuNSAwIDAwMS41LTEuNVY2LjN6bS4zIDEuN0wxOC4zIDZoLTEuOGEuNS41IDAgMDEtLjUtLjV6bTEgMTYuOGEuNS41IDAgMDEtLjUuNWgtMTFhLjUuNSAwIDAxLS41LS41di0xNWEuNS41IDAgMDEuNS0uNUg2djEzLjVBMS41IDEuNSAwIDAwNy41IDIwSDE3em0xLjUtMS41aC0xMWEuNS41IDAgMDEtLjUtLjV2LTE1YS41LjUgMCAwMS41LS41SDE1djIuNUExLjUgMS41IDAgMDAxNi41IDdIMTl2MTEuNWEuNS41IDAgMDEtLjUuNXpNOSA5aDh2MUg5em0wIDJoOHYxSDl6bTAgMmg0djFIOXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1mbGlja3IiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxjaXJjbGUgY3g9IjYuNzMiIGN5PSIxMiIgcj0iNC43MyIvPjxjaXJjbGUgY3g9IjE3LjI3IiBjeT0iMTIiIHI9IjQuNzMiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWZsaWNrci1zcXVhcmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0yMCA0YTMuMjYgMy4yNiAwIDAwLTIuMzgtMUg2LjM4QTMuMjYgMy4yNiAwIDAwNCA0YTMuMjYgMy4yNiAwIDAwLTEgMi4zN3YxMS4yNUEzLjI2IDMuMjYgMCAwMDQgMjBhMy4yNiAzLjI2IDAgMDAyLjM5IDFoMTEuMjRBMy4zOCAzLjM4IDAgMDAyMSAxNy42MlY2LjM3QTMuMjYgMy4yNiAwIDAwMjAgNHptLTkuNTYgOS43N2EyLjUgMi41IDAgMDEtMy41MSAwIDIuNDkgMi40OSAwIDAxMC0zLjUyIDIuNSAyLjUgMCAwMTMuNTEgMCAyLjQ5IDIuNDkgMCAwMTAgMy41MnptNi42MSAwQTIuNDkgMi40OSAwIDAxMTIuODIgMTJhMi40OSAyLjQ5IDAgMDE0LjI0LTEuNzYgMi40OSAyLjQ5IDAgMDEwIDMuNTJsLS4wMS4wMXoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWZvbGRlciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAgNmgtOGwtMi0ySDRhMiAyIDAgMDAtMiAydjEyYTIgMiAwIDAwMiAyaDE2YTIgMiAwIDAwMi0yVjhhMiAyIDAgMDAtMi0yem0xIDEyYS45LjkgMCAwMS0xIDFINGEuOS45IDAgMDEtMS0xVjZhLjkuOSAwIDAxMS0xaDUuNmwxLjcgMS43LjMuM0gyMGEuOS45IDAgMDExIDF6TTQgOGgxNnYxSDR6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtZ2l0aHViIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNMTIgMmExMCAxMCAwIDAwLTMuMTYgMTkuNDljLjUuMDkuNjgtLjIyLjY4LS40OHYtMS43QzYuNzMgMTkuOTEgNi4xNCAxOCA2LjE0IDE4QTIuNjkgMi42OSAwIDAwNSAxNi41Yy0uOTEtLjYyLjA3LS42MS4wNy0uNjFhMi4xMyAyLjEzIDAgMDExLjUzIDEgMi4xNCAyLjE0IDAgMDAyLjkxLjgzIDIuMTYgMi4xNiAwIDAxLjYzLTEuMzRjLTIuMTQtLjIxLTQuNTItMS4wNy00LjUyLTQuOWEzLjg5IDMuODkgMCAwMTEtMi42OSAzLjU3IDMuNTcgMCAwMS4xLTIuNjRzLjg0LS4yNyAyLjc1IDFhOS42MyA5LjYzIDAgMDE1IDBjMS45MS0xLjI5IDIuNzUtMSAyLjc1LTEgLjM3LjgzNS40MDUgMS43OC4xIDIuNjRhMy44OSAzLjg5IDAgMDExIDIuNjljMCAzLjg0LTIuMzQgNC42OC00LjU3IDQuOTMuNDgyLjQ5LjczIDEuMTY0LjY4IDEuODV2Mi43NWMwIC4zMy4xOC41OC42OS40OEExMCAxMCAwIDAwMTIgMnoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWhlYXJpbmciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwIDlhNi44IDYuOCAwIDAxLTMuNSA2bC0yIDEuMWEzLjMgMy4zIDAgMDAtMS41IDIuN0EzLjIgMy4yIDAgMDE5LjggMjJoLS42YTMuNCAzLjQgMCAwMS0zLTIuMWwuOS0uNUEyLjMgMi4zIDAgMDA5LjIgMjFoLjZhMi4xIDIuMSAwIDAwMS42LS43IDIgMiAwIDAwLjYtMS41IDQgNCAwIDAxMi0zLjVsMi0xLjJBNS45IDUuOSAwIDAwMTkgOWE2IDYgMCAwMC02LTYgNiA2IDAgMDAtNC44IDIuNGwtLjgtLjZBNyA3IDAgMDExMyAyYTcgNyAwIDAxNyA3ek03LjUgMTJBNS41IDUuNSAwIDAwMiA2LjV2MWE0LjUgNC41IDAgMDEwIDl2MUE1LjUgNS41IDAgMDA3LjUgMTJ6TTUgMTJhMi45IDIuOSAwIDAwLTMtM3YxYTIgMiAwIDAxMCA0djFhMi45IDIuOSAwIDAwMy0zem01IDBhOCA4IDAgMDAtOC04djFhNyA3IDAgMDEwIDE0djFhOCA4IDAgMDA4LTh6bTUuOS4zYTQuNSA0LjUgMCAwMDEuMi0zLjIgNC41IDQuNSAwIDAwLTEuMi0zLjIgNC41IDQuNSAwIDAwLTMuMi0xLjRBNC44IDQuOCAwIDAwOS41IDZsLS4zLjMuMi4zYTguOCA4LjggMCAwMTEuMyAzdi40aC40YTEuNSAxLjUgMCAwMTAgM3YxYTIuNSAyLjUgMCAwMDIuNS0yLjUgMi42IDIuNiAwIDAwLTItMi41IDguNSA4LjUgMCAwMC0xLjEtMi42IDMuOSAzLjkgMCAwMTIuMi0uOSAzLjUgMy41IDAgMDEyLjQgMSAzLjUgMy41IDAgMDExIDIuNiAzLjUgMy41IDAgMDEtMSAyLjZ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtaGVscCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIuOCAyMmgtMS40di0yLjFoMS40em0tLjEtNC45aC0xLjJhOS43IDkuNyAwIDAxLS4xLTEuNyAyLjcgMi43IDAgMDEuMy0xLjIgNS42IDUuNiAwIDAxLjctMS4zbDIuMy0yLjFhOS42IDkuNiAwIDAwMS44LTIuMSA0LjUgNC41IDAgMDAuNS0yLjMgMyAzIDAgMDAtMS4xLTIuNiA2LjIgNi4yIDAgMDAtMy40LS43IDIyLjkgMjIuOSAwIDAwLTMuNi41bC0xIC4zLS4yLTEuMmguMWExOC4xIDE4LjEgMCAwMTQuNy0uOCA3LjQgNy40IDAgMDE0LjMgMSA0LjIgNC4yIDAgMDExLjQgMy41IDUgNSAwIDAxLS41IDIuNyA4LjYgOC42IDAgMDEtMS45IDIuMiAxOS43IDE5LjcgMCAwMC0xLjggMS42IDYuMiA2LjIgMCAwMC0uOSAxLjIgMi4zIDIuMyAwIDAwLS40IDEuNHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1oZWxwLWNpcmNsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMmExMCAxMCAwIDEwMTAgMTBBMTAgMTAgMCAwMDEyIDJ6bTAgMTlhOSA5IDAgMTE5LTkgOSA5IDAgMDEtOSA5em0tMS4yLTQuNUgxMnYxLjhoLTEuMnptNC41LThhNC4yIDQuMiAwIDAxLS4zIDEuOCA1LjQgNS40IDAgMDEtMS4zIDEuNEwxMi4zIDEzYTIuOCAyLjggMCAwMC0uNCAxLjJ2LjZIMTFhMyAzIDAgMDEtLjItMSAyLjEgMi4xIDAgMDEuNS0xLjIgOSA5IDAgMDExLjQtMS40IDYuNCA2LjQgMCAwMDEuMi0xLjMgMi42IDIuNiAwIDAwLjMtMS40IDEuNyAxLjcgMCAwMC0uNi0xLjQgMy41IDMuNSAwIDAwLTItLjRMOS4zIDdoLS41di0uOGExMC4yIDEwLjIgMCAwMTMtLjUgNC45IDQuOSAwIDAxMi43LjYgMi43IDIuNyAwIDAxLjggMi4yeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWhvcm4iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUgOWEzIDMgMCAwMDAgNmguNUw3IDE5LjNBMi41IDIuNSAwIDAwOS4zIDIxaC4yYTEuNCAxLjQgMCAwMDEuMi0uNiAxLjQgMS40IDAgMDAuMi0xLjRsLTEuMy00aDEuOGw4LjYgMy44VjQuN0wxMS40IDl6bTUgMTAuM2EuNy43IDAgMDEtLjEuNWwtLjQuMmgtLjJhMS41IDEuNSAwIDAxLTEuNC0xbC0xLjMtNGgxLjl6TTUgMTRhMiAyIDAgMDEwLTRoNnY0em0xNCAzLjJsLTctM1Y5LjhsNy0zLjV6TTIyIDl2NmgtMVY5eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWluZm8tY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiAyYTEwIDEwIDAgMTAxMCAxMEExMCAxMCAwIDAwMTIgMnptMCAxOWE5IDkgMCAxMTktOSA5IDkgMCAwMS05IDl6bS0uNy0xNWgxLjV2MmgtMS41em0wIDNoMS41djloLTEuNXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1pbnN0YWdyYW0iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0xMiA0LjYybC0uMDEuMDhIOC4zNWE1LjEyIDUuMTIgMCAwMC0xLjY3LjMxYy0uMzguMTUtLjcyLjM4Mi0xIC42OC0uMjk4LjI4LS41My42Mi0uNjggMWE1LjEyIDUuMTIgMCAwMC0uMyAxLjY4djcuMjhjLjAxLjU3LjExNCAxLjEzNC4zMSAxLjY3LjE1LjM4LjM4Mi43Mi42OCAxIC4yOC4yOTguNjIuNTMgMSAuNjguNTM2LjE5NiAxLjEuMyAxLjY3LjMxLjk1LjA1IDEuMjQuMDUgMy42NC4wNSAyLjQgMCAyLjY0LS4wNSAzLjY0LS4wNWE1LjEyIDUuMTIgMCAwMDEuNjctLjMxQTMuMDggMy4wOCAwIDAwMTkgMTcuMzFhNS4xMiA1LjEyIDAgMDAuMy0xLjY4Yy4wNS0uOTUuMDUtMS4yNC4wNS0zLjY0IDAtMi40LS4wNS0yLjY0LS4wNS0zLjY0YTUuMTIgNS4xMiAwIDAwLS4zMS0xLjY3IDIuNzcgMi43NyAwIDAwLS42OC0xIDIuNzcgMi43NyAwIDAwLTEtLjY4IDUuMTIgNS4xMiAwIDAwLTEuNjctLjM4SDEyek0xMiAzdi4wNWgzLjcxYTYuOSA2LjkgMCAwMTIuMTkuNDIgNC42NCA0LjY0IDAgMDEyLjY4IDIuNjNBNi45IDYuOSAwIDAxMjEgOC4yOWMwIC45Ni4wNSAxLjI3LjA1IDMuNzFTMjEgMTQuNzEgMjEgMTUuNzFhNi45IDYuOSAwIDAxLS40NyAyLjI0IDQuNjQgNC42NCAwIDAxLTIuNjMgMi42MyA2LjkgNi45IDAgMDEtMi4xOS40MmMtLjk2LjA1LTEuMjcuMDUtMy43MS4wNVM5LjI5IDIxIDguMjkgMjFhNi45IDYuOSAwIDAxLTIuMTktLjQ3IDQuNjQgNC42NCAwIDAxLTIuNjMtMi42MyA2LjkgNi45IDAgMDEtLjQyLTIuMTlWMTIgOC4yOWE2LjkgNi45IDAgMDEuNDItMi4xOUE0LjY0IDQuNjQgMCAwMTYuMSAzLjQyIDYuOSA2LjkgMCAwMTguMjkgM0gxMnptMCA0LjM4YTQuNjIgNC42MiAwIDExMCA5LjI0IDQuNjIgNC42MiAwIDAxMC05LjI0ek0xMiAxNWEzIDMgMCAxMDAtNiAzIDMgMCAwMDAgNnptNC44LTYuNzJhMS4wOCAxLjA4IDAgMTEwLTIuMTYgMS4wOCAxLjA4IDAgMDEwIDIuMTZ6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1rZXkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE4IDEwYTIgMiAwIDEwMiAyIDIgMiAwIDAwLTItMnptMCAzYTEgMSAwIDExMS0xIC45LjkgMCAwMS0xIDF6bS0xLTZhNS4xIDUuMSAwIDAwLTQuNiAzSDMuM2wtMiAyIDMgM0g3di0xaC4zbDEgMUgxMXYtMWgxLjRhNS4xIDUuMSAwIDAwNC42IDMgNSA1IDAgMDAwLTEwem0wIDlhNC4xIDQuMSAwIDAxLTMuOC0yLjdWMTNIMTB2MUg4LjdsLTEtMUg2djFINC43bC0yLTIgMS0xaDkuNHYtLjNBNC4xIDQuMSAwIDAxMTcgOGE0IDQgMCAwMTAgOHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1sZXNzLWNpcmNsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgM2E5IDkgMCAwMTYuMzYgMTUuMzZBOSA5IDAgMDE1LjY0IDUuNjIgOC45MyA4LjkzIDAgMDExMiAzbTAtMWExMCAxMCAwIDEwNy4wNyAyLjkzQTkuOTMgOS45MyAwIDAwMTIgMnoiLz48cmVjdCB4PSI3IiB5PSIxMS4yNSIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEuNSIgcng9Ii43NSIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtbGluayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTMuNCAxMy40bC0uNy0uN2EyLjkgMi45IDAgMDAuOS0yLjEgMi43IDIuNyAwIDAwLS45LTIuMUw5LjIgNC45YTMuMiAzLjIgMCAwMC00LjMgMCAzLjIgMy4yIDAgMDAwIDQuM0w3LjggMTJsLS43LjctMi45LTIuOGE0LjIgNC4yIDAgMDEwLTUuNyA0LjIgNC4yIDAgMDE1LjcgMGwzLjUgMy42YTMuNiAzLjYgMCAwMTEuMiAyLjggMy42IDMuNiAwIDAxLTEuMiAyLjh6bTYuNCA2LjRhNC4yIDQuMiAwIDAwMC01LjdsLTIuOS0yLjgtLjcuNyAyLjkgMi44YTMuMiAzLjIgMCAwMTAgNC4zIDMuMiAzLjIgMCAwMS00LjMgMGwtMy41LTMuNmEyLjcgMi43IDAgMDEtLjktMi4xIDIuOSAyLjkgMCAwMS45LTIuMWwtLjctLjdhMy42IDMuNiAwIDAwLTEuMiAyLjggMy42IDMuNiAwIDAwMS4yIDIuOGwzLjUgMy42YTMuOCAzLjggMCAwMDIuOCAxLjEgMy45IDMuOSAwIDAwMi45LTEuMXptLTYuNy02LjciLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1saW5rZWRpbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTE2LjUzIDguNjhBMy45NCAzLjk0IDAgMDAxMyAxMC42MlY5SDkuMzd2MTJoMy43M3YtNS45NWMwLTEuNTcuMjktMy4wOSAyLjI0LTMuMDkgMS45NSAwIDEuOTMgMS44IDEuOTMgMy4xOVYyMUgyMXYtNi42YzAtMy4yMy0uNjktNS43Mi00LjQ3LTUuNzJ6TTUuMTYgM2EyLjE3IDIuMTcgMCAxMDIuMTYgMi4xOEEyLjE2IDIuMTYgMCAwMDUuMTYgM3pNMy4yOSA5djEySDdWOUgzLjI5em0xMy4yNC0uM0EzLjk0IDMuOTQgMCAwMDEzIDEwLjYyVjlIOS4zN3YxMmgzLjczdi01Ljk1YzAtMS41Ny4yOS0zLjA5IDIuMjQtMy4wOSAxLjk1IDAgMS45MyAxLjggMS45MyAzLjE5VjIxSDIxdi02LjZjMC0zLjIzLS42OS01LjcyLTQuNDctNS43MnYuMDJ6TTMuMjkgMjFIN1Y5SDMuMjl2MTJ6TTUuMTYgM2EyLjE3IDIuMTcgMCAxMDIuMTYgMi4xOEEyLjE2IDIuMTYgMCAwMDUuMTYgM3oiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWxpbmtlZGluLXNxdWFyZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTE5LjY3IDNINC4zM0ExLjMyIDEuMzIgMCAwMDMgNC4zdjE1LjRBMS4zMiAxLjMyIDAgMDA0LjMzIDIxaDE1LjM0QTEuMzIgMS4zMiAwIDAwMjEgMTkuN1Y0LjNBMS4zMiAxLjMyIDAgMDAxOS42NyAzek04LjM0IDE4LjM0SDUuNjdWOS43NWgyLjY3djguNTl6TTcgOC41N0ExLjU1IDEuNTUgMCAxMTguNTUgNyAxLjU0IDEuNTQgMCAwMTcgOC41N3ptMTEuMzQgOS43N2gtMi42N3YtNC4xOGMwLTEgMC0yLjI4LTEuMzktMi4yOHMtMS42IDEuMDktMS42IDIuMjF2NC4yNUgxMFY5Ljc1aDIuNTZ2MS4xN2EyLjgzIDIuODMgMCAwMTIuNTMtMS4zOWMyLjcgMCAzLjIgMS43OCAzLjIgNC4xbC4wNSA0LjcxeiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtbGlzdCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNCAxMmEuOS45IDAgMDEtMSAxIDEgMSAwIDAxMC0yIC45LjkgMCAwMTEgMXpNMyA0LjVhLjkuOSAwIDAwLTEgMSAuOS45IDAgMDAxIDEgLjkuOSAwIDAwMS0xIC45LjkgMCAwMC0xLTF6bTAgMTNhMSAxIDAgMDAwIDIgMSAxIDAgMDAwLTJ6TTYgNXYxaDE2VjV6bTAgNy41aDE2di0xSDZ6TTYgMTloMTZ2LTFINnoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1sb2NrIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xOC41IDguNUgxN1Y4QTUgNSAwIDAwNyA4di41SDUuNUExLjUgMS41IDAgMDA0IDEwdjguNUExLjUgMS41IDAgMDA1LjUgMjBoMTNhMS41IDEuNSAwIDAwMS41LTEuNVYxMGExLjUgMS41IDAgMDAtMS41LTEuNXpNOCA4YTQgNCAwIDAxOCAwdi41SDh6bTExIDEwLjVhLjUuNSAwIDAxLS41LjVoLTEzYS41LjUgMCAwMS0uNS0uNVYxMGEuNS41IDAgMDEuNS0uNWgxM2EuNS41IDAgMDEuNS41eiIvPjxwYXRoIGQ9Ik0xMiAxMy4yNWExIDEgMCAxMS0xIDEgMSAxIDAgMDExLTFtMC0xYTIgMiAwIDEwMiAyIDIgMiAwIDAwLTItMnoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LWxvY2tlZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYuNSAxMkgxNlY3YTQgNCAwIDAwLTggMHY1aC0uNWExLjEgMS4xIDAgMDAtMS4xIDEuMXY2LjhBMS4xIDEuMSAwIDAwNy41IDIxaDlhMS4xIDEuMSAwIDAwMS4xLTEuMXYtNi44YTEuMSAxLjEgMCAwMC0xLjEtMS4xek05IDdhMyAzIDAgMDE2IDB2NUg5em03LjYgMTIuOWEuMS4xIDAgMDEtLjEuMWgtOWEuMS4xIDAgMDEtLjEtLjF2LTYuOGg5LjJ6TTEzIDE1LjVhLjguOCAwIDAxLS41Ljh2MS41aC0xdi0xLjVhLjguOCAwIDAxLS41LS44IDEgMSAwIDAxMiAweiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LW1haWwiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwLjUgNWgtMTdBMS41IDEuNSAwIDAwMiA2LjV2MTFBMS41IDEuNSAwIDAwMy41IDE5aDE3YTEuNSAxLjUgMCAwMDEuNS0xLjV2LTExQTEuNSAxLjUgMCAwMDIwLjUgNXptLS4zIDFsLTcuMSA3LjJhMS42IDEuNiAwIDAxLTIuMiAwTDMuOCA2ek0zIDE3LjNWNi42TDguMyAxMnptLjcuN0w5IDEyLjdsMS4yIDEuMmEyLjcgMi43IDAgMDAzLjYgMGwxLjItMS4yIDUuMyA1LjN6bTEyLTZMMjEgNi42djEwLjd6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtbWVkaXVtIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNNSA3LjYzQS43Mi43MiAwIDAwNC44MiA3TDMuMTMgNXYtLjNoNS4yMmw0IDguODQgMy41NC04Ljg0aDVWNWwtMS40MiAxLjRhLjQzLjQzIDAgMDAtLjE2LjR2MTAuMTJhLjQ1LjQ1IDAgMDAuMTYuNDFsMS40IDEuMzd2LjNoLTd2LS4zbDEuNDUtMS40MWMuMTQtLjE0LjE0LS4xOC4xNC0uNFY4LjcxTDExLjM3IDE5aC0uNTVMNi4xMiA4LjcxdjYuODhhLjkzLjkzIDAgMDAuMjYuNzlsMS44OSAyLjI5VjE5SDIuOTF2LS4zbDEuODktMi4zMmEuOTIuOTIgMCAwMC4yLS43OVY3LjYzeiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtbWVkaXVtLXNxdWFyZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTMgM2gxOHYxOEgzVjN6bTQuMyAxMS4zNmEuNjQuNjQgMCAwMS0uMTcuNTRsLTEuMjcgMS41NHYuMmgzLjZ2LS4yTDguMTkgMTQuOWEuNjcuNjcgMCAwMS0uMTktLjU0VjkuNzRsMy4xNiA2LjloLjM3bDIuNzEtNi45djUuNWMwIC4xNSAwIC4xNy0uMDkuMjdsLTEgMXYuMmg0Ljc0di0uMmwtLjg5LS45OGEuMjcuMjcgMCAwMS0uMTEtLjI3di02LjhhLjI4LjI4IDAgMDEuMTEtLjI3bDEtLjkzdi0uMmgtMy4zOUwxMi4yMyAxMyA5LjUyIDcuMDZINnYuMmwxLjE0IDEuMzZBLjUuNSAwIDAxNy4zIDl2NS4zNnoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LW1pbnVzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMCAxMi41SDR2LTFoMTZ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtbWludXMtY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02LjkgMTEuNWgxMHYxaC0xMHpNMjIgMTJBMTAgMTAgMCAxMTEyIDJhMTAgMTAgMCAwMTEwIDEwem0tMSAwYTkgOSAwIDEwLTkgOSA5IDkgMCAwMDktOXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1tb3JlLWFjdGlvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYgMTBhMiAyIDAgMTAyIDIgMiAyIDAgMDAtMi0yem0wIDNhMSAxIDAgMDEwLTIgMSAxIDAgMDEwIDJ6bTYtM2EyIDIgMCAxMDIgMiAyIDIgMCAwMC0yLTJ6bTAgM2ExIDEgMCAxMTEtMSAuOS45IDAgMDEtMSAxem02LTNhMiAyIDAgMTAyIDIgMiAyIDAgMDAtMi0yem0wIDNhMSAxIDAgMTExLTEgLjkuOSAwIDAxLTEgMXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1tb3JlLWl0ZW1zIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiAxOGExIDEgMCAxMS0xIDEgLjkuOSAwIDAxMS0xbTAtMWEyIDIgMCAxMDIgMiAyIDIgMCAwMC0yLTJ6bTAtNmExIDEgMCAxMS0xIDEgLjkuOSAwIDAxMS0xbTAtMWEyIDIgMCAxMDIgMiAyIDIgMCAwMC0yLTJ6bTAtNmEuOS45IDAgMDExIDEgMSAxIDAgMDEtMiAwIC45LjkgMCAwMTEtMW0wLTFhMiAyIDAgMTAyIDIgMiAyIDAgMDAtMi0yeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LW5vdGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE4LjUgNGgtMTNBMS41IDEuNSAwIDAwNCA1LjV2MTNBMS41IDEuNSAwIDAwNS41IDIwaDEwLjJsNC4zLTQuM1Y1LjVBMS41IDEuNSAwIDAwMTguNSA0ek01IDE4LjV2LTEzYS41LjUgMCAwMS41LS41aDEzYS41LjUgMCAwMS41LjVWMTVoLTIuNWExLjUgMS41IDAgMDAtMS41IDEuNVYxOUg1LjVhLjUuNSAwIDAxLS41LS41ek0xOC4zIDE2TDE2IDE4LjN2LTEuOGEuNS41IDAgMDEuNS0uNXpNMTYgOUg4VjhoOHptMCAySDh2LTFoOHptLTIgMXYxSDh2LTF6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtcGEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTMgMjFoMTh2MUgzem0wLTFoMTh2LTFIM3pNMjIgOUgybDEwLTd6TTUuMiA4aDEzLjZMMTIgMy4yek02IDE4di04SDV2OHptNCAwdi04SDl2OHptNSAwdi04aC0xdjh6bTQgMHYtOGgtMXY4eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXBhc3N3b3JkLWludmlzaWJsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUgMTJhMy4yIDMuMiAwIDAwLS43LTEuOWwuNC0xLjFhNC4yIDQuMiAwIDAxMS4zIDMgNCA0IDAgMDEtMy45IDRsLjQtMS4xQTIuOSAyLjkgMCAwMDE1IDEyek0zLjEgMTJBOS44IDkuOCAwIDAxMTIgNi41aC40bC40LS45SDEyYTEwLjkgMTAuOSAwIDAwLTkuOCA2TDIgMTJsLjIuNWExMSAxMSAwIDAwNi4xIDUuM2wuMy0uOUE5LjggOS44IDAgMDEzLjEgMTJ6bTE4LjctLjVhMTEgMTEgMCAwMC02LjEtNS4zbC0uMy45YTkuOCA5LjggMCAwMTUuNSA0LjkgOS44IDkuOCAwIDAxLTguOSA1LjVoLS40bC0uNC45aC44YTEwLjkgMTAuOSAwIDAwOS44LTZsLjItLjR6TTExLjUgOS4xbC40LTEuMUE0IDQgMCAwMDggMTJhNC4yIDQuMiAwIDAwMS4zIDNsLjQtMS4xQTMuMiAzLjIgMCAwMTkgMTJhMi45IDIuOSAwIDAxMi41LTIuOXptMy4xLTUuN0w4LjUgMjAuM2wuOS4zIDYuMS0xNi45eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXBhc3N3b3JkLXZpc2libGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIxLjggMTEuNWExMSAxMSAwIDAwLTE5LjYgMEwyIDEybC4yLjVhMTEgMTEgMCAwMDE5LjYgMGwuMi0uNXptLTkuOCA2QTkuOCA5LjggMCAwMTMuMSAxMiA5LjggOS44IDAgMDExMiA2LjVhOS44IDkuOCAwIDAxOC45IDUuNSA5LjggOS44IDAgMDEtOC45IDUuNXpNMTIgOGE0IDQgMCAxMDQgNCA0IDQgMCAwMC00LTR6bTAgN2EzIDMgMCAxMTMtMyAyLjkgMi45IDAgMDEtMyAzeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXBlbmNpbCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAuNSAzLjVhMi45IDIuOSAwIDAwLTIuMS0uOSAzLjEgMy4xIDAgMDAtMi4yLjlMNC42IDE1LjJsLTEgNS4yIDUuMi0xTDIwLjUgNy44YTMgMyAwIDAwMC00LjN6bS01LjcgMi44bC43LS43IDIuOSAyLjktLjcuN3ptLS43LjhsMS4xIDEtOC40IDguNC0xLjEtMS4xek01LjcgMTguM2EuNy43IDAgMDAtLjYtLjNsLjMtMS41IDIuMSAyLjEtMS41LjNhLjcuNyAwIDAwLS4zLS42em0yLjkgMGwtMS4xLTEuMSA4LjQtOC40IDEgMS4xek0xOS44IDcuMWwtLjcuNy0yLjktMi45LjctLjdhMi4yIDIuMiAwIDAxMS41LS42IDIgMiAwIDAxMS40LjYgMi4xIDIuMSAwIDAxMCAyLjl6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtcGluIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xOC4xIDE0TDE1IDEwLjNWNC42TDE2LjMgMkg3LjdMOSA0LjZ2NS43TDUuOSAxNGg1LjZ2OGgxdi04ek0xMCA1aDR2NWgtNHptNC43LTJsLS41IDFIOS44bC0uNS0xem0tNSA4aDQuNmwxLjYgMkg4LjF6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtcGx1cyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAgMTIuNWgtNy41VjIwaC0xdi03LjVINHYtMWg3LjVWNGgxdjcuNUgyMHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1wbHVzLWNpcmNsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIuNCAxMS41aDQuNXYxaC00LjVWMTdoLTF2LTQuNUg2Ljl2LTFoNC41VjdoMXptOS42LjVBMTAgMTAgMCAxMTEyIDJhMTAgMTAgMCAwMTEwIDEwem0tMSAwYTkgOSAwIDEwLTkgOSA5IDkgMCAwMDktOXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1wcmVzZW50YXRpb24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQgNXYxMC42QTIuNCAyLjQgMCAwMDYuNCAxOGgzLjFsLTEuMSA0aDFsMS4xLTRoMi43bDEuMiA0aDFsLTEuMi00aDMuNWEyLjMgMi4zIDAgMDAyLjMtMi4zVjV6bTE1IDEwLjdhMS4zIDEuMyAwIDAxLTEuMyAxLjNINi40QTEuNCAxLjQgMCAwMTUgMTUuNlY2aDE0ek0yMSAzdjFIM1Yzem0tOSAxM2E0LjUgNC41IDAgMTAtNC41LTQuNUE0LjUgNC41IDAgMDAxMiAxNnptLS41LTcuOVYxMUg4LjZhMy40IDMuNCAwIDAxMi45LTIuOXptMSAzLjlWOGEzLjUgMy41IDAgMDEtLjUgNyAzLjQgMy40IDAgMDEtMy40LTN6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtcHJpbnQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIxIDkuNUExLjUgMS41IDAgMDAxOS41IDhIMTdWM0g3djVINC41QTEuNSAxLjUgMCAwMDMgOS41VjE2aDJ2M2gydjJoMTB2LTJoMnYtM2gyek04IDRoOHY0SDh6TTYgMTh2LTRoMXY0em0xMCAySDh2LTZoOHY2em0yLTJoLTF2LTRoMXY0em0yLTNoLTF2LTJINXYySDRWOS41YS41LjUgMCAwMS41LS41aDE1YS41LjUgMCAwMS41LjV6TTYgMTFoNHYxSDZ6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtc2VhcmNoIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yMS45IDIxLjFMMTYgMTUuM2E4LjMgOC4zIDAgMDAyLTUuMyA4IDggMCAxMC04IDggOC4zIDguMyAwIDAwNS4zLTJsNS44IDUuOXpNMTAgMTdhNyA3IDAgMTE3LTcgNyA3IDAgMDEtNyA3eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXNldHRpbmdzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiA3LjVhNC41IDQuNSAwIDEwNC41IDQuNUE0LjUgNC41IDAgMDAxMiA3LjV6bTAgOGEzLjUgMy41IDAgMTEzLjUtMy41IDMuNSAzLjUgMCAwMS0zLjUgMy41em05LjgtMS42QTEyLjMgMTIuMyAwIDAwMjIgMTJhMTIuMyAxMi4zIDAgMDAtLjItMS45bC0yLjEtLjNhOC43IDguNyAwIDAwLS43LTEuN2wxLjMtMS43YTguNyA4LjcgMCAwMC0yLjctMi43TDE1LjkgNWwtMS43LS43LS4zLTIuMUwxMiAybC0xLjkuMi0uMyAyLjEtMS43LjctMS43LTEuM2E4LjcgOC43IDAgMDAtMi43IDIuN0w1IDguMWE4LjcgOC43IDAgMDAtLjcgMS43bC0yLjEuM0ExMi4zIDEyLjMgMCAwMDIgMTJhMTIuMyAxMi4zIDAgMDAuMiAxLjlsMi4xLjNhOC43IDguNyAwIDAwLjcgMS43bC0xLjMgMS43YTguNyA4LjcgMCAwMDIuNyAyLjdMOC4xIDE5bDEuNy43LjMgMi4xIDEuOS4yIDEuOS0uMi4zLTIuMSAxLjctLjcgMS43IDEuM2E4LjcgOC43IDAgMDAyLjctMi43TDE5IDE1LjlhOC43IDguNyAwIDAwLjctMS43em0tMi45LS43bC0uMi43YTMuOSAzLjkgMCAwMS0uNiAxLjVsLS4zLjYuNC41LjggMS4xYTkuMyA5LjMgMCAwMS0xLjQgMS40bC0xLjEtLjgtLjUtLjQtLjYuM2EzLjkgMy45IDAgMDEtMS41LjZsLS43LjJ2LjdsLS4yIDEuM2gtMmwtLjItMS4zdi0uN2wtLjctLjJhMy45IDMuOSAwIDAxLTEuNS0uNmwtLjYtLjMtLjUuNC0xLjEuOEE5LjMgOS4zIDAgMDE1IDE3LjZsLjgtMS4xLjQtLjUtLjMtLjZhMy45IDMuOSAwIDAxLS42LTEuNWwtLjItLjdoLS43TDMuMSAxM2EzLjQgMy40IDAgMDEtLjEtMSAzLjQgMy40IDAgMDEuMS0xbDEuMy0uMmguN2wuMi0uN2EzLjkgMy45IDAgMDEuNi0xLjVsLjMtLjYtLjQtLjVMNSA2LjQgNi40IDVsMS4xLjguNS40LjYtLjNhMy45IDMuOSAwIDAxMS41LS42bC43LS4ydi0uN2wuMi0xLjNoMmwuMiAxLjN2LjdsLjcuMmEzLjkgMy45IDAgMDExLjUuNmwuNi4zLjUtLjQgMS4xLS44QTkuMyA5LjMgMCAwMTE5IDYuNGwtLjggMS4xLS40LjUuMy42YTMuOSAzLjkgMCAwMS42IDEuNWwuMi43aC43bDEuMy4yYTMuNCAzLjQgMCAwMS4xIDEgMy40IDMuNCAwIDAxLS4xIDFsLTEuMy4yeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXNoYXJlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNy41IDE1YTIuNSAyLjUgMCAwMC0yIDFsLTcuNi0zLjRBMS4zIDEuMyAwIDAwOCAxMmExLjMgMS4zIDAgMDAtLjEtLjZMMTUuNSA4YTIuNSAyLjUgMCAxMC0uNS0xLjUgMS4zIDEuMyAwIDAwLjEuNmwtNy42IDMuNGEyLjUgMi41IDAgMTAwIDNsNy42IDMuNGExLjMgMS4zIDAgMDAtLjEuNiAyLjUgMi41IDAgMTAyLjUtMi41em0wLTEwQTEuNSAxLjUgMCAwMTE5IDYuNWExLjUgMS41IDAgMDEtMyAwQTEuNSAxLjUgMCAwMTE3LjUgNXptLTEyIDguNWExLjUgMS41IDAgMDEwLTMgMS41IDEuNSAwIDAxMCAzem0xMiA1LjVhMS41IDEuNSAwIDExMS41LTEuNSAxLjUgMS41IDAgMDEtMS41IDEuNXoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1zdGFyLWZ1bGwiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDEuN0w5LjUgOS4ySDEuNkw4IDEzLjlsLTIuNCA3LjYgNi40LTQuNyA2LjQgNC43LTIuNC03LjYgNi40LTQuN2gtNy45TDEyIDEuN3oiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC1zdGFyLW91dGxpbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDQuOWwxLjUgNC42LjIuN2g1LjdsLTQgMi45LS42LjQuMi43IDEuNSA0LjctMy45LTIuOS0uNi0uNC0uNi40LTMuOSAyLjlMOSAxNC4ybC4yLS43LS42LS40LTQtMi45aDUuN2wuMi0uN0wxMiA0LjltMC0zLjJMOS41IDkuMkgxLjZMOCAxMy45bC0yLjQgNy42IDYuNC00LjcgNi40IDQuNy0yLjQtNy42IDYuNC00LjdoLTcuOUwxMiAxLjd6Ii8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtdGVhbS1kaWdpdGFsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjMuNjQ4IDI0SC4zNTJBLjM1My4zNTMgMCAwMTAgMjMuNjQ4Vi4zNTJDMCAuMTU4LjE1OCAwIC4zNTIgMGgyMy4yOTZjLjE5NCAwIC4zNTIuMTU4LjM1Mi4zNTJ2MjMuMjk2YS4zNTMuMzUzIDAgMDEtLjM1Mi4zNTJ6TTUuODE0IDExLjc5MmExLjU5NiAxLjU5NiAwIDEwMC0zLjE5MiAxLjU5NiAxLjU5NiAwIDAwMCAzLjE5MnpNMTAgMTguOTk0VjE5aDQuNDE4QzE5LjEzIDE5IDIwIDE2LjY4NSAyMCAxMi4yNTMgMjAgNy45MyAxOC45OTUgNiAxNC40MTggNkgxMHYxMi45OTR6bTQuNDE4LTEwLjcwMmMyLjU4NiAwIDIuODM4IDEuMTEgMi44MzggMy45NTUgMCAyLjg5LS4yNTIgNC40NTUtMi44MzggNC40NTVoLTEuNzU2di04LjQxaDEuNzU2eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtdGVsZXBob25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik01IDNoLjE4TTIwIDExLjU2QTcuNTkgNy41OSAwIDAwMTIuNDggNGgtLjA2YS40OS40OSAwIDAwLS40OS40OC41LjUgMCAwMC40OS41MUE2LjYxIDYuNjEgMCAwMTE5IDExLjYyYS41MS41MSAwIDAwLjU0LjQ2LjQ5LjQ5IDAgMDAuNDUtLjQ2cy4wMS0uMDQuMDEtLjA2eiIvPjxwYXRoIGQ9Ik0xNi45MyAxMS42OGE0LjUgNC41IDAgMDAtNC40OC00LjQ4LjUxLjUxIDAgMDAwIDEgMy41IDMuNSAwIDAxMy40OSAzLjQ5LjUuNSAwIDAwLjUuNS41MS41MSAwIDAwLjUtLjUxek0xNS42OCAyMS4xOWExMy4zMiAxMy4zMiAwIDAxLTEyLjgtMTMuMS45Mi45MiAwIDAxLjYyLS44OGMxLjc0LS41NiA0LTEgNC43LjA2YTcuMzkgNy4zOSAwIDAxLjg1IDIuOTF2LjIxYTEuNDggMS40OCAwIDAxLS43IDEuNjguODEuODEgMCAwMC0uNDkuNzEgMTIuNTUgMTIuNTUgMCAwMDMuMzggMy41MS44OC44OCAwIDAwLjQ4LS41NmMuMDktLjUzLjU4LTEgMS43LS44NWguMjFhNyA3IDAgMDEyLjg1Ljg3YzEgLjcyLjYyIDMgLjA5IDQuNzJhMSAxIDAgMDEtLjg5Ljcyek02LjU1IDcuNTJhOS41IDkuNSAwIDAwLTIuNzguNTUgMTIuNDEgMTIuNDEgMCAwMDExLjkxIDEyLjIyYy43My0yLjI2LjY2LTMuNTQuMzEtMy43OGE2LjY2IDYuNjYgMCAwMC0yLjQ2LS43MmgtLjIyYy0uMzIgMC0uNjUgMC0uNjguMTJhMS45IDEuOSAwIDAxLTEuMjcgMS4zNGwtLjIxLjA3LS4xNS0uMTVhMTMuNDQgMTMuNDQgMCAwMS0zLjktNEw3IDEzYTEuNjggMS42OCAwIDAxMS0xLjdjLjEyLS4wNy4zMy0uMTguMjUtLjc1di0uMjJhNi44NCA2Ljg0IDAgMDAtLjctMi41NGMtLjItLjE4LS41NS0uMjctMS0uMjd6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC10b29sIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik03LjcgNWEzLjEgMy4xIDAgMDExLjcuNSAzLjEgMy4xIDAgMDExLjYgMyAzIDMgMCAwMC44IDIuNGw2LjMgNi4zYTEgMSAwIDAxLjIgMS4zIDEgMSAwIDAxLS44LjUuOS45IDAgMDEtLjctLjNsLTYuNC02LjRhMyAzIDAgMDAtMi4xLS44aC0uNmEyLjggMi44IDAgMDEtMi4yLTFoMi43VjYuNEg1LjFhMi43IDIuNyAwIDAxMS4xLTFBMi44IDIuOCAwIDAxNy43IDVtMC0xYTQuNiA0LjYgMCAwMC0yIC41IDQuMSA0LjEgMCAwMC0yLjEgMi45aDMuNnYyLjFIMy43YTUuNCA1LjQgMCAwMDEgMS44IDQuNCA0LjQgMCAwMDMgMS4yaC42YTIuNCAyLjQgMCAwMTEuNC41bDYuNCA2LjRhMiAyIDAgMDAxLjQuNiAxLjkgMS45IDAgMDAxLjYtLjkgMiAyIDAgMDAtLjMtMi42bC02LjMtNi4zYTEuOCAxLjggMCAwMS0uNS0xLjYgNC40IDQuNCAwIDAwLTItNEE0LjYgNC42IDAgMDA3LjcgNHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC10d2l0dGVyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNOC4wOCAyMGExMC45MyAxMC45MyAwIDAwMTEtMTF2LS41YTggOCAwIDAwMS45Mi0yIDcuODUgNy44NSAwIDAxLTIuMjIuNjFBMy44OSAzLjg5IDAgMDAyMC40OCA1YTggOCAwIDAxLTIuNDguOTEgMy44NyAzLjg3IDAgMDAtNi41OSAzLjUyIDExIDExIDAgMDEtOC00IDMuODUgMy44NSAwIDAwMS4xOSA1LjE2IDMuNzYgMy43NiAwIDAxLTEuNzUtLjQ4QTMuODcgMy44NyAwIDAwNiAxMy45MWEzLjczIDMuNzMgMCAwMS0xIC4xNCA0LjMgNC4zIDAgMDEtLjczLS4wNSAzLjg3IDMuODcgMCAwMDMuNjEgMi42OCA3LjczIDcuNzMgMCAwMS00LjggMS42NiA3IDcgMCAwMS0uOTItLjA2QTEwLjkgMTAuOSAwIDAwOC4wOCAyMCIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtdHdpdHRlci1zcXVhcmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0xOS41IDIyaC0xNUEyLjUgMi41IDAgMDEyIDE5LjV2LTE1QTIuNSAyLjUgMCAwMTQuNSAyaDE1QTIuNSAyLjUgMCAwMTIyIDQuNXYxNWEyLjUgMi41IDAgMDEtMi41IDIuNXptLTkuODItNC45MkE3LjI0IDcuMjQgMCAwMDE3IDkuNzl2LS4zM2E1LjIyIDUuMjIgMCAwMDEuMjgtMS4zMyA1LjIyIDUuMjIgMCAwMS0xLjQ4LjQgMi41NiAyLjU2IDAgMDAxLjE0LTEuNDIgNC45MyA0LjkzIDAgMDEtMS42NC42MiAyLjUzIDIuNTMgMCAwMC0xLjg2LS44MSAyLjU3IDIuNTcgMCAwMC0yLjU3IDIuNTdjLjAwMy4xOTUuMDI2LjM5LjA3LjU4YTcuMjYgNy4yNiAwIDAxLTUuMzItMi42OCAyLjU5IDIuNTkgMCAwMC44IDMuNDMgMi43OCAyLjc4IDAgMDEtMS4xNi0uMzIgMi41NyAyLjU3IDAgMDAyLjA1IDIuNTIgMi40NiAyLjQ2IDAgMDEtMS4xNS4wNCAyLjU1IDIuNTUgMCAwMDIuMzkgMS43OEE1LjEzIDUuMTMgMCAwMTYuMzcgMTZhNi4wOCA2LjA4IDAgMDEtLjYxIDAgNy4yMyA3LjIzIDAgMDAzLjkyIDEuMTR2LS4wNnoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXVubG9ja2VkIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNi41IDEySDE2VjZhNCA0IDAgMDAtOCAwdjNoMVY2YTMgMyAwIDAxNiAwdjZINy41YTEuMSAxLjEgMCAwMC0xLjEgMS4xdjYuOEExLjEgMS4xIDAgMDA3LjUgMjFoOWExLjEgMS4xIDAgMDAxLjEtMS4xdi02LjhhMS4xIDEuMSAwIDAwLTEuMS0xLjF6bS4xIDcuOWEuMS4xIDAgMDEtLjEuMWgtOWEuMS4xIDAgMDEtLjEtLjF2LTYuOGg5LjJ6TTEzIDE1LjVhLjguOCAwIDAxLS41Ljh2MS41aC0xdi0xLjVhLjguOCAwIDAxLS41LS44IDEgMSAwIDAxMiAweiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXVwbG9hZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC40IDcuM2wtLjctLjdMMTIgMi4zbDQuMyA0LjMtLjcuNy0zLjEtMy4xdjkuM2gtMVY0LjJ6TTE5IDEydjcuNWEuNS41IDAgMDEtLjUuNWgtMTNhLjUuNSAwIDAxLS41LS41VjEySDR2Ny41QTEuNSAxLjUgMCAwMDUuNSAyMWgxM2ExLjUgMS41IDAgMDAxLjUtMS41VjEyeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXVzZXIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDEzYTQgNCAwIDAwNC00VjZhNCA0IDAgMDAtOCAwdjNhNCA0IDAgMDA0IDR6TTkgNmEzIDMgMCAwMTYgMHYzYTMgMyAwIDAxLTYgMHptMTEgMTZoLTFhNyA3IDAgMDAtMTQgMEg0YTggOCAwIDAxMTYgMHoiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC12aWRlbyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTcuNSA3LjNWNkExLjUgMS41IDAgMDAxNiA0LjVINS41QTEuNSAxLjUgMCAwMDQgNnY4YTEuNSAxLjUgMCAwMDEuNSAxLjVoMy40TDcuNCAyMWgxbDEuNi01LjVoMS44bDEuNiA1LjVoMWwtMS42LTUuNUgxNmExLjUgMS41IDAgMDAxLjUtMS41di0xLjNsNCAxLjVWNS44em0zIDUuNWwtNC0xLjVWMTRhLjUuNSAwIDAxLS41LjVINS41QS41LjUgMCAwMTUgMTRWNmEuNS41IDAgMDEuNS0uNUgxNmEuNS41IDAgMDEuNS41djIuN2w0LTEuNXpNMiA4aDF2NEgyeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXdhcm5pbmciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyLjUgMTdoLTFWMmgxem0wIDNoLTF2MmgxeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXdhcm5pbmctY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiAyYTEwIDEwIDAgMTAxMCAxMEExMCAxMCAwIDAwMTIgMnptMCAxOWE5IDkgMCAxMTktOSA5IDkgMCAwMS05IDl6bS0uNS02LjhWNS43aDEuMnY4LjV6bS0uMSAyLjNoMS4ydjEuOGgtMS4yeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgaWQ9Iml0LXdoYXRzYXBwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNMTkuMDkgNC42M2ExMCAxMCAwIDAwLTE1LjY4IDEyTDIgMjEuOGw1LjI4LTEuMzhBMTAgMTAgMCAwMDEyIDIxLjYzYTEwIDEwIDAgMDA3LjA1LTE3aC4wNHpNMTIgMjBhOC4xOCA4LjE4IDAgMDEtNC4yMS0xLjE2bC0uMzEtLjE4LTMuMTMuODMuODQtMy4wNi0uMTktLjM2QTguMjggOC4yOCAwIDExMTIgMjB6bTQuNTQtNi4yYy0uMjUtLjEzLTEuNDctLjczLTEuNy0uODEtLjIzLS4wOC0uMzktLjEzLS41Ni4xMi0uMjQ2LjM0Ny0uNTEuNjgtLjc5IDEtLjE0LjE2LS4yOS4xOC0uNTQuMDZhNi45MiA2LjkyIDAgMDEtMi0xLjIzIDcuMjcgNy4yNyAwIDAxLTEuMzgtMS43M2MtLjE1LS4yNSAwLS4zOC4xMS0uNTFzLjI1LS4yOS4zNy0uNDNhMS41MSAxLjUxIDAgMDAuMjUtLjQyLjQ2LjQ2IDAgMDAwLS40M2MtLjA0LS4yLS41NC0xLjQyLS43NS0xLjkyLS4yMS0uNS0uNC0uNDItLjU2LS40M2gtLjQ3YTEgMSAwIDAwLS42Ny4zMUEyLjgxIDIuODEgMCAwMDcgOS40NSA0LjczIDQuNzMgMCAwMDggMTJhMTEgMTEgMCAwMDQuMjUgMy43NmMuNDY0LjIuOTM4LjM3OCAxLjQyLjUzYTMuMjggMy4yOCAwIDAwMS41Ni4wOSAyLjU0IDIuNTQgMCAwMDEuNjgtMS4xOCAyLjA5IDIuMDkgMCAwMC4xNS0xLjJjLS4wNi0uMDctLjIzLS4xMy0uNDgtLjI1bC0uMDQuMDV6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC13aGF0c2FwcC1zcXVhcmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0xNiA4LjA3YTUuMzQgNS4zNCAwIDAwLTkuMTEgMy43NyA1LjI4IDUuMjggMCAwMC44MiAyLjg0bC4xMi4yLS41MyAyIDItLjUzLjIuMTFjLjgyLjQ5IDEuNzU2Ljc1IDIuNzEuNzVBNS4zNCA1LjM0IDAgMDAxNiA4LjA3em0tLjgzIDUuODNhMS42NiAxLjY2IDAgMDEtMS4wOC43NiAyLjIzIDIuMjMgMCAwMS0xLS4wNmMtLjIzLS4wOC0uNTMtLjE4LS45MS0uMzRhNy4xNiA3LjE2IDAgMDEtMi43OC0yLjQyIDMuMTMgMy4xMyAwIDAxLS42Ni0xLjY2IDEuODMgMS44MyAwIDAxLjU2LTEuMzQuNTkuNTkgMCAwMS40My0uMkgxMGMuMSAwIC4yMyAwIC4zNi4yNy4xMy4yNy40NSAxLjExLjQ5IDEuMTlhLjMuMyAwIDAxMCAuMjggMS4yIDEuMiAwIDAxLS4xNi4yN2MtLjA4LjEtLjE3LjIxLS4yNC4yOC0uMDcuMDctLjE3LjE3LS4wNy4zMy4yMzkuNDEzLjU0Ljc4Ny44OSAxLjExLjM4LjM0LjgxNi42MTIgMS4yOS44LjE2LjA4LjI1LjA2LjM0IDAgLjA5LS4wNi40LS40Ny41MS0uNjMuMTEtLjE2LjIxLS4xNC4zNi0uMDguMTUuMDYuOTQuNDQgMS4xLjUyLjE2LjA4LjI2LjEyLjMuMTlhMS4zNiAxLjM2IDAgMDEtLjAzLjczaC4wM3oiLz48cGF0aCBkPSJNMjEgNy4wOWE4LjI2IDguMjYgMCAwMC0uMDktMS4xNSAzLjQ5IDMuNDkgMCAwMC0xLjg1LTIuNTEgMy44OSAzLjg5IDAgMDAtMS0uMzJBOC4zNiA4LjM2IDAgMDAxNi45MSAzSDcuMDlhOC4yNiA4LjI2IDAgMDAtMS4xNS4wOUEzLjQ5IDMuNDkgMCAwMDMuNDMgNWEzLjg5IDMuODkgMCAwMC0uMzIgMUE4LjM2IDguMzYgMCAwMDMgNy4wOXY5LjgyYy4wMDMuMzg1LjAzMy43Ny4wOSAxLjE1QTMuNDkgMy40OSAwIDAwNSAyMC41N2EzLjg5IDMuODkgMCAwMDEgLjMyYy4zODQuMDYuNzcxLjA5NCAxLjE2LjFoOS44MmE4LjI2IDguMjYgMCAwMDEuMTUtLjA5IDMuNDkgMy40OSAwIDAwMi41MS0xLjg1IDMuODkgMy44OSAwIDAwLjMyLTEgOC4zNiA4LjM2IDAgMDAuMS0xLjE2VjcuNTdjLS4wNi0uMS0uMDYtLjMxLS4wNi0uNDh6bS04LjggMTEuMTdhNi4zOSA2LjM5IDAgMDEtMy4wNi0uNzhsLTMuNDEuODkuOTItMy4zMmE2LjMzIDYuMzMgMCAwMS0uODYtMy4yMSA2LjQxIDYuNDEgMCAwMTExLTQuNTMgNi4zMyA2LjMzIDAgMDExLjg4IDQuNTQgNi40MiA2LjQyIDAgMDEtNi40NyA2LjQxeiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQteW91dHViZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTIxLjU2IDcuMmEyLjUgMi41IDAgMDAtMS43Ni0xLjc3QzE4LjI0IDUgMTIgNSAxMiA1cy02LjI0IDAtNy44LjQyQTIuNSAyLjUgMCAwMDIuNDQgNy4yIDI1LjcyIDI1LjcyIDAgMDAyIDEyYy0uMDEgMS42MS4xMyAzLjIxNy40MiA0LjhhMi41IDIuNSAwIDAwMS43OCAxLjc3QzUuNzYgMTkgMTIgMTkgMTIgMTlzNi4yNCAwIDcuOC0uNDJhMi41IDIuNSAwIDAwMS43Ni0xLjc3QTI1LjcyIDI1LjcyIDAgMDAyMiAxMmEyNS43MiAyNS43MiAwIDAwLS40NC00Ljh6TTEwIDE1VjlsNS4xOSAzTDEwIDE1eiIvPjwvc3ZnPjxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiBpZD0iaXQtem9vbS1pbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAuNCA5LjVoMy4zdjFoLTMuM3YzLjJoLTF2LTMuMkg2LjJ2LTFoMy4yVjYuMmgxem0xMC43IDEyLjRMMTUuMyAxNmE4LjMgOC4zIDAgMDEtNS4zIDIgOCA4IDAgMTE4LTggOC4zIDguMyAwIDAxLTIgNS4zbDUuOSA1Ljh6TTE3IDEwYTcgNyAwIDEwLTcgNyA3IDcgMCAwMDctN3oiLz48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PC9zdmc+PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGlkPSJpdC16b29tLW91dCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNi4yIDkuNWg3LjV2MUg2LjJ6bTE0LjkgMTIuNEwxNS4zIDE2YTguMyA4LjMgMCAwMS01LjMgMiA4IDggMCAxMTgtOCA4LjMgOC4zIDAgMDEtMiA1LjNsNS45IDUuOHpNMTcgMTBhNyA3IDAgMTAtNyA3IDcgNyAwIDAwNy03eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz48L2RlZnM+PC9zdmc+';
 
-	var propTypes$1d = {
+	var propTypes$1k = {
 	  className: propTypes.string,
 	  color: propTypes.string,
 	  size: propTypes.string,
 	  icon: propTypes.string,
 	  padding: propTypes.bool
 	};
-	var defaultProps$18 = {
+	var defaultProps$1f = {
 	  color: '',
 	  size: '',
 	  icon: '',
@@ -9260,10 +9300,10 @@
 	  }));
 	};
 
-	Icon.propTypes = propTypes$1d;
-	Icon.defaultProps = defaultProps$18;
+	Icon.propTypes = propTypes$1k;
+	Icon.defaultProps = defaultProps$1f;
 
-	var propTypes$1e = {
+	var propTypes$1l = {
 	  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 
@@ -9285,7 +9325,7 @@
 	  /** Elementi React da renderizzare al proprio interno. */
 	  children: propTypes.oneOfType([propTypes.arrayOf(propTypes.node), propTypes.node])
 	};
-	var defaultProps$19 = {
+	var defaultProps$1g = {
 	  tag: 'a',
 	  responsive: false
 	};
@@ -9352,13 +9392,13 @@
 	  return HeaderBrand;
 	}(React.PureComponent);
 
-	_defineProperty$2(HeaderBrand, "propTypes", propTypes$1e);
+	_defineProperty$2(HeaderBrand, "propTypes", propTypes$1l);
 
-	_defineProperty$2(HeaderBrand, "defaultProps", defaultProps$19);
+	_defineProperty$2(HeaderBrand, "defaultProps", defaultProps$1g);
 
 	_defineProperty$2(HeaderBrand, "contextType", HeaderContext);
 
-	var propTypes$1f = {
+	var propTypes$1m = {
 	  /** Classi addizionali per il componente HeaderContent */
 	  className: propTypes.string,
 
@@ -9368,7 +9408,7 @@
 	  /** Parametro per il controllo responsive del componente: valori Bootstrap standard sono "sm", "md", "lg", "xl" */
 	  expand: propTypes.oneOfType([propTypes.bool, propTypes.string])
 	};
-	var defaultProps$1a = {};
+	var defaultProps$1h = {};
 
 	var HeaderContent =
 	/*#__PURE__*/
@@ -9411,17 +9451,17 @@
 	  return HeaderContent;
 	}(React.PureComponent);
 
-	_defineProperty$2(HeaderContent, "propTypes", propTypes$1f);
+	_defineProperty$2(HeaderContent, "propTypes", propTypes$1m);
 
-	_defineProperty$2(HeaderContent, "defaultProps", defaultProps$1a);
+	_defineProperty$2(HeaderContent, "defaultProps", defaultProps$1h);
 
 	_defineProperty$2(HeaderContent, "contextType", HeaderContext);
 
-	var propTypes$1g = {
+	var propTypes$1n = {
 	  /** Classi addizionali per il componente HeaderLinkZone, applicata all'element "nav" annidato */
 	  className: propTypes.string
 	};
-	var defaultProps$1b = {};
+	var defaultProps$1i = {};
 
 	var HeaderLinkZone = function HeaderLinkZone(_ref) {
 	  var className = _ref.className,
@@ -9435,14 +9475,14 @@
 	  }, attributes)));
 	};
 
-	HeaderLinkZone.propTypes = propTypes$1g;
-	HeaderLinkZone.defaultProps = defaultProps$1b;
+	HeaderLinkZone.propTypes = propTypes$1n;
+	HeaderLinkZone.defaultProps = defaultProps$1i;
 
-	var propTypes$1h = {
+	var propTypes$1o = {
 	  /** Classi addizionali per il componente HeaderRightZone */
 	  className: propTypes.string
 	};
-	var defaultProps$1c = {};
+	var defaultProps$1j = {};
 
 	var HeaderRightZone =
 	/*#__PURE__*/
@@ -9476,13 +9516,13 @@
 	  return HeaderRightZone;
 	}(React.PureComponent);
 
-	_defineProperty$2(HeaderRightZone, "propTypes", propTypes$1h);
+	_defineProperty$2(HeaderRightZone, "propTypes", propTypes$1o);
 
-	_defineProperty$2(HeaderRightZone, "defaultProps", defaultProps$1c);
+	_defineProperty$2(HeaderRightZone, "defaultProps", defaultProps$1j);
 
 	_defineProperty$2(HeaderRightZone, "contextType", HeaderContext);
 
-	var propTypes$1i = {
+	var propTypes$1p = {
 	  /** Classi addizionali per il componente HeaderSearch */
 	  className: propTypes.string,
 
@@ -9495,7 +9535,7 @@
 	  /** Indirizzo di indirizzamento al click dell'icona */
 	  href: propTypes.string
 	};
-	var defaultProps$1d = {
+	var defaultProps$1k = {
 	  iconName: 'it-search'
 	};
 
@@ -9520,10 +9560,10 @@
 	  })));
 	};
 
-	HeaderSearch.propTypes = propTypes$1i;
-	HeaderSearch.defaultProps = defaultProps$1d;
+	HeaderSearch.propTypes = propTypes$1p;
+	HeaderSearch.defaultProps = defaultProps$1k;
 
-	var propTypes$1j = {
+	var propTypes$1q = {
 	  /** Classi addizionali per il componente HeaderSocialsZone, verrà applicato all'elemento wrapper più esterno. */
 	  className: propTypes.string,
 
@@ -9533,7 +9573,7 @@
 	  /** Utilizzato per elencare i social da mostrare */
 	  children: propTypes.oneOfType([propTypes.arrayOf(propTypes.node), propTypes.node])
 	};
-	var defaultProps$1e = {};
+	var defaultProps$1l = {};
 
 	var HeaderSocialsZone = function HeaderSocialsZone(_ref) {
 	  var className = _ref.className,
@@ -9547,10 +9587,10 @@
 	  }, attributes), label && React__default.createElement("span", null, label), children);
 	};
 
-	HeaderSocialsZone.propTypes = propTypes$1j;
-	HeaderSocialsZone.defaultProps = defaultProps$1e;
+	HeaderSocialsZone.propTypes = propTypes$1q;
+	HeaderSocialsZone.defaultProps = defaultProps$1l;
 
-	var propTypes$1k = {
+	var propTypes$1r = {
 	  /** Tipo di elemento DOM da utilizzare: di default "a" per Header Slim, "button" per altri tipi di Header.
 	   * Se fornito questo sovrascriverà il valore di default.
 	   */
@@ -9564,7 +9604,7 @@
 	  /** Classi addizionali per il componente HeaderToggler */
 	  className: propTypes.string
 	};
-	var defaultProps$1f = {};
+	var defaultProps$1m = {};
 
 	var HeaderToggler =
 	/*#__PURE__*/
@@ -9604,9 +9644,9 @@
 	  return HeaderToggler;
 	}(React.PureComponent);
 
-	_defineProperty$2(HeaderToggler, "propTypes", propTypes$1k);
+	_defineProperty$2(HeaderToggler, "propTypes", propTypes$1r);
 
-	_defineProperty$2(HeaderToggler, "defaultProps", defaultProps$1f);
+	_defineProperty$2(HeaderToggler, "defaultProps", defaultProps$1m);
 
 	_defineProperty$2(HeaderToggler, "contextType", HeaderContext);
 
@@ -9619,7 +9659,7 @@
 	var mapToCssModules$1 = mapToCssModules,
 	    deprecated$1 = deprecated,
 	    warnOnce$1 = warnOnce;
-	var propTypes$1l = {
+	var propTypes$1s = {
 	  children: propTypes.node,
 	  type: propTypes.string,
 	  size: propTypes.string,
@@ -9641,7 +9681,7 @@
 	  className: propTypes.string,
 	  cssModule: propTypes.object
 	};
-	var defaultProps$1g = {
+	var defaultProps$1n = {
 	  type: 'text'
 	};
 
@@ -9868,16 +9908,22 @@
 	  return Input;
 	}(React__default.Component);
 
-	Input$1.propTypes = propTypes$1l;
-	Input$1.defaultProps = defaultProps$1g;
+	Input$1.propTypes = propTypes$1s;
+	Input$1.defaultProps = defaultProps$1n;
 
-	var propTypes$1m = {
+	var propTypes$1t = {
+	  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
+
+	  /** Classi aggiuntive da usare per il componente LinkList */
 	  className: propTypes.string,
+
+	  /** Quando è abilitato gestisce una lista in cui ciascun elemento è composto da più componenti/elementi. */
 	  multiline: propTypes.bool,
-	  sublist: propTypes.bool
+	  sublist: propTypes.bool,
+	  avatar: propTypes.bool
 	};
-	var defaultProps$1h = {
+	var defaultProps$1o = {
 	  tag: 'div'
 	};
 
@@ -9886,10 +9932,11 @@
 	      Tag = props.tag,
 	      multiline = props.multiline,
 	      sublist = props.sublist,
-	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "multiline", "sublist"]);
+	      avatar = props.avatar,
+	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "tag", "multiline", "sublist", "avatar"]);
 
 	  var wrapperClasses = classnames(multiline ? 'multiline' : false, 'link-list-wrapper');
-	  var classes = classnames(className, sublist ? 'link-sublist' : 'link-list');
+	  var classes = classnames(className, sublist ? 'link-sublist' : 'link-list', avatar && 'avatar-group');
 
 	  if (sublist) {
 	    return React__default.createElement("ul", _extends$1({}, attributes, {
@@ -9904,20 +9951,35 @@
 	  })));
 	};
 
-	LinkList.propTypes = propTypes$1m;
-	LinkList.defaultProps = defaultProps$1h;
+	LinkList.propTypes = propTypes$1t;
+	LinkList.defaultProps = defaultProps$1o;
 
-	var propTypes$1n = {
+	var propTypes$1u = {
+	  /** Indica se l'elemento è attivo o no */
 	  active: propTypes.bool,
+
+	  /** Indica se l'elemento è disabilitato o no */
 	  disabled: propTypes.bool,
+
+	  /** Indica se l'elemento è un titolo. */
 	  header: propTypes.bool,
+
+	  /** Indica se l'elemento è un divisore */
 	  divider: propTypes.bool,
+
+	  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
+
+	  /** Classi aggiuntive da usare per il componente LinkListItem */
 	  className: propTypes.any,
+
+	  /** Indica il link a cui l'elemento deve puntare. */
 	  href: propTypes.string,
+
+	  /** Indica la taglia/grandezza dell'elemento */
 	  size: propTypes.string
 	};
-	var defaultProps$1i = {
+	var defaultProps$1p = {
 	  tag: 'a'
 	};
 
@@ -9925,17 +9987,17 @@
 	  e.preventDefault();
 	};
 
-	var LinkListItem = function LinkListItem(props) {
-	  var className = props.className,
-	      active = props.active,
-	      disabled = props.disabled,
-	      header = props.header,
-	      divider = props.divider,
-	      href = props.href,
-	      size = props.size,
-	      attributes = _objectWithoutPropertiesLoose$1(props, ["className", "active", "disabled", "header", "divider", "href", "size"]);
+	var LinkListItem = function LinkListItem(_ref) {
+	  var className = _ref.className,
+	      active = _ref.active,
+	      disabled = _ref.disabled,
+	      header = _ref.header,
+	      divider = _ref.divider,
+	      href = _ref.href,
+	      size = _ref.size,
+	      Tag = _ref.tag,
+	      attributes = _objectWithoutPropertiesLoose$1(_ref, ["className", "active", "disabled", "header", "divider", "href", "size", "tag"]);
 
-	  var Tag = props.tag;
 	  var classes = classnames(className, {
 	    active: active,
 	    disabled: disabled,
@@ -9954,22 +10016,24 @@
 	    Tag = 'span';
 	  }
 
-	  return React__default.createElement("li", null, header && href ? React__default.createElement(Tag, null, React__default.createElement("a", _extends$1({
-	    // eslint-disable-line jsx-a11y/anchor-has-content
-	    href: href || '#'
-	  }, attributes, {
-	    className: classes
-	  }))) : React__default.createElement(Tag, _extends$1({
-	    href: href || '#'
-	  }, attributes, {
+	  if (header && href) {
+	    return React__default.createElement("li", null, React__default.createElement(Tag, null, React__default.createElement("a", _extends$1({
+	      href: href || '#'
+	    }, attributes, {
+	      className: classes
+	    }))));
+	  }
+
+	  attributes.href = href;
+	  return React__default.createElement("li", null, React__default.createElement(Tag, _extends$1({}, attributes, {
 	    className: classes
 	  })));
 	};
 
-	LinkListItem.propTypes = propTypes$1n;
-	LinkListItem.defaultProps = defaultProps$1i;
+	LinkListItem.propTypes = propTypes$1u;
+	LinkListItem.defaultProps = defaultProps$1p;
 
-	var propTypes$1o = {
+	var propTypes$1v = {
 	  /** Renderizza i componenti NavItem al suo interno come tab. */
 	  tabs: propTypes.bool,
 
@@ -9997,7 +10061,7 @@
 	  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string])
 	};
-	var defaultProps$1j = {
+	var defaultProps$1q = {
 	  tag: 'ul',
 	  vertical: false
 	};
@@ -10008,16 +10072,16 @@
 	  return React__default.createElement(Nav, attributes);
 	};
 
-	Nav$1.propTypes = propTypes$1o;
-	Nav$1.defaultProps = defaultProps$1j;
+	Nav$1.propTypes = propTypes$1v;
+	Nav$1.defaultProps = defaultProps$1q;
 
-	var propTypes$1p = {
+	var propTypes$1w = {
 	  children: propTypes.node,
 	  className: propTypes.string,
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  'aria-label': propTypes.string
 	};
-	var defaultProps$1k = {
+	var defaultProps$1r = {
 	  tag: 'nav',
 	  'aria-label': 'pagination'
 	};
@@ -10034,15 +10098,15 @@
 	  }, children);
 	};
 
-	Pager.propTypes = propTypes$1p;
-	Pager.defaultProps = defaultProps$1k;
+	Pager.propTypes = propTypes$1w;
+	Pager.defaultProps = defaultProps$1r;
 
-	var propTypes$1q = {
+	var propTypes$1x = {
 	  className: propTypes.string,
 	  size: propTypes.string,
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string])
 	};
-	var defaultProps$1l = {
+	var defaultProps$1s = {
 	  tag: 'ul'
 	};
 
@@ -10060,8 +10124,8 @@
 	  }));
 	};
 
-	PagerList.propTypes = propTypes$1q;
-	PagerList.defaultProps = defaultProps$1l;
+	PagerList.propTypes = propTypes$1x;
+	PagerList.defaultProps = defaultProps$1s;
 
 	var PasswordInput =
 	/*#__PURE__*/
@@ -10204,11 +10268,11 @@
 	  }))
 	};
 
-	var propTypes$1r = {
+	var propTypes$1y = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string
 	};
-	var defaultProps$1m = {
+	var defaultProps$1t = {
 	  tag: 'div'
 	};
 
@@ -10223,14 +10287,14 @@
 	  }, attributes));
 	};
 
-	Skiplink.propTypes = propTypes$1r;
-	Skiplink.defaultProps = defaultProps$1m;
+	Skiplink.propTypes = propTypes$1y;
+	Skiplink.defaultProps = defaultProps$1t;
 
-	var propTypes$1s = {
+	var propTypes$1z = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string
 	};
-	var defaultProps$1n = {
+	var defaultProps$1u = {
 	  tag: 'a'
 	};
 
@@ -10245,8 +10309,8 @@
 	  }, attributes));
 	};
 
-	SkiplinkItem.propTypes = propTypes$1s;
-	SkiplinkItem.defaultProps = defaultProps$1n;
+	SkiplinkItem.propTypes = propTypes$1z;
+	SkiplinkItem.defaultProps = defaultProps$1u;
 
 	var Toggle =
 	/*#__PURE__*/
@@ -10282,7 +10346,7 @@
 	  label: propTypes.oneOfType([propTypes.string, propTypes.element])
 	}, Input.propTypes);
 
-	var propTypes$1t = {
+	var propTypes$1A = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  secondary: propTypes.bool,
@@ -10290,7 +10354,7 @@
 	  right: propTypes.bool,
 	  dark: propTypes.bool
 	};
-	var defaultProps$1o = {
+	var defaultProps$1v = {
 	  tag: 'div'
 	};
 
@@ -10319,10 +10383,10 @@
 	  })));
 	};
 
-	Sidebar.propTypes = propTypes$1t;
-	Sidebar.defaultProps = defaultProps$1o;
+	Sidebar.propTypes = propTypes$1A;
+	Sidebar.defaultProps = defaultProps$1v;
 
-	var propTypes$1u = {
+	var propTypes$1B = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  value: propTypes.number,
@@ -10330,7 +10394,7 @@
 	  indeterminate: propTypes.bool,
 	  color: propTypes.string
 	};
-	var defaultProps$1p = {
+	var defaultProps$1w = {
 	  tag: 'div',
 	  role: 'progressbar',
 	  indeterminate: false
@@ -10403,17 +10467,17 @@
 	  return Progress;
 	}(React__default.Component);
 
-	Progress.propTypes = propTypes$1u;
-	Progress.defaultProps = defaultProps$1p;
+	Progress.propTypes = propTypes$1B;
+	Progress.defaultProps = defaultProps$1w;
 
-	var propTypes$1v = {
+	var propTypes$1C = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  active: propTypes.bool,
 	  small: propTypes.bool,
 	  "double": propTypes.bool
 	};
-	var defaultProps$1q = {
+	var defaultProps$1x = {
 	  tag: 'span',
 	  active: false,
 	  small: false,
@@ -10466,17 +10530,17 @@
 	  return Spinner;
 	}(React__default.Component);
 
-	Spinner.propTypes = propTypes$1v;
-	Spinner.defaultProps = defaultProps$1q;
+	Spinner.propTypes = propTypes$1C;
+	Spinner.defaultProps = defaultProps$1x;
 
-	var propTypes$1w = _extends$1({}, Card.propTypes, {
+	var propTypes$1D = _extends$1({}, Card.propTypes, {
 	  teaser: propTypes.bool,
 	  spacing: propTypes.bool,
 	  noWrapper: propTypes.bool,
 	  wrapperClassName: propTypes.string
 	});
 
-	var defaultProps$1r = _extends$1({}, Card.defaultProps, {
+	var defaultProps$1y = _extends$1({}, Card.defaultProps, {
 	  noWrapper: false
 	});
 
@@ -10508,10 +10572,10 @@
 	  })));
 	};
 
-	Card$1.propTypes = propTypes$1w;
-	Card$1.defaultProps = defaultProps$1r;
+	Card$1.propTypes = propTypes$1D;
+	Card$1.defaultProps = defaultProps$1y;
 
-	var propTypes$1x = {
+	var propTypes$1E = {
 	  iconName: propTypes.string,
 	  date: propTypes.string,
 	  href: propTypes.string
@@ -10550,13 +10614,13 @@
 	  }, rest), categoryLink, categoryDate, categoryIcon, categoryText);
 	};
 
-	CardCategory.propTypes = propTypes$1x;
+	CardCategory.propTypes = propTypes$1E;
 
-	var propTypes$1y = {
+	var propTypes$1F = {
 	  tag: propTypes.string,
 	  className: propTypes.string
 	};
-	var defaultProps$1s = {
+	var defaultProps$1z = {
 	  tag: 'a'
 	};
 
@@ -10571,10 +10635,10 @@
 	  }, attributes));
 	};
 
-	CardTag.propTypes = propTypes$1y;
-	CardTag.defaultProps = defaultProps$1s;
+	CardTag.propTypes = propTypes$1F;
+	CardTag.defaultProps = defaultProps$1z;
 
-	var propTypes$1z = {
+	var propTypes$1G = {
 	  children: propTypes.node,
 	  date: propTypes.string
 	};
@@ -10591,9 +10655,9 @@
 	  }, date));
 	};
 
-	CardTagsHeader.propTypes = propTypes$1z;
+	CardTagsHeader.propTypes = propTypes$1G;
 
-	var propTypes$1A = {
+	var propTypes$1H = {
 	  className: propTypes.string
 	};
 
@@ -10607,9 +10671,9 @@
 	  }, attributes));
 	};
 
-	CardSignature.propTypes = propTypes$1A;
+	CardSignature.propTypes = propTypes$1H;
 
-	var propTypes$1B = {
+	var propTypes$1I = {
 	  className: propTypes.string
 	};
 
@@ -10623,9 +10687,9 @@
 	  }, attributes));
 	};
 
-	CardFooterCTA.propTypes = propTypes$1B;
+	CardFooterCTA.propTypes = propTypes$1I;
 
-	var propTypes$1C = {
+	var propTypes$1J = {
 	  className: propTypes.string,
 	  iconName: propTypes.string,
 	  href: propTypes.string,
@@ -10651,14 +10715,14 @@
 	  }));
 	};
 
-	CardReadMore.propTypes = propTypes$1C;
+	CardReadMore.propTypes = propTypes$1J;
 	CardReadMore.defaultTypes = defaultTypes;
 
-	var propTypes$1D = {
+	var propTypes$1K = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string
 	};
-	var defaultProps$1t = {
+	var defaultProps$1A = {
 	  tag: 'nav'
 	};
 
@@ -10672,10 +10736,10 @@
 	  }, React__default.createElement("ul", attributes));
 	};
 
-	BottomNav.propTypes = propTypes$1D;
-	BottomNav.defaultProps = defaultProps$1t;
+	BottomNav.propTypes = propTypes$1K;
+	BottomNav.defaultProps = defaultProps$1A;
 
-	var propTypes$1E = {
+	var propTypes$1L = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string,
 	  active: propTypes.bool,
@@ -10686,7 +10750,7 @@
 	  alert: propTypes.bool,
 	  badge: propTypes.bool
 	};
-	var defaultProps$1u = {
+	var defaultProps$1B = {
 	  tag: 'a',
 	  link: '#',
 	  iconName: 'it-comment',
@@ -10727,14 +10791,14 @@
 	  }, srText))));
 	};
 
-	BottomNavItem.propTypes = propTypes$1E;
-	BottomNavItem.defaultProps = defaultProps$1u;
+	BottomNavItem.propTypes = propTypes$1L;
+	BottomNavItem.defaultProps = defaultProps$1B;
 
-	var propTypes$1F = {
+	var propTypes$1M = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string
 	};
-	var defaultProps$1v = {
+	var defaultProps$1C = {
 	  tag: 'div'
 	};
 
@@ -10749,14 +10813,14 @@
 	  }));
 	}
 
-	CookieBar.propTypes = propTypes$1F;
-	CookieBar.defaultProps = defaultProps$1v;
+	CookieBar.propTypes = propTypes$1M;
+	CookieBar.defaultProps = defaultProps$1C;
 
-	var propTypes$1G = {
+	var propTypes$1N = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string
 	};
-	var defaultProps$1w = {
+	var defaultProps$1D = {
 	  tag: 'div'
 	};
 
@@ -10771,14 +10835,14 @@
 	  }, attributes));
 	};
 
-	CookieBarButtons.propTypes = propTypes$1G;
-	CookieBarButtons.defaultProps = defaultProps$1w;
+	CookieBarButtons.propTypes = propTypes$1N;
+	CookieBarButtons.defaultProps = defaultProps$1D;
 
-	var propTypes$1H = {
+	var propTypes$1O = {
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 	  className: propTypes.string
 	};
-	var defaultProps$1x = {
+	var defaultProps$1E = {
 	  tag: 'button'
 	};
 
@@ -10809,10 +10873,10 @@
 	  return CookieBarButton;
 	}(React__default.Component);
 
-	CookieBarButton.propTypes = propTypes$1H;
-	CookieBarButton.defaultProps = defaultProps$1x;
+	CookieBarButton.propTypes = propTypes$1O;
+	CookieBarButton.defaultProps = defaultProps$1E;
 
-	var propTypes$1I = {
+	var propTypes$1P = {
 	  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 
@@ -10829,7 +10893,7 @@
 	  disabled: propTypes.bool,
 	  color: propTypes.string
 	};
-	var defaultProps$1y = {
+	var defaultProps$1F = {
 	  tag: 'div',
 	  simple: false,
 	  large: false,
@@ -10858,17 +10922,17 @@
 	  }, attributes));
 	};
 
-	Chip.propTypes = propTypes$1I;
-	Chip.defaultProps = defaultProps$1y;
+	Chip.propTypes = propTypes$1P;
+	Chip.defaultProps = defaultProps$1F;
 
-	var propTypes$1J = {
+	var propTypes$1Q = {
 	  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
 	  tag: propTypes.oneOfType([propTypes.func, propTypes.string]),
 
 	  /** Classi aggiuntive da usare per il componente ChipLabel */
 	  className: propTypes.string
 	};
-	var defaultProps$1z = {
+	var defaultProps$1G = {
 	  tag: 'span'
 	};
 
@@ -10883,8 +10947,8 @@
 	  }));
 	};
 
-	ChipLabel.propTypes = propTypes$1J;
-	ChipLabel.defaultProps = defaultProps$1z;
+	ChipLabel.propTypes = propTypes$1Q;
+	ChipLabel.defaultProps = defaultProps$1G;
 
 	webfontloader.load({
 	  custom: {
@@ -10896,6 +10960,13 @@
 	exports.AccordionBody = AccordionBody;
 	exports.AccordionHeader = AccordionHeader;
 	exports.Alert = Alert;
+	exports.AvatarContainer = AvatarContainer;
+	exports.AvatarExtraText = AvatarExtraText;
+	exports.AvatarGroupContainer = AvatarGroupContainer;
+	exports.AvatarIcon = AvatarIcon;
+	exports.AvatarPresence = AvatarPresence;
+	exports.AvatarStatus = AvatarStatus;
+	exports.AvatarWrapper = AvatarWrapper;
 	exports.Badge = Badge$1;
 	exports.BottomNav = BottomNav;
 	exports.BottomNavItem = BottomNavItem;
@@ -11014,5 +11085,5 @@
 
 	Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=design-react-kit.js.map
