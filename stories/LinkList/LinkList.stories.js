@@ -10,7 +10,8 @@ import {
   Input,
   Label,
   FormGroup,
-  Collapse
+  Collapse,
+  Icon
 } from '../../src'
 
 import LinkListCollapsibleExample from './LinkListCollapsibleExample'
@@ -138,27 +139,20 @@ const MultilineComponent = () => (
     <LinkListItem active className="right-icon">
       <span>Link list 1 active</span>
       <i className="it-chevron-right right" />
-      <svg className="icon icon-primary icon-right">
-        <use xlinkHref="/svg/sprite.svg#it-chevron-right" />
-      </svg>
+      <Icon icon="it-chevron-right" color="primary" className="icon-right" />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
     </LinkListItem>
     <LinkListItem divider />
     <LinkListItem className="right-icon">
       <span>Link list 2</span>
       <i className="it-chevron-right right" />
-      <svg className="icon icon-primary icon-right">
-        <use xlinkHref="/svg/sprite.svg#it-chevron-right" />
-      </svg>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
     </LinkListItem>
     <LinkListItem divider />
     <LinkListItem disabled className="right-icon">
       <span>Link list 3 disabled</span>
-      <i className="it-chevron-right right" />
-      <svg className="icon icon-primary icon-right">
-        <use xlinkHref="/svg/sprite.svg#it-chevron-right" />
-      </svg>
+      <i className="it-chevron-right right" />{' '}
+      <Icon icon="it-chevron-right" color="primary" className="icon-right" />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
     </LinkListItem>
   </LinkList>
@@ -168,23 +162,17 @@ const ControlliComponent = () => (
   <LinkList>
     <LinkListItem active className="left-icon">
       <i className="it-chevron-right left" aria-hidden="true" />
-      <svg className="icon icon-primary">
-        <use xlinkHref="/svg/sprite.svg#it-chevron-right" />
-      </svg>
+      <Icon icon="it-chevron-right" color="primary" />
       <span>Link list 1 active</span>
     </LinkListItem>
     <LinkListItem className="left-icon">
       <i className="it-chevron-right left" aria-hidden="true" />
-      <svg className="icon icon-primary">
-        <use xlinkHref="/svg/sprite.svg#it-chevron-right" />
-      </svg>
+      <Icon icon="it-chevron-right" color="primary" />
       <span>Link list 2</span>
     </LinkListItem>
     <LinkListItem disabled className="left-icon">
       <i className="it-chevron-right left" aria-hidden="true" />
-      <svg className="icon icon-primary">
-        <use xlinkHref="/svg/sprite.svg#it-chevron-right" />
-      </svg>
+      <Icon icon="it-chevron-right" color="primary" />
       <span>Link list 3 disabled</span>
     </LinkListItem>
   </LinkList>
@@ -195,23 +183,17 @@ const ControlliSecondariComponent = () => (
     <LinkListItem active className="right-icon">
       <span>Link list 1 active</span>
       <i className="it-app right secondary" />
-      <svg className="icon icon-primary icon-right">
-        <use xlinkHref="/svg/sprite.svg#it-link" />
-      </svg>
+      <Icon icon="it-link" color="primary" className="icon-right" />
     </LinkListItem>
     <LinkListItem className="right-icon">
       <span>Link list 2</span>
       <i className="it-app right secondary" />
-      <svg className="icon icon-primary icon-right">
-        <use xlinkHref="/svg/sprite.svg#it-link" />
-      </svg>
+      <Icon icon="it-link" color="primary" className="icon-right" />
     </LinkListItem>
     <LinkListItem disabled className="right-icon">
       <span>Link list 3 disabled</span>
       <i className="it-app right secondary" />
-      <svg className="icon icon-primary icon-right">
-        <use xlinkHref="/svg/sprite.svg#it-link" />
-      </svg>
+      <Icon icon="it-link" color="primary" className="icon-right" />
     </LinkListItem>
   </LinkList>
 )
@@ -220,25 +202,19 @@ const ControlliPrimariSecondariComponent = () => (
   <LinkList>
     <LinkListItem active className="left-icon right-icon">
       <i className="it-favorite left" />
-      <svg className="icon icon-primary">
-        <use xlinkHref="/svg/sprite.svg#it-link" />
-      </svg>
+      <Icon icon="it-link" color="primary" />
       <span>Link list 1 active</span>
       <i className="it-app right secondary" />
     </LinkListItem>
     <LinkListItem className="left-icon right-icon">
       <i className="it-favorite left" />
-      <svg className="icon icon-primary">
-        <use xlinkHref="/svg/sprite.svg#it-link" />
-      </svg>
+      <Icon icon="it-link" color="primary" />
       <span>Link list 2</span>
       <i className="it-app right secondary" />
     </LinkListItem>
     <LinkListItem disabled className="left-icon right-icon">
       <i className="it-favorite left" />
-      <svg className="icon icon-primary">
-        <use xlinkHref="/svg/sprite.svg#it-link" />
-      </svg>
+      <Icon icon="it-link" color="primary" />
       <span>Link list 3 disabled</span>
       <i className="it-app right secondary" />
     </LinkListItem>
@@ -322,16 +298,12 @@ const NavigationComponent = () => (
     <LinkListItem size="medium" className="right-icon">
       <span>Link list 1 </span>
       <i className="it-favorite right" />
-      <svg className="icon icon-primary right">
-        <use xlinkHref="/svg/sprite.svg#it-link" />
-      </svg>
+      <Icon icon="it-link" color="primary" className="right" />
     </LinkListItem>
     <LinkListItem size="medium" className="right-icon">
       <span>Link list 2 </span>
       <i className="it-favorite right" />
-      <svg className="icon icon-primary right">
-        <use xlinkHref="/svg/sprite.svg#it-link" />
-      </svg>
+      <Icon icon="it-link" color="primary" className="right" />
     </LinkListItem>
     <LinkList sublist>
       <LinkListItem>
@@ -347,9 +319,7 @@ const NavigationComponent = () => (
     <LinkListItem size="medium" className="right-icon">
       <span>Link list 3 </span>
       <i className="it-favorite right" />
-      <svg className="icon icon-primary right">
-        <use xlinkHref="/svg/sprite.svg#it-link" />
-      </svg>
+      <Icon icon="it-link" color="primary" className="right" />
     </LinkListItem>
   </LinkList>
 )
