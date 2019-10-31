@@ -9,8 +9,8 @@ const propTypes = {
   className: PropTypes.string,
   /** Quando è abilitato gestisce una lista in cui ciascun elemento è composto da più componenti/elementi. */
   multiline: PropTypes.bool,
-  /** Quando è abilitato gestisce una lista annidata all'interno di un'altra lista */
-  sublist: PropTypes.bool
+  sublist: PropTypes.bool,
+  avatar: PropTypes.bool,
 }
 
 const defaultProps = {
@@ -18,12 +18,24 @@ const defaultProps = {
 }
 
 const LinkList = props => {
-  const { className, tag: Tag, multiline, sublist, ...attributes } = props
+  const {
+    className,
+    tag: Tag,
+    multiline,
+    sublist,
+    avatar,
+    ...attributes
+  } = props
   const wrapperClasses = classNames(
     multiline ? 'multiline' : false,
     'link-list-wrapper'
   )
-  const classes = classNames(className, sublist ? 'link-sublist' : 'link-list')
+  
+  const classes = classNames(
+    className,
+    sublist ? 'link-sublist' : 'link-list',
+    avatar && 'avatar-group'
+  )
 
   if (sublist) {
     return <ul {...attributes} className={classes} />
