@@ -3,13 +3,21 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 const propTypes = {
+  /** Indica se l'elemento è attivo o no */
   active: PropTypes.bool,
+  /** Indica se l'elemento è disabilitato o no */
   disabled: PropTypes.bool,
+  /** Indica se l'elemento è un titolo. */
   header: PropTypes.bool,
+  /** Indica se l'elemento è un divisore */
   divider: PropTypes.bool,
+  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  /** Classi aggiuntive da usare per il componente LinkListItem */
   className: PropTypes.any,
+  /** Indica il link a cui l'elemento deve puntare. */
   href: PropTypes.string,
+  /** Indica la taglia/grandezza dell'elemento */
   size: PropTypes.string
 }
 
@@ -21,18 +29,17 @@ const handleDisabledOnClick = e => {
   e.preventDefault()
 }
 
-const LinkListItem = props => {
-  const {
-    className,
-    active,
-    disabled,
-    header,
-    divider,
-    href,
-    size,
-    ...attributes
-  } = props
-  let { tag: Tag } = props
+const LinkListItem = ({
+  className,
+  active,
+  disabled,
+  header,
+  divider,
+  href,
+  size,
+  tag: Tag,
+  ...attributes
+}) => {
   const classes = classNames(
     className,
     {
@@ -56,19 +63,21 @@ const LinkListItem = props => {
     Tag = 'span'
   }
 
+  if (header && href) {
+    return (
+      <li>
+        <Tag>
+          <a href={href || '#'} {...attributes} className={classes} />
+        </Tag>
+      </li>
+    )
+  }
+
+  attributes.href = href
+
   return (
     <li>
-      {header && href ? (
-        <Tag>
-          <a // eslint-disable-line jsx-a11y/anchor-has-content
-            href={href || '#'}
-            {...attributes}
-            className={classes}
-          />
-        </Tag>
-      ) : (
-        <Tag href={href || '#'} {...attributes} className={classes} />
-      )}
+      <Tag {...attributes} className={classes} />
     </li>
   )
 }

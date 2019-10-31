@@ -11,7 +11,6 @@ import EsempiInterattivi from './docs/EsempiInterattivi.md'
 
 const EsempiComponent = () => {
   const ids = ['Example1', 'Example2', 'Example3']
-  const target = i => document.getElementById(ids[i])
 
   return (
     <div className="bd-example tooltip-demo">
@@ -53,13 +52,13 @@ const EsempiComponent = () => {
         <em>La città nuova, Alda Merini</em>
       </p>
 
-      <UncontrolledTooltip placement="top" target={() => target(0)}>
+      <UncontrolledTooltip placement="top" target={ids[0]}>
         Primo tooltip
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement="top" target={() => target(1)}>
+      <UncontrolledTooltip placement="top" target={ids[1]}>
         Secondo tooltip
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement="top" target={() => target(2)}>
+      <UncontrolledTooltip placement="top" target={ids[2]}>
         Terzo tooltip
       </UncontrolledTooltip>
     </div>
@@ -68,7 +67,6 @@ const EsempiComponent = () => {
 
 const PosizioniComponent = () => {
   const ids = ['example1', 'example2', 'example3', 'example4', 'example5']
-  const target = i => document.getElementById(ids[i])
 
   return (
     <div style={{ padding: 100 }}>
@@ -88,19 +86,19 @@ const PosizioniComponent = () => {
         Tooltip con HTML
       </Button>
 
-      <UncontrolledTooltip placement="top" target={() => target(0)}>
+      <UncontrolledTooltip placement="top" target={ids[0]}>
         Tooltip on top
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement="right" target={() => target(1)}>
+      <UncontrolledTooltip placement="right" target={ids[1]}>
         Tooltip on right
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement="bottom" target={() => target(2)}>
+      <UncontrolledTooltip placement="bottom" target={ids[2]}>
         Tooltip on bottom
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement="left" target={() => target(3)}>
+      <UncontrolledTooltip placement="left" target={ids[3]}>
         Tooltip on left
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement="top" target={() => target(4)}>
+      <UncontrolledTooltip placement="top" target={ids[4]}>
         <em>Tooltip</em> <u>with</u> <b>HTML</b>
       </UncontrolledTooltip>
     </div>
