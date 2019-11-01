@@ -6,7 +6,7 @@ const propTypes = {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   /** Da utilizzare in caso di titolo principale della lista. Passare una componente React da mostrare come titolo */
-  header: PropTypes.func,
+  header: PropTypes.node,
   /** Classi aggiuntive da usare per il componente lista del LinkList */
   className: PropTypes.string,
   /** Classi aggiuntive da usare per il componente wrapper del LinkList */
