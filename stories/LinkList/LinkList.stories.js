@@ -335,7 +335,7 @@ const NavigationMenuWithTitle = () => {
         <div className="menu-wrapper">
           <LinkList
             wrapperClassName="menu-link-list"
-            header={() => <h3 className="no_toc">Indice della pagina</h3>}>
+            header={<h3 className="no_toc">Indice della pagina</h3>}>
             <NavItem>
               <NavLink href="#cos-e">
                 <span>Cos&#39;è</span>

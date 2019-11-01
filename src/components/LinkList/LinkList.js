@@ -5,7 +5,7 @@ import classNames from 'classnames'
 const propTypes = {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-  /** Da utilizzare in caso di titolo principale della lista. Passare una funzione che renderizza un componente */
+  /** Da utilizzare in caso di titolo principale della lista. Passare una componente React da mostrare come titolo */
   header: PropTypes.func,
   /** Classi aggiuntive da usare per il componente lista del LinkList */
   className: PropTypes.string,
@@ -47,14 +47,14 @@ const LinkList = props => {
   if (sublist) {
     return (
       <>
-        {header && header()}
+        {header}
         <ul {...attributes} className={classes} />
       </>
     )
   }
   return (
     <Tag className={wrapperClasses}>
-      {header && header()}
+      {header}
       <ul {...attributes} className={classes} />
     </Tag>
   )
