@@ -1,4 +1,3 @@
-import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
@@ -86,14 +85,14 @@ storiesOf('Componenti/Avatar.Avatar groups.Overlapping Avatars', module)
     withInfo({
       text: Placeholder,
       propTables: [AvatarGroupContainer, AvatarIcon]
-    })(() => <SmallOverlappingAvatars />)
+    })(SmallOverlappingAvatars)
   )
   .add(
     'Medium Overlaid Avatars',
     withInfo({
       text: Placeholder,
       propTables: [AvatarGroupContainer, AvatarIcon]
-    })(() => <MediumOverlaidAvatars />)
+    })(MediumOverlaidAvatars)
   )
 
 storiesOf('Componenti/Avatar.Behavior', module)

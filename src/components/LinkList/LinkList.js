@@ -30,7 +30,6 @@ const LinkList = props => {
     multiline ? 'multiline' : false,
     'link-list-wrapper'
   )
-
   const classes = classNames(
     className,
     sublist ? 'link-sublist' : 'link-list',
