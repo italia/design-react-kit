@@ -185,24 +185,23 @@ export class NavHeader extends Component {
 }
 
 const StickyHeader = () => {
-    const open = boolean('show', true)
-    if(!open){
-      return (
-        <Headers sticky>
-           <SlimHeader/>
-           <CenterHeader/>
-           <NavHeader/>
-        </Headers>
-      )
-    }
-  else { 
-  return (
-      <Headers>
-      <SlimHeader/>
-      <CenterHeader/>
-      <NavHeader/>
+  const open = boolean('show', true)
+  if (!open) {
+    return (
+      <Headers sticky>
+        <SlimHeader />
+        <CenterHeader />
+        <NavHeader />
       </Headers>
-  )
+    )
+  } else {
+    return (
+      <Headers>
+        <SlimHeader />
+        <CenterHeader />
+        <NavHeader />
+      </Headers>
+    )
   }
 }
 

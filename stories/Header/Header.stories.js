@@ -31,6 +31,7 @@ import SlimHeaderBasic from './SlimHeader/basic'
 import SlimHeaderFull from './SlimHeader/basic-full-responsive'
 import CenterHeaderBasic from './CenterHeader/basic'
 import NavHeaderBasic from './NavHeader/basic'
+import StickyHeader from './StickyHeader'
 import CompleteHeaderBasic, {
   SlimHeader,
   CenterHeader,
@@ -147,4 +148,22 @@ storiesOf('Componenti/Header', module)
         ...ComponentsToExclude
       ]
     })(CompleteHeaderBasic)
+  )
+
+storiesOf('Componenti/Header', module)
+  .addDecorator(withA11y)
+  .addDecorator(withKnobs)
+  .add(
+    'Sticky Header',
+    withInfo({
+      text: CompleteBasicDoc,
+      propTables: [Headers, Header],
+      propTablesExclude: [
+        CompleteHeaderBasic,
+        SlimHeader,
+        CenterHeader,
+        NavHeader,
+        ...ComponentsToExclude
+      ]
+    })(() => <StickyHeader />)
   )
