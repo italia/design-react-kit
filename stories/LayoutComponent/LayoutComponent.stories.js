@@ -1,18 +1,18 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
 
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
-import { Container, Row, Col } from "../../src";
+import { Container, Row, Col } from '../../src'
 
-import StandardWidth from "./docs/StandardWidth.md";
-import SetWidthColumn from "./docs/SetWidthColumn.md";
-import VariableWidth from "./docs/VariableWidth.md";
-import EqualWidthRow from "./docs/EqualWidthRow.md";
-import Breakpoint from "./docs/Breakpoint.md";
-import HorizontalGrouping from "./docs/HorizontalGrouping.md";
-import MixMatch from "./docs/MixMatch.md";
+import StandardWidth from './docs/StandardWidth.md'
+import SetWidthColumn from './docs/SetWidthColumn.md'
+import VariableWidth from './docs/VariableWidth.md'
+import EqualWidthRow from './docs/EqualWidthRow.md'
+import Breakpoint from './docs/Breakpoint.md'
+import HorizontalGrouping from './docs/HorizontalGrouping.md'
+import MixMatch from './docs/MixMatch.md'
 
 const StandardWidthComponent = () => (
   <div>
@@ -28,7 +28,7 @@ const StandardWidthComponent = () => (
       </Row>
     </Container>
   </div>
-);
+)
 
 const SetWidthColumnComponent = () => (
   <div>
@@ -49,7 +49,7 @@ const SetWidthColumnComponent = () => (
       </Row>
     </Container>
   </div>
-);
+)
 
 const VariableWidthComponent = () => (
   <div>
@@ -76,7 +76,7 @@ const VariableWidthComponent = () => (
       </Row>
     </Container>
   </div>
-);
+)
 
 const EqualWidthRowComponent = () => (
   <div>
@@ -91,7 +91,7 @@ const EqualWidthRowComponent = () => (
       </Row>
     </Container>
   </div>
-);
+)
 
 const BreakpointComponent = () => (
   <div>
@@ -112,7 +112,7 @@ const BreakpointComponent = () => (
       </Row>
     </Container>
   </div>
-);
+)
 
 const HorizontalGroupingComponent = () => (
   <div>
@@ -126,19 +126,19 @@ const HorizontalGroupingComponent = () => (
         </Col>
       </Row>
       <Row>
-        <Col widths={["sm"]} className="p-3 mb-2 text-white bg-primary">
+        <Col widths={['sm']} className="p-3 mb-2 text-white bg-primary">
           col-sm
         </Col>
-        <Col widths={["sm"]} className="p-3 mb-2 text-white bg-dark">
+        <Col widths={['sm']} className="p-3 mb-2 text-white bg-dark">
           col-sm
         </Col>
-        <Col widths={["sm"]} className="p-3 mb-2 text-white bg-primary">
+        <Col widths={['sm']} className="p-3 mb-2 text-white bg-primary">
           col-sm
         </Col>
       </Row>
     </Container>
   </div>
-);
+)
 const MixMatchComponent = () => (
   <div>
     <Container>
@@ -171,49 +171,49 @@ const MixMatchComponent = () => (
       </Row>
     </Container>
   </div>
-);
+)
 
-storiesOf("Componenti/Layout Component", module)
+storiesOf('Componenti/Layout Component', module)
   .addDecorator(withA11y)
   .add(
-    "Standardize widths",
+    'Standardize widths',
     withInfo({
       text: StandardWidth
     })(StandardWidthComponent)
   )
   .add(
-    "Set width of Column",
+    'Set width of Column',
     withInfo({
       text: SetWidthColumn
     })(SetWidthColumnComponent)
   )
   .add(
-    "Variable width content",
+    'Variable width content',
     withInfo({
       text: VariableWidth
     })(VariableWidthComponent)
   )
   .add(
-    "Equal-width multi-row",
+    'Equal-width multi-row',
     withInfo({
       text: EqualWidthRow
     })(EqualWidthRowComponent)
   )
   .add(
-    "Tutti i breakpoint",
+    'Tutti i breakpoint',
     withInfo({
       text: Breakpoint
     })(BreakpointComponent)
   )
   .add(
-    "Raccolti in orizzontale",
+    'Raccolti in orizzontale',
     withInfo({
       text: HorizontalGrouping
     })(HorizontalGroupingComponent)
   )
   .add(
-    "Mischiare e abbinare",
+    'Mischiare e abbinare',
     withInfo({
       text: MixMatch
     })(MixMatchComponent)
-  );
+  )
