@@ -4,10 +4,7 @@ import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 
-import { Icon } from '../../src'
-import Callout from '../../src/components/Callout/Callout'
-import CalloutText from '../../src/components/Callout/CalloutText'
-import CalloutTitle from '../../src/components/Callout/CalloutTitle'
+import { Callout, CalloutText, CalloutTitle, Icon } from '../../src'
 
 import Esempio from './docs/Esempio.md'
 import EsempioConIcona from './docs/EsempioConIcona.md'
