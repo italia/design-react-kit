@@ -5,15 +5,21 @@ import classNames from 'classnames'
 const propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  color: PropTypes.string,
+  highlight: PropTypes.bool,
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
 }
 
 const defaultProps = {
+  color: '',
+  highlight: false,
   tag: 'div'
 }
 
-const Callout = ({ children, tag: Tag }) => {
-  const classes = classNames('callout')
+const Callout = ({ children, color, highlight, tag: Tag }) => {
+  const classes = classNames('callout', color, {
+    'callout-highlight': highlight
+  })
   return <Tag className={classes}>{children}</Tag>
 }
 
