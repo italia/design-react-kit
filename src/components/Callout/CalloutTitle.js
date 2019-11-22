@@ -12,9 +12,13 @@ const defaultProps = {
   tag: 'div'
 }
 
-const CalloutTitle = ({ children, className, tag: Tag }) => {
+const CalloutTitle = ({ children, className, tag: Tag, ...attributes }) => {
   const classes = classNames(className, 'callout-title')
-  return <Tag className={classes}>{children}</Tag>
+  return (
+    <Tag className={classes} {...attributes}>
+      {children}
+    </Tag>
+  )
 }
 
 CalloutTitle.propTypes = propTypes

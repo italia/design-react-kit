@@ -14,11 +14,21 @@ const defaultProps = {
   tag: 'p'
 }
 
-const CalloutText = ({ bigText, children, className, tag: Tag }) => {
+const CalloutText = ({
+  bigText,
+  children,
+  className,
+  tag: Tag,
+  ...attributes
+}) => {
   const classes = classNames(className, {
     'callout-big-text': bigText
   })
-  return <Tag className={classes}>{children}</Tag>
+  return (
+    <Tag className={classes} {...attributes}>
+      {children}
+    </Tag>
+  )
 }
 
 CalloutText.propTypes = propTypes

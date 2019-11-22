@@ -31,11 +31,9 @@ const ExampleWithIcon = () => (
   <Callout>
     <CalloutTitle>
       <Icon
-        className={'aria-hidden: true'}
-        color=""
         icon="it-info-circle"
         padding={false}
-        size=""
+        style={{ ariaHidden: true }}
       />
       Titolo Callout
     </CalloutTitle>
@@ -51,11 +49,9 @@ const ExampleForScreenReader = () => (
   <Callout>
     <CalloutTitle>
       <Icon
-        className={'aria-hidden: true'}
-        color=""
         icon="it-check-circle"
         padding={false}
-        size=""
+        style={{ ariaHidden: true }}
       />
       <span className="sr-only">Confermato</span>
       Titolo Callout
@@ -72,11 +68,9 @@ const CalloutSuccess = () => (
   <Callout color={'success'}>
     <CalloutTitle>
       <Icon
-        className={'aria-hidden: true'}
-        color=""
         icon="it-check-circle"
         padding={false}
-        size=""
+        style={{ ariaHidden: true }}
       />
       Usa
     </CalloutTitle>
@@ -92,11 +86,9 @@ const CalloutWarning = () => (
   <Callout color={'warning'}>
     <CalloutTitle>
       <Icon
-        className={'aria-hidden: true'}
-        color=""
         icon="it-help-circle"
         padding={false}
-        size=""
+        style={{ ariaHidden: true }}
       />
       Attenzione
     </CalloutTitle>
@@ -112,11 +104,9 @@ const CalloutDanger = () => (
   <Callout color={'danger'}>
     <CalloutTitle>
       <Icon
-        className={'aria-hidden: true'}
-        color=""
         icon="it-close-circle"
         padding={false}
-        size=""
+        style={{ ariaHidden: true }}
       />
       Non usare
     </CalloutTitle>
@@ -132,11 +122,9 @@ const CalloutImportant = () => (
   <Callout color={'important'}>
     <CalloutTitle>
       <Icon
-        className={'aria-hidden: true'}
-        color=""
         icon="it-info-circle"
         padding={false}
-        size=""
+        style={{ ariaHidden: true }}
       />
       Importante
     </CalloutTitle>
@@ -152,11 +140,9 @@ const CalloutNote = () => (
   <Callout color={'note'}>
     <CalloutTitle>
       <Icon
-        className={'aria-hidden: true'}
-        color=""
         icon="it-info-circle"
         padding={false}
-        size=""
+        style={{ ariaHidden: true }}
       />
       Note a riguardo
     </CalloutTitle>

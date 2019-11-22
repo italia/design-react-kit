@@ -16,11 +16,15 @@ const defaultProps = {
   tag: 'div'
 }
 
-const Callout = ({ children, color, highlight, tag: Tag }) => {
+const Callout = ({ children, color, highlight, tag: Tag, ...attributes }) => {
   const classes = classNames('callout', color, {
     'callout-highlight': highlight
   })
-  return <Tag className={classes}>{children}</Tag>
+  return (
+    <Tag className={classes} {...attributes}>
+      {children}
+    </Tag>
+  )
 }
 
 Callout.propTypes = propTypes
