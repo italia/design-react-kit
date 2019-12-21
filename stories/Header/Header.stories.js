@@ -165,5 +165,5 @@ storiesOf('Componenti/Header', module)
         NavHeader,
         ...ComponentsToExclude
       ]
-    })(() => <StickyHeader />)
+    })(StickyHeader)
   )

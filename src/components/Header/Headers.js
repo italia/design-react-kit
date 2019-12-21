@@ -26,6 +26,7 @@ const Headers = ({ className, shadow, sticky, ...attributes }) => {
     },
     className
   )
+  console.log(classes)
   return <div className={classes} {...attributes}></div>
 }
 

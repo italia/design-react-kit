@@ -8300,7 +8300,7 @@ mem@^4.0.0:
     mimic-fn "^2.0.0"
     p-is-promise "^2.0.0"
 
-memoize-one@^5.0.0:
+memoize-one@^5.0.0, memoize-one@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.1.1.tgz#047b6e3199b508eaec03504de71229b8eb1d75c0"
   integrity sha512-HKeeBpWvqiVJD57ZUAsJNm71eHTykffzcLZVYWiVfQeI1rJtuEaS7hQiEpWfVVk18donPwJEcFKIkCmPJNOhHA==
@@ -10845,6 +10845,13 @@ react-sizeme@^2.5.2, react-sizeme@^2.6.7:
     shallowequal "^1.1.0"
     throttle-debounce "^2.1.0"
 
+react-stickup@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/react-stickup/-/react-stickup-1.11.0.tgz#a16e5c31f9d81adfcebd49f231d5921322a9325a"
+  integrity sha512-FFK3Tfx6vEReNCWfL0pdBZZ3S6Syef86RSuOK+0x5btHhmQfuisntI1fA+K25wIOmIYp6P7ZNef1PIP9UciyKQ==
+  dependencies:
+    react-viewport-utils "^1.11.0"
+
 react-syntax-highlighter@^8.0.1:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/react-syntax-highlighter/-/react-syntax-highlighter-8.1.0.tgz#59103ff17a828a27ed7c8f035ae2558f09b6b78c"
@@ -10898,6 +10905,13 @@ react-transition-group@^2.2.1, react-transition-group@^2.3.1:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
+
+react-viewport-utils@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/react-viewport-utils/-/react-viewport-utils-1.11.0.tgz#ba69d27ffcd1ec25c6c9d22ac0247ce71b1bc4dc"
+  integrity sha512-qMd9CvBQAxOooOtTCmFaj6FCJTXIcyBzpu3cUbFLXMzaHQPtdEcrJPBoYcPXAR5NVxCU8GZ/y/9T2I67g5BjGw==
+  dependencies:
+    memoize-one "^5.1.1"
 
 react@^0.14.0:
   version "0.14.9"
