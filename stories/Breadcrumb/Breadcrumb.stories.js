@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 
-import { Breadcrumb, BreadcrumbItem } from '../../src'
+import { Breadcrumb, BreadcrumbItem, Icon } from '../../src'
 
 import Esempi from './docs/Esempi.md'
 import Icone from './docs/Icone.md'
@@ -54,34 +54,37 @@ const IconeComponent = () => (
     <nav className="breadcrumb-container">
       <Breadcrumb>
         <BreadcrumbItem>
-          <i className="it-favorite" />
-          <svg
-            className="icon icon-sm icon-secondary align-top mr-1"
-            aria-hidden="true">
-            <use xlinkHref="/svg/sprite.svg#it-star-outline" />
-          </svg>
+          <Icon
+            className="align-top mr-1"
+            icon="it-star-outline"
+            color="secondary"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
           <a href="#">
             Home<span className="separator">/</span>
           </a>
         </BreadcrumbItem>
         <BreadcrumbItem>
-          <i className="it-favorite" />
-          <svg
-            className="icon icon-sm icon-secondary align-top mr-1"
-            aria-hidden="true">
-            <use xlinkHref="/svg/sprite.svg#it-star-outline" />
-          </svg>
+          <Icon
+            className="align-top mr-1"
+            icon="it-star-outline"
+            color="secondary"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
           <a href="#">
             Subsection<span className="separator">/</span>
           </a>
         </BreadcrumbItem>
         <BreadcrumbItem active>
-          <i className="it-favorite" />
-          <svg
-            className="icon icon-sm icon-secondary align-top mr-1"
-            aria-hidden="true">
-            <use xlinkHref="/svg/sprite.svg#it-star-outline" />
-          </svg>
+          <Icon
+            className="align-top mr-1"
+            icon="it-star-outline"
+            color="secondary"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
           <a href="#">Current section</a>
         </BreadcrumbItem>
       </Breadcrumb>
@@ -110,29 +113,35 @@ const BackgroundComponent = () => (
     <nav className="breadcrumb-container" aria-label="breadcrumb">
       <ol className="breadcrumb dark">
         <li className="breadcrumb-item">
-          <svg
-            className="icon icon-sm icon-white align-top mr-1"
-            aria-hidden="true">
-            <use xlinkHref="/svg/sprite.svg#it-star-outline" />
-          </svg>
+          <Icon
+            className="align-top mr-1"
+            icon="it-star-outline"
+            color="white"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
           <a href="#">Home</a>
           <span className="separator">/</span>
         </li>
         <li className="breadcrumb-item">
-          <svg
-            className="icon icon-sm icon-white align-top mr-1"
-            aria-hidden="true">
-            <use xlinkHref="/svg/sprite.svg#it-star-outline" />
-          </svg>
+          <Icon
+            className="align-top mr-1"
+            icon="it-star-outline"
+            color="white"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
           <a href="#">Subsection</a>
           <span className="separator">/</span>
         </li>
         <li className="breadcrumb-item active" aria-current="page">
-          <svg
-            className="icon icon-sm icon-white align-top mr-1"
-            aria-hidden="true">
-            <use xlinkHref="/svg/sprite.svg#it-star-outline" />
-          </svg>
+          <Icon
+            className="align-top mr-1"
+            icon="it-star-outline"
+            color="white"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
           <a href="#">Current section</a>
         </li>
       </ol>
@@ -141,29 +150,35 @@ const BackgroundComponent = () => (
     <nav className="breadcrumb-container" aria-label="breadcrumb">
       <ol className="breadcrumb dark">
         <li className="breadcrumb-item">
-          <svg
-            className="icon icon-sm icon-white align-top mr-1"
-            aria-hidden="true">
-            <use xlinkHref="/svg/sprite.svg#it-star-outline" />
-          </svg>
+          <Icon
+            className="align-top mr-1"
+            icon="it-star-outline"
+            color="white"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
           <a href="#">Home</a>
           <span className="separator">&gt;</span>
         </li>
         <li className="breadcrumb-item">
-          <svg
-            className="icon icon-sm icon-white align-top mr-1"
-            aria-hidden="true">
-            <use xlinkHref="/svg/sprite.svg#it-star-outline" />
-          </svg>
+          <Icon
+            className="align-top mr-1"
+            icon="it-star-outline"
+            color="white"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
           <a href="#">Subsection</a>
           <span className="separator">&gt;</span>
         </li>
         <li className="breadcrumb-item active" aria-current="page">
-          <svg
-            className="icon icon-sm icon-white align-top mr-1"
-            aria-hidden="true">
-            <use xlinkHref="/svg/sprite.svg#it-star-outline" />
-          </svg>
+          <Icon
+            className="align-top mr-1"
+            icon="it-star-outline"
+            color="white"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
           <a href="#">Current section</a>
         </li>
       </ol>
