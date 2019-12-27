@@ -10,7 +10,7 @@ import ConLineaSinistra from './docs/ConLineaSinistra.md'
 import Annidata from './docs/Annidata.md'
 import ScuraSidebar from './docs/ScuraSidebar.md'
 
-import { LinkList, LinkListItem, Sidebar } from '../../src'
+import { LinkList, LinkListItem, Sidebar, Icon } from '../../src'
 
 import SidebarCollapseExample from './SidebarCollapsibleExample'
 
@@ -62,31 +62,43 @@ const ConIconaSidebarComponent = () => (
     <LinkList>
       <LinkListItem header>HEADER</LinkListItem>
       <LinkListItem medium active className="left-icon">
-        <i className="it-chevron-right left" aria-hidden="true" />
-        <svg className="icon icon-sm left">
-          <use xlinkHref="/svg/sprite.svg#it-star-outline" />
-        </svg>
+        <Icon
+          className="left"
+          icon="it-chevron-right"
+          color=""
+          style={{ ariaHidden: true }}
+          size="sm"
+        />
         <span>Link list active</span>
       </LinkListItem>
       <LinkListItem medium disabled>
-        <i className="it-chevron-right left" aria-hidden="true" />
-        <svg className="icon icon-sm left">
-          <use xlinkHref="/svg/sprite.svg#it-star-outline" />
-        </svg>
+        <Icon
+          className="left"
+          icon="it-chevron-right"
+          color=""
+          style={{ ariaHidden: true }}
+          size="sm"
+        />
         <span>Link list disabled</span>
       </LinkListItem>
       <LinkListItem medium>
-        <i className="it-chevron-right left" aria-hidden="true" />
-        <svg className="icon icon-sm left">
-          <use xlinkHref="/svg/sprite.svg#it-star-outline" />
-        </svg>
+        <Icon
+          className="left"
+          icon="it-chevron-right"
+          color=""
+          style={{ ariaHidden: true }}
+          size="sm"
+        />
         <span>Link list</span>
       </LinkListItem>
       <LinkListItem medium>
-        <i className="it-chevron-right left" aria-hidden="true" />
-        <svg className="icon icon-sm left">
-          <use xlinkHref="/svg/sprite.svg#it-star-outline" />
-        </svg>
+        <Icon
+          className="left"
+          icon="it-chevron-right"
+          color=""
+          style={{ ariaHidden: true }}
+          size="sm"
+        />
         <span>Link list</span>
       </LinkListItem>
     </LinkList>
