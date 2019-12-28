@@ -1,5 +1,5 @@
 import React from 'react'
-import { Collapse, LinkList, LinkListItem } from '../../src'
+import { Collapse, Icon, LinkList, LinkListItem } from '../../src'
 
 class NavbarInlineExample extends React.Component {
   defaultState = {
@@ -34,7 +34,11 @@ class NavbarInlineExample extends React.Component {
             onClick={e => this.toggle(e, 1)}
             {...(collapseOpen1 ? expanded : {})}>
             <span>Link list 1 </span>
-            <i className="it-expand right" />
+            <Icon
+              className="right"
+              icon="it-expand"
+              style={{ ariaHidden: true }}
+            />
           </LinkListItem>
           <Collapse isOpen={collapseOpen1}>
             <LinkList sublist>
@@ -55,7 +59,11 @@ class NavbarInlineExample extends React.Component {
             onClick={e => this.toggle(e, 2)}
             {...(collapseOpen2 ? expanded : {})}>
             <span>Link list 2 </span>
-            <i className="it-expand right" />
+            <Icon
+              className="right"
+              icon="it-expand"
+              style={{ ariaHidden: true }}
+            />
           </LinkListItem>
           <Collapse isOpen={collapseOpen2}>
             <LinkList sublist>
@@ -76,7 +84,11 @@ class NavbarInlineExample extends React.Component {
             onClick={e => this.toggle(e, 3)}
             {...(collapseOpen3 ? expanded : {})}>
             <span>Link list 3 </span>
-            <i className="it-expand right" />
+            <Icon
+              className="right"
+              icon="it-expand"
+              style={{ ariaHidden: true }}
+            />
           </LinkListItem>
           <Collapse isOpen={collapseOpen3}>
             <LinkList sublist>
