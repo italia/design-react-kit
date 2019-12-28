@@ -4,6 +4,7 @@ import {default as theme} from './theme.js';
 
 import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
 import '../assets/css/fonts.css';
+import '../assets/css/reset_css.css';
 
 
 const styles = {
