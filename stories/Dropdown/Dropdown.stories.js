@@ -8,6 +8,7 @@ import {
   DropdownMenu,
   DropdownItem,
   DropdownToggle,
+  Icon,
   LinkList,
   LinkListItem
 } from '../../src'
@@ -142,15 +143,33 @@ const MenuIconRightComponent = () => (
       <LinkList>
         <LinkListItem className="right-icon">
           <span>Azione 1</span>
-          <i className="it-info right" />
+          <Icon
+            className="right"
+            color="primary"
+            icon="it-info-circle"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
         </LinkListItem>
         <LinkListItem className="right-icon">
           <span>Azione 2</span>
-          <i className="it-info right" />
+          <Icon
+            className="right"
+            color="primary"
+            icon="it-info-circle"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
         </LinkListItem>
         <LinkListItem className="right-icon">
           <span>Azione 3</span>
-          <i className="it-info right" />
+          <Icon
+            className="right"
+            color="primary"
+            icon="it-info-circle"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
         </LinkListItem>
       </LinkList>
     </DropdownMenu>
@@ -162,15 +181,33 @@ const MenuIconLeftComponent = () => (
     <DropdownMenu isOpen className="d-block position-relative">
       <LinkList>
         <LinkListItem className="left-icon">
-          <i className="it-info left" />
+          <Icon
+            className="left"
+            color="primary"
+            icon="it-info-circle"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
           <span>Azione 1</span>
         </LinkListItem>
         <LinkListItem className="left-icon">
-          <i className="it-info left" />
+          <Icon
+            className="left"
+            color="primary"
+            icon="it-info-circle"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
           <span>Azione 2</span>
         </LinkListItem>
         <LinkListItem className="left-icon">
-          <i className="it-info left" />
+          <Icon
+            className="left"
+            color="primary"
+            icon="it-info-circle"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
           <span>Azione 3</span>
         </LinkListItem>
       </LinkList>
@@ -185,24 +222,54 @@ const MenuDarkComponent = () => (
         <LinkListItem header>Header</LinkListItem>
         <LinkListItem active className="right-icon">
           <span>Azione 1 (attivo)</span>
-          <i className="it-info right" />
+          <Icon
+            className="right"
+            color="light"
+            icon="it-info-circle"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
         </LinkListItem>
         <LinkListItem className="right-icon">
           <span>Azione 2</span>
-          <i className="it-info right" />
+          <Icon
+            className="right"
+            color="light"
+            icon="it-info-circle"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
         </LinkListItem>
         <LinkListItem className="right-icon">
           <span>Azione 3</span>
-          <i className="it-info right" />
+          <Icon
+            className="right"
+            color="light"
+            icon="it-info-circle"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
         </LinkListItem>
         <LinkListItem divider />
         <LinkListItem className="right-icon">
           <span>Azione 4</span>
-          <i className="it-info right" />
+          <Icon
+            className="right"
+            color="light"
+            icon="it-info-circle"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
         </LinkListItem>
         <LinkListItem disabled className="right-icon">
           <span>Azione 5 (disabilitato)</span>
-          <i className="it-info right" />
+          <Icon
+            className="right"
+            color="light"
+            icon="it-info-circle"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
         </LinkListItem>
       </LinkList>
     </DropdownMenu>
