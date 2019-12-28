@@ -1,5 +1,6 @@
 import React from 'react'
 import Select, { components } from 'react-select'
+import { Icon } from '../../../src'
 import PropTypes from 'prop-types'
 import './assets/css/select-styles.css'
 
@@ -39,9 +40,7 @@ MenuList.propTypes = {
 const DropdownIndicator = props => {
   return (
     <components.DropdownIndicator {...props}>
-      <svg className="icon">
-        <use xlinkHref="/svg/sprite.svg#it-arrow-down-triangle" />
-      </svg>
+      <Icon icon="it-arrow-down-triangle" style={{ ariaHidden: true }} />
     </components.DropdownIndicator>
   )
 }
