@@ -11,6 +11,7 @@ import {
   PagerLink,
   Form,
   FormGroup,
+  Icon,
   Input,
   Label
 } from '../../src'
@@ -33,7 +34,7 @@ const EsempiComponent = () => (
     <PagerList>
       <PagerItem>
         <PagerLink previous href="#">
-          <i className="it-chevron-left" />
+          <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
       <PagerItem>
@@ -47,7 +48,7 @@ const EsempiComponent = () => (
       </PagerItem>
       <PagerItem>
         <PagerLink next href="#">
-          <i className="it-chevron-right" />
+          <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -59,7 +60,7 @@ const StatoDisabilitatoAttivoComponent = () => (
     <PagerList>
       <PagerItem disabled>
         <PagerLink previous href="#">
-          <i className="it-chevron-left" />
+          <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
       <PagerItem>
@@ -75,7 +76,7 @@ const StatoDisabilitatoAttivoComponent = () => (
       </PagerItem>
       <PagerItem disabled>
         <PagerLink next href="#">
-          <i className="it-chevron-right" />
+          <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -88,7 +89,7 @@ const AllineamentoComponent = () => (
       <PagerList>
         <PagerItem disabled>
           <PagerLink previous href="#">
-            <i className="it-chevron-left" />
+            <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
           </PagerLink>
         </PagerItem>
         <PagerItem>
@@ -104,7 +105,7 @@ const AllineamentoComponent = () => (
         </PagerItem>
         <PagerItem>
           <PagerLink next href="#">
-            <i className="it-chevron-right" />
+            <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
           </PagerLink>
         </PagerItem>
       </PagerList>
@@ -114,7 +115,7 @@ const AllineamentoComponent = () => (
       <PagerList>
         <PagerItem disabled>
           <PagerLink previous href="#">
-            <i className="it-chevron-left" />
+            <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
           </PagerLink>
         </PagerItem>
         <PagerItem>
@@ -130,7 +131,7 @@ const AllineamentoComponent = () => (
         </PagerItem>
         <PagerItem>
           <PagerLink next href="#">
-            <i className="it-chevron-right" />
+            <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
           </PagerLink>
         </PagerItem>
       </PagerList>
@@ -143,7 +144,7 @@ const ResponsiveComponent = () => (
     <PagerList>
       <PagerItem>
         <PagerLink previous href="#">
-          <i className="it-chevron-left" />
+          <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
       <PagerItem className="d-sm-block">
@@ -165,7 +166,7 @@ const ResponsiveComponent = () => (
       </PagerItem>
       <PagerItem>
         <PagerLink next href="#">
-          <i className="it-chevron-right" />
+          <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -177,7 +178,7 @@ const MoreComponent = () => (
     <PagerList>
       <PagerItem>
         <PagerLink previous href="#">
-          <i className="it-chevron-left" />
+          <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
       <PagerItem className="d-none d-sm-block">
@@ -211,7 +212,7 @@ const MoreComponent = () => (
       </PagerItem>
       <PagerItem>
         <PagerLink next href="#">
-          <i className="it-chevron-right" />
+          <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -223,7 +224,7 @@ const ChangerComponent = () => (
     <PagerList>
       <PagerItem>
         <PagerLink previous href="#">
-          <i className="it-chevron-left" />
+          <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
       <PagerItem className="d-none d-sm-block">
@@ -257,7 +258,7 @@ const ChangerComponent = () => (
       </PagerItem>
       <PagerItem>
         <PagerLink next href="#">
-          <i className="it-chevron-right" />
+          <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -284,7 +285,7 @@ const JumpComponent = () => (
     <PagerList>
       <PagerItem>
         <PagerLink previous href="#">
-          <i className="it-chevron-left" />
+          <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
       <PagerItem className="d-none d-sm-block">
@@ -318,7 +319,7 @@ const JumpComponent = () => (
       </PagerItem>
       <PagerItem>
         <PagerLink next href="#">
-          <i className="it-chevron-right" />
+          <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -331,7 +332,7 @@ const SimpleComponent = () => (
     <PagerList>
       <PagerItem disabled>
         <PagerLink previous href="#">
-          <i className="it-chevron-left" />
+          <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
       <PagerItem className="d-none d-sm-block">
@@ -345,7 +346,7 @@ const SimpleComponent = () => (
       </PagerItem>
       <PagerItem>
         <PagerLink next href="#">
-          <i className="it-chevron-right" />
+          <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -403,7 +404,7 @@ const TotalComponent = () => (
     <PagerList>
       <PagerItem>
         <PagerLink previous href="#">
-          <i className="it-chevron-left" />
+          <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
       <PagerItem className="d-none d-sm-block">
@@ -437,7 +438,7 @@ const TotalComponent = () => (
       </PagerItem>
       <PagerItem>
         <PagerLink next href="#">
-          <i className="it-chevron-right" />
+          <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
         </PagerLink>
       </PagerItem>
     </PagerList>
@@ -464,7 +465,7 @@ const EsempiInterattiviComponent = () => {
       <PagerList>
         <PagerItem disabled={disabled}>
           <PagerLink {...current} previous href="#">
-            <i className="it-chevron-left" />
+            <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
           </PagerLink>
         </PagerItem>
         <PagerItem disabled={disabled}>
@@ -474,7 +475,7 @@ const EsempiInterattiviComponent = () => {
         </PagerItem>
         <PagerItem disabled={disabled}>
           <PagerLink {...current} next href="#">
-            <i className="it-chevron-right" />
+            <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
           </PagerLink>
         </PagerItem>
       </PagerList>
