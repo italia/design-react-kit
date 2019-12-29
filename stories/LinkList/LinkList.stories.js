@@ -139,20 +139,36 @@ const MultilineComponent = () => (
     <LinkListItem active className="right-icon">
       <span>Link list 1 active</span>
       <i className="it-chevron-right right" />
-      <Icon icon="it-chevron-right" color="primary" className="icon-right" />
+      <Icon
+        className="icon-right"
+        color="primary"
+        icon="it-chevron-right"
+        style={{ ariaHidden: true }}
+      />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
     </LinkListItem>
     <LinkListItem divider />
     <LinkListItem className="right-icon">
       <span>Link list 2</span>
       <i className="it-chevron-right right" />
+      <Icon
+        className="icon-right"
+        color="primary"
+        icon="it-chevron-right"
+        style={{ ariaHidden: true }}
+      />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
     </LinkListItem>
     <LinkListItem divider />
     <LinkListItem disabled className="right-icon">
       <span>Link list 3 disabled</span>
       <i className="it-chevron-right right" />{' '}
-      <Icon icon="it-chevron-right" color="primary" className="icon-right" />
+      <Icon
+        className="icon-right"
+        color="primary"
+        icon="it-chevron-right"
+        style={{ ariaHidden: true }}
+      />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
     </LinkListItem>
   </LinkList>
@@ -162,17 +178,32 @@ const ControlliComponent = () => (
   <LinkList>
     <LinkListItem active className="left-icon">
       <i className="it-chevron-right left" aria-hidden="true" />
-      <Icon icon="it-chevron-right" color="primary" />
+      <Icon
+        className="left"
+        color="primary"
+        icon="it-chevron-right"
+        style={{ ariaHidden: true }}
+      />
       <span>Link list 1 active</span>
     </LinkListItem>
     <LinkListItem className="left-icon">
       <i className="it-chevron-right left" aria-hidden="true" />
-      <Icon icon="it-chevron-right" color="primary" />
+      <Icon
+        className="left"
+        color="primary"
+        icon="it-chevron-right"
+        style={{ ariaHidden: true }}
+      />
       <span>Link list 2</span>
     </LinkListItem>
     <LinkListItem disabled className="left-icon">
       <i className="it-chevron-right left" aria-hidden="true" />
-      <Icon icon="it-chevron-right" color="primary" />
+      <Icon
+        className="left"
+        color="primary"
+        icon="it-chevron-right"
+        style={{ ariaHidden: true }}
+      />
       <span>Link list 3 disabled</span>
     </LinkListItem>
   </LinkList>
@@ -183,17 +214,32 @@ const ControlliSecondariComponent = () => (
     <LinkListItem active className="right-icon">
       <span>Link list 1 active</span>
       <i className="it-app right secondary" />
-      <Icon icon="it-link" color="primary" className="icon-right" />
+      <Icon
+        className="icon-right"
+        color="primary"
+        icon="it-link"
+        style={{ ariaHidden: true }}
+      />
     </LinkListItem>
     <LinkListItem className="right-icon">
       <span>Link list 2</span>
       <i className="it-app right secondary" />
-      <Icon icon="it-link" color="primary" className="icon-right" />
+      <Icon
+        className="icon-right"
+        color="primary"
+        icon="it-link"
+        style={{ ariaHidden: true }}
+      />
     </LinkListItem>
     <LinkListItem disabled className="right-icon">
       <span>Link list 3 disabled</span>
       <i className="it-app right secondary" />
-      <Icon icon="it-link" color="primary" className="icon-right" />
+      <Icon
+        className="icon-right"
+        color="primary"
+        icon="it-link"
+        style={{ ariaHidden: true }}
+      />
     </LinkListItem>
   </LinkList>
 )
@@ -202,21 +248,54 @@ const ControlliPrimariSecondariComponent = () => (
   <LinkList>
     <LinkListItem active className="left-icon right-icon">
       <i className="it-favorite left" />
-      <Icon icon="it-link" color="primary" />
+      <Icon
+        className="left"
+        color="primary"
+        icon="it-link"
+        style={{ ariaHidden: true }}
+      />
       <span>Link list 1 active</span>
       <i className="it-app right secondary" />
+      <Icon
+        className="right"
+        color="secondary"
+        icon="it-chevron-right"
+        style={{ ariaHidden: true }}
+      />
     </LinkListItem>
     <LinkListItem className="left-icon right-icon">
       <i className="it-favorite left" />
-      <Icon icon="it-link" color="primary" />
+      <Icon
+        className="left"
+        color="primary"
+        icon="it-link"
+        style={{ ariaHidden: true }}
+      />
       <span>Link list 2</span>
       <i className="it-app right secondary" />
+      <Icon
+        className="right"
+        color="secondary"
+        icon="it-chevron-right"
+        style={{ ariaHidden: true }}
+      />
     </LinkListItem>
     <LinkListItem disabled className="left-icon right-icon">
       <i className="it-favorite left" />
-      <Icon icon="it-link" color="primary" />
+      <Icon
+        className="left"
+        color="primary"
+        icon="it-link"
+        style={{ ariaHidden: true }}
+      />
       <span>Link list 3 disabled</span>
       <i className="it-app right secondary" />
+      <Icon
+        className="right"
+        color="secondary"
+        icon="it-chevron-right"
+        style={{ ariaHidden: true }}
+      />
     </LinkListItem>
   </LinkList>
 )
