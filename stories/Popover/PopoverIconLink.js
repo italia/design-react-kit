@@ -1,5 +1,5 @@
 import React from 'react'
-import { Popover, PopoverHeader, PopoverBody } from '../../src'
+import { Icon, Popover, PopoverHeader, PopoverBody } from '../../src'
 
 class PopoverIconLink extends React.Component {
   state = {
@@ -37,9 +37,11 @@ class PopoverIconLink extends React.Component {
           isOpen={this.state.popoverOpen}
           toggle={this.togglePopover}>
           <PopoverHeader>
-            <svg className="icon icon-white">
-              <use xlinkHref="/svg/sprite.svg#it-help-circle" />
-            </svg>{' '}
+            <Icon
+              color="white"
+              icon="it-help-circle"
+              style={{ ariaHidden: true }}
+            />
             Titolo con icona
           </PopoverHeader>
           <PopoverBody>
@@ -47,9 +49,7 @@ class PopoverIconLink extends React.Component {
             finibus augue.
             <a href="#" className="popover-inner-link">
               More info
-              <svg className="icon">
-                <use xlinkhref="/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right" />
-              </svg>
+              <Icon icon="it-arrow-right" style={{ ariaHidden: true }} />
             </a>
           </PopoverBody>
         </Popover>

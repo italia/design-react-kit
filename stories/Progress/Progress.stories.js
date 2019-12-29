@@ -4,7 +4,7 @@ import { withKnobs, number, text, select } from '@storybook/addon-knobs/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 
-import { Progress, Button, Spinner } from '../../src'
+import { Button, Icon, Progress, Spinner } from '../../src'
 
 import Esempi from './docs/Esempi.md'
 import Etichette from './docs/Etichette.md'
@@ -71,9 +71,7 @@ const ButtonProgressComponent = () => (
         </p>
         <Button color="primary" className="btn-progress" disabled>
           Label bottone{' '}
-          <svg className="icon icon-light">
-            <use xlinkHref="/svg/sprite.svg#it-github" />
-          </svg>
+          <Icon color="light" icon="it-github" style={{ ariaHidden: true }} />
           <span>
             <Progress value="50" />
           </span>
@@ -85,9 +83,7 @@ const ButtonProgressComponent = () => (
         </p>
         <Button color="secondary" className="btn-progress" disabled>
           Label bottone{' '}
-          <svg className="icon icon-light">
-            <use xlinkHref="/svg/sprite.svg#it-github" />
-          </svg>
+          <Icon color="light" icon="it-github" style={{ ariaHidden: true }} />
           <span>
             <Progress value="50" />
           </span>
