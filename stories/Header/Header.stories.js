@@ -45,6 +45,7 @@ import SlimFullDoc from './SlimHeader/basic-full-responsive.md'
 import CenterBasicDoc from './CenterHeader/basic.md'
 import NavBasicDoc from './NavHeader/basic.md'
 import CompleteBasicDoc from './CompleteHeader/basic.md'
+import StickyHeaderDoc from './StickyHeader.md'
 
 const ComponentsToExclude = [
   Button,
@@ -156,7 +157,7 @@ storiesOf('Componenti/Header', module)
   .add(
     'Sticky Header',
     withInfo({
-      text: CompleteBasicDoc,
+      text: StickyHeaderDoc,
       propTables: [Headers, Header],
       propTablesExclude: [
         CompleteHeaderBasic,

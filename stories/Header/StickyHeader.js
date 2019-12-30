@@ -1,8 +1,6 @@
-import React, { Component } from 'react'
-import { boolean } from '@storybook/addon-knobs/react'
+import React  from 'react'
 import {
   Button,
-  Collapse,
   UncontrolledCollapse,
   Row,
   Col,
@@ -10,7 +8,6 @@ import {
   DropdownMenu,
   DropdownItem,
   Header,
-  Headers,
   HeaderContent,
   HeaderSearch,
   HeaderRightZone,
@@ -26,9 +23,9 @@ import {
   HeaderBrand,
   UncontrolledDropdown
 } from '../../src'
+import { Sticky, StickyProvider } from 'react-stickup'
 
 const SlimHeader = (props) => {
- // const {theme} = props
   return (
     <Header type="slim" theme={props.theme}>
         <HeaderContent>
@@ -116,7 +113,6 @@ const CenterHeader = (props) => {
 }
 
 const NavHeader = (props) => {
-  //const {theme} = props
   return (
       <Header type="navbar" theme={props.theme}>
         <HeaderContent expand="lg" megamenu>
@@ -160,24 +156,15 @@ const NavHeader = (props) => {
 }
 
 const StickyHeader = () => {
-  const sticky = boolean('sticky', true)
-  //if (!open) {
     return (
-      <Headers sticky = {sticky}>
-        <SlimHeader />
-        <CenterHeader />
-        <NavHeader />
-      </Headers>
+      <StickyProvider >
+        <Sticky style={{position:"sticky",zIndex:2}}>
+          <SlimHeader />
+          <CenterHeader />
+          <NavHeader />
+        </Sticky>
+      </StickyProvider>
     )
-  // } else {
-  //   return (
-  //     <Headers>
-  //       <SlimHeader />
-  //       <CenterHeader />
-  //       <NavHeader />
-  //     </Headers>
-  //   )
-  // }
 }
 
 export default StickyHeader
