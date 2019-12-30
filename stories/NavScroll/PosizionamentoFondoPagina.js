@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Icon } from '../../src'
 
 class PosizionamentoFondoPagina extends React.Component {
   state = {
@@ -61,9 +62,13 @@ class PosizionamentoFondoPagina extends React.Component {
                   : { display: 'none' }
               }
               onClick={this.onNavScrollToggle}>
-              <svg className="icon icon-sm icon-primary align-top">
-                <use xlinkHref="/svg/sprite.svg#it-chevron-left"></use>
-              </svg>
+              <Icon
+                className="align-top"
+                color="primary"
+                icon="it-chevron-left"
+                style={{ ariaHidden: true }}
+                size="sm"
+              />
               <span>Back </span>
             </a>
             <div className="menu-wrapper">

@@ -21,7 +21,7 @@ storiesOf('Componenti/Icon', module)
         'Dimensioni',
         {
           'Extra small': 'xs',
-          Small: 'xs',
+          Small: 'sm',
           default: '',
           Large: 'lg',
           'Extra Large': 'xl'

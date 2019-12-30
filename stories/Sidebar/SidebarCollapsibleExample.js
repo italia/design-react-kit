@@ -1,5 +1,5 @@
 import React from 'react'
-import { Collapse, LinkList, LinkListItem, Sidebar } from '../../src'
+import { Collapse, LinkList, LinkListItem, Sidebar, Icon } from '../../src'
 
 class SidebarCollapseExample extends React.Component {
   defaultState = {
@@ -34,10 +34,12 @@ class SidebarCollapseExample extends React.Component {
             onClick={e => this.toggle(e, 1)}
             {...(collapseOpen1 ? expanded : {})}>
             <span>Link list 1 </span>
-            <i className="it-expand right" />
-            <svg className="icon icon-primary right">
-              <use xlinkHref="/svg/sprite.svg#it-expand" />
-            </svg>
+            <Icon
+              className="right"
+              icon="it-expand"
+              color="primary"
+              style={{ ariaHidden: true }}
+            />
           </LinkListItem>
           <Collapse isOpen={collapseOpen1}>
             <LinkList sublist>
@@ -58,10 +60,12 @@ class SidebarCollapseExample extends React.Component {
             onClick={e => this.toggle(e, 2)}
             {...(collapseOpen2 ? expanded : {})}>
             <span>Link list 2 </span>
-            <i className="it-expand right" />
-            <svg className="icon icon-primary right">
-              <use xlinkHref="/svg/sprite.svg#it-expand" />
-            </svg>
+            <Icon
+              className="right"
+              icon="it-expand"
+              color="primary"
+              style={{ ariaHidden: true }}
+            />
           </LinkListItem>
           <Collapse isOpen={collapseOpen2}>
             <LinkList sublist>
@@ -82,10 +86,12 @@ class SidebarCollapseExample extends React.Component {
             onClick={e => this.toggle(e, 3)}
             {...(collapseOpen3 ? expanded : {})}>
             <span>Link list 3 </span>
-            <i className="it-expand right" />
-            <svg className="icon icon-primary right">
-              <use xlinkHref="/svg/sprite.svg#it-expand" />
-            </svg>
+            <Icon
+              className="right"
+              icon="it-expand"
+              color="primary"
+              style={{ ariaHidden: true }}
+            />
           </LinkListItem>
           <Collapse isOpen={collapseOpen3}>
             <LinkList sublist>

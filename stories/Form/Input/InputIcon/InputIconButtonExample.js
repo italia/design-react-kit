@@ -1,4 +1,5 @@
 import React from 'react'
+import { Icon } from '../../../../src'
 
 class InputIconButtonExample extends React.Component {
   constructor() {
@@ -29,9 +30,7 @@ class InputIconButtonExample extends React.Component {
           <div className="input-group">
             <div className="input-group-prepend">
               <div className="input-group-text">
-                <svg className="icon icon-sm">
-                  <use xlinkHref="/svg/sprite.svg#it-pencil" />
-                </svg>
+                <Icon icon="it-pencil" style={{ ariaHidden: true }} size="sm" />
               </div>
             </div>
             <label
@@ -62,9 +61,12 @@ class InputIconButtonExample extends React.Component {
           <div className="input-group">
             <div className="input-group-prepend">
               <div className="input-group-text">
-                <svg className="icon icon-sm icon-danger">
-                  <use xlinkHref="/svg/sprite.svg#it-pencil" />
-                </svg>
+                <Icon
+                  icon="it-pencil"
+                  color="danger"
+                  style={{ ariaHidden: true }}
+                  size="sm"
+                />
               </div>
             </div>
             <label htmlFor="input-group-2" className="active">
@@ -94,9 +96,12 @@ class InputIconButtonExample extends React.Component {
           <div className="input-group">
             <div className="input-group-prepend">
               <div className="input-group-text">
-                <svg className="icon icon-sm icon-primary">
-                  <use xlinkHref="/svg/sprite.svg#it-pencil" />
-                </svg>
+                <Icon
+                  icon="it-pencil"
+                  color="primary"
+                  style={{ ariaHidden: true }}
+                  size="sm"
+                />
               </div>
             </div>
             <label

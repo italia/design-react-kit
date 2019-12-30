@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, NavItem, NavLink, TabContent, TabPane } from '../../src'
+import { Icon, Nav, NavItem, NavLink, TabContent, TabPane } from '../../src'
 import PropTypes from 'prop-types'
 
 const titles = ['Tab titolo 1', 'Tab titolo 2', 'Tab titolo 3']
@@ -33,9 +33,11 @@ class TabExample extends React.Component {
                 if (icons) {
                   return (
                     <span>
-                      <svg className="icon icon-primary">
-                        <use xlinkHref="/svg/sprite.svg#it-link"></use>
-                      </svg>
+                      <Icon
+                        color="primary"
+                        icon="it-link"
+                        style={{ ariaHidden: true }}
+                      />
                       <i
                         className="it-ico-lg it-file d-block text-center"
                         aria-label={titles[0]}
@@ -62,9 +64,11 @@ class TabExample extends React.Component {
                 if (icons) {
                   return (
                     <span>
-                      <svg className="icon icon-primary">
-                        <use xlinkHref="/svg/sprite.svg#it-calendar"></use>
-                      </svg>
+                      <Icon
+                        color="primary"
+                        icon="it-calendar"
+                        style={{ ariaHidden: true }}
+                      />
                       <i
                         className="it-ico-lg it-calendar d-block text-center"
                         aria-label={titles[1]}
@@ -91,9 +95,11 @@ class TabExample extends React.Component {
                 if (icons) {
                   return (
                     <span>
-                      <svg className="icon icon-primary">
-                        <use xlinkHref="/svg/sprite.svg#it-comment"></use>
-                      </svg>
+                      <Icon
+                        color="primary"
+                        icon="it-comment"
+                        style={{ ariaHidden: true }}
+                      />
                       <i
                         className="it-ico-lg it-comment d-block text-center"
                         aria-label={titles[2]}

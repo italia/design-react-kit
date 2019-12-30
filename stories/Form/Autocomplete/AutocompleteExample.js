@@ -3,6 +3,7 @@ import { components } from 'react-select'
 import AsyncSelect from 'react-select/async'
 import './assets/css/autocomplete-styles.css'
 import PropTypes from 'prop-types'
+import { Icon } from '../../../src'
 
 const propTypes = {
   isHidden: PropTypes.bool
@@ -12,9 +13,7 @@ const DropdownIndicator = props => {
   return (
     <components.DropdownIndicator {...props}>
       <span style={{ padding: '0px 5px' }} aria-hidden="true">
-        <svg className="icon icon-sm">
-          <use xlinkHref="/svg/sprite.svg#it-search" />
-        </svg>
+        <Icon icon="it-search" style={{ ariaHidden: true }} size="sm" />
       </span>
     </components.DropdownIndicator>
   )

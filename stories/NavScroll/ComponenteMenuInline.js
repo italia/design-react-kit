@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
+import { Icon } from '../../src'
 
 class ComponenteMenuInline extends React.Component {
   render() {
@@ -48,9 +49,12 @@ class ComponenteMenuList extends React.Component {
           aria-controls="collapseOne"
           onClick={e => this.onNavScrollToggle(e)}>
           <span>Link list 1</span>
-          <svg className="icon icon-primary icon-sm">
-            <use xlinkHref="/svg/sprite.svg#it-expand"></use>
-          </svg>
+          <Icon
+            color="primary"
+            icon="it-expand"
+            style={{ ariaHidden: true }}
+            size="sm"
+          />
         </a>
         <ul
           className={
