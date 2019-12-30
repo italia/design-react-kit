@@ -1,4 +1,4 @@
-import React  from 'react'
+import React from 'react'
 import {
   Button,
   UncontrolledCollapse,
@@ -25,61 +25,60 @@ import {
 } from '../../src'
 import { Sticky, StickyProvider } from 'react-stickup'
 
-const SlimHeader = (props) => {
+const SlimHeader = props => {
   return (
-    <Header type="slim" theme={props.theme}>
-        <HeaderContent>
-          <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
-          <HeaderLinkZone>
-            <HeaderToggler>
-              <span>Ente appartenenza/Owner</span>
+    <Header type="slim">
+      <HeaderContent>
+        <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
+        <HeaderLinkZone>
+          <HeaderToggler>
+            <span>Ente appartenenza/Owner</span>
+            <Icon icon="it-expand" />
+          </HeaderToggler>
+          <UncontrolledCollapse toggler>
+            <LinkList>
+              <LinkListItem href="#">Link 1</LinkListItem>
+              <LinkListItem href="#" active>
+                Link 2 Active
+              </LinkListItem>
+            </LinkList>
+          </UncontrolledCollapse>
+        </HeaderLinkZone>
+        <HeaderRightZone>
+          <UncontrolledDropdown nav tag="div">
+            <DropdownToggle nav caret>
+              ITA
               <Icon icon="it-expand" />
-            </HeaderToggler>
-            <UncontrolledCollapse toggler>
-              <LinkList>
-                <LinkListItem href="#">Link 1</LinkListItem>
-                <LinkListItem href="#" active>
-                  Link 2 Active
-                </LinkListItem>
-              </LinkList>
-            </UncontrolledCollapse>
-          </HeaderLinkZone>
-          <HeaderRightZone>
-            <UncontrolledDropdown nav tag="div">
-              <DropdownToggle nav caret>
-                ITA
-                <Icon icon="it-expand" />
-              </DropdownToggle>
-              <DropdownMenu>
-                <Row>
-                  <Col size="12">
-                    <LinkList>
-                      <LinkListItem tag={DropdownItem} href="#">
-                        <span>ITA</span>
-                      </LinkListItem>
-                      <LinkListItem tag={DropdownItem} href="#">
-                        <span>ENG</span>
-                      </LinkListItem>
-                    </LinkList>
-                  </Col>
-                </Row>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-            <div className="it-access-top-wrapper">
-              <Button color="primary" size="sm">
-                Accedi
-              </Button>
-            </div>
-          </HeaderRightZone>
-        </HeaderContent>
-      </Header>
+            </DropdownToggle>
+            <DropdownMenu>
+              <Row>
+                <Col size="12">
+                  <LinkList>
+                    <LinkListItem tag={DropdownItem} href="#">
+                      <span>ITA</span>
+                    </LinkListItem>
+                    <LinkListItem tag={DropdownItem} href="#">
+                      <span>ENG</span>
+                    </LinkListItem>
+                  </LinkList>
+                </Col>
+              </Row>
+            </DropdownMenu>
+          </UncontrolledDropdown>
+          <div className="it-access-top-wrapper">
+            <Button color="primary" size="sm">
+              Accedi
+            </Button>
+          </div>
+        </HeaderRightZone>
+      </HeaderContent>
+    </Header>
   )
 }
 
-
-const CenterHeader = (props) => {
+const CenterHeader = props => {
   return (
-    <Header type="center" theme={props.theme}>
+    <Header type="center">
       <HeaderContent>
         <HeaderBrand iconName="it-code-circle">
           <h2>Lorem Ipsum Lorem Ipsum</h2>
@@ -112,59 +111,59 @@ const CenterHeader = (props) => {
   )
 }
 
-const NavHeader = (props) => {
+const NavHeader = props => {
   return (
-      <Header type="navbar" theme={props.theme}>
-        <HeaderContent expand="lg" megamenu>
-          <HeaderToggler
-            aria-controls="nav1"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <Icon icon="it-burger" />
-          </HeaderToggler>
-          <UncontrolledCollapse toggler>
-            <div className="menu-wrapper">
-              <Nav navbar>
-                <NavItem active>
-                  <NavLink href="#" active>
-                    <span>link 1 active </span>
-                    <span className="sr-only">current</span>
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#" disabled>
-                    Link 2
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#">Link 3</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#">Link 4</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#" disabled>
-                    Megamenu label
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </div>
-          </UncontrolledCollapse>
-        </HeaderContent>
-      </Header>
+    <Header type="navbar">
+      <HeaderContent expand="lg" megamenu>
+        <HeaderToggler
+          aria-controls="nav1"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <Icon icon="it-burger" />
+        </HeaderToggler>
+        <UncontrolledCollapse toggler>
+          <div className="menu-wrapper">
+            <Nav navbar>
+              <NavItem active>
+                <NavLink href="#" active>
+                  <span>link 1 active </span>
+                  <span className="sr-only">current</span>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#" disabled>
+                  Link 2
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">Link 3</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">Link 4</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#" disabled>
+                  Megamenu label
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </div>
+        </UncontrolledCollapse>
+      </HeaderContent>
+    </Header>
   )
 }
 
 const StickyHeader = () => {
-    return (
-      <StickyProvider >
-        <Sticky style={{position:"sticky",zIndex:2}}>
-          <SlimHeader />
-          <CenterHeader />
-          <NavHeader />
-        </Sticky>
-      </StickyProvider>
-    )
+  return (
+    <StickyProvider>
+      <Sticky style={{ position: 'sticky', zIndex: 2 }}>
+        <SlimHeader />
+        <CenterHeader />
+        <NavHeader />
+      </Sticky>
+    </StickyProvider>
+  )
 }
 
 export default StickyHeader
