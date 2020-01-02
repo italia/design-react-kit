@@ -32,7 +32,12 @@ const Homepage = () => {
   const townTagLine = text('Motto Comune', 'Uno dei tanti Comuni d Italia')
   return (
     <>
-      <CompleteHeader sticky theme={theme} townName={townName} townTagLine={townTagLine} />
+      <CompleteHeader
+        sticky
+        theme={theme}
+        townName={townName}
+        townTagLine={townTagLine}
+      />
       <section id="head-section">
         <Container>
           <Row>
