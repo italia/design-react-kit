@@ -31,6 +31,7 @@ import SlimHeaderBasic from './SlimHeader/basic'
 import SlimHeaderFull from './SlimHeader/basic-full-responsive'
 import CenterHeaderBasic from './CenterHeader/basic'
 import NavHeaderBasic from './NavHeader/basic'
+import StickyHeader from './StickyHeader'
 import CompleteHeaderBasic, {
   SlimHeader,
   CenterHeader,
@@ -44,6 +45,7 @@ import SlimFullDoc from './SlimHeader/basic-full-responsive.md'
 import CenterBasicDoc from './CenterHeader/basic.md'
 import NavBasicDoc from './NavHeader/basic.md'
 import CompleteBasicDoc from './CompleteHeader/basic.md'
+import StickyHeaderDoc from './StickyHeader.md'
 
 const ComponentsToExclude = [
   Button,
@@ -147,4 +149,22 @@ storiesOf('Componenti/Header', module)
         ...ComponentsToExclude
       ]
     })(CompleteHeaderBasic)
+  )
+
+storiesOf('Componenti/Header', module)
+  .addDecorator(withA11y)
+  .addDecorator(withKnobs)
+  .add(
+    'Sticky Header',
+    withInfo({
+      text: StickyHeaderDoc,
+      propTables: [Headers, Header],
+      propTablesExclude: [
+        CompleteHeaderBasic,
+        SlimHeader,
+        CenterHeader,
+        NavHeader,
+        ...ComponentsToExclude
+      ]
+    })(StickyHeader)
   )
