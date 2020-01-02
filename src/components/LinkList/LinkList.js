@@ -5,8 +5,12 @@ import classNames from 'classnames'
 const propTypes = {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-  /** Classi aggiuntive da usare per il componente LinkList */
+  /** Da utilizzare in caso di titolo principale della lista. Passare una componente React da mostrare come titolo */
+  header: PropTypes.node,
+  /** Classi aggiuntive da usare per il componente lista del LinkList */
   className: PropTypes.string,
+  /** Classi aggiuntive da usare per il componente wrapper del LinkList */
+  wrapperClassName: PropTypes.string,
   /** Quando è abilitato gestisce una lista in cui ciascun elemento è composto da più componenti/elementi. */
   multiline: PropTypes.bool,
   sublist: PropTypes.bool,
@@ -20,15 +24,18 @@ const defaultProps = {
 const LinkList = props => {
   const {
     className,
+    wrapperClassName,
     tag: Tag,
     multiline,
+    header,
     sublist,
     avatar,
     ...attributes
   } = props
   const wrapperClasses = classNames(
     multiline ? 'multiline' : false,
-    'link-list-wrapper'
+    'link-list-wrapper',
+    wrapperClassName
   )
   const classes = classNames(
     className,
@@ -37,10 +44,16 @@ const LinkList = props => {
   )
 
   if (sublist) {
-    return <ul {...attributes} className={classes} />
+    return (
+      <>
+        {header}
+        <ul {...attributes} className={classes} />
+      </>
+    )
   }
   return (
     <Tag className={wrapperClasses}>
+      {header}
       <ul {...attributes} className={classes} />
     </Tag>
   )

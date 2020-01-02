@@ -11,7 +11,10 @@ import {
   Label,
   FormGroup,
   Collapse,
-  Icon
+  Icon,
+  NavItem,
+  NavLink,
+  Navbar
 } from '../../src'
 
 import LinkListCollapsibleExample from './LinkListCollapsibleExample'
@@ -30,6 +33,7 @@ import Switch from './docs/Switch.md'
 import Checkbox from './docs/Checkbox.md'
 import Navigation from './docs/Navigation.md'
 import Collapsible from './docs/Collapsible.md'
+import Titolo from './docs/Titolo.md'
 
 const EsempiComponent = () => (
   <LinkList>
@@ -403,6 +407,61 @@ const NavigationComponent = () => (
   </LinkList>
 )
 
+const NavigationMenuWithTitle = () => {
+  return (
+    <div className="sticky-wrapper navbar-wrapper">
+      <Navbar expand="lg" className="it-navscroll-wrapper it-top-navscroll">
+        <div className="menu-wrapper">
+          <LinkList
+            wrapperClassName="menu-link-list"
+            header={<h3 className="no_toc">Indice della pagina</h3>}>
+            <NavItem>
+              <NavLink href="#cos-e">
+                <span>Cos&#39;è</span>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#luogo">
+                <span>Luogo</span>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#date-e-orari">
+                <span>Date e orari</span>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#costi">
+                <span>Costi</span>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#documenti">
+                <span>Documenti</span>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#contatti">
+                <span>Contatti</span>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#appuntamenti">
+                <span>Appuntamenti</span>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#ulteriori-informazioni">
+                <span>Ulteriori informazioni</span>
+              </NavLink>
+            </NavItem>
+          </LinkList>
+        </div>
+      </Navbar>
+    </div>
+  )
+}
+
 storiesOf('Componenti/LinkList', module)
   .addDecorator(withA11y)
   .add(
@@ -434,6 +493,12 @@ storiesOf('Componenti/LinkList', module)
     withInfo({
       text: Large
     })(LargeComponent)
+  )
+  .add(
+    'Titolo lista',
+    withInfo({
+      text: Titolo
+    })(NavigationMenuWithTitle)
   )
 
 storiesOf('Componenti/LinkList.Multiline', module)
