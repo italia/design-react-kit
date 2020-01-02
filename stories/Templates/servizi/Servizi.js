@@ -35,6 +35,7 @@ const Servizi = () => {
   return (
     <>
       <CompleteHeader
+        sticky
         theme={theme}
         townName={townName}
         townTagLine={townTagLine}

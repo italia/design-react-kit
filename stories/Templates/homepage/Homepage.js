@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { text } from '@storybook/addon-knobs/react'
+import { select, text } from '@storybook/addon-knobs/react'
 import {
   Button,
   Card,
@@ -18,15 +18,21 @@ import {
   LinkList
 } from '../../../src'
 
+import CompleteHeader from '../shared/Header'
 import Footer from '../shared/Footer'
-import StickyHeader from '../../Header/StickyHeader'
 
 const Homepage = () => {
+  const theme = select(
+    'Tema',
+    { default: '', light: 'light', dark: 'dark' },
+    ''
+  )
+
   const townName = text('Comune', 'Nome del Comune')
   const townTagLine = text('Motto Comune', 'Uno dei tanti Comuni d Italia')
   return (
     <>
-      <StickyHeader />
+      <CompleteHeader sticky theme={theme} townName={townName} townTagLine={townTagLine} />
       <section id="head-section">
         <Container>
           <Row>

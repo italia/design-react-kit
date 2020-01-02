@@ -237,11 +237,23 @@ export class NavHeader extends Component {
   }
 }
 
-// eslint-disable-next-line react/prop-types
-const CompleteHeader = ({ page, theme, type, townName, townTagLine }) => {
+const CompleteHeader = ({
+  // eslint-disable-next-line react/prop-types
+  page,
+  // eslint-disable-next-line react/prop-types
+  sticky,
+  // eslint-disable-next-line react/prop-types
+  theme,
+  // eslint-disable-next-line react/prop-types
+  type,
+  // eslint-disable-next-line react/prop-types
+  townName,
+  // eslint-disable-next-line react/prop-types
+  townTagLine
+}) => {
   const SlimTag = type === 'default' ? SlimHeader : SlimHeaderFullResponsive
   return (
-    <Headers>
+    <Headers sticky={sticky}>
       <SlimTag theme={theme} />
       <div className="it-nav-wrapper">
         <CenterHeader
