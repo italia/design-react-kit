@@ -61,7 +61,7 @@ const ComponentsToExclude = [
 storiesOf('Componenti/Header', module)
   .addParameters({
     options: {
-      showAddonPanel: false
+      showPanel: false
     }
   })
   .add('Introduzione', () => <Introduction />)

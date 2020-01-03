@@ -18,7 +18,7 @@ import {
   LinkList
 } from '../../../src'
 
-import Header from '../shared/Header'
+import CompleteHeader from '../shared/Header'
 import Footer from '../shared/Footer'
 
 const Homepage = () => {
@@ -32,7 +32,12 @@ const Homepage = () => {
   const townTagLine = text('Motto Comune', 'Uno dei tanti Comuni d Italia')
   return (
     <>
-      <Header theme={theme} townName={townName} townTagLine={townTagLine} />
+      <CompleteHeader
+        sticky
+        theme={theme}
+        townName={townName}
+        townTagLine={townTagLine}
+      />
       <section id="head-section">
         <Container>
           <Row>

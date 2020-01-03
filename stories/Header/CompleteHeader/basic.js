@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { select } from '@storybook/addon-knobs/react'
+import { boolean, select } from '@storybook/addon-knobs/react'
 import {
   Button,
   Collapse,
@@ -236,10 +236,11 @@ const CompleteHeader = () => {
     ['default', 'Full responsive'],
     'default'
   )
+  const sticky = boolean('Sticky', false)
   const SlimTag =
     slimHeaderType === 'default' ? SlimHeader : SlimHeaderFullResponsive
   return (
-    <Headers>
+    <Headers sticky={sticky}>
       <SlimTag theme={theme} />
       <div className="it-nav-wrapper">
         <CenterHeader theme={theme} />

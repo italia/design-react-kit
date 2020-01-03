@@ -10,8 +10,6 @@ const propTypes = {
   // cannot use variables above here or storybook writes the full import stacktrace
   /** Tipo di componente Header: può essere solamente uno di questi tre tipi */
   type: PropTypes.oneOf(['slim', 'center', 'navbar']).isRequired,
-  /** Quando abilitato render il componente "sticky", ovvero fisso in alto quando si scorre la pagina */
-  sticky: PropTypes.bool,
   /** Riduce la grandezza del componente Header. Funziona solamente con Header "center". */
   small: PropTypes.bool,
   /** Imposta il tema per il componente Header. Per gli Header di tipo "slim" o "center"
@@ -22,15 +20,13 @@ const propTypes = {
 }
 
 const defaultProps = {
-  small: false,
-  sticky: false
+  small: false
 }
 
-const Header = ({ className, small, sticky, theme, type, ...attributes }) => {
+const Header = ({ className, small, theme, type, ...attributes }) => {
   // use context here as theme
   const classes = classNames(className, {
     [`it-header-${type}-wrapper`]: type,
-    'it-header-sticky': sticky,
     'it-small-header': type === CENTER && small,
     [`theme-${theme}`]: type !== NAVBAR && theme,
     'theme-dark-mobile': type === NAVBAR && theme === 'dark',
