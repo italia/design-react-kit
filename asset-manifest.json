@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/italia/design-react-kit/main.css",
-    "main.js": "/italia/design-react-kit/main.488a4b81908a22f93d37.bundle.js",
+    "main.js": "/italia/design-react-kit/main.180153d50cc5141e32be.bundle.js",
     "main.css.map": "/italia/design-react-kit/main.css.map",
-    "main.js.map": "/italia/design-react-kit/main.488a4b81908a22f93d37.bundle.js.map",
-    "runtime~main.js": "/italia/design-react-kit/runtime~main.488a4b81908a22f93d37.bundle.js",
-    "runtime~main.js.map": "/italia/design-react-kit/runtime~main.488a4b81908a22f93d37.bundle.js.map",
+    "main.js.map": "/italia/design-react-kit/main.180153d50cc5141e32be.bundle.js.map",
+    "runtime~main.js": "/italia/design-react-kit/runtime~main.180153d50cc5141e32be.bundle.js",
+    "runtime~main.js.map": "/italia/design-react-kit/runtime~main.180153d50cc5141e32be.bundle.js.map",
     "vendors~main.css": "/italia/design-react-kit/vendors~main.css",
-    "vendors~main.js": "/italia/design-react-kit/vendors~main.488a4b81908a22f93d37.bundle.js",
+    "vendors~main.js": "/italia/design-react-kit/vendors~main.180153d50cc5141e32be.bundle.js",
     "vendors~main.css.map": "/italia/design-react-kit/vendors~main.css.map",
-    "vendors~main.js.map": "/italia/design-react-kit/vendors~main.488a4b81908a22f93d37.bundle.js.map",
+    "vendors~main.js.map": "/italia/design-react-kit/vendors~main.180153d50cc5141e32be.bundle.js.map",
     "iframe.html": "/italia/design-react-kit/iframe.html",
-    "precache-manifest.99d1435a836b216009be79fd0a5c0595.js": "/italia/design-react-kit/precache-manifest.99d1435a836b216009be79fd0a5c0595.js",
+    "precache-manifest.529ba8f454498d31ef87ec25d9301d83.js": "/italia/design-react-kit/precache-manifest.529ba8f454498d31ef87ec25d9301d83.js",
     "service-worker.js": "/italia/design-react-kit/service-worker.js",
     "static/media/fonts.css": "/italia/design-react-kit/static/media/TitilliumWeb-SemiBold.eb6768ff.woff2",
-    "static/media/sprite.svg": "/italia/design-react-kit/static/media/sprite.6a4cf845.svg"
+    "static/media/sprite.svg": "/italia/design-react-kit/static/media/sprite.c452d70a.svg"
   },
   "entrypoints": [
-    "runtime~main.488a4b81908a22f93d37.bundle.js",
+    "runtime~main.180153d50cc5141e32be.bundle.js",
     "vendors~main.css",
-    "vendors~main.488a4b81908a22f93d37.bundle.js",
+    "vendors~main.180153d50cc5141e32be.bundle.js",
     "main.css",
-    "main.488a4b81908a22f93d37.bundle.js"
+    "main.180153d50cc5141e32be.bundle.js"
   ]
 }
