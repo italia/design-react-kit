@@ -76,6 +76,26 @@ const App = () => {
 export default App;
 ```
 
+#### Loading Fonts
+
+The Bootstrap Italia theme defines a specific set of font typefaces to work: `titillium-web`, `roboto-mono` and `lora`. The loading of this set of fonts can be left to the browser or controlled: in this last case it is necessary to use the `FontLoader` component exported by the library.
+Declaring the `FontLoader` on top of the Application tree it is enough to trigger the loading of the fonts.
+
+As alternative it is required to manually manage the loading via the `webfontloader` package:
+
+```js
+const WebFont = require('webfontloader')
+WebFont.load({
+    custom: {
+        families: [
+        'Titillium Web:300,400,600,700:latin-ext',
+        'Lora:400,700:latin-ext',
+        'Roboto Mono:400,700:latin-ext'
+        ]
+    }
+})
+```
+
 ### Peer dependencies
 
 The library does not include `react` and `react-dom`, avoiding versions clashing and increasing the size of the bundle.
