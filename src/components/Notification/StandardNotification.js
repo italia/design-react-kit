@@ -1,11 +1,13 @@
 import React from 'react'
-import { Toast, ToastHeader, ToastBody } from 'reactstrap'
+import { Toast, ToastHeader, ToastBody, Button } from 'reactstrap'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
+import Icon from '../Icon/Icon'
 
 const propTypes = {
   header: PropTypes.string,
-  content: PropTypes.string
+  content: PropTypes.string,
+  dismissable : PropTypes.bool
 }
 
 // custom style
@@ -15,8 +17,10 @@ const NotificationStyle = {
 }
 
 const StandardNotification = props => {
-  const wrapperClass = classNames('notification')
-  const { header, content } = props
+  const { header, content, dismissable } = props
+  const isDismissable = dismissable ? 'dismissable' : null
+  const wrapperClass = classNames('notification',isDismissable)
+  const btnClass = classNames('btn','notification-close')
   return (
     <Toast className={wrapperClass} style={NotificationStyle}>
       <ToastHeader>
@@ -27,6 +31,12 @@ const StandardNotification = props => {
           <p>{content}</p>
         </ToastBody>
       ) : null}
+      {isDismissable ? (
+        <Button className={btnClass}>
+          <Icon icon='it-close'/>
+          <span className='sr-only'>Chiudi notifica: Titolo notifica</span>
+        </Button>
+      ): null}
     </Toast>
   )
 }

@@ -9,7 +9,9 @@ const Examples = () => (
         <p className="mb-4">
           <strong>Notification standard</strong>
         </p>
-        <StandardNotification header="Notification title" dismissable={true} />
+        <StandardNotification 
+            header="Notification title" 
+            dismissable={true} />
       </div>
       <div className="col-12 col-md-6">
         <p className="mb-4">
