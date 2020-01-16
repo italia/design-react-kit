@@ -7,7 +7,8 @@ import Icon from '../Icon/Icon'
 const propTypes = {
   header: PropTypes.string,
   content: PropTypes.string,
-  dismissable : PropTypes.bool
+  state: PropTypes.string,
+  dismissable: PropTypes.bool
 }
 
 // custom style
@@ -17,10 +18,10 @@ const NotificationStyle = {
 }
 
 const StandardNotification = props => {
-  const { header, content, dismissable } = props
+  const { header, content, dismissable, state } = props
   const isDismissable = dismissable ? 'dismissable' : null
-  const wrapperClass = classNames('notification',isDismissable)
-  const btnClass = classNames('btn','notification-close')
+  const wrapperClass = classNames('notification', state, isDismissable)
+  const btnClass = classNames('btn', 'notification-close')
   return (
     <Toast className={wrapperClass} style={NotificationStyle}>
       <ToastHeader>
@@ -33,10 +34,10 @@ const StandardNotification = props => {
       ) : null}
       {isDismissable ? (
         <Button className={btnClass}>
-          <Icon icon='it-close'/>
-          <span className='sr-only'>Chiudi notifica: Titolo notifica</span>
+          <Icon icon="it-close" />
+          <span className="sr-only">Chiudi notifica: Titolo notifica</span>
         </Button>
-      ): null}
+      ) : null}
     </Toast>
   )
 }

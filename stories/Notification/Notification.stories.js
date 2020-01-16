@@ -6,6 +6,7 @@ import Esempi from '../LinkList/docs/Esempi.md'
 import Examples from './Example'
 import NotificationWithMessage from './NotificationWithMessage'
 import dismissable from './dismissable'
+import states from './States'
 
 storiesOf('Componenti/Notification', module)
   .addDecorator(withA11y)
@@ -26,4 +27,10 @@ storiesOf('Componenti/Notification', module)
     withInfo({
       text: Esempi
     })(dismissable)
+  )
+  .add(
+    'States',
+    withInfo({
+      text: Esempi
+    })(states)
   )
