@@ -1,6 +1,7 @@
 import React from 'react';
 import {addParameters, addDecorator, configure} from '@storybook/react';
 import {default as theme} from './theme.js';
+import {FontLoader} from '../src';
 
 import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
 import '../assets/css/fonts.css';
@@ -13,7 +14,7 @@ const styles = {
     padding: '48px 32px',
     textAlign: 'initial'
 };
-const CenterDecorator = storyFn => <div style={styles}>{storyFn()}</div>;
+const WrapperDecorator = storyFn => <div style={styles}><FontLoader />{storyFn()}</div>;
 
 addParameters({
     options: {
@@ -47,7 +48,7 @@ addParameters({
     },
 });
 
-addDecorator(CenterDecorator);
+addDecorator(WrapperDecorator);
 
 function loadStories() {
     require('../stories/index.js');

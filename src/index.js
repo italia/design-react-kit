@@ -1,17 +1,3 @@
-if (typeof window !== 'undefined') {
-  const WebFont = require('webfontloader')
-
-  WebFont.load({
-    custom: {
-      families: [
-        'Titillium Web:300,400,600,700:latin-ext',
-        'Lora:400,700:latin-ext',
-        'Roboto Mono:400,700:latin-ext'
-      ]
-    }
-  })
-}
-
 export {
   Alert,
   Container,
@@ -160,3 +146,4 @@ export {
 } from './components/CookieBar/CookieBarButton'
 export { default as Chip } from './components/Chips/Chip'
 export { default as ChipLabel } from './components/Chips/ChipLabel'
+export { default as FontLoader } from './components/FontLoader/FontLoader'
