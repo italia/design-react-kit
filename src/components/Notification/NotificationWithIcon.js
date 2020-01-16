@@ -2,15 +2,22 @@ import React from 'react'
 import { Toast, ToastHeader, ToastBody } from 'reactstrap'
 import Icon from '../Icon/Icon'
 import classNames from 'classnames'
+import PropTypes from 'prop-types'
+
+const propTypes = {
+  header: PropTypes.string,
+  content: PropTypes.string,
+  type: PropTypes.string
+}
 
 // custom style
 const NotificationStyle = {
   right: 'auto',
-  bottom:  'auto'
+  bottom: 'auto'
 }
 
-const NotificationWithIcon = (props) => {
-  const {header, content, type} = props
+const NotificationWithIcon = props => {
+  const { header, content, type } = props
   const wrapperClass = classNames('notification', 'with-icon', type)
   return (
     <Toast className={wrapperClass} style={NotificationStyle}>
@@ -20,13 +27,14 @@ const NotificationWithIcon = (props) => {
           <Icon icon="it-check-circle" />
         </h5>
       </ToastHeader>
-      {content ? 
+      {content ? (
         <ToastBody>
           <p>{content}</p>
         </ToastBody>
-      : null }
+      ) : null}
     </Toast>
   )
 }
 
+NotificationWithIcon.propTypes = propTypes
 export default NotificationWithIcon
