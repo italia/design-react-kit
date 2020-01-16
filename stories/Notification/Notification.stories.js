@@ -4,6 +4,7 @@ import { withInfo } from '@storybook/addon-info'
 import Esempi from '../LinkList/docs/Esempi.md'
 
 import Examples from './Example'
+import NotificationWithMessage from './NotificationWithMessage'
 
 storiesOf('Componenti/Notification', module)
   .addDecorator(withA11y)
@@ -12,4 +13,10 @@ storiesOf('Componenti/Notification', module)
     withInfo({
       text: Esempi
     })(Examples)
+  )
+  .add(
+    'Notification with message',
+    withInfo({
+      text: Esempi
+    })(NotificationWithMessage)
   )

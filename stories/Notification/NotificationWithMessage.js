@@ -9,13 +9,20 @@ const Examples = () => (
         <p className="mb-4">
           <strong>Notification standard</strong>
         </p>
-        <StandardNotification header="Notification title"/>
+        <StandardNotification 
+            header="Notification title"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
+            />
       </div>
       <div className="col-12 col-md-6">
         <p className="mb-4">
           <strong>Notification with icon</strong>
         </p>
-        <NotificationWithIcon header="Notification title"/>
+        <NotificationWithIcon 
+            header="Notification title" 
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
+            type="success"
+            />
       </div>
     </div>
   </div>
