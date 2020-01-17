@@ -1,0 +1,1 @@
+A short text can be added below the title using a tag `<p>`
