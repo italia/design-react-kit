@@ -8,6 +8,8 @@ import NotificationWithMessage from './NotificationWithMessage'
 import dismissable from './dismissable'
 import states from './States'
 import RoundingOfCorners from './RoundingOfCorners'
+import defaultLocation from './defaultLocation'
+import fixedPosition from './FixedPosition'
 
 storiesOf('Componenti/Notification', module)
   .addDecorator(withA11y)
@@ -40,4 +42,16 @@ storiesOf('Componenti/Notification', module)
     withInfo({
       text: Esempi
     })(RoundingOfCorners)
+  )
+  .add(
+    'Default Location',
+    withInfo({
+      text: Esempi
+    })(defaultLocation)
+  )
+  .add(
+    'Fixed Positions',
+    withInfo({
+      text: Esempi
+    })(fixedPosition)
   )

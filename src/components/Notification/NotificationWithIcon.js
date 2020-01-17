@@ -17,7 +17,7 @@ const NotificationStyle = {
   right: 'auto',
   bottom: 'auto',
   top: 'auto',
-  left: 'auto',
+  left: 'auto'
 }
 
 const NotificationWithIcon = props => {

@@ -19,13 +19,13 @@ const Example = () => {
         </div>
       </div>
       <div className="row mb-5">
-        <div className="col-12 col-md-6 mb-4 mb-md-0" style={{top: 45}}>
+        <div className="col-12 col-md-6 mb-4 mb-md-0" style={{ top: 45 }}>
           <p>
             <strong>Info</strong>
           </p>
           <NotificationWithIcon state="info" header="Notification Title" />
         </div>
-        <div className="col-12 col-md-6" style={{top: 45}}>
+        <div className="col-12 col-md-6" style={{ top: 45 }}>
           <p>
             <strong>Warning</strong>
           </p>
