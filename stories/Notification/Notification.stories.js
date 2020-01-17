@@ -18,7 +18,6 @@ import RoundingText from './docs/Rounding.md'
 import defaultLocationText from './docs/DefaultLocation.md'
 import fixedPositionText from './docs/FixedPosition.md'
 
-
 storiesOf('Componenti/Notification', module)
   .addDecorator(withA11y)
   .add(
