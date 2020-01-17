@@ -7,6 +7,7 @@ import Examples from './Example'
 import NotificationWithMessage from './NotificationWithMessage'
 import dismissable from './dismissable'
 import states from './States'
+import RoundingOfCorners from './RoundingOfCorners'
 
 storiesOf('Componenti/Notification', module)
   .addDecorator(withA11y)
@@ -33,4 +34,10 @@ storiesOf('Componenti/Notification', module)
     withInfo({
       text: Esempi
     })(states)
+  )
+  .add(
+    'Rounding of Corners',
+    withInfo({
+      text: Esempi
+    })(RoundingOfCorners)
   )

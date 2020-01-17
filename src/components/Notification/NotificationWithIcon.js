@@ -8,35 +8,44 @@ const propTypes = {
   header: PropTypes.string,
   content: PropTypes.string,
   state: PropTypes.string,
-  dismissable: PropTypes.bool
+  dismissable: PropTypes.bool,
+  fix: PropTypes.string
 }
 
 // custom style
 const NotificationStyle = {
   right: 'auto',
-  bottom: 'auto'
+  bottom: 'auto',
+  top: 'auto',
+  left: 'auto',
 }
 
 const NotificationWithIcon = props => {
-  const { header, content, state, dismissable } = props
+  const { header, content, state, dismissable, fix } = props
   const isDismissable = dismissable ? 'dismissable' : null
   const wrapperClass = classNames(
     'notification',
+    fix,
     'with-icon',
     state,
     isDismissable
   )
   const btnClass = classNames('btn', 'notification-close')
   var iconClass = 'it-check-circle'
-  switch(state){
-    case 'success' : iconClass = 'it-check-circle'
-    break;
-    case 'error' : iconClass = 'it-close-circle'
-    break;
-    case 'info' : iconClass = 'it-info-circle'
-    break;
-    case 'warning' : iconClass = 'it-error'
+  switch (state) {
+    case 'success':
+      iconClass = 'it-check-circle'
+      break
+    case 'error':
+      iconClass = 'it-close-circle'
+      break
+    case 'info':
+      iconClass = 'it-info-circle'
+      break
+    case 'warning':
+      iconClass = 'it-error'
   }
+  console.log(wrapperClass)
   return (
     <Toast className={wrapperClass} style={NotificationStyle}>
       <ToastHeader>
