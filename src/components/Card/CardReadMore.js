@@ -10,16 +10,12 @@ const propTypes = {
   iconName: PropTypes.string,
   href: PropTypes.string,
   text: PropTypes.string,
-  tag: tagPropType,
-  to: PropTypes.string
-}
-
-const defaultTypes = {
-  iconName: 'it-arrow-right'
+  tag: tagPropType
 }
 
 const defaultProps = {
-  tag: 'a'
+  tag: 'a',
+  iconName: 'it-arrow-right'
 }
 
 const CardReadMore = props => {
@@ -34,7 +30,6 @@ const CardReadMore = props => {
 }
 
 CardReadMore.propTypes = propTypes
-CardReadMore.defaultTypes = defaultTypes
 CardReadMore.defaultProps = defaultProps
 
 export default CardReadMore
