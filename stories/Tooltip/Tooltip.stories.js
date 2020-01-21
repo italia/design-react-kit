@@ -12,6 +12,12 @@ import EsempiInterattivi from './docs/EsempiInterattivi.md'
 const EsempiComponent = () => {
   const ids = ['Example1', 'Example2', 'Example3']
 
+  ids.map((id, i) => {
+    const div = document.createElement('div')
+    div.setAttribute('id', id)
+    document.body.appendChild(div)
+  })
+
   return (
     <div className="bd-example tooltip-demo">
       <p className="muted">
@@ -68,6 +74,12 @@ const EsempiComponent = () => {
 const PosizioniComponent = () => {
   const ids = ['example1', 'example2', 'example3', 'example4', 'example5']
 
+  ids.map((id, i) => {
+    const div = document.createElement('div')
+    div.setAttribute('id', id)
+    document.body.appendChild(div)
+  })
+
   return (
     <div style={{ padding: 100 }}>
       <Button id={ids[0]} className="m-3">
@@ -107,7 +119,9 @@ const PosizioniComponent = () => {
 
 const EsempiInterattiviComponent = () => {
   const id = 'example'
-  const target = () => document.getElementById(id)
+  const div = document.createElement('div')
+  div.setAttribute('id', id)
+  document.body.appendChild(div)
 
   const placements = ['top', 'bottom', 'left', 'right']
   const placement = select('Posizione', placements, placements[0])
@@ -119,7 +133,7 @@ const EsempiInterattiviComponent = () => {
         Tooltip
       </Button>
 
-      <UncontrolledTooltip placement={placement} target={target}>
+      <UncontrolledTooltip placement={placement} target={id}>
         {body}
       </UncontrolledTooltip>
     </div>
@@ -128,6 +142,7 @@ const EsempiInterattiviComponent = () => {
 
 storiesOf('Componenti/Tooltip', module)
   .addDecorator(withA11y)
+  .addDecorator(withKnobs)
   .add(
     'Esempi',
     withInfo({
@@ -140,7 +155,6 @@ storiesOf('Componenti/Tooltip', module)
       text: Posizioni
     })(PosizioniComponent)
   )
-  .addDecorator(withKnobs)
   .add(
     'Esempi interattivi',
     withInfo({

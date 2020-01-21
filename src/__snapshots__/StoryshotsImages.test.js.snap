@@ -26160,6 +26160,114 @@ exports[`Image Storyshots Componenti/Tab Tab a bottoni 1`] = `
 </div>
 `;
 
+exports[`Image Storyshots Componenti/Tooltip Esempi interattivi 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "padding": 200,
+        }
+      }
+    />
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Image Storyshots Componenti/Tooltip Posizioni 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "padding": 100,
+        }
+      }
+    />
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
 exports[`Image Storyshots Introduzione/Introduzione Benvenuto 1`] = `
 <div
   style={
