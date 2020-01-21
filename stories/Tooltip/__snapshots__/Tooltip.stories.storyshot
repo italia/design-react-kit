@@ -26,7 +26,16 @@ exports[`Storyshots Componenti/Tooltip Esempi interattivi 1`] = `
           "padding": 200,
         }
       }
-    />
+    >
+      <button
+        aria-label={null}
+        className="m-3 btn btn-secondary"
+        id="example"
+        onClick={[Function]}
+      >
+        Tooltip
+      </button>
+    </div>
   </div>
   <button
     className="info__show-button"
@@ -80,7 +89,48 @@ exports[`Storyshots Componenti/Tooltip Posizioni 1`] = `
           "padding": 100,
         }
       }
-    />
+    >
+      <button
+        aria-label={null}
+        className="m-3 btn btn-secondary"
+        id="example1"
+        onClick={[Function]}
+      >
+        Tooltip in alto
+      </button>
+      <button
+        aria-label={null}
+        className="m-3 btn btn-secondary"
+        id="example2"
+        onClick={[Function]}
+      >
+        Tooltip a destra
+      </button>
+      <button
+        aria-label={null}
+        className="m-3 btn btn-secondary"
+        id="example3"
+        onClick={[Function]}
+      >
+        Tooltip in basso
+      </button>
+      <button
+        aria-label={null}
+        className="m-3 btn btn-secondary"
+        id="example4"
+        onClick={[Function]}
+      >
+        Tooltip a sinistra
+      </button>
+      <button
+        aria-label={null}
+        className="m-3 btn btn-secondary"
+        id="example5"
+        onClick={[Function]}
+      >
+        Tooltip con HTML
+      </button>
+    </div>
   </div>
   <button
     className="info__show-button"
