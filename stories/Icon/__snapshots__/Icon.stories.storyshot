@@ -1,0 +1,1430 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Icon Allineamenti 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "lineHeight": "4em",
+        }
+      }
+    >
+      <svg
+        className="icon bg-light align-bottom"
+      >
+        <use
+          xlinkHref="sprite.svg#it-check-circle"
+        />
+      </svg>
+      <svg
+        className="icon bg-light align-middle"
+      >
+        <use
+          xlinkHref="sprite.svg#it-check-circle"
+        />
+      </svg>
+      <svg
+        className="icon bg-light align-top"
+      >
+        <use
+          xlinkHref="sprite.svg#it-check-circle"
+        />
+      </svg>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Icon Esempio interattivo 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <svg
+      className="icon"
+    >
+      <use
+        xlinkHref="sprite.svg#it-tool"
+      />
+    </svg>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Icon Lista icone 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-arrow-down"
+          />
+        </svg>
+         
+        it-arrow-down
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-arrow-down-circle"
+          />
+        </svg>
+         
+        it-arrow-down-circle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-arrow-down-triangle"
+          />
+        </svg>
+         
+        it-arrow-down-triangle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-arrow-left"
+          />
+        </svg>
+         
+        it-arrow-left
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-arrow-left-circle"
+          />
+        </svg>
+         
+        it-arrow-left-circle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-arrow-left-triangle"
+          />
+        </svg>
+         
+        it-arrow-left-triangle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-arrow-right"
+          />
+        </svg>
+         
+        it-arrow-right
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-arrow-right-circle"
+          />
+        </svg>
+         
+        it-arrow-right-circle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-arrow-right-triangle"
+          />
+        </svg>
+         
+        it-arrow-right-triangle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-arrow-up"
+          />
+        </svg>
+         
+        it-arrow-up
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-arrow-up-circle"
+          />
+        </svg>
+         
+        it-arrow-up-circle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-arrow-up-triangle"
+          />
+        </svg>
+         
+        it-arrow-up-triangle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-behance"
+          />
+        </svg>
+         
+        it-behance
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-burger"
+          />
+        </svg>
+         
+        it-burger
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-calendar"
+          />
+        </svg>
+         
+        it-calendar
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-camera"
+          />
+        </svg>
+         
+        it-camera
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-card"
+          />
+        </svg>
+         
+        it-card
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-check"
+          />
+        </svg>
+         
+        it-check
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-check-circle"
+          />
+        </svg>
+         
+        it-check-circle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-chevron-left"
+          />
+        </svg>
+         
+        it-chevron-left
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-chevron-right"
+          />
+        </svg>
+         
+        it-chevron-right
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-clip"
+          />
+        </svg>
+         
+        it-clip
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-clock"
+          />
+        </svg>
+         
+        it-clock
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-close"
+          />
+        </svg>
+         
+        it-close
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-close-big"
+          />
+        </svg>
+         
+        it-close-big
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-close-circle"
+          />
+        </svg>
+         
+        it-close-circle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-code-circle"
+          />
+        </svg>
+         
+        it-code-circle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-collapse"
+          />
+        </svg>
+         
+        it-collapse
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-comment"
+          />
+        </svg>
+         
+        it-comment
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-copy"
+          />
+        </svg>
+         
+        it-copy
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-designers-italia"
+          />
+        </svg>
+         
+        it-designers-italia
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-download"
+          />
+        </svg>
+         
+        it-download
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-error"
+          />
+        </svg>
+         
+        it-error
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-exchange-circle"
+          />
+        </svg>
+         
+        it-exchange-circle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-expand"
+          />
+        </svg>
+         
+        it-expand
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-external-link"
+          />
+        </svg>
+         
+        it-external-link
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-facebook"
+          />
+        </svg>
+         
+        it-facebook
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-facebook-square"
+          />
+        </svg>
+         
+        it-facebook-square
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-file"
+          />
+        </svg>
+         
+        it-file
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-files"
+          />
+        </svg>
+         
+        it-files
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-flickr"
+          />
+        </svg>
+         
+        it-flickr
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-flickr-square"
+          />
+        </svg>
+         
+        it-flickr-square
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-folder"
+          />
+        </svg>
+         
+        it-folder
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-github"
+          />
+        </svg>
+         
+        it-github
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-hearing"
+          />
+        </svg>
+         
+        it-hearing
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-help"
+          />
+        </svg>
+         
+        it-help
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-help-circle"
+          />
+        </svg>
+         
+        it-help-circle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-horn"
+          />
+        </svg>
+         
+        it-horn
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-info-circle"
+          />
+        </svg>
+         
+        it-info-circle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-instagram"
+          />
+        </svg>
+         
+        it-instagram
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-key"
+          />
+        </svg>
+         
+        it-key
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-less-circle"
+          />
+        </svg>
+         
+        it-less-circle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-link"
+          />
+        </svg>
+         
+        it-link
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-linkedin"
+          />
+        </svg>
+         
+        it-linkedin
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-linkedin-square"
+          />
+        </svg>
+         
+        it-linkedin-square
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-list"
+          />
+        </svg>
+         
+        it-list
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-lock"
+          />
+        </svg>
+         
+        it-lock
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-locked"
+          />
+        </svg>
+         
+        it-locked
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-mail"
+          />
+        </svg>
+         
+        it-mail
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-medium"
+          />
+        </svg>
+         
+        it-medium
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-medium-square"
+          />
+        </svg>
+         
+        it-medium-square
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-minus"
+          />
+        </svg>
+         
+        it-minus
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-minus-circle"
+          />
+        </svg>
+         
+        it-minus-circle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-more-actions"
+          />
+        </svg>
+         
+        it-more-actions
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-more-items"
+          />
+        </svg>
+         
+        it-more-items
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-note"
+          />
+        </svg>
+         
+        it-note
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-pa"
+          />
+        </svg>
+         
+        it-pa
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-password-invisible"
+          />
+        </svg>
+         
+        it-password-invisible
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-password-visible"
+          />
+        </svg>
+         
+        it-password-visible
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-pencil"
+          />
+        </svg>
+         
+        it-pencil
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-pin"
+          />
+        </svg>
+         
+        it-pin
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-plus"
+          />
+        </svg>
+         
+        it-plus
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-plus-circle"
+          />
+        </svg>
+         
+        it-plus-circle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-presentation"
+          />
+        </svg>
+         
+        it-presentation
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-print"
+          />
+        </svg>
+         
+        it-print
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-search"
+          />
+        </svg>
+         
+        it-search
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-settings"
+          />
+        </svg>
+         
+        it-settings
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-share"
+          />
+        </svg>
+         
+        it-share
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-star-full"
+          />
+        </svg>
+         
+        it-star-full
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-star-outline"
+          />
+        </svg>
+         
+        it-star-outline
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-team-digitale"
+          />
+        </svg>
+         
+        it-team-digitale
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-telephone"
+          />
+        </svg>
+         
+        it-telephone
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-tool"
+          />
+        </svg>
+         
+        it-tool
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-twitter"
+          />
+        </svg>
+         
+        it-twitter
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-twitter-square"
+          />
+        </svg>
+         
+        it-twitter-square
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-unlocked"
+          />
+        </svg>
+         
+        it-unlocked
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-upload"
+          />
+        </svg>
+         
+        it-upload
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-user"
+          />
+        </svg>
+         
+        it-user
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-video"
+          />
+        </svg>
+         
+        it-video
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-warning"
+          />
+        </svg>
+         
+        it-warning
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-warning-circle"
+          />
+        </svg>
+         
+        it-warning-circle
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-whatsapp"
+          />
+        </svg>
+         
+        it-whatsapp
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-whatsapp-square"
+          />
+        </svg>
+         
+        it-whatsapp-square
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-youtube"
+          />
+        </svg>
+         
+        it-youtube
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-zoom-in"
+          />
+        </svg>
+         
+        it-zoom-in
+      </div>
+      <div
+        className="col-md-6 col-lg-4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-zoom-out"
+          />
+        </svg>
+         
+        it-zoom-out
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;

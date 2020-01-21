@@ -1,90 +1,110 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Componenti/Button Dimensioni 1`] = `
+exports[`Storyshots Componenti/Button Bottoni con icona 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
-    <section>
-      <div>
-        <button
-          className="btn btn-primary btn-lg"
-          onClick={[Function]}
-          type={undefined}
+    <div>
+      <button
+        aria-label={null}
+        className="btn-icon btn btn-primary btn-lg"
+        onClick={[Function]}
+      >
+        <svg
+          className="icon icon-white"
         >
-          Large Button
-        </button>
-         
-        <button
-          className="btn btn-secondary btn-lg"
-          onClick={[Function]}
-          type={undefined}
+          <use
+            xlinkHref="sprite.svg#it-star-full"
+          />
+        </svg>
+         Icon Button Large
+      </button>
+       
+      <button
+        aria-label={null}
+        className="btn-icon btn btn-success"
+        onClick={[Function]}
+      >
+        <svg
+          className="icon icon-white"
         >
-          Large Button
-        </button>
-        <div
-          className="mt-3"
-        />
-        <button
-          className="btn btn-primary btn-sm"
-          onClick={[Function]}
-          type={undefined}
+          <use
+            xlinkHref="sprite.svg#it-star-full"
+          />
+        </svg>
+         Icon Button
+      </button>
+       
+      <button
+        aria-label={null}
+        className="btn-icon btn btn-danger btn-sm"
+        onClick={[Function]}
+      >
+        <svg
+          className="icon icon-secondary"
         >
-          Small Button
-        </button>
-         
-        <button
-          className="btn btn-secondary btn-sm"
-          onClick={[Function]}
-          type={undefined}
+          <use
+            xlinkHref="sprite.svg#it-star-full"
+          />
+        </svg>
+         Icon Button Small
+      </button>
+       
+      <button
+        aria-label={null}
+        className="btn-icon btn btn-info btn-xs"
+        onClick={[Function]}
+      >
+        <svg
+          className="icon icon-danger"
         >
-          Small Button
-        </button>
-        <div
-          className="mt-3"
-        />
-        <button
-          className="btn btn-primary btn-block"
-          onClick={[Function]}
-          type={undefined}
-        >
-          Block level button
-        </button>
-        <button
-          className="btn btn-secondary btn-block"
-          onClick={[Function]}
-          type={undefined}
-        >
-          Block level button
-        </button>
-      </div>
-    </section>
+          <use
+            xlinkHref="sprite.svg#it-star-full"
+          />
+        </svg>
+         Icon Button Extra Small
+      </button>
+    </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Dimensioni.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -92,105 +112,188 @@ exports[`Storyshots Componenti/Button Esempi 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div>
-      <button
-        className="mr-1 btn btn-italia"
-        onClick={[Function]}
-        type={undefined}
+      <div
+        className="mb-2"
       >
-        Italia
-      </button>
-      <button
-        className="mr-1 btn btn-primary"
-        onClick={[Function]}
-        type={undefined}
+        <button
+          aria-label={null}
+          className="btn btn-primary"
+          onClick={[Function]}
+        >
+          Primary
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-outline-primary"
+          onClick={[Function]}
+        >
+          Primary
+           Outline
+        </button>
+      </div>
+      <div
+        className="mb-2"
       >
-        Primary
-      </button>
-      <button
-        className="mr-1 btn btn-secondary"
-        onClick={[Function]}
-        type={undefined}
+        <button
+          aria-label={null}
+          className="btn btn-secondary"
+          onClick={[Function]}
+        >
+          Secondary
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-outline-secondary"
+          onClick={[Function]}
+        >
+          Secondary
+           Outline
+        </button>
+      </div>
+      <div
+        className="mb-2"
       >
-        Secondary
-      </button>
-      <button
-        className="mr-1 btn btn-tertiary"
-        onClick={[Function]}
-        type={undefined}
+        <button
+          aria-label={null}
+          className="btn btn-success"
+          onClick={[Function]}
+        >
+          Success
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-outline-success"
+          onClick={[Function]}
+        >
+          Success
+           Outline
+        </button>
+      </div>
+      <div
+        className="mb-2"
       >
-        Tertiary
-      </button>
-      <button
-        className="mr-1 btn btn-quaternary"
-        onClick={[Function]}
-        type={undefined}
+        <button
+          aria-label={null}
+          className="btn btn-info"
+          onClick={[Function]}
+        >
+          Info
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-outline-info"
+          onClick={[Function]}
+        >
+          Info
+           Outline
+        </button>
+      </div>
+      <div
+        className="mb-2"
       >
-        Quaternary
-      </button>
-      <button
-        className="mr-1 btn btn-success"
-        onClick={[Function]}
-        type={undefined}
+        <button
+          aria-label={null}
+          className="btn btn-danger"
+          onClick={[Function]}
+        >
+          Danger
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-outline-danger"
+          onClick={[Function]}
+        >
+          Danger
+           Outline
+        </button>
+      </div>
+      <div
+        className="mb-2"
       >
-        Success
-      </button>
-      <button
-        className="mr-1 btn btn-info"
-        onClick={[Function]}
-        type={undefined}
+        <button
+          aria-label={null}
+          className="btn btn-warning"
+          onClick={[Function]}
+        >
+          Warning
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-outline-warning"
+          onClick={[Function]}
+        >
+          Warning
+           Outline
+        </button>
+      </div>
+      <div
+        className="mb-2"
       >
-        Info
-      </button>
-      <button
-        className="mr-1 btn btn-danger"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Danger
-      </button>
-      <button
-        className="mr-1 btn btn-warning"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Warning
-      </button>
-      <button
-        className="mr-1 btn btn-link"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Link
-      </button>
+        <button
+          aria-label={null}
+          className="btn btn-link"
+          onClick={[Function]}
+        >
+          Link
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-outline-link"
+          onClick={[Function]}
+        >
+          Link
+           Outline
+        </button>
+      </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Esempi.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -198,51 +301,253 @@ exports[`Storyshots Componenti/Button Esempi interattivi 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <button
-      className="btn btn-italia active"
+      aria-label={null}
+      className="btn btn-primary btn- "
       disabled={false}
       onClick={[Function]}
-      type={undefined}
     >
       
        
-      italia
+      Primary
        
-      sm
        
-      
-       
-      attivo
        
       
+       
+       
     </button>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "EsempiInterattivi.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Button Sfondo scuro 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="bg-dark py-1"
+    >
+      <div
+        className="mb-2"
+      >
+        <button
+          aria-label={null}
+          className="btn btn-primary"
+          onClick={[Function]}
+        >
+          Primary
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-outline-primary"
+          onClick={[Function]}
+        >
+          Primary
+           Outline
+        </button>
+      </div>
+      <div
+        className="mb-2"
+      >
+        <button
+          aria-label={null}
+          className="btn btn-secondary"
+          onClick={[Function]}
+        >
+          Secondary
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-outline-secondary"
+          onClick={[Function]}
+        >
+          Secondary
+           Outline
+        </button>
+      </div>
+      <div
+        className="mb-2"
+      >
+        <button
+          aria-label={null}
+          className="btn btn-success"
+          onClick={[Function]}
+        >
+          Success
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-outline-success"
+          onClick={[Function]}
+        >
+          Success
+           Outline
+        </button>
+      </div>
+      <div
+        className="mb-2"
+      >
+        <button
+          aria-label={null}
+          className="btn btn-info"
+          onClick={[Function]}
+        >
+          Info
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-outline-info"
+          onClick={[Function]}
+        >
+          Info
+           Outline
+        </button>
+      </div>
+      <div
+        className="mb-2"
+      >
+        <button
+          aria-label={null}
+          className="btn btn-danger"
+          onClick={[Function]}
+        >
+          Danger
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-outline-danger"
+          onClick={[Function]}
+        >
+          Danger
+           Outline
+        </button>
+      </div>
+      <div
+        className="mb-2"
+      >
+        <button
+          aria-label={null}
+          className="btn btn-warning"
+          onClick={[Function]}
+        >
+          Warning
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-outline-warning"
+          onClick={[Function]}
+        >
+          Warning
+           Outline
+        </button>
+      </div>
+      <div
+        className="mb-2"
+      >
+        <button
+          aria-label={null}
+          className="btn btn-link"
+          onClick={[Function]}
+        >
+          Link
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-outline-link"
+          onClick={[Function]}
+        >
+          Link
+           Outline
+        </button>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -250,105 +555,118 @@ exports[`Storyshots Componenti/Button Stato Attivo 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div>
-      <button
-        className="mr-1 btn btn-italia active"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Italia
-      </button>
-      <button
-        className="mr-1 btn btn-primary active"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Primary
-      </button>
-      <button
-        className="mr-1 btn btn-secondary active"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Secondary
-      </button>
-      <button
-        className="mr-1 btn btn-tertiary active"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Tertiary
-      </button>
-      <button
-        className="mr-1 btn btn-quaternary active"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Quaternary
-      </button>
-      <button
-        className="mr-1 btn btn-success active"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Success
-      </button>
-      <button
-        className="mr-1 btn btn-info active"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Info
-      </button>
-      <button
-        className="mr-1 btn btn-danger active"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Danger
-      </button>
-      <button
-        className="mr-1 btn btn-warning active"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Warning
-      </button>
-      <button
-        className="mr-1 btn btn-link active"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Link
-      </button>
+      <span>
+        <button
+          aria-label={null}
+          className="btn btn-primary"
+          onClick={[Function]}
+        >
+          Primary
+        </button>
+         
+      </span>
+      <span>
+        <button
+          aria-label={null}
+          className="btn btn-secondary"
+          onClick={[Function]}
+        >
+          Secondary
+        </button>
+         
+      </span>
+      <span>
+        <button
+          aria-label={null}
+          className="btn btn-success"
+          onClick={[Function]}
+        >
+          Success
+        </button>
+         
+      </span>
+      <span>
+        <button
+          aria-label={null}
+          className="btn btn-info"
+          onClick={[Function]}
+        >
+          Info
+        </button>
+         
+      </span>
+      <span>
+        <button
+          aria-label={null}
+          className="btn btn-danger"
+          onClick={[Function]}
+        >
+          Danger
+        </button>
+         
+      </span>
+      <span>
+        <button
+          aria-label={null}
+          className="btn btn-warning"
+          onClick={[Function]}
+        >
+          Warning
+        </button>
+         
+      </span>
+      <span>
+        <button
+          aria-label={null}
+          className="btn btn-link"
+          onClick={[Function]}
+        >
+          Link
+        </button>
+         
+      </span>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "StatoAttivo.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -356,114 +674,248 @@ exports[`Storyshots Componenti/Button Stato Disabilitato 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div>
-      <button
-        className="mr-1 btn btn-italia disabled"
-        disabled={true}
-        onClick={[Function]}
-        type={undefined}
-      >
-        Italia
-      </button>
-      <button
-        className="mr-1 btn btn-primary disabled"
-        disabled={true}
-        onClick={[Function]}
-        type={undefined}
-      >
-        Primary
-      </button>
-      <button
-        className="mr-1 btn btn-secondary disabled"
-        disabled={true}
-        onClick={[Function]}
-        type={undefined}
-      >
-        Secondary
-      </button>
-      <button
-        className="mr-1 btn btn-tertiary disabled"
-        disabled={true}
-        onClick={[Function]}
-        type={undefined}
-      >
-        Tertiary
-      </button>
-      <button
-        className="mr-1 btn btn-quaternary disabled"
-        disabled={true}
-        onClick={[Function]}
-        type={undefined}
-      >
-        Quaternary
-      </button>
-      <button
-        className="mr-1 btn btn-success disabled"
-        disabled={true}
-        onClick={[Function]}
-        type={undefined}
-      >
-        Success
-      </button>
-      <button
-        className="mr-1 btn btn-info disabled"
-        disabled={true}
-        onClick={[Function]}
-        type={undefined}
-      >
-        Info
-      </button>
-      <button
-        className="mr-1 btn btn-danger disabled"
-        disabled={true}
-        onClick={[Function]}
-        type={undefined}
-      >
-        Danger
-      </button>
-      <button
-        className="mr-1 btn btn-warning disabled"
-        disabled={true}
-        onClick={[Function]}
-        type={undefined}
-      >
-        Warning
-      </button>
-      <button
-        className="mr-1 btn btn-link disabled"
-        disabled={true}
-        onClick={[Function]}
-        type={undefined}
-      >
-        Link
-      </button>
+      <span>
+        <button
+          aria-label={null}
+          className="btn btn-primary disabled"
+          disabled={true}
+          onClick={[Function]}
+        >
+          Primary
+        </button>
+         
+      </span>
+      <span>
+        <button
+          aria-label={null}
+          className="btn btn-secondary disabled"
+          disabled={true}
+          onClick={[Function]}
+        >
+          Secondary
+        </button>
+         
+      </span>
+      <span>
+        <button
+          aria-label={null}
+          className="btn btn-success disabled"
+          disabled={true}
+          onClick={[Function]}
+        >
+          Success
+        </button>
+         
+      </span>
+      <span>
+        <button
+          aria-label={null}
+          className="btn btn-info disabled"
+          disabled={true}
+          onClick={[Function]}
+        >
+          Info
+        </button>
+         
+      </span>
+      <span>
+        <button
+          aria-label={null}
+          className="btn btn-danger disabled"
+          disabled={true}
+          onClick={[Function]}
+        >
+          Danger
+        </button>
+         
+      </span>
+      <span>
+        <button
+          aria-label={null}
+          className="btn btn-warning disabled"
+          disabled={true}
+          onClick={[Function]}
+        >
+          Warning
+        </button>
+         
+      </span>
+      <span>
+        <button
+          aria-label={null}
+          className="btn btn-link disabled"
+          disabled={true}
+          onClick={[Function]}
+        >
+          Link
+        </button>
+         
+      </span>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "StatoDisabilitato.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Button Varianti di dimensione 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <section>
+      <div>
+        <button
+          aria-label={null}
+          className="btn btn-primary btn-lg"
+          onClick={[Function]}
+        >
+          Primary Large
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-secondary btn-lg"
+          onClick={[Function]}
+        >
+          Secondary Large
+        </button>
+         
+        <div
+          className="mt-3"
+        />
+        <button
+          aria-label={null}
+          className="btn btn-primary btn-sm"
+          onClick={[Function]}
+        >
+          Primary Small
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-secondary btn-sm"
+          onClick={[Function]}
+        >
+          Secondary Small
+        </button>
+         
+        <div
+          className="mt-3"
+        />
+        <button
+          aria-label={null}
+          className="btn btn-primary btn-xs"
+          onClick={[Function]}
+        >
+          Primary Mini
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-secondary btn-xs"
+          onClick={[Function]}
+        >
+          Secondary Mini
+        </button>
+         
+        <div
+          className="mt-3"
+        />
+        <button
+          aria-label={null}
+          className="btn btn-primary btn-block"
+          onClick={[Function]}
+        >
+          Primary Block
+        </button>
+         
+        <button
+          aria-label={null}
+          className="btn btn-secondary btn-block"
+          onClick={[Function]}
+        >
+          Secondary Block
+        </button>
+         
+      </div>
+    </section>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;

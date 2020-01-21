@@ -4,21 +4,19 @@ exports[`Storyshots Componenti/LinkList Esempi 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -31,7 +29,6 @@ exports[`Storyshots Componenti/LinkList Esempi 1`] = `
         <li>
           <a
             className="list-item"
-            href="#"
           >
             <span>
               Link list 1
@@ -41,7 +38,6 @@ exports[`Storyshots Componenti/LinkList Esempi 1`] = `
         <li>
           <a
             className="list-item"
-            href="#"
           >
             <span>
               Link list 2
@@ -51,7 +47,6 @@ exports[`Storyshots Componenti/LinkList Esempi 1`] = `
         <li>
           <a
             className="list-item"
-            href="#"
           >
             <span>
               Link list 3
@@ -61,14 +56,29 @@ exports[`Storyshots Componenti/LinkList Esempi 1`] = `
       </ul>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Esempi.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -76,21 +86,19 @@ exports[`Storyshots Componenti/LinkList Header e Divider 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -104,7 +112,6 @@ exports[`Storyshots Componenti/LinkList Header e Divider 1`] = `
           <li>
             <h3
               className="header list-item"
-              href="#"
             >
               Heading senza link
             </h3>
@@ -112,7 +119,6 @@ exports[`Storyshots Componenti/LinkList Header e Divider 1`] = `
           <li>
             <a
               className="list-item"
-              href="#"
             >
               <span>
                 Link list 1
@@ -122,7 +128,6 @@ exports[`Storyshots Componenti/LinkList Header e Divider 1`] = `
           <li>
             <a
               className="list-item"
-              href="#"
             >
               <span>
                 Link list 2
@@ -132,7 +137,6 @@ exports[`Storyshots Componenti/LinkList Header e Divider 1`] = `
           <li>
             <a
               className="list-item"
-              href="#"
             >
               <span>
                 Link list 3
@@ -142,13 +146,11 @@ exports[`Storyshots Componenti/LinkList Header e Divider 1`] = `
           <li>
             <span
               className="divider list-item"
-              href="#"
             />
           </li>
           <li>
             <a
               className="list-item"
-              href="#"
             >
               <span>
                 Link list 4
@@ -176,7 +178,6 @@ exports[`Storyshots Componenti/LinkList Header e Divider 1`] = `
           <li>
             <a
               className="list-item"
-              href="#"
             >
               <span>
                 Link list 1
@@ -186,7 +187,6 @@ exports[`Storyshots Componenti/LinkList Header e Divider 1`] = `
           <li>
             <a
               className="list-item"
-              href="#"
             >
               <span>
                 Link list 2
@@ -196,7 +196,6 @@ exports[`Storyshots Componenti/LinkList Header e Divider 1`] = `
           <li>
             <a
               className="list-item"
-              href="#"
             >
               <span>
                 Link list 3
@@ -206,13 +205,11 @@ exports[`Storyshots Componenti/LinkList Header e Divider 1`] = `
           <li>
             <span
               className="divider list-item"
-              href="#"
             />
           </li>
           <li>
             <a
               className="list-item"
-              href="#"
             >
               <span>
                 Link list 4
@@ -223,14 +220,29 @@ exports[`Storyshots Componenti/LinkList Header e Divider 1`] = `
       </div>
     </section>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "HeaderDivider.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -238,21 +250,19 @@ exports[`Storyshots Componenti/LinkList Sizing 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -274,8 +284,7 @@ exports[`Storyshots Componenti/LinkList Sizing 1`] = `
         </li>
         <li>
           <a
-            className="large list-item"
-            href="#"
+            className="size list-item"
           >
             <span>
               Link list 1
@@ -284,8 +293,7 @@ exports[`Storyshots Componenti/LinkList Sizing 1`] = `
         </li>
         <li>
           <a
-            className="large list-item"
-            href="#"
+            className="size list-item"
           >
             <span>
               Link list 2
@@ -294,8 +302,7 @@ exports[`Storyshots Componenti/LinkList Sizing 1`] = `
         </li>
         <li>
           <a
-            className="large list-item"
-            href="#"
+            className="size list-item"
           >
             <span>
               Link list 3
@@ -305,13 +312,11 @@ exports[`Storyshots Componenti/LinkList Sizing 1`] = `
         <li>
           <span
             className="divider list-item"
-            href="#"
           />
         </li>
         <li>
           <a
-            className="large list-item"
-            href="#"
+            className="size list-item"
           >
             <span>
               Link list 4
@@ -321,14 +326,29 @@ exports[`Storyshots Componenti/LinkList Sizing 1`] = `
       </ul>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Large.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -336,21 +356,19 @@ exports[`Storyshots Componenti/LinkList Stato Attivo 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -363,7 +381,6 @@ exports[`Storyshots Componenti/LinkList Stato Attivo 1`] = `
         <li>
           <a
             className="list-item"
-            href="#"
           >
             <span>
               Link list 1
@@ -373,7 +390,6 @@ exports[`Storyshots Componenti/LinkList Stato Attivo 1`] = `
         <li>
           <a
             className="active list-item"
-            href="#"
           >
             <span>
               Link list 2 active
@@ -383,7 +399,6 @@ exports[`Storyshots Componenti/LinkList Stato Attivo 1`] = `
         <li>
           <a
             className="list-item"
-            href="#"
           >
             <span>
               Link list 3
@@ -393,14 +408,29 @@ exports[`Storyshots Componenti/LinkList Stato Attivo 1`] = `
       </ul>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "StatoAttivo.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -408,21 +438,19 @@ exports[`Storyshots Componenti/LinkList Stato Disabilitato 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -435,7 +463,6 @@ exports[`Storyshots Componenti/LinkList Stato Disabilitato 1`] = `
         <li>
           <a
             className="list-item"
-            href="#"
           >
             <span>
               Link list 1
@@ -445,7 +472,6 @@ exports[`Storyshots Componenti/LinkList Stato Disabilitato 1`] = `
         <li>
           <a
             className="disabled list-item"
-            href="#"
             onClick={[Function]}
           >
             <span>
@@ -456,7 +482,6 @@ exports[`Storyshots Componenti/LinkList Stato Disabilitato 1`] = `
         <li>
           <a
             className="list-item"
-            href="#"
           >
             <span>
               Link list 3
@@ -466,36 +491,225 @@ exports[`Storyshots Componenti/LinkList Stato Disabilitato 1`] = `
       </ul>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "StatoDisabilitato.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
-exports[`Storyshots Componenti/LinkList/Con controlli Con avatar 1`] = `
+exports[`Storyshots Componenti/LinkList Titolo lista 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="sticky-wrapper navbar-wrapper"
+    >
+      <nav
+        className="it-navscroll-wrapper it-top-navscroll navbar navbar-expand-lg"
+      >
+        <div
+          className="menu-wrapper"
+        >
+          <div
+            className="link-list-wrapper menu-link-list"
+          >
+            <h3
+              className="no_toc"
+            >
+              Indice della pagina
+            </h3>
+            <ul
+              className="link-list"
+            >
+              <li
+                className="nav-item"
+              >
+                <a
+                  className="nav-link"
+                  href="#cos-e"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Cos'è
+                  </span>
+                </a>
+              </li>
+              <li
+                className="nav-item"
+              >
+                <a
+                  className="nav-link"
+                  href="#luogo"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Luogo
+                  </span>
+                </a>
+              </li>
+              <li
+                className="nav-item"
+              >
+                <a
+                  className="nav-link"
+                  href="#date-e-orari"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Date e orari
+                  </span>
+                </a>
+              </li>
+              <li
+                className="nav-item"
+              >
+                <a
+                  className="nav-link"
+                  href="#costi"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Costi
+                  </span>
+                </a>
+              </li>
+              <li
+                className="nav-item"
+              >
+                <a
+                  className="nav-link"
+                  href="#documenti"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Documenti
+                  </span>
+                </a>
+              </li>
+              <li
+                className="nav-item"
+              >
+                <a
+                  className="nav-link"
+                  href="#contatti"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Contatti
+                  </span>
+                </a>
+              </li>
+              <li
+                className="nav-item"
+              >
+                <a
+                  className="nav-link"
+                  href="#appuntamenti"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Appuntamenti
+                  </span>
+                </a>
+              </li>
+              <li
+                className="nav-item"
+              >
+                <a
+                  className="nav-link"
+                  href="#ulteriori-informazioni"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Ulteriori informazioni
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/LinkList.Con controlli Con avatar 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
       }
     }
   >
@@ -507,11 +721,11 @@ exports[`Storyshots Componenti/LinkList/Con controlli Con avatar 1`] = `
       >
         <li>
           <a
-            className="avatar active list-item"
-            href="#"
+            className="active list-item"
           >
             <img
-              className="avatar"
+              alt="avataralt"
+              className="avatar lg-size"
               src="http://via.placeholder.com/40x40"
               title="avatartitle"
             />
@@ -522,11 +736,11 @@ exports[`Storyshots Componenti/LinkList/Con controlli Con avatar 1`] = `
         </li>
         <li>
           <a
-            className="avatar list-item"
-            href="#"
+            className="list-item"
           >
             <img
-              className="avatar"
+              alt="avataralt"
+              className="avatar lg-size"
               src="http://via.placeholder.com/40x40"
               title="avatartitle"
             />
@@ -537,12 +751,12 @@ exports[`Storyshots Componenti/LinkList/Con controlli Con avatar 1`] = `
         </li>
         <li>
           <a
-            className="avatar disabled list-item"
-            href="#"
+            className="disabled list-item"
             onClick={[Function]}
           >
             <img
-              className="avatar"
+              alt="avataralt"
+              className="avatar lg-size"
               src="http://via.placeholder.com/40x40"
               title="avatartitle"
             />
@@ -554,36 +768,49 @@ exports[`Storyshots Componenti/LinkList/Con controlli Con avatar 1`] = `
       </ul>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Avatar.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
-exports[`Storyshots Componenti/LinkList/Con controlli Con checkbox 1`] = `
+exports[`Storyshots Componenti/LinkList.Con controlli Con checkbox 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -596,22 +823,18 @@ exports[`Storyshots Componenti/LinkList/Con controlli Con checkbox 1`] = `
         <li>
           <div
             className="active list-item"
-            href="#"
           >
             <div
               className="form-check-group   form-check"
             >
               <input
-                className="form-check-input"
+                className="form-control"
                 defaultChecked={true}
                 id="checkbox1"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
                 type="checkbox"
               />
               <label
-                className="form-check-label "
+                className="form-check-label"
                 htmlFor="checkbox1"
               >
                 Checkbox selezionato
@@ -622,21 +845,17 @@ exports[`Storyshots Componenti/LinkList/Con controlli Con checkbox 1`] = `
         <li>
           <div
             className="active list-item"
-            href="#"
           >
             <div
               className="form-check-group   form-check"
             >
               <input
-                className="form-check-input"
+                className="form-control"
                 id="checkbox2"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
                 type="checkbox"
               />
               <label
-                className="form-check-label "
+                className="form-check-label"
                 htmlFor="checkbox2"
               >
                 Checkbox non selezionato
@@ -647,23 +866,19 @@ exports[`Storyshots Componenti/LinkList/Con controlli Con checkbox 1`] = `
         <li>
           <div
             className="disabled list-item"
-            href="#"
             onClick={[Function]}
           >
             <div
               className="form-check-group   form-check"
             >
               <input
-                className="form-check-input"
+                className="form-control"
                 disabled={true}
                 id="checkbox3"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
                 type="checkbox"
               />
               <label
-                className="form-check-label "
+                className="form-check-label"
                 htmlFor="checkbox3"
               >
                 Checkbox disabilitato non selezionato
@@ -674,36 +889,49 @@ exports[`Storyshots Componenti/LinkList/Con controlli Con checkbox 1`] = `
       </ul>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Checkbox.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
-exports[`Storyshots Componenti/LinkList/Con controlli Con switch 1`] = `
+exports[`Storyshots Componenti/LinkList.Con controlli Con switch 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -716,14 +944,12 @@ exports[`Storyshots Componenti/LinkList/Con controlli Con switch 1`] = `
         <li>
           <div
             className="active list-item"
-            href="#"
           >
             <div
               className="toggles"
             >
               <label
-                className="form-check-label "
-                htmlFor={undefined}
+                className="form-check-label"
               >
                 Label per toggle
                 <input
@@ -740,15 +966,13 @@ exports[`Storyshots Componenti/LinkList/Con controlli Con switch 1`] = `
         <li>
           <div
             className="disabled list-item"
-            href="#"
             onClick={[Function]}
           >
             <div
               className="toggles"
             >
               <label
-                className="form-check-label "
-                htmlFor={undefined}
+                className="form-check-label"
               >
                 Label per disabled toggle
                 <input
@@ -766,36 +990,49 @@ exports[`Storyshots Componenti/LinkList/Con controlli Con switch 1`] = `
       </ul>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Switch.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
-exports[`Storyshots Componenti/LinkList/Con controlli Primary Action 1`] = `
+exports[`Storyshots Componenti/LinkList.Con controlli Primary Action 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -808,12 +1045,23 @@ exports[`Storyshots Componenti/LinkList/Con controlli Primary Action 1`] = `
         <li>
           <a
             className="left-icon active list-item"
-            href="#"
           >
             <i
               aria-hidden="true"
               className="it-chevron-right left"
             />
+            <svg
+              className="icon left icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-chevron-right"
+              />
+            </svg>
             <span>
               Link list 1 active
             </span>
@@ -822,12 +1070,23 @@ exports[`Storyshots Componenti/LinkList/Con controlli Primary Action 1`] = `
         <li>
           <a
             className="left-icon list-item"
-            href="#"
           >
             <i
               aria-hidden="true"
               className="it-chevron-right left"
             />
+            <svg
+              className="icon left icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-chevron-right"
+              />
+            </svg>
             <span>
               Link list 2
             </span>
@@ -836,13 +1095,24 @@ exports[`Storyshots Componenti/LinkList/Con controlli Primary Action 1`] = `
         <li>
           <a
             className="left-icon disabled list-item"
-            href="#"
             onClick={[Function]}
           >
             <i
               aria-hidden="true"
               className="it-chevron-right left"
             />
+            <svg
+              className="icon left icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-chevron-right"
+              />
+            </svg>
             <span>
               Link list 3 disabled
             </span>
@@ -851,36 +1121,49 @@ exports[`Storyshots Componenti/LinkList/Con controlli Primary Action 1`] = `
       </ul>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Controlli.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
-exports[`Storyshots Componenti/LinkList/Con controlli Primary e Secondary Action 1`] = `
+exports[`Storyshots Componenti/LinkList.Con controlli Primary e Secondary Action 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -893,85 +1176,167 @@ exports[`Storyshots Componenti/LinkList/Con controlli Primary e Secondary Action
         <li>
           <a
             className="left-icon right-icon active list-item"
-            href="#"
           >
             <i
               className="it-favorite left"
             />
+            <svg
+              className="icon left icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-link"
+              />
+            </svg>
             <span>
               Link list 1 active
             </span>
             <i
               className="it-app right secondary"
             />
+            <svg
+              className="icon right icon-secondary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-chevron-right"
+              />
+            </svg>
           </a>
         </li>
         <li>
           <a
             className="left-icon right-icon list-item"
-            href="#"
           >
             <i
               className="it-favorite left"
             />
+            <svg
+              className="icon left icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-link"
+              />
+            </svg>
             <span>
               Link list 2
             </span>
             <i
               className="it-app right secondary"
             />
+            <svg
+              className="icon right icon-secondary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-chevron-right"
+              />
+            </svg>
           </a>
         </li>
         <li>
           <a
             className="left-icon right-icon disabled list-item"
-            href="#"
             onClick={[Function]}
           >
             <i
               className="it-favorite left"
             />
+            <svg
+              className="icon left icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-link"
+              />
+            </svg>
             <span>
               Link list 3 disabled
             </span>
             <i
               className="it-app right secondary"
             />
+            <svg
+              className="icon right icon-secondary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-chevron-right"
+              />
+            </svg>
           </a>
         </li>
       </ul>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "ControlliPrimariSecondari.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
-exports[`Storyshots Componenti/LinkList/Con controlli Secondary Action 1`] = `
+exports[`Storyshots Componenti/LinkList.Con controlli Secondary Action 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -984,7 +1349,6 @@ exports[`Storyshots Componenti/LinkList/Con controlli Secondary Action 1`] = `
         <li>
           <a
             className="right-icon active list-item"
-            href="#"
           >
             <span>
               Link list 1 active
@@ -992,12 +1356,23 @@ exports[`Storyshots Componenti/LinkList/Con controlli Secondary Action 1`] = `
             <i
               className="it-app right secondary"
             />
+            <svg
+              className="icon icon-right icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-link"
+              />
+            </svg>
           </a>
         </li>
         <li>
           <a
             className="right-icon list-item"
-            href="#"
           >
             <span>
               Link list 2
@@ -1005,12 +1380,23 @@ exports[`Storyshots Componenti/LinkList/Con controlli Secondary Action 1`] = `
             <i
               className="it-app right secondary"
             />
+            <svg
+              className="icon icon-right icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-link"
+              />
+            </svg>
           </a>
         </li>
         <li>
           <a
             className="right-icon disabled list-item"
-            href="#"
             onClick={[Function]}
           >
             <span>
@@ -1019,41 +1405,66 @@ exports[`Storyshots Componenti/LinkList/Con controlli Secondary Action 1`] = `
             <i
               className="it-app right secondary"
             />
+            <svg
+              className="icon icon-right icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-link"
+              />
+            </svg>
           </a>
         </li>
       </ul>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "ControlliSecondari.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
-exports[`Storyshots Componenti/LinkList/Multiline Esempi 1`] = `
+exports[`Storyshots Componenti/LinkList.Multiline Esempio Multiline 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -1066,7 +1477,6 @@ exports[`Storyshots Componenti/LinkList/Multiline Esempi 1`] = `
         <li>
           <a
             className="right-icon active list-item"
-            href="#"
           >
             <span>
               Link list 1 active
@@ -1074,6 +1484,18 @@ exports[`Storyshots Componenti/LinkList/Multiline Esempi 1`] = `
             <i
               className="it-chevron-right right"
             />
+            <svg
+              className="icon icon-right icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-chevron-right"
+              />
+            </svg>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit…
             </p>
@@ -1082,13 +1504,11 @@ exports[`Storyshots Componenti/LinkList/Multiline Esempi 1`] = `
         <li>
           <span
             className="divider list-item"
-            href="#"
           />
         </li>
         <li>
           <a
             className="right-icon list-item"
-            href="#"
           >
             <span>
               Link list 2
@@ -1096,6 +1516,18 @@ exports[`Storyshots Componenti/LinkList/Multiline Esempi 1`] = `
             <i
               className="it-chevron-right right"
             />
+            <svg
+              className="icon icon-right icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-chevron-right"
+              />
+            </svg>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit…
             </p>
@@ -1104,13 +1536,11 @@ exports[`Storyshots Componenti/LinkList/Multiline Esempi 1`] = `
         <li>
           <span
             className="divider list-item"
-            href="#"
           />
         </li>
         <li>
           <a
             className="right-icon disabled list-item"
-            href="#"
             onClick={[Function]}
           >
             <span>
@@ -1119,6 +1549,19 @@ exports[`Storyshots Componenti/LinkList/Multiline Esempi 1`] = `
             <i
               className="it-chevron-right right"
             />
+             
+            <svg
+              className="icon icon-right icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-chevron-right"
+              />
+            </svg>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit…
             </p>
@@ -1127,36 +1570,49 @@ exports[`Storyshots Componenti/LinkList/Multiline Esempi 1`] = `
       </ul>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Multiline.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
-exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
+exports[`Storyshots Componenti/LinkList.Nested navigation Collapsible 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -1168,8 +1624,7 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
       >
         <li>
           <a
-            className="right-icon medium list-item"
-            href="#"
+            className="right-icon size list-item"
             onClick={[Function]}
           >
             <span>
@@ -1178,9 +1633,22 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
             <i
               className="it-expand right"
             />
+            <svg
+              className="icon right icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-expand"
+              />
+            </svg>
           </a>
         </li>
         <div
+          aria-expanded="false"
           className="collapse"
           style={Object {}}
         >
@@ -1190,7 +1658,6 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
             <li>
               <a
                 className="list-item"
-                href="#"
               >
                 <span>
                   Link list 4 
@@ -1200,7 +1667,6 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
             <li>
               <a
                 className="list-item"
-                href="#"
               >
                 <span>
                   Link list 5 
@@ -1210,7 +1676,6 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
             <li>
               <a
                 className="list-item"
-                href="#"
               >
                 <span>
                   Link list 6 
@@ -1221,8 +1686,7 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
         </div>
         <li>
           <a
-            className="right-icon medium list-item"
-            href="#"
+            className="right-icon size list-item"
             onClick={[Function]}
           >
             <span>
@@ -1231,9 +1695,22 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
             <i
               className="it-expand right"
             />
+            <svg
+              className="icon right icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-expand"
+              />
+            </svg>
           </a>
         </li>
         <div
+          aria-expanded="false"
           className="collapse"
           style={Object {}}
         >
@@ -1243,7 +1720,6 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
             <li>
               <a
                 className="list-item"
-                href="#"
               >
                 <span>
                   Link list 7 
@@ -1253,7 +1729,6 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
             <li>
               <a
                 className="list-item"
-                href="#"
               >
                 <span>
                   Link list 8 
@@ -1263,7 +1738,6 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
             <li>
               <a
                 className="list-item"
-                href="#"
               >
                 <span>
                   Link list 9 
@@ -1274,8 +1748,7 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
         </div>
         <li>
           <a
-            className="right-icon medium list-item"
-            href="#"
+            className="right-icon size list-item"
             onClick={[Function]}
           >
             <span>
@@ -1284,9 +1757,22 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
             <i
               className="it-expand right"
             />
+            <svg
+              className="icon right icon-primary"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-expand"
+              />
+            </svg>
           </a>
         </li>
         <div
+          aria-expanded="false"
           className="collapse"
           style={Object {}}
         >
@@ -1296,7 +1782,6 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
             <li>
               <a
                 className="list-item"
-                href="#"
               >
                 <span>
                   Link list 10 
@@ -1306,7 +1791,6 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
             <li>
               <a
                 className="list-item"
-                href="#"
               >
                 <span>
                   Link list 11 
@@ -1316,7 +1800,6 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
             <li>
               <a
                 className="list-item"
-                href="#"
               >
                 <span>
                   Link list 12 
@@ -1328,36 +1811,49 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Collapsible 1`] = `
       </ul>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Collapsible.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
-exports[`Storyshots Componenti/LinkList/Nested navigation Fixed 1`] = `
+exports[`Storyshots Componenti/LinkList.Nested navigation Fixed 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -1369,8 +1865,7 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Fixed 1`] = `
       >
         <li>
           <a
-            className="right-icon medium list-item"
-            href="#"
+            className="right-icon size list-item"
           >
             <span>
               Link list 1 
@@ -1378,12 +1873,18 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Fixed 1`] = `
             <i
               className="it-favorite right"
             />
+            <svg
+              className="icon right icon-primary"
+            >
+              <use
+                xlinkHref="sprite.svg#it-link"
+              />
+            </svg>
           </a>
         </li>
         <li>
           <a
-            className="right-icon medium list-item"
-            href="#"
+            className="right-icon size list-item"
           >
             <span>
               Link list 2 
@@ -1391,6 +1892,13 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Fixed 1`] = `
             <i
               className="it-favorite right"
             />
+            <svg
+              className="icon right icon-primary"
+            >
+              <use
+                xlinkHref="sprite.svg#it-link"
+              />
+            </svg>
           </a>
         </li>
         <ul
@@ -1399,7 +1907,6 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Fixed 1`] = `
           <li>
             <a
               className="list-item"
-              href="#"
             >
               <span>
                 Link list 4 
@@ -1409,7 +1916,6 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Fixed 1`] = `
           <li>
             <a
               className="list-item"
-              href="#"
             >
               <span>
                 Link list 5 
@@ -1419,7 +1925,6 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Fixed 1`] = `
           <li>
             <a
               className="list-item"
-              href="#"
             >
               <span>
                 Link list 6 
@@ -1429,8 +1934,7 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Fixed 1`] = `
         </ul>
         <li>
           <a
-            className="right-icon medium list-item"
-            href="#"
+            className="right-icon size list-item"
           >
             <span>
               Link list 3 
@@ -1438,18 +1942,40 @@ exports[`Storyshots Componenti/LinkList/Nested navigation Fixed 1`] = `
             <i
               className="it-favorite right"
             />
+            <svg
+              className="icon right icon-primary"
+            >
+              <use
+                xlinkHref="sprite.svg#it-link"
+              />
+            </svg>
           </a>
         </li>
       </ul>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Navigation.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;

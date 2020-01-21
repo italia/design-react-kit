@@ -1,0 +1,653 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Footer Footer 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <footer
+      className="it-footer"
+    >
+      <div
+        className="it-footer-main"
+      >
+        <div
+          className="container"
+        >
+          <section>
+            <div
+              className="clearfix row"
+            >
+              <div
+                className="col-sm-12"
+              >
+                <div
+                  className="it-brand-wrapper"
+                >
+                  <a
+                    className=""
+                    href="#"
+                  >
+                    <svg
+                      className="icon"
+                    >
+                      <use
+                        xlinkHref="sprite.svg#it-pa"
+                      />
+                    </svg>
+                    <div
+                      className="it-brand-text"
+                    >
+                      <h2
+                        className="no_toc"
+                      >
+                        Nome del Comune
+                      </h2>
+                      <h3
+                        className="no_toc d-none d-md-block"
+                      >
+                        Uno dei tanti Comuni d Italia
+                      </h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div
+              className="row"
+            >
+              <div
+                className="pb-2 col-sm-6 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Amministrazione"
+                  >
+                    Amministrazione
+                  </a>
+                </h4>
+                <div
+                  className="link-list-wrapper"
+                >
+                  <ul
+                    className="footer-list clearfix link-list"
+                  >
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Giunta e consiglio"
+                      >
+                        Giunta e consiglio
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Aree di competenza"
+                      >
+                        Aree di competenza
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Dipendenti"
+                      >
+                        Dipendenti
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Luoghi"
+                      >
+                        Luoghi
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Associazioni e società partecipate"
+                      >
+                        Associazioni e società partecipate
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="pb-2 col-sm-6 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Servizi"
+                  >
+                    Servizi
+                  </a>
+                </h4>
+                <div
+                  className="link-list-wrapper"
+                >
+                  <ul
+                    className="footer-list clearfix link-list"
+                  >
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Pagamenti"
+                      >
+                        Pagamenti
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Sostegno"
+                      >
+                        Sostegno
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Domande e iscrizioni"
+                      >
+                        Domande e iscrizioni
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Segnalazioni"
+                      >
+                        Segnalazioni
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Autorizzazioni e concessioni"
+                      >
+                        Autorizzazioni e concessioni
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Certificati e dichiarazioni"
+                      >
+                        Certificati e dichiarazioni
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="pb-2 col-sm-6 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Novità"
+                  >
+                    Novità
+                  </a>
+                </h4>
+                <div
+                  className="link-list-wrapper"
+                >
+                  <ul
+                    className="footer-list clearfix link-list"
+                  >
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Notizie"
+                      >
+                        Notizie
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Eventi"
+                      >
+                        Eventi
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Comunicati Stampa"
+                      >
+                        Comunicati Stampa
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Documenti"
+                  >
+                    Documenti
+                  </a>
+                </h4>
+                <div
+                  className="link-list-wrapper"
+                >
+                  <ul
+                    className="footer-list clearfix link-list"
+                  >
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Progetti e attività"
+                      >
+                        Progetti e attività
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Delibere, determine e ordinanze"
+                      >
+                        Delibere, determine e ordinanze
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Bandi"
+                      >
+                        Bandi
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Concorsi"
+                      >
+                        Concorsi
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Albo pretorio"
+                      >
+                        Albo pretorio
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            className="py-4 border-white border-top"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="pb-2 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Amministrazione"
+                  >
+                    Amministrazione trasparente
+                  </a>
+                </h4>
+                <p>
+                  I dati personali pubblicati sono riutilizzabili solo alle condizioni previste dalla direttiva comunitaria 2003/98/CE e dal d.lgs. 36/2006
+                </p>
+              </div>
+              <div
+                className="pb-2 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Contatti"
+                  >
+                    Contatti
+                  </a>
+                </h4>
+                <p>
+                  <strong>
+                    Nome del Comune
+                  </strong>
+                  <br />
+                  Via Roma 0 - 00000 Lorem Ipsum Codice fiscale / P. IVA: 000000000
+                </p>
+                <div
+                  className="link-list-wrapper"
+                >
+                  <ul
+                    className="footer-list clearfix link-list"
+                  >
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Posta Elettronica Certificata"
+                      >
+                        Posta Elettronica Certificata
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: URP - Ufficio Relazioni con il Pubblico"
+                      >
+                        URP - Ufficio Relazioni con il Pubblico
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="pb-2 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Newsletter"
+                  >
+                    Newsletter
+                  </a>
+                </h4>
+                <form
+                  action="#"
+                  className="form-newsletter"
+                  method="post"
+                >
+                  <label
+                    className="text-white font-weight-semibold active"
+                    htmlFor="input-newsletter"
+                    style={
+                      Object {
+                        "transition": "none 0s ease 0s",
+                      }
+                    }
+                  >
+                    Iscriviti per riceverla
+                  </label>
+                  <div
+                    className="form-group"
+                  >
+                    <input
+                      className="form-control"
+                      id="input-newsletter"
+                      name="input-newsletter"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      placeholder="mail@example.com"
+                      type="email"
+                    />
+                    <label
+                      className="active"
+                      htmlFor="input-newsletter"
+                    />
+                    <small
+                      className="form-text text-muted"
+                    />
+                  </div>
+                  <button
+                    aria-label={null}
+                    ccolor="primary"
+                    className="btn-icon btn btn-secondary"
+                    onClick={[Function]}
+                    type="submit"
+                  >
+                    <svg
+                      className="icon icon-white"
+                    >
+                      <use
+                        xlinkHref="sprite.svg#it-mail"
+                      />
+                    </svg>
+                    <span>
+                      Iscriviti
+                    </span>
+                  </button>
+                </form>
+              </div>
+              <div
+                className="pb-2 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Seguici su"
+                  >
+                    Seguici su
+                  </a>
+                </h4>
+                <ul
+                  className="list-inline text-left social"
+                >
+                  <li
+                    className="list-inline-item"
+                  >
+                    <a
+                      className="p-2 text-white"
+                      href="#"
+                      target="_blank"
+                    >
+                      <svg
+                        className="icon align-top icon-white icon-sm sm"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-designers-italia"
+                        />
+                      </svg>
+                      <span
+                        className="sr-only"
+                      >
+                        Designers Italia
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    className="list-inline-item"
+                  >
+                    <a
+                      className="p-2 text-white"
+                      href="#"
+                      target="_blank"
+                    >
+                      <svg
+                        className="icon align-top icon-white icon-sm sm"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-twitter"
+                        />
+                      </svg>
+                      <span
+                        className="sr-only"
+                      >
+                        Twitter
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    className="list-inline-item"
+                  >
+                    <a
+                      className="p-2 text-white"
+                      href="#"
+                      target="_blank"
+                    >
+                      <svg
+                        className="icon align-top icon-white icon-sm sm"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-medium"
+                        />
+                      </svg>
+                      <span
+                        className="sr-only"
+                      >
+                        Medium
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    className="list-inline-item"
+                  >
+                    <a
+                      className="p-2 text-white"
+                      href="#"
+                      target="_blank"
+                    >
+                      <svg
+                        className="icon align-top icon-white icon-sm sm"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-behance"
+                        />
+                      </svg>
+                      <span
+                        className="sr-only"
+                      >
+                        Behance
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div
+        className="it-footer-small-prints clearfix"
+      >
+        <div
+          className="container"
+        >
+          <h3
+            className="sr-only"
+          >
+            Sezione Link Utili
+          </h3>
+          <ul
+            className="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row"
+          >
+            <li
+              className="list-inline-item"
+            >
+              <a
+                href="#"
+                title="Note Legali"
+              >
+                Media policy
+              </a>
+            </li>
+            <li
+              className="list-inline-item"
+            >
+              <a
+                href="#"
+                title="Note Legali"
+              >
+                Note legali
+              </a>
+            </li>
+            <li
+              className="list-inline-item"
+            >
+              <a
+                href="#"
+                title="Privacy-Cookies"
+              >
+                Privacy policy
+              </a>
+            </li>
+            <li
+              className="list-inline-item"
+            >
+              <a
+                href="#"
+                title="Mappa del sito"
+              >
+                Mappa del sito
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;

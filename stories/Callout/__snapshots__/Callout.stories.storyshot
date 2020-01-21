@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Componenti/Modal Bottone di chiusura 1`] = `
+exports[`Storyshots Componenti/Callout Callout Highlights 1`] = `
 <div
   style={
     Object {
@@ -21,363 +21,28 @@ exports[`Storyshots Componenti/Modal Bottone di chiusura 1`] = `
     }
   >
     <div
-      className="p-3"
-    >
-      <button
-        className="close position-absolute"
-      >
-        ×
-      </button>
-    </div>
-  </div>
-  <button
-    className="info__show-button"
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#027ac5",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": "12px",
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
-</div>
-`;
-
-exports[`Storyshots Componenti/Modal Centratura verticale 1`] = `
-<div
-  style={
-    Object {
-      "boxSizing": "border-box",
-      "margin": "0",
-      "padding": "48px 32px",
-      "position": "relative",
-      "textAlign": "initial",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div>
-      <button
-        aria-label={null}
-        className="btn btn-primary"
-        onClick={[Function]}
-        type="button"
-      >
-        Lancia la demo della modale
-      </button>
-    </div>
-  </div>
-  <button
-    className="info__show-button"
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#027ac5",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": "12px",
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
-</div>
-`;
-
-exports[`Storyshots Componenti/Modal Contenuto della modale variabile 1`] = `
-<div
-  style={
-    Object {
-      "boxSizing": "border-box",
-      "margin": "0",
-      "padding": "48px 32px",
-      "position": "relative",
-      "textAlign": "initial",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div>
-      <div>
-        <button
-          aria-label={null}
-          className="mr-3 btn btn-primary"
-          onClick={[Function]}
-          type="button"
-        >
-          Apri la modale per 
-          Mario
-        </button>
-        <button
-          aria-label={null}
-          className="mr-3 btn btn-primary"
-          onClick={[Function]}
-          type="button"
-        >
-          Apri la modale per 
-          Paola
-        </button>
-        <button
-          aria-label={null}
-          className="mr-3 btn btn-primary"
-          onClick={[Function]}
-          type="button"
-        >
-          Apri la modale per 
-          Luca
-        </button>
-      </div>
-    </div>
-  </div>
-  <button
-    className="info__show-button"
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#027ac5",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": "12px",
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
-</div>
-`;
-
-exports[`Storyshots Componenti/Modal Demo 1`] = `
-<div
-  style={
-    Object {
-      "boxSizing": "border-box",
-      "margin": "0",
-      "padding": "48px 32px",
-      "position": "relative",
-      "textAlign": "initial",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div>
-      <button
-        aria-label={null}
-        className="btn btn-primary"
-        onClick={[Function]}
-        type="button"
-      >
-        Lancia la demo della modale
-      </button>
-    </div>
-  </div>
-  <button
-    className="info__show-button"
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#027ac5",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": "12px",
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
-</div>
-`;
-
-exports[`Storyshots Componenti/Modal Dimensioni 1`] = `
-<div
-  style={
-    Object {
-      "boxSizing": "border-box",
-      "margin": "0",
-      "padding": "48px 32px",
-      "position": "relative",
-      "textAlign": "initial",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div>
-      <div>
-        <button
-          aria-label={null}
-          className="mr-3 btn btn-primary"
-          onClick={[Function]}
-          type="button"
-        >
-          Modale grande
-        </button>
-        <button
-          aria-label={null}
-          className="btn btn-primary"
-          onClick={[Function]}
-          type="button"
-        >
-          Modale piccola
-        </button>
-      </div>
-    </div>
-  </div>
-  <button
-    className="info__show-button"
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#027ac5",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": "12px",
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
-</div>
-`;
-
-exports[`Storyshots Componenti/Modal Esempi 1`] = `
-<div
-  style={
-    Object {
-      "boxSizing": "border-box",
-      "margin": "0",
-      "padding": "48px 32px",
-      "position": "relative",
-      "textAlign": "initial",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div
-      style={
-        Object {
-          "padding": "0px 290px",
-        }
-      }
+      className="callout callout-highlight"
     >
       <div
-        className="modal-content"
+        className="callout-title"
       >
-        <div
-          className="modal-header"
-        >
-          <h5
-            className="modal-title"
-          >
-            Titolo della modale
-          </h5>
-        </div>
-        <div
-          className="modal-body"
-        >
-          Il testo del corpo della modale va qui.
-        </div>
-        <div
-          className="modal-footer"
-        >
-          <button
-            aria-label={null}
-            className="btn btn-secondary"
-            onClick={[Function]}
-          >
-            Chiudi
-          </button>
-          <button
-            aria-label={null}
-            className="btn btn-primary"
-            onClick={[Function]}
-          >
-            Salva le modifiche
-          </button>
-        </div>
+        Titolo Callout
       </div>
+      <p
+        className="callout-big-text"
+      >
+        Maecenas at erat id sem interdum efficitur eu sed nunc. Mauris sit amet erat eget augue molestie malesuada ut sed ex. In sed dignissim elit.
+      </p>
+      <p
+        className=""
+      >
+        Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non augue non purus vestibulum varius. Maecenas ullamcorper 
+        <a
+          href="#"
+        >
+          tincidunt nulla quis laoreet.
+        </a>
+      </p>
     </div>
   </div>
   <button
@@ -406,7 +71,7 @@ exports[`Storyshots Componenti/Modal Esempi 1`] = `
 </div>
 `;
 
-exports[`Storyshots Componenti/Modal Rimuovere l’animazione 1`] = `
+exports[`Storyshots Componenti/Callout Esempio 1`] = `
 <div
   style={
     Object {
@@ -426,15 +91,19 @@ exports[`Storyshots Componenti/Modal Rimuovere l’animazione 1`] = `
       }
     }
   >
-    <div>
-      <button
-        aria-label={null}
-        className="btn btn-primary"
-        onClick={[Function]}
-        type="button"
+    <div
+      className="callout"
+    >
+      <div
+        className="callout-title"
       >
-        Lancia la demo della modale
-      </button>
+        Titolo Callout
+      </div>
+      <p
+        className=""
+      >
+        Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non augue non purus vestibulum varius.
+      </p>
     </div>
   </div>
   <button
@@ -463,7 +132,7 @@ exports[`Storyshots Componenti/Modal Rimuovere l’animazione 1`] = `
 </div>
 `;
 
-exports[`Storyshots Componenti/Modal Scroll di contenuti lunghi 1`] = `
+exports[`Storyshots Componenti/Callout Esempio accessibilità 1`] = `
 <div
   style={
     Object {
@@ -483,15 +152,36 @@ exports[`Storyshots Componenti/Modal Scroll di contenuti lunghi 1`] = `
       }
     }
   >
-    <div>
-      <button
-        aria-label={null}
-        className="btn btn-primary"
-        onClick={[Function]}
-        type="button"
+    <div
+      className="callout"
+    >
+      <div
+        className="callout-title"
       >
-        Lancia la demo della modale
-      </button>
+        <svg
+          className="icon"
+          style={
+            Object {
+              "ariaHidden": true,
+            }
+          }
+        >
+          <use
+            xlinkHref="sprite.svg#it-check-circle"
+          />
+        </svg>
+        <span
+          className="sr-only"
+        >
+          Confermato
+        </span>
+        Titolo Callout
+      </div>
+      <p
+        className=""
+      >
+        Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non augue non purus vestibulum varius.
+      </p>
     </div>
   </div>
   <button
@@ -520,7 +210,7 @@ exports[`Storyshots Componenti/Modal Scroll di contenuti lunghi 1`] = `
 </div>
 `;
 
-exports[`Storyshots Componenti/Modal Tooltip and popover 1`] = `
+exports[`Storyshots Componenti/Callout Esempio con icona 1`] = `
 <div
   style={
     Object {
@@ -540,15 +230,31 @@ exports[`Storyshots Componenti/Modal Tooltip and popover 1`] = `
       }
     }
   >
-    <div>
-      <button
-        aria-label={null}
-        className="btn btn-primary"
-        onClick={[Function]}
-        type="button"
+    <div
+      className="callout"
+    >
+      <div
+        className="callout-title"
       >
-        Lancia la demo della modale
-      </button>
+        <svg
+          className="icon"
+          style={
+            Object {
+              "ariaHidden": true,
+            }
+          }
+        >
+          <use
+            xlinkHref="sprite.svg#it-info-circle"
+          />
+        </svg>
+        Titolo Callout
+      </div>
+      <p
+        className=""
+      >
+        Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non augue non purus vestibulum varius.
+      </p>
     </div>
   </div>
   <button
@@ -577,7 +283,7 @@ exports[`Storyshots Componenti/Modal Tooltip and popover 1`] = `
 </div>
 `;
 
-exports[`Storyshots Componenti/Modal Uso della griglia 1`] = `
+exports[`Storyshots Componenti/Callout Nota 1`] = `
 <div
   style={
     Object {
@@ -597,15 +303,323 @@ exports[`Storyshots Componenti/Modal Uso della griglia 1`] = `
       }
     }
   >
-    <div>
-      <button
-        aria-label={null}
-        className="btn btn-primary"
-        onClick={[Function]}
-        type="button"
+    <div
+      className="callout note"
+    >
+      <div
+        className="callout-title"
       >
-        Lancia la demo della modale
-      </button>
+        <svg
+          className="icon"
+          style={
+            Object {
+              "ariaHidden": true,
+            }
+          }
+        >
+          <use
+            xlinkHref="sprite.svg#it-info-circle"
+          />
+        </svg>
+        Note a riguardo
+      </div>
+      <p
+        className=""
+      >
+        Quisque ex eros, pellentesque vitae enim sed, pharetra tempus dolor. Donec eu nibh ac lacus luctus pellentesque. Duis interdum scelerisque magna nec malesuada.
+      </p>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Callout Procedura avvenuta con successo 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="callout success"
+    >
+      <div
+        className="callout-title"
+      >
+        <svg
+          className="icon"
+          style={
+            Object {
+              "ariaHidden": true,
+            }
+          }
+        >
+          <use
+            xlinkHref="sprite.svg#it-check-circle"
+          />
+        </svg>
+        Usa
+      </div>
+      <p
+        className=""
+      >
+        Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non augue non purus vestibulum varius.
+      </p>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Callout Procedura che richiede attenzione 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="callout warning"
+    >
+      <div
+        className="callout-title"
+      >
+        <svg
+          className="icon"
+          style={
+            Object {
+              "ariaHidden": true,
+            }
+          }
+        >
+          <use
+            xlinkHref="sprite.svg#it-help-circle"
+          />
+        </svg>
+        Attenzione
+      </div>
+      <p
+        className=""
+      >
+        Quisque ex eros, pellentesque vitae enim sed, pharetra tempus dolor. Donec eu nibh ac lacus luctus pellentesque. Duis interdum scelerisque magna nec malesuada.
+      </p>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Callout Procedura importante 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="callout important"
+    >
+      <div
+        className="callout-title"
+      >
+        <svg
+          className="icon"
+          style={
+            Object {
+              "ariaHidden": true,
+            }
+          }
+        >
+          <use
+            xlinkHref="sprite.svg#it-info-circle"
+          />
+        </svg>
+        Importante
+      </div>
+      <p
+        className=""
+      >
+        Quisque ex eros, pellentesque vitae enim sed, pharetra tempus dolor. Donec eu nibh ac lacus luctus pellentesque. Duis interdum scelerisque magna nec malesuada.
+      </p>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Callout Procedura pericolosa o non consentita 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="callout danger"
+    >
+      <div
+        className="callout-title"
+      >
+        <svg
+          className="icon"
+          style={
+            Object {
+              "ariaHidden": true,
+            }
+          }
+        >
+          <use
+            xlinkHref="sprite.svg#it-close-circle"
+          />
+        </svg>
+        Non usare
+      </div>
+      <p
+        className=""
+      >
+        Quisque ex eros, pellentesque vitae enim sed, pharetra tempus dolor. Donec eu nibh ac lacus luctus pellentesque. Duis interdum scelerisque magna nec malesuada.
+      </p>
     </div>
   </div>
   <button
