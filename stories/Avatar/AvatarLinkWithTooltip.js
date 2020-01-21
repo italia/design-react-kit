@@ -8,6 +8,13 @@ import {
 
 const AvatarLinkWithTooltip = () => {
   const ids = ['Example1', 'Example2', 'Example3', 'Example4']
+
+  ids.map((id, i) => {
+    const div = document.createElement('div')
+    div.setAttribute('id', id)
+    document.body.appendChild(div)
+  })
+
   return (
     <AvatarContainer>
       <AvatarIcon size="xl" href id={ids[0]}>

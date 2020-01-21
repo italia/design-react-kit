@@ -91,6 +91,101 @@ exports[`Storyshots Componenti/Avatar Avatar link 1`] = `
 </div>
 `;
 
+exports[`Storyshots Componenti/Avatar Avatar link with Tooltip 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="d-flex align-items-center justify-content-around flex-wrap flex-sm-nowrap"
+    >
+      <a
+        className="avatar size-xl"
+        href={true}
+        id="Example1"
+      >
+        <img
+          alt="Anna Barbieri"
+          src="https://randomuser.me/api/portraits/women/41.jpg"
+        />
+      </a>
+      <a
+        className="avatar size-xl avatar-red"
+        href={true}
+        id="Example2"
+      >
+        <p
+          aria-hidden="true"
+        >
+          MR
+        </p>
+        <span
+          className="sr-only"
+        >
+          Mario Rossi
+        </span>
+      </a>
+      <a
+        className="avatar size-xl"
+        href={true}
+        id="Example3"
+      />
+      <a
+        className="avatar size-xl"
+        href={true}
+        id="Example4"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="sprite.svg#it-search"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
 exports[`Storyshots Componenti/Avatar Avatar with additional text 1`] = `
 <div
   style={
