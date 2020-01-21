@@ -26255,6 +26255,111 @@ exports[`Image Storyshots Componenti/Tab Tab a bottoni 1`] = `
 </div>
 `;
 
+exports[`Image Storyshots Componenti/Tooltip Esempi 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="bd-example tooltip-demo"
+    >
+      <p
+        className="muted"
+      >
+        Ecco un
+         
+        <a
+          href="#"
+          id="Example1"
+        >
+          bianco scenario
+        </a>
+        <br />
+        per tratteggiarvi l’accompagnamento
+        <br />
+        degli oggetti di sfondo che pur vivono.
+        <br />
+        Non ne sarò
+         
+        <a
+          href="#"
+          id="Example2"
+        >
+          l’artefice
+        </a>
+         
+        impaziente.
+        <br />
+        Berrò alle coppe della nostalgia,
+        <br />
+        avrò preteso d’ozio nelle lacrime...
+        <br />
+        perché non mi ribello alla natura:
+        <br />
+        la mia lentezza li esaspera...
+        <br />
+        La mia lentezza? No, la mia fiducia.
+        <br />
+        Per adesso è deserto.
+        <br />
+        <a
+          href="#"
+          id="Example3"
+        >
+          Il mondo può rifarsi senza me
+        </a>
+        ,
+        <br />
+        E intanto gli altri mi denigreranno
+      </p>
+      <p>
+        <em>
+          La città nuova, Alda Merini
+        </em>
+      </p>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
 exports[`Image Storyshots Componenti/Tooltip Esempi interattivi 1`] = `
 <div
   style={
@@ -30776,6 +30881,2478 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template
         </div>
       </div>
     </section>
+    <footer
+      className="it-footer"
+    >
+      <div
+        className="it-footer-main"
+      >
+        <div
+          className="container"
+        >
+          <section>
+            <div
+              className="clearfix row"
+            >
+              <div
+                className="col-sm-12"
+              >
+                <div
+                  className="it-brand-wrapper"
+                >
+                  <a
+                    className=""
+                    href="#"
+                  >
+                    <svg
+                      className="icon"
+                    >
+                      <use
+                        xlinkHref="sprite.svg#it-pa"
+                      />
+                    </svg>
+                    <div
+                      className="it-brand-text"
+                    >
+                      <h2
+                        className="no_toc"
+                      >
+                        Nome del Comune
+                      </h2>
+                      <h3
+                        className="no_toc d-none d-md-block"
+                      >
+                        Uno dei tanti Comuni d Italia
+                      </h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div
+              className="row"
+            >
+              <div
+                className="pb-2 col-sm-6 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Amministrazione"
+                  >
+                    Amministrazione
+                  </a>
+                </h4>
+                <div
+                  className="link-list-wrapper"
+                >
+                  <ul
+                    className="footer-list clearfix link-list"
+                  >
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Giunta e consiglio"
+                      >
+                        Giunta e consiglio
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Aree di competenza"
+                      >
+                        Aree di competenza
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Dipendenti"
+                      >
+                        Dipendenti
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Luoghi"
+                      >
+                        Luoghi
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Associazioni e società partecipate"
+                      >
+                        Associazioni e società partecipate
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="pb-2 col-sm-6 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Servizi"
+                  >
+                    Servizi
+                  </a>
+                </h4>
+                <div
+                  className="link-list-wrapper"
+                >
+                  <ul
+                    className="footer-list clearfix link-list"
+                  >
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Pagamenti"
+                      >
+                        Pagamenti
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Sostegno"
+                      >
+                        Sostegno
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Domande e iscrizioni"
+                      >
+                        Domande e iscrizioni
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Segnalazioni"
+                      >
+                        Segnalazioni
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Autorizzazioni e concessioni"
+                      >
+                        Autorizzazioni e concessioni
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Certificati e dichiarazioni"
+                      >
+                        Certificati e dichiarazioni
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="pb-2 col-sm-6 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Novità"
+                  >
+                    Novità
+                  </a>
+                </h4>
+                <div
+                  className="link-list-wrapper"
+                >
+                  <ul
+                    className="footer-list clearfix link-list"
+                  >
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Notizie"
+                      >
+                        Notizie
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Eventi"
+                      >
+                        Eventi
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Comunicati Stampa"
+                      >
+                        Comunicati Stampa
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Documenti"
+                  >
+                    Documenti
+                  </a>
+                </h4>
+                <div
+                  className="link-list-wrapper"
+                >
+                  <ul
+                    className="footer-list clearfix link-list"
+                  >
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Progetti e attività"
+                      >
+                        Progetti e attività
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Delibere, determine e ordinanze"
+                      >
+                        Delibere, determine e ordinanze
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Bandi"
+                      >
+                        Bandi
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Concorsi"
+                      >
+                        Concorsi
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Albo pretorio"
+                      >
+                        Albo pretorio
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            className="py-4 border-white border-top"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="pb-2 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Amministrazione"
+                  >
+                    Amministrazione trasparente
+                  </a>
+                </h4>
+                <p>
+                  I dati personali pubblicati sono riutilizzabili solo alle condizioni previste dalla direttiva comunitaria 2003/98/CE e dal d.lgs. 36/2006
+                </p>
+              </div>
+              <div
+                className="pb-2 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Contatti"
+                  >
+                    Contatti
+                  </a>
+                </h4>
+                <p>
+                  <strong>
+                    Nome del Comune
+                  </strong>
+                  <br />
+                  Via Roma 0 - 00000 Lorem Ipsum Codice fiscale / P. IVA: 000000000
+                </p>
+                <div
+                  className="link-list-wrapper"
+                >
+                  <ul
+                    className="footer-list clearfix link-list"
+                  >
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: Posta Elettronica Certificata"
+                      >
+                        Posta Elettronica Certificata
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="list-item"
+                        href="#"
+                        title="Vai alla pagina: URP - Ufficio Relazioni con il Pubblico"
+                      >
+                        URP - Ufficio Relazioni con il Pubblico
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="pb-2 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Newsletter"
+                  >
+                    Newsletter
+                  </a>
+                </h4>
+                <form
+                  action="#"
+                  className="form-newsletter"
+                  method="post"
+                >
+                  <label
+                    className="text-white font-weight-semibold active"
+                    htmlFor="input-newsletter"
+                    style={
+                      Object {
+                        "transition": "none 0s ease 0s",
+                      }
+                    }
+                  >
+                    Iscriviti per riceverla
+                  </label>
+                  <div
+                    className="form-group"
+                  >
+                    <input
+                      className="form-control"
+                      id="input-newsletter"
+                      name="input-newsletter"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      placeholder="mail@example.com"
+                      type="email"
+                    />
+                    <label
+                      className="active"
+                      htmlFor="input-newsletter"
+                    />
+                    <small
+                      className="form-text text-muted"
+                    />
+                  </div>
+                  <button
+                    aria-label={null}
+                    className="btn-icon btn btn-primary"
+                    onClick={[Function]}
+                    type="submit"
+                  >
+                    <svg
+                      className="icon icon-white"
+                    >
+                      <use
+                        xlinkHref="sprite.svg#it-mail"
+                      />
+                    </svg>
+                    <span>
+                      Iscriviti
+                    </span>
+                  </button>
+                </form>
+              </div>
+              <div
+                className="pb-2 col-md-3 col-lg-3"
+              >
+                <h4>
+                  <a
+                    href="#"
+                    title="Vai alla pagina: Seguici su"
+                  >
+                    Seguici su
+                  </a>
+                </h4>
+                <ul
+                  className="list-inline text-left social"
+                >
+                  <li
+                    className="list-inline-item"
+                  >
+                    <a
+                      className="p-2 text-white"
+                      href="#"
+                      target="_blank"
+                    >
+                      <svg
+                        className="icon align-top icon-white icon-sm sm"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-designers-italia"
+                        />
+                      </svg>
+                      <span
+                        className="sr-only"
+                      >
+                        Designers Italia
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    className="list-inline-item"
+                  >
+                    <a
+                      className="p-2 text-white"
+                      href="#"
+                      target="_blank"
+                    >
+                      <svg
+                        className="icon align-top icon-white icon-sm sm"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-twitter"
+                        />
+                      </svg>
+                      <span
+                        className="sr-only"
+                      >
+                        Twitter
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    className="list-inline-item"
+                  >
+                    <a
+                      className="p-2 text-white"
+                      href="#"
+                      target="_blank"
+                    >
+                      <svg
+                        className="icon align-top icon-white icon-sm sm"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-medium"
+                        />
+                      </svg>
+                      <span
+                        className="sr-only"
+                      >
+                        Medium
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    className="list-inline-item"
+                  >
+                    <a
+                      className="p-2 text-white"
+                      href="#"
+                      target="_blank"
+                    >
+                      <svg
+                        className="icon align-top icon-white icon-sm sm"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-behance"
+                        />
+                      </svg>
+                      <span
+                        className="sr-only"
+                      >
+                        Behance
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div
+        className="it-footer-small-prints clearfix"
+      >
+        <div
+          className="container"
+        >
+          <h3
+            className="sr-only"
+          >
+            Sezione Link Utili
+          </h3>
+          <ul
+            className="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row"
+          >
+            <li
+              className="list-inline-item"
+            >
+              <a
+                href="#"
+                title="Note Legali"
+              >
+                Media policy
+              </a>
+            </li>
+            <li
+              className="list-inline-item"
+            >
+              <a
+                href="#"
+                title="Note Legali"
+              >
+                Note legali
+              </a>
+            </li>
+            <li
+              className="list-inline-item"
+            >
+              <a
+                href="#"
+                title="Privacy-Cookies"
+              >
+                Privacy policy
+              </a>
+            </li>
+            <li
+              className="list-inline-item"
+            >
+              <a
+                href="#"
+                title="Mappa del sito"
+              >
+                Mappa del sito
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "height": null,
+          "position": "sticky",
+          "width": null,
+          "zIndex": 2,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "width": "inherit",
+          }
+        }
+      >
+        <div
+          className="it-header-wrapper it-header-sticky"
+        >
+          <div
+            className="it-header-slim-wrapper"
+          >
+            <div
+              className="container"
+            >
+              <div
+                className="row"
+              >
+                <div
+                  className="col-12"
+                >
+                  <div
+                    className="it-header-slim-wrapper-content"
+                  >
+                    <a
+                      className="d-lg-block navbar-brand"
+                    >
+                      Ente appartenenza/Owner
+                    </a>
+                    <div
+                      className="it-header-slim-right-zone header-slim-right-zone"
+                    >
+                      <div
+                        className="dropdown nav-item"
+                        onKeyDown={[Function]}
+                      >
+                        <a
+                          aria-expanded={false}
+                          aria-haspopup={true}
+                          className="dropdown-toggle nav-link"
+                          href="#"
+                          onClick={[Function]}
+                        >
+                          ITA
+                          <svg
+                            className="icon"
+                          >
+                            <use
+                              xlinkHref="sprite.svg#it-expand"
+                            />
+                          </svg>
+                        </a>
+                        <div
+                          aria-hidden={true}
+                          className="dropdown-menu"
+                          role="menu"
+                          tabIndex="-1"
+                        >
+                          <div
+                            className="row"
+                          >
+                            <div
+                              className="col"
+                              size="12"
+                            >
+                              <div
+                                className="link-list-wrapper"
+                              >
+                                <ul
+                                  className="link-list"
+                                >
+                                  <li>
+                                    <a
+                                      className="list-item dropdown-item"
+                                      href="#"
+                                      onClick={[Function]}
+                                      role="menuitem"
+                                      tabIndex="0"
+                                    >
+                                      <span>
+                                        ITA
+                                      </span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      className="list-item dropdown-item"
+                                      href="#"
+                                      onClick={[Function]}
+                                      role="menuitem"
+                                      tabIndex="0"
+                                    >
+                                      <span>
+                                        ENG
+                                      </span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        aria-label={null}
+                        className="btn-icon btn btn-primary btn-full"
+                        href="#"
+                        onClick={[Function]}
+                      >
+                        <span
+                          className="rounded-icon"
+                        >
+                          <svg
+                            className="icon icon-primary"
+                          >
+                            <use
+                              xlinkHref="sprite.svg#it-user"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          className="d-none d-lg-block"
+                        >
+                          Accedi all'area personale
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="it-nav-wrapper"
+          >
+            <div
+              className="it-header-center-wrapper"
+            >
+              <div
+                className="container"
+              >
+                <div
+                  className="row"
+                >
+                  <div
+                    className="col-12"
+                  >
+                    <div
+                      className="it-header-center-content-wrapper"
+                    >
+                      <div
+                        className="it-brand-wrapper"
+                      >
+                        <a>
+                          <svg
+                            className="icon"
+                          >
+                            <use
+                              xlinkHref="sprite.svg#it-code-circle"
+                            />
+                          </svg>
+                          <div
+                            className="it-brand-text"
+                          >
+                            <h2
+                              className="no_toc"
+                            >
+                              Lorem Ipsum Lorem Ipsum
+                            </h2>
+                            <h3
+                              className="no_toc d-none d-md-block"
+                            >
+                              Inserire qui la tag line
+                            </h3>
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        className="it-right-zone"
+                      >
+                        <div
+                          className="it-socials d-none d-md-flex"
+                        >
+                          <span>
+                            Seguici su
+                          </span>
+                          <ul>
+                            <li>
+                              <a
+                                aria-label="Facebook"
+                                href="#"
+                                target="_blank"
+                              >
+                                <svg
+                                  className="icon"
+                                >
+                                  <use
+                                    xlinkHref="sprite.svg#it-facebook"
+                                  />
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                aria-label="Github"
+                                href="#"
+                                target="_blank"
+                              >
+                                <svg
+                                  className="icon"
+                                >
+                                  <use
+                                    xlinkHref="sprite.svg#it-github"
+                                  />
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                aria-label="Twitter"
+                                href="#"
+                                target="_blank"
+                              >
+                                <svg
+                                  className="icon"
+                                >
+                                  <use
+                                    xlinkHref="sprite.svg#it-twitter"
+                                  />
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          className="it-search-wrapper"
+                        >
+                          <span
+                            className="d-none d-md-block"
+                          >
+                            Cerca
+                          </span>
+                          <a
+                            aria-label="Cerca"
+                            className="search-link rounded-icon"
+                          >
+                            <svg
+                              className="icon"
+                            >
+                              <use
+                                xlinkHref="sprite.svg#it-search"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="it-header-navbar-wrapper"
+            >
+              <div
+                className="container"
+              >
+                <div
+                  className="row"
+                >
+                  <div
+                    className="col-12"
+                  >
+                    <nav
+                      className="navbar has-megamenu navbar navbar-expand-lg"
+                    >
+                      <button
+                        aria-controls="nav1"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        className="custom-navbar-toggler navbar-toggler"
+                        href="#"
+                        onClick={[Function]}
+                        type="button"
+                      >
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-burger"
+                          />
+                        </svg>
+                      </button>
+                      <div
+                        aria-expanded="false"
+                        className="navbar-collapsable collapse navbar-collapse"
+                        style={
+                          Object {
+                            "display": "none",
+                          }
+                        }
+                      >
+                        <div
+                          className="overlay"
+                          onClick={[Function]}
+                          style={
+                            Object {
+                              "display": "none",
+                            }
+                          }
+                        />
+                        <div
+                          className="close-div sr-only"
+                        >
+                          <button
+                            className="btn close-menu"
+                            type="button"
+                          >
+                            <span
+                              className="it-close"
+                            />
+                            close
+                          </button>
+                        </div>
+                        <div
+                          className="menu-wrapper"
+                        >
+                          <ul
+                            className="navbar-nav"
+                          >
+                            <li
+                              className="nav-item"
+                            >
+                              <a
+                                className="nav-link"
+                                href="#"
+                                onClick={[Function]}
+                              >
+                                <span>
+                                  Amministrazione
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              className="nav-item"
+                            >
+                              <a
+                                className="nav-link"
+                                href="#"
+                                onClick={[Function]}
+                              >
+                                <span>
+                                  Novità
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              className="nav-item"
+                            >
+                              <a
+                                className="nav-link"
+                                href="#"
+                                onClick={[Function]}
+                              >
+                                <span>
+                                  Servizi
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              className="nav-item"
+                            >
+                              <a
+                                className="nav-link"
+                                href="#"
+                                onClick={[Function]}
+                              >
+                                <span>
+                                  Documenti e Dati
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                          <ul
+                            className="navbar-secondary navbar-nav"
+                          >
+                            <li
+                              className="nav-item"
+                            >
+                              <a
+                                className="nav-link"
+                                href="#"
+                                onClick={[Function]}
+                              >
+                                <span
+                                  className=""
+                                >
+                                  Argomento 1
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              className="nav-item"
+                            >
+                              <a
+                                className="nav-link"
+                                href="#"
+                                onClick={[Function]}
+                              >
+                                <span
+                                  className=""
+                                >
+                                  Argomento 2
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              className="nav-item"
+                            >
+                              <a
+                                className="nav-link"
+                                href="#"
+                                onClick={[Function]}
+                              >
+                                <span
+                                  className="font-weight-bold"
+                                >
+                                  Tutti gli argomenti...
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section
+        className="px-4 my-4 container"
+        id="briciole"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="px-lg-4 col"
+          >
+            <nav
+              aria-label="breadcrumb"
+              className="breadcrumb-container"
+            >
+              <nav
+                aria-label="breadcrumb"
+                className=""
+              >
+                <ol
+                  className="breadcrumb"
+                >
+                  <li
+                    className="breadcrumb-item"
+                  >
+                    <a
+                      href="/design-comuni-prototipi/esempi/bootstrap-italia/template-homepage.html"
+                    >
+                      Home
+                    </a>
+                    <span
+                      className="separator"
+                    >
+                      /
+                    </span>
+                  </li>
+                  <li
+                    aria-current="page"
+                    className="active breadcrumb-item"
+                  >
+                    Servizi
+                  </li>
+                </ol>
+              </nav>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section
+        className="px-4 my-4 container"
+        id="intro"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="px-lg-4 py-lg-2 col-lg-7"
+          >
+            <h1>
+              Servizi
+            </h1>
+            <p>
+              Donec in consequat nunc. Duis semper fermentum lacus, ac condimentum justo auctor a. Nam erat erat, porta vel pharetra in, ullamcorper vel turpis.
+            </p>
+            <div
+              className="form-group mt-5"
+            >
+              <form>
+                <div
+                  className="form-group"
+                >
+                  <input
+                    className="form-control"
+                    id="ricerca-servizi"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    type="search"
+                  />
+                  <label
+                    className=""
+                    htmlFor="ricerca-servizi"
+                  >
+                    Cerca contenuti in "Servizi"
+                  </label>
+                  <small
+                    className="form-text text-muted"
+                  />
+                </div>
+                <span
+                  aria-hidden="true"
+                  className="autocomplete-icon"
+                >
+                  <svg
+                    className="icon icon-sm sm"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-search"
+                    />
+                  </svg>
+                </span>
+              </form>
+            </div>
+            <div
+              id="filtri-ricerca-amministrazione"
+            >
+              <h6
+                className="small"
+              >
+                Filtri
+              </h6>
+              <div
+                className="chip chip-lg"
+              >
+                <span
+                  className="chip-label"
+                >
+                  Tutto
+                </span>
+                <button>
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-close"
+                    />
+                  </svg>
+                  <span
+                    className="sr-only"
+                  >
+                    Elimina label
+                  </span>
+                </button>
+              </div>
+              <div
+                className="ml-2 d-inline"
+              >
+                <button
+                  className="btn btn-icon btn-outline-primary btn-sm align-top"
+                >
+                  <svg
+                    className="icon icon-primary"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-plus"
+                    />
+                  </svg>
+                  <span>
+                    Aggiungi filtro
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            className="pt-5 pt-lg-2 col-lg-4 offset-lg-1"
+          >
+            <div
+              className="link-list-wrapper"
+            >
+              <ul
+                className="footer-list clearfix link-list"
+              >
+                <li>
+                  <h3
+                    className="header list-item"
+                  >
+                    Tutti i Servizi
+                  </h3>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="#"
+                  >
+                    <span>
+                      Anagrafe e stato civile
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="#"
+                  >
+                    <span>
+                      Cultura e tempo libero
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="#"
+                  >
+                    <span>
+                      Vita lavorativa
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="#"
+                  >
+                    <span>
+                      Attività produttiva e commercio
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="#"
+                  >
+                    <span>
+                      Appalti pubblici
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="#"
+                  >
+                    <span>
+                      Catasto e urbanistica
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-controls="altri-servizi"
+                    aria-expanded="true"
+                    className="large medium left-icon list-item"
+                    id="altri-servizi"
+                  >
+                    <svg
+                      className="icon right icon-primary"
+                    >
+                      <use
+                        xlinkHref="sprite.svg#it-more-items"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <ul
+                  aria-expanded="false"
+                  className="link-sublist px-0 collapse"
+                  style={Object {}}
+                  toggler="#altri-servizi"
+                >
+                  <li>
+                    <a
+                      className="list-item"
+                    >
+                      Turismo
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="list-item"
+                    >
+                      Mobilità e trasporti
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="list-item"
+                    >
+                      Educazione e formazione
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="list-item"
+                    >
+                      Giustizia e sicurezza pubblica
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="list-item"
+                    >
+                      Tributi e finanze
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="list-item"
+                    >
+                      Ambiente
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="list-item"
+                    >
+                      Salute, benessere e assistenza
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="list-item"
+                    >
+                      Autorizzazioni
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="list-item"
+                    >
+                      Agricoltura
+                    </a>
+                  </li>
+                </ul>
+                <li>
+                  <a
+                    className="medium list-item"
+                    href="#"
+                  >
+                    <span>
+                      Tutti i servizi
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="in-evidenza"
+      >
+        <div
+          className="bg-light py-5"
+        >
+          <div
+            className="px-4 container"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col"
+              >
+                <h3
+                  className="mb-4"
+                >
+                  In evidenza
+                </h3>
+              </div>
+            </div>
+            <div
+              className="row"
+            >
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <article
+                  className="card-wrapper card-space"
+                >
+                  <div
+                    className="card-bg card-big rounded shadow card"
+                  >
+                    <div
+                      className="flag-icon "
+                    />
+                    <div
+                      className="etichetta"
+                    >
+                      <svg
+                        className="icon"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-pa"
+                        />
+                      </svg>
+                      <span>
+                        Luoghi
+                      </span>
+                    </div>
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="card-title"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor…
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <article
+                  className="card-wrapper card-space"
+                >
+                  <div
+                    className="card-bg card-big rounded shadow card"
+                  >
+                    <div
+                      className="flag-icon invisible"
+                    />
+                    <div
+                      className="etichetta"
+                    >
+                      <svg
+                        className="icon"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-user"
+                        />
+                      </svg>
+                      <span>
+                        Funzionari amministrativi
+                      </span>
+                    </div>
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="card-title"
+                      >
+                        Lorem ipsum dolor sit amet 
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore et
+                              dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <article
+                  className="card-wrapper card-space"
+                >
+                  <div
+                    className="card-bg card-big rounded shadow card"
+                  >
+                    <div
+                      className="flag-icon invisible"
+                    />
+                    <div
+                      className="etichetta"
+                    >
+                      <svg
+                        className="icon"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-pa"
+                        />
+                      </svg>
+                      <span>
+                        Uffici
+                      </span>
+                    </div>
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="card-title"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor…
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <article
+                  className="card-wrapper card-space"
+                >
+                  <div
+                    className="card-bg card-big rounded shadow card"
+                  >
+                    <div
+                      className="flag-icon invisible"
+                    />
+                    <div
+                      className="etichetta"
+                    >
+                      <svg
+                        className="icon"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-pa"
+                        />
+                      </svg>
+                      <span>
+                        Luoghi
+                      </span>
+                    </div>
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="card-title"
+                      >
+                        Lorem ipsum dolor sit amet 
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore et
+                              dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <article
+                  className="card-wrapper card-space"
+                >
+                  <div
+                    className="card-bg card-big rounded shadow card"
+                  >
+                    <div
+                      className="flag-icon invisible"
+                    />
+                    <div
+                      className="etichetta"
+                    >
+                      <svg
+                        className="icon"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-user"
+                        />
+                      </svg>
+                      <span>
+                        Politici
+                      </span>
+                    </div>
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="card-title"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor…
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <article
+                  className="card-wrapper card-space"
+                >
+                  <div
+                    className="card-bg card-big rounded shadow card"
+                  >
+                    <div
+                      className="flag-icon invisible"
+                    />
+                    <div
+                      className="etichetta"
+                    >
+                      <svg
+                        className="icon"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-pa"
+                        />
+                      </svg>
+                      <span>
+                        Luoghi
+                      </span>
+                    </div>
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="card-title"
+                      >
+                        Lorem ipsum dolor sit amet 
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore et
+                              dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          className="py-5"
+        >
+          <div
+            className="px-4 container"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col"
+              >
+                <h3
+                  className="mb-4"
+                >
+                  Tutti i Servizi
+                </h3>
+              </div>
+            </div>
+            <div
+              className="row"
+            >
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Anagrafe e stato civile
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Cultura e tempo libero
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Vita lavorativa
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Attività produttiva e commercio
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Appalti pubblici
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Catasto e urbanistica
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Turismo
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Mobilità e trasporti
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Educazione e formazione
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Giustizia e sicurezza pubblica
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Tributi e finanze
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Ambiente
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Salute, benessere e assistenza
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Autorizzazioni
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-6 col-lg-4"
+                size="12"
+              >
+                <div
+                  className="card-wrapper"
+                >
+                  <div
+                    className="card"
+                  >
+                    <div
+                      className="card-body"
+                    >
+                      <h5
+                        className="big-heading card-title"
+                      >
+                        Agricoltura
+                      </h5>
+                      <p
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <a
+                        className="read-more"
+                        href="#"
+                        icon="it-arrow-right"
+                      >
+                        <span
+                          className="text"
+                        >
+                          Leggi di più
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="py-5"
+        >
+          <div
+            className="px-4 container"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col"
+              >
+                <h3
+                  className="mb-4"
+                >
+                  Argomenti
+                </h3>
+              </div>
+            </div>
+            <div
+              className="row"
+            >
+              <div
+                className="col text-center"
+              >
+                <a
+                  href="#"
+                >
+                  <span
+                    className="chip chip-simple chip-primary"
+                  >
+                    <span
+                      className="chip-label"
+                    >
+                      Cultura
+                    </span>
+                  </span>
+                </a>
+                <a
+                  href="#"
+                >
+                  <span
+                    className="chip chip-simple chip-primary"
+                  >
+                    <span
+                      className="chip-label"
+                    >
+                      Muoversi
+                    </span>
+                  </span>
+                </a>
+                <a
+                  href="#"
+                >
+                  <span
+                    className="chip chip-simple chip-primary"
+                  >
+                    <span
+                      className="chip-label"
+                    >
+                      Argomento di esempio
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer
       className="it-footer"
     >

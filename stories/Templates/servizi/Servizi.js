@@ -29,6 +29,10 @@ const Servizi = () => {
     ''
   )
 
+  const div = document.createElement('div')
+  div.setAttribute('id', 'altri-servizi')
+  document.body.appendChild(div)
+
   const townName = text('Comune', 'Nome del Comune')
   const townTagLine = text('Motto Comune', 'Uno dei tanti Comuni d Italia')
 
