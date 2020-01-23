@@ -290,6 +290,7 @@ const EsempiInterattiviComponent = () => {
             <CardReadMore
               iconName="it-arrow-right"
               text="Leggi di più"
+              tag={'a'}
               href={linkOption}
             />
           </CardBody>
