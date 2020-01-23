@@ -3,14 +3,24 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 import Icon from '../Icon/Icon'
-import tagPropType from 'reactstrap/src/utils'
 
 const propTypes = {
   className: PropTypes.string,
   iconName: PropTypes.string,
   href: PropTypes.string,
   text: PropTypes.string,
-  tag: tagPropType
+  tag: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.string,
+    PropTypes.shape({ $$typeof: PropTypes.symbol, render: PropTypes.func }),
+    PropTypes.arrayOf(
+      PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.string,
+        PropTypes.shape({ $$typeof: PropTypes.symbol, render: PropTypes.func })
+      ])
+    )
+  ])
 }
 
 const defaultProps = {
