@@ -1,5 +1,5 @@
 import React from 'react'
-import NotificationWithIcon from '../../src/components/Notification/NotificationWithIcon'
+import Notification from '../../src/components/Notification/Notification'
 
 const Example = () => {
   return (
@@ -9,13 +9,13 @@ const Example = () => {
           <p>
             <strong>Success</strong>
           </p>
-          <NotificationWithIcon state="success" header="Notification Title" />
+          <Notification withIcon state="success" header="Notification Title" />
         </div>
         <div className="col-12 col-md-6">
           <p>
             <strong>Error</strong>
           </p>
-          <NotificationWithIcon state="error" header="Notification Title" />
+          <Notification withIcon state="error" header="Notification Title" />
         </div>
       </div>
       <div className="row mb-5">
@@ -23,13 +23,13 @@ const Example = () => {
           <p>
             <strong>Info</strong>
           </p>
-          <NotificationWithIcon state="info" header="Notification Title" />
+          <Notification withIcon state="info" header="Notification Title" />
         </div>
         <div className="col-12 col-md-6" style={{ top: 45 }}>
           <p>
             <strong>Warning</strong>
           </p>
-          <NotificationWithIcon state="warning" header="Notification Title" />
+          <Notification withIcon state="warning" header="Notification Title" />
         </div>
       </div>
     </div>

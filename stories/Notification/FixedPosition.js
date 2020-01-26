@@ -1,5 +1,5 @@
 import React from 'react'
-import NotificationWithIcon from '../../src/components/Notification/NotificationWithIcon'
+import Notification from '../../src/components/Notification/Notification'
 
 // custom style
 const styleTop = {
@@ -27,7 +27,8 @@ const Example = () => {
   return (
     <div className="container test-desktop">
       <div style={styleTop}>
-        <NotificationWithIcon
+        <Notification
+          withIcon
           header="Top Fix"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
           fix="top-fix"
@@ -35,21 +36,24 @@ const Example = () => {
         />
       </div>
       <div style={styleLeft}>
-        <NotificationWithIcon
+        <Notification
+          withIcon
           header="Left Fix"
           fix="left-fix"
           state="success"
         />
       </div>
       <div style={styleRight}>
-        <NotificationWithIcon
+        <Notification
+          withIcon
           header="Right Fix"
           fix="right-fix"
           state="success"
         />
       </div>
       <div style={styleBottom}>
-        <NotificationWithIcon
+        <Notification
+          withIcon
           header="Bottom Fix"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
           fix="bottom-fix"

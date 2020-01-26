@@ -1,6 +1,5 @@
 import React from 'react'
-import NotificationWithIcon from '../../src/components/Notification/NotificationWithIcon'
-import StandardNotification from '../../src/components/Notification/StandardNotification'
+import Notification from '../../src/components/Notification/Notification'
 
 const Examples = () => (
   <div className="container test-docs">
@@ -9,13 +8,17 @@ const Examples = () => (
         <p className="mb-4">
           <strong>Notification standard</strong>
         </p>
-        <StandardNotification header="Notification title" dismissable={true} />
+        <Notification 
+          header="Notification title" 
+          dismissable={true} 
+        />
       </div>
       <div className="col-12 col-md-6">
         <p className="mb-4">
           <strong>Notification with icon</strong>
         </p>
-        <NotificationWithIcon
+        <Notification
+          withIcon
           header="Notification title"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
           type="success"

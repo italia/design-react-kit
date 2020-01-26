@@ -1,5 +1,5 @@
 import React from 'react'
-import NotificationWithIcon from '../../src/components/Notification/NotificationWithIcon'
+import Notification from '../../src/components/Notification/Notification'
 
 // custom style
 const OffsetStyle = {
@@ -14,6 +14,7 @@ const XOffsetStyle = {
 const YOffsetStyle = {
   marginTop: '50px'
 }
+
 const Example = () => {
   return (
     <div className="container test-docs">
@@ -24,7 +25,11 @@ const Example = () => {
           <p>
             <strong>Basic (rounding at 4 corners)</strong>
           </p>
-          <NotificationWithIcon header="Notification Title" state="success" />
+          <Notification 
+            withIcon          
+            header="Notification Title" 
+            state="success" 
+          />
         </div>
       </div>
       <div className="col-12 col-md-6" style={OffsetStyle}>
@@ -32,7 +37,8 @@ const Example = () => {
           <strong>top-fix</strong>
         </p>
         <div className="row mb-5" style={XOffsetStyle}>
-          <NotificationWithIcon
+          <Notification
+            withIcon
             header="Notification Title"
             state="success"
             fix="top-fix"
@@ -42,7 +48,8 @@ const Example = () => {
           <strong>bottom-fix</strong>
         </p>
         <div className="row mb-5" style={XOffsetStyle}>
-          <NotificationWithIcon
+          <Notification
+            withIcon
             header="Notification Title"
             state="success"
             fix="bottom-fix"
@@ -52,7 +59,8 @@ const Example = () => {
           <strong>left-fix</strong>
         </p>
         <div className="row mb-5" style={YOffsetStyle}>
-          <NotificationWithIcon
+          <Notification
+            withIcon
             header="Notification Title"
             state="success"
             fix="left-fix"
@@ -62,7 +70,8 @@ const Example = () => {
           <strong>right-fix</strong>
         </p>
         <div className="row mb-5" style={YOffsetStyle}>
-          <NotificationWithIcon
+          <Notification
+            withIcon
             header="Notification Title"
             state="success"
             fix="right-fix"
