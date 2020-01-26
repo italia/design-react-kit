@@ -8,13 +8,13 @@ const Examples = () => (
         <p className="mb-4">
           <strong>Notification standard</strong>
         </p>
-        <Notification header="Notification title"/>
+        <Notification header="Notification title" />
       </div>
       <div className="col-12 col-md-6">
         <p className="mb-4">
           <strong>Notification with icon</strong>
         </p>
-        <Notification header="Notification title" withIcon/>
+        <Notification header="Notification title" withIcon />
       </div>
     </div>
   </div>
