@@ -32,7 +32,6 @@ const NotificationWithIcon = props => {
     state,
     isDismissable
   )
-  const btnClass = classNames('btn', 'notification-close')
   var iconClass = 'it-check-circle'
   switch (state) {
     case 'success':
@@ -47,7 +46,7 @@ const NotificationWithIcon = props => {
     case 'warning':
       iconClass = 'it-error'
   }
-  console.log(wrapperClass)
+  const btnClass = classNames('btn', 'notification-close')
   return (
     <Toast className={wrapperClass} style={NotificationStyle}>
       <ToastHeader>
