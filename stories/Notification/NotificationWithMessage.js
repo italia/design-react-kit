@@ -6,7 +6,7 @@ const NotificationStyle = {
   bottom: 'auto',
   top: 'auto',
   left: 'auto'
-}    
+}
 
 const Examples = () => (
   <div className="container test-docs">

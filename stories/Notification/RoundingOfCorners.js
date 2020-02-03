@@ -34,10 +34,10 @@ const Example = () => {
           <p>
             <strong>Basic (rounding at 4 corners)</strong>
           </p>
-          <Notification 
-            withIcon 
-            header="Notification Title" 
-            state="success" 
+          <Notification
+            withIcon
+            header="Notification Title"
+            state="success"
             style={NotificationStyle}
           />
         </div>

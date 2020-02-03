@@ -6,7 +6,7 @@ const NotificationStyle = {
   bottom: 'auto',
   top: 'auto',
   left: 'auto'
-}          
+}
 
 const Examples = () => (
   <div className="container test-docs">
@@ -15,10 +15,10 @@ const Examples = () => (
         <p className="mb-4">
           <strong>Notification standard</strong>
         </p>
-        <Notification 
-          header="Notification title" 
-          dismissable={true} 
-          style={NotificationStyle} 
+        <Notification
+          header="Notification title"
+          dismissable={true}
+          style={NotificationStyle}
         />
       </div>
       <div className="col-12 col-md-6">

@@ -21,7 +21,11 @@ const Examples = () => (
         <p className="mb-4">
           <strong>Notification with icon</strong>
         </p>
-        <Notification header="Notification title" withIcon style={NotificationStyle} />
+        <Notification
+          header="Notification title"
+          withIcon
+          style={NotificationStyle}
+        />
       </div>
     </div>
   </div>

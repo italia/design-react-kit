@@ -11,11 +11,12 @@ const propTypes = {
   dismissable: PropTypes.bool,
   fix: PropTypes.string,
   withIcon: PropTypes.bool,
+  style: PropTypes.object
 }
 
 const defaultProps = {}
 
-function pickIcon(state){
+function pickIcon(state) {
   var iconClass = 'it-check-circle'
   switch (state) {
     case 'success':
@@ -30,7 +31,7 @@ function pickIcon(state){
     case 'warning':
       iconClass = 'it-error'
   }
-  return iconClass;
+  return iconClass
 }
 const Notification = props => {
   const { header, content, state, dismissable, fix, withIcon, style } = props
