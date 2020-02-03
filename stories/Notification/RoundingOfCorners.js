@@ -7,12 +7,21 @@ const OffsetStyle = {
   left: 50,
   bottom: 50
 }
+
 const XOffsetStyle = {
   WebkitTransform: 'translateX(30%)',
   marginTop: '10px'
 }
+
 const YOffsetStyle = {
   marginTop: '50px'
+}
+
+const NotificationStyle = {
+  right: 'auto',
+  bottom: 'auto',
+  top: 'auto',
+  left: 'auto'
 }
 
 const Example = () => {
@@ -25,7 +34,12 @@ const Example = () => {
           <p>
             <strong>Basic (rounding at 4 corners)</strong>
           </p>
-          <Notification withIcon header="Notification Title" state="success" />
+          <Notification 
+            withIcon 
+            header="Notification Title" 
+            state="success" 
+            style={NotificationStyle}
+          />
         </div>
       </div>
       <div className="col-12 col-md-6" style={OffsetStyle}>
@@ -38,6 +52,7 @@ const Example = () => {
             header="Notification Title"
             state="success"
             fix="top-fix"
+            style={NotificationStyle}
           />
         </div>
         <p style={{ marginTop: '90px' }}>
@@ -49,6 +64,7 @@ const Example = () => {
             header="Notification Title"
             state="success"
             fix="bottom-fix"
+            style={NotificationStyle}
           />
         </div>
         <p style={{ marginTop: '90px' }}>
@@ -60,6 +76,7 @@ const Example = () => {
             header="Notification Title"
             state="success"
             fix="left-fix"
+            style={NotificationStyle}
           />
         </div>
         <p>
@@ -71,6 +88,7 @@ const Example = () => {
             header="Notification Title"
             state="success"
             fix="right-fix"
+            style={NotificationStyle}
           />
         </div>
       </div>

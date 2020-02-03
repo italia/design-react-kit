@@ -1,32 +1,10 @@
 import React from 'react'
 import Notification from '../../src/components/Notification/Notification'
 
-// custom style
-const styleTop = {
-  position: 'absolute',
-  left: 626
-}
-
-const styleLeft = {
-  position: 'absolute',
-  top: 300
-}
-
-const styleRight = {
-  position: 'absolute',
-  top: 300,
-  right: 380
-}
-
-const styleBottom = {
-  position: 'absolute',
-  left: 626,
-  top: 400
-}
 const Example = () => {
   return (
     <div className="container test-desktop">
-      <div style={styleTop}>
+      <div>
         <Notification
           withIcon
           header="Top Fix"
@@ -35,7 +13,7 @@ const Example = () => {
           state="success"
         />
       </div>
-      <div style={styleLeft}>
+      <div>
         <Notification
           withIcon
           header="Left Fix"
@@ -43,7 +21,7 @@ const Example = () => {
           state="success"
         />
       </div>
-      <div style={styleRight}>
+      <div>
         <Notification
           withIcon
           header="Right Fix"
@@ -51,7 +29,7 @@ const Example = () => {
           state="success"
         />
       </div>
-      <div style={styleBottom}>
+      <div>
         <Notification
           withIcon
           header="Bottom Fix"

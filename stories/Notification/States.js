@@ -1,6 +1,13 @@
 import React from 'react'
 import Notification from '../../src/components/Notification/Notification'
 
+const NotificationStyle = {
+  right: 'auto',
+  bottom: 'auto',
+  top: 'auto',
+  left: 'auto'
+}
+
 const Example = () => {
   return (
     <div className="container test-docs">
@@ -9,13 +16,23 @@ const Example = () => {
           <p>
             <strong>Success</strong>
           </p>
-          <Notification withIcon state="success" header="Notification Title" />
+          <Notification 
+            withIcon 
+            state="success" 
+            header="Notification Title" 
+            style={NotificationStyle}  
+          />
         </div>
         <div className="col-12 col-md-6">
           <p>
             <strong>Error</strong>
           </p>
-          <Notification withIcon state="error" header="Notification Title" />
+          <Notification 
+            withIcon 
+            state="error" 
+            header="Notification Title" 
+            style={NotificationStyle}
+          />
         </div>
       </div>
       <div className="row mb-5">
@@ -23,13 +40,23 @@ const Example = () => {
           <p>
             <strong>Info</strong>
           </p>
-          <Notification withIcon state="info" header="Notification Title" />
+          <Notification 
+            withIcon 
+            state="info" 
+            header="Notification Title"
+            style={NotificationStyle} 
+          />
         </div>
         <div className="col-12 col-md-6" style={{ top: 45 }}>
           <p>
             <strong>Warning</strong>
           </p>
-          <Notification withIcon state="warning" header="Notification Title" />
+          <Notification 
+            withIcon 
+            state="warning" 
+            header="Notification Title" 
+            style={NotificationStyle}  
+          />
         </div>
       </div>
     </div>

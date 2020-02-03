@@ -1,6 +1,13 @@
 import React from 'react'
 import Notification from '../../src/components/Notification/Notification'
 
+const NotificationStyle = {
+  right: 'auto',
+  bottom: 'auto',
+  top: 'auto',
+  left: 'auto'
+}    
+
 const Examples = () => (
   <div className="container test-docs">
     <div className="row">
@@ -11,6 +18,7 @@ const Examples = () => (
         <Notification
           header="Notification title"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
+          style={NotificationStyle}
         />
       </div>
       <div className="col-12 col-md-6">
@@ -22,6 +30,7 @@ const Examples = () => (
           header="Notification title"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
           type="success"
+          style={NotificationStyle}
         />
       </div>
     </div>

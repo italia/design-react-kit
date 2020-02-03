@@ -10,28 +10,12 @@ const propTypes = {
   state: PropTypes.string,
   dismissable: PropTypes.bool,
   fix: PropTypes.string,
-  withIcon: PropTypes.bool
+  withIcon: PropTypes.bool,
 }
 
-// custom style
-const NotificationStyle = {
-  right: 'auto',
-  bottom: 'auto',
-  top: 'auto',
-  left: 'auto'
-}
+const defaultProps = {}
 
-const NotificationWithIcon = props => {
-  const { header, content, state, dismissable, fix, withIcon } = props
-  const isDismissable = dismissable ? 'dismissable' : null
-  const isIcon = withIcon ? 'with-icon' : null
-  const wrapperClass = classNames(
-    'notification',
-    fix,
-    isIcon,
-    state,
-    isDismissable
-  )
+function pickIcon(state){
   var iconClass = 'it-check-circle'
   switch (state) {
     case 'success':
@@ -46,29 +30,42 @@ const NotificationWithIcon = props => {
     case 'warning':
       iconClass = 'it-error'
   }
+  return iconClass;
+}
+const Notification = props => {
+  const { header, content, state, dismissable, fix, withIcon, style } = props
+  const wrapperClass = classNames(
+    'notification',
+    fix,
+    withIcon ? 'with-icon' : null,
+    state,
+    dismissable ? 'dismissable' : null
+  )
+  const icon = pickIcon(state)
   const btnClass = classNames('btn', 'notification-close')
   return (
-    <Toast className={wrapperClass} style={NotificationStyle}>
+    <Toast className={wrapperClass} style={style}>
       <ToastHeader>
         <h5>
           {header}
-          <Icon icon={iconClass} />
+          <Icon icon={icon} />
         </h5>
       </ToastHeader>
-      {content ? (
+      {content && (
         <ToastBody>
           <p>{content}</p>
         </ToastBody>
-      ) : null}
-      {isDismissable ? (
+      )}
+      {dismissable && (
         <Button className={btnClass}>
           <Icon icon="it-close" />
           <span className="sr-only">Chiudi notifica: Titolo notifica</span>
         </Button>
-      ) : null}
+      )}
     </Toast>
   )
 }
 
-NotificationWithIcon.propTypes = propTypes
-export default NotificationWithIcon
+Notification.defaultProps = defaultProps
+Notification.propTypes = propTypes
+export default Notification

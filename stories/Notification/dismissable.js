@@ -1,6 +1,13 @@
 import React from 'react'
 import Notification from '../../src/components/Notification/Notification'
 
+const NotificationStyle = {
+  right: 'auto',
+  bottom: 'auto',
+  top: 'auto',
+  left: 'auto'
+}          
+
 const Examples = () => (
   <div className="container test-docs">
     <div className="row">
@@ -8,7 +15,11 @@ const Examples = () => (
         <p className="mb-4">
           <strong>Notification standard</strong>
         </p>
-        <Notification header="Notification title" dismissable={true} />
+        <Notification 
+          header="Notification title" 
+          dismissable={true} 
+          style={NotificationStyle} 
+        />
       </div>
       <div className="col-12 col-md-6">
         <p className="mb-4">
@@ -20,6 +31,7 @@ const Examples = () => (
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
           type="success"
           dismissable={true}
+          style={NotificationStyle}
         />
       </div>
     </div>
