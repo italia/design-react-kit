@@ -28,11 +28,12 @@ const Examples = () => (
         <Notification
           withIcon
           header="Notification title"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
           type="success"
           dismissable={true}
           style={NotificationStyle}
-        />
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
+        </Notification>
       </div>
     </div>
   </div>

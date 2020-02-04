@@ -9,8 +9,9 @@ const Example = () => {
           withIcon
           state="success"
           header="Notification Title"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
-        />
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+        </Notification>
       </div>
     </div>
   )

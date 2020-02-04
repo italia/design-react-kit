@@ -8,10 +8,11 @@ const Example = () => {
         <Notification
           withIcon
           header="Top Fix"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
           fix="top-fix"
           state="success"
-        />
+        >
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+        </Notification>
       </div>
       <div>
         <Notification
@@ -33,10 +34,11 @@ const Example = () => {
         <Notification
           withIcon
           header="Bottom Fix"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
           fix="bottom-fix"
           state="success"
-        />
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+        </Notification>
       </div>
     </div>
   )

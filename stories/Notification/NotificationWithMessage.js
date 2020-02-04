@@ -17,9 +17,10 @@ const Examples = () => (
         </p>
         <Notification
           header="Notification title"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
           style={NotificationStyle}
-        />
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+        </Notification>
       </div>
       <div className="col-12 col-md-6">
         <p className="mb-4">
@@ -28,10 +29,11 @@ const Examples = () => (
         <Notification
           withIcon
           header="Notification title"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
           type="success"
           style={NotificationStyle}
-        />
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+        </Notification>
       </div>
     </div>
   </div>

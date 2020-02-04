@@ -34,7 +34,7 @@ function pickIcon(state) {
   return iconClass
 }
 const Notification = props => {
-  const { header, content, state, dismissable, fix, withIcon, style } = props
+  const { header, state, dismissable, fix, withIcon, style, ...children } = props
   const wrapperClass = classNames(
     'notification',
     fix,
@@ -52,11 +52,13 @@ const Notification = props => {
           <Icon icon={icon} />
         </h5>
       </ToastHeader>
-      {content && (
+      {props.children &&
         <ToastBody>
-          <p>{content}</p>
+          <p>{props.children}</p>
         </ToastBody>
-      )}
+      }
+      
+      
       {dismissable && (
         <Button className={btnClass}>
           <Icon icon="it-close" />
