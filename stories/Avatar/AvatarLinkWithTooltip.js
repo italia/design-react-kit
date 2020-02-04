@@ -7,6 +7,13 @@ import {
 } from '../../src'
 
 const AvatarLinkWithTooltip = () => {
+  // TODO find a better way to handle this
+  // Storyshot does not use the dom so can't render refs
+  // to fix the problem we append the elements manually
+  // this fixes tests without touching the rendered components
+  // nor storybook
+  // https://github.com/storybookjs/storybook/issues/886
+  // https://github.com/infinitered/addon-storyshots#using-createnodemock-to-mock-refs
   const ids = ['Example1', 'Example2', 'Example3', 'Example4']
 
   ids.map((id, i) => {

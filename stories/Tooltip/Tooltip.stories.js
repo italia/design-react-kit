@@ -118,6 +118,14 @@ const PosizioniComponent = () => {
 }
 
 const EsempiInterattiviComponent = () => {
+  // TODO find a better way to handle this
+  // Storyshot does not use the dom so can't render refs
+  // to fix the problem we append the elements manually
+  // this fixes tests without touching the rendered components
+  // nor storybook
+  // https://github.com/storybookjs/storybook/issues/886
+  // https://github.com/infinitered/addon-storyshots#using-createnodemock-to-mock-refs
+
   const id = 'example'
   const div = document.createElement('div')
   div.setAttribute('id', id)
