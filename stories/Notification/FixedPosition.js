@@ -5,13 +5,9 @@ const Example = () => {
   return (
     <div className="container test-desktop">
       <div>
-        <Notification
-          withIcon
-          header="Top Fix"
-          fix="top-fix"
-          state="success"
-        >
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+        <Notification withIcon header="Top Fix" fix="top-fix" state="success">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor…
         </Notification>
       </div>
       <div>
@@ -35,9 +31,9 @@ const Example = () => {
           withIcon
           header="Bottom Fix"
           fix="bottom-fix"
-          state="success"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+          state="success">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor…
         </Notification>
       </div>
     </div>

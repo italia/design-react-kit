@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 
 const propTypes = {
   header: PropTypes.string,
-  content: PropTypes.string,
+  children: PropTypes.element,
   state: PropTypes.string,
   dismissable: PropTypes.bool,
   fix: PropTypes.string,
@@ -34,7 +34,15 @@ function pickIcon(state) {
   return iconClass
 }
 const Notification = props => {
-  const { header, state, dismissable, fix, withIcon, style, ...children } = props
+  const {
+    header,
+    state,
+    dismissable,
+    fix,
+    withIcon,
+    style,
+    ...children
+  } = props
   const wrapperClass = classNames(
     'notification',
     fix,
@@ -52,13 +60,12 @@ const Notification = props => {
           <Icon icon={icon} />
         </h5>
       </ToastHeader>
-      {props.children &&
-        <ToastBody>
+      {props.children && (
+        <ToastBody {...children}>
           <p>{props.children}</p>
         </ToastBody>
-      }
-      
-      
+      )}
+
       {dismissable && (
         <Button className={btnClass}>
           <Icon icon="it-close" />

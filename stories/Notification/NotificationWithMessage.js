@@ -15,11 +15,9 @@ const Examples = () => (
         <p className="mb-4">
           <strong>Notification standard</strong>
         </p>
-        <Notification
-          header="Notification title"
-          style={NotificationStyle}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+        <Notification header="Notification title" style={NotificationStyle}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor…
         </Notification>
       </div>
       <div className="col-12 col-md-6">
@@ -30,9 +28,9 @@ const Examples = () => (
           withIcon
           header="Notification title"
           type="success"
-          style={NotificationStyle}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+          style={NotificationStyle}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor…
         </Notification>
       </div>
     </div>

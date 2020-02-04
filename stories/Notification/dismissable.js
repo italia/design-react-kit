@@ -30,9 +30,9 @@ const Examples = () => (
           header="Notification title"
           type="success"
           dismissable={true}
-          style={NotificationStyle}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…"
+          style={NotificationStyle}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor…
         </Notification>
       </div>
     </div>
