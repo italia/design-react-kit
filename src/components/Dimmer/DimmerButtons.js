@@ -22,7 +22,11 @@ const DimmerButtons = props => {
     'bg-dark': dark
   })
 
-  return <div className={classes} {...rest}></div>
+  return (
+    <div className={classes} {...rest}>
+      {children}
+    </div>
+  )
 }
 
 DimmerButtons.propTypes = propTypes

@@ -14,7 +14,7 @@ const Dimmer = props => {
   const { iconName, color, className, ...attributes } = props
   const { children, ...rest } = attributes
   const classes = classNames('dimmer', className, {
-    [`'dimmer-${color}'`]: color
+    [`dimmer-${color}`]: color
   })
   const innerClasses = classNames('dimmer-inner', className)
   const dimmerIcon = iconName && (
@@ -24,9 +24,10 @@ const Dimmer = props => {
   )
 
   return (
-    <div className={classes} {...rest}>
+    <div className={classes} {...rest} style={{ display: 'flex' }}>
       <div className={innerClasses} {...rest}>
         {dimmerIcon}
+        {children}
       </div>
     </div>
   )
