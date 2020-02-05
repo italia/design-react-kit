@@ -5,21 +5,21 @@ import classNames from 'classnames'
 import Icon from '../Icon/Icon'
 
 const propTypes = {
-  iconName: PropTypes.string,
+  icon: PropTypes.string,
   color: PropTypes.string,
   className: PropTypes.string
 }
 
 const Dimmer = props => {
-  const { iconName, color, className, ...attributes } = props
+  const { icon, color, className, ...attributes } = props
   const { children, ...rest } = attributes
   const classes = classNames('dimmer', className, {
     [`dimmer-${color}`]: color
   })
   const innerClasses = classNames('dimmer-inner', className)
-  const dimmerIcon = iconName && (
+  const dimmerIcon = icon && (
     <div className="dimmer-icon">
-      <Icon icon={iconName} />
+      <Icon icon={icon} />
     </div>
   )
 

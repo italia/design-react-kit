@@ -24,7 +24,7 @@ const EsempiComponent = () => {
   return (
     <div>
       <Fade in={fadeIn} tag="div" className="mt-3">
-        <Dimmer iconName="it-unlocked">
+        <Dimmer icon="it-unlocked">
           <p>
             Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
             dignissim cras. Dictum sit amet justo donec enim diam vulputate ut.
@@ -91,7 +91,7 @@ const ColorePrimarioComponent = () => {
   return (
     <div>
       <Fade in={fadeIn} tag="div" className="mt-3">
-        <Dimmer color="primary" iconName="it-unlocked">
+        <Dimmer color="primary" icon="it-unlocked">
           <p>
             Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
             dignissim cras. Dictum sit amet justo donec enim diam vulputate ut.
@@ -158,7 +158,7 @@ const DimmerConAzioniComponent = () => {
   return (
     <div>
       <Fade in={fadeIn} tag="div" className="mt-3">
-        <Dimmer iconName="it-unlocked">
+        <Dimmer icon="it-unlocked">
           <h4>Titolo Dimmer</h4>
           <DimmerButtons dark>
             <Button color="primary" outline>
@@ -211,7 +211,7 @@ const DimmerPrimaryActionsComponent = () => {
   return (
     <div>
       <Fade in={fadeIn} tag="div" className="mt-3">
-        <Dimmer color="primary" iconName="it-unlocked">
+        <Dimmer color="primary" icon="it-unlocked">
           <h4>Titolo Dimmer</h4>
           <DimmerButtons single dark>
             <Button color="primary">Azione primaria</Button>
