@@ -61,7 +61,7 @@ const Notification = props => {
           <Icon icon={icon} />
         </h5>
       </ToastHeader>
-      {props.children && <ToastBody {...attributes}>{children}</ToastBody>}
+      {children && <ToastBody {...attributes}>{children}</ToastBody>}
 
       {dismissable && (
         <Button className={btnClass}>
