@@ -41,7 +41,8 @@ const Notification = props => {
     fix,
     withIcon,
     style,
-    ...children
+    children,
+    ...attributes
   } = props
   const wrapperClass = classNames(
     'notification',
@@ -60,11 +61,7 @@ const Notification = props => {
           <Icon icon={icon} />
         </h5>
       </ToastHeader>
-      {props.children && (
-        <ToastBody {...children}>
-          <p>{props.children}</p>
-        </ToastBody>
-      )}
+      {props.children && <ToastBody {...attributes}>{children}</ToastBody>}
 
       {dismissable && (
         <Button className={btnClass}>
