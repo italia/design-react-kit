@@ -147,3 +147,5 @@ export {
 export { default as Chip } from './components/Chips/Chip'
 export { default as ChipLabel } from './components/Chips/ChipLabel'
 export { default as FontLoader } from './components/FontLoader/FontLoader'
+export { default as Dimmer } from './components/Dimmer/Dimmer'
+export { default as DimmerButtons } from './components/Dimmer/DimmerButtons'
