@@ -1,0 +1,1377 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Header Header Complete 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="it-header-wrapper"
+    >
+      <div
+        className="it-header-slim-wrapper"
+      >
+        <div
+          className="container"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col-12"
+            >
+              <div
+                className="it-header-slim-wrapper-content"
+              >
+                <a
+                  className="d-lg-block d-none navbar-brand"
+                >
+                  Ente appartenenza/Owner
+                </a>
+                <div
+                  className="nav-mobile"
+                >
+                  <nav
+                    className=""
+                  >
+                    <a
+                      aria-label="Toggle navigation"
+                      className="it-opener d-lg-none navbar-toggler"
+                      href="#"
+                      onClick={[Function]}
+                      type=""
+                    >
+                      <span>
+                        Ente appartenenza/Owner
+                      </span>
+                      <svg
+                        className="icon"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-expand"
+                        />
+                      </svg>
+                    </a>
+                    <div
+                      aria-expanded="false"
+                      className="link-list-wrapper collapse"
+                      style={Object {}}
+                    >
+                      <div
+                        className="link-list-wrapper"
+                      >
+                        <ul
+                          className="link-list"
+                        >
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link 1
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="active list-item"
+                              href="#"
+                            >
+                              Link 2 Active
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+                <div
+                  className="it-header-slim-right-zone header-slim-right-zone"
+                >
+                  <div
+                    className="dropdown nav-item"
+                    onKeyDown={[Function]}
+                  >
+                    <a
+                      aria-expanded={false}
+                      aria-haspopup={true}
+                      className="dropdown-toggle nav-link"
+                      href="#"
+                      onClick={[Function]}
+                    >
+                      ITA
+                      <svg
+                        className="icon"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-expand"
+                        />
+                      </svg>
+                    </a>
+                    <div
+                      aria-hidden={true}
+                      className="dropdown-menu"
+                      role="menu"
+                      tabIndex="-1"
+                    >
+                      <div
+                        className="row"
+                      >
+                        <div
+                          className="col"
+                          size="12"
+                        >
+                          <div
+                            className="link-list-wrapper"
+                          >
+                            <ul
+                              className="link-list"
+                            >
+                              <li>
+                                <a
+                                  className="list-item dropdown-item"
+                                  href="#"
+                                  onClick={[Function]}
+                                  role="menuitem"
+                                  tabIndex="0"
+                                >
+                                  <span>
+                                    ITA
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  className="list-item dropdown-item"
+                                  href="#"
+                                  onClick={[Function]}
+                                  role="menuitem"
+                                  tabIndex="0"
+                                >
+                                  <span>
+                                    ENG
+                                  </span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="it-access-top-wrapper"
+                  >
+                    <button
+                      aria-label={null}
+                      className="btn btn-primary btn-sm"
+                      onClick={[Function]}
+                    >
+                      Accedi
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="it-nav-wrapper"
+      >
+        <div
+          className="it-header-center-wrapper"
+        >
+          <div
+            className="container"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-12"
+              >
+                <div
+                  className="it-header-center-content-wrapper"
+                >
+                  <div
+                    className="it-brand-wrapper"
+                  >
+                    <a>
+                      <svg
+                        className="icon"
+                      >
+                        <use
+                          xlinkHref="sprite.svg#it-code-circle"
+                        />
+                      </svg>
+                      <div
+                        className="it-brand-text"
+                      >
+                        <h2
+                          className="no_toc"
+                        >
+                          Lorem Ipsum Lorem Ipsum
+                        </h2>
+                        <h3
+                          className="no_toc d-none d-md-block"
+                        >
+                          Inserire qui la tag line
+                        </h3>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    className="it-right-zone"
+                  >
+                    <div
+                      className="it-socials d-none d-md-flex"
+                    >
+                      <span>
+                        Seguici su
+                      </span>
+                      <ul>
+                        <li>
+                          <a
+                            aria-label="Facebook"
+                            href="#"
+                            target="_blank"
+                          >
+                            <svg
+                              className="icon"
+                            >
+                              <use
+                                xlinkHref="sprite.svg#it-facebook"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            aria-label="Github"
+                            href="#"
+                            target="_blank"
+                          >
+                            <svg
+                              className="icon"
+                            >
+                              <use
+                                xlinkHref="sprite.svg#it-github"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            aria-label="Twitter"
+                            href="#"
+                            target="_blank"
+                          >
+                            <svg
+                              className="icon"
+                            >
+                              <use
+                                xlinkHref="sprite.svg#it-twitter"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      className="it-search-wrapper"
+                    >
+                      <span
+                        className="d-none d-md-block"
+                      >
+                        Cerca
+                      </span>
+                      <a
+                        aria-label="Cerca"
+                        className="search-link rounded-icon"
+                      >
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-search"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="it-header-navbar-wrapper"
+        >
+          <div
+            className="container"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-12"
+              >
+                <nav
+                  className="navbar has-megamenu navbar navbar-expand-lg"
+                >
+                  <button
+                    aria-controls="nav1"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    className="custom-navbar-toggler navbar-toggler"
+                    href="#"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <svg
+                      className="icon"
+                    >
+                      <use
+                        xlinkHref="sprite.svg#it-burger"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    aria-expanded="false"
+                    className="navbar-collapsable collapse navbar-collapse"
+                    style={
+                      Object {
+                        "display": "none",
+                      }
+                    }
+                  >
+                    <div
+                      className="overlay"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "display": "none",
+                        }
+                      }
+                    />
+                    <div
+                      className="close-div sr-only"
+                    >
+                      <button
+                        className="btn close-menu"
+                        type="button"
+                      >
+                        <span
+                          className="it-close"
+                        />
+                        close
+                      </button>
+                    </div>
+                    <div
+                      className="menu-wrapper"
+                    >
+                      <ul
+                        className="navbar-nav"
+                      >
+                        <li
+                          className="nav-item active"
+                        >
+                          <a
+                            className="nav-link active"
+                            href="#"
+                            onClick={[Function]}
+                          >
+                            <span>
+                              link 1 active 
+                            </span>
+                            <span
+                              className="sr-only"
+                            >
+                              current
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          className="nav-item"
+                        >
+                          <a
+                            className="nav-link disabled"
+                            disabled={true}
+                            href="#"
+                            onClick={[Function]}
+                          >
+                            Link 2
+                          </a>
+                        </li>
+                        <li
+                          className="nav-item"
+                        >
+                          <a
+                            className="nav-link"
+                            href="#"
+                            onClick={[Function]}
+                          >
+                            Link 3
+                          </a>
+                        </li>
+                        <li
+                          className="nav-item"
+                        >
+                          <a
+                            className="nav-link"
+                            href="#"
+                            onClick={[Function]}
+                          >
+                            Link 4
+                          </a>
+                        </li>
+                        <li
+                          className="nav-item"
+                        >
+                          <a
+                            className="nav-link disabled"
+                            disabled={true}
+                            href="#"
+                            onClick={[Function]}
+                          >
+                            Megamenu label
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Header Header center 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="it-header-center-wrapper"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-12"
+          >
+            <div
+              className="it-header-center-content-wrapper"
+            >
+              <div
+                className="it-brand-wrapper"
+              >
+                <a>
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-code-circle"
+                    />
+                  </svg>
+                  <div
+                    className="it-brand-text"
+                  >
+                    <h2
+                      className="no_toc"
+                    >
+                      Lorem Ipsum Lorem Ipsum
+                    </h2>
+                    <h3
+                      className="no_toc d-none d-md-block"
+                    >
+                      Inserire qui la tag line
+                    </h3>
+                  </div>
+                </a>
+              </div>
+              <div
+                className="it-right-zone"
+              >
+                <div
+                  className="it-socials d-none d-md-flex"
+                >
+                  <span>
+                    Seguici su
+                  </span>
+                  <ul>
+                    <li>
+                      <a
+                        aria-label="Facebook"
+                        href="#"
+                        target="_blank"
+                      >
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-facebook"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        aria-label="Github"
+                        href="#"
+                        target="_blank"
+                      >
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-github"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        aria-label="Twitter"
+                        href="#"
+                        target="_blank"
+                      >
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-twitter"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className="it-search-wrapper"
+                >
+                  <span
+                    className="d-none d-md-block"
+                  >
+                    Cerca
+                  </span>
+                  <a
+                    aria-label="Cerca"
+                    className="search-link rounded-icon"
+                  >
+                    <svg
+                      className="icon"
+                    >
+                      <use
+                        xlinkHref="sprite.svg#it-search"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Header Header nav 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="it-header-navbar-wrapper"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-12"
+          >
+            <nav
+              className="navbar has-megamenu navbar navbar-expand-lg"
+            >
+              <button
+                aria-controls="nav1"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                className="custom-navbar-toggler navbar-toggler"
+                href="#"
+                onClick={[Function]}
+                type="button"
+              >
+                <svg
+                  className="icon"
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-burger"
+                  />
+                </svg>
+              </button>
+              <div
+                aria-expanded="false"
+                className="navbar-collapsable collapse navbar-collapse"
+                style={
+                  Object {
+                    "display": "none",
+                  }
+                }
+              >
+                <div
+                  className="overlay"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "display": "none",
+                    }
+                  }
+                />
+                <div
+                  className="close-div sr-only"
+                >
+                  <button
+                    className="btn close-menu"
+                    type="button"
+                  >
+                    <span
+                      className="it-close"
+                    />
+                    close
+                  </button>
+                </div>
+                <div
+                  className="menu-wrapper"
+                >
+                  <ul
+                    className="navbar-nav"
+                  >
+                    <li
+                      className="nav-item active"
+                    >
+                      <a
+                        className="nav-link active"
+                        href="#"
+                        onClick={[Function]}
+                      >
+                        <span>
+                          link 1 active 
+                        </span>
+                        <span
+                          className="sr-only"
+                        >
+                          current
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      className="nav-item"
+                    >
+                      <a
+                        className="nav-link disabled"
+                        disabled={true}
+                        href="#"
+                        onClick={[Function]}
+                      >
+                        Link 2
+                      </a>
+                    </li>
+                    <li
+                      className="nav-item"
+                    >
+                      <a
+                        className="nav-link"
+                        href="#"
+                        onClick={[Function]}
+                      >
+                        Link 3
+                      </a>
+                    </li>
+                    <li
+                      className="nav-item"
+                    >
+                      <a
+                        className="nav-link"
+                        href="#"
+                        onClick={[Function]}
+                      >
+                        Link 4
+                      </a>
+                    </li>
+                    <li
+                      className="nav-item"
+                    >
+                      <div
+                        className="dropdown nav-item"
+                        onKeyDown={[Function]}
+                      >
+                        <a
+                          aria-expanded={false}
+                          aria-haspopup={true}
+                          className="dropdown-toggle nav-link"
+                          href="#"
+                          onClick={[Function]}
+                        >
+                          Dropdown item
+                          <svg
+                            className="icon"
+                          >
+                            <use
+                              xlinkHref="sprite.svg#it-expand"
+                            />
+                          </svg>
+                        </a>
+                        <div
+                          aria-hidden={true}
+                          className="dropdown-menu"
+                          role="menu"
+                          tabIndex="-1"
+                        >
+                          <div
+                            className="link-list-wrapper"
+                          >
+                            <ul
+                              className="link-list"
+                            >
+                              <li>
+                                <h3
+                                  className="no_toc header list-item"
+                                  id="heading-es-1"
+                                >
+                                  Heading
+                                </h3>
+                              </li>
+                              <li>
+                                <a
+                                  className="list-item dropdown-item"
+                                  href="#"
+                                  onClick={[Function]}
+                                  role="menuitem"
+                                  tabIndex="0"
+                                >
+                                  <span>
+                                    Link list 1
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  className="list-item dropdown-item"
+                                  href="#"
+                                  onClick={[Function]}
+                                  role="menuitem"
+                                  tabIndex="0"
+                                >
+                                  <span>
+                                    Link list 2
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  className="list-item dropdown-item"
+                                  href="#"
+                                  onClick={[Function]}
+                                  role="menuitem"
+                                  tabIndex="0"
+                                >
+                                  <span>
+                                    Link list 3
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <span
+                                  className="divider list-item"
+                                />
+                              </li>
+                              <li>
+                                <a
+                                  className="list-item dropdown-item"
+                                  href="#"
+                                  onClick={[Function]}
+                                  role="menuitem"
+                                  tabIndex="0"
+                                >
+                                  <span>
+                                    Link list 4
+                                  </span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      className="nav-item"
+                    >
+                      <a
+                        className="nav-link disabled"
+                        disabled={true}
+                        href="#"
+                        onClick={[Function]}
+                      >
+                        Megamenu label
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Header Header slim 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="it-header-slim-wrapper"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-12"
+          >
+            <div
+              className="it-header-slim-wrapper-content"
+            >
+              <a
+                className="d-lg-block d-none navbar-brand"
+              >
+                Ente appartenenza/Owner
+              </a>
+              <div
+                className="nav-mobile"
+              >
+                <nav
+                  className=""
+                >
+                  <a
+                    aria-label="Toggle navigation"
+                    className="it-opener d-lg-none navbar-toggler"
+                    href="#"
+                    onClick={[Function]}
+                    type=""
+                  >
+                    <span>
+                      Ente appartenenza/Owner
+                    </span>
+                    <svg
+                      className="icon"
+                    >
+                      <use
+                        xlinkHref="sprite.svg#it-expand"
+                      />
+                    </svg>
+                  </a>
+                  <div
+                    aria-expanded="false"
+                    className="link-list-wrapper collapse"
+                    style={Object {}}
+                  >
+                    <div
+                      className="link-list-wrapper"
+                    >
+                      <ul
+                        className="link-list"
+                      >
+                        <li>
+                          <a
+                            className="list-item"
+                            href="#"
+                          >
+                            Link 1
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            className="active list-item"
+                            href="#"
+                          >
+                            Link 2 Active
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div
+                className="it-header-slim-right-zone header-slim-right-zone"
+              >
+                <div
+                  className="dropdown nav-item"
+                  onKeyDown={[Function]}
+                >
+                  <a
+                    aria-expanded={false}
+                    aria-haspopup={true}
+                    className="dropdown-toggle nav-link"
+                    href="#"
+                    onClick={[Function]}
+                  >
+                    ITA
+                    <svg
+                      className="icon d-none d-lg-block icon-icon-white"
+                    >
+                      <use
+                        xlinkHref="sprite.svg#it-expand"
+                      />
+                    </svg>
+                  </a>
+                  <div
+                    aria-hidden={true}
+                    className="dropdown-menu"
+                    role="menu"
+                    tabIndex="-1"
+                  >
+                    <div
+                      className="row"
+                    >
+                      <div
+                        className="col"
+                        size="12"
+                      >
+                        <div
+                          className="link-list-wrapper"
+                        >
+                          <ul
+                            className="link-list"
+                          >
+                            <li>
+                              <a
+                                className="list-item dropdown-item"
+                                href="#"
+                                onClick={[Function]}
+                                role="menuitem"
+                                tabIndex="0"
+                              >
+                                <span>
+                                  ITA
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                className="list-item dropdown-item"
+                                href="#"
+                                onClick={[Function]}
+                                role="menuitem"
+                                tabIndex="0"
+                              >
+                                <span>
+                                  ENG
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="it-access-top-wrapper"
+                >
+                  <button
+                    aria-label={null}
+                    className="btn btn-primary btn-sm"
+                    onClick={[Function]}
+                  >
+                    Accedi
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Header Header slim with full button 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="it-header-slim-wrapper"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-12"
+          >
+            <div
+              className="it-header-slim-wrapper-content"
+            >
+              <a
+                className="d-lg-block navbar-brand"
+              >
+                Ente appartenenza/Owner
+              </a>
+              <div
+                className="it-header-slim-right-zone header-slim-right-zone"
+              >
+                <div
+                  className="dropdown nav-item"
+                  onKeyDown={[Function]}
+                >
+                  <a
+                    aria-expanded={false}
+                    aria-haspopup={true}
+                    className="dropdown-toggle nav-link"
+                    href="#"
+                    onClick={[Function]}
+                  >
+                    ITA
+                    <svg
+                      className="icon"
+                    >
+                      <use
+                        xlinkHref="sprite.svg#it-expand"
+                      />
+                    </svg>
+                  </a>
+                  <div
+                    aria-hidden={true}
+                    className="dropdown-menu"
+                    role="menu"
+                    tabIndex="-1"
+                  >
+                    <div
+                      className="row"
+                    >
+                      <div
+                        className="col"
+                        size="12"
+                      >
+                        <div
+                          className="link-list-wrapper"
+                        >
+                          <ul
+                            className="link-list"
+                          >
+                            <li>
+                              <a
+                                className="list-item dropdown-item"
+                                href="#"
+                                onClick={[Function]}
+                                role="menuitem"
+                                tabIndex="0"
+                              >
+                                <span>
+                                  ITA
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                className="list-item dropdown-item"
+                                href="#"
+                                onClick={[Function]}
+                                role="menuitem"
+                                tabIndex="0"
+                              >
+                                <span>
+                                  ENG
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  aria-label={null}
+                  className="btn-icon btn btn-primary btn-full"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  <span
+                    className="rounded-icon"
+                  >
+                    <svg
+                      className="icon icon-primary"
+                    >
+                      <use
+                        xlinkHref="sprite.svg#it-user"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    className="d-none d-lg-block"
+                  >
+                    Accedi all'area personale
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Header Introduzione 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div>
+    <h1>
+      Header
+    </h1>
+    <h3>
+      Documentazione ed esempi per la creazione di una testata di navigazione.
+    </h3>
+    <p>
+      L’header di un sito della Pubblica Amministrazione è solitamente composto di 3 elementi principali:
+    </p>
+    <ul>
+      <li>
+        Un cosiddetto “slim header”, una sottile fascia dello stesso colore o, preferibilmente, di colore lievemente più scuro rispetto al tema principale del sito, che mostra alcuni link funzionali con impatto globale o esterno al sito stesso.
+      </li>
+      <li>
+        Una parte centrale “center header“ che identifica in modo chiaro il sito attraverso logo, testo e social, e può contenere un link per effettuare ricerche sul sito.
+      </li>
+      <li>
+        Una parte dedicata alla navigazione “nav header“, visibile su schermi di grandi dimensioni ed accessibile attraverso il classico bottone di tipo “burger menu” per dispositivi mobili.
+      </li>
+    </ul>
+  </div>
+</div>
+`;

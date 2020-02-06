@@ -1,0 +1,837 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Chips Chip Color  1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-12 col-md-6"
+      >
+        <h4>
+          Change Color of Chips
+        </h4>
+        <p
+          className="mt-4 mb-2"
+        >
+          Primary color
+        </p>
+        <div
+          className="chip chip-simple chip-primary"
+        >
+          <span
+            className="chip-label"
+          >
+            Primary
+          </span>
+        </div>
+        <p
+          className="mt-4 mb-2"
+        >
+          Warning Color
+        </p>
+        <div
+          className="chip chip-simple chip-warning"
+        >
+          <span
+            className="chip-label"
+          >
+            Warning
+          </span>
+        </div>
+        <p
+          className="mt-4 mb-2"
+        >
+          Success Color
+        </p>
+        <div
+          className="chip chip-simple chip-success"
+        >
+          <span
+            className="chip-label"
+          >
+            Success
+          </span>
+        </div>
+        <p
+          className="mt-4 mb-2"
+        >
+          Danger Color
+        </p>
+        <div
+          className="chip chip-simple chip-danger"
+        >
+          <span
+            className="chip-label"
+          >
+            Danger
+          </span>
+        </div>
+        <p
+          className="mt-4 mb-2"
+        >
+          Info Color
+        </p>
+        <div
+          className="chip chip-simple chip-info"
+        >
+          <span
+            className="chip-label"
+          >
+            Information
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Chips Chip Groups 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div>
+      <div
+        className="chip chip-simple"
+      >
+        <span
+          className="chip-label"
+        >
+          Label
+        </span>
+      </div>
+      <div
+        className="chip"
+      >
+        <span
+          className="chip-label"
+        >
+          Label
+        </span>
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-close"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="chip"
+      >
+        <svg
+          className="icon icon-icon-xs icon-xs"
+        >
+          <use
+            xlinkHref="sprite.svg#it-github"
+          />
+        </svg>
+        <span
+          className="chip-label"
+        >
+          Label 
+        </span>
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-close"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="chip"
+      >
+        <div
+          className="avatar size-xs"
+        >
+          <img
+            alt="Mario Rossi"
+            src="https://randomuser.me/api/portraits/men/46.jpg"
+          />
+        </div>
+        <span
+          className="chip-label"
+        >
+          Label
+        </span>
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-close"
+            />
+          </svg>
+        </button>
+      </div>
+      <hr />
+      <div
+        className="chip chip-simple chip-lg"
+      >
+        <span
+          className="chip-label"
+        >
+          Label
+        </span>
+      </div>
+      <div
+        className="chip chip-lg"
+      >
+        <span
+          className="chip-label"
+        >
+          Label
+        </span>
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-close"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="chip chip-lg"
+      >
+        <svg
+          className="icon icon-icon-xs icon-xs"
+        >
+          <use
+            xlinkHref="sprite.svg#it-github"
+          />
+        </svg>
+        <span
+          className="chip-label"
+        >
+          Label 
+        </span>
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-close"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="chip chip-lg"
+      >
+        <div
+          className="avatar size-xs"
+        >
+          <img
+            alt="Mario Rossi"
+            src="https://randomuser.me/api/portraits/men/46.jpg"
+          />
+        </div>
+        <span
+          className="chip-label"
+        >
+          Label
+        </span>
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-close"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Chips Disabled Chip 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div>
+      <div
+        className="chip chip-simple chip-lg chip-disabled"
+      >
+        <span
+          className="chip-label"
+        >
+          Label Disabled
+        </span>
+      </div>
+      <div
+        className="chip chip-simple chip-lg chip-disabled"
+      >
+        <span
+          className="chip-label"
+        >
+          Label Disabled
+        </span>
+        <button
+          aria-label="Close"
+          className="close disabled"
+          disabled={true}
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-close"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="chip chip-lg chip-disabled"
+      >
+        <svg
+          className="icon icon-icon-xs icon-xs"
+        >
+          <use
+            xlinkHref="sprite.svg#it-github"
+          />
+        </svg>
+        <span
+          className="chip-label"
+        >
+          Label Disabled
+        </span>
+        <button
+          aria-label="Close"
+          className="close disabled"
+          disabled={true}
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-close"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="chip chip-lg chip-disabled"
+      >
+        <div
+          className="avatar size-xs"
+        >
+          <img
+            alt="Mario Rossi"
+            src="https://randomuser.me/api/portraits/men/46.jpg"
+          />
+        </div>
+        <span
+          className="chip-label"
+        >
+          Label
+        </span>
+        <button
+          aria-label="Close"
+          className="close disabled"
+          disabled={true}
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-close"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Chips Great Version 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-12 col-md-6"
+      >
+        <h4>
+          Versione Grande
+        </h4>
+        <p
+          className="mt-4 mb-2"
+        >
+          Solo testo
+        </p>
+        <div
+          className="chip chip-simple chip-lg"
+        >
+          <span
+            className="chip-label"
+          >
+            Label
+          </span>
+        </div>
+        <p
+          className="mt-4 mb-2"
+        >
+          Testo e chiusura
+        </p>
+        <div
+          className="chip chip-lg"
+        >
+          <span
+            className="chip-label"
+          >
+            Label
+          </span>
+          <button
+            aria-label="Close"
+            className="close"
+            onClick={[Function]}
+          >
+            <svg
+              className="icon"
+            >
+              <use
+                xlinkHref="sprite.svg#it-close"
+              />
+            </svg>
+          </button>
+        </div>
+        <p
+          className="mt-4 mb-2"
+        >
+          Icona, testo e chiusura
+        </p>
+        <div
+          className="chip chip-lg"
+        >
+          <svg
+            className="icon icon-icon-xs icon-xs"
+          >
+            <use
+              xlinkHref="sprite.svg#it-github"
+            />
+          </svg>
+          <span
+            className="chip-label"
+          >
+            Label
+          </span>
+          <button
+            aria-label="Close"
+            className="close"
+            onClick={[Function]}
+          >
+            <svg
+              className="icon"
+            >
+              <use
+                xlinkHref="sprite.svg#it-close"
+              />
+            </svg>
+          </button>
+        </div>
+        <p
+          className="mt-4 mb-2"
+        >
+          Avatar, testo e chiusura
+        </p>
+        <div
+          className="chip chip-lg"
+        >
+          <div
+            className="avatar size-xs"
+          >
+            <img
+              alt="Mario Rossi"
+              src="https://randomuser.me/api/portraits/men/46.jpg"
+            />
+          </div>
+          <span
+            className="chip-label"
+          >
+            Label
+          </span>
+          <button
+            aria-label="Close"
+            className="close"
+            onClick={[Function]}
+          >
+            <svg
+              className="icon"
+            >
+              <use
+                xlinkHref="sprite.svg#it-close"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Chips Standard Version 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-12 col-md-6"
+      >
+        <h4>
+          Versione Standard
+        </h4>
+        <p
+          className="mt-4 mb-2"
+        >
+          Solo testo
+        </p>
+        <div
+          className="chip chip-simple"
+        >
+          <span
+            className="chip-label"
+          >
+            Label
+          </span>
+        </div>
+        <p
+          className="mt-4 mb-2"
+        >
+          Testo e chiusura
+        </p>
+        <div
+          className="chip"
+        >
+          <span
+            className="chip-label"
+          >
+            Label
+          </span>
+          <button
+            aria-label="Close"
+            className="close"
+            onClick={[Function]}
+          >
+            <svg
+              className="icon"
+            >
+              <use
+                xlinkHref="sprite.svg#it-close"
+              />
+            </svg>
+          </button>
+        </div>
+        <p
+          className="mt-4 mb-2"
+        >
+          Icona, testo e chiusura
+        </p>
+        <div
+          className="chip"
+        >
+          <svg
+            className="icon icon-icon-xs icon-xs"
+          >
+            <use
+              xlinkHref="sprite.svg#it-github"
+            />
+          </svg>
+          <span
+            className="chip-label"
+          >
+            Label
+          </span>
+          <button
+            aria-label="Close"
+            className="close"
+            onClick={[Function]}
+          >
+            <svg
+              className="icon"
+            >
+              <use
+                xlinkHref="sprite.svg#it-close"
+              />
+            </svg>
+          </button>
+        </div>
+        <p
+          className="mt-4 mb-2"
+        >
+          Avatar, testo e chiusura
+        </p>
+        <div
+          className="chip"
+        >
+          <div
+            className="avatar size-xs"
+          >
+            <img
+              alt="Mario Rossi"
+              src="https://randomuser.me/api/portraits/men/46.jpg"
+            />
+          </div>
+          <span
+            className="chip-label"
+          >
+            Label
+          </span>
+          <button
+            aria-label="Close"
+            className="close"
+            onClick={[Function]}
+          >
+            <svg
+              className="icon"
+            >
+              <use
+                xlinkHref="sprite.svg#it-close"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;

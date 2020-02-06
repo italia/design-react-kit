@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Componenti/Skiplink Esempi 1`] = `
+exports[`Storyshots Componenti/Cookiebar Come Usarlo 1`] = `
 <div
   style={
     Object {
@@ -20,35 +20,42 @@ exports[`Storyshots Componenti/Skiplink Esempi 1`] = `
       }
     }
   >
-    <section
-      tabIndex="-1"
+    <div
+      className="cookiebar show"
     >
+      <p>
+        Questo sito utilizza cookie tecnici, analytics e di terze parti.
+         
+        <br />
+        Proseguendo nella navigazione accetti l’utilizzo dei cookie.
+      </p>
       <div
-        id="#main"
-      />
-      <div
-        id="#footer"
-      />
-      <div
-        className="skiplinks"
+        className="cookiebar-buttons"
       >
-        <a
-          className="sr-only sr-only-focusable"
-        />
-        <a
-          className="sr-only sr-only-focusable"
-          href="#main"
+        <button
+          className="cookiebar-btn"
+          href="#"
         >
-          Skip to main content
-        </a>
-        <a
-          className="sr-only sr-only-focusable"
-          href="#footer"
+          Preferenze
+          <span
+            className="sr-only"
+          >
+            cookies
+          </span>
+        </button>
+        <button
+          className="cookiebar-btn"
+          href={true}
         >
-          Skip to footer
-        </a>
+          Accetto
+          <span
+            className="sr-only"
+          >
+             i cookies
+          </span>
+        </button>
       </div>
-    </section>
+    </div>
   </div>
   <button
     className="info__show-button"
