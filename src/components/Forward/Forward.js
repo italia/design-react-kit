@@ -3,25 +3,27 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 const propTypes = {
-    scrollToRef: PropTypes.oneOfType([
-        PropTypes.func, 
-        PropTypes.shape({ current: PropTypes.instanceOf(Element) })
-    ])
+  className: PropTypes.string,
+  scrollToRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.instanceOf(Element) })
+  ])
 }
 
-const Forward = ({
-    className,
-    scrollToRef,
-    ...attributes
-}) => {
-    const classes = classNames(className, 'forward')
-    return (
-        <a
-            className={classes}
-            onClick={() => scrollToRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-            {...attributes}
-        />
-    )
+const Forward = ({ className, scrollToRef, ...attributes }) => {
+  const classes = classNames(className, 'forward')
+  return (
+    <a
+      className={classes}
+      onClick={() =>
+        scrollToRef.current.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }
+      {...attributes}
+    />
+  )
 }
 
 Forward.propTypes = propTypes

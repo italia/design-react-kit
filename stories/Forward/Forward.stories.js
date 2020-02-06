@@ -1,15 +1,15 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
 
-import { Forward, Icon, Card } from "../../src";
-import { withA11y } from "@storybook/addon-a11y";
-import { withKnobs } from "@storybook/addon-knobs/dist/deprecated";
+import { Forward, Icon, Card } from '../../src'
+import { withA11y } from '@storybook/addon-a11y'
+import { withKnobs } from '@storybook/addon-knobs/dist/deprecated'
 
-import ForwardDoc from "./ForwardDoc.md";
+import ForwardDoc from './ForwardDoc.md'
 
 const ForwardComponent = () => {
-  const ref = React.useRef(null);
+  const ref = React.useRef(null)
   return (
     <div>
       <Card>
@@ -91,16 +91,16 @@ const ForwardComponent = () => {
       </div>
       <div ref={ref}>Scroll to Here</div>
     </div>
-  );
-};
+  )
+}
 
-storiesOf("Componenti/Forward", module)
+storiesOf('Componenti/Forward', module)
   .addDecorator(withA11y)
   .addDecorator(withKnobs)
   .add(
-    "Esempi",
+    'Esempi',
     withInfo({
       text: ForwardDoc,
       propTables: [Forward]
     })(ForwardComponent)
-  );
+  )
