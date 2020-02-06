@@ -7855,6 +7855,631 @@ exports[`Image Storyshots Componenti/Cookiebar Come Usarlo 1`] = `
 </div>
 `;
 
+exports[`Image Storyshots Componenti/Dimmer Colore Primario 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div>
+      <div
+        className="mt-3 fade"
+      >
+        <div
+          className="dimmer dimmer-primary"
+          style={
+            Object {
+              "display": "flex",
+            }
+          }
+        >
+          <div
+            className="dimmer-inner"
+          >
+            <div
+              className="dimmer-icon"
+            >
+              <svg
+                className="icon"
+              >
+                <use
+                  xlinkHref="sprite.svg#it-unlocked"
+                />
+              </svg>
+            </div>
+            <p>
+              Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col-12 col-lg-4"
+        >
+          <div
+            className="card-wrapper"
+          >
+            <div
+              className="card"
+            >
+              <div
+                className="card-body"
+              >
+                <div
+                  className="card-title"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                </div>
+                <p
+                  className="card-text"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-lg-4 d-none d-lg-block"
+        >
+          <div
+            className="card-wrapper"
+          >
+            <div
+              className="card"
+            >
+              <div
+                className="card-body"
+              >
+                <div
+                  className="card-title"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                </div>
+                <p
+                  className="card-text"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-lg-4 d-none d-lg-block"
+        >
+          <div
+            className="card-wrapper"
+          >
+            <div
+              className="card"
+            >
+              <div
+                className="card-body"
+              >
+                <div
+                  className="card-title"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                </div>
+                <p
+                  className="card-text"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Image Storyshots Componenti/Dimmer Dimmer con Azioni 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div>
+      <div
+        className="mt-3 fade"
+      >
+        <div
+          className="dimmer"
+          style={
+            Object {
+              "display": "flex",
+            }
+          }
+        >
+          <div
+            className="dimmer-inner"
+          >
+            <div
+              className="dimmer-icon"
+            >
+              <svg
+                className="icon"
+              >
+                <use
+                  xlinkHref="sprite.svg#it-unlocked"
+                />
+              </svg>
+            </div>
+            <h4>
+              Titolo Dimmer
+            </h4>
+            <div
+              className="dimmer-buttons bg-dark"
+            >
+              <button
+                aria-label={null}
+                className="btn btn-outline-primary"
+                onClick={[Function]}
+              >
+                Azione secondaria
+              </button>
+              <button
+                aria-label={null}
+                className="btn btn-primary"
+                onClick={[Function]}
+              >
+                Azione primaria
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col"
+      >
+        <div
+          className="col-12 col-lg-4"
+        >
+          <div
+            className="card-wrapper"
+          >
+            <div
+              className="card"
+            >
+              <div
+                className="card-body"
+              >
+                <div
+                  className="card-title"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                </div>
+                <p
+                  className="card-text"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-lg-4 d-none d-lg-block"
+        >
+          <div
+            className="card-wrapper"
+          >
+            <div
+              className="card"
+            >
+              <div
+                className="card-body"
+              >
+                <div
+                  className="card-title"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                </div>
+                <p
+                  className="card-text"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Image Storyshots Componenti/Dimmer Dimmer con Azioni Colore Primario 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div>
+      <div
+        className="mt-3 fade"
+      >
+        <div
+          className="dimmer dimmer-primary"
+          style={
+            Object {
+              "display": "flex",
+            }
+          }
+        >
+          <div
+            className="dimmer-inner"
+          >
+            <div
+              className="dimmer-icon"
+            >
+              <svg
+                className="icon"
+              >
+                <use
+                  xlinkHref="sprite.svg#it-unlocked"
+                />
+              </svg>
+            </div>
+            <h4>
+              Titolo Dimmer
+            </h4>
+            <div
+              className="dimmer-buttons single-button bg-dark"
+            >
+              <button
+                aria-label={null}
+                className="btn btn-primary"
+                onClick={[Function]}
+              >
+                Azione primaria
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col"
+      >
+        <div
+          className="col-12 col-lg-4"
+        >
+          <div
+            className="card-wrapper"
+          >
+            <div
+              className="card"
+            >
+              <div
+                className="card-body"
+              >
+                <div
+                  className="card-title"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                </div>
+                <p
+                  className="card-text"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-lg-4 d-none d-lg-block"
+        >
+          <div
+            className="card-wrapper"
+          >
+            <div
+              className="card"
+            >
+              <div
+                className="card-body"
+              >
+                <div
+                  className="card-title"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                </div>
+                <p
+                  className="card-text"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Image Storyshots Componenti/Dimmer Esempi 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div>
+      <div
+        className="mt-3 fade"
+      >
+        <div
+          className="dimmer"
+          style={
+            Object {
+              "display": "flex",
+            }
+          }
+        >
+          <div
+            className="dimmer-inner"
+          >
+            <div
+              className="dimmer-icon"
+            >
+              <svg
+                className="icon"
+              >
+                <use
+                  xlinkHref="sprite.svg#it-unlocked"
+                />
+              </svg>
+            </div>
+            <p>
+              Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col-12 col-lg-4"
+        >
+          <div
+            className="card-wrapper"
+          >
+            <div
+              className="card"
+            >
+              <div
+                className="card-body"
+              >
+                <div
+                  className="card-title"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                </div>
+                <p
+                  className="card-text"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-lg-4 d-none d-lg-block"
+        >
+          <div
+            className="card-wrapper"
+          >
+            <div
+              className="card"
+            >
+              <div
+                className="card-body"
+              >
+                <div
+                  className="card-title"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                </div>
+                <p
+                  className="card-text"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-lg-4 d-none d-lg-block"
+        >
+          <div
+            className="card-wrapper"
+          >
+            <div
+              className="card"
+            >
+              <div
+                className="card-body"
+              >
+                <div
+                  className="card-title"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                </div>
+                <p
+                  className="card-text"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
 exports[`Image Storyshots Componenti/Dropdown Esempi 1`] = `
 <div
   style={
@@ -20688,6 +21313,1252 @@ exports[`Image Storyshots Componenti/Navbar Inline Menù 1`] = `
 </div>
 `;
 
+exports[`Image Storyshots Componenti/Notification Default Location 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container test-desktop"
+    >
+      <div>
+        <div
+          className="notification with-icon success toast fade"
+          role="alert"
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Notification Title
+                <svg
+                  className="icon"
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-check-circle"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+          <div
+            className="toast-body"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Image Storyshots Componenti/Notification Dismissable 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container test-docs"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-12 col-md-6 mb-4 mb-md-0"
+        >
+          <p
+            className="mb-4"
+          >
+            <strong>
+              Notification standard
+            </strong>
+          </p>
+          <div
+            className="notification dismissable toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+            <button
+              aria-label={null}
+              className="btn notification-close btn btn-secondary"
+              onClick={[Function]}
+            >
+              <svg
+                className="icon"
+              >
+                <use
+                  xlinkHref="sprite.svg#it-close"
+                />
+              </svg>
+              <span
+                className="sr-only"
+              >
+                Chiudi notifica: Titolo notifica
+              </span>
+            </button>
+          </div>
+        </div>
+        <div
+          className="col-12 col-md-6"
+        >
+          <p
+            className="mb-4"
+          >
+            <strong>
+              Notification with icon
+            </strong>
+          </p>
+          <div
+            className="notification with-icon dismissable toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+            <div
+              className="toast-body"
+              type="success"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </div>
+            <button
+              aria-label={null}
+              className="btn notification-close btn btn-secondary"
+              onClick={[Function]}
+            >
+              <svg
+                className="icon"
+              >
+                <use
+                  xlinkHref="sprite.svg#it-close"
+                />
+              </svg>
+              <span
+                className="sr-only"
+              >
+                Chiudi notifica: Titolo notifica
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Image Storyshots Componenti/Notification Example 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container test-docs"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-12 col-md-6 mb-4 mb-md-0"
+        >
+          <p
+            className="mb-4"
+          >
+            <strong>
+              Notification standard
+            </strong>
+          </p>
+          <div
+            className="notification toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-md-6"
+        >
+          <p
+            className="mb-4"
+          >
+            <strong>
+              Notification with icon
+            </strong>
+          </p>
+          <div
+            className="notification with-icon toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Image Storyshots Componenti/Notification Fixed Positions 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container test-desktop"
+    >
+      <div>
+        <div
+          className="notification top-fix with-icon success toast fade"
+          role="alert"
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Top Fix
+                <svg
+                  className="icon"
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-check-circle"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+          <div
+            className="toast-body"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="notification left-fix with-icon success toast fade"
+          role="alert"
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Left Fix
+                <svg
+                  className="icon"
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-check-circle"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="notification right-fix with-icon success toast fade"
+          role="alert"
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Right Fix
+                <svg
+                  className="icon"
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-check-circle"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="notification bottom-fix with-icon success toast fade"
+          role="alert"
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Bottom Fix
+                <svg
+                  className="icon"
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-check-circle"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+          <div
+            className="toast-body"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Image Storyshots Componenti/Notification Notification with message 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container test-docs"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-12 col-md-6 mb-4 mb-md-0"
+        >
+          <p
+            className="mb-4"
+          >
+            <strong>
+              Notification standard
+            </strong>
+          </p>
+          <div
+            className="notification toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+            <div
+              className="toast-body"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-md-6"
+        >
+          <p
+            className="mb-4"
+          >
+            <strong>
+              Notification with icon
+            </strong>
+          </p>
+          <div
+            className="notification with-icon toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+            <div
+              className="toast-body"
+              type="success"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Image Storyshots Componenti/Notification Rounding of Corners 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container test-docs"
+    >
+      <div
+        className="row mb-5"
+      >
+        <div
+          className="col-12 col-md-6 mb-4 mb-md-0"
+          style={
+            Object {
+              "position": "fixed",
+            }
+          }
+        >
+          <p>
+            <strong>
+              Basic (rounding at 4 corners)
+            </strong>
+          </p>
+          <div
+            className="notification with-icon success toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-12 col-md-6"
+        style={
+          Object {
+            "bottom": 50,
+            "left": 50,
+            "transform": "translateX(100%)",
+          }
+        }
+      >
+        <p>
+          <strong>
+            top-fix
+          </strong>
+        </p>
+        <div
+          className="row mb-5"
+          style={
+            Object {
+              "WebkitTransform": "translateX(30%)",
+              "marginTop": "10px",
+            }
+          }
+        >
+          <div
+            className="notification top-fix with-icon success toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+        <p
+          style={
+            Object {
+              "marginTop": "90px",
+            }
+          }
+        >
+          <strong>
+            bottom-fix
+          </strong>
+        </p>
+        <div
+          className="row mb-5"
+          style={
+            Object {
+              "WebkitTransform": "translateX(30%)",
+              "marginTop": "10px",
+            }
+          }
+        >
+          <div
+            className="notification bottom-fix with-icon success toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+        <p
+          style={
+            Object {
+              "marginTop": "90px",
+            }
+          }
+        >
+          <strong>
+            left-fix
+          </strong>
+        </p>
+        <div
+          className="row mb-5"
+          style={
+            Object {
+              "marginTop": "50px",
+            }
+          }
+        >
+          <div
+            className="notification left-fix with-icon success toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+        <p>
+          <strong>
+            right-fix
+          </strong>
+        </p>
+        <div
+          className="row mb-5"
+          style={
+            Object {
+              "marginTop": "50px",
+            }
+          }
+        >
+          <div
+            className="notification right-fix with-icon success toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Image Storyshots Componenti/Notification States 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container test-docs"
+    >
+      <div
+        className="row mb-5"
+      >
+        <div
+          className="col-12 col-md-6 mb-4 mb-md-0"
+        >
+          <p>
+            <strong>
+              Success
+            </strong>
+          </p>
+          <div
+            className="notification with-icon success toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-md-6"
+        >
+          <p>
+            <strong>
+              Error
+            </strong>
+          </p>
+          <div
+            className="notification with-icon error toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-close-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row mb-5"
+      >
+        <div
+          className="col-12 col-md-6 mb-4 mb-md-0"
+          style={
+            Object {
+              "top": 45,
+            }
+          }
+        >
+          <p>
+            <strong>
+              Info
+            </strong>
+          </p>
+          <div
+            className="notification with-icon info toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-info-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-md-6"
+          style={
+            Object {
+              "top": 45,
+            }
+          }
+        >
+          <p>
+            <strong>
+              Warning
+            </strong>
+          </p>
+          <div
+            className="notification with-icon warning toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-error"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
 exports[`Image Storyshots Componenti/Pager Allineamento 1`] = `
 <div
   style={
@@ -27444,6 +29315,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione T
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -27501,6 +29379,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione T
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -27558,6 +29443,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione T
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -27615,6 +29507,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione T
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -27672,6 +29571,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione T
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -27729,6 +29635,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione T
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -29232,6 +31145,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template
                     >
                       Tutte le novità
                     </span>
+                    <svg
+                      className="icon"
+                    >
+                      <use
+                        xlinkHref="sprite.svg#it-arrow-right"
+                      />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -32393,6 +34313,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -32450,6 +34377,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -32507,6 +34441,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -32564,6 +34505,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -32621,6 +34569,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -32678,6 +34633,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -32743,6 +34705,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -32781,6 +34750,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -32819,6 +34795,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -32857,6 +34840,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -32895,6 +34885,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -32933,6 +34930,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -32971,6 +34975,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -33009,6 +35020,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -33047,6 +35065,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -33085,6 +35110,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -33123,6 +35155,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -33161,6 +35200,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -33199,6 +35245,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -33237,6 +35290,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -33275,6 +35335,13 @@ exports[`Image Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 
                         >
                           Leggi di più
                         </span>
+                        <svg
+                          className="icon"
+                        >
+                          <use
+                            xlinkHref="sprite.svg#it-arrow-right"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
