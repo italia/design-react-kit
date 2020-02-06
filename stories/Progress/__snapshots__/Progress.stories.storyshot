@@ -1,425 +1,1030 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Componenti/Progress Altezza 1`] = `
+exports[`Storyshots Componenti/Progress Indicators Bottone con Progress Bar 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div>
-      <div
-        className="progress"
-        style={
-          Object {
-            "height": 1,
-          }
-        }
-      >
-        <div
-          aria-valuemax={100}
-          aria-valuemin="0"
-          aria-valuenow="25"
-          className="progress-bar"
-          role="progressbar"
-          style={
-            Object {
-              "width": "25%",
-            }
-          }
-        />
-      </div>
-      <div
-        className="mt-3 progress"
-        style={
-          Object {
-            "height": 10,
-          }
-        }
-      >
-        <div
-          aria-valuemax={100}
-          aria-valuemin="0"
-          aria-valuenow="25"
-          className="progress-bar"
-          role="progressbar"
-          style={
-            Object {
-              "width": "25%",
-            }
-          }
-        />
-      </div>
-      <div
-        className="mt-3 progress"
-        style={
-          Object {
-            "height": 20,
-          }
-        }
-      >
-        <div
-          aria-valuemax={100}
-          aria-valuemin="0"
-          aria-valuenow="25"
-          className="progress-bar"
-          role="progressbar"
-          style={
-            Object {
-              "width": "25%",
-            }
-          }
-        />
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "Altezza.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Progress Background 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div>
-      <div
-        className="mt-3 progress"
-      >
-        <div
-          aria-valuemax={100}
-          aria-valuemin="0"
-          aria-valuenow="25"
-          className="progress-bar bg-success"
-          role="progressbar"
-          style={
-            Object {
-              "width": "25%",
-            }
-          }
-        />
-      </div>
-      <div
-        className="mt-3 progress"
-      >
-        <div
-          aria-valuemax={100}
-          aria-valuemin="0"
-          aria-valuenow={50}
-          className="progress-bar bg-info"
-          role="progressbar"
-          style={
-            Object {
-              "width": "50%",
-            }
-          }
-        />
-      </div>
-      <div
-        className="mt-3 progress"
-      >
-        <div
-          aria-valuemax={100}
-          aria-valuemin="0"
-          aria-valuenow={75}
-          className="progress-bar bg-warning"
-          role="progressbar"
-          style={
-            Object {
-              "width": "75%",
-            }
-          }
-        />
-      </div>
-      <div
-        className="mt-3 progress"
-      >
-        <div
-          aria-valuemax={100}
-          aria-valuemin="0"
-          aria-valuenow="100"
-          className="progress-bar bg-danger"
-          role="progressbar"
-          style={
-            Object {
-              "width": "100%",
-            }
-          }
-        />
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "Background.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Progress Esempi 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div>
-      <div
-        className="progress"
-      >
-        <div
-          aria-valuemax={100}
-          aria-valuemin="0"
-          aria-valuenow={0}
-          className="progress-bar"
-          role="progressbar"
-          style={
-            Object {
-              "width": "0%",
-            }
-          }
-        />
-      </div>
-      <div
-        className="mt-3 progress"
-      >
-        <div
-          aria-valuemax={100}
-          aria-valuemin="0"
-          aria-valuenow="25"
-          className="progress-bar"
-          role="progressbar"
-          style={
-            Object {
-              "width": "25%",
-            }
-          }
-        />
-      </div>
-      <div
-        className="mt-3 progress"
-      >
-        <div
-          aria-valuemax={100}
-          aria-valuemin="0"
-          aria-valuenow={50}
-          className="progress-bar"
-          role="progressbar"
-          style={
-            Object {
-              "width": "50%",
-            }
-          }
-        />
-      </div>
-      <div
-        className="mt-3 progress"
-      >
-        <div
-          aria-valuemax={100}
-          aria-valuemin="0"
-          aria-valuenow={75}
-          className="progress-bar"
-          role="progressbar"
-          style={
-            Object {
-              "width": "75%",
-            }
-          }
-        />
-      </div>
-      <div
-        className="mt-3 progress"
-      >
-        <div
-          aria-valuemax={100}
-          aria-valuemin="0"
-          aria-valuenow="100"
-          className="progress-bar"
-          role="progressbar"
-          style={
-            Object {
-              "width": "100%",
-            }
-          }
-        />
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "Esempi.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Progress Esempi interattivi 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div
-      className="m-3 progress"
-      style={
-        Object {
-          "height": 18,
-        }
-      }
+      className="container"
     >
       <div
-        aria-valuemax={100}
-        aria-valuemin="0"
-        aria-valuenow={25}
-        className="progress-bar"
-        role="progressbar"
-        style={
-          Object {
-            "width": "25%",
-          }
-        }
+        className="row"
       >
-        
+        <div
+          className="col-12 col-sm-6"
+        >
+          <p>
+            <strong>
+              Bottone primario
+            </strong>
+          </p>
+          <button
+            aria-label={null}
+            className="btn-progress btn btn-primary disabled"
+            disabled={true}
+            onClick={[Function]}
+          >
+            Label bottone
+             
+            <svg
+              className="icon icon-light"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-github"
+              />
+            </svg>
+            <span>
+              <div
+                className="progress"
+              >
+                <div
+                  className="progress-bar-label"
+                >
+                  <span
+                    className="sr-only"
+                  />
+                </div>
+                <div
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="50"
+                  className="progress-bar"
+                  role="progressbar"
+                  style={
+                    Object {
+                      "width": "50%",
+                    }
+                  }
+                />
+              </div>
+            </span>
+          </button>
+        </div>
+        <div
+          className="col-12 col-sm-6"
+        >
+          <p>
+            <strong>
+              Bottone secondario
+            </strong>
+          </p>
+          <button
+            aria-label={null}
+            className="btn-progress btn btn-secondary disabled"
+            disabled={true}
+            onClick={[Function]}
+          >
+            Label bottone
+             
+            <svg
+              className="icon icon-light"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-github"
+              />
+            </svg>
+            <span>
+              <div
+                className="progress"
+              >
+                <div
+                  className="progress-bar-label"
+                >
+                  <span
+                    className="sr-only"
+                  />
+                </div>
+                <div
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="50"
+                  className="progress-bar"
+                  role="progressbar"
+                  style={
+                    Object {
+                      "width": "50%",
+                    }
+                  }
+                />
+              </div>
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "EsempiInterattivi.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
-exports[`Storyshots Componenti/Progress Etichette 1`] = `
+exports[`Storyshots Componenti/Progress Indicators Colori 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div>
+      <div
+        className="mb-3"
+      >
+        <div
+          className="progress-color progress"
+        >
+          <div
+            className="progress-bar-label"
+          >
+            <span
+              className="sr-only"
+            />
+          </div>
+          <div
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="25"
+            className="progress-bar bg-success"
+            role="progressbar"
+            style={
+              Object {
+                "width": "25%",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="mb-3"
+      >
+        <div
+          className="progress-color progress"
+        >
+          <div
+            className="progress-bar-label"
+          >
+            <span
+              className="sr-only"
+            />
+          </div>
+          <div
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="33"
+            className="progress-bar bg-info"
+            role="progressbar"
+            style={
+              Object {
+                "width": "33%",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="mb-3"
+      >
+        <div
+          className="progress-color progress"
+        >
+          <div
+            className="progress-bar-label"
+          >
+            <span
+              className="sr-only"
+            />
+          </div>
+          <div
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="50"
+            className="progress-bar bg-warning"
+            role="progressbar"
+            style={
+              Object {
+                "width": "50%",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="mb-3"
+      >
+        <div
+          className="progress-color progress"
+        >
+          <div
+            className="progress-bar-label"
+          >
+            <span
+              className="sr-only"
+            />
+          </div>
+          <div
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="66"
+            className="progress-bar bg-danger"
+            role="progressbar"
+            style={
+              Object {
+                "width": "66%",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Progress Indicators Esempi 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div>
+      <div
+        className="mb-3"
+      >
+        <div
+          className="progress"
+        >
+          <div
+            className="progress-bar-label"
+          >
+            <span
+              className="sr-only"
+            />
+          </div>
+          <div
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="0"
+            className="progress-bar"
+            role="progressbar"
+            style={
+              Object {
+                "width": "0%",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="mb-3"
+      >
+        <div
+          className="progress"
+        >
+          <div
+            className="progress-bar-label"
+          >
+            <span
+              className="sr-only"
+            />
+          </div>
+          <div
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="25"
+            className="progress-bar"
+            role="progressbar"
+            style={
+              Object {
+                "width": "25%",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="mb-3"
+      >
+        <div
+          className="progress"
+        >
+          <div
+            className="progress-bar-label"
+          >
+            <span
+              className="sr-only"
+            />
+          </div>
+          <div
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="50"
+            className="progress-bar"
+            role="progressbar"
+            style={
+              Object {
+                "width": "50%",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="mb-3"
+      >
+        <div
+          className="progress"
+        >
+          <div
+            className="progress-bar-label"
+          >
+            <span
+              className="sr-only"
+            />
+          </div>
+          <div
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="75"
+            className="progress-bar"
+            role="progressbar"
+            style={
+              Object {
+                "width": "75%",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="mb-3"
+      >
+        <div
+          className="progress"
+        >
+          <div
+            className="progress-bar-label"
+          >
+            <span
+              className="sr-only"
+            />
+          </div>
+          <div
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="100"
+            className="progress-bar"
+            role="progressbar"
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Progress Indicators Esempi interattivi 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div>
+      <div
+        className="progress-bar-wrapper"
+      >
+        <div
+          className="progress-bar-label"
+        >
+          <span
+            className="sr-only"
+          >
+            progresso
+          </span>
+          25%
+        </div>
+        <div
+          className="progress"
+        >
+          <div
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow={25}
+            className="progress-bar"
+            role="progressbar"
+            style={
+              Object {
+                "width": "25%",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Progress Indicators Etichette 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div>
+      <div
+        className="progress-bar-wrapper"
+      >
+        <div
+          className="progress-bar-label"
+        >
+          <span
+            className="sr-only"
+          >
+            progresso
+          </span>
+          35%
+        </div>
+        <div
+          className="progress"
+        >
+          <div
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="35"
+            className="progress-bar"
+            role="progressbar"
+            style={
+              Object {
+                "width": "35%",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Progress Indicators Progresso Indeterminato 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
       }
     }
   >
     <div
-      className="progress"
+      className="progress-indeterminate progress"
     >
       <div
-        aria-valuemax={100}
+        className="progress-bar-label"
+      >
+        <span
+          className="sr-only"
+        >
+          In elaborazione...
+        </span>
+      </div>
+      <div
+        aria-valuemax="100"
         aria-valuemin="0"
-        aria-valuenow="25"
         className="progress-bar"
         role="progressbar"
         style={
           Object {
-            "width": "25%",
+            "width": "undefined%",
           }
         }
+      />
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Progress Indicators.Spinners Spinner 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
       >
-        25%
+        <div
+          className="col-6 col-lg-3"
+        >
+          <p
+            className="mb-3"
+          >
+            <strong>
+              Spinner standard
+            </strong>
+          </p>
+          <span
+            className="progress-spinner"
+          >
+            <span
+              className="sr-only"
+            >
+              Caricamento...
+            </span>
+          </span>
+        </div>
+        <div
+          className="col-6 col-lg-3"
+        >
+          <p
+            className="mb-3"
+          >
+            <strong>
+              Spinner Attivo
+            </strong>
+          </p>
+          <span
+            className="progress-spinner-active progress-spinner"
+          >
+            <span
+              className="sr-only"
+            >
+              Caricamento...
+            </span>
+          </span>
+        </div>
+        <div
+          className="col-6 col-lg-3 mt-3 mt-lg-0"
+        >
+          <p
+            className="mb-3"
+          >
+            <strong>
+              Small
+            </strong>
+          </p>
+          <span
+            className="size-sm progress-spinner"
+          >
+            <span
+              className="sr-only"
+            >
+              Caricamento...
+            </span>
+          </span>
+        </div>
+        <div
+          className="col-6 col-lg-3 mt-3 mt-lg-0"
+        >
+          <p
+            className="mb-3"
+          >
+            <strong>
+              Small attivo
+            </strong>
+          </p>
+          <span
+            className="progress-spinner-active size-sm progress-spinner"
+          >
+            <span
+              className="sr-only"
+            >
+              Caricamento...
+            </span>
+          </span>
+        </div>
       </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Etichette.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Progress Indicators.Spinners Spinner Doppio 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-6 col-lg-3"
+        >
+          <p
+            className="mb-3"
+          >
+            <strong>
+              Spinner doppio
+            </strong>
+          </p>
+          <span
+            className="progress-spinner-double progress-spinner"
+          >
+            <div
+              className="progress-spinner-inner"
+            />
+            <div
+              className="progress-spinner-inner"
+            />
+            <span
+              className="sr-only"
+            >
+              Caricamento...
+            </span>
+          </span>
+        </div>
+        <div
+          className="col-6 col-lg-3"
+        >
+          <p
+            className="mb-3"
+          >
+            <strong>
+              Doppio attivo
+            </strong>
+          </p>
+          <span
+            className="progress-spinner-active progress-spinner-double progress-spinner"
+          >
+            <div
+              className="progress-spinner-inner"
+            />
+            <div
+              className="progress-spinner-inner"
+            />
+            <span
+              className="sr-only"
+            >
+              Caricamento...
+            </span>
+          </span>
+        </div>
+        <div
+          className="col-6 col-lg-3 mt-3 mt-lg-0"
+        >
+          <p
+            className="mb-3"
+          >
+            <strong>
+              Doppio small
+            </strong>
+          </p>
+          <span
+            className="size-sm progress-spinner-double progress-spinner"
+          >
+            <div
+              className="progress-spinner-inner"
+            />
+            <div
+              className="progress-spinner-inner"
+            />
+            <span
+              className="sr-only"
+            >
+              Caricamento...
+            </span>
+          </span>
+        </div>
+        <div
+          className="col-6 col-lg-3 mt-3 mt-lg-0"
+        >
+          <p
+            className="mb-3"
+          >
+            <strong>
+              Doppio small attivo
+            </strong>
+          </p>
+          <span
+            className="progress-spinner-active size-sm progress-spinner-double progress-spinner"
+          >
+            <div
+              className="progress-spinner-inner"
+            />
+            <div
+              className="progress-spinner-inner"
+            />
+            <span
+              className="sr-only"
+            >
+              Caricamento...
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;

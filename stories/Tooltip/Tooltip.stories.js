@@ -12,6 +12,12 @@ import EsempiInterattivi from './docs/EsempiInterattivi.md'
 const EsempiComponent = () => {
   const ids = ['Example1', 'Example2', 'Example3']
 
+  ids.map((id, i) => {
+    const div = document.createElement('div')
+    div.setAttribute('id', id)
+    document.body.appendChild(div)
+  })
+
   return (
     <div className="bd-example tooltip-demo">
       <p className="muted">
@@ -68,6 +74,12 @@ const EsempiComponent = () => {
 const PosizioniComponent = () => {
   const ids = ['example1', 'example2', 'example3', 'example4', 'example5']
 
+  ids.map((id, i) => {
+    const div = document.createElement('div')
+    div.setAttribute('id', id)
+    document.body.appendChild(div)
+  })
+
   return (
     <div style={{ padding: 100 }}>
       <Button id={ids[0]} className="m-3">
@@ -106,8 +118,18 @@ const PosizioniComponent = () => {
 }
 
 const EsempiInterattiviComponent = () => {
+  // TODO find a better way to handle this
+  // Storyshot does not use the dom so can't render refs
+  // to fix the problem we append the elements manually
+  // this fixes tests without touching the rendered components
+  // nor storybook
+  // https://github.com/storybookjs/storybook/issues/886
+  // https://github.com/infinitered/addon-storyshots#using-createnodemock-to-mock-refs
+
   const id = 'example'
-  const target = () => document.getElementById(id)
+  const div = document.createElement('div')
+  div.setAttribute('id', id)
+  document.body.appendChild(div)
 
   const placements = ['top', 'bottom', 'left', 'right']
   const placement = select('Posizione', placements, placements[0])
@@ -119,7 +141,7 @@ const EsempiInterattiviComponent = () => {
         Tooltip
       </Button>
 
-      <UncontrolledTooltip placement={placement} target={target}>
+      <UncontrolledTooltip placement={placement} target={id}>
         {body}
       </UncontrolledTooltip>
     </div>
@@ -128,6 +150,7 @@ const EsempiInterattiviComponent = () => {
 
 storiesOf('Componenti/Tooltip', module)
   .addDecorator(withA11y)
+  .addDecorator(withKnobs)
   .add(
     'Esempi',
     withInfo({
@@ -140,7 +163,6 @@ storiesOf('Componenti/Tooltip', module)
       text: Posizioni
     })(PosizioniComponent)
   )
-  .addDecorator(withKnobs)
   .add(
     'Esempi interattivi',
     withInfo({

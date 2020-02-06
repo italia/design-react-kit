@@ -4,21 +4,19 @@ exports[`Storyshots Componenti/Tab Allineamento Verticale 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -95,14 +93,29 @@ exports[`Storyshots Componenti/Tab Allineamento Verticale 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "AllineamentoVerticale.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -110,21 +123,19 @@ exports[`Storyshots Componenti/Tab Contenuto 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -193,14 +204,29 @@ exports[`Storyshots Componenti/Tab Contenuto 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Contenuto.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -208,21 +234,19 @@ exports[`Storyshots Componenti/Tab Esempi 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -327,14 +351,29 @@ exports[`Storyshots Componenti/Tab Esempi 1`] = `
       </ul>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Esempi.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -342,21 +381,19 @@ exports[`Storyshots Componenti/Tab Icone 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -372,9 +409,24 @@ exports[`Storyshots Componenti/Tab Icone 1`] = `
             href="#"
             onClick={[Function]}
           >
-            <i
-              className="it-ico-lg it-file d-block text-center"
-            />
+            <span>
+              <svg
+                className="icon icon-primary"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-link"
+                />
+              </svg>
+              <i
+                aria-label="Tab titolo 1"
+                className="it-ico-lg it-file d-block text-center"
+              />
+            </span>
           </a>
         </li>
         <li
@@ -385,9 +437,24 @@ exports[`Storyshots Componenti/Tab Icone 1`] = `
             href="#"
             onClick={[Function]}
           >
-            <i
-              className="it-ico-lg it-calendar d-block text-center"
-            />
+            <span>
+              <svg
+                className="icon icon-primary"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-calendar"
+                />
+              </svg>
+              <i
+                aria-label="Tab titolo 2"
+                className="it-ico-lg it-calendar d-block text-center"
+              />
+            </span>
           </a>
         </li>
         <li
@@ -398,9 +465,24 @@ exports[`Storyshots Componenti/Tab Icone 1`] = `
             href="#"
             onClick={[Function]}
           >
-            <i
-              className="it-ico-lg it-comment d-block text-center"
-            />
+            <span>
+              <svg
+                className="icon icon-primary"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-comment"
+                />
+              </svg>
+              <i
+                aria-label="Tab titolo 3"
+                className="it-ico-lg it-comment d-block text-center"
+              />
+            </span>
           </a>
         </li>
       </ul>
@@ -425,14 +507,29 @@ exports[`Storyshots Componenti/Tab Icone 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Icone.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -440,21 +537,19 @@ exports[`Storyshots Componenti/Tab Icone e testo 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -470,9 +565,24 @@ exports[`Storyshots Componenti/Tab Icone e testo 1`] = `
             href="#"
             onClick={[Function]}
           >
-            <i
-              className="it-ico-lg it-file d-block text-center"
-            />
+            <span>
+              <svg
+                className="icon icon-primary"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-link"
+                />
+              </svg>
+              <i
+                aria-label="Tab titolo 1"
+                className="it-ico-lg it-file d-block text-center"
+              />
+            </span>
             <span>
               Tab titolo 1
             </span>
@@ -486,9 +596,24 @@ exports[`Storyshots Componenti/Tab Icone e testo 1`] = `
             href="#"
             onClick={[Function]}
           >
-            <i
-              className="it-ico-lg it-calendar d-block text-center"
-            />
+            <span>
+              <svg
+                className="icon icon-primary"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-calendar"
+                />
+              </svg>
+              <i
+                aria-label="Tab titolo 2"
+                className="it-ico-lg it-calendar d-block text-center"
+              />
+            </span>
             <span>
               Tab titolo 2
             </span>
@@ -502,9 +627,24 @@ exports[`Storyshots Componenti/Tab Icone e testo 1`] = `
             href="#"
             onClick={[Function]}
           >
-            <i
-              className="it-ico-lg it-comment d-block text-center"
-            />
+            <span>
+              <svg
+                className="icon icon-primary"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-comment"
+                />
+              </svg>
+              <i
+                aria-label="Tab titolo 3"
+                className="it-ico-lg it-comment d-block text-center"
+              />
+            </span>
             <span>
               Tab titolo 3
             </span>
@@ -532,14 +672,29 @@ exports[`Storyshots Componenti/Tab Icone e testo 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "IconeTesto.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -547,21 +702,19 @@ exports[`Storyshots Componenti/Tab Tab a bottoni 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -638,13 +791,28 @@ exports[`Storyshots Componenti/Tab Tab a bottoni 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "TabBottoni.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;

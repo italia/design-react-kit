@@ -4,199 +4,252 @@ exports[`Storyshots Componenti/Pager Allineamento 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <section>
-      <ul
-        className="justify-content-center mb-3 pagination pagination-lg"
+      <nav
+        aria-label="pagination"
+        className="justify-content-center mb-3 pagination-wrapper"
       >
-        <li
-          className="page-item disabled"
+        <ul
+          className="pagination"
         >
-          <a
-            aria-label="Previous"
-            className="page-link"
-            href="#"
+          <li
+            className="page-item disabled"
           >
-            <span
-              aria-hidden="true"
+            <a
+              aria-label="Previous"
+              className="page-link"
+              href="#"
             >
-              <i
-                className="it-chevron-left"
-              />
-            </span>
-            <span
-              className="sr-only"
+              <span
+                aria-hidden="true"
+              >
+                <svg
+                  className="icon"
+                  style={
+                    Object {
+                      "ariaHidden": true,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-chevron-left"
+                  />
+                </svg>
+              </span>
+              <span
+                className="sr-only"
+              >
+                Previous
+              </span>
+            </a>
+          </li>
+          <li
+            className="page-item"
+          >
+            <a
+              aria-current="page"
+              className="page-link"
+              href="#"
             >
-              Previous
-            </span>
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-current="page"
-            aria-label={undefined}
-            className="page-link"
-            href="#"
+              1
+            </a>
+          </li>
+          <li
+            className="page-item"
           >
-            1
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-label={undefined}
-            className="page-link"
-            href="#"
-          >
-            2
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-label={undefined}
-            className="page-link"
-            href="#"
-          >
-            3
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-label="Next"
-            className="page-link"
-            href="#"
-          >
-            <span
-              aria-hidden="true"
+            <a
+              className="page-link"
+              href="#"
             >
-              <i
-                className="it-chevron-right"
-              />
-            </span>
-            <span
-              className="sr-only"
+              2
+            </a>
+          </li>
+          <li
+            className="page-item"
+          >
+            <a
+              className="page-link"
+              href="#"
             >
-              Next
-            </span>
-          </a>
-        </li>
-      </ul>
-      <ul
-        className="justify-content-end mb-3 pagination pagination-sm"
+              3
+            </a>
+          </li>
+          <li
+            className="page-item"
+          >
+            <a
+              aria-label="Next"
+              className="page-link"
+              href="#"
+            >
+              <span
+                aria-hidden="true"
+              >
+                <svg
+                  className="icon"
+                  style={
+                    Object {
+                      "ariaHidden": true,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-chevron-right"
+                  />
+                </svg>
+              </span>
+              <span
+                className="sr-only"
+              >
+                Next
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav
+        aria-label="pagination"
+        className="justify-content-end mb-3 pagination-wrapper"
       >
-        <li
-          className="page-item disabled"
+        <ul
+          className="pagination"
         >
-          <a
-            aria-label="Previous"
-            className="page-link"
-            href="#"
+          <li
+            className="page-item disabled"
           >
-            <span
-              aria-hidden="true"
+            <a
+              aria-label="Previous"
+              className="page-link"
+              href="#"
             >
-              <i
-                className="it-chevron-left"
-              />
-            </span>
-            <span
-              className="sr-only"
+              <span
+                aria-hidden="true"
+              >
+                <svg
+                  className="icon"
+                  style={
+                    Object {
+                      "ariaHidden": true,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-chevron-left"
+                  />
+                </svg>
+              </span>
+              <span
+                className="sr-only"
+              >
+                Previous
+              </span>
+            </a>
+          </li>
+          <li
+            className="page-item"
+          >
+            <a
+              aria-current="page"
+              className="page-link"
+              href="#"
             >
-              Previous
-            </span>
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-current="page"
-            aria-label={undefined}
-            className="page-link"
-            href="#"
+              1
+            </a>
+          </li>
+          <li
+            className="page-item"
           >
-            1
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-label={undefined}
-            className="page-link"
-            href="#"
-          >
-            2
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-label={undefined}
-            className="page-link"
-            href="#"
-          >
-            3
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-label="Next"
-            className="page-link"
-            href="#"
-          >
-            <span
-              aria-hidden="true"
+            <a
+              className="page-link"
+              href="#"
             >
-              <i
-                className="it-chevron-right"
-              />
-            </span>
-            <span
-              className="sr-only"
+              2
+            </a>
+          </li>
+          <li
+            className="page-item"
+          >
+            <a
+              className="page-link"
+              href="#"
             >
-              Next
-            </span>
-          </a>
-        </li>
-      </ul>
+              3
+            </a>
+          </li>
+          <li
+            className="page-item"
+          >
+            <a
+              aria-label="Next"
+              className="page-link"
+              href="#"
+            >
+              <span
+                aria-hidden="true"
+              >
+                <svg
+                  className="icon"
+                  style={
+                    Object {
+                      "ariaHidden": true,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-chevron-right"
+                  />
+                </svg>
+              </span>
+              <span
+                className="sr-only"
+              >
+                Next
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </section>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Allineamento.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -204,491 +257,28 @@ exports[`Storyshots Componenti/Pager Esempi 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <ul
-      className="pagination"
-    >
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <i
-              className="it-chevron-left"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          1
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          2
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          3
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <i
-              className="it-chevron-right"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Next
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "Esempi.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Pager Esempi interattivi 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <ul
-      className="pagination pagination-sm"
-    >
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <i
-              className="it-chevron-left"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          1
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <i
-              className="it-chevron-right"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Next
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "EsempiInterattivi.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Pager Responsive 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <ul
-      className="mb-3 pagination"
-    >
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <i
-              className="it-chevron-left"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          9
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          10
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-current="page"
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          11
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          12
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          13
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <i
-              className="it-chevron-right"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Next
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "Responsive.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Pager Stato disabilitato e attivo 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <ul
-      className="pagination"
-    >
-      <li
-        className="page-item disabled"
-      >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <i
-              className="it-chevron-left"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-current="page"
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          1
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          2
-        </a>
-      </li>
-      <li
-        className="page-item disabled"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          3
-        </a>
-      </li>
-      <li
-        className="page-item disabled"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <i
-              className="it-chevron-right"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Next
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "StatoDisabilitatoAttivo.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <nav
+      aria-label="pagination"
       className="pagination-wrapper"
     >
       <ul
-        className="mb-3 pagination"
+        className="pagination"
       >
         <li
           className="page-item"
@@ -701,9 +291,617 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
             <span
               aria-hidden="true"
             >
-              <i
-                className="it-chevron-left"
-              />
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-left"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            1
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            2
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            3
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-right"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Pager Esempi interattivi 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <nav
+      aria-label="pagination"
+      className="pagination-wrapper"
+    >
+      <ul
+        className="pagination"
+      >
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-left"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            1
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-right"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Pager Responsive 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <nav
+      aria-label="pagination"
+      className="mb-3 pagination-wrapper"
+    >
+      <ul
+        className="pagination"
+      >
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-left"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            9
+          </a>
+        </li>
+        <li
+          className="d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            10
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-current="page"
+            className="page-link"
+            href="#"
+          >
+            <span
+              className="d-sm-none"
+            >
+              Pagina 
+            </span>
+            11
+          </a>
+        </li>
+        <li
+          className="d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            12
+          </a>
+        </li>
+        <li
+          className="d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            13
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-right"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Pager Stato disabilitato e attivo 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <nav
+      aria-label="pagination"
+      className="pagination-wrapper"
+    >
+      <ul
+        className="pagination"
+      >
+        <li
+          className="page-item disabled"
+        >
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-left"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-current="page"
+            className="page-link"
+            href="#"
+          >
+            1
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            2
+          </a>
+        </li>
+        <li
+          className="page-item disabled"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            3
+          </a>
+        </li>
+        <li
+          className="page-item disabled"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-right"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <nav
+      aria-label="pagination"
+      className="mb-3 pagination-wrapper"
+    >
+      <ul
+        className="pagination"
+      >
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-left"
+                />
+              </svg>
             </span>
             <span
               className="sr-only"
@@ -716,7 +914,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -726,19 +923,16 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
         <li
           className="d-none d-sm-block page-item"
         >
-          <a
-            aria-label={undefined}
+          <span
             className="page-link"
-            href="#"
           >
             …
-          </a>
+          </span>
         </li>
         <li
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -749,7 +943,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -761,7 +954,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
         >
           <a
             aria-current="page"
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -772,7 +964,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -783,7 +974,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -793,19 +983,16 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
         <li
           className="d-none d-sm-block page-item"
         >
-          <a
-            aria-label={undefined}
+          <span
             className="page-link"
-            href="#"
           >
             …
-          </a>
+          </span>
         </li>
         <li
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -823,9 +1010,18 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
             <span
               aria-hidden="true"
             >
-              <i
-                className="it-chevron-right"
-              />
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-right"
+                />
+              </svg>
             </span>
             <span
               className="sr-only"
@@ -845,9 +1041,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
             className="form-control form-control"
             id="jumpToPage"
             maxLength="2"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
             type="text"
           />
           <label
@@ -860,14 +1053,29 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
       </form>
     </nav>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Jump.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -875,404 +1083,41 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Link testuali 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <ul
-      className="mb-3 pagination"
-    >
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Previous"
-          className="text page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            Precedente
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          1
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          …
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          24
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          25
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-current="page"
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          26
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          27
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          28
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          …
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          50
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="text page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            Successiva
-          </span>
-          <span
-            className="sr-only"
-          >
-            Next
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "Link.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Pager/Funzioni aggiuntive More 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <ul
-      className="mb-3 pagination"
-    >
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <i
-              className="it-chevron-left"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          1
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          …
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          24
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          25
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-current="page"
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          26
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          27
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          28
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          …
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          50
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <i
-              className="it-chevron-right"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Next
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "More.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <nav
-      className="pagination-wrapper"
+      aria-label="pagination"
+      className="mb-3 pagination-wrapper"
     >
       <ul
-        className="mb-3 pagination"
+        className="pagination"
       >
         <li
           className="page-item"
         >
           <a
             aria-label="Previous"
-            className="page-link"
+            className="text page-link"
             href="#"
           >
             <span
               aria-hidden="true"
             >
-              <i
-                className="it-chevron-left"
-              />
+              Precedente
             </span>
             <span
               className="sr-only"
@@ -1285,7 +1130,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -1295,19 +1139,16 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
         <li
           className="d-none d-sm-block page-item"
         >
-          <a
-            aria-label={undefined}
+          <span
             className="page-link"
-            href="#"
           >
             …
-          </a>
+          </span>
         </li>
         <li
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -1318,7 +1159,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -1330,7 +1170,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
         >
           <a
             aria-current="page"
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -1341,7 +1180,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -1352,7 +1190,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -1362,19 +1199,212 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
         <li
           className="d-none d-sm-block page-item"
         >
+          <span
+            className="page-link"
+          >
+            …
+          </span>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
-            …
+            50
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="text page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              Successiva
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Pager/Funzioni aggiuntive More 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <nav
+      aria-label="pagination"
+      className="mb-3 pagination-wrapper"
+    >
+      <ul
+        className="pagination"
+      >
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-left"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Previous
+            </span>
           </a>
         </li>
         <li
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
+            className="page-link"
+            href="#"
+          >
+            1
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <span
+            className="page-link"
+          >
+            …
+          </span>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            24
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            25
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-current="page"
+            className="page-link"
+            href="#"
+          >
+            26
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            27
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            28
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <span
+            className="page-link"
+          >
+            …
+          </span>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
             className="page-link"
             href="#"
           >
@@ -1392,9 +1422,225 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
             <span
               aria-hidden="true"
             >
-              <i
-                className="it-chevron-right"
-              />
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-right"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <nav
+      aria-label="pagination"
+      className="mb-3 pagination-wrapper"
+    >
+      <ul
+        className="pagination"
+      >
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-left"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            1
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <span
+            className="page-link"
+          >
+            …
+          </span>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            24
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            25
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-current="page"
+            className="page-link"
+            href="#"
+          >
+            26
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            27
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            28
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <span
+            className="page-link"
+          >
+            …
+          </span>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            50
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-right"
+                />
+              </svg>
             </span>
             <span
               className="sr-only"
@@ -1422,60 +1668,77 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
           className="dropdown-menu"
           role="menu"
           tabIndex="-1"
-          x-placement={undefined}
         >
-          <button
-            className="dropdown-item active"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
+          <div
+            className="link-list-wrapper"
           >
-            pag. 10
-          </button>
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            pag. 20
-          </button>
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            pag. 30
-          </button>
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            pag. 40
-          </button>
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            pag. 50
-          </button>
+            <ul
+              className="link-list"
+            >
+              <li>
+                <a
+                  className="active list-item"
+                >
+                  pag. 10
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                >
+                  pag. 20
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                >
+                  pag. 30
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                >
+                  pag. 40
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                >
+                  pag. 50
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Changer.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -1483,29 +1746,28 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Simple mode 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <nav
-      className="pagination-wrapper"
+      aria-label="pagination"
+      className="mb-3 pagination-wrapper"
     >
       <ul
-        className="mb-3 pagination"
+        className="pagination"
       >
         <li
           className="page-item disabled"
@@ -1518,9 +1780,18 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Simple mode 1`] = `
             <span
               aria-hidden="true"
             >
-              <i
-                className="it-chevron-left"
-              />
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-left"
+                />
+              </svg>
             </span>
             <span
               className="sr-only"
@@ -1532,35 +1803,29 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Simple mode 1`] = `
         <li
           className="d-none d-sm-block page-item"
         >
-          <a
-            aria-label={undefined}
+          <span
             className="page-link"
-            href="#"
           >
             1
-          </a>
+          </span>
         </li>
         <li
           className="d-none d-sm-block page-item"
         >
-          <a
-            aria-label={undefined}
+          <span
             className="page-link"
-            href="#"
           >
             /
-          </a>
+          </span>
         </li>
         <li
           className="d-none d-sm-block page-item"
         >
-          <a
-            aria-label={undefined}
+          <span
             className="page-link"
-            href="#"
           >
             5
-          </a>
+          </span>
         </li>
         <li
           className="page-item"
@@ -1573,9 +1838,18 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Simple mode 1`] = `
             <span
               aria-hidden="true"
             >
-              <i
-                className="it-chevron-right"
-              />
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-right"
+                />
+              </svg>
             </span>
             <span
               className="sr-only"
@@ -1587,14 +1861,29 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Simple mode 1`] = `
       </ul>
     </nav>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Simple.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -1602,29 +1891,28 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <nav
-      className="pagination-wrapper pagination-total"
+      aria-label="pagination"
+      className="pagination-total mb-3 pagination-wrapper"
     >
       <ul
-        className="mb-3 pagination"
+        className="pagination"
       >
         <li
           className="page-item"
@@ -1637,9 +1925,18 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
             <span
               aria-hidden="true"
             >
-              <i
-                className="it-chevron-left"
-              />
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-left"
+                />
+              </svg>
             </span>
             <span
               className="sr-only"
@@ -1652,7 +1949,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -1662,20 +1958,17 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
         <li
           className="d-none d-sm-block page-item"
         >
-          <a
-            aria-label={undefined}
+          <span
             className="page-link"
-            href="#"
           >
             …
-          </a>
+          </span>
         </li>
         <li
           className="d-none d-sm-block page-item"
         >
           <a
             aria-current="page"
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -1686,7 +1979,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -1697,7 +1989,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
           className="page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -1708,7 +1999,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -1719,7 +2009,6 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -1729,19 +2018,16 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
         <li
           className="d-none d-sm-block page-item"
         >
-          <a
-            aria-label={undefined}
+          <span
             className="page-link"
-            href="#"
           >
             …
-          </a>
+          </span>
         </li>
         <li
           className="d-none d-sm-block page-item"
         >
           <a
-            aria-label={undefined}
             className="page-link"
             href="#"
           >
@@ -1759,9 +2045,18 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
             <span
               aria-hidden="true"
             >
-              <i
-                className="it-chevron-right"
-              />
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-chevron-right"
+                />
+              </svg>
             </span>
             <span
               className="sr-only"
@@ -1781,689 +2076,28 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
       </p>
     </nav>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "Total.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Pagination Dimensione e allineamento 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
+  <button
+    className="info__show-button"
+    onClick={[Function]}
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
+    type="button"
   >
-    <div>
-      <ul
-        className="mb-3 pagination pagination-lg"
-      >
-        <li
-          className="page-item disabled"
-        >
-          <a
-            aria-label="Previous"
-            className="page-link"
-            href="#"
-          >
-            <span
-              aria-hidden="true"
-            >
-              <span
-                className="it-chevron-left"
-              />
-            </span>
-            <span
-              className="sr-only"
-            >
-              Previous
-            </span>
-          </a>
-        </li>
-        <li
-          className="page-item active"
-        >
-          <a
-            aria-label={undefined}
-            className="page-link"
-            href="#"
-          >
-            1
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-label={undefined}
-            className="page-link"
-            href="#"
-          >
-            2
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-label={undefined}
-            className="page-link"
-            href="#"
-          >
-            3
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-label="Next"
-            className="page-link"
-            href="#"
-          >
-            <span
-              aria-hidden="true"
-            >
-              <span
-                className="it-chevron-right"
-              />
-            </span>
-            <span
-              className="sr-only"
-            >
-              Next
-            </span>
-          </a>
-        </li>
-      </ul>
-      <ul
-        className="justify-content-end mb-3 pagination pagination-sm"
-      >
-        <li
-          className="page-item disabled"
-        >
-          <a
-            aria-label="Previous"
-            className="page-link"
-            href="#"
-          >
-            <span
-              aria-hidden="true"
-            >
-              <span
-                className="it-chevron-left"
-              />
-            </span>
-            <span
-              className="sr-only"
-            >
-              Previous
-            </span>
-          </a>
-        </li>
-        <li
-          className="page-item active"
-        >
-          <a
-            aria-label={undefined}
-            className="page-link"
-            href="#"
-          >
-            1
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-label={undefined}
-            className="page-link"
-            href="#"
-          >
-            2
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-label={undefined}
-            className="page-link"
-            href="#"
-          >
-            3
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-label="Next"
-            className="page-link"
-            href="#"
-          >
-            <span
-              aria-hidden="true"
-            >
-              <span
-                className="it-chevron-right"
-              />
-            </span>
-            <span
-              className="sr-only"
-            >
-              Next
-            </span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "DimensioneAllineamento.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Pagination Esempi 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <ul
-      className="pagination"
-    >
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <span
-              className="it-chevron-left"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          1
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          2
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          3
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <span
-              className="it-chevron-right"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Next
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "Esempi.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Pagination Esempi interattivi 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <ul
-      className="pagination pagination-sm"
-    >
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <span
-              className="it-chevron-left"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          1
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <span
-              className="it-chevron-right"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Next
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "EsempiInterattivi.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Pagination Responsive 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <ul
-      className="mb-3 pagination"
-    >
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <span
-              className="it-chevron-left"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="p-3"
-        >
-          ...
-        </span>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          9
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          10
-        </a>
-      </li>
-      <li
-        className="page-item active"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          11
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          12
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          13
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="p-3"
-        >
-          ...
-        </span>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <span
-              className="it-chevron-right"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Next
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "Responsive.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Pagination Stato disabilitato e attivo 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <ul
-      className="pagination"
-    >
-      <li
-        className="page-item disabled"
-      >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <span
-              className="it-chevron-left"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="page-item active"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          1
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          2
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label={undefined}
-          className="page-link"
-          href="#"
-        >
-          3
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <span
-              className="it-chevron-right"
-            />
-          </span>
-          <span
-            className="sr-only"
-          >
-            Next
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "StatoDisabilitatoAttivo.md",
-      }
-    }
-  />
+    Show Info
+  </button>
 </div>
 `;

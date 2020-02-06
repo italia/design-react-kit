@@ -4,54 +4,55 @@ exports[`Storyshots Componenti/Modal Bottone di chiusura 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div
-      style={
-        Object {
-          "padding": 10,
-          "position": "relative",
-        }
-      }
+      className="p-3"
     >
       <button
-        className="close btn btn-secondary"
-        onClick={[Function]}
-        style={
-          Object {
-            "position": "absolute",
-          }
-        }
-        type={undefined}
+        className="close position-absolute"
       >
         ×
       </button>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "BottoneChiusura.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -59,26 +60,25 @@ exports[`Storyshots Componenti/Modal Centratura verticale 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div>
       <button
+        aria-label={null}
         className="btn btn-primary"
         onClick={[Function]}
         type="button"
@@ -87,3270 +87,107 @@ exports[`Storyshots Componenti/Modal Centratura verticale 1`] = `
       </button>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "CentraturaVerticale.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
 exports[`Storyshots Componenti/Modal Contenuto della modale variabile 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
   <div
-    id="story-root"
-    style={Object {}}
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
   >
-    <div
-      className="storybook-readme-story"
-      style={
-        Object {
-          "padding": "8px",
-        }
-      }
-    >
-      <div
-        style={
-          Object {
-            "backgroundColor": "#ffffff",
-            "border": "1px dashed #e5e5e5",
-            "boxSizing": "border-box",
-            "margin": "16px 0 16px 0",
-            "padding": "50px 35px",
-            "position": "relative",
-            "textAlign": "initial",
-            "transition": "background-color 0.2s",
-          }
-        }
-      >
-        <div>
-          <div
-            style={
-              Object {
-                "position": "relative",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div>
-              <div>
-                <button
-                  aria-label={null}
-                  className="mr-3 btn btn-primary"
-                  onClick={[Function]}
-                  type="button"
-                >
-                  Apri la modale per 
-                  Mario
-                </button>
-                <button
-                  aria-label={null}
-                  className="mr-3 btn btn-primary"
-                  onClick={[Function]}
-                  type="button"
-                >
-                  Apri la modale per 
-                  Paola
-                </button>
-                <button
-                  aria-label={null}
-                  className="mr-3 btn btn-primary"
-                  onClick={[Function]}
-                  type="button"
-                >
-                  Apri la modale per 
-                  Luca
-                </button>
-              </div>
-            </div>
-          </div>
-          <button
-            onClick={[Function]}
-            style={
-              Object {
-                "background": "#28c",
-                "border": "none",
-                "borderRadius": "0 0 0 5px",
-                "color": "#fff",
-                "cursor": "pointer",
-                "display": "block",
-                "fontFamily": "sans-serif",
-                "fontSize": "12px",
-                "padding": "5px 15px",
-                "position": "fixed",
-                "right": 0,
-                "top": 0,
-              }
-            }
-            type="button"
-          >
-            Show Info
-          </button>
-          <div
-            style={
-              Object {
-                "background": "white",
-                "bottom": 0,
-                "display": "none",
-                "left": 0,
-                "overflow": "auto",
-                "padding": "0 40px",
-                "position": "fixed",
-                "right": 0,
-                "top": 0,
-                "zIndex": 99999,
-              }
-            }
-          >
-            <button
-              onClick={[Function]}
-              style={
-                Object {
-                  "background": "#28c",
-                  "border": "none",
-                  "borderRadius": "0 0 0 5px",
-                  "color": "#fff",
-                  "cursor": "pointer",
-                  "display": "block",
-                  "fontFamily": "sans-serif",
-                  "fontSize": "12px",
-                  "padding": "5px 15px",
-                  "position": "fixed",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-              type="button"
-            >
-              ×
-            </button>
-            <div>
-              <div
-                style={
-                  Object {
-                    "WebkitFontSmoothing": "antialiased",
-                    "backgroundColor": "#fff",
-                    "border": "1px solid #eee",
-                    "borderRadius": "2px",
-                    "color": "#444",
-                    "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
-                    "fontSize": "15px",
-                    "fontWeight": 300,
-                    "lineHeight": 1.45,
-                    "marginBottom": "20px",
-                    "marginTop": "20px",
-                    "padding": "20px 40px 40px",
-                  }
-                }
-              >
-                <div
-                  style={
-                    Object {
-                      "borderBottom": "1px solid #eee",
-                      "marginBottom": 10,
-                      "paddingTop": 10,
-                    }
-                  }
-                >
-                  <h1
-                    style={
-                      Object {
-                        "fontSize": "35px",
-                        "margin": 0,
-                        "padding": 0,
-                      }
-                    }
-                  >
-                    Componenti/Modal
-                  </h1>
-                  <h2
-                    style={
-                      Object {
-                        "fontSize": "22px",
-                        "fontWeight": 400,
-                        "margin": "0 0 10px 0",
-                        "padding": 0,
-                      }
-                    }
-                  >
-                    Contenuto della modale variabile
-                  </h2>
-                </div>
-                
-                <div>
-                  <h1
-                    style={
-                      Object {
-                        "borderBottom": "1px solid #EEE",
-                        "fontSize": "25px",
-                        "margin": "20px 0 0 0",
-                        "padding": "0 0 5px 0",
-                      }
-                    }
-                  >
-                    Story Source
-                  </h1>
-                  <pre
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "backgroundColor": "#fafafa",
-                        "display": "flex",
-                        "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
-                        "fontSize": ".88em",
-                        "justifyContent": "space-between",
-                        "lineHeight": 1.5,
-                        "overflowX": "scroll",
-                        "padding": ".5rem",
-                      }
-                    }
-                  >
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "paddingLeft": 18,
-                            "paddingRight": 3,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#444",
-                            }
-                          }
-                        >
-                          &lt;
-                          ModalExample
-                        </span>
-                        <span />
-                        <span
-                          style={
-                            Object {
-                              "color": "#444",
-                            }
-                          }
-                        >
-                          /&gt;
-                        </span>
-                      </div>
-                    </div>
-                    <button
-                      onClick={[Function]}
-                      style={
-                        Object {
-                          "alignSelf": "flex-start",
-                          "backgroundColor": "rgb(255, 255, 255)",
-                          "borderColor": "rgb(238, 238, 238)",
-                          "borderImage": "initial",
-                          "borderRadius": "3px",
-                          "borderStyle": "solid",
-                          "borderWidth": "1px",
-                          "cursor": "pointer",
-                          "flexShrink": "0",
-                          "fontSize": "13px",
-                          "overflow": "hidden",
-                          "padding": "3px 10px",
-                        }
-                      }
-                      type="button"
-                    >
-                      Copy
-                    </button>
-                  </pre>
-                </div>
-                <div>
-                  <h1
-                    style={
-                      Object {
-                        "borderBottom": "1px solid #EEE",
-                        "fontSize": "25px",
-                        "margin": "20px 0 0 0",
-                        "padding": "0 0 5px 0",
-                      }
-                    }
-                  >
-                    Prop Types
-                  </h1>
-                  <div>
-                    <h2
-                      style={
-                        Object {
-                          "margin": "20px 0 0 0",
-                        }
-                      }
-                    >
-                      "
-                      Modal
-                      " Component
-                    </h2>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            property
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            propType
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            required
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            default
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            description
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            isOpen
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#a11",
-                                }
-                              }
-                            >
-                              false
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            autoFocus
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#a11",
-                                }
-                              }
-                            >
-                              true
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            centered
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#a11",
-                                }
-                              }
-                            >
-                              false
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            size
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            toggle
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            keyboard
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#a11",
-                                }
-                              }
-                            >
-                              true
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            role
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
-                            >
-                              dialog
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            labelledBy
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            backdrop
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#a11",
-                                }
-                              }
-                            >
-                              true
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            onEnter
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            onExit
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            onOpened
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#170",
-                                }
-                              }
-                            >
-                              noop
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            onClosed
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#170",
-                                }
-                              }
-                            >
-                              noop
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            children
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            className
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            wrapClassName
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            modalClassName
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            backdropClassName
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            contentClassName
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            external
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            fade
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#a11",
-                                }
-                              }
-                            >
-                              true
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            cssModule
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            zIndex
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#a11",
-                                }
-                              }
-                            >
-                              1050
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            backdropTransition
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              {
-                              <span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  mountOnEnter
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#a11",
-                                  }
-                                }
-                              >
-                                true
-                              </span>
-                              ,
-                              <span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  timeout
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#a11",
-                                  }
-                                }
-                              >
-                                150
-                              </span>
-                              }
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            modalTransition
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              {
-                              <span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  timeout
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#a11",
-                                  }
-                                }
-                              >
-                                300
-                              </span>
-                              }
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            innerRef
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div>
-                    <h2
-                      style={
-                        Object {
-                          "margin": "20px 0 0 0",
-                        }
-                      }
-                    >
-                      "
-                      ModalBody
-                      " Component
-                    </h2>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            property
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            propType
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            required
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            default
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            description
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            tag
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
-                            >
-                              div
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            className
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            cssModule
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div>
-                    <h2
-                      style={
-                        Object {
-                          "margin": "20px 0 0 0",
-                        }
-                      }
-                    >
-                      "
-                      ModalFooter
-                      " Component
-                    </h2>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            property
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            propType
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            required
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            default
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            description
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            tag
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
-                            >
-                              div
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            className
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            cssModule
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div>
-                    <h2
-                      style={
-                        Object {
-                          "margin": "20px 0 0 0",
-                        }
-                      }
-                    >
-                      "
-                      ModalHeader
-                      " Component
-                    </h2>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            property
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            propType
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            required
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            default
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            description
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            tag
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
-                            >
-                              h5
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            wrapTag
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
-                            >
-                              div
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            toggle
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            className
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            cssModule
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            children
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            closeAriaLabel
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
-                            >
-                              Close
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            charCode
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#a11",
-                                }
-                              }
-                            >
-                              215
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            close
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="markdown-body"
-        dangerouslySetInnerHTML={
-          Object {
-            "__html": "<p>ModalVariabile.md</p>
-",
-          }
-        }
-      />
-    </div>
-  </div>
-  <div>
-    <div
-      style={
-        Object {
-          "WebkitFontSmoothing": "antialiased",
-          "backgroundColor": "#fff",
-          "border": "1px solid #eee",
-          "borderRadius": "2px",
-          "color": "#444",
-          "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
-          "fontSize": "15px",
-          "fontWeight": 300,
-          "lineHeight": 1.45,
-          "marginBottom": "20px",
-          "marginTop": "20px",
-          "padding": "20px 40px 40px",
-        }
-      }
-    >
-      
+    <div>
       <div>
-        <h1
-          style={
-            Object {
-              "borderBottom": "1px solid #EEE",
-              "fontSize": "25px",
-              "margin": "20px 0 0 0",
-              "padding": "0 0 5px 0",
-            }
-          }
+        <button
+          aria-label={null}
+          className="mr-3 btn btn-primary"
+          onClick={[Function]}
+          type="button"
         >
-          Story Source
-        </h1>
-        <pre
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#fafafa",
-              "display": "flex",
-              "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
-              "fontSize": ".88em",
-              "justifyContent": "space-between",
-              "lineHeight": 1.5,
-              "overflowX": "scroll",
-              "padding": ".5rem",
-            }
-          }
+          Apri la modale per 
+          Mario
+        </button>
+        <button
+          aria-label={null}
+          className="mr-3 btn btn-primary"
+          onClick={[Function]}
+          type="button"
         >
-          <div>
-            <div
-              style={
-                Object {
-                  "paddingLeft": 18,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#444",
-                  }
-                }
-              >
-                &lt;
-                Story
-              </span>
-              <span>
-                <span>
-                  <span>
-                    <br />
-                      
-                  </span>
-                  <span
-                    style={Object {}}
-                  >
-                    docs
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#666",
-                          }
-                        }
-                      >
-                        {
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            docsBeforePreview
-                          </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#444",
-                            }
-                          }
-                        >
-                          null
-                        </span>
-                        ,
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            docsAfterPreview
-                          </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#666",
-                            }
-                          }
-                        >
-                          [
-                          <span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
-                            >
-                              '&lt;p&gt;ModalVariabile.md&lt;/p&gt;
-'
-                            </span>
-                          </span>
-                          ]
-                        </span>
-                        }
-                      </span>
-                      }
-                    </span>
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <br />
-                      
-                  </span>
-                  <span
-                    style={Object {}}
-                  >
-                    config
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#666",
-                          }
-                        }
-                      >
-                        {
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            FooterComponent
-                          </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#170",
-                            }
-                          }
-                        >
-                          FooterDocs
-                        </span>
-                        ,
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            PreviewComponent
-                          </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#170",
-                            }
-                          }
-                        >
-                          StoryPreview
-                        </span>
-                        ,
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            docsAtFooter
-                          </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#444",
-                            }
-                          }
-                        >
-                          null
-                        </span>
-                        }
-                      </span>
-                      }
-                    </span>
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <br />
-                      
-                  </span>
-                  <span
-                    style={Object {}}
-                  >
-                    storyFn
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#170",
-                          }
-                        }
-                      >
-                        deprecated
-                      </span>
-                      }
-                    </span>
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <br />
-                      
-                  </span>
-                  <span
-                    style={Object {}}
-                  >
-                    kind
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      "
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        Componenti/Modal
-                      </span>
-                      "
-                    </span>
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <br />
-                      
-                  </span>
-                  <span
-                    style={Object {}}
-                  >
-                    story
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      "
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        Contenuto della modale variabile
-                      </span>
-                      "
-                    </span>
-                  </span>
-                  <br />
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "color": "#444",
-                  }
-                }
-              >
-                /&gt;
-              </span>
-            </div>
-          </div>
-          <button
-            onClick={[Function]}
-            style={
-              Object {
-                "alignSelf": "flex-start",
-                "backgroundColor": "rgb(255, 255, 255)",
-                "borderColor": "rgb(238, 238, 238)",
-                "borderImage": "initial",
-                "borderRadius": "3px",
-                "borderStyle": "solid",
-                "borderWidth": "1px",
-                "cursor": "pointer",
-                "flexShrink": "0",
-                "fontSize": "13px",
-                "overflow": "hidden",
-                "padding": "3px 10px",
-              }
-            }
-            type="button"
-          >
-            Copy
-          </button>
-        </pre>
-      </div>
-      <div>
-        <h1
-          style={
-            Object {
-              "borderBottom": "1px solid #EEE",
-              "fontSize": "25px",
-              "margin": "20px 0 0 0",
-              "padding": "0 0 5px 0",
-            }
-          }
+          Apri la modale per 
+          Paola
+        </button>
+        <button
+          aria-label={null}
+          className="mr-3 btn btn-primary"
+          onClick={[Function]}
+          type="button"
         >
-          Prop Types
-        </h1>
-        <div>
-          <h2
-            style={
-              Object {
-                "margin": "20px 0 0 0",
-              }
-            }
-          >
-            "
-            Story
-            " Component
-          </h2>
-          <small>
-            No propTypes defined!
-          </small>
-        </div>
+          Apri la modale per 
+          Luca
+        </button>
       </div>
     </div>
   </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -3358,26 +195,25 @@ exports[`Storyshots Componenti/Modal Demo 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div>
       <button
+        aria-label={null}
         className="btn btn-primary"
         onClick={[Function]}
         type="button"
@@ -3386,14 +222,29 @@ exports[`Storyshots Componenti/Modal Demo 1`] = `
       </button>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Demo.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -3401,27 +252,26 @@ exports[`Storyshots Componenti/Modal Dimensioni 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div>
       <div>
         <button
+          aria-label={null}
           className="mr-3 btn btn-primary"
           onClick={[Function]}
           type="button"
@@ -3429,6 +279,7 @@ exports[`Storyshots Componenti/Modal Dimensioni 1`] = `
           Modale grande
         </button>
         <button
+          aria-label={null}
           className="btn btn-primary"
           onClick={[Function]}
           type="button"
@@ -3438,14 +289,29 @@ exports[`Storyshots Componenti/Modal Dimensioni 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Dimensioni.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -3453,28 +319,26 @@ exports[`Storyshots Componenti/Modal Esempi 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div
       style={
         Object {
-          "padding": "100px 300px",
+          "padding": "0px 290px",
         }
       }
     >
@@ -3499,16 +363,16 @@ exports[`Storyshots Componenti/Modal Esempi 1`] = `
           className="modal-footer"
         >
           <button
+            aria-label={null}
             className="btn btn-secondary"
             onClick={[Function]}
-            type={undefined}
           >
             Chiudi
           </button>
           <button
+            aria-label={null}
             className="btn btn-primary"
             onClick={[Function]}
-            type={undefined}
           >
             Salva le modifiche
           </button>
@@ -3516,14 +380,29 @@ exports[`Storyshots Componenti/Modal Esempi 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Esempi.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -3531,26 +410,25 @@ exports[`Storyshots Componenti/Modal Rimuovere l’animazione 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div>
       <button
+        aria-label={null}
         className="btn btn-primary"
         onClick={[Function]}
         type="button"
@@ -3559,14 +437,29 @@ exports[`Storyshots Componenti/Modal Rimuovere l’animazione 1`] = `
       </button>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "RimuovereAnimazione.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -3574,26 +467,25 @@ exports[`Storyshots Componenti/Modal Scroll di contenuti lunghi 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div>
       <button
+        aria-label={null}
         className="btn btn-primary"
         onClick={[Function]}
         type="button"
@@ -3602,14 +494,29 @@ exports[`Storyshots Componenti/Modal Scroll di contenuti lunghi 1`] = `
       </button>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "ScrollContenutiLunghi.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -3617,26 +524,25 @@ exports[`Storyshots Componenti/Modal Tooltip and popover 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div>
       <button
+        aria-label={null}
         className="btn btn-primary"
         onClick={[Function]}
         type="button"
@@ -3645,14 +551,29 @@ exports[`Storyshots Componenti/Modal Tooltip and popover 1`] = `
       </button>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "TooltipPopover.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -3660,26 +581,25 @@ exports[`Storyshots Componenti/Modal Uso della griglia 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div>
       <button
+        aria-label={null}
         className="btn btn-primary"
         onClick={[Function]}
         type="button"
@@ -3688,13 +608,28 @@ exports[`Storyshots Componenti/Modal Uso della griglia 1`] = `
       </button>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "UsoGriglia.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;

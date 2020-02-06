@@ -1,24 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Componenti/Dropdown Allineamento orizzontale 1`] = `
+exports[`Storyshots Componenti/Dropdown Esempi 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -29,96 +27,8 @@ exports[`Storyshots Componenti/Dropdown Allineamento orizzontale 1`] = `
       <button
         aria-expanded={false}
         aria-haspopup={true}
-        className="dropdown-toggle btn btn-secondary"
+        className="btn btn-dropdown dropdown-toggle"
         onClick={[Function]}
-        type="button"
-      >
-        Dropdown allineato a destra
-      </button>
-      <div
-        aria-hidden={true}
-        className="dropdown-menu dropdown-menu-right"
-        role="menu"
-        tabIndex="-1"
-      >
-        <h6
-          className="dropdown-header"
-          onClick={[Function]}
-          tabIndex="-1"
-          type={undefined}
-        >
-          Header
-        </h6>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 1
-        </button>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 2
-        </button>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 3
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "AllineamentoOrizzontale.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown Bottoni 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div
-      className="btn-group"
-      onKeyDown={[Function]}
-    >
-      <button
-        aria-expanded={false}
-        aria-haspopup={true}
-        className="dropdown-toggle btn btn-secondary"
-        onClick={[Function]}
-        type="button"
       >
         Apri dropdown
       </button>
@@ -128,654 +38,61 @@ exports[`Storyshots Componenti/Dropdown Bottoni 1`] = `
         role="menu"
         tabIndex="-1"
       >
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
+        <div
+          className="link-list-wrapper"
         >
-          Azione 1
-        </button>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 2
-        </button>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 3
-        </button>
+          <ul
+            className="link-list"
+          >
+            <li>
+              <a
+                className="list-item"
+              >
+                Azione 1
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+              >
+                Azione 2
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+              >
+                Azione 3
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "Bottoni.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown Bottoni divisi 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
+  <button
+    className="info__show-button"
+    onClick={[Function]}
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
+    type="button"
   >
-    <div
-      className="btn-group"
-      role="group"
-    >
-      <button
-        className="btn btn-secondary"
-        onClick={[Function]}
-        type={undefined}
-      >
-        Bottone diviso
-      </button>
-      <div
-        className="btn-group"
-        onKeyDown={[Function]}
-      >
-        <button
-          aria-expanded={false}
-          aria-haspopup={true}
-          className="dropdown-toggle btn btn-secondary"
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            className="sr-only"
-          >
-            Toggle Dropdown
-          </span>
-        </button>
-        <div
-          aria-hidden={true}
-          className="dropdown-menu"
-          role="menu"
-          tabIndex="-1"
-        >
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            Azione 1
-          </button>
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            Azione 2
-          </button>
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            Azione 3
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "BottoniDivisi.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown Dimensioni 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div>
-      <div
-        className="mt-0 btn-group-lg dropdown"
-        onKeyDown={[Function]}
-      >
-        <button
-          aria-expanded={false}
-          aria-haspopup={true}
-          className="dropdown-toggle btn btn-secondary"
-          onClick={[Function]}
-          type="button"
-        >
-          Dropdown
-        </button>
-        <div
-          aria-hidden={true}
-          className="dropdown-menu"
-          role="menu"
-          tabIndex="-1"
-        >
-          <div>
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              tabIndex="0"
-              type="button"
-            >
-              Azione 1
-            </button>
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              tabIndex="0"
-              type="button"
-            >
-              Azione 2
-            </button>
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              tabIndex="0"
-              type="button"
-            >
-              Azione 3
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        className="mt-3 dropdown"
-        onKeyDown={[Function]}
-      >
-        <button
-          aria-expanded={false}
-          aria-haspopup={true}
-          className="dropdown-toggle btn btn-secondary"
-          onClick={[Function]}
-          type="button"
-        >
-          Dropdown
-        </button>
-        <div
-          aria-hidden={true}
-          className="dropdown-menu"
-          role="menu"
-          tabIndex="-1"
-        >
-          <div>
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              tabIndex="0"
-              type="button"
-            >
-              Azione 1
-            </button>
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              tabIndex="0"
-              type="button"
-            >
-              Azione 2
-            </button>
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              tabIndex="0"
-              type="button"
-            >
-              Azione 3
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        className="mt-3 btn-group-sm dropdown"
-        onKeyDown={[Function]}
-      >
-        <button
-          aria-expanded={false}
-          aria-haspopup={true}
-          className="dropdown-toggle btn btn-secondary"
-          onClick={[Function]}
-          type="button"
-        >
-          Dropdown
-        </button>
-        <div
-          aria-hidden={true}
-          className="dropdown-menu"
-          role="menu"
-          tabIndex="-1"
-        >
-          <div>
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              tabIndex="0"
-              type="button"
-            >
-              Azione 1
-            </button>
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              tabIndex="0"
-              type="button"
-            >
-              Azione 2
-            </button>
-            <button
-              className="dropdown-item"
-              onClick={[Function]}
-              tabIndex="0"
-              type="button"
-            >
-              Azione 3
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "Dimensioni.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown Direzioni Dropdown 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div
-      style={
-        Object {
-          "padding": 200,
-        }
-      }
-    >
-      <div
-        className="dropup dropdown"
-        onKeyDown={[Function]}
-      >
-        <button
-          aria-expanded={false}
-          aria-haspopup={true}
-          className="dropdown-toggle btn btn-secondary"
-          onClick={[Function]}
-          type="button"
-        >
-          Dropup
-        </button>
-        <div
-          aria-hidden={true}
-          className="dropdown-menu"
-          role="menu"
-          tabIndex="-1"
-        >
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            Azione 1
-          </button>
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            Azione 2
-          </button>
-        </div>
-      </div>
-      <div
-        className="mt-3 dropleft dropdown"
-        onKeyDown={[Function]}
-      >
-        <button
-          aria-expanded={false}
-          aria-haspopup={true}
-          className="dropdown-toggle btn btn-secondary"
-          onClick={[Function]}
-          type="button"
-        >
-          Dropleft
-        </button>
-        <div
-          aria-hidden={true}
-          className="dropdown-menu"
-          role="menu"
-          tabIndex="-1"
-        >
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            Azione 1
-          </button>
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            Azione 2
-          </button>
-        </div>
-      </div>
-      <div
-        className="mt-3 dropright dropdown"
-        onKeyDown={[Function]}
-      >
-        <button
-          aria-expanded={false}
-          aria-haspopup={true}
-          className="dropdown-toggle btn btn-secondary"
-          onClick={[Function]}
-          type="button"
-        >
-          Dropright
-        </button>
-        <div
-          aria-hidden={true}
-          className="dropdown-menu"
-          role="menu"
-          tabIndex="-1"
-        >
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            Azione 1
-          </button>
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            Azione 2
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "DirezioniDropdown.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown Dropdown a tutta larghezza 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div
-      className="mt-0 btn-group-lg dropdown"
-      onKeyDown={[Function]}
-    >
-      <button
-        aria-expanded={false}
-        aria-haspopup={true}
-        className="dropdown-toggle btn btn-secondary"
-        onClick={[Function]}
-        type="button"
-      >
-        Dropdown
-      </button>
-      <div
-        aria-hidden={true}
-        className="full-width dropdown-menu"
-        role="menu"
-        tabIndex="-1"
-      >
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 1
-        </button>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 2
-        </button>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 3
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "DropdownLarghezza.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown Esempi 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div
-      className="dropdown"
-      onKeyDown={[Function]}
-    >
-      <button
-        aria-expanded={false}
-        aria-haspopup={true}
-        className="dropdown-toggle btn btn-secondary"
-        onClick={[Function]}
-        type="button"
-      >
-        Dropdown
-      </button>
-      <div
-        aria-hidden={true}
-        className="dropdown-menu"
-        role="menu"
-        tabIndex="-1"
-      >
-        <h6
-          className="dropdown-header"
-          onClick={[Function]}
-          tabIndex="-1"
-          type={undefined}
-        >
-          Header 1
-        </h6>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 1
-        </button>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 2
-        </button>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 3
-        </button>
-        <div
-          className="dropdown-divider"
-          onClick={[Function]}
-          tabIndex="-1"
-          type={undefined}
-        />
-        <h6
-          className="dropdown-header"
-          onClick={[Function]}
-          tabIndex="-1"
-          type={undefined}
-        >
-          Header 2
-        </h6>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 4
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "Esempi.md",
-      }
-    }
-  />
+    Show Info
+  </button>
 </div>
 `;
 
@@ -783,21 +100,19 @@ exports[`Storyshots Componenti/Dropdown Link 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -818,43 +133,62 @@ exports[`Storyshots Componenti/Dropdown Link 1`] = `
         className="dropdown-menu"
         role="menu"
         tabIndex="-1"
-        x-placement={undefined}
       >
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
+        <div
+          className="link-list-wrapper"
         >
-          Azione 1
-        </button>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 2
-        </button>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 3
-        </button>
+          <ul
+            className="link-list"
+          >
+            <li>
+              <a
+                className="list-item"
+              >
+                Azione 1
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+              >
+                Azione 2
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+              >
+                Azione 3
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "VarianteBottoni.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -862,3543 +196,1155 @@ exports[`Storyshots Componenti/Dropdown Variante Bottoni 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
+      }
+    }
+  >
+    <section>
+      <div
+        className="mr-3 btn-group"
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          aria-label={null}
+          className="dropdown-toggle btn btn-primary"
+          onClick={[Function]}
+          type="button"
+        >
+          Apri dropdown
+        </button>
+        <div
+          aria-hidden={true}
+          className="dropdown-menu"
+          role="menu"
+          tabIndex="-1"
+        >
+          <div
+            className="link-list-wrapper"
+          >
+            <ul
+              className="link-list"
+            >
+              <li>
+                <a
+                  className="list-item"
+                >
+                  Azione 1
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                >
+                  Azione 2
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                >
+                  Azione 3
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        className="mr-3 btn-group"
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          aria-label={null}
+          className="dropdown-toggle btn btn-secondary"
+          onClick={[Function]}
+          type="button"
+        >
+          Apri dropdown
+        </button>
+        <div
+          aria-hidden={true}
+          className="dropdown-menu"
+          role="menu"
+          tabIndex="-1"
+        >
+          <div
+            className="link-list-wrapper"
+          >
+            <ul
+              className="link-list"
+            >
+              <li>
+                <a
+                  className="list-item"
+                >
+                  Azione 1
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                >
+                  Azione 2
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                >
+                  Azione 3
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        className="mr-3 btn-group"
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          aria-label={null}
+          className="dropdown-toggle btn btn-danger"
+          onClick={[Function]}
+          type="button"
+        >
+          Apri dropdown
+        </button>
+        <div
+          aria-hidden={true}
+          className="dropdown-menu"
+          role="menu"
+          tabIndex="-1"
+        >
+          <div
+            className="link-list-wrapper"
+          >
+            <ul
+              className="link-list"
+            >
+              <li>
+                <a
+                  className="list-item"
+                >
+                  Azione 1
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                >
+                  Azione 2
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                >
+                  Azione 3
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown.Dropdown menu Menu con voci large 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
       }
     }
   >
     <div
-      className="btn-group"
-      onKeyDown={[Function]}
+      className="clearfix"
     >
-      <button
-        aria-expanded={false}
-        aria-haspopup={true}
-        className="dropdown-toggle btn btn-danger"
-        onClick={[Function]}
-        type="button"
-      >
-        Apri dropdown
-      </button>
       <div
         aria-hidden={true}
-        className="dropdown-menu"
+        className="d-block position-relative dropdown-menu"
+        isOpen={true}
         role="menu"
         tabIndex="-1"
       >
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 1
-        </button>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 2
-        </button>
-        <button
-          className="dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 3
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "VarianteBottoni.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown Voci di menù attive 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div
-      style={
-        Object {
-          "paddingBottom": 150,
-        }
-      }
-    >
-      <div
-        className="dropdown show"
-        onKeyDown={[Function]}
-      >
-        <button
-          aria-expanded={true}
-          aria-haspopup={true}
-          className="dropdown-toggle btn btn-secondary"
-          onClick={[Function]}
-          type="button"
-        >
-          Dropdown
-        </button>
         <div
-          aria-hidden={false}
-          className="dropdown-menu show"
-          data-placement={undefined}
-          data-x-out-of-boundaries={undefined}
-          role="menu"
-          style={
-            Object {
-              "opacity": 0,
-              "pointerEvents": "none",
-              "position": "absolute",
-            }
-          }
-          tabIndex="-1"
+          className="link-list-wrapper"
         >
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
+          <ul
+            className="link-list"
           >
-            Azione 1
-          </button>
-          <button
-            className="dropdown-item active"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            Azione 2
-          </button>
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            Azione 3
-          </button>
+            <li>
+              <a
+                className="size list-item"
+              >
+                <span>
+                  Azione 1
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="size list-item"
+              >
+                <span>
+                  Azione 2
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="size list-item"
+              >
+                <span>
+                  Azione 3
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "VociMenuAttive.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
-exports[`Storyshots Componenti/Dropdown Voci di menù disabilitate 1`] = `
+exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù dark 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div
-      style={
-        Object {
-          "paddingBottom": 150,
-        }
-      }
+      className="clearfix"
     >
       <div
-        className="dropdown show"
-        onKeyDown={[Function]}
+        aria-hidden={true}
+        className="d-block dark position-relative dropdown-menu"
+        isOpen={true}
+        role="menu"
+        tabIndex="-1"
       >
-        <button
-          aria-expanded={true}
-          aria-haspopup={true}
-          className="dropdown-toggle btn btn-secondary"
-          onClick={[Function]}
-          type="button"
-        >
-          Dropdown
-        </button>
         <div
-          aria-hidden={false}
-          className="dropdown-menu show"
-          data-placement={undefined}
-          data-x-out-of-boundaries={undefined}
-          role="menu"
-          style={
-            Object {
-              "opacity": 0,
-              "pointerEvents": "none",
-              "position": "absolute",
-            }
-          }
-          tabIndex="-1"
+          className="link-list-wrapper"
         >
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
+          <ul
+            className="link-list"
           >
-            Azione 1
-          </button>
-          <button
-            className="disabled dropdown-item"
-            disabled={true}
-            onClick={[Function]}
-            tabIndex="-1"
-            type="button"
-          >
-            Azione 2
-          </button>
-          <button
-            className="dropdown-item"
-            onClick={[Function]}
-            tabIndex="0"
-            type="button"
-          >
-            Azione 3
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "VociMenuDisabilitate.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown/Dropdown menu Menu con voci large 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div
-      className="dropdown show"
-      onKeyDown={[Function]}
-    >
-      <button
-        aria-expanded={true}
-        aria-haspopup={true}
-        className="btn-dropdown btn btn-"
-        onClick={[Function]}
-        type="button"
-      >
-        Dropdown
-         
-      </button>
-      <div
-        aria-hidden={false}
-        className="dropdown-menu show"
-        data-placement={undefined}
-        data-x-out-of-boundaries={undefined}
-        role="menu"
-        style={
-          Object {
-            "opacity": 0,
-            "pointerEvents": "none",
-            "position": "absolute",
-          }
-        }
-        tabIndex="-1"
-        x-placement="bottom-start"
-      >
-        <button
-          className="large dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 1
-        </button>
-        <button
-          className="large dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 2
-        </button>
-        <button
-          className="large dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 3
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "MenuLarge.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown/Dropdown menu Menà voci attive 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div
-      aria-hidden={true}
-      className="d-block dropdown-menu"
-      isOpen={true}
-      role="menu"
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
-      tabIndex="-1"
-      x-placement={undefined}
-    >
-      <button
-        className="dropdown-item"
-        onClick={[Function]}
-        tabIndex="0"
-        type="button"
-      >
-        Azione 1
-      </button>
-      <button
-        className="dropdown-item active"
-        onClick={[Function]}
-        tabIndex="0"
-        type="button"
-      >
-        Azione 2
-      </button>
-      <button
-        className="dropdown-item"
-        onClick={[Function]}
-        tabIndex="0"
-        type="button"
-      >
-        Azione 3
-      </button>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "MenuVociAttive.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù dark 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div
-      aria-hidden={true}
-      className="d-block dark dropdown-menu"
-      isOpen={true}
-      role="menu"
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
-      tabIndex="-1"
-      x-placement={undefined}
-    >
-      <div
-        className="link-list-wrapper"
-      >
-        <ul
-          className="link-list"
-        >
-          <li>
-            <h3>
-              Header
-            </h3>
-          </li>
-          <li>
-            <a
-              className="list-item right-icon active"
-              href="#"
-            >
-              <span>
-                Azione 1 (attivo)
-              </span>
-              <i
-                className="it-info right"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              className="list-item right-icon"
-              href="#"
-            >
-              <span>
-                Azione 2
-              </span>
-              <i
-                className="it-info right"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              className="list-item right-icon"
-              href="#"
-            >
-              <span>
-                Azione 3
-              </span>
-              <i
-                className="it-info right"
-              />
-            </a>
-          </li>
-          <li>
-            <span
-              className="divider"
-            />
-          </li>
-          <li>
-            <a
-              className="list-item right-icon"
-              href="#"
-            >
-              <span>
-                Azione 4
-              </span>
-              <i
-                className="it-info right"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              className="list-item right-icon disabled"
-              href="#"
-            >
-              <span>
-                Azione 5 (disabilitato)
-              </span>
-              <i
-                className="it-info right"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "MenuDark.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù full width 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div
-      className="dropdown show"
-      onKeyDown={[Function]}
-    >
-      <button
-        aria-expanded={true}
-        aria-haspopup={true}
-        className="btn-dropdown btn btn-"
-        onClick={[Function]}
-        type="button"
-      >
-        Dropdown
-         
-      </button>
-      <div
-        aria-hidden={false}
-        className="full-width dropdown-menu show"
-        data-placement={undefined}
-        data-x-out-of-boundaries={undefined}
-        role="menu"
-        style={
-          Object {
-            "opacity": 0,
-            "pointerEvents": "none",
-            "position": "absolute",
-          }
-        }
-        tabIndex="-1"
-        x-placement="bottom-start"
-      >
-        <button
-          className="large dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 1
-        </button>
-        <button
-          className="large dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 2
-        </button>
-        <button
-          className="large dropdown-item"
-          onClick={[Function]}
-          tabIndex="0"
-          type="button"
-        >
-          Azione 3
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "MenuFull.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù headers e separatori 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div
-      aria-hidden={true}
-      className="d-block dropdown-menu"
-      isOpen={true}
-      role="menu"
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
-      tabIndex="-1"
-      x-placement={undefined}
-    >
-      <h6
-        className="dropdown-header"
-        onClick={[Function]}
-        tabIndex="-1"
-        type={undefined}
-      >
-        Header
-      </h6>
-      <button
-        className="dropdown-item"
-        onClick={[Function]}
-        tabIndex="0"
-        type="button"
-      >
-        Azione 1
-      </button>
-      <button
-        className="dropdown-item"
-        onClick={[Function]}
-        tabIndex="0"
-        type="button"
-      >
-        Azione 2
-      </button>
-      <button
-        className="dropdown-item"
-        onClick={[Function]}
-        tabIndex="0"
-        type="button"
-      >
-        Azione 3
-      </button>
-      <div
-        className="dropdown-divider"
-        onClick={[Function]}
-        tabIndex="-1"
-        type={undefined}
-      />
-      <button
-        className="dropdown-item"
-        onClick={[Function]}
-        tabIndex="0"
-        type="button"
-      >
-        Azione 4
-      </button>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "MenuHeaderDivider.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù icona a destra 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div
-      aria-hidden={true}
-      className="d-block dropdown-menu"
-      isOpen={true}
-      role="menu"
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
-      tabIndex="-1"
-      x-placement={undefined}
-    >
-      <div
-        className="link-list-wrapper"
-      >
-        <ul
-          className="link-list"
-        >
-          <li>
-            <a
-              className="list-item right-icon"
-              href="#"
-            >
-              <span>
-                Azione 1
-              </span>
-              <i
-                className="it-info right"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              className="list-item right-icon"
-              href="#"
-            >
-              <span>
-                Azione 2
-              </span>
-              <i
-                className="it-info right"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              className="list-item right-icon"
-              href="#"
-            >
-              <span>
-                Azione 3
-              </span>
-              <i
-                className="it-info right"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "MenuIconRight.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù icona a sinistra 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div
-      aria-hidden={true}
-      className="d-block dropdown-menu"
-      isOpen={true}
-      role="menu"
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
-      tabIndex="-1"
-      x-placement={undefined}
-    >
-      <div
-        className="link-list-wrapper"
-      >
-        <ul
-          className="link-list"
-        >
-          <li>
-            <a
-              className="list-item left-icon"
-              href="#"
-            >
-              <i
-                className="it-info left"
-              />
-              <span>
-                Azione 1
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              className="list-item left-icon"
-              href="#"
-            >
-              <i
-                className="it-info left"
-              />
-              <span>
-                Azione 2
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              className="list-item left-icon"
-              href="#"
-            >
-              <i
-                className="it-info left"
-              />
-              <span>
-                Azione 3
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "MenuIconLeft.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù voci attive 1`] = `
-<div>
-  <div
-    id="story-root"
-    style={Object {}}
-  >
-    <div
-      className="storybook-readme-story"
-      style={
-        Object {
-          "padding": "8px",
-        }
-      }
-    >
-      <div
-        style={
-          Object {
-            "backgroundColor": "#ffffff",
-            "border": "1px dashed #e5e5e5",
-            "boxSizing": "border-box",
-            "margin": "16px 0 16px 0",
-            "padding": "50px 35px",
-            "position": "relative",
-            "textAlign": "initial",
-            "transition": "background-color 0.2s",
-          }
-        }
-      >
-        <div>
-          <div
-            style={
-              Object {
-                "position": "relative",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="clearfix"
-            >
-              <div
-                aria-hidden={true}
-                className="d-block position-relative dropdown-menu"
-                isOpen={true}
-                role="menu"
-                tabIndex="-1"
+            <li>
+              <h3
+                className="header list-item"
               >
-                <div
-                  className="link-list-wrapper"
-                >
-                  <ul
-                    className="link-list"
-                  >
-                    <li>
-                      <a
-                        className="active list-item"
-                        href="#"
-                      >
-                        <span>
-                          Azione 1
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="list-item"
-                        href="#"
-                      >
-                        <span>
-                          Azione 2
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="list-item"
-                        href="#"
-                      >
-                        <span>
-                          Azione 3
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            onClick={[Function]}
-            style={
-              Object {
-                "background": "#28c",
-                "border": "none",
-                "borderRadius": "0 0 0 5px",
-                "color": "#fff",
-                "cursor": "pointer",
-                "display": "block",
-                "fontFamily": "sans-serif",
-                "fontSize": "12px",
-                "padding": "5px 15px",
-                "position": "fixed",
-                "right": 0,
-                "top": 0,
-              }
-            }
-            type="button"
-          >
-            Show Info
-          </button>
-          <div
-            style={
-              Object {
-                "background": "white",
-                "bottom": 0,
-                "display": "none",
-                "left": 0,
-                "overflow": "auto",
-                "padding": "0 40px",
-                "position": "fixed",
-                "right": 0,
-                "top": 0,
-                "zIndex": 99999,
-              }
-            }
-          >
-            <button
-              onClick={[Function]}
-              style={
-                Object {
-                  "background": "#28c",
-                  "border": "none",
-                  "borderRadius": "0 0 0 5px",
-                  "color": "#fff",
-                  "cursor": "pointer",
-                  "display": "block",
-                  "fontFamily": "sans-serif",
-                  "fontSize": "12px",
-                  "padding": "5px 15px",
-                  "position": "fixed",
-                  "right": 0,
-                  "top": 0,
-                }
-              }
-              type="button"
-            >
-              ×
-            </button>
-            <div>
-              <div
-                style={
-                  Object {
-                    "WebkitFontSmoothing": "antialiased",
-                    "backgroundColor": "#fff",
-                    "border": "1px solid #eee",
-                    "borderRadius": "2px",
-                    "color": "#444",
-                    "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
-                    "fontSize": "15px",
-                    "fontWeight": 300,
-                    "lineHeight": 1.45,
-                    "marginBottom": "20px",
-                    "marginTop": "20px",
-                    "padding": "20px 40px 40px",
-                  }
-                }
+                Header
+              </h3>
+            </li>
+            <li>
+              <a
+                className="right-icon active list-item"
               >
-                <div
+                <span>
+                  Azione 1 (attivo)
+                </span>
+                <svg
+                  className="icon right icon-light icon-sm sm"
                   style={
                     Object {
-                      "borderBottom": "1px solid #eee",
-                      "marginBottom": 10,
-                      "paddingTop": 10,
+                      "ariaHidden": true,
                     }
                   }
                 >
-                  <h1
-                    style={
-                      Object {
-                        "fontSize": "35px",
-                        "margin": 0,
-                        "padding": 0,
-                      }
+                  <use
+                    xlinkHref="sprite.svg#it-info-circle"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                className="right-icon list-item"
+              >
+                <span>
+                  Azione 2
+                </span>
+                <svg
+                  className="icon right icon-light icon-sm sm"
+                  style={
+                    Object {
+                      "ariaHidden": true,
                     }
-                  >
-                    Componenti/Dropdown/Dropdown menu
-                  </h1>
-                  <h2
-                    style={
-                      Object {
-                        "fontSize": "22px",
-                        "fontWeight": 400,
-                        "margin": "0 0 10px 0",
-                        "padding": 0,
-                      }
+                  }
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-info-circle"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                className="right-icon list-item"
+              >
+                <span>
+                  Azione 3
+                </span>
+                <svg
+                  className="icon right icon-light icon-sm sm"
+                  style={
+                    Object {
+                      "ariaHidden": true,
                     }
-                  >
-                    Menù voci attive
-                  </h2>
-                </div>
-                
-                <div>
-                  <h1
-                    style={
-                      Object {
-                        "borderBottom": "1px solid #EEE",
-                        "fontSize": "25px",
-                        "margin": "20px 0 0 0",
-                        "padding": "0 0 5px 0",
-                      }
+                  }
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-info-circle"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <span
+                className="divider list-item"
+              />
+            </li>
+            <li>
+              <a
+                className="right-icon list-item"
+              >
+                <span>
+                  Azione 4
+                </span>
+                <svg
+                  className="icon right icon-light icon-sm sm"
+                  style={
+                    Object {
+                      "ariaHidden": true,
                     }
-                  >
-                    Story Source
-                  </h1>
-                  <pre
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "backgroundColor": "#fafafa",
-                        "display": "flex",
-                        "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
-                        "fontSize": ".88em",
-                        "justifyContent": "space-between",
-                        "lineHeight": 1.5,
-                        "overflowX": "scroll",
-                        "padding": ".5rem",
-                      }
+                  }
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-info-circle"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                className="right-icon disabled list-item"
+                onClick={[Function]}
+              >
+                <span>
+                  Azione 5 (disabilitato)
+                </span>
+                <svg
+                  className="icon right icon-light icon-sm sm"
+                  style={
+                    Object {
+                      "ariaHidden": true,
                     }
-                  >
-                    <div>
-                      <div>
-                        <div
-                          style={
-                            Object {
-                              "paddingLeft": 18,
-                              "paddingRight": 3,
-                            }
-                          }
-                        >
-                          <span
-                            style={
-                              Object {
-                                "color": "#444",
-                              }
-                            }
-                          >
-                            &lt;
-                            div
-                          </span>
-                          <span>
-                            <span>
-                               
-                              <span
-                                style={Object {}}
-                              >
-                                className
-                              </span>
-                              <span>
-                                =
-                                <span
-                                  style={Object {}}
-                                >
-                                  "
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#22a",
-                                        "wordBreak": "break-word",
-                                      }
-                                    }
-                                  >
-                                    clearfix
-                                  </span>
-                                  "
-                                </span>
-                              </span>
-                              
-                            </span>
-                          </span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#444",
-                              }
-                            }
-                          >
-                            &gt;
-                          </span>
-                        </div>
-                        <div>
-                          <div
-                            style={
-                              Object {
-                                "paddingLeft": 33,
-                                "paddingRight": 3,
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#444",
-                                }
-                              }
-                            >
-                              &lt;
-                              DropdownMenu
-                            </span>
-                            <span>
-                              <span>
-                                 
-                                <span
-                                  style={Object {}}
-                                >
-                                  isOpen
-                                </span>
-                              </span>
-                              <span>
-                                 
-                                <span
-                                  style={Object {}}
-                                >
-                                  className
-                                </span>
-                                <span>
-                                  =
-                                  <span
-                                    style={Object {}}
-                                  >
-                                    "
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      d-block position-relative
-                                    </span>
-                                    "
-                                  </span>
-                                </span>
-                                
-                              </span>
-                            </span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#444",
-                                }
-                              }
-                            >
-                              &gt;
-                            </span>
-                          </div>
-                          <div>
-                            <div
-                              style={
-                                Object {
-                                  "paddingLeft": 48,
-                                  "paddingRight": 3,
-                                }
-                              }
-                            >
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#444",
-                                  }
-                                }
-                              >
-                                &lt;
-                                LinkList
-                              </span>
-                              <span />
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#444",
-                                  }
-                                }
-                              >
-                                &gt;
-                              </span>
-                            </div>
-                            <div>
-                              <div
-                                style={
-                                  Object {
-                                    "paddingLeft": 63,
-                                    "paddingRight": 3,
-                                  }
-                                }
-                              >
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#444",
-                                    }
-                                  }
-                                >
-                                  &lt;
-                                  LinkListItem
-                                </span>
-                                <span>
-                                  <span>
-                                     
-                                    <span
-                                      style={Object {}}
-                                    >
-                                      active
-                                    </span>
-                                    
-                                  </span>
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#444",
-                                    }
-                                  }
-                                >
-                                  &gt;
-                                </span>
-                              </div>
-                              <div>
-                                <div
-                                  style={
-                                    Object {
-                                      "paddingLeft": 78,
-                                      "paddingRight": 3,
-                                    }
-                                  }
-                                >
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#444",
-                                      }
-                                    }
-                                  >
-                                    &lt;
-                                    span
-                                  </span>
-                                  <span />
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#444",
-                                      }
-                                    }
-                                  >
-                                    &gt;
-                                  </span>
-                                </div>
-                                <div
-                                  style={
-                                    Object {
-                                      "paddingLeft": 93,
-                                      "paddingRight": 3,
-                                    }
-                                  }
-                                >
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#444",
-                                      }
-                                    }
-                                  >
-                                    Azione 1
-                                  </span>
-                                </div>
-                                <div
-                                  style={
-                                    Object {
-                                      "paddingLeft": 78,
-                                      "paddingRight": 3,
-                                    }
-                                  }
-                                >
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#444",
-                                      }
-                                    }
-                                  >
-                                    &lt;/
-                                    span
-                                    &gt;
-                                  </span>
-                                </div>
-                              </div>
-                              <div
-                                style={
-                                  Object {
-                                    "paddingLeft": 63,
-                                    "paddingRight": 3,
-                                  }
-                                }
-                              >
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#444",
-                                    }
-                                  }
-                                >
-                                  &lt;/
-                                  LinkListItem
-                                  &gt;
-                                </span>
-                              </div>
-                            </div>
-                            <div>
-                              <div
-                                style={
-                                  Object {
-                                    "paddingLeft": 63,
-                                    "paddingRight": 3,
-                                  }
-                                }
-                              >
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#444",
-                                    }
-                                  }
-                                >
-                                  &lt;
-                                  LinkListItem
-                                </span>
-                                <span />
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#444",
-                                    }
-                                  }
-                                >
-                                  &gt;
-                                </span>
-                              </div>
-                              <div>
-                                <div
-                                  style={
-                                    Object {
-                                      "paddingLeft": 78,
-                                      "paddingRight": 3,
-                                    }
-                                  }
-                                >
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#444",
-                                      }
-                                    }
-                                  >
-                                    &lt;
-                                    span
-                                  </span>
-                                  <span />
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#444",
-                                      }
-                                    }
-                                  >
-                                    &gt;
-                                  </span>
-                                </div>
-                                <div
-                                  style={
-                                    Object {
-                                      "paddingLeft": 93,
-                                      "paddingRight": 3,
-                                    }
-                                  }
-                                >
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#444",
-                                      }
-                                    }
-                                  >
-                                    Azione 2
-                                  </span>
-                                </div>
-                                <div
-                                  style={
-                                    Object {
-                                      "paddingLeft": 78,
-                                      "paddingRight": 3,
-                                    }
-                                  }
-                                >
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#444",
-                                      }
-                                    }
-                                  >
-                                    &lt;/
-                                    span
-                                    &gt;
-                                  </span>
-                                </div>
-                              </div>
-                              <div
-                                style={
-                                  Object {
-                                    "paddingLeft": 63,
-                                    "paddingRight": 3,
-                                  }
-                                }
-                              >
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#444",
-                                    }
-                                  }
-                                >
-                                  &lt;/
-                                  LinkListItem
-                                  &gt;
-                                </span>
-                              </div>
-                            </div>
-                            <div>
-                              <div
-                                style={
-                                  Object {
-                                    "paddingLeft": 63,
-                                    "paddingRight": 3,
-                                  }
-                                }
-                              >
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#444",
-                                    }
-                                  }
-                                >
-                                  &lt;
-                                  LinkListItem
-                                </span>
-                                <span />
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#444",
-                                    }
-                                  }
-                                >
-                                  &gt;
-                                </span>
-                              </div>
-                              <div>
-                                <div
-                                  style={
-                                    Object {
-                                      "paddingLeft": 78,
-                                      "paddingRight": 3,
-                                    }
-                                  }
-                                >
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#444",
-                                      }
-                                    }
-                                  >
-                                    &lt;
-                                    span
-                                  </span>
-                                  <span />
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#444",
-                                      }
-                                    }
-                                  >
-                                    &gt;
-                                  </span>
-                                </div>
-                                <div
-                                  style={
-                                    Object {
-                                      "paddingLeft": 93,
-                                      "paddingRight": 3,
-                                    }
-                                  }
-                                >
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#444",
-                                      }
-                                    }
-                                  >
-                                    Azione 3
-                                  </span>
-                                </div>
-                                <div
-                                  style={
-                                    Object {
-                                      "paddingLeft": 78,
-                                      "paddingRight": 3,
-                                    }
-                                  }
-                                >
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#444",
-                                      }
-                                    }
-                                  >
-                                    &lt;/
-                                    span
-                                    &gt;
-                                  </span>
-                                </div>
-                              </div>
-                              <div
-                                style={
-                                  Object {
-                                    "paddingLeft": 63,
-                                    "paddingRight": 3,
-                                  }
-                                }
-                              >
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#444",
-                                    }
-                                  }
-                                >
-                                  &lt;/
-                                  LinkListItem
-                                  &gt;
-                                </span>
-                              </div>
-                            </div>
-                            <div
-                              style={
-                                Object {
-                                  "paddingLeft": 48,
-                                  "paddingRight": 3,
-                                }
-                              }
-                            >
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#444",
-                                  }
-                                }
-                              >
-                                &lt;/
-                                LinkList
-                                &gt;
-                              </span>
-                            </div>
-                          </div>
-                          <div
-                            style={
-                              Object {
-                                "paddingLeft": 33,
-                                "paddingRight": 3,
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#444",
-                                }
-                              }
-                            >
-                              &lt;/
-                              DropdownMenu
-                              &gt;
-                            </span>
-                          </div>
-                        </div>
-                        <div
-                          style={
-                            Object {
-                              "paddingLeft": 18,
-                              "paddingRight": 3,
-                            }
-                          }
-                        >
-                          <span
-                            style={
-                              Object {
-                                "color": "#444",
-                              }
-                            }
-                          >
-                            &lt;/
-                            div
-                            &gt;
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <button
-                      onClick={[Function]}
-                      style={
-                        Object {
-                          "alignSelf": "flex-start",
-                          "backgroundColor": "rgb(255, 255, 255)",
-                          "borderColor": "rgb(238, 238, 238)",
-                          "borderImage": "initial",
-                          "borderRadius": "3px",
-                          "borderStyle": "solid",
-                          "borderWidth": "1px",
-                          "cursor": "pointer",
-                          "flexShrink": "0",
-                          "fontSize": "13px",
-                          "overflow": "hidden",
-                          "padding": "3px 10px",
-                        }
-                      }
-                      type="button"
-                    >
-                      Copy
-                    </button>
-                  </pre>
-                </div>
-                <div>
-                  <h1
-                    style={
-                      Object {
-                        "borderBottom": "1px solid #EEE",
-                        "fontSize": "25px",
-                        "margin": "20px 0 0 0",
-                        "padding": "0 0 5px 0",
-                      }
-                    }
-                  >
-                    Prop Types
-                  </h1>
-                  <div>
-                    <h2
-                      style={
-                        Object {
-                          "margin": "20px 0 0 0",
-                        }
-                      }
-                    >
-                      "
-                      DropdownMenu
-                      " Component
-                    </h2>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            property
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            propType
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            required
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            default
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            description
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            tag
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
-                            >
-                              div
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            children
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            yes
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            right
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            flip
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#a11",
-                                }
-                              }
-                            >
-                              true
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            modifiers
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            className
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            cssModule
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            persist
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div>
-                    <h2
-                      style={
-                        Object {
-                          "margin": "20px 0 0 0",
-                        }
-                      }
-                    >
-                      "
-                      LinkList
-                      " Component
-                    </h2>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            property
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            propType
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            required
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            default
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            description
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            tag
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
-                            >
-                              div
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            className
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            multiline
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            sublist
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div>
-                    <h2
-                      style={
-                        Object {
-                          "margin": "20px 0 0 0",
-                        }
-                      }
-                    >
-                      "
-                      LinkListItem
-                      " Component
-                    </h2>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            property
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            propType
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            required
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            default
-                          </th>
-                          <th
-                            style={
-                              Object {
-                                "textAlign": "left",
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            description
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            active
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            disabled
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            header
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            divider
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            tag
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
-                            >
-                              a
-                            </span>
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            className
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            href
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                        <tr>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            size
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            <span />
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          >
-                            -
-                          </td>
-                          <td
-                            style={
-                              Object {
-                                "paddingRight": 10,
-                                "verticalAlign": "top",
-                              }
-                            }
-                          />
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                  }
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-info-circle"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div
-        className="markdown-body"
-        dangerouslySetInnerHTML={
-          Object {
-            "__html": "<p>MenuVociAttive.md</p>
-",
-          }
-        }
-      />
     </div>
   </div>
-  <div>
-    <div
-      style={
-        Object {
-          "WebkitFontSmoothing": "antialiased",
-          "backgroundColor": "#fff",
-          "border": "1px solid #eee",
-          "borderRadius": "2px",
-          "color": "#444",
-          "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
-          "fontSize": "15px",
-          "fontWeight": 300,
-          "lineHeight": 1.45,
-          "marginBottom": "20px",
-          "marginTop": "20px",
-          "padding": "20px 40px 40px",
-        }
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
-    >
-      
-      <div>
-        <h1
-          style={
-            Object {
-              "borderBottom": "1px solid #EEE",
-              "fontSize": "25px",
-              "margin": "20px 0 0 0",
-              "padding": "0 0 5px 0",
-            }
-          }
-        >
-          Story Source
-        </h1>
-        <pre
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#fafafa",
-              "display": "flex",
-              "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
-              "fontSize": ".88em",
-              "justifyContent": "space-between",
-              "lineHeight": 1.5,
-              "overflowX": "scroll",
-              "padding": ".5rem",
-            }
-          }
-        >
-          <div>
-            <div
-              style={
-                Object {
-                  "paddingLeft": 18,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#444",
-                  }
-                }
-              >
-                &lt;
-                Story
-              </span>
-              <span>
-                <span>
-                  <span>
-                    <br />
-                      
-                  </span>
-                  <span
-                    style={Object {}}
-                  >
-                    docs
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#666",
-                          }
-                        }
-                      >
-                        {
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            docsBeforePreview
-                          </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#444",
-                            }
-                          }
-                        >
-                          null
-                        </span>
-                        ,
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            docsAfterPreview
-                          </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#666",
-                            }
-                          }
-                        >
-                          [
-                          <span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
-                            >
-                              '&lt;p&gt;MenuVociAttive.md&lt;/p&gt;
-'
-                            </span>
-                          </span>
-                          ]
-                        </span>
-                        }
-                      </span>
-                      }
-                    </span>
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <br />
-                      
-                  </span>
-                  <span
-                    style={Object {}}
-                  >
-                    config
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#666",
-                          }
-                        }
-                      >
-                        {
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            FooterComponent
-                          </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#170",
-                            }
-                          }
-                        >
-                          FooterDocs
-                        </span>
-                        ,
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            PreviewComponent
-                          </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#170",
-                            }
-                          }
-                        >
-                          StoryPreview
-                        </span>
-                        ,
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            docsAtFooter
-                          </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#444",
-                            }
-                          }
-                        >
-                          null
-                        </span>
-                        }
-                      </span>
-                      }
-                    </span>
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <br />
-                      
-                  </span>
-                  <span
-                    style={Object {}}
-                  >
-                    storyFn
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#170",
-                          }
-                        }
-                      >
-                        deprecated
-                      </span>
-                      }
-                    </span>
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <br />
-                      
-                  </span>
-                  <span
-                    style={Object {}}
-                  >
-                    kind
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      "
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        Componenti/Dropdown/Dropdown menu
-                      </span>
-                      "
-                    </span>
-                  </span>
-                </span>
-                <span>
-                  <span>
-                    <br />
-                      
-                  </span>
-                  <span
-                    style={Object {}}
-                  >
-                    story
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      "
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        Menù voci attive
-                      </span>
-                      "
-                    </span>
-                  </span>
-                  <br />
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "color": "#444",
-                  }
-                }
-              >
-                /&gt;
-              </span>
-            </div>
-          </div>
-          <button
-            onClick={[Function]}
-            style={
-              Object {
-                "alignSelf": "flex-start",
-                "backgroundColor": "rgb(255, 255, 255)",
-                "borderColor": "rgb(238, 238, 238)",
-                "borderImage": "initial",
-                "borderRadius": "3px",
-                "borderStyle": "solid",
-                "borderWidth": "1px",
-                "cursor": "pointer",
-                "flexShrink": "0",
-                "fontSize": "13px",
-                "overflow": "hidden",
-                "padding": "3px 10px",
-              }
-            }
-            type="button"
-          >
-            Copy
-          </button>
-        </pre>
-      </div>
-      <div>
-        <h1
-          style={
-            Object {
-              "borderBottom": "1px solid #EEE",
-              "fontSize": "25px",
-              "margin": "20px 0 0 0",
-              "padding": "0 0 5px 0",
-            }
-          }
-        >
-          Prop Types
-        </h1>
-        <div>
-          <h2
-            style={
-              Object {
-                "margin": "20px 0 0 0",
-              }
-            }
-          >
-            "
-            Story
-            " Component
-          </h2>
-          <small>
-            No propTypes defined!
-          </small>
-        </div>
-      </div>
-    </div>
-  </div>
+    }
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
-exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù voci disabilitate 1`] = `
+exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù full width 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
     <div
-      aria-hidden={true}
-      className="d-block dropdown-menu"
-      isOpen={true}
-      role="menu"
-      style={
-        Object {
-          "position": "relative",
-        }
-      }
-      tabIndex="-1"
-      x-placement={undefined}
+      className="clearfix"
     >
-      <button
-        className="dropdown-item"
-        onClick={[Function]}
-        tabIndex="0"
-        type="button"
-      >
-        Azione 1
-      </button>
-      <button
-        className="disabled dropdown-item"
-        disabled={true}
-        onClick={[Function]}
+      <div
+        aria-hidden={true}
+        className="d-block full-width position-relative dropdown-menu"
+        isOpen={true}
+        role="menu"
         tabIndex="-1"
-        type="button"
       >
-        Azione 2
-      </button>
-      <button
-        className="dropdown-item"
-        onClick={[Function]}
-        tabIndex="0"
-        type="button"
-      >
-        Azione 3
-      </button>
+        <div
+          className="link-list-wrapper"
+        >
+          <ul
+            className="link-list"
+          >
+            <li>
+              <a
+                className="size list-item"
+              >
+                <span>
+                  Azione 1
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="size list-item"
+              >
+                <span>
+                  Azione 2
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="size list-item"
+              >
+                <span>
+                  Azione 3
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="size list-item"
+              >
+                <span>
+                  Azione 4
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="size list-item"
+              >
+                <span>
+                  Azione 5
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "MenuVociDisabilitate.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù headers e separatori 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="clearfix"
+    >
+      <div
+        aria-hidden={true}
+        className="d-block position-relative dropdown-menu"
+        isOpen={true}
+        role="menu"
+        tabIndex="-1"
+      >
+        <div
+          className="link-list-wrapper"
+        >
+          <ul
+            className="link-list"
+          >
+            <li>
+              <h3
+                className="header list-item"
+              >
+                Header
+              </h3>
+            </li>
+            <li>
+              <a
+                className="list-item"
+              >
+                <span>
+                  Azione 1
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+              >
+                <span>
+                  Azione 2
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+              >
+                <span>
+                  Azione 3
+                </span>
+              </a>
+            </li>
+            <li>
+              <span
+                className="divider list-item"
+              />
+            </li>
+            <li>
+              <a
+                className="list-item"
+              >
+                <span>
+                  Azione 4
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a destra 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="clearfix"
+    >
+      <div
+        aria-hidden={true}
+        className="d-block position-relative dropdown-menu"
+        isOpen={true}
+        role="menu"
+        tabIndex="-1"
+      >
+        <div
+          className="link-list-wrapper"
+        >
+          <ul
+            className="link-list"
+          >
+            <li>
+              <a
+                className="right-icon list-item"
+              >
+                <span>
+                  Azione 1
+                </span>
+                <svg
+                  className="icon right icon-primary icon-sm sm"
+                  style={
+                    Object {
+                      "ariaHidden": true,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-info-circle"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                className="right-icon list-item"
+              >
+                <span>
+                  Azione 2
+                </span>
+                <svg
+                  className="icon right icon-primary icon-sm sm"
+                  style={
+                    Object {
+                      "ariaHidden": true,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-info-circle"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                className="right-icon list-item"
+              >
+                <span>
+                  Azione 3
+                </span>
+                <svg
+                  className="icon right icon-primary icon-sm sm"
+                  style={
+                    Object {
+                      "ariaHidden": true,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-info-circle"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a sinistra 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="clearfix"
+    >
+      <div
+        aria-hidden={true}
+        className="d-block position-relative dropdown-menu"
+        isOpen={true}
+        role="menu"
+        tabIndex="-1"
+      >
+        <div
+          className="link-list-wrapper"
+        >
+          <ul
+            className="link-list"
+          >
+            <li>
+              <a
+                className="left-icon list-item"
+              >
+                <svg
+                  className="icon left icon-primary icon-sm sm"
+                  style={
+                    Object {
+                      "ariaHidden": true,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-info-circle"
+                  />
+                </svg>
+                <span>
+                  Azione 1
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="left-icon list-item"
+              >
+                <svg
+                  className="icon left icon-primary icon-sm sm"
+                  style={
+                    Object {
+                      "ariaHidden": true,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-info-circle"
+                  />
+                </svg>
+                <span>
+                  Azione 2
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="left-icon list-item"
+              >
+                <svg
+                  className="icon left icon-primary icon-sm sm"
+                  style={
+                    Object {
+                      "ariaHidden": true,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-info-circle"
+                  />
+                </svg>
+                <span>
+                  Azione 3
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù voci attive 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="clearfix"
+    >
+      <div
+        aria-hidden={true}
+        className="d-block position-relative dropdown-menu"
+        isOpen={true}
+        role="menu"
+        tabIndex="-1"
+      >
+        <div
+          className="link-list-wrapper"
+        >
+          <ul
+            className="link-list"
+          >
+            <li>
+              <a
+                className="active list-item"
+              >
+                <span>
+                  Azione 1
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+              >
+                <span>
+                  Azione 2
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+              >
+                <span>
+                  Azione 3
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù voci disabilitate 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="clearfix"
+    >
+      <div
+        aria-hidden={true}
+        className="d-block position-relative dropdown-menu"
+        isOpen={true}
+        role="menu"
+        tabIndex="-1"
+      >
+        <div
+          className="link-list-wrapper"
+        >
+          <ul
+            className="link-list"
+          >
+            <li>
+              <a
+                className="list-item"
+              >
+                <span>
+                  Azione 1
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="disabled list-item"
+                onClick={[Function]}
+              >
+                <span>
+                  Azione 2
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="list-item"
+              >
+                <span>
+                  Azione 3
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;

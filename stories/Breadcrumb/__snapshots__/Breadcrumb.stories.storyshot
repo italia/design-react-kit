@@ -4,21 +4,19 @@ exports[`Storyshots Componenti/Breadcrumb Con icone 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -26,67 +24,115 @@ exports[`Storyshots Componenti/Breadcrumb Con icone 1`] = `
       <nav
         className="breadcrumb-container"
       >
-        <ol
-          className="breadcrumb"
+        <nav
+          aria-label="breadcrumb"
+          className=""
         >
-          <li
-            className="breadcrumb-item"
+          <ol
+            className="breadcrumb"
           >
-            <i
-              className="it-favorite"
-            />
-            <a
-              href="#"
+            <li
+              className="breadcrumb-item"
             >
-              Home
-              <span
-                className="separator"
+              <svg
+                className="icon align-top mr-1 icon-secondary icon-sm sm"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
               >
-                /
-              </span>
-            </a>
-          </li>
-          <li
-            className="breadcrumb-item"
-          >
-            <i
-              className="it-favorite"
-            />
-            <a
-              href="#"
-            >
-              Subsection
-              <span
-                className="separator"
+                <use
+                  xlinkHref="sprite.svg#it-star-outline"
+                />
+              </svg>
+              <a
+                href="#"
               >
-                /
-              </span>
-            </a>
-          </li>
-          <li
-            className="active breadcrumb-item"
-          >
-            <i
-              className="it-favorite"
-            />
-            <a
-              href="#"
+                Home
+                <span
+                  className="separator"
+                >
+                  /
+                </span>
+              </a>
+            </li>
+            <li
+              className="breadcrumb-item"
             >
-              Current section
-            </a>
-          </li>
-        </ol>
+              <svg
+                className="icon align-top mr-1 icon-secondary icon-sm sm"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-star-outline"
+                />
+              </svg>
+              <a
+                href="#"
+              >
+                Subsection
+                <span
+                  className="separator"
+                >
+                  /
+                </span>
+              </a>
+            </li>
+            <li
+              aria-current="page"
+              className="active breadcrumb-item"
+            >
+              <svg
+                className="icon align-top mr-1 icon-secondary icon-sm sm"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="sprite.svg#it-star-outline"
+                />
+              </svg>
+              <a
+                href="#"
+              >
+                Current section
+              </a>
+            </li>
+          </ol>
+        </nav>
       </nav>
     </section>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Icone.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
 
@@ -94,111 +140,19 @@ exports[`Storyshots Componenti/Breadcrumb Esempi 1`] = `
 <div
   style={
     Object {
-      "padding": "10px",
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
     }
   }
 >
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
         "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
-      }
-    }
-  >
-    <div>
-      <ol
-        className="breadcrumb"
-      >
-        <li
-          className="active breadcrumb-item"
-        >
-          Home
-        </li>
-      </ol>
-      <ol
-        className="breadcrumb"
-      >
-        <li
-          className="breadcrumb-item"
-        >
-          <a
-            href="#"
-          >
-            Home
-          </a>
-        </li>
-        <li
-          className="active breadcrumb-item"
-        >
-          Library
-        </li>
-      </ol>
-      <ol
-        className="breadcrumb"
-      >
-        <li
-          className="breadcrumb-item"
-        >
-          <a
-            href="#"
-          >
-            Home
-          </a>
-        </li>
-        <li
-          className="breadcrumb-item"
-        >
-          <a
-            href="#"
-          >
-            Library
-          </a>
-        </li>
-        <li
-          className="active breadcrumb-item"
-        >
-          Data
-        </li>
-      </ol>
-    </div>
-  </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "Esempi.md",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
-<div
-  style={
-    Object {
-      "padding": "10px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "initial",
-        "transition": "background-color 0.2s",
+        "zIndex": 0,
       }
     }
   >
@@ -206,8 +160,160 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
       <nav
         className="breadcrumb-container"
       >
+        <nav
+          aria-label="breadcrumb"
+          className=""
+        >
+          <ol
+            className="breadcrumb"
+          >
+            <li
+              className="breadcrumb-item"
+            >
+              <a
+                href="#"
+              >
+                Home
+                <span
+                  className="separator"
+                >
+                  /
+                </span>
+              </a>
+            </li>
+            <li
+              className="breadcrumb-item"
+            >
+              <a
+                href="#"
+              >
+                Subsection
+                <span
+                  className="separator"
+                >
+                  /
+                </span>
+              </a>
+            </li>
+            <li
+              aria-current="page"
+              className="active breadcrumb-item"
+            >
+              <a
+                href="#"
+              >
+                Current section
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </nav>
+      <nav
+        className="breadcrumb-container"
+      >
+        <nav
+          aria-label="breadcrumb"
+          className=""
+        >
+          <ol
+            className="breadcrumb"
+          >
+            <li
+              className="breadcrumb-item"
+            >
+              <a
+                href="#"
+              >
+                Home
+                <span
+                  className="separator"
+                >
+                  &gt;
+                </span>
+              </a>
+            </li>
+            <li
+              className="breadcrumb-item"
+            >
+              <a
+                href="#"
+              >
+                Subsection
+                <span
+                  className="separator"
+                >
+                  &gt;
+                </span>
+              </a>
+            </li>
+            <li
+              aria-current="page"
+              className="active breadcrumb-item"
+            >
+              <a
+                href="#"
+              >
+                Current section
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </nav>
+    </section>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <section>
+      <nav
+        aria-label="breadcrumb"
+        className="breadcrumb-container"
+      >
         <ol
-          className="dark breadcrumb"
+          className="breadcrumb dark"
         >
           <li
             className="breadcrumb-item"
@@ -216,12 +322,12 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
               href="#"
             >
               Home
-              <span
-                className="separator"
-              >
-                /
-              </span>
             </a>
+            <span
+              className="separator"
+            >
+              /
+            </span>
           </li>
           <li
             className="breadcrumb-item"
@@ -230,15 +336,16 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
               href="#"
             >
               Subsection
-              <span
-                className="separator"
-              >
-                /
-              </span>
             </a>
+            <span
+              className="separator"
+            >
+              /
+            </span>
           </li>
           <li
-            className="active breadcrumb-item"
+            aria-current="page"
+            className="breadcrumb-item active"
           >
             <a
               href="#"
@@ -249,51 +356,80 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
         </ol>
       </nav>
       <nav
+        aria-label="breadcrumb"
         className="breadcrumb-container"
       >
         <ol
-          className="dark breadcrumb"
+          className="breadcrumb dark"
         >
           <li
             className="breadcrumb-item"
           >
-            <i
-              className="it-favorite"
-            />
+            <svg
+              className="icon align-top mr-1 icon-white icon-sm sm"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-star-outline"
+              />
+            </svg>
             <a
               href="#"
             >
               Home
-              <span
-                className="separator"
-              >
-                /
-              </span>
             </a>
+            <span
+              className="separator"
+            >
+              /
+            </span>
           </li>
           <li
             className="breadcrumb-item"
           >
-            <i
-              className="it-favorite"
-            />
+            <svg
+              className="icon align-top mr-1 icon-white icon-sm sm"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-star-outline"
+              />
+            </svg>
             <a
               href="#"
             >
               Subsection
-              <span
-                className="separator"
-              >
-                /
-              </span>
             </a>
+            <span
+              className="separator"
+            >
+              /
+            </span>
           </li>
           <li
-            className="active breadcrumb-item"
+            aria-current="page"
+            className="breadcrumb-item active"
           >
-            <i
-              className="it-favorite"
-            />
+            <svg
+              className="icon align-top mr-1 icon-white icon-sm sm"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-star-outline"
+              />
+            </svg>
             <a
               href="#"
             >
@@ -303,51 +439,80 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
         </ol>
       </nav>
       <nav
+        aria-label="breadcrumb"
         className="breadcrumb-container"
       >
         <ol
-          className="dark breadcrumb"
+          className="breadcrumb dark"
         >
           <li
             className="breadcrumb-item"
           >
-            <i
-              className="it-favorite"
-            />
+            <svg
+              className="icon align-top mr-1 icon-white icon-sm sm"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-star-outline"
+              />
+            </svg>
             <a
               href="#"
             >
               Home
-              <span
-                className="separator"
-              >
-                &gt;
-              </span>
             </a>
+            <span
+              className="separator"
+            >
+              &gt;
+            </span>
           </li>
           <li
             className="breadcrumb-item"
           >
-            <i
-              className="it-favorite"
-            />
+            <svg
+              className="icon align-top mr-1 icon-white icon-sm sm"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-star-outline"
+              />
+            </svg>
             <a
               href="#"
             >
               Subsection
-              <span
-                className="separator"
-              >
-                &gt;
-              </span>
             </a>
+            <span
+              className="separator"
+            >
+              &gt;
+            </span>
           </li>
           <li
-            className="active breadcrumb-item"
+            aria-current="page"
+            className="breadcrumb-item active"
           >
-            <i
-              className="it-favorite"
-            />
+            <svg
+              className="icon align-top mr-1 icon-white icon-sm sm"
+              style={
+                Object {
+                  "ariaHidden": true,
+                }
+              }
+            >
+              <use
+                xlinkHref="sprite.svg#it-star-outline"
+              />
+            </svg>
             <a
               href="#"
             >
@@ -358,13 +523,28 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
       </nav>
     </section>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
       Object {
-        "__html": "Background.md",
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
       }
     }
-  />
+    type="button"
+  >
+    Show Info
+  </button>
 </div>
 `;
