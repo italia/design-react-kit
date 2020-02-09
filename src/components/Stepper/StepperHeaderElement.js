@@ -7,26 +7,22 @@ const propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
   variant: PropTypes.string,
-  iconName: PropTypes.string,
+  children: PropTypes.element,
+  iconName: PropTypes.string
 }
 
-const defaultProps = {
-  
-}
+const defaultProps = {}
 
 const StepperHeaderElement = props => {
-  const { tag: Tag, variant, iconName, children, ...attributes } = props 
+  const { tag: Tag, variant, iconName, children, ...attributes } = props
   const wrapperClasses = classNames(variant)
-  const iconClass = classNames("icon", "steppers-success")
+  const iconClass = classNames('icon', 'steppers-success')
   return (
     <li {...attributes} className={wrapperClasses}>
       {children}
-      { 
-        iconName && 
-        <Icon icon={iconName} className={iconClass}/> 
-      }
+      {iconName && <Icon icon={iconName} className={iconClass} />}
     </li>
-  ) 
+  )
 }
 
 StepperHeaderElement.propTypes = propTypes

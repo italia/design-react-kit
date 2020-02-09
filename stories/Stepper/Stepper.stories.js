@@ -10,6 +10,6 @@ storiesOf('Componenti/Stepper', module)
   .add(
     'Text Only',
     withInfo({
-      text: Header 
+      text: Header
     })(StepperTextOnly)
   )

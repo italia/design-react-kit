@@ -4,7 +4,8 @@ import classNames from 'classnames'
 
 const propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-  classNames: PropTypes.string
+  classNames: PropTypes.string,
+  children: PropTypes.element
 }
 
 const defaultProps = {
@@ -12,12 +13,12 @@ const defaultProps = {
 }
 
 const StepperHeader = props => {
-  const { tag: Tag, children,  ...attributes } = props
+  const { tag: Tag, children, ...attributes } = props
   const wrapperClass = classNames('steppers-header')
-  return(
-      <Tag {...attributes} className={wrapperClass} >
-        {children}
-      </Tag>
+  return (
+    <Tag {...attributes} className={wrapperClass}>
+      {children}
+    </Tag>
   )
 }
 

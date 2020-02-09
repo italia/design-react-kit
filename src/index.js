@@ -150,4 +150,6 @@ export { default as FontLoader } from './components/FontLoader/FontLoader'
 export { default as Dimmer } from './components/Dimmer/Dimmer'
 export { default as DimmerButtons } from './components/Dimmer/DimmerButtons'
 export { default as StepperHeader } from './components/Stepper/StepperHeader'
-export { default as StepperContainer } from './components/Stepper/StepperContainer'
+export {
+  default as StepperContainer
+} from './components/Stepper/StepperContainer'
