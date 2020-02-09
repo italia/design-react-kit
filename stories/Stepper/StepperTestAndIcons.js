@@ -5,17 +5,22 @@ import {
   StepperHeaderElement
 } from '../../src'
 
-const StepperTextOnly = () => {
+const StepperTestAndIcons = () => {
   return (
     <StepperContainer>
       <StepperHeader>
-        <StepperHeaderElement variant="confirmed" icon="it-check">
+        <StepperHeaderElement
+          variant="confirmed"
+          icon="it-check"
+          iconName="it-calendar">
           Label Step 1
         </StepperHeaderElement>
-        <StepperHeaderElement variant="active">
+        <StepperHeaderElement variant="active" iconName="it-lock">
           Label Step 2
         </StepperHeaderElement>
-        <StepperHeaderElement>Label Step 3</StepperHeaderElement>
+        <StepperHeaderElement iconName="it-settings">
+          Label Step 3
+        </StepperHeaderElement>
         <StepperHeaderElement variant="steppers-index">
           2/6
         </StepperHeaderElement>
@@ -24,4 +29,4 @@ const StepperTextOnly = () => {
   )
 }
 
-export default StepperTextOnly
+export default StepperTestAndIcons

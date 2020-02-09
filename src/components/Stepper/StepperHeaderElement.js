@@ -8,19 +8,21 @@ const propTypes = {
   className: PropTypes.string,
   variant: PropTypes.string,
   children: PropTypes.element,
+  icon: PropTypes.string,
   iconName: PropTypes.string
 }
 
 const defaultProps = {}
 
 const StepperHeaderElement = props => {
-  const { tag: Tag, variant, iconName, children, ...attributes } = props
+  const { tag: Tag, variant, icon, iconName, children, ...attributes } = props
   const wrapperClasses = classNames(variant)
   const iconClass = classNames('icon', 'steppers-success')
   return (
     <li {...attributes} className={wrapperClasses}>
+      {iconName && <Icon icon={iconName} />}
       {children}
-      {iconName && <Icon icon={iconName} className={iconClass} />}
+      {icon && <Icon icon={icon} className={iconClass} />}
     </li>
   )
 }

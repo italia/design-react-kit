@@ -153,3 +153,6 @@ export { default as StepperHeader } from './components/Stepper/StepperHeader'
 export {
   default as StepperContainer
 } from './components/Stepper/StepperContainer'
+export {
+  default as StepperHeaderElement
+} from './components/Stepper/StepperHeaderElement'
