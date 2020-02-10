@@ -7,6 +7,7 @@ import Header from './docs/Heading.md'
 import StepperTextOnly from './StepperTextOnly'
 import StepperTestAndIcons from './StepperTestAndIcons'
 import StepperOrderOfSteps from './StepperOrderOfSteps'
+import NavigationOfTheSteps from './NavigationSteps'
 
 storiesOf('Componenti/Stepper', module)
   .addDecorator(withA11y)
@@ -27,4 +28,10 @@ storiesOf('Componenti/Stepper', module)
     withInfo({
       text: Header
     })(StepperOrderOfSteps)
+  )
+  .add(
+    'Navigation of the steps',
+    withInfo({
+      text: Header
+    })(NavigationOfTheSteps)
   )

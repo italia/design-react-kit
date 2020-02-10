@@ -15,12 +15,12 @@ const StepperOrderOfSteps = () => {
         <StepperHeaderElement
           variant="active"
           noLine
-          stepperNumber="2"
+          stepperNumber={<span>2</span>}
         >
           Label Step 2
         </StepperHeaderElement>
         <StepperHeaderElement
-          stepperNumber="3"
+          stepperNumber={<span>3</span>}
         >
           Label Step 3
         </StepperHeaderElement>
