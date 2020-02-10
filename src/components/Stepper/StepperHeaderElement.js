@@ -9,20 +9,29 @@ const propTypes = {
   variant: PropTypes.string,
   children: PropTypes.element,
   icon: PropTypes.string,
-  iconName: PropTypes.string
+  iconName: PropTypes.string,
+  stepperNumber: PropTypes.element,
+  noLine: PropTypes.bool
 }
 
 const defaultProps = {}
 
 const StepperHeaderElement = props => {
-  const { tag: Tag, variant, icon, iconName, children, ...attributes } = props
-  const wrapperClasses = classNames(variant)
+  const { tag: Tag, variant, icon , iconName, noLine, stepperNumber, children, ...attributes } = props
+  const wrapperClasses = classNames(variant, noLine ? "no-line" : null)
   const iconClass = classNames('icon', 'steppers-success')
+  const spanClass = classNames('steppers-number')
   return (
     <li {...attributes} className={wrapperClasses}>
       {iconName && <Icon icon={iconName} />}
+      {
+        stepperNumber &&
+        <span className={spanClass}>
+          {stepperNumber}
+        </span>
+      }
       {children}
-      {icon && <Icon icon={icon} className={iconClass} />}
+      {icon && !spanClass && <Icon icon={icon} className={iconClass} />}
     </li>
   )
 }
