@@ -116,7 +116,7 @@ export { default as LinkListItem } from './components/LinkList/LinkListItem'
 export { default as Nav } from './components/Nav/Nav'
 export { default as Pager } from './components/Pager/Pager'
 export { default as PagerList } from './components/PagerList/PagerList'
-
+export { default as Megamenu } from './components/Megamenu/Megamenu'
 export {
   default as PasswordInput
 } from './components/PasswordInput/PasswordInput'
