@@ -1,9 +1,9 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withA11y } from "@storybook/addon-a11y";
-import { withInfo } from "@storybook/addon-info";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withA11y } from '@storybook/addon-a11y'
+import { withInfo } from '@storybook/addon-info'
 
-import Esempi from "./docs/Esempi.md";
+import Esempi from './docs/Esempi.md'
 
 import {
   TimelineWrapper,
@@ -15,13 +15,13 @@ import {
   CardSignature,
   CardReadMore,
   TimelinePin
-} from "../../src";
+} from '../../src'
 
 const EsempiComponent = () => (
   <div>
     <TimelineWrapper>
-      <div class="row">
-        <div class="col-12">
+      <div className="row">
+        <div className="col-12">
           <TimelinePin label="maggio 2018" past>
             {/* start card */}
             <Card>
@@ -41,7 +41,7 @@ const EsempiComponent = () => (
             {/* end card */}
           </TimelinePin>
         </div>
-        <div class="col-12">
+        <div className="col-12">
           <TimelinePin label="giugno 2018" past>
             {/* start card */}
             <Card>
@@ -59,7 +59,7 @@ const EsempiComponent = () => (
             {/* end card */}
           </TimelinePin>
         </div>
-        <div class="col-12">
+        <div className="col-12">
           <TimelinePin label="luglio 2018" past>
             {/* start card */}
             <Card>
@@ -79,7 +79,7 @@ const EsempiComponent = () => (
             {/* end card */}
           </TimelinePin>
         </div>
-        <div class="col-12">
+        <div className="col-12">
           <TimelinePin label="agosto 2018" now nowText="Oggi">
             {/* start card */}
             <Card>
@@ -97,7 +97,7 @@ const EsempiComponent = () => (
             {/* end card */}
           </TimelinePin>
         </div>
-        <div class="col-12">
+        <div className="col-12">
           <TimelinePin label="settembre 2018">
             {/* start card */}
             <Card>
@@ -117,7 +117,7 @@ const EsempiComponent = () => (
             {/* end card */}
           </TimelinePin>
         </div>
-        <div class="col-12">
+        <div className="col-12">
           <TimelinePin label="ottobre 2018">
             {/* start card */}
             <Card>
@@ -135,7 +135,7 @@ const EsempiComponent = () => (
             {/* end card */}
           </TimelinePin>
         </div>
-        <div class="col-12">
+        <div className="col-12">
           <TimelinePin label="novembre 2018">
             {/* start card */}
             <Card>
@@ -155,7 +155,7 @@ const EsempiComponent = () => (
             {/* end card */}
           </TimelinePin>
         </div>
-        <div class="col-12">
+        <div className="col-12">
           <TimelinePin label="dicembre 2018">
             {/* start card */}
             <Card>
@@ -176,13 +176,13 @@ const EsempiComponent = () => (
       </div>
     </TimelineWrapper>
   </div>
-);
+)
 
-storiesOf("Componenti/Timeline", module)
+storiesOf('Componenti/Timeline', module)
   .addDecorator(withA11y)
   .add(
-    "Esempi",
+    'Esempi',
     withInfo({
       text: Esempi
     })(EsempiComponent)
-  );
+  )
