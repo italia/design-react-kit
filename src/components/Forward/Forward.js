@@ -4,10 +4,7 @@ import classNames from 'classnames'
 
 const propTypes = {
   className: PropTypes.string,
-  scrollToRef: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.shape({ current: PropTypes.instanceOf(Element) })
-  ])
+  scrollToRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) })
 }
 
 const Forward = ({ className, scrollToRef, ...attributes }) => {
