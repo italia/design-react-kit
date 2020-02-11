@@ -1,31 +1,31 @@
-import React from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
-import Icon from "../Icon/Icon";
+import Icon from '../Icon/Icon'
 
 const TimelinePin = props => {
-  const { icon, label, past, now, nowText, className, ...attributes } = props;
-  const { children, ...rest } = attributes;
-  const classes = classNames("timeline-element", className);
-  const innerClasses = classNames("it-pin-wrapper", className, {
-    "it-evidence": past,
-    "it-now": now
-  });
+  const { icon, label, past, now, nowText, className, ...attributes } = props
+  const { children, ...rest } = attributes
+  const classes = classNames('timeline-element', className)
+  const innerClasses = classNames('it-pin-wrapper', className, {
+    'it-evidence': past,
+    'it-now': now
+  })
   const pinIcon = (
     <div className="pin-icon">
       <Icon icon={icon} />
     </div>
-  );
+  )
   const pinLabel = (
     <div className="pin-text">
       <span>{label}</span>
     </div>
-  );
+  )
 
   const pinTextNow = now && (
-    <span class="it-now-label d-none d-lg-flex">{nowText}</span>
-  );
+    <span className="it-now-label d-none d-lg-flex">{nowText}</span>
+  )
 
   return (
     <div className={classes} {...rest}>
@@ -36,23 +36,24 @@ const TimelinePin = props => {
       </div>
       {children}
     </div>
-  );
-};
+  )
+}
 TimelinePin.defaultProps = {
-  icon: "it-code-circle",
-  label: "maggio 2018"
-};
+  icon: 'it-code-circle',
+  label: 'maggio 2018'
+}
 
 /**
  * è stato necessario disabilitare il typecheck per un'incompatibilità su storybook in caso di
  * un unico figlio
  */
 TimelinePin.propTypes = {
+  className: PropTypes.node,
   icon: PropTypes.string,
   label: PropTypes.string,
   now: PropTypes.bool,
   nowText: PropTypes.string,
   past: PropTypes.bool
-};
+}
 
-export default TimelinePin;
+export default TimelinePin
