@@ -5,9 +5,15 @@ import { withInfo } from '@storybook/addon-info'
 import Header from './docs/Heading.md'
 
 import StepperTextOnly from './StepperTextOnly'
-import StepperTestAndIcons from './StepperTestAndIcons'
+import StepperTestAndIcons from './StepperTextAndIcons'
 import StepperOrderOfSteps from './StepperOrderOfSteps'
 import NavigationOfTheSteps from './NavigationSteps'
+import ProgressBarNavMobile from './ProgressBarNavMobile'
+import PalliniNavMobile from './PalliniNavMobile'
+import SaveButton from './SaveButton'
+import ConfirmButton from './ConfirmButton'
+import StepperDarkVersion from './StepperDarkVersion'
+import HeaderVariants from './HeaderVariants'
 
 storiesOf('Componenti/Stepper', module)
   .addDecorator(withA11y)
@@ -34,4 +40,46 @@ storiesOf('Componenti/Stepper', module)
     withInfo({
       text: Header
     })(NavigationOfTheSteps)
+  )
+
+storiesOf('Componenti/Stepper.Navigation variations for mobile', module)
+  .add(
+    'Progress bar',
+    withInfo({
+      text: Header
+    })(ProgressBarNavMobile)
+  )
+  .add(
+    'Pallini',
+    withInfo({
+      text: Header
+    })(PalliniNavMobile)
+  )
+  .add(
+    'Save Button',
+    withInfo({
+      text: Header
+    })(SaveButton)
+  )
+  .add(
+    'Confirm Button',
+    withInfo({
+      text: Header
+    })(ConfirmButton)
+  )
+ 
+
+storiesOf('Componenti/Stepper', module)
+  .addDecorator(withA11y)
+  .add(
+    'Version on a dark background',
+    withInfo({
+      text: Header
+    })(StepperDarkVersion)
+  )
+  .add(
+    'Header Variants',
+    withInfo({
+      text: Header
+    })(HeaderVariants)
   )

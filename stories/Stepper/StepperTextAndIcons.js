@@ -5,7 +5,7 @@ import {
   StepperHeaderElement
 } from '../../src'
 
-const StepperTestAndIcons = () => {
+const StepperTextAndIcons = () => {
   return (
     <StepperContainer>
       <StepperHeader>
@@ -29,4 +29,4 @@ const StepperTestAndIcons = () => {
   )
 }
 
-export default StepperTestAndIcons
+export default StepperTextAndIcons

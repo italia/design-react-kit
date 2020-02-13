@@ -13,7 +13,7 @@ const StepperOrderOfSteps = () => {
         <StepperHeaderElement
           variant="confirmed"
           stepperNumber={<Icon icon="it-check" />}
-          icon="it-check">
+          >
           Label Step 1
         </StepperHeaderElement>
         <StepperHeaderElement

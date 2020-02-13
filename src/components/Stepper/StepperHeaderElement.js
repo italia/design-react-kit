@@ -35,7 +35,7 @@ const StepperHeaderElement = props => {
       {iconName && <Icon icon={iconName} />}
       {stepperNumber && <span className={spanClass}>{stepperNumber}</span>}
       {children}
-      {icon && !spanClass && <Icon icon={icon} className={iconClass} />}
+      {icon && <Icon icon={icon} className={iconClass} />}
     </li>
   )
 }
