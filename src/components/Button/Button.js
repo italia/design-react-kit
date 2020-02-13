@@ -16,9 +16,13 @@ const defaultProps = {
 }
 
 const Button = ({ icon, className, stepperClass, ...attributes }) => {
-  const classes = classNames(className, {
-    'btn-icon': icon
-  }, stepperClass)
+  const classes = classNames(
+    className,
+    {
+      'btn-icon': icon
+    },
+    stepperClass
+  )
   return <ButtonBase className={classes} {...attributes} />
 }
 
