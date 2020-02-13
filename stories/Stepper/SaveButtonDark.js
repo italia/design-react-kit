@@ -27,6 +27,7 @@ const SaveButtonDark = () => {
           color="primary"
           size="sm"
           stepperClass="stepper-btn-next">
+            Next
           <Icon icon="it-chevron-right" />
         </Button>
       </StepperNav>

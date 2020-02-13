@@ -3,6 +3,11 @@ import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 
 import Header from './docs/Heading.md'
+import TextAndIcons from './docs/TextAndIcons.md'
+import NavigationForMobile from './docs/NavigationForMobile.md'
+import NavigationOfTheStepsDoc from './docs/NavigationOfTheSteps.md'
+import OrderOfTheSteps from './docs/OrderOfTheSteps.md'
+import VersionDarkBackground from './docs/VersionDarkBackground.md'
 
 import StepperTextOnly from './StepperTextOnly'
 import StepperTestAndIcons from './StepperTextAndIcons'
@@ -30,19 +35,19 @@ storiesOf('Componenti/Stepper', module)
   .add(
     'Text and Icons',
     withInfo({
-      text: Header
+      text: TextAndIcons
     })(StepperTestAndIcons)
   )
   .add(
     'Order of the steps',
     withInfo({
-      text: Header
+      text: OrderOfTheSteps
     })(StepperOrderOfSteps)
   )
   .add(
     'Navigation of the steps',
     withInfo({
-      text: Header
+      text: NavigationOfTheStepsDoc
     })(NavigationOfTheSteps)
   )
 
@@ -50,25 +55,25 @@ storiesOf('Componenti/Stepper.Navigation variations for mobile', module)
   .add(
     'Progress bar',
     withInfo({
-      text: Header
+      text: NavigationForMobile
     })(ProgressBarNavMobile)
   )
   .add(
     'Pallini',
     withInfo({
-      text: Header
+      text: NavigationForMobile
     })(PalliniNavMobile)
   )
   .add(
     'Save Button',
     withInfo({
-      text: Header
+      text: NavigationForMobile
     })(SaveButton)
   )
   .add(
     'Confirm Button',
     withInfo({
-      text: Header
+      text: NavigationForMobile
     })(ConfirmButton)
   )
 
@@ -77,7 +82,7 @@ storiesOf('Componenti/Stepper', module)
   .add(
     'Version on a dark background',
     withInfo({
-      text: Header
+      text: VersionDarkBackground
     })(StepperDarkVersion)
   )
   .add(
@@ -94,24 +99,24 @@ storiesOf(
   .add(
     'Progress Bar',
     withInfo({
-      text: Header
+      text: NavigationForMobile
     })(ProgressBarDark)
   )
   .add(
     'Pallini',
     withInfo({
-      text: Header
+      text: NavigationForMobile
     })(PalliniDark)
   )
   .add(
     'Save button',
     withInfo({
-      text: Header
+      text: NavigationForMobile
     })(SaveButtonDark)
   )
   .add(
     'Confirm Button',
     withInfo({
-      text: Header
+      text: NavigationForMobile
     })(ConfirmButtonDark)
   )
