@@ -1,0 +1,1 @@
+Il megamenu ha una struttura colonnare, ogni colonna richiama al suo interno il componente Lista di link per comporre l’elenco di link desiderato.

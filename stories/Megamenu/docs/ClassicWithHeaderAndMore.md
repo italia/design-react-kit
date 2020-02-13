@@ -1,0 +1,1 @@
+Si possono combinare header e link “more”.

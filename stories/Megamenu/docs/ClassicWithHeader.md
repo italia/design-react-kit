@@ -1,0 +1,1 @@
+Se ci fosse necessità di categorizzare i contenuti del megamenu, possiamo inserire un header all’interno delle link list.
