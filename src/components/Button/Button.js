@@ -6,7 +6,8 @@ import { Button as ButtonBase } from 'reactstrap'
 
 const propTypes = {
   ...ButtonBase.propTypes,
-  icon: PropTypes.bool
+  icon: PropTypes.bool,
+  stepperClass: PropTypes.string
 }
 
 const defaultProps = {
@@ -14,10 +15,10 @@ const defaultProps = {
   icon: false
 }
 
-const Button = ({ icon, className, ...attributes }) => {
+const Button = ({ icon, className, stepperClass, ...attributes }) => {
   const classes = classNames(className, {
     'btn-icon': icon
-  })
+  }, stepperClass)
   return <ButtonBase className={classes} {...attributes} />
 }
 

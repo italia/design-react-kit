@@ -12,11 +12,11 @@ const defaultProps = {
   tag: 'div'
 }
 
-const StepperContent = (props) => {
+const StepperContent = props => {
   const { tag: Tag, children, ...attributes } = props
-  const wrapperClasses = classNames("steppers-content")
+  const wrapperClass = classNames('steppers-content')
   return (
-    <Tag {...attributes} className={wrapperClasses} aria-live="polite">
+    <Tag {...attributes} className={wrapperClass} aria-live="polite">
       {children}
     </Tag>
   )

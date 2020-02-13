@@ -1,10 +1,16 @@
 import React from 'react'
-import { StepperContainer, StepperHeader, StepperHeaderElement, Button, Icon } from '../../src'
+import {
+  StepperContainer,
+  StepperHeader,
+  StepperHeaderElement,
+  Button,
+  Icon
+} from '../../src'
 import StepperContent from '../../src/components/Stepper/StepperContent'
 import StepperNav from '../../src/components/Stepper/StepperNav'
 
 const NavigationOfTheSteps = () => {
-  return(
+  return (
     <StepperContainer>
       <StepperHeader>
         <StepperHeaderElement variant="confirmed" icon="it-check">
@@ -19,31 +25,19 @@ const NavigationOfTheSteps = () => {
         </StepperHeaderElement>
       </StepperHeader>
       <StepperContent>
-        Example content of the current step
+        <p>Example content of the current step</p>
       </StepperContent>
       <StepperNav>
-        <Button 
-          outline
-          color="primary"
-          size="sm"
-          className="steppers-btn-prev">
-            <Icon icon="it-chevron-left" color="primary"/>
-            Back
+        <Button outline color="primary" size="sm" stepperClass="steppers-btn-prev">
+          <Icon icon="it-chevron-left" color="primary" />
+          Back
         </Button>{' '}
-        <Button
-          outline
-          color="primary"
-          size="sm"
-          className="steppers-btn-next">
-            Next
-            <Icon icon="it-chevron-right" color="primary"/>
+        <Button outline color="primary" size="sm" stepperClass="steppers-btn-next">
+          Next
+          <Icon icon="it-chevron-right" color="primary" />
         </Button>
-        <Button 
-          color="primary"
-          size="sm"
-          className="stepper-btn-confirm"
-          >
-            Confirmation
+        <Button color="primary" size="sm" stepperClass="stepper-btn-confirm d-none d-lg-block">
+          Confirmation
         </Button>
       </StepperNav>
     </StepperContainer>

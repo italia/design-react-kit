@@ -13,10 +13,10 @@ const defaultProps = {
 }
 
 const StepperNav = props => {
-  const { tag:Tag, children, ...attributes } = props
+  const { tag: Tag, children, ...attributes } = props
   const wrapperClass = classNames('steppers-nav')
   return (
-    <Tag {...attributes} classNames={wrapperClass}>
+    <Tag {...attributes} className={wrapperClass}>
       {children}
     </Tag>
   )
