@@ -4,14 +4,14 @@ import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 import { withKnobs, boolean } from '@storybook/addon-knobs/react'
 
-import { 
-  Megamenu, 
-  LinkList, 
-  LinkListItem, 
-  Navbar, 
-  Icon, 
-  Row, 
-  Col 
+import {
+  Megamenu,
+  LinkList,
+  LinkListItem,
+  Navbar,
+  Icon,
+  Row,
+  Col
 } from '../../src'
 
 import Classic from './docs/Classic.md'
@@ -25,9 +25,7 @@ const Classico = () => {
   var toggleState = boolean('Toggle Open', false)
   return (
     <Navbar expand="lg">
-      <Megamenu
-        isOpen={toggleState}
-        displayLabel={'Megamenu'}>
+      <Megamenu isOpen={toggleState} displayLabel={'Megamenu'}>
         <Row>
           <Col lg={4}>
             <LinkList>
@@ -78,9 +76,7 @@ const ClassicoConMore = () => {
   const toggleState = boolean('Toggle Open', false)
   return (
     <Navbar expand="lg">
-      <Megamenu
-        isOpen={toggleState}
-        displayLabel={'Megamenu'}>
+      <Megamenu isOpen={toggleState} displayLabel={'Megamenu'}>
         <Row>
           <Col lg={4}>
             <LinkList>
@@ -154,15 +150,11 @@ const ClassicoConIntestazione = () => {
   const toggleState = boolean('Toggle Open', false)
   return (
     <Navbar expand="lg">
-      <Megamenu
-        isOpen={toggleState}
-        displayLabel={'Megamenu'}>
+      <Megamenu isOpen={toggleState} displayLabel={'Megamenu'}>
         <Row>
           <Col lg={4}>
             <LinkList>
-              <LinkListItem header>
-                Header 1
-              </LinkListItem>
+              <LinkListItem header>Header 1</LinkListItem>
               <LinkListItem>
                 <span>Link list 1</span>
               </LinkListItem>
@@ -176,9 +168,7 @@ const ClassicoConIntestazione = () => {
           </Col>
           <Col lg={4}>
             <LinkList>
-              <LinkListItem header>
-                Header 2
-              </LinkListItem>
+              <LinkListItem header>Header 2</LinkListItem>
               <LinkListItem>
                 <span>Link list 1</span>
               </LinkListItem>
@@ -192,9 +182,7 @@ const ClassicoConIntestazione = () => {
           </Col>
           <Col lg={4}>
             <LinkList>
-              <LinkListItem header>
-                Header 3
-              </LinkListItem>
+              <LinkListItem header>Header 3</LinkListItem>
               <LinkListItem>
                 <span>Link list 1</span>
               </LinkListItem>
@@ -216,15 +204,11 @@ const ClassicoConIntestazioneEMore = () => {
   const toggleState = boolean('Toggle Open', false)
   return (
     <Navbar expand="lg">
-      <Megamenu
-        isOpen={toggleState}
-        displayLabel={'Megamenu'}>
+      <Megamenu isOpen={toggleState} displayLabel={'Megamenu'}>
         <Row>
           <Col lg={4}>
             <LinkList>
-              <LinkListItem header>
-                Header 1
-              </LinkListItem>
+              <LinkListItem header>Header 1</LinkListItem>
               <LinkListItem>
                 <span>Link list 1</span>
               </LinkListItem>
@@ -238,9 +222,7 @@ const ClassicoConIntestazioneEMore = () => {
           </Col>
           <Col lg={4}>
             <LinkList>
-              <LinkListItem header>
-                Header 2
-              </LinkListItem>
+              <LinkListItem header>Header 2</LinkListItem>
               <LinkListItem>
                 <span>Link list 1</span>
               </LinkListItem>
@@ -254,9 +236,7 @@ const ClassicoConIntestazioneEMore = () => {
           </Col>
           <Col lg={4}>
             <LinkList>
-              <LinkListItem header>
-                Header 3
-              </LinkListItem>
+              <LinkListItem header>Header 3</LinkListItem>
               <LinkListItem>
                 <span>Link list 1</span>
               </LinkListItem>
@@ -341,6 +321,3 @@ storiesOf('Componenti/Megamenu.Classic', module)
       text: ClassicWithHeaderAndMore
     })(ClassicoConIntestazioneEMore)
   )
-
-
-
