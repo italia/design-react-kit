@@ -5,7 +5,7 @@ import StepperNav from '../../src/components/Stepper/StepperNav'
 import { Button, Icon } from '../../src'
 
 const ConfirmButton = () => {
-  return(
+  return (
     <StepperMobileExamples>
       <StepperContent>
         <p>Example content of the current step</p>
@@ -16,16 +16,12 @@ const ConfirmButton = () => {
           color="primary"
           size="sm"
           stepperClass="steppers-btn-prev">
-            <Icon icon="it-chevron-left"/>
-               Back
-          </Button>
-          <Button 
-            color="primary"
-            size="sm"
-            stepperClass="steppers-btn-confirm"
-            >
-              Confirm
-            </Button>
+          <Icon icon="it-chevron-left" />
+          Back
+        </Button>
+        <Button color="primary" size="sm" stepperClass="steppers-btn-confirm">
+          Confirm
+        </Button>
       </StepperNav>
     </StepperMobileExamples>
   )

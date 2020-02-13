@@ -67,7 +67,6 @@ storiesOf('Componenti/Stepper.Navigation variations for mobile', module)
       text: Header
     })(ConfirmButton)
   )
- 
 
 storiesOf('Componenti/Stepper', module)
   .addDecorator(withA11y)

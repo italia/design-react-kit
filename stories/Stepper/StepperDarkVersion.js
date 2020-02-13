@@ -1,12 +1,18 @@
 import React from 'react'
-import { StepperContainer, StepperHeader, StepperHeaderElement, Button, Icon } from '../../src'
+import {
+  StepperContainer,
+  StepperHeader,
+  StepperHeaderElement,
+  Button,
+  Icon
+} from '../../src'
 import StepperContent from '../../src/components/Stepper/StepperContent'
 import StepperNav from '../../src/components/Stepper/StepperNav'
 
 const StepperDarkVersion = () => {
-  return(
+  return (
     <StepperContainer dark>
-    <StepperHeader>
+      <StepperHeader>
         <StepperHeaderElement variant="confirmed" icon="it-check">
           Label Step 1
         </StepperHeaderElement>
@@ -17,11 +23,11 @@ const StepperDarkVersion = () => {
         <StepperHeaderElement variant="steppers-index">
           2/6
         </StepperHeaderElement>
-    </StepperHeader>
-    <StepperContent>
-      <p>Example content of the current step</p>
-    </StepperContent>
-    <StepperNav>
+      </StepperHeader>
+      <StepperContent>
+        <p>Example content of the current step</p>
+      </StepperContent>
+      <StepperNav>
         <Button
           outline
           color="primary"
@@ -45,7 +51,7 @@ const StepperDarkVersion = () => {
           Confirmation
         </Button>
       </StepperNav>
-  </StepperContainer>
+    </StepperContainer>
   )
 }
 

@@ -6,7 +6,7 @@ import {
   Icon
 } from '../../src'
 const HeaderVariants = () => {
-  return(
+  return (
     <StepperContainer dark>
       <StepperHeader>
         <StepperHeaderElement variant="confirmed" icon="it-check">
@@ -19,7 +19,8 @@ const HeaderVariants = () => {
         <StepperHeaderElement variant="steppers-index">
           2/6
         </StepperHeaderElement>
-      </StepperHeader>[` `]
+      </StepperHeader>
+      [` `]
       <StepperHeader>
         <StepperHeaderElement
           variant="confirmed"
@@ -36,12 +37,12 @@ const HeaderVariants = () => {
         <StepperHeaderElement variant="steppers-index">
           2/6
         </StepperHeaderElement>
-      </StepperHeader>[` `]
+      </StepperHeader>
+      [` `]
       <StepperHeader>
         <StepperHeaderElement
           variant="confirmed"
-          stepperNumber={<Icon icon="it-check" />}
-          >
+          stepperNumber={<Icon icon="it-check" />}>
           Label Step 1
         </StepperHeaderElement>
         <StepperHeaderElement
@@ -55,7 +56,6 @@ const HeaderVariants = () => {
         </StepperHeaderElement>
       </StepperHeader>
     </StepperContainer>
-    
   )
 }
 
