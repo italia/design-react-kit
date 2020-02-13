@@ -5,7 +5,8 @@ import classNames from 'classnames'
 const propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
-  children: PropTypes.element
+  children: PropTypes.element,
+  dark: PropTypes.string
 }
 
 const defaultProps = {
@@ -13,8 +14,12 @@ const defaultProps = {
 }
 
 const StepperMobileExamples = props => {
-  const { tag: Tag, children, ...attributes } = props
-  const wrapperClass = classNames('steppers', 'mobile-examples')
+  const { tag: Tag, dark, children, ...attributes } = props
+  const wrapperClass = classNames(
+    'steppers',
+    dark ? 'bg-dark' : null,
+    'mobile-examples'
+  )
   return (
     <Tag {...attributes} className={wrapperClass}>
       {children}

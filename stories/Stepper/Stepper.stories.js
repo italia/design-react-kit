@@ -14,6 +14,10 @@ import SaveButton from './SaveButton'
 import ConfirmButton from './ConfirmButton'
 import StepperDarkVersion from './StepperDarkVersion'
 import HeaderVariants from './HeaderVariants'
+import ProgressBarDark from './ProgressBarDark'
+import PalliniDark from './PalliniDark'
+import SaveButtonDark from './SaveButtonDark'
+import ConfirmButtonDark from './ConfirmButtonDark'
 
 storiesOf('Componenti/Stepper', module)
   .addDecorator(withA11y)
@@ -81,4 +85,33 @@ storiesOf('Componenti/Stepper', module)
     withInfo({
       text: Header
     })(HeaderVariants)
+  )
+
+storiesOf(
+  'Componenti/Stepper.Navigation variations for mobile - dark version',
+  module
+)
+  .add(
+    'Progress Bar',
+    withInfo({
+      text: Header
+    })(ProgressBarDark)
+  )
+  .add(
+    'Pallini',
+    withInfo({
+      text: Header
+    })(PalliniDark)
+  )
+  .add(
+    'Save button',
+    withInfo({
+      text: Header
+    })(SaveButtonDark)
+  )
+  .add(
+    'Confirm Button',
+    withInfo({
+      text: Header
+    })(ConfirmButtonDark)
   )
