@@ -149,7 +149,5 @@ export { default as ChipLabel } from './components/Chips/ChipLabel'
 export { default as FontLoader } from './components/FontLoader/FontLoader'
 export { default as Dimmer } from './components/Dimmer/Dimmer'
 export { default as DimmerButtons } from './components/Dimmer/DimmerButtons'
-export {
-  default as TimelineWrapper
-} from './components/Timeline/TimelineWrapper'
+export { default as Timeline } from './components/Timeline/TimelineWrapper'
 export { default as TimelinePin } from './components/Timeline/TimelinePin'

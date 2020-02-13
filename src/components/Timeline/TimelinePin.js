@@ -28,7 +28,7 @@ const TimelinePin = props => {
   )
 
   return (
-    <div className={classes} {...rest}>
+    <div className={classes}>
       {pinTextNow}
       <div className={innerClasses} {...rest}>
         {pinIcon}
@@ -40,7 +40,7 @@ const TimelinePin = props => {
 }
 TimelinePin.defaultProps = {
   icon: 'it-code-circle',
-  label: 'maggio 2018'
+  label: ' '
 }
 
 /**
@@ -48,7 +48,7 @@ TimelinePin.defaultProps = {
  * un unico figlio
  */
 TimelinePin.propTypes = {
-  className: PropTypes.node,
+  className: PropTypes.string,
   icon: PropTypes.string,
   label: PropTypes.string,
   now: PropTypes.bool,

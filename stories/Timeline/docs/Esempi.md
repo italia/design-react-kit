@@ -1,4 +1,4 @@
-The Timeline component is characterized by the wrapper `<TimelineWrapper>` which contains `<TimelinePin>`.
+The Timeline component is characterized by the wrapper `<Timeline>` which contains `<TimelinePin>`.
 
 Each `<TimelinePin>` contains a PIN.
 
