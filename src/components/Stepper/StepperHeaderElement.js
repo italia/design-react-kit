@@ -27,7 +27,7 @@ const StepperHeaderElement = props => {
     children,
     ...attributes
   } = props
-  const wrapperClasses = classNames(variant, noLine ? 'no-line' : null)
+  const wrapperClasses = classNames(variant, { 'no-line': noLine })
   const iconClass = classNames('icon', 'steppers-success')
   const spanClass = classNames('steppers-number')
   return (

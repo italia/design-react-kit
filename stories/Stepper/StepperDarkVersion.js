@@ -28,26 +28,18 @@ const StepperDarkVersion = () => {
         <p>Example content of the current step</p>
       </StepperContent>
       <StepperNav>
-        <Button
-          outline
-          color="primary"
-          size="sm"
-          stepperClass="steppers-btn-prev">
+        <Button outline color="primary" size="sm" className="steppers-btn-prev">
           <Icon icon="it-chevron-left" color="primary" />
           Back
         </Button>
-        <Button
-          outline
-          color="primary"
-          size="sm"
-          stepperClass="steppers-btn-next">
+        <Button outline color="primary" size="sm" className="steppers-btn-next">
           Next
           <Icon icon="it-chevron-right" color="primary" />
         </Button>
         <Button
           color="primary"
           size="sm"
-          stepperClass="stepper-btn-confirm d-none d-lg-block">
+          className="stepper-btn-confirm d-none d-lg-block">
           Confirmation
         </Button>
       </StepperNav>

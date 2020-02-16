@@ -1,22 +1,17 @@
 import React from 'react'
-import StepperMobileExamples from '../../src/components/Stepper/StepperMobileExamples'
 import StepperContent from '../../src/components/Stepper/StepperContent'
 import StepperNav from '../../src/components/Stepper/StepperNav'
-import { Button, Icon } from '../../src'
+import { Button, Icon, StepperContainer } from '../../src'
 import StepperDots from '../../src/components/Stepper/StepperDots'
 
 const PalliniNavMobile = () => {
   return (
-    <StepperMobileExamples>
+    <StepperContainer mobile>
       <StepperContent>
         <p>Example content of the current step</p>
       </StepperContent>
       <StepperNav>
-        <Button
-          outline
-          color="primary"
-          size="sm"
-          stepperClass="steppers-btn-prev">
+        <Button outline color="primary" size="sm" className="steppers-btn-prev">
           <Icon icon="it-chevron-left" color="primary" />
           Back
         </Button>
@@ -28,16 +23,12 @@ const PalliniNavMobile = () => {
           <li></li>
           <li></li>
         </StepperDots>
-        <Button
-          outline
-          color="primary"
-          size="sm"
-          stepperClass="steppers-btn-next">
+        <Button outline color="primary" size="sm" className="steppers-btn-next">
           Next
           <Icon icon="it-chevron-right" color="primary" />
         </Button>
       </StepperNav>
-    </StepperMobileExamples>
+    </StepperContainer>
   )
 }
 

@@ -1,21 +1,16 @@
 import React from 'react'
-import StepperMobileExamples from '../../src/components/Stepper/StepperMobileExamples'
 import StepperContent from '../../src/components/Stepper/StepperContent'
 import StepperNav from '../../src/components/Stepper/StepperNav'
-import { Button, Icon, Progress } from '../../src'
+import { Button, Icon, Progress, StepperContainer } from '../../src'
 
 const ProgressBarNavMobile = props => {
   return (
-    <StepperMobileExamples>
+    <StepperContainer mobile>
       <StepperContent>
         <p>Example content of the current step</p>
       </StepperContent>
       <StepperNav>
-        <Button
-          outline
-          color="primary"
-          size="sm"
-          stepperClass="steppers-btn-prev">
+        <Button outline color="primary" size="sm" className="steppers-btn-prev">
           <Icon icon="it-chevron-left" color="primary" />
           Back
         </Button>
@@ -27,16 +22,12 @@ const ProgressBarNavMobile = props => {
             style={{ width: '33%' }}
           />
         </div>
-        <Button
-          outline
-          color="primary"
-          size="sm"
-          stepperClass="steppers-btn-next">
+        <Button outline color="primary" size="sm" className="steppers-btn-next">
           Next
           <Icon icon="it-chevron-right" color="primary" />
         </Button>
       </StepperNav>
-    </StepperMobileExamples>
+    </StepperContainer>
   )
 }
 

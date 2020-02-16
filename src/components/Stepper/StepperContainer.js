@@ -6,7 +6,8 @@ const propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
   children: PropTypes.element,
-  dark: PropTypes.string
+  dark: PropTypes.string,
+  mobile: PropTypes.bool
 }
 
 const defaultProps = {
@@ -14,8 +15,12 @@ const defaultProps = {
 }
 
 const StepperContainer = props => {
-  const { tag: Tag, children, dark, ...attributes } = props
-  const wrapperClass = classNames('steppers', dark ? 'bg-dark' : null)
+  const { tag: Tag, children, mobile, dark, ...attributes } = props
+  const wrapperClass = classNames(
+    'steppers',
+    { 'bg-dark': dark },
+    { 'mobile-examples': mobile }
+  )
   return (
     <Tag {...attributes} className={wrapperClass}>
       {children}
