@@ -17,14 +17,17 @@ import ChiusuraControllata from './docs/ChiusuraControllata.md'
 
 const EsempiComponent = () => (
   <div>
+    <Alert color="info">
+      Questo è un alert di tipo <b>info</b>!
+    </Alert>
     <Alert color="success">
-      Questo è un alert di <em>success</em>!
+      Questo è un alert di <b>success</b>!
     </Alert>
     <Alert color="danger">
-      Questo è un alert di <em>danger</em>!
+      Questo è un alert di <b>danger</b>!
     </Alert>
     <Alert color="warning">
-      Questo è un alert di <em>warning</em>!
+      Questo è un alert di <b>warning</b>!
     </Alert>
   </div>
 )
@@ -58,13 +61,13 @@ const ContenutoAggiuntivoComponent = () => (
 const ChiusuraControllataComponent = () => <AlertExample />
 
 const EsempiInterattiviComponent = () => {
-  const colors = ['success', 'danger', 'warning']
+  const colors = ['info', 'success', 'danger', 'warning']
   const color = select('Variazioni', colors, colors[0])
   const open = boolean('Visible', true)
 
   return (
     <Alert color={color} isOpen={open}>
-      Questo è un alert di <em>{color}</em>!
+      Questo è un alert di <b>{color}</b>!
     </Alert>
   )
 }
