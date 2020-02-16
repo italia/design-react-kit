@@ -48,7 +48,7 @@ const EsempiComponent = () => (
             {/* start card */}
             <Card>
               <CardBody>
-                <CardTitle>
+                <CardTitle tag="h5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor…
                 </CardTitle>
@@ -86,7 +86,7 @@ const EsempiComponent = () => (
             {/* start card */}
             <Card>
               <CardBody>
-                <CardTitle>
+                <CardTitle tag="h5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor…
                 </CardTitle>
@@ -124,7 +124,7 @@ const EsempiComponent = () => (
             {/* start card */}
             <Card>
               <CardBody>
-                <CardTitle>
+                <CardTitle tag="h5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor…
                 </CardTitle>
@@ -162,7 +162,7 @@ const EsempiComponent = () => (
             {/* start card */}
             <Card>
               <CardBody>
-                <CardTitle>
+                <CardTitle tag="h5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor…
                 </CardTitle>
