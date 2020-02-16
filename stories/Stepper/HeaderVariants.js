@@ -20,7 +20,6 @@ const HeaderVariants = () => {
           2/6
         </StepperHeaderElement>
       </StepperHeader>
-      [` `]
       <StepperHeader>
         <StepperHeaderElement
           variant="confirmed"
@@ -38,7 +37,6 @@ const HeaderVariants = () => {
           2/6
         </StepperHeaderElement>
       </StepperHeader>
-      [` `]
       <StepperHeader>
         <StepperHeaderElement
           variant="confirmed"
