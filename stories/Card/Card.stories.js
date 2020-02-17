@@ -34,7 +34,7 @@ const SimpleCardComponent = () => (
       {/* start card */}
       <Card>
         <CardBody>
-          <CardTitle>
+          <CardTitle tag="h5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
@@ -55,7 +55,7 @@ const SimpleCardMultipleColumnsComponent = () => (
       <div className="col-12 col-lg-4" key={i}>
         <Card>
           <CardBody>
-            <CardTitle>
+            <CardTitle tag="h5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor…
             </CardTitle>
