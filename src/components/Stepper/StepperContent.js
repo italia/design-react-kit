@@ -12,11 +12,33 @@ const defaultProps = {
   tag: 'div'
 }
 
+const contentStyleLight = {
+  height: '400px',
+  border: '2px dashed #eee',
+  background: '#fafafa',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  color: '#333'
+}
+
+const contentStyleDark = {
+  height: '400px',
+  border: '2px dashed #eee',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  color: '#EEE',
+  borderColor: '#aaa', 
+  background: '#17324d', 
+  opacity: 0.5
+}
+
 const StepperContent = props => {
-  const { tag: Tag, children, ...attributes } = props
+  const { tag: Tag, children, dark, ...attributes } = props
   const wrapperClass = classNames('steppers-content')
   return (
-    <Tag {...attributes} className={wrapperClass} aria-live="polite">
+    <Tag {...attributes} className={wrapperClass} style={dark && contentStyleDark || contentStyleLight} aria-live="polite">
       {children}
     </Tag>
   )

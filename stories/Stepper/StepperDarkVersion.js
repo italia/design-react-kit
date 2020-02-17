@@ -24,7 +24,7 @@ const StepperDarkVersion = () => {
           2/6
         </StepperHeaderElement>
       </StepperHeader>
-      <StepperContent>
+      <StepperContent dark>
         <p>Example content of the current step</p>
       </StepperContent>
       <StepperNav>

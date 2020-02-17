@@ -3,10 +3,10 @@ import StepperContent from '../../src/components/Stepper/StepperContent'
 import StepperNav from '../../src/components/Stepper/StepperNav'
 import { Button, Icon, Progress, StepperContainer } from '../../src'
 
-const ProgressBarDark = props => {
+const ProgressBarDark = () => {
   return (
     <StepperContainer mobile dark>
-      <StepperContent>
+      <StepperContent dark>
         <p>Example content of the current step</p>
       </StepperContent>
       <StepperNav>

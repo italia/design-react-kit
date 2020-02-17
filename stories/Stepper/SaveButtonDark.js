@@ -6,7 +6,7 @@ import { Button, Icon, StepperContainer } from '../../src'
 const SaveButtonDark = () => {
   return (
     <StepperContainer mobile dark>
-      <StepperContent>
+      <StepperContent dark>
         <p>Example content of the current step</p>
       </StepperContent>
       <StepperNav>
