@@ -1,7 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import { Nav, DropdownMenu, DropdownToggle, Dropdown, UncontrolledDropdown } from 'reactstrap'
+import {
+  Nav,
+  DropdownMenu,
+  DropdownToggle,
+  UncontrolledDropdown
+} from 'reactstrap'
 
 const propTypes = {
   className: PropTypes.string,
@@ -25,11 +30,7 @@ const Megamenu = ({
   const classes = classNames(className, 'megamenu')
   return (
     <Nav>
-      <UncontrolledDropdown
-        className={classes}
-        direction={'down'}
-        inNavbar
-        nav>
+      <UncontrolledDropdown className={classes} direction={'down'} inNavbar nav>
         <DropdownToggle className={`nav-link`} tag={'a'} caret>
           {displayLabel}
         </DropdownToggle>
