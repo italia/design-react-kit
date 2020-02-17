@@ -93,6 +93,31 @@ const SimpleArticleComponent = () => (
   </div>
 )
 
+const SimpleArticleDateIconComponent = () => (
+  <div className="row">
+    <div className="col-12 col-lg-6">
+      {/* start card */}
+      <Card>
+        <CardBody>
+          <CardCategory date="10/12/2018" iconName="it-calendar">
+            Category
+          </CardCategory>
+          <CardTitle tag="h5" className="big-heading">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+          </CardTitle>
+          <CardText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </CardText>
+          <CardSignature>di Federico De Paolis</CardSignature>
+          <CardReadMore text="Leggi di più" iconName="it-arrow-right" />
+        </CardBody>
+      </Card>
+      {/* end card */}
+    </div>
+  </div>
+)
+
 const CardIconComponent = () => (
   <div className="row">
     <div className="col-12 col-lg-6">
@@ -325,6 +350,13 @@ storiesOf('Componenti/Cards', module)
       text: SimpleArticle,
       propTables: [Card]
     })(SimpleArticleComponent)
+  )
+  .add(
+    'Simple Article with Icon',
+    withInfo({
+      text: SimpleArticle,
+      propTables: [Card, CardCategory]
+    })(SimpleArticleDateIconComponent)
   )
   .add(
     'Card with icon',
