@@ -25,7 +25,7 @@ const Classico = () => {
   var toggleState = boolean('Toggle Open', false)
   return (
     <Navbar expand="lg">
-      <Megamenu isOpen={toggleState} displayLabel={'Megamenu'}>
+      <Megamenu displayLabel={'Megamenu'}>
         <Row>
           <Col lg={4}>
             <LinkList>
@@ -73,10 +73,9 @@ const Classico = () => {
 }
 
 const ClassicoConMore = () => {
-  const toggleState = boolean('Toggle Open', false)
   return (
     <Navbar expand="lg">
-      <Megamenu isOpen={toggleState} displayLabel={'Megamenu'}>
+      <Megamenu displayLabel={'Megamenu'}>
         <Row>
           <Col lg={4}>
             <LinkList>
@@ -147,10 +146,9 @@ const ClassicoConMore = () => {
 }
 
 const ClassicoConIntestazione = () => {
-  const toggleState = boolean('Toggle Open', false)
   return (
     <Navbar expand="lg">
-      <Megamenu isOpen={toggleState} displayLabel={'Megamenu'}>
+      <Megamenu displayLabel={'Megamenu'}>
         <Row>
           <Col lg={4}>
             <LinkList>
@@ -201,10 +199,9 @@ const ClassicoConIntestazione = () => {
 }
 
 const ClassicoConIntestazioneEMore = () => {
-  const toggleState = boolean('Toggle Open', false)
   return (
     <Navbar expand="lg">
-      <Megamenu isOpen={toggleState} displayLabel={'Megamenu'}>
+      <Megamenu displayLabel={'Megamenu'}>
         <Row>
           <Col lg={4}>
             <LinkList>
