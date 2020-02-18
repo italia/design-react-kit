@@ -7,7 +7,7 @@ import StepperDots from '../../src/components/Stepper/StepperDots'
 const PalliniDark = () => {
   return (
     <StepperContainer mobile dark>
-      <StepperContent>
+      <StepperContent dark>
         <p>Example content of the current step</p>
       </StepperContent>
       <StepperNav>
