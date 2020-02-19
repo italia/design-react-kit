@@ -14,7 +14,7 @@ const CardCategory = props => {
   const { iconName, date, href, ...attributes } = props
   const { children, ...rest } = attributes
   const classes = classNames({
-    'category-top': !iconName,
+    'category-top': date || ' ',
     'categoryicon-top': iconName
   })
   // Simple category link
@@ -23,7 +23,7 @@ const CardCategory = props => {
       {children}
     </a>
   )
-  const categoryDate = !iconName && <span className="data">{date}</span>
+  const categoryDate = date && <span className="data">{date}</span>
   // Category with icon
   const categoryText = iconName && <span className="text">{children}</span>
   const categoryIcon = iconName && <Icon icon={iconName} />
@@ -31,9 +31,9 @@ const CardCategory = props => {
   return (
     <div className={classes} {...rest}>
       {categoryLink}
-      {categoryDate}
       {categoryIcon}
       {categoryText}
+      {categoryDate}
     </div>
   )
 }
