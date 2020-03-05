@@ -1,0 +1,1247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Notification Default Location 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container test-desktop"
+    >
+      <div>
+        <div
+          className="notification with-icon success toast fade"
+          role="alert"
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Notification Title
+                <svg
+                  className="icon"
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-check-circle"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+          <div
+            className="toast-body"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Notification Dismissable 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container test-docs"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-12 col-md-6 mb-4 mb-md-0"
+        >
+          <p
+            className="mb-4"
+          >
+            <strong>
+              Notification standard
+            </strong>
+          </p>
+          <div
+            className="notification dismissable toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+            <button
+              aria-label={null}
+              className="btn notification-close btn btn-secondary"
+              onClick={[Function]}
+            >
+              <svg
+                className="icon"
+              >
+                <use
+                  xlinkHref="sprite.svg#it-close"
+                />
+              </svg>
+              <span
+                className="sr-only"
+              >
+                Chiudi notifica: Titolo notifica
+              </span>
+            </button>
+          </div>
+        </div>
+        <div
+          className="col-12 col-md-6"
+        >
+          <p
+            className="mb-4"
+          >
+            <strong>
+              Notification with icon
+            </strong>
+          </p>
+          <div
+            className="notification with-icon dismissable toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+            <div
+              className="toast-body"
+              type="success"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </div>
+            <button
+              aria-label={null}
+              className="btn notification-close btn btn-secondary"
+              onClick={[Function]}
+            >
+              <svg
+                className="icon"
+              >
+                <use
+                  xlinkHref="sprite.svg#it-close"
+                />
+              </svg>
+              <span
+                className="sr-only"
+              >
+                Chiudi notifica: Titolo notifica
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Notification Example 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container test-docs"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-12 col-md-6 mb-4 mb-md-0"
+        >
+          <p
+            className="mb-4"
+          >
+            <strong>
+              Notification standard
+            </strong>
+          </p>
+          <div
+            className="notification toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-md-6"
+        >
+          <p
+            className="mb-4"
+          >
+            <strong>
+              Notification with icon
+            </strong>
+          </p>
+          <div
+            className="notification with-icon toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Notification Fixed Positions 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container test-desktop"
+    >
+      <div>
+        <div
+          className="notification top-fix with-icon success toast fade"
+          role="alert"
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Top Fix
+                <svg
+                  className="icon"
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-check-circle"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+          <div
+            className="toast-body"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="notification left-fix with-icon success toast fade"
+          role="alert"
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Left Fix
+                <svg
+                  className="icon"
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-check-circle"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="notification right-fix with-icon success toast fade"
+          role="alert"
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Right Fix
+                <svg
+                  className="icon"
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-check-circle"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="notification bottom-fix with-icon success toast fade"
+          role="alert"
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Bottom Fix
+                <svg
+                  className="icon"
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-check-circle"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+          <div
+            className="toast-body"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Notification Notification with message 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container test-docs"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-12 col-md-6 mb-4 mb-md-0"
+        >
+          <p
+            className="mb-4"
+          >
+            <strong>
+              Notification standard
+            </strong>
+          </p>
+          <div
+            className="notification toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+            <div
+              className="toast-body"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-md-6"
+        >
+          <p
+            className="mb-4"
+          >
+            <strong>
+              Notification with icon
+            </strong>
+          </p>
+          <div
+            className="notification with-icon toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+            <div
+              className="toast-body"
+              type="success"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container test-docs"
+    >
+      <div
+        className="row mb-5"
+      >
+        <div
+          className="col-12 col-md-6 mb-4 mb-md-0"
+          style={
+            Object {
+              "position": "fixed",
+            }
+          }
+        >
+          <p>
+            <strong>
+              Basic (rounding at 4 corners)
+            </strong>
+          </p>
+          <div
+            className="notification with-icon success toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-12 col-md-6"
+        style={
+          Object {
+            "bottom": 50,
+            "left": 50,
+            "transform": "translateX(100%)",
+          }
+        }
+      >
+        <p>
+          <strong>
+            top-fix
+          </strong>
+        </p>
+        <div
+          className="row mb-5"
+          style={
+            Object {
+              "WebkitTransform": "translateX(30%)",
+              "marginTop": "10px",
+            }
+          }
+        >
+          <div
+            className="notification top-fix with-icon success toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+        <p
+          style={
+            Object {
+              "marginTop": "90px",
+            }
+          }
+        >
+          <strong>
+            bottom-fix
+          </strong>
+        </p>
+        <div
+          className="row mb-5"
+          style={
+            Object {
+              "WebkitTransform": "translateX(30%)",
+              "marginTop": "10px",
+            }
+          }
+        >
+          <div
+            className="notification bottom-fix with-icon success toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+        <p
+          style={
+            Object {
+              "marginTop": "90px",
+            }
+          }
+        >
+          <strong>
+            left-fix
+          </strong>
+        </p>
+        <div
+          className="row mb-5"
+          style={
+            Object {
+              "marginTop": "50px",
+            }
+          }
+        >
+          <div
+            className="notification left-fix with-icon success toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+        <p>
+          <strong>
+            right-fix
+          </strong>
+        </p>
+        <div
+          className="row mb-5"
+          style={
+            Object {
+              "marginTop": "50px",
+            }
+          }
+        >
+          <div
+            className="notification right-fix with-icon success toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Notification States 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="container test-docs"
+    >
+      <div
+        className="row mb-5"
+      >
+        <div
+          className="col-12 col-md-6 mb-4 mb-md-0"
+        >
+          <p>
+            <strong>
+              Success
+            </strong>
+          </p>
+          <div
+            className="notification with-icon success toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-check-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-md-6"
+        >
+          <p>
+            <strong>
+              Error
+            </strong>
+          </p>
+          <div
+            className="notification with-icon error toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-close-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row mb-5"
+      >
+        <div
+          className="col-12 col-md-6 mb-4 mb-md-0"
+          style={
+            Object {
+              "top": 45,
+            }
+          }
+        >
+          <p>
+            <strong>
+              Info
+            </strong>
+          </p>
+          <div
+            className="notification with-icon info toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-info-circle"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-12 col-md-6"
+          style={
+            Object {
+              "top": 45,
+            }
+          }
+        >
+          <p>
+            <strong>
+              Warning
+            </strong>
+          </p>
+          <div
+            className="notification with-icon warning toast fade"
+            role="alert"
+            style={
+              Object {
+                "bottom": "auto",
+                "left": "auto",
+                "right": "auto",
+                "top": "auto",
+              }
+            }
+          >
+            <div
+              className="toast-header"
+            >
+              <strong
+                className="mr-auto"
+              >
+                <h5>
+                  Notification Title
+                  <svg
+                    className="icon"
+                  >
+                    <use
+                      xlinkHref="sprite.svg#it-error"
+                    />
+                  </svg>
+                </h5>
+              </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;

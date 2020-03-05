@@ -37,7 +37,7 @@ const EsempiComponent = () => {
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle>
+              <CardTitle tag="h5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -54,7 +54,7 @@ const EsempiComponent = () => {
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle>
+              <CardTitle tag="h5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -70,7 +70,7 @@ const EsempiComponent = () => {
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle>
+              <CardTitle tag="h5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -104,7 +104,7 @@ const ColorePrimarioComponent = () => {
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle>
+              <CardTitle tag="h5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -121,7 +121,7 @@ const ColorePrimarioComponent = () => {
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle>
+              <CardTitle tag="h5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -137,7 +137,7 @@ const ColorePrimarioComponent = () => {
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle>
+              <CardTitle tag="h5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -173,7 +173,7 @@ const DimmerConAzioniComponent = () => {
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle>
+              <CardTitle tag="h5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -189,7 +189,7 @@ const DimmerConAzioniComponent = () => {
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle>
+              <CardTitle tag="h5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -223,7 +223,7 @@ const DimmerPrimaryActionsComponent = () => {
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle>
+              <CardTitle tag="h5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -239,7 +239,7 @@ const DimmerPrimaryActionsComponent = () => {
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle>
+              <CardTitle tag="h5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
