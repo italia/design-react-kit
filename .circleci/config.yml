@@ -16,7 +16,7 @@ aliases:
 
   - &npm_install
     name: Install Packages
-    command: yarn install
+    command: yarn
 
   - &save_cache
     paths:
