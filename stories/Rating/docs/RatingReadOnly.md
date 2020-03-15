@@ -1,0 +1,1 @@
+Aggiungendo la classe prop `readOnly` si ottiene un Rating non modificabile di sola lettura.

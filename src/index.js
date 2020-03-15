@@ -50,6 +50,7 @@ export {
   ListGroup,
   Form,
   FormFeedback,
+  FormGroup,
   FormText,
   InputGroup,
   InputGroupAddon,
@@ -96,7 +97,6 @@ export { default as Callout } from './components/Callout/Callout'
 export { default as CalloutText } from './components/Callout/CalloutText'
 export { default as CalloutTitle } from './components/Callout/CalloutTitle'
 export { default as Collapse } from './components/Collapse/Collapse'
-export { default as FormGroup } from './components/FormGroup/FormGroup'
 export { default as Header } from './components/Header/Header'
 export { default as Headers } from './components/Header/Headers'
 export { default as HeaderBrand } from './components/Header/HeaderBrand'
@@ -116,7 +116,7 @@ export { default as LinkListItem } from './components/LinkList/LinkListItem'
 export { default as Nav } from './components/Nav/Nav'
 export { default as Pager } from './components/Pager/Pager'
 export { default as PagerList } from './components/PagerList/PagerList'
-
+export { default as Rating } from './components/Rating/Rating'
 export {
   default as PasswordInput
 } from './components/PasswordInput/PasswordInput'
