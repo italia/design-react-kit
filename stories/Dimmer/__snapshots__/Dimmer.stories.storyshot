@@ -67,11 +67,11 @@ exports[`Storyshots Componenti/Dimmer Colore Primario 1`] = `
               <div
                 className="card-body"
               >
-                <div
+                <h5
                   className="card-title"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                </div>
+                </h5>
                 <p
                   className="card-text"
                 >
@@ -93,11 +93,11 @@ exports[`Storyshots Componenti/Dimmer Colore Primario 1`] = `
               <div
                 className="card-body"
               >
-                <div
+                <h5
                   className="card-title"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                </div>
+                </h5>
                 <p
                   className="card-text"
                 >
@@ -119,11 +119,11 @@ exports[`Storyshots Componenti/Dimmer Colore Primario 1`] = `
               <div
                 className="card-body"
               >
-                <div
+                <h5
                   className="card-title"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                </div>
+                </h5>
                 <p
                   className="card-text"
                 >
@@ -247,11 +247,11 @@ exports[`Storyshots Componenti/Dimmer Dimmer con Azioni 1`] = `
               <div
                 className="card-body"
               >
-                <div
+                <h5
                   className="card-title"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                </div>
+                </h5>
                 <p
                   className="card-text"
                 >
@@ -273,11 +273,11 @@ exports[`Storyshots Componenti/Dimmer Dimmer con Azioni 1`] = `
               <div
                 className="card-body"
               >
-                <div
+                <h5
                   className="card-title"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                </div>
+                </h5>
                 <p
                   className="card-text"
                 >
@@ -394,11 +394,11 @@ exports[`Storyshots Componenti/Dimmer Dimmer con Azioni Colore Primario 1`] = `
               <div
                 className="card-body"
               >
-                <div
+                <h5
                   className="card-title"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                </div>
+                </h5>
                 <p
                   className="card-text"
                 >
@@ -420,11 +420,11 @@ exports[`Storyshots Componenti/Dimmer Dimmer con Azioni Colore Primario 1`] = `
               <div
                 className="card-body"
               >
-                <div
+                <h5
                   className="card-title"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                </div>
+                </h5>
                 <p
                   className="card-text"
                 >
@@ -530,11 +530,11 @@ exports[`Storyshots Componenti/Dimmer Esempi 1`] = `
               <div
                 className="card-body"
               >
-                <div
+                <h5
                   className="card-title"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                </div>
+                </h5>
                 <p
                   className="card-text"
                 >
@@ -556,11 +556,11 @@ exports[`Storyshots Componenti/Dimmer Esempi 1`] = `
               <div
                 className="card-body"
               >
-                <div
+                <h5
                   className="card-title"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                </div>
+                </h5>
                 <p
                   className="card-text"
                 >
@@ -582,11 +582,11 @@ exports[`Storyshots Componenti/Dimmer Esempi 1`] = `
               <div
                 className="card-body"
               >
-                <div
+                <h5
                   className="card-title"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                </div>
+                </h5>
                 <p
                   className="card-text"
                 >

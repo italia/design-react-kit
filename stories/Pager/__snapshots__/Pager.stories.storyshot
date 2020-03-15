@@ -1035,12 +1035,14 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
         className=""
       >
         <div
-          className="   form-group"
+          className="form-group"
         >
           <input
             className="form-control form-control"
             id="jumpToPage"
             maxLength="2"
+            onBlur={[Function]}
+            onFocus={[Function]}
             type="text"
           />
           <label

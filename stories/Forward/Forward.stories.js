@@ -9,7 +9,7 @@ import { withKnobs } from '@storybook/addon-knobs/dist/deprecated'
 import ForwardDoc from './ForwardDoc.md'
 
 const ForwardComponent = () => {
-  const ref = React.useRef(null)
+  const ref = React.forwardRef(null)
   return (
     <div>
       <Card>

@@ -436,7 +436,7 @@ exports[`Storyshots Componenti/Footer Footer 1`] = `
                       htmlFor="input-newsletter"
                     />
                     <small
-                      className="form-text text-muted"
+                      className=""
                     />
                   </div>
                   <button

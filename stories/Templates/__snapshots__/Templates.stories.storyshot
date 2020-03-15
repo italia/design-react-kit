@@ -564,7 +564,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                     Cerca contenuti in "Amministrazione"
                   </label>
                   <small
-                    className="form-text text-muted"
+                    className=""
                   />
                 </div>
                 <span
@@ -1865,7 +1865,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                       htmlFor="input-newsletter"
                     />
                     <small
-                      className="form-text text-muted"
+                      className=""
                     />
                   </div>
                   <button
@@ -2586,7 +2586,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                   className="pb-5 card-body"
                 >
                   <div
-                    className="categoryicon-top"
+                    className="category-top categoryicon-top"
                   >
                     <svg
                       className="icon"
@@ -2599,6 +2599,11 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                       className="text"
                     >
                       Notizie
+                    </span>
+                    <span
+                      className="data"
+                    >
+                      18 mag 2018
                     </span>
                   </div>
                   <h4
@@ -2684,9 +2689,6 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         </svg>
                         Giunta e consiglio
                       </a>
-                      <span
-                        className="data"
-                      />
                     </div>
                     <div
                       className="font-weight-semibold card-title"
@@ -2748,9 +2750,6 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                       </svg>
                       Pagamenti
                     </a>
-                    <span
-                      className="data"
-                    />
                   </div>
                   <div
                     className="font-weight-semibold card-title"
@@ -2802,9 +2801,6 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                       </svg>
                       Bandi
                     </a>
-                    <span
-                      className="data"
-                    />
                   </div>
                   <div
                     className="font-weight-semibold card-title"
@@ -3648,9 +3644,6 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         />
                       </svg>
                     </a>
-                    <span
-                      className="data"
-                    />
                   </div>
                   <h3
                     className="card-title"
@@ -3736,9 +3729,6 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         />
                       </svg>
                     </a>
-                    <span
-                      className="data"
-                    />
                   </div>
                   <h3
                     className="card-title"
@@ -3861,9 +3851,6 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         />
                       </svg>
                     </a>
-                    <span
-                      className="data"
-                    />
                   </div>
                   <div
                     className="card-title"
@@ -4702,7 +4689,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                       htmlFor="input-newsletter"
                     />
                     <small
-                      className="form-text text-muted"
+                      className=""
                     />
                   </div>
                   <button
@@ -5476,7 +5463,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                     Cerca contenuti in "Servizi"
                   </label>
                   <small
-                    className="form-text text-muted"
+                    className=""
                   />
                 </div>
                 <span
@@ -7321,7 +7308,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                       htmlFor="input-newsletter"
                     />
                     <small
-                      className="form-text text-muted"
+                      className=""
                     />
                   </div>
                   <button
