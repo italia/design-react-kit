@@ -1,164 +1,149 @@
-import React, { Fragment } from 'react'
-import { Icon } from '../../src'
+import React from 'react'
+import { boolean } from '@storybook/addon-knobs/react'
+import {
+  Icon,
+  Button,
+  Collapse,
+  LinkList,
+  Navbar,
+  NavItem,
+  NavLink,
+  NavbarToggler,
+  Scrollspy
+} from '../../src'
 
-class PosizionamentoFondoPagina extends React.Component {
-  state = {
-    isNavOpen: false
-  }
+const PosizionamentoFondoPagina = () => {
+  const isOpen = boolean('Apri Lista (solo mobile)', false)
 
-  onNavScrollToggle = () => {
-    this.setState(prevState => ({
-      ...prevState,
-      isNavOpen: !prevState.isNavOpen
-    }))
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <nav className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-left-side">
-          <button
-            className={
-              this.state.isNavOpen
-                ? 'custom-navbar-toggler focus--mouse'
-                : 'custom-navbar-toggler'
-            }
-            type="button"
-            aria-controls="navbarNav"
-            aria-expanded={this.state.isNavOpen ? 'true' : 'false'}
-            aria-label="Toggle navigation"
-            data-target="#navbarNav"
-            onClick={this.onNavScrollToggle}>
-            <span className="it-list"></span>1. Introduzione
-          </button>
-          <div
-            className={
-              this.state.isNavOpen
-                ? 'navbar-collapsable expanded'
-                : 'navbar-collapsable'
-            }
-            id="navbarNav"
-            style={
-              this.state.isNavOpen ? { display: 'block' } : { display: 'none' }
-            }>
-            <div
-              className="overlay"
-              style={
-                this.state.isNavOpen
-                  ? { display: 'block' }
-                  : { display: 'none' }
-              }></div>
-            <div className="close-div sr-only">
-              <button className="btn close-menu" type="button">
-                <span className="it-close"></span>close
-              </button>
-            </div>
-            <a
-              className="it-back-button"
-              href="#"
-              style={
-                this.state.isNavOpen
-                  ? { display: 'block' }
-                  : { display: 'none' }
-              }
-              onClick={this.onNavScrollToggle}>
-              <Icon
-                className="align-top"
-                color="primary"
-                icon="it-chevron-left"
-                style={{ ariaHidden: true }}
-                size="sm"
-              />
-              <span>Back </span>
-            </a>
-            <div className="menu-wrapper">
-              <div className="link-list-wrapper">
-                <h3 className="no_toc">header</h3>
-                <ul className="link-list">
-                  <li className="nav-item active">
-                    <a className="nav-link active" href="#">
-                      <span>1. Introduzione </span>
-                    </a>
-                    <ul className="link-list">
-                      <li className="nav-link active">
-                        <a className="nav-link active" href="#">
-                          <span>1.1 Nested Item (active) </span>
-                        </a>
-                        <ul className="tertiary link-list">
-                          <li className="nav-link">
-                            <a className="nav-link" href="#">
-                              <span>1.1.1 Nested Item </span>
-                            </a>
-                          </li>
-                          <li className="nav-link">
-                            <a className="nav-link" href="#">
-                              <span>1.1.2 Nested Item </span>
-                            </a>
-                          </li>
-                          <li className="nav-link">
-                            <a className="nav-link" href="#">
-                              <span>1.1.3 Nested Item </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="nav-link">
-                        <a className="nav-link" href="#">
-                          <span>1.2 Nested Item </span>
-                        </a>
-                      </li>
-                      <li className="nav-link">
-                        <a className="nav-link" href="#">
-                          <span>1.3 Nested Item </span>
-                        </a>
-                      </li>
-                    </ul>
-                    <a className="nav-link" href="#">
-                      <span>2. List item </span>
-                    </a>
-                    <ul className="link-list">
-                      <li className="nav-link">
-                        <a className="nav-link" href="#">
-                          <span>2.1 Nested Item </span>
-                        </a>
-                        <ul className="tertiary link-list">
-                          <li className="nav-link">
-                            <a className="nav-link" href="#">
-                              <span>2.1.1 Nested Item </span>
-                            </a>
-                          </li>
-                          <li className="nav-link">
-                            <a className="nav-link" href="#">
-                              <span>2.1.2 Nested Item </span>
-                            </a>
-                          </li>
-                          <li className="nav-link">
-                            <a className="nav-link" href="#">
-                              <span>2.1.3 Nested Item </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="nav-link">
-                        <a className="nav-link" href="#">
-                          <span>2.2 Nested Item </span>
-                        </a>
-                      </li>
-                      <li className="nav-link">
-                        <a className="nav-link" href="#">
-                          <span>2.3 Nested Item </span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
+  return (
+    <Navbar
+      expand="lg"
+      className="it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-left-side">
+      <NavbarToggler
+        tag="button"
+        cssModule={{ 'navbar-toggler': 'custom-navbar-toggler' }}
+        className={isOpen ? 'focus--mouse' : ''}
+        aria-controls="navbarNavB"
+        aria-expanded={isOpen ? 'true' : 'false'}
+        aria-label="Toggle navigation">
+        <span className="it-list"></span>1. Introduzione
+      </NavbarToggler>
+      <Collapse
+        navbar
+        id="navbarNavB"
+        isOpen={isOpen}
+        cssModule={{ 'navbar-collapse': 'navbar-collapsable' }}
+        className={isOpen ? 'expanded' : ''}
+        style={isOpen ? { display: 'block' } : {}}>
+        <div className="overlay" style={isOpen ? { display: 'block' } : {}} />
+        <div className="close-div sr-only">
+          <Button className="close-menu" type="button">
+            <span className="it-close"></span>Chiudi
+          </Button>
+        </div>
+        <a
+          className="it-back-button"
+          href="#"
+          style={isOpen ? { display: 'block' } : {}}>
+          <Icon
+            size="sm"
+            color="primary"
+            className="align-top"
+            icon="it-chevron-left"
+          />
+          <span>Torna indietro</span>
+        </a>
+        <div className="menu-wrapper">
+          <div className="link-list-wrapper">
+            <h3 className="no_toc">Indice della pagina</h3>
+            <Scrollspy
+              item={['introduzione-1', 'list-item-2']}
+              currentClassName="active"
+              className="link-list">
+              <NavItem active>
+                <NavLink href="#introduzione-1" active>
+                  <span>1. Introduzione </span>
+                </NavLink>
+                <LinkList noWrapper>
+                  <NavLink active tag="li">
+                    <NavLink href="#introduzione-1-1" active>
+                      <span>1.1 Nested Item (active) </span>
+                    </NavLink>
+                    <LinkList className="tertiary" noWrapper>
+                      <NavLink tag="li">
+                        <NavLink href="#introduzione-1-1-1">
+                          <span>1.1.1 Nested Item </span>
+                        </NavLink>
+                      </NavLink>
+                      <NavLink tag="li">
+                        <NavLink href="#introduzione-1-1-2">
+                          <span>1.1.2 Nested Item </span>
+                        </NavLink>
+                      </NavLink>
+                      <NavLink tag="li">
+                        <NavLink href="#introduzione-1-1-3">
+                          <span>1.1.3 Nested Item </span>
+                        </NavLink>
+                      </NavLink>
+                    </LinkList>
+                  </NavLink>
+                  <NavLink tag="li">
+                    <NavLink href="#introduzione-1-2">
+                      <span>1.2 Nested Item</span>
+                    </NavLink>
+                  </NavLink>
+                  <NavLink tag="li">
+                    <NavLink href="#introduzione-1-3">
+                      <span>1.3 Nested Item</span>
+                    </NavLink>
+                  </NavLink>
+                </LinkList>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#list-item-2">
+                  <span>2. List item </span>
+                </NavLink>
+                <LinkList noWrapper>
+                  <NavLink active tag="li">
+                    <NavLink href="#list-item-2-1">
+                      <span>2.1 Nested Item</span>
+                    </NavLink>
+                    <LinkList className="tertiary" noWrapper>
+                      <NavLink tag="li">
+                        <NavLink href="#list-item-2-1-1">
+                          <span>2.1.1 Nested Item </span>
+                        </NavLink>
+                      </NavLink>
+                      <NavLink tag="li">
+                        <NavLink href="#list-item-2-1-2">
+                          <span>2.1.2 Nested Item </span>
+                        </NavLink>
+                      </NavLink>
+                      <NavLink tag="li">
+                        <NavLink href="#list-item-2-1-3">
+                          <span>2.1.3 Nested Item </span>
+                        </NavLink>
+                      </NavLink>
+                    </LinkList>
+                  </NavLink>
+                  <NavLink tag="li">
+                    <NavLink href="#list-item-2-2">
+                      <span>2.2 Nested Item</span>
+                    </NavLink>
+                  </NavLink>
+                  <NavLink tag="li">
+                    <NavLink href="#list-item-2-3">
+                      <span>2.3 Nested Item</span>
+                    </NavLink>
+                  </NavLink>
+                </LinkList>
+              </NavItem>
+            </Scrollspy>
           </div>
-        </nav>
-      </Fragment>
-    )
-  }
+        </div>
+      </Collapse>
+    </Navbar>
+  )
 }
 
 export default PosizionamentoFondoPagina

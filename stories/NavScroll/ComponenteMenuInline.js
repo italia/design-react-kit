@@ -1,23 +1,56 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import { Icon } from '../../src'
+import { boolean } from '@storybook/addon-knobs/react'
 
-class ComponenteMenuInline extends React.Component {
-  render() {
-    return (
-      <Fragment>
-        <nav className="inline-menu">
-          <div className="link-list-wrapper">
-            <ul className="link-list">
-              <ComponenteMenuList collapseN="One"></ComponenteMenuList>
-              <ComponenteMenuList collapseN="Two"></ComponenteMenuList>
-              <ComponenteMenuList collapseN="Three"></ComponenteMenuList>
-            </ul>
-          </div>
-        </nav>
-      </Fragment>
-    )
-  }
+import { Icon, LinkList, LinkListItem } from '../../src'
+
+const ComponenteMenuInline = () => {
+  const isFirstOpen = boolean('Apri prima lista', false)
+  const isSecondOpen = boolean('Apri seconda lista', false)
+  const isThirdOpen = boolean('Apri terza lista', false)
+
+  const opens = [isFirstOpen, isSecondOpen, isThirdOpen]
+  return (
+    <nav className="inline-menu">
+      <LinkList>
+        {['One', 'Two', 'Three'].map((collapseN, i) => {
+          return (
+            <LinkListItem
+              key={collapseN}
+              tag="a"
+              className={`large medium right-icon ${
+                opens[i] ? '' : 'collapsed'
+              }`}
+              aria-expanded={opens[i] ? 'true' : 'false'}
+              aria-controls={`#collapse${collapseN}`}
+              href={`#collapse${collapseN}`}>
+              <span>Link list 1</span>
+              <Icon
+                color="primary"
+                icon="it-expand"
+                style={{ ariaHidden: true }}
+                size="sm"
+              />
+              <LinkList
+                sublist
+                className={`collapse ${opens[i] ? 'show' : ''}`}
+                id={`collapse${collapseN}`}>
+                <LinkListItem>
+                  <span>Link list 1</span>
+                </LinkListItem>
+                <LinkListItem>
+                  <span>Link list 2</span>
+                </LinkListItem>
+                <LinkListItem>
+                  <span>Link list 3</span>
+                </LinkListItem>
+              </LinkList>
+            </LinkListItem>
+          )
+        })}
+      </LinkList>
+    </nav>
+  )
 }
 
 export default ComponenteMenuInline
@@ -87,3 +120,5 @@ class ComponenteMenuList extends React.Component {
 ComponenteMenuList.propTypes = {
   collapseN: PropTypes.string
 }
+
+// export ComponenteMenuList;

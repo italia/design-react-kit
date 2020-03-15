@@ -31,12 +31,10 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
         >
           <li>
             <a
-              aria-controls="collapseOne"
+              aria-controls="#collapseOne"
               aria-expanded="false"
-              className="list-item large medium right-icon collapsed"
-              data-toggle="collapse"
+              className="large medium right-icon collapsed list-item"
               href="#collapseOne"
-              onClick={[Function]}
             >
               <span>
                 Link list 1
@@ -53,51 +51,46 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                   xlinkHref="sprite.svg#it-expand"
                 />
               </svg>
+              <ul
+                className="collapse  link-sublist"
+                id="collapseOne"
+              >
+                <li>
+                  <a
+                    className="list-item"
+                  >
+                    <span>
+                      Link list 1
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                  >
+                    <span>
+                      Link list 2
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                  >
+                    <span>
+                      Link list 3
+                    </span>
+                  </a>
+                </li>
+              </ul>
             </a>
-            <ul
-              className="link-sublist collapse"
-              id="collapseOne"
-            >
-              <li>
-                <a
-                  className="list-item"
-                  href="#"
-                >
-                  <span>
-                    Link list 1
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="list-item"
-                  href="#"
-                >
-                  <span>
-                    Link list 1
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="list-item"
-                  href="#"
-                >
-                  <span>
-                    Link list 1
-                  </span>
-                </a>
-              </li>
-            </ul>
           </li>
           <li>
             <a
-              aria-controls="collapseOne"
+              aria-controls="#collapseTwo"
               aria-expanded="false"
-              className="list-item large medium right-icon collapsed"
-              data-toggle="collapse"
+              className="large medium right-icon collapsed list-item"
               href="#collapseTwo"
-              onClick={[Function]}
             >
               <span>
                 Link list 1
@@ -114,51 +107,46 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                   xlinkHref="sprite.svg#it-expand"
                 />
               </svg>
+              <ul
+                className="collapse  link-sublist"
+                id="collapseTwo"
+              >
+                <li>
+                  <a
+                    className="list-item"
+                  >
+                    <span>
+                      Link list 1
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                  >
+                    <span>
+                      Link list 2
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                  >
+                    <span>
+                      Link list 3
+                    </span>
+                  </a>
+                </li>
+              </ul>
             </a>
-            <ul
-              className="link-sublist collapse"
-              id="collapseOne"
-            >
-              <li>
-                <a
-                  className="list-item"
-                  href="#"
-                >
-                  <span>
-                    Link list 1
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="list-item"
-                  href="#"
-                >
-                  <span>
-                    Link list 1
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="list-item"
-                  href="#"
-                >
-                  <span>
-                    Link list 1
-                  </span>
-                </a>
-              </li>
-            </ul>
           </li>
           <li>
             <a
-              aria-controls="collapseOne"
+              aria-controls="#collapseThree"
               aria-expanded="false"
-              className="list-item large medium right-icon collapsed"
-              data-toggle="collapse"
+              className="large medium right-icon collapsed list-item"
               href="#collapseThree"
-              onClick={[Function]}
             >
               <span>
                 Link list 1
@@ -175,42 +163,39 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                   xlinkHref="sprite.svg#it-expand"
                 />
               </svg>
+              <ul
+                className="collapse  link-sublist"
+                id="collapseThree"
+              >
+                <li>
+                  <a
+                    className="list-item"
+                  >
+                    <span>
+                      Link list 1
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                  >
+                    <span>
+                      Link list 2
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                  >
+                    <span>
+                      Link list 3
+                    </span>
+                  </a>
+                </li>
+              </ul>
             </a>
-            <ul
-              className="link-sublist collapse"
-              id="collapseOne"
-            >
-              <li>
-                <a
-                  className="list-item"
-                  href="#"
-                >
-                  <span>
-                    Link list 1
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="list-item"
-                  href="#"
-                >
-                  <span>
-                    Link list 1
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="list-item"
-                  href="#"
-                >
-                  <span>
-                    Link list 1
-                  </span>
-                </a>
-              </li>
-            </ul>
           </li>
         </ul>
       </div>
@@ -263,15 +248,13 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
     }
   >
     <nav
-      className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-left-side"
+      className="it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-left-side navbar navbar-expand-lg"
     >
       <button
-        aria-controls="navbarNav"
+        aria-controls="navbarNavB"
         aria-expanded="false"
         aria-label="Toggle navigation"
         className="custom-navbar-toggler"
-        data-target="#navbarNav"
-        onClick={[Function]}
         type="button"
       >
         <span
@@ -280,59 +263,44 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
         1. Introduzione
       </button>
       <div
-        className="navbar-collapsable"
-        id="navbarNav"
-        style={
-          Object {
-            "display": "none",
-          }
-        }
+        aria-expanded="false"
+        className="collapse navbar-collapsable"
+        id="navbarNavB"
+        style={Object {}}
       >
         <div
           className="overlay"
-          style={
-            Object {
-              "display": "none",
-            }
-          }
+          style={Object {}}
         />
         <div
           className="close-div sr-only"
         >
           <button
-            className="btn close-menu"
+            aria-label={null}
+            className="close-menu btn btn-secondary"
+            onClick={[Function]}
             type="button"
           >
             <span
               className="it-close"
             />
-            close
+            Chiudi
           </button>
         </div>
         <a
           className="it-back-button"
           href="#"
-          onClick={[Function]}
-          style={
-            Object {
-              "display": "none",
-            }
-          }
+          style={Object {}}
         >
           <svg
             className="icon align-top icon-primary icon-sm sm"
-            style={
-              Object {
-                "ariaHidden": true,
-              }
-            }
           >
             <use
               xlinkHref="sprite.svg#it-chevron-left"
             />
           </svg>
           <span>
-            Back 
+            Torna indietro
           </span>
         </a>
         <div
@@ -344,17 +312,19 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
             <h3
               className="no_toc"
             >
-              header
+              Indice della pagina
             </h3>
             <ul
               className="link-list"
+              style={Object {}}
             >
               <li
                 className="nav-item active"
               >
                 <a
                   className="nav-link active"
-                  href="#"
+                  href="#introduzione-1"
+                  onClick={[Function]}
                 >
                   <span>
                     1. Introduzione 
@@ -365,10 +335,12 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
                 >
                   <li
                     className="nav-link active"
+                    onClick={[Function]}
                   >
                     <a
                       className="nav-link active"
-                      href="#"
+                      href="#introduzione-1-1"
+                      onClick={[Function]}
                     >
                       <span>
                         1.1 Nested Item (active) 
@@ -379,10 +351,12 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
                     >
                       <li
                         className="nav-link"
+                        onClick={[Function]}
                       >
                         <a
                           className="nav-link"
-                          href="#"
+                          href="#introduzione-1-1-1"
+                          onClick={[Function]}
                         >
                           <span>
                             1.1.1 Nested Item 
@@ -391,10 +365,12 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
                       </li>
                       <li
                         className="nav-link"
+                        onClick={[Function]}
                       >
                         <a
                           className="nav-link"
-                          href="#"
+                          href="#introduzione-1-1-2"
+                          onClick={[Function]}
                         >
                           <span>
                             1.1.2 Nested Item 
@@ -403,10 +379,12 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
                       </li>
                       <li
                         className="nav-link"
+                        onClick={[Function]}
                       >
                         <a
                           className="nav-link"
-                          href="#"
+                          href="#introduzione-1-1-3"
+                          onClick={[Function]}
                         >
                           <span>
                             1.1.3 Nested Item 
@@ -417,32 +395,41 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
                   </li>
                   <li
                     className="nav-link"
+                    onClick={[Function]}
                   >
                     <a
                       className="nav-link"
-                      href="#"
+                      href="#introduzione-1-2"
+                      onClick={[Function]}
                     >
                       <span>
-                        1.2 Nested Item 
+                        1.2 Nested Item
                       </span>
                     </a>
                   </li>
                   <li
                     className="nav-link"
+                    onClick={[Function]}
                   >
                     <a
                       className="nav-link"
-                      href="#"
+                      href="#introduzione-1-3"
+                      onClick={[Function]}
                     >
                       <span>
-                        1.3 Nested Item 
+                        1.3 Nested Item
                       </span>
                     </a>
                   </li>
                 </ul>
+              </li>
+              <li
+                className="nav-item"
+              >
                 <a
                   className="nav-link"
-                  href="#"
+                  href="#list-item-2"
+                  onClick={[Function]}
                 >
                   <span>
                     2. List item 
@@ -452,14 +439,16 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
                   className="link-list"
                 >
                   <li
-                    className="nav-link"
+                    className="nav-link active"
+                    onClick={[Function]}
                   >
                     <a
                       className="nav-link"
-                      href="#"
+                      href="#list-item-2-1"
+                      onClick={[Function]}
                     >
                       <span>
-                        2.1 Nested Item 
+                        2.1 Nested Item
                       </span>
                     </a>
                     <ul
@@ -467,10 +456,12 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
                     >
                       <li
                         className="nav-link"
+                        onClick={[Function]}
                       >
                         <a
                           className="nav-link"
-                          href="#"
+                          href="#list-item-2-1-1"
+                          onClick={[Function]}
                         >
                           <span>
                             2.1.1 Nested Item 
@@ -479,10 +470,12 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
                       </li>
                       <li
                         className="nav-link"
+                        onClick={[Function]}
                       >
                         <a
                           className="nav-link"
-                          href="#"
+                          href="#list-item-2-1-2"
+                          onClick={[Function]}
                         >
                           <span>
                             2.1.2 Nested Item 
@@ -491,10 +484,12 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
                       </li>
                       <li
                         className="nav-link"
+                        onClick={[Function]}
                       >
                         <a
                           className="nav-link"
-                          href="#"
+                          href="#list-item-2-1-3"
+                          onClick={[Function]}
                         >
                           <span>
                             2.1.3 Nested Item 
@@ -505,25 +500,29 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
                   </li>
                   <li
                     className="nav-link"
+                    onClick={[Function]}
                   >
                     <a
                       className="nav-link"
-                      href="#"
+                      href="#list-item-2-2"
+                      onClick={[Function]}
                     >
                       <span>
-                        2.2 Nested Item 
+                        2.2 Nested Item
                       </span>
                     </a>
                   </li>
                   <li
                     className="nav-link"
+                    onClick={[Function]}
                   >
                     <a
                       className="nav-link"
-                      href="#"
+                      href="#list-item-2-3"
+                      onClick={[Function]}
                     >
                       <span>
-                        2.3 Nested Item 
+                        2.3 Nested Item
                       </span>
                     </a>
                   </li>
@@ -581,278 +580,292 @@ exports[`Storyshots Componenti/NavScroll Posizionamento in testa alla pagina con
       }
     }
   >
-    <nav
-      className="navbar it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side"
+    <div
+      className="sticky-wrapper navbar-wrapper"
     >
-      <button
-        aria-controls="navbarNavB"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        className="custom-navbar-toggler"
-        data-target="#navbarNavB"
-        onClick={[Function]}
-        type="button"
+      <nav
+        className="it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side navbar navbar-expand-lg"
       >
-        <span
-          className="it-list"
-        />
-        1. Introduzione
-      </button>
-      <div
-        className="navbar-collapsable"
-        id="navbarNavB"
-        style={
-          Object {
-            "display": "none",
-          }
-        }
-      >
-        <div
-          className="overlay"
-          style={
-            Object {
-              "display": "none",
-            }
-          }
-        />
-        <div
-          className="close-div sr-only"
+        <button
+          aria-controls="navbarNavB"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          className="custom-navbar-toggler"
+          type="button"
         >
-          <button
-            className="btn close-menu"
-            type="button"
-          >
-            <span
-              className="it-close"
-            />
-            close
-          </button>
-        </div>
-        <a
-          className="it-back-button"
-          href="#"
-          onClick={[Function]}
-          style={
-            Object {
-              "display": "none",
-            }
-          }
-        >
-          <svg
-            className="icon align-top icon-primary icon-sm sm"
-            style={
-              Object {
-                "ariaHidden": true,
-              }
-            }
-          >
-            <use
-              xlinkHref="sprite.svg#it-chevron-left"
-            />
-          </svg>
-          <span>
-            Back 
-          </span>
-        </a>
+          <span
+            className="it-list"
+          />
+          1. Introduzione
+        </button>
         <div
-          className="menu-wrapper"
+          aria-expanded="false"
+          className="collapse navbar-collapsable"
+          id="navbarNavB"
+          style={Object {}}
         >
           <div
-            className="link-list-wrapper"
+            className="overlay"
+            style={Object {}}
+          />
+          <div
+            className="close-div sr-only"
           >
-            <h3
-              className="no_toc"
+            <button
+              aria-label={null}
+              className="close-menu btn btn-secondary"
+              onClick={[Function]}
+              type="button"
             >
-              header
-            </h3>
-            <ul
-              className="link-list"
+              <span
+                className="it-close"
+              />
+              Chiudi
+            </button>
+          </div>
+          <a
+            className="it-back-button"
+            href="#"
+            style={Object {}}
+          >
+            <svg
+              className="icon align-top icon-primary icon-sm sm"
             >
-              <li
-                className="nav-item active"
+              <use
+                xlinkHref="sprite.svg#it-chevron-left"
+              />
+            </svg>
+            <span>
+              Torna indietro
+            </span>
+          </a>
+          <div
+            className="menu-wrapper"
+          >
+            <div
+              className="link-list-wrapper"
+            >
+              <h3
+                className="no_toc"
               >
-                <a
-                  className="nav-link active"
-                  href="#"
+                Indice della pagina
+              </h3>
+              <ul
+                className="link-list"
+                style={Object {}}
+              >
+                <li
+                  className="nav-item active"
                 >
-                  <span>
-                    1. Introduzione 
-                  </span>
-                </a>
-                <ul
-                  className="link-list"
-                >
-                  <li
+                  <a
                     className="nav-link active"
+                    href="#introduzione-1"
+                    onClick={[Function]}
                   >
-                    <a
-                      className="nav-link active"
-                      href="#"
-                    >
-                      <span>
-                        1.1 Nested Item (active) 
-                      </span>
-                    </a>
+                    <span>
+                      1. Introduzione 
+                    </span>
+                  </a>
+                  <div
+                    className="link-list-wrapper"
+                  >
                     <ul
-                      className="tertiary link-list"
+                      className="link-list"
                     >
                       <li
-                        className="nav-link"
+                        className="nav-link active"
+                        onClick={[Function]}
                       >
                         <a
-                          className="nav-link"
-                          href="#"
+                          className="nav-link active"
+                          href="#introduzione-1-1"
+                          onClick={[Function]}
                         >
                           <span>
-                            1.1.1 Nested Item 
+                            1.1 Nested Item (active) 
                           </span>
                         </a>
-                      </li>
-                      <li
-                        className="nav-link"
-                      >
-                        <a
-                          className="nav-link"
-                          href="#"
+                        <div
+                          className="link-list-wrapper"
                         >
-                          <span>
-                            1.1.2 Nested Item 
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        className="nav-link"
-                      >
-                        <a
-                          className="nav-link"
-                          href="#"
-                        >
-                          <span>
-                            1.1.3 Nested Item 
-                          </span>
-                        </a>
+                          <ul
+                            className="tertiary link-list"
+                          >
+                            <li
+                              className="nav-link"
+                              onClick={[Function]}
+                            >
+                              <a
+                                className="nav-link"
+                                href="#introduzione-1-1-1"
+                                onClick={[Function]}
+                              >
+                                <span>
+                                  1.1.1 Nested Item 
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              className="nav-link"
+                              onClick={[Function]}
+                            >
+                              <a
+                                className="nav-link"
+                                href="#introduzione-1-1-2"
+                                onClick={[Function]}
+                              >
+                                <span>
+                                  1.1.2 Nested Item 
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              className="nav-link"
+                              onClick={[Function]}
+                            >
+                              <a
+                                className="nav-link"
+                                href="#introduzione-1-1-3"
+                                onClick={[Function]}
+                              >
+                                <span>
+                                  1.1.3 Nested Item 
+                                </span>
+                              </a>
+                            </li>
+                            <a
+                              className="nav-link"
+                              href="#introduzione-1-2"
+                              onClick={[Function]}
+                            >
+                              <span>
+                                1.2 Nested Item
+                              </span>
+                            </a>
+                            <a
+                              className="nav-link"
+                              href="#introduzione-1-3"
+                              onClick={[Function]}
+                            >
+                              <span>
+                                1.3 Nested Item
+                              </span>
+                            </a>
+                          </ul>
+                        </div>
                       </li>
                     </ul>
-                  </li>
-                  <li
-                    className="nav-link"
-                  >
-                    <a
-                      className="nav-link"
-                      href="#"
-                    >
-                      <span>
-                        1.2 Nested Item 
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    className="nav-link"
-                  >
-                    <a
-                      className="nav-link"
-                      href="#"
-                    >
-                      <span>
-                        1.3 Nested Item 
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-                <a
-                  className="nav-link"
-                  href="#"
+                  </div>
+                </li>
+                <li
+                  className="nav-item"
                 >
-                  <span>
-                    2. List item 
-                  </span>
-                </a>
-                <ul
-                  className="link-list"
-                >
-                  <li
+                  <a
                     className="nav-link"
+                    href="#list-item-2"
+                    onClick={[Function]}
                   >
-                    <a
-                      className="nav-link"
-                      href="#"
-                    >
-                      <span>
-                        2.1 Nested Item 
-                      </span>
-                    </a>
+                    <span>
+                      2. List item 
+                    </span>
+                  </a>
+                  <div
+                    className="link-list-wrapper"
+                  >
                     <ul
-                      className="tertiary link-list"
+                      className="link-list"
                     >
                       <li
-                        className="nav-link"
+                        className="nav-link active"
+                        onClick={[Function]}
                       >
                         <a
                           className="nav-link"
-                          href="#"
+                          href="#list-item-2-1"
+                          onClick={[Function]}
                         >
                           <span>
-                            2.1.1 Nested Item 
+                            2.1 Nested Item
                           </span>
                         </a>
-                      </li>
-                      <li
-                        className="nav-link"
-                      >
-                        <a
-                          className="nav-link"
-                          href="#"
+                        <div
+                          className="link-list-wrapper"
                         >
-                          <span>
-                            2.1.2 Nested Item 
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        className="nav-link"
-                      >
-                        <a
-                          className="nav-link"
-                          href="#"
-                        >
-                          <span>
-                            2.1.3 Nested Item 
-                          </span>
-                        </a>
+                          <ul
+                            className="tertiary link-list"
+                          >
+                            <li
+                              className="nav-link"
+                              onClick={[Function]}
+                            >
+                              <a
+                                className="nav-link"
+                                href="#list-item-2-1-1"
+                                onClick={[Function]}
+                              >
+                                <span>
+                                  2.1.1 Nested Item 
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              className="nav-link"
+                              onClick={[Function]}
+                            >
+                              <a
+                                className="nav-link"
+                                href="#list-item-2-1-2"
+                                onClick={[Function]}
+                              >
+                                <span>
+                                  2.1.2 Nested Item 
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              className="nav-link"
+                              onClick={[Function]}
+                            >
+                              <a
+                                className="nav-link"
+                                href="#list-item-2-1-3"
+                                onClick={[Function]}
+                              >
+                                <span>
+                                  2.1.3 Nested Item 
+                                </span>
+                              </a>
+                            </li>
+                            <a
+                              className="nav-link"
+                              href="#list-item-2-2"
+                              onClick={[Function]}
+                            >
+                              <span>
+                                2.2 Nested Item
+                              </span>
+                            </a>
+                            <a
+                              className="nav-link"
+                              href="#list-item-2-3"
+                              onClick={[Function]}
+                            >
+                              <span>
+                                2.3 Nested Item
+                              </span>
+                            </a>
+                          </ul>
+                        </div>
                       </li>
                     </ul>
-                  </li>
-                  <li
-                    className="nav-link"
-                  >
-                    <a
-                      className="nav-link"
-                      href="#"
-                    >
-                      <span>
-                        2.2 Nested Item 
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    className="nav-link"
-                  >
-                    <a
-                      className="nav-link"
-                      href="#"
-                    >
-                      <span>
-                        2.3 Nested Item 
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </div>
   <button
     className="info__show-button"
