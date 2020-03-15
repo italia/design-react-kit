@@ -13,8 +13,12 @@ const propTypes = {
   wrapperClassName: PropTypes.string,
   /** Quando è abilitato gestisce una lista in cui ciascun elemento è composto da più componenti/elementi. */
   multiline: PropTypes.bool,
+  /** Quando è abilitato rimuove il wrapper al fine di essere incluso in una link-list padre */
   sublist: PropTypes.bool,
-  avatar: PropTypes.bool
+  /** Quando è abilitato gestisce una lista di avatar al suo interno */
+  avatar: PropTypes.bool,
+  /** Quando è abilitato espone unicamente il tag 'ul' al proprio interno senza tag wrapper */
+  noWrapper: PropTypes.bool
 }
 
 const defaultProps = {
@@ -30,6 +34,7 @@ const LinkList = props => {
     header,
     sublist,
     avatar,
+    noWrapper,
     ...attributes
   } = props
   const wrapperClasses = classNames(
@@ -43,7 +48,7 @@ const LinkList = props => {
     avatar && 'avatar-group'
   )
 
-  if (sublist) {
+  if (sublist || noWrapper) {
     return (
       <>
         {header}
@@ -51,6 +56,7 @@ const LinkList = props => {
       </>
     )
   }
+
   return (
     <Tag className={wrapperClasses}>
       {header}
