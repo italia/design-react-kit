@@ -134,7 +134,7 @@ const SfondoNeutraleComponent = () => {
 
 const ImmagineComponent = () => {
   return (
-    <Section image backgroundImage="https://picsum.photos/1280/720?image=811">
+    <Section image="https://picsum.photos/1280/720?image=811">
       <Container className="white-color">
         <Row className="mb-3">
           <Col xs={'12'}>

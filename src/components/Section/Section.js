@@ -6,7 +6,7 @@ const propTypes = {
   muted: PropTypes.string,
   color: PropTypes.string,
   neutral: PropTypes.string,
-  backgroundImage: PropTypes.string,
+  image: PropTypes.string,
   className: PropTypes.string
 }
 
@@ -15,7 +15,7 @@ const Section = props => {
     muted,
     color,
     neutral,
-    backgroundImage,
+    image,
     className,
 
     ...attributes
@@ -26,14 +26,14 @@ const Section = props => {
     'section-muted': muted,
     [`section-${color}`]: color,
     'section-neutral': neutral,
-    'section-image': backgroundImage
+    'section-image': image
   })
 
   const innerClasses = classNames('section-content', className)
 
   const styleClass = {
     backgroundImageClass: {
-      'background-image': [`url(${backgroundImage})`]
+      'background-image': [`url(${image})`]
     }
   }
 
