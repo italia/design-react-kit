@@ -159,3 +159,4 @@ export {
 export {
   default as StepperHeaderElement
 } from './components/Stepper/StepperHeaderElement'
+export { default as Section } from './components/Section/Section'
