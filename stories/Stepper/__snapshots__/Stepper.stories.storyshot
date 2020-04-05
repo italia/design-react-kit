@@ -1,0 +1,1651 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="steppers bg-dark"
+    >
+      <ul
+        className="steppers-header"
+      >
+        <li
+          className="confirmed"
+        >
+          Label Step 1
+          <svg
+            className="icon icon steppers-success"
+          >
+            <use
+              xlinkHref="sprite.svg#it-check"
+            />
+          </svg>
+        </li>
+        <li
+          className="active"
+        >
+          Label Step 2
+        </li>
+        <li
+          className=""
+        >
+          Label Step 3
+        </li>
+        <li
+          className="steppers-index"
+        >
+          2/6
+        </li>
+      </ul>
+      <ul
+        className="steppers-header"
+      >
+        <li
+          className="confirmed"
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-calendar"
+            />
+          </svg>
+          Label Step 1
+          <svg
+            className="icon icon steppers-success"
+          >
+            <use
+              xlinkHref="sprite.svg#it-check"
+            />
+          </svg>
+        </li>
+        <li
+          className="active"
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-lock"
+            />
+          </svg>
+          Label Step 2
+        </li>
+        <li
+          className=""
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-settings"
+            />
+          </svg>
+          Label Step 3
+        </li>
+        <li
+          className="steppers-index"
+        >
+          2/6
+        </li>
+      </ul>
+      <ul
+        className="steppers-header"
+      >
+        <li
+          className="confirmed"
+        >
+          <span
+            className="steppers-number"
+          >
+            <svg
+              className="icon"
+            >
+              <use
+                xlinkHref="sprite.svg#it-check"
+              />
+            </svg>
+          </span>
+          Label Step 1
+        </li>
+        <li
+          className="active no-line"
+        >
+          <span
+            className="steppers-number"
+          >
+            <span>
+              2
+            </span>
+          </span>
+          Label Step 2
+        </li>
+        <li
+          className=""
+        >
+          <span
+            className="steppers-number"
+          >
+            <span>
+              3
+            </span>
+          </span>
+          Label Step 3
+        </li>
+      </ul>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Stepper Navigation of the steps 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="steppers"
+    >
+      <ul
+        className="steppers-header"
+      >
+        <li
+          className="confirmed"
+        >
+          Label Step 1
+          <svg
+            className="icon icon steppers-success"
+          >
+            <use
+              xlinkHref="sprite.svg#it-check"
+            />
+          </svg>
+        </li>
+        <li
+          className="active"
+        >
+          Label Step 2
+        </li>
+        <li
+          className=""
+        >
+          Label Step 3
+        </li>
+        <li
+          className="steppers-index"
+        >
+          2/6
+        </li>
+      </ul>
+      <div
+        aria-live="polite"
+        className="steppers-content"
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "#fafafa",
+            "border": "2px dashed #eee",
+            "color": "#333",
+            "display": "flex",
+            "height": "400px",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <p>
+          Example content of the current step
+        </p>
+      </div>
+      <nav
+        className="steppers-nav"
+      >
+        <button
+          aria-label={null}
+          className="steppers-btn-prev btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon icon-primary"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-left"
+            />
+          </svg>
+          Back
+        </button>
+        <button
+          aria-label={null}
+          className="steppers-btn-next btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          Next
+          <svg
+            className="icon icon-primary"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-right"
+            />
+          </svg>
+        </button>
+        <button
+          aria-label={null}
+          className="stepper-btn-confirm d-none d-lg-block btn btn-primary btn-sm"
+          onClick={[Function]}
+        >
+          Confirmation
+        </button>
+      </nav>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Stepper Order of the steps 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="steppers"
+    >
+      <ul
+        className="steppers-header"
+      >
+        <li
+          className="confirmed"
+        >
+          <span
+            className="steppers-number"
+          >
+            <svg
+              className="icon"
+            >
+              <use
+                xlinkHref="sprite.svg#it-check"
+              />
+            </svg>
+          </span>
+          Label Step 1
+        </li>
+        <li
+          className="active no-line"
+        >
+          <span
+            className="steppers-number"
+          >
+            <span>
+              2
+            </span>
+          </span>
+          Label Step 2
+        </li>
+        <li
+          className=""
+        >
+          <span
+            className="steppers-number"
+          >
+            <span>
+              3
+            </span>
+          </span>
+          Label Step 3
+        </li>
+      </ul>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Stepper Text Only 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="steppers"
+    >
+      <ul
+        className="steppers-header"
+      >
+        <li
+          className="confirmed"
+        >
+          Label Step 1
+          <svg
+            className="icon icon steppers-success"
+          >
+            <use
+              xlinkHref="sprite.svg#it-check"
+            />
+          </svg>
+        </li>
+        <li
+          className="active"
+        >
+          Label Step 2
+        </li>
+        <li
+          className=""
+        >
+          Label Step 3
+        </li>
+        <li
+          className="steppers-index"
+        >
+          2/6
+        </li>
+      </ul>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Stepper Text and Icons 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="steppers"
+    >
+      <ul
+        className="steppers-header"
+      >
+        <li
+          className="confirmed"
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-calendar"
+            />
+          </svg>
+          Label Step 1
+          <svg
+            className="icon icon steppers-success"
+          >
+            <use
+              xlinkHref="sprite.svg#it-check"
+            />
+          </svg>
+        </li>
+        <li
+          className="active"
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-lock"
+            />
+          </svg>
+          Label Step 2
+        </li>
+        <li
+          className=""
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-settings"
+            />
+          </svg>
+          Label Step 3
+        </li>
+        <li
+          className="steppers-index"
+        >
+          2/6
+        </li>
+      </ul>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Stepper Version on a dark background 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="steppers bg-dark"
+    >
+      <ul
+        className="steppers-header"
+      >
+        <li
+          className="confirmed"
+        >
+          Label Step 1
+          <svg
+            className="icon icon steppers-success"
+          >
+            <use
+              xlinkHref="sprite.svg#it-check"
+            />
+          </svg>
+        </li>
+        <li
+          className="active"
+        >
+          Label Step 2
+        </li>
+        <li
+          className=""
+        >
+          Label Step 3
+        </li>
+        <li
+          className="steppers-index"
+        >
+          2/6
+        </li>
+      </ul>
+      <div
+        aria-live="polite"
+        className="steppers-content"
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "#17324d",
+            "border": "2px dashed #eee",
+            "borderColor": "#aaa",
+            "color": "#EEE",
+            "display": "flex",
+            "height": "400px",
+            "justifyContent": "center",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <p>
+          Example content of the current step
+        </p>
+      </div>
+      <nav
+        className="steppers-nav"
+      >
+        <button
+          aria-label={null}
+          className="steppers-btn-prev btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon icon-primary"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-left"
+            />
+          </svg>
+          Back
+        </button>
+        <button
+          aria-label={null}
+          className="steppers-btn-next btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          Next
+          <svg
+            className="icon icon-primary"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-right"
+            />
+          </svg>
+        </button>
+        <button
+          aria-label={null}
+          className="stepper-btn-confirm d-none d-lg-block btn btn-primary btn-sm"
+          onClick={[Function]}
+        >
+          Confirmation
+        </button>
+      </nav>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark version Confirm Button 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="steppers bg-dark mobile-examples"
+    >
+      <div
+        aria-live="polite"
+        className="steppers-content"
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "#17324d",
+            "border": "2px dashed #eee",
+            "borderColor": "#aaa",
+            "color": "#EEE",
+            "display": "flex",
+            "height": "400px",
+            "justifyContent": "center",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <p>
+          Example content of the current step
+        </p>
+      </div>
+      <nav
+        className="steppers-nav"
+      >
+        <button
+          aria-label={null}
+          className="steppers-btn-prev btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-left"
+            />
+          </svg>
+          Back
+        </button>
+        <button
+          aria-label={null}
+          className="steppers-btn-confirm btn btn-primary btn-sm"
+          onClick={[Function]}
+        >
+          Confirm
+        </button>
+      </nav>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark version Pallini 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="steppers bg-dark mobile-examples"
+    >
+      <div
+        aria-live="polite"
+        className="steppers-content"
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "#17324d",
+            "border": "2px dashed #eee",
+            "borderColor": "#aaa",
+            "color": "#EEE",
+            "display": "flex",
+            "height": "400px",
+            "justifyContent": "center",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <p>
+          Example content of the current step
+        </p>
+      </div>
+      <nav
+        className="steppers-nav"
+      >
+        <button
+          aria-label={null}
+          className="steppers-btn-prev btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon icon-primary"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-left"
+            />
+          </svg>
+          Back
+        </button>
+        <ul
+          className="steppers-dots"
+        >
+          <li
+            className="done"
+          />
+          <li
+            className="done"
+          />
+          <li
+            className="done"
+          />
+          <li />
+          <li />
+          <li />
+        </ul>
+        <button
+          aria-label={null}
+          className="steppers-btn-next btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          Next
+          <svg
+            className="icon icon-primary"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-right"
+            />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark version Progress Bar 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="steppers bg-dark mobile-examples"
+    >
+      <div
+        aria-live="polite"
+        className="steppers-content"
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "#17324d",
+            "border": "2px dashed #eee",
+            "borderColor": "#aaa",
+            "color": "#EEE",
+            "display": "flex",
+            "height": "400px",
+            "justifyContent": "center",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <p>
+          Example content of the current step
+        </p>
+      </div>
+      <nav
+        className="steppers-nav"
+      >
+        <button
+          aria-label={null}
+          className="steppers-btn-prev btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon icon-primary"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-left"
+            />
+          </svg>
+          Back
+        </button>
+        <div
+          className="steppers-progress"
+        >
+          <div
+            className="progress"
+          >
+            <div
+              className="progress-bar-label"
+            >
+              <span
+                className="sr-only"
+              />
+            </div>
+            <div
+              aria-valuemax="100"
+              aria-valuemin="0"
+              aria-valuenow="33"
+              className="progress-bar"
+              role="progressbar"
+              style={
+                Object {
+                  "width": "33%",
+                }
+              }
+            />
+          </div>
+        </div>
+        <button
+          aria-label={null}
+          className="steppers-btn-next btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          Next
+          <svg
+            className="icon icon-primary"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-right"
+            />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark version Save button 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="steppers bg-dark mobile-examples"
+    >
+      <div
+        aria-live="polite"
+        className="steppers-content"
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "#17324d",
+            "border": "2px dashed #eee",
+            "borderColor": "#aaa",
+            "color": "#EEE",
+            "display": "flex",
+            "height": "400px",
+            "justifyContent": "center",
+            "opacity": 0.5,
+          }
+        }
+      >
+        <p>
+          Example content of the current step
+        </p>
+      </div>
+      <nav
+        className="steppers-nav"
+      >
+        <button
+          aria-label={null}
+          className="steppers-btn-prev btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-left"
+            />
+          </svg>
+          Back
+        </button>
+        <button
+          aria-label={null}
+          className="steppers-btn-save btn btn-primary btn-sm"
+          onClick={[Function]}
+        >
+          Save
+        </button>
+        <button
+          aria-label={null}
+          className="stepper-btn-next btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          Next
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-right"
+            />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Confirm Button 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="steppers mobile-examples"
+    >
+      <div
+        aria-live="polite"
+        className="steppers-content"
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "#fafafa",
+            "border": "2px dashed #eee",
+            "color": "#333",
+            "display": "flex",
+            "height": "400px",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <p>
+          Example content of the current step
+        </p>
+      </div>
+      <nav
+        className="steppers-nav"
+      >
+        <button
+          aria-label={null}
+          className="steppers-btn-prev btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-left"
+            />
+          </svg>
+          Back
+        </button>
+        <button
+          aria-label={null}
+          className="steppers-btn-confirm btn btn-primary btn-sm"
+          onClick={[Function]}
+        >
+          Confirm
+        </button>
+      </nav>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Pallini 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="steppers mobile-examples"
+    >
+      <div
+        aria-live="polite"
+        className="steppers-content"
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "#fafafa",
+            "border": "2px dashed #eee",
+            "color": "#333",
+            "display": "flex",
+            "height": "400px",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <p>
+          Example content of the current step
+        </p>
+      </div>
+      <nav
+        className="steppers-nav"
+      >
+        <button
+          aria-label={null}
+          className="steppers-btn-prev btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon icon-primary"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-left"
+            />
+          </svg>
+          Back
+        </button>
+        <ul
+          className="steppers-dots"
+        >
+          <li
+            className="done"
+          />
+          <li
+            className="done"
+          />
+          <li
+            className="done"
+          />
+          <li />
+          <li />
+          <li />
+        </ul>
+        <button
+          aria-label={null}
+          className="steppers-btn-next btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          Next
+          <svg
+            className="icon icon-primary"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-right"
+            />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Progress bar 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="steppers mobile-examples"
+    >
+      <div
+        aria-live="polite"
+        className="steppers-content"
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "#fafafa",
+            "border": "2px dashed #eee",
+            "color": "#333",
+            "display": "flex",
+            "height": "400px",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <p>
+          Example content of the current step
+        </p>
+      </div>
+      <nav
+        className="steppers-nav"
+      >
+        <button
+          aria-label={null}
+          className="steppers-btn-prev btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon icon-primary"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-left"
+            />
+          </svg>
+          Back
+        </button>
+        <div
+          className="steppers-progress"
+        >
+          <div
+            className="progress"
+          >
+            <div
+              className="progress-bar-label"
+            >
+              <span
+                className="sr-only"
+              />
+            </div>
+            <div
+              aria-valuemax="100"
+              aria-valuemin="0"
+              aria-valuenow="33"
+              className="progress-bar"
+              role="progressbar"
+              style={
+                Object {
+                  "width": "33%",
+                }
+              }
+            />
+          </div>
+        </div>
+        <button
+          aria-label={null}
+          className="steppers-btn-next btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          Next
+          <svg
+            className="icon icon-primary"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-right"
+            />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Save Button 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="steppers mobile-examples"
+    >
+      <div
+        aria-live="polite"
+        className="steppers-content"
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "#fafafa",
+            "border": "2px dashed #eee",
+            "color": "#333",
+            "display": "flex",
+            "height": "400px",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <p>
+          Example content of the current step
+        </p>
+      </div>
+      <nav
+        className="steppers-nav"
+      >
+        <button
+          aria-label={null}
+          className="steppers-btn-prev btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-left"
+            />
+          </svg>
+          Back
+        </button>
+        <button
+          aria-label={null}
+          className="steppers-btn-save btn btn-primary btn-sm"
+          onClick={[Function]}
+        >
+          Save
+        </button>
+        <button
+          aria-label={null}
+          className="stepper-btn-next btn btn-outline-primary btn-sm"
+          onClick={[Function]}
+        >
+          Next
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="sprite.svg#it-chevron-right"
+            />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;

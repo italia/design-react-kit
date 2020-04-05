@@ -825,12 +825,14 @@ exports[`Storyshots Componenti/LinkList.Con controlli Con checkbox 1`] = `
             className="active list-item"
           >
             <div
-              className="form-check-group   form-check"
+              className="form-check-group form-check"
             >
               <input
                 className="form-control"
                 defaultChecked={true}
                 id="checkbox1"
+                onBlur={[Function]}
+                onFocus={[Function]}
                 type="checkbox"
               />
               <label
@@ -847,11 +849,13 @@ exports[`Storyshots Componenti/LinkList.Con controlli Con checkbox 1`] = `
             className="active list-item"
           >
             <div
-              className="form-check-group   form-check"
+              className="form-check-group form-check"
             >
               <input
                 className="form-control"
                 id="checkbox2"
+                onBlur={[Function]}
+                onFocus={[Function]}
                 type="checkbox"
               />
               <label
@@ -869,12 +873,14 @@ exports[`Storyshots Componenti/LinkList.Con controlli Con checkbox 1`] = `
             onClick={[Function]}
           >
             <div
-              className="form-check-group   form-check"
+              className="form-check-group form-check"
             >
               <input
                 className="form-control"
                 disabled={true}
                 id="checkbox3"
+                onBlur={[Function]}
+                onFocus={[Function]}
                 type="checkbox"
               />
               <label

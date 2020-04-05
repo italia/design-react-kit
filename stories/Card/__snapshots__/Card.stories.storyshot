@@ -263,7 +263,7 @@ exports[`Storyshots Componenti/Cards Card with icon 1`] = `
               className="card-body"
             >
               <div
-                className="categoryicon-top"
+                className="category-top categoryicon-top"
               >
                 <svg
                   className="icon"
@@ -750,6 +750,125 @@ exports[`Storyshots Componenti/Cards Simple Article 1`] = `
 </div>
 `;
 
+exports[`Storyshots Componenti/Cards Simple Article with Icon 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-12 col-lg-6"
+      >
+        <div
+          className="card-wrapper"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="card-body"
+            >
+              <div
+                className="category-top categoryicon-top"
+              >
+                <svg
+                  className="icon"
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-calendar"
+                  />
+                </svg>
+                <span
+                  className="text"
+                >
+                  Category
+                </span>
+                <span
+                  className="data"
+                >
+                  10/12/2018
+                </span>
+              </div>
+              <h5
+                className="big-heading card-title"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+              </h5>
+              <p
+                className="card-text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <span
+                className="card-signature"
+              >
+                di Federico De Paolis
+              </span>
+              <a
+                className="read-more"
+              >
+                <span
+                  className="text"
+                >
+                  Leggi di più
+                </span>
+                <svg
+                  className="icon"
+                >
+                  <use
+                    xlinkHref="sprite.svg#it-arrow-right"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
 exports[`Storyshots Componenti/Cards Simple Card 1`] = `
 <div
   style={
@@ -785,11 +904,11 @@ exports[`Storyshots Componenti/Cards Simple Card 1`] = `
             <div
               className="card-body"
             >
-              <div
+              <h5
                 className="card-title"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-              </div>
+              </h5>
               <p
                 className="card-text"
               >
@@ -862,11 +981,11 @@ exports[`Storyshots Componenti/Cards Simple Card in multiple columns 1`] = `
             <div
               className="card-body"
             >
-              <div
+              <h5
                 className="card-title"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-              </div>
+              </h5>
               <p
                 className="card-text"
               >
@@ -888,11 +1007,11 @@ exports[`Storyshots Componenti/Cards Simple Card in multiple columns 1`] = `
             <div
               className="card-body"
             >
-              <div
+              <h5
                 className="card-title"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-              </div>
+              </h5>
               <p
                 className="card-text"
               >
@@ -914,11 +1033,11 @@ exports[`Storyshots Componenti/Cards Simple Card in multiple columns 1`] = `
             <div
               className="card-body"
             >
-              <div
+              <h5
                 className="card-title"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-              </div>
+              </h5>
               <p
                 className="card-text"
               >

@@ -28,11 +28,13 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Checkbox e radio 1`] = `
           Checkbox
         </legend>
         <div
-          className="   form-check"
+          className="form-check"
         >
           <input
             className="form-control"
             id="checkbox1"
+            onBlur={[Function]}
+            onFocus={[Function]}
             type="checkbox"
           />
           <label
@@ -48,13 +50,15 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Checkbox e radio 1`] = `
           Radio
         </legend>
         <div
-          className="   form-check"
+          className="form-check"
         >
           <input
             className="form-control"
             defaultChecked={true}
             id="radio1"
             name="gruppo1"
+            onBlur={[Function]}
+            onFocus={[Function]}
             type="radio"
           />
           <label
@@ -65,12 +69,14 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Checkbox e radio 1`] = `
           </label>
         </div>
         <div
-          className="   form-check"
+          className="form-check"
         >
           <input
             className="form-control"
             id="radio2"
             name="gruppo1"
+            onBlur={[Function]}
+            onFocus={[Function]}
             type="radio"
           />
           <label
@@ -138,12 +144,14 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Disabilitato 1`] = `
           className="m-3"
         >
           <div
-            className="   form-check"
+            className="form-check"
           >
             <input
               className="form-control"
               disabled={true}
               id="checkbox1"
+              onBlur={[Function]}
+              onFocus={[Function]}
               type="checkbox"
             />
             <label
@@ -154,13 +162,15 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Disabilitato 1`] = `
             </label>
           </div>
           <div
-            className="   form-check"
+            className="form-check"
           >
             <input
               className="form-control"
               defaultChecked={true}
               disabled={true}
               id="checkbox2"
+              onBlur={[Function]}
+              onFocus={[Function]}
               type="checkbox"
             />
             <label
@@ -180,7 +190,7 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Disabilitato 1`] = `
           className="m-3"
         >
           <div
-            className="   form-check"
+            className="form-check"
           >
             <input
               className="form-control"
@@ -188,6 +198,8 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Disabilitato 1`] = `
               disabled={true}
               id="radio1"
               name="gruppo1"
+              onBlur={[Function]}
+              onFocus={[Function]}
               type="radio"
             />
             <label
@@ -198,13 +210,15 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Disabilitato 1`] = `
             </label>
           </div>
           <div
-            className="   form-check"
+            className="form-check"
           >
             <input
               className="form-control"
               disabled={true}
               id="radio2"
               name="gruppo1"
+              onBlur={[Function]}
+              onFocus={[Function]}
               type="radio"
             />
             <label
@@ -279,12 +293,14 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Gruppi 1`] = `
               className=""
             >
               <div
-                className="form-check-group   form-check"
+                className="form-check-group form-check"
               >
                 <input
                   className="form-control"
                   defaultChecked={true}
                   id="checkbox1"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   type="checkbox"
                 />
                 <label
@@ -295,11 +311,13 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Gruppi 1`] = `
                 </label>
               </div>
               <div
-                className="form-check-group   form-check"
+                className="form-check-group form-check"
               >
                 <input
                   className="form-control"
                   id="checkbox2"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   type="checkbox"
                 />
                 <label
@@ -310,12 +328,14 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Gruppi 1`] = `
                 </label>
               </div>
               <div
-                className="form-check-group   form-check"
+                className="form-check-group form-check"
               >
                 <input
                   className="form-control"
                   disabled={true}
                   id="checkbox3"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   type="checkbox"
                 />
                 <label
@@ -342,12 +362,14 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Gruppi 1`] = `
               className=""
             >
               <div
-                className="form-check-group   form-check"
+                className="form-check-group form-check"
               >
                 <input
                   className="form-control"
                   defaultChecked={true}
                   id="checkbox4"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   type="checkbox"
                 />
                 <label
@@ -363,11 +385,13 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Gruppi 1`] = `
                 </small>
               </div>
               <div
-                className="form-check-group   form-check"
+                className="form-check-group form-check"
               >
                 <input
                   className="form-control"
                   id="checkbox5"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   type="checkbox"
                 />
                 <label
@@ -383,12 +407,14 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Gruppi 1`] = `
                 </small>
               </div>
               <div
-                className="form-check-group   form-check"
+                className="form-check-group form-check"
               >
                 <input
                   className="form-control"
                   disabled={true}
                   id="checkbox6"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   type="checkbox"
                 />
                 <label
@@ -421,13 +447,15 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Gruppi 1`] = `
               className=""
             >
               <div
-                className="form-check-group   form-check"
+                className="form-check-group form-check"
               >
                 <input
                   className="form-control"
                   defaultChecked={true}
                   id="radio1"
                   name="group1"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   type="radio"
                 />
                 <label
@@ -438,12 +466,14 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Gruppi 1`] = `
                 </label>
               </div>
               <div
-                className="form-check-group   form-check"
+                className="form-check-group form-check"
               >
                 <input
                   className="form-control"
                   id="radio2"
                   name="group1"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   type="radio"
                 />
                 <label
@@ -454,13 +484,15 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Gruppi 1`] = `
                 </label>
               </div>
               <div
-                className="form-check-group   form-check"
+                className="form-check-group form-check"
               >
                 <input
                   className="form-control"
                   disabled={true}
                   id="radio3"
                   name="group1"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   type="radio"
                 />
                 <label
@@ -487,13 +519,15 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Gruppi 1`] = `
               className=""
             >
               <div
-                className="form-check-group   form-check"
+                className="form-check-group form-check"
               >
                 <input
                   className="form-control"
                   defaultChecked={true}
                   id="radio4"
                   name="group2"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   type="radio"
                 />
                 <label
@@ -509,12 +543,14 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Gruppi 1`] = `
                 </small>
               </div>
               <div
-                className="form-check-group   form-check"
+                className="form-check-group form-check"
               >
                 <input
                   className="form-control"
                   id="radio5"
                   name="group2"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   type="radio"
                 />
                 <label
@@ -530,13 +566,15 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Gruppi 1`] = `
                 </small>
               </div>
               <div
-                className="form-check-group   form-check"
+                className="form-check-group form-check"
               >
                 <input
                   className="form-control"
                   disabled={true}
                   id="radio6"
                   name="group2"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
                   type="radio"
                 />
                 <label
@@ -612,11 +650,13 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Inline 1`] = `
           className="m-3"
         >
           <div
-            className="   form-check form-check-inline"
+            className="form-check form-check-inline"
           >
             <input
               className="form-control"
               id="checkbox1"
+              onBlur={[Function]}
+              onFocus={[Function]}
               type="checkbox"
             />
             <label
@@ -627,12 +667,14 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Inline 1`] = `
             </label>
           </div>
           <div
-            className="   form-check form-check-inline"
+            className="form-check form-check-inline"
           >
             <input
               className="form-control"
               defaultChecked={true}
               id="checkbox2"
+              onBlur={[Function]}
+              onFocus={[Function]}
               type="checkbox"
             />
             <label
@@ -652,13 +694,15 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Inline 1`] = `
           className="m-3"
         >
           <div
-            className="   form-check form-check-inline"
+            className="form-check form-check-inline"
           >
             <input
               className="form-control"
               defaultChecked={true}
               id="radio1"
               name="gruppo1"
+              onBlur={[Function]}
+              onFocus={[Function]}
               type="radio"
             />
             <label
@@ -669,12 +713,14 @@ exports[`Storyshots Componenti/Form.Checkbox and radio Inline 1`] = `
             </label>
           </div>
           <div
-            className="   form-check form-check-inline"
+            className="form-check form-check-inline"
           >
             <input
               className="form-control"
               id="radio2"
               name="gruppo1"
+              onBlur={[Function]}
+              onFocus={[Function]}
               type="radio"
             />
             <label
@@ -751,7 +797,7 @@ exports[`Storyshots Componenti/Form.Form Validation Example 1`] = `
           Valid Input
         </label>
         <small
-          className="valid-feedback"
+          className="valid-feedback form-text text-muted"
         />
       </div>
       <div
@@ -770,7 +816,7 @@ exports[`Storyshots Componenti/Form.Form Validation Example 1`] = `
           Invalid Input
         </label>
         <small
-          className="invalid-feedback"
+          className="invalid-feedback form-text text-muted"
         />
       </div>
       <div
@@ -790,7 +836,7 @@ exports[`Storyshots Componenti/Form.Form Validation Example 1`] = `
           First name
         </label>
         <small
-          className="valid-feedback"
+          className="valid-feedback form-text text-muted"
         >
           Validated!
         </small>
@@ -811,7 +857,7 @@ exports[`Storyshots Componenti/Form.Form Validation Example 1`] = `
           Username
         </label>
         <small
-          className="invalid-feedback"
+          className="invalid-feedback form-text text-muted"
         >
           Please choose a username.
         </small>
@@ -1011,7 +1057,7 @@ exports[`Storyshots Componenti/Form.Input Disabilitato 1`] = `
         Contenuto disabilitato
       </label>
       <small
-        className="form-text text-muted"
+        className=""
       />
     </div>
   </div>
@@ -1079,7 +1125,7 @@ exports[`Storyshots Componenti/Form.Input Esempi di campi di input 1`] = `
           Campo di tipo testuale
         </label>
         <small
-          className="form-text text-muted"
+          className=""
         />
       </div>
       <div
@@ -1099,7 +1145,7 @@ exports[`Storyshots Componenti/Form.Input Esempi di campi di input 1`] = `
           Campo di tipo email
         </label>
         <small
-          className="form-text text-muted"
+          className=""
         />
       </div>
       <div
@@ -1119,7 +1165,7 @@ exports[`Storyshots Componenti/Form.Input Esempi di campi di input 1`] = `
           Campo di tipo numerico
         </label>
         <small
-          className="form-text text-muted"
+          className=""
         />
       </div>
       <div
@@ -1139,7 +1185,7 @@ exports[`Storyshots Componenti/Form.Input Esempi di campi di input 1`] = `
           Campo di tipo telefono
         </label>
         <small
-          className="form-text text-muted"
+          className=""
         />
       </div>
       <div
@@ -1161,7 +1207,7 @@ exports[`Storyshots Componenti/Form.Input Esempi di campi di input 1`] = `
           Campo di tipo ora
         </label>
         <small
-          className="form-text text-muted"
+          className=""
         />
       </div>
     </div>
@@ -1614,7 +1660,7 @@ exports[`Storyshots Componenti/Form.Input Input password 1`] = `
       className="form-group"
     >
       <input
-        className="form-control input-password"
+        className="form-control"
         id="exampleInputPassword"
         onBlur={[Function]}
         onFocus={[Function]}
@@ -1625,11 +1671,11 @@ exports[`Storyshots Componenti/Form.Input Input password 1`] = `
         className="password-icon"
       >
         <svg
-          className="password-icon-visible icon icon-sm"
+          className="icon password-icon-visible icon-sm sm"
           onClick={[Function]}
         >
           <use
-            xlinkHref="/svg/sprite.svg#it-password-visible"
+            xlinkHref="sprite.svg#it-password-visible"
           />
         </svg>
       </span>
@@ -1640,7 +1686,7 @@ exports[`Storyshots Componenti/Form.Input Input password 1`] = `
         Password con label, placeholder e testo di aiuto
       </label>
       <small
-        className="form-text text-muted"
+        className=""
       >
         Inserisci almeno 8 caratteri e una lettera maiuscola
       </small>
@@ -1710,7 +1756,7 @@ exports[`Storyshots Componenti/Form.Input Readonly 1`] = `
         Contenuto in sola lettura
       </label>
       <small
-        className="form-text text-muted"
+        className=""
       />
     </div>
   </div>
@@ -1764,7 +1810,7 @@ exports[`Storyshots Componenti/Form.Input Readonly normalizzato 1`] = `
       className="form-group"
     >
       <input
-        className="form-control-plaintext"
+        className="form-control"
         id="exampleNormalized"
         onBlur={[Function]}
         onFocus={[Function]}
@@ -1778,7 +1824,7 @@ exports[`Storyshots Componenti/Form.Input Readonly normalizzato 1`] = `
         Contenuto in sola lettura
       </label>
       <small
-        className="form-text text-muted"
+        className=""
       />
     </div>
   </div>
@@ -1846,7 +1892,7 @@ exports[`Storyshots Componenti/Form.Input Utilizzo di placeholder e label 1`] = 
           Etichetta di esempio
         </label>
         <small
-          className="form-text text-muted"
+          className=""
         />
       </div>
       <div
@@ -1867,7 +1913,7 @@ exports[`Storyshots Componenti/Form.Input Utilizzo di placeholder e label 1`] = 
           Etichetta di esempio
         </label>
         <small
-          className="form-text text-muted"
+          className=""
         />
       </div>
       <div
@@ -1888,7 +1934,7 @@ exports[`Storyshots Componenti/Form.Input Utilizzo di placeholder e label 1`] = 
           Etichetta di esempio
         </label>
         <small
-          className="form-text text-muted"
+          className=""
         >
           Ulteriore testo informativo
         </small>
@@ -2676,7 +2722,7 @@ exports[`Storyshots Componenti/Form.Toggles Gruppi di Toggles 1`] = `
           className=""
         >
           <div
-            className="form-check-group   form-check"
+            className="form-check-group form-check"
           >
             <div
               className="toggles"
@@ -2697,7 +2743,7 @@ exports[`Storyshots Componenti/Form.Toggles Gruppi di Toggles 1`] = `
             </div>
           </div>
           <div
-            className="form-check-group   form-check"
+            className="form-check-group form-check"
           >
             <div
               className="toggles"
@@ -2717,7 +2763,7 @@ exports[`Storyshots Componenti/Form.Toggles Gruppi di Toggles 1`] = `
             </div>
           </div>
           <div
-            className="form-check-group   form-check"
+            className="form-check-group form-check"
           >
             <div
               className="toggles"
@@ -2749,7 +2795,7 @@ exports[`Storyshots Componenti/Form.Toggles Gruppi di Toggles 1`] = `
           className=""
         >
           <div
-            className="form-check-group   form-check"
+            className="form-check-group form-check"
           >
             <div
               className="toggles"
@@ -2775,7 +2821,7 @@ exports[`Storyshots Componenti/Form.Toggles Gruppi di Toggles 1`] = `
             </small>
           </div>
           <div
-            className="form-check-group   form-check"
+            className="form-check-group form-check"
           >
             <div
               className="toggles"
@@ -2800,7 +2846,7 @@ exports[`Storyshots Componenti/Form.Toggles Gruppi di Toggles 1`] = `
             </small>
           </div>
           <div
-            className="form-check-group   form-check"
+            className="form-check-group form-check"
           >
             <div
               className="toggles"
@@ -2882,7 +2928,7 @@ exports[`Storyshots Componenti/Form.Toggles Toggles 1`] = `
         className="col-sm-6"
       >
         <div
-          className="m-3   form-check"
+          className="m-3 form-check"
         >
           <div
             className="toggles"
@@ -2906,7 +2952,7 @@ exports[`Storyshots Componenti/Form.Toggles Toggles 1`] = `
         className="col-sm-6"
       >
         <div
-          className="m-3   form-check"
+          className="m-3 form-check"
         >
           <div
             className="toggles"
@@ -2984,7 +3030,7 @@ exports[`Storyshots Componenti/Form.Toggles Toggles Disabilitate 1`] = `
         className="col-sm-6"
       >
         <div
-          className="m-3   form-check"
+          className="m-3 form-check"
         >
           <div
             className="toggles"
@@ -3009,7 +3055,7 @@ exports[`Storyshots Componenti/Form.Toggles Toggles Disabilitate 1`] = `
         className="col-sm-6"
       >
         <div
-          className="m-3   form-check"
+          className="m-3 form-check"
         >
           <div
             className="toggles"

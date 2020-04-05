@@ -156,13 +156,23 @@ exports[`Storyshots Componenti/Alert Esempi 1`] = `
   >
     <div>
       <div
+        className="alert alert-info fade"
+        role="alert"
+      >
+        Questo è un alert di tipo 
+        <b>
+          info
+        </b>
+        !
+      </div>
+      <div
         className="alert alert-success fade"
         role="alert"
       >
         Questo è un alert di 
-        <em>
+        <b>
           success
-        </em>
+        </b>
         !
       </div>
       <div
@@ -170,9 +180,9 @@ exports[`Storyshots Componenti/Alert Esempi 1`] = `
         role="alert"
       >
         Questo è un alert di 
-        <em>
+        <b>
           danger
-        </em>
+        </b>
         !
       </div>
       <div
@@ -180,9 +190,9 @@ exports[`Storyshots Componenti/Alert Esempi 1`] = `
         role="alert"
       >
         Questo è un alert di 
-        <em>
+        <b>
           warning
-        </em>
+        </b>
         !
       </div>
     </div>
@@ -234,13 +244,13 @@ exports[`Storyshots Componenti/Alert Esempi Interattivi 1`] = `
     }
   >
     <div
-      className="alert alert-success fade"
+      className="alert alert-info fade"
       role="alert"
     >
       Questo è un alert di 
-      <em>
-        success
-      </em>
+      <b>
+        info
+      </b>
       !
     </div>
   </div>
