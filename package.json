@@ -5,8 +5,10 @@
     "author": "Presidenza del Consiglio dei Ministri",
     "homepage": "https://github.com/italia/design-react-kit#README",
     "license": "BSD-3-Clause",
-    "module": "dist/design-react-kit",
-    "typings": "dist/design-react-kit",
+    "sideEffects": false,
+    "main": "dist/design-react-kit.js",
+    "module": "dist/design-react-kit.es.js",
+    "typings": "dist/design-react-kit.d.ts",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/italia/design-react-kit.git"
