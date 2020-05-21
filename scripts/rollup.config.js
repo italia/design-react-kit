@@ -1,61 +1,72 @@
-import nodeResolve from "rollup-plugin-node-resolve";
-import commonjs from "rollup-plugin-commonjs";
-import babel from "rollup-plugin-babel";
-import minify from 'rollup-plugin-babel-minify';
-import replace from 'rollup-plugin-replace';
+import nodeResolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
+import babel from 'rollup-plugin-babel'
+import minify from 'rollup-plugin-babel-minify'
+import replace from 'rollup-plugin-replace'
 import svg from 'rollup-plugin-svg'
 
-import packageJson from "../package.json";
+import packageJson from '../package.json'
 
-const peerDependencies = Object.keys(packageJson.peerDependencies);
-const dependencies = Object.keys(packageJson.dependencies);
-dependencies.push('react-transition-group/Transition');
+const peerDependencies = Object.keys(packageJson.peerDependencies)
+const dependencies = Object.keys(packageJson.dependencies)
+dependencies.push('react-transition-group/Transition')
+
+function getFullPath(module, ext) {
+  return `dist/${module.name}${ext}`
+}
 
 function globals() {
-    return {
-        react: 'React',
-        'react-dom': 'ReactDOM',
-    };
+  return {
+    react: 'React',
+    'react-dom': 'ReactDOM'
+  }
 }
 
 function baseConfig() {
-    return {
-        input: "src/index.js",
+  return {
+    input: 'src/index.js',
+    plugins: [
+      nodeResolve(),
+      commonjs({
+        include: 'node_modules/**'
+      }),
+      babel({
+        babelrc: false,
+        presets: [
+          [
+            '@babel/env',
+            {
+              loose: true,
+              shippedProposals: true,
+              modules: false
+            }
+          ],
+          '@babel/react'
+        ],
         plugins: [
-            nodeResolve(),
-            commonjs({
-                include: "node_modules/**"
-            }),
-            babel({
-                babelrc: false,
-                presets: [
-                    ["@babel/env", {
-                        loose: true,
-                        shippedProposals: true,
-                        modules: false
-                }], "@babel/react"],
-                plugins: [
-                    "@babel/plugin-proposal-export-default-from",
-                    "@babel/plugin-proposal-export-namespace-from",
-                    "@babel/plugin-proposal-class-properties"
-                ]
-            }),
-            svg({base64:true})
+          '@babel/plugin-proposal-export-default-from',
+          '@babel/plugin-proposal-export-namespace-from',
+          '@babel/plugin-proposal-class-properties'
         ]
-    };
+      }),
+      svg({ base64: true })
+    ]
+  }
 }
 
 function baseUmdConfig(minified) {
-    const config = Object.assign(baseConfig(), {
-        external: peerDependencies,
-    });
-    config.plugins.push(replace({
-        'process.env.NODE_ENV': JSON.stringify('production'),
-    }));
-    if (minified) {
-        config.plugins.push(minify({ comments: false }));
-    }
-    return config;
+  const config = Object.assign(baseConfig(), {
+    external: peerDependencies
+  })
+  config.plugins.push(
+    replace({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    })
+  )
+  if (minified) {
+    config.plugins.push(minify({ comments: false }))
+  }
+  return config
 }
 
 /*
@@ -64,13 +75,23 @@ function baseUmdConfig(minified) {
   Goal of this configuration is to generate bundles to be consumed by bundlers.
   This configuration is not minimized and will import all dependencies.
 */
-const libConfig = baseConfig();
+const libConfig = baseConfig()
 // Do not include any of the dependencies
-libConfig.external = peerDependencies.concat(dependencies);
+libConfig.external = peerDependencies.concat(dependencies)
 libConfig.output = [
-    { sourcemap: true, name: 'DesignReactKit', file: packageJson.module + '.cjs.js', format: 'cjs' },
-    { sourcemap: true, name: 'DesignReactKit', file: packageJson.module + '.es.js', format: 'es' },
-];
+  {
+    sourcemap: true,
+    name: 'DesignReactKit',
+    file: getFullPath(packageJson, '.cjs.js'),
+    format: 'cjs'
+  },
+  {
+    sourcemap: true,
+    name: 'DesignReactKit',
+    file: getFullPath(packageJson, '.es.js'),
+    format: 'es'
+  }
+]
 
 /*
   UMD CONFIG
@@ -90,51 +111,76 @@ libConfig.output = [
   For both versions the peer dependencies are always excluded and must be manually
   included - `react` and `react-dom`.
 */
-const umdFullConfig = baseUmdConfig(false);
+const umdFullConfig = baseUmdConfig(false)
 umdFullConfig.output = [
-    { globals: globals(), sourcemap: true, name: 'DesignReactKit', file: packageJson.module + '.full.js', format: 'umd' },
-];
+  {
+    globals: globals(),
+    sourcemap: true,
+    name: 'DesignReactKit',
+    file: getFullPath(packageJson, '.full.js'),
+    format: 'umd'
+  }
+]
 
 // Validate globals in main UMD config
-const missingGlobals = peerDependencies.filter(dep => !(dep in globals()));
+const missingGlobals = peerDependencies.filter(dep => !(dep in globals()))
 if (missingGlobals.length) {
-    console.error('All peer dependencies need to be mentioned in globals, please update rollup.config.js.');
-    console.error('Missing: ' + missingGlobals.join(', '));
-    console.error('Aborting build.');
-    process.exit(1);
+  console.error(
+    'All peer dependencies need to be mentioned in globals, please update rollup.config.js.'
+  )
+  console.error('Missing: ' + missingGlobals.join(', '))
+  console.error('Aborting build.')
+  process.exit(1)
 }
 
-const umdFullConfigMin = baseUmdConfig(true);
+const umdFullConfigMin = baseUmdConfig(true)
 umdFullConfigMin.output = [
-    { globals: globals(), sourcemap: true, name: 'DesignReactKit', file: packageJson.module + '.full.min.js', format: 'umd' },
-];
+  {
+    globals: globals(),
+    sourcemap: true,
+    name: 'DesignReactKit',
+    file: getFullPath(packageJson, '.full.min.js'),
+    format: 'umd'
+  }
+]
 
-const external = umdFullConfig.external.slice();
-external.push('react-transition-group/Transition');
-external.push('react-popper');
+const external = umdFullConfig.external.slice()
+external.push('react-transition-group/Transition')
+external.push('react-popper')
 
 const allGlobals = Object.assign({}, globals(), {
-    'react-popper': 'ReactPopper',
-    'react-transition-group/Transition': 'ReactTransitionGroup.Transition',
-});
+  'react-popper': 'ReactPopper',
+  'react-transition-group/Transition': 'ReactTransitionGroup.Transition'
+})
 
-const umdConfig = baseUmdConfig(false);
-umdConfig.external = external;
+const umdConfig = baseUmdConfig(false)
+umdConfig.external = external
 umdConfig.output = [
-    { globals: allGlobals, sourcemap: true, name: 'DesignReactKit', file: packageJson.module + '.js', format: 'umd' },
-];
+  {
+    globals: allGlobals,
+    sourcemap: true,
+    name: 'DesignReactKit',
+    file: getFullPath(packageJson, '.js'),
+    format: 'umd'
+  }
+]
 
-const umdConfigMin = baseUmdConfig(true);
-umdConfigMin.external = external;
+const umdConfigMin = baseUmdConfig(true)
+umdConfigMin.external = external
 umdConfigMin.output = [
-    { globals: allGlobals, sourcemap: true, name: 'DesignReactKit', file: packageJson.module + '.min.js', format: 'umd' },
-];
-
+  {
+    globals: allGlobals,
+    sourcemap: true,
+    name: 'DesignReactKit',
+    file: getFullPath(packageJson, '.min.js'),
+    format: 'umd'
+  }
+]
 
 export default [
-    libConfig,
-    umdFullConfig,
-    umdFullConfigMin,
-    umdConfig,
-    umdConfigMin,
-];
+  libConfig,
+  umdFullConfig,
+  umdFullConfigMin,
+  umdConfig,
+  umdConfigMin
+]
