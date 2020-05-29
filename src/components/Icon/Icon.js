@@ -31,7 +31,7 @@ const Icon = ({ color, size, icon, className, padding, ...attributes }) => {
   )
   return (
     <svg className={classes} {...attributes}>
-      <use xlinkHref={`${iconSprite}#${icon}`} />
+      <use href={`${iconSprite}#${icon}`} />
     </svg>
   )
 }
