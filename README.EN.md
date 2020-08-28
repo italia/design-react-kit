@@ -165,7 +165,7 @@ To build the library and add files into the `dist` folder:
 $ yarn build
 ```
 
-## Browserrs support
+## Browsers support
 
 In the Developers Italia documentation, within the Section [6.3.1.2.1. Supporto browser](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/2020.1/doc/user-interface/lo-sviluppo-di-un-interfaccia-e-i-web-kit.html#strumenti), there's a list of supported browsers for this Design Kit.
 The list is here available in the `browserslist` format:
