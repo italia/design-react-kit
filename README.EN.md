@@ -165,6 +165,24 @@ To build the library and add files into the `dist` folder:
 $ yarn build
 ```
 
+## Browserrs support
+
+In the Developers Italia documentation, within the Section [6.3.1.2.1. Supporto browser](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/2020.1/doc/user-interface/lo-sviluppo-di-un-interfaccia-e-i-web-kit.html#strumenti), there's a list of supported browsers for this Design Kit.
+The list is here available in the `browserslist` format:
+```json
+"browserslist": [
+    "defaults",
+    "ie 11",
+    "not ie_mob 11",
+    "not op_mini all",
+    "edge >= 13",
+    "safari 11"
+]
+```
+
+The same list is also available in the `package.json` of this `design-react-kit`.
+It's not possible yet to extends this `browserslist` configuration for [security concerns](https://github.com/browserslist/browserslist#shareable-configs).
+
 ## TypeScript typing definitions 
 
 To generate Typescript typing definitions file:
