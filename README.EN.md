@@ -167,8 +167,9 @@ $ yarn build
 
 ## Browsers support
 
-In the Developers Italia documentation, within the Section [6.3.1.2.1. Supporto browser](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/2020.1/doc/user-interface/lo-sviluppo-di-un-interfaccia-e-i-web-kit.html#strumenti), there's a list of supported browsers for this Design Kit.
+As stated on the Guidelines for Public Services Design, within the Section [6.3.1.2.1. Supporto browser](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/2020.1/doc/user-interface/lo-sviluppo-di-un-interfaccia-e-i-web-kit.html#strumenti), here's a list of supported browsers for this Design Kit.
 The list is here available in the `browserslist` format:
+
 ```json
 "browserslist": [
     "defaults",
@@ -180,8 +181,7 @@ The list is here available in the `browserslist` format:
 ]
 ```
 
-The same list is also available in the `package.json` of this `design-react-kit`.
-It's not possible yet to extends this `browserslist` configuration for [security concerns](https://github.com/browserslist/browserslist#shareable-configs).
+The same list is also available in the `package.json` file. Unfortunately, it's not possible to extend this `browserslist` configuration yet for [security concerns](https://github.com/browserslist/browserslist#shareable-configs).
 
 ## TypeScript typing definitions 
 
