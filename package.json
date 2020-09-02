@@ -113,5 +113,13 @@
         "react-transition-group": "^2.3.1",
         "reactstrap": "^8.0.0",
         "webfontloader": "^1.6.28"
-    }
+    },
+    "browserslist": [
+        "defaults",
+        "ie 11",
+        "not ie_mob 11",
+        "not op_mini all",
+        "edge >= 13",
+        "safari 11"
+    ]
 }
