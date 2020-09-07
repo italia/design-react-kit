@@ -77,14 +77,10 @@ export {
 export { default as Scrollspy } from 'react-scrollspy'
 
 export { default as Accordion } from './components/Accordion/Accordion'
-export {
-  default as AccordionHeader
-} from './components/Accordion/AccordionHeader'
+export { default as AccordionHeader } from './components/Accordion/AccordionHeader'
 export { default as AccordionBody } from './components/Accordion/AccordionBody'
 export { default as AvatarContainer } from './components/Avatar/AvatarContainer'
-export {
-  default as AvatarGroupContainer
-} from './components/Avatar/AvatarGroupContainer'
+export { default as AvatarGroupContainer } from './components/Avatar/AvatarGroupContainer'
 export { default as AvatarExtraText } from './components/Avatar/AvatarExtraText'
 export { default as AvatarIcon } from './components/Avatar/AvatarIcon'
 export { default as AvatarPresence } from './components/Avatar/AvatarPresence'
@@ -104,9 +100,7 @@ export { default as HeaderContent } from './components/Header/HeaderContent'
 export { default as HeaderLinkZone } from './components/Header/HeaderLinkZone'
 export { default as HeaderRightZone } from './components/Header/HeaderRightZone'
 export { default as HeaderSearch } from './components/Header/HeaderSearch'
-export {
-  default as HeaderSocialsZone
-} from './components/Header/HeaderSocialsZone'
+export { default as HeaderSocialsZone } from './components/Header/HeaderSocialsZone'
 export { default as HeaderToggler } from './components/Header/HeaderToggler'
 export { default as Hero } from './components/Hero/Hero'
 export { default as Icon } from './components/Icon/Icon'
@@ -117,12 +111,8 @@ export { default as Nav } from './components/Nav/Nav'
 export { default as Pager } from './components/Pager/Pager'
 export { default as PagerList } from './components/PagerList/PagerList'
 export { default as Rating } from './components/Rating/Rating'
-export {
-  default as PasswordInput
-} from './components/PasswordInput/PasswordInput'
-export {
-  default as PasswordMeter
-} from './components/PasswordMeter/PasswordMeter'
+export { default as PasswordInput } from './components/PasswordInput/PasswordInput'
+export { default as PasswordMeter } from './components/PasswordMeter/PasswordMeter'
 export { default as Skiplink } from './components/Skiplink/Skiplink'
 export { default as SkiplinkItem } from './components/Skiplink/SkiplinkItem'
 export { default as Toggle } from './components/Toggle/Toggle'
@@ -139,12 +129,8 @@ export { default as CardReadMore } from './components/Card/CardReadMore'
 export { default as BottomNav } from './components/BottomNav/BottomNav'
 export { default as BottomNavItem } from './components/BottomNav/BottomNavItem'
 export { default as CookieBar } from './components/CookieBar/CookieBar'
-export {
-  default as CookieBarButtons
-} from './components/CookieBar/CookieBarButtons'
-export {
-  default as CookieBarButton
-} from './components/CookieBar/CookieBarButton'
+export { default as CookieBarButtons } from './components/CookieBar/CookieBarButtons'
+export { default as CookieBarButton } from './components/CookieBar/CookieBarButton'
 export { default as Chip } from './components/Chips/Chip'
 export { default as ChipLabel } from './components/Chips/ChipLabel'
 export { default as FontLoader } from './components/FontLoader/FontLoader'
@@ -153,10 +139,6 @@ export { default as DimmerButtons } from './components/Dimmer/DimmerButtons'
 export { default as Timeline } from './components/Timeline/TimelineWrapper'
 export { default as TimelinePin } from './components/Timeline/TimelinePin'
 export { default as StepperHeader } from './components/Stepper/StepperHeader'
-export {
-  default as StepperContainer
-} from './components/Stepper/StepperContainer'
-export {
-  default as StepperHeaderElement
-} from './components/Stepper/StepperHeaderElement'
+export { default as StepperContainer } from './components/Stepper/StepperContainer'
+export { default as StepperHeaderElement } from './components/Stepper/StepperHeaderElement'
 export { default as Section } from './components/Section/Section'

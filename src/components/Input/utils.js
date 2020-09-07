@@ -65,9 +65,9 @@ export function getClasses(
   const hasPlainCondition = placeholder || label || infoText
   const baseCondition = hasPlainCondition && !normalized && !inputPassword
   const passwordOnlyCondition =
-    inputPassword && (!hasPlainCondition && !normalized)
+    inputPassword && !hasPlainCondition && !normalized
   const normalizedOnlyCondition =
-    normalized && (!hasPlainCondition && !inputPassword)
+    normalized && !hasPlainCondition && !inputPassword
 
   const classes = mapToCssModules(
     classNames(

@@ -10,9 +10,9 @@ aliases:
 
   - &restore_cache
     keys:
-    - v3.0.0-dependencies-v2-{{ checksum "package.json" }}
+    - npm-dependencies-v3-{{ checksum "package.json" }}
     # fallback to using the latest cache if no exact match is found
-    - v3.0.0-dependencies-v2-
+    - npm-dependencies-v3-
 
   - &npm_install
     name: Install Packages
@@ -21,7 +21,7 @@ aliases:
   - &save_cache
     paths:
       - node_modules
-    key: v3.0.0-dependencies-v2-{{ checksum "package.json" }}
+    key: npm-dependencies-v3-{{ checksum "package.json" }}
 
   - &tag_filters
     branches:
