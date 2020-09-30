@@ -123,6 +123,10 @@ workflows:
       - deploy-github-pages:
           requires:
             - build
+          filters:
+            branches:
+              only:
+                - master
 
       - npm-publish:
           requires:
