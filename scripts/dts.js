@@ -1,5 +1,5 @@
 const dtsgen = require('react-to-typescript-definitions')
-const writeFileSync = require('fs').writeFileSync
+const { writeFileSync, existsSync, mkdirSync } = require('fs')
 const path = require('path')
 const glob = require('glob')
 
@@ -31,6 +31,10 @@ const mainModule = [
   }),
   '}'
 ].join('\n')
+
+if (!existsSync('./dist')) {
+  mkdirSync('./dist')
+}
 
 writeFileSync(
   './dist/design-react-kit.d.ts',
