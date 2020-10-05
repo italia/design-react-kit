@@ -145,6 +145,12 @@ workflows:
                   - next
             tags:
               only: /.*/
+              
+      - generate_typings:
+          filters:
+            branches:
+              ignore:
+                  - gh-pages
 
       - deploy-github-pages:
           requires:
