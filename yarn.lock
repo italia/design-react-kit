@@ -3844,27 +3844,27 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap-italia@1.3.9:
-  version "1.3.9"
-  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-1.3.9.tgz#0cb4067fcd273c6f4b0e1fa7b73125df700fa637"
-  integrity sha512-wwdoLigj8xi0UiASvnegRSf1FHMDLpIhkbBKhqpCtejHo+S4FQz8niev/5f7iHP2FgLIG6IB1sCGXcbJlhTG9Q==
+bootstrap-italia@1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-1.4.1.tgz#0652f00a15296e8794952e1b476fdf8d01186753"
+  integrity sha512-kZFXPRm2/f0bcFwKaxTRhY+NAhhfVJm1JSKWN/G8sU8B69UZTEuKzz+Y46iUSjksvH9IR3WcZs1Kz0VX+p/Gig==
   dependencies:
-    bootstrap "4.3.1"
-    bootstrap-select "1.13.10"
-    jquery "^3.4.1"
+    bootstrap "^4.5.0"
+    bootstrap-select "1.13.17"
+    jquery "^3.5.1"
     owl.carousel "2.3.4"
-    popper.js "1.14.7"
+    popper.js "1.16.1"
     svgxuse "1.2.6"
 
-bootstrap-select@1.13.10:
-  version "1.13.10"
-  resolved "https://registry.yarnpkg.com/bootstrap-select/-/bootstrap-select-1.13.10.tgz#b0cf57f8d448bc0488faba04ecaa2f4c5216e144"
-  integrity sha512-mwfyd+VWHY8wDN4je4Y8PPEaOAzDPUz95z5F5zxzlIqebqxtbrujclFWLrhkVOyETpsgZCL1rsfyEnHpAugtGg==
+bootstrap-select@1.13.17:
+  version "1.13.17"
+  resolved "https://registry.yarnpkg.com/bootstrap-select/-/bootstrap-select-1.13.17.tgz#2cc8312fd88bd7900d4eb881f0a7e95e00ad71e9"
+  integrity sha512-LbzSQumoZNYGuoYMpShKIHbJ2qUWFLI0qVHVeKqw5+nfhtMxz+Gre1+IuI3X74bTzQfalBqDKc8fS8tZMdciWg==
 
-bootstrap@4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.3.1.tgz#280ca8f610504d99d7b6b4bfc4b68cec601704ac"
-  integrity sha512-rXqOmH1VilAt2DyPzluTi2blhk17bO7ef+zLLPlWvG494pDxcM234pJ8wTc/6R40UWizAIIMgxjvxZg5kmsbag==
+bootstrap@^4.5.0:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.5.2.tgz#a85c4eda59155f0d71186b6e6ad9b875813779ab"
+  integrity sha512-vlGn0bcySYl/iV+BGA544JkkZP5LB3jsmkeKLFQakCOwCM3AOk7VkldBz4jrzSe+Z0Ezn99NVXa1o45cQY4R6A==
 
 boxen@^4.1.0:
   version "4.2.0"
@@ -8552,7 +8552,7 @@ jest@24.9.0:
     import-local "^2.0.0"
     jest-cli "^24.9.0"
 
-jquery@>=1.8.3, jquery@^3.4.1:
+jquery@>=1.8.3, jquery@^3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
   integrity sha512-XwIBPqcMn57FxfT+Go5pzySnm4KWkT1Tv7gjrpT1srtf8Weynl6R273VJ5GjkRb51IzMp5nbaPjJXMWeju2MKg==
@@ -10377,12 +10377,7 @@ polished@^3.3.1:
   dependencies:
     "@babel/runtime" "^7.9.2"
 
-popper.js@1.14.7:
-  version "1.14.7"
-  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.7.tgz#e31ec06cfac6a97a53280c3e55e4e0c860e7738e"
-  integrity sha512-4q1hNvoUre/8srWsH7hnoSJ5xVmIL4qgz+s4qf2TnJIMyZFUFMGH+9vE7mXynAlHSZ/NdTmmow86muD0myUkVQ==
-
-popper.js@^1.14.4, popper.js@^1.14.7:
+popper.js@1.16.1, popper.js@^1.14.4, popper.js@^1.14.7:
   version "1.16.1"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
   integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
