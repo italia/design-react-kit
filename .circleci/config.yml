@@ -67,7 +67,7 @@ jobs:
           root: *working_directory
           paths:
             - dist
-            
+
   generate_typings:
     <<: *defaults
 
@@ -93,7 +93,6 @@ jobs:
         paths:
           - dist      
 
-            
   deploy-github-pages:
     <<: *defaults
 
@@ -145,7 +144,7 @@ workflows:
                   - next
             tags:
               only: /.*/
-              
+
       - generate_typings:
           filters:
             branches:
