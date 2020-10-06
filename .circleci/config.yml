@@ -89,9 +89,9 @@ jobs:
       # from working_directory. This is a directory on the container which is
       # taken to be the root directory of the workspace.
       - persist_to_workspace:
-        root: *working_directory
-        paths:
-          - dist      
+          root: *working_directory
+          paths:
+            - dist      
 
   deploy-github-pages:
     <<: *defaults
