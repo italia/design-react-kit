@@ -105,12 +105,20 @@ jobs:
       - save_cache: *save_cache
 
       - run:
-          name: Build a Gatsby site with this toolkit
+          name: Change Permissions
+          command: sudo chown -R $(whoami) /usr/local
+      - run:
+          name: Link the toolkit
+          command: npm link
+      - run:
+          name: Bootstrap a Gatsby instance
           command: |
-            npm link
             cd ..
             npx gatsby new testing-ssr https://github.com/italia/design-italia-gatsby-starterkit
             cd testing-ssr
+      - run:
+          name: Link the toolkit and build
+          command: |
             npm link "design-react-kit"
             yarn build
 
