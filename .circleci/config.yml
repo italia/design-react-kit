@@ -112,7 +112,7 @@ jobs:
             npx gatsby new testing-ssr https://github.com/italia/design-italia-gatsby-starterkit
             cd testing-ssr
             yarn
-            yarn link
+            yarn link "design-react-kit"
             yarn build
 
   deploy-github-pages:
