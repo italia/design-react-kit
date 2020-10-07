@@ -107,11 +107,11 @@ jobs:
       - run:
           name: Build a Gatsby site with this toolkit
           command: |
-            yarn link
+            npm link
             cd ..
             npx gatsby new testing-ssr https://github.com/italia/design-italia-gatsby-starterkit
             cd testing-ssr
-            yarn link "design-react-kit"
+            npm link "design-react-kit"
             yarn build
 
   deploy-github-pages:
