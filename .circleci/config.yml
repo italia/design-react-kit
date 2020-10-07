@@ -111,7 +111,6 @@ jobs:
             cd ..
             npx gatsby new testing-ssr https://github.com/italia/design-italia-gatsby-starterkit
             cd testing-ssr
-            yarn
             yarn link "design-react-kit"
             yarn build
 
