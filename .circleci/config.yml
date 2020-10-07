@@ -117,10 +117,11 @@ jobs:
             npx gatsby new testing-ssr https://github.com/italia/design-italia-gatsby-starterkit
             cd testing-ssr
       - run:
-          name: Link the toolkit and build
-          command: |
-            npm link "design-react-kit"
-            yarn build
+          name: Binding the toolkit with the Gatsby instance
+          command: npm link "design-react-kit"
+      - run:
+          name: Build a static site
+          command: yarn build
 
   deploy-github-pages:
     <<: *defaults
