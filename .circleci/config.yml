@@ -106,7 +106,10 @@ jobs:
 
       - run:
           name: Change Permissions
-          command: sudo chown -R $(whoami) /usr/local
+          name: Bind global package folder to local user
+          command: |
+              mkdir ~/.npm-packages
+              npm config set prefix ~/.npm-packages
       - run:
           name: Link the toolkit
           command: npm link
