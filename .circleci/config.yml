@@ -118,6 +118,7 @@ jobs:
             cd ..
             npx gatsby new testing-ssr https://github.com/italia/design-italia-gatsby-starterkit
             cd testing-ssr
+            pwd
       - run:
           name: Binding the toolkit with the Gatsby instance
           command: npm link "design-react-kit"
