@@ -105,7 +105,6 @@ jobs:
       - save_cache: *save_cache
 
       - run:
-          name: Change Permissions
           name: Bind global package folder to local user
           command: |
               mkdir ~/.npm-packages
