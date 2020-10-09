@@ -111,14 +111,14 @@ jobs:
               npm config set prefix ~/.npm-packages
       - run:
           name: Link the toolkit
-          command: npm link
+          command: yarn link
       - run:
           name: Bootstrap a Gatsby instance
           command: |
             cd ..
             npx gatsby new testing-ssr https://github.com/italia/design-italia-gatsby-starterkit
             cd testing-ssr
-            npm link "design-react-kit"
+            yarn link "design-react-kit"
             yarn build
 
   deploy-github-pages:
