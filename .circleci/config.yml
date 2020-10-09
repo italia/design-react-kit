@@ -119,13 +119,10 @@ jobs:
       - run:
           name: Bootstrap a Gatsby instance
           command: |
-            ls dist
             cd ..
             npx gatsby new testing-ssr https://github.com/italia/design-italia-gatsby-starterkit
             cd testing-ssr
             yarn link "design-react-kit"
-            cat node_modules/design-react-kit/package.json
-            ls node_modules/design-react-kit/dist
             yarn build
 
   deploy-github-pages:
