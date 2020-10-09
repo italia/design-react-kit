@@ -115,6 +115,7 @@ jobs:
       - run:
           name: Bootstrap a Gatsby instance
           command: |
+            ls dist
             cd ..
             npx gatsby new testing-ssr https://github.com/italia/design-italia-gatsby-starterkit
             cd testing-ssr
