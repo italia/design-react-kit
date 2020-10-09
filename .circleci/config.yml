@@ -91,7 +91,39 @@ jobs:
       - persist_to_workspace:
           root: *working_directory
           paths:
-            - dist      
+            - dist
+            
+  check-gatsby-ssr:
+    <<: *defaults
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache: *restore_cache
+      - run: *npm_install
+      - save_cache: *save_cache
+
+      - attach_workspace:
+          # Must be absolute path or relative path from working_directory
+          at: .
+
+      - run:
+          name: Bind global package folder to local user
+          command: |
+              mkdir ~/.npm-packages
+              npm config set prefix ~/.npm-packages
+      - run:
+          name: Link the toolkit
+          command: yarn link
+      - run:
+          name: Bootstrap a Gatsby instance
+          command: |
+            cd ..
+            npx gatsby new testing-ssr https://github.com/italia/design-italia-gatsby-starterkit
+            cd testing-ssr
+            yarn link "design-react-kit"
+            yarn build
 
   deploy-github-pages:
     <<: *defaults
@@ -150,6 +182,14 @@ workflows:
             branches:
               ignore:
                   - gh-pages
+
+      - check-gatsby-ssr:
+          requires:
+            - build
+          filters:
+            branches:
+              ignore:
+                - gh-pages
 
       - deploy-github-pages:
           requires:
