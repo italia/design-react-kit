@@ -99,10 +99,9 @@ jobs:
     steps:
       - checkout
 
-      # Download and cache dependencies
-      - restore_cache: *restore_cache
-      - run: *npm_install
-      - save_cache: *save_cache
+      - attach_workspace:
+        # Must be absolute path or relative path from working_directory
+        at: .
 
       - run:
           name: Bind global package folder to local user
