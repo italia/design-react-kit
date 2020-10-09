@@ -160,20 +160,6 @@ jobs:
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
             npm publish
 
-  npm-publish-test:
-    <<: *defaults
-
-    steps:
-      - checkout
-
-      - attach_workspace:
-          # Must be absolute path or relative path from working_directory
-          at: .
-
-      - run:
-          name: npm pack types check
-          command: npm pack --dry-run 2>&1 | grep d.ts
-
 # Workflows enable multiple jobs in parallel
 workflows:
   version: 2
@@ -192,10 +178,14 @@ workflows:
               only: /.*/
 
       - generate_typings:
+          # Note: The generate_typings job must also have a filters tags section, as it
+          # is a transient dependency of the deploy job.
           filters:
             branches:
               ignore:
                   - gh-pages
+            tags:
+              only: /.*/
 
       - check-gatsby-ssr:
           requires:
@@ -212,11 +202,6 @@ workflows:
             branches:
               only:
                 - master
-
-      - npm-publish-test:
-          requires:
-            - build
-            - generate_typings
 
       - npm-publish:
           requires:
