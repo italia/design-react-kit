@@ -100,8 +100,8 @@ jobs:
       - checkout
 
       - attach_workspace:
-        # Must be absolute path or relative path from working_directory
-        at: .
+          # Must be absolute path or relative path from working_directory
+          at: .
 
       - run:
           name: Bind global package folder to local user
