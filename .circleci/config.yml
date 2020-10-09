@@ -178,10 +178,14 @@ workflows:
               only: /.*/
 
       - generate_typings:
+          # Note: The generate_typings job must also have a filters tags section, as it
+          # is a transient dependency of the deploy job.
           filters:
             branches:
               ignore:
                   - gh-pages
+            tags:
+              only: /.*/
 
       - check-gatsby-ssr:
           requires:
