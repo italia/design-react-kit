@@ -7,8 +7,12 @@ import resizer from 'bootstrap-italia/dist/assets/resizer-3x2.svg'
 const propTypes = {
   active: PropTypes.bool,
   targetUrl: PropTypes.string,
-  imageUrl: PropTypes.string,
+  imageUrl: PropTypes.string.isRequired,
   actionDescription: PropTypes.string,
+}
+
+const defaultProps = {
+  active: false,
 }
 
 class ThumbNavItem extends React.Component {
@@ -27,5 +31,6 @@ class ThumbNavItem extends React.Component {
 }
 
 ThumbNavItem.propTypes = propTypes
+ThumbNavItem.defaultProps = defaultProps
 
 export default ThumbNavItem

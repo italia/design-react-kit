@@ -12,6 +12,13 @@ const propTypes = {
   rowItems: PropTypes.oneOf([2, 3, 4, 5]),
 }
 
+const defaultProps = {
+  fixedWidth: false,
+  isSmall: false,
+  isVertical: false,
+  noZoomOnHover: false,
+}
+
 class ThumbNav extends React.Component {
   render() {
     const classes = classNames('thumb-nav',
@@ -46,5 +53,6 @@ class ThumbNav extends React.Component {
 }
 
 ThumbNav.propTypes = propTypes
+ThumbNav.defaultProps = defaultProps
 
 export default ThumbNav
