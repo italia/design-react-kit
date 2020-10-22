@@ -8,11 +8,11 @@ const propTypes = {
   active: PropTypes.bool,
   targetUrl: PropTypes.string,
   imageUrl: PropTypes.string.isRequired,
-  actionDescription: PropTypes.string,
+  actionDescription: PropTypes.string
 }
 
 const defaultProps = {
-  active: false,
+  active: false
 }
 
 class ThumbNavItem extends React.Component {
@@ -21,9 +21,9 @@ class ThumbNavItem extends React.Component {
 
     return (
       <li>
-        <img src={resizer} class="thumb-nav-resizer" aria-hidden="true"/>
-        <a href={this.props.targetUrl} class={classes}>
-          <img src={this.props.imageUrl} alt={this.props.actionDescription}/>
+        <img src={resizer} className="thumb-nav-resizer" aria-hidden="true" />
+        <a href={this.props.targetUrl} className={classes}>
+          <img src={this.props.imageUrl} alt={this.props.actionDescription} />
         </a>
       </li>
     )
