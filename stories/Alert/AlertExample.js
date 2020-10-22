@@ -1,25 +1,22 @@
-import React from 'react'
-import { Alert } from '../../src'
+import React, { useState } from 'react'
 
-class AlertExample extends React.Component {
-  state = {
-    visible: true
-  }
+import { Button, Alert } from '../../src'
 
-  onDismiss = () => {
-    this.setState({ visible: false })
-  }
-
-  render() {
-    return (
-      <Alert
-        color="warning"
-        isOpen={this.state.visible}
-        toggle={this.onDismiss}>
+const AlertExample = () => {
+  const [open, toggleAlert] = useState(true)
+  return (
+    <div>
+      <Alert color="warning" isOpen={open} toggle={() => toggleAlert(!open)}>
         <strong>Attenzione</strong> Alcuni campi inseriti sono da controllare.
       </Alert>
-    )
-  }
+
+      {
+        <Button onClick={() => toggleAlert(!open)} disabled={open}>
+          Mostra Alert
+        </Button>
+      }
+    </div>
+  )
 }
 
 export default AlertExample

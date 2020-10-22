@@ -58,7 +58,7 @@ const ContenutoAggiuntivoComponent = () => (
   </Alert>
 )
 
-const ChiusuraControllataComponent = () => <AlertExample />
+const ChiusuraControllataComponent = AlertExample
 
 const EsempiInterattiviComponent = () => {
   const colors = ['info', 'success', 'danger', 'warning']
