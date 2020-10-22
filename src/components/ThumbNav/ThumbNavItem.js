@@ -1,0 +1,31 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
+
+import resizer from 'bootstrap-italia/dist/assets/resizer-3x2.svg'
+
+const propTypes = {
+  active: PropTypes.bool,
+  targetUrl: PropTypes.string,
+  imageUrl: PropTypes.string,
+  actionDescription: PropTypes.string,
+}
+
+class ThumbNavItem extends React.Component {
+  render() {
+    const classes = classNames({ active: this.props.active })
+
+    return (
+      <li>
+        <img src={resizer} class="thumb-nav-resizer" aria-hidden="true"/>
+        <a href={this.props.targetUrl} class={classes}>
+          <img src={this.props.imageUrl} alt={this.props.actionDescription}/>
+        </a>
+      </li>
+    )
+  }
+}
+
+ThumbNavItem.propTypes = propTypes
+
+export default ThumbNavItem
