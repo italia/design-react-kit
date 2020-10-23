@@ -27,20 +27,11 @@ class ThumbNav extends React.Component {
       'thumb-nav-small': this.props.isSmall,
       'thumb-nav-vertical': this.props.isVertical,
       'thumb-nav-nozoom': this.props.noZoomOnHover,
-
-      'thumb-nav-black': this.props.overlayOnHover === 'black',
-      'thumb-nav-primary': this.props.overlayOnHover === 'primary',
-
-      'thumb-nav-top': this.props.position === 'top',
-      'thumb-nav-right': this.props.position === 'right',
-      'thumb-nav-bottom': this.props.position === 'bottom',
-      'thumb-nav-left': this.props.position === 'left',
-
-      'thumb-nav-auto': this.props.rowItems !== undefined,
-      'thumb-nav-auto-2': this.props.rowItems === 2,
-      'thumb-nav-auto-3': this.props.rowItems === 3,
-      'thumb-nav-auto-4': this.props.rowItems === 4,
-      'thumb-nav-auto-5': this.props.rowItems === 5
+      [`thumb-nav-${this.props.overlayOnHover}`]: this.props.overlayOnHover,
+      [`thumb-nav-${this.props.position}`]: this.props.position,
+      'thumb-nav-auto': this.props.rowItems != null,
+      [`thumb-nav-auto-${this.props.rowItems}`]:
+        typeof this.props.rowItems === 'number'
     })
 
     return <ul className={classes}>{this.props.children}</ul>
