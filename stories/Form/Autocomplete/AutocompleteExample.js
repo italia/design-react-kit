@@ -15,6 +15,7 @@ const DropdownIndicator = props => {
 }
 
 const Input = props => {
+  // eslint-disable-next-line react/prop-types
   if (props.isHidden) {
     return <components.Input {...props} />
   }
