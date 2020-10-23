@@ -1,13 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { components } from 'react-select'
 import AsyncSelect from 'react-select/async'
 import './assets/css/autocomplete-styles.css'
-import PropTypes from 'prop-types'
 import { Icon } from '../../../src'
-
-const propTypes = {
-  isHidden: PropTypes.bool
-}
 
 const DropdownIndicator = props => {
   return (
@@ -53,50 +48,46 @@ const multiOptions = [
   { value: '20', label: 'Veneto' }
 ]
 
-const filterOptions = inputValue => {
-  return multiOptions.filter(i =>
-    i.label.toLowerCase().includes(inputValue.toLowerCase())
-  )
-}
+const AutocompleteExample = () => {
+  // "value" is used to show or propagate it externally
+  // eslint-disable-next-line no-unused-vars
+  const [value, setValue] = useState('')
 
-const loadOptions = (inputValue, callback) => {
-  setTimeout(() => {
-    callback(filterOptions(inputValue))
-  }, 1000)
-}
-
-export default class AutocompleteExample extends React.Component {
-  state = { inputValue: '', placeholder: 'Testo da cercare' }
-
-  handleInputChange = newValue => {
+  const handleInputChange = newValue => {
     const inputValue = newValue.replace(/\W/g, '')
-    this.setState({ inputValue })
+    setValue(inputValue)
     return inputValue
   }
 
-  render() {
-    return (
-      <div className="form-group">
-        <AsyncSelect
-          id="autocomplete-regioni"
-          components={{
-            DropdownIndicator,
-            Input,
-            IndicatorSeparator: null
-          }}
-          cacheOptions
-          loadOptions={loadOptions}
-          defaultOptions
-          placeholder={this.state.placeholder}
-          onInputChange={this.handleInputChange}
-          classNamePrefix={'react-autocomplete'}
-        />
-        <label htmlFor="autocomplete-regioni" className="sr-only">
-          Cerca nel sito
-        </label>
-      </div>
-    )
-  }
+  return (
+    <div className="form-group">
+      <AsyncSelect
+        id="autocomplete-regioni"
+        components={{
+          DropdownIndicator,
+          Input,
+          IndicatorSeparator: null
+        }}
+        cacheOptions
+        loadOptions={(inputValue, callback) => {
+          setTimeout(() => {
+            callback(
+              multiOptions.filter(i =>
+                i.label.toLowerCase().includes(inputValue.toLowerCase())
+              )
+            )
+          }, 1000)
+        }}
+        defaultOptions
+        placeholder="Testo da cercare"
+        onInputChange={handleInputChange}
+        classNamePrefix="react-autocomplete"
+      />
+      <label htmlFor="autocomplete-regioni" className="sr-only">
+        Cerca nel sito
+      </label>
+    </div>
+  )
 }
 
-Input.propTypes = propTypes
+export default AutocompleteExample

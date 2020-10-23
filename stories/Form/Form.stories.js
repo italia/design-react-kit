@@ -230,7 +230,7 @@ storiesOf('Componenti/Form.Input', module)
     'Input con icona o bottoni',
     withInfo({
       text: IconButton
-    })(() => <InputIconButtonExample />)
+    })(InputIconButtonExample)
   )
   .add(
     'Input password',
@@ -277,7 +277,7 @@ storiesOf('Componenti/Form.Input', module)
     'Input autocomplete',
     withInfo({
       text: InputAutocomplete
-    })(() => <AutocompleteExample />)
+    })(AutocompleteExample)
   )
   .add(
     'Area di testo',
