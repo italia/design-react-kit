@@ -13,32 +13,32 @@ const EsempioComponent = () => (
     <ThumbNavItem
       targetUrl="#"
       imageUrl="https://picsum.photos/480/320?image=1044"
-      actionDescription="Show image 1"
+      actionDescription="Visualizza immagine 1"
     />
     <ThumbNavItem
       targetUrl="#"
       imageUrl="https://picsum.photos/480/320?image=1050"
-      actionDescription="Show image 2"
+      actionDescription="Visualizza immagine 2"
     />
     <ThumbNavItem
       targetUrl="#"
       imageUrl="https://picsum.photos/480/320?image=1037"
-      actionDescription="Show image 3"
+      actionDescription="Visualizza immagine 3"
     />
     <ThumbNavItem
       targetUrl="#"
       imageUrl="https://picsum.photos/480/320?image=1040"
-      actionDescription="Show image 4"
+      actionDescription="Visualizza immagine 4"
     />
     <ThumbNavItem
       targetUrl="#"
       imageUrl="https://picsum.photos/480/320?image=1055"
-      actionDescription="Show image 5"
+      actionDescription="Visualizza immagine 5"
     />
     <ThumbNavItem
       targetUrl="#"
       imageUrl="https://picsum.photos/480/320?image=1057"
-      actionDescription="Show image 6"
+      actionDescription="Visualizza immagine 6"
     />
   </ThumbNav>
 )
@@ -54,23 +54,23 @@ const OverlayComponent = () => (
       <ThumbNavItem
         targetUrl="#"
         imageUrl="https://picsum.photos/480/320?image=1044"
-        actionDescription="Show image 1"
+        actionDescription="Visualizza immagine 1"
       />
       <ThumbNavItem
         active
         targetUrl="#"
         imageUrl="https://picsum.photos/480/320?image=1050"
-        actionDescription="Show image 2"
+        actionDescription="Visualizza immagine 2"
       />
       <ThumbNavItem
         targetUrl="#"
         imageUrl="https://picsum.photos/480/320?image=1037"
-        actionDescription="Show image 3"
+        actionDescription="Visualizza immagine 3"
       />
       <ThumbNavItem
         targetUrl="#"
         imageUrl="https://picsum.photos/480/320?image=1040"
-        actionDescription="Show image 4"
+        actionDescription="Visualizza immagine 4"
       />
     </ThumbNav>
   </div>

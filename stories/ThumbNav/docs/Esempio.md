@@ -1,4 +1,4 @@
-It consists of a `<ul>` containing as many element as the thumbnails (`<li>` elements) to be displayed.
-It is possible to customize the number of elements per rows and the behavior on hover.
+Il componente crea un elemento `<ul>` contenente tanti elementi `<li>` quante sono le immagini da visualizzare.
+Utilizzando le opzioni messe a disposizione del componente, ne è possibile modificare il comportamento all'hover e la disposizione.
 
-We recommend to read the [official documentation](https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/thumbnav/) to discover the wide range of customization options.
+Si raccomanda di fare riferimento alla [documentazione ufficiale](https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/thumbnav/) per consultare i parametri disponibili.

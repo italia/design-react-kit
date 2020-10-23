@@ -1,6 +1,6 @@
-The `ThumbNav` component can be used as overlay in photo galleries, for instance.
-The father element of the `ThumbNav` component is required to have the class `.position-relative` in order to get the right positioning of the overlay.
+Il componente può anche essere messo in sovrimpressione, ad esempio, a una galleria di foto.
+Per garantire un corretto posizionamento del componente `ThumbNav`, è necessario che il relativo padre abbia la classe `position-relative`.
 
-For further information about this use case, we link the [official documentation](https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/thumbnav/#posizione-in-overlay).
+L'elemento `ThumbNavItem` corrente può essere messo in risalto per mezzo dell'attibuto `active`.
 
-The active elment of the component is highlighted by means of the attribute `active`.
+Tramite le opzioni disponibili, è possibile impostare la posizione del componente e si rimanda alla [documentazione ufficiale](https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/thumbnav/#posizione-in-overlay) per maggiori informazioni.
