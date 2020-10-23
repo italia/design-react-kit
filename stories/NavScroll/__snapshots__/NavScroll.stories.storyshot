@@ -50,7 +50,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-expand"
+                  href="sprite.svg#it-expand"
                 />
               </svg>
             </a>
@@ -111,7 +111,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-expand"
+                  href="sprite.svg#it-expand"
                 />
               </svg>
             </a>
@@ -172,7 +172,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-expand"
+                  href="sprite.svg#it-expand"
                 />
               </svg>
             </a>
@@ -228,7 +228,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -328,7 +328,7 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
             }
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-left"
+              href="sprite.svg#it-chevron-left"
             />
           </svg>
           <span>
@@ -547,7 +547,7 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -647,7 +647,7 @@ exports[`Storyshots Componenti/NavScroll Posizionamento in testa alla pagina con
             }
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-left"
+              href="sprite.svg#it-chevron-left"
             />
           </svg>
           <span>
@@ -866,7 +866,7 @@ exports[`Storyshots Componenti/NavScroll Posizionamento in testa alla pagina con
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

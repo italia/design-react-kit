@@ -42,7 +42,7 @@ exports[`Storyshots Componenti/Dimmer Colore Primario 1`] = `
                 className="icon"
               >
                 <use
-                  xlinkHref="sprite.svg#it-unlocked"
+                  href="sprite.svg#it-unlocked"
                 />
               </svg>
             </div>
@@ -148,7 +148,7 @@ exports[`Storyshots Componenti/Dimmer Colore Primario 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -204,7 +204,7 @@ exports[`Storyshots Componenti/Dimmer Dimmer con Azioni 1`] = `
                 className="icon"
               >
                 <use
-                  xlinkHref="sprite.svg#it-unlocked"
+                  href="sprite.svg#it-unlocked"
                 />
               </svg>
             </div>
@@ -302,7 +302,7 @@ exports[`Storyshots Componenti/Dimmer Dimmer con Azioni 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -358,7 +358,7 @@ exports[`Storyshots Componenti/Dimmer Dimmer con Azioni Colore Primario 1`] = `
                 className="icon"
               >
                 <use
-                  xlinkHref="sprite.svg#it-unlocked"
+                  href="sprite.svg#it-unlocked"
                 />
               </svg>
             </div>
@@ -449,7 +449,7 @@ exports[`Storyshots Componenti/Dimmer Dimmer con Azioni Colore Primario 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -505,7 +505,7 @@ exports[`Storyshots Componenti/Dimmer Esempi 1`] = `
                 className="icon"
               >
                 <use
-                  xlinkHref="sprite.svg#it-unlocked"
+                  href="sprite.svg#it-unlocked"
                 />
               </svg>
             </div>
@@ -611,7 +611,7 @@ exports[`Storyshots Componenti/Dimmer Esempi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

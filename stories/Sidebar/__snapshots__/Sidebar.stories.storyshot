@@ -49,13 +49,12 @@ exports[`Storyshots Componenti/Sidebar Annidata 1`] = `
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-expand"
+                    href="sprite.svg#it-expand"
                   />
                 </svg>
               </a>
             </li>
             <div
-              aria-expanded="false"
               className="collapse"
               style={Object {}}
             >
@@ -108,13 +107,12 @@ exports[`Storyshots Componenti/Sidebar Annidata 1`] = `
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-expand"
+                    href="sprite.svg#it-expand"
                   />
                 </svg>
               </a>
             </li>
             <div
-              aria-expanded="false"
               className="collapse"
               style={Object {}}
             >
@@ -167,13 +165,12 @@ exports[`Storyshots Componenti/Sidebar Annidata 1`] = `
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-expand"
+                    href="sprite.svg#it-expand"
                   />
                 </svg>
               </a>
             </li>
             <div
-              aria-expanded="false"
               className="collapse"
               style={Object {}}
             >
@@ -257,7 +254,7 @@ exports[`Storyshots Componenti/Sidebar Annidata 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -407,7 +404,7 @@ exports[`Storyshots Componenti/Sidebar Sidebar versione scura 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -557,7 +554,7 @@ exports[`Storyshots Componenti/Sidebar.Basic Sidebar Basic Sidebar 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -624,7 +621,7 @@ exports[`Storyshots Componenti/Sidebar.Basic Sidebar Con icona 1`] = `
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-chevron-right"
+                    href="sprite.svg#it-chevron-right"
                   />
                 </svg>
                 <span>
@@ -647,7 +644,7 @@ exports[`Storyshots Componenti/Sidebar.Basic Sidebar Con icona 1`] = `
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-chevron-right"
+                    href="sprite.svg#it-chevron-right"
                   />
                 </svg>
                 <span>
@@ -669,7 +666,7 @@ exports[`Storyshots Componenti/Sidebar.Basic Sidebar Con icona 1`] = `
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-chevron-right"
+                    href="sprite.svg#it-chevron-right"
                   />
                 </svg>
                 <span>
@@ -691,7 +688,7 @@ exports[`Storyshots Componenti/Sidebar.Basic Sidebar Con icona 1`] = `
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-chevron-right"
+                    href="sprite.svg#it-chevron-right"
                   />
                 </svg>
                 <span>
@@ -755,7 +752,7 @@ exports[`Storyshots Componenti/Sidebar.Basic Sidebar Con icona 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -905,7 +902,7 @@ exports[`Storyshots Componenti/Sidebar.Basic Sidebar Con linea a destra 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1055,7 +1052,7 @@ exports[`Storyshots Componenti/Sidebar.Basic Sidebar Con linea a sinistra 1`] = 
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

@@ -31,21 +31,21 @@ exports[`Storyshots Componenti/Icon Allineamenti 1`] = `
         className="icon bg-light align-bottom"
       >
         <use
-          xlinkHref="sprite.svg#it-check-circle"
+          href="sprite.svg#it-check-circle"
         />
       </svg>
       <svg
         className="icon bg-light align-middle"
       >
         <use
-          xlinkHref="sprite.svg#it-check-circle"
+          href="sprite.svg#it-check-circle"
         />
       </svg>
       <svg
         className="icon bg-light align-top"
       >
         <use
-          xlinkHref="sprite.svg#it-check-circle"
+          href="sprite.svg#it-check-circle"
         />
       </svg>
     </div>
@@ -62,7 +62,7 @@ exports[`Storyshots Componenti/Icon Allineamenti 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -100,7 +100,7 @@ exports[`Storyshots Componenti/Icon Esempio interattivo 1`] = `
       className="icon"
     >
       <use
-        xlinkHref="sprite.svg#it-tool"
+        href="sprite.svg#it-tool"
       />
     </svg>
   </div>
@@ -116,7 +116,7 @@ exports[`Storyshots Componenti/Icon Esempio interattivo 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -160,7 +160,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-arrow-down"
+            href="sprite.svg#it-arrow-down"
           />
         </svg>
          
@@ -173,7 +173,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-arrow-down-circle"
+            href="sprite.svg#it-arrow-down-circle"
           />
         </svg>
          
@@ -186,7 +186,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-arrow-down-triangle"
+            href="sprite.svg#it-arrow-down-triangle"
           />
         </svg>
          
@@ -199,7 +199,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-arrow-left"
+            href="sprite.svg#it-arrow-left"
           />
         </svg>
          
@@ -212,7 +212,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-arrow-left-circle"
+            href="sprite.svg#it-arrow-left-circle"
           />
         </svg>
          
@@ -225,7 +225,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-arrow-left-triangle"
+            href="sprite.svg#it-arrow-left-triangle"
           />
         </svg>
          
@@ -238,7 +238,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-arrow-right"
+            href="sprite.svg#it-arrow-right"
           />
         </svg>
          
@@ -251,7 +251,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-arrow-right-circle"
+            href="sprite.svg#it-arrow-right-circle"
           />
         </svg>
          
@@ -264,7 +264,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-arrow-right-triangle"
+            href="sprite.svg#it-arrow-right-triangle"
           />
         </svg>
          
@@ -277,7 +277,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-arrow-up"
+            href="sprite.svg#it-arrow-up"
           />
         </svg>
          
@@ -290,7 +290,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-arrow-up-circle"
+            href="sprite.svg#it-arrow-up-circle"
           />
         </svg>
          
@@ -303,7 +303,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-arrow-up-triangle"
+            href="sprite.svg#it-arrow-up-triangle"
           />
         </svg>
          
@@ -316,7 +316,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-behance"
+            href="sprite.svg#it-behance"
           />
         </svg>
          
@@ -329,7 +329,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-burger"
+            href="sprite.svg#it-burger"
           />
         </svg>
          
@@ -342,7 +342,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-calendar"
+            href="sprite.svg#it-calendar"
           />
         </svg>
          
@@ -355,7 +355,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-camera"
+            href="sprite.svg#it-camera"
           />
         </svg>
          
@@ -368,7 +368,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-card"
+            href="sprite.svg#it-card"
           />
         </svg>
          
@@ -381,7 +381,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-check"
+            href="sprite.svg#it-check"
           />
         </svg>
          
@@ -394,7 +394,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-check-circle"
+            href="sprite.svg#it-check-circle"
           />
         </svg>
          
@@ -407,7 +407,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-chevron-left"
+            href="sprite.svg#it-chevron-left"
           />
         </svg>
          
@@ -420,7 +420,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-chevron-right"
+            href="sprite.svg#it-chevron-right"
           />
         </svg>
          
@@ -433,7 +433,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-clip"
+            href="sprite.svg#it-clip"
           />
         </svg>
          
@@ -446,7 +446,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-clock"
+            href="sprite.svg#it-clock"
           />
         </svg>
          
@@ -459,7 +459,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-close"
+            href="sprite.svg#it-close"
           />
         </svg>
          
@@ -472,7 +472,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-close-big"
+            href="sprite.svg#it-close-big"
           />
         </svg>
          
@@ -485,7 +485,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-close-circle"
+            href="sprite.svg#it-close-circle"
           />
         </svg>
          
@@ -498,7 +498,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-code-circle"
+            href="sprite.svg#it-code-circle"
           />
         </svg>
          
@@ -511,7 +511,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-collapse"
+            href="sprite.svg#it-collapse"
           />
         </svg>
          
@@ -524,7 +524,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-comment"
+            href="sprite.svg#it-comment"
           />
         </svg>
          
@@ -537,7 +537,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-copy"
+            href="sprite.svg#it-copy"
           />
         </svg>
          
@@ -550,7 +550,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-designers-italia"
+            href="sprite.svg#it-designers-italia"
           />
         </svg>
          
@@ -563,7 +563,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-download"
+            href="sprite.svg#it-download"
           />
         </svg>
          
@@ -576,7 +576,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-error"
+            href="sprite.svg#it-error"
           />
         </svg>
          
@@ -589,7 +589,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-exchange-circle"
+            href="sprite.svg#it-exchange-circle"
           />
         </svg>
          
@@ -602,7 +602,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-expand"
+            href="sprite.svg#it-expand"
           />
         </svg>
          
@@ -615,7 +615,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-external-link"
+            href="sprite.svg#it-external-link"
           />
         </svg>
          
@@ -628,7 +628,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-facebook"
+            href="sprite.svg#it-facebook"
           />
         </svg>
          
@@ -641,7 +641,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-facebook-square"
+            href="sprite.svg#it-facebook-square"
           />
         </svg>
          
@@ -654,7 +654,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-file"
+            href="sprite.svg#it-file"
           />
         </svg>
          
@@ -667,7 +667,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-files"
+            href="sprite.svg#it-files"
           />
         </svg>
          
@@ -680,7 +680,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-flickr"
+            href="sprite.svg#it-flickr"
           />
         </svg>
          
@@ -693,7 +693,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-flickr-square"
+            href="sprite.svg#it-flickr-square"
           />
         </svg>
          
@@ -706,7 +706,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-folder"
+            href="sprite.svg#it-folder"
           />
         </svg>
          
@@ -719,7 +719,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-github"
+            href="sprite.svg#it-github"
           />
         </svg>
          
@@ -732,7 +732,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-hearing"
+            href="sprite.svg#it-hearing"
           />
         </svg>
          
@@ -745,7 +745,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-help"
+            href="sprite.svg#it-help"
           />
         </svg>
          
@@ -758,7 +758,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-help-circle"
+            href="sprite.svg#it-help-circle"
           />
         </svg>
          
@@ -771,7 +771,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-horn"
+            href="sprite.svg#it-horn"
           />
         </svg>
          
@@ -784,7 +784,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-info-circle"
+            href="sprite.svg#it-info-circle"
           />
         </svg>
          
@@ -797,7 +797,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-instagram"
+            href="sprite.svg#it-instagram"
           />
         </svg>
          
@@ -810,7 +810,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-key"
+            href="sprite.svg#it-key"
           />
         </svg>
          
@@ -823,7 +823,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-less-circle"
+            href="sprite.svg#it-less-circle"
           />
         </svg>
          
@@ -836,7 +836,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-link"
+            href="sprite.svg#it-link"
           />
         </svg>
          
@@ -849,7 +849,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-linkedin"
+            href="sprite.svg#it-linkedin"
           />
         </svg>
          
@@ -862,7 +862,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-linkedin-square"
+            href="sprite.svg#it-linkedin-square"
           />
         </svg>
          
@@ -875,7 +875,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-list"
+            href="sprite.svg#it-list"
           />
         </svg>
          
@@ -888,7 +888,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-lock"
+            href="sprite.svg#it-lock"
           />
         </svg>
          
@@ -901,7 +901,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-locked"
+            href="sprite.svg#it-locked"
           />
         </svg>
          
@@ -914,7 +914,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-mail"
+            href="sprite.svg#it-mail"
           />
         </svg>
          
@@ -927,7 +927,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-medium"
+            href="sprite.svg#it-medium"
           />
         </svg>
          
@@ -940,7 +940,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-medium-square"
+            href="sprite.svg#it-medium-square"
           />
         </svg>
          
@@ -953,7 +953,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-minus"
+            href="sprite.svg#it-minus"
           />
         </svg>
          
@@ -966,7 +966,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-minus-circle"
+            href="sprite.svg#it-minus-circle"
           />
         </svg>
          
@@ -979,7 +979,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-more-actions"
+            href="sprite.svg#it-more-actions"
           />
         </svg>
          
@@ -992,7 +992,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-more-items"
+            href="sprite.svg#it-more-items"
           />
         </svg>
          
@@ -1005,7 +1005,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-note"
+            href="sprite.svg#it-note"
           />
         </svg>
          
@@ -1018,7 +1018,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-pa"
+            href="sprite.svg#it-pa"
           />
         </svg>
          
@@ -1031,7 +1031,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-password-invisible"
+            href="sprite.svg#it-password-invisible"
           />
         </svg>
          
@@ -1044,7 +1044,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-password-visible"
+            href="sprite.svg#it-password-visible"
           />
         </svg>
          
@@ -1057,7 +1057,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-pencil"
+            href="sprite.svg#it-pencil"
           />
         </svg>
          
@@ -1070,7 +1070,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-pin"
+            href="sprite.svg#it-pin"
           />
         </svg>
          
@@ -1083,7 +1083,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-plus"
+            href="sprite.svg#it-plus"
           />
         </svg>
          
@@ -1096,7 +1096,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-plus-circle"
+            href="sprite.svg#it-plus-circle"
           />
         </svg>
          
@@ -1109,7 +1109,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-presentation"
+            href="sprite.svg#it-presentation"
           />
         </svg>
          
@@ -1122,7 +1122,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-print"
+            href="sprite.svg#it-print"
           />
         </svg>
          
@@ -1135,7 +1135,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-search"
+            href="sprite.svg#it-search"
           />
         </svg>
          
@@ -1148,7 +1148,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-settings"
+            href="sprite.svg#it-settings"
           />
         </svg>
          
@@ -1161,7 +1161,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-share"
+            href="sprite.svg#it-share"
           />
         </svg>
          
@@ -1174,7 +1174,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-star-full"
+            href="sprite.svg#it-star-full"
           />
         </svg>
          
@@ -1187,7 +1187,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-star-outline"
+            href="sprite.svg#it-star-outline"
           />
         </svg>
          
@@ -1200,7 +1200,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-team-digitale"
+            href="sprite.svg#it-team-digitale"
           />
         </svg>
          
@@ -1213,7 +1213,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-telephone"
+            href="sprite.svg#it-telephone"
           />
         </svg>
          
@@ -1226,7 +1226,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-tool"
+            href="sprite.svg#it-tool"
           />
         </svg>
          
@@ -1239,7 +1239,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-twitter"
+            href="sprite.svg#it-twitter"
           />
         </svg>
          
@@ -1252,7 +1252,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-twitter-square"
+            href="sprite.svg#it-twitter-square"
           />
         </svg>
          
@@ -1265,7 +1265,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-unlocked"
+            href="sprite.svg#it-unlocked"
           />
         </svg>
          
@@ -1278,7 +1278,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-upload"
+            href="sprite.svg#it-upload"
           />
         </svg>
          
@@ -1291,7 +1291,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-user"
+            href="sprite.svg#it-user"
           />
         </svg>
          
@@ -1304,7 +1304,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-video"
+            href="sprite.svg#it-video"
           />
         </svg>
          
@@ -1317,7 +1317,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-warning"
+            href="sprite.svg#it-warning"
           />
         </svg>
          
@@ -1330,7 +1330,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-warning-circle"
+            href="sprite.svg#it-warning-circle"
           />
         </svg>
          
@@ -1343,7 +1343,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-whatsapp"
+            href="sprite.svg#it-whatsapp"
           />
         </svg>
          
@@ -1356,7 +1356,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-whatsapp-square"
+            href="sprite.svg#it-whatsapp-square"
           />
         </svg>
          
@@ -1369,7 +1369,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-youtube"
+            href="sprite.svg#it-youtube"
           />
         </svg>
          
@@ -1382,7 +1382,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-zoom-in"
+            href="sprite.svg#it-zoom-in"
           />
         </svg>
          
@@ -1395,7 +1395,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-zoom-out"
+            href="sprite.svg#it-zoom-out"
           />
         </svg>
          
@@ -1415,7 +1415,7 @@ exports[`Storyshots Componenti/Icon Lista icone 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

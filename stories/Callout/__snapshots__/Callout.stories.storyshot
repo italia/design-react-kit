@@ -57,7 +57,7 @@ exports[`Storyshots Componenti/Callout Callout Highlights 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -118,7 +118,7 @@ exports[`Storyshots Componenti/Callout Esempio 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -167,7 +167,7 @@ exports[`Storyshots Componenti/Callout Esempio accessibilità 1`] = `
           }
         >
           <use
-            xlinkHref="sprite.svg#it-check-circle"
+            href="sprite.svg#it-check-circle"
           />
         </svg>
         <span
@@ -196,7 +196,7 @@ exports[`Storyshots Componenti/Callout Esempio accessibilità 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -245,7 +245,7 @@ exports[`Storyshots Componenti/Callout Esempio con icona 1`] = `
           }
         >
           <use
-            xlinkHref="sprite.svg#it-info-circle"
+            href="sprite.svg#it-info-circle"
           />
         </svg>
         Titolo Callout
@@ -269,7 +269,7 @@ exports[`Storyshots Componenti/Callout Esempio con icona 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -318,7 +318,7 @@ exports[`Storyshots Componenti/Callout Nota 1`] = `
           }
         >
           <use
-            xlinkHref="sprite.svg#it-info-circle"
+            href="sprite.svg#it-info-circle"
           />
         </svg>
         Note a riguardo
@@ -342,7 +342,7 @@ exports[`Storyshots Componenti/Callout Nota 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -391,7 +391,7 @@ exports[`Storyshots Componenti/Callout Procedura avvenuta con successo 1`] = `
           }
         >
           <use
-            xlinkHref="sprite.svg#it-check-circle"
+            href="sprite.svg#it-check-circle"
           />
         </svg>
         Usa
@@ -415,7 +415,7 @@ exports[`Storyshots Componenti/Callout Procedura avvenuta con successo 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -464,7 +464,7 @@ exports[`Storyshots Componenti/Callout Procedura che richiede attenzione 1`] = `
           }
         >
           <use
-            xlinkHref="sprite.svg#it-help-circle"
+            href="sprite.svg#it-help-circle"
           />
         </svg>
         Attenzione
@@ -488,7 +488,7 @@ exports[`Storyshots Componenti/Callout Procedura che richiede attenzione 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -537,7 +537,7 @@ exports[`Storyshots Componenti/Callout Procedura importante 1`] = `
           }
         >
           <use
-            xlinkHref="sprite.svg#it-info-circle"
+            href="sprite.svg#it-info-circle"
           />
         </svg>
         Importante
@@ -561,7 +561,7 @@ exports[`Storyshots Componenti/Callout Procedura importante 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -610,7 +610,7 @@ exports[`Storyshots Componenti/Callout Procedura pericolosa o non consentita 1`]
           }
         >
           <use
-            xlinkHref="sprite.svg#it-close-circle"
+            href="sprite.svg#it-close-circle"
           />
         </svg>
         Non usare
@@ -634,7 +634,7 @@ exports[`Storyshots Componenti/Callout Procedura pericolosa o non consentita 1`]
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

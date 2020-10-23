@@ -105,7 +105,7 @@ exports[`Storyshots Componenti/Tab Allineamento Verticale 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -216,7 +216,7 @@ exports[`Storyshots Componenti/Tab Contenuto 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -363,7 +363,7 @@ exports[`Storyshots Componenti/Tab Esempi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -419,7 +419,7 @@ exports[`Storyshots Componenti/Tab Icone 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-link"
+                  href="sprite.svg#it-link"
                 />
               </svg>
               <i
@@ -447,7 +447,7 @@ exports[`Storyshots Componenti/Tab Icone 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-calendar"
+                  href="sprite.svg#it-calendar"
                 />
               </svg>
               <i
@@ -475,7 +475,7 @@ exports[`Storyshots Componenti/Tab Icone 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-comment"
+                  href="sprite.svg#it-comment"
                 />
               </svg>
               <i
@@ -519,7 +519,7 @@ exports[`Storyshots Componenti/Tab Icone 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -575,7 +575,7 @@ exports[`Storyshots Componenti/Tab Icone e testo 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-link"
+                  href="sprite.svg#it-link"
                 />
               </svg>
               <i
@@ -606,7 +606,7 @@ exports[`Storyshots Componenti/Tab Icone e testo 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-calendar"
+                  href="sprite.svg#it-calendar"
                 />
               </svg>
               <i
@@ -637,7 +637,7 @@ exports[`Storyshots Componenti/Tab Icone e testo 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-comment"
+                  href="sprite.svg#it-comment"
                 />
               </svg>
               <i
@@ -684,7 +684,7 @@ exports[`Storyshots Componenti/Tab Icone e testo 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -803,7 +803,7 @@ exports[`Storyshots Componenti/Tab Tab a bottoni 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

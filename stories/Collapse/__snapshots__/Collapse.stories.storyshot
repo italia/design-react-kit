@@ -103,7 +103,7 @@ exports[`Storyshots Componenti/Collapse Accordion 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -289,7 +289,7 @@ exports[`Storyshots Componenti/Collapse Collapse e Accordion innestati 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -342,7 +342,6 @@ exports[`Storyshots Componenti/Collapse Esempi 1`] = `
         Button with data-target
       </button>
       <div
-        aria-expanded="false"
         className="collapse"
         style={Object {}}
       >
@@ -374,7 +373,7 @@ exports[`Storyshots Componenti/Collapse Esempi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -491,7 +490,7 @@ exports[`Storyshots Componenti/Collapse Gruppi di elementi richiudibili 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

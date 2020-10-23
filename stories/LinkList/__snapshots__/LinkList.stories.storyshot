@@ -68,7 +68,7 @@ exports[`Storyshots Componenti/LinkList Esempi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -232,7 +232,7 @@ exports[`Storyshots Componenti/LinkList Header e Divider 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -338,7 +338,7 @@ exports[`Storyshots Componenti/LinkList Sizing 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -420,7 +420,7 @@ exports[`Storyshots Componenti/LinkList Stato Attivo 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -503,7 +503,7 @@ exports[`Storyshots Componenti/LinkList Stato Disabilitato 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -679,7 +679,7 @@ exports[`Storyshots Componenti/LinkList Titolo lista 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -780,7 +780,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Con avatar 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -907,7 +907,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Con checkbox 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1008,7 +1008,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Con switch 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1065,7 +1065,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Primary Action 1`] = `
               }
             >
               <use
-                xlinkHref="sprite.svg#it-chevron-right"
+                href="sprite.svg#it-chevron-right"
               />
             </svg>
             <span>
@@ -1090,7 +1090,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Primary Action 1`] = `
               }
             >
               <use
-                xlinkHref="sprite.svg#it-chevron-right"
+                href="sprite.svg#it-chevron-right"
               />
             </svg>
             <span>
@@ -1116,7 +1116,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Primary Action 1`] = `
               }
             >
               <use
-                xlinkHref="sprite.svg#it-chevron-right"
+                href="sprite.svg#it-chevron-right"
               />
             </svg>
             <span>
@@ -1139,7 +1139,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Primary Action 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1195,7 +1195,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Primary e Secondary Action
               }
             >
               <use
-                xlinkHref="sprite.svg#it-link"
+                href="sprite.svg#it-link"
               />
             </svg>
             <span>
@@ -1213,7 +1213,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Primary e Secondary Action
               }
             >
               <use
-                xlinkHref="sprite.svg#it-chevron-right"
+                href="sprite.svg#it-chevron-right"
               />
             </svg>
           </a>
@@ -1234,7 +1234,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Primary e Secondary Action
               }
             >
               <use
-                xlinkHref="sprite.svg#it-link"
+                href="sprite.svg#it-link"
               />
             </svg>
             <span>
@@ -1252,7 +1252,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Primary e Secondary Action
               }
             >
               <use
-                xlinkHref="sprite.svg#it-chevron-right"
+                href="sprite.svg#it-chevron-right"
               />
             </svg>
           </a>
@@ -1274,7 +1274,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Primary e Secondary Action
               }
             >
               <use
-                xlinkHref="sprite.svg#it-link"
+                href="sprite.svg#it-link"
               />
             </svg>
             <span>
@@ -1292,7 +1292,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Primary e Secondary Action
               }
             >
               <use
-                xlinkHref="sprite.svg#it-chevron-right"
+                href="sprite.svg#it-chevron-right"
               />
             </svg>
           </a>
@@ -1312,7 +1312,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Primary e Secondary Action
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1371,7 +1371,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Secondary Action 1`] = `
               }
             >
               <use
-                xlinkHref="sprite.svg#it-link"
+                href="sprite.svg#it-link"
               />
             </svg>
           </a>
@@ -1395,7 +1395,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Secondary Action 1`] = `
               }
             >
               <use
-                xlinkHref="sprite.svg#it-link"
+                href="sprite.svg#it-link"
               />
             </svg>
           </a>
@@ -1420,7 +1420,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Secondary Action 1`] = `
               }
             >
               <use
-                xlinkHref="sprite.svg#it-link"
+                href="sprite.svg#it-link"
               />
             </svg>
           </a>
@@ -1440,7 +1440,7 @@ exports[`Storyshots Componenti/LinkList.Con controlli Secondary Action 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1499,7 +1499,7 @@ exports[`Storyshots Componenti/LinkList.Multiline Esempio Multiline 1`] = `
               }
             >
               <use
-                xlinkHref="sprite.svg#it-chevron-right"
+                href="sprite.svg#it-chevron-right"
               />
             </svg>
             <p>
@@ -1531,7 +1531,7 @@ exports[`Storyshots Componenti/LinkList.Multiline Esempio Multiline 1`] = `
               }
             >
               <use
-                xlinkHref="sprite.svg#it-chevron-right"
+                href="sprite.svg#it-chevron-right"
               />
             </svg>
             <p>
@@ -1565,7 +1565,7 @@ exports[`Storyshots Componenti/LinkList.Multiline Esempio Multiline 1`] = `
               }
             >
               <use
-                xlinkHref="sprite.svg#it-chevron-right"
+                href="sprite.svg#it-chevron-right"
               />
             </svg>
             <p>
@@ -1588,7 +1588,7 @@ exports[`Storyshots Componenti/LinkList.Multiline Esempio Multiline 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1648,13 +1648,12 @@ exports[`Storyshots Componenti/LinkList.Nested navigation Collapsible 1`] = `
               }
             >
               <use
-                xlinkHref="sprite.svg#it-expand"
+                href="sprite.svg#it-expand"
               />
             </svg>
           </a>
         </li>
         <div
-          aria-expanded="false"
           className="collapse"
           style={Object {}}
         >
@@ -1710,13 +1709,12 @@ exports[`Storyshots Componenti/LinkList.Nested navigation Collapsible 1`] = `
               }
             >
               <use
-                xlinkHref="sprite.svg#it-expand"
+                href="sprite.svg#it-expand"
               />
             </svg>
           </a>
         </li>
         <div
-          aria-expanded="false"
           className="collapse"
           style={Object {}}
         >
@@ -1772,13 +1770,12 @@ exports[`Storyshots Componenti/LinkList.Nested navigation Collapsible 1`] = `
               }
             >
               <use
-                xlinkHref="sprite.svg#it-expand"
+                href="sprite.svg#it-expand"
               />
             </svg>
           </a>
         </li>
         <div
-          aria-expanded="false"
           className="collapse"
           style={Object {}}
         >
@@ -1829,7 +1826,7 @@ exports[`Storyshots Componenti/LinkList.Nested navigation Collapsible 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1883,7 +1880,7 @@ exports[`Storyshots Componenti/LinkList.Nested navigation Fixed 1`] = `
               className="icon right icon-primary"
             >
               <use
-                xlinkHref="sprite.svg#it-link"
+                href="sprite.svg#it-link"
               />
             </svg>
           </a>
@@ -1902,7 +1899,7 @@ exports[`Storyshots Componenti/LinkList.Nested navigation Fixed 1`] = `
               className="icon right icon-primary"
             >
               <use
-                xlinkHref="sprite.svg#it-link"
+                href="sprite.svg#it-link"
               />
             </svg>
           </a>
@@ -1952,7 +1949,7 @@ exports[`Storyshots Componenti/LinkList.Nested navigation Fixed 1`] = `
               className="icon right icon-primary"
             >
               <use
-                xlinkHref="sprite.svg#it-link"
+                href="sprite.svg#it-link"
               />
             </svg>
           </a>
@@ -1972,7 +1969,7 @@ exports[`Storyshots Componenti/LinkList.Nested navigation Fixed 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
