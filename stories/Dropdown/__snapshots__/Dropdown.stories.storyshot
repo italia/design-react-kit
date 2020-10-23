@@ -82,7 +82,7 @@ exports[`Storyshots Componenti/Dropdown Esempi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -178,7 +178,7 @@ exports[`Storyshots Componenti/Dropdown Link 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -380,7 +380,7 @@ exports[`Storyshots Componenti/Dropdown Variante Bottoni 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -474,7 +474,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menu con voci large 1`] = 
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -547,7 +547,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù dark 1`] = `
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-info-circle"
+                    href="sprite.svg#it-info-circle"
                   />
                 </svg>
               </a>
@@ -568,7 +568,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù dark 1`] = `
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-info-circle"
+                    href="sprite.svg#it-info-circle"
                   />
                 </svg>
               </a>
@@ -589,7 +589,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù dark 1`] = `
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-info-circle"
+                    href="sprite.svg#it-info-circle"
                   />
                 </svg>
               </a>
@@ -615,7 +615,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù dark 1`] = `
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-info-circle"
+                    href="sprite.svg#it-info-circle"
                   />
                 </svg>
               </a>
@@ -637,7 +637,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù dark 1`] = `
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-info-circle"
+                    href="sprite.svg#it-info-circle"
                   />
                 </svg>
               </a>
@@ -659,7 +659,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù dark 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -771,7 +771,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù full width 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -886,7 +886,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù headers e separatori
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -952,7 +952,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a destra 1`] =
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-info-circle"
+                    href="sprite.svg#it-info-circle"
                   />
                 </svg>
               </a>
@@ -973,7 +973,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a destra 1`] =
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-info-circle"
+                    href="sprite.svg#it-info-circle"
                   />
                 </svg>
               </a>
@@ -994,7 +994,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a destra 1`] =
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-info-circle"
+                    href="sprite.svg#it-info-circle"
                   />
                 </svg>
               </a>
@@ -1016,7 +1016,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a destra 1`] =
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1079,7 +1079,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a sinistra 1`]
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-info-circle"
+                    href="sprite.svg#it-info-circle"
                   />
                 </svg>
                 <span>
@@ -1100,7 +1100,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a sinistra 1`]
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-info-circle"
+                    href="sprite.svg#it-info-circle"
                   />
                 </svg>
                 <span>
@@ -1121,7 +1121,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a sinistra 1`]
                   }
                 >
                   <use
-                    xlinkHref="sprite.svg#it-info-circle"
+                    href="sprite.svg#it-info-circle"
                   />
                 </svg>
                 <span>
@@ -1146,7 +1146,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a sinistra 1`]
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1240,7 +1240,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù voci attive 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1335,7 +1335,7 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù voci disabilitate 1`
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

@@ -43,7 +43,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-code-circle"
+                      href="sprite.svg#it-code-circle"
                     />
                   </svg>
                 </div>
@@ -105,7 +105,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-arrow-right"
+                          href="sprite.svg#it-arrow-right"
                         />
                       </svg>
                     </a>
@@ -130,7 +130,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-code-circle"
+                      href="sprite.svg#it-code-circle"
                     />
                   </svg>
                 </div>
@@ -182,7 +182,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-code-circle"
+                      href="sprite.svg#it-code-circle"
                     />
                   </svg>
                 </div>
@@ -244,7 +244,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-arrow-right"
+                          href="sprite.svg#it-arrow-right"
                         />
                       </svg>
                     </a>
@@ -274,7 +274,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-code-circle"
+                      href="sprite.svg#it-code-circle"
                     />
                   </svg>
                 </div>
@@ -326,7 +326,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-code-circle"
+                      href="sprite.svg#it-code-circle"
                     />
                   </svg>
                 </div>
@@ -388,7 +388,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-arrow-right"
+                          href="sprite.svg#it-arrow-right"
                         />
                       </svg>
                     </a>
@@ -413,7 +413,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-code-circle"
+                      href="sprite.svg#it-code-circle"
                     />
                   </svg>
                 </div>
@@ -465,7 +465,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-code-circle"
+                      href="sprite.svg#it-code-circle"
                     />
                   </svg>
                 </div>
@@ -527,7 +527,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-arrow-right"
+                          href="sprite.svg#it-arrow-right"
                         />
                       </svg>
                     </a>
@@ -552,7 +552,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-code-circle"
+                      href="sprite.svg#it-code-circle"
                     />
                   </svg>
                 </div>
@@ -604,7 +604,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

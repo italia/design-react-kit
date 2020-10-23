@@ -40,7 +40,7 @@ exports[`Storyshots Componenti/Notification Default Location 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-check-circle"
+                    href="sprite.svg#it-check-circle"
                   />
                 </svg>
               </h5>
@@ -67,7 +67,7 @@ exports[`Storyshots Componenti/Notification Default Location 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -141,7 +141,7 @@ exports[`Storyshots Componenti/Notification Dismissable 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-check-circle"
+                      href="sprite.svg#it-check-circle"
                     />
                   </svg>
                 </h5>
@@ -156,7 +156,7 @@ exports[`Storyshots Componenti/Notification Dismissable 1`] = `
                 className="icon"
               >
                 <use
-                  xlinkHref="sprite.svg#it-close"
+                  href="sprite.svg#it-close"
                 />
               </svg>
               <span
@@ -201,7 +201,7 @@ exports[`Storyshots Componenti/Notification Dismissable 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-check-circle"
+                      href="sprite.svg#it-check-circle"
                     />
                   </svg>
                 </h5>
@@ -222,7 +222,7 @@ exports[`Storyshots Componenti/Notification Dismissable 1`] = `
                 className="icon"
               >
                 <use
-                  xlinkHref="sprite.svg#it-close"
+                  href="sprite.svg#it-close"
                 />
               </svg>
               <span
@@ -248,7 +248,7 @@ exports[`Storyshots Componenti/Notification Dismissable 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -322,7 +322,7 @@ exports[`Storyshots Componenti/Notification Example 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-check-circle"
+                      href="sprite.svg#it-check-circle"
                     />
                   </svg>
                 </h5>
@@ -364,7 +364,7 @@ exports[`Storyshots Componenti/Notification Example 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-check-circle"
+                      href="sprite.svg#it-check-circle"
                     />
                   </svg>
                 </h5>
@@ -387,7 +387,7 @@ exports[`Storyshots Componenti/Notification Example 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -441,7 +441,7 @@ exports[`Storyshots Componenti/Notification Fixed Positions 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-check-circle"
+                    href="sprite.svg#it-check-circle"
                   />
                 </svg>
               </h5>
@@ -471,7 +471,7 @@ exports[`Storyshots Componenti/Notification Fixed Positions 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-check-circle"
+                    href="sprite.svg#it-check-circle"
                   />
                 </svg>
               </h5>
@@ -496,7 +496,7 @@ exports[`Storyshots Componenti/Notification Fixed Positions 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-check-circle"
+                    href="sprite.svg#it-check-circle"
                   />
                 </svg>
               </h5>
@@ -521,7 +521,7 @@ exports[`Storyshots Componenti/Notification Fixed Positions 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-check-circle"
+                    href="sprite.svg#it-check-circle"
                   />
                 </svg>
               </h5>
@@ -548,7 +548,7 @@ exports[`Storyshots Componenti/Notification Fixed Positions 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -622,7 +622,7 @@ exports[`Storyshots Componenti/Notification Notification with message 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-check-circle"
+                      href="sprite.svg#it-check-circle"
                     />
                   </svg>
                 </h5>
@@ -669,7 +669,7 @@ exports[`Storyshots Componenti/Notification Notification with message 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-check-circle"
+                      href="sprite.svg#it-check-circle"
                     />
                   </svg>
                 </h5>
@@ -698,7 +698,7 @@ exports[`Storyshots Componenti/Notification Notification with message 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -775,7 +775,7 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-check-circle"
+                      href="sprite.svg#it-check-circle"
                     />
                   </svg>
                 </h5>
@@ -832,7 +832,7 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-check-circle"
+                      href="sprite.svg#it-check-circle"
                     />
                   </svg>
                 </h5>
@@ -884,7 +884,7 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-check-circle"
+                      href="sprite.svg#it-check-circle"
                     />
                   </svg>
                 </h5>
@@ -935,7 +935,7 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-check-circle"
+                      href="sprite.svg#it-check-circle"
                     />
                   </svg>
                 </h5>
@@ -980,7 +980,7 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-check-circle"
+                      href="sprite.svg#it-check-circle"
                     />
                   </svg>
                 </h5>
@@ -1003,7 +1003,7 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1075,7 +1075,7 @@ exports[`Storyshots Componenti/Notification States 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-check-circle"
+                      href="sprite.svg#it-check-circle"
                     />
                   </svg>
                 </h5>
@@ -1115,7 +1115,7 @@ exports[`Storyshots Componenti/Notification States 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-close-circle"
+                      href="sprite.svg#it-close-circle"
                     />
                   </svg>
                 </h5>
@@ -1164,7 +1164,7 @@ exports[`Storyshots Componenti/Notification States 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-info-circle"
+                      href="sprite.svg#it-info-circle"
                     />
                   </svg>
                 </h5>
@@ -1209,7 +1209,7 @@ exports[`Storyshots Componenti/Notification States 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-error"
+                      href="sprite.svg#it-error"
                     />
                   </svg>
                 </h5>
@@ -1232,7 +1232,7 @@ exports[`Storyshots Componenti/Notification States 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

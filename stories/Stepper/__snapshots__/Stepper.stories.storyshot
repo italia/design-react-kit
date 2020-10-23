@@ -34,7 +34,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
             className="icon icon steppers-success"
           >
             <use
-              xlinkHref="sprite.svg#it-check"
+              href="sprite.svg#it-check"
             />
           </svg>
         </li>
@@ -64,7 +64,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
             className="icon"
           >
             <use
-              xlinkHref="sprite.svg#it-calendar"
+              href="sprite.svg#it-calendar"
             />
           </svg>
           Label Step 1
@@ -72,7 +72,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
             className="icon icon steppers-success"
           >
             <use
-              xlinkHref="sprite.svg#it-check"
+              href="sprite.svg#it-check"
             />
           </svg>
         </li>
@@ -83,7 +83,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
             className="icon"
           >
             <use
-              xlinkHref="sprite.svg#it-lock"
+              href="sprite.svg#it-lock"
             />
           </svg>
           Label Step 2
@@ -95,7 +95,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
             className="icon"
           >
             <use
-              xlinkHref="sprite.svg#it-settings"
+              href="sprite.svg#it-settings"
             />
           </svg>
           Label Step 3
@@ -119,7 +119,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-check"
+                href="sprite.svg#it-check"
               />
             </svg>
           </span>
@@ -164,7 +164,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -212,7 +212,7 @@ exports[`Storyshots Componenti/Stepper Navigation of the steps 1`] = `
             className="icon icon steppers-success"
           >
             <use
-              xlinkHref="sprite.svg#it-check"
+              href="sprite.svg#it-check"
             />
           </svg>
         </li>
@@ -263,7 +263,7 @@ exports[`Storyshots Componenti/Stepper Navigation of the steps 1`] = `
             className="icon icon-primary"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-left"
+              href="sprite.svg#it-chevron-left"
             />
           </svg>
           Back
@@ -278,7 +278,7 @@ exports[`Storyshots Componenti/Stepper Navigation of the steps 1`] = `
             className="icon icon-primary"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-right"
+              href="sprite.svg#it-chevron-right"
             />
           </svg>
         </button>
@@ -304,7 +304,7 @@ exports[`Storyshots Componenti/Stepper Navigation of the steps 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -354,7 +354,7 @@ exports[`Storyshots Componenti/Stepper Order of the steps 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-check"
+                href="sprite.svg#it-check"
               />
             </svg>
           </span>
@@ -399,7 +399,7 @@ exports[`Storyshots Componenti/Stepper Order of the steps 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -447,7 +447,7 @@ exports[`Storyshots Componenti/Stepper Text Only 1`] = `
             className="icon icon steppers-success"
           >
             <use
-              xlinkHref="sprite.svg#it-check"
+              href="sprite.svg#it-check"
             />
           </svg>
         </li>
@@ -481,7 +481,7 @@ exports[`Storyshots Componenti/Stepper Text Only 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -528,7 +528,7 @@ exports[`Storyshots Componenti/Stepper Text and Icons 1`] = `
             className="icon"
           >
             <use
-              xlinkHref="sprite.svg#it-calendar"
+              href="sprite.svg#it-calendar"
             />
           </svg>
           Label Step 1
@@ -536,7 +536,7 @@ exports[`Storyshots Componenti/Stepper Text and Icons 1`] = `
             className="icon icon steppers-success"
           >
             <use
-              xlinkHref="sprite.svg#it-check"
+              href="sprite.svg#it-check"
             />
           </svg>
         </li>
@@ -547,7 +547,7 @@ exports[`Storyshots Componenti/Stepper Text and Icons 1`] = `
             className="icon"
           >
             <use
-              xlinkHref="sprite.svg#it-lock"
+              href="sprite.svg#it-lock"
             />
           </svg>
           Label Step 2
@@ -559,7 +559,7 @@ exports[`Storyshots Componenti/Stepper Text and Icons 1`] = `
             className="icon"
           >
             <use
-              xlinkHref="sprite.svg#it-settings"
+              href="sprite.svg#it-settings"
             />
           </svg>
           Label Step 3
@@ -584,7 +584,7 @@ exports[`Storyshots Componenti/Stepper Text and Icons 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -632,7 +632,7 @@ exports[`Storyshots Componenti/Stepper Version on a dark background 1`] = `
             className="icon icon steppers-success"
           >
             <use
-              xlinkHref="sprite.svg#it-check"
+              href="sprite.svg#it-check"
             />
           </svg>
         </li>
@@ -685,7 +685,7 @@ exports[`Storyshots Componenti/Stepper Version on a dark background 1`] = `
             className="icon icon-primary"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-left"
+              href="sprite.svg#it-chevron-left"
             />
           </svg>
           Back
@@ -700,7 +700,7 @@ exports[`Storyshots Componenti/Stepper Version on a dark background 1`] = `
             className="icon icon-primary"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-right"
+              href="sprite.svg#it-chevron-right"
             />
           </svg>
         </button>
@@ -726,7 +726,7 @@ exports[`Storyshots Componenti/Stepper Version on a dark background 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -796,7 +796,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark v
             className="icon"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-left"
+              href="sprite.svg#it-chevron-left"
             />
           </svg>
           Back
@@ -823,7 +823,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark v
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -893,7 +893,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark v
             className="icon icon-primary"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-left"
+              href="sprite.svg#it-chevron-left"
             />
           </svg>
           Back
@@ -924,7 +924,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark v
             className="icon icon-primary"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-right"
+              href="sprite.svg#it-chevron-right"
             />
           </svg>
         </button>
@@ -943,7 +943,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark v
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1013,7 +1013,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark v
             className="icon icon-primary"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-left"
+              href="sprite.svg#it-chevron-left"
             />
           </svg>
           Back
@@ -1055,7 +1055,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark v
             className="icon icon-primary"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-right"
+              href="sprite.svg#it-chevron-right"
             />
           </svg>
         </button>
@@ -1074,7 +1074,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark v
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1144,7 +1144,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark v
             className="icon"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-left"
+              href="sprite.svg#it-chevron-left"
             />
           </svg>
           Back
@@ -1166,7 +1166,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark v
             className="icon"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-right"
+              href="sprite.svg#it-chevron-right"
             />
           </svg>
         </button>
@@ -1185,7 +1185,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile - dark v
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1253,7 +1253,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Confirm 
             className="icon"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-left"
+              href="sprite.svg#it-chevron-left"
             />
           </svg>
           Back
@@ -1280,7 +1280,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Confirm 
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1348,7 +1348,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Pallini 
             className="icon icon-primary"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-left"
+              href="sprite.svg#it-chevron-left"
             />
           </svg>
           Back
@@ -1379,7 +1379,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Pallini 
             className="icon icon-primary"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-right"
+              href="sprite.svg#it-chevron-right"
             />
           </svg>
         </button>
@@ -1398,7 +1398,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Pallini 
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1466,7 +1466,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Progress
             className="icon icon-primary"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-left"
+              href="sprite.svg#it-chevron-left"
             />
           </svg>
           Back
@@ -1508,7 +1508,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Progress
             className="icon icon-primary"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-right"
+              href="sprite.svg#it-chevron-right"
             />
           </svg>
         </button>
@@ -1527,7 +1527,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Progress
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1595,7 +1595,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Save But
             className="icon"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-left"
+              href="sprite.svg#it-chevron-left"
             />
           </svg>
           Back
@@ -1617,7 +1617,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Save But
             className="icon"
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-right"
+              href="sprite.svg#it-chevron-right"
             />
           </svg>
         </button>
@@ -1636,7 +1636,7 @@ exports[`Storyshots Componenti/Stepper.Navigation variations for mobile Save But
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

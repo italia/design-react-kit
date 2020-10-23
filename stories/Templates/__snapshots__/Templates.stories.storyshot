@@ -79,7 +79,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                             className="icon"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-expand"
+                              href="sprite.svg#it-expand"
                             />
                           </svg>
                         </a>
@@ -147,7 +147,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                             className="icon icon-primary"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-user"
+                              href="sprite.svg#it-user"
                             />
                           </svg>
                         </span>
@@ -189,7 +189,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                             className="icon"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-code-circle"
+                              href="sprite.svg#it-code-circle"
                             />
                           </svg>
                           <div
@@ -228,7 +228,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                                   className="icon"
                                 >
                                   <use
-                                    xlinkHref="sprite.svg#it-facebook"
+                                    href="sprite.svg#it-facebook"
                                   />
                                 </svg>
                               </a>
@@ -243,7 +243,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                                   className="icon"
                                 >
                                   <use
-                                    xlinkHref="sprite.svg#it-github"
+                                    href="sprite.svg#it-github"
                                   />
                                 </svg>
                               </a>
@@ -258,7 +258,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                                   className="icon"
                                 >
                                   <use
-                                    xlinkHref="sprite.svg#it-twitter"
+                                    href="sprite.svg#it-twitter"
                                   />
                                 </svg>
                               </a>
@@ -281,7 +281,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                               className="icon"
                             >
                               <use
-                                xlinkHref="sprite.svg#it-search"
+                                href="sprite.svg#it-search"
                               />
                             </svg>
                           </a>
@@ -320,12 +320,11 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-burger"
+                            href="sprite.svg#it-burger"
                           />
                         </svg>
                       </button>
                       <div
-                        aria-expanded="false"
                         className="navbar-collapsable collapse navbar-collapse"
                         style={
                           Object {
@@ -575,7 +574,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                     className="icon icon-sm sm"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-search"
+                      href="sprite.svg#it-search"
                     />
                   </svg>
                 </span>
@@ -602,7 +601,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-close"
+                      href="sprite.svg#it-close"
                     />
                   </svg>
                   <span
@@ -622,7 +621,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                     className="icon icon-primary"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-plus"
+                      href="sprite.svg#it-plus"
                     />
                   </svg>
                   <span>
@@ -768,7 +767,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-pa"
+                          href="sprite.svg#it-pa"
                         />
                       </svg>
                       <span>
@@ -804,7 +803,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -832,7 +831,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-user"
+                          href="sprite.svg#it-user"
                         />
                       </svg>
                       <span>
@@ -868,7 +867,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -896,7 +895,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-pa"
+                          href="sprite.svg#it-pa"
                         />
                       </svg>
                       <span>
@@ -932,7 +931,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -960,7 +959,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-pa"
+                          href="sprite.svg#it-pa"
                         />
                       </svg>
                       <span>
@@ -996,7 +995,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -1024,7 +1023,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-user"
+                          href="sprite.svg#it-user"
                         />
                       </svg>
                       <span>
@@ -1060,7 +1059,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -1088,7 +1087,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-pa"
+                          href="sprite.svg#it-pa"
                         />
                       </svg>
                       <span>
@@ -1124,7 +1123,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -1476,7 +1475,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                       className="icon"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-pa"
+                        href="sprite.svg#it-pa"
                       />
                     </svg>
                     <div
@@ -1878,7 +1877,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                       className="icon icon-white"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-mail"
+                        href="sprite.svg#it-mail"
                       />
                     </svg>
                     <span>
@@ -1913,7 +1912,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-designers-italia"
+                          href="sprite.svg#it-designers-italia"
                         />
                       </svg>
                       <span
@@ -1935,7 +1934,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-twitter"
+                          href="sprite.svg#it-twitter"
                         />
                       </svg>
                       <span
@@ -1957,7 +1956,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-medium"
+                          href="sprite.svg#it-medium"
                         />
                       </svg>
                       <span
@@ -1979,7 +1978,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-behance"
+                          href="sprite.svg#it-behance"
                         />
                       </svg>
                       <span
@@ -2066,7 +2065,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -2159,7 +2158,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                             className="icon"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-expand"
+                              href="sprite.svg#it-expand"
                             />
                           </svg>
                         </a>
@@ -2227,7 +2226,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                             className="icon icon-primary"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-user"
+                              href="sprite.svg#it-user"
                             />
                           </svg>
                         </span>
@@ -2269,7 +2268,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                             className="icon"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-code-circle"
+                              href="sprite.svg#it-code-circle"
                             />
                           </svg>
                           <div
@@ -2308,7 +2307,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                                   className="icon"
                                 >
                                   <use
-                                    xlinkHref="sprite.svg#it-facebook"
+                                    href="sprite.svg#it-facebook"
                                   />
                                 </svg>
                               </a>
@@ -2323,7 +2322,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                                   className="icon"
                                 >
                                   <use
-                                    xlinkHref="sprite.svg#it-github"
+                                    href="sprite.svg#it-github"
                                   />
                                 </svg>
                               </a>
@@ -2338,7 +2337,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                                   className="icon"
                                 >
                                   <use
-                                    xlinkHref="sprite.svg#it-twitter"
+                                    href="sprite.svg#it-twitter"
                                   />
                                 </svg>
                               </a>
@@ -2361,7 +2360,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                               className="icon"
                             >
                               <use
-                                xlinkHref="sprite.svg#it-search"
+                                href="sprite.svg#it-search"
                               />
                             </svg>
                           </a>
@@ -2400,12 +2399,11 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-burger"
+                            href="sprite.svg#it-burger"
                           />
                         </svg>
                       </button>
                       <div
-                        aria-expanded="false"
                         className="navbar-collapsable collapse navbar-collapse"
                         style={
                           Object {
@@ -2592,7 +2590,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                       className="icon"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-calendar"
+                        href="sprite.svg#it-calendar"
                       />
                     </svg>
                     <span
@@ -2639,7 +2637,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                       className="icon"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-arrow-right"
+                        href="sprite.svg#it-arrow-right"
                       />
                     </svg>
                   </a>
@@ -2684,7 +2682,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-pa"
+                            href="sprite.svg#it-pa"
                           />
                         </svg>
                         Giunta e consiglio
@@ -2724,7 +2722,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-arrow-right"
+                      href="sprite.svg#it-arrow-right"
                     />
                   </svg>
                 </a>
@@ -2745,7 +2743,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-pa"
+                          href="sprite.svg#it-pa"
                         />
                       </svg>
                       Pagamenti
@@ -2775,7 +2773,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-arrow-right"
+                      href="sprite.svg#it-arrow-right"
                     />
                   </svg>
                 </a>
@@ -2796,7 +2794,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-pa"
+                          href="sprite.svg#it-pa"
                         />
                       </svg>
                       Bandi
@@ -2826,7 +2824,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-arrow-right"
+                      href="sprite.svg#it-arrow-right"
                     />
                   </svg>
                 </a>
@@ -2858,7 +2856,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-pa"
+                    href="sprite.svg#it-pa"
                   />
                 </svg>
                 <span>
@@ -2875,7 +2873,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-calendar"
+                    href="sprite.svg#it-calendar"
                   />
                 </svg>
                 <span>
@@ -2892,7 +2890,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-settings"
+                    href="sprite.svg#it-settings"
                   />
                 </svg>
                 <span>
@@ -3640,7 +3638,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-info-circle"
+                          href="sprite.svg#it-info-circle"
                         />
                       </svg>
                     </a>
@@ -3704,7 +3702,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-arrow-right"
+                      href="sprite.svg#it-arrow-right"
                     />
                   </svg>
                 </a>
@@ -3725,7 +3723,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-clock"
+                          href="sprite.svg#it-clock"
                         />
                       </svg>
                     </a>
@@ -3754,7 +3752,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                             className="icon icon-primary"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-calendar"
+                              href="sprite.svg#it-calendar"
                             />
                           </svg>
                           <span>
@@ -3770,7 +3768,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                             className="icon icon-primary"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-calendar"
+                              href="sprite.svg#it-calendar"
                             />
                           </svg>
                           <span>
@@ -3786,7 +3784,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                             className="icon icon-primary"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-calendar"
+                              href="sprite.svg#it-calendar"
                             />
                           </svg>
                           <span>
@@ -3802,7 +3800,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                             className="icon icon-primary"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-calendar"
+                              href="sprite.svg#it-calendar"
                             />
                           </svg>
                           <span>
@@ -3826,7 +3824,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-arrow-right"
+                      href="sprite.svg#it-arrow-right"
                     />
                   </svg>
                 </a>
@@ -3847,7 +3845,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-camera"
+                          href="sprite.svg#it-camera"
                         />
                       </svg>
                     </a>
@@ -3876,7 +3874,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                             className="icon icon-primary"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-pa"
+                              href="sprite.svg#it-pa"
                             />
                           </svg>
                           <span>
@@ -3892,7 +3890,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                             className="icon icon-primary"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-calendar"
+                              href="sprite.svg#it-calendar"
                             />
                           </svg>
                           <span>
@@ -3908,7 +3906,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                             className="icon icon-primary"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-calendar"
+                              href="sprite.svg#it-calendar"
                             />
                           </svg>
                           <span>
@@ -3932,7 +3930,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-arrow-right"
+                      href="sprite.svg#it-arrow-right"
                     />
                   </svg>
                 </a>
@@ -4196,7 +4194,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                             className="icon icon-icon-sm icon-sm"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-search"
+                              href="sprite.svg#it-search"
                             />
                           </svg>
                         </button>
@@ -4300,7 +4298,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                       className="icon"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-pa"
+                        href="sprite.svg#it-pa"
                       />
                     </svg>
                     <div
@@ -4702,7 +4700,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                       className="icon icon-white"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-mail"
+                        href="sprite.svg#it-mail"
                       />
                     </svg>
                     <span>
@@ -4737,7 +4735,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-designers-italia"
+                          href="sprite.svg#it-designers-italia"
                         />
                       </svg>
                       <span
@@ -4759,7 +4757,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-twitter"
+                          href="sprite.svg#it-twitter"
                         />
                       </svg>
                       <span
@@ -4781,7 +4779,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-medium"
+                          href="sprite.svg#it-medium"
                         />
                       </svg>
                       <span
@@ -4803,7 +4801,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-behance"
+                          href="sprite.svg#it-behance"
                         />
                       </svg>
                       <span
@@ -4890,7 +4888,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -4983,7 +4981,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                             className="icon"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-expand"
+                              href="sprite.svg#it-expand"
                             />
                           </svg>
                         </a>
@@ -5051,7 +5049,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                             className="icon icon-primary"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-user"
+                              href="sprite.svg#it-user"
                             />
                           </svg>
                         </span>
@@ -5093,7 +5091,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                             className="icon"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-code-circle"
+                              href="sprite.svg#it-code-circle"
                             />
                           </svg>
                           <div
@@ -5132,7 +5130,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                                   className="icon"
                                 >
                                   <use
-                                    xlinkHref="sprite.svg#it-facebook"
+                                    href="sprite.svg#it-facebook"
                                   />
                                 </svg>
                               </a>
@@ -5147,7 +5145,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                                   className="icon"
                                 >
                                   <use
-                                    xlinkHref="sprite.svg#it-github"
+                                    href="sprite.svg#it-github"
                                   />
                                 </svg>
                               </a>
@@ -5162,7 +5160,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                                   className="icon"
                                 >
                                   <use
-                                    xlinkHref="sprite.svg#it-twitter"
+                                    href="sprite.svg#it-twitter"
                                   />
                                 </svg>
                               </a>
@@ -5185,7 +5183,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                               className="icon"
                             >
                               <use
-                                xlinkHref="sprite.svg#it-search"
+                                href="sprite.svg#it-search"
                               />
                             </svg>
                           </a>
@@ -5224,12 +5222,11 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-burger"
+                            href="sprite.svg#it-burger"
                           />
                         </svg>
                       </button>
                       <div
-                        aria-expanded="false"
                         className="navbar-collapsable collapse navbar-collapse"
                         style={
                           Object {
@@ -5474,7 +5471,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                     className="icon icon-sm sm"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-search"
+                      href="sprite.svg#it-search"
                     />
                   </svg>
                 </span>
@@ -5501,7 +5498,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-close"
+                      href="sprite.svg#it-close"
                     />
                   </svg>
                   <span
@@ -5521,7 +5518,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                     className="icon icon-primary"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-plus"
+                      href="sprite.svg#it-plus"
                     />
                   </svg>
                   <span>
@@ -5618,13 +5615,12 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                       className="icon right icon-primary"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-more-items"
+                        href="sprite.svg#it-more-items"
                       />
                     </svg>
                   </a>
                 </li>
                 <ul
-                  aria-expanded="false"
                   className="link-sublist px-0 collapse"
                   style={Object {}}
                   toggler="#altri-servizi"
@@ -5753,7 +5749,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-pa"
+                          href="sprite.svg#it-pa"
                         />
                       </svg>
                       <span>
@@ -5789,7 +5785,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -5817,7 +5813,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-user"
+                          href="sprite.svg#it-user"
                         />
                       </svg>
                       <span>
@@ -5853,7 +5849,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -5881,7 +5877,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-pa"
+                          href="sprite.svg#it-pa"
                         />
                       </svg>
                       <span>
@@ -5917,7 +5913,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -5945,7 +5941,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-pa"
+                          href="sprite.svg#it-pa"
                         />
                       </svg>
                       <span>
@@ -5981,7 +5977,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6009,7 +6005,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-user"
+                          href="sprite.svg#it-user"
                         />
                       </svg>
                       <span>
@@ -6045,7 +6041,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6073,7 +6069,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-pa"
+                          href="sprite.svg#it-pa"
                         />
                       </svg>
                       <span>
@@ -6109,7 +6105,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6181,7 +6177,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6226,7 +6222,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6271,7 +6267,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6316,7 +6312,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6361,7 +6357,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6406,7 +6402,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6451,7 +6447,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6496,7 +6492,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6541,7 +6537,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6586,7 +6582,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6631,7 +6627,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6676,7 +6672,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6721,7 +6717,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6766,7 +6762,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6811,7 +6807,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-arrow-right"
+                            href="sprite.svg#it-arrow-right"
                           />
                         </svg>
                       </a>
@@ -6919,7 +6915,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                       className="icon"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-pa"
+                        href="sprite.svg#it-pa"
                       />
                     </svg>
                     <div
@@ -7321,7 +7317,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                       className="icon icon-white"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-mail"
+                        href="sprite.svg#it-mail"
                       />
                     </svg>
                     <span>
@@ -7356,7 +7352,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-designers-italia"
+                          href="sprite.svg#it-designers-italia"
                         />
                       </svg>
                       <span
@@ -7378,7 +7374,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-twitter"
+                          href="sprite.svg#it-twitter"
                         />
                       </svg>
                       <span
@@ -7400,7 +7396,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-medium"
+                          href="sprite.svg#it-medium"
                         />
                       </svg>
                       <span
@@ -7422,7 +7418,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-behance"
+                          href="sprite.svg#it-behance"
                         />
                       </svg>
                       <span
@@ -7509,7 +7505,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

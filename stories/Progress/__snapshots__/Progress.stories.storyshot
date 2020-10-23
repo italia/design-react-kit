@@ -51,7 +51,7 @@ exports[`Storyshots Componenti/Progress Indicators Bottone con Progress Bar 1`] 
               }
             >
               <use
-                xlinkHref="sprite.svg#it-github"
+                href="sprite.svg#it-github"
               />
             </svg>
             <span>
@@ -106,7 +106,7 @@ exports[`Storyshots Componenti/Progress Indicators Bottone con Progress Bar 1`] 
               }
             >
               <use
-                xlinkHref="sprite.svg#it-github"
+                href="sprite.svg#it-github"
               />
             </svg>
             <span>
@@ -151,7 +151,7 @@ exports[`Storyshots Componenti/Progress Indicators Bottone con Progress Bar 1`] 
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -308,7 +308,7 @@ exports[`Storyshots Componenti/Progress Indicators Colori 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -492,7 +492,7 @@ exports[`Storyshots Componenti/Progress Indicators Esempi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -571,7 +571,7 @@ exports[`Storyshots Componenti/Progress Indicators Esempi interattivi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -650,7 +650,7 @@ exports[`Storyshots Componenti/Progress Indicators Etichette 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -721,7 +721,7 @@ exports[`Storyshots Componenti/Progress Indicators Progresso Indeterminato 1`] =
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -856,7 +856,7 @@ exports[`Storyshots Componenti/Progress Indicators.Spinners Spinner 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1015,7 +1015,7 @@ exports[`Storyshots Componenti/Progress Indicators.Spinners Spinner Doppio 1`] =
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
