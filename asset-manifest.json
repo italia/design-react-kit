@@ -1,28 +1,28 @@
 {
   "files": {
     "main.css": "/italia/design-react-kitstatic/css/main.d9746072.chunk.css",
-    "main.js": "/italia/design-react-kitmain.26d756d619b7df5a90d8.bundle.js",
+    "main.js": "/italia/design-react-kitmain.44da2e6fc969c6b6662b.bundle.js",
     "main.css.map": "/italia/design-react-kitstatic/css/main.d9746072.chunk.css.map",
-    "main.js.map": "/italia/design-react-kitmain.26d756d619b7df5a90d8.bundle.js.map",
-    "runtime~main.js": "/italia/design-react-kitruntime~main.26d756d619b7df5a90d8.bundle.js",
-    "runtime~main.js.map": "/italia/design-react-kitruntime~main.26d756d619b7df5a90d8.bundle.js.map",
-    "vendors~main.css": "/italia/design-react-kitstatic/css/vendors~main.5ea50059.chunk.css",
-    "vendors~main.js": "/italia/design-react-kitvendors~main.26d756d619b7df5a90d8.bundle.js",
-    "vendors~main.css.map": "/italia/design-react-kitstatic/css/vendors~main.5ea50059.chunk.css.map",
-    "vendors~main.js.map": "/italia/design-react-kitvendors~main.26d756d619b7df5a90d8.bundle.js.map",
+    "main.js.map": "/italia/design-react-kitmain.44da2e6fc969c6b6662b.bundle.js.map",
+    "runtime~main.js": "/italia/design-react-kitruntime~main.44da2e6fc969c6b6662b.bundle.js",
+    "runtime~main.js.map": "/italia/design-react-kitruntime~main.44da2e6fc969c6b6662b.bundle.js.map",
+    "vendors~main.css": "/italia/design-react-kitstatic/css/vendors~main.70d2301a.chunk.css",
+    "vendors~main.js": "/italia/design-react-kitvendors~main.44da2e6fc969c6b6662b.bundle.js",
+    "vendors~main.css.map": "/italia/design-react-kitstatic/css/vendors~main.70d2301a.chunk.css.map",
+    "vendors~main.js.map": "/italia/design-react-kitvendors~main.44da2e6fc969c6b6662b.bundle.js.map",
     "iframe.html": "/italia/design-react-kitiframe.html",
-    "precache-manifest.8c03cee374ddde30f7080e2e1f7e06e7.js": "/italia/design-react-kitprecache-manifest.8c03cee374ddde30f7080e2e1f7e06e7.js",
+    "precache-manifest.0b078e250448491a8022a17858c0f6bf.js": "/italia/design-react-kitprecache-manifest.0b078e250448491a8022a17858c0f6bf.js",
     "service-worker.js": "/italia/design-react-kitservice-worker.js",
     "static/media/fonts.css": "/italia/design-react-kitstatic/media/TitilliumWeb-SemiBold.eb6768ff.woff2",
     "static/media/resizer-3x2.svg": "/italia/design-react-kitstatic/media/resizer-3x2.1fa84720.svg",
     "static/media/sprite.svg": "/italia/design-react-kitstatic/media/sprite.6a4cf845.svg",
-    "vendors~main.26d756d619b7df5a90d8.bundle.js.LICENSE.txt": "/italia/design-react-kitvendors~main.26d756d619b7df5a90d8.bundle.js.LICENSE.txt"
+    "vendors~main.44da2e6fc969c6b6662b.bundle.js.LICENSE.txt": "/italia/design-react-kitvendors~main.44da2e6fc969c6b6662b.bundle.js.LICENSE.txt"
   },
   "entrypoints": [
-    "runtime~main.26d756d619b7df5a90d8.bundle.js",
-    "static/css/vendors~main.5ea50059.chunk.css",
-    "vendors~main.26d756d619b7df5a90d8.bundle.js",
+    "runtime~main.44da2e6fc969c6b6662b.bundle.js",
+    "static/css/vendors~main.70d2301a.chunk.css",
+    "vendors~main.44da2e6fc969c6b6662b.bundle.js",
     "static/css/main.d9746072.chunk.css",
-    "main.26d756d619b7df5a90d8.bundle.js"
+    "main.44da2e6fc969c6b6662b.bundle.js"
   ]
 }
