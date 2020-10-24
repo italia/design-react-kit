@@ -1,4 +1,3 @@
-import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
@@ -23,7 +22,7 @@ storiesOf('Componenti/Collapse', module)
       text: Esempi,
       propTables: [Collapse],
       propTablesExclude: [CollapseExample]
-    })(() => <CollapseExample />)
+    })(CollapseExample)
   )
   .add(
     'Gruppi di elementi richiudibili',
@@ -31,7 +30,7 @@ storiesOf('Componenti/Collapse', module)
       text: Gruppi,
       propTables: [Accordion, AccordionHeader, AccordionBody],
       propTablesExclude: [CollapseGroupsExample]
-    })(() => <CollapseGroupsExample />)
+    })(CollapseGroupsExample)
   )
   .add(
     'Accordion',
@@ -39,7 +38,7 @@ storiesOf('Componenti/Collapse', module)
       text: AccordionEsempio,
       propTables: [Accordion, AccordionHeader, AccordionBody],
       propTablesExclude: [CollapseAccordionExample]
-    })(() => <CollapseAccordionExample />)
+    })(CollapseAccordionExample)
   )
   .add(
     'Collapse e Accordion innestati',
@@ -47,5 +46,5 @@ storiesOf('Componenti/Collapse', module)
       text: Innestati,
       propTables: [Collapse],
       propTablesExclude: [Accordion, AccordionHeader, AccordionBody]
-    })(() => <CollapseNestedExample />)
+    })(CollapseNestedExample)
   )
