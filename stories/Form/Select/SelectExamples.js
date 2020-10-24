@@ -108,7 +108,7 @@ export const groupedOptions = [
 ]
 
 export const SelectExampleClassic = () => {
-  const [value, setValue] = useState(null)
+  const [, setValue] = useState(null)
 
   const handleChange = selectedOption => setValue(selectedOption)
   return (
@@ -132,7 +132,7 @@ export const SelectExampleClassic = () => {
 }
 
 export const SelectExampleDisabled = () => {
-  const [value, setValue] = useState(null)
+  const [, setValue] = useState(null)
 
   const handleChange = selectedOption => setValue(selectedOption)
   return (
@@ -157,7 +157,7 @@ export const SelectExampleDisabled = () => {
 }
 
 export const SelectExampleReset = () => {
-  const [value, setValue] = useState(null)
+  const [, setValue] = useState(null)
 
   const handleChange = selectedOption => setValue(selectedOption)
   return (
@@ -183,7 +183,7 @@ export const SelectExampleReset = () => {
 }
 
 export const SelectExampleSearch = () => {
-  const [value, setValue] = useState(null)
+  const [, setValue] = useState(null)
 
   const handleChange = selectedOption => setValue(selectedOption)
   return (
@@ -208,7 +208,7 @@ export const SelectExampleSearch = () => {
 }
 
 export const SelectExampleMulti = () => {
-  const [value, setValue] = useState(null)
+  const [, setValue] = useState(null)
 
   const handleChange = selectedOption => setValue(selectedOption)
   return (
@@ -235,7 +235,7 @@ export const SelectExampleMulti = () => {
 }
 
 export const SelectExampleGroups = () => {
-  const [value, setValue] = useState(null)
+  const [, setValue] = useState(null)
 
   const handleChange = selectedOption => setValue(selectedOption)
   return (
@@ -261,7 +261,7 @@ export const SelectExampleGroups = () => {
 }
 
 export const SelectExampleInteractive = () => {
-  const [value, setValue] = useState(null)
+  const [, setValue] = useState(null)
 
   const search = boolean('Abilita ricerca', false)
   const multi = boolean('Abilita valori multipli', false)
