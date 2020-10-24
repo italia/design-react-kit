@@ -1,167 +1,251 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from '../../src'
 
-class ModalExample extends React.Component {
-  state = {
-    modal: false,
-    size: ''
-  }
+export const ModalExampleClassic = () => {
+  const [isOpen, toggleModal] = useState(false)
 
-  toggle = (size = '') => {
-    this.setState({
-      modal: !this.state.modal,
-      size
-    })
-  }
-
-  renderLongBody = () => (
+  return (
     <div>
-      <p>
-        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-        consectetur ac, vestibulum at eros.
-      </p>
-      <p>
-        Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-      </p>
-      <p>
-        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-        magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-        ullamcorper nulla non metus auctor fringilla.
-      </p>
-      <p>
-        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-        consectetur ac, vestibulum at eros.
-      </p>
-      <p>
-        Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-      </p>
-      <p>
-        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-        magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-        ullamcorper nulla non metus auctor fringilla.
-      </p>
-      <p>
-        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-        consectetur ac, vestibulum at eros.
-      </p>
-      <p>
-        Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-      </p>
-      <p>
-        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-        magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-        ullamcorper nulla non metus auctor fringilla.
-      </p>
-      <p>
-        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-        consectetur ac, vestibulum at eros.
-      </p>
-      <p>
-        Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-      </p>
-      <p>
-        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-        magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-        ullamcorper nulla non metus auctor fringilla.
-      </p>
-      <p>
-        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-        consectetur ac, vestibulum at eros.
-      </p>
-      <p>
-        Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-      </p>
-      <p>
-        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-        magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-        ullamcorper nulla non metus auctor fringilla.
-      </p>
-      <p>
-        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-        consectetur ac, vestibulum at eros.
-      </p>
-      <p>
-        Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-      </p>
-      <p>
-        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-        magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-        ullamcorper nulla non metus auctor fringilla.
-      </p>
+      <Button color="primary" onClick={() => toggleModal(!isOpen)}>
+        Lancia la demo della modale
+      </Button>
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)}>
+        <ModalHeader toggle={() => toggleModal(!isOpen)}>
+          Titolo della modale
+        </ModalHeader>
+        <ModalBody>
+          <p>Woohoo, stai leggendo questo testo in una modale!</p>
+        </ModalBody>
+        <ModalFooter>
+          <Button color="secondary" onClick={() => toggleModal(!isOpen)}>
+            Chiudi
+          </Button>
+          <Button color="primary" onClick={() => toggleModal(!isOpen)}>
+            Salva modifiche
+          </Button>
+        </ModalFooter>
+      </Modal>
     </div>
   )
+}
 
-  render() {
-    const { long, centered, fade, sizing } = this.props
+export const ModalExampleLong = () => {
+  const [isOpen, toggleModal] = useState(false)
 
-    return (
-      <div>
-        {sizing ? (
+  return (
+    <div>
+      <Button color="primary" onClick={() => toggleModal(!isOpen)}>
+        Lancia la demo della modale
+      </Button>
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)}>
+        <ModalHeader toggle={() => toggleModal(!isOpen)}>
+          Titolo della modale
+        </ModalHeader>
+        <ModalBody>
           <div>
-            <Button
-              color="primary"
-              onClick={() => this.toggle('lg')}
-              className="mr-3">
-              Modale grande
-            </Button>
-            <Button color="primary" onClick={() => this.toggle('sm')}>
-              Modale piccola
-            </Button>
+            <p>
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+              ac consectetur ac, vestibulum at eros.
+            </p>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur
+              et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+              auctor.
+            </p>
+            <p>
+              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+              cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+              dui. Donec ullamcorper nulla non metus auctor fringilla.
+            </p>
+            <p>
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+              ac consectetur ac, vestibulum at eros.
+            </p>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur
+              et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+              auctor.
+            </p>
+            <p>
+              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+              cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+              dui. Donec ullamcorper nulla non metus auctor fringilla.
+            </p>
+            <p>
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+              ac consectetur ac, vestibulum at eros.
+            </p>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur
+              et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+              auctor.
+            </p>
+            <p>
+              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+              cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+              dui. Donec ullamcorper nulla non metus auctor fringilla.
+            </p>
+            <p>
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+              ac consectetur ac, vestibulum at eros.
+            </p>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur
+              et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+              auctor.
+            </p>
+            <p>
+              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+              cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+              dui. Donec ullamcorper nulla non metus auctor fringilla.
+            </p>
+            <p>
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+              ac consectetur ac, vestibulum at eros.
+            </p>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur
+              et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+              auctor.
+            </p>
+            <p>
+              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+              cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+              dui. Donec ullamcorper nulla non metus auctor fringilla.
+            </p>
+            <p>
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+              ac consectetur ac, vestibulum at eros.
+            </p>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur
+              et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+              auctor.
+            </p>
+            <p>
+              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+              cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+              dui. Donec ullamcorper nulla non metus auctor fringilla.
+            </p>
           </div>
-        ) : (
-          <Button color="primary" onClick={() => this.toggle()}>
-            Lancia la demo della modale
+        </ModalBody>
+        <ModalFooter>
+          <Button color="secondary" onClick={() => toggleModal(!isOpen)}>
+            Chiudi
           </Button>
-        )}
+          <Button color="primary" onClick={() => toggleModal(!isOpen)}>
+            Salva modifiche
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  )
+}
 
-        <Modal
-          fade={fade}
-          size={this.state.size}
-          centered={centered}
-          isOpen={this.state.modal}
-          toggle={this.toggle}
-          className={this.props.className}>
-          <ModalHeader toggle={this.toggle}>Titolo della modale</ModalHeader>
-          <ModalBody>
-            {long ? (
-              this.renderLongBody()
-            ) : (
-              <p>Woohoo, stai leggendo questo testo in una modale!</p>
-            )}
-          </ModalBody>
-          <ModalFooter>
-            <Button color="secondary" onClick={this.toggle}>
-              Chiudi
-            </Button>
-            <Button color="primary" onClick={this.toggle}>
-              Salva modifiche
-            </Button>
-          </ModalFooter>
-        </Modal>
+export const ModalExampleCentered = () => {
+  const [isOpen, toggleModal] = useState(false)
+
+  return (
+    <div>
+      <Button color="primary" onClick={() => toggleModal(!isOpen)}>
+        Lancia la demo della modale
+      </Button>
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} centered>
+        <ModalHeader toggle={() => toggleModal(!isOpen)}>
+          Titolo della modale
+        </ModalHeader>
+        <ModalBody>
+          <p>Woohoo, stai leggendo questo testo in una modale!</p>
+        </ModalBody>
+        <ModalFooter>
+          <Button color="secondary" onClick={() => toggleModal(!isOpen)}>
+            Chiudi
+          </Button>
+          <Button color="primary" onClick={() => toggleModal(!isOpen)}>
+            Salva modifiche
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  )
+}
+
+export const ModalExampleNoAnimation = () => {
+  const [isOpen, toggleModal] = useState(false)
+
+  return (
+    <div>
+      <Button color="primary" onClick={() => toggleModal(!isOpen)}>
+        Lancia la demo della modale
+      </Button>
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} fade={false}>
+        <ModalHeader toggle={() => toggleModal(!isOpen)}>
+          Titolo della modale
+        </ModalHeader>
+        <ModalBody>
+          <p>Woohoo, stai leggendo questo testo in una modale!</p>
+        </ModalBody>
+        <ModalFooter>
+          <Button color="secondary" onClick={() => toggleModal(!isOpen)}>
+            Chiudi
+          </Button>
+          <Button color="primary" onClick={() => toggleModal(!isOpen)}>
+            Salva modifiche
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  )
+}
+
+export const ModalExampleSizing = () => {
+  const [isOpen, toggleModal] = useState(false)
+  const [size, setSize] = useState('')
+
+  return (
+    <div>
+      <div>
+        <Button
+          color="primary"
+          onClick={() => {
+            setSize('lg')
+            toggleModal(true)
+          }}
+          className="mr-3">
+          Modale grande
+        </Button>
+        <Button
+          color="primary"
+          onClick={() => {
+            setSize('sm')
+            toggleModal(true)
+          }}>
+          Modale piccola
+        </Button>
       </div>
-    )
-  }
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} size={size}>
+        <ModalHeader toggle={() => toggleModal(!isOpen)}>
+          Titolo della modale
+        </ModalHeader>
+        <ModalBody>
+          <p>Woohoo, stai leggendo questo testo in una modale!</p>
+        </ModalBody>
+        <ModalFooter>
+          <Button color="secondary" onClick={() => toggleModal(!isOpen)}>
+            Chiudi
+          </Button>
+          <Button color="primary" onClick={() => toggleModal(!isOpen)}>
+            Salva modifiche
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  )
 }
-
-ModalExample.propTypes = {
-  long: PropTypes.bool,
-  centered: PropTypes.bool,
-  fade: PropTypes.bool,
-  sizing: PropTypes.bool,
-  className: PropTypes.string
-}
-
-export default ModalExample

@@ -2,15 +2,19 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
+import { withKnobs } from '@storybook/addon-knobs/react'
+
+import { Form, FormGroup, Label, Input, FormText, Toggle } from '../../src'
 
 import InputIconButtonExample from './Input/InputIcon/InputIconButtonExample'
 import AutocompleteExample from './Autocomplete/AutocompleteExample'
-import TextArea from './Input/TextArea/TextArea'
-import CheckboxGroupsExample from './CheckboxRadio/CheckboxGroupsExample'
-import RadioGroupsExample from './CheckboxRadio/RadioGroupsExample'
-import TogglesExample from './Toggles/TogglesExample'
+import { TextAreaClassic, TextAreaPlaceholder } from './Input/TextArea/TextArea'
+import CheckboxRadioGroupsExample from './CheckboxRadio/Groups'
+import {
+  TogglesExampleEnabled,
+  TogglesExampleDisabled
+} from './Toggles/TogglesExample'
 import TogglesGroupsExample from './Toggles/TogglesGroupsExample'
-import { Form, FormGroup, Label, Input, FormText, Toggle } from '../../src'
 
 import Esempi from './docs/Input/Esempi.md'
 import Placeholder from './docs/Input/Placeholder.md'
@@ -21,7 +25,15 @@ import Readonly from './docs/Input/Readonly.md'
 import Normalize from './docs/Input/Normalize.md'
 import Textarea from './docs/Input/Textarea.md'
 import InputAutocomplete from './docs/Input/InputAutocomplete.md'
-import SelectExample from './Select/SelectExample'
+import {
+  SelectExampleClassic,
+  SelectExampleDisabled,
+  SelectExampleMulti,
+  SelectExampleGroups,
+  SelectExampleReset,
+  SelectExampleSearch,
+  SelectExampleInteractive
+} from './Select/SelectExamples'
 import Select from 'react-select'
 
 import CheckboxRadio from './docs/CheckboxRadio/CheckboxRadio.md'
@@ -196,12 +208,6 @@ const DisabilitatoComponent = () => (
     </fieldset>
   </section>
 )
-const GruppiComponent = () => (
-  <section>
-    <CheckboxGroupsExample />
-    <RadioGroupsExample />
-  </section>
-)
 
 const FormExampleComponent = () => (
   <div>
@@ -283,19 +289,13 @@ storiesOf('Componenti/Form.Input', module)
     'Area di testo',
     withInfo({
       text: Textarea
-    })(() => <TextArea rows="3" label="Esempio di area di testo" />)
+    })(TextAreaClassic)
   )
   .add(
     'Area di testo con segnaposto',
     withInfo({
       text: Textarea
-    })(() => (
-      <TextArea
-        rows="3"
-        label="Esempio di area di testo"
-        placeholder="Testo di esempio"
-      />
-    ))
+    })(TextAreaPlaceholder)
   )
 storiesOf('Componenti/Form.Checkbox and radio', module)
   .addDecorator(withA11y)
@@ -322,8 +322,8 @@ storiesOf('Componenti/Form.Checkbox and radio', module)
     withInfo({
       text: Gruppi,
       propTables: [Input, Label, FormText],
-      propTablesExclude: [CheckboxGroupsExample, RadioGroupsExample]
-    })(GruppiComponent)
+      propTablesExclude: []
+    })(CheckboxRadioGroupsExample)
   )
 storiesOf('Componenti/Form.Toggles', module)
   .addDecorator(withA11y)
@@ -332,16 +332,16 @@ storiesOf('Componenti/Form.Toggles', module)
     withInfo({
       text: Toggles,
       propTables: [Toggle],
-      propTablesExclude: [TogglesExample]
-    })(() => <TogglesExample />)
+      propTablesExclude: []
+    })(TogglesExampleEnabled)
   )
   .add(
     'Toggles Disabilitate',
     withInfo({
       text: TogglesDisabilitate,
       propTables: [Toggle],
-      propTablesExclude: [TogglesExample]
-    })(() => <TogglesExample disabled />)
+      propTablesExclude: []
+    })(TogglesExampleDisabled)
   )
   .add(
     'Gruppi di Toggles',
@@ -349,58 +349,67 @@ storiesOf('Componenti/Form.Toggles', module)
       text: GruppiToggles,
       propTables: [Toggle, FormText],
       propTablesExclude: [TogglesGroupsExample]
-    })(() => <TogglesGroupsExample />)
+    })(TogglesGroupsExample)
   )
 
 storiesOf('Componenti/Form.Select', module)
   .addDecorator(withA11y)
+  .addDecorator(withKnobs)
   .add(
     'Select classica',
     withInfo({
       text: SelectEsempi,
       propTables: [Select],
-      propTablesExclude: [SelectExample]
-    })(() => <SelectExample />)
+      propTablesExclude: []
+    })(SelectExampleClassic)
   )
   .add(
     'Select disabilitata',
     withInfo({
       text: SelectDisabled,
       propTables: [Select],
-      propTablesExclude: [SelectExample]
-    })(() => <SelectExample disabled />)
+      propTablesExclude: []
+    })(SelectExampleDisabled)
   )
   .add(
     'Select con reset',
     withInfo({
       text: SelectReset,
       propTables: [Select],
-      propTablesExclude: [SelectExample]
-    })(() => <SelectExample reset />)
+      propTablesExclude: []
+    })(SelectExampleReset)
   )
   .add(
     'Select con ricerca',
     withInfo({
       text: SelectSearchable,
       propTables: [Select],
-      propTablesExclude: [SelectExample]
-    })(() => <SelectExample search />)
+      propTablesExclude: []
+    })(SelectExampleSearch)
   )
   .add(
     'Select Multipla',
     withInfo({
       text: SelectMultipla,
       propTables: [Select],
-      propTablesExclude: [SelectExample]
-    })(() => <SelectExample multi />)
+      propTablesExclude: []
+    })(SelectExampleMulti)
   )
   .add(
     'Select con gruppi',
     withInfo({
       text: SelectGrouped,
       propTables: [Select],
-      propTablesExclude: [SelectExample]
-    })(() => <SelectExample group />)
+      propTablesExclude: []
+    })(SelectExampleGroups)
+  )
+  .add(
+    'Select configurabile',
+    withInfo({
+      text: SelectGrouped,
+      propTables: [Select],
+      propTablesExclude: []
+    })(SelectExampleInteractive)
   )
 
 storiesOf('Componenti/Form.Form Validation', module)
