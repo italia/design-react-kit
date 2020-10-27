@@ -1,44 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button, Popover, PopoverBody } from '../../src'
 import PropTypes from 'prop-types'
 
-class PopoverItem extends React.Component {
-  state = {
-    popoverOpen: false
-  }
+const PopoverItem = props => {
+  const [popoverOpen, setPopoverOpen] = useState(false)
+  const id = `Popover-${props.id}`
+  // Avoid Jest complaints
+  const target = () => document.getElementById(id)
 
-  toggle = () => {
-    this.setState({
-      popoverOpen: !this.state.popoverOpen
-    })
+  const togglePopover = () => {
+    setPopoverOpen(!popoverOpen)
   }
-
-  render() {
-    const id = `Popover-${this.props.id}`
-    // Avoid Jest complaints
-    const target = () => document.getElementById(id)
-
-    return (
-      <span>
-        <Button
-          className="mr-1"
-          color="secondary"
-          id={id}
-          onClick={this.toggle}>
-          Popover {this.props.item.text}
-        </Button>
-        <Popover
-          placement={this.props.item.placement}
-          isOpen={this.state.popoverOpen}
-          target={target}
-          toggle={this.toggle}>
-          <PopoverBody>
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-          </PopoverBody>
-        </Popover>
-      </span>
-    )
-  }
+  return (
+    <span>
+      <Button
+        className="mr-1"
+        color="secondary"
+        id={id}
+        onClick={togglePopover}>
+        Popover {props.item.text}
+      </Button>
+      <Popover
+        placement={props.item.placement}
+        isOpen={popoverOpen}
+        target={target}
+        toggle={togglePopover}>
+        <PopoverBody>
+          Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+        </PopoverBody>
+      </Popover>
+    </span>
+  )
 }
 
 PopoverItem.propTypes = {
@@ -46,33 +38,32 @@ PopoverItem.propTypes = {
   item: PropTypes.object
 }
 
-class PopoverPositionExample extends React.Component {
-  state = {
-    popovers: [
-      { placement: 'left', text: 'a sinistra' },
-      { placement: 'top', text: 'in alto' },
-      { placement: 'bottom', text: 'in basso' },
-      { placement: 'right', text: 'a destra' }
-    ]
-  }
-
-  render() {
-    return (
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          alignItems: 'center'
-        }}>
-        <span>
-          {this.state.popovers.map((popover, i) => (
-            <PopoverItem key={i} item={popover} id={i} />
-          ))}
-        </span>
+const PopoverPositionExample = () => {
+  return (
+    <div className="d-flex flex-column">
+      <div className="mx-auto align-self-center p-2">
+        <PopoverItem
+          item={{ placement: 'left', text: 'a sinistra' }}
+          id={'left'}
+        />
       </div>
-    )
-  }
+      <div className="mx-auto align-self-center p-2">
+        <PopoverItem
+          item={{ placement: 'right', text: 'a destra' }}
+          id={'right'}
+        />
+      </div>
+      <div className="mx-auto align-self-center p-2">
+        <PopoverItem item={{ placement: 'top', text: 'in alto' }} id={'top'} />
+      </div>
+      <div className="mx-auto align-self-center p-2">
+        <PopoverItem
+          item={{ placement: 'bottom', text: 'in basso' }}
+          id={'bottom'}
+        />
+      </div>
+    </div>
+  )
 }
 
 export default PopoverPositionExample

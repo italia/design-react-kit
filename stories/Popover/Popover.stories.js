@@ -1,11 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { storiesOf } from '@storybook/react'
 import { withKnobs, select, boolean, text } from '@storybook/addon-knobs/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
-
-import { State, Store } from '@sambego/storybook-state'
 
 import { Popover, PopoverHeader, PopoverBody, Button } from '../../src'
 
@@ -44,48 +42,35 @@ const ElementiDisabilitatiComponent = () => {
   )
 }
 
-const store = new Store({
-  isOpen: false
-})
-
-// Changed The Functional Component to a Class
-class EsempiInterattiviComponent extends React.Component {
-  constructor(props) {
-    super(props)
-    this.id = 'example'
-    // Avoid Jest complaints
-    this.target = () => document.getElementById(this.id)
+const EsempiInterattiviComponent = props => {
+  const [popoverOpen, setPopoverOpen] = useState(false)
+  const id = 'example'
+  // Avoid Jest complaints
+  const target = () => document.getElementById(id)
+  const togglePopover = () => {
+    setPopoverOpen(!popoverOpen)
   }
 
-  // All a LifeCycle Method to manage the store State when components unrender.
-  componentWillUnmount() {
-    store.set({ isOpen: false })
-  }
+  return (
+    <div style={{ padding: 200, textAlign: 'center' }}>
+      <Button
+        id={id}
+        color="primary"
+        disabled={props.disabled}
+        onClick={togglePopover}>
+        Popover {props.disabled ? 'Disabilitato' : ''}
+      </Button>
 
-  render() {
-    return (
-      <div style={{ padding: 250, textAlign: 'center' }}>
-        <Button
-          id={this.id}
-          color="primary"
-          disabled={this.props.disabled}
-          onClick={() => store.set({ isOpen: !store.get('isOpen') })}>
-          Popover {this.props.disabled ? 'Disabilitato' : ''}
-        </Button>
-
-        <State store={store}>
-          <Popover
-            placement={this.props.placement}
-            target={this.target}
-            toggle={() => store.set({ isOpen: !store.get('isOpen') })}
-            isOpen={store.get('isOpen')}>
-            <PopoverHeader>{this.props.title}</PopoverHeader>
-            <PopoverBody>{this.props.body}</PopoverBody>
-          </Popover>
-        </State>
-      </div>
-    )
-  }
+      <Popover
+        placement={props.placement}
+        target={target}
+        toggle={togglePopover}
+        isOpen={popoverOpen}>
+        <PopoverHeader>{props.title}</PopoverHeader>
+        <PopoverBody>{props.body}</PopoverBody>
+      </Popover>
+    </div>
+  )
 }
 
 EsempiInterattiviComponent.propTypes = {
@@ -103,7 +88,7 @@ storiesOf('Componenti/Popover', module)
       text: Esempi,
       propTables: [Popover, PopoverHeader, PopoverBody],
       propTablesExclude: [PopoverExample]
-    })(() => <PopoverExample />)
+    })(PopoverExample)
   )
   .add(
     'Le quattro direzioni',
@@ -111,7 +96,7 @@ storiesOf('Componenti/Popover', module)
       text: QuattroDirezioni,
       propTables: [Popover, PopoverHeader, PopoverBody],
       propTablesExclude: [PopoverPositionExample]
-    })(() => <PopoverPositionExample />)
+    })(PopoverPositionExample)
   )
   .add(
     'Titolo con icona e link',
@@ -119,7 +104,7 @@ storiesOf('Componenti/Popover', module)
       text: IconLink,
       propTables: [Popover, PopoverHeader, PopoverBody],
       propTablesExclude: [PopoverExample]
-    })(() => <PopoverIconLink />)
+    })(PopoverIconLink)
   )
   .add(
     'Modalità Hover',
@@ -127,7 +112,7 @@ storiesOf('Componenti/Popover', module)
       text: Hover,
       propTables: [Popover, PopoverHeader, PopoverBody],
       propTablesExclude: [PopoverExample]
-    })(() => <PopoverHover />)
+    })(PopoverHover)
   )
   .add(
     'Dismiss al click successivo',
@@ -135,7 +120,7 @@ storiesOf('Componenti/Popover', module)
       text: Focus,
       propTables: [Popover, PopoverHeader, PopoverBody],
       propTablesExclude: [PopoverExample]
-    })(() => <PopoverFocus />)
+    })(PopoverFocus)
   )
   .add(
     'Elementi disabilitati',
@@ -149,7 +134,7 @@ storiesOf('Componenti/Popover', module)
     'Esempi interattivi',
     withInfo({
       text: EsempiInterattivi,
-      propTablesExclude: [Button, State]
+      propTablesExclude: [Button]
     })(props => {
       // All the proerties for Addon Knobs are placed back in the function
       const disabled = boolean('Disabilitato', false)
