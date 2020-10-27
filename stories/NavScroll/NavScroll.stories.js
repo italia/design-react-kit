@@ -1,4 +1,3 @@
-import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
@@ -17,19 +16,19 @@ storiesOf('Componenti/NavScroll', module)
     withInfo({
       text: PosizionamentoFondo,
       propTables: [PosizionamentoFondoPagina]
-    })(() => <PosizionamentoFondoPagina />)
+    })(PosizionamentoFondoPagina)
   )
   .add(
     'Posizionamento in testa alla pagina con linea a destra',
     withInfo({
       text: PosizionamentoTesta,
       propTables: [PosizionamentoTestaAlla]
-    })(() => <PosizionamentoTestaAlla />)
+    })(PosizionamentoTestaAlla)
   )
   .add(
     'Menu Inline',
     withInfo({
       text: MenuInline,
       propTables: [ComponenteMenuInline]
-    })(() => <ComponenteMenuInline />)
+    })(ComponenteMenuInline)
   )
