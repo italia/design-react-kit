@@ -47,29 +47,33 @@ PopoverItem.propTypes = {
 }
 
 class PopoverPositionExample extends React.Component {
-  state = {
-    popovers: [
-      { placement: 'left', text: 'a sinistra' },
-      { placement: 'top', text: 'in alto' },
-      { placement: 'bottom', text: 'in basso' },
-      { placement: 'right', text: 'a destra' }
-    ]
-  }
-
   render() {
     return (
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          alignItems: 'center'
-        }}>
-        <span>
-          {this.state.popovers.map((popover, i) => (
-            <PopoverItem key={i} item={popover} id={i} />
-          ))}
-        </span>
+      <div className="d-flex flex-column">
+        <div className="mx-auto align-self-center p-2">
+          <PopoverItem
+            item={{ placement: 'left', text: 'a sinistra' }}
+            id={'left'}
+          />
+        </div>
+        <div className="mx-auto align-self-center p-2">
+          <PopoverItem
+            item={{ placement: 'right', text: 'a destra' }}
+            id={'right'}
+          />
+        </div>
+        <div className="mx-auto align-self-center p-2">
+          <PopoverItem
+            item={{ placement: 'top', text: 'in alto' }}
+            id={'top'}
+          />
+        </div>
+        <div className="mx-auto align-self-center p-2">
+          <PopoverItem
+            item={{ placement: 'bottom', text: 'in basso' }}
+            id={'bottom'}
+          />
+        </div>
       </div>
     )
   }
