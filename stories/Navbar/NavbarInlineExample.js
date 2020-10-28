@@ -13,13 +13,11 @@ const NavbarInlineExample = () => {
     e.preventDefault()
     switch (id) {
       case 1:
-        setCollapseOpen1(!collapseOpen1)
-        break
+        return setCollapseOpen1(!collapseOpen1)
       case 2:
-        setCollapseOpen2(!collapseOpen2)
-        break
+        return setCollapseOpen2(!collapseOpen2)
       case 3:
-        setCollapseOpen3(!collapseOpen3)
+        return setCollapseOpen3(!collapseOpen3)
     }
   }
   return (
