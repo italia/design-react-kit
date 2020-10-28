@@ -44,4 +44,8 @@ const CollapseAccordionExample = () => {
   )
 }
 
-export default CollapseAccordionExample
+const CollapseAccordionExampleWithHook = props => (
+  <CollapseAccordionExample {...props} />
+)
+
+export default CollapseAccordionExampleWithHook

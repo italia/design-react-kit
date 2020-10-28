@@ -28,4 +28,6 @@ const CollapseExample = () => {
   )
 }
 
-export default CollapseExample
+const CollapseExampleWithHook = props => <CollapseExample {...props} />
+
+export default CollapseExampleWithHook

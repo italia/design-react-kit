@@ -188,8 +188,8 @@ exports[`Storyshots Componenti/Collapse Collapse e Accordion innestati 1`] = `
               className="collapse-header"
             >
               <button
-                aria-expanded="true"
-                className="collapsed"
+                aria-expanded="false"
+                className=""
                 data-toggle="collapse"
                 onClick={[Function]}
               >
@@ -197,7 +197,7 @@ exports[`Storyshots Componenti/Collapse Collapse e Accordion innestati 1`] = `
               </button>
             </div>
             <div
-              className="collapse show"
+              className="collapse"
               style={Object {}}
             >
               <div
@@ -436,8 +436,8 @@ exports[`Storyshots Componenti/Collapse Gruppi di elementi richiudibili 1`] = `
         className="collapse-header"
       >
         <button
-          aria-expanded="true"
-          className="collapsed"
+          aria-expanded="false"
+          className=""
           data-toggle="collapse"
           onClick={[Function]}
         >
@@ -445,7 +445,7 @@ exports[`Storyshots Componenti/Collapse Gruppi di elementi richiudibili 1`] = `
         </button>
       </div>
       <div
-        className="collapse show"
+        className="collapse"
         style={Object {}}
       >
         <div

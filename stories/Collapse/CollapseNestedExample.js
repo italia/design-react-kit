@@ -79,4 +79,8 @@ const CollapseNestedExample = () => {
   )
 }
 
-export default CollapseNestedExample
+const CollapseNestedExampleWithHook = props => (
+  <CollapseNestedExample {...props} />
+)
+
+export default CollapseNestedExampleWithHook
