@@ -221,7 +221,7 @@ storiesOf('Componenti/Sidebar', module)
       text: Annidata,
       propTables: [Sidebar],
       propTablesExclude: [LinkList, LinkListItem]
-    })(() => <SidebarCollapseExample />)
+    })(SidebarCollapseExample)
   )
 
 const ScuraSidebarComponent = () => (

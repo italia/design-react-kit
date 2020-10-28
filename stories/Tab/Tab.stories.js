@@ -5,8 +5,13 @@ import { withInfo } from '@storybook/addon-info'
 
 import { Nav, NavItem, NavLink, TabContent, TabPane } from '../../src'
 
-import TabExample from './TabExample'
-import TabButtonExample from './TabButtonExample'
+import {
+  TabExampleText,
+  TabExampleIcon,
+  TabExampleTextIcon,
+  TabExampleButton,
+  TabExampleButtonVertical
+} from './TabExample'
 
 import Esempi from './docs/Esempi.md'
 import Contenuto from './docs/Contenuto.md'
@@ -69,38 +74,38 @@ storiesOf('Componenti/Tab', module)
     withInfo({
       text: Contenuto,
       propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-      propTablesExclude: [TabExample]
-    })(() => <TabExample text />)
+      propTablesExclude: []
+    })(TabExampleText)
   )
   .add(
     'Icone',
     withInfo({
       text: Icone,
       propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-      propTablesExclude: [TabExample]
-    })(() => <TabExample icons />)
+      propTablesExclude: []
+    })(TabExampleIcon)
   )
   .add(
     'Icone e testo',
     withInfo({
       text: IconeTesto,
       propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-      propTablesExclude: [TabExample]
-    })(() => <TabExample text icons />)
+      propTablesExclude: []
+    })(TabExampleTextIcon)
   )
   .add(
     'Tab a bottoni',
     withInfo({
       text: TabBottoni,
       propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-      propTablesExclude: [TabButtonExample]
-    })(() => <TabButtonExample />)
+      propTablesExclude: []
+    })(TabExampleButton)
   )
   .add(
     'Allineamento Verticale',
     withInfo({
       text: AllineamentoVerticale,
       propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-      propTablesExclude: [TabButtonExample]
-    })(() => <TabButtonExample vertical />)
+      propTablesExclude: []
+    })(TabExampleButtonVertical)
   )
