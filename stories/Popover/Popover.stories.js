@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 import { storiesOf } from '@storybook/react'
 import { withKnobs, select, boolean, text } from '@storybook/addon-knobs/react'
 import { withA11y } from '@storybook/addon-a11y'
@@ -42,7 +41,7 @@ const ElementiDisabilitatiComponent = () => {
   )
 }
 
-const EsempiInterattiviComponent = props => {
+const EsempiInterattiviComponent = () => {
   const [popoverOpen, setPopoverOpen] = useState(false)
   const id = 'example'
   // Avoid Jest complaints
@@ -51,33 +50,38 @@ const EsempiInterattiviComponent = props => {
     setPopoverOpen(!popoverOpen)
   }
 
+  // All the proerties for Addon Knobs are placed back in the function
+  const disabled = boolean('Disabilitato', false)
+  const placements = ['top', 'bottom', 'left', 'right']
+  const placement = select('Posizione', placements, placements[0])
+  const title = text('Titolo', 'Titolo del popover')
+  const body = text(
+    'Body',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.'
+  )
+
   return (
-    <div style={{ padding: 200, textAlign: 'center' }}>
+    <div
+      className="d-flex  justify-content-center"
+      style={{ paddingTop: '120px' }}>
       <Button
         id={id}
         color="primary"
-        disabled={props.disabled}
+        disabled={disabled}
         onClick={togglePopover}>
-        Popover {props.disabled ? 'Disabilitato' : ''}
+        Popover {disabled ? 'Disabilitato' : ''}
       </Button>
 
       <Popover
-        placement={props.placement}
+        placement={placement}
         target={target}
         toggle={togglePopover}
         isOpen={popoverOpen}>
-        <PopoverHeader>{props.title}</PopoverHeader>
-        <PopoverBody>{props.body}</PopoverBody>
+        <PopoverHeader>{title}</PopoverHeader>
+        <PopoverBody>{body}</PopoverBody>
       </Popover>
     </div>
   )
-}
-
-EsempiInterattiviComponent.propTypes = {
-  disabled: PropTypes.bool,
-  placement: PropTypes.string,
-  title: PropTypes.string,
-  body: PropTypes.string
 }
 
 storiesOf('Componenti/Popover', module)
@@ -135,25 +139,5 @@ storiesOf('Componenti/Popover', module)
     withInfo({
       text: EsempiInterattivi,
       propTablesExclude: [Button]
-    })(props => {
-      // All the proerties for Addon Knobs are placed back in the function
-      const disabled = boolean('Disabilitato', false)
-      const placements = ['top', 'bottom', 'left', 'right']
-      const placement = select('Posizione', placements, placements[0])
-      const title = text('Titolo', 'Titolo del popover')
-      const body = text(
-        'Body',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.'
-      )
-      // All the knob properties are passed as props
-      return (
-        <EsempiInterattiviComponent
-          disabled={disabled}
-          placement={placement}
-          title={title}
-          body={body}
-          {...props}
-        />
-      )
-    })
+    })(EsempiInterattiviComponent)
   )
