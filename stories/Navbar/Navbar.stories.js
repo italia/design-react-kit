@@ -20,6 +20,7 @@ import {
 } from '../../src'
 
 import NavbarExample from './NavbarExample'
+import NavbarDropdownExample from './NavbarDropdownExample'
 import NavbarMegamenuExample from './NavbarMegamenuExample'
 import NavbarInlineExample from './NavbarInlineExample'
 
@@ -57,7 +58,7 @@ storiesOf('Componenti/Navbar', module)
       text: Esempi,
       propTables: [Navbar, NavbarToggler, Collapse, Nav, NavItem, NavLink],
       propTablesExclude: [NavbarExample]
-    })(() => <NavbarExample />)
+    })(NavbarExample)
   )
   .add(
     'Con Dropdown',
@@ -75,7 +76,7 @@ storiesOf('Componenti/Navbar', module)
         DropdownMenu
       ],
       propTablesExclude: [NavbarExample]
-    })(() => <NavbarExample dropdown />)
+    })(NavbarDropdownExample)
   )
   .add(
     'Con Megamenu (in progress)',
@@ -95,7 +96,7 @@ storiesOf('Componenti/Navbar', module)
         LinkListItem
       ],
       propTablesExclude: [NavbarExample]
-    })(() => <NavbarMegamenuExample />)
+    })(NavbarMegamenuExample)
   )
   .add(
     'Inline Menù',
@@ -103,7 +104,7 @@ storiesOf('Componenti/Navbar', module)
       text: Inline,
       propTables: [LinkList, LinkListItem, Collapse],
       propTablesExclude: [NavbarInlineExample]
-    })(() => <NavbarInlineExample />)
+    })(NavbarInlineExample)
   )
   .addDecorator(withKnobs)
   .add(
