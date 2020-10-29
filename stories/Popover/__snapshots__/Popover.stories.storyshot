@@ -45,7 +45,7 @@ exports[`Storyshots Componenti/Popover Dismiss al click successivo 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -103,7 +103,7 @@ exports[`Storyshots Componenti/Popover Elementi disabilitati 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -161,7 +161,7 @@ exports[`Storyshots Componenti/Popover Esempi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -228,7 +228,7 @@ exports[`Storyshots Componenti/Popover Esempi interattivi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -263,21 +263,16 @@ exports[`Storyshots Componenti/Popover Le quattro direzioni 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "flexDirection": "column",
-          "justifyContent": "center",
-        }
-      }
+      className="d-flex flex-column"
     >
-      <span>
+      <div
+        className="mx-auto align-self-center p-2"
+      >
         <span>
           <button
             aria-label={null}
             className="mr-1 btn btn-secondary"
-            id="Popover-0"
+            id="Popover-left"
             onClick={[Function]}
             type="button"
           >
@@ -285,35 +280,15 @@ exports[`Storyshots Componenti/Popover Le quattro direzioni 1`] = `
             a sinistra
           </button>
         </span>
+      </div>
+      <div
+        className="mx-auto align-self-center p-2"
+      >
         <span>
           <button
             aria-label={null}
             className="mr-1 btn btn-secondary"
-            id="Popover-1"
-            onClick={[Function]}
-            type="button"
-          >
-            Popover 
-            in alto
-          </button>
-        </span>
-        <span>
-          <button
-            aria-label={null}
-            className="mr-1 btn btn-secondary"
-            id="Popover-2"
-            onClick={[Function]}
-            type="button"
-          >
-            Popover 
-            in basso
-          </button>
-        </span>
-        <span>
-          <button
-            aria-label={null}
-            className="mr-1 btn btn-secondary"
-            id="Popover-3"
+            id="Popover-right"
             onClick={[Function]}
             type="button"
           >
@@ -321,7 +296,39 @@ exports[`Storyshots Componenti/Popover Le quattro direzioni 1`] = `
             a destra
           </button>
         </span>
-      </span>
+      </div>
+      <div
+        className="mx-auto align-self-center p-2"
+      >
+        <span>
+          <button
+            aria-label={null}
+            className="mr-1 btn btn-secondary"
+            id="Popover-top"
+            onClick={[Function]}
+            type="button"
+          >
+            Popover 
+            in alto
+          </button>
+        </span>
+      </div>
+      <div
+        className="mx-auto align-self-center p-2"
+      >
+        <span>
+          <button
+            aria-label={null}
+            className="mr-1 btn btn-secondary"
+            id="Popover-bottom"
+            onClick={[Function]}
+            type="button"
+          >
+            Popover 
+            in basso
+          </button>
+        </span>
+      </div>
     </div>
   </div>
   <button
@@ -336,7 +343,7 @@ exports[`Storyshots Componenti/Popover Le quattro direzioni 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -399,7 +406,7 @@ exports[`Storyshots Componenti/Popover Modalità Hover 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -460,7 +467,7 @@ exports[`Storyshots Componenti/Popover Titolo con icona e link 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

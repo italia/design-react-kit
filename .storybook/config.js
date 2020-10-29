@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {createElement} from 'react';
 import {addParameters, addDecorator, configure} from '@storybook/react';
 import {default as theme} from './theme.js';
 import {FontLoader} from '../src';
@@ -6,6 +6,8 @@ import {FontLoader} from '../src';
 import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
 import '../assets/css/fonts.css';
 
+// fix for storyshots and hooks in stories
+addDecorator(createElement);
 
 const styles = {
     position: 'relative',

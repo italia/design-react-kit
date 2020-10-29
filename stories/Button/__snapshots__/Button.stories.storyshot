@@ -30,7 +30,7 @@ exports[`Storyshots Componenti/Button Bottoni con icona 1`] = `
           className="icon icon-white"
         >
           <use
-            xlinkHref="sprite.svg#it-star-full"
+            href="sprite.svg#it-star-full"
           />
         </svg>
          Icon Button Large
@@ -45,7 +45,7 @@ exports[`Storyshots Componenti/Button Bottoni con icona 1`] = `
           className="icon icon-white"
         >
           <use
-            xlinkHref="sprite.svg#it-star-full"
+            href="sprite.svg#it-star-full"
           />
         </svg>
          Icon Button
@@ -60,7 +60,7 @@ exports[`Storyshots Componenti/Button Bottoni con icona 1`] = `
           className="icon icon-secondary"
         >
           <use
-            xlinkHref="sprite.svg#it-star-full"
+            href="sprite.svg#it-star-full"
           />
         </svg>
          Icon Button Small
@@ -75,7 +75,7 @@ exports[`Storyshots Componenti/Button Bottoni con icona 1`] = `
           className="icon icon-danger"
         >
           <use
-            xlinkHref="sprite.svg#it-star-full"
+            href="sprite.svg#it-star-full"
           />
         </svg>
          Icon Button Extra Small
@@ -94,7 +94,7 @@ exports[`Storyshots Componenti/Button Bottoni con icona 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -283,7 +283,7 @@ exports[`Storyshots Componenti/Button Esempi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -346,7 +346,7 @@ exports[`Storyshots Componenti/Button Esempi interattivi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -537,7 +537,7 @@ exports[`Storyshots Componenti/Button Sfondo scuro 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -656,7 +656,7 @@ exports[`Storyshots Componenti/Button Stato Attivo 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -782,7 +782,7 @@ exports[`Storyshots Componenti/Button Stato Disabilitato 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -906,7 +906,7 @@ exports[`Storyshots Componenti/Button Varianti di dimensione 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

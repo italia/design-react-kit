@@ -35,7 +35,7 @@ exports[`Storyshots Componenti/Forward Esempi 1`] = `
               className="icon icon-primary"
             >
               <use
-                xlinkHref="sprite.svg#it-expand"
+                href="sprite.svg#it-expand"
               />
             </svg>
           </a>
@@ -78,7 +78,7 @@ exports[`Storyshots Componenti/Forward Esempi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

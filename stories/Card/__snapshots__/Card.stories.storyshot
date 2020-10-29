@@ -43,7 +43,7 @@ exports[`Storyshots Componenti/Cards Big card 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-card"
+                    href="sprite.svg#it-card"
                   />
                 </svg>
               </div>
@@ -69,7 +69,7 @@ exports[`Storyshots Componenti/Cards Big card 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-arrow-right"
+                    href="sprite.svg#it-arrow-right"
                   />
                 </svg>
               </a>
@@ -91,7 +91,7 @@ exports[`Storyshots Componenti/Cards Big card 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -148,7 +148,7 @@ exports[`Storyshots Componenti/Cards Big card with tag 1`] = `
                 className="icon"
               >
                 <use
-                  xlinkHref="sprite.svg#it-settings"
+                  href="sprite.svg#it-settings"
                 />
               </svg>
               <span>
@@ -165,7 +165,7 @@ exports[`Storyshots Componenti/Cards Big card with tag 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-card"
+                    href="sprite.svg#it-card"
                   />
                 </svg>
               </div>
@@ -191,7 +191,7 @@ exports[`Storyshots Componenti/Cards Big card with tag 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-arrow-right"
+                    href="sprite.svg#it-arrow-right"
                   />
                 </svg>
               </a>
@@ -213,7 +213,7 @@ exports[`Storyshots Componenti/Cards Big card with tag 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -269,7 +269,7 @@ exports[`Storyshots Componenti/Cards Card with icon 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-file"
+                    href="sprite.svg#it-file"
                   />
                 </svg>
                 <span
@@ -316,7 +316,7 @@ exports[`Storyshots Componenti/Cards Card with icon 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -413,7 +413,7 @@ exports[`Storyshots Componenti/Cards Card with image 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-arrow-right"
+                    href="sprite.svg#it-arrow-right"
                   />
                 </svg>
               </a>
@@ -435,7 +435,7 @@ exports[`Storyshots Componenti/Cards Card with image 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -507,7 +507,7 @@ exports[`Storyshots Componenti/Cards Card with shading 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-arrow-right"
+                    href="sprite.svg#it-arrow-right"
                   />
                 </svg>
               </a>
@@ -529,7 +529,7 @@ exports[`Storyshots Componenti/Cards Card with shading 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -602,7 +602,7 @@ exports[`Storyshots Componenti/Cards Esempi interattivi 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-arrow-right"
+                    href="sprite.svg#it-arrow-right"
                   />
                 </svg>
               </a>
@@ -624,7 +624,7 @@ exports[`Storyshots Componenti/Cards Esempi interattivi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -714,7 +714,7 @@ exports[`Storyshots Componenti/Cards Simple Article 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-arrow-right"
+                    href="sprite.svg#it-arrow-right"
                   />
                 </svg>
               </a>
@@ -736,7 +736,7 @@ exports[`Storyshots Componenti/Cards Simple Article 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -792,7 +792,7 @@ exports[`Storyshots Componenti/Cards Simple Article with Icon 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-calendar"
+                    href="sprite.svg#it-calendar"
                   />
                 </svg>
                 <span
@@ -833,7 +833,7 @@ exports[`Storyshots Componenti/Cards Simple Article with Icon 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-arrow-right"
+                    href="sprite.svg#it-arrow-right"
                   />
                 </svg>
               </a>
@@ -855,7 +855,7 @@ exports[`Storyshots Componenti/Cards Simple Article with Icon 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -932,7 +932,7 @@ exports[`Storyshots Componenti/Cards Simple Card 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1061,7 +1061,7 @@ exports[`Storyshots Componenti/Cards Simple Card in multiple columns 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1173,7 +1173,7 @@ exports[`Storyshots Componenti/Cards Special cards 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

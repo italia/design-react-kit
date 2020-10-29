@@ -63,12 +63,11 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-expand"
+                          href="sprite.svg#it-expand"
                         />
                       </svg>
                     </a>
                     <div
-                      aria-expanded="false"
                       className="link-list-wrapper collapse"
                       style={Object {}}
                     >
@@ -118,7 +117,7 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-expand"
+                          href="sprite.svg#it-expand"
                         />
                       </svg>
                     </a>
@@ -216,7 +215,7 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
                         className="icon"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-code-circle"
+                          href="sprite.svg#it-code-circle"
                         />
                       </svg>
                       <div
@@ -255,7 +254,7 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
                               className="icon"
                             >
                               <use
-                                xlinkHref="sprite.svg#it-facebook"
+                                href="sprite.svg#it-facebook"
                               />
                             </svg>
                           </a>
@@ -270,7 +269,7 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
                               className="icon"
                             >
                               <use
-                                xlinkHref="sprite.svg#it-github"
+                                href="sprite.svg#it-github"
                               />
                             </svg>
                           </a>
@@ -285,7 +284,7 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
                               className="icon"
                             >
                               <use
-                                xlinkHref="sprite.svg#it-twitter"
+                                href="sprite.svg#it-twitter"
                               />
                             </svg>
                           </a>
@@ -308,7 +307,7 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-search"
+                            href="sprite.svg#it-search"
                           />
                         </svg>
                       </a>
@@ -347,12 +346,11 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
                       className="icon"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-burger"
+                        href="sprite.svg#it-burger"
                       />
                     </svg>
                   </button>
                   <div
-                    aria-expanded="false"
                     className="navbar-collapsable collapse navbar-collapse"
                     style={
                       Object {
@@ -475,7 +473,7 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -532,7 +530,7 @@ exports[`Storyshots Componenti/Header Header center 1`] = `
                     className="icon"
                   >
                     <use
-                      xlinkHref="sprite.svg#it-code-circle"
+                      href="sprite.svg#it-code-circle"
                     />
                   </svg>
                   <div
@@ -571,7 +569,7 @@ exports[`Storyshots Componenti/Header Header center 1`] = `
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-facebook"
+                            href="sprite.svg#it-facebook"
                           />
                         </svg>
                       </a>
@@ -586,7 +584,7 @@ exports[`Storyshots Componenti/Header Header center 1`] = `
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-github"
+                            href="sprite.svg#it-github"
                           />
                         </svg>
                       </a>
@@ -601,7 +599,7 @@ exports[`Storyshots Componenti/Header Header center 1`] = `
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-twitter"
+                            href="sprite.svg#it-twitter"
                           />
                         </svg>
                       </a>
@@ -624,7 +622,7 @@ exports[`Storyshots Componenti/Header Header center 1`] = `
                       className="icon"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-search"
+                        href="sprite.svg#it-search"
                       />
                     </svg>
                   </a>
@@ -648,7 +646,7 @@ exports[`Storyshots Componenti/Header Header center 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -710,12 +708,11 @@ exports[`Storyshots Componenti/Header Header nav 1`] = `
                   className="icon"
                 >
                   <use
-                    xlinkHref="sprite.svg#it-burger"
+                    href="sprite.svg#it-burger"
                   />
                 </svg>
               </button>
               <div
-                aria-expanded="false"
                 className="navbar-collapsable collapse navbar-collapse"
                 style={
                   Object {
@@ -822,7 +819,7 @@ exports[`Storyshots Componenti/Header Header nav 1`] = `
                             className="icon"
                           >
                             <use
-                              xlinkHref="sprite.svg#it-expand"
+                              href="sprite.svg#it-expand"
                             />
                           </svg>
                         </a>
@@ -941,7 +938,7 @@ exports[`Storyshots Componenti/Header Header nav 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1015,12 +1012,11 @@ exports[`Storyshots Componenti/Header Header slim 1`] = `
                       className="icon"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-expand"
+                        href="sprite.svg#it-expand"
                       />
                     </svg>
                   </a>
                   <div
-                    aria-expanded="false"
                     className="link-list-wrapper collapse"
                     style={Object {}}
                   >
@@ -1070,7 +1066,7 @@ exports[`Storyshots Componenti/Header Header slim 1`] = `
                       className="icon d-none d-lg-block icon-icon-white"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-expand"
+                        href="sprite.svg#it-expand"
                       />
                     </svg>
                   </a>
@@ -1155,7 +1151,7 @@ exports[`Storyshots Componenti/Header Header slim 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1228,7 +1224,7 @@ exports[`Storyshots Componenti/Header Header slim with full button 1`] = `
                       className="icon"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-expand"
+                        href="sprite.svg#it-expand"
                       />
                     </svg>
                   </a>
@@ -1296,7 +1292,7 @@ exports[`Storyshots Componenti/Header Header slim with full button 1`] = `
                       className="icon icon-primary"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-user"
+                        href="sprite.svg#it-user"
                       />
                     </svg>
                   </span>
@@ -1325,7 +1321,7 @@ exports[`Storyshots Componenti/Header Header slim with full button 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

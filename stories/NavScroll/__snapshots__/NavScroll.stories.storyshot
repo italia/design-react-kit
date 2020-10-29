@@ -50,7 +50,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-expand"
+                  href="sprite.svg#it-expand"
                 />
               </svg>
             </a>
@@ -92,7 +92,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
           </li>
           <li>
             <a
-              aria-controls="collapseOne"
+              aria-controls="collapseTwo"
               aria-expanded="false"
               className="list-item large medium right-icon collapsed"
               data-toggle="collapse"
@@ -100,7 +100,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
               onClick={[Function]}
             >
               <span>
-                Link list 1
+                Link list 2
               </span>
               <svg
                 className="icon icon-primary icon-sm sm"
@@ -111,13 +111,13 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-expand"
+                  href="sprite.svg#it-expand"
                 />
               </svg>
             </a>
             <ul
               className="link-sublist collapse"
-              id="collapseOne"
+              id="collapseTwo"
             >
               <li>
                 <a
@@ -125,7 +125,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                   href="#"
                 >
                   <span>
-                    Link list 1
+                    Link list 2
                   </span>
                 </a>
               </li>
@@ -135,7 +135,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                   href="#"
                 >
                   <span>
-                    Link list 1
+                    Link list 2
                   </span>
                 </a>
               </li>
@@ -145,7 +145,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                   href="#"
                 >
                   <span>
-                    Link list 1
+                    Link list 2
                   </span>
                 </a>
               </li>
@@ -153,7 +153,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
           </li>
           <li>
             <a
-              aria-controls="collapseOne"
+              aria-controls="collapseThree"
               aria-expanded="false"
               className="list-item large medium right-icon collapsed"
               data-toggle="collapse"
@@ -161,7 +161,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
               onClick={[Function]}
             >
               <span>
-                Link list 1
+                Link list 3
               </span>
               <svg
                 className="icon icon-primary icon-sm sm"
@@ -172,13 +172,13 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-expand"
+                  href="sprite.svg#it-expand"
                 />
               </svg>
             </a>
             <ul
               className="link-sublist collapse"
-              id="collapseOne"
+              id="collapseThree"
             >
               <li>
                 <a
@@ -186,7 +186,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                   href="#"
                 >
                   <span>
-                    Link list 1
+                    Link list 3
                   </span>
                 </a>
               </li>
@@ -196,7 +196,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                   href="#"
                 >
                   <span>
-                    Link list 1
+                    Link list 3
                   </span>
                 </a>
               </li>
@@ -206,7 +206,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                   href="#"
                 >
                   <span>
-                    Link list 1
+                    Link list 3
                   </span>
                 </a>
               </li>
@@ -228,7 +228,7 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -328,7 +328,7 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
             }
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-left"
+              href="sprite.svg#it-chevron-left"
             />
           </svg>
           <span>
@@ -547,7 +547,7 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -647,7 +647,7 @@ exports[`Storyshots Componenti/NavScroll Posizionamento in testa alla pagina con
             }
           >
             <use
-              xlinkHref="sprite.svg#it-chevron-left"
+              href="sprite.svg#it-chevron-left"
             />
           </svg>
           <span>
@@ -866,7 +866,7 @@ exports[`Storyshots Componenti/NavScroll Posizionamento in testa alla pagina con
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

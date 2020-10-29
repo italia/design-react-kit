@@ -47,7 +47,7 @@ exports[`Storyshots Componenti/Footer Footer 1`] = `
                       className="icon"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-pa"
+                        href="sprite.svg#it-pa"
                       />
                     </svg>
                     <div
@@ -450,7 +450,7 @@ exports[`Storyshots Componenti/Footer Footer 1`] = `
                       className="icon icon-white"
                     >
                       <use
-                        xlinkHref="sprite.svg#it-mail"
+                        href="sprite.svg#it-mail"
                       />
                     </svg>
                     <span>
@@ -485,7 +485,7 @@ exports[`Storyshots Componenti/Footer Footer 1`] = `
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-designers-italia"
+                          href="sprite.svg#it-designers-italia"
                         />
                       </svg>
                       <span
@@ -507,7 +507,7 @@ exports[`Storyshots Componenti/Footer Footer 1`] = `
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-twitter"
+                          href="sprite.svg#it-twitter"
                         />
                       </svg>
                       <span
@@ -529,7 +529,7 @@ exports[`Storyshots Componenti/Footer Footer 1`] = `
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-medium"
+                          href="sprite.svg#it-medium"
                         />
                       </svg>
                       <span
@@ -551,7 +551,7 @@ exports[`Storyshots Componenti/Footer Footer 1`] = `
                         className="icon align-top icon-white icon-sm sm"
                       >
                         <use
-                          xlinkHref="sprite.svg#it-behance"
+                          href="sprite.svg#it-behance"
                         />
                       </svg>
                       <span
@@ -638,7 +638,7 @@ exports[`Storyshots Componenti/Footer Footer 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

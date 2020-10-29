@@ -38,7 +38,6 @@ exports[`Storyshots Componenti/Navbar Con Dropdown 1`] = `
           />
         </button>
         <div
-          aria-expanded="false"
           className="collapse navbar-collapse"
           style={Object {}}
         >
@@ -195,7 +194,7 @@ exports[`Storyshots Componenti/Navbar Con Dropdown 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -247,7 +246,6 @@ exports[`Storyshots Componenti/Navbar Con Megamenu (in progress) 1`] = `
           />
         </button>
         <div
-          aria-expanded="false"
           className="collapse navbar-collapse"
           style={Object {}}
         >
@@ -391,7 +389,7 @@ exports[`Storyshots Componenti/Navbar Con Megamenu (in progress) 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -443,7 +441,6 @@ exports[`Storyshots Componenti/Navbar Esempi 1`] = `
           />
         </button>
         <div
-          aria-expanded="false"
           className="collapse navbar-collapse"
           style={Object {}}
         >
@@ -534,7 +531,7 @@ exports[`Storyshots Componenti/Navbar Esempi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -596,7 +593,7 @@ exports[`Storyshots Componenti/Navbar Esempi interattivi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -656,13 +653,12 @@ exports[`Storyshots Componenti/Navbar Inline Menù 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-expand"
+                  href="sprite.svg#it-expand"
                 />
               </svg>
             </a>
           </li>
           <div
-            aria-expanded="false"
             className="collapse"
             style={Object {}}
           >
@@ -715,13 +711,12 @@ exports[`Storyshots Componenti/Navbar Inline Menù 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-expand"
+                  href="sprite.svg#it-expand"
                 />
               </svg>
             </a>
           </li>
           <div
-            aria-expanded="false"
             className="collapse"
             style={Object {}}
           >
@@ -774,13 +769,12 @@ exports[`Storyshots Componenti/Navbar Inline Menù 1`] = `
                 }
               >
                 <use
-                  xlinkHref="sprite.svg#it-expand"
+                  href="sprite.svg#it-expand"
                 />
               </svg>
             </a>
           </li>
           <div
-            aria-expanded="false"
             className="collapse"
             style={Object {}}
           >
@@ -832,7 +826,7 @@ exports[`Storyshots Componenti/Navbar Inline Menù 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

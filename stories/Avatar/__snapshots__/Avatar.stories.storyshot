@@ -59,7 +59,7 @@ exports[`Storyshots Componenti/Avatar Avatar link 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-search"
+            href="sprite.svg#it-search"
           />
         </svg>
       </a>
@@ -77,7 +77,7 @@ exports[`Storyshots Componenti/Avatar Avatar link 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -154,7 +154,7 @@ exports[`Storyshots Componenti/Avatar Avatar link with Tooltip 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-search"
+            href="sprite.svg#it-search"
           />
         </svg>
       </a>
@@ -172,7 +172,7 @@ exports[`Storyshots Componenti/Avatar Avatar link with Tooltip 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -301,7 +301,7 @@ exports[`Storyshots Componenti/Avatar Avatar with additional text 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -345,7 +345,7 @@ exports[`Storyshots Componenti/Avatar Avatar with icon 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-search"
+            href="sprite.svg#it-search"
           />
         </svg>
       </div>
@@ -356,7 +356,7 @@ exports[`Storyshots Componenti/Avatar Avatar with icon 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-search"
+            href="sprite.svg#it-search"
           />
         </svg>
       </div>
@@ -367,7 +367,7 @@ exports[`Storyshots Componenti/Avatar Avatar with icon 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-search"
+            href="sprite.svg#it-search"
           />
         </svg>
       </div>
@@ -378,7 +378,7 @@ exports[`Storyshots Componenti/Avatar Avatar with icon 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-search"
+            href="sprite.svg#it-search"
           />
         </svg>
       </div>
@@ -389,7 +389,7 @@ exports[`Storyshots Componenti/Avatar Avatar with icon 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-search"
+            href="sprite.svg#it-search"
           />
         </svg>
       </div>
@@ -400,7 +400,7 @@ exports[`Storyshots Componenti/Avatar Avatar with icon 1`] = `
           className="icon"
         >
           <use
-            xlinkHref="sprite.svg#it-search"
+            href="sprite.svg#it-search"
           />
         </svg>
       </div>
@@ -418,7 +418,7 @@ exports[`Storyshots Componenti/Avatar Avatar with icon 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -517,7 +517,7 @@ exports[`Storyshots Componenti/Avatar Avatar with image 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -657,7 +657,7 @@ exports[`Storyshots Componenti/Avatar Avatar with text 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -763,7 +763,7 @@ exports[`Storyshots Componenti/Avatar.Avatar groups.List Media List 1`] = `
                 className="icon"
               >
                 <use
-                  xlinkHref="sprite.svg#it-user"
+                  href="sprite.svg#it-user"
                 />
               </svg>
             </div>
@@ -787,7 +787,7 @@ exports[`Storyshots Componenti/Avatar.Avatar groups.List Media List 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -893,7 +893,7 @@ exports[`Storyshots Componenti/Avatar.Avatar groups.List Small List 1`] = `
                 className="icon"
               >
                 <use
-                  xlinkHref="sprite.svg#it-user"
+                  href="sprite.svg#it-user"
                 />
               </svg>
             </div>
@@ -917,7 +917,7 @@ exports[`Storyshots Componenti/Avatar.Avatar groups.List Small List 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1019,7 +1019,7 @@ exports[`Storyshots Componenti/Avatar.Avatar groups.Overlapping Avatars Medium O
             className="icon"
           >
             <use
-              xlinkHref="sprite.svg#it-search"
+              href="sprite.svg#it-search"
             />
           </svg>
         </a>
@@ -1128,7 +1128,7 @@ exports[`Storyshots Componenti/Avatar.Avatar groups.Overlapping Avatars Medium O
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-search"
+                            href="sprite.svg#it-search"
                           />
                         </svg>
                       </div>
@@ -1157,7 +1157,7 @@ exports[`Storyshots Componenti/Avatar.Avatar groups.Overlapping Avatars Medium O
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1310,7 +1310,7 @@ exports[`Storyshots Componenti/Avatar.Avatar groups.Overlapping Avatars Small Ov
             className="icon"
           >
             <use
-              xlinkHref="sprite.svg#it-search"
+              href="sprite.svg#it-search"
             />
           </svg>
         </a>
@@ -1419,7 +1419,7 @@ exports[`Storyshots Componenti/Avatar.Avatar groups.Overlapping Avatars Small Ov
                           className="icon"
                         >
                           <use
-                            xlinkHref="sprite.svg#it-search"
+                            href="sprite.svg#it-search"
                           />
                         </svg>
                       </div>
@@ -1448,7 +1448,7 @@ exports[`Storyshots Componenti/Avatar.Avatar groups.Overlapping Avatars Small Ov
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1524,7 +1524,7 @@ exports[`Storyshots Componenti/Avatar.Behavior User Presence 1`] = `
                 className="icon icon-white"
               >
                 <use
-                  xlinkHref="sprite.svg#it-minus"
+                  href="sprite.svg#it-minus"
                 />
               </svg>
               <span
@@ -1577,7 +1577,7 @@ exports[`Storyshots Componenti/Avatar.Behavior User Presence 1`] = `
                 className="icon icon-white"
               >
                 <use
-                  xlinkHref="sprite.svg#it-minus"
+                  href="sprite.svg#it-minus"
                 />
               </svg>
               <span
@@ -1605,7 +1605,7 @@ exports[`Storyshots Componenti/Avatar.Behavior User Presence 1`] = `
                 className="icon icon-white"
               >
                 <use
-                  xlinkHref="sprite.svg#it-minus"
+                  href="sprite.svg#it-minus"
                 />
               </svg>
               <span
@@ -1633,7 +1633,7 @@ exports[`Storyshots Componenti/Avatar.Behavior User Presence 1`] = `
                 className="icon icon-white"
               >
                 <use
-                  xlinkHref="sprite.svg#it-minus"
+                  href="sprite.svg#it-minus"
                 />
               </svg>
               <span
@@ -1661,7 +1661,7 @@ exports[`Storyshots Componenti/Avatar.Behavior User Presence 1`] = `
                 className="icon icon-white"
               >
                 <use
-                  xlinkHref="sprite.svg#it-minus"
+                  href="sprite.svg#it-minus"
                 />
               </svg>
               <span
@@ -1687,7 +1687,7 @@ exports[`Storyshots Componenti/Avatar.Behavior User Presence 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -1742,7 +1742,7 @@ exports[`Storyshots Componenti/Avatar.Behavior User Status 1`] = `
                 className="icon icon-white"
               >
                 <use
-                  xlinkHref="sprite.svg#it-check"
+                  href="sprite.svg#it-check"
                 />
               </svg>
               <span
@@ -1770,7 +1770,7 @@ exports[`Storyshots Componenti/Avatar.Behavior User Status 1`] = `
                 className="icon icon-white"
               >
                 <use
-                  xlinkHref="sprite.svg#it-close"
+                  href="sprite.svg#it-close"
                 />
               </svg>
               <span
@@ -1823,7 +1823,7 @@ exports[`Storyshots Componenti/Avatar.Behavior User Status 1`] = `
                 className="icon icon-white"
               >
                 <use
-                  xlinkHref="sprite.svg#it-check"
+                  href="sprite.svg#it-check"
                 />
               </svg>
               <span
@@ -1851,7 +1851,7 @@ exports[`Storyshots Componenti/Avatar.Behavior User Status 1`] = `
                 className="icon icon-white"
               >
                 <use
-                  xlinkHref="sprite.svg#it-close"
+                  href="sprite.svg#it-close"
                 />
               </svg>
               <span
@@ -1879,7 +1879,7 @@ exports[`Storyshots Componenti/Avatar.Behavior User Status 1`] = `
                 className="icon icon-white"
               >
                 <use
-                  xlinkHref="sprite.svg#it-check"
+                  href="sprite.svg#it-check"
                 />
               </svg>
               <span
@@ -1907,7 +1907,7 @@ exports[`Storyshots Componenti/Avatar.Behavior User Status 1`] = `
                 className="icon icon-white"
               >
                 <use
-                  xlinkHref="sprite.svg#it-close"
+                  href="sprite.svg#it-close"
                 />
               </svg>
               <span
@@ -1933,7 +1933,7 @@ exports[`Storyshots Componenti/Avatar.Behavior User Status 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,

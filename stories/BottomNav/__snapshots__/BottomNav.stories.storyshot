@@ -40,7 +40,7 @@ exports[`Storyshots Componenti/BottomNav Alert 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-comment"
+                href="sprite.svg#it-comment"
               />
             </svg>
             <span
@@ -64,7 +64,7 @@ exports[`Storyshots Componenti/BottomNav Alert 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-camera"
+                href="sprite.svg#it-camera"
               />
             </svg>
             <span
@@ -93,7 +93,7 @@ exports[`Storyshots Componenti/BottomNav Alert 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-file"
+                href="sprite.svg#it-file"
               />
             </svg>
             <span
@@ -117,7 +117,7 @@ exports[`Storyshots Componenti/BottomNav Alert 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-star-outline"
+                href="sprite.svg#it-star-outline"
               />
             </svg>
             <span
@@ -139,7 +139,7 @@ exports[`Storyshots Componenti/BottomNav Alert 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-settings"
+                href="sprite.svg#it-settings"
               />
             </svg>
             <span
@@ -167,7 +167,7 @@ exports[`Storyshots Componenti/BottomNav Alert 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -223,7 +223,7 @@ exports[`Storyshots Componenti/BottomNav Badge 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-comment"
+                href="sprite.svg#it-comment"
               />
             </svg>
             <span
@@ -256,7 +256,7 @@ exports[`Storyshots Componenti/BottomNav Badge 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-camera"
+                href="sprite.svg#it-camera"
               />
             </svg>
             <span
@@ -289,7 +289,7 @@ exports[`Storyshots Componenti/BottomNav Badge 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-file"
+                href="sprite.svg#it-file"
               />
             </svg>
             <span
@@ -313,7 +313,7 @@ exports[`Storyshots Componenti/BottomNav Badge 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-star-outline"
+                href="sprite.svg#it-star-outline"
               />
             </svg>
             <span
@@ -335,7 +335,7 @@ exports[`Storyshots Componenti/BottomNav Badge 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-settings"
+                href="sprite.svg#it-settings"
               />
             </svg>
             <span
@@ -363,7 +363,7 @@ exports[`Storyshots Componenti/BottomNav Badge 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
@@ -410,7 +410,7 @@ exports[`Storyshots Componenti/BottomNav Esempi 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-comment"
+                href="sprite.svg#it-comment"
               />
             </svg>
             <span
@@ -432,7 +432,7 @@ exports[`Storyshots Componenti/BottomNav Esempi 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-camera"
+                href="sprite.svg#it-camera"
               />
             </svg>
             <span
@@ -454,7 +454,7 @@ exports[`Storyshots Componenti/BottomNav Esempi 1`] = `
               className="icon"
             >
               <use
-                xlinkHref="sprite.svg#it-file"
+                href="sprite.svg#it-file"
               />
             </svg>
             <span
@@ -482,7 +482,7 @@ exports[`Storyshots Componenti/BottomNav Esempi 1`] = `
         "cursor": "pointer",
         "display": "block",
         "fontFamily": "sans-serif",
-        "fontSize": "12px",
+        "fontSize": 12,
         "padding": "5px 15px",
         "position": "fixed",
         "right": 0,
