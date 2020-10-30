@@ -325,7 +325,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         </svg>
                       </button>
                       <div
-                        className="navbar-collapsable collapse navbar-collapse"
+                        className="navbar-collapsable collapse navbar-collapsable"
                         style={
                           Object {
                             "display": "none",
@@ -2404,7 +2404,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         </svg>
                       </button>
                       <div
-                        className="navbar-collapsable collapse navbar-collapse"
+                        className="navbar-collapsable collapse navbar-collapsable"
                         style={
                           Object {
                             "display": "none",
@@ -5227,7 +5227,7 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </svg>
                       </button>
                       <div
-                        className="navbar-collapsable collapse navbar-collapse"
+                        className="navbar-collapsable collapse navbar-collapsable"
                         style={
                           Object {
                             "display": "none",
