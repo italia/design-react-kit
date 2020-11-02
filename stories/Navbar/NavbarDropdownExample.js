@@ -6,10 +6,15 @@ import {
   Collapse,
   Nav,
   NavItem,
-  NavLink
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  LinkList,
+  LinkListItem
 } from '../../src'
 
-const NavbarExample = () => {
+const NavbarDropdownExample = () => {
   const [openNav, setOpenNav] = useState(false)
   const toggle = () => {
     setOpenNav(!openNav)
@@ -44,9 +49,29 @@ const NavbarExample = () => {
               <NavLink href="#">link 5</NavLink>
             </NavItem>
 
-            <NavItem>
-              <NavLink href="#">link 6</NavLink>
-            </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Dropdown item
+              </DropdownToggle>
+              <DropdownMenu>
+                <LinkList>
+                  <LinkListItem header>Header</LinkListItem>
+                  <LinkListItem>
+                    <span>Link list 1</span>
+                  </LinkListItem>
+                  <LinkListItem>
+                    <span>Link list 2</span>
+                  </LinkListItem>
+                  <LinkListItem>
+                    <span>Link list 3</span>
+                  </LinkListItem>
+                  <LinkListItem divider />
+                  <LinkListItem>
+                    <span>Link list 4</span>
+                  </LinkListItem>
+                </LinkList>
+              </DropdownMenu>
+            </UncontrolledDropdown>
           </Nav>
         </Collapse>
       </Navbar>
@@ -54,4 +79,4 @@ const NavbarExample = () => {
   )
 }
 
-export default NavbarExample
+export default NavbarDropdownExample

@@ -196,10 +196,10 @@ exports[`Storyshots Componenti/Popover Esempi interattivi 1`] = `
     }
   >
     <div
+      className="d-flex  justify-content-center"
       style={
         Object {
-          "padding": 250,
-          "textAlign": "center",
+          "paddingTop": "120px",
         }
       }
     >

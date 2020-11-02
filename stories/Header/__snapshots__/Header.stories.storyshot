@@ -351,7 +351,7 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
                     </svg>
                   </button>
                   <div
-                    className="navbar-collapsable collapse navbar-collapse"
+                    className="navbar-collapsable collapse navbar-collapsable"
                     style={
                       Object {
                         "display": "none",
@@ -713,7 +713,7 @@ exports[`Storyshots Componenti/Header Header nav 1`] = `
                 </svg>
               </button>
               <div
-                className="navbar-collapsable collapse navbar-collapse"
+                className="navbar-collapsable collapse navbar-collapsable"
                 style={
                   Object {
                     "display": "none",

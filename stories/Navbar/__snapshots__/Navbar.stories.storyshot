@@ -38,7 +38,7 @@ exports[`Storyshots Componenti/Navbar Con Dropdown 1`] = `
           />
         </button>
         <div
-          className="collapse navbar-collapse"
+          className="collapse navbar-collapsable"
           style={Object {}}
         >
           <ul
@@ -246,7 +246,7 @@ exports[`Storyshots Componenti/Navbar Con Megamenu (in progress) 1`] = `
           />
         </button>
         <div
-          className="collapse navbar-collapse"
+          className="collapse navbar-collapsable"
           style={Object {}}
         >
           <ul
@@ -441,7 +441,7 @@ exports[`Storyshots Componenti/Navbar Esempi 1`] = `
           />
         </button>
         <div
-          className="collapse navbar-collapse"
+          className="collapse navbar-collapsable"
           style={Object {}}
         >
           <ul
