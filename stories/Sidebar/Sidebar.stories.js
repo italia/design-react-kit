@@ -1,5 +1,4 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 
@@ -46,16 +45,16 @@ const BasicSidebarComponent = () => (
   </Sidebar>
 )
 
-storiesOf('Componenti/Sidebar.Basic Sidebar', module)
-  .addDecorator(withA11y)
-  .add(
-    'Basic Sidebar',
-    withInfo({
-      text: BasicSidebar,
-      propTables: [Sidebar],
-      propTablesExclude: [LinkList, LinkListItem]
-    })(BasicSidebarComponent)
-  )
+export default {
+  title: 'Componenti/Sidebar',
+  decorators: [withA11y]
+}
+
+export const _BasicSidebar = withInfo({
+  text: BasicSidebar,
+  propTables: [Sidebar],
+  propTablesExclude: [LinkList, LinkListItem]
+})(BasicSidebarComponent)
 
 const ConIconaSidebarComponent = () => (
   <Sidebar>
@@ -117,16 +116,15 @@ const ConIconaSidebarComponent = () => (
   </Sidebar>
 )
 
-storiesOf('Componenti/Sidebar.Basic Sidebar', module)
-  .addDecorator(withA11y)
-  .add(
-    'Con icona',
-    withInfo({
-      text: ConIcona,
-      propTables: [Sidebar],
-      propTablesExclude: [LinkList, LinkListItem]
-    })(ConIconaSidebarComponent)
-  )
+export const _ConIcona = withInfo({
+  text: ConIcona,
+  propTables: [Sidebar],
+  propTablesExclude: [LinkList, LinkListItem]
+})(ConIconaSidebarComponent)
+
+_ConIcona.story = {
+  name: 'Con icona'
+}
 
 const ConLineaDestraSidebarComponent = () => (
   <Sidebar right>
@@ -160,16 +158,15 @@ const ConLineaDestraSidebarComponent = () => (
   </Sidebar>
 )
 
-storiesOf('Componenti/Sidebar.Basic Sidebar', module)
-  .addDecorator(withA11y)
-  .add(
-    'Con linea a destra',
-    withInfo({
-      text: ConLineaDestra,
-      propTables: [Sidebar],
-      propTablesExclude: [LinkList, LinkListItem]
-    })(ConLineaDestraSidebarComponent)
-  )
+export const ConLineaADestra = withInfo({
+  text: ConLineaDestra,
+  propTables: [Sidebar],
+  propTablesExclude: [LinkList, LinkListItem]
+})(ConLineaDestraSidebarComponent)
+
+ConLineaADestra.story = {
+  name: 'Con linea a destra'
+}
 
 const ConLineaSinistraSidebarComponent = () => (
   <Sidebar left>
@@ -203,26 +200,21 @@ const ConLineaSinistraSidebarComponent = () => (
   </Sidebar>
 )
 
-storiesOf('Componenti/Sidebar.Basic Sidebar', module)
-  .addDecorator(withA11y)
-  .add(
-    'Con linea a sinistra',
-    withInfo({
-      text: ConLineaSinistra,
-      propTables: [Sidebar],
-      propTablesExclude: [LinkList, LinkListItem]
-    })(ConLineaSinistraSidebarComponent)
-  )
-storiesOf('Componenti/Sidebar', module)
-  .addDecorator(withA11y)
-  .add(
-    'Annidata',
-    withInfo({
-      text: Annidata,
-      propTables: [Sidebar],
-      propTablesExclude: [LinkList, LinkListItem]
-    })(() => <SidebarCollapseExample />)
-  )
+export const ConLineaASinistra = withInfo({
+  text: ConLineaSinistra,
+  propTables: [Sidebar],
+  propTablesExclude: [LinkList, LinkListItem]
+})(ConLineaSinistraSidebarComponent)
+
+ConLineaASinistra.story = {
+  name: 'Con linea a sinistra'
+}
+
+export const _Annidata = withInfo({
+  text: Annidata,
+  propTables: [Sidebar],
+  propTablesExclude: [LinkList, LinkListItem]
+})(() => <SidebarCollapseExample />)
 
 const ScuraSidebarComponent = () => (
   <Sidebar dark>
@@ -256,13 +248,16 @@ const ScuraSidebarComponent = () => (
   </Sidebar>
 )
 
-storiesOf('Componenti/Sidebar', module)
-  .addDecorator(withA11y)
-  .add(
-    'Sidebar versione scura',
-    withInfo({
-      text: ScuraSidebar,
-      propTables: [Sidebar],
-      propTablesExclude: [LinkList, LinkListItem]
-    })(ScuraSidebarComponent)
-  )
+_Annidata.story = {
+  name: 'Sidebar annidata'
+}
+
+export const SidebarVersioneScura = withInfo({
+  text: ScuraSidebar,
+  propTables: [Sidebar],
+  propTablesExclude: [LinkList, LinkListItem]
+})(ScuraSidebarComponent)
+
+SidebarVersioneScura.story = {
+  name: 'Sidebar versione scura'
+}

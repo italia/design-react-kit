@@ -1,22 +1,21 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import { withKnobs, text, select } from '@storybook/addon-knobs/react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
-import { UncontrolledTooltip, Button } from '../../src'
+import React from 'react';
+import { withKnobs, text, select } from '@storybook/addon-knobs/react';
+import { withA11y } from '@storybook/addon-a11y';
+import { withInfo } from '@storybook/addon-info';
+import { UncontrolledTooltip, Button } from '../../src';
 
-import Esempi from './docs/Esempi.md'
-import Posizioni from './docs/Posizioni.md'
-import EsempiInterattivi from './docs/EsempiInterattivi.md'
+import Esempi from './docs/Esempi.md';
+import Posizioni from './docs/Posizioni.md';
+import EsempiInterattivi from './docs/EsempiInterattivi.md';
 
 const EsempiComponent = () => {
-  const ids = ['Example1', 'Example2', 'Example3']
+  const ids = ['Example1', 'Example2', 'Example3'];
 
   ids.map((id, i) => {
-    const div = document.createElement('div')
-    div.setAttribute('id', id)
-    document.body.appendChild(div)
-  })
+    const div = document.createElement('div');
+    div.setAttribute('id', id);
+    document.body.appendChild(div);
+  });
 
   return (
     <div className="bd-example tooltip-demo">
@@ -68,17 +67,17 @@ const EsempiComponent = () => {
         Terzo tooltip
       </UncontrolledTooltip>
     </div>
-  )
-}
+  );
+};
 
 const PosizioniComponent = () => {
-  const ids = ['example1', 'example2', 'example3', 'example4', 'example5']
+  const ids = ['example1', 'example2', 'example3', 'example4', 'example5'];
 
   ids.map((id, i) => {
-    const div = document.createElement('div')
-    div.setAttribute('id', id)
-    document.body.appendChild(div)
-  })
+    const div = document.createElement('div');
+    div.setAttribute('id', id);
+    document.body.appendChild(div);
+  });
 
   return (
     <div style={{ padding: 100 }}>
@@ -114,8 +113,8 @@ const PosizioniComponent = () => {
         <em>Tooltip</em> <u>with</u> <b>HTML</b>
       </UncontrolledTooltip>
     </div>
-  )
-}
+  );
+};
 
 const EsempiInterattiviComponent = () => {
   // TODO find a better way to handle this
@@ -126,14 +125,14 @@ const EsempiInterattiviComponent = () => {
   // https://github.com/storybookjs/storybook/issues/886
   // https://github.com/infinitered/addon-storyshots#using-createnodemock-to-mock-refs
 
-  const id = 'example'
-  const div = document.createElement('div')
-  div.setAttribute('id', id)
-  document.body.appendChild(div)
+  const id = 'example';
+  const div = document.createElement('div');
+  div.setAttribute('id', id);
+  document.body.appendChild(div);
 
-  const placements = ['top', 'bottom', 'left', 'right']
-  const placement = select('Posizione', placements, placements[0])
-  const body = text('Body', 'Tooltip')
+  const placements = ['top', 'bottom', 'left', 'right'];
+  const placement = select('Posizione', placements, placements[0]);
+  const body = text('Body', 'Tooltip');
 
   return (
     <div style={{ padding: 200 }}>
@@ -145,27 +144,26 @@ const EsempiInterattiviComponent = () => {
         {body}
       </UncontrolledTooltip>
     </div>
-  )
-}
+  );
+};
 
-storiesOf('Componenti/Tooltip', module)
-  .addDecorator(withA11y)
-  .addDecorator(withKnobs)
-  .add(
-    'Esempi',
-    withInfo({
-      text: Esempi
-    })(EsempiComponent)
-  )
-  .add(
-    'Posizioni',
-    withInfo({
-      text: Posizioni
-    })(PosizioniComponent)
-  )
-  .add(
-    'Esempi interattivi',
-    withInfo({
-      text: EsempiInterattivi
-    })(EsempiInterattiviComponent)
-  )
+export default {
+  title: 'Componenti/Tooltip',
+  decorators: [withA11y, withKnobs],
+};
+
+export const _Esempi = withInfo({
+  text: Esempi,
+})(EsempiComponent);
+
+export const _Posizioni = withInfo({
+  text: Posizioni,
+})(PosizioniComponent);
+
+export const _EsempiInterattivi = withInfo({
+  text: EsempiInterattivi,
+})(EsempiInterattiviComponent);
+
+_EsempiInterattivi.story = {
+  name: 'Esempi interattivi',
+};

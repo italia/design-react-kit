@@ -1,5 +1,4 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 import { withKnobs, text, boolean } from '@storybook/addon-knobs'
@@ -326,88 +325,100 @@ const EsempiInterattiviComponent = () => {
   )
 }
 
-storiesOf('Componenti/Cards', module)
-  .addDecorator(withA11y)
-  .add(
-    'Simple Card',
-    withInfo({
-      text: SimpleCard,
-      propTables: [Card],
-      propTablesExclude: [Button]
-    })(SimpleCardComponent)
-  )
-  .add(
-    'Simple Card in multiple columns',
-    withInfo({
-      text: SimpleCardMultipleColumns,
-      propTables: [Card],
-      propTablesExclude: [Button]
-    })(SimpleCardMultipleColumnsComponent)
-  )
-  .add(
-    'Simple Article',
-    withInfo({
-      text: SimpleArticle,
-      propTables: [Card]
-    })(SimpleArticleComponent)
-  )
-  .add(
-    'Simple Article with Icon',
-    withInfo({
-      text: SimpleArticle,
-      propTables: [Card, CardCategory]
-    })(SimpleArticleDateIconComponent)
-  )
-  .add(
-    'Card with icon',
-    withInfo({
-      text: CardIcon,
-      propTables: [Card]
-    })(CardIconComponent)
-  )
-  .add(
-    'Card with shading',
-    withInfo({
-      text: CardShading,
-      propTables: [Card],
-      propTablesExclude: [Button]
-    })(CardShadingComponent)
-  )
-  .add(
-    'Big card',
-    withInfo({
-      text: BigCard,
-      propTables: [Card]
-    })(BigCardComponent)
-  )
-  .add(
-    'Big card with tag',
-    withInfo({
-      text: BigCardTag,
-      propTables: [Card]
-    })(BigCardTagComponent)
-  )
-  .add(
-    'Card with image',
-    withInfo({
-      text: CardImage,
-      propTables: [Card]
-    })(CardImageComponent)
-  )
-  .add(
-    'Special cards',
-    withInfo({
-      text: SpecialCard,
-      propTables: [Card]
-    })(SpecialCardComponent)
-  )
+export default {
+  title: 'Componenti/Cards',
+  decorators: [withA11y, withKnobs]
+}
 
-storiesOf('Componenti/Cards', module)
-  .addDecorator(withA11y)
-  .addDecorator(withKnobs)
-  .add(
-    'Esempi interattivi',
-    withInfo({
-      text: EsempiInterattivi
-    })(EsempiInterattiviComponent)
-  )
+export const _SimpleCard = withInfo({
+  text: SimpleCard,
+  propTables: [Card],
+  propTablesExclude: [Button]
+})(SimpleCardComponent)
+
+export const SimpleCardInMultipleColumns = withInfo({
+  text: SimpleCardMultipleColumns,
+  propTables: [Card],
+  propTablesExclude: [Button]
+})(SimpleCardMultipleColumnsComponent)
+
+SimpleCardInMultipleColumns.story = {
+  name: 'Simple Card in multiple columns'
+}
+
+export const _SimpleArticle = withInfo({
+  text: SimpleArticle,
+  propTables: [Card]
+})(SimpleArticleComponent)
+
+export const SimpleArticleWithIcon = withInfo({
+  text: SimpleArticle,
+  propTables: [Card, CardCategory]
+})(SimpleArticleDateIconComponent)
+
+SimpleArticleWithIcon.story = {
+  name: 'Simple Article with Icon'
+}
+
+export const CardWithIcon = withInfo({
+  text: CardIcon,
+  propTables: [Card]
+})(CardIconComponent)
+
+CardWithIcon.story = {
+  name: 'Card with icon'
+}
+
+export const CardWithShading = withInfo({
+  text: CardShading,
+  propTables: [Card],
+  propTablesExclude: [Button]
+})(CardShadingComponent)
+
+CardWithShading.story = {
+  name: 'Card with shading'
+}
+
+export const _BigCard = withInfo({
+  text: BigCard,
+  propTables: [Card]
+})(BigCardComponent)
+
+_BigCard.story = {
+  name: 'Big card'
+}
+
+export const BigCardWithTag = withInfo({
+  text: BigCardTag,
+  propTables: [Card]
+})(BigCardTagComponent)
+
+BigCardWithTag.story = {
+  name: 'Big card with tag'
+}
+
+export const CardWithImage = withInfo({
+  text: CardImage,
+  propTables: [Card]
+})(CardImageComponent)
+
+CardWithImage.story = {
+  name: 'Card with image'
+}
+
+export const SpecialCards = withInfo({
+  text: SpecialCard,
+  propTables: [Card]
+})(SpecialCardComponent)
+
+SpecialCards.story = {
+  name: 'Special cards'
+}
+
+export const _EsempiInterattivi = withInfo({
+  text: EsempiInterattivi
+})(EsempiInterattiviComponent)
+
+_EsempiInterattivi.story = {
+  name: 'Esempi interattivi'
+}

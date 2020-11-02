@@ -1,19 +1,18 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
+import React from 'react';
+import { withA11y } from '@storybook/addon-a11y';
+import { withInfo } from '@storybook/addon-info';
 
-import { Nav, NavItem, NavLink, TabContent, TabPane } from '../../src'
+import { Nav, NavItem, NavLink, TabContent, TabPane } from '../../src';
 
-import TabExample from './TabExample'
-import TabButtonExample from './TabButtonExample'
+import TabExample from './TabExample';
+import TabButtonExample from './TabButtonExample';
 
-import Esempi from './docs/Esempi.md'
-import Contenuto from './docs/Contenuto.md'
-import Icone from './docs/Icone.md'
-import IconeTesto from './docs/IconeTesto.md'
-import TabBottoni from './docs/TabBottoni.md'
-import AllineamentoVerticale from './docs/AllineamentoVerticale.md'
+import Esempi from './docs/Esempi.md';
+import Contenuto from './docs/Contenuto.md';
+import Icone from './docs/Icone.md';
+import IconeTesto from './docs/IconeTesto.md';
+import TabBottoni from './docs/TabBottoni.md';
+import AllineamentoVerticale from './docs/AllineamentoVerticale.md';
 
 const EsempiComponent = () => (
   <div>
@@ -55,52 +54,51 @@ const EsempiComponent = () => (
       </NavItem>
     </Nav>
   </div>
-)
-storiesOf('Componenti/Tab', module)
-  .addDecorator(withA11y)
-  .add(
-    'Esempi',
-    withInfo({
-      text: Esempi
-    })(EsempiComponent)
-  )
-  .add(
-    'Contenuto',
-    withInfo({
-      text: Contenuto,
-      propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-      propTablesExclude: [TabExample]
-    })(() => <TabExample text />)
-  )
-  .add(
-    'Icone',
-    withInfo({
-      text: Icone,
-      propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-      propTablesExclude: [TabExample]
-    })(() => <TabExample icons />)
-  )
-  .add(
-    'Icone e testo',
-    withInfo({
-      text: IconeTesto,
-      propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-      propTablesExclude: [TabExample]
-    })(() => <TabExample text icons />)
-  )
-  .add(
-    'Tab a bottoni',
-    withInfo({
-      text: TabBottoni,
-      propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-      propTablesExclude: [TabButtonExample]
-    })(() => <TabButtonExample />)
-  )
-  .add(
-    'Allineamento Verticale',
-    withInfo({
-      text: AllineamentoVerticale,
-      propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
-      propTablesExclude: [TabButtonExample]
-    })(() => <TabButtonExample vertical />)
-  )
+);
+
+export default {
+  title: 'Componenti/Tab',
+  decorators: [withA11y],
+};
+
+export const _Esempi = withInfo({
+  text: Esempi,
+})(EsempiComponent);
+
+export const _Contenuto = withInfo({
+  text: Contenuto,
+  propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+  propTablesExclude: [TabExample],
+})(() => <TabExample text />);
+
+export const _Icone = withInfo({
+  text: Icone,
+  propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+  propTablesExclude: [TabExample],
+})(() => <TabExample icons />);
+
+export const IconeETesto = withInfo({
+  text: IconeTesto,
+  propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+  propTablesExclude: [TabExample],
+})(() => <TabExample text icons />);
+
+IconeETesto.story = {
+  name: 'Icone e testo',
+};
+
+export const TabABottoni = withInfo({
+  text: TabBottoni,
+  propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+  propTablesExclude: [TabButtonExample],
+})(() => <TabButtonExample />);
+
+TabABottoni.story = {
+  name: 'Tab a bottoni',
+};
+
+export const _AllineamentoVerticale = withInfo({
+  text: AllineamentoVerticale,
+  propTables: [Nav, NavItem, NavLink, TabContent, TabPane],
+  propTablesExclude: [TabButtonExample],
+})(() => <TabButtonExample vertical />);

@@ -1,9 +1,8 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 
-import { withKnobs, select, boolean } from '@storybook/addon-knobs/react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
+import { select, boolean } from '@storybook/addon-knobs/react'
+// import { withA11y } from '@storybook/addon-a11y'
+// import { withInfo } from '@storybook/addon-info'
 
 import { Alert } from '../../src'
 
@@ -72,38 +71,45 @@ const EsempiInterattiviComponent = () => {
   )
 }
 
-storiesOf('Componenti/Alert', module)
-  .addDecorator(withA11y)
-  .add(
-    'Esempi',
-    withInfo({
-      text: Esempi
-    })(EsempiComponent)
-  )
-  .add(
-    'Esempi Interattivi',
-    withInfo({
-      text: EsempiInterattivi
-    })(EsempiInterattiviComponent)
-  )
-  .add(
-    'Link evidenziato',
-    withInfo({
-      text: LinkEvidenziato
-    })(LinkEvidenziatoComponent)
-  )
-  .add(
-    'Contenuto aggiuntivo',
-    withInfo({
-      text: ContenutoAggiuntivo
-    })(ContenutoAggiuntivoComponent)
-  )
-  .addDecorator(withKnobs)
-  .add(
-    'Chiusura Controllata',
-    withInfo({
-      text: ChiusuraControllata,
-      propTables: [Alert],
-      propTablesExclude: [AlertExample]
-    })(ChiusuraControllataComponent)
-  )
+export default {
+  title: 'Componenti/Alert',
+  component: Alert
+}
+
+export const _Esempi = EsempiComponent
+
+export const _EsempiInterattivi = EsempiInterattiviComponent
+_EsempiInterattivi.args = {
+  color: 'info',
+  open: true
+}
+_EsempiInterattivi.argTypes = {
+  color: {
+    control: {
+      type: 'select',
+      options: ['info', 'success', 'danger', 'warning']
+    }
+  }
+}
+
+// export const _LinkEvidenziato = withInfo({
+//   text: LinkEvidenziato
+// })(LinkEvidenziatoComponent)
+
+// _LinkEvidenziato.story = {
+//   name: 'Link evidenziato'
+// }
+
+// export const _ContenutoAggiuntivo = withInfo({
+//   text: ContenutoAggiuntivo
+// })(ContenutoAggiuntivoComponent)
+
+// _ContenutoAggiuntivo.story = {
+//   name: 'Contenuto aggiuntivo'
+// }
+
+// export const _ChiusuraControllata = withInfo({
+//   text: ChiusuraControllata,
+//   propTables: [Alert],
+//   propTablesExclude: [AlertExample]
+// })(ChiusuraControllataComponent)

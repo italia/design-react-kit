@@ -1,5 +1,4 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import { withKnobs, select, boolean, text } from '@storybook/addon-knobs/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
@@ -143,51 +142,51 @@ const EsempiInterattiviComponent = () => {
   )
 }
 
-storiesOf('Componenti/Button', module)
-  .addDecorator(withA11y)
-  .add(
-    'Esempi',
-    withInfo({
-      text: Esempi
-    })(EsempiComponent)
-  )
-  .add(
-    'Sfondo scuro',
-    withInfo({
-      text: DarkBackground
-    })(DarkBackgroundComponent)
-  )
-  .add(
-    'Varianti di dimensione',
-    withInfo({
-      text: Dimensioni
-    })(DimensioniComponent)
-  )
-  .add(
-    'Bottoni con icona',
-    withInfo({
-      text: ButtonIcon
-    })(ButtonIconComponent)
-  )
-  .add(
-    'Stato Attivo',
-    withInfo({
-      text: StatoAttivo
-    })(StatoAttivoComponent)
-  )
-  .add(
-    'Stato Disabilitato',
-    withInfo({
-      text: StatoDisabilitato
-    })(StatoDisabilitatoComponent)
-  )
+export default {
+  title: 'Componenti/Button',
+  decorators: [withA11y, withKnobs]
+}
 
-storiesOf('Componenti/Button', module)
-  .addDecorator(withA11y)
-  .addDecorator(withKnobs)
-  .add(
-    'Esempi interattivi',
-    withInfo({
-      text: EsempiInterattivi
-    })(EsempiInterattiviComponent)
-  )
+export const _Esempi = withInfo({
+  text: Esempi
+})(EsempiComponent)
+
+export const SfondoScuro = withInfo({
+  text: DarkBackground
+})(DarkBackgroundComponent)
+
+SfondoScuro.story = {
+  name: 'Sfondo scuro'
+}
+
+export const VariantiDiDimensione = withInfo({
+  text: Dimensioni
+})(DimensioniComponent)
+
+VariantiDiDimensione.story = {
+  name: 'Varianti di dimensione'
+}
+
+export const BottoniConIcona = withInfo({
+  text: ButtonIcon
+})(ButtonIconComponent)
+
+BottoniConIcona.story = {
+  name: 'Bottoni con icona'
+}
+
+export const _StatoAttivo = withInfo({
+  text: StatoAttivo
+})(StatoAttivoComponent)
+
+export const _StatoDisabilitato = withInfo({
+  text: StatoDisabilitato
+})(StatoDisabilitatoComponent)
+
+export const _EsempiInterattivi = withInfo({
+  text: EsempiInterattivi
+})(EsempiInterattiviComponent)
+
+_EsempiInterattivi.story = {
+  name: 'Esempi interattivi'
+}

@@ -1,18 +1,15 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import { withKnobs, number, text, select } from '@storybook/addon-knobs/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 
-import { Button, Icon, Progress, Spinner } from '../../src'
+import { Button, Icon, Progress } from '../../src'
 
 import Esempi from './docs/Esempi.md'
 import Etichette from './docs/Etichette.md'
 import Indeterminato from './docs/Indeterminato.md'
 import Colori from './docs/Colori.md'
 import ButtonProgress from './docs/ButtonProgress.md'
-import SpinnerDocs from './docs/SpinnerDocs.md'
-import SpinnerDoppio from './docs/SpinnerDoppio.md'
 import EsempiInterattivi from './docs/EsempiInterattivi.md'
 
 const EsempiComponent = () => (
@@ -106,118 +103,39 @@ const EsempiInterattiviComponent = () => {
   )
 }
 
-const SpinnerComponent = () => (
-  <div className="container">
-    <div className="row">
-      <div className="col-6 col-lg-3">
-        <p className="mb-3">
-          <strong>Spinner standard</strong>
-        </p>
-        <Spinner />
-      </div>
-      <div className="col-6 col-lg-3">
-        <p className="mb-3">
-          <strong>Spinner Attivo</strong>
-        </p>
-        <Spinner active />
-      </div>
-      <div className="col-6 col-lg-3 mt-3 mt-lg-0">
-        <p className="mb-3">
-          <strong>Small</strong>
-        </p>
-        <Spinner small />
-      </div>
-      <div className="col-6 col-lg-3 mt-3 mt-lg-0">
-        <p className="mb-3">
-          <strong>Small attivo</strong>
-        </p>
-        <Spinner small active />
-      </div>
-    </div>
-  </div>
-)
+export default {
+  title: 'Componenti/Progress Indicators',
+  decorators: [withA11y, withKnobs]
+}
 
-const SpinnerDoppioComponent = () => (
-  <div className="container">
-    <div className="row">
-      <div className="col-6 col-lg-3">
-        <p className="mb-3">
-          <strong>Spinner doppio</strong>
-        </p>
-        <Spinner double />
-      </div>
-      <div className="col-6 col-lg-3">
-        <p className="mb-3">
-          <strong>Doppio attivo</strong>
-        </p>
-        <Spinner double active />
-      </div>
-      <div className="col-6 col-lg-3 mt-3 mt-lg-0">
-        <p className="mb-3">
-          <strong>Doppio small</strong>
-        </p>
-        <Spinner double small />
-      </div>
-      <div className="col-6 col-lg-3 mt-3 mt-lg-0">
-        <p className="mb-3">
-          <strong>Doppio small attivo</strong>
-        </p>
-        <Spinner double small active />
-      </div>
-    </div>
-  </div>
-)
+export const _Esempi = withInfo({
+  text: Esempi
+})(EsempiComponent)
 
-storiesOf('Componenti/Progress Indicators', module)
-  .addDecorator(withA11y)
-  .add(
-    'Esempi',
-    withInfo({
-      text: Esempi
-    })(EsempiComponent)
-  )
-  .add(
-    'Etichette',
-    withInfo({
-      text: Etichette
-    })(EtichetteComponent)
-  )
-  .add(
-    'Progresso Indeterminato',
-    withInfo({
-      text: Indeterminato
-    })(ProgressoIndeterminato)
-  )
-  .add(
-    'Colori',
-    withInfo({
-      text: Colori
-    })(ColoriComponent)
-  )
-  .add(
-    'Bottone con Progress Bar',
-    withInfo({
-      text: ButtonProgress
-    })(ButtonProgressComponent)
-  )
-  .addDecorator(withKnobs)
-  .add(
-    'Esempi interattivi',
-    withInfo({
-      text: EsempiInterattivi
-    })(EsempiInterattiviComponent)
-  )
+export const _Etichette = withInfo({
+  text: Etichette
+})(EtichetteComponent)
 
-storiesOf('Componenti/Progress Indicators.Spinners', module)
-  .add(
-    'Spinner',
-    withInfo({
-      text: SpinnerDocs
-    })(SpinnerComponent)
-  )
-  .add(
-    'Spinner Doppio',
-    withInfo({
-      text: SpinnerDoppio
-    })(SpinnerDoppioComponent)
-  )
+export const _ProgressoIndeterminato = withInfo({
+  text: Indeterminato
+})(ProgressoIndeterminato)
+
+export const _Colori = withInfo({
+  text: Colori
+})(ColoriComponent)
+
+export const BottoneConProgressBar = withInfo({
+  text: ButtonProgress
+})(ButtonProgressComponent)
+
+BottoneConProgressBar.story = {
+  name: 'Bottone con Progress Bar'
+}
+
+export const _EsempiInterattivi = withInfo({
+  text: EsempiInterattivi
+})(EsempiInterattiviComponent)
+
+_EsempiInterattivi.story = {
+  name: 'Esempi interattivi'
+}

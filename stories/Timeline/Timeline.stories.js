@@ -1,9 +1,8 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
+import React from 'react';
+import { withA11y } from '@storybook/addon-a11y';
+import { withInfo } from '@storybook/addon-info';
 
-import Esempi from './docs/Esempi.md'
+import Esempi from './docs/Esempi.md';
 
 import {
   Row,
@@ -16,8 +15,8 @@ import {
   CardCategory,
   CardSignature,
   CardReadMore,
-  TimelinePin
-} from '../../src'
+  TimelinePin,
+} from '../../src';
 
 const EsempiComponent = () => (
   <div>
@@ -33,8 +32,8 @@ const EsempiComponent = () => (
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </CardText>
                 <CardSignature>di Federico De Paolis</CardSignature>
                 <CardReadMore text="Leggi di più" iconName="it-arrow-right" />
@@ -49,12 +48,11 @@ const EsempiComponent = () => (
             <Card>
               <CardBody>
                 <CardTitle tag="h5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor…
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </CardText>
               </CardBody>
             </Card>
@@ -71,8 +69,8 @@ const EsempiComponent = () => (
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </CardText>
                 <CardSignature>di Federico De Paolis</CardSignature>
                 <CardReadMore text="Leggi di più" iconName="it-arrow-right" />
@@ -87,12 +85,11 @@ const EsempiComponent = () => (
             <Card>
               <CardBody>
                 <CardTitle tag="h5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor…
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </CardText>
               </CardBody>
             </Card>
@@ -109,8 +106,8 @@ const EsempiComponent = () => (
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </CardText>
                 <CardSignature>di Federico De Paolis</CardSignature>
                 <CardReadMore text="Leggi di più" iconName="it-arrow-right" />
@@ -125,12 +122,11 @@ const EsempiComponent = () => (
             <Card>
               <CardBody>
                 <CardTitle tag="h5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor…
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </CardText>
               </CardBody>
             </Card>
@@ -147,8 +143,8 @@ const EsempiComponent = () => (
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </CardText>
                 <CardSignature>di Federico De Paolis</CardSignature>
                 <CardReadMore text="Leggi di più" iconName="it-arrow-right" />
@@ -163,12 +159,11 @@ const EsempiComponent = () => (
             <Card>
               <CardBody>
                 <CardTitle tag="h5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor…
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
                 </CardText>
               </CardBody>
             </Card>
@@ -178,23 +173,23 @@ const EsempiComponent = () => (
       </Row>
     </Timeline>
   </div>
-)
+);
 
-storiesOf('Componenti/Timeline', module)
-  .addDecorator(withA11y)
-  .add(
-    'Esempi',
-    withInfo({
-      text: Esempi,
-      propTables: [Timeline, TimelinePin],
-      propTablesExclude: [
-        Card,
-        CardBody,
-        CardCategory,
-        CardReadMore,
-        CardSignature,
-        CardText,
-        CardTitle
-      ]
-    })(EsempiComponent)
-  )
+export default {
+  title: 'Componenti/Timeline',
+  decorators: [withA11y],
+};
+
+export const _Esempi = withInfo({
+  text: Esempi,
+  propTables: [Timeline, TimelinePin],
+  propTablesExclude: [
+    Card,
+    CardBody,
+    CardCategory,
+    CardReadMore,
+    CardSignature,
+    CardText,
+    CardTitle,
+  ],
+})(EsempiComponent);

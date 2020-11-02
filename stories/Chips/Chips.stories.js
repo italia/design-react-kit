@@ -1,15 +1,14 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
 
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
+import { withA11y } from '@storybook/addon-a11y';
+import { withInfo } from '@storybook/addon-info';
 
-import { Chip, ChipLabel, Button, Icon, Row, Col } from '../../src'
+import { Chip, ChipLabel, Button, Icon, Row, Col } from '../../src';
 
-import VersioneStandard from './docs/VersioneStandard.md'
-import GreatVersion from './docs/GreatVersion.md'
-import DisabledChip from './docs/DisabledChip.md'
-import ChipGroups from './docs/ChipGroups.md'
+import VersioneStandard from './docs/VersioneStandard.md';
+import GreatVersion from './docs/GreatVersion.md';
+import DisabledChip from './docs/DisabledChip.md';
+import ChipGroups from './docs/ChipGroups.md';
 
 const VersioneStandardComponent = () => (
   <Row>
@@ -37,10 +36,7 @@ const VersioneStandardComponent = () => (
       <p className="mt-4 mb-2">Avatar, testo e chiusura</p>
       <Chip>
         <div className="avatar size-xs">
-          <img
-            src="https://randomuser.me/api/portraits/men/46.jpg"
-            alt="Mario Rossi"
-          />
+          <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi" />
         </div>
         <ChipLabel>Label</ChipLabel>
         <Button close>
@@ -49,7 +45,7 @@ const VersioneStandardComponent = () => (
       </Chip>
     </Col>
   </Row>
-)
+);
 
 const GreatVersionComponent = () => (
   <Row>
@@ -77,10 +73,7 @@ const GreatVersionComponent = () => (
       <p className="mt-4 mb-2">Avatar, testo e chiusura</p>
       <Chip large>
         <div className="avatar size-xs">
-          <img
-            src="https://randomuser.me/api/portraits/men/46.jpg"
-            alt="Mario Rossi"
-          />
+          <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi" />
         </div>
         <ChipLabel>Label</ChipLabel>
         <Button close>
@@ -89,7 +82,7 @@ const GreatVersionComponent = () => (
       </Chip>
     </Col>
   </Row>
-)
+);
 
 const DisabledChipComponent = () => (
   <div>
@@ -111,10 +104,7 @@ const DisabledChipComponent = () => (
     </Chip>
     <Chip large disabled>
       <div className="avatar size-xs">
-        <img
-          src="https://randomuser.me/api/portraits/men/46.jpg"
-          alt="Mario Rossi"
-        />
+        <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi" />
       </div>
       <ChipLabel>Label</ChipLabel>
       <Button close disabled>
@@ -122,7 +112,7 @@ const DisabledChipComponent = () => (
       </Button>
     </Chip>
   </div>
-)
+);
 
 const ChipGroupsComponent = () => (
   <div>
@@ -144,10 +134,7 @@ const ChipGroupsComponent = () => (
     </Chip>
     <Chip>
       <div className="avatar size-xs">
-        <img
-          src="https://randomuser.me/api/portraits/men/46.jpg"
-          alt="Mario Rossi"
-        />
+        <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi" />
       </div>
       <ChipLabel>Label</ChipLabel>
       <Button close>
@@ -173,10 +160,7 @@ const ChipGroupsComponent = () => (
     </Chip>
     <Chip large>
       <div className="avatar size-xs">
-        <img
-          src="https://randomuser.me/api/portraits/men/46.jpg"
-          alt="Mario Rossi"
-        />
+        <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi" />
       </div>
       <ChipLabel>Label</ChipLabel>
       <Button close>
@@ -184,7 +168,7 @@ const ChipGroupsComponent = () => (
       </Button>
     </Chip>
   </div>
-)
+);
 
 const ColorChangeChipComponent = () => (
   <Row>
@@ -212,47 +196,43 @@ const ColorChangeChipComponent = () => (
       </Chip>
     </Col>
   </Row>
-)
+);
 
-storiesOf('Componenti/Chips', module)
-  .addDecorator(withA11y)
-  .add(
-    'Standard Version',
-    withInfo({
-      text: VersioneStandard,
-      propTables: [Chip, ChipLabel],
-      propTablesExclude: [Button, Icon]
-    })(VersioneStandardComponent)
-  )
-  .add(
-    'Great Version',
-    withInfo({
-      text: GreatVersion,
-      propTables: [Chip, ChipLabel],
-      propTablesExclude: [Button, Icon]
-    })(GreatVersionComponent)
-  )
-  .add(
-    'Disabled Chip',
-    withInfo({
-      text: DisabledChip,
-      propTables: [Chip, ChipLabel],
-      propTablesExclude: [Button, Icon]
-    })(DisabledChipComponent)
-  )
-  .add(
-    'Chip Groups',
-    withInfo({
-      text: ChipGroups,
-      propTables: [Chip, ChipLabel],
-      propTablesExclude: [Button, Icon]
-    })(ChipGroupsComponent)
-  )
-  .add(
-    'Chip Color ',
-    withInfo({
-      text: ChipGroups,
-      propTables: [Chip, ChipLabel],
-      propTablesExclude: [Button, Icon]
-    })(ColorChangeChipComponent)
-  )
+export default {
+  title: 'Componenti/Chips',
+  decorators: [withA11y],
+};
+
+export const StandardVersion = withInfo({
+  text: VersioneStandard,
+  propTables: [Chip, ChipLabel],
+  propTablesExclude: [Button, Icon],
+})(VersioneStandardComponent);
+
+export const _GreatVersion = withInfo({
+  text: GreatVersion,
+  propTables: [Chip, ChipLabel],
+  propTablesExclude: [Button, Icon],
+})(GreatVersionComponent);
+
+export const _DisabledChip = withInfo({
+  text: DisabledChip,
+  propTables: [Chip, ChipLabel],
+  propTablesExclude: [Button, Icon],
+})(DisabledChipComponent);
+
+export const _ChipGroups = withInfo({
+  text: ChipGroups,
+  propTables: [Chip, ChipLabel],
+  propTablesExclude: [Button, Icon],
+})(ChipGroupsComponent);
+
+export const ChipColor = withInfo({
+  text: ChipGroups,
+  propTables: [Chip, ChipLabel],
+  propTablesExclude: [Button, Icon],
+})(ColorChangeChipComponent);
+
+ChipColor.story = {
+  name: 'Chip Color ',
+};

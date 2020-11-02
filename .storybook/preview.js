@@ -1,5 +1,6 @@
 import React from 'react';
 import {addParameters, addDecorator, configure} from '@storybook/react';
+import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 import {default as theme} from './theme.js';
 import {FontLoader} from '../src';
 
@@ -32,7 +33,7 @@ addParameters({
          * where to show the addon panel
          * @type {('bottom'|'right')}
          */
-        panelPosition: 'bottom',
+        panelPosition: 'right',
         /**
          * regex for finding the hierarchy root separator
          * @example:
@@ -46,13 +47,17 @@ addParameters({
          */
         theme: theme,
     },
+    docs: {
+        container: DocsContainer,
+        page: DocsPage,
+      },
 });
 
 addDecorator(WrapperDecorator);
 
-function loadStories() {
-    require('../stories/index.js');
-    // You can require as many stories as you need.
-}
+// function loadStories() {
+//     require('../stories/index.js');
+//     // You can require as many stories as you need.
+// }
 
-configure(loadStories, module);
+// configure(loadStories, module);

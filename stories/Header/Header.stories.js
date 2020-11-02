@@ -1,5 +1,4 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 import { withKnobs } from '@storybook/addon-knobs/react'
@@ -58,93 +57,88 @@ const ComponentsToExclude = [
   UncontrolledDropdown
 ]
 
-storiesOf('Componenti/Header', module)
-  .addParameters({
+export default {
+  title: 'Componenti/Header',
+  decorators: [withA11y, withKnobs],
+
+  parameters: {
     options: {
       showPanel: false
     }
-  })
-  .add('Introduzione', () => <Introduction />)
+  }
+}
 
-storiesOf('Componenti/Header', module)
-  .addDecorator(withA11y)
-  .addDecorator(withKnobs)
-  .add(
-    'Header slim',
-    withInfo({
-      text: SlimBasicDoc,
-      propTables: [
-        Header,
-        HeaderContent,
-        HeaderLinkZone,
-        HeaderRightZone,
-        HeaderBrand,
-        HeaderToggler
-      ],
-      propTablesExclude: [SlimHeaderBasic, ...ComponentsToExclude]
-    })(SlimHeaderBasic)
-  )
-  .add(
-    'Header slim with full button',
-    withInfo({
-      text: SlimFullDoc,
-      propTables: [
-        Header,
-        HeaderContent,
-        HeaderLinkZone,
-        HeaderRightZone,
-        HeaderBrand,
-        HeaderToggler
-      ],
-      propTablesExclude: [SlimHeaderFull, ...ComponentsToExclude]
-    })(SlimHeaderFull)
-  )
+export const Introduzione = () => <Introduction />
 
-storiesOf('Componenti/Header', module)
-  .addDecorator(withA11y)
-  .addDecorator(withKnobs)
-  .add(
-    'Header center',
-    withInfo({
-      text: CenterBasicDoc,
-      propTables: [
-        Header,
-        HeaderBrand,
-        HeaderContent,
-        HeaderSearch,
-        HeaderRightZone,
-        HeaderSocialsZone
-      ],
-      propTablesExclude: [CenterHeaderBasic, ...ComponentsToExclude]
-    })(CenterHeaderBasic)
-  )
+export const HeaderSlim = withInfo({
+  text: SlimBasicDoc,
+  propTables: [
+    Header,
+    HeaderContent,
+    HeaderLinkZone,
+    HeaderRightZone,
+    HeaderBrand,
+    HeaderToggler
+  ],
+  propTablesExclude: [SlimHeaderBasic, ...ComponentsToExclude]
+})(SlimHeaderBasic)
 
-storiesOf('Componenti/Header', module)
-  .addDecorator(withA11y)
-  .addDecorator(withKnobs)
-  .add(
-    'Header nav',
-    withInfo({
-      text: NavBasicDoc,
-      propTables: [Header, HeaderContent, HeaderToggler],
-      propTablesExclude: [NavHeaderBasic, ...ComponentsToExclude]
-    })(NavHeaderBasic)
-  )
+HeaderSlim.story = {
+  name: 'Header slim'
+}
 
-storiesOf('Componenti/Header', module)
-  .addDecorator(withA11y)
-  .addDecorator(withKnobs)
-  .add(
-    'Header Complete',
-    withInfo({
-      text: CompleteBasicDoc,
-      propTables: [Headers, Header],
-      propTablesExclude: [
-        CompleteHeaderBasic,
-        SlimHeader,
-        CenterHeader,
-        NavHeader,
-        ...ComponentsToExclude
-      ]
-    })(CompleteHeaderBasic)
-  )
+export const HeaderSlimWithFullButton = withInfo({
+  text: SlimFullDoc,
+  propTables: [
+    Header,
+    HeaderContent,
+    HeaderLinkZone,
+    HeaderRightZone,
+    HeaderBrand,
+    HeaderToggler
+  ],
+  propTablesExclude: [SlimHeaderFull, ...ComponentsToExclude]
+})(SlimHeaderFull)
+
+HeaderSlimWithFullButton.story = {
+  name: 'Header slim with full button'
+}
+
+export const HeaderCenter = withInfo({
+  text: CenterBasicDoc,
+  propTables: [
+    Header,
+    HeaderBrand,
+    HeaderContent,
+    HeaderSearch,
+    HeaderRightZone,
+    HeaderSocialsZone
+  ],
+  propTablesExclude: [CenterHeaderBasic, ...ComponentsToExclude]
+})(CenterHeaderBasic)
+
+HeaderCenter.story = {
+  name: 'Header center'
+}
+
+export const HeaderNav = withInfo({
+  text: NavBasicDoc,
+  propTables: [Header, HeaderContent, HeaderToggler],
+  propTablesExclude: [NavHeaderBasic, ...ComponentsToExclude]
+})(NavHeaderBasic)
+
+HeaderNav.story = {
+  name: 'Header nav'
+}
+
+export const HeaderComplete = withInfo({
+  text: CompleteBasicDoc,
+  propTables: [Headers, Header],
+  propTablesExclude: [
+    CompleteHeaderBasic,
+    SlimHeader,
+    CenterHeader,
+    NavHeader,
+    ...ComponentsToExclude
+  ]
+})(CompleteHeaderBasic)

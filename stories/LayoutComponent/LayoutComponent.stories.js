@@ -1,18 +1,17 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
 
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
+import { withA11y } from '@storybook/addon-a11y';
+import { withInfo } from '@storybook/addon-info';
 
-import { Container, Row, Col } from '../../src'
+import { Container, Row, Col } from '../../src';
 
-import StandardWidth from './docs/StandardWidth.md'
-import SetWidthColumn from './docs/SetWidthColumn.md'
-import VariableWidth from './docs/VariableWidth.md'
-import EqualWidthRow from './docs/EqualWidthRow.md'
-import Breakpoint from './docs/Breakpoint.md'
-import HorizontalGrouping from './docs/HorizontalGrouping.md'
-import MixMatch from './docs/MixMatch.md'
+import StandardWidth from './docs/StandardWidth.md';
+import SetWidthColumn from './docs/SetWidthColumn.md';
+import VariableWidth from './docs/VariableWidth.md';
+import EqualWidthRow from './docs/EqualWidthRow.md';
+import Breakpoint from './docs/Breakpoint.md';
+import HorizontalGrouping from './docs/HorizontalGrouping.md';
+import MixMatch from './docs/MixMatch.md';
 
 const StandardWidthComponent = () => (
   <div>
@@ -28,7 +27,7 @@ const StandardWidthComponent = () => (
       </Row>
     </Container>
   </div>
-)
+);
 
 const SetWidthColumnComponent = () => (
   <div>
@@ -49,7 +48,7 @@ const SetWidthColumnComponent = () => (
       </Row>
     </Container>
   </div>
-)
+);
 
 const VariableWidthComponent = () => (
   <div>
@@ -76,7 +75,7 @@ const VariableWidthComponent = () => (
       </Row>
     </Container>
   </div>
-)
+);
 
 const EqualWidthRowComponent = () => (
   <div>
@@ -91,7 +90,7 @@ const EqualWidthRowComponent = () => (
       </Row>
     </Container>
   </div>
-)
+);
 
 const BreakpointComponent = () => (
   <div>
@@ -112,7 +111,7 @@ const BreakpointComponent = () => (
       </Row>
     </Container>
   </div>
-)
+);
 
 const HorizontalGroupingComponent = () => (
   <div>
@@ -138,7 +137,7 @@ const HorizontalGroupingComponent = () => (
       </Row>
     </Container>
   </div>
-)
+);
 const MixMatchComponent = () => (
   <div>
     <Container>
@@ -171,49 +170,65 @@ const MixMatchComponent = () => (
       </Row>
     </Container>
   </div>
-)
+);
 
-storiesOf('Componenti/Layout Component', module)
-  .addDecorator(withA11y)
-  .add(
-    'Standardize widths',
-    withInfo({
-      text: StandardWidth
-    })(StandardWidthComponent)
-  )
-  .add(
-    'Set width of Column',
-    withInfo({
-      text: SetWidthColumn
-    })(SetWidthColumnComponent)
-  )
-  .add(
-    'Variable width content',
-    withInfo({
-      text: VariableWidth
-    })(VariableWidthComponent)
-  )
-  .add(
-    'Equal-width multi-row',
-    withInfo({
-      text: EqualWidthRow
-    })(EqualWidthRowComponent)
-  )
-  .add(
-    'Tutti i breakpoint',
-    withInfo({
-      text: Breakpoint
-    })(BreakpointComponent)
-  )
-  .add(
-    'Raccolti in orizzontale',
-    withInfo({
-      text: HorizontalGrouping
-    })(HorizontalGroupingComponent)
-  )
-  .add(
-    'Mischiare e abbinare',
-    withInfo({
-      text: MixMatch
-    })(MixMatchComponent)
-  )
+export default {
+  title: 'Componenti/Layout Component',
+  decorators: [withA11y],
+};
+
+export const StandardizeWidths = withInfo({
+  text: StandardWidth,
+})(StandardWidthComponent);
+
+StandardizeWidths.story = {
+  name: 'Standardize widths',
+};
+
+export const SetWidthOfColumn = withInfo({
+  text: SetWidthColumn,
+})(SetWidthColumnComponent);
+
+SetWidthOfColumn.story = {
+  name: 'Set width of Column',
+};
+
+export const VariableWidthContent = withInfo({
+  text: VariableWidth,
+})(VariableWidthComponent);
+
+VariableWidthContent.story = {
+  name: 'Variable width content',
+};
+
+export const EqualWidthMultiRow = withInfo({
+  text: EqualWidthRow,
+})(EqualWidthRowComponent);
+
+EqualWidthMultiRow.story = {
+  name: 'Equal-width multi-row',
+};
+
+export const TuttiIBreakpoint = withInfo({
+  text: Breakpoint,
+})(BreakpointComponent);
+
+TuttiIBreakpoint.story = {
+  name: 'Tutti i breakpoint',
+};
+
+export const RaccoltiInOrizzontale = withInfo({
+  text: HorizontalGrouping,
+})(HorizontalGroupingComponent);
+
+RaccoltiInOrizzontale.story = {
+  name: 'Raccolti in orizzontale',
+};
+
+export const MischiareEAbbinare = withInfo({
+  text: MixMatch,
+})(MixMatchComponent);
+
+MischiareEAbbinare.story = {
+  name: 'Mischiare e abbinare',
+};
