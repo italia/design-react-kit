@@ -1,4 +1,3 @@
-import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
@@ -17,5 +16,5 @@ storiesOf('Componenti/Skiplink', module)
       text: Esempi,
       propTables: [Skiplink, SkiplinkItem],
       propTablesExclude: [SkiplinkExample]
-    })(() => <SkiplinkExample />)
+    })(SkiplinkExample)
   )

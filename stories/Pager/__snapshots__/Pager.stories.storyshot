@@ -1680,6 +1680,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
               <li>
                 <a
                   className="active list-item"
+                  href="#"
                 >
                   pag. 10
                 </a>
@@ -1687,6 +1688,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
               <li>
                 <a
                   className="list-item"
+                  href="#"
                 >
                   pag. 20
                 </a>
@@ -1694,6 +1696,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
               <li>
                 <a
                   className="list-item"
+                  href="#"
                 >
                   pag. 30
                 </a>
@@ -1701,6 +1704,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
               <li>
                 <a
                   className="list-item"
+                  href="#"
                 >
                   pag. 40
                 </a>
@@ -1708,6 +1712,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
               <li>
                 <a
                   className="list-item"
+                  href="#"
                 >
                   pag. 50
                 </a>

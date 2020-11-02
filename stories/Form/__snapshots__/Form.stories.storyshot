@@ -913,19 +913,27 @@ exports[`Storyshots Componenti/Form.Input Area di testo 1`] = `
     <div
       className="form-group"
     >
-      <textarea
-        className=""
-        id="exampleFormControlTextarea1"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        rows="3"
-      />
-      <label
-        className=""
-        htmlFor="exampleFormControlTextarea1"
+      <div
+        className="form-group"
       >
-        Esempio di area di testo
-      </label>
+        <input
+          className="form-control"
+          id="exampleFormControlTextarea1"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          rows="3"
+          type="textarea"
+        />
+        <label
+          className=""
+          htmlFor="exampleFormControlTextarea1"
+        >
+          Esempio di area di testo
+        </label>
+        <small
+          className=""
+        />
+      </div>
     </div>
   </div>
   <button
@@ -977,20 +985,28 @@ exports[`Storyshots Componenti/Form.Input Area di testo con segnaposto 1`] = `
     <div
       className="form-group"
     >
-      <textarea
-        className=""
-        id="exampleFormControlTextarea1"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        placeholder="Testo di esempio"
-        rows="3"
-      />
-      <label
-        className="active"
-        htmlFor="exampleFormControlTextarea1"
+      <div
+        className="form-group"
       >
-        Esempio di area di testo
-      </label>
+        <input
+          className="form-control"
+          id="exampleFormControlTextarea1"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Testo di esempio"
+          rows="3"
+          type="textarea"
+        />
+        <label
+          className="active"
+          htmlFor="exampleFormControlTextarea1"
+        >
+          Esempio di area di testo
+        </label>
+        <small
+          className=""
+        />
+      </div>
     </div>
   </div>
   <button
@@ -1991,14 +2007,14 @@ exports[`Storyshots Componenti/Form.Select Select Multipla 1`] = `
       className="bootstrap-select-wrapper"
     >
       <label
-        htmlFor="selectExample"
+        htmlFor="selectExampleMulti"
       >
         Etichetta di esempio
       </label>
       <div>
         <div
           className=" css-2b097c-container"
-          id="selectExample"
+          id="selectExampleMulti"
           onKeyDown={[Function]}
         >
           <div
@@ -2008,466 +2024,6 @@ exports[`Storyshots Componenti/Form.Select Select Multipla 1`] = `
           >
             <div
               className="react-select__value-container react-select__value-container--is-multi css-g1d714-ValueContainer"
-            >
-              <div
-                className="react-select__placeholder css-1wa3eu0-placeholder"
-              >
-                Scegli una opzione
-              </div>
-              <input
-                aria-autocomplete="list"
-                aria-label="Scegli una opzione"
-                className="css-62g3xt-dummyInput"
-                disabled={false}
-                id="react-select-7-input"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                readOnly={true}
-                tabIndex="0"
-                value=""
-              />
-            </div>
-            <div
-              className="react-select__indicators css-1hb7zxy-IndicatorsContainer"
-            >
-              <div
-                aria-hidden="true"
-                className="react-select__indicator react-select__dropdown-indicator css-tlfecz-indicatorContainer"
-                onMouseDown={[Function]}
-                onTouchEnd={[Function]}
-              >
-                <svg
-                  className="icon"
-                  style={
-                    Object {
-                      "ariaHidden": true,
-                    }
-                  }
-                >
-                  <use
-                    href="sprite.svg#it-arrow-down-triangle"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button
-    className="info__show-button"
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#027ac5",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": 12,
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
-</div>
-`;
-
-exports[`Storyshots Componenti/Form.Select Select classica 1`] = `
-<div
-  style={
-    Object {
-      "boxSizing": "border-box",
-      "margin": "0",
-      "padding": "48px 32px",
-      "position": "relative",
-      "textAlign": "initial",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div
-      className="bootstrap-select-wrapper"
-    >
-      <label
-        htmlFor="selectExample"
-      >
-        Etichetta di esempio
-      </label>
-      <div>
-        <div
-          className=" css-2b097c-container"
-          id="selectExample"
-          onKeyDown={[Function]}
-        >
-          <div
-            className="react-select__control css-yk16xz-control"
-            onMouseDown={[Function]}
-            onTouchEnd={[Function]}
-          >
-            <div
-              className="react-select__value-container css-g1d714-ValueContainer"
-            >
-              <div
-                className="react-select__placeholder css-1wa3eu0-placeholder"
-              >
-                Scegli una opzione
-              </div>
-              <input
-                aria-autocomplete="list"
-                aria-label="Scegli una opzione"
-                className="css-62g3xt-dummyInput"
-                disabled={false}
-                id="react-select-3-input"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                readOnly={true}
-                tabIndex="0"
-                value=""
-              />
-            </div>
-            <div
-              className="react-select__indicators css-1hb7zxy-IndicatorsContainer"
-            >
-              <div
-                aria-hidden="true"
-                className="react-select__indicator react-select__dropdown-indicator css-tlfecz-indicatorContainer"
-                onMouseDown={[Function]}
-                onTouchEnd={[Function]}
-              >
-                <svg
-                  className="icon"
-                  style={
-                    Object {
-                      "ariaHidden": true,
-                    }
-                  }
-                >
-                  <use
-                    href="sprite.svg#it-arrow-down-triangle"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button
-    className="info__show-button"
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#027ac5",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": 12,
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
-</div>
-`;
-
-exports[`Storyshots Componenti/Form.Select Select con gruppi 1`] = `
-<div
-  style={
-    Object {
-      "boxSizing": "border-box",
-      "margin": "0",
-      "padding": "48px 32px",
-      "position": "relative",
-      "textAlign": "initial",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div
-      className="bootstrap-select-wrapper"
-    >
-      <label
-        htmlFor="selectExample"
-      >
-        Etichetta di esempio
-      </label>
-      <div>
-        <div
-          className=" css-2b097c-container"
-          id="selectExample"
-          onKeyDown={[Function]}
-        >
-          <div
-            className="react-select__control css-yk16xz-control"
-            onMouseDown={[Function]}
-            onTouchEnd={[Function]}
-          >
-            <div
-              className="react-select__value-container css-g1d714-ValueContainer"
-            >
-              <div
-                className="react-select__placeholder css-1wa3eu0-placeholder"
-              >
-                Scegli una opzione
-              </div>
-              <input
-                aria-autocomplete="list"
-                aria-label="Scegli una opzione"
-                className="css-62g3xt-dummyInput"
-                disabled={false}
-                id="react-select-8-input"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                readOnly={true}
-                tabIndex="0"
-                value=""
-              />
-            </div>
-            <div
-              className="react-select__indicators css-1hb7zxy-IndicatorsContainer"
-            >
-              <div
-                aria-hidden="true"
-                className="react-select__indicator react-select__dropdown-indicator css-tlfecz-indicatorContainer"
-                onMouseDown={[Function]}
-                onTouchEnd={[Function]}
-              >
-                <svg
-                  className="icon"
-                  style={
-                    Object {
-                      "ariaHidden": true,
-                    }
-                  }
-                >
-                  <use
-                    href="sprite.svg#it-arrow-down-triangle"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button
-    className="info__show-button"
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#027ac5",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": 12,
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
-</div>
-`;
-
-exports[`Storyshots Componenti/Form.Select Select con reset 1`] = `
-<div
-  style={
-    Object {
-      "boxSizing": "border-box",
-      "margin": "0",
-      "padding": "48px 32px",
-      "position": "relative",
-      "textAlign": "initial",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div
-      className="bootstrap-select-wrapper"
-    >
-      <label
-        htmlFor="selectExample"
-      >
-        Etichetta di esempio
-      </label>
-      <div>
-        <div
-          className=" css-2b097c-container"
-          id="selectExample"
-          onKeyDown={[Function]}
-        >
-          <div
-            className="react-select__control css-yk16xz-control"
-            onMouseDown={[Function]}
-            onTouchEnd={[Function]}
-          >
-            <div
-              className="react-select__value-container css-g1d714-ValueContainer"
-            >
-              <div
-                className="react-select__placeholder css-1wa3eu0-placeholder"
-              >
-                Scegli una opzione
-              </div>
-              <input
-                aria-autocomplete="list"
-                aria-label="Scegli una opzione"
-                className="css-62g3xt-dummyInput"
-                disabled={false}
-                id="react-select-5-input"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                readOnly={true}
-                tabIndex="0"
-                value=""
-              />
-            </div>
-            <div
-              className="react-select__indicators css-1hb7zxy-IndicatorsContainer"
-            >
-              <div
-                aria-hidden="true"
-                className="react-select__indicator react-select__dropdown-indicator css-tlfecz-indicatorContainer"
-                onMouseDown={[Function]}
-                onTouchEnd={[Function]}
-              >
-                <svg
-                  className="icon"
-                  style={
-                    Object {
-                      "ariaHidden": true,
-                    }
-                  }
-                >
-                  <use
-                    href="sprite.svg#it-arrow-down-triangle"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button
-    className="info__show-button"
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#027ac5",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": 12,
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
-</div>
-`;
-
-exports[`Storyshots Componenti/Form.Select Select con ricerca 1`] = `
-<div
-  style={
-    Object {
-      "boxSizing": "border-box",
-      "margin": "0",
-      "padding": "48px 32px",
-      "position": "relative",
-      "textAlign": "initial",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div
-      className="bootstrap-select-wrapper"
-    >
-      <label
-        htmlFor="selectExample"
-      >
-        Etichetta di esempio
-      </label>
-      <div>
-        <div
-          className=" css-2b097c-container"
-          id="selectExample"
-          onKeyDown={[Function]}
-        >
-          <div
-            className="react-select__control css-yk16xz-control"
-            onMouseDown={[Function]}
-            onTouchEnd={[Function]}
-          >
-            <div
-              className="react-select__value-container css-g1d714-ValueContainer"
             >
               <div
                 className="react-select__placeholder css-1wa3eu0-placeholder"
@@ -2492,7 +2048,7 @@ exports[`Storyshots Componenti/Form.Select Select con ricerca 1`] = `
                     autoComplete="off"
                     autoCorrect="off"
                     disabled={false}
-                    id="react-select-6-input"
+                    id="react-select-7-input"
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
@@ -2587,7 +2143,7 @@ exports[`Storyshots Componenti/Form.Select Select con ricerca 1`] = `
 </div>
 `;
 
-exports[`Storyshots Componenti/Form.Select Select disabilitata 1`] = `
+exports[`Storyshots Componenti/Form.Select Select classica 1`] = `
 <div
   style={
     Object {
@@ -2611,18 +2167,650 @@ exports[`Storyshots Componenti/Form.Select Select disabilitata 1`] = `
       className="bootstrap-select-wrapper"
     >
       <label
-        htmlFor="selectExample"
+        htmlFor="selectExampleClassic"
+      >
+        Etichetta di esempio
+      </label>
+      <div
+        className=" css-2b097c-container"
+        id="selectExampleClassic"
+        onKeyDown={[Function]}
+      >
+        <div
+          className="react-select__control css-yk16xz-control"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <div
+            className="react-select__value-container css-g1d714-ValueContainer"
+          >
+            <div
+              className="react-select__placeholder css-1wa3eu0-placeholder"
+            >
+              Scegli una opzione
+            </div>
+            <div
+              className="css-b8ldur-Input"
+            >
+              <div
+                className="react-select__input"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <input
+                  aria-autocomplete="list"
+                  aria-label="Scegli una opzione"
+                  autoCapitalize="none"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  disabled={false}
+                  id="react-select-3-input"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  spellCheck="false"
+                  style={
+                    Object {
+                      "background": 0,
+                      "border": 0,
+                      "boxSizing": "content-box",
+                      "color": "inherit",
+                      "fontSize": "inherit",
+                      "label": "input",
+                      "opacity": 1,
+                      "outline": 0,
+                      "padding": 0,
+                      "width": "1px",
+                    }
+                  }
+                  tabIndex="0"
+                  type="text"
+                  value=""
+                />
+                <div
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "overflow": "scroll",
+                      "position": "absolute",
+                      "top": 0,
+                      "visibility": "hidden",
+                      "whiteSpace": "pre",
+                    }
+                  }
+                >
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="react-select__indicators css-1hb7zxy-IndicatorsContainer"
+          >
+            <div
+              aria-hidden="true"
+              className="react-select__indicator react-select__dropdown-indicator css-tlfecz-indicatorContainer"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  href="sprite.svg#it-arrow-down-triangle"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": 12,
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Form.Select Select con gruppi 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="bootstrap-select-wrapper"
+    >
+      <label
+        htmlFor="selectExampleGroups"
+      >
+        Etichetta di esempio
+      </label>
+      <div
+        className=" css-2b097c-container"
+        id="selectExampleGroups"
+        onKeyDown={[Function]}
+      >
+        <div
+          className="react-select__control css-yk16xz-control"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <div
+            className="react-select__value-container css-g1d714-ValueContainer"
+          >
+            <div
+              className="react-select__placeholder css-1wa3eu0-placeholder"
+            >
+              Scegli una opzione
+            </div>
+            <div
+              className="css-b8ldur-Input"
+            >
+              <div
+                className="react-select__input"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <input
+                  aria-autocomplete="list"
+                  aria-label="Scegli una opzione"
+                  autoCapitalize="none"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  disabled={false}
+                  id="react-select-8-input"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  spellCheck="false"
+                  style={
+                    Object {
+                      "background": 0,
+                      "border": 0,
+                      "boxSizing": "content-box",
+                      "color": "inherit",
+                      "fontSize": "inherit",
+                      "label": "input",
+                      "opacity": 1,
+                      "outline": 0,
+                      "padding": 0,
+                      "width": "1px",
+                    }
+                  }
+                  tabIndex="0"
+                  type="text"
+                  value=""
+                />
+                <div
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "overflow": "scroll",
+                      "position": "absolute",
+                      "top": 0,
+                      "visibility": "hidden",
+                      "whiteSpace": "pre",
+                    }
+                  }
+                >
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="react-select__indicators css-1hb7zxy-IndicatorsContainer"
+          >
+            <div
+              aria-hidden="true"
+              className="react-select__indicator react-select__dropdown-indicator css-tlfecz-indicatorContainer"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  href="sprite.svg#it-arrow-down-triangle"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": 12,
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Form.Select Select con reset 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="bootstrap-select-wrapper"
+    >
+      <label
+        htmlFor="selectExampleReset"
+      >
+        Etichetta di esempio
+      </label>
+      <div
+        className=" css-2b097c-container"
+        id="selectExampleReset"
+        onKeyDown={[Function]}
+      >
+        <div
+          className="react-select__control css-yk16xz-control"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <div
+            className="react-select__value-container css-g1d714-ValueContainer"
+          >
+            <div
+              className="react-select__placeholder css-1wa3eu0-placeholder"
+            >
+              Scegli una opzione
+            </div>
+            <div
+              className="css-b8ldur-Input"
+            >
+              <div
+                className="react-select__input"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <input
+                  aria-autocomplete="list"
+                  aria-label="Scegli una opzione"
+                  autoCapitalize="none"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  disabled={false}
+                  id="react-select-5-input"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  spellCheck="false"
+                  style={
+                    Object {
+                      "background": 0,
+                      "border": 0,
+                      "boxSizing": "content-box",
+                      "color": "inherit",
+                      "fontSize": "inherit",
+                      "label": "input",
+                      "opacity": 1,
+                      "outline": 0,
+                      "padding": 0,
+                      "width": "1px",
+                    }
+                  }
+                  tabIndex="0"
+                  type="text"
+                  value=""
+                />
+                <div
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "overflow": "scroll",
+                      "position": "absolute",
+                      "top": 0,
+                      "visibility": "hidden",
+                      "whiteSpace": "pre",
+                    }
+                  }
+                >
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="react-select__indicators css-1hb7zxy-IndicatorsContainer"
+          >
+            <div
+              aria-hidden="true"
+              className="react-select__indicator react-select__dropdown-indicator css-tlfecz-indicatorContainer"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  href="sprite.svg#it-arrow-down-triangle"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": 12,
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Form.Select Select con ricerca 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="bootstrap-select-wrapper"
+    >
+      <label
+        htmlFor="selectExampleSearch"
+      >
+        Etichetta di esempio
+      </label>
+      <div
+        className=" css-2b097c-container"
+        id="selectExampleSearch"
+        onKeyDown={[Function]}
+      >
+        <div
+          className="react-select__control css-yk16xz-control"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <div
+            className="react-select__value-container css-g1d714-ValueContainer"
+          >
+            <div
+              className="react-select__placeholder css-1wa3eu0-placeholder"
+            >
+              Scegli una opzione
+            </div>
+            <div
+              className="css-b8ldur-Input"
+            >
+              <div
+                className="react-select__input"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <input
+                  aria-autocomplete="list"
+                  aria-label="Scegli una opzione"
+                  autoCapitalize="none"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  disabled={false}
+                  id="react-select-6-input"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  spellCheck="false"
+                  style={
+                    Object {
+                      "background": 0,
+                      "border": 0,
+                      "boxSizing": "content-box",
+                      "color": "inherit",
+                      "fontSize": "inherit",
+                      "label": "input",
+                      "opacity": 1,
+                      "outline": 0,
+                      "padding": 0,
+                      "width": "1px",
+                    }
+                  }
+                  tabIndex="0"
+                  type="text"
+                  value=""
+                />
+                <div
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "overflow": "scroll",
+                      "position": "absolute",
+                      "top": 0,
+                      "visibility": "hidden",
+                      "whiteSpace": "pre",
+                    }
+                  }
+                >
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="react-select__indicators css-1hb7zxy-IndicatorsContainer"
+          >
+            <div
+              aria-hidden="true"
+              className="react-select__indicator react-select__dropdown-indicator css-tlfecz-indicatorContainer"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  href="sprite.svg#it-arrow-down-triangle"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": 12,
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Form.Select Select configurabile 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="bootstrap-select-wrapper"
+    >
+      <label
+        htmlFor="selectExampleInteractive"
       >
         Etichetta di esempio
       </label>
       <div>
         <div
-          className="react-select--is-disabled css-14jk2my-container"
-          id="selectExample"
+          className=" css-2b097c-container"
+          id="selectExampleInteractive"
           onKeyDown={[Function]}
         >
           <div
-            className="react-select__control react-select__control--is-disabled css-1fhf3k1-control"
+            className="react-select__control css-yk16xz-control"
             onMouseDown={[Function]}
             onTouchEnd={[Function]}
           >
@@ -2638,8 +2826,8 @@ exports[`Storyshots Componenti/Form.Select Select disabilitata 1`] = `
                 aria-autocomplete="list"
                 aria-label="Scegli una opzione"
                 className="css-62g3xt-dummyInput"
-                disabled={true}
-                id="react-select-4-input"
+                disabled={false}
+                id="react-select-9-input"
                 onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
@@ -2670,6 +2858,164 @@ exports[`Storyshots Componenti/Form.Select Select disabilitata 1`] = `
                   />
                 </svg>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": 12,
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+</div>
+`;
+
+exports[`Storyshots Componenti/Form.Select Select disabilitata 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="bootstrap-select-wrapper"
+    >
+      <label
+        htmlFor="selectExampleDisabled"
+      >
+        Etichetta di esempio
+      </label>
+      <div
+        className="react-select--is-disabled css-14jk2my-container"
+        id="selectExampleDisabled"
+        onKeyDown={[Function]}
+      >
+        <div
+          className="react-select__control react-select__control--is-disabled css-1fhf3k1-control"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <div
+            className="react-select__value-container css-g1d714-ValueContainer"
+          >
+            <div
+              className="react-select__placeholder css-1wa3eu0-placeholder"
+            >
+              Scegli una opzione
+            </div>
+            <div
+              className="css-b8ldur-Input"
+            >
+              <div
+                className="react-select__input"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <input
+                  aria-autocomplete="list"
+                  aria-label="Scegli una opzione"
+                  autoCapitalize="none"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  disabled={true}
+                  id="react-select-4-input"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  spellCheck="false"
+                  style={
+                    Object {
+                      "background": 0,
+                      "border": 0,
+                      "boxSizing": "content-box",
+                      "color": "inherit",
+                      "fontSize": "inherit",
+                      "label": "input",
+                      "opacity": 1,
+                      "outline": 0,
+                      "padding": 0,
+                      "width": "1px",
+                    }
+                  }
+                  tabIndex="0"
+                  type="text"
+                  value=""
+                />
+                <div
+                  style={
+                    Object {
+                      "height": 0,
+                      "left": 0,
+                      "overflow": "scroll",
+                      "position": "absolute",
+                      "top": 0,
+                      "visibility": "hidden",
+                      "whiteSpace": "pre",
+                    }
+                  }
+                >
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="react-select__indicators css-1hb7zxy-IndicatorsContainer"
+          >
+            <div
+              aria-hidden="true"
+              className="react-select__indicator react-select__dropdown-indicator css-tlfecz-indicatorContainer"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <svg
+                className="icon"
+                style={
+                  Object {
+                    "ariaHidden": true,
+                  }
+                }
+              >
+                <use
+                  href="sprite.svg#it-arrow-down-triangle"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -2949,6 +3295,7 @@ exports[`Storyshots Componenti/Form.Toggles Toggles 1`] = `
               Label dell'interruttore 1
               <input
                 className="form-check-input"
+                disabled={false}
                 type="checkbox"
               />
               <span
@@ -2976,6 +3323,7 @@ exports[`Storyshots Componenti/Form.Toggles Toggles 1`] = `
               <input
                 className="form-check-input"
                 defaultChecked={true}
+                disabled={false}
                 type="checkbox"
               />
               <span

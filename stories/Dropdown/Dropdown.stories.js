@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
@@ -8,13 +8,11 @@ import {
   DropdownMenu,
   DropdownItem,
   DropdownToggle,
+  ButtonDropdown,
   Icon,
   LinkList,
   LinkListItem
 } from '../../src'
-
-import DropdownExample from './DropdownExample'
-import DropdownButtonExample from './DropdownButtonExample'
 
 import Esempi from './docs/Esempi.md'
 import VarianteBottoni from './docs/VarianteBottoni.md'
@@ -28,13 +26,61 @@ import MenuIconRight from './docs/MenuIconRight.md'
 import MenuIconLeft from './docs/MenuIconLeft.md'
 import MenuDark from './docs/MenuDark.md'
 
-const VarianteComponent = () => (
-  <section>
-    <DropdownButtonExample color="primary" />
-    <DropdownButtonExample color="secondary" />
-    <DropdownButtonExample color="danger" />
-  </section>
-)
+const VarianteComponent = () => {
+  const [openFirst, toggleFirst] = useState(false)
+  const [openSecond, toggleSecond] = useState(false)
+  const [openThird, toggleThird] = useState(false)
+
+  return (
+    <section>
+      <ButtonDropdown
+        className="mr-3"
+        isOpen={openFirst}
+        toggle={() => toggleFirst(!openFirst)}>
+        <DropdownToggle color="primary" caret>
+          Apri dropdown
+        </DropdownToggle>
+        <DropdownMenu>
+          <LinkList>
+            <LinkListItem>Azione 1</LinkListItem>
+            <LinkListItem>Azione 2</LinkListItem>
+            <LinkListItem>Azione 3</LinkListItem>
+          </LinkList>
+        </DropdownMenu>
+      </ButtonDropdown>
+      <ButtonDropdown
+        className="mr-3"
+        isOpen={openSecond}
+        toggle={() => toggleSecond(!openSecond)}>
+        <DropdownToggle color="secondary" caret>
+          Apri dropdown
+        </DropdownToggle>
+        <DropdownMenu>
+          <LinkList>
+            <LinkListItem>Azione 1</LinkListItem>
+            <LinkListItem>Azione 2</LinkListItem>
+            <LinkListItem>Azione 3</LinkListItem>
+          </LinkList>
+        </DropdownMenu>
+      </ButtonDropdown>
+      <ButtonDropdown
+        className="mr-3"
+        isOpen={openThird}
+        toggle={() => toggleThird(!openThird)}>
+        <DropdownToggle color="danger" caret>
+          Apri dropdown
+        </DropdownToggle>
+        <DropdownMenu>
+          <LinkList>
+            <LinkListItem>Azione 1</LinkListItem>
+            <LinkListItem>Azione 2</LinkListItem>
+            <LinkListItem>Azione 3</LinkListItem>
+          </LinkList>
+        </DropdownMenu>
+      </ButtonDropdown>
+    </section>
+  )
+}
 
 const MenuVociAttiveComponent = () => (
   <div className="clearfix">
@@ -276,6 +322,46 @@ const MenuDarkComponent = () => (
   </div>
 )
 
+const DropdownSimple = () => {
+  const [dropdownOpen, toggleDropdown] = useState(false)
+  return (
+    <Dropdown
+      isOpen={dropdownOpen}
+      toggle={() => toggleDropdown(!dropdownOpen)}>
+      <DropdownToggle className="btn btn-dropdown" tag={'button'} caret>
+        Apri dropdown
+      </DropdownToggle>
+      <DropdownMenu>
+        <LinkList>
+          <LinkListItem>Azione 1</LinkListItem>
+          <LinkListItem>Azione 2</LinkListItem>
+          <LinkListItem>Azione 3</LinkListItem>
+        </LinkList>
+      </DropdownMenu>
+    </Dropdown>
+  )
+}
+
+const DropdownSimpleLink = () => {
+  const [dropdownOpen, toggleDropdown] = useState(false)
+  return (
+    <Dropdown
+      isOpen={dropdownOpen}
+      toggle={() => toggleDropdown(!dropdownOpen)}>
+      <DropdownToggle className="btn btn-dropdown" tag={'span'} caret>
+        Apri dropdown
+      </DropdownToggle>
+      <DropdownMenu>
+        <LinkList>
+          <LinkListItem>Azione 1</LinkListItem>
+          <LinkListItem>Azione 2</LinkListItem>
+          <LinkListItem>Azione 3</LinkListItem>
+        </LinkList>
+      </DropdownMenu>
+    </Dropdown>
+  )
+}
+
 storiesOf('Componenti/Dropdown', module)
   .addDecorator(withA11y)
   .add(
@@ -290,8 +376,8 @@ storiesOf('Componenti/Dropdown', module)
         LinkList,
         LinkListItem
       ],
-      propTablesExclude: [DropdownExample]
-    })(() => <DropdownExample />)
+      propTablesExclude: []
+    })(DropdownSimple)
   )
   .add(
     'Variante Bottoni',
@@ -305,7 +391,7 @@ storiesOf('Componenti/Dropdown', module)
         LinkList,
         LinkListItem
       ],
-      propTablesExclude: [DropdownButtonExample]
+      propTablesExclude: []
     })(VarianteComponent)
   )
   .add(
@@ -320,8 +406,8 @@ storiesOf('Componenti/Dropdown', module)
         LinkList,
         LinkListItem
       ],
-      propTablesExclude: [DropdownExample]
-    })(() => <DropdownExample tag="span" />)
+      propTablesExclude: []
+    })(DropdownSimpleLink)
   )
 
 storiesOf('Componenti/Dropdown.Dropdown menu', module)

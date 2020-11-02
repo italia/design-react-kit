@@ -5,7 +5,13 @@ import { withInfo } from '@storybook/addon-info'
 
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from '../../src'
 
-import ModalExample from './ModalExample'
+import {
+  ModalExampleClassic,
+  ModalExampleCentered,
+  ModalExampleLong,
+  ModalExampleNoAnimation,
+  ModalExampleSizing
+} from './ModalExample'
 import ModalTooltipExample from './ModalTooltipExample'
 import ModalGridExample from './ModalGridExample'
 import ModalDynamicExample from './ModalDynamicExample'
@@ -61,24 +67,24 @@ storiesOf('Componenti/Modal', module)
     withInfo({
       text: Demo,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
-      propTablesExclude: [ModalExample]
-    })(() => <ModalExample />)
+      propTablesExclude: []
+    })(ModalExampleClassic)
   )
   .add(
     'Scroll di contenuti lunghi',
     withInfo({
       text: ScrollContenutiLunghi,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
-      propTablesExclude: [ModalExample]
-    })(() => <ModalExample long />)
+      propTablesExclude: []
+    })(ModalExampleLong)
   )
   .add(
     'Centratura verticale',
     withInfo({
       text: CentraturaVerticale,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
-      propTablesExclude: [ModalExample]
-    })(() => <ModalExample centered />)
+      propTablesExclude: []
+    })(ModalExampleCentered)
   )
   .add(
     'Tooltip and popover',
@@ -86,7 +92,7 @@ storiesOf('Componenti/Modal', module)
       text: TooltipPopover,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
       propTablesExclude: [ModalTooltipExample]
-    })(() => <ModalTooltipExample />)
+    })(ModalTooltipExample)
   )
   .add(
     'Uso della griglia',
@@ -94,7 +100,7 @@ storiesOf('Componenti/Modal', module)
       text: UsoGriglia,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
       propTablesExclude: [ModalGridExample]
-    })(() => <ModalGridExample />)
+    })(ModalGridExample)
   )
   .add(
     'Contenuto della modale variabile',
@@ -109,14 +115,14 @@ storiesOf('Componenti/Modal', module)
     withInfo({
       text: RimuovereAnimazione,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
-      propTablesExclude: [ModalExample]
-    })(() => <ModalExample fade={false} />)
+      propTablesExclude: []
+    })(ModalExampleNoAnimation)
   )
   .add(
     'Dimensioni',
     withInfo({
       text: Dimensioni,
       propTables: [Modal, ModalHeader, ModalBody, ModalFooter],
-      propTablesExclude: [ModalExample]
-    })(() => <ModalExample sizing />)
+      propTablesExclude: []
+    })(ModalExampleSizing)
   )

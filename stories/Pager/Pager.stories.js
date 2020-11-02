@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
 import { withKnobs, select, boolean } from '@storybook/addon-knobs/react'
 import { withA11y } from '@storybook/addon-a11y'
@@ -13,9 +13,13 @@ import {
   FormGroup,
   Icon,
   Input,
-  Label
+  Label,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  LinkList,
+  LinkListItem
 } from '../../src'
-import PageChangerExample from './PageChangerExample'
 
 import Esempi from './docs/Esempi.md'
 import StatoDisabilitatoAttivo from './docs/StatoDisabilitatoAttivo.md'
@@ -219,52 +223,74 @@ const MoreComponent = () => (
   </Pager>
 )
 
-const ChangerComponent = () => (
-  <Pager className="mb-3">
-    <PagerList>
-      <PagerItem>
-        <PagerLink previous href="#">
-          <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
-        </PagerLink>
-      </PagerItem>
-      <PagerItem className="d-none d-sm-block">
-        <PagerLink href="#">1</PagerLink>
-      </PagerItem>
-      <PagerItem className="d-none d-sm-block">
-        <PagerLink tag="span">…</PagerLink>
-      </PagerItem>
-      <PagerItem className="d-none d-sm-block">
-        <PagerLink href="#">24</PagerLink>
-      </PagerItem>
-      <PagerItem className="d-none d-sm-block">
-        <PagerLink href="#">25</PagerLink>
-      </PagerItem>
-      <PagerItem>
-        <PagerLink aria-current="page" href="#">
-          26
-        </PagerLink>
-      </PagerItem>
-      <PagerItem className="d-none d-sm-block">
-        <PagerLink href="#">27</PagerLink>
-      </PagerItem>
-      <PagerItem className="d-none d-sm-block">
-        <PagerLink href="#">28</PagerLink>
-      </PagerItem>
-      <PagerItem className="d-none d-sm-block">
-        <PagerLink tag="span">…</PagerLink>
-      </PagerItem>
-      <PagerItem className="d-none d-sm-block">
-        <PagerLink href="#">50</PagerLink>
-      </PagerItem>
-      <PagerItem>
-        <PagerLink next href="#">
-          <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
-        </PagerLink>
-      </PagerItem>
-    </PagerList>
-    <PageChangerExample />
-  </Pager>
-)
+const ChangerComponent = () => {
+  const [isOpen, toggle] = useState(false)
+  return (
+    <Pager className="mb-3">
+      <PagerList>
+        <PagerItem>
+          <PagerLink previous href="#">
+            <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
+          </PagerLink>
+        </PagerItem>
+        <PagerItem className="d-none d-sm-block">
+          <PagerLink href="#">1</PagerLink>
+        </PagerItem>
+        <PagerItem className="d-none d-sm-block">
+          <PagerLink tag="span">…</PagerLink>
+        </PagerItem>
+        <PagerItem className="d-none d-sm-block">
+          <PagerLink href="#">24</PagerLink>
+        </PagerItem>
+        <PagerItem className="d-none d-sm-block">
+          <PagerLink href="#">25</PagerLink>
+        </PagerItem>
+        <PagerItem>
+          <PagerLink aria-current="page" href="#">
+            26
+          </PagerLink>
+        </PagerItem>
+        <PagerItem className="d-none d-sm-block">
+          <PagerLink href="#">27</PagerLink>
+        </PagerItem>
+        <PagerItem className="d-none d-sm-block">
+          <PagerLink href="#">28</PagerLink>
+        </PagerItem>
+        <PagerItem className="d-none d-sm-block">
+          <PagerLink tag="span">…</PagerLink>
+        </PagerItem>
+        <PagerItem className="d-none d-sm-block">
+          <PagerLink href="#">50</PagerLink>
+        </PagerItem>
+        <PagerItem>
+          <PagerLink next href="#">
+            <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
+          </PagerLink>
+        </PagerItem>
+      </PagerList>
+      <Dropdown isOpen={isOpen} toggle={() => toggle(!isOpen)}>
+        <DropdownToggle
+          tag="a"
+          id="pagerChanger"
+          className="btn btn-dropdown"
+          caret>
+          pag.10
+        </DropdownToggle>
+        <DropdownMenu>
+          <LinkList>
+            <LinkListItem active href="#">
+              pag. 10
+            </LinkListItem>
+            <LinkListItem href="#">pag. 20</LinkListItem>
+            <LinkListItem href="#">pag. 30</LinkListItem>
+            <LinkListItem href="#">pag. 40</LinkListItem>
+            <LinkListItem href="#">pag. 50</LinkListItem>
+          </LinkList>
+        </DropdownMenu>
+      </Dropdown>
+    </Pager>
+  )
+}
 
 const PageJumper = () => (
   <Form>
@@ -530,7 +556,7 @@ storiesOf('Componenti/Pager/Funzioni aggiuntive', module)
     'Page changer',
     withInfo({
       text: Changer,
-      propTablesExclude: [PageChangerExample]
+      propTablesExclude: []
     })(ChangerComponent)
   )
   .add(

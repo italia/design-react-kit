@@ -196,10 +196,10 @@ exports[`Storyshots Componenti/Popover Esempi interattivi 1`] = `
     }
   >
     <div
+      className="d-flex  justify-content-center"
       style={
         Object {
-          "padding": 250,
-          "textAlign": "center",
+          "paddingTop": "120px",
         }
       }
     >
@@ -263,21 +263,16 @@ exports[`Storyshots Componenti/Popover Le quattro direzioni 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "flexDirection": "column",
-          "justifyContent": "center",
-        }
-      }
+      className="d-flex flex-column"
     >
-      <span>
+      <div
+        className="mx-auto align-self-center p-2"
+      >
         <span>
           <button
             aria-label={null}
             className="mr-1 btn btn-secondary"
-            id="Popover-0"
+            id="Popover-left"
             onClick={[Function]}
             type="button"
           >
@@ -285,35 +280,15 @@ exports[`Storyshots Componenti/Popover Le quattro direzioni 1`] = `
             a sinistra
           </button>
         </span>
+      </div>
+      <div
+        className="mx-auto align-self-center p-2"
+      >
         <span>
           <button
             aria-label={null}
             className="mr-1 btn btn-secondary"
-            id="Popover-1"
-            onClick={[Function]}
-            type="button"
-          >
-            Popover 
-            in alto
-          </button>
-        </span>
-        <span>
-          <button
-            aria-label={null}
-            className="mr-1 btn btn-secondary"
-            id="Popover-2"
-            onClick={[Function]}
-            type="button"
-          >
-            Popover 
-            in basso
-          </button>
-        </span>
-        <span>
-          <button
-            aria-label={null}
-            className="mr-1 btn btn-secondary"
-            id="Popover-3"
+            id="Popover-right"
             onClick={[Function]}
             type="button"
           >
@@ -321,7 +296,39 @@ exports[`Storyshots Componenti/Popover Le quattro direzioni 1`] = `
             a destra
           </button>
         </span>
-      </span>
+      </div>
+      <div
+        className="mx-auto align-self-center p-2"
+      >
+        <span>
+          <button
+            aria-label={null}
+            className="mr-1 btn btn-secondary"
+            id="Popover-top"
+            onClick={[Function]}
+            type="button"
+          >
+            Popover 
+            in alto
+          </button>
+        </span>
+      </div>
+      <div
+        className="mx-auto align-self-center p-2"
+      >
+        <span>
+          <button
+            aria-label={null}
+            className="mr-1 btn btn-secondary"
+            id="Popover-bottom"
+            onClick={[Function]}
+            type="button"
+          >
+            Popover 
+            in basso
+          </button>
+        </span>
+      </div>
     </div>
   </div>
   <button

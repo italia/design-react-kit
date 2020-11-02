@@ -562,6 +562,6 @@ storiesOf('Componenti/LinkList.Nested navigation', module)
     withInfo({
       text: Collapsible,
       propTables: [Collapse, LinkList, LinkListItem],
-      propTablesExclude: [LinkListCollapsibleExample]
-    })(() => <LinkListCollapsibleExample />)
+      propTablesExclude: []
+    })(LinkListCollapsibleExample)
   )
