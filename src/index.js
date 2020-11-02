@@ -1,5 +1,4 @@
 export {
-  Alert,
   Container,
   Row,
   Col,
@@ -76,6 +75,7 @@ export {
 
 export { default as Scrollspy } from 'react-scrollspy'
 
+export { default as Alert } from './components/Alert/Alert'
 export { default as Accordion } from './components/Accordion/Accordion'
 export { default as AccordionHeader } from './components/Accordion/AccordionHeader'
 export { default as AccordionBody } from './components/Accordion/AccordionBody'

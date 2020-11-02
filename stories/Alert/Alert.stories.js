@@ -1,20 +1,17 @@
 import React from 'react'
 
-import { select, boolean } from '@storybook/addon-knobs/react'
-// import { withA11y } from '@storybook/addon-a11y'
-// import { withInfo } from '@storybook/addon-info'
-
 import { Alert } from '../../src'
 
 import AlertExample from './AlertExample'
 
-import Esempi from './docs/Esempi.md'
-import EsempiInterattivi from './docs/EsempiInterattivi.md'
-import LinkEvidenziato from './docs/LinkEvidenziato.md'
-import ContenutoAggiuntivo from './docs/ContenutoAggiuntivo.md'
-import ChiusuraControllata from './docs/ChiusuraControllata.md'
+const ChiusuraControllataComponent = () => <AlertExample />
 
-const EsempiComponent = () => (
+export default {
+  title: 'Componenti/Alert',
+  component: Alert
+}
+
+export const _Esempi = () => (
   <div>
     <Alert color="info">
       Questo è un alert di tipo <b>info</b>!
@@ -31,7 +28,25 @@ const EsempiComponent = () => (
   </div>
 )
 
-const LinkEvidenziatoComponent = () => (
+export const _EsempiInterattivi = ({ ...args }) => (
+  <Alert {...args}>
+    Questo è un alert di <b>{args.color}</b>!
+  </Alert>
+)
+_EsempiInterattivi.args = {
+  color: 'info',
+  isOpen: true
+}
+_EsempiInterattivi.argTypes = {
+  color: {
+    control: {
+      type: 'select',
+      options: ['info', 'success', 'danger', 'warning']
+    }
+  }
+}
+
+export const _LinkEvidenziato = () => (
   <Alert color="danger">
     Questo è un alert con un esempio di{' '}
     <a href="#" className="alert-link">
@@ -41,7 +56,7 @@ const LinkEvidenziatoComponent = () => (
   </Alert>
 )
 
-const ContenutoAggiuntivoComponent = () => (
+export const _ContenutoAggiuntivo = () => (
   <Alert>
     <h4 className="alert-heading">Avviso di successo!</h4>
     <p>
@@ -56,57 +71,6 @@ const ContenutoAggiuntivoComponent = () => (
     </p>
   </Alert>
 )
-
-const ChiusuraControllataComponent = () => <AlertExample />
-
-const EsempiInterattiviComponent = () => {
-  const colors = ['info', 'success', 'danger', 'warning']
-  const color = select('Variazioni', colors, colors[0])
-  const open = boolean('Visible', true)
-
-  return (
-    <Alert color={color} isOpen={open}>
-      Questo è un alert di <b>{color}</b>!
-    </Alert>
-  )
-}
-
-export default {
-  title: 'Componenti/Alert',
-  component: Alert
-}
-
-export const _Esempi = EsempiComponent
-
-export const _EsempiInterattivi = EsempiInterattiviComponent
-_EsempiInterattivi.args = {
-  color: 'info',
-  open: true
-}
-_EsempiInterattivi.argTypes = {
-  color: {
-    control: {
-      type: 'select',
-      options: ['info', 'success', 'danger', 'warning']
-    }
-  }
-}
-
-// export const _LinkEvidenziato = withInfo({
-//   text: LinkEvidenziato
-// })(LinkEvidenziatoComponent)
-
-// _LinkEvidenziato.story = {
-//   name: 'Link evidenziato'
-// }
-
-// export const _ContenutoAggiuntivo = withInfo({
-//   text: ContenutoAggiuntivo
-// })(ContenutoAggiuntivoComponent)
-
-// _ContenutoAggiuntivo.story = {
-//   name: 'Contenuto aggiuntivo'
-// }
 
 // export const _ChiusuraControllata = withInfo({
 //   text: ChiusuraControllata,

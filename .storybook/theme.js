@@ -14,5 +14,4 @@ export default create ({
 
     brandTitle: 'Design React Kit',
     brandUrl: 'https://github.com/italia/design-react-kit',
-    //brandImage: 'https://placehold.it/350x150',
 });

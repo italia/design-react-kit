@@ -6,6 +6,7 @@ import {FontLoader} from '../src';
 
 import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
 import '../assets/css/fonts.css';
+import '../assets/css/sourcecode-fix.css';
 
 
 const styles = {
