@@ -37,7 +37,7 @@ const VarianteComponent = () => {
         className="mr-3"
         isOpen={openFirst}
         toggle={() => toggleFirst(!openFirst)}>
-        <DropdownToggle className="" color="primary" caret>
+        <DropdownToggle color="primary" caret>
           Apri dropdown
         </DropdownToggle>
         <DropdownMenu>
@@ -52,7 +52,7 @@ const VarianteComponent = () => {
         className="mr-3"
         isOpen={openSecond}
         toggle={() => toggleSecond(!openSecond)}>
-        <DropdownToggle className="" color="secondary" caret>
+        <DropdownToggle color="secondary" caret>
           Apri dropdown
         </DropdownToggle>
         <DropdownMenu>
@@ -67,7 +67,7 @@ const VarianteComponent = () => {
         className="mr-3"
         isOpen={openThird}
         toggle={() => toggleThird(!openThird)}>
-        <DropdownToggle className="" color="danger" caret>
+        <DropdownToggle color="danger" caret>
           Apri dropdown
         </DropdownToggle>
         <DropdownMenu>
@@ -328,11 +328,7 @@ const DropdownSimple = () => {
     <Dropdown
       isOpen={dropdownOpen}
       toggle={() => toggleDropdown(!dropdownOpen)}>
-      <DropdownToggle
-        className="btn btn-dropdown"
-        color=""
-        tag={'button'}
-        caret>
+      <DropdownToggle className="btn btn-dropdown" tag={'button'} caret>
         Apri dropdown
       </DropdownToggle>
       <DropdownMenu>
@@ -352,7 +348,7 @@ const DropdownSimpleLink = () => {
     <Dropdown
       isOpen={dropdownOpen}
       toggle={() => toggleDropdown(!dropdownOpen)}>
-      <DropdownToggle className="btn btn-dropdown" color="" tag={'span'} caret>
+      <DropdownToggle className="btn btn-dropdown" tag={'span'} caret>
         Apri dropdown
       </DropdownToggle>
       <DropdownMenu>
