@@ -1,11 +1,8 @@
-import React from 'react';
-import { withA11y } from '@storybook/addon-a11y';
-import { withInfo } from '@storybook/addon-info';
-import { withKnobs } from '@storybook/addon-knobs/react';
+import React from 'react'
 
-import Esempi from './docs/Esempi.md';
+import Esempi from './docs/Esempi.md'
 
-import { Section, Container, Row, Col } from '../../src';
+import { Section, Container, Row, Col } from '../../src'
 
 const EsempiComponent = () => {
   return (
@@ -18,22 +15,25 @@ const EsempiComponent = () => {
         </Row>
         <Row>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
-            Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
+            dignissim cras. Dictum sit amet justo donec enim diam vulputate ut.
+            Eu nisl nunc mi ipsum faucibus.
           </Col>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Eget egestas purus viverra accumsan. Diam maecenas ultricies mi eget mauris pharetra et.
-            Etiam dignissim diam quis enim. Eu nisl nunc mi ipsum faucibus.
+            Eget egestas purus viverra accumsan. Diam maecenas ultricies mi eget
+            mauris pharetra et. Etiam dignissim diam quis enim. Eu nisl nunc mi
+            ipsum faucibus.
           </Col>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Euismod lacinia at quis risus sed vulputate. Scelerisque purus semper eget duis at
-            tellus at urna condimentum. Mattis enim ut tellus elementum sagittis.
+            Euismod lacinia at quis risus sed vulputate. Scelerisque purus
+            semper eget duis at tellus at urna condimentum. Mattis enim ut
+            tellus elementum sagittis.
           </Col>
         </Row>
       </Container>
     </Section>
-  );
-};
+  )
+}
 
 const SfondoTenueComponent = () => {
   return (
@@ -46,22 +46,25 @@ const SfondoTenueComponent = () => {
         </Row>
         <Row>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
-            Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
+            dignissim cras. Dictum sit amet justo donec enim diam vulputate ut.
+            Eu nisl nunc mi ipsum faucibus.
           </Col>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Eget egestas purus viverra accumsan. Diam maecenas ultricies mi eget mauris pharetra et.
-            Etiam dignissim diam quis enim. Eu nisl nunc mi ipsum faucibus.
+            Eget egestas purus viverra accumsan. Diam maecenas ultricies mi eget
+            mauris pharetra et. Etiam dignissim diam quis enim. Eu nisl nunc mi
+            ipsum faucibus.
           </Col>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Euismod lacinia at quis risus sed vulputate. Scelerisque purus semper eget duis at
-            tellus at urna condimentum. Mattis enim ut tellus elementum sagittis.
+            Euismod lacinia at quis risus sed vulputate. Scelerisque purus
+            semper eget duis at tellus at urna condimentum. Mattis enim ut
+            tellus elementum sagittis.
           </Col>
         </Row>
       </Container>
     </Section>
-  );
-};
+  )
+}
 
 const SfondoPrimarioComponent = () => {
   return (
@@ -74,22 +77,25 @@ const SfondoPrimarioComponent = () => {
         </Row>
         <Row>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
-            Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
+            dignissim cras. Dictum sit amet justo donec enim diam vulputate ut.
+            Eu nisl nunc mi ipsum faucibus.
           </Col>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Eget egestas purus viverra accumsan. Diam maecenas ultricies mi eget mauris pharetra et.
-            Etiam dignissim diam quis enim. Eu nisl nunc mi ipsum faucibus.
+            Eget egestas purus viverra accumsan. Diam maecenas ultricies mi eget
+            mauris pharetra et. Etiam dignissim diam quis enim. Eu nisl nunc mi
+            ipsum faucibus.
           </Col>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Euismod lacinia at quis risus sed vulputate. Scelerisque purus semper eget duis at
-            tellus at urna condimentum. Mattis enim ut tellus elementum sagittis.
+            Euismod lacinia at quis risus sed vulputate. Scelerisque purus
+            semper eget duis at tellus at urna condimentum. Mattis enim ut
+            tellus elementum sagittis.
           </Col>
         </Row>
       </Container>
     </Section>
-  );
-};
+  )
+}
 
 const SfondoNeutraleComponent = () => {
   return (
@@ -102,22 +108,25 @@ const SfondoNeutraleComponent = () => {
         </Row>
         <Row>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
-            Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
+            dignissim cras. Dictum sit amet justo donec enim diam vulputate ut.
+            Eu nisl nunc mi ipsum faucibus.
           </Col>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Eget egestas purus viverra accumsan. Diam maecenas ultricies mi eget mauris pharetra et.
-            Etiam dignissim diam quis enim. Eu nisl nunc mi ipsum faucibus.
+            Eget egestas purus viverra accumsan. Diam maecenas ultricies mi eget
+            mauris pharetra et. Etiam dignissim diam quis enim. Eu nisl nunc mi
+            ipsum faucibus.
           </Col>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Euismod lacinia at quis risus sed vulputate. Scelerisque purus semper eget duis at
-            tellus at urna condimentum. Mattis enim ut tellus elementum sagittis.
+            Euismod lacinia at quis risus sed vulputate. Scelerisque purus
+            semper eget duis at tellus at urna condimentum. Mattis enim ut
+            tellus elementum sagittis.
           </Col>
         </Row>
       </Container>
     </Section>
-  );
-};
+  )
+}
 
 const ImmagineComponent = () => {
   return (
@@ -130,22 +139,25 @@ const ImmagineComponent = () => {
         </Row>
         <Row>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
-            Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
+            dignissim cras. Dictum sit amet justo donec enim diam vulputate ut.
+            Eu nisl nunc mi ipsum faucibus.
           </Col>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Eget egestas purus viverra accumsan. Diam maecenas ultricies mi eget mauris pharetra et.
-            Etiam dignissim diam quis enim. Eu nisl nunc mi ipsum faucibus.
+            Eget egestas purus viverra accumsan. Diam maecenas ultricies mi eget
+            mauris pharetra et. Etiam dignissim diam quis enim. Eu nisl nunc mi
+            ipsum faucibus.
           </Col>
           <Col xs={'12'} lg={'6'} xl={'4'} className="pr-0 pr-md-5 mb-3">
-            Euismod lacinia at quis risus sed vulputate. Scelerisque purus semper eget duis at
-            tellus at urna condimentum. Mattis enim ut tellus elementum sagittis.
+            Euismod lacinia at quis risus sed vulputate. Scelerisque purus
+            semper eget duis at tellus at urna condimentum. Mattis enim ut
+            tellus elementum sagittis.
           </Col>
         </Row>
       </Container>
     </Section>
-  );
-};
+  )
+}
 
 const SectionConCardComponent = () => {
   return (
@@ -161,18 +173,20 @@ const SectionConCardComponent = () => {
             <div className="card shadow border-0 mg-md-4">
               <div className="card-body">
                 <p className="card-text">
-                  Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim
-                  cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum
-                  faucibus. Eget egestas purus viverra accumsan. Diam maecenas ultricies mi eget
-                  mauris pharetra et.{' '}
+                  Platea dictumst vestibulum rhoncus est pellentesque elit
+                  ullamcorper dignissim cras. Dictum sit amet justo donec enim
+                  diam vulputate ut. Eu nisl nunc mi ipsum faucibus. Eget
+                  egestas purus viverra accumsan. Diam maecenas ultricies mi
+                  eget mauris pharetra et.{' '}
                 </p>
               </div>
             </div>
             <div className="card shadow border-0 mg-md-4">
               <div className="card-body">
                 <p className="card-text">
-                  Etiam dignissim diam quis enim. Eu nisl nunc mi ipsum faucibus. Euismod lacinia at
-                  quis risus sed vulputate. Scelerisque purus semper eget duis at tellus at urna
+                  Etiam dignissim diam quis enim. Eu nisl nunc mi ipsum
+                  faucibus. Euismod lacinia at quis risus sed vulputate.
+                  Scelerisque purus semper eget duis at tellus at urna
                   condimentum. Mattis enim ut tellus elementum sagittis.
                 </p>
               </div>
@@ -181,54 +195,30 @@ const SectionConCardComponent = () => {
         </Row>
       </Container>
     </Section>
-  );
-};
+  )
+}
 
 export default {
   title: 'Componenti/Section',
-  decorators: [withA11y, withKnobs],
-};
+  decorators: [withA11y]
+}
 
-export const Esempio = withInfo({
-  text: Esempi,
-  propTables: [Section],
-  propTablesExclude: [Col, Row, Container],
-})(EsempiComponent);
+export const Esempio = EsempiComponent
 
-export const SfondoTenue = withInfo({
-  text: Esempi,
-  propTables: [Section],
-  propTablesExclude: [Col, Row, Container],
-})(SfondoTenueComponent);
+export const SfondoTenue = SfondoTenueComponent
 
-export const SfondoPrimario = withInfo({
-  text: Esempi,
-  propTables: [Section],
-  propTablesExclude: [Col, Row, Container],
-})(SfondoPrimarioComponent);
+export const SfondoPrimario = SfondoPrimarioComponent
 
-export const SfondoNeutrale = withInfo({
-  text: Esempi,
-  propTables: [Section],
-  propTablesExclude: [Col, Row, Container],
-})(SfondoNeutraleComponent);
+export const SfondoNeutrale = SfondoNeutraleComponent
 
-export const ImmagineDiSfondo = withInfo({
-  text: Esempi,
-  propTables: [Section],
-  propTablesExclude: [Col, Row, Container],
-})(ImmagineComponent);
+export const ImmagineDiSfondo = ImmagineComponent
 
 ImmagineDiSfondo.story = {
-  name: 'Immagine di sfondo',
-};
+  name: 'Immagine di sfondo'
+}
 
-export const SectionConCard = withInfo({
-  text: Esempi,
-  propTables: [Section],
-  propTablesExclude: [Col, Row, Container],
-})(SectionConCardComponent);
+export const SectionConCard = SectionConCardComponent
 
 SectionConCard.story = {
-  name: 'Section con Card',
-};
+  name: 'Section con Card'
+}

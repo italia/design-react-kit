@@ -1,20 +1,13 @@
-import React from 'react';
-import { withA11y } from '@storybook/addon-a11y';
-import { withInfo } from '@storybook/addon-info';
+import React from 'react'
 
-import { Skiplink, SkiplinkItem } from '../../src';
+import { Skiplink, SkiplinkItem } from '../../src'
 
-import SkiplinkExample from './SkiplinkExample';
+import SkiplinkExample from './SkiplinkExample'
 
-import Esempi from './docs/Esempi.md';
+import Esempi from './docs/Esempi.md'
 
 export default {
-  title: 'Componenti/Skiplink',
-  decorators: [withA11y],
-};
+  title: 'Componenti/Skiplink'
+}
 
-export const _Esempi = withInfo({
-  text: Esempi,
-  propTables: [Skiplink, SkiplinkItem],
-  propTablesExclude: [SkiplinkExample],
-})(() => <SkiplinkExample />);
+export const _Esempi = SkiplinkExample

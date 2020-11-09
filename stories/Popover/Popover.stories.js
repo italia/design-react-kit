@@ -1,31 +1,26 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withKnobs, select, boolean, text } from '@storybook/addon-knobs/react';
-import { withA11y } from '@storybook/addon-a11y';
-import { withInfo } from '@storybook/addon-info';
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
-import { State, Store } from '@sambego/storybook-state';
+import { Popover, PopoverHeader, PopoverBody, Button } from '../../src'
 
-import { Popover, PopoverHeader, PopoverBody, Button } from '../../src';
+import PopoverExample from './PopoverExample'
+import PopoverPositionExample from './PopoverPositionExample'
+import PopoverIconLink from './PopoverIconLink'
+import PopoverHover from './PopoverHover'
+import PopoverFocus from './PopoverFocus'
 
-import PopoverExample from './PopoverExample';
-import PopoverPositionExample from './PopoverPositionExample';
-import PopoverIconLink from './PopoverIconLink';
-import PopoverHover from './PopoverHover';
-import PopoverFocus from './PopoverFocus';
-
-import Esempi from './docs/Esempi.md';
-import QuattroDirezioni from './docs/QuattroDirezioni.md';
-import ElementiDisabilitati from './docs/ElementiDisabilitati.md';
-import EsempiInterattivi from './docs/EsempiInterattivi.md';
-import IconLink from './docs/IconLink.md';
-import Hover from './docs/Hover.md';
-import Focus from './docs/Focus.md';
+import Esempi from './docs/Esempi.md'
+import QuattroDirezioni from './docs/QuattroDirezioni.md'
+import ElementiDisabilitati from './docs/ElementiDisabilitati.md'
+import EsempiInterattivi from './docs/EsempiInterattivi.md'
+import IconLink from './docs/IconLink.md'
+import Hover from './docs/Hover.md'
+import Focus from './docs/Focus.md'
 
 const ElementiDisabilitatiComponent = () => {
-  const id = 'example';
+  const id = 'example'
   // Avoid Jest complaints
-  const target = () => document.getElementById(id);
+  const target = () => document.getElementById(id)
 
   return (
     <div>
@@ -35,29 +30,26 @@ const ElementiDisabilitatiComponent = () => {
       <Popover placement="right" target={target}>
         <PopoverHeader>Titolo del popover</PopoverHeader>
         <PopoverBody>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
+          finibus augue.
         </PopoverBody>
       </Popover>
     </div>
-  );
-};
-
-const store = new Store({
-  isOpen: false,
-});
+  )
+}
 
 // Changed The Functional Component to a Class
 class EsempiInterattiviComponent extends React.Component {
   constructor(props) {
-    super(props);
-    this.id = 'example';
+    super(props)
+    this.id = 'example'
     // Avoid Jest complaints
-    this.target = () => document.getElementById(this.id);
+    this.target = () => document.getElementById(this.id)
   }
 
   // All a LifeCycle Method to manage the store State when components unrender.
   componentWillUnmount() {
-    store.set({ isOpen: false });
+    store.set({ isOpen: false })
   }
 
   render() {
@@ -67,8 +59,7 @@ class EsempiInterattiviComponent extends React.Component {
           id={this.id}
           color="primary"
           disabled={this.props.disabled}
-          onClick={() => store.set({ isOpen: !store.get('isOpen') })}
-        >
+          onClick={() => store.set({ isOpen: !store.get('isOpen') })}>
           Popover {this.props.disabled ? 'Disabilitato' : ''}
         </Button>
 
@@ -77,14 +68,13 @@ class EsempiInterattiviComponent extends React.Component {
             placement={this.props.placement}
             target={this.target}
             toggle={() => store.set({ isOpen: !store.get('isOpen') })}
-            isOpen={store.get('isOpen')}
-          >
+            isOpen={store.get('isOpen')}>
             <PopoverHeader>{this.props.title}</PopoverHeader>
             <PopoverBody>{this.props.body}</PopoverBody>
           </Popover>
         </State>
       </div>
-    );
+    )
   }
 }
 
@@ -92,94 +82,89 @@ EsempiInterattiviComponent.propTypes = {
   disabled: PropTypes.bool,
   placement: PropTypes.string,
   title: PropTypes.string,
-  body: PropTypes.string,
-};
+  body: PropTypes.string
+}
 
 export default {
-  title: 'Componenti/Popover',
-  decorators: [withA11y, withKnobs],
-};
+  title: 'Componenti/Popover'
+}
 
-export const _Esempi = withInfo({
-  text: Esempi,
-  propTables: [Popover, PopoverHeader, PopoverBody],
-  propTablesExclude: [PopoverExample],
-})(() => <PopoverExample />);
+export const _Esempi = PopoverExample
 
-export const LeQuattroDirezioni = withInfo({
-  text: QuattroDirezioni,
-  propTables: [Popover, PopoverHeader, PopoverBody],
-  propTablesExclude: [PopoverPositionExample],
-})(() => <PopoverPositionExample />);
+export const LeQuattroDirezioni = PopoverPositionExample
 
 LeQuattroDirezioni.story = {
-  name: 'Le quattro direzioni',
-};
+  name: 'Le quattro direzioni'
+}
 
-export const TitoloConIconaELink = withInfo({
-  text: IconLink,
-  propTables: [Popover, PopoverHeader, PopoverBody],
-  propTablesExclude: [PopoverExample],
-})(() => <PopoverIconLink />);
+export const TitoloConIconaELink = PopoverIconLink
 
 TitoloConIconaELink.story = {
-  name: 'Titolo con icona e link',
-};
+  name: 'Titolo con icona e link'
+}
 
-export const ModalitaHover = withInfo({
-  text: Hover,
-  propTables: [Popover, PopoverHeader, PopoverBody],
-  propTablesExclude: [PopoverExample],
-})(() => <PopoverHover />);
+export const ModalitaHover = PopoverHover
 
 ModalitaHover.story = {
-  name: 'Modalità Hover',
-};
+  name: 'Modalità Hover'
+}
 
-export const DismissAlClickSuccessivo = withInfo({
-  text: Focus,
-  propTables: [Popover, PopoverHeader, PopoverBody],
-  propTablesExclude: [PopoverExample],
-})(() => <PopoverFocus />);
+export const DismissAlClickSuccessivo = PopoverFocus
 
 DismissAlClickSuccessivo.story = {
-  name: 'Dismiss al click successivo',
-};
+  name: 'Dismiss al click successivo'
+}
 
-export const _ElementiDisabilitati = withInfo({
-  text: ElementiDisabilitati,
-  propTablesExclude: [Button],
-})(ElementiDisabilitatiComponent);
+export const _ElementiDisabilitati = ElementiDisabilitatiComponent
 
 _ElementiDisabilitati.story = {
-  name: 'Elementi disabilitati',
-};
+  name: 'Elementi disabilitati'
+}
 
-export const _EsempiInterattivi = withInfo({
-  text: EsempiInterattivi,
-  propTablesExclude: [Button, State],
-})((props) => {
-  // All the proerties for Addon Knobs are placed back in the function
-  const disabled = boolean('Disabilitato', false);
-  const placements = ['top', 'bottom', 'left', 'right'];
-  const placement = select('Posizione', placements, placements[0]);
-  const title = text('Titolo', 'Titolo del popover');
-  const body = text(
-    'Body',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.'
-  );
-  // All the knob properties are passed as props
+export const _EsempiInterattivi = ({ disabled, placement, title, text }) => {
+  const [isOpen, toggle] = useState(false)
+
+  const id = 'example'
+  // Avoid Jest complaints
+  const target = () => document.getElementById(id)
   return (
-    <EsempiInterattiviComponent
-      disabled={disabled}
-      placement={placement}
-      title={title}
-      body={body}
-      {...props}
-    />
-  );
-});
+    <div style={{ padding: 250, textAlign: 'center' }}>
+      <Button
+        id={id}
+        color="primary"
+        disabled={disabled}
+        onClick={() => toggle(!isOpen)}>
+        Popover {disabled ? 'Disabilitato' : ''}
+      </Button>
+
+      <Popover
+        placement={placement}
+        target={target}
+        toggle={() => toggle(!isOpen)}
+        isOpen={isOpen}>
+        <PopoverHeader>{title}</PopoverHeader>
+        <PopoverBody>{text}</PopoverBody>
+      </Popover>
+    </div>
+  )
+}
 
 _EsempiInterattivi.story = {
-  name: 'Esempi interattivi',
-};
+  name: 'Esempi interattivi'
+}
+
+_EsempiInterattivi.args = {
+  disabled: false,
+  placement: 'top',
+  title: 'Titolo del popover',
+  text:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.'
+}
+_EsempiInterattivi.argTypes = {
+  placement: {
+    control: {
+      type: 'select',
+      options: ['top', 'bottom', 'left', 'right']
+    }
+  }
+}

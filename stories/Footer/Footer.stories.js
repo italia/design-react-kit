@@ -1,12 +1,11 @@
-import { withA11y } from '@storybook/addon-a11y';
-import { withInfo } from '@storybook/addon-info';
-import { withKnobs } from '@storybook/addon-knobs/react';
-
-import Footer from './basic';
+import Footer from './basic'
 
 export default {
   title: 'Componenti/Footer',
-  decorators: [withA11y, withKnobs],
-};
+  args: {
+    townName: 'Nome del Comune',
+    townTagLine: 'Uno dei tanti Comuni d Italia'
+  }
+}
 
-export const _Footer = withInfo({})(Footer);
+export const _Footer = Footer

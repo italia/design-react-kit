@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-import { boolean, select } from '@storybook/addon-knobs/react'
 import {
   Button,
   Collapse,
@@ -225,18 +224,7 @@ export class NavHeader extends Component {
   }
 }
 
-const CompleteHeader = () => {
-  const theme = select(
-    'Tema',
-    { default: '', light: 'light', dark: 'dark' },
-    ''
-  )
-  const slimHeaderType = select(
-    'Tipo Slim Header',
-    ['default', 'Full responsive'],
-    'default'
-  )
-  const sticky = boolean('Sticky', false)
+const CompleteHeader = ({ theme, slimHeaderType, sticky }) => {
   const SlimTag =
     slimHeaderType === 'default' ? SlimHeader : SlimHeaderFullResponsive
   return (

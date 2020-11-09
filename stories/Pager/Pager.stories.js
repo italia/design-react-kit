@@ -1,7 +1,4 @@
 import React from 'react'
-import { withKnobs, select, boolean } from '@storybook/addon-knobs/react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import { Pager, PagerList, PagerItem, PagerLink, Icon } from '../../src'
 
@@ -192,36 +189,25 @@ const EsempiInterattiviComponent = () => {
 
 export default {
   title: 'Componenti/Pager',
-  decorators: [withA11y, withKnobs],
 
   parameters: {
     viewport: { defaultViewport: 'iphone6' }
   }
 }
 
-export const _Esempi = withInfo({
-  text: Esempi
-})(EsempiComponent)
+export const _Esempi = EsempiComponent
 
-export const StatoDisabilitatoEAttivo = withInfo({
-  text: StatoDisabilitatoAttivo
-})(StatoDisabilitatoAttivoComponent)
+export const StatoDisabilitatoEAttivo = StatoDisabilitatoAttivoComponent
 
 StatoDisabilitatoEAttivo.story = {
   name: 'Stato disabilitato e attivo'
 }
 
-export const _Allineamento = withInfo({
-  text: Allineamento
-})(AllineamentoComponent)
+export const _Allineamento = AllineamentoComponent
 
-export const _Responsive = withInfo({
-  text: Responsive
-})(ResponsiveComponent)
+export const _Responsive = ResponsiveComponent
 
-export const _EsempiInterattivi = withInfo({
-  text: EsempiInterattivi
-})(EsempiInterattiviComponent)
+export const _EsempiInterattivi = EsempiInterattiviComponent
 
 _EsempiInterattivi.story = {
   name: 'Esempi interattivi'

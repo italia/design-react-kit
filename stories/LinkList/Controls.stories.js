@@ -1,6 +1,4 @@
 import React from 'react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import {
   LinkList,
@@ -218,45 +216,32 @@ const CheckboxComponent = () => (
 )
 
 export default {
-  title: 'Componenti/LinkList.Con controlli',
-  decorators: [withA11y]
+  title: 'Componenti/LinkList.Con controlli'
 }
 
-export const PrimaryAction = withInfo({
-  text: Controlli
-})(ControlliComponent)
+export const PrimaryAction = ControlliComponent
 
-export const SecondaryAction = withInfo({
-  text: ControlliSecondari
-})(ControlliSecondariComponent)
+export const SecondaryAction = ControlliSecondariComponent
 
-export const PrimaryESecondaryAction = withInfo({
-  text: ControlliPrimariSecondari
-})(ControlliPrimariSecondariComponent)
+export const PrimaryESecondaryAction = ControlliPrimariSecondariComponent
 
 PrimaryESecondaryAction.story = {
   name: 'Primary e Secondary Action'
 }
 
-export const ConAvatar = withInfo({
-  text: Avatar
-})(AvatarComponent)
+export const ConAvatar = AvatarComponent
 
 ConAvatar.story = {
   name: 'Con avatar'
 }
 
-export const ConSwitch = withInfo({
-  text: Switch
-})(SwitchComponent)
+export const ConSwitch = SwitchComponent
 
 ConSwitch.story = {
   name: 'Con switch'
 }
 
-export const ConCheckbox = withInfo({
-  text: Checkbox
-})(CheckboxComponent)
+export const ConCheckbox = CheckboxComponent
 
 ConCheckbox.story = {
   name: 'Con checkbox'

@@ -1,6 +1,4 @@
 import React from 'react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import { Input } from '../../src'
 
@@ -16,11 +14,7 @@ const FormExampleComponent = () => (
 )
 
 export default {
-  title: 'Componenti/Form.Form Validation',
-  decorators: [withA11y]
+  title: 'Componenti/Form.Form Validation'
 }
 
-export const Example = withInfo({
-  text: Validation,
-  propTables: [Input]
-})(FormExampleComponent)
+export const Example = FormExampleComponent

@@ -37,3 +37,12 @@ pre > code[class] {
   background-color: transparent;
   border-radius: 0;
 }
+
+
+/* =======================================
+// Specific tweak for the Storybook documentation
+// ======================================= */
+
+.docs .callout {
+  max-width: none;
+}

@@ -1,51 +1,31 @@
-import { withA11y } from '@storybook/addon-a11y';
-import { withInfo } from '@storybook/addon-info';
+import { Collapse, Accordion, AccordionHeader, AccordionBody } from '../../src'
 
-import { Collapse, Accordion, AccordionHeader, AccordionBody } from '../../src';
+import CollapseExample from './CollapseExample'
+import CollapseGroupsExample from './CollapseGroupsExample'
+import CollapseAccordionExample from './CollapseAccordionExample'
+import CollapseNestedExample from './CollapseNestedExample'
 
-import CollapseExample from './CollapseExample';
-import CollapseGroupsExample from './CollapseGroupsExample';
-import CollapseAccordionExample from './CollapseAccordionExample';
-import CollapseNestedExample from './CollapseNestedExample';
-
-import Esempi from './docs/Esempi.md';
-import Gruppi from './docs/Gruppi.md';
-import AccordionEsempio from './docs/AccordionEsempio.md';
-import Innestati from './docs/Innestati.md';
+import Esempi from './docs/Esempi.md'
+import Gruppi from './docs/Gruppi.md'
+import AccordionEsempio from './docs/AccordionEsempio.md'
+import Innestati from './docs/Innestati.md'
 
 export default {
-  title: 'Componenti/Collapse',
-  decorators: [withA11y],
-};
+  title: 'Componenti/Collapse'
+}
 
-export const _Esempi = withInfo({
-  text: Esempi,
-  propTables: [Collapse],
-  propTablesExclude: [CollapseExample],
-})(CollapseExample);
+export const _Esempi = CollapseExample
 
-export const GruppiDiElementiRichiudibili = withInfo({
-  text: Gruppi,
-  propTables: [Accordion, AccordionHeader, AccordionBody],
-  propTablesExclude: [CollapseGroupsExample],
-})(CollapseGroupsExample);
+export const GruppiDiElementiRichiudibili = CollapseGroupsExample
 
 GruppiDiElementiRichiudibili.story = {
-  name: 'Gruppi di elementi richiudibili',
-};
+  name: 'Gruppi di elementi richiudibili'
+}
 
-export const _Accordion = withInfo({
-  text: AccordionEsempio,
-  propTables: [Accordion, AccordionHeader, AccordionBody],
-  propTablesExclude: [CollapseAccordionExample],
-})(CollapseAccordionExample);
+export const _Accordion = CollapseAccordionExample
 
-export const CollapseEAccordionInnestati = withInfo({
-  text: Innestati,
-  propTables: [Collapse],
-  propTablesExclude: [Accordion, AccordionHeader, AccordionBody],
-})(CollapseNestedExample);
+export const CollapseEAccordionInnestati = CollapseNestedExample
 
 CollapseEAccordionInnestati.story = {
-  name: 'Collapse e Accordion innestati',
-};
+  name: 'Collapse e Accordion innestati'
+}

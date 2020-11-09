@@ -1,12 +1,10 @@
-import React from 'react';
-import { withA11y } from '@storybook/addon-a11y';
-import { withInfo } from '@storybook/addon-info';
+import React from 'react'
 
-import { Breadcrumb, BreadcrumbItem, Icon } from '../../src';
+import { Breadcrumb, BreadcrumbItem, Icon } from '../../src'
 
-import Esempi from './docs/Esempi.md';
-import Icone from './docs/Icone.md';
-import Background from './docs/Background.md';
+import Esempi from './docs/Esempi.md'
+import Icone from './docs/Icone.md'
+import Background from './docs/Background.md'
 
 const EsempiComponent = () => (
   <section>
@@ -46,7 +44,7 @@ const EsempiComponent = () => (
       </Breadcrumb>
     </nav>
   </section>
-);
+)
 
 const IconeComponent = () => (
   <section>
@@ -89,7 +87,7 @@ const IconeComponent = () => (
       </Breadcrumb>
     </nav>
   </section>
-);
+)
 
 const BackgroundComponent = () => (
   <section>
@@ -183,29 +181,23 @@ const BackgroundComponent = () => (
       </ol>
     </nav>
   </section>
-);
+)
 
 export default {
   title: 'Componenti/Breadcrumb',
-  decorators: [withA11y],
-};
+  decorators: [withA11y]
+}
 
-export const _Esempi = withInfo({
-  text: Esempi,
-})(EsempiComponent);
+export const _Esempi = EsempiComponent
 
-export const ConIcone = withInfo({
-  text: Icone,
-})(IconeComponent);
+export const ConIcone = IconeComponent
 
 ConIcone.story = {
-  name: 'Con icone',
-};
+  name: 'Con icone'
+}
 
-export const SuSfondoScuro = withInfo({
-  text: Background,
-})(BackgroundComponent);
+export const SuSfondoScuro = BackgroundComponent
 
 SuSfondoScuro.story = {
-  name: 'Su sfondo scuro',
-};
+  name: 'Su sfondo scuro'
+}

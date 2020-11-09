@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { boolean, select, text } from '@storybook/addon-knobs/react'
 import {
   Button,
   Collapse,
@@ -21,10 +20,7 @@ import {
   UncontrolledDropdown
 } from '../../../src'
 
-const SlimHeader = () => {
-  const theme = select('Tema', { default: '', light: 'light' }, '')
-  const isOpen = boolean('Aperto (mobile)', false)
-  const brandText = text('Brand/Ente', 'Ente appartenenza/Owner')
+const SlimHeader = ({ theme, isOpen, brandText }) => {
   return (
     <Header type="slim" theme={theme}>
       <HeaderContent>

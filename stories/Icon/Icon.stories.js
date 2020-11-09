@@ -1,47 +1,20 @@
 import React from 'react'
-import { withKnobs, boolean, select } from '@storybook/addon-knobs/react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import icons from './icons.json'
 
 import { Icon, Row, Col } from '../../src'
 
 export default {
-  title: 'Componenti/Icon',
-  decorators: [withA11y, withKnobs]
+  title: 'Componenti/Icon'
 }
 
-export const EsempioInterattivo = withInfo({
-  // text: Esempi
-})(() => {
-  const icon = select('Icona', icons, 'it-tool')
-  const size = select(
-    'Dimensioni',
-    {
-      'Extra small': 'xs',
-      Small: 'sm',
-      default: '',
-      Large: 'lg',
-      'Extra Large': 'xl'
-    },
-    ''
-  )
-  const padding = boolean('Padding addizionale', false)
-  const background = select('Sfondo', {
-    default: '',
-    Scuro: 'bg-dark',
-    Chiaro: 'bg-light'
-  })
-  const color = select('Colore', [
-    'primary',
-    'secondary',
-    'success',
-    'warning',
-    'danger',
-    'light',
-    'white'
-  ])
+export const EsempioInterattivo = ({
+  icon,
+  size,
+  padding,
+  background,
+  color
+}) => {
   return (
     <Icon
       icon={icon}
@@ -51,15 +24,64 @@ export const EsempioInterattivo = withInfo({
       className={background}
     />
   )
-})
+}
 
 EsempioInterattivo.story = {
   name: 'Esempio interattivo'
 }
+EsempioInterattivo.args = {
+  icon: 'it-tool',
+  size: '',
+  padding: false,
+  color: 'primary',
+  background: ''
+}
+EsempioInterattivo.argTypes = {
+  icon: {
+    control: {
+      type: 'select',
+      options: icons
+    }
+  },
+  size: {
+    control: {
+      type: 'select',
+      options: {
+        'Extra small': 'xs',
+        Small: 'sm',
+        default: '',
+        Large: 'lg',
+        'Extra Large': 'xl'
+      }
+    }
+  },
+  background: {
+    control: {
+      type: 'select',
+      options: {
+        default: '',
+        Scuro: 'bg-dark',
+        Chiaro: 'bg-light'
+      }
+    }
+  },
+  color: {
+    control: {
+      type: 'select',
+      options: [
+        'primary',
+        'secondary',
+        'success',
+        'warning',
+        'danger',
+        'light',
+        'white'
+      ]
+    }
+  }
+}
 
-export const Allineamenti = withInfo({
-  // text: Esempi
-})(() => {
+export const Allineamenti = () => {
   return (
     <div style={{ lineHeight: '4em' }}>
       <Icon className="bg-light align-bottom" icon="it-check-circle" />
@@ -67,11 +89,9 @@ export const Allineamenti = withInfo({
       <Icon className="bg-light align-top" icon="it-check-circle" />
     </div>
   )
-})
+}
 
-export const ListaIcone = withInfo({
-  // text: Esempi
-})(() => {
+export const ListaIcone = () => {
   return (
     <Row>
       {icons.map(icon => (
@@ -81,7 +101,7 @@ export const ListaIcone = withInfo({
       ))}
     </Row>
   )
-})
+}
 
 ListaIcone.story = {
   name: 'Lista icone'

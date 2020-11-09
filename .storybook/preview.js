@@ -1,12 +1,11 @@
 import React from 'react';
-import {addParameters, addDecorator, configure} from '@storybook/react';
-import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
+import {addDecorator} from '@storybook/react';
 import {default as theme} from './theme.js';
 import {FontLoader} from '../src';
 
 import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
 import '../assets/css/fonts.css';
-import '../assets/css/sourcecode-fix.css';
+import '../assets/css/storybook-fixes.css';
 
 
 const styles = {
@@ -18,47 +17,31 @@ const styles = {
 };
 const WrapperDecorator = storyFn => <div style={styles}><FontLoader />{storyFn()}</div>;
 
-addParameters({
+const order = {
+  'documentazione': 1,
+  'templates': 100,
+  'componenti': 1000,
+};
+
+export const parameters = {
     options: {
-        /**
-         * display panel that shows a list of stories
-         * @type {Boolean}
-         */
-        showNav: true,
-        /**
-         * display panel that shows addon configurations
-         * @type {Boolean}
-         */
-        showPanel: true,
+        storySort: (a, b) => {
+            const [aSection, aStory] = a[0].split('-');
+            const [bSection, bStory] = b[0].split('-');
+            // Sort by Section and lexycographic order of the story inside
+            return (order[aSection] - order[bSection]) + (aStory.localeCompare(bStory));
+          },
         /**
          * where to show the addon panel
          * @type {('bottom'|'right')}
          */
         panelPosition: 'right',
-        /**
-         * regex for finding the hierarchy root separator
-         * @example:
-         *   null - turn off multiple hierarchy roots
-         *   /\|/ - split by `|`
-         * @type {Regex}
-         */
-        hierarchyRootSeparator: /\//,
-        /**
-         * theme storybook, see link below
-         */
-        theme: theme,
+        previewTabs: { 'storybook/docs/panel': { index: -1 } },
     },
     docs: {
-        container: DocsContainer,
-        page: DocsPage,
+        theme
       },
-});
+};
+
 
 addDecorator(WrapperDecorator);
-
-// function loadStories() {
-//     require('../stories/index.js');
-//     // You can require as many stories as you need.
-// }
-
-// configure(loadStories, module);

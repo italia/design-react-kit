@@ -1,7 +1,4 @@
-import React from 'react';
-import { withKnobs, select, color } from '@storybook/addon-knobs/react';
-import { withA11y } from '@storybook/addon-a11y';
-import { withInfo } from '@storybook/addon-info';
+import React from 'react'
 
 import {
   Navbar,
@@ -15,27 +12,21 @@ import {
   DropdownMenu,
   DropdownToggle,
   LinkList,
-  LinkListItem,
-} from '../../src';
+  LinkListItem
+} from '../../src'
 
-import NavbarExample from './NavbarExample';
-import NavbarDropdownExample from './NavbarDropdownExample';
-import NavbarMegamenuExample from './NavbarMegamenuExample';
-import NavbarInlineExample from './NavbarInlineExample';
+import NavbarExample from './NavbarExample'
+import NavbarDropdownExample from './NavbarDropdownExample'
+import NavbarMegamenuExample from './NavbarMegamenuExample'
+import NavbarInlineExample from './NavbarInlineExample'
 
-import Esempi from './docs/Esempi.md';
-import Dropdown from './docs/Dropdown.md';
-import Megamenu from './docs/Megamenu.md';
-import Inline from './docs/Inline.md';
-import EsempiInterattivi from './docs/EsempiInterattivi.md';
+import Esempi from './docs/Esempi.md'
+import Dropdown from './docs/Dropdown.md'
+import Megamenu from './docs/Megamenu.md'
+import Inline from './docs/Inline.md'
+import EsempiInterattivi from './docs/EsempiInterattivi.md'
 
-const EsempiInterattiviComponent = () => {
-  const variations = ['', 'primary', 'dark'];
-  const variation = select('Variazioni', variations, variations[0]);
-  const selectedColor = color('Color', '#e3f2fd');
-  const placements = ['', 'top', 'bottom'];
-  const placement = select('Posizionamento', placements, placements[0]);
-
+const EsempiInterattiviComponent = ({ variation, color, placement }) => {
   return (
     <Navbar
       light
@@ -43,76 +34,59 @@ const EsempiInterattiviComponent = () => {
       fixed={placement}
       sticky={placement}
       className={`bg-${variation}`}
-      style={{ backgroundColor: selectedColor }}
-    >
+      style={{ backgroundColor: color }}>
       <NavbarBrand href="#">Brand</NavbarBrand>
     </Navbar>
-  );
-};
+  )
+}
 
 export default {
-  title: 'Componenti/Navbar',
-  decorators: [withA11y, withKnobs],
-};
+  title: 'Componenti/Navbar'
+}
 
-export const _Esempi = withInfo({
-  text: Esempi,
-  propTables: [Navbar, NavbarToggler, Collapse, Nav, NavItem, NavLink],
-  propTablesExclude: [NavbarExample],
-})(NavbarExample);
+export const _Esempi = NavbarExample
 
-export const ConDropdown = withInfo({
-  text: Dropdown,
-  propTables: [
-    Navbar,
-    NavbarToggler,
-    Collapse,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-  ],
-  propTablesExclude: [NavbarExample],
-})(NavbarDropdownExample);
+export const ConDropdown = NavbarDropdownExample
 
-export const ConMegamenuInProgress = withInfo({
-  text: Megamenu,
-  propTables: [
-    Navbar,
-    NavbarToggler,
-    Collapse,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    LinkList,
-    LinkListItem,
-  ],
-  propTablesExclude: [NavbarExample],
-})(NavbarMegamenuExample);
+export const ConMegamenuInProgress = NavbarMegamenuExample
 
 ConMegamenuInProgress.story = {
-  name: 'Con Megamenu (in progress)',
-};
+  name: 'Con Megamenu (in progress)'
+}
 
-export const InlineMenu = withInfo({
-  text: Inline,
-  propTables: [LinkList, LinkListItem, Collapse],
-  propTablesExclude: [NavbarInlineExample],
-})(NavbarInlineExample);
+export const InlineMenu = NavbarInlineExample
 
 InlineMenu.story = {
-  name: 'Inline Menù',
-};
+  name: 'Inline Menù'
+}
 
-export const _EsempiInterattivi = withInfo({
-  text: EsempiInterattivi,
-})(EsempiInterattiviComponent);
+export const _EsempiInterattivi = EsempiInterattiviComponent
 
 _EsempiInterattivi.story = {
-  name: 'Esempi interattivi',
-};
+  name: 'Esempi interattivi'
+}
+
+_EsempiInterattivi.args = {
+  placement: '',
+  variation: '',
+  color: '#e3f2fd'
+}
+_EsempiInterattivi.argTypes = {
+  placement: {
+    control: {
+      type: 'select',
+      options: ['', 'top', 'bottom']
+    }
+  },
+  variation: {
+    control: {
+      type: 'select',
+      options: ['', 'primary', 'dark']
+    }
+  },
+  color: {
+    control: {
+      type: 'color'
+    }
+  }
+}

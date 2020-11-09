@@ -1,6 +1,4 @@
 import React from 'react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import { Collapse, LinkList, LinkListItem, Icon } from '../../src'
 
@@ -41,16 +39,9 @@ const NavigationComponent = () => (
 )
 
 export default {
-  title: 'Componenti/LinkList.Nested navigation',
-  decorators: [withA11y]
+  title: 'Componenti/LinkList.Nested navigation'
 }
 
-export const Fixed = withInfo({
-  text: Navigation
-})(NavigationComponent)
+export const Fixed = NavigationComponent
 
-export const _Collapsible = withInfo({
-  text: Collapsible,
-  propTables: [Collapse, LinkList, LinkListItem],
-  propTablesExclude: [LinkListCollapsibleExample]
-})(() => <LinkListCollapsibleExample />)
+export const _Collapsible = LinkListCollapsibleExample

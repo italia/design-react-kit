@@ -62,7 +62,7 @@ export const _ContenutoAggiuntivo = () => (
     <p>
       Stai leggendo questo importante messaggio di avviso di successo. Questo
       testo di esempio sarà più a lungo in modo da poter vedere come funzioni la
-      spaziatura all&apos;interno di un avviso con questo tipo di contenuto.
+      spaziatura all&#39;interno di un avviso con questo tipo di contenuto.
     </p>
     <hr />
     <p className="mb-0">

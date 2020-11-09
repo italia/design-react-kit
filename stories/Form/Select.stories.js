@@ -1,6 +1,4 @@
 import React from 'react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import SelectExample from './Select/SelectExample'
 import Select from 'react-select'
@@ -13,61 +11,36 @@ import SelectMultipla from './docs/Select/Multipla.md'
 import SelectGrouped from './docs/Select/Grouped.md'
 
 export default {
-  title: 'Componenti/Form.Select',
-  decorators: [withA11y]
+  title: 'Componenti/Form.Select'
 }
 
-export const SelectClassica = withInfo({
-  text: SelectEsempi,
-  propTables: [Select],
-  propTablesExclude: [SelectExample]
-})(() => <SelectExample />)
+export const SelectClassica = () => <SelectExample />
 
 SelectClassica.story = {
   name: 'Select classica'
 }
 
-export const SelectDisabilitata = withInfo({
-  text: SelectDisabled,
-  propTables: [Select],
-  propTablesExclude: [SelectExample]
-})(() => <SelectExample disabled />)
+export const SelectDisabilitata = () => <SelectExample disabled />
 
 SelectDisabilitata.story = {
   name: 'Select disabilitata'
 }
 
-export const SelectConReset = withInfo({
-  text: SelectReset,
-  propTables: [Select],
-  propTablesExclude: [SelectExample]
-})(() => <SelectExample reset />)
+export const SelectConReset = () => <SelectExample reset />
 
 SelectConReset.story = {
   name: 'Select con reset'
 }
 
-export const SelectConRicerca = withInfo({
-  text: SelectSearchable,
-  propTables: [Select],
-  propTablesExclude: [SelectExample]
-})(() => <SelectExample search />)
+export const SelectConRicerca = () => <SelectExample search />
 
 SelectConRicerca.story = {
   name: 'Select con ricerca'
 }
 
-export const _SelectMultipla = withInfo({
-  text: SelectMultipla,
-  propTables: [Select],
-  propTablesExclude: [SelectExample]
-})(() => <SelectExample multi />)
+export const _SelectMultipla = () => <SelectExample multi />
 
-export const SelectConGruppi = withInfo({
-  text: SelectGrouped,
-  propTables: [Select],
-  propTablesExclude: [SelectExample]
-})(() => <SelectExample group />)
+export const SelectConGruppi = () => <SelectExample group />
 
 SelectConGruppi.story = {
   name: 'Select con gruppi'

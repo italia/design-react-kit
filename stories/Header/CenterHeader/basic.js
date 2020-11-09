@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { boolean, select } from '@storybook/addon-knobs/react'
 import {
   Header,
   HeaderContent,
@@ -11,10 +10,7 @@ import {
   HeaderBrand
 } from '../../../src'
 
-const CenterHeader = () => {
-  const theme = select('Tema', { default: '', light: 'light' }, '')
-  const isSmall = boolean('Versione Small', false)
-
+const CenterHeader = ({ theme, isSmall }) => {
   return (
     <Header type="center" theme={theme} small={isSmall}>
       <HeaderContent>

@@ -1,6 +1,4 @@
 import React from 'react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import {
   LinkList,
@@ -218,42 +216,27 @@ const NavigationMenuWithTitle = () => {
 }
 
 export default {
-  title: 'Componenti/LinkList',
-  decorators: [withA11y]
+  title: 'Componenti/LinkList'
 }
 
-export const _Esempi = withInfo({
-  text: Esempi
-})(EsempiComponent)
+export const _Esempi = EsempiComponent
 
-export const _StatoAttivo = withInfo({
-  text: StatoAttivo
-})(StatoAttivoComponent)
+export const _StatoAttivo = StatoAttivoComponent
 
-export const _StatoDisabilitato = withInfo({
-  text: StatoDisabilitato
-})(StatoDisabilitatoComponent)
+export const _StatoDisabilitato = StatoDisabilitatoComponent
 
-export const HeaderEDivider = withInfo({
-  text: HeaderDivider
-})(HeaderDividerComponent)
+export const HeaderEDivider = HeaderDividerComponent
 
 HeaderEDivider.story = {
   name: 'Header e Divider'
 }
 
-export const Sizing = withInfo({
-  text: Large
-})(LargeComponent)
+export const Sizing = LargeComponent
 
-export const TitoloLista = withInfo({
-  text: Titolo
-})(NavigationMenuWithTitle)
+export const TitoloLista = NavigationMenuWithTitle
 
 TitoloLista.story = {
   name: 'Titolo lista'
 }
 
-export const EsempioMultiline = withInfo({
-  text: Multiline
-})(MultilineComponent)
+export const EsempioMultiline = MultilineComponent

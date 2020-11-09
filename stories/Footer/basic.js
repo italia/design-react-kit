@@ -1,5 +1,4 @@
 import React from 'react'
-import { text } from '@storybook/addon-knobs/react'
 import {
   Container,
   Row,
@@ -14,9 +13,7 @@ import {
 } from '../../src'
 
 // eslint-disable-next-line react/prop-types
-const Footer = () => {
-  const townName = text('Comune', 'Nome del Comune')
-  const townTagLine = text('Motto Comune', 'Uno dei tanti Comuni d Italia')
+const Footer = ({ townName, townTagLine }) => {
   return (
     <footer className="it-footer">
       <div className="it-footer-main">

@@ -1,6 +1,4 @@
 import React from 'react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import {
   Dropdown,
@@ -27,45 +25,11 @@ const VarianteComponent = () => (
 )
 
 export default {
-  title: 'Componenti/Dropdown',
-  decorators: [withA11y]
+  title: 'Componenti/Dropdown'
 }
 
-export const _Esempi = withInfo({
-  text: Esempi,
-  propTables: [
-    Dropdown,
-    DropdownMenu,
-    DropdownItem,
-    DropdownToggle,
-    LinkList,
-    LinkListItem
-  ],
-  propTablesExclude: [DropdownExample]
-})(() => <DropdownExample />)
+export const _Esempi = () => <DropdownExample />
 
-export const _VarianteBottoni = withInfo({
-  text: VarianteBottoni,
-  propTables: [
-    Dropdown,
-    DropdownMenu,
-    DropdownItem,
-    DropdownToggle,
-    LinkList,
-    LinkListItem
-  ],
-  propTablesExclude: [DropdownButtonExample]
-})(VarianteComponent)
+export const _VarianteBottoni = VarianteComponent
 
-export const _Link = withInfo({
-  text: Link,
-  propTables: [
-    Dropdown,
-    DropdownMenu,
-    DropdownItem,
-    DropdownToggle,
-    LinkList,
-    LinkListItem
-  ],
-  propTablesExclude: [DropdownExample]
-})(() => <DropdownExample tag="span" />)
+export const _Link = () => <DropdownExample tag="span" />

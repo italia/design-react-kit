@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { select } from '@storybook/addon-knobs/react'
 import {
   Button,
   Header,
@@ -18,8 +17,7 @@ import {
   LinkListItem
 } from '../../../src'
 
-const SlimHeader = () => {
-  const theme = select('Tema', { default: '', light: 'light' }, '')
+const SlimHeader = ({theme}) => {
   return (
     <Header type="slim" theme={theme}>
       <HeaderContent>

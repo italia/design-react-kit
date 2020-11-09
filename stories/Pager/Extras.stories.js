@@ -1,6 +1,4 @@
 import React from 'react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import {
   Pager,
@@ -298,51 +296,36 @@ const TotalComponent = () => (
 )
 
 export default {
-  title: 'Componenti/Pager/Funzioni aggiuntive',
-  decorators: [withA11y]
+  title: 'Componenti/Pager/Funzioni aggiuntive'
 }
 
-export const _More = withInfo({
-  text: More
-})(MoreComponent)
+export const _More = MoreComponent
 
-export const PageChanger = withInfo({
-  text: Changer,
-  propTablesExclude: [PageChangerExample]
-})(ChangerComponent)
+export const PageChanger = ChangerComponent
 
 PageChanger.story = {
   name: 'Page changer'
 }
 
-export const JumpToPage = withInfo({
-  text: Jump,
-  propTablesExclude: [Form, FormGroup, Input, Label]
-})(JumpComponent)
+export const JumpToPage = JumpComponent
 
 JumpToPage.story = {
   name: 'Jump to page'
 }
 
-export const SimpleMode = withInfo({
-  text: Simple
-})(SimpleComponent)
+export const SimpleMode = SimpleComponent
 
 SimpleMode.story = {
   name: 'Simple mode'
 }
 
-export const LinkTestuali = withInfo({
-  text: Link
-})(LinkComponent)
+export const LinkTestuali = LinkComponent
 
 LinkTestuali.story = {
   name: 'Link testuali'
 }
 
-export const TotalNumber = withInfo({
-  text: Total
-})(TotalComponent)
+export const TotalNumber = TotalComponent
 
 TotalNumber.story = {
   name: 'Total number'

@@ -14,8 +14,7 @@ const propTypes = {
   toggle: PropTypes.func,
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   fade: PropTypes.bool,
-  // Controls the transition of the alert fading in and out
-  // See Fade for more details
+  /** Controlla la transizione in entrata e uscita dell'Alert. Per maggiori informazioni consulta la pagina https://reactstrap.github.io/components/fade/. */
   transition: PropTypes.shape({
     // Controls if the fade is currently showing or not (default: true)
     in: PropTypes.bool,

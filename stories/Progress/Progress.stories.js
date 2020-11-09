@@ -1,7 +1,4 @@
 import React from 'react'
-import { withKnobs, number, text, select } from '@storybook/addon-knobs/react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import { Button, Icon, Progress } from '../../src'
 
@@ -90,12 +87,7 @@ const ButtonProgressComponent = () => (
   </div>
 )
 
-const EsempiInterattiviComponent = () => {
-  const value = number('Valore', 25)
-  const colors = ['', 'success', 'info', 'warning', 'danger']
-  const color = select('Color', colors, colors[0])
-  const label = text('Etichetta', 'progresso')
-
+const EsempiInterattiviComponent = ({ value, color, label }) => {
   return (
     <div>
       <Progress value={value} label={label} color={color} />
@@ -104,38 +96,39 @@ const EsempiInterattiviComponent = () => {
 }
 
 export default {
-  title: 'Componenti/Progress Indicators',
-  decorators: [withA11y, withKnobs]
+  title: 'Componenti/Progress Indicators'
 }
 
-export const _Esempi = withInfo({
-  text: Esempi
-})(EsempiComponent)
+export const _Esempi = EsempiComponent
 
-export const _Etichette = withInfo({
-  text: Etichette
-})(EtichetteComponent)
+export const _Etichette = EtichetteComponent
 
-export const _ProgressoIndeterminato = withInfo({
-  text: Indeterminato
-})(ProgressoIndeterminato)
+export const _ProgressoIndeterminato = ProgressoIndeterminato
 
-export const _Colori = withInfo({
-  text: Colori
-})(ColoriComponent)
+export const _Colori = ColoriComponent
 
-export const BottoneConProgressBar = withInfo({
-  text: ButtonProgress
-})(ButtonProgressComponent)
+export const BottoneConProgressBar = ButtonProgressComponent
 
 BottoneConProgressBar.story = {
   name: 'Bottone con Progress Bar'
 }
 
-export const _EsempiInterattivi = withInfo({
-  text: EsempiInterattivi
-})(EsempiInterattiviComponent)
+export const _EsempiInterattivi = EsempiInterattiviComponent
 
 _EsempiInterattivi.story = {
   name: 'Esempi interattivi'
+}
+
+_EsempiInterattivi.args = {
+  color: '',
+  value: 25,
+  label: 'progresso'
+}
+_EsempiInterattivi.argTypes = {
+  color: {
+    control: {
+      type: 'select',
+      options: ['', 'success', 'info', 'warning', 'danger']
+    }
+  }
 }

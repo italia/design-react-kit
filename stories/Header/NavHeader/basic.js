@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { boolean, select } from '@storybook/addon-knobs/react'
 import {
   Collapse,
   Header,
@@ -18,13 +17,7 @@ import {
   LinkListItem
 } from '../../../src'
 
-const NavHeader = () => {
-  const theme = select(
-    'Tema',
-    { default: '', light: 'light', dark: 'dark' },
-    ''
-  )
-  const isOpen = boolean('Aperto (mobile)', false)
+const NavHeader = ({ theme, isOpen }) => {
   return (
     <Header type="navbar" theme={theme}>
       <HeaderContent expand="lg" megamenu>

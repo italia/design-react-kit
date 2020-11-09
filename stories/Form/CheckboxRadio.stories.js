@@ -1,6 +1,4 @@
 import React from 'react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import { Form, FormGroup, Label, Input, FormText } from '../../src'
 
@@ -135,28 +133,17 @@ const GruppiComponent = () => (
 )
 
 export default {
-  title: 'Componenti/Form.Checkbox and radio',
-  decorators: [withA11y]
+  title: 'Componenti/Form.Checkbox and radio'
 }
 
-export const CheckboxERadio = withInfo({
-  text: CheckboxRadio
-})(CheckboxRadioComponent)
+export const CheckboxERadio = CheckboxRadioComponent
 
 CheckboxERadio.story = {
   name: 'Checkbox e radio'
 }
 
-export const _Inline = withInfo({
-  text: Inline
-})(InlineComponent)
+export const _Inline = InlineComponent
 
-export const __Disabilitato = withInfo({
-  text: Disabilitato
-})(DisabilitatoComponent)
+export const __Disabilitato = DisabilitatoComponent
 
-export const _Gruppi = withInfo({
-  text: Gruppi,
-  propTables: [Input, Label, FormText],
-  propTablesExclude: [CheckboxGroupsExample, RadioGroupsExample]
-})(GruppiComponent)
+export const _Gruppi = GruppiComponent

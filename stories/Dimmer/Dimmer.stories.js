@@ -1,7 +1,4 @@
-import React from 'react';
-import { withA11y } from '@storybook/addon-a11y';
-import { withInfo } from '@storybook/addon-info';
-import { withKnobs, boolean } from '@storybook/addon-knobs/react';
+import React from 'react'
 
 import {
   Dimmer,
@@ -11,22 +8,22 @@ import {
   Card,
   CardBody,
   CardTitle,
-  CardText,
-} from '../../src';
+  CardText
+} from '../../src'
 
-import Esempi from './docs/Esempi.md';
-import DimmerActions from './docs/DimmerActions.md';
-import ColorePrimario from './docs/ColorePrimario.md';
+import Esempi from './docs/Esempi.md'
+import DimmerActions from './docs/DimmerActions.md'
+import ColorePrimario from './docs/ColorePrimario.md'
 
-const EsempiComponent = () => {
-  const fadeIn = boolean('Dimmer Toggle', true);
+const EsempiComponent = ({fadeIn}) => {
   return (
     <div>
       <Fade in={fadeIn} tag="div" className="mt-3">
         <Dimmer icon="it-unlocked">
           <p>
-            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
-            Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
+            dignissim cras. Dictum sit amet justo donec enim diam vulputate ut.
+            Eu nisl nunc mi ipsum faucibus.
           </p>
         </Dimmer>
       </Fade>
@@ -36,11 +33,12 @@ const EsempiComponent = () => {
           <Card>
             <CardBody>
               <CardTitle tag="h5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -52,11 +50,12 @@ const EsempiComponent = () => {
           <Card>
             <CardBody>
               <CardTitle tag="h5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -67,29 +66,30 @@ const EsempiComponent = () => {
           <Card>
             <CardBody>
               <CardTitle tag="h5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-const ColorePrimarioComponent = () => {
-  const fadeIn = boolean('Dimmer Toggle', true);
+const ColorePrimarioComponent = ({fadeIn}) => {
   return (
     <div>
       <Fade in={fadeIn} tag="div" className="mt-3">
         <Dimmer color="primary" icon="it-unlocked">
           <p>
-            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras.
-            Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
+            dignissim cras. Dictum sit amet justo donec enim diam vulputate ut.
+            Eu nisl nunc mi ipsum faucibus.
           </p>
         </Dimmer>
       </Fade>
@@ -99,11 +99,12 @@ const ColorePrimarioComponent = () => {
           <Card>
             <CardBody>
               <CardTitle tag="h5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -115,11 +116,12 @@ const ColorePrimarioComponent = () => {
           <Card>
             <CardBody>
               <CardTitle tag="h5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -130,22 +132,22 @@ const ColorePrimarioComponent = () => {
           <Card>
             <CardBody>
               <CardTitle tag="h5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-const DimmerConAzioniComponent = () => {
-  const fadeIn = boolean('Dimmer Toggle', true);
+const DimmerConAzioniComponent = ({fadeIn}) => {
   return (
     <div>
       <Fade in={fadeIn} tag="div" className="mt-3">
@@ -165,11 +167,12 @@ const DimmerConAzioniComponent = () => {
           <Card>
             <CardBody>
               <CardTitle tag="h5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -180,11 +183,12 @@ const DimmerConAzioniComponent = () => {
           <Card>
             <CardBody>
               <CardTitle tag="h5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -192,11 +196,10 @@ const DimmerConAzioniComponent = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-const DimmerPrimaryActionsComponent = () => {
-  const fadeIn = boolean('Dimmer Toggle', true);
+const DimmerPrimaryActionsComponent = ({fadeIn}) => {
   return (
     <div>
       <Fade in={fadeIn} tag="div" className="mt-3">
@@ -213,11 +216,12 @@ const DimmerPrimaryActionsComponent = () => {
           <Card>
             <CardBody>
               <CardTitle tag="h5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -228,11 +232,12 @@ const DimmerPrimaryActionsComponent = () => {
           <Card>
             <CardBody>
               <CardTitle tag="h5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -240,34 +245,28 @@ const DimmerPrimaryActionsComponent = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default {
   title: 'Componenti/Dimmer',
-  decorators: [withA11y, withKnobs],
-};
+  args: {
+    fadeIn: true
+  }
+}
 
-export const _Esempi = withInfo({
-  text: Esempi,
-})(EsempiComponent);
+export const _Esempi = EsempiComponent
 
-export const _ColorePrimario = withInfo({
-  text: ColorePrimario,
-})(ColorePrimarioComponent);
+export const _ColorePrimario = ColorePrimarioComponent
 
-export const DimmerConAzioni = withInfo({
-  text: DimmerActions,
-})(DimmerConAzioniComponent);
+export const DimmerConAzioni = DimmerConAzioniComponent
 
 DimmerConAzioni.story = {
-  name: 'Dimmer con Azioni',
-};
+  name: 'Dimmer con Azioni'
+}
 
-export const DimmerConAzioniColorePrimario = withInfo({
-  text: ColorePrimario,
-})(DimmerPrimaryActionsComponent);
+export const DimmerConAzioniColorePrimario = DimmerPrimaryActionsComponent
 
 DimmerConAzioniColorePrimario.story = {
-  name: 'Dimmer con Azioni Colore Primario',
-};
+  name: 'Dimmer con Azioni Colore Primario'
+}

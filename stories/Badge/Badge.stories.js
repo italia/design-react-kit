@@ -1,17 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-import { withKnobs, select, boolean, text } from '@storybook/addon-knobs/react';
-import { withA11y } from '@storybook/addon-a11y';
-import { withInfo } from '@storybook/addon-info';
+import { Badge, Button } from '../../src'
 
-import { Badge, Button } from '../../src';
-
-import Esempi from './docs/Esempi.md';
-import EsempiInterattivi from './docs/EsempiInterattivi.md';
-import Contatore from './docs/Contatore.md';
-import Variazioni from './docs/Variazioni.md';
-import BordiArrotondati from './docs/BordiArrotondati.md';
-import Link from './docs/Link.md';
+import Esempi from './docs/Esempi.md'
+import EsempiInterattivi from './docs/EsempiInterattivi.md'
+import Contatore from './docs/Contatore.md'
+import Variazioni from './docs/Variazioni.md'
+import BordiArrotondati from './docs/BordiArrotondati.md'
+import Link from './docs/Link.md'
 
 const EsempiComponent = () => (
   <div>
@@ -34,13 +30,13 @@ const EsempiComponent = () => (
       Titolo di esempio <Badge color="secondary">New</Badge>
     </h6>
   </div>
-);
+)
 
 const ContatoreComponent = () => (
   <Button color="primary">
     Notifiche <Badge color="light">4</Badge>
   </Button>
-);
+)
 
 const VariazioniComponent = () => (
   <div>
@@ -66,7 +62,7 @@ const VariazioniComponent = () => (
       Warning
     </Badge>
   </div>
-);
+)
 
 const ArrotondatiComponent = () => (
   <div>
@@ -92,7 +88,7 @@ const ArrotondatiComponent = () => (
       Warning
     </Badge>
   </div>
-);
+)
 
 const LinkComponent = () => (
   <div>
@@ -118,14 +114,9 @@ const LinkComponent = () => (
       Warning
     </Badge>
   </div>
-);
+)
 
-const EsempiInterattiviComponent = () => {
-  const colors = ['primary', 'secondary', 'tertiary', 'quaternary', 'success', 'danger', 'warning'];
-  const color = select('Variazioni', colors, colors[0]);
-  const pill = boolean('Arrotondati', true);
-  const label = text('Label', '');
-
+const EsempiInterattiviComponent = ({ color, pill, label }) => {
   return (
     <p>
       Testo di esempio
@@ -134,35 +125,43 @@ const EsempiInterattiviComponent = () => {
         {color}
       </Badge>
     </p>
-  );
-};
+  )
+}
 
 export default {
   title: 'Componenti/Badge',
-  decorators: [withA11y, withKnobs],
-};
+  decorators: [withA11y]
+}
 
-export const _Esempi = withInfo({
-  text: Esempi,
-})(EsempiComponent);
+export const _Esempi = EsempiComponent
 
-export const _EsempiInterattivi = withInfo({
-  text: EsempiInterattivi,
-})(EsempiInterattiviComponent);
+export const _EsempiInterattivi = EsempiInterattiviComponent
+_EsempiInterattivi.args = {
+  color: 'info',
+  pill: true,
+  label: ''
+}
+_EsempiInterattivi.argTypes = {
+  color: {
+    control: {
+      type: 'select',
+      options: [
+        'primary',
+        'secondary',
+        'tertiary',
+        'quaternary',
+        'success',
+        'danger',
+        'warning'
+      ]
+    }
+  }
+}
 
-export const _Contatore = withInfo({
-  text: Contatore,
-  propTablesExclude: [Button],
-})(ContatoreComponent);
+export const _Contatore = ContatoreComponent
 
-export const _Variazioni = withInfo({
-  text: Variazioni,
-})(VariazioniComponent);
+export const _Variazioni = VariazioniComponent
 
-export const _BordiArrotondati = withInfo({
-  text: BordiArrotondati,
-})(ArrotondatiComponent);
+export const _BordiArrotondati = ArrotondatiComponent
 
-export const ConLink = withInfo({
-  text: Link,
-})(LinkComponent);
+export const ConLink = LinkComponent

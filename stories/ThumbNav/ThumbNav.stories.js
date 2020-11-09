@@ -1,11 +1,9 @@
-import React from 'react';
-import { withA11y } from '@storybook/addon-a11y';
-import { withInfo } from '@storybook/addon-info';
+import React from 'react'
 
-import { ThumbNav, ThumbNavItem } from '../../src';
+import { ThumbNav, ThumbNavItem } from '../../src'
 
-import Esempio from './docs/Esempio.md';
-import Overlay from './docs/Overlay.md';
+import Esempio from './docs/Esempio.md'
+import Overlay from './docs/Overlay.md'
 
 const EsempioComponent = () => (
   <ThumbNav overlayOnHover="black" rowItems="4">
@@ -40,7 +38,7 @@ const EsempioComponent = () => (
       actionDescription="Visualizza immagine 6"
     />
   </ThumbNav>
-);
+)
 
 const OverlayComponent = () => (
   <div className="test-gallery position-relative">
@@ -73,19 +71,12 @@ const OverlayComponent = () => (
       />
     </ThumbNav>
   </div>
-);
+)
 
 export default {
-  title: 'Componenti/ThumbNav',
-  decorators: [withA11y],
-};
+  title: 'Componenti/ThumbNav'
+}
 
-export const _Esempio = withInfo({
-  text: Esempio,
-  propTables: [ThumbNav, ThumbNavItem],
-})(EsempioComponent);
+export const _Esempio = EsempioComponent
 
-export const _Overlay = withInfo({
-  text: Overlay,
-  propTables: [ThumbNav, ThumbNavItem],
-})(OverlayComponent);
+export const _Overlay = OverlayComponent

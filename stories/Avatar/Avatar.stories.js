@@ -1,5 +1,4 @@
 import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import {
   AvatarIcon,
@@ -20,55 +19,37 @@ export default {
   decorators: [withA11y]
 }
 
-export const _AvatarWithImage = withInfo({
-  text: Placeholder,
-  propTables: [AvatarContainer, AvatarIcon]
-})(AvatarWithImage)
+export const _AvatarWithImage = AvatarWithImage
 
 _AvatarWithImage.story = {
   name: 'Avatar with image'
 }
 
-export const _AvatarWithText = withInfo({
-  text: Placeholder,
-  propTables: [AvatarContainer, AvatarIcon]
-})(AvatarWithText)
+export const _AvatarWithText = AvatarWithText
 
 _AvatarWithText.story = {
   name: 'Avatar with text'
 }
 
-export const _AvatarWithIcon = withInfo({
-  text: Placeholder,
-  propTables: [AvatarContainer, AvatarIcon]
-})(AvatarWithIcon)
+export const _AvatarWithIcon = AvatarWithIcon
 
 _AvatarWithIcon.story = {
   name: 'Avatar with icon'
 }
 
-export const _AvatarLink = withInfo({
-  text: Placeholder,
-  propTables: [AvatarContainer, AvatarIcon]
-})(AvatarLink)
+export const _AvatarLink = AvatarLink
 
 _AvatarLink.story = {
   name: 'Avatar link'
 }
 
-export const _AvatarLinkWithTooltip = withInfo({
-  text: Placeholder,
-  propTables: [AvatarContainer, AvatarIcon]
-})(AvatarLinkWithTooltip)
+export const _AvatarLinkWithTooltip = AvatarLinkWithTooltip
 
 _AvatarLinkWithTooltip.story = {
   name: 'Avatar link with Tooltip'
 }
 
-export const _AvatarWithAdditionalText = withInfo({
-  text: Placeholder,
-  propTables: [AvatarContainer, AvatarIcon, AvatarExtraText, AvatarWrapper]
-})(AvatarWithAdditionalText)
+export const _AvatarWithAdditionalText = AvatarWithAdditionalText
 
 _AvatarWithAdditionalText.story = {
   name: 'Avatar with additional text'

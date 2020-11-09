@@ -1,6 +1,4 @@
 import React from 'react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import BasicSidebar from './docs/BasicSidebar.md'
 import ConIcona from './docs/ConIcona.md'
@@ -46,15 +44,10 @@ const BasicSidebarComponent = () => (
 )
 
 export default {
-  title: 'Componenti/Sidebar',
-  decorators: [withA11y]
+  title: 'Componenti/Sidebar'
 }
 
-export const _BasicSidebar = withInfo({
-  text: BasicSidebar,
-  propTables: [Sidebar],
-  propTablesExclude: [LinkList, LinkListItem]
-})(BasicSidebarComponent)
+export const _BasicSidebar = BasicSidebarComponent
 
 const ConIconaSidebarComponent = () => (
   <Sidebar>
@@ -116,11 +109,7 @@ const ConIconaSidebarComponent = () => (
   </Sidebar>
 )
 
-export const _ConIcona = withInfo({
-  text: ConIcona,
-  propTables: [Sidebar],
-  propTablesExclude: [LinkList, LinkListItem]
-})(ConIconaSidebarComponent)
+export const _ConIcona = ConIconaSidebarComponent
 
 _ConIcona.story = {
   name: 'Con icona'
@@ -158,11 +147,7 @@ const ConLineaDestraSidebarComponent = () => (
   </Sidebar>
 )
 
-export const ConLineaADestra = withInfo({
-  text: ConLineaDestra,
-  propTables: [Sidebar],
-  propTablesExclude: [LinkList, LinkListItem]
-})(ConLineaDestraSidebarComponent)
+export const ConLineaADestra = ConLineaDestraSidebarComponent
 
 ConLineaADestra.story = {
   name: 'Con linea a destra'
@@ -200,21 +185,13 @@ const ConLineaSinistraSidebarComponent = () => (
   </Sidebar>
 )
 
-export const ConLineaASinistra = withInfo({
-  text: ConLineaSinistra,
-  propTables: [Sidebar],
-  propTablesExclude: [LinkList, LinkListItem]
-})(ConLineaSinistraSidebarComponent)
+export const ConLineaASinistra = ConLineaSinistraSidebarComponent
 
 ConLineaASinistra.story = {
   name: 'Con linea a sinistra'
 }
 
-export const _Annidata = withInfo({
-  text: Annidata,
-  propTables: [Sidebar],
-  propTablesExclude: [LinkList, LinkListItem]
-})(() => <SidebarCollapseExample />)
+export const _Annidata = SidebarCollapseExample
 
 const ScuraSidebarComponent = () => (
   <Sidebar dark>
@@ -252,11 +229,7 @@ _Annidata.story = {
   name: 'Sidebar annidata'
 }
 
-export const SidebarVersioneScura = withInfo({
-  text: ScuraSidebar,
-  propTables: [Sidebar],
-  propTablesExclude: [LinkList, LinkListItem]
-})(ScuraSidebarComponent)
+export const SidebarVersioneScura = ScuraSidebarComponent
 
 SidebarVersioneScura.story = {
   name: 'Sidebar versione scura'

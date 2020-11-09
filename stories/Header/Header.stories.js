@@ -1,7 +1,4 @@
 import React from 'react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
-import { withKnobs } from '@storybook/addon-knobs/react'
 
 import {
   // Components to exclude from the table
@@ -44,101 +41,73 @@ import CenterBasicDoc from './CenterHeader/basic.md'
 import NavBasicDoc from './NavHeader/basic.md'
 import CompleteBasicDoc from './CompleteHeader/basic.md'
 
-const ComponentsToExclude = [
-  Button,
-  Collapse,
-  Icon,
-  Nav,
-  NavItem,
-  NavLink,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-  UncontrolledDropdown
-]
-
 export default {
   title: 'Componenti/Header',
-  decorators: [withA11y, withKnobs],
 
   parameters: {
     options: {
       showPanel: false
+    }
+  },
+  args: {
+    theme: ''
+  },
+  argTypes: {
+    theme: {
+      control: {
+        type: 'select',
+        options: { default: '', light: 'light' }
+      }
     }
   }
 }
 
 export const Introduzione = () => <Introduction />
 
-export const HeaderSlim = withInfo({
-  text: SlimBasicDoc,
-  propTables: [
-    Header,
-    HeaderContent,
-    HeaderLinkZone,
-    HeaderRightZone,
-    HeaderBrand,
-    HeaderToggler
-  ],
-  propTablesExclude: [SlimHeaderBasic, ...ComponentsToExclude]
-})(SlimHeaderBasic)
+export const HeaderSlim = SlimHeaderBasic
 
 HeaderSlim.story = {
   name: 'Header slim'
 }
+HeaderSlim.args = {
+  isOpen: false,
+  brandText: 'Ente appartenenza/Owner'
+}
 
-export const HeaderSlimWithFullButton = withInfo({
-  text: SlimFullDoc,
-  propTables: [
-    Header,
-    HeaderContent,
-    HeaderLinkZone,
-    HeaderRightZone,
-    HeaderBrand,
-    HeaderToggler
-  ],
-  propTablesExclude: [SlimHeaderFull, ...ComponentsToExclude]
-})(SlimHeaderFull)
+export const HeaderSlimWithFullButton = SlimHeaderFull
 
 HeaderSlimWithFullButton.story = {
   name: 'Header slim with full button'
 }
 
-export const HeaderCenter = withInfo({
-  text: CenterBasicDoc,
-  propTables: [
-    Header,
-    HeaderBrand,
-    HeaderContent,
-    HeaderSearch,
-    HeaderRightZone,
-    HeaderSocialsZone
-  ],
-  propTablesExclude: [CenterHeaderBasic, ...ComponentsToExclude]
-})(CenterHeaderBasic)
+export const HeaderCenter = CenterHeaderBasic
 
 HeaderCenter.story = {
   name: 'Header center'
 }
+HeaderCenter.args = {
+  isSmall: false
+}
 
-export const HeaderNav = withInfo({
-  text: NavBasicDoc,
-  propTables: [Header, HeaderContent, HeaderToggler],
-  propTablesExclude: [NavHeaderBasic, ...ComponentsToExclude]
-})(NavHeaderBasic)
+export const HeaderNav = NavHeaderBasic
 
 HeaderNav.story = {
   name: 'Header nav'
 }
+HeaderNav.args = {
+  isOpen: false
+}
 
-export const HeaderComplete = withInfo({
-  text: CompleteBasicDoc,
-  propTables: [Headers, Header],
-  propTablesExclude: [
-    CompleteHeaderBasic,
-    SlimHeader,
-    CenterHeader,
-    NavHeader,
-    ...ComponentsToExclude
-  ]
-})(CompleteHeaderBasic)
+export const HeaderComplete = CompleteHeaderBasic
+HeaderComplete.args = {
+  slimHeaderType: 'default',
+  sticky: false
+}
+HeaderComplete.argTypes = {
+  slimHeaderType: {
+    control: {
+      type: 'select',
+      options: ['default', 'Full responsive']
+    }
+  }
+}

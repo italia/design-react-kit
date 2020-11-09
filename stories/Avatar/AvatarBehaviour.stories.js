@@ -1,5 +1,3 @@
-import { withInfo } from '@storybook/addon-info'
-
 import Placeholder from './docs/Placeholder.md'
 import {
   AvatarIcon,
@@ -16,12 +14,6 @@ export default {
   title: 'Componenti/Avatar.Behavior'
 }
 
-export const _UserPresence = withInfo({
-  text: Placeholder,
-  propTables: [AvatarIcon, AvatarContainer, AvatarPresence, AvatarWrapper]
-})(UserPresence)
+export const _UserPresence = UserPresence
 
-export const _UserStatus = withInfo({
-  text: Placeholder,
-  propTables: [AvatarIcon, AvatarContainer, AvatarStatus, AvatarWrapper]
-})(UserStatus)
+export const _UserStatus = UserStatus

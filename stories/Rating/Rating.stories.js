@@ -1,17 +1,12 @@
-import React from 'react';
-import { withKnobs, text, number } from '@storybook/addon-knobs/react';
-import { withA11y } from '@storybook/addon-a11y';
-import { withInfo } from '@storybook/addon-info';
+import React from 'react'
 
-import { Rating } from '../../src';
+import { Rating } from '../../src'
 
-import RatingBaseDoc from './docs/RatingBase.md';
-import RatingConLabelDoc from './docs/RatingConLabel.md';
-import RatingReadOnlyDoc from './docs/RatingReadOnly.md';
+import RatingBaseDoc from './docs/RatingBase.md'
+import RatingConLabelDoc from './docs/RatingConLabel.md'
+import RatingReadOnlyDoc from './docs/RatingReadOnly.md'
 
-const RatingBase = () => {
-  const legend = text('Label', 'Rating');
-  const value = number('Valore (1-5)', null, { min: 1, max: 5, step: 1 });
+const RatingBase = ({ legend, value }) => {
   return (
     <Rating
       legend={legend}
@@ -19,8 +14,8 @@ const RatingBase = () => {
       inputs={['star1a', 'star2a', 'star3a', 'star4a', 'star5a']}
       name="ratingA"
     />
-  );
-};
+  )
+}
 
 const RatingConLabel = () => (
   <Rating
@@ -34,7 +29,7 @@ const RatingConLabel = () => (
     inputs={['star1b', 'star2b', 'star3b', 'star4b', 'star5b']}
     name="ratingB"
   />
-);
+)
 
 const RatingReadOnly = () => (
   <Rating
@@ -44,29 +39,36 @@ const RatingReadOnly = () => (
     inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']}
     name="ratingC"
   />
-);
+)
 
 export default {
   title: 'Componenti/Rating',
-  decorators: [withA11y, withKnobs],
-};
+  decorators: [withA11y]
+}
 
-export const _RatingBase = withInfo({
-  text: RatingBaseDoc,
-})(RatingBase);
+export const _RatingBase = RatingBase
 
-export const _RatingConLabel = withInfo({
-  text: RatingConLabelDoc,
-})(RatingConLabel);
+_RatingBase.args = {
+  value: null,
+  legend: 'Rating'
+}
+_RatingBase.argTypes = {
+  value: {
+    control: {
+      type: 'range',
+      options: { min: 1, max: 5, step: 1 }
+    }
+  }
+}
+
+export const _RatingConLabel = RatingConLabel
 
 _RatingConLabel.story = {
-  name: 'Rating con Label',
-};
+  name: 'Rating con Label'
+}
 
-export const _RatingReadOnly = withInfo({
-  text: RatingReadOnlyDoc,
-})(RatingReadOnly);
+export const _RatingReadOnly = RatingReadOnly
 
 _RatingReadOnly.story = {
-  name: 'Rating read-only',
-};
+  name: 'Rating read-only'
+}

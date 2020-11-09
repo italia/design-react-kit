@@ -1,7 +1,7 @@
-import { ArgsTable, Description, Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
+import { ArgsTable, Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
 import { Alert, Callout, CalloutTitle, CalloutText } from '../../src'
 
-<Meta title="Documentazione/Alert" />
+<Meta title="Documentazione/Alert" of={Alert}/>
 
 # Alert
 
@@ -11,13 +11,15 @@ Gli avvisi sono disponibili in quattro tipologie diverse e per qualsiasi lunghez
     <Story id="componenti-alert--esempi" />
 </Canvas>
 
-<Callout color="success">
-    <CalloutTitle>Trasmettere significato alle tecnologie assistive</CalloutTitle>
-    <CalloutText>
-        L’uso del colore per aggiungere un significato fornisce solo un’indicazione visiva, che non sarà trasmesso agli utenti di tecnologie assistive 
-        – come gli screen reader. Assicurati che le informazioni denotate dal colore siano rese disponibili anche dal contenuto stesso (es.: il testo visibile), o siano incluse attraverso mezzi alternativi, come testo aggiuntivo nascosto con la classe <code>.sr-only</code>.
-    </CalloutText>
-</Callout>
+<div className="docs">
+    <Callout color="success" >
+        <CalloutTitle>Trasmettere significato alle tecnologie assistive</CalloutTitle>
+        <CalloutText>
+            L’uso del colore per aggiungere un significato fornisce solo un’indicazione visiva, che non sarà trasmesso agli utenti di tecnologie assistive 
+            – come gli screen reader. Assicurati che le informazioni denotate dal colore siano rese disponibili anche dal contenuto stesso (es.: il testo visibile), o siano incluse attraverso mezzi alternativi, come testo aggiuntivo nascosto con la classe <code>.sr-only</code>.
+        </CalloutText>
+    </Callout>
+</div>
 
 
 ## Link evidenziato

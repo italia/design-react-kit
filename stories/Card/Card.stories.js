@@ -1,7 +1,4 @@
 import React from 'react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
-import { withKnobs, text, boolean } from '@storybook/addon-knobs'
 
 import {
   Card,
@@ -13,6 +10,8 @@ import {
   CardSignature,
   CardReadMore,
   Icon,
+  Row,
+  Col,
   CardTagsHeader
 } from '../../src'
 
@@ -290,135 +289,94 @@ const SpecialCardComponent = () => (
   </div>
 )
 
-const EsempiInterattiviComponent = () => {
-  const hasSpace = boolean('Extra mobile spacing', false)
-  const isTeaser = boolean('Card Anteprima', false)
-  const linkOption = text('Link', '#')
-  const titleOption = text(
-    'Titolo',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit…'
-  )
-  const textOption = text(
-    'Testo',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-  )
-
-  return (
-    <div className="row">
-      <div className="col-12 col-lg-6">
-        {/* Start card */}
-        <Card space={hasSpace} teaser={isTeaser}>
-          <CardBody>
-            <CardTitle tag="h5">{titleOption}</CardTitle>
-            <CardText>{textOption}</CardText>
-            <CardReadMore
-              iconName="it-arrow-right"
-              text="Leggi di più"
-              tag={'a'}
-              href={linkOption}
-            />
-          </CardBody>
-        </Card>
-        {/* end card */}
-      </div>
-    </div>
-  )
-}
-
 export default {
   title: 'Componenti/Cards',
-  decorators: [withA11y, withKnobs]
+  decorators: [withA11y]
 }
 
-export const _SimpleCard = withInfo({
-  text: SimpleCard,
-  propTables: [Card],
-  propTablesExclude: [Button]
-})(SimpleCardComponent)
+export const _SimpleCard = SimpleCardComponent
 
-export const SimpleCardInMultipleColumns = withInfo({
-  text: SimpleCardMultipleColumns,
-  propTables: [Card],
-  propTablesExclude: [Button]
-})(SimpleCardMultipleColumnsComponent)
+export const SimpleCardInMultipleColumns = SimpleCardMultipleColumnsComponent
 
 SimpleCardInMultipleColumns.story = {
   name: 'Simple Card in multiple columns'
 }
 
-export const _SimpleArticle = withInfo({
-  text: SimpleArticle,
-  propTables: [Card]
-})(SimpleArticleComponent)
+export const _SimpleArticle = SimpleArticleComponent
 
-export const SimpleArticleWithIcon = withInfo({
-  text: SimpleArticle,
-  propTables: [Card, CardCategory]
-})(SimpleArticleDateIconComponent)
+export const SimpleArticleWithIcon = SimpleArticleDateIconComponent
 
 SimpleArticleWithIcon.story = {
   name: 'Simple Article with Icon'
 }
 
-export const CardWithIcon = withInfo({
-  text: CardIcon,
-  propTables: [Card]
-})(CardIconComponent)
+export const CardWithIcon = CardIconComponent
 
 CardWithIcon.story = {
   name: 'Card with icon'
 }
 
-export const CardWithShading = withInfo({
-  text: CardShading,
-  propTables: [Card],
-  propTablesExclude: [Button]
-})(CardShadingComponent)
+export const CardWithShading = CardShadingComponent
 
 CardWithShading.story = {
   name: 'Card with shading'
 }
 
-export const _BigCard = withInfo({
-  text: BigCard,
-  propTables: [Card]
-})(BigCardComponent)
+export const _BigCard = BigCardComponent
 
 _BigCard.story = {
   name: 'Big card'
 }
 
-export const BigCardWithTag = withInfo({
-  text: BigCardTag,
-  propTables: [Card]
-})(BigCardTagComponent)
+export const BigCardWithTag = BigCardTagComponent
 
 BigCardWithTag.story = {
   name: 'Big card with tag'
 }
 
-export const CardWithImage = withInfo({
-  text: CardImage,
-  propTables: [Card]
-})(CardImageComponent)
+export const CardWithImage = CardImageComponent
 
 CardWithImage.story = {
   name: 'Card with image'
 }
 
-export const SpecialCards = withInfo({
-  text: SpecialCard,
-  propTables: [Card]
-})(SpecialCardComponent)
+export const SpecialCards = SpecialCardComponent
 
 SpecialCards.story = {
   name: 'Special cards'
 }
 
-export const _EsempiInterattivi = withInfo({
-  text: EsempiInterattivi
-})(EsempiInterattiviComponent)
+export const _EsempiInterattivi = ({ space, teaser, link, title, text }) => {
+  return (
+    <Row>
+      <Col size={12} lg={6}>
+        {/* Start card */}
+        <Card space={space} teaser={teaser}>
+          <CardBody>
+            <CardTitle tag="h5">{title}</CardTitle>
+            <CardText>{text}</CardText>
+            <CardReadMore
+              iconName="it-arrow-right"
+              text="Leggi di più"
+              tag={'a'}
+              href={link}
+            />
+          </CardBody>
+        </Card>
+        {/* end card */}
+      </Col>
+    </Row>
+  )
+}
 
 _EsempiInterattivi.story = {
   name: 'Esempi interattivi'
+}
+_EsempiInterattivi.args = {
+  space: false,
+  teaser: false,
+  link: '#',
+  title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit…',
+  text:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 }

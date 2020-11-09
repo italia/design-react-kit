@@ -1,6 +1,4 @@
 import React from 'react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import InputIconButtonExample from './Input/InputIcon/InputIconButtonExample'
 import AutocompleteExample from './Autocomplete/AutocompleteExample'
@@ -58,94 +56,77 @@ const InputPlaceHolderLabelComponent = () => (
 )
 
 export default {
-  title: 'Componenti/Form.Input',
-  decorators: [withA11y]
+  title: 'Componenti/Form.Input'
 }
 
-export const EsempiDiCampiDiInput = withInfo({
-  text: Esempi
-})(InputTypesExamples)
+export const EsempiDiCampiDiInput = InputTypesExamples
 
 EsempiDiCampiDiInput.story = {
   name: 'Esempi di campi di input'
 }
 
-export const UtilizzoDiPlaceholderELabel = withInfo({
-  text: Placeholder
-})(InputPlaceHolderLabelComponent)
+export const UtilizzoDiPlaceholderELabel = InputPlaceHolderLabelComponent
 
 UtilizzoDiPlaceholderELabel.story = {
   name: 'Utilizzo di placeholder e label'
 }
 
-export const InputConIconaOBottoni = withInfo({
-  text: IconButton
-})(() => <InputIconButtonExample />)
+export const InputConIconaOBottoni = InputIconButtonExample
 
 InputConIconaOBottoni.story = {
   name: 'Input con icona o bottoni'
 }
 
-export const InputPassword = withInfo({
-  text: Password
-})(() => (
+export const InputPassword = () => (
   <Input
     type="password"
     id="exampleInputPassword"
     label="Password con label, placeholder e testo di aiuto"
     infoText="Inserisci almeno 8 caratteri e una lettera maiuscola"
   />
-))
+)
 
 InputPassword.story = {
   name: 'Input password'
 }
 
-export const _Disabilitato = withInfo({
-  text: Disabled
-})(() => <Input label="Contenuto disabilitato" id="exampleDisabled" disabled />)
+export const _Disabilitato = () => (
+  <Input label="Contenuto disabilitato" id="exampleDisabled" disabled />
+)
 
-export const _Readonly = withInfo({
-  text: Readonly
-})(() => (
+export const _Readonly = () => (
   <Input label="Contenuto in sola lettura" id="examplereadOnly" readOnly />
-))
+)
 
-export const ReadonlyNormalizzato = withInfo({
-  text: Normalize
-})(() => (
+export const ReadonlyNormalizzato = () => (
   <Input label="Contenuto in sola lettura" id="exampleNormalized" normalized />
-))
+)
 
 ReadonlyNormalizzato.story = {
   name: 'Readonly normalizzato'
 }
 
-export const _InputAutocomplete = withInfo({
-  text: InputAutocomplete
-})(() => <AutocompleteExample />)
+export const _InputAutocomplete = () => <AutocompleteExample />
 
 _InputAutocomplete.story = {
   name: 'Input autocomplete'
 }
 
-export const AreaDiTesto = withInfo({
-  text: Textarea
-})(() => <TextArea rows="3" label="Esempio di area di testo" />)
+export const AreaDiTesto = () => (
+  <TextArea rows="3" label="Esempio di area di testo" />
+)
 
 AreaDiTesto.story = {
   name: 'Area di testo'
 }
 
-export const AreaDiTestoConSegnaposto = withInfo({
-  text: Textarea
-})(() => (
+export const AreaDiTestoConSegnaposto = () => (
   <TextArea
     rows="3"
     label="Esempio di area di testo"
     placeholder="Testo di esempio"
   />
-))
+)
 
 AreaDiTestoConSegnaposto.story = {
   name: 'Area di testo con segnaposto'

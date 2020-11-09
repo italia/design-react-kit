@@ -1,6 +1,4 @@
 import React from 'react'
-import { withA11y } from '@storybook/addon-a11y'
-import { withInfo } from '@storybook/addon-info'
 
 import { DropdownMenu, Icon, LinkList, LinkListItem } from '../../src'
 
@@ -254,69 +252,52 @@ const MenuDarkComponent = () => (
 )
 
 export default {
-  title: 'Componenti/Dropdown.Dropdown menu',
-  decorators: [withA11y]
+  title: 'Componenti/Dropdown.Dropdown menu'
 }
 
-export const _MenuVociAttive = withInfo({
-  text: MenuVociAttive
-})(MenuVociAttiveComponent)
+export const _MenuVociAttive = MenuVociAttiveComponent
 
 _MenuVociAttive.story = {
   name: 'Menù voci attive'
 }
 
-export const _MenuVociDisabilitate = withInfo({
-  text: MenuVociDisabilitate
-})(MenuVociDisabilitateComponent)
+export const _MenuVociDisabilitate = MenuVociDisabilitateComponent
 
 _MenuVociDisabilitate.story = {
   name: 'Menù voci disabilitate'
 }
 
-export const MenuHeadersESeparatori = withInfo({
-  text: MenuHeaderDivider
-})(MenuHeaderDividerComponent)
+export const MenuHeadersESeparatori = MenuHeaderDividerComponent
 
 MenuHeadersESeparatori.story = {
   name: 'Menù headers e separatori'
 }
 
-export const MenuConVociLarge = withInfo({
-  text: MenuLarge
-})(MenuLargeComponent)
+export const MenuConVociLarge = MenuLargeComponent
 
 MenuConVociLarge.story = {
   name: 'Menu con voci large'
 }
 
-export const MenuFullWidth = withInfo({
-  text: MenuFull
-})(MenuFullComponent)
+export const MenuFullWidth = MenuFullComponent
 
 MenuFullWidth.story = {
   name: 'Menù full width'
 }
 
-export const MenuIconaADestra = withInfo({
-  text: MenuIconRight
-})(MenuIconRightComponent)
+export const MenuIconaADestra = MenuIconRightComponent
 
 MenuIconaADestra.story = {
   name: 'Menù icona a destra'
 }
 
-export const MenuIconaASinistra = withInfo({
-  text: MenuIconLeft
-})(MenuIconLeftComponent)
+export const MenuIconaASinistra = MenuIconLeftComponent
 
 MenuIconaASinistra.story = {
   name: 'Menù icona a sinistra'
 }
 
-export const _MenuDark = withInfo({
-  text: MenuDark
-})(MenuDarkComponent)
+export const _MenuDark = MenuDarkComponent
 
 _MenuDark.story = {
   name: 'Menù dark'

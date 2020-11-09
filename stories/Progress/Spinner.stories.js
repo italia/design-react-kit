@@ -1,5 +1,4 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
 import { Spinner } from '../../src'
 
 import SpinnerDocs from './docs/SpinnerDocs.md'
@@ -71,10 +70,6 @@ export default {
   title: 'Componenti/Progress Indicators.Spinners'
 }
 
-export const _Spinner = withInfo({
-  text: SpinnerDocs
-})(SpinnerComponent)
+export const _Spinner = SpinnerComponent
 
-export const _SpinnerDoppio = withInfo({
-  text: SpinnerDoppio
-})(SpinnerDoppioComponent)
+export const _SpinnerDoppio = SpinnerDoppioComponent

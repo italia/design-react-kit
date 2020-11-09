@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { select, text } from '@storybook/addon-knobs/react'
 import {
   Button,
   Card,
@@ -21,15 +20,7 @@ import {
 import CompleteHeader from '../shared/Header'
 import Footer from '../shared/Footer'
 
-const Homepage = () => {
-  const theme = select(
-    'Tema',
-    { default: '', light: 'light', dark: 'dark' },
-    ''
-  )
-
-  const townName = text('Comune', 'Nome del Comune')
-  const townTagLine = text('Motto Comune', 'Uno dei tanti Comuni d Italia')
+const Homepage = ({ theme, townName, townTagLine }) => {
   return (
     <>
       <CompleteHeader
