@@ -56,7 +56,7 @@ const InputPlaceHolderLabelComponent = () => (
 )
 
 export default {
-  title: 'Componenti/Form.Input'
+  title: 'Componenti/Form/Input'
 }
 
 export const EsempiDiCampiDiInput = InputTypesExamples

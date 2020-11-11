@@ -11,7 +11,7 @@ import SelectMultipla from './docs/Select/Multipla.md'
 import SelectGrouped from './docs/Select/Grouped.md'
 
 export default {
-  title: 'Componenti/Form.Select'
+  title: 'Componenti/Form/Select'
 }
 
 export const SelectClassica = () => <SelectExample />

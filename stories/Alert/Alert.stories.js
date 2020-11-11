@@ -1,10 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { Alert } from '../../src'
-
-import AlertExample from './AlertExample'
-
-const ChiusuraControllataComponent = () => <AlertExample />
+import { Alert, Button } from '../../src'
 
 export default {
   title: 'Componenti/Alert',
@@ -72,8 +68,20 @@ export const _ContenutoAggiuntivo = () => (
   </Alert>
 )
 
-// export const _ChiusuraControllata = withInfo({
-//   text: ChiusuraControllata,
-//   propTables: [Alert],
-//   propTablesExclude: [AlertExample]
-// })(ChiusuraControllataComponent)
+export const ChiusuraControllata = () => {
+  const [open, toggleAlert] = useState(true)
+  return (
+    <div>
+      <Button onClick={() => toggleAlert(!open)} disabled={open}>
+        Mostra Alert
+      </Button>
+
+      <Alert color="warning" isOpen={open} toggle={() => toggleAlert(!open)}>
+        <strong>Attenzione</strong> Alcuni campi inseriti sono da controllare.
+      </Alert>
+    </div>
+  )
+}
+ChiusuraControllata.story = {
+  name: 'Chiusura Controllata'
+}

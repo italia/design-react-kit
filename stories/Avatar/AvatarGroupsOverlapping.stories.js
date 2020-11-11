@@ -4,7 +4,7 @@ import SmallOverlappingAvatars from './SmallOverlappingAvatars'
 import MediumOverlaidAvatars from './MediumOverlaidAvatars'
 
 export default {
-  title: 'Componenti/Avatar.Avatar groups Overlapping'
+  title: 'Componenti/Avatar/Avatar groups Overlapping'
 }
 
 export const _SmallOverlappingAvatars = SmallOverlappingAvatars

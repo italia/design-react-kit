@@ -9,157 +9,6 @@ import {
   Navbar
 } from '../../src'
 
-import Esempi from './docs/Esempi.md'
-import StatoAttivo from './docs/StatoAttivo.md'
-import StatoDisabilitato from './docs/StatoDisabilitato.md'
-import HeaderDivider from './docs/HeaderDivider.md'
-import Large from './docs/Large.md'
-import Multiline from './docs/Multiline.md'
-import Titolo from './docs/Titolo.md'
-
-const EsempiComponent = () => (
-  <LinkList>
-    <LinkListItem>
-      <span>Link list 1</span>
-    </LinkListItem>
-    <LinkListItem>
-      <span>Link list 2</span>
-    </LinkListItem>
-    <LinkListItem>
-      <span>Link list 3</span>
-    </LinkListItem>
-  </LinkList>
-)
-
-const StatoAttivoComponent = () => (
-  <LinkList>
-    <LinkListItem>
-      <span>Link list 1</span>
-    </LinkListItem>
-    <LinkListItem active>
-      <span>Link list 2 active</span>
-    </LinkListItem>
-    <LinkListItem>
-      <span>Link list 3</span>
-    </LinkListItem>
-  </LinkList>
-)
-
-const StatoDisabilitatoComponent = () => (
-  <LinkList>
-    <LinkListItem>
-      <span>Link list 1</span>
-    </LinkListItem>
-    <LinkListItem disabled>
-      <span>Link list 2 disabled</span>
-    </LinkListItem>
-    <LinkListItem>
-      <span>Link list 3</span>
-    </LinkListItem>
-  </LinkList>
-)
-
-const HeaderDividerComponent = () => (
-  <section>
-    <LinkList>
-      <LinkListItem header>Heading senza link</LinkListItem>
-      <LinkListItem>
-        <span>Link list 1</span>
-      </LinkListItem>
-      <LinkListItem>
-        <span>Link list 2</span>
-      </LinkListItem>
-      <LinkListItem>
-        <span>Link list 3</span>
-      </LinkListItem>
-      <LinkListItem divider />
-      <LinkListItem>
-        <span>Link list 4</span>
-      </LinkListItem>
-    </LinkList>
-
-    <LinkList>
-      <LinkListItem header href="#">
-        Heading con link
-      </LinkListItem>
-      <LinkListItem>
-        <span>Link list 1</span>
-      </LinkListItem>
-      <LinkListItem>
-        <span>Link list 2</span>
-      </LinkListItem>
-      <LinkListItem>
-        <span>Link list 3</span>
-      </LinkListItem>
-      <LinkListItem divider />
-      <LinkListItem>
-        <span>Link list 4</span>
-      </LinkListItem>
-    </LinkList>
-  </section>
-)
-
-const LargeComponent = () => (
-  <LinkList>
-    <LinkListItem header href="#">
-      Heading
-    </LinkListItem>
-    <LinkListItem size="large">
-      <span>Link list 1</span>
-    </LinkListItem>
-    <LinkListItem size="large">
-      <span>Link list 2</span>
-    </LinkListItem>
-    <LinkListItem size="large">
-      <span>Link list 3</span>
-    </LinkListItem>
-    <LinkListItem divider />
-    <LinkListItem size="large">
-      <span>Link list 4</span>
-    </LinkListItem>
-  </LinkList>
-)
-
-const MultilineComponent = () => (
-  <LinkList multiline>
-    <LinkListItem active className="right-icon">
-      <span>Link list 1 active</span>
-      <i className="it-chevron-right right" />
-      <Icon
-        className="icon-right"
-        color="primary"
-        icon="it-chevron-right"
-        style={{ ariaHidden: true }}
-      />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
-    </LinkListItem>
-    <LinkListItem divider />
-    <LinkListItem className="right-icon">
-      <span>Link list 2</span>
-      <i className="it-chevron-right right" />
-      <Icon
-        className="icon-right"
-        color="primary"
-        icon="it-chevron-right"
-        style={{ ariaHidden: true }}
-      />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
-    </LinkListItem>
-    <LinkListItem divider />
-    <LinkListItem disabled className="right-icon">
-      <span>Link list 3 disabled</span>
-      <i className="it-chevron-right right" />{' '}
-      <Icon
-        className="icon-right"
-        color="primary"
-        icon="it-chevron-right"
-        style={{ ariaHidden: true }}
-      />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
-    </LinkListItem>
-  </LinkList>
-)
-
 const NavigationMenuWithTitle = () => {
   return (
     <div className="sticky-wrapper navbar-wrapper">
@@ -219,19 +68,116 @@ export default {
   title: 'Componenti/LinkList'
 }
 
-export const _Esempi = EsempiComponent
+export const _Esempi = () => (
+  <LinkList>
+    <LinkListItem>
+      <span>Link list 1</span>
+    </LinkListItem>
+    <LinkListItem>
+      <span>Link list 2</span>
+    </LinkListItem>
+    <LinkListItem>
+      <span>Link list 3</span>
+    </LinkListItem>
+  </LinkList>
+)
 
-export const _StatoAttivo = StatoAttivoComponent
+export const _StatoAttivo = () => (
+  <LinkList>
+    <LinkListItem>
+      <span>Link list 1</span>
+    </LinkListItem>
+    <LinkListItem active>
+      <span>Link list 2 active</span>
+    </LinkListItem>
+    <LinkListItem>
+      <span>Link list 3</span>
+    </LinkListItem>
+  </LinkList>
+)
 
-export const _StatoDisabilitato = StatoDisabilitatoComponent
+export const _StatoDisabilitato = () => (
+  <LinkList>
+    <LinkListItem>
+      <span>Link list 1</span>
+    </LinkListItem>
+    <LinkListItem disabled>
+      <span>Link list 2 disabled</span>
+    </LinkListItem>
+    <LinkListItem>
+      <span>Link list 3</span>
+    </LinkListItem>
+  </LinkList>
+)
 
-export const HeaderEDivider = HeaderDividerComponent
+export const HeaderEDividerNoLink = () => (
+  <LinkList>
+    <LinkListItem header>Heading senza link</LinkListItem>
+    <LinkListItem>
+      <span>Link list 1</span>
+    </LinkListItem>
+    <LinkListItem>
+      <span>Link list 2</span>
+    </LinkListItem>
+    <LinkListItem>
+      <span>Link list 3</span>
+    </LinkListItem>
+    <LinkListItem divider />
+    <LinkListItem>
+      <span>Link list 4</span>
+    </LinkListItem>
+  </LinkList>
+)
 
-HeaderEDivider.story = {
-  name: 'Header e Divider'
+HeaderEDividerNoLink.story = {
+  name: 'Header e Divider (senza link)'
 }
 
-export const Sizing = LargeComponent
+export const HeaderEDividerConLink = () => (
+  <LinkList>
+    <LinkListItem header href="#">
+      Heading con link
+    </LinkListItem>
+    <LinkListItem>
+      <span>Link list 1</span>
+    </LinkListItem>
+    <LinkListItem>
+      <span>Link list 2</span>
+    </LinkListItem>
+    <LinkListItem>
+      <span>Link list 3</span>
+    </LinkListItem>
+    <LinkListItem divider />
+    <LinkListItem>
+      <span>Link list 4</span>
+    </LinkListItem>
+  </LinkList>
+)
+
+HeaderEDividerConLink.story = {
+  name: 'Header e Divider (con link)'
+}
+
+export const Sizing = () => (
+  <LinkList>
+    <LinkListItem header href="#">
+      Heading
+    </LinkListItem>
+    <LinkListItem size="large" href="#">
+      <span>Link list 1</span>
+    </LinkListItem>
+    <LinkListItem size="large" href="#">
+      <span>Link list 2</span>
+    </LinkListItem>
+    <LinkListItem size="large" href="#">
+      <span>Link list 3</span>
+    </LinkListItem>
+    <LinkListItem divider />
+    <LinkListItem size="large" href="#">
+      <span>Link list 4</span>
+    </LinkListItem>
+  </LinkList>
+)
 
 export const TitoloLista = NavigationMenuWithTitle
 
@@ -239,4 +185,36 @@ TitoloLista.story = {
   name: 'Titolo lista'
 }
 
-export const EsempioMultiline = MultilineComponent
+export const EsempioMultiline = () => (
+  <LinkList multiline>
+    <LinkListItem active className="right-icon" href="#">
+      <span>Link list 1 active</span>
+      <Icon
+        color="primary"
+        icon="it-chevron-right"
+        style={{ ariaHidden: true }}
+      />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
+    </LinkListItem>
+    <LinkListItem divider />
+    <LinkListItem className="right-icon" href="#">
+      <span>Link list 2</span>
+      <Icon
+        color="primary"
+        icon="it-chevron-right"
+        style={{ ariaHidden: true }}
+      />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
+    </LinkListItem>
+    <LinkListItem divider />
+    <LinkListItem disabled className="right-icon" href="#">
+      <span>Link list 3 disabled</span>{' '}
+      <Icon
+        color="primary"
+        icon="it-chevron-right"
+        style={{ ariaHidden: true }}
+      />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
+    </LinkListItem>
+  </LinkList>
+)

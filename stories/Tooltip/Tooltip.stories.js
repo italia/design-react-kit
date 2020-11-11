@@ -141,8 +141,7 @@ const EsempiInterattiviComponent = ({ placement, text }) => {
 }
 
 export default {
-  title: 'Componenti/Tooltip',
-  decorators: [withA11y]
+  title: 'Componenti/Tooltip'
 }
 
 export const _Esempi = EsempiComponent

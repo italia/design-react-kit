@@ -1,11 +1,9 @@
 import React from 'react'
 
-
 import { Container, Row, Col } from '../../src'
 
 export default {
-  title: 'Componenti/Layout Component',
-  decorators: [withA11y]
+  title: 'Componenti/Layout Component'
 }
 
 export const StandardizeWidths = () => (

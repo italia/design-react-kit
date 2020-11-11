@@ -184,8 +184,7 @@ const BackgroundComponent = () => (
 )
 
 export default {
-  title: 'Componenti/Breadcrumb',
-  decorators: [withA11y]
+  title: 'Componenti/Breadcrumb'
 }
 
 export const _Esempi = EsempiComponent

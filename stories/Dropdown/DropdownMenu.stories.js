@@ -252,7 +252,7 @@ const MenuDarkComponent = () => (
 )
 
 export default {
-  title: 'Componenti/Dropdown.Dropdown menu'
+  title: 'Componenti/Dropdown/Dropdown menu'
 }
 
 export const _MenuVociAttive = MenuVociAttiveComponent

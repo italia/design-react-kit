@@ -10,7 +10,7 @@ import Toggles from './docs/Toggles/Toggles.md'
 import TogglesDisabilitate from './docs/Toggles/TogglesDisabilitate.md'
 
 export default {
-  title: 'Componenti/Form.Toggles'
+  title: 'Componenti/Form/Toggles'
 }
 
 export const _Toggles = () => <TogglesExample />

@@ -11,7 +11,7 @@ import UserPresence from './UserPresence'
 import UserStatus from './UserStatus'
 
 export default {
-  title: 'Componenti/Avatar.Behavior'
+  title: 'Componenti/Avatar/Behavior'
 }
 
 export const _UserPresence = UserPresence

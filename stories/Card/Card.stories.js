@@ -290,8 +290,7 @@ const SpecialCardComponent = () => (
 )
 
 export default {
-  title: 'Componenti/Cards',
-  decorators: [withA11y]
+  title: 'Componenti/Cards'
 }
 
 export const _SimpleCard = SimpleCardComponent

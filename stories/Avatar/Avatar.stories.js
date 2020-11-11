@@ -1,5 +1,3 @@
-import { withA11y } from '@storybook/addon-a11y'
-
 import {
   AvatarIcon,
   AvatarContainer,
@@ -15,8 +13,7 @@ import AvatarLinkWithTooltip from './AvatarLinkWithTooltip'
 import AvatarWithAdditionalText from './AvatarWithAdditionalText'
 
 export default {
-  title: 'Componenti/Avatar',
-  decorators: [withA11y]
+  title: 'Componenti/Avatar'
 }
 
 export const _AvatarWithImage = AvatarWithImage

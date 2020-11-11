@@ -216,7 +216,7 @@ const CheckboxComponent = () => (
 )
 
 export default {
-  title: 'Componenti/LinkList.Con controlli'
+  title: 'Componenti/LinkList/Con controlli'
 }
 
 export const PrimaryAction = ControlliComponent

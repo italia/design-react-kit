@@ -139,8 +139,7 @@ const EsempiInterattiviComponent = ({
 }
 
 export default {
-  title: 'Componenti/Button',
-  decorators: [withA11y]
+  title: 'Componenti/Button'
 }
 
 export const _Esempi = EsempiComponent

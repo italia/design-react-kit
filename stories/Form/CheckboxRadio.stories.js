@@ -133,7 +133,7 @@ const GruppiComponent = () => (
 )
 
 export default {
-  title: 'Componenti/Form.Checkbox and radio'
+  title: 'Componenti/Form/Checkbox and radio'
 }
 
 export const CheckboxERadio = CheckboxRadioComponent

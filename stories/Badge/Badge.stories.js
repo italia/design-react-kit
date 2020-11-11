@@ -129,8 +129,7 @@ const EsempiInterattiviComponent = ({ color, pill, label }) => {
 }
 
 export default {
-  title: 'Componenti/Badge',
-  decorators: [withA11y]
+  title: 'Componenti/Badge'
 }
 
 export const _Esempi = EsempiComponent

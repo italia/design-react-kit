@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 import { Callout, CalloutText, CalloutTitle, Icon } from '../../src'
 
 import Esempio from './docs/Esempio.md'
@@ -167,8 +166,7 @@ const CalloutHighlights = () => (
 )
 
 export default {
-  title: 'Componenti/Callout',
-  decorators: [withA11y]
+  title: 'Componenti/Callout'
 }
 
 export const _Esempio = BasicExample

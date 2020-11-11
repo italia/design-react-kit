@@ -39,7 +39,7 @@ const NavigationComponent = () => (
 )
 
 export default {
-  title: 'Componenti/LinkList.Nested navigation'
+  title: 'Componenti/LinkList/Nested navigation'
 }
 
 export const Fixed = NavigationComponent

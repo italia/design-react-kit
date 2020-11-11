@@ -23,13 +23,33 @@ const order = {
   'componenti': 1000,
 };
 
+const priorityPages = ['welcome-page',  'organizzare', 'menu', 'componenti', 'form', 'utilities'];
+
 export const parameters = {
     options: {
         storySort: (a, b) => {
-            const [aSection, aStory] = a[0].split('-');
-            const [bSection, bStory] = b[0].split('-');
-            // Sort by Section and lexycographic order of the story inside
-            return (order[aSection] - order[bSection]) + (aStory.localeCompare(bStory));
+            const [aGroups, aStory] = a[0].split('--');
+            const [bGroups, bStory] = b[0].split('--');
+            const [aSection, ...aSubSections] = aGroups.split('-');
+            const [bSection, ...bSubSections] = bGroups.split('-');
+
+            const aFullStoryName = `${aSubSections.join('-')}-${aStory}`
+            const bFullStoryName = `${bSubSections.join('-')}-${bStory}`
+            // Sort by Section 
+            const sectionScore = (order[aSection] - order[bSection]);
+
+          
+            // if pages have custom sort, compare them only if from the same section
+            if(!sectionScore){
+              const pageAIndex = priorityPages.indexOf(aFullStoryName) + 1 || priorityPages.indexOf(aSubSections[0]) + 1;
+              const pageBIndex = priorityPages.indexOf(bFullStoryName) + 1 || priorityPages.indexOf(bSubSections[0]) + 1;
+              if(pageAIndex || pageBIndex){
+                return pageAIndex - pageBIndex;
+              }
+            }
+
+            // and lexycographic order of the story not mapped
+            return sectionScore + (aFullStoryName.localeCompare(bFullStoryName))
           },
         /**
          * where to show the addon panel

@@ -14,7 +14,7 @@ const FormExampleComponent = () => (
 )
 
 export default {
-  title: 'Componenti/Form.Form Validation'
+  title: 'Componenti/Form/Form Validation'
 }
 
 export const Example = FormExampleComponent

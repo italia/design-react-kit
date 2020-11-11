@@ -55,8 +55,7 @@ const AlertComponent = () => (
 )
 
 export default {
-  title: 'Componenti/BottomNav',
-  decorators: [withA11y]
+  title: 'Componenti/BottomNav'
 }
 
 export const _Esempi = EsempiComponent

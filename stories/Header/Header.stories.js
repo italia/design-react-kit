@@ -43,20 +43,16 @@ import CompleteBasicDoc from './CompleteHeader/basic.md'
 
 export default {
   title: 'Componenti/Header',
-
-  parameters: {
-    options: {
-      showPanel: false
-    }
-  },
+  component: Header,
   args: {
     theme: ''
   },
   argTypes: {
     theme: {
+      name: 'Tema',
       control: {
         type: 'select',
-        options: { default: '', light: 'light' }
+        options: ['', 'dark', 'light']
       }
     }
   }
@@ -69,15 +65,39 @@ export const HeaderSlim = SlimHeaderBasic
 HeaderSlim.story = {
   name: 'Header slim'
 }
-HeaderSlim.args = {
+HeaderSlim.story.args = {
+  theme: '',
   isOpen: false,
   brandText: 'Ente appartenenza/Owner'
 }
 
-export const HeaderSlimWithFullButton = SlimHeaderFull
+HeaderSlim.argTypes = {
+  theme: {
+    name: 'Tema',
+    control: {
+      type: 'select',
+      options: ['', 'dark', 'light']
+    }
+  }
+}
 
-HeaderSlimWithFullButton.story = {
+export const SlimHeaderWithFullButton = SlimHeaderFull
+
+SlimHeaderWithFullButton.story = {
   name: 'Header slim with full button'
+}
+
+SlimHeaderWithFullButton.args = {
+  theme: ''
+}
+
+SlimHeaderWithFullButton.argTypes = {
+  theme: {
+    control: {
+      type: 'select',
+      options: ['', 'dark', 'light']
+    }
+  }
 }
 
 export const HeaderCenter = CenterHeaderBasic
@@ -86,20 +106,46 @@ HeaderCenter.story = {
   name: 'Header center'
 }
 HeaderCenter.args = {
+  theme: '',
   isSmall: false
+}
+
+HeaderCenter.argTypes = {
+  theme: {
+    control: {
+      type: 'select',
+      options: ['', 'dark', 'light']
+    }
+  }
 }
 
 export const HeaderNav = NavHeaderBasic
 
 HeaderNav.story = {
-  name: 'Header nav'
+  name: 'Header nav',
+  parameters: {
+    options: {
+      showPanel: false
+    }
+  }
 }
 HeaderNav.args = {
+  theme: '',
   isOpen: false
+}
+
+HeaderNav.argTypes = {
+  theme: {
+    control: {
+      type: 'select',
+      options: ['', 'dark', 'light']
+    }
+  }
 }
 
 export const HeaderComplete = CompleteHeaderBasic
 HeaderComplete.args = {
+  theme: '',
   slimHeaderType: 'default',
   sticky: false
 }
@@ -108,6 +154,12 @@ HeaderComplete.argTypes = {
     control: {
       type: 'select',
       options: ['default', 'Full responsive']
+    }
+  },
+  theme: {
+    control: {
+      type: 'select',
+      options: ['', 'dark', 'light']
     }
   }
 }

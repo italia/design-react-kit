@@ -43,7 +43,7 @@ const RatingReadOnly = () => (
 
 export default {
   title: 'Componenti/Rating',
-  decorators: [withA11y]
+  
 }
 
 export const _RatingBase = RatingBase

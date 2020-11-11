@@ -199,8 +199,7 @@ const SectionConCardComponent = () => {
 }
 
 export default {
-  title: 'Componenti/Section',
-  decorators: [withA11y]
+  title: 'Componenti/Section'
 }
 
 export const Esempio = EsempiComponent

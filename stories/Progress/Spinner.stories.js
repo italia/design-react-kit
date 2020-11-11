@@ -67,7 +67,7 @@ const SpinnerDoppioComponent = () => (
 )
 
 export default {
-  title: 'Componenti/Progress Indicators.Spinners'
+  title: 'Componenti/Progress Indicators/Spinners'
 }
 
 export const _Spinner = SpinnerComponent

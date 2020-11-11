@@ -5,7 +5,7 @@ import SaveButtonDark from './SaveButtonDark'
 import ConfirmButtonDark from './ConfirmButtonDark'
 
 export default {
-  title: 'Componenti/Stepper.Navigation variations for mobile - dark version'
+  title: 'Componenti/Stepper/Navigation variations for mobile - dark version'
 }
 
 export const _ProgressBar = ProgressBarDark

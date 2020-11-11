@@ -10,8 +10,7 @@ import AmministrazioneText from './amministrazione/Amministrazione.md'
 import ServiziText from './servizi/Servizi.md'
 
 export default {
-  title: 'Templates/Kit Comuni',
-  decorators: [withA11y]
+  title: 'Templates/Kit Comuni'
 }
 
 export const HomepageTemplate = Homepage

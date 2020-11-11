@@ -6,7 +6,7 @@ import SaveButton from './SaveButton'
 import ConfirmButton from './ConfirmButton'
 
 export default {
-  title: 'Componenti/Stepper.Navigation variations for mobile'
+  title: 'Componenti/Stepper/Navigation variations for mobile'
 }
 
 export const ProgressBar = ProgressBarNavMobile
