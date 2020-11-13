@@ -43,7 +43,8 @@ const propTypes = {
   plaintext: PropTypes.bool,
   addon: PropTypes.bool,
   className: PropTypes.string,
-  cssModule: PropTypes.object
+  cssModule: PropTypes.object,
+  wrapperClass: PropTypes.string
 }
 
 const defaultProps = {
@@ -92,6 +93,7 @@ class Input extends React.Component {
       placeholder,
       normalized,
       value,
+      wrapperClass: originalWrapperClass,
       ...attributes
     } = this.props
     let { bsSize, valid, invalid } = this.props
@@ -166,7 +168,8 @@ class Input extends React.Component {
         inputPassword,
         formControlClass,
         infoTextControlClass,
-        isFocused: this.state.isFocused
+        isFocused: this.state.isFocused,
+        originalWrapperClass
       },
       cssModule
     )

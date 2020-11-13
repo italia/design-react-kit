@@ -38,7 +38,7 @@ export function getTag({ tag, plaintext, staticInput, type }) {
   if (['radio', 'checkbox'].indexOf(type) > -1) {
     return 'input'
   }
-  if ((plaintext, staticInput)) {
+  if (plaintext || staticInput) {
     return 'p'
   }
   return 'input'
@@ -58,7 +58,8 @@ export function getClasses(
     normalized,
     inputPassword,
     formControlClass,
-    infoTextControlClass
+    infoTextControlClass,
+    originalWrapperClass
   },
   cssModule
 ) {
@@ -82,7 +83,7 @@ export function getClasses(
     cssModule
   )
   const wrapperClass = mapToCssModules(
-    classNames(className, 'form-group'),
+    classNames(className, originalWrapperClass, 'form-group'),
     cssModule
   )
   const infoTextClass = mapToCssModules(
