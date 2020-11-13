@@ -46,3 +46,30 @@ pre > code[class] {
 .docs .callout {
   max-width: none;
 }
+
+.bg-grey {
+  background-color: #e9e6f2 !important
+}
+
+.bg-dark {
+  background-color: #17324d !important;
+}
+
+.square-color {
+  width: 150px;
+  height: 150px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-right: 15px;
+  float: left;
+}
+
+.c-line {
+  height: 60px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 8px;
+}
