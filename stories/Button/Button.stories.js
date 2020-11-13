@@ -20,20 +20,35 @@ const colors = [
   'Link'
 ]
 
-const EsempiComponent = () => (
-  <div>
-    {colors.map(color => (
-      <div key={color} className="mb-2">
-        <Button color={color.toLowerCase()}>{color}</Button>{' '}
-        <Button outline color={color.toLowerCase()}>
-          {color} Outline
-        </Button>
-      </div>
-    ))}
-  </div>
-)
+export default {
+  title: 'Componenti/Button'
+}
 
-const DarkBackgroundComponent = () => (
+export const _Esempi = () => {
+  const colors = [
+    'Primary',
+    'Secondary',
+    'Success',
+    'Info',
+    'Danger',
+    'Warning',
+    'Link'
+  ]
+  return (
+    <div>
+      {colors.map(color => (
+        <div key={color} className="mb-2">
+          <Button color={color.toLowerCase()}>{color}</Button>{' '}
+          <Button outline color={color.toLowerCase()}>
+            {color} Outline
+          </Button>
+        </div>
+      ))}
+    </div>
+  )
+}
+
+export const SfondoScuro = () => (
   <div className="bg-dark py-1">
     {colors.map(color => (
       <div key={color} className="mb-2">
@@ -46,7 +61,11 @@ const DarkBackgroundComponent = () => (
   </div>
 )
 
-const DimensioniComponent = () => (
+SfondoScuro.story = {
+  name: 'Sfondo scuro'
+}
+
+export const VariantiDiDimensione = () => (
   <section>
     <div>
       <Button color="primary" size="lg">
@@ -80,7 +99,11 @@ const DimensioniComponent = () => (
   </section>
 )
 
-const ButtonIconComponent = () => (
+VariantiDiDimensione.story = {
+  name: 'Varianti di dimensione'
+}
+
+export const BottoniConIcona = () => (
   <div>
     <Button color="primary" size="lg" icon>
       <Icon color="white" icon="it-star-full" /> Icon Button Large
@@ -97,7 +120,11 @@ const ButtonIconComponent = () => (
   </div>
 )
 
-const StatoAttivoComponent = () => (
+BottoniConIcona.story = {
+  name: 'Bottoni con icona'
+}
+
+export const _StatoAttivo = () => (
   <div>
     {colors.map(color => (
       <span key={color}>
@@ -107,7 +134,7 @@ const StatoAttivoComponent = () => (
   </div>
 )
 
-const StatoDisabilitatoComponent = () => (
+export const _StatoDisabilitato = () => (
   <div>
     {colors.map(color => (
       <span key={color}>
@@ -119,7 +146,7 @@ const StatoDisabilitatoComponent = () => (
   </div>
 )
 
-const EsempiInterattiviComponent = ({
+export const _EsempiInterattivi = ({
   color,
   dimension,
   block,
@@ -137,36 +164,6 @@ const EsempiInterattiviComponent = ({
     </Button>
   )
 }
-
-export default {
-  title: 'Componenti/Button'
-}
-
-export const _Esempi = EsempiComponent
-
-export const SfondoScuro = DarkBackgroundComponent
-
-SfondoScuro.story = {
-  name: 'Sfondo scuro'
-}
-
-export const VariantiDiDimensione = DimensioniComponent
-
-VariantiDiDimensione.story = {
-  name: 'Varianti di dimensione'
-}
-
-export const BottoniConIcona = ButtonIconComponent
-
-BottoniConIcona.story = {
-  name: 'Bottoni con icona'
-}
-
-export const _StatoAttivo = StatoAttivoComponent
-
-export const _StatoDisabilitato = StatoDisabilitatoComponent
-
-export const _EsempiInterattivi = EsempiInterattiviComponent
 _EsempiInterattivi.args = {
   color: colors[0],
   dimension: ' ',
