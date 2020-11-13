@@ -1,0 +1,108 @@
+import { Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
+import { actions } from '@storybook/addon-actions';
+import Select from 'react-select'
+
+import { Button, FormGroup, Col, Row, Input, Toggle } from '../../src'
+import {
+  DropdownIndicator,
+  Option,
+} from './Select/SelectExamples'
+
+
+<Meta title="Documentazione/Form/Introduzione" />
+
+# Introduzione
+### Elementi e stili per la creazione di form accessibili e responsivi
+
+All’interno di un form, nella visualizzazione predefinita gli elementi sono allineati verticalmente, ma è possibile utilizzare classi aggiuntive per variare questo tipo di layout.
+
+Bootstrap Italia applica automaticamente a tutti i form `display: block` e `width: 100%`.
+
+## Organizzazione dei campi
+
+Per raggruppare correttamente gli elementi di un modulo form è bene utilizzare la classe .form-group per ogni singolo blocco, in questo modo l’elemento input, l’etichetta, il testo di aiuto opzionale e la messaggistica di validazione otterranno lo stile grafico e le funzionalità predisposte per loro. Puoi usarlo con `<fieldset>`, `<div>` o qualsiasi altro elemento.
+
+### Dimensionamento delle colonne
+
+Strutture più complesse possono essere costruite usando il sistema a griglia, da utilizzare per layout che richiedono più colonne, larghezze diverse e opzioni di allineamento aggiuntive. La classe `.form-row` ne assicura una corretta spaziatura.
+
+Puoi scegliere di dare una dimensione a una colonna, ad esempio dandogli un valore di `size={7}`, mentre le restanti `Col` si divideranno il resto dello spazio.
+
+<Canvas>
+    <Story name="dimensionamento-colonne">
+<div>
+  <div className="form-row">
+      <Input type="text" label="Nome" id="formNome" wrapperClass="col col-md-6"/>
+      <Input type="text" label="Cognome" id="formCognome" wrapperClass="col col-md-6"/>
+  </div>
+  <div className="form-row">
+      <Input type="text" label="Città" id="Citta" wrapperClass="col col-7"/>
+      <Input type="text" label="Comune" id="Comune" wrapperClass="col"/>
+      <Input type="text" label="CAP" id="CAP" wrapperClass="col"/>
+  </div>
+</div>
+    </Story>
+</Canvas>
+
+Ecco l’esempio di una struttura più complessa creata con il sistema a griglie.
+
+<Canvas>
+    <Story name="dimensionamento-colonne-form-complesso">
+<div>
+    <div className="form-row">
+        <Input type="email" label="Nome" id="inputEmail4" placeholder="inserisci il tuo indirizzo email" wrapperClass="col col-md-6"/>
+        <Input type="password" label="Password" id="exampleInputPassword" placeholder="Inserisci la tua password" wrapperClass="col col-md-6"/>
+    </div>
+    <div className="form-row">
+        <Input type="text" label="Indirizzo" id="inputAddress" placeholder="Via Roma, 1" wrapperClass="col"/>
+    </div>
+    <div className="form-row">
+        <Input type="email" label="Comune" id="inputCity" wrapperClass="col col-md-6"/>
+        <Input type="email" label="CAP" id="inputCAP" wrapperClass="col col-md-2"/>
+        <Col md="4">
+            <div className="bootstrap-select-wrapper">
+                <label>Provincia</label>
+                <Select
+                    components={{
+                    Option,
+                    DropdownIndicator,
+                    IndicatorSeparator: null
+                    }}
+                    styles={{
+                        container: (provided) => ({...provided, height: '2.5rem'}),
+                        valueContainer: (provided) => ({...provided, height: '2.5rem'}),
+                        control: (provided) => ({...provided, height: '2.5rem'}),
+                    }}
+                    id="selectExampleClassic"
+                    options={[
+                        { value: 'Value 1', label: 'Opzione 1' },
+                        { value: 'Value 2', label: 'Opzione 2' },
+                        { value: 'Value 3', label: 'Opzione 3' },
+                        {
+                            value: 'Value 4',
+                            label: 'Opzione 4'
+                        },
+                        { value: 'Value 5', label: 'Opzione 5' }
+                    ]}
+                    placeholder="Scegli una opzione"
+                    aria-label="Scegli una opzione"
+                    classNamePrefix="react-select"
+                    {...actions('onChange')}
+                />
+            </div>
+        </Col>
+    </div>
+    <div className="form-row">
+        <Col md="6" className="form-group">
+            <Toggle label="Label dell'interruttore 1" disabled={false} id="toggleEsempio1a"/>
+        </Col>
+    </div>
+    <div className="form-row">
+      <Col className="form-group text-center">
+          <Button color="primary" outline>Annulla</Button>
+          <Button type="submit" color="primary">Conferma</Button>
+      </Col>
+    </div>
+</div>
+    </Story>
+</Canvas>
