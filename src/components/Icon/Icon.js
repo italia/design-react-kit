@@ -6,7 +6,7 @@ import iconSprite from 'bootstrap-italia/dist/svg/sprite.svg'
 const propTypes = {
   className: PropTypes.string,
   color: PropTypes.string,
-  size: PropTypes.oneOf(['xs', 'sm', 'lg', 'xl']),
+  size: PropTypes.oneOf(['xs', 'sm', 'lg', 'xl', '']),
   icon: PropTypes.string.isRequired,
   padding: PropTypes.bool
 }
