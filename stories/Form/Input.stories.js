@@ -16,7 +16,11 @@ import InputAutocomplete from './docs/Input/InputAutocomplete.md'
 
 import { Input } from '../../src'
 
-const InputTypesExamples = () => (
+export default {
+  title: 'Componenti/Form/Input'
+}
+
+export const EsempiDiCampiDiInput = () => (
   <div>
     <Input type="text" label="Campo di tipo testuale" id="exampleInputText" />
     <Input type="email" label="Campo di tipo email" id="exampleInputEmail" />
@@ -36,7 +40,11 @@ const InputTypesExamples = () => (
   </div>
 )
 
-const InputPlaceHolderLabelComponent = () => (
+EsempiDiCampiDiInput.story = {
+  name: 'Esempi di campi di input'
+}
+
+export const UtilizzoDiPlaceholderELabel = () => (
   <div>
     <Input label="Etichetta di esempio" id="exampleLabel" />
     <Input
@@ -54,18 +62,6 @@ const InputPlaceHolderLabelComponent = () => (
     />
   </div>
 )
-
-export default {
-  title: 'Componenti/Form/Input'
-}
-
-export const EsempiDiCampiDiInput = InputTypesExamples
-
-EsempiDiCampiDiInput.story = {
-  name: 'Esempi di campi di input'
-}
-
-export const UtilizzoDiPlaceholderELabel = InputPlaceHolderLabelComponent
 
 UtilizzoDiPlaceholderELabel.story = {
   name: 'Utilizzo di placeholder e label'
