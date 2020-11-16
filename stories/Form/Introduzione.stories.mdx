@@ -2,7 +2,7 @@ import { Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
 import { actions } from '@storybook/addon-actions';
 import Select from 'react-select'
 
-import { Button, FormGroup, Col, Row, Input, Toggle } from '../../src'
+import { Button, Callout, CalloutText, CalloutTitle, Form, FormGroup, FormFeedback, FormText, Col, Row, Input, Label, Toggle } from '../../src'
 import {
   DropdownIndicator,
   Option,
@@ -57,8 +57,8 @@ Ecco l’esempio di una struttura più complessa creata con il sistema a griglie
         <Input type="text" label="Indirizzo" id="inputAddress" placeholder="Via Roma, 1" wrapperClass="col"/>
     </div>
     <div className="form-row">
-        <Input type="email" label="Comune" id="inputCity" wrapperClass="col col-md-6"/>
-        <Input type="email" label="CAP" id="inputCAP" wrapperClass="col col-md-2"/>
+        <Input type="text" label="Comune" id="inputCity" wrapperClass="col col-md-6"/>
+        <Input type="text" label="CAP" id="inputCAP" wrapperClass="col col-md-2"/>
         <Col md="4">
             <div className="bootstrap-select-wrapper">
                 <label>Provincia</label>
@@ -104,5 +104,168 @@ Ecco l’esempio di una struttura più complessa creata con il sistema a griglie
       </Col>
     </div>
 </div>
+    </Story>
+</Canvas>
+
+### Auto-dimensionamento
+
+L’esempio seguente usa una delle utilità di flexbox per centrare verticalmente il contenuto e cambiando `.col` con `.col-auto` in modo che le colonne occupino solo lo spazio necessario. In altre parole, la colonna si dimensiona in base al contenuto. È possibile usarlo anche quando sono presenti altre colonne con dimensioni specifiche (es.: `col-sm-3`).
+
+<Canvas>
+    <Story name="form-auto-dimensionamento">
+        <div className="form-row align-items-center">
+  <Col>
+    <label className="sr-only" for="inlineFormInput">Nome</label>
+    <input type="text" className="form-control" id="inlineFormInput" placeholder="Mario Rossi"/>
+  </Col>
+  <Col>
+    <label className="sr-only" for="inlineFormInputGroup">Username</label>
+    <div className="input-group">
+      <div className="input-group-prepend">
+        <div className="input-group-text">@</div>
+      </div>
+      <input type="text" className="form-control" id="inlineFormInputGroup" placeholder="Username"/>
+    </div>
+  </Col>
+  <Col>
+    <div className="form-check m-0">
+      <input className="form-check-input" type="checkbox" id="autoSizingCheck"/>
+      <label className="form-check-label" for="autoSizingCheck">
+        Ricordami
+      </label>
+    </div>
+  </Col>
+  <Col>
+    <Button type="submit" color="primary">Invia</Button>
+  </Col>
+</div>
+    </Story>
+</Canvas>
+
+<div className="docs">
+    <Callout color="warning" >
+        <CalloutTitle>Alternative alle etichette nascoste</CalloutTitle>
+        <CalloutText>
+            Le tecnologie assistive come gli screenreader avranno problemi con i tuoi moduli se non includi un’etichetta per ogni input. Per questi moduli in linea, puoi nascondere le etichette usando la classe <code>.sr-only</code>. Esistono altri metodi alternativi per fornire un’etichetta per le tecnologie assistive, come l’attributo <code>aria-label</code>, <code>aria-labelledby</code> o <code>title</code>. Se nessuno di questi è presente, le tecnologie assistive possono ricorrere all’uso dell’attributo <code>placeholder</code>, se presente, ma è sconsigliato.
+        </CalloutText>
+    </Callout>
+</div>
+
+## Disabilitazione di campi
+
+Aggiungi l’attributo booleano `disabled` su un input per impedire le interazioni dell’utente e renderlo più chiaro.
+
+<Canvas>
+    <Story name="form-field-disabled">
+        <Input type="text" placeholder="Esempio di input disabilitato" disabled label="Label" id="disabledInput"/>
+    </Story>
+</Canvas>
+
+### Disabilitazione di un intero form
+
+Aggiungi l’attributo disabled al `<fieldset>` per disabilitare tutti gli elementi del form contenuti.
+
+
+<Canvas>
+    <Story name="form-disabled">
+        <div>
+  <fieldset disabled aria-label="Form disabilitato">
+    <legend>Esempio di form disabilitato</legend>
+    <div class="form-group">
+      <Input type="text" label="Input" id="disabledTextInput" placeholder="input disabilitato" disabled/>
+    </div>
+    <div class="form-group">
+      <div className="bootstrap-select-wrapper">
+        <label>Field Label</label>
+        <Select
+            components={{
+            Option,
+            DropdownIndicator,
+            IndicatorSeparator: null
+            }}
+            styles={{
+                container: (provided) => ({...provided, height: '2.5rem'}),
+                valueContainer: (provided) => ({...provided, height: '2.5rem'}),
+                control: (provided) => ({...provided, height: '2.5rem'}),
+            }}
+            id="selectExampleClassic"
+            options={[
+                { value: 'Value 1', label: 'Opzione 1' },
+                { value: 'Value 2', label: 'Opzione 2' },
+                { value: 'Value 3', label: 'Opzione 3' },
+                {
+                    value: 'Value 4',
+                    label: 'Opzione 4'
+                },
+                { value: 'Value 5', label: 'Opzione 5' }
+            ]}
+            placeholder="Seleziona una opzione"
+            aria-label="Seleziona una opzione"
+            classNamePrefix="react-select"
+            {...actions('onChange')}
+        />
+        </div>
+    </div>
+    <div class="form-check">
+      <Input id="checkbox1" type="checkbox" disabled/>
+        <Label for="checkbox1" check>
+          Check disabilitato
+        </Label>
+    </div>
+    <Button type="submit" color="primary" className="mt-3">Submit</Button>
+  </fieldset>
+</div>
+    </Story>
+</Canvas>
+
+<div className="docs">
+    <Callout color="warning" >
+        <CalloutTitle>Compatibilità Cross-browser</CalloutTitle>
+        <CalloutText>
+            Mentre Bootstrap applicherà questi stili in tutti i browser, Internet Explorer 11 e successivi non supportano completamente l’attributo <code>disabled</code> nel <code>&lt;fieldset&gt;</code>. Usa un JavaScript personalizzato per disabilitare il fieldset in questi browser.
+        </CalloutText>
+    </Callout>
+</div>
+
+## Validazione
+
+Fornisci un feedback ai tuoi utenti con la validazione del form HTML5 disponibile nei browser supportati. Scegli tra le risposte di convalida predefinite del browser o implementa messaggi personalizzati con le classi integrate inizializzate con JavaScript.
+
+### Come funziona
+
+La validazione viene applicata tramite i due modificatori `valid` e `invalid`: come nella convenzione di `reactstrap` questi attivano delle classi CSS `is-valid` e `is-invalid` solo quando hanno un valore `true`.
+
+### Stili personalizzati
+
+<Canvas>
+    <Story name="form-custom-validation">
+        <Form>
+  <div class="form-row">
+    <FormGroup className="col-md-4 mb-3">
+        <Input type="text" value="Mario" label="Nome" infoText="Validato!" valid/>
+    </FormGroup>
+    <FormGroup className="col-md-4 mb-3">
+        <Input type="text" value="Rossi" label="Cognome" infoText="Validato!" valid/>
+    </FormGroup>
+    <FormGroup className="col-md-4 mb-3">
+        <Input type="text" value="" label="Username" infoText="Per favore scegli un username." invalid/>
+    </FormGroup>
+  </div>
+  <div class="form-row">
+      <FormGroup className="col-md-6 mb-3">
+        <Input type="text" value="" label="Città" infoText="Per favore inserisci un nome di città valido." invalid/>
+    </FormGroup>
+    <FormGroup className="col-md-3 mb-3">
+        <Input type="text" value="" label="Provincia" infoText="Per favore inserisci un nome di provincia valida." invalid/>
+    </FormGroup>
+    <FormGroup className="col-md-3 mb-3">
+        <Input type="text" value="" label="CAP" infoText="Per favore inserisci un CAP valido." invalid/>
+    </FormGroup>
+  </div>
+  <div class="form-check">
+      <Input id="checkbox1" type="checkbox" invalid infoText="Devi accettare i termini e le condizioni prima di inviare il modulo." label="Accetto i termini e condizioni"/>
+  </div>
+  <Button color="primary" type="submit">Invia</Button>
+</Form>
     </Story>
 </Canvas>

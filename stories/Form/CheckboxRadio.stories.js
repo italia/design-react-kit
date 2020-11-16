@@ -10,7 +10,11 @@ import Disabilitato from './docs/CheckboxRadio/Disabilitato.md'
 import Gruppi from './docs/CheckboxRadio/Gruppi.md'
 import Inline from './docs/CheckboxRadio/Inline.md'
 
-const CheckboxRadioComponent = () => (
+export default {
+  title: 'Componenti/Form/Checkbox and radio'
+}
+
+export const CheckboxERadio = () => (
   <Form className="m-3">
     <fieldset>
       <legend>Checkbox</legend>
@@ -41,7 +45,12 @@ const CheckboxRadioComponent = () => (
     </fieldset>
   </Form>
 )
-const InlineComponent = () => (
+
+CheckboxERadio.story = {
+  name: 'Checkbox e radio'
+}
+
+export const _Inline = () => (
   <section>
     <fieldset>
       <legend>Checkbox</legend>
@@ -80,7 +89,8 @@ const InlineComponent = () => (
     </fieldset>
   </section>
 )
-const DisabilitatoComponent = () => (
+
+export const __Disabilitato = () => (
   <section>
     <fieldset>
       <legend>Checkbox</legend>
@@ -125,25 +135,10 @@ const DisabilitatoComponent = () => (
     </fieldset>
   </section>
 )
-const GruppiComponent = () => (
+
+export const _Gruppi = () => (
   <section>
     <CheckboxGroupsExample />
     <RadioGroupsExample />
   </section>
 )
-
-export default {
-  title: 'Componenti/Form/Checkbox and radio'
-}
-
-export const CheckboxERadio = CheckboxRadioComponent
-
-CheckboxERadio.story = {
-  name: 'Checkbox e radio'
-}
-
-export const _Inline = InlineComponent
-
-export const __Disabilitato = DisabilitatoComponent
-
-export const _Gruppi = GruppiComponent
