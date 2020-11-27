@@ -1,15 +1,9 @@
 import React from 'react'
 import { components } from 'react-select'
-import AsyncSelect from 'react-select/async'
 import './assets/css/autocomplete-styles.css'
-import PropTypes from 'prop-types'
 import { Icon } from '../../../src'
 
-const propTypes = {
-  isHidden: PropTypes.bool
-}
-
-const DropdownIndicator = props => {
+export const DropdownIndicator = props => {
   return (
     <components.DropdownIndicator {...props}>
       <span style={{ padding: '0px 5px' }} aria-hidden="true">
@@ -19,7 +13,8 @@ const DropdownIndicator = props => {
   )
 }
 
-const Input = props => {
+export const Input = props => {
+  // eslint-disable-next-line react/prop-types
   if (props.isHidden) {
     return <components.Input {...props} />
   }
@@ -30,7 +25,7 @@ const Input = props => {
   )
 }
 
-const multiOptions = [
+export const multiOptions = [
   { value: '1', label: 'Abruzzo' },
   { value: '2', label: 'Basilicata' },
   { value: '3', label: 'Calabria' },
@@ -52,51 +47,3 @@ const multiOptions = [
   { value: '19', label: "Valle d'Aosta" },
   { value: '20', label: 'Veneto' }
 ]
-
-const filterOptions = inputValue => {
-  return multiOptions.filter(i =>
-    i.label.toLowerCase().includes(inputValue.toLowerCase())
-  )
-}
-
-const loadOptions = (inputValue, callback) => {
-  setTimeout(() => {
-    callback(filterOptions(inputValue))
-  }, 1000)
-}
-
-export default class AutocompleteExample extends React.Component {
-  state = { inputValue: '', placeholder: 'Testo da cercare' }
-
-  handleInputChange = newValue => {
-    const inputValue = newValue.replace(/\W/g, '')
-    this.setState({ inputValue })
-    return inputValue
-  }
-
-  render() {
-    return (
-      <div className="form-group">
-        <AsyncSelect
-          id="autocomplete-regioni"
-          components={{
-            DropdownIndicator,
-            Input,
-            IndicatorSeparator: null
-          }}
-          cacheOptions
-          loadOptions={loadOptions}
-          defaultOptions
-          placeholder={this.state.placeholder}
-          onInputChange={this.handleInputChange}
-          classNamePrefix={'react-autocomplete'}
-        />
-        <label htmlFor="autocomplete-regioni" className="sr-only">
-          Cerca nel sito
-        </label>
-      </div>
-    )
-  }
-}
-
-Input.propTypes = propTypes

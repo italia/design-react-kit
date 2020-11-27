@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Input, Form, FormGroup } from '../../src'
+import { Button, Input, Form, FormGroup } from '../../src'
 
 import Validation from './docs/Validation/Validation.md'
 

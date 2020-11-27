@@ -238,34 +238,5 @@ La validazione viene applicata tramite i due modificatori `valid` e `invalid`: c
 ### Stili personalizzati
 
 <Canvas>
-    <Story name="form-custom-validation">
-        <Form>
-  <div class="form-row">
-    <FormGroup className="col-md-4 mb-3">
-        <Input type="text" value="Mario" label="Nome" infoText="Validato!" valid/>
-    </FormGroup>
-    <FormGroup className="col-md-4 mb-3">
-        <Input type="text" value="Rossi" label="Cognome" infoText="Validato!" valid/>
-    </FormGroup>
-    <FormGroup className="col-md-4 mb-3">
-        <Input type="text" value="" label="Username" infoText="Per favore scegli un username." invalid/>
-    </FormGroup>
-  </div>
-  <div class="form-row">
-      <FormGroup className="col-md-6 mb-3">
-        <Input type="text" value="" label="Città" infoText="Per favore inserisci un nome di città valido." invalid/>
-    </FormGroup>
-    <FormGroup className="col-md-3 mb-3">
-        <Input type="text" value="" label="Provincia" infoText="Per favore inserisci un nome di provincia valida." invalid/>
-    </FormGroup>
-    <FormGroup className="col-md-3 mb-3">
-        <Input type="text" value="" label="CAP" infoText="Per favore inserisci un CAP valido." invalid/>
-    </FormGroup>
-  </div>
-  <div class="form-check">
-      <Input id="checkbox1" type="checkbox" invalid infoText="Devi accettare i termini e le condizioni prima di inviare il modulo." label="Accetto i termini e condizioni"/>
-  </div>
-  <Button color="primary" type="submit">Invia</Button>
-</Form>
-    </Story>
+    <Story id="componenti-form-form-validation--example-complete" />
 </Canvas>
