@@ -1,0 +1,73 @@
+import { useState } from 'react';
+import { ArgsTable, Meta, Canvas, Story, Preview } from "@storybook/addon-docs/blocks";
+
+import { Input, Callout, CalloutText, CalloutTitle } from '../../src'
+
+<Meta title="Documentazione/Form/Input Numerico" of={Input} />
+
+# Input Numerico
+
+### Campi input con bottoni per incrementare/decrementare valori numerici
+
+## Esempi
+
+La larghezza del campo predefinita è quella del suo contenitore, per limitare la larghezza alle dimensioni del valore contenuto utilizzare il ridimensionamento adattivo.
+
+<Canvas>
+    <Story name="input-numerico-base-width">
+        <div className="w-100">
+        <Input
+      type="number"
+      label="Input Number inserito in una colonna a tutta larghezza"
+      value="100"
+    />
+    </div>
+    <div className="w-50 mt-5">
+        <Input
+      type="number"
+      label="Input Number inserito in una colonna di larghezza 50%"
+      value="100"
+    />
+    </div>
+    </Story>
+</Canvas>
+
+## Limiti e Step
+
+Aggiungendo le `props` `min`, `max` e `step` al componente `Input` è possibile limitare il valore minimo e massimo del campo e decidere di quanto varierà a ogni click sui bottoni.
+
+<Canvas>
+    <Story name="input-numerico-steps">
+     {() => {
+         const [value, setValue] = useState(100);
+         return <Input
+            type="number"
+            label="Min, Max & Step" value={value} min={-2000} max={15000} step={500}
+            onChange={(ev) => setValue(ev.target.value)}
+        />;
+     }}
+     </Story>
+</Canvas>
+
+## Disabilitato
+
+Per disabilitare un Input number, aggiungere la `prop` `disabled `al componente `Input`.
+
+<Canvas>
+    <Story name="input-numerico-disabled">
+     {() => {
+         const [value, setValue] = useState(50);
+         return (
+             <Input
+                type="number"
+                label="Disabled" value={value} min={0} max={100}
+                onChange={(ev) => setValue(ev.target.value)}
+                disabled
+            />);
+     }}
+     </Story>
+</Canvas>
+
+## Argomenti componente
+
+<ArgsTable of={Input} />

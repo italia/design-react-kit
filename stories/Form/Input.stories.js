@@ -247,7 +247,7 @@ export const _InputAutocompleteConDati = () => {
   )
 }
 
-_InputAutocomplete.story = {
+_InputAutocompleteConDati.story = {
   name: 'Input autocomplete'
 }
 

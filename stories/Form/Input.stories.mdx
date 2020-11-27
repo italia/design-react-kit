@@ -1,8 +1,8 @@
 import { ArgsTable, Meta, Canvas, Story, Preview } from "@storybook/addon-docs/blocks";
 
-import { Callout, CalloutText, CalloutTitle } from '../../src'
+import { Input, Callout, CalloutText, CalloutTitle } from '../../src'
 
-<Meta title="Documentazione/Form/Input"  />
+<Meta title="Documentazione/Form/Input" of={Input} />
 
 # Input
 ### Elementi e stili per la creazione di input accessibili e responsivi.
@@ -108,3 +108,7 @@ Includendo l’elemento all’interno di un .form-group, la label assumerà lo s
 <Canvas>
     <Story id="componenti-form-input--area-di-testo-con-segnaposto" />
 </Canvas>
+
+## Argomenti componente
+
+<ArgsTable of={Input} />
