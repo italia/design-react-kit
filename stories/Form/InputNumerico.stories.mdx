@@ -39,7 +39,7 @@ Aggiungendo le `props` `min`, `max` e `step` al componente `Input` è possibile 
 <Canvas>
     <Story name="input-numerico-steps">
      {() => {
-         const [value, setValue] = useState(100);
+         const [value, setValue] = useState('100');
          return <Input
             type="number"
             label="Min, Max & Step" value={value} min={-2000} max={15000} step={500}
@@ -56,7 +56,7 @@ Per disabilitare un Input number, aggiungere la *prop* `disabled `al componente 
 <Canvas>
     <Story name="input-numerico-disabled">
      {() => {
-         const [value, setValue] = useState(50);
+         const [value, setValue] = useState('50');
          return (
              <Input
                 type="number"
