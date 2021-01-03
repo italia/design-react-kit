@@ -8,23 +8,7 @@ import { Col, Row, Input, Form, FormGroup, Label, Callout, CalloutText, CalloutT
 ### Elementi e stili per la creazione di radio button accessibili
 
 <Canvas>
-    <Story name="radio">
-        <fieldset>
-            <legend>Radio</legend>
-            <FormGroup check>
-                <Input name="gruppo1" type="radio" id="radio1" defaultChecked />
-                <Label check for="radio1">
-                Radio di esempio 1
-                </Label>
-            </FormGroup>
-            <FormGroup check>
-                <Input name="gruppo1" type="radio" id="radio2" />
-                <Label check for="radio2">
-                Radio di esempio 2
-                </Label>
-            </FormGroup>
-        </fieldset>
-    </Story>
+    <Story id="componenti-form-radio--radio-base"/>
 </Canvas>
 
 ## Inline
@@ -32,25 +16,7 @@ import { Col, Row, Input, Form, FormGroup, Label, Callout, CalloutText, CalloutT
 Per allineare orizzontalmente i campi radio basterà aggiungere la *prop* `inline` al componente `FormGroup` padre.
 
 <Canvas>
-    <Story name="radio-inline">
-        <fieldset>
-            <legend>Radio</legend>
-            <Form className="m-3">
-                <FormGroup check inline>
-                <Input name="gruppo1" type="radio" id="radio3" defaultChecked />
-                <Label check for="radio3">
-                    Opzione 1
-                </Label>
-                </FormGroup>
-                <FormGroup check inline>
-                <Input name="gruppo1" type="radio" id="radio4" />
-                <Label check for="radio4">
-                    Opzione 2
-                </Label>
-                </FormGroup>
-            </Form>
-        </fieldset>
-    </Story>
+    <Story id="componenti-form-radio--radio-inline" />
 </Canvas>
 
 ## Disabilitato
@@ -58,29 +24,7 @@ Per allineare orizzontalmente i campi radio basterà aggiungere la *prop* `inlin
 Affinchè i campi radio risultino disabilitati occorrerà aggiungere la *prop* `disabled` al componente `Input`.
 
 <Canvas>
-    <Story name="radio-disabled">
-        <fieldset>
-            <legend>Radio</legend>
-                <FormGroup check>
-                    <Input
-                        disabled
-                        name="gruppo1"
-                        type="radio"
-                        id="radio5"
-                        defaultChecked
-                    />
-                    <Label check for="radio5">
-                        Opzione disabilitata selezionata
-                    </Label>
-                </FormGroup>
-                <FormGroup check>
-                    <Input disabled name="gruppo1" type="radio" id="radio6" />
-                    <Label check for="radio6">
-                        Opzione disabilitata non selezionata
-                    </Label>
-                </FormGroup>
-        </fieldset>
-    </Story>
+    <Story id="componenti-form-radio--radio-disabilitato" />
 </Canvas>
 
 ## Gruppi
@@ -88,71 +32,5 @@ Affinchè i campi radio risultino disabilitati occorrerà aggiungere la *prop* `
 Per poter raggruppare gli elementi radio occorrerà aggiungere al componente `FormGroup` la classe `.form-check-group`. L’elemento grafico di spunta verrà allineato alla destra del contenuto testuale.
 
 <Canvas>
-    <Story name="radio-gruppi">
-        <Row className="m-5">
-            <Col md={5}>
-                <fieldset>
-                <legend>Radio</legend>
-                <Form>
-                    <FormGroup check className="form-check-group">
-                    <Input id="radio7" name="group1" type="radio" defaultChecked />
-                    <Label for="radio7" check>
-                        Opzione 1
-                    </Label>
-                    </FormGroup>
-                    <FormGroup check className="form-check-group">
-                    <Input id="radio8" name="group1" type="radio" />
-                    <Label for="radio8" check>
-                        Opzione 2
-                    </Label>
-                    </FormGroup>
-                    <FormGroup check className="form-check-group">
-                    <Input id="radio9" name="group1" type="radio" disabled />
-                    <Label for="radio9" check>
-                        Opzione 3
-                    </Label>
-                    </FormGroup>
-                </Form>
-                </fieldset>
-            </Col>
-            <Col md={2} />
-            <Col md={5}>
-                <fieldset>
-                <legend>Radio</legend>
-                <Form>
-                    <FormGroup check className="form-check-group">
-                    <Input id="radio10" name="group2" type="radio" defaultChecked />
-                    <Label for="radio10" check>
-                        Opzione 1
-                    </Label>
-                    <FormText color="">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Maecenas molestie libero
-                    </FormText>
-                    </FormGroup>
-                    <FormGroup check className="form-check-group">
-                    <Input id="radio11" name="group2" type="radio" />
-                    <Label for="radio11" check>
-                        Opzione 2
-                    </Label>
-                    <FormText color="">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Maecenas molestie libero
-                    </FormText>
-                    </FormGroup>
-                    <FormGroup check className="form-check-group">
-                    <Input id="radio12" name="group2" type="radio" disabled />
-                    <Label for="radio12" check>
-                        Opzione 3
-                    </Label>
-                    <FormText color="">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Maecenas molestie libero
-                    </FormText>
-                    </FormGroup>
-                </Form>
-                </fieldset>
-            </Col>
-        </Row>
-    </Story>
+    <Story id="componenti-form-radio--radio-gruppi"/>
 </Canvas>

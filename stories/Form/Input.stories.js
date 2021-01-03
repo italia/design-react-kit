@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { actions } from '@storybook/addon-actions'
 import AsyncSelect from 'react-select/async'
 
 import {
@@ -7,16 +8,6 @@ import {
   Input as AutocompleteInput
 } from './Autocomplete/AutocompleteExample'
 import TextArea from './Input/TextArea/TextArea'
-
-import Esempi from './docs/Input/Esempi.md'
-import Placeholder from './docs/Input/Placeholder.md'
-import IconButton from './docs/Input/IconButton.md'
-import Password from './docs/Input/Password.md'
-import Disabled from './docs/Input/Disabled.md'
-import Readonly from './docs/Input/Readonly.md'
-import Normalize from './docs/Input/Normalize.md'
-import Textarea from './docs/Input/Textarea.md'
-import InputAutocomplete from './docs/Input/InputAutocomplete.md'
 
 import { Input, Icon } from '../../src'
 
@@ -269,4 +260,55 @@ export const AreaDiTestoConSegnaposto = () => (
 
 AreaDiTestoConSegnaposto.story = {
   name: 'Area di testo con segnaposto'
+}
+
+export const InputNumericoDimensionamento = () => (
+  <>
+    <div className="w-100">
+      <Input
+        type="number"
+        label="Input Number inserito in una colonna a tutta larghezza"
+        value="100"
+        {...actions('onChange')}
+      />
+    </div>
+    <div className="w-50 mt-5">
+      <Input
+        type="number"
+        label="Input Number inserito in una colonna di larghezza 50%"
+        value="100"
+        {...actions('onChange')}
+      />
+    </div>
+  </>
+)
+
+export const InputNumericoSteps = () => {
+  const [value, setValue] = useState('100')
+  return (
+    <Input
+      type="number"
+      label="Min, Max & Step"
+      value={value}
+      min={-2000}
+      max={15000}
+      step={500}
+      onChange={ev => {
+        setValue(ev.target.value)
+      }}
+    />
+  )
+}
+
+export const InputNumericoDisabilitato = () => {
+  return (
+    <Input
+      type="number"
+      label="Disabled"
+      value="50"
+      min={0}
+      max={100}
+      disabled
+    />
+  )
 }

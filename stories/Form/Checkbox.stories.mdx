@@ -8,17 +8,7 @@ import { Col, Row, Input, Form, FormGroup, Label, Callout, CalloutText, CalloutT
 ### Elementi e stili per la creazione di checkbox accessibili.
 
 <Canvas>
-    <Story name="checkbox">
-        <fieldset>
-        <legend>Checkbox</legend>
-            <FormGroup check>
-                <Input id="checkbox1" type="checkbox" />
-                <Label for="checkbox1" check>
-                Checkbox di esempio
-                </Label>
-            </FormGroup>
-        </fieldset>
-    </Story>
+    <Story id="componenti-form-checkbox--checkbox-base"/>
 </Canvas>
 
 ## Inline
@@ -26,23 +16,7 @@ import { Col, Row, Input, Form, FormGroup, Label, Callout, CalloutText, CalloutT
 Per allineare orizzontalmente le checkbox basterà aggiungere la *prop* `inline` al componente `FormGroup` padre.
 
 <Canvas>
-    <Story name="checkbox-inline">
-        <fieldset>
-      <legend>Checkbox</legend>
-        <FormGroup check inline>
-          <Input id="checkbox3" type="checkbox" />
-          <Label for="checkbox3" check>
-            Checkbox non selezionato
-          </Label>
-        </FormGroup>
-        <FormGroup check inline>
-          <Input id="checkbox4" type="checkbox" defaultChecked />
-          <Label for="checkbox4" check>
-            Checkbox selezionato
-          </Label>
-        </FormGroup>
-    </fieldset>
-    </Story>
+    <Story id="componenti-form-checkbox--checkbox-inline"/>
 </Canvas>
 
 ## Disabilitato
@@ -50,23 +24,7 @@ Per allineare orizzontalmente le checkbox basterà aggiungere la *prop* `inline`
 Affinchè i campi checkbox risultino disabilitati occorrerà aggiungere la *prop* `disabled` al componente `Input`.
 
 <Canvas>
-    <Story name="checkbox-disabled">
-        <fieldset>
-      <legend>Checkbox</legend>
-        <FormGroup check>
-          <Input disabled id="checkbox1" type="checkbox" />
-          <Label for="checkbox1" check>
-            Checkbox disabilitato non selezionato
-          </Label>
-        </FormGroup>
-        <FormGroup check>
-          <Input disabled id="checkbox2" type="checkbox" defaultChecked />
-          <Label for="checkbox2" check>
-            Checkbox disabilitato selezionato
-          </Label>
-        </FormGroup>
-    </fieldset>
-    </Story>
+    <Story id="componenti-form-checkbox--checkbox-disabilitato"/>
 </Canvas>
 
 ## Gruppi
@@ -74,71 +32,5 @@ Affinchè i campi checkbox risultino disabilitati occorrerà aggiungere la *prop
 Per poter raggruppare gli elementi checkbox occorrerà aggiungere al componente `FormGroup` la classe `.form-check-group`. L’elemento grafico di spunta verrà allineato alla destra del contenuto testuale.
 
 <Canvas>
-    <Story name="checkbox-gruppi">
-        <Row className="m-5">
-      <Col md={5}>
-        <fieldset>
-          <legend>Checkbox</legend>
-          <Form>
-            <FormGroup check className="form-check-group">
-              <Input id="checkbox1" type="checkbox" defaultChecked />
-              <Label for="checkbox1" check>
-                Checkbox selezionato
-              </Label>
-            </FormGroup>
-            <FormGroup check className="form-check-group">
-              <Input id="checkbox2" type="checkbox" />
-              <Label for="checkbox2" check>
-                Checkbox non selezionato
-              </Label>
-            </FormGroup>
-            <FormGroup check className="form-check-group">
-              <Input id="checkbox3" type="checkbox" disabled />
-              <Label for="checkbox3" check>
-                Checkbox disabilitato non selezionato
-              </Label>
-            </FormGroup>
-          </Form>
-        </fieldset>
-      </Col>
-      <Col md={2} />
-      <Col md={5}>
-        <fieldset>
-          <legend>Checkbox</legend>
-          <Form>
-            <FormGroup check className="form-check-group">
-              <Input id="checkbox4" type="checkbox" defaultChecked />
-              <Label for="checkbox4" check>
-                Checkbox selezionato
-              </Label>
-              <FormText color="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas molestie libero
-              </FormText>
-            </FormGroup>
-            <FormGroup check className="form-check-group">
-              <Input id="checkbox5" type="checkbox" />
-              <Label for="checkbox5" check>
-                Checkbox non selezionato
-              </Label>
-              <FormText color="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas molestie libero
-              </FormText>
-            </FormGroup>
-            <FormGroup check className="form-check-group">
-              <Input id="checkbox6" type="checkbox" disabled />
-              <Label for="checkbox6" check>
-                Checkbox disabilitato non selezionato
-              </Label>
-              <FormText color="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas molestie libero
-              </FormText>
-            </FormGroup>
-          </Form>
-        </fieldset>
-      </Col>
-    </Row>
-    </Story>
+    <Story id="componenti-form-checkbox--checkbox-gruppi"/>
 </Canvas>
