@@ -3,13 +3,12 @@ import commonjs from 'rollup-plugin-commonjs'
 import babel from 'rollup-plugin-babel'
 import minify from 'rollup-plugin-babel-minify'
 import replace from 'rollup-plugin-replace'
-import svg from 'rollup-plugin-svg'
+import image from '@rollup/plugin-image'
 
 import packageJson from '../package.json'
 
 const peerDependencies = Object.keys(packageJson.peerDependencies)
 const dependencies = Object.keys(packageJson.dependencies)
-dependencies.push('react-transition-group/Transition')
 
 function getFullPath(module, ext) {
   return `dist/${module.name}${ext}`
@@ -49,7 +48,7 @@ function baseConfig() {
           '@babel/plugin-proposal-class-properties'
         ]
       }),
-      svg({ base64: true })
+      image()
     ]
   }
 }
@@ -145,12 +144,10 @@ umdFullConfigMin.output = [
 ]
 
 const external = umdFullConfig.external.slice()
-external.push('react-transition-group/Transition')
-external.push('react-popper')
 
 const allGlobals = Object.assign({}, globals(), {
   'react-popper': 'ReactPopper',
-  'react-transition-group/Transition': 'ReactTransitionGroup.Transition'
+  'react-transition-group': 'ReactTransitionGroup'
 })
 
 const umdConfig = baseUmdConfig(false)
