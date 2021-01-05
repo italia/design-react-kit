@@ -47,6 +47,9 @@
         "@storybook/addon-viewport": "^5.3.19",
         "@storybook/addons": "^5.3.21",
         "@storybook/react": "^5.3.21",
+        "@svgr/cli": "^5.5.0",
+        "@svgr/core": "^5.5.0",
+        "@svgr/rollup": "^5.5.0",
         "@typescript-eslint/eslint-plugin": "^2.3.3",
         "@typescript-eslint/parser": "^2.3.3",
         "babel-eslint": "^10.0.3",
@@ -87,9 +90,10 @@
     },
     "scripts": {
         "install-dependencies": "yarn install --peers",
-        "prebuild": "yarn install-dependencies",
+        "prebuild": "yarn install-dependencies && yarn build:svg",
         "build": "rollup -c scripts/rollup.config.js",
-        "prestorybook": "yarn install-dependencies",
+        "build:svg": "svgr -d src/components/Icon/assets node_modules/bootstrap-italia/src/svg",
+        "prestorybook": "yarn install-dependencies && yarn build:svg",
         "storybook:build": "build-storybook -c .storybook -s ./static",
         "storybook:serve": "start-storybook -p 9001 -c .storybook -s ./static",
         "storybook:deploy": "npx gh-pages -d storybook-static -m 'Update GitHub Pages [ci skip]'",
@@ -122,5 +126,10 @@
         "not op_mini all",
         "edge >= 13",
         "safari 11"
-    ]
+    ],
+    "svgr": {
+        "dimensions": false,
+        "prettier": true,
+        "ignoreExisting": true
+    }
 }
