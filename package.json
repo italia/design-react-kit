@@ -91,7 +91,7 @@
         "install-dependencies": "yarn install --peers",
         "prebuild": "yarn install-dependencies && yarn build:svg",
         "build": "rollup -c scripts/rollup.config.js",
-        "build:svg": "svgr -d src/components/Icon/assets node_modules/bootstrap-italia/src/svg",
+        "build:svg": "svgr -d src/components/Icon/assets node_modules/bootstrap-italia/src/svg && echo \"\" >> src/components/Icon/assets/index.js",
         "prestorybook": "yarn install-dependencies && yarn build:svg",
         "storybook:build": "build-storybook -c .storybook -s ./static",
         "storybook:serve": "start-storybook -p 9001 -c .storybook -s ./static",
