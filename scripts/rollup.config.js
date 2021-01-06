@@ -9,6 +9,7 @@ import packageJson from '../package.json'
 
 const peerDependencies = Object.keys(packageJson.peerDependencies)
 const dependencies = Object.keys(packageJson.dependencies)
+dependencies.push('react-transition-group/Transition')
 
 function getFullPath(module, ext) {
   return `dist/${module.name}${ext}`
@@ -144,10 +145,12 @@ umdFullConfigMin.output = [
 ]
 
 const external = umdFullConfig.external.slice()
+external.push('react-transition-group/Transition')
+external.push('react-popper')
 
 const allGlobals = Object.assign({}, globals(), {
   'react-popper': 'ReactPopper',
-  'react-transition-group': 'ReactTransitionGroup'
+  'react-transition-group/Transition': 'ReactTransitionGroup.Transition'
 })
 
 const umdConfig = baseUmdConfig(false)
