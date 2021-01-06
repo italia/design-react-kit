@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 function SvgItArrowDown(props) {
   return (
@@ -6,7 +6,7 @@ function SvgItArrowDown(props) {
       <path d="M17.9 13.2l-5.4 5.3V3h-1v15.5l-5.4-5.3-.7.7 6.6 6.5 6.6-6.5zM12 19z" />
       <path fill="none" d="M0 0h24v24H0z" />
     </svg>
-  );
+  )
 }
 
-export default SvgItArrowDown;
+export default SvgItArrowDown

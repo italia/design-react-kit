@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 function SvgItMinusCircle(props) {
   return (
@@ -6,7 +6,7 @@ function SvgItMinusCircle(props) {
       <path d="M6.9 11.5h10v1h-10zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z" />
       <path fill="none" d="M0 0h24v24H0z" />
     </svg>
-  );
+  )
 }
 
-export default SvgItMinusCircle;
+export default SvgItMinusCircle

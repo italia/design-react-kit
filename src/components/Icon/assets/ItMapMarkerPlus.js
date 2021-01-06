@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 function SvgItMapMarkerPlus(props) {
   return (
@@ -9,7 +9,7 @@ function SvgItMapMarkerPlus(props) {
         <path fill="none" d="M0 0h24v24H0z" />
       </g>
     </svg>
-  );
+  )
 }
 
-export default SvgItMapMarkerPlus;
+export default SvgItMapMarkerPlus

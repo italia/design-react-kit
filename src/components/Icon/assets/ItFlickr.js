@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 function SvgItFlickr(props) {
   return (
@@ -7,7 +7,7 @@ function SvgItFlickr(props) {
       <circle cx={6.73} cy={12} r={4.73} />
       <circle cx={17.27} cy={12} r={4.73} />
     </svg>
-  );
+  )
 }
 
-export default SvgItFlickr;
+export default SvgItFlickr

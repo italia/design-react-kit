@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 function SvgItFlag(props) {
   return (
@@ -6,7 +6,7 @@ function SvgItFlag(props) {
       <path d="M17.1 8l3.3-5H5V2H4v20h1v-9h15.4l-3.3-5zM5 4h13.6l-2.7 4 2.7 4H5V4z" />
       <path fill="none" d="M0 0h24v24H0z" />
     </svg>
-  );
+  )
 }
 
-export default SvgItFlag;
+export default SvgItFlag

@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 function SvgItFullscreen(props) {
   return (
@@ -8,7 +8,7 @@ function SvgItFullscreen(props) {
         <path fill="none" d="M0 0h24v24H0z" />
       </g>
     </svg>
-  );
+  )
 }
 
-export default SvgItFullscreen;
+export default SvgItFullscreen

@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 function SvgItClock(props) {
   return (
@@ -6,7 +6,7 @@ function SvgItClock(props) {
       <path d="M11.5 5h1v7.5H7v-1h4.5zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z" />
       <path fill="none" d="M0 0h24v24H0z" />
     </svg>
-  );
+  )
 }
 
-export default SvgItClock;
+export default SvgItClock

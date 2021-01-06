@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 function SvgItBurger(props) {
   return (
@@ -6,7 +6,7 @@ function SvgItBurger(props) {
       <path d="M22 5v1H2V5zM2 12.5h20v-1H2zM2 19h20v-1H2z" />
       <path fill="none" d="M0 0h24v24H0z" />
     </svg>
-  );
+  )
 }
 
-export default SvgItBurger;
+export default SvgItBurger

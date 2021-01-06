@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 function SvgItFunnel(props) {
   return (
@@ -6,7 +6,7 @@ function SvgItFunnel(props) {
       <path d="M14 22h-1v-8.65L20.05 3H4l7 10.35V22h-1v-8.35L2.05 2H22l-8 11.65z" />
       <path fill="none" d="M0 0h24v24H0z" />
     </svg>
-  );
+  )
 }
 
-export default SvgItFunnel;
+export default SvgItFunnel
