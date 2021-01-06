@@ -47,9 +47,11 @@ exports[`Storyshots Componenti/Sidebar Annidata 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-expand"
+                  <path
+                    d="M11.6 15.4L6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
                   />
                 </svg>
               </a>
@@ -105,9 +107,11 @@ exports[`Storyshots Componenti/Sidebar Annidata 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-expand"
+                  <path
+                    d="M11.6 15.4L6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
                   />
                 </svg>
               </a>
@@ -163,9 +167,11 @@ exports[`Storyshots Componenti/Sidebar Annidata 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-expand"
+                  <path
+                    d="M11.6 15.4L6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
                   />
                 </svg>
               </a>
@@ -619,9 +625,11 @@ exports[`Storyshots Componenti/Sidebar.Basic Sidebar Con icona 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-chevron-right"
+                  <path
+                    d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                   />
                 </svg>
                 <span>
@@ -642,9 +650,11 @@ exports[`Storyshots Componenti/Sidebar.Basic Sidebar Con icona 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-chevron-right"
+                  <path
+                    d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                   />
                 </svg>
                 <span>
@@ -664,9 +674,11 @@ exports[`Storyshots Componenti/Sidebar.Basic Sidebar Con icona 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-chevron-right"
+                  <path
+                    d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                   />
                 </svg>
                 <span>
@@ -686,9 +698,11 @@ exports[`Storyshots Componenti/Sidebar.Basic Sidebar Con icona 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-chevron-right"
+                  <path
+                    d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                   />
                 </svg>
                 <span>

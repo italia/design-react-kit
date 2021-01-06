@@ -77,9 +77,11 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                           ITA
                           <svg
                             className="icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-expand"
+                            <path
+                              d="M11.6 15.4L6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
                             />
                           </svg>
                         </a>
@@ -145,9 +147,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         >
                           <svg
                             className="icon icon-primary"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-user"
+                            <path
+                              d="M12 13a4 4 0 004-4V6a4 4 0 00-8 0v3a4 4 0 004 4zM9 6a3 3 0 016 0v3a3 3 0 01-6 0zm11 16h-1a7 7 0 00-14 0H4a8 8 0 0116 0z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                         </span>
@@ -187,9 +195,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         <a>
                           <svg
                             className="icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-code-circle"
+                            <path
+                              d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                           <div
@@ -226,9 +240,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                               >
                                 <svg
                                   className="icon"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <use
-                                    href="sprite.svg#it-facebook"
+                                  <path
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path
+                                    d="M13.55 22v-9.11h3.07l.46-3.56h-3.53V7.05c0-1 .29-1.73 1.77-1.73h1.87V2.14A25.14 25.14 0 0014.45 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.81v3.57h3.06V22h3.68z"
                                   />
                                 </svg>
                               </a>
@@ -241,9 +261,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                               >
                                 <svg
                                   className="icon"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <use
-                                    href="sprite.svg#it-github"
+                                  <path
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path
+                                    d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7C6.73 19.91 6.14 18 6.14 18A2.69 2.69 0 005 16.5c-.91-.62.07-.61.07-.61a2.13 2.13 0 011.53 1 2.14 2.14 0 002.91.83 2.16 2.16 0 01.63-1.34c-2.14-.21-4.52-1.07-4.52-4.9a3.89 3.89 0 011-2.69 3.57 3.57 0 01.1-2.64s.84-.27 2.75 1a9.63 9.63 0 015 0c1.91-1.29 2.75-1 2.75-1 .37.835.405 1.78.1 2.64a3.89 3.89 0 011 2.69c0 3.84-2.34 4.68-4.57 4.93.482.49.73 1.164.68 1.85v2.75c0 .33.18.58.69.48A10 10 0 0012 2z"
                                   />
                                 </svg>
                               </a>
@@ -256,9 +282,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                               >
                                 <svg
                                   className="icon"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <use
-                                    href="sprite.svg#it-twitter"
+                                  <path
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path
+                                    d="M8.08 20a10.93 10.93 0 0011-11v-.5a8 8 0 001.92-2 7.85 7.85 0 01-2.22.61A3.89 3.89 0 0020.48 5a8 8 0 01-2.48.91 3.87 3.87 0 00-6.59 3.52 11 11 0 01-8-4 3.85 3.85 0 001.19 5.16 3.76 3.76 0 01-1.75-.48A3.87 3.87 0 006 13.91a3.73 3.73 0 01-1 .14 4.3 4.3 0 01-.73-.05 3.87 3.87 0 003.61 2.68 7.73 7.73 0 01-4.8 1.66 7 7 0 01-.92-.06A10.9 10.9 0 008.08 20"
                                   />
                                 </svg>
                               </a>
@@ -279,9 +311,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                           >
                             <svg
                               className="icon"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
                             >
-                              <use
-                                href="sprite.svg#it-search"
+                              <path
+                                d="M21.9 21.1L16 15.3a8.3 8.3 0 002-5.3 8 8 0 10-8 8 8.3 8.3 0 005.3-2l5.8 5.9zM10 17a7 7 0 117-7 7 7 0 01-7 7z"
+                              />
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
                               />
                             </svg>
                           </a>
@@ -318,9 +356,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                       >
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-burger"
+                          <path
+                            d="M22 5v1H2V5zM2 12.5h20v-1H2zM2 19h20v-1H2z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </button>
@@ -572,9 +616,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                 >
                   <svg
                     className="icon icon-sm sm"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-search"
+                    <path
+                      d="M21.9 21.1L16 15.3a8.3 8.3 0 002-5.3 8 8 0 10-8 8 8.3 8.3 0 005.3-2l5.8 5.9zM10 17a7 7 0 117-7 7 7 0 01-7 7z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </span>
@@ -599,9 +649,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                 <button>
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-close"
+                    <path
+                      d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                   <span
@@ -619,9 +675,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                 >
                   <svg
                     className="icon icon-primary"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-plus"
+                    <path
+                      d="M20 12.5h-7.5V20h-1v-7.5H4v-1h7.5V4h1v7.5H20z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                   <span>
@@ -765,9 +827,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-pa"
+                        <path
+                          d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span>
@@ -801,9 +869,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -829,9 +903,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-user"
+                        <path
+                          d="M12 13a4 4 0 004-4V6a4 4 0 00-8 0v3a4 4 0 004 4zM9 6a3 3 0 016 0v3a3 3 0 01-6 0zm11 16h-1a7 7 0 00-14 0H4a8 8 0 0116 0z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span>
@@ -865,9 +945,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -893,9 +979,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-pa"
+                        <path
+                          d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span>
@@ -929,9 +1021,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -957,9 +1055,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-pa"
+                        <path
+                          d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span>
@@ -993,9 +1097,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -1021,9 +1131,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-user"
+                        <path
+                          d="M12 13a4 4 0 004-4V6a4 4 0 00-8 0v3a4 4 0 004 4zM9 6a3 3 0 016 0v3a3 3 0 01-6 0zm11 16h-1a7 7 0 00-14 0H4a8 8 0 0116 0z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span>
@@ -1057,9 +1173,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -1085,9 +1207,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-pa"
+                        <path
+                          d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span>
@@ -1121,9 +1249,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -1473,9 +1607,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                   >
                     <svg
                       className="icon"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <use
-                        href="sprite.svg#it-pa"
+                      <path
+                        d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
                       />
                     </svg>
                     <div
@@ -1875,9 +2015,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                   >
                     <svg
                       className="icon icon-white"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <use
-                        href="sprite.svg#it-mail"
+                      <path
+                        d="M20.5 5h-17A1.5 1.5 0 002 6.5v11A1.5 1.5 0 003.5 19h17a1.5 1.5 0 001.5-1.5v-11A1.5 1.5 0 0020.5 5zm-.3 1l-7.1 7.2a1.6 1.6 0 01-2.2 0L3.8 6zM3 17.3V6.6L8.3 12zm.7.7L9 12.7l1.2 1.2a2.7 2.7 0 003.6 0l1.2-1.2 5.3 5.3zm12-6L21 6.6v10.7z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
                       />
                     </svg>
                     <span>
@@ -1910,9 +2056,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                     >
                       <svg
                         className="icon align-top icon-white icon-sm sm"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-designers-italia"
+                        <path
+                          d="M8.7 20.2v-13h3.6v13.1l-3.6-.1zM23 10.1h-3.3v6.5c0 .2.1.4.3.6s.4.2.8.2h2.1l.2 2.8c-1.2.3-2.1.4-2.8.4-1.6 0-2.7-.3-3.3-1.1-.6-.7-.9-2-.9-3.9v-12h3.6v3.6H23v2.9zm-19.8 1c-.6 0-1.2-.2-1.6-.6-.4-.4-.6-.9-.6-1.5s.2-1.1.6-1.5c.4-.5.9-.7 1.6-.7s1.1.2 1.5.6c.4.5.6 1 .6 1.6s-.2 1.1-.6 1.5c-.4.4-.9.6-1.5.6z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span
@@ -1932,9 +2084,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                     >
                       <svg
                         className="icon align-top icon-white icon-sm sm"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-twitter"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M8.08 20a10.93 10.93 0 0011-11v-.5a8 8 0 001.92-2 7.85 7.85 0 01-2.22.61A3.89 3.89 0 0020.48 5a8 8 0 01-2.48.91 3.87 3.87 0 00-6.59 3.52 11 11 0 01-8-4 3.85 3.85 0 001.19 5.16 3.76 3.76 0 01-1.75-.48A3.87 3.87 0 006 13.91a3.73 3.73 0 01-1 .14 4.3 4.3 0 01-.73-.05 3.87 3.87 0 003.61 2.68 7.73 7.73 0 01-4.8 1.66 7 7 0 01-.92-.06A10.9 10.9 0 008.08 20"
                         />
                       </svg>
                       <span
@@ -1954,9 +2112,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                     >
                       <svg
                         className="icon align-top icon-white icon-sm sm"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-medium"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M5 7.63A.72.72 0 004.82 7L3.13 5v-.3h5.22l4 8.84 3.54-8.84h5V5l-1.42 1.4a.43.43 0 00-.16.4v10.12a.45.45 0 00.16.41l1.4 1.37v.3h-7v-.3l1.45-1.41c.14-.14.14-.18.14-.4V8.71L11.37 19h-.55L6.12 8.71v6.88a.93.93 0 00.26.79l1.89 2.29V19H2.91v-.3l1.89-2.32a.92.92 0 00.2-.79V7.63z"
                         />
                       </svg>
                       <span
@@ -1976,9 +2140,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Amministrazione Templat
                     >
                       <svg
                         className="icon align-top icon-white icon-sm sm"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-behance"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7.83 5.75a8 8 0 011.6.15 3.38 3.38 0 011.24.51c.345.233.62.554.8.93.202.456.298.952.28 1.45a2.68 2.68 0 01-.42 1.54 3.05 3.05 0 01-1.25 1 2.92 2.92 0 011.68 1.15c.393.59.59 1.29.56 2a3.39 3.39 0 01-.32 1.59 3.08 3.08 0 01-1 1.11 4.27 4.27 0 01-1.4.64A6 6 0 018 18H2V5.75h5.83zm-.35 5a2 2 0 001.19-.35c.328-.27.5-.687.46-1.11A1.47 1.47 0 009 8.54a1.16 1.16 0 00-.42-.43A1.8 1.8 0 008 7.9a3.26 3.26 0 00-.7-.06H4.74v2.87l2.74.04zm.15 5.22c.252.003.503-.02.75-.07a2 2 0 00.62-.3 1.39 1.39 0 00.44-.49 1.73 1.73 0 00.16-.8A1.64 1.64 0 009.09 13a2.33 2.33 0 00-1.41-.4H4.74v3.38l2.89-.01zm8.54-.08a2.18 2.18 0 001.58.54 2.24 2.24 0 001.25-.37 1.6 1.6 0 00.65-.79h2.15a4.06 4.06 0 01-1.58 2.29 4.64 4.64 0 01-2.58.69 5.23 5.23 0 01-1.9-.33 4 4 0 01-2.33-2.44 5.25 5.25 0 01-.32-1.89 5.12 5.12 0 01.33-1.86 4.14 4.14 0 01.93-1.49 4.48 4.48 0 011.44-1 4.59 4.59 0 011.85-.36 4.31 4.31 0 012 .44A4 4 0 0121 10.5c.37.505.636 1.08.78 1.69a6.18 6.18 0 01.17 2h-6.38a2.5 2.5 0 00.6 1.7zM19 11.22a1.83 1.83 0 00-1.38-.49 2 2 0 00-1 .2 1.8 1.8 0 00-.62.49 1.62 1.62 0 00-.33.62 2.87 2.87 0 00-.11.59h4a2.4 2.4 0 00-.56-1.41zm-3.93-4.65h4.98v1.21h-4.98V6.57z"
                         />
                       </svg>
                       <span
@@ -2156,9 +2326,11 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                           ITA
                           <svg
                             className="icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-expand"
+                            <path
+                              d="M11.6 15.4L6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
                             />
                           </svg>
                         </a>
@@ -2224,9 +2396,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         >
                           <svg
                             className="icon icon-primary"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-user"
+                            <path
+                              d="M12 13a4 4 0 004-4V6a4 4 0 00-8 0v3a4 4 0 004 4zM9 6a3 3 0 016 0v3a3 3 0 01-6 0zm11 16h-1a7 7 0 00-14 0H4a8 8 0 0116 0z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                         </span>
@@ -2266,9 +2444,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         <a>
                           <svg
                             className="icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-code-circle"
+                            <path
+                              d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                           <div
@@ -2305,9 +2489,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                               >
                                 <svg
                                   className="icon"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <use
-                                    href="sprite.svg#it-facebook"
+                                  <path
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path
+                                    d="M13.55 22v-9.11h3.07l.46-3.56h-3.53V7.05c0-1 .29-1.73 1.77-1.73h1.87V2.14A25.14 25.14 0 0014.45 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.81v3.57h3.06V22h3.68z"
                                   />
                                 </svg>
                               </a>
@@ -2320,9 +2510,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                               >
                                 <svg
                                   className="icon"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <use
-                                    href="sprite.svg#it-github"
+                                  <path
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path
+                                    d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7C6.73 19.91 6.14 18 6.14 18A2.69 2.69 0 005 16.5c-.91-.62.07-.61.07-.61a2.13 2.13 0 011.53 1 2.14 2.14 0 002.91.83 2.16 2.16 0 01.63-1.34c-2.14-.21-4.52-1.07-4.52-4.9a3.89 3.89 0 011-2.69 3.57 3.57 0 01.1-2.64s.84-.27 2.75 1a9.63 9.63 0 015 0c1.91-1.29 2.75-1 2.75-1 .37.835.405 1.78.1 2.64a3.89 3.89 0 011 2.69c0 3.84-2.34 4.68-4.57 4.93.482.49.73 1.164.68 1.85v2.75c0 .33.18.58.69.48A10 10 0 0012 2z"
                                   />
                                 </svg>
                               </a>
@@ -2335,9 +2531,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                               >
                                 <svg
                                   className="icon"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <use
-                                    href="sprite.svg#it-twitter"
+                                  <path
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path
+                                    d="M8.08 20a10.93 10.93 0 0011-11v-.5a8 8 0 001.92-2 7.85 7.85 0 01-2.22.61A3.89 3.89 0 0020.48 5a8 8 0 01-2.48.91 3.87 3.87 0 00-6.59 3.52 11 11 0 01-8-4 3.85 3.85 0 001.19 5.16 3.76 3.76 0 01-1.75-.48A3.87 3.87 0 006 13.91a3.73 3.73 0 01-1 .14 4.3 4.3 0 01-.73-.05 3.87 3.87 0 003.61 2.68 7.73 7.73 0 01-4.8 1.66 7 7 0 01-.92-.06A10.9 10.9 0 008.08 20"
                                   />
                                 </svg>
                               </a>
@@ -2358,9 +2560,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                           >
                             <svg
                               className="icon"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
                             >
-                              <use
-                                href="sprite.svg#it-search"
+                              <path
+                                d="M21.9 21.1L16 15.3a8.3 8.3 0 002-5.3 8 8 0 10-8 8 8.3 8.3 0 005.3-2l5.8 5.9zM10 17a7 7 0 117-7 7 7 0 01-7 7z"
+                              />
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
                               />
                             </svg>
                           </a>
@@ -2397,9 +2605,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                       >
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-burger"
+                          <path
+                            d="M22 5v1H2V5zM2 12.5h20v-1H2zM2 19h20v-1H2z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </button>
@@ -2588,9 +2802,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                   >
                     <svg
                       className="icon"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <use
-                        href="sprite.svg#it-calendar"
+                      <path
+                        d="M20.5 4H17V3h-1v1H8V3H7v1H3.5A1.5 1.5 0 002 5.5v13A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0020.5 4zm.5 14.5a.5.5 0 01-.5.5h-17a.5.5 0 01-.5-.5v-13a.5.5 0 01.5-.5H7v1h1V5h8v1h1V5h3.5a.5.5 0 01.5.5zM4 8h16v1H4z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
                       />
                     </svg>
                     <span
@@ -2635,9 +2855,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     </span>
                     <svg
                       className="icon"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <use
-                        href="sprite.svg#it-arrow-right"
+                      <path
+                        d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
                       />
                     </svg>
                   </a>
@@ -2680,9 +2906,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                       >
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-pa"
+                          <path
+                            d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                         Giunta e consiglio
@@ -2720,9 +2952,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                   </span>
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-arrow-right"
+                    <path
+                      d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </a>
@@ -2741,9 +2979,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-pa"
+                        <path
+                          d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       Pagamenti
@@ -2771,9 +3015,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                   </span>
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-arrow-right"
+                    <path
+                      d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </a>
@@ -2792,9 +3042,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-pa"
+                        <path
+                          d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       Bandi
@@ -2822,9 +3078,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                   </span>
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-arrow-right"
+                    <path
+                      d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </a>
@@ -2854,9 +3116,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
               >
                 <svg
                   className="icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-pa"
+                  <path
+                    d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
                 <span>
@@ -2871,9 +3139,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
               >
                 <svg
                   className="icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-calendar"
+                  <path
+                    d="M20.5 4H17V3h-1v1H8V3H7v1H3.5A1.5 1.5 0 002 5.5v13A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0020.5 4zm.5 14.5a.5.5 0 01-.5.5h-17a.5.5 0 01-.5-.5v-13a.5.5 0 01.5-.5H7v1h1V5h8v1h1V5h3.5a.5.5 0 01.5.5zM4 8h16v1H4z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
                 <span>
@@ -2888,9 +3162,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
               >
                 <svg
                   className="icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-settings"
+                  <path
+                    d="M12 7.5a4.5 4.5 0 104.5 4.5A4.5 4.5 0 0012 7.5zm0 8a3.5 3.5 0 113.5-3.5 3.5 3.5 0 01-3.5 3.5zm9.8-1.6A12.3 12.3 0 0022 12a12.3 12.3 0 00-.2-1.9l-2.1-.3a8.7 8.7 0 00-.7-1.7l1.3-1.7a8.7 8.7 0 00-2.7-2.7L15.9 5l-1.7-.7-.3-2.1L12 2l-1.9.2-.3 2.1-1.7.7-1.7-1.3a8.7 8.7 0 00-2.7 2.7L5 8.1a8.7 8.7 0 00-.7 1.7l-2.1.3A12.3 12.3 0 002 12a12.3 12.3 0 00.2 1.9l2.1.3a8.7 8.7 0 00.7 1.7l-1.3 1.7a8.7 8.7 0 002.7 2.7L8.1 19l1.7.7.3 2.1 1.9.2 1.9-.2.3-2.1 1.7-.7 1.7 1.3a8.7 8.7 0 002.7-2.7L19 15.9a8.7 8.7 0 00.7-1.7zm-2.9-.7l-.2.7a3.9 3.9 0 01-.6 1.5l-.3.6.4.5.8 1.1a9.3 9.3 0 01-1.4 1.4l-1.1-.8-.5-.4-.6.3a3.9 3.9 0 01-1.5.6l-.7.2v.7l-.2 1.3h-2l-.2-1.3v-.7l-.7-.2a3.9 3.9 0 01-1.5-.6l-.6-.3-.5.4-1.1.8A9.3 9.3 0 015 17.6l.8-1.1.4-.5-.3-.6a3.9 3.9 0 01-.6-1.5l-.2-.7h-.7L3.1 13a3.4 3.4 0 01-.1-1 3.4 3.4 0 01.1-1l1.3-.2h.7l.2-.7a3.9 3.9 0 01.6-1.5l.3-.6-.4-.5L5 6.4 6.4 5l1.1.8.5.4.6-.3a3.9 3.9 0 011.5-.6l.7-.2v-.7l.2-1.3h2l.2 1.3v.7l.7.2a3.9 3.9 0 011.5.6l.6.3.5-.4 1.1-.8A9.3 9.3 0 0119 6.4l-.8 1.1-.4.5.3.6a3.9 3.9 0 01.6 1.5l.2.7h.7l1.3.2a3.4 3.4 0 01.1 1 3.4 3.4 0 01-.1 1l-1.3.2z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
                 <span>
@@ -3636,9 +3916,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-info-circle"
+                        <path
+                          d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                     </a>
@@ -3700,9 +3986,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                   </span>
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-arrow-right"
+                    <path
+                      d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </a>
@@ -3721,9 +4013,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-clock"
+                        <path
+                          d="M11.5 5h1v7.5H7v-1h4.5zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                     </a>
@@ -3750,9 +4048,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         >
                           <svg
                             className="icon icon-primary"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-calendar"
+                            <path
+                              d="M20.5 4H17V3h-1v1H8V3H7v1H3.5A1.5 1.5 0 002 5.5v13A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0020.5 4zm.5 14.5a.5.5 0 01-.5.5h-17a.5.5 0 01-.5-.5v-13a.5.5 0 01.5-.5H7v1h1V5h8v1h1V5h3.5a.5.5 0 01.5.5zM4 8h16v1H4z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                           <span>
@@ -3766,9 +4070,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         >
                           <svg
                             className="icon icon-primary"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-calendar"
+                            <path
+                              d="M20.5 4H17V3h-1v1H8V3H7v1H3.5A1.5 1.5 0 002 5.5v13A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0020.5 4zm.5 14.5a.5.5 0 01-.5.5h-17a.5.5 0 01-.5-.5v-13a.5.5 0 01.5-.5H7v1h1V5h8v1h1V5h3.5a.5.5 0 01.5.5zM4 8h16v1H4z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                           <span>
@@ -3782,9 +4092,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         >
                           <svg
                             className="icon icon-primary"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-calendar"
+                            <path
+                              d="M20.5 4H17V3h-1v1H8V3H7v1H3.5A1.5 1.5 0 002 5.5v13A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0020.5 4zm.5 14.5a.5.5 0 01-.5.5h-17a.5.5 0 01-.5-.5v-13a.5.5 0 01.5-.5H7v1h1V5h8v1h1V5h3.5a.5.5 0 01.5.5zM4 8h16v1H4z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                           <span>
@@ -3798,9 +4114,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         >
                           <svg
                             className="icon icon-primary"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-calendar"
+                            <path
+                              d="M20.5 4H17V3h-1v1H8V3H7v1H3.5A1.5 1.5 0 002 5.5v13A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0020.5 4zm.5 14.5a.5.5 0 01-.5.5h-17a.5.5 0 01-.5-.5v-13a.5.5 0 01.5-.5H7v1h1V5h8v1h1V5h3.5a.5.5 0 01.5.5zM4 8h16v1H4z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                           <span>
@@ -3822,9 +4144,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                   </span>
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-arrow-right"
+                    <path
+                      d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </a>
@@ -3843,9 +4171,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-camera"
+                        <path
+                          d="M20.5 20h-17A1.5 1.5 0 012 18.5v-10A1.5 1.5 0 013.5 7h4.3l1.5-2.3a1.5 1.5 0 011.2-.7h3a1.5 1.5 0 011.2.7L16.2 7h4.3A1.5 1.5 0 0122 8.5v10a1.5 1.5 0 01-1.5 1.5zM3.5 8a.5.5 0 00-.5.5v10a.5.5 0 00.5.5h17a.5.5 0 00.5-.5v-10a.5.5 0 00-.5-.5h-4.8l-1.8-2.8-.4-.2h-3l-.4.2L8.3 8zM12 18a5 5 0 115-5 5 5 0 01-5 5zm0-9a4 4 0 104 4 4 4 0 00-4-4zM7 5H4v1h3z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                     </a>
@@ -3872,9 +4206,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         >
                           <svg
                             className="icon icon-primary"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-pa"
+                            <path
+                              d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                           <span>
@@ -3888,9 +4228,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         >
                           <svg
                             className="icon icon-primary"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-calendar"
+                            <path
+                              d="M20.5 4H17V3h-1v1H8V3H7v1H3.5A1.5 1.5 0 002 5.5v13A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0020.5 4zm.5 14.5a.5.5 0 01-.5.5h-17a.5.5 0 01-.5-.5v-13a.5.5 0 01.5-.5H7v1h1V5h8v1h1V5h3.5a.5.5 0 01.5.5zM4 8h16v1H4z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                           <span>
@@ -3904,9 +4250,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         >
                           <svg
                             className="icon icon-primary"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-calendar"
+                            <path
+                              d="M20.5 4H17V3h-1v1H8V3H7v1H3.5A1.5 1.5 0 002 5.5v13A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0020.5 4zm.5 14.5a.5.5 0 01-.5.5h-17a.5.5 0 01-.5-.5v-13a.5.5 0 01.5-.5H7v1h1V5h8v1h1V5h3.5a.5.5 0 01.5.5zM4 8h16v1H4z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                           <span>
@@ -3928,9 +4280,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                   </span>
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-arrow-right"
+                    <path
+                      d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </a>
@@ -4192,9 +4550,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                         >
                           <svg
                             className="icon icon-icon-sm icon-sm"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-search"
+                            <path
+                              d="M21.9 21.1L16 15.3a8.3 8.3 0 002-5.3 8 8 0 10-8 8 8.3 8.3 0 005.3-2l5.8 5.9zM10 17a7 7 0 117-7 7 7 0 01-7 7z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                         </button>
@@ -4296,9 +4660,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                   >
                     <svg
                       className="icon"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <use
-                        href="sprite.svg#it-pa"
+                      <path
+                        d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
                       />
                     </svg>
                     <div
@@ -4698,9 +5068,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                   >
                     <svg
                       className="icon icon-white"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <use
-                        href="sprite.svg#it-mail"
+                      <path
+                        d="M20.5 5h-17A1.5 1.5 0 002 6.5v11A1.5 1.5 0 003.5 19h17a1.5 1.5 0 001.5-1.5v-11A1.5 1.5 0 0020.5 5zm-.3 1l-7.1 7.2a1.6 1.6 0 01-2.2 0L3.8 6zM3 17.3V6.6L8.3 12zm.7.7L9 12.7l1.2 1.2a2.7 2.7 0 003.6 0l1.2-1.2 5.3 5.3zm12-6L21 6.6v10.7z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
                       />
                     </svg>
                     <span>
@@ -4733,9 +5109,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     >
                       <svg
                         className="icon align-top icon-white icon-sm sm"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-designers-italia"
+                        <path
+                          d="M8.7 20.2v-13h3.6v13.1l-3.6-.1zM23 10.1h-3.3v6.5c0 .2.1.4.3.6s.4.2.8.2h2.1l.2 2.8c-1.2.3-2.1.4-2.8.4-1.6 0-2.7-.3-3.3-1.1-.6-.7-.9-2-.9-3.9v-12h3.6v3.6H23v2.9zm-19.8 1c-.6 0-1.2-.2-1.6-.6-.4-.4-.6-.9-.6-1.5s.2-1.1.6-1.5c.4-.5.9-.7 1.6-.7s1.1.2 1.5.6c.4.5.6 1 .6 1.6s-.2 1.1-.6 1.5c-.4.4-.9.6-1.5.6z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span
@@ -4755,9 +5137,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     >
                       <svg
                         className="icon align-top icon-white icon-sm sm"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-twitter"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M8.08 20a10.93 10.93 0 0011-11v-.5a8 8 0 001.92-2 7.85 7.85 0 01-2.22.61A3.89 3.89 0 0020.48 5a8 8 0 01-2.48.91 3.87 3.87 0 00-6.59 3.52 11 11 0 01-8-4 3.85 3.85 0 001.19 5.16 3.76 3.76 0 01-1.75-.48A3.87 3.87 0 006 13.91a3.73 3.73 0 01-1 .14 4.3 4.3 0 01-.73-.05 3.87 3.87 0 003.61 2.68 7.73 7.73 0 01-4.8 1.66 7 7 0 01-.92-.06A10.9 10.9 0 008.08 20"
                         />
                       </svg>
                       <span
@@ -4777,9 +5165,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     >
                       <svg
                         className="icon align-top icon-white icon-sm sm"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-medium"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M5 7.63A.72.72 0 004.82 7L3.13 5v-.3h5.22l4 8.84 3.54-8.84h5V5l-1.42 1.4a.43.43 0 00-.16.4v10.12a.45.45 0 00.16.41l1.4 1.37v.3h-7v-.3l1.45-1.41c.14-.14.14-.18.14-.4V8.71L11.37 19h-.55L6.12 8.71v6.88a.93.93 0 00.26.79l1.89 2.29V19H2.91v-.3l1.89-2.32a.92.92 0 00.2-.79V7.63z"
                         />
                       </svg>
                       <span
@@ -4799,9 +5193,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Homepage Template 1`] =
                     >
                       <svg
                         className="icon align-top icon-white icon-sm sm"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-behance"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7.83 5.75a8 8 0 011.6.15 3.38 3.38 0 011.24.51c.345.233.62.554.8.93.202.456.298.952.28 1.45a2.68 2.68 0 01-.42 1.54 3.05 3.05 0 01-1.25 1 2.92 2.92 0 011.68 1.15c.393.59.59 1.29.56 2a3.39 3.39 0 01-.32 1.59 3.08 3.08 0 01-1 1.11 4.27 4.27 0 01-1.4.64A6 6 0 018 18H2V5.75h5.83zm-.35 5a2 2 0 001.19-.35c.328-.27.5-.687.46-1.11A1.47 1.47 0 009 8.54a1.16 1.16 0 00-.42-.43A1.8 1.8 0 008 7.9a3.26 3.26 0 00-.7-.06H4.74v2.87l2.74.04zm.15 5.22c.252.003.503-.02.75-.07a2 2 0 00.62-.3 1.39 1.39 0 00.44-.49 1.73 1.73 0 00.16-.8A1.64 1.64 0 009.09 13a2.33 2.33 0 00-1.41-.4H4.74v3.38l2.89-.01zm8.54-.08a2.18 2.18 0 001.58.54 2.24 2.24 0 001.25-.37 1.6 1.6 0 00.65-.79h2.15a4.06 4.06 0 01-1.58 2.29 4.64 4.64 0 01-2.58.69 5.23 5.23 0 01-1.9-.33 4 4 0 01-2.33-2.44 5.25 5.25 0 01-.32-1.89 5.12 5.12 0 01.33-1.86 4.14 4.14 0 01.93-1.49 4.48 4.48 0 011.44-1 4.59 4.59 0 011.85-.36 4.31 4.31 0 012 .44A4 4 0 0121 10.5c.37.505.636 1.08.78 1.69a6.18 6.18 0 01.17 2h-6.38a2.5 2.5 0 00.6 1.7zM19 11.22a1.83 1.83 0 00-1.38-.49 2 2 0 00-1 .2 1.8 1.8 0 00-.62.49 1.62 1.62 0 00-.33.62 2.87 2.87 0 00-.11.59h4a2.4 2.4 0 00-.56-1.41zm-3.93-4.65h4.98v1.21h-4.98V6.57z"
                         />
                       </svg>
                       <span
@@ -4979,9 +5379,11 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           ITA
                           <svg
                             className="icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-expand"
+                            <path
+                              d="M11.6 15.4L6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
                             />
                           </svg>
                         </a>
@@ -5047,9 +5449,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         >
                           <svg
                             className="icon icon-primary"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-user"
+                            <path
+                              d="M12 13a4 4 0 004-4V6a4 4 0 00-8 0v3a4 4 0 004 4zM9 6a3 3 0 016 0v3a3 3 0 01-6 0zm11 16h-1a7 7 0 00-14 0H4a8 8 0 0116 0z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                         </span>
@@ -5089,9 +5497,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         <a>
                           <svg
                             className="icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <use
-                              href="sprite.svg#it-code-circle"
+                            <path
+                              d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
                             />
                           </svg>
                           <div
@@ -5128,9 +5542,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                               >
                                 <svg
                                   className="icon"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <use
-                                    href="sprite.svg#it-facebook"
+                                  <path
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path
+                                    d="M13.55 22v-9.11h3.07l.46-3.56h-3.53V7.05c0-1 .29-1.73 1.77-1.73h1.87V2.14A25.14 25.14 0 0014.45 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.81v3.57h3.06V22h3.68z"
                                   />
                                 </svg>
                               </a>
@@ -5143,9 +5563,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                               >
                                 <svg
                                   className="icon"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <use
-                                    href="sprite.svg#it-github"
+                                  <path
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path
+                                    d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7C6.73 19.91 6.14 18 6.14 18A2.69 2.69 0 005 16.5c-.91-.62.07-.61.07-.61a2.13 2.13 0 011.53 1 2.14 2.14 0 002.91.83 2.16 2.16 0 01.63-1.34c-2.14-.21-4.52-1.07-4.52-4.9a3.89 3.89 0 011-2.69 3.57 3.57 0 01.1-2.64s.84-.27 2.75 1a9.63 9.63 0 015 0c1.91-1.29 2.75-1 2.75-1 .37.835.405 1.78.1 2.64a3.89 3.89 0 011 2.69c0 3.84-2.34 4.68-4.57 4.93.482.49.73 1.164.68 1.85v2.75c0 .33.18.58.69.48A10 10 0 0012 2z"
                                   />
                                 </svg>
                               </a>
@@ -5158,9 +5584,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                               >
                                 <svg
                                   className="icon"
+                                  viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <use
-                                    href="sprite.svg#it-twitter"
+                                  <path
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path
+                                    d="M8.08 20a10.93 10.93 0 0011-11v-.5a8 8 0 001.92-2 7.85 7.85 0 01-2.22.61A3.89 3.89 0 0020.48 5a8 8 0 01-2.48.91 3.87 3.87 0 00-6.59 3.52 11 11 0 01-8-4 3.85 3.85 0 001.19 5.16 3.76 3.76 0 01-1.75-.48A3.87 3.87 0 006 13.91a3.73 3.73 0 01-1 .14 4.3 4.3 0 01-.73-.05 3.87 3.87 0 003.61 2.68 7.73 7.73 0 01-4.8 1.66 7 7 0 01-.92-.06A10.9 10.9 0 008.08 20"
                                   />
                                 </svg>
                               </a>
@@ -5181,9 +5613,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                           >
                             <svg
                               className="icon"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
                             >
-                              <use
-                                href="sprite.svg#it-search"
+                              <path
+                                d="M21.9 21.1L16 15.3a8.3 8.3 0 002-5.3 8 8 0 10-8 8 8.3 8.3 0 005.3-2l5.8 5.9zM10 17a7 7 0 117-7 7 7 0 01-7 7z"
+                              />
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
                               />
                             </svg>
                           </a>
@@ -5220,9 +5658,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                       >
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-burger"
+                          <path
+                            d="M22 5v1H2V5zM2 12.5h20v-1H2zM2 19h20v-1H2z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </button>
@@ -5469,9 +5913,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                 >
                   <svg
                     className="icon icon-sm sm"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-search"
+                    <path
+                      d="M21.9 21.1L16 15.3a8.3 8.3 0 002-5.3 8 8 0 10-8 8 8.3 8.3 0 005.3-2l5.8 5.9zM10 17a7 7 0 117-7 7 7 0 01-7 7z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </span>
@@ -5496,9 +5946,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                 <button>
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-close"
+                    <path
+                      d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                   <span
@@ -5516,9 +5972,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                 >
                   <svg
                     className="icon icon-primary"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-plus"
+                    <path
+                      d="M20 12.5h-7.5V20h-1v-7.5H4v-1h7.5V4h1v7.5H20z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                   <span>
@@ -5613,9 +6075,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                   >
                     <svg
                       className="icon right icon-primary"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <use
-                        href="sprite.svg#it-more-items"
+                      <path
+                        d="M12 18a1 1 0 11-1 1 .9.9 0 011-1m0-1a2 2 0 102 2 2 2 0 00-2-2zm0-6a1 1 0 11-1 1 .9.9 0 011-1m0-1a2 2 0 102 2 2 2 0 00-2-2zm0-6a.9.9 0 011 1 1 1 0 01-2 0 .9.9 0 011-1m0-1a2 2 0 102 2 2 2 0 00-2-2z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
                       />
                     </svg>
                   </a>
@@ -5747,9 +6215,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-pa"
+                        <path
+                          d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span>
@@ -5783,9 +6257,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -5811,9 +6291,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-user"
+                        <path
+                          d="M12 13a4 4 0 004-4V6a4 4 0 00-8 0v3a4 4 0 004 4zM9 6a3 3 0 016 0v3a3 3 0 01-6 0zm11 16h-1a7 7 0 00-14 0H4a8 8 0 0116 0z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span>
@@ -5847,9 +6333,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -5875,9 +6367,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-pa"
+                        <path
+                          d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span>
@@ -5911,9 +6409,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -5939,9 +6443,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-pa"
+                        <path
+                          d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span>
@@ -5975,9 +6485,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6003,9 +6519,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-user"
+                        <path
+                          d="M12 13a4 4 0 004-4V6a4 4 0 00-8 0v3a4 4 0 004 4zM9 6a3 3 0 016 0v3a3 3 0 01-6 0zm11 16h-1a7 7 0 00-14 0H4a8 8 0 0116 0z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span>
@@ -6039,9 +6561,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6067,9 +6595,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                     >
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-pa"
+                        <path
+                          d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span>
@@ -6103,9 +6637,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6175,9 +6715,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6220,9 +6766,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6265,9 +6817,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6310,9 +6868,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6355,9 +6919,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6400,9 +6970,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6445,9 +7021,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6490,9 +7072,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6535,9 +7123,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6580,9 +7174,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6625,9 +7225,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6670,9 +7276,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6715,9 +7327,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6760,9 +7378,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6805,9 +7429,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                         </span>
                         <svg
                           className="icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          <use
-                            href="sprite.svg#it-arrow-right"
+                          <path
+                            d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                          />
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
                           />
                         </svg>
                       </a>
@@ -6913,9 +7543,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                   >
                     <svg
                       className="icon"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <use
-                        href="sprite.svg#it-pa"
+                      <path
+                        d="M3 21h18v1H3zm0-1h18v-1H3zM22 9H2l10-7zM5.2 8h13.6L12 3.2zM6 18v-8H5v8zm4 0v-8H9v8zm5 0v-8h-1v8zm4 0v-8h-1v8z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
                       />
                     </svg>
                     <div
@@ -7315,9 +7951,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                   >
                     <svg
                       className="icon icon-white"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <use
-                        href="sprite.svg#it-mail"
+                      <path
+                        d="M20.5 5h-17A1.5 1.5 0 002 6.5v11A1.5 1.5 0 003.5 19h17a1.5 1.5 0 001.5-1.5v-11A1.5 1.5 0 0020.5 5zm-.3 1l-7.1 7.2a1.6 1.6 0 01-2.2 0L3.8 6zM3 17.3V6.6L8.3 12zm.7.7L9 12.7l1.2 1.2a2.7 2.7 0 003.6 0l1.2-1.2 5.3 5.3zm12-6L21 6.6v10.7z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
                       />
                     </svg>
                     <span>
@@ -7350,9 +7992,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                     >
                       <svg
                         className="icon align-top icon-white icon-sm sm"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-designers-italia"
+                        <path
+                          d="M8.7 20.2v-13h3.6v13.1l-3.6-.1zM23 10.1h-3.3v6.5c0 .2.1.4.3.6s.4.2.8.2h2.1l.2 2.8c-1.2.3-2.1.4-2.8.4-1.6 0-2.7-.3-3.3-1.1-.6-.7-.9-2-.9-3.9v-12h3.6v3.6H23v2.9zm-19.8 1c-.6 0-1.2-.2-1.6-.6-.4-.4-.6-.9-.6-1.5s.2-1.1.6-1.5c.4-.5.9-.7 1.6-.7s1.1.2 1.5.6c.4.5.6 1 .6 1.6s-.2 1.1-.6 1.5c-.4.4-.9.6-1.5.6z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                       <span
@@ -7372,9 +8020,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                     >
                       <svg
                         className="icon align-top icon-white icon-sm sm"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-twitter"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M8.08 20a10.93 10.93 0 0011-11v-.5a8 8 0 001.92-2 7.85 7.85 0 01-2.22.61A3.89 3.89 0 0020.48 5a8 8 0 01-2.48.91 3.87 3.87 0 00-6.59 3.52 11 11 0 01-8-4 3.85 3.85 0 001.19 5.16 3.76 3.76 0 01-1.75-.48A3.87 3.87 0 006 13.91a3.73 3.73 0 01-1 .14 4.3 4.3 0 01-.73-.05 3.87 3.87 0 003.61 2.68 7.73 7.73 0 01-4.8 1.66 7 7 0 01-.92-.06A10.9 10.9 0 008.08 20"
                         />
                       </svg>
                       <span
@@ -7394,9 +8048,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                     >
                       <svg
                         className="icon align-top icon-white icon-sm sm"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-medium"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M5 7.63A.72.72 0 004.82 7L3.13 5v-.3h5.22l4 8.84 3.54-8.84h5V5l-1.42 1.4a.43.43 0 00-.16.4v10.12a.45.45 0 00.16.41l1.4 1.37v.3h-7v-.3l1.45-1.41c.14-.14.14-.18.14-.4V8.71L11.37 19h-.55L6.12 8.71v6.88a.93.93 0 00.26.79l1.89 2.29V19H2.91v-.3l1.89-2.32a.92.92 0 00.2-.79V7.63z"
                         />
                       </svg>
                       <span
@@ -7416,9 +8076,15 @@ exports[`Storyshots Introduzione/Introduzione/Kit Comuni Servizi Template 1`] = 
                     >
                       <svg
                         className="icon align-top icon-white icon-sm sm"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-behance"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M7.83 5.75a8 8 0 011.6.15 3.38 3.38 0 011.24.51c.345.233.62.554.8.93.202.456.298.952.28 1.45a2.68 2.68 0 01-.42 1.54 3.05 3.05 0 01-1.25 1 2.92 2.92 0 011.68 1.15c.393.59.59 1.29.56 2a3.39 3.39 0 01-.32 1.59 3.08 3.08 0 01-1 1.11 4.27 4.27 0 01-1.4.64A6 6 0 018 18H2V5.75h5.83zm-.35 5a2 2 0 001.19-.35c.328-.27.5-.687.46-1.11A1.47 1.47 0 009 8.54a1.16 1.16 0 00-.42-.43A1.8 1.8 0 008 7.9a3.26 3.26 0 00-.7-.06H4.74v2.87l2.74.04zm.15 5.22c.252.003.503-.02.75-.07a2 2 0 00.62-.3 1.39 1.39 0 00.44-.49 1.73 1.73 0 00.16-.8A1.64 1.64 0 009.09 13a2.33 2.33 0 00-1.41-.4H4.74v3.38l2.89-.01zm8.54-.08a2.18 2.18 0 001.58.54 2.24 2.24 0 001.25-.37 1.6 1.6 0 00.65-.79h2.15a4.06 4.06 0 01-1.58 2.29 4.64 4.64 0 01-2.58.69 5.23 5.23 0 01-1.9-.33 4 4 0 01-2.33-2.44 5.25 5.25 0 01-.32-1.89 5.12 5.12 0 01.33-1.86 4.14 4.14 0 01.93-1.49 4.48 4.48 0 011.44-1 4.59 4.59 0 011.85-.36 4.31 4.31 0 012 .44A4 4 0 0121 10.5c.37.505.636 1.08.78 1.69a6.18 6.18 0 01.17 2h-6.38a2.5 2.5 0 00.6 1.7zM19 11.22a1.83 1.83 0 00-1.38-.49 2 2 0 00-1 .2 1.8 1.8 0 00-.62.49 1.62 1.62 0 00-.33.62 2.87 2.87 0 00-.11.59h4a2.4 2.4 0 00-.56-1.41zm-3.93-4.65h4.98v1.21h-4.98V6.57z"
                         />
                       </svg>
                       <span
