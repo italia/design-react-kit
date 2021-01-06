@@ -3,7 +3,7 @@ import commonjs from 'rollup-plugin-commonjs'
 import babel from 'rollup-plugin-babel'
 import minify from 'rollup-plugin-babel-minify'
 import replace from 'rollup-plugin-replace'
-import image from '@rollup/plugin-image'
+import svg from 'rollup-plugin-svg'
 
 import packageJson from '../package.json'
 
@@ -48,7 +48,7 @@ function baseConfig() {
           '@babel/plugin-proposal-class-properties'
         ]
       }),
-      image()
+      svg({ base64: true })
     ]
   }
 }
