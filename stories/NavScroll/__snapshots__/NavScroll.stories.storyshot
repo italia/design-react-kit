@@ -48,9 +48,11 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-expand"
+                <path
+                  d="M11.6 15.4L6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
                 />
               </svg>
             </a>
@@ -109,9 +111,11 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-expand"
+                <path
+                  d="M11.6 15.4L6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
                 />
               </svg>
             </a>
@@ -170,9 +174,11 @@ exports[`Storyshots Componenti/NavScroll Menu Inline 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-expand"
+                <path
+                  d="M11.6 15.4L6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
                 />
               </svg>
             </a>
@@ -326,9 +332,11 @@ exports[`Storyshots Componenti/NavScroll Posizionamento a fondo pagina con linea
                 "ariaHidden": true,
               }
             }
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <use
-              href="sprite.svg#it-chevron-left"
+            <path
+              d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
             />
           </svg>
           <span>
@@ -645,9 +653,11 @@ exports[`Storyshots Componenti/NavScroll Posizionamento in testa alla pagina con
                 "ariaHidden": true,
               }
             }
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <use
-              href="sprite.svg#it-chevron-left"
+            <path
+              d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
             />
           </svg>
           <span>

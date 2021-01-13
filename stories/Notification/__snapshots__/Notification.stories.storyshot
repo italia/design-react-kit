@@ -38,9 +38,15 @@ exports[`Storyshots Componenti/Notification Default Location 1`] = `
                 Notification Title
                 <svg
                   className="icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-check-circle"
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
               </h5>
@@ -139,9 +145,15 @@ exports[`Storyshots Componenti/Notification Dismissable 1`] = `
                   Notification title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-check-circle"
+                    <path
+                      d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>
@@ -154,9 +166,15 @@ exports[`Storyshots Componenti/Notification Dismissable 1`] = `
             >
               <svg
                 className="icon"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-close"
+                <path
+                  d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
                 />
               </svg>
               <span
@@ -199,9 +217,15 @@ exports[`Storyshots Componenti/Notification Dismissable 1`] = `
                   Notification title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-check-circle"
+                    <path
+                      d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>
@@ -220,9 +244,15 @@ exports[`Storyshots Componenti/Notification Dismissable 1`] = `
             >
               <svg
                 className="icon"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-close"
+                <path
+                  d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
                 />
               </svg>
               <span
@@ -320,9 +350,15 @@ exports[`Storyshots Componenti/Notification Example 1`] = `
                   Notification title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-check-circle"
+                    <path
+                      d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>
@@ -362,9 +398,15 @@ exports[`Storyshots Componenti/Notification Example 1`] = `
                   Notification title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-check-circle"
+                    <path
+                      d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>
@@ -439,9 +481,15 @@ exports[`Storyshots Componenti/Notification Fixed Positions 1`] = `
                 Top Fix
                 <svg
                   className="icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-check-circle"
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
               </h5>
@@ -469,9 +517,15 @@ exports[`Storyshots Componenti/Notification Fixed Positions 1`] = `
                 Left Fix
                 <svg
                   className="icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-check-circle"
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
               </h5>
@@ -494,9 +548,15 @@ exports[`Storyshots Componenti/Notification Fixed Positions 1`] = `
                 Right Fix
                 <svg
                   className="icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-check-circle"
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
               </h5>
@@ -519,9 +579,15 @@ exports[`Storyshots Componenti/Notification Fixed Positions 1`] = `
                 Bottom Fix
                 <svg
                   className="icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-check-circle"
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
               </h5>
@@ -620,9 +686,15 @@ exports[`Storyshots Componenti/Notification Notification with message 1`] = `
                   Notification title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-check-circle"
+                    <path
+                      d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>
@@ -667,9 +739,15 @@ exports[`Storyshots Componenti/Notification Notification with message 1`] = `
                   Notification title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-check-circle"
+                    <path
+                      d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>
@@ -773,9 +851,15 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
                   Notification Title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-check-circle"
+                    <path
+                      d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>
@@ -830,9 +914,15 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
                   Notification Title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-check-circle"
+                    <path
+                      d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>
@@ -882,9 +972,15 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
                   Notification Title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-check-circle"
+                    <path
+                      d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>
@@ -933,9 +1029,15 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
                   Notification Title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-check-circle"
+                    <path
+                      d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>
@@ -978,9 +1080,15 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
                   Notification Title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-check-circle"
+                    <path
+                      d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>
@@ -1073,9 +1181,15 @@ exports[`Storyshots Componenti/Notification States 1`] = `
                   Notification Title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-check-circle"
+                    <path
+                      d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>
@@ -1113,9 +1227,15 @@ exports[`Storyshots Componenti/Notification States 1`] = `
                   Notification Title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-close-circle"
+                    <path
+                      d="M16.3 8.3L12.6 12l3.7 3.6-.7.7-3.7-3.6-3.6 3.6-.7-.7 3.6-3.6-3.6-3.7.7-.7 3.6 3.7 3.7-3.7zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>
@@ -1162,9 +1282,15 @@ exports[`Storyshots Componenti/Notification States 1`] = `
                   Notification Title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-info-circle"
+                    <path
+                      d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>
@@ -1207,9 +1333,15 @@ exports[`Storyshots Componenti/Notification States 1`] = `
                   Notification Title
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-error"
+                    <path
+                      d="M11.5 14.2V5.7h1.2v8.5zm-.1 4.1h1.2v-1.8h-1.2zM22 7.9v8.3L16.1 22H7.9L2 16.2V7.9L7.9 2h8.2zm-1 .4L15.7 3H8.3L3 8.3v7.5L8.3 21h7.4l5.3-5.2z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </h5>

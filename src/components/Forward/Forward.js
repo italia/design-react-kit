@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 // SSR does have no access to the Element global variable, so mock it
 if (typeof window === 'undefined') {
-  global.Element = typeof Element === 'undefined' ? function () {} : Element
+  global.Element = typeof Element === 'undefined' ? function() {} : Element
 }
 
 const propTypes = {

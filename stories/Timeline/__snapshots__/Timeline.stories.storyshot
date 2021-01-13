@@ -41,9 +41,15 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                 >
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-code-circle"
+                    <path
+                      d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </div>
@@ -103,9 +109,15 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                       </span>
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-arrow-right"
+                        <path
+                          d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                     </a>
@@ -128,9 +140,15 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                 >
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-code-circle"
+                    <path
+                      d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </div>
@@ -180,9 +198,15 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                 >
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-code-circle"
+                    <path
+                      d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </div>
@@ -242,9 +266,15 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                       </span>
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-arrow-right"
+                        <path
+                          d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                     </a>
@@ -272,9 +302,15 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                 >
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-code-circle"
+                    <path
+                      d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </div>
@@ -324,9 +360,15 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                 >
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-code-circle"
+                    <path
+                      d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </div>
@@ -386,9 +428,15 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                       </span>
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-arrow-right"
+                        <path
+                          d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                     </a>
@@ -411,9 +459,15 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                 >
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-code-circle"
+                    <path
+                      d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </div>
@@ -463,9 +517,15 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                 >
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-code-circle"
+                    <path
+                      d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </div>
@@ -525,9 +585,15 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                       </span>
                       <svg
                         className="icon"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <use
-                          href="sprite.svg#it-arrow-right"
+                        <path
+                          d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                        />
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
                         />
                       </svg>
                     </a>
@@ -550,9 +616,15 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                 >
                   <svg
                     className="icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <use
-                      href="sprite.svg#it-code-circle"
+                    <path
+                      d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
                     />
                   </svg>
                 </div>
