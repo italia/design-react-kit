@@ -4,8 +4,8 @@
 
 pre,
 code,
-code .token[class],
-code .token.comment[class] {
+sbdocs-preview > code .token[class],
+sbdocs-preview > code .token.comment[class] {
   font-style: normal;
   color: #f8f8f2;
 }

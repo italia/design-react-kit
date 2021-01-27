@@ -9,6 +9,48 @@ import { Col, Row, Toggle, Form, FormGroup, Label, Callout, CalloutText, Callout
 
 La Select nelle sue varianti è basato su una libreria di terze parti, [react-select](https://react-select.com/).
 
+Per la maggior parte delle implementazioni di seguito sono richiesti almeno due componenti aggiuntivi per ottenere il risultato qui presente.
+L'implementazione dei componenti `Option` e `DropdownIndicator` richiesti è la seguente:
+
+```js
+import React from 'react'
+import { components } from 'react-select'
+import { Icon } from 'react-design-kit'
+
+const Option = props => {
+  return (
+    <div className="select-pill text-primary">
+      <components.Option {...props} />
+    </div>
+  )
+}
+
+const DropdownIndicator = props => {
+  return (
+    <components.DropdownIndicator {...props}>
+      <Icon icon="it-arrow-down-triangle" style={{ ariaHidden: true }} />
+    </components.DropdownIndicator>
+  )
+}
+```
+
+Qualora una versione richieda componenti aggiuntivi ai seguenti, verrà mostrata contestualmente.
+
+L'array di input usato per il componente `Select` in questo e per i successivi esempi è il seguente:
+
+```js
+const defaultOptions = [
+  { value: 'Value 1', label: 'Lorem ipsum dolor sit amet' },
+  { value: 'Value 2', label: 'Duis vestibulum eleifend libero' },
+  { value: 'Value 3', label: 'Phasellus pretium orci sed odio tempus' },
+  {
+    value: 'Value 4',
+    label: 'Vestibulum bibendum ex vel augue porttitor sodales'
+  },
+  { value: 'Value 5', label: 'Praesent quis elementum turpis' }
+]
+```
+
 ## Select classica
 
 La select è composta dal un wrapper esterno con classe `.bootstrap-select-wrapper` seguita dalla label e dal componenente `Select`. Includendo la Select in questo modo, essa assumerà una serie di funzionalità descritte di seguito.
@@ -27,32 +69,121 @@ Per disabilitare una select, aggiungere la *prop* `isDisabled` al componente `Se
 
 ## Select con reset
 
-TODO
+Per creare l’opzione che resetterà i valori selezionati andremo ad inserire all'interno dei componenti personalizzati della `Select` un componente `ClearIndicator`.
+
+In aggiunta imposteremo l'attributo `isClearable={true}` per indicare che il campo può tornare nello stato iniziale.
 
 <Canvas>
     <Story id="componenti-form-select--select-con-reset" />
 </Canvas>
 
+L'implementazione per il componente `ClearIndicator` utilizzato è la seguente:
+
+```js
+const CustomClearText = () => 'Annulla'
+
+const ClearIndicator = props => {
+  const {
+    children = <CustomClearText />,
+    innerProps: { ref, ...restInnerProps }
+  } = props
+  return (
+    <div className="select-pill text-primary" {...restInnerProps} ref={ref}>
+      <div style={{ padding: '0px 5px' }}>{children}</div>
+    </div>
+  )
+}
+```
+
 ## Select con ricerca
 
-TODO
+Per attivare la ricerca è sufficiente aggiungere l'attributo `isSearchable={true}` al componente `Select`.
 
 <Canvas>
     <Story id="componenti-form-select--select-con-ricerca" />
 </Canvas>
 
-## Seleect Multipla
+## Select Multipla
 
-TODO
+Per attivare la multiselezione, aggiungere l'attributo `isMulti={true}` al componente `Select`.
+
+Quindi fornire due componenti aggiuntivi alla `Select` di tipo `MenuList` e `SelectContainer`.
 
 <Canvas>
     <Story id="componenti-form-select--select-multipla" />
 </Canvas>
 
+
+L'implementazione per i componenti `MenuList` e `SelectContainer` utilizzati è la seguente:
+```js
+import React from 'react'
+import { components } from 'react-select'
+
+const MenuList = ({ children, ...props }) => {
+  return (
+    <div>
+      <components.MenuList {...props}>{children}</components.MenuList>
+    </div>
+  )
+}
+
+const SelectContainer = ({ children, ...props }) => {
+  return (
+    <div>
+      <components.SelectContainer {...props}>
+        {children}
+      </components.SelectContainer>
+    </div>
+  )
+}
+```
+
 ## Select con gruppi
 
-TODO
+Per le select con raggruppamenti il formato di input dei dati è leggermente diversa dal formato precedente:
+
+```js
+const groupOneOptions = [
+  { value: 'Value 1', label: 'Lorem ipsum dolor sit amet' },
+  { value: 'Value 2', label: 'Duis vestibulum eleifend libero' },
+  { value: 'Value 3', label: 'Phasellus pretium orci sed odio tempus' }
+]
+
+const groupTwoOptions = [
+  {
+    value: 'Value 4',
+    label: 'Vestibulum bibendum ex vel augue porttitor sodales'
+  },
+  { value: 'Value 5', label: 'Praesent quis elementum turpis' }
+]
+
+const groupedOptions = [
+  {
+    label: 'Gruppo 1',
+    options: groupOneOptions
+  },
+  {
+    label: 'Gruppo 2',
+    options: groupTwoOptions
+  }
+]
+```
+
+In aggiunta al formato diverso è necessario passare un componente `GroupHeading` aggiuntivo al componente `Select`:
 
 <Canvas>
     <Story id="componenti-form-select--select-con-gruppi" />
 </Canvas>
+
+L'implementazione per il componente `GroupHeading` utilizzato è la seguente:
+
+```js
+import React from 'react'
+import { components } from 'react-select'
+
+const GroupHeading = props => (
+  <div>
+    <components.GroupHeading {...props} />
+  </div>
+)
+```
