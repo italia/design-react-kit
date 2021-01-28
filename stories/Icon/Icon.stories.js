@@ -4,9 +4,7 @@ import { withKnobs, boolean, select } from '@storybook/addon-knobs/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 
-import icons from './icons.json'
-
-import { Icon, Row, Col } from '../../src'
+import { Icon, Row, Col, icons } from '../../src'
 
 storiesOf('Componenti/Icon', module)
   .addDecorator(withA11y)
