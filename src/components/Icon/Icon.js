@@ -16,6 +16,8 @@ const icons = Object.keys(Svgs).reduce((memo, pascalName) => {
   return memo
 }, {})
 
+export const iconsList = Object.keys(icons)
+
 const propTypes = {
   className: PropTypes.string,
   color: PropTypes.string,
