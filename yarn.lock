@@ -3917,10 +3917,10 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap-italia@1.4.2:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-1.4.2.tgz#fb152845f635dce74788c2cef6cc1a20035162d9"
-  integrity sha512-oAmJjHU30LMexT+JnmnTkA4Ali55y8cKA5Y229TPkCck47wxIsnvwF9yDYC0CELXt4AJbZp1P9HoqjnqSPeySw==
+bootstrap-italia@1.4.3:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-1.4.3.tgz#ccae42afb0df7a60846410507054c8294d2ce900"
+  integrity sha512-4f6+QxAW5w+Ch6BKFniOryVaH9+ZaHO5VDJLVznfU4KOvsZQxO4wxS/EPExLdx64I1qjM5MHCCs9/AQh3tSnog==
   dependencies:
     bootstrap "^4.5.0"
     bootstrap-select "1.13.17"
