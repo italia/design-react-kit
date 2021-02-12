@@ -7,7 +7,8 @@ const propTypes = {
   className: PropTypes.string,
   color: PropTypes.string,
   highlight: PropTypes.bool,
-  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  detailed: PropTypes.boolean
 }
 
 const defaultProps = {
@@ -16,9 +17,17 @@ const defaultProps = {
   tag: 'div'
 }
 
-const Callout = ({ children, color, highlight, tag: Tag, ...attributes }) => {
+const Callout = ({
+  children,
+  color,
+  highlight,
+  detailed,
+  tag: Tag,
+  ...attributes
+}) => {
   const classes = classNames('callout', color, {
-    'callout-highlight': highlight
+    'callout-highlight': highlight,
+    'callout-more': detailed
   })
   return (
     <Tag className={classes} {...attributes}>
