@@ -27,7 +27,6 @@ const prioritySections = ['welcome-page',  'organizzare', 'menu', 'componenti', 
 const priorityPages = ["introduzione"];
 
 export const parameters = {
-    controls: { expanded: true },
     options: {
         storySort: (a, b) => {
             const [aGroups, aStory] = a[0].split('--');
