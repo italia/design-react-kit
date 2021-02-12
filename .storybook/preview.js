@@ -27,6 +27,7 @@ const prioritySections = ['welcome-page',  'organizzare', 'menu', 'componenti', 
 const priorityPages = ["introduzione"];
 
 export const parameters = {
+    controls: { expanded: true },
     options: {
         storySort: (a, b) => {
             const [aGroups, aStory] = a[0].split('--');
@@ -50,7 +51,6 @@ export const parameters = {
                 if(!sectionScore){
                   const pageAIndex = priorityPages.indexOf(aSubSections[aSubSections.length - 1]) + 1;
                   const pageBIndex = priorityPages.indexOf(bSubSections[bSubSections.length - 1]) + 1;
-                  console.log({pageAIndex, pageBIndex, aSubSections, bSubSections})
                   if(pageAIndex || pageBIndex){
                     return pageBIndex - pageAIndex;
                   }
