@@ -23,7 +23,8 @@ const order = {
   'componenti': 1000,
 };
 
-const priorityPages = ['welcome-page',  'organizzare', 'menu', 'componenti', 'form', 'utilities'];
+const prioritySections = ['welcome-page',  'organizzare', 'menu', 'componenti', 'form', 'utilities'];
+const priorityPages = ["introduzione"];
 
 export const parameters = {
     options: {
@@ -36,20 +37,31 @@ export const parameters = {
             const aFullStoryName = `${aSubSections.join('-')}-${aStory}`
             const bFullStoryName = `${bSubSections.join('-')}-${bStory}`
             // Sort by Section 
-            const sectionScore = (order[aSection] - order[bSection]);
+            const groupScore = (order[aSection] - order[bSection]);
 
           
             // if pages have custom sort, compare them only if from the same section
-            if(!sectionScore){
-              const pageAIndex = priorityPages.indexOf(aFullStoryName) + 1 || priorityPages.indexOf(aSubSections[0]) + 1;
-              const pageBIndex = priorityPages.indexOf(bFullStoryName) + 1 || priorityPages.indexOf(bSubSections[0]) + 1;
-              if(pageAIndex || pageBIndex){
-                return pageAIndex - pageBIndex;
+            if(!groupScore){
+              const pageASectionIndex = prioritySections.indexOf(aFullStoryName) + 1 || prioritySections.indexOf(aSubSections[0]) + 1;
+              const pageBSectionIndex = prioritySections.indexOf(bFullStoryName) + 1 || prioritySections.indexOf(bSubSections[0]) + 1;
+              if(pageASectionIndex || pageBSectionIndex){
+                const sectionScore = pageASectionIndex - pageBSectionIndex;
+
+                if(!sectionScore){
+                  const pageAIndex = priorityPages.indexOf(aSubSections[aSubSections.length - 1]) + 1;
+                  const pageBIndex = priorityPages.indexOf(bSubSections[bSubSections.length - 1]) + 1;
+                  console.log({pageAIndex, pageBIndex, aSubSections, bSubSections})
+                  if(pageAIndex || pageBIndex){
+                    return pageBIndex - pageAIndex;
+                  }
+                  return (aFullStoryName.localeCompare(bFullStoryName));
+                }
+                return sectionScore;
               }
             }
 
             // and lexycographic order of the story not mapped
-            return sectionScore + (aFullStoryName.localeCompare(bFullStoryName))
+            return groupScore + (aFullStoryName.localeCompare(bFullStoryName))
           },
         /**
          * where to show the addon panel
