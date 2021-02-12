@@ -1,63 +1,106 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 
-import Esempi from './docs/Esempi.md'
-import Dimensioni from './docs/Dimensioni.md'
-import StatoAttivo from './docs/StatoAttivo.md'
-import StatoDisabilitato from './docs/StatoDisabilitato.md'
-import EsempiInterattivi from './docs/EsempiInterattivi.md'
-import ButtonIcon from './docs/ButtonIcon.md'
-import DarkBackground from './docs/DarkBackground.md'
-
 import { Button, Icon } from '../../src'
-
-const colors = [
-  'Primary',
-  'Secondary',
-  'Success',
-  'Info',
-  'Danger',
-  'Warning',
-  'Link'
-]
 
 export default {
   title: 'Componenti/Button'
 }
 
-export const _Esempi = () => {
-  const colors = [
-    'Primary',
-    'Secondary',
-    'Success',
-    'Info',
-    'Danger',
-    'Warning',
-    'Link'
-  ]
+export const Esempi = () => {
   return (
-    <div>
-      {colors.map(color => (
-        <div key={color} className="mb-2">
-          <Button color={color.toLowerCase()}>{color}</Button>{' '}
-          <Button outline color={color.toLowerCase()}>
-            {color} Outline
-          </Button>
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="mb-2">
+        <Button color="primary">Primary</Button>{' '}
+        <Button outline color="primary">
+          Primary Outline
+        </Button>
+      </div>
+      <div className="mb-2">
+        <Button color="secondary">Secondary</Button>{' '}
+        <Button outline color="secondary">
+          Secondary Outline
+        </Button>
+      </div>
+      <div className="mb-2">
+        <Button color="success">Success</Button>{' '}
+        <Button outline color="success">
+          Success Outline
+        </Button>
+      </div>
+      <div className="mb-2">
+        <Button color="info">Info</Button>{' '}
+        <Button outline color="info">
+          Info Outline
+        </Button>
+      </div>
+      <div className="mb-2">
+        <Button color="danger">Danger</Button>{' '}
+        <Button outline color="danger">
+          Danger Outline
+        </Button>
+      </div>
+      <div className="mb-2">
+        <Button color="warning">Warning</Button>{' '}
+        <Button outline color="warning">
+          Warning Outline
+        </Button>
+      </div>
+      <div className="mb-2">
+        <Button color="link">Link</Button>{' '}
+        <Button outline color="link">
+          Link Outline
+        </Button>
+      </div>
+    </>
+  )
+}
+
+export const VariantiColore = () => {
+  return (
+    <>
+      <div className="btn-example">
+        <Button color="primary">Primary</Button>{' '}
+        <Button outline color="primary">
+          Primary Outline
+        </Button>{' '}
+        <Button color="primary" disabled>
+          Primary disabled
+        </Button>
+      </div>
+      <div className="btn-example">
+        <Button color="secondary">Secondary</Button>{' '}
+        <Button outline color="secondary">
+          Secondary Outline
+        </Button>{' '}
+        <Button color="secondary" disabled>
+          Secondary disabled
+        </Button>
+      </div>
+    </>
   )
 }
 
 export const SfondoScuro = () => (
   <div className="bg-dark py-1">
-    {colors.map(color => (
-      <div key={color} className="mb-2">
-        <Button color={color.toLowerCase()}>{color}</Button>{' '}
-        <Button outline color={color.toLowerCase()}>
-          {color} Outline
-        </Button>
-      </div>
-    ))}
+    <div className="btn-example">
+      <Button color="primary">Primary</Button>{' '}
+      <Button outline color="primary">
+        Primary Outline
+      </Button>{' '}
+      <Button color="primary" disabled>
+        Primary disabled
+      </Button>
+    </div>
+    <div className="btn-example">
+      <Button color="secondary">Secondary</Button>{' '}
+      <Button outline color="secondary">
+        Secondary Outline
+      </Button>{' '}
+      <Button color="secondary" disabled>
+        Secondary disabled
+      </Button>
+    </div>
   </div>
 )
 
@@ -105,10 +148,10 @@ VariantiDiDimensione.story = {
 
 export const BottoniConIcona = () => (
   <div>
-    <Button color="primary" size="lg" icon>
+    <Button color="success" size="lg" icon>
       <Icon color="white" icon="it-star-full" /> Icon Button Large
     </Button>{' '}
-    <Button color="success" icon>
+    <Button color="primary" icon>
       <Icon color="white" icon="it-star-full" /> Icon Button
     </Button>{' '}
     <Button color="danger" size="sm" icon>
@@ -124,7 +167,40 @@ BottoniConIcona.story = {
   name: 'Bottoni con icona'
 }
 
-export const _StatoAttivo = () => (
+export const BottoniConIconaCerchiata = () => (
+  <div>
+    <Button color="success" size="lg" icon>
+      <span className="rounded-icon">
+        <Icon color="success" icon="it-user" />
+      </span>
+      <span>Round Icon Large</span>
+    </Button>{' '}
+    <Button color="primary" icon>
+      <span className="rounded-icon">
+        <Icon color="primary" icon="it-user" />
+      </span>
+      <span>Round Icon</span>
+    </Button>{' '}
+    <Button color="danger" size="sm" icon>
+      <span className="rounded-icon rounded-secondary">
+        <Icon color="white" icon="it-user" />
+      </span>
+      <span>Round Icon Small</span>
+    </Button>{' '}
+    <Button color="info" size="xs" icon>
+      <span className="rounded-icon rounded-danger">
+        <Icon color="white" icon="it-user" />
+      </span>
+      <span>Round Icon Extra Small</span>
+    </Button>
+  </div>
+)
+
+BottoniConIconaCerchiata.story = {
+  name: 'Bottoni con icona cerchiata'
+}
+
+export const StatoAttivo = () => (
   <div>
     {colors.map(color => (
       <span key={color}>
@@ -134,7 +210,7 @@ export const _StatoAttivo = () => (
   </div>
 )
 
-export const _StatoDisabilitato = () => (
+export const StatoDisabilitato = () => (
   <div>
     {colors.map(color => (
       <span key={color}>
@@ -146,7 +222,17 @@ export const _StatoDisabilitato = () => (
   </div>
 )
 
-export const _EsempiInterattivi = ({
+const colors = [
+  'Primary',
+  'Secondary',
+  'Success',
+  'Info',
+  'Danger',
+  'Warning',
+  'Link'
+]
+
+export const EsempiInterattivi = ({
   color,
   dimension,
   block,
@@ -164,14 +250,14 @@ export const _EsempiInterattivi = ({
     </Button>
   )
 }
-_EsempiInterattivi.args = {
+EsempiInterattivi.args = {
   color: colors[0],
   dimension: ' ',
   block: false,
   disabled: false,
   label: ''
 }
-_EsempiInterattivi.argTypes = {
+EsempiInterattivi.argTypes = {
   color: {
     control: {
       type: 'select',
@@ -186,6 +272,7 @@ _EsempiInterattivi.argTypes = {
   }
 }
 
-_EsempiInterattivi.story = {
-  name: 'Esempi interattivi'
+EsempiInterattivi.story = {
+  name: 'Esempi interattivi',
+  parameters: { controls: { expanded: true } }
 }

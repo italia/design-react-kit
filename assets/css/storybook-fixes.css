@@ -55,6 +55,11 @@ pre > code[class] {
   background-color: #17324d !important;
 }
 
+.btn-example .btn {
+  margin: 4px 8px;
+  width: 200px;
+}
+
 .square-color {
   width: 150px;
   height: 150px;
