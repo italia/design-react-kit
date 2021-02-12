@@ -2,14 +2,11 @@ import React from 'react'
 
 import { Badge, Button } from '../../src'
 
-import Esempi from './docs/Esempi.md'
-import EsempiInterattivi from './docs/EsempiInterattivi.md'
-import Contatore from './docs/Contatore.md'
-import Variazioni from './docs/Variazioni.md'
-import BordiArrotondati from './docs/BordiArrotondati.md'
-import Link from './docs/Link.md'
+export default {
+  title: 'Componenti/Badge'
+}
 
-const EsempiComponent = () => (
+export const Esempi = () => (
   <div>
     <h1>
       Titolo di esempio <Badge color="secondary">New</Badge>
@@ -32,25 +29,26 @@ const EsempiComponent = () => (
   </div>
 )
 
-const ContatoreComponent = () => (
+export const Contatore = () => (
   <Button color="primary">
     Notifiche <Badge color="light">4</Badge>
   </Button>
 )
 
-const VariazioniComponent = () => (
+export const ContatoreTestoAggiuntivo = () => (
+  <Button color="primary">
+    Notifiche <Badge color="light">9</Badge>
+    <span className="sr-only">Messaggi non letti</span>
+  </Button>
+)
+
+export const Variazioni = () => (
   <div>
     <Badge className="mr-1" color="primary">
       Primary
     </Badge>
     <Badge className="mr-1" color="secondary">
       Secondary
-    </Badge>
-    <Badge className="mr-1" color="tertiary">
-      Tertiary
-    </Badge>
-    <Badge className="mr-1" color="quaternary">
-      Quaternary
     </Badge>
     <Badge className="mr-1" color="success">
       Success
@@ -64,19 +62,13 @@ const VariazioniComponent = () => (
   </div>
 )
 
-const ArrotondatiComponent = () => (
+export const BordiArrotondati = () => (
   <div>
     <Badge className="mr-1" color="primary" pill>
       Primary
     </Badge>
     <Badge className="mr-1" color="secondary" pill>
       Secondary
-    </Badge>
-    <Badge className="mr-1" color="tertiary" pill>
-      Tertiary
-    </Badge>
-    <Badge className="mr-1" color="quaternary" pill>
-      Quaternary
     </Badge>
     <Badge className="mr-1" color="success" pill>
       Success
@@ -90,19 +82,13 @@ const ArrotondatiComponent = () => (
   </div>
 )
 
-const LinkComponent = () => (
+export const ConLink = () => (
   <div>
     <Badge className="mr-1" href="#" color="primary">
       Primary
     </Badge>
     <Badge className="mr-1" href="#" color="secondary">
       Secondary
-    </Badge>
-    <Badge className="mr-1" href="#" color="tertiary">
-      Tertiary
-    </Badge>
-    <Badge className="mr-1" href="#" color="quaternary">
-      Quaternary
     </Badge>
     <Badge className="mr-1" href="#" color="success">
       Success
@@ -128,19 +114,15 @@ const EsempiInterattiviComponent = ({ color, pill, label }) => {
   )
 }
 
-export default {
-  title: 'Componenti/Badge'
-}
+// export const _Esempi = EsempiComponent
 
-export const _Esempi = EsempiComponent
-
-export const _EsempiInterattivi = EsempiInterattiviComponent
-_EsempiInterattivi.args = {
+// export const _EsempiInterattivi = EsempiInterattiviComponent
+EsempiInterattiviComponent.args = {
   color: 'info',
   pill: true,
   label: ''
 }
-_EsempiInterattivi.argTypes = {
+EsempiInterattiviComponent.argTypes = {
   color: {
     control: {
       type: 'select',
@@ -157,10 +139,10 @@ _EsempiInterattivi.argTypes = {
   }
 }
 
-export const _Contatore = ContatoreComponent
+// export const _Contatore = ContatoreComponent
 
-export const _Variazioni = VariazioniComponent
+// export const _Variazioni = VariazioniComponent
 
-export const _BordiArrotondati = ArrotondatiComponent
+// export const _BordiArrotondati = ArrotondatiComponent
 
-export const ConLink = LinkComponent
+// export const ConLink = LinkComponent
