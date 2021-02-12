@@ -6,7 +6,8 @@ const propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   className: PropTypes.string,
   active: PropTypes.bool,
-  onToggle: PropTypes.func
+  onToggle: PropTypes.func,
+  append: PropTypes.oneOfType([PropTypes.node, PropTypes.func])
 }
 
 const defaultProps = {
@@ -14,7 +15,7 @@ const defaultProps = {
 }
 
 export default function AccordionHeader(props) {
-  const { className, tag: Tag, active, onToggle, ...attributes } = props
+  const { className, tag: Tag, active, append, onToggle, ...attributes } = props
   const classes = classNames('collapse-header')
   const toggleClasses = classNames(className, {
     collapsed: active
@@ -29,6 +30,7 @@ export default function AccordionHeader(props) {
         onClick={onToggle}
         {...attributes}
       />
+      {append}
     </div>
   )
 }
