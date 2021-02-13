@@ -3,12 +3,25 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 const propTypes = {
-  children: PropTypes.node,
+  /** Il contenuto del Callout */
+  children: PropTypes.node.isRequired,
+  /** Classi aggiuntive per il componente */
   className: PropTypes.string,
-  color: PropTypes.string,
+  /** Permette di dichiarare il colore del bordo e del titolo */
+  color: PropTypes.oneOf([
+    'success',
+    'warning',
+    'danger',
+    'note',
+    'important',
+    ''
+  ]),
+  /** Abilita il Callout di tipo Highlight */
   highlight: PropTypes.bool,
+  /** Permette personalizzare il tag utilizzato per il Callout (diverso da "div"). Accetta sia tag HTML che componenti React. */
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-  detailed: PropTypes.boolean
+  /** Abilita il Callout di tipo Approfondimento */
+  detailed: PropTypes.bool
 }
 
 const defaultProps = {

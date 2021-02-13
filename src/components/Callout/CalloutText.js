@@ -3,9 +3,13 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 const propTypes = {
+  /** Aumenta la dimensione del testo nel paragrafo contenuto  */
   bigText: PropTypes.bool,
+  /** Il titolo del Callout */
+  children: PropTypes.node.isRequired,
+  /** Classi aggiuntive per il componente */
   className: PropTypes.string,
-  children: PropTypes.node,
+  /** Permette personalizzare il tag utilizzato per il contenitore del titolo (diverso da "div"). Accetta sia tag HTML che componenti React. */
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
 }
 

@@ -3,8 +3,11 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 const propTypes = {
-  children: PropTypes.node,
+  /** Il titolo del Callout */
+  children: PropTypes.node.isRequired,
+  /** Classi aggiuntive per il componente */
   className: PropTypes.string,
+  /** Permette personalizzare il tag utilizzato per il contenitore del titolo (diverso da "div"). Accetta sia tag HTML che componenti React. */
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
 }
 
