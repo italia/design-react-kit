@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 const propTypes = {
+  /** Classi aggiuntive per il componente */
   className: PropTypes.string
 }
 

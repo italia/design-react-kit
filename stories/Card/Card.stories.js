@@ -1,7 +1,6 @@
 import React from 'react'
 
 import {
-  Button,
   Card,
   CardBody,
   CardTitle,
@@ -9,11 +8,12 @@ import {
   CardCategory,
   CardSignature,
   CardReadMore,
+  CardTag,
+  CardTagsHeader,
+  Button,
   Icon,
   Row,
-  Col,
-  CardTag,
-  CardTagsHeader
+  Col
 } from '../../src'
 
 export default {
@@ -196,7 +196,7 @@ export const CardWithShading = () => (
   <Row>
     <Col xs="12" lg="6">
       {/* Start card */}
-      <Card space className="card-bg">
+      <Card spacing className="card-bg">
         <CardBody>
           <CardTitle tag="h5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -222,7 +222,7 @@ export const BigCard = () => (
   <Row>
     <Col xs="12" lg="6">
       {/* Start card */}
-      <Card space className="card-bg card-big">
+      <Card spacing className="card-bg card-big">
         <CardBody>
           <div className="top-icon">
             <Icon icon="it-card" />
@@ -251,7 +251,7 @@ export const BigCardExampleTwo = () => (
   <Row>
     <Col xs="12" lg="6">
       {/* Start card */}
-      <Card space className="card-bg card-big border-bottom-card">
+      <Card spacing className="card-bg card-big border-bottom-card">
         <div className="flag-icon"></div>
         <div className="etichetta">
           <Icon icon="it-settings" />
@@ -285,7 +285,7 @@ export const BigCardWithTag = () => (
   <Row>
     <Col xs="12" lg="6">
       {/* Start card */}
-      <Card space className="card-bg card-big no-after">
+      <Card spacing className="card-bg card-big no-after">
         <CardBody>
           <CardTagsHeader date="10/10/2018">
             <CardTag href="#">Tag</CardTag>
@@ -557,12 +557,12 @@ CardTeaserMultiple.story = {
 }
 
 // eslint-disable-next-line react/prop-types
-export const _EsempiInterattivi = ({ space, teaser, link, title, text }) => {
+export const _EsempiInterattivi = ({ spacing, teaser, link, title, text }) => {
   return (
     <Row>
       <Col size={12} lg={6}>
         {/* Start card */}
-        <Card space={space} teaser={teaser}>
+        <Card spacing={spacing} teaser={teaser}>
           <CardBody>
             <CardTitle tag="h5">{title}</CardTitle>
             <CardText>{text}</CardText>
@@ -584,7 +584,7 @@ _EsempiInterattivi.story = {
   name: 'Esempi interattivi'
 }
 _EsempiInterattivi.args = {
-  space: false,
+  spacing: false,
   teaser: false,
   link: '#',
   title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit…',

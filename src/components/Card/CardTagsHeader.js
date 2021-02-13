@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const propTypes = {
+  /** Il CardTag da mostrare */
   children: PropTypes.node,
+  /** Mostra la data nella Card. Passare una data già formattata come stringa. */
   date: PropTypes.string
 }
 

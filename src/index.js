@@ -21,7 +21,6 @@ export {
   CardGroup,
   CardDeck,
   CardColumns,
-  CardBody,
   CardFooter,
   CardHeader,
   CardImg,
@@ -33,8 +32,6 @@ export {
   CarouselIndicators,
   CarouselCaption,
   CardSubtitle,
-  CardText,
-  CardTitle,
   Popover,
   PopoverBody,
   PopoverHeader,
@@ -92,6 +89,16 @@ export { default as Forward } from './components/Forward/Forward'
 export { default as Callout } from './components/Callout/Callout'
 export { default as CalloutText } from './components/Callout/CalloutText'
 export { default as CalloutTitle } from './components/Callout/CalloutTitle'
+export { default as Card } from './components/Card/Card'
+export { default as CardBody } from './components/Card/CardBody'
+export { default as CardTitle } from './components/Card/CardTitle'
+export { default as CardText } from './components/Card/CardText'
+export { default as CardCategory } from './components/Card/CardCategory'
+export { default as CardTag } from './components/Card/CardTag'
+export { default as CardTagsHeader } from './components/Card/CardTagsHeader'
+export { default as CardSignature } from './components/Card/CardSignature'
+export { default as CardFooterCTA } from './components/Card/CardFooterCTA'
+export { default as CardReadMore } from './components/Card/CardReadMore'
 export { default as Collapse } from './components/Collapse/Collapse'
 export { default as Header } from './components/Header/Header'
 export { default as Headers } from './components/Header/Headers'
@@ -119,13 +126,6 @@ export { default as Toggle } from './components/Toggle/Toggle'
 export { default as Sidebar } from './components/Sidebar/Sidebar'
 export { default as Progress } from './components/Progress/Progress'
 export { default as Spinner } from './components/Spinner/Spinner'
-export { default as Card } from './components/Card/Card'
-export { default as CardCategory } from './components/Card/CardCategory'
-export { default as CardTag } from './components/Card/CardTag'
-export { default as CardTagsHeader } from './components/Card/CardTagsHeader'
-export { default as CardSignature } from './components/Card/CardSignature'
-export { default as CardFooterCTA } from './components/Card/CardFooterCTA'
-export { default as CardReadMore } from './components/Card/CardReadMore'
 export { default as BottomNav } from './components/BottomNav/BottomNav'
 export { default as BottomNavItem } from './components/BottomNav/BottomNavItem'
 export { default as ThumbNav } from './components/ThumbNav/ThumbNav'

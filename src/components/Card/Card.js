@@ -4,17 +4,29 @@ import classNames from 'classnames'
 import { Card as CardBase } from 'reactstrap'
 
 const propTypes = {
-  // eslint-disable-next-line react/forbid-foreign-prop-types
-  ...CardBase.propTypes,
+  /** Permette personalizzare il tag utilizzato per la Card. Accetta sia tag HTML che componenti React. */
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  /** Classi aggiuntive per il componente */
+  className: PropTypes.string,
+  /** Utilizzare per sovrascrivere le classi di default */
+  cssModule: PropTypes.object,
+  innerRef: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string,
+    PropTypes.func
+  ]),
+  /** Abilita la versione teaser della Card */
   teaser: PropTypes.bool,
+  /** Quando attivo distanzia la Card nella versione mobile */
   spacing: PropTypes.bool,
+  /** Quando attivo rimuove il componente contenitore della carta. Utile per card multiple nello stesso contenitore */
   noWrapper: PropTypes.bool,
+  /** Classi aggiuntive per l'elemento contenitore */
   wrapperClassName: PropTypes.string
 }
 
 const defaultProps = {
-  // eslint-disable-next-line react/forbid-foreign-prop-types
-  ...CardBase.defaultProps,
+  tag: 'div',
   noWrapper: false
 }
 

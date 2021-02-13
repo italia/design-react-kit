@@ -1,6 +1,13 @@
 import { ArgsTable, Meta, Preview, Story } from "@storybook/addon-docs/blocks";
 import LinkTo from '@storybook/addon-links/react';
-import { Card, Callout, CalloutTitle, CalloutText, Row, Col } from '../../src'
+import { Card, CardBody,
+  CardTitle,
+  CardText,
+  CardCategory,
+  CardSignature,
+  CardReadMore,
+  CardTag,
+  CardTagsHeader, Callout, CalloutTitle, CalloutText, Row, Col } from '../../src'
 
 <Meta title="Documentazione/Componenti/Card" of={Card}/>
 
@@ -55,7 +62,7 @@ Nell’esempio seguente sono stati inseriti un sottotitolo ed un link semplice c
 
 Le card con ombreggiatura sono caratterizzate dagli attributi:
 
-* `space`: utilizzata nel componente `Card` serve a distanziare le card nella loro versione mobile.
+* `spacing`: utilizzata nel componente `Card` serve a distanziare le card nella loro versione mobile.
 * La classe `.card-bg`: utilizzata nel componente `Card` serve a creare background e ombra della card.
 
 <Preview>
@@ -133,3 +140,42 @@ In alcuni casi può essere necessario raccogliere più card teasers all'interno 
 <Preview>
     <Story id="componenti-cards--card-teaser-multiple" />
 </Preview>
+
+## Argomenti componente
+
+
+## Card
+
+<ArgsTable of={Card} />
+
+### CardBody
+
+<ArgsTable of={CardBody} />
+
+### CardTitle
+
+<ArgsTable of={CardTitle} />
+
+### CardText
+
+<ArgsTable of={CardText} />
+
+### CardCategory
+
+<ArgsTable of={CardCategory} />
+
+### CardSignature
+
+<ArgsTable of={CardSignature} />
+
+### CardReadMore
+
+<ArgsTable of={CardReadMore} />
+
+### CardTagsHeader
+
+<ArgsTable of={CardTagsHeader} />
+
+### CardTag
+
+<ArgsTable of={CardTag} />

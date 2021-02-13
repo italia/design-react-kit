@@ -5,22 +5,16 @@ import classNames from 'classnames'
 import Icon from '../Icon/Icon'
 
 const propTypes = {
+  /** Classi aggiuntive per il componente */
   className: PropTypes.string,
+  /** Mostra un'icona nella Card per l'azione "Leggi di più". Passare il nome dell'icona per utilizzarlo. */
   iconName: PropTypes.string,
+  /** Passare l'URL target. */
   href: PropTypes.string,
+  /** Il contenuto in testo da mostrare */
   text: PropTypes.string,
-  tag: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.string,
-    PropTypes.shape({ $$typeof: PropTypes.symbol, render: PropTypes.func }),
-    PropTypes.arrayOf(
-      PropTypes.oneOfType([
-        PropTypes.func,
-        PropTypes.string,
-        PropTypes.shape({ $$typeof: PropTypes.symbol, render: PropTypes.func })
-      ])
-    )
-  ])
+  /** Permette personalizzare il tag utilizzato per il CardReadMore (diverso da "a"). Accetta sia tag HTML che componenti React. */
+  tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
 }
 
 const defaultProps = {

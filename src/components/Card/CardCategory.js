@@ -5,8 +5,11 @@ import classNames from 'classnames'
 import Icon from '../Icon/Icon'
 
 const propTypes = {
+  /** Mostra un'icona nella Card. Passare il nome dell'icona per utilizzarlo. */
   iconName: PropTypes.string,
+  /** Mostra la data nella Card. Passare una data già formattata come stringa. */
   date: PropTypes.string,
+  /** Se usato come link, passare l'URL target. */
   href: PropTypes.string
 }
 
