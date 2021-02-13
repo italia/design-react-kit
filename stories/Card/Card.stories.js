@@ -24,7 +24,6 @@ import BigCard from './docs/BigCard.md'
 import BigCardTag from './docs/BigCardTag.md'
 import CardImage from './docs/CardImage.md'
 import SpecialCard from './docs/SpecialCard.md'
-import EsempiInterattivi from '../Button/docs/EsempiInterattivi.md'
 
 const SimpleCardComponent = () => (
   <div className="row">

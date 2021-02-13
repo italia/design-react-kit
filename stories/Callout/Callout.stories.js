@@ -213,7 +213,7 @@ export const CalloutApprofondimento = () => {
             append={
               <a className="callout-more-download" href="#">
                 <Icon icon="it-download" />
-                <span className="sr-only">PDF </span> Download
+                <span className="sr-only">PDF</span> Download
               </a>
             }>
             Leggi tutto <span></span>
