@@ -46,7 +46,8 @@ function baseConfig() {
         plugins: [
           '@babel/plugin-proposal-export-default-from',
           '@babel/plugin-proposal-export-namespace-from',
-          '@babel/plugin-proposal-class-properties'
+          '@babel/plugin-proposal-class-properties',
+          ["@babel/plugin-proposal-private-methods", { "loose": false }],
         ]
       }),
       svg({ base64: true })
