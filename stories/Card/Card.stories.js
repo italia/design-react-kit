@@ -9,6 +9,7 @@ import {
   CardBody,
   CardTitle,
   CardText,
+  CardFooterCTA,
   Button,
   CardCategory,
   CardSignature,
@@ -22,6 +23,7 @@ import SimpleCardMultipleColumns from './docs/SimpleCardMultipleColumns.md'
 import SimpleArticle from './docs/SimpleArticle.md'
 import CardIcon from './docs/CardIcon.md'
 import CardShading from './docs/CardShading.md'
+import CardWithFooter from './docs/CardWithFooter.md'
 import BigCard from './docs/BigCard.md'
 import BigCardTag from './docs/BigCardTag.md'
 import CardImage from './docs/CardImage.md'
@@ -164,6 +166,39 @@ const CardShadingComponent = () => (
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </CardText>
           <CardReadMore iconName="it-arrow-right" text="Leggi di più" />
+        </CardBody>
+      </Card>
+      {/* end card */}
+    </div>
+  </div>
+)
+
+const CardWithFooterComponent = () => (
+  <div className="row">
+    <div className="col-12 col-lg-6">
+      {/* Start card */}
+      <Card space className="card-bg card-big no-after">
+        <CardBody>
+          <div className="head-tags">
+            <a className="card-tag" href="#">
+              Tag
+            </a>
+            <span className="data">10/10/2018</span>
+          </div>
+          <CardTitle tag="h5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor…
+          </CardTitle>
+          <CardText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </CardText>
+          <CardFooterCTA>
+            <CardSignature>di Federico De Paolis</CardSignature>
+            <Button outline color="primary">
+              Action
+            </Button>
+          </CardFooterCTA>
         </CardBody>
       </Card>
       {/* end card */}
@@ -372,6 +407,13 @@ storiesOf('Componenti/Cards', module)
       propTables: [Card],
       propTablesExclude: [Button]
     })(CardShadingComponent)
+  )
+  .add(
+    'Card with footer',
+    withInfo({
+      text: CardWithFooter,
+      propTables: [Card]
+    })(CardWithFooterComponent)
   )
   .add(
     'Big card',

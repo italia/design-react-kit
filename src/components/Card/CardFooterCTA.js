@@ -3,13 +3,14 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 const propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  children: PropTypes.node
 }
 
 const CardFooterCTA = props => {
-  const { className, ...attributes } = props
+  const { className, children } = props
   const classes = classNames(className, 'it-card-footer')
-  return <div className={classes} {...attributes} />
+  return <div className={classes}>{children}</div>
 }
 
 CardFooterCTA.propTypes = propTypes
