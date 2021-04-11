@@ -20,6 +20,8 @@ const propTypes = {
 
 const defaultProps = {}
 
+const BUTTON = 'button'
+
 export default class HeaderToggler extends PureComponent {
   static propTypes = propTypes
   static defaultProps = defaultProps
@@ -27,9 +29,9 @@ export default class HeaderToggler extends PureComponent {
   render() {
     const { className, tag, type, ...attributes } = this.props
     const { type: HeaderType } = this.context
-    const BUTTON = 'button'
     const defaultTag = HeaderType === SLIM ? 'a' : BUTTON
-    const defaultType = HeaderType === SLIM ? '' : BUTTON
+    const typeAttribute =
+      HeaderType === SLIM ? { role: BUTTON } : { type: type || BUTTON }
     const classes = classNames(
       {
         'it-opener d-lg-none': HeaderType === SLIM,
@@ -42,7 +44,7 @@ export default class HeaderToggler extends PureComponent {
         className={classes}
         {...attributes}
         tag={tag || defaultTag}
-        type={type || defaultType}
+        {...typeAttribute}
         href="#"
       />
     )
