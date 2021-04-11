@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
 import { withA11y } from '@storybook/addon-a11y'
 import { withInfo } from '@storybook/addon-info'
 import { withKnobs } from '@storybook/addon-knobs/react'
+import { action } from '@storybook/addon-actions'
 
 import { Form, FormGroup, Label, Input, FormText, Toggle } from '../../src'
 
@@ -56,20 +57,42 @@ import Validation from './docs/Validation/Validation.md'
 
 const InputTypesExamples = () => (
   <div>
-    <Input type="text" label="Campo di tipo testuale" id="exampleInputText" />
-    <Input type="email" label="Campo di tipo email" id="exampleInputEmail" />
+    <Input
+      type="text"
+      label="Campo di tipo testuale"
+      id="exampleInputText"
+      onFocus={action('focus')}
+      onBlur={action('blur')}
+    />
+    <Input
+      type="email"
+      label="Campo di tipo email"
+      id="exampleInputEmail"
+      onFocus={action('focus')}
+      onBlur={action('blur')}
+    />
     <Input
       type="number"
       label="Campo di tipo numerico"
       id="exampleInputNumber"
+      onFocus={action('focus')}
+      onBlur={action('blur')}
     />
-    <Input type="tel" label="Campo di tipo telefono" id="exampleInputTel" />
+    <Input
+      type="tel"
+      label="Campo di tipo telefono"
+      id="exampleInputTel"
+      onFocus={action('focus')}
+      onBlur={action('blur')}
+    />
     <Input
       type="time"
       label="Campo di tipo ora"
       id="exampleInputTime"
       min="9:00"
       max="18:00"
+      onFocus={action('focus')}
+      onBlur={action('blur')}
     />
   </div>
 )
@@ -209,14 +232,31 @@ const DisabilitatoComponent = () => (
   </section>
 )
 
-const FormExampleComponent = () => (
-  <div>
-    <Input label="Valid Input" valid />
-    <Input label="Invalid Input" invalid />
-    <Input value="Mario" label="First name" infoText="Validated!" valid />
-    <Input label="Username" infoText="Please choose a username." invalid />
-  </div>
-)
+const FormExampleComponent = () => {
+  const [value, setValue] = useState('Mario')
+  return (
+    <div>
+      <Input label="Valid Input" valid onChange={action('change')} />
+      <Input label="Invalid Input" invalid onChange={action('change')} />
+      <Input
+        value={value}
+        label="First name"
+        infoText="Validated!"
+        valid
+        onChange={e => {
+          setValue(e.target.value)
+          action('change')(e)
+        }}
+      />
+      <Input
+        label="Username"
+        infoText="Please choose a username."
+        invalid
+        onChange={action('change')}
+      />
+    </div>
+  )
+}
 
 storiesOf('Componenti/Form.Input', module)
   .addDecorator(withA11y)
