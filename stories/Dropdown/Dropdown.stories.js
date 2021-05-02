@@ -1,35 +1,183 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import {
-  Dropdown,
+  ButtonDropdown,
   DropdownMenu,
-  DropdownItem,
   DropdownToggle,
   LinkList,
   LinkListItem
 } from '../../src'
 
-import DropdownExample from './DropdownExample'
-import DropdownButtonExample from './DropdownButtonExample'
+const VarianteComponent = () => {
+  const [openFirst, toggleFirst] = useState(false)
+  const [openSecond, toggleSecond] = useState(false)
+  const [openThird, toggleThird] = useState(false)
 
-import Esempi from './docs/Esempi.md'
-import VarianteBottoni from './docs/VarianteBottoni.md'
-import Link from './docs/Link.md'
-
-const VarianteComponent = () => (
-  <section>
-    <DropdownButtonExample color="primary" />
-    <DropdownButtonExample color="secondary" />
-    <DropdownButtonExample color="danger" />
-  </section>
-)
+  return (
+    <section>
+      <ButtonDropdown
+        className="mr-3"
+        isOpen={openFirst}
+        toggle={() => toggleFirst(!openFirst)}>
+        <DropdownToggle color="primary" caret>
+          Apri dropdown
+        </DropdownToggle>
+        <DropdownMenu>
+          <LinkList>
+            <LinkListItem>Azione 1</LinkListItem>
+            <LinkListItem>Azione 2</LinkListItem>
+            <LinkListItem>Azione 3</LinkListItem>
+          </LinkList>
+        </DropdownMenu>
+      </ButtonDropdown>
+      <ButtonDropdown
+        className="mr-3"
+        isOpen={openSecond}
+        toggle={() => toggleSecond(!openSecond)}>
+        <DropdownToggle color="secondary" caret>
+          Apri dropdown
+        </DropdownToggle>
+        <DropdownMenu>
+          <LinkList>
+            <LinkListItem>Azione 1</LinkListItem>
+            <LinkListItem>Azione 2</LinkListItem>
+            <LinkListItem>Azione 3</LinkListItem>
+          </LinkList>
+        </DropdownMenu>
+      </ButtonDropdown>
+      <ButtonDropdown
+        className="mr-3"
+        isOpen={openThird}
+        toggle={() => toggleThird(!openThird)}>
+        <DropdownToggle color="danger" caret>
+          Apri dropdown
+        </DropdownToggle>
+        <DropdownMenu>
+          <LinkList>
+            <LinkListItem>Azione 1</LinkListItem>
+            <LinkListItem>Azione 2</LinkListItem>
+            <LinkListItem>Azione 3</LinkListItem>
+          </LinkList>
+        </DropdownMenu>
+      </ButtonDropdown>
+    </section>
+  )
+}
 
 export default {
   title: 'Componenti/Dropdown'
 }
 
-export const _Esempi = () => <DropdownExample />
+export const _Esempi = () => {
+  const [openFirst, toggleFirst] = useState(false)
+  const [openSecond, toggleSecond] = useState(false)
+  const [openThird, toggleThird] = useState(false)
+
+  return (
+    <section>
+      <ButtonDropdown
+        className="mr-3"
+        isOpen={openFirst}
+        toggle={() => toggleFirst(!openFirst)}>
+        <DropdownToggle color="primary" caret>
+          Apri dropdown
+        </DropdownToggle>
+        <DropdownMenu>
+          <LinkList>
+            <LinkListItem>Azione 1</LinkListItem>
+            <LinkListItem>Azione 2</LinkListItem>
+            <LinkListItem>Azione 3</LinkListItem>
+          </LinkList>
+        </DropdownMenu>
+      </ButtonDropdown>
+      <ButtonDropdown
+        className="mr-3"
+        isOpen={openSecond}
+        toggle={() => toggleSecond(!openSecond)}>
+        <DropdownToggle color="secondary" caret>
+          Apri dropdown
+        </DropdownToggle>
+        <DropdownMenu>
+          <LinkList>
+            <LinkListItem>Azione 1</LinkListItem>
+            <LinkListItem>Azione 2</LinkListItem>
+            <LinkListItem>Azione 3</LinkListItem>
+          </LinkList>
+        </DropdownMenu>
+      </ButtonDropdown>
+      <ButtonDropdown
+        className="mr-3"
+        isOpen={openThird}
+        toggle={() => toggleThird(!openThird)}>
+        <DropdownToggle color="danger" caret>
+          Apri dropdown
+        </DropdownToggle>
+        <DropdownMenu>
+          <LinkList>
+            <LinkListItem>Azione 1</LinkListItem>
+            <LinkListItem>Azione 2</LinkListItem>
+            <LinkListItem>Azione 3</LinkListItem>
+          </LinkList>
+        </DropdownMenu>
+      </ButtonDropdown>
+    </section>
+  )
+}
 
 export const _VarianteBottoni = VarianteComponent
 
-export const _Link = () => <DropdownExample tag="span" />
+export const _Link = () => {
+  const [openFirst, toggleFirst] = useState(false)
+  const [openSecond, toggleSecond] = useState(false)
+  const [openThird, toggleThird] = useState(false)
+
+  return (
+    <section>
+      <ButtonDropdown
+        className="mr-3"
+        isOpen={openFirst}
+        toggle={() => toggleFirst(!openFirst)}>
+        <DropdownToggle color="primary" caret tag="span">
+          Apri dropdown
+        </DropdownToggle>
+        <DropdownMenu>
+          <LinkList>
+            <LinkListItem>Azione 1</LinkListItem>
+            <LinkListItem>Azione 2</LinkListItem>
+            <LinkListItem>Azione 3</LinkListItem>
+          </LinkList>
+        </DropdownMenu>
+      </ButtonDropdown>
+      <ButtonDropdown
+        className="mr-3"
+        isOpen={openSecond}
+        toggle={() => toggleSecond(!openSecond)}>
+        <DropdownToggle color="secondary" caret tag="span">
+          Apri dropdown
+        </DropdownToggle>
+        <DropdownMenu>
+          <LinkList>
+            <LinkListItem>Azione 1</LinkListItem>
+            <LinkListItem>Azione 2</LinkListItem>
+            <LinkListItem>Azione 3</LinkListItem>
+          </LinkList>
+        </DropdownMenu>
+      </ButtonDropdown>
+      <ButtonDropdown
+        className="mr-3"
+        isOpen={openThird}
+        toggle={() => toggleThird(!openThird)}>
+        <DropdownToggle color="danger" caret tag="span">
+          Apri dropdown
+        </DropdownToggle>
+        <DropdownMenu>
+          <LinkList>
+            <LinkListItem>Azione 1</LinkListItem>
+            <LinkListItem>Azione 2</LinkListItem>
+            <LinkListItem>Azione 3</LinkListItem>
+          </LinkList>
+        </DropdownMenu>
+      </ButtonDropdown>
+    </section>
+  )
+}

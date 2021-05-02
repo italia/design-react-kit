@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 
 import { Popover, PopoverHeader, PopoverBody, Button } from '../../src'
 
@@ -8,14 +7,6 @@ import PopoverPositionExample from './PopoverPositionExample'
 import PopoverIconLink from './PopoverIconLink'
 import PopoverHover from './PopoverHover'
 import PopoverFocus from './PopoverFocus'
-
-import Esempi from './docs/Esempi.md'
-import QuattroDirezioni from './docs/QuattroDirezioni.md'
-import ElementiDisabilitati from './docs/ElementiDisabilitati.md'
-import EsempiInterattivi from './docs/EsempiInterattivi.md'
-import IconLink from './docs/IconLink.md'
-import Hover from './docs/Hover.md'
-import Focus from './docs/Focus.md'
 
 const ElementiDisabilitatiComponent = () => {
   const id = 'example'
@@ -38,52 +29,48 @@ const ElementiDisabilitatiComponent = () => {
   )
 }
 
-// Changed The Functional Component to a Class
-class EsempiInterattiviComponent extends React.Component {
-  constructor(props) {
-    super(props)
-    this.id = 'example'
-    // Avoid Jest complaints
-    this.target = () => document.getElementById(this.id)
-  }
+// const EsempiInterattiviComponent = () => {
+//   const [popoverOpen, setPopoverOpen] = useState(false)
+//   const id = 'example'
+//   // Avoid Jest complaints
+//   const target = () => document.getElementById(id)
+//   const togglePopover = () => {
+//     setPopoverOpen(!popoverOpen)
+//   }
 
-  // All a LifeCycle Method to manage the store State when components unrender.
-  componentWillUnmount() {
-    store.set({ isOpen: false })
-  }
+//   // All the proerties for Addon Knobs are placed back in the function
+//   const disabled = boolean('Disabilitato', false)
+//   const placements = ['top', 'bottom', 'left', 'right']
+//   const placement = select('Posizione', placements, placements[0])
+//   const title = text('Titolo', 'Titolo del popover')
+//   const body = text(
+//     'Body',
+//     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.'
+//   )
 
-  render() {
-    return (
-      <div style={{ padding: 250, textAlign: 'center' }}>
-        <Button
-          id={this.id}
-          color="primary"
-          disabled={this.props.disabled}
-          onClick={() => store.set({ isOpen: !store.get('isOpen') })}>
-          Popover {this.props.disabled ? 'Disabilitato' : ''}
-        </Button>
+//   return (
+//     <div
+//       className="d-flex  justify-content-center"
+//       style={{ paddingTop: '120px' }}>
+//       <Button
+//         id={id}
+//         color="primary"
+//         disabled={disabled}
+//         onClick={togglePopover}>
+//         Popover {disabled ? 'Disabilitato' : ''}
+//       </Button>
 
-        <State store={store}>
-          <Popover
-            placement={this.props.placement}
-            target={this.target}
-            toggle={() => store.set({ isOpen: !store.get('isOpen') })}
-            isOpen={store.get('isOpen')}>
-            <PopoverHeader>{this.props.title}</PopoverHeader>
-            <PopoverBody>{this.props.body}</PopoverBody>
-          </Popover>
-        </State>
-      </div>
-    )
-  }
-}
-
-EsempiInterattiviComponent.propTypes = {
-  disabled: PropTypes.bool,
-  placement: PropTypes.string,
-  title: PropTypes.string,
-  body: PropTypes.string
-}
+//       <Popover
+//         placement={placement}
+//         target={target}
+//         toggle={togglePopover}
+//         isOpen={popoverOpen}>
+//         <PopoverHeader>{title}</PopoverHeader>
+//         <PopoverBody>{body}</PopoverBody>
+//       </Popover>
+//     </div>
+//   )
+// }
 
 export default {
   title: 'Componenti/Popover'
@@ -121,6 +108,7 @@ _ElementiDisabilitati.story = {
   name: 'Elementi disabilitati'
 }
 
+// eslint-disable-next-line react/prop-types
 export const _EsempiInterattivi = ({ disabled, placement, title, text }) => {
   const [isOpen, toggle] = useState(false)
 

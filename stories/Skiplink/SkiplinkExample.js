@@ -1,32 +1,28 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import { Skiplink, SkiplinkItem } from '../../src'
 
-class SkiplinkExample extends React.Component {
-  constructor(props) {
-    super(props)
-    this.container = React.createRef()
-  }
+const SkiplinkExample = () => {
+  const containerRef = useRef(null)
 
-  componentDidMount() {
+  useEffect(() => {
     // We focus the container here since it is hosted inside Storybook's iframe
-    const container = this.container.current
-    container && container.focus()
-  }
+    if (containerRef.current) {
+      containerRef.current.focus()
+    }
+  }, [containerRef.current])
 
-  render() {
-    return (
-      <section tabIndex="-1" ref={this.container}>
-        <div id="#main" />
-        <div id="#footer" />
+  return (
+    <section tabIndex="-1" ref={containerRef}>
+      <div id="#main" />
+      <div id="#footer" />
 
-        <Skiplink>
-          <SkiplinkItem />
-          <SkiplinkItem href="#main">Skip to main content</SkiplinkItem>
-          <SkiplinkItem href="#footer">Skip to footer</SkiplinkItem>
-        </Skiplink>
-      </section>
-    )
-  }
+      <Skiplink>
+        <SkiplinkItem />
+        <SkiplinkItem href="#main">Skip to main content</SkiplinkItem>
+        <SkiplinkItem href="#footer">Skip to footer</SkiplinkItem>
+      </Skiplink>
+    </section>
+  )
 }
 
 export default SkiplinkExample

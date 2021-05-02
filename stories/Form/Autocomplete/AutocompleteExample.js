@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { components } from 'react-select'
 import './assets/css/autocomplete-styles.css'
 import { Icon } from '../../../src'
@@ -47,3 +47,45 @@ export const multiOptions = [
   { value: '19', label: "Valle d'Aosta" },
   { value: '20', label: 'Veneto' }
 ]
+
+export const AutocompleteExample = () => {
+  // "value" is used to show or propagate it externally
+  // eslint-disable-next-line no-unused-vars
+  const [value, setValue] = useState('')
+
+  const handleInputChange = newValue => {
+    const inputValue = newValue.replace(/\W/g, '')
+    setValue(inputValue)
+    return inputValue
+  }
+
+  return (
+    <div className="form-group">
+      <AsyncSelect
+        id="autocomplete-regioni"
+        components={{
+          DropdownIndicator,
+          Input,
+          IndicatorSeparator: null
+        }}
+        cacheOptions
+        loadOptions={(inputValue, callback) => {
+          setTimeout(() => {
+            callback(
+              multiOptions.filter(i =>
+                i.label.toLowerCase().includes(inputValue.toLowerCase())
+              )
+            )
+          }, 1000)
+        }}
+        defaultOptions
+        placeholder="Testo da cercare"
+        onInputChange={handleInputChange}
+        classNamePrefix="react-autocomplete"
+      />
+      <label htmlFor="autocomplete-regioni" className="sr-only">
+        Cerca nel sito
+      </label>
+    </div>
+  )
+}

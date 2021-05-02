@@ -2,8 +2,13 @@ import React from 'react'
 
 import { Nav, NavItem, NavLink, TabContent, TabPane } from '../../src'
 
-import TabExample from './TabExample'
-import TabButtonExample from './TabButtonExample'
+import {
+  TabExampleText,
+  TabExampleIcon,
+  TabExampleTextIcon,
+  TabExampleButton,
+  TabExampleButtonVertical
+} from './TabExample'
 
 import Esempi from './docs/Esempi.md'
 import Contenuto from './docs/Contenuto.md'

@@ -1,9 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { useState } from 'react'
+import { boolean, select } from '@storybook/addon-knobs/react'
 import {
   Button,
   Modal,
-  Label,
   FormGroup,
   Input,
   ModalHeader,
@@ -11,83 +10,74 @@ import {
   ModalFooter
 } from '../../src'
 
-class ModalExample extends React.Component {
-  state = {
-    modal: false,
-    username: ''
-  }
+const sizes = ['', 'lg', 'md']
 
-  openModal = name => {
-    this.setState({
-      modal: !this.state.modal,
-      username: name
-    })
-  }
+const ModalExampleDynamic = () => {
+  const [isOpen, toggleModal] = useState(false)
+  const [username, setUsername] = useState('')
 
-  toggle = () => {
-    this.setState({
-      modal: !this.state.modal
-    })
-  }
+  const centered = boolean('Centratura verticale', false)
+  const fade = boolean('Animazione', true)
+  const size = select('Dimensioni', sizes, sizes[0])
 
-  render() {
-    const { centered, fade } = this.props
-    const { username } = this.state
-
-    return (
+  return (
+    <div>
       <div>
-        <div>
-          {['Mario', 'Paola', 'Luca'].map(name => (
-            <Button
-              key={name}
-              color="primary"
-              onClick={() => this.openModal(name)}
-              className="mr-3">
-              Apri la modale per {name}
-            </Button>
-          ))}
-        </div>
-
-        <Modal
-          fade={fade}
-          size={this.state.size}
-          centered={centered}
-          isOpen={this.state.modal}
-          toggle={this.toggle}
-          className={this.props.className}>
-          <ModalHeader toggle={this.toggle}>
-            New message for {username}
-          </ModalHeader>
-          <ModalBody>
-            <form>
-              <FormGroup>
-                <Input type="text" id="recipient-name" value={username} />
-                <Label for="recipient-name">Destinatario:</Label>
-              </FormGroup>
-              <FormGroup>
-                <Input type="textarea" name="text" id="message-text" rows="3" />
-                <Label for="message-text">Messaggio:</Label>
-              </FormGroup>
-            </form>
-          </ModalBody>
-          <ModalFooter>
-            <Button color="secondary" onClick={this.toggle}>
-              Chiudi
-            </Button>
-            <Button color="primary" onClick={this.toggle}>
-              Salva modifiche
-            </Button>
-          </ModalFooter>
-        </Modal>
+        {['Mario', 'Paola', 'Luca'].map(name => (
+          <Button
+            key={name}
+            color="primary"
+            onClick={() => {
+              setUsername(name)
+              toggleModal(true)
+            }}
+            className="mr-3">
+            Apri la modale per {name}
+          </Button>
+        ))}
       </div>
-    )
-  }
+
+      <Modal
+        fade={fade}
+        size={size}
+        centered={centered}
+        isOpen={isOpen}
+        toggle={() => toggleModal(false)}>
+        <ModalHeader toggle={() => toggleModal(false)}>
+          New message for {username}
+        </ModalHeader>
+        <ModalBody>
+          <form>
+            <FormGroup>
+              <Input
+                type="text"
+                id="recipient-name"
+                value={username}
+                label="Destinatario:"
+              />
+            </FormGroup>
+            <FormGroup>
+              <Input
+                type="textarea"
+                name="text"
+                id="message-text"
+                rows="3"
+                label="Messaggio:"
+              />
+            </FormGroup>
+          </form>
+        </ModalBody>
+        <ModalFooter>
+          <Button color="secondary" onClick={() => toggleModal(false)}>
+            Chiudi
+          </Button>
+          <Button color="primary" onClick={() => toggleModal(false)}>
+            Salva modifiche
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  )
 }
 
-ModalExample.propTypes = {
-  centered: PropTypes.bool,
-  fade: PropTypes.bool,
-  className: PropTypes.string
-}
-
-export default ModalExample
+export default ModalExampleDynamic

@@ -545,9 +545,15 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù dark 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-info-circle"
+                  <path
+                    d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
               </a>
@@ -566,9 +572,15 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù dark 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-info-circle"
+                  <path
+                    d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
               </a>
@@ -587,9 +599,15 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù dark 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-info-circle"
+                  <path
+                    d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
               </a>
@@ -613,9 +631,15 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù dark 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-info-circle"
+                  <path
+                    d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
               </a>
@@ -635,9 +659,15 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù dark 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-info-circle"
+                  <path
+                    d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
               </a>
@@ -950,9 +980,15 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a destra 1`] =
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-info-circle"
+                  <path
+                    d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
               </a>
@@ -971,9 +1007,15 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a destra 1`] =
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-info-circle"
+                  <path
+                    d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
               </a>
@@ -992,9 +1034,15 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a destra 1`] =
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-info-circle"
+                  <path
+                    d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
               </a>
@@ -1077,9 +1125,15 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a sinistra 1`]
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-info-circle"
+                  <path
+                    d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
                 <span>
@@ -1098,9 +1152,15 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a sinistra 1`]
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-info-circle"
+                  <path
+                    d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
                 <span>
@@ -1119,9 +1179,15 @@ exports[`Storyshots Componenti/Dropdown.Dropdown menu Menù icona a sinistra 1`]
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-info-circle"
+                  <path
+                    d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
                   />
                 </svg>
                 <span>

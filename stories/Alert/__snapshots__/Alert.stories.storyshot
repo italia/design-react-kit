@@ -20,26 +20,37 @@ exports[`Storyshots Componenti/Alert Chiusura Controllata 1`] = `
       }
     }
   >
-    <div
-      className="alert alert-warning alert-dismissible fade"
-      role="alert"
-    >
+    <div>
+      <div
+        className="alert alert-warning alert-dismissible fade"
+        role="alert"
+      >
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+          >
+            ×
+          </span>
+        </button>
+        <strong>
+          Attenzione
+        </strong>
+         Alcuni campi inseriti sono da controllare.
+      </div>
       <button
-        aria-label="Close"
-        className="close"
+        aria-label={null}
+        className="btn btn-secondary disabled"
+        disabled={true}
         onClick={[Function]}
         type="button"
       >
-        <span
-          aria-hidden="true"
-        >
-          ×
-        </span>
+        Mostra Alert
       </button>
-      <strong>
-        Attenzione
-      </strong>
-       Alcuni campi inseriti sono da controllare.
     </div>
   </div>
   <button

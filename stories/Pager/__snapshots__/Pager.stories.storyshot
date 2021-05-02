@@ -46,9 +46,11 @@ exports[`Storyshots Componenti/Pager Allineamento 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-chevron-left"
+                  <path
+                    d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
                   />
                 </svg>
               </span>
@@ -108,9 +110,11 @@ exports[`Storyshots Componenti/Pager Allineamento 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-chevron-right"
+                  <path
+                    d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                   />
                 </svg>
               </span>
@@ -148,9 +152,11 @@ exports[`Storyshots Componenti/Pager Allineamento 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-chevron-left"
+                  <path
+                    d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
                   />
                 </svg>
               </span>
@@ -210,9 +216,11 @@ exports[`Storyshots Componenti/Pager Allineamento 1`] = `
                       "ariaHidden": true,
                     }
                   }
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <use
-                    href="sprite.svg#it-chevron-right"
+                  <path
+                    d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                   />
                 </svg>
               </span>
@@ -298,9 +306,11 @@ exports[`Storyshots Componenti/Pager Esempi 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-left"
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
                 />
               </svg>
             </span>
@@ -359,9 +369,11 @@ exports[`Storyshots Componenti/Pager Esempi 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-right"
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                 />
               </svg>
             </span>
@@ -446,9 +458,11 @@ exports[`Storyshots Componenti/Pager Esempi interattivi 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-left"
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
                 />
               </svg>
             </span>
@@ -487,9 +501,11 @@ exports[`Storyshots Componenti/Pager Esempi interattivi 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-right"
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                 />
               </svg>
             </span>
@@ -574,9 +590,11 @@ exports[`Storyshots Componenti/Pager Responsive 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-left"
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
                 />
               </svg>
             </span>
@@ -661,9 +679,11 @@ exports[`Storyshots Componenti/Pager Responsive 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-right"
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                 />
               </svg>
             </span>
@@ -748,9 +768,11 @@ exports[`Storyshots Componenti/Pager Stato disabilitato e attivo 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-left"
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
                 />
               </svg>
             </span>
@@ -810,9 +832,11 @@ exports[`Storyshots Componenti/Pager Stato disabilitato e attivo 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-right"
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                 />
               </svg>
             </span>
@@ -897,9 +921,11 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-left"
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
                 />
               </svg>
             </span>
@@ -1017,9 +1043,11 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-right"
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                 />
               </svg>
             </span>
@@ -1311,9 +1339,11 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive More 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-left"
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
                 />
               </svg>
             </span>
@@ -1431,9 +1461,11 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive More 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-right"
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                 />
               </svg>
             </span>
@@ -1518,9 +1550,11 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-left"
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
                 />
               </svg>
             </span>
@@ -1638,9 +1672,11 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-right"
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                 />
               </svg>
             </span>
@@ -1680,6 +1716,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
               <li>
                 <a
                   className="active list-item"
+                  href="#"
                 >
                   pag. 10
                 </a>
@@ -1687,6 +1724,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
               <li>
                 <a
                   className="list-item"
+                  href="#"
                 >
                   pag. 20
                 </a>
@@ -1694,6 +1732,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
               <li>
                 <a
                   className="list-item"
+                  href="#"
                 >
                   pag. 30
                 </a>
@@ -1701,6 +1740,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
               <li>
                 <a
                   className="list-item"
+                  href="#"
                 >
                   pag. 40
                 </a>
@@ -1708,6 +1748,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
               <li>
                 <a
                   className="list-item"
+                  href="#"
                 >
                   pag. 50
                 </a>
@@ -1789,9 +1830,11 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Simple mode 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-left"
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
                 />
               </svg>
             </span>
@@ -1847,9 +1890,11 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Simple mode 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-right"
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                 />
               </svg>
             </span>
@@ -1934,9 +1979,11 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-left"
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
                 />
               </svg>
             </span>
@@ -2054,9 +2101,11 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
                     "ariaHidden": true,
                   }
                 }
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <use
-                  href="sprite.svg#it-chevron-right"
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
                 />
               </svg>
             </span>

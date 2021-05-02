@@ -59,12 +59,16 @@ class Input extends React.Component {
   }
 
   toggleFocusLabel = () => {
+    // eslint-disable-next-line react/prop-types
+    this.props.onFocus && this.props.onFocus()
     this.setState({
       isFocused: true
     })
   }
 
   toggleBlurLabel = e => {
+    // eslint-disable-next-line react/prop-types
+    this.props.onBlur && this.props.onBlur()
     if (e.target.value === '') {
       this.setState({
         isFocused: !this.state.isFocused
@@ -96,7 +100,7 @@ class Input extends React.Component {
       wrapperClass: originalWrapperClass,
       ...attributes
     } = this.props
-    let { bsSize, valid, invalid } = this.props
+    let { bsSize, valid, invalid, ...rest } = attributes
 
     const Tag = getTag({ tag, plaintext, staticInput, type })
     const formControlClass = getFormControlClass(
@@ -118,20 +122,20 @@ class Input extends React.Component {
       valid = state === 'success'
     }
 
-    if (attributes.size && !isNumber(attributes.size)) {
+    if (rest.size && !isNumber(rest.size)) {
       warnOnce(
         'Please use the prop "bsSize" instead of the "size" to bootstrap\'s input sizing.'
       )
-      bsSize = attributes.size
-      delete attributes.size
+      bsSize = rest.size
+      delete rest.size
     }
 
     if (Tag === 'input' || typeof tag !== 'string') {
-      attributes.type = type
+      rest.type = type
     }
 
     if (
-      attributes.children &&
+      rest.children &&
       !(
         plaintext ||
         staticInput ||
@@ -143,10 +147,10 @@ class Input extends React.Component {
       warnOnce(
         `Input with a type of "${type}" cannot have children. Please use "value"/"defaultValue" instead.`
       )
-      delete attributes.children
+      delete rest.children
     }
 
-    const inputPassword = attributes.type === 'password'
+    const inputPassword = rest.type === 'password'
 
     // Styling
     const {
@@ -177,8 +181,8 @@ class Input extends React.Component {
     // set of attributes always shared by the Input components
     const sharedAttributes = {
       id,
-      onFocus: this.toggleFocusLabel,
-      onBlur: this.toggleBlurLabel,
+      onFocus: e => this.toggleFocusLabel(e),
+      onBlur: e => this.toggleBlurLabel(e),
       value: value,
       ref: innerRef
     }
@@ -197,7 +201,7 @@ class Input extends React.Component {
       return (
         <InputContainer {...containerProps}>
           <Tag
-            {...attributes}
+            {...rest}
             {...sharedAttributes}
             className={inputClasses}
             placeholder={placeholder}
@@ -210,7 +214,7 @@ class Input extends React.Component {
       return (
         <InputContainer {...containerProps}>
           <Tag
-            {...attributes}
+            {...rest}
             {...sharedAttributes}
             type={this.state.hidden ? 'password' : 'text'}
             className={inputClasses}
@@ -231,7 +235,7 @@ class Input extends React.Component {
       return (
         <InputContainer {...containerProps}>
           <Tag
-            {...attributes}
+            {...rest}
             {...sharedAttributes}
             className={inputClasses}
             readOnly
@@ -242,14 +246,14 @@ class Input extends React.Component {
     if (label || infoText) {
       return (
         <InputContainer {...containerProps}>
-          <Tag {...attributes} {...sharedAttributes} className={inputClasses} />
+          <Tag {...rest} {...sharedAttributes} className={inputClasses} />
         </InputContainer>
       )
     }
 
     return (
       <Tag
-        {...attributes}
+        {...rest}
         ref={innerRef}
         className={inputClasses}
         {...sharedAttributes}

@@ -1,8 +1,6 @@
 import React from 'react'
 
-import icons from './icons.json'
-
-import { Icon, Row, Col } from '../../src'
+import { Icon, Row, Col, icons } from '../../src'
 
 export default {
   title: 'Componenti/Icon'

@@ -152,40 +152,40 @@ const ResponsiveComponent = () => (
   </Pager>
 )
 
-const EsempiInterattiviComponent = () => {
-  const active = boolean('Attivo', false)
-  const disabled = boolean('Disabilitato', false)
-  const sizes = ['sm', '', 'lg']
-  const size = select('Dimensioni', sizes, sizes[0])
+// const EsempiInterattiviComponent = () => {
+//   const active = boolean('Attivo', false)
+//   const disabled = boolean('Disabilitato', false)
+//   const sizes = ['sm', '', 'lg']
+//   const size = select('Dimensioni', sizes, sizes[0])
 
-  let current = {}
-  if (active) {
-    current = {
-      'aria-current': 'page'
-    }
-  }
-  return (
-    <Pager size={size}>
-      <PagerList>
-        <PagerItem disabled={disabled}>
-          <PagerLink {...current} previous href="#">
-            <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
-          </PagerLink>
-        </PagerItem>
-        <PagerItem disabled={disabled}>
-          <PagerLink {...current} href="#">
-            1
-          </PagerLink>
-        </PagerItem>
-        <PagerItem disabled={disabled}>
-          <PagerLink {...current} next href="#">
-            <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
-          </PagerLink>
-        </PagerItem>
-      </PagerList>
-    </Pager>
-  )
-}
+//   let current = {}
+//   if (active) {
+//     current = {
+//       'aria-current': 'page'
+//     }
+//   }
+//   return (
+//     <Pager size={size}>
+//       <PagerList>
+//         <PagerItem disabled={disabled}>
+//           <PagerLink {...current} previous href="#">
+//             <Icon icon="it-chevron-left" style={{ ariaHidden: true }} />
+//           </PagerLink>
+//         </PagerItem>
+//         <PagerItem disabled={disabled}>
+//           <PagerLink {...current} href="#">
+//             1
+//           </PagerLink>
+//         </PagerItem>
+//         <PagerItem disabled={disabled}>
+//           <PagerLink {...current} next href="#">
+//             <Icon icon="it-chevron-right" style={{ ariaHidden: true }} />
+//           </PagerLink>
+//         </PagerItem>
+//       </PagerList>
+//     </Pager>
+//   )
+// }
 
 export default {
   title: 'Componenti/Pager',
@@ -207,8 +207,8 @@ export const _Allineamento = AllineamentoComponent
 
 export const _Responsive = ResponsiveComponent
 
-export const _EsempiInterattivi = EsempiInterattiviComponent
+// export const _EsempiInterattivi = EsempiInterattiviComponent
 
-_EsempiInterattivi.story = {
-  name: 'Esempi interattivi'
-}
+// _EsempiInterattivi.story = {
+//   name: 'Esempi interattivi'
+// }

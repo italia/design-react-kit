@@ -2,7 +2,13 @@ import React from 'react'
 
 import { ModalHeader, ModalBody, ModalFooter, Button } from '../../src'
 
-import ModalExample from './ModalExample'
+import {
+  ModalExampleClassic,
+  ModalExampleCentered,
+  ModalExampleLong,
+  ModalExampleNoAnimation,
+  ModalExampleSizing
+} from './ModalExample'
 import ModalTooltipExample from './ModalTooltipExample'
 import ModalGridExample from './ModalGridExample'
 import ModalDynamicExample from './ModalDynamicExample'

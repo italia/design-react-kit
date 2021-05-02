@@ -24,12 +24,13 @@ const Collapse = ({
   ...attributes
 }) => {
   if (navbar && header) {
-    const classes = classNames(className, 'navbar-collapsable', {
+    const classes = classNames(className, 'navbar-collapse', {
       expanded: isOpen
     })
     return (
       <CollapseBase
         className={classes}
+        cssModule={{ 'navbar-collapse': 'navbar-collapsable' }}
         navbar={navbar}
         style={{ display: isOpen ? 'block' : 'none' }}
         {...attributes}>
@@ -53,6 +54,7 @@ const Collapse = ({
   return (
     <CollapseBase
       className={classes}
+      cssModule={{ 'navbar-collapse': 'navbar-collapsable' }}
       {...attributes}
       navbar={navbar}
       isOpen={isOpen}>
