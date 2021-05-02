@@ -9,6 +9,7 @@ import {
   ModalExampleNoAnimation,
   ModalExampleSizing
 } from './ModalExample'
+
 import ModalTooltipExample from './ModalTooltipExample'
 import ModalGridExample from './ModalGridExample'
 import ModalDynamicExample from './ModalDynamicExample'
@@ -45,15 +46,15 @@ BottoneDiChiusura.story = {
   name: 'Bottone di chiusura'
 }
 
-export const _Demo = () => <ModalExample />
+export const _Demo = () => <ModalExampleClassic />
 
-export const ScrollDiContenutiLunghi = () => <ModalExample long />
+export const ScrollDiContenutiLunghi = () => <ModalExampleLong />
 
 ScrollDiContenutiLunghi.story = {
   name: 'Scroll di contenuti lunghi'
 }
 
-export const _CentraturaVerticale = () => <ModalExample centered />
+export const _CentraturaVerticale = () => <ModalExampleCentered />
 
 _CentraturaVerticale.story = {
   name: 'Centratura verticale'
@@ -77,10 +78,10 @@ ContenutoDellaModaleVariabile.story = {
   name: 'Contenuto della modale variabile'
 }
 
-export const RimuovereLanimazione = () => <ModalExample fade={false} />
+export const RimuovereLanimazione = () => <ModalExampleNoAnimation />
 
 RimuovereLanimazione.story = {
   name: 'Rimuovere l’animazione'
 }
 
-export const _Dimensioni = () => <ModalExample sizing />
+export const _Dimensioni = () => <ModalExampleSizing />

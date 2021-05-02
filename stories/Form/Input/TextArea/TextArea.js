@@ -1,55 +1,80 @@
-import React, { useState } from 'react'
-import { Input } from '../../../../src'
+import React from 'react'
+import PropTypes from 'prop-types'
 
-export const TextAreaClassic = () => {
-  const [isFocused, setFocus] = useState(false)
-  const toggleFocusLabel = () => setFocus(true)
-  const toggleBlurLabel = e => {
+const propTypes = {
+  rows: PropTypes.number,
+  cols: PropTypes.number,
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  readOnly: PropTypes.bool
+}
+
+class TextArea extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      isFocused: false
+    }
+  }
+
+  toggleFocusLabel = () => {
+    this.setState({
+      isFocused: true
+    })
+  }
+
+  toggleBlurLabel = e => {
     if (e.target.value === '') {
-      setFocus({
-        isFocused: !isFocused
+      this.setState({
+        isFocused: !this.state.isFocused
       })
     }
   }
 
-  return (
-    <div className="form-group">
-      <Input
-        type="textarea"
-        className={isFocused ? 'focus--mouse' : ''}
-        onFocus={toggleFocusLabel}
-        onBlur={toggleBlurLabel}
-        id="exampleFormControlTextarea1"
-        rows="3"
-        label="Esempio di area di testo"
-      />
-    </div>
-  )
-}
+  render() {
+    const { label, placeholder, ...attributes } = this.props
 
-export const TextAreaPlaceholder = () => {
-  const [isFocused, setFocus] = useState(false)
-  const toggleFocusLabel = () => setFocus(true)
-  const toggleBlurLabel = e => {
-    if (e.target.value === '') {
-      setFocus({
-        isFocused: !isFocused
-      })
+    if (placeholder) {
+      return (
+        <div className="form-group">
+          <textarea
+            {...attributes}
+            className={this.state.isFocused ? 'focus--mouse' : ''}
+            onFocus={this.toggleFocusLabel}
+            onBlur={e => this.toggleBlurLabel(e)}
+            id="exampleFormControlTextarea1"
+            rows={this.props.rows}
+            cols={this.props.cols}
+            placeholder={this.props.placeholder}
+          />
+          <label htmlFor="exampleFormControlTextarea1" className="active">
+            {this.props.label}
+          </label>
+        </div>
+      )
     }
-  }
 
-  return (
-    <div className="form-group">
-      <Input
-        type="textarea"
-        className={isFocused ? 'focus--mouse' : ''}
-        onFocus={toggleFocusLabel}
-        onBlur={toggleBlurLabel}
-        id="exampleFormControlTextarea1"
-        rows="3"
-        placeholder="Testo di esempio"
-        label="Esempio di area di testo"
-      />
-    </div>
-  )
+    return (
+      <div className="form-group">
+        <textarea
+          {...attributes}
+          className={this.state.isFocused ? 'focus--mouse' : ''}
+          onFocus={this.toggleFocusLabel}
+          onBlur={e => this.toggleBlurLabel(e)}
+          id="exampleFormControlTextarea1"
+          rows={this.props.rows}
+          cols={this.props.cols}
+          placeholder={this.props.placeholder}
+        />
+        <label
+          htmlFor="exampleFormControlTextarea1"
+          className={this.state.isFocused ? 'active' : ''}>
+          {this.props.label}
+        </label>
+      </div>
+    )
+  }
 }
+export default TextArea
+
+TextArea.propTypes = propTypes
