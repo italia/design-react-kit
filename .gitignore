@@ -1,10 +1,5 @@
-# Dependencies
+*.log
+.DS_Store
 node_modules
-
-# Outputs
-storybook-static
-dist/
-
-
-# Logs
-npm-debug.log
+.cache
+dist
