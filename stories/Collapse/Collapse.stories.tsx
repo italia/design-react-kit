@@ -1,22 +1,30 @@
-import React, {useState} from 'react';
-import { Accordion, AccordionHeader, AccordionBody, Button, Collapse, Card, CardBody } from '../../src'
+import React, { useState } from 'react';
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+  Button,
+  Collapse,
+  Card,
+  CardBody
+} from '../../src';
 
 export default {
   title: 'Componenti/Collapse'
-}
+};
 
 export const Esempi = () => {
-  const [collapse, setCollapse] = useState(false)
+  const [collapse, setCollapse] = useState(false);
 
   const toggle = () => {
-    setCollapse(!collapse)
-  }
+    setCollapse(!collapse);
+  };
   return (
     <div>
-      <Button color="primary" onClick={toggle}>
+      <Button color='primary' onClick={toggle}>
         Link with href
       </Button>{' '}
-      <Button color="primary" onClick={toggle}>
+      <Button color='primary' onClick={toggle}>
         Button with data-target
       </Button>
       <Collapse isOpen={collapse}>
@@ -29,18 +37,19 @@ export const Esempi = () => {
         </Card>
       </Collapse>
     </div>
-  )
-}
+  );
+};
 
 export const GruppiDiElementiRichiudibili = () => {
-  const [collapseOpen1, setCollapseOpen1] = useState(true)
-  const [collapseOpen2, setCollapseOpen2] = useState(false)
-  const [collapseOpen3, setCollapseOpen3] = useState(false)
+  const [collapseOpen1, setCollapseOpen1] = useState(true);
+  const [collapseOpen2, setCollapseOpen2] = useState(false);
+  const [collapseOpen3, setCollapseOpen3] = useState(false);
   return (
     <Accordion>
       <AccordionHeader
         active={collapseOpen1}
-        onToggle={() => setCollapseOpen1(!collapseOpen1)}>
+        onToggle={() => setCollapseOpen1(!collapseOpen1)}
+      >
         Collapsible Group Item #1
       </AccordionHeader>
       <AccordionBody active={collapseOpen1}>
@@ -51,7 +60,8 @@ export const GruppiDiElementiRichiudibili = () => {
 
       <AccordionHeader
         active={collapseOpen2}
-        onToggle={() => setCollapseOpen2(!collapseOpen2)}>
+        onToggle={() => setCollapseOpen2(!collapseOpen2)}
+      >
         Collapsible Group Item #2
       </AccordionHeader>
       <AccordionBody active={collapseOpen2}>
@@ -62,7 +72,8 @@ export const GruppiDiElementiRichiudibili = () => {
 
       <AccordionHeader
         active={collapseOpen3}
-        onToggle={() => setCollapseOpen3(!collapseOpen3)}>
+        onToggle={() => setCollapseOpen3(!collapseOpen3)}
+      >
         Collapsible Group Item #3
       </AccordionHeader>
       <AccordionBody active={collapseOpen3}>
@@ -72,22 +83,23 @@ export const GruppiDiElementiRichiudibili = () => {
         anderson cred nesciunt sapiente ea proident.
       </AccordionBody>
     </Accordion>
-  )
-}
+  );
+};
 
 GruppiDiElementiRichiudibili.story = {
   name: 'Gruppi di elementi richiudibili'
-}
+};
 
 export const _Accordion = () => {
-  const [collapseOpen1, setCollapseOpen1] = useState(true)
-  const [collapseOpen2, setCollapseOpen2] = useState(false)
-  const [collapseOpen3, setCollapseOpen3] = useState(false)
+  const [collapseOpen1, setCollapseOpen1] = useState(true);
+  const [collapseOpen2, setCollapseOpen2] = useState(false);
+  const [collapseOpen3, setCollapseOpen3] = useState(false);
   return (
     <Accordion>
       <AccordionHeader
         active={collapseOpen1}
-        onToggle={() => setCollapseOpen1(!collapseOpen1)}>
+        onToggle={() => setCollapseOpen1(!collapseOpen1)}
+      >
         Accordion Group Item #1
       </AccordionHeader>
       <AccordionBody active={collapseOpen1}>
@@ -98,7 +110,8 @@ export const _Accordion = () => {
 
       <AccordionHeader
         active={collapseOpen2}
-        onToggle={() => setCollapseOpen2(!collapseOpen2)}>
+        onToggle={() => setCollapseOpen2(!collapseOpen2)}
+      >
         Accordion Group Item #2
       </AccordionHeader>
       <AccordionBody active={collapseOpen2}>
@@ -109,7 +122,8 @@ export const _Accordion = () => {
 
       <AccordionHeader
         active={collapseOpen3}
-        onToggle={() => setCollapseOpen3(!collapseOpen3)}>
+        onToggle={() => setCollapseOpen3(!collapseOpen3)}
+      >
         Accordion Group Item #3
       </AccordionHeader>
       <AccordionBody active={collapseOpen3}>
@@ -119,28 +133,30 @@ export const _Accordion = () => {
         anderson cred nesciunt sapiente ea proident.
       </AccordionBody>
     </Accordion>
-  )
-}
+  );
+};
 
 export const CollapseEAccordionInnestati = () => {
-  const [collapseOpen1, setCollapseOpen1] = useState(true)
-  const [collapseOpen2, setCollapseOpen2] = useState(false)
-  const [collapseOpen3, setCollapseOpen3] = useState(false)
-  const [nestedCollapseOpen1, setNestedCollapseOpen1] = useState(true)
-  const [nestedCollapseOpen2, setNestedCollapseOpen2] = useState(false)
-  const [nestedCollapseOpen3, setNestedCollapseOpen3] = useState(false)
+  const [collapseOpen1, setCollapseOpen1] = useState(true);
+  const [collapseOpen2, setCollapseOpen2] = useState(false);
+  const [collapseOpen3, setCollapseOpen3] = useState(false);
+  const [nestedCollapseOpen1, setNestedCollapseOpen1] = useState(true);
+  const [nestedCollapseOpen2, setNestedCollapseOpen2] = useState(false);
+  const [nestedCollapseOpen3, setNestedCollapseOpen3] = useState(false);
   return (
     <Accordion>
       <AccordionHeader
         active={collapseOpen1}
-        onToggle={() => setCollapseOpen1(!collapseOpen1)}>
+        onToggle={() => setCollapseOpen1(!collapseOpen1)}
+      >
         Collapse header #1
       </AccordionHeader>
       <AccordionBody active={collapseOpen1}>
         <Accordion>
           <AccordionHeader
             active={nestedCollapseOpen1}
-            onToggle={() => setNestedCollapseOpen1(!nestedCollapseOpen1)}>
+            onToggle={() => setNestedCollapseOpen1(!nestedCollapseOpen1)}
+          >
             Nested panel header #1
           </AccordionHeader>
           <AccordionBody active={nestedCollapseOpen1}>
@@ -151,7 +167,8 @@ export const CollapseEAccordionInnestati = () => {
 
           <AccordionHeader
             active={nestedCollapseOpen2}
-            onToggle={() => setNestedCollapseOpen2(!nestedCollapseOpen2)}>
+            onToggle={() => setNestedCollapseOpen2(!nestedCollapseOpen2)}
+          >
             Nested panel header #2
           </AccordionHeader>
           <AccordionBody active={nestedCollapseOpen2}>
@@ -162,7 +179,8 @@ export const CollapseEAccordionInnestati = () => {
 
           <AccordionHeader
             active={nestedCollapseOpen3}
-            onToggle={() => setNestedCollapseOpen3(!nestedCollapseOpen3)}>
+            onToggle={() => setNestedCollapseOpen3(!nestedCollapseOpen3)}
+          >
             Nested panel header #3
           </AccordionHeader>
           <AccordionBody active={nestedCollapseOpen3}>
@@ -176,7 +194,8 @@ export const CollapseEAccordionInnestati = () => {
 
       <AccordionHeader
         active={collapseOpen2}
-        onToggle={() => setCollapseOpen2(!collapseOpen2)}>
+        onToggle={() => setCollapseOpen2(!collapseOpen2)}
+      >
         Collapse header #2
       </AccordionHeader>
       <AccordionBody active={collapseOpen2}>
@@ -187,7 +206,8 @@ export const CollapseEAccordionInnestati = () => {
 
       <AccordionHeader
         active={collapseOpen3}
-        onToggle={() => setCollapseOpen3(!collapseOpen3)}>
+        onToggle={() => setCollapseOpen3(!collapseOpen3)}
+      >
         Collapse header #3
       </AccordionHeader>
       <AccordionBody active={collapseOpen3}>
@@ -197,9 +217,9 @@ export const CollapseEAccordionInnestati = () => {
         anderson cred nesciunt sapiente ea proident.
       </AccordionBody>
     </Accordion>
-  )
-}
+  );
+};
 
 CollapseEAccordionInnestati.story = {
   name: 'Collapse e Accordion innestati'
-}
+};

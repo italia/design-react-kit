@@ -1,27 +1,28 @@
-import React, { useState } from 'react'
-import { Collapse, LinkList, LinkListItem, Sidebar, Icon } from '../../src'
+import React, { useState } from 'react';
+import { Collapse, LinkList, LinkListItem, Sidebar, Icon } from '../../src';
 
 const SidebarCollapseExample = () => {
-  const [collapseOpen1, toggleCollapse1] = useState(false)
-  const [collapseOpen2, toggleCollapse2] = useState(false)
-  const [collapseOpen3, toggleCollapse3] = useState(false)
+  const [collapseOpen1, toggleCollapse1] = useState(false);
+  const [collapseOpen2, toggleCollapse2] = useState(false);
+  const [collapseOpen3, toggleCollapse3] = useState(false);
 
   return (
     <Sidebar left>
       <LinkList>
         <LinkListItem
-          size="medium"
-          className="right-icon"
-          onClick={e => {
-            e.preventDefault()
-            toggleCollapse1(!collapseOpen1)
+          size='medium'
+          className='right-icon'
+          onClick={(e) => {
+            e.preventDefault();
+            toggleCollapse1(!collapseOpen1);
           }}
-          aria-expanded={collapseOpen1}>
+          aria-expanded={collapseOpen1}
+        >
           <span>Link list 1 </span>
           <Icon
-            className="right"
-            icon="it-expand"
-            color="primary"
+            className='right'
+            icon='it-expand'
+            color='primary'
             aria-hidden
           />
         </LinkListItem>
@@ -39,18 +40,19 @@ const SidebarCollapseExample = () => {
           </LinkList>
         </Collapse>
         <LinkListItem
-          size="medium"
-          className="right-icon"
-          onClick={e => {
-            e.preventDefault()
-            toggleCollapse2(!collapseOpen2)
+          size='medium'
+          className='right-icon'
+          onClick={(e) => {
+            e.preventDefault();
+            toggleCollapse2(!collapseOpen2);
           }}
-          aria-expanded={collapseOpen2}>
+          aria-expanded={collapseOpen2}
+        >
           <span>Link list 2 </span>
           <Icon
-            className="right"
-            icon="it-expand"
-            color="primary"
+            className='right'
+            icon='it-expand'
+            color='primary'
             aria-hidden
           />
         </LinkListItem>
@@ -68,18 +70,19 @@ const SidebarCollapseExample = () => {
           </LinkList>
         </Collapse>
         <LinkListItem
-          size="medium"
-          className="right-icon"
-          onClick={e => {
-            e.preventDefault()
-            toggleCollapse3(!collapseOpen3)
+          size='medium'
+          className='right-icon'
+          onClick={(e) => {
+            e.preventDefault();
+            toggleCollapse3(!collapseOpen3);
           }}
-          aria-expanded={collapseOpen3}>
+          aria-expanded={collapseOpen3}
+        >
           <span>Link list 3 </span>
           <Icon
-            className="right"
-            icon="it-expand"
-            color="primary"
+            className='right'
+            icon='it-expand'
+            color='primary'
             aria-hidden
           />
         </LinkListItem>
@@ -108,7 +111,7 @@ const SidebarCollapseExample = () => {
         </LinkListItem>
       </LinkList>
     </Sidebar>
-  )
-}
+  );
+};
 
-export default SidebarCollapseExample
+export default SidebarCollapseExample;

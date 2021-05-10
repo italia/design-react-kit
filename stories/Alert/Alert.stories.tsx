@@ -3,74 +3,74 @@ import { Meta, Story } from '@storybook/react';
 import { Alert, AlertProps } from '../../src';
 
 const meta: Meta = {
-    title: 'Componenti/Alert',
-    component: Alert,
+  title: 'Componenti/Alert',
+  component: Alert
 };
 
 export default meta;
 
 export const _Esempi: Story<AlertProps> = () => (
-    <div>
-        <Alert color="info">
-            Questo è un alert di tipo <b>info</b>!
+  <div>
+    <Alert color='info'>
+      Questo è un alert di tipo <b>info</b>!
     </Alert>
-        <Alert color="success">
-            Questo è un alert di <b>success</b>!
+    <Alert color='success'>
+      Questo è un alert di <b>success</b>!
     </Alert>
-        <Alert color="danger">
-            Questo è un alert di <b>danger</b>!
+    <Alert color='danger'>
+      Questo è un alert di <b>danger</b>!
     </Alert>
-        <Alert color="warning">
-            Questo è un alert di <b>warning</b>!
+    <Alert color='warning'>
+      Questo è un alert di <b>warning</b>!
     </Alert>
-    </div>
-)
+  </div>
+);
 _Esempi.args = {};
 
 export const _EsempiInterattivi: Story<AlertProps> = ({ ...args }) => (
-    <Alert {...args}>
-        Questo è un alert di <b>{args.color}</b>!
-    </Alert>
-)
+  <Alert {...args}>
+    Questo è un alert di <b>{args.color}</b>!
+  </Alert>
+);
 _EsempiInterattivi.args = {
-    color: 'info',
-    isOpen: true
-}
+  color: 'info',
+  isOpen: true
+};
 _EsempiInterattivi.argTypes = {
-    color: {
-        control: {
-            type: 'select',
-            options: ['info', 'success', 'danger', 'warning']
-        }
+  color: {
+    control: {
+      type: 'select',
+      options: ['info', 'success', 'danger', 'warning']
     }
-}
+  }
+};
 
 export const _LinkEvidenziato: Story<AlertProps> = () => (
-    <Alert color="danger">
-        Questo è un alert con un esempio di{' '}
-        <a href="#" className="alert-link">
-            link
+  <Alert color='danger'>
+    Questo è un alert con un esempio di{' '}
+    <a href='#' className='alert-link'>
+      link
     </a>{' '}
     evidenziato.
-    </Alert>
-)
-_LinkEvidenziato.args={};
+  </Alert>
+);
+_LinkEvidenziato.args = {};
 
 export const _ContenutoAggiuntivo: Story<AlertProps> = () => (
-    <Alert>
-        <h4 className="alert-heading">Avviso di successo!</h4>
-        <p>
-            Stai leggendo questo importante messaggio di avviso di successo. Questo
-            testo di esempio sarà più a lungo in modo da poter vedere come funzioni la
-            spaziatura all&#39;interno di un avviso con questo tipo di contenuto.
+  <Alert>
+    <h4 className='alert-heading'>Avviso di successo!</h4>
+    <p>
+      Stai leggendo questo importante messaggio di avviso di successo. Questo
+      testo di esempio sarà più a lungo in modo da poter vedere come funzioni la
+      spaziatura all&#39;interno di un avviso con questo tipo di contenuto.
     </p>
-        <hr />
-        <p className="mb-0">
-            Quando necessario, assicurarti di inserire le utilità di margine per
-            mantenere gli spazi equilibrati.
+    <hr />
+    <p className='mb-0'>
+      Quando necessario, assicurarti di inserire le utilità di margine per
+      mantenere gli spazi equilibrati.
     </p>
-    </Alert>
-)
+  </Alert>
+);
 _ContenutoAggiuntivo.args = {};
 
 // export const ChiusuraControllata: Story<AlertProps> = () => {
@@ -90,4 +90,3 @@ _ContenutoAggiuntivo.args = {};
 // ChiusuraControllata.story = {
 //   name: 'Chiusura Controllata'
 // }
-

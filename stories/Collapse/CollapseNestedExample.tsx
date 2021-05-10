@@ -1,25 +1,27 @@
-import React, { useState } from 'react'
-import { Accordion, AccordionHeader, AccordionBody } from '../../src'
+import React, { useState } from 'react';
+import { Accordion, AccordionHeader, AccordionBody } from '../../src';
 
 const CollapseNestedExample = () => {
-  const [collapseOpen1, setCollapseOpen1] = useState(true)
-  const [collapseOpen2, setCollapseOpen2] = useState(false)
-  const [collapseOpen3, setCollapseOpen3] = useState(false)
-  const [nestedCollapseOpen1, setNestedCollapseOpen1] = useState(true)
-  const [nestedCollapseOpen2, setNestedCollapseOpen2] = useState(false)
-  const [nestedCollapseOpen3, setNestedCollapseOpen3] = useState(false)
+  const [collapseOpen1, setCollapseOpen1] = useState(true);
+  const [collapseOpen2, setCollapseOpen2] = useState(false);
+  const [collapseOpen3, setCollapseOpen3] = useState(false);
+  const [nestedCollapseOpen1, setNestedCollapseOpen1] = useState(true);
+  const [nestedCollapseOpen2, setNestedCollapseOpen2] = useState(false);
+  const [nestedCollapseOpen3, setNestedCollapseOpen3] = useState(false);
   return (
     <Accordion>
       <AccordionHeader
         active={collapseOpen1}
-        onToggle={() => setCollapseOpen1(!collapseOpen1)}>
+        onToggle={() => setCollapseOpen1(!collapseOpen1)}
+      >
         Collapse header #1
       </AccordionHeader>
       <AccordionBody active={collapseOpen1}>
         <Accordion>
           <AccordionHeader
             active={nestedCollapseOpen1}
-            onToggle={() => setNestedCollapseOpen1(!nestedCollapseOpen1)}>
+            onToggle={() => setNestedCollapseOpen1(!nestedCollapseOpen1)}
+          >
             Nested panel header #1
           </AccordionHeader>
           <AccordionBody active={nestedCollapseOpen1}>
@@ -30,7 +32,8 @@ const CollapseNestedExample = () => {
 
           <AccordionHeader
             active={nestedCollapseOpen2}
-            onToggle={() => setNestedCollapseOpen2(!nestedCollapseOpen2)}>
+            onToggle={() => setNestedCollapseOpen2(!nestedCollapseOpen2)}
+          >
             Nested panel header #2
           </AccordionHeader>
           <AccordionBody active={nestedCollapseOpen2}>
@@ -41,7 +44,8 @@ const CollapseNestedExample = () => {
 
           <AccordionHeader
             active={nestedCollapseOpen3}
-            onToggle={() => setNestedCollapseOpen3(!nestedCollapseOpen3)}>
+            onToggle={() => setNestedCollapseOpen3(!nestedCollapseOpen3)}
+          >
             Nested panel header #3
           </AccordionHeader>
           <AccordionBody active={nestedCollapseOpen3}>
@@ -55,7 +59,8 @@ const CollapseNestedExample = () => {
 
       <AccordionHeader
         active={collapseOpen2}
-        onToggle={() => setCollapseOpen2(!collapseOpen2)}>
+        onToggle={() => setCollapseOpen2(!collapseOpen2)}
+      >
         Collapse header #2
       </AccordionHeader>
       <AccordionBody active={collapseOpen2}>
@@ -66,7 +71,8 @@ const CollapseNestedExample = () => {
 
       <AccordionHeader
         active={collapseOpen3}
-        onToggle={() => setCollapseOpen3(!collapseOpen3)}>
+        onToggle={() => setCollapseOpen3(!collapseOpen3)}
+      >
         Collapse header #3
       </AccordionHeader>
       <AccordionBody active={collapseOpen3}>
@@ -76,7 +82,7 @@ const CollapseNestedExample = () => {
         anderson cred nesciunt sapiente ea proident.
       </AccordionBody>
     </Accordion>
-  )
-}
+  );
+};
 
-export default CollapseNestedExample
+export default CollapseNestedExample;

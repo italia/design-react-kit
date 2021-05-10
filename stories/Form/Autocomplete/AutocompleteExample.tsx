@@ -1,29 +1,29 @@
-import React from 'react'
-import { components } from 'react-select'
-import './assets/css/autocomplete-styles.css'
-import { Icon } from '../../../src'
+import React from 'react';
+import { components } from 'react-select';
+import './assets/css/autocomplete-styles.css';
+import { Icon } from '../../../src';
 
-export const DropdownIndicator = props => {
+export const DropdownIndicator = (props) => {
   return (
     <components.DropdownIndicator {...props}>
-      <span style={{ padding: '0px 5px' }} aria-hidden="true">
-        <Icon icon="it-search" aria-hidden size="sm" />
+      <span style={{ padding: '0px 5px' }} aria-hidden='true'>
+        <Icon icon='it-search' aria-hidden size='sm' />
       </span>
     </components.DropdownIndicator>
-  )
-}
+  );
+};
 
-export const Input = props => {
+export const Input = (props) => {
   // eslint-disable-next-line react/prop-types
   if (props.isHidden) {
-    return <components.Input {...props} />
+    return <components.Input {...props} />;
   }
   return (
     <div style={{ border: `1px dotted blue}` }}>
       <components.Input {...props} />
     </div>
-  )
-}
+  );
+};
 
 export const multiOptions = [
   { value: '1', label: 'Abruzzo' },
@@ -46,4 +46,4 @@ export const multiOptions = [
   { value: '18', label: 'Umbria' },
   { value: '19', label: "Valle d'Aosta" },
   { value: '20', label: 'Veneto' }
-]
+];

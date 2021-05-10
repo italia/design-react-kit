@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 import {
   Accordion,
@@ -9,11 +9,11 @@ import {
   CalloutText,
   CalloutTitle,
   Icon
-} from '../../src'
+} from '../../src';
 
 export default {
   title: 'Componenti/Callout'
-}
+};
 
 export const EsempioBasico = () => (
   <Callout>
@@ -24,17 +24,13 @@ export const EsempioBasico = () => (
       varius.
     </CalloutText>
   </Callout>
-)
+);
 
 export const EsempioConIcona = () => (
   <Callout>
     <CalloutTitle>
-      <Icon
-        icon="it-info-circle"
-        padding={false}
-        aria-hidden
-      />
-      <span className="sr-only">Confermato</span>
+      <Icon icon='it-info-circle' padding={false} aria-hidden />
+      <span className='sr-only'>Confermato</span>
       Titolo Callout
     </CalloutTitle>
     <CalloutText>
@@ -43,21 +39,17 @@ export const EsempioConIcona = () => (
       varius.
     </CalloutText>
   </Callout>
-)
+);
 
 EsempioConIcona.story = {
   name: 'Esempio con icona'
-}
+};
 
 export const EsempioAccessibilita = () => (
   <Callout>
     <CalloutTitle>
-      <Icon
-        icon="it-check-circle"
-        padding={false}
-        aria-hidden
-      />
-      <span className="sr-only">Confermato</span>
+      <Icon icon='it-check-circle' padding={false} aria-hidden />
+      <span className='sr-only'>Confermato</span>
       Titolo Callout
     </CalloutTitle>
     <CalloutText>
@@ -66,21 +58,17 @@ export const EsempioAccessibilita = () => (
       varius.
     </CalloutText>
   </Callout>
-)
+);
 
 EsempioAccessibilita.story = {
   name: 'Esempio accessibilità'
-}
+};
 
 // eslint-disable-next-line react/prop-types
 export const CalloutTemplate = ({ title, color }) => (
   <Callout color={color}>
     <CalloutTitle>
-      <Icon
-        icon="it-check-circle"
-        padding={false}
-        aria-hidden
-      />
+      <Icon icon='it-check-circle' padding={false} aria-hidden />
       {title}
     </CalloutTitle>
     <CalloutText>
@@ -89,34 +77,37 @@ export const CalloutTemplate = ({ title, color }) => (
       varius.
     </CalloutText>
   </Callout>
-)
+);
 
-export const ProceduraAvvenutaConSuccesso = CalloutTemplate.bind({})
-ProceduraAvvenutaConSuccesso.args = { title: 'Usa', color: 'success' }
+export const ProceduraAvvenutaConSuccesso = CalloutTemplate.bind({});
+ProceduraAvvenutaConSuccesso.args = { title: 'Usa', color: 'success' };
 ProceduraAvvenutaConSuccesso.story = {
   name: 'Procedura avvenuta con successo'
-}
+};
 
-export const ProceduraCheRichiedeAttenzione = CalloutTemplate.bind({})
-ProceduraCheRichiedeAttenzione.args = { title: 'Attenzione', color: 'warning' }
+export const ProceduraCheRichiedeAttenzione = CalloutTemplate.bind({});
+ProceduraCheRichiedeAttenzione.args = { title: 'Attenzione', color: 'warning' };
 ProceduraCheRichiedeAttenzione.story = {
   name: 'Procedura che richiede attenzione'
-}
+};
 
-export const ProceduraPericolosaONonConsentita = CalloutTemplate.bind({})
-ProceduraPericolosaONonConsentita.args = { title: 'Non usare', color: 'danger' }
+export const ProceduraPericolosaONonConsentita = CalloutTemplate.bind({});
+ProceduraPericolosaONonConsentita.args = {
+  title: 'Non usare',
+  color: 'danger'
+};
 ProceduraPericolosaONonConsentita.story = {
   name: 'Procedura pericolosa o non consentita'
-}
+};
 
-export const ProceduraImportante = CalloutTemplate.bind({})
-ProceduraImportante.args = { title: 'Importante', color: 'important' }
+export const ProceduraImportante = CalloutTemplate.bind({});
+ProceduraImportante.args = { title: 'Importante', color: 'important' };
 ProceduraImportante.story = {
   name: 'Procedura importante'
-}
+};
 
-export const CalloutNote = CalloutTemplate.bind({})
-CalloutNote.args = { title: 'Note a riguardo', color: 'note' }
+export const CalloutNote = CalloutTemplate.bind({});
+CalloutNote.args = { title: 'Note a riguardo', color: 'note' };
 
 export const CalloutHighlights = () => (
   <Callout highlight>
@@ -128,20 +119,16 @@ export const CalloutHighlights = () => (
     <CalloutText>
       Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit
       amet, consectetur adipiscing elit. Aenean non augue non purus vestibulum
-      varius. Maecenas ullamcorper <a href="#">tincidunt nulla quis laoreet.</a>
+      varius. Maecenas ullamcorper <a href='#'>tincidunt nulla quis laoreet.</a>
     </CalloutText>
   </Callout>
-)
+);
 
 // eslint-disable-next-line react/prop-types
 const CalloutHighlightsTemplate = ({ title, color }) => (
   <Callout highlight color={color}>
     <CalloutTitle>
-      <Icon
-        icon="it-info-circle"
-        padding={false}
-        aria-hidden
-      />
+      <Icon icon='it-info-circle' padding={false} aria-hidden />
       {title}
     </CalloutTitle>
     <CalloutText bigText>
@@ -151,35 +138,35 @@ const CalloutHighlightsTemplate = ({ title, color }) => (
     <CalloutText>
       Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit
       amet, consectetur adipiscing elit. Aenean non augue non purus vestibulum
-      varius. Maecenas ullamcorper <a href="#">tincidunt nulla quis laoreet.</a>
+      varius. Maecenas ullamcorper <a href='#'>tincidunt nulla quis laoreet.</a>
     </CalloutText>
   </Callout>
-)
+);
 
-export const CalloutHighlightsSuccess = CalloutHighlightsTemplate.bind({})
-CalloutHighlightsSuccess.args = { title: 'Usa', color: 'success' }
+export const CalloutHighlightsSuccess = CalloutHighlightsTemplate.bind({});
+CalloutHighlightsSuccess.args = { title: 'Usa', color: 'success' };
 
-export const CalloutHighlightsWarning = CalloutHighlightsTemplate.bind({})
-CalloutHighlightsWarning.args = { title: 'Attenzione', color: 'warning' }
+export const CalloutHighlightsWarning = CalloutHighlightsTemplate.bind({});
+CalloutHighlightsWarning.args = { title: 'Attenzione', color: 'warning' };
 
-export const CalloutHighlightsDanger = CalloutHighlightsTemplate.bind({})
-CalloutHighlightsDanger.args = { title: 'Non usare', color: 'danger' }
+export const CalloutHighlightsDanger = CalloutHighlightsTemplate.bind({});
+CalloutHighlightsDanger.args = { title: 'Non usare', color: 'danger' };
 
-export const CalloutHighlightsImportant = CalloutHighlightsTemplate.bind({})
-CalloutHighlightsImportant.args = { title: 'Importante', color: 'important' }
+export const CalloutHighlightsImportant = CalloutHighlightsTemplate.bind({});
+CalloutHighlightsImportant.args = { title: 'Importante', color: 'important' };
 
-export const CalloutHighlightsNote = CalloutHighlightsTemplate.bind({})
-CalloutHighlightsNote.args = { title: 'Note', color: 'note' }
+export const CalloutHighlightsNote = CalloutHighlightsTemplate.bind({});
+CalloutHighlightsNote.args = { title: 'Note', color: 'note' };
 
 export const CalloutApprofondimento = () => {
-  const [isOpen, toggleOpen] = useState(false)
+  const [isOpen, toggleOpen] = useState(false);
   const toggle = () => {
-    toggleOpen(!isOpen)
-  }
+    toggleOpen(!isOpen);
+  };
   return (
-    <Callout color="note" detailed>
+    <Callout color='note' detailed>
       <CalloutTitle>
-        <Icon icon="it-zoom-in" padding={false} aria-hidden />
+        <Icon icon='it-zoom-in' padding={false} aria-hidden />
         <span>Approfondimento</span>
       </CalloutTitle>
       <CalloutText>
@@ -198,7 +185,7 @@ export const CalloutApprofondimento = () => {
           eu commodo odio mauris semper dolor.
         </p>
         <p>
-          Maecenas vulputate ante dictum <a href="#">vestibulum volutpat</a>.
+          Maecenas vulputate ante dictum <a href='#'>vestibulum volutpat</a>.
           Lorem ipsum dolor sit amet,{' '}
           <strong>consectetur adipiscing elit.</strong> Aenean non augue non
           purus vestibulum varius. Maecenas ullamcorper tincidunt nulla quis
@@ -209,13 +196,14 @@ export const CalloutApprofondimento = () => {
             tag={Button}
             active={isOpen}
             onToggle={toggle}
-            className="callout-more-toggle"
+            className='callout-more-toggle'
             append={
-              <a className="callout-more-download" href="#">
-                <Icon icon="it-download" />
-                <span className="sr-only">PDF</span> Download
+              <a className='callout-more-download' href='#'>
+                <Icon icon='it-download' />
+                <span className='sr-only'>PDF</span> Download
               </a>
-            }>
+            }
+          >
             Leggi tutto <span></span>
           </AccordionHeader>
           <AccordionBody active={isOpen}>
@@ -240,7 +228,7 @@ export const CalloutApprofondimento = () => {
               erat interdum magna, eu commodo odio mauris semper dolor.
             </p>
             <p>
-              Maecenas vulputate ante dictum <a href="#">vestibulum volutpat</a>
+              Maecenas vulputate ante dictum <a href='#'>vestibulum volutpat</a>
               . Lorem ipsum dolor sit amet,{' '}
               <strong>consectetur adipiscing elit.</strong> Aenean non augue non
               purus vestibulum varius. Maecenas ullamcorper tincidunt nulla quis
@@ -250,5 +238,5 @@ export const CalloutApprofondimento = () => {
         </Accordion>
       </CalloutText>
     </Callout>
-  )
-}
+  );
+};

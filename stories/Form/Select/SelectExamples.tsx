@@ -1,8 +1,8 @@
-import React from 'react'
-import { components } from 'react-select'
-import { Icon } from '../../../src'
-import PropTypes from 'prop-types'
-import './assets/css/select-styles.css'
+import React from 'react';
+import { components } from 'react-select';
+import { Icon } from '../../../src';
+import PropTypes from 'prop-types';
+import './assets/css/select-styles.css';
 
 export const SelectContainer = ({ children, ...props }) => {
   return (
@@ -11,63 +11,63 @@ export const SelectContainer = ({ children, ...props }) => {
         {children}
       </components.SelectContainer>
     </div>
-  )
-}
+  );
+};
 
 SelectContainer.propTypes = {
   children: PropTypes.node
-}
+};
 
-export const Option = props => {
+export const Option = (props) => {
   return (
-    <div className="select-pill text-primary">
+    <div className='select-pill text-primary'>
       <components.Option {...props} />
     </div>
-  )
-}
+  );
+};
 export const MenuList = ({ children, ...props }) => {
   return (
     <div>
       <components.MenuList {...props}>{children}</components.MenuList>
     </div>
-  )
-}
+  );
+};
 
 MenuList.propTypes = {
   children: PropTypes.node
-}
+};
 
-export const DropdownIndicator = props => {
+export const DropdownIndicator = (props) => {
   return (
     <components.DropdownIndicator {...props}>
-      <Icon icon="it-arrow-down-triangle" aria-hidden />
+      <Icon icon='it-arrow-down-triangle' aria-hidden />
     </components.DropdownIndicator>
-  )
-}
+  );
+};
 
-export const GroupHeading = props => (
+export const GroupHeading = (props) => (
   <div>
     <components.GroupHeading {...props} />
   </div>
-)
+);
 
-export const CustomClearText = () => <>Annulla</>
+export const CustomClearText = () => <>Annulla</>;
 
 export const ClearIndicator = ({
   children = <CustomClearText />,
   innerProps: { ref, ...restInnerProps }
-} )=> {
+}) => {
   return (
-    <div className="select-pill text-primary" {...restInnerProps} ref={ref}>
+    <div className='select-pill text-primary' {...restInnerProps} ref={ref}>
       <div style={{ padding: '0px 5px' }}>{children}</div>
     </div>
-  )
-}
+  );
+};
 
 ClearIndicator.propTypes = {
   children: PropTypes.node,
   innerProps: PropTypes.object
-}
+};
 
 export const defaultOptions = [
   { value: 'Value 1', label: 'Lorem ipsum dolor sit amet' },
@@ -78,13 +78,13 @@ export const defaultOptions = [
     label: 'Vestibulum bibendum ex vel augue porttitor sodales'
   },
   { value: 'Value 5', label: 'Praesent quis elementum turpis' }
-]
+];
 
 export const groupOneOptions = [
   { value: 'Value 1', label: 'Lorem ipsum dolor sit amet' },
   { value: 'Value 2', label: 'Duis vestibulum eleifend libero' },
   { value: 'Value 3', label: 'Phasellus pretium orci sed odio tempus' }
-]
+];
 
 export const groupTwoOptions = [
   {
@@ -92,7 +92,7 @@ export const groupTwoOptions = [
     label: 'Vestibulum bibendum ex vel augue porttitor sodales'
   },
   { value: 'Value 5', label: 'Praesent quis elementum turpis' }
-]
+];
 
 export const groupedOptions = [
   {
@@ -103,7 +103,7 @@ export const groupedOptions = [
     label: 'Gruppo 2',
     options: groupTwoOptions
   }
-]
+];
 
 // export const SelectExampleClassic = () => {
 //   const [, setValue] = useState(null)

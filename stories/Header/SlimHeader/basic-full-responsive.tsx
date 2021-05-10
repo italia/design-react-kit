@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import {
   Button,
@@ -15,27 +15,27 @@ import {
   Col,
   LinkList,
   LinkListItem
-} from '../../../src'
+} from '../../../src';
 
-const SlimHeader = ({theme}) => {
+const SlimHeader = ({ theme }) => {
   return (
-    <Header type="slim" theme={theme}>
+    <Header type='slim' theme={theme}>
       <HeaderContent>
         <HeaderBrand responsive>Ente appartenenza/Owner</HeaderBrand>
         <HeaderRightZone>
-          <UncontrolledDropdown nav tag="div">
+          <UncontrolledDropdown nav tag='div'>
             <DropdownToggle nav caret>
               ITA
-              <Icon icon="it-expand" />
+              <Icon icon='it-expand' />
             </DropdownToggle>
             <DropdownMenu>
               <Row>
-                <Col size="12">
+                <Col size='12'>
                   <LinkList>
-                    <LinkListItem tag={DropdownItem} href="#">
+                    <LinkListItem tag={DropdownItem} href='#'>
                       <span>ITA</span>
                     </LinkListItem>
-                    <LinkListItem tag={DropdownItem} href="#">
+                    <LinkListItem tag={DropdownItem} href='#'>
                       <span>ENG</span>
                     </LinkListItem>
                   </LinkList>
@@ -43,18 +43,18 @@ const SlimHeader = ({theme}) => {
               </Row>
             </DropdownMenu>
           </UncontrolledDropdown>
-          <Button color="primary" size="full" className="btn-icon" href="#">
-            <span className="rounded-icon">
-              <Icon color="primary" icon="it-user" />
+          <Button color='primary' size='full' className='btn-icon' href='#'>
+            <span className='rounded-icon'>
+              <Icon color='primary' icon='it-user' />
             </span>
-            <span className="d-none d-lg-block">
+            <span className='d-none d-lg-block'>
               Accedi all&#39;area personale
             </span>
           </Button>
         </HeaderRightZone>
       </HeaderContent>
     </Header>
-  )
-}
+  );
+};
 
-export default SlimHeader
+export default SlimHeader;

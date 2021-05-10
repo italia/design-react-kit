@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
-import { Accordion, AccordionHeader, AccordionBody } from '../../src'
+import React, { useState } from 'react';
+import { Accordion, AccordionHeader, AccordionBody } from '../../src';
 
 const CollapseAccordionExample = () => {
-  const [collapseOpen1, setCollapseOpen1] = useState(true)
-  const [collapseOpen2, setCollapseOpen2] = useState(false)
-  const [collapseOpen3, setCollapseOpen3] = useState(false)
+  const [collapseOpen1, setCollapseOpen1] = useState(true);
+  const [collapseOpen2, setCollapseOpen2] = useState(false);
+  const [collapseOpen3, setCollapseOpen3] = useState(false);
   return (
     <Accordion>
       <AccordionHeader
         active={collapseOpen1}
-        onToggle={() => setCollapseOpen1(!collapseOpen1)}>
+        onToggle={() => setCollapseOpen1(!collapseOpen1)}
+      >
         Collapsible Group Item #1
       </AccordionHeader>
       <AccordionBody active={collapseOpen1}>
@@ -20,7 +21,8 @@ const CollapseAccordionExample = () => {
 
       <AccordionHeader
         active={collapseOpen2}
-        onToggle={() => setCollapseOpen2(!collapseOpen2)}>
+        onToggle={() => setCollapseOpen2(!collapseOpen2)}
+      >
         Collapsible Group Item #2
       </AccordionHeader>
       <AccordionBody active={collapseOpen2}>
@@ -31,7 +33,8 @@ const CollapseAccordionExample = () => {
 
       <AccordionHeader
         active={collapseOpen3}
-        onToggle={() => setCollapseOpen3(!collapseOpen3)}>
+        onToggle={() => setCollapseOpen3(!collapseOpen3)}
+      >
         Collapsible Group Item #3
       </AccordionHeader>
       <AccordionBody active={collapseOpen3}>
@@ -41,7 +44,7 @@ const CollapseAccordionExample = () => {
         anderson cred nesciunt sapiente ea proident.
       </AccordionBody>
     </Accordion>
-  )
-}
+  );
+};
 
-export default CollapseAccordionExample
+export default CollapseAccordionExample;

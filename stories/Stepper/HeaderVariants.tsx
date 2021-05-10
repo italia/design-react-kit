@@ -1,52 +1,51 @@
-import React from 'react'
+import React from 'react';
 import {
   StepperContainer,
   StepperHeader,
   StepperHeaderElement,
   Icon
-} from '../../src'
+} from '../../src';
 const HeaderVariants = () => {
   return (
     <StepperContainer dark>
       <StepperHeader>
-        <StepperHeaderElement variant="confirmed" iconName="it-check">
+        <StepperHeaderElement variant='confirmed' iconName='it-check'>
           Label Step 1
         </StepperHeaderElement>
-        <StepperHeaderElement variant="active">
+        <StepperHeaderElement variant='active'>
           Label Step 2
         </StepperHeaderElement>
         <StepperHeaderElement>Label Step 3</StepperHeaderElement>
-        <StepperHeaderElement variant="mobile">
-          2/6
-        </StepperHeaderElement>
+        <StepperHeaderElement variant='mobile'>2/6</StepperHeaderElement>
       </StepperHeader>
       <StepperHeader>
         <StepperHeaderElement
-          variant="confirmed"
-          appendIcon="it-check"
-          prependIcon="it-calendar">
+          variant='confirmed'
+          appendIcon='it-check'
+          prependIcon='it-calendar'
+        >
           Label Step 1
         </StepperHeaderElement>
-        <StepperHeaderElement variant="active" iconName="it-lock">
+        <StepperHeaderElement variant='active' iconName='it-lock'>
           Label Step 2
         </StepperHeaderElement>
-        <StepperHeaderElement iconName="it-settings">
+        <StepperHeaderElement iconName='it-settings'>
           Label Step 3
         </StepperHeaderElement>
-        <StepperHeaderElement variant="mobile">
-          2/6
-        </StepperHeaderElement>
+        <StepperHeaderElement variant='mobile'>2/6</StepperHeaderElement>
       </StepperHeader>
       <StepperHeader>
         <StepperHeaderElement
-          variant="confirmed"
-          stepperNumber={<Icon icon="it-check" />}>
+          variant='confirmed'
+          stepperNumber={<Icon icon='it-check' />}
+        >
           Label Step 1
         </StepperHeaderElement>
         <StepperHeaderElement
-          variant="active"
+          variant='active'
           noLine
-          stepperNumber={<span>2</span>}>
+          stepperNumber={<span>2</span>}
+        >
           Label Step 2
         </StepperHeaderElement>
         <StepperHeaderElement stepperNumber={<span>3</span>}>
@@ -54,7 +53,7 @@ const HeaderVariants = () => {
         </StepperHeaderElement>
       </StepperHeader>
     </StepperContainer>
-  )
-}
+  );
+};
 
-export default HeaderVariants
+export default HeaderVariants;

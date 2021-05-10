@@ -1,52 +1,50 @@
-import React, { useState, useRef } from 'react'
-import { Button, Icon, Popover, PopoverHeader, PopoverBody } from '../../src'
+import React, { useState, useRef } from 'react';
+import { Button, Icon, Popover, PopoverHeader, PopoverBody } from '../../src';
 
 const PopoverIconLink = () => {
-  const [popoverOpen, setPopoverOpen] = useState(false)
+  const [popoverOpen, setPopoverOpen] = useState(false);
   const targetRef = useRef(null);
 
   const togglePopover = () => {
-    setPopoverOpen(!popoverOpen)
-  }
+    setPopoverOpen(!popoverOpen);
+  };
   return (
     <div>
       <Button
-        color="secondary"
-        data-container="body"
-        data-toggle="popover"
-        data-placement="right"
-        data-html="true"
+        color='secondary'
+        data-container='body'
+        data-toggle='popover'
+        data-placement='right'
+        data-html='true'
         innerRef={targetRef}
-        onClick={togglePopover}>
+        onClick={togglePopover}
+      >
         Popover con icona e link
       </Button>
 
       <Popover
-        placement="right"
+        placement='right'
         target={targetRef}
         isOpen={popoverOpen}
-        toggle={togglePopover}>
+        toggle={togglePopover}
+      >
         <PopoverHeader>
-          <Icon
-            color="white"
-            icon="it-help-circle"
-            aria-hidden
-          />
+          <Icon color='white' icon='it-help-circle' aria-hidden />
           Titolo con icona
         </PopoverHeader>
         <PopoverBody>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
           finibus augue.
-          <a href="#" className="popover-inner-link">
+          <a href='#' className='popover-inner-link'>
             More info
-            <Icon icon="it-arrow-right" aria-hidden />
+            <Icon icon='it-arrow-right' aria-hidden />
           </a>
         </PopoverBody>
       </Popover>
     </div>
-  )
-}
+  );
+};
 PopoverIconLink.story = {
   name: 'Titolo con icona e link'
-}
-export default PopoverIconLink
+};
+export default PopoverIconLink;

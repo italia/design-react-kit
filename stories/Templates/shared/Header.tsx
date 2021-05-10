@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import {
   Button,
   Collapse,
@@ -23,28 +23,28 @@ import {
   NavLink,
   HeaderBrand,
   UncontrolledDropdown
-} from '../../../src'
+} from '../../../src';
 
 // eslint-disable-next-line react/prop-types
 const SlimHeaderFullResponsive = ({ theme }) => {
   return (
-    <Header type="slim" theme={theme}>
+    <Header type='slim' theme={theme}>
       <HeaderContent>
         <HeaderBrand responsive>Ente appartenenza/Owner</HeaderBrand>
         <HeaderRightZone>
-          <UncontrolledDropdown nav tag="div">
+          <UncontrolledDropdown nav tag='div'>
             <DropdownToggle nav caret>
               ITA
-              <Icon icon="it-expand" />
+              <Icon icon='it-expand' />
             </DropdownToggle>
             <DropdownMenu>
               <Row>
-                <Col size="12">
+                <Col size='12'>
                   <LinkList>
-                    <LinkListItem tag={DropdownItem} href="#">
+                    <LinkListItem tag={DropdownItem} href='#'>
                       <span>ITA</span>
                     </LinkListItem>
-                    <LinkListItem tag={DropdownItem} href="#">
+                    <LinkListItem tag={DropdownItem} href='#'>
                       <span>ENG</span>
                     </LinkListItem>
                   </LinkList>
@@ -52,66 +52,67 @@ const SlimHeaderFullResponsive = ({ theme }) => {
               </Row>
             </DropdownMenu>
           </UncontrolledDropdown>
-          <Button color="primary" size="full" className="btn-icon" href="#">
-            <span className="rounded-icon">
-              <Icon color="primary" icon="it-user" />
+          <Button color='primary' size='full' className='btn-icon' href='#'>
+            <span className='rounded-icon'>
+              <Icon color='primary' icon='it-user' />
             </span>
-            <span className="d-none d-lg-block">
+            <span className='d-none d-lg-block'>
               Accedi all&#39;area personale
             </span>
           </Button>
         </HeaderRightZone>
       </HeaderContent>
     </Header>
-  )
-}
+  );
+};
 
 // eslint rule has to be disable for few lines here as Storybook addons will go in error
 // if PropTypes are declared in these components
 export class SlimHeader extends Component {
   state = {
     collapsed: true
-  }
+  };
 
   render() {
     return (
       // eslint-disable-next-line react/prop-types
-      <Header type="slim" theme={this.props.theme}>
+      <Header type='slim' theme={this.props.theme}>
         <HeaderContent>
           <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
           <HeaderLinkZone>
             <HeaderToggler
               onClick={() =>
                 this.setState({ collapsed: !this.state.collapsed })
-              }>
+              }
+            >
               <span>Ente appartenenza/Owner</span>
-              <Icon icon="it-expand" />
+              <Icon icon='it-expand' />
             </HeaderToggler>
             <Collapse isOpen={!this.state.collapsed} header>
               <Nav inHeader>
                 <NavItem>
-                  <NavLink href="#">Link 1</NavLink>
+                  <NavLink href='#'>Link 1</NavLink>
                 </NavItem>
                 <NavItem active>
-                  <NavLink href="#">Link 2 Active</NavLink>
+                  <NavLink href='#'>Link 2 Active</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
           </HeaderLinkZone>
           <HeaderRightZone>
-            <UncontrolledDropdown nav tag="div">
+            <UncontrolledDropdown nav tag='div'>
               <DropdownToggle nav caret>
                 ITA
-                <Icon icon="it-expand" />
+                <Icon icon='it-expand' />
               </DropdownToggle>
               <DropdownMenu>
                 <Row>
-                  <Col size="12">
+                  <Col size='12'>
                     <LinkList>
-                      <LinkListItem tag={DropdownItem} href="#">
+                      <LinkListItem tag={DropdownItem} href='#'>
                         <span>ITA</span>
                       </LinkListItem>
-                      <LinkListItem tag={DropdownItem} href="#">
+                      <LinkListItem tag={DropdownItem} href='#'>
                         <span>ENG</span>
                       </LinkListItem>
                     </LinkList>
@@ -119,98 +120,100 @@ export class SlimHeader extends Component {
                 </Row>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <div className="it-access-top-wrapper">
-              <Button color="primary" size="sm">
+            <div className='it-access-top-wrapper'>
+              <Button color='primary' size='sm'>
                 Accedi
               </Button>
             </div>
           </HeaderRightZone>
         </HeaderContent>
       </Header>
-    )
+    );
   }
 }
 
 export const CenterHeader = ({ townName, townTagLine, theme }) => {
   return (
     // eslint-disable-next-line react/prop-types
-    <Header type="center" theme={theme}>
+    <Header type='center' theme={theme}>
       <HeaderContent>
-        <HeaderBrand iconName="it-code-circle">
+        <HeaderBrand iconName='it-code-circle'>
           <h2>{townName}</h2>
           <h3>{townTagLine}</h3>
         </HeaderBrand>
         <HeaderRightZone>
-          <HeaderSocialsZone label="Seguici su">
+          <HeaderSocialsZone label='Seguici su'>
             <ul>
               <li>
-                <a href="#" aria-label="Facebook" target="_blank">
-                  <Icon icon="it-facebook" />
+                <a href='#' aria-label='Facebook' target='_blank'>
+                  <Icon icon='it-facebook' />
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="Github" target="_blank">
-                  <Icon icon="it-github" />
+                <a href='#' aria-label='Github' target='_blank'>
+                  <Icon icon='it-github' />
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="Twitter" target="_blank">
-                  <Icon icon="it-twitter" />
+                <a href='#' aria-label='Twitter' target='_blank'>
+                  <Icon icon='it-twitter' />
                 </a>
               </li>
             </ul>
           </HeaderSocialsZone>
-          <HeaderSearch label="Cerca" iconName="it-search" />
+          <HeaderSearch label='Cerca' iconName='it-search' />
         </HeaderRightZone>
       </HeaderContent>
     </Header>
-  )
-}
+  );
+};
 
 export class NavHeader extends Component {
   state = {
     collapsed: true
-  }
+  };
 
   render() {
-    const isOpen = !this.state.collapsed
+    const isOpen = !this.state.collapsed;
     // eslint-disable-next-line react/prop-types
-    const { active, theme } = this.props
+    const { active, theme } = this.props;
     return (
-      <Header type="navbar" theme={theme}>
-        <HeaderContent expand="lg" megamenu>
+      <Header type='navbar' theme={theme}>
+        <HeaderContent expand='lg' megamenu>
           <HeaderToggler
             onClick={() => this.setState({ collapsed: isOpen })}
-            aria-controls="nav1"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <Icon icon="it-burger" />
+            aria-controls='nav1'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+          >
+            <Icon icon='it-burger' />
           </HeaderToggler>
           <Collapse
             isOpen={isOpen}
             navbar
             header
-            onOverlayClick={() => this.setState({ collapsed: isOpen })}>
-            <div className="menu-wrapper">
+            onOverlayClick={() => this.setState({ collapsed: isOpen })}
+          >
+            <div className='menu-wrapper'>
               <Nav navbar>
                 {[
                   'Amministrazione',
                   'Novità',
                   'Servizi',
                   'Documenti e Dati'
-                ].map(label => {
-                  const isActive = label === active
+                ].map((label) => {
+                  const isActive = label === active;
                   return (
                     <NavItem active={isActive} key={label}>
-                      <NavLink href="#" active={isActive}>
+                      <NavLink href='#' active={isActive}>
                         <span>{label}</span>
-                        {isActive && <span className="sr-only">current</span>}
+                        {isActive && <span className='sr-only'>current</span>}
                       </NavLink>
                     </NavItem>
-                  )
+                  );
                 })}
               </Nav>
-              <Nav navbar className="navbar-secondary">
+              <Nav navbar className='navbar-secondary'>
                 {[
                   { label: 'Argomento 1' },
                   { label: 'Argomento 2' },
@@ -218,20 +221,20 @@ export class NavHeader extends Component {
                 ].map(({ label, bold }) => {
                   return (
                     <NavItem key={label}>
-                      <NavLink href="#">
+                      <NavLink href='#'>
                         <span className={`${bold ? 'font-weight-bold' : ''}`}>
                           {label}
                         </span>
                       </NavLink>
                     </NavItem>
-                  )
+                  );
                 })}
               </Nav>
             </div>
           </Collapse>
         </HeaderContent>
       </Header>
-    )
+    );
   }
 }
 
@@ -249,11 +252,11 @@ const CompleteHeader = ({
   // eslint-disable-next-line react/prop-types
   townTagLine
 }) => {
-  const SlimTag = type === 'default' ? SlimHeader : SlimHeaderFullResponsive
+  const SlimTag = type === 'default' ? SlimHeader : SlimHeaderFullResponsive;
   return (
     <Headers sticky={sticky}>
       <SlimTag theme={theme} />
-      <div className="it-nav-wrapper">
+      <div className='it-nav-wrapper'>
         <CenterHeader
           theme={theme}
           townName={townName}
@@ -262,7 +265,7 @@ const CompleteHeader = ({
         <NavHeader theme={theme} active={page} />
       </div>
     </Headers>
-  )
-}
+  );
+};
 
-export default CompleteHeader
+export default CompleteHeader;

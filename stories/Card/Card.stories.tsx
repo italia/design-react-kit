@@ -1,4 +1,4 @@
-import React, { AnchorHTMLAttributes } from 'react'
+import React, { AnchorHTMLAttributes } from 'react';
 
 import {
   Card,
@@ -14,19 +14,19 @@ import {
   Icon,
   Row,
   Col
-} from '../../src'
+} from '../../src';
 
 export default {
   title: 'Componenti/Cards'
-}
+};
 
 export const SimpleCard = () => (
   <Row>
-    <Col xs="12" lg="4">
+    <Col xs='12' lg='4'>
       {/* start card */}
       <Card>
         <CardBody>
-          <CardTitle tag="h5">
+          <CardTitle tag='h5'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
@@ -39,19 +39,19 @@ export const SimpleCard = () => (
       {/* end card */}
     </Col>
   </Row>
-)
+);
 
 SimpleCard.story = {
   name: 'Card semplice'
-}
+};
 
 export const SimpleCardMultipleColumns = () => (
   <Row>
-    {[1, 2, 3].map(i => (
-      <Col xs="12" lg="4" key={i}>
+    {[1, 2, 3].map((i) => (
+      <Col xs='12' lg='4' key={i}>
         <Card>
           <CardBody>
-            <CardTitle tag="h5">
+            <CardTitle tag='h5'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor…
             </CardTitle>
@@ -64,20 +64,20 @@ export const SimpleCardMultipleColumns = () => (
       </Col>
     ))}
   </Row>
-)
+);
 
 SimpleCardMultipleColumns.story = {
   name: 'Card semplice su più colonne'
-}
+};
 
 export const SimpleArticle = () => (
   <Row>
-    <Col xs="12" lg="6">
+    <Col xs='12' lg='6'>
       {/* start card */}
       <Card>
         <CardBody>
-          <CardCategory date="10/12/2018">Category</CardCategory>
-          <CardTitle tag="h5" className="big-heading">
+          <CardCategory date='10/12/2018'>Category</CardCategory>
+          <CardTitle tag='h5' className='big-heading'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit…
           </CardTitle>
           <CardText>
@@ -85,28 +85,28 @@ export const SimpleArticle = () => (
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </CardText>
           <CardSignature>di Federico De Paolis</CardSignature>
-          <CardReadMore text="Leggi di più" iconName="it-arrow-right" />
+          <CardReadMore text='Leggi di più' iconName='it-arrow-right' />
         </CardBody>
       </Card>
       {/* end card */}
     </Col>
   </Row>
-)
+);
 
 SimpleArticle.story = {
   name: 'Articolo semplice'
-}
+};
 
 export const SimpleArticleWithIcon = () => (
   <Row>
-    <Col xs="12" lg="6">
+    <Col xs='12' lg='6'>
       {/* start card */}
       <Card>
         <CardBody>
-          <CardCategory date="10/12/2018" iconName="it-calendar">
+          <CardCategory date='10/12/2018' iconName='it-calendar'>
             Category
           </CardCategory>
-          <CardTitle tag="h5" className="big-heading">
+          <CardTitle tag='h5' className='big-heading'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit…
           </CardTitle>
           <CardText>
@@ -114,32 +114,32 @@ export const SimpleArticleWithIcon = () => (
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </CardText>
           <CardSignature>di Federico De Paolis</CardSignature>
-          <CardReadMore text="Leggi di più" iconName="it-arrow-right" />
+          <CardReadMore text='Leggi di più' iconName='it-arrow-right' />
         </CardBody>
       </Card>
       {/* end card */}
     </Col>
   </Row>
-)
+);
 SimpleArticleWithIcon.story = {
   name: 'Articolo con Icona'
-}
+};
 
 export const CardIcon = () => (
   <Row>
-    <Col xs="12" lg="6">
+    <Col xs='12' lg='6'>
       {/* Start card */}
       <Card>
         <CardBody>
-          <CardCategory iconName="it-file">
-            <span className="text">
+          <CardCategory iconName='it-file'>
+            <span className='text'>
               Category
               <br />
               Name
             </span>
           </CardCategory>
-          <a href="#">
-            <CardTitle tag="h5">
+          <a href='#'>
+            <CardTitle tag='h5'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor…
             </CardTitle>
@@ -154,22 +154,22 @@ export const CardIcon = () => (
       {/* end card */}
     </Col>
   </Row>
-)
+);
 CardIcon.story = {
   name: 'Card con Icona'
-}
+};
 
 export const CardIconAdvanced = () => (
   <Row>
-    <Col xs="12" lg="6">
+    <Col xs='12' lg='6'>
       {/* Start card */}
       <Card>
         <CardBody>
-          <CardCategory iconName="it-file">
-            <span className="text">(2) Files</span>
+          <CardCategory iconName='it-file'>
+            <span className='text'>(2) Files</span>
           </CardCategory>
-          <a href="#">
-            <CardTitle tag="h5">
+          <a href='#'>
+            <CardTitle tag='h5'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor…
             </CardTitle>
@@ -178,7 +178,7 @@ export const CardIconAdvanced = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </CardText>
-          <a className="simple-link" href="#">
+          <a className='simple-link' href='#'>
             Link
           </a>
         </CardBody>
@@ -187,18 +187,18 @@ export const CardIconAdvanced = () => (
       {/* end card */}
     </Col>
   </Row>
-)
+);
 CardIconAdvanced.story = {
   name: 'Card con Icona alternativa'
-}
+};
 
 export const CardWithShading = () => (
   <Row>
-    <Col xs="12" lg="6">
+    <Col xs='12' lg='6'>
       {/* Start card */}
-      <Card spacing className="card-bg">
+      <Card spacing className='card-bg'>
         <CardBody>
-          <CardTitle tag="h5">
+          <CardTitle tag='h5'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
@@ -206,28 +206,28 @@ export const CardWithShading = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </CardText>
-          <CardReadMore iconName="it-arrow-right" text="Leggi di più" />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
         </CardBody>
       </Card>
       {/* end card */}
     </Col>
   </Row>
-)
+);
 
 CardWithShading.story = {
   name: 'Card con ombreggiatura'
-}
+};
 
 export const BigCard = () => (
   <Row>
-    <Col xs="12" lg="6">
+    <Col xs='12' lg='6'>
       {/* Start card */}
-      <Card spacing className="card-bg card-big">
+      <Card spacing className='card-bg card-big'>
         <CardBody>
-          <div className="top-icon">
-            <Icon icon="it-card" />
+          <div className='top-icon'>
+            <Icon icon='it-card' />
           </div>
-          <CardTitle tag="h5">
+          <CardTitle tag='h5'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
@@ -235,33 +235,33 @@ export const BigCard = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </CardText>
-          <CardReadMore iconName="it-arrow-right" text="Leggi di più" />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
         </CardBody>
       </Card>
       {/* end card */}
     </Col>
   </Row>
-)
+);
 
 BigCard.story = {
   name: 'Card grande'
-}
+};
 
 export const BigCardExampleTwo = () => (
   <Row>
-    <Col xs="12" lg="6">
+    <Col xs='12' lg='6'>
       {/* Start card */}
-      <Card spacing className="card-bg card-big border-bottom-card">
-        <div className="flag-icon"></div>
-        <div className="etichetta">
-          <Icon icon="it-settings" />
+      <Card spacing className='card-bg card-big border-bottom-card'>
+        <div className='flag-icon'></div>
+        <div className='etichetta'>
+          <Icon icon='it-settings' />
           <span>Sviluppo</span>
         </div>
         <CardBody>
-          <div className="top-icon">
-            <Icon icon="it-card" />
+          <div className='top-icon'>
+            <Icon icon='it-card' />
           </div>
-          <CardTitle tag="h5">
+          <CardTitle tag='h5'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
@@ -269,28 +269,28 @@ export const BigCardExampleTwo = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </CardText>
-          <CardReadMore iconName="it-arrow-right" text="Leggi di più" />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
         </CardBody>
       </Card>
       {/* end card */}
     </Col>
   </Row>
-)
+);
 
 BigCardExampleTwo.story = {
   name: 'Card grande: esempio alternativo'
-}
+};
 
 export const BigCardWithTag = () => (
   <Row>
-    <Col xs="12" lg="6">
+    <Col xs='12' lg='6'>
       {/* Start card */}
-      <Card spacing className="card-bg card-big no-after">
+      <Card spacing className='card-bg card-big no-after'>
         <CardBody>
-          <CardTagsHeader date="10/10/2018">
-            <CardTag href="#">Tag</CardTag>
+          <CardTagsHeader date='10/10/2018'>
+            <CardTag href='#'>Tag</CardTag>
           </CardTagsHeader>
-          <CardTitle tag="h5">
+          <CardTitle tag='h5'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
@@ -298,9 +298,9 @@ export const BigCardWithTag = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </CardText>
-          <div className="it-card-footer">
+          <div className='it-card-footer'>
             <CardSignature>di Federico De Paolis</CardSignature>
-            <Button outline color="primary" size="sm">
+            <Button outline color='primary' size='sm'>
               Action
             </Button>
           </div>
@@ -309,176 +309,176 @@ export const BigCardWithTag = () => (
       {/* end card */}
     </Col>
   </Row>
-)
+);
 
 BigCardWithTag.story = {
   name: 'Card grande con tag, data e call to action'
-}
+};
 
 export const CardWithImageAndDate = () => (
   <Row>
-    <Col xs="12" lg="6">
+    <Col xs='12' lg='6'>
       {/* Start card */}
-      <Card className="card-bg card-img no-after">
-        <div className="img-responsive-wrapper">
-          <div className="img-responsive img-responsive-panoramic">
-            <figure className="img-wrapper">
+      <Card className='card-bg card-img no-after'>
+        <div className='img-responsive-wrapper'>
+          <div className='img-responsive img-responsive-panoramic'>
+            <figure className='img-wrapper'>
               <img
-                src="https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
-                title="img title"
-                alt="imagealt"
+                src='https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+                title='img title'
+                alt='imagealt'
               />
             </figure>
-            <div className="card-calendar d-flex flex-column justify-content-center">
-              <span className="card-date">31</span>
-              <span className="card-day">novembre</span>
+            <div className='card-calendar d-flex flex-column justify-content-center'>
+              <span className='card-date'>31</span>
+              <span className='card-day'>novembre</span>
             </div>
           </div>
         </div>
         <CardBody>
-          <CardTitle tag="h5">
+          <CardTitle tag='h5'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
-          <CardReadMore iconName="it-arrow-right" text="Leggi di più" />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
         </CardBody>
       </Card>
       {/* end card */}
     </Col>
   </Row>
-)
+);
 CardWithImageAndDate.story = {
   name: 'Card con immagine e data calendario'
-}
+};
 
 export const CardsWithImages = () => (
   <Row>
-    <Col xs="12" lg="6">
+    <Col xs='12' lg='6'>
       {/* Start card */}
-      <Card className="card-img no-after">
-        <div className="img-responsive-wrapper">
-          <div className="img-responsive">
-            <figure className="img-wrapper">
+      <Card className='card-img no-after'>
+        <div className='img-responsive-wrapper'>
+          <div className='img-responsive'>
+            <figure className='img-wrapper'>
               <img
-                src="https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
-                title="img title"
-                alt="imagealt"
+                src='https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+                title='img title'
+                alt='imagealt'
               />
             </figure>
           </div>
         </div>
         <CardBody>
-          <CardTitle tag="h5">
+          <CardTitle tag='h5'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
-          <CardReadMore iconName="it-arrow-right" text="Leggi di più" />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
         </CardBody>
       </Card>
       {/* end card */}
     </Col>
-    <Col xs="12" lg="6">
+    <Col xs='12' lg='6'>
       {/* Start card */}
-      <Card className="card-img no-after">
-        <div className="img-responsive-wrapper">
-          <div className="img-responsive img-responsive-panoramic">
-            <figure className="img-wrapper">
+      <Card className='card-img no-after'>
+        <div className='img-responsive-wrapper'>
+          <div className='img-responsive img-responsive-panoramic'>
+            <figure className='img-wrapper'>
               <img
-                src="https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
-                title="img title"
-                alt="imagealt"
+                src='https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+                title='img title'
+                alt='imagealt'
               />
             </figure>
           </div>
         </div>
         <CardBody>
-          <CardTitle tag="h5">
+          <CardTitle tag='h5'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
-          <CardReadMore iconName="it-arrow-right" text="Leggi di più" />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
         </CardBody>
       </Card>
       {/* end card */}
     </Col>
-    <Col xs="12" lg="6">
+    <Col xs='12' lg='6'>
       {/* Start card */}
-      <Card className="card-img no-after">
-        <div className="img-responsive-wrapper">
-          <div className="img-responsive">
-            <figure className="img-wrapper">
+      <Card className='card-img no-after'>
+        <div className='img-responsive-wrapper'>
+          <div className='img-responsive'>
+            <figure className='img-wrapper'>
               <img
-                src="https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
-                title="img title"
-                alt="imagealt"
+                src='https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+                title='img title'
+                alt='imagealt'
               />
             </figure>
-            <div className="card-calendar d-flex flex-column justify-content-center">
-              <span className="card-date">31</span>
-              <span className="card-day">novembre</span>
+            <div className='card-calendar d-flex flex-column justify-content-center'>
+              <span className='card-date'>31</span>
+              <span className='card-day'>novembre</span>
             </div>
           </div>
         </div>
         <CardBody>
-          <CardTitle tag="h5">
+          <CardTitle tag='h5'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
-          <CardReadMore iconName="it-arrow-right" text="Leggi di più" />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
         </CardBody>
       </Card>
       {/* end card */}
     </Col>
-    <Col xs="12" lg="6">
+    <Col xs='12' lg='6'>
       {/* Start card */}
-      <Card className="card-img no-after">
-        <div className="img-responsive-wrapper">
-          <div className="img-responsive img-responsive-panoramic">
-            <figure className="img-wrapper">
+      <Card className='card-img no-after'>
+        <div className='img-responsive-wrapper'>
+          <div className='img-responsive img-responsive-panoramic'>
+            <figure className='img-wrapper'>
               <img
-                src="https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
-                title="img title"
-                alt="imagealt"
+                src='https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+                title='img title'
+                alt='imagealt'
               />
             </figure>
-            <div className="card-calendar d-flex flex-column justify-content-center">
-              <span className="card-date">31</span>
-              <span className="card-day">novembre</span>
+            <div className='card-calendar d-flex flex-column justify-content-center'>
+              <span className='card-date'>31</span>
+              <span className='card-day'>novembre</span>
             </div>
           </div>
         </div>
         <CardBody>
-          <CardTitle tag="h5">
+          <CardTitle tag='h5'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
-          <CardReadMore iconName="it-arrow-right" text="Leggi di più" />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
         </CardBody>
       </Card>
       {/* end card */}
     </Col>
   </Row>
-)
+);
 
 export const SpecialCard = () => (
   <Row>
-    <Col xs="12" lg="6">
+    <Col xs='12' lg='6'>
       {/* Start card */}
-      <Card className="card-img no-after special-card" tag="a">
-        <div className="img-responsive-wrapper">
-          <div className="img-responsive">
-            <figure className="img-wrapper">
+      <Card className='card-img no-after special-card' tag='a'>
+        <div className='img-responsive-wrapper'>
+          <div className='img-responsive'>
+            <figure className='img-wrapper'>
               <img
-                src="https://via.placeholder.com/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO"
-                title="img title"
-                alt="imagealt"
+                src='https://via.placeholder.com/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO'
+                title='img title'
+                alt='imagealt'
               />
             </figure>
           </div>
         </div>
         <CardBody>
-          <CardTagsHeader date="10/10/2018" />
-          <CardTitle tag="h5">
+          <CardTagsHeader date='10/10/2018' />
+          <CardTitle tag='h5'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
@@ -487,15 +487,15 @@ export const SpecialCard = () => (
       {/* end card */}
     </Col>
   </Row>
-)
+);
 SpecialCard.story = {
   name: 'Card speciali'
-}
+};
 
 export const SimpleCardTeaser = () => (
   <Card teaser>
     <CardBody>
-      <CardTitle tag="h5">
+      <CardTitle tag='h5'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor…
       </CardTitle>
@@ -505,17 +505,17 @@ export const SimpleCardTeaser = () => (
       </CardText>
     </CardBody>
   </Card>
-)
+);
 
 SimpleCardTeaser.story = {
   name: 'Card teaser'
-}
+};
 
 export const CardTeaserMultiple = () => (
-  <div className="card-wrapper card-teaser-wrapper">
+  <div className='card-wrapper card-teaser-wrapper'>
     <Card teaser noWrapper>
       <CardBody>
-        <CardTitle tag="h5">
+        <CardTitle tag='h5'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor…
         </CardTitle>
@@ -525,7 +525,7 @@ export const CardTeaserMultiple = () => (
         </CardText>
       </CardBody>
     </Card>
-    <Card teaser noWrapper className="rounded shadow">
+    <Card teaser noWrapper className='rounded shadow'>
       <CardBody>
         <CardTitle>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -537,11 +537,11 @@ export const CardTeaserMultiple = () => (
         </CardText>
       </CardBody>
     </Card>
-    <Card teaser noWrapper className="rounded shadow">
+    <Card teaser noWrapper className='rounded shadow'>
       <CardBody>
-        <CardCategory iconName="it-clip"></CardCategory>
-        <a href="#">
-          <CardTitle tag="h5">Lorem ipsum dolor sit amet</CardTitle>
+        <CardCategory iconName='it-clip'></CardCategory>
+        <a href='#'>
+          <CardTitle tag='h5'>Lorem ipsum dolor sit amet</CardTitle>
         </a>
         <CardText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -550,11 +550,11 @@ export const CardTeaserMultiple = () => (
       </CardBody>
     </Card>
   </div>
-)
+);
 
 CardTeaserMultiple.story = {
   name: 'Card teaser multiple'
-}
+};
 
 // eslint-disable-next-line react/prop-types
 export const _EsempiInterattivi = ({ spacing, teaser, link, title, text }) => {
@@ -564,11 +564,11 @@ export const _EsempiInterattivi = ({ spacing, teaser, link, title, text }) => {
         {/* Start card */}
         <Card spacing={spacing} teaser={teaser}>
           <CardBody>
-            <CardTitle tag="h5">{title}</CardTitle>
+            <CardTitle tag='h5'>{title}</CardTitle>
             <CardText>{text}</CardText>
             <CardReadMore
-              iconName="it-arrow-right"
-              text="Leggi di più"
+              iconName='it-arrow-right'
+              text='Leggi di più'
               tag={'a'}
               href={link}
             />
@@ -577,12 +577,12 @@ export const _EsempiInterattivi = ({ spacing, teaser, link, title, text }) => {
         {/* end card */}
       </Col>
     </Row>
-  )
-}
+  );
+};
 
 _EsempiInterattivi.story = {
   name: 'Esempi interattivi'
-}
+};
 _EsempiInterattivi.args = {
   spacing: false,
   teaser: false,
@@ -590,4 +590,4 @@ _EsempiInterattivi.args = {
   title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit…',
   text:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-}
+};

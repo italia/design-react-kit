@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const HeaderIntroduction = () => (
   <div>
@@ -31,6 +31,6 @@ const HeaderIntroduction = () => (
       </li>
     </ul>
   </div>
-)
+);
 
-export default HeaderIntroduction
+export default HeaderIntroduction;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import {
   Button,
@@ -18,48 +18,49 @@ import {
   Row,
   Col,
   UncontrolledDropdown
-} from '../../../src'
+} from '../../../src';
 
 const SlimHeader = ({ theme, isOpen, brandText }) => {
   return (
-    <Header type="slim" theme={theme}>
+    <Header type='slim' theme={theme}>
       <HeaderContent>
         <HeaderBrand>{brandText}</HeaderBrand>
         <HeaderLinkZone>
           <HeaderToggler
             onClick={() => {
               /* open logic state here */
-            }}>
+            }}
+          >
             <span>{brandText}</span>
-            <Icon icon="it-expand" />
+            <Icon icon='it-expand' />
           </HeaderToggler>
           <Collapse isOpen={isOpen} header>
             <LinkList>
-              <LinkListItem href="#">Link 1</LinkListItem>
-              <LinkListItem href="#" active>
+              <LinkListItem href='#'>Link 1</LinkListItem>
+              <LinkListItem href='#' active>
                 Link 2 Active
               </LinkListItem>
             </LinkList>
           </Collapse>
         </HeaderLinkZone>
         <HeaderRightZone>
-          <UncontrolledDropdown nav tag="div">
+          <UncontrolledDropdown nav tag='div'>
             <DropdownToggle nav caret>
               ITA
               <Icon
-                icon="it-expand"
-                color="icon-white"
-                className="d-none d-lg-block"
+                icon='it-expand'
+                color='icon-white'
+                className='d-none d-lg-block'
               />
             </DropdownToggle>
             <DropdownMenu>
               <Row>
-                <Col size="12">
+                <Col size='12'>
                   <LinkList>
-                    <LinkListItem tag={DropdownItem} href="#">
+                    <LinkListItem tag={DropdownItem} href='#'>
                       <span>ITA</span>
                     </LinkListItem>
-                    <LinkListItem tag={DropdownItem} href="#">
+                    <LinkListItem tag={DropdownItem} href='#'>
                       <span>ENG</span>
                     </LinkListItem>
                   </LinkList>
@@ -67,15 +68,15 @@ const SlimHeader = ({ theme, isOpen, brandText }) => {
               </Row>
             </DropdownMenu>
           </UncontrolledDropdown>
-          <div className="it-access-top-wrapper">
-            <Button color="primary" size="sm">
+          <div className='it-access-top-wrapper'>
+            <Button color='primary' size='sm'>
               Accedi
             </Button>
           </div>
         </HeaderRightZone>
       </HeaderContent>
     </Header>
-  )
-}
+  );
+};
 
-export default SlimHeader
+export default SlimHeader;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import {
   Dimmer,
@@ -9,13 +9,13 @@ import {
   CardBody,
   CardTitle,
   CardText
-} from '../../src'
+} from '../../src';
 
-export const Esempi = ({fadeIn}) => {
+export const Esempi = ({ fadeIn }) => {
   return (
     <div>
-      <Fade in={fadeIn} tag="div" className="mt-3">
-        <Dimmer icon="it-unlocked">
+      <Fade in={fadeIn} tag='div' className='mt-3'>
+        <Dimmer icon='it-unlocked'>
           <p>
             Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
             dignissim cras. Dictum sit amet justo donec enim diam vulputate ut.
@@ -23,12 +23,12 @@ export const Esempi = ({fadeIn}) => {
           </p>
         </Dimmer>
       </Fade>
-      <div className="row">
-        <div className="col-12 col-lg-4">
+      <div className='row'>
+        <div className='col-12 col-lg-4'>
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle tag="h5">
+              <CardTitle tag='h5'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -41,11 +41,11 @@ export const Esempi = ({fadeIn}) => {
           {/* end card */}
         </div>
 
-        <div className="col-12 col-lg-4 d-none d-lg-block">
+        <div className='col-12 col-lg-4 d-none d-lg-block'>
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle tag="h5">
+              <CardTitle tag='h5'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -57,11 +57,11 @@ export const Esempi = ({fadeIn}) => {
           </Card>
           {/* end card */}
         </div>
-        <div className="col-12 col-lg-4 d-none d-lg-block">
+        <div className='col-12 col-lg-4 d-none d-lg-block'>
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle tag="h5">
+              <CardTitle tag='h5'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -74,14 +74,14 @@ export const Esempi = ({fadeIn}) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-const ColorePrimarioComponent = ({fadeIn}) => {
+const ColorePrimarioComponent = ({ fadeIn }) => {
   return (
     <div>
-      <Fade in={fadeIn} tag="div" className="mt-3">
-        <Dimmer color="primary" icon="it-unlocked">
+      <Fade in={fadeIn} tag='div' className='mt-3'>
+        <Dimmer color='primary' icon='it-unlocked'>
           <p>
             Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
             dignissim cras. Dictum sit amet justo donec enim diam vulputate ut.
@@ -89,12 +89,12 @@ const ColorePrimarioComponent = ({fadeIn}) => {
           </p>
         </Dimmer>
       </Fade>
-      <div className="row">
-        <div className="col-12 col-lg-4">
+      <div className='row'>
+        <div className='col-12 col-lg-4'>
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle tag="h5">
+              <CardTitle tag='h5'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -107,11 +107,11 @@ const ColorePrimarioComponent = ({fadeIn}) => {
           {/* end card */}
         </div>
 
-        <div className="col-12 col-lg-4 d-none d-lg-block">
+        <div className='col-12 col-lg-4 d-none d-lg-block'>
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle tag="h5">
+              <CardTitle tag='h5'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -123,11 +123,11 @@ const ColorePrimarioComponent = ({fadeIn}) => {
           </Card>
           {/* end card */}
         </div>
-        <div className="col-12 col-lg-4 d-none d-lg-block">
+        <div className='col-12 col-lg-4 d-none d-lg-block'>
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle tag="h5">
+              <CardTitle tag='h5'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -140,29 +140,29 @@ const ColorePrimarioComponent = ({fadeIn}) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const DimmerConAzioni = ({fadeIn}) => {
+export const DimmerConAzioni = ({ fadeIn }) => {
   return (
     <div>
-      <Fade in={fadeIn} tag="div" className="mt-3">
-        <Dimmer icon="it-unlocked">
+      <Fade in={fadeIn} tag='div' className='mt-3'>
+        <Dimmer icon='it-unlocked'>
           <h4>Titolo Dimmer</h4>
           <DimmerButtons>
-            <Button color="primary" outline>
+            <Button color='primary' outline>
               Azione secondaria
             </Button>
-            <Button color="primary">Azione primaria</Button>
+            <Button color='primary'>Azione primaria</Button>
           </DimmerButtons>
         </Dimmer>
       </Fade>
-      <div className="col">
-        <div className="col-12 col-lg-4">
+      <div className='col'>
+        <div className='col-12 col-lg-4'>
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle tag="h5">
+              <CardTitle tag='h5'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -174,11 +174,11 @@ export const DimmerConAzioni = ({fadeIn}) => {
           </Card>
           {/* end card */}
         </div>
-        <div className="col-12 col-lg-4 d-none d-lg-block">
+        <div className='col-12 col-lg-4 d-none d-lg-block'>
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle tag="h5">
+              <CardTitle tag='h5'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -192,26 +192,26 @@ export const DimmerConAzioni = ({fadeIn}) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const DimmerConAzioniColorePrimario = ({fadeIn}) => {
+export const DimmerConAzioniColorePrimario = ({ fadeIn }) => {
   return (
     <div>
-      <Fade in={fadeIn} tag="div" className="mt-3">
-        <Dimmer color="primary" icon="it-unlocked">
+      <Fade in={fadeIn} tag='div' className='mt-3'>
+        <Dimmer color='primary' icon='it-unlocked'>
           <h4>Titolo Dimmer</h4>
           <DimmerButtons single>
-            <Button color="primary">Azione primaria</Button>
+            <Button color='primary'>Azione primaria</Button>
           </DimmerButtons>
         </Dimmer>
       </Fade>
-      <div className="col">
-        <div className="col-12 col-lg-4">
+      <div className='col'>
+        <div className='col-12 col-lg-4'>
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle tag="h5">
+              <CardTitle tag='h5'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -223,11 +223,11 @@ export const DimmerConAzioniColorePrimario = ({fadeIn}) => {
           </Card>
           {/* end card */}
         </div>
-        <div className="col-12 col-lg-4 d-none d-lg-block">
+        <div className='col-12 col-lg-4 d-none d-lg-block'>
           {/* start card */}
           <Card>
             <CardBody>
-              <CardTitle tag="h5">
+              <CardTitle tag='h5'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor…
               </CardTitle>
@@ -241,22 +241,22 @@ export const DimmerConAzioniColorePrimario = ({fadeIn}) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default {
   title: 'Componenti/Dimmer',
   args: {
     fadeIn: true
   }
-}
+};
 
-export const _ColorePrimario = ColorePrimarioComponent
+export const _ColorePrimario = ColorePrimarioComponent;
 
 DimmerConAzioni.story = {
   name: 'Dimmer con Azioni'
-}
+};
 
 DimmerConAzioniColorePrimario.story = {
   name: 'Dimmer con Azioni Colore Primario'
-}
+};

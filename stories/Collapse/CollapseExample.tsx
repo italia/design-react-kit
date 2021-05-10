@@ -1,18 +1,18 @@
-import React, { useState } from 'react'
-import { Button, Collapse, Card, CardBody } from '../../src'
+import React, { useState } from 'react';
+import { Button, Collapse, Card, CardBody } from '../../src';
 
 const CollapseExample = () => {
-  const [collapse, setCollapse] = useState(false)
+  const [collapse, setCollapse] = useState(false);
 
   const toggle = () => {
-    setCollapse(!collapse)
-  }
+    setCollapse(!collapse);
+  };
   return (
     <div>
-      <Button color="primary" onClick={toggle}>
+      <Button color='primary' onClick={toggle}>
         Link with href
       </Button>{' '}
-      <Button color="primary" onClick={toggle}>
+      <Button color='primary' onClick={toggle}>
         Button with data-target
       </Button>
       <Collapse isOpen={collapse}>
@@ -25,7 +25,7 @@ const CollapseExample = () => {
         </Card>
       </Collapse>
     </div>
-  )
-}
+  );
+};
 
-export default CollapseExample
+export default CollapseExample;

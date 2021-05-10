@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const propTypes = {
   rows: PropTypes.number,
@@ -7,74 +7,75 @@ const propTypes = {
   label: PropTypes.string,
   placeholder: PropTypes.string,
   readOnly: PropTypes.bool
-}
+};
 
 class TextArea extends React.Component {
   constructor() {
-    super()
+    super();
     this.state = {
       isFocused: false
-    }
+    };
   }
 
   toggleFocusLabel = () => {
     this.setState({
       isFocused: true
-    })
-  }
+    });
+  };
 
-  toggleBlurLabel = e => {
+  toggleBlurLabel = (e) => {
     if (e.target.value === '') {
       this.setState({
         isFocused: !this.state.isFocused
-      })
+      });
     }
-  }
+  };
 
   render() {
-    const { label, placeholder, ...attributes } = this.props
+    const { label, placeholder, ...attributes } = this.props;
 
     if (placeholder) {
       return (
-        <div className="form-group">
+        <div className='form-group'>
           <textarea
             {...attributes}
             className={this.state.isFocused ? 'focus--mouse' : ''}
             onFocus={this.toggleFocusLabel}
-            onBlur={e => this.toggleBlurLabel(e)}
-            id="exampleFormControlTextarea1"
+            onBlur={(e) => this.toggleBlurLabel(e)}
+            id='exampleFormControlTextarea1'
             rows={this.props.rows}
             cols={this.props.cols}
             placeholder={this.props.placeholder}
           />
-          <label htmlFor="exampleFormControlTextarea1" className="active">
+          <label htmlFor='exampleFormControlTextarea1' className='active'>
             {this.props.label}
           </label>
         </div>
-      )
+      );
     }
 
     return (
-      <div className="form-group">
+      <div className='form-group'>
         <textarea
           {...attributes}
           className={this.state.isFocused ? 'focus--mouse' : ''}
           onFocus={this.toggleFocusLabel}
-          onBlur={e => this.toggleBlurLabel(e)}
-          id="exampleFormControlTextarea1"
+          onBlur={(e) => this.toggleBlurLabel(e)}
+          id='exampleFormControlTextarea1'
           rows={this.props.rows}
           cols={this.props.cols}
           placeholder={this.props.placeholder}
         />
         <label
-          htmlFor="exampleFormControlTextarea1"
-          className={this.state.isFocused ? 'active' : ''}>
+          htmlFor='exampleFormControlTextarea1'
+          className={this.state.isFocused ? 'active' : ''}
+        >
           {this.props.label}
         </label>
       </div>
-    )
+    );
   }
 }
-export default TextArea
+export default TextArea;
 
-TextArea.propTypes = propTypes
+TextArea.propTypes = propTypes;

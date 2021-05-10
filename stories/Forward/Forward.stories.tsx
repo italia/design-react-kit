@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-import { Forward, Icon, Card } from '../../src'
+import { Forward, Icon, Card } from '../../src';
 
 const ForwardComponent = () => {
-  const ref = React.useRef(null)
+  const ref = React.useRef(null);
   return (
     <div>
       <Card>
         <Forward scrollToRef={ref}>
-          <Icon color="primary" icon="it-expand" />
+          <Icon color='primary' icon='it-expand' />
         </Forward>
       </Card>
       <div>
@@ -85,11 +85,11 @@ const ForwardComponent = () => {
       </div>
       <div ref={ref}>Scroll to Here</div>
     </div>
-  )
-}
+  );
+};
 
 export default {
   title: 'Componenti/Forward'
-}
+};
 
-export const Esempi = ForwardComponent
+export const Esempi = ForwardComponent;

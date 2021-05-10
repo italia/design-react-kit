@@ -1,151 +1,153 @@
-import React from 'react'
+import React from 'react';
 
-import { Pager, PagerItem, PagerLink, Icon } from '../../src'
-
+import { Pager, PagerItem, PagerLink, Icon } from '../../src';
 
 const EsempiComponent = () => (
-  <Pager aria-label="Esempio di navigazione">
-    <ul className="pagination">
+  <Pager aria-label='Esempio di navigazione'>
+    <ul className='pagination'>
       <PagerItem>
-        <PagerLink previous href="#">
-          <Icon icon="it-chevron-left" aria-hidden />
+        <PagerLink previous href='#'>
+          <Icon icon='it-chevron-left' aria-hidden />
         </PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink href="#">1</PagerLink>
+        <PagerLink href='#'>1</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink href="#">2</PagerLink>
+        <PagerLink href='#'>2</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink href="#">3</PagerLink>
+        <PagerLink href='#'>3</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink next href="#">
-          <Icon icon="it-chevron-right" aria-hidden />
+        <PagerLink next href='#'>
+          <Icon icon='it-chevron-right' aria-hidden />
         </PagerLink>
       </PagerItem>
     </ul>
   </Pager>
-)
+);
 
 export const StatoDisabilitatoEAttivo = () => (
-  <Pager aria-label="Esempio di navigazione">
-    <ul className="pagination">
+  <Pager aria-label='Esempio di navigazione'>
+    <ul className='pagination'>
       <PagerItem disabled>
-        <PagerLink previous href="#">
-          <Icon icon="it-chevron-left" aria-hidden />
+        <PagerLink previous href='#'>
+          <Icon icon='it-chevron-left' aria-hidden />
         </PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink aria-current="page" href="#">
+        <PagerLink aria-current='page' href='#'>
           1
         </PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink href="#">2</PagerLink>
+        <PagerLink href='#'>2</PagerLink>
       </PagerItem>
       <PagerItem disabled>
-        <PagerLink href="#">3</PagerLink>
+        <PagerLink href='#'>3</PagerLink>
       </PagerItem>
       <PagerItem disabled>
-        <PagerLink next href="#">
-          <Icon icon="it-chevron-right" aria-hidden />
+        <PagerLink next href='#'>
+          <Icon icon='it-chevron-right' aria-hidden />
         </PagerLink>
       </PagerItem>
     </ul>
   </Pager>
-)
+);
 
 const AllineamentoComponent = () => (
   <section>
-    <Pager className="justify-content-center" aria-label="Esempio di navigazione">
-      <ul className="pagination">
+    <Pager
+      className='justify-content-center'
+      aria-label='Esempio di navigazione'
+    >
+      <ul className='pagination'>
         <PagerItem disabled>
-          <PagerLink previous href="#">
-            <Icon icon="it-chevron-left" aria-hidden />
+          <PagerLink previous href='#'>
+            <Icon icon='it-chevron-left' aria-hidden />
           </PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink aria-current="page" href="#">
+          <PagerLink aria-current='page' href='#'>
             1
           </PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink href="#">2</PagerLink>
+          <PagerLink href='#'>2</PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink href="#">3</PagerLink>
+          <PagerLink href='#'>3</PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink next href="#">
-            <Icon icon="it-chevron-right" aria-hidden />
+          <PagerLink next href='#'>
+            <Icon icon='it-chevron-right' aria-hidden />
           </PagerLink>
         </PagerItem>
       </ul>
     </Pager>
 
-    <Pager className="justify-content-end" aria-label="Esempio di navigazione">
-      <ul className="pagination">
+    <Pager className='justify-content-end' aria-label='Esempio di navigazione'>
+      <ul className='pagination'>
         <PagerItem disabled>
-          <PagerLink previous href="#">
-            <Icon icon="it-chevron-left" aria-hidden />
+          <PagerLink previous href='#'>
+            <Icon icon='it-chevron-left' aria-hidden />
           </PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink aria-current="page" href="#">
+          <PagerLink aria-current='page' href='#'>
             1
           </PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink href="#">2</PagerLink>
+          <PagerLink href='#'>2</PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink href="#">3</PagerLink>
+          <PagerLink href='#'>3</PagerLink>
         </PagerItem>
         <PagerItem>
-          <PagerLink next href="#">
-            <Icon icon="it-chevron-right" aria-hidden />
+          <PagerLink next href='#'>
+            <Icon icon='it-chevron-right' aria-hidden />
           </PagerLink>
         </PagerItem>
       </ul>
     </Pager>
   </section>
-)
+);
 
 const ResponsiveComponent = () => (
-  <Pager aria-label="Esempio di navigazione">
-    <ul className="pagination">
+  <Pager aria-label='Esempio di navigazione'>
+    <ul className='pagination'>
       <PagerItem>
-        <PagerLink previous href="#">
-          <Icon icon="it-chevron-left" aria-hidden />
+        <PagerLink previous href='#'>
+          <Icon icon='it-chevron-left' aria-hidden />
         </PagerLink>
       </PagerItem>
-      <PagerItem className="d-sm-block">
-        <PagerLink href="#">9</PagerLink>
+      <PagerItem className='d-sm-block'>
+        <PagerLink href='#'>9</PagerLink>
       </PagerItem>
-      <PagerItem className="d-sm-block">
-        <PagerLink href="#">10</PagerLink>
+      <PagerItem className='d-sm-block'>
+        <PagerLink href='#'>10</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink aria-current="page" href="#">
-          <span className="d-sm-none">Pagina&nbsp;</span>11
+        <PagerLink aria-current='page' href='#'>
+          <span className='d-sm-none'>Pagina&nbsp;</span>11
         </PagerLink>
       </PagerItem>
-      <PagerItem className="d-sm-block">
-        <PagerLink href="#">12</PagerLink>
+      <PagerItem className='d-sm-block'>
+        <PagerLink href='#'>12</PagerLink>
       </PagerItem>
-      <PagerItem className="d-sm-block">
-        <PagerLink href="#">13</PagerLink>
+      <PagerItem className='d-sm-block'>
+        <PagerLink href='#'>13</PagerLink>
       </PagerItem>
       <PagerItem>
-        <PagerLink next href="#">
-          <Icon icon="it-chevron-right" aria-hidden />
+        <PagerLink next href='#'>
+          <Icon icon='it-chevron-right' aria-hidden />
         </PagerLink>
       </PagerItem>
     </ul>
   </Pager>
-)
+);
 
 // export const _EsempiInterattivi = () => {
 //   const active = boolean('Attivo', false)
@@ -186,17 +188,17 @@ export default {
   parameters: {
     viewport: { defaultViewport: 'iphone6' }
   }
-}
+};
 
-export const _Esempi = EsempiComponent
+export const _Esempi = EsempiComponent;
 
 StatoDisabilitatoEAttivo.story = {
   name: 'Stato disabilitato e attivo'
-}
+};
 
-export const _Allineamento = AllineamentoComponent
+export const _Allineamento = AllineamentoComponent;
 
-export const _Responsive = ResponsiveComponent
+export const _Responsive = ResponsiveComponent;
 
 // _EsempiInterattivi.story = {
 //   name: 'Esempi interattivi'

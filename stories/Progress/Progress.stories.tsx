@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import { Button, Icon, Progress } from '../../src'
+import { Button, Icon, Progress } from '../../src';
 
 // import Esempi from './docs/Esempi.md'
 // import Etichette from './docs/Etichette.md'
@@ -11,115 +11,113 @@ import { Button, Icon, Progress } from '../../src'
 
 const EsempiComponent = () => (
   <div>
-    <div className="mb-3">
-      <Progress value="0" />
+    <div className='mb-3'>
+      <Progress value='0' />
     </div>
-    <div className="mb-3">
-      <Progress value="25" />
+    <div className='mb-3'>
+      <Progress value='25' />
     </div>
-    <div className="mb-3">
-      <Progress value="50" />
+    <div className='mb-3'>
+      <Progress value='50' />
     </div>
-    <div className="mb-3">
-      <Progress value="75" />
+    <div className='mb-3'>
+      <Progress value='75' />
     </div>
-    <div className="mb-3">
-      <Progress value="100" />
+    <div className='mb-3'>
+      <Progress value='100' />
     </div>
   </div>
-)
+);
 
 const EtichetteComponent = () => (
   <div>
-    <Progress value="35" label="progresso" />
+    <Progress value='35' label='progresso' />
   </div>
-)
+);
 
 const ProgressoIndeterminato = () => (
-  <Progress indeterminate label="In elaborazione..." />
-)
+  <Progress indeterminate label='In elaborazione...' />
+);
 
 const ColoriComponent = () => (
   <div>
-    <div className="mb-3">
-      <Progress value="25" color="success" />
+    <div className='mb-3'>
+      <Progress value='25' color='success' />
     </div>
-    <div className="mb-3">
-      <Progress value="33" color="info" />
+    <div className='mb-3'>
+      <Progress value='33' color='info' />
     </div>
-    <div className="mb-3">
-      <Progress value="50" color="warning" />
+    <div className='mb-3'>
+      <Progress value='50' color='warning' />
     </div>
-    <div className="mb-3">
-      <Progress value="66" color="danger" />
+    <div className='mb-3'>
+      <Progress value='66' color='danger' />
     </div>
   </div>
-)
+);
 
 export const BottoneConProgressBar = () => (
-  <div className="container">
-    <div className="row">
-      <div className="col-12 col-sm-6">
+  <div className='container'>
+    <div className='row'>
+      <div className='col-12 col-sm-6'>
         <p>
           <strong>Bottone primario</strong>
         </p>
-        <Button color="primary" className="btn-progress" disabled>
-          Label bottone{' '}
-          <Icon color="light" icon="it-github" aria-hidden />
+        <Button color='primary' className='btn-progress' disabled>
+          Label bottone <Icon color='light' icon='it-github' aria-hidden />
           <span>
-            <Progress value="50" />
+            <Progress value='50' />
           </span>
         </Button>
       </div>
-      <div className="col-12 col-sm-6">
+      <div className='col-12 col-sm-6'>
         <p>
           <strong>Bottone secondario</strong>
         </p>
-        <Button color="secondary" className="btn-progress" disabled>
-          Label bottone{' '}
-          <Icon color="light" icon="it-github" aria-hidden />
+        <Button color='secondary' className='btn-progress' disabled>
+          Label bottone <Icon color='light' icon='it-github' aria-hidden />
           <span>
-            <Progress value="50" />
+            <Progress value='50' />
           </span>
         </Button>
       </div>
     </div>
   </div>
-)
+);
 
 export const _EsempiInterattivi = ({ value, color, label }) => {
   return (
     <div>
       <Progress value={value} label={label} color={color} />
     </div>
-  )
-}
+  );
+};
 
 export default {
   title: 'Componenti/Progress Indicators'
-}
+};
 
-export const _Esempi = EsempiComponent
+export const _Esempi = EsempiComponent;
 
-export const _Etichette = EtichetteComponent
+export const _Etichette = EtichetteComponent;
 
-export const _ProgressoIndeterminato = ProgressoIndeterminato
+export const _ProgressoIndeterminato = ProgressoIndeterminato;
 
-export const _Colori = ColoriComponent
+export const _Colori = ColoriComponent;
 
 BottoneConProgressBar.story = {
   name: 'Bottone con Progress Bar'
-}
+};
 
 _EsempiInterattivi.story = {
   name: 'Esempi interattivi'
-}
+};
 
 _EsempiInterattivi.args = {
   color: '',
   value: 25,
   label: 'progresso'
-}
+};
 _EsempiInterattivi.argTypes = {
   color: {
     control: {
@@ -127,4 +125,4 @@ _EsempiInterattivi.argTypes = {
       options: ['', 'success', 'info', 'warning', 'danger']
     }
   }
-}
+};

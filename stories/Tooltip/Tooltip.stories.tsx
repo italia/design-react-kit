@@ -1,24 +1,24 @@
-import React from 'react'
-import { UncontrolledTooltip, Button } from '../../src'
+import React from 'react';
+import { UncontrolledTooltip, Button } from '../../src';
 
-import Esempi from './docs/Esempi.md'
-import Posizioni from './docs/Posizioni.md'
-import EsempiInterattivi from './docs/EsempiInterattivi.md'
+import Esempi from './docs/Esempi.md';
+import Posizioni from './docs/Posizioni.md';
+import EsempiInterattivi from './docs/EsempiInterattivi.md';
 
 const EsempiComponent = () => {
-  const ids = ['Example1', 'Example2', 'Example3']
+  const ids = ['Example1', 'Example2', 'Example3'];
 
   ids.map((id, i) => {
-    const div = document.createElement('div')
-    div.setAttribute('id', id)
-    document.body.appendChild(div)
-  })
+    const div = document.createElement('div');
+    div.setAttribute('id', id);
+    document.body.appendChild(div);
+  });
 
   return (
-    <div className="bd-example tooltip-demo">
-      <p className="muted">
+    <div className='bd-example tooltip-demo'>
+      <p className='muted'>
         Ecco un{' '}
-        <a href="#" id={ids[0]}>
+        <a href='#' id={ids[0]}>
           bianco scenario
         </a>
         <br />
@@ -27,7 +27,7 @@ const EsempiComponent = () => {
         degli oggetti di sfondo che pur vivono.
         <br />
         Non ne sarò{' '}
-        <a href="#" id={ids[1]}>
+        <a href='#' id={ids[1]}>
           l’artefice
         </a>{' '}
         impaziente.
@@ -44,7 +44,7 @@ const EsempiComponent = () => {
         <br />
         Per adesso è deserto.
         <br />
-        <a href="#" id={ids[2]}>
+        <a href='#' id={ids[2]}>
           Il mondo può rifarsi senza me
         </a>
         ,
@@ -54,64 +54,64 @@ const EsempiComponent = () => {
         <em>La città nuova, Alda Merini</em>
       </p>
 
-      <UncontrolledTooltip placement="top" target={ids[0]}>
+      <UncontrolledTooltip placement='top' target={ids[0]}>
         Primo tooltip
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement="top" target={ids[1]}>
+      <UncontrolledTooltip placement='top' target={ids[1]}>
         Secondo tooltip
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement="top" target={ids[2]}>
+      <UncontrolledTooltip placement='top' target={ids[2]}>
         Terzo tooltip
       </UncontrolledTooltip>
     </div>
-  )
-}
+  );
+};
 
 const PosizioniComponent = () => {
-  const ids = ['example1', 'example2', 'example3', 'example4', 'example5']
+  const ids = ['example1', 'example2', 'example3', 'example4', 'example5'];
 
   ids.map((id, i) => {
-    const div = document.createElement('div')
-    div.setAttribute('id', id)
-    document.body.appendChild(div)
-  })
+    const div = document.createElement('div');
+    div.setAttribute('id', id);
+    document.body.appendChild(div);
+  });
 
   return (
     <div style={{ padding: 100 }}>
-      <Button id={ids[0]} className="m-3">
+      <Button id={ids[0]} className='m-3'>
         Tooltip in alto
       </Button>
-      <Button id={ids[1]} className="m-3">
+      <Button id={ids[1]} className='m-3'>
         Tooltip a destra
       </Button>
-      <Button id={ids[2]} className="m-3">
+      <Button id={ids[2]} className='m-3'>
         Tooltip in basso
       </Button>
-      <Button id={ids[3]} className="m-3">
+      <Button id={ids[3]} className='m-3'>
         Tooltip a sinistra
       </Button>
-      <Button id={ids[4]} className="m-3">
+      <Button id={ids[4]} className='m-3'>
         Tooltip con HTML
       </Button>
 
-      <UncontrolledTooltip placement="top" target={ids[0]}>
+      <UncontrolledTooltip placement='top' target={ids[0]}>
         Tooltip on top
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement="right" target={ids[1]}>
+      <UncontrolledTooltip placement='right' target={ids[1]}>
         Tooltip on right
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement="bottom" target={ids[2]}>
+      <UncontrolledTooltip placement='bottom' target={ids[2]}>
         Tooltip on bottom
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement="left" target={ids[3]}>
+      <UncontrolledTooltip placement='left' target={ids[3]}>
         Tooltip on left
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement="top" target={ids[4]}>
+      <UncontrolledTooltip placement='top' target={ids[4]}>
         <em>Tooltip</em> <u>with</u> <b>HTML</b>
       </UncontrolledTooltip>
     </div>
-  )
-}
+  );
+};
 
 export const _EsempiInterattivi = ({ placement, text }) => {
   // TODO find a better way to handle this
@@ -122,14 +122,14 @@ export const _EsempiInterattivi = ({ placement, text }) => {
   // https://github.com/storybookjs/storybook/issues/886
   // https://github.com/infinitered/addon-storyshots#using-createnodemock-to-mock-refs
 
-  const id = 'example'
-  const div = document.createElement('div')
-  div.setAttribute('id', id)
-  document.body.appendChild(div)
+  const id = 'example';
+  const div = document.createElement('div');
+  div.setAttribute('id', id);
+  document.body.appendChild(div);
 
   return (
     <div style={{ padding: 200 }}>
-      <Button id={id} className="m-3">
+      <Button id={id} className='m-3'>
         Tooltip
       </Button>
 
@@ -137,17 +137,17 @@ export const _EsempiInterattivi = ({ placement, text }) => {
         {text}
       </UncontrolledTooltip>
     </div>
-  )
-}
+  );
+};
 
 _EsempiInterattivi.story = {
   name: 'Esempi interattivi'
-}
+};
 
 _EsempiInterattivi.args = {
   placement: 'top',
   text: 'Tooltip'
-}
+};
 _EsempiInterattivi.argTypes = {
   placement: {
     control: {
@@ -155,13 +155,12 @@ _EsempiInterattivi.argTypes = {
       options: ['top', 'bottom', 'left', 'right']
     }
   }
-}
+};
 
 export default {
   title: 'Componenti/Tooltip'
-}
+};
 
-export const _Esempi = EsempiComponent
+export const _Esempi = EsempiComponent;
 
-export const _Posizioni = PosizioniComponent
-
+export const _Posizioni = PosizioniComponent;

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import { select, text } from '@storybook/addon-knobs/react'
+import { select, text } from '@storybook/addon-knobs/react';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -17,17 +17,17 @@ import {
   LinkListItem,
   LinkList,
   UncontrolledCollapse
-} from '../../../src'
+} from '../../../src';
 
-import CompleteHeader from '../shared/Header'
-import Footer from '../shared/Footer'
+import CompleteHeader from '../shared/Header';
+import Footer from '../shared/Footer';
 
 const Servizi = () => {
   const theme = select(
     'Tema',
     { default: '', light: 'light', dark: 'dark' },
     ''
-  )
+  );
 
   // TODO find a better way to handle this
   // Storyshot does not use the dom so can't render refs
@@ -36,12 +36,12 @@ const Servizi = () => {
   // nor storybook
   // https://github.com/storybookjs/storybook/issues/886
   // https://github.com/infinitered/addon-storyshots#using-createnodemock-to-mock-refs
-  const div = document.createElement('div')
-  div.setAttribute('id', 'altri-servizi')
-  document.body.appendChild(div)
+  const div = document.createElement('div');
+  div.setAttribute('id', 'altri-servizi');
+  document.body.appendChild(div);
 
-  const townName = text('Comune', 'Nome del Comune')
-  const townTagLine = text('Motto Comune', 'Uno dei tanti Comuni d Italia')
+  const townName = text('Comune', 'Nome del Comune');
+  const townTagLine = text('Motto Comune', 'Uno dei tanti Comuni d Italia');
 
   return (
     <>
@@ -52,18 +52,18 @@ const Servizi = () => {
         townTagLine={townTagLine}
       />
       <main>
-        <Container tag="section" id="briciole" className="px-4 my-4">
+        <Container tag='section' id='briciole' className='px-4 my-4'>
           <Row>
-            <Col className="px-lg-4">
-              <nav aria-label="breadcrumb" className="breadcrumb-container">
+            <Col className='px-lg-4'>
+              <nav aria-label='breadcrumb' className='breadcrumb-container'>
                 <Breadcrumb>
                   <BreadcrumbItem>
-                    <a href="/design-comuni-prototipi/esempi/bootstrap-italia/template-homepage.html">
+                    <a href='/design-comuni-prototipi/esempi/bootstrap-italia/template-homepage.html'>
                       Home
                     </a>
-                    <span className="separator">/</span>
+                    <span className='separator'>/</span>
                   </BreadcrumbItem>
-                  <BreadcrumbItem aria-current="page" active>
+                  <BreadcrumbItem aria-current='page' active>
                     Servizi
                   </BreadcrumbItem>
                 </Breadcrumb>
@@ -71,46 +71,46 @@ const Servizi = () => {
             </Col>
           </Row>
         </Container>
-        <Container tag="section" id="intro" className="px-4 my-4">
+        <Container tag='section' id='intro' className='px-4 my-4'>
           <Row>
-            <Col lg={7} className="px-lg-4 py-lg-2">
+            <Col lg={7} className='px-lg-4 py-lg-2'>
               <h1>Servizi</h1>
               <p>
                 Donec in consequat nunc. Duis semper fermentum lacus, ac
                 condimentum justo auctor a. Nam erat erat, porta vel pharetra
                 in, ullamcorper vel turpis.
               </p>
-              <div className="form-group mt-5">
+              <div className='form-group mt-5'>
                 <form>
                   <Input
-                    id="ricerca-servizi"
-                    type="search"
+                    id='ricerca-servizi'
+                    type='search'
                     label='Cerca contenuti in "Servizi"'
                   />
-                  <span aria-hidden="true" className="autocomplete-icon">
-                    <Icon icon="it-search" size="sm" />
+                  <span aria-hidden='true' className='autocomplete-icon'>
+                    <Icon icon='it-search' size='sm' />
                   </span>
                 </form>
               </div>
-              <div id="filtri-ricerca-amministrazione">
-                <h6 className="small">Filtri</h6>
-                <div className="chip chip-lg">
-                  <span className="chip-label">Tutto</span>
+              <div id='filtri-ricerca-amministrazione'>
+                <h6 className='small'>Filtri</h6>
+                <div className='chip chip-lg'>
+                  <span className='chip-label'>Tutto</span>
                   <button>
-                    <Icon icon="it-close" />
-                    <span className="sr-only">Elimina label</span>
+                    <Icon icon='it-close' />
+                    <span className='sr-only'>Elimina label</span>
                   </button>
                 </div>
-                <div className="ml-2 d-inline">
-                  <button className="btn btn-icon btn-outline-primary btn-sm align-top">
-                    <Icon icon="it-plus" color="primary" />
+                <div className='ml-2 d-inline'>
+                  <button className='btn btn-icon btn-outline-primary btn-sm align-top'>
+                    <Icon icon='it-plus' color='primary' />
                     <span>Aggiungi filtro</span>
                   </button>
                 </div>
               </div>
             </Col>
-            <Col lg={{ size: 4, offset: 1 }} className="pt-5 pt-lg-2">
-              <LinkList className="footer-list clearfix">
+            <Col lg={{ size: 4, offset: 1 }} className='pt-5 pt-lg-2'>
+              <LinkList className='footer-list clearfix'>
                 {[
                   'Tutti i Servizi',
                   'Anagrafe e stato civile',
@@ -122,32 +122,34 @@ const Servizi = () => {
                 ].map((label, i) => {
                   if (i === 0) {
                     return (
-                      <LinkListItem key={label} tag="h3" header>
+                      <LinkListItem key={label} tag='h3' header>
                         {label}
                       </LinkListItem>
-                    )
+                    );
                   }
                   return (
-                    <LinkListItem key={label} href="#">
+                    <LinkListItem key={label} href='#'>
                       <span>{label}</span>
                     </LinkListItem>
-                  )
+                  );
                 })}
                 <LinkListItem
-                  className="large medium left-icon"
-                  aria-expanded="true"
-                  aria-controls="altri-servizi"
-                  id="altri-servizi">
+                  className='large medium left-icon'
+                  aria-expanded='true'
+                  aria-controls='altri-servizi'
+                  id='altri-servizi'
+                >
                   <Icon
-                    icon="it-more-items"
-                    color="primary"
-                    className="right"
+                    icon='it-more-items'
+                    color='primary'
+                    className='right'
                   />
                 </LinkListItem>
                 <UncontrolledCollapse
-                  toggler="#altri-servizi"
-                  className="link-sublist px-0"
-                  tag="ul">
+                  toggler='#altri-servizi'
+                  className='link-sublist px-0'
+                  tag='ul'
+                >
                   {[
                     'Turismo',
                     'Mobilità e trasporti',
@@ -158,23 +160,23 @@ const Servizi = () => {
                     'Salute, benessere e assistenza',
                     'Autorizzazioni',
                     'Agricoltura'
-                  ].map(label => (
+                  ].map((label) => (
                     <LinkListItem key={label}>{label}</LinkListItem>
                   ))}
                 </UncontrolledCollapse>
-                <LinkListItem className="medium" href="#">
+                <LinkListItem className='medium' href='#'>
                   <span>Tutti i servizi</span>
                 </LinkListItem>
               </LinkList>
             </Col>
           </Row>
         </Container>
-        <section id="in-evidenza">
-          <div className="bg-light py-5">
-            <Container className="px-4">
+        <section id='in-evidenza'>
+          <div className='bg-light py-5'>
+            <Container className='px-4'>
               <Row>
                 <Col>
-                  <h3 className="mb-4">In evidenza</h3>
+                  <h3 className='mb-4'>In evidenza</h3>
                 </Col>
               </Row>
               <Row>
@@ -186,21 +188,21 @@ const Servizi = () => {
                   { title: 'Politici', icon: 'it-user' },
                   { title: 'Luoghi', icon: 'it-pa' }
                 ].map(({ title, icon, flagIcon }, i) => (
-                  <Col size="12" sm={6} lg={4} key={`${title}-${i}`}>
-                    <article className="card-wrapper card-space">
+                  <Col size='12' sm={6} lg={4} key={`${title}-${i}`}>
+                    <article className='card-wrapper card-space'>
                       <Card
                         noWrapper
-                        className="card-bg card-big rounded shadow">
+                        className='card-bg card-big rounded shadow'
+                      >
                         <div
-                          className={`flag-icon ${
-                            flagIcon ? '' : 'invisible'
-                          }`}></div>
-                        <div className="etichetta">
+                          className={`flag-icon ${flagIcon ? '' : 'invisible'}`}
+                        ></div>
+                        <div className='etichetta'>
                           <Icon icon={icon} />
                           <span>{title}</span>
                         </div>
                         <CardBody>
-                          <CardTitle tag="h5">
+                          <CardTitle tag='h5'>
                             {i % 2
                               ? 'Lorem ipsum dolor sit amet '
                               : `Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -215,9 +217,9 @@ const Servizi = () => {
                               elit, sed.`}
                           </CardText>
                           <CardReadMore
-                            icon="it-arrow-right"
-                            text="Leggi di più"
-                            href="#"
+                            icon='it-arrow-right'
+                            text='Leggi di più'
+                            href='#'
                           />
                         </CardBody>
                       </Card>
@@ -229,11 +231,11 @@ const Servizi = () => {
           </div>
         </section>
         <section>
-          <div className="py-5">
-            <Container className="px-4">
+          <div className='py-5'>
+            <Container className='px-4'>
               <Row>
                 <Col>
-                  <h3 className="mb-4">Tutti i Servizi</h3>
+                  <h3 className='mb-4'>Tutti i Servizi</h3>
                 </Col>
               </Row>
               <Row>
@@ -253,12 +255,12 @@ const Servizi = () => {
                   'Salute, benessere e assistenza',
                   'Autorizzazioni',
                   'Agricoltura'
-                ].map(label => {
+                ].map((label) => {
                   return (
-                    <Col size="12" sm={6} lg={4} key={label}>
+                    <Col size='12' sm={6} lg={4} key={label}>
                       <Card>
                         <CardBody>
-                          <CardTitle tag="h5" className="big-heading">
+                          <CardTitle tag='h5' className='big-heading'>
                             {label}
                           </CardTitle>
                           <CardText>
@@ -267,32 +269,32 @@ const Servizi = () => {
                             dolore magna aliqua.
                           </CardText>
                           <CardReadMore
-                            icon="it-arrow-right"
-                            text="Leggi di più"
-                            href="#"
+                            icon='it-arrow-right'
+                            text='Leggi di più'
+                            href='#'
                           />
                         </CardBody>
                       </Card>
                     </Col>
-                  )
+                  );
                 })}
               </Row>
             </Container>
           </div>
-          <div className="py-5">
-            <Container className="px-4">
+          <div className='py-5'>
+            <Container className='px-4'>
               <Row>
                 <Col>
-                  <h3 className="mb-4">Argomenti</h3>
+                  <h3 className='mb-4'>Argomenti</h3>
                 </Col>
               </Row>
               <Row>
-                <div className="col text-center">
+                <div className='col text-center'>
                   {['Cultura', 'Muoversi', 'Argomento di esempio'].map(
-                    label => (
-                      <a href="#" key={label}>
-                        <span className="chip chip-simple chip-primary">
-                          <span className="chip-label">{label}</span>
+                    (label) => (
+                      <a href='#' key={label}>
+                        <span className='chip chip-simple chip-primary'>
+                          <span className='chip-label'>{label}</span>
                         </span>
                       </a>
                     )
@@ -305,7 +307,7 @@ const Servizi = () => {
       </main>
       <Footer townName={townName} townTagLine={townTagLine} />
     </>
-  )
-}
+  );
+};
 
-export default Servizi
+export default Servizi;

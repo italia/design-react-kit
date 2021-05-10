@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 import {
   Navbar,
@@ -14,104 +14,105 @@ import {
   LinkList,
   LinkListItem,
   Icon
-} from '../../src'
+} from '../../src';
 
 const _EsempiInterattivi = ({ variation, color, placement }) => {
   return (
     <Navbar
       light
-      expand="lg"
+      expand='lg'
       fixed={placement}
       sticky={placement}
       className={`bg-${variation}`}
-      style={{ backgroundColor: color }}>
-      <NavbarBrand href="#">Brand</NavbarBrand>
+      style={{ backgroundColor: color }}
+    >
+      <NavbarBrand href='#'>Brand</NavbarBrand>
     </Navbar>
-  )
-}
+  );
+};
 
 export default {
   title: 'Componenti/Navbar'
-}
+};
 
 export const _Esempi = () => {
-  const [openNav, setOpenNav] = useState(false)
+  const [openNav, setOpenNav] = useState(false);
   const toggle = () => {
-    setOpenNav(!openNav)
-  }
+    setOpenNav(!openNav);
+  };
   return (
     <section>
-      <Navbar expand="lg">
+      <Navbar expand='lg'>
         <NavbarBrand />
-        <NavbarToggler className="custom-navbar-toggler" onClick={toggle}>
-          <span className="it-list" />
+        <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
+          <span className='it-list' />
         </NavbarToggler>
 
         <Collapse isOpen={openNav} navbar>
-          <Nav navbar className="mt-0">
+          <Nav navbar className='mt-0'>
             <NavItem active>
-              <NavLink active href="#">
+              <NavLink active href='#'>
                 link 1 active
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink disabled href="#">
+              <NavLink disabled href='#'>
                 link 2 disabilitato
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">link 3</NavLink>
+              <NavLink href='#'>link 3</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">link 4</NavLink>
+              <NavLink href='#'>link 4</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">link 5</NavLink>
+              <NavLink href='#'>link 5</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="#">link 6</NavLink>
+              <NavLink href='#'>link 6</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
     </section>
-  )
-}
+  );
+};
 
 export const ConDropdown = () => {
-  const [openNav, setOpenNav] = useState(false)
+  const [openNav, setOpenNav] = useState(false);
   const toggle = () => {
-    setOpenNav(!openNav)
-  }
+    setOpenNav(!openNav);
+  };
   return (
     <section>
-      <Navbar expand="lg">
+      <Navbar expand='lg'>
         <NavbarBrand />
-        <NavbarToggler className="custom-navbar-toggler" onClick={toggle}>
-          <span className="it-list" />
+        <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
+          <span className='it-list' />
         </NavbarToggler>
 
         <Collapse isOpen={openNav} navbar>
-          <Nav navbar className="mt-0">
+          <Nav navbar className='mt-0'>
             <NavItem active>
-              <NavLink active href="#">
+              <NavLink active href='#'>
                 link 1 active
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink disabled href="#">
+              <NavLink disabled href='#'>
                 link 2 disabilitato
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">link 3</NavLink>
+              <NavLink href='#'>link 3</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">link 4</NavLink>
+              <NavLink href='#'>link 4</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">link 5</NavLink>
+              <NavLink href='#'>link 5</NavLink>
             </NavItem>
 
             <UncontrolledDropdown nav inNavbar>
@@ -141,26 +142,26 @@ export const ConDropdown = () => {
         </Collapse>
       </Navbar>
     </section>
-  )
-}
+  );
+};
 
 export const ConMegamenuInProgress = () => {
-  const [openNav, setOpenNav] = useState(false)
+  const [openNav, setOpenNav] = useState(false);
   const toggle = () => {
-    setOpenNav(!openNav)
-  }
+    setOpenNav(!openNav);
+  };
   return (
     <section>
-      <Navbar expand="lg" className="megamenu">
+      <Navbar expand='lg' className='megamenu'>
         <NavbarBrand />
-        <NavbarToggler className="custom-navbar-toggler" onClick={toggle}>
-          <span className="it-list" />
+        <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
+          <span className='it-list' />
         </NavbarToggler>
 
         <Collapse isOpen={openNav} navbar>
-          <Nav className="mt-0" navbar>
+          <Nav className='mt-0' navbar>
             <NavItem active>
-              <UncontrolledDropdown tag="div" nav inNavbar>
+              <UncontrolledDropdown tag='div' nav inNavbar>
                 <DropdownToggle nav caret>
                   Megamenu 1
                 </DropdownToggle>
@@ -172,7 +173,7 @@ export const ConMegamenuInProgress = () => {
               </UncontrolledDropdown>
             </NavItem>
             <NavItem>
-              <UncontrolledDropdown tag="div" nav inNavbar>
+              <UncontrolledDropdown tag='div' nav inNavbar>
                 <DropdownToggle nav caret>
                   Megamenu 2
                 </DropdownToggle>
@@ -184,7 +185,7 @@ export const ConMegamenuInProgress = () => {
               </UncontrolledDropdown>
             </NavItem>
             <NavItem>
-              <UncontrolledDropdown tag="div" nav inNavbar>
+              <UncontrolledDropdown tag='div' nav inNavbar>
                 <DropdownToggle nav caret>
                   Megamenu 3
                 </DropdownToggle>
@@ -199,46 +200,43 @@ export const ConMegamenuInProgress = () => {
         </Collapse>
       </Navbar>
     </section>
-  )
-}
+  );
+};
 
 ConMegamenuInProgress.story = {
   name: 'Con Megamenu (in progress)'
-}
+};
 
 export const InlineMenu = () => {
-  const [collapseOpen1, setCollapseOpen1] = useState(false)
-  const [collapseOpen2, setCollapseOpen2] = useState(false)
-  const [collapseOpen3, setCollapseOpen3] = useState(false)
+  const [collapseOpen1, setCollapseOpen1] = useState(false);
+  const [collapseOpen2, setCollapseOpen2] = useState(false);
+  const [collapseOpen3, setCollapseOpen3] = useState(false);
 
   const expanded = {
     'aria-expanded': true
-  }
+  };
   const toggle = (e, id) => {
-    e.preventDefault()
+    e.preventDefault();
     switch (id) {
       case 1:
-        return setCollapseOpen1(!collapseOpen1)
+        return setCollapseOpen1(!collapseOpen1);
       case 2:
-        return setCollapseOpen2(!collapseOpen2)
+        return setCollapseOpen2(!collapseOpen2);
       case 3:
-        return setCollapseOpen3(!collapseOpen3)
+        return setCollapseOpen3(!collapseOpen3);
     }
-  }
+  };
   return (
-    <nav className="inline-menu">
+    <nav className='inline-menu'>
       <LinkList>
         <LinkListItem
-          size="large"
-          className="right-icon"
-          onClick={e => toggle(e, 1)}
-          {...(collapseOpen1 ? expanded : {})}>
+          size='large'
+          className='right-icon'
+          onClick={(e) => toggle(e, 1)}
+          {...(collapseOpen1 ? expanded : {})}
+        >
           <span>Link list 1 </span>
-          <Icon
-            className="right"
-            icon="it-expand"
-            aria-hidden
-          />
+          <Icon className='right' icon='it-expand' aria-hidden />
         </LinkListItem>
         <Collapse isOpen={collapseOpen1}>
           <LinkList sublist>
@@ -254,16 +252,13 @@ export const InlineMenu = () => {
           </LinkList>
         </Collapse>
         <LinkListItem
-          size="large"
-          className="right-icon"
-          onClick={e => toggle(e, 2)}
-          {...(collapseOpen2 ? expanded : {})}>
+          size='large'
+          className='right-icon'
+          onClick={(e) => toggle(e, 2)}
+          {...(collapseOpen2 ? expanded : {})}
+        >
           <span>Link list 2 </span>
-          <Icon
-            className="right"
-            icon="it-expand"
-            aria-hidden
-          />
+          <Icon className='right' icon='it-expand' aria-hidden />
         </LinkListItem>
         <Collapse isOpen={collapseOpen2}>
           <LinkList sublist>
@@ -279,16 +274,13 @@ export const InlineMenu = () => {
           </LinkList>
         </Collapse>
         <LinkListItem
-          size="large"
-          className="right-icon"
-          onClick={e => toggle(e, 3)}
-          {...(collapseOpen3 ? expanded : {})}>
+          size='large'
+          className='right-icon'
+          onClick={(e) => toggle(e, 3)}
+          {...(collapseOpen3 ? expanded : {})}
+        >
           <span>Link list 3 </span>
-          <Icon
-            className="right"
-            icon="it-expand"
-            aria-hidden
-          />
+          <Icon className='right' icon='it-expand' aria-hidden />
         </LinkListItem>
         <Collapse isOpen={collapseOpen3}>
           <LinkList sublist>
@@ -305,22 +297,22 @@ export const InlineMenu = () => {
         </Collapse>
       </LinkList>
     </nav>
-  )
-}
+  );
+};
 
 InlineMenu.story = {
   name: 'Inline Menù'
-}
+};
 
 _EsempiInterattivi.story = {
   name: 'Esempi interattivi'
-}
+};
 
 _EsempiInterattivi.args = {
   placement: '',
   variation: '',
   color: '#e3f2fd'
-}
+};
 _EsempiInterattivi.argTypes = {
   placement: {
     control: {
@@ -339,4 +331,4 @@ _EsempiInterattivi.argTypes = {
       type: 'color'
     }
   }
-}
+};

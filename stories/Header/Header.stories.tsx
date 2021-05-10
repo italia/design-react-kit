@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import {
   // Components to exclude from the table
@@ -21,25 +21,25 @@ import {
   HeaderSearch,
   HeaderSocialsZone,
   HeaderToggler
-} from '../../src'
+} from '../../src';
 
-import SlimHeaderBasic from './SlimHeader/basic'
-import SlimHeaderFull from './SlimHeader/basic-full-responsive'
-import CenterHeaderBasic from './CenterHeader/basic'
-import NavHeaderBasic from './NavHeader/basic'
+import SlimHeaderBasic from './SlimHeader/basic';
+import SlimHeaderFull from './SlimHeader/basic-full-responsive';
+import CenterHeaderBasic from './CenterHeader/basic';
+import NavHeaderBasic from './NavHeader/basic';
 import CompleteHeaderBasic, {
   SlimHeader,
   CenterHeader,
   NavHeader
-} from './CompleteHeader/basic'
+} from './CompleteHeader/basic';
 
-import Introduction from './Introduction'
+import Introduction from './Introduction';
 
-import SlimBasicDoc from './SlimHeader/basic.md'
-import SlimFullDoc from './SlimHeader/basic-full-responsive.md'
-import CenterBasicDoc from './CenterHeader/basic.md'
-import NavBasicDoc from './NavHeader/basic.md'
-import CompleteBasicDoc from './CompleteHeader/basic.md'
+import SlimBasicDoc from './SlimHeader/basic.md';
+import SlimFullDoc from './SlimHeader/basic-full-responsive.md';
+import CenterBasicDoc from './CenterHeader/basic.md';
+import NavBasicDoc from './NavHeader/basic.md';
+import CompleteBasicDoc from './CompleteHeader/basic.md';
 
 export default {
   title: 'Componenti/Header',
@@ -56,20 +56,20 @@ export default {
       }
     }
   }
-}
+};
 
-export const Introduzione = () => <Introduction />
+export const Introduzione = () => <Introduction />;
 
-export const HeaderSlim = SlimHeaderBasic
+export const HeaderSlim = SlimHeaderBasic;
 
 HeaderSlim.story = {
   name: 'Header slim'
-}
+};
 HeaderSlim.story.args = {
   theme: '',
   isOpen: false,
   brandText: 'Ente appartenenza/Owner'
-}
+};
 
 HeaderSlim.argTypes = {
   theme: {
@@ -79,17 +79,17 @@ HeaderSlim.argTypes = {
       options: ['', 'dark', 'light']
     }
   }
-}
+};
 
-export const SlimHeaderWithFullButton = SlimHeaderFull
+export const SlimHeaderWithFullButton = SlimHeaderFull;
 
 SlimHeaderWithFullButton.story = {
   name: 'Header slim with full button'
-}
+};
 
 SlimHeaderWithFullButton.args = {
   theme: ''
-}
+};
 
 SlimHeaderWithFullButton.argTypes = {
   theme: {
@@ -98,17 +98,17 @@ SlimHeaderWithFullButton.argTypes = {
       options: ['', 'dark', 'light']
     }
   }
-}
+};
 
-export const HeaderCenter = CenterHeaderBasic
+export const HeaderCenter = CenterHeaderBasic;
 
 HeaderCenter.story = {
   name: 'Header center'
-}
+};
 HeaderCenter.args = {
   theme: '',
   isSmall: false
-}
+};
 
 HeaderCenter.argTypes = {
   theme: {
@@ -117,9 +117,9 @@ HeaderCenter.argTypes = {
       options: ['', 'dark', 'light']
     }
   }
-}
+};
 
-export const HeaderNav = NavHeaderBasic
+export const HeaderNav = NavHeaderBasic;
 
 HeaderNav.story = {
   name: 'Header nav',
@@ -128,11 +128,11 @@ HeaderNav.story = {
       showPanel: false
     }
   }
-}
+};
 HeaderNav.args = {
   theme: '',
   isOpen: false
-}
+};
 
 HeaderNav.argTypes = {
   theme: {
@@ -141,14 +141,14 @@ HeaderNav.argTypes = {
       options: ['', 'dark', 'light']
     }
   }
-}
+};
 
-export const HeaderComplete = CompleteHeaderBasic
+export const HeaderComplete = CompleteHeaderBasic;
 HeaderComplete.args = {
   theme: '',
   slimHeaderType: 'default',
   sticky: false
-}
+};
 HeaderComplete.argTypes = {
   slimHeaderType: {
     control: {
@@ -162,4 +162,4 @@ HeaderComplete.argTypes = {
       options: ['', 'dark', 'light']
     }
   }
-}
+};

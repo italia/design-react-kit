@@ -1,20 +1,20 @@
-import React from 'react'
+import React from 'react';
 
-import { Collapse, LinkList, LinkListItem, Icon } from '../../src'
+import { Collapse, LinkList, LinkListItem, Icon } from '../../src';
 
-import LinkListCollapsibleExample from './LinkListCollapsibleExample'
+import LinkListCollapsibleExample from './LinkListCollapsibleExample';
 
 const NavigationComponent = () => (
   <LinkList>
-    <LinkListItem size="medium" className="right-icon">
+    <LinkListItem size='medium' className='right-icon'>
       <span>Link list 1 </span>
-      <i className="it-favorite right" />
-      <Icon icon="it-link" color="primary" className="right" />
+      <i className='it-favorite right' />
+      <Icon icon='it-link' color='primary' className='right' />
     </LinkListItem>
-    <LinkListItem size="medium" className="right-icon">
+    <LinkListItem size='medium' className='right-icon'>
       <span>Link list 2 </span>
-      <i className="it-favorite right" />
-      <Icon icon="it-link" color="primary" className="right" />
+      <i className='it-favorite right' />
+      <Icon icon='it-link' color='primary' className='right' />
     </LinkListItem>
     <LinkList sublist>
       <LinkListItem>
@@ -27,18 +27,18 @@ const NavigationComponent = () => (
         <span>Link list 6 </span>
       </LinkListItem>
     </LinkList>
-    <LinkListItem size="medium" className="right-icon">
+    <LinkListItem size='medium' className='right-icon'>
       <span>Link list 3 </span>
-      <i className="it-favorite right" />
-      <Icon icon="it-link" color="primary" className="right" />
+      <i className='it-favorite right' />
+      <Icon icon='it-link' color='primary' className='right' />
     </LinkListItem>
   </LinkList>
-)
+);
 
 export default {
   title: 'Componenti/LinkList/Nested navigation'
-}
+};
 
-export const Fixed = NavigationComponent
+export const Fixed = NavigationComponent;
 
-export const _Collapsible = LinkListCollapsibleExample
+export const _Collapsible = LinkListCollapsibleExample;

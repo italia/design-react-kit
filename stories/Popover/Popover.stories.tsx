@@ -1,12 +1,12 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef } from 'react';
 
-import { Popover, PopoverHeader, PopoverBody, Button } from '../../src'
+import { Popover, PopoverHeader, PopoverBody, Button } from '../../src';
 
-import PopoverExample from './PopoverExample'
-import PopoverPositionExample from './PopoverPositionExample'
-import PopoverIconLink from './PopoverIconLink'
-import PopoverHover from './PopoverHover'
-import PopoverFocus from './PopoverFocus'
+import PopoverExample from './PopoverExample';
+import PopoverPositionExample from './PopoverPositionExample';
+import PopoverIconLink from './PopoverIconLink';
+import PopoverHover from './PopoverHover';
+import PopoverFocus from './PopoverFocus';
 
 // import Esempi from './docs/Esempi.md'
 // import QuattroDirezioni from './docs/QuattroDirezioni.md'
@@ -21,10 +21,10 @@ const ElementiDisabilitatiComponent = () => {
 
   return (
     <div>
-      <Button color="primary" disabled innerRef={targetRef}>
+      <Button color='primary' disabled innerRef={targetRef}>
         Popover disabilitato
       </Button>
-      <Popover placement="right" target={targetRef}>
+      <Popover placement='right' target={targetRef}>
         <PopoverHeader>Titolo del popover</PopoverHeader>
         <PopoverBody>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
@@ -32,12 +32,12 @@ const ElementiDisabilitatiComponent = () => {
         </PopoverBody>
       </Popover>
     </div>
-  )
-}
+  );
+};
 
 ElementiDisabilitatiComponent.story = {
   name: 'Elementi disabilitati'
-}
+};
 
 // const EsempiInterattiviComponent = () => {
 //   const [popoverOpen, setPopoverOpen] = useState(false)
@@ -91,53 +91,54 @@ ElementiDisabilitatiComponent.story = {
 
 export default {
   title: 'Componenti/Popover'
-}
+};
 
-export const _Esempi = PopoverExample
+export const _Esempi = PopoverExample;
 
-export const LeQuattroDirezioni = PopoverPositionExample
+export const LeQuattroDirezioni = PopoverPositionExample;
 
 LeQuattroDirezioni.story = {
   name: 'Le quattro direzioni'
-}
+};
 
-export const TitoloConIconaELink = PopoverIconLink
+export const TitoloConIconaELink = PopoverIconLink;
 
 TitoloConIconaELink.story = {
   name: 'Titolo con icona e link'
-}
+};
 
-export const ModalitaHover = PopoverHover
+export const ModalitaHover = PopoverHover;
 
 ModalitaHover.story = {
   name: 'Modalità Hover'
-}
+};
 
-export const DismissAlClickSuccessivo = PopoverFocus
+export const DismissAlClickSuccessivo = PopoverFocus;
 
 DismissAlClickSuccessivo.story = {
   name: 'Dismiss al click successivo'
-}
+};
 
-export const _ElementiDisabilitati = ElementiDisabilitatiComponent
+export const _ElementiDisabilitati = ElementiDisabilitatiComponent;
 
 _ElementiDisabilitati.story = {
   name: 'Elementi disabilitati'
-}
+};
 
 export const _EsempiInterattivi = ({ disabled, placement, title, text }) => {
-  const [isOpen, toggle] = useState(false)
+  const [isOpen, toggle] = useState(false);
 
-  const id = 'example'
+  const id = 'example';
   // Avoid Jest complaints
   // const target = () => document.getElementById(id)
   return (
     <div style={{ padding: 250, textAlign: 'center' }}>
       <Button
         id={id}
-        color="primary"
+        color='primary'
         disabled={disabled}
-        onClick={() => toggle(!isOpen)}>
+        onClick={() => toggle(!isOpen)}
+      >
         Popover {disabled ? 'Disabilitato' : ''}
       </Button>
 
@@ -145,17 +146,18 @@ export const _EsempiInterattivi = ({ disabled, placement, title, text }) => {
         placement={placement}
         target={id}
         toggle={() => toggle(!isOpen)}
-        isOpen={isOpen}>
+        isOpen={isOpen}
+      >
         <PopoverHeader>{title}</PopoverHeader>
         <PopoverBody>{text}</PopoverBody>
       </Popover>
     </div>
-  )
-}
+  );
+};
 
 _EsempiInterattivi.story = {
   name: 'Esempi interattivi'
-}
+};
 
 _EsempiInterattivi.args = {
   disabled: false,
@@ -163,7 +165,7 @@ _EsempiInterattivi.args = {
   title: 'Titolo del popover',
   text:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.'
-}
+};
 _EsempiInterattivi.argTypes = {
   placement: {
     control: {
@@ -171,4 +173,4 @@ _EsempiInterattivi.argTypes = {
       options: ['top', 'bottom', 'left', 'right']
     }
   }
-}
+};

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import {
   Collapse,
@@ -15,20 +15,21 @@ import {
   DropdownItem,
   LinkList,
   LinkListItem
-} from '../../../src'
+} from '../../../src';
 
 const NavHeader = ({ theme, isOpen }) => {
   return (
-    <Header type="navbar" theme={theme}>
-      <HeaderContent expand="lg" megamenu>
+    <Header type='navbar' theme={theme}>
+      <HeaderContent expand='lg' megamenu>
         <HeaderToggler
           onClick={() => {
             /* set logic open state  */
           }}
-          aria-controls="nav1"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <Icon icon="it-burger" />
+          aria-controls='nav1'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+        >
+          <Icon icon='it-burger' />
         </HeaderToggler>
         <Collapse
           navbar
@@ -36,52 +37,54 @@ const NavHeader = ({ theme, isOpen }) => {
           isOpen={isOpen}
           onOverlayClick={() => {
             /* set close logic here */
-          }}>
-          <div className="menu-wrapper">
+          }}
+        >
+          <div className='menu-wrapper'>
             <Nav navbar>
               <NavItem active>
-                <NavLink href="#" active>
+                <NavLink href='#' active>
                   <span>link 1 active </span>
-                  <span className="sr-only">current</span>
+                  <span className='sr-only'>current</span>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#" disabled>
+                <NavLink href='#' disabled>
                   Link 2
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Link 3</NavLink>
+                <NavLink href='#'>Link 3</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Link 4</NavLink>
+                <NavLink href='#'>Link 4</NavLink>
               </NavItem>
               <NavItem>
-                <UncontrolledDropdown nav tag="div">
+                <UncontrolledDropdown nav tag='div'>
                   <DropdownToggle nav caret>
                     Dropdown item
-                    <Icon icon="it-expand" />
+                    <Icon icon='it-expand' />
                   </DropdownToggle>
                   <DropdownMenu>
                     <LinkList>
                       <LinkListItem
                         header
-                        tag="h3"
-                        className="no_toc"
-                        id="heading-es-1">
+                        tag='h3'
+                        className='no_toc'
+                        id='heading-es-1'
+                      >
                         Heading
                       </LinkListItem>
-                      <LinkListItem tag={DropdownItem} href="#">
+                      <LinkListItem tag={DropdownItem} href='#'>
                         <span>Link list 1</span>
                       </LinkListItem>
-                      <LinkListItem tag={DropdownItem} href="#">
+                      <LinkListItem tag={DropdownItem} href='#'>
                         <span>Link list 2</span>
                       </LinkListItem>
-                      <LinkListItem tag={DropdownItem} href="#">
+                      <LinkListItem tag={DropdownItem} href='#'>
                         <span>Link list 3</span>
                       </LinkListItem>
                       <LinkListItem divider />
-                      <LinkListItem tag={DropdownItem} href="#">
+                      <LinkListItem tag={DropdownItem} href='#'>
                         <span>Link list 4</span>
                       </LinkListItem>
                     </LinkList>
@@ -89,7 +92,7 @@ const NavHeader = ({ theme, isOpen }) => {
                 </UncontrolledDropdown>
               </NavItem>
               <NavItem>
-                <NavLink href="#" disabled>
+                <NavLink href='#' disabled>
                   Megamenu label
                 </NavLink>
               </NavItem>
@@ -98,7 +101,7 @@ const NavHeader = ({ theme, isOpen }) => {
         </Collapse>
       </HeaderContent>
     </Header>
-  )
-}
+  );
+};
 
-export default NavHeader
+export default NavHeader;

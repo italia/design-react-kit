@@ -1,111 +1,117 @@
-import React from 'react'
+import React from 'react';
 
-import { Nav, NavItem, NavLink } from '../../src'
+import { Nav, NavItem, NavLink } from '../../src';
 
-import {TabExampleText, TabExampleIcon, TabExampleTextIcon, TabExampleButton, TabExampleButtonVertical} from './TabExample'
+import {
+  TabExampleText,
+  TabExampleIcon,
+  TabExampleTextIcon,
+  TabExampleButton,
+  TabExampleButtonVertical
+} from './TabExample';
 
 const EsempiComponent = () => (
   <div>
-    <Nav tabs className="mb-3">
+    <Nav tabs className='mb-3'>
       <NavItem>
-        <NavLink href="#" active>
+        <NavLink href='#' active>
           Link Attivo
         </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">Link</NavLink>
+        <NavLink href='#'>Link</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">Link</NavLink>
+        <NavLink href='#'>Link</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#" disabled>
+        <NavLink href='#' disabled>
           Link disabilitato
         </NavLink>
       </NavItem>
     </Nav>
 
-    <Nav tabs className="nav-dark">
+    <Nav tabs className='nav-dark'>
       <NavItem>
-        <NavLink href="#" active>
+        <NavLink href='#' active>
           Link Attivo
         </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">Link</NavLink>
+        <NavLink href='#'>Link</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">Link</NavLink>
+        <NavLink href='#'>Link</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#" disabled>
+        <NavLink href='#' disabled>
           Link disabilitato
         </NavLink>
       </NavItem>
     </Nav>
   </div>
-)
+);
 
 export default {
   title: 'Componenti/Tab'
-}
+};
 
 export const Esempi = () => (
   <div>
-    <Nav tabs className="mb-3">
+    <Nav tabs className='mb-3'>
       <NavItem>
-        <NavLink href="#" active>
+        <NavLink href='#' active>
           Link Attivo
         </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">Link</NavLink>
+        <NavLink href='#'>Link</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">Link</NavLink>
+        <NavLink href='#'>Link</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#" disabled>
+        <NavLink href='#' disabled>
           Link disabilitato
         </NavLink>
       </NavItem>
     </Nav>
 
-    <Nav tabs className="nav-dark">
+    <Nav tabs className='nav-dark'>
       <NavItem>
-        <NavLink href="#" active>
+        <NavLink href='#' active>
           Link Attivo
         </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">Link</NavLink>
+        <NavLink href='#'>Link</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">Link</NavLink>
+        <NavLink href='#'>Link</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#" disabled>
+        <NavLink href='#' disabled>
           Link disabilitato
         </NavLink>
       </NavItem>
     </Nav>
   </div>
-)
+);
 
-export const _Contenuto = () => <TabExampleText />
+export const _Contenuto = () => <TabExampleText />;
 
-export const _Icone = () => <TabExampleIcon />
+export const _Icone = () => <TabExampleIcon />;
 
-export const IconeETesto = () => <TabExampleTextIcon />
+export const IconeETesto = () => <TabExampleTextIcon />;
 
 IconeETesto.story = {
   name: 'Icone e testo'
-}
+};
 
-export const TabABottoni = () => <TabExampleButton />
+export const TabABottoni = () => <TabExampleButton />;
 
 TabABottoni.story = {
   name: 'Tab a bottoni'
-}
+};
 
-export const _AllineamentoVerticale = () => <TabExampleButtonVertical />
+export const _AllineamentoVerticale = () => <TabExampleButtonVertical />;

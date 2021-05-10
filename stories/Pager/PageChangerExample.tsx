@@ -1,31 +1,32 @@
-import React from 'react'
+import React from 'react';
 import {
   Dropdown,
   DropdownToggle,
   DropdownMenu,
   LinkList,
   LinkListItem
-} from '../../src'
+} from '../../src';
 
 class PageChangerExample extends React.Component {
   state = {
     dropdownOpen: false
-  }
+  };
 
   toggle = () => {
     this.setState({
       dropdownOpen: !this.state.dropdownOpen
-    })
-  }
+    });
+  };
 
   render() {
     return (
       <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle
-          tag="a"
-          id="pagerChanger"
-          className="btn btn-dropdown"
-          caret>
+          tag='a'
+          id='pagerChanger'
+          className='btn btn-dropdown'
+          caret
+        >
           pag.10
         </DropdownToggle>
         <DropdownMenu>
@@ -38,8 +39,8 @@ class PageChangerExample extends React.Component {
           </LinkList>
         </DropdownMenu>
       </Dropdown>
-    )
+    );
   }
 }
 
-export default PageChangerExample
+export default PageChangerExample;
