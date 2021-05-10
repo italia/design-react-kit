@@ -1,21 +1,10 @@
 import React from 'react';
-import { addDecorator } from '@storybook/react';
-import { default as theme } from './theme.js';
+import { theme } from './theme';
 import {FontLoader} from '../src';
 
 import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
 import '../assets/css/fonts.css';
 import '../assets/css/storybook-fixes.css';
-
-
-const styles = {
-  position: 'relative',
-  boxSizing: 'border-box',
-  margin: '0',
-  padding: '48px 32px',
-  textAlign: 'initial'
-};
-const WrapperDecorator = storyFn => <div style={styles}><FontLoader />{storyFn()}</div>;
 
 const order = {
   'documentazione': 1,
@@ -25,12 +14,13 @@ const order = {
 
 const prioritySections = ['welcome-page', 'organizzare', 'menu', 'componenti', 'form', 'utilities'];
 const priorityPages = ["introduzione"];
+
 // https://storybook.js.org/docs/react/writing-stories/parameters#global-parameters
 export const parameters = {
   // https://storybook.js.org/docs/react/essentials/actions#automatically-matching-args
   actions: { argTypesRegex: '^on.*' },
   options: {
-    storySort: (a, b) => {
+    storySort: (a: string[], b: string[]) => {
       const [aGroups, aStory] = a[0].split('--');
       const [bGroups, bStory] = b[0].split('--');
       const [aSection, ...aSubSections] = aGroups.split('-');
@@ -39,6 +29,7 @@ export const parameters = {
       const aFullStoryName = `${aSubSections.join('-')}-${aStory}`
       const bFullStoryName = `${bSubSections.join('-')}-${bStory}`
       // Sort by Section 
+      // @ts-ignore
       const groupScore = (order[aSection] - order[bSection]);
 
 
@@ -76,5 +67,13 @@ export const parameters = {
   },
 };
 
-
-addDecorator(WrapperDecorator);
+export const decorators = [
+  // @ts-ignore
+  Story => <div style={{
+    position: 'relative',
+    boxSizing: 'border-box',
+    margin: '0',
+    padding: '48px 32px',
+    textAlign: 'initial'
+  }}><FontLoader /><Story/></div>
+]

@@ -27,7 +27,24 @@ module.exports = {
       exclude: /node_modules/,
       // add errors to webpack instead of warnings
       failOnError: true,
-    }))
+    }));
+
+    const jsRule = config.module.rules.find(({test}) => test.test(".js"));
+    console.log(jsRule);
+
+    // {
+    //   test: /\.jsx?$/,
+    //   use: [
+    //     {
+    //       loader: 'babel-loader',
+    //       options: {
+    //         sourceType: 'unambiguous',
+    //         babelrc: false,
+    //         presets: ['react-app']
+    //       }
+    //     }
+    //   ]
+    // },
 
     return config;
   },

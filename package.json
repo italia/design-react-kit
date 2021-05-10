@@ -87,6 +87,8 @@
     "classnames": "^2.3.1",
     "eslint-plugin-prettier": "^3.4.0",
     "husky": "^6.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest-transform-stub": "^2.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
@@ -112,5 +114,11 @@
     "not op_mini all",
     "edge >= 13",
     "safari 11"
-  ]
+  ],
+  "jest": {
+    "moduleNameMapper": {
+      "^.+.(svg|png|jpg)$": "jest-transform-stub",
+      "^.+\\.css$": "identity-obj-proxy"
+    }
+  }
 }
