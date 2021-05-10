@@ -28,7 +28,7 @@
     "url": "git+https://github.com/italia/design-react-kit.git"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=10"
   },
   "scripts": {
     "start": "tsdx watch",
