@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {CSSProperties} from 'react';
 import { theme } from './theme';
 import {FontLoader} from '../src';
 
@@ -14,6 +14,14 @@ const order = {
 
 const prioritySections = ['welcome-page', 'organizzare', 'menu', 'componenti', 'form', 'utilities'];
 const priorityPages = ["introduzione"];
+
+const customStyle = {
+  position: 'relative',
+  boxSizing: 'border-box',
+  margin: '0',
+  padding: '48px 32px',
+  textAlign: 'initial'
+} as CSSProperties
 
 // https://storybook.js.org/docs/react/writing-stories/parameters#global-parameters
 export const parameters = {
@@ -68,12 +76,5 @@ export const parameters = {
 };
 
 export const decorators = [
-  // @ts-ignore
-  Story => <div style={{
-    position: 'relative',
-    boxSizing: 'border-box',
-    margin: '0',
-    padding: '48px 32px',
-    textAlign: 'initial'
-  }}><FontLoader /><Story/></div>
+  Story => <div style={customStyle}><FontLoader /><Story/></div>
 ]
