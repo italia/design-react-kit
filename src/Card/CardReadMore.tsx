@@ -1,10 +1,9 @@
-import React, {FC, HTMLAttributes, ElementType} from 'react';
-import classNames from 'classnames'
+import React, { FC, HTMLAttributes, ElementType } from 'react';
+import classNames from 'classnames';
 
-import {Icon} from '../Icon/Icon'
+import { Icon } from '../Icon/Icon';
 
-
-export interface CardReadMoreProps extends HTMLAttributes<HTMLElement>{
+export interface CardReadMoreProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente CardReadMore*/
@@ -17,12 +16,19 @@ export interface CardReadMoreProps extends HTMLAttributes<HTMLElement>{
   iconName?: string;
 }
 
-export const CardReadMore: FC<CardReadMoreProps> = ({ className, text, iconName =  'it-arrow-right', tag: Tag = 'a', href, ...attributes }) => {
-  const classes = classNames(className, 'read-more')
+export const CardReadMore: FC<CardReadMoreProps> = ({
+  className,
+  text,
+  iconName = 'it-arrow-right',
+  tag: Tag = 'a',
+  href,
+  ...attributes
+}) => {
+  const classes = classNames(className, 'read-more');
   return (
     <Tag className={classes} href={href} {...attributes}>
-      <span className="text">{text}</span>
+      <span className='text'>{text}</span>
       {iconName && <Icon icon={iconName} />}
     </Tag>
-  )
-}
+  );
+};

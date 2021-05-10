@@ -1,7 +1,7 @@
-import React, {FC, HTMLAttributes, ElementType} from 'react';
-import classNames from 'classnames'
+import React, { FC, HTMLAttributes, ElementType } from 'react';
+import classNames from 'classnames';
 
-export interface AvatarWrapperProps extends HTMLAttributes<HTMLElement>{
+export interface AvatarWrapperProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente AvatarStatus */
@@ -10,9 +10,14 @@ export interface AvatarWrapperProps extends HTMLAttributes<HTMLElement>{
   extra?: 'text' | string;
 }
 
-export const AvatarWrapper: FC<AvatarWrapperProps> = ({ className, tag: Tag = 'div', extra, ...attributes }) => {
+export const AvatarWrapper: FC<AvatarWrapperProps> = ({
+  className,
+  tag: Tag = 'div',
+  extra,
+  ...attributes
+}) => {
   const wrapperClass = classNames('avatar-wrapper', className, {
     [`avatar-extra-${extra}`]: extra
-  })
-  return <Tag {...attributes} className={wrapperClass} />
-}
+  });
+  return <Tag {...attributes} className={wrapperClass} />;
+};

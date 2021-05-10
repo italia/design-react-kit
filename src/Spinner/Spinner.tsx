@@ -1,11 +1,11 @@
 import React, { FC, HTMLAttributes, ElementType } from 'react';
-import classNames from 'classnames'
+import classNames from 'classnames';
 
 export interface SpinnerProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente Spinner */
-  className?: string
+  className?: string;
   /** Utilizzato per indicare lo stato attivo di caricamento (animato) */
   active?: boolean;
   /** Utilizzato per ottenere la versione ridotta del componente Spinner */
@@ -22,16 +22,13 @@ export const Spinner: FC<SpinnerProps> = ({
   double = false,
   ...attributes
 }) => {
-
-  const wrapperClasses = classNames(
-    'progress-spinner', {
+  const wrapperClasses = classNames('progress-spinner', {
     'progress-spinner-active': active,
     'size-sm': small,
-    'progress-spinner-double': double,
-  }
-  )
+    'progress-spinner-double': double
+  });
 
-  const classes = classNames(className, 'sr-only')
+  const classes = classNames(className, 'sr-only');
   if (double) {
     return (
       <Tag className={wrapperClasses}>
@@ -39,16 +36,16 @@ export const Spinner: FC<SpinnerProps> = ({
         <div className='progress-spinner-inner' />
         <Tag {...attributes} className={classes}>
           Caricamento...
-          </Tag>
+        </Tag>
       </Tag>
-    )
+    );
   }
 
   return (
     <Tag className={wrapperClasses}>
       <Tag {...attributes} className={classes}>
         Caricamento...
-        </Tag>
+      </Tag>
     </Tag>
-  )
-}
+  );
+};

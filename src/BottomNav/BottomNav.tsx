@@ -1,16 +1,19 @@
-import React, { ElementType, FC, HTMLAttributes } from 'react'
+import React, { ElementType, FC, HTMLAttributes } from 'react';
 
-export interface BottomNavProps extends HTMLAttributes<HTMLElement>{
+export interface BottomNavProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente BottomNav */
-  className?: string
+  className?: string;
 }
 
-export const BottomNav: FC<BottomNavProps> = ({ tag: Tag = 'nav', ...attributes }) => {
+export const BottomNav: FC<BottomNavProps> = ({
+  tag: Tag = 'nav',
+  ...attributes
+}) => {
   return (
     <Tag className='bottom-nav'>
       <ul {...attributes} />
     </Tag>
-  )
-}
+  );
+};

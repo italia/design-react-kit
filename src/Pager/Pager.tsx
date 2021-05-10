@@ -1,5 +1,5 @@
-import React, {FC, HTMLAttributes, ElementType} from 'react'
-import classNames from 'classnames'
+import React, { FC, HTMLAttributes, ElementType } from 'react';
+import classNames from 'classnames';
 
 export interface PagerProps extends HTMLAttributes<HTMLElement> {
   /** Etichetta di descrizione del contenuto del componente Pager */
@@ -9,17 +9,32 @@ export interface PagerProps extends HTMLAttributes<HTMLElement> {
   /** Classi aggiuntive da usare per il componente Badge */
   className?: string;
   /** Utilizzare questo attributo per indicare il numero totale di pagine */
-  total?: {ariaLabel: string, label: string}
+  total?: { ariaLabel: string; label: string };
 }
 
-export const Pager: FC<PagerProps> =({ className, tag: Tag = 'nav', children, total, ...attributes }) => {
-  const classes = classNames(className, 'pagination-wrapper', {'pagination-total': total})
-  const {ariaLabel, label} = total || {};
-  const totalAriaLabel = ariaLabel ? <span className="sr-only">{ariaLabel}</span> : null;
+export const Pager: FC<PagerProps> = ({
+  className,
+  tag: Tag = 'nav',
+  children,
+  total,
+  ...attributes
+}) => {
+  const classes = classNames(className, 'pagination-wrapper', {
+    'pagination-total': total
+  });
+  const { ariaLabel, label } = total || {};
+  const totalAriaLabel = ariaLabel ? (
+    <span className='sr-only'>{ariaLabel}</span>
+  ) : null;
   return (
     <Tag className={classes} {...attributes}>
       {children}
-      {total ? <p>{totalAriaLabel}{label}</p> : null}
+      {total ? (
+        <p>
+          {totalAriaLabel}
+          {label}
+        </p>
+      ) : null}
     </Tag>
-  )
-}
+  );
+};

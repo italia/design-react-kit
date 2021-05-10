@@ -1,8 +1,8 @@
 import React, { Component, ElementType } from 'react';
-import classNames from 'classnames'
-import { Transition } from 'react-transition-group'
+import classNames from 'classnames';
+import { Transition } from 'react-transition-group';
 
-import { Util } from 'reactstrap'
+import { Util } from 'reactstrap';
 import type { TransitionProps } from 'react-transition-group/Transition';
 
 const {
@@ -16,72 +16,82 @@ const {
   pick,
   // @ts-ignore
   omit
-} = Util
+} = Util;
 
 export type AccordionBodyProps = Partial<TransitionProps> & {
-  tag?: ElementType,
-  className?: string,
+  tag?: ElementType;
+  className?: string;
   active?: boolean;
-  onToggle?: () => void
-}
+  onToggle?: () => void;
+};
 
 const transitionStatusToClassHash = {
   [TransitionStatuses.ENTERING]: 'collapsing',
   [TransitionStatuses.ENTERED]: 'collapse show',
   [TransitionStatuses.EXITING]: 'collapsing',
   [TransitionStatuses.EXITED]: 'collapse'
-}
+};
 
 type TransitionStates = keyof typeof transitionStatusToClassHash;
 
 function getTransitionClass(status: TransitionStates) {
-  return transitionStatusToClassHash[status] || 'collapse'
+  return transitionStatusToClassHash[status] || 'collapse';
 }
 
 function getHeight(node: HTMLElement) {
-  return node.scrollHeight
+  return node.scrollHeight;
 }
 
-export class AccordionBody extends Component<AccordionBodyProps, { height: null | number }> {
+export class AccordionBody extends Component<
+  AccordionBodyProps,
+  { height: null | number }
+> {
   state = {
     height: null
-  }
+  };
 
   onEntering = (node: HTMLElement, isAppearing: boolean) => {
-    this.setState({ height: getHeight(node) })
-    this.props.onEntering?.(node, isAppearing)
-  }
+    this.setState({ height: getHeight(node) });
+    this.props.onEntering?.(node, isAppearing);
+  };
 
   onEntered = (node: HTMLElement, isAppearing: boolean) => {
-    this.setState({ height: null })
-    this.props.onEntered?.(node, isAppearing)
-  }
+    this.setState({ height: null });
+    this.props.onEntered?.(node, isAppearing);
+  };
 
   onExit = (node: HTMLElement) => {
-    this.setState({ height: getHeight(node) })
-    this.props.onExit?.(node)
-  }
+    this.setState({ height: getHeight(node) });
+    this.props.onExit?.(node);
+  };
 
   onExiting = (node: HTMLElement) => {
     // getting this variable triggers a reflow
     // eslint-disable-next-line no-unused-vars
-    // @ts-ignore 
-    const _unused = node.offsetHeight 
-    this.setState({ height: 0 })
-    this.props.onExiting?.(node)
-  }
+    // @ts-ignore
+    const _unused = node.offsetHeight;
+    this.setState({ height: 0 });
+    this.props.onExiting?.(node);
+  };
 
   onExited = (node: HTMLElement) => {
-    this.setState({ height: null })
-    this.props.onExited?.(node)
-  }
+    this.setState({ height: null });
+    this.props.onExited?.(node);
+  };
 
   render() {
-    const { className, tag: Tag = 'div', active, children, timeout = TransitionTimeouts.Collapse, ...attributes } = this.props
-    const { height } = this.state
+    const {
+      className,
+      tag: Tag = 'div',
+      active,
+      children,
+      timeout = TransitionTimeouts.Collapse,
+      ...attributes
+    } = this.props;
+    const { height } = this.state;
 
-    const transitionProps = pick(attributes, TransitionPropTypeKeys)
-    const childProps = omit(attributes, TransitionPropTypeKeys)
+    const transitionProps = pick(attributes, TransitionPropTypeKeys);
+    const childProps = omit(attributes, TransitionPropTypeKeys);
 
     return (
       <Transition
@@ -91,23 +101,25 @@ export class AccordionBody extends Component<AccordionBodyProps, { height: null 
         onEntered={this.onEntered}
         onExit={this.onExit}
         onExiting={this.onExiting}
-        onExited={this.onExited}>
+        onExited={this.onExited}
+      >
         {(status: TransitionStates) => {
-          const transitionClass = getTransitionClass(status)
-          const classes = classNames(className, transitionClass)
+          const transitionClass = getTransitionClass(status);
+          const classes = classNames(className, transitionClass);
 
-          const style = height == null ? null : { height }
+          const style = height == null ? null : { height };
 
           return (
             <Tag
               className={classes}
               style={{ ...childProps.style, ...style }}
-              {...childProps}>
-              <div className="collapse-body">{children}</div>
+              {...childProps}
+            >
+              <div className='collapse-body'>{children}</div>
             </Tag>
-          )
+          );
         }}
       </Transition>
-    )
+    );
   }
 }

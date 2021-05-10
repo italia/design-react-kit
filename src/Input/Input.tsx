@@ -1,15 +1,15 @@
-import React, {InputHTMLAttributes, ElementType, Ref, ReactNode} from 'react';
-import isNumber from 'is-number'
+import React, { InputHTMLAttributes, ElementType, Ref, ReactNode } from 'react';
+import isNumber from 'is-number';
 
-import {InputContainer} from './InputContainer'
-import {Icon} from '../Icon/Icon'
+import { InputContainer } from './InputContainer';
+import { Icon } from '../Icon/Icon';
 import {
   getTag,
   getFormControlClass,
   getClasses,
   getInfoTextControlClass
-} from './utils'
-import type {CSSModule} from 'reactstrap';
+} from './utils';
+import type { CSSModule } from 'reactstrap';
 import { notifyDeprecation } from '../utils';
 // taken from reactstrap types
 type InputType =
@@ -37,7 +37,7 @@ type InputType =
   | 'password'
   | 'datetime'
   | 'time'
-  | 'color'
+  | 'color';
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   /** Il tipo specifico di input da utilizzare. Il valore di default è `text`. */
@@ -86,32 +86,32 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   static?: boolean;
 }
 
-type InputState = {isFocused: boolean, hidden: boolean, icon: boolean}
+type InputState = { isFocused: boolean; hidden: boolean; icon: boolean };
 
 export class Input extends React.Component<InputProps, InputState> {
   state = {
     isFocused: false,
     hidden: true,
     icon: true
-  }
+  };
 
   toggleFocusLabel = () => {
     this.setState({
       isFocused: true
-    })
-  }
+    });
+  };
 
-  toggleBlurLabel = (e: { target: { value: string; }; }) => {
+  toggleBlurLabel = (e: { target: { value: string } }) => {
     if (e.target.value === '') {
       this.setState({
         isFocused: !this.state.isFocused
-      })
+      });
     }
-  }
+  };
 
   toggleShow = () => {
-    this.setState({ hidden: !this.state.hidden, icon: !this.state.icon })
-  }
+    this.setState({ hidden: !this.state.hidden, icon: !this.state.icon });
+  };
 
   render() {
     const {
@@ -133,10 +133,10 @@ export class Input extends React.Component<InputProps, InputState> {
       wrapperClassName: originalWrapperClass,
       size,
       ...attributes
-    } = this.props
-    let { bsSize, valid, invalid } = this.props
+    } = this.props;
+    let { bsSize, valid, invalid } = this.props;
 
-    const Tag = getTag({ tag, plaintext, staticInput, type })
+    const Tag = getTag({ tag, plaintext, staticInput, type });
     const formControlClass = getFormControlClass(
       {
         plaintext,
@@ -145,34 +145,38 @@ export class Input extends React.Component<InputProps, InputState> {
         addon
       },
       cssModule
-    )
+    );
     const infoTextControlClass = getInfoTextControlClass(
       { valid, invalid },
       cssModule
-    )
+    );
 
     if (state && valid == null && invalid == null) {
-      invalid = state === 'danger'
-      valid = state === 'success'
+      invalid = state === 'danger';
+      valid = state === 'success';
     }
 
-    const extraAttributes: {type?: InputType, size?: number, ariaDescribedBy?: string} = {}
+    const extraAttributes: {
+      type?: InputType;
+      size?: number;
+      ariaDescribedBy?: string;
+    } = {};
     if (size && !isNumber(size)) {
       notifyDeprecation(
         'Please use the prop "bsSize" instead of the "size" to bootstrap\'s input sizing.'
-      )
-      bsSize = size as unknown as InputProps['bsSize'];
+      );
+      bsSize = (size as unknown) as InputProps['bsSize'];
     } else {
       extraAttributes.size = size;
     }
 
     if (Tag === 'input' || typeof tag !== 'string') {
-      extraAttributes.type = type
+      extraAttributes.type = type;
     }
 
     // associate the input field with the help text
     const infoId = id ? `${id}Description` : undefined;
-    if(id){
+    if (id) {
       extraAttributes.ariaDescribedBy = infoId;
     }
 
@@ -188,11 +192,11 @@ export class Input extends React.Component<InputProps, InputState> {
     ) {
       notifyDeprecation(
         `Input with a type of "${type}" cannot have children. Please use "value"/"defaultValue" instead.`
-      )
-      delete attributes.children
+      );
+      delete attributes.children;
     }
 
-    const inputPassword = extraAttributes.type === 'password'
+    const inputPassword = extraAttributes.type === 'password';
 
     // Styling
     const {
@@ -218,7 +222,7 @@ export class Input extends React.Component<InputProps, InputState> {
         originalWrapperClass
       },
       cssModule
-    )
+    );
 
     // set of attributes always shared by the Input components
     const sharedAttributes = {
@@ -227,7 +231,7 @@ export class Input extends React.Component<InputProps, InputState> {
       onBlur: this.toggleBlurLabel,
       value: value,
       ref: innerRef
-    }
+    };
 
     // set of attributes always shared by the wrapper component
     const containerProps = {
@@ -238,7 +242,7 @@ export class Input extends React.Component<InputProps, InputState> {
       infoTextClass,
       infoText,
       wrapperClass
-    }
+    };
 
     if (placeholder) {
       return (
@@ -251,7 +255,7 @@ export class Input extends React.Component<InputProps, InputState> {
             placeholder={placeholder}
           />
         </InputContainer>
-      )
+      );
     }
 
     if (inputPassword) {
@@ -265,16 +269,16 @@ export class Input extends React.Component<InputProps, InputState> {
             className={inputClasses}
             placeholder={placeholder}
           />
-          <span className="password-icon" aria-hidden="true">
+          <span className='password-icon' aria-hidden='true'>
             <Icon
-              size="sm"
+              size='sm'
               icon={`it-password-${this.state.icon ? 'visible' : 'invisible'}`}
-              className="password-icon-visible"
+              className='password-icon-visible'
               onClick={this.toggleShow}
             />
           </span>
         </InputContainer>
-      )
+      );
     }
     if (normalized) {
       return (
@@ -287,14 +291,19 @@ export class Input extends React.Component<InputProps, InputState> {
             readOnly
           />
         </InputContainer>
-      )
+      );
     }
     if (label || infoText) {
       return (
         <InputContainer {...containerProps}>
-          <Tag {...attributes} {...extraAttributes}{...sharedAttributes} className={inputClasses} />
+          <Tag
+            {...attributes}
+            {...extraAttributes}
+            {...sharedAttributes}
+            className={inputClasses}
+          />
         </InputContainer>
-      )
+      );
     }
 
     return (
@@ -305,6 +314,6 @@ export class Input extends React.Component<InputProps, InputState> {
         className={inputClasses}
         {...sharedAttributes}
       />
-    )
+    );
   }
 }

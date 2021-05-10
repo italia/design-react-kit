@@ -1,5 +1,5 @@
-import React, {FC, HTMLAttributes, ElementType} from 'react';
-import classNames from 'classnames'
+import React, { FC, HTMLAttributes, ElementType } from 'react';
+import classNames from 'classnames';
 
 export interface StepperContainerProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
@@ -12,14 +12,18 @@ export interface StepperContainerProps extends HTMLAttributes<HTMLElement> {
   mobile?: boolean;
 }
 
-export const StepperContainer: FC<StepperContainerProps> = ({ tag: Tag = 'div', mobile, dark, className, ...attributes }) => {
+export const StepperContainer: FC<StepperContainerProps> = ({
+  tag: Tag = 'div',
+  mobile,
+  dark,
+  className,
+  ...attributes
+}) => {
   const wrapperClass = classNames(
     'steppers',
     className,
     { 'bg-dark': dark },
     { 'mobile-examples': mobile }
-  )
-  return (
-    <Tag {...attributes} className={wrapperClass}/>
-  )
-}
+  );
+  return <Tag {...attributes} className={wrapperClass} />;
+};

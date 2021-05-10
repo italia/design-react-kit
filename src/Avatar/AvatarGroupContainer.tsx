@@ -1,7 +1,8 @@
-import React, {FC, HTMLAttributes, ElementType} from 'react';
-import classNames from 'classnames'
+import React, { FC, HTMLAttributes, ElementType } from 'react';
+import classNames from 'classnames';
 
-export interface AvatarGroupContainerProps extends HTMLAttributes<HTMLUListElement> {
+export interface AvatarGroupContainerProps
+  extends HTMLAttributes<HTMLUListElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente interno AvatarGroupContainer */
@@ -10,7 +11,12 @@ export interface AvatarGroupContainerProps extends HTMLAttributes<HTMLUListEleme
   wrapperClassName?: string;
 }
 
-export const AvatarGroupContainer: FC<AvatarGroupContainerProps> = ({ className, tag: Tag = 'ul', wrapperClassName, ...attributes }) => {
-  const wrapperClasses = classNames('avatar-group-stacked', wrapperClassName)
-  return <Tag {...attributes} className={wrapperClasses}></Tag>
-}
+export const AvatarGroupContainer: FC<AvatarGroupContainerProps> = ({
+  className,
+  tag: Tag = 'ul',
+  wrapperClassName,
+  ...attributes
+}) => {
+  const wrapperClasses = classNames('avatar-group-stacked', wrapperClassName);
+  return <Tag {...attributes} className={wrapperClasses}></Tag>;
+};

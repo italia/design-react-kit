@@ -1,18 +1,21 @@
-import React, {FC, HTMLAttributes, ElementType} from 'react';
-import classNames from 'classnames'
+import React, { FC, HTMLAttributes, ElementType } from 'react';
+import classNames from 'classnames';
 
-export interface AvatarContainerProps extends HTMLAttributes<HTMLElement>{
-
+export interface AvatarContainerProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente AvatarContainer */
-  className?: string
+  className?: string;
 }
 
-export const AvatarContainer: FC<AvatarContainerProps> = ({ className, tag: Tag = 'div', ...attributes }) => {
+export const AvatarContainer: FC<AvatarContainerProps> = ({
+  className,
+  tag: Tag = 'div',
+  ...attributes
+}) => {
   const wrapperClasses = classNames(
     'd-flex align-items-center justify-content-around flex-wrap flex-sm-nowrap',
     className
-  )
-  return <Tag {...attributes} className={wrapperClasses} />
-}
+  );
+  return <Tag {...attributes} className={wrapperClasses} />;
+};

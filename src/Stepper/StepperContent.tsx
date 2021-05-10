@@ -1,5 +1,5 @@
-import React, {FC, HTMLAttributes, ElementType} from 'react';
-import classNames from 'classnames'
+import React, { FC, HTMLAttributes, ElementType } from 'react';
+import classNames from 'classnames';
 
 export interface StepperContentProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
@@ -18,7 +18,7 @@ const contentStyleLight = {
   justifyContent: 'center',
   alignItems: 'center',
   color: '#333'
-}
+};
 
 const contentStyleDark = {
   height: '400px',
@@ -30,16 +30,21 @@ const contentStyleDark = {
   borderColor: '#aaa',
   background: '#17324d',
   opacity: 0.5
-}
+};
 
-export const StepperContent: FC<StepperContentProps> = ({ tag: Tag = 'div', className, dark, ...attributes }) => {
-  const classes = classNames('steppers-content', classNames)
+export const StepperContent: FC<StepperContentProps> = ({
+  tag: Tag = 'div',
+  className,
+  dark,
+  ...attributes
+}) => {
+  const classes = classNames('steppers-content', classNames);
   return (
     <Tag
       {...attributes}
       className={classes}
       style={(dark && contentStyleDark) || contentStyleLight}
-      aria-live="polite"
-      />
-  )
-}
+      aria-live='polite'
+    />
+  );
+};

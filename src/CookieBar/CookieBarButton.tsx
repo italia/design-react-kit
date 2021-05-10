@@ -1,17 +1,26 @@
-import React, { ElementType, FC, ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react'
-import classNames from 'classnames'
+import React, {
+  ElementType,
+  FC,
+  ButtonHTMLAttributes,
+  AnchorHTMLAttributes
+} from 'react';
+import classNames from 'classnames';
 
-
-export type CookieBarButtonProps ={
+export type CookieBarButtonProps = {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente CookieBarButton */
-  className?: string
-} & (ButtonHTMLAttributes<HTMLButtonElement> | AnchorHTMLAttributes<HTMLAnchorElement>)
+  className?: string;
+} & (
+  | ButtonHTMLAttributes<HTMLButtonElement>
+  | AnchorHTMLAttributes<HTMLAnchorElement>
+);
 
-
-
-export const CookieBarButton: FC<CookieBarButtonProps> = ({ tag: Tag = 'button', className, ...attributes }) => {
-  const activeClass = classNames(className, 'cookiebar-btn')
-  return <Tag className={activeClass} {...attributes} />
-}
+export const CookieBarButton: FC<CookieBarButtonProps> = ({
+  tag: Tag = 'button',
+  className,
+  ...attributes
+}) => {
+  const activeClass = classNames(className, 'cookiebar-btn');
+  return <Tag className={activeClass} {...attributes} />;
+};

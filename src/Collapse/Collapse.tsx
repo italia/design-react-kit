@@ -1,7 +1,7 @@
-import React, { ElementType, FC, HTMLAttributes, Ref } from 'react'
-import classNames from 'classnames'
+import React, { ElementType, FC, HTMLAttributes, Ref } from 'react';
+import classNames from 'classnames';
 
-import { Collapse as CollapseBase, CSSModule } from 'reactstrap'
+import { Collapse as CollapseBase, CSSModule } from 'reactstrap';
 
 // Copy over from reactstrap and add new ones
 export interface CollapseProps extends HTMLAttributes<HTMLElement> {
@@ -50,30 +50,32 @@ export const Collapse: FC<CollapseProps> = ({
   if (navbar && header) {
     const classes = classNames(className, 'navbar-collapse', {
       expanded: isOpen
-    })
+    });
     return (
       <CollapseBase
         className={classes}
         cssModule={{ 'navbar-collapse': 'navbar-collapsable' }}
         navbar={navbar}
         style={{ display: isOpen ? 'block' : 'none' }}
-        {...attributes}>
+        {...attributes}
+      >
         <div
-          className="overlay"
+          className='overlay'
           style={{ display: isOpen ? 'block' : 'none' }}
-          onClick={onOverlayClick}></div>
-        <div className="close-div sr-only">
-          <button className="btn close-menu" type="button">
-            <span className="it-close"></span>close
+          onClick={onOverlayClick}
+        ></div>
+        <div className='close-div sr-only'>
+          <button className='btn close-menu' type='button'>
+            <span className='it-close'></span>close
           </button>
         </div>
         {children}
       </CollapseBase>
-    )
+    );
   }
   const classes = classNames(className, {
     'link-list-wrapper': header
-  })
+  });
 
   return (
     <CollapseBase
@@ -81,8 +83,9 @@ export const Collapse: FC<CollapseProps> = ({
       cssModule={{ 'navbar-collapse': 'navbar-collapsable' }}
       {...attributes}
       navbar={navbar}
-      isOpen={isOpen}>
+      isOpen={isOpen}
+    >
       {children}
     </CollapseBase>
-  )
-}
+  );
+};

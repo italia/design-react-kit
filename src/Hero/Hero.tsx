@@ -1,5 +1,5 @@
-import React, {FC, HTMLAttributes, ElementType} from 'react';
-import { CSSModule, Jumbotron } from 'reactstrap'
+import React, { FC, HTMLAttributes, ElementType } from 'react';
+import { CSSModule, Jumbotron } from 'reactstrap';
 
 export interface HeroProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
@@ -10,6 +10,6 @@ export interface HeroProps extends HTMLAttributes<HTMLElement> {
   cssModule?: CSSModule;
 }
 
-export const Hero: FC<HeroProps> = ({tag = 'div', ...attributes}) => {
-  return <Jumbotron tag={tag} {...attributes} />
-}
+export const Hero: FC<HeroProps> = ({ tag = 'div', ...attributes }) => {
+  return <Jumbotron tag={tag} {...attributes} />;
+};

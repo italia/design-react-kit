@@ -1,13 +1,13 @@
-import React, {FC, HTMLAttributes, ElementType} from 'react';
-import classNames from 'classnames'
+import React, { FC, HTMLAttributes, ElementType } from 'react';
+import classNames from 'classnames';
 import isNumber from 'is-number';
 import { logError } from '../utils';
 
-export interface ProgressProps extends HTMLAttributes<HTMLElement>{
+export interface ProgressProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente contenitore del Progress */
-  wrapperClassName?: string
+  wrapperClassName?: string;
   /** Classi aggiuntive da usare per il componente interno del Progress */
   className?: string;
   /** Valore corrente (numerico) */
@@ -21,72 +21,65 @@ export interface ProgressProps extends HTMLAttributes<HTMLElement>{
 }
 
 export const Progress: FC<ProgressProps> = ({
-      wrapperClassName,
-      className,
-      tag: Tag = 'div',
-      value,
-      label,
-      indeterminate = false,
-      color,
-      role = 'progressbar',
-      ...attributes
-    }) =>{
-    if(!isNumber(value)){
-      logError(`The passed "value" is not a valid number. You passed "${value}"`);
-    }
-    const numericValue = Number(value);
-    const wrapperClasses = classNames('progress-bar-wrapper')
-    const secondaryWrapperClasses = classNames(
-      wrapperClassName,
-      'progress',
-      {
-      'progress-indeterminate' : indeterminate,
-      'progress-color' : color,
-      }
-    )
-    const classes = classNames(
-      className,
-      'progress-bar',
-      {[`bg-${color}`] : color}
-    )
+  wrapperClassName,
+  className,
+  tag: Tag = 'div',
+  value,
+  label,
+  indeterminate = false,
+  color,
+  role = 'progressbar',
+  ...attributes
+}) => {
+  if (!isNumber(value)) {
+    logError(`The passed "value" is not a valid number. You passed "${value}"`);
+  }
+  const numericValue = Number(value);
+  const wrapperClasses = classNames('progress-bar-wrapper');
+  const secondaryWrapperClasses = classNames(wrapperClassName, 'progress', {
+    'progress-indeterminate': indeterminate,
+    'progress-color': color
+  });
+  const classes = classNames(className, 'progress-bar', {
+    [`bg-${color}`]: color
+  });
 
-    if (label && numericValue) {
-      return (
-        <Tag className={wrapperClasses}>
-          <div className="progress-bar-label">
-            <span className="sr-only">{label}</span>
-            {numericValue + '%'}
-          </div>
-          <Tag className={secondaryWrapperClasses}>
-            <div
-              {...attributes}
-              className={classes}
-              role="progressbar"
-              style={{ width: numericValue + '%' }}
-              aria-valuenow={numericValue}
-              aria-valuemin={0}
-              aria-valuemax={100}
-            />
-          </Tag>
-        </Tag>
-      )
-    }
-
+  if (label && numericValue) {
     return (
-      <Tag className={secondaryWrapperClasses}>
-        <div className="progress-bar-label">
-          <span className="sr-only">{label}</span>
+      <Tag className={wrapperClasses}>
+        <div className='progress-bar-label'>
+          <span className='sr-only'>{label}</span>
+          {numericValue + '%'}
         </div>
-        <div
-          {...attributes}
-          className={classes}
-          role="progressbar"
-          style={{ width: numericValue + '%' }}
-          aria-valuenow={numericValue}
-          aria-valuemin={0}
-          aria-valuemax={100}
-        />
+        <Tag className={secondaryWrapperClasses}>
+          <div
+            {...attributes}
+            className={classes}
+            role='progressbar'
+            style={{ width: numericValue + '%' }}
+            aria-valuenow={numericValue}
+            aria-valuemin={0}
+            aria-valuemax={100}
+          />
+        </Tag>
       </Tag>
-    )
+    );
   }
 
+  return (
+    <Tag className={secondaryWrapperClasses}>
+      <div className='progress-bar-label'>
+        <span className='sr-only'>{label}</span>
+      </div>
+      <div
+        {...attributes}
+        className={classes}
+        role='progressbar'
+        style={{ width: numericValue + '%' }}
+        aria-valuenow={numericValue}
+        aria-valuemin={0}
+        aria-valuemax={100}
+      />
+    </Tag>
+  );
+};

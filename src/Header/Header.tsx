@@ -1,9 +1,9 @@
-import React, {FC, HTMLAttributes} from 'react';
-import classNames from 'classnames'
+import React, { FC, HTMLAttributes } from 'react';
+import classNames from 'classnames';
 
-import { HeaderContext, CENTER, NAVBAR } from './HeaderContext'
+import { HeaderContext, CENTER, NAVBAR } from './HeaderContext';
 
-export interface HeaderProps extends HTMLAttributes<HTMLElement>{
+export interface HeaderProps extends HTMLAttributes<HTMLElement> {
   /** Classi aggiuntive da usare per il componente Header */
   className?: string;
   /** Tipo di componente Header: può essere solamente uno di questi tre tipi */
@@ -14,10 +14,16 @@ export interface HeaderProps extends HTMLAttributes<HTMLElement>{
    *  il valore di default è "dark". Per l'Header di tipo "nav" il tema di default è "light"
    *  in mobile, mentre "dark" in versione desktop.
    */
-  theme?: 'light' | 'dark'
+  theme?: 'light' | 'dark';
 }
 
-export const Header: FC<HeaderProps> = ({ className, small = false, theme = 'light', type, ...attributes }) => {
+export const Header: FC<HeaderProps> = ({
+  className,
+  small = false,
+  theme = 'light',
+  type,
+  ...attributes
+}) => {
   // use context here as theme
   const classes = classNames(className, {
     [`it-header-${type}-wrapper`]: type,
@@ -25,10 +31,10 @@ export const Header: FC<HeaderProps> = ({ className, small = false, theme = 'lig
     [`theme-${theme}`]: type !== NAVBAR && theme,
     'theme-dark-mobile': type === NAVBAR && theme === 'dark',
     'theme-light-desk': type === NAVBAR && theme === 'light'
-  })
+  });
   return (
     <HeaderContext.Provider value={{ type }}>
       <div className={classes} {...attributes} />
     </HeaderContext.Provider>
-  )
-}
+  );
+};

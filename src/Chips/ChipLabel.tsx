@@ -1,5 +1,5 @@
-import React, { ElementType, FC, HTMLAttributes } from 'react'
-import classNames from 'classnames'
+import React, { ElementType, FC, HTMLAttributes } from 'react';
+import classNames from 'classnames';
 
 export interface ChipLabelProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
@@ -8,8 +8,11 @@ export interface ChipLabelProps extends HTMLAttributes<HTMLElement> {
   className?: string;
 }
 
-
-export const ChipLabel: FC<ChipLabelProps> = ({ className, tag: Tag = 'span', ...attributes }) => {
-  const classes = classNames(className, 'chip-label')
-  return <Tag {...attributes} className={classes} />
-}
+export const ChipLabel: FC<ChipLabelProps> = ({
+  className,
+  tag: Tag = 'span',
+  ...attributes
+}) => {
+  const classes = classNames(className, 'chip-label');
+  return <Tag {...attributes} className={classes} />;
+};

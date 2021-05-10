@@ -1,7 +1,7 @@
 import React, { FC, ElementType, HTMLAttributes } from 'react';
-import classNames from 'classnames'
+import classNames from 'classnames';
 
-export interface CalloutProps extends HTMLAttributes<HTMLElement>{
+export interface CalloutProps extends HTMLAttributes<HTMLElement> {
   /** Classi aggiuntive per il componente */
   className?: string;
   /** Permette di dichiarare il colore del bordo e del titolo */
@@ -25,10 +25,10 @@ export const Callout: FC<CalloutProps> = ({
   const classes = classNames('callout', color, {
     'callout-highlight': highlight,
     'callout-more': detailed
-  })
+  });
   return (
     <Tag className={classes} {...attributes}>
       {children}
     </Tag>
-  )
-}
+  );
+};

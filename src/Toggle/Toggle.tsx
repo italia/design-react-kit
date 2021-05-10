@@ -1,6 +1,6 @@
-import React, {ElementType, FC, ReactNode} from 'react';
+import React, { ElementType, FC, ReactNode } from 'react';
 
-import { Label, Input, CSSModule } from 'reactstrap'
+import { Label, Input, CSSModule } from 'reactstrap';
 import { InputProps } from '../Input/Input';
 
 export interface ToggleProps extends InputProps {
@@ -18,12 +18,12 @@ export interface ToggleProps extends InputProps {
 
 export const Toggle: FC<ToggleProps> = ({ label, ...rest }) => {
   return (
-    <div className="toggles">
+    <div className='toggles'>
       <Label check>
         {label}
-        <Input  {...rest} type="checkbox"/>
-        <span className="lever" />
+        <Input {...rest} type='checkbox' />
+        <span className='lever' />
       </Label>
     </div>
-  )
-}
+  );
+};

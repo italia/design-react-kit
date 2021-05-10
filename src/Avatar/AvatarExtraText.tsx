@@ -1,14 +1,18 @@
-import React, {FC, HTMLAttributes, ElementType} from 'react';
-import classNames from 'classnames'
+import React, { FC, HTMLAttributes, ElementType } from 'react';
+import classNames from 'classnames';
 
-export interface AvatarExtraTextProps extends HTMLAttributes<HTMLElement>{
+export interface AvatarExtraTextProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente AvatarExtraText */
-  className?: string
+  className?: string;
 }
 
-export const AvatarExtraText: FC<AvatarExtraTextProps> = ({ className, tag: Tag = 'div', ...attributes }) => {
-  const wrapperClass = classNames('extra-text', className)
-  return <Tag className={wrapperClass} {...attributes} />
-}
+export const AvatarExtraText: FC<AvatarExtraTextProps> = ({
+  className,
+  tag: Tag = 'div',
+  ...attributes
+}) => {
+  const wrapperClass = classNames('extra-text', className);
+  return <Tag className={wrapperClass} {...attributes} />;
+};

@@ -1,9 +1,9 @@
-import React, {FC, HTMLAttributes, MouseEvent} from 'react';
-import classNames from 'classnames'
+import React, { FC, HTMLAttributes, MouseEvent } from 'react';
+import classNames from 'classnames';
 
-import {Icon} from '../Icon/Icon'
+import { Icon } from '../Icon/Icon';
 
-export interface CardCategoryProps extends HTMLAttributes<HTMLElement>{
+export interface CardCategoryProps extends HTMLAttributes<HTMLElement> {
   /** Mostra un'icona nella Card. Passare il nome dell'icona per utilizzarlo. */
   iconName?: string;
   /** Mostra la data nella Card. Passare una data già formattata come stringa. */
@@ -14,21 +14,28 @@ export interface CardCategoryProps extends HTMLAttributes<HTMLElement>{
   onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
 }
 
-export const CardCategory : FC<CardCategoryProps> = ({ iconName, date, href, onClick, children, ...rest }) => {
+export const CardCategory: FC<CardCategoryProps> = ({
+  iconName,
+  date,
+  href,
+  onClick,
+  children,
+  ...rest
+}) => {
   const classes = classNames({
     'category-top': date || ' ',
     'categoryicon-top': iconName
-  })
+  });
   // Simple category link
   const categoryLink = !iconName && (
-    <a href={href} className="category" onClick={onClick}>
+    <a href={href} className='category' onClick={onClick}>
       {children}
     </a>
-  )
-  const categoryDate = date && <span className="data">{date}</span>
+  );
+  const categoryDate = date && <span className='data'>{date}</span>;
   // Category with icon
-  const categoryText = iconName && <span className="text">{children}</span>
-  const categoryIcon = iconName && <Icon icon={iconName} />
+  const categoryText = iconName && <span className='text'>{children}</span>;
+  const categoryIcon = iconName && <Icon icon={iconName} />;
 
   return (
     <div className={classes} {...rest}>
@@ -37,5 +44,5 @@ export const CardCategory : FC<CardCategoryProps> = ({ iconName, date, href, onC
       {categoryText}
       {categoryDate}
     </div>
-  )
-}
+  );
+};

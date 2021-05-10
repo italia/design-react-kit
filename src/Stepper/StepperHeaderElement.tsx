@@ -1,36 +1,37 @@
-import React, {FC, HTMLAttributes, ElementType, ReactNode} from 'react';
-import classNames from 'classnames'
-import {Icon} from '../Icon/Icon'
+import React, { FC, HTMLAttributes, ElementType, ReactNode } from 'react';
+import classNames from 'classnames';
+import { Icon } from '../Icon/Icon';
 
 const variants = {
-  'confirmed': 'confirmed',
-  'active': 'active',
-  'done': 'done',
-  'mobile': 'steppers-index',
+  confirmed: 'confirmed',
+  active: 'active',
+  done: 'done',
+  mobile: 'steppers-index',
   // @deprecated
-  'steppers-index':'steppers-index'
+  'steppers-index': 'steppers-index'
 } as const;
 
-export interface StepperHeaderElementProps extends HTMLAttributes<HTMLLIElement>{
+export interface StepperHeaderElementProps
+  extends HTMLAttributes<HTMLLIElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente StepperHeader */
   className?: string;
-  /** 
-   * Il tipo di step: 
+  /**
+   * Il tipo di step:
    * * confirmed (confermato),
-   * * active (attivo - su mobile viene mostrato solo questo) 
+   * * active (attivo - su mobile viene mostrato solo questo)
    * * done (completato)
    * * mobile (visibile solo su mobile, usato per mostrare lo stato attuale di progresso)
    * * steppers-index (deprecato) usare mobile
    * */
-  variant?: keyof typeof variants,
+  variant?: keyof typeof variants;
   /** Icona da mostrare alla destra dell'etichetta dello step */
   appendIcon?: string;
   /** Icona da mostrare alla sinistra dell'etichetta dello step */
-  prependIcon?: string,
+  prependIcon?: string;
   /** Utilizzare questo attributo per elementi aggiuntivi da mostrare su dispositivi mobile per lo step attivo */
-  stepperNumber?: ReactNode,
+  stepperNumber?: ReactNode;
   /** Nasconde il bordo inferiore azzurro per lo step */
   noLine?: boolean;
   /** Deprecato: usare `appendIcon` */
@@ -52,9 +53,9 @@ export const StepperHeaderElement: FC<StepperHeaderElementProps> = ({
   className,
   ...attributes
 }) => {
-  const wrapperClasses = classNames(variant, className, { 'no-line': noLine })
-  const iconClass = classNames('icon', 'steppers-success')
-  const spanClass = classNames('steppers-number')
+  const wrapperClasses = classNames(variant, className, { 'no-line': noLine });
+  const iconClass = classNames('icon', 'steppers-success');
+  const spanClass = classNames('steppers-number');
 
   const iconToAppend = appendIcon || icon;
   const iconToPepend = prependIcon || iconName;
@@ -65,5 +66,5 @@ export const StepperHeaderElement: FC<StepperHeaderElementProps> = ({
       {children}
       {iconToAppend && <Icon icon={iconToAppend} className={iconClass} />}
     </li>
-  )
-}
+  );
+};

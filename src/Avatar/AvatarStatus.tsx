@@ -1,7 +1,7 @@
-import React, {FC, HTMLAttributes, ElementType} from 'react';
-import classNames from 'classnames'
+import React, { FC, HTMLAttributes, ElementType } from 'react';
+import classNames from 'classnames';
 
-export interface AvatarStatusProps extends HTMLAttributes<HTMLElement>{
+export interface AvatarStatusProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente AvatarStatus */
@@ -10,9 +10,14 @@ export interface AvatarStatusProps extends HTMLAttributes<HTMLElement>{
   status: 'approved' | 'declined' | 'notify' | string;
 }
 
-export const AvatarStatus: FC<AvatarStatusProps> = ({ className, tag: Tag = 'div', status, ...attributes }) => {
-const typeClass = classNames('avatar-status', {
+export const AvatarStatus: FC<AvatarStatusProps> = ({
+  className,
+  tag: Tag = 'div',
+  status,
+  ...attributes
+}) => {
+  const typeClass = classNames('avatar-status', {
     status
-  })
-  return <Tag {...attributes} className={typeClass} />
-}
+  });
+  return <Tag {...attributes} className={typeClass} />;
+};

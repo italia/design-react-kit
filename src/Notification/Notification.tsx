@@ -1,11 +1,11 @@
-import React, {FC, HTMLAttributes, ReactChild, CSSProperties} from 'react';
-import { Toast, ToastHeader, ToastBody, Button } from 'reactstrap'
-import classNames from 'classnames'
-import {Icon} from '../Icon/Icon'
+import React, { FC, HTMLAttributes, ReactChild, CSSProperties } from 'react';
+import { Toast, ToastHeader, ToastBody, Button } from 'reactstrap';
+import classNames from 'classnames';
+import { Icon } from '../Icon/Icon';
 import { notifyDeprecation } from '../utils';
 
 export interface NotificationProps extends HTMLAttributes<HTMLElement> {
-  /** 
+  /**
    * Il titolo della notifica
    * @deprecated
    */
@@ -18,7 +18,7 @@ export interface NotificationProps extends HTMLAttributes<HTMLElement> {
   state?: 'success' | 'error' | 'info' | 'warning' | string;
   /** Quando abilitata il timer automatico viene disabilitato e la notifica viene chiusa solamente al click sul rispettivo bottone di chiusura */
   dismissable?: boolean;
-  /** 
+  /**
    * Posiziona la notifica a filo di uno dei margini indicati, modificandone l'arrotondamento.
    * La posizione predefinita è nella parte destra inferiore della finestra.
    * Su dispositivi mobile la Notification è *sempre* a piede della finestra occupandone tutta la lunghezza.
@@ -27,17 +27,17 @@ export interface NotificationProps extends HTMLAttributes<HTMLElement> {
   /** Indica se la notifica contiene una icona affianco al titolo. */
   withIcon?: boolean;
   /** Stili CSS aggiuntivi per il componente Notification */
-  style?: CSSProperties
+  style?: CSSProperties;
 }
 
 function pickIcon(state: NotificationProps['state']) {
   switch (state) {
     case 'error':
-      return 'it-close-circle'
+      return 'it-close-circle';
     case 'info':
-      return 'it-info-circle'
+      return 'it-info-circle';
     case 'warning':
-      return 'it-error'
+      return 'it-error';
     case 'success':
     default:
       return 'it-check-circle';
@@ -56,12 +56,12 @@ export const Notification: FC<NotificationProps> = ({
   children,
   ...attributes
 }) => {
-  if(header){
+  if (header) {
     notifyDeprecation(
       'Please use the prop "title" instead of the "header" for the Notification component.'
     );
   }
-  if(fixRegexp.test(fix || '')){
+  if (fixRegexp.test(fix || '')) {
     notifyDeprecation(
       `The "fix" prop format has changed: accepted values are now "top", "bottom", "left", "right". You passed ${fix}`
     );
@@ -69,15 +69,13 @@ export const Notification: FC<NotificationProps> = ({
 
   const notificationTitle = header || title;
   const fixPosition = (fix || '').replace(fixRegexp, '');
-  
-  const wrapperClass = classNames(
-    'notification',{
-      [`${fixPosition}-fix`]: fixPosition,
-      'with-icon': withIcon,
-      'dismissable': dismissable
-    }
-  )
-  const icon = pickIcon(state)
+
+  const wrapperClass = classNames('notification', {
+    [`${fixPosition}-fix`]: fixPosition,
+    'with-icon': withIcon,
+    dismissable: dismissable
+  });
+  const icon = pickIcon(state);
   return (
     <Toast className={wrapperClass} style={style}>
       <ToastHeader>
@@ -90,10 +88,10 @@ export const Notification: FC<NotificationProps> = ({
 
       {dismissable && (
         <Button className='btn notification-close'>
-          <Icon icon="it-close" />
-          <span className="sr-only">Chiudi notifica: {notificationTitle}</span>
+          <Icon icon='it-close' />
+          <span className='sr-only'>Chiudi notifica: {notificationTitle}</span>
         </Button>
       )}
     </Toast>
-  )
-}
+  );
+};

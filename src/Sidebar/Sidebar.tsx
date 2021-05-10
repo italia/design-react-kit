@@ -1,11 +1,11 @@
-import React, {FC, HTMLAttributes, ElementType} from 'react';
-import classNames from 'classnames'
+import React, { FC, HTMLAttributes, ElementType } from 'react';
+import classNames from 'classnames';
 
-export interface SidebarProps extends HTMLAttributes<HTMLElement>{
+export interface SidebarProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente Sidebar */
-  className?: string
+  className?: string;
   /** Indica se il componente Sideebar corrente è di tipo annidato o no */
   secondary?: boolean;
   /** Quando attivo aggiunge una linea separatrice a sinistra */
@@ -25,26 +25,21 @@ export const Sidebar: FC<SidebarProps> = ({
   dark,
   ...attributes
 }) => {
-  const wrapperClasses = classNames(
-    'sidebar-wrapper',
-    className,{
-    'it-line-left-side' : left,
-    'it-line-right-side' : right,
-    'theme-dark' : dark,
-    }
-  )
+  const wrapperClasses = classNames('sidebar-wrapper', className, {
+    'it-line-left-side': left,
+    'it-line-right-side': right,
+    'theme-dark': dark
+  });
 
-  const wrapperClassesLinkList = classNames(
-    'sidebar-linklist-wrapper',{
-    'linklist-secondary' : secondary,
-    }
-  )
+  const wrapperClassesLinkList = classNames('sidebar-linklist-wrapper', {
+    'linklist-secondary': secondary
+  });
   if (secondary) {
-    return <Tag {...attributes} className={wrapperClassesLinkList} />
+    return <Tag {...attributes} className={wrapperClassesLinkList} />;
   }
   return (
     <Tag className={wrapperClasses}>
       <Tag {...attributes} className={wrapperClassesLinkList} />
     </Tag>
-  )
-}
+  );
+};

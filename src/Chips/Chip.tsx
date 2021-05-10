@@ -1,5 +1,5 @@
-import React, {HTMLAttributes, FC, ElementType} from 'react'
-import classNames from 'classnames'
+import React, { HTMLAttributes, FC, ElementType } from 'react';
+import classNames from 'classnames';
 
 export interface ChipProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
@@ -7,7 +7,7 @@ export interface ChipProps extends HTMLAttributes<HTMLElement> {
   /** Classi aggiuntive da usare per il componente Chip */
   className?: string;
   /** Impostarlo su `true` per centrare la label all'interno */
-  simple?: boolean,
+  simple?: boolean;
   /** Impostarlo su `true` per una versione più grande del componente Chip. */
   large?: boolean;
   /** Impostarlo su `true` per renderizzare il componente Chip come disabilitato */
@@ -15,7 +15,6 @@ export interface ChipProps extends HTMLAttributes<HTMLElement> {
   /** Le varianti di colore definite in Bootstrap Italia */
   color?: 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | string;
 }
-
 
 export const Chip: FC<ChipProps> = ({
   className,
@@ -31,7 +30,7 @@ export const Chip: FC<ChipProps> = ({
     'chip-lg': large,
     'chip-disabled': disabled,
     [`chip-${color}`]: color
-  })
+  });
 
-  return <Tag className={classes} {...attributes} />
-}
+  return <Tag className={classes} {...attributes} />;
+};

@@ -1,4 +1,10 @@
-import React, {FC, HTMLAttributes, MouseEventHandler, ElementType, Ref} from 'react';
+import React, {
+  FC,
+  HTMLAttributes,
+  MouseEventHandler,
+  ElementType,
+  Ref
+} from 'react';
 import { Alert as InnerAlert, FadeProps, CSSModule } from 'reactstrap';
 
 // Copy over from reactstrap and add new ones
@@ -23,10 +29,10 @@ const defaultProps = {
   color: 'success',
   isOpen: true,
   fade: true
-}
+};
 
 export const Alert: FC<AlertProps> = (props) => {
-  return <InnerAlert {...props} />
-}
+  return <InnerAlert {...props} />;
+};
 
-Alert.defaultProps = defaultProps
+Alert.defaultProps = defaultProps;

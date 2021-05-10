@@ -1,6 +1,6 @@
-import React, {  ElementType, FC, HTMLAttributes, MouseEvent } from 'react'
-import classNames from 'classnames'
-import {Icon} from '../Icon/Icon'
+import React, { ElementType, FC, HTMLAttributes, MouseEvent } from 'react';
+import classNames from 'classnames';
+import { Icon } from '../Icon/Icon';
 
 export interface BottomNavItemProps extends HTMLAttributes<HTMLLIElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
@@ -37,28 +37,28 @@ export const BottomNavItem: FC<BottomNavItemProps> = ({
   onLinkClick,
   ...attributes
 }) => {
-  const activeClass = classNames({active})
+  const activeClass = classNames({ active });
   const badgeWrapper = Boolean(badge) && (
-    <div className="badge-wrapper">
-      <span className="bottom-nav-badge">{badge}</span>
+    <div className='badge-wrapper'>
+      <span className='bottom-nav-badge'>{badge}</span>
     </div>
-  )
+  );
   const alertWrapper = Boolean(alert) && (
-    <div className="badge-wrapper">
-      <span className="bottom-nav-alert" />
+    <div className='badge-wrapper'>
+      <span className='bottom-nav-alert' />
     </div>
-  )
+  );
   return (
     <li {...attributes}>
       <Tag href={url} className={activeClass} onClick={onLinkClick}>
         {badgeWrapper}
         {alertWrapper}
         <Icon icon={iconName} />
-        <span className="bottom-nav-label">
+        <span className='bottom-nav-label'>
           {label}
-          {srText ?? <span className="sr-only">{srText}</span>}
+          {srText ?? <span className='sr-only'>{srText}</span>}
         </span>
       </Tag>
     </li>
-  )
-}
+  );
+};

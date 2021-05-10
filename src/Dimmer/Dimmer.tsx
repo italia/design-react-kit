@@ -1,30 +1,36 @@
-import React, {FC, HTMLAttributes} from 'react';
-import classNames from 'classnames'
+import React, { FC, HTMLAttributes } from 'react';
+import classNames from 'classnames';
 
-import {Icon} from '../Icon/Icon';
+import { Icon } from '../Icon/Icon';
 
-export interface DimmerProps extends HTMLAttributes<HTMLElement>{
+export interface DimmerProps extends HTMLAttributes<HTMLElement> {
   /** Il nome dell'icona da mostrare. Per una lista completa vedi: @TODO-URL */
   icon?: string;
   /** Le varianti di colore definite in Bootstrap Italia */
   color?: 'success' | 'warning' | 'danger' | 'note' | 'important' | string;
   /** Classi aggiuntive da usare per il componente Dimmer */
-  className?: string
+  className?: string;
   /** Classi aggiuntive da usare per il componente contenitore del Dimmer */
-  wrapperClassName?: string
+  wrapperClassName?: string;
 }
 
-export const Dimmer: FC<DimmerProps> = ({ icon, color, className, wrapperClassName, ...attributes }) => {
-  const { children, ...rest } = attributes
+export const Dimmer: FC<DimmerProps> = ({
+  icon,
+  color,
+  className,
+  wrapperClassName,
+  ...attributes
+}) => {
+  const { children, ...rest } = attributes;
   const classes = classNames('dimmer', wrapperClassName, {
     [`dimmer-${color}`]: color
-  })
-  const innerClasses = classNames('dimmer-inner', className)
+  });
+  const innerClasses = classNames('dimmer-inner', className);
   const dimmerIcon = icon && (
-    <div className="dimmer-icon">
+    <div className='dimmer-icon'>
       <Icon icon={icon} />
     </div>
-  )
+  );
 
   return (
     <div className={classes} {...rest} style={{ display: 'flex' }}>
@@ -33,5 +39,5 @@ export const Dimmer: FC<DimmerProps> = ({ icon, color, className, wrapperClassNa
         {children}
       </div>
     </div>
-  )
-}
+  );
+};

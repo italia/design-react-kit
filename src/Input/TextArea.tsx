@@ -1,13 +1,11 @@
-import React, { Ref, ReactNode, TextareaHTMLAttributes} from 'react';
+import React, { Ref, ReactNode, TextareaHTMLAttributes } from 'react';
 
-import {InputContainer} from './InputContainer'
-import {
-  getClasses,
-  getInfoTextControlClass
-} from './utils'
-import type {CSSModule} from 'reactstrap';
+import { InputContainer } from './InputContainer';
+import { getClasses, getInfoTextControlClass } from './utils';
+import type { CSSModule } from 'reactstrap';
 
-export interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
+export interface TextAreaProps
+  extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   /** Etichetta del campo TextArea. */
   label?: string | ReactNode;
   /** Testo di esempio da utilizzare per il campo. */
@@ -33,32 +31,32 @@ export interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElemen
   className?: string;
 }
 
-type InputState = {isFocused: boolean, hidden: boolean, icon: boolean}
+type InputState = { isFocused: boolean; hidden: boolean; icon: boolean };
 
 export class TextArea extends React.Component<TextAreaProps, InputState> {
   state = {
     isFocused: false,
     hidden: true,
     icon: true
-  }
+  };
 
   toggleFocusLabel = () => {
     this.setState({
       isFocused: true
-    })
-  }
+    });
+  };
 
-  toggleBlurLabel = (e: { target: { value: string; }; }) => {
+  toggleBlurLabel = (e: { target: { value: string } }) => {
     if (e.target.value === '') {
       this.setState({
         isFocused: !this.state.isFocused
-      })
+      });
     }
-  }
+  };
 
   toggleShow = () => {
-    this.setState({ hidden: !this.state.hidden, icon: !this.state.icon })
-  }
+    this.setState({ hidden: !this.state.hidden, icon: !this.state.icon });
+  };
 
   render() {
     const {
@@ -75,21 +73,20 @@ export class TextArea extends React.Component<TextAreaProps, InputState> {
       valid,
       invalid,
       ...attributes
-    } = this.props
+    } = this.props;
 
     const infoTextControlClass = getInfoTextControlClass(
       { valid, invalid },
       cssModule
-    )
+    );
 
-    const extraAttributes: {ariaDescribedBy?: string} = {}
+    const extraAttributes: { ariaDescribedBy?: string } = {};
 
     // associate the input field with the help text
     const infoId = id ? `${id}Description` : undefined;
-    if(id){
+    if (id) {
       extraAttributes.ariaDescribedBy = infoId;
     }
-
 
     // Styling
     const {
@@ -112,7 +109,7 @@ export class TextArea extends React.Component<TextAreaProps, InputState> {
         originalWrapperClass
       },
       cssModule
-    )
+    );
 
     // set of attributes always shared by the Input components
     const sharedAttributes = {
@@ -121,7 +118,7 @@ export class TextArea extends React.Component<TextAreaProps, InputState> {
       onBlur: this.toggleBlurLabel,
       value: value,
       ref: innerRef
-    }
+    };
 
     // set of attributes always shared by the wrapper component
     const containerProps = {
@@ -132,7 +129,7 @@ export class TextArea extends React.Component<TextAreaProps, InputState> {
       infoTextClass,
       infoText,
       wrapperClass
-    }
+    };
 
     if (placeholder) {
       return (
@@ -145,7 +142,7 @@ export class TextArea extends React.Component<TextAreaProps, InputState> {
             placeholder={placeholder}
           />
         </InputContainer>
-      )
+      );
     }
 
     if (normalized) {
@@ -159,14 +156,19 @@ export class TextArea extends React.Component<TextAreaProps, InputState> {
             readOnly
           />
         </InputContainer>
-      )
+      );
     }
     if (label || infoText) {
       return (
         <InputContainer {...containerProps}>
-          <textarea {...attributes} {...extraAttributes}{...sharedAttributes} className={inputClasses} />
+          <textarea
+            {...attributes}
+            {...extraAttributes}
+            {...sharedAttributes}
+            className={inputClasses}
+          />
         </InputContainer>
-      )
+      );
     }
 
     return (
@@ -177,6 +179,6 @@ export class TextArea extends React.Component<TextAreaProps, InputState> {
         className={inputClasses}
         {...sharedAttributes}
       />
-    )
+    );
   }
 }
