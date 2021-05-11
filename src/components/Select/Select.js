@@ -12,7 +12,7 @@ const propTypes = {
 const defaultProps = {
   ...SelectBase.defaultProps,
   icon: false,
-  clearText: 'Cancella'
+  clearText: 'Annulla'
 }
 
 const DropdownIndicator = props => {
