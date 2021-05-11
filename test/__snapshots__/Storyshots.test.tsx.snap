@@ -207,6 +207,67 @@ exports[`Storyshots Componenti/Avatar Avatar link 1`] = `
 </div>
 `;
 
+exports[`Storyshots Componenti/Avatar Avatar link with Tooltip 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="d-flex align-items-center justify-content-around flex-wrap flex-sm-nowrap"
+  >
+    <a
+      className="avatar size-xl"
+      href="#"
+    >
+      <img
+        alt="Anna Barbieri"
+        src="https://randomuser.me/api/portraits/women/41.jpg"
+      />
+    </a>
+    <a
+      className="avatar size-xl avatar-red"
+      href="#"
+    >
+      <p
+        aria-hidden="true"
+      >
+        MR
+      </p>
+      <span
+        className="sr-only"
+      >
+        Mario Rossi
+      </span>
+    </a>
+    <a
+      className="avatar size-xl"
+      href="#"
+    >
+      <svg
+        className="icon"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21.9 21.1L16 15.3a8.3 8.3 0 002-5.3 8 8 0 10-8 8 8.3 8.3 0 005.3-2l5.8 5.9zM10 17a7 7 0 117-7 7 7 0 01-7 7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Componenti/Avatar Avatar with additional text 1`] = `
 <div
   style={

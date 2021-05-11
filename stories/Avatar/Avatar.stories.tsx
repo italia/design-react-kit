@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import {
   AvatarIcon,
   AvatarContainer,
@@ -140,10 +140,13 @@ AvatarLink.story = {
 };
 
 export const AvatarLinkWithTooltip = () => {
+  const withImageRef = useRef(null);
+  const withTextRef = useRef(null);
+  const withIconRef = useRef(null);
   return (
     <AvatarContainer>
-      <AvatarIcon size='xl' href='#' id='avatar-with-image'>
-        <UncontrolledTooltip placement='left' target='avatar-with-image'>
+      <AvatarIcon size='xl' href='#' innerRef={withImageRef}>
+        <UncontrolledTooltip placement='left' target={withImageRef}>
           Anna Barbieri
           <br />
           <i>Administrator</i>
@@ -153,8 +156,8 @@ export const AvatarLinkWithTooltip = () => {
           alt='Anna Barbieri'
         ></img>
       </AvatarIcon>
-      <AvatarIcon size='xl' color='red' href='#' id='avatar-with-text'>
-        <UncontrolledTooltip placement='top' target='avatar-with-text'>
+      <AvatarIcon size='xl' color='red' href='#' innerRef={withTextRef}>
+        <UncontrolledTooltip placement='top' target={withTextRef}>
           Mario Rossi
           <br />
           <i>Editor</i>
@@ -162,9 +165,9 @@ export const AvatarLinkWithTooltip = () => {
         <p aria-hidden='true'>MR</p>
         <span className='sr-only'>Mario Rossi</span>
       </AvatarIcon>
-      <AvatarIcon size='xl' href='#' id='avatar-with-icon'>
+      <AvatarIcon size='xl' href='#' innerRef={withIconRef}>
         <Icon icon='it-search' />
-        <UncontrolledTooltip placement='right' target='avatar-with-icon'>
+        <UncontrolledTooltip placement='right' target={withIconRef}>
           Search
           <br />
           <i>News Archive</i>

@@ -96,6 +96,7 @@ export class AccordionBody extends Component<
     return (
       <Transition
         {...transitionProps}
+        timeout={timeout}
         in={active}
         onEntering={this.onEntering}
         onEntered={this.onEntered}

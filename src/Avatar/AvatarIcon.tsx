@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes, ElementType } from 'react';
+import React, { FC, HTMLAttributes, ElementType, Ref } from 'react';
 import classNames from 'classnames';
 
 export interface AvatarIconProps extends HTMLAttributes<HTMLElement> {
@@ -17,6 +17,8 @@ export interface AvatarIconProps extends HTMLAttributes<HTMLElement> {
    * Quando definito rende l'icona un link cliccabile. Nota: se definito ignora la prop Tag.
    * */
   href?: string;
+  /** Da utilizzare per impostare un riferimento all'elemento DOM */
+  innerRef?: Ref<HTMLElement | HTMLAnchorElement>;
 }
 
 export const AvatarIcon: FC<AvatarIconProps> = ({
@@ -25,6 +27,8 @@ export const AvatarIcon: FC<AvatarIconProps> = ({
   size = 'md',
   href,
   color,
+  innerRef,
+  children,
   ...attributes
 }) => {
   const typeClass = classNames('avatar', {
@@ -32,8 +36,21 @@ export const AvatarIcon: FC<AvatarIconProps> = ({
     [`avatar-${color}`]: color
   });
   if (href) {
-    return <a href={href} {...attributes} className={typeClass}></a>;
+    return (
+      <a
+        href={href}
+        {...attributes}
+        className={typeClass}
+        ref={innerRef as Ref<HTMLAnchorElement>}
+      >
+        {children}
+      </a>
+    );
   }
 
-  return <Tag {...attributes} className={typeClass} />;
+  return (
+    <Tag {...attributes} className={typeClass}>
+      {children}
+    </Tag>
+  );
 };

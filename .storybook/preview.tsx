@@ -76,5 +76,5 @@ export const parameters = {
 };
 
 export const decorators = [
-  Story => <div style={customStyle}><FontLoader /><Story/></div>
+  (Story: Function) => <div style={customStyle}><FontLoader /><Story/></div>
 ]
