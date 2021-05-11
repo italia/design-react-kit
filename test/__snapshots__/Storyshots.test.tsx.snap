@@ -11424,6 +11424,7 @@ exports[`Storyshots Componenti/ThumbNav Esempio 1`] = `
   >
     <li>
       <img
+        alt=""
         aria-hidden="true"
         className="thumb-nav-resizer"
         src={
@@ -11444,6 +11445,7 @@ exports[`Storyshots Componenti/ThumbNav Esempio 1`] = `
     </li>
     <li>
       <img
+        alt=""
         aria-hidden="true"
         className="thumb-nav-resizer"
         src={
@@ -11464,6 +11466,7 @@ exports[`Storyshots Componenti/ThumbNav Esempio 1`] = `
     </li>
     <li>
       <img
+        alt=""
         aria-hidden="true"
         className="thumb-nav-resizer"
         src={
@@ -11484,6 +11487,7 @@ exports[`Storyshots Componenti/ThumbNav Esempio 1`] = `
     </li>
     <li>
       <img
+        alt=""
         aria-hidden="true"
         className="thumb-nav-resizer"
         src={
@@ -11504,6 +11508,7 @@ exports[`Storyshots Componenti/ThumbNav Esempio 1`] = `
     </li>
     <li>
       <img
+        alt=""
         aria-hidden="true"
         className="thumb-nav-resizer"
         src={
@@ -11524,6 +11529,7 @@ exports[`Storyshots Componenti/ThumbNav Esempio 1`] = `
     </li>
     <li>
       <img
+        alt=""
         aria-hidden="true"
         className="thumb-nav-resizer"
         src={
@@ -11571,6 +11577,7 @@ exports[`Storyshots Componenti/ThumbNav Overlay 1`] = `
     >
       <li>
         <img
+          alt=""
           aria-hidden="true"
           className="thumb-nav-resizer"
           src={
@@ -11591,6 +11598,7 @@ exports[`Storyshots Componenti/ThumbNav Overlay 1`] = `
       </li>
       <li>
         <img
+          alt=""
           aria-hidden="true"
           className="thumb-nav-resizer"
           src={
@@ -11611,6 +11619,7 @@ exports[`Storyshots Componenti/ThumbNav Overlay 1`] = `
       </li>
       <li>
         <img
+          alt=""
           aria-hidden="true"
           className="thumb-nav-resizer"
           src={
@@ -11631,6 +11640,7 @@ exports[`Storyshots Componenti/ThumbNav Overlay 1`] = `
       </li>
       <li>
         <img
+          alt=""
           aria-hidden="true"
           className="thumb-nav-resizer"
           src={
