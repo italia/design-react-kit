@@ -172,6 +172,12 @@ workflows:
             tags:
               only: /.*/
 
+      - test:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+
       - check-gatsby-ssr:
           requires:
             - build
