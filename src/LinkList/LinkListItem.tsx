@@ -40,6 +40,7 @@ export const LinkListItem: FC<LinkListItemProps> = ({
   href,
   size,
   tag: Tag = 'a',
+  children,
   ...attributes
 }) => {
   const classes = classNames(
@@ -75,7 +76,9 @@ export const LinkListItem: FC<LinkListItemProps> = ({
             {...attributes}
             className={classes}
             {...handlers}
-          />
+          >
+            {children}
+          </a>
         </Tag>
       </li>
     );
@@ -83,7 +86,9 @@ export const LinkListItem: FC<LinkListItemProps> = ({
 
   return (
     <li>
-      <Tag {...attributes} className={classes} href={href} {...handlers} />
+      <Tag {...attributes} className={classes} href={href} {...handlers}>
+        {children}
+      </Tag>
     </li>
   );
 };

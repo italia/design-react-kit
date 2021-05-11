@@ -21,7 +21,12 @@ export const ThumbNavItem: FC<ThumbNavItemProps> = ({
 
   return (
     <li {...attributes}>
-      <img src={resizer} className='thumb-nav-resizer' aria-hidden='true' />
+      <img
+        src={resizer}
+        className='thumb-nav-resizer'
+        aria-hidden='true'
+        alt=''
+      />
       <a href={targetUrl} className={classes}>
         <img src={imageUrl} alt={actionDescription} />
       </a>

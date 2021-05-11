@@ -19,6 +19,7 @@ export interface ForwardProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 export const Forward: FC<ForwardProps> = ({
   className,
   scrollToRef,
+  children,
   ...attributes
 }) => {
   const classes = classNames(className, 'forward');
@@ -32,6 +33,8 @@ export const Forward: FC<ForwardProps> = ({
         })
       }
       {...attributes}
-    />
+    >
+      {children}
+    </a>
   );
 };

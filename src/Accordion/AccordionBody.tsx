@@ -67,8 +67,7 @@ export class AccordionBody extends Component<
 
   onExiting = (node: HTMLElement) => {
     // getting this variable triggers a reflow
-    // eslint-disable-next-line no-unused-vars
-    // @ts-ignore
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const _unused = node.offsetHeight;
     this.setState({ height: 0 });
     this.props.onExiting?.(node);
