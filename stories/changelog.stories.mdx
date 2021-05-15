@@ -2,45 +2,47 @@ import { Meta } from "@storybook/addon-docs/blocks";
 
 <Meta title="Documentazione/Changelog" />
 
+# Changelog
+
 In questa pagina è possibile trovare la lista dei cambiamenti da versione a versione del kit.
 
 Alcuni dei cambiamenti sono accompagnati da alcuni simboli grafici. 
 Legenda:
-* :boom: breaking change
-* :wastebasket: deprecato
+* 💥 breaking change
+* 🗑 deprecato
 
 # Release v.3.4.0
 
 ### Nuove funzionalità
 
-* Nuovo tipi TS: il kit è stato interamente riscritto in Typescript. :boom:
+* Nuovo tipi TS: il kit è stato interamente riscritto in Typescript. 💥
 * `Fontloader`: nuovo attributo `fonts` per il caricamento di font aggiuntivi oltre a quelli standard.
 * `Pager`: nuovo attributo `total`.
 * `Section`: nuovo attributo `color`.
-   * Gli attributi `neutral` e `muted` sono stati deprecati :wastebasket:
-* `Input`: nuovo attributo `wrapperClassName` sostituisce la vecchia `wrapperClass` :wastebasket:
+   * Gli attributi `neutral` e `muted` sono stati deprecati 🗑
+* `Input`: nuovo attributo `wrapperClassName` sostituisce la vecchia `wrapperClass` 🗑
 * `Progress`: nuovo attributo `wrapperClassName`. 
-    * il precedente attributo `className` non verrà più applicato anche al nodo wrapper. :boom:
+    * il precedente attributo `className` non verrà più applicato anche al nodo wrapper. 💥
     * Azioni richieste per vecchio comportamento: impostare `wrapperClassName={true}` sul componente
 * `Dimmer`: nuovo attributo `wrapperClassName`.
-    * il precedente attributo `className` non verrà più applicato anche al nodo wrapper. :boom:
+    * il precedente attributo `className` non verrà più applicato anche al nodo wrapper. 💥
     * Azioni richieste per vecchio comportamento: impostare `wrapperClassName={true}` sul componente
-* `DimmerButton`: ora l'attributo `dark` è `true` di default. :boom:
+* `DimmerButton`: ora l'attributo `dark` è `true` di default. 💥
     * Azioni richieste per vecchio comportamento: impostare `dark={false}` sul componente
 * `Section`: nuovo attributo `wrapperClassName`.
-    * il precedente attributo `className` non verrà più applicato anche al nodo wrapper. :boom:
+    * il precedente attributo `className` non verrà più applicato anche al nodo wrapper. 💥
     * Azioni richieste per vecchio comportamento: impostare `wrapperClassName={true}` sul componente 
 * `PagerList`: nuovi attributi `listTag` e `listClassName` per il componente `Pager`.
-    * il componente `PagerList` è stato rimosso ed integrato all'interno del componente `Pager`. :boom:
+    * il componente `PagerList` è stato rimosso ed integrato all'interno del componente `Pager`. 💥
     * Azioni richieste per vecchio comportamento: rimuovere il componente `PagerList` ed utilizzare i nuovi attributi `listTag` e `listClassName` del componente `Pager`.
-* `TimelinePin`: nuovo attributo `iconName` che sostituisce la vecchia `icon` :wastebasket:
+* `TimelinePin`: nuovo attributo `iconName` che sostituisce la vecchia `icon` 🗑
 * `StepperHeaderElement`: nuovo valore `mobile` per l'attributo `variant`.
-  * il precedente valore `steppers-index` è stato deprecato :wastebasket:
-* `StepperHeaderElement`: nuova attributo `appendIcon` che sostituisce la vecchia `icon` :wastebasket:
-* `StepperHeaderElement`: nuova attributo `prependIcon` che sostituisce la vecchia `iconName` :wastebasket:
+  * il precedente valore `steppers-index` è stato deprecato 🗑
+* `StepperHeaderElement`: nuova attributo `appendIcon` che sostituisce la vecchia `icon` 🗑
+* `StepperHeaderElement`: nuova attributo `prependIcon` che sostituisce la vecchia `iconName` 🗑
 * `BottomNavItem`: nuovi attributi `url` e `onLinkClick` per gestire l'azione di click con più dettaglio.
-  * l'attributo `link` è stato deprecato :wastebasket:
-* `Notification`: nuovo attributo `title` che sostituisce il vecchio `header` :wastebasket:
+  * l'attributo `link` è stato deprecato 🗑
+* `Notification`: nuovo attributo `title` che sostituisce il vecchio `header` 🗑
 * `Notification`: nuovi valori `top`/`bottom`/`left`/`right` per l'attributo `fix` che sostituiscono i vecchi valori deprecati.
 
 ### Bug fixes
@@ -53,7 +55,7 @@ Riscritta interamente la documentazione del kit per essere più completa e per o
 
 ### Altri Cambiamenti importanti
 
-* `Pager` l'attributo `size` è stato rimosso poichè non utilizzato nel kit Bootstrap Italia. :boom:
+* `Pager` l'attributo `size` è stato rimosso poichè non utilizzato nel kit Bootstrap Italia. 💥
     * Azioni richieste per vecchio comportamento: utilizzare l'attributo `className` del componente `Pager`.
 
 
