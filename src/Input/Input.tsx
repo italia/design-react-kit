@@ -70,6 +70,11 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   cssModule?: CSSModule;
   /** Classi aggiuntive da usare per il wrapper del componente Input */
   wrapperClassName?: string;
+  /**
+   * Classi aggiuntive da usare per il wrapper del componente Input.
+   * @deprecated. Usare `wrapperClassName`.
+   * */
+  wrapperClass?: string;
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente Input */
@@ -130,6 +135,7 @@ export class Input extends React.Component<InputProps, InputState> {
       placeholder,
       normalized,
       value,
+      wrapperClass: originalWrapperClassOld,
       wrapperClassName: originalWrapperClass,
       size,
       ...attributes
@@ -219,7 +225,7 @@ export class Input extends React.Component<InputProps, InputState> {
         formControlClass,
         infoTextControlClass,
         isFocused: this.state.isFocused,
-        originalWrapperClass
+        originalWrapperClass: originalWrapperClass || originalWrapperClassOld
       },
       cssModule
     );

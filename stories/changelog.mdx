@@ -1,0 +1,61 @@
+# Changelog
+
+In questa pagina è possibile trovare la lista dei cambiamenti da versione a versione del kit.
+
+Alcuni dei cambiamenti sono accompagnati da alcuni simboli grafici. 
+Legenda:
+* :boom: breaking change
+* :wastebasket: deprecato
+
+# Release v.3.4.0
+
+### Nuove funzionalità
+
+* Nuovo tipi TS: il kit è stato interamente riscritto in Typescript. :boom:
+* `Fontloader`: nuovo attributo `fonts` per il caricamento di font aggiuntivi oltre a quelli standard.
+* `Pager`: nuovo attributo `total`.
+* `Section`: nuovo attributo `color`.
+   * Gli attributi `neutral` e `muted` sono stati deprecati :wastebasket:
+* `Input`: nuovo attributo `wrapperClassName` sostituisce la vecchia `wrapperClass` :wastebasket:
+* `Progress`: nuovo attributo `wrapperClassName`. 
+    * il precedente attributo `className` non verrà più applicato anche al nodo wrapper. :boom:
+    * Azioni richieste per vecchio comportamento: impostare `wrapperClassName={true}` sul componente
+* `Dimmer`: nuovo attributo `wrapperClassName`.
+    * il precedente attributo `className` non verrà più applicato anche al nodo wrapper. :boom:
+    * Azioni richieste per vecchio comportamento: impostare `wrapperClassName={true}` sul componente
+* `DimmerButton`: ora l'attributo `dark` è `true` di default. :boom:
+    * Azioni richieste per vecchio comportamento: impostare `dark={false}` sul componente
+* `Section`: nuovo attributo `wrapperClassName`.
+    * il precedente attributo `className` non verrà più applicato anche al nodo wrapper. :boom:
+    * Azioni richieste per vecchio comportamento: impostare `wrapperClassName={true}` sul componente 
+* `PagerList`: nuovi attributi `listTag` e `listClassName` per il componente `Pager`.
+    * il componente `PagerList` è stato rimosso ed integrato all'interno del componente `Pager`. :boom:
+    * Azioni richieste per vecchio comportamento: rimuovere il componente `PagerList` ed utilizzare i nuovi attributi `listTag` e `listClassName` del componente `Pager`.
+* `TimelinePin`: nuovo attributo `iconName` che sostituisce la vecchia `icon` :wastebasket:
+* `StepperHeaderElement`: nuovo valore `mobile` per l'attributo `variant`.
+  * il precedente valore `steppers-index` è stato deprecato :wastebasket:
+* `StepperHeaderElement`: nuova attributo `appendIcon` che sostituisce la vecchia `icon` :wastebasket:
+* `StepperHeaderElement`: nuova attributo `prependIcon` che sostituisce la vecchia `iconName` :wastebasket:
+* `BottomNavItem`: nuovi attributi `url` e `onLinkClick` per gestire l'azione di click con più dettaglio.
+  * l'attributo `link` è stato deprecato :wastebasket:
+* `Notification`: nuovo attributo `title` che sostituisce il vecchio `header` :wastebasket:
+* `Notification`: nuovi valori `top`/`bottom`/`left`/`right` per l'attributo `fix` che sostituiscono i vecchi valori deprecati.
+
+### Bug fixes
+
+* `BottomNavItem`: il tipo dell'attributo `badge` è stato corretto in `number`.
+
+### Documentazione
+
+Riscritta interamente la documentazione del kit per essere più completa e per offrire una consultazione più facile.
+
+### Altri Cambiamenti importanti
+
+* `Pager` l'attributo `size` è stato rimosso poichè non utilizzato nel kit Bootstrap Italia. :boom:
+    * Azioni richieste per vecchio comportamento: utilizzare l'attributo `className` del componente `Pager`.
+
+
+### Usi il Design React Kit in produzione? Scrivici!
+
+Siamo felici di ricevere ogni tipo di feedback e commento se utilizzi il kit nella tu pagina/app/prodotto.
+Facci sapere tramite il canale Developers Italia o tramite una issue cosa ne pensi.

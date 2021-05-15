@@ -76,6 +76,8 @@
     "@svgr/cli": "^5.5.0",
     "@svgr/rollup": "^5.5.0",
     "@svgr/webpack": "^5.5.0",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
     "@types/is-number": "^7.0.1",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
@@ -93,6 +95,7 @@
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
     "size-limit": "^4.10.2",
+    "ts-jest": "^25.3.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.2.0",
     "typeface-lora": "^1.1.13",
@@ -116,9 +119,23 @@
     "safari 11"
   ],
   "jest": {
+    "transform": {
+      ".(ts|tsx)$": "ts-jest",
+      ".(js|jsx)$": "babel-jest",
+      "^.+\\.mdx$": "@storybook/addon-docs/jest-transform-mdx"
+    },
     "moduleNameMapper": {
       "^.+.(svg|png|jpg)$": "jest-transform-stub",
       "^.+\\.css$": "identity-obj-proxy"
-    }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node",
+      "mdx"
+    ]
   }
 }

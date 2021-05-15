@@ -4,7 +4,7 @@ import React from 'react';
 
 import { Section, Container, Row, Col } from '../../src';
 
-const EsempiComponent = () => {
+export const Esempio = () => {
   return (
     <Section>
       <Container>
@@ -35,7 +35,7 @@ const EsempiComponent = () => {
   );
 };
 
-const SfondoTenueComponent = () => {
+export const SfondoTenue = () => {
   return (
     <Section color='muted'>
       <Container>
@@ -66,7 +66,7 @@ const SfondoTenueComponent = () => {
   );
 };
 
-const SfondoPrimarioComponent = () => {
+export const SfondoPrimario = () => {
   return (
     <Section color='primary'>
       <Container className='white-color'>
@@ -97,7 +97,7 @@ const SfondoPrimarioComponent = () => {
   );
 };
 
-const SfondoNeutraleComponent = () => {
+export const SfondoNeutrale = () => {
   return (
     <Section color='neutral'>
       <Container className='white-color'>
@@ -201,14 +201,6 @@ export const SectionConCard = () => {
 export default {
   title: 'Componenti/Section'
 };
-
-export const Esempio = EsempiComponent;
-
-export const SfondoTenue = SfondoTenueComponent;
-
-export const SfondoPrimario = SfondoPrimarioComponent;
-
-export const SfondoNeutrale = SfondoNeutraleComponent;
 
 ImmagineDiSfondo.story = {
   name: 'Immagine di sfondo'

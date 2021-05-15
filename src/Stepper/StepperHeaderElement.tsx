@@ -34,9 +34,9 @@ export interface StepperHeaderElementProps
   stepperNumber?: ReactNode;
   /** Nasconde il bordo inferiore azzurro per lo step */
   noLine?: boolean;
-  /** Deprecato: usare `appendIcon` */
+  /** @deprecated Usare `appendIcon` */
   icon?: string;
-  /** Deprecato: usare `prependIcon` */
+  /** @deprecated Usare `prependIcon` */
   iconName?: string;
 }
 
@@ -53,7 +53,13 @@ export const StepperHeaderElement: FC<StepperHeaderElementProps> = ({
   className,
   ...attributes
 }) => {
-  const wrapperClasses = classNames(variant, className, { 'no-line': noLine });
+  const wrapperClasses = classNames(
+    variant ? variants[variant] : '',
+    className,
+    {
+      'no-line': noLine
+    }
+  );
   const iconClass = classNames('icon', 'steppers-success');
   const spanClass = classNames('steppers-number');
 

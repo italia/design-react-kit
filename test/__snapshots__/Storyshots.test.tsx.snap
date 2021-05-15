@@ -191,6 +191,7 @@ exports[`Storyshots Componenti/Avatar Avatar link 1`] = `
       <svg
         className="icon"
         onClick={[Function]}
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -252,6 +253,7 @@ exports[`Storyshots Componenti/Avatar Avatar link with Tooltip 1`] = `
     >
       <svg
         className="icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -385,6 +387,7 @@ exports[`Storyshots Componenti/Avatar Avatar with icon 1`] = `
     >
       <svg
         className="icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -402,6 +405,7 @@ exports[`Storyshots Componenti/Avatar Avatar with icon 1`] = `
     >
       <svg
         className="icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -419,6 +423,7 @@ exports[`Storyshots Componenti/Avatar Avatar with icon 1`] = `
     >
       <svg
         className="icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -436,6 +441,7 @@ exports[`Storyshots Componenti/Avatar Avatar with icon 1`] = `
     >
       <svg
         className="icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -453,6 +459,7 @@ exports[`Storyshots Componenti/Avatar Avatar with icon 1`] = `
     >
       <svg
         className="icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -470,6 +477,7 @@ exports[`Storyshots Componenti/Avatar Avatar with icon 1`] = `
     >
       <svg
         className="icon"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -738,6 +746,7 @@ exports[`Storyshots Componenti/Avatar/Avatar groups List Avatar Media List 1`] =
           >
             <svg
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -842,6 +851,7 @@ exports[`Storyshots Componenti/Avatar/Avatar groups List Avatar Small List 1`] =
           >
             <svg
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -942,6 +952,7 @@ exports[`Storyshots Componenti/Avatar/Avatar groups Overlapping Medium Overlaid 
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1058,6 +1069,7 @@ exports[`Storyshots Componenti/Avatar/Avatar groups Overlapping Medium Overlaid 
                     >
                       <svg
                         className="icon"
+                        role="img"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -1214,6 +1226,7 @@ exports[`Storyshots Componenti/Avatar/Avatar groups Overlapping Small Overlappin
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1330,6 +1343,7 @@ exports[`Storyshots Componenti/Avatar/Avatar groups Overlapping Small Overlappin
                     >
                       <svg
                         className="icon"
+                        role="img"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -1409,6 +1423,7 @@ exports[`Storyshots Componenti/Avatar/Behavior User Presence 1`] = `
           >
             <svg
               className="icon icon-white"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1468,6 +1483,7 @@ exports[`Storyshots Componenti/Avatar/Behavior User Presence 1`] = `
           >
             <svg
               className="icon icon-white"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1502,6 +1518,7 @@ exports[`Storyshots Componenti/Avatar/Behavior User Presence 1`] = `
           >
             <svg
               className="icon icon-white"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1536,6 +1553,7 @@ exports[`Storyshots Componenti/Avatar/Behavior User Presence 1`] = `
           >
             <svg
               className="icon icon-white"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1570,6 +1588,7 @@ exports[`Storyshots Componenti/Avatar/Behavior User Presence 1`] = `
           >
             <svg
               className="icon icon-white"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1625,6 +1644,7 @@ exports[`Storyshots Componenti/Avatar/Behavior User Status 1`] = `
           >
             <svg
               className="icon icon-white"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1659,6 +1679,7 @@ exports[`Storyshots Componenti/Avatar/Behavior User Status 1`] = `
           >
             <svg
               className="icon icon-white"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1718,6 +1739,7 @@ exports[`Storyshots Componenti/Avatar/Behavior User Status 1`] = `
           >
             <svg
               className="icon icon-white"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1752,6 +1774,7 @@ exports[`Storyshots Componenti/Avatar/Behavior User Status 1`] = `
           >
             <svg
               className="icon icon-white"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1786,6 +1809,7 @@ exports[`Storyshots Componenti/Avatar/Behavior User Status 1`] = `
           >
             <svg
               className="icon icon-white"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1820,6 +1844,7 @@ exports[`Storyshots Componenti/Avatar/Behavior User Status 1`] = `
           >
             <svg
               className="icon icon-white"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2129,6 +2154,7 @@ exports[`Storyshots Componenti/BottomNav Alert 1`] = `
           </div>
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2155,6 +2181,7 @@ exports[`Storyshots Componenti/BottomNav Alert 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2190,6 +2217,7 @@ exports[`Storyshots Componenti/BottomNav Alert 1`] = `
           </div>
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2216,6 +2244,7 @@ exports[`Storyshots Componenti/BottomNav Alert 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2244,6 +2273,7 @@ exports[`Storyshots Componenti/BottomNav Alert 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2302,6 +2332,7 @@ exports[`Storyshots Componenti/BottomNav Badge 1`] = `
           </div>
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2337,6 +2368,7 @@ exports[`Storyshots Componenti/BottomNav Badge 1`] = `
           </div>
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2372,6 +2404,7 @@ exports[`Storyshots Componenti/BottomNav Badge 1`] = `
           </div>
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2398,6 +2431,7 @@ exports[`Storyshots Componenti/BottomNav Badge 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2426,6 +2460,7 @@ exports[`Storyshots Componenti/BottomNav Badge 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2475,6 +2510,7 @@ exports[`Storyshots Componenti/BottomNav Esempi 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2503,6 +2539,7 @@ exports[`Storyshots Componenti/BottomNav Esempi 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2531,6 +2568,7 @@ exports[`Storyshots Componenti/BottomNav Esempi 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2586,6 +2624,7 @@ exports[`Storyshots Componenti/Breadcrumb Con icone 1`] = `
             <svg
               aria-hidden={true}
               className="icon align-top mr-1 icon-secondary icon-sm"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2614,6 +2653,7 @@ exports[`Storyshots Componenti/Breadcrumb Con icone 1`] = `
             <svg
               aria-hidden={true}
               className="icon align-top mr-1 icon-secondary icon-sm"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2643,6 +2683,7 @@ exports[`Storyshots Componenti/Breadcrumb Con icone 1`] = `
             <svg
               aria-hidden={true}
               className="icon align-top mr-1 icon-secondary icon-sm"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2859,6 +2900,7 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
           <svg
             aria-hidden={true}
             className="icon align-top mr-1 icon-white icon-sm"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2887,6 +2929,7 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
           <svg
             aria-hidden={true}
             className="icon align-top mr-1 icon-white icon-sm"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2916,6 +2959,7 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
           <svg
             aria-hidden={true}
             className="icon align-top mr-1 icon-white icon-sm"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2948,6 +2992,7 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
           <svg
             aria-hidden={true}
             className="icon align-top mr-1 icon-white icon-sm"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2976,6 +3021,7 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
           <svg
             aria-hidden={true}
             className="icon align-top mr-1 icon-white icon-sm"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -3005,6 +3051,7 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
           <svg
             aria-hidden={true}
             className="icon align-top mr-1 icon-white icon-sm"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -3161,6 +3208,7 @@ exports[`Storyshots Componenti/Chips Chip Groups 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -3179,6 +3227,7 @@ exports[`Storyshots Componenti/Chips Chip Groups 1`] = `
     >
       <svg
         className="icon icon-xs"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -3202,6 +3251,7 @@ exports[`Storyshots Componenti/Chips Chip Groups 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -3238,6 +3288,7 @@ exports[`Storyshots Componenti/Chips Chip Groups 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -3276,6 +3327,7 @@ exports[`Storyshots Componenti/Chips Chip Groups 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -3294,6 +3346,7 @@ exports[`Storyshots Componenti/Chips Chip Groups 1`] = `
     >
       <svg
         className="icon icon-xs"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -3317,6 +3370,7 @@ exports[`Storyshots Componenti/Chips Chip Groups 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -3353,6 +3407,7 @@ exports[`Storyshots Componenti/Chips Chip Groups 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -3409,6 +3464,7 @@ exports[`Storyshots Componenti/Chips Disabled Chip 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -3427,6 +3483,7 @@ exports[`Storyshots Componenti/Chips Disabled Chip 1`] = `
     >
       <svg
         className="icon icon-xs"
+        role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -3452,6 +3509,7 @@ exports[`Storyshots Componenti/Chips Disabled Chip 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -3490,6 +3548,7 @@ exports[`Storyshots Componenti/Chips Disabled Chip 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -3562,6 +3621,7 @@ exports[`Storyshots Componenti/Chips Great Version 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -3585,6 +3645,7 @@ exports[`Storyshots Componenti/Chips Great Version 1`] = `
       >
         <svg
           className="icon icon-xs"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -3608,6 +3669,7 @@ exports[`Storyshots Componenti/Chips Great Version 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -3649,6 +3711,7 @@ exports[`Storyshots Componenti/Chips Great Version 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -3722,6 +3785,7 @@ exports[`Storyshots Componenti/Chips Standard Version 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -3745,6 +3809,7 @@ exports[`Storyshots Componenti/Chips Standard Version 1`] = `
       >
         <svg
           className="icon icon-xs"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -3768,6 +3833,7 @@ exports[`Storyshots Componenti/Chips Standard Version 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -3809,6 +3875,7 @@ exports[`Storyshots Componenti/Chips Standard Version 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -4814,6 +4881,7 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù dark 1`] = `
               <svg
                 aria-hidden={true}
                 className="icon right icon-light icon-sm"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -4837,6 +4905,7 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù dark 1`] = `
               <svg
                 aria-hidden={true}
                 className="icon right icon-light icon-sm"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -4860,6 +4929,7 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù dark 1`] = `
               <svg
                 aria-hidden={true}
                 className="icon right icon-light icon-sm"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -4888,6 +4958,7 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù dark 1`] = `
               <svg
                 aria-hidden={true}
                 className="icon right icon-light icon-sm"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -4912,6 +4983,7 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù dark 1`] = `
               <svg
                 aria-hidden={true}
                 className="icon right icon-light icon-sm"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -5133,6 +5205,7 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù icona a destra 1`] =
               <svg
                 aria-hidden={true}
                 className="icon right icon-primary icon-sm"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -5156,6 +5229,7 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù icona a destra 1`] =
               <svg
                 aria-hidden={true}
                 className="icon right icon-primary icon-sm"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -5179,6 +5253,7 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù icona a destra 1`] =
               <svg
                 aria-hidden={true}
                 className="icon right icon-primary icon-sm"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -5234,6 +5309,7 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù icona a sinistra 1`]
               <svg
                 aria-hidden={true}
                 className="icon left icon-primary icon-sm"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -5257,6 +5333,7 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù icona a sinistra 1`]
               <svg
                 aria-hidden={true}
                 className="icon left icon-primary icon-sm"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -5280,6 +5357,7 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù icona a sinistra 1`]
               <svg
                 aria-hidden={true}
                 className="icon left icon-primary icon-sm"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -6955,6 +7033,7 @@ exports[`Storyshots Componenti/LinkList Esempio Multiline 1`] = `
           <svg
             aria-hidden={true}
             className="icon icon-primary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -6983,6 +7062,7 @@ exports[`Storyshots Componenti/LinkList Esempio Multiline 1`] = `
           <svg
             aria-hidden={true}
             className="icon icon-primary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7013,6 +7093,7 @@ exports[`Storyshots Componenti/LinkList Esempio Multiline 1`] = `
           <svg
             aria-hidden={true}
             className="icon icon-primary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7763,6 +7844,7 @@ exports[`Storyshots Componenti/LinkList/Con controlli Primary Action 1`] = `
           <svg
             aria-hidden={true}
             className="icon left icon-primary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7786,6 +7868,7 @@ exports[`Storyshots Componenti/LinkList/Con controlli Primary Action 1`] = `
           <svg
             aria-hidden={true}
             className="icon left icon-primary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7810,6 +7893,7 @@ exports[`Storyshots Componenti/LinkList/Con controlli Primary Action 1`] = `
           <svg
             aria-hidden={true}
             className="icon left icon-primary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7855,6 +7939,7 @@ exports[`Storyshots Componenti/LinkList/Con controlli Primary e Secondary Action
           <svg
             aria-hidden={true}
             className="icon left icon-primary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7875,6 +7960,7 @@ exports[`Storyshots Componenti/LinkList/Con controlli Primary e Secondary Action
           <svg
             aria-hidden={true}
             className="icon right icon-secondary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7894,6 +7980,7 @@ exports[`Storyshots Componenti/LinkList/Con controlli Primary e Secondary Action
           <svg
             aria-hidden={true}
             className="icon left icon-primary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7914,6 +8001,7 @@ exports[`Storyshots Componenti/LinkList/Con controlli Primary e Secondary Action
           <svg
             aria-hidden={true}
             className="icon right icon-secondary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7934,6 +8022,7 @@ exports[`Storyshots Componenti/LinkList/Con controlli Primary e Secondary Action
           <svg
             aria-hidden={true}
             className="icon left icon-primary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7954,6 +8043,7 @@ exports[`Storyshots Componenti/LinkList/Con controlli Primary e Secondary Action
           <svg
             aria-hidden={true}
             className="icon right icon-secondary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7999,6 +8089,7 @@ exports[`Storyshots Componenti/LinkList/Con controlli Secondary Action 1`] = `
           <svg
             aria-hidden={true}
             className="icon icon-right icon-primary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -8025,6 +8116,7 @@ exports[`Storyshots Componenti/LinkList/Con controlli Secondary Action 1`] = `
           <svg
             aria-hidden={true}
             className="icon icon-right icon-primary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -8052,6 +8144,7 @@ exports[`Storyshots Componenti/LinkList/Con controlli Secondary Action 1`] = `
           <svg
             aria-hidden={true}
             className="icon icon-right icon-primary"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -8104,6 +8197,7 @@ exports[`Storyshots Componenti/Pager Allineamento 1`] = `
               <svg
                 aria-hidden={true}
                 className="icon"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -8164,6 +8258,7 @@ exports[`Storyshots Componenti/Pager Allineamento 1`] = `
               <svg
                 aria-hidden={true}
                 className="icon"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -8202,6 +8297,7 @@ exports[`Storyshots Componenti/Pager Allineamento 1`] = `
               <svg
                 aria-hidden={true}
                 className="icon"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -8262,6 +8358,7 @@ exports[`Storyshots Componenti/Pager Allineamento 1`] = `
               <svg
                 aria-hidden={true}
                 className="icon"
+                role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -8316,6 +8413,7 @@ exports[`Storyshots Componenti/Pager Esempi 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -8375,6 +8473,7 @@ exports[`Storyshots Componenti/Pager Esempi 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -8428,6 +8527,7 @@ exports[`Storyshots Componenti/Pager Responsive 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -8513,6 +8613,7 @@ exports[`Storyshots Componenti/Pager Responsive 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -8566,6 +8667,7 @@ exports[`Storyshots Componenti/Pager Stato disabilitato e attivo 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -8626,6 +8728,7 @@ exports[`Storyshots Componenti/Pager Stato disabilitato e attivo 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -8679,6 +8782,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -8797,6 +8901,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -9026,6 +9131,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive More 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -9144,6 +9250,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive More 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -9197,6 +9304,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -9315,6 +9423,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -9432,6 +9541,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Simple mode 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -9488,6 +9598,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Simple mode 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -9541,6 +9652,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -9659,6 +9771,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
             <svg
               aria-hidden={true}
               className="icon"
+              role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -10098,6 +10211,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10122,7 +10236,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
         Label Step 3
       </li>
       <li
-        className="mobile"
+        className="steppers-index"
       >
         2/6
       </li>
@@ -10135,6 +10249,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10149,6 +10264,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
         Label Step 1
         <svg
           className="icon icon steppers-success"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10166,6 +10282,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10189,6 +10306,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10203,7 +10321,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
         Label Step 3
       </li>
       <li
-        className="mobile"
+        className="steppers-index"
       >
         2/6
       </li>
@@ -10219,6 +10337,7 @@ exports[`Storyshots Componenti/Stepper Header Variants 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -10286,6 +10405,7 @@ exports[`Storyshots Componenti/Stepper Navigation of the steps 1`] = `
         Label Step 1
         <svg
           className="icon icon steppers-success"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10309,7 +10429,7 @@ exports[`Storyshots Componenti/Stepper Navigation of the steps 1`] = `
         Label Step 3
       </li>
       <li
-        className="mobile"
+        className="steppers-index"
       >
         2/6
       </li>
@@ -10343,6 +10463,7 @@ exports[`Storyshots Componenti/Stepper Navigation of the steps 1`] = `
       >
         <svg
           className="icon icon-primary"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10360,6 +10481,7 @@ exports[`Storyshots Componenti/Stepper Navigation of the steps 1`] = `
         Next
         <svg
           className="icon icon-primary"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10406,6 +10528,7 @@ exports[`Storyshots Componenti/Stepper Order of the steps 1`] = `
         >
           <svg
             className="icon"
+            role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -10473,6 +10596,7 @@ exports[`Storyshots Componenti/Stepper Text Only 1`] = `
         Label Step 1
         <svg
           className="icon icon steppers-success"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10496,7 +10620,7 @@ exports[`Storyshots Componenti/Stepper Text Only 1`] = `
         Label Step 3
       </li>
       <li
-        className="mobile"
+        className="steppers-index"
       >
         2/6
       </li>
@@ -10528,6 +10652,7 @@ exports[`Storyshots Componenti/Stepper Text and Icons 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10542,6 +10667,7 @@ exports[`Storyshots Componenti/Stepper Text and Icons 1`] = `
         Label Step 1
         <svg
           className="icon icon steppers-success"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10559,6 +10685,7 @@ exports[`Storyshots Componenti/Stepper Text and Icons 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10582,6 +10709,7 @@ exports[`Storyshots Componenti/Stepper Text and Icons 1`] = `
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10596,7 +10724,7 @@ exports[`Storyshots Componenti/Stepper Text and Icons 1`] = `
         Label Step 3
       </li>
       <li
-        className="mobile"
+        className="steppers-index"
       >
         2/6
       </li>
@@ -10629,6 +10757,7 @@ exports[`Storyshots Componenti/Stepper Version on a dark background 1`] = `
         Label Step 1
         <svg
           className="icon icon steppers-success"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10652,7 +10781,7 @@ exports[`Storyshots Componenti/Stepper Version on a dark background 1`] = `
         Label Step 3
       </li>
       <li
-        className="mobile"
+        className="steppers-index"
       >
         2/6
       </li>
@@ -10688,6 +10817,7 @@ exports[`Storyshots Componenti/Stepper Version on a dark background 1`] = `
       >
         <svg
           className="icon icon-primary"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10705,6 +10835,7 @@ exports[`Storyshots Componenti/Stepper Version on a dark background 1`] = `
         Next
         <svg
           className="icon icon-primary"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10771,6 +10902,7 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile - dark v
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10838,6 +10970,7 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile - dark v
       >
         <svg
           className="icon icon-primary"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10871,6 +11004,7 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile - dark v
         Next
         <svg
           className="icon icon-primary"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10930,6 +11064,7 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile - dark v
       >
         <svg
           className="icon icon-primary"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -10974,6 +11109,7 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile - dark v
         Next
         <svg
           className="icon icon-primary"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -11033,6 +11169,7 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile - dark v
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -11057,6 +11194,7 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile - dark v
         Next
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -11114,6 +11252,7 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile Confirm 
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -11179,6 +11318,7 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile Pallini 
       >
         <svg
           className="icon icon-primary"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -11212,6 +11352,7 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile Pallini 
         Next
         <svg
           className="icon icon-primary"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -11269,6 +11410,7 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile Progress
       >
         <svg
           className="icon icon-primary"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -11313,6 +11455,7 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile Progress
         Next
         <svg
           className="icon icon-primary"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -11370,6 +11513,7 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile Save But
       >
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -11394,6 +11538,7 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile Save But
         Next
         <svg
           className="icon"
+          role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -11697,6 +11842,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
               >
                 <svg
                   className="icon"
+                  role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -11765,6 +11911,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                     </span>
                     <svg
                       className="icon"
+                      role="img"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -11796,6 +11943,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
               >
                 <svg
                   className="icon"
+                  role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -11854,6 +12002,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
               >
                 <svg
                   className="icon"
+                  role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -11922,6 +12071,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                     </span>
                     <svg
                       className="icon"
+                      role="img"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -11958,6 +12108,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
               >
                 <svg
                   className="icon"
+                  role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -12016,6 +12167,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
               >
                 <svg
                   className="icon"
+                  role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -12084,6 +12236,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                     </span>
                     <svg
                       className="icon"
+                      role="img"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -12115,6 +12268,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
               >
                 <svg
                   className="icon"
+                  role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -12173,6 +12327,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
               >
                 <svg
                   className="icon"
+                  role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -12241,6 +12396,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
                     </span>
                     <svg
                       className="icon"
+                      role="img"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -12272,6 +12428,7 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
               >
                 <svg
                   className="icon"
+                  role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >

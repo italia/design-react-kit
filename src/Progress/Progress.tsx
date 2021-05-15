@@ -6,12 +6,16 @@ import { logError } from '../utils';
 export interface ProgressProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
-  /** Classi aggiuntive da usare per il componente contenitore del Progress */
-  wrapperClassName?: string;
+  /**
+   * Classi aggiuntive da usare per il componente contenitore del Progress
+   * Per replicare il comportamento precedente, in cui `className` veniva applicato anche al wrapper,
+   * passare `true`.
+   * */
+  wrapperClassName?: string | true;
   /** Classi aggiuntive da usare per il componente interno del Progress */
   className?: string;
   /** Valore corrente (numerico) */
-  value?: number | string;
+  value: number | string;
   /** Etichetta con testo per indicare il progresso corrente da mostrare ai dispositivi screen reader */
   label?: string;
   /** Quando non è possibile stabilire una percentuale di progressione utilizzare una Progress Bar di tipo indeterminato */
@@ -36,10 +40,14 @@ export const Progress: FC<ProgressProps> = ({
   }
   const numericValue = Number(value);
   const wrapperClasses = classNames('progress-bar-wrapper');
-  const secondaryWrapperClasses = classNames(wrapperClassName, 'progress', {
-    'progress-indeterminate': indeterminate,
-    'progress-color': color
-  });
+  const secondaryWrapperClasses = classNames(
+    wrapperClassName === true ? className : wrapperClassName,
+    'progress',
+    {
+      'progress-indeterminate': indeterminate,
+      'progress-color': color
+    }
+  );
   const classes = classNames(className, 'progress-bar', {
     [`bg-${color}`]: color
   });

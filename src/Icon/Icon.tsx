@@ -55,5 +55,5 @@ export const Icon: FC<IconProps> = ({
   }
 
   const IconComponent = icons[icon];
-  return <IconComponent className={classes} {...attributes} />;
+  return <IconComponent className={classes} role='img' {...attributes} />;
 };

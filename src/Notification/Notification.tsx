@@ -6,7 +6,7 @@ import { notifyDeprecation } from '../utils';
 
 export interface NotificationProps extends HTMLAttributes<HTMLElement> {
   /**
-   * Il titolo della notifica
+   * Il titolo della notifica. Utilizzare al suo posto "title".
    * @deprecated
    */
   header?: string;
@@ -22,8 +22,18 @@ export interface NotificationProps extends HTMLAttributes<HTMLElement> {
    * Posiziona la notifica a filo di uno dei margini indicati, modificandone l'arrotondamento.
    * La posizione predefinita è nella parte destra inferiore della finestra.
    * Su dispositivi mobile la Notification è *sempre* a piede della finestra occupandone tutta la lunghezza.
+   *
+   * I formati `*-fix` (i.e. `top-fix`) sono deprecati. Utilizzare il formato breve (i.e. `top`).
    */
-  fix?: 'top' | 'bottom' | 'left' | 'right';
+  fix?:
+    | 'top'
+    | 'bottom'
+    | 'left'
+    | 'right'
+    | 'top-fix'
+    | 'bottom-fix'
+    | 'right-fix'
+    | 'left-fix';
   /** Indica se la notifica contiene una icona affianco al titolo. */
   withIcon?: boolean;
   /** Stili CSS aggiuntivi per il componente Notification */
@@ -43,7 +53,7 @@ function pickIcon(state: NotificationProps['state']) {
       return 'it-check-circle';
   }
 }
-const fixRegexp = /-fix/;
+const fixRegexp = /-fix$/;
 
 export const Notification: FC<NotificationProps> = ({
   header,

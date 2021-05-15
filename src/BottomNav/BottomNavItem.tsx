@@ -23,18 +23,24 @@ export interface BottomNavItemProps extends HTMLAttributes<HTMLLIElement> {
   badge?: number;
   /** Da utilizzare al posto di url quando la gestione del click è in JS */
   onLinkClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
+  /**
+   * Indica l'URL a cui far puntare il componente BottomNavItem.
+   * @deprecated. Usare `url` o `onLinkClick`
+   * */
+  link?: string;
 }
 
 export const BottomNavItem: FC<BottomNavItemProps> = ({
   active,
   badge,
   alert,
-  url = '#',
+  url,
   srText,
   iconName = 'it-comment',
   label,
   tag: Tag = 'a',
   onLinkClick,
+  link,
   ...attributes
 }) => {
   const activeClass = classNames({ active });
@@ -50,7 +56,11 @@ export const BottomNavItem: FC<BottomNavItemProps> = ({
   );
   return (
     <li {...attributes}>
-      <Tag href={url} className={activeClass} onClick={onLinkClick}>
+      <Tag
+        href={url || link || '#'}
+        className={activeClass}
+        onClick={onLinkClick}
+      >
         {badgeWrapper}
         {alertWrapper}
         <Icon icon={iconName} />

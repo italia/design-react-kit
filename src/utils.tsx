@@ -2,7 +2,11 @@ export const noop = () => {};
 
 export const logError = (message: string) => {
   if (typeof console !== 'undefined') {
-    console.error(message);
+    if (console.error) {
+      console.error(message);
+    } else {
+      console.log(message);
+    }
   }
 };
 

@@ -8,6 +8,11 @@ export interface TimelinePinProps extends HTMLAttributes<HTMLElement> {
   className?: string;
   /** Mostra un'icona all'interno del TimelinePin. Passare il nome dell'icona per utilizzarlo. */
   iconName?: string;
+  /**
+   * Mostra un'icona all'interno del TimelinePin. Passare il nome dell'icona per utilizzarlo.
+   * @deprecated. Utilizzare `iconName`.
+   * */
+  icon?: string;
   /** Etichetta da associare all'elemento */
   label: string;
   /** Quando abilitato indica che l'evento TimelinePin è collocato nel presente (azzurro) */
@@ -20,6 +25,7 @@ export interface TimelinePinProps extends HTMLAttributes<HTMLElement> {
 
 export const TimelinePin: FC<TimelinePinProps> = ({
   iconName = 'it-code-circle',
+  icon = 'it-code-circle',
   label = ' ',
   past,
   now,
@@ -35,7 +41,7 @@ export const TimelinePin: FC<TimelinePinProps> = ({
   });
   const pinIcon = (
     <div className='pin-icon'>
-      <Icon icon={iconName} />
+      <Icon icon={iconName || icon} />
     </div>
   );
   const pinLabel = (

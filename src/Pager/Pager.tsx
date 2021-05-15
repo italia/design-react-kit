@@ -6,8 +6,12 @@ export interface PagerProps extends HTMLAttributes<HTMLElement> {
   'aria-label': string;
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
-  /** Classi aggiuntive da usare per il componente Badge */
+  /** Utilizzarlo in caso di utilizzo di componenti personalizzati per la l'elemento lista interno */
+  listTag?: ElementType;
+  /** Classi aggiuntive da usare per il componente Pager */
   className?: string;
+  /** Classi aggiuntive da usare per il componente di lista interno Pager */
+  listClassName?: string;
   /** Utilizzare questo attributo per indicare il numero totale di pagine */
   total?: { ariaLabel: string; label: string };
 }
@@ -15,6 +19,8 @@ export interface PagerProps extends HTMLAttributes<HTMLElement> {
 export const Pager: FC<PagerProps> = ({
   className,
   tag: Tag = 'nav',
+  listTag: ListTag = 'ul',
+  listClassName,
   children,
   total,
   ...attributes
@@ -22,13 +28,14 @@ export const Pager: FC<PagerProps> = ({
   const classes = classNames(className, 'pagination-wrapper', {
     'pagination-total': total
   });
+  const listClasses = classNames(listClassName, 'pagination');
   const { ariaLabel, label } = total || {};
   const totalAriaLabel = ariaLabel ? (
     <span className='sr-only'>{ariaLabel}</span>
   ) : null;
   return (
     <Tag className={classes} {...attributes}>
-      {children}
+      <ListTag className={listClasses}>{children}</ListTag>
       {total ? (
         <p>
           {totalAriaLabel}

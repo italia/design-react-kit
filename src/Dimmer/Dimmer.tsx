@@ -10,8 +10,12 @@ export interface DimmerProps extends HTMLAttributes<HTMLElement> {
   color?: 'success' | 'warning' | 'danger' | 'note' | 'important' | string;
   /** Classi aggiuntive da usare per il componente Dimmer */
   className?: string;
-  /** Classi aggiuntive da usare per il componente contenitore del Dimmer */
-  wrapperClassName?: string;
+  /**
+   * Classi aggiuntive da usare per il componente contenitore del Dimmer
+   * Per replicare il comportamento precedente, in cui `className` veniva applicato anche al wrapper,
+   * passare `true`.
+   * */
+  wrapperClassName?: string | true;
 }
 
 export const Dimmer: FC<DimmerProps> = ({
@@ -22,9 +26,13 @@ export const Dimmer: FC<DimmerProps> = ({
   ...attributes
 }) => {
   const { children, ...rest } = attributes;
-  const classes = classNames('dimmer', wrapperClassName, {
-    [`dimmer-${color}`]: color
-  });
+  const classes = classNames(
+    'dimmer',
+    wrapperClassName === true ? className : wrapperClassName,
+    {
+      [`dimmer-${color}`]: color
+    }
+  );
   const innerClasses = classNames('dimmer-inner', className);
   const dimmerIcon = icon && (
     <div className='dimmer-icon'>
