@@ -38,11 +38,12 @@ export const BottomNavItem: FC<BottomNavItemProps> = ({
   srText,
   iconName = 'it-comment',
   label,
-  tag: Tag = 'a',
+  tag = 'a',
   onLinkClick,
   link,
   ...attributes
 }) => {
+  const Tag = tag;
   const activeClass = classNames({ active });
   const badgeWrapper = Boolean(badge) && (
     <div className='badge-wrapper'>

@@ -23,7 +23,7 @@ export interface AvatarIconProps extends HTMLAttributes<HTMLElement> {
 
 export const AvatarIcon: FC<AvatarIconProps> = ({
   className,
-  tag: Tag = 'div',
+  tag = 'div',
   size = 'md',
   href,
   color,
@@ -31,6 +31,7 @@ export const AvatarIcon: FC<AvatarIconProps> = ({
   children,
   ...attributes
 }) => {
+  const Tag = tag;
   const typeClass = classNames('avatar', {
     [`size-${size}`]: size,
     [`avatar-${color}`]: color

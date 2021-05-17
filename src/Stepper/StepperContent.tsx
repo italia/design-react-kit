@@ -33,11 +33,12 @@ const contentStyleDark = {
 };
 
 export const StepperContent: FC<StepperContentProps> = ({
-  tag: Tag = 'div',
+  tag = 'div',
   className,
   dark,
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames('steppers-content', classNames);
   return (
     <Tag

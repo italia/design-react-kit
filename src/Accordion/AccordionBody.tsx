@@ -82,12 +82,13 @@ export class AccordionBody extends Component<
   render() {
     const {
       className,
-      tag: Tag = 'div',
+      tag = 'div',
       active,
       children,
       timeout = TransitionTimeouts.Collapse,
       ...attributes
     } = this.props;
+    const Tag = tag;
     const { height } = this.state;
 
     const transitionProps = pick(attributes, TransitionPropTypeKeys);

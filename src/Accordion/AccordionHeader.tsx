@@ -11,12 +11,13 @@ export interface AccordionHeaderProps {
 
 export const AccordionHeader: FC<AccordionHeaderProps> = ({
   className,
-  tag: Tag = 'button',
+  tag = 'button',
   active,
   append,
   onToggle,
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames('collapse-header');
   const toggleClasses = classNames(className, {
     collapsed: active

@@ -8,9 +8,10 @@ export interface BottomNavProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const BottomNav: FC<BottomNavProps> = ({
-  tag: Tag = 'nav',
+  tag = 'nav',
   ...attributes
 }) => {
+  const Tag = tag;
   return (
     <Tag className='bottom-nav'>
       <ul {...attributes} />

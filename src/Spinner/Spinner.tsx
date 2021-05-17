@@ -16,12 +16,13 @@ export interface SpinnerProps extends HTMLAttributes<HTMLElement> {
 
 export const Spinner: FC<SpinnerProps> = ({
   className,
-  tag: Tag = 'span',
+  tag = 'span',
   active = false,
   small = false,
   double = false,
   ...attributes
 }) => {
+  const Tag = tag;
   const wrapperClasses = classNames('progress-spinner', {
     'progress-spinner-active': active,
     'size-sm': small,

@@ -13,12 +13,13 @@ export interface StepperContainerProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const StepperContainer: FC<StepperContainerProps> = ({
-  tag: Tag = 'div',
+  tag = 'div',
   mobile,
   dark,
   className,
   ...attributes
 }) => {
+  const Tag = tag;
   const wrapperClass = classNames(
     'steppers',
     className,

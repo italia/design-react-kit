@@ -20,10 +20,11 @@ export const CardReadMore: FC<CardReadMoreProps> = ({
   className,
   text,
   iconName = 'it-arrow-right',
-  tag: Tag = 'a',
+  tag = 'a',
   href,
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames(className, 'read-more');
   return (
     <Tag className={classes} href={href} {...attributes}>

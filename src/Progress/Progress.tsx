@@ -27,7 +27,7 @@ export interface ProgressProps extends HTMLAttributes<HTMLElement> {
 export const Progress: FC<ProgressProps> = ({
   wrapperClassName,
   className,
-  tag: Tag = 'div',
+  tag = 'div',
   value,
   label,
   indeterminate = false,
@@ -35,6 +35,7 @@ export const Progress: FC<ProgressProps> = ({
   role = 'progressbar',
   ...attributes
 }) => {
+  const Tag = tag;
   if (!isNumber(value)) {
     logError(`The passed "value" is not a valid number. You passed "${value}"`);
   }

@@ -11,10 +11,11 @@ export interface StepperDotsProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const StepperDots: FC<StepperDotsProps> = ({
-  tag: Tag = 'ul',
+  tag = 'ul',
   className,
   ...attributes
 }) => {
+  const Tag = tag;
   const wrapperClass = classNames('steppers-dots', className);
   return <Tag {...attributes} className={wrapperClass} />;
 };

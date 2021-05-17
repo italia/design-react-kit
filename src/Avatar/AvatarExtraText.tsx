@@ -10,9 +10,10 @@ export interface AvatarExtraTextProps extends HTMLAttributes<HTMLElement> {
 
 export const AvatarExtraText: FC<AvatarExtraTextProps> = ({
   className,
-  tag: Tag = 'div',
+  tag = 'div',
   ...attributes
 }) => {
+  const Tag = tag;
   const wrapperClass = classNames('extra-text', className);
   return <Tag className={wrapperClass} {...attributes} />;
 };

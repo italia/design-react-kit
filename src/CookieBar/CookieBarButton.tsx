@@ -17,10 +17,11 @@ export type CookieBarButtonProps = {
 );
 
 export const CookieBarButton: FC<CookieBarButtonProps> = ({
-  tag: Tag = 'button',
+  tag = 'button',
   className,
   ...attributes
 }) => {
+  const Tag = tag;
   const activeClass = classNames(className, 'cookiebar-btn');
   return <Tag className={activeClass} {...attributes} />;
 };

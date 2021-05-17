@@ -12,10 +12,11 @@ export interface AvatarStatusProps extends HTMLAttributes<HTMLElement> {
 
 export const AvatarStatus: FC<AvatarStatusProps> = ({
   className,
-  tag: Tag = 'div',
+  tag = 'div',
   status,
   ...attributes
 }) => {
+  const Tag = tag;
   const typeClass = classNames('avatar-status', {
     status
   });

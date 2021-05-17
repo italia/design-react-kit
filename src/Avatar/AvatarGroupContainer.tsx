@@ -13,10 +13,11 @@ export interface AvatarGroupContainerProps
 
 export const AvatarGroupContainer: FC<AvatarGroupContainerProps> = ({
   className,
-  tag: Tag = 'ul',
+  tag = 'ul',
   wrapperClassName,
   ...attributes
 }) => {
+  const Tag = tag;
   const wrapperClasses = classNames('avatar-group-stacked', wrapperClassName);
   return <Tag {...attributes} className={wrapperClasses}></Tag>;
 };

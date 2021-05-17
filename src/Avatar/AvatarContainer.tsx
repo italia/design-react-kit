@@ -10,9 +10,10 @@ export interface AvatarContainerProps extends HTMLAttributes<HTMLElement> {
 
 export const AvatarContainer: FC<AvatarContainerProps> = ({
   className,
-  tag: Tag = 'div',
+  tag = 'div',
   ...attributes
 }) => {
+  const Tag = tag;
   const wrapperClasses = classNames(
     'd-flex align-items-center justify-content-around flex-wrap flex-sm-nowrap',
     className

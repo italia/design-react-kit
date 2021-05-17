@@ -10,9 +10,10 @@ export interface CardFooterCTAProps extends HTMLAttributes<HTMLElement> {
 
 export const CardFooterCTA: FC<CardFooterCTAProps> = ({
   className,
-  tag: Tag = 'div',
+  tag = 'div',
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames(className, 'it-card-footer');
   return <Tag className={classes} {...attributes} />;
 };

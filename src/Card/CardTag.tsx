@@ -10,9 +10,10 @@ export interface CardTagProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 
 export const CardTag: FC<CardTagProps> = ({
   className,
-  tag: Tag = 'a',
+  tag = 'a',
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames(className, 'card-tag');
   return <Tag className={classes} {...attributes} />;
 };

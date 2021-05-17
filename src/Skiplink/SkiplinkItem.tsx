@@ -11,9 +11,10 @@ export interface SkiplinkItemProps
 
 export const SkiplinkItem: FC<SkiplinkItemProps> = ({
   className,
-  tag: Tag = 'a',
+  tag = 'a',
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames(className, 'sr-only', 'sr-only-focusable');
 
   return <Tag className={classes} {...attributes} />;

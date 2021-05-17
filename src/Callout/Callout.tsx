@@ -19,9 +19,10 @@ export const Callout: FC<CalloutProps> = ({
   color = '',
   highlight = false,
   detailed,
-  tag: Tag = 'div',
+  tag = 'div',
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames('callout', color, {
     'callout-highlight': highlight,
     'callout-more': detailed

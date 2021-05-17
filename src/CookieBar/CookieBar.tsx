@@ -9,10 +9,11 @@ export interface CookieBarProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const CookieBar: FC<CookieBarProps> = ({
-  tag: Tag = 'div',
+  tag = 'div',
   className,
   ...attributes
 }) => {
+  const Tag = tag;
   const wrapperClasses = classNames('cookiebar show', className);
   return <Tag {...attributes} className={wrapperClasses} />;
 };

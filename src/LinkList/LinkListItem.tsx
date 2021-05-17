@@ -39,10 +39,11 @@ export const LinkListItem: FC<LinkListItemProps> = ({
   divider,
   href,
   size,
-  tag: Tag = 'a',
+  tag = 'a',
   children,
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames(
     className,
     {

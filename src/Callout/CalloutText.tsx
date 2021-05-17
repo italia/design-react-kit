@@ -14,9 +14,10 @@ export const CalloutText: FC<CalloutTextProps> = ({
   bigText = false,
   children,
   className,
-  tag: Tag = 'p',
+  tag = 'p',
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames(className, {
     'callout-big-text': bigText
   });

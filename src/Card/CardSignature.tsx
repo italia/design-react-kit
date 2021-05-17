@@ -10,9 +10,10 @@ export interface CardSignatureProps extends HTMLAttributes<HTMLElement> {
 
 export const CardSignature: FC<CardSignatureProps> = ({
   className,
-  tag: Tag = 'span',
+  tag = 'span',
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames(className, 'card-signature');
   return <Tag className={classes} {...attributes} />;
 };

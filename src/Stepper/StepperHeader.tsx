@@ -9,10 +9,11 @@ export interface StepperHeaderProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const StepperHeader: FC<StepperHeaderProps> = ({
-  tag: Tag = 'ul',
+  tag = 'ul',
   className,
   ...attributes
 }) => {
+  const Tag = tag;
   const wrapperClass = classNames('steppers-header', className);
   return <Tag {...attributes} className={wrapperClass} />;
 };

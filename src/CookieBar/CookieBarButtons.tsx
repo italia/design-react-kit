@@ -10,9 +10,10 @@ export interface CookieBarButtonsProps extends HTMLAttributes<HTMLElement> {
 
 export const CookieBarButtons: FC<CookieBarButtonsProps> = ({
   className,
-  tag: Tag = 'div',
+  tag = 'div',
   ...attributes
 }) => {
+  const Tag = tag;
   const buttonClasses = classNames(className, 'cookiebar-buttons');
   return <Tag className={buttonClasses} {...attributes} />;
 };

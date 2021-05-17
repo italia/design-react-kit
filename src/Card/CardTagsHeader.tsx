@@ -14,9 +14,10 @@ export const CardTagsHeader: FC<CardTagsHeaderProps> = ({
   date,
   children,
   className,
-  tag: Tag = 'div',
+  tag = 'div',
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames('head-tags', className);
   return (
     <Tag className={classes} {...attributes}>

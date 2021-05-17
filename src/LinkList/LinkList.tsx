@@ -24,13 +24,14 @@ export interface LinkListProps extends HTMLAttributes<HTMLUListElement> {
 export const LinkList: FC<LinkListProps> = ({
   className,
   wrapperClassName,
-  tag: Tag = 'div',
+  tag = 'div',
   multiline,
   header,
   sublist,
   avatar,
   ...attributes
 }) => {
+  const Tag = tag;
   const wrapperClasses = classNames('link-list-wrapper', wrapperClassName, {
     multiline: multiline
   });

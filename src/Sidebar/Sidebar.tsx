@@ -18,13 +18,14 @@ export interface SidebarProps extends HTMLAttributes<HTMLElement> {
 
 export const Sidebar: FC<SidebarProps> = ({
   className,
-  tag: Tag = 'div',
+  tag = 'div',
   secondary,
   left,
   right,
   dark,
   ...attributes
 }) => {
+  const Tag = tag;
   const wrapperClasses = classNames('sidebar-wrapper', className, {
     'it-line-left-side': left,
     'it-line-right-side': right,

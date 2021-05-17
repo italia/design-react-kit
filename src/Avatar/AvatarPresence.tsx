@@ -12,10 +12,11 @@ export interface AvatarPresenceProps extends HTMLAttributes<HTMLElement> {
 
 export const AvatarPresence: FC<AvatarPresenceProps> = ({
   className,
-  tag: Tag = 'div',
+  tag = 'div',
   presence,
   ...attributes
 }) => {
+  const Tag = tag;
   const typeClass = classNames('avatar-presence', {
     presence
   });

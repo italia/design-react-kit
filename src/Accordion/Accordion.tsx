@@ -9,10 +9,11 @@ export interface AccordionProps {
 }
 
 export const Accordion: FC<AccordionProps> = ({
-  tag: Tag = 'div',
+  tag = 'div',
   className,
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames('collapse-div', className);
 
   return <Tag {...attributes} className={classes} />;

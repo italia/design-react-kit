@@ -18,13 +18,14 @@ export interface PagerProps extends HTMLAttributes<HTMLElement> {
 
 export const Pager: FC<PagerProps> = ({
   className,
-  tag: Tag = 'nav',
+  tag = 'nav',
   listTag: ListTag = 'ul',
   listClassName,
   children,
   total,
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames(className, 'pagination-wrapper', {
     'pagination-total': total
   });

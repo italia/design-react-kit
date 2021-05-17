@@ -19,12 +19,13 @@ export interface ChipProps extends HTMLAttributes<HTMLElement> {
 export const Chip: FC<ChipProps> = ({
   className,
   color = '',
-  tag: Tag = 'div',
+  tag = 'div',
   simple = false,
   large = false,
   disabled = false,
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames('chip', className, {
     'chip-simple': simple,
     'chip-lg': large,

@@ -9,10 +9,11 @@ export interface StepperNavProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const StepperNav: FC<StepperNavProps> = ({
-  tag: Tag = 'nav',
+  tag = 'nav',
   className,
   ...attributes
 }) => {
+  const Tag = tag;
   const wrapperClass = classNames('steppers-nav', className);
   return <Tag {...attributes} className={wrapperClass} />;
 };

@@ -10,9 +10,10 @@ export interface SkiplinkProps extends HTMLAttributes<HTMLElement> {
 
 export const Skiplink: FC<SkiplinkProps> = ({
   className,
-  tag: Tag = 'div',
+  tag = 'div',
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames(className, 'skiplinks');
 
   return <Tag className={classes} {...attributes} />;

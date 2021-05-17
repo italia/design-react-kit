@@ -41,7 +41,7 @@ export interface StepperHeaderElementProps
 }
 
 export const StepperHeaderElement: FC<StepperHeaderElementProps> = ({
-  tag: Tag,
+  tag = 'li',
   variant,
   appendIcon,
   prependIcon,
@@ -53,6 +53,7 @@ export const StepperHeaderElement: FC<StepperHeaderElementProps> = ({
   className,
   ...attributes
 }) => {
+  const Tag = tag;
   const wrapperClasses = classNames(
     variant ? variants[variant] : '',
     className,
@@ -66,11 +67,11 @@ export const StepperHeaderElement: FC<StepperHeaderElementProps> = ({
   const iconToAppend = appendIcon || icon;
   const iconToPepend = prependIcon || iconName;
   return (
-    <li {...attributes} className={wrapperClasses}>
+    <Tag {...attributes} className={wrapperClasses}>
       {iconToPepend && <Icon icon={iconToPepend} />}
       {stepperNumber && <span className={spanClass}>{stepperNumber}</span>}
       {children}
       {iconToAppend && <Icon icon={iconToAppend} className={iconClass} />}
-    </li>
+    </Tag>
   );
 };

@@ -10,9 +10,10 @@ export interface ChipLabelProps extends HTMLAttributes<HTMLElement> {
 
 export const ChipLabel: FC<ChipLabelProps> = ({
   className,
-  tag: Tag = 'span',
+  tag = 'span',
   ...attributes
 }) => {
+  const Tag = tag;
   const classes = classNames(className, 'chip-label');
   return <Tag {...attributes} className={classes} />;
 };
