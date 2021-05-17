@@ -6,7 +6,7 @@ export default {
   title: 'Componenti/Chips'
 };
 
-const VersioneStandardComponent = () => (
+export const Esempi = () => (
   <Row>
     <Col xs='12' md={{ size: 6 }}>
       <h4>Versione Standard</h4>
@@ -43,11 +43,6 @@ const VersioneStandardComponent = () => (
         </Button>
       </Chip>
     </Col>
-  </Row>
-);
-
-const GreatVersionComponent = () => (
-  <Row>
     <Col xs='12' md={{ size: 6 }}>
       <h4>Versione Grande</h4>
       <p className='mt-4 mb-2'>Solo testo</p>
@@ -86,7 +81,7 @@ const GreatVersionComponent = () => (
   </Row>
 );
 
-const DisabledChipComponent = () => (
+export const ChipDisabilitata = () => (
   <div>
     <Chip simple large disabled>
       <ChipLabel>Label Disabled</ChipLabel>
@@ -119,7 +114,7 @@ const DisabledChipComponent = () => (
   </div>
 );
 
-const ChipGroupsComponent = () => (
+export const GruppiDiChip = () => (
   <div>
     <Chip simple>
       <ChipLabel>Label</ChipLabel>
@@ -181,42 +176,27 @@ const ChipGroupsComponent = () => (
   </div>
 );
 
-export const ChipColor = () => (
-  <Row>
-    <Col xs='12' md={{ size: 6 }}>
-      <h4>Change Color of Chips</h4>
-      <p className='mt-4 mb-2'>Primary color</p>
-      <Chip simple color='primary'>
-        <ChipLabel>Primary</ChipLabel>
-      </Chip>
-      <p className='mt-4 mb-2'>Warning Color</p>
-      <Chip simple color='warning'>
-        <ChipLabel>Warning</ChipLabel>
-      </Chip>
-      <p className='mt-4 mb-2'>Success Color</p>
-      <Chip simple color='success'>
-        <ChipLabel>Success</ChipLabel>
-      </Chip>
-      <p className='mt-4 mb-2'>Danger Color</p>
-      <Chip simple color='danger'>
-        <ChipLabel>Danger</ChipLabel>
-      </Chip>
-      <p className='mt-4 mb-2'>Info Color</p>
-      <Chip simple color='info'>
-        <ChipLabel>Information</ChipLabel>
-      </Chip>
-    </Col>
-  </Row>
+export const VariantiDiColore = () => (
+  <div>
+    <p className='mt-4 mb-2'>Primary color</p>
+    <Chip simple color='primary'>
+      <ChipLabel>Primary</ChipLabel>
+    </Chip>
+    <p className='mt-4 mb-2'>Warning Color</p>
+    <Chip simple color='warning'>
+      <ChipLabel>Warning</ChipLabel>
+    </Chip>
+    <p className='mt-4 mb-2'>Success Color</p>
+    <Chip simple color='success'>
+      <ChipLabel>Success</ChipLabel>
+    </Chip>
+    <p className='mt-4 mb-2'>Danger Color</p>
+    <Chip simple color='danger'>
+      <ChipLabel>Danger</ChipLabel>
+    </Chip>
+    <p className='mt-4 mb-2'>Info Color</p>
+    <Chip simple color='info'>
+      <ChipLabel>Information</ChipLabel>
+    </Chip>
+  </div>
 );
-
-ChipColor.story = {
-  name: 'Chip Color '
-};
-
-export const StandardVersion = VersioneStandardComponent;
-
-export const _GreatVersion = GreatVersionComponent;
-
-export const _DisabledChip = DisabledChipComponent;
-
-export const _ChipGroups = ChipGroupsComponent;
