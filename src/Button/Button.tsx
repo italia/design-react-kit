@@ -21,6 +21,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: boolean;
   /** Da utilizzare per le varianti di dimensione del componente Button */
   size?: 'lg' | 'sm' | 'xs';
+  /** Da utilizzare per i bottoni di chiusura all'interno di altri componenti (i.e. Chips, Modali, etc...) */
   close?: boolean;
   active?: boolean;
 }
