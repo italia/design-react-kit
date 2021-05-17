@@ -83,7 +83,7 @@ export class AccordionBody extends Component<
     const {
       className,
       tag = 'div',
-      active,
+      active = false,
       children,
       timeout = TransitionTimeouts.Collapse,
       ...attributes

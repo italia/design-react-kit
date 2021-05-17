@@ -21,11 +21,8 @@ export const Esempi = () => {
   };
   return (
     <div>
-      <Button color='primary' onClick={toggle}>
-        Link with href
-      </Button>{' '}
-      <Button color='primary' onClick={toggle}>
-        Button with data-target
+      <Button color='primary' onClick={toggle} aria-expanded={collapse}>
+        Button con onClick
       </Button>
       <Collapse isOpen={collapse}>
         <Card>
@@ -91,42 +88,40 @@ GruppiDiElementiRichiudibili.story = {
 };
 
 export const _Accordion = () => {
-  const [collapseOpen1, setCollapseOpen1] = useState(true);
-  const [collapseOpen2, setCollapseOpen2] = useState(false);
-  const [collapseOpen3, setCollapseOpen3] = useState(false);
+  const [collapseElementOpen, setCollapseElement] = useState('');
   return (
     <Accordion>
       <AccordionHeader
-        active={collapseOpen1}
-        onToggle={() => setCollapseOpen1(!collapseOpen1)}
+        active={collapseElementOpen === '1'}
+        onToggle={() => setCollapseElement('')}
       >
         Accordion Group Item #1
       </AccordionHeader>
-      <AccordionBody active={collapseOpen1}>
+      <AccordionBody active={collapseElementOpen === '1'}>
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
         terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
         skateboard dolor brunch.
       </AccordionBody>
 
       <AccordionHeader
-        active={collapseOpen2}
-        onToggle={() => setCollapseOpen2(!collapseOpen2)}
+        active={collapseElementOpen === '2'}
+        onToggle={() => setCollapseElement('')}
       >
         Accordion Group Item #2
       </AccordionHeader>
-      <AccordionBody active={collapseOpen2}>
+      <AccordionBody active={collapseElementOpen === '2'}>
         Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
         farm-to-table, raw denim aesthetic synth nesciunt you probably
         haven&apos;t heard of them accusamus labore sustainable VHS.
       </AccordionBody>
 
       <AccordionHeader
-        active={collapseOpen3}
-        onToggle={() => setCollapseOpen3(!collapseOpen3)}
+        active={collapseElementOpen === '3'}
+        onToggle={() => setCollapseElement('')}
       >
         Accordion Group Item #3
       </AccordionHeader>
-      <AccordionBody active={collapseOpen3}>
+      <AccordionBody active={collapseElementOpen === '3'}>
         Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
         sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
         shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
@@ -222,4 +217,154 @@ export const CollapseEAccordionInnestati = () => {
 
 CollapseEAccordionInnestati.story = {
   name: 'Collapse e Accordion innestati'
+};
+
+export const HeaderAttivi = () => {
+  const [collapseOpen1, setCollapseOpen1] = useState(true);
+  const [collapseOpen2, setCollapseOpen2] = useState(false);
+  const [collapseOpen3, setCollapseOpen3] = useState(false);
+  return (
+    <Accordion background='active'>
+      <AccordionHeader
+        active={collapseOpen1}
+        onToggle={() => setCollapseOpen1(!collapseOpen1)}
+      >
+        Collapsible Group Item #1
+      </AccordionHeader>
+      <AccordionBody active={collapseOpen1}>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+        skateboard dolor brunch.
+      </AccordionBody>
+
+      <AccordionHeader
+        active={collapseOpen2}
+        onToggle={() => setCollapseOpen2(!collapseOpen2)}
+      >
+        Collapsible Group Item #2
+      </AccordionHeader>
+      <AccordionBody active={collapseOpen2}>
+        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+        farm-to-table, raw denim aesthetic synth nesciunt you probably
+        haven&apos;t heard of them accusamus labore sustainable VHS.
+      </AccordionBody>
+
+      <AccordionHeader
+        active={collapseOpen3}
+        onToggle={() => setCollapseOpen3(!collapseOpen3)}
+      >
+        Collapsible Group Item #3
+      </AccordionHeader>
+      <AccordionBody active={collapseOpen3}>
+        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+        anderson cred nesciunt sapiente ea proident.
+      </AccordionBody>
+    </Accordion>
+  );
+};
+
+HeaderAttivi.story = {
+  name: 'Header Attivi - sfondo primario'
+};
+
+export const HeaderHover = () => {
+  const [collapseOpen1, setCollapseOpen1] = useState(true);
+  const [collapseOpen2, setCollapseOpen2] = useState(false);
+  const [collapseOpen3, setCollapseOpen3] = useState(false);
+  return (
+    <Accordion background='hover'>
+      <AccordionHeader
+        active={collapseOpen1}
+        onToggle={() => setCollapseOpen1(!collapseOpen1)}
+      >
+        Collapsible Group Item #1
+      </AccordionHeader>
+      <AccordionBody active={collapseOpen1}>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+        skateboard dolor brunch.
+      </AccordionBody>
+
+      <AccordionHeader
+        active={collapseOpen2}
+        onToggle={() => setCollapseOpen2(!collapseOpen2)}
+      >
+        Collapsible Group Item #2
+      </AccordionHeader>
+      <AccordionBody active={collapseOpen2}>
+        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+        farm-to-table, raw denim aesthetic synth nesciunt you probably
+        haven&apos;t heard of them accusamus labore sustainable VHS.
+      </AccordionBody>
+
+      <AccordionHeader
+        active={collapseOpen3}
+        onToggle={() => setCollapseOpen3(!collapseOpen3)}
+      >
+        Collapsible Group Item #3
+      </AccordionHeader>
+      <AccordionBody active={collapseOpen3}>
+        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+        anderson cred nesciunt sapiente ea proident.
+      </AccordionBody>
+    </Accordion>
+  );
+};
+
+HeaderHover.story = {
+  name: 'Header colorati on Hover - sfondo primario'
+};
+
+export const IconaSinistra = () => {
+  const [collapseOpen1, setCollapseOpen1] = useState(true);
+  const [collapseOpen2, setCollapseOpen2] = useState(false);
+  const [collapseOpen3, setCollapseOpen3] = useState(false);
+  return (
+    <Accordion iconLeft>
+      <AccordionHeader
+        active={collapseOpen1}
+        onToggle={() => setCollapseOpen1(!collapseOpen1)}
+      >
+        Collapsible Group Item #1
+      </AccordionHeader>
+      <AccordionBody active={collapseOpen1}>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+        skateboard dolor brunch.
+      </AccordionBody>
+
+      <AccordionHeader
+        active={collapseOpen2}
+        onToggle={() => setCollapseOpen2(!collapseOpen2)}
+      >
+        Collapsible Group Item #2
+      </AccordionHeader>
+      <AccordionBody active={collapseOpen2}>
+        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+        farm-to-table, raw denim aesthetic synth nesciunt you probably
+        haven&apos;t heard of them accusamus labore sustainable VHS.
+      </AccordionBody>
+
+      <AccordionHeader
+        active={collapseOpen3}
+        onToggle={() => setCollapseOpen3(!collapseOpen3)}
+      >
+        Collapsible Group Item #3
+      </AccordionHeader>
+      <AccordionBody active={collapseOpen3}>
+        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+        anderson cred nesciunt sapiente ea proident.
+      </AccordionBody>
+    </Accordion>
+  );
+};
+
+HeaderHover.story = {
+  name: 'Icona a sinistra'
 };
