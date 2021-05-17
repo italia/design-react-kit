@@ -43,7 +43,7 @@ export const LinkListItem: FC<LinkListItemProps> = ({
   children,
   ...attributes
 }) => {
-  const Tag = tag;
+  let Tag = tag;
   const classes = classNames(
     className,
     {
