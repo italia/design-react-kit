@@ -3075,7 +3075,148 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
 </div>
 `;
 
-exports[`Storyshots Componenti/Chips Chip Color  1`] = `
+exports[`Storyshots Componenti/Chips Chip Disabilitata 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div>
+    <div
+      className="chip chip-simple chip-lg chip-disabled"
+    >
+      <span
+        className="chip-label"
+      >
+        Label Disabled
+      </span>
+    </div>
+    <div
+      className="chip chip-simple chip-lg chip-disabled"
+    >
+      <span
+        className="chip-label"
+      >
+        Label Disabled
+      </span>
+      <button
+        aria-disabled={true}
+        aria-label="Close"
+        className="close disabled"
+        disabled={true}
+        onClick={[Function]}
+      >
+        <svg
+          className="icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="chip chip-lg chip-disabled"
+    >
+      <svg
+        className="icon icon-xs"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7C6.73 19.91 6.14 18 6.14 18A2.69 2.69 0 005 16.5c-.91-.62.07-.61.07-.61a2.13 2.13 0 011.53 1 2.14 2.14 0 002.91.83 2.16 2.16 0 01.63-1.34c-2.14-.21-4.52-1.07-4.52-4.9a3.89 3.89 0 011-2.69 3.57 3.57 0 01.1-2.64s.84-.27 2.75 1a9.63 9.63 0 015 0c1.91-1.29 2.75-1 2.75-1 .37.835.405 1.78.1 2.64a3.89 3.89 0 011 2.69c0 3.84-2.34 4.68-4.57 4.93.482.49.73 1.164.68 1.85v2.75c0 .33.18.58.69.48A10 10 0 0012 2z"
+        />
+      </svg>
+      <span
+        className="chip-label"
+      >
+        Label Disabled
+      </span>
+      <button
+        aria-disabled={true}
+        aria-label="Close"
+        className="close disabled"
+        disabled={true}
+        onClick={[Function]}
+      >
+        <svg
+          className="icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="chip chip-lg chip-disabled"
+    >
+      <div
+        className="avatar size-xs"
+      >
+        <img
+          alt="Mario Rossi"
+          src="https://randomuser.me/api/portraits/men/46.jpg"
+        />
+      </div>
+      <span
+        className="chip-label"
+      >
+        Label
+      </span>
+      <button
+        aria-disabled={true}
+        aria-label="Close"
+        className="close disabled"
+        disabled={true}
+        onClick={[Function]}
+      >
+        <svg
+          className="icon"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+          />
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Chips Esempi 1`] = `
 <div
   style={
     Object {
@@ -3094,84 +3235,297 @@ exports[`Storyshots Componenti/Chips Chip Color  1`] = `
       className="col-12 col-md-6"
     >
       <h4>
-        Change Color of Chips
+        Versione Standard
       </h4>
       <p
         className="mt-4 mb-2"
       >
-        Primary color
+        Solo testo
       </p>
       <div
-        className="chip chip-simple chip-primary"
+        className="chip chip-simple"
       >
         <span
           className="chip-label"
         >
-          Primary
+          Label
         </span>
       </div>
       <p
         className="mt-4 mb-2"
       >
-        Warning Color
+        Testo e chiusura
       </p>
       <div
-        className="chip chip-simple chip-warning"
+        className="chip"
       >
         <span
           className="chip-label"
         >
-          Warning
+          Label
+        </span>
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </button>
+      </div>
+      <p
+        className="mt-4 mb-2"
+      >
+        Icona, testo e chiusura
+      </p>
+      <div
+        className="chip"
+      >
+        <svg
+          className="icon icon-xs"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7C6.73 19.91 6.14 18 6.14 18A2.69 2.69 0 005 16.5c-.91-.62.07-.61.07-.61a2.13 2.13 0 011.53 1 2.14 2.14 0 002.91.83 2.16 2.16 0 01.63-1.34c-2.14-.21-4.52-1.07-4.52-4.9a3.89 3.89 0 011-2.69 3.57 3.57 0 01.1-2.64s.84-.27 2.75 1a9.63 9.63 0 015 0c1.91-1.29 2.75-1 2.75-1 .37.835.405 1.78.1 2.64a3.89 3.89 0 011 2.69c0 3.84-2.34 4.68-4.57 4.93.482.49.73 1.164.68 1.85v2.75c0 .33.18.58.69.48A10 10 0 0012 2z"
+          />
+        </svg>
+        <span
+          className="chip-label"
+        >
+          Label
+        </span>
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </button>
+      </div>
+      <p
+        className="mt-4 mb-2"
+      >
+        Avatar, testo e chiusura
+      </p>
+      <div
+        className="chip"
+      >
+        <div
+          className="avatar size-xs"
+        >
+          <img
+            alt="Mario Rossi"
+            src="https://randomuser.me/api/portraits/men/46.jpg"
+          />
+        </div>
+        <span
+          className="chip-label"
+        >
+          Label
+        </span>
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      className="col-12 col-md-6"
+    >
+      <h4>
+        Versione Grande
+      </h4>
+      <p
+        className="mt-4 mb-2"
+      >
+        Solo testo
+      </p>
+      <div
+        className="chip chip-simple chip-lg"
+      >
+        <span
+          className="chip-label"
+        >
+          Label
         </span>
       </div>
       <p
         className="mt-4 mb-2"
       >
-        Success Color
+        Testo e chiusura
       </p>
       <div
-        className="chip chip-simple chip-success"
+        className="chip chip-lg"
       >
         <span
           className="chip-label"
         >
-          Success
+          Label
         </span>
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </button>
       </div>
       <p
         className="mt-4 mb-2"
       >
-        Danger Color
+        Icona, testo e chiusura
       </p>
       <div
-        className="chip chip-simple chip-danger"
+        className="chip chip-lg"
       >
+        <svg
+          className="icon icon-xs"
+          role="img"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7C6.73 19.91 6.14 18 6.14 18A2.69 2.69 0 005 16.5c-.91-.62.07-.61.07-.61a2.13 2.13 0 011.53 1 2.14 2.14 0 002.91.83 2.16 2.16 0 01.63-1.34c-2.14-.21-4.52-1.07-4.52-4.9a3.89 3.89 0 011-2.69 3.57 3.57 0 01.1-2.64s.84-.27 2.75 1a9.63 9.63 0 015 0c1.91-1.29 2.75-1 2.75-1 .37.835.405 1.78.1 2.64a3.89 3.89 0 011 2.69c0 3.84-2.34 4.68-4.57 4.93.482.49.73 1.164.68 1.85v2.75c0 .33.18.58.69.48A10 10 0 0012 2z"
+          />
+        </svg>
         <span
           className="chip-label"
         >
-          Danger
+          Label
         </span>
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </button>
       </div>
       <p
         className="mt-4 mb-2"
       >
-        Info Color
+        Avatar, testo e chiusura
       </p>
       <div
-        className="chip chip-simple chip-info"
+        className="chip chip-lg"
       >
+        <div
+          className="avatar size-xs"
+        >
+          <img
+            alt="Mario Rossi"
+            src="https://randomuser.me/api/portraits/men/46.jpg"
+          />
+        </div>
         <span
           className="chip-label"
         >
-          Information
+          Label
         </span>
+        <button
+          aria-label="Close"
+          className="close"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Componenti/Chips Chip Groups 1`] = `
+exports[`Storyshots Componenti/Chips Gruppi Di Chip 1`] = `
 <div
   style={
     Object {
@@ -3425,7 +3779,7 @@ exports[`Storyshots Componenti/Chips Chip Groups 1`] = `
 </div>
 `;
 
-exports[`Storyshots Componenti/Chips Disabled Chip 1`] = `
+exports[`Storyshots Componenti/Chips Varianti Di Colore 1`] = `
 <div
   style={
     Object {
@@ -3438,457 +3792,75 @@ exports[`Storyshots Componenti/Chips Disabled Chip 1`] = `
   }
 >
   <div>
+    <p
+      className="mt-4 mb-2"
+    >
+      Primary color
+    </p>
     <div
-      className="chip chip-simple chip-lg chip-disabled"
+      className="chip chip-simple chip-primary"
     >
       <span
         className="chip-label"
       >
-        Label Disabled
+        Primary
       </span>
     </div>
+    <p
+      className="mt-4 mb-2"
+    >
+      Warning Color
+    </p>
     <div
-      className="chip chip-simple chip-lg chip-disabled"
+      className="chip chip-simple chip-warning"
     >
       <span
         className="chip-label"
       >
-        Label Disabled
+        Warning
       </span>
-      <button
-        aria-disabled={true}
-        aria-label="Close"
-        className="close disabled"
-        disabled={true}
-        onClick={[Function]}
-      >
-        <svg
-          className="icon"
-          role="img"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
-          />
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-        </svg>
-      </button>
     </div>
-    <div
-      className="chip chip-lg chip-disabled"
+    <p
+      className="mt-4 mb-2"
     >
-      <svg
-        className="icon icon-xs"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7C6.73 19.91 6.14 18 6.14 18A2.69 2.69 0 005 16.5c-.91-.62.07-.61.07-.61a2.13 2.13 0 011.53 1 2.14 2.14 0 002.91.83 2.16 2.16 0 01.63-1.34c-2.14-.21-4.52-1.07-4.52-4.9a3.89 3.89 0 011-2.69 3.57 3.57 0 01.1-2.64s.84-.27 2.75 1a9.63 9.63 0 015 0c1.91-1.29 2.75-1 2.75-1 .37.835.405 1.78.1 2.64a3.89 3.89 0 011 2.69c0 3.84-2.34 4.68-4.57 4.93.482.49.73 1.164.68 1.85v2.75c0 .33.18.58.69.48A10 10 0 0012 2z"
-        />
-      </svg>
+      Success Color
+    </p>
+    <div
+      className="chip chip-simple chip-success"
+    >
       <span
         className="chip-label"
       >
-        Label Disabled
+        Success
       </span>
-      <button
-        aria-disabled={true}
-        aria-label="Close"
-        className="close disabled"
-        disabled={true}
-        onClick={[Function]}
-      >
-        <svg
-          className="icon"
-          role="img"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
-          />
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-        </svg>
-      </button>
     </div>
-    <div
-      className="chip chip-lg chip-disabled"
+    <p
+      className="mt-4 mb-2"
     >
-      <div
-        className="avatar size-xs"
-      >
-        <img
-          alt="Mario Rossi"
-          src="https://randomuser.me/api/portraits/men/46.jpg"
-        />
-      </div>
+      Danger Color
+    </p>
+    <div
+      className="chip chip-simple chip-danger"
+    >
       <span
         className="chip-label"
       >
-        Label
+        Danger
       </span>
-      <button
-        aria-disabled={true}
-        aria-label="Close"
-        className="close disabled"
-        disabled={true}
-        onClick={[Function]}
-      >
-        <svg
-          className="icon"
-          role="img"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
-          />
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-        </svg>
-      </button>
     </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Componenti/Chips Great Version 1`] = `
-<div
-  style={
-    Object {
-      "boxSizing": "border-box",
-      "margin": "0",
-      "padding": "48px 32px",
-      "position": "relative",
-      "textAlign": "initial",
-    }
-  }
->
-  <div
-    className="row"
-  >
-    <div
-      className="col-12 col-md-6"
+    <p
+      className="mt-4 mb-2"
     >
-      <h4>
-        Versione Grande
-      </h4>
-      <p
-        className="mt-4 mb-2"
-      >
-        Solo testo
-      </p>
-      <div
-        className="chip chip-simple chip-lg"
-      >
-        <span
-          className="chip-label"
-        >
-          Label
-        </span>
-      </div>
-      <p
-        className="mt-4 mb-2"
-      >
-        Testo e chiusura
-      </p>
-      <div
-        className="chip chip-lg"
-      >
-        <span
-          className="chip-label"
-        >
-          Label
-        </span>
-        <button
-          aria-label="Close"
-          className="close"
-          onClick={[Function]}
-        >
-          <svg
-            className="icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-        </button>
-      </div>
-      <p
-        className="mt-4 mb-2"
-      >
-        Icona, testo e chiusura
-      </p>
-      <div
-        className="chip chip-lg"
-      >
-        <svg
-          className="icon icon-xs"
-          role="img"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7C6.73 19.91 6.14 18 6.14 18A2.69 2.69 0 005 16.5c-.91-.62.07-.61.07-.61a2.13 2.13 0 011.53 1 2.14 2.14 0 002.91.83 2.16 2.16 0 01.63-1.34c-2.14-.21-4.52-1.07-4.52-4.9a3.89 3.89 0 011-2.69 3.57 3.57 0 01.1-2.64s.84-.27 2.75 1a9.63 9.63 0 015 0c1.91-1.29 2.75-1 2.75-1 .37.835.405 1.78.1 2.64a3.89 3.89 0 011 2.69c0 3.84-2.34 4.68-4.57 4.93.482.49.73 1.164.68 1.85v2.75c0 .33.18.58.69.48A10 10 0 0012 2z"
-          />
-        </svg>
-        <span
-          className="chip-label"
-        >
-          Label
-        </span>
-        <button
-          aria-label="Close"
-          className="close"
-          onClick={[Function]}
-        >
-          <svg
-            className="icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-        </button>
-      </div>
-      <p
-        className="mt-4 mb-2"
-      >
-        Avatar, testo e chiusura
-      </p>
-      <div
-        className="chip chip-lg"
-      >
-        <div
-          className="avatar size-xs"
-        >
-          <img
-            alt="Mario Rossi"
-            src="https://randomuser.me/api/portraits/men/46.jpg"
-          />
-        </div>
-        <span
-          className="chip-label"
-        >
-          Label
-        </span>
-        <button
-          aria-label="Close"
-          className="close"
-          onClick={[Function]}
-        >
-          <svg
-            className="icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Componenti/Chips Standard Version 1`] = `
-<div
-  style={
-    Object {
-      "boxSizing": "border-box",
-      "margin": "0",
-      "padding": "48px 32px",
-      "position": "relative",
-      "textAlign": "initial",
-    }
-  }
->
-  <div
-    className="row"
-  >
+      Info Color
+    </p>
     <div
-      className="col-12 col-md-6"
+      className="chip chip-simple chip-info"
     >
-      <h4>
-        Versione Standard
-      </h4>
-      <p
-        className="mt-4 mb-2"
+      <span
+        className="chip-label"
       >
-        Solo testo
-      </p>
-      <div
-        className="chip chip-simple"
-      >
-        <span
-          className="chip-label"
-        >
-          Label
-        </span>
-      </div>
-      <p
-        className="mt-4 mb-2"
-      >
-        Testo e chiusura
-      </p>
-      <div
-        className="chip"
-      >
-        <span
-          className="chip-label"
-        >
-          Label
-        </span>
-        <button
-          aria-label="Close"
-          className="close"
-          onClick={[Function]}
-        >
-          <svg
-            className="icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-        </button>
-      </div>
-      <p
-        className="mt-4 mb-2"
-      >
-        Icona, testo e chiusura
-      </p>
-      <div
-        className="chip"
-      >
-        <svg
-          className="icon icon-xs"
-          role="img"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7C6.73 19.91 6.14 18 6.14 18A2.69 2.69 0 005 16.5c-.91-.62.07-.61.07-.61a2.13 2.13 0 011.53 1 2.14 2.14 0 002.91.83 2.16 2.16 0 01.63-1.34c-2.14-.21-4.52-1.07-4.52-4.9a3.89 3.89 0 011-2.69 3.57 3.57 0 01.1-2.64s.84-.27 2.75 1a9.63 9.63 0 015 0c1.91-1.29 2.75-1 2.75-1 .37.835.405 1.78.1 2.64a3.89 3.89 0 011 2.69c0 3.84-2.34 4.68-4.57 4.93.482.49.73 1.164.68 1.85v2.75c0 .33.18.58.69.48A10 10 0 0012 2z"
-          />
-        </svg>
-        <span
-          className="chip-label"
-        >
-          Label
-        </span>
-        <button
-          aria-label="Close"
-          className="close"
-          onClick={[Function]}
-        >
-          <svg
-            className="icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-        </button>
-      </div>
-      <p
-        className="mt-4 mb-2"
-      >
-        Avatar, testo e chiusura
-      </p>
-      <div
-        className="chip"
-      >
-        <div
-          className="avatar size-xs"
-        >
-          <img
-            alt="Mario Rossi"
-            src="https://randomuser.me/api/portraits/men/46.jpg"
-          />
-        </div>
-        <span
-          className="chip-label"
-        >
-          Label
-        </span>
-        <button
-          aria-label="Close"
-          className="close"
-          onClick={[Function]}
-        >
-          <svg
-            className="icon"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
-            />
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-          </svg>
-        </button>
-      </div>
+        Information
+      </span>
     </div>
   </div>
 </div>
@@ -3913,8 +3885,8 @@ exports[`Storyshots Componenti/Collapse Accordion 1`] = `
       className="collapse-header"
     >
       <button
-        aria-expanded="true"
-        className="collapsed"
+        aria-expanded="false"
+        className=""
         data-toggle="collapse"
         onClick={[Function]}
       >
@@ -3922,7 +3894,7 @@ exports[`Storyshots Componenti/Collapse Accordion 1`] = `
       </button>
     </div>
     <div
-      className="collapse show"
+      className="collapse"
       style={Object {}}
     >
       <div
@@ -4147,21 +4119,13 @@ exports[`Storyshots Componenti/Collapse Esempi 1`] = `
 >
   <div>
     <button
+      aria-expanded={false}
       aria-label={null}
       className="btn btn-primary"
       onClick={[Function]}
       type="button"
     >
-      Link with href
-    </button>
-     
-    <button
-      aria-label={null}
-      className="btn btn-primary"
-      onClick={[Function]}
-      type="button"
-    >
-      Button with data-target
+      Button con onClick
     </button>
     <div
       className="collapse"
@@ -4199,6 +4163,261 @@ exports[`Storyshots Componenti/Collapse Gruppi di elementi richiudibili 1`] = `
 >
   <div
     className="collapse-div"
+  >
+    <div
+      className="collapse-header"
+    >
+      <button
+        aria-expanded="true"
+        className="collapsed"
+        data-toggle="collapse"
+        onClick={[Function]}
+      >
+        Collapsible Group Item #1
+      </button>
+    </div>
+    <div
+      className="collapse show"
+      style={Object {}}
+    >
+      <div
+        className="collapse-body"
+      >
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+      </div>
+    </div>
+    <div
+      className="collapse-header"
+    >
+      <button
+        aria-expanded="false"
+        className=""
+        data-toggle="collapse"
+        onClick={[Function]}
+      >
+        Collapsible Group Item #2
+      </button>
+    </div>
+    <div
+      className="collapse"
+      style={Object {}}
+    >
+      <div
+        className="collapse-body"
+      >
+        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+    <div
+      className="collapse-header"
+    >
+      <button
+        aria-expanded="false"
+        className=""
+        data-toggle="collapse"
+        onClick={[Function]}
+      >
+        Collapsible Group Item #3
+      </button>
+    </div>
+    <div
+      className="collapse"
+      style={Object {}}
+    >
+      <div
+        className="collapse-body"
+      >
+        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Collapse Header Attivi - sfondo primario 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="collapse-div collapse-background-active"
+  >
+    <div
+      className="collapse-header"
+    >
+      <button
+        aria-expanded="true"
+        className="collapsed"
+        data-toggle="collapse"
+        onClick={[Function]}
+      >
+        Collapsible Group Item #1
+      </button>
+    </div>
+    <div
+      className="collapse show"
+      style={Object {}}
+    >
+      <div
+        className="collapse-body"
+      >
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+      </div>
+    </div>
+    <div
+      className="collapse-header"
+    >
+      <button
+        aria-expanded="false"
+        className=""
+        data-toggle="collapse"
+        onClick={[Function]}
+      >
+        Collapsible Group Item #2
+      </button>
+    </div>
+    <div
+      className="collapse"
+      style={Object {}}
+    >
+      <div
+        className="collapse-body"
+      >
+        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+    <div
+      className="collapse-header"
+    >
+      <button
+        aria-expanded="false"
+        className=""
+        data-toggle="collapse"
+        onClick={[Function]}
+      >
+        Collapsible Group Item #3
+      </button>
+    </div>
+    <div
+      className="collapse"
+      style={Object {}}
+    >
+      <div
+        className="collapse-body"
+      >
+        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Collapse Icona Sinistra 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="collapse-div collapse-left-icon"
+  >
+    <div
+      className="collapse-header"
+    >
+      <button
+        aria-expanded="true"
+        className="collapsed"
+        data-toggle="collapse"
+        onClick={[Function]}
+      >
+        Collapsible Group Item #1
+      </button>
+    </div>
+    <div
+      className="collapse show"
+      style={Object {}}
+    >
+      <div
+        className="collapse-body"
+      >
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+      </div>
+    </div>
+    <div
+      className="collapse-header"
+    >
+      <button
+        aria-expanded="false"
+        className=""
+        data-toggle="collapse"
+        onClick={[Function]}
+      >
+        Collapsible Group Item #2
+      </button>
+    </div>
+    <div
+      className="collapse"
+      style={Object {}}
+    >
+      <div
+        className="collapse-body"
+      >
+        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+    <div
+      className="collapse-header"
+    >
+      <button
+        aria-expanded="false"
+        className=""
+        data-toggle="collapse"
+        onClick={[Function]}
+      >
+        Collapsible Group Item #3
+      </button>
+    </div>
+    <div
+      className="collapse"
+      style={Object {}}
+    >
+      <div
+        className="collapse-body"
+      >
+        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Collapse Icona a sinistra 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="collapse-div collapse-background-hover"
   >
     <div
       className="collapse-header"
@@ -8163,6 +8382,1182 @@ exports[`Storyshots Componenti/LinkList/Con controlli Secondary Action 1`] = `
 </div>
 `;
 
+exports[`Storyshots Componenti/Notification Default Location 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="container test-desktop"
+  >
+    <div>
+      <div
+        className="notification with-icon toast fade"
+        role="alert"
+      >
+        <div
+          className="toast-header"
+        >
+          <strong
+            className="mr-auto"
+          >
+            <h5>
+              Titolo Notifica
+              <svg
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </h5>
+          </strong>
+        </div>
+        <div
+          className="toast-body"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Notification Dismissable 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="container test-docs"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-12 col-md-6 mb-4 mb-md-0"
+      >
+        <p
+          className="mb-4"
+        >
+          <strong>
+            Notification standard
+          </strong>
+        </p>
+        <div
+          className="notification dismissable toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+          <button
+            aria-label={null}
+            className="btn notification-close btn btn-secondary"
+            onClick={[Function]}
+          >
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+            <span
+              className="sr-only"
+            >
+              Chiudi notifica: 
+              Titolo Notifica
+            </span>
+          </button>
+        </div>
+      </div>
+      <div
+        className="col-12 col-md-6"
+      >
+        <p
+          className="mb-4"
+        >
+          <strong>
+            Notification with icon
+          </strong>
+        </p>
+        <div
+          className="notification with-icon dismissable toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+          <div
+            className="toast-body"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+          </div>
+          <button
+            aria-label={null}
+            className="btn notification-close btn btn-secondary"
+            onClick={[Function]}
+          >
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.7 12l3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+            <span
+              className="sr-only"
+            >
+              Chiudi notifica: 
+              Titolo Notifica
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Notification Example 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="container test-docs"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-12 col-md-6 mb-4 mb-md-0"
+      >
+        <p
+          className="mb-4"
+        >
+          <strong>
+            Notification standard
+          </strong>
+        </p>
+        <div
+          className="notification toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-12 col-md-6"
+      >
+        <p
+          className="mb-4"
+        >
+          <strong>
+            Notification with icon
+          </strong>
+        </p>
+        <div
+          className="notification with-icon toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Notification Fixed Positions 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="container test-desktop"
+  >
+    <div>
+      <div
+        className="notification top-fix with-icon toast fade"
+        role="alert"
+      >
+        <div
+          className="toast-header"
+        >
+          <strong
+            className="mr-auto"
+          >
+            <h5>
+              Top Fix
+              <svg
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </h5>
+          </strong>
+        </div>
+        <div
+          className="toast-body"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="notification left-fix with-icon toast fade"
+        role="alert"
+      >
+        <div
+          className="toast-header"
+        >
+          <strong
+            className="mr-auto"
+          >
+            <h5>
+              Left Fix
+              <svg
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </h5>
+          </strong>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="notification right-fix with-icon toast fade"
+        role="alert"
+      >
+        <div
+          className="toast-header"
+        >
+          <strong
+            className="mr-auto"
+          >
+            <h5>
+              Right Fix
+              <svg
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </h5>
+          </strong>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        className="notification bottom-fix with-icon toast fade"
+        role="alert"
+      >
+        <div
+          className="toast-header"
+        >
+          <strong
+            className="mr-auto"
+          >
+            <h5>
+              Bottom Fix
+              <svg
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </h5>
+          </strong>
+        </div>
+        <div
+          className="toast-body"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Notification Notification with message 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="container test-docs"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-12 col-md-6 mb-4 mb-md-0"
+      >
+        <p
+          className="mb-4"
+        >
+          <strong>
+            Notification standard
+          </strong>
+        </p>
+        <div
+          className="notification toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+          <div
+            className="toast-body"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-12 col-md-6"
+      >
+        <p
+          className="mb-4"
+        >
+          <strong>
+            Notification with icon
+          </strong>
+        </p>
+        <div
+          className="notification with-icon toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+          <div
+            className="toast-body"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="container test-docs"
+  >
+    <div
+      className="row mb-5"
+    >
+      <div
+        className="col-12 col-md-6 mb-4 mb-md-0"
+        style={
+          Object {
+            "position": "fixed",
+          }
+        }
+      >
+        <p>
+          <strong>
+            Basic (rounding at 4 corners)
+          </strong>
+        </p>
+        <div
+          className="notification with-icon toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-12 col-md-6"
+      style={
+        Object {
+          "bottom": 50,
+          "left": 50,
+          "transform": "translateX(100%)",
+        }
+      }
+    >
+      <p>
+        <strong>
+          top
+        </strong>
+      </p>
+      <div
+        className="row mb-5"
+        style={
+          Object {
+            "WebkitTransform": "translateX(30%)",
+            "marginTop": "10px",
+          }
+        }
+      >
+        <div
+          className="notification top-fix with-icon toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <p
+        style={
+          Object {
+            "marginTop": "90px",
+          }
+        }
+      >
+        <strong>
+          bottom
+        </strong>
+      </p>
+      <div
+        className="row mb-5"
+        style={
+          Object {
+            "WebkitTransform": "translateX(30%)",
+            "marginTop": "10px",
+          }
+        }
+      >
+        <div
+          className="notification bottom-fix with-icon toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <p
+        style={
+          Object {
+            "marginTop": "90px",
+          }
+        }
+      >
+        <strong>
+          left
+        </strong>
+      </p>
+      <div
+        className="row mb-5"
+        style={
+          Object {
+            "marginTop": "50px",
+          }
+        }
+      >
+        <div
+          className="notification left-fix with-icon toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <p>
+        <strong>
+          right
+        </strong>
+      </p>
+      <div
+        className="row mb-5"
+        style={
+          Object {
+            "marginTop": "50px",
+          }
+        }
+      >
+        <div
+          className="notification right-fix with-icon toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Notification States 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="container test-docs"
+  >
+    <div
+      className="row mb-5"
+    >
+      <div
+        className="col-12 col-md-6 mb-4 mb-md-0"
+      >
+        <p>
+          <strong>
+            Success
+          </strong>
+        </p>
+        <div
+          className="notification with-icon toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-12 col-md-6"
+      >
+        <p>
+          <strong>
+            Error
+          </strong>
+        </p>
+        <div
+          className="notification with-icon toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.3 8.3L12.6 12l3.7 3.6-.7.7-3.7-3.6-3.6 3.6-.7-.7 3.6-3.6-3.6-3.7.7-.7 3.6 3.7 3.7-3.7zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="row mb-5"
+    >
+      <div
+        className="col-12 col-md-6 mb-4 mb-md-0"
+        style={
+          Object {
+            "top": 45,
+          }
+        }
+      >
+        <p>
+          <strong>
+            Info
+          </strong>
+        </p>
+        <div
+          className="notification with-icon toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-12 col-md-6"
+        style={
+          Object {
+            "top": 45,
+          }
+        }
+      >
+        <p>
+          <strong>
+            Warning
+          </strong>
+        </p>
+        <div
+          className="notification with-icon toast fade"
+          role="alert"
+          style={
+            Object {
+              "bottom": "auto",
+              "left": "auto",
+              "right": "auto",
+              "top": "auto",
+            }
+          }
+        >
+          <div
+            className="toast-header"
+          >
+            <strong
+              className="mr-auto"
+            >
+              <h5>
+                Titolo Notifica
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.5 14.2V5.7h1.2v8.5zm-.1 4.1h1.2v-1.8h-1.2zM22 7.9v8.3L16.1 22H7.9L2 16.2V7.9L7.9 2h8.2zm-1 .4L15.7 3H8.3L3 8.3v7.5L8.3 21h7.4l5.3-5.2z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </h5>
+            </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Componenti/Pager Allineamento 1`] = `
 <div
   style={
@@ -8183,97 +9578,101 @@ exports[`Storyshots Componenti/Pager Allineamento 1`] = `
       <ul
         className="pagination"
       >
-        <li
-          className="page-item disabled"
+        <ul
+          className="pagination"
         >
-          <a
-            aria-label="Previous"
-            className="page-link"
-            href="#"
+          <li
+            className="page-item disabled"
           >
-            <span
-              aria-hidden="true"
+            <a
+              aria-label="Previous"
+              className="page-link"
+              href="#"
             >
-              <svg
-                aria-hidden={true}
-                className="icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                aria-hidden="true"
               >
-                <path
-                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
-                />
-              </svg>
-            </span>
-            <span
-              className="sr-only"
-            >
-              Previous
-            </span>
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-current="page"
-            className="page-link"
-            href="#"
-          >
-            1
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            className="page-link"
-            href="#"
-          >
-            2
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            className="page-link"
-            href="#"
-          >
-            3
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-label="Next"
-            className="page-link"
-            href="#"
-          >
-            <span
-              aria-hidden="true"
-            >
-              <svg
-                aria-hidden={true}
-                className="icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+                <svg
+                  aria-hidden={true}
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="sr-only"
               >
-                <path
-                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-                />
-              </svg>
-            </span>
-            <span
-              className="sr-only"
+                Previous
+              </span>
+            </a>
+          </li>
+          <li
+            className="page-item"
+          >
+            <a
+              aria-current="page"
+              className="page-link"
+              href="#"
             >
-              Next
-            </span>
-          </a>
-        </li>
+              1
+            </a>
+          </li>
+          <li
+            className="page-item"
+          >
+            <a
+              className="page-link"
+              href="#"
+            >
+              2
+            </a>
+          </li>
+          <li
+            className="page-item"
+          >
+            <a
+              className="page-link"
+              href="#"
+            >
+              3
+            </a>
+          </li>
+          <li
+            className="page-item"
+          >
+            <a
+              aria-label="Next"
+              className="page-link"
+              href="#"
+            >
+              <span
+                aria-hidden="true"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="sr-only"
+              >
+                Next
+              </span>
+            </a>
+          </li>
+        </ul>
       </ul>
     </nav>
     <nav
@@ -8283,97 +9682,101 @@ exports[`Storyshots Componenti/Pager Allineamento 1`] = `
       <ul
         className="pagination"
       >
-        <li
-          className="page-item disabled"
+        <ul
+          className="pagination"
         >
-          <a
-            aria-label="Previous"
-            className="page-link"
-            href="#"
+          <li
+            className="page-item disabled"
           >
-            <span
-              aria-hidden="true"
+            <a
+              aria-label="Previous"
+              className="page-link"
+              href="#"
             >
-              <svg
-                aria-hidden={true}
-                className="icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                aria-hidden="true"
               >
-                <path
-                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
-                />
-              </svg>
-            </span>
-            <span
-              className="sr-only"
-            >
-              Previous
-            </span>
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-current="page"
-            className="page-link"
-            href="#"
-          >
-            1
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            className="page-link"
-            href="#"
-          >
-            2
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            className="page-link"
-            href="#"
-          >
-            3
-          </a>
-        </li>
-        <li
-          className="page-item"
-        >
-          <a
-            aria-label="Next"
-            className="page-link"
-            href="#"
-          >
-            <span
-              aria-hidden="true"
-            >
-              <svg
-                aria-hidden={true}
-                className="icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+                <svg
+                  aria-hidden={true}
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="sr-only"
               >
-                <path
-                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-                />
-              </svg>
-            </span>
-            <span
-              className="sr-only"
+                Previous
+              </span>
+            </a>
+          </li>
+          <li
+            className="page-item"
+          >
+            <a
+              aria-current="page"
+              className="page-link"
+              href="#"
             >
-              Next
-            </span>
-          </a>
-        </li>
+              1
+            </a>
+          </li>
+          <li
+            className="page-item"
+          >
+            <a
+              className="page-link"
+              href="#"
+            >
+              2
+            </a>
+          </li>
+          <li
+            className="page-item"
+          >
+            <a
+              className="page-link"
+              href="#"
+            >
+              3
+            </a>
+          </li>
+          <li
+            className="page-item"
+          >
+            <a
+              aria-label="Next"
+              className="page-link"
+              href="#"
+            >
+              <span
+                aria-hidden="true"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+                  />
+                </svg>
+              </span>
+              <span
+                className="sr-only"
+              >
+                Next
+              </span>
+            </a>
+          </li>
+        </ul>
       </ul>
     </nav>
   </section>
@@ -8399,96 +9802,100 @@ exports[`Storyshots Componenti/Pager Esempi 1`] = `
     <ul
       className="pagination"
     >
-      <li
-        className="page-item"
+      <ul
+        className="pagination"
       >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
+        <li
+          className="page-item"
         >
-          <span
-            aria-hidden="true"
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
           >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              aria-hidden="true"
             >
-              <path
-                d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          1
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          2
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          3
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
             >
-              <path
-                d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
           >
-            Next
-          </span>
-        </a>
-      </li>
+            1
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            2
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            3
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
     </ul>
   </nav>
 </div>
@@ -8513,122 +9920,126 @@ exports[`Storyshots Componenti/Pager Responsive 1`] = `
     <ul
       className="pagination"
     >
-      <li
-        className="page-item"
+      <ul
+        className="pagination"
       >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
+        <li
+          className="page-item"
         >
-          <span
-            aria-hidden="true"
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
           >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              aria-hidden="true"
             >
-              <path
-                d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          9
-        </a>
-      </li>
-      <li
-        className="d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          10
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-current="page"
-          className="page-link"
-          href="#"
-        >
-          <span
-            className="d-sm-none"
-          >
-            Pagina 
-          </span>
-          11
-        </a>
-      </li>
-      <li
-        className="d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          12
-        </a>
-      </li>
-      <li
-        className="d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          13
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
             >
-              <path
-                d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
           >
-            Next
-          </span>
-        </a>
-      </li>
+            9
+          </a>
+        </li>
+        <li
+          className="d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            10
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-current="page"
+            className="page-link"
+            href="#"
+          >
+            <span
+              className="d-sm-none"
+            >
+              Pagina 
+            </span>
+            11
+          </a>
+        </li>
+        <li
+          className="d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            12
+          </a>
+        </li>
+        <li
+          className="d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            13
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
     </ul>
   </nav>
 </div>
@@ -8653,97 +10064,101 @@ exports[`Storyshots Componenti/Pager Stato disabilitato e attivo 1`] = `
     <ul
       className="pagination"
     >
-      <li
-        className="page-item disabled"
+      <ul
+        className="pagination"
       >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
+        <li
+          className="page-item disabled"
         >
-          <span
-            aria-hidden="true"
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
           >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              aria-hidden="true"
             >
-              <path
-                d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-current="page"
-          className="page-link"
-          href="#"
-        >
-          1
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          2
-        </a>
-      </li>
-      <li
-        className="page-item disabled"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          3
-        </a>
-      </li>
-      <li
-        className="page-item disabled"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
             >
-              <path
-                d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-current="page"
+            className="page-link"
+            href="#"
           >
-            Next
-          </span>
-        </a>
-      </li>
+            1
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            2
+          </a>
+        </li>
+        <li
+          className="page-item disabled"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            3
+          </a>
+        </li>
+        <li
+          className="page-item disabled"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
     </ul>
   </nav>
 </div>
@@ -8768,179 +10183,183 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Jump to page 1`] = `
     <ul
       className="pagination"
     >
-      <li
-        className="page-item"
+      <ul
+        className="pagination"
       >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
+        <li
+          className="page-item"
         >
-          <span
-            aria-hidden="true"
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
           >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              aria-hidden="true"
             >
-              <path
-                d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          1
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="page-link"
-        >
-          …
-        </span>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          24
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          25
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-current="page"
-          className="page-link"
-          href="#"
-        >
-          26
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          27
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          28
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="page-link"
-        >
-          …
-        </span>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          50
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
             >
-              <path
-                d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
           >
-            Next
+            1
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <span
+            className="page-link"
+          >
+            …
           </span>
-        </a>
-      </li>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            24
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            25
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-current="page"
+            className="page-link"
+            href="#"
+          >
+            26
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            27
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            28
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <span
+            className="page-link"
+          >
+            …
+          </span>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            50
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
+      <form
+        className=""
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            ariaDescribedBy="jumpToPageDescription"
+            className="form-control form-control"
+            id="jumpToPage"
+            maxLength={2}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            type="text"
+          />
+          <label
+            className=""
+            htmlFor="jumpToPage"
+          >
+            Vai a ...
+          </label>
+        </div>
+      </form>
     </ul>
-    <form
-      className=""
-    >
-      <div
-        className="form-group"
-      >
-        <input
-          ariaDescribedBy="jumpToPageDescription"
-          className="form-control form-control"
-          id="jumpToPage"
-          maxLength={2}
-          onBlur={[Function]}
-          onFocus={[Function]}
-          type="text"
-        />
-        <label
-          className=""
-          htmlFor="jumpToPage"
-        >
-          Vai a ...
-        </label>
-      </div>
-    </form>
   </nav>
 </div>
 `;
@@ -8964,135 +10383,139 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Link testuali 1`] = `
     <ul
       className="pagination"
     >
-      <li
-        className="page-item"
+      <ul
+        className="pagination"
       >
-        <a
-          aria-label="Previous"
-          className="text page-link"
-          href="#"
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Previous"
+            className="text page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              Precedente
+            </span>
+            <span
+              className="sr-only"
+            >
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            1
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
         >
           <span
-            aria-hidden="true"
+            className="page-link"
           >
-            Precedente
+            …
           </span>
-          <span
-            className="sr-only"
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
           >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
+            24
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
         >
-          1
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="page-link"
+          <a
+            className="page-link"
+            href="#"
+          >
+            25
+          </a>
+        </li>
+        <li
+          className="page-item"
         >
-          …
-        </span>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
+          <a
+            aria-current="page"
+            className="page-link"
+            href="#"
+          >
+            26
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
         >
-          24
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
+          <a
+            className="page-link"
+            href="#"
+          >
+            27
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
         >
-          25
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-current="page"
-          className="page-link"
-          href="#"
-        >
-          26
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          27
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          28
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="page-link"
-        >
-          …
-        </span>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          50
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="text page-link"
-          href="#"
+          <a
+            className="page-link"
+            href="#"
+          >
+            28
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
         >
           <span
-            aria-hidden="true"
+            className="page-link"
           >
-            Successiva
+            …
           </span>
-          <span
-            className="sr-only"
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
           >
-            Next
-          </span>
-        </a>
-      </li>
+            50
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="text page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              Successiva
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
     </ul>
   </nav>
 </div>
@@ -9117,155 +10540,159 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive More 1`] = `
     <ul
       className="pagination"
     >
-      <li
-        className="page-item"
+      <ul
+        className="pagination"
       >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
+        <li
+          className="page-item"
         >
-          <span
-            aria-hidden="true"
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
           >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              aria-hidden="true"
             >
-              <path
-                d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          1
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="page-link"
-        >
-          …
-        </span>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          24
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          25
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-current="page"
-          className="page-link"
-          href="#"
-        >
-          26
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          27
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          28
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="page-link"
-        >
-          …
-        </span>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          50
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
             >
-              <path
-                d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
           >
-            Next
+            1
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <span
+            className="page-link"
+          >
+            …
           </span>
-        </a>
-      </li>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            24
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            25
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-current="page"
+            className="page-link"
+            href="#"
+          >
+            26
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            27
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            28
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <span
+            className="page-link"
+          >
+            …
+          </span>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            50
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
     </ul>
   </nav>
 </div>
@@ -9290,220 +10717,224 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Page changer 1`] = `
     <ul
       className="pagination"
     >
-      <li
-        className="page-item"
+      <ul
+        className="pagination"
       >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
+        <li
+          className="page-item"
         >
-          <span
-            aria-hidden="true"
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
           >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              aria-hidden="true"
             >
-              <path
-                d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          1
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="page-link"
-        >
-          …
-        </span>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          24
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          25
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-current="page"
-          className="page-link"
-          href="#"
-        >
-          26
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          27
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          28
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="page-link"
-        >
-          …
-        </span>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          50
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
             >
-              <path
-                d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
           >
-            Next
+            1
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <span
+            className="page-link"
+          >
+            …
           </span>
-        </a>
-      </li>
-    </ul>
-    <div
-      className="dropdown"
-      onKeyDown={[Function]}
-    >
-      <a
-        aria-expanded={false}
-        aria-haspopup={true}
-        className="btn btn-dropdown dropdown-toggle"
-        id="pagerChanger"
-        onClick={[Function]}
-      >
-        pag.10
-      </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            24
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            25
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-current="page"
+            className="page-link"
+            href="#"
+          >
+            26
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            27
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            28
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <span
+            className="page-link"
+          >
+            …
+          </span>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            50
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
       <div
-        aria-hidden={true}
-        className="dropdown-menu"
-        role="menu"
-        tabIndex="-1"
+        className="dropdown"
+        onKeyDown={[Function]}
       >
-        <div
-          className="link-list-wrapper"
+        <a
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="btn btn-dropdown dropdown-toggle"
+          id="pagerChanger"
+          onClick={[Function]}
         >
-          <ul
-            className="link-list"
+          pag.10
+        </a>
+        <div
+          aria-hidden={true}
+          className="dropdown-menu"
+          role="menu"
+          tabIndex="-1"
+        >
+          <div
+            className="link-list-wrapper"
           >
-            <li>
-              <a
-                className="active list-item"
-              >
-                pag. 10
-              </a>
-            </li>
-            <li>
-              <a
-                className="list-item"
-              >
-                pag. 20
-              </a>
-            </li>
-            <li>
-              <a
-                className="list-item"
-              >
-                pag. 30
-              </a>
-            </li>
-            <li>
-              <a
-                className="list-item"
-              >
-                pag. 40
-              </a>
-            </li>
-            <li>
-              <a
-                className="list-item"
-              >
-                pag. 50
-              </a>
-            </li>
-          </ul>
+            <ul
+              className="link-list"
+            >
+              <li>
+                <a
+                  className="active list-item"
+                >
+                  pag. 10
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                >
+                  pag. 20
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                >
+                  pag. 30
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                >
+                  pag. 40
+                </a>
+              </li>
+              <li>
+                <a
+                  className="list-item"
+                >
+                  pag. 50
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </ul>
   </nav>
 </div>
 `;
@@ -9527,93 +10958,97 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Simple mode 1`] = `
     <ul
       className="pagination"
     >
-      <li
-        className="page-item disabled"
+      <ul
+        className="pagination"
       >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
+        <li
+          className="page-item disabled"
         >
-          <span
-            aria-hidden="true"
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
           >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              aria-hidden="true"
             >
-              <path
-                d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="page-link"
-        >
-          1
-        </span>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="page-link"
-        >
-          /
-        </span>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="page-link"
-        >
-          5
-        </span>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
             >
-              <path
-                d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-          </span>
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
           <span
-            className="sr-only"
+            className="page-link"
           >
-            Next
+            1
           </span>
-        </a>
-      </li>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <span
+            className="page-link"
+          >
+            /
+          </span>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <span
+            className="page-link"
+          >
+            5
+          </span>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
     </ul>
   </nav>
 </div>
@@ -9638,155 +11073,159 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
     <ul
       className="pagination"
     >
-      <li
-        className="page-item"
+      <ul
+        className="pagination"
       >
-        <a
-          aria-label="Previous"
-          className="page-link"
-          href="#"
+        <li
+          className="page-item"
         >
-          <span
-            aria-hidden="true"
+          <a
+            aria-label="Previous"
+            className="page-link"
+            href="#"
           >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              aria-hidden="true"
             >
-              <path
-                d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
-          >
-            Previous
-          </span>
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          1
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="page-link"
-        >
-          …
-        </span>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          aria-current="page"
-          className="page-link"
-          href="#"
-        >
-          24
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          25
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          26
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          27
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          28
-        </a>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <span
-          className="page-link"
-        >
-          …
-        </span>
-      </li>
-      <li
-        className="d-none d-sm-block page-item"
-      >
-        <a
-          className="page-link"
-          href="#"
-        >
-          50
-        </a>
-      </li>
-      <li
-        className="page-item"
-      >
-        <a
-          aria-label="Next"
-          className="page-link"
-          href="#"
-        >
-          <span
-            aria-hidden="true"
-          >
-            <svg
-              aria-hidden={true}
-              className="icon"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.6 17.2L9 11.6 14.6 6l.8.7-4.9 4.9 4.9 4.9z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
             >
-              <path
-                d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-          </span>
-          <span
-            className="sr-only"
+              Previous
+            </span>
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
           >
-            Next
+            1
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <span
+            className="page-link"
+          >
+            …
           </span>
-        </a>
-      </li>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            aria-current="page"
+            className="page-link"
+            href="#"
+          >
+            24
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            25
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            26
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            27
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            28
+          </a>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <span
+            className="page-link"
+          >
+            …
+          </span>
+        </li>
+        <li
+          className="d-none d-sm-block page-item"
+        >
+          <a
+            className="page-link"
+            href="#"
+          >
+            50
+          </a>
+        </li>
+        <li
+          className="page-item"
+        >
+          <a
+            aria-label="Next"
+            className="page-link"
+            href="#"
+          >
+            <span
+              aria-hidden="true"
+            >
+              <svg
+                aria-hidden={true}
+                className="icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.8 17.2l-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+                />
+              </svg>
+            </span>
+            <span
+              className="sr-only"
+            >
+              Next
+            </span>
+          </a>
+        </li>
+      </ul>
     </ul>
     <p>
       <span
