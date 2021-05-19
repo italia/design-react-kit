@@ -10,6 +10,7 @@ import {
   CardReadMore,
   CardTag,
   CardTagsHeader,
+  CardFooterCTA,
   Button,
   Icon,
   Row,
@@ -555,6 +556,39 @@ export const CardTeaserMultiple = () => (
 CardTeaserMultiple.story = {
   name: 'Card teaser multiple'
 };
+
+export const CardWithFooterComponent = () => (
+  <div className='row'>
+    <div className='col-12 col-lg-6'>
+      {/* Start card */}
+      <Card spacing className='card-bg card-big no-after'>
+        <CardBody>
+          <div className='head-tags'>
+            <a className='card-tag' href='#'>
+              Tag
+            </a>
+            <span className='data'>10/10/2018</span>
+          </div>
+          <CardTitle tag='h5'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor…
+          </CardTitle>
+          <CardText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </CardText>
+          <CardFooterCTA>
+            <CardSignature>di Federico De Paolis</CardSignature>
+            <Button outline color='primary'>
+              Action
+            </Button>
+          </CardFooterCTA>
+        </CardBody>
+      </Card>
+      {/* end card */}
+    </div>
+  </div>
+);
 
 // eslint-disable-next-line react/prop-types
 export const _EsempiInterattivi = ({ spacing, teaser, link, title, text }) => {

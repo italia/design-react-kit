@@ -1,17 +1,42 @@
 import React, { useState } from 'react';
 
-import Select from 'react-select';
+import { Select } from '../../src';
 
-import {
-  defaultOptions,
-  groupedOptions,
-  ClearIndicator,
-  DropdownIndicator,
-  GroupHeading,
-  Option,
-  MenuList,
-  SelectContainer
-} from './Select/SelectExamples';
+const defaultOptions = [
+  { value: 'Value 1', label: 'Lorem ipsum dolor sit amet' },
+  { value: 'Value 2', label: 'Duis vestibulum eleifend libero' },
+  { value: 'Value 3', label: 'Phasellus pretium orci sed odio tempus' },
+  {
+    value: 'Value 4',
+    label: 'Vestibulum bibendum ex vel augue porttitor sodales'
+  },
+  { value: 'Value 5', label: 'Praesent quis elementum turpis' }
+];
+
+const groupOneOptions = [
+  { value: 'Value 1', label: 'Lorem ipsum dolor sit amet' },
+  { value: 'Value 2', label: 'Duis vestibulum eleifend libero' },
+  { value: 'Value 3', label: 'Phasellus pretium orci sed odio tempus' }
+];
+
+const groupTwoOptions = [
+  {
+    value: 'Value 4',
+    label: 'Vestibulum bibendum ex vel augue porttitor sodales'
+  },
+  { value: 'Value 5', label: 'Praesent quis elementum turpis' }
+];
+
+const groupedOptions = [
+  {
+    label: 'Gruppo 1',
+    options: groupOneOptions
+  },
+  {
+    label: 'Gruppo 2',
+    options: groupTwoOptions
+  }
+];
 
 export default {
   title: 'Componenti/Form/Select'
@@ -25,11 +50,6 @@ export const SelectClassica = () => {
     <div className='bootstrap-select-wrapper'>
       <label htmlFor='selectExampleClassic'>Etichetta di esempio</label>
       <Select
-        components={{
-          Option,
-          DropdownIndicator,
-          IndicatorSeparator: null
-        }}
         id='selectExampleClassic'
         onChange={handleChange}
         options={defaultOptions}
@@ -53,11 +73,6 @@ export const SelectDisabilitata = () => {
     <div className='bootstrap-select-wrapper'>
       <label htmlFor='selectExampleDisabled'>Etichetta di esempio</label>
       <Select
-        components={{
-          Option,
-          DropdownIndicator,
-          IndicatorSeparator: null
-        }}
         id='selectExampleDisabled'
         isDisabled={true}
         onChange={handleChange}
@@ -82,12 +97,6 @@ export const SelectConReset = () => {
     <div className='bootstrap-select-wrapper'>
       <label htmlFor='selectExampleReset'>Etichetta di esempio</label>
       <Select
-        components={{
-          Option,
-          DropdownIndicator,
-          ClearIndicator,
-          IndicatorSeparator: null
-        }}
         id='selectExampleReset'
         isClearable={true}
         onChange={handleChange}
@@ -112,11 +121,6 @@ export const SelectConRicerca = () => {
     <div className='bootstrap-select-wrapper'>
       <label htmlFor='selectExampleSearch'>Etichetta di esempio</label>
       <Select
-        components={{
-          Option,
-          DropdownIndicator,
-          IndicatorSeparator: null
-        }}
         id='selectExampleSearch'
         isSearchable={true}
         onChange={handleChange}
@@ -141,13 +145,6 @@ export const _SelectMultipla = () => {
     <div className='bootstrap-select-wrapper'>
       <label htmlFor='selectExampleMulti'>Etichetta di esempio</label>
       <Select
-        components={{
-          MenuList,
-          Option,
-          SelectContainer,
-          DropdownIndicator,
-          IndicatorSeparator: null
-        }}
         id='selectExampleMulti'
         isMulti={true}
         onChange={handleChange}
@@ -168,13 +165,6 @@ export const SelectConGruppi = () => {
     <div className='bootstrap-select-wrapper'>
       <label htmlFor='selectExampleGroups'>Etichetta di esempio</label>
       <Select
-        components={{
-          MenuList,
-          Option,
-          DropdownIndicator,
-          GroupHeading,
-          IndicatorSeparator: null
-        }}
         id='selectExampleGroups'
         onChange={handleChange}
         options={groupedOptions}
@@ -214,15 +204,6 @@ export const SelectInterattivo = ({
     <div className='bootstrap-select-wrapper'>
       <label htmlFor='selectExampleInteractive'>Etichetta di esempio</label>
       <Select
-        components={{
-          MenuList,
-          Option,
-          SelectContainer,
-          DropdownIndicator,
-          ClearIndicator,
-          GroupHeading,
-          IndicatorSeparator: null
-        }}
         id='selectExampleInteractive'
         onChange={handleChange}
         options={options}

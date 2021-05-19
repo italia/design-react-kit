@@ -6072,6 +6072,751 @@ exports[`Storyshots Componenti/Form/Checkbox Checkbox Inline 1`] = `
 </div>
 `;
 
+exports[`Storyshots Componenti/Form/Form Layout Auto Dimensionamento 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="form-row align-items-center"
+  >
+    <div
+      className="col"
+    >
+      <label
+        className="sr-only"
+        htmlFor="inlineFormInput"
+      >
+        Nome
+      </label>
+      <input
+        className="form-control"
+        id="inlineFormInput"
+        placeholder="Mario Rossi"
+        type="text"
+      />
+    </div>
+    <div
+      className="col"
+    >
+      <label
+        className="sr-only"
+        htmlFor="inlineFormInputGroup"
+      >
+        Username
+      </label>
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <div
+            className="input-group-text"
+          >
+            @
+          </div>
+        </div>
+        <input
+          className="form-control"
+          id="inlineFormInputGroup"
+          placeholder="Username"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="form-check m-0"
+      >
+        <input
+          className="form-check-input"
+          id="autoSizingCheck"
+          type="checkbox"
+        />
+        <label
+          className="form-check-label"
+          htmlFor="autoSizingCheck"
+        >
+          Ricordami
+        </label>
+      </div>
+    </div>
+    <div
+      className="col"
+    >
+      <button
+        aria-label={null}
+        className="btn btn-primary"
+        onClick={[Function]}
+        type="submit"
+      >
+        Invia
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Base 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div>
+    <div
+      className="form-row"
+    >
+      <div
+        className="col col-md-6 form-group"
+      >
+        <input
+          ariaDescribedBy="formNomeDescription"
+          className="form-control"
+          id="formNome"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+        <label
+          className=""
+          htmlFor="formNome"
+        >
+          Nome
+        </label>
+        <small
+          className=""
+          id="formNomeDescription"
+        />
+      </div>
+      <div
+        className="col col-md-6 form-group"
+      >
+        <input
+          ariaDescribedBy="formCognomeDescription"
+          className="form-control"
+          id="formCognome"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+        <label
+          className=""
+          htmlFor="formCognome"
+        >
+          Cognome
+        </label>
+        <small
+          className=""
+          id="formCognomeDescription"
+        />
+      </div>
+    </div>
+    <div
+      className="form-row"
+    >
+      <div
+        className="col col-7 form-group"
+      >
+        <input
+          ariaDescribedBy="CittaDescription"
+          className="form-control"
+          id="Citta"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+        <label
+          className=""
+          htmlFor="Citta"
+        >
+          Città
+        </label>
+        <small
+          className=""
+          id="CittaDescription"
+        />
+      </div>
+      <div
+        className="col form-group"
+      >
+        <input
+          ariaDescribedBy="ComuneDescription"
+          className="form-control"
+          id="Comune"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+        <label
+          className=""
+          htmlFor="Comune"
+        >
+          Comune
+        </label>
+        <small
+          className=""
+          id="ComuneDescription"
+        />
+      </div>
+      <div
+        className="col form-group"
+      >
+        <input
+          ariaDescribedBy="CAPDescription"
+          className="form-control"
+          id="CAP"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+        <label
+          className=""
+          htmlFor="CAP"
+        >
+          CAP
+        </label>
+        <small
+          className=""
+          id="CAPDescription"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Complesso 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div>
+    <div
+      className="form-row"
+    >
+      <div
+        className="col col-md-6 form-group"
+      >
+        <input
+          ariaDescribedBy="inputEmail4Description"
+          className="form-control"
+          id="inputEmail4"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="inserisci il tuo indirizzo email"
+          type="email"
+        />
+        <label
+          className="active"
+          htmlFor="inputEmail4"
+        >
+          Nome
+        </label>
+        <small
+          className=""
+          id="inputEmail4Description"
+        />
+      </div>
+      <div
+        className="col col-md-6 form-group"
+      >
+        <input
+          ariaDescribedBy="exampleInputPasswordDescription"
+          className="form-control"
+          id="exampleInputPassword"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Inserisci la tua password"
+          type="password"
+        />
+        <label
+          className="active"
+          htmlFor="exampleInputPassword"
+        >
+          Password
+        </label>
+        <small
+          className=""
+          id="exampleInputPasswordDescription"
+        />
+      </div>
+    </div>
+    <div
+      className="form-row"
+    >
+      <div
+        className="col form-group"
+      >
+        <input
+          ariaDescribedBy="inputAddressDescription"
+          className="form-control"
+          id="inputAddress"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Via Roma, 1"
+          type="text"
+        />
+        <label
+          className="active"
+          htmlFor="inputAddress"
+        >
+          Indirizzo
+        </label>
+        <small
+          className=""
+          id="inputAddressDescription"
+        />
+      </div>
+    </div>
+    <div
+      className="form-row"
+    >
+      <div
+        className="col col-md-6 form-group"
+      >
+        <input
+          ariaDescribedBy="inputCityDescription"
+          className="form-control"
+          id="inputCity"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+        <label
+          className=""
+          htmlFor="inputCity"
+        >
+          Comune
+        </label>
+        <small
+          className=""
+          id="inputCityDescription"
+        />
+      </div>
+      <div
+        className="col col-md-2 form-group"
+      >
+        <input
+          ariaDescribedBy="inputCAPDescription"
+          className="form-control"
+          id="inputCAP"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+        <label
+          className=""
+          htmlFor="inputCAP"
+        >
+          CAP
+        </label>
+        <small
+          className=""
+          id="inputCAPDescription"
+        />
+      </div>
+      <div
+        className="col-md-4"
+      >
+        <div
+          className="bootstrap-select-wrapper"
+        >
+          <label>
+            Provincia
+          </label>
+          <div
+            className=" css-2b097c-container"
+            id="selectExampleClassic"
+            onKeyDown={[Function]}
+          >
+            <span
+              aria-atomic="false"
+              aria-live="polite"
+              aria-relevant="additions text"
+              className="css-1f43avz-a11yText-A11yText"
+            />
+            <div
+              className="react-select__control css-yk16xz-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className="react-select__value-container css-g1d714-ValueContainer"
+              >
+                <div
+                  className="react-select__placeholder css-1wa3eu0-placeholder"
+                >
+                  Scegli una opzione
+                </div>
+                <div
+                  className="css-b8ldur-Input"
+                >
+                  <div
+                    className="react-select__input"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-label="Scegli una opzione"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      disabled={false}
+                      id="react-select-2-input"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      spellCheck="false"
+                      style={
+                        Object {
+                          "background": 0,
+                          "border": 0,
+                          "boxSizing": "content-box",
+                          "color": "inherit",
+                          "fontSize": "inherit",
+                          "label": "input",
+                          "opacity": 1,
+                          "outline": 0,
+                          "padding": 0,
+                          "width": "1px",
+                        }
+                      }
+                      tabIndex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style={
+                        Object {
+                          "height": 0,
+                          "left": 0,
+                          "overflow": "scroll",
+                          "position": "absolute",
+                          "top": 0,
+                          "visibility": "hidden",
+                          "whiteSpace": "pre",
+                        }
+                      }
+                    >
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="react-select__indicators css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className="react-select__indicator-separator css-1okebmr-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className="react-select__indicator react-select__dropdown-indicator css-tlfecz-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-tj5bde-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="form-row"
+    >
+      <div
+        className="form-group col-md-6"
+      >
+        <div
+          className="toggles"
+        >
+          <label
+            className="form-check-label"
+          >
+            Label dell'interruttore 1
+            <input
+              className="form-check-input"
+              disabled={false}
+              id="toggleEsempio1a"
+              type="checkbox"
+            />
+            <span
+              className="lever"
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      className="form-row"
+    >
+      <div
+        className="form-group text-center col"
+      >
+        <button
+          aria-label={null}
+          className="btn btn-outline-primary"
+          onClick={[Function]}
+        >
+          Annulla
+        </button>
+        <button
+          aria-label={null}
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="submit"
+        >
+          Conferma
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Form/Form Layout Form Disabilitato 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div>
+    <fieldset
+      aria-label="Form disabilitato"
+      disabled={true}
+    >
+      <legend>
+        Esempio di form disabilitato
+      </legend>
+      <div
+        className="form-group"
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            ariaDescribedBy="disabledTextInputDescription"
+            className="form-control"
+            disabled={true}
+            id="disabledTextInput"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="input disabilitato"
+            type="text"
+          />
+          <label
+            className="active"
+            htmlFor="disabledTextInput"
+          >
+            Input
+          </label>
+          <small
+            className=""
+            id="disabledTextInputDescription"
+          />
+        </div>
+      </div>
+      <div
+        className="form-group"
+      >
+        <div
+          className="bootstrap-select-wrapper"
+        >
+          <label>
+            Field Label
+          </label>
+          <div
+            className=" css-2b097c-container"
+            id="selectExampleClassic"
+            onKeyDown={[Function]}
+          >
+            <span
+              aria-atomic="false"
+              aria-live="polite"
+              aria-relevant="additions text"
+              className="css-1f43avz-a11yText-A11yText"
+            />
+            <div
+              className="react-select__control css-yk16xz-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className="react-select__value-container css-g1d714-ValueContainer"
+              >
+                <div
+                  className="react-select__placeholder css-1wa3eu0-placeholder"
+                >
+                  Seleziona una opzione
+                </div>
+                <div
+                  className="css-b8ldur-Input"
+                >
+                  <div
+                    className="react-select__input"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-label="Seleziona una opzione"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      disabled={false}
+                      id="react-select-3-input"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      spellCheck="false"
+                      style={
+                        Object {
+                          "background": 0,
+                          "border": 0,
+                          "boxSizing": "content-box",
+                          "color": "inherit",
+                          "fontSize": "inherit",
+                          "label": "input",
+                          "opacity": 1,
+                          "outline": 0,
+                          "padding": 0,
+                          "width": "1px",
+                        }
+                      }
+                      tabIndex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style={
+                        Object {
+                          "height": 0,
+                          "left": 0,
+                          "overflow": "scroll",
+                          "position": "absolute",
+                          "top": 0,
+                          "visibility": "hidden",
+                          "whiteSpace": "pre",
+                        }
+                      }
+                    >
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="react-select__indicators css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className="react-select__indicator-separator css-1okebmr-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className="react-select__indicator react-select__dropdown-indicator css-tlfecz-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-tj5bde-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-check"
+      >
+        <input
+          ariaDescribedBy="checkbox1Description"
+          className="form-control"
+          disabled={true}
+          id="checkbox1"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+        />
+        <label
+          className="form-check-label"
+          htmlFor="checkbox1"
+        >
+          Check disabilitato
+        </label>
+      </div>
+      <button
+        aria-label={null}
+        className="mt-3 btn btn-primary"
+        onClick={[Function]}
+        type="submit"
+      >
+        Submit
+      </button>
+    </fieldset>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Componenti/Form/Radio Radio Base 1`] = `
 <div
   style={

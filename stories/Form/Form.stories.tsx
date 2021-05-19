@@ -3,7 +3,6 @@ import { actions } from '@storybook/addon-actions';
 import Select from 'react-select';
 
 import { Button, Input, Col, Toggle, Label } from '../../src';
-import { DropdownIndicator, Option } from './Select/SelectExamples';
 
 export default {
   title: 'Componenti/Form/Form Layout'
@@ -77,16 +76,6 @@ export const DimensionamentoColonneComplesso = () => (
         <div className='bootstrap-select-wrapper'>
           <label>Provincia</label>
           <Select
-            components={{
-              Option,
-              DropdownIndicator,
-              IndicatorSeparator: null
-            }}
-            styles={{
-              container: (provided) => ({ ...provided, height: '2.5rem' }),
-              valueContainer: (provided) => ({ ...provided, height: '2.5rem' }),
-              control: (provided) => ({ ...provided, height: '2.5rem' })
-            }}
             id='selectExampleClassic'
             options={[
               { value: 'Value 1', label: 'Opzione 1' },
@@ -194,16 +183,6 @@ export const FormDisabilitato = () => (
         <div className='bootstrap-select-wrapper'>
           <label>Field Label</label>
           <Select
-            components={{
-              Option,
-              DropdownIndicator,
-              IndicatorSeparator: null
-            }}
-            styles={{
-              container: (provided) => ({ ...provided, height: '2.5rem' }),
-              valueContainer: (provided) => ({ ...provided, height: '2.5rem' }),
-              control: (provided) => ({ ...provided, height: '2.5rem' })
-            }}
             id='selectExampleClassic'
             options={[
               { value: 'Value 1', label: 'Opzione 1' },
