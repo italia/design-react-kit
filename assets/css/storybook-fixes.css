@@ -2,23 +2,16 @@
 // `<pre>` and `<code>` tags.
 // ========================== */
 
-pre,
-code,
-sbdocs-preview > code .token[class],
-sbdocs-preview > code .token.comment[class] {
+pre, code, sbdocs-preview>code .token[class], sbdocs-preview>code .token.comment[class] {
   font-style: normal;
   color: #f8f8f2;
 }
 
-pre > code,
-pre > code[class] {
+pre>code, pre>code[class] {
   outline: 0;
-
   display: block;
-
   font-size: 13px;
   tab-size: 2;
-
   padding: 1em;
   overflow-x: auto;
 }
@@ -27,17 +20,16 @@ pre > code[class] {
 // Fix incorrect Storybook implementation.
 // ======================================= */
 
-[class] > pre.hljs[class] {
+[class]>pre.hljs[class] {
   overflow: hidden;
   padding: 0;
   white-space: pre;
 }
 
-[class] > pre.hljs[class] > code {
+[class]>pre.hljs[class]>code {
   background-color: transparent;
   border-radius: 0;
 }
-
 
 /* =======================================
 // Specific tweak for the Storybook documentation
@@ -77,4 +69,8 @@ pre > code[class] {
   box-sizing: border-box;
   padding: 15px;
   margin-bottom: 8px;
+}
+
+div[id*='componenti-cookiebar'] .cookiebar {
+  position: relative !important;
 }
