@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
 import {
-  ButtonDropdown,
+  Dropdown,
   DropdownMenu,
   DropdownToggle,
   LinkList,
-  LinkListItem
+  LinkListItem,
+  ButtonGroup
 } from '../../src';
 
 export const _VarianteBottoni = () => {
@@ -14,12 +15,8 @@ export const _VarianteBottoni = () => {
   const [openThird, toggleThird] = useState(false);
 
   return (
-    <section>
-      <ButtonDropdown
-        className='mr-3'
-        isOpen={openFirst}
-        toggle={() => toggleFirst(!openFirst)}
-      >
+    <ButtonGroup>
+      <Dropdown isOpen={openFirst} toggle={() => toggleFirst(!openFirst)}>
         <DropdownToggle color='primary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -30,12 +27,8 @@ export const _VarianteBottoni = () => {
             <LinkListItem>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </ButtonDropdown>
-      <ButtonDropdown
-        className='mr-3'
-        isOpen={openSecond}
-        toggle={() => toggleSecond(!openSecond)}
-      >
+      </Dropdown>
+      <Dropdown isOpen={openSecond} toggle={() => toggleSecond(!openSecond)}>
         <DropdownToggle color='secondary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -46,12 +39,8 @@ export const _VarianteBottoni = () => {
             <LinkListItem>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </ButtonDropdown>
-      <ButtonDropdown
-        className='mr-3'
-        isOpen={openThird}
-        toggle={() => toggleThird(!openThird)}
-      >
+      </Dropdown>
+      <Dropdown isOpen={openThird} toggle={() => toggleThird(!openThird)}>
         <DropdownToggle color='danger' caret>
           Apri dropdown
         </DropdownToggle>
@@ -62,8 +51,8 @@ export const _VarianteBottoni = () => {
             <LinkListItem>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </ButtonDropdown>
-    </section>
+      </Dropdown>
+    </ButtonGroup>
   );
 };
 
@@ -72,17 +61,11 @@ export default {
 };
 
 export const _Esempi = () => {
-  const [openFirst, toggleFirst] = useState(false);
-  const [openSecond, toggleSecond] = useState(false);
-  const [openThird, toggleThird] = useState(false);
+  const [open, toggle] = useState(false);
 
   return (
     <section>
-      <ButtonDropdown
-        className='mr-3'
-        isOpen={openFirst}
-        toggle={() => toggleFirst(!openFirst)}
-      >
+      <Dropdown className='mr-3' isOpen={open} toggle={() => toggle(!open)}>
         <DropdownToggle color='primary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -93,56 +76,18 @@ export const _Esempi = () => {
             <LinkListItem>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </ButtonDropdown>
-      <ButtonDropdown
-        className='mr-3'
-        isOpen={openSecond}
-        toggle={() => toggleSecond(!openSecond)}
-      >
-        <DropdownToggle color='secondary' caret>
-          Apri dropdown
-        </DropdownToggle>
-        <DropdownMenu>
-          <LinkList>
-            <LinkListItem>Azione 1</LinkListItem>
-            <LinkListItem>Azione 2</LinkListItem>
-            <LinkListItem>Azione 3</LinkListItem>
-          </LinkList>
-        </DropdownMenu>
-      </ButtonDropdown>
-      <ButtonDropdown
-        className='mr-3'
-        isOpen={openThird}
-        toggle={() => toggleThird(!openThird)}
-      >
-        <DropdownToggle color='danger' caret>
-          Apri dropdown
-        </DropdownToggle>
-        <DropdownMenu>
-          <LinkList>
-            <LinkListItem>Azione 1</LinkListItem>
-            <LinkListItem>Azione 2</LinkListItem>
-            <LinkListItem>Azione 3</LinkListItem>
-          </LinkList>
-        </DropdownMenu>
-      </ButtonDropdown>
+      </Dropdown>
     </section>
   );
 };
 
 export const _Link = () => {
-  const [openFirst, toggleFirst] = useState(false);
-  const [openSecond, toggleSecond] = useState(false);
-  const [openThird, toggleThird] = useState(false);
+  const [open, toggle] = useState(false);
 
   return (
     <section>
-      <ButtonDropdown
-        className='mr-3'
-        isOpen={openFirst}
-        toggle={() => toggleFirst(!openFirst)}
-      >
-        <DropdownToggle color='primary' caret tag='span'>
+      <Dropdown className='mr-3' isOpen={open} toggle={() => toggle(!open)}>
+        <DropdownToggle color='primary' caret tag='a'>
           Apri dropdown
         </DropdownToggle>
         <DropdownMenu>
@@ -152,39 +97,7 @@ export const _Link = () => {
             <LinkListItem>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </ButtonDropdown>
-      <ButtonDropdown
-        className='mr-3'
-        isOpen={openSecond}
-        toggle={() => toggleSecond(!openSecond)}
-      >
-        <DropdownToggle color='secondary' caret tag='span'>
-          Apri dropdown
-        </DropdownToggle>
-        <DropdownMenu>
-          <LinkList>
-            <LinkListItem>Azione 1</LinkListItem>
-            <LinkListItem>Azione 2</LinkListItem>
-            <LinkListItem>Azione 3</LinkListItem>
-          </LinkList>
-        </DropdownMenu>
-      </ButtonDropdown>
-      <ButtonDropdown
-        className='mr-3'
-        isOpen={openThird}
-        toggle={() => toggleThird(!openThird)}
-      >
-        <DropdownToggle color='danger' caret tag='span'>
-          Apri dropdown
-        </DropdownToggle>
-        <DropdownMenu>
-          <LinkList>
-            <LinkListItem>Azione 1</LinkListItem>
-            <LinkListItem>Azione 2</LinkListItem>
-            <LinkListItem>Azione 3</LinkListItem>
-          </LinkList>
-        </DropdownMenu>
-      </ButtonDropdown>
+      </Dropdown>
     </section>
   );
 };

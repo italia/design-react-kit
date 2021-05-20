@@ -74,3 +74,8 @@ pre>code, pre>code[class] {
 div[id*='componenti-cookiebar'] .cookiebar {
   position: relative !important;
 }
+
+.docs-show-dropdown-open div {
+  position: relative !important;
+  display: block !important;
+}

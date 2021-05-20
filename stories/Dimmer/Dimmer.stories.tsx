@@ -77,7 +77,7 @@ export const Esempi = ({ fadeIn }) => {
   );
 };
 
-const ColorePrimarioComponent = ({ fadeIn }) => {
+export const ColorePrimario = ({ fadeIn }) => {
   return (
     <div>
       <Fade in={fadeIn} tag='div' className='mt-3'>
@@ -250,8 +250,6 @@ export default {
     fadeIn: true
   }
 };
-
-export const _ColorePrimario = ColorePrimarioComponent;
 
 DimmerConAzioni.story = {
   name: 'Dimmer con Azioni'

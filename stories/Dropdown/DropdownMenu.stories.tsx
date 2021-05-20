@@ -3,11 +3,13 @@ import React from 'react';
 import { DropdownMenu, Icon, LinkList, LinkListItem } from '../../src';
 
 export const _MenuVociAttive = () => (
-  <div className='clearfix'>
-    <DropdownMenu isOpen className='d-block position-relative'>
+  <div className='docs-show-dropdown-open'>
+    <DropdownMenu isOpen>
       <LinkList>
         <LinkListItem active>
-          <span>Azione 1</span>
+          <span>
+            Azione 1<span className='sr-only'> attivo</span>
+          </span>
         </LinkListItem>
         <LinkListItem>
           <span>Azione 2</span>
@@ -21,13 +23,13 @@ export const _MenuVociAttive = () => (
 );
 
 export const _MenuVociDisabilitate = () => (
-  <div className='clearfix'>
-    <DropdownMenu isOpen className='d-block position-relative'>
+  <div className='docs-show-dropdown-open'>
+    <DropdownMenu isOpen>
       <LinkList>
         <LinkListItem>
           <span>Azione 1</span>
         </LinkListItem>
-        <LinkListItem disabled>
+        <LinkListItem disabled aria-disabled='true'>
           <span>Azione 2</span>
         </LinkListItem>
         <LinkListItem>
@@ -39,8 +41,8 @@ export const _MenuVociDisabilitate = () => (
 );
 
 export const MenuHeadersESeparatori = () => (
-  <div className='clearfix'>
-    <DropdownMenu isOpen className='d-block position-relative'>
+  <div className='docs-show-dropdown-open'>
+    <DropdownMenu isOpen>
       <LinkList>
         <LinkListItem header>Header</LinkListItem>
         <LinkListItem>
@@ -62,8 +64,8 @@ export const MenuHeadersESeparatori = () => (
 );
 
 export const MenuConVociLarge = () => (
-  <div className='clearfix'>
-    <DropdownMenu isOpen className='d-block position-relative'>
+  <div className='docs-show-dropdown-open'>
+    <DropdownMenu isOpen>
       <LinkList>
         <LinkListItem size='large'>
           <span>Azione 1</span>
@@ -80,8 +82,8 @@ export const MenuConVociLarge = () => (
 );
 
 export const MenuFullWidth = () => (
-  <div className='clearfix'>
-    <DropdownMenu isOpen className='d-block full-width position-relative'>
+  <div className='docs-show-dropdown-open'>
+    <DropdownMenu isOpen className='full-width'>
       <LinkList>
         <LinkListItem size='large'>
           <span>Azione 1</span>
@@ -104,8 +106,8 @@ export const MenuFullWidth = () => (
 );
 
 export const MenuIconaADestra = () => (
-  <div className='clearfix'>
-    <DropdownMenu isOpen className='d-block position-relative'>
+  <div className='docs-show-dropdown-open'>
+    <DropdownMenu isOpen>
       <LinkList>
         <LinkListItem className='right-icon'>
           <span>Azione 1</span>
@@ -143,8 +145,8 @@ export const MenuIconaADestra = () => (
 );
 
 export const MenuIconaASinistra = () => (
-  <div className='clearfix'>
-    <DropdownMenu isOpen className='d-block position-relative'>
+  <div className='docs-show-dropdown-open'>
+    <DropdownMenu isOpen>
       <LinkList>
         <LinkListItem className='left-icon'>
           <Icon
@@ -182,8 +184,8 @@ export const MenuIconaASinistra = () => (
 );
 
 export const _MenuDark = () => (
-  <div className='clearfix'>
-    <DropdownMenu isOpen className='d-block dark position-relative'>
+  <div className='docs-show-dropdown-open'>
+    <DropdownMenu isOpen className='dark'>
       <LinkList>
         <LinkListItem header>Header</LinkListItem>
         <LinkListItem active className='right-icon'>

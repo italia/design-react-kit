@@ -4503,7 +4503,7 @@ exports[`Storyshots Componenti/Dropdown Esempi 1`] = `
 >
   <section>
     <div
-      className="mr-3 btn-group"
+      className="mr-3 dropdown"
       onKeyDown={[Function]}
     >
       <button
@@ -4511,108 +4511,6 @@ exports[`Storyshots Componenti/Dropdown Esempi 1`] = `
         aria-haspopup={true}
         aria-label={null}
         className="dropdown-toggle btn btn-primary"
-        onClick={[Function]}
-        type="button"
-      >
-        Apri dropdown
-      </button>
-      <div
-        aria-hidden={true}
-        className="dropdown-menu"
-        role="menu"
-        tabIndex="-1"
-      >
-        <div
-          className="link-list-wrapper"
-        >
-          <ul
-            className="link-list"
-          >
-            <li>
-              <a
-                className="list-item"
-              >
-                Azione 1
-              </a>
-            </li>
-            <li>
-              <a
-                className="list-item"
-              >
-                Azione 2
-              </a>
-            </li>
-            <li>
-              <a
-                className="list-item"
-              >
-                Azione 3
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div
-      className="mr-3 btn-group"
-      onKeyDown={[Function]}
-    >
-      <button
-        aria-expanded={false}
-        aria-haspopup={true}
-        aria-label={null}
-        className="dropdown-toggle btn btn-secondary"
-        onClick={[Function]}
-        type="button"
-      >
-        Apri dropdown
-      </button>
-      <div
-        aria-hidden={true}
-        className="dropdown-menu"
-        role="menu"
-        tabIndex="-1"
-      >
-        <div
-          className="link-list-wrapper"
-        >
-          <ul
-            className="link-list"
-          >
-            <li>
-              <a
-                className="list-item"
-              >
-                Azione 1
-              </a>
-            </li>
-            <li>
-              <a
-                className="list-item"
-              >
-                Azione 2
-              </a>
-            </li>
-            <li>
-              <a
-                className="list-item"
-              >
-                Azione 3
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div
-      className="mr-3 btn-group"
-      onKeyDown={[Function]}
-    >
-      <button
-        aria-expanded={false}
-        aria-haspopup={true}
-        aria-label={null}
-        className="dropdown-toggle btn btn-danger"
         onClick={[Function]}
         type="button"
       >
@@ -4673,115 +4571,17 @@ exports[`Storyshots Componenti/Dropdown Link 1`] = `
 >
   <section>
     <div
-      className="mr-3 btn-group"
+      className="mr-3 dropdown"
       onKeyDown={[Function]}
     >
-      <span
+      <a
         aria-expanded={false}
         aria-haspopup={true}
         className="dropdown-toggle"
         onClick={[Function]}
       >
         Apri dropdown
-      </span>
-      <div
-        aria-hidden={true}
-        className="dropdown-menu"
-        role="menu"
-        tabIndex="-1"
-      >
-        <div
-          className="link-list-wrapper"
-        >
-          <ul
-            className="link-list"
-          >
-            <li>
-              <a
-                className="list-item"
-              >
-                Azione 1
-              </a>
-            </li>
-            <li>
-              <a
-                className="list-item"
-              >
-                Azione 2
-              </a>
-            </li>
-            <li>
-              <a
-                className="list-item"
-              >
-                Azione 3
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div
-      className="mr-3 btn-group"
-      onKeyDown={[Function]}
-    >
-      <span
-        aria-expanded={false}
-        aria-haspopup={true}
-        className="dropdown-toggle"
-        onClick={[Function]}
-      >
-        Apri dropdown
-      </span>
-      <div
-        aria-hidden={true}
-        className="dropdown-menu"
-        role="menu"
-        tabIndex="-1"
-      >
-        <div
-          className="link-list-wrapper"
-        >
-          <ul
-            className="link-list"
-          >
-            <li>
-              <a
-                className="list-item"
-              >
-                Azione 1
-              </a>
-            </li>
-            <li>
-              <a
-                className="list-item"
-              >
-                Azione 2
-              </a>
-            </li>
-            <li>
-              <a
-                className="list-item"
-              >
-                Azione 3
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div
-      className="mr-3 btn-group"
-      onKeyDown={[Function]}
-    >
-      <span
-        aria-expanded={false}
-        aria-haspopup={true}
-        className="dropdown-toggle"
-        onClick={[Function]}
-      >
-        Apri dropdown
-      </span>
+      </a>
       <div
         aria-hidden={true}
         className="dropdown-menu"
@@ -4835,9 +4635,12 @@ exports[`Storyshots Componenti/Dropdown Variante Bottoni 1`] = `
     }
   }
 >
-  <section>
+  <div
+    className="btn-group"
+    role="group"
+  >
     <div
-      className="mr-3 btn-group"
+      className="dropdown"
       onKeyDown={[Function]}
     >
       <button
@@ -4888,7 +4691,7 @@ exports[`Storyshots Componenti/Dropdown Variante Bottoni 1`] = `
       </div>
     </div>
     <div
-      className="mr-3 btn-group"
+      className="dropdown"
       onKeyDown={[Function]}
     >
       <button
@@ -4939,7 +4742,7 @@ exports[`Storyshots Componenti/Dropdown Variante Bottoni 1`] = `
       </div>
     </div>
     <div
-      className="mr-3 btn-group"
+      className="dropdown"
       onKeyDown={[Function]}
     >
       <button
@@ -4989,7 +4792,7 @@ exports[`Storyshots Componenti/Dropdown Variante Bottoni 1`] = `
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 `;
 
@@ -5006,11 +4809,11 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menu con voci large 1`] = 
   }
 >
   <div
-    className="clearfix"
+    className="docs-show-dropdown-open"
   >
     <div
       aria-hidden={true}
-      className="d-block position-relative dropdown-menu"
+      className="dropdown-menu"
       isOpen={true}
       role="menu"
       tabIndex="-1"
@@ -5068,11 +4871,11 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù dark 1`] = `
   }
 >
   <div
-    className="clearfix"
+    className="docs-show-dropdown-open"
   >
     <div
       aria-hidden={true}
-      className="d-block dark position-relative dropdown-menu"
+      className="dark dropdown-menu"
       isOpen={true}
       role="menu"
       tabIndex="-1"
@@ -5236,11 +5039,11 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù full width 1`] = `
   }
 >
   <div
-    className="clearfix"
+    className="docs-show-dropdown-open"
   >
     <div
       aria-hidden={true}
-      className="d-block full-width position-relative dropdown-menu"
+      className="full-width dropdown-menu"
       isOpen={true}
       role="menu"
       tabIndex="-1"
@@ -5316,11 +5119,11 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù headers e separatori
   }
 >
   <div
-    className="clearfix"
+    className="docs-show-dropdown-open"
   >
     <div
       aria-hidden={true}
-      className="d-block position-relative dropdown-menu"
+      className="dropdown-menu"
       isOpen={true}
       role="menu"
       tabIndex="-1"
@@ -5399,11 +5202,11 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù icona a destra 1`] =
   }
 >
   <div
-    className="clearfix"
+    className="docs-show-dropdown-open"
   >
     <div
       aria-hidden={true}
-      className="d-block position-relative dropdown-menu"
+      className="dropdown-menu"
       isOpen={true}
       role="menu"
       tabIndex="-1"
@@ -5506,11 +5309,11 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù icona a sinistra 1`]
   }
 >
   <div
-    className="clearfix"
+    className="docs-show-dropdown-open"
   >
     <div
       aria-hidden={true}
-      className="d-block position-relative dropdown-menu"
+      className="dropdown-menu"
       isOpen={true}
       role="menu"
       tabIndex="-1"
@@ -5613,11 +5416,11 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù voci attive 1`] = `
   }
 >
   <div
-    className="clearfix"
+    className="docs-show-dropdown-open"
   >
     <div
       aria-hidden={true}
-      className="d-block position-relative dropdown-menu"
+      className="dropdown-menu"
       isOpen={true}
       role="menu"
       tabIndex="-1"
@@ -5634,6 +5437,11 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù voci attive 1`] = `
             >
               <span>
                 Azione 1
+                <span
+                  className="sr-only"
+                >
+                   attivo
+                </span>
               </span>
             </a>
           </li>
@@ -5675,11 +5483,11 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù voci disabilitate 1`
   }
 >
   <div
-    className="clearfix"
+    className="docs-show-dropdown-open"
   >
     <div
       aria-hidden={true}
-      className="d-block position-relative dropdown-menu"
+      className="dropdown-menu"
       isOpen={true}
       role="menu"
       tabIndex="-1"
@@ -5701,6 +5509,7 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù voci disabilitate 1`
           </li>
           <li>
             <a
+              aria-disabled="true"
               className="disabled list-item"
               onClick={[Function]}
             >
