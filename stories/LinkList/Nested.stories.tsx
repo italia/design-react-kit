@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Collapse, LinkList, LinkListItem, Icon } from '../../src';
+import { LinkList, LinkListItem, Icon } from '../../src';
 
 import LinkListCollapsibleExample from './LinkListCollapsibleExample';
 

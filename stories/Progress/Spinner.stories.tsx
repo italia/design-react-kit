@@ -1,9 +1,6 @@
 import React from 'react';
 import { Spinner } from '../../src';
 
-import SpinnerDocs from './docs/SpinnerDocs.md';
-import SpinnerDoppio from './docs/SpinnerDoppio.md';
-
 const SpinnerComponent = () => (
   <div className='container'>
     <div className='row'>

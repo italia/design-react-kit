@@ -15,7 +15,7 @@ export interface ProgressProps extends HTMLAttributes<HTMLElement> {
   /** Classi aggiuntive da usare per il componente interno del Progress */
   className?: string;
   /** Valore corrente (numerico) */
-  value: number | string;
+  value?: number | string;
   /** Etichetta con testo per indicare il progresso corrente da mostrare ai dispositivi screen reader */
   label?: string;
   /** Quando non è possibile stabilire una percentuale di progressione utilizzare una Progress Bar di tipo indeterminato */

@@ -10,48 +10,6 @@ import {
   TabExampleButtonVertical
 } from './TabExample';
 
-const EsempiComponent = () => (
-  <div>
-    <Nav tabs className='mb-3'>
-      <NavItem>
-        <NavLink href='#' active>
-          Link Attivo
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink href='#'>Link</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink href='#'>Link</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink href='#' disabled>
-          Link disabilitato
-        </NavLink>
-      </NavItem>
-    </Nav>
-
-    <Nav tabs className='nav-dark'>
-      <NavItem>
-        <NavLink href='#' active>
-          Link Attivo
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink href='#'>Link</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink href='#'>Link</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink href='#' disabled>
-          Link disabilitato
-        </NavLink>
-      </NavItem>
-    </Nav>
-  </div>
-);
-
 export default {
   title: 'Componenti/Tab'
 };

@@ -475,24 +475,15 @@ const Homepage = ({ theme, townName, townTagLine }) => {
                   </div>
                   <div className='owl-dots'>
                     <button
-                      role='button'
                       className='owl-dot active'
                       aria-labelledby='owl-dot-0'
                     >
                       <span></span>
                     </button>
-                    <button
-                      role='button'
-                      className='owl-dot'
-                      aria-labelledby='owl-dot-1'
-                    >
+                    <button className='owl-dot' aria-labelledby='owl-dot-1'>
                       <span></span>
                     </button>
-                    <button
-                      role='button'
-                      className='owl-dot'
-                      aria-labelledby='owl-dot-2'
-                    >
+                    <button className='owl-dot' aria-labelledby='owl-dot-2'>
                       <span></span>
                     </button>
                   </div>
@@ -749,7 +740,7 @@ const Homepage = ({ theme, townName, townTagLine }) => {
                       <div className='input-group-prepend'>
                         <div className='input-group-text'>
                           <button type='submit' className='border-0 px-0'>
-                            <Icon icon='it-search' size='icon-sm' />
+                            <Icon icon='it-search' size='sm' />
                           </button>
                         </div>
                       </div>

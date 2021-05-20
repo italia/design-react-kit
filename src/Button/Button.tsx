@@ -24,6 +24,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /** Da utilizzare per i bottoni di chiusura all'interno di altri componenti (i.e. Chips, Modali, etc...) */
   close?: boolean;
   active?: boolean;
+  href?: string;
 }
 
 export const Button: FC<ButtonProps> = ({

@@ -1,4 +1,4 @@
-import React, { AnchorHTMLAttributes } from 'react';
+import React from 'react';
 
 import {
   Card,
