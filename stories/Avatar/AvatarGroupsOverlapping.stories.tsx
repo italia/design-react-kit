@@ -78,7 +78,7 @@ export const SmallOverlappingAvatars = () => {
               tag='button'
               id='dropdownMenuLink'
               data-toggle='dropdown'
-              aria-has-popup='true'
+              aria-haspopup
               aria-expanded='false'
             >
               <span className='sr-only'>Visualizza altri 4 utenti</span>
@@ -167,7 +167,7 @@ export const MediumOverlaidAvatars = () => {
               tag='button'
               id='dropdownMenuLink2'
               data-toggle='dropdown'
-              aria-has-popup='true'
+              aria-haspopup
               aria-expanded='false'
             >
               <span className='sr-only'>Visualizza altri 4 utenti</span>

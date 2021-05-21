@@ -1,77 +1,31 @@
 import React from 'react';
+import { Meta } from '@storybook/react';
 
-import {
-  // Components to exclude from the table
-  Button,
-  Collapse,
-  Icon,
-  Nav,
-  NavItem,
-  NavLink,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-  UncontrolledDropdown,
-  // Components to include
-  Header,
-  HeaderContent,
-  HeaderLinkZone,
-  HeaderRightZone,
-  HeaderBrand,
-  HeaderSearch,
-  HeaderSocialsZone,
-  HeaderToggler
-} from '../../src';
+import { Header } from '../../src';
 
 import SlimHeaderBasic from './SlimHeader/basic';
 import SlimHeaderFull from './SlimHeader/basic-full-responsive';
 import CenterHeaderBasic from './CenterHeader/basic';
 import NavHeaderBasic from './NavHeader/basic';
-import CompleteHeaderBasic, {
-  SlimHeader,
-  CenterHeader,
-  NavHeader
-} from './CompleteHeader/basic';
+import CompleteHeaderBasic from './CompleteHeader/basic';
 
 import Introduction from './Introduction';
 
-import SlimBasicDoc from './SlimHeader/basic.md';
-import SlimFullDoc from './SlimHeader/basic-full-responsive.md';
-import CenterBasicDoc from './CenterHeader/basic.md';
-import NavBasicDoc from './NavHeader/basic.md';
-import CompleteBasicDoc from './CompleteHeader/basic.md';
-
-export default {
+const meta: Meta = {
   title: 'Componenti/Header',
-  component: Header,
-  args: {
-    theme: ''
-  },
-  argTypes: {
-    theme: {
-      name: 'Tema',
-      control: {
-        type: 'select',
-        options: ['', 'dark', 'light']
-      }
-    }
-  }
+  component: Header
 };
+export default meta;
 
 export const Introduzione = () => <Introduction />;
 
-export const HeaderSlim = SlimHeaderBasic;
-
-HeaderSlim.story = {
-  name: 'Header slim'
-};
-HeaderSlim.story.args = {
+export const _HeaderSlim = SlimHeaderBasic.bind({});
+_HeaderSlim.args = {
   theme: '',
   isOpen: false,
   brandText: 'Ente appartenenza/Owner'
 };
-
-HeaderSlim.argTypes = {
+_HeaderSlim.argTypes = {
   theme: {
     name: 'Tema',
     control: {
@@ -81,17 +35,13 @@ HeaderSlim.argTypes = {
   }
 };
 
-export const SlimHeaderWithFullButton = SlimHeaderFull;
+export const _SlimHeaderWithFullButton = SlimHeaderFull.bind({});
 
-SlimHeaderWithFullButton.story = {
-  name: 'Header slim with full button'
-};
-
-SlimHeaderWithFullButton.args = {
+_SlimHeaderWithFullButton.args = {
   theme: ''
 };
 
-SlimHeaderWithFullButton.argTypes = {
+_SlimHeaderWithFullButton.argTypes = {
   theme: {
     control: {
       type: 'select',
@@ -100,17 +50,14 @@ SlimHeaderWithFullButton.argTypes = {
   }
 };
 
-export const HeaderCenter = CenterHeaderBasic;
+export const _HeaderCenter = CenterHeaderBasic.bind({});
 
-HeaderCenter.story = {
-  name: 'Header center'
-};
-HeaderCenter.args = {
+_HeaderCenter.args = {
   theme: '',
   isSmall: false
 };
 
-HeaderCenter.argTypes = {
+_HeaderCenter.argTypes = {
   theme: {
     control: {
       type: 'select',
@@ -119,22 +66,19 @@ HeaderCenter.argTypes = {
   }
 };
 
-export const HeaderNav = NavHeaderBasic;
+export const _HeaderNav = NavHeaderBasic.bind({});
 
-HeaderNav.story = {
-  name: 'Header nav',
-  parameters: {
-    options: {
-      showPanel: false
-    }
+_HeaderNav.parameters = {
+  options: {
+    showPanel: false
   }
 };
-HeaderNav.args = {
+_HeaderNav.args = {
   theme: '',
   isOpen: false
 };
 
-HeaderNav.argTypes = {
+_HeaderNav.argTypes = {
   theme: {
     control: {
       type: 'select',
@@ -143,13 +87,13 @@ HeaderNav.argTypes = {
   }
 };
 
-export const HeaderComplete = CompleteHeaderBasic;
-HeaderComplete.args = {
+export const _HeaderComplete = CompleteHeaderBasic.bind({});
+_HeaderComplete.args = {
   theme: '',
   slimHeaderType: 'default',
   sticky: false
 };
-HeaderComplete.argTypes = {
+_HeaderComplete.argTypes = {
   slimHeaderType: {
     control: {
       type: 'select',

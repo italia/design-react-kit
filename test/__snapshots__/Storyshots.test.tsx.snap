@@ -976,7 +976,6 @@ exports[`Storyshots Componenti/Avatar/Avatar groups Overlapping Medium Overlaid 
         >
           <button
             aria-expanded={false}
-            aria-has-popup="true"
             aria-haspopup={true}
             className="btn btn-dropdown dropdown-toggle"
             data-toggle="dropdown"
@@ -1250,7 +1249,6 @@ exports[`Storyshots Componenti/Avatar/Avatar groups Overlapping Small Overlappin
         >
           <button
             aria-expanded={false}
-            aria-has-popup="true"
             aria-haspopup={true}
             className="btn btn-dropdown dropdown-toggle"
             data-toggle="dropdown"
@@ -6623,6 +6621,320 @@ exports[`Storyshots Componenti/Form/Form Layout Form Disabilitato 1`] = `
       </button>
     </fieldset>
   </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Form/Form Validation Validazione Base 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div>
+    <div
+      className="form-group"
+    >
+      <input
+        className="is-valid form-control"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        valid={true}
+      />
+      <label
+        className=""
+      >
+        Valid Input
+      </label>
+      <small
+        className="valid-feedback form-text text-muted"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <input
+        className="is-invalid form-control"
+        invalid={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+      />
+      <label
+        className=""
+      >
+        Invalid Input
+      </label>
+      <small
+        className="invalid-feedback form-text text-muted"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <input
+        className="is-valid form-control"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        valid={true}
+        value="Mario"
+      />
+      <label
+        className="active"
+      >
+        First name
+      </label>
+      <small
+        className="valid-feedback form-text text-muted"
+      >
+        Validated!
+      </small>
+    </div>
+    <div
+      className="form-group"
+    >
+      <input
+        className="is-invalid form-control"
+        invalid={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+      />
+      <label
+        className=""
+      >
+        Username
+      </label>
+      <small
+        className="invalid-feedback form-text text-muted"
+      >
+        Please choose a username.
+      </small>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <form
+    className=""
+  >
+    <div
+      className="form-row"
+    >
+      <div
+        className="col-md-4 mb-3 form-group"
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            className="is-valid form-control"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            type="text"
+            valid={true}
+            value="Mario"
+          />
+          <label
+            className="active"
+          >
+            Nome
+          </label>
+          <small
+            className="valid-feedback form-text text-muted"
+          >
+            Validato!
+          </small>
+        </div>
+      </div>
+      <div
+        className="col-md-4 mb-3 form-group"
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            className="is-valid form-control"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            type="text"
+            valid={true}
+            value="Rossi"
+          />
+          <label
+            className="active"
+          >
+            Cognome
+          </label>
+          <small
+            className="valid-feedback form-text text-muted"
+          >
+            Validato!
+          </small>
+        </div>
+      </div>
+      <div
+        className="col-md-4 mb-3 form-group"
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            className="is-invalid form-control"
+            invalid={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+          <label
+            className=""
+          >
+            Username
+          </label>
+          <small
+            className="invalid-feedback form-text text-muted"
+          >
+            Per favore scegli un username.
+          </small>
+        </div>
+      </div>
+    </div>
+    <div
+      className="form-row"
+    >
+      <div
+        className="col-md-6 mb-3 form-group"
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            className="is-invalid form-control"
+            invalid={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+          <label
+            className=""
+          >
+            Città
+          </label>
+          <small
+            className="invalid-feedback form-text text-muted"
+          >
+            Per favore inserisci un nome di città valido.
+          </small>
+        </div>
+      </div>
+      <div
+        className="col-md-3 mb-3 form-group"
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            className="is-invalid form-control"
+            invalid={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+          <label
+            className=""
+          >
+            Provincia
+          </label>
+          <small
+            className="invalid-feedback form-text text-muted"
+          >
+            Per favore inserisci un nome di provincia valida.
+          </small>
+        </div>
+      </div>
+      <div
+        className="col-md-3 mb-3 form-group"
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            className="is-invalid form-control"
+            invalid={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+          <label
+            className=""
+          >
+            CAP
+          </label>
+          <small
+            className="invalid-feedback form-text text-muted"
+          >
+            Per favore inserisci un CAP valido.
+          </small>
+        </div>
+      </div>
+    </div>
+    <div
+      className="form-check"
+    >
+      <div
+        className="form-group"
+      >
+        <input
+          ariaDescribedBy="checkbox1Description"
+          className="is-invalid form-control"
+          id="checkbox1"
+          invalid={true}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+        />
+        <label
+          className=""
+          htmlFor="checkbox1"
+        >
+          Accetto i termini e condizioni
+        </label>
+        <small
+          className="invalid-feedback form-text text-muted"
+          id="checkbox1Description"
+        >
+          Devi accettare i termini e le condizioni prima di inviare il modulo.
+        </small>
+      </div>
+    </div>
+    <button
+      aria-label={null}
+      className="btn btn-primary"
+      onClick={[Function]}
+      type="submit"
+    >
+      Invia
+    </button>
+  </form>
 </div>
 `;
 

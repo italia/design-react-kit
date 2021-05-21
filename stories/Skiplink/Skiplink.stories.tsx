@@ -9,7 +9,7 @@ export const _Esempi = () => {
     if (containerRef.current) {
       containerRef.current.focus();
     }
-  }, [containerRef.current]);
+  }, []);
 
   return (
     <section tabIndex={-1} ref={containerRef}>

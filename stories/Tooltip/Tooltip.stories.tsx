@@ -1,10 +1,6 @@
 import React from 'react';
 import { UncontrolledTooltip, Button } from '../../src';
 
-import Esempi from './docs/Esempi.md';
-import Posizioni from './docs/Posizioni.md';
-import EsempiInterattivi from './docs/EsempiInterattivi.md';
-
 const EsempiComponent = () => {
   const ids = ['Example1', 'Example2', 'Example3'];
 
@@ -12,6 +8,7 @@ const EsempiComponent = () => {
     const div = document.createElement('div');
     div.setAttribute('id', id);
     document.body.appendChild(div);
+    return null;
   });
 
   return (
@@ -74,6 +71,7 @@ const PosizioniComponent = () => {
     const div = document.createElement('div');
     div.setAttribute('id', id);
     document.body.appendChild(div);
+    return null;
   });
 
   return (

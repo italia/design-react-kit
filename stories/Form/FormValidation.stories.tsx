@@ -2,8 +2,6 @@ import React from 'react';
 
 import { Button, Input, Form, FormGroup } from '../../src';
 
-import Validation from './docs/Validation/Validation.md';
-
 export default {
   title: 'Componenti/Form/Form Validation'
 };
