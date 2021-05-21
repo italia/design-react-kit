@@ -55,7 +55,6 @@ export const SelectClassica = () => {
         options={defaultOptions}
         placeholder='Scegli una opzione'
         aria-label='Scegli una opzione'
-        classNamePrefix='react-select'
       />
     </div>
   );
@@ -79,7 +78,6 @@ export const SelectDisabilitata = () => {
         options={defaultOptions}
         placeholder='Scegli una opzione'
         aria-label='Scegli una opzione'
-        classNamePrefix='react-select'
       />
     </div>
   );
@@ -103,7 +101,6 @@ export const SelectConReset = () => {
         options={defaultOptions}
         placeholder='Scegli una opzione'
         aria-label='Scegli una opzione'
-        classNamePrefix='react-select'
       />
     </div>
   );
@@ -127,7 +124,6 @@ export const SelectConRicerca = () => {
         options={defaultOptions}
         placeholder='Scegli una opzione'
         aria-label='Scegli una opzione'
-        classNamePrefix='react-select'
       />
     </div>
   );
@@ -151,7 +147,6 @@ export const _SelectMultipla = () => {
         options={defaultOptions}
         placeholder='Scegli una opzione'
         aria-label='Scegli una opzione'
-        classNamePrefix='react-select'
       />
     </div>
   );
@@ -170,7 +165,6 @@ export const SelectConGruppi = () => {
         options={groupedOptions}
         placeholder='Scegli una opzione'
         aria-label='Scegli una opzione'
-        classNamePrefix='react-select'
       />
     </div>
   );

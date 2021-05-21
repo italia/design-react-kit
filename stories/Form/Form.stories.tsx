@@ -1,8 +1,7 @@
 import React from 'react';
 import { actions } from '@storybook/addon-actions';
-import Select from 'react-select';
 
-import { Button, Input, Col, Toggle, Label } from '../../src';
+import { Button, Input, Col, Toggle, Label, Select } from '../../src';
 
 export default {
   title: 'Componenti/Form/Form Layout'
@@ -89,7 +88,6 @@ export const DimensionamentoColonneComplesso = () => (
             ]}
             placeholder='Scegli una opzione'
             aria-label='Scegli una opzione'
-            classNamePrefix='react-select'
             {...actions('onChange')}
           />
         </div>
