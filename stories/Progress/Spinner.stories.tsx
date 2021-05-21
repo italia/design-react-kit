@@ -1,7 +1,7 @@
 import React from 'react';
 import { Spinner } from '../../src';
 
-const SpinnerComponent = () => (
+export const Esempio = () => (
   <div className='container'>
     <div className='row'>
       <div className='col-6 col-lg-3'>
@@ -32,7 +32,7 @@ const SpinnerComponent = () => (
   </div>
 );
 
-const SpinnerDoppioComponent = () => (
+export const SpinnerDoppio = () => (
   <div className='container'>
     <div className='row'>
       <div className='col-6 col-lg-3'>
@@ -66,7 +66,3 @@ const SpinnerDoppioComponent = () => (
 export default {
   title: 'Componenti/Progress Indicators/Spinners'
 };
-
-export const _Spinner = SpinnerComponent;
-
-export const _SpinnerDoppio = SpinnerDoppioComponent;

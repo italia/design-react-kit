@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React, { Fragment, FC, ReactNode } from 'react';
 import classNames from 'classnames';
 
 import { FormGroup, Label } from 'reactstrap';
@@ -21,11 +21,11 @@ export interface RatingProps extends InputProps {
   /** Classi aggiuntive da usare per ciascun elemento all'interno del componente Rating */
   className?: string;
   /** Callback chiamata ad ogni cambio di valore di rating. Il nuovo valore ed il name verranno passati: `function (n, name) => void` */
-  onChangeRating?: (value: 1 | 2 | 3 | 4 | 5, name: string) => void;
+  onChangeRating?: (value: 1 | 2 | 3 | 4 | 5 | number, name: string) => void;
   /** Rende il componente read-only */
   readOnly?: boolean;
   /** Il valore corrente del componente: deve essere compreso tra 1 e 5 */
-  value?: 1 | 2 | 3 | 4 | 5;
+  value?: 1 | 2 | 3 | 4 | 5 | number;
 }
 
 function isCustomLegendObject(
@@ -77,7 +77,7 @@ export const Rating: FC<RatingProps> = ({
 
   const legendContent =
     isCustomLegendObject(legend) || isLegendString ? (
-      <span className={legendClass}>{legendText}</span>
+      <legend className={legendClass}>{legendText}</legend>
     ) : (
       legend
     );
@@ -89,12 +89,12 @@ export const Rating: FC<RatingProps> = ({
       className={wrapperClasses}
       {...attributes}
     >
-      {legend && <legend>{legendContent}</legend>}
+      {legend && legendContent}
       {safeInputs.map((id, i) => {
         const currentValue = (5 - i) as 1 | 2 | 3 | 4 | 5;
 
         return (
-          <>
+          <Fragment key={id}>
             <Input
               type='radio'
               id={id}
@@ -111,7 +111,7 @@ export const Rating: FC<RatingProps> = ({
               <Icon icon='it-star-full' size='sm' />
               <span className='sr-only'>{labelFn(currentValue)}</span>
             </Label>
-          </>
+          </Fragment>
         );
       })}
     </FormGroup>

@@ -2,57 +2,20 @@ import React from 'react';
 
 import { Button, Icon, Progress } from '../../src';
 
-// import Esempi from './docs/Esempi.md'
-// import Etichette from './docs/Etichette.md'
-// import Indeterminato from './docs/Indeterminato.md'
-// import Colori from './docs/Colori.md'
-// import ButtonProgress from './docs/ButtonProgress.md'
-// import EsempiInterattivi from './docs/EsempiInterattivi.md'
+export const Esempio = () => <Progress value='50' />;
 
-const EsempiComponent = () => (
-  <div>
-    <div className='mb-3'>
-      <Progress value='0' />
-    </div>
-    <div className='mb-3'>
-      <Progress value='25' />
-    </div>
-    <div className='mb-3'>
-      <Progress value='50' />
-    </div>
-    <div className='mb-3'>
-      <Progress value='75' />
-    </div>
-    <div className='mb-3'>
-      <Progress value='100' />
-    </div>
-  </div>
-);
+export const Etichette = () => <Progress value='35' label='progresso' />;
 
-const EtichetteComponent = () => (
-  <div>
-    <Progress value='35' label='progresso' />
-  </div>
-);
-
-const ProgressoIndeterminato = () => (
+export const ProgressoIndeterminato = () => (
   <Progress indeterminate label='In elaborazione...' />
 );
 
-const ColoriComponent = () => (
+export const Colori = () => (
   <div>
-    <div className='mb-3'>
-      <Progress value='25' color='success' />
-    </div>
-    <div className='mb-3'>
-      <Progress value='33' color='info' />
-    </div>
-    <div className='mb-3'>
-      <Progress value='50' color='warning' />
-    </div>
-    <div className='mb-3'>
-      <Progress value='66' color='danger' />
-    </div>
+    <Progress value='25' color='success' />
+    <Progress value='33' color='info' />
+    <Progress value='50' color='warning' />
+    <Progress value='66' color='danger' />
   </div>
 );
 
@@ -96,14 +59,6 @@ export const _EsempiInterattivi = ({ value, color, label }) => {
 export default {
   title: 'Componenti/Progress Indicators'
 };
-
-export const _Esempi = EsempiComponent;
-
-export const _Etichette = EtichetteComponent;
-
-export const _ProgressoIndeterminato = ProgressoIndeterminato;
-
-export const _Colori = ColoriComponent;
 
 BottoneConProgressBar.story = {
   name: 'Bottone con Progress Bar'

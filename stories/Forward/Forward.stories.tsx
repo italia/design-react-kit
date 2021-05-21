@@ -2,7 +2,11 @@ import React from 'react';
 
 import { Forward, Icon, Card } from '../../src';
 
-const ForwardComponent = () => {
+export default {
+  title: 'Componenti/Forward'
+};
+
+export const Esempi = () => {
   const ref = React.useRef(null);
   return (
     <div>
@@ -87,9 +91,3 @@ const ForwardComponent = () => {
     </div>
   );
 };
-
-export default {
-  title: 'Componenti/Forward'
-};
-
-export const Esempi = ForwardComponent;

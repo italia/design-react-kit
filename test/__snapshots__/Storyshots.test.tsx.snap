@@ -12105,7 +12105,7 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
 </div>
 `;
 
-exports[`Storyshots Componenti/Progress Indicators/Spinners Spinner 1`] = `
+exports[`Storyshots Componenti/Progress Indicators/Spinners Esempio 1`] = `
 <div
   style={
     Object {
@@ -12139,7 +12139,7 @@ exports[`Storyshots Componenti/Progress Indicators/Spinners Spinner 1`] = `
           <span
             className="sr-only"
           >
-            Caricamento...
+            Caricamento
           </span>
         </span>
       </div>
@@ -12159,7 +12159,7 @@ exports[`Storyshots Componenti/Progress Indicators/Spinners Spinner 1`] = `
           <span
             className="sr-only"
           >
-            Caricamento...
+            Caricamento
           </span>
         </span>
       </div>
@@ -12179,7 +12179,7 @@ exports[`Storyshots Componenti/Progress Indicators/Spinners Spinner 1`] = `
           <span
             className="sr-only"
           >
-            Caricamento...
+            Caricamento
           </span>
         </span>
       </div>
@@ -12199,7 +12199,7 @@ exports[`Storyshots Componenti/Progress Indicators/Spinners Spinner 1`] = `
           <span
             className="sr-only"
           >
-            Caricamento...
+            Caricamento
           </span>
         </span>
       </div>
@@ -12248,7 +12248,7 @@ exports[`Storyshots Componenti/Progress Indicators/Spinners Spinner Doppio 1`] =
           <span
             className="sr-only"
           >
-            Caricamento...
+            Caricamento
           </span>
         </span>
       </div>
@@ -12274,7 +12274,7 @@ exports[`Storyshots Componenti/Progress Indicators/Spinners Spinner Doppio 1`] =
           <span
             className="sr-only"
           >
-            Caricamento...
+            Caricamento
           </span>
         </span>
       </div>
@@ -12300,7 +12300,7 @@ exports[`Storyshots Componenti/Progress Indicators/Spinners Spinner Doppio 1`] =
           <span
             className="sr-only"
           >
-            Caricamento...
+            Caricamento
           </span>
         </span>
       </div>
@@ -12326,12 +12326,646 @@ exports[`Storyshots Componenti/Progress Indicators/Spinners Spinner Doppio 1`] =
           <span
             className="sr-only"
           >
-            Caricamento...
+            Caricamento
           </span>
         </span>
       </div>
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Rating Rating Base 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <fieldset
+    className="rating-label rating"
+  >
+    <legend
+      className=""
+    >
+      Rating
+    </legend>
+    <input
+      ariaDescribedBy="star5aDescription"
+      checked={false}
+      className=" "
+      id="star5a"
+      name="ratingA"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="5"
+    />
+    <label
+      className="full"
+      htmlFor="star5a"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 5 stelle su 5
+      </span>
+    </label>
+    <input
+      ariaDescribedBy="star4aDescription"
+      checked={false}
+      className=" "
+      id="star4a"
+      name="ratingA"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="4"
+    />
+    <label
+      className="full"
+      htmlFor="star4a"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 4 stelle su 5
+      </span>
+    </label>
+    <input
+      ariaDescribedBy="star3aDescription"
+      checked={false}
+      className=" "
+      id="star3a"
+      name="ratingA"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="3"
+    />
+    <label
+      className="full"
+      htmlFor="star3a"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 3 stelle su 5
+      </span>
+    </label>
+    <input
+      ariaDescribedBy="star2aDescription"
+      checked={false}
+      className=" "
+      id="star2a"
+      name="ratingA"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="2"
+    />
+    <label
+      className="full"
+      htmlFor="star2a"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 2 stelle su 5
+      </span>
+    </label>
+    <input
+      ariaDescribedBy="star1aDescription"
+      checked={false}
+      className=" "
+      id="star1a"
+      name="ratingA"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="1"
+    />
+    <label
+      className="full"
+      htmlFor="star1a"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 1 stelle su 5
+      </span>
+    </label>
+  </fieldset>
+</div>
+`;
+
+exports[`Storyshots Componenti/Rating Rating con Label 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <fieldset
+    className="rating-label rating"
+    onChange={[Function]}
+  >
+    <span
+      className="sr-only"
+    >
+      Valutazione
+    </span>
+     
+    <span>
+      4
+       stelle
+    </span>
+     
+    <span
+      className="sr-only"
+    >
+      su 5
+    </span>
+    <input
+      ariaDescribedBy="star5bDescription"
+      checked={false}
+      className=" "
+      id="star5b"
+      name="ratingB"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="5"
+    />
+    <label
+      className="full"
+      htmlFor="star5b"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 5 stelle su 5
+      </span>
+    </label>
+    <input
+      ariaDescribedBy="star4bDescription"
+      checked={true}
+      className=" "
+      id="star4b"
+      name="ratingB"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="4"
+    />
+    <label
+      className="full"
+      htmlFor="star4b"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 4 stelle su 5
+      </span>
+    </label>
+    <input
+      ariaDescribedBy="star3bDescription"
+      checked={false}
+      className=" "
+      id="star3b"
+      name="ratingB"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="3"
+    />
+    <label
+      className="full"
+      htmlFor="star3b"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 3 stelle su 5
+      </span>
+    </label>
+    <input
+      ariaDescribedBy="star2bDescription"
+      checked={false}
+      className=" "
+      id="star2b"
+      name="ratingB"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="2"
+    />
+    <label
+      className="full"
+      htmlFor="star2b"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 2 stelle su 5
+      </span>
+    </label>
+    <input
+      ariaDescribedBy="star1bDescription"
+      checked={false}
+      className=" "
+      id="star1b"
+      name="ratingB"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="1"
+    />
+    <label
+      className="full"
+      htmlFor="star1b"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 1 stelle su 5
+      </span>
+    </label>
+  </fieldset>
+</div>
+`;
+
+exports[`Storyshots Componenti/Rating Rating read-only 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <fieldset
+    className="rating-read-only rating-label rating"
+  >
+    <legend
+      className="sr-only"
+    >
+      Valutazione 4 stelle su 5
+    </legend>
+    <input
+      ariaDescribedBy="star5cDescription"
+      ariaHidden="true"
+      checked={false}
+      className=" "
+      disabled={true}
+      id="star5c"
+      name="ratingC"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="5"
+    />
+    <label
+      className="full"
+      htmlFor="star5c"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 5 stelle su 5
+      </span>
+    </label>
+    <input
+      ariaDescribedBy="star4cDescription"
+      ariaHidden="true"
+      checked={true}
+      className=" "
+      disabled={true}
+      id="star4c"
+      name="ratingC"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="4"
+    />
+    <label
+      className="full"
+      htmlFor="star4c"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 4 stelle su 5
+      </span>
+    </label>
+    <input
+      ariaDescribedBy="star3cDescription"
+      ariaHidden="true"
+      checked={false}
+      className=" "
+      disabled={true}
+      id="star3c"
+      name="ratingC"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="3"
+    />
+    <label
+      className="full"
+      htmlFor="star3c"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 3 stelle su 5
+      </span>
+    </label>
+    <input
+      ariaDescribedBy="star2cDescription"
+      ariaHidden="true"
+      checked={false}
+      className=" "
+      disabled={true}
+      id="star2c"
+      name="ratingC"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="2"
+    />
+    <label
+      className="full"
+      htmlFor="star2c"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 2 stelle su 5
+      </span>
+    </label>
+    <input
+      ariaDescribedBy="star1cDescription"
+      ariaHidden="true"
+      checked={false}
+      className=" "
+      disabled={true}
+      id="star1c"
+      name="ratingC"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="1"
+    />
+    <label
+      className="full"
+      htmlFor="star1c"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        className="sr-only"
+      >
+        Valuta 1 stelle su 5
+      </span>
+    </label>
+  </fieldset>
 </div>
 `;
 
