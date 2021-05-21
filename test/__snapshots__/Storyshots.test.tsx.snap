@@ -976,7 +976,6 @@ exports[`Storyshots Componenti/Avatar/Avatar groups Overlapping Medium Overlaid 
         >
           <button
             aria-expanded={false}
-            aria-has-popup="true"
             aria-haspopup={true}
             className="btn btn-dropdown dropdown-toggle"
             data-toggle="dropdown"
@@ -1250,7 +1249,6 @@ exports[`Storyshots Componenti/Avatar/Avatar groups Overlapping Small Overlappin
         >
           <button
             aria-expanded={false}
-            aria-has-popup="true"
             aria-haspopup={true}
             className="btn btn-dropdown dropdown-toggle"
             data-toggle="dropdown"
@@ -6626,6 +6624,320 @@ exports[`Storyshots Componenti/Form/Form Layout Form Disabilitato 1`] = `
 </div>
 `;
 
+exports[`Storyshots Componenti/Form/Form Validation Validazione Base 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div>
+    <div
+      className="form-group"
+    >
+      <input
+        className="is-valid form-control"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        valid={true}
+      />
+      <label
+        className=""
+      >
+        Valid Input
+      </label>
+      <small
+        className="valid-feedback form-text text-muted"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <input
+        className="is-invalid form-control"
+        invalid={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+      />
+      <label
+        className=""
+      >
+        Invalid Input
+      </label>
+      <small
+        className="invalid-feedback form-text text-muted"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <input
+        className="is-valid form-control"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        valid={true}
+        value="Mario"
+      />
+      <label
+        className="active"
+      >
+        First name
+      </label>
+      <small
+        className="valid-feedback form-text text-muted"
+      >
+        Validated!
+      </small>
+    </div>
+    <div
+      className="form-group"
+    >
+      <input
+        className="is-invalid form-control"
+        invalid={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+      />
+      <label
+        className=""
+      >
+        Username
+      </label>
+      <small
+        className="invalid-feedback form-text text-muted"
+      >
+        Please choose a username.
+      </small>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <form
+    className=""
+  >
+    <div
+      className="form-row"
+    >
+      <div
+        className="col-md-4 mb-3 form-group"
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            className="is-valid form-control"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            type="text"
+            valid={true}
+            value="Mario"
+          />
+          <label
+            className="active"
+          >
+            Nome
+          </label>
+          <small
+            className="valid-feedback form-text text-muted"
+          >
+            Validato!
+          </small>
+        </div>
+      </div>
+      <div
+        className="col-md-4 mb-3 form-group"
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            className="is-valid form-control"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            type="text"
+            valid={true}
+            value="Rossi"
+          />
+          <label
+            className="active"
+          >
+            Cognome
+          </label>
+          <small
+            className="valid-feedback form-text text-muted"
+          >
+            Validato!
+          </small>
+        </div>
+      </div>
+      <div
+        className="col-md-4 mb-3 form-group"
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            className="is-invalid form-control"
+            invalid={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+          <label
+            className=""
+          >
+            Username
+          </label>
+          <small
+            className="invalid-feedback form-text text-muted"
+          >
+            Per favore scegli un username.
+          </small>
+        </div>
+      </div>
+    </div>
+    <div
+      className="form-row"
+    >
+      <div
+        className="col-md-6 mb-3 form-group"
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            className="is-invalid form-control"
+            invalid={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+          <label
+            className=""
+          >
+            Città
+          </label>
+          <small
+            className="invalid-feedback form-text text-muted"
+          >
+            Per favore inserisci un nome di città valido.
+          </small>
+        </div>
+      </div>
+      <div
+        className="col-md-3 mb-3 form-group"
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            className="is-invalid form-control"
+            invalid={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+          <label
+            className=""
+          >
+            Provincia
+          </label>
+          <small
+            className="invalid-feedback form-text text-muted"
+          >
+            Per favore inserisci un nome di provincia valida.
+          </small>
+        </div>
+      </div>
+      <div
+        className="col-md-3 mb-3 form-group"
+      >
+        <div
+          className="form-group"
+        >
+          <input
+            className="is-invalid form-control"
+            invalid={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+          <label
+            className=""
+          >
+            CAP
+          </label>
+          <small
+            className="invalid-feedback form-text text-muted"
+          >
+            Per favore inserisci un CAP valido.
+          </small>
+        </div>
+      </div>
+    </div>
+    <div
+      className="form-check"
+    >
+      <div
+        className="form-group"
+      >
+        <input
+          ariaDescribedBy="checkbox1Description"
+          className="is-invalid form-control"
+          id="checkbox1"
+          invalid={true}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+        />
+        <label
+          className=""
+          htmlFor="checkbox1"
+        >
+          Accetto i termini e condizioni
+        </label>
+        <small
+          className="invalid-feedback form-text text-muted"
+          id="checkbox1Description"
+        >
+          Devi accettare i termini e le condizioni prima di inviare il modulo.
+        </small>
+      </div>
+    </div>
+    <button
+      aria-label={null}
+      className="btn btn-primary"
+      onClick={[Function]}
+      type="submit"
+    >
+      Invia
+    </button>
+  </form>
+</div>
+`;
+
 exports[`Storyshots Componenti/Form/Radio Radio Base 1`] = `
 <div
   style={
@@ -11790,6 +12102,236 @@ exports[`Storyshots Componenti/Pager/Funzioni aggiuntive Total number 1`] = `
        24 di 50
     </p>
   </nav>
+</div>
+`;
+
+exports[`Storyshots Componenti/Progress Indicators/Spinners Spinner 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-6 col-lg-3"
+      >
+        <p
+          className="mb-3"
+        >
+          <strong>
+            Spinner standard
+          </strong>
+        </p>
+        <span
+          className="progress-spinner"
+        >
+          <span
+            className="sr-only"
+          >
+            Caricamento...
+          </span>
+        </span>
+      </div>
+      <div
+        className="col-6 col-lg-3"
+      >
+        <p
+          className="mb-3"
+        >
+          <strong>
+            Spinner Attivo
+          </strong>
+        </p>
+        <span
+          className="progress-spinner progress-spinner-active"
+        >
+          <span
+            className="sr-only"
+          >
+            Caricamento...
+          </span>
+        </span>
+      </div>
+      <div
+        className="col-6 col-lg-3 mt-3 mt-lg-0"
+      >
+        <p
+          className="mb-3"
+        >
+          <strong>
+            Small
+          </strong>
+        </p>
+        <span
+          className="progress-spinner size-sm"
+        >
+          <span
+            className="sr-only"
+          >
+            Caricamento...
+          </span>
+        </span>
+      </div>
+      <div
+        className="col-6 col-lg-3 mt-3 mt-lg-0"
+      >
+        <p
+          className="mb-3"
+        >
+          <strong>
+            Small attivo
+          </strong>
+        </p>
+        <span
+          className="progress-spinner progress-spinner-active size-sm"
+        >
+          <span
+            className="sr-only"
+          >
+            Caricamento...
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Progress Indicators/Spinners Spinner Doppio 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-6 col-lg-3"
+      >
+        <p
+          className="mb-3"
+        >
+          <strong>
+            Spinner doppio
+          </strong>
+        </p>
+        <span
+          className="progress-spinner progress-spinner-double"
+        >
+          <div
+            className="progress-spinner-inner"
+          />
+          <div
+            className="progress-spinner-inner"
+          />
+          <span
+            className="sr-only"
+          >
+            Caricamento...
+          </span>
+        </span>
+      </div>
+      <div
+        className="col-6 col-lg-3"
+      >
+        <p
+          className="mb-3"
+        >
+          <strong>
+            Doppio attivo
+          </strong>
+        </p>
+        <span
+          className="progress-spinner progress-spinner-active progress-spinner-double"
+        >
+          <div
+            className="progress-spinner-inner"
+          />
+          <div
+            className="progress-spinner-inner"
+          />
+          <span
+            className="sr-only"
+          >
+            Caricamento...
+          </span>
+        </span>
+      </div>
+      <div
+        className="col-6 col-lg-3 mt-3 mt-lg-0"
+      >
+        <p
+          className="mb-3"
+        >
+          <strong>
+            Doppio small
+          </strong>
+        </p>
+        <span
+          className="progress-spinner size-sm progress-spinner-double"
+        >
+          <div
+            className="progress-spinner-inner"
+          />
+          <div
+            className="progress-spinner-inner"
+          />
+          <span
+            className="sr-only"
+          >
+            Caricamento...
+          </span>
+        </span>
+      </div>
+      <div
+        className="col-6 col-lg-3 mt-3 mt-lg-0"
+      >
+        <p
+          className="mb-3"
+        >
+          <strong>
+            Doppio small attivo
+          </strong>
+        </p>
+        <span
+          className="progress-spinner progress-spinner-active size-sm progress-spinner-double"
+        >
+          <div
+            className="progress-spinner-inner"
+          />
+          <div
+            className="progress-spinner-inner"
+          />
+          <span
+            className="sr-only"
+          >
+            Caricamento...
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
