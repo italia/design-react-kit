@@ -36,7 +36,7 @@ export const Progress: FC<ProgressProps> = ({
   ...attributes
 }) => {
   const Tag = tag;
-  if (!isNumber(value)) {
+  if (!isNumber(value) && !indeterminate) {
     logError(`The passed "value" is not a valid number. You passed "${value}"`);
   }
   const numericValue = Number(value);
