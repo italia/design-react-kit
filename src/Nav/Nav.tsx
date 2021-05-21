@@ -15,7 +15,7 @@ export interface NavProps extends HTMLAttributes<HTMLUListElement> {
    */
   card?: boolean;
   /**
-   * Se utilizzata all'interno di una navbar, impostarlo su `true`. In caso di Header Nav, impostarlo a `true` insieme a inHeader.
+   * Se utilizzata all'interno di una navbar, impostarlo su `true`. In caso di Header Nav, impostarlo a `true`.
    */
   navbar?: boolean;
   /** Se abilitato tutti i NavItem all'interno avranno la stessa larghezza */

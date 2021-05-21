@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+/* eslint jsx-a11y/anchor-is-valid: 0 */
+import React, { Component, FC } from 'react';
 import {
   Button,
   Collapse,
@@ -25,8 +26,18 @@ import {
   UncontrolledDropdown
 } from '../../../src';
 
-// eslint-disable-next-line react/prop-types
-const SlimHeaderFullResponsive = ({ theme }) => {
+type Theme = {
+  theme?: 'light' | 'dark';
+};
+
+type TownLabels = {
+  townName: string;
+  townTagLine: string;
+};
+
+type State = { collapsed: boolean };
+
+const SlimHeaderFullResponsive: FC<Theme> = ({ theme }) => {
   return (
     <Header type='slim' theme={theme}>
       <HeaderContent>
@@ -52,7 +63,7 @@ const SlimHeaderFullResponsive = ({ theme }) => {
               </Row>
             </DropdownMenu>
           </UncontrolledDropdown>
-          <Button color='primary' size='full' className='btn-icon' href='#'>
+          <Button color='primary' icon href='#'>
             <span className='rounded-icon'>
               <Icon color='primary' icon='it-user' />
             </span>
@@ -68,7 +79,7 @@ const SlimHeaderFullResponsive = ({ theme }) => {
 
 // eslint rule has to be disable for few lines here as Storybook addons will go in error
 // if PropTypes are declared in these components
-export class SlimHeader extends Component {
+export class SlimHeader extends Component<Theme, State> {
   state = {
     collapsed: true
   };
@@ -89,7 +100,7 @@ export class SlimHeader extends Component {
               <Icon icon='it-expand' />
             </HeaderToggler>
             <Collapse isOpen={!this.state.collapsed} header>
-              <Nav inHeader>
+              <Nav navbar>
                 <NavItem>
                   <NavLink href='#'>Link 1</NavLink>
                 </NavItem>
@@ -132,9 +143,12 @@ export class SlimHeader extends Component {
   }
 }
 
-export const CenterHeader = ({ townName, townTagLine, theme }) => {
+export const CenterHeader: FC<TownLabels & Theme> = ({
+  townName,
+  townTagLine,
+  theme
+}) => {
   return (
-    // eslint-disable-next-line react/prop-types
     <Header type='center' theme={theme}>
       <HeaderContent>
         <HeaderBrand iconName='it-code-circle'>
@@ -168,14 +182,13 @@ export const CenterHeader = ({ townName, townTagLine, theme }) => {
   );
 };
 
-export class NavHeader extends Component {
+export class NavHeader extends Component<{ active: string } & Theme, State> {
   state = {
     collapsed: true
   };
 
   render() {
     const isOpen = !this.state.collapsed;
-    // eslint-disable-next-line react/prop-types
     const { active, theme } = this.props;
     return (
       <Header type='navbar' theme={theme}>
@@ -238,20 +251,9 @@ export class NavHeader extends Component {
   }
 }
 
-const CompleteHeader = ({
-  // eslint-disable-next-line react/prop-types
-  page,
-  // eslint-disable-next-line react/prop-types
-  sticky,
-  // eslint-disable-next-line react/prop-types
-  theme,
-  // eslint-disable-next-line react/prop-types
-  type,
-  // eslint-disable-next-line react/prop-types
-  townName,
-  // eslint-disable-next-line react/prop-types
-  townTagLine
-}) => {
+const CompleteHeader: FC<
+  Theme & TownLabels & { type?: 'default'; page?: string; sticky: boolean }
+> = ({ page, sticky, theme, type, townName, townTagLine }) => {
   const SlimTag = type === 'default' ? SlimHeader : SlimHeaderFullResponsive;
   return (
     <Headers sticky={sticky}>

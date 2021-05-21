@@ -1,3 +1,4 @@
+/* eslint jsx-a11y/anchor-is-valid: 0 */
 import React, { useState } from 'react';
 import { actions } from '@storybook/addon-actions';
 import AsyncSelect from 'react-select/async';
@@ -187,7 +188,7 @@ ReadonlyNormalizzato.story = {
 
 export const _InputAutocompleteConDati = () => {
   // "value" is used to show or propagate it externally
-  // eslint-disable-next-line no-unused-vars
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [value, setValue] = useState('');
 
   const handleInputChange = (newValue) => {

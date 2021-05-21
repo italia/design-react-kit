@@ -1,3 +1,4 @@
+/* eslint jsx-a11y/anchor-is-valid: 0 */
 import React, { useState, useRef } from 'react';
 
 import { Popover, PopoverHeader, PopoverBody, Button } from '../../src';
@@ -7,14 +8,6 @@ import PopoverPositionExample from './PopoverPositionExample';
 import PopoverIconLink from './PopoverIconLink';
 import PopoverHover from './PopoverHover';
 import PopoverFocus from './PopoverFocus';
-
-// import Esempi from './docs/Esempi.md'
-// import QuattroDirezioni from './docs/QuattroDirezioni.md'
-// import ElementiDisabilitati from './docs/ElementiDisabilitati.md'
-// import EsempiInterattivi from './docs/EsempiInterattivi.md'
-// import IconLink from './docs/IconLink.md'
-// import Hover from './docs/Hover.md'
-// import Focus from './docs/Focus.md'
 
 const ElementiDisabilitatiComponent = () => {
   const targetRef = useRef(null);

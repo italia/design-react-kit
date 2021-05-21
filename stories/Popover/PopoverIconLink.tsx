@@ -1,3 +1,4 @@
+/* eslint jsx-a11y/anchor-is-valid: 0 */
 import React, { useState, useRef } from 'react';
 import { Button, Icon, Popover, PopoverHeader, PopoverBody } from '../../src';
 

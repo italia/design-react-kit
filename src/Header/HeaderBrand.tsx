@@ -24,7 +24,7 @@ export interface HeaderBrandProps
   /** Icona da utilizzare nel componente. Utilizzata unicamente quando l'Header è di tipo Center.  */
   iconName?: string;
   /** Elementi React da renderizzare al proprio interno. */
-  children: ReactChild;
+  children: ReactChild | ReactChild[];
 }
 
 export class HeaderBrand extends PureComponent<HeaderBrandProps> {

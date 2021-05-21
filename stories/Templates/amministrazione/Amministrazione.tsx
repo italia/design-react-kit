@@ -1,6 +1,6 @@
+/* eslint jsx-a11y/anchor-is-valid: 0 */
 import React from 'react';
 
-import { select, text } from '@storybook/addon-knobs/react';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -21,16 +21,7 @@ import {
 import CompleteHeader from '../shared/Header';
 import Footer from '../shared/Footer';
 
-const Amministrazione = () => {
-  const theme = select(
-    'Tema',
-    { default: '', light: 'light', dark: 'dark' },
-    ''
-  );
-
-  const townName = text('Comune', 'Nome del Comune');
-  const townTagLine = text('Motto Comune', 'Uno dei tanti Comuni d Italia');
-
+const Amministrazione = ({ theme, townName, townTagLine }) => {
   return (
     <>
       <CompleteHeader
@@ -173,7 +164,7 @@ const Amministrazione = () => {
                               elit, sed.`}
                           </CardText>
                           <CardReadMore
-                            icon='it-arrow-right'
+                            iconName='it-arrow-right'
                             text='Leggi di più'
                             href='#'
                           />
@@ -257,6 +248,31 @@ const Amministrazione = () => {
       <Footer townName={townName} townTagLine={townTagLine} />
     </>
   );
+};
+
+Amministrazione.args = {
+  theme: '',
+  townName: 'Nome del Comune',
+  townTagLine: 'Uno dei tanti Comuni d Italia'
+};
+Amministrazione.argTypes = {
+  townName: {
+    control: {
+      name: 'Comune'
+    }
+  },
+  townTagLine: {
+    control: {
+      name: 'Motto Comune'
+    }
+  },
+  theme: {
+    control: {
+      name: 'Tema',
+      type: 'select',
+      options: ['', 'light', 'dark']
+    }
+  }
 };
 
 export default Amministrazione;

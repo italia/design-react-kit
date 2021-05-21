@@ -1,3 +1,4 @@
+/* eslint jsx-a11y/anchor-is-valid: 0 */
 import React, { Component } from 'react';
 
 import {
@@ -53,7 +54,7 @@ const SlimHeaderFullResponsive = ({ theme }) => {
               </Row>
             </DropdownMenu>
           </UncontrolledDropdown>
-          <Button color='primary' size='full' className='btn-icon' href='#'>
+          <Button color='primary' icon href='#'>
             <span className='rounded-icon'>
               <Icon color='primary' icon='it-user' />
             </span>
@@ -69,14 +70,16 @@ const SlimHeaderFullResponsive = ({ theme }) => {
 
 // eslint rule has to be disable for few lines here as Storybook addons will go in error
 // if PropTypes are declared in these components
-export class SlimHeader extends Component {
+export class SlimHeader extends Component<
+  { theme?: 'light' | 'dark' },
+  { collapsed: boolean }
+> {
   state = {
     collapsed: true
   };
 
   render() {
     return (
-      // eslint-disable-next-line react/prop-types
       <Header type='slim' theme={this.props.theme}>
         <HeaderContent>
           <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
@@ -131,10 +134,12 @@ export class SlimHeader extends Component {
   }
 }
 
-export class CenterHeader extends Component {
+export class CenterHeader extends Component<
+  { theme?: 'light' | 'dark' },
+  { collapsed: boolean }
+> {
   render() {
     return (
-      // eslint-disable-next-line react/prop-types
       <Header type='center' theme={this.props.theme}>
         <HeaderContent>
           <HeaderBrand iconName='it-code-circle'>
@@ -169,7 +174,10 @@ export class CenterHeader extends Component {
   }
 }
 
-export class NavHeader extends Component {
+export class NavHeader extends Component<
+  { theme?: 'light' | 'dark' },
+  { collapsed: boolean }
+> {
   state = {
     collapsed: true
   };

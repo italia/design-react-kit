@@ -1,6 +1,6 @@
+/* eslint jsx-a11y/anchor-is-valid: 0 */
 import React from 'react';
 
-import { select, text } from '@storybook/addon-knobs/react';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -22,13 +22,7 @@ import {
 import CompleteHeader from '../shared/Header';
 import Footer from '../shared/Footer';
 
-const Servizi = () => {
-  const theme = select(
-    'Tema',
-    { default: '', light: 'light', dark: 'dark' },
-    ''
-  );
-
+const Servizi = ({ theme, townName, townTagLine }) => {
   // TODO find a better way to handle this
   // Storyshot does not use the dom so can't render refs
   // to fix the problem we append the elements manually
@@ -39,9 +33,6 @@ const Servizi = () => {
   const div = document.createElement('div');
   div.setAttribute('id', 'altri-servizi');
   document.body.appendChild(div);
-
-  const townName = text('Comune', 'Nome del Comune');
-  const townTagLine = text('Motto Comune', 'Uno dei tanti Comuni d Italia');
 
   return (
     <>
@@ -217,7 +208,7 @@ const Servizi = () => {
                               elit, sed.`}
                           </CardText>
                           <CardReadMore
-                            icon='it-arrow-right'
+                            iconName='it-arrow-right'
                             text='Leggi di più'
                             href='#'
                           />
@@ -269,7 +260,7 @@ const Servizi = () => {
                             dolore magna aliqua.
                           </CardText>
                           <CardReadMore
-                            icon='it-arrow-right'
+                            iconName='it-arrow-right'
                             text='Leggi di più'
                             href='#'
                           />
@@ -308,6 +299,31 @@ const Servizi = () => {
       <Footer townName={townName} townTagLine={townTagLine} />
     </>
   );
+};
+
+Servizi.args = {
+  theme: '',
+  townName: 'Nome del Comune',
+  townTagLine: 'Uno dei tanti Comuni d Italia'
+};
+Servizi.argTypes = {
+  townName: {
+    control: {
+      name: 'Comune'
+    }
+  },
+  townTagLine: {
+    control: {
+      name: 'Motto Comune'
+    }
+  },
+  theme: {
+    control: {
+      name: 'Tema',
+      type: 'select',
+      options: ['', 'light', 'dark']
+    }
+  }
 };
 
 export default Servizi;

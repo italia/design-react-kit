@@ -11,7 +11,7 @@ export interface HeaderSearchProps extends HTMLAttributes<HTMLElement> {
   /** Nome dell'icona da utilizzare */
   iconName: string;
   /** Indirizzo di indirizzamento al click dell'icona */
-  href: string;
+  href?: string;
 }
 
 export const HeaderSearch: FC<HeaderSearchProps> = ({

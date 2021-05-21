@@ -1,3 +1,4 @@
+/* eslint jsx-a11y/anchor-is-valid: 0 */
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Alert, AlertProps } from '../../src';
