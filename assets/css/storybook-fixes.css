@@ -79,3 +79,7 @@ div[id*='componenti-cookiebar'] .cookiebar {
   position: relative !important;
   display: block !important;
 }
+
+div[id*='story'] .progress+.progress {
+  margin-top: 1rem;
+}

@@ -12,6 +12,8 @@ export interface SpinnerProps extends HTMLAttributes<HTMLElement> {
   small?: boolean;
   /** Utilizzato per ottenere una animazione alternativa in fase di caricamento */
   double?: boolean;
+  /** Etichetta con testo da mostrare ai dispositivi screen reader */
+  label?: string;
 }
 
 export const Spinner: FC<SpinnerProps> = ({
@@ -20,6 +22,7 @@ export const Spinner: FC<SpinnerProps> = ({
   active = false,
   small = false,
   double = false,
+  label = 'Caricamento',
   ...attributes
 }) => {
   const Tag = tag;
@@ -36,7 +39,7 @@ export const Spinner: FC<SpinnerProps> = ({
         <div className='progress-spinner-inner' />
         <div className='progress-spinner-inner' />
         <Tag {...attributes} className={classes}>
-          Caricamento...
+          {label}
         </Tag>
       </Tag>
     );
@@ -45,7 +48,7 @@ export const Spinner: FC<SpinnerProps> = ({
   return (
     <Tag className={wrapperClasses}>
       <Tag {...attributes} className={classes}>
-        Caricamento...
+        {label}
       </Tag>
     </Tag>
   );
