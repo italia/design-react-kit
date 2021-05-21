@@ -1,15 +1,10 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
 import React, { useState } from 'react';
 import { actions } from '@storybook/addon-actions';
-import AsyncSelect from 'react-select/async';
 
-import {
-  DropdownIndicator,
-  multiOptions,
-  Input as AutocompleteInput
-} from './Autocomplete/AutocompleteExample';
+import { multiOptions } from './Autocomplete/AutocompleteExample';
 
-import { Input, Icon, TextArea } from '../../src';
+import { Input, Icon, TextArea, FormGroup, Autocomplete } from '../../src';
 
 export default {
   title: 'Componenti/Form/Input'
@@ -198,15 +193,9 @@ export const _InputAutocompleteConDati = () => {
   };
 
   return (
-    <div className='form-group'>
-      <AsyncSelect
+    <FormGroup>
+      <Autocomplete
         id='autocomplete-regioni'
-        components={{
-          DropdownIndicator,
-          AutocompleteInput,
-          IndicatorSeparator: null
-        }}
-        cacheOptions
         loadOptions={(inputValue, callback) => {
           setTimeout(() => {
             callback(
@@ -217,14 +206,12 @@ export const _InputAutocompleteConDati = () => {
           }, 1000);
         }}
         defaultOptions
-        placeholder='Testo da cercare'
         onInputChange={handleInputChange}
-        classNamePrefix='react-autocomplete'
       />
       <label htmlFor='autocomplete-regioni' className='sr-only'>
         Cerca nel sito
       </label>
-    </div>
+    </FormGroup>
   );
 };
 
