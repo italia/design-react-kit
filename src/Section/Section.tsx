@@ -21,7 +21,7 @@ export interface SectionProps extends HTMLAttributes<HTMLElement> {
    */
   image?: string;
   /** Il contenuto della sezione */
-  children?: ReactChild;
+  children?: ReactChild | ReactChild[];
   /** Quando abilitato applica lo sfondo di tipo "neutral" al componente.
    * @deprecated. Utilizzare `color="neutral"`
    */
