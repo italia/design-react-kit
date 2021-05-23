@@ -235,8 +235,11 @@ export const _InputAutocompleteConDati = () => {
             );
           }, 1000);
         }}
+        cacheOptions
         defaultOptions
         onInputChange={handleInputChange}
+        classNamePrefix='react-autocomplete'
+        placeholder='Testo da cercare'
       />
       <label htmlFor='autocomplete-regioni' className='sr-only'>
         Cerca nel sito
