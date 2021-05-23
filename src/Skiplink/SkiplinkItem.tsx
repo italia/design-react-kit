@@ -7,15 +7,23 @@ export interface SkiplinkItemProps
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente Skiplink */
   className?: string;
+  /** Abilitare questo attributo per renderizzare lo SkipLinkItem al focus */
+  focusable?: boolean;
 }
 
 export const SkiplinkItem: FC<SkiplinkItemProps> = ({
   className,
   tag = 'a',
+  focusable = true,
   ...attributes
 }) => {
   const Tag = tag;
-  const classes = classNames(className, 'sr-only', 'sr-only-focusable');
+  const classes = classNames(className, 'sr-only', {
+    'sr-only-focusable': focusable
+  });
 
-  return <Tag className={classes} {...attributes} />;
+  // Add an extra href for focusable if the user passes an onClick rather than href prop
+  const extraHref = attributes.onClick ? { href: '#' } : {};
+
+  return <Tag className={classes} {...attributes} {...extraHref} />;
 };
