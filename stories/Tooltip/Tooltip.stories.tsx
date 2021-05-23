@@ -1,10 +1,11 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
-import React from 'react';
-import { UncontrolledTooltip, Button } from '../../src';
+import React, { useState } from 'react';
+import { UncontrolledTooltip, Tooltip, Button } from '../../src';
 
-const EsempiComponent = () => {
+export const Esempi = () => {
   const ids = ['Example1', 'Example2', 'Example3'];
 
+  // Workaround for testing, do not use this
   ids.map((id, i) => {
     const div = document.createElement('div');
     div.setAttribute('id', id);
@@ -65,9 +66,92 @@ const EsempiComponent = () => {
   );
 };
 
-const PosizioniComponent = () => {
+export const EsempiConControllo = () => {
+  const ids = ['Example1', 'Example2', 'Example3'];
+  const [openOne, toggleOne] = useState(false);
+  const [openTwo, toggleTwo] = useState(false);
+  const [openThree, toggleThree] = useState(false);
+
+  // Workaround for testing, do not use this
+  ids.map((id, i) => {
+    const div = document.createElement('div');
+    div.setAttribute('id', id);
+    document.body.appendChild(div);
+    return null;
+  });
+
+  return (
+    <div className='bd-example tooltip-demo'>
+      <p className='muted'>
+        Ecco un{' '}
+        <a href='#' id={ids[0]}>
+          bianco scenario
+        </a>
+        <br />
+        per tratteggiarvi l’accompagnamento
+        <br />
+        degli oggetti di sfondo che pur vivono.
+        <br />
+        Non ne sarò{' '}
+        <a href='#' id={ids[1]}>
+          l’artefice
+        </a>{' '}
+        impaziente.
+        <br />
+        Berrò alle coppe della nostalgia,
+        <br />
+        avrò preteso d’ozio nelle lacrime...
+        <br />
+        perché non mi ribello alla natura:
+        <br />
+        la mia lentezza li esaspera...
+        <br />
+        La mia lentezza? No, la mia fiducia.
+        <br />
+        Per adesso è deserto.
+        <br />
+        <a href='#' id={ids[2]}>
+          Il mondo può rifarsi senza me
+        </a>
+        ,
+        <br />E intanto gli altri mi denigreranno
+      </p>
+      <p>
+        <em>La città nuova, Alda Merini</em>
+      </p>
+
+      <Tooltip
+        placement='top'
+        target={ids[0]}
+        isOpen={openOne}
+        toggle={() => toggleOne(!openOne)}
+      >
+        Primo tooltip
+      </Tooltip>
+      <Tooltip
+        placement='top'
+        target={ids[1]}
+        isOpen={openTwo}
+        toggle={() => toggleTwo(!openTwo)}
+      >
+        Secondo tooltip
+      </Tooltip>
+      <Tooltip
+        placement='top'
+        target={ids[2]}
+        isOpen={openThree}
+        toggle={() => toggleThree(!openThree)}
+      >
+        Terzo tooltip
+      </Tooltip>
+    </div>
+  );
+};
+
+export const Posizioni = () => {
   const ids = ['example1', 'example2', 'example3', 'example4', 'example5'];
 
+  // Workaround for testing, do not use this
   ids.map((id, i) => {
     const div = document.createElement('div');
     div.setAttribute('id', id);
@@ -159,7 +243,3 @@ _EsempiInterattivi.argTypes = {
 export default {
   title: 'Componenti/Tooltip'
 };
-
-export const _Esempi = EsempiComponent;
-
-export const _Posizioni = PosizioniComponent;

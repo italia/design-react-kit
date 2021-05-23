@@ -9,7 +9,7 @@ export default {
 
 export const Esempi = () => (
   <section>
-    <nav className='breadcrumb-container'>
+    <nav className='breadcrumb-container' aria-label='breadcrumb'>
       <Breadcrumb>
         <BreadcrumbItem>
           <a href='#'>
@@ -49,7 +49,7 @@ export const Esempi = () => (
 
 export const ConIcone = () => (
   <section>
-    <nav className='breadcrumb-container'>
+    <nav className='breadcrumb-container' aria-label='breadcrumb'>
       <Breadcrumb>
         <BreadcrumbItem>
           <Icon
@@ -97,24 +97,24 @@ ConIcone.story = {
 export const SuSfondoScuro = () => (
   <section>
     <nav className='breadcrumb-container' aria-label='breadcrumb'>
-      <ol className='breadcrumb dark'>
-        <li className='breadcrumb-item'>
+      <Breadcrumb listClassName='dark'>
+        <BreadcrumbItem>
           <a href='#'>Home</a>
           <span className='separator'>/</span>
-        </li>
-        <li className='breadcrumb-item'>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
           <a href='#'>Subsection</a>
           <span className='separator'>/</span>
-        </li>
-        <li className='breadcrumb-item active' aria-current='page'>
+        </BreadcrumbItem>
+        <BreadcrumbItem active>
           <a href='#'>Current section</a>
-        </li>
-      </ol>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </nav>
 
     <nav className='breadcrumb-container' aria-label='breadcrumb'>
-      <ol className='breadcrumb dark'>
-        <li className='breadcrumb-item'>
+      <Breadcrumb listClassName='dark'>
+        <BreadcrumbItem>
           <Icon
             className='align-top mr-1'
             icon='it-star-outline'
@@ -124,8 +124,8 @@ export const SuSfondoScuro = () => (
           />
           <a href='#'>Home</a>
           <span className='separator'>/</span>
-        </li>
-        <li className='breadcrumb-item'>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
           <Icon
             className='align-top mr-1'
             icon='it-star-outline'
@@ -135,8 +135,8 @@ export const SuSfondoScuro = () => (
           />
           <a href='#'>Subsection</a>
           <span className='separator'>/</span>
-        </li>
-        <li className='breadcrumb-item active' aria-current='page'>
+        </BreadcrumbItem>
+        <BreadcrumbItem active>
           <Icon
             className='align-top mr-1'
             icon='it-star-outline'
@@ -145,45 +145,8 @@ export const SuSfondoScuro = () => (
             size='sm'
           />
           <a href='#'>Current section</a>
-        </li>
-      </ol>
-    </nav>
-
-    <nav className='breadcrumb-container' aria-label='breadcrumb'>
-      <ol className='breadcrumb dark'>
-        <li className='breadcrumb-item'>
-          <Icon
-            className='align-top mr-1'
-            icon='it-star-outline'
-            color='white'
-            aria-hidden
-            size='sm'
-          />
-          <a href='#'>Home</a>
-          <span className='separator'>&gt;</span>
-        </li>
-        <li className='breadcrumb-item'>
-          <Icon
-            className='align-top mr-1'
-            icon='it-star-outline'
-            color='white'
-            aria-hidden
-            size='sm'
-          />
-          <a href='#'>Subsection</a>
-          <span className='separator'>&gt;</span>
-        </li>
-        <li className='breadcrumb-item active' aria-current='page'>
-          <Icon
-            className='align-top mr-1'
-            icon='it-star-outline'
-            color='white'
-            aria-hidden
-            size='sm'
-          />
-          <a href='#'>Current section</a>
-        </li>
-      </ol>
+        </BreadcrumbItem>
+      </Breadcrumb>
     </nav>
   </section>
 );
