@@ -1,10 +1,13 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { actions } from '@storybook/addon-actions';
+
+import { components } from 'react-select';
+import AsyncSelect from 'react-select/async';
 
 import { multiOptions } from './Autocomplete/AutocompleteExample';
 
-import { Input, Icon, TextArea, FormGroup, Autocomplete } from '../../src';
+import { Input, Icon, TextArea, FormGroup } from '../../src';
 
 export default {
   title: 'Componenti/Form/Input'
@@ -186,6 +189,29 @@ export const _InputAutocompleteConDati = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [value, setValue] = useState('');
 
+  // memoize the component
+  const AutocompleteDropdownIndicator = useCallback(
+    (props) => (
+      <components.DropdownIndicator {...props}>
+        <span style={{ padding: '0px 5px' }} aria-hidden='true'>
+          <Icon icon='it-search' aria-hidden size='sm' />
+        </span>
+      </components.DropdownIndicator>
+    ),
+    []
+  );
+
+  const AutocompleteInput = useCallback((props) => {
+    if (props.isHidden) {
+      return <components.Input {...props} />;
+    }
+    return (
+      <div style={{ border: `1px dotted blue}` }}>
+        <components.Input {...props} />
+      </div>
+    );
+  }, []);
+
   const handleInputChange = (newValue) => {
     const inputValue = newValue.replace(/\W/g, '');
     setValue(inputValue);
@@ -194,8 +220,12 @@ export const _InputAutocompleteConDati = () => {
 
   return (
     <FormGroup>
-      <Autocomplete
-        id='autocomplete-regioni'
+      <AsyncSelect
+        components={{
+          DropdownIndicator: AutocompleteDropdownIndicator,
+          Input: AutocompleteInput,
+          IndicatorSeparator: null
+        }}
         loadOptions={(inputValue, callback) => {
           setTimeout(() => {
             callback(
