@@ -31,9 +31,9 @@ export interface BottomNavItemProps extends HTMLAttributes<HTMLLIElement> {
 }
 
 export const BottomNavItem: FC<BottomNavItemProps> = ({
-  active,
+  active = false,
   badge,
-  alert,
+  alert = false,
   url,
   srText,
   iconName = 'it-comment',
@@ -67,7 +67,7 @@ export const BottomNavItem: FC<BottomNavItemProps> = ({
         <Icon icon={iconName} />
         <span className='bottom-nav-label'>
           {label}
-          {srText ?? <span className='sr-only'>{srText}</span>}
+          {srText ? <span className='sr-only'>{srText}</span> : null}
         </span>
       </Tag>
     </li>

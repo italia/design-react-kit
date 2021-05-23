@@ -2,7 +2,7 @@ import React from 'react';
 
 import { BottomNav, BottomNavItem } from '../../src';
 
-const EsempiComponent = () => (
+export const Esempi = () => (
   <BottomNav>
     <BottomNavItem label='messaggi' />
     <BottomNavItem label='immagini' iconName='it-camera' />
@@ -10,7 +10,16 @@ const EsempiComponent = () => (
   </BottomNav>
 );
 
-const BadgeComponent = () => (
+export const Esempi4Links = () => (
+  <BottomNav>
+    <BottomNavItem label='messaggi' />
+    <BottomNavItem label='immagini' iconName='it-camera' />
+    <BottomNavItem label='documenti' iconName='it-file' />
+    <BottomNavItem label='preferiti' iconName='it-star-outline' />
+  </BottomNav>
+);
+
+export const Badge = () => (
   <BottomNav>
     <BottomNavItem label='messaggi' badge={1} srText='- 1 da leggere' />
     <BottomNavItem
@@ -31,7 +40,7 @@ const BadgeComponent = () => (
   </BottomNav>
 );
 
-const AlertComponent = () => (
+export const Alert = () => (
   <BottomNav>
     <BottomNavItem
       alert
@@ -53,9 +62,3 @@ const AlertComponent = () => (
 export default {
   title: 'Componenti/BottomNav'
 };
-
-export const _Esempi = EsempiComponent;
-
-export const _Badge = BadgeComponent;
-
-export const _Alert = AlertComponent;
