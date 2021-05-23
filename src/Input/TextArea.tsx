@@ -80,12 +80,12 @@ export class TextArea extends React.Component<TextAreaProps, InputState> {
       cssModule
     );
 
-    const extraAttributes: { ariaDescribedBy?: string } = {};
+    const extraAttributes: { ['aria-describedby']?: string } = {};
 
     // associate the input field with the help text
     const infoId = id ? `${id}Description` : undefined;
     if (id) {
-      extraAttributes.ariaDescribedBy = infoId;
+      extraAttributes['aria-describedby'] = infoId;
     }
 
     // Styling

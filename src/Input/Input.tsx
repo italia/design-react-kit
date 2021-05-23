@@ -165,7 +165,7 @@ export class Input extends React.Component<InputProps, InputState> {
     const extraAttributes: {
       type?: InputType;
       size?: number;
-      ariaDescribedBy?: string;
+      ['aria-describedby']?: string;
     } = {};
     if (size && !isNumber(size)) {
       notifyDeprecation(
@@ -183,7 +183,7 @@ export class Input extends React.Component<InputProps, InputState> {
     // associate the input field with the help text
     const infoId = id ? `${id}Description` : undefined;
     if (id) {
-      extraAttributes.ariaDescribedBy = infoId;
+      extraAttributes['aria-describedby'] = infoId;
     }
 
     if (
