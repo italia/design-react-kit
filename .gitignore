@@ -6,6 +6,7 @@ storybook-static
 dist/
 .DS_Store
 .cache
+coverage
 
 # Logs
 *.log
