@@ -19,10 +19,10 @@ export interface SidebarProps extends HTMLAttributes<HTMLElement> {
 export const Sidebar: FC<SidebarProps> = ({
   className,
   tag = 'div',
-  secondary,
-  left,
-  right,
-  dark,
+  secondary = false,
+  left = false,
+  right = false,
+  dark = false,
   ...attributes
 }) => {
   const Tag = tag;

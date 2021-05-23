@@ -1,17 +1,10 @@
 import React from 'react';
 
-// import BasicSidebar from './docs/BasicSidebar.md'
-// import ConIcona from './docs/ConIcona.md'
-// import ConLineaDestra from './docs/ConLineaDestra.md'
-// import ConLineaSinistra from './docs/ConLineaSinistra.md'
-// import Annidata from './docs/Annidata.md'
-// import ScuraSidebar from './docs/ScuraSidebar.md'
-
 import { LinkList, LinkListItem, Sidebar, Icon } from '../../src';
 
 import SidebarCollapseExample from './SidebarCollapsibleExample';
 
-const BasicSidebarComponent = () => (
+export const BasicSidebar = () => (
   <Sidebar>
     <LinkList>
       <LinkListItem header>HEADER</LinkListItem>
@@ -46,8 +39,6 @@ const BasicSidebarComponent = () => (
 export default {
   title: 'Componenti/Sidebar'
 };
-
-export const _BasicSidebar = BasicSidebarComponent;
 
 export const _ConIcona = () => (
   <Sidebar>
@@ -185,7 +176,7 @@ ConLineaASinistra.story = {
   name: 'Con linea a sinistra'
 };
 
-export const _Annidata = SidebarCollapseExample;
+export const _Annidata = SidebarCollapseExample.bind({});
 
 export const SidebarVersioneScura = () => (
   <Sidebar dark>
