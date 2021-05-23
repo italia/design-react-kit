@@ -14,7 +14,7 @@ import {
   TimelinePin
 } from '../../src';
 
-const EsempiComponent = () => (
+export const Esempi = () => (
   <div>
     <Timeline>
       <Row>
@@ -178,5 +178,3 @@ const EsempiComponent = () => (
 export default {
   title: 'Componenti/Timeline'
 };
-
-export const _Esempi = EsempiComponent;
