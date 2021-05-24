@@ -1,7 +1,14 @@
-import { ArgsTable, Meta, Canvas, Story, Preview } from "@storybook/addon-docs/blocks";
+import {
+  ArgsTable,
+  Meta,
+  Canvas,
+  Story,
+  Preview
+} from '@storybook/addon-docs/blocks';
 import {
   // Components to include
   Header,
+  Headers,
   HeaderContent,
   HeaderLinkZone,
   HeaderRightZone,
@@ -9,9 +16,9 @@ import {
   HeaderSearch,
   HeaderSocialsZone,
   HeaderToggler
-} from '../../src'
+} from '../../src';
 
-<Meta title="Documentazione/Menu di navigazione/Header" of={Header} />
+<Meta title='Documentazione/Menu di navigazione/Header' of={Header} />
 
 # Header
 
@@ -19,21 +26,17 @@ import {
 
 L’header di un sito della Pubblica Amministrazione è solitamente composto di 3 elementi principali:
 
-* Un cosiddetto “slim header”, una sottile fascia dello stesso colore o, preferibilmente, di colore lievemente più scuro rispetto al tema principale del sito, che mostra alcuni link funzionali con impatto globale o esterno al sito stesso.
-* Una parte centrale “center header“ che identifica in modo chiaro il sito attraverso logo, testo e social, e può contenere un link per effettuare ricerche sul sito.
-* Una parte dedicata alla navigazione “nav header“, visibile su schermi di grandi dimensioni ed accessibile attraverso il classico bottone di tipo “burger menu” per dispositivi mobili.
+- Un cosiddetto “slim header”, una sottile fascia dello stesso colore o, preferibilmente, di colore lievemente più scuro rispetto al tema principale del sito, che mostra alcuni link funzionali con impatto globale o esterno al sito stesso.
+- Una parte centrale “center header“ che identifica in modo chiaro il sito attraverso logo, testo e social, e può contenere un link per effettuare ricerche sul sito.
+- Una parte dedicata alla navigazione “nav header“, visibile su schermi di grandi dimensioni ed accessibile attraverso il classico bottone di tipo “burger menu” per dispositivi mobili.
 
 ## Slim header
 
-Lo *Slim header* header mostra un’intestazione, solitamente con riferimento all’ente di appartenenza del progetto o riferimenti utili, oltre ad un eventuale menu per il cambio lingua e l’accesso ad area riservata. Il cambio lingua è gestito con il componente dropdown.
+Lo _Slim header_ header mostra un’intestazione, solitamente con riferimento all’ente di appartenenza del progetto o riferimenti utili, oltre ad un eventuale menu per il cambio lingua e l’accesso ad area riservata. Il cambio lingua è gestito con il componente dropdown.
 
 <Canvas>
-    <Story id="componenti-header--header-slim" />
+  <Story id='componenti-header--header-slim' />
 </Canvas>
-
-### Versione chiara
-
-Per cambiare tema all’header slim è sufficiente aggiungere il modificatore `theme="light"` al componente `Header` di tipo `slim`.
 
 ### Right action con bottone full responsive
 
@@ -42,15 +45,68 @@ Per trasformare il bottone di action situato nella `HeaderRightZone` e renderlo 
 Il modificatore `"full"` è disponibile anche con il tema chiaro attivato da .theme-light.
 
 <Canvas>
-    <Story id="componenti-header--slim-header-with-full-button" />
+  <Story id='componenti-header--slim-header-with-full-button' />
 </Canvas>
 
+### Versione chiara
+
+Per cambiare tema all’header slim è sufficiente aggiungere il modificatore `theme="light"` al componente `Header` di tipo `slim`.
+
+<Canvas>
+  <Story id='componenti-header--header-slim-light' />
+</Canvas>
+
+## Header Centrale
+
+<Canvas>
+  <Story id='componenti-header--header-center' />
+</Canvas>
+
+### Versione stretta
+
+<Canvas>
+  <Story id='componenti-header--header-center-narrow' />
+</Canvas>
+
+### Versione chiara
+
+<Canvas>
+  <Story id='componenti-header--header-center-narrow-light' />
+</Canvas>
+
+## Header Nav
+
+<Canvas>
+  <Story id='componenti-header--header-nav' />
+</Canvas>
+
+### Versione chiara
+
+<Canvas>
+  <Story id='componenti-header--header-nav-light' />
+</Canvas>
+
+## Header Completa
+
+<Canvas>
+  <Story id='componenti-header--header-complete' />
+</Canvas>
+
+### Versione chiara
+
+<Canvas>
+  <Story id='componenti-header--header-complete-light' />
+</Canvas>
 
 ## Argomenti componente
 
 ### Header
 
 <ArgsTable of={Header} />
+
+### Headers
+
+<ArgsTable of={Headers} />
 
 ### HeaderContent
 

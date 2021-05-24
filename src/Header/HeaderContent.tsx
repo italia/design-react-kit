@@ -11,18 +11,21 @@ export interface HeaderContentProps extends HTMLAttributes<HTMLElement> {
   megamenu?: boolean;
   /** Parametro per il controllo responsive del componente secondo Bootstrap Italia. */
   expand?: boolean | 'sm' | 'md' | 'lg' | 'xl';
+  /** Parameter for small/narrow variant of header content **/
+  small?: boolean;
 }
 
 export class HeaderContent extends PureComponent<HeaderContentProps> {
   static contextType = HeaderContext;
   render() {
-    const { className, megamenu, ...attributes } = this.props;
+    const { className, megamenu, small, ...attributes } = this.props;
     const { type } = this.context;
     const classes = classNames(className, {
       'it-header-slim-wrapper-content': type === SLIM,
       'it-header-center-content-wrapper': type === CENTER,
       navbar: type === NAVBAR,
-      'has-megamenu': megamenu
+      'has-megamenu': megamenu,
+      'it-small-header': small
     });
 
     const Content =

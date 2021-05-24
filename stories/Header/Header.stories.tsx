@@ -107,3 +107,32 @@ _HeaderComplete.argTypes = {
     }
   }
 };
+
+export const _HeaderSlimLight = SlimHeaderBasic.bind({});
+_HeaderSlimLight.args = {
+  theme: 'light',
+  brandText: 'Ente appartenenza/Owner'
+};
+
+export const _HeaderCenterNarrow = CenterHeaderBasic.bind({});
+_HeaderCenterNarrow.args = {
+  theme: '',
+  brandText: 'Ente appartenenza/Owner',
+  isSmall: true
+};
+export const _HeaderCenterNarrowLight = CenterHeaderBasic.bind({});
+_HeaderCenterNarrowLight.args = {
+  theme: 'light',
+  brandText: 'Ente appartenenza/Owner',
+  isSmall: true
+};
+export const _HeaderNavLight = NavHeaderBasic.bind({});
+_HeaderNavLight.args = {
+  theme: 'light'
+};
+export const _HeaderCompleteLight = CompleteHeaderBasic.bind({});
+_HeaderCompleteLight.args = {
+  theme: 'light',
+  slimHeaderType: 'default',
+  sticky: false
+};
