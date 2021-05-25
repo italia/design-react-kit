@@ -1,7 +1,7 @@
-import { ArgsTable, Meta, Preview, Story } from "@storybook/addon-docs/blocks";
-import { Section } from '../../src'
+import { ArgsTable, Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import { Section } from '../../src';
 
-<Meta title="Documentazione/Componenti/Sections" of={Section}/>
+<Meta title='Documentazione/Componenti/Sections' of={Section} />
 
 # Sections
 
@@ -14,7 +14,7 @@ Per suddividere una pagina in blocchi orizzontali con sfondi differenti utilizza
 Il componente Section ha un padding verticale ed orizzontale predefinito ed uno sfondo trasparente.
 
 <Preview>
-    <Story id="componenti-section--esempio" />
+  <Story id='componenti-section--esempio' />
 </Preview>
 
 ### Colori di sfondo
@@ -26,7 +26,7 @@ Il componente Section ha, per default, uno sfondo trasparente. Aggiungendo le cl
 Al componente Section può essere applicato uno sfondo di colore tenue utilizzando l'attributo `color="muted"`.
 
 <Preview>
-    <Story id="componenti-section--sfondo-tenue" />
+  <Story id='componenti-section--sfondo-tenue' />
 </Preview>
 
 #### Sfondo Primario
@@ -36,7 +36,7 @@ Aggiungendo invece l'attributo `color="primary"` si otterrà un sfondo del color
 Si consiglia di applicare la classe `.white-color` al `Container` (come da esempio) per garantire la leggibilità dei testi contenuti.
 
 <Preview>
-    <Story id="componenti-section--sfondo-primario" />
+  <Story id='componenti-section--sfondo-primario' />
 </Preview>
 
 #### Sfondo Neutrale
@@ -46,7 +46,7 @@ Aggiungendo invece l'attributo `color="neutral"` si otterrà un sfondo di colore
 Si consiglia di applicare la classe `.white-color` al `Container` (come da esempio) per garantire la leggibilità dei testi contenuti.
 
 <Preview>
-    <Story id="componenti-section--sfondo-neutrale" />
+  <Story id='componenti-section--sfondo-neutrale' />
 </Preview>
 
 #### Immagine di sfondo
@@ -56,7 +56,7 @@ Aggiungendo l'attributo `image` e indicando l’URL dell’immagine da utilizzar
 Si consiglia di applicare la classe `.white-color` al `Container` (come da esempio) per garantire la leggibilità dei testi contenuti.
 
 <Preview>
-    <Story id="componenti-section--immagine-di-sfondo" />
+  <Story id='componenti-section--immagine-di-sfondo' />
 </Preview>
 
 ### Section con Card
@@ -64,5 +64,11 @@ Si consiglia di applicare la classe `.white-color` al `Container` (come da esemp
 Per aggiungere una serie di card all’interno di una `Section `si consiglia di utilizzare un container con classe `.card-deck` per garantire un corretto margine fra gli elementi `Card`.
 
 <Preview>
-    <Story id="componenti-section--section-con-card" />
+  <Story id='componenti-section--section-con-card' />
 </Preview>
+
+## Argomenti componente
+
+### Section
+
+<ArgsTable of={Section} />

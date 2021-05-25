@@ -1,8 +1,14 @@
-import { ArgsTable, Meta, Preview, Story } from "@storybook/addon-docs/blocks";
+import { ArgsTable, Meta, Preview, Story } from '@storybook/addon-docs/blocks';
 import LinkTo from '@storybook/addon-links/react';
-import { BottomNav, BottomNavItem, Callout, CalloutTitle, CalloutText } from '../../src'
+import {
+  BottomNav,
+  BottomNavItem,
+  Callout,
+  CalloutTitle,
+  CalloutText
+} from '../../src';
 
-<Meta title="Documentazione/Menu di navigazione/BottomNav" of={BottomNav}/>
+<Meta title='Documentazione/Menu di navigazione/BottomNav' of={BottomNav} />
 
 # BottomNav
 
@@ -17,13 +23,13 @@ Il componente, di altezza fissa, è ancorato la fondo della pagina e ne occupa t
 È composto da un componente contenitore `BottomNav` e contiene un elenco con più elementi `BottomNavItem`.
 
 <Preview>
-    <Story id="componenti-bottomnav--esempi" />
+  <Story id='componenti-bottomnav--esempi' />
 </Preview>
 
 I link occupano automaticamente tutto lo spazio disponibile. Qui di seguito un esempio con 4 link.
 
 <Preview>
-    <Story id="componenti-bottomnav--esempi-4-links"/>
+  <Story id='componenti-bottomnav--esempi-4-links' />
 </Preview>
 
 ### Badge
@@ -31,24 +37,28 @@ I link occupano automaticamente tutto lo spazio disponibile. Qui di seguito un e
 Aggiungere un attributo `badge` per visualizzare dei badge con indicazioni numeriche relative, ad esempio, al numero di messaggi non letti.
 
 <Preview>
-    <Story id="componenti-bottomnav--badge" />
+  <Story id='componenti-bottomnav--badge' />
 </Preview>
 
 ### Alert
 
 Aggiungere un attributo `alert` per identificare una sezione che richiede attenzione o presenta nuovi contenuti.
 
-<div className="docs">
-    <Callout color="warning" >
-        <CalloutTitle>Accessibilità</CalloutTitle>
-        <CalloutText>
-            <p>I badge e gli alert sono nascosti agli screen reader. Per garantire l’accessibilità è necessario aggiungere un attributo <code>srText</code> label che contenga un testo esplicativo.</p>
-        </CalloutText>
-    </Callout>
+<div className='docs'>
+  <Callout color='warning'>
+    <CalloutTitle>Accessibilità</CalloutTitle>
+    <CalloutText>
+      <p>
+        I badge e gli alert sono nascosti agli screen reader. Per garantire
+        l’accessibilità è necessario aggiungere un attributo <code>srText</code>{' '}
+        label che contenga un testo esplicativo.
+      </p>
+    </CalloutText>
+  </Callout>
 </div>
 
 <Preview>
-    <Story id="componenti-bottomnav--alert" />
+  <Story id='componenti-bottomnav--alert' />
 </Preview>
 
 ## Argomenti componente
@@ -60,4 +70,3 @@ Aggiungere un attributo `alert` per identificare una sezione che richiede attenz
 ### BottomNavItem
 
 <ArgsTable of={BottomNavItem} />
-

@@ -1,22 +1,27 @@
-import { ArgsTable, Meta, Preview, Story } from "@storybook/addon-docs/blocks";
-import { Accordion,
+import { ArgsTable, Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import {
+  Accordion,
   AccordionHeader,
-  AccordionBody, Callout, CalloutTitle, CalloutText } from '../../src';
+  AccordionBody,
+  Callout,
+  CalloutTitle,
+  CalloutText
+} from '../../src';
 
-<Meta title="Documentazione/Componenti/Accordion" of={Accordion}/>
+<Meta title='Documentazione/Componenti/Accordion' of={Accordion} />
 
 # Accordion (o Collapse)
 
 ## Attiva/disattiva la visibilità di contenuti
 
-Per ottimizzare l’ingombro dei contenuti di una pagina si possono usare degli elementi richiudibili (in gergo definiti *collassabili* o *collapse*), che possono essere attivati indipendentemente l’uno dall’altro oppure in modo esclusivo con l’attivazione di solo un blocco alla volta (in gergo definiti *fisarmoniche* o *accordion*).
+Per ottimizzare l’ingombro dei contenuti di una pagina si possono usare degli elementi richiudibili (in gergo definiti _collassabili_ o _collapse_), che possono essere attivati indipendentemente l’uno dall’altro oppure in modo esclusivo con l’attivazione di solo un blocco alla volta (in gergo definiti _fisarmoniche_ o _accordion_).
 
 ### Come funziona
 
 Puoi usare un bottone per cambiare la visibilità dei contenuti:
 
 <Preview>
-    <Story id="componenti-collapse--esempi" />
+  <Story id='componenti-collapse--esempi' />
 </Preview>
 
 ### Gruppi di elementi richiudibili
@@ -24,15 +29,15 @@ Puoi usare un bottone per cambiare la visibilità dei contenuti:
 Gli elementi richiudibili sono molto spesso mostrati in gruppo, tipicamente usati per approfondire voci o argomenti mostrati nelle singole barre cliccabili.
 
 <Preview>
-    <Story id="componenti-collapse--gruppi-di-elementi-richiudibili" />
+  <Story id='componenti-collapse--gruppi-di-elementi-richiudibili' />
 </Preview>
 
 ### Accordion
 
-Per ottenere un gruppo di elementi *mutualmente* richiudibili (o *accordion*), è sufficiente utilizzare uno stato con singolo id da verificare per ciascun elemento come da esempio:
+Per ottenere un gruppo di elementi _mutualmente_ richiudibili (o _accordion_), è sufficiente utilizzare uno stato con singolo id da verificare per ciascun elemento come da esempio:
 
 <Preview>
-    <Story id="componenti-collapse--accordion" />
+  <Story id='componenti-collapse--accordion' />
 </Preview>
 
 ### Collapse e Accordion innestati
@@ -40,16 +45,32 @@ Per ottenere un gruppo di elementi *mutualmente* richiudibili (o *accordion*), �
 Più gruppi di collapse possono essere annidati.
 
 <Preview>
-    <Story id="componenti-collapse--collapse-e-accordion-innestati" />
+  <Story id='componenti-collapse--collapse-e-accordion-innestati' />
 </Preview>
 
-<div className="docs">
-    <Callout color="success" >
-        <CalloutTitle>Accessibilità</CalloutTitle>
-        <CalloutText>
-            <p>Assicurati di aggiungere <code>aria-expanded</code> all’elemento di controllo. Questo attributo trasmette esplicitamente lo stato corrente dell’elemento comprimibile legato al controllo a screen reader e tecnologie assistive simili. Se l’elemento comprimibile è chiuso in modo predefinito, l’attributo sull’elemento di controllo dovrebbe avere il valore <code>aria-expanded="false"</code>. Se imposti l’elemento comprimibile aperto in modo predefinito, sul controllo invece imposta <code>aria-expanded="true"</code>. Il componente <code>AccordionHeader</code> applica automaticamente questo attributo, ma qualora venisse usato un componente di controllo esterno - come un `Button` del primo esempio - sarà necessario aggiungerlo manualmente. Se il componente HTML dell’elemento di controllo non è un bottone (ad esempio un <code>&lt;a&gt;</code> o <code>&lt;div&gt;</code>), l’attributo <code>role="button"</code> dovrebbe essere aggiunto al componente.</p>
-        </CalloutText>
-    </Callout>
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>Accessibilità</CalloutTitle>
+    <CalloutText>
+      <p>
+        Assicurati di aggiungere <code>aria-expanded</code> all’elemento di
+        controllo. Questo attributo trasmette esplicitamente lo stato corrente
+        dell’elemento comprimibile legato al controllo a screen reader e
+        tecnologie assistive simili. Se l’elemento comprimibile è chiuso in modo
+        predefinito, l’attributo sull’elemento di controllo dovrebbe avere il
+        valore <code>aria-expanded="false"</code>. Se imposti l’elemento
+        comprimibile aperto in modo predefinito, sul controllo invece imposta{' '}
+        <code>aria-expanded="true"</code>. Il componente{' '}
+        <code>AccordionHeader</code> applica automaticamente questo attributo,
+        ma qualora venisse usato un componente di controllo esterno - come un
+        `Button` del primo esempio - sarà necessario aggiungerlo manualmente. Se
+        il componente HTML dell’elemento di controllo non è un bottone (ad
+        esempio un <code>&lt;a&gt;</code> o <code>&lt;div&gt;</code>),
+        l’attributo <code>role="button"</code> dovrebbe essere aggiunto al
+        componente.
+      </p>
+    </CalloutText>
+  </Callout>
 </div>
 
 ### Sfondo primario
@@ -61,7 +82,7 @@ Applicando attributi aggiuntivi al componente `Accordion` è possibile utilizzar
 Aggiungere l'attributo `background="active"` al componente `Accordion` per ottenere header con sfondo di colore primario quando questi sono attivi e il contenuto relativo è visibile.
 
 <Preview>
-    <Story id="componenti-collapse--header-attivi" />
+  <Story id='componenti-collapse--header-attivi' />
 </Preview>
 
 #### Hover degli Header
@@ -69,7 +90,7 @@ Aggiungere l'attributo `background="active"` al componente `Accordion` per otten
 Aggiungere l'attributo `background="hover"` al componente `Accordion` per ottenere header con sfondo di colore primario all’hover.
 
 <Preview>
-    <Story id="componenti-collapse--header-hover" />
+  <Story id='componenti-collapse--header-hover' />
 </Preview>
 
 ### Icona a sinistra
@@ -77,7 +98,7 @@ Aggiungere l'attributo `background="hover"` al componente `Accordion` per ottene
 Aggiungere l'attributo `iconLeft={true}` al componente `Accordion` per ottenere una variante in cui l’icona chevron che indica lo stato di apertura è sostituita da segni meno/più allineati a sinistra del titolo dell’header.
 
 <Preview>
-    <Story id="componenti-collapse--icona-sinistra" />
+  <Story id='componenti-collapse--icona-sinistra' />
 </Preview>
 
 ## Argomenti componente
