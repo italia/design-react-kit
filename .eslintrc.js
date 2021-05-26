@@ -2,7 +2,16 @@ module.exports = {
   "extends": [
     "react-app",
     "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+  ],
+  "overrides": [
+      {
+        "files": ['*.mdx'],
+        "extends": 'plugin:mdx/recommended',
+        "settings": {
+          "mdx/code-blocks": true,
+      }
+    }
   ],
   "settings": {
     "react": {

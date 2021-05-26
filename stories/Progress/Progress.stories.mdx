@@ -1,8 +1,8 @@
-import { ArgsTable, Meta, Preview, Story } from "@storybook/addon-docs/blocks";
+import { ArgsTable, Meta, Preview, Story } from '@storybook/addon-docs/blocks';
 import LinkTo from '@storybook/addon-links/react';
-import { Progress, Spinner } from '../../src'
+import { Progress, Spinner } from '../../src';
 
-<Meta title="Documentazione/Componenti/Progress" of={Progress}/>
+<Meta title='Documentazione/Componenti/Progress' of={Progress} />
 
 # Progress Indicators
 
@@ -10,10 +10,10 @@ import { Progress, Spinner } from '../../src'
 
 ### Progress Bar
 
-Le Progress Bar sono costruite con due elementi HTML, CSS in linea per impostare la larghezza e alcuni attributi. Non è previsto l’utilizzo dell’elemento `<progress>` di HTML5.
+Le Progress Bar sono costruite con due elementi HTML, CSS in linea per impostare la larghezza e alcuni attributi. Non è previsto l’utilizzo dell’elemento <code>&lt;progress&gt;</code> di HTML5.
 
 <Preview>
-    <Story id="componenti-progress-indicators--esempio" />
+  <Story id='componenti-progress-indicators--esempio' />
 </Preview>
 
 ### Etichette
@@ -21,7 +21,7 @@ Le Progress Bar sono costruite con due elementi HTML, CSS in linea per impostare
 Per aggiungere etichette con testo che indica il progresso utilizzare l'attributo `label`.
 
 <Preview>
-    <Story id="componenti-progress-indicators--etichette" />
+  <Story id='componenti-progress-indicators--etichette' />
 </Preview>
 
 ### Progresso Indeterminato
@@ -29,7 +29,7 @@ Per aggiungere etichette con testo che indica il progresso utilizzare l'attribut
 Quando non è possibile stabilire una percentuale di progressione utilizzare una Progress Bar di tipo indeterminato, aggiungendo un attributo `indeterminate` sul componente `Progress`.
 
 <Preview>
-    <Story id="componenti-progress-indicators--progresso-indeterminato" />
+  <Story id='componenti-progress-indicators--progresso-indeterminato' />
 </Preview>
 
 ### Colori
@@ -37,7 +37,7 @@ Quando non è possibile stabilire una percentuale di progressione utilizzare una
 Per variare il colore della barra è sufficiente utilzzare l'attributo `color` ed applicare uno dei colori contenuti nella pagina <LinkTo kind="documentazione-utilities-colori--colori-sfondo#colore-di-sfondo">Utility colori</LinkTo>.
 
 <Preview>
-    <Story id="componenti-progress-indicators--colori" />
+  <Story id='componenti-progress-indicators--colori' />
 </Preview>
 
 ### Bottone con Progress Bar
@@ -45,18 +45,18 @@ Per variare il colore della barra è sufficiente utilzzare l'attributo `color` e
 La Progress Bar può essere integrata in un bottone Primario o Secondario con classe aggiuntiva `.btn-progress` utilizzando la struttura e le classi riportate nei seguenti esempi:
 
 <Preview>
-    <Story id="componenti-progress-indicators--bottone-con-progress-bar" />
+  <Story id='componenti-progress-indicators--bottone-con-progress-bar' />
 </Preview>
 
 ## Spinner
 
 Il componente `Spinner` comunica lo stato attivo di un’operazione ma non il progresso percentuale della stessa. È utile quindi quando non è possibile determinare il tempo necessario a completare una procedura.
 
-Per ottenere una versione ridotta dello Spinner aggiungere allo stesso l'attributo `small`. 
+Per ottenere una versione ridotta dello Spinner aggiungere allo stesso l'attributo `small`.
 L'attributo `label` è riservato al messaggio per gli screen reader.
 
 <Preview>
-    <Story id="componenti-progress-indicators-spinners--esempio" />
+  <Story id='componenti-progress-indicators-spinners--esempio' />
 </Preview>
 
 ### Spinner doppio
@@ -64,7 +64,7 @@ L'attributo `label` è riservato al messaggio per gli screen reader.
 Aggiungendo l'attributo `double` allo `Spinner` si ottiene un’animazione alternativa.
 
 <Preview>
-    <Story id="componenti-progress-indicators-spinners--spinner-doppio" />
+  <Story id='componenti-progress-indicators-spinners--spinner-doppio' />
 </Preview>
 
 ## Argomenti componente

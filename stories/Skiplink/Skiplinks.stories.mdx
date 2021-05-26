@@ -1,8 +1,7 @@
-import { ArgsTable, Meta, Preview, Story } from "@storybook/addon-docs/blocks";
-import LinkTo from '@storybook/addon-links/react';
-import { Skiplink, SkiplinkItem, Callout, CalloutTitle, CalloutText } from '../../src'
+import { ArgsTable, Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import { Skiplink, SkiplinkItem } from '../../src';
 
-<Meta title="Documentazione/Menu di navigazione/Skiplink" of={Skiplink}/>
+<Meta title='Documentazione/Menu di navigazione/Skiplink' of={Skiplink} />
 
 # Skiplinks
 
@@ -12,13 +11,13 @@ import { Skiplink, SkiplinkItem, Callout, CalloutTitle, CalloutText } from '../.
 
 Gli elementi `SkiplinkItem` sono contraddistinti dalle classi:
 
-* `sr-only`: renderizzati solo per gli screen reader. Sempre applicato.
-* `sr-only-focusable`: renderizzati solo al focus. Controllato dall'attributo `focusable`.
+- `sr-only`: renderizzati solo per gli screen reader. Sempre applicato.
+- `sr-only-focusable`: renderizzati solo al focus. Controllato dall'attributo `focusable`.
 
 Per attivare la funzionalità si digita da tastiera il tasto: TAB.
 
 <Preview>
-    <Story id="componenti-skiplink--esempi" />
+  <Story id='componenti-skiplink--esempi' />
 </Preview>
 
 ## Argomenti componente

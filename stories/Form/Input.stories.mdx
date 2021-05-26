@@ -1,10 +1,17 @@
-import { ArgsTable, Meta, Canvas, Story, Preview } from "@storybook/addon-docs/blocks";
+import {
+  ArgsTable,
+  Meta,
+  Canvas,
+  Story,
+  Preview
+} from '@storybook/addon-docs/blocks';
 
-import { Input, Callout, CalloutText, CalloutTitle } from '../../src'
+import { Input, Callout, CalloutText, CalloutTitle } from '../../src';
 
-<Meta title="Documentazione/Form/Input" of={Input} />
+<Meta title='Documentazione/Form/Input' of={Input} />
 
 # Input
+
 ### Elementi e stili per la creazione di input accessibili e responsivi.
 
 ## Esempi di campi di input
@@ -14,7 +21,7 @@ Per il corretto funzionamento degli elementi di tipo `<input>`, è di fondamenta
 Per l’inserimento guidato di campi di tipo numerico si può anche utilizzare l’elemento dedicato che fornisce migliorie per la validazione e per l’esperienza complessiva, descritto alla pagina dedicata all’input numerico.
 
 <Canvas>
-    <Story id="componenti-form-input--esempi-di-campi-di-input"/>
+  <Story id='componenti-form-input--esempi-di-campi-di-input' />
 </Canvas>
 
 ## Utilizzo di placeholder e label
@@ -25,23 +32,28 @@ Si può abbinare all’etichetta un placeholder (testo di esempio) per ulteriore
 
 In caso di necessità, è anche possibile utilizzare un ulteriore contenuto testuale sotto il campo di testo, aggiungendo il testo nel modificatore `infoText`.
 
-<div className="docs">
-    <Callout color="warning" >
-        <CalloutTitle>Associazione del testo di aiuto con gli elementi del modulo form</CalloutTitle>
-        <CalloutText>
-            Il testo di aiuto deve essere esplicitamente associato agli elementi del mudulo form a cui si riferisce utilizzando l’attributo aria-describedby. Ciò garantirà che le tecnologie assistive, come gli screenreader, leggano questo testo di aiuto quando l’utente avrà il focus sull’elemento.
-        </CalloutText>
-    </Callout>
+<div className='docs'>
+  <Callout color='warning'>
+    <CalloutTitle>
+      Associazione del testo di aiuto con gli elementi del modulo form
+    </CalloutTitle>
+    <CalloutText>
+      Il testo di aiuto deve essere esplicitamente associato agli elementi del
+      mudulo form a cui si riferisce utilizzando l’attributo aria-describedby.
+      Ciò garantirà che le tecnologie assistive, come gli screenreader, leggano
+      questo testo di aiuto quando l’utente avrà il focus sull’elemento.
+    </CalloutText>
+  </Callout>
 </div>
 
 <Canvas>
-    <Story id="componenti-form-input--utilizzo-di-placeholder-e-label" />
+  <Story id='componenti-form-input--utilizzo-di-placeholder-e-label' />
 </Canvas>
 
 ## Input con icona o bottoni
 
 <Canvas>
-    <Story id="componenti-form-input--input-con-icona-o-bottoni" />
+  <Story id='componenti-form-input--input-con-icona-o-bottoni' />
 </Canvas>
 
 ## Input password
@@ -49,16 +61,17 @@ In caso di necessità, è anche possibile utilizzare un ulteriore contenuto test
 Per rendere più semplice l’inserimento della password, l’elemento è stato dotato di un visualizzatore dei caratteri digitati.
 
 <Canvas>
-    <Story id="componenti-form-input--input-password" />
+  <Story id='componenti-form-input--input-password' />
 </Canvas>
 
-<div className="docs">
-    <Callout color="warning" >
-        <CalloutTitle>Nota</CalloutTitle>
-        <CalloutText>
-            Al momento non è ancora disponibili la funzionalità di "password strength" in questo Design React Kit.
-        </CalloutText>
-    </Callout>
+<div className='docs'>
+  <Callout color='warning'>
+    <CalloutTitle>Nota</CalloutTitle>
+    <CalloutText>
+      Al momento non è ancora disponibili la funzionalità di "password strength"
+      in questo Design React Kit.
+    </CalloutText>
+  </Callout>
 </div>
 
 ## Disabilitato
@@ -66,7 +79,7 @@ Per rendere più semplice l’inserimento della password, l’elemento è stato 
 Aggiungi il modificatore `disabled` ad un componente Input per impedire la modifica del valore contenuto e non inviare i dati in esso contenuti.
 
 <Canvas>
-    <Story id="componenti-form-input--disabilitato" />
+  <Story id='componenti-form-input--disabilitato' />
 </Canvas>
 
 ## Readonly
@@ -74,7 +87,7 @@ Aggiungi il modificatore `disabled` ad un componente Input per impedire la modif
 Aggiungi il modificatore `readOnly` ad un input per impedire la modifica del valore contenuto.
 
 <Canvas>
-    <Story id="componenti-form-input--readonly" />
+  <Story id='componenti-form-input--readonly' />
 </Canvas>
 
 ### Readonly normalizzato
@@ -82,7 +95,7 @@ Aggiungi il modificatore `readOnly` ad un input per impedire la modifica del val
 Se per qualche motivo vuoi avere i componenti `<Input readOnly/>` nella forma stilizzata come testo normale usa il modificatore `normalized`.
 
 <Canvas>
-    <Story id="componenti-form-input--readonly-normalizzato" />
+  <Story id='componenti-form-input--readonly-normalizzato' />
 </Canvas>
 
 ## Input con risultato ricerca o autocompletamento
@@ -92,7 +105,7 @@ Se per qualche motivo vuoi avere i componenti `<Input readOnly/>` nella forma st
 Cerca una regione italiana per verificarne il comportamento.
 
 <Canvas>
-    <Story id="componenti-form-input--input-autocomplete-con-dati" />
+  <Story id='componenti-form-input--input-autocomplete-con-dati' />
 </Canvas>
 
 ## Area di testo
@@ -102,11 +115,11 @@ Per permettere agli utenti di inserire del testo (ad esempio per lasciare commen
 Includendo l’elemento all’interno di un .form-group, la label assumerà lo stesso comportamento dinamico dei campi di input.
 
 <Canvas>
-    <Story id="componenti-form-input--area-di-testo" />
+  <Story id='componenti-form-input--area-di-testo' />
 </Canvas>
 
 <Canvas>
-    <Story id="componenti-form-input--area-di-testo-con-segnaposto" />
+  <Story id='componenti-form-input--area-di-testo-con-segnaposto' />
 </Canvas>
 
 ## Argomenti componente
