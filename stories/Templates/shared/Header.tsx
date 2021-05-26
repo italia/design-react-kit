@@ -226,7 +226,7 @@ export class NavHeader extends Component<{ active: string } & Theme, State> {
                   );
                 })}
               </Nav>
-              <Nav navbar className='navbar-secondary'>
+              <Nav navbar secondary>
                 {[
                   { label: 'Argomento 1' },
                   { label: 'Argomento 2' },

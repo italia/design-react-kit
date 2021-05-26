@@ -223,7 +223,7 @@ const PopoverIconLink = () => {
         toggle={togglePopover}
       >
         <PopoverHeader>
-          <Icon color='white' icon='it-help-circle' aria-hidden />
+          <Icon icon='it-help-circle' aria-hidden />
           Titolo con icona
         </PopoverHeader>
         <PopoverBody>

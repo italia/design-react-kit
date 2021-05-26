@@ -11,10 +11,10 @@ import {
   HeaderBrand
 } from '../../../src';
 
-const CenterHeader = ({ theme, isSmall }) => {
+const CenterHeader = ({ type, theme, isSmall }) => {
   return (
-    <Header type='center' theme={theme} small={isSmall}>
-      <HeaderContent small={isSmall}>
+    <Header type={type} theme={theme} small={isSmall}>
+      <HeaderContent>
         <HeaderBrand iconName='it-code-circle'>
           <h2>Lorem Ipsum Lorem Ipsum</h2>
           <h3>Inserire qui la tag line</h3>
