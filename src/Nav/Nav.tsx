@@ -1,5 +1,6 @@
 import React, { FC, HTMLAttributes, ElementType } from 'react';
 import { Nav as NavBase } from 'reactstrap';
+import classNames from 'classnames';
 
 export interface NavProps extends HTMLAttributes<HTMLUListElement> {
   /**
@@ -28,12 +29,28 @@ export interface NavProps extends HTMLAttributes<HTMLUListElement> {
   horizontal?: 'center' | 'end';
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
+  /** Classi aggiuntive da usare per il componente Nav */
+  className?: string;
+  /** Adds ability to incorporate secondary nav items */
+  secondary?: boolean;
 }
 
 export const Nav: FC<NavProps> = ({
+  className,
   tag = 'ul',
   vertical = false,
+  secondary,
   ...attributes
 }) => {
-  return <NavBase tag={tag} vertical={vertical} {...attributes} />;
+  const classes = classNames(className, {
+    'navbar-secondary': secondary
+  });
+  return (
+    <NavBase
+      className={classes}
+      tag={tag}
+      vertical={vertical}
+      {...attributes}
+    />
+  );
 };

@@ -8,6 +8,7 @@ import {
 import {
   // Components to include
   Header,
+  Headers,
   HeaderContent,
   HeaderLinkZone,
   HeaderRightZone,
@@ -37,10 +38,6 @@ Lo _Slim header_ header mostra un’intestazione, solitamente con riferimento al
   <Story id='componenti-header--header-slim' />
 </Canvas>
 
-### Versione chiara
-
-Per cambiare tema all’header slim è sufficiente aggiungere il modificatore `theme="light"` al componente `Header` di tipo `slim`.
-
 ### Right action con bottone full responsive
 
 Per trasformare il bottone di action situato nella `HeaderRightZone` e renderlo full-responsive è sufficiente applicare la prop `size="full"` al link/bottone.
@@ -51,11 +48,71 @@ Il modificatore `"full"` è disponibile anche con il tema chiaro attivato da .th
   <Story id='componenti-header--slim-header-with-full-button' />
 </Canvas>
 
+### Versione chiara
+
+Per cambiare tema all’header slim è sufficiente aggiungere il modificatore `theme="light"` al componente `Header` di tipo `slim`.
+
+<Canvas>
+  <Story id='componenti-header--header-slim-light' />
+</Canvas>
+
+## Header Centrale
+
+<Canvas>
+  <Story id='componenti-header--header-center' />
+</Canvas>
+
+### Versione stretta
+
+<Canvas>
+  <Story id='componenti-header--header-center-narrow' />
+</Canvas>
+
+### Versione chiara
+
+<Canvas>
+  <Story id='componenti-header--header-center-narrow-light' />
+</Canvas>
+
+## Header Nav
+
+<Canvas>
+  <Story id='componenti-header--header-nav' />
+</Canvas>
+
+### Versione chiara
+
+<Canvas>
+  <Story id='componenti-header--header-nav-light' />
+</Canvas>
+
+### Navigazione secondaria
+
+<Canvas>
+  <Story id='componenti-header--header-nav-secondary' />
+</Canvas>
+
+## Header Completa
+
+<Canvas>
+  <Story id='componenti-header--header-complete' />
+</Canvas>
+
+### Versione chiara
+
+<Canvas>
+  <Story id='componenti-header--header-complete-light' />
+</Canvas>
+
 ## Argomenti componente
 
 ### Header
 
 <ArgsTable of={Header} />
+
+### Headers
+
+<ArgsTable of={Headers} />
 
 ### HeaderContent
 
