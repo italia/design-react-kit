@@ -1,25 +1,48 @@
-import { ArgsTable, Meta, Preview, Story } from "@storybook/addon-docs/blocks";
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
 import LinkTo from '@storybook/addon-links/react';
-import { Dropdown, Callout, CalloutTitle, CalloutText } from '../../src'
+import { Dropdown, Callout, CalloutTitle, CalloutText } from '../../src';
 
-<Meta title="Documentazione/Componenti/Dropdown" of={Dropdown}/>
+<Meta title='Documentazione/Componenti/Dropdown' of={Dropdown} />
 
 # Dropdown
 
 ## Attiva o disattiva overlay contestuali per visualizzare elenchi di link e altro ancora con questi menù a tendina.
 
-I dropdown possono essere attivati da elementi `<a>` o `<button>` per soddisfare al meglio le tue esigenze.
+I dropdown possono essere attivati da elementi <code>&lt;a&gt;</code> o <code>&lt;button&gt;</code> per soddisfare al meglio le tue esigenze.
 
-<div className="docs">
-    <Callout color="success" >
-        <CalloutTitle>Accessibilità</CalloutTitle>
-        <CalloutText>
-            <p>Lo standard <a href="https://www.w3.org/TR/wai-aria/" target="_blank noreferrer">WAI ARIA</a> definisce un widget <code>role="menu"</code>, che però è specifico per i menu applicativi che attivano azioni o funzioni. I menu ARIA possono contenere solo voci di menu, voci di menu di caselle di controllo, voci di menu dei pulsanti di opzione, gruppi di pulsanti di opzione e sottomenu.</p>
-            <p>I dropdown di Bootstrap, al contrario, sono progettati per essere generici e applicabili a una varietà di situazioni e strutture di markup. Ad esempio, è possibile creare elenchi a discesa contenenti input e controlli di moduli aggiuntivi, ad esempio campi di ricerca o moduli di accesso. Per questo motivo, Bootstrap non si aspetta (né aggiunge automaticamente) alcuno degli attributi di aria e di ruolo richiesti per i veri menu ARIA. Gli autori dovranno includere questi attributi più specifici.</p>
-            <p>
-            Tuttavia, Bootstrap aggiunge il supporto integrato per la maggior parte delle interazioni standard del menu della tastiera, come la possibilità di spostarsi tra i singoli elementi <code>LinkListItem</code> usando i tasti cursore e chiude il menu con il tasto ESC.</p>
-        </CalloutText>
-    </Callout>
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>Accessibilità</CalloutTitle>
+    <CalloutText>
+      <p>
+        Lo standard{' '}
+        <a href='https://www.w3.org/TR/wai-aria/' target='_blank noreferrer'>
+          WAI ARIA
+        </a>{' '}
+        definisce un widget <code>role="menu"</code>, che però è specifico per i
+        menu applicativi che attivano azioni o funzioni. I menu ARIA possono
+        contenere solo voci di menu, voci di menu di caselle di controllo, voci
+        di menu dei pulsanti di opzione, gruppi di pulsanti di opzione e
+        sottomenu.
+      </p>
+      <p>
+        I dropdown di Bootstrap, al contrario, sono progettati per essere
+        generici e applicabili a una varietà di situazioni e strutture di
+        markup. Ad esempio, è possibile creare elenchi a discesa contenenti
+        input e controlli di moduli aggiuntivi, ad esempio campi di ricerca o
+        moduli di accesso. Per questo motivo, Bootstrap non si aspetta (né
+        aggiunge automaticamente) alcuno degli attributi di aria e di ruolo
+        richiesti per i veri menu ARIA. Gli autori dovranno includere questi
+        attributi più specifici.
+      </p>
+      <p>
+        Tuttavia, Bootstrap aggiunge il supporto integrato per la maggior parte
+        delle interazioni standard del menu della tastiera, come la possibilità
+        di spostarsi tra i singoli elementi <code>LinkListItem</code> usando i
+        tasti cursore e chiude il menu con il tasto ESC.
+      </p>
+    </CalloutText>
+  </Callout>
 </div>
 
 ### Dropdown button
@@ -27,7 +50,7 @@ I dropdown possono essere attivati da elementi `<a>` o `<button>` per soddisfare
 Il componente `DropdownToggle` utilizza il componente `Button` internamente, quindi accetta i medesimi attributi. I link o le voci all’interno del dropdown devono essere contenute in un elemento `LinkList`.
 
 <Preview>
-    <Story id="componenti-dropdown--esempi" />
+  <Story id='componenti-dropdown--esempi' />
 </Preview>
 
 ### Dropdown button varianti
@@ -35,7 +58,7 @@ Il componente `DropdownToggle` utilizza il componente `Button` internamente, qui
 Ovviamente, funzionano anche <LinkTo kind="documentazione-componenti-bottoni--page#varianti-di-colore">tutte le varianti</LinkTo> già disponibili per i bottoni.
 
 <Preview>
-    <Story id="componenti-dropdown--variante-bottoni" />
+  <Story id='componenti-dropdown--variante-bottoni' />
 </Preview>
 
 #### Dropdown link
@@ -43,7 +66,7 @@ Ovviamente, funzionano anche <LinkTo kind="documentazione-componenti-bottoni--pa
 Si può utilizzare `DropdownToggle` anche con un anchor link:
 
 <Preview>
-    <Story id="componenti-dropdown--link" />
+  <Story id='componenti-dropdown--link' />
 </Preview>
 
 ### Dropdown menu
@@ -55,7 +78,7 @@ Le voci del menu che viene aperto al click sul bottone possono essere personaliz
 Aggiungere l'attributo `active` ai `LinkListItem` del dropdown che si vogliono mostrare come attivi. Per questioni di accessibilità è consigliabile aggiungere <span class="sr-only"> attivo</span> in coda al testo degli elementi attivi.
 
 <Preview>
-    <Story id="componenti-dropdown-dropdown-menu--menu-voci-attive" />
+  <Story id='componenti-dropdown-dropdown-menu--menu-voci-attive' />
 </Preview>
 
 #### Menu voci disabilitate
@@ -63,7 +86,7 @@ Aggiungere l'attributo `active` ai `LinkListItem` del dropdown che si vogliono m
 Aggiungere l'attributo `disabled` ai `LinkListItem` del dropdown che si vogliono mostrare come disabilitati. Includere anche la proprietà `aria-disabled="true"` per comunicare lo stato disabilitato agli utenti dotati di screen reader.
 
 <Preview>
-    <Story id="componenti-dropdown-dropdown-menu--menu-voci-disabilitate" />
+  <Story id='componenti-dropdown-dropdown-menu--menu-voci-disabilitate' />
 </Preview>
 
 #### Menu headers e separatori
@@ -71,7 +94,7 @@ Aggiungere l'attributo `disabled` ai `LinkListItem` del dropdown che si vogliono
 All’interno del menu dropdown possono essere inseriti header e separatori.
 
 <Preview>
-    <Story id="componenti-dropdown-dropdown-menu--menu-headers-e-separatori" />
+  <Story id='componenti-dropdown-dropdown-menu--menu-headers-e-separatori' />
 </Preview>
 
 #### Menu con voci large
@@ -79,7 +102,7 @@ All’interno del menu dropdown possono essere inseriti header e separatori.
 Per aumentare la dimensione dei link contenuti nel dropdown è sufficiente aggiungere agli stessi l'attributo `size='large'`.
 
 <Preview>
-    <Story id="componenti-dropdown-dropdown-menu--menu-con-voci-large" />
+  <Story id='componenti-dropdown-dropdown-menu--menu-con-voci-large' />
 </Preview>
 
 #### Menu full width
@@ -87,7 +110,7 @@ Per aumentare la dimensione dei link contenuti nel dropdown è sufficiente aggiu
 Per ottenere un dropdown menu largo quanto l’elemento che contiene il dropdown button è sufficiente aggiungere la classe`.full-width` al componente `DropdownMenu`. I link e testi contenuti al suo interno saranno disposti in orizzontale.
 
 <Preview>
-    <Story id="componenti-dropdown-dropdown-menu--menu-full-width" />
+  <Story id='componenti-dropdown-dropdown-menu--menu-full-width' />
 </Preview>
 
 #### Menu icona a destra
@@ -95,7 +118,7 @@ Per ottenere un dropdown menu largo quanto l’elemento che contiene il dropdown
 Ai `LinkListItem` contenuti nel menù può essere aggiunta un’icona illustrativa allineata a destra utilizzando le classi `.right-icon` sul componente `LinkListItem` e `.right` sul componente `Icon`.
 
 <Preview>
-    <Story id="componenti-dropdown-dropdown-menu--menu-icona-a-destra" />
+  <Story id='componenti-dropdown-dropdown-menu--menu-icona-a-destra' />
 </Preview>
 
 #### Menu icona a sinistra
@@ -103,7 +126,7 @@ Ai `LinkListItem` contenuti nel menù può essere aggiunta un’icona illustrati
 Ai `LinkListItem` contenuti nel menù può essere aggiunta un’icona illustrativa allineata a sinistra utilizzando le classi `.left-icon` sul componente `LinkListItem` e `.left` sul componente `Icon`.
 
 <Preview>
-    <Story id="componenti-dropdown-dropdown-menu--menu-icona-a-sinistra" />
+  <Story id='componenti-dropdown-dropdown-menu--menu-icona-a-sinistra' />
 </Preview>
 
 #### Menu dark
@@ -111,7 +134,7 @@ Ai `LinkListItem` contenuti nel menù può essere aggiunta un’icona illustrati
 Aggiungendo la classe `.dark` al componente `DropdownMenu` si ottiene una versione in negativo del menu, con link ed elementi interni declinati di conseguenza.
 
 <Preview>
-    <Story id="componenti-dropdown-dropdown-menu--menu-dark" />
+  <Story id='componenti-dropdown-dropdown-menu--menu-dark' />
 </Preview>
 
 ### Informazioni aggiuntive

@@ -1,22 +1,6 @@
 import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
-import { actions } from '@storybook/addon-actions';
 
-import {
-  Button,
-  Callout,
-  CalloutText,
-  CalloutTitle,
-  Form,
-  FormGroup,
-  FormFeedback,
-  FormText,
-  Col,
-  Row,
-  Input,
-  Label,
-  Select,
-  Toggle
-} from '../../src';
+import { Callout, CalloutText, CalloutTitle } from '../../src';
 
 <Meta title='Documentazione/Form/Introduzione' />
 
@@ -30,7 +14,7 @@ Bootstrap Italia applica automaticamente a tutti i form `display: block` e `widt
 
 ## Organizzazione dei campi
 
-Per raggruppare correttamente gli elementi di un modulo form è bene utilizzare la classe .form-group per ogni singolo blocco, in questo modo l’elemento input, l’etichetta, il testo di aiuto opzionale e la messaggistica di validazione otterranno lo stile grafico e le funzionalità predisposte per loro. Puoi usarlo con `<fieldset>`, `<div>` o qualsiasi altro elemento.
+Per raggruppare correttamente gli elementi di un modulo form è bene utilizzare la classe .form-group per ogni singolo blocco, in questo modo l’elemento input, l’etichetta, il testo di aiuto opzionale e la messaggistica di validazione otterranno lo stile grafico e le funzionalità predisposte per loro. Puoi usarlo con <code>&lt;fieldset&gt;</code>, <code>&lt;div&gt;</code>o qualsiasi altro elemento.
 
 ### Dimensionamento delle colonne
 
@@ -62,14 +46,13 @@ L’esempio seguente usa una delle utilità di flexbox per centrare verticalment
     <CalloutText>
       Le tecnologie assistive come gli screenreader avranno problemi con i tuoi
       moduli se non includi un’etichetta per ogni input. Per questi moduli in
-      linea, puoi nascondere le etichette usando la classe <code>.sr-only</code>.
-      Esistono altri metodi alternativi per fornire un’etichetta per le tecnologie
+      linea, puoi nascondere le etichette usando la classe <code>.sr-only</code>
+      .Esistono altri metodi alternativi per fornire un’etichetta per le tecnologie
       assistive, come l’attributo <code>aria-label</code>, <code>
         aria-labelledby
       </code> o <code>title</code>. Se nessuno di questi è presente, le tecnologie
-      assistive possono ricorrere all’uso dell’attributo <code>
-        placeholder
-      </code>, se presente, ma è sconsigliato.
+      assistive possono ricorrere all’uso dell’attributo
+      <code>placeholder</code>, se presente, ma è sconsigliato.
     </CalloutText>
   </Callout>
 </div>
@@ -84,7 +67,7 @@ Aggiungi l’attributo booleano `disabled` su un input per impedire le interazio
 
 ### Disabilitazione di un intero form
 
-Aggiungi l’attributo disabled al `<fieldset>` per disabilitare tutti gli elementi del form contenuti.
+Aggiungi l’attributo disabled al <code>&lt;fieldset&gt;</code> per disabilitare tutti gli elementi del form contenuti.
 
 <Canvas>
   <Story id='componenti-form-form-layout--form-disabilitato' />

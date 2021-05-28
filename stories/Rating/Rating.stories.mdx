@@ -1,7 +1,7 @@
-import { ArgsTable, Meta, Preview, Story } from "@storybook/addon-docs/blocks";
-import { Rating, Callout, CalloutTitle, CalloutText } from '../../src'
+import { ArgsTable, Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import { Rating, Callout, CalloutText } from '../../src';
 
-<Meta title="Documentazione/Componenti/Rating" of={Rating}/>
+<Meta title='Documentazione/Componenti/Rating' of={Rating} />
 
 # Rating
 
@@ -10,52 +10,63 @@ import { Rating, Callout, CalloutTitle, CalloutText } from '../../src'
 ### Esempio
 
 <Preview>
-    <Story id="componenti-rating--rating-base" />
+  <Story id='componenti-rating--rating-base' />
 </Preview>
 
 ### Con label
 
 Per visualizzare una label utilizzare l'attributo `legend` del componente `Rating`. In questo caso viene passato un nodo JSX all'attributo, che però accetta anche una struttura JSON (vedi documentazione).
 
-<div className="docs">
-    <Callout color="success" >
-        <CalloutText>
-            <p>L'attributo <code>&lt;legend&gt;</code> contiene testo aggiuntivo per Screen Reader all’interno di uno <code>&lt;span class="sr-only"&gt;</code>.<br/>
-            La label con il numero di stelle dev’essere contenuta in uno <code>&lt;span&gt;</code> semplice.</p>
-        </CalloutText>
-    </Callout>
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutText>
+      <p>
+        L'attributo <code>&lt;legend&gt;</code> contiene testo aggiuntivo per
+        Screen Reader all’interno di uno{' '}
+        <code>&lt;span class="sr-only"&gt;</code>.<br />
+        La label con il numero di stelle dev’essere contenuta in uno <code>
+          &lt;span&gt;
+        </code> semplice.
+      </p>
+    </CalloutText>
+  </Callout>
 </div>
 
 <Preview>
-    <Story id="componenti-rating--rating-con-label" />
+  <Story id='componenti-rating--rating-con-label' />
 </Preview>
 
 ### Sola lettura
 
 Aggiungendo l'attributo `readOnly` si ottiene un Rating non modificabile di sola lettura.
 
-<div className="docs">
-    <Callout color="success" >
-        <CalloutText>
-            <p>Per rendere accessibile il contenuto è necessario aggiungere l'attributo <code>&lt;legend&gt;</code> con classe <code>.sr-only</code>.</p>
-        </CalloutText>
-    </Callout>
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutText>
+      <p>
+        Per rendere accessibile il contenuto è necessario aggiungere l'attributo{' '}
+        <code>&lt;legend&gt;</code> con classe <code>.sr-only</code>.
+      </p>
+    </CalloutText>
+  </Callout>
 </div>
 
 <Preview>
-    <Story id="componenti-rating--rating-read-only" />
+  <Story id='componenti-rating--rating-read-only' />
 </Preview>
 
 I seguenti valori per l'attributo `legend` sono equivalenti:
 
-```json
-// JSON
-{ "content": "Valutazione 4 stelle su 5", "srOnly": true }
+```jsx
+<Rating legend={{ content: 'Valutazione 4 stelle su 5', srOnly: true }} />
 ```
 
+oppure
+
 ```jsx
-// JSX
-<legend className='sr-only'>Valutazione 4 stelle su 5</legend>;
+<Rating
+  legend={<legend className='sr-only'>Valutazione 4 stelle su 5</legend>}
+/>
 ```
 
 ## Argomenti componente
