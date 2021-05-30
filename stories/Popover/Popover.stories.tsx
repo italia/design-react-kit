@@ -48,21 +48,30 @@ const PopoverExample = () => {
 export const _Esempi = PopoverExample.bind({});
 
 const ElementiDisabilitatiComponent = () => {
+  const [popoverOpen, setPopoverOpen] = useState(false);
   const targetRef = useRef(null);
 
   return (
-    <div>
-      <Button color='primary' disabled innerRef={targetRef}>
-        Popover disabilitato
-      </Button>
-      <Popover placement='right' target={targetRef}>
+    <>
+      <span ref={targetRef}>
+        <Button color='primary' disabled style={{ pointerEvents: 'none' }}>
+          Popover disabilitato
+        </Button>
+      </span>
+      <Popover
+        placement='right'
+        target={targetRef}
+        trigger='hover'
+        toggle={() => setPopoverOpen(!popoverOpen)}
+        isOpen={popoverOpen}
+      >
         <PopoverHeader>Titolo del popover</PopoverHeader>
         <PopoverBody>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
           finibus augue.
         </PopoverBody>
       </Popover>
-    </div>
+    </>
   );
 };
 export const _ElementiDisabilitati = ElementiDisabilitatiComponent.bind({});
@@ -204,15 +213,7 @@ const PopoverIconLink = () => {
   };
   return (
     <div>
-      <Button
-        color='secondary'
-        data-container='body'
-        data-toggle='popover'
-        data-placement='right'
-        data-html='true'
-        innerRef={targetRef}
-        onClick={togglePopover}
-      >
+      <Button color='secondary' innerRef={targetRef} onClick={togglePopover}>
         Popover con icona e link
       </Button>
 
@@ -252,22 +253,13 @@ const PopoverHover = () => {
   };
   return (
     <div>
-      <Button
-        color='secondary'
-        data-container='body'
-        data-toggle='popover'
-        data-trigger='hover'
-        data-placement='right'
-        data-html='true'
-        innerRef={targetRef}
-        onMouseOver={() => setPopoverOpen(true)}
-        onMouseOut={() => setPopoverOpen(false)}
-      >
+      <Button color='secondary' innerRef={targetRef}>
         Apertura in Hover
       </Button>
 
       <Popover
         placement='right'
+        trigger='hover'
         target={targetRef}
         isOpen={popoverOpen}
         toggle={togglePopover}
@@ -295,13 +287,7 @@ const PopoverFocus = () => {
   };
   return (
     <div>
-      <Button
-        tabIndex={0}
-        color='danger'
-        data-toggle='popover'
-        data-trigger='focus'
-        innerRef={targetRef}
-      >
+      <Button tabIndex={0} color='danger' innerRef={targetRef}>
         Popover richiudibile
       </Button>
 
