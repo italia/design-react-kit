@@ -36,6 +36,7 @@ export const _Example = () => (
           <strong>Notification standard</strong>
         </p>
         <Notification
+          id='notifica-base'
           title='Titolo Notifica'
           style={NotificationStyle}
         ></Notification>
@@ -45,6 +46,7 @@ export const _Example = () => (
           <strong>Notification with icon</strong>
         </p>
         <Notification
+          id='notifica-base-con-icona'
           title='Titolo Notifica'
           withIcon
           style={NotificationStyle}
@@ -61,7 +63,11 @@ export const _NotificationWithMessage = () => (
         <p className='mb-4'>
           <strong>Notification standard</strong>
         </p>
-        <Notification title='Titolo Notifica' style={NotificationStyle}>
+        <Notification
+          title='Titolo Notifica'
+          style={NotificationStyle}
+          id='notifica-con-messaggio'
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor…
         </Notification>
@@ -75,6 +81,7 @@ export const _NotificationWithMessage = () => (
           title='Titolo Notifica'
           state='success'
           style={NotificationStyle}
+          id='notifica-con-messaggio-e-icona'
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor…
@@ -99,6 +106,7 @@ export const Dismissable = () => (
           title='Titolo Notifica'
           dismissable
           style={NotificationStyle}
+          id='notifica-base'
         />
       </div>
       <div className='col-12 col-md-6'>
@@ -111,6 +119,7 @@ export const Dismissable = () => (
           state='success'
           dismissable
           style={NotificationStyle}
+          id='notifica-avvenuto-con-successo'
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor…
@@ -133,6 +142,7 @@ export const States = () => {
             state='success'
             title='Titolo Notifica'
             style={NotificationStyle}
+            id='notifica-con-success-state'
           />
         </div>
         <div className='col-12 col-md-6'>
@@ -144,6 +154,7 @@ export const States = () => {
             state='error'
             title='Titolo Notifica'
             style={NotificationStyle}
+            id='notifica-con-error-state'
           />
         </div>
       </div>
@@ -157,6 +168,7 @@ export const States = () => {
             state='info'
             title='Titolo Notifica'
             style={NotificationStyle}
+            id='notifica-con-info-state'
           />
         </div>
         <div className='col-12 col-md-6' style={{ top: 45 }}>
@@ -168,6 +180,7 @@ export const States = () => {
             state='warning'
             title='Titolo Notifica'
             style={NotificationStyle}
+            id='notifica-con-warning-state'
           />
         </div>
       </div>
@@ -181,7 +194,7 @@ export const _RoundingOfCorners = () => {
       <div className='row mb-5'>
         <div
           className='col-12 col-md-6 mb-4 mb-md-0'
-          style={{ position: 'fixed' }}
+          style={{ position: 'absolute' }}
         >
           <p>
             <strong>Basic (rounding at 4 corners)</strong>
@@ -191,6 +204,7 @@ export const _RoundingOfCorners = () => {
             header='Titolo Notifica'
             state='success'
             style={NotificationStyle}
+            id='notifica-round-corners'
           />
         </div>
       </div>
@@ -205,6 +219,7 @@ export const _RoundingOfCorners = () => {
             state='success'
             fix='top'
             style={NotificationStyle}
+            id='notifica-round-corners-top'
           />
         </div>
         <p style={{ marginTop: '90px' }}>
@@ -217,6 +232,7 @@ export const _RoundingOfCorners = () => {
             state='success'
             fix='bottom'
             style={NotificationStyle}
+            id='notifica-round-corners-bottom'
           />
         </div>
         <p style={{ marginTop: '90px' }}>
@@ -229,6 +245,7 @@ export const _RoundingOfCorners = () => {
             state='success'
             fix='left'
             style={NotificationStyle}
+            id='notifica-round-corners-left'
           />
         </div>
         <p>
@@ -241,6 +258,7 @@ export const _RoundingOfCorners = () => {
             state='success'
             fix='right'
             style={NotificationStyle}
+            id='notifica-round-corners-right'
           />
         </div>
       </div>
@@ -256,7 +274,12 @@ export const DefaultLocation = () => {
   return (
     <div className='container test-desktop'>
       <div>
-        <Notification withIcon state='success' title='Titolo Notifica'>
+        <Notification
+          withIcon
+          state='success'
+          title='Titolo Notifica'
+          id='notifica'
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor…
         </Notification>
@@ -269,19 +292,43 @@ export const FixedPositions = () => {
   return (
     <div className='container test-desktop'>
       <div>
-        <Notification withIcon title='Top Fix' fix='top' state='success'>
+        <Notification
+          withIcon
+          title='Top Fix'
+          fix='top'
+          state='success'
+          id='notifica-fixed-top'
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor…
         </Notification>
       </div>
       <div>
-        <Notification withIcon title='Left Fix' fix='left' state='success' />
+        <Notification
+          withIcon
+          title='Left Fix'
+          fix='left'
+          state='success'
+          id='notifica-fixed-left'
+        />
       </div>
       <div>
-        <Notification withIcon title='Right Fix' fix='right' state='success' />
+        <Notification
+          withIcon
+          title='Right Fix'
+          fix='right'
+          state='success'
+          id='notifica-fixed-right'
+        />
       </div>
       <div>
-        <Notification withIcon title='Bottom Fix' fix='bottom' state='success'>
+        <Notification
+          withIcon
+          title='Bottom Fix'
+          fix='bottom'
+          state='success'
+          id='notifica-fixed-bottom'
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor…
         </Notification>

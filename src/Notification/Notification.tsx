@@ -1,10 +1,13 @@
 import React, { FC, HTMLAttributes, ReactChild, CSSProperties } from 'react';
-import { Toast, ToastHeader, ToastBody, Button } from 'reactstrap';
+import { Toast } from 'reactstrap';
+import { Button } from '../Button/Button';
 import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
 import { notifyDeprecation } from '../utils';
 
 export interface NotificationProps extends HTMLAttributes<HTMLElement> {
+  /** Id univoco da assegnare al titolo, necessario per motivi di accessibilità. */
+  id: string;
   /**
    * Il titolo della notifica. Utilizzare al suo posto "title".
    * @deprecated
@@ -56,6 +59,7 @@ function pickIcon(state: NotificationProps['state']) {
 const fixRegexp = /-fix$/;
 
 export const Notification: FC<NotificationProps> = ({
+  id,
   header,
   title = '',
   state,
@@ -80,24 +84,38 @@ export const Notification: FC<NotificationProps> = ({
   const notificationTitle = header || title;
   const fixPosition = (fix || '').replace(fixRegexp, '');
 
-  const wrapperClass = classNames('notification', {
+  const wrapperClass = classNames('notification', state, {
     [`${fixPosition}-fix`]: fixPosition,
     'with-icon': withIcon,
     dismissable: dismissable
   });
   const icon = pickIcon(state);
+
+  // Need to override some bootstrap toast styling here
+  const borderReset = ['top', 'bottom', 'right', 'left']
+    .filter((position) =>
+      fixPosition === 'left' ? position !== 'right' : position !== 'left'
+    )
+    .map(
+      (position) => `border${position[0].toUpperCase() + position.substring(1)}`
+    );
+
+  const customStyle = { ...style };
+  for (const borderPos of borderReset) {
+    customStyle[
+      borderPos as 'borderTop' | 'borderBottom' | 'borderLeft' | 'borderRight'
+    ] = 'none';
+  }
   return (
-    <Toast className={wrapperClass} style={style}>
-      <ToastHeader>
-        <h5>
-          {notificationTitle}
-          <Icon icon={icon} />
-        </h5>
-      </ToastHeader>
-      {children && <ToastBody {...attributes}>{children}</ToastBody>}
+    <Toast className={wrapperClass} style={customStyle} aria-labelledby={id}>
+      <h5 id={id}>
+        {notificationTitle}
+        {withIcon ? <Icon icon={icon} /> : null}
+      </h5>
+      {children ? <p {...attributes}>{children}</p> : null}
 
       {dismissable && (
-        <Button className='btn notification-close'>
+        <Button className='notification-close'>
           <Icon icon='it-close' />
           <span className='sr-only'>Chiudi notifica: {notificationTitle}</span>
         </Button>

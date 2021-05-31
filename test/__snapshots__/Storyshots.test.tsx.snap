@@ -9306,39 +9306,39 @@ exports[`Storyshots Componenti/Notification Default Location 1`] = `
   >
     <div>
       <div
-        className="notification with-icon toast fade"
+        aria-labelledby="notifica"
+        className="notification success with-icon toast fade"
         role="alert"
+        style={
+          Object {
+            "borderBottom": "none",
+            "borderRight": "none",
+            "borderTop": "none",
+          }
+        }
       >
-        <div
-          className="toast-header"
+        <h5
+          id="notifica"
         >
-          <strong
-            className="mr-auto"
+          Titolo Notifica
+          <svg
+            className="icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <h5>
-              Titolo Notifica
-              <svg
-                className="icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </h5>
-          </strong>
-        </div>
-        <div
-          className="toast-body"
-        >
+            <path
+              d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </h5>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-        </div>
+        </p>
       </div>
     </div>
   </div>
@@ -9374,10 +9374,14 @@ exports[`Storyshots Componenti/Notification Dismissable 1`] = `
           </strong>
         </p>
         <div
+          aria-labelledby="notifica-base"
           className="notification dismissable toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderRight": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -9385,34 +9389,14 @@ exports[`Storyshots Componenti/Notification Dismissable 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-base"
           >
-            <strong
-              className="mr-auto"
-            >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
+            Titolo Notifica
+          </h5>
           <button
             aria-label={null}
-            className="btn notification-close btn btn-secondary"
+            className="notification-close btn btn-"
             onClick={[Function]}
           >
             <svg
@@ -9449,10 +9433,14 @@ exports[`Storyshots Componenti/Notification Dismissable 1`] = `
           </strong>
         </p>
         <div
-          className="notification with-icon dismissable toast fade"
+          aria-labelledby="notifica-avvenuto-con-successo"
+          className="notification success with-icon dismissable toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderRight": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -9460,39 +9448,31 @@ exports[`Storyshots Componenti/Notification Dismissable 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-avvenuto-con-successo"
           >
-            <strong
-              className="mr-auto"
+            Titolo Notifica
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
-          <div
-            className="toast-body"
-          >
+              <path
+                d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </h5>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-          </div>
+          </p>
           <button
             aria-label={null}
-            className="btn notification-close btn btn-secondary"
+            className="notification-close btn btn-"
             onClick={[Function]}
           >
             <svg
@@ -9552,10 +9532,14 @@ exports[`Storyshots Componenti/Notification Example 1`] = `
           </strong>
         </p>
         <div
+          aria-labelledby="notifica-base"
           className="notification toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderRight": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -9563,31 +9547,11 @@ exports[`Storyshots Componenti/Notification Example 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-base"
           >
-            <strong
-              className="mr-auto"
-            >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
+            Titolo Notifica
+          </h5>
         </div>
       </div>
       <div
@@ -9601,10 +9565,14 @@ exports[`Storyshots Componenti/Notification Example 1`] = `
           </strong>
         </p>
         <div
+          aria-labelledby="notifica-base-con-icona"
           className="notification with-icon toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderRight": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -9612,31 +9580,25 @@ exports[`Storyshots Componenti/Notification Example 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-base-con-icona"
           >
-            <strong
-              className="mr-auto"
+            Titolo Notifica
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
+              <path
+                d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </h5>
         </div>
       </div>
     </div>
@@ -9661,140 +9623,144 @@ exports[`Storyshots Componenti/Notification Fixed Positions 1`] = `
   >
     <div>
       <div
-        className="notification top-fix with-icon toast fade"
+        aria-labelledby="notifica-fixed-top"
+        className="notification success top-fix with-icon toast fade"
         role="alert"
+        style={
+          Object {
+            "borderBottom": "none",
+            "borderRight": "none",
+            "borderTop": "none",
+          }
+        }
       >
-        <div
-          className="toast-header"
+        <h5
+          id="notifica-fixed-top"
         >
-          <strong
-            className="mr-auto"
+          Top Fix
+          <svg
+            className="icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <h5>
-              Top Fix
-              <svg
-                className="icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </h5>
-          </strong>
-        </div>
-        <div
-          className="toast-body"
-        >
+            <path
+              d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </h5>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-        </div>
+        </p>
       </div>
     </div>
     <div>
       <div
-        className="notification left-fix with-icon toast fade"
+        aria-labelledby="notifica-fixed-left"
+        className="notification success left-fix with-icon toast fade"
         role="alert"
+        style={
+          Object {
+            "borderBottom": "none",
+            "borderLeft": "none",
+            "borderTop": "none",
+          }
+        }
       >
-        <div
-          className="toast-header"
+        <h5
+          id="notifica-fixed-left"
         >
-          <strong
-            className="mr-auto"
+          Left Fix
+          <svg
+            className="icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <h5>
-              Left Fix
-              <svg
-                className="icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </h5>
-          </strong>
-        </div>
+            <path
+              d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </h5>
       </div>
     </div>
     <div>
       <div
-        className="notification right-fix with-icon toast fade"
+        aria-labelledby="notifica-fixed-right"
+        className="notification success right-fix with-icon toast fade"
         role="alert"
+        style={
+          Object {
+            "borderBottom": "none",
+            "borderRight": "none",
+            "borderTop": "none",
+          }
+        }
       >
-        <div
-          className="toast-header"
+        <h5
+          id="notifica-fixed-right"
         >
-          <strong
-            className="mr-auto"
+          Right Fix
+          <svg
+            className="icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <h5>
-              Right Fix
-              <svg
-                className="icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </h5>
-          </strong>
-        </div>
+            <path
+              d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </h5>
       </div>
     </div>
     <div>
       <div
-        className="notification bottom-fix with-icon toast fade"
+        aria-labelledby="notifica-fixed-bottom"
+        className="notification success bottom-fix with-icon toast fade"
         role="alert"
+        style={
+          Object {
+            "borderBottom": "none",
+            "borderRight": "none",
+            "borderTop": "none",
+          }
+        }
       >
-        <div
-          className="toast-header"
+        <h5
+          id="notifica-fixed-bottom"
         >
-          <strong
-            className="mr-auto"
+          Bottom Fix
+          <svg
+            className="icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <h5>
-              Bottom Fix
-              <svg
-                className="icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </h5>
-          </strong>
-        </div>
-        <div
-          className="toast-body"
-        >
+            <path
+              d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </h5>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-        </div>
+        </p>
       </div>
     </div>
   </div>
@@ -9830,10 +9796,14 @@ exports[`Storyshots Componenti/Notification Notification with message 1`] = `
           </strong>
         </p>
         <div
+          aria-labelledby="notifica-con-messaggio"
           className="notification toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderRight": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -9841,36 +9811,14 @@ exports[`Storyshots Componenti/Notification Notification with message 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-con-messaggio"
           >
-            <strong
-              className="mr-auto"
-            >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
-          <div
-            className="toast-body"
-          >
+            Titolo Notifica
+          </h5>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-          </div>
+          </p>
         </div>
       </div>
       <div
@@ -9884,10 +9832,14 @@ exports[`Storyshots Componenti/Notification Notification with message 1`] = `
           </strong>
         </p>
         <div
-          className="notification with-icon toast fade"
+          aria-labelledby="notifica-con-messaggio-e-icona"
+          className="notification success with-icon toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderRight": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -9895,36 +9847,28 @@ exports[`Storyshots Componenti/Notification Notification with message 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-con-messaggio-e-icona"
           >
-            <strong
-              className="mr-auto"
+            Titolo Notifica
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
-          <div
-            className="toast-body"
-          >
+              <path
+                d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </h5>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-          </div>
+          </p>
         </div>
       </div>
     </div>
@@ -9954,7 +9898,7 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
         className="col-12 col-md-6 mb-4 mb-md-0"
         style={
           Object {
-            "position": "fixed",
+            "position": "absolute",
           }
         }
       >
@@ -9964,10 +9908,14 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
           </strong>
         </p>
         <div
-          className="notification with-icon toast fade"
+          aria-labelledby="notifica-round-corners"
+          className="notification success with-icon toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderRight": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -9975,31 +9923,25 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-round-corners"
           >
-            <strong
-              className="mr-auto"
+            Titolo Notifica
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
+              <path
+                d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </h5>
         </div>
       </div>
     </div>
@@ -10028,10 +9970,14 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
         }
       >
         <div
-          className="notification top-fix with-icon toast fade"
+          aria-labelledby="notifica-round-corners-top"
+          className="notification success top-fix with-icon toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderRight": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -10039,31 +9985,25 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-round-corners-top"
           >
-            <strong
-              className="mr-auto"
+            Titolo Notifica
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
+              <path
+                d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </h5>
         </div>
       </div>
       <p
@@ -10087,10 +10027,14 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
         }
       >
         <div
-          className="notification bottom-fix with-icon toast fade"
+          aria-labelledby="notifica-round-corners-bottom"
+          className="notification success bottom-fix with-icon toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderRight": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -10098,31 +10042,25 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-round-corners-bottom"
           >
-            <strong
-              className="mr-auto"
+            Titolo Notifica
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
+              <path
+                d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </h5>
         </div>
       </div>
       <p
@@ -10145,10 +10083,14 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
         }
       >
         <div
-          className="notification left-fix with-icon toast fade"
+          aria-labelledby="notifica-round-corners-left"
+          className="notification success left-fix with-icon toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderLeft": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -10156,31 +10098,25 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-round-corners-left"
           >
-            <strong
-              className="mr-auto"
+            Titolo Notifica
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
+              <path
+                d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </h5>
         </div>
       </div>
       <p>
@@ -10197,10 +10133,14 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
         }
       >
         <div
-          className="notification right-fix with-icon toast fade"
+          aria-labelledby="notifica-round-corners-right"
+          className="notification success right-fix with-icon toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderRight": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -10208,31 +10148,25 @@ exports[`Storyshots Componenti/Notification Rounding of Corners 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-round-corners-right"
           >
-            <strong
-              className="mr-auto"
+            Titolo Notifica
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
+              <path
+                d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </h5>
         </div>
       </div>
     </div>
@@ -10267,10 +10201,14 @@ exports[`Storyshots Componenti/Notification States 1`] = `
           </strong>
         </p>
         <div
-          className="notification with-icon toast fade"
+          aria-labelledby="notifica-con-success-state"
+          className="notification success with-icon toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderRight": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -10278,31 +10216,25 @@ exports[`Storyshots Componenti/Notification States 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-con-success-state"
           >
-            <strong
-              className="mr-auto"
+            Titolo Notifica
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
+              <path
+                d="M17.1 7.9l.7.7-7.8 7.6-4.7-4.6.7-.7 4 3.9zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </h5>
         </div>
       </div>
       <div
@@ -10314,10 +10246,14 @@ exports[`Storyshots Componenti/Notification States 1`] = `
           </strong>
         </p>
         <div
-          className="notification with-icon toast fade"
+          aria-labelledby="notifica-con-error-state"
+          className="notification error with-icon toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderRight": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -10325,31 +10261,25 @@ exports[`Storyshots Componenti/Notification States 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-con-error-state"
           >
-            <strong
-              className="mr-auto"
+            Titolo Notifica
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M16.3 8.3L12.6 12l3.7 3.6-.7.7-3.7-3.6-3.6 3.6-.7-.7 3.6-3.6-3.6-3.7.7-.7 3.6 3.7 3.7-3.7zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
+              <path
+                d="M16.3 8.3L12.6 12l3.7 3.6-.7.7-3.7-3.6-3.6 3.6-.7-.7 3.6-3.6-3.6-3.7.7-.7 3.6 3.7 3.7-3.7zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </h5>
         </div>
       </div>
     </div>
@@ -10370,10 +10300,14 @@ exports[`Storyshots Componenti/Notification States 1`] = `
           </strong>
         </p>
         <div
-          className="notification with-icon toast fade"
+          aria-labelledby="notifica-con-info-state"
+          className="notification info with-icon toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderRight": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -10381,31 +10315,25 @@ exports[`Storyshots Componenti/Notification States 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-con-info-state"
           >
-            <strong
-              className="mr-auto"
+            Titolo Notifica
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
+              <path
+                d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 19a9 9 0 119-9 9 9 0 01-9 9zm-.7-15h1.5v2h-1.5zm0 3h1.5v9h-1.5z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </h5>
         </div>
       </div>
       <div
@@ -10422,10 +10350,14 @@ exports[`Storyshots Componenti/Notification States 1`] = `
           </strong>
         </p>
         <div
-          className="notification with-icon toast fade"
+          aria-labelledby="notifica-con-warning-state"
+          className="notification warning with-icon toast fade"
           role="alert"
           style={
             Object {
+              "borderBottom": "none",
+              "borderRight": "none",
+              "borderTop": "none",
               "bottom": "auto",
               "left": "auto",
               "right": "auto",
@@ -10433,31 +10365,25 @@ exports[`Storyshots Componenti/Notification States 1`] = `
             }
           }
         >
-          <div
-            className="toast-header"
+          <h5
+            id="notifica-con-warning-state"
           >
-            <strong
-              className="mr-auto"
+            Titolo Notifica
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <h5>
-                Titolo Notifica
-                <svg
-                  className="icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.5 14.2V5.7h1.2v8.5zm-.1 4.1h1.2v-1.8h-1.2zM22 7.9v8.3L16.1 22H7.9L2 16.2V7.9L7.9 2h8.2zm-1 .4L15.7 3H8.3L3 8.3v7.5L8.3 21h7.4l5.3-5.2z"
-                  />
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                </svg>
-              </h5>
-            </strong>
-          </div>
+              <path
+                d="M11.5 14.2V5.7h1.2v8.5zm-.1 4.1h1.2v-1.8h-1.2zM22 7.9v8.3L16.1 22H7.9L2 16.2V7.9L7.9 2h8.2zm-1 .4L15.7 3H8.3L3 8.3v7.5L8.3 21h7.4l5.3-5.2z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </h5>
         </div>
       </div>
     </div>
