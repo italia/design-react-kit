@@ -482,7 +482,7 @@ export const EsempioInterattivo_story_hidden = () => {
       >
         Mostra Notifica
       </Button>
-      <NotificationManager />
+      <NotificationManager containerId='esempio-base' />
     </div>
   );
 };
@@ -504,7 +504,7 @@ export const EsempioInterattivoAdvanced_story_hidden = () => {
       >
         Mostra Notifica con componente React
       </Button>
-      <NotificationManager />
+      <NotificationManager containerId='esempio-avanzato' />
     </div>
   );
 };
