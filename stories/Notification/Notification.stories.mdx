@@ -1,7 +1,14 @@
 import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
-import LinkTo from '@storybook/addon-links/react';
-import { Notification, NotificationManager, Callout, CalloutTitle, CalloutText, Table } from '../../src';
-import {NotifyFakeComponent_story_hidden, NotifyFakeOptionsComponent_story_hidden} from './Notification.stories'
+import {
+  NotificationManager,
+  Callout,
+  CalloutTitle,
+  CalloutText
+} from '../../src';
+import {
+  NotifyFakeComponent_story_hidden,
+  NotifyFakeOptionsComponent_story_hidden
+} from './Notification.stories';
 
 <Meta title='Documentazione/Componenti/Notifiche' />
 
@@ -18,13 +25,13 @@ Per lanciare una notifica invece necessario invocare la funzione `notify` che ac
 L'implementazione più minimale è la seguente:
 
 <Canvas>
-  <Story id='componenti-notification--esempio-interattivo-story-hidden'/>
+  <Story id='componenti-notification--esempio-interattivo-story-hidden' />
 </Canvas>
 
 Il messaggio può essere anche un componente React, come nel seguente esempio:
 
 <Canvas>
-  <Story id='componenti-notification--esempio-interattivo-advanced-story-hidden'/>
+  <Story id='componenti-notification--esempio-interattivo-advanced-story-hidden' />
 </Canvas>
 
 La durata di default di una notifica è 6 secondi (`6000 ms`), ma questa può essere cambiata tramite il parametro `duration`. Per rimuovere la chiusura automatica della notifica impostare il valore `duration=0`: in questo modo la notifica potrà essere chiusa solamente da un'azione dell'utente o da una chiamata programmatica di `notify.dismiss()`.
@@ -56,12 +63,13 @@ Il dettaglio del tipo `NotificationOptions` è riportato di seguito:
 
 <div className='docs'>
   <Callout color='warning'>
-    <CalloutTitle>
-      Componente statico per la documentazione
-    </CalloutTitle>
+    <CalloutTitle>Componente statico per la documentazione</CalloutTitle>
     <CalloutText>
       <p>
-        Di seguito verrà utilizzato un componente <code>NotificationDoc</code>, di tipo statico, creato appositamente per lo scopo di questa documentazione e <strong>che non deve essere utilizzato</strong> nel codice ai fini di produzione.
+        Di seguito verrà utilizzato un componente <code>NotificationDoc</code>,
+        di tipo statico, creato appositamente per lo scopo di questa
+        documentazione e <strong>che non deve essere utilizzato</strong> nel
+        codice ai fini di produzione.
       </p>
     </CalloutText>
   </Callout>
@@ -96,10 +104,10 @@ Le Notification Dismissable non vengono nascoste dopo un intervallo di tempo ma 
 
 Alle Notification possono essere stilizzate in modo da determinare lo stato modificando il colore delle icone e del bordo, mediante l'attributo `state`:
 
-* `"success"` - per messaggi di procedure andate a buon fine
-* `"error"` - per messaggi di errore
-* `"info"` - per info generiche
-* `"warning"` - per messaggi di precauzione
+- `"success"` - per messaggi di procedure andate a buon fine
+- `"error"` - per messaggi di errore
+- `"info"` - per info generiche
+- `"warning"` - per messaggi di precauzione
 
 <Canvas>
   <Story id='componenti-notification--states' />
@@ -111,7 +119,7 @@ La posizione predefinita della Notification è nella parte destra inferiore dell
 
 Utilizzando l'attributo `fix` con i valori elencati di seguito la Notification verrà posizionata a filo di uno dei margini indicati, modificando l’arrotondamento degli angoli di conseguenza.
 
-*N.B. queste classi non influenzano il posizionamento su device mobile, in questo caso la Notification è sempre a piede della finestra e ne occupa tutta la larghezza*
+_N.B. queste classi non influenzano il posizionamento su device mobile, in questo caso la Notification è sempre a piede della finestra e ne occupa tutta la larghezza_
 
 <Canvas>
   <Story id='componenti-notification--rounding-of-corners' />
