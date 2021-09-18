@@ -144,7 +144,12 @@ export { StepperNav } from './Stepper/StepperNav';
 export { StepperDots } from './Stepper/StepperDots';
 export { StepperContent } from './Stepper/StepperContent';
 export { Section } from './Section/Section';
-export { Notification } from './Notification/Notification';
+export {
+  NotificationManager,
+  notify,
+  createNotification,
+  NotificationId
+} from './Notification/index';
 
 // Types
 export type { AlertProps } from './Alert/Alert';
@@ -222,5 +227,9 @@ export type { StepperNavProps } from './Stepper/StepperNav';
 export type { StepperDotsProps } from './Stepper/StepperDots';
 export type { StepperContentProps } from './Stepper/StepperContent';
 export type { SectionProps } from './Section/Section';
-export type { NotificationProps } from './Notification/Notification';
 export type { SelectProps } from './Select/Select';
+export {
+  NotificationProps,
+  NotificationManagerProps,
+  NotificationOptions
+} from './Notification/index';

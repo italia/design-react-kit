@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/italia/design-react-kit/issues"
   },
-  "version": "3.4.0",
+  "version": "4.0.0",
   "license": "MIT",
   "module": "dist/design-react-kit.esm.js",
   "main": "dist/index.js",
@@ -56,7 +56,7 @@
     "storybook:deploy": "npx gh-pages -d storybook-static -m 'Update GitHub Pages [ci skip]'"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16.8.0"
   },
   "husky": {
     "hooks": {
@@ -117,7 +117,7 @@
   "dependencies": {
     "react-select": "^4.3.0",
     "react-stickup": "^1.12.0",
-    "react-toastify": "^7.0.3",
+    "react-toastify": "^7.0.4",
     "react-transition-group": "^4.4.1",
     "reactstrap": "^8.9.0",
     "webfontloader": "^1.6.28"
