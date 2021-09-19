@@ -15,6 +15,7 @@ export interface AlertProps extends HTMLAttributes<HTMLElement> {
   cssModule?: CSSModule;
   /** Le varianti di colore definite in Bootstrap Italia */
   color?: 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | string;
+  /** Quando abilitato mostra un'animazione di entrata ed uscita del componente Alert. Valore di default: true. */
   fade?: boolean;
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
