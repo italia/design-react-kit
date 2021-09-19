@@ -1,5 +1,11 @@
 import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
-import { Modal, ModalHeader, Callout, CalloutTitle, CalloutText } from '../../src';
+import {
+  Modal,
+  ModalHeader,
+  Callout,
+  CalloutTitle,
+  CalloutText
+} from '../../src';
 
 <Meta title='Documentazione/Componenti/Modale' component={Modal} />
 
@@ -13,12 +19,39 @@ Cliccando sulla parte che oscura la pagina (il cosiddetto `backdrop` della modal
     <CalloutTitle>Accessibilità</CalloutTitle>
     <CalloutText>
       <p>
-        Per tutti i componenti Modale viene automaticamente aggiunto l'attributo <code>role="dialog"</code> all'elemento contenitore. (<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_dialog_role" target="_blank" rel="noreferrer">maggiori info su MDN</a>).
-        </p>
-      <p>L’attributo <code>labelledby="..."</code> deve essere assegnato al componente <code>Modal</code> ed usare come valore l'ID del componente <code>ModalHeader</code>.(<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute" target="_blank" rel="noreferrer">maggiori info su MDN</a>)
+        Per tutti i componenti Modale viene automaticamente aggiunto l'attributo{' '}
+        <code>role="dialog"</code> all'elemento contenitore. (
+        <a
+          href='https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_dialog_role'
+          target='_blank'
+          rel='noreferrer'
+        >
+          maggiori info su MDN
+        </a>
+        ).
       </p>
       <p>
-        Approfondisci l’argomento sul sito delle <a href="https://www.w3.org/TR/wai-aria-practices/#dialog_modal"target="_blank" rel="noreferrer">WAI-ARIA Authoring Practices</a>.
+        L’attributo <code>labelledby="..."</code> deve essere assegnato al
+        componente <code>Modal</code> ed usare come valore l'ID del componente{' '}
+        <code>ModalHeader</code>.(
+        <a
+          href='https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute'
+          target='_blank'
+          rel='noreferrer'
+        >
+          maggiori info su MDN
+        </a>)
+      </p>
+      <p>
+        Approfondisci l’argomento sul sito delle{' '}
+        <a
+          href='https://www.w3.org/TR/wai-aria-practices/#dialog_modal'
+          target='_blank'
+          rel='noreferrer'
+        >
+          WAI-ARIA Authoring Practices
+        </a>
+        .
       </p>
     </CalloutText>
   </Callout>
@@ -29,7 +62,7 @@ Cliccando sulla parte che oscura la pagina (il cosiddetto `backdrop` della modal
 In basso un esempio di una modale statica, senza componente principale `Modal`. Sono inclusi l’intestazione, il corpo, e il footer della modale come mostrato di seguito.
 
 <Canvas>
-  <Story id='componenti-modal--esempio-base'/>
+  <Story id='componenti-modal--esempio-base' />
 </Canvas>
 
 È richiesta l’inclusione di intestazioni o elementi con funzione di chiusura della modale stessa.
@@ -65,7 +98,7 @@ All’interno della modale è possibile inserire elementi form. Di seguito una m
 
 ### Modale con Link List
 
-All’interno della modale è possibile inserire delle Liste di link. Per formattare correttamente il contenuto di questa modale, aggiungere l'attributo `withLinkList` al componente `Modal`. 
+All’interno della modale è possibile inserire delle Liste di link. Per formattare correttamente il contenuto di questa modale, aggiungere l'attributo `withLinkList` al componente `Modal`.
 
 <Canvas>
   <Story id='componenti-modal--modale-con-link-list' />
@@ -140,7 +173,9 @@ Le modali hanno due dimensioni opzionali, disponibili tramite l'attributo `size`
 ## Argomenti componente
 
 ### Modal
+
 <ArgsTable of={Modal} />
 
 ### ModalHeader
+
 <ArgsTable of={ModalHeader} />
