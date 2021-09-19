@@ -51,6 +51,8 @@ Legenda:
 - `Accordion`: nuovo attributo `iconLeft` da utilizzare per mostrare stato di apertura.
 - `Spinner`: nuovo attributo `label` da utilizzare per mostrare stato di caricamento ai dispositivi screen reader.
 - `SkipLinkItem`: nuovo attributo `focusable` per disabilitare il rendering on focus in casi specifici
+- `Modal`: nuovi attributi `withIcon`, `withLinkList` e `popConfirm` da utilizzato per diversi formati di modale.
+  - `ModalHeader`: nuovo attributo `icon` da utilizzare per mostrare una icona nel titolo del modale.
 
 ### Bug fixes
 
@@ -62,6 +64,8 @@ Riscritta interamente la documentazione del kit per essere più completa e per o
 
 ### Altri Cambiamenti importanti
 
+- È stato incrementata la versione minima di React supportata come peer-dependency a 16.8.0. 💥
+  - Verificare che la versione utilizzata nel progetto sia compatibile con la versione richiesta dal toolkit.
 - `Pager` l'attributo `size` è stato rimosso poichè non utilizzato nel kit Bootstrap Italia. 💥
   - Azioni richieste per vecchio comportamento: utilizzare l'attributo `className` del componente `Pager`.
 

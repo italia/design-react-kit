@@ -35,8 +35,6 @@ export {
   Popover,
   PopoverBody,
   PopoverHeader,
-  Modal,
-  ModalHeader,
   ModalBody,
   ModalFooter,
   Tooltip,
@@ -112,6 +110,8 @@ export { InputContainer } from './Input/InputContainer';
 export { TextArea } from './Input/TextArea';
 export { LinkList } from './LinkList/LinkList';
 export { LinkListItem } from './LinkList/LinkListItem';
+export { Modal } from './Modal/Modal';
+export { ModalHeader } from './Modal/ModalHeader';
 export { Nav } from './Nav/Nav';
 export { Pager } from './Pager/Pager';
 export { Rating } from './Rating/Rating';
@@ -196,6 +196,8 @@ export type { InputContainerProps } from './Input/InputContainer';
 export type { TextAreaProps } from './Input/TextArea';
 export type { LinkListProps } from './LinkList/LinkList';
 export type { LinkListItemProps } from './LinkList/LinkListItem';
+export type { ModalProps } from './Modal/Modal';
+export type { ModalHeaderProps } from './Modal/ModalHeader';
 export type { NavProps } from './Nav/Nav';
 export type { PagerProps } from './Pager/Pager';
 export type { RatingProps } from './Rating/Rating';

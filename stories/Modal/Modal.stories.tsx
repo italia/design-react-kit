@@ -15,24 +15,18 @@ import {
   PopoverBody,
   Container,
   Row,
-  Col
+  Col,
+  Label,
+  LinkListItem,
+  LinkList,
+  Icon
 } from '../../src';
 
 export default {
   title: 'Componenti/Modal'
 };
 
-export const BottoneDiChiusura = () => (
-  <div className='p-3'>
-    <button className='close position-absolute'>&times;</button>
-  </div>
-);
-
-BottoneDiChiusura.story = {
-  name: 'Bottone di chiusura'
-};
-
-export const _Esempi = () => (
+export const _EsempioBase = () => (
   <div>
     <div className='modal-content'>
       <ModalHeader>Titolo della modale</ModalHeader>
@@ -45,16 +39,20 @@ export const _Esempi = () => (
   </div>
 );
 
-export const ModaleBase = () => {
+export const ModaleBaseConBottoneChiusura = () => {
   const [isOpen, toggleModal] = useState(false);
 
   return (
     <div>
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
-        Lancia la demo della modale
+        Mostra modale con bottone di chiusura
       </Button>
-      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)}>
-        <ModalHeader toggle={() => toggleModal(!isOpen)}>
+      <Modal
+        isOpen={isOpen}
+        toggle={() => toggleModal(!isOpen)}
+        labelledBy='esempio2'
+      >
+        <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio2'>
           Titolo della modale
         </ModalHeader>
         <ModalBody>
@@ -73,7 +71,11 @@ export const ModaleBase = () => {
   );
 };
 
-export const ScrollDiContenutiLunghi = () => {
+ModaleBaseConBottoneChiusura.story = {
+  name: 'Esempio con bottone di chiusura'
+};
+
+export const ModaleBase = () => {
   const [isOpen, toggleModal] = useState(false);
 
   return (
@@ -81,8 +83,243 @@ export const ScrollDiContenutiLunghi = () => {
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
         Lancia la demo della modale
       </Button>
-      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)}>
-        <ModalHeader toggle={() => toggleModal(!isOpen)}>
+      <Modal
+        isOpen={isOpen}
+        toggle={() => toggleModal(!isOpen)}
+        labelledBy='esempio1'
+      >
+        <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio1'>
+          Titolo della modale
+        </ModalHeader>
+        <ModalBody>
+          <p>Woohoo, stai leggendo questo testo in una modale!</p>
+        </ModalBody>
+        <ModalFooter>
+          <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+            Salva modifiche
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  );
+};
+
+export const ModaleConIcona = () => {
+  const [isOpen, toggleModal] = useState(false);
+
+  return (
+    <div>
+      <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+        Lancia modale con icona
+      </Button>
+      <Modal
+        isOpen={isOpen}
+        toggle={() => toggleModal(!isOpen)}
+        withIcon
+        labelledBy='esempio3'
+      >
+        <ModalHeader icon='it-info-circle' id='esempio3'>
+          This is a notification message more long than usual
+        </ModalHeader>
+        <ModalBody>
+          <p>
+            In the various types of information modal dialog, only one button to
+            close dialog is provided.
+          </p>
+        </ModalBody>
+        <ModalFooter>
+          <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+            Ok
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  );
+};
+
+export const ModaleConFormInputs = () => {
+  const [isOpen, toggleModal] = useState(false);
+
+  return (
+    <div>
+      <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+        Lancia modale con form
+      </Button>
+      <Modal
+        isOpen={isOpen}
+        toggle={() => toggleModal(!isOpen)}
+        labelledBy='esempio4'
+      >
+        <ModalHeader id='esempio4'>Choose an item</ModalHeader>
+        <ModalBody>
+          <FormGroup check>
+            <Input name='gruppo1' type='radio' id='radio1' defaultChecked />
+            <Label check htmlFor='radio1'>
+              Opzione 1
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Input name='gruppo1' type='radio' id='radio2' />
+            <Label check htmlFor='radio2'>
+              Opzione 2
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Input name='gruppo1' type='radio' id='radio3' />
+            <Label check htmlFor='radio3'>
+              Opzione 3
+            </Label>
+          </FormGroup>
+        </ModalBody>
+        <ModalFooter>
+          <Button outline color='primary'>
+            Cancel
+          </Button>
+          <Button color='primary' onClick={() => toggleModal(!isOpen)} disabled>
+            Ok
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  );
+};
+
+export const ModaleConLinkList = () => {
+  const [isOpen, toggleModal] = useState(false);
+
+  return (
+    <div>
+      <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+        Lancia modale con LinkList
+      </Button>
+      <Modal
+        isOpen={isOpen}
+        toggle={() => toggleModal(!isOpen)}
+        withLinkList
+        labelledBy='esempio5'
+      >
+        <ModalHeader id='esempio5'>
+          <span>1.</span>Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt.
+        </ModalHeader>
+        <ModalBody>
+          <LinkList>
+            <LinkListItem className='icon-left'>
+              <Icon color='primary' icon='it-chevron-right' aria-hidden />
+              <span>Link list 1</span>
+            </LinkListItem>
+            <LinkListItem className='icon-left'>
+              <Icon color='primary' icon='it-chevron-right' aria-hidden />
+              <span>Link list 2</span>
+            </LinkListItem>
+            <LinkListItem className='icon-left'>
+              <Icon color='primary' icon='it-chevron-right' aria-hidden />
+              <span>Link list 3</span>
+            </LinkListItem>
+          </LinkList>
+        </ModalBody>
+        <ModalFooter>
+          <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+            Ok
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  );
+};
+
+export const ModalePopConfirm = () => {
+  const [isOpenBase, toggleBaseModal] = useState(false);
+  const [isOpenWithHeader, toggleModalWithHeader] = useState(false);
+
+  return (
+    <div>
+      <Button
+        color='primary'
+        onClick={() => toggleBaseModal(!isOpenBase)}
+        className='mr-3'
+      >
+        Lancia modale pop-confirm base
+      </Button>
+      <Button
+        color='primary'
+        onClick={() => toggleModalWithHeader(!isOpenWithHeader)}
+        className='mr-3'
+      >
+        Lancia modale pop-confirm con titolo
+      </Button>
+      <Modal
+        isOpen={isOpenBase}
+        toggle={() => toggleBaseModal(!isOpenBase)}
+        popConfirm
+      >
+        <ModalBody>
+          <p>Font Titillium 14px. Leading 21px.</p>
+        </ModalBody>
+        <ModalFooter>
+          <Button
+            color='primary'
+            onClick={() => toggleBaseModal(!isOpenBase)}
+            size='sm'
+          >
+            Action one
+          </Button>
+          <Button
+            color='secondary'
+            onClick={() => toggleBaseModal(!isOpenBase)}
+            size='sm'
+            outline
+          >
+            Action two
+          </Button>
+        </ModalFooter>
+      </Modal>
+      <Modal
+        isOpen={isOpenWithHeader}
+        toggle={() => toggleModalWithHeader(!isOpenWithHeader)}
+        popConfirm
+        labelledBy='esempio6'
+      >
+        <ModalHeader labelledBy='esempio6'>Popconfirm header</ModalHeader>
+        <ModalBody>
+          <p>Font Titillium 14px. Leading 21px.</p>
+        </ModalBody>
+        <ModalFooter>
+          <Button
+            color='primary'
+            onClick={() => toggleModalWithHeader(!isOpenWithHeader)}
+            size='sm'
+          >
+            Action one
+          </Button>
+          <Button
+            color='secondary'
+            onClick={() => toggleModalWithHeader(!isOpenWithHeader)}
+            size='sm'
+            outline
+          >
+            Action two
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  );
+};
+
+export const ScrollDiContenutiLunghi = () => {
+  const [isOpen, toggleModal] = useState(false);
+
+  return (
+    <div>
+      <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+        Lancia la demo della modale scrollabile
+      </Button>
+      <Modal
+        isOpen={isOpen}
+        toggle={() => toggleModal(!isOpen)}
+        labelledBy='esempio7'
+      >
+        <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio7'>
           Titolo della modale
         </ModalHeader>
         <ModalBody>
@@ -195,6 +432,95 @@ ScrollDiContenutiLunghi.story = {
   name: 'Scroll di contenuti lunghi'
 };
 
+export const ModaleConContenutoScrollabile = () => {
+  const [isOpen, toggleModal] = useState(false);
+
+  return (
+    <div>
+      <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+        Lancia modale con contenuto scrollabile
+      </Button>
+      <Modal
+        isOpen={isOpen}
+        toggle={() => toggleModal(!isOpen)}
+        scrollable
+        labelledBy='esempio8'
+      >
+        <ModalHeader id='esempio8'>dialog header</ModalHeader>
+        <ModalBody>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.{' '}
+          </p>
+        </ModalBody>
+        <ModalFooter>
+          <Button
+            color='primary'
+            outline
+            onClick={() => toggleModal(!isOpen)}
+            size='sm'
+          >
+            Cancel
+          </Button>
+          <Button
+            color='primary'
+            onClick={() => toggleModal(!isOpen)}
+            size='sm'
+          >
+            Action One
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  );
+};
+
 export const _CentraturaVerticale = () => {
   const [isOpen, toggleModal] = useState(false);
 
@@ -203,8 +529,13 @@ export const _CentraturaVerticale = () => {
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
         Lancia la demo della modale
       </Button>
-      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} centered>
-        <ModalHeader toggle={() => toggleModal(!isOpen)}>
+      <Modal
+        isOpen={isOpen}
+        toggle={() => toggleModal(!isOpen)}
+        centered
+        labelledBy='esempio9'
+      >
+        <ModalHeader toggle={() => toggleModal(!isOpen)} id='essempio9'>
           Titolo della modale
         </ModalHeader>
         <ModalBody>
@@ -226,6 +557,166 @@ _CentraturaVerticale.story = {
   name: 'Centratura verticale'
 };
 
+export const AllineamentoASinistra = () => {
+  const [isOpen, toggleModal] = useState(false);
+
+  return (
+    <div>
+      <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+        Lancia la demo della modale a sinistra
+      </Button>
+      <Modal
+        isOpen={isOpen}
+        toggle={() => toggleModal(!isOpen)}
+        align='left'
+        scrollable
+        labelledBy='esempio10'
+      >
+        <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio10'>
+          This is a notification message
+        </ModalHeader>
+        <ModalBody>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </ModalBody>
+        <ModalFooter>
+          <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+            Ok
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  );
+};
+
+export const AllineamentoADestra = () => {
+  const [isOpen, toggleModal] = useState(false);
+
+  return (
+    <div>
+      <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+        Lancia la demo della modale a destra
+      </Button>
+      <Modal
+        isOpen={isOpen}
+        toggle={() => toggleModal(!isOpen)}
+        align='right'
+        scrollable
+        labelledBy='esempio11'
+      >
+        <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio11'>
+          This is a notification message
+        </ModalHeader>
+        <ModalBody>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </ModalBody>
+        <ModalFooter>
+          <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+            Ok
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  );
+};
+
 export const RimuovereLanimazione = () => {
   const [isOpen, toggleModal] = useState(false);
 
@@ -234,8 +725,13 @@ export const RimuovereLanimazione = () => {
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
         Lancia la demo della modale
       </Button>
-      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} fade={false}>
-        <ModalHeader toggle={() => toggleModal(!isOpen)}>
+      <Modal
+        isOpen={isOpen}
+        toggle={() => toggleModal(!isOpen)}
+        fade={false}
+        labelledBy='esempio12'
+      >
+        <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio12'>
           Titolo della modale
         </ModalHeader>
         <ModalBody>
@@ -284,8 +780,13 @@ export const _Dimensioni = () => {
           Modale piccola
         </Button>
       </div>
-      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} size={size}>
-        <ModalHeader toggle={() => toggleModal(!isOpen)}>
+      <Modal
+        isOpen={isOpen}
+        toggle={() => toggleModal(!isOpen)}
+        size={size}
+        labelledBy='esempio13'
+      >
+        <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio13'>
           Titolo della modale
         </ModalHeader>
         <ModalBody>
@@ -340,8 +841,10 @@ export const ContenutoDellaModaleVariabile = () => {
         </Button>
       </div>
 
-      <Modal fade centered isOpen={open} toggle={toggle}>
-        <ModalHeader toggle={toggle}>New message for {username}</ModalHeader>
+      <Modal fade centered isOpen={open} toggle={toggle} labelledBy='esempio14'>
+        <ModalHeader toggle={toggle} id='esempio14'>
+          New message for {username}
+        </ModalHeader>
         <ModalBody>
           <form>
             <FormGroup>
