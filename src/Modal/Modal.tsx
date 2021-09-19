@@ -4,9 +4,11 @@ import classnames from 'classnames';
 
 export interface ModalProps extends HTMLAttributes<HTMLElement> {
   [key: string]: any;
+  /** Indica lo stato del modale. Valore di default: undefined. */
   isOpen?: boolean;
   autoFocus?: boolean;
   size?: string;
+  /** Funzione da chiamare quando l'utente clicca sul backdrop. Valore di default: undefined. */
   toggle?: React.KeyboardEventHandler<any> | React.MouseEventHandler<any>;
   keyboard?: boolean;
   backdrop?: boolean | 'static';

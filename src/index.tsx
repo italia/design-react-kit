@@ -35,8 +35,6 @@ export {
   Popover,
   PopoverBody,
   PopoverHeader,
-  ModalBody,
-  ModalFooter,
   Tooltip,
   Table,
   ListGroup,
@@ -112,6 +110,8 @@ export { LinkList } from './LinkList/LinkList';
 export { LinkListItem } from './LinkList/LinkListItem';
 export { Modal } from './Modal/Modal';
 export { ModalHeader } from './Modal/ModalHeader';
+export { ModalBody } from './Modal/ModalBody';
+export { ModalFooter } from './Modal/ModalFooter';
 export { Nav } from './Nav/Nav';
 export { Pager } from './Pager/Pager';
 export { Rating } from './Rating/Rating';
@@ -198,6 +198,8 @@ export type { LinkListProps } from './LinkList/LinkList';
 export type { LinkListItemProps } from './LinkList/LinkListItem';
 export type { ModalProps } from './Modal/Modal';
 export type { ModalHeaderProps } from './Modal/ModalHeader';
+export type { ModalBodyProps } from './Modal/ModalBody';
+export type { ModalFooterProps } from './Modal/ModalFooter';
 export type { NavProps } from './Nav/Nav';
 export type { PagerProps } from './Pager/Pager';
 export type { RatingProps } from './Rating/Rating';
@@ -235,3 +237,68 @@ export {
   NotificationManagerProps,
   NotificationOptions
 } from './Notification/index';
+
+export type {
+  ContainerProps,
+  RowProps,
+  ColProps,
+  NavbarProps,
+  NavbarBrandProps,
+  NavbarTogglerProps,
+  NavItemProps,
+  NavLinkProps,
+  BreadcrumbProps,
+  BreadcrumbItemProps,
+  ButtonDropdownProps,
+  ButtonGroupProps,
+  ButtonToolbarProps,
+  DropdownProps,
+  DropdownItemProps,
+  DropdownMenuProps,
+  DropdownToggleProps,
+  FadeProps,
+  CardLinkProps,
+  CardGroupProps,
+  CardDeckProps,
+  CardColumnsProps,
+  CardFooterProps,
+  CardHeaderProps,
+  CardImgProps,
+  CardImgOverlayProps,
+  CarouselProps,
+  UncontrolledCarouselProps,
+  CarouselControlProps,
+  CarouselItemProps,
+  CarouselIndicatorsProps,
+  CarouselCaptionProps,
+  CardSubtitleProps,
+  PopoverProps,
+  PopoverBodyProps,
+  PopoverHeaderProps,
+  TooltipProps,
+  TableProps,
+  ListGroupProps,
+  FormProps,
+  FormFeedbackProps,
+  FormGroupProps,
+  FormTextProps,
+  InputGroupProps,
+  InputGroupAddonProps,
+  InputGroupButtonDropdownProps,
+  InputGroupTextProps,
+  LabelProps,
+  MediaProps,
+  PaginationItem as PagerItemProps,
+  PaginationLink as PagerLinkProps,
+  TabContentProps,
+  TabPaneProps,
+  JumbotronProps,
+  ListGroupItemProps,
+  ListGroupItemTextProps,
+  ListGroupItemHeadingProps,
+  UncontrolledAlertProps,
+  UncontrolledButtonDropdownProps,
+  UncontrolledCollapseProps,
+  UncontrolledDropdownProps,
+  UncontrolledTooltipProps
+} from 'reactstrap';
