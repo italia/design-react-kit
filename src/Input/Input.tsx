@@ -140,7 +140,7 @@ export class Input extends React.Component<InputProps, InputState> {
       size,
       ...attributes
     } = this.props;
-    let { bsSize, valid, invalid } = this.props;
+    let { bsSize, valid, invalid, ...rest } = attributes;
 
     const Tag = getTag({ tag, plaintext, staticInput, type });
     const formControlClass = getFormControlClass(
@@ -254,7 +254,7 @@ export class Input extends React.Component<InputProps, InputState> {
       return (
         <InputContainer {...containerProps}>
           <Tag
-            {...attributes}
+            {...rest}
             {...extraAttributes}
             {...sharedAttributes}
             className={inputClasses}
@@ -268,7 +268,7 @@ export class Input extends React.Component<InputProps, InputState> {
       return (
         <InputContainer {...containerProps}>
           <Tag
-            {...attributes}
+            {...rest}
             {...extraAttributes}
             {...sharedAttributes}
             type={this.state.hidden ? 'password' : 'text'}
@@ -290,7 +290,7 @@ export class Input extends React.Component<InputProps, InputState> {
       return (
         <InputContainer {...containerProps}>
           <Tag
-            {...attributes}
+            {...rest}
             {...extraAttributes}
             {...sharedAttributes}
             className={inputClasses}
@@ -303,7 +303,7 @@ export class Input extends React.Component<InputProps, InputState> {
       return (
         <InputContainer {...containerProps}>
           <Tag
-            {...attributes}
+            {...rest}
             {...extraAttributes}
             {...sharedAttributes}
             className={inputClasses}
@@ -314,7 +314,7 @@ export class Input extends React.Component<InputProps, InputState> {
 
     return (
       <Tag
-        {...attributes}
+        {...rest}
         {...extraAttributes}
         ref={innerRef}
         className={inputClasses}
