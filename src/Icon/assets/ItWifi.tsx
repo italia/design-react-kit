@@ -1,5 +1,5 @@
 import * as React from 'react';
-export const SvgItWifi = (props: React.SVGProps<SVGSVGElement>) => {
+export const component = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' {...props}>
       <path d='M22 19h-1c0-8.8-7.2-16-16-16V2c9.4 0 17 7.6 17 17z' />

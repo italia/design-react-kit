@@ -21,13 +21,13 @@
   },
   "version": "4.0.0",
   "license": "MIT",
-  "module": "dist/design-react-kit.esm.js",
+  "module": "dist/esm/index.js",
   "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "typings": "dist/cjs-dev/index.d.ts",
   "exports": {
     "require": "./dist/index.js",
-    "import": "./dist/design-react-kit.esm.js",
-    "default": "./dist/design-react-kit.esm.js"
+    "import": "./dist/esm/index.js",
+    "default": "./dist/esm/index.js"
   },
   "files": [
     "dist",
@@ -42,12 +42,12 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "svg:import": "svgr -d src/Icon/assets node_modules/bootstrap-italia/src/svg && echo \"\" >> src/Icon/assets/index.tsx",
+    "svg:import": "svgr -d src/Icon/assets node_modules/bootstrap-italia/src/svg && echo \"\" >> src/Icon/assets/index.tsx && npx eslint src/Icon/assets/index.tsx --fix",
     "prebuild": "npm run svg:import",
-    "build": "tsdx build --format cjs,esm,umd",
+    "build": "tsdx build --format cjs,esm",
     "test": "tsdx test --passWithNoTests --coverage --maxWorkers=50%",
     "lint": "npx eslint src stories test --ext js,ts,tsx,jsx,mdx",
-    "prepare": "tsdx build --format cjs,esm,umd",
+    "prepare": "tsdx build --format cjs,esm",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "prestorybook": "npm run svg:import",
@@ -65,12 +65,12 @@
   },
   "size-limit": [
     {
-      "path": "dist/design-react-kit.cjs.production.min.js",
-      "limit": "500 KB"
+      "path": "dist/cjs/index.js",
+      "limit": "200 KB"
     },
     {
-      "path": "dist/design-react-kit.esm.js",
-      "limit": "500 KB"
+      "path": "dist/esm/index.js",
+      "limit": "200 KB"
     }
   ],
   "devDependencies": {

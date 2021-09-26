@@ -10,7 +10,7 @@ function defaultTemplate(
   const typeScriptTpl = template.smart({ plugins });
   return typeScriptTpl.ast`${imports}
     ${interfaces}
-  export const ${componentName} = (${props}) => {
+  export const component = (${props}) => {
     return ${jsx};
   };
     `;

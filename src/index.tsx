@@ -102,7 +102,7 @@ export { HeaderSearch } from './Header/HeaderSearch';
 export { HeaderSocialsZone } from './Header/HeaderSocialsZone';
 export { HeaderToggler } from './Header/HeaderToggler';
 export { Hero } from './Hero/Hero';
-export { Icon, iconsList as icons } from './Icon/Icon';
+export { Icon, iconsList as icons, preloadIcons } from './Icon/Icon';
 export { Input } from './Input/Input';
 export { InputContainer } from './Input/InputContainer';
 export { TextArea } from './Input/TextArea';
@@ -190,7 +190,7 @@ export type { HeaderSearchProps } from './Header/HeaderSearch';
 export type { HeaderSocialsZoneProps } from './Header/HeaderSocialsZone';
 export type { HeaderTogglerProps } from './Header/HeaderToggler';
 export type { HeroProps } from './Hero/Hero';
-export type { IconProps } from './Icon/Icon';
+export type { IconProps, IconName } from './Icon/Icon';
 export type { InputProps } from './Input/Input';
 export type { InputContainerProps } from './Input/InputContainer';
 export type { TextAreaProps } from './Input/TextArea';
@@ -265,12 +265,6 @@ export type {
   CardHeaderProps,
   CardImgProps,
   CardImgOverlayProps,
-  CarouselProps,
-  UncontrolledCarouselProps,
-  CarouselControlProps,
-  CarouselItemProps,
-  CarouselIndicatorsProps,
-  CarouselCaptionProps,
   CardSubtitleProps,
   PopoverProps,
   PopoverBodyProps,

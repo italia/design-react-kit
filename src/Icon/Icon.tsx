@@ -1,25 +1,40 @@
-import React, { FC, SVGProps } from 'react';
+import React, {
+  FC,
+  ImgHTMLAttributes,
+  SVGProps,
+  useEffect,
+  useState
+} from 'react';
 import classNames from 'classnames';
-import * as Svgs from './assets';
+import {
+  isBundledIcon,
+  iconsCache,
+  loadIcon,
+  allIcons,
+  IconName
+} from './assets';
 import { EmptyIcon } from './EmptyIcon';
+export type { IconName } from './assets';
 
-const kebabCase = (string: string): string =>
-  string
-    .replace(/([a-z])([A-Z])/g, '$1-$2')
-    .replace(/\s+/g, '-')
-    .toLowerCase()
-    // remove svg- prefix to all icons
-    .substring(4);
-
-// Icons are stored with names in PascalCase, but icon names are in kebab-case
-// Here's the remap of the icons from PascalCase to kebab-case
-const icons = Object.keys(Svgs).reduce((memo, pascalName) => {
-  // @ts-ignore
-  memo[kebabCase(pascalName)] = Svgs[pascalName];
-  return memo;
-}, {} as Record<string, FC<SVGProps<SVGSVGElement>>>);
-
-export const iconsList = Object.keys(icons);
+export const iconsList = allIcons;
+/**
+ * Preload a list of icons in cache
+ * @param icons - the list of icons to preload
+ * @returns the list of the preloaded icons
+ */
+export async function preloadIcons(icons: IconName[]) {
+  const filteredIcons = icons.filter(isBundledIcon);
+  const preloadedIcons = await Promise.all(
+    filteredIcons.map((icon) => loadIcon(icon))
+  );
+  preloadedIcons.forEach(({ component }, i) => {
+    iconsCache[filteredIcons[i]] = ((() => component) as unknown) as FC<
+      SVGProps<SVGSVGElement>
+    >;
+  });
+  // return the list of the preloaded icons
+  return filteredIcons;
+}
 
 export interface IconProps extends SVGProps<SVGSVGElement> {
   /** Classi aggiuntive da usare per il componente Badge */
@@ -42,18 +57,41 @@ export const Icon: FC<IconProps> = ({
   padding = false,
   ...attributes
 }) => {
+  const [IconComponent, setCurrentIcon] = useState<FC<SVGProps<SVGSVGElement>>>(
+    iconsCache[icon]
+  );
   const classes = classNames('icon', className, {
     [`icon-${color}`]: color,
     [`icon-${size}`]: size,
     'icon-padded': padding
   });
-  if (!icons[icon]) {
-    console.error(
-      `Icon "${icon}" not found. Check on https://rb.gy/lcdkyi for the full icon list.`
+
+  useEffect(() => {
+    if (isBundledIcon(icon) && !iconsCache[icon]) {
+      loadIcon(icon).then(({ component }) => {
+        iconsCache[icon] = ((() => component) as unknown) as FC<
+          SVGProps<SVGSVGElement>
+        >;
+        setCurrentIcon(iconsCache[icon]);
+      });
+    }
+  }, [icon]);
+
+  if (!isBundledIcon(icon)) {
+    // assume it's an image and let the browser do its job
+    return (
+      // eslint-disable-next-line jsx-a11y/alt-text
+      <img
+        src={icon}
+        className={classes}
+        {...(attributes as ImgHTMLAttributes<HTMLImageElement>)}
+      />
     );
-    return <EmptyIcon className={classes} {...attributes} />;
   }
 
-  const IconComponent = icons[icon];
+  if (!IconComponent) {
+    return <EmptyIcon className={classes} role='img' {...attributes} />;
+  }
+
   return <IconComponent className={classes} role='img' {...attributes} />;
 };

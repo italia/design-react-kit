@@ -1,5 +1,5 @@
 import * as React from 'react';
-export const SvgItTelephone = (props: React.SVGProps<SVGSVGElement>) => {
+export const component = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' {...props}>
       <path d='M5 3h.18M20 11.56A7.59 7.59 0 0012.48 4h-.06a.49.49 0 00-.49.48.5.5 0 00.49.51A6.61 6.61 0 0119 11.62a.51.51 0 00.54.46.49.49 0 00.45-.46s.01-.04.01-.06z' />
