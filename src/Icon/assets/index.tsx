@@ -1,5 +1,3 @@
-import { FC, SVGProps } from 'react';
-
 const iconList: Record<string, boolean> = {
   'it-arrow-down-circle': true,
   'it-arrow-down-triangle': true,
@@ -125,8 +123,6 @@ const iconList: Record<string, boolean> = {
   'it-zoom-out': true
 };
 export type IconName = keyof typeof iconList;
-
-export const iconsCache: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {};
 
 export const loadIcon = (name: IconName) => {
   switch (name) {

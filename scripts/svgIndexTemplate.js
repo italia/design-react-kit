@@ -20,14 +20,10 @@ function defaultIndexTemplate(filePaths) {
     }`);
   }
   const file = `
-import { FC, SVGProps } from 'react';
-
 const iconList: Record<string, boolean> = {
   ${iconsMap.map((name) => `  "${name}": true,`).join('\n')}
 };
 export type IconName = keyof typeof iconList;
-
-export const iconsCache: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {};
 
 export const loadIcon = (
   name: IconName

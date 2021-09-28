@@ -2,7 +2,9 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
-import { StepperHeaderElement } from '../src';
+import { preloadIcons, StepperHeaderElement } from '../src';
+
+beforeAll(() => preloadIcons(['it-tool']));
 
 // Test for breaking changes
 test('Should support old variant "steppers-index" prop value as @deprecated', () => {

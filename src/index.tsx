@@ -102,7 +102,12 @@ export { HeaderSearch } from './Header/HeaderSearch';
 export { HeaderSocialsZone } from './Header/HeaderSocialsZone';
 export { HeaderToggler } from './Header/HeaderToggler';
 export { Hero } from './Hero/Hero';
-export { Icon, iconsList as icons, preloadIcons } from './Icon/Icon';
+export {
+  Icon,
+  iconsList as icons,
+  preloadIcons,
+  clearIconCache
+} from './Icon/Icon';
 export { Input } from './Input/Input';
 export { InputContainer } from './Input/InputContainer';
 export { TextArea } from './Input/TextArea';
