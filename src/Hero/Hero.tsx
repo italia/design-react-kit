@@ -20,9 +20,10 @@ export const Hero: FC<HeroProps> = ({
   centered,
   overlay,
   overlap,
+  className,
   ...attributes
 }) => {
-  const classes = classname('it-hero-wrapper', {
+  const classes = classname('it-hero-wrapper', className, {
     'it-overlay': overlay,
     ['it-' + overlay]: overlay,
     'it-hero-small-size': small,

@@ -7678,6 +7678,532 @@ exports[`Storyshots Componenti/Form/Toggles Toggles Disabilitate 1`] = `
 </div>
 `;
 
+exports[`Storyshots Componenti/Hero Hero Con Sfondo 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="it-hero-wrapper"
+  >
+    <div
+      className="img-responsive-wrapper"
+    >
+      <div
+        className="img-responsive"
+      >
+        <div
+          className="img-wrapper"
+        >
+          <img
+            alt="imagealt"
+            src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg"
+            title="image title"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Hero Hero Con Sfondo Margine Negativo 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="it-hero-wrapper it-bottom-overlapping-content"
+  >
+    <div
+      className="img-responsive-wrapper"
+    >
+      <div
+        className="img-responsive"
+      >
+        <div
+          className="img-wrapper"
+        >
+          <img
+            alt="imagealt"
+            src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg"
+            title="image title"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col"
+        >
+          <div
+            className="it-hero-text-wrapper bg-dark"
+          >
+            <span
+              className="it-category"
+            >
+              Category
+            </span>
+            <h1
+              className="no_toc"
+            >
+              Heading lorem ipsum dolor sit amet, consetetur sadipscing.
+            </h1>
+            <p
+              className="d-none d-lg-block"
+            >
+              Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+            </p>
+            <div
+              className="it-btn-container"
+            >
+              <button
+                aria-label={null}
+                className="btn btn-secondary btn-sm"
+                onClick={[Function]}
+              >
+                Label button
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <div
+          className="card-wrapper"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="card-body"
+            >
+              <h5
+                className="big-heading card-title"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+              </h5>
+              <p
+                className="card-text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <span
+                className="card-signature"
+              >
+                di Federico De Paolis
+              </span>
+              <a
+                className="read-more"
+              >
+                <span
+                  className="text"
+                >
+                  Leggi di più
+                </span>
+                <svg
+                  className="icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Hero Hero Con Sfondo Overlay Filtro 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="it-hero-wrapper it-overlay it-filter"
+  >
+    <div
+      className="img-responsive-wrapper"
+    >
+      <div
+        className="img-responsive"
+      >
+        <div
+          className="img-wrapper"
+        >
+          <img
+            alt="imagealt"
+            src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg"
+            title="image title"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Hero Hero Con Sfondo Small 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="it-hero-wrapper it-hero-small-size"
+  >
+    <div
+      className="img-responsive-wrapper"
+    >
+      <div
+        className="img-responsive"
+      >
+        <div
+          className="img-wrapper"
+        >
+          <img
+            alt="imagealt"
+            src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg"
+            title="image title"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Hero Hero Con Testo 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="it-hero-wrapper"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col"
+        >
+          <div
+            className="it-hero-text-wrapper bg-dark"
+          >
+            <span
+              className="it-category"
+            >
+              Category
+            </span>
+            <h1
+              className="no_toc"
+            >
+              Heading lorem ipsum dolor sit amet, consetetur sadipscing.
+            </h1>
+            <p
+              className="d-none d-lg-block"
+            >
+              Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+            </p>
+            <div
+              className="it-btn-container"
+            >
+              <button
+                aria-label={null}
+                className="btn btn-outline-primary btn-sm"
+                onClick={[Function]}
+              >
+                Label button
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Hero Hero Con Testo Centrato 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="it-hero-wrapper it-text-centered"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col"
+        >
+          <div
+            className="it-hero-text-wrapper bg-dark"
+          >
+            <span
+              className="it-category"
+            >
+              Category
+            </span>
+            <h1
+              className="no_toc"
+            >
+              Heading lorem ipsum dolor sit amet, consetetur sadipscing.
+            </h1>
+            <p
+              className="d-none d-lg-block"
+            >
+              Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+            </p>
+            <div
+              className="it-btn-container"
+            >
+              <button
+                aria-label={null}
+                className="btn btn-outline-primary btn-sm"
+                onClick={[Function]}
+              >
+                Label button
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="it-hero-wrapper it-overlay it-dark"
+  >
+    <div
+      className="img-responsive-wrapper"
+    >
+      <div
+        className="img-responsive"
+      >
+        <div
+          className="img-wrapper"
+        >
+          <img
+            alt="imagealt"
+            src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg"
+            title="image title"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col"
+        >
+          <div
+            className="it-hero-text-wrapper bg-dark"
+          >
+            <span
+              className="it-category"
+            >
+              Category
+            </span>
+            <h1
+              className="no_toc"
+            >
+              Heading lorem ipsum dolor sit amet, consetetur sadipscing.
+            </h1>
+            <p
+              className="d-none d-lg-block"
+            >
+              Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+            </p>
+            <div
+              className="it-btn-container"
+            >
+              <button
+                aria-label={null}
+                className="btn btn-secondary btn-sm"
+                onClick={[Function]}
+              >
+                Label button
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo Overlay Primario 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="it-hero-wrapper it-overlay it-primary"
+  >
+    <div
+      className="img-responsive-wrapper"
+    >
+      <div
+        className="img-responsive"
+      >
+        <div
+          className="img-wrapper"
+        >
+          <img
+            alt="imagealt"
+            src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg"
+            title="image title"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col"
+        >
+          <div
+            className="it-hero-text-wrapper bg-dark"
+          >
+            <span
+              className="it-category"
+            >
+              Category
+            </span>
+            <h1
+              className="no_toc"
+            >
+              Heading lorem ipsum dolor sit amet, consetetur sadipscing.
+            </h1>
+            <p
+              className="d-none d-lg-block"
+            >
+              Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+            </p>
+            <div
+              className="it-btn-container"
+            >
+              <button
+                aria-label={null}
+                className="btn btn-outline-primary btn-sm"
+                onClick={[Function]}
+              >
+                Label button
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Componenti/Layout Component Equal-width multi-row 1`] = `
 <div
   style={
