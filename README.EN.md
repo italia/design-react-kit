@@ -134,18 +134,24 @@ i.e. the `Button` component is shown below the `src/components/Button` path and 
 src
     └── components
         └── Button
-            ├── Button.js
+            ├── Button.tsx
 stories
     └── Button
-        ├── Button.stories.js
+        ├── Button.stories.mdx
+        ├── Button.stories.tsx
 ```
 
 Some basic rules for structuring the components:
 
-* JS file component files use JSX syntax.
-* The `.stories.js` files only restore the relative component only.
+* TSX file component files use JSX syntax.
+* The `.stories.tsx` files only contains examples relative to component.
+* The `.stories.tsx` files only contains documentation relative to component.
 
 Once you have created a new component, with its history, starting *Storybook* will be able to check that everything works as it should.
+
+### How to contribute
+
+To submit new content (feature or bug fixes) is required to fork the repository, starting from `master` create a new branch for the new feature: once completed the development (with tests when possible), create a PR to the original repository.
 
 ## Publishing
 
@@ -185,8 +191,4 @@ The same list is also available in the `package.json` file. Unfortunately, it's 
 
 ## TypeScript typing definitions 
 
-To generate Typescript typing definitions file:
-
-```sh
-$ yarn typescript:dts
-```
+The library has been rewritten in Typescript and types are exported in the bundle.

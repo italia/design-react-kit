@@ -6685,7 +6685,6 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Base 1`] = `
         className="is-valid form-control"
         onBlur={[Function]}
         onFocus={[Function]}
-        valid={true}
       />
       <label
         className=""
@@ -6701,7 +6700,6 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Base 1`] = `
     >
       <input
         className="is-invalid form-control"
-        invalid={true}
         onBlur={[Function]}
         onFocus={[Function]}
       />
@@ -6721,7 +6719,6 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Base 1`] = `
         className="is-valid form-control"
         onBlur={[Function]}
         onFocus={[Function]}
-        valid={true}
         value="Mario"
       />
       <label
@@ -6740,7 +6737,6 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Base 1`] = `
     >
       <input
         className="is-invalid form-control"
-        invalid={true}
         onBlur={[Function]}
         onFocus={[Function]}
       />
@@ -6788,7 +6784,6 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
             onBlur={[Function]}
             onFocus={[Function]}
             type="text"
-            valid={true}
             value="Mario"
           />
           <label
@@ -6814,7 +6809,6 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
             onBlur={[Function]}
             onFocus={[Function]}
             type="text"
-            valid={true}
             value="Rossi"
           />
           <label
@@ -6837,7 +6831,6 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
         >
           <input
             className="is-invalid form-control"
-            invalid={true}
             onBlur={[Function]}
             onFocus={[Function]}
             type="text"
@@ -6867,7 +6860,6 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
         >
           <input
             className="is-invalid form-control"
-            invalid={true}
             onBlur={[Function]}
             onFocus={[Function]}
             type="text"
@@ -6893,7 +6885,6 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
         >
           <input
             className="is-invalid form-control"
-            invalid={true}
             onBlur={[Function]}
             onFocus={[Function]}
             type="text"
@@ -6919,7 +6910,6 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
         >
           <input
             className="is-invalid form-control"
-            invalid={true}
             onBlur={[Function]}
             onFocus={[Function]}
             type="text"
@@ -6948,7 +6938,6 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
           aria-describedby="checkbox1Description"
           className="is-invalid form-control"
           id="checkbox1"
-          invalid={true}
           onBlur={[Function]}
           onFocus={[Function]}
           type="checkbox"
