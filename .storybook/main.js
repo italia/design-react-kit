@@ -10,10 +10,6 @@ module.exports = {
   // https://storybook.js.org/docs/react/configure/typescript#mainjs-configuration
   typescript: {
     check: true, // type-check stories during Storybook build
-    // make react-docgen extract types from third party libraries (only reactstrap for now)
-    reactDocgenTypescriptOptions: {
-      shouldExtractLiteralValuesFromEnum: true,
-    },
     reactDocgen: "react-docgen-typescript",
   },
   webpackFinal: async (config, { configType }) => {
