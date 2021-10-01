@@ -1,5 +1,12 @@
 import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
-import { Hero, HeroBackground, HeroBody, HeroButton, HeroCategory, HeroTitle } from '../../src';
+import {
+  Hero,
+  HeroBackground,
+  HeroBody,
+  HeroButton,
+  HeroCategory,
+  HeroTitle
+} from '../../src';
 
 <Meta title='Documentazione/Componenti/Hero' of={Hero} />
 
@@ -11,11 +18,11 @@ Il cosiddetto `Hero` è un componente leggero e flessibile che può facoltativam
 
 Il componente `Hero` può contenere
 
-  * Sub head - `HeroCategory`
-  * Heading (titolo) - `HeroTitle`
-  * Paragrafo - `HeroBody`
-  * Call to action - `HeroButton`
-  * Immagine di background - `HeroBackground`
+- Sub head - `HeroCategory`
+- Heading (titolo) - `HeroTitle`
+- Paragrafo - `HeroBody`
+- Call to action - `HeroButton`
+- Immagine di background - `HeroBackground`
 
 ### Con immagine
 
@@ -65,7 +72,7 @@ Per un div opaco di colore primario utilizzare `overlay='primary'`:
 
 ### Con overlay e filtro di colore primario
 
-Per aggiungere un filtro di tipo “screen”  utilizzare `overlay="filter"`:
+Per aggiungere un filtro di tipo “screen” utilizzare `overlay="filter"`:
 
 <Canvas>
   <Story id='componenti-hero--hero-con-sfondo-overlay-filtro' />
@@ -78,7 +85,6 @@ In alcuni casi, il contenuto che seguirà la card può sovrapporsi al componente
 <Canvas>
   <Story id='componenti-hero--hero-con-sfondo-margine-negativo' />
 </Canvas>
-
 
 ## Argomenti componente
 
