@@ -84,8 +84,23 @@ jobs:
           at: .
 
       - run:
-          name: Lint & Test
-          command: yarn lint && yarn test:ci
+          name: Lint
+          command: yarn lint
+      - run:
+          name: Install JUnit coverage reporter
+          command: yarn add --dev jest-junit
+      - run:
+          name: Test
+          command: yarn test:ci --reporters=jest-junit --collectCoverage=true
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+      - store_test_results:
+          path: ./reports/junit/
+      - store_artifacts:
+          path: ./reports/junit
+      - store_artifacts:
+          path: coverage
+
 
             
   check-gatsby-ssr:
