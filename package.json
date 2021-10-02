@@ -46,7 +46,7 @@
     "prebuild": "npm run svg:import",
     "build": "tsdx build --format cjs,esm,umd",
     "test": "tsdx test --passWithNoTests --coverage",
-    "test:ci": "tsdx test --passWithNoTests --coverage --runInBand",
+    "test:ci": "tsdx test --passWithNoTests --coverage --runInBand --ci",
     "lint": "npx eslint src stories test --ext js,ts,tsx,jsx,mdx",
     "prepare": "tsdx build --format cjs,esm,umd",
     "size": "size-limit",
