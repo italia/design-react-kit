@@ -1,8 +1,8 @@
 // import { withA11y } from '@storybook/addon-a11y';
 
 import Homepage from './homepage/Homepage';
-// import Amministrazione from './amministrazione/Amministrazione'
-// import Servizi from './servizi/Servizi'
+import Amministrazione from './amministrazione/Amministrazione';
+import Servizi from './servizi/Servizi';
 
 // doc
 // import HomepageText from './homepage/Homepage.md';
@@ -15,6 +15,6 @@ export default {
 
 export const HomepageTemplate = Homepage;
 
-// export const AmministrazioneTemplate = Amministrazione
+export const AmministrazioneTemplate = Amministrazione;
 
-// export const ServiziTemplate = Servizi
+export const ServiziTemplate = Servizi;

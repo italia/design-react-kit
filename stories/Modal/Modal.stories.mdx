@@ -1,4 +1,5 @@
-import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Code } from '@storybook/components';
 import {
   Modal,
   ModalHeader,
@@ -21,7 +22,7 @@ Cliccando sulla parte che oscura la pagina (il cosiddetto `backdrop` della modal
     <CalloutTitle>Accessibilità</CalloutTitle>
     <CalloutText>
       Per tutti i componenti Modale viene automaticamente aggiunto l'attributo{' '}
-      <code>role="dialog"</code> all'elemento contenitore. (
+      <Code>role="dialog"</Code> all'elemento contenitore. (
       <a
         href='https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_dialog_role'
         target='_blank'
@@ -32,9 +33,9 @@ Cliccando sulla parte che oscura la pagina (il cosiddetto `backdrop` della modal
       ).
     </CalloutText>
     <CalloutText>
-      L’attributo <code>labelledby="..."</code> deve essere assegnato al
-      componente <code>Modal</code> ed usare come valore l'ID del componente{' '}
-      <code>ModalHeader</code>.(
+      L’attributo <Code>labelledby="..."</Code> deve essere assegnato al
+      componente <Code>Modal</Code> ed usare come valore l'ID del componente{' '}
+      <Code>ModalHeader</Code>.(
       <a
         href='https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute'
         target='_blank'

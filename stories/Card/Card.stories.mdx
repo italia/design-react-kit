@@ -1,4 +1,4 @@
-import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
 import {
   Card,
   CardBody,
@@ -38,7 +38,7 @@ Negli esempi seguenti le card sono all’interno di una struttura colonnare di b
 ### Articolo semplice
 
 Esempio di card contenente categorizzazione e data, firma dell’articolo e link all’articolo.
-Per inserire la categorizzazione e/o la data di pubblicazione, usare il componente `CardCategory` ed inserire al suo interno gli elementi come da esempio. La categoria nell’esempio seguente è un link, ma potrebbe essere un testo semplice senza link, utilizzando il tag <code>&lt;span&gt;</code> invece del tag di default (<code>&lt;a&gt;</code>).
+Per inserire la categorizzazione e/o la data di pubblicazione, usare il componente `CardCategory` ed inserire al suo interno gli elementi come da esempio. La categoria nell’esempio seguente è un link, ma potrebbe essere un testo semplice senza link, utilizzando il tag `<span/>` invece del tag di default (`<a/>`).
 
 <Canvas>
   <Story id='componenti-cards--simple-article' />
@@ -55,7 +55,7 @@ Per inserire la categorizzazione con relativa icona, passare al componente `Card
 
 Un’altro esempio di card contenente intestazione (in questo caso numero di files presenti) e icona: la struttura è uguale alla card precedente, per l’intestazione è sufficiente usare l’elemento .categoryicon-top ed inserire al suo interno gli elementi come da esempio.
 
-Nell’esempio seguente sono stati inseriti un sottotitolo ed un link semplice che segue il paragrafo. Per i sottotitoli utilizzare il tag <code>&lt;h6&gt;</code>, per i link semplici utilizzare la classe .simple-link.
+Nell’esempio seguente sono stati inseriti un sottotitolo ed un link semplice che segue il paragrafo. Per i sottotitoli utilizzare il tag `<h6/>`, per i link semplici utilizzare la classe .simple-link.
 
 <Canvas>
   <Story id='componenti-cards--card-icon-advanced' />
