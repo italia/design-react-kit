@@ -1,4 +1,5 @@
-import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Code } from '@storybook/components';
 import { Badge, Callout, CalloutTitle, CalloutText } from '../../src';
 
 <Meta title='Documentazione/Componenti/Badge' of={Badge} />
@@ -47,7 +48,7 @@ Utilizzare l'attributo `color` sul componente per modificare l’aspetto di un b
         assistive – come gli screen reader. Assicurati che le informazioni
         denotate dal colore siano rese disponibili anche dal contenuto stesso
         (es.: il testo visibile), o siano incluse attraverso mezzi alternativi,
-        come testo aggiuntivo nascosto con la classe <code>.sr-only</code>.
+        come testo aggiuntivo nascosto con la classe <Code>.sr-only</Code>.
       </p>
     </CalloutText>
   </Callout>

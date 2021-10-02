@@ -1,4 +1,5 @@
-import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Code } from '@storybook/components';
 import { Rating, Callout, CalloutText } from '../../src';
 
 <Meta title='Documentazione/Componenti/Rating' of={Rating} />
@@ -21,12 +22,12 @@ Per visualizzare una label utilizzare l'attributo `legend` del componente `Ratin
   <Callout color='success'>
     <CalloutText>
       <p>
-        L'attributo <code>&lt;legend&gt;</code> contiene testo aggiuntivo per
+        L'attributo <Code>&lt;legend&gt;</Code> contiene testo aggiuntivo per
         Screen Reader all’interno di uno{' '}
-        <code>&lt;span class="sr-only"&gt;</code>.<br />
-        La label con il numero di stelle dev’essere contenuta in uno <code>
+        <Code>&lt;span class="sr-only"&gt;</Code>.<br />
+        La label con il numero di stelle dev’essere contenuta in uno <Code>
           &lt;span&gt;
-        </code> semplice.
+        </Code> semplice.
       </p>
     </CalloutText>
   </Callout>
@@ -45,7 +46,7 @@ Aggiungendo l'attributo `readOnly` si ottiene un Rating non modificabile di sola
     <CalloutText>
       <p>
         Per rendere accessibile il contenuto è necessario aggiungere l'attributo{' '}
-        <code>&lt;legend&gt;</code> con classe <code>.sr-only</code>.
+        <Code>&lt;legend&gt;</Code> con classe <Code>.sr-only</Code>.
       </p>
     </CalloutText>
   </Callout>

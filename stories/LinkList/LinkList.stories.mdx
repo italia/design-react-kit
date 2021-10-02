@@ -1,4 +1,5 @@
-import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Code } from '@storybook/components';
 import { LinkList, LinkListItem } from '../../src';
 
 <Meta title='Documentazione/Organizzare i contenuti/LinkList' of={LinkList} />
@@ -66,7 +67,7 @@ Per aggiungere un icona bisogna aggiungere al componente `LinkListItem` la class
 - `icon-right` : se si vuole posizionare l’icona a destra del testo
 - `icon-left` : se si vuole posizionare l’icona a sinistra del testo
 
-All’interno del componente `LinkListItem` subito dopo lo <code>&lt;span&gt;</code> contenente il testo, puoi inserire il componente `Icon` (per maggiori informazioni consulta la sezione icone).
+All’interno del componente `LinkListItem` subito dopo lo <Code>&lt;span&gt;</Code> contenente il testo, puoi inserire il componente `Icon` (per maggiori informazioni consulta la sezione icone).
 
 <Canvas>
   <Story id='componenti-linklist--esempio-multiline' />

@@ -1,4 +1,5 @@
-import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Code } from '@storybook/components';
 import { Tooltip, Callout, CalloutTitle, CalloutText } from '../../src';
 
 <Meta title='Documentazione/Componenti/Tooltip' of={Tooltip} />
@@ -23,8 +24,8 @@ I Tooltip di reactstrap con CSS e JavaScript utilizzano CSS3 per animazioni e at
       </p>
       <p>
         Sebbene arbitrariamente gli elementi HTML (come{' '}
-        <code>&lt;span&gt;</code>) possano essere resi attivabili tramite
-        l’attributo <code>tabindex="0"</code>, ciò aggiungerà interruzioni di
+        <Code>&lt;span&gt;</Code>) possano essere resi attivabili tramite
+        l’attributo <Code>tabindex="0"</Code>, ciò aggiungerà interruzioni di
         tabulazioni potenzialmente dannose per gli utenti che usano la tastiera
         per navigare. Inoltre, la maggior parte delle tecnologie assistive in
         questa situazione non annuncia il tooltip come ci si potrebbe invece
@@ -45,7 +46,7 @@ Cose da sapere quando usi il plugin tooltip:
 - I tooltip con titoli vuoti non saranno mai visualizzati.
 - Attivare i tooltip su elementi nascosti non funzionerà.
 - I tooltip per gli elementi `.disabled` o `disabled` devono essere attivati da un elemento contenitore.
-- Quando attivati da collegamenti ipertestuali che si estendono su più righe, i tooltip verranno centrati. Usa `white-space: nowrap;` sui tuoi <code>&lt;a&gt;</code> per evitare questo comportamento.
+- Quando attivati da collegamenti ipertestuali che si estendono su più righe, i tooltip verranno centrati. Usa `white-space: nowrap;` sui tuoi <Code>&lt;a&gt;</Code> per evitare questo comportamento.
 
 Il kit fornisce due tipologie di componenti per mostrare tooltip, ereditandoli da `reactstrap`: `Tooltip` e `UncontrolledTooltip`.
 Per la maggior parte dei casi `UncontrolledTooltip` fornisce tutte le funzionalità richieste senza dove controllare esplicitamente lo stato del componente. Per situazioni più sofisticate dove è richiesta la gestione dello stato utilizzare il componente `Tooltip`.
