@@ -85,7 +85,7 @@ jobs:
 
       - run:
           name: Lint & Test
-          command: yarn lint && yarn test
+          command: yarn lint && yarn test:ci
 
             
   check-gatsby-ssr:
