@@ -8,7 +8,7 @@ import { Tooltip, Callout, CalloutTitle, CalloutText } from '../../src';
 
 ## Documentazione ed esempi per aggiungere tooltip personalizzati
 
-I Tooltip di reactstrap con CSS e JavaScript utilizzano CSS3 per animazioni e attributi per l’archiviazione di titoli locali.
+I Tooltip di reactstrap con CSS e JavaScript utilizzano CSS3 per animazioni e la libreria `Popper.js` per il corretto posizionamento.
 
 <div className='docs'>
   <Callout color='success'>
@@ -46,7 +46,7 @@ Cose da sapere quando usi il plugin tooltip:
 - I tooltip con titoli vuoti non saranno mai visualizzati.
 - Attivare i tooltip su elementi nascosti non funzionerà.
 - I tooltip per gli elementi `.disabled` o `disabled` devono essere attivati da un elemento contenitore.
-- Quando attivati da collegamenti ipertestuali che si estendono su più righe, i tooltip verranno centrati. Usa `white-space: nowrap;` sui tuoi <Code>&lt;a&gt;</Code> per evitare questo comportamento.
+- Quando attivati da collegamenti ipertestuali che si estendono su più righe, i tooltip verranno centrati. Usa `white-space: nowrap;` sui tuoi `<a/>` per evitare questo comportamento.
 
 Il kit fornisce due tipologie di componenti per mostrare tooltip, ereditandoli da `reactstrap`: `Tooltip` e `UncontrolledTooltip`.
 Per la maggior parte dei casi `UncontrolledTooltip` fornisce tutte le funzionalità richieste senza dove controllare esplicitamente lo stato del componente. Per situazioni più sofisticate dove è richiesta la gestione dello stato utilizzare il componente `Tooltip`.
