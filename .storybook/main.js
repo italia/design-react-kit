@@ -10,6 +10,17 @@ module.exports = {
   // https://storybook.js.org/docs/react/configure/typescript#mainjs-configuration
   typescript: {
     check: true, // type-check stories during Storybook build
+    // allow react-select types to be imported for docgen
+    // allow also explicit types from other modules within the repo
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      propFilter: (prop) => {
+        if(prop.parent){
+          return /src/.test(prop.parent.fileName) || (/node_modules/.test(prop.parent.fileName) && /react-select/.test(prop.parent.fileName));
+        }
+        return true;
+      }
+    },
     reactDocgen: "react-docgen-typescript",
   },
   webpackFinal: async (config, { configType }) => {
