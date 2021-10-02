@@ -53,7 +53,10 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
   color?: 'success' | 'warning' | 'danger' | 'note' | 'important' | string;
   /** Le dimensioni dell'icona. In ordine dalla più grande alla più piccola: "xl", "lg", '' (stringa vuota), "sm", "xs". */
   size?: 'xl' | 'lg' | '' | 'sm' | 'xs';
-  /** Il nome dell'icona da mostrare. Per una lista completa vedi: @TODO-URL */
+  /**
+   * Il nome dell'icona da mostrare. Per una lista completa vedi:
+   * <a href="https://italia.github.io/design-react-kit/?path=/story/componenti-icon--lista-icone" target="_blank">Lista icone</a>
+   * */
   icon: string;
   /** Quando abilitato riduce la dimensione dell'icona all'interno del contenitore.  */
   padding?: boolean;
