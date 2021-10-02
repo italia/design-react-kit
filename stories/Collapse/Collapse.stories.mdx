@@ -1,4 +1,5 @@
-import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Code } from '@storybook/components';
 import {
   Accordion,
   AccordionHeader,
@@ -52,23 +53,20 @@ Più gruppi di collapse possono essere annidati.
   <Callout color='success'>
     <CalloutTitle>Accessibilità</CalloutTitle>
     <CalloutText>
-      <p>
-        Assicurati di aggiungere <code>aria-expanded</code> all’elemento di
-        controllo. Questo attributo trasmette esplicitamente lo stato corrente
-        dell’elemento comprimibile legato al controllo a screen reader e
-        tecnologie assistive simili. Se l’elemento comprimibile è chiuso in modo
-        predefinito, l’attributo sull’elemento di controllo dovrebbe avere il
-        valore <code>aria-expanded="false"</code>. Se imposti l’elemento
-        comprimibile aperto in modo predefinito, sul controllo invece imposta{' '}
-        <code>aria-expanded="true"</code>. Il componente{' '}
-        <code>AccordionHeader</code> applica automaticamente questo attributo,
-        ma qualora venisse usato un componente di controllo esterno - come un
-        `Button` del primo esempio - sarà necessario aggiungerlo manualmente. Se
-        il componente HTML dell’elemento di controllo non è un bottone (ad
-        esempio un <code>&lt;a&gt;</code> o <code>&lt;div&gt;</code>),
-        l’attributo <code>role="button"</code> dovrebbe essere aggiunto al
-        componente.
-      </p>
+      Assicurati di aggiungere <Code>aria-expanded</Code> all’elemento di
+      controllo. Questo attributo trasmette esplicitamente lo stato corrente
+      dell’elemento comprimibile legato al controllo a screen reader e
+      tecnologie assistive simili. Se l’elemento comprimibile è chiuso in modo
+      predefinito, l’attributo sull’elemento di controllo dovrebbe avere il
+      valore <Code>aria-expanded="false"</Code>. Se imposti l’elemento
+      comprimibile aperto in modo predefinito, sul controllo invece imposta{' '}
+      <Code>aria-expanded="true"</Code>. Il componente{' '}
+      <Code>AccordionHeader</Code> applica automaticamente questo attributo, ma
+      qualora venisse usato un componente di controllo esterno - come un
+      `Button` del primo esempio - sarà necessario aggiungerlo manualmente. Se
+      il componente HTML dell’elemento di controllo non è un bottone (ad esempio
+      un <Code>&lt;a&gt;</Code> o <Code>&lt;div&gt;</Code>), l’attributo{' '}
+      <Code>role="button"</Code> dovrebbe essere aggiunto al componente.
     </CalloutText>
   </Callout>
 </div>

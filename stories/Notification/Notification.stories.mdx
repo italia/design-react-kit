@@ -1,4 +1,5 @@
-import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Code } from '@storybook/components';
 import {
   NotificationManager,
   Callout,
@@ -65,12 +66,10 @@ Il dettaglio del tipo `NotificationOptions` è riportato di seguito:
   <Callout color='warning'>
     <CalloutTitle>Componente statico per la documentazione</CalloutTitle>
     <CalloutText>
-      <p>
-        Di seguito verrà utilizzato un componente <code>NotificationDoc</code>,
-        di tipo statico, creato appositamente per lo scopo di questa
-        documentazione e <strong>che non deve essere utilizzato</strong> nel
-        codice ai fini di produzione.
-      </p>
+      Di seguito verrà utilizzato un componente <Code>NotificationDoc</Code>, di
+      tipo statico, creato appositamente per lo scopo di questa documentazione e{' '}
+      <strong>che non deve essere utilizzato</strong> nel codice ai fini di
+      produzione.
     </CalloutText>
   </Callout>
 </div>
@@ -85,7 +84,7 @@ Lo stato naturale dell’elemento è invisibile. Gli esempi di questa pagina son
 
 ### Notification con messaggio
 
-Si può aggiungere un breve testo al di sotto del titolo, questo verrà inserito in un tag <code>&lt;p&gt;</code>.
+Si può aggiungere un breve testo al di sotto del titolo, questo verrà inserito in un tag `<p/>`.
 È possibile anche passare contenuti JSX come messaggio qualora necessario.
 
 <Canvas>

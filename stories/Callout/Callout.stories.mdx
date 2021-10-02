@@ -1,4 +1,5 @@
-import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Code } from '@storybook/components';
 import { Callout, CalloutTitle, CalloutText } from '../../src';
 
 <Meta title='Documentazione/Componenti/Callout' of={Callout} />
@@ -23,12 +24,10 @@ Al titolo può essere aggiunta un’icona a scelta fra quelle disponibili, avend
   <Callout color='success'>
     <CalloutTitle>Accessibilità</CalloutTitle>
     <CalloutText>
-      <p>
-        Nel caso l’icona comunicasse visivamente contenuti non disponibili nel
-        testo (ad esempio un allarme o una conferma) questa andrà affiancata da
-        un testo riservato agli screen reader:{' '}
-        <code>&lt;span class="sr-only"&gt;Testo alternativo&lt;/span&gt;</code>.
-      </p>
+      Nel caso l’icona comunicasse visivamente contenuti non disponibili nel
+      testo (ad esempio un allarme o una conferma) questa andrà affiancata da un
+      testo riservato agli screen reader:{' '}
+      <Code>&lt;span class="sr-only"&gt;Testo alternativo&lt;/span&gt;</Code>.
     </CalloutText>
   </Callout>
 </div>

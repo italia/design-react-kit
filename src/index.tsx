@@ -101,7 +101,14 @@ export { HeaderRightZone } from './Header/HeaderRightZone';
 export { HeaderSearch } from './Header/HeaderSearch';
 export { HeaderSocialsZone } from './Header/HeaderSocialsZone';
 export { HeaderToggler } from './Header/HeaderToggler';
-export { Hero } from './Hero/Hero';
+export {
+  Hero,
+  HeroBackground,
+  HeroBody,
+  HeroButton,
+  HeroCategory,
+  HeroTitle
+} from './Hero/index';
 export {
   Icon,
   iconsList as icons,
@@ -194,7 +201,14 @@ export type { HeaderRightZoneProps } from './Header/HeaderRightZone';
 export type { HeaderSearchProps } from './Header/HeaderSearch';
 export type { HeaderSocialsZoneProps } from './Header/HeaderSocialsZone';
 export type { HeaderTogglerProps } from './Header/HeaderToggler';
-export type { HeroProps } from './Hero/Hero';
+export type {
+  HeroProps,
+  HeroBackgroundProps,
+  HeroBodyProps,
+  HeroButtonProps,
+  HeroCategoryProps,
+  HeroTitleProps
+} from './Hero/index';
 export type { IconProps, IconName } from './Icon/Icon';
 export type { InputProps } from './Input/Input';
 export type { InputContainerProps } from './Input/InputContainer';

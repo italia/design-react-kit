@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/addon-docs/blocks';
+import { Meta } from '@storybook/addon-docs';
 
 <Meta title='Documentazione/Changelog' />
 
@@ -68,9 +68,13 @@ Riscritta interamente la documentazione del kit per essere più completa e per o
 
 - È stato incrementata la versione minima di React supportata come peer-dependency a 16.8.0. 💥
   - Verificare che la versione utilizzata nel progetto sia compatibile con la versione richiesta dal toolkit.
-- `Pager` l'attributo `size` è stato rimosso poichè non utilizzato nel kit Bootstrap Italia. 💥
+- `Pager`: l'attributo `size` è stato rimosso poichè non utilizzato nel kit Bootstrap Italia. 💥
   - Azioni richieste per vecchio comportamento: utilizzare l'attributo `className` del componente `Pager`.
 - Rimosso il componente `Carousel` e relativi sotto componenti 💥
+- `Hero`: nuovo componente più fedele al design del kit Bootstrap Italia. 💥
+  - È necessario sostituire il vecchio componente `Hero` con il nuovo componente. 💥
+  - Nuovi componenti `HeroBackground`, `HeroBody`, `HeroButton`, `HeroCategory`, `HeroTitle`.
+  - Qualora si volesse continuare ad usare il vecchio componente, importare il componente `Jumbotron` da `reactstrap`.
 
 ### Usi il Design React Kit in produzione? Scrivici!
 

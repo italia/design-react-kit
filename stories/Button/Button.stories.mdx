@@ -1,4 +1,5 @@
-import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Code } from '@storybook/components';
 import LinkTo from '@storybook/addon-links/react';
 import { Button, Callout, CalloutTitle, CalloutText } from '../../src';
 
@@ -16,7 +17,7 @@ Per aggiungere un bottone personalizzato, è sufficiente utilizzare il component
   <Button>Link</Button>
 </Canvas>
 
-Il componente `Button` è state pensato per essere utilizzate con l’elemento <code>&lt;button&gt;</code>. Tuttavia, è possibile applicare lo stile per i bottoni anche ad elementi di tipo <code>&lt;a&gt;</code> o <code>&lt;input&gt;</code>, anche se alcuni browser potrebbero mostrare un rendering lievemente diverso.
+Il componente `Button` è state pensato per essere utilizzate con l’elemento `<button/>`. Tuttavia, è possibile applicare lo stile per i bottoni anche ad elementi di tipo `<a/>` o `<input/>`, anche se alcuni browser potrebbero mostrare un rendering lievemente diverso.
 
 In questi casi, non dimenticare di utilizzare in modo appropriato gli attributi `role="button"` per trasmettere il loro scopo alle tecnologie assistive.
 
@@ -40,23 +41,21 @@ Gli stili definiti da Bootstrap Italia utilizzano un naming consistente con Boot
 
 #### Note sullo stato disabilitato
 
-- I tag <code>&lt;a&gt;</code>non supportano l’attributo `disabled`, per cui è necessario usare la classe `.disabled` per farli apparire visivamente disabilitati, e in modo da disabilitare pointer-events su di essi sui browser che lo supportano.
+- I tag `<a/>` non supportano l’attributo `disabled`, per cui è necessario usare la classe `.disabled` per farli apparire visivamente disabilitati, e in modo da disabilitare pointer-events su di essi sui browser che lo supportano.
 - I bottoni disabilitati includeranno l’attributo `aria-disabled="true"` per indicare lo stato dell’elemento alle tecnologie assistive.
 
 <div className='docs'>
   <Callout color='warning'>
     <CalloutTitle>Disabilitazione link</CalloutTitle>
     <CalloutText>
-      <p>
-        La classe <code>.disabled</code> usa <code>pointer-events: none</code>{' '}
-        per provare a disabilitare l’attivazione dei comportamenti di default
-        dei link <code>&lt;a&gt;</code>, ma tale funzionalità non è gestita in
-        alcuni browsers. Oltre a questo, la navigazione attraverso tastiera
-        rimane abilitata, per cui utenti che utilizzano tecnologie assistive
-        saranno comunque in grado di attivare tali link. Per ovviare a questo
-        problema, è possibile aggiungere l’attributo <code>tabindex="-1"</code>{' '}
-        e utilizzare Javascript per disabilitare le loro funzionalità.
-      </p>
+      La classe <Code>.disabled</Code> usa <Code>pointer-events: none</Code> per
+      provare a disabilitare l’attivazione dei comportamenti di default dei link{' '}
+      <Code>&lt;a&gt;</Code>, ma tale funzionalità non è gestita in alcuni
+      browsers. Oltre a questo, la navigazione attraverso tastiera rimane
+      abilitata, per cui utenti che utilizzano tecnologie assistive saranno
+      comunque in grado di attivare tali link. Per ovviare a questo problema, è
+      possibile aggiungere l’attributo <Code>tabindex="-1"</Code> e utilizzare
+      Javascript per disabilitare le loro funzionalità.
     </CalloutText>
   </Callout>
 </div>
@@ -79,7 +78,7 @@ Gli stili definiti da Bootstrap Italia utilizzano un naming consistente con Boot
         assistive – come gli screen reader. Assicurati che le informazioni
         denotate dal colore siano rese disponibili anche dal contenuto stesso
         (es.: il testo visibile), o siano incluse attraverso mezzi alternativi,
-        come testo aggiuntivo nascosto con la classe <code>.sr-only</code>.
+        come testo aggiuntivo nascosto con la classe <Code>.sr-only</Code>.
       </p>
     </CalloutText>
   </Callout>
@@ -107,8 +106,8 @@ Inoltre è possibile applicare un contorno cerchiato dell’icona utilizzando un
     <CalloutText>
       <p>
         Nel caso si utilizzi un’icona cerchiata all’interno di un componente{' '}
-        <code>Button</code>, è necessario inserire il testo del bottone/link
-        all’interno di un tag <code>&lt;span&gt;</code> al fine di garantire un
+        <Code>Button</Code>, è necessario inserire il testo del bottone/link
+        all’interno di un tag <Code>&lt;span&gt;</Code> al fine di garantire un
         perfetto allineamento ed una corretta spaziatura tra l’icona e lo stesso
         testo.
       </p>

@@ -1,4 +1,5 @@
-import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Code } from '@storybook/components';
 import LinkTo from '@storybook/addon-links/react';
 import {
   AvatarIcon,
@@ -34,23 +35,21 @@ Gli Avatar sono disponibili in sei diverse dimensioni:
   <Callout color='success'>
     <CalloutTitle>Accessibilità delle immagini</CalloutTitle>
     <CalloutText>
-      <p>
-        Per ragioni di accessibilità è importante indicare all’interno
-        dell’Avatar il nome dell’utente associato allo stesso.
-      </p>
-      <p>
-        Nel caso di Avatar con immagine è consigliabile utilizzare l’attributo{' '}
-        <code>alt=""</code> della stessa.
-      </p>
-      <p>
-        Un Avatar con testo conterrà uno <code>&lt;span&gt;</code> per soli
-        screen reader con il nome dell’utente indicato per esteso:{' '}
-        <code>&lt;span class="sr-only"&gt;Nome Utente&lt;/span&gt;</code>.
-      </p>
-      <p>
-        Per gli Avatar con icona inserire un testo alternativo:{' '}
-        <code>&lt;span class="sr-only"&gt;Testo icona&lt;/span&gt;</code>.
-      </p>
+      Per ragioni di accessibilità è importante indicare all’interno dell’Avatar
+      il nome dell’utente associato allo stesso.
+    </CalloutText>
+    <CalloutText>
+      Nel caso di Avatar con immagine è consigliabile utilizzare l’attributo{' '}
+      <Code>alt=""</Code> della stessa.
+    </CalloutText>
+    <CalloutText>
+      Un Avatar con testo conterrà uno <Code>&lt;span&gt;</Code> per soli screen
+      reader con il nome dell’utente indicato per esteso:{' '}
+      <Code>&lt;span class="sr-only"&gt;Nome Utente&lt;/span&gt;</Code>.
+    </CalloutText>
+    <CalloutText>
+      Per gli Avatar con icona inserire un testo alternativo:{' '}
+      <Code>&lt;span class="sr-only"&gt;Testo icona&lt;/span&gt;</Code>.
     </CalloutText>
   </Callout>
 </div>
@@ -164,15 +163,15 @@ Affiancando un componente `AvatarIcon` con il componente `AvatarPresence` all'in
     <CalloutTitle>Accessibilità della presenza</CalloutTitle>
     <CalloutText>
       <p>
-        Inserire un <code>&lt;span&gt;</code> riservato agli screen reader con
+        Inserire un <Code>&lt;span&gt;</Code> riservato agli screen reader con
         indicazione della presenza dell’utente nel componente{' '}
-        <code>AvatarPresence</code>.
+        <Code>AvatarPresence</Code>.
       </p>
       <p>
         Ad esempio:{' '}
-        <code>
+        <Code>
           &lt;span class="sr-only"&gt;Presenza: (stato presenza)&lt;/span&gt;
-        </code>
+        </Code>
         .
       </p>
     </CalloutText>
@@ -196,15 +195,15 @@ Affiancando un componente `AvatarIcon` con il componente `AvatarStatus` all'inte
     <CalloutTitle>Accessibilità dello status</CalloutTitle>
     <CalloutText>
       <p>
-        Inserire un <code>&lt;span&gt;</code> riservato agli screen reader con
+        Inserire un <Code>&lt;span&gt;</Code> riservato agli screen reader con
         indicazione della presenza dell’utente nel componente{' '}
-        <code>AvatarStatus</code>.
+        <Code>AvatarStatus</Code>.
       </p>
       <p>
         Ad esempio:{' '}
-        <code>
+        <Code>
           &lt;span class="sr-only"&gt;Status: (stato utenza)&lt;/span&gt;
-        </code>
+        </Code>
         .
       </p>
     </CalloutText>
