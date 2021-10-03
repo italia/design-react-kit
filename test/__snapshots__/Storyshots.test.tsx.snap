@@ -7752,7 +7752,9 @@ exports[`Storyshots Componenti/Hero Hero Con Sfondo Margine Negativo 1`] = `
             >
               Category
             </span>
-            <h1>
+            <h1
+              className=""
+            >
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
             <p
@@ -7945,7 +7947,9 @@ exports[`Storyshots Componenti/Hero Hero Con Testo 1`] = `
             >
               Category
             </span>
-            <h1>
+            <h1
+              className=""
+            >
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
             <p
@@ -8004,7 +8008,9 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Centrato 1`] = `
             >
               Category
             </span>
-            <h1>
+            <h1
+              className=""
+            >
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
             <p
@@ -8080,7 +8086,9 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo 1`] = `
             >
               Category
             </span>
-            <h1>
+            <h1
+              className=""
+            >
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
             <p
@@ -8156,7 +8164,9 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo Overlay Primario 1`
             >
               Category
             </span>
-            <h1>
+            <h1
+              className=""
+            >
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
             <p

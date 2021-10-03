@@ -66,11 +66,7 @@ const NavHeader = ({ theme, isOpen }) => {
                   </DropdownToggle>
                   <DropdownMenu>
                     <LinkList>
-                      <LinkListItem
-                        header
-                        tag='h3'
-                        id='heading-es-1'
-                      >
+                      <LinkListItem header tag='h3' id='heading-es-1'>
                         Heading
                       </LinkListItem>
                       <LinkListItem tag={DropdownItem} href='#'>
