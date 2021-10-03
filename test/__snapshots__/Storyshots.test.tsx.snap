@@ -7752,9 +7752,7 @@ exports[`Storyshots Componenti/Hero Hero Con Sfondo Margine Negativo 1`] = `
             >
               Category
             </span>
-            <h1
-              className="no_toc"
-            >
+            <h1>
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
             <p
@@ -7947,9 +7945,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo 1`] = `
             >
               Category
             </span>
-            <h1
-              className="no_toc"
-            >
+            <h1>
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
             <p
@@ -8008,9 +8004,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Centrato 1`] = `
             >
               Category
             </span>
-            <h1
-              className="no_toc"
-            >
+            <h1>
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
             <p
@@ -8086,9 +8080,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo 1`] = `
             >
               Category
             </span>
-            <h1
-              className="no_toc"
-            >
+            <h1>
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
             <p
@@ -8164,9 +8156,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo Overlay Primario 1`
             >
               Category
             </span>
-            <h1
-              className="no_toc"
-            >
+            <h1>
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
             <p
@@ -9100,9 +9090,7 @@ exports[`Storyshots Componenti/LinkList Titolo lista 1`] = `
         <div
           className="link-list-wrapper menu-link-list"
         >
-          <h3
-            className="no_toc"
-          >
+          <h3>
             Indice della pagina
           </h3>
           <ul

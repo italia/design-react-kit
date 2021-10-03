@@ -55,7 +55,7 @@ describe('Hero component', () => {
       );
 
       expect(screen.getByRole('heading')).toContainHTML(
-        '<h3 class="no_toc">My Title</h3>'
+        '<h3>My Title</h3>'
       );
     });
   });

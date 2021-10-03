@@ -69,7 +69,6 @@ const NavHeader = ({ theme, isOpen }) => {
                       <LinkListItem
                         header
                         tag='h3'
-                        className='no_toc'
                         id='heading-es-1'
                       >
                         Heading

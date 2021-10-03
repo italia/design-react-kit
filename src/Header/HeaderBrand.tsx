@@ -73,7 +73,6 @@ export class HeaderBrand extends PureComponent<HeaderBrandProps> {
               // convention here: first item is the main title, while others subtext
               const className = classNames(
                 child.props.className,
-                'no_toc',
                 { 'd-none d-md-block': i } // subtext is anything but first element
               );
 
