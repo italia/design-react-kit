@@ -48,13 +48,13 @@ describe('Hero component', () => {
 
   describe('with title', () => {
     it('should render the title with a custom tag', () => {
-      render(
+      const { container } = render(
         <Hero>
           <HeroTitle tag='h3'>My Title</HeroTitle>
         </Hero>
       );
 
-      expect(screen.getByRole('heading')).toContainHTML('<h3>My Title</h3>');
+      expect(container.querySelector('h3')).toHaveTextContent('My Title');
     });
   });
 
