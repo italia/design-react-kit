@@ -11,6 +11,6 @@ export const HeroTitle: FC<HeroTitleProps> = ({
   className,
   ...attributes
 }) => {
-  const classes = classname('no_toc', className);
+  const classes = classname(className);
   return <Tag {...attributes} className={classes} />;
 };
