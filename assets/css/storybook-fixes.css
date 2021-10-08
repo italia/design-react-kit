@@ -128,3 +128,17 @@ div[id*='componenti-bottomnav'] .bottom-nav {
   position: absolute;
   display: block;
 }
+
+.layout-example.docs .d-flex, .layout-example.docs .row {
+  background-image: linear-gradient(45deg, #d9dadb 25%, transparent 25%), linear-gradient(-45deg, #d9dadb 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #d9dadb 75%), linear-gradient(-45deg, transparent 75%, #d9dadb 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+}
+
+.layout-example.docs .row>.col, .layout-example.docs .row>[class^="col-"] {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(0, 102, 204, .75);
+  border: 1px solid #06c;
+  color: #fff;
+}
