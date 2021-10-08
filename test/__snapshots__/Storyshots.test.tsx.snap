@@ -8193,6 +8193,67 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo Overlay Primario 1`
 </div>
 `;
 
+exports[`Storyshots Componenti/Layout Component Contenuto Larghezza Variabile 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="docs layout-example"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="justify-content-md-center row"
+      >
+        <div
+          className="col-lg-2"
+        >
+          1 di 3
+        </div>
+        <div
+          className="col-auto"
+        >
+          Contenuto a larghezza variabile
+        </div>
+        <div
+          className="col-lg-2"
+        >
+          3 di 3
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col"
+        >
+          1 di 3
+        </div>
+        <div
+          className="col-md-auto"
+        >
+          Contenuto a larghezza variabile
+        </div>
+        <div
+          className="col-lg-2"
+        >
+          3 di 3
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Componenti/Layout Component Equal-width multi-row 1`] = `
 <div
   style={
@@ -8205,7 +8266,9 @@ exports[`Storyshots Componenti/Layout Component Equal-width multi-row 1`] = `
     }
   }
 >
-  <div>
+  <div
+    className="docs layout-example"
+  >
     <div
       className="container"
     >
@@ -8213,12 +8276,12 @@ exports[`Storyshots Componenti/Layout Component Equal-width multi-row 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           col
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           col
         </div>
@@ -8227,12 +8290,12 @@ exports[`Storyshots Componenti/Layout Component Equal-width multi-row 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           col
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           col
         </div>
@@ -8242,7 +8305,7 @@ exports[`Storyshots Componenti/Layout Component Equal-width multi-row 1`] = `
 </div>
 `;
 
-exports[`Storyshots Componenti/Layout Component Imposta larghezza colonne 1`] = `
+exports[`Storyshots Componenti/Layout Component Esempio Base 1`] = `
 <div
   style={
     Object {
@@ -8254,7 +8317,9 @@ exports[`Storyshots Componenti/Layout Component Imposta larghezza colonne 1`] = 
     }
   }
 >
-  <div>
+  <div
+    className="docs layout-example"
+  >
     <div
       className="container"
     >
@@ -8262,36 +8327,78 @@ exports[`Storyshots Componenti/Layout Component Imposta larghezza colonne 1`] = 
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
-           1 di 3
+          Una di tre colonne
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col-6"
+          className="col"
         >
-          2 di 3 (larga 6/12)
+          Una di tre colonne
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
-          3 di 3
+          Una di tre colonne
         </div>
       </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Layout Component Imposta Larghezza Colonne 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="docs layout-example"
+  >
+    <div
+      className="container"
+    >
       <div
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           1 di 3
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col-5"
+          className="col-6"
+        >
+          2 di 3 (larga 6/12)
+        </div>
+        <div
+          className="col"
+        >
+          3 di 3
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col"
+        >
+          1 di 3
+        </div>
+        <div
+          className="col-5"
         >
           2 di 3 (larga 5/12)
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           3 di 3
         </div>
@@ -8301,7 +8408,7 @@ exports[`Storyshots Componenti/Layout Component Imposta larghezza colonne 1`] = 
 </div>
 `;
 
-exports[`Storyshots Componenti/Layout Component Larghezze standard 1`] = `
+exports[`Storyshots Componenti/Layout Component Larghezze Standard 1`] = `
 <div
   style={
     Object {
@@ -8313,7 +8420,9 @@ exports[`Storyshots Componenti/Layout Component Larghezze standard 1`] = `
     }
   }
 >
-  <div>
+  <div
+    className="docs layout-example"
+  >
     <div
       className="container"
     >
@@ -8321,12 +8430,12 @@ exports[`Storyshots Componenti/Layout Component Larghezze standard 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
-           1 di 2
+          1 di 2
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           2 di 2
         </div>
@@ -8335,17 +8444,17 @@ exports[`Storyshots Componenti/Layout Component Larghezze standard 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           1 di 3
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           2 di 3
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           3 di 3
         </div>
@@ -8367,7 +8476,9 @@ exports[`Storyshots Componenti/Layout Component Mischiare e abbinare 1`] = `
     }
   }
 >
-  <div>
+  <div
+    className="docs layout-example"
+  >
     <div
       className="container"
     >
@@ -8375,12 +8486,12 @@ exports[`Storyshots Componenti/Layout Component Mischiare e abbinare 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col-12 col-md-8"
+          className="col-12 col-md-8"
         >
           .col-12 .col-md-8
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col-6 col-md-4"
+          className="col-6 col-md-4"
         >
           .col-6 .col-md-4
         </div>
@@ -8389,17 +8500,17 @@ exports[`Storyshots Componenti/Layout Component Mischiare e abbinare 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-primary col-6 col-md-4"
+          className="col-6 col-md-4"
         >
           .col-6 .col-md-4
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col-6 col-md-4"
+          className="col-6 col-md-4"
         >
           .col-6 .col-md-4
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col-6 col-md-4"
+          className="col-6 col-md-4"
         >
           .col-6 .col-md-4
         </div>
@@ -8408,12 +8519,12 @@ exports[`Storyshots Componenti/Layout Component Mischiare e abbinare 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-primary col-6"
+          className="col-6"
         >
           .col-6
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col-6"
+          className="col-6"
         >
           .col-6
         </div>
@@ -8435,7 +8546,9 @@ exports[`Storyshots Componenti/Layout Component Raccolti in orizzontale 1`] = `
     }
   }
 >
-  <div>
+  <div
+    className="docs layout-example"
+  >
     <div
       className="container"
     >
@@ -8443,12 +8556,12 @@ exports[`Storyshots Componenti/Layout Component Raccolti in orizzontale 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col-sm-8"
+          className="col-sm-8"
         >
           col-sm-8
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col-sm-4"
+          className="col-sm-4"
         >
           col-sm-4
         </div>
@@ -8457,19 +8570,69 @@ exports[`Storyshots Componenti/Layout Component Raccolti in orizzontale 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           col-sm
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           col-sm
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           col-sm
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Layout Component Righe Multiple Bug Safari 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="docs layout-example"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col"
+        >
+          Colonna
+        </div>
+        <div
+          className="col"
+        >
+          Colonna
+        </div>
+        <div
+          className="w-100"
+        />
+        <div
+          className="col"
+        >
+          Colonna
+        </div>
+        <div
+          className="col"
+        >
+          Colonna
         </div>
       </div>
     </div>
@@ -8489,7 +8652,9 @@ exports[`Storyshots Componenti/Layout Component Tutti i breakpoint 1`] = `
     }
   }
 >
-  <div>
+  <div
+    className="docs layout-example"
+  >
     <div
       className="container"
     >
@@ -8497,22 +8662,22 @@ exports[`Storyshots Componenti/Layout Component Tutti i breakpoint 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           col
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           col
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           col
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           col
         </div>
@@ -8521,73 +8686,14 @@ exports[`Storyshots Componenti/Layout Component Tutti i breakpoint 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-primary col-8"
+          className="col-8"
         >
           col-8
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col-4"
+          className="col-4"
         >
           col-4
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Componenti/Layout Component Variable width content 1`] = `
-<div
-  style={
-    Object {
-      "boxSizing": "border-box",
-      "margin": "0",
-      "padding": "48px 32px",
-      "position": "relative",
-      "textAlign": "initial",
-    }
-  }
->
-  <div>
-    <div
-      className="container"
-    >
-      <div
-        className="row"
-      >
-        <div
-          className="p-3 mb-2 text-white bg-dark col-lg-2"
-        >
-          1 di 3
-        </div>
-        <div
-          className="p-3 mb-2 text-white bg-primary col-auto"
-        >
-          Contenuto a larghezza variabile
-        </div>
-        <div
-          className="p-3 mb-2 text-white bg-dark col-lg-2"
-        >
-          3 di 3
-        </div>
-      </div>
-      <div
-        className="row"
-      >
-        <div
-          className="p-3 mb-2 text-white bg-dark col"
-        >
-          1 di 3
-        </div>
-        <div
-          className="p-3 mb-2 text-white bg-primary col-md-auto"
-        >
-          Contenuto a larghezza variabile
-        </div>
-        <div
-          className="p-3 mb-2 text-white bg-dark col-lg-2"
-        >
-          3 di 3
         </div>
       </div>
     </div>

@@ -17,11 +17,38 @@ Il sistema di griglie di Bootstrap usa una serie di contenitori, righe e colonne
   <Callout>
     <CalloutTitle>Approfondimento</CalloutTitle>
     <CalloutText>
-      Se sei poco pratico di flexbox, puoi iniziare da questi link per trovare informazioni di carattere generale, specifiche e frammenti di codice.
+      Se sei poco pratico di flexbox, puoi iniziare da questi link per trovare
+      informazioni di carattere generale, specifiche e frammenti di codice.
       <ul>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank">guida su flexbox su MSDN</a> (in inglese)</li>
-          <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background" target="_blank">guida su flexbox su CSS tricks</a> (in inglese)</li>
-          <li><a href="http://flexboxfroggy.com/#it" target="_blank">un simpatico quiz per verificare le tue conoscenze</a></li>
+        <li>
+          <a
+            href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox'
+            target='_blank'
+            rel='noreferrer'
+          >
+            guida su flexbox su MSDN
+          </a>{' '}
+          (in inglese)
+        </li>
+        <li>
+          <a
+            href='https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background'
+            target='_blank'
+            rel='noreferrer'
+          >
+            guida su flexbox su CSS tricks
+          </a>{' '}
+          (in inglese)
+        </li>
+        <li>
+          <a
+            href='http://flexboxfroggy.com/#it'
+            target='_blank'
+            rel='noreferrer'
+          >
+            un simpatico quiz per verificare le tue conoscenze
+          </a>
+        </li>
       </ul>
     </CalloutText>
   </Callout>
@@ -37,16 +64,16 @@ L’esempio precedente crea tre colonne di uguale larghezza su dispositivi picco
 
 Analizzandolo nel dettaglio, ecco come funziona:
 
-  * I contenitori forniscono un mezzo per centrare e riempire orizzontalmente il contenuto del tuo sito. Utilizza il `Container` per una larghezza al pixel responsive o aggingi l'attributo `fluid` per una larghezza del `width: 100%` su tutti i viewport e dimensioni dei device.
-  * I componenti `Row` sono involucri per `Column` (colonne). Ogni colonna ha un spaziature orizzontale (`gutter`) per regolare lo spazio tra di esse. Questo `padding` viene poi neutralizzato dalle righe con margini negativi. In questo modo, tutto il contenuto nelle colonne viene allineato sul lato sinistro.
-  * In un layout a griglia, il contenuto deve essere posizionato all’interno di colonne e solo le colonne possono essere figlie dirette delle righe.
-  * Grazie a flexbox, le colonne della griglia senza uno specifico `width` verranno automaticamente impostate come colonne di uguale larghezza. Per esempio, quattro casi di `<Col size="sm"/>` avranno automaticamente una larghezza del 25% dal più piccolo breakpoint in su. Guarda la sezione [colonne a disposizione automatica](#colonne-a-disposizione-automatica) per maggiori informazioni.
-  * Le classi delle colonne indicano il numero delle colonne che dovresti utilizzare in base alle 12 possibili per riga. Quindi, se vuoi tre colonne di uguale larghezza , puoi usare l'attributo `xs='4'`.
-  * Le width delle colonne sono stabilite in percentuale, quindi sono sempre fluide e dimensionate rispetto al loro elemento genitore.
-  * Le colonne hanno un `padding` orizzontale per creare il `gutter` tra le singole colonne. Per rimuovere il `margin` dalle righe e il `padding` dalle colonne aggiungendo l'attributo `noGutters`  al componente `Row`.
-  * Per renderla responsive, esistono cinque breakpoint della griglia, uno per ogni responsive breakpoint: tutti i breakpoint (extra small), small, medium, large, and extra large.
-  * I breakpoint della griglia si basano su media query con larghezza minima, significa che si applicano a quel breakpoint e a tutti quelli sopra di esso (e.g., `sm='4'` si applica a device piccoli, medi, grandi e extra large, ma non al primo breakpoint xs).
-  * È possibile utilizzare classi di griglia predefinite (come `xs='4'`) per altri markup semantici.
+- I contenitori forniscono un mezzo per centrare e riempire orizzontalmente il contenuto del tuo sito. Utilizza il `Container` per una larghezza al pixel responsive o aggingi l'attributo `fluid` per una larghezza del `width: 100%` su tutti i viewport e dimensioni dei device.
+- I componenti `Row` sono involucri per `Column` (colonne). Ogni colonna ha un spaziature orizzontale (`gutter`) per regolare lo spazio tra di esse. Questo `padding` viene poi neutralizzato dalle righe con margini negativi. In questo modo, tutto il contenuto nelle colonne viene allineato sul lato sinistro.
+- In un layout a griglia, il contenuto deve essere posizionato all’interno di colonne e solo le colonne possono essere figlie dirette delle righe.
+- Grazie a flexbox, le colonne della griglia senza uno specifico `width` verranno automaticamente impostate come colonne di uguale larghezza. Per esempio, quattro casi di `<Col size="sm"/>` avranno automaticamente una larghezza del 25% dal più piccolo breakpoint in su. Guarda la sezione [colonne a disposizione automatica](#colonne-a-disposizione-automatica) per maggiori informazioni.
+- Le classi delle colonne indicano il numero delle colonne che dovresti utilizzare in base alle 12 possibili per riga. Quindi, se vuoi tre colonne di uguale larghezza , puoi usare l'attributo `xs='4'`.
+- Le width delle colonne sono stabilite in percentuale, quindi sono sempre fluide e dimensionate rispetto al loro elemento genitore.
+- Le colonne hanno un `padding` orizzontale per creare il `gutter` tra le singole colonne. Per rimuovere il `margin` dalle righe e il `padding` dalle colonne aggiungendo l'attributo `noGutters` al componente `Row`.
+- Per renderla responsive, esistono cinque breakpoint della griglia, uno per ogni responsive breakpoint: tutti i breakpoint (extra small), small, medium, large, and extra large.
+- I breakpoint della griglia si basano su media query con larghezza minima, significa che si applicano a quel breakpoint e a tutti quelli sopra di esso (e.g., `sm='4'` si applica a device piccoli, medi, grandi e extra large, ma non al primo breakpoint xs).
+- È possibile utilizzare classi di griglia predefinite (come `xs='4'`) per altri markup semantici.
 
 Sii consapevole dei limiti e dei [bug di flexbox](https://github.com/philipwalton/flexbugs), come l’ [incapacità di utilizzare alcuni elementi HTML come i contenitori di flex](https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers).
 
@@ -112,7 +139,7 @@ Per le griglie che sono le stesse dal più piccolo dei dispositivi al più grand
 
 ### Raccolti in orizzontale
 
-Utilizzando un singolo set di classi .col-sm-*, puoi creare un sistema di base che inizia raccolto su dispositivi extra-small prima di diventare orizzontale su dispositivi desktop (medi).
+Utilizzando un singolo set di classi .col-sm-\*, puoi creare un sistema di base che inizia raccolto su dispositivi extra-small prima di diventare orizzontale su dispositivi desktop (medi).
 
 <Canvas>
   <Story id='componenti-layout-component--raccolti-in-orizzontale' />
