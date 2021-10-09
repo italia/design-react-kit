@@ -10,7 +10,7 @@ export const HeroButton: FC<HeroButtonProps> = ({
   wrapperClassName,
   ...attributes
 }) => {
-  const classes = classname('it-btn-container', 'bg-dark', wrapperClassName);
+  const classes = classname('it-btn-container', wrapperClassName);
   return (
     <div className={classes}>
       <Button size='sm' {...attributes} />

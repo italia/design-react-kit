@@ -7745,7 +7745,7 @@ exports[`Storyshots Componenti/Hero Hero Con Sfondo Margine Negativo 1`] = `
           className="col"
         >
           <div
-            className="it-hero-text-wrapper"
+            className="it-hero-text-wrapper bg-dark"
           >
             <span
               className="it-category"
@@ -7763,7 +7763,7 @@ exports[`Storyshots Componenti/Hero Hero Con Sfondo Margine Negativo 1`] = `
               Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
             </p>
             <div
-              className="it-btn-container bg-dark"
+              className="it-btn-container"
             >
               <button
                 aria-label={null}
@@ -7940,7 +7940,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo 1`] = `
           className="col"
         >
           <div
-            className="it-hero-text-wrapper"
+            className="it-hero-text-wrapper bg-dark"
           >
             <span
               className="it-category"
@@ -7958,7 +7958,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo 1`] = `
               Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
             </p>
             <div
-              className="it-btn-container bg-dark"
+              className="it-btn-container"
             >
               <button
                 aria-label={null}
@@ -8001,7 +8001,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Centrato 1`] = `
           className="col"
         >
           <div
-            className="it-hero-text-wrapper"
+            className="it-hero-text-wrapper bg-dark"
           >
             <span
               className="it-category"
@@ -8019,7 +8019,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Centrato 1`] = `
               Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
             </p>
             <div
-              className="it-btn-container bg-dark"
+              className="it-btn-container"
             >
               <button
                 aria-label={null}
@@ -8079,7 +8079,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo 1`] = `
           className="col"
         >
           <div
-            className="it-hero-text-wrapper"
+            className="it-hero-text-wrapper bg-dark"
           >
             <span
               className="it-category"
@@ -8097,7 +8097,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo 1`] = `
               Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
             </p>
             <div
-              className="it-btn-container bg-dark"
+              className="it-btn-container"
             >
               <button
                 aria-label={null}
@@ -8157,7 +8157,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo Overlay Primario 1`
           className="col"
         >
           <div
-            className="it-hero-text-wrapper"
+            className="it-hero-text-wrapper bg-dark"
           >
             <span
               className="it-category"
@@ -8175,7 +8175,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo Overlay Primario 1`
               Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
             </p>
             <div
-              className="it-btn-container bg-dark"
+              className="it-btn-container"
             >
               <button
                 aria-label={null}
