@@ -1,5 +1,6 @@
 # Design React Kit
 
+![CircleCI](https://img.shields.io/circleci/build/github/italia/design-react-kit)
 [![Join channel #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--devel-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
 [![Get an invitation for Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
 
@@ -88,9 +89,9 @@ const WebFont = require('webfontloader')
 WebFont.load({
     custom: {
         families: [
-        'Titillium Web:300,400,600,700:latin-ext',
-        'Lora:400,700:latin-ext',
-        'Roboto Mono:400,700:latin-ext'
+          'Titillium Web:300,400,600,700:latin-ext',
+          'Lora:400,700:latin-ext',
+          'Roboto Mono:400,700:latin-ext'
         ]
     }
 })
