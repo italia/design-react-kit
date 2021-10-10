@@ -7788,10 +7788,10 @@ exports[`Storyshots Componenti/Hero Hero Con Sfondo Margine Negativo 1`] = `
         className="col"
       >
         <div
-          className="card-wrapper"
+          className="card-wrapper card-space"
         >
           <div
-            className="card"
+            className="card-bg card"
           >
             <div
               className="card-body"
