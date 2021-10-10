@@ -3,6 +3,7 @@ const CircularDependencyPlugin = require('circular-dependency-plugin')
 module.exports = {
   stories: ['../stories/**/*.stories.@(ts|tsx|js|jsx|mdx)'],
   addons: [
+    '@storybook/addon-postcss',
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-a11y'
@@ -24,7 +25,7 @@ module.exports = {
     reactDocgen: "react-docgen-typescript",
   },
   webpackFinal: async (config, { configType }) => {
-    const assetRule = config.module.rules.find(({ test }) => test.test(".svg"));
+    const assetRule = config.module.rules.find(({ test }) => test && test.test(".svg"));
     // exclude svg from the default storybook file-loader
     assetRule.exclude = /\.svg$/;
 
