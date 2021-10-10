@@ -87,9 +87,9 @@ const WebFont = require('webfontloader')
 WebFont.load({
     custom: {
         families: [
-        'Titillium Web:300,400,600,700:latin-ext',
-        'Lora:400,700:latin-ext',
-        'Roboto Mono:400,700:latin-ext'
+          'Titillium Web:300,400,600,700:latin-ext',
+          'Lora:400,700:latin-ext',
+          'Roboto Mono:400,700:latin-ext'
         ]
     }
 })

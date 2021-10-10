@@ -1,5 +1,6 @@
 # Design React Kit
 
+[![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/italia/design-react-kit)
 [![Join channel #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--devel-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
 [![Get an invitation for Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
 
@@ -11,7 +12,7 @@
 
 Components are showcased with [Storybook](https://storybook.js.org/).
 
-Public version of Storybook (built from `master` branch) is available here: https://italia.github.io/design-react-kit.
+Public version of Storybook (built from `master` branch) is available [here](https://italia.github.io/design-react-kit).
 
 ## Table of contents
 
@@ -88,9 +89,9 @@ const WebFont = require('webfontloader')
 WebFont.load({
     custom: {
         families: [
-        'Titillium Web:300,400,600,700:latin-ext',
-        'Lora:400,700:latin-ext',
-        'Roboto Mono:400,700:latin-ext'
+          'Titillium Web:300,400,600,700:latin-ext',
+          'Lora:400,700:latin-ext',
+          'Roboto Mono:400,700:latin-ext'
         ]
     }
 })
