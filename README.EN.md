@@ -1,6 +1,6 @@
 # Design React Kit
 
-[![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/italia/design-react-kit)
+![CircleCI](https://img.shields.io/circleci/build/github/italia/design-react-kit)
 [![Join channel #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--devel-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
 [![Get an invitation for Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
 
