@@ -89,27 +89,23 @@ export class TextArea extends React.Component<TextAreaProps, InputState> {
     }
 
     // Styling
-    const {
-      activeClass,
-      infoTextClass,
-      inputClasses,
-      wrapperClass
-    } = getClasses(
-      className,
-      {
-        valid,
-        invalid,
-        placeholder,
-        value,
-        label,
-        infoText,
-        normalized: Boolean(normalized),
-        infoTextControlClass,
-        isFocused: this.state.isFocused,
-        originalWrapperClass
-      },
-      cssModule
-    );
+    const { activeClass, infoTextClass, inputClasses, wrapperClass } =
+      getClasses(
+        className,
+        {
+          valid,
+          invalid,
+          placeholder,
+          value,
+          label,
+          infoText,
+          normalized: Boolean(normalized),
+          infoTextControlClass,
+          isFocused: this.state.isFocused,
+          originalWrapperClass
+        },
+        cssModule
+      );
 
     // set of attributes always shared by the Input components
     const sharedAttributes = {

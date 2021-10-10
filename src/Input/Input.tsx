@@ -171,7 +171,7 @@ export class Input extends React.Component<InputProps, InputState> {
       notifyDeprecation(
         'Please use the prop "bsSize" instead of the "size" to bootstrap\'s input sizing.'
       );
-      bsSize = (size as unknown) as InputProps['bsSize'];
+      bsSize = size as unknown as InputProps['bsSize'];
     } else {
       extraAttributes.size = size;
     }
@@ -205,30 +205,26 @@ export class Input extends React.Component<InputProps, InputState> {
     const inputPassword = extraAttributes.type === 'password';
 
     // Styling
-    const {
-      activeClass,
-      infoTextClass,
-      inputClasses,
-      wrapperClass
-    } = getClasses(
-      className,
-      {
-        valid,
-        invalid,
-        bsSize,
-        placeholder,
-        value,
-        label,
-        infoText,
-        normalized: Boolean(normalized),
-        inputPassword,
-        formControlClass,
-        infoTextControlClass,
-        isFocused: this.state.isFocused,
-        originalWrapperClass: originalWrapperClass || originalWrapperClassOld
-      },
-      cssModule
-    );
+    const { activeClass, infoTextClass, inputClasses, wrapperClass } =
+      getClasses(
+        className,
+        {
+          valid,
+          invalid,
+          bsSize,
+          placeholder,
+          value,
+          label,
+          infoText,
+          normalized: Boolean(normalized),
+          inputPassword,
+          formControlClass,
+          infoTextControlClass,
+          isFocused: this.state.isFocused,
+          originalWrapperClass: originalWrapperClass || originalWrapperClassOld
+        },
+        cssModule
+      );
 
     // set of attributes always shared by the Input components
     const sharedAttributes = {
