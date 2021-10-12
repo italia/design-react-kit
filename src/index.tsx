@@ -154,9 +154,8 @@ export { Section } from './Section/Section';
 export {
   NotificationManager,
   notify,
-  createNotification,
-  NotificationId
-} from './Notification/index';
+  createNotification
+} from './Notification';
 
 // Types
 export type { AlertProps } from './Alert/Alert';
@@ -246,11 +245,12 @@ export type { StepperDotsProps } from './Stepper/StepperDots';
 export type { StepperContentProps } from './Stepper/StepperContent';
 export type { SectionProps } from './Section/Section';
 export type { SelectProps } from './Select/Select';
-export {
+export type {
+  NotificationId,
   NotificationProps,
   NotificationManagerProps,
   NotificationOptions
-} from './Notification/index';
+} from './Notification';
 
 export type {
   ContainerProps,
