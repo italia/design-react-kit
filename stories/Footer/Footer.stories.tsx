@@ -25,10 +25,8 @@ export const Footer = ({ townName, townTagLine }) => {
                   <a href='#' className=''>
                     <Icon icon='it-pa' />
                     <div className='it-brand-text'>
-                      <h2 className='no_toc'>{townName}</h2>
-                      <h3 className='no_toc d-none d-md-block'>
-                        {townTagLine}
-                      </h3>
+                      <h2>{townName}</h2>
+                      <h3 className='d-none d-md-block'>{townTagLine}</h3>
                     </div>
                   </a>
                 </div>

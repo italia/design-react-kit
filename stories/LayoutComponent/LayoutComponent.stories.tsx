@@ -6,92 +6,92 @@ export default {
   title: 'Componenti/Layout Component'
 };
 
-export const StandardizeWidths = () => (
-  <div>
+export const EsempioBase = () => (
+  <div className='docs layout-example'>
     <Container>
       <Row>
-        <Col className='p-3 mb-2 text-white bg-dark'> 1 di 2</Col>
-        <Col className='p-3 mb-2 text-white bg-primary'>2 di 2</Col>
-      </Row>
-      <Row>
-        <Col className='p-3 mb-2 text-white bg-dark'>1 di 3</Col>
-        <Col className='p-3 mb-2 text-white bg-primary'>2 di 3</Col>
-        <Col className='p-3 mb-2 text-white bg-dark'>3 di 3</Col>
+        <Col>Una di tre colonne</Col>
+        <Col>Una di tre colonne</Col>
+        <Col>Una di tre colonne</Col>
       </Row>
     </Container>
   </div>
 );
 
-StandardizeWidths.story = {
-  name: 'Larghezze standard'
-};
-
-export const SetWidthOfColumn = () => (
-  <div>
+export const LarghezzeStandard = () => (
+  <div className='docs layout-example'>
     <Container>
       <Row>
-        <Col className='p-3 mb-2 text-white bg-dark'> 1 di 3</Col>
-        <Col xs='6' className='p-3 mb-2 text-white bg-primary'>
-          2 di 3 (larga 6/12)
-        </Col>
-        <Col className='p-3 mb-2 text-white bg-dark'>3 di 3</Col>
+        <Col>1 di 2</Col>
+        <Col>2 di 2</Col>
       </Row>
       <Row>
-        <Col className='p-3 mb-2 text-white bg-dark'>1 di 3</Col>
-        <Col xs='5' className='p-3 mb-2 text-white bg-primary'>
-          2 di 3 (larga 5/12)
-        </Col>
-        <Col className='p-3 mb-2 text-white bg-dark'>3 di 3</Col>
+        <Col>1 di 3</Col>
+        <Col>2 di 3</Col>
+        <Col>3 di 3</Col>
       </Row>
     </Container>
   </div>
 );
 
-SetWidthOfColumn.story = {
-  name: 'Imposta larghezza colonne'
-};
-
-export const VariableWidthContent = () => (
-  <div>
+export const RigheMultipleBugSafari = () => (
+  <div className='docs layout-example'>
     <Container>
       <Row>
-        <Col lg='2' className='p-3 mb-2 text-white bg-dark'>
-          1 di 3
-        </Col>
-        <Col xs='auto' className='p-3 mb-2 text-white bg-primary'>
-          Contenuto a larghezza variabile
-        </Col>
-        <Col lg='2' className='p-3 mb-2 text-white bg-dark'>
-          3 di 3
-        </Col>
-      </Row>
-      <Row>
-        <Col className='p-3 mb-2 text-white bg-dark'>1 di 3</Col>
-        <Col md='auto' className='p-3 mb-2 text-white bg-primary'>
-          Contenuto a larghezza variabile
-        </Col>
-        <Col lg='2' className='p-3 mb-2 text-white bg-dark'>
-          3 di 3
-        </Col>
+        <Col>Colonna</Col>
+        <Col>Colonna</Col>
+        <div className='w-100'></div>
+        <Col>Colonna</Col>
+        <Col>Colonna</Col>
       </Row>
     </Container>
   </div>
 );
 
-VariableWidthContent.story = {
-  name: 'Variable width content'
-};
+export const ImpostaLarghezzaColonne = () => (
+  <div className='docs layout-example'>
+    <Container>
+      <Row>
+        <Col>1 di 3</Col>
+        <Col xs='6'>2 di 3 (larga 6/12)</Col>
+        <Col>3 di 3</Col>
+      </Row>
+      <Row>
+        <Col>1 di 3</Col>
+        <Col xs='5'>2 di 3 (larga 5/12)</Col>
+        <Col>3 di 3</Col>
+      </Row>
+    </Container>
+  </div>
+);
+
+export const ContenutoLarghezzaVariabile = () => (
+  <div className='docs layout-example'>
+    <Container>
+      <Row className='justify-content-md-center'>
+        <Col lg='2'>1 di 3</Col>
+        <Col xs='auto'>Contenuto a larghezza variabile</Col>
+        <Col lg='2'>3 di 3</Col>
+      </Row>
+      <Row>
+        <Col>1 di 3</Col>
+        <Col md='auto'>Contenuto a larghezza variabile</Col>
+        <Col lg='2'>3 di 3</Col>
+      </Row>
+    </Container>
+  </div>
+);
 
 export const EqualWidthMultiRow = () => (
-  <div>
+  <div className='docs layout-example'>
     <Container>
       <Row>
-        <Col className='p-3 mb-2 text-white bg-dark'>col</Col>
-        <Col className='p-3 mb-2 text-white bg-primary'>col</Col>
+        <Col>col</Col>
+        <Col>col</Col>
       </Row>
       <Row>
-        <Col className='p-3 mb-2 text-white bg-primary'>col</Col>
-        <Col className='p-3 mb-2 text-white bg-dark'>col</Col>
+        <Col>col</Col>
+        <Col>col</Col>
       </Row>
     </Container>
   </div>
@@ -102,21 +102,17 @@ EqualWidthMultiRow.story = {
 };
 
 export const TuttiIBreakpoint = () => (
-  <div>
+  <div className='docs layout-example'>
     <Container>
       <Row>
-        <Col className='p-3 mb-2 text-white bg-dark'>col</Col>
-        <Col className='p-3 mb-2 text-white bg-primary'>col</Col>
-        <Col className='p-3 mb-2 text-white bg-dark'>col</Col>
-        <Col className='p-3 mb-2 text-white bg-primary'>col</Col>
+        <Col>col</Col>
+        <Col>col</Col>
+        <Col>col</Col>
+        <Col>col</Col>
       </Row>
       <Row>
-        <Col xs={8} className='p-3 mb-2 text-white bg-primary'>
-          col-8
-        </Col>
-        <Col xs={4} className='p-3 mb-2 text-white bg-dark'>
-          col-4
-        </Col>
+        <Col xs={8}>col-8</Col>
+        <Col xs={4}>col-4</Col>
       </Row>
     </Container>
   </div>
@@ -127,26 +123,16 @@ TuttiIBreakpoint.story = {
 };
 
 export const RaccoltiInOrizzontale = () => (
-  <div>
+  <div className='docs layout-example'>
     <Container>
       <Row>
-        <Col sm='8' className='p-3 mb-2 text-white bg-dark'>
-          col-sm-8
-        </Col>
-        <Col sm='4' className='p-3 mb-2 text-white bg-primary'>
-          col-sm-4
-        </Col>
+        <Col sm='8'>col-sm-8</Col>
+        <Col sm='4'>col-sm-4</Col>
       </Row>
       <Row>
-        <Col widths={['sm']} className='p-3 mb-2 text-white bg-primary'>
-          col-sm
-        </Col>
-        <Col widths={['sm']} className='p-3 mb-2 text-white bg-dark'>
-          col-sm
-        </Col>
-        <Col widths={['sm']} className='p-3 mb-2 text-white bg-primary'>
-          col-sm
-        </Col>
+        <Col widths={['sm']}>col-sm</Col>
+        <Col widths={['sm']}>col-sm</Col>
+        <Col widths={['sm']}>col-sm</Col>
       </Row>
     </Container>
   </div>
@@ -157,34 +143,30 @@ RaccoltiInOrizzontale.story = {
 };
 
 export const MischiareEAbbinare = () => (
-  <div>
+  <div className='docs layout-example'>
     <Container>
       <Row>
-        <Col xs='12' md='8' className='p-3 mb-2 text-white bg-dark'>
+        <Col xs='12' md='8'>
           .col-12 .col-md-8
         </Col>
-        <Col xs='6' md='4' className='p-3 mb-2 text-white bg-primary'>
+        <Col xs='6' md='4'>
           .col-6 .col-md-4
         </Col>
       </Row>
       <Row>
-        <Col xs='6' md='4' className='p-3 mb-2 text-white bg-primary'>
+        <Col xs='6' md='4'>
           .col-6 .col-md-4
         </Col>
-        <Col xs='6' md='4' className='p-3 mb-2 text-white bg-dark'>
+        <Col xs='6' md='4'>
           .col-6 .col-md-4
         </Col>
-        <Col xs='6' md='4' className='p-3 mb-2 text-white bg-primary'>
+        <Col xs='6' md='4'>
           .col-6 .col-md-4
         </Col>
       </Row>
       <Row>
-        <Col xs='6' className='p-3 mb-2 text-white bg-primary'>
-          .col-6
-        </Col>
-        <Col xs='6' className='p-3 mb-2 text-white bg-dark'>
-          .col-6
-        </Col>
+        <Col xs='6'>.col-6</Col>
+        <Col xs='6'>.col-6</Col>
       </Row>
     </Container>
   </div>

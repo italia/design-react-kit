@@ -54,7 +54,7 @@ const PosizionamentoFondoPagina = () => {
         </a>
         <div className='menu-wrapper'>
           <div className='link-list-wrapper'>
-            <h3 className='no_toc'>header</h3>
+            <h3>header</h3>
             <ul className='link-list'>
               <li className='nav-item active'>
                 <a className='nav-link active' href='#'>

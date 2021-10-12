@@ -40,6 +40,3 @@ export const AccordionHeader: FC<AccordionHeaderProps> = ({
     </div>
   );
 };
-
-// AccordionHeader.propTypes = propTypes
-// AccordionHeader.defaultProps = defaultProps

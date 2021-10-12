@@ -29,6 +29,7 @@ const Homepage = ({ theme, townName, townTagLine }) => {
         theme={theme}
         townName={townName}
         townTagLine={townTagLine}
+        page='homepage'
       />
       <section id='head-section'>
         <Container>

@@ -174,7 +174,7 @@ export const HeroConSfondoMargineNegativo = () => {
       <Container>
         <Row>
           <Col>
-            <Card>
+            <Card spacing className='card-bg'>
               <CardBody>
                 <CardTitle tag='h5' className='big-heading'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit…

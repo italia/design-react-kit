@@ -7745,7 +7745,7 @@ exports[`Storyshots Componenti/Hero Hero Con Sfondo Margine Negativo 1`] = `
           className="col"
         >
           <div
-            className="it-hero-text-wrapper"
+            className="it-hero-text-wrapper bg-dark"
           >
             <span
               className="it-category"
@@ -7753,7 +7753,7 @@ exports[`Storyshots Componenti/Hero Hero Con Sfondo Margine Negativo 1`] = `
               Category
             </span>
             <h1
-              className="no_toc"
+              className=""
             >
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
@@ -7763,7 +7763,7 @@ exports[`Storyshots Componenti/Hero Hero Con Sfondo Margine Negativo 1`] = `
               Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
             </p>
             <div
-              className="it-btn-container bg-dark"
+              className="it-btn-container"
             >
               <button
                 aria-label={null}
@@ -7788,10 +7788,10 @@ exports[`Storyshots Componenti/Hero Hero Con Sfondo Margine Negativo 1`] = `
         className="col"
       >
         <div
-          className="card-wrapper"
+          className="card-wrapper card-space"
         >
           <div
-            className="card"
+            className="card-bg card"
           >
             <div
               className="card-body"
@@ -7940,7 +7940,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo 1`] = `
           className="col"
         >
           <div
-            className="it-hero-text-wrapper"
+            className="it-hero-text-wrapper bg-dark"
           >
             <span
               className="it-category"
@@ -7948,7 +7948,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo 1`] = `
               Category
             </span>
             <h1
-              className="no_toc"
+              className=""
             >
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
@@ -7958,7 +7958,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo 1`] = `
               Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
             </p>
             <div
-              className="it-btn-container bg-dark"
+              className="it-btn-container"
             >
               <button
                 aria-label={null}
@@ -8001,7 +8001,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Centrato 1`] = `
           className="col"
         >
           <div
-            className="it-hero-text-wrapper"
+            className="it-hero-text-wrapper bg-dark"
           >
             <span
               className="it-category"
@@ -8009,7 +8009,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Centrato 1`] = `
               Category
             </span>
             <h1
-              className="no_toc"
+              className=""
             >
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
@@ -8019,7 +8019,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Centrato 1`] = `
               Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
             </p>
             <div
-              className="it-btn-container bg-dark"
+              className="it-btn-container"
             >
               <button
                 aria-label={null}
@@ -8079,7 +8079,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo 1`] = `
           className="col"
         >
           <div
-            className="it-hero-text-wrapper"
+            className="it-hero-text-wrapper bg-dark"
           >
             <span
               className="it-category"
@@ -8087,7 +8087,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo 1`] = `
               Category
             </span>
             <h1
-              className="no_toc"
+              className=""
             >
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
@@ -8097,7 +8097,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo 1`] = `
               Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
             </p>
             <div
-              className="it-btn-container bg-dark"
+              className="it-btn-container"
             >
               <button
                 aria-label={null}
@@ -8157,7 +8157,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo Overlay Primario 1`
           className="col"
         >
           <div
-            className="it-hero-text-wrapper"
+            className="it-hero-text-wrapper bg-dark"
           >
             <span
               className="it-category"
@@ -8165,7 +8165,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo Overlay Primario 1`
               Category
             </span>
             <h1
-              className="no_toc"
+              className=""
             >
               Heading lorem ipsum dolor sit amet, consetetur sadipscing.
             </h1>
@@ -8175,7 +8175,7 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo Overlay Primario 1`
               Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
             </p>
             <div
-              className="it-btn-container bg-dark"
+              className="it-btn-container"
             >
               <button
                 aria-label={null}
@@ -8186,6 +8186,67 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo Overlay Primario 1`
               </button>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Layout Component Contenuto Larghezza Variabile 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="docs layout-example"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="justify-content-md-center row"
+      >
+        <div
+          className="col-lg-2"
+        >
+          1 di 3
+        </div>
+        <div
+          className="col-auto"
+        >
+          Contenuto a larghezza variabile
+        </div>
+        <div
+          className="col-lg-2"
+        >
+          3 di 3
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col"
+        >
+          1 di 3
+        </div>
+        <div
+          className="col-md-auto"
+        >
+          Contenuto a larghezza variabile
+        </div>
+        <div
+          className="col-lg-2"
+        >
+          3 di 3
         </div>
       </div>
     </div>
@@ -8205,7 +8266,9 @@ exports[`Storyshots Componenti/Layout Component Equal-width multi-row 1`] = `
     }
   }
 >
-  <div>
+  <div
+    className="docs layout-example"
+  >
     <div
       className="container"
     >
@@ -8213,12 +8276,12 @@ exports[`Storyshots Componenti/Layout Component Equal-width multi-row 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           col
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           col
         </div>
@@ -8227,12 +8290,12 @@ exports[`Storyshots Componenti/Layout Component Equal-width multi-row 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           col
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           col
         </div>
@@ -8242,7 +8305,7 @@ exports[`Storyshots Componenti/Layout Component Equal-width multi-row 1`] = `
 </div>
 `;
 
-exports[`Storyshots Componenti/Layout Component Imposta larghezza colonne 1`] = `
+exports[`Storyshots Componenti/Layout Component Esempio Base 1`] = `
 <div
   style={
     Object {
@@ -8254,7 +8317,9 @@ exports[`Storyshots Componenti/Layout Component Imposta larghezza colonne 1`] = 
     }
   }
 >
-  <div>
+  <div
+    className="docs layout-example"
+  >
     <div
       className="container"
     >
@@ -8262,36 +8327,78 @@ exports[`Storyshots Componenti/Layout Component Imposta larghezza colonne 1`] = 
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
-           1 di 3
+          Una di tre colonne
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col-6"
+          className="col"
         >
-          2 di 3 (larga 6/12)
+          Una di tre colonne
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
-          3 di 3
+          Una di tre colonne
         </div>
       </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Layout Component Imposta Larghezza Colonne 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="docs layout-example"
+  >
+    <div
+      className="container"
+    >
       <div
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           1 di 3
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col-5"
+          className="col-6"
+        >
+          2 di 3 (larga 6/12)
+        </div>
+        <div
+          className="col"
+        >
+          3 di 3
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col"
+        >
+          1 di 3
+        </div>
+        <div
+          className="col-5"
         >
           2 di 3 (larga 5/12)
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           3 di 3
         </div>
@@ -8301,7 +8408,7 @@ exports[`Storyshots Componenti/Layout Component Imposta larghezza colonne 1`] = 
 </div>
 `;
 
-exports[`Storyshots Componenti/Layout Component Larghezze standard 1`] = `
+exports[`Storyshots Componenti/Layout Component Larghezze Standard 1`] = `
 <div
   style={
     Object {
@@ -8313,7 +8420,9 @@ exports[`Storyshots Componenti/Layout Component Larghezze standard 1`] = `
     }
   }
 >
-  <div>
+  <div
+    className="docs layout-example"
+  >
     <div
       className="container"
     >
@@ -8321,12 +8430,12 @@ exports[`Storyshots Componenti/Layout Component Larghezze standard 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
-           1 di 2
+          1 di 2
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           2 di 2
         </div>
@@ -8335,17 +8444,17 @@ exports[`Storyshots Componenti/Layout Component Larghezze standard 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           1 di 3
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           2 di 3
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           3 di 3
         </div>
@@ -8367,7 +8476,9 @@ exports[`Storyshots Componenti/Layout Component Mischiare e abbinare 1`] = `
     }
   }
 >
-  <div>
+  <div
+    className="docs layout-example"
+  >
     <div
       className="container"
     >
@@ -8375,12 +8486,12 @@ exports[`Storyshots Componenti/Layout Component Mischiare e abbinare 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col-12 col-md-8"
+          className="col-12 col-md-8"
         >
           .col-12 .col-md-8
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col-6 col-md-4"
+          className="col-6 col-md-4"
         >
           .col-6 .col-md-4
         </div>
@@ -8389,17 +8500,17 @@ exports[`Storyshots Componenti/Layout Component Mischiare e abbinare 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-primary col-6 col-md-4"
+          className="col-6 col-md-4"
         >
           .col-6 .col-md-4
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col-6 col-md-4"
+          className="col-6 col-md-4"
         >
           .col-6 .col-md-4
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col-6 col-md-4"
+          className="col-6 col-md-4"
         >
           .col-6 .col-md-4
         </div>
@@ -8408,12 +8519,12 @@ exports[`Storyshots Componenti/Layout Component Mischiare e abbinare 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-primary col-6"
+          className="col-6"
         >
           .col-6
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col-6"
+          className="col-6"
         >
           .col-6
         </div>
@@ -8435,7 +8546,9 @@ exports[`Storyshots Componenti/Layout Component Raccolti in orizzontale 1`] = `
     }
   }
 >
-  <div>
+  <div
+    className="docs layout-example"
+  >
     <div
       className="container"
     >
@@ -8443,12 +8556,12 @@ exports[`Storyshots Componenti/Layout Component Raccolti in orizzontale 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col-sm-8"
+          className="col-sm-8"
         >
           col-sm-8
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col-sm-4"
+          className="col-sm-4"
         >
           col-sm-4
         </div>
@@ -8457,19 +8570,69 @@ exports[`Storyshots Componenti/Layout Component Raccolti in orizzontale 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           col-sm
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           col-sm
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           col-sm
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Layout Component Righe Multiple Bug Safari 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="docs layout-example"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col"
+        >
+          Colonna
+        </div>
+        <div
+          className="col"
+        >
+          Colonna
+        </div>
+        <div
+          className="w-100"
+        />
+        <div
+          className="col"
+        >
+          Colonna
+        </div>
+        <div
+          className="col"
+        >
+          Colonna
         </div>
       </div>
     </div>
@@ -8489,7 +8652,9 @@ exports[`Storyshots Componenti/Layout Component Tutti i breakpoint 1`] = `
     }
   }
 >
-  <div>
+  <div
+    className="docs layout-example"
+  >
     <div
       className="container"
     >
@@ -8497,22 +8662,22 @@ exports[`Storyshots Componenti/Layout Component Tutti i breakpoint 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           col
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           col
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col"
+          className="col"
         >
           col
         </div>
         <div
-          className="p-3 mb-2 text-white bg-primary col"
+          className="col"
         >
           col
         </div>
@@ -8521,73 +8686,14 @@ exports[`Storyshots Componenti/Layout Component Tutti i breakpoint 1`] = `
         className="row"
       >
         <div
-          className="p-3 mb-2 text-white bg-primary col-8"
+          className="col-8"
         >
           col-8
         </div>
         <div
-          className="p-3 mb-2 text-white bg-dark col-4"
+          className="col-4"
         >
           col-4
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Componenti/Layout Component Variable width content 1`] = `
-<div
-  style={
-    Object {
-      "boxSizing": "border-box",
-      "margin": "0",
-      "padding": "48px 32px",
-      "position": "relative",
-      "textAlign": "initial",
-    }
-  }
->
-  <div>
-    <div
-      className="container"
-    >
-      <div
-        className="row"
-      >
-        <div
-          className="p-3 mb-2 text-white bg-dark col-lg-2"
-        >
-          1 di 3
-        </div>
-        <div
-          className="p-3 mb-2 text-white bg-primary col-auto"
-        >
-          Contenuto a larghezza variabile
-        </div>
-        <div
-          className="p-3 mb-2 text-white bg-dark col-lg-2"
-        >
-          3 di 3
-        </div>
-      </div>
-      <div
-        className="row"
-      >
-        <div
-          className="p-3 mb-2 text-white bg-dark col"
-        >
-          1 di 3
-        </div>
-        <div
-          className="p-3 mb-2 text-white bg-primary col-md-auto"
-        >
-          Contenuto a larghezza variabile
-        </div>
-        <div
-          className="p-3 mb-2 text-white bg-dark col-lg-2"
-        >
-          3 di 3
         </div>
       </div>
     </div>
@@ -9100,9 +9206,7 @@ exports[`Storyshots Componenti/LinkList Titolo lista 1`] = `
         <div
           className="link-list-wrapper menu-link-list"
         >
-          <h3
-            className="no_toc"
-          >
+          <h3>
             Indice della pagina
           </h3>
           <ul
@@ -14748,6 +14852,1243 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Utility_story_hidden Colori Custom Complementari E Triadici Story Hidden 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="complementary-1-bg p-3"
+  >
+    <span>
+      Testo su background colore complementare 1
+    </span>
+  </div>
+  <div
+    className="complementary-2-bg p-3"
+  >
+    <span>
+      Testo su background colore complementare 2
+    </span>
+  </div>
+  <div
+    className="complementary-3-bg p-3"
+  >
+    <span>
+      Testo su background colore complementare 3
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Utility_story_hidden Colori Custom Secondari Analoghi Story Hidden 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-3"
+    >
+      <div
+        className="c-line analogue-1-bg-a1"
+      >
+        a1 
+      </div>
+      <div
+        className="c-line analogue-1-bg-a2"
+      >
+        a2 
+      </div>
+      <div
+        className="c-line analogue-1-bg-a3"
+      >
+        a3 
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-a4"
+      >
+        a4 
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-a5"
+      >
+        a5 
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-a6"
+      >
+        a6 
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-a7"
+      >
+        a7 
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-a8"
+      >
+        a8 
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-a9"
+      >
+        a9 
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-a10"
+      >
+        a10 
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-a11"
+      >
+        a11 
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-a12"
+      >
+        a12 
+      </div>
+    </div>
+    <div
+      className="col-md-3"
+    >
+      <div
+        className="c-line white-color analogue-1-bg-b1"
+      >
+        b1
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-b2"
+      >
+        b2
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-b3"
+      >
+        b3
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-b4"
+      >
+        b4
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-b5"
+      >
+        b5
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-b6"
+      >
+        b6
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-b7"
+      >
+        b7
+      </div>
+      <div
+        className="c-line white-color analogue-1-bg-b8"
+      >
+        b8
+      </div>
+    </div>
+    <div
+      className="col-md-3"
+    >
+      <div
+        className="c-line analogue-2-bg-a1"
+      >
+        a1
+      </div>
+      <div
+        className="c-line analogue-2-bg-a2"
+      >
+        a2
+      </div>
+      <div
+        className="c-line analogue-2-bg-a3"
+      >
+        a3
+      </div>
+      <div
+        className="c-line analogue-2-bg-a4"
+      >
+        a4
+      </div>
+      <div
+        className="c-line analogue-2-bg-a5"
+      >
+        a5
+      </div>
+      <div
+        className="c-line analogue-2-bg-a6"
+      >
+        a6
+      </div>
+      <div
+        className="c-line analogue-2-bg-a7"
+      >
+        a7
+      </div>
+      <div
+        className="c-line analogue-2-bg-a8"
+      >
+        a8
+      </div>
+      <div
+        className="c-line white-color analogue-2-bg-a9"
+      >
+        a9
+      </div>
+      <div
+        className="c-line white-color analogue-2-bg-a10"
+      >
+        a10
+      </div>
+      <div
+        className="c-line white-color analogue-2-bg-a11"
+      >
+        a11
+      </div>
+      <div
+        className="c-line white-color analogue-2-bg-a12"
+      >
+        a12
+      </div>
+    </div>
+    <div
+      className="col-md-3"
+    >
+      <div
+        className="c-line white-color analogue-2-bg-b1"
+      >
+        b1
+      </div>
+      <div
+        className="c-line white-color analogue-2-bg-b2"
+      >
+        b2
+      </div>
+      <div
+        className="c-line white-color analogue-2-bg-b3"
+      >
+        b3
+      </div>
+      <div
+        className="c-line white-color analogue-2-bg-b4"
+      >
+        b4
+      </div>
+      <div
+        className="c-line white-color analogue-2-bg-b5"
+      >
+        b5
+      </div>
+      <div
+        className="c-line white-color analogue-2-bg-b6"
+      >
+        b6
+      </div>
+      <div
+        className="c-line white-color analogue-2-bg-b7"
+      >
+        b7
+      </div>
+      <div
+        className="c-line white-color analogue-2-bg-b8"
+      >
+        b8
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Utility_story_hidden Colori Custom Secondari Story Hidden 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="analogue-1-bg p-3"
+  >
+    <span
+      className="white-color"
+    >
+      Testo bianco su background colore analogo 1
+    </span>
+  </div>
+  <div
+    className="analogue-2-bg p-3"
+  >
+    <span
+      className="analogue-1-color"
+    >
+      Testo colore analogo 1 su background colore analogo 2
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Utility_story_hidden Colori Custom Story Hidden 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="primary-bg p-3"
+  >
+    <span
+      className="white-color"
+    >
+      Testo bianco su background colore primario
+    </span>
+  </div>
+  <div
+    className="primary-border-color border p-3"
+  >
+    <span
+      className="primary-color"
+    >
+      Testo colore primario su background con bordo primario
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Utility_story_hidden Colori Grigi Chiari Custom Story Hidden 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-2"
+    >
+      <div
+        className="c-line lightgrey-bg-a1"
+      >
+        a1
+      </div>
+      <div
+        className="c-line lightgrey-bg-a2"
+      >
+        a2
+      </div>
+      <div
+        className="c-line lightgrey-bg-a3"
+      >
+        a3
+      </div>
+      <div
+        className="c-line lightgrey-bg-a4"
+      >
+        a4
+      </div>
+    </div>
+    <div
+      className="col-md-2"
+    >
+      <div
+        className="c-line lightgrey-bg-b1"
+      >
+        b1
+      </div>
+      <div
+        className="c-line lightgrey-bg-b2"
+      >
+        b2
+      </div>
+      <div
+        className="c-line lightgrey-bg-b3"
+      >
+        b3
+      </div>
+      <div
+        className="c-line lightgrey-bg-b4"
+      >
+        b4
+      </div>
+    </div>
+    <div
+      className="col-md-2"
+    >
+      <div
+        className="c-line lightgrey-bg-c1"
+      >
+        c1
+      </div>
+      <div
+        className="c-line lightgrey-bg-c2"
+      >
+        c2
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Utility_story_hidden Colori Neutrali Custom Story Hidden 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="neutral-1-bg p-3"
+  >
+    <span
+      className="white-color"
+    >
+      Testo bianco su background colore neutrale 1
+    </span>
+  </div>
+  <div
+    className="neutral-2-bg p-3"
+  >
+    <span>
+      Testo su background colore neutrale 2
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Utility_story_hidden Colori Secondari Custom Complementari E Triadici Story Hidden 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-2"
+    >
+      <div
+        className="c-line complementary-1-bg-a1"
+      >
+        a1
+      </div>
+      <div
+        className="c-line complementary-1-bg-a2"
+      >
+        a2
+      </div>
+      <div
+        className="c-line complementary-1-bg-a3"
+      >
+        a3
+      </div>
+      <div
+        className="c-line complementary-1-bg-a4"
+      >
+        a4
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-a5"
+      >
+        a5
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-a6"
+      >
+        a6
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-a7"
+      >
+        a7
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-a8"
+      >
+        a8
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-a9"
+      >
+        a9
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-a10"
+      >
+        a10
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-a11"
+      >
+        a11
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-a12"
+      >
+        a12
+      </div>
+    </div>
+    <div
+      className="col-md-2"
+    >
+      <div
+        className="c-line white-color complementary-1-bg-b1"
+      >
+        b1
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-b2"
+      >
+        b2
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-b3"
+      >
+        b3
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-b4"
+      >
+        b4
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-b5"
+      >
+        b5
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-b6"
+      >
+        b6
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-b7"
+      >
+        b7
+      </div>
+      <div
+        className="c-line white-color complementary-1-bg-b8"
+      >
+        b8
+      </div>
+    </div>
+    <div
+      className="col-md-2"
+    >
+      <div
+        className="c-line complementary-2-bg-a1"
+      >
+        a1
+      </div>
+      <div
+        className="c-line complementary-2-bg-a2"
+      >
+        a2
+      </div>
+      <div
+        className="c-line complementary-2-bg-a3"
+      >
+        a3
+      </div>
+      <div
+        className="c-line complementary-2-bg-a4"
+      >
+        a4
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-a5"
+      >
+        a5
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-a6"
+      >
+        a6
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-a7"
+      >
+        a7
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-a8"
+      >
+        a8
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-a9"
+      >
+        a9
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-a10"
+      >
+        a10
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-a11"
+      >
+        a11
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-a12"
+      >
+        a12
+      </div>
+    </div>
+    <div
+      className="col-md-2"
+    >
+      <div
+        className="c-line white-color complementary-2-bg-b1"
+      >
+        b1
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-b2"
+      >
+        b2
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-b3"
+      >
+        b3
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-b4"
+      >
+        b4
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-b5"
+      >
+        b5
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-b6"
+      >
+        b6
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-b7"
+      >
+        b7
+      </div>
+      <div
+        className="c-line white-color complementary-2-bg-b8"
+      >
+        b8
+      </div>
+    </div>
+    <div
+      className="col-md-2"
+    >
+      <div
+        className="c-line complementary-3-bg-a1"
+      >
+        a1
+      </div>
+      <div
+        className="c-line complementary-3-bg-a2"
+      >
+        a2
+      </div>
+      <div
+        className="c-line complementary-3-bg-a3"
+      >
+        a3
+      </div>
+      <div
+        className="c-line complementary-3-bg-a4"
+      >
+        a4
+      </div>
+      <div
+        className="c-line complementary-3-bg-a5"
+      >
+        a5
+      </div>
+      <div
+        className="c-line complementary-3-bg-a6"
+      >
+        a6
+      </div>
+      <div
+        className="c-line white-color complementary-3-bg-a7"
+      >
+        a7
+      </div>
+      <div
+        className="c-line white-color complementary-3-bg-a8"
+      >
+        a8
+      </div>
+      <div
+        className="c-line white-color complementary-3-bg-a9"
+      >
+        a9
+      </div>
+      <div
+        className="c-line white-color complementary-3-bg-a10"
+      >
+        a10
+      </div>
+      <div
+        className="c-line white-color complementary-3-bg-a11"
+      >
+        a11
+      </div>
+      <div
+        className="c-line white-color complementary-3-bg-a12"
+      >
+        a12
+      </div>
+    </div>
+    <div
+      className="col-md-2"
+    >
+      <div
+        className="c-line white-color complementary-3-bg-b1"
+      >
+        b1
+      </div>
+      <div
+        className="c-line white-color complementary-3-bg-b2"
+      >
+        b2
+      </div>
+      <div
+        className="c-line white-color complementary-3-bg-b3"
+      >
+        b3
+      </div>
+      <div
+        className="c-line white-color complementary-3-bg-b4"
+      >
+        b4
+      </div>
+      <div
+        className="c-line white-color complementary-3-bg-b5"
+      >
+        b5
+      </div>
+      <div
+        className="c-line white-color complementary-3-bg-b6"
+      >
+        b6
+      </div>
+      <div
+        className="c-line white-color complementary-3-bg-b7"
+      >
+        b7
+      </div>
+      <div
+        className="c-line white-color complementary-3-bg-b8"
+      >
+        b8
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Utility_story_hidden Colori Sfondo Story Hidden 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="p-3 mb-2 bg-primary text-white"
+  >
+    .bg-primary
+  </div>
+  <div
+    className="p-3 mb-2 bg-secondary text-white"
+  >
+    .bg-secondary
+  </div>
+  <div
+    className="p-3 mb-2 bg-success text-white"
+  >
+    .bg-success
+  </div>
+  <div
+    className="p-3 mb-2 bg-danger text-white"
+  >
+    .bg-danger
+  </div>
+  <div
+    className="p-3 mb-2 bg-warning text-white"
+  >
+    .bg-warning
+  </div>
+  <div
+    className="p-3 mb-2 bg-white text-dark"
+  >
+    .bg-white
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Utility_story_hidden Colori Testo Story Hidden 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <p
+    className="p-3 mb-2 text-primary"
+  >
+    .text-primary
+  </p>
+  <p
+    className="p-3 mb-2 text-secondary"
+  >
+    .text-secondary
+  </p>
+  <p
+    className="p-3 mb-2 text-success"
+  >
+    .text-success
+  </p>
+  <p
+    className="p-3 mb-2 text-danger"
+  >
+    .text-danger
+  </p>
+  <p
+    className="p-3 mb-2 text-warning"
+  >
+    .text-warning
+  </p>
+  <p
+    className="p-3 mb-2 text-muted"
+  >
+    .text-muted
+  </p>
+  <p
+    className="p-3 mb-2 text-white bg-dark"
+  >
+    .text-white
+  </p>
+</div>
+`;
+
+exports[`Storyshots Componenti/Utility_story_hidden Variante Colori Neutrali Custom Story Hidden 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-3"
+    >
+      <div
+        className="c-line neutral-1-bg-a1"
+      >
+        a1
+      </div>
+      <div
+        className="c-line neutral-1-bg-a2"
+      >
+        a2
+      </div>
+      <div
+        className="c-line neutral-1-bg-a3"
+      >
+        a3
+      </div>
+      <div
+        className="c-line neutral-1-bg-a4"
+      >
+        a4
+      </div>
+      <div
+        className="c-line neutral-1-bg-a5"
+      >
+        a5
+      </div>
+      <div
+        className="c-line white-color neutral-1-bg-a6"
+      >
+        a6
+      </div>
+      <div
+        className="c-line white-color neutral-1-bg-a7"
+      >
+        a7
+      </div>
+      <div
+        className="c-line white-color neutral-1-bg-a8"
+      >
+        a8
+      </div>
+      <div
+        className="c-line white-color neutral-1-bg-a9"
+      >
+        a9
+      </div>
+      <div
+        className="c-line white-color neutral-1-bg-a10"
+      >
+        a10
+      </div>
+    </div>
+    <div
+      className="col-md-3"
+    >
+      <div
+        className="c-line neutral-2-bg-b1"
+      >
+        b1
+      </div>
+      <div
+        className="c-line neutral-2-bg-b2"
+      >
+        b2
+      </div>
+      <div
+        className="c-line neutral-2-bg-b3"
+      >
+        b3
+      </div>
+      <div
+        className="c-line white-color neutral-2-bg-b4"
+      >
+        b4
+      </div>
+      <div
+        className="c-line white-color neutral-2-bg-b5"
+      >
+        b5
+      </div>
+      <div
+        className="c-line white-color neutral-2-bg-b6"
+      >
+        b6
+      </div>
+      <div
+        className="c-line white-color neutral-2-bg-b7"
+      >
+        b7
+      </div>
+    </div>
+    <div
+      className="col-md-3"
+    >
+      <div
+        className="c-line neutral-2-bg-a1"
+      >
+        a1
+      </div>
+      <div
+        className="c-line neutral-2-bg-a2"
+      >
+        a2
+      </div>
+      <div
+        className="c-line neutral-2-bg-a3"
+      >
+        a3
+      </div>
+      <div
+        className="c-line white-color neutral-2-bg-a4"
+      >
+        a4
+      </div>
+      <div
+        className="c-line white-color neutral-2-bg-a5"
+      >
+        a5
+      </div>
+      <div
+        className="c-line white-color neutral-2-bg-a6"
+      >
+        a6
+      </div>
+      <div
+        className="c-line white-color neutral-2-bg-a7"
+      >
+        a7
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Utility_story_hidden Varianti Colore Story Hidden 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="bd-example-border-utils"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-12 col-md-3"
+      >
+        <p>
+          Tinte e ombre
+        </p>
+        <div
+          className="c-line primary-bg-a1"
+        >
+          a1
+        </div>
+        <div
+          className="c-line primary-bg-a2"
+        >
+          a2
+        </div>
+        <div
+          className="c-line primary-bg-a3"
+        >
+          a3
+        </div>
+        <div
+          className="c-line primary-bg-a4"
+        >
+          a4
+        </div>
+        <div
+          className="c-line white-color primary-bg-a5"
+        >
+          a5
+        </div>
+        <div
+          className="c-line white-color primary-bg-a6"
+        >
+          a6
+        </div>
+        <div
+          className="c-line white-color primary-bg-a7"
+        >
+          a7
+        </div>
+        <div
+          className="c-line white-color primary-bg-a8"
+        >
+          a8
+        </div>
+        <div
+          className="c-line white-color primary-bg-a9"
+        >
+          a9
+        </div>
+        <div
+          className="c-line white-color primary-bg-a10"
+        >
+          a10
+        </div>
+        <div
+          className="c-line white-color primary-bg-a11"
+        >
+          a11
+        </div>
+        <div
+          className="c-line white-color primary-bg-a12"
+        >
+          a12
+        </div>
+      </div>
+      <div
+        className="col-12 col-md-3"
+      >
+        <p>
+          Toni
+        </p>
+        <div
+          className="c-line primary-bg-b1 white-color"
+        >
+          b1
+        </div>
+        <div
+          className="c-line primary-bg-b2 white-color"
+        >
+          b2
+        </div>
+        <div
+          className="c-line primary-bg-b3 white-color"
+        >
+          b3
+        </div>
+        <div
+          className="c-line primary-bg-b4 white-color"
+        >
+          b4
+        </div>
+        <div
+          className="c-line primary-bg-b5 white-color"
+        >
+          b5
+        </div>
+        <div
+          className="c-line primary-bg-b6 white-color"
+        >
+          b6
+        </div>
+        <div
+          className="c-line primary-bg-b7 white-color"
+        >
+          b7
+        </div>
+      </div>
+      <div
+        className="col-12 col-md-3"
+      >
+        <p>
+          Variazione di saturazione
+        </p>
+        <div
+          className="c-line primary-bg-c1"
+        >
+          c1
+        </div>
+        <div
+          className="c-line primary-bg-c2"
+        >
+          c2
+        </div>
+        <div
+          className="c-line primary-bg-c3"
+        >
+          c3
+        </div>
+        <div
+          className="c-line primary-bg-c4"
+        >
+          c4
+        </div>
+        <div
+          className="c-line primary-bg-c5"
+        >
+          c5
+        </div>
+        <div
+          className="c-line primary-bg-c6"
+        >
+          c6
+        </div>
+        <div
+          className="c-line primary-bg-c7"
+        >
+          c7
+        </div>
+        <div
+          className="c-line primary-bg-c8"
+        >
+          c8
+        </div>
+        <div
+          className="c-line primary-bg-c9"
+        >
+          c9
+        </div>
+        <div
+          className="c-line white-color primary-bg-c10"
+        >
+          c10
+        </div>
+        <div
+          className="c-line white-color primary-bg-c11"
+        >
+          c11
+        </div>
+        <div
+          className="c-line white-color primary-bg-c12"
+        >
+          c12
         </div>
       </div>
     </div>
