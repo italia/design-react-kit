@@ -12,11 +12,11 @@ type TypeProps = Pick<InputProps, 'plaintext' | 'type'> & {
 type FormControlProps = Pick<InputProps, 'addon'> & TypeProps;
 
 function getFormControlClassInternal({
-                                       plaintext,
-                                       staticInput,
-                                       type = 'text',
-                                       addon
-                                     }: FormControlProps) {
+  plaintext,
+  staticInput,
+  type = 'text',
+  addon
+}: FormControlProps) {
   const formControlClass = 'form-control';
   if (plaintext || staticInput) {
     return `${formControlClass}-plaintext`;
@@ -53,11 +53,11 @@ export function getInfoTextControlClass(
 }
 
 export function getTag({
-                         tag,
-                         plaintext,
-                         staticInput,
-                         type = 'text'
-                       }: Pick<InputProps, 'tag'> & TypeProps) {
+  tag,
+  plaintext,
+  staticInput,
+  type = 'text'
+}: Pick<InputProps, 'tag'> & TypeProps) {
   if (tag) {
     return tag;
   }
@@ -74,13 +74,13 @@ type InputClassesParams = ValidationProps &
   Pick<
     InputProps,
     'bsSize' | 'placeholder' | 'value' | 'label' | 'infoText' | 'normalized'
-    > & {
-  isFocused: boolean;
-  inputPassword?: boolean;
-  formControlClass?: string;
-  infoTextControlClass: string;
-  originalWrapperClass: InputProps['wrapperClassName'];
-};
+  > & {
+    isFocused: boolean;
+    inputPassword?: boolean;
+    formControlClass?: string;
+    infoTextControlClass: string;
+    originalWrapperClass: InputProps['wrapperClassName'];
+  };
 
 export function getClasses(
   className: string | undefined,
