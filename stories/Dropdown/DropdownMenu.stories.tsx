@@ -248,34 +248,18 @@ export default {
   title: 'Componenti/Dropdown/Dropdown menu'
 };
 
-_MenuVociAttive.story = {
-  name: 'Menù voci attive'
-};
+_MenuVociAttive.storyName = 'Menù voci attive';
 
-_MenuVociDisabilitate.story = {
-  name: 'Menù voci disabilitate'
-};
+_MenuVociDisabilitate.storyName = 'Menù voci disabilitate';
 
-MenuHeadersESeparatori.story = {
-  name: 'Menù headers e separatori'
-};
+MenuHeadersESeparatori.storyName = 'Menù headers e separatori';
 
-MenuConVociLarge.story = {
-  name: 'Menu con voci large'
-};
+MenuConVociLarge.storyName = 'Menu con voci large';
 
-MenuFullWidth.story = {
-  name: 'Menù full width'
-};
+MenuFullWidth.storyName = 'Menù full width';
 
-MenuIconaADestra.story = {
-  name: 'Menù icona a destra'
-};
+MenuIconaADestra.storyName = 'Menù icona a destra';
 
-MenuIconaASinistra.story = {
-  name: 'Menù icona a sinistra'
-};
+MenuIconaASinistra.storyName = 'Menù icona a sinistra';
 
-_MenuDark.story = {
-  name: 'Menù dark'
-};
+_MenuDark.storyName = 'Menù dark';

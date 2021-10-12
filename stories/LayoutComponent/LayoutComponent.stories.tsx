@@ -97,9 +97,7 @@ export const EqualWidthMultiRow = () => (
   </div>
 );
 
-EqualWidthMultiRow.story = {
-  name: 'Equal-width multi-row'
-};
+EqualWidthMultiRow.storyName = 'Equal-width multi-row';
 
 export const TuttiIBreakpoint = () => (
   <div className='docs layout-example'>
@@ -118,9 +116,7 @@ export const TuttiIBreakpoint = () => (
   </div>
 );
 
-TuttiIBreakpoint.story = {
-  name: 'Tutti i breakpoint'
-};
+TuttiIBreakpoint.storyName = 'Tutti i breakpoint';
 
 export const RaccoltiInOrizzontale = () => (
   <div className='docs layout-example'>
@@ -138,9 +134,7 @@ export const RaccoltiInOrizzontale = () => (
   </div>
 );
 
-RaccoltiInOrizzontale.story = {
-  name: 'Raccolti in orizzontale'
-};
+RaccoltiInOrizzontale.storyName = 'Raccolti in orizzontale';
 
 export const MischiareEAbbinare = () => (
   <div className='docs layout-example'>
@@ -172,6 +166,4 @@ export const MischiareEAbbinare = () => (
   </div>
 );
 
-MischiareEAbbinare.story = {
-  name: 'Mischiare e abbinare'
-};
+MischiareEAbbinare.storyName = 'Mischiare e abbinare';

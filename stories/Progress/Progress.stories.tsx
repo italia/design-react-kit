@@ -60,13 +60,9 @@ export default {
   title: 'Componenti/Progress Indicators'
 };
 
-BottoneConProgressBar.story = {
-  name: 'Bottone con Progress Bar'
-};
+BottoneConProgressBar.storyName = 'Bottone con Progress Bar';
 
-_EsempiInterattivi.story = {
-  name: 'Esempi interattivi'
-};
+_EsempiInterattivi.storyName = 'Esempi interattivi';
 
 _EsempiInterattivi.args = {
   color: '',

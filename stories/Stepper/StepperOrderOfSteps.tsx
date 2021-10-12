@@ -31,8 +31,6 @@ const StepperOrderOfSteps = () => {
   );
 };
 
-StepperOrderOfSteps.story = {
-  name: 'Order of the steps'
-};
+StepperOrderOfSteps.storyName = 'Order of the steps';
 
 export default StepperOrderOfSteps;

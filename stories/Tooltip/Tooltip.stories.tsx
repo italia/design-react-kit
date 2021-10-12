@@ -223,9 +223,7 @@ export const _EsempiInterattivi = ({ placement, text }) => {
   );
 };
 
-_EsempiInterattivi.story = {
-  name: 'Esempi interattivi'
-};
+_EsempiInterattivi.storyName = 'Esempi interattivi';
 
 _EsempiInterattivi.args = {
   placement: 'top',

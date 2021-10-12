@@ -24,9 +24,7 @@ export const EsempioInterattivo = ({
   );
 };
 
-EsempioInterattivo.story = {
-  name: 'Esempio interattivo'
-};
+EsempioInterattivo.storyName = 'Esempio interattivo';
 EsempioInterattivo.args = {
   icon: 'it-tool',
   size: '',
@@ -97,9 +95,7 @@ export const EsempioDimensioni = ({ icon, padding, background, color }) => {
   );
 };
 
-EsempioDimensioni.story = {
-  name: 'Esempio dimensioni'
-};
+EsempioDimensioni.storyName = 'Esempio dimensioni';
 EsempioDimensioni.args = {
   icon: 'it-check-circle',
   padding: false,
@@ -108,9 +104,7 @@ EsempioDimensioni.args = {
 };
 
 export const EsempioPadding = EsempioDimensioni.bind({});
-EsempioPadding.story = {
-  name: 'Esempio dimensioni'
-};
+EsempioPadding.storyName = 'Esempio dimensioni';
 EsempioPadding.args = {
   icon: 'it-check-circle',
   padding: true,
@@ -130,9 +124,7 @@ export const EsempioColori = ({ icon }) => {
     </>
   );
 };
-EsempioColori.story = {
-  name: 'Esempio colori'
-};
+EsempioColori.storyName = 'Esempio colori';
 EsempioColori.args = {
   icon: 'it-check-circle'
 };
@@ -146,9 +138,7 @@ export const EsempioAllineamento = () => {
     </div>
   );
 };
-EsempioAllineamento.story = {
-  name: 'Esempio allineamento'
-};
+EsempioAllineamento.storyName = 'Esempio allineamento';
 
 export const ListaIcone = () => {
   return (
@@ -162,6 +152,4 @@ export const ListaIcone = () => {
   );
 };
 
-ListaIcone.story = {
-  name: 'Lista icone'
-};
+ListaIcone.storyName = 'Lista icone';

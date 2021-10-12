@@ -203,9 +203,7 @@ export const ConMegamenuInProgress = () => {
   );
 };
 
-ConMegamenuInProgress.story = {
-  name: 'Con Megamenu (in progress)'
-};
+ConMegamenuInProgress.storyName = 'Con Megamenu (in progress)';
 
 export const InlineMenu = () => {
   const [collapseOpen1, setCollapseOpen1] = useState(false);
@@ -300,13 +298,9 @@ export const InlineMenu = () => {
   );
 };
 
-InlineMenu.story = {
-  name: 'Inline Menù'
-};
+InlineMenu.storyName = 'Inline Menù';
 
-_EsempiInterattivi.story = {
-  name: 'Esempi interattivi'
-};
+_EsempiInterattivi.storyName = 'Esempi interattivi';
 
 _EsempiInterattivi.args = {
   placement: '',

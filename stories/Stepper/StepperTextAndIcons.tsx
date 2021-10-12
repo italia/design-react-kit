@@ -28,8 +28,6 @@ const StepperTextAndIcons = () => {
   );
 };
 
-StepperTextAndIcons.story = {
-  name: 'Text and Icons'
-};
+StepperTextAndIcons.storyName = 'Text and Icons';
 
 export default StepperTextAndIcons;

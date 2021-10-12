@@ -171,9 +171,7 @@ export const _NotificationWithMessage_story_hidden = () => {
   );
 };
 
-_NotificationWithMessage_story_hidden.story = {
-  name: 'Notifica con messaggio'
-};
+_NotificationWithMessage_story_hidden.storyName = 'Notifica con messaggio';
 
 export const Dismissable = () => (
   <div className='container test-docs'>
@@ -338,9 +336,7 @@ export const _RoundingOfCorners = () => {
   );
 };
 
-_RoundingOfCorners.story = {
-  name: 'Posizione e arrotondamento degli angoli'
-};
+_RoundingOfCorners.storyName = 'Posizione e arrotondamento degli angoli';
 
 export const DefaultLocation = () => {
   return (
@@ -461,10 +457,8 @@ EsempioInterattivo.argTypes = {
   }
 };
 
-EsempioInterattivo.story = {
-  name: 'Esempio interattivo',
-  parameters: { controls: { expanded: true } }
-};
+EsempioInterattivo.storyName = 'Esempio interattivo';
+EsempioInterattivo.parameters = { controls: { expanded: true } };
 
 // Hidden components used only in docs
 

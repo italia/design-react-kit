@@ -42,9 +42,7 @@ export const EsempioConIcona = () => (
   </Callout>
 );
 
-EsempioConIcona.story = {
-  name: 'Esempio con icona'
-};
+EsempioConIcona.storyName = 'Esempio con icona';
 
 export const EsempioAccessibilita = () => (
   <Callout>
@@ -61,9 +59,7 @@ export const EsempioAccessibilita = () => (
   </Callout>
 );
 
-EsempioAccessibilita.story = {
-  name: 'Esempio accessibilità'
-};
+EsempioAccessibilita.storyName = 'Esempio accessibilità';
 
 // eslint-disable-next-line react/prop-types
 export const CalloutTemplate = ({ title, color }) => (
@@ -82,30 +78,23 @@ export const CalloutTemplate = ({ title, color }) => (
 
 export const ProceduraAvvenutaConSuccesso = CalloutTemplate.bind({});
 ProceduraAvvenutaConSuccesso.args = { title: 'Usa', color: 'success' };
-ProceduraAvvenutaConSuccesso.story = {
-  name: 'Procedura avvenuta con successo'
-};
+ProceduraAvvenutaConSuccesso.storyName = 'Procedura avvenuta con successo';
 
 export const ProceduraCheRichiedeAttenzione = CalloutTemplate.bind({});
 ProceduraCheRichiedeAttenzione.args = { title: 'Attenzione', color: 'warning' };
-ProceduraCheRichiedeAttenzione.story = {
-  name: 'Procedura che richiede attenzione'
-};
+ProceduraCheRichiedeAttenzione.storyName = 'Procedura che richiede attenzione';
 
 export const ProceduraPericolosaONonConsentita = CalloutTemplate.bind({});
 ProceduraPericolosaONonConsentita.args = {
   title: 'Non usare',
   color: 'danger'
 };
-ProceduraPericolosaONonConsentita.story = {
-  name: 'Procedura pericolosa o non consentita'
-};
+ProceduraPericolosaONonConsentita.storyName =
+  'Procedura pericolosa o non consentita';
 
 export const ProceduraImportante = CalloutTemplate.bind({});
 ProceduraImportante.args = { title: 'Importante', color: 'important' };
-ProceduraImportante.story = {
-  name: 'Procedura importante'
-};
+ProceduraImportante.storyName = 'Procedura importante';
 
 export const CalloutNote = CalloutTemplate.bind({});
 CalloutNote.args = { title: 'Note a riguardo', color: 'note' };

@@ -251,10 +251,6 @@ export default {
   }
 };
 
-DimmerConAzioni.story = {
-  name: 'Dimmer con Azioni'
-};
+DimmerConAzioni.storyName = 'Dimmer con Azioni';
 
-DimmerConAzioniColorePrimario.story = {
-  name: 'Dimmer con Azioni Colore Primario'
-};
+DimmerConAzioniColorePrimario.storyName = 'Dimmer con Azioni Colore Primario';

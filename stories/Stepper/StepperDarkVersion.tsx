@@ -46,8 +46,6 @@ const StepperDarkVersion = () => {
   );
 };
 
-StepperDarkVersion.story = {
-  name: 'Version on a dark background'
-};
+StepperDarkVersion.storyName = 'Version on a dark background';
 
 export default StepperDarkVersion;
