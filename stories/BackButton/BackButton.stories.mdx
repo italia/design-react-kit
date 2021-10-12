@@ -1,0 +1,32 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Code } from '@storybook/components';
+import LinkTo from '@storybook/addon-links/react';
+import { BackButton, Callout, CalloutTitle, CalloutText } from '../../src';
+
+<Meta title='Documentazione/Componenti/BackButton' of={BackButton} />
+
+# Bottoni
+
+## Bootstrap Italia definisce alcuni stili per i bottoni da utilizzare a seconda delle necessità
+
+### Utilizzo
+
+Per raggiungere un bottone che (di solito) manda l'utente indietro un livello di navigazione.
+Il componente accetta tutti i props del componente `Button` che da la possibilita di alta personalizzazzione.
+
+<Canvas>
+  <BackButton color='primary'>Torna indietro</BackButton>
+  <BackButton color='primary' direction='up'>
+    Torna su
+  </BackButton>
+  <BackButton color='primary' direction='up' />
+  <BackButton color='link' iconColor='primary' direction='up'>
+    Torna su
+  </BackButton>
+</Canvas>
+
+## Argomenti componente
+
+### BackButton
+
+<ArgsTable of={BackButton} />

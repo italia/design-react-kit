@@ -8,5 +8,8 @@ dist/
 .cache
 coverage
 
+# Editor
+.idea
+
 # Logs
 *.log
