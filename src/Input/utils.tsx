@@ -45,7 +45,8 @@ export function getInfoTextControlClass(
 ) {
   return mapToCssModules(
     classNames({
-      'form-text text-muted': valid || invalid
+      'form-text': valid || invalid,
+      'text-muted': !valid || invalid
     }),
     cssModule
   );

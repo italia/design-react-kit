@@ -6049,7 +6049,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Base 1`]
           Nome
         </label>
         <small
-          className=""
+          className="text-muted"
           id="formNomeDescription"
         />
       </div>
@@ -6071,7 +6071,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Base 1`]
           Cognome
         </label>
         <small
-          className=""
+          className="text-muted"
           id="formCognomeDescription"
         />
       </div>
@@ -6097,7 +6097,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Base 1`]
           Città
         </label>
         <small
-          className=""
+          className="text-muted"
           id="CittaDescription"
         />
       </div>
@@ -6119,7 +6119,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Base 1`]
           Comune
         </label>
         <small
-          className=""
+          className="text-muted"
           id="ComuneDescription"
         />
       </div>
@@ -6141,7 +6141,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Base 1`]
           CAP
         </label>
         <small
-          className=""
+          className="text-muted"
           id="CAPDescription"
         />
       </div>
@@ -6185,7 +6185,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Compless
           Nome
         </label>
         <small
-          className=""
+          className="text-muted"
           id="inputEmail4Description"
         />
       </div>
@@ -6208,7 +6208,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Compless
           Password
         </label>
         <small
-          className=""
+          className="text-muted"
           id="exampleInputPasswordDescription"
         />
       </div>
@@ -6235,7 +6235,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Compless
           Indirizzo
         </label>
         <small
-          className=""
+          className="text-muted"
           id="inputAddressDescription"
         />
       </div>
@@ -6261,7 +6261,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Compless
           Comune
         </label>
         <small
-          className=""
+          className="text-muted"
           id="inputCityDescription"
         />
       </div>
@@ -6283,7 +6283,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Compless
           CAP
         </label>
         <small
-          className=""
+          className="text-muted"
           id="inputCAPDescription"
         />
       </div>
@@ -6506,7 +6506,7 @@ exports[`Storyshots Componenti/Form/Form Layout Form Disabilitato 1`] = `
             Input
           </label>
           <small
-            className=""
+            className="text-muted"
             id="disabledTextInputDescription"
           />
         </div>
@@ -6692,7 +6692,7 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Base 1`] = `
         Valid Input
       </label>
       <small
-        className="valid-feedback form-text text-muted"
+        className="valid-feedback form-text"
       />
     </div>
     <div
@@ -6727,7 +6727,7 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Base 1`] = `
         First name
       </label>
       <small
-        className="valid-feedback form-text text-muted"
+        className="valid-feedback form-text"
       >
         Validated!
       </small>
@@ -6792,7 +6792,7 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
             Nome
           </label>
           <small
-            className="valid-feedback form-text text-muted"
+            className="valid-feedback form-text"
           >
             Validato!
           </small>
@@ -6817,7 +6817,7 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
             Cognome
           </label>
           <small
-            className="valid-feedback form-text text-muted"
+            className="valid-feedback form-text"
           >
             Validato!
           </small>
