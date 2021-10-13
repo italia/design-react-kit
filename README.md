@@ -1,4 +1,4 @@
-[![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](https://circleci.com/gh/italia/design-react-kit)
+![CircleCI](https://img.shields.io/circleci/build/github/italia/design-react-kit)
 [![Partecipa sul canale #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--devel-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
 [![Ricevi un invito a Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
 
@@ -87,9 +87,9 @@ const WebFont = require('webfontloader')
 WebFont.load({
     custom: {
         families: [
-        'Titillium Web:300,400,600,700:latin-ext',
-        'Lora:400,700:latin-ext',
-        'Roboto Mono:400,700:latin-ext'
+          'Titillium Web:300,400,600,700:latin-ext',
+          'Lora:400,700:latin-ext',
+          'Roboto Mono:400,700:latin-ext'
         ]
     }
 })
@@ -131,18 +131,24 @@ Il componente `Button` ad esempio è presente sotto il path `src/components/Butt
 src
     └── components
         └── Button
-            ├── Button.js
+            ├── Button.tsx
 stories
     └── Button
-        ├── Button.stories.js
+        ├── Button.stories.mdx
+        ├── Button.stories.tsx
 ```
 
 Alcune regole di base per strutturare i componenti:
 
-* I file JS file del componente utilizza la sintassi JSX.
-* I file `.stories.js` dovrebbero contenere solo quanto relativo al componente stesso.
+* I file TSX file del componente utilizza la sintassi JSX.
+* I file `.stories.tsx` dovrebbero contenere solo quanto relativo al componente stesso.
+* I file `.stories.mdx` dovrebbero contenere solo documentazione relativa al componente stesso
 
 Una volta creato un nuovo componente, con la sua story, avviando Storybook sarà  possibile controllare che tutto funzioni come dovrebbe.
+
+### Come contribuire
+
+Per inviare nuovi contenuti o bug fix è necessario fare un fork del repository, quindi partire dal branch `master` per un nuovo branch contenente la feature: una volta completa la funzionalità (con relativi test ove possibile), sarà necessario fare una PR sul repository principale.
 
 ## Publishing
 
@@ -181,8 +187,4 @@ La lista è anche disponibile nel `package.json`. Purtroppo, non è ancora possi
 
 ## TypeScript typings 
 
-Per generare il file delle definizioni per i _typing_ Typescript, è sufficiente lanciare il comando dedicato:
-
-```sh
-$ yarn typescript:dts
-```
+La libreria è stata portata a Typescript ed i tipi sono esportati con essa.
