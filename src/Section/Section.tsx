@@ -79,7 +79,7 @@ export const Section: FC<SectionProps> = ({
       className={`${classes}${
         deprecatedClasses ? ' ' + deprecatedClasses : ''
       }`}
-      style={styleClass.backgroundImageClass}
+      style={image ? styleClass.backgroundImageClass : {}}
       {...rest}
     >
       <div className={innerClasses}>{children}</div>
