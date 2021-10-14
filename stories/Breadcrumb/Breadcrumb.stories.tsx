@@ -90,9 +90,7 @@ export const ConIcone = () => (
   </section>
 );
 
-ConIcone.story = {
-  name: 'Con icone'
-};
+ConIcone.storyName = 'Con icone';
 
 export const SuSfondoScuro = () => (
   <section>
@@ -151,6 +149,4 @@ export const SuSfondoScuro = () => (
   </section>
 );
 
-SuSfondoScuro.story = {
-  name: 'Su sfondo scuro'
-};
+SuSfondoScuro.storyName = 'Su sfondo scuro';

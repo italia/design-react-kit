@@ -71,9 +71,7 @@ export const ModaleBaseConBottoneChiusura = () => {
   );
 };
 
-ModaleBaseConBottoneChiusura.story = {
-  name: 'Esempio con bottone di chiusura'
-};
+ModaleBaseConBottoneChiusura.storyName = 'Esempio con bottone di chiusura';
 
 export const ModaleBase = () => {
   const [isOpen, toggleModal] = useState(false);
@@ -428,9 +426,7 @@ export const ScrollDiContenutiLunghi = () => {
     </div>
   );
 };
-ScrollDiContenutiLunghi.story = {
-  name: 'Scroll di contenuti lunghi'
-};
+ScrollDiContenutiLunghi.storyName = 'Scroll di contenuti lunghi';
 
 export const ModaleConContenutoScrollabile = () => {
   const [isOpen, toggleModal] = useState(false);
@@ -553,9 +549,7 @@ export const _CentraturaVerticale = () => {
     </div>
   );
 };
-_CentraturaVerticale.story = {
-  name: 'Centratura verticale'
-};
+_CentraturaVerticale.storyName = 'Centratura verticale';
 
 export const AllineamentoASinistra = () => {
   const [isOpen, toggleModal] = useState(false);
@@ -749,9 +743,7 @@ export const RimuovereLanimazione = () => {
     </div>
   );
 };
-RimuovereLanimazione.story = {
-  name: 'Rimuovere l’animazione'
-};
+RimuovereLanimazione.storyName = 'Rimuovere l’animazione';
 
 export const _Dimensioni = () => {
   const [isOpen, toggleModal] = useState(false);
@@ -878,9 +870,7 @@ export const ContenutoDellaModaleVariabile = () => {
   );
 };
 
-ContenutoDellaModaleVariabile.story = {
-  name: 'Contenuto della modale variabile'
-};
+ContenutoDellaModaleVariabile.storyName = 'Contenuto della modale variabile';
 
 export const TooltipAndPopover = () => {
   const [isOpen, toggleModal] = useState(false);
@@ -952,9 +942,7 @@ export const TooltipAndPopover = () => {
   );
 };
 
-TooltipAndPopover.story = {
-  name: 'Tooltip and popover'
-};
+TooltipAndPopover.storyName = 'Tooltip and popover';
 
 export const UsoDellaGriglia = () => {
   const [isOpen, toggleModal] = useState(false);
@@ -1016,6 +1004,4 @@ export const UsoDellaGriglia = () => {
     </div>
   );
 };
-UsoDellaGriglia.story = {
-  name: 'Uso della griglia'
-};
+UsoDellaGriglia.storyName = 'Uso della griglia';

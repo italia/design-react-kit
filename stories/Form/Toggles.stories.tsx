@@ -93,6 +93,4 @@ export const GruppiDiToggles = () => {
   );
 };
 
-GruppiDiToggles.story = {
-  name: 'Gruppi di Toggles'
-};
+GruppiDiToggles.storyName = 'Gruppi di Toggles';

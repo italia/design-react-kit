@@ -54,9 +54,7 @@ export const AvatarWithImage = () => (
   </AvatarContainer>
 );
 
-AvatarWithImage.story = {
-  name: 'Avatar with image'
-};
+AvatarWithImage.storyName = 'Avatar with image';
 
 export const AvatarWithText = () => (
   <AvatarContainer>
@@ -87,9 +85,7 @@ export const AvatarWithText = () => (
   </AvatarContainer>
 );
 
-AvatarWithText.story = {
-  name: 'Avatar with text'
-};
+AvatarWithText.storyName = 'Avatar with text';
 
 export const AvatarWithIcon = () => (
   <AvatarContainer>
@@ -114,9 +110,7 @@ export const AvatarWithIcon = () => (
   </AvatarContainer>
 );
 
-AvatarWithIcon.story = {
-  name: 'Avatar with icon'
-};
+AvatarWithIcon.storyName = 'Avatar with icon';
 
 export const AvatarLink = () => (
   <AvatarContainer>
@@ -136,9 +130,7 @@ export const AvatarLink = () => (
   </AvatarContainer>
 );
 
-AvatarLink.story = {
-  name: 'Avatar link'
-};
+AvatarLink.storyName = 'Avatar link';
 
 export const AvatarLinkWithTooltip = () => {
   const withImageRef = useRef(null);
@@ -178,9 +170,7 @@ export const AvatarLinkWithTooltip = () => {
   );
 };
 
-AvatarLinkWithTooltip.story = {
-  name: 'Avatar link with Tooltip'
-};
+AvatarLinkWithTooltip.storyName = 'Avatar link with Tooltip';
 
 export const AvatarWithAdditionalText = () => {
   return (
@@ -229,6 +219,4 @@ export const AvatarWithAdditionalText = () => {
   );
 };
 
-AvatarWithAdditionalText.story = {
-  name: 'Avatar with additional text'
-};
+AvatarWithAdditionalText.storyName = 'Avatar with additional text';

@@ -58,10 +58,6 @@ RatingBase.argTypes = {
   }
 };
 
-RatingConLabel.story = {
-  name: 'Rating con Label'
-};
+RatingConLabel.storyName = 'Rating con Label';
 
-RatingReadOnly.story = {
-  name: 'Rating read-only'
-};
+RatingReadOnly.storyName = 'Rating read-only';
