@@ -57,10 +57,35 @@ jobs:
           else
             echo "::set-output name=status::not tree-shakeable"
           fi
-          echo "::group::Agadoo output"
           echo "$STDOUT"
-          echo "::endgroup::"
+          echo ""
+          echo "$STDERR"
           # Clean-up
           rm $STDOUT_F
           rm $STDERR_F
           exit 0
+      - name: comment PR
+        uses: unsplash/comment-on-pr@v1.3.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          msg: |
+            **Check tree-shakeability** :deciduous_tree: for ${{ github.sha }}: ${{ steps.agadoo.outputs.status }}
+            <details>
+              <summary>Agadoo stdout</summary>
+
+              ```javascript
+              ${{ steps.agadoo.outputs.stdout }}
+              ```
+
+            </details>
+            <details>
+              <summary>Agadoo stderr</summary>
+
+              ```javascript
+              ${{ steps.agadoo.outputs.stderr }}
+              ```
+
+            </details>
+          check_for_duplicate_msg: false
+          delete_prev_regex_msg: "**Check tree-shakeability** :deciduous_tree: "
