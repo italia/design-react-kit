@@ -38,4 +38,11 @@ test('Should apply wrapperClassName to the wrapper', () => {
   expect(container.firstChild).toHaveClass('myClass');
 });
 
+test('Should not set backgroundImage when the image prop is undefined', () => {
+  const { container } = render(<Section image={undefined} />);
+  expect(container.firstChild).not.toHaveStyle(
+    'background-image: url("undefined")'
+  );
+});
+
 // Write more proper tests here

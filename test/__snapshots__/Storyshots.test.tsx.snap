@@ -12467,11 +12467,7 @@ exports[`Storyshots Componenti/Section Esempio 1`] = `
 >
   <div
     className="section"
-    style={
-      Object {
-        "backgroundImage": "url(undefined)",
-      }
-    }
+    style={Object {}}
   >
     <div
       className="section-content"
@@ -12591,11 +12587,7 @@ exports[`Storyshots Componenti/Section Section con Card 1`] = `
 >
   <div
     className="section section-muted"
-    style={
-      Object {
-        "backgroundImage": "url(undefined)",
-      }
-    }
+    style={Object {}}
   >
     <div
       className="section-content"
@@ -12653,11 +12645,7 @@ exports[`Storyshots Componenti/Section Sfondo Neutrale 1`] = `
 >
   <div
     className="section section-neutral"
-    style={
-      Object {
-        "backgroundImage": "url(undefined)",
-      }
-    }
+    style={Object {}}
   >
     <div
       className="section-content"
@@ -12715,11 +12703,7 @@ exports[`Storyshots Componenti/Section Sfondo Primario 1`] = `
 >
   <div
     className="section section-primary"
-    style={
-      Object {
-        "backgroundImage": "url(undefined)",
-      }
-    }
+    style={Object {}}
   >
     <div
       className="section-content"
@@ -12777,11 +12761,7 @@ exports[`Storyshots Componenti/Section Sfondo Tenue 1`] = `
 >
   <div
     className="section section-muted"
-    style={
-      Object {
-        "backgroundImage": "url(undefined)",
-      }
-    }
+    style={Object {}}
   >
     <div
       className="section-content"

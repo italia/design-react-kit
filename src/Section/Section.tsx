@@ -69,9 +69,7 @@ export const Section: FC<SectionProps> = ({
   const innerClasses = classNames('section-content', className);
 
   const styleClass = {
-    backgroundImageClass: {
-      backgroundImage: `url(${image})`
-    }
+    backgroundImageClass: image ? { backgroundImage: `url(${image})` } : {}
   };
 
   return (
