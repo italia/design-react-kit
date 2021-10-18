@@ -1,0 +1,24 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Code } from '@storybook/components';
+import { Megamenu } from '../../src';
+
+<Meta title='Documentazione/Menu di navigazione/Megamenu' of={Megamenu} />
+
+# Megamenu
+
+## Presenta un sottomenu contenente elenchi di links relativo ad una voce della navbar.
+
+Il megamenu all'interno del nav è una variazione del componente [Dropdown](/story/componenti-dropdown-dropdown-menu--menu-con-voci-large).
+Gli elementi megamenu contenuti nelle navbar sono gestiti come elementi di tipo **collapse** nella loro versione mobile.
+
+### Megamenu Classico
+Il megamenu ha una struttura colonnare, ogni colonna richiama al suo interno il componente [Lista di link](/story/componenti-linklist--esempi) per comporre l'elenco di link desiderato
+
+<Canvas>
+  <Story id='componenti-megamenu--classico' />
+</Canvas>
+
+#### Classico con link "more"
+Il megamenu può contenere un link relativo agli elenchi in esso contenuti.
+
+Qualore i link mostrati nel megamenu non siano tutti quelli relativi alla voce primaria (perché troppi numerosi), si può includere l'elemento 
