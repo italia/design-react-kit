@@ -60,7 +60,7 @@ export const Rating: FC<RatingProps> = ({
     'rating-label': legend
   });
   const fieldClasses = classNames(className);
-  const extraFieldAttrs = readOnly ? { ariaHidden: 'true' } : {};
+  const extraFieldAttrs = readOnly ? { 'aria-hidden': true } : {};
 
   // Legend
   const isLegendString = typeof legend === 'string';
@@ -102,7 +102,7 @@ export const Rating: FC<RatingProps> = ({
               value={String(currentValue)}
               cssModule={{ 'form-control': ' ' }}
               className={fieldClasses}
-              onClick={() => onChange(currentValue, name)}
+              onChange={() => onChange(currentValue, name)}
               checked={value === currentValue}
               disabled={readOnly}
               {...extraFieldAttrs}
