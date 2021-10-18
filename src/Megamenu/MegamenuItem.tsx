@@ -5,13 +5,13 @@ import classNames from 'classnames';
 
 export interface MegamenuItemProps extends HTMLAttributes<HTMLUListElement> {
   /** @type {string} Etichetta del megamenu */
-  itemName: string,
+  itemName?: string,
   /** Classi aggiuntive da usare per il componente Nav */
   className?: string;
 }
 
 export const MegamenuItem: FC<MegamenuItemProps> = ({
-  itemName = 'Megamenu Label',
+  itemName,
   className,
   children,
   ...attributes
@@ -21,9 +21,10 @@ export const MegamenuItem: FC<MegamenuItemProps> = ({
     setOpenNav(!openNav);
   };
   const classes = classNames(className, 'megamenu');
+  itemName;
   return (
     <NavItem className={classes} {...attributes}>
-      <NavLink href='#' aria-expanded='false' onClick={toggle}>{{itemName}}</NavLink>
+      <NavLink href='#' aria-expanded='false' onClick={toggle}>itemName</NavLink>
       <Collapse isOpen={openNav}>
         {children}
       </Collapse>
