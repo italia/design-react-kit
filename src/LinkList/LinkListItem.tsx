@@ -21,6 +21,8 @@ export interface LinkListItemProps
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente LinkListItem */
   className?: string;
+  /** Classi aggiuntive da usare per l'elemento "li" */
+  wrapperClassName?: string;
   /** Indica il link a cui l'elemento deve puntare. */
   href?: string;
   /** Utilizzato per aumentare taglia/grandezza dell'elemento: può essere "medium" o "large". */
@@ -40,6 +42,7 @@ export const LinkListItem: FC<LinkListItemProps> = ({
   href,
   size,
   tag = 'a',
+  wrapperClassName,
   children,
   ...attributes
 }) => {
@@ -70,7 +73,7 @@ export const LinkListItem: FC<LinkListItemProps> = ({
 
   if (header && href) {
     return (
-      <li>
+      <li className={wrapperClassName}>
         <Tag>
           <a
             href={href || '#'}
@@ -86,7 +89,7 @@ export const LinkListItem: FC<LinkListItemProps> = ({
   }
 
   return (
-    <li>
+    <li className={wrapperClassName}>
       <Tag {...attributes} className={classes} href={href} {...handlers}>
         {children}
       </Tag>

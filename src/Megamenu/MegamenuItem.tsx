@@ -1,6 +1,5 @@
-import React, { FC, HTMLAttributes, useState } from 'react';
-import { NavItem, NavLink } from 'reactstrap';
-import { Collapse } from '../Collapse/Collapse';
+import React, { FC, HTMLAttributes } from 'react';
+import { DropdownMenu, DropdownToggle, UncontrolledDropdown } from 'reactstrap';
 import classNames from 'classnames';
 
 export interface MegamenuItemProps extends HTMLAttributes<HTMLUListElement> {
@@ -16,18 +15,16 @@ export const MegamenuItem: FC<MegamenuItemProps> = ({
   children,
   ...attributes
 }) => {
-  const [openNav, setOpenNav] = useState(false);
-  const toggle = () => {
-    setOpenNav(!openNav);
-  };
   const classes = classNames(className, 'megamenu');
   itemName;
   return (
-    <NavItem className={classes} {...attributes}>
-      <NavLink href='#' aria-expanded='false' onClick={toggle}>itemName</NavLink>
-      <Collapse isOpen={openNav}>
+    <UncontrolledDropdown nav tag='li' className={classes} {...attributes}>
+      <DropdownToggle caret nav>
+        {itemName}
+      </DropdownToggle>
+      <DropdownMenu>
         {children}
-      </Collapse>
-    </NavItem>
+      </DropdownMenu>
+    </UncontrolledDropdown>
   );
 }

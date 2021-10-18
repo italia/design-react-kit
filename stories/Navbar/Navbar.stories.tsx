@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import {
+  MegamenuItem,
   Navbar,
   NavbarBrand,
   Nav,
@@ -13,7 +14,9 @@ import {
   DropdownToggle,
   LinkList,
   LinkListItem,
-  Icon
+  Icon,
+  Row,
+  Col
 } from '../../src';
 
 const _EsempiInterattivi = ({ variation, color, placement }) => {
@@ -151,59 +154,153 @@ export const ConMegamenuInProgress = () => {
     setOpenNav(!openNav);
   };
   return (
-    <section>
-      <Navbar expand='lg' className='megamenu'>
-        <NavbarBrand />
-        <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-          <span className='it-list' />
-        </NavbarToggler>
-
-        <Collapse isOpen={openNav} navbar>
+    <Navbar expand='lg' className='has-megamenu'>
+      <NavbarBrand />
+      <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
+        <Icon icon='it-list' size='sm' />
+      </NavbarToggler>
+      <Collapse isOpen={openNav} navbar>
+        <div className='menu-wrapper'>
           <Nav className='mt-0' navbar>
-            <NavItem active>
-              <UncontrolledDropdown tag='div' nav inNavbar>
-                <DropdownToggle nav caret>
-                  Megamenu 1
-                </DropdownToggle>
-                <DropdownMenu>
-                  <LinkList>
-                    <LinkListItem header>Header</LinkListItem>
+            <MegamenuItem itemName='Megamenu Header & More'>
+              <Row>
+                <Col>
+                  <LinkList >
+                    <LinkListItem header>Heading 1</LinkListItem>
+                    <LinkListItem href="#">Link list Item 1</LinkListItem>
+                    <LinkListItem href="#">Link list Item 2</LinkListItem>
+                    <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkListItem href="#">Link list Item 4</LinkListItem>
+                    <LinkListItem wrapperClassName='it-more' className='medium' href="#">View More <Icon color='primary' icon='it-arrow-right' size='sm' /></LinkListItem>
                   </LinkList>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </NavItem>
-            <NavItem>
-              <UncontrolledDropdown tag='div' nav inNavbar>
-                <DropdownToggle nav caret>
-                  Megamenu 2
-                </DropdownToggle>
-                <DropdownMenu>
-                  <LinkList>
-                    <LinkListItem header>Header</LinkListItem>
+                </Col>
+                <Col>
+                  <LinkList >
+                    <LinkListItem header>Heading 2</LinkListItem>
+                    <LinkListItem href="#">Link list Item 1</LinkListItem>
+                    <LinkListItem href="#">Link list Item 2</LinkListItem>
+                    <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkListItem href="#">Link list Item 4</LinkListItem>
+                    <LinkListItem wrapperClassName='it-more' className='medium' href="#">View More <Icon color='primary' icon='it-arrow-right' size='sm' /></LinkListItem>
                   </LinkList>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </NavItem>
-            <NavItem>
-              <UncontrolledDropdown tag='div' nav inNavbar>
-                <DropdownToggle nav caret>
-                  Megamenu 3
-                </DropdownToggle>
-                <DropdownMenu>
-                  <LinkList>
-                    <LinkListItem header>Header</LinkListItem>
+                </Col>
+                <Col>
+                  <LinkList >
+                    <LinkListItem header>Heading 3</LinkListItem>
+                    <LinkListItem href="#">Link list Item 1</LinkListItem>
+                    <LinkListItem href="#">Link list Item 2</LinkListItem>
+                    <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkListItem href="#">Link list Item 4</LinkListItem>
+                    <LinkListItem wrapperClassName='it-more' className='medium' href="#">View More <Icon color='primary' icon='it-arrow-right' size='sm' /></LinkListItem>
                   </LinkList>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </NavItem>
+                </Col>
+              </Row>
+            </MegamenuItem>
+            <MegamenuItem itemName='Megamenu Call To Action'>
+              <Row>
+                <Col>
+                  <LinkList >
+                    <LinkListItem href="#">Link list Item 1</LinkListItem>
+                    <LinkListItem href="#">Link list Item 2</LinkListItem>
+                    <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkListItem href="#">Link list Item 4</LinkListItem>
+                  </LinkList>
+                </Col>
+                <Col>
+                  <LinkList >
+                    <LinkListItem href="#">Link list Item 1</LinkListItem>
+                    <LinkListItem href="#">Link list Item 2</LinkListItem>
+                    <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkListItem href="#">Link list Item 4</LinkListItem>
+                  </LinkList>
+                </Col>
+                <Col>
+                  <LinkList >
+                    <LinkListItem href="#">Link list Item 1</LinkListItem>
+                    <LinkListItem href="#">Link list Item 2</LinkListItem>
+                    <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkListItem href="#">Link list Item 4</LinkListItem>
+                  </LinkList>
+                </Col>
+              </Row>
+              <div className='it-megamenu-footer'>
+                <Row>
+                  <Col>
+                    <LinkList>
+                      <LinkListItem href="#"><Icon color='primary' icon='it-star-outline' size='sm' /> Link list 1</LinkListItem>
+                    </LinkList>
+                  </Col>
+                  <Col>
+                    <LinkList>
+                      <LinkListItem href="#"><Icon color='primary' icon='it-star-outline' size='sm' /> Link list 2</LinkListItem>
+                    </LinkList>
+                  </Col>
+                  <Col>
+                    <LinkList>
+                      <LinkListItem href="#"><Icon color='primary' icon='it-star-outline' size='sm' /> Link list 3</LinkListItem>
+                    </LinkList>
+                  </Col>
+                </Row>
+              </div>
+            </MegamenuItem>
+            <MegamenuItem itemName='Megamenu Asymmetric'>
+              <Row>
+                <Col xs='12' lg='8'>
+                  <Row>
+                    <Col>
+                      <LinkList>
+                        <LinkListItem header className='it-heading-megacolumn no_toc'>Heading title left</LinkListItem>
+                      </LinkList>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <LinkList >
+                        <LinkListItem href="#">Link list Item 1</LinkListItem>
+                        <LinkListItem href="#">Link list Item 2</LinkListItem>
+                        <LinkListItem href="#">Link list Item 3</LinkListItem>
+                        <LinkListItem href="#">Link list Item 4</LinkListItem>
+                      </LinkList>
+                    </Col>
+                    <Col>
+                      <LinkList >
+                        <LinkListItem href="#">Link list Item 1</LinkListItem>
+                        <LinkListItem href="#">Link list Item 2</LinkListItem>
+                        <LinkListItem href="#">Link list Item 3</LinkListItem>
+                        <LinkListItem href="#">Link list Item 4</LinkListItem>
+                      </LinkList>
+                    </Col>
+                  </Row>
+                </Col>
+                <Col xs='12' lg='4'>
+                  <Row>
+                    <Col>
+                      <LinkList>
+                        <LinkListItem header className='it-heading-megacolumn no_toc'>Heading title right</LinkListItem>
+                      </LinkList>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <LinkList >
+                        <LinkListItem href="#">Link list Item 1</LinkListItem>
+                        <LinkListItem href="#">Link list Item 2</LinkListItem>
+                        <LinkListItem href="#">Link list Item 3</LinkListItem>
+                        <LinkListItem href="#">Link list Item 4</LinkListItem>
+                      </LinkList>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </MegamenuItem>
           </Nav>
-        </Collapse>
-      </Navbar>
-    </section>
+        </div>
+      </Collapse>
+    </Navbar>
   );
 };
 
-ConMegamenuInProgress.storyName = 'Con Megamenu (in progress)';
+ConMegamenuInProgress.storyName = 'Con Megamenu';
 
 export const InlineMenu = () => {
   const [collapseOpen1, setCollapseOpen1] = useState(false);

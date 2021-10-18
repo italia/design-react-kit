@@ -1,8 +1,8 @@
 import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
 import { Code } from '@storybook/components';
-import { Megamenu } from '../../src';
+import { MegamenuItem } from '../../src';
 
-<Meta title='Documentazione/Menu di navigazione/Megamenu' of={Megamenu} />
+<Meta title='Documentazione/Menu di navigazione/Megamenu' of={MegamenuItem} />
 
 # Megamenu
 
@@ -21,4 +21,67 @@ Il megamenu ha una struttura colonnare, ogni colonna richiama al suo interno il 
 #### Classico con link "more"
 Il megamenu può contenere un link relativo agli elenchi in esso contenuti.
 
-Qualore i link mostrati nel megamenu non siano tutti quelli relativi alla voce primaria (perché troppi numerosi), si può includere l'elemento 
+Qualora i link mostrati nel megamenu non siano tutti quelli relativi alla voce primaria (perché troppi numerosi), si può includere l'elemento con classe .it-external subito dopo l'elemento `Row` che contiene le liste di link.
+La struttura colonnare dell'elemento con classe .it-external dev'essere la stessa di quella contentente le liste di link.
+
+All'interno dell'ultima colonna andremo ad inserire la lista di link contenente il link che porterà ad un'eventuale pagine in cui sarà mostrato tutto il contenuto di sezione.
+Per stilare correttamente il link è sufficiente aggiungere la classe .it-more a un elemento con tag `li` che lo contiene.
+
+<Canvas>
+  <Story id='componenti-megamenu--more' />
+</Canvas>
+
+#### Classico con Intestazione
+Se ci fosse necessità di categorizzare i contenuti del megamenu, possiamo inserire un header all'interno delle link list.
+Per inserire l'header è sufficiente inserire un elemento `LinkListItem` con props 'header' all'inizio della lista relativa
+
+<Canvas>
+  <Story id='componenti-megamenu--header' />
+</Canvas>
+
+#### Classico con Intestazione e link "more"
+Si possono combinare header e link "more"
+
+Nell'esempio di seguito, il link "more" è relativo alla sola colonna in cui è inserito. Per aggiungere un link "more" è sufficiente aggiungere la classe .it-more all'elemento con tag `li` al fondo della lista relativa.
+
+<Canvas>
+  <Story id='componenti-megamenu--header-more' />
+</Canvas>
+
+### Megamenu con call to action
+I megamenu possono contenere delle liste di call to action che possono essere posizionate in fondo o a sinistra del megamenu.
+
+#### Call to action in basso
+Per aggiungere un elenco di call to cation è sufficiente inserire dopo il tag con classe .row contenente l'elenco primario, un tag con classe .it-megamenu-footer dove andremo ad inserire in una struttura colonnare identica a quella contenente la lista principale, le liste contenenti le call to action.
+
+
+<Canvas>
+  <Story id='componenti-megamenu--cta-bottom' />
+</Canvas>
+
+#### Call to action a destra
+Per aggiungere un elenco di call to action posizionato a destra, inseriremo una lista di link particolare all'interno dell'ultima colonna delle liste di link primarie.
+
+All'interno dell'ultima colonna inseriremo un elemento `Row` con classe .max-height-col che, a sua volta, conterrà una colonna con classe .it-vertical, all'interno della quale andremo ad inserire la nostra lista di link contenente le call to action.
+
+<Canvas>
+  <Story id='componenti-megamenu--cta-right' />
+</Canvas>
+
+### Megamenu con immagine e descrizione
+Possiamo inserire a destra del megamenu un'immagine ed una descrizione riguardante la sezione.
+
+All'interno dell'ultima colonna inseriremo un elemento `Row` con classe .max-height-col che, a sua volta, conterrà una colonna con le classi .it-verical e .it-description, all'interno della quale andremo ad inserire il blocco contenente immagine e testo.
+Il tag contenente immagine e descrizione avrà una classe .description-content
+
+<Canvas>
+  <Story id='componenti-megamenu--description' />
+</Canvas>
+
+### Megamenu con struttura colonnare asimmetrica
+Possiamo creare strutture colonnari asimmetriche per dare spazio a sottosezioni più popolate.
+Nell'esempio seguente abbiamo una struttura composta da due colonne a sinistra ed una a destra.
+
+<Canvas>
+  <Story id='componenti-megamenu--asymmetric' />
+</Canvas>
