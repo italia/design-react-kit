@@ -26,14 +26,14 @@ export const CheckboxInline = () => (
       <legend>Checkbox</legend>
       <Form className='m-3'>
         <FormGroup check inline>
-          <Input id='checkbox1' type='checkbox' />
-          <Label for='checkbox1' check>
+          <Input id='inline-checkbox1' type='checkbox' />
+          <Label for='inline-checkbox1' check>
             Checkbox non selezionato
           </Label>
         </FormGroup>
         <FormGroup check inline>
-          <Input id='checkbox2' type='checkbox' defaultChecked />
-          <Label for='checkbox2' check>
+          <Input id='inline-checkbox2' type='checkbox' defaultChecked />
+          <Label for='inline-checkbox2' check>
             Checkbox selezionato
           </Label>
         </FormGroup>
@@ -48,14 +48,19 @@ export const CheckboxDisabilitato = () => (
       <legend>Checkbox</legend>
       <Form className='m-3'>
         <FormGroup check>
-          <Input disabled id='checkbox1' type='checkbox' />
-          <Label for='checkbox1' check>
+          <Input disabled id='disabled-checkbox1' type='checkbox' />
+          <Label for='disabled-checkbox1' check>
             Checkbox disabilitato non selezionato
           </Label>
         </FormGroup>
         <FormGroup check>
-          <Input disabled id='checkbox2' type='checkbox' defaultChecked />
-          <Label for='checkbox2' check>
+          <Input
+            disabled
+            id='disabled-checkbox2'
+            type='checkbox'
+            defaultChecked
+          />
+          <Label for='disabled-checkbox2' check>
             Checkbox disabilitato selezionato
           </Label>
         </FormGroup>
@@ -72,20 +77,20 @@ export const CheckboxGruppi = () => (
           <legend>Checkbox</legend>
           <Form>
             <FormGroup check className='form-check-group'>
-              <Input id='checkbox1' type='checkbox' defaultChecked />
-              <Label for='checkbox1' check>
+              <Input id='group-checkbox1' type='checkbox' defaultChecked />
+              <Label for='group-checkbox1' check>
                 Checkbox selezionato
               </Label>
             </FormGroup>
             <FormGroup check className='form-check-group'>
-              <Input id='checkbox2' type='checkbox' />
-              <Label for='checkbox2' check>
+              <Input id='group-checkbox2' type='checkbox' />
+              <Label for='group-checkbox2' check>
                 Checkbox non selezionato
               </Label>
             </FormGroup>
             <FormGroup check className='form-check-group'>
-              <Input id='checkbox3' type='checkbox' disabled />
-              <Label for='checkbox3' check>
+              <Input id='group-checkbox3' type='checkbox' disabled />
+              <Label for='group-checkbox3' check>
                 Checkbox disabilitato non selezionato
               </Label>
             </FormGroup>
@@ -98,8 +103,8 @@ export const CheckboxGruppi = () => (
           <legend>Checkbox</legend>
           <Form>
             <FormGroup check className='form-check-group'>
-              <Input id='checkbox4' type='checkbox' defaultChecked />
-              <Label for='checkbox4' check>
+              <Input id='group-checkbox4' type='checkbox' defaultChecked />
+              <Label for='group-checkbox4' check>
                 Checkbox selezionato
               </Label>
               <FormText color=''>
@@ -108,8 +113,8 @@ export const CheckboxGruppi = () => (
               </FormText>
             </FormGroup>
             <FormGroup check className='form-check-group'>
-              <Input id='checkbox5' type='checkbox' />
-              <Label for='checkbox5' check>
+              <Input id='group-checkbox5' type='checkbox' />
+              <Label for='group-checkbox5' check>
                 Checkbox non selezionato
               </Label>
               <FormText color=''>
@@ -118,8 +123,8 @@ export const CheckboxGruppi = () => (
               </FormText>
             </FormGroup>
             <FormGroup check className='form-check-group'>
-              <Input id='checkbox6' type='checkbox' disabled />
-              <Label for='checkbox6' check>
+              <Input id='group-checkbox6' type='checkbox' disabled />
+              <Label for='group-checkbox6' check>
                 Checkbox disabilitato non selezionato
               </Label>
               <FormText color=''>
