@@ -22,11 +22,11 @@ export const Classico = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <span className='it-list' />
+        <Icon icon='it-list' size='sm'/>
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar>
         <Nav className='mt-0' navbar>
-          <MegamenuItem itemName='Megamenu Label'>
+          <MegamenuItem itemName='Megamenu Classico'>
             <Row>
               <Col>
                 <LinkList >
@@ -60,7 +60,7 @@ export const Classico = () => {
   );
 };
 
-export const More = () => {
+export const ConLinkMore = () => {
   const [openNav, setOpenNav] = useState(false);
   const toggle = () => {
     setOpenNav(!openNav);
@@ -69,11 +69,11 @@ export const More = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <span className='it-list' />
+        <Icon icon='it-list' size='sm'/>
       </NavbarToggler>
-      <Collapse isOpen={openNav} navbar>
+      <Collapse isOpen={openNav} navbar header megamenu>
         <Nav className='mt-0' navbar>
-          <MegamenuItem itemName='Megamenu Label'>
+          <MegamenuItem itemName='Megamenu con Link More'>
             <Row>
               <Col>
                 <LinkList >
@@ -117,7 +117,7 @@ export const More = () => {
     </Navbar>
   );
 };
-export const Header = () => {
+export const ConIntestazione = () => {
   const [openNav, setOpenNav] = useState(false);
   const toggle = () => {
     setOpenNav(!openNav);
@@ -126,12 +126,12 @@ export const Header = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <span className='it-list' />
+        <Icon icon='it-list' size='sm'/>
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar>
         <div className='menu-wrapper'>
           <Nav className='mt-0' navbar>
-            <MegamenuItem itemName='Megamenu Label'>
+            <MegamenuItem itemName='Megamenu con Intestazione'>
               <Row>
                 <Col>
                   <LinkList >
@@ -168,7 +168,7 @@ export const Header = () => {
     </Navbar>
   );
 };
-export const HeaderMore = () => {
+export const ConIntestazioneELinkMore = () => {
   const [openNav, setOpenNav] = useState(false);
   const toggle = () => {
     setOpenNav(!openNav);
@@ -177,12 +177,12 @@ export const HeaderMore = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <span className='it-list' />
+        <Icon icon='it-list' size='sm'/>
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar>
         <div className='menu-wrapper'>
           <Nav className='mt-0' navbar>
-            <MegamenuItem itemName='Megamenu Label'>
+            <MegamenuItem itemName='Megamenu con Intestazione e Link More'>
               <Row>
                 <Col>
                   <LinkList >
@@ -222,7 +222,7 @@ export const HeaderMore = () => {
     </Navbar>
   );
 };
-export const CtaBottom = () => {
+export const ConCallToActionInBasso = () => {
   const [openNav, setOpenNav] = useState(false);
   const toggle = () => {
     setOpenNav(!openNav);
@@ -231,12 +231,12 @@ export const CtaBottom = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <span className='it-list' />
+        <Icon icon='it-list' size='sm'/>
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar>
         <div className='menu-wrapper'>
           <Nav className='mt-0' navbar>
-            <MegamenuItem itemName='Megamenu Label'>
+            <MegamenuItem itemName='Megamenu con Call to Action in basso'>
               <Row>
                 <Col>
                   <LinkList >
@@ -289,7 +289,7 @@ export const CtaBottom = () => {
     </Navbar>
   );
 };
-export const CtaRight = () => {
+export const ConCallToActionADestra = () => {
   const [openNav, setOpenNav] = useState(false);
   const toggle = () => {
     setOpenNav(!openNav);
@@ -298,12 +298,12 @@ export const CtaRight = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <span className='it-list' />
+        <Icon icon='it-list' size='sm'/>
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar>
         <div className='menu-wrapper'>
           <Nav className='mt-0' navbar>
-            <MegamenuItem itemName='Megamenu Label'>
+            <MegamenuItem itemName='Megamenu con Call to Action a destra'>
               <Row className='max-height-col'>
                 <Col xs='12' lg='8'>
                   <Row className='margin-right-col'>
@@ -352,7 +352,7 @@ export const CtaRight = () => {
     </Navbar>
   );
 };
-export const Description = () => {
+export const ConImmagineEDescrizione = () => {
   const [openNav, setOpenNav] = useState(false);
   const toggle = () => {
     setOpenNav(!openNav);
@@ -361,12 +361,12 @@ export const Description = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <span className='it-list' />
+        <Icon icon='it-list' size='sm'/>
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar>
         <div className='menu-wrapper'>
           <Nav className='mt-0' navbar>
-            <MegamenuItem itemName='Megamenu Label'>
+            <MegamenuItem itemName='Megamenu con Immagine e Descrizione'>
               <Row className='max-height-col'>
                 <Col xs='12' lg='8'>
                   <Row className='margin-right-col'>
@@ -414,7 +414,7 @@ export const Description = () => {
     </Navbar>
   );
 };
-export const Asymmetric = () => {
+export const ConColonneAsimmetriche = () => {
   const [openNav, setOpenNav] = useState(false);
   const toggle = () => {
     setOpenNav(!openNav);
@@ -423,12 +423,12 @@ export const Asymmetric = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <span className='it-list' />
+        <Icon icon='it-list' size='sm'/>
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar>
         <div className='menu-wrapper'>
           <Nav className='mt-0' navbar>
-            <MegamenuItem itemName='Megamenu Label'>
+            <MegamenuItem itemName='Megamenu con Colonne Asimmetriche'>
               <Row>
                 <Col xs='12' lg='8'>
                   <Row>
