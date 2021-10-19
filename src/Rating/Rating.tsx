@@ -28,11 +28,11 @@ export interface RatingProps extends InputProps {
   value?: 1 | 2 | 3 | 4 | 5 | number;
 }
 
-function isCustomLegendObject(
+export const isCustomLegendObject = (
   legend: ReactNode | { content: ReactNode; srOnly: boolean }
-): legend is { content: ReactNode; srOnly: boolean } {
+): legend is { content: ReactNode; srOnly: boolean } => {
   return legend != null && typeof legend === 'object' && 'content' in legend;
-}
+};
 
 export const Rating: FC<RatingProps> = ({
   className,
@@ -53,7 +53,7 @@ export const Rating: FC<RatingProps> = ({
   // Fields
   const labelFn = labelTemplate;
 
-  const onChange = readOnly ? onChangeRating : noop;
+  const onChange = readOnly ? noop : onChangeRating;
 
   const wrapperClasses = classNames(wrapperClassName, {
     'rating-read-only': readOnly,
