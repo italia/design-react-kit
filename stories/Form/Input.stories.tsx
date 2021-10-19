@@ -169,7 +169,12 @@ export const _Readonly = () => (
 );
 
 export const ReadonlyNormalizzato = () => (
-  <Input label='Contenuto in sola lettura' id='exampleNormalized' normalized />
+  <Input
+    type='text'
+    label='Contenuto in sola lettura'
+    id='exampleNormalized'
+    normalized
+  />
 );
 
 ReadonlyNormalizzato.storyName = 'Readonly normalizzato';
