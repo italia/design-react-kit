@@ -214,7 +214,7 @@ export type { LinkListProps } from './LinkList/LinkList';
 export type { LinkListItemProps } from './LinkList/LinkListItem';
 export type { MegamenuItemProps } from './Megamenu/MegamenuItem';
 export type { MegamenuFooterProps } from './Megamenu/MegamenuFooter';
-export type { MegamenuHighlightColumnProps } from './Megamenu/MegamenuHighlightColumn';
+export type { MegamenuHCProps } from './Megamenu/MegamenuHighlightColumn';
 export type { ModalProps } from './Modal/Modal';
 export type { ModalHeaderProps } from './Modal/ModalHeader';
 export type { ModalBodyProps } from './Modal/ModalBody';

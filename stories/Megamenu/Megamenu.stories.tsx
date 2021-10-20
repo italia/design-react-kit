@@ -352,15 +352,15 @@ export const ConCallToActionADestra = () => {
                   <LinkList>
                     <LinkListItem href='#'>
                       Link list 1
-                      <Icon color='primary' icon='it-star-outline' size='sm'/>
+                      <Icon color='primary' icon='it-star-outline' size='sm' />
                     </LinkListItem>
                     <LinkListItem href='#'>
                       Link list 2
-                      <Icon color='primary' icon='it-star-outline' size='sm'/>
+                      <Icon color='primary' icon='it-star-outline' size='sm' />
                     </LinkListItem>
                     <LinkListItem href='#'>
                       Link list 3
-                      <Icon color='primary' icon='it-star-outline' size='sm'/>
+                      <Icon color='primary' icon='it-star-outline' size='sm' />
                     </LinkListItem>
                   </LinkList>
                 </MegamenuHighlightColumn>
@@ -419,8 +419,8 @@ export const ConImmagineEDescrizione = () => {
                   title='placeholder title'
                 />
                 <p>
-                  Omnis iste natus error sit voluptatem accusantium
-                  doloremque laudantium, totam rem aperiam.
+                  Omnis iste natus error sit voluptatem accusantium doloremque
+                  laudantium, totam rem aperiam.
                 </p>
               </MegamenuHighlightColumn>
             </Row>

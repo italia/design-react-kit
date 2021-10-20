@@ -14,7 +14,7 @@ describe('MegamenuItem component', () => {
     const { container } = render(
       <MegamenuItem itemName='Label' className='myclass'>
         Content
-       </MegamenuItem>
+      </MegamenuItem>
     );
 
     expect(container.firstChild).toHaveClass('myclass');
