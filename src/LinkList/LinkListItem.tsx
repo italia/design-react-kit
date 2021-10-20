@@ -21,7 +21,7 @@ export interface LinkListItemProps
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente LinkListItem */
   className?: string;
-  /** Classi aggiuntive da usare per l'elemento "li" */
+  /** Classi aggiuntive da usare per l'elemento contenitore dell'item */
   wrapperClassName?: string;
   /** Indica il link a cui l'elemento deve puntare. */
   href?: string;
