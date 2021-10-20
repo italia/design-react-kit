@@ -352,27 +352,15 @@ export const ConCallToActionADestra = () => {
                   <LinkList>
                     <LinkListItem href='#'>
                       Link list 1
-                      <Icon
-                        color='primary'
-                        icon='it-star-outline'
-                        size='sm'
-                      />
+                      <Icon color='primary' icon='it-star-outline' size='sm'/>
                     </LinkListItem>
                     <LinkListItem href='#'>
                       Link list 2
-                      <Icon
-                        color='primary'
-                        icon='it-star-outline'
-                        size='sm'
-                      />
+                      <Icon color='primary' icon='it-star-outline' size='sm'/>
                     </LinkListItem>
                     <LinkListItem href='#'>
                       Link list 3
-                      <Icon
-                        color='primary'
-                        icon='it-star-outline'
-                        size='sm'
-                      />
+                      <Icon color='primary' icon='it-star-outline' size='sm'/>
                     </LinkListItem>
                   </LinkList>
                 </MegamenuHighlightColumn>
@@ -461,10 +449,7 @@ export const ConColonneAsimmetriche = () => {
                 <Row>
                   <Col>
                     <LinkList>
-                      <LinkListItem
-                        header
-                        className='it-heading-megacolumn'
-                      >
+                      <LinkListItem header className='it-heading-megacolumn'>
                         Heading title left
                       </LinkListItem>
                     </LinkList>
@@ -491,10 +476,7 @@ export const ConColonneAsimmetriche = () => {
                 <Row>
                   <Col xs='12'>
                     <LinkList>
-                      <LinkListItem
-                        header
-                        className='it-heading-megacolumn'
-                      >
+                      <LinkListItem header className='it-heading-megacolumn'>
                         Heading title right
                       </LinkListItem>
                     </LinkList>

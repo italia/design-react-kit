@@ -272,10 +272,7 @@ export const ConMegamenu = () => {
                 <Row>
                   <Col>
                     <LinkList>
-                      <LinkListItem
-                        header
-                        className='it-heading-megacolumn'
-                      >
+                      <LinkListItem header className='it-heading-megacolumn'>
                         Heading title left
                       </LinkListItem>
                     </LinkList>
@@ -302,10 +299,7 @@ export const ConMegamenu = () => {
                 <Row>
                   <Col>
                     <LinkList>
-                      <LinkListItem
-                        header
-                        className='it-heading-megacolumn'
-                      >
+                      <LinkListItem header className='it-heading-megacolumn'>
                         Heading title right
                       </LinkListItem>
                     </LinkList>

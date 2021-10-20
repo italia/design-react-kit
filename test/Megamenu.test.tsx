@@ -12,7 +12,9 @@ describe('MegamenuItem component', () => {
 
   it('should append the passed className to the container', () => {
     const { container } = render(
-      <MegamenuItem itemName='Label' className='myclass'>Content</MegamenuItem>
+      <MegamenuItem itemName='Label' className='myclass'>
+        Content
+       </MegamenuItem>
     );
 
     expect(container.firstChild).toHaveClass('myclass');
@@ -47,6 +49,8 @@ describe('MegamenuHighlightColumn component', () => {
       <MegamenuHighlightColumn description>Content</MegamenuHighlightColumn>
     );
 
-    expect(container.getElementsByClassName('description-content').length).toBe(1);
+    expect(container.getElementsByClassName('description-content').length).toBe(
+      1
+    );
   });
 });
