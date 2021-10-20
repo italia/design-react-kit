@@ -1,16 +1,16 @@
-import React, { useState }  from 'react';
+import React, { useState } from 'react';
 import {
-    Col,
-    Collapse,
-    Icon,
-    LinkList,
-    LinkListItem,
-    MegamenuItem,
-    Nav,
-    Navbar,
-    NavbarBrand,
-    NavbarToggler,
-    Row,
+  Col,
+  Collapse,
+  Icon,
+  LinkList,
+  LinkListItem,
+  MegamenuItem,
+  Nav,
+  Navbar,
+  NavbarBrand,
+  NavbarToggler,
+  Row
 } from '../../src';
 
 export const Classico = () => {
@@ -22,31 +22,31 @@ export const Classico = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <Icon icon='it-list' size='sm'/>
+        <Icon icon='it-list' size='sm' />
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar header megamenu>
-        <Nav navbar >
+        <Nav navbar>
           <MegamenuItem itemName='Megamenu Classico'>
             <Row>
               <Col xs='12' lg='4'>
-                <LinkList >
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                <LinkList>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList >
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                <LinkList>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList >
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                <LinkList>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
             </Row>
@@ -66,31 +66,31 @@ export const ConLinkMore = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <Icon icon='it-list' size='sm'/>
+        <Icon icon='it-list' size='sm' />
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar header megamenu>
         <Nav navbar>
           <MegamenuItem itemName='Megamenu con Link More'>
             <Row>
               <Col xs='12' lg='4'>
-                <LinkList >
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                <LinkList>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList >
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                <LinkList>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList >
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                <LinkList>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
             </Row>
@@ -99,8 +99,15 @@ export const ConLinkMore = () => {
                 <Col xs='12' lg='4' />
                 <Col xs='12' lg='4' />
                 <Col xs='12' lg='4'>
-                  <LinkList >
-                    <LinkListItem wrapperClassName='it-more' className='medium' href="#">Link list Item 5 <Icon color='primary' icon='it-arrow-right' size='sm' /></LinkListItem>
+                  <LinkList>
+                    <LinkListItem
+                      wrapperClassName='it-more'
+                      className='medium'
+                      href='#'
+                    >
+                      Link list Item 5
+                      <Icon color='primary' icon='it-arrow-right' size='sm' />
+                    </LinkListItem>
                   </LinkList>
                 </Col>
               </Row>
@@ -120,34 +127,34 @@ export const ConIntestazione = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <Icon icon='it-list' size='sm'/>
+        <Icon icon='it-list' size='sm' />
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar header megamenu>
         <Nav navbar>
           <MegamenuItem itemName='Megamenu con Intestazione'>
             <Row>
               <Col xs='12' lg='4'>
-                <LinkList >
+                <LinkList>
                   <LinkListItem header>Heading 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList >
+                <LinkList>
                   <LinkListItem header>Heading 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList >
+                <LinkList>
                   <LinkListItem header>Heading 3</LinkListItem>
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
             </Row>
@@ -166,37 +173,58 @@ export const ConIntestazioneELinkMore = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <Icon icon='it-list' size='sm'/>
+        <Icon icon='it-list' size='sm' />
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar header megamenu>
         <Nav navbar>
           <MegamenuItem itemName='Megamenu con Intestazione e Link More'>
             <Row>
               <Col xs='12' lg='4'>
-                <LinkList >
+                <LinkList>
                   <LinkListItem header>Heading 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
-                  <LinkListItem wrapperClassName='it-more' className='medium' href="#">View More <Icon color='primary' icon='it-arrow-right' size='sm' /></LinkListItem>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                  <LinkListItem
+                    wrapperClassName='it-more'
+                    className='medium'
+                    href='#'
+                  >
+                    View More
+                    <Icon color='primary' icon='it-arrow-right' size='sm' />
+                  </LinkListItem>
                 </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList >
+                <LinkList>
                   <LinkListItem header>Heading 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
-                  <LinkListItem wrapperClassName='it-more' className='medium' href="#">View More <Icon color='primary' icon='it-arrow-right' size='sm' /></LinkListItem>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                  <LinkListItem
+                    wrapperClassName='it-more'
+                    className='medium'
+                    href='#'
+                  >
+                    View More
+                    <Icon color='primary' icon='it-arrow-right' size='sm' />
+                  </LinkListItem>
                 </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList >
+                <LinkList>
                   <LinkListItem header>Heading 3</LinkListItem>
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
-                  <LinkListItem wrapperClassName='it-more' className='medium' href="#">View More <Icon color='primary' icon='it-arrow-right' size='sm' /></LinkListItem>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                  <LinkListItem
+                    wrapperClassName='it-more'
+                    className='medium'
+                    href='#'
+                  >
+                    View More
+                    <Icon color='primary' icon='it-arrow-right' size='sm' />
+                  </LinkListItem>
                 </LinkList>
               </Col>
             </Row>
@@ -215,31 +243,31 @@ export const ConCallToActionInBasso = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <Icon icon='it-list' size='sm'/>
+        <Icon icon='it-list' size='sm' />
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar header megamenu>
         <Nav navbar>
           <MegamenuItem itemName='Megamenu con Call to Action in basso'>
             <Row>
               <Col xs='12' lg='4'>
-                <LinkList >
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                <LinkList>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList >
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                <LinkList>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList >
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                <LinkList>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
             </Row>
@@ -247,17 +275,26 @@ export const ConCallToActionInBasso = () => {
               <Row>
                 <Col xs='12' lg='4'>
                   <LinkList>
-                    <LinkListItem href="#"><Icon color='primary' icon='it-star-outline' size='sm' /> Link list 1</LinkListItem>
+                    <LinkListItem href='#'>
+                      <Icon color='primary' icon='it-star-outline' size='sm' />
+                      Link list 1
+                    </LinkListItem>
                   </LinkList>
                 </Col>
                 <Col xs='12' lg='4'>
                   <LinkList>
-                    <LinkListItem href="#"><Icon color='primary' icon='it-star-outline' size='sm' /> Link list 2</LinkListItem>
+                    <LinkListItem href='#'>
+                      <Icon color='primary' icon='it-star-outline' size='sm' />
+                      Link list 2
+                    </LinkListItem>
                   </LinkList>
                 </Col>
                 <Col xs='12' lg='4'>
                   <LinkList>
-                    <LinkListItem href="#"><Icon color='primary' icon='it-star-outline' size='sm' /> Link list 3</LinkListItem>
+                    <LinkListItem href='#'>
+                      <Icon color='primary' icon='it-star-outline' size='sm' />
+                      Link list 3
+                    </LinkListItem>
                   </LinkList>
                 </Col>
               </Row>
@@ -277,7 +314,7 @@ export const ConCallToActionADestra = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <Icon icon='it-list' size='sm'/>
+        <Icon icon='it-list' size='sm' />
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar header megamenu>
         <div className='menu-wrapper'>
@@ -287,24 +324,24 @@ export const ConCallToActionADestra = () => {
                 <Col xs='12' lg='8'>
                   <Row className='margin-right-col'>
                     <Col xs='12' lg='4'>
-                      <LinkList >
-                        <LinkListItem href="#">Link list Item 1</LinkListItem>
-                        <LinkListItem href="#">Link list Item 2</LinkListItem>
-                        <LinkListItem href="#">Link list Item 3</LinkListItem>
+                      <LinkList>
+                        <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                        <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                        <LinkListItem href='#'>Link list Item 3</LinkListItem>
                       </LinkList>
                     </Col>
                     <Col xs='12' lg='4'>
-                      <LinkList >
-                        <LinkListItem href="#">Link list Item 1</LinkListItem>
-                        <LinkListItem href="#">Link list Item 2</LinkListItem>
-                        <LinkListItem href="#">Link list Item 3</LinkListItem>
+                      <LinkList>
+                        <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                        <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                        <LinkListItem href='#'>Link list Item 3</LinkListItem>
                       </LinkList>
                     </Col>
                     <Col xs='12' lg='4'>
-                      <LinkList >
-                        <LinkListItem href="#">Link list Item 1</LinkListItem>
-                        <LinkListItem href="#">Link list Item 2</LinkListItem>
-                        <LinkListItem href="#">Link list Item 3</LinkListItem>
+                      <LinkList>
+                        <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                        <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                        <LinkListItem href='#'>Link list Item 3</LinkListItem>
                       </LinkList>
                     </Col>
                   </Row>
@@ -313,9 +350,30 @@ export const ConCallToActionADestra = () => {
                   <Row className='max-height-col'>
                     <Col className='it-vertical'>
                       <LinkList>
-                        <LinkListItem href="#">Link list 1 <Icon color='primary' icon='it-star-outline' size='sm' /></LinkListItem>
-                        <LinkListItem href="#">Link list 2 <Icon color='primary' icon='it-star-outline' size='sm' /></LinkListItem>
-                        <LinkListItem href="#">Link list 3 <Icon color='primary' icon='it-star-outline' size='sm' /></LinkListItem>
+                        <LinkListItem href='#'>
+                          Link list 1
+                          <Icon
+                            color='primary'
+                            icon='it-star-outline'
+                            size='sm'
+                          />
+                        </LinkListItem>
+                        <LinkListItem href='#'>
+                          Link list 2
+                          <Icon
+                            color='primary'
+                            icon='it-star-outline'
+                            size='sm'
+                          />
+                        </LinkListItem>
+                        <LinkListItem href='#'>
+                          Link list 3
+                          <Icon
+                            color='primary'
+                            icon='it-star-outline'
+                            size='sm'
+                          />
+                        </LinkListItem>
                       </LinkList>
                     </Col>
                   </Row>
@@ -337,7 +395,7 @@ export const ConImmagineEDescrizione = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <Icon icon='it-list' size='sm'/>
+        <Icon icon='it-list' size='sm' />
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar header megamenu>
         <Nav navbar>
@@ -346,24 +404,24 @@ export const ConImmagineEDescrizione = () => {
               <Col xs='12' lg='8'>
                 <Row className='margin-right-col'>
                   <Col xs='12' lg='4'>
-                    <LinkList >
-                      <LinkListItem href="#">Link list Item 1</LinkListItem>
-                      <LinkListItem href="#">Link list Item 2</LinkListItem>
-                      <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkList>
+                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
                     </LinkList>
                   </Col>
                   <Col xs='12' lg='4'>
-                    <LinkList >
-                      <LinkListItem href="#">Link list Item 1</LinkListItem>
-                      <LinkListItem href="#">Link list Item 2</LinkListItem>
-                      <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkList>
+                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
                     </LinkList>
                   </Col>
                   <Col xs='12' lg='4'>
-                    <LinkList >
-                      <LinkListItem href="#">Link list Item 1</LinkListItem>
-                      <LinkListItem href="#">Link list Item 2</LinkListItem>
-                      <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkList>
+                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
                     </LinkList>
                   </Col>
                 </Row>
@@ -372,8 +430,15 @@ export const ConImmagineEDescrizione = () => {
                 <Row>
                   <Col className='it-vertical it-description'>
                     <div className='description-content'>
-                      <img src="https://via.placeholder.com/225x110/ebebeb/808080/?text=Immagine" alt="placeholder" title="placeholder title" />
-                      <p>Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                      <img
+                        src='https://via.placeholder.com/225x110/ebebeb/808080/?text=Immagine'
+                        alt='placeholder'
+                        title='placeholder title'
+                      />
+                      <p>
+                        Omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium, totam rem aperiam.
+                      </p>
                     </div>
                   </Col>
                 </Row>
@@ -394,7 +459,7 @@ export const ConColonneAsimmetriche = () => {
     <Navbar expand='lg' className='has-megamenu'>
       <NavbarBrand />
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
-        <Icon icon='it-list' size='sm'/>
+        <Icon icon='it-list' size='sm' />
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar header megamenu>
         <Nav navbar>
@@ -404,23 +469,28 @@ export const ConColonneAsimmetriche = () => {
                 <Row>
                   <Col>
                     <LinkList>
-                      <LinkListItem header className='it-heading-megacolumn no_toc'>Heading title left</LinkListItem>
+                      <LinkListItem
+                        header
+                        className='it-heading-megacolumn no_toc'
+                      >
+                        Heading title left
+                      </LinkListItem>
                     </LinkList>
                   </Col>
                 </Row>
                 <Row>
                   <Col xs='12' lg='6'>
-                    <LinkList >
-                      <LinkListItem href="#">Link list Item 1</LinkListItem>
-                      <LinkListItem href="#">Link list Item 2</LinkListItem>
-                      <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkList>
+                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
                     </LinkList>
                   </Col>
                   <Col xs='12' lg='6'>
-                    <LinkList >
-                      <LinkListItem href="#">Link list Item 1</LinkListItem>
-                      <LinkListItem href="#">Link list Item 2</LinkListItem>
-                      <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkList>
+                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
                     </LinkList>
                   </Col>
                 </Row>
@@ -429,16 +499,21 @@ export const ConColonneAsimmetriche = () => {
                 <Row>
                   <Col xs='12'>
                     <LinkList>
-                      <LinkListItem header className='it-heading-megacolumn no_toc'>Heading title right</LinkListItem>
+                      <LinkListItem
+                        header
+                        className='it-heading-megacolumn no_toc'
+                      >
+                        Heading title right
+                      </LinkListItem>
                     </LinkList>
                   </Col>
                 </Row>
                 <Row>
                   <Col xs='12'>
-                    <LinkList >
-                      <LinkListItem href="#">Link list Item 1</LinkListItem>
-                      <LinkListItem href="#">Link list Item 2</LinkListItem>
-                      <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkList>
+                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
                     </LinkList>
                   </Col>
                 </Row>

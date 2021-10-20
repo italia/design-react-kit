@@ -164,30 +164,51 @@ export const ConMegamenu = () => {
           <MegamenuItem itemName='Megamenu Header & More'>
             <Row>
               <Col xs='12' lg='4'>
-                <LinkList >
+                <LinkList>
                   <LinkListItem header>Heading 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
-                  <LinkListItem wrapperClassName='it-more' className='medium' href="#">View More <Icon color='primary' icon='it-arrow-right' size='sm' /></LinkListItem>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                  <LinkListItem
+                    wrapperClassName='it-more'
+                    className='medium'
+                    href='#'
+                  >
+                    View More
+                    <Icon color='primary' icon='it-arrow-right' size='sm' />
+                  </LinkListItem>
                 </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList >
+                <LinkList>
                   <LinkListItem header>Heading 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
-                  <LinkListItem wrapperClassName='it-more' className='medium' href="#">View More <Icon color='primary' icon='it-arrow-right' size='sm' /></LinkListItem>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                  <LinkListItem
+                    wrapperClassName='it-more'
+                    className='medium'
+                    href='#'
+                  >
+                    View More
+                    <Icon color='primary' icon='it-arrow-right' size='sm' />
+                  </LinkListItem>
                 </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList >
+                <LinkList>
                   <LinkListItem header>Heading 3</LinkListItem>
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
-                  <LinkListItem wrapperClassName='it-more' className='medium' href="#">View More <Icon color='primary' icon='it-arrow-right' size='sm' /></LinkListItem>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                  <LinkListItem
+                    wrapperClassName='it-more'
+                    className='medium'
+                    href='#'
+                  >
+                    View More
+                    <Icon color='primary' icon='it-arrow-right' size='sm' />
+                  </LinkListItem>
                 </LinkList>
               </Col>
             </Row>
@@ -195,24 +216,24 @@ export const ConMegamenu = () => {
           <MegamenuItem itemName='Megamenu Call To Action'>
             <Row>
               <Col xs='12' lg='4'>
-                <LinkList >
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                <LinkList>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList >
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                <LinkList>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList >
-                  <LinkListItem href="#">Link list Item 1</LinkListItem>
-                  <LinkListItem href="#">Link list Item 2</LinkListItem>
-                  <LinkListItem href="#">Link list Item 3</LinkListItem>
+                <LinkList>
+                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
                 </LinkList>
               </Col>
             </Row>
@@ -220,17 +241,26 @@ export const ConMegamenu = () => {
               <Row>
                 <Col xs='12' lg='4'>
                   <LinkList>
-                    <LinkListItem href="#"><Icon color='primary' icon='it-star-outline' size='sm' /> Link list 1</LinkListItem>
+                    <LinkListItem href='#'>
+                      <Icon color='primary' icon='it-star-outline' size='sm' />
+                      Link list 1
+                    </LinkListItem>
                   </LinkList>
                 </Col>
                 <Col xs='12' lg='4'>
                   <LinkList>
-                    <LinkListItem href="#"><Icon color='primary' icon='it-star-outline' size='sm' /> Link list 2</LinkListItem>
+                    <LinkListItem href='#'>
+                      <Icon color='primary' icon='it-star-outline' size='sm' />
+                      Link list 2
+                    </LinkListItem>
                   </LinkList>
                 </Col>
                 <Col xs='12' lg='4'>
                   <LinkList>
-                    <LinkListItem href="#"><Icon color='primary' icon='it-star-outline' size='sm' /> Link list 3</LinkListItem>
+                    <LinkListItem href='#'>
+                      <Icon color='primary' icon='it-star-outline' size='sm' />
+                      Link list 3
+                    </LinkListItem>
                   </LinkList>
                 </Col>
               </Row>
@@ -242,23 +272,28 @@ export const ConMegamenu = () => {
                 <Row>
                   <Col>
                     <LinkList>
-                      <LinkListItem header className='it-heading-megacolumn no_toc'>Heading title left</LinkListItem>
+                      <LinkListItem
+                        header
+                        className='it-heading-megacolumn no_toc'
+                      >
+                        Heading title left
+                      </LinkListItem>
                     </LinkList>
                   </Col>
                 </Row>
                 <Row>
                   <Col xs='12' lg='6'>
-                    <LinkList >
-                      <LinkListItem href="#">Link list Item 1</LinkListItem>
-                      <LinkListItem href="#">Link list Item 2</LinkListItem>
-                      <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkList>
+                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
                     </LinkList>
                   </Col>
                   <Col xs='12' lg='6'>
-                    <LinkList >
-                      <LinkListItem href="#">Link list Item 1</LinkListItem>
-                      <LinkListItem href="#">Link list Item 2</LinkListItem>
-                      <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkList>
+                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
                     </LinkList>
                   </Col>
                 </Row>
@@ -267,16 +302,21 @@ export const ConMegamenu = () => {
                 <Row>
                   <Col>
                     <LinkList>
-                      <LinkListItem header className='it-heading-megacolumn no_toc'>Heading title right</LinkListItem>
+                      <LinkListItem
+                        header
+                        className='it-heading-megacolumn no_toc'
+                      >
+                        Heading title right
+                      </LinkListItem>
                     </LinkList>
                   </Col>
                 </Row>
                 <Row>
                   <Col>
-                    <LinkList >
-                      <LinkListItem href="#">Link list Item 1</LinkListItem>
-                      <LinkListItem href="#">Link list Item 2</LinkListItem>
-                      <LinkListItem href="#">Link list Item 3</LinkListItem>
+                    <LinkList>
+                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
                     </LinkList>
                   </Col>
                 </Row>
