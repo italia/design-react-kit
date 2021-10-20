@@ -1,6 +1,6 @@
-import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
 
-import { MegamenuItem } from '../../src';
+import { MegamenuItem, MegamenuFooter, MegamenuHighlightColumn } from '../../src';
 
 <Meta title='Documentazione/Menu di navigazione/Megamenu' of={MegamenuItem} />
 
@@ -62,7 +62,7 @@ I megamenu possono contenere delle liste di call to action che possono essere po
 
 #### Call to action in basso
 
-Per aggiungere un elenco di call to cation è sufficiente inserire dopo il tag con classe .row contenente l'elenco primario, un tag con classe .it-megamenu-footer dove andremo ad inserire in una struttura colonnare identica a quella contenente la lista principale, le liste contenenti le call to action.
+Per aggiungere un elenco di *call to cation* è sufficiente inserirle all'interno del componente `MegamenuFooter`.
 
 <Canvas>
   <Story id='componenti-megamenu--con-call-to-action-in-basso' />
@@ -70,9 +70,7 @@ Per aggiungere un elenco di call to cation è sufficiente inserire dopo il tag c
 
 #### Call to action a destra
 
-Per aggiungere un elenco di call to action posizionato a destra, inseriremo una lista di link particolare all'interno dell'ultima colonna delle liste di link primarie.
-
-All'interno dell'ultima colonna inseriremo un elemento `Row` con classe .max-height-col che, a sua volta, conterrà una colonna con classe .it-vertical, all'interno della quale andremo ad inserire la nostra lista di link contenente le call to action.
+Per aggiungere un elenco di *call to action* posizionato a destra, inseriremo tale lista di link particolare all'interno del componente `MegamenuHighlightColumn`.
 
 <Canvas>
   <Story id='componenti-megamenu--con-call-to-action-a-destra' />
@@ -82,8 +80,7 @@ All'interno dell'ultima colonna inseriremo un elemento `Row` con classe .max-hei
 
 Possiamo inserire a destra del megamenu un'immagine ed una descrizione riguardante la sezione.
 
-All'interno dell'ultima colonna inseriremo un elemento `Row` con classe .max-height-col che, a sua volta, conterrà una colonna con le classi .it-verical e .it-description, all'interno della quale andremo ad inserire il blocco contenente immagine e testo.
-Il tag contenente immagine e descrizione avrà una classe .description-content
+Esattamente come con le *call to action*, inseriremo il contenuto all'interno del componente `MegamenuHighlightColumn`, avendo cura di aggiungere la props `description`
 
 <Canvas>
   <Story id='componenti-megamenu--con-immagine-e-descrizione' />
@@ -97,3 +94,19 @@ Nell'esempio seguente abbiamo una struttura composta da due colonne a sinistra e
 <Canvas>
   <Story id='componenti-megamenu--con-colonne-asimmetriche' />
 </Canvas>
+
+## Argomenti componente
+
+### MegamenuItem
+
+<ArgsTable of={MegamenuItem} />
+
+### MegamenuFooter
+
+<ArgsTable of={MegamenuFooter} />
+
+### MegamenuHighlightColumn
+
+È un wrapper che utilizza come elemento principale `Col`. Ne accetta quindi tutti gli attributi.
+
+<ArgsTable of={MegamenuHighlightColumn} />

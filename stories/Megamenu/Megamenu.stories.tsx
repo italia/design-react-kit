@@ -6,6 +6,8 @@ import {
   LinkList,
   LinkListItem,
   MegamenuItem,
+  MegamenuFooter,
+  MegamenuHighlightColumn,
   Nav,
   Navbar,
   NavbarBrand,
@@ -271,7 +273,7 @@ export const ConCallToActionInBasso = () => {
                 </LinkList>
               </Col>
             </Row>
-            <div className='it-megamenu-footer'>
+            <MegamenuFooter>
               <Row>
                 <Col xs='12' lg='4'>
                   <LinkList>
@@ -298,7 +300,7 @@ export const ConCallToActionInBasso = () => {
                   </LinkList>
                 </Col>
               </Row>
-            </div>
+            </MegamenuFooter>
           </MegamenuItem>
         </Nav>
       </Collapse>
@@ -346,38 +348,34 @@ export const ConCallToActionADestra = () => {
                     </Col>
                   </Row>
                 </Col>
-                <Col xs='12' lg='4'>
-                  <Row className='max-height-col'>
-                    <Col className='it-vertical'>
-                      <LinkList>
-                        <LinkListItem href='#'>
-                          Link list 1
-                          <Icon
-                            color='primary'
-                            icon='it-star-outline'
-                            size='sm'
-                          />
-                        </LinkListItem>
-                        <LinkListItem href='#'>
-                          Link list 2
-                          <Icon
-                            color='primary'
-                            icon='it-star-outline'
-                            size='sm'
-                          />
-                        </LinkListItem>
-                        <LinkListItem href='#'>
-                          Link list 3
-                          <Icon
-                            color='primary'
-                            icon='it-star-outline'
-                            size='sm'
-                          />
-                        </LinkListItem>
-                      </LinkList>
-                    </Col>
-                  </Row>
-                </Col>
+                <MegamenuHighlightColumn xs='12' lg='4'>
+                  <LinkList>
+                    <LinkListItem href='#'>
+                      Link list 1
+                      <Icon
+                        color='primary'
+                        icon='it-star-outline'
+                        size='sm'
+                      />
+                    </LinkListItem>
+                    <LinkListItem href='#'>
+                      Link list 2
+                      <Icon
+                        color='primary'
+                        icon='it-star-outline'
+                        size='sm'
+                      />
+                    </LinkListItem>
+                    <LinkListItem href='#'>
+                      Link list 3
+                      <Icon
+                        color='primary'
+                        icon='it-star-outline'
+                        size='sm'
+                      />
+                    </LinkListItem>
+                  </LinkList>
+                </MegamenuHighlightColumn>
               </Row>
             </MegamenuItem>
           </Nav>
@@ -426,23 +424,17 @@ export const ConImmagineEDescrizione = () => {
                   </Col>
                 </Row>
               </Col>
-              <Col xs='12' lg='4'>
-                <Row>
-                  <Col className='it-vertical it-description'>
-                    <div className='description-content'>
-                      <img
-                        src='https://via.placeholder.com/225x110/ebebeb/808080/?text=Immagine'
-                        alt='placeholder'
-                        title='placeholder title'
-                      />
-                      <p>
-                        Omnis iste natus error sit voluptatem accusantium
-                        doloremque laudantium, totam rem aperiam.
-                      </p>
-                    </div>
-                  </Col>
-                </Row>
-              </Col>
+              <MegamenuHighlightColumn xs='12' lg='4' description>
+                <img
+                  src='https://via.placeholder.com/225x110/ebebeb/808080/?text=Immagine'
+                  alt='placeholder'
+                  title='placeholder title'
+                />
+                <p>
+                  Omnis iste natus error sit voluptatem accusantium
+                  doloremque laudantium, totam rem aperiam.
+                </p>
+              </MegamenuHighlightColumn>
             </Row>
           </MegamenuItem>
         </Nav>
@@ -471,7 +463,7 @@ export const ConColonneAsimmetriche = () => {
                     <LinkList>
                       <LinkListItem
                         header
-                        className='it-heading-megacolumn no_toc'
+                        className='it-heading-megacolumn'
                       >
                         Heading title left
                       </LinkListItem>
@@ -501,7 +493,7 @@ export const ConColonneAsimmetriche = () => {
                     <LinkList>
                       <LinkListItem
                         header
-                        className='it-heading-megacolumn no_toc'
+                        className='it-heading-megacolumn'
                       >
                         Heading title right
                       </LinkListItem>

@@ -3,8 +3,8 @@ import { DropdownMenu, DropdownToggle, UncontrolledDropdown } from 'reactstrap';
 import classNames from 'classnames';
 
 export interface MegamenuItemProps extends HTMLAttributes<HTMLUListElement> {
-  /** @type {string} Etichetta del megamenu */
-  itemName?: string;
+  /** Etichetta del megamenu visibile all'interno della barra di navigazione */
+  itemName: string;
   /** Classi aggiuntive da usare per il componente Nav */
   className?: string;
 }

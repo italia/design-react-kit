@@ -274,7 +274,7 @@ export const ConMegamenu = () => {
                     <LinkList>
                       <LinkListItem
                         header
-                        className='it-heading-megacolumn no_toc'
+                        className='it-heading-megacolumn'
                       >
                         Heading title left
                       </LinkListItem>
@@ -304,7 +304,7 @@ export const ConMegamenu = () => {
                     <LinkList>
                       <LinkListItem
                         header
-                        className='it-heading-megacolumn no_toc'
+                        className='it-heading-megacolumn'
                       >
                         Heading title right
                       </LinkListItem>
