@@ -89,6 +89,8 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
    * @deprecated
    */
   static?: boolean;
+  /** Bottone per create input con bottone */
+  button?: ReactNode;
 }
 
 type InputState = { isFocused: boolean; hidden: boolean; icon: boolean };
@@ -138,6 +140,7 @@ export class Input extends React.Component<InputProps, InputState> {
       wrapperClass: originalWrapperClassOld,
       wrapperClassName: originalWrapperClass,
       size,
+      button,
       ...attributes
     } = this.props;
     let { bsSize, valid, invalid, ...rest } = attributes;
@@ -248,7 +251,8 @@ export class Input extends React.Component<InputProps, InputState> {
       label,
       infoTextClass,
       infoText,
-      wrapperClass
+      wrapperClass,
+      button
     };
 
     if (placeholder) {
