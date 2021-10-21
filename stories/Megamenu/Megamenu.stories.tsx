@@ -348,9 +348,7 @@ export const ConColonneAsimmetriche = () => {
           <Col xs='12' lg='8'>
             <Row>
               <Col xs='12'>
-                <h3 className='it-heading-megacolumn'>
-                  Heading title left
-                </h3>
+                <h3 className='it-heading-megacolumn'>Heading title left</h3>
               </Col>
             </Row>
             <Row>
@@ -373,9 +371,7 @@ export const ConColonneAsimmetriche = () => {
           <Col xs='12' lg='4'>
             <Row>
               <Col xs='12'>
-                  <h3 className='it-heading-megacolumn'>
-                    Heading title right
-                  </h3>
+                <h3 className='it-heading-megacolumn'>Heading title right</h3>
               </Col>
             </Row>
             <Row>
