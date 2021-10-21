@@ -8,7 +8,8 @@ export interface InputContainerProps extends HTMLAttributes<HTMLElement> {
   infoText: string | undefined;
   id: string | undefined;
   infoId: string | undefined;
-  button: ReactNode;
+  button?: ReactNode;
+  icon?: ReactNode;
 }
 
 export const InputContainer: FC<InputContainerProps> = ({
@@ -20,12 +21,18 @@ export const InputContainer: FC<InputContainerProps> = ({
   infoText,
   wrapperClass,
   children,
-  button
+  button,
+  icon
 }) => {
-  if (button) {
+  if (button || icon) {
     return (
       <div className={wrapperClass}>
         <div className='input-group'>
+          {icon && (
+            <div className='input-group-prepend'>
+              <div className='input-group-text'>{icon}</div>
+            </div>
+          )}
           {children}
           <label htmlFor={id} className={activeClass}>
             {label}
@@ -33,7 +40,7 @@ export const InputContainer: FC<InputContainerProps> = ({
           <small id={infoId} className={infoTextClass}>
             {infoText}
           </small>
-          <div className='input-group-append'>{button}</div>
+          {button && <div className='input-group-append'>{button}</div>}
         </div>
       </div>
     );
