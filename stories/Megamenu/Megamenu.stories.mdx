@@ -1,6 +1,7 @@
 import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
 
 import {
+  Megamenu,
   MegamenuItem,
   MegamenuFooter,
   MegamenuHighlightColumn
@@ -14,17 +15,13 @@ import {
 
 Il megamenu all'interno del nav è una variazione del componente [Dropdown](/story/componenti-dropdown-dropdown-menu--menu-con-voci-large).
 Gli elementi megamenu contenuti nelle navbar sono gestiti come elementi di tipo **collapse** nella loro versione mobile.
-Per funzionare è necessario:
-
-- aggiungere la classe `.has-megamenu` all'elemento `Nav`
-- aggiungere l'attributo `megamenu` all'elemento `Collapse`
 
 ### Megamenu Classico
 
 Il megamenu ha una struttura colonnare, ogni colonna richiama al suo interno il componente [Lista di link](/story/componenti-linklist--esempi) per comporre l'elenco di link desiderato
 
 <Canvas>
-  <Story id='componenti-megamenu--classico' />
+  <Story id='componenti-megamenu--classico' height='450px' />
 </Canvas>
 
 #### Classico con link "more"
@@ -38,7 +35,7 @@ All'interno dell'ultima colonna andremo ad inserire la lista di link contenente 
 Per stilare correttamente il link è sufficiente aggiungere la classe `.it-more` a un elemento con tag `li` che lo contiene.
 
 <Canvas>
-  <Story id='componenti-megamenu--con-link-more' />
+  <Story id='componenti-megamenu--con-link-more' height='450px' />
 </Canvas>
 
 #### Classico con Intestazione
@@ -47,7 +44,7 @@ Se ci fosse necessità di categorizzare i contenuti del megamenu, possiamo inser
 Per inserire l'header è sufficiente inserire un elemento `LinkListItem` con props `header` all'inizio della lista relativa.
 
 <Canvas>
-  <Story id='componenti-megamenu--con-intestazione' />
+  <Story id='componenti-megamenu--con-intestazione' height='450px' />
 </Canvas>
 
 #### Classico con Intestazione e link "more"
@@ -57,7 +54,10 @@ Si possono combinare header e link "more".
 Nell'esempio di seguito, il link "more" è relativo alla sola colonna in cui è inserito. Per aggiungere un link "more" è sufficiente aggiungere la classe `.it-more` all'elemento con tag `li` al fondo della lista relativa.
 
 <Canvas>
-  <Story id='componenti-megamenu--con-intestazione-e-link-more' />
+  <Story
+    id='componenti-megamenu--con-intestazione-e-link-more'
+    height='450px'
+  />
 </Canvas>
 
 ### Megamenu con call to action
@@ -69,7 +69,7 @@ I megamenu possono contenere delle liste di call to action che possono essere po
 Per aggiungere un elenco di _call to cation_ è sufficiente inserirle all'interno del componente `MegamenuFooter`.
 
 <Canvas>
-  <Story id='componenti-megamenu--con-call-to-action-in-basso' />
+  <Story id='componenti-megamenu--con-call-to-action-in-basso' height='450px' />
 </Canvas>
 
 #### Call to action a destra
@@ -77,7 +77,7 @@ Per aggiungere un elenco di _call to cation_ è sufficiente inserirle all'intern
 Per aggiungere un elenco di _call to action_ posizionato a destra, inseriremo tale lista di link particolare all'interno del componente `MegamenuHighlightColumn`.
 
 <Canvas>
-  <Story id='componenti-megamenu--con-call-to-action-a-destra' />
+  <Story id='componenti-megamenu--con-call-to-action-a-destra' height='450px' />
 </Canvas>
 
 ### Megamenu con immagine e descrizione
@@ -87,7 +87,7 @@ Possiamo inserire a destra del megamenu un'immagine ed una descrizione riguardan
 Esattamente come con le _call to action_, inseriremo il contenuto all'interno del componente `MegamenuHighlightColumn`, avendo cura di aggiungere la props `description`
 
 <Canvas>
-  <Story id='componenti-megamenu--con-immagine-e-descrizione' />
+  <Story id='componenti-megamenu--con-immagine-e-descrizione' height='450px' />
 </Canvas>
 
 ### Megamenu con struttura colonnare asimmetrica
@@ -96,10 +96,14 @@ Possiamo creare strutture colonnari asimmetriche per dare spazio a sottosezioni 
 Nell'esempio seguente abbiamo una struttura composta da due colonne a sinistra ed una a destra.
 
 <Canvas>
-  <Story id='componenti-megamenu--con-colonne-asimmetriche' />
+  <Story id='componenti-megamenu--con-colonne-asimmetriche' height='450px' />
 </Canvas>
 
 ## Argomenti componente
+
+### Megamenu
+
+<ArgsTable of={Megamenu} />
 
 ### MegamenuItem
 

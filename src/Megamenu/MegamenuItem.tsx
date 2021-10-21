@@ -5,7 +5,7 @@ import classNames from 'classnames';
 export interface MegamenuItemProps extends HTMLAttributes<HTMLUListElement> {
   /** Etichetta del megamenu visibile all'interno della barra di navigazione */
   itemName: string;
-  /** Classi aggiuntive da usare per il componente Nav */
+  /** Classi aggiuntive da usare per il componente UncontrolledDropdown */
   className?: string;
 }
 
@@ -21,7 +21,7 @@ export const MegamenuItem: FC<MegamenuItemProps> = ({
       <DropdownToggle caret nav>
         {itemName}
       </DropdownToggle>
-      <DropdownMenu>{children}</DropdownMenu>
+      <DropdownMenu positionFixed>{children}</DropdownMenu>
     </UncontrolledDropdown>
   );
 };

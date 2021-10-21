@@ -50,7 +50,7 @@ export const Collapse: FC<CollapseProps> = ({
   onOverlayClick,
   ...attributes
 }) => {
-  if (navbar && header) {
+  if (megamenu || (navbar && header)) {
     const classes = classNames(className, 'navbar-collapse', {
       expanded: isOpen
     });
@@ -75,7 +75,7 @@ export const Collapse: FC<CollapseProps> = ({
         {megamenu ? (
           <div className='menu-wrapper'>{children}</div>
         ) : (
-          { children }
+          <>{children}</>
         )}
       </CollapseBase>
     );

@@ -1,7 +1,28 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import { MegamenuItem, MegamenuFooter, MegamenuHighlightColumn } from '../src';
+import {
+  Megamenu,
+  MegamenuItem,
+  MegamenuFooter,
+  MegamenuHighlightColumn
+} from '../src';
+
+describe('Megamenu component', () => {
+  it('should work as container for children elements', () => {
+    render(<Megamenu>Content</Megamenu>);
+
+    expect(screen.getByText('Content')).not.toBe(null);
+  });
+
+  it('should append the passed className to the container', () => {
+    const { container } = render(
+      <Megamenu className='myclass'>Content</Megamenu>
+    );
+
+    expect(container.firstChild).toHaveClass('myclass');
+  });
+});
 
 describe('MegamenuItem component', () => {
   it('should work as container for children elements', () => {
