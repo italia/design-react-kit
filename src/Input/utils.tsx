@@ -9,16 +9,17 @@ type ValidationProps = Pick<InputProps, 'valid' | 'invalid'>;
 type TypeProps = Pick<InputProps, 'plaintext' | 'type'> & {
   staticInput?: boolean;
 };
-type FormControlProps = Pick<InputProps, 'addon'> & TypeProps;
+type FormControlProps = Pick<InputProps, 'addon' | 'normalized'> & TypeProps;
 
 function getFormControlClassInternal({
   plaintext,
   staticInput,
   type = 'text',
-  addon
+  addon,
+  normalized
 }: FormControlProps) {
   const formControlClass = 'form-control';
-  if (plaintext || staticInput) {
+  if (plaintext || staticInput || normalized) {
     return `${formControlClass}-plaintext`;
   }
   if (type === 'file') {
