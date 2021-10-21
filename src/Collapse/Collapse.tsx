@@ -13,6 +13,8 @@ export interface CollapseProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
   /** Indica se il componente Collapse è usato all'interno di un componente navbar */
   navbar?: boolean;
+  /** Indica se il componente Collapse ha al suo interno un Megamenu */
+  megamenu?: boolean;
   /** Indica se il componente Collapse è usato all'interno di un componente Header */
   header?: boolean;
   delay?: {
@@ -42,12 +44,13 @@ export const Collapse: FC<CollapseProps> = ({
   header = false,
   className,
   navbar,
+  megamenu,
   children,
   isOpen = false,
   onOverlayClick,
   ...attributes
 }) => {
-  if (navbar && header) {
+  if (megamenu || (navbar && header)) {
     const classes = classNames(className, 'navbar-collapse', {
       expanded: isOpen
     });
@@ -69,7 +72,11 @@ export const Collapse: FC<CollapseProps> = ({
             <span className='it-close'></span>close
           </button>
         </div>
-        {children}
+        {megamenu ? (
+          <div className='menu-wrapper'>{children}</div>
+        ) : (
+          <>{children}</>
+        )}
       </CollapseBase>
     );
   }
