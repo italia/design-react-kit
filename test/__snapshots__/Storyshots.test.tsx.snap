@@ -2756,12 +2756,12 @@ exports[`Storyshots Componenti/Breadcrumb Con icone 1`] = `
             href="#"
           >
             Home
-            <span
-              className="separator"
-            >
-              /
-            </span>
           </a>
+          <span
+            className="separator"
+          >
+            /
+          </span>
         </li>
         <li
           className="breadcrumb-item"
@@ -2785,12 +2785,12 @@ exports[`Storyshots Componenti/Breadcrumb Con icone 1`] = `
             href="#"
           >
             Subsection
-            <span
-              className="separator"
-            >
-              /
-            </span>
           </a>
+          <span
+            className="separator"
+          >
+            /
+          </span>
         </li>
         <li
           aria-current="page"
@@ -2850,12 +2850,12 @@ exports[`Storyshots Componenti/Breadcrumb Esempi 1`] = `
             href="#"
           >
             Home
-            <span
-              className="separator"
-            >
-              /
-            </span>
           </a>
+          <span
+            className="separator"
+          >
+            /
+          </span>
         </li>
         <li
           className="breadcrumb-item"
@@ -2864,12 +2864,12 @@ exports[`Storyshots Componenti/Breadcrumb Esempi 1`] = `
             href="#"
           >
             Subsection
-            <span
-              className="separator"
-            >
-              /
-            </span>
           </a>
+          <span
+            className="separator"
+          >
+            /
+          </span>
         </li>
         <li
           aria-current="page"
@@ -2897,12 +2897,12 @@ exports[`Storyshots Componenti/Breadcrumb Esempi 1`] = `
             href="#"
           >
             Home
-            <span
-              className="separator"
-            >
-              &gt;
-            </span>
           </a>
+          <span
+            className="separator"
+          >
+            &gt;
+          </span>
         </li>
         <li
           className="breadcrumb-item"
@@ -2911,12 +2911,12 @@ exports[`Storyshots Componenti/Breadcrumb Esempi 1`] = `
             href="#"
           >
             Subsection
-            <span
-              className="separator"
-            >
-              &gt;
-            </span>
           </a>
+          <span
+            className="separator"
+          >
+            &gt;
+          </span>
         </li>
         <li
           aria-current="page"
