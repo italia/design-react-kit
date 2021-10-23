@@ -2731,98 +2731,93 @@ exports[`Storyshots Componenti/Breadcrumb Con icone 1`] = `
       aria-label="breadcrumb"
       className="breadcrumb-container"
     >
-      <nav
-        aria-label="breadcrumb"
-        className=""
+      <ol
+        className="breadcrumb"
       >
-        <ol
-          className="breadcrumb"
+        <li
+          className="breadcrumb-item"
         >
-          <li
-            className="breadcrumb-item"
+          <svg
+            aria-hidden={true}
+            className="icon align-top mr-1 icon-secondary icon-sm"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              aria-hidden={true}
-              className="icon align-top mr-1 icon-secondary icon-sm"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-            <a
-              href="#"
-            >
-              Home
-              <span
-                className="separator"
-              >
-                /
-              </span>
-            </a>
-          </li>
-          <li
-            className="breadcrumb-item"
+            <path
+              d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+          <a
+            href="#"
           >
-            <svg
-              aria-hidden={true}
-              className="icon align-top mr-1 icon-secondary icon-sm"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            Home
+            <span
+              className="separator"
             >
-              <path
-                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-            <a
-              href="#"
-            >
-              Subsection
-              <span
-                className="separator"
-              >
-                /
-              </span>
-            </a>
-          </li>
-          <li
-            aria-current="page"
-            className="active breadcrumb-item"
+              /
+            </span>
+          </a>
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          <svg
+            aria-hidden={true}
+            className="icon align-top mr-1 icon-secondary icon-sm"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              aria-hidden={true}
-              className="icon align-top mr-1 icon-secondary icon-sm"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <path
+              d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+          <a
+            href="#"
+          >
+            Subsection
+            <span
+              className="separator"
             >
-              <path
-                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-            <a
-              href="#"
-            >
-              Current section
-            </a>
-          </li>
-        </ol>
-      </nav>
+              /
+            </span>
+          </a>
+        </li>
+        <li
+          aria-current="page"
+          className="active breadcrumb-item"
+        >
+          <svg
+            aria-hidden={true}
+            className="icon align-top mr-1 icon-secondary icon-sm"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+          <a
+            href="#"
+          >
+            Current section
+          </a>
+        </li>
+      </ol>
     </nav>
   </section>
 </div>
@@ -2845,104 +2840,95 @@ exports[`Storyshots Componenti/Breadcrumb Esempi 1`] = `
       aria-label="breadcrumb"
       className="breadcrumb-container"
     >
-      <nav
-        aria-label="breadcrumb"
-        className=""
+      <ol
+        className="breadcrumb"
       >
-        <ol
-          className="breadcrumb"
+        <li
+          className="breadcrumb-item"
         >
-          <li
-            className="breadcrumb-item"
+          <a
+            href="#"
           >
-            <a
-              href="#"
+            Home
+            <span
+              className="separator"
             >
-              Home
-              <span
-                className="separator"
-              >
-                /
-              </span>
-            </a>
-          </li>
-          <li
-            className="breadcrumb-item"
+              /
+            </span>
+          </a>
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          <a
+            href="#"
           >
-            <a
-              href="#"
+            Subsection
+            <span
+              className="separator"
             >
-              Subsection
-              <span
-                className="separator"
-              >
-                /
-              </span>
-            </a>
-          </li>
-          <li
-            aria-current="page"
-            className="active breadcrumb-item"
+              /
+            </span>
+          </a>
+        </li>
+        <li
+          aria-current="page"
+          className="active breadcrumb-item"
+        >
+          <a
+            href="#"
           >
-            <a
-              href="#"
-            >
-              Current section
-            </a>
-          </li>
-        </ol>
-      </nav>
+            Current section
+          </a>
+        </li>
+      </ol>
     </nav>
     <nav
-      className="breadcrumb-container"
+      aria-label="breadcrumb"
+      className="breadcrumb-container breadcrumb-container"
     >
-      <nav
-        aria-label="breadcrumb"
-        className=""
+      <ol
+        className="breadcrumb"
       >
-        <ol
-          className="breadcrumb"
+        <li
+          className="breadcrumb-item"
         >
-          <li
-            className="breadcrumb-item"
+          <a
+            href="#"
           >
-            <a
-              href="#"
+            Home
+            <span
+              className="separator"
             >
-              Home
-              <span
-                className="separator"
-              >
-                &gt;
-              </span>
-            </a>
-          </li>
-          <li
-            className="breadcrumb-item"
+              &gt;
+            </span>
+          </a>
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          <a
+            href="#"
           >
-            <a
-              href="#"
+            Subsection
+            <span
+              className="separator"
             >
-              Subsection
-              <span
-                className="separator"
-              >
-                &gt;
-              </span>
-            </a>
-          </li>
-          <li
-            aria-current="page"
-            className="active breadcrumb-item"
+              &gt;
+            </span>
+          </a>
+        </li>
+        <li
+          aria-current="page"
+          className="active breadcrumb-item"
+        >
+          <a
+            href="#"
           >
-            <a
-              href="#"
-            >
-              Current section
-            </a>
-          </li>
-        </ol>
-      </nav>
+            Current section
+          </a>
+        </li>
+      </ol>
     </nav>
   </section>
 </div>
@@ -2965,150 +2951,140 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
       aria-label="breadcrumb"
       className="breadcrumb-container"
     >
-      <nav
-        aria-label="breadcrumb"
-        className=""
+      <ol
+        className="breadcrumb dark"
       >
-        <ol
-          className="breadcrumb dark"
+        <li
+          className="breadcrumb-item"
         >
-          <li
-            className="breadcrumb-item"
+          <a
+            href="#"
           >
-            <a
-              href="#"
-            >
-              Home
-            </a>
-            <span
-              className="separator"
-            >
-              /
-            </span>
-          </li>
-          <li
-            className="breadcrumb-item"
+            Home
+          </a>
+          <span
+            className="separator"
           >
-            <a
-              href="#"
-            >
-              Subsection
-            </a>
-            <span
-              className="separator"
-            >
-              /
-            </span>
-          </li>
-          <li
-            aria-current="page"
-            className="active breadcrumb-item"
+            /
+          </span>
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          <a
+            href="#"
           >
-            <a
-              href="#"
-            >
-              Current section
-            </a>
-          </li>
-        </ol>
-      </nav>
+            Subsection
+          </a>
+          <span
+            className="separator"
+          >
+            /
+          </span>
+        </li>
+        <li
+          aria-current="page"
+          className="active breadcrumb-item"
+        >
+          <a
+            href="#"
+          >
+            Current section
+          </a>
+        </li>
+      </ol>
     </nav>
     <nav
       aria-label="breadcrumb"
       className="breadcrumb-container"
     >
-      <nav
-        aria-label="breadcrumb"
-        className=""
+      <ol
+        className="breadcrumb dark"
       >
-        <ol
-          className="breadcrumb dark"
+        <li
+          className="breadcrumb-item"
         >
-          <li
-            className="breadcrumb-item"
+          <svg
+            aria-hidden={true}
+            className="icon align-top mr-1 icon-white icon-sm"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              aria-hidden={true}
-              className="icon align-top mr-1 icon-white icon-sm"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-            <a
-              href="#"
-            >
-              Home
-            </a>
-            <span
-              className="separator"
-            >
-              /
-            </span>
-          </li>
-          <li
-            className="breadcrumb-item"
+            <path
+              d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+          <a
+            href="#"
           >
-            <svg
-              aria-hidden={true}
-              className="icon align-top mr-1 icon-white icon-sm"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-            <a
-              href="#"
-            >
-              Subsection
-            </a>
-            <span
-              className="separator"
-            >
-              /
-            </span>
-          </li>
-          <li
-            aria-current="page"
-            className="active breadcrumb-item"
+            Home
+          </a>
+          <span
+            className="separator"
           >
-            <svg
-              aria-hidden={true}
-              className="icon align-top mr-1 icon-white icon-sm"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-            <a
-              href="#"
-            >
-              Current section
-            </a>
-          </li>
-        </ol>
-      </nav>
+            /
+          </span>
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          <svg
+            aria-hidden={true}
+            className="icon align-top mr-1 icon-white icon-sm"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+          <a
+            href="#"
+          >
+            Subsection
+          </a>
+          <span
+            className="separator"
+          >
+            /
+          </span>
+        </li>
+        <li
+          aria-current="page"
+          className="active breadcrumb-item"
+        >
+          <svg
+            aria-hidden={true}
+            className="icon align-top mr-1 icon-white icon-sm"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+          <a
+            href="#"
+          >
+            Current section
+          </a>
+        </li>
+      </ol>
     </nav>
   </section>
 </div>

@@ -9,7 +9,7 @@ export default {
 
 export const Esempi = () => (
   <section>
-    <Breadcrumb className='breadcrumb-container'>
+    <Breadcrumb>
       <BreadcrumbItem>
         <a href='#'>
           Home<span className='separator'>/</span>
@@ -45,7 +45,7 @@ export const Esempi = () => (
 
 export const ConIcone = () => (
   <section>
-    <Breadcrumb className='breadcrumb-container'>
+    <Breadcrumb>
       <BreadcrumbItem>
         <Icon
           className='align-top mr-1'
@@ -88,7 +88,7 @@ ConIcone.storyName = 'Con icone';
 
 export const SuSfondoScuro = () => (
   <section>
-    <Breadcrumb listClassName='dark'>
+    <Breadcrumb dark>
       <BreadcrumbItem>
         <a href='#'>Home</a>
         <span className='separator'>/</span>
@@ -102,7 +102,7 @@ export const SuSfondoScuro = () => (
       </BreadcrumbItem>
     </Breadcrumb>
 
-    <Breadcrumb listClassName='dark'>
+    <Breadcrumb dark>
       <BreadcrumbItem>
         <Icon
           className='align-top mr-1'
