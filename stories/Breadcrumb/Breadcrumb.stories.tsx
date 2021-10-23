@@ -11,15 +11,11 @@ export const Esempi = () => (
   <section>
     <Breadcrumb>
       <BreadcrumbItem>
-        <a href='#'>
-          Home
-        </a>
+        <a href='#'>Home</a>
         <span className='separator'>/</span>
       </BreadcrumbItem>
       <BreadcrumbItem>
-        <a href='#'>
-          Subsection
-        </a>
+        <a href='#'>Subsection</a>
         <span className='separator'>/</span>
       </BreadcrumbItem>
       <BreadcrumbItem active>
@@ -29,15 +25,11 @@ export const Esempi = () => (
 
     <Breadcrumb className='breadcrumb-container'>
       <BreadcrumbItem>
-        <a href='#'>
-          Home
-        </a>
+        <a href='#'>Home</a>
         <span className='separator'>&gt;</span>
       </BreadcrumbItem>
       <BreadcrumbItem>
-        <a href='#'>
-          Subsection
-        </a>
+        <a href='#'>Subsection</a>
         <span className='separator'>&gt;</span>
       </BreadcrumbItem>
       <BreadcrumbItem active>
@@ -58,9 +50,7 @@ export const ConIcone = () => (
           aria-hidden
           size='sm'
         />
-        <a href='#'>
-          Home
-        </a>
+        <a href='#'>Home</a>
         <span className='separator'>/</span>
       </BreadcrumbItem>
       <BreadcrumbItem>
@@ -71,9 +61,7 @@ export const ConIcone = () => (
           aria-hidden
           size='sm'
         />
-        <a href='#'>
-          Subsection
-        </a>
+        <a href='#'>Subsection</a>
         <span className='separator'>/</span>
       </BreadcrumbItem>
       <BreadcrumbItem active>
