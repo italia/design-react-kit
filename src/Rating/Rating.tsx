@@ -7,20 +7,18 @@ import type { InputProps } from '../Input/Input';
 import { Icon } from '../Icon/Icon';
 import { noop } from '../utils';
 
-interface FilteredInputProps extends Omit<InputProps, 
-'bsSize' |
-'size' |
-'static' |
-'plaintext' |
-'normalized' |
-'addon' |
-'placeholder' |
-'label' |
-'value' |
-'type'
-> {}
-
-export interface RatingProps extends FilteredInputProps {
+type UnusedProps =
+  | 'bsSize'
+  | 'size'
+  | 'static'
+  | 'plaintext'
+  | 'normalized'
+  | 'addon'
+  | 'placeholder'
+  | 'label'
+  | 'value'
+  | 'type';
+export interface RatingProps extends Omit<InputProps, UnusedProps> {
   /** La lista di 5 id, per ciascun elemento intero del Rating. La lista deve essere ordinata dal rating 1 al rating 5.  */
   inputs: string[];
   /** Il campo "label" è impostato di default su "Valuta ${n} stelle su 5", ma può essere personalizzato con questa funzione che riceve il numero input come argomento `function (n: number) => string`. */
