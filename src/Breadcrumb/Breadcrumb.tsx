@@ -25,7 +25,7 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({
   ...attributes
 }) => {
   const classes = classNames(attributes.className, 'breadcrumb-container');
-  const listClasses = classNames(attributes.listClassName, {dark});
+  const listClasses = classNames(attributes.listClassName, { dark });
   const ariaLabel = label ?? 'breadcrumb';
   return (
     <BreadcrumbBase
