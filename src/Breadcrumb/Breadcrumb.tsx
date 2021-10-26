@@ -20,17 +20,12 @@ export interface BreadcrumbProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export const Breadcrumb: FC<BreadcrumbProps> = ({
-  tag,
-  listTag,
-  className,
-  listClassName,
-  cssModule,
   dark,
   'aria-label': label,
   ...attributes
 }) => {
-  const classes = classNames(className, 'breadcrumb-container');
-  const listClasses = dark ? 'dark' : '';
+  const classes = classNames(attributes.className, 'breadcrumb-container');
+  const listClasses = classNames(attributes.listClassName, {dark});
   const ariaLabel = label ?? 'breadcrumb';
   return (
     <BreadcrumbBase
