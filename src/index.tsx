@@ -7,7 +7,6 @@ export {
   NavbarToggler,
   NavItem,
   NavLink,
-  Breadcrumb,
   BreadcrumbItem,
   ButtonDropdown,
   ButtonGroup,
@@ -76,6 +75,7 @@ export { AvatarPresence } from './Avatar/AvatarPresence';
 export { AvatarStatus } from './Avatar/AvatarStatus';
 export { AvatarWrapper } from './Avatar/AvatarWrapper';
 export { Badge } from './Badge/Badge';
+export { Breadcrumb } from './Breadcrumb/Breadcrumb';
 export { Button } from './Button/Button';
 export { Forward } from './Forward/Forward';
 export { Callout } from './Callout/Callout';
@@ -175,6 +175,7 @@ export type { AvatarPresenceProps } from './Avatar/AvatarPresence';
 export type { AvatarStatusProps } from './Avatar/AvatarStatus';
 export type { AvatarWrapperProps } from './Avatar/AvatarWrapper';
 export type { BadgeProps } from './Badge/Badge';
+export type { BreadcrumbProps } from './Breadcrumb/Breadcrumb';
 export type { ButtonProps } from './Button/Button';
 export type { ForwardProps } from './Forward/Forward';
 export type { CalloutProps } from './Callout/Callout';
@@ -270,7 +271,6 @@ export type {
   NavbarTogglerProps,
   NavItemProps,
   NavLinkProps,
-  BreadcrumbProps,
   BreadcrumbItemProps,
   ButtonDropdownProps,
   ButtonGroupProps,
