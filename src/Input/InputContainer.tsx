@@ -1,8 +1,10 @@
 import React, { FC, HTMLAttributes, ReactNode } from 'react';
+import classNames from 'classnames';
 
 export interface InputContainerProps extends HTMLAttributes<HTMLElement> {
   wrapperClass: string;
   activeClass: string;
+  errorClass?: string;
   infoTextClass: string;
   label: string | ReactNode | undefined;
   infoText: string | undefined;
@@ -16,6 +18,7 @@ export const InputContainer: FC<InputContainerProps> = ({
   id,
   infoId,
   activeClass,
+  errorClass,
   label,
   infoTextClass,
   infoText,
@@ -34,7 +37,7 @@ export const InputContainer: FC<InputContainerProps> = ({
             </div>
           )}
           {children}
-          <label htmlFor={id} className={activeClass}>
+          <label htmlFor={id} className={classNames(activeClass, errorClass)}>
             {label}
           </label>
           <small id={infoId} className={infoTextClass}>
@@ -49,7 +52,7 @@ export const InputContainer: FC<InputContainerProps> = ({
   return (
     <div className={wrapperClass}>
       {children}
-      <label htmlFor={id} className={activeClass}>
+      <label htmlFor={id} className={classNames(activeClass, errorClass)}>
         {label}
       </label>
       <small id={infoId} className={infoTextClass}>
