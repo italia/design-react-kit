@@ -1,4 +1,11 @@
-import React, { InputHTMLAttributes, ElementType, Ref, ReactNode } from 'react';
+import React, {
+  InputHTMLAttributes,
+  ElementType,
+  Ref,
+  ReactNode,
+  FocusEventHandler,
+  FocusEvent
+} from 'react';
 import isNumber from 'is-number';
 
 import { InputContainer } from './InputContainer';
@@ -10,7 +17,8 @@ import {
   getInfoTextControlClass
 } from './utils';
 import type { CSSModule } from 'reactstrap';
-import { notifyDeprecation } from '../utils';
+import { notifyDeprecation, noop } from '../utils';
+
 // taken from reactstrap types
 type InputType =
   | 'text'
@@ -93,29 +101,40 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   button?: ReactNode;
   /** Icona da mostrare all'inizio dell'input */
   icon?: ReactNode;
+  /** Funzione callback per quando il campo riceve il focus */
+  onFocus?: FocusEventHandler<HTMLInputElement>;
+  /** Funzione callback per quando il campo perde il focus */
+  onBlur?: FocusEventHandler<HTMLInputElement>;
 }
 
 type InputState = { isFocused: boolean; hidden: boolean; icon: boolean };
 
 export class Input extends React.Component<InputProps, InputState> {
+  public static defaultProps = {
+    onFocus: noop,
+    onBlur: noop
+  };
+
   state = {
     isFocused: false,
     hidden: true,
     icon: true
   };
 
-  toggleFocusLabel = () => {
+  toggleFocusLabel = (e: FocusEvent<HTMLInputElement>) => {
     this.setState({
       isFocused: true
     });
+    this.props.onFocus?.(e);
   };
 
-  toggleBlurLabel = (e: { target: { value: string } }) => {
+  toggleBlurLabel = (e: FocusEvent<HTMLInputElement>) => {
     if (e.target.value === '') {
       this.setState({
         isFocused: !this.state.isFocused
       });
     }
+    this.props.onBlur?.(e);
   };
 
   toggleShow = () => {
@@ -187,6 +206,11 @@ export class Input extends React.Component<InputProps, InputState> {
       extraAttributes.type = type;
     }
 
+    if (type === 'time') {
+      extraAttributes.type = 'text';
+    }
+    const errorClass = invalid && type === 'time' ? 'error-label' : '';
+
     // associate the input field with the help text
     const infoId = id ? `${id}Description` : undefined;
     if (id) {
@@ -251,6 +275,7 @@ export class Input extends React.Component<InputProps, InputState> {
       id,
       infoId,
       activeClass,
+      errorClass,
       label,
       infoTextClass,
       infoText,
