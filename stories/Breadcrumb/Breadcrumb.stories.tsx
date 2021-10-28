@@ -23,7 +23,7 @@ export const Esempi = () => (
       </BreadcrumbItem>
     </Breadcrumb>
 
-    <Breadcrumb className='breadcrumb-container'>
+    <Breadcrumb>
       <BreadcrumbItem>
         <a href='#'>Home</a>
         <span className='separator'>&gt;</span>
