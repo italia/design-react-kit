@@ -113,6 +113,7 @@ export { Icon, iconsList as icons } from './Icon/Icon';
 export { Input } from './Input/Input';
 export { InputContainer } from './Input/InputContainer';
 export { TextArea } from './Input/TextArea';
+export { TimeInput } from './Input/TimeInput';
 export { LinkList } from './LinkList/LinkList';
 export { LinkListItem } from './LinkList/LinkListItem';
 export { Megamenu } from './Megamenu/Megamenu';
