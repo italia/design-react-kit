@@ -6,35 +6,59 @@ export default {
 
 export const Abbrevazioni = () => (
   <>
-    <p><abbr title='attribute'>attr</abbr></p>
-    <p><abbr title='HyperText Markup Language' className='initialism'>HTML</abbr></p>
+    <p>
+      <abbr title='attribute'>attr</abbr>
+    </p>
+    <p>
+      <abbr title='HyperText Markup Language' className='initialism'>
+        HTML
+      </abbr>
+    </p>
   </>
 );
 
 export const AllineamentoADestra = () => (
   <blockquote className='blockquote text-right'>
-    <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-    <footer className='blockquote-footer'>Someone famous in <cite title='Source Title'>Source Title</cite></footer>
+    <p className='mb-0'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+      erat a ante.
+    </p>
+    <footer className='blockquote-footer'>
+      Someone famous in <cite title='Source Title'>Source Title</cite>
+    </footer>
   </blockquote>
 );
 
 export const AllineamentoCentrato = () => (
   <blockquote className='blockquote text-center'>
-    <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-    <footer className='blockquote-footer'>Someone famous in <cite title='Source Title'>Source Title</cite></footer>
+    <p className='mb-0'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+      erat a ante.
+    </p>
+    <footer className='blockquote-footer'>
+      Someone famous in <cite title='Source Title'>Source Title</cite>
+    </footer>
   </blockquote>
 );
 
 export const Citazioni = () => (
   <blockquote className='blockquote'>
-    <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    <p className='mb-0'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+      erat a ante.
+    </p>
   </blockquote>
 );
 
 export const CitazioneFonte = () => (
   <blockquote className='blockquote'>
-    <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-    <footer className='blockquote-footer'>Someone famous in <cite title='Source Title'>Source Title</cite></footer>
+    <p className='mb-0'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+      erat a ante.
+    </p>
+    <footer className='blockquote-footer'>
+      Someone famous in <cite title='Source Title'>Source Title</cite>
+    </footer>
   </blockquote>
 );
 
@@ -44,37 +68,49 @@ export const Dimensioni = () => (
       <tr>
         <th>Intestazione</th>
         <th>Mobile</th>
-        <th>Schermo > 576px</th>
+        <th>Schermo &gt; 576px</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><h1>h1</h1></td>
+        <td>
+          <h1>h1</h1>
+        </td>
         <td>Bold, 40px/48px</td>
         <td>Bold, 48px/60px</td>
       </tr>
       <tr>
-        <td><h2>h2</h2></td>
+        <td>
+          <h2>h2</h2>
+        </td>
         <td>Bold, 32px/40px</td>
         <td>Bold, 40px/48px</td>
       </tr>
       <tr>
-        <td><h3>h3</h3></td>
+        <td>
+          <h3>h3</h3>
+        </td>
         <td>Bold, 28px/32px</td>
         <td>Bold, 32px/40px</td>
       </tr>
       <tr>
-        <td><h4>h4</h4></td>
+        <td>
+          <h4>h4</h4>
+        </td>
         <td>SemiBold, 24px/28px</td>
         <td>SemiBold, 28px/40px</td>
       </tr>
       <tr>
-        <td><h5>h5</h5></td>
+        <td>
+          <h5>h5</h5>
+        </td>
         <td>Regular, 20px/24px</td>
         <td>Regular, 24px/40px</td>
       </tr>
       <tr>
-        <td><h6>h6</h6></td>
+        <td>
+          <h6>h6</h6>
+        </td>
         <td>SemiBold, 16px/24px</td>
         <td>SemiBold, 18px/28px</td>
       </tr>
@@ -94,17 +130,27 @@ export const Intestazioni = () => (
 );
 
 export const IntestazioneTipo = () => (
-    <h1 className='display-1'>Intestazione di tipo h1</h1>
+  <h1 className='display-1'>Intestazione di tipo h1</h1>
 );
 
 export const IntestazioneSecondario = () => (
-    <h4>Intestazione <small className='text-muted'>con testo secondario</small></h4>
+  <h4>
+    Intestazione <small className='text-muted'>con testo secondario</small>
+  </h4>
 );
 
 export const Link = () => (
   <>
-    <p>Esempio di <a href='#'>link normale</a>.</p>
-    <p>Esempio di <a href='#' className='text-decoration-none font-weight-bold'>link in grassetto senza sottolineatura</a>.</p>
+    <p>
+      Esempio di <a href='#'>link normale</a>.
+    </p>
+    <p>
+      Esempio di
+      <a href='#' className='text-decoration-none font-weight-bold'>
+        link in grassetto senza sottolineatura
+      </a>
+      .
+    </p>
   </>
 );
 
@@ -114,7 +160,8 @@ export const Liste = () => (
     <li>Consectetur adipiscing elit</li>
     <li>Integer molestie lorem at massa</li>
     <li>Facilisis in pretium nisl aliquet</li>
-    <li>Nulla volutpat aliquam velit
+    <li>
+      Nulla volutpat aliquam velit
       <ul>
         <li>Phasellus iaculis neque</li>
         <li>Purus sodales ultricies</li>
@@ -131,25 +178,37 @@ export const Liste = () => (
 export const ListeAllineate = () => (
   <dl className='row'>
     <dt className='col-sm-3'>Description lists</dt>
-    <dd className='col-sm-9'>A description list is perfect for defining terms.</dd>
+    <dd className='col-sm-9'>
+      A description list is perfect for defining terms.
+    </dd>
 
     <dt className='col-sm-3'>Euismod</dt>
     <dd className='col-sm-9'>
-      <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+      <p>
+        Vestibulum id ligula porta felis euismod semper eget lacinia odio sem
+        nec elit.
+      </p>
       <p>Donec id elit non mi porta gravida at eget metus.</p>
     </dd>
 
     <dt className='col-sm-3'>Malesuada porta</dt>
-    <dd className='col-sm-9'>Etiam porta sem malesuada magna mollis euismod.</dd>
+    <dd className='col-sm-9'>
+      Etiam porta sem malesuada magna mollis euismod.
+    </dd>
 
     <dt className='col-sm-3 text-truncate'>Truncated term is truncated</dt>
-    <dd className='col-sm-9'>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+    <dd className='col-sm-9'>
+      Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+      ut fermentum massa justo sit amet risus.
+    </dd>
 
     <dt className='col-sm-3'>Nesting</dt>
     <dd className='col-sm-9'>
       <dl className='row'>
         <dt className='col-sm-4'>Nested definition list</dt>
-        <dd className='col-sm-8'>Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+        <dd className='col-sm-8'>
+          Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.
+        </dd>
       </dl>
     </dd>
   </dl>
@@ -173,8 +232,18 @@ export const Lora = () => (
 
 export const Paragrafo = () => (
   <>
-    <p>Ullamco laboris nisi ut aliquid ex ea commodi consequat. Curabitur blandit tempus ardua ridiculus sed magna. Curabitur est gravida et libero vitae dictum. Phasellus laoreet lorem vel dolor tempus vehicula. Magna pars studiorum, prodita quaerimus.</p>
-    <p>Ullamco laboris nisi ut aliquid ex ea commodi consequat. Curabitur blandit tempus ardua ridiculus sed magna. Curabitur est gravida et libero vitae dictum. Phasellus laoreet lorem vel dolor tempus vehicula. Magna pars studiorum, prodita quaerimus.</p>
+    <p>
+      Ullamco laboris nisi ut aliquid ex ea commodi consequat. Curabitur blandit
+      tempus ardua ridiculus sed magna. Curabitur est gravida et libero vitae
+      dictum. Phasellus laoreet lorem vel dolor tempus vehicula. Magna pars
+      studiorum, prodita quaerimus.
+    </p>
+    <p>
+      Ullamco laboris nisi ut aliquid ex ea commodi consequat. Curabitur blandit
+      tempus ardua ridiculus sed magna. Curabitur est gravida et libero vitae
+      dictum. Phasellus laoreet lorem vel dolor tempus vehicula. Magna pars
+      studiorum, prodita quaerimus.
+    </p>
   </>
 );
 
@@ -182,17 +251,32 @@ export const ParagrafoEvidenza = () => (
   <p className='lead'>Paragrafo in evidenza</p>
 );
 
-
 export const ParagrafiPersonalizzati = () => (
   <>
-    <p>Esempio di testo <u>sottolineato</u>.</p>
-    <p>Esempio di testo <mark>evidenziato</mark>.</p>
-    <p>Esempio di testo <em>corsivo</em>.</p>
-    <p>Esempio di testo <strong>in grassetto</strong>.</p>
-    <p>Esempio di testo <small>rimpicciolito</small>.</p>
-    <p>Esempio di testo <ins>aggiuntivo</ins>.</p>
-    <p>Esempio di testo <del>cancellato</del> o <s>invalido</s>.</p>
-    <p>Esempio di testo <code>monospace</code>.</p>
+    <p>
+      Esempio di testo <u>sottolineato</u>.
+    </p>
+    <p>
+      Esempio di testo <mark>evidenziato</mark>.
+    </p>
+    <p>
+      Esempio di testo <em>corsivo</em>.
+    </p>
+    <p>
+      Esempio di testo <strong>in grassetto</strong>.
+    </p>
+    <p>
+      Esempio di testo <small>rimpicciolito</small>.
+    </p>
+    <p>
+      Esempio di testo <ins>aggiuntivo</ins>.
+    </p>
+    <p>
+      Esempio di testo <del>cancellato</del> o <s>invalido</s>.
+    </p>
+    <p>
+      Esempio di testo <code>monospace</code>.
+    </p>
   </>
 );
 

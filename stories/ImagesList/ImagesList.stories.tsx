@@ -9,7 +9,11 @@ export const ElementoSingolo = () => (
           <div className='img-responsive-wrapper'>
             <div className='img-responsive'>
               <div className='img-wrapper'>
-                <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                <img
+                  src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                  alt='Alternative Text'
+                  title='Image Title'
+                />
               </div>
             </div>
           </div>
@@ -22,7 +26,11 @@ export const ElementoSingolo = () => (
           <div className='img-responsive-wrapper'>
             <div className='img-responsive'>
               <div className='img-wrapper'>
-                <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                <img
+                  src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                  alt='Alternative Text'
+                  title='Image Title'
+                />
               </div>
             </div>
           </div>
@@ -39,7 +47,11 @@ export const ElementoSingolo = () => (
           <div className='img-responsive-wrapper'>
             <div className='img-responsive'>
               <div className='img-wrapper'>
-                <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                <img
+                  src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                  alt='Alternative Text'
+                  title='Image Title'
+                />
               </div>
             </div>
           </div>
@@ -62,7 +74,11 @@ export const GrigliaStandard = () => (
             <div className='img-responsive-wrapper'>
               <div className='img-responsive'>
                 <div className='img-wrapper'>
-                  <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                  <img
+                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
@@ -75,7 +91,11 @@ export const GrigliaStandard = () => (
             <div className='img-responsive-wrapper'>
               <div className='img-responsive'>
                 <div className='img-wrapper'>
-                  <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                  <img
+                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
@@ -88,7 +108,11 @@ export const GrigliaStandard = () => (
             <div className='img-responsive-wrapper'>
               <div className='img-responsive'>
                 <div className='img-wrapper'>
-                  <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                  <img
+                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
@@ -101,7 +125,11 @@ export const GrigliaStandard = () => (
             <div className='img-responsive-wrapper'>
               <div className='img-responsive'>
                 <div className='img-wrapper'>
-                  <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                  <img
+                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
@@ -114,7 +142,11 @@ export const GrigliaStandard = () => (
             <div className='img-responsive-wrapper'>
               <div className='img-responsive'>
                 <div className='img-wrapper'>
-                  <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                  <img
+                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
@@ -127,7 +159,11 @@ export const GrigliaStandard = () => (
             <div className='img-responsive-wrapper'>
               <div className='img-responsive'>
                 <div className='img-wrapper'>
-                  <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                  <img
+                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
@@ -147,7 +183,11 @@ export const StandardDidascalie = () => (
             <div className='img-responsive-wrapper'>
               <div className='img-responsive'>
                 <div className='img-wrapper'>
-                  <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                  <img
+                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
@@ -164,7 +204,11 @@ export const StandardDidascalie = () => (
             <div className='img-responsive-wrapper'>
               <div className='img-responsive'>
                 <div className='img-wrapper'>
-                  <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                  <img
+                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
@@ -181,7 +225,11 @@ export const StandardDidascalie = () => (
             <div className='img-responsive-wrapper'>
               <div className='img-responsive'>
                 <div className='img-wrapper'>
-                  <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                  <img
+                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
@@ -198,7 +246,11 @@ export const StandardDidascalie = () => (
             <div className='img-responsive-wrapper'>
               <div className='img-responsive'>
                 <div className='img-wrapper'>
-                  <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                  <img
+                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
@@ -215,7 +267,11 @@ export const StandardDidascalie = () => (
             <div className='img-responsive-wrapper'>
               <div className='img-responsive'>
                 <div className='img-wrapper'>
-                  <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                  <img
+                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
@@ -232,7 +288,11 @@ export const StandardDidascalie = () => (
             <div className='img-responsive-wrapper'>
               <div className='img-responsive'>
                 <div className='img-wrapper'>
-                  <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                  <img
+                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
@@ -256,7 +316,11 @@ export const Proporzionale = () => (
             <div className='img-responsive-wrapper'>
               <div className='img-responsive'>
                 <div className='img-wrapper'>
-                  <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                  <img
+                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
@@ -275,7 +339,11 @@ export const Proporzionale = () => (
                 <div className='img-responsive-wrapper'>
                   <div className='img-responsive'>
                     <div className='img-wrapper'>
-                      <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                      <img
+                        src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                        alt='Alternative Text'
+                        title='Image Title'
+                      />
                     </div>
                   </div>
                 </div>
@@ -292,7 +360,11 @@ export const Proporzionale = () => (
                 <div className='img-responsive-wrapper'>
                   <div className='img-responsive'>
                     <div className='img-wrapper'>
-                      <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                      <img
+                        src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                        alt='Alternative Text'
+                        title='Image Title'
+                      />
                     </div>
                   </div>
                 </div>
@@ -309,7 +381,11 @@ export const Proporzionale = () => (
                 <div className='img-responsive-wrapper'>
                   <div className='img-responsive'>
                     <div className='img-wrapper'>
-                      <img src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine' alt='image Alt' title='Image Title' />
+                      <img
+                        src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                        alt='Alternative Text'
+                        title='Image Title'
+                      />
                     </div>
                   </div>
                 </div>
@@ -324,217 +400,266 @@ export const Proporzionale = () => (
       </div>
     </div>
   </div>
-)
+);
 
 export const Masonry = () => (
-  <div className="it-grid-list-wrapper it-image-label-grid it-masonry">
-    <div className="card-columns">
-      <div className="col-12">
-        <div className="it-grid-item-wrapper">
-          <a href="#" className="">
-            <div className="img-responsive-wrapper">
-              <div className="img-responsive">
-                <div className="img-wrapper">
-                  <img src="https://via.placeholder.com/400x300/ebebeb/808080/?text=Immagine" alt="image Alt" title="Image Title" />
+  <div className='it-grid-list-wrapper it-image-label-grid it-masonry'>
+    <div className='card-columns'>
+      <div className='col-12'>
+        <div className='it-grid-item-wrapper'>
+          <a href='#' className=''>
+            <div className='img-responsive-wrapper'>
+              <div className='img-responsive'>
+                <div className='img-wrapper'>
+                  <img
+                    src='https://via.placeholder.com/400x300/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
-            <span className="it-griditem-text-wrapper">
-              <span className="it-griditem-text">Didascalia</span>
+            <span className='it-griditem-text-wrapper'>
+              <span className='it-griditem-text'>Didascalia</span>
               <Icon icon='it-code-circle' size='sm' />
             </span>
           </a>
         </div>
       </div>
-      <div className="col-12">
-        <div className="it-grid-item-wrapper">
-          <a href="#">
-            <div className="img-responsive-wrapper">
-              <div className="img-responsive">
-                <div className="img-wrapper">
-                  <img src="https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine" alt="image Alt" title="Image Title" />
+      <div className='col-12'>
+        <div className='it-grid-item-wrapper'>
+          <a href='#'>
+            <div className='img-responsive-wrapper'>
+              <div className='img-responsive'>
+                <div className='img-wrapper'>
+                  <img
+                    src='https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
-            <span className="it-griditem-text-wrapper">
-              <span className="it-griditem-text">Didascalia</span>
+            <span className='it-griditem-text-wrapper'>
+              <span className='it-griditem-text'>Didascalia</span>
               <Icon icon='it-code-circle' size='sm' />
             </span>
           </a>
         </div>
       </div>
-      <div className="col-12">
-        <div className="it-grid-item-wrapper">
-          <a href="#">
-            <div className="img-responsive-wrapper">
-              <div className="img-responsive">
-                <div className="img-wrapper">
-                  <img src="https://via.placeholder.com/400x700/ebebeb/808080/?text=Immagine" alt="image Alt" title="Image Title" />
+      <div className='col-12'>
+        <div className='it-grid-item-wrapper'>
+          <a href='#'>
+            <div className='img-responsive-wrapper'>
+              <div className='img-responsive'>
+                <div className='img-wrapper'>
+                  <img
+                    src='https://via.placeholder.com/400x700/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
-            <span className="it-griditem-text-wrapper">
-              <span className="it-griditem-text">Didascalia</span>
+            <span className='it-griditem-text-wrapper'>
+              <span className='it-griditem-text'>Didascalia</span>
               <Icon icon='it-code-circle' size='sm' />
             </span>
           </a>
         </div>
       </div>
-      <div className="col-12">
-        <div className="it-grid-item-wrapper">
-          <a href="#">
-            <div className="img-responsive-wrapper">
-              <div className="img-responsive">
-                <div className="img-wrapper">
-                  <img src="https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine" alt="image Alt" title="Image Title" />
+      <div className='col-12'>
+        <div className='it-grid-item-wrapper'>
+          <a href='#'>
+            <div className='img-responsive-wrapper'>
+              <div className='img-responsive'>
+                <div className='img-wrapper'>
+                  <img
+                    src='https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
-            <span className="it-griditem-text-wrapper">
-              <span className="it-griditem-text">Didascalia</span>
+            <span className='it-griditem-text-wrapper'>
+              <span className='it-griditem-text'>Didascalia</span>
               <Icon icon='it-code-circle' size='sm' />
             </span>
           </a>
         </div>
       </div>
-      <div className="col-12">
-        <div className="it-grid-item-wrapper">
-          <a href="#">
-            <div className="img-responsive-wrapper">
-              <div className="img-responsive">
-                <div className="img-wrapper">
-                  <img src="https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine" alt="image Alt" title="Image Title" />
+      <div className='col-12'>
+        <div className='it-grid-item-wrapper'>
+          <a href='#'>
+            <div className='img-responsive-wrapper'>
+              <div className='img-responsive'>
+                <div className='img-wrapper'>
+                  <img
+                    src='https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
-            <span className="it-griditem-text-wrapper">
-              <span className="it-griditem-text">Didascalia</span>
+            <span className='it-griditem-text-wrapper'>
+              <span className='it-griditem-text'>Didascalia</span>
               <Icon icon='it-code-circle' size='sm' />
             </span>
           </a>
         </div>
       </div>
-      <div className="col-12">
-        <div className="it-grid-item-wrapper">
-          <a href="#">
-            <div className="img-responsive-wrapper">
-              <div className="img-responsive">
-                <div className="img-wrapper">
-                  <img src="https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine" alt="image Alt" title="Image Title" />
+      <div className='col-12'>
+        <div className='it-grid-item-wrapper'>
+          <a href='#'>
+            <div className='img-responsive-wrapper'>
+              <div className='img-responsive'>
+                <div className='img-wrapper'>
+                  <img
+                    src='https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
-            <span className="it-griditem-text-wrapper">
-              <span className="it-griditem-text">Didascalia</span>
+            <span className='it-griditem-text-wrapper'>
+              <span className='it-griditem-text'>Didascalia</span>
               <Icon icon='it-code-circle' size='sm' />
             </span>
           </a>
         </div>
       </div>
-      <div className="col-12">
-        <div className="it-grid-item-wrapper">
-          <a href="#">
-            <div className="img-responsive-wrapper">
-              <div className="img-responsive">
-                <div className="img-wrapper">
-                  <img src="https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine" alt="image Alt" title="Image Title" />
+      <div className='col-12'>
+        <div className='it-grid-item-wrapper'>
+          <a href='#'>
+            <div className='img-responsive-wrapper'>
+              <div className='img-responsive'>
+                <div className='img-wrapper'>
+                  <img
+                    src='https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
-            <span className="it-griditem-text-wrapper">
-              <span className="it-griditem-text">Didascalia</span>
+            <span className='it-griditem-text-wrapper'>
+              <span className='it-griditem-text'>Didascalia</span>
               <Icon icon='it-code-circle' size='sm' />
             </span>
           </a>
         </div>
       </div>
-      <div className="col-12">
-        <div className="it-grid-item-wrapper">
-          <a href="#">
-            <div className="img-responsive-wrapper">
-              <div className="img-responsive">
-                <div className="img-wrapper">
-                  <img src="https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine" alt="image Alt" title="Image Title" />
+      <div className='col-12'>
+        <div className='it-grid-item-wrapper'>
+          <a href='#'>
+            <div className='img-responsive-wrapper'>
+              <div className='img-responsive'>
+                <div className='img-wrapper'>
+                  <img
+                    src='https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
-            <span className="it-griditem-text-wrapper">
-              <span className="it-griditem-text">Didascalia</span>
+            <span className='it-griditem-text-wrapper'>
+              <span className='it-griditem-text'>Didascalia</span>
               <Icon icon='it-code-circle' size='sm' />
             </span>
           </a>
         </div>
       </div>
-      <div className="col-12">
-        <div className="it-grid-item-wrapper">
-          <a href="#">
-            <div className="img-responsive-wrapper">
-              <div className="img-responsive">
-                <div className="img-wrapper">
-                  <img src="https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine" alt="image Alt" title="Image Title" />
+      <div className='col-12'>
+        <div className='it-grid-item-wrapper'>
+          <a href='#'>
+            <div className='img-responsive-wrapper'>
+              <div className='img-responsive'>
+                <div className='img-wrapper'>
+                  <img
+                    src='https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
-            <span className="it-griditem-text-wrapper">
-              <span className="it-griditem-text">Didascalia</span>
+            <span className='it-griditem-text-wrapper'>
+              <span className='it-griditem-text'>Didascalia</span>
               <Icon icon='it-code-circle' size='sm' />
             </span>
           </a>
         </div>
       </div>
-      <div className="col-12">
-        <div className="it-grid-item-wrapper">
-          <a href="#">
-            <div className="img-responsive-wrapper">
-              <div className="img-responsive">
-                <div className="img-wrapper">
-                  <img src="https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine" alt="image Alt" title="Image Title" />
+      <div className='col-12'>
+        <div className='it-grid-item-wrapper'>
+          <a href='#'>
+            <div className='img-responsive-wrapper'>
+              <div className='img-responsive'>
+                <div className='img-wrapper'>
+                  <img
+                    src='https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
-            <span className="it-griditem-text-wrapper">
-              <span className="it-griditem-text">Didascalia</span>
+            <span className='it-griditem-text-wrapper'>
+              <span className='it-griditem-text'>Didascalia</span>
               <Icon icon='it-code-circle' size='sm' />
             </span>
           </a>
         </div>
       </div>
-      <div className="col-12">
-        <div className="it-grid-item-wrapper">
-          <a href="#">
-            <div className="img-responsive-wrapper">
-              <div className="img-responsive">
-                <div className="img-wrapper">
-                  <img src="https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine" alt="image Alt" title="Image Title" />
+      <div className='col-12'>
+        <div className='it-grid-item-wrapper'>
+          <a href='#'>
+            <div className='img-responsive-wrapper'>
+              <div className='img-responsive'>
+                <div className='img-wrapper'>
+                  <img
+                    src='https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
-            <span className="it-griditem-text-wrapper">
-              <span className="it-griditem-text">Didascalia</span>
+            <span className='it-griditem-text-wrapper'>
+              <span className='it-griditem-text'>Didascalia</span>
               <Icon icon='it-code-circle' size='sm' />
             </span>
           </a>
         </div>
       </div>
-      <div className="col-12">
-        <div className="it-grid-item-wrapper">
-          <a href="#">
-            <div className="img-responsive-wrapper">
-              <div className="img-responsive">
-                <div className="img-wrapper">
-                  <img src="https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine" alt="image Alt" title="Image Title" />
+      <div className='col-12'>
+        <div className='it-grid-item-wrapper'>
+          <a href='#'>
+            <div className='img-responsive-wrapper'>
+              <div className='img-responsive'>
+                <div className='img-wrapper'>
+                  <img
+                    src='https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine'
+                    alt='Alternative Text'
+                    title='Image Title'
+                  />
                 </div>
               </div>
             </div>
-            <span className="it-griditem-text-wrapper">
-              <span className="it-griditem-text">Didascalia</span>
+            <span className='it-griditem-text-wrapper'>
+              <span className='it-griditem-text'>Didascalia</span>
               <Icon icon='it-code-circle' size='sm' />
             </span>
           </a>
         </div>
       </div>
     </div>
-  </div>)
+  </div>
+);
 
 export default {
   title: 'Componenti/ImageList'

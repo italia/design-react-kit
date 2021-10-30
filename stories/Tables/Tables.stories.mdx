@@ -80,22 +80,33 @@ Usa le classi contestuali per colorare le righe delle tabelle o le singole celle
 </Canvas>
 
 <div className='docs'>
-	<Callout color='success'>
-		<CalloutTitle>Trasmettere significato alle tecnologie assistive</CalloutTitle>
-		<CalloutText>
-			L'uso del colore per aggiungere un significato fornisce solo un’indicazione visiva, che non sarà trasmesso agli utenti di tecnologie assistive – come gli screen reader. Assicurati che le informazioni denotate dal colore siano rese disponibili anche dal contenuto stesso (es.: il testo visibile), o siano incluse attraverso mezzi alternativi, come testo aggiuntivo nascosto con la classe `.sr-only`.
-		</CalloutText>
-	</Callout>
+  <Callout color='success'>
+    <CalloutTitle>
+      Trasmettere significato alle tecnologie assistive
+    </CalloutTitle>
+    <CalloutText>
+      L'uso del colore per aggiungere un significato fornisce solo
+      un’indicazione visiva, che non sarà trasmesso agli utenti di tecnologie
+      assistive – come gli screen reader. Assicurati che le informazioni
+      denotate dal colore siano rese disponibili anche dal contenuto stesso
+      (es.: il testo visibile), o siano incluse attraverso mezzi alternativi,
+      come testo aggiuntivo nascosto con la classe `.sr-only`.
+    </CalloutText>
+  </Callout>
 </div>
 
 Crea tabelle responsive racchiudendo ogni `.table` con `.table-responsive{-sm|-md|-lg|-xl}`, facendo scorrere orizzontalmente la tabella ad ogni breakpoint, rispettivamente con `max-width` di 576px, 768px, 992px, 1200px.
 
 <div className='docs'>
-	<Callout color="primary">
-		<CalloutText>
-			Nota che in quanto i browser non supportano attualmente i range context queries, stiamo aggirando i limiti dei prefissi min- and max- e viewports con larghezze frazionarie (che possono verificarsi in determinate condizioni su dispositivi ad alta risoluzione, ad esempio) utilizzando valori con maggiore precisione per questi confronti.
-		</CalloutText>
-	</Callout>
+  <Callout color='primary'>
+    <CalloutText>
+      Nota che in quanto i browser non supportano attualmente i range context
+      queries, stiamo aggirando i limiti dei prefissi min- and max- e viewports
+      con larghezze frazionarie (che possono verificarsi in determinate
+      condizioni su dispositivi ad alta risoluzione, ad esempio) utilizzando
+      valori con maggiore precisione per questi confronti.
+    </CalloutText>
+  </Callout>
 </div>
 
 ## Captions
@@ -111,12 +122,15 @@ Un `<caption>` funziona come un’intestazione per una tabella. Aiuta gli utenti
 Le tabelle responsive consentono di scorrere le tabelle orizzontalmente con facilità. Rendi ogni tabella responsive su tutti i viewports racchiudendo un `.table` con `.table-responsive`. Oppure, scegli un breakpoint massimo con il quale ottenere una tabella responsive usando `.table-responsive{-sm|-md|-lg|-xl}`.
 
 <div className='docs'>
-	<Callout color="primary">
-		<CalloutTitle>Ritaglio / troncamento verticale</CalloutTitle>
-		<CalloutText>
-			Le tabelle responsive fanno uso di `overflow-y: hidden`, che rimuove qualsiasi contenuto che va oltre i bordi inferiore o superiore della tabella. In particolare, questo può ritagliare i menu a discesa e altri widget di terze parti.
-		</CalloutText>
-	</Callout>
+  <Callout color='primary'>
+    <CalloutTitle>Ritaglio / troncamento verticale</CalloutTitle>
+    <CalloutText>
+      Le tabelle responsive fanno uso di `overflow-y: hidden`, che rimuove
+      qualsiasi contenuto che va oltre i bordi inferiore o superiore della
+      tabella. In particolare, questo può ritagliare i menu a discesa e altri
+      widget di terze parti.
+    </CalloutText>
+  </Callout>
 </div>
 
 ## Sempre responsive

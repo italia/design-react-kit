@@ -414,21 +414,21 @@ export const TableResponsive = () => (
     <table className='table'>
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">Intestazione</th>
-          <th scope="col">Intestazione</th>
-          <th scope="col">Intestazione</th>
-          <th scope="col">Intestazione</th>
-          <th scope="col">Intestazione</th>
-          <th scope="col">Intestazione</th>
-          <th scope="col">Intestazione</th>
-          <th scope="col">Intestazione</th>
-          <th scope="col">Intestazione</th>
+          <th scope='col'>#</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
+          <th scope='row'>1</th>
           <td>Cella</td>
           <td>Cella</td>
           <td>Cella</td>
@@ -440,7 +440,7 @@ export const TableResponsive = () => (
           <td>Cella</td>
         </tr>
         <tr>
-          <th scope="row">2</th>
+          <th scope='row'>2</th>
           <td>Cella</td>
           <td>Cella</td>
           <td>Cella</td>
@@ -452,7 +452,7 @@ export const TableResponsive = () => (
           <td>Cella</td>
         </tr>
         <tr>
-          <th scope="row">3</th>
+          <th scope='row'>3</th>
           <td>Cella</td>
           <td>Cella</td>
           <td>Cella</td>
@@ -474,17 +474,17 @@ export const TableBreakpoint = () => (
       <table className='table'>
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
+            <th scope='col'>#</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
+            <th scope='row'>1</th>
             <td>Cella</td>
             <td>Cella</td>
             <td>Cella</td>
@@ -492,7 +492,7 @@ export const TableBreakpoint = () => (
             <td>Cella</td>
           </tr>
           <tr>
-            <th scope="row">2</th>
+            <th scope='row'>2</th>
             <td>Cella</td>
             <td>Cella</td>
             <td>Cella</td>
@@ -500,7 +500,7 @@ export const TableBreakpoint = () => (
             <td>Cella</td>
           </tr>
           <tr>
-            <th scope="row">3</th>
+            <th scope='row'>3</th>
             <td>Cella</td>
             <td>Cella</td>
             <td>Cella</td>
@@ -515,17 +515,17 @@ export const TableBreakpoint = () => (
       <table className='table'>
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
+            <th scope='col'>#</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
+            <th scope='row'>1</th>
             <td>Cella</td>
             <td>Cella</td>
             <td>Cella</td>
@@ -533,7 +533,7 @@ export const TableBreakpoint = () => (
             <td>Cella</td>
           </tr>
           <tr>
-            <th scope="row">2</th>
+            <th scope='row'>2</th>
             <td>Cella</td>
             <td>Cella</td>
             <td>Cella</td>
@@ -541,7 +541,7 @@ export const TableBreakpoint = () => (
             <td>Cella</td>
           </tr>
           <tr>
-            <th scope="row">3</th>
+            <th scope='row'>3</th>
             <td>Cella</td>
             <td>Cella</td>
             <td>Cella</td>
@@ -556,17 +556,17 @@ export const TableBreakpoint = () => (
       <table className='table'>
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
+            <th scope='col'>#</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
+            <th scope='row'>1</th>
             <td>Cella</td>
             <td>Cella</td>
             <td>Cella</td>
@@ -574,7 +574,7 @@ export const TableBreakpoint = () => (
             <td>Cella</td>
           </tr>
           <tr>
-            <th scope="row">2</th>
+            <th scope='row'>2</th>
             <td>Cella</td>
             <td>Cella</td>
             <td>Cella</td>
@@ -582,7 +582,7 @@ export const TableBreakpoint = () => (
             <td>Cella</td>
           </tr>
           <tr>
-            <th scope="row">3</th>
+            <th scope='row'>3</th>
             <td>Cella</td>
             <td>Cella</td>
             <td>Cella</td>
@@ -597,17 +597,17 @@ export const TableBreakpoint = () => (
       <table className='table'>
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
-            <th scope="col">Intestazione</th>
+            <th scope='col'>#</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
+            <th scope='col'>Intestazione</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
+            <th scope='row'>1</th>
             <td>Cella</td>
             <td>Cella</td>
             <td>Cella</td>
@@ -615,7 +615,7 @@ export const TableBreakpoint = () => (
             <td>Cella</td>
           </tr>
           <tr>
-            <th scope="row">2</th>
+            <th scope='row'>2</th>
             <td>Cella</td>
             <td>Cella</td>
             <td>Cella</td>
@@ -623,7 +623,7 @@ export const TableBreakpoint = () => (
             <td>Cella</td>
           </tr>
           <tr>
-            <th scope="row">3</th>
+            <th scope='row'>3</th>
             <td>Cella</td>
             <td>Cella</td>
             <td>Cella</td>

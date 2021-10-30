@@ -8220,6 +8220,1578 @@ exports[`Storyshots Componenti/Hero Hero Con Testo Su Sfondo Overlay Primario 1`
 </div>
 `;
 
+exports[`Storyshots Componenti/ImageList Elemento Singolo 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12 col-lg-4"
+    >
+      <div
+        className="it-grid-item-wrapper"
+      >
+        <a
+          href="#"
+        >
+          <div
+            className="img-responsive-wrapper"
+          >
+            <div
+              className="img-responsive"
+            >
+              <div
+                className="img-wrapper"
+              >
+                <img
+                  alt="Alternative Text"
+                  src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                  title="Image Title"
+                />
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      className="col-12 col-lg-4"
+    >
+      <div
+        className="it-grid-item-wrapper"
+      >
+        <a
+          href="#"
+        >
+          <div
+            className="img-responsive-wrapper"
+          >
+            <div
+              className="img-responsive"
+            >
+              <div
+                className="img-wrapper"
+              >
+                <img
+                  alt="Alternative Text"
+                  src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                  title="Image Title"
+                />
+              </div>
+            </div>
+          </div>
+          <span
+            className="it-griditem-text-wrapper"
+          >
+            <span
+              className="it-griditem-text"
+            >
+              Didascalia
+            </span>
+            <svg
+              className="icon icon-sm"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div
+      className="col-12 col-lg-4"
+    >
+      <div
+        className="it-grid-item-wrapper it-grid-item-overlay"
+      >
+        <a
+          href="#"
+        >
+          <div
+            className="img-responsive-wrapper"
+          >
+            <div
+              className="img-responsive"
+            >
+              <div
+                className="img-wrapper"
+              >
+                <img
+                  alt="Alternative Text"
+                  src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                  title="Image Title"
+                />
+              </div>
+            </div>
+          </div>
+          <span
+            className="it-griditem-text-wrapper"
+          >
+            <span
+              className="it-griditem-text"
+            >
+              Didascalia
+            </span>
+            <svg
+              className="icon icon-sm"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/ImageList Griglia Standard 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="it-grid-list-wrapper"
+  >
+    <div
+      className="grid-row"
+    >
+      <div
+        className="col-6 col-lg-4"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-6 col-lg-4"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-6 col-lg-4"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-6 col-lg-4"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-6 col-lg-4"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-6 col-lg-4"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/ImageList Masonry 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="it-grid-list-wrapper it-image-label-grid it-masonry"
+  >
+    <div
+      className="card-columns"
+    >
+      <div
+        className="col-12"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            className=""
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/400x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-12"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-12"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/400x700/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-12"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-12"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-12"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-12"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-12"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-12"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-12"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-12"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-12"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/ImageList Proporzionale 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="it-grid-list-wrapper it-quilted-grid"
+  >
+    <div
+      className="grid-row"
+    >
+      <div
+        className="col-12 col-md-6"
+      >
+        <div
+          className="it-grid-item-wrapper it-grid-item-overlay"
+        >
+          <a
+            className=""
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-12 col-md-6"
+      >
+        <div
+          className="grid-row"
+        >
+          <div
+            className="col-6"
+          >
+            <div
+              className="it-grid-item-wrapper it-grid-item-overlay"
+            >
+              <a
+                href="#"
+              >
+                <div
+                  className="img-responsive-wrapper"
+                >
+                  <div
+                    className="img-responsive"
+                  >
+                    <div
+                      className="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <span
+                  className="it-griditem-text-wrapper"
+                >
+                  <span
+                    className="it-griditem-text"
+                  >
+                    Didascalia
+                  </span>
+                  <svg
+                    className="icon icon-sm"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            className="col-6"
+          >
+            <div
+              className="it-grid-item-wrapper it-grid-item-overlay"
+            >
+              <a
+                href="#"
+              >
+                <div
+                  className="img-responsive-wrapper"
+                >
+                  <div
+                    className="img-responsive"
+                  >
+                    <div
+                      className="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <span
+                  className="it-griditem-text-wrapper"
+                >
+                  <span
+                    className="it-griditem-text"
+                  >
+                    Didascalia
+                  </span>
+                  <svg
+                    className="icon icon-sm"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            className="col-12"
+          >
+            <div
+              className="it-grid-item-wrapper it-grid-item-overlay it-grid-item-double-w"
+            >
+              <a
+                href="#"
+              >
+                <div
+                  className="img-responsive-wrapper"
+                >
+                  <div
+                    className="img-responsive"
+                  >
+                    <div
+                      className="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <span
+                  className="it-griditem-text-wrapper"
+                >
+                  <span
+                    className="it-griditem-text"
+                  >
+                    Didascalia
+                  </span>
+                  <svg
+                    className="icon icon-sm"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/ImageList Standard Didascalie 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="it-grid-list-wrapper it-image-label-grid"
+  >
+    <div
+      className="grid-row"
+    >
+      <div
+        className="col-6 col-lg-4"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-6 col-lg-4"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-6 col-lg-4"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-6 col-lg-4"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-6 col-lg-4"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="col-6 col-lg-4"
+      >
+        <div
+          className="it-grid-item-wrapper"
+        >
+          <a
+            href="#"
+          >
+            <div
+              className="img-responsive-wrapper"
+            >
+              <div
+                className="img-responsive"
+              >
+                <div
+                  className="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              className="it-griditem-text-wrapper"
+            >
+              <span
+                className="it-griditem-text"
+              >
+                Didascalia
+              </span>
+              <svg
+                className="icon icon-sm"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Componenti/Layout Component Contenuto Larghezza Variabile 1`] = `
 <div
   style={
@@ -14195,6 +15767,1751 @@ exports[`Storyshots Componenti/Stepper/Navigation variations for mobile Save But
 </div>
 `;
 
+exports[`Storyshots Componenti/Tables Table Base 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <table
+    className="table"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+        <th
+          scope="col"
+        >
+          Nome
+        </th>
+        <th
+          scope="col"
+        >
+          Cognome
+        </th>
+        <th
+          scope="col"
+        >
+          Username
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Mario
+        </td>
+        <td>
+          Verdi
+        </td>
+        <td>
+          mario.verdi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Francesco
+        </td>
+        <td>
+          Bianchi
+        </td>
+        <td>
+          francesco.bianchi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td>
+          Alessandro
+        </td>
+        <td>
+          Rossi
+        </td>
+        <td>
+          alessandro.rossi
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Componenti/Tables Table Bordered 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <table
+    className="table table-bordered"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+        <th
+          scope="col"
+        >
+          Nome
+        </th>
+        <th
+          scope="col"
+        >
+          Cognome
+        </th>
+        <th
+          scope="col"
+        >
+          Username
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Mario
+        </td>
+        <td>
+          Verdi
+        </td>
+        <td>
+          mario.verdi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Francesco
+        </td>
+        <td>
+          Bianchi
+        </td>
+        <td>
+          francesco.bianchi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td>
+          Alessandro
+        </td>
+        <td>
+          Rossi
+        </td>
+        <td>
+          alessandro.rossi
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Componenti/Tables Table Borderless 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <table
+    className="table table-borderless"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+        <th
+          scope="col"
+        >
+          Nome
+        </th>
+        <th
+          scope="col"
+        >
+          Cognome
+        </th>
+        <th
+          scope="col"
+        >
+          Username
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Mario
+        </td>
+        <td>
+          Verdi
+        </td>
+        <td>
+          mario.verdi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Francesco
+        </td>
+        <td>
+          Bianchi
+        </td>
+        <td>
+          francesco.bianchi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td>
+          Alessandro
+        </td>
+        <td>
+          Rossi
+        </td>
+        <td>
+          alessandro.rossi
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Componenti/Tables Table Breakpoint 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="table-responsive-sm"
+  >
+    <table
+      className="table"
+    >
+      <thead>
+        <tr>
+          <th
+            scope="col"
+          >
+            #
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th
+            scope="row"
+          >
+            1
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            2
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            3
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="table-responsive-md"
+  >
+    <table
+      className="table"
+    >
+      <thead>
+        <tr>
+          <th
+            scope="col"
+          >
+            #
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th
+            scope="row"
+          >
+            1
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            2
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            3
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="table-responsive-lg"
+  >
+    <table
+      className="table"
+    >
+      <thead>
+        <tr>
+          <th
+            scope="col"
+          >
+            #
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th
+            scope="row"
+          >
+            1
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            2
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            3
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="table-responsive-xl"
+  >
+    <table
+      className="table"
+    >
+      <thead>
+        <tr>
+          <th
+            scope="col"
+          >
+            #
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th
+            scope="row"
+          >
+            1
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            2
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            3
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Tables Table Captions 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <table
+    className="table"
+  >
+    <caption>
+      Lista di utenti
+    </caption>
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+        <th
+          scope="col"
+        >
+          First
+        </th>
+        <th
+          scope="col"
+        >
+          Last
+        </th>
+        <th
+          scope="col"
+        >
+          Handle
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Mark
+        </td>
+        <td>
+          Otto
+        </td>
+        <td>
+          @mdo
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Jacob
+        </td>
+        <td>
+          Thornton
+        </td>
+        <td>
+          @fat
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td>
+          Larry
+        </td>
+        <td>
+          the Bird
+        </td>
+        <td>
+          @twitter
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Componenti/Tables Table Compact 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <table
+    className="table table-sm"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+        <th
+          scope="col"
+        >
+          Nome
+        </th>
+        <th
+          scope="col"
+        >
+          Cognome
+        </th>
+        <th
+          scope="col"
+        >
+          Username
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Mario
+        </td>
+        <td>
+          Verdi
+        </td>
+        <td>
+          mario.verdi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Francesco
+        </td>
+        <td>
+          Bianchi
+        </td>
+        <td>
+          francesco.bianchi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td>
+          Alessandro
+        </td>
+        <td>
+          Rossi
+        </td>
+        <td>
+          alessandro.rossi
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Componenti/Tables Table Contextual 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <table
+    className="table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Class
+        </th>
+        <th>
+          Heading
+        </th>
+        <th>
+          Heading
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="table-active"
+      >
+        <th>
+          Active
+        </th>
+        <td>
+          Cell
+        </td>
+        <td>
+          Cell
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Default
+        </th>
+        <td>
+          Cell
+        </td>
+        <td>
+          Cell
+        </td>
+      </tr>
+      <tr
+        className="table-primary"
+      >
+        <th>
+          Primary
+        </th>
+        <td>
+          Cell
+        </td>
+        <td>
+          Cell
+        </td>
+      </tr>
+      <tr
+        className="table-secondary"
+      >
+        <th>
+          Secondary
+        </th>
+        <td>
+          Cell
+        </td>
+        <td>
+          Cell
+        </td>
+      </tr>
+      <tr
+        className="table-success"
+      >
+        <th>
+          Success
+        </th>
+        <td>
+          Cell
+        </td>
+        <td>
+          Cell
+        </td>
+      </tr>
+      <tr
+        className="table-danger"
+      >
+        <th>
+          Danger
+        </th>
+        <td>
+          Cell
+        </td>
+        <td>
+          Cell
+        </td>
+      </tr>
+      <tr
+        className="table-warning"
+      >
+        <th>
+          Warning
+        </th>
+        <td>
+          Cell
+        </td>
+        <td>
+          Cell
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table
+    className="table"
+  >
+    <thead>
+      <tr>
+        <th />
+        <th>
+          Heading
+        </th>
+        <th>
+          Heading
+        </th>
+        <th>
+          Heading
+        </th>
+        <th>
+          Heading
+        </th>
+        <th>
+          Heading
+        </th>
+        <th>
+          Heading
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Class
+        </td>
+        <td
+          className="table-active"
+        >
+          Active
+        </td>
+        <td
+          className="table-primary"
+        >
+          Primary
+        </td>
+        <td
+          className="table-secondary"
+        >
+          Secondary
+        </td>
+        <td
+          className="table-success"
+        >
+          Success
+        </td>
+        <td
+          className="table-danger"
+        >
+          Danger
+        </td>
+        <td
+          className="table-warning"
+        >
+          Warning
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Componenti/Tables Table Dark 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <table
+    className="table table-dark"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+        <th
+          scope="col"
+        >
+          Nome
+        </th>
+        <th
+          scope="col"
+        >
+          Cognome
+        </th>
+        <th
+          scope="col"
+        >
+          Username
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Mario
+        </td>
+        <td>
+          Verdi
+        </td>
+        <td>
+          mario.verdi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Francesco
+        </td>
+        <td>
+          Bianchi
+        </td>
+        <td>
+          francesco.bianchi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td>
+          Alessandro
+        </td>
+        <td>
+          Rossi
+        </td>
+        <td>
+          alessandro.rossi
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Componenti/Tables Table Hover 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <table
+    className="table table-hover"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+        <th
+          scope="col"
+        >
+          Nome
+        </th>
+        <th
+          scope="col"
+        >
+          Cognome
+        </th>
+        <th
+          scope="col"
+        >
+          Username
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Mario
+        </td>
+        <td>
+          Verdi
+        </td>
+        <td>
+          mario.verdi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Francesco
+        </td>
+        <td>
+          Bianchi
+        </td>
+        <td>
+          francesco.bianchi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td>
+          Alessandro
+        </td>
+        <td>
+          Rossi
+        </td>
+        <td>
+          alessandro.rossi
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Componenti/Tables Table Responsive 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div
+    className="table-responsive"
+  >
+    <table
+      className="table"
+    >
+      <thead>
+        <tr>
+          <th
+            scope="col"
+          >
+            #
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+          <th
+            scope="col"
+          >
+            Intestazione
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th
+            scope="row"
+          >
+            1
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            2
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+        <tr>
+          <th
+            scope="row"
+          >
+            3
+          </th>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+          <td>
+            Cella
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Tables Table Striped 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <table
+    className="table table-striped"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+        <th
+          scope="col"
+        >
+          Nome
+        </th>
+        <th
+          scope="col"
+        >
+          Cognome
+        </th>
+        <th
+          scope="col"
+        >
+          Username
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Mario
+        </td>
+        <td>
+          Verdi
+        </td>
+        <td>
+          mario.verdi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Francesco
+        </td>
+        <td>
+          Bianchi
+        </td>
+        <td>
+          francesco.bianchi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td>
+          Alessandro
+        </td>
+        <td>
+          Rossi
+        </td>
+        <td>
+          alessandro.rossi
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Componenti/Tables Table Thead 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <table
+    className="table"
+  >
+    <thead
+      className="thead-dark"
+    >
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+        <th
+          scope="col"
+        >
+          Nome
+        </th>
+        <th
+          scope="col"
+        >
+          Cognome
+        </th>
+        <th
+          scope="col"
+        >
+          Username
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Mario
+        </td>
+        <td>
+          Verdi
+        </td>
+        <td>
+          mario.verdi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Francesco
+        </td>
+        <td>
+          Bianchi
+        </td>
+        <td>
+          francesco.bianchi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td>
+          Alessandro
+        </td>
+        <td>
+          Rossi
+        </td>
+        <td>
+          alessandro.rossi
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table
+    className="table"
+  >
+    <thead
+      className="thead-light"
+    >
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+        <th
+          scope="col"
+        >
+          Nome
+        </th>
+        <th
+          scope="col"
+        >
+          Cognome
+        </th>
+        <th
+          scope="col"
+        >
+          Username
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+        <td>
+          Mario
+        </td>
+        <td>
+          Verdi
+        </td>
+        <td>
+          mario.verdi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          2
+        </th>
+        <td>
+          Francesco
+        </td>
+        <td>
+          Bianchi
+        </td>
+        <td>
+          francesco.bianchi
+        </td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+        >
+          3
+        </th>
+        <td>
+          Alessandro
+        </td>
+        <td>
+          Rossi
+        </td>
+        <td>
+          alessandro.rossi
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Storyshots Componenti/Timeline Esempi 1`] = `
 <div
   style={
@@ -14862,6 +18179,766 @@ exports[`Storyshots Componenti/Timeline Esempi 1`] = `
       </div>
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Abbrevazioni 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <p>
+    <abbr
+      title="attribute"
+    >
+      attr
+    </abbr>
+  </p>
+  <p>
+    <abbr
+      className="initialism"
+      title="HyperText Markup Language"
+    >
+      HTML
+    </abbr>
+  </p>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Allineamento A Destra 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <blockquote
+    className="blockquote text-right"
+  >
+    <p
+      className="mb-0"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+    </p>
+    <footer
+      className="blockquote-footer"
+    >
+      Someone famous in 
+      <cite
+        title="Source Title"
+      >
+        Source Title
+      </cite>
+    </footer>
+  </blockquote>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Allineamento Centrato 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <blockquote
+    className="blockquote text-center"
+  >
+    <p
+      className="mb-0"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+    </p>
+    <footer
+      className="blockquote-footer"
+    >
+      Someone famous in 
+      <cite
+        title="Source Title"
+      >
+        Source Title
+      </cite>
+    </footer>
+  </blockquote>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Citazione Fonte 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <blockquote
+    className="blockquote"
+  >
+    <p
+      className="mb-0"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+    </p>
+    <footer
+      className="blockquote-footer"
+    >
+      Someone famous in 
+      <cite
+        title="Source Title"
+      >
+        Source Title
+      </cite>
+    </footer>
+  </blockquote>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Citazioni 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <blockquote
+    className="blockquote"
+  >
+    <p
+      className="mb-0"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+    </p>
+  </blockquote>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Dimensioni 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Intestazione
+        </th>
+        <th>
+          Mobile
+        </th>
+        <th>
+          Schermo &gt; 576px
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <h1>
+            h1
+          </h1>
+        </td>
+        <td>
+          Bold, 40px/48px
+        </td>
+        <td>
+          Bold, 48px/60px
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h2>
+            h2
+          </h2>
+        </td>
+        <td>
+          Bold, 32px/40px
+        </td>
+        <td>
+          Bold, 40px/48px
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>
+            h3
+          </h3>
+        </td>
+        <td>
+          Bold, 28px/32px
+        </td>
+        <td>
+          Bold, 32px/40px
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>
+            h4
+          </h4>
+        </td>
+        <td>
+          SemiBold, 24px/28px
+        </td>
+        <td>
+          SemiBold, 28px/40px
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h5>
+            h5
+          </h5>
+        </td>
+        <td>
+          Regular, 20px/24px
+        </td>
+        <td>
+          Regular, 24px/40px
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h6>
+            h6
+          </h6>
+        </td>
+        <td>
+          SemiBold, 16px/24px
+        </td>
+        <td>
+          SemiBold, 18px/28px
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Intestazione Secondario 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <h4>
+    Intestazione 
+    <small
+      className="text-muted"
+    >
+      con testo secondario
+    </small>
+  </h4>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Intestazione Tipo 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <h1
+    className="display-1"
+  >
+    Intestazione di tipo h1
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Intestazioni 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <h1>
+    Intestazione di tipo h1
+  </h1>
+  <h2>
+    Intestazione di tipo h2
+  </h2>
+  <h3>
+    Intestazione di tipo h3
+  </h3>
+  <h4>
+    Intestazione di tipo h4
+  </h4>
+  <h5>
+    Intestazione di tipo h5
+  </h5>
+  <h6>
+    Intestazione di tipo h6
+  </h6>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Link 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <p>
+    Esempio di 
+    <a
+      href="#"
+    >
+      link normale
+    </a>
+    .
+  </p>
+  <p>
+    Esempio di
+    <a
+      className="text-decoration-none font-weight-bold"
+      href="#"
+    >
+      link in grassetto senza sottolineatura
+    </a>
+    .
+  </p>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Liste 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <ul
+    className="list-unstyled"
+  >
+    <li>
+      Lorem ipsum dolor sit amet
+    </li>
+    <li>
+      Consectetur adipiscing elit
+    </li>
+    <li>
+      Integer molestie lorem at massa
+    </li>
+    <li>
+      Facilisis in pretium nisl aliquet
+    </li>
+    <li>
+      Nulla volutpat aliquam velit
+      <ul>
+        <li>
+          Phasellus iaculis neque
+        </li>
+        <li>
+          Purus sodales ultricies
+        </li>
+        <li>
+          Vestibulum laoreet porttitor sem
+        </li>
+        <li>
+          Ac tristique libero volutpat at
+        </li>
+      </ul>
+    </li>
+    <li>
+      Faucibus porta lacus fringilla vel
+    </li>
+    <li>
+      Aenean sit amet erat nunc
+    </li>
+    <li>
+      Eget porttitor lorem
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Liste Allineate 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <dl
+    className="row"
+  >
+    <dt
+      className="col-sm-3"
+    >
+      Description lists
+    </dt>
+    <dd
+      className="col-sm-9"
+    >
+      A description list is perfect for defining terms.
+    </dd>
+    <dt
+      className="col-sm-3"
+    >
+      Euismod
+    </dt>
+    <dd
+      className="col-sm-9"
+    >
+      <p>
+        Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+      </p>
+      <p>
+        Donec id elit non mi porta gravida at eget metus.
+      </p>
+    </dd>
+    <dt
+      className="col-sm-3"
+    >
+      Malesuada porta
+    </dt>
+    <dd
+      className="col-sm-9"
+    >
+      Etiam porta sem malesuada magna mollis euismod.
+    </dd>
+    <dt
+      className="col-sm-3 text-truncate"
+    >
+      Truncated term is truncated
+    </dt>
+    <dd
+      className="col-sm-9"
+    >
+      Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+    </dd>
+    <dt
+      className="col-sm-3"
+    >
+      Nesting
+    </dt>
+    <dd
+      className="col-sm-9"
+    >
+      <dl
+        className="row"
+      >
+        <dt
+          className="col-sm-4"
+        >
+          Nested definition list
+        </dt>
+        <dd
+          className="col-sm-8"
+        >
+          Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.
+        </dd>
+      </dl>
+    </dd>
+  </dl>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Liste Inline 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <ul
+    className="list-inline"
+  >
+    <li
+      className="list-inline-item"
+    >
+      Lorem ipsum
+    </li>
+    <li
+      className="list-inline-item"
+    >
+      Phasellus iaculis
+    </li>
+    <li
+      className="list-inline-item"
+    >
+      Nulla volutpat
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Lora 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <p
+    className="text-serif"
+  >
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  </p>
+  <p
+    className="text-serif"
+  >
+    abcdefghijklmnopqrstuvwxyz
+  </p>
+  <p
+    className="text-serif"
+  >
+    0123456789
+  </p>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Paragrafi Personalizzati 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <p>
+    Esempio di testo 
+    <u>
+      sottolineato
+    </u>
+    .
+  </p>
+  <p>
+    Esempio di testo 
+    <mark>
+      evidenziato
+    </mark>
+    .
+  </p>
+  <p>
+    Esempio di testo 
+    <em>
+      corsivo
+    </em>
+    .
+  </p>
+  <p>
+    Esempio di testo 
+    <strong>
+      in grassetto
+    </strong>
+    .
+  </p>
+  <p>
+    Esempio di testo 
+    <small>
+      rimpicciolito
+    </small>
+    .
+  </p>
+  <p>
+    Esempio di testo 
+    <ins>
+      aggiuntivo
+    </ins>
+    .
+  </p>
+  <p>
+    Esempio di testo 
+    <del>
+      cancellato
+    </del>
+     o 
+    <s>
+      invalido
+    </s>
+    .
+  </p>
+  <p>
+    Esempio di testo 
+    <code>
+      monospace
+    </code>
+    .
+  </p>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Paragrafo 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <p>
+    Ullamco laboris nisi ut aliquid ex ea commodi consequat. Curabitur blandit tempus ardua ridiculus sed magna. Curabitur est gravida et libero vitae dictum. Phasellus laoreet lorem vel dolor tempus vehicula. Magna pars studiorum, prodita quaerimus.
+  </p>
+  <p>
+    Ullamco laboris nisi ut aliquid ex ea commodi consequat. Curabitur blandit tempus ardua ridiculus sed magna. Curabitur est gravida et libero vitae dictum. Phasellus laoreet lorem vel dolor tempus vehicula. Magna pars studiorum, prodita quaerimus.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Paragrafo Evidenza 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <p
+    className="lead"
+  >
+    Paragrafo in evidenza
+  </p>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Roboto Mono 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <p
+    className="text-monospace"
+  >
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  </p>
+  <p
+    className="text-monospace"
+  >
+    abcdefghijklmnopqrstuvwxyz
+  </p>
+  <p
+    className="text-monospace"
+  >
+    0123456789
+  </p>
+</div>
+`;
+
+exports[`Storyshots Componenti/Typography Titillium 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <p
+    className="text-sans-serif"
+  >
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  </p>
+  <p
+    className="text-sans-serif"
+  >
+    abcdefghijklmnopqrstuvwxyz
+  </p>
+  <p
+    className="text-sans-serif"
+  >
+    0123456789
+  </p>
 </div>
 `;
 
