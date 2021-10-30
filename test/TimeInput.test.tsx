@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
@@ -7,7 +5,7 @@ import '@testing-library/jest-dom/extend-expect';
 import { TimeInput } from '../src';
 import { addTime, subtractTime, formatTime } from '../src/Input/TimeInput';
 
-const renderTimeInput = (value: string) =>
+const renderTimeInput = (value: string = '') =>
   render(
     <TimeInput
       id='timeInput'
@@ -32,7 +30,7 @@ describe('TimeInput', () => {
 
   it('Should open the spinner controls when clicking the button', () => {
     const { container } = renderTimeInput();
-    fireEvent.click(container.querySelector('.btn-time'));
+    fireEvent.click(container.querySelector('.btn-time') as HTMLElement);
     expect(container.querySelector('.spinner-control')).not.toHaveStyle({
       display: 'none'
     });
