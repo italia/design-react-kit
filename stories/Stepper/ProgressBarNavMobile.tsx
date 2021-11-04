@@ -36,8 +36,6 @@ const ProgressBarNavMobile = () => {
   );
 };
 
-ProgressBarNavMobile.story = {
-  name: 'Progress bar'
-};
+ProgressBarNavMobile.storyName = 'Progress bar';
 
 export default ProgressBarNavMobile;

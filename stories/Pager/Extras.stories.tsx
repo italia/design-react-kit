@@ -293,22 +293,12 @@ export default {
 
 export const _More = MoreComponent;
 
-PageChanger.story = {
-  name: 'Page changer'
-};
+PageChanger.storyName = 'Page changer';
 
-JumpToPage.story = {
-  name: 'Jump to page'
-};
+JumpToPage.storyName = 'Jump to page';
 
-SimpleMode.story = {
-  name: 'Simple mode'
-};
+SimpleMode.storyName = 'Simple mode';
 
-LinkTestuali.story = {
-  name: 'Link testuali'
-};
+LinkTestuali.storyName = 'Link testuali';
 
-TotalNumber.story = {
-  name: 'Total number'
-};
+TotalNumber.storyName = 'Total number';

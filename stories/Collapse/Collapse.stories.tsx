@@ -83,9 +83,7 @@ export const GruppiDiElementiRichiudibili = () => {
   );
 };
 
-GruppiDiElementiRichiudibili.story = {
-  name: 'Gruppi di elementi richiudibili'
-};
+GruppiDiElementiRichiudibili.storyName = 'Gruppi di elementi richiudibili';
 
 export const _Accordion = () => {
   const [collapseElementOpen, setCollapseElement] = useState('');
@@ -215,9 +213,7 @@ export const CollapseEAccordionInnestati = () => {
   );
 };
 
-CollapseEAccordionInnestati.story = {
-  name: 'Collapse e Accordion innestati'
-};
+CollapseEAccordionInnestati.storyName = 'Collapse e Accordion innestati';
 
 export const HeaderAttivi = () => {
   const [collapseOpen1, setCollapseOpen1] = useState(true);
@@ -265,9 +261,7 @@ export const HeaderAttivi = () => {
   );
 };
 
-HeaderAttivi.story = {
-  name: 'Header Attivi - sfondo primario'
-};
+HeaderAttivi.storyName = 'Header Attivi - sfondo primario';
 
 export const HeaderHover = () => {
   const [collapseOpen1, setCollapseOpen1] = useState(true);
@@ -315,9 +309,7 @@ export const HeaderHover = () => {
   );
 };
 
-HeaderHover.story = {
-  name: 'Header colorati on Hover - sfondo primario'
-};
+HeaderHover.storyName = 'Header colorati on Hover - sfondo primario';
 
 export const IconaSinistra = () => {
   const [collapseOpen1, setCollapseOpen1] = useState(true);
@@ -365,6 +357,4 @@ export const IconaSinistra = () => {
   );
 };
 
-HeaderHover.story = {
-  name: 'Icona a sinistra'
-};
+HeaderHover.storyName = 'Icona a sinistra';

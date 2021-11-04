@@ -43,9 +43,7 @@ export const SimpleCard = () => (
   </Row>
 );
 
-SimpleCard.story = {
-  name: 'Card semplice'
-};
+SimpleCard.storyName = 'Card semplice';
 
 export const SimpleCardMultipleColumns = () => (
   <Row>
@@ -68,9 +66,7 @@ export const SimpleCardMultipleColumns = () => (
   </Row>
 );
 
-SimpleCardMultipleColumns.story = {
-  name: 'Card semplice su più colonne'
-};
+SimpleCardMultipleColumns.storyName = 'Card semplice su più colonne';
 
 export const SimpleArticle = () => (
   <Row>
@@ -95,9 +91,7 @@ export const SimpleArticle = () => (
   </Row>
 );
 
-SimpleArticle.story = {
-  name: 'Articolo semplice'
-};
+SimpleArticle.storyName = 'Articolo semplice';
 
 export const SimpleArticleWithIcon = () => (
   <Row>
@@ -123,9 +117,7 @@ export const SimpleArticleWithIcon = () => (
     </Col>
   </Row>
 );
-SimpleArticleWithIcon.story = {
-  name: 'Articolo con Icona'
-};
+SimpleArticleWithIcon.storyName = 'Articolo con Icona';
 
 export const CardIcon = () => (
   <Row>
@@ -157,9 +149,7 @@ export const CardIcon = () => (
     </Col>
   </Row>
 );
-CardIcon.story = {
-  name: 'Card con Icona'
-};
+CardIcon.storyName = 'Card con Icona';
 
 export const CardIconAdvanced = () => (
   <Row>
@@ -190,9 +180,7 @@ export const CardIconAdvanced = () => (
     </Col>
   </Row>
 );
-CardIconAdvanced.story = {
-  name: 'Card con Icona alternativa'
-};
+CardIconAdvanced.storyName = 'Card con Icona alternativa';
 
 export const CardWithShading = () => (
   <Row>
@@ -216,9 +204,7 @@ export const CardWithShading = () => (
   </Row>
 );
 
-CardWithShading.story = {
-  name: 'Card con ombreggiatura'
-};
+CardWithShading.storyName = 'Card con ombreggiatura';
 
 export const BigCard = () => (
   <Row>
@@ -245,9 +231,7 @@ export const BigCard = () => (
   </Row>
 );
 
-BigCard.story = {
-  name: 'Card grande'
-};
+BigCard.storyName = 'Card grande';
 
 export const BigCardExampleTwo = () => (
   <Row>
@@ -279,9 +263,7 @@ export const BigCardExampleTwo = () => (
   </Row>
 );
 
-BigCardExampleTwo.story = {
-  name: 'Card grande: esempio alternativo'
-};
+BigCardExampleTwo.storyName = 'Card grande: esempio alternativo';
 
 export const BigCardWithTag = () => (
   <Row>
@@ -313,9 +295,7 @@ export const BigCardWithTag = () => (
   </Row>
 );
 
-BigCardWithTag.story = {
-  name: 'Card grande con tag, data e call to action'
-};
+BigCardWithTag.storyName = 'Card grande con tag, data e call to action';
 
 export const CardWithImageAndDate = () => (
   <Row>
@@ -349,9 +329,7 @@ export const CardWithImageAndDate = () => (
     </Col>
   </Row>
 );
-CardWithImageAndDate.story = {
-  name: 'Card con immagine e data calendario'
-};
+CardWithImageAndDate.storyName = 'Card con immagine e data calendario';
 
 export const CardsWithImages = () => (
   <Row>
@@ -490,9 +468,7 @@ export const SpecialCard = () => (
     </Col>
   </Row>
 );
-SpecialCard.story = {
-  name: 'Card speciali'
-};
+SpecialCard.storyName = 'Card speciali';
 
 export const SimpleCardTeaser = () => (
   <Card teaser>
@@ -509,9 +485,7 @@ export const SimpleCardTeaser = () => (
   </Card>
 );
 
-SimpleCardTeaser.story = {
-  name: 'Card teaser'
-};
+SimpleCardTeaser.storyName = 'Card teaser';
 
 export const CardTeaserMultiple = () => (
   <div className='card-wrapper card-teaser-wrapper'>
@@ -554,9 +528,7 @@ export const CardTeaserMultiple = () => (
   </div>
 );
 
-CardTeaserMultiple.story = {
-  name: 'Card teaser multiple'
-};
+CardTeaserMultiple.storyName = 'Card teaser multiple';
 
 export const CardWithFooterComponent = () => (
   <div className='row'>
@@ -615,9 +587,7 @@ export const _EsempiInterattivi = ({ spacing, teaser, link, title, text }) => {
   );
 };
 
-_EsempiInterattivi.story = {
-  name: 'Esempi interattivi'
-};
+_EsempiInterattivi.storyName = 'Esempi interattivi';
 _EsempiInterattivi.args = {
   spacing: false,
   teaser: false,

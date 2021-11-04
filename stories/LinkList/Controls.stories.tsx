@@ -186,18 +186,10 @@ export const PrimaryAction = ControlliComponent;
 
 export const SecondaryAction = ControlliSecondariComponent;
 
-PrimaryESecondaryAction.story = {
-  name: 'Primary e Secondary Action'
-};
+PrimaryESecondaryAction.storyName = 'Primary e Secondary Action';
 
-ConAvatar.story = {
-  name: 'Con avatar'
-};
+ConAvatar.storyName = 'Con avatar';
 
-ConSwitch.story = {
-  name: 'Con switch'
-};
+ConSwitch.storyName = 'Con switch';
 
-ConCheckbox.story = {
-  name: 'Con checkbox'
-};
+ConCheckbox.storyName = 'Con checkbox';

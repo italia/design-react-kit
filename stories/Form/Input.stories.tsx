@@ -33,9 +33,7 @@ export const EsempiDiCampiDiInput = () => (
   </div>
 );
 
-EsempiDiCampiDiInput.story = {
-  name: 'Esempi di campi di input'
-};
+EsempiDiCampiDiInput.storyName = 'Esempi di campi di input';
 
 export const UtilizzoDiPlaceholderELabel = () => (
   <div>
@@ -56,9 +54,7 @@ export const UtilizzoDiPlaceholderELabel = () => (
   </div>
 );
 
-UtilizzoDiPlaceholderELabel.story = {
-  name: 'Utilizzo di placeholder e label'
-};
+UtilizzoDiPlaceholderELabel.storyName = 'Utilizzo di placeholder e label';
 
 export const InputConIconaOBottoni = () => {
   const [isFocused, toggleFocus] = useState(false);
@@ -151,9 +147,7 @@ export const InputConIconaOBottoni = () => {
   );
 };
 
-InputConIconaOBottoni.story = {
-  name: 'Input con icona o bottoni'
-};
+InputConIconaOBottoni.storyName = 'Input con icona o bottoni';
 
 export const InputPassword = () => (
   <Input
@@ -164,9 +158,7 @@ export const InputPassword = () => (
   />
 );
 
-InputPassword.story = {
-  name: 'Input password'
-};
+InputPassword.storyName = 'Input password';
 
 export const _Disabilitato = () => (
   <Input label='Contenuto disabilitato' id='exampleDisabled' disabled />
@@ -177,12 +169,15 @@ export const _Readonly = () => (
 );
 
 export const ReadonlyNormalizzato = () => (
-  <Input label='Contenuto in sola lettura' id='exampleNormalized' normalized />
+  <Input
+    type='text'
+    label='Contenuto in sola lettura'
+    id='exampleNormalized'
+    normalized
+  />
 );
 
-ReadonlyNormalizzato.story = {
-  name: 'Readonly normalizzato'
-};
+ReadonlyNormalizzato.storyName = 'Readonly normalizzato';
 
 export const _InputAutocompleteConDati = () => {
   // "value" is used to show or propagate it externally
@@ -248,17 +243,13 @@ export const _InputAutocompleteConDati = () => {
   );
 };
 
-_InputAutocompleteConDati.story = {
-  name: 'Input autocomplete'
-};
+_InputAutocompleteConDati.storyName = 'Input autocomplete';
 
 export const AreaDiTesto = () => (
   <TextArea label='Esempio di area di testo' rows={3} />
 );
 
-AreaDiTesto.story = {
-  name: 'Area di testo'
-};
+AreaDiTesto.storyName = 'Area di testo';
 
 export const AreaDiTestoConSegnaposto = () => (
   <TextArea
@@ -268,9 +259,7 @@ export const AreaDiTestoConSegnaposto = () => (
   />
 );
 
-AreaDiTestoConSegnaposto.story = {
-  name: 'Area di testo con segnaposto'
-};
+AreaDiTestoConSegnaposto.storyName = 'Area di testo con segnaposto';
 
 export const InputNumericoDimensionamento = () => (
   <>

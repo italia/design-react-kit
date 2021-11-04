@@ -55,7 +55,7 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   value?: string | number;
   /** Da utilizzare per impedire la modifica del valore contenuto. */
   readOnly?: boolean;
-  /** Associato all'attributo readOnly mostra il campo con lo stile classico, mantenento lo stato di sola lettura. */
+  /** Associato all'attributo readOnly mostra il campo con lo stile classico, mantenendo lo stato di sola lettura. */
   normalized?: boolean;
   /** Utilizzare per mostrare il successo nella validazione del valore nel campo Input */
   valid?: boolean;
@@ -148,7 +148,8 @@ export class Input extends React.Component<InputProps, InputState> {
         plaintext,
         staticInput,
         type,
-        addon
+        addon,
+        normalized
       },
       cssModule
     );
@@ -316,7 +317,6 @@ export class Input extends React.Component<InputProps, InputState> {
       <Tag
         {...rest}
         {...extraAttributes}
-        ref={innerRef}
         className={inputClasses}
         {...sharedAttributes}
       />

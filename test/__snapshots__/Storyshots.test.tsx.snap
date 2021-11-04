@@ -2731,98 +2731,93 @@ exports[`Storyshots Componenti/Breadcrumb Con icone 1`] = `
       aria-label="breadcrumb"
       className="breadcrumb-container"
     >
-      <nav
-        aria-label="breadcrumb"
-        className=""
+      <ol
+        className="breadcrumb"
       >
-        <ol
-          className="breadcrumb"
+        <li
+          className="breadcrumb-item"
         >
-          <li
-            className="breadcrumb-item"
+          <svg
+            aria-hidden={true}
+            className="icon align-top mr-1 icon-secondary icon-sm"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              aria-hidden={true}
-              className="icon align-top mr-1 icon-secondary icon-sm"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-            <a
-              href="#"
-            >
-              Home
-              <span
-                className="separator"
-              >
-                /
-              </span>
-            </a>
-          </li>
-          <li
-            className="breadcrumb-item"
+            <path
+              d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+          <a
+            href="#"
           >
-            <svg
-              aria-hidden={true}
-              className="icon align-top mr-1 icon-secondary icon-sm"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-            <a
-              href="#"
-            >
-              Subsection
-              <span
-                className="separator"
-              >
-                /
-              </span>
-            </a>
-          </li>
-          <li
-            aria-current="page"
-            className="active breadcrumb-item"
+            Home
+          </a>
+          <span
+            className="separator"
           >
-            <svg
-              aria-hidden={true}
-              className="icon align-top mr-1 icon-secondary icon-sm"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-            <a
-              href="#"
-            >
-              Current section
-            </a>
-          </li>
-        </ol>
-      </nav>
+            /
+          </span>
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          <svg
+            aria-hidden={true}
+            className="icon align-top mr-1 icon-secondary icon-sm"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+          <a
+            href="#"
+          >
+            Subsection
+          </a>
+          <span
+            className="separator"
+          >
+            /
+          </span>
+        </li>
+        <li
+          aria-current="page"
+          className="active breadcrumb-item"
+        >
+          <svg
+            aria-hidden={true}
+            className="icon align-top mr-1 icon-secondary icon-sm"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+          <a
+            href="#"
+          >
+            Current section
+          </a>
+        </li>
+      </ol>
     </nav>
   </section>
 </div>
@@ -2845,104 +2840,95 @@ exports[`Storyshots Componenti/Breadcrumb Esempi 1`] = `
       aria-label="breadcrumb"
       className="breadcrumb-container"
     >
-      <nav
-        aria-label="breadcrumb"
-        className=""
+      <ol
+        className="breadcrumb"
       >
-        <ol
-          className="breadcrumb"
+        <li
+          className="breadcrumb-item"
         >
-          <li
-            className="breadcrumb-item"
+          <a
+            href="#"
           >
-            <a
-              href="#"
-            >
-              Home
-              <span
-                className="separator"
-              >
-                /
-              </span>
-            </a>
-          </li>
-          <li
-            className="breadcrumb-item"
+            Home
+          </a>
+          <span
+            className="separator"
           >
-            <a
-              href="#"
-            >
-              Subsection
-              <span
-                className="separator"
-              >
-                /
-              </span>
-            </a>
-          </li>
-          <li
-            aria-current="page"
-            className="active breadcrumb-item"
+            /
+          </span>
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          <a
+            href="#"
           >
-            <a
-              href="#"
-            >
-              Current section
-            </a>
-          </li>
-        </ol>
-      </nav>
+            Subsection
+          </a>
+          <span
+            className="separator"
+          >
+            /
+          </span>
+        </li>
+        <li
+          aria-current="page"
+          className="active breadcrumb-item"
+        >
+          <a
+            href="#"
+          >
+            Current section
+          </a>
+        </li>
+      </ol>
     </nav>
     <nav
+      aria-label="breadcrumb"
       className="breadcrumb-container"
     >
-      <nav
-        aria-label="breadcrumb"
-        className=""
+      <ol
+        className="breadcrumb"
       >
-        <ol
-          className="breadcrumb"
+        <li
+          className="breadcrumb-item"
         >
-          <li
-            className="breadcrumb-item"
+          <a
+            href="#"
           >
-            <a
-              href="#"
-            >
-              Home
-              <span
-                className="separator"
-              >
-                &gt;
-              </span>
-            </a>
-          </li>
-          <li
-            className="breadcrumb-item"
+            Home
+          </a>
+          <span
+            className="separator"
           >
-            <a
-              href="#"
-            >
-              Subsection
-              <span
-                className="separator"
-              >
-                &gt;
-              </span>
-            </a>
-          </li>
-          <li
-            aria-current="page"
-            className="active breadcrumb-item"
+            &gt;
+          </span>
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          <a
+            href="#"
           >
-            <a
-              href="#"
-            >
-              Current section
-            </a>
-          </li>
-        </ol>
-      </nav>
+            Subsection
+          </a>
+          <span
+            className="separator"
+          >
+            &gt;
+          </span>
+        </li>
+        <li
+          aria-current="page"
+          className="active breadcrumb-item"
+        >
+          <a
+            href="#"
+          >
+            Current section
+          </a>
+        </li>
+      </ol>
     </nav>
   </section>
 </div>
@@ -2965,150 +2951,140 @@ exports[`Storyshots Componenti/Breadcrumb Su sfondo scuro 1`] = `
       aria-label="breadcrumb"
       className="breadcrumb-container"
     >
-      <nav
-        aria-label="breadcrumb"
-        className=""
+      <ol
+        className="breadcrumb dark"
       >
-        <ol
-          className="breadcrumb dark"
+        <li
+          className="breadcrumb-item"
         >
-          <li
-            className="breadcrumb-item"
+          <a
+            href="#"
           >
-            <a
-              href="#"
-            >
-              Home
-            </a>
-            <span
-              className="separator"
-            >
-              /
-            </span>
-          </li>
-          <li
-            className="breadcrumb-item"
+            Home
+          </a>
+          <span
+            className="separator"
           >
-            <a
-              href="#"
-            >
-              Subsection
-            </a>
-            <span
-              className="separator"
-            >
-              /
-            </span>
-          </li>
-          <li
-            aria-current="page"
-            className="active breadcrumb-item"
+            /
+          </span>
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          <a
+            href="#"
           >
-            <a
-              href="#"
-            >
-              Current section
-            </a>
-          </li>
-        </ol>
-      </nav>
+            Subsection
+          </a>
+          <span
+            className="separator"
+          >
+            /
+          </span>
+        </li>
+        <li
+          aria-current="page"
+          className="active breadcrumb-item"
+        >
+          <a
+            href="#"
+          >
+            Current section
+          </a>
+        </li>
+      </ol>
     </nav>
     <nav
       aria-label="breadcrumb"
       className="breadcrumb-container"
     >
-      <nav
-        aria-label="breadcrumb"
-        className=""
+      <ol
+        className="breadcrumb dark"
       >
-        <ol
-          className="breadcrumb dark"
+        <li
+          className="breadcrumb-item"
         >
-          <li
-            className="breadcrumb-item"
+          <svg
+            aria-hidden={true}
+            className="icon align-top mr-1 icon-white icon-sm"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              aria-hidden={true}
-              className="icon align-top mr-1 icon-white icon-sm"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-            <a
-              href="#"
-            >
-              Home
-            </a>
-            <span
-              className="separator"
-            >
-              /
-            </span>
-          </li>
-          <li
-            className="breadcrumb-item"
+            <path
+              d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+          <a
+            href="#"
           >
-            <svg
-              aria-hidden={true}
-              className="icon align-top mr-1 icon-white icon-sm"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-            <a
-              href="#"
-            >
-              Subsection
-            </a>
-            <span
-              className="separator"
-            >
-              /
-            </span>
-          </li>
-          <li
-            aria-current="page"
-            className="active breadcrumb-item"
+            Home
+          </a>
+          <span
+            className="separator"
           >
-            <svg
-              aria-hidden={true}
-              className="icon align-top mr-1 icon-white icon-sm"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-            <a
-              href="#"
-            >
-              Current section
-            </a>
-          </li>
-        </ol>
-      </nav>
+            /
+          </span>
+        </li>
+        <li
+          className="breadcrumb-item"
+        >
+          <svg
+            aria-hidden={true}
+            className="icon align-top mr-1 icon-white icon-sm"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+          <a
+            href="#"
+          >
+            Subsection
+          </a>
+          <span
+            className="separator"
+          >
+            /
+          </span>
+        </li>
+        <li
+          aria-current="page"
+          className="active breadcrumb-item"
+        >
+          <svg
+            aria-hidden={true}
+            className="icon align-top mr-1 icon-white icon-sm"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+          <a
+            href="#"
+          >
+            Current section
+          </a>
+        </li>
+      </ol>
     </nav>
   </section>
 </div>
@@ -5639,17 +5615,17 @@ exports[`Storyshots Componenti/Form/Checkbox Checkbox Disabilitato 1`] = `
           className="form-check"
         >
           <input
-            aria-describedby="checkbox1Description"
+            aria-describedby="disabled-checkbox1Description"
             className="form-control"
             disabled={true}
-            id="checkbox1"
+            id="disabled-checkbox1"
             onBlur={[Function]}
             onFocus={[Function]}
             type="checkbox"
           />
           <label
             className="form-check-label"
-            htmlFor="checkbox1"
+            htmlFor="disabled-checkbox1"
           >
             Checkbox disabilitato non selezionato
           </label>
@@ -5658,18 +5634,18 @@ exports[`Storyshots Componenti/Form/Checkbox Checkbox Disabilitato 1`] = `
           className="form-check"
         >
           <input
-            aria-describedby="checkbox2Description"
+            aria-describedby="disabled-checkbox2Description"
             className="form-control"
             defaultChecked={true}
             disabled={true}
-            id="checkbox2"
+            id="disabled-checkbox2"
             onBlur={[Function]}
             onFocus={[Function]}
             type="checkbox"
           />
           <label
             className="form-check-label"
-            htmlFor="checkbox2"
+            htmlFor="disabled-checkbox2"
           >
             Checkbox disabilitato selezionato
           </label>
@@ -5710,17 +5686,17 @@ exports[`Storyshots Componenti/Form/Checkbox Checkbox Gruppi 1`] = `
               className="form-check-group form-check"
             >
               <input
-                aria-describedby="checkbox1Description"
+                aria-describedby="group-checkbox1Description"
                 className="form-control"
                 defaultChecked={true}
-                id="checkbox1"
+                id="group-checkbox1"
                 onBlur={[Function]}
                 onFocus={[Function]}
                 type="checkbox"
               />
               <label
                 className="form-check-label"
-                htmlFor="checkbox1"
+                htmlFor="group-checkbox1"
               >
                 Checkbox selezionato
               </label>
@@ -5729,16 +5705,16 @@ exports[`Storyshots Componenti/Form/Checkbox Checkbox Gruppi 1`] = `
               className="form-check-group form-check"
             >
               <input
-                aria-describedby="checkbox2Description"
+                aria-describedby="group-checkbox2Description"
                 className="form-control"
-                id="checkbox2"
+                id="group-checkbox2"
                 onBlur={[Function]}
                 onFocus={[Function]}
                 type="checkbox"
               />
               <label
                 className="form-check-label"
-                htmlFor="checkbox2"
+                htmlFor="group-checkbox2"
               >
                 Checkbox non selezionato
               </label>
@@ -5747,17 +5723,17 @@ exports[`Storyshots Componenti/Form/Checkbox Checkbox Gruppi 1`] = `
               className="form-check-group form-check"
             >
               <input
-                aria-describedby="checkbox3Description"
+                aria-describedby="group-checkbox3Description"
                 className="form-control"
                 disabled={true}
-                id="checkbox3"
+                id="group-checkbox3"
                 onBlur={[Function]}
                 onFocus={[Function]}
                 type="checkbox"
               />
               <label
                 className="form-check-label"
-                htmlFor="checkbox3"
+                htmlFor="group-checkbox3"
               >
                 Checkbox disabilitato non selezionato
               </label>
@@ -5782,17 +5758,17 @@ exports[`Storyshots Componenti/Form/Checkbox Checkbox Gruppi 1`] = `
               className="form-check-group form-check"
             >
               <input
-                aria-describedby="checkbox4Description"
+                aria-describedby="group-checkbox4Description"
                 className="form-control"
                 defaultChecked={true}
-                id="checkbox4"
+                id="group-checkbox4"
                 onBlur={[Function]}
                 onFocus={[Function]}
                 type="checkbox"
               />
               <label
                 className="form-check-label"
-                htmlFor="checkbox4"
+                htmlFor="group-checkbox4"
               >
                 Checkbox selezionato
               </label>
@@ -5806,16 +5782,16 @@ exports[`Storyshots Componenti/Form/Checkbox Checkbox Gruppi 1`] = `
               className="form-check-group form-check"
             >
               <input
-                aria-describedby="checkbox5Description"
+                aria-describedby="group-checkbox5Description"
                 className="form-control"
-                id="checkbox5"
+                id="group-checkbox5"
                 onBlur={[Function]}
                 onFocus={[Function]}
                 type="checkbox"
               />
               <label
                 className="form-check-label"
-                htmlFor="checkbox5"
+                htmlFor="group-checkbox5"
               >
                 Checkbox non selezionato
               </label>
@@ -5829,17 +5805,17 @@ exports[`Storyshots Componenti/Form/Checkbox Checkbox Gruppi 1`] = `
               className="form-check-group form-check"
             >
               <input
-                aria-describedby="checkbox6Description"
+                aria-describedby="group-checkbox6Description"
                 className="form-control"
                 disabled={true}
-                id="checkbox6"
+                id="group-checkbox6"
                 onBlur={[Function]}
                 onFocus={[Function]}
                 type="checkbox"
               />
               <label
                 className="form-check-label"
-                htmlFor="checkbox6"
+                htmlFor="group-checkbox6"
               >
                 Checkbox disabilitato non selezionato
               </label>
@@ -5881,16 +5857,16 @@ exports[`Storyshots Componenti/Form/Checkbox Checkbox Inline 1`] = `
           className="form-check form-check-inline"
         >
           <input
-            aria-describedby="checkbox1Description"
+            aria-describedby="inline-checkbox1Description"
             className="form-control"
-            id="checkbox1"
+            id="inline-checkbox1"
             onBlur={[Function]}
             onFocus={[Function]}
             type="checkbox"
           />
           <label
             className="form-check-label"
-            htmlFor="checkbox1"
+            htmlFor="inline-checkbox1"
           >
             Checkbox non selezionato
           </label>
@@ -5899,17 +5875,17 @@ exports[`Storyshots Componenti/Form/Checkbox Checkbox Inline 1`] = `
           className="form-check form-check-inline"
         >
           <input
-            aria-describedby="checkbox2Description"
+            aria-describedby="inline-checkbox2Description"
             className="form-control"
             defaultChecked={true}
-            id="checkbox2"
+            id="inline-checkbox2"
             onBlur={[Function]}
             onFocus={[Function]}
             type="checkbox"
           />
           <label
             className="form-check-label"
-            htmlFor="checkbox2"
+            htmlFor="inline-checkbox2"
           >
             Checkbox selezionato
           </label>
@@ -6049,7 +6025,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Base 1`]
           Nome
         </label>
         <small
-          className=""
+          className="text-muted"
           id="formNomeDescription"
         />
       </div>
@@ -6071,7 +6047,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Base 1`]
           Cognome
         </label>
         <small
-          className=""
+          className="text-muted"
           id="formCognomeDescription"
         />
       </div>
@@ -6097,7 +6073,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Base 1`]
           Città
         </label>
         <small
-          className=""
+          className="text-muted"
           id="CittaDescription"
         />
       </div>
@@ -6119,7 +6095,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Base 1`]
           Comune
         </label>
         <small
-          className=""
+          className="text-muted"
           id="ComuneDescription"
         />
       </div>
@@ -6141,7 +6117,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Base 1`]
           CAP
         </label>
         <small
-          className=""
+          className="text-muted"
           id="CAPDescription"
         />
       </div>
@@ -6185,7 +6161,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Compless
           Nome
         </label>
         <small
-          className=""
+          className="text-muted"
           id="inputEmail4Description"
         />
       </div>
@@ -6208,7 +6184,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Compless
           Password
         </label>
         <small
-          className=""
+          className="text-muted"
           id="exampleInputPasswordDescription"
         />
       </div>
@@ -6235,7 +6211,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Compless
           Indirizzo
         </label>
         <small
-          className=""
+          className="text-muted"
           id="inputAddressDescription"
         />
       </div>
@@ -6261,7 +6237,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Compless
           Comune
         </label>
         <small
-          className=""
+          className="text-muted"
           id="inputCityDescription"
         />
       </div>
@@ -6283,7 +6259,7 @@ exports[`Storyshots Componenti/Form/Form Layout Dimensionamento Colonne Compless
           CAP
         </label>
         <small
-          className=""
+          className="text-muted"
           id="inputCAPDescription"
         />
       </div>
@@ -6506,7 +6482,7 @@ exports[`Storyshots Componenti/Form/Form Layout Form Disabilitato 1`] = `
             Input
           </label>
           <small
-            className=""
+            className="text-muted"
             id="disabledTextInputDescription"
           />
         </div>
@@ -6692,7 +6668,7 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Base 1`] = `
         Valid Input
       </label>
       <small
-        className="valid-feedback form-text text-muted"
+        className="valid-feedback form-text"
       />
     </div>
     <div
@@ -6727,7 +6703,7 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Base 1`] = `
         First name
       </label>
       <small
-        className="valid-feedback form-text text-muted"
+        className="valid-feedback form-text"
       >
         Validated!
       </small>
@@ -6780,19 +6756,24 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
           className="form-group"
         >
           <input
+            aria-describedby="completeValidation-nameDescription"
             className="is-valid form-control"
+            id="completeValidation-name"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
             type="text"
             value="Mario"
           />
           <label
             className="active"
+            htmlFor="completeValidation-name"
           >
             Nome
           </label>
           <small
-            className="valid-feedback form-text text-muted"
+            className="valid-feedback form-text"
+            id="completeValidation-nameDescription"
           >
             Validato!
           </small>
@@ -6805,19 +6786,24 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
           className="form-group"
         >
           <input
+            aria-describedby="completeValidation-surnameDescription"
             className="is-valid form-control"
+            id="completeValidation-surname"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
             type="text"
             value="Rossi"
           />
           <label
             className="active"
+            htmlFor="completeValidation-surname"
           >
             Cognome
           </label>
           <small
-            className="valid-feedback form-text text-muted"
+            className="valid-feedback form-text"
+            id="completeValidation-surnameDescription"
           >
             Validato!
           </small>
@@ -6830,19 +6816,24 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
           className="form-group"
         >
           <input
+            aria-describedby="completeValidation-usernameDescription"
             className="is-invalid form-control"
+            id="completeValidation-username"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
             type="text"
             value=""
           />
           <label
             className=""
+            htmlFor="completeValidation-username"
           >
             Username
           </label>
           <small
             className="invalid-feedback form-text text-muted"
+            id="completeValidation-usernameDescription"
           >
             Per favore scegli un username.
           </small>
@@ -6859,19 +6850,24 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
           className="form-group"
         >
           <input
+            aria-describedby="completeValidation-cityDescription"
             className="is-invalid form-control"
+            id="completeValidation-city"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
             type="text"
             value=""
           />
           <label
             className=""
+            htmlFor="completeValidation-city"
           >
             Città
           </label>
           <small
             className="invalid-feedback form-text text-muted"
+            id="completeValidation-cityDescription"
           >
             Per favore inserisci un nome di città valido.
           </small>
@@ -6884,19 +6880,24 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
           className="form-group"
         >
           <input
+            aria-describedby="completeValidation-provinceDescription"
             className="is-invalid form-control"
+            id="completeValidation-province"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
             type="text"
             value=""
           />
           <label
             className=""
+            htmlFor="completeValidation-province"
           >
             Provincia
           </label>
           <small
             className="invalid-feedback form-text text-muted"
+            id="completeValidation-provinceDescription"
           >
             Per favore inserisci un nome di provincia valida.
           </small>
@@ -6909,19 +6910,24 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
           className="form-group"
         >
           <input
+            aria-describedby="completeValidation-capDescription"
             className="is-invalid form-control"
+            id="completeValidation-cap"
             onBlur={[Function]}
+            onChange={[Function]}
             onFocus={[Function]}
             type="text"
             value=""
           />
           <label
             className=""
+            htmlFor="completeValidation-cap"
           >
             CAP
           </label>
           <small
             className="invalid-feedback form-text text-muted"
+            id="completeValidation-capDescription"
           >
             Per favore inserisci un CAP valido.
           </small>
@@ -6931,30 +6937,27 @@ exports[`Storyshots Componenti/Form/Form Validation Validazione Completa 1`] = `
     <div
       className="form-check"
     >
-      <div
-        className="form-group"
+      <input
+        aria-describedby="termsAndConditionsDescription"
+        checked={false}
+        className="form-control"
+        id="termsAndConditions"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="checkbox"
+      />
+      <label
+        className="form-check-label"
+        htmlFor="termsAndConditions"
       >
-        <input
-          aria-describedby="checkbox1Description"
-          className="is-invalid form-control"
-          id="checkbox1"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          type="checkbox"
-        />
-        <label
-          className=""
-          htmlFor="checkbox1"
-        >
-          Accetto i termini e condizioni
-        </label>
-        <small
-          className="invalid-feedback form-text text-muted"
-          id="checkbox1Description"
-        >
-          Devi accettare i termini e le condizioni prima di inviare il modulo.
-        </small>
-      </div>
+        Accetto i termini e condizioni
+      </label>
+      <small
+        className="form-text text-muted"
+      >
+        Devi accettare i termini e le condizioni prima di inviare il modulo.
+      </small>
     </div>
     <button
       aria-label={null}
@@ -11846,7 +11849,7 @@ exports[`Storyshots Componenti/Rating Rating Base 1`] = `
       id="star5a"
       name="ratingA"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="5"
@@ -11882,7 +11885,7 @@ exports[`Storyshots Componenti/Rating Rating Base 1`] = `
       id="star4a"
       name="ratingA"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="4"
@@ -11918,7 +11921,7 @@ exports[`Storyshots Componenti/Rating Rating Base 1`] = `
       id="star3a"
       name="ratingA"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="3"
@@ -11954,7 +11957,7 @@ exports[`Storyshots Componenti/Rating Rating Base 1`] = `
       id="star2a"
       name="ratingA"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="2"
@@ -11990,7 +11993,7 @@ exports[`Storyshots Componenti/Rating Rating Base 1`] = `
       id="star1a"
       name="ratingA"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="1"
@@ -12037,7 +12040,6 @@ exports[`Storyshots Componenti/Rating Rating con Label 1`] = `
 >
   <fieldset
     className="rating-label rating"
-    onChange={[Function]}
   >
     <span
       className="sr-only"
@@ -12062,7 +12064,7 @@ exports[`Storyshots Componenti/Rating Rating con Label 1`] = `
       id="star5b"
       name="ratingB"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="5"
@@ -12098,7 +12100,7 @@ exports[`Storyshots Componenti/Rating Rating con Label 1`] = `
       id="star4b"
       name="ratingB"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="4"
@@ -12134,7 +12136,7 @@ exports[`Storyshots Componenti/Rating Rating con Label 1`] = `
       id="star3b"
       name="ratingB"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="3"
@@ -12170,7 +12172,7 @@ exports[`Storyshots Componenti/Rating Rating con Label 1`] = `
       id="star2b"
       name="ratingB"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="2"
@@ -12206,7 +12208,7 @@ exports[`Storyshots Componenti/Rating Rating con Label 1`] = `
       id="star1b"
       name="ratingB"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="1"
@@ -12261,14 +12263,14 @@ exports[`Storyshots Componenti/Rating Rating read-only 1`] = `
     </legend>
     <input
       aria-describedby="star5cDescription"
-      ariaHidden="true"
+      aria-hidden={true}
       checked={false}
       className=" "
       disabled={true}
       id="star5c"
       name="ratingC"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="5"
@@ -12299,14 +12301,14 @@ exports[`Storyshots Componenti/Rating Rating read-only 1`] = `
     </label>
     <input
       aria-describedby="star4cDescription"
-      ariaHidden="true"
+      aria-hidden={true}
       checked={true}
       className=" "
       disabled={true}
       id="star4c"
       name="ratingC"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="4"
@@ -12337,14 +12339,14 @@ exports[`Storyshots Componenti/Rating Rating read-only 1`] = `
     </label>
     <input
       aria-describedby="star3cDescription"
-      ariaHidden="true"
+      aria-hidden={true}
       checked={false}
       className=" "
       disabled={true}
       id="star3c"
       name="ratingC"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="3"
@@ -12375,14 +12377,14 @@ exports[`Storyshots Componenti/Rating Rating read-only 1`] = `
     </label>
     <input
       aria-describedby="star2cDescription"
-      ariaHidden="true"
+      aria-hidden={true}
       checked={false}
       className=" "
       disabled={true}
       id="star2c"
       name="ratingC"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="2"
@@ -12413,14 +12415,14 @@ exports[`Storyshots Componenti/Rating Rating read-only 1`] = `
     </label>
     <input
       aria-describedby="star1cDescription"
-      ariaHidden="true"
+      aria-hidden={true}
       checked={false}
       className=" "
       disabled={true}
       id="star1c"
       name="ratingC"
       onBlur={[Function]}
-      onClick={[Function]}
+      onChange={[Function]}
       onFocus={[Function]}
       type="radio"
       value="1"
@@ -12467,11 +12469,7 @@ exports[`Storyshots Componenti/Section Esempio 1`] = `
 >
   <div
     className="section"
-    style={
-      Object {
-        "backgroundImage": "url(undefined)",
-      }
-    }
+    style={Object {}}
   >
     <div
       className="section-content"
@@ -12591,11 +12589,7 @@ exports[`Storyshots Componenti/Section Section con Card 1`] = `
 >
   <div
     className="section section-muted"
-    style={
-      Object {
-        "backgroundImage": "url(undefined)",
-      }
-    }
+    style={Object {}}
   >
     <div
       className="section-content"
@@ -12653,11 +12647,7 @@ exports[`Storyshots Componenti/Section Sfondo Neutrale 1`] = `
 >
   <div
     className="section section-neutral"
-    style={
-      Object {
-        "backgroundImage": "url(undefined)",
-      }
-    }
+    style={Object {}}
   >
     <div
       className="section-content"
@@ -12715,11 +12705,7 @@ exports[`Storyshots Componenti/Section Sfondo Primario 1`] = `
 >
   <div
     className="section section-primary"
-    style={
-      Object {
-        "backgroundImage": "url(undefined)",
-      }
-    }
+    style={Object {}}
   >
     <div
       className="section-content"
@@ -12777,11 +12763,7 @@ exports[`Storyshots Componenti/Section Sfondo Tenue 1`] = `
 >
   <div
     className="section section-muted"
-    style={
-      Object {
-        "backgroundImage": "url(undefined)",
-      }
-    }
+    style={Object {}}
   >
     <div
       className="section-content"

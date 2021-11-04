@@ -137,7 +137,7 @@
   "jest": {
     "transform": {
       ".(ts|tsx)$": "ts-jest",
-      ".(js|jsx)$": "babel-jest",
+      ".(js|jsx)$": "./jest-transformer.js",
       "^.+\\.mdx$": "@storybook/addon-docs/jest-transform-mdx"
     },
     "moduleNameMapper": {

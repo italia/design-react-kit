@@ -10,16 +10,14 @@ export const PosizionamentoAFondoPaginaConLineaASinistra = PosizionamentoFondoPa
   {}
 );
 
-PosizionamentoAFondoPaginaConLineaASinistra.story = {
-  name: 'Posizionamento a fondo pagina con linea a sinistra'
-};
+PosizionamentoAFondoPaginaConLineaASinistra.storyName =
+  'Posizionamento a fondo pagina con linea a sinistra';
 
 export const PosizionamentoInTestaAllaPaginaConLineaADestra = PosizionamentoTestaAlla.bind(
   {}
 );
 
-PosizionamentoInTestaAllaPaginaConLineaADestra.story = {
-  name: 'Posizionamento in testa alla pagina con linea a destra'
-};
+PosizionamentoInTestaAllaPaginaConLineaADestra.storyName =
+  'Posizionamento in testa alla pagina con linea a destra';
 
 export const _MenuInline = ComponenteMenuInline;
