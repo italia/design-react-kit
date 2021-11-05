@@ -60,9 +60,7 @@ export const SelectClassica = () => {
   );
 };
 
-SelectClassica.story = {
-  name: 'Select classica'
-};
+SelectClassica.storyName = 'Select classica';
 
 export const SelectDisabilitata = () => {
   const [, setValue] = useState(null);
@@ -83,9 +81,7 @@ export const SelectDisabilitata = () => {
   );
 };
 
-SelectDisabilitata.story = {
-  name: 'Select disabilitata'
-};
+SelectDisabilitata.storyName = 'Select disabilitata';
 
 export const SelectConReset = () => {
   const [, setValue] = useState(null);
@@ -106,9 +102,7 @@ export const SelectConReset = () => {
   );
 };
 
-SelectConReset.story = {
-  name: 'Select con reset'
-};
+SelectConReset.storyName = 'Select con reset';
 
 export const SelectConRicerca = () => {
   const [, setValue] = useState(null);
@@ -129,9 +123,7 @@ export const SelectConRicerca = () => {
   );
 };
 
-SelectConRicerca.story = {
-  name: 'Select con ricerca'
-};
+SelectConRicerca.storyName = 'Select con ricerca';
 
 export const _SelectMultipla = () => {
   const [, setValue] = useState(null);
@@ -170,9 +162,7 @@ export const SelectConGruppi = () => {
   );
 };
 
-SelectConGruppi.story = {
-  name: 'Select con gruppi'
-};
+SelectConGruppi.storyName = 'Select con gruppi';
 
 type SelectOptions =
   | { value: string; label: string }
@@ -212,9 +202,7 @@ export const SelectInterattivo = ({
     </div>
   );
 };
-SelectInterattivo.story = {
-  name: 'Esempio interattivo'
-};
+SelectInterattivo.storyName = 'Esempio interattivo';
 
 SelectInterattivo.args = {
   search: false,

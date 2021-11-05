@@ -30,8 +30,6 @@ const SaveButtonDark = () => {
   );
 };
 
-SaveButtonDark.story = {
-  name: 'Save button'
-};
+SaveButtonDark.storyName = 'Save button';
 
 export default SaveButtonDark;

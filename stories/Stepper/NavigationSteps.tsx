@@ -46,8 +46,6 @@ const NavigationOfTheSteps = () => {
   );
 };
 
-NavigationOfTheSteps.story = {
-  name: 'Navigation of the steps'
-};
+NavigationOfTheSteps.storyName = 'Navigation of the steps';
 
 export default NavigationOfTheSteps;

@@ -62,14 +62,10 @@ export const _Icone = () => <TabExampleIcon />;
 
 export const IconeETesto = () => <TabExampleTextIcon />;
 
-IconeETesto.story = {
-  name: 'Icone e testo'
-};
+IconeETesto.storyName = 'Icone e testo';
 
 export const TabABottoni = () => <TabExampleButton />;
 
-TabABottoni.story = {
-  name: 'Tab a bottoni'
-};
+TabABottoni.storyName = 'Tab a bottoni';
 
 export const _AllineamentoVerticale = () => <TabExampleButtonVertical />;

@@ -200,10 +200,6 @@ export default {
   title: 'Componenti/Section'
 };
 
-ImmagineDiSfondo.story = {
-  name: 'Immagine di sfondo'
-};
+ImmagineDiSfondo.storyName = 'Immagine di sfondo';
 
-SectionConCard.story = {
-  name: 'Section con Card'
-};
+SectionConCard.storyName = 'Section con Card';

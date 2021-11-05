@@ -7,7 +7,6 @@ export {
   NavbarToggler,
   NavItem,
   NavLink,
-  Breadcrumb,
   BreadcrumbItem,
   ButtonDropdown,
   ButtonGroup,
@@ -70,6 +69,7 @@ export { AvatarPresence } from './Avatar/AvatarPresence';
 export { AvatarStatus } from './Avatar/AvatarStatus';
 export { AvatarWrapper } from './Avatar/AvatarWrapper';
 export { Badge } from './Badge/Badge';
+export { Breadcrumb } from './Breadcrumb/Breadcrumb';
 export { Button } from './Button/Button';
 export { Forward } from './Forward/Forward';
 export { Callout } from './Callout/Callout';
@@ -114,6 +114,10 @@ export { InputContainer } from './Input/InputContainer';
 export { TextArea } from './Input/TextArea';
 export { LinkList } from './LinkList/LinkList';
 export { LinkListItem } from './LinkList/LinkListItem';
+export { Megamenu } from './Megamenu/Megamenu';
+export { MegamenuItem } from './Megamenu/MegamenuItem';
+export { MegamenuFooter } from './Megamenu/MegamenuFooter';
+export { MegamenuHighlightColumn } from './Megamenu/MegamenuHighlightColumn';
 export { Modal } from './Modal/Modal';
 export { ModalHeader } from './Modal/ModalHeader';
 export { ModalBody } from './Modal/ModalBody';
@@ -153,9 +157,8 @@ export { Section } from './Section/Section';
 export {
   NotificationManager,
   notify,
-  createNotification,
-  NotificationId
-} from './Notification/index';
+  createNotification
+} from './Notification';
 
 // Types
 export type { AlertProps } from './Alert/Alert';
@@ -170,6 +173,7 @@ export type { AvatarPresenceProps } from './Avatar/AvatarPresence';
 export type { AvatarStatusProps } from './Avatar/AvatarStatus';
 export type { AvatarWrapperProps } from './Avatar/AvatarWrapper';
 export type { BadgeProps } from './Badge/Badge';
+export type { BreadcrumbProps } from './Breadcrumb/Breadcrumb';
 export type { ButtonProps } from './Button/Button';
 export type { ForwardProps } from './Forward/Forward';
 export type { CalloutProps } from './Callout/Callout';
@@ -209,6 +213,10 @@ export type { InputContainerProps } from './Input/InputContainer';
 export type { TextAreaProps } from './Input/TextArea';
 export type { LinkListProps } from './LinkList/LinkList';
 export type { LinkListItemProps } from './LinkList/LinkListItem';
+export type { MegamenuProps } from './Megamenu/Megamenu';
+export type { MegamenuItemProps } from './Megamenu/MegamenuItem';
+export type { MegamenuFooterProps } from './Megamenu/MegamenuFooter';
+export type { MegamenuHCProps } from './Megamenu/MegamenuHighlightColumn';
 export type { ModalProps } from './Modal/Modal';
 export type { ModalHeaderProps } from './Modal/ModalHeader';
 export type { ModalBodyProps } from './Modal/ModalBody';
@@ -245,11 +253,12 @@ export type { StepperDotsProps } from './Stepper/StepperDots';
 export type { StepperContentProps } from './Stepper/StepperContent';
 export type { SectionProps } from './Section/Section';
 export type { SelectProps } from './Select/Select';
-export {
+export type {
+  NotificationId,
   NotificationProps,
   NotificationManagerProps,
   NotificationOptions
-} from './Notification/index';
+} from './Notification';
 
 export type {
   ContainerProps,
@@ -260,7 +269,6 @@ export type {
   NavbarTogglerProps,
   NavItemProps,
   NavLinkProps,
-  BreadcrumbProps,
   BreadcrumbItemProps,
   ButtonDropdownProps,
   ButtonGroupProps,

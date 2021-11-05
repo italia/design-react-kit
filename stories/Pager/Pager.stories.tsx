@@ -192,9 +192,7 @@ export default {
 
 export const _Esempi = EsempiComponent;
 
-StatoDisabilitatoEAttivo.story = {
-  name: 'Stato disabilitato e attivo'
-};
+StatoDisabilitatoEAttivo.storyName = 'Stato disabilitato e attivo';
 
 export const _Allineamento = AllineamentoComponent;
 

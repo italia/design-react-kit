@@ -104,9 +104,7 @@ export const SfondoScuro = () => (
   </div>
 );
 
-SfondoScuro.story = {
-  name: 'Sfondo scuro'
-};
+SfondoScuro.storyName = 'Sfondo scuro';
 
 export const VariantiDiDimensione = () => (
   <section>
@@ -142,9 +140,7 @@ export const VariantiDiDimensione = () => (
   </section>
 );
 
-VariantiDiDimensione.story = {
-  name: 'Varianti di dimensione'
-};
+VariantiDiDimensione.storyName = 'Varianti di dimensione';
 
 export const BottoniConIcona = () => (
   <div>
@@ -163,9 +159,7 @@ export const BottoniConIcona = () => (
   </div>
 );
 
-BottoniConIcona.story = {
-  name: 'Bottoni con icona'
-};
+BottoniConIcona.storyName = 'Bottoni con icona';
 
 export const BottoniConIconaCerchiata = () => (
   <div>
@@ -196,9 +190,7 @@ export const BottoniConIconaCerchiata = () => (
   </div>
 );
 
-BottoniConIconaCerchiata.story = {
-  name: 'Bottoni con icona cerchiata'
-};
+BottoniConIconaCerchiata.storyName = 'Bottoni con icona cerchiata';
 
 export const StatoAttivo = () => (
   <div>
@@ -273,7 +265,5 @@ EsempiInterattivi.argTypes = {
   }
 };
 
-EsempiInterattivi.story = {
-  name: 'Esempi interattivi',
-  parameters: { controls: { expanded: true } }
-};
+EsempiInterattivi.storyName = 'Esempi interattivi';
+EsempiInterattivi.prameters = { controls: { expanded: true } };

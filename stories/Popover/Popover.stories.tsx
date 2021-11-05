@@ -75,9 +75,7 @@ const ElementiDisabilitatiComponent = () => {
   );
 };
 export const _ElementiDisabilitati = ElementiDisabilitatiComponent.bind({});
-_ElementiDisabilitati.story = {
-  name: 'Elementi disabilitati'
-};
+_ElementiDisabilitati.storyName = 'Elementi disabilitati';
 
 const PopoverPositionExample = () => {
   const [popoverOpen1, setPopoverOpen1] = useState(false);
@@ -200,9 +198,7 @@ const PopoverPositionExample = () => {
   );
 };
 export const _LeQuattroDirezioni = PopoverPositionExample.bind({});
-_LeQuattroDirezioni.story = {
-  name: 'Le quattro direzioni'
-};
+_LeQuattroDirezioni.storyName = 'Le quattro direzioni';
 
 const PopoverIconLink = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
@@ -240,9 +236,7 @@ const PopoverIconLink = () => {
   );
 };
 export const _TitoloConIconaELink = PopoverIconLink.bind({});
-_TitoloConIconaELink.story = {
-  name: 'Titolo con icona e link'
-};
+_TitoloConIconaELink.storyName = 'Titolo con icona e link';
 
 const PopoverHover = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
@@ -274,9 +268,7 @@ const PopoverHover = () => {
   );
 };
 export const _ModalitaHover = PopoverHover.bind({});
-_ModalitaHover.story = {
-  name: 'Modalità Hover'
-};
+_ModalitaHover.storyName = 'Modalità Hover';
 
 const PopoverFocus = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
@@ -308,9 +300,7 @@ const PopoverFocus = () => {
   );
 };
 export const DismissAlClickSuccessivo = PopoverFocus.bind({});
-DismissAlClickSuccessivo.story = {
-  name: 'Dismiss al click successivo'
-};
+DismissAlClickSuccessivo.storyName = 'Dismiss al click successivo';
 
 export const _EsempiInterattivi = ({ disabled, placement, title, text }) => {
   const [isOpen, toggle] = useState(false);
@@ -342,9 +332,7 @@ export const _EsempiInterattivi = ({ disabled, placement, title, text }) => {
   );
 };
 
-_EsempiInterattivi.story = {
-  name: 'Esempi interattivi'
-};
+_EsempiInterattivi.storyName = 'Esempi interattivi';
 
 _EsempiInterattivi.args = {
   disabled: false,

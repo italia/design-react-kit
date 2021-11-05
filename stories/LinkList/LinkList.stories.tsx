@@ -130,9 +130,7 @@ export const HeaderEDividerNoLink = () => (
   </LinkList>
 );
 
-HeaderEDividerNoLink.story = {
-  name: 'Header e Divider (senza link)'
-};
+HeaderEDividerNoLink.storyName = 'Header e Divider (senza link)';
 
 export const HeaderEDividerConLink = () => (
   <LinkList>
@@ -155,9 +153,7 @@ export const HeaderEDividerConLink = () => (
   </LinkList>
 );
 
-HeaderEDividerConLink.story = {
-  name: 'Header e Divider (con link)'
-};
+HeaderEDividerConLink.storyName = 'Header e Divider (con link)';
 
 export const Sizing = () => (
   <LinkList>
@@ -180,9 +176,7 @@ export const Sizing = () => (
   </LinkList>
 );
 
-TitoloLista.story = {
-  name: 'Titolo lista'
-};
+TitoloLista.storyName = 'Titolo lista';
 
 export const EsempioMultiline = () => (
   <LinkList multiline>

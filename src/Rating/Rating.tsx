@@ -7,7 +7,18 @@ import type { InputProps } from '../Input/Input';
 import { Icon } from '../Icon/Icon';
 import { noop } from '../utils';
 
-export interface RatingProps extends InputProps {
+type UnusedProps =
+  | 'bsSize'
+  | 'size'
+  | 'static'
+  | 'plaintext'
+  | 'normalized'
+  | 'addon'
+  | 'placeholder'
+  | 'label'
+  | 'value'
+  | 'type';
+export interface RatingProps extends Omit<InputProps, UnusedProps> {
   /** La lista di 5 id, per ciascun elemento intero del Rating. La lista deve essere ordinata dal rating 1 al rating 5.  */
   inputs: string[];
   /** Il campo "label" è impostato di default su "Valuta ${n} stelle su 5", ma può essere personalizzato con questa funzione che riceve il numero input come argomento `function (n: number) => string`. */
@@ -28,11 +39,11 @@ export interface RatingProps extends InputProps {
   value?: 1 | 2 | 3 | 4 | 5 | number;
 }
 
-function isCustomLegendObject(
+export const isCustomLegendObject = (
   legend: ReactNode | { content: ReactNode; srOnly: boolean }
-): legend is { content: ReactNode; srOnly: boolean } {
+): legend is { content: ReactNode; srOnly: boolean } => {
   return legend != null && typeof legend === 'object' && 'content' in legend;
-}
+};
 
 export const Rating: FC<RatingProps> = ({
   className,
@@ -53,14 +64,14 @@ export const Rating: FC<RatingProps> = ({
   // Fields
   const labelFn = labelTemplate;
 
-  const onChange = readOnly ? onChangeRating : noop;
+  const onChange = readOnly ? noop : onChangeRating;
 
   const wrapperClasses = classNames(wrapperClassName, {
     'rating-read-only': readOnly,
     'rating-label': legend
   });
   const fieldClasses = classNames(className);
-  const extraFieldAttrs = readOnly ? { ariaHidden: 'true' } : {};
+  const extraFieldAttrs = readOnly ? { 'aria-hidden': true } : {};
 
   // Legend
   const isLegendString = typeof legend === 'string';
@@ -102,7 +113,7 @@ export const Rating: FC<RatingProps> = ({
               value={String(currentValue)}
               cssModule={{ 'form-control': ' ' }}
               className={fieldClasses}
-              onClick={() => onChange(currentValue, name)}
+              onChange={() => onChange(currentValue, name)}
               checked={value === currentValue}
               disabled={readOnly}
               {...extraFieldAttrs}

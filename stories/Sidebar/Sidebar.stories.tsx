@@ -100,9 +100,7 @@ export const _ConIcona = () => (
   </Sidebar>
 );
 
-_ConIcona.story = {
-  name: 'Con icona'
-};
+_ConIcona.storyName = 'Con icona';
 
 export const ConLineaADestra = () => (
   <Sidebar right>
@@ -136,9 +134,7 @@ export const ConLineaADestra = () => (
   </Sidebar>
 );
 
-ConLineaADestra.story = {
-  name: 'Con linea a destra'
-};
+ConLineaADestra.storyName = 'Con linea a destra';
 
 export const ConLineaASinistra = () => (
   <Sidebar left>
@@ -172,9 +168,7 @@ export const ConLineaASinistra = () => (
   </Sidebar>
 );
 
-ConLineaASinistra.story = {
-  name: 'Con linea a sinistra'
-};
+ConLineaASinistra.storyName = 'Con linea a sinistra';
 
 export const _Annidata = SidebarCollapseExample.bind({});
 
@@ -210,10 +204,6 @@ export const SidebarVersioneScura = () => (
   </Sidebar>
 );
 
-_Annidata.story = {
-  name: 'Sidebar annidata'
-};
+_Annidata.storyName = 'Sidebar annidata';
 
-SidebarVersioneScura.story = {
-  name: 'Sidebar versione scura'
-};
+SidebarVersioneScura.storyName = 'Sidebar versione scura';
