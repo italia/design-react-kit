@@ -8,14 +8,13 @@ module.exports = {
     if (output.format === 'umd') {
       // maybe push popper in globals?
     }
-    const isDev = /development/.test(file);
+    const isDev = options.env === 'development';
     // Remove file ref and insert dir to support code splitting
     return {
       ...restConfig,
       plugins: [
         url(),
         svgr({
-          // configure however you like, this is just an example
           ref: true,
           memo: true,
           svgoConfig: {
@@ -32,7 +31,7 @@ module.exports = {
         dir: path.join(
           __dirname,
           'dist',
-          `${restOutput.format}${isDev ? '-dev' : ''}`
+          `${isDev ? 'types' : restOutput.format}`
         )
       }
     };

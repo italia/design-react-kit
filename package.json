@@ -22,13 +22,14 @@
   "version": "4.0.0",
   "license": "MIT",
   "module": "dist/esm/index.js",
-  "main": "dist/index.js",
-  "typings": "dist/cjs-dev/index.d.ts",
+  "main": "./src/index.tsx",
+  "typings": "dist/types/index.d.ts",
   "exports": {
     "require": "./dist/index.js",
     "import": "./dist/esm/index.js",
     "default": "./dist/esm/index.js"
   },
+  "sideEffects": false,
   "files": [
     "dist",
     "src"
