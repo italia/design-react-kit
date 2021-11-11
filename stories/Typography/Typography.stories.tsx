@@ -145,7 +145,7 @@ export const Link = () => (
       Esempio di <a href='#'>link normale</a>.
     </p>
     <p>
-      Esempio di
+      Esempio di&nbsp;
       <a href='#' className='text-decoration-none font-weight-bold'>
         link in grassetto senza sottolineatura
       </a>

@@ -45,6 +45,15 @@ Come descritto in dettaglio nel capitolo sullo UI Kit, le Linee Guida di Design 
 
 Bootstrap Italia ridimensiona testo e alcune propietà dei componenti modificando il `font-size` dell’elemento radice, con una media query che imposta dimensioni lievemente maggiori per schermi con dimensioni maggiori di `576px`. Questa impostazione, unita all’utilizzo di dimensioni in `rem` o in semplici valori numerici all’interno del CSS, fa sì che testo e altre proprietà occupino più spazio quando lo schermo lo permette:
 
+```css
+html {
+  font-size: 16px;
+  @include media-breakpoint-up(sm) {
+    font-size: 18px;
+  }
+}
+```
+
 ### Intestazioni
 
 Tutte le intestazioni HTML, da `<h1>` fino a `<h6>`, sono disponibili, anche se è buona norma non utilizzare più di 4 livelli di intestazione.

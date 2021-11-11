@@ -18546,7 +18546,7 @@ exports[`Storyshots Componenti/Typography Link 1`] = `
     .
   </p>
   <p>
-    Esempio di
+    Esempio di 
     <a
       className="text-decoration-none font-weight-bold"
       href="#"
