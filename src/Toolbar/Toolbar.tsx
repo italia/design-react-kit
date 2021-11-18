@@ -3,21 +3,18 @@ import classnames from 'classnames';
 
 export interface ToolbarProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
-  isMedium?: boolean;
-  isSmall?: boolean;
+  size?: 'large' | 'medium' | 'small';
 }
 
 export const Toolbar: FC<ToolbarProps> = ({
   tag = 'nav',
-  isMedium = false,
-  isSmall = false,
+  size = 'large',
   children,
   ...attributes
 }) => {
   const Tag = tag;
   const classes = classnames('toolbar', {
-    'toolbar-medium': isMedium,
-    'toolbar-small': isSmall
+    [`toolbar-${size}`]: size
   });
   return (
     <Tag className={classes} {...attributes}>
