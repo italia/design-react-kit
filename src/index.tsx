@@ -145,6 +145,7 @@ export { ChipLabel } from './Chips/ChipLabel';
 export { FontLoader } from './FontLoader/FontLoader';
 export { Dimmer } from './Dimmer/Dimmer';
 export { DimmerButtons } from './Dimmer/DimmerButtons';
+export { TimeInput } from './Input/TimeInput';
 export { Timeline } from './Timeline/TimelineWrapper';
 export { TimelinePin } from './Timeline/TimelinePin';
 export { Select } from './Select/Select';
