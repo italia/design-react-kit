@@ -92,6 +92,11 @@ export { CardSignature } from './Card/CardSignature';
 export { CardFooterCTA } from './Card/CardFooterCTA';
 export { CardReadMore } from './Card/CardReadMore';
 export { Collapse } from './Collapse/Collapse';
+export {
+  GridItem,
+  GridItemText,
+  GridItemTextWrapper
+} from './Grid/index';
 export { Header } from './Header/Header';
 export { Headers } from './Header/Headers';
 export { HeaderBrand } from './Header/HeaderBrand';
@@ -126,6 +131,7 @@ export { ModalFooter } from './Modal/ModalFooter';
 export { Nav } from './Nav/Nav';
 export { Pager } from './Pager/Pager';
 export { Rating } from './Rating/Rating';
+export { ResponsiveImage } from './ResponsiveImage/ResponsiveImage';
 export { PasswordInput } from './PasswordInput/PasswordInput';
 export { Skiplink } from './Skiplink/Skiplink';
 export { SkiplinkItem } from './Skiplink/SkiplinkItem';
@@ -190,6 +196,11 @@ export type { CardSignatureProps } from './Card/CardSignature';
 export type { CardFooterCTAProps } from './Card/CardFooterCTA';
 export type { CardReadMoreProps } from './Card/CardReadMore';
 export type { CollapseProps } from './Collapse/Collapse';
+export type {
+  GridItemProps,
+  GridItemTextProps,
+  GridItemTextWrapperProps
+} from './Grid/index';
 export type { HeaderProps } from './Header/Header';
 export type { HeadersProps } from './Header/Headers';
 export type { HeaderBrandProps } from './Header/HeaderBrand';
@@ -224,6 +235,7 @@ export type { ModalFooterProps } from './Modal/ModalFooter';
 export type { NavProps } from './Nav/Nav';
 export type { PagerProps } from './Pager/Pager';
 export type { RatingProps } from './Rating/Rating';
+export type { ResponsiveImageProps } from './ResponsiveImage/ResponsiveImage';
 export type { PasswordInputProps } from './PasswordInput/PasswordInput';
 export type { SkiplinkProps } from './Skiplink/Skiplink';
 export type { SkiplinkItemProps } from './Skiplink/SkiplinkItem';
