@@ -4,6 +4,8 @@ import {
   GridItem,
   GridItemText,
   GridItemTextWrapper,
+  GridList,
+  GridRow,
   Icon,
   ResponsiveImage,
   Row
@@ -56,8 +58,8 @@ export const ElementoSingolo = () => (
 );
 
 export const GrigliaStandard = () => (
-  <div className='it-grid-list-wrapper'>
-    <div className='grid-row'>
+  <GridList>
+    <GridRow>
       <Col lg={4} xs={6}>
         <GridItem>
           <a href='#'>
@@ -124,13 +126,13 @@ export const GrigliaStandard = () => (
           </a>
         </GridItem>
       </Col>
-    </div>
-  </div>
+    </GridRow>
+  </GridList>
 );
 
 export const StandardDidascalie = () => (
-  <div className='it-grid-list-wrapper it-image-label-grid'>
-    <div className='grid-row'>
+  <GridList className='it-image-label-grid'>
+    <GridRow>
       <Col lg={4} xs={6}>
         <GridItem>
           <a href='#'>
@@ -221,13 +223,13 @@ export const StandardDidascalie = () => (
           </a>
         </GridItem>
       </Col>
-    </div>
-  </div>
+    </GridRow>
+  </GridList>
 );
 
 export const Proporzionale = () => (
-  <div className='it-grid-list-wrapper it-quilted-grid'>
-    <div className='grid-row'>
+  <GridList className='it-quilted-grid'>
+    <GridRow>
       <Col md={6} xs={12}>
         <GridItem className='it-grid-item-overlay'>
           <a href='#' className=''>
@@ -244,7 +246,7 @@ export const Proporzionale = () => (
         </GridItem>
       </Col>
       <Col md={6} xs={12}>
-        <div className='grid-row'>
+        <GridRow>
           <Col xs={6}>
             <GridItem className='it-grid-item-overlay'>
               <a href='#'>
@@ -276,7 +278,7 @@ export const Proporzionale = () => (
             </GridItem>
           </Col>
           <Col xs={12}>
-            <div className='it-grid-item-wrapper it-grid-item-overlay it-grid-item-double-w'>
+            <GridItem className='it-grid-item-overlay it-grid-item-double-w'>
               <a href='#'>
                 <ResponsiveImage
                   src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
@@ -288,16 +290,16 @@ export const Proporzionale = () => (
                   <Icon icon='it-code-circle' size='sm' />
                 </GridItemTextWrapper>
               </a>
-            </div>
+            </GridItem>
           </Col>
-        </div>
+        </GridRow>
       </Col>
-    </div>
-  </div>
+    </GridRow>
+  </GridList>
 );
 
 export const Masonry = () => (
-  <div className='it-grid-list-wrapper it-image-label-grid it-masonry'>
+  <GridItem className='it-image-label-grid it-masonry'>
     <div className='card-columns'>
       <Col xs={12}>
         <GridItem>
@@ -480,7 +482,7 @@ export const Masonry = () => (
         </GridItem>
       </Col>
     </div>
-  </div>
+  </GridItem>
 );
 
 export default {

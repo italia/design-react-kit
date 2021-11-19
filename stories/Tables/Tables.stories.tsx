@@ -1,7 +1,8 @@
 import React from 'react';
+import { Table } from '../../src'
 
 export const TableBase = () => (
-  <table className='table'>
+  <Table>
     <thead>
       <tr>
         <th scope='col'>#</th>
@@ -30,11 +31,11 @@ export const TableBase = () => (
         <td>alessandro.rossi</td>
       </tr>
     </tbody>
-  </table>
+  </Table>
 );
 
 export const TableDark = () => (
-  <table className='table table-dark'>
+  <Table dark>
     <thead>
       <tr>
         <th scope='col'>#</th>
@@ -63,12 +64,12 @@ export const TableDark = () => (
         <td>alessandro.rossi</td>
       </tr>
     </tbody>
-  </table>
+  </Table>
 );
 
 export const TableThead = () => (
   <>
-    <table className='table'>
+    <Table>
       <thead className='thead-dark'>
         <tr>
           <th scope='col'>#</th>
@@ -97,9 +98,9 @@ export const TableThead = () => (
           <td>alessandro.rossi</td>
         </tr>
       </tbody>
-    </table>
+    </Table>
 
-    <table className='table'>
+    <Table>
       <thead className='thead-light'>
         <tr>
           <th scope='col'>#</th>
@@ -128,12 +129,12 @@ export const TableThead = () => (
           <td>alessandro.rossi</td>
         </tr>
       </tbody>
-    </table>
+    </Table>
   </>
 );
 
 export const TableStriped = () => (
-  <table className='table table-striped'>
+  <Table striped>
     <thead>
       <tr>
         <th scope='col'>#</th>
@@ -162,11 +163,11 @@ export const TableStriped = () => (
         <td>alessandro.rossi</td>
       </tr>
     </tbody>
-  </table>
+  </Table>
 );
 
 export const TableBordered = () => (
-  <table className='table table-bordered'>
+  <Table bordered>
     <thead>
       <tr>
         <th scope='col'>#</th>
@@ -195,11 +196,11 @@ export const TableBordered = () => (
         <td>alessandro.rossi</td>
       </tr>
     </tbody>
-  </table>
+  </Table>
 );
 
 export const TableBorderless = () => (
-  <table className='table table-borderless'>
+  <Table borderless>
     <thead>
       <tr>
         <th scope='col'>#</th>
@@ -228,11 +229,11 @@ export const TableBorderless = () => (
         <td>alessandro.rossi</td>
       </tr>
     </tbody>
-  </table>
+  </Table>
 );
 
 export const TableHover = () => (
-  <table className='table table-hover'>
+  <Table hover>
     <thead>
       <tr>
         <th scope='col'>#</th>
@@ -261,11 +262,11 @@ export const TableHover = () => (
         <td>alessandro.rossi</td>
       </tr>
     </tbody>
-  </table>
+  </Table>
 );
 
 export const TableCompact = () => (
-  <table className='table table-sm'>
+  <Table size='sm'>
     <thead>
       <tr>
         <th scope='col'>#</th>
@@ -294,13 +295,13 @@ export const TableCompact = () => (
         <td>alessandro.rossi</td>
       </tr>
     </tbody>
-  </table>
+  </Table>
 );
 
 export const TableContextual = () => (
   <>
     {/* On rows */}
-    <table className='table'>
+    <Table>
       <thead>
         <tr>
           <th>Class</th>
@@ -345,10 +346,10 @@ export const TableContextual = () => (
           <td>Cell</td>
         </tr>
       </tbody>
-    </table>
+    </Table>
 
     {/* On cells (`td` or `th`) */}
-    <table className='table'>
+    <Table>
       <thead>
         <tr>
           <th></th>
@@ -371,12 +372,12 @@ export const TableContextual = () => (
           <td className='table-warning'>Warning</td>
         </tr>
       </tbody>
-    </table>
+    </Table>
   </>
 );
 
 export const TableCaptions = () => (
-  <table className='table'>
+  <Table>
     <caption>Lista di utenti</caption>
     <thead>
       <tr>
@@ -406,19 +407,72 @@ export const TableCaptions = () => (
         <td>@twitter</td>
       </tr>
     </tbody>
-  </table>
+  </Table>
 );
 
 export const TableResponsive = () => (
-  <div className='table-responsive'>
-    <table className='table'>
+  <Table responsive>
+    <thead>
+      <tr>
+        <th scope='col'>#</th>
+        <th scope='col'>Intestazione</th>
+        <th scope='col'>Intestazione</th>
+        <th scope='col'>Intestazione</th>
+        <th scope='col'>Intestazione</th>
+        <th scope='col'>Intestazione</th>
+        <th scope='col'>Intestazione</th>
+        <th scope='col'>Intestazione</th>
+        <th scope='col'>Intestazione</th>
+        <th scope='col'>Intestazione</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope='row'>1</th>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+      </tr>
+      <tr>
+        <th scope='row'>2</th>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+      </tr>
+      <tr>
+        <th scope='row'>3</th>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+        <td>Cella</td>
+      </tr>
+    </tbody>
+  </Table>
+);
+
+export const TableBreakpoint = () => (
+  <>
+    <Table responsive size='sm'>
       <thead>
         <tr>
           <th scope='col'>#</th>
-          <th scope='col'>Intestazione</th>
-          <th scope='col'>Intestazione</th>
-          <th scope='col'>Intestazione</th>
-          <th scope='col'>Intestazione</th>
           <th scope='col'>Intestazione</th>
           <th scope='col'>Intestazione</th>
           <th scope='col'>Intestazione</th>
@@ -434,17 +488,9 @@ export const TableResponsive = () => (
           <td>Cella</td>
           <td>Cella</td>
           <td>Cella</td>
-          <td>Cella</td>
-          <td>Cella</td>
-          <td>Cella</td>
-          <td>Cella</td>
         </tr>
         <tr>
           <th scope='row'>2</th>
-          <td>Cella</td>
-          <td>Cella</td>
-          <td>Cella</td>
-          <td>Cella</td>
           <td>Cella</td>
           <td>Cella</td>
           <td>Cella</td>
@@ -458,181 +504,126 @@ export const TableResponsive = () => (
           <td>Cella</td>
           <td>Cella</td>
           <td>Cella</td>
+        </tr>
+      </tbody>
+    </Table>
+
+    <Table responsive size='md'>
+      <thead>
+        <tr>
+          <th scope='col'>#</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope='row'>1</th>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+        </tr>
+        <tr>
+          <th scope='row'>2</th>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+        </tr>
+        <tr>
+          <th scope='row'>3</th>
+          <td>Cella</td>
           <td>Cella</td>
           <td>Cella</td>
           <td>Cella</td>
           <td>Cella</td>
         </tr>
       </tbody>
-    </table>
-  </div>
-);
+    </Table>
 
-export const TableBreakpoint = () => (
-  <>
-    <div className='table-responsive-sm'>
-      <table className='table'>
-        <thead>
-          <tr>
-            <th scope='col'>#</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope='row'>1</th>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-          </tr>
-          <tr>
-            <th scope='row'>2</th>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-          </tr>
-          <tr>
-            <th scope='row'>3</th>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <Table responsive size='lg'>
+      <thead>
+        <tr>
+          <th scope='col'>#</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope='row'>1</th>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+        </tr>
+        <tr>
+          <th scope='row'>2</th>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+        </tr>
+        <tr>
+          <th scope='row'>3</th>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+        </tr>
+      </tbody>
+    </Table>
 
-    <div className='table-responsive-md'>
-      <table className='table'>
-        <thead>
-          <tr>
-            <th scope='col'>#</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope='row'>1</th>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-          </tr>
-          <tr>
-            <th scope='row'>2</th>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-          </tr>
-          <tr>
-            <th scope='row'>3</th>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div className='table-responsive-lg'>
-      <table className='table'>
-        <thead>
-          <tr>
-            <th scope='col'>#</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope='row'>1</th>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-          </tr>
-          <tr>
-            <th scope='row'>2</th>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-          </tr>
-          <tr>
-            <th scope='row'>3</th>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div className='table-responsive-xl'>
-      <table className='table'>
-        <thead>
-          <tr>
-            <th scope='col'>#</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-            <th scope='col'>Intestazione</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope='row'>1</th>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-          </tr>
-          <tr>
-            <th scope='row'>2</th>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-          </tr>
-          <tr>
-            <th scope='row'>3</th>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-            <td>Cella</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <Table responsive size='xl'>
+      <thead>
+        <tr>
+          <th scope='col'>#</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+          <th scope='col'>Intestazione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope='row'>1</th>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+        </tr>
+        <tr>
+          <th scope='row'>2</th>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+        </tr>
+        <tr>
+          <th scope='row'>3</th>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+          <td>Cella</td>
+        </tr>
+      </tbody>
+    </Table>
   </>
 );
 
