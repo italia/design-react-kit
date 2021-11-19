@@ -13,7 +13,7 @@ export const GridItemText: FC<GridItemTextProps> = ({
 }) => {
   const classes = classname('it-griditem-text', className);
   return (
-    <span {...attributes} className={classes} >
+    <span {...attributes} className={classes}>
       {children}
     </span>
   );

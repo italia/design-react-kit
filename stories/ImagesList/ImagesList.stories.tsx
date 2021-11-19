@@ -1,5 +1,13 @@
 import React from 'react';
-import { Col, GridItem, GridItemText, GridItemTextWrapper, Icon, ResponsiveImage, Row } from '../../src';
+import {
+  Col,
+  GridItem,
+  GridItemText,
+  GridItemTextWrapper,
+  Icon,
+  ResponsiveImage,
+  Row
+} from '../../src';
 
 export const ElementoSingolo = () => (
   <Row>

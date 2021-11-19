@@ -8594,7 +8594,6 @@ exports[`Storyshots Componenti/ImageList Masonry 1`] = `
           className="it-grid-item-wrapper"
         >
           <a
-            className=""
             href="#"
           >
             <div

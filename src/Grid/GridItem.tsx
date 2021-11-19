@@ -16,7 +16,7 @@ export const GridItem: FC<GridItemProps> = ({
 }) => {
   const classes = classname('it-grid-item-wrapper', className);
   return (
-    <Tag {...attributes} className={classes} >
+    <Tag {...attributes} className={classes}>
       {children}
     </Tag>
   );

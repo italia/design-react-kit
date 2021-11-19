@@ -92,11 +92,7 @@ export { CardSignature } from './Card/CardSignature';
 export { CardFooterCTA } from './Card/CardFooterCTA';
 export { CardReadMore } from './Card/CardReadMore';
 export { Collapse } from './Collapse/Collapse';
-export {
-  GridItem,
-  GridItemText,
-  GridItemTextWrapper
-} from './Grid/index';
+export { GridItem, GridItemText, GridItemTextWrapper } from './Grid/index';
 export { Header } from './Header/Header';
 export { Headers } from './Header/Headers';
 export { HeaderBrand } from './Header/HeaderBrand';
