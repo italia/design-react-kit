@@ -8582,7 +8582,7 @@ exports[`Storyshots Componenti/ImageList Masonry 1`] = `
   }
 >
   <div
-    className="it-grid-list-wrapper it-image-label-grid it-masonry"
+    className="it-grid-item-wrapper it-image-label-grid it-masonry"
   >
     <div
       className="card-columns"
@@ -16058,10 +16058,10 @@ exports[`Storyshots Componenti/Tables Table Breakpoint 1`] = `
   }
 >
   <div
-    className="table-responsive-sm"
+    className="table-responsive"
   >
     <table
-      className="table"
+      className="table table-sm"
     >
       <thead>
         <tr>
@@ -16168,10 +16168,10 @@ exports[`Storyshots Componenti/Tables Table Breakpoint 1`] = `
     </table>
   </div>
   <div
-    className="table-responsive-md"
+    className="table-responsive"
   >
     <table
-      className="table"
+      className="table table-md"
     >
       <thead>
         <tr>
@@ -16278,10 +16278,10 @@ exports[`Storyshots Componenti/Tables Table Breakpoint 1`] = `
     </table>
   </div>
   <div
-    className="table-responsive-lg"
+    className="table-responsive"
   >
     <table
-      className="table"
+      className="table table-lg"
     >
       <thead>
         <tr>
@@ -16388,10 +16388,10 @@ exports[`Storyshots Componenti/Tables Table Breakpoint 1`] = `
     </table>
   </div>
   <div
-    className="table-responsive-xl"
+    className="table-responsive"
   >
     <table
-      className="table"
+      className="table table-xl"
     >
       <thead>
         <tr>

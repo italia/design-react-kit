@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from '../../src'
+import { Table } from '../../src';
 
 export const TableBase = () => (
   <Table>
