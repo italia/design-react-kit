@@ -8,13 +8,13 @@ export interface ToolbarProps extends HTMLAttributes<HTMLElement> {
 
 export const Toolbar: FC<ToolbarProps> = ({
   tag = 'nav',
-  size = 'large',
+  size,
   children,
   ...attributes
 }) => {
   const Tag = tag;
   const classes = classnames('toolbar', {
-    [`toolbar-${size}`]: size
+    [`toolbar-${size}`]: size === 'medium' || size === 'small'
   });
   return (
     <Tag className={classes} {...attributes}>

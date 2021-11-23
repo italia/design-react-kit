@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Toolbar, ToolbarItem } from '../../src';
+import { Toolbar, ToolbarItem, ToolbarDividerItem } from '../../src';
 
 export const Esempio = () => (
   <Toolbar>
@@ -23,6 +23,16 @@ export const EsempioSmall = () => (
     <ToolbarItem srText='messaggi' iconName='it-comment' />
     <ToolbarItem srText='immagini' iconName='it-camera' />
     <ToolbarItem srText='documenti' iconName='it-file' />
+  </Toolbar>
+);
+
+export const EsempioWithDivider = () => (
+  <Toolbar>
+    <ToolbarItem label='messaggi' iconName='it-comment' />
+    <ToolbarDividerItem />
+    <ToolbarItem label='immagini' iconName='it-camera' />
+    <ToolbarDividerItem />
+    <ToolbarItem label='documenti' iconName='it-file' />
   </Toolbar>
 );
 

@@ -162,6 +162,7 @@ export {
 } from './Notification';
 export { Toolbar } from './Toolbar/Toolbar';
 export { ToolbarItem } from './Toolbar/ToolbarItem';
+export { ToolbarDividerItem } from './Toolbar/ToolbarDividerItem';
 
 // Types
 export type { AlertProps } from './Alert/Alert';
