@@ -4,7 +4,6 @@ import { Icon } from '../Icon/Icon';
 
 export interface ToolbarItemProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
-  classname?: string;
   active?: boolean;
   disabled?: boolean;
   url?: string;
@@ -23,14 +22,12 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
   url,
   srText,
   iconName,
-  isIconSmall,
   label,
   tag = 'a',
   ...attributes
 }) => {
   const Tag = tag;
   const activeClass = classNames({ active });
-  const iconSize = isIconSmall ? 'sm' : '';
   const badgeWrapper = Boolean(badge) && (
     <div className='badge-wrapper'>
       <span className='toolbar-badge'>{badge}</span>
@@ -53,7 +50,7 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
         {...ariaAttributes}
       >
         {badgeWrapper}
-        <Icon icon={iconName} size={iconSize} />
+        <Icon icon={iconName} />
         {label ? (
           <span className='toolbar-label'>
             {label}
