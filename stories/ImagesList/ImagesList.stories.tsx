@@ -299,7 +299,7 @@ export const Proporzionale = () => (
 );
 
 export const Masonry = () => (
-  <GridItem className='it-image-label-grid it-masonry'>
+  <GridList className='it-image-label-grid it-masonry'>
     <div className='card-columns'>
       <Col xs={12}>
         <GridItem>
