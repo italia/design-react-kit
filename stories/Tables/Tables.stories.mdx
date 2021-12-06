@@ -11,13 +11,13 @@ Documentazione ed esempi per lo stile delle tabelle.
 
 A causa dell’uso diffuso di tabelle su widget di terze parti come calendari e campi di selezione data, Bootstrap ha progettato le tabelle senza forzarne lo stile. È sufficiente aggiungere la classe `.table` a qualsiasi `<table>`, quindi estendere con stili personalizzati o con le nostre varie classi incluse di modificatori.
 
-Usando il markup di base della tabella, ecco come appaiono le tabelle che utilizzano la classe `.table` in Bootstrap. **Tutti gli stili di tabella sono ereditari**, il che significa che tutte le tabelle nidificate saranno stilizzate nello stesso modo del genitore.
+Usando il markup di base della tabella, ecco come appaiono le tabelle che utilizzano il componente `Table`. **Tutti gli stili di tabella sono ereditari**, il che significa che tutte le tabelle nidificate saranno stilizzate nello stesso modo del genitore.
 
 <Canvas>
   <Story id='componenti-tables--table-base' />
 </Canvas>
 
-Puoi anche invertire i colori, con testo chiaro su sfondi scuri con `.table-dark`.
+Puoi anche invertire i colori, con testo chiaro su sfondi scuri con l'attributo `dark`.
 
 <Canvas>
   <Story id='componenti-tables--table-dark' />
@@ -25,7 +25,7 @@ Puoi anche invertire i colori, con testo chiaro su sfondi scuri con `.table-dark
 
 ## Opzioni delle intestazioni di tabella
 
-Simile alle tabelle e alle tabelle scure, utilizzare le classi di modifica `.thead-light` o `.thead-dark` per far apparire `<thead>` chiaro o grigio scuro.
+Utilizzare le classi di modifica `.thead-light` o `.thead-dark` per far apparire `<thead>` chiaro o grigio scuro.
 
 <Canvas>
   <Story id='componenti-tables--table-thead' />
@@ -33,7 +33,7 @@ Simile alle tabelle e alle tabelle scure, utilizzare le classi di modifica `.the
 
 ## Righe striate
 
-Usa `.table-striped` per aggiungere delle striature zebrate ad ogni riga della tabella contenute in `<tbody>`.
+Usa l'attributo `striped` per aggiungere delle striature zebrate ad ogni riga della tabella contenute in `<tbody>`.
 
 <Canvas>
   <Story id='componenti-tables--table-striped' />
@@ -41,7 +41,7 @@ Usa `.table-striped` per aggiungere delle striature zebrate ad ogni riga della t
 
 ## Tabella con bordi
 
-Aggiungi `.table-bordered` per avere i bordi a tutti i lati della tabella e su tutte le celle.
+Usa l'attributo `bordered` per avere i bordi a tutti i lati della tabella e su tutte le celle.
 
 <Canvas>
   <Story id='componenti-tables--table-bordered' />
@@ -49,7 +49,7 @@ Aggiungi `.table-bordered` per avere i bordi a tutti i lati della tabella e su t
 
 ## Tabella senza bordi
 
-Aggiungi la classe `.table-borderless` per una tabella senza bordi.
+Usa l'attributo `borderless` per una tabella senza bordi.
 
 <Canvas>
   <Story id='componenti-tables--table-borderless' />
@@ -57,7 +57,7 @@ Aggiungi la classe `.table-borderless` per una tabella senza bordi.
 
 ## Righe ed hover
 
-Aggiungi `.table-hover` per abilitare lo stato hover sulle righe della tabella contenute in `<tbody>`.
+Usa l'attributo `hover` per abilitare lo stato hover sulle righe della tabella contenute in `<tbody>`.
 
 <Canvas>
   <Story id='componenti-tables--table-hover' />
@@ -65,7 +65,7 @@ Aggiungi `.table-hover` per abilitare lo stato hover sulle righe della tabella c
 
 ## Tabella compatta
 
-Aggiungi `.table-sm` per rendere le tabelle più compatte dimezzando il cell padding.
+Aggiungi l'attributo `size="sm"` per rendere le tabelle più compatte dimezzando il cell padding.
 
 <Canvas>
   <Story id='componenti-tables--table-compact' />
@@ -119,7 +119,7 @@ Un `<caption>` funziona come un’intestazione per una tabella. Aiuta gli utenti
 
 # Tabelle responsive
 
-Le tabelle responsive consentono di scorrere le tabelle orizzontalmente con facilità. Rendi ogni tabella responsive su tutti i viewports racchiudendo un `.table` con `.table-responsive`. Oppure, scegli un breakpoint massimo con il quale ottenere una tabella responsive usando `.table-responsive{-sm|-md|-lg|-xl}`.
+Le tabelle responsive consentono di scorrere le tabelle orizzontalmente con facilità. Rendi ogni tabella responsive su tutti i viewports aggiungendo al componente `Table` l'attributo `responsive`. Oppure, scegli un breakpoint massimo con il quale ottenere una tabella responsive combinando gli attributi `responsive` e `size`.
 
 <div className='docs'>
   <Callout color='primary'>
@@ -135,7 +135,7 @@ Le tabelle responsive consentono di scorrere le tabelle orizzontalmente con faci
 
 ## Sempre responsive
 
-Attraverso ogni breakpoint, usa `.table-responsive` per tabelle con scorrimento verticale.
+Attraverso ogni breakpoint, usa l'attributo `responsive` per tabelle con scorrimento verticale.
 
 <Canvas>
   <Story id='componenti-tables--table-responsive' />
@@ -143,7 +143,7 @@ Attraverso ogni breakpoint, usa `.table-responsive` per tabelle con scorrimento 
 
 ## Breakpoint specifici
 
-Usa `.table-responsive{-sm|-md|-lg|-xl}` come necessario per creare tabelle responsive fino a un punto di interruzione particolare. Da quel punto di interruzione in su, la tabella si comporterà normalmente e non scorrerà orizzontalmente.
+Combina gli attributi `responsive` e `size` come necessario per creare tabelle responsive fino a un punto di interruzione particolare. Da quel punto di interruzione in su, la tabella si comporterà normalmente e non scorrerà orizzontalmente.
 
 <Canvas>
   <Story id='componenti-tables--table-breakpoint' />

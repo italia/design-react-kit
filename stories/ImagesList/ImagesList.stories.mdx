@@ -14,7 +14,7 @@ Di seguito gli esempi di elemento singolo della grid list:
 - Immagine con didascalia in basso
 - Immagine con didascalia sovrapposta
 
-Per utilizzare la didascalia sovrapposta è sufficiente aggiungere la classe `.it-grid-system-overlay` al div `it-grid-item-wrapper`
+Per utilizzare la didascalia sovrapposta è sufficiente aggiungere la classe `.it-grid-system-overlay` al componente `GridList`.
 
 <Canvas>
   <Story id='componenti-imagelist--elemento-singolo' />
@@ -25,8 +25,8 @@ Per utilizzare la didascalia sovrapposta è sufficiente aggiungere la classe `.i
 ### Standard
 
 La griglia utilizzata è una variante delle classi di Bootstrap, dove cambiano sostanzialmente i margini.
-Il div contenitore della griglia è `.it-grid-list-wrapper`.
-Al posto della classe `.row` di bootstrap viene utilizzata la custom class `.grid-row`
+Il contenitore della griglia è il componente `GridList`.
+Al posto del componente `Row` viene utilizzata il componente `GridRow`.
 
 Di seguito l’esempio
 
@@ -36,7 +36,7 @@ Di seguito l’esempio
 
 ### Standard con didascalie
 
-Per la corretta formattazione degli spazi di questo tipo di griglia, occorre aggiungere la classe `.it-image-label-grid` al div `.it-grid-list-wrapper` se gli elementi al suo interno contengono una didascalia.
+Per la corretta formattazione degli spazi di questo tipo di griglia, occorre aggiungere la classe `.it-image-label-grid` al componente `GridList` se gli elementi al suo interno contengono una didascalia.
 
 Di seguito l’esempio
 
@@ -47,14 +47,14 @@ Di seguito l’esempio
 ### Proporzionale
 
 La griglia “proporzionale” contiene elementi griglia con immagine e testo in overlay.
-Per la corretta formattazione degli spazi di questo tipo di griglia, occorre aggiungere la classe `.it-quilted-grid` al div `.it-grid-list-wrapper`. La griglia utilizza le stesse classi di bootstrap (`.col` ).
+Per la corretta formattazione degli spazi di questo tipo di griglia, occorre aggiungere la classe `.it-quilted-grid` al componente `GridList`. La griglia utilizza componenti `Col` classici.
 
 I tipi di immagini utilizzabili sono sostanzialmente 2:
 
 - standard
 - orizzontale (come proporzione sono il doppio della larghezza rispetto all’immagine standard e di altezza uguale)
 
-Per utilizzare l’immagine orizzontale, occorre aggiungere la classe `.it-grid-item-double-w` al div `.it-grid-item-wrapper` che contiene l’immagine.
+Per utilizzare l’immagine orizzontale, occorre aggiungere la classe `.it-grid-item-double-w` al componente `GridItem` che contiene l’immagine.
 
 Di seguito l’esempio
 
@@ -64,7 +64,7 @@ Di seguito l’esempio
 
 ### Masonry
 
-Per realizzare l’elemento Masonry è stata usata la classe di bootstrap `.card-columns` che contiene al suo interno gli elementi distribuendoli su più colonne. Per la corretta formattazione degli spazi di questo tipo di griglia, occorre aggiungere la classe `.it-masonry` al div `.it-grid-list-wrapper`.
+Per realizzare l’elemento Masonry è stata usata la classe `.card-columns` che contiene al suo interno gli elementi distribuendoli su più colonne. Per la corretta formattazione degli spazi di questo tipo di griglia, occorre aggiungere la classe `.it-masonry` al componente `GridList`.
 
 Di seguito l’esempio
 
