@@ -482,7 +482,7 @@ export const Masonry = () => (
         </GridItem>
       </Col>
     </div>
-  </GridItem>
+  </GridList>
 );
 
 export default {
