@@ -7,7 +7,6 @@ export {
   NavbarToggler,
   NavItem,
   NavLink,
-  Breadcrumb,
   BreadcrumbItem,
   ButtonDropdown,
   ButtonGroup,
@@ -76,6 +75,7 @@ export { AvatarPresence } from './Avatar/AvatarPresence';
 export { AvatarStatus } from './Avatar/AvatarStatus';
 export { AvatarWrapper } from './Avatar/AvatarWrapper';
 export { Badge } from './Badge/Badge';
+export { Breadcrumb } from './Breadcrumb/Breadcrumb';
 export { Button } from './Button/Button';
 export { Forward } from './Forward/Forward';
 export { Callout } from './Callout/Callout';
@@ -153,6 +153,7 @@ export { ChipLabel } from './Chips/ChipLabel';
 export { FontLoader } from './FontLoader/FontLoader';
 export { Dimmer } from './Dimmer/Dimmer';
 export { DimmerButtons } from './Dimmer/DimmerButtons';
+export { TimeInput } from './Input/TimeInput';
 export { Timeline } from './Timeline/TimelineWrapper';
 export { TimelinePin } from './Timeline/TimelinePin';
 export { Select } from './Select/Select';
@@ -168,6 +169,9 @@ export {
   notify,
   createNotification
 } from './Notification';
+export { Toolbar } from './Toolbar/Toolbar';
+export { ToolbarItem } from './Toolbar/ToolbarItem';
+export { ToolbarDividerItem } from './Toolbar/ToolbarDividerItem';
 
 // Types
 export type { AlertProps } from './Alert/Alert';
@@ -182,6 +186,7 @@ export type { AvatarPresenceProps } from './Avatar/AvatarPresence';
 export type { AvatarStatusProps } from './Avatar/AvatarStatus';
 export type { AvatarWrapperProps } from './Avatar/AvatarWrapper';
 export type { BadgeProps } from './Badge/Badge';
+export type { BreadcrumbProps } from './Breadcrumb/Breadcrumb';
 export type { ButtonProps } from './Button/Button';
 export type { ForwardProps } from './Forward/Forward';
 export type { CalloutProps } from './Callout/Callout';
@@ -275,6 +280,8 @@ export type {
   NotificationManagerProps,
   NotificationOptions
 } from './Notification';
+export type { ToolbarProps } from './Toolbar/Toolbar';
+export type { ToolbarItemProps } from './Toolbar/ToolbarItem';
 
 export type {
   ContainerProps,
@@ -285,7 +292,6 @@ export type {
   NavbarTogglerProps,
   NavItemProps,
   NavLinkProps,
-  BreadcrumbProps,
   BreadcrumbItemProps,
   ButtonDropdownProps,
   ButtonGroupProps,
