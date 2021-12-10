@@ -54,12 +54,16 @@ export const Collapse: FC<CollapseProps> = ({
     const classes = classNames(className, 'navbar-collapse', {
       expanded: isOpen
     });
+    const style = {
+      display: 'block',
+      transform: isOpen ? 'translateX(0)' : 'translateX(-100%)'
+    };
     return (
       <CollapseBase
         className={classes}
         cssModule={{ 'navbar-collapse': 'navbar-collapsable' }}
         navbar={navbar}
-        style={{ display: isOpen ? 'block' : 'none' }}
+        style={style}
         {...attributes}
       >
         <div

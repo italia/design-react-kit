@@ -146,7 +146,7 @@ Some basic rules for structuring the components:
 
 * TSX file component files use JSX syntax.
 * The `.stories.tsx` files only contains examples relative to component.
-* The `.stories.tsx` files only contains documentation relative to component.
+* The `.stories.mdx` files only contains documentation relative to component.
 
 Once you have created a new component, with its history, starting *Storybook* will be able to check that everything works as it should.
 
