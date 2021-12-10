@@ -7,31 +7,67 @@ import AsyncSelect from 'react-select/async';
 
 import { multiOptions } from './Autocomplete/AutocompleteExample';
 
-import { Input, Icon, TextArea, FormGroup } from '../../src';
+import { Input, TimeInput, Icon, TextArea, FormGroup } from '../../src';
 
 export default {
   title: 'Componenti/Form/Input'
 };
 
-export const EsempiDiCampiDiInput = () => (
-  <div>
-    <Input type='text' label='Campo di tipo testuale' id='exampleInputText' />
-    <Input type='email' label='Campo di tipo email' id='exampleInputEmail' />
-    <Input
-      type='number'
-      label='Campo di tipo numerico'
-      id='exampleInputNumber'
-    />
-    <Input type='tel' label='Campo di tipo telefono' id='exampleInputTel' />
-    <Input
-      type='time'
-      label='Campo di tipo ora'
-      id='exampleInputTime'
-      min='9:00'
-      max='18:00'
-    />
-  </div>
-);
+export const EsempiDiCampiDiInput = () => {
+  const [timeInputLabel1, setTimeInputLabel1] = useState('Campo di tipo ora');
+  const [timeInputLabel2, setTimeInputLabel2] = useState(
+    'Campo di tipo ora - dark'
+  );
+  const [isValidTime1, setIsValidTime1] = useState(true);
+  const [isValidTime2, setIsValidTime2] = useState(true);
+
+  const hhmmRegExp = /^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/;
+  const onBlurTimeInput1 = (value: string) => {
+    const isValid = hhmmRegExp.test(value);
+    setIsValidTime1(isValid);
+    setTimeInputLabel1(
+      isValid ? 'Campo di tipo ora' : 'Formato ora non valido (hh:mm)'
+    );
+  };
+  const onBlurTimeInput2 = (value: string) => {
+    const isValid = hhmmRegExp.test(value);
+    setIsValidTime2(isValid);
+    setTimeInputLabel2(
+      isValid ? 'Campo di tipo ora - dark' : 'Formato ora non valido (hh:mm)'
+    );
+  };
+  return (
+    <div>
+      <Input type='text' label='Campo di tipo testuale' id='exampleInputText' />
+      <Input type='email' label='Campo di tipo email' id='exampleInputEmail' />
+      <Input
+        type='number'
+        label='Campo di tipo numerico'
+        id='exampleInputNumber'
+      />
+      <Input type='tel' label='Campo di tipo telefono' id='exampleInputTel' />
+      <div style={{ paddingBottom: '6rem' }}>
+        <TimeInput
+          id='exampleInputTime'
+          placeholder='hh:mm'
+          label={timeInputLabel1}
+          invalid={!isValidTime1}
+          onBlur={onBlurTimeInput1}
+        />
+      </div>
+      <div style={{ paddingBottom: '3rem' }}>
+        <TimeInput
+          id='exampleInputTimeDark'
+          placeholder='hh:mm'
+          label={timeInputLabel2}
+          invalid={!isValidTime2}
+          onBlur={onBlurTimeInput2}
+          dark
+        />
+      </div>
+    </div>
+  );
+};
 
 EsempiDiCampiDiInput.storyName = 'Esempi di campi di input';
 

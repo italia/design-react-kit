@@ -147,6 +147,7 @@ export { ChipLabel } from './Chips/ChipLabel';
 export { FontLoader } from './FontLoader/FontLoader';
 export { Dimmer } from './Dimmer/Dimmer';
 export { DimmerButtons } from './Dimmer/DimmerButtons';
+export { TimeInput } from './Input/TimeInput';
 export { Timeline } from './Timeline/TimelineWrapper';
 export { TimelinePin } from './Timeline/TimelinePin';
 export { Select } from './Select/Select';
@@ -162,6 +163,9 @@ export {
   notify,
   createNotification
 } from './Notification';
+export { Toolbar } from './Toolbar/Toolbar';
+export { ToolbarItem } from './Toolbar/ToolbarItem';
+export { ToolbarDividerItem } from './Toolbar/ToolbarDividerItem';
 
 // Types
 export type { AlertProps } from './Alert/Alert';
@@ -262,6 +266,8 @@ export type {
   NotificationManagerProps,
   NotificationOptions
 } from './Notification';
+export type { ToolbarProps } from './Toolbar/Toolbar';
+export type { ToolbarItemProps } from './Toolbar/ToolbarItem';
 
 export type {
   ContainerProps,
