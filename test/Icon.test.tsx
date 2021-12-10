@@ -1,0 +1,49 @@
+import React from 'react';
+import { render, waitFor } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
+
+import { clearIconCache, Icon, preloadIcons } from '../src';
+
+function getIcon(container: Element) {
+  return container.firstChild;
+}
+function isEmptyIcon(container: Element) {
+  return container.querySelector('svg > path:first-child[fill="none"]') != null;
+}
+
+beforeEach(() => clearIconCache());
+
+test('Should have a lazy loading behaviour', async () => {
+  const { container } = render(<Icon icon='it-search' />);
+  expect(isEmptyIcon(container)).toBeTruthy();
+  await waitFor(() => !isEmptyIcon(container));
+});
+
+test('Should pass all the given props to the icon', async () => {
+  const { container } = render(<Icon icon='it-search' aria-label='Search' />);
+  expect(getIcon(container)).toHaveAttribute('aria-label', 'Search');
+  await waitFor(() => !isEmptyIcon(container));
+});
+
+test('should call the onIconLoad callback when ready', async () => {
+  const callback = jest.fn();
+  const { container } = render(<Icon icon='it-search' onIconLoad={callback} />);
+  await waitFor(() => !isEmptyIcon(container));
+  expect(callback).toHaveBeenCalled();
+});
+
+test('should render immediately the icon when preloaded', async () => {
+  const callback = jest.fn();
+  expect(await preloadIcons(['it-tool'])).toBeTruthy();
+  const { container } = render(<Icon icon='it-tool' onIconLoad={callback} />);
+  expect(isEmptyIcon(container)).toBeFalsy();
+  expect(callback).toHaveBeenCalled();
+});
+
+test('should throw when invalid icon/URL is passed to preload', async () => {
+  try {
+    await preloadIcons(['not-valid-icon']);
+  } catch (e) {
+    expect(e).toBeTruthy();
+  }
+});

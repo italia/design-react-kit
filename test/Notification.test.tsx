@@ -10,7 +10,12 @@ import {
 } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
-import { NotificationId, NotificationManager, notify } from '../src';
+import {
+  NotificationId,
+  NotificationManager,
+  notify,
+  preloadIcons
+} from '../src';
 
 type MatcherType = 'title' | 'message' | 'closeButton';
 
@@ -25,6 +30,17 @@ function waitForNotificationToDisappear(
 }
 
 describe('Notifications', () => {
+  // Icons are now async, so preload them to make it behave in an sync way
+  beforeAll(() =>
+    preloadIcons([
+      'it-tool',
+      'it-close-circle',
+      'it-info-circle',
+      'it-error',
+      'it-check-circle'
+    ])
+  );
+
   describe('NotificationManager', () => {
     it('should use the containerId as node id', () => {
       render(<NotificationManager containerId='foo' />);

@@ -1,5 +1,5 @@
 import * as React from 'react';
-export const SvgItChartLine = (props: React.SVGProps<SVGSVGElement>) => {
+export const component = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' {...props}>
       <path d='M21 20v1H3V3h1v17z' />

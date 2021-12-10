@@ -153,3 +153,19 @@ export const ListaIcone = () => {
 };
 
 ListaIcone.storyName = 'Lista icone';
+
+export const EsempioLoghiEsterni = () => {
+  return (
+    <div style={{ lineHeight: '4em' }}>
+      <Icon icon='https://upload.wikimedia.org/wikipedia/it/f/f5/Palermo-Stemma_uff.png' />
+      <Icon
+        icon='https://dati.comune.roma.it/catalog/img/Roma-Stemma.png'
+        size='lg'
+      />
+      <Icon
+        icon='https://upload.wikimedia.org/wikipedia/it/1/13/Milano-Stemma.png'
+        size='xl'
+      />
+    </div>
+  );
+};

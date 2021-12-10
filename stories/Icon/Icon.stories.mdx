@@ -1,4 +1,4 @@
-import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
 import { Icon } from '../../src';
 
 <Meta title='Documentazione/Utilities/Icone' of={Icon} />
@@ -7,8 +7,7 @@ import { Icon } from '../../src';
 
 ### Informazioni e suggerimenti per l’utilizzo di icone con Bootstrap Italia.
 
-Le icone di Bootstrap Italia utilizzano sono state incapsulate in un componente `Icon`..
-Per l’utilizzo delle icone è necessario che la sprite nella cartella `dist/svg` sia raggiungibile (spesso non è necessario fare nulla, a meno di configurazioni personalizzate).
+Le icone di Bootstrap Italia utilizzano sono state incapsulate in un componente `Icon`, e vengono caricate unicamente (in modalià asincrona) su richiesta quando si utilizza la nuova versione ESM.
 
 ## Esempi
 
@@ -46,8 +45,22 @@ Ogni icona può essere inclusa con il componente `Icon` con il riferimento desid
   <Story id='componenti-icon--esempio-allineamento' />
 </Canvas>
 
+## Immagini esterne
+
+È possibile utilizzare un'immagine esterna come icona, utilizzando l'URL dell'immagine nell'attributo `icon` del componente.
+
+<Canvas>
+  <Story id='componenti-icon--esempio-loghi-esterni' />
+</Canvas>
+
 ## Lista delle icone disponibili
 
 <Canvas withSource='none'>
   <Story id='componenti-icon--lista-icone' />
 </Canvas>
+
+## Argomenti componente
+
+### Icon
+
+<ArgsTable of={Icon} />

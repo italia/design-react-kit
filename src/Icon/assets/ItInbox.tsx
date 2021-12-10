@@ -1,5 +1,5 @@
 import * as React from 'react';
-export const SvgItInbox = (props: React.SVGProps<SVGSVGElement>) => {
+export const component = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' {...props}>
       <path d='M4 2v14h3.7l1 2h6.6l1-2H20V2H4zm15 13h-3.3l-1 2H9.3l-1-2H5V3h14v12z' />

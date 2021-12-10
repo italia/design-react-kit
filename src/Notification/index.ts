@@ -1,3 +1,4 @@
+/* @internal */
 export { createNotification } from './NotificationContent';
 export { NotificationManager } from './NotificationManager';
 export { notify } from './core';

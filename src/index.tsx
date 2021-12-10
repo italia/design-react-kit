@@ -24,12 +24,6 @@ export {
   CardHeader,
   CardImg,
   CardImgOverlay,
-  Carousel,
-  UncontrolledCarousel,
-  CarouselControl,
-  CarouselItem,
-  CarouselIndicators,
-  CarouselCaption,
   CardSubtitle,
   Popover,
   PopoverBody,
@@ -116,7 +110,12 @@ export {
   HeroCategory,
   HeroTitle
 } from './Hero/index';
-export { Icon, iconsList as icons } from './Icon/Icon';
+export {
+  Icon,
+  iconsList as icons,
+  preloadIcons,
+  clearIconCache
+} from './Icon/Icon';
 export { Input } from './Input/Input';
 export { InputContainer } from './Input/InputContainer';
 export { TextArea } from './Input/TextArea';
@@ -227,7 +226,7 @@ export type {
   HeroCategoryProps,
   HeroTitleProps
 } from './Hero/index';
-export type { IconProps } from './Icon/Icon';
+export type { IconProps, IconName } from './Icon/Icon';
 export type { InputProps } from './Input/Input';
 export type { InputContainerProps } from './Input/InputContainer';
 export type { TextAreaProps } from './Input/TextArea';
@@ -309,12 +308,6 @@ export type {
   CardHeaderProps,
   CardImgProps,
   CardImgOverlayProps,
-  CarouselProps,
-  UncontrolledCarouselProps,
-  CarouselControlProps,
-  CarouselItemProps,
-  CarouselIndicatorsProps,
-  CarouselCaptionProps,
   CardSubtitleProps,
   PopoverProps,
   PopoverBodyProps,

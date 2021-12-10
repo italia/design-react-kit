@@ -53,6 +53,8 @@ Legenda:
 - `SkipLinkItem`: nuovo attributo `focusable` per disabilitare il rendering on focus in casi specifici
 - `Modal`: nuovi attributi `withIcon`, `withLinkList` e `popConfirm` da utilizzato per diversi formati di modale.
   - `ModalHeader`: nuovo attributo `icon` da utilizzare per mostrare una icona nel titolo del modale.
+- Il componente `Icon` supporta ora anche URL di immagini
+  - Le icone predefinite nel kit vengono ora caricate in modalità _lazy_. 💥
 
 ### Bug fixes
 
@@ -68,6 +70,7 @@ Riscritta interamente la documentazione del kit per essere più completa e per o
   - Verificare che la versione utilizzata nel progetto sia compatibile con la versione richiesta dal toolkit.
 - `Pager`: l'attributo `size` è stato rimosso poichè non utilizzato nel kit Bootstrap Italia. 💥
   - Azioni richieste per vecchio comportamento: utilizzare l'attributo `className` del componente `Pager`.
+- Rimosso il componente `Carousel` e relativi sotto componenti 💥
 - `Hero`: nuovo componente più fedele al design del kit Bootstrap Italia. 💥
   - È necessario sostituire il vecchio componente `Hero` con il nuovo componente. 💥
   - Nuovi componenti `HeroBackground`, `HeroBody`, `HeroButton`, `HeroCategory`, `HeroTitle`.

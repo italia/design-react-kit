@@ -1,5 +1,5 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
-import React from 'react';
+import * as React from 'react';
 
 import {
   Button,
@@ -16,12 +16,12 @@ import {
   Col,
   LinkListItem,
   LinkList
-} from '../../../src';
+} from '../src';
 
-import CompleteHeader from '../shared/Header';
-import Footer from '../shared/Footer';
+import CompleteHeader from './Header';
+import Footer from './Footer';
 
-const Homepage = ({ theme, townName, townTagLine }) => {
+export default ({ theme, townName, townTagLine, logo }) => {
   return (
     <>
       <CompleteHeader
@@ -30,6 +30,7 @@ const Homepage = ({ theme, townName, townTagLine }) => {
         townName={townName}
         townTagLine={townTagLine}
         page='homepage'
+        logo={logo}
       />
       <section id='head-section'>
         <Container>
@@ -787,30 +788,3 @@ const Homepage = ({ theme, townName, townTagLine }) => {
     </>
   );
 };
-
-Homepage.args = {
-  theme: '',
-  townName: 'Nome del Comune',
-  townTagLine: 'Uno dei tanti Comuni d Italia'
-};
-Homepage.argTypes = {
-  townName: {
-    control: {
-      name: 'Comune'
-    }
-  },
-  townTagLine: {
-    control: {
-      name: 'Motto Comune'
-    }
-  },
-  theme: {
-    control: {
-      name: 'Tema',
-      type: 'select',
-      options: ['', 'light', 'dark']
-    }
-  }
-};
-
-export default Homepage;
