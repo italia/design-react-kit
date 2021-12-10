@@ -10,6 +10,25 @@ import { Callout, CalloutText } from '../../src';
 La composizione delle componenti `Navbar` e `LinkList`, oltre all'utilizzo dell'hook React `useNavScroll`, rendono possibile la creazione di un componente `Navscroll`.
 Nella sua versione mobile, la navigazione viene collassata all'interno di un menù, posizionabile a inizio o fine pagina.
 
+<div className='docs'>
+  <Callout color='info'>
+    <CalloutText>
+      L'hook <code>useNavScroll</code> utilizza l'API native{' '}
+      <code>IntersectionObserver</code> supportata da browser moderni. Qualora
+      il browser richiesto non lo supportasse (ad esempio Internet Explorer 11)
+      è possibile utilizzare{' '}
+      <a
+        href='https://github.com/w3c/IntersectionObserver/tree/main/polyfill'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        una libreria polyfill
+      </a>
+      .
+    </CalloutText>
+  </Callout>
+</div>
+
 Per posizionare tale menù in alto, è sufficiente aggiungere al componente `Navbar` la classe `.it-top-navscroll`. Al contrario, per posizionare il menù in basso, è sufficiente aggiungere la classe `.it-bottom-navscroll`.
 
 La Navscroll può avere una linea-separatore a destra o a sinistra dell’elemento, semplicemente aggiungendo al componente `Navbar` la classe `.it-left-side` per aggiungere una linea a sinistra, e `.it-right-side` per aggiungerla a destra.
