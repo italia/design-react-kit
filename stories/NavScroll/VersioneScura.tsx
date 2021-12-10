@@ -15,7 +15,7 @@ import {
 } from '../../src';
 import { getStorybookExtraStyles } from './utils';
 
-const PosizionamentoFondoPagina = () => {
+const PosizionamentoTestaAlta = () => {
   const [isOpen, toggleNavScroll] = useState(false);
   const containerRef = useRef(null);
   const { register, isActive, getActiveRef } = useNavScroll({
@@ -29,7 +29,7 @@ const PosizionamentoFondoPagina = () => {
         <Col md={12} lg={4}>
           <Navbar
             expand='lg'
-            className='it-navscroll-wrapper it-bottom-navscroll it-left-side affix-top'
+            className='it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top theme-dark-desk theme-dark-mobile'
           >
             <NavbarToggler
               className={
@@ -37,13 +37,13 @@ const PosizionamentoFondoPagina = () => {
                   ? 'custom-navbar-toggler focus--mouse'
                   : 'custom-navbar-toggler'
               }
-              data-target='#navbarNavA'
+              data-target='#navbarNavB'
               onClick={() => toggleNavScroll(!isOpen)}
             >
               <span className='it-list'></span>
               {getActiveRef()?.current?.textContent}
             </NavbarToggler>
-            <Collapse isOpen={isOpen} navbar id='navbarNavA'>
+            <Collapse isOpen={isOpen} navbar id='navbarNavB'>
               <a
                 className='it-back-button'
                 href='#'
@@ -485,4 +485,4 @@ const PosizionamentoFondoPagina = () => {
   );
 };
 
-export default PosizionamentoFondoPagina;
+export default PosizionamentoTestaAlta;

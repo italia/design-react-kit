@@ -1,9 +1,10 @@
 import ComponenteMenuInline from './ComponenteMenuInline';
 import PosizionamentoFondoPagina from './PosizionamentoFondoPagina';
 import PosizionamentoTestaAlla from './PosizionamentoTestaAlla';
+import ComponenteVersioneScura from './VersioneScura';
 
 export default {
-  title: 'Componenti/NavScroll'
+  title: 'Componenti/Navscroll'
 };
 
 export const PosizionamentoAFondoPaginaConLineaASinistra = PosizionamentoFondoPagina.bind(
@@ -20,4 +21,8 @@ export const PosizionamentoInTestaAllaPaginaConLineaADestra = PosizionamentoTest
 PosizionamentoInTestaAllaPaginaConLineaADestra.storyName =
   'Posizionamento in testa alla pagina con linea a destra';
 
-export const _MenuInline = ComponenteMenuInline;
+export const MenuInline = ComponenteMenuInline.bind({});
+MenuInline.storyName = 'Menu inline';
+
+export const VersioneScura = ComponenteVersioneScura.bind({});
+VersioneScura.storyName = 'Variante scura';
