@@ -4829,7 +4829,6 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menu con voci large 1`] = 
     <div
       aria-hidden={true}
       className="dropdown-menu"
-      isOpen={true}
       role="menu"
       tabIndex="-1"
     >
@@ -4891,7 +4890,6 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù dark 1`] = `
     <div
       aria-hidden={true}
       className="dark dropdown-menu"
-      isOpen={true}
       role="menu"
       tabIndex="-1"
     >
@@ -5059,7 +5057,6 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù full width 1`] = `
     <div
       aria-hidden={true}
       className="full-width dropdown-menu"
-      isOpen={true}
       role="menu"
       tabIndex="-1"
     >
@@ -5139,7 +5136,6 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù headers e separatori
     <div
       aria-hidden={true}
       className="dropdown-menu"
-      isOpen={true}
       role="menu"
       tabIndex="-1"
     >
@@ -5222,7 +5218,6 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù icona a destra 1`] =
     <div
       aria-hidden={true}
       className="dropdown-menu"
-      isOpen={true}
       role="menu"
       tabIndex="-1"
     >
@@ -5329,7 +5324,6 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù icona a sinistra 1`]
     <div
       aria-hidden={true}
       className="dropdown-menu"
-      isOpen={true}
       role="menu"
       tabIndex="-1"
     >
@@ -5436,7 +5430,6 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù voci attive 1`] = `
     <div
       aria-hidden={true}
       className="dropdown-menu"
-      isOpen={true}
       role="menu"
       tabIndex="-1"
     >
@@ -5503,7 +5496,6 @@ exports[`Storyshots Componenti/Dropdown/Dropdown menu Menù voci disabilitate 1`
     <div
       aria-hidden={true}
       className="dropdown-menu"
-      isOpen={true}
       role="menu"
       tabIndex="-1"
     >
