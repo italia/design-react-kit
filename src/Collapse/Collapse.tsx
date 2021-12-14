@@ -48,20 +48,26 @@ export const Collapse: FC<CollapseProps> = ({
   children,
   isOpen = false,
   onOverlayClick,
+  cssModule,
   ...attributes
 }) => {
-  if (megamenu || (navbar && header)) {
+  const newCssModule = {
+    'navbar-collapse': 'navbar-collapsable',
+    ...cssModule
+  };
+  if (megamenu || navbar || header) {
     const classes = classNames(className, 'navbar-collapse', {
       expanded: isOpen
     });
     const style = {
       display: 'block',
-      transform: isOpen ? 'translateX(0)' : 'translateX(-100%)'
+      ...(navbar &&
+        header && { transform: isOpen ? 'translateX(0)' : 'translateX(-100%)' })
     };
     return (
       <CollapseBase
         className={classes}
-        cssModule={{ 'navbar-collapse': 'navbar-collapsable' }}
+        cssModule={newCssModule}
         navbar={navbar}
         style={style}
         {...attributes}
@@ -91,7 +97,7 @@ export const Collapse: FC<CollapseProps> = ({
   return (
     <CollapseBase
       className={classes}
-      cssModule={{ 'navbar-collapse': 'navbar-collapsable' }}
+      cssModule={newCssModule}
       {...attributes}
       navbar={navbar}
       isOpen={isOpen}

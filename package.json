@@ -124,6 +124,7 @@
     "react-stickup": "^1.12.0",
     "react-toastify": "^7.0.4",
     "react-transition-group": "^4.4.1",
+    "react-use-navscroll": "0.2.0",
     "reactstrap": "^8.9.0",
     "webfontloader": "^1.6.28"
   },
