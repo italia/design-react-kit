@@ -59,11 +59,7 @@ export const Collapse: FC<CollapseProps> = ({
     const classes = classNames(className, 'navbar-collapse', {
       expanded: isOpen
     });
-    const style = {
-      display: 'block',
-      ...(navbar &&
-        header && { transform: isOpen ? 'translateX(0)' : 'translateX(-100%)' })
-    };
+    const style = { display: isOpen ? 'block' : 'none' };
     return (
       <CollapseBase
         className={classes}
@@ -72,11 +68,7 @@ export const Collapse: FC<CollapseProps> = ({
         style={style}
         {...attributes}
       >
-        <div
-          className='overlay'
-          style={{ display: isOpen ? 'block' : 'none' }}
-          onClick={onOverlayClick}
-        ></div>
+        <div className='overlay' style={style} onClick={onOverlayClick}></div>
         <div className='close-div sr-only'>
           <button className='btn close-menu' type='button'>
             <span className='it-close'></span>close
