@@ -10,7 +10,7 @@
 
 Per navigare la libreria e visualizzare i componenti, è stato utilizzato [Storybook](https://storybook.js.org/).
 
-La versione pubblica dello Storybook (relativa al branch `master`) è disponibile [qui](https://italia.github.io/design-react-kit).
+La versione pubblica dello Storybook è disponibile [qui](https://italia.github.io/design-react-kit) per l'ultima release stabile pubblicata, mentre [qui](https://design-react-kit.vercel.app/) per la versione  di sviluppo relativa al branch `master`.
 
 ## Indice
 
