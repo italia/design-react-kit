@@ -2,7 +2,7 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
-import { TimeInput } from '../src';
+import { TimeInput, preloadIcons } from '../src';
 import { addTime, subtractTime, formatTime } from '../src/Input/TimeInput';
 
 const renderTimeInput = (value: string = '') =>
@@ -21,6 +21,9 @@ const renderTimeInput = (value: string = '') =>
   );
 
 describe('TimeInput', () => {
+  // Icons are now async, so preload them to make it behave in an sync way
+  beforeAll(() => preloadIcons(['it-clock']));
+
   it('Should have the spinner controls closed by default', () => {
     const { container } = renderTimeInput();
     expect(container.querySelector('.spinner-control')).toHaveStyle({

@@ -493,7 +493,7 @@ export const loadIcon = (name: IconName) => {
       return import('./ItZoomOut');
     }
     default:
-      throw Error('It should not land here');
+      throw Error(`It should not land here. Requested icon: "${name}"`);
   }
 };
 
