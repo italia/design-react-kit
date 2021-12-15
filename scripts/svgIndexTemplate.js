@@ -31,7 +31,7 @@ export const loadIcon = (
   switch (name) {
 ${switchCases.join('\n')}
     default:
-      throw Error('It should not land here')
+      throw Error(\`It should not land here. Requested icon: "\${name}"\`);
   }
 };
 

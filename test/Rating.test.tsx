@@ -4,11 +4,13 @@ import '@testing-library/jest-dom/extend-expect';
 
 import * as Utils from '../src/utils';
 import { isCustomLegendObject } from '../src/Rating/Rating';
-import { Rating } from '../src';
+import { Rating, preloadIcons } from '../src';
 
 jest.mock('./../src/utils', () => ({ noop: jest.fn() }));
 
 describe('Rating', () => {
+  // Icons are now async, so preload them to make it behave in an sync way
+  beforeAll(() => preloadIcons(['it-star-full']));
   it('Should not apply className to the wrapper', () => {
     const { container } = render(
       <Rating

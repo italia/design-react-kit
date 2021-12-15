@@ -5,10 +5,14 @@ import {
   Megamenu,
   MegamenuItem,
   MegamenuFooter,
-  MegamenuHighlightColumn
+  MegamenuHighlightColumn,
+  preloadIcons
 } from '../src';
 
 describe('Megamenu component', () => {
+  // Icons are now async, so preload them to make it behave in an sync way
+  beforeAll(() => preloadIcons(['it-list']));
+
   it('should work as container for children elements', () => {
     render(<Megamenu>Content</Megamenu>);
 
