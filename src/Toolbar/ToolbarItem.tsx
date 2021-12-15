@@ -1,6 +1,13 @@
-import React, { ElementType, FC, HTMLAttributes, MouseEvent } from 'react';
+import React, {
+  ElementType,
+  FC,
+  HTMLAttributes,
+  MouseEvent,
+  useContext
+} from 'react';
 import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
+import { SizeContext, ToolbarProps } from './Toolbar';
 
 export interface ToolbarItemProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
@@ -8,7 +15,6 @@ export interface ToolbarItemProps extends HTMLAttributes<HTMLElement> {
   disabled?: boolean;
   url?: string;
   label?: string;
-  srText?: string;
   iconName: string;
   isIconSmall?: boolean;
   alert?: boolean;
@@ -16,18 +22,52 @@ export interface ToolbarItemProps extends HTMLAttributes<HTMLElement> {
   onLinkClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
 }
 
+const disabledMessage = ' elemento disabilitato';
+
+function ToolbarItemLabel({
+  label,
+  size,
+  disabled
+}: {
+  label: ToolbarItemProps['label'];
+  size: ToolbarProps['size'];
+  disabled: ToolbarItemProps['disabled'];
+}) {
+  const showSrText = size && size !== 'large';
+  if (disabled) {
+    if (!label || showSrText) {
+      return <span className='sr-only'>{disabledMessage}</span>;
+    }
+    return (
+      <>
+        <span className='toolbar-label'>{label}</span>
+        <span className='sr-only'>{disabledMessage}</span>
+      </>
+    );
+  }
+  if (!label) {
+    return null;
+  }
+  return showSrText ? (
+    <span className='sr-only'>{label}</span>
+  ) : (
+    <span className='toolbar-label'>{label}</span>
+  );
+}
+
 export const ToolbarItem: FC<ToolbarItemProps> = ({
   active = false,
   badge,
   url,
-  srText,
   iconName,
   label,
   tag = 'a',
+  disabled,
   ...attributes
 }) => {
   const Tag = tag;
-  const activeClass = classNames({ active });
+  const size = useContext(SizeContext);
+  const activeClass = classNames({ active, disabled });
   const badgeWrapper = Boolean(badge) && (
     <div className='badge-wrapper'>
       <span className='toolbar-badge'>{badge}</span>
@@ -35,11 +75,8 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
   );
 
   const ariaAttributes = {
-    ...(attributes.disabled && { 'aria-disabled': true })
+    ...(disabled && { 'aria-disabled': true })
   };
-  const screenReaderText = srText ? (
-    <span className='sr-only'>{srText}</span>
-  ) : null;
 
   return (
     <li>
@@ -50,15 +87,8 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
         {...ariaAttributes}
       >
         {badgeWrapper}
-        <Icon icon={iconName} />
-        {label ? (
-          <span className='toolbar-label'>
-            {label}
-            {screenReaderText}
-          </span>
-        ) : (
-          screenReaderText
-        )}
+        <Icon icon={iconName} size={size === 'small' ? 'sm' : ''} />
+        <ToolbarItemLabel label={label} size={size} disabled={disabled} />
       </Tag>
     </li>
   );

@@ -1,25 +1,55 @@
 import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
 import { Code } from '@storybook/components';
-import { Toolbar } from '../../src';
+import { Toolbar, ToolbarItem } from '../../src';
 
 <Meta title='Documentazione/Menu di navigazione/Toolbar' of={Toolbar} />
 
 # Toolbar
+Elemento contenitore di link, bottoni o dropdown
+
+L’elemento Toolbar è un contenitore di link, bottoni o dropdown. Consiste in un elenco `Toolbar` con tanti elementi `ToolbarItem` quante sono le voci richieste.
+
+### Dimensioni
+
+La Toolbar si adatta automaticamente in larghezza al suo contenitore. È consigliabile utilizzare contenitori di dimensione orizzontale (o verticale, nel caso del Toolbar verticale) ridotta, per evitare che gli elementi si disperdano in uno spazio troppo ampio.
+
+Per ottimizzare lo spazio disponibile l’elemento è fornito in tre versioni: grande, media e piccola.
 
 ## Componente Toolbar
+
+La versione predefinita dell’elemento è quella con icone grandi e label.
 
 <Canvas>
   <Story id='componenti-toolbar--esempio' />
 </Canvas>
 
-### Versione medium
+### Versione media
+
+Applicando un attributo aggiuntivao `size="medium"` alla `Toolbar` si ottiene una versione di dimensioni medie.
+
+In questo caso le label, nascoste visivamente, saranno contenute in uno `<span>` con classe `.sr-only`, per rendere disponibile la descrizione agli screen reader.
 
 <Canvas>
   <Story id='componenti-toolbar--esempio-medium' />
 </Canvas>
 
-### Versione small
+### Versione piccola
+
+Applicando un attributo aggiuntivao `size="small"` alla `Toolbar` si ottiene una versione di dimensioni piccola.
+
+In questo caso le label, nascoste visivamente, saranno contenute in uno `<span>` con classe `.sr-only`, per rendere disponibile la descrizione agli screen reader.
 
 <Canvas>
   <Story id='componenti-toolbar--esempio-small' />
 </Canvas>
+
+## Argomenti componente
+
+### Toolbar
+
+<ArgsTable of={Toolbar} />
+
+### ToolbarItem
+
+<ArgsTable of={ToolbarItem} />
+

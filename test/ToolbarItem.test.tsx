@@ -1,9 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import { ToolbarItem } from '../src';
+import { ToolbarItem, preloadIcons } from '../src';
 
 describe('ToolbarItem component', () => {
+  // Icons are now async, so preload them to make it behave in an sync way
+  beforeAll(() => preloadIcons(['it-comment']));
+
   it('should render the tag that passed as a prop', () => {
     const { getByRole } = render(
       <ToolbarItem tag={'button'} iconName={'it-comment'} />

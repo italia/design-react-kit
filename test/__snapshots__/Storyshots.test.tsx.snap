@@ -18258,6 +18258,69 @@ exports[`Storyshots Componenti/Toolbar Esempio 1`] = `
             </span>
           </a>
         </li>
+        <li>
+          <a
+            className=""
+            href="#"
+          >
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.5 8.5H17V8A5 5 0 007 8v.5H5.5A1.5 1.5 0 004 10v8.5A1.5 1.5 0 005.5 20h13a1.5 1.5 0 001.5-1.5V10a1.5 1.5 0 00-1.5-1.5zM8 8a4 4 0 018 0v.5H8zm11 10.5a.5.5 0 01-.5.5h-13a.5.5 0 01-.5-.5V10a.5.5 0 01.5-.5h13a.5.5 0 01.5.5z"
+              />
+              <path
+                d="M12 13.25a1 1 0 11-1 1 1 1 0 011-1m0-1a2 2 0 102 2 2 2 0 00-2-2z"
+              />
+              <g>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </g>
+            </svg>
+            <span
+              className="toolbar-label"
+            >
+              privacy
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            aria-disabled={true}
+            className="disabled"
+            href="#"
+          >
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+            <span
+              className="toolbar-label"
+            >
+              preferiti
+            </span>
+            <span
+              className="sr-only"
+            >
+               elemento disabilitato
+            </span>
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -18365,6 +18428,64 @@ exports[`Storyshots Componenti/Toolbar Esempio Medium 1`] = `
             </span>
           </a>
         </li>
+        <li>
+          <a
+            className=""
+            href="#"
+          >
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.5 8.5H17V8A5 5 0 007 8v.5H5.5A1.5 1.5 0 004 10v8.5A1.5 1.5 0 005.5 20h13a1.5 1.5 0 001.5-1.5V10a1.5 1.5 0 00-1.5-1.5zM8 8a4 4 0 018 0v.5H8zm11 10.5a.5.5 0 01-.5.5h-13a.5.5 0 01-.5-.5V10a.5.5 0 01.5-.5h13a.5.5 0 01.5.5z"
+              />
+              <path
+                d="M12 13.25a1 1 0 11-1 1 1 1 0 011-1m0-1a2 2 0 102 2 2 2 0 00-2-2z"
+              />
+              <g>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </g>
+            </svg>
+            <span
+              className="sr-only"
+            >
+              privacy
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            aria-disabled={true}
+            className="disabled"
+            href="#"
+          >
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+            <span
+              className="sr-only"
+            >
+               elemento disabilitato
+            </span>
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -18400,7 +18521,7 @@ exports[`Storyshots Componenti/Toolbar Esempio Small 1`] = `
             href="#"
           >
             <svg
-              className="icon"
+              className="icon icon-sm"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -18426,7 +18547,7 @@ exports[`Storyshots Componenti/Toolbar Esempio Small 1`] = `
             href="#"
           >
             <svg
-              className="icon"
+              className="icon icon-sm"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -18452,7 +18573,7 @@ exports[`Storyshots Componenti/Toolbar Esempio Small 1`] = `
             href="#"
           >
             <svg
-              className="icon"
+              className="icon icon-sm"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -18469,6 +18590,90 @@ exports[`Storyshots Componenti/Toolbar Esempio Small 1`] = `
               className="sr-only"
             >
               documenti
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className=""
+            href="#"
+          >
+            <svg
+              className="icon icon-sm"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.5 8.5H17V8A5 5 0 007 8v.5H5.5A1.5 1.5 0 004 10v8.5A1.5 1.5 0 005.5 20h13a1.5 1.5 0 001.5-1.5V10a1.5 1.5 0 00-1.5-1.5zM8 8a4 4 0 018 0v.5H8zm11 10.5a.5.5 0 01-.5.5h-13a.5.5 0 01-.5-.5V10a.5.5 0 01.5-.5h13a.5.5 0 01.5.5z"
+              />
+              <path
+                d="M12 13.25a1 1 0 11-1 1 1 1 0 011-1m0-1a2 2 0 102 2 2 2 0 00-2-2z"
+              />
+              <g>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </g>
+            </svg>
+            <span
+              className="sr-only"
+            >
+              privacy
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className=""
+            href="#"
+          >
+            <svg
+              className="icon icon-sm"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+            <span
+              className="sr-only"
+            >
+              preferiti
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            aria-disabled={true}
+            className="disabled"
+            href="#"
+          >
+            <svg
+              className="icon icon-sm"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 14.2L7.7 9.9l.7-.7 3.1 3.1V3h1v9.2l3.1-3 .7.7zm7-2.2v7.5a.5.5 0 01-.5.5h-13a.5.5 0 01-.5-.5V12H4v7.5A1.5 1.5 0 005.5 21h13a1.5 1.5 0 001.5-1.5V12z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+            <span
+              className="sr-only"
+            >
+               elemento disabilitato
             </span>
           </a>
         </li>
@@ -18527,10 +18732,6 @@ exports[`Storyshots Componenti/Toolbar Esempio With Divider 1`] = `
             </span>
           </a>
         </li>
-        <li
-          aria-hidden={true}
-          className="toolbar-divider"
-        />
         <li>
           <a
             className=""
@@ -18584,6 +18785,73 @@ exports[`Storyshots Componenti/Toolbar Esempio With Divider 1`] = `
               className="toolbar-label"
             >
               documenti
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            className=""
+            href="#"
+          >
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.5 8.5H17V8A5 5 0 007 8v.5H5.5A1.5 1.5 0 004 10v8.5A1.5 1.5 0 005.5 20h13a1.5 1.5 0 001.5-1.5V10a1.5 1.5 0 00-1.5-1.5zM8 8a4 4 0 018 0v.5H8zm11 10.5a.5.5 0 01-.5.5h-13a.5.5 0 01-.5-.5V10a.5.5 0 01.5-.5h13a.5.5 0 01.5.5z"
+              />
+              <path
+                d="M12 13.25a1 1 0 11-1 1 1 1 0 011-1m0-1a2 2 0 102 2 2 2 0 00-2-2z"
+              />
+              <g>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </g>
+            </svg>
+            <span
+              className="toolbar-label"
+            >
+              privacy
+            </span>
+          </a>
+        </li>
+        <li
+          aria-hidden={true}
+          className="toolbar-divider"
+        />
+        <li>
+          <a
+            aria-disabled={true}
+            className="disabled"
+            href="#"
+          >
+            <svg
+              className="icon"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+            <span
+              className="toolbar-label"
+            >
+              preferiti
+            </span>
+            <span
+              className="sr-only"
+            >
+               elemento disabilitato
             </span>
           </a>
         </li>
