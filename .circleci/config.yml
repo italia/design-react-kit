@@ -189,10 +189,7 @@ workflows:
       - deploy-github-pages:
           requires:
             - build
-          filters:
-            branches:
-              only:
-                - master
+          filters: *tag_filters
 
       - npm-publish:
           requires:
