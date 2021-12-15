@@ -4,7 +4,7 @@ import { DropdownMenu, Icon, LinkList, LinkListItem } from '../../src';
 
 export const _MenuVociAttive = () => (
   <div className='docs-show-dropdown-open'>
-    <DropdownMenu isOpen>
+    <DropdownMenu>
       <LinkList>
         <LinkListItem active>
           <span>
@@ -24,7 +24,7 @@ export const _MenuVociAttive = () => (
 
 export const _MenuVociDisabilitate = () => (
   <div className='docs-show-dropdown-open'>
-    <DropdownMenu isOpen>
+    <DropdownMenu>
       <LinkList>
         <LinkListItem>
           <span>Azione 1</span>
@@ -42,7 +42,7 @@ export const _MenuVociDisabilitate = () => (
 
 export const MenuHeadersESeparatori = () => (
   <div className='docs-show-dropdown-open'>
-    <DropdownMenu isOpen>
+    <DropdownMenu>
       <LinkList>
         <LinkListItem header>Header</LinkListItem>
         <LinkListItem>
@@ -65,7 +65,7 @@ export const MenuHeadersESeparatori = () => (
 
 export const MenuConVociLarge = () => (
   <div className='docs-show-dropdown-open'>
-    <DropdownMenu isOpen>
+    <DropdownMenu>
       <LinkList>
         <LinkListItem size='large'>
           <span>Azione 1</span>
@@ -83,7 +83,7 @@ export const MenuConVociLarge = () => (
 
 export const MenuFullWidth = () => (
   <div className='docs-show-dropdown-open'>
-    <DropdownMenu isOpen className='full-width'>
+    <DropdownMenu className='full-width'>
       <LinkList>
         <LinkListItem size='large'>
           <span>Azione 1</span>
@@ -107,7 +107,7 @@ export const MenuFullWidth = () => (
 
 export const MenuIconaADestra = () => (
   <div className='docs-show-dropdown-open'>
-    <DropdownMenu isOpen>
+    <DropdownMenu>
       <LinkList>
         <LinkListItem className='right-icon'>
           <span>Azione 1</span>
@@ -146,7 +146,7 @@ export const MenuIconaADestra = () => (
 
 export const MenuIconaASinistra = () => (
   <div className='docs-show-dropdown-open'>
-    <DropdownMenu isOpen>
+    <DropdownMenu>
       <LinkList>
         <LinkListItem className='left-icon'>
           <Icon
@@ -185,7 +185,7 @@ export const MenuIconaASinistra = () => (
 
 export const _MenuDark = () => (
   <div className='docs-show-dropdown-open'>
-    <DropdownMenu isOpen className='dark'>
+    <DropdownMenu className='dark'>
       <LinkList>
         <LinkListItem header>Header</LinkListItem>
         <LinkListItem active className='right-icon'>
