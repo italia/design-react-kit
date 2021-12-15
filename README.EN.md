@@ -12,7 +12,7 @@
 
 Components are showcased with [Storybook](https://storybook.js.org/).
 
-Public version of Storybook (built from `master` branch) is available here: https://italia.github.io/design-react-kit.
+Public version of Storybook is available [here](https://italia.github.io/design-react-kit) for the latest stable release, while [here](https://design-react-kit.vercel.app/) for the current development version built from `master` branch.
 
 ## Table of contents
 
