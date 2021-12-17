@@ -14,13 +14,13 @@ export interface HeaderProps extends HTMLAttributes<HTMLElement> {
    *  il valore di default è "dark". Per l'Header di tipo "nav" il tema di default è "light"
    *  in mobile, mentre "dark" in versione desktop.
    */
-  theme?: 'light' | 'dark';
+  theme?: 'light' | 'dark' | '';
 }
 
 export const Header: FC<HeaderProps> = ({
   className,
   small = false,
-  theme = 'light',
+  theme = '',
   type,
   ...attributes
 }) => {
