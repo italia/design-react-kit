@@ -127,19 +127,22 @@ Storybook has been enriched with some `addons` that make it more talented. Check
 ## How to create new components
 
 This section explains how to create new components in the repository.
-All components reside in the `components` directory: each component is a folder with all that is needed to make it work. *Storybook* stories are instead under `stories`.
+All components reside in the `src` directory: each component is a folder with all that is needed to make it work. 
+*Storybook* stories are instead under `stories`.  
+Unit tests are under the `test` folder.
 
-i.e. the `Button` component is shown below the `src/components/Button` path and its structure is as follows:
+i.e. the `Button` component is shown below the `src/Button` path and its structure is as follows:
 
 ```
 src
-    └── components
-        └── Button
-            ├── Button.tsx
+    └── Button
+        ├── Button.tsx
 stories
     └── Button
         ├── Button.stories.mdx
         ├── Button.stories.tsx
+test
+    ├── Button.test.tsx
 ```
 
 Some basic rules for structuring the components:
@@ -147,12 +150,24 @@ Some basic rules for structuring the components:
 * TSX file component files use JSX syntax.
 * The `.stories.tsx` files only contains examples relative to component.
 * The `.stories.mdx` files only contains documentation relative to component.
+* The `.test.tsx` files only contains tests relative to component.
 
 Once you have created a new component, with its history, starting *Storybook* will be able to check that everything works as it should.
 
 ### How to contribute
 
 To submit new content (feature or bug fixes) is required to fork the repository, starting from `master` create a new branch for the new feature: once completed the development (with tests when possible), create a PR to the original repository.
+
+#### Snapshot tests
+
+The testing system has been provided with a snapshot check on existing stories: this means that each story content is copied into a special file used as reference to check changes in the future. This might fail some test checks on the PR in case of new or changed stories.  
+In such case it is possible to update the snapshot file with the following command:
+
+```
+yarn test -u
+```
+
+At this point create a new commit and update the PR. Make sure to check the new snapshot content whether it is in line with the changes made before pushing.
 
 ## Publishing
 

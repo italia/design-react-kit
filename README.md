@@ -123,19 +123,21 @@ Storybook è stato arricchito con alcuni `addons` che lo rendono più parlante.
 ## Come creare nuovi componenti
 
 Questa sezione guiderà alla creazione di nuovi componenti nel repository.
-Tutti i componenti risiedono nella folder `components`: ogni componente possiede una sua folder con tutto ciò che è necessario per farlo funzionare.
+Tutti i componenti risiedono nella folder `src`: ogni componente possiede una sua folder con tutto ciò che è necessario per farlo funzionare.
 Le storie `Storybook` invece sono sotto `stories`. 
-Il componente `Button` ad esempio è presente sotto il path `src/components/Button` e la sua struttura è la seguente:
+I test unitari risiedono nella cartella `test`.
+Il componente `Button` ad esempio è presente sotto il path `src/Button` e la sua struttura è la seguente:
 
 ```
 src
-    └── components
-        └── Button
-            ├── Button.tsx
+    └── Button
+        ├── Button.tsx
 stories
     └── Button
         ├── Button.stories.mdx
         ├── Button.stories.tsx
+test
+    ├── Button.test.tsx
 ```
 
 Alcune regole di base per strutturare i componenti:
