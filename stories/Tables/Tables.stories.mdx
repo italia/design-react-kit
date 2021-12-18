@@ -1,18 +1,14 @@
-import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
-import {
-  Callout,
-  CalloutText,
-  CalloutTitle,
-  Table
-} from '../../src';
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Code } from '@storybook/components';
+import { Callout, CalloutText, CalloutTitle, Table } from '../../src';
 
-<Meta title='Documentazione/Organizzare i contenuti/Tabelle' of={Table}/>
+<Meta title='Documentazione/Organizzare i contenuti/Tabelle' of={Table} />
 
 # Tabelle
 
-Documentazione ed esempi per lo stile delle tabelle.
+## Documentazione ed esempi per lo stile delle tabelle.
 
-## Esempi
+### Esempi
 
 Usando il markup di base della tabella, ecco come appaiono le tabelle che utilizzano il componente `Table`. **Tutti gli stili di tabella sono ereditari**, il che significa che tutte le tabelle nidificate saranno stilizzate nello stesso modo del genitore.
 
@@ -28,7 +24,7 @@ Puoi anche invertire i colori, con testo chiaro su sfondi scuri con l'attributo 
 
 ## Opzioni delle intestazioni di tabella
 
-Utilizzare le classi di modifica `.thead-light` o `.thead-dark` per far apparire `<thead>` chiaro o grigio scuro.
+Utilizzare le classi di modifica `.thead-light` o `.thead-dark` per far apparire <Code>&lt;thead&gt;</Code>. chiaro o grigio scuro.
 
 <Canvas>
   <Story id='componenti-tables--table-thead' />
@@ -36,7 +32,7 @@ Utilizzare le classi di modifica `.thead-light` o `.thead-dark` per far apparire
 
 ## Righe striate
 
-Usa l'attributo `striped` per aggiungere delle striature zebrate ad ogni riga della tabella contenute in `<tbody>`.
+Usa l'attributo `striped` per aggiungere delle striature zebrate ad ogni riga della tabella contenute in <Code>&lt;tbody&gt;</Code>.
 
 <Canvas>
   <Story id='componenti-tables--table-striped' />
@@ -60,7 +56,7 @@ Usa l'attributo `borderless` per una tabella senza bordi.
 
 ## Righe ed hover
 
-Usa l'attributo `hover` per abilitare lo stato hover sulle righe della tabella contenute in `<tbody>`.
+Usa l'attributo `hover` per abilitare lo stato hover sulle righe della tabella contenute in <Code>&lt;tbody&gt;</Code>.
 
 <Canvas>
   <Story id='componenti-tables--table-hover' />
@@ -93,14 +89,14 @@ Usa le classi contestuali per colorare le righe delle tabelle o le singole celle
       assistive – come gli screen reader. Assicurati che le informazioni
       denotate dal colore siano rese disponibili anche dal contenuto stesso
       (es.: il testo visibile), o siano incluse attraverso mezzi alternativi,
-      come testo aggiuntivo nascosto con la classe `.sr-only`.
+      come testo aggiuntivo nascosto con la classe <code>.sr-only</code>.
     </CalloutText>
   </Callout>
 </div>
 
 ## Captions
 
-Un `<caption>` funziona come un’intestazione per una tabella. Aiuta gli utenti con screen reader a trovare una tabella e capire di cosa si tratta e decidere se vogliono leggerla.
+Un <Code>&lt;caption&gt;</Code> funziona come un’intestazione per una tabella. Aiuta gli utenti con screen reader a trovare una tabella e capire di cosa si tratta e decidere se vogliono leggerla.
 
 <Canvas>
   <Story id='componenti-tables--table-captions' />
@@ -114,10 +110,10 @@ Le tabelle responsive consentono di scorrere le tabelle orizzontalmente con faci
   <Callout color='primary'>
     <CalloutTitle>Ritaglio / troncamento verticale</CalloutTitle>
     <CalloutText>
-      Le tabelle responsive fanno uso di `overflow-y: hidden`, che rimuove
-      qualsiasi contenuto che va oltre i bordi inferiore o superiore della
-      tabella. In particolare, questo può ritagliare i menu a discesa e altri
-      widget di terze parti.
+      Le tabelle responsive fanno uso di <code>overflow-y: hidden</code>, che
+      rimuove qualsiasi contenuto che va oltre i bordi inferiore o superiore
+      della tabella. In particolare, questo può ritagliare i menu a discesa e
+      altri widget di terze parti.
     </CalloutText>
   </Callout>
 </div>
@@ -126,10 +122,11 @@ Le tabelle responsive consentono di scorrere le tabelle orizzontalmente con faci
   <Callout color='primary'>
     <CalloutText>
       Nota che in quanto i browser non supportano attualmente i range context
-      queries, stiamo aggirando i limiti dei prefissi min- and max- e viewports
-      con larghezze frazionarie (che possono verificarsi in determinate
-      condizioni su dispositivi ad alta risoluzione, ad esempio) utilizzando
-      valori con maggiore precisione per questi confronti.
+      queries, stiamo aggirando i limiti dei prefissi <code>min-</code> and{' '}
+      <code>max-</code> e viewports con larghezze frazionarie (che possono
+      verificarsi in determinate condizioni su dispositivi ad alta risoluzione,
+      ad esempio) utilizzando valori con maggiore precisione per questi
+      confronti.
     </CalloutText>
   </Callout>
 </div>
