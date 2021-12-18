@@ -19,39 +19,39 @@ Legenda:
 - È stato incrementata la versione minima di React supportata come peer-dependency a 16.8.0. 💥
   - Verificare che la versione utilizzata nel progetto sia compatibile con la versione richiesta dal toolkit.
 - Nuovo tipi TS: il kit è stato interamente riscritto in Typescript. 💥
-- Componente `Pager`: 
+- Componente `Pager`:
   - l'attributo `size` è stato rimosso poichè non utilizzato nel kit Bootstrap Italia. 💥
-  - *Azioni richieste per vecchio comportamento*: utilizzare l'attributo `className` del componente `Pager`.
+  - _Azioni richieste per vecchio comportamento_: utilizzare l'attributo `className` del componente `Pager`.
   - Rimosso componente `PagerList`: il componente `PagerList` è stato rimosso ed integrato all'interno del componente `Pager`. 💥
-  - *Azioni richieste per vecchio comportamento*: rimuovere il componente `PagerList` ed utilizzare i nuovi attributi `listTag` e `listClassName` del componente `Pager`.
+  - _Azioni richieste per vecchio comportamento_: rimuovere il componente `PagerList` ed utilizzare i nuovi attributi `listTag` e `listClassName` del componente `Pager`.
 - Componente`Carousel`: rimosso componente e relativi sotto componenti 💥
-  - *Qualora si volesse continuare ad usare il vecchio componente*, importare il componente `Carousel` da `reactstrap 8.9.x`.
-- Componente `Hero`: 
+  - _Qualora si volesse continuare ad usare il vecchio componente_, importare il componente `Carousel` da `reactstrap 8.9.x`.
+- Componente `Hero`:
   - nuovo componente più fedele al design del kit Bootstrap Italia. 💥
   - È necessario sostituire il vecchio componente `Hero` con il nuovo componente. 💥
   - Nuovi componenti `HeroBackground`, `HeroBody`, `HeroButton`, `HeroCategory`, `HeroTitle`.
-  - *Qualora si volesse continuare ad usare il vecchio componente*, importare il componente `Jumbotron` da `reactstrap 8.9.x`.
-- Componente `Dimmer`: 
+  - _Qualora si volesse continuare ad usare il vecchio componente_, importare il componente `Jumbotron` da `reactstrap 8.9.x`.
+- Componente `Dimmer`:
   - il precedente attributo `className` non verrà più applicato anche al nodo wrapper. 💥
-  - *Azioni richieste per vecchio comportamento*: impostare il nuovo attributo `wrapperClassName={true}` sul componente
-- Componente `DimmerButton`: 
+  - _Azioni richieste per vecchio comportamento_: impostare il nuovo attributo `wrapperClassName={true}` sul componente
+- Componente `DimmerButton`:
   - ora l'attributo `dark` è `true` di default. 💥
-  - *Azioni richieste per vecchio comportamento*: impostare `dark={false}` sul componente
-- Componente `Progress`: 
+  - _Azioni richieste per vecchio comportamento_: impostare `dark={false}` sul componente
+- Componente `Progress`:
   - il precedente attributo `className` non verrà più applicato anche al nodo wrapper. 💥
-  - *Azioni richieste per vecchio comportamento*: impostare il nuovo attributo `wrapperClassName={true}` sul componente
+  - _Azioni richieste per vecchio comportamento_: impostare il nuovo attributo `wrapperClassName={true}` sul componente
 
 ### Nuovi componenti
 
-- `Select`: 
+- `Select`:
   - nuovo componente interno al kit.
-- `Toolbar`: 
+- `Toolbar`:
   - nuovo componente, insieme a `ToolbarItem` e `ToolbarItemDivider`.
 - Nuovo sistema di navscroll basato su hook `useNavScroll`.
   - Una nuova pagina di documentazione con esempi completi spiega come utilizzare il nuovo hook in combinazione con i componenti del kit.
-- `TimeInput`: 
+- `TimeInput`:
   - nuovo componente.
-- `Megamenu`: 
+- `Megamenu`:
   - nuovo componente.
 - Nuovi componenti di layout introdotti per facilitare la costruzione di liste di immagini.
   - Nuovo componente `GridList`/`GridRow`/`GridItem`/`GridItemText`/`GridItemTextWrapper`.
@@ -62,47 +62,47 @@ Legenda:
 
 ### Nuove funzionalità aggiunte
 
-- `Accordion`: 
+- `Accordion`:
   - nuovo attributo `background` con valori `active` o `hover` aggiunto
   - nuovo attributo `iconLeft` da utilizzare per mostrare stato di apertura.
-- `BottomNavItem`: 
+- `BottomNavItem`:
   - nuovi attributi `url` e `onLinkClick` per gestire l'azione di click con più dettaglio.
   - l'attributo `link` è stato deprecato 🗑
-- `Breadcrumb`: 
+- `Breadcrumb`:
   - nuovo attributo `dark` per la visualizzazione del tema scuro.
 - `Dimmer`:
   - nuovo attributo `wrapperClassName`.
-- `Fontloader`: 
+- `Fontloader`:
   - nuovo attributo `fonts` per il caricamento di font aggiuntivi oltre a quelli standard.
-- `Input`: 
+- `Input`:
   - nuovo attributo `wrapperClassName` sostituisce la vecchia `wrapperClass` 🗑 (ora deprecato)
-- `Icon`: 
+- `Icon`:
   - il componente supporta ora anche URL di immagini
   - Le icone predefinite nel kit vengono ora caricate in modalità _lazy_. 💥
   - nuove funzioni di `preload` per le icone per situazioni di SSR e testing.
-- `Modal`: 
+- `Modal`:
   - nuovi attributi `withIcon`, `withLinkList` e `popConfirm` da utilizzato per diversi formati di modale.
   - `ModalHeader`: nuovo attributo `icon` da utilizzare per mostrare una icona nel titolo del modale.
-- `Pager`: 
+- `Pager`:
   - nuovo attributo `total`.
   - nuovi attributi `listTag` e `listClassName` per il componente `Pager`.
 - `Progress`:
   - nuovo attributo `wrapperClassName`.
-- `Section`: 
+- `Section`:
   - nuovo attributo `color`.
     - Gli attributi `neutral` e `muted` sono stati deprecati 🗑
   - nuovo attributo `wrapperClassName`.
     - il precedente attributo `className` non verrà più applicato anche al nodo wrapper. 💥
     - Azioni richieste per vecchio comportamento: impostare `wrapperClassName={true}` sul componente
-- `Spinner`: 
+- `Spinner`:
   - nuovo attributo `label` da utilizzare per mostrare stato di caricamento ai dispositivi screen reader.
 - `SkipLinkItem`: nuovo attributo `focusable` per disabilitare il rendering on focus in casi specifici
-- `StepperHeaderElement`: 
+- `StepperHeaderElement`:
   - nuovo valore `mobile` per l'attributo `variant`.
   - il precedente valore `steppers-index` è stato deprecato 🗑
   - nuovo attributo `appendIcon` che sostituisce la vecchia `icon` 🗑
   - nuovo attributo `prependIcon` che sostituisce la vecchia `iconName` 🗑
-- `TimelinePin`: 
+- `TimelinePin`:
   - nuovo attributo `iconName` che sostituisce la vecchia `icon` 🗑
 
 ### Bug fixes
