@@ -123,19 +123,21 @@ Storybook è stato arricchito con alcuni `addons` che lo rendono più parlante.
 ## Come creare nuovi componenti
 
 Questa sezione guiderà alla creazione di nuovi componenti nel repository.
-Tutti i componenti risiedono nella folder `components`: ogni componente possiede una sua folder con tutto ciò che è necessario per farlo funzionare.
+Tutti i componenti risiedono nella cartella `src`: ogni componente possiede una sua cartella con tutto ciò che è necessario per farlo funzionare.
 Le storie `Storybook` invece sono sotto `stories`. 
-Il componente `Button` ad esempio è presente sotto il path `src/components/Button` e la sua struttura è la seguente:
+I test unitari risiedono nella cartella `test`.
+Il componente `Button` ad esempio è presente sotto il percorso `src/Button` e la sua struttura è la seguente:
 
 ```
 src
-    └── components
-        └── Button
-            ├── Button.tsx
+    └── Button
+        ├── Button.tsx
 stories
     └── Button
         ├── Button.stories.mdx
         ├── Button.stories.tsx
+test
+    ├── Button.test.tsx
 ```
 
 Alcune regole di base per strutturare i componenti:
@@ -143,12 +145,24 @@ Alcune regole di base per strutturare i componenti:
 * I file TSX file del componente utilizza la sintassi JSX.
 * I file `.stories.tsx` dovrebbero contenere solo quanto relativo al componente stesso.
 * I file `.stories.mdx` dovrebbero contenere solo documentazione relativa al componente stesso
+* I file `.test.tsx` dovrebbero contenere solo test relativi al componente stesso.
 
 Una volta creato un nuovo componente, con la sua story, avviando Storybook sarà  possibile controllare che tutto funzioni come dovrebbe.
 
 ### Come contribuire
 
-Per inviare nuovi contenuti o bug fix è necessario fare un fork del repository, quindi partire dal branch `master` per un nuovo branch contenente la feature: una volta completa la funzionalità (con relativi test ove possibile), sarà necessario fare una PR sul repository principale.
+Per inviare nuovi contenuti o bug fix è necessario fare un fork del repository, quindi partire dal branch `master` per un nuovo branch contenente la funzionalità: una volta completa la funzionalità (con relativi test ove possibile), sarà necessario fare una PR sul repository principale.
+
+#### Snapshot tests
+
+Il sistema di testing prevede un controllo delle storie presenti, mediante una tecnica chiamata "snapshot" testing: il contenuto della storia Storybook verrà copiato in un file speciale e preservato per notificare eventuali cambiamenti in futuro. Questo fa si che l'aggiunta di nuove storie potrebbe risultare in un fallimento del task "test" in una PR.
+Qualora fosse stata aggiunta una nuova storia o modificata una già presente, sarà necessario aggiornare il file di snapshot come segue:
+
+```
+yarn test -u
+```
+
+A questo punto creare un nuovo commit ed aggiornare la PR con il file di snapshot aggiornato. Controllare che le modifiche apportate siano corrette prima di aggiornare la PR.
 
 ## Publishing
 
