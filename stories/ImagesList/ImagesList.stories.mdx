@@ -1,6 +1,14 @@
-import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
+import {
+  GridItem,
+  GridItemText,
+  GridItemTextWrapper,
+  GridList,
+  GridRow,
+  ResponsiveImage
+} from '../../src';
 
-<Meta title='Documentazione/Organizzare i contenuti/Liste di Immagini' />
+<Meta title='Documentazione/Organizzare i contenuti/Liste di Immagini' of={GridList} />
 
 # Liste di Immagini
 
@@ -71,3 +79,29 @@ Di seguito l’esempio
 <Canvas>
   <Story id='componenti-imagelist--masonry' />
 </Canvas>
+
+## Argomenti componente
+
+### GridList
+
+<ArgsTable of={GridList} />
+
+### GridRow
+
+<ArgsTable of={GridRow} />
+
+### GridItem
+
+<ArgsTable of={GridItem} />
+
+### GridItemText
+
+<ArgsTable of={GridItemText} />
+
+### GridItemTextWrapper
+
+<ArgsTable of={GridItemTextWrapper} />
+
+### ResponsiveImage
+
+<ArgsTable of={ResponsiveImage} />
