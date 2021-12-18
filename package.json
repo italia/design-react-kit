@@ -54,7 +54,8 @@
     "analyze": "size-limit --why",
     "prestorybook": "npm run svg:import",
     "storybook:serve": "start-storybook -p 9001 -c .storybook -s ./static",
-    "storybook:build": "build-storybook -c .storybook -s ./static",
+    "storybook:build": "npm run storybook:build:base --docs",
+    "storybook:build:base": "build-storybook -c .storybook -s ./static",
     "storybook:deploy": "npx gh-pages -d storybook-static -m 'Update GitHub Pages [ci skip]'"
   },
   "peerDependencies": {
