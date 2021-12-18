@@ -104,7 +104,7 @@
     "classnames": "^2.3.1",
     "eslint-plugin-mdx": "^1.13.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^6.0.0",
+    "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest-transform-stub": "^2.0.0",
     "postcss-flexbugs-fixes": "^4.2.1",
