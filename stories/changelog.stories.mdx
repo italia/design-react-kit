@@ -37,9 +37,15 @@ Legenda:
 - Componente `DimmerButton`:
   - ora l'attributo `dark` è `true` di default. 💥
   - _Azioni richieste per vecchio comportamento_: impostare `dark={false}` sul componente
+- Componente `Icon`:
+  - Le icone predefinite nel kit vengono ora caricate in modalità _lazy_. 💥
+  - nuove funzioni di `preload` per le icone per situazioni di SSR e testing.
 - Componente `Progress`:
   - il precedente attributo `className` non verrà più applicato anche al nodo wrapper. 💥
   - _Azioni richieste per vecchio comportamento_: impostare il nuovo attributo `wrapperClassName={true}` sul componente
+- Componente `Section`:
+  - il precedente attributo `className` non verrà più applicato anche al nodo wrapper. 💥
+  - _Azioni richieste per vecchio comportamento_: impostare `wrapperClassName={true}` sul componente
 
 ### Nuovi componenti
 
@@ -78,11 +84,10 @@ Legenda:
   - nuovo attributo `wrapperClassName` sostituisce la vecchia `wrapperClass` 🗑 (ora deprecato)
 - `Icon`:
   - il componente supporta ora anche URL di immagini
-  - Le icone predefinite nel kit vengono ora caricate in modalità _lazy_. 💥
-  - nuove funzioni di `preload` per le icone per situazioni di SSR e testing.
 - `Modal`:
   - nuovi attributi `withIcon`, `withLinkList` e `popConfirm` da utilizzato per diversi formati di modale.
-  - `ModalHeader`: nuovo attributo `icon` da utilizzare per mostrare una icona nel titolo del modale.
+- `ModalHeader`:
+  - nuovo attributo `icon` da utilizzare per mostrare una icona nel titolo del modale.
 - `Pager`:
   - nuovo attributo `total`.
   - nuovi attributi `listTag` e `listClassName` per il componente `Pager`.
@@ -91,9 +96,6 @@ Legenda:
 - `Section`:
   - nuovo attributo `color`.
     - Gli attributi `neutral` e `muted` sono stati deprecati 🗑
-  - nuovo attributo `wrapperClassName`.
-    - il precedente attributo `className` non verrà più applicato anche al nodo wrapper. 💥
-    - Azioni richieste per vecchio comportamento: impostare `wrapperClassName={true}` sul componente
 - `Spinner`:
   - nuovo attributo `label` da utilizzare per mostrare stato di caricamento ai dispositivi screen reader.
 - `SkipLinkItem`: nuovo attributo `focusable` per disabilitare il rendering on focus in casi specifici
