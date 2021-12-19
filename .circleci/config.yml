@@ -189,14 +189,6 @@ workflows:
               ignore:
                 - gh-pages
 
-      - npm-publish-test:
-          requires:
-            - build
-          filters:
-            branches:
-              ignore:
-                - gh-pages
-
       - deploy-github-pages:
           requires:
             - build
