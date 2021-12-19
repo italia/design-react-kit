@@ -145,9 +145,6 @@ jobs:
     steps:
       - checkout
 
-      # Download and cache dependencies
-      - restore_cache: *restore_cache
-
       - attach_workspace:
           # Must be absolute path or relative path from working_directory
           at: .
@@ -155,7 +152,7 @@ jobs:
       - run:
           name: npm pack
           command: |
-            npm pack
+            npm pack --ignore-scripts
 
 
   npm-publish:
