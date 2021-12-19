@@ -139,6 +139,22 @@ jobs:
             yarn storybook:build
             yarn storybook:deploy
 
+  npm-publish-test:
+    <<: *defaults
+
+    steps:
+      - checkout
+
+      - attach_workspace:
+          # Must be absolute path or relative path from working_directory
+          at: .
+
+      - run:
+          name: npm pack
+          command: |
+            npm pack
+
+
   npm-publish:
     <<: *defaults
 
@@ -179,6 +195,14 @@ workflows:
                 - gh-pages
 
       - check-gatsby-ssr:
+          requires:
+            - build
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+
+      - npm-publish-test:
           requires:
             - build
           filters:
