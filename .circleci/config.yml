@@ -139,6 +139,7 @@ jobs:
             yarn storybook:build
             yarn storybook:deploy
 
+
   npm-publish:
     <<: *defaults
 
@@ -151,9 +152,11 @@ jobs:
 
       - run:
           name: npm publish
+          # Mind that --ignore-scripts for publish is supported for npm <= 7 and >= 7.20
+          # see https://github.com/npm/cli/issues/2755
           command: |
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-            npm publish
+            npm publish --ignore-scripts
 
 # Workflows enable multiple jobs in parallel
 workflows:
