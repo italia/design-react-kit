@@ -1,4 +1,11 @@
-import React, { InputHTMLAttributes, ElementType, Ref, ReactNode } from 'react';
+import React, {
+  InputHTMLAttributes,
+  ElementType,
+  Ref,
+  ReactNode,
+  useCallback,
+  useState
+} from 'react';
 import isNumber from 'is-number';
 
 import { InputContainer } from './InputContainer';
@@ -93,250 +100,241 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   noWrapper?: boolean;
 }
 
-type InputState = { isFocused: boolean; hidden: boolean; icon: boolean };
+export const Input = ({
+  id,
+  className,
+  cssModule,
+  type,
+  state,
+  tag,
+  addon,
+  static: staticInput,
+  plaintext,
+  innerRef,
+  label,
+  infoText,
+  placeholder,
+  normalized,
+  value,
+  wrapperClass: originalWrapperClassOld,
+  wrapperClassName: originalWrapperClass,
+  size,
+  noWrapper = false,
+  ...attributes
+}: InputProps) => {
+  const [isFocused, setFocus] = useState(false);
+  const [isHidden, setHidden] = useState(true);
+  const [hasIcon, toggleIcon] = useState(true);
 
-export class Input extends React.Component<InputProps, InputState> {
-  state = {
-    isFocused: false,
-    hidden: true,
-    icon: true
-  };
+  const toggleFocusLabel = useCallback(
+    (e: React.FocusEvent<HTMLInputElement>) => {
+      setFocus(true);
+      attributes.onFocus?.(e);
+    },
+    [attributes.onFocus]
+  );
 
-  toggleFocusLabel = (e: React.FocusEvent<HTMLInputElement>) => {
-    this.setState({
-      isFocused: true
-    });
-    this.props.onFocus?.(e);
-  };
+  const toggleBlurLabel = useCallback(
+    (e: React.FocusEvent<HTMLInputElement>) => {
+      if (e.target.value === '') {
+        setFocus(!isFocused);
+      }
+      attributes.onBlur?.(e);
+    },
+    [isFocused, attributes.onBlur]
+  );
 
-  toggleBlurLabel = (e: React.FocusEvent<HTMLInputElement>) => {
-    if (e.target.value === '') {
-      this.setState({
-        isFocused: !this.state.isFocused
-      });
-    }
-    this.props.onBlur?.(e);
-  };
+  const toggleShow = useCallback(() => {
+    setHidden(!isHidden);
+    toggleIcon(!hasIcon);
+  }, [hasIcon, isHidden]);
 
-  toggleShow = () => {
-    this.setState({ hidden: !this.state.hidden, icon: !this.state.icon });
-  };
+  let { bsSize, valid, invalid, ...rest } = attributes;
 
-  render() {
-    const {
-      id,
-      className,
-      cssModule,
-      type,
-      state,
-      tag,
-      addon,
-      static: staticInput,
+  const Tag = getTag({ tag, plaintext, staticInput, type });
+  const formControlClass = getFormControlClass(
+    {
       plaintext,
-      innerRef,
-      label,
-      infoText,
+      staticInput,
+      type,
+      addon,
+      normalized
+    },
+    cssModule
+  );
+  const infoTextControlClass = getInfoTextControlClass(
+    { valid, invalid },
+    cssModule
+  );
+
+  if (state && valid == null && invalid == null) {
+    invalid = state === 'danger';
+    valid = state === 'success';
+  }
+
+  const extraAttributes: {
+    type?: InputType;
+    size?: number;
+    ['aria-describedby']?: string;
+  } = {};
+  if (size && !isNumber(size)) {
+    notifyDeprecation(
+      'Please use the prop "bsSize" instead of the "size" to bootstrap\'s input sizing.'
+    );
+    bsSize = (size as unknown) as InputProps['bsSize'];
+  } else {
+    extraAttributes.size = size;
+  }
+
+  if (Tag === 'input' || typeof tag !== 'string') {
+    extraAttributes.type = type;
+  }
+
+  // associate the input field with the help text
+  const infoId = id ? `${id}Description` : undefined;
+  if (id) {
+    extraAttributes['aria-describedby'] = infoId;
+  }
+
+  if (
+    attributes.children &&
+    !(
+      plaintext ||
+      staticInput ||
+      type === 'select' ||
+      typeof Tag !== 'string' ||
+      Tag === 'select'
+    )
+  ) {
+    notifyDeprecation(
+      `Input with a type of "${type}" cannot have children. Please use "value"/"defaultValue" instead.`
+    );
+    delete attributes.children;
+  }
+
+  const inputPassword = extraAttributes.type === 'password';
+
+  // Styling
+  const { activeClass, infoTextClass, inputClasses, wrapperClass } = getClasses(
+    className,
+    {
+      valid,
+      invalid,
+      bsSize,
       placeholder,
-      normalized,
       value,
-      wrapperClass: originalWrapperClassOld,
-      wrapperClassName: originalWrapperClass,
-      size,
-      noWrapper = false,
-      ...attributes
-    } = this.props;
-    let { bsSize, valid, invalid, ...rest } = attributes;
-
-    const Tag = getTag({ tag, plaintext, staticInput, type });
-    const formControlClass = getFormControlClass(
-      {
-        plaintext,
-        staticInput,
-        type,
-        addon,
-        normalized
-      },
-      cssModule
-    );
-    const infoTextControlClass = getInfoTextControlClass(
-      { valid, invalid },
-      cssModule
-    );
-
-    if (state && valid == null && invalid == null) {
-      invalid = state === 'danger';
-      valid = state === 'success';
-    }
-
-    const extraAttributes: {
-      type?: InputType;
-      size?: number;
-      ['aria-describedby']?: string;
-    } = {};
-    if (size && !isNumber(size)) {
-      notifyDeprecation(
-        'Please use the prop "bsSize" instead of the "size" to bootstrap\'s input sizing.'
-      );
-      bsSize = (size as unknown) as InputProps['bsSize'];
-    } else {
-      extraAttributes.size = size;
-    }
-
-    if (Tag === 'input' || typeof tag !== 'string') {
-      extraAttributes.type = type;
-    }
-
-    // associate the input field with the help text
-    const infoId = id ? `${id}Description` : undefined;
-    if (id) {
-      extraAttributes['aria-describedby'] = infoId;
-    }
-
-    if (
-      attributes.children &&
-      !(
-        plaintext ||
-        staticInput ||
-        type === 'select' ||
-        typeof Tag !== 'string' ||
-        Tag === 'select'
-      )
-    ) {
-      notifyDeprecation(
-        `Input with a type of "${type}" cannot have children. Please use "value"/"defaultValue" instead.`
-      );
-      delete attributes.children;
-    }
-
-    const inputPassword = extraAttributes.type === 'password';
-
-    // Styling
-    const {
-      activeClass,
-      infoTextClass,
-      inputClasses,
-      wrapperClass
-    } = getClasses(
-      className,
-      {
-        valid,
-        invalid,
-        bsSize,
-        placeholder,
-        value,
-        label,
-        infoText,
-        normalized: Boolean(normalized),
-        inputPassword,
-        formControlClass,
-        infoTextControlClass,
-        isFocused: this.state.isFocused,
-        originalWrapperClass: originalWrapperClass || originalWrapperClassOld
-      },
-      cssModule
-    );
-
-    // set of attributes always shared by the Input components
-    const sharedAttributes = {
-      id,
-      onFocus: this.toggleFocusLabel,
-      onBlur: this.toggleBlurLabel,
-      value: value,
-      ref: innerRef
-    };
-
-    // set of attributes always shared by the wrapper component
-    const containerProps = {
-      id,
-      infoId,
-      activeClass,
       label,
-      infoTextClass,
       infoText,
-      wrapperClass
-    };
+      normalized: Boolean(normalized),
+      inputPassword,
+      formControlClass,
+      infoTextControlClass,
+      isFocused: isFocused,
+      originalWrapperClass: originalWrapperClass || originalWrapperClassOld
+    },
+    cssModule
+  );
 
-    if (noWrapper) {
-      return (
-        <Tag
-          {...rest}
-          {...extraAttributes}
-          className={inputClasses}
-          {...sharedAttributes}
-          placeholder={placeholder}
-        />
-      );
-    }
+  // set of attributes always shared by the Input components
+  const sharedAttributes = {
+    id,
+    onFocus: toggleFocusLabel,
+    onBlur: toggleBlurLabel,
+    value: value,
+    ref: innerRef
+  };
 
-    if (placeholder) {
-      return (
-        <InputContainer {...containerProps}>
-          <Tag
-            {...rest}
-            {...extraAttributes}
-            {...sharedAttributes}
-            className={inputClasses}
-            placeholder={placeholder}
-          />
-        </InputContainer>
-      );
-    }
+  // set of attributes always shared by the wrapper component
+  const containerProps = {
+    id,
+    infoId,
+    activeClass,
+    label,
+    infoTextClass,
+    infoText,
+    wrapperClass
+  };
 
-    if (inputPassword) {
-      return (
-        <InputContainer {...containerProps}>
-          <Tag
-            {...rest}
-            {...extraAttributes}
-            {...sharedAttributes}
-            type={this.state.hidden ? 'password' : 'text'}
-            className={inputClasses}
-            placeholder={placeholder}
-          />
-          <span className='password-icon' aria-hidden='true'>
-            <Icon
-              size='sm'
-              icon={`it-password-${this.state.icon ? 'visible' : 'invisible'}`}
-              className='password-icon-visible'
-              onClick={this.toggleShow}
-            />
-          </span>
-        </InputContainer>
-      );
-    }
-    if (normalized) {
-      return (
-        <InputContainer {...containerProps}>
-          <Tag
-            {...rest}
-            {...extraAttributes}
-            {...sharedAttributes}
-            className={inputClasses}
-            readOnly
-          />
-        </InputContainer>
-      );
-    }
-    if (label || infoText) {
-      return (
-        <InputContainer {...containerProps}>
-          <Tag
-            {...rest}
-            {...extraAttributes}
-            {...sharedAttributes}
-            className={inputClasses}
-          />
-        </InputContainer>
-      );
-    }
-
+  if (noWrapper) {
     return (
       <Tag
         {...rest}
         {...extraAttributes}
         className={inputClasses}
         {...sharedAttributes}
+        placeholder={placeholder}
       />
     );
   }
-}
+
+  if (placeholder) {
+    return (
+      <InputContainer {...containerProps}>
+        <Tag
+          {...rest}
+          {...extraAttributes}
+          {...sharedAttributes}
+          className={inputClasses}
+          placeholder={placeholder}
+        />
+      </InputContainer>
+    );
+  }
+
+  if (inputPassword) {
+    return (
+      <InputContainer {...containerProps}>
+        <Tag
+          {...rest}
+          {...extraAttributes}
+          {...sharedAttributes}
+          type={isHidden ? 'password' : 'text'}
+          className={inputClasses}
+          placeholder={placeholder}
+        />
+        <span className='password-icon' aria-hidden='true'>
+          <Icon
+            size='sm'
+            icon={`it-password-${hasIcon ? 'visible' : 'invisible'}`}
+            className='password-icon-visible'
+            onClick={toggleShow}
+          />
+        </span>
+      </InputContainer>
+    );
+  }
+  if (normalized) {
+    return (
+      <InputContainer {...containerProps}>
+        <Tag
+          {...rest}
+          {...extraAttributes}
+          {...sharedAttributes}
+          className={inputClasses}
+          readOnly
+        />
+      </InputContainer>
+    );
+  }
+  if (label || infoText) {
+    return (
+      <InputContainer {...containerProps}>
+        <Tag
+          {...rest}
+          {...extraAttributes}
+          {...sharedAttributes}
+          className={inputClasses}
+        />
+      </InputContainer>
+    );
+  }
+
+  return (
+    <Tag
+      {...rest}
+      {...extraAttributes}
+      className={inputClasses}
+      {...sharedAttributes}
+    />
+  );
+};

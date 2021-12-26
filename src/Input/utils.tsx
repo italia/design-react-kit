@@ -1,9 +1,7 @@
 import classNames from 'classnames';
-import { Util } from 'reactstrap';
 import type { CSSModule } from 'reactstrap';
+import { mapToCssModules } from '../utils';
 import type { InputProps } from './Input';
-// @ts-ignore
-const { mapToCssModules } = Util;
 
 type ValidationProps = Pick<InputProps, 'valid' | 'invalid'>;
 type TypeProps = Pick<InputProps, 'plaintext' | 'type'> & {

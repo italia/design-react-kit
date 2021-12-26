@@ -1,8 +1,8 @@
-import React, { PureComponent, ElementType, ButtonHTMLAttributes } from 'react';
+import React, { ElementType, ButtonHTMLAttributes } from 'react';
 import classNames from 'classnames';
 import { NavbarToggler } from 'reactstrap';
 
-import { HeaderContext, SLIM, NAVBAR } from './HeaderContext';
+import { SLIM, NAVBAR, useHeaderContext } from './HeaderContext';
 
 export interface HeaderTogglerProps
   extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -18,29 +18,31 @@ export interface HeaderTogglerProps
   type?: 'button' | 'submit' | 'reset';
 }
 
-export class HeaderToggler extends PureComponent<HeaderTogglerProps> {
-  static contextType = HeaderContext;
-  render() {
-    const { className, tag, type, ...attributes } = this.props;
-    const { type: HeaderType } = this.context;
-    const BUTTON = 'button';
-    const defaultTag = HeaderType === SLIM ? 'a' : BUTTON;
-    const defaultType = HeaderType === SLIM ? undefined : BUTTON;
-    const classes = classNames(
-      {
-        'it-opener d-lg-none': HeaderType === SLIM,
-        'custom-navbar-toggler': HeaderType === NAVBAR
-      },
-      className
-    );
-    return (
-      <NavbarToggler
-        className={classes}
-        {...attributes}
-        tag={tag || defaultTag}
-        type={type || defaultType}
-        href='#'
-      />
-    );
-  }
-}
+const BUTTON = 'button';
+
+export const HeaderToggler = ({
+  className,
+  tag,
+  type,
+  ...attributes
+}: HeaderTogglerProps) => {
+  const HeaderType = useHeaderContext();
+  const defaultTag = HeaderType === SLIM ? 'a' : BUTTON;
+  const defaultType = HeaderType === SLIM ? undefined : BUTTON;
+  const classes = classNames(
+    {
+      'it-opener d-lg-none': HeaderType === SLIM,
+      'custom-navbar-toggler': HeaderType === NAVBAR
+    },
+    className
+  );
+  return (
+    <NavbarToggler
+      className={classes}
+      {...attributes}
+      tag={tag || defaultTag}
+      type={type || defaultType}
+      href='#'
+    />
+  );
+};

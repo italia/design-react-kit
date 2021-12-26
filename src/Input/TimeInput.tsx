@@ -2,9 +2,10 @@ import React, { HTMLAttributes, ReactNode, useState } from 'react';
 import classNames from 'classnames';
 
 import { noop } from '../utils';
-import { Input, InputProps } from './Input';
+import { Input } from './Input';
 import { Icon } from '../Icon/Icon';
 import { getClasses, getInfoTextControlClass } from './utils';
+import type { InputProps } from './Input';
 
 export const addTime = (value: string, maxValue: number): string => {
   const currTime = Number(value);

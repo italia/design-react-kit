@@ -1,12 +1,7 @@
-import React, {
-  AnchorHTMLAttributes,
-  ElementType,
-  ReactChild,
-  PureComponent
-} from 'react';
+import React, { AnchorHTMLAttributes, ElementType, ReactChild } from 'react';
 import classNames from 'classnames';
 import { CSSModule, NavbarBrand } from 'reactstrap';
-import { HeaderContext, CENTER } from './HeaderContext';
+import { CENTER, useHeaderContext } from './HeaderContext';
 import { Icon } from '../Icon/Icon';
 
 export interface HeaderBrandProps
@@ -27,64 +22,59 @@ export interface HeaderBrandProps
   children: ReactChild | ReactChild[];
 }
 
-export class HeaderBrand extends PureComponent<HeaderBrandProps> {
-  static contextType = HeaderContext;
-
-  render() {
-    const {
-      className,
-      href,
-      iconName,
-      children,
-      tag = 'a',
-      responsive = false,
-      ...attributes
-    } = this.props;
-    const { type } = this.context;
-    const defaultAttributes = { tag };
-    if (type !== CENTER) {
-      const classes = classNames('d-lg-block', className, {
-        'd-none': !responsive
-      });
-      return (
-        <NavbarBrand
-          className={classes}
-          href={href}
-          {...attributes}
-          {...defaultAttributes}
-        >
-          {children}
-        </NavbarBrand>
-      );
-    }
+export const HeaderBrand = ({
+  className,
+  href,
+  iconName,
+  children,
+  tag = 'a',
+  responsive = false,
+  ...attributes
+}: HeaderBrandProps) => {
+  const type = useHeaderContext();
+  const defaultAttributes = { tag };
+  if (type !== CENTER) {
+    const classes = classNames('d-lg-block', className, {
+      'd-none': !responsive
+    });
     return (
-      <div className='it-brand-wrapper'>
-        <a href={href}>
-          {iconName && <Icon icon={iconName} />}
-          <div className='it-brand-text'>
-            {React.Children.map(children, (child, i) => {
-              if (
-                typeof child !== 'object' ||
-                child == null ||
-                !('props' in child)
-              ) {
-                return child;
-              }
-              // convention here: first item is the main title, while others subtext
-              const className = classNames(
-                child.props.className,
-                { 'd-none d-md-block': i } // subtext is anything but first element
-              );
-
-              const props = {
-                className
-              };
-
-              return React.cloneElement(child, props);
-            })}
-          </div>
-        </a>
-      </div>
+      <NavbarBrand
+        className={classes}
+        href={href}
+        {...attributes}
+        {...defaultAttributes}
+      >
+        {children}
+      </NavbarBrand>
     );
   }
-}
+  return (
+    <div className='it-brand-wrapper'>
+      <a href={href}>
+        {iconName && <Icon icon={iconName} />}
+        <div className='it-brand-text'>
+          {React.Children.map(children, (child, i) => {
+            if (
+              typeof child !== 'object' ||
+              child == null ||
+              !('props' in child)
+            ) {
+              return child;
+            }
+            // convention here: first item is the main title, while others subtext
+            const className = classNames(
+              child.props.className,
+              { 'd-none d-md-block': i } // subtext is anything but first element
+            );
+
+            const props = {
+              className
+            };
+
+            return React.cloneElement(child, props);
+          })}
+        </div>
+      </a>
+    </div>
+  );
+};
