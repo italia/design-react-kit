@@ -43,6 +43,28 @@ In questo caso le label, nascoste visivamente, saranno contenute in uno `<span>`
   <Story id='componenti-toolbar--esempio-small' />
 </Canvas>
 
+### Stato degli elementi
+
+Al componente `ToolbarItem` dell’elemento attivo va applicata l'attributo `active`.
+
+Gli elementi disabilitati avranno invece un attributo `disabled`. Il componente provvederà agli accorgimenti relativi all'accessibilità.
+
+## Divisori
+
+Per aggiungere degli elementi divisori fra gli elementi utilizzare il componente `ToolbarItemDivider`.
+
+<Canvas>
+  <Story id='componenti-toolbar--esempio-with-divider' />
+</Canvas>
+
+## Toolbar con Badge
+
+I Badge possono essere utilizzati per indicare contenuti non letti o alert di vario tipo.
+
+### Grande con Badge
+
+<!-- Nella versione grande i Badge possono contenere dei numeri. Il numero dei contenuti non letti o nuovi va indicato anche all’interno della label in uno <span> con classe .sr-only riservato agli screen reader. -->
+
 ## Argomenti componente
 
 ### Toolbar

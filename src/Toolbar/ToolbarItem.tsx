@@ -9,17 +9,37 @@ import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
 import { SizeContext, ToolbarProps } from './Toolbar';
 
+export interface ToolbarItemBadge {
+  value?: number;
+  label: string;
+  srText: string;
+}
+
 export interface ToolbarItemProps extends HTMLAttributes<HTMLElement> {
+  /** Utilizzarlo in caso di utilizzo di componenti personalizzati. Il valore di default è il tag anchor. */
   tag?: ElementType;
+  /** Indica l'elemento attivo nella Toolbar */
   active?: boolean;
+  /** Mostra l'elemento come disabilitato nella Toolbar */
   disabled?: boolean;
+  /** L'URL a cui far puntare il tag anchor. */
   url?: string;
+  /**
+   * L'etichetta da mostrare sotto l'icona. In caso di dimensioni più piccole verrà
+   * automaticamente sintegrata in uno span per gli screen reader.
+   */
   label?: string;
+  /** Il nome dell'icona da utilizzare */
   iconName: string;
-  isIconSmall?: boolean;
-  alert?: boolean;
-  badge?: number;
-  onLinkClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
+  /**
+   * Il badge da mostrare sull'icona del ToolbarItem.
+   * Un badge è composto da:
+   *   * una label per screen reader da affiancare alla label corrente (ad esempio: "da leggere")
+   *   * un testo completo da mostrare per Toolbar di grandezza media e piccola (ad esempio: "ci sono 42 nuovi documenti da esaminare")
+   *   * un eventuale valore numerico (omesso in caso di un badge di alert)
+   **/
+  badge?: number | ToolbarItemBadge;
+  onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
 }
 
 const disabledMessage = ' elemento disabilitato';
@@ -27,11 +47,13 @@ const disabledMessage = ' elemento disabilitato';
 function ToolbarItemLabel({
   label,
   size,
-  disabled
+  disabled,
+  badge
 }: {
   label: ToolbarItemProps['label'];
   size: ToolbarProps['size'];
   disabled: ToolbarItemProps['disabled'];
+  badge?: ToolbarItemBadge;
 }) {
   const showSrText = size && size !== 'large';
   if (disabled) {
@@ -48,10 +70,14 @@ function ToolbarItemLabel({
   if (!label) {
     return null;
   }
+
   return showSrText ? (
     <span className='sr-only'>{label}</span>
   ) : (
-    <span className='toolbar-label'>{label}</span>
+    <span className='toolbar-label'>
+      {label}
+      {badge?.label ? <span className='sr-only'>{badge.label}</span> : null}
+    </span>
   );
 }
 
@@ -68,15 +94,12 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
   const Tag = tag;
   const size = useContext(SizeContext);
   const activeClass = classNames({ active, disabled });
-  const badgeWrapper = Boolean(badge) && (
-    <div className='badge-wrapper'>
-      <span className='toolbar-badge'>{badge}</span>
-    </div>
-  );
 
   const ariaAttributes = {
     ...(disabled && { 'aria-disabled': true })
   };
+  const badgeObject =
+    typeof badge === 'number' ? { value: badge, label: '', srText: '' } : badge;
 
   return (
     <li>
@@ -86,9 +109,21 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
         {...attributes}
         {...ariaAttributes}
       >
-        {badgeWrapper}
+        {badgeObject ? (
+          <div className='badge-wrapper'>
+            <span className='toolbar-badge'>{badgeObject.value}</span>
+            {size !== 'large' && (
+              <span className='sr-only'>{badgeObject.srText}</span>
+            )}
+          </div>
+        ) : null}
         <Icon icon={iconName} size={size === 'small' ? 'sm' : ''} />
-        <ToolbarItemLabel label={label} size={size} disabled={disabled} />
+        <ToolbarItemLabel
+          label={label}
+          size={size}
+          disabled={disabled}
+          badge={badgeObject}
+        />
       </Tag>
     </li>
   );
