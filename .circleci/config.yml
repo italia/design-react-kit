@@ -16,7 +16,7 @@ aliases:
 
   - &npm_install
     name: Install Packages
-    command: yarn
+    command: yarn --frozen-lockfile
 
   - &save_cache
     paths:
@@ -93,11 +93,6 @@ jobs:
 
     steps:
       - checkout
-
-      # Download and cache dependencies
-      - restore_cache: *restore_cache
-      - run: *npm_install
-      - save_cache: *save_cache
 
       - attach_workspace:
           # Must be absolute path or relative path from working_directory
