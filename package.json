@@ -59,9 +59,12 @@
     "storybook:deploy": "npx gh-pages -d storybook-static -m 'Update GitHub Pages [ci skip]'"
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
-    "bootstrap-italia": "1.4.3"
+    "bootstrap-italia": "1.4.3",
+    "react": ">=16.8.0"
   },
+  "browserslist": [
+    "extends browserslist-config-design-italia"
+  ],
   "size-limit": [
     {
       "path": "dist/cjs/index.js",
@@ -97,6 +100,7 @@
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.2.2",
     "bootstrap-italia": "^1.4.3",
+    "browserslist-config-design-italia": "^1.0.0",
     "circular-dependency-plugin": "^5.2.2",
     "eslint-plugin-mdx": "^1.13.0",
     "eslint-plugin-prettier": "^3.4.0",
@@ -126,14 +130,6 @@
     "reactstrap": "^8.9.0",
     "webfontloader": "^1.6.28"
   },
-  "browserslist": [
-    "defaults",
-    "ie 11",
-    "not ie_mob 11",
-    "not op_mini all",
-    "edge >= 13",
-    "safari 11"
-  ],
   "jest": {
     "transform": {
       ".(ts|tsx)$": "ts-jest",
