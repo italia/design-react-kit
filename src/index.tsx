@@ -281,6 +281,7 @@ export type {
   NotificationManagerProps,
   NotificationOptions
 } from './Notification';
+export type { TimeInputProps } from './Input/TimeInput';
 export type { ToolbarProps } from './Toolbar/Toolbar';
 export type { ToolbarItemProps } from './Toolbar/ToolbarItem';
 
