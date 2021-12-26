@@ -59,7 +59,8 @@
     "storybook:deploy": "npx gh-pages -d storybook-static -m 'Update GitHub Pages [ci skip]'"
   },
   "peerDependencies": {
-    "react": ">=16.8.0"
+    "react": ">=16.8.0",
+    "bootstrap-italia": "1.4.3"
   },
   "size-limit": [
     {
@@ -97,7 +98,6 @@
     "babel-loader": "^8.2.2",
     "bootstrap-italia": "^1.4.3",
     "circular-dependency-plugin": "^5.2.2",
-    "classnames": "^2.3.1",
     "eslint-plugin-mdx": "^1.13.0",
     "eslint-plugin-prettier": "^3.4.0",
     "husky": "^7.0.4",
@@ -116,6 +116,8 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
+    "classnames": "^2.3.1",
+    "is-number": "^7.0.0",
     "react-select": "^4.3.0",
     "react-stickup": "^1.12.0",
     "react-toastify": "^7.0.4",
