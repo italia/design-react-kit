@@ -230,6 +230,12 @@ export const EsempiInterattivi = ({
   block,
   disabled,
   label
+}: {
+  color: string;
+  dimension: 'lg' | 'sm' | 'xs';
+  block: boolean;
+  disabled: boolean;
+  label: string;
 }) => {
   return (
     <Button
