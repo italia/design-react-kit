@@ -19,14 +19,17 @@ let iconsCache: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {};
  * @param icons - the list of icons to preload
  * @returns true if the icons have been preloaded
  */
-export async function preloadIcons(icons: IconName[]) {
-  const preloadedIcons = await Promise.all(icons.map((icon) => loadIcon(icon)));
-  preloadedIcons.forEach(({ component }, i) => {
-    iconsCache[icons[i]] = ((() => component) as unknown) as FC<
-      SVGProps<SVGSVGElement>
-    >;
-  });
-  return true;
+export function preloadIcons(icons: IconName[]) {
+  return Promise.all(icons.map((icon) => loadIcon(icon))).then(
+    (preloadedIcons) => {
+      preloadedIcons.forEach(({ component }, i) => {
+        iconsCache[icons[i]] = ((() => component) as unknown) as FC<
+          SVGProps<SVGSVGElement>
+        >;
+      });
+      return true;
+    }
+  );
 }
 
 /**
