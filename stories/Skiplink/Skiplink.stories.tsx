@@ -13,6 +13,12 @@ export const _Esempi = () => {
     }
   }, []);
 
+  const onClick = () => {
+    if (footerRef.current) {
+      footerRef.current.scrollIntoView();
+    }
+  };
+
   return (
     <section tabIndex={-1} ref={containerRef}>
       <div id='#main' />
@@ -20,9 +26,7 @@ export const _Esempi = () => {
 
       <Skiplink>
         <SkiplinkItem href='#main'>Skip to main content</SkiplinkItem>
-        <SkiplinkItem onClick={() => footerRef.current.scrollIntoView()}>
-          Skip to footer
-        </SkiplinkItem>
+        <SkiplinkItem onClick={onClick}>Skip to footer</SkiplinkItem>
       </Skiplink>
     </section>
   );

@@ -1,4 +1,5 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
+import { Story } from '@storybook/react';
 import React from 'react';
 import {
   Container,
@@ -12,9 +13,9 @@ import {
   LinkList,
   LinkListItem
 } from '../../../src';
+import { TownLabels } from './types';
 
-// eslint-disable-next-line react/prop-types
-const Footer = ({ townName, townTagLine }) => (
+const Footer: Story<TownLabels> = ({ townName, townTagLine }) => (
   <footer className='it-footer'>
     <div className='it-footer-main'>
       <Container>

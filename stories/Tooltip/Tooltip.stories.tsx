@@ -1,4 +1,5 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
+import type { Story } from '@storybook/react';
 import React, { useState } from 'react';
 import { UncontrolledTooltip, Tooltip, Button } from '../../src';
 
@@ -6,7 +7,7 @@ export const Esempi = () => {
   const ids = ['Example1', 'Example2', 'Example3'];
 
   // Workaround for testing, do not use this
-  ids.map((id, i) => {
+  ids.map((id) => {
     const div = document.createElement('div');
     div.setAttribute('id', id);
     document.body.appendChild(div);
@@ -73,7 +74,7 @@ export const EsempiConControllo = () => {
   const [openThree, toggleThree] = useState(false);
 
   // Workaround for testing, do not use this
-  ids.map((id, i) => {
+  ids.map((id) => {
     const div = document.createElement('div');
     div.setAttribute('id', id);
     document.body.appendChild(div);
@@ -152,7 +153,7 @@ export const Posizioni = () => {
   const ids = ['example1', 'example2', 'example3', 'example4', 'example5'];
 
   // Workaround for testing, do not use this
-  ids.map((id, i) => {
+  ids.map((id) => {
     const div = document.createElement('div');
     div.setAttribute('id', id);
     document.body.appendChild(div);
@@ -196,7 +197,15 @@ export const Posizioni = () => {
   );
 };
 
-export const _EsempiInterattivi = ({ placement, text }) => {
+type EsempiInterattiviProps = {
+  placement: 'top' | 'bottom' | 'left' | 'right';
+  text: string;
+};
+
+export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({
+  placement,
+  text
+}) => {
   // TODO find a better way to handle this
   // Storyshot does not use the dom so can't render refs
   // to fix the problem we append the elements manually

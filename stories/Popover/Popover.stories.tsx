@@ -1,6 +1,6 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
 import React, { useState, useRef } from 'react';
-import { Meta } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 
 import { Popover, PopoverHeader, PopoverBody, Button, Icon } from '../../src';
 
@@ -45,7 +45,7 @@ const PopoverExample = () => {
   );
 };
 
-export const _Esempi = PopoverExample.bind({});
+export const _Esempi: Story = PopoverExample.bind({});
 
 const ElementiDisabilitatiComponent = () => {
   const [popoverOpen, setPopoverOpen] = useState(false);
@@ -74,7 +74,9 @@ const ElementiDisabilitatiComponent = () => {
     </>
   );
 };
-export const _ElementiDisabilitati = ElementiDisabilitatiComponent.bind({});
+export const _ElementiDisabilitati: Story = ElementiDisabilitatiComponent.bind(
+  {}
+);
 _ElementiDisabilitati.storyName = 'Elementi disabilitati';
 
 const PopoverPositionExample = () => {
@@ -197,7 +199,7 @@ const PopoverPositionExample = () => {
     </div>
   );
 };
-export const _LeQuattroDirezioni = PopoverPositionExample.bind({});
+export const _LeQuattroDirezioni: Story = PopoverPositionExample.bind({});
 _LeQuattroDirezioni.storyName = 'Le quattro direzioni';
 
 const PopoverIconLink = () => {
@@ -235,7 +237,7 @@ const PopoverIconLink = () => {
     </div>
   );
 };
-export const _TitoloConIconaELink = PopoverIconLink.bind({});
+export const _TitoloConIconaELink: Story = PopoverIconLink.bind({});
 _TitoloConIconaELink.storyName = 'Titolo con icona e link';
 
 const PopoverHover = () => {
@@ -267,7 +269,7 @@ const PopoverHover = () => {
     </div>
   );
 };
-export const _ModalitaHover = PopoverHover.bind({});
+export const _ModalitaHover: Story = PopoverHover.bind({});
 _ModalitaHover.storyName = 'Modalità Hover';
 
 const PopoverFocus = () => {
@@ -299,15 +301,15 @@ const PopoverFocus = () => {
     </div>
   );
 };
-export const DismissAlClickSuccessivo = PopoverFocus.bind({});
+export const DismissAlClickSuccessivo: Story = PopoverFocus.bind({});
 DismissAlClickSuccessivo.storyName = 'Dismiss al click successivo';
 
+// TODO: fix types here
+// using Story or adding types to props breaks storybook
 export const _EsempiInterattivi = ({ disabled, placement, title, text }) => {
   const [isOpen, toggle] = useState(false);
 
   const id = 'example';
-  // Avoid Jest complaints
-  // const target = () => document.getElementById(id)
   return (
     <div style={{ padding: 250, textAlign: 'center' }}>
       <Button

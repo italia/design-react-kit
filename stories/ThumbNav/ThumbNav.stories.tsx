@@ -1,3 +1,4 @@
+import { Story } from '@storybook/react';
 import React from 'react';
 
 import { ThumbNav, ThumbNavItem } from '../../src';
@@ -122,7 +123,8 @@ export const EsempioVerticale = () => (
   </ThumbNav>
 );
 
-export const Overlay = ({ position }) => (
+type OverlayProps = { position: 'top' | 'right' | 'bottom' | 'left' };
+export const Overlay: Story<OverlayProps> = ({ position }) => (
   <div className='position-relative'>
     <img
       src='https://picsum.photos/1280/720?image=1050'
@@ -167,13 +169,19 @@ Overlay.argTypes = {
   }
 };
 
-export const OverlayBottom = Overlay.bind({});
+export const OverlayBottom: Story<OverlayProps> = Overlay.bind({});
 OverlayBottom.args = { position: 'bottom' };
-export const OverlayTop = Overlay.bind({ position: 'top' });
+export const OverlayTop: Story<OverlayProps> = Overlay.bind({
+  position: 'top'
+});
 OverlayTop.args = { position: 'top' };
-export const OverlayLeft = Overlay.bind({ position: 'left' });
+export const OverlayLeft: Story<OverlayProps> = Overlay.bind({
+  position: 'left'
+});
 OverlayLeft.args = { position: 'left' };
-export const OverlayRight = Overlay.bind({ position: 'right' });
+export const OverlayRight: Story<OverlayProps> = Overlay.bind({
+  position: 'right'
+});
 OverlayRight.args = { position: 'right' };
 
 export const EsempioFixed = () => (
@@ -211,7 +219,10 @@ export const EsempioFixed = () => (
   </ThumbNav>
 );
 
-export const EsempioAutoWidth = ({ rowItems }) => (
+type EsempioAutoWidthProps = { rowItems: 2 | 3 | 4 | 5 };
+export const EsempioAutoWidth: Story<EsempioAutoWidthProps> = ({
+  rowItems
+}) => (
   <ThumbNav rowItems={rowItems}>
     <ThumbNavItem
       targetUrl='#'
@@ -258,9 +269,13 @@ EsempioAutoWidth.argTypes = {
   }
 };
 
-export const EsempioAutoWidthThree = EsempioAutoWidth.bind({});
+export const EsempioAutoWidthThree: Story<EsempioAutoWidthProps> = EsempioAutoWidth.bind(
+  {}
+);
 EsempioAutoWidthThree.args = { rowItems: 3 };
-export const EsempioAutoWidthFive = EsempioAutoWidth.bind({});
+export const EsempioAutoWidthFive: Story<EsempioAutoWidthProps> = EsempioAutoWidth.bind(
+  {}
+);
 EsempioAutoWidthFive.args = { rowItems: 5 };
 
 export default {

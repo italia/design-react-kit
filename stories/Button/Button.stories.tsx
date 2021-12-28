@@ -2,6 +2,7 @@
 import React from 'react';
 
 import { Button, Icon } from '../../src';
+import type { ButtonProps } from '../../src';
 
 export default {
   title: 'Componenti/Button'
@@ -224,19 +225,18 @@ const colors = [
   'Link'
 ];
 
+type EsempiInterattiviProps = Pick<
+  ButtonProps,
+  'color' | 'disabled' | 'block'
+> & { dimension: ButtonProps['size']; label: string };
+
 export const EsempiInterattivi = ({
   color,
   dimension,
   block,
   disabled,
   label
-}: {
-  color: string;
-  dimension: 'lg' | 'sm' | 'xs';
-  block: boolean;
-  disabled: boolean;
-  label: string;
-}) => {
+}: EsempiInterattiviProps) => {
   return (
     <Button
       color={color.toLowerCase()}
