@@ -1,0 +1,14 @@
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - run: yarn install --frozen-lockfile
+    - run: yarn test:ci
+
+    - uses: codecov/codecov-action@v2

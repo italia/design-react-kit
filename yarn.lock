@@ -4276,9 +4276,9 @@ bootstrap-select@1.13.17:
   integrity sha512-LbzSQumoZNYGuoYMpShKIHbJ2qUWFLI0qVHVeKqw5+nfhtMxz+Gre1+IuI3X74bTzQfalBqDKc8fS8tZMdciWg==
 
 bootstrap@^4.5.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.6.0.tgz#97b9f29ac98f98dfa43bf7468262d84392552fd7"
-  integrity sha512-Io55IuQY3kydzHtbGvQya3H+KorS/M9rSNyfCGCg9WZ4pyT/lCxIlpJgG1GXW/PswzC84Tr2fBYi+7+jFVQQBw==
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.6.1.tgz#bc25380c2c14192374e8dec07cf01b2742d222a2"
+  integrity sha512-0dj+VgI9Ecom+rvvpNZ4MUZJz8dcX7WCX+eTID9+/8HgOkv3dsRzi8BGeZJCQU6flWQVYxwTQnEZFrmJSEO7og==
 
 boxen@^4.2.0:
   version "4.2.0"
@@ -4402,6 +4402,11 @@ browserify-zlib@^0.2.0:
   integrity sha512-Z942RysHXmJrhqk88FmKBVq/v5tqmSkDz7p54G/MGyjMnCFFnC79XWNbg+Vta8W6Wb2qtSZTSxIGkJrRpCFEiA==
   dependencies:
     pako "~1.0.5"
+
+browserslist-config-design-italia@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/browserslist-config-design-italia/-/browserslist-config-design-italia-1.0.0.tgz#24be205f5c9960d7df6d99606150eb9bb6f0ccca"
+  integrity sha512-Nj1b/ERuNYrbmp/2Qdl9J7sxyb2ulUXlEMYidjCX1UeHYmGD5xHk8oqezvmLIcPo013cDQeSVmEMbO9fiS4Smw==
 
 browserslist@4.14.2:
   version "4.14.2"
