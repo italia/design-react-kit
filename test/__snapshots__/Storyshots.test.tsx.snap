@@ -7662,6 +7662,69 @@ exports[`Storyshots Componenti/Form/Toggles Toggles Disabilitate 1`] = `
 </div>
 `;
 
+exports[`Storyshots Componenti/Forward Esempi 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <div>
+    <div
+      className="card-wrapper"
+    >
+      <div
+        className="card"
+      >
+        <a
+          className="forward"
+          onClick={[Function]}
+        >
+          <svg
+            className="icon icon-primary"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.6 15.4L6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <p>
+        Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do pain. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+      </p>
+      <p>
+        Nulla est ullamco ut irure incididunt nothing Lorem Lorem minim irure officia enim reprehenderit. Magna duis labore cillum sint adipisicing exercitation ipsum. Nostrud ut anim non exercitation velit laboris fugiat cupidatat. Commodo esse pain fugiat sint velit ullamco magna consequat voluptate minim amet aliquip ipsum aute laboris nisi. Labore labore veniam irure irure ipsum pariatur mollit magna in cupidatat pain magna irure esse tempor ad mollit. Pain in pain nothing minim amet ipsum officia consectetur amet ullamco voluptate nisi commodo ea sit eu.
+      </p>
+      <p>
+        Sint sit mollit irure quis est nostrud cillum consequat Lorem esse do quis dolor esse fugiat sunt do. Eu ex commodo veniam Lorem aliquip laborum occaecat qui Lorem esse mollit pain anim cupidatat. Deserunt officia id Lorem nostrud aute id commodo elit eiusmod enim irure amet eiusmod qui reprehenderit nostrud tempor. Fugiat ipsum excepteur in aliqua non et quis aliquip ad irure in labore cillum elit enim. Consequat aliquip incididunt ipsum et minim laborum laborum laborum et cillum labore. Deserunt adipisicing cillum id nulla minim nostrud labore eiusmod et amet. Laboris consequat consequat commodo non ut non aliquip reprehenderit nulla anim occaecat. Sunt sit ullamco reprehenderit irure ea ullamco Lorem aute nostrud magna.
+      </p>
+      <p>
+        Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do pain. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+      </p>
+      <p>
+        Sint sit mollit irure quis est nostrud cillum consequat Lorem esse do quis dolor esse fugiat sunt do. Eu ex commodo veniam Lorem aliquip laborum occaecat qui Lorem esse mollit pain anim cupidatat. Deserunt officia id Lorem nostrud aute id commodo elit eiusmod enim irure amet eiusmod qui reprehenderit nostrud tempor. Fugiat ipsum excepteur in aliqua non et quis aliquip ad irure in labore cillum elit enim. Consequat aliquip incididunt ipsum et minim laborum laborum laborum et cillum labore. Deserunt adipisicing cillum id nulla minim nostrud labore eiusmod et amet. Laboris consequat consequat commodo non ut non aliquip reprehenderit nulla anim occaecat. Sunt sit ullamco reprehenderit irure ea ullamco Lorem aute nostrud magna.
+      </p>
+      <p>
+        Nulla est ullamco ut irure incididunt nothing Lorem Lorem minim irure officia enim reprehenderit. Magna duis labore cillum sint adipisicing exercitation ipsum. Nostrud ut anim non exercitation velit laboris fugiat cupidatat. Commodo esse pain fugiat sint velit ullamco magna consequat voluptate minim amet aliquip ipsum aute laboris nisi. Labore labore veniam irure irure ipsum pariatur mollit magna in cupidatat pain magna irure esse tempor ad mollit. Pain in pain nothing minim amet ipsum officia consectetur amet ullamco voluptate nisi commodo ea sit eu.
+      </p>
+    </div>
+    <div>
+      Scroll to Here
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Componenti/Hero Hero Con Sfondo 1`] = `
 <div
   style={
@@ -11471,6 +11534,2136 @@ exports[`Storyshots Componenti/LinkList/Con controlli Secondary Action 1`] = `
       </li>
     </ul>
   </div>
+</div>
+`;
+
+exports[`Storyshots Componenti/Megamenu Classico 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <nav
+    className="has-megamenu navbar navbar-expand-lg"
+  >
+    <button
+      aria-label="Toggle navigation"
+      className="custom-navbar-toggler navbar-toggler"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 12a.9.9 0 01-1 1 1 1 0 010-2 .9.9 0 011 1zM3 4.5a.9.9 0 00-1 1 .9.9 0 001 1 .9.9 0 001-1 .9.9 0 00-1-1zm0 13a1 1 0 000 2 1 1 0 000-2zM6 5v1h16V5zm0 7.5h16v-1H6zM6 19h16v-1H6z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+    <div
+      className="navbar-collapsable collapse"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <div
+        className="overlay"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      />
+      <div
+        className="close-div sr-only"
+      >
+        <button
+          className="btn close-menu"
+          type="button"
+        >
+          <span
+            className="it-close"
+          />
+          close
+        </button>
+      </div>
+      <div
+        className="menu-wrapper"
+      >
+        <ul
+          className="navbar-nav"
+        >
+          <li
+            className="megamenu dropdown nav-item"
+            onKeyDown={[Function]}
+          >
+            <a
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Megamenu Classico
+            </a>
+            <div
+              aria-hidden={true}
+              className="dropdown-menu"
+              role="menu"
+              tabIndex="-1"
+            >
+              <div
+                className="row"
+              >
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Componenti/Megamenu Con Call To Action A Destra 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <nav
+    className="has-megamenu navbar navbar-expand-lg"
+  >
+    <button
+      aria-label="Toggle navigation"
+      className="custom-navbar-toggler navbar-toggler"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 12a.9.9 0 01-1 1 1 1 0 010-2 .9.9 0 011 1zM3 4.5a.9.9 0 00-1 1 .9.9 0 001 1 .9.9 0 001-1 .9.9 0 00-1-1zm0 13a1 1 0 000 2 1 1 0 000-2zM6 5v1h16V5zm0 7.5h16v-1H6zM6 19h16v-1H6z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+    <div
+      className="navbar-collapsable collapse"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <div
+        className="overlay"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      />
+      <div
+        className="close-div sr-only"
+      >
+        <button
+          className="btn close-menu"
+          type="button"
+        >
+          <span
+            className="it-close"
+          />
+          close
+        </button>
+      </div>
+      <div
+        className="menu-wrapper"
+      >
+        <ul
+          className="navbar-nav"
+        >
+          <li
+            className="megamenu dropdown nav-item"
+            onKeyDown={[Function]}
+          >
+            <a
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Megamenu con Call to Action a destra
+            </a>
+            <div
+              aria-hidden={true}
+              className="dropdown-menu"
+              role="menu"
+              tabIndex="-1"
+            >
+              <div
+                className="max-height-col row"
+              >
+                <div
+                  className="col-12 col-lg-8"
+                >
+                  <div
+                    className="margin-right-col row"
+                  >
+                    <div
+                      className="col-12 col-lg-4"
+                    >
+                      <div
+                        className="link-list-wrapper"
+                      >
+                        <ul
+                          className="link-list"
+                        >
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 1
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 2
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      className="col-12 col-lg-4"
+                    >
+                      <div
+                        className="link-list-wrapper"
+                      >
+                        <ul
+                          className="link-list"
+                        >
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 1
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 2
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      className="col-12 col-lg-4"
+                    >
+                      <div
+                        className="link-list-wrapper"
+                      >
+                        <ul
+                          className="link-list"
+                        >
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 1
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 2
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="max-height-col row"
+                  >
+                    <div
+                      className="it-vertical col"
+                    >
+                      <div
+                        className="link-list-wrapper"
+                      >
+                        <ul
+                          className="link-list"
+                        >
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list 1
+                              <svg
+                                className="icon icon-primary icon-sm"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+                                />
+                                <path
+                                  d="M0 0h24v24H0z"
+                                  fill="none"
+                                />
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list 2
+                              <svg
+                                className="icon icon-primary icon-sm"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+                                />
+                                <path
+                                  d="M0 0h24v24H0z"
+                                  fill="none"
+                                />
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list 3
+                              <svg
+                                className="icon icon-primary icon-sm"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+                                />
+                                <path
+                                  d="M0 0h24v24H0z"
+                                  fill="none"
+                                />
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Componenti/Megamenu Con Call To Action In Basso 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <nav
+    className="has-megamenu navbar navbar-expand-lg"
+  >
+    <button
+      aria-label="Toggle navigation"
+      className="custom-navbar-toggler navbar-toggler"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 12a.9.9 0 01-1 1 1 1 0 010-2 .9.9 0 011 1zM3 4.5a.9.9 0 00-1 1 .9.9 0 001 1 .9.9 0 001-1 .9.9 0 00-1-1zm0 13a1 1 0 000 2 1 1 0 000-2zM6 5v1h16V5zm0 7.5h16v-1H6zM6 19h16v-1H6z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+    <div
+      className="navbar-collapsable collapse"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <div
+        className="overlay"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      />
+      <div
+        className="close-div sr-only"
+      >
+        <button
+          className="btn close-menu"
+          type="button"
+        >
+          <span
+            className="it-close"
+          />
+          close
+        </button>
+      </div>
+      <div
+        className="menu-wrapper"
+      >
+        <ul
+          className="navbar-nav"
+        >
+          <li
+            className="megamenu dropdown nav-item"
+            onKeyDown={[Function]}
+          >
+            <a
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Megamenu con Call to Action in basso
+            </a>
+            <div
+              aria-hidden={true}
+              className="dropdown-menu"
+              role="menu"
+              tabIndex="-1"
+            >
+              <div
+                className="row"
+              >
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="it-megamenu-footer"
+              >
+                <div
+                  className="row"
+                >
+                  <div
+                    className="col-12 col-lg-4"
+                  >
+                    <div
+                      className="link-list-wrapper"
+                    >
+                      <ul
+                        className="link-list"
+                      >
+                        <li>
+                          <a
+                            className="list-item"
+                            href="#"
+                          >
+                            <svg
+                              className="icon icon-primary icon-sm"
+                              role="img"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+                              />
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                            </svg>
+                            Link list 1
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    className="col-12 col-lg-4"
+                  >
+                    <div
+                      className="link-list-wrapper"
+                    >
+                      <ul
+                        className="link-list"
+                      >
+                        <li>
+                          <a
+                            className="list-item"
+                            href="#"
+                          >
+                            <svg
+                              className="icon icon-primary icon-sm"
+                              role="img"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+                              />
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                            </svg>
+                            Link list 2
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    className="col-12 col-lg-4"
+                  >
+                    <div
+                      className="link-list-wrapper"
+                    >
+                      <ul
+                        className="link-list"
+                      >
+                        <li>
+                          <a
+                            className="list-item"
+                            href="#"
+                          >
+                            <svg
+                              className="icon icon-primary icon-sm"
+                              role="img"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M12 4.9l1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+                              />
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                            </svg>
+                            Link list 3
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Componenti/Megamenu Con Colonne Asimmetriche 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <nav
+    className="has-megamenu navbar navbar-expand-lg"
+  >
+    <button
+      aria-label="Toggle navigation"
+      className="custom-navbar-toggler navbar-toggler"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 12a.9.9 0 01-1 1 1 1 0 010-2 .9.9 0 011 1zM3 4.5a.9.9 0 00-1 1 .9.9 0 001 1 .9.9 0 001-1 .9.9 0 00-1-1zm0 13a1 1 0 000 2 1 1 0 000-2zM6 5v1h16V5zm0 7.5h16v-1H6zM6 19h16v-1H6z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+    <div
+      className="navbar-collapsable collapse"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <div
+        className="overlay"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      />
+      <div
+        className="close-div sr-only"
+      >
+        <button
+          className="btn close-menu"
+          type="button"
+        >
+          <span
+            className="it-close"
+          />
+          close
+        </button>
+      </div>
+      <div
+        className="menu-wrapper"
+      >
+        <ul
+          className="navbar-nav"
+        >
+          <li
+            className="megamenu dropdown nav-item"
+            onKeyDown={[Function]}
+          >
+            <a
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Megamenu con Colonne Asimmetriche
+            </a>
+            <div
+              aria-hidden={true}
+              className="dropdown-menu"
+              role="menu"
+              tabIndex="-1"
+            >
+              <div
+                className="row"
+              >
+                <div
+                  className="col-12 col-lg-8"
+                >
+                  <div
+                    className="row"
+                  >
+                    <div
+                      className="col-12"
+                    >
+                      <h3
+                        className="it-heading-megacolumn"
+                      >
+                        Heading title left
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    className="row"
+                  >
+                    <div
+                      className="col-12 col-lg-6"
+                    >
+                      <div
+                        className="link-list-wrapper"
+                      >
+                        <ul
+                          className="link-list"
+                        >
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 1
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 2
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      className="col-12 col-lg-6"
+                    >
+                      <div
+                        className="link-list-wrapper"
+                      >
+                        <ul
+                          className="link-list"
+                        >
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 1
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 2
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="row"
+                  >
+                    <div
+                      className="col-12"
+                    >
+                      <h3
+                        className="it-heading-megacolumn"
+                      >
+                        Heading title right
+                      </h3>
+                    </div>
+                  </div>
+                  <div
+                    className="row"
+                  >
+                    <div
+                      className="col-12"
+                    >
+                      <div
+                        className="link-list-wrapper"
+                      >
+                        <ul
+                          className="link-list"
+                        >
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 1
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 2
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Componenti/Megamenu Con Immagine E Descrizione 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <nav
+    className="has-megamenu navbar navbar-expand-lg"
+  >
+    <button
+      aria-label="Toggle navigation"
+      className="custom-navbar-toggler navbar-toggler"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 12a.9.9 0 01-1 1 1 1 0 010-2 .9.9 0 011 1zM3 4.5a.9.9 0 00-1 1 .9.9 0 001 1 .9.9 0 001-1 .9.9 0 00-1-1zm0 13a1 1 0 000 2 1 1 0 000-2zM6 5v1h16V5zm0 7.5h16v-1H6zM6 19h16v-1H6z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+    <div
+      className="navbar-collapsable collapse"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <div
+        className="overlay"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      />
+      <div
+        className="close-div sr-only"
+      >
+        <button
+          className="btn close-menu"
+          type="button"
+        >
+          <span
+            className="it-close"
+          />
+          close
+        </button>
+      </div>
+      <div
+        className="menu-wrapper"
+      >
+        <ul
+          className="navbar-nav"
+        >
+          <li
+            className="megamenu dropdown nav-item"
+            onKeyDown={[Function]}
+          >
+            <a
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Megamenu con Immagine e Descrizione
+            </a>
+            <div
+              aria-hidden={true}
+              className="dropdown-menu"
+              role="menu"
+              tabIndex="-1"
+            >
+              <div
+                className="max-height-col row"
+              >
+                <div
+                  className="col-12 col-lg-8"
+                >
+                  <div
+                    className="margin-right-col row"
+                  >
+                    <div
+                      className="col-12 col-lg-4"
+                    >
+                      <div
+                        className="link-list-wrapper"
+                      >
+                        <ul
+                          className="link-list"
+                        >
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 1
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 2
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      className="col-12 col-lg-4"
+                    >
+                      <div
+                        className="link-list-wrapper"
+                      >
+                        <ul
+                          className="link-list"
+                        >
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 1
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 2
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      className="col-12 col-lg-4"
+                    >
+                      <div
+                        className="link-list-wrapper"
+                      >
+                        <ul
+                          className="link-list"
+                        >
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 1
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 2
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="list-item"
+                              href="#"
+                            >
+                              Link list Item 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="max-height-col row"
+                  >
+                    <div
+                      className="it-vertical it-description col"
+                    >
+                      <div
+                        className="description-content"
+                      >
+                        <img
+                          alt="placeholder"
+                          src="https://via.placeholder.com/225x110/ebebeb/808080/?text=Immagine"
+                          title="placeholder title"
+                        />
+                        <p>
+                          Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Componenti/Megamenu Con Intestazione 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <nav
+    className="has-megamenu navbar navbar-expand-lg"
+  >
+    <button
+      aria-label="Toggle navigation"
+      className="custom-navbar-toggler navbar-toggler"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 12a.9.9 0 01-1 1 1 1 0 010-2 .9.9 0 011 1zM3 4.5a.9.9 0 00-1 1 .9.9 0 001 1 .9.9 0 001-1 .9.9 0 00-1-1zm0 13a1 1 0 000 2 1 1 0 000-2zM6 5v1h16V5zm0 7.5h16v-1H6zM6 19h16v-1H6z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+    <div
+      className="navbar-collapsable collapse"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <div
+        className="overlay"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      />
+      <div
+        className="close-div sr-only"
+      >
+        <button
+          className="btn close-menu"
+          type="button"
+        >
+          <span
+            className="it-close"
+          />
+          close
+        </button>
+      </div>
+      <div
+        className="menu-wrapper"
+      >
+        <ul
+          className="navbar-nav"
+        >
+          <li
+            className="megamenu dropdown nav-item"
+            onKeyDown={[Function]}
+          >
+            <a
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Megamenu con Intestazione
+            </a>
+            <div
+              aria-hidden={true}
+              className="dropdown-menu"
+              role="menu"
+              tabIndex="-1"
+            >
+              <div
+                className="row"
+              >
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <h3
+                          className="header list-item"
+                        >
+                          Heading 1
+                        </h3>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <h3
+                          className="header list-item"
+                        >
+                          Heading 2
+                        </h3>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <h3
+                          className="header list-item"
+                        >
+                          Heading 3
+                        </h3>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Componenti/Megamenu Con Intestazione E Link More 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <nav
+    className="has-megamenu navbar navbar-expand-lg"
+  >
+    <button
+      aria-label="Toggle navigation"
+      className="custom-navbar-toggler navbar-toggler"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 12a.9.9 0 01-1 1 1 1 0 010-2 .9.9 0 011 1zM3 4.5a.9.9 0 00-1 1 .9.9 0 001 1 .9.9 0 001-1 .9.9 0 00-1-1zm0 13a1 1 0 000 2 1 1 0 000-2zM6 5v1h16V5zm0 7.5h16v-1H6zM6 19h16v-1H6z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+    <div
+      className="navbar-collapsable collapse"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <div
+        className="overlay"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      />
+      <div
+        className="close-div sr-only"
+      >
+        <button
+          className="btn close-menu"
+          type="button"
+        >
+          <span
+            className="it-close"
+          />
+          close
+        </button>
+      </div>
+      <div
+        className="menu-wrapper"
+      >
+        <ul
+          className="navbar-nav"
+        >
+          <li
+            className="megamenu dropdown nav-item"
+            onKeyDown={[Function]}
+          >
+            <a
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Megamenu con Intestazione e Link More
+            </a>
+            <div
+              aria-hidden={true}
+              className="dropdown-menu"
+              role="menu"
+              tabIndex="-1"
+            >
+              <div
+                className="row"
+              >
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <h3
+                          className="header list-item"
+                        >
+                          Heading 1
+                        </h3>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                      <li
+                        className="it-more"
+                      >
+                        <a
+                          className="medium list-item"
+                          href="#"
+                        >
+                          View More
+                          <svg
+                            className="icon icon-primary icon-sm"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <h3
+                          className="header list-item"
+                        >
+                          Heading 2
+                        </h3>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                      <li
+                        className="it-more"
+                      >
+                        <a
+                          className="medium list-item"
+                          href="#"
+                        >
+                          View More
+                          <svg
+                            className="icon icon-primary icon-sm"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <h3
+                          className="header list-item"
+                        >
+                          Heading 3
+                        </h3>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                      <li
+                        className="it-more"
+                      >
+                        <a
+                          className="medium list-item"
+                          href="#"
+                        >
+                          View More
+                          <svg
+                            className="icon icon-primary icon-sm"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                            />
+                            <path
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Componenti/Megamenu Con Link More 1`] = `
+<div
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "0",
+      "padding": "48px 32px",
+      "position": "relative",
+      "textAlign": "initial",
+    }
+  }
+>
+  <nav
+    className="has-megamenu navbar navbar-expand-lg"
+  >
+    <button
+      aria-label="Toggle navigation"
+      className="custom-navbar-toggler navbar-toggler"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        className="icon icon-sm"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 12a.9.9 0 01-1 1 1 1 0 010-2 .9.9 0 011 1zM3 4.5a.9.9 0 00-1 1 .9.9 0 001 1 .9.9 0 001-1 .9.9 0 00-1-1zm0 13a1 1 0 000 2 1 1 0 000-2zM6 5v1h16V5zm0 7.5h16v-1H6zM6 19h16v-1H6z"
+        />
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+      </svg>
+    </button>
+    <div
+      className="navbar-collapsable collapse"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <div
+        className="overlay"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      />
+      <div
+        className="close-div sr-only"
+      >
+        <button
+          className="btn close-menu"
+          type="button"
+        >
+          <span
+            className="it-close"
+          />
+          close
+        </button>
+      </div>
+      <div
+        className="menu-wrapper"
+      >
+        <ul
+          className="navbar-nav"
+        >
+          <li
+            className="megamenu dropdown nav-item"
+            onKeyDown={[Function]}
+          >
+            <a
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle nav-link"
+              href="#"
+              onClick={[Function]}
+            >
+              Megamenu con Link More
+            </a>
+            <div
+              aria-hidden={true}
+              className="dropdown-menu"
+              role="menu"
+              tabIndex="-1"
+            >
+              <div
+                className="row"
+              >
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="col-12 col-lg-4"
+                >
+                  <div
+                    className="link-list-wrapper"
+                  >
+                    <ul
+                      className="link-list"
+                    >
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 2
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="list-item"
+                          href="#"
+                        >
+                          Link list Item 3
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="it-external"
+              >
+                <div
+                  className="row"
+                >
+                  <div
+                    className="col-12 col-lg-4"
+                  />
+                  <div
+                    className="col-12 col-lg-4"
+                  />
+                  <div
+                    className="col-12 col-lg-4"
+                  >
+                    <div
+                      className="link-list-wrapper"
+                    >
+                      <ul
+                        className="link-list"
+                      >
+                        <li
+                          className="it-more"
+                        >
+                          <a
+                            className="medium list-item"
+                            href="#"
+                          >
+                            Link list Item 5
+                            <svg
+                              className="icon icon-primary icon-sm"
+                              role="img"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M13.9 5.4l-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6zM19 12z"
+                              />
+                              <path
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </div>
 `;
 
