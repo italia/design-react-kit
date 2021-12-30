@@ -1,5 +1,6 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
 import React from 'react';
+import { Story } from '@storybook/react';
 import {
   Container,
   Row,
@@ -13,7 +14,11 @@ import {
   LinkListItem
 } from '../../src';
 
-export const Footer = ({ townName, townTagLine }) => {
+type FooterProps = {
+  townName: string;
+  townTagLine: string;
+};
+export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
   return (
     <footer className='it-footer'>
       <div className='it-footer-main'>

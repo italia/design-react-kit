@@ -226,7 +226,7 @@ const colors = [
 ];
 
 type EsempiInterattiviProps = Pick<
-  ButtonProps,
+  Required<ButtonProps>,
   'color' | 'disabled' | 'block'
 > & { dimension: ButtonProps['size']; label: string };
 

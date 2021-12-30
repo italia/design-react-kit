@@ -13,7 +13,7 @@ export interface ForwardProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   /** Classi aggiuntive da usare per il componente Forward */
   className?: string;
   /** Riferimento al nodo a cui scorrere quando premuto */
-  scrollToRef: MutableRefObject<Element>;
+  scrollToRef: MutableRefObject<Element | null>;
 }
 
 export const Forward: FC<ForwardProps> = ({
@@ -26,12 +26,14 @@ export const Forward: FC<ForwardProps> = ({
   return (
     <a
       className={classes}
-      onClick={() =>
-        scrollToRef.current.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        })
-      }
+      onClick={() => {
+        if (scrollToRef.current != null) {
+          scrollToRef.current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }}
       {...attributes}
     >
       {children}

@@ -515,7 +515,6 @@ export const EsempioInterattivoAdvanced_story_hidden = () => {
 };
 
 // Fake components used only to generate automatic arg table in docs
-
 export const NotifyFakeComponent_story_hidden = ({
   title,
   body = undefined,

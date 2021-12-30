@@ -29,7 +29,7 @@ const PosizionamentoFondoPagina = () => {
   /* usare quindi tag div con classi css come nell'esempio */
   const containerRef = useRef(null);
   const { register, isActive, getActiveRef } = useNavScroll({
-    root: containerRef?.current
+    root: containerRef.current || undefined
   });
 
   const getActiveClass = (id: string) => (isActive(id) ? 'active' : undefined);
@@ -509,7 +509,7 @@ const PosizionamentoTestaAlta = () => {
   /* usare quindi tag div con classi css come nell'esempio */
   const containerRef = useRef(null);
   const { register, isActive, getActiveRef } = useNavScroll({
-    root: containerRef?.current
+    root: containerRef.current || undefined
   });
 
   const getActiveClass = (id: string) => (isActive(id) ? 'active' : undefined);
@@ -991,7 +991,7 @@ const ComponenteMenuInline = () => {
   /* usare quindi tag div con classi css come nell'esempio */
   const containerRef = useRef(null);
   const { register, isActive } = useNavScroll({
-    root: containerRef?.current
+    root: containerRef.current || undefined
   });
 
   const getActiveClass = (id: string) => (isActive(id) ? 'active' : undefined);
@@ -1362,7 +1362,7 @@ const ComponenteVersioneScura = () => {
   /* usare quindi tag div con classi css come nell'esempio */
   const containerRef = useRef(null);
   const { register, isActive, getActiveRef } = useNavScroll({
-    root: containerRef?.current
+    root: containerRef.current || undefined
   });
 
   const getActiveClass = (id: string) => (isActive(id) ? 'active' : undefined);

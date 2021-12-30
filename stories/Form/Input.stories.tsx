@@ -96,7 +96,7 @@ export const InputConIconaOBottoni = () => {
   const [isFocused, toggleFocus] = useState(false);
 
   const toggleFocusLabel = () => toggleFocus(true);
-  const toggleBlurLabel = (e) => {
+  const toggleBlurLabel: React.FocusEventHandler<HTMLInputElement> = (e) => {
     if (e.target.value === '') {
       toggleFocus(!isFocused);
     }
@@ -216,9 +216,9 @@ export const ReadonlyNormalizzato = () => (
 ReadonlyNormalizzato.storyName = 'Readonly normalizzato';
 
 export const _InputAutocompleteConDati = () => {
-  // "value" is used to show or propagate it externally
+  // "_" is used to show or propagate it externally
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [value, setValue] = useState('');
+  const [_, setValue] = useState('');
 
   // memoize the component
   const AutocompleteDropdownIndicator = useCallback(
@@ -243,7 +243,7 @@ export const _InputAutocompleteConDati = () => {
     );
   }, []);
 
-  const handleInputChange = (newValue) => {
+  const handleInputChange = (newValue: string) => {
     const inputValue = newValue.replace(/\W/g, '');
     setValue(inputValue);
     return inputValue;

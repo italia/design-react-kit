@@ -8,13 +8,13 @@ export const _Esempi = () => {
 
   useEffect(() => {
     // We focus the container here since it is hosted inside Storybook's iframe
-    if (containerRef.current) {
+    if (containerRef.current != null) {
       containerRef.current.focus();
     }
   }, []);
 
   const onClick = () => {
-    if (footerRef.current) {
+    if (footerRef.current != null) {
       footerRef.current.scrollIntoView();
     }
   };

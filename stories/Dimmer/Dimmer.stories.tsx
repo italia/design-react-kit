@@ -1,3 +1,4 @@
+import { Story } from '@storybook/react';
 import React from 'react';
 
 import {
@@ -11,7 +12,10 @@ import {
   CardText
 } from '../../src';
 
-export const Esempi = ({ fadeIn }) => {
+type EsempiProps = {
+  fadeIn: boolean;
+};
+export const Esempi: Story<EsempiProps> = ({ fadeIn }) => {
   return (
     <div>
       <Fade in={fadeIn} tag='div' className='mt-3'>
@@ -77,7 +81,7 @@ export const Esempi = ({ fadeIn }) => {
   );
 };
 
-export const ColorePrimario = ({ fadeIn }) => {
+export const ColorePrimario: Story<EsempiProps> = ({ fadeIn }) => {
   return (
     <div>
       <Fade in={fadeIn} tag='div' className='mt-3'>
@@ -143,7 +147,7 @@ export const ColorePrimario = ({ fadeIn }) => {
   );
 };
 
-export const DimmerConAzioni = ({ fadeIn }) => {
+export const DimmerConAzioni: Story<EsempiProps> = ({ fadeIn }) => {
   return (
     <div>
       <Fade in={fadeIn} tag='div' className='mt-3'>
@@ -195,7 +199,9 @@ export const DimmerConAzioni = ({ fadeIn }) => {
   );
 };
 
-export const DimmerConAzioniColorePrimario = ({ fadeIn }) => {
+export const DimmerConAzioniColorePrimario: Story<EsempiProps> = ({
+  fadeIn
+}) => {
   return (
     <div>
       <Fade in={fadeIn} tag='div' className='mt-3'>
