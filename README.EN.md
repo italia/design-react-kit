@@ -189,21 +189,7 @@ $ yarn build
 
 ## Browsers support
 
-As stated on the Guidelines for Public Services Design, within the Section [6.3.1.2.1. Supporto browser](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/2020.1/doc/user-interface/lo-sviluppo-di-un-interfaccia-e-i-web-kit.html#strumenti), here's a list of supported browsers for this Design Kit.
-The list is here available in the `browserslist` format:
-
-```json
-"browserslist": [
-    "defaults",
-    "ie 11",
-    "not ie_mob 11",
-    "not op_mini all",
-    "edge >= 13",
-    "safari 11"
-]
-```
-
-The same list is also available in the `package.json` file. Unfortunately, it's not possible to extend this `browserslist` configuration yet for [security concerns](https://github.com/browserslist/browserslist#shareable-configs).
+The design kit follows the Guidelines for Public Services Design, within the Section [6.3.1.2.1. Supporto browser](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/2020.1/doc/user-interface/lo-sviluppo-di-un-interfaccia-e-i-web-kit.html#strumenti) via the package `browserslist-config-design-italia`.
 
 ## TypeScript typing definitions 
 

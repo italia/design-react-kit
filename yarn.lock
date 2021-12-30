@@ -4403,6 +4403,11 @@ browserify-zlib@^0.2.0:
   dependencies:
     pako "~1.0.5"
 
+browserslist-config-design-italia@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/browserslist-config-design-italia/-/browserslist-config-design-italia-1.0.0.tgz#24be205f5c9960d7df6d99606150eb9bb6f0ccca"
+  integrity sha512-Nj1b/ERuNYrbmp/2Qdl9J7sxyb2ulUXlEMYidjCX1UeHYmGD5xHk8oqezvmLIcPo013cDQeSVmEMbO9fiS4Smw==
+
 browserslist@4.14.2:
   version "4.14.2"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.14.2.tgz#1b3cec458a1ba87588cc5e9be62f19b6d48813ce"
