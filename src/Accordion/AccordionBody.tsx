@@ -3,7 +3,9 @@ import classNames from 'classnames';
 import { Transition } from 'react-transition-group';
 
 import { pick, omit } from '../utils';
+import { TransitionTimeouts, TransitionsKeys } from '../transitions';
 import type { TransitionProps } from 'react-transition-group/Transition';
+import type { TransitionStates } from '../transitions';
 
 export type AccordionBodyProps = Partial<TransitionProps> & {
   tag?: ElementType;
@@ -12,43 +14,13 @@ export type AccordionBodyProps = Partial<TransitionProps> & {
   onToggle?: () => void;
 };
 
-// Taken from Reactstrap utils.js which are tken from bootstrap sass
-export const TransitionTimeouts = {
-  Fade: 150,
-  // $transition-fade
-  Collapse: 350,
-  // $transition-collapse
-  Modal: 300,
-  // $modal-transition
-  Carousel: 600 // $carousel-transition
-};
-
-// taken from Reactstrap utils.js
-export const TransitionsKeys = [
-  'in',
-  'mountOnEnter',
-  'unmountOnExit',
-  'appear',
-  'enter',
-  'exit',
-  'timeout',
-  'onEnter',
-  'onEntering',
-  'onEntered',
-  'onExit',
-  'onExiting',
-  'onExited'
-];
-
 // hardcode these entries to avoid leaks
-const transitionStatusToClassHash = {
+const transitionStatusToClassHash: Record<TransitionStates, string> = {
   entering: 'collapsing',
   entered: 'collapse show',
   exiting: 'collapsing',
   exited: 'collapse'
 };
-
-type TransitionStates = keyof typeof transitionStatusToClassHash;
 
 function getTransitionClass(status: TransitionStates) {
   return transitionStatusToClassHash[status] || 'collapse';
