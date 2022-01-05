@@ -1,24 +1,18 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
 import type { Story } from '@storybook/react';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { UncontrolledTooltip, Tooltip, Button } from '../../src';
 
 export const Esempi = () => {
-  const ids = ['Example1', 'Example2', 'Example3'];
-
-  // Workaround for testing, do not use this
-  ids.map((id) => {
-    const div = document.createElement('div');
-    div.setAttribute('id', id);
-    document.body.appendChild(div);
-    return null;
-  });
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
 
   return (
     <div className='bd-example tooltip-demo'>
       <p className='muted'>
         Ecco un{' '}
-        <a href='#' id={ids[0]}>
+        <a href='#' ref={ref1}>
           bianco scenario
         </a>
         <br />
@@ -27,7 +21,7 @@ export const Esempi = () => {
         degli oggetti di sfondo che pur vivono.
         <br />
         Non ne sarò{' '}
-        <a href='#' id={ids[1]}>
+        <a href='#' ref={ref2}>
           l’artefice
         </a>{' '}
         impaziente.
@@ -44,7 +38,7 @@ export const Esempi = () => {
         <br />
         Per adesso è deserto.
         <br />
-        <a href='#' id={ids[2]}>
+        <a href='#' ref={ref3}>
           Il mondo può rifarsi senza me
         </a>
         ,
@@ -54,13 +48,13 @@ export const Esempi = () => {
         <em>La città nuova, Alda Merini</em>
       </p>
 
-      <UncontrolledTooltip placement='top' target={ids[0]}>
+      <UncontrolledTooltip placement='top' target={ref1}>
         Primo tooltip
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement='top' target={ids[1]}>
+      <UncontrolledTooltip placement='top' target={ref2}>
         Secondo tooltip
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement='top' target={ids[2]}>
+      <UncontrolledTooltip placement='top' target={ref3}>
         Terzo tooltip
       </UncontrolledTooltip>
     </div>
@@ -68,24 +62,19 @@ export const Esempi = () => {
 };
 
 export const EsempiConControllo = () => {
-  const ids = ['Example1', 'Example2', 'Example3'];
   const [openOne, toggleOne] = useState(false);
   const [openTwo, toggleTwo] = useState(false);
   const [openThree, toggleThree] = useState(false);
 
-  // Workaround for testing, do not use this
-  ids.map((id) => {
-    const div = document.createElement('div');
-    div.setAttribute('id', id);
-    document.body.appendChild(div);
-    return null;
-  });
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
 
   return (
     <div className='bd-example tooltip-demo'>
       <p className='muted'>
         Ecco un{' '}
-        <a href='#' id={ids[0]}>
+        <a href='#' ref={ref1}>
           bianco scenario
         </a>
         <br />
@@ -94,7 +83,7 @@ export const EsempiConControllo = () => {
         degli oggetti di sfondo che pur vivono.
         <br />
         Non ne sarò{' '}
-        <a href='#' id={ids[1]}>
+        <a href='#' ref={ref2}>
           l’artefice
         </a>{' '}
         impaziente.
@@ -111,7 +100,7 @@ export const EsempiConControllo = () => {
         <br />
         Per adesso è deserto.
         <br />
-        <a href='#' id={ids[2]}>
+        <a href='#' ref={ref3}>
           Il mondo può rifarsi senza me
         </a>
         ,
@@ -123,7 +112,7 @@ export const EsempiConControllo = () => {
 
       <Tooltip
         placement='top'
-        target={ids[0]}
+        target={ref1}
         isOpen={openOne}
         toggle={() => toggleOne(!openOne)}
       >
@@ -131,7 +120,7 @@ export const EsempiConControllo = () => {
       </Tooltip>
       <Tooltip
         placement='top'
-        target={ids[1]}
+        target={ref2}
         isOpen={openTwo}
         toggle={() => toggleTwo(!openTwo)}
       >
@@ -139,7 +128,7 @@ export const EsempiConControllo = () => {
       </Tooltip>
       <Tooltip
         placement='top'
-        target={ids[2]}
+        target={ref3}
         isOpen={openThree}
         toggle={() => toggleThree(!openThree)}
       >
@@ -150,47 +139,43 @@ export const EsempiConControllo = () => {
 };
 
 export const Posizioni = () => {
-  const ids = ['example1', 'example2', 'example3', 'example4', 'example5'];
-
-  // Workaround for testing, do not use this
-  ids.map((id) => {
-    const div = document.createElement('div');
-    div.setAttribute('id', id);
-    document.body.appendChild(div);
-    return null;
-  });
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const ref5 = useRef(null);
 
   return (
     <div style={{ padding: 100 }}>
-      <Button id={ids[0]} className='m-3'>
+      <Button innerRef={ref1} className='m-3'>
         Tooltip in alto
       </Button>
-      <Button id={ids[1]} className='m-3'>
+      <Button innerRef={ref2} className='m-3'>
         Tooltip a destra
       </Button>
-      <Button id={ids[2]} className='m-3'>
+      <Button innerRef={ref3} className='m-3'>
         Tooltip in basso
       </Button>
-      <Button id={ids[3]} className='m-3'>
+      <Button innerRef={ref4} className='m-3'>
         Tooltip a sinistra
       </Button>
-      <Button id={ids[4]} className='m-3'>
+      <Button innerRef={ref5} className='m-3'>
         Tooltip con HTML
       </Button>
 
-      <UncontrolledTooltip placement='top' target={ids[0]}>
+      <UncontrolledTooltip placement='top' target={ref1}>
         Tooltip on top
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement='right' target={ids[1]}>
+      <UncontrolledTooltip placement='right' target={ref2}>
         Tooltip on right
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement='bottom' target={ids[2]}>
+      <UncontrolledTooltip placement='bottom' target={ref3}>
         Tooltip on bottom
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement='left' target={ids[3]}>
+      <UncontrolledTooltip placement='left' target={ref4}>
         Tooltip on left
       </UncontrolledTooltip>
-      <UncontrolledTooltip placement='top' target={ids[4]}>
+      <UncontrolledTooltip placement='top' target={ref5}>
         <em>Tooltip</em> <u>with</u> <b>HTML</b>
       </UncontrolledTooltip>
     </div>
@@ -206,26 +191,14 @@ export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({
   placement,
   text
 }) => {
-  // TODO find a better way to handle this
-  // Storyshot does not use the dom so can't render refs
-  // to fix the problem we append the elements manually
-  // this fixes tests without touching the rendered components
-  // nor storybook
-  // https://github.com/storybookjs/storybook/issues/886
-  // https://github.com/infinitered/addon-storyshots#using-createnodemock-to-mock-refs
-
-  const id = 'example';
-  const div = document.createElement('div');
-  div.setAttribute('id', id);
-  document.body.appendChild(div);
-
+  const ref = useRef(null);
   return (
     <div style={{ padding: 200 }}>
-      <Button id={id} className='m-3'>
+      <Button innerRef={ref} className='m-3'>
         Tooltip
       </Button>
 
-      <UncontrolledTooltip placement={placement} target={id}>
+      <UncontrolledTooltip placement={placement} target={ref}>
         {text}
       </UncontrolledTooltip>
     </div>

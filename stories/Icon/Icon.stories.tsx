@@ -179,7 +179,7 @@ export const EsempioLoghiEsterni = () => {
         size='lg'
       />
       <Icon
-        icon='https://upload.wikimedia.org/wikipedia/it/1/13/Milano-Stemma.png'
+        icon='https://it.wikipedia.org/wiki/File:CoA_Citt%C3%A0_di_Milano.svg'
         size='xl'
       />
     </div>

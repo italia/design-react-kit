@@ -16600,7 +16600,7 @@ exports[`Storyshots Componenti/Icon Esempio Loghi Esterni 1`] = `
     />
     <img
       className="icon icon-xl"
-      src="https://upload.wikimedia.org/wikipedia/it/1/13/Milano-Stemma.png"
+      src="https://it.wikipedia.org/wiki/File:CoA_Citt%C3%A0_di_Milano.svg"
     />
   </div>
 </div>
@@ -41604,7 +41604,6 @@ exports[`Storyshots Componenti/Tooltip Esempi 1`] = `
        
       <a
         href="#"
-        id="Example1"
       >
         bianco scenario
       </a>
@@ -41617,7 +41616,6 @@ exports[`Storyshots Componenti/Tooltip Esempi 1`] = `
        
       <a
         href="#"
-        id="Example2"
       >
         l’artefice
       </a>
@@ -41638,7 +41636,6 @@ exports[`Storyshots Componenti/Tooltip Esempi 1`] = `
       <br />
       <a
         href="#"
-        id="Example3"
       >
         Il mondo può rifarsi senza me
       </a>
@@ -41677,7 +41674,6 @@ exports[`Storyshots Componenti/Tooltip Esempi Con Controllo 1`] = `
        
       <a
         href="#"
-        id="Example1"
       >
         bianco scenario
       </a>
@@ -41690,7 +41686,6 @@ exports[`Storyshots Componenti/Tooltip Esempi Con Controllo 1`] = `
        
       <a
         href="#"
-        id="Example2"
       >
         l’artefice
       </a>
@@ -41711,7 +41706,6 @@ exports[`Storyshots Componenti/Tooltip Esempi Con Controllo 1`] = `
       <br />
       <a
         href="#"
-        id="Example3"
       >
         Il mondo può rifarsi senza me
       </a>
@@ -41750,7 +41744,6 @@ exports[`Storyshots Componenti/Tooltip Esempi interattivi 1`] = `
     <button
       aria-label={null}
       className="m-3 btn btn-"
-      id="example"
       onClick={[Function]}
     >
       Tooltip
@@ -41781,7 +41774,6 @@ exports[`Storyshots Componenti/Tooltip Posizioni 1`] = `
     <button
       aria-label={null}
       className="m-3 btn btn-"
-      id="example1"
       onClick={[Function]}
     >
       Tooltip in alto
@@ -41789,7 +41781,6 @@ exports[`Storyshots Componenti/Tooltip Posizioni 1`] = `
     <button
       aria-label={null}
       className="m-3 btn btn-"
-      id="example2"
       onClick={[Function]}
     >
       Tooltip a destra
@@ -41797,7 +41788,6 @@ exports[`Storyshots Componenti/Tooltip Posizioni 1`] = `
     <button
       aria-label={null}
       className="m-3 btn btn-"
-      id="example3"
       onClick={[Function]}
     >
       Tooltip in basso
@@ -41805,7 +41795,6 @@ exports[`Storyshots Componenti/Tooltip Posizioni 1`] = `
     <button
       aria-label={null}
       className="m-3 btn btn-"
-      id="example4"
       onClick={[Function]}
     >
       Tooltip a sinistra
@@ -41813,7 +41802,6 @@ exports[`Storyshots Componenti/Tooltip Posizioni 1`] = `
     <button
       aria-label={null}
       className="m-3 btn btn-"
-      id="example5"
       onClick={[Function]}
     >
       Tooltip con HTML
