@@ -16600,7 +16600,7 @@ exports[`Storyshots Componenti/Icon Esempio Loghi Esterni 1`] = `
     />
     <img
       className="icon icon-xl"
-      src="https://it.wikipedia.org/wiki/File:CoA_Citt%C3%A0_di_Milano.svg"
+      src="https://upload.wikimedia.org/wikipedia/commons/9/93/CoA_Citt%C3%A0_di_Milano.svg"
     />
   </div>
 </div>
