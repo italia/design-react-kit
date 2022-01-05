@@ -28,7 +28,10 @@ jobs:
           STDOUT_F=$(mktemp)
           STDERR_F=$(mktemp)
           # Run agadoo and capture errors without breaking the workflow
-          $(npx agadoo 2> $STDERR_F > $STDOUT_F) && true; RET=?
+          npx agadoo 2> $STDERR_F 1> $STDOUT_F
+
+          # Infer the result from the first word of the last line
+          RET="$(cat $STDERR_F | tail -1 | cut -d' ' -f 1)"
 
           # In order to be used in GH actions `echo "::set-output` the
           # multi-line output must be escaped.
@@ -42,7 +45,7 @@ jobs:
           STDERR="${STDERR//$'\r'/%0D}"
           echo "::set-output name=stdout::$STDOUT"
           echo "::set-output name=stderr::$STDERR"
-          if [[ $RET ]]; then
+          if [[ $RET == 'Success!' ]]; then
             echo "::set-output name=status::tree-shakeable"
           else
             echo "::set-output name=status::not tree-shakeable"
