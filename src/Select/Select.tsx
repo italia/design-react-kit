@@ -9,6 +9,11 @@ import type {
   OptionProps
 } from 'react-select';
 import { styles } from './shared';
+export type { ValueType, ActionMeta } from 'react-select';
+
+export type SelectOptionType<OptionType extends OptionTypeBase> =
+  | OptionType
+  | OptionsType<OptionType>;
 
 export interface SelectProps<
   OptionType extends OptionTypeBase,
@@ -50,12 +55,6 @@ const Option = <
 const CustomClearText: FC<{ clearText: string }> = ({ clearText }) => (
   <>{clearText}</>
 );
-
-export type SelectOptionType<OptionType extends OptionTypeBase> =
-  | OptionType
-  | OptionsType<OptionType>;
-
-export type { ValueType, ActionMeta } from 'react-select';
 
 export const Select = <
   OptionType extends OptionTypeBase = { label: string; value: string },
