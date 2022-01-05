@@ -78,3 +78,6 @@ jobs:
             </details>
           check_for_duplicate_msg: false
           delete_prev_regex_msg: ^\*\*Check tree-shakeability\*\*
+      - name: Fail if cannot tree-shake
+        if: ${{ steps.agadoo.outputs.status == 'not tree-shakeable' }}
+        run: exit 1
