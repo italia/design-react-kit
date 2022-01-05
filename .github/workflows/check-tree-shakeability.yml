@@ -27,7 +27,7 @@ jobs:
           STDOUT_F=$(mktemp)
           STDERR_F=$(mktemp)
           # Run agadoo and capture errors without breaking the workflow
-          (npx agadoo 2> $STDERR_F > $STDOUT_F || RET=$? && RET=$? ) ||:
+          $(npx agadoo 2> $STDERR_F > $STDOUT_F) && true; RET=?
 
           # In order to be used in GH actions `echo "::set-output` the
           # multi-line output must be escaped.
@@ -77,4 +77,4 @@ jobs:
 
             </details>
           check_for_duplicate_msg: false
-          delete_prev_regex_msg: "**Check tree-shakeability** "
+          delete_prev_regex_msg: ^\*\*Check tree-shakeability\*\*
