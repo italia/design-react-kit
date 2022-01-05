@@ -13137,7 +13137,7 @@ exports[`Storyshots Componenti/Header Header Center 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <div
             className="it-header-center-content-wrapper"
@@ -13313,7 +13313,7 @@ exports[`Storyshots Componenti/Header Header Center Narrow 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <div
             className="it-header-center-content-wrapper"
@@ -13489,7 +13489,7 @@ exports[`Storyshots Componenti/Header Header Center Narrow Light 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <div
             className="it-header-center-content-wrapper"
@@ -13668,7 +13668,7 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
           className="row"
         >
           <div
-            className="col-12"
+            className="col"
           >
             <div
               className="it-header-slim-wrapper-content"
@@ -13868,7 +13868,7 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
             className="row"
           >
             <div
-              className="col-12"
+              className="col"
             >
               <div
                 className="it-header-center-content-wrapper"
@@ -14029,7 +14029,7 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
             className="row"
           >
             <div
-              className="col-12"
+              className="col"
             >
               <nav
                 className="navbar has-megamenu navbar navbar-expand-lg"
@@ -14196,7 +14196,7 @@ exports[`Storyshots Componenti/Header Header Complete Light 1`] = `
           className="row"
         >
           <div
-            className="col-12"
+            className="col"
           >
             <div
               className="it-header-slim-wrapper-content"
@@ -14396,7 +14396,7 @@ exports[`Storyshots Componenti/Header Header Complete Light 1`] = `
             className="row"
           >
             <div
-              className="col-12"
+              className="col"
             >
               <div
                 className="it-header-center-content-wrapper"
@@ -14557,7 +14557,7 @@ exports[`Storyshots Componenti/Header Header Complete Light 1`] = `
             className="row"
           >
             <div
-              className="col-12"
+              className="col"
             >
               <nav
                 className="navbar has-megamenu navbar navbar-expand-lg"
@@ -14721,7 +14721,7 @@ exports[`Storyshots Componenti/Header Header Nav 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <nav
             className="navbar has-megamenu navbar navbar-expand-lg"
@@ -14991,7 +14991,7 @@ exports[`Storyshots Componenti/Header Header Nav Light 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <nav
             className="navbar has-megamenu navbar navbar-expand-lg"
@@ -15261,7 +15261,7 @@ exports[`Storyshots Componenti/Header Header Nav Secondary 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <nav
             className="navbar has-megamenu navbar navbar-expand-lg"
@@ -15458,7 +15458,7 @@ exports[`Storyshots Componenti/Header Header Slim 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <div
             className="it-header-slim-wrapper-content"
@@ -15670,7 +15670,7 @@ exports[`Storyshots Componenti/Header Header Slim Light 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <div
             className="it-header-slim-wrapper-content"
@@ -15919,7 +15919,7 @@ exports[`Storyshots Componenti/Header Slim Header With Full Button 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <div
             className="it-header-slim-wrapper-content"
@@ -43849,7 +43849,7 @@ exports[`Storyshots Templates/Kit Comuni Amministrazione Template 1`] = `
               className="row"
             >
               <div
-                className="col-12"
+                className="col"
               >
                 <div
                   className="it-header-slim-wrapper-content"
@@ -43985,7 +43985,7 @@ exports[`Storyshots Templates/Kit Comuni Amministrazione Template 1`] = `
                 className="row"
               >
                 <div
-                  className="col-12"
+                  className="col"
                 >
                   <div
                     className="it-header-center-content-wrapper"
@@ -44146,7 +44146,7 @@ exports[`Storyshots Templates/Kit Comuni Amministrazione Template 1`] = `
                 className="row"
               >
                 <div
-                  className="col-12"
+                  className="col"
                 >
                   <nav
                     className="navbar has-megamenu navbar navbar-expand-lg"
@@ -46091,7 +46091,7 @@ exports[`Storyshots Templates/Kit Comuni Homepage Template 1`] = `
               className="row"
             >
               <div
-                className="col-12"
+                className="col"
               >
                 <div
                   className="it-header-slim-wrapper-content"
@@ -46227,7 +46227,7 @@ exports[`Storyshots Templates/Kit Comuni Homepage Template 1`] = `
                 className="row"
               >
                 <div
-                  className="col-12"
+                  className="col"
                 >
                   <div
                     className="it-header-center-content-wrapper"
@@ -46388,7 +46388,7 @@ exports[`Storyshots Templates/Kit Comuni Homepage Template 1`] = `
                 className="row"
               >
                 <div
-                  className="col-12"
+                  className="col"
                 >
                   <nav
                     className="navbar has-megamenu navbar navbar-expand-lg"
@@ -49148,7 +49148,7 @@ exports[`Storyshots Templates/Kit Comuni Servizi Template 1`] = `
               className="row"
             >
               <div
-                className="col-12"
+                className="col"
               >
                 <div
                   className="it-header-slim-wrapper-content"
@@ -49284,7 +49284,7 @@ exports[`Storyshots Templates/Kit Comuni Servizi Template 1`] = `
                 className="row"
               >
                 <div
-                  className="col-12"
+                  className="col"
                 >
                   <div
                     className="it-header-center-content-wrapper"
@@ -49445,7 +49445,7 @@ exports[`Storyshots Templates/Kit Comuni Servizi Template 1`] = `
                 className="row"
               >
                 <div
-                  className="col-12"
+                  className="col"
                 >
                   <nav
                     className="navbar has-megamenu navbar navbar-expand-lg"
