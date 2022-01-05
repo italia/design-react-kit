@@ -304,26 +304,36 @@ const PopoverFocus = () => {
 export const DismissAlClickSuccessivo: Story = PopoverFocus.bind({});
 DismissAlClickSuccessivo.storyName = 'Dismiss al click successivo';
 
-// TODO: fix types here
-// using Story or adding types to props breaks storybook
-export const _EsempiInterattivi = ({ disabled, placement, title, text }) => {
-  const [isOpen, toggle] = useState(false);
+type EsempiInterattiviProps = {
+  disabled: boolean;
+  placement: 'top' | 'bottom' | 'left' | 'right';
+  title: string;
+  text: string;
+};
 
-  const id = 'example';
+// using Story or adding types to props breaks storybook
+export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({
+  disabled,
+  placement,
+  title,
+  text
+}) => {
+  const [isOpen, toggle] = useState(false);
+  const ref = useRef(null);
+
   return (
     <div style={{ padding: 250, textAlign: 'center' }}>
       <Button
-        id={id}
+        innerRef={ref}
         color='primary'
         disabled={disabled}
         onClick={() => toggle(!isOpen)}
       >
         Popover {disabled ? 'Disabilitato' : ''}
       </Button>
-
       <Popover
         placement={placement}
-        target={id}
+        target={ref}
         toggle={() => toggle(!isOpen)}
         isOpen={isOpen}
       >

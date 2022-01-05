@@ -8,15 +8,13 @@ export const _Esempi = () => {
 
   useEffect(() => {
     // We focus the container here since it is hosted inside Storybook's iframe
-    if (containerRef.current != null) {
-      containerRef.current.focus();
-    }
+    // @ts-ignore: with no types annotated, never is inferred here
+    containerRef.current?.focus();
   }, []);
 
   const onClick = () => {
-    if (footerRef.current != null) {
-      footerRef.current.scrollIntoView();
-    }
+    // @ts-ignore: with no types annotated, never is inferred here
+    footerRef.current?.scrollIntoView();
   };
 
   return (

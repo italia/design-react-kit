@@ -26,9 +26,9 @@ import {
   HeaderBrand,
   UncontrolledDropdown
 } from '../../../src';
+import type { HeaderCompleteProps, ThemeType } from '../types';
 
-// eslint-disable-next-line react/prop-types
-const SlimHeaderFullResponsive = ({ theme }) => {
+const SlimHeaderFullResponsive = ({ theme }: ThemeType) => {
   return (
     <Header type='slim' theme={theme}>
       <HeaderContent>
@@ -71,7 +71,7 @@ const SlimHeaderFullResponsive = ({ theme }) => {
 // eslint rule has to be disable for few lines here as Storybook addons will go in error
 // if PropTypes are declared in these components
 export class SlimHeader extends Component<
-  { theme?: 'light' | 'dark' },
+  { theme?: 'light' | 'dark' | '' },
   { collapsed: boolean }
 > {
   state = {
@@ -135,7 +135,7 @@ export class SlimHeader extends Component<
 }
 
 export class CenterHeader extends Component<
-  { theme?: 'light' | 'dark' },
+  { theme?: 'light' | 'dark' | '' },
   { collapsed: boolean }
 > {
   render() {
@@ -175,7 +175,7 @@ export class CenterHeader extends Component<
 }
 
 export class NavHeader extends Component<
-  { theme?: 'light' | 'dark' },
+  { theme?: 'light' | 'dark' | '' },
   { collapsed: boolean }
 > {
   state = {
@@ -235,7 +235,11 @@ export class NavHeader extends Component<
   }
 }
 
-const CompleteHeader = ({ theme, slimHeaderType, sticky }) => {
+const CompleteHeader = ({
+  theme,
+  slimHeaderType,
+  sticky
+}: HeaderCompleteProps) => {
   const SlimTag =
     slimHeaderType === 'default' ? SlimHeader : SlimHeaderFullResponsive;
   return (

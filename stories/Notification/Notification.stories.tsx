@@ -48,6 +48,7 @@ interface NotificationDocProps {
 }
 
 const NotificationDoc = ({
+  // @ts-ignore: need this only for sake of documentation
   id,
   title,
   state,
@@ -515,6 +516,7 @@ export const EsempioInterattivoAdvanced_story_hidden = () => {
 };
 
 // Fake components used only to generate automatic arg table in docs
+// @ts-ignore: need to turn off typescript here for docuemntation sake
 export const NotifyFakeComponent_story_hidden = ({
   title,
   body = undefined,
@@ -537,6 +539,7 @@ export const NotifyFakeComponent_story_hidden = ({
 };
 
 export const NotifyFakeOptionsComponent_story_hidden = (
+  // @ts-ignore: need this only for sake of documentation
   props: NotificationOptions
 ) => {
   return null;

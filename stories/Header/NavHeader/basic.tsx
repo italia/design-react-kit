@@ -16,8 +16,9 @@ import {
   LinkList,
   LinkListItem
 } from '../../../src';
+import type { HeaderNavProps } from '../types';
 
-const NavHeader = ({ theme, isOpen }) => {
+const NavHeader = ({ theme, isOpen }: HeaderNavProps) => {
   return (
     <Header type='navbar' theme={theme}>
       <HeaderContent expand='lg' megamenu>

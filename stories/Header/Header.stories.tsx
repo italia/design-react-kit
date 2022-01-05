@@ -11,6 +11,15 @@ import CompleteHeaderBasic from './CompleteHeader/basic';
 import NavHeaderSecondary from './NavHeaderSecondary/NavHeaderSecondary';
 
 import Introduction from './Introduction';
+import type {
+  HeaderSlimProps,
+  ThemeType,
+  HeaderCenterProps,
+  HeaderNavProps,
+  HeaderCompleteProps,
+  HeaderSlimLightProps,
+  CenterHeaderBasicProps
+} from './types';
 
 const meta: Meta = {
   title: 'Componenti/Header',
@@ -20,13 +29,6 @@ export default meta;
 
 export const Introduzione = () => <Introduction />;
 
-type ThemeType = {
-  theme: string;
-};
-type HeaderSlimProps = ThemeType & {
-  isOpen: boolean;
-  brandText: string;
-};
 export const _HeaderSlim: Story<HeaderSlimProps> = SlimHeaderBasic.bind({});
 _HeaderSlim.args = {
   theme: '',
@@ -60,10 +62,6 @@ _SlimHeaderWithFullButton.argTypes = {
   }
 };
 
-type HeaderCenterProps = ThemeType & {
-  isSmall: boolean;
-  type: string;
-};
 export const _HeaderCenter: Story<HeaderCenterProps> = CenterHeaderBasic.bind(
   {}
 );
@@ -81,10 +79,6 @@ _HeaderCenter.argTypes = {
       options: ['', 'dark', 'light']
     }
   }
-};
-
-type HeaderNavProps = ThemeType & {
-  isOpen: boolean;
 };
 
 export const _HeaderNav: Story<HeaderNavProps> = NavHeaderBasic.bind({});
@@ -108,16 +102,11 @@ _HeaderNav.argTypes = {
   }
 };
 
-export const _HeaderNavSecondary: Story<ThemeType> = NavHeaderSecondary.bind(
+export const _HeaderNavSecondary: Story<HeaderNavProps> = NavHeaderSecondary.bind(
   {}
 );
 _HeaderNavSecondary.args = {
   theme: ''
-};
-
-type HeaderCompleteProps = ThemeType & {
-  slimHeaderType: string;
-  sticky: boolean;
 };
 
 export const _HeaderComplete: Story<HeaderCompleteProps> = CompleteHeaderBasic.bind(
@@ -143,9 +132,6 @@ _HeaderComplete.argTypes = {
   }
 };
 
-type HeaderSlimLightProps = Omit<HeaderSlimProps, 'isOpen'> & {
-  brandText: string;
-};
 export const _HeaderSlimLight: Story<HeaderSlimLightProps> = SlimHeaderBasic.bind(
   {}
 );
@@ -154,9 +140,6 @@ _HeaderSlimLight.args = {
   brandText: 'Ente appartenenza/Owner'
 };
 
-type CenterHeaderBasicProps = HeaderCenterProps & {
-  brandText: string;
-};
 export const _HeaderCenterNarrow: Story<CenterHeaderBasicProps> = CenterHeaderBasic.bind(
   {}
 );
