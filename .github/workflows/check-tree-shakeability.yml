@@ -28,7 +28,7 @@ jobs:
           STDOUT_F=$(mktemp)
           STDERR_F=$(mktemp)
           # Run agadoo and capture errors without breaking the workflow
-          npx agadoo 2> $STDERR_F 1> $STDOUT_F
+          $(npx agadoo 2> $STDERR_F > $STDOUT_F) && true
 
           # Infer the result from the first word of the last line
           RET="$(cat $STDERR_F | tail -1 | cut -d' ' -f 1)"
