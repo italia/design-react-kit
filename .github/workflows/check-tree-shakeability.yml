@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
+    concurrency: ci-treeshake-${{ github.ref }}
     steps:
       - uses: actions/checkout@v2
       - name: Setup Node.js with Yarn cache

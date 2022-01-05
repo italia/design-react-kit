@@ -8,6 +8,7 @@ on:
 jobs:
   coverage:
     runs-on: ubuntu-latest
+    concurrency: ci-test-${{ github.ref }}
     steps:
     - uses: actions/checkout@v2
     - name: Setup Node.js with Yarn cache
