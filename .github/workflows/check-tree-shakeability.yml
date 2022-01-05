@@ -5,33 +5,21 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
+    concurrency: ci-treeshake-${{ github.ref }}
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - name: Setup Node.js with Yarn cache
+        uses: actions/setup-node@v2
         with:
-          node-version: '14.x'
+          node-version: '14'
+          cache: 'yarn'
 
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
       - name: Install dependencies
         run: yarn --frozen-lockfile
 
       - name: Build artifacts
         run: yarn build
 
-      - name: Install agadoo
-        # TODO decide if agadoo will be installed as a project dependency or just in CI
-        run: npm install -g agadoo
       - name: Run agadoo
         id: agadoo
         run: |
@@ -40,7 +28,10 @@ jobs:
           STDOUT_F=$(mktemp)
           STDERR_F=$(mktemp)
           # Run agadoo and capture errors without breaking the workflow
-          (agadoo 2> $STDERR_F > $STDOUT_F || RET=$? && RET=$? ) ||:
+          $(npx agadoo 2> $STDERR_F > $STDOUT_F) && true
+
+          # Infer the result from the first word of the last line
+          RET="$(cat $STDERR_F | tail -1 | cut -d' ' -f 1)"
 
           # In order to be used in GH actions `echo "::set-output` the
           # multi-line output must be escaped.
@@ -54,7 +45,7 @@ jobs:
           STDERR="${STDERR//$'\r'/%0D}"
           echo "::set-output name=stdout::$STDOUT"
           echo "::set-output name=stderr::$STDERR"
-          if [[ $RET ]]; then
+          if [[ $RET == 'Success!' ]]; then
             echo "::set-output name=status::tree-shakeable"
           else
             echo "::set-output name=status::not tree-shakeable"
@@ -72,7 +63,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           msg: |
-            **Check tree-shakeability** :deciduous_tree: for ${{ github.sha }}: ${{ steps.agadoo.outputs.status }}
+            **Check tree-shakeability** for ${{ github.sha }}: ${{ steps.agadoo.outputs.status == 'tree-shakeable' && ':deciduous_tree:' || ':x:' }} ${{ steps.agadoo.outputs.status }}
             <details>
               <summary>Agadoo stdout</summary>
 
@@ -90,4 +81,7 @@ jobs:
 
             </details>
           check_for_duplicate_msg: false
-          delete_prev_regex_msg: "**Check tree-shakeability** :deciduous_tree: "
+          delete_prev_regex_msg: ^\*\*Check tree-shakeability\*\*
+      - name: Fail if cannot tree-shake
+        if: ${{ steps.agadoo.outputs.status == 'not tree-shakeable' }}
+        run: exit 1
