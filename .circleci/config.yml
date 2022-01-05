@@ -68,25 +68,6 @@ jobs:
           paths:
             - dist
 
-  test:
-    <<: *defaults
-
-    steps:
-      - checkout
-
-      # Download and cache dependencies
-      - restore_cache: *restore_cache
-      - run: *npm_install
-      - save_cache: *save_cache
-
-      - attach_workspace:
-          # Must be absolute path or relative path from working_directory
-          at: .
-
-      - run:
-          name: Lint & Test
-          command: yarn lint && yarn test:ci
-
             
   check-gatsby-ssr:
     <<: *defaults
@@ -174,12 +155,6 @@ workflows:
                   - next
             tags:
               only: /.*/
-
-      - test:
-          filters:
-            branches:
-              ignore:
-                - gh-pages
 
       - check-gatsby-ssr:
           requires:
