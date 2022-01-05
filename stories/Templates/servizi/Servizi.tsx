@@ -1,5 +1,6 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
 import React from 'react';
+import { Story } from '@storybook/react';
 
 import {
   Breadcrumb,
@@ -21,8 +22,9 @@ import {
 
 import CompleteHeader from '../shared/Header';
 import Footer from '../shared/Footer';
+import { PageProps } from '../shared/types';
 
-const Servizi = ({ theme, townName, townTagLine }) => {
+const Servizi: Story<PageProps> = ({ theme, townName, townTagLine }) => {
   // TODO find a better way to handle this
   // Storyshot does not use the dom so can't render refs
   // to fix the problem we append the elements manually
@@ -302,7 +304,7 @@ const Servizi = ({ theme, townName, townTagLine }) => {
 };
 
 Servizi.args = {
-  theme: '',
+  theme: undefined,
   townName: 'Nome del Comune',
   townTagLine: 'Uno dei tanti Comuni d Italia'
 };

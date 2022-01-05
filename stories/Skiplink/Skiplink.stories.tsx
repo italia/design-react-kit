@@ -8,10 +8,14 @@ export const _Esempi = () => {
 
   useEffect(() => {
     // We focus the container here since it is hosted inside Storybook's iframe
-    if (containerRef.current) {
-      containerRef.current.focus();
-    }
+    // @ts-ignore: with no types annotated, never is inferred here
+    containerRef.current?.focus();
   }, []);
+
+  const onClick = () => {
+    // @ts-ignore: with no types annotated, never is inferred here
+    footerRef.current?.scrollIntoView();
+  };
 
   return (
     <section tabIndex={-1} ref={containerRef}>
@@ -20,9 +24,7 @@ export const _Esempi = () => {
 
       <Skiplink>
         <SkiplinkItem href='#main'>Skip to main content</SkiplinkItem>
-        <SkiplinkItem onClick={() => footerRef.current.scrollIntoView()}>
-          Skip to footer
-        </SkiplinkItem>
+        <SkiplinkItem onClick={onClick}>Skip to footer</SkiplinkItem>
       </Skiplink>
     </section>
   );

@@ -1,3 +1,4 @@
+import { Story } from '@storybook/react';
 import React, { useState } from 'react';
 
 import { Select } from '../../src';
@@ -43,8 +44,9 @@ export default {
 };
 
 export const SelectClassica = () => {
-  const [, setValue] = useState(null);
+  const [, setValue] = useState({ value: '', label: '' });
 
+  // @ts-ignore: ignore types for sake of brevity
   const handleChange = (selectedOption) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
@@ -63,8 +65,9 @@ export const SelectClassica = () => {
 SelectClassica.storyName = 'Select classica';
 
 export const SelectDisabilitata = () => {
-  const [, setValue] = useState(null);
+  const [, setValue] = useState({ value: '', label: '' });
 
+  // @ts-ignore: ignore types for sake of brevity
   const handleChange = (selectedOption) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
@@ -84,8 +87,9 @@ export const SelectDisabilitata = () => {
 SelectDisabilitata.storyName = 'Select disabilitata';
 
 export const SelectConReset = () => {
-  const [, setValue] = useState(null);
+  const [, setValue] = useState({ value: '', label: '' });
 
+  // @ts-ignore: ignore types for sake of brevity
   const handleChange = (selectedOption) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
@@ -105,8 +109,9 @@ export const SelectConReset = () => {
 SelectConReset.storyName = 'Select con reset';
 
 export const SelectConRicerca = () => {
-  const [, setValue] = useState(null);
+  const [, setValue] = useState({ value: '', label: '' });
 
+  // @ts-ignore: ignore types for sake of brevity
   const handleChange = (selectedOption) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
@@ -126,8 +131,9 @@ export const SelectConRicerca = () => {
 SelectConRicerca.storyName = 'Select con ricerca';
 
 export const _SelectMultipla = () => {
-  const [, setValue] = useState(null);
+  const [, setValue] = useState({ value: '', label: '' });
 
+  // @ts-ignore: ignore types for sake of brevity
   const handleChange = (selectedOption) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
@@ -145,8 +151,9 @@ export const _SelectMultipla = () => {
 };
 
 export const SelectConGruppi = () => {
-  const [, setValue] = useState(null);
+  const [, setValue] = useState({ value: '', label: '' });
 
+  // @ts-ignore: ignore types for sake of brevity
   const handleChange = (selectedOption) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
@@ -164,25 +171,29 @@ export const SelectConGruppi = () => {
 
 SelectConGruppi.storyName = 'Select con gruppi';
 
-type SelectOptions =
-  | { value: string; label: string }
-  | { label: string; options: { value: string; label: string }[] };
-
-export const SelectInterattivo = ({
+type SelectInterattivoProps = {
+  search: boolean;
+  multi: boolean;
+  group: boolean;
+  disabled: boolean;
+  reset: boolean;
+};
+export const SelectInterattivo: Story<SelectInterattivoProps> = ({
   search,
   multi,
   group,
   disabled,
   reset
 }) => {
-  const [, setValue] = useState(null);
+  const [, setValue] = useState({ value: '', label: '' });
 
-  let options: SelectOptions[] = defaultOptions;
+  let options = defaultOptions;
 
   if (group) {
+    // @ts-expect-error adding types makes the example harder to read
     options = groupedOptions;
   }
-
+  // @ts-ignore: ignore types for sake of brevity
   const handleChange = (selectedOption) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>

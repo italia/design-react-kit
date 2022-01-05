@@ -10,8 +10,9 @@ import {
   Icon,
   HeaderBrand
 } from '../../../src';
+import type { HeaderCenterProps } from '../types';
 
-const CenterHeader = ({ type, theme, isSmall }) => {
+const CenterHeader = ({ type, theme, isSmall }: HeaderCenterProps) => {
   return (
     <Header type={type} theme={theme} small={isSmall}>
       <HeaderContent>

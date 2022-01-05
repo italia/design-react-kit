@@ -16,8 +16,9 @@ import {
   LinkList,
   LinkListItem
 } from '../../../src';
+import type { ThemeType } from '../types';
 
-const SlimHeader = ({ theme }) => {
+const SlimHeader = ({ theme }: ThemeType) => {
   return (
     <Header type='slim' theme={theme}>
       <HeaderContent>
@@ -43,7 +44,7 @@ const SlimHeader = ({ theme }) => {
               </Row>
             </DropdownMenu>
           </UncontrolledDropdown>
-          <Button color='primary' size='full' className='btn-icon' href='#'>
+          <Button color='primary' block className='btn-icon' href='#'>
             <span className='rounded-icon'>
               <Icon color='primary' icon='it-user' />
             </span>

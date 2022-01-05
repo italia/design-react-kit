@@ -106,11 +106,7 @@ export const TabExampleIcon = () => {
             }}
           >
             <span>
-              <Icon
-                color='primary'
-                icon='it-link'
-                style={{ ariaHidden: true }}
-              />
+              <Icon color='primary' icon='it-link' aria-hidden />
               <i
                 className='it-ico-lg it-file d-block text-center'
                 aria-label='Tab titolo 1'
@@ -129,11 +125,7 @@ export const TabExampleIcon = () => {
             }}
           >
             <span>
-              <Icon
-                color='primary'
-                icon='it-calendar'
-                style={{ ariaHidden: true }}
-              />
+              <Icon color='primary' icon='it-calendar' aria-hidden />
               <i
                 className='it-ico-lg it-calendar d-block text-center'
                 aria-label='Tab titolo 2'
@@ -152,11 +144,7 @@ export const TabExampleIcon = () => {
             }}
           >
             <span>
-              <Icon
-                color='primary'
-                icon='it-comment'
-                style={{ ariaHidden: true }}
-              />
+              <Icon color='primary' icon='it-comment' aria-hidden />
               <i
                 className='it-ico-lg it-comment d-block text-center'
                 aria-label='Tab titolo 3'
@@ -215,11 +203,7 @@ export const TabExampleTextIcon = () => {
             }}
           >
             <span>
-              <Icon
-                color='primary'
-                icon='it-link'
-                style={{ ariaHidden: true }}
-              />
+              <Icon color='primary' icon='it-link' aria-hidden />
               <i
                 className='it-ico-lg it-file d-block text-center'
                 aria-label='Tab titolo 1'
@@ -239,11 +223,7 @@ export const TabExampleTextIcon = () => {
             }}
           >
             <span>
-              <Icon
-                color='primary'
-                icon='it-calendar'
-                style={{ ariaHidden: true }}
-              />
+              <Icon color='primary' icon='it-calendar' aria-hidden />
               <i
                 className='it-ico-lg it-calendar d-block text-center'
                 aria-label='Tab titolo 2'
@@ -263,11 +243,7 @@ export const TabExampleTextIcon = () => {
             }}
           >
             <span>
-              <Icon
-                color='primary'
-                icon='it-comment'
-                style={{ ariaHidden: true }}
-              />
+              <Icon color='primary' icon='it-comment' aria-hidden />
               <i
                 className='it-ico-lg it-comment d-block text-center'
                 aria-label='Tab titolo 3'

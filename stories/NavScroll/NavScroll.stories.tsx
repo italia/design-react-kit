@@ -1,4 +1,5 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
+import { Story } from '@storybook/react';
 import React, { useRef, useState } from 'react';
 
 import {
@@ -28,7 +29,7 @@ const PosizionamentoFondoPagina = () => {
   /* usare quindi tag div con classi css come nell'esempio */
   const containerRef = useRef(null);
   const { register, isActive, getActiveRef } = useNavScroll({
-    root: containerRef?.current
+    root: containerRef.current || undefined
   });
 
   const getActiveClass = (id: string) => (isActive(id) ? 'active' : undefined);
@@ -494,7 +495,7 @@ const PosizionamentoFondoPagina = () => {
   );
 };
 
-export const PosizionamentoAFondoPaginaConLineaASinistra = PosizionamentoFondoPagina.bind(
+export const PosizionamentoAFondoPaginaConLineaASinistra: Story = PosizionamentoFondoPagina.bind(
   {}
 );
 
@@ -508,7 +509,7 @@ const PosizionamentoTestaAlta = () => {
   /* usare quindi tag div con classi css come nell'esempio */
   const containerRef = useRef(null);
   const { register, isActive, getActiveRef } = useNavScroll({
-    root: containerRef?.current
+    root: containerRef.current || undefined
   });
 
   const getActiveClass = (id: string) => (isActive(id) ? 'active' : undefined);
@@ -974,7 +975,7 @@ const PosizionamentoTestaAlta = () => {
   );
 };
 
-export const PosizionamentoInTestaAllaPaginaConLineaADestra = PosizionamentoTestaAlta.bind(
+export const PosizionamentoInTestaAllaPaginaConLineaADestra: Story = PosizionamentoTestaAlta.bind(
   {}
 );
 
@@ -990,7 +991,7 @@ const ComponenteMenuInline = () => {
   /* usare quindi tag div con classi css come nell'esempio */
   const containerRef = useRef(null);
   const { register, isActive } = useNavScroll({
-    root: containerRef?.current
+    root: containerRef.current || undefined
   });
 
   const getActiveClass = (id: string) => (isActive(id) ? 'active' : undefined);
@@ -1351,7 +1352,7 @@ const ComponenteMenuInline = () => {
   );
 };
 
-export const MenuInline = ComponenteMenuInline.bind({});
+export const MenuInline: Story = ComponenteMenuInline.bind({});
 MenuInline.storyName = 'Menu inline';
 
 const ComponenteVersioneScura = () => {
@@ -1361,7 +1362,7 @@ const ComponenteVersioneScura = () => {
   /* usare quindi tag div con classi css come nell'esempio */
   const containerRef = useRef(null);
   const { register, isActive, getActiveRef } = useNavScroll({
-    root: containerRef?.current
+    root: containerRef.current || undefined
   });
 
   const getActiveClass = (id: string) => (isActive(id) ? 'active' : undefined);
@@ -1827,5 +1828,5 @@ const ComponenteVersioneScura = () => {
   );
 };
 
-export const VersioneScura = ComponenteVersioneScura.bind({});
+export const VersioneScura: Story = ComponenteVersioneScura.bind({});
 VersioneScura.storyName = 'Variante scura';

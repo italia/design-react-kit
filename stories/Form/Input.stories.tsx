@@ -96,6 +96,7 @@ export const InputConIconaOBottoni = () => {
   const [isFocused, toggleFocus] = useState(false);
 
   const toggleFocusLabel = () => toggleFocus(true);
+  // @ts-ignore: ignore types for now
   const toggleBlurLabel = (e) => {
     if (e.target.value === '') {
       toggleFocus(!isFocused);
@@ -216,9 +217,9 @@ export const ReadonlyNormalizzato = () => (
 ReadonlyNormalizzato.storyName = 'Readonly normalizzato';
 
 export const _InputAutocompleteConDati = () => {
-  // "value" is used to show or propagate it externally
+  // "_" is used to show or propagate it externally
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [value, setValue] = useState('');
+  const [_, setValue] = useState('');
 
   // memoize the component
   const AutocompleteDropdownIndicator = useCallback(
@@ -243,6 +244,7 @@ export const _InputAutocompleteConDati = () => {
     );
   }, []);
 
+  // @ts-ignore: ignore the types for now
   const handleInputChange = (newValue) => {
     const inputValue = newValue.replace(/\W/g, '');
     setValue(inputValue);

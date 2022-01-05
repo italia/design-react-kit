@@ -1,5 +1,6 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
 import React, { useState } from 'react';
+import type { Story } from '@storybook/react';
 
 import {
   Accordion,
@@ -9,14 +10,15 @@ import {
   Callout,
   CalloutText,
   CalloutTitle,
-  Icon
+  Icon,
+  CalloutProps
 } from '../../src';
 
 export default {
   title: 'Componenti/Callout'
 };
 
-export const EsempioBasico = () => (
+export const EsempioBasico: Story = () => (
   <Callout>
     <CalloutTitle>Titolo Callout</CalloutTitle>
     <CalloutText>
@@ -27,7 +29,7 @@ export const EsempioBasico = () => (
   </Callout>
 );
 
-export const EsempioConIcona = () => (
+export const EsempioConIcona: Story = () => (
   <Callout>
     <CalloutTitle>
       <Icon icon='it-info-circle' padding={false} aria-hidden />
@@ -44,7 +46,7 @@ export const EsempioConIcona = () => (
 
 EsempioConIcona.storyName = 'Esempio con icona';
 
-export const EsempioAccessibilita = () => (
+export const EsempioAccessibilita: Story = () => (
   <Callout>
     <CalloutTitle>
       <Icon icon='it-check-circle' padding={false} aria-hidden />
@@ -61,8 +63,11 @@ export const EsempioAccessibilita = () => (
 
 EsempioAccessibilita.storyName = 'Esempio accessibilità';
 
-// eslint-disable-next-line react/prop-types
-export const CalloutTemplate = ({ title, color }) => (
+type CalloutTemplateProps = { color: CalloutProps['color']; title: string };
+export const CalloutTemplate: Story<CalloutTemplateProps> = ({
+  title,
+  color
+}) => (
   <Callout color={color}>
     <CalloutTitle>
       <Icon icon='it-check-circle' padding={false} aria-hidden />
@@ -76,15 +81,21 @@ export const CalloutTemplate = ({ title, color }) => (
   </Callout>
 );
 
-export const ProceduraAvvenutaConSuccesso = CalloutTemplate.bind({});
+export const ProceduraAvvenutaConSuccesso: Story<CalloutTemplateProps> = CalloutTemplate.bind(
+  {}
+);
 ProceduraAvvenutaConSuccesso.args = { title: 'Usa', color: 'success' };
 ProceduraAvvenutaConSuccesso.storyName = 'Procedura avvenuta con successo';
 
-export const ProceduraCheRichiedeAttenzione = CalloutTemplate.bind({});
+export const ProceduraCheRichiedeAttenzione: Story<CalloutTemplateProps> = CalloutTemplate.bind(
+  {}
+);
 ProceduraCheRichiedeAttenzione.args = { title: 'Attenzione', color: 'warning' };
 ProceduraCheRichiedeAttenzione.storyName = 'Procedura che richiede attenzione';
 
-export const ProceduraPericolosaONonConsentita = CalloutTemplate.bind({});
+export const ProceduraPericolosaONonConsentita: Story<CalloutTemplateProps> = CalloutTemplate.bind(
+  {}
+);
 ProceduraPericolosaONonConsentita.args = {
   title: 'Non usare',
   color: 'danger'
@@ -92,14 +103,18 @@ ProceduraPericolosaONonConsentita.args = {
 ProceduraPericolosaONonConsentita.storyName =
   'Procedura pericolosa o non consentita';
 
-export const ProceduraImportante = CalloutTemplate.bind({});
+export const ProceduraImportante: Story<CalloutTemplateProps> = CalloutTemplate.bind(
+  {}
+);
 ProceduraImportante.args = { title: 'Importante', color: 'important' };
 ProceduraImportante.storyName = 'Procedura importante';
 
-export const CalloutNote = CalloutTemplate.bind({});
+export const CalloutNote: Story<CalloutTemplateProps> = CalloutTemplate.bind(
+  {}
+);
 CalloutNote.args = { title: 'Note a riguardo', color: 'note' };
 
-export const CalloutHighlights = () => (
+export const CalloutHighlights: Story = () => (
   <Callout highlight>
     <CalloutTitle>Titolo Callout</CalloutTitle>
     <CalloutText bigText>
@@ -114,8 +129,11 @@ export const CalloutHighlights = () => (
   </Callout>
 );
 
-// eslint-disable-next-line react/prop-types
-const CalloutHighlightsTemplate = ({ title, color }) => (
+type CalloutHighlightTemplateProps = CalloutTemplateProps;
+const CalloutHighlightsTemplate: Story<CalloutHighlightTemplateProps> = ({
+  title,
+  color
+}) => (
   <Callout highlight color={color}>
     <CalloutTitle>
       <Icon icon='it-info-circle' padding={false} aria-hidden />
@@ -133,19 +151,29 @@ const CalloutHighlightsTemplate = ({ title, color }) => (
   </Callout>
 );
 
-export const CalloutHighlightsSuccess = CalloutHighlightsTemplate.bind({});
+export const CalloutHighlightsSuccess: Story<CalloutHighlightTemplateProps> = CalloutHighlightsTemplate.bind(
+  {}
+);
 CalloutHighlightsSuccess.args = { title: 'Usa', color: 'success' };
 
-export const CalloutHighlightsWarning = CalloutHighlightsTemplate.bind({});
+export const CalloutHighlightsWarning: Story<CalloutHighlightTemplateProps> = CalloutHighlightsTemplate.bind(
+  {}
+);
 CalloutHighlightsWarning.args = { title: 'Attenzione', color: 'warning' };
 
-export const CalloutHighlightsDanger = CalloutHighlightsTemplate.bind({});
+export const CalloutHighlightsDanger: Story<CalloutHighlightTemplateProps> = CalloutHighlightsTemplate.bind(
+  {}
+);
 CalloutHighlightsDanger.args = { title: 'Non usare', color: 'danger' };
 
-export const CalloutHighlightsImportant = CalloutHighlightsTemplate.bind({});
+export const CalloutHighlightsImportant: Story<CalloutHighlightTemplateProps> = CalloutHighlightsTemplate.bind(
+  {}
+);
 CalloutHighlightsImportant.args = { title: 'Importante', color: 'important' };
 
-export const CalloutHighlightsNote = CalloutHighlightsTemplate.bind({});
+export const CalloutHighlightsNote: Story<CalloutHighlightTemplateProps> = CalloutHighlightsTemplate.bind(
+  {}
+);
 CalloutHighlightsNote.args = { title: 'Note', color: 'note' };
 
 export const CalloutApprofondimento = () => {

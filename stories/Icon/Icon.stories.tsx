@@ -1,3 +1,4 @@
+import { Story } from '@storybook/react';
 import React from 'react';
 
 import { Icon, Row, Col, icons } from '../../src';
@@ -6,7 +7,15 @@ export default {
   title: 'Componenti/Icon'
 };
 
-export const EsempioInterattivo = ({
+type EsempioInterattivoProps = {
+  icon: string;
+  size: '' | 'xl' | 'lg' | 'sm' | 'xs';
+  padding: boolean;
+  color: string;
+  background: string;
+};
+
+export const EsempioInterattivo: Story<EsempioInterattivoProps> = ({
   icon,
   size,
   padding,
@@ -77,7 +86,12 @@ EsempioInterattivo.argTypes = {
   }
 };
 
-export const EsempioDimensioni = ({ icon, padding, background, color }) => {
+export const EsempioDimensioni: Story<EsempioInterattivoProps> = ({
+  icon,
+  padding,
+  background,
+  color
+}) => {
   const dimensions = ['xs', 'sm', '', 'lg', 'xl'] as const;
   return (
     <>
@@ -103,7 +117,9 @@ EsempioDimensioni.args = {
   background: 'bg-grey'
 };
 
-export const EsempioPadding = EsempioDimensioni.bind({});
+export const EsempioPadding: Story<EsempioInterattivoProps> = EsempioDimensioni.bind(
+  {}
+);
 EsempioPadding.storyName = 'Esempio dimensioni';
 EsempioPadding.args = {
   icon: 'it-check-circle',
@@ -112,7 +128,7 @@ EsempioPadding.args = {
   background: 'bg-grey'
 };
 
-export const EsempioColori = ({ icon }) => {
+export const EsempioColori: Story<{ icon: string }> = ({ icon }) => {
   return (
     <>
       {['primary', 'secondary', 'success', 'warning', 'danger'].map((color) => (
@@ -129,7 +145,7 @@ EsempioColori.args = {
   icon: 'it-check-circle'
 };
 
-export const EsempioAllineamento = () => {
+export const EsempioAllineamento: Story = () => {
   return (
     <div style={{ lineHeight: '4em' }}>
       <Icon className='bg-light align-bottom' icon='it-check-circle' />
@@ -140,7 +156,7 @@ export const EsempioAllineamento = () => {
 };
 EsempioAllineamento.storyName = 'Esempio allineamento';
 
-export const ListaIcone = () => {
+export const ListaIcone: Story = () => {
   return (
     <Row>
       {icons.map((icon) => (
@@ -163,7 +179,7 @@ export const EsempioLoghiEsterni = () => {
         size='lg'
       />
       <Icon
-        icon='https://upload.wikimedia.org/wikipedia/it/1/13/Milano-Stemma.png'
+        icon='https://upload.wikimedia.org/wikipedia/commons/9/93/CoA_Citt%C3%A0_di_Milano.svg'
         size='xl'
       />
     </div>
