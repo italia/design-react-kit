@@ -802,7 +802,7 @@ export const ContenutoDellaModaleVariabile = () => {
   const [username, setUsername] = useState('');
 
   const toggle = () => toggleModal(!open);
-  const openModal = (name) => {
+  const openModal = (name: string) => {
     setUsername(name);
     toggleModal(true);
   };

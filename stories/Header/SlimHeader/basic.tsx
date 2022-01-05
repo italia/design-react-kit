@@ -19,8 +19,9 @@ import {
   Col,
   UncontrolledDropdown
 } from '../../../src';
+import type { HeaderSlimProps } from '../types';
 
-const SlimHeader = ({ theme, isOpen, brandText }) => {
+const SlimHeader = ({ theme, isOpen, brandText }: HeaderSlimProps) => {
   return (
     <Header type='slim' theme={theme}>
       <HeaderContent>

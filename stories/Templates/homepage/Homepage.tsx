@@ -1,5 +1,6 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
 import React from 'react';
+import { Story } from '@storybook/react';
 
 import {
   Button,
@@ -20,8 +21,9 @@ import {
 
 import CompleteHeader from '../shared/Header';
 import Footer from '../shared/Footer';
+import type { PageProps } from '../shared/types';
 
-const Homepage = ({ theme, townName, townTagLine }) => {
+const Homepage: Story<PageProps> = ({ theme, townName, townTagLine }) => {
   return (
     <>
       <CompleteHeader
@@ -789,7 +791,7 @@ const Homepage = ({ theme, townName, townTagLine }) => {
 };
 
 Homepage.args = {
-  theme: '',
+  theme: undefined,
   townName: 'Nome del Comune',
   townTagLine: 'Uno dei tanti Comuni d Italia'
 };

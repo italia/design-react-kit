@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { MouseEventHandler, useState } from 'react';
 import { Collapse, Icon, LinkList, LinkListItem } from '../../src';
 
 const CollapseExample = () => {
@@ -6,17 +6,17 @@ const CollapseExample = () => {
   const [collapseOpen2, toggleCollapse2] = useState(false);
   const [collapseOpen3, toggleCollapse3] = useState(false);
 
-  const onToggle1 = (e) => {
+  const onToggle1: MouseEventHandler<HTMLAnchorElement> = (e) => {
     e.preventDefault();
     toggleCollapse1(!collapseOpen1);
   };
 
-  const onToggle2 = (e) => {
+  const onToggle2: MouseEventHandler<HTMLAnchorElement> = (e) => {
     e.preventDefault();
     toggleCollapse2(!collapseOpen2);
   };
 
-  const onToggle3 = (e) => {
+  const onToggle3: MouseEventHandler<HTMLAnchorElement> = (e) => {
     e.preventDefault();
     toggleCollapse3(!collapseOpen3);
   };
