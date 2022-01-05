@@ -59,7 +59,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           msg: |
-            **Check tree-shakeability** :deciduous_tree: for ${{ github.sha }}: ${{ steps.agadoo.outputs.status }}
+            **Check tree-shakeability** for ${{ github.sha }}: ${{ steps.agadoo.outputs.status == 'tree-shakeable' && ':deciduous_tree:' || ':x:' }} ${{ steps.agadoo.outputs.status }}
             <details>
               <summary>Agadoo stdout</summary>
 
@@ -77,4 +77,4 @@ jobs:
 
             </details>
           check_for_duplicate_msg: false
-          delete_prev_regex_msg: "**Check tree-shakeability** :deciduous_tree: "
+          delete_prev_regex_msg: "**Check tree-shakeability** "
