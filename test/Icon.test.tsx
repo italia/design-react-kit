@@ -47,3 +47,12 @@ test('should throw when invalid icon/URL is passed to preload', async () => {
     expect(e).toBeTruthy();
   }
 });
+
+test('should clear the icon cache correctly', async () => {
+  await preloadIcons(['it-tool', 'it-search']);
+  expect(clearIconCache('it-tool')).toEqual({
+    'it-tool': expect.any(Function)
+  });
+  // Call it again: this time should return undefined
+  expect(clearIconCache('it-tool')).toEqual({ 'it-tool': undefined });
+});
