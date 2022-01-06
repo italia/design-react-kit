@@ -40,7 +40,7 @@ export function preloadIcons(icons: IconName[]) {
 export const clearIconCache = (iconName?: IconName) => {
   let deletedItems;
   if (iconName) {
-    deletedItems = { iconName: iconsCache[iconName] };
+    deletedItems = { [iconName]: iconsCache[iconName] };
     delete iconsCache[iconName];
   } else {
     deletedItems = { ...iconsCache };
