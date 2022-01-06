@@ -10,10 +10,17 @@ export const logError = (message: string) => {
   }
 };
 
+// @internal Used for testing purposes only
+export const flushMessageCache = () => {
+  for (const key in messages) {
+    delete messages[key];
+  }
+};
+
 const messages: Record<string, 1> = {};
 export const notifyDeprecation = (
   message: string,
-  options = { once: true }
+  options: { once: boolean } = { once: true }
 ) => {
   if (!options.once) {
     logError(message);
@@ -29,13 +36,13 @@ export function mapToCssModules(
   className: string | null,
   cssModules?: Record<string, string>
 ) {
-  let finalClassNames = className ?? '';
+  let finalClassNames = className == null ? '' : className;
   if (!cssModules) {
     return finalClassNames;
   }
   return finalClassNames
     .split(' ')
-    .map((klass) => cssModules[klass] || klass)
+    .map((klass) => cssModules[klass] ?? klass)
     .join(' ');
 }
 
@@ -43,7 +50,7 @@ type UnknownObject = Record<string, unknown>;
 
 export function pick<T extends UnknownObject>(
   obj: T,
-  keys: Array<keyof T>
+  keys: keyof T | Array<keyof T>
 ): Partial<T> {
   const keysArray = Array.isArray(keys) ? keys : [keys];
   const newObj: Partial<T> = {};
@@ -57,7 +64,7 @@ export function pick<T extends UnknownObject>(
 
 export function omit<T extends UnknownObject>(
   obj: T,
-  keys: Array<keyof T>
+  keys: keyof T | Array<keyof T>
 ): Partial<T> {
   const keysLookup = new Set(Array.isArray(keys) ? keys : [keys]);
 
