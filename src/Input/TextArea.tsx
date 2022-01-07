@@ -80,7 +80,7 @@ export const TextArea = ({
       infoText,
       normalized: Boolean(normalized),
       infoTextControlClass,
-      isFocused: isFocused,
+      isFocused,
       originalWrapperClass
     },
     cssModule
@@ -91,7 +91,7 @@ export const TextArea = ({
     id,
     onFocus: toggleFocusLabel,
     onBlur: toggleBlurLabel,
-    value: value,
+    value,
     ref: innerRef
   };
 
