@@ -1,13 +1,7 @@
-import React, {
-  Ref,
-  ReactNode,
-  TextareaHTMLAttributes,
-  useCallback,
-  useState
-} from 'react';
+import React, { Ref, ReactNode, TextareaHTMLAttributes } from 'react';
 
 import { InputContainer } from './InputContainer';
-import { getClasses, getInfoTextControlClass } from './utils';
+import { getClasses, getInfoTextControlClass, useFocus } from './utils';
 import type { CSSModule } from 'reactstrap';
 
 export interface TextAreaProps
@@ -52,25 +46,14 @@ export const TextArea = ({
   invalid,
   ...attributes
 }: TextAreaProps) => {
-  const [isFocused, setFocus] = useState(false);
-
-  const toggleFocusLabel = useCallback(
-    (e: React.FocusEvent<HTMLTextAreaElement>) => {
-      setFocus(true);
-      attributes.onFocus?.(e);
-    },
-    [attributes.onFocus]
-  );
-
-  const toggleBlurLabel = useCallback(
-    (e: React.FocusEvent<HTMLTextAreaElement>) => {
-      if (e.target.value === '') {
-        setFocus(!isFocused);
-      }
-      attributes.onBlur?.(e);
-    },
-    [isFocused, attributes.onBlur]
-  );
+  const {
+    toggleFocusLabel,
+    toggleBlurLabel,
+    isFocused
+  } = useFocus<HTMLTextAreaElement>({
+    onFocus: attributes.onFocus,
+    onBlur: attributes.onBlur
+  });
 
   const infoTextControlClass = getInfoTextControlClass(
     { valid, invalid },

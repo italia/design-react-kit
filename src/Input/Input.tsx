@@ -14,7 +14,8 @@ import {
   getTag,
   getFormControlClass,
   getClasses,
-  getInfoTextControlClass
+  getInfoTextControlClass,
+  useFocus
 } from './utils';
 import type { CSSModule } from 'reactstrap';
 import { notifyDeprecation } from '../utils';
@@ -122,27 +123,17 @@ export const Input = ({
   noWrapper = false,
   ...attributes
 }: InputProps) => {
-  const [isFocused, setFocus] = useState(false);
   const [isHidden, setHidden] = useState(true);
   const [hasIcon, toggleIcon] = useState(true);
 
-  const toggleFocusLabel = useCallback(
-    (e: React.FocusEvent<HTMLInputElement>) => {
-      setFocus(true);
-      attributes.onFocus?.(e);
-    },
-    [attributes.onFocus]
-  );
-
-  const toggleBlurLabel = useCallback(
-    (e: React.FocusEvent<HTMLInputElement>) => {
-      if (e.target.value === '') {
-        setFocus(!isFocused);
-      }
-      attributes.onBlur?.(e);
-    },
-    [isFocused, attributes.onBlur]
-  );
+  const {
+    toggleFocusLabel,
+    toggleBlurLabel,
+    isFocused
+  } = useFocus<HTMLInputElement>({
+    onFocus: attributes.onFocus,
+    onBlur: attributes.onBlur
+  });
 
   const toggleShow = useCallback(() => {
     setHidden(!isHidden);
