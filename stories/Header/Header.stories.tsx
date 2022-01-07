@@ -115,7 +115,9 @@ export const _HeaderComplete: Story<HeaderCompleteProps> = CompleteHeaderBasic.b
 _HeaderComplete.args = {
   theme: '',
   slimHeaderType: 'default',
-  sticky: false
+  sticky: false,
+  iconName:
+    'https://upload.wikimedia.org/wikipedia/commons/6/6a/Coat-elements.png'
 };
 _HeaderComplete.argTypes = {
   slimHeaderType: {
@@ -168,5 +170,7 @@ export const _HeaderCompleteLight: Story<HeaderCompleteProps> = CompleteHeaderBa
 _HeaderCompleteLight.args = {
   theme: 'light',
   slimHeaderType: 'default',
-  sticky: false
+  sticky: false,
+  iconName:
+    'https://upload.wikimedia.org/wikipedia/commons/6/6a/Coat-elements.png'
 };
