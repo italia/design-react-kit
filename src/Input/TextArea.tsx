@@ -1,7 +1,7 @@
 import React, { Ref, ReactNode, TextareaHTMLAttributes } from 'react';
 
 import { InputContainer } from './InputContainer';
-import { getClasses, getInfoTextControlClass } from './utils';
+import { getClasses, getInfoTextControlClass, useFocus } from './utils';
 import type { CSSModule } from 'reactstrap';
 
 export interface TextAreaProps
@@ -31,154 +31,128 @@ export interface TextAreaProps
   className?: string;
 }
 
-type InputState = { isFocused: boolean; hidden: boolean; icon: boolean };
+export const TextArea = ({
+  id,
+  className,
+  cssModule,
+  innerRef,
+  label,
+  infoText,
+  placeholder,
+  normalized,
+  value,
+  wrapperClassName: originalWrapperClass,
+  valid,
+  invalid,
+  ...attributes
+}: TextAreaProps) => {
+  const {
+    toggleFocusLabel,
+    toggleBlurLabel,
+    isFocused
+  } = useFocus<HTMLTextAreaElement>({
+    onFocus: attributes.onFocus,
+    onBlur: attributes.onBlur
+  });
 
-export class TextArea extends React.Component<TextAreaProps, InputState> {
-  state = {
-    isFocused: false,
-    hidden: true,
-    icon: true
-  };
+  const infoTextControlClass = getInfoTextControlClass(
+    { valid, invalid },
+    cssModule
+  );
 
-  toggleFocusLabel = () => {
-    this.setState({
-      isFocused: true
-    });
-  };
+  const extraAttributes: { ['aria-describedby']?: string } = {};
 
-  toggleBlurLabel = (e: { target: { value: string } }) => {
-    if (e.target.value === '') {
-      this.setState({
-        isFocused: !this.state.isFocused
-      });
-    }
-  };
+  // associate the input field with the help text
+  const infoId = id ? `${id}Description` : undefined;
+  if (id) {
+    extraAttributes['aria-describedby'] = infoId;
+  }
 
-  toggleShow = () => {
-    this.setState({ hidden: !this.state.hidden, icon: !this.state.icon });
-  };
-
-  render() {
-    const {
-      id,
-      className,
-      cssModule,
-      innerRef,
-      label,
-      infoText,
-      placeholder,
-      normalized,
-      value,
-      wrapperClassName: originalWrapperClass,
+  // Styling
+  const { activeClass, infoTextClass, inputClasses, wrapperClass } = getClasses(
+    className,
+    {
       valid,
       invalid,
-      ...attributes
-    } = this.props;
-
-    const infoTextControlClass = getInfoTextControlClass(
-      { valid, invalid },
-      cssModule
-    );
-
-    const extraAttributes: { ['aria-describedby']?: string } = {};
-
-    // associate the input field with the help text
-    const infoId = id ? `${id}Description` : undefined;
-    if (id) {
-      extraAttributes['aria-describedby'] = infoId;
-    }
-
-    // Styling
-    const {
-      activeClass,
-      infoTextClass,
-      inputClasses,
-      wrapperClass
-    } = getClasses(
-      className,
-      {
-        valid,
-        invalid,
-        placeholder,
-        value,
-        label,
-        infoText,
-        normalized: Boolean(normalized),
-        infoTextControlClass,
-        isFocused: this.state.isFocused,
-        originalWrapperClass
-      },
-      cssModule
-    );
-
-    // set of attributes always shared by the Input components
-    const sharedAttributes = {
-      id,
-      onFocus: this.toggleFocusLabel,
-      onBlur: this.toggleBlurLabel,
-      value: value,
-      ref: innerRef
-    };
-
-    // set of attributes always shared by the wrapper component
-    const containerProps = {
-      id,
-      infoId,
-      activeClass,
+      placeholder,
+      value,
       label,
-      infoTextClass,
       infoText,
-      wrapperClass
-    };
+      normalized: Boolean(normalized),
+      infoTextControlClass,
+      isFocused,
+      originalWrapperClass
+    },
+    cssModule
+  );
 
-    if (placeholder) {
-      return (
-        <InputContainer {...containerProps}>
-          <textarea
-            {...attributes}
-            {...extraAttributes}
-            {...sharedAttributes}
-            className={inputClasses}
-            placeholder={placeholder}
-          />
-        </InputContainer>
-      );
-    }
+  // set of attributes always shared by the Input components
+  const sharedAttributes = {
+    id,
+    onFocus: toggleFocusLabel,
+    onBlur: toggleBlurLabel,
+    value,
+    ref: innerRef
+  };
 
-    if (normalized) {
-      return (
-        <InputContainer {...containerProps}>
-          <textarea
-            {...attributes}
-            {...extraAttributes}
-            {...sharedAttributes}
-            className={inputClasses}
-            readOnly
-          />
-        </InputContainer>
-      );
-    }
-    if (label || infoText) {
-      return (
-        <InputContainer {...containerProps}>
-          <textarea
-            {...attributes}
-            {...extraAttributes}
-            {...sharedAttributes}
-            className={inputClasses}
-          />
-        </InputContainer>
-      );
-    }
+  // set of attributes always shared by the wrapper component
+  const containerProps = {
+    id,
+    infoId,
+    activeClass,
+    label,
+    infoTextClass,
+    infoText,
+    wrapperClass
+  };
 
+  if (placeholder) {
     return (
-      <textarea
-        {...attributes}
-        {...extraAttributes}
-        ref={innerRef}
-        className={inputClasses}
-        {...sharedAttributes}
-      />
+      <InputContainer {...containerProps}>
+        <textarea
+          {...attributes}
+          {...extraAttributes}
+          {...sharedAttributes}
+          className={inputClasses}
+          placeholder={placeholder}
+        />
+      </InputContainer>
     );
   }
-}
+
+  if (normalized) {
+    return (
+      <InputContainer {...containerProps}>
+        <textarea
+          {...attributes}
+          {...extraAttributes}
+          {...sharedAttributes}
+          className={inputClasses}
+          readOnly
+        />
+      </InputContainer>
+    );
+  }
+  if (label || infoText) {
+    return (
+      <InputContainer {...containerProps}>
+        <textarea
+          {...attributes}
+          {...extraAttributes}
+          {...sharedAttributes}
+          className={inputClasses}
+        />
+      </InputContainer>
+    );
+  }
+
+  return (
+    <textarea
+      {...attributes}
+      {...extraAttributes}
+      ref={innerRef}
+      className={inputClasses}
+      {...sharedAttributes}
+    />
+  );
+};

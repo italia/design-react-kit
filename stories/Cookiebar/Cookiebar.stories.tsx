@@ -1,8 +1,12 @@
+import { Story } from '@storybook/react';
 import React from 'react';
 
 import { CookieBar, CookieBarButtons, CookieBarButton } from '../../src';
 
-export const ComeUsarlo = ({ open }) => {
+type ComeUsarloProps = {
+  open: boolean;
+};
+export const ComeUsarlo: Story<ComeUsarloProps> = ({ open }) => {
   return (
     <CookieBar style={{ display: open ? 'block' : 'none' }}>
       <p>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Story } from '@storybook/react';
 
 import {
   MegamenuItem,
@@ -19,7 +20,16 @@ import {
   Col
 } from '../../src';
 
-const _EsempiInterattivi = ({ variation, color, placement }) => {
+type EsempiInterattiviProps = {
+  variation: string;
+  color: string;
+  placement: string;
+};
+const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({
+  variation,
+  color,
+  placement
+}) => {
   return (
     <Navbar
       light
@@ -333,7 +343,10 @@ export const InlineMenu = () => {
   const expanded = {
     'aria-expanded': true
   };
-  const toggle = (e, id) => {
+  const toggle = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string | number
+  ) => {
     e.preventDefault();
     switch (id) {
       case 1:

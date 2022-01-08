@@ -1,3 +1,4 @@
+import { Story } from '@storybook/react';
 import React from 'react';
 
 import { Button, Icon, Progress } from '../../src';
@@ -48,7 +49,16 @@ export const BottoneConProgressBar = () => (
   </div>
 );
 
-export const _EsempiInterattivi = ({ value, color, label }) => {
+type EsempiInterattiviProps = {
+  value: string | number;
+  label: string;
+  color: string;
+};
+export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({
+  value,
+  color,
+  label
+}) => {
   return (
     <div>
       <Progress value={value} label={label} color={color} />

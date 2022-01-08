@@ -1,4 +1,5 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
+import { Story } from '@storybook/react';
 import React from 'react';
 
 import {
@@ -22,7 +23,7 @@ export default {
   title: 'Componenti/Cards'
 };
 
-export const SimpleCard = () => (
+export const SimpleCard: Story = () => (
   <Row>
     <Col xs='12' lg='4'>
       {/* start card */}
@@ -45,7 +46,7 @@ export const SimpleCard = () => (
 
 SimpleCard.storyName = 'Card semplice';
 
-export const SimpleCardMultipleColumns = () => (
+export const SimpleCardMultipleColumns: Story = () => (
   <Row>
     {[1, 2, 3].map((i) => (
       <Col xs='12' lg='4' key={i}>
@@ -68,7 +69,7 @@ export const SimpleCardMultipleColumns = () => (
 
 SimpleCardMultipleColumns.storyName = 'Card semplice su più colonne';
 
-export const SimpleArticle = () => (
+export const SimpleArticle: Story = () => (
   <Row>
     <Col xs='12' lg='6'>
       {/* start card */}
@@ -93,7 +94,7 @@ export const SimpleArticle = () => (
 
 SimpleArticle.storyName = 'Articolo semplice';
 
-export const SimpleArticleWithIcon = () => (
+export const SimpleArticleWithIcon: Story = () => (
   <Row>
     <Col xs='12' lg='6'>
       {/* start card */}
@@ -119,7 +120,7 @@ export const SimpleArticleWithIcon = () => (
 );
 SimpleArticleWithIcon.storyName = 'Articolo con Icona';
 
-export const CardIcon = () => (
+export const CardIcon: Story = () => (
   <Row>
     <Col xs='12' lg='6'>
       {/* Start card */}
@@ -151,7 +152,7 @@ export const CardIcon = () => (
 );
 CardIcon.storyName = 'Card con Icona';
 
-export const CardIconAdvanced = () => (
+export const CardIconAdvanced: Story = () => (
   <Row>
     <Col xs='12' lg='6'>
       {/* Start card */}
@@ -182,7 +183,7 @@ export const CardIconAdvanced = () => (
 );
 CardIconAdvanced.storyName = 'Card con Icona alternativa';
 
-export const CardWithShading = () => (
+export const CardWithShading: Story = () => (
   <Row>
     <Col xs='12' lg='6'>
       {/* Start card */}
@@ -206,7 +207,7 @@ export const CardWithShading = () => (
 
 CardWithShading.storyName = 'Card con ombreggiatura';
 
-export const BigCard = () => (
+export const BigCard: Story = () => (
   <Row>
     <Col xs='12' lg='6'>
       {/* Start card */}
@@ -233,7 +234,7 @@ export const BigCard = () => (
 
 BigCard.storyName = 'Card grande';
 
-export const BigCardExampleTwo = () => (
+export const BigCardExampleTwo: Story = () => (
   <Row>
     <Col xs='12' lg='6'>
       {/* Start card */}
@@ -265,7 +266,7 @@ export const BigCardExampleTwo = () => (
 
 BigCardExampleTwo.storyName = 'Card grande: esempio alternativo';
 
-export const BigCardWithTag = () => (
+export const BigCardWithTag: Story = () => (
   <Row>
     <Col xs='12' lg='6'>
       {/* Start card */}
@@ -297,7 +298,7 @@ export const BigCardWithTag = () => (
 
 BigCardWithTag.storyName = 'Card grande con tag, data e call to action';
 
-export const CardWithImageAndDate = () => (
+export const CardWithImageAndDate: Story = () => (
   <Row>
     <Col xs='12' lg='6'>
       {/* Start card */}
@@ -331,7 +332,7 @@ export const CardWithImageAndDate = () => (
 );
 CardWithImageAndDate.storyName = 'Card con immagine e data calendario';
 
-export const CardsWithImages = () => (
+export const CardsWithImages: Story = () => (
   <Row>
     <Col xs='12' lg='6'>
       {/* Start card */}
@@ -440,7 +441,7 @@ export const CardsWithImages = () => (
   </Row>
 );
 
-export const SpecialCard = () => (
+export const SpecialCard: Story = () => (
   <Row>
     <Col xs='12' lg='6'>
       {/* Start card */}
@@ -470,7 +471,7 @@ export const SpecialCard = () => (
 );
 SpecialCard.storyName = 'Card speciali';
 
-export const SimpleCardTeaser = () => (
+export const SimpleCardTeaser: Story = () => (
   <Card teaser>
     <CardBody>
       <CardTitle tag='h5'>
@@ -487,7 +488,7 @@ export const SimpleCardTeaser = () => (
 
 SimpleCardTeaser.storyName = 'Card teaser';
 
-export const CardTeaserMultiple = () => (
+export const CardTeaserMultiple: Story = () => (
   <div className='card-wrapper card-teaser-wrapper'>
     <Card teaser noWrapper>
       <CardBody>
@@ -530,7 +531,7 @@ export const CardTeaserMultiple = () => (
 
 CardTeaserMultiple.storyName = 'Card teaser multiple';
 
-export const CardWithFooterComponent = () => (
+export const CardWithFooterComponent: Story = () => (
   <div className='row'>
     <div className='col-12 col-lg-6'>
       {/* Start card */}
@@ -563,8 +564,20 @@ export const CardWithFooterComponent = () => (
   </div>
 );
 
-// eslint-disable-next-line react/prop-types
-export const _EsempiInterattivi = ({ spacing, teaser, link, title, text }) => {
+type EsempiInterattiviProps = {
+  spacing: boolean;
+  teaser: boolean;
+  title: string;
+  link: string;
+  text: string;
+};
+export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({
+  spacing,
+  teaser,
+  link,
+  title,
+  text
+}) => {
   return (
     <Row>
       <Col size={12} lg={6}>

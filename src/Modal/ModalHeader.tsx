@@ -1,9 +1,8 @@
 import React, { FC, HTMLAttributes } from 'react';
-import { CSSModule, Util } from 'reactstrap';
+import { CSSModule } from 'reactstrap';
 import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
-// @ts-expect-error
-const { mapToCssModules } = Util;
+import { mapToCssModules } from '../utils';
 
 export interface ModalHeaderProps extends HTMLAttributes<HTMLElement> {
   [key: string]: any;

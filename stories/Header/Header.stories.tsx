@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 
 import { Header } from '../../src';
 
@@ -11,6 +11,15 @@ import CompleteHeaderBasic from './CompleteHeader/basic';
 import NavHeaderSecondary from './NavHeaderSecondary/NavHeaderSecondary';
 
 import Introduction from './Introduction';
+import type {
+  HeaderSlimProps,
+  ThemeType,
+  HeaderCenterProps,
+  HeaderNavProps,
+  HeaderCompleteProps,
+  HeaderSlimLightProps,
+  CenterHeaderBasicProps
+} from './types';
 
 const meta: Meta = {
   title: 'Componenti/Header',
@@ -20,7 +29,7 @@ export default meta;
 
 export const Introduzione = () => <Introduction />;
 
-export const _HeaderSlim = SlimHeaderBasic.bind({});
+export const _HeaderSlim: Story<HeaderSlimProps> = SlimHeaderBasic.bind({});
 _HeaderSlim.args = {
   theme: '',
   isOpen: false,
@@ -36,7 +45,9 @@ _HeaderSlim.argTypes = {
   }
 };
 
-export const _SlimHeaderWithFullButton = SlimHeaderFull.bind({});
+export const _SlimHeaderWithFullButton: Story<ThemeType> = SlimHeaderFull.bind(
+  {}
+);
 
 _SlimHeaderWithFullButton.args = {
   theme: ''
@@ -51,7 +62,9 @@ _SlimHeaderWithFullButton.argTypes = {
   }
 };
 
-export const _HeaderCenter = CenterHeaderBasic.bind({});
+export const _HeaderCenter: Story<HeaderCenterProps> = CenterHeaderBasic.bind(
+  {}
+);
 
 _HeaderCenter.args = {
   theme: '',
@@ -68,7 +81,7 @@ _HeaderCenter.argTypes = {
   }
 };
 
-export const _HeaderNav = NavHeaderBasic.bind({});
+export const _HeaderNav: Story<HeaderNavProps> = NavHeaderBasic.bind({});
 
 _HeaderNav.parameters = {
   options: {
@@ -89,16 +102,22 @@ _HeaderNav.argTypes = {
   }
 };
 
-export const _HeaderNavSecondary = NavHeaderSecondary.bind({});
+export const _HeaderNavSecondary: Story<HeaderNavProps> = NavHeaderSecondary.bind(
+  {}
+);
 _HeaderNavSecondary.args = {
   theme: ''
 };
 
-export const _HeaderComplete = CompleteHeaderBasic.bind({});
+export const _HeaderComplete: Story<HeaderCompleteProps> = CompleteHeaderBasic.bind(
+  {}
+);
 _HeaderComplete.args = {
   theme: '',
   slimHeaderType: 'default',
-  sticky: false
+  sticky: false,
+  iconName:
+    'https://upload.wikimedia.org/wikipedia/commons/6/6a/Coat-elements.png'
 };
 _HeaderComplete.argTypes = {
   slimHeaderType: {
@@ -115,33 +134,43 @@ _HeaderComplete.argTypes = {
   }
 };
 
-export const _HeaderSlimLight = SlimHeaderBasic.bind({});
+export const _HeaderSlimLight: Story<HeaderSlimLightProps> = SlimHeaderBasic.bind(
+  {}
+);
 _HeaderSlimLight.args = {
   theme: 'light',
   brandText: 'Ente appartenenza/Owner'
 };
 
-export const _HeaderCenterNarrow = CenterHeaderBasic.bind({});
+export const _HeaderCenterNarrow: Story<CenterHeaderBasicProps> = CenterHeaderBasic.bind(
+  {}
+);
 _HeaderCenterNarrow.args = {
   theme: '',
   type: 'center',
   brandText: 'Ente appartenenza/Owner',
   isSmall: true
 };
-export const _HeaderCenterNarrowLight = CenterHeaderBasic.bind({});
+export const _HeaderCenterNarrowLight: Story<CenterHeaderBasicProps> = CenterHeaderBasic.bind(
+  {}
+);
 _HeaderCenterNarrowLight.args = {
   theme: 'light',
   type: 'center',
   brandText: 'Ente appartenenza/Owner',
   isSmall: true
 };
-export const _HeaderNavLight = NavHeaderBasic.bind({});
+export const _HeaderNavLight: Story<HeaderNavProps> = NavHeaderBasic.bind({});
 _HeaderNavLight.args = {
   theme: 'light'
 };
-export const _HeaderCompleteLight = CompleteHeaderBasic.bind({});
+export const _HeaderCompleteLight: Story<HeaderCompleteProps> = CompleteHeaderBasic.bind(
+  {}
+);
 _HeaderCompleteLight.args = {
   theme: 'light',
   slimHeaderType: 'default',
-  sticky: false
+  sticky: false,
+  iconName:
+    'https://upload.wikimedia.org/wikipedia/commons/6/6a/Coat-elements.png'
 };

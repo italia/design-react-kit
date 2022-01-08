@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/italia/design-react-kit/issues"
   },
-  "version": "4.0.0",
+  "version": "4.0.2",
   "license": "BSD-3",
   "module": "dist/esm/index.js",
   "main": "./src/index.tsx",
@@ -46,8 +46,8 @@
     "svg:import": "svgr -d src/Icon/assets node_modules/bootstrap-italia/src/svg && echo \"\" >> src/Icon/assets/index.tsx && npx eslint src/Icon/assets/index.tsx --fix",
     "prebuild": "npm run svg:import",
     "build": "tsdx build --format cjs,esm",
-    "test": "tsdx test --passWithNoTests --coverage",
-    "test:ci": "tsdx test --passWithNoTests --coverage --runInBand --ci",
+    "test": "tsdx test ./src ./test --passWithNoTests --coverage",
+    "test:ci": "tsdx test ./src ./test --passWithNoTests --coverage --runInBand --ci",
     "lint": "npx eslint src stories test --ext js,ts,tsx,jsx,mdx",
     "prepare": "tsdx build --format cjs,esm && husky install",
     "size": "size-limit",
@@ -59,8 +59,12 @@
     "storybook:deploy": "npx gh-pages -d storybook-static -m 'Update GitHub Pages [ci skip]'"
   },
   "peerDependencies": {
+    "bootstrap-italia": "1.4.3",
     "react": ">=16.8.0"
   },
+  "browserslist": [
+    "extends browserslist-config-design-italia"
+  ],
   "size-limit": [
     {
       "path": "dist/cjs/index.js",
@@ -96,11 +100,11 @@
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.2.2",
     "bootstrap-italia": "^1.4.3",
+    "browserslist-config-design-italia": "^1.0.0",
     "circular-dependency-plugin": "^5.2.2",
-    "classnames": "^2.3.1",
     "eslint-plugin-mdx": "^1.13.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^7.0.0",
+    "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest-transform-stub": "^2.0.0",
     "postcss-flexbugs-fixes": "^4.2.1",
@@ -116,6 +120,8 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
+    "classnames": "^2.3.1",
+    "is-number": "^7.0.0",
     "react-select": "^4.3.0",
     "react-stickup": "^1.12.0",
     "react-toastify": "^7.0.4",
@@ -124,14 +130,6 @@
     "reactstrap": "^8.9.0",
     "webfontloader": "^1.6.28"
   },
-  "browserslist": [
-    "defaults",
-    "ie 11",
-    "not ie_mob 11",
-    "not op_mini all",
-    "edge >= 13",
-    "safari 11"
-  ],
   "jest": {
     "transform": {
       ".(ts|tsx)$": "ts-jest",

@@ -6,7 +6,10 @@ import * as Utils from '../src/utils';
 import { isCustomLegendObject } from '../src/Rating/Rating';
 import { Rating, preloadIcons } from '../src';
 
-jest.mock('./../src/utils', () => ({ noop: jest.fn() }));
+jest.mock('./../src/utils', () => {
+  const utilModule = jest.requireActual('./../src/utils');
+  return { ...utilModule, noop: jest.fn() };
+});
 
 describe('Rating', () => {
   // Icons are now async, so preload them to make it behave in an sync way

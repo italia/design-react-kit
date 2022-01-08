@@ -91,7 +91,9 @@ export const _Accordion = () => {
     <Accordion>
       <AccordionHeader
         active={collapseElementOpen === '1'}
-        onToggle={() => setCollapseElement('')}
+        onToggle={() =>
+          setCollapseElement(collapseElementOpen !== '1' ? '1' : '')
+        }
       >
         Accordion Group Item #1
       </AccordionHeader>
@@ -103,7 +105,9 @@ export const _Accordion = () => {
 
       <AccordionHeader
         active={collapseElementOpen === '2'}
-        onToggle={() => setCollapseElement('')}
+        onToggle={() =>
+          setCollapseElement(collapseElementOpen !== '2' ? '2' : '')
+        }
       >
         Accordion Group Item #2
       </AccordionHeader>
@@ -115,7 +119,9 @@ export const _Accordion = () => {
 
       <AccordionHeader
         active={collapseElementOpen === '3'}
-        onToggle={() => setCollapseElement('')}
+        onToggle={() =>
+          setCollapseElement(collapseElementOpen !== '3' ? '3' : '')
+        }
       >
         Accordion Group Item #3
       </AccordionHeader>

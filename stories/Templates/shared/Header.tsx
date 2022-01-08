@@ -25,15 +25,7 @@ import {
   HeaderBrand,
   UncontrolledDropdown
 } from '../../../src';
-
-type Theme = {
-  theme?: 'light' | 'dark';
-};
-
-type TownLabels = {
-  townName: string;
-  townTagLine: string;
-};
+import type { PageProps, Theme, TownLabels } from './types';
 
 type State = { collapsed: boolean };
 
@@ -182,7 +174,7 @@ export const CenterHeader: FC<TownLabels & Theme> = ({
   );
 };
 
-export class NavHeader extends Component<{ active: string } & Theme, State> {
+export class NavHeader extends Component<{ active?: string } & Theme, State> {
   state = {
     collapsed: true
   };
@@ -252,7 +244,7 @@ export class NavHeader extends Component<{ active: string } & Theme, State> {
 }
 
 const CompleteHeader: FC<
-  Theme & TownLabels & { type?: 'default'; page?: string; sticky: boolean }
+  PageProps & { type?: 'default'; page?: string; sticky: boolean }
 > = ({ page, sticky, theme, type, townName, townTagLine }) => {
   const SlimTag = type === 'default' ? SlimHeader : SlimHeaderFullResponsive;
   return (

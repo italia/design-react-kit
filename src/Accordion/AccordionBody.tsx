@@ -1,22 +1,11 @@
-import React, { Component, ElementType } from 'react';
+import React, { ElementType, useCallback, useState } from 'react';
 import classNames from 'classnames';
 import { Transition } from 'react-transition-group';
 
-import { Util } from 'reactstrap';
+import { pick, omit } from '../utils';
+import { TransitionTimeouts, TransitionsKeys } from '../transitions';
 import type { TransitionProps } from 'react-transition-group/Transition';
-
-const {
-  // @ts-ignore
-  TransitionTimeouts,
-  // @ts-ignore
-  TransitionPropTypeKeys,
-  // @ts-ignore
-  TransitionStatuses,
-  // @ts-ignore
-  pick,
-  // @ts-ignore
-  omit
-} = Util;
+import type { TransitionStates } from '../transitions';
 
 export type AccordionBodyProps = Partial<TransitionProps> & {
   tag?: ElementType;
@@ -25,14 +14,13 @@ export type AccordionBodyProps = Partial<TransitionProps> & {
   onToggle?: () => void;
 };
 
-const transitionStatusToClassHash = {
-  [TransitionStatuses.ENTERING]: 'collapsing',
-  [TransitionStatuses.ENTERED]: 'collapse show',
-  [TransitionStatuses.EXITING]: 'collapsing',
-  [TransitionStatuses.EXITED]: 'collapse'
+// hardcode these entries to avoid leaks
+const transitionStatusToClassHash: Record<TransitionStates, string> = {
+  entering: 'collapsing',
+  entered: 'collapse show',
+  exiting: 'collapsing',
+  exited: 'collapse'
 };
-
-type TransitionStates = keyof typeof transitionStatusToClassHash;
 
 function getTransitionClass(status: TransitionStates) {
   return transitionStatusToClassHash[status] || 'collapse';
@@ -42,86 +30,88 @@ function getHeight(node: HTMLElement) {
   return node.scrollHeight;
 }
 
-export class AccordionBody extends Component<
-  AccordionBodyProps,
-  { height: null | number }
-> {
-  state = {
-    height: null
-  };
+export const AccordionBody = ({
+  className,
+  tag = 'div',
+  active = false,
+  children,
+  timeout = TransitionTimeouts.Collapse,
+  ...attributes
+}: AccordionBodyProps) => {
+  const [height, setHeight] = useState<null | number>(null);
 
-  onEntering = (node: HTMLElement, isAppearing: boolean) => {
-    this.setState({ height: getHeight(node) });
-    this.props.onEntering?.(node, isAppearing);
-  };
+  const onEntering = useCallback(
+    (node: HTMLElement, isAppearing: boolean) => {
+      setHeight(getHeight(node));
+      attributes.onEntering?.(node, isAppearing);
+    },
+    [attributes.onEntering]
+  );
+  const onEntered = useCallback(
+    (node: HTMLElement, isAppearing: boolean) => {
+      setHeight(null);
+      attributes.onEntered?.(node, isAppearing);
+    },
+    [attributes.onEntered]
+  );
+  const onExit = useCallback(
+    (node: HTMLElement) => {
+      setHeight(getHeight(node));
+      attributes.onExit?.(node);
+    },
+    [attributes.onExit]
+  );
+  const onExiting = useCallback(
+    (node: HTMLElement) => {
+      // getting this variable triggers a reflow
+      // @ts-expect-error
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const _unused = node.offsetHeight;
+      setHeight(0);
+      attributes.onExiting?.(node);
+    },
+    [attributes.onExiting]
+  );
+  const onExited = useCallback(
+    (node: HTMLElement) => {
+      setHeight(null);
+      attributes.onExited?.(node);
+    },
+    [attributes.onExited]
+  );
+  const Tag = tag;
 
-  onEntered = (node: HTMLElement, isAppearing: boolean) => {
-    this.setState({ height: null });
-    this.props.onEntered?.(node, isAppearing);
-  };
+  const transitionProps = pick(attributes, TransitionsKeys);
+  const childProps = omit(attributes, TransitionsKeys);
 
-  onExit = (node: HTMLElement) => {
-    this.setState({ height: getHeight(node) });
-    this.props.onExit?.(node);
-  };
+  return (
+    <Transition
+      {...transitionProps}
+      timeout={timeout}
+      in={active}
+      onEntering={onEntering}
+      onEntered={onEntered}
+      onExit={onExit}
+      onExiting={onExiting}
+      onExited={onExited}
+    >
+      {(status: TransitionStates) => {
+        const transitionClass = getTransitionClass(status);
+        const classes = classNames(className, transitionClass);
 
-  onExiting = (node: HTMLElement) => {
-    // getting this variable triggers a reflow
-    // @ts-expect-error
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const _unused = node.offsetHeight;
-    this.setState({ height: 0 });
-    this.props.onExiting?.(node);
-  };
+        const style = height == null ? null : { height };
 
-  onExited = (node: HTMLElement) => {
-    this.setState({ height: null });
-    this.props.onExited?.(node);
-  };
-
-  render() {
-    const {
-      className,
-      tag = 'div',
-      active = false,
-      children,
-      timeout = TransitionTimeouts.Collapse,
-      ...attributes
-    } = this.props;
-    const Tag = tag;
-    const { height } = this.state;
-
-    const transitionProps = pick(attributes, TransitionPropTypeKeys);
-    const childProps = omit(attributes, TransitionPropTypeKeys);
-
-    return (
-      <Transition
-        {...transitionProps}
-        timeout={timeout}
-        in={active}
-        onEntering={this.onEntering}
-        onEntered={this.onEntered}
-        onExit={this.onExit}
-        onExiting={this.onExiting}
-        onExited={this.onExited}
-      >
-        {(status: TransitionStates) => {
-          const transitionClass = getTransitionClass(status);
-          const classes = classNames(className, transitionClass);
-
-          const style = height == null ? null : { height };
-
-          return (
-            <Tag
-              className={classes}
-              style={{ ...childProps.style, ...style }}
-              {...childProps}
-            >
-              <div className='collapse-body'>{children}</div>
-            </Tag>
-          );
-        }}
-      </Transition>
-    );
-  }
-}
+        return (
+          <Tag
+            className={classes}
+            style={{ ...childProps.style, ...style }}
+            {...childProps}
+          >
+            <div className='collapse-body'>{children}</div>
+          </Tag>
+        );
+      }}
+    </Transition>
+  );
+};
+// }

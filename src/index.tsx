@@ -135,7 +135,6 @@ export { Nav } from './Nav/Nav';
 export { Pager } from './Pager/Pager';
 export { Rating } from './Rating/Rating';
 export { ResponsiveImage } from './ResponsiveImage/ResponsiveImage';
-export { PasswordInput } from './PasswordInput/PasswordInput';
 export { Skiplink } from './Skiplink/Skiplink';
 export { SkiplinkItem } from './Skiplink/SkiplinkItem';
 export { Toggle } from './Toggle/Toggle';
@@ -151,7 +150,7 @@ export { CookieBarButtons } from './CookieBar/CookieBarButtons';
 export { CookieBarButton } from './CookieBar/CookieBarButton';
 export { Chip } from './Chips/Chip';
 export { ChipLabel } from './Chips/ChipLabel';
-export { FontLoader } from './FontLoader/FontLoader';
+export { FontLoader, useFontLoader } from './FontLoader/FontLoader';
 export { Dimmer } from './Dimmer/Dimmer';
 export { DimmerButtons } from './Dimmer/DimmerButtons';
 export { TimeInput } from './Input/TimeInput';
@@ -246,7 +245,6 @@ export type { NavProps } from './Nav/Nav';
 export type { PagerProps } from './Pager/Pager';
 export type { RatingProps } from './Rating/Rating';
 export type { ResponsiveImageProps } from './ResponsiveImage/ResponsiveImage';
-export type { PasswordInputProps } from './PasswordInput/PasswordInput';
 export type { SkiplinkProps } from './Skiplink/Skiplink';
 export type { SkiplinkItemProps } from './Skiplink/SkiplinkItem';
 export type { ToggleProps } from './Toggle/Toggle';
@@ -274,13 +272,19 @@ export type { StepperNavProps } from './Stepper/StepperNav';
 export type { StepperDotsProps } from './Stepper/StepperDots';
 export type { StepperContentProps } from './Stepper/StepperContent';
 export type { SectionProps } from './Section/Section';
-export type { SelectProps } from './Select/Select';
+export type {
+  SelectProps,
+  SelectOptionType,
+  ValueType,
+  ActionMeta
+} from './Select/Select';
 export type {
   NotificationId,
   NotificationProps,
   NotificationManagerProps,
   NotificationOptions
 } from './Notification';
+export type { TimeInputProps } from './Input/TimeInput';
 export type { ToolbarProps } from './Toolbar/Toolbar';
 export type { ToolbarItemProps, ToolbarItemBadge } from './Toolbar/ToolbarItem';
 

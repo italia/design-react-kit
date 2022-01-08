@@ -26,9 +26,9 @@ import {
   HeaderBrand,
   UncontrolledDropdown
 } from '../../../src';
+import type { HeaderCompleteProps, ThemeType } from '../types';
 
-// eslint-disable-next-line react/prop-types
-const SlimHeaderFullResponsive = ({ theme }) => {
+const SlimHeaderFullResponsive = ({ theme }: ThemeType) => {
   return (
     <Header type='slim' theme={theme}>
       <HeaderContent>
@@ -71,7 +71,7 @@ const SlimHeaderFullResponsive = ({ theme }) => {
 // eslint rule has to be disable for few lines here as Storybook addons will go in error
 // if PropTypes are declared in these components
 export class SlimHeader extends Component<
-  { theme?: 'light' | 'dark' },
+  { theme?: 'light' | 'dark' | '' },
   { collapsed: boolean }
 > {
   state = {
@@ -135,14 +135,14 @@ export class SlimHeader extends Component<
 }
 
 export class CenterHeader extends Component<
-  { theme?: 'light' | 'dark' },
+  { theme?: 'light' | 'dark' | ''; iconName: string },
   { collapsed: boolean }
 > {
   render() {
     return (
       <Header type='center' theme={this.props.theme}>
         <HeaderContent>
-          <HeaderBrand iconName='it-code-circle'>
+          <HeaderBrand iconName={this.props.iconName}>
             <h2>Lorem Ipsum Lorem Ipsum</h2>
             <h3>Inserire qui la tag line</h3>
           </HeaderBrand>
@@ -175,7 +175,7 @@ export class CenterHeader extends Component<
 }
 
 export class NavHeader extends Component<
-  { theme?: 'light' | 'dark' },
+  { theme?: 'light' | 'dark' | '' },
   { collapsed: boolean }
 > {
   state = {
@@ -235,14 +235,19 @@ export class NavHeader extends Component<
   }
 }
 
-const CompleteHeader = ({ theme, slimHeaderType, sticky }) => {
+const CompleteHeader = ({
+  theme,
+  slimHeaderType,
+  sticky,
+  iconName
+}: HeaderCompleteProps) => {
   const SlimTag =
     slimHeaderType === 'default' ? SlimHeader : SlimHeaderFullResponsive;
   return (
     <Headers sticky={sticky}>
       <SlimTag theme={theme} />
       <div className='it-nav-wrapper'>
-        <CenterHeader theme={theme} />
+        <CenterHeader theme={theme} iconName={iconName} />
         <NavHeader theme={theme} />
       </div>
     </Headers>

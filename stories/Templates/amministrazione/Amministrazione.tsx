@@ -1,5 +1,6 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
 import React from 'react';
+import { Story } from '@storybook/react';
 
 import {
   Breadcrumb,
@@ -20,8 +21,13 @@ import {
 
 import CompleteHeader from '../shared/Header';
 import Footer from '../shared/Footer';
+import { PageProps } from '../shared/types';
 
-const Amministrazione = ({ theme, townName, townTagLine }) => {
+const Amministrazione: Story<PageProps> = ({
+  theme,
+  townName,
+  townTagLine
+}) => {
   return (
     <>
       <CompleteHeader
@@ -251,7 +257,7 @@ const Amministrazione = ({ theme, townName, townTagLine }) => {
 };
 
 Amministrazione.args = {
-  theme: '',
+  theme: undefined,
   townName: 'Nome del Comune',
   townTagLine: 'Uno dei tanti Comuni d Italia'
 };

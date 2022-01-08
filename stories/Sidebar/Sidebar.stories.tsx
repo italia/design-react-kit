@@ -1,10 +1,11 @@
+import { Story } from '@storybook/react';
 import React from 'react';
 
 import { LinkList, LinkListItem, Sidebar, Icon } from '../../src';
 
 import SidebarCollapseExample from './SidebarCollapsibleExample';
 
-export const BasicSidebar = () => (
+export const BasicSidebar: Story = () => (
   <Sidebar>
     <LinkList>
       <LinkListItem header>HEADER</LinkListItem>
@@ -40,7 +41,7 @@ export default {
   title: 'Componenti/Sidebar'
 };
 
-export const _ConIcona = () => (
+export const _ConIcona: Story = () => (
   <Sidebar>
     <LinkList>
       <LinkListItem header>HEADER</LinkListItem>
@@ -102,7 +103,7 @@ export const _ConIcona = () => (
 
 _ConIcona.storyName = 'Con icona';
 
-export const ConLineaADestra = () => (
+export const ConLineaADestra: Story = () => (
   <Sidebar right>
     <LinkList>
       <LinkListItem header>HEADER</LinkListItem>
@@ -136,7 +137,7 @@ export const ConLineaADestra = () => (
 
 ConLineaADestra.storyName = 'Con linea a destra';
 
-export const ConLineaASinistra = () => (
+export const ConLineaASinistra: Story = () => (
   <Sidebar left>
     <LinkList>
       <LinkListItem header>HEADER</LinkListItem>
@@ -170,9 +171,9 @@ export const ConLineaASinistra = () => (
 
 ConLineaASinistra.storyName = 'Con linea a sinistra';
 
-export const _Annidata = SidebarCollapseExample.bind({});
+export const _Annidata: Story = SidebarCollapseExample.bind({});
 
-export const SidebarVersioneScura = () => (
+export const SidebarVersioneScura: Story = () => (
   <Sidebar dark>
     <LinkList>
       <LinkListItem header>HEADER</LinkListItem>

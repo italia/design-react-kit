@@ -1,11 +1,11 @@
-import React, { FC, HTMLAttributes, useState } from 'react';
-import { Navbar, NavbarBrand, NavbarToggler } from 'reactstrap';
+import React, { FC, useState } from 'react';
+import { Navbar, NavbarBrand, NavbarProps, NavbarToggler } from 'reactstrap';
 import classNames from 'classnames';
 import { Collapse } from '../Collapse/Collapse';
 import { Icon } from '../Icon/Icon';
 import { Nav } from '../Nav/Nav';
 
-export interface MegamenuProps extends HTMLAttributes<HTMLDivElement> {
+export interface MegamenuProps extends NavbarProps {
   /** Eventuale brand da inserire sulla navbar */
   brand?: NavbarBrand;
   /** Classi aggiuntive da usare per il componente Nav */

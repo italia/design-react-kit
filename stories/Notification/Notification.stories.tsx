@@ -1,3 +1,4 @@
+import { Story } from '@storybook/react';
 import React, { CSSProperties, ReactChild } from 'react';
 import {
   Button,
@@ -47,6 +48,7 @@ interface NotificationDocProps {
 }
 
 const NotificationDoc = ({
+  // @ts-ignore: need this only for sake of documentation
   id,
   title,
   state,
@@ -70,7 +72,7 @@ const NotificationDoc = ({
   );
 };
 
-export const _Example = () => (
+export const _Example: Story = () => (
   <div className='container test-docs'>
     <div className='row'>
       <div className='col-12 col-md-6 mb-4 mb-md-0'>
@@ -100,7 +102,7 @@ export const _Example = () => (
 
 _Example.storyName = 'Esempio base';
 
-export const _NotificationWithMessageStatic = () => (
+export const _NotificationWithMessageStatic: Story = () => (
   <div className='container test-docs'>
     <div className='row'>
       <div className='col-12 col-md-6 mb-4 mb-md-0'>
@@ -136,7 +138,7 @@ export const _NotificationWithMessageStatic = () => (
 
 _NotificationWithMessageStatic.storyName = 'Notifiche con messaggio statico';
 
-export const _NotificationWithMessage_story_hidden = () => {
+export const _NotificationWithMessage_story_hidden: Story = () => {
   return (
     <div>
       <Button
@@ -173,7 +175,7 @@ export const _NotificationWithMessage_story_hidden = () => {
 
 _NotificationWithMessage_story_hidden.storyName = 'Notifica con messaggio';
 
-export const Dismissable = () => (
+export const Dismissable: Story = () => (
   <div className='container test-docs'>
     <div className='row'>
       <div className='col-12 col-md-6 mb-4 mb-md-0'>
@@ -206,7 +208,7 @@ export const Dismissable = () => (
   </div>
 );
 
-export const States = () => {
+export const States: Story = () => {
   return (
     <div className='container test-docs'>
       <div className='row mb-5'>
@@ -263,7 +265,7 @@ export const States = () => {
 
 States.storyName = 'Notifica con stati';
 
-export const _RoundingOfCorners = () => {
+export const _RoundingOfCorners: Story = () => {
   return (
     <div className='container test-docs'>
       <div className='row mb-5'>
@@ -338,7 +340,7 @@ export const _RoundingOfCorners = () => {
 
 _RoundingOfCorners.storyName = 'Posizione e arrotondamento degli angoli';
 
-export const DefaultLocation = () => {
+export const DefaultLocation: Story = () => {
   return (
     <div className='container test-desktop'>
       <NotificationDoc state='success' title='Titolo Notifica' id='notifica'>
@@ -351,7 +353,7 @@ export const DefaultLocation = () => {
 
 DefaultLocation.storyName = 'Posizione di default';
 
-export const FixedPositions = () => {
+export const FixedPositions: Story = () => {
   return (
     <div className='container test-desktop'>
       <div>
@@ -398,7 +400,17 @@ export const FixedPositions = () => {
 
 FixedPositions.storyName = 'Posizione fissa';
 
-export const EsempioInterattivo = ({
+type EsempioInterattivoProps = {
+  title: string;
+  message: string;
+  duration: number;
+  icon: string;
+  state: 'success' | 'error' | 'info' | 'warning';
+  fix: 'top' | 'bottom' | 'left' | 'right';
+  dismissable: boolean;
+  closeOnClick: boolean;
+};
+export const EsempioInterattivo: Story<EsempioInterattivoProps> = ({
   title,
   message,
   duration,
@@ -504,7 +516,7 @@ export const EsempioInterattivoAdvanced_story_hidden = () => {
 };
 
 // Fake components used only to generate automatic arg table in docs
-
+// @ts-ignore: need to turn off typescript here for docuemntation sake
 export const NotifyFakeComponent_story_hidden = ({
   title,
   body = undefined,
@@ -527,6 +539,7 @@ export const NotifyFakeComponent_story_hidden = ({
 };
 
 export const NotifyFakeOptionsComponent_story_hidden = (
+  // @ts-ignore: need this only for sake of documentation
   props: NotificationOptions
 ) => {
   return null;

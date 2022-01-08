@@ -1,8 +1,8 @@
-import React, { FC, HTMLAttributes } from 'react';
-import { Col, Row } from 'reactstrap';
+import React, { FC } from 'react';
+import { Col, ColProps, Row } from 'reactstrap';
 import classNames from 'classnames';
 
-export interface MegamenuHCProps extends HTMLAttributes<HTMLDivElement> {
+export interface MegamenuHCProps extends ColProps {
   /** Quanto abilitato gestisce il contenuto della colonna come una sezione che può contentere immagini, testo, ect. */
   description?: boolean;
   /** Classi aggiuntive da usare per il componente Megamenu Highlight Column */
