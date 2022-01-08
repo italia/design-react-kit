@@ -72,11 +72,11 @@ export const Section: FC<SectionProps> = ({
     backgroundImageClass: image ? { backgroundImage: `url(${image})` } : {}
   };
 
+  const finalWrapperClassName = classNames(classes, deprecatedClasses);
+
   return (
     <div
-      className={`${classes}${
-        deprecatedClasses ? ' ' + deprecatedClasses : ''
-      }`}
+      className={finalWrapperClassName}
       style={styleClass.backgroundImageClass}
       {...rest}
     >

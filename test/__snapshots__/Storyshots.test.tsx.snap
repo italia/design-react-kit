@@ -13137,7 +13137,7 @@ exports[`Storyshots Componenti/Header Header Center 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <div
             className="it-header-center-content-wrapper"
@@ -13313,7 +13313,7 @@ exports[`Storyshots Componenti/Header Header Center Narrow 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <div
             className="it-header-center-content-wrapper"
@@ -13489,7 +13489,7 @@ exports[`Storyshots Componenti/Header Header Center Narrow Light 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <div
             className="it-header-center-content-wrapper"
@@ -13668,7 +13668,7 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
           className="row"
         >
           <div
-            className="col-12"
+            className="col"
           >
             <div
               className="it-header-slim-wrapper-content"
@@ -13868,7 +13868,7 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
             className="row"
           >
             <div
-              className="col-12"
+              className="col"
             >
               <div
                 className="it-header-center-content-wrapper"
@@ -13877,20 +13877,10 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
                   className="it-brand-wrapper"
                 >
                   <a>
-                    <svg
+                    <img
                       className="icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
-                      />
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                    </svg>
+                      src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Coat-elements.png"
+                    />
                     <div
                       className="it-brand-text"
                     >
@@ -14029,7 +14019,7 @@ exports[`Storyshots Componenti/Header Header Complete 1`] = `
             className="row"
           >
             <div
-              className="col-12"
+              className="col"
             >
               <nav
                 className="navbar has-megamenu navbar navbar-expand-lg"
@@ -14196,7 +14186,7 @@ exports[`Storyshots Componenti/Header Header Complete Light 1`] = `
           className="row"
         >
           <div
-            className="col-12"
+            className="col"
           >
             <div
               className="it-header-slim-wrapper-content"
@@ -14396,7 +14386,7 @@ exports[`Storyshots Componenti/Header Header Complete Light 1`] = `
             className="row"
           >
             <div
-              className="col-12"
+              className="col"
             >
               <div
                 className="it-header-center-content-wrapper"
@@ -14405,20 +14395,10 @@ exports[`Storyshots Componenti/Header Header Complete Light 1`] = `
                   className="it-brand-wrapper"
                 >
                   <a>
-                    <svg
+                    <img
                       className="icon"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M19 12l-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8zM7.9 9.1L5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3z"
-                      />
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                    </svg>
+                      src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Coat-elements.png"
+                    />
                     <div
                       className="it-brand-text"
                     >
@@ -14557,7 +14537,7 @@ exports[`Storyshots Componenti/Header Header Complete Light 1`] = `
             className="row"
           >
             <div
-              className="col-12"
+              className="col"
             >
               <nav
                 className="navbar has-megamenu navbar navbar-expand-lg"
@@ -14721,7 +14701,7 @@ exports[`Storyshots Componenti/Header Header Nav 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <nav
             className="navbar has-megamenu navbar navbar-expand-lg"
@@ -14991,7 +14971,7 @@ exports[`Storyshots Componenti/Header Header Nav Light 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <nav
             className="navbar has-megamenu navbar navbar-expand-lg"
@@ -15261,7 +15241,7 @@ exports[`Storyshots Componenti/Header Header Nav Secondary 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <nav
             className="navbar has-megamenu navbar navbar-expand-lg"
@@ -15458,7 +15438,7 @@ exports[`Storyshots Componenti/Header Header Slim 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <div
             className="it-header-slim-wrapper-content"
@@ -15670,7 +15650,7 @@ exports[`Storyshots Componenti/Header Header Slim Light 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <div
             className="it-header-slim-wrapper-content"
@@ -15919,7 +15899,7 @@ exports[`Storyshots Componenti/Header Slim Header With Full Button 1`] = `
         className="row"
       >
         <div
-          className="col-12"
+          className="col"
         >
           <div
             className="it-header-slim-wrapper-content"
@@ -32970,7 +32950,7 @@ exports[`Storyshots Componenti/Rating Rating Base 1`] = `
     <input
       aria-describedby="star5aDescription"
       checked={false}
-      className=" "
+      className=""
       id="star5a"
       name="ratingA"
       onBlur={[Function]}
@@ -33006,7 +32986,7 @@ exports[`Storyshots Componenti/Rating Rating Base 1`] = `
     <input
       aria-describedby="star4aDescription"
       checked={false}
-      className=" "
+      className=""
       id="star4a"
       name="ratingA"
       onBlur={[Function]}
@@ -33042,7 +33022,7 @@ exports[`Storyshots Componenti/Rating Rating Base 1`] = `
     <input
       aria-describedby="star3aDescription"
       checked={false}
-      className=" "
+      className=""
       id="star3a"
       name="ratingA"
       onBlur={[Function]}
@@ -33078,7 +33058,7 @@ exports[`Storyshots Componenti/Rating Rating Base 1`] = `
     <input
       aria-describedby="star2aDescription"
       checked={false}
-      className=" "
+      className=""
       id="star2a"
       name="ratingA"
       onBlur={[Function]}
@@ -33114,7 +33094,7 @@ exports[`Storyshots Componenti/Rating Rating Base 1`] = `
     <input
       aria-describedby="star1aDescription"
       checked={false}
-      className=" "
+      className=""
       id="star1a"
       name="ratingA"
       onBlur={[Function]}
@@ -33185,7 +33165,7 @@ exports[`Storyshots Componenti/Rating Rating con Label 1`] = `
     <input
       aria-describedby="star5bDescription"
       checked={false}
-      className=" "
+      className=""
       id="star5b"
       name="ratingB"
       onBlur={[Function]}
@@ -33221,7 +33201,7 @@ exports[`Storyshots Componenti/Rating Rating con Label 1`] = `
     <input
       aria-describedby="star4bDescription"
       checked={true}
-      className=" "
+      className=""
       id="star4b"
       name="ratingB"
       onBlur={[Function]}
@@ -33257,7 +33237,7 @@ exports[`Storyshots Componenti/Rating Rating con Label 1`] = `
     <input
       aria-describedby="star3bDescription"
       checked={false}
-      className=" "
+      className=""
       id="star3b"
       name="ratingB"
       onBlur={[Function]}
@@ -33293,7 +33273,7 @@ exports[`Storyshots Componenti/Rating Rating con Label 1`] = `
     <input
       aria-describedby="star2bDescription"
       checked={false}
-      className=" "
+      className=""
       id="star2b"
       name="ratingB"
       onBlur={[Function]}
@@ -33329,7 +33309,7 @@ exports[`Storyshots Componenti/Rating Rating con Label 1`] = `
     <input
       aria-describedby="star1bDescription"
       checked={false}
-      className=" "
+      className=""
       id="star1b"
       name="ratingB"
       onBlur={[Function]}
@@ -33390,7 +33370,7 @@ exports[`Storyshots Componenti/Rating Rating read-only 1`] = `
       aria-describedby="star5cDescription"
       aria-hidden={true}
       checked={false}
-      className=" "
+      className=""
       disabled={true}
       id="star5c"
       name="ratingC"
@@ -33428,7 +33408,7 @@ exports[`Storyshots Componenti/Rating Rating read-only 1`] = `
       aria-describedby="star4cDescription"
       aria-hidden={true}
       checked={true}
-      className=" "
+      className=""
       disabled={true}
       id="star4c"
       name="ratingC"
@@ -33466,7 +33446,7 @@ exports[`Storyshots Componenti/Rating Rating read-only 1`] = `
       aria-describedby="star3cDescription"
       aria-hidden={true}
       checked={false}
-      className=" "
+      className=""
       disabled={true}
       id="star3c"
       name="ratingC"
@@ -33504,7 +33484,7 @@ exports[`Storyshots Componenti/Rating Rating read-only 1`] = `
       aria-describedby="star2cDescription"
       aria-hidden={true}
       checked={false}
-      className=" "
+      className=""
       disabled={true}
       id="star2c"
       name="ratingC"
@@ -33542,7 +33522,7 @@ exports[`Storyshots Componenti/Rating Rating read-only 1`] = `
       aria-describedby="star1cDescription"
       aria-hidden={true}
       checked={false}
-      className=" "
+      className=""
       disabled={true}
       id="star1c"
       name="ratingC"
@@ -43849,7 +43829,7 @@ exports[`Storyshots Templates/Kit Comuni Amministrazione Template 1`] = `
               className="row"
             >
               <div
-                className="col-12"
+                className="col"
               >
                 <div
                   className="it-header-slim-wrapper-content"
@@ -43985,7 +43965,7 @@ exports[`Storyshots Templates/Kit Comuni Amministrazione Template 1`] = `
                 className="row"
               >
                 <div
-                  className="col-12"
+                  className="col"
                 >
                   <div
                     className="it-header-center-content-wrapper"
@@ -44146,7 +44126,7 @@ exports[`Storyshots Templates/Kit Comuni Amministrazione Template 1`] = `
                 className="row"
               >
                 <div
-                  className="col-12"
+                  className="col"
                 >
                   <nav
                     className="navbar has-megamenu navbar navbar-expand-lg"
@@ -46091,7 +46071,7 @@ exports[`Storyshots Templates/Kit Comuni Homepage Template 1`] = `
               className="row"
             >
               <div
-                className="col-12"
+                className="col"
               >
                 <div
                   className="it-header-slim-wrapper-content"
@@ -46227,7 +46207,7 @@ exports[`Storyshots Templates/Kit Comuni Homepage Template 1`] = `
                 className="row"
               >
                 <div
-                  className="col-12"
+                  className="col"
                 >
                   <div
                     className="it-header-center-content-wrapper"
@@ -46388,7 +46368,7 @@ exports[`Storyshots Templates/Kit Comuni Homepage Template 1`] = `
                 className="row"
               >
                 <div
-                  className="col-12"
+                  className="col"
                 >
                   <nav
                     className="navbar has-megamenu navbar navbar-expand-lg"
@@ -49148,7 +49128,7 @@ exports[`Storyshots Templates/Kit Comuni Servizi Template 1`] = `
               className="row"
             >
               <div
-                className="col-12"
+                className="col"
               >
                 <div
                   className="it-header-slim-wrapper-content"
@@ -49284,7 +49264,7 @@ exports[`Storyshots Templates/Kit Comuni Servizi Template 1`] = `
                 className="row"
               >
                 <div
-                  className="col-12"
+                  className="col"
                 >
                   <div
                     className="it-header-center-content-wrapper"
@@ -49445,7 +49425,7 @@ exports[`Storyshots Templates/Kit Comuni Servizi Template 1`] = `
                 className="row"
               >
                 <div
-                  className="col-12"
+                  className="col"
                 >
                   <nav
                     className="navbar has-megamenu navbar navbar-expand-lg"

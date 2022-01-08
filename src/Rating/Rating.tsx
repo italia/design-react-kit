@@ -111,7 +111,7 @@ export const Rating: FC<RatingProps> = ({
               id={id}
               name={name}
               value={String(currentValue)}
-              cssModule={{ 'form-control': ' ' }}
+              cssModule={{ 'form-control': '' }}
               className={fieldClasses}
               onChange={() => onChange(currentValue, name)}
               checked={value === currentValue}

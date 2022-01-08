@@ -1,9 +1,14 @@
-import React, { Context } from 'react';
+import { createContext, useContext } from 'react';
 
 export const SLIM = 'slim';
 export const CENTER = 'center';
 export const NAVBAR = 'navbar';
 
-export const HeaderContext: Context<{
+export const HeaderContext = createContext<{
   type?: typeof SLIM | typeof CENTER | typeof NAVBAR;
-}> = React.createContext({});
+}>({});
+
+export const useHeaderContext = () => {
+  const { type } = useContext(HeaderContext);
+  return type;
+};

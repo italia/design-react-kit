@@ -19,6 +19,7 @@ export type HeaderNavProps = ThemeType & {
 export type HeaderCompleteProps = ThemeType & {
   slimHeaderType: string;
   sticky: boolean;
+  iconName: string;
 };
 
 export type HeaderSlimLightProps = HeaderSlimProps & {

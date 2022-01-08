@@ -1,0 +1,34 @@
+import React from 'react';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
+
+import { TextArea } from '../src';
+
+test('Should support all basic attributes of a textarea', () => {
+  const { container } = render(
+    <TextArea rows={3} placeholder='Esempio di area di testo' />
+  );
+  const textarea = container.querySelector('textarea');
+  if (textarea) {
+    expect(textarea).toHaveAttribute('rows');
+    expect(textarea).toHaveAttribute('placeholder');
+  }
+});
+
+test('should not be normalized when it has a placeholder', () => {
+  const { container } = render(
+    <TextArea rows={3} normalized placeholder='Esempio di area di testo' />
+  );
+  const textarea = container.querySelector('textarea');
+  if (textarea) {
+    expect(textarea).not.toHaveAttribute('readOnly');
+  }
+});
+
+test('should make the textarea readOnly', () => {
+  const { container } = render(<TextArea rows={3} normalized />);
+  const textarea = container.querySelector('textarea');
+  if (textarea) {
+    expect(textarea).toHaveAttribute('readOnly');
+  }
+});

@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { useEffect } from 'react';
 
 export interface FontLoaderProps {
   /**
@@ -14,19 +14,21 @@ const defaultFonts = [
   'Roboto Mono:400,700:latin-ext'
 ];
 
-export class FontLoader extends Component<FontLoaderProps> {
-  componentDidMount() {
+export function useFontLoader({ fonts }: FontLoaderProps) {
+  useEffect(() => {
     if (typeof window !== 'undefined') {
       const WebFont = require('webfontloader');
       WebFont.load({
         custom: {
-          families: [...defaultFonts, ...(this.props.fonts || [])]
+          families: [...defaultFonts, ...(fonts || [])]
         }
       });
     }
-  }
-
-  render() {
-    return null;
-  }
+  }, [fonts]);
 }
+
+export const FontLoader = (props: FontLoaderProps) => {
+  useFontLoader(props);
+
+  return null;
+};

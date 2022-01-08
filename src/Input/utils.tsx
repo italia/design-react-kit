@@ -1,9 +1,8 @@
 import classNames from 'classnames';
-import { Util } from 'reactstrap';
+import { useState, useCallback } from 'react';
 import type { CSSModule } from 'reactstrap';
+import { mapToCssModules } from '../utils';
 import type { InputProps } from './Input';
-// @ts-ignore
-const { mapToCssModules } = Util;
 
 type ValidationProps = Pick<InputProps, 'valid' | 'invalid'>;
 type TypeProps = Pick<InputProps, 'plaintext' | 'type'> & {
@@ -163,4 +162,34 @@ export function getClasses(
     activeClass,
     infoTextClass
   };
+}
+
+export function useFocus<T extends HTMLInputElement | HTMLTextAreaElement>({
+  onFocus,
+  onBlur
+}: {
+  onFocus: React.FocusEventHandler<T> | undefined;
+  onBlur: React.FocusEventHandler<T> | undefined;
+}) {
+  const [isFocused, setFocus] = useState(false);
+
+  const toggleFocusLabel = useCallback(
+    (e: React.FocusEvent<T>) => {
+      setFocus(true);
+      onFocus?.(e);
+    },
+    [onFocus]
+  );
+
+  const toggleBlurLabel = useCallback(
+    (e: React.FocusEvent<T>) => {
+      if (e.target.value === '') {
+        setFocus(!isFocused);
+      }
+      onBlur?.(e);
+    },
+    [isFocused, onBlur]
+  );
+
+  return { toggleFocusLabel, toggleBlurLabel, isFocused };
 }
