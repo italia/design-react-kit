@@ -111,7 +111,9 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
       >
         {badgeObject ? (
           <div className='badge-wrapper'>
-            <span className='toolbar-badge'>{badgeObject.value}</span>
+            <span className='toolbar-badge'>
+              {size !== 'large' ? null : badgeObject.value}
+            </span>
             {size !== 'large' && (
               <span className='sr-only'>{badgeObject.srText}</span>
             )}

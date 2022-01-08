@@ -66,8 +66,6 @@ export const EsempioConBadgeGrande = () => (
           srText: `c'è un messaggio da leggere`
         }}
       />
-      <ToolbarItem label='immagini' iconName='it-camera' />
-      <ToolbarDividerItem />
       <ToolbarItem
         label='documenti'
         iconName='it-file'
@@ -77,9 +75,67 @@ export const EsempioConBadgeGrande = () => (
           srText: `ci sono 42 documenti da esaminare`
         }}
       />
+      <ToolbarItem label='immagini' iconName='it-camera' />
       <ToolbarItem label='privacy' iconName='it-lock' />
-      <ToolbarDividerItem />
-      <ToolbarItem label='preferiti' iconName='it-star-outline' />
+      <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
+    </Toolbar>
+  </div>
+);
+
+export const EsempioConBadgeMedio = () => (
+  <div style={{ maxWidth: 400 }}>
+    <Toolbar size='medium'>
+      <ToolbarItem
+        label='messaggi'
+        iconName='it-comment'
+        active
+        badge={{
+          value: 1,
+          label: 'da leggere',
+          srText: `c'è un messaggio da leggere`
+        }}
+      />
+      <ToolbarItem
+        label='documenti'
+        iconName='it-file'
+        badge={{
+          value: 42,
+          label: 'da esaminare',
+          srText: `ci sono 42 documenti da esaminare`
+        }}
+      />
+      <ToolbarItem label='immagini' iconName='it-camera' />
+      <ToolbarItem label='privacy' iconName='it-lock' />
+      <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
+    </Toolbar>
+  </div>
+);
+
+export const EsempioConBadgePiccolo = () => (
+  <div style={{ maxWidth: 400 }}>
+    <Toolbar size='small'>
+      <ToolbarItem
+        label='messaggi'
+        iconName='it-comment'
+        active
+        badge={{
+          value: 1,
+          label: 'da leggere',
+          srText: `c'è un messaggio da leggere`
+        }}
+      />
+      <ToolbarItem
+        label='documenti'
+        iconName='it-file'
+        badge={{
+          value: 42,
+          label: 'da esaminare',
+          srText: `ci sono 42 documenti da esaminare`
+        }}
+      />
+      <ToolbarItem label='immagini' iconName='it-camera' />
+      <ToolbarItem label='privacy' iconName='it-lock' />
+      <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
     </Toolbar>
   </div>
 );
