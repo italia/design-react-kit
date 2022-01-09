@@ -32,6 +32,11 @@ export interface ToolbarItemProps extends HTMLAttributes<HTMLElement> {
   /** Il nome dell'icona da utilizzare */
   iconName: string;
   /**
+   * Un testo completo da mostrare per Toolbar di grandezza media e piccola con badge (ad esempio: "ci sono 42 nuovi documenti da esaminare")
+   * @deprecated
+   */
+  srText?: string;
+  /**
    * Il badge da mostrare sull'icona del ToolbarItem.
    * Un badge è composto da:
    *   * una label per screen reader da affiancare alla label corrente (ad esempio: "da leggere")
@@ -39,6 +44,9 @@ export interface ToolbarItemProps extends HTMLAttributes<HTMLElement> {
    *   * un eventuale valore numerico (omesso in caso di un badge di alert)
    **/
   badge?: number | ToolbarItemBadge;
+  /**
+   * Funzione chiamata al click dell'element ToolbarItem
+   */
   onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
 }
 
@@ -89,6 +97,7 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
   label,
   tag = 'a',
   disabled,
+  srText,
   ...attributes
 }) => {
   const Tag = tag;
@@ -99,7 +108,9 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
     ...(disabled && { 'aria-disabled': true })
   };
   const badgeObject =
-    typeof badge === 'number' ? { value: badge, label: '', srText: '' } : badge;
+    typeof badge === 'number'
+      ? { value: badge, label: srText || '', srText: srText || '' }
+      : badge;
 
   return (
     <li>

@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import { ToolbarItem, preloadIcons } from '../src';
+import { ToolbarItem, preloadIcons, Toolbar } from '../src';
+
+function renderWithSize(size: 'small' | 'medium' | 'large', ui: ReactElement) {
+  return render(<Toolbar size={size}>{ui}</Toolbar>);
+}
 
 describe('ToolbarItem component', () => {
   // Icons are now async, so preload them to make it behave in an sync way
@@ -57,5 +61,66 @@ describe('ToolbarItem component', () => {
 
     expect(queryByText('some-label')).toBeInTheDocument();
     expect(queryByText('elemento disabilitato')).toBeInTheDocument();
+  });
+
+  it('should render a badge on the item', () => {
+    const { container, queryByText } = renderWithSize(
+      'large',
+      <ToolbarItem
+        iconName={'it-comment'}
+        label='some-label'
+        badge={{
+          value: 42,
+          label: 'da esaminare',
+          srText: `ci sono 42 documenti da esaminare`
+        }}
+      />
+    );
+
+    expect(container.querySelector('.badge-wrapper')).toHaveTextContent('42');
+    expect(queryByText('da esaminare')).toBeInTheDocument();
+    // this is avaialble only for smaller size
+    expect(
+      queryByText('ci sono 42 documenti da esaminare')
+    ).not.toBeInTheDocument();
+  });
+
+  it('should render an alert on the item', () => {
+    const { container, queryByText } = renderWithSize(
+      'small',
+      <ToolbarItem
+        iconName={'it-comment'}
+        badge={{
+          value: 42,
+          label: 'da esaminare',
+          srText: `ci sono 42 documenti da esaminare`
+        }}
+      />
+    );
+
+    expect(container.querySelector('.badge-wrapper')).toHaveTextContent(
+      'ci sono 42 documenti da esaminare'
+    );
+    expect(queryByText('da esaminare')).not.toBeInTheDocument();
+  });
+
+  // test the new deprections
+  it('should support deprecated notation with single value', () => {
+    const { queryByText, container } = renderWithSize(
+      'large',
+      <ToolbarItem
+        iconName={'it-comment'}
+        label='some-label'
+        badge={42}
+        srText={`da esaminare`}
+      />
+    );
+
+    expect(container.querySelector('.badge-wrapper')).toHaveTextContent('42');
+    expect(queryByText('da esaminare')).toBeInTheDocument();
+    // this is avaialble only for smaller size
+    expect(
+      queryByText('ci sono 42 documenti da esaminare')
+    ).not.toBeInTheDocument();
   });
 });
