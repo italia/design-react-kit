@@ -8,6 +8,7 @@ import React, {
 import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
 import { SizeContext, ToolbarProps } from './Toolbar';
+import { Dropdown, DropdownProps, DropdownToggle } from 'reactstrap';
 
 export interface ToolbarItemBadge {
   value?: number;
@@ -44,6 +45,21 @@ export interface ToolbarItemProps extends HTMLAttributes<HTMLElement> {
    *   * un eventuale valore numerico (omesso in caso di un badge di alert)
    **/
   badge?: number | ToolbarItemBadge;
+  /**
+   * Indica che il ToolbarItem contiene un menu dropdown.
+   * Quando questo attributo è attivo il contenuto del componente ToolbarItem verrà mostrato all'interno del dropdown.
+   */
+  dropdown?: boolean;
+  /**
+   * Quando l'opzione dropdown è attiva questo attributo controlla se
+   * l'elemento è di tipo "altro" contenente altre icone/opzioni o no.
+   */
+  showMore?: boolean;
+  /**
+   * Da utilizzare quando l'attributo "dropdown" è attivo.
+   * Gli attributi qui passati verranno inoltrati al componente Dropdown interno.
+   */
+  dropdownProps?: DropdownProps;
   /**
    * Funzione chiamata al click dell'element ToolbarItem
    */
@@ -98,6 +114,10 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
   tag = 'a',
   disabled,
   srText,
+  dropdown,
+  dropdownProps,
+  children,
+  showMore,
   ...attributes
 }) => {
   const Tag = tag;
@@ -112,6 +132,46 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
       ? { value: badge, label: srText || '', srText: srText || '' }
       : badge;
 
+  const toolbarItemContent = (
+    <>
+      {badgeObject ? (
+        <div className='badge-wrapper'>
+          <span className='toolbar-badge'>
+            {size !== 'large' ? null : badgeObject.value}
+          </span>
+          {size !== 'large' && (
+            <span className='sr-only'>{badgeObject.srText}</span>
+          )}
+        </div>
+      ) : null}
+      <Icon icon={iconName} size={size === 'small' ? 'sm' : ''} />
+      <ToolbarItemLabel
+        label={label}
+        size={size}
+        disabled={disabled}
+        badge={badgeObject}
+      />
+    </>
+  );
+
+  if (dropdown) {
+    return (
+      <li>
+        <Dropdown {...dropdownProps}>
+          <DropdownToggle
+            disabled={disabled}
+            caret
+            className={classNames('btn-dropdown', { 'toolbar-more': showMore })}
+            color=''
+          >
+            {toolbarItemContent}
+          </DropdownToggle>
+          {children}
+        </Dropdown>
+      </li>
+    );
+  }
+
   return (
     <li>
       <Tag
@@ -120,23 +180,7 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
         {...attributes}
         {...ariaAttributes}
       >
-        {badgeObject ? (
-          <div className='badge-wrapper'>
-            <span className='toolbar-badge'>
-              {size !== 'large' ? null : badgeObject.value}
-            </span>
-            {size !== 'large' && (
-              <span className='sr-only'>{badgeObject.srText}</span>
-            )}
-          </div>
-        ) : null}
-        <Icon icon={iconName} size={size === 'small' ? 'sm' : ''} />
-        <ToolbarItemLabel
-          label={label}
-          size={size}
-          disabled={disabled}
-          badge={badgeObject}
-        />
+        {toolbarItemContent}
       </Tag>
     </li>
   );
