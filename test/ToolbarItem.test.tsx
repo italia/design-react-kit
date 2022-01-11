@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { ToolbarItem, preloadIcons, Toolbar } from '../src';
 
@@ -122,5 +122,32 @@ describe('ToolbarItem component', () => {
     expect(
       queryByText('ci sono 42 documenti da esaminare')
     ).not.toBeInTheDocument();
+  });
+
+  it('should call the onClick on link item', () => {
+    const onClick = jest.fn();
+    const { getByText } = render(
+      <ToolbarItem
+        iconName={'it-comment'}
+        label='some-label'
+        onClick={onClick}
+      />
+    );
+    fireEvent.click(getByText('some-label'));
+    expect(onClick).toHaveBeenCalled();
+  });
+
+  it('should call the onClick on dropdown toggle', () => {
+    const onClick = jest.fn();
+    const { getByText } = render(
+      <ToolbarItem
+        iconName={'it-comment'}
+        label='some-label'
+        dropdown
+        onClick={onClick}
+      />
+    );
+    fireEvent.click(getByText('some-label'));
+    expect(onClick).toHaveBeenCalled();
   });
 });
