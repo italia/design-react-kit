@@ -56,10 +56,15 @@ export interface ToolbarItemProps extends HTMLAttributes<HTMLElement> {
    */
   showMore?: boolean;
   /**
+   * Quando il componente è in modalità dropdown permette di controllarne
+   * lo stato di visibilità. Il valore di default è false.
+   */
+  isDropdownOpen?: boolean;
+  /**
    * Da utilizzare quando l'attributo "dropdown" è attivo.
    * Gli attributi qui passati verranno inoltrati al componente Dropdown interno.
    */
-  dropdownProps?: DropdownProps;
+  dropdownProps?: Omit<DropdownProps, 'toggle' | 'isOpen'>;
   /**
    * Funzione chiamata al click dell'element ToolbarItem
    */
@@ -118,6 +123,8 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
   dropdownProps,
   children,
   showMore,
+  onClick,
+  isDropdownOpen,
   ...attributes
 }) => {
   const Tag = tag;
@@ -157,7 +164,7 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
   if (dropdown) {
     return (
       <li>
-        <Dropdown {...dropdownProps}>
+        <Dropdown {...dropdownProps} toggle={onClick} isOpen={isDropdownOpen}>
           <DropdownToggle
             disabled={disabled}
             caret
@@ -179,6 +186,7 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
         className={activeClass}
         {...attributes}
         {...ariaAttributes}
+        onClick={onClick}
       >
         {toolbarItemContent}
       </Tag>

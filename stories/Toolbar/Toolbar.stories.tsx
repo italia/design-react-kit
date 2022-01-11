@@ -167,10 +167,8 @@ export const EsempioConDropdownGrande = () => {
             srText: `c'è un messaggio da leggere`
           }}
           dropdown
-          dropdownProps={{
-            isOpen: openFirst,
-            toggle: () => toggleFirst(!openFirst)
-          }}
+          isDropdownOpen={openFirst}
+          onClick={() => toggleFirst(!openFirst)}
         >
           <DropdownMenu>
             <LinkList>
@@ -189,10 +187,8 @@ export const EsempioConDropdownGrande = () => {
             srText: `ci sono 42 immagini da visualizzare`
           }}
           dropdown
-          dropdownProps={{
-            isOpen: openSecond,
-            toggle: () => toggleSecond(!openSecond)
-          }}
+          isDropdownOpen={openSecond}
+          onClick={() => toggleSecond(!openSecond)}
         >
           <DropdownMenu>
             <LinkList>
@@ -206,10 +202,8 @@ export const EsempioConDropdownGrande = () => {
           label='documenti'
           iconName='it-file'
           dropdown
-          dropdownProps={{
-            isOpen: openThird,
-            toggle: () => toggleThird(!openThird)
-          }}
+          isDropdownOpen={openThird}
+          onClick={() => toggleThird(!openThird)}
         >
           <DropdownMenu>
             <LinkList>
@@ -224,10 +218,8 @@ export const EsempioConDropdownGrande = () => {
           iconName='it-lock'
           disabled
           dropdown
-          dropdownProps={{
-            isOpen: openFourth,
-            toggle: () => toggleFourth(!openFourth)
-          }}
+          isDropdownOpen={openFourth}
+          onClick={() => toggleFourth(!openFourth)}
         >
           <DropdownMenu>
             <LinkList>
@@ -241,10 +233,8 @@ export const EsempioConDropdownGrande = () => {
           label='altro'
           iconName='it-more-actions'
           dropdown
-          dropdownProps={{
-            isOpen: openFifth,
-            toggle: () => toggleFifth(!openFifth)
-          }}
+          isDropdownOpen={openFifth}
+          onClick={() => toggleFifth(!openFifth)}
           showMore
         >
           <DropdownMenu>
@@ -289,10 +279,8 @@ export const EsempioConDropdownMedia = () => {
             srText: `c'è un messaggio da leggere`
           }}
           dropdown
-          dropdownProps={{
-            isOpen: openFirst,
-            toggle: () => toggleFirst(!openFirst)
-          }}
+          isDropdownOpen={openFirst}
+          onClick={() => toggleFirst(!openFirst)}
         >
           <DropdownMenu>
             <LinkList>
@@ -311,10 +299,8 @@ export const EsempioConDropdownMedia = () => {
             srText: `ci sono 42 immagini da visualizzare`
           }}
           dropdown
-          dropdownProps={{
-            isOpen: openSecond,
-            toggle: () => toggleSecond(!openSecond)
-          }}
+          isDropdownOpen={openSecond}
+          onClick={() => toggleSecond(!openSecond)}
         >
           <DropdownMenu>
             <LinkList>
@@ -328,10 +314,8 @@ export const EsempioConDropdownMedia = () => {
           label='documenti'
           iconName='it-file'
           dropdown
-          dropdownProps={{
-            isOpen: openThird,
-            toggle: () => toggleThird(!openThird)
-          }}
+          isDropdownOpen={openThird}
+          onClick={() => toggleThird(!openThird)}
         >
           <DropdownMenu>
             <LinkList>
@@ -345,10 +329,8 @@ export const EsempioConDropdownMedia = () => {
           label='privacy'
           iconName='it-lock'
           dropdown
-          dropdownProps={{
-            isOpen: openFifth,
-            toggle: () => toggleFifth(!openFifth)
-          }}
+          isDropdownOpen={openFourth}
+          onClick={() => toggleFourth(!openFourth)}
         >
           <DropdownMenu>
             <LinkList>
@@ -363,10 +345,8 @@ export const EsempioConDropdownMedia = () => {
           iconName='it-star-outline'
           disabled
           dropdown
-          dropdownProps={{
-            isOpen: openFourth,
-            toggle: () => toggleFourth(!openFourth)
-          }}
+          isDropdownOpen={openFifth}
+          onClick={() => toggleFifth(!openFifth)}
         >
           <DropdownMenu>
             <LinkList>
@@ -380,10 +360,8 @@ export const EsempioConDropdownMedia = () => {
           label='altro'
           iconName='it-more-actions'
           dropdown
-          dropdownProps={{
-            isOpen: openSixth,
-            toggle: () => toggleSixth(!openSixth)
-          }}
+          isDropdownOpen={openSixth}
+          onClick={() => toggleSixth(!openSixth)}
           showMore
         >
           <DropdownMenu>
@@ -428,10 +406,8 @@ export const EsempioConDropdownPiccola = () => {
             srText: `c'è un messaggio da leggere`
           }}
           dropdown
-          dropdownProps={{
-            isOpen: openFirst,
-            toggle: () => toggleFirst(!openFirst)
-          }}
+          isDropdownOpen={openFirst}
+          onClick={() => toggleFirst(!openFirst)}
         >
           <DropdownMenu>
             <LinkList>
@@ -450,10 +426,8 @@ export const EsempioConDropdownPiccola = () => {
             srText: `ci sono 42 immagini da visualizzare`
           }}
           dropdown
-          dropdownProps={{
-            isOpen: openSecond,
-            toggle: () => toggleSecond(!openSecond)
-          }}
+          isDropdownOpen={openSecond}
+          onClick={() => toggleSecond(!openSecond)}
         >
           <DropdownMenu>
             <LinkList>
@@ -467,10 +441,8 @@ export const EsempioConDropdownPiccola = () => {
           label='documenti'
           iconName='it-file'
           dropdown
-          dropdownProps={{
-            isOpen: openThird,
-            toggle: () => toggleThird(!openThird)
-          }}
+          isDropdownOpen={openThird}
+          onClick={() => toggleThird(!openThird)}
         >
           <DropdownMenu>
             <LinkList>
@@ -484,10 +456,8 @@ export const EsempioConDropdownPiccola = () => {
           label='privacy'
           iconName='it-lock'
           dropdown
-          dropdownProps={{
-            isOpen: openFifth,
-            toggle: () => toggleFifth(!openFifth)
-          }}
+          isDropdownOpen={openFourth}
+          onClick={() => toggleFourth(!openFourth)}
         >
           <DropdownMenu>
             <LinkList>
@@ -502,10 +472,8 @@ export const EsempioConDropdownPiccola = () => {
           iconName='it-star-outline'
           disabled
           dropdown
-          dropdownProps={{
-            isOpen: openFourth,
-            toggle: () => toggleFourth(!openFourth)
-          }}
+          isDropdownOpen={openFifth}
+          onClick={() => toggleFifth(!openFifth)}
         >
           <DropdownMenu>
             <LinkList>
@@ -519,10 +487,8 @@ export const EsempioConDropdownPiccola = () => {
           label='altro'
           iconName='it-more-actions'
           dropdown
-          dropdownProps={{
-            isOpen: openSixth,
-            toggle: () => toggleSixth(!openSixth)
-          }}
+          isDropdownOpen={openSixth}
+          onClick={() => toggleSixth(!openSixth)}
           showMore
         >
           <DropdownMenu>
@@ -571,10 +537,8 @@ export const EsempioVerticaleGrande = () => {
             srText: `ci sono 42 immagini da visualizzare`
           }}
           dropdown
-          dropdownProps={{
-            isOpen: openFirst,
-            toggle: () => toggleFirst(!openFirst)
-          }}
+          isDropdownOpen={openFirst}
+          onClick={() => toggleFirst(!openFirst)}
         >
           <DropdownMenu>
             <LinkList>
@@ -617,10 +581,8 @@ export const EsempioVerticaleMedia = () => {
             srText: `ci sono 42 immagini da visualizzare`
           }}
           dropdown
-          dropdownProps={{
-            isOpen: openFirst,
-            toggle: () => toggleFirst(!openFirst)
-          }}
+          isDropdownOpen={openFirst}
+          onClick={() => toggleFirst(!openFirst)}
         >
           <DropdownMenu>
             <LinkList>
@@ -663,10 +625,8 @@ export const EsempioVerticalePiccola = () => {
             srText: `ci sono 42 immagini da visualizzare`
           }}
           dropdown
-          dropdownProps={{
-            isOpen: openFirst,
-            toggle: () => toggleFirst(!openFirst)
-          }}
+          isDropdownOpen={openFirst}
+          onClick={() => toggleFirst(!openFirst)}
         >
           <DropdownMenu>
             <LinkList>
