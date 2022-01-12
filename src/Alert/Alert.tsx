@@ -24,6 +24,7 @@ export interface AlertProps extends HTMLAttributes<HTMLElement> {
   innerRef?: Ref<HTMLElement>;
   isOpen?: boolean;
   toggle?: MouseEventHandler<any>;
+  testId?: string;
 }
 
 const defaultProps = {
@@ -33,7 +34,7 @@ const defaultProps = {
 };
 
 export const Alert: FC<AlertProps> = (props) => {
-  return <InnerAlert {...props} />;
+  return <InnerAlert data-testid={props.testId} {...props} />;
 };
 
 Alert.defaultProps = defaultProps;
