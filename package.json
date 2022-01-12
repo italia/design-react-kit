@@ -56,10 +56,11 @@
     "storybook:serve": "start-storybook -p 9001 -c .storybook -s ./static",
     "storybook:build": "npm run storybook:build:base --docs",
     "storybook:build:base": "build-storybook -c .storybook -s ./static",
-    "storybook:deploy": "npx gh-pages -d storybook-static -m 'Update GitHub Pages [ci skip]'"
+    "storybook:deploy": "npx gh-pages -d storybook-static -m 'Update GitHub Pages [ci skip]'",
+    "chromatic": "npx chromatic"
   },
   "peerDependencies": {
-    "bootstrap-italia": "1.4.3",
+    "bootstrap-italia": "^1.4.3",
     "react": ">=16.8.0"
   },
   "browserslist": [
@@ -101,6 +102,7 @@
     "babel-loader": "^8.2.2",
     "bootstrap-italia": "^1.4.3",
     "browserslist-config-design-italia": "^1.0.0",
+    "chromatic": "^6.3.4",
     "circular-dependency-plugin": "^5.2.2",
     "eslint-plugin-mdx": "^1.13.0",
     "eslint-plugin-prettier": "^3.4.0",
