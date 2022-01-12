@@ -40,6 +40,7 @@ export interface ToolbarItemProps extends HTMLAttributes<HTMLElement> {
   /**
    * Il badge da mostrare sull'icona del ToolbarItem.
    * Un badge è composto da:
+   *
    *   * una label per screen reader da affiancare alla label corrente (ad esempio: "da leggere")
    *   * un testo completo da mostrare per Toolbar di grandezza media e piccola (ad esempio: "ci sono 42 nuovi documenti da esaminare")
    *   * un eventuale valore numerico (omesso in caso di un badge di alert)
