@@ -286,7 +286,7 @@ export type {
 } from './Notification';
 export type { TimeInputProps } from './Input/TimeInput';
 export type { ToolbarProps } from './Toolbar/Toolbar';
-export type { ToolbarItemProps } from './Toolbar/ToolbarItem';
+export type { ToolbarItemProps, ToolbarItemBadge } from './Toolbar/ToolbarItem';
 
 export type {
   ContainerProps,
