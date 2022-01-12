@@ -150,9 +150,9 @@ export const TextArea = ({
     <textarea
       {...attributes}
       {...extraAttributes}
-      ref={innerRef}
       className={inputClasses}
       {...sharedAttributes}
+      ref={innerRef}
     />
   );
 };
