@@ -194,3 +194,11 @@ The design kit follows the Guidelines for Public Services Design, within the Sec
 ## TypeScript typing definitions 
 
 The library has been rewritten in Typescript and types are exported in the bundle.
+
+## Thanks
+
+<a href="https://www.chromatic.com/"><img src="https://user-images.githubusercontent.com/321738/84662277-e3db4f80-af1b-11ea-88f5-91d67a5e59f6.png" width="153" height="30" alt="Chromatic" /></a>
+
+Thanks to [Chromatic](https://www.chromatic.com/) for providing the visual testing platform that helps us review UI changes and catch visual regressions.
+
+Thanks to [Circle CI](https://www.circleci.com/) for providing the infrastructure for our Continuous Integration needs.
