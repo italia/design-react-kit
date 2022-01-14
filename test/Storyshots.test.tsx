@@ -1,4 +1,4 @@
-import initStoryshots from '@storybook/addon-storyshots';
+import initStoryshots, { renderOnly } from '@storybook/addon-storyshots';
 import { icons, preloadIcons } from '../src';
 
 import './__mocks__/IntersectionObserverMock';
@@ -7,5 +7,6 @@ import './__mocks__/IntersectionObserverMock';
 beforeAll(() => preloadIcons(icons));
 
 initStoryshots({
-  storyKindRegex: /^((?!.*?Documentazione).)*$/
+  storyKindRegex: /^((?!.*?Documentazione).)*$/,
+  test: renderOnly
 });
