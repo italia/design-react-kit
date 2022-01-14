@@ -76,7 +76,7 @@
     }
   ],
   "lint-staged": {
-    "/{src,stories,test}/**/*.{js,ts,tsx,jsx,mdx}": "yarn lint"
+    "./{src,stories,test}/**/*.{js,ts,tsx,jsx,mdx}": "yarn lint"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
