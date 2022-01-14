@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx eslint src stories test --ext js,ts,tsx,jsx,mdx
+npx lint-staged
