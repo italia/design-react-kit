@@ -8,5 +8,7 @@ beforeAll(() => preloadIcons(icons));
 
 initStoryshots({
   storyKindRegex: /^((?!.*?Documentazione).)*$/,
+  // Use storyshoot only to get stories coverage
+  // Chromatic will be used to spot stories diffs
   test: renderOnly
 });
