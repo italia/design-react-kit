@@ -9,6 +9,8 @@ beforeAll(() => preloadIcons(['it-comment']));
 
 // Test for breaking changes
 test('Should support old link props as @deprecated', () => {
-  const { getByRole, getByText } = render(<BottomNavItem link={'/my-url'} />);
+  const { getByRole, getByText, rerender } = render(
+    <BottomNavItem link={'/my-url'} />
+  );
   expect(getByRole('link')).toHaveAttribute('href', '/my-url');
 });
