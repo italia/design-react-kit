@@ -49,6 +49,7 @@
     "test": "tsdx test ./src ./test --passWithNoTests --coverage",
     "test:ci": "tsdx test ./src ./test --passWithNoTests --coverage --runInBand --ci",
     "lint": "npx eslint src stories test --ext js,ts,tsx,jsx,mdx",
+    "lint:staged": "npx eslint --ext js,ts,tsx,jsx,mdx",
     "prepare": "tsdx build --format cjs,esm && husky install",
     "size": "size-limit",
     "analyze": "size-limit --why",
@@ -75,6 +76,9 @@
       "limit": "200 KB"
     }
   ],
+  "lint-staged": {
+    "./{src,stories,test}/**/*.{js,ts,tsx,jsx,mdx}": "yarn lint:staged"
+  },
   "devDependencies": {
     "@babel/core": "^7.13.15",
     "@rollup/plugin-url": "^6.0.0",
@@ -107,6 +111,7 @@
     "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest-transform-stub": "^2.0.0",
+    "lint-staged": "^12.1.7",
     "postcss-flexbugs-fixes": "^4.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
