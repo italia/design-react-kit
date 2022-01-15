@@ -1,4 +1,4 @@
-import initStoryshots from '@storybook/addon-storyshots';
+import initStoryshots, { renderOnly } from '@storybook/addon-storyshots';
 import { icons, preloadIcons } from '../src';
 
 import './__mocks__/IntersectionObserverMock';
@@ -7,5 +7,8 @@ import './__mocks__/IntersectionObserverMock';
 beforeAll(() => preloadIcons(icons));
 
 initStoryshots({
-  storyKindRegex: /^((?!.*?Documentazione).)*$/
+  storyKindRegex: /^((?!.*?Documentazione).)*$/,
+  // Use storyshoot only to get stories coverage
+  // Chromatic will be used to spot stories diffs
+  test: renderOnly
 });

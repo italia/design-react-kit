@@ -174,6 +174,10 @@ export const _NotificationWithMessage_story_hidden: Story = () => {
 };
 
 _NotificationWithMessage_story_hidden.storyName = 'Notifica con messaggio';
+_NotificationWithMessage_story_hidden.parameters = {
+  // disables Chromatic's snapshotting on a story level
+  chromatic: { disableSnapshot: true }
+};
 
 export const Dismissable: Story = () => (
   <div className='container test-docs'>
@@ -492,6 +496,10 @@ export const EsempioInterattivo_story_hidden = () => {
     </div>
   );
 };
+EsempioInterattivo_story_hidden.parameters = {
+  // disables Chromatic's snapshotting on a story level
+  chromatic: { disableSnapshot: true }
+};
 
 export const EsempioInterattivoAdvanced_story_hidden = () => {
   return (
@@ -513,6 +521,10 @@ export const EsempioInterattivoAdvanced_story_hidden = () => {
       <NotificationManager containerId='esempio-avanzato' />
     </div>
   );
+};
+EsempioInterattivoAdvanced_story_hidden.parameters = {
+  // disables Chromatic's snapshotting on a story level
+  chromatic: { disableSnapshot: true }
 };
 
 // Fake components used only to generate automatic arg table in docs
@@ -537,10 +549,18 @@ export const NotifyFakeComponent_story_hidden = ({
 }) => {
   return null;
 };
+NotifyFakeComponent_story_hidden.parameters = {
+  // disables Chromatic's snapshotting on a story level
+  chromatic: { disableSnapshot: true }
+};
 
 export const NotifyFakeOptionsComponent_story_hidden = (
   // @ts-ignore: need this only for sake of documentation
   props: NotificationOptions
 ) => {
   return null;
+};
+NotifyFakeOptionsComponent_story_hidden.parameters = {
+  // disables Chromatic's snapshotting on a story level
+  chromatic: { disableSnapshot: true }
 };
