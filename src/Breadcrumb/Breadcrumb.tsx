@@ -17,6 +17,7 @@ export interface BreadcrumbProps extends HTMLAttributes<HTMLDivElement> {
   dark?: boolean;
   /** Etichetta significativa per descrivere il tipo di navigazione */
   'aria-label'?: string;
+  testId?: string;
 }
 
 export const Breadcrumb: FC<BreadcrumbProps> = ({
@@ -24,6 +25,7 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({
   listClassName,
   dark,
   'aria-label': label,
+  testId,
   ...attributes
 }) => {
   const classes = classNames(className, 'breadcrumb-container');
@@ -34,6 +36,7 @@ export const Breadcrumb: FC<BreadcrumbProps> = ({
       className={classes}
       listClassName={listClasses}
       aria-label={ariaLabel}
+      data-testid={testId}
       {...attributes}
     />
   );

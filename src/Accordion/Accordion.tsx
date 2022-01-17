@@ -10,6 +10,7 @@ export interface AccordionProps {
   background?: 'active' | 'hover';
   /** Utilizzare questo attributo per mostrare, mediante un'icona a sinistra, lo stato di apertura */
   iconLeft?: boolean;
+  testId?: string;
 }
 
 export const Accordion: FC<AccordionProps> = ({
@@ -17,6 +18,7 @@ export const Accordion: FC<AccordionProps> = ({
   className,
   background,
   iconLeft = false,
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
@@ -26,5 +28,5 @@ export const Accordion: FC<AccordionProps> = ({
     'collapse-left-icon': iconLeft
   });
 
-  return <Tag {...attributes} className={classes} />;
+  return <Tag {...attributes} className={classes} data-testid={testId} />;
 };

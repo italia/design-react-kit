@@ -8,6 +8,7 @@ export interface CalloutTextProps extends HTMLAttributes<HTMLElement> {
   className?: string;
   /** Permette personalizzare il tag utilizzato per il contenitore del titolo (diverso da "div"). Accetta sia tag HTML che componenti React. */
   tag?: ElementType;
+  testId?: string;
 }
 
 export const CalloutText: FC<CalloutTextProps> = ({
@@ -15,6 +16,7 @@ export const CalloutText: FC<CalloutTextProps> = ({
   children,
   className,
   tag = 'p',
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
@@ -22,7 +24,7 @@ export const CalloutText: FC<CalloutTextProps> = ({
     'callout-big-text': bigText
   });
   return (
-    <Tag className={classes} {...attributes}>
+    <Tag className={classes} {...attributes} data-testid={testId}>
       {children}
     </Tag>
   );
