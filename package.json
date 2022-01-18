@@ -25,7 +25,7 @@
   "main": "./src/index.tsx",
   "typings": "dist/types/index.d.ts",
   "exports": {
-    "require": "./dist/index.js",
+    "require": "./dist/cjs/index.js",
     "import": "./dist/esm/index.js",
     "default": "./dist/esm/index.js"
   },
