@@ -12,8 +12,9 @@ export interface CardTextProps extends HTMLAttributes<HTMLElement> {
   className?: string;
   /** Oggetto contenente la nuova mappatura per le classi CSS. */
   cssModule?: CSSModule;
+  testId?: string;
 }
 
 export const CardText: FC<CardTextProps> = (props) => {
-  return <InnerCardText {...props} />;
+  return <InnerCardText {...props} data-testid={props.testId} />;
 };

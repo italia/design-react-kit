@@ -12,6 +12,7 @@ export interface CardCategoryProps extends HTMLAttributes<HTMLElement> {
   href?: string;
   /** Da utilizzare al posto di url quando la gestione del click è in JS */
   onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
+  testId?: string;
 }
 
 export const CardCategory: FC<CardCategoryProps> = ({
@@ -19,6 +20,7 @@ export const CardCategory: FC<CardCategoryProps> = ({
   date,
   href,
   onClick,
+  testId,
   children,
   ...rest
 }) => {
@@ -38,7 +40,7 @@ export const CardCategory: FC<CardCategoryProps> = ({
   const categoryIcon = iconName && <Icon icon={iconName} />;
 
   return (
-    <div className={classes} {...rest}>
+    <div className={classes} {...rest} data-testid={testId}>
       {categoryLink}
       {categoryIcon}
       {categoryText}

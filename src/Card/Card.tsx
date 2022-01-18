@@ -19,6 +19,7 @@ export interface CardProps extends HTMLAttributes<HTMLElement> {
   noWrapper?: boolean;
   /** Classi aggiuntive per l'elemento contenitore */
   wrapperClassName?: string;
+  testId?: string;
 }
 
 export const Card: FC<CardProps> = ({
@@ -27,6 +28,7 @@ export const Card: FC<CardProps> = ({
   spacing,
   noWrapper = false,
   wrapperClassName,
+  testId,
   ...attributes
 }) => {
   const wrapperClasses = classNames('card-wrapper', wrapperClassName, {
@@ -38,11 +40,18 @@ export const Card: FC<CardProps> = ({
   });
 
   if (noWrapper) {
-    return <CardBase {...attributes} className={cardClasses} tag={tag} />;
+    return (
+      <CardBase
+        {...attributes}
+        className={cardClasses}
+        tag={tag}
+        data-testid={testId}
+      />
+    );
   }
 
   return (
-    <div className={wrapperClasses}>
+    <div className={wrapperClasses} data-testid={testId}>
       <CardBase {...attributes} className={cardClasses} tag={tag} />
     </div>
   );

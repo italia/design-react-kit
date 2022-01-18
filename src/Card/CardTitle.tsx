@@ -10,8 +10,9 @@ export interface CardTitleProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente CardTitle */
   className?: string;
+  testId?: string;
 }
 
 export const CardTitle: FC<CardTitleProps> = (props) => {
-  return <InnerCardTitle {...props} />;
+  return <InnerCardTitle {...props} data-testid={props.testId} />;
 };

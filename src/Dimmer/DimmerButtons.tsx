@@ -12,6 +12,7 @@ export interface DimmerButtonsProps extends HTMLAttributes<HTMLElement> {
    * @deprecated
    */
   dark?: boolean;
+  testId?: string;
 }
 
 export const DimmerButtons: FC<DimmerButtonsProps> = ({
@@ -19,6 +20,7 @@ export const DimmerButtons: FC<DimmerButtonsProps> = ({
   className,
   single = false,
   dark = true,
+  testId,
   ...attributes
 }) => {
   const { children, ...rest } = attributes;
@@ -28,7 +30,7 @@ export const DimmerButtons: FC<DimmerButtonsProps> = ({
   });
 
   return (
-    <div className={classes} {...rest}>
+    <div className={classes} {...rest} data-testid={testId}>
       {children}
     </div>
   );
