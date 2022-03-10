@@ -19,6 +19,7 @@ export interface ToolbarItemProps extends HTMLAttributes<HTMLElement> {
   isIconSmall?: boolean;
   alert?: boolean;
   badge?: number;
+  testId?: string;
   onLinkClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
 }
 
@@ -63,6 +64,7 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
   label,
   tag = 'a',
   disabled,
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
@@ -83,6 +85,7 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
       <Tag
         href={url || '#'}
         className={activeClass}
+        data-testid={testId}
         {...attributes}
         {...ariaAttributes}
       >

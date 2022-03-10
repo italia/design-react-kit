@@ -27,6 +27,7 @@ export interface LinkListItemProps
   href?: string;
   /** Utilizzato per aumentare taglia/grandezza dell'elemento: può essere "medium" o "large". */
   size?: 'medium' | 'large';
+  testId?: string;
 }
 
 const handleDisabledOnClick = (e: MouseEvent<HTMLAnchorElement>) => {
@@ -43,6 +44,7 @@ export const LinkListItem: FC<LinkListItemProps> = ({
   size,
   tag = 'a',
   wrapperClassName,
+  testId,
   children,
   ...attributes
 }) => {
@@ -73,7 +75,7 @@ export const LinkListItem: FC<LinkListItemProps> = ({
 
   if (header && href) {
     return (
-      <li className={wrapperClassName}>
+      <li className={wrapperClassName} data-testid={testId}>
         <Tag>
           <a
             href={href || '#'}
@@ -89,7 +91,7 @@ export const LinkListItem: FC<LinkListItemProps> = ({
   }
 
   return (
-    <li className={wrapperClassName}>
+    <li className={wrapperClassName} data-testid={testId}>
       <Tag {...attributes} className={classes} href={href} {...handlers}>
         {children}
       </Tag>

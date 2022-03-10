@@ -6,11 +6,13 @@ export const SizeContext = createContext<ToolbarProps['size']>(undefined);
 export interface ToolbarProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
   size?: 'large' | 'medium' | 'small';
+  testId?: string;
 }
 
 export const Toolbar: FC<ToolbarProps> = ({
   tag = 'nav',
   size,
+  testId,
   children,
   ...attributes
 }) => {
@@ -20,7 +22,7 @@ export const Toolbar: FC<ToolbarProps> = ({
   });
   return (
     <SizeContext.Provider value={size || 'large'}>
-      <Tag className={classes} {...attributes}>
+      <Tag className={classes} {...attributes} data-testid={testId}>
         <ul>{children}</ul>
       </Tag>
     </SizeContext.Provider>

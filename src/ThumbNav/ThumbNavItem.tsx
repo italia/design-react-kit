@@ -8,6 +8,7 @@ export interface ThumbNavItemProps extends HTMLAttributes<HTMLLIElement> {
   targetUrl?: string;
   imageUrl: string;
   actionDescription?: string;
+  testId?: string;
 }
 
 export const ThumbNavItem: FC<ThumbNavItemProps> = ({
@@ -15,12 +16,13 @@ export const ThumbNavItem: FC<ThumbNavItemProps> = ({
   targetUrl,
   imageUrl,
   actionDescription,
+  testId,
   ...attributes
 }) => {
   const classes = classNames({ active: active });
 
   return (
-    <li {...attributes}>
+    <li {...attributes} data-testid={testId}>
       <img
         src={resizer}
         className='thumb-nav-resizer'

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
 import { Progress } from '../src';
@@ -38,4 +38,10 @@ test('Should be ok with a numeric string as for value', () => {
     <Progress wrapperClassName='myClass' value={'1'} />
   );
   expect(container.firstChild).toHaveClass('myClass');
+});
+
+test('should have a testId for resilient UI changes', () => {
+  render(<Progress testId='test-id-progress' />);
+
+  expect(screen.getByTestId('test-id-progress')).toBeTruthy();
 });

@@ -6,14 +6,16 @@ export interface StepperNavProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente Badge */
   className?: string;
+  testId?: string;
 }
 
 export const StepperNav: FC<StepperNavProps> = ({
   tag = 'nav',
+  testId,
   className,
   ...attributes
 }) => {
   const Tag = tag;
   const wrapperClass = classNames('steppers-nav', className);
-  return <Tag {...attributes} className={wrapperClass} />;
+  return <Tag {...attributes} className={wrapperClass} data-testid={testId} />;
 };

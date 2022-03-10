@@ -14,11 +14,12 @@ export interface ToggleProps extends InputProps {
   innerRef?: React.Ref<HTMLInputElement>;
   /** Oggetto contenente la nuova mappatura per le classi CSS. */
   cssModule?: CSSModule;
+  testId?: string;
 }
 
-export const Toggle: FC<ToggleProps> = ({ label, ...rest }) => {
+export const Toggle: FC<ToggleProps> = ({ label, testId, ...rest }) => {
   return (
-    <div className='toggles'>
+    <div className='toggles' data-testid={testId}>
       <Label check>
         {label}
         <Input {...rest} type='checkbox' />

@@ -14,6 +14,7 @@ export interface SpinnerProps extends HTMLAttributes<HTMLElement> {
   double?: boolean;
   /** Etichetta con testo da mostrare ai dispositivi screen reader */
   label?: string;
+  testId?: string;
 }
 
 export const Spinner: FC<SpinnerProps> = ({
@@ -23,6 +24,7 @@ export const Spinner: FC<SpinnerProps> = ({
   small = false,
   double = false,
   label = 'Caricamento',
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
@@ -35,7 +37,7 @@ export const Spinner: FC<SpinnerProps> = ({
   const classes = classNames(className, 'sr-only');
   if (double) {
     return (
-      <Tag className={wrapperClasses}>
+      <Tag className={wrapperClasses} data-testid={testId}>
         <div className='progress-spinner-inner' />
         <div className='progress-spinner-inner' />
         <Tag {...attributes} className={classes}>
@@ -46,7 +48,7 @@ export const Spinner: FC<SpinnerProps> = ({
   }
 
   return (
-    <Tag className={wrapperClasses}>
+    <Tag className={wrapperClasses} data-testid={testId}>
       <Tag {...attributes} className={classes}>
         {label}
       </Tag>

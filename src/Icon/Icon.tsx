@@ -115,8 +115,22 @@ export const Icon: FC<IconProps> = ({
   }
 
   if (!IconComponent) {
-    return <EmptyIcon className={classes} role='img' {...attributes} />;
+    return (
+      <EmptyIcon
+        className={classes}
+        role='img'
+        {...attributes}
+        data-testid={testId}
+      />
+    );
   }
 
-  return <IconComponent className={classes} role='img' {...attributes} />;
+  return (
+    <IconComponent
+      className={classes}
+      role='img'
+      {...attributes}
+      data-testid={testId}
+    />
+  );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { ToolbarItem, preloadIcons } from '../src';
 
@@ -57,5 +57,17 @@ describe('ToolbarItem component', () => {
 
     expect(queryByText('some-label')).toBeInTheDocument();
     expect(queryByText('elemento disabilitato')).toBeInTheDocument();
+  });
+
+  it('should have a testId for resilient UI changes', () => {
+    render(
+      <ToolbarItem
+        tag={'button'}
+        iconName={'it-comment'}
+        testId='test-id-toolbar-item'
+      />
+    );
+
+    expect(screen.getByTestId('test-id-toolbar-item')).toBeTruthy();
   });
 });
