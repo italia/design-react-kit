@@ -7,6 +7,7 @@ export interface ToolbarProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
   size?: 'large' | 'medium' | 'small';
   testId?: string;
+  vertical?: boolean;
 }
 
 export const Toolbar: FC<ToolbarProps> = ({
@@ -14,11 +15,13 @@ export const Toolbar: FC<ToolbarProps> = ({
   size,
   testId,
   children,
+  vertical,
   ...attributes
 }) => {
   const Tag = tag;
   const classes = classnames('toolbar', {
-    [`toolbar-${size}`]: size && size !== 'large'
+    [`toolbar-${size}`]: size && size !== 'large',
+    'toolbar-vertical': vertical
   });
   return (
     <SizeContext.Provider value={size || 'large'}>

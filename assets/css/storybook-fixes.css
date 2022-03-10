@@ -142,3 +142,8 @@ div[id*='componenti-bottomnav'] .bottom-nav {
   border: 1px solid #06c;
   color: #fff;
 }
+
+.toolbar-docs-style {
+  max-width: 400px;
+  height: 400px;
+}
