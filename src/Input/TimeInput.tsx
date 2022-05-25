@@ -120,7 +120,7 @@ export const TimeInput = ({
 
   const button = (
     <button
-      type="button"
+      type='button'
       className='btn-time'
       onClick={() => {
         setIsOpen(!isOpen);
@@ -243,7 +243,7 @@ export const TimeInput = ({
             />
             <div className='button-wrapper'>
               <button
-                type="button"
+                type='button'
                 className='button-hour btnHourUp'
                 aria-label={increaseHoursLabel}
                 aria-hidden='true'
@@ -253,7 +253,7 @@ export const TimeInput = ({
                 <span className='icon-up'></span>
               </button>
               <button
-                type="button"
+                type='button'
                 className='button-hour btnHourDown'
                 aria-label={decreaseHoursLabel}
                 aria-hidden='true'
@@ -281,7 +281,7 @@ export const TimeInput = ({
             />
             <div className='button-wrapper'>
               <button
-                type="button"
+                type='button'
                 className='btnMinUp button-minute'
                 aria-label={increaseMinutesLabel}
                 aria-hidden='true'
@@ -291,7 +291,7 @@ export const TimeInput = ({
                 <span className='icon-up'></span>
               </button>
               <button
-                type="button"
+                type='button'
                 className='btnMinDown button-minute'
                 aria-label={decreaseMinutesLabel}
                 aria-hidden='true'
