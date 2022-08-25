@@ -61,7 +61,7 @@
     "chromatic": "npx chromatic"
   },
   "peerDependencies": {
-    "bootstrap-italia": "^1.4.3",
+    "bootstrap-italia": "^2.0.3",
     "react": ">=16.8.0"
   },
   "browserslist": [
@@ -135,7 +135,7 @@
     "react-toastify": "^7.0.4",
     "react-transition-group": "^4.4.1",
     "react-use-navscroll": "0.2.0",
-    "reactstrap": "^8.9.0",
+    "reactstrap": "^9.1.3",
     "webfontloader": "^1.6.28"
   },
   "jest": {
