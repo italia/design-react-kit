@@ -17,7 +17,7 @@ import {
   getInfoTextControlClass,
   useFocus
 } from './utils';
-import type { CSSModule } from 'reactstrap';
+import type { CSSModule } from 'reactstrap/types/lib/utils';
 import { notifyDeprecation } from '../utils';
 // taken from reactstrap types
 type InputType =

@@ -2,7 +2,7 @@ import React, { FC, ButtonHTMLAttributes, ElementType, Ref } from 'react';
 import classNames from 'classnames';
 
 import { Button as ButtonBase } from 'reactstrap';
-import type { CSSModule } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 
 // reactstrap wrapper
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

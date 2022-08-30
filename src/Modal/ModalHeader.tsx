@@ -1,5 +1,5 @@
 import React, { FC, HTMLAttributes } from 'react';
-import { CSSModule } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
 import { mapToCssModules } from '../utils';

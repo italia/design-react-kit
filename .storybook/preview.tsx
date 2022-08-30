@@ -1,10 +1,12 @@
 import React, {CSSProperties} from 'react';
-import { theme } from './theme';
+
 import {FontLoader} from '../src';
 
 import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
 import '../assets/css/fonts.css';
 import '../assets/css/storybook-fixes.css';
+// @ts-ignore
+import { theme } from './theme';
 
 const order = {
   'documentazione': 1,
@@ -38,7 +40,7 @@ export const parameters = {
 
       const aFullStoryName = `${aSubSections.join('-')}-${aStory}`
       const bFullStoryName = `${bSubSections.join('-')}-${bStory}`
-      // Sort by Section 
+      // Sort by Section
       const groupScore = (order[aSection as MainSection] - order[bSection as MainSection]);
 
 

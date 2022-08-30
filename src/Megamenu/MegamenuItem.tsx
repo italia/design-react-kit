@@ -21,7 +21,7 @@ export const MegamenuItem: FC<MegamenuItemProps> = ({
       <DropdownToggle caret nav>
         {itemName}
       </DropdownToggle>
-      <DropdownMenu positionFixed>{children}</DropdownMenu>
+      <DropdownMenu>{children}</DropdownMenu>
     </UncontrolledDropdown>
   );
 };

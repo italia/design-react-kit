@@ -51,6 +51,7 @@ const iconList: Record<string, boolean> = {
   'it-fullscreen': true,
   'it-funnel': true,
   'it-github': true,
+  'it-google': true,
   'it-hearing': true,
   'it-help-circle': true,
   'it-help': true,
@@ -281,6 +282,9 @@ export const loadIcon = (name: IconName) => {
     }
     case 'it-github': {
       return import('./ItGithub');
+    }
+    case 'it-google': {
+      return import('./ItGoogle');
     }
     case 'it-hearing': {
       return import('./ItHearing');

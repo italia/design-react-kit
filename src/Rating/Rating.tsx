@@ -69,9 +69,10 @@ export const Rating: FC<RatingProps> = ({
   const onChange = readOnly ? noop : onChangeRating;
 
   const wrapperClasses = classNames(wrapperClassName, {
-    'rating-read-only': readOnly,
-    'rating-label': legend
+    'rating rating-read-only': readOnly,
+    'rating rating-label': legend
   });
+
   const fieldClasses = classNames(className);
   const extraFieldAttrs = readOnly ? { 'aria-hidden': true } : {};
 
@@ -83,7 +84,7 @@ export const Rating: FC<RatingProps> = ({
 
   if (isCustomLegendObject(legend)) {
     legendClass = classNames({
-      'sr-only': legend.srOnly
+      'visually-hidden': legend.srOnly
     });
     legendText = legend.content;
   }
@@ -123,7 +124,7 @@ export const Rating: FC<RatingProps> = ({
             />
             <Label className='full' for={id}>
               <Icon icon='it-star-full' size='sm' />
-              <span className='sr-only'>{labelFn(currentValue)}</span>
+              <span className='visually-hidden'>{labelFn(currentValue)}</span>
             </Label>
           </Fragment>
         );

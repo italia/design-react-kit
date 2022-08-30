@@ -2,7 +2,7 @@ import React, { Ref, ReactNode, TextareaHTMLAttributes } from 'react';
 
 import { InputContainer } from './InputContainer';
 import { getClasses, getInfoTextControlClass, useFocus } from './utils';
-import type { CSSModule } from 'reactstrap';
+import type { CSSModule } from 'reactstrap/types/lib/utils';
 
 export interface TextAreaProps
   extends TextareaHTMLAttributes<HTMLTextAreaElement> {
