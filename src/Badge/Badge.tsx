@@ -6,7 +6,8 @@ import React, {
   ReactChild,
   AnchorHTMLAttributes
 } from 'react';
-import { Badge as BadgeReact, CSSModule } from 'reactstrap';
+import { Badge as BadgeReact } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 
 export type BadgeProps = {
   /** Le varianti di colore definite in Bootstrap Italia */

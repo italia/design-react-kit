@@ -60,27 +60,27 @@ export const AvatarWithText = () => (
   <AvatarContainer>
     <AvatarIcon size='xs'>
       <p aria-hidden='true'>M</p>
-      <span className='sr-only'>Mario Rossi</span>
+      <span className='visually-hidden'>Mario Rossi</span>
     </AvatarIcon>
     <AvatarIcon color='primary' size='sm'>
       <p aria-hidden='true'>M</p>
-      <span className='sr-only'>Mario Rossi</span>
+      <span className='visually-hidden'>Mario Rossi</span>
     </AvatarIcon>
     <AvatarIcon color='secondary'>
       <p aria-hidden='true'>MR</p>
-      <span className='sr-only'>Mario Rossi</span>
+      <span className='visually-hidden'>Mario Rossi</span>
     </AvatarIcon>
     <AvatarIcon color='green' size='lg'>
       <p aria-hidden='true'>MR</p>
-      <span className='sr-only'>Mario Rossi</span>
+      <span className='visually-hidden'>Mario Rossi</span>
     </AvatarIcon>
     <AvatarIcon color='orange' size='xl'>
       <p aria-hidden='true'>MR</p>
-      <span className='sr-only'>Mario Rossi</span>
+      <span className='visually-hidden'>Mario Rossi</span>
     </AvatarIcon>
     <AvatarIcon color='red' size='xxl'>
       <p aria-hidden='true'>MR</p>
-      <span className='sr-only'>Mario Rossi</span>
+      <span className='visually-hidden'>Mario Rossi</span>
     </AvatarIcon>
   </AvatarContainer>
 );
@@ -122,7 +122,7 @@ export const AvatarLink = () => (
     </AvatarIcon>
     <AvatarIcon size='xl' color='red' href='#'>
       <p aria-hidden='true'>MR</p>
-      <span className='sr-only'>Mario Rossi</span>
+      <span className='visually-hidden'>Mario Rossi</span>
     </AvatarIcon>
     <AvatarIcon size='xl'>
       <Icon icon='it-search' onClick={() => console.log('Click')} />
@@ -156,7 +156,7 @@ export const AvatarLinkWithTooltip = () => {
           <i>Editor</i>
         </UncontrolledTooltip>
         <p aria-hidden='true'>MR</p>
-        <span className='sr-only'>Mario Rossi</span>
+        <span className='visually-hidden'>Mario Rossi</span>
       </AvatarIcon>
       <AvatarIcon size='xl' href='#' innerRef={withIconRef}>
         <Icon icon='it-search' />

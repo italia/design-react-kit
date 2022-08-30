@@ -1,6 +1,7 @@
 import React, { FC, HTMLAttributes, ElementType, Ref } from 'react';
 import classNames from 'classnames';
-import { Card as CardBase, CSSModule } from 'reactstrap';
+import { Card as CardBase } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 
 export interface CardProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */

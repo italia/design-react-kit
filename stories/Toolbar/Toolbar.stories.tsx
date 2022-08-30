@@ -639,7 +639,8 @@ export const EsempioVerticalePiccola = () => {
         <ToolbarDividerItem />
         <ToolbarItem label='immagini' iconName='it-camera' />
         <ToolbarItem label='privacy' iconName='it-lock' />
-        <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
+        <ToolbarItem label='preferiti' iconName='it-star-outline' />
+        <ToolbarItem label='download' iconName='it-download' disabled />
       </Toolbar>
     </div>
   );

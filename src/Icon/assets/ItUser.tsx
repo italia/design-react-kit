@@ -2,8 +2,7 @@ import * as React from 'react';
 export const component = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' {...props}>
-      <path d='M12 13a4 4 0 004-4V6a4 4 0 00-8 0v3a4 4 0 004 4zM9 6a3 3 0 016 0v3a3 3 0 01-6 0zm11 16h-1a7 7 0 00-14 0H4a8 8 0 0116 0z' />
-      <path fill='none' d='M0 0h24v24H0z' />
+      <path d='M12 13c2.2 0 4-1.8 4-4V6c0-2.2-1.8-4-4-4S8 3.8 8 6v3c0 2.2 1.8 4 4 4zM9 6c0-1.7 1.3-3 3-3s3 1.3 3 3v3c0 1.7-1.3 3-3 3s-3-1.3-3-3V6zm11 16h-1c0-3.9-3.1-7-7-7s-7 3.1-7 7H4c0-4.4 3.6-8 8-8s8 3.6 8 8z' />
     </svg>
   );
 };

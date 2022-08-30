@@ -1,6 +1,7 @@
 import React, { AnchorHTMLAttributes, ElementType, ReactChild } from 'react';
 import classNames from 'classnames';
-import { CSSModule, NavbarBrand } from 'reactstrap';
+import { NavbarBrand } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 import { CENTER, useHeaderContext } from './HeaderContext';
 import { Icon } from '../Icon/Icon';
 

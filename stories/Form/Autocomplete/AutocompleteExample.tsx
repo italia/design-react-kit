@@ -3,7 +3,7 @@ import { components } from 'react-select';
 import './assets/css/autocomplete-styles.css';
 import { Icon } from '../../../src';
 
-export const DropdownIndicator = (props) => {
+export const DropdownIndicator = (props: any) => {
   return (
     <components.DropdownIndicator {...props}>
       <span style={{ padding: '0px 5px' }} aria-hidden='true'>
@@ -13,7 +13,7 @@ export const DropdownIndicator = (props) => {
   );
 };
 
-export const Input = (props) => {
+export const Input = (props: any) => {
   // eslint-disable-next-line react/prop-types
   if (props.isHidden) {
     return <components.Input {...props} />;

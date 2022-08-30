@@ -67,7 +67,7 @@ export const BottomNavItem: FC<BottomNavItemProps> = ({
         <Icon icon={iconName} />
         <span className='bottom-nav-label'>
           {label}
-          {srText ? <span className='sr-only'>{srText}</span> : null}
+          {srText ? <span className='visually-hidden'>{srText}</span> : null}
         </span>
       </Tag>
     </li>

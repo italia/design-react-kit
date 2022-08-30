@@ -1,5 +1,6 @@
 import React, { FC, HTMLAttributes } from 'react';
-import { CSSModule, FadeProps, Modal as InnerModal } from 'reactstrap';
+import { FadeProps, Modal as InnerModal } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 import classnames from 'classnames';
 
 export interface ModalProps extends HTMLAttributes<HTMLElement> {

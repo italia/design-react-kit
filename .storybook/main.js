@@ -1,6 +1,9 @@
 const CircularDependencyPlugin = require('circular-dependency-plugin')
 
 module.exports = {
+  core: {
+    builder: 'webpack5',
+  },
   stories: ['../stories/**/*.stories.@(ts|tsx|js|jsx|mdx)'],
   addons: [
     '@storybook/addon-postcss',
@@ -8,6 +11,7 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-a11y'
   ],
+  reactOptions: { legacyRootApi: true },
   // https://storybook.js.org/docs/react/configure/typescript#mainjs-configuration
   typescript: {
     check: true, // type-check stories during Storybook build

@@ -1,6 +1,6 @@
 import React, { FC, HTMLAttributes, ElementType } from 'react';
-import { CardText as InnerCardText, CSSModule } from 'reactstrap';
-
+import { CardText as InnerCardText } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 // Note: this is a wrapper class around a reactstrap component.
 // TODO: remove this class and restore the direct import when
 // https://github.com/storybookjs/storybook/issues/10536 gets resolved

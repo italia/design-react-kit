@@ -1,6 +1,7 @@
 import React, { ElementType, FC, ReactNode } from 'react';
 
-import { Label, Input, CSSModule } from 'reactstrap';
+import { Label, Input } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 import { InputProps } from '../Input/Input';
 
 export interface ToggleProps extends InputProps {

@@ -1,7 +1,8 @@
 import React, { ElementType, FC, HTMLAttributes, Ref } from 'react';
 import classNames from 'classnames';
 
-import { Collapse as CollapseBase, CSSModule } from 'reactstrap';
+import { Collapse as CollapseBase } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 
 // Copy over from reactstrap and add new ones
 export interface CollapseProps extends HTMLAttributes<HTMLElement> {

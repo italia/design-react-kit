@@ -5,7 +5,8 @@ import React, {
   ElementType,
   Ref
 } from 'react';
-import { Alert as InnerAlert, FadeProps, CSSModule } from 'reactstrap';
+import { Alert as InnerAlert, FadeProps } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 
 // Copy over from reactstrap and add new ones
 export interface AlertProps extends HTMLAttributes<HTMLElement> {
