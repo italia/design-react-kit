@@ -274,7 +274,7 @@ export const _InputAutocompleteConDati = () => {
         classNamePrefix='react-autocomplete'
         placeholder='Testo da cercare'
       />
-      <label htmlFor='autocomplete-regioni' className='sr-only'>
+      <label htmlFor='autocomplete-regioni' className='visually-hidden'>
         Cerca nel sito
       </label>
     </FormGroup>

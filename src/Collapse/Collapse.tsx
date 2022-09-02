@@ -70,7 +70,7 @@ export const Collapse: FC<CollapseProps> = ({
         {...attributes}
       >
         <div className='overlay' style={style} onClick={onOverlayClick}></div>
-        <div className='close-div sr-only'>
+        <div className='close-div visually-hidden'>
           <button className='btn close-menu' type='button'>
             <span className='it-close'></span>close
           </button>

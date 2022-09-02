@@ -39,7 +39,7 @@ export const Contatore = () => (
 export const ContatoreTestoAggiuntivo = () => (
   <Button color='primary'>
     Notifiche <Badge color='light'>9</Badge>
-    <span className='sr-only'>Messaggi non letti</span>
+    <span className='visually-hidden'>Messaggi non letti</span>
   </Button>
 );
 

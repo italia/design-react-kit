@@ -32,7 +32,7 @@ export const Spinner: FC<SpinnerProps> = ({
     'progress-spinner-double': double
   });
 
-  const classes = classNames(className, 'sr-only');
+  const classes = classNames(className, 'visually-hidden');
   if (double) {
     return (
       <Tag className={wrapperClasses}>

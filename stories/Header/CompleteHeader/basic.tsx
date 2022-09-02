@@ -207,7 +207,7 @@ export class NavHeader extends Component<
                 <NavItem active>
                   <NavLink href='#' active>
                     <span>link 1 active </span>
-                    <span className='sr-only'>current</span>
+                    <span className='visually-hidden'>current</span>
                   </NavLink>
                 </NavItem>
                 <NavItem>

@@ -15,10 +15,10 @@ export const ComeUsarlo: Story<ComeUsarloProps> = ({ open }) => {
       </p>
       <CookieBarButtons>
         <CookieBarButton href='#'>
-          Preferenze<span className='sr-only'>cookies</span>
+          Preferenze<span className='visually-hidden'>cookies</span>
         </CookieBarButton>
         <CookieBarButton>
-          Accetto<span className='sr-only'> i cookies</span>
+          Accetto<span className='visually-hidden'> i cookies</span>
         </CookieBarButton>
       </CookieBarButtons>
     </CookieBar>
