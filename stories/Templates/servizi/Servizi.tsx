@@ -91,7 +91,7 @@ const Servizi: Story<PageProps> = ({ theme, townName, townTagLine }) => {
                   <span className='chip-label'>Tutto</span>
                   <button>
                     <Icon icon='it-close' />
-                    <span className='sr-only'>Elimina label</span>
+                    <span className='visually-hidden'>Elimina label</span>
                   </button>
                 </div>
                 <div className='ml-2 d-inline'>

@@ -33,7 +33,7 @@ export const EsempioConIcona: Story = () => (
   <Callout>
     <CalloutTitle>
       <Icon icon='it-info-circle' padding={false} aria-hidden />
-      <span className='sr-only'>Confermato</span>
+      <span className='visually-hidden'>Confermato</span>
       Titolo Callout
     </CalloutTitle>
     <CalloutText>
@@ -50,7 +50,7 @@ export const EsempioAccessibilita: Story = () => (
   <Callout>
     <CalloutTitle>
       <Icon icon='it-check-circle' padding={false} aria-hidden />
-      <span className='sr-only'>Confermato</span>
+      <span className='visually-hidden'>Confermato</span>
       Titolo Callout
     </CalloutTitle>
     <CalloutText>
@@ -218,7 +218,7 @@ export const CalloutApprofondimento = () => {
             append={
               <a className='callout-more-download' href='#'>
                 <Icon icon='it-download' />
-                <span className='sr-only'>PDF</span> Download
+                <span className='visually-hidden'>PDF</span> Download
               </a>
             }
           >

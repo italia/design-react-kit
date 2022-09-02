@@ -8,7 +8,7 @@ The Progress bar is the native one of Bootstrap 4 and is contained in an element
 ### Pallini
 The dots are elements `<li>` contained in a list `.steppers-dots` located between the "Back" and "Forward" buttons.
 
-For accessibility reasons, i `<li>`must contain one `<span>`with a class `.sr-only` reserved for screen readers with a text indicating the number of steps and the status.
+For accessibility reasons, i `<li>`must contain one `<span>`with a class `.visually-hidden` reserved for screen readers with a text indicating the number of steps and the status.
 
 ### Save button
 On mobile devices it is possible to insert a third "Save" button of different appearance with class `.steppers-btn-save` between the "Back" and "Next" buttons.

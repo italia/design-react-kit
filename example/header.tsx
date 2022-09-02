@@ -186,7 +186,7 @@ export class NavHeader extends React.Component<
                     <NavItem active={isActive} key={label}>
                       <NavLink href='#' active={isActive}>
                         <span>{label}</span>
-                        {isActive && <span className='sr-only'>current</span>}
+                        {isActive && <span className='visually-hidden'>current</span>}
                       </NavLink>
                     </NavItem>
                   );

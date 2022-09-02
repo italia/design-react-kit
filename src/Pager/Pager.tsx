@@ -34,7 +34,7 @@ export const Pager: FC<PagerProps> = ({
   const listClasses = classNames(listClassName, 'pagination');
   const { ariaLabel, label } = total || {};
   const totalAriaLabel = ariaLabel ? (
-    <span className='sr-only'>{ariaLabel}</span>
+    <span className='visually-hidden'>{ariaLabel}</span>
   ) : null;
   return (
     <Tag className={classes} {...attributes} data-testid={testId}>

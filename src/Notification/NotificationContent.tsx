@@ -107,7 +107,7 @@ function NotificationElement({
       {(!autoClose || dismissable) && (
         <Button className='notification-close' onClick={closeToast}>
           <Icon icon='it-close' />
-          <span className='sr-only'>Chiudi notifica: {title}</span>
+          <span className='visually-hidden'>Chiudi notifica: {title}</span>
         </Button>
       )}
     </div>

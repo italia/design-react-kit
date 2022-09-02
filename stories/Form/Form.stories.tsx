@@ -118,7 +118,7 @@ export const DimensionamentoColonneComplesso = () => (
 export const AutoDimensionamento = () => (
   <div className='form-row align-items-center'>
     <Col>
-      <label className='sr-only' htmlFor='inlineFormInput'>
+      <label className='visually-hidden' htmlFor='inlineFormInput'>
         Nome
       </label>
       <input
@@ -129,7 +129,7 @@ export const AutoDimensionamento = () => (
       />
     </Col>
     <Col>
-      <label className='sr-only' htmlFor='inlineFormInputGroup'>
+      <label className='visually-hidden' htmlFor='inlineFormInputGroup'>
         Username
       </label>
       <div className='input-group'>
