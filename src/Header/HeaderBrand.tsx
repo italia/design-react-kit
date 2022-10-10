@@ -18,6 +18,8 @@ export interface HeaderBrandProps
   href?: string;
   /** Icona da utilizzare nel componente. Utilizzata unicamente quando l'Header è di tipo Center.  */
   iconName?: string;
+  /** Alt text da utilizzare nell'icona. Utilizzata unicamente quando l'Header è di tipo Center.  */
+  iconAlt?: string;
   /** Elementi React da renderizzare al proprio interno. */
   children: ReactChild | ReactChild[];
 }
@@ -26,6 +28,7 @@ export const HeaderBrand = ({
   className,
   href,
   iconName,
+  iconAlt,
   children,
   tag = 'a',
   responsive = false,
@@ -51,7 +54,7 @@ export const HeaderBrand = ({
   return (
     <div className='it-brand-wrapper'>
       <a href={href}>
-        {iconName && <Icon icon={iconName} />}
+        {iconName && <Icon icon={iconName} alt={iconAlt} />}
         <div className='it-brand-text'>
           {React.Children.map(children, (child, i) => {
             if (

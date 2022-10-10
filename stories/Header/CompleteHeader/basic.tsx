@@ -135,14 +135,17 @@ export class SlimHeader extends Component<
 }
 
 export class CenterHeader extends Component<
-  { theme?: 'light' | 'dark' | ''; iconName: string },
+  { theme?: 'light' | 'dark' | ''; iconName: string; iconAlt?: string },
   { collapsed: boolean }
 > {
   render() {
     return (
       <Header type='center' theme={this.props.theme}>
         <HeaderContent>
-          <HeaderBrand iconName={this.props.iconName}>
+          <HeaderBrand
+            iconName={this.props.iconName}
+            iconAlt={this.props.iconAlt || ''}
+          >
             <h2>Lorem Ipsum Lorem Ipsum</h2>
             <h3>Inserire qui la tag line</h3>
           </HeaderBrand>
