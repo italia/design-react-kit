@@ -25,6 +25,12 @@ test('Should pass all the given props to the icon', async () => {
   await waitFor(() => !isEmptyIcon(container));
 });
 
+test('Should pass the alt text to the icon', async () => {
+  const { container } = render(<Icon icon='foo-bar.jpg' alt='Alt Text' />);
+  expect(getIcon(container)).toHaveAttribute('alt', 'Alt Text');
+  await waitFor(() => !isEmptyIcon(container));
+});
+
 test('should call the onIconLoad callback when ready', async () => {
   const callback = jest.fn();
   const { container } = render(<Icon icon='it-search' onIconLoad={callback} />);

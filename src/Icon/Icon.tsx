@@ -61,6 +61,7 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
    * <a href="https://italia.github.io/design-react-kit/?path=/story/componenti-icon--lista-icone" target="_blank">Lista icone</a>
    * */
   icon: string;
+  alt?: string;
   /** Quando abilitato riduce la dimensione dell'icona all'interno del contenitore.  */
   padding?: boolean;
   /** Funzione chiamata al caricamento dell'icona */
@@ -71,6 +72,7 @@ export const Icon: FC<IconProps> = ({
   color = '',
   size = '',
   icon = '',
+  alt = '',
   className,
   padding = false,
   onIconLoad,
@@ -106,6 +108,7 @@ export const Icon: FC<IconProps> = ({
       <img
         src={icon}
         className={classes}
+        alt={alt}
         {...(attributes as ImgHTMLAttributes<HTMLImageElement>)}
       />
     );

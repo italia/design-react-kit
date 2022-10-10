@@ -173,14 +173,19 @@ ListaIcone.storyName = 'Lista icone';
 export const EsempioLoghiEsterni = () => {
   return (
     <div style={{ lineHeight: '4em' }}>
-      <Icon icon='https://upload.wikimedia.org/wikipedia/it/f/f5/Palermo-Stemma_uff.png' />
+      <Icon
+        icon='https://upload.wikimedia.org/wikipedia/it/f/f5/Palermo-Stemma_uff.png'
+        alt='Stemma Palermo'
+      />
       <Icon
         icon='https://dati.comune.roma.it/catalog/img/Roma-Stemma.png'
         size='lg'
+        alt='Stemma Roma'
       />
       <Icon
         icon='https://upload.wikimedia.org/wikipedia/commons/9/93/CoA_Citt%C3%A0_di_Milano.svg'
         size='xl'
+        alt='Stemma Milano'
       />
     </div>
   );
