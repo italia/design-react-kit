@@ -8,7 +8,9 @@ function getIcon(container: Element) {
   return container.firstChild;
 }
 function isEmptyIcon(container: Element) {
-  return container.querySelector('svg > path:first-child[fill="none"]') != null;
+  return (
+    container.querySelector('svg > path:nth-child(2)[fill="none"]') != null
+  );
 }
 
 beforeEach(() => clearIconCache());
