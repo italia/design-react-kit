@@ -242,7 +242,8 @@ const CompleteHeader = ({
   theme,
   slimHeaderType,
   sticky,
-  iconName
+  iconName,
+  iconAlt
 }: HeaderCompleteProps) => {
   const SlimTag =
     slimHeaderType === 'default' ? SlimHeader : SlimHeaderFullResponsive;
@@ -250,7 +251,7 @@ const CompleteHeader = ({
     <Headers sticky={sticky}>
       <SlimTag theme={theme} />
       <div className='it-nav-wrapper'>
-        <CenterHeader theme={theme} iconName={iconName} />
+        <CenterHeader theme={theme} iconName={iconName} iconAlt={iconAlt} />
         <NavHeader theme={theme} />
       </div>
     </Headers>
