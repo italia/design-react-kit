@@ -43,7 +43,7 @@
   },
   "scripts": {
     "start": "npm run storybook:serve",
-    "svg:import": "svgr -d src/Icon/assets node_modules/bootstrap-italia/src/svg && echo \"\" >> src/Icon/assets/index.tsx && npx eslint src/Icon/assets/index.tsx --fix",
+    "svg:import": "svgr -d src/Icon/assets node_modules/bootstrap-italia/src/svg && echo \"\" >> src/Icon/assets/index.tsx && npx eslint src/Icon/assets/*.tsx --fix",
     "prebuild": "npm run svg:import",
     "build": "tsdx build --format cjs,esm",
     "test": "tsdx test ./src ./test --passWithNoTests --coverage",
