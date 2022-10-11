@@ -9,7 +9,7 @@ function getIcon(container: Element) {
 }
 function isEmptyIcon(container: Element) {
   return (
-    container.querySelector('svg > path:nth-child(2)[fill="none"]') != null
+    container.querySelector('svg > path:nth-child(1)[fill="none"]') != null
   );
 }
 
