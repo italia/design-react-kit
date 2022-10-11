@@ -109,7 +109,6 @@ export const Icon: FC<IconProps> = ({
   if (!isBundledIcon(icon)) {
     // assume it's an image and let the browser do its job
     return (
-      // eslint-disable-next-line jsx-a11y/alt-text
       <img
         src={icon}
         className={classes}
