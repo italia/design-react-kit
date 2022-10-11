@@ -9,6 +9,7 @@ export default {
 
 type EsempioInterattivoProps = {
   icon: string;
+  alt: string;
   size: '' | 'xl' | 'lg' | 'sm' | 'xs';
   padding: boolean;
   color: string;
@@ -17,6 +18,7 @@ type EsempioInterattivoProps = {
 
 export const EsempioInterattivo: Story<EsempioInterattivoProps> = ({
   icon,
+  alt,
   size,
   padding,
   background,
@@ -26,6 +28,7 @@ export const EsempioInterattivo: Story<EsempioInterattivoProps> = ({
     <Icon
       icon={icon}
       size={size}
+      alt={alt}
       padding={padding}
       color={color}
       className={background}
@@ -36,6 +39,7 @@ export const EsempioInterattivo: Story<EsempioInterattivoProps> = ({
 EsempioInterattivo.storyName = 'Esempio interattivo';
 EsempioInterattivo.args = {
   icon: 'it-tool',
+  alt: 'Alt Text',
   size: '',
   padding: false,
   color: '',
@@ -46,6 +50,11 @@ EsempioInterattivo.argTypes = {
     control: {
       type: 'select',
       options: icons
+    }
+  },
+  alt: {
+    control: {
+      type: 'text'
     }
   },
   size: {

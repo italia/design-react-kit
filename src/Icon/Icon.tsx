@@ -68,6 +68,11 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
   onIconLoad?: () => void;
 }
 
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+
 export const Icon: FC<IconProps> = ({
   color = '',
   size = '',
@@ -78,9 +83,9 @@ export const Icon: FC<IconProps> = ({
   onIconLoad,
   ...attributes
 }) => {
-  const [IconComponent, setCurrentIcon] = useState<FC<SVGProps<SVGSVGElement>>>(
-    iconsCache[icon]
-  );
+  const [IconComponent, setCurrentIcon] = useState<
+    FC<SVGProps<SVGSVGElement> & SVGRProps>
+  >(iconsCache[icon]);
   const classes = classNames('icon', className, {
     [`icon-${color}`]: color,
     [`icon-${size}`]: size,
@@ -91,7 +96,7 @@ export const Icon: FC<IconProps> = ({
     if (isBundledIcon(icon) && !iconsCache[icon]) {
       loadIcon(icon).then(({ component }) => {
         iconsCache[icon] = ((() => component) as unknown) as FC<
-          SVGProps<SVGSVGElement>
+          SVGProps<SVGSVGElement> & SVGRProps
         >;
         setCurrentIcon(iconsCache[icon]);
         onIconLoad?.();
@@ -118,5 +123,7 @@ export const Icon: FC<IconProps> = ({
     return <EmptyIcon className={classes} role='img' {...attributes} />;
   }
 
-  return <IconComponent className={classes} role='img' {...attributes} />;
+  return (
+    <IconComponent className={classes} role='img' title={alt} {...attributes} />
+  );
 };
