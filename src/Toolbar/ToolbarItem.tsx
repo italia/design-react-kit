@@ -32,10 +32,7 @@ export interface ToolbarItemProps extends HTMLAttributes<HTMLElement> {
   label?: string;
   /** Il nome dell'icona da utilizzare */
   iconName: string;
-  isIconSmall?: boolean;
-  alert?: boolean;
   testId?: string;
-  onLinkClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
   /**
    * Un testo completo da mostrare per Toolbar di grandezza media e piccola con badge (ad esempio: "ci sono 42 nuovi documenti da esaminare")
    * @deprecated
