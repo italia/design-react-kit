@@ -11,11 +11,13 @@ export interface HeaderContentProps extends HTMLAttributes<HTMLElement> {
   megamenu?: boolean;
   /** Parametro per il controllo responsive del componente secondo Bootstrap Italia. */
   expand?: boolean | 'sm' | 'md' | 'lg' | 'xl';
+  testId?: string;
 }
 
 export const HeaderContent = ({
   className,
   megamenu,
+  testId,
   ...attributes
 }: HeaderContentProps) => {
   const type = useHeaderContext();
@@ -28,9 +30,9 @@ export const HeaderContent = ({
 
   const Content =
     type === NAVBAR ? (
-      <Navbar className={classes} {...attributes} />
+      <Navbar className={classes} {...attributes} data-testid={testId} />
     ) : (
-      <div className={classes} {...attributes} />
+      <div className={classes} {...attributes} data-testid={testId} />
     );
   return (
     <Container>

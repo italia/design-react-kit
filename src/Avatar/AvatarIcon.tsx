@@ -19,6 +19,7 @@ export interface AvatarIconProps extends HTMLAttributes<HTMLElement> {
   href?: string;
   /** Da utilizzare per impostare un riferimento all'elemento DOM */
   innerRef?: Ref<HTMLElement | HTMLAnchorElement>;
+  testId?: string;
 }
 
 export const AvatarIcon: FC<AvatarIconProps> = ({
@@ -28,6 +29,7 @@ export const AvatarIcon: FC<AvatarIconProps> = ({
   href,
   color,
   innerRef,
+  testId,
   children,
   ...attributes
 }) => {
@@ -43,6 +45,7 @@ export const AvatarIcon: FC<AvatarIconProps> = ({
         {...attributes}
         className={typeClass}
         ref={innerRef as Ref<HTMLAnchorElement>}
+        data-testid={testId}
       >
         {children}
       </a>
@@ -50,7 +53,7 @@ export const AvatarIcon: FC<AvatarIconProps> = ({
   }
 
   return (
-    <Tag {...attributes} className={typeClass}>
+    <Tag {...attributes} className={typeClass} data-testid={testId}>
       {children}
     </Tag>
   );

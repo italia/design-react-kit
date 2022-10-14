@@ -8,6 +8,7 @@ export interface StepperContentProps extends HTMLAttributes<HTMLElement> {
   className?: string;
   /** Abilita il tema scuro per il componente StepperContent */
   dark?: boolean;
+  testId?: string;
 }
 
 const contentStyleLight = {

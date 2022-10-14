@@ -14,6 +14,7 @@ export interface ChipProps extends HTMLAttributes<HTMLElement> {
   disabled?: boolean;
   /** Le varianti di colore definite in Bootstrap Italia */
   color?: 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | string;
+  testId?: string;
 }
 
 export const Chip: FC<ChipProps> = ({
@@ -23,6 +24,7 @@ export const Chip: FC<ChipProps> = ({
   simple = false,
   large = false,
   disabled = false,
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
@@ -33,5 +35,5 @@ export const Chip: FC<ChipProps> = ({
     [`chip-${color}`]: color
   });
 
-  return <Tag className={classes} {...attributes} />;
+  return <Tag className={classes} {...attributes} data-testid={testId} />;
 };

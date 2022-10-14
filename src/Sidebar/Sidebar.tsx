@@ -14,10 +14,12 @@ export interface SidebarProps extends HTMLAttributes<HTMLElement> {
   right?: boolean;
   /** Quando attivo cambia il tema del componente Sidebar rendendola scura */
   dark?: boolean;
+  testId?: string;
 }
 
 export const Sidebar: FC<SidebarProps> = ({
   className,
+  testId,
   tag = 'div',
   secondary = false,
   left = false,
@@ -36,10 +38,16 @@ export const Sidebar: FC<SidebarProps> = ({
     'linklist-secondary': secondary
   });
   if (secondary) {
-    return <Tag {...attributes} className={wrapperClassesLinkList} />;
+    return (
+      <Tag
+        {...attributes}
+        className={wrapperClassesLinkList}
+        data-testid={testId}
+      />
+    );
   }
   return (
-    <Tag className={wrapperClasses}>
+    <Tag className={wrapperClasses} data-testid={testId}>
       <Tag {...attributes} className={wrapperClassesLinkList} />
     </Tag>
   );

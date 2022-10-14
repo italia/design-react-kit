@@ -1,5 +1,5 @@
 import React from 'react';
-import { act, fireEvent, render } from '@testing-library/react';
+import { act, fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
 import { Input, preloadIcons } from '../src';
@@ -86,4 +86,10 @@ test('should toggle password icon on click', () => {
 test('should return an unstyled input', () => {
   const { container } = render(<Input noWrapper />);
   expect(container.firstChild?.nodeName).toBe('INPUT');
+});
+
+test('should have a testId for resilient UI changes', () => {
+  render(<Input testId='test-id-input' />);
+
+  expect(screen.getByTestId('test-id-input')).toBeTruthy();
 });

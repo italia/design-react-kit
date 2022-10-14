@@ -16,6 +16,7 @@ export interface HeaderTogglerProps
    * Se fornito questo sovrascriverà il valore di default.
    */
   type?: 'button' | 'submit' | 'reset';
+  testId?: string;
 }
 
 const BUTTON = 'button';
@@ -24,6 +25,7 @@ export const HeaderToggler = ({
   className,
   tag,
   type,
+  testId,
   ...attributes
 }: HeaderTogglerProps) => {
   const HeaderType = useHeaderContext();
@@ -43,6 +45,7 @@ export const HeaderToggler = ({
       tag={tag || defaultTag}
       type={type || defaultType}
       href='#'
+      data-testid={testId}
     />
   );
 };

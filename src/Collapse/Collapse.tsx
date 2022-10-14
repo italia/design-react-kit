@@ -38,6 +38,7 @@ export interface CollapseProps extends HTMLAttributes<HTMLElement> {
   onOverlayClick?: () => void;
   /** Da utilizzare per impostare un riferimento all'elemento DOM */
   innerRef?: Ref<HTMLElement>;
+  testId?: string;
 }
 
 export const Collapse: FC<CollapseProps> = ({
@@ -49,6 +50,7 @@ export const Collapse: FC<CollapseProps> = ({
   isOpen = false,
   onOverlayClick,
   cssModule,
+  testId,
   ...attributes
 }) => {
   const newCssModule = {
@@ -66,6 +68,7 @@ export const Collapse: FC<CollapseProps> = ({
         cssModule={newCssModule}
         navbar={navbar}
         style={style}
+        data-testid={testId}
         {...attributes}
       >
         <div className='overlay' style={style} onClick={onOverlayClick}></div>
@@ -93,6 +96,7 @@ export const Collapse: FC<CollapseProps> = ({
       {...attributes}
       navbar={navbar}
       isOpen={isOpen}
+      data-testid={testId}
     >
       {children}
     </CollapseBase>

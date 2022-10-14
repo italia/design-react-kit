@@ -14,8 +14,11 @@ export interface CardBodyProps extends HTMLAttributes<HTMLElement> {
   innerRef?: Ref<HTMLElement>;
   /** Oggetto contenente la nuova mappatura per le classi CSS. */
   cssModule?: CSSModule;
+  testId?: string;
 }
 
-export const CardBody: FC<CardBodyProps> = ({ tag = 'div', ...props }) => (
-  <InnerCardBody {...props} tag={tag} />
-);
+export const CardBody: FC<CardBodyProps> = ({
+  tag = 'div',
+  testId,
+  ...props
+}) => <InnerCardBody {...props} tag={tag} data-testid={testId} />;

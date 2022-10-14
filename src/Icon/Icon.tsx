@@ -65,6 +65,7 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
   padding?: boolean;
   /** Funzione chiamata al caricamento dell'icona */
   onIconLoad?: () => void;
+  testId?: string;
 }
 
 export const Icon: FC<IconProps> = ({
@@ -74,6 +75,7 @@ export const Icon: FC<IconProps> = ({
   className,
   padding = false,
   onIconLoad,
+  testId,
   ...attributes
 }) => {
   const [IconComponent, setCurrentIcon] = useState<FC<SVGProps<SVGSVGElement>>>(
@@ -106,14 +108,29 @@ export const Icon: FC<IconProps> = ({
       <img
         src={icon}
         className={classes}
+        data-testid={testId}
         {...(attributes as ImgHTMLAttributes<HTMLImageElement>)}
       />
     );
   }
 
   if (!IconComponent) {
-    return <EmptyIcon className={classes} role='img' {...attributes} />;
+    return (
+      <EmptyIcon
+        className={classes}
+        role='img'
+        {...attributes}
+        data-testid={testId}
+      />
+    );
   }
 
-  return <IconComponent className={classes} role='img' {...attributes} />;
+  return (
+    <IconComponent
+      className={classes}
+      role='img'
+      {...attributes}
+      data-testid={testId}
+    />
+  );
 };

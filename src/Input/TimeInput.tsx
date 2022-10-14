@@ -89,6 +89,7 @@ export interface TimeInputProps extends Omit<InputProps, UnusedProps> {
   decreaseHoursLabel?: string;
   /** Etichetta del bottone per diminuire i minuti -  non visibile a schermo */
   decreaseMinutesLabel?: string;
+  testId?: string;
 }
 
 export const TimeInput = ({
@@ -107,6 +108,7 @@ export const TimeInput = ({
   increaseMinutesLabel,
   decreaseHoursLabel,
   decreaseMinutesLabel,
+  testId,
   ...attributes
 }: TimeInputProps) => {
   const [initialHours, initialMinutes] = value.split(':');
@@ -175,6 +177,7 @@ export const TimeInput = ({
       className={classNames('it-timepicker-wrapper', {
         'theme-dark': dark
       })}
+      data-testid={testId}
     >
       <section className='time-spinner'>
         <div className='error_container' role='alert' aria-atomic='true'></div>

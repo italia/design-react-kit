@@ -20,6 +20,7 @@ export interface HeaderBrandProps
   iconName?: string;
   /** Elementi React da renderizzare al proprio interno. */
   children: ReactChild | ReactChild[];
+  testId?: string;
 }
 
 export const HeaderBrand = ({
@@ -29,6 +30,7 @@ export const HeaderBrand = ({
   children,
   tag = 'a',
   responsive = false,
+  testId,
   ...attributes
 }: HeaderBrandProps) => {
   const type = useHeaderContext();
@@ -41,6 +43,7 @@ export const HeaderBrand = ({
       <NavbarBrand
         className={classes}
         href={href}
+        data-testid={testId}
         {...attributes}
         {...defaultAttributes}
       >
@@ -49,7 +52,7 @@ export const HeaderBrand = ({
     );
   }
   return (
-    <div className='it-brand-wrapper'>
+    <div className='it-brand-wrapper' data-testid={testId}>
       <a href={href}>
         {iconName && <Icon icon={iconName} />}
         <div className='it-brand-text'>

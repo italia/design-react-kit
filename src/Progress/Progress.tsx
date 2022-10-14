@@ -22,6 +22,7 @@ export interface ProgressProps extends HTMLAttributes<HTMLElement> {
   indeterminate?: boolean;
   /** Le varianti di colore definite in Bootstrap Italia */
   color?: 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | string;
+  testId?: string;
 }
 
 export const Progress: FC<ProgressProps> = ({
@@ -32,6 +33,7 @@ export const Progress: FC<ProgressProps> = ({
   label,
   indeterminate = false,
   color,
+  testId,
   role = 'progressbar',
   ...attributes
 }) => {
@@ -55,7 +57,7 @@ export const Progress: FC<ProgressProps> = ({
 
   if (label && numericValue) {
     return (
-      <Tag className={wrapperClasses}>
+      <Tag className={wrapperClasses} data-testid={testId}>
         <div className='progress-bar-label'>
           <span className='sr-only'>{label}</span>
           {numericValue + '%'}
@@ -76,7 +78,7 @@ export const Progress: FC<ProgressProps> = ({
   }
 
   return (
-    <Tag className={secondaryWrapperClasses}>
+    <Tag className={secondaryWrapperClasses} data-testid={testId}>
       <div className='progress-bar-label'>
         <span className='sr-only'>{label}</span>
       </div>
