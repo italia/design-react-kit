@@ -104,9 +104,12 @@ export const Icon: FC<IconProps> = ({
         onIconLoad?.();
       });
     } else {
+      if (IconComponent !== iconsCache[icon]) {
+        setCurrentIcon(iconsCache[icon]);
+      }
       onIconLoad?.();
     }
-  }, [icon, onIconLoad]);
+  }, [IconComponent, icon, onIconLoad]);
 
   if (!isBundledIcon(icon)) {
     // assume it's an image and let the browser do its job
@@ -136,7 +139,7 @@ export const Icon: FC<IconProps> = ({
     <IconComponent
       className={classes}
       role='img'
-      title={alt}
+      title={alt !== '' ? alt : undefined}
       {...attributes}
       data-testid={testId}
     />

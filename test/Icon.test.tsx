@@ -1,11 +1,14 @@
 import React from 'react';
-import { render, waitFor, screen } from '@testing-library/react';
+import { render, waitFor, screen, within } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
 import { clearIconCache, Icon, preloadIcons } from '../src';
 
 function getIcon(container: Element) {
   return container.firstChild;
+}
+function getIconTitle(container: HTMLElement, title: string) {
+  return within(container).getByText(title);
 }
 function isEmptyIcon(container: Element) {
   return (
@@ -69,4 +72,15 @@ test('should have a testId for resilient UI changes', async () => {
   render(<Icon icon='it-search' testId='test-id-icon' />);
 
   await waitFor(() => expect(screen.getByTestId('test-id-icon')).toBeTruthy());
+});
+
+test('should replace the existing icon with another (already loaded) when requested - see #855', async () => {
+  await preloadIcons(['it-tool', 'it-search']);
+  const onLoad = jest.fn();
+  const { container, rerender } = render(
+    <Icon icon='it-tool' onIconLoad={onLoad} />
+  );
+  expect(getIconTitle(container, 'Tool')).toBeTruthy();
+  rerender(<Icon icon='it-search' onIconLoad={onLoad} />);
+  expect(getIconTitle(container, 'Search')).toBeTruthy();
 });
