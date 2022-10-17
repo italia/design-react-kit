@@ -12,6 +12,7 @@ export interface AccordionHeaderProps {
   onToggle?: () => void;
   /** Contenuto aggiuntivo all'interno del bottone dell'AccordionHeader */
   append?: ReactNode;
+  testId?: string;
 }
 
 export const AccordionHeader: FC<AccordionHeaderProps> = ({
@@ -20,6 +21,7 @@ export const AccordionHeader: FC<AccordionHeaderProps> = ({
   active = false,
   append,
   onToggle,
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
@@ -28,7 +30,7 @@ export const AccordionHeader: FC<AccordionHeaderProps> = ({
   });
 
   return (
-    <div className='collapse-header'>
+    <div className='collapse-header' data-testid={testId}>
       <Tag
         data-toggle='collapse'
         aria-expanded={active ? 'true' : 'false'}

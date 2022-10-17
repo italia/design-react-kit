@@ -9,15 +9,19 @@ export interface AvatarGroupContainerProps
   className?: string;
   /** Classi aggiuntive da usare per il componente più esterno di AvatarGroupContainer */
   wrapperClassName?: string;
+  testId?: string;
 }
 
 export const AvatarGroupContainer: FC<AvatarGroupContainerProps> = ({
   className,
   tag = 'ul',
   wrapperClassName,
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
   const wrapperClasses = classNames('avatar-group-stacked', wrapperClassName);
-  return <Tag {...attributes} className={wrapperClasses}></Tag>;
+  return (
+    <Tag {...attributes} className={wrapperClasses} data-testid={testId} />
+  );
 };

@@ -28,6 +28,7 @@ export interface BottomNavItemProps extends HTMLAttributes<HTMLLIElement> {
    * @deprecated. Usare `url` o `onLinkClick`
    * */
   link?: string;
+  testId?: string;
 }
 
 export const BottomNavItem: FC<BottomNavItemProps> = ({
@@ -41,6 +42,7 @@ export const BottomNavItem: FC<BottomNavItemProps> = ({
   tag = 'a',
   onLinkClick,
   link,
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
@@ -56,7 +58,7 @@ export const BottomNavItem: FC<BottomNavItemProps> = ({
     </div>
   );
   return (
-    <li {...attributes}>
+    <li {...attributes} data-testid={testId}>
       <Tag
         href={url || link || '#'}
         className={activeClass}

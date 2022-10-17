@@ -99,6 +99,7 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   static?: boolean;
   /** Quando attivo rimuove il componente contenitore dell'Input. Utile per un controllo maggiore dello styling */
   noWrapper?: boolean;
+  testId?: string;
 }
 
 export const Input = ({
@@ -120,6 +121,7 @@ export const Input = ({
   wrapperClass: originalWrapperClassOld,
   wrapperClassName: originalWrapperClass,
   size,
+  testId,
   noWrapper = false,
   ...attributes
 }: InputProps) => {
@@ -254,6 +256,7 @@ export const Input = ({
         className={inputClasses}
         {...sharedAttributes}
         placeholder={placeholder}
+        data-testid={testId}
       />
     );
   }
@@ -267,6 +270,7 @@ export const Input = ({
           {...sharedAttributes}
           className={inputClasses}
           placeholder={placeholder}
+          data-testid={testId}
         />
       </InputContainer>
     );
@@ -282,6 +286,7 @@ export const Input = ({
           type={isHidden ? 'password' : 'text'}
           className={inputClasses}
           placeholder={placeholder}
+          data-testid={testId}
         />
         <span className='password-icon' aria-hidden='true'>
           <Icon
@@ -302,6 +307,7 @@ export const Input = ({
           {...extraAttributes}
           {...sharedAttributes}
           className={inputClasses}
+          data-testid={testId}
           readOnly
         />
       </InputContainer>
@@ -315,6 +321,7 @@ export const Input = ({
           {...extraAttributes}
           {...sharedAttributes}
           className={inputClasses}
+          data-testid={testId}
         />
       </InputContainer>
     );
@@ -326,6 +333,7 @@ export const Input = ({
       {...extraAttributes}
       className={inputClasses}
       {...sharedAttributes}
+      data-testid={testId}
     />
   );
 };

@@ -9,12 +9,14 @@ export interface HeadersProps extends HTMLAttributes<HTMLElement> {
   sticky?: boolean;
   /** Classi addizionali per il componente Headers */
   className?: string;
+  testId?: string;
 }
 
 export const Headers: FC<HeadersProps> = ({
   className,
   shadow = false,
   sticky = false,
+  testId,
   ...attributes
 }) => {
   const classes = classNames(
@@ -26,11 +28,11 @@ export const Headers: FC<HeadersProps> = ({
     className
   );
   if (!sticky) {
-    return <div className={classes} {...attributes}></div>;
+    return <div className={classes} {...attributes} data-testid={testId}></div>;
   }
   return (
     <StickyProvider>
-      <Sticky style={{ position: 'sticky', zIndex: 2 }}>
+      <Sticky style={{ position: 'sticky', zIndex: 2 }} data-testid={testId}>
         <div className={classes} {...attributes}></div>
       </Sticky>
     </StickyProvider>

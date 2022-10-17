@@ -6,14 +6,16 @@ export interface CardTagProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente CardTag*/
   className?: string;
+  testId?: string;
 }
 
 export const CardTag: FC<CardTagProps> = ({
   className,
   tag = 'a',
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
   const classes = classNames(className, 'card-tag');
-  return <Tag className={classes} {...attributes} />;
+  return <Tag className={classes} {...attributes} data-testid={testId} />;
 };

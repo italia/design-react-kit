@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitFor } from '@testing-library/react';
+import { render, waitFor, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
 import { clearIconCache, Icon, preloadIcons } from '../src';
@@ -63,4 +63,10 @@ test('should clear the icon cache correctly', async () => {
   });
   // Call it again: this time should return undefined
   expect(clearIconCache('it-tool')).toEqual({ 'it-tool': undefined });
+});
+
+test('should have a testId for resilient UI changes', async () => {
+  render(<Icon icon='it-search' testId='test-id-icon' />);
+
+  await waitFor(() => expect(screen.getByTestId('test-id-icon')).toBeTruthy());
 });

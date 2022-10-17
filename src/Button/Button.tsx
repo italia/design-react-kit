@@ -25,6 +25,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   close?: boolean;
   active?: boolean;
   href?: string;
+  testId?: string;
 }
 
 export const Button: FC<ButtonProps> = ({
@@ -32,6 +33,7 @@ export const Button: FC<ButtonProps> = ({
   icon = false,
   color = '',
   className,
+  testId,
   ...attributes
 }) => {
   const classes = classNames(className, {
@@ -47,6 +49,7 @@ export const Button: FC<ButtonProps> = ({
   return (
     <ButtonBase
       className={classes}
+      data-testid={testId}
       {...baseProps}
       {...attributes}
       {...ariaAttributes}
