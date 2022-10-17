@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { SVGProps } from 'react';
 interface SVGRProps {
   title?: string;
   titleId?: string;
@@ -7,16 +8,23 @@ export const component = ({
   title,
   titleId,
   ...props
-}: React.SVGProps<SVGSVGElement> & SVGRProps) => {
+}: SVGProps<SVGSVGElement> & SVGRProps) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
+      width={24}
+      height={24}
       viewBox='0 0 24 24'
+      role='img'
       aria-labelledby={titleId}
       {...props}
     >
-      {title ? <title id={titleId}>{title}</title> : null}
-      <path d='M13.9 7.7l4.3 4.3-4.3 4.3-.7-.7 3.1-3.1H7v-1h9.2l-3-3.1zM22 12A10 10 0 1112 2a10 10 0 0110 10zm-1 0a9 9 0 10-9 9 9 9 0 009-9z' />
+      {title === undefined ? (
+        <title id={titleId}>{'Arrow Right Circle'}</title>
+      ) : title ? (
+        <title id={titleId}>{title}</title>
+      ) : null}
+      <path d='m13.9 7.7 4.3 4.3-4.3 4.3-.7-.7 3.1-3.1H7v-1h9.2l-3-3.1ZM22 12A10 10 0 1 1 12 2a10 10 0 0 1 10 10Zm-1 0a9 9 0 1 0-9 9 9 9 0 0 0 9-9Z' />
       <path fill='none' d='M0 0h24v24H0z' />
     </svg>
   );
