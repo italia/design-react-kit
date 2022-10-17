@@ -61,6 +61,7 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
    * <a href="https://italia.github.io/design-react-kit/?path=/story/componenti-icon--lista-icone" target="_blank">Lista icone</a>
    * */
   icon: string;
+  alt?: string;
   /** Quando abilitato riduce la dimensione dell'icona all'interno del contenitore.  */
   padding?: boolean;
   /** Funzione chiamata al caricamento dell'icona */
@@ -68,19 +69,25 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
   testId?: string;
 }
 
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+
 export const Icon: FC<IconProps> = ({
   color = '',
   size = '',
   icon = '',
+  alt = '',
   className,
   padding = false,
   onIconLoad,
   testId,
   ...attributes
 }) => {
-  const [IconComponent, setCurrentIcon] = useState<FC<SVGProps<SVGSVGElement>>>(
-    iconsCache[icon]
-  );
+  const [IconComponent, setCurrentIcon] = useState<
+    FC<SVGProps<SVGSVGElement> & SVGRProps>
+  >(iconsCache[icon]);
   const classes = classNames('icon', className, {
     [`icon-${color}`]: color,
     [`icon-${size}`]: size,
@@ -91,7 +98,7 @@ export const Icon: FC<IconProps> = ({
     if (isBundledIcon(icon) && !iconsCache[icon]) {
       loadIcon(icon).then(({ component }) => {
         iconsCache[icon] = ((() => component) as unknown) as FC<
-          SVGProps<SVGSVGElement>
+          SVGProps<SVGSVGElement> & SVGRProps
         >;
         setCurrentIcon(iconsCache[icon]);
         onIconLoad?.();
@@ -104,10 +111,10 @@ export const Icon: FC<IconProps> = ({
   if (!isBundledIcon(icon)) {
     // assume it's an image and let the browser do its job
     return (
-      // eslint-disable-next-line jsx-a11y/alt-text
       <img
         src={icon}
         className={classes}
+        alt={alt}
         data-testid={testId}
         {...(attributes as ImgHTMLAttributes<HTMLImageElement>)}
       />
@@ -129,6 +136,7 @@ export const Icon: FC<IconProps> = ({
     <IconComponent
       className={classes}
       role='img'
+      title={alt}
       {...attributes}
       data-testid={testId}
     />

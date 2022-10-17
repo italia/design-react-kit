@@ -8,7 +8,9 @@ function getIcon(container: Element) {
   return container.firstChild;
 }
 function isEmptyIcon(container: Element) {
-  return container.querySelector('svg > path:first-child[fill="none"]') != null;
+  return (
+    container.querySelector('svg > path:nth-child(1)[fill="none"]') != null
+  );
 }
 
 beforeEach(() => clearIconCache());
@@ -22,6 +24,12 @@ test('Should have a lazy loading behaviour', async () => {
 test('Should pass all the given props to the icon', async () => {
   const { container } = render(<Icon icon='it-search' aria-label='Search' />);
   expect(getIcon(container)).toHaveAttribute('aria-label', 'Search');
+  await waitFor(() => !isEmptyIcon(container));
+});
+
+test('Should pass the alt text to the icon', async () => {
+  const { container } = render(<Icon icon='foo-bar.jpg' alt='Alt Text' />);
+  expect(getIcon(container)).toHaveAttribute('alt', 'Alt Text');
   await waitFor(() => !isEmptyIcon(container));
 });
 
