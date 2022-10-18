@@ -78,3 +78,11 @@ test('should replace the existing icon with another (already loaded) when reques
   rerender(<Icon icon='it-search' onIconLoad={onLoad} />);
   expect(getIconTitle(container, 'Search')).toBeTruthy();
 });
+
+test('should have a testId for resilient UI changes', async () => {
+  const { getByTestId } = render(
+    <Icon icon='it-search' testId='test-id-icon' />
+  );
+
+  await waitFor(() => expect(getByTestId('test-id-icon')).toBeTruthy());
+});

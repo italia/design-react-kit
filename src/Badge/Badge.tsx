@@ -23,6 +23,7 @@ export type BadgeProps = {
   innerRef?: Ref<HTMLElement>;
   /** Il contenuto del badge */
   children: ReactChild;
+  testId?: string;
 } & (HTMLAttributes<HTMLElement> | AnchorHTMLAttributes<HTMLAnchorElement>);
 
 export const Badge: FC<BadgeProps> = ({
@@ -30,10 +31,17 @@ export const Badge: FC<BadgeProps> = ({
   pill = false,
   tag = 'span',
   children,
+  testId,
   ...attributes
 }) => {
   return (
-    <BadgeReact color={color} pill={pill} tag={tag} {...attributes}>
+    <BadgeReact
+      color={color}
+      pill={pill}
+      tag={tag}
+      {...attributes}
+      data-testid={testId}
+    >
       {children}
     </BadgeReact>
   );

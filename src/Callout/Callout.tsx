@@ -12,6 +12,7 @@ export interface CalloutProps extends HTMLAttributes<HTMLElement> {
   highlight?: boolean;
   /** Abilita il Callout di tipo Approfondimento */
   detailed?: boolean;
+  testId?: string;
 }
 
 export const Callout: FC<CalloutProps> = ({
@@ -20,6 +21,7 @@ export const Callout: FC<CalloutProps> = ({
   highlight = false,
   detailed,
   tag = 'div',
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
@@ -28,7 +30,7 @@ export const Callout: FC<CalloutProps> = ({
     'callout-more': detailed
   });
   return (
-    <Tag className={classes} {...attributes}>
+    <Tag className={classes} {...attributes} data-testid={testId}>
       {children}
     </Tag>
   );

@@ -15,6 +15,7 @@ export interface HeaderProps extends HTMLAttributes<HTMLElement> {
    *  in mobile, mentre "dark" in versione desktop.
    */
   theme?: 'light' | 'dark' | '';
+  testId?: string;
 }
 
 export const Header: FC<HeaderProps> = ({
@@ -22,6 +23,7 @@ export const Header: FC<HeaderProps> = ({
   small = false,
   theme = '',
   type,
+  testId,
   ...attributes
 }) => {
   // use context here as theme
@@ -34,7 +36,7 @@ export const Header: FC<HeaderProps> = ({
   });
   return (
     <HeaderContext.Provider value={{ type }}>
-      <div className={classes} {...attributes} />
+      <div className={classes} {...attributes} data-testid={testId} />
     </HeaderContext.Provider>
   );
 };

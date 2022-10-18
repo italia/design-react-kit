@@ -9,6 +9,7 @@ export interface ThumbNavProps extends HTMLAttributes<HTMLUListElement> {
   overlayOnHover?: 'black' | 'primary';
   position?: 'top' | 'right' | 'bottom' | 'left';
   rowItems?: 2 | 3 | 4 | 5;
+  testId?: string;
 }
 
 export const ThumbNav: FC<ThumbNavProps> = ({
@@ -19,6 +20,7 @@ export const ThumbNav: FC<ThumbNavProps> = ({
   rowItems,
   overlayOnHover,
   position,
+  testId,
   ...attributes
 }) => {
   const classes = classNames('thumb-nav', {
@@ -33,5 +35,5 @@ export const ThumbNav: FC<ThumbNavProps> = ({
     [`thumb-nav-auto-${rowItems}`]: rowItems != null
   });
 
-  return <ul className={classes} {...attributes} />;
+  return <ul className={classes} {...attributes} data-testid={testId} />;
 };

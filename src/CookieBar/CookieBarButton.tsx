@@ -11,6 +11,7 @@ export type CookieBarButtonProps = {
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente CookieBarButton */
   className?: string;
+  testId?: string;
 } & (
   | ButtonHTMLAttributes<HTMLButtonElement>
   | AnchorHTMLAttributes<HTMLAnchorElement>
@@ -19,9 +20,10 @@ export type CookieBarButtonProps = {
 export const CookieBarButton: FC<CookieBarButtonProps> = ({
   tag = 'button',
   className,
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
   const activeClass = classNames(className, 'cookiebar-btn');
-  return <Tag className={activeClass} {...attributes} />;
+  return <Tag className={activeClass} {...attributes} data-testid={testId} />;
 };

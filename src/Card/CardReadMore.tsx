@@ -14,6 +14,7 @@ export interface CardReadMoreProps extends HTMLAttributes<HTMLElement> {
   href?: string;
   /** Mostra un'icona nella Card per l'azione "Leggi di più". Passare il nome dell'icona per utilizzarlo. */
   iconName?: string;
+  testId?: string;
 }
 
 export const CardReadMore: FC<CardReadMoreProps> = ({
@@ -22,12 +23,13 @@ export const CardReadMore: FC<CardReadMoreProps> = ({
   iconName = 'it-arrow-right',
   tag = 'a',
   href,
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
   const classes = classNames(className, 'read-more');
   return (
-    <Tag className={classes} href={href} {...attributes}>
+    <Tag className={classes} href={href} {...attributes} data-testid={testId}>
       <span className='text'>{text}</span>
       {iconName && <Icon icon={iconName} />}
     </Tag>

@@ -6,14 +6,18 @@ export interface CookieBarProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente Cookie */
   className?: string;
+  testId?: string;
 }
 
 export const CookieBar: FC<CookieBarProps> = ({
   tag = 'div',
   className,
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
   const wrapperClasses = classNames('cookiebar show', className);
-  return <Tag {...attributes} className={wrapperClasses} />;
+  return (
+    <Tag {...attributes} className={wrapperClasses} data-testid={testId} />
+  );
 };

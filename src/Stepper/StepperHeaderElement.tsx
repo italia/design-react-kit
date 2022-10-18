@@ -38,6 +38,7 @@ export interface StepperHeaderElementProps
   icon?: string;
   /** @deprecated Usare `prependIcon` */
   iconName?: string;
+  testId?: string;
 }
 
 export const StepperHeaderElement: FC<StepperHeaderElementProps> = ({
@@ -49,6 +50,7 @@ export const StepperHeaderElement: FC<StepperHeaderElementProps> = ({
   iconName,
   noLine,
   stepperNumber,
+  testId,
   children,
   className,
   ...attributes
@@ -67,7 +69,7 @@ export const StepperHeaderElement: FC<StepperHeaderElementProps> = ({
   const iconToAppend = appendIcon || icon;
   const iconToPepend = prependIcon || iconName;
   return (
-    <Tag {...attributes} className={wrapperClasses}>
+    <Tag {...attributes} className={wrapperClasses} data-testid={testId}>
       {iconToPepend && <Icon icon={iconToPepend} />}
       {stepperNumber && <span className={spanClass}>{stepperNumber}</span>}
       {children}

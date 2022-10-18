@@ -8,17 +8,19 @@ export interface HeaderSocialsZoneProps extends HTMLAttributes<HTMLElement> {
   label?: string;
   /** Utilizzato per elencare i social da mostrare */
   children?: ReactChild;
+  testId?: string;
 }
 
 export const HeaderSocialsZone: FC<HeaderSocialsZoneProps> = ({
   className,
   children,
   label,
+  testId,
   ...attributes
 }) => {
   const classes = classNames('it-socials d-none d-md-flex', className);
   return (
-    <div className={classes} {...attributes}>
+    <div className={classes} {...attributes} data-testid={testId}>
       {label && <span>{label}</span>}
       {children}
     </div>

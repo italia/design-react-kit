@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
 import { TimeInput, preloadIcons } from '../src';
@@ -16,6 +16,7 @@ const renderTimeInput = (value: string = '') =>
       decreaseHoursLabel='Subtract hour'
       increaseMinutesLabel='Add minute'
       decreaseMinutesLabel='Subtract minute'
+      testId='test-id-time-input'
       value={value}
     />
   );
@@ -145,5 +146,11 @@ describe('TimeInput', () => {
       expect(formatTime('5')).toBe('05');
       expect(formatTime(10)).toBe('10');
     });
+  });
+
+  it('should have a testId for resilient UI changes', () => {
+    renderTimeInput();
+
+    expect(screen.getByTestId('test-id-time-input')).toBeTruthy();
   });
 });

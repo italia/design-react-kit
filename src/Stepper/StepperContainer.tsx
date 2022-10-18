@@ -10,12 +10,14 @@ export interface StepperContainerProps extends HTMLAttributes<HTMLElement> {
   dark?: boolean;
   /** Abilita la navigazione per mobile */
   mobile?: boolean;
+  testId?: string;
 }
 
 export const StepperContainer: FC<StepperContainerProps> = ({
   tag = 'div',
   mobile,
   dark,
+  testId,
   className,
   ...attributes
 }) => {
@@ -26,5 +28,5 @@ export const StepperContainer: FC<StepperContainerProps> = ({
     { 'bg-dark': dark },
     { 'mobile-examples': mobile }
   );
-  return <Tag {...attributes} className={wrapperClass} />;
+  return <Tag {...attributes} className={wrapperClass} data-testid={testId} />;
 };

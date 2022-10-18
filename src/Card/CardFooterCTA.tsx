@@ -6,14 +6,16 @@ export interface CardFooterCTAProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente CardFooterCTA*/
   className?: string;
+  testId?: string;
 }
 
 export const CardFooterCTA: FC<CardFooterCTAProps> = ({
   className,
   tag = 'div',
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
   const classes = classNames(className, 'it-card-footer');
-  return <Tag className={classes} {...attributes} />;
+  return <Tag className={classes} {...attributes} data-testid={testId} />;
 };
