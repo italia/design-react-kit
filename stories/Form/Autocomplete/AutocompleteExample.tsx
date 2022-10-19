@@ -1,9 +1,9 @@
 import React from 'react';
-import { components, InputProps } from 'react-select';
+import { components, IndicatorProps, InputProps } from 'react-select';
 import './assets/css/autocomplete-styles.css';
 import { Icon } from '../../../src';
 
-export const DropdownIndicator = (props) => {
+export const DropdownIndicator = (props: IndicatorProps<any, boolean, any>) => {
   return (
     <components.DropdownIndicator {...props}>
       <span style={{ padding: '0px 5px' }} aria-hidden='true'>
