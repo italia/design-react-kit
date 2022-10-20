@@ -1,7 +1,7 @@
 import { Story } from '@storybook/react';
 import React, { useState } from 'react';
 
-import { Select } from '../../src';
+import { GroupTypeBase, Select } from '../../src';
 
 const defaultOptions = [
   { value: 'Value 1', label: 'Lorem ipsum dolor sit amet' },
@@ -43,11 +43,19 @@ export default {
   title: 'Componenti/Form/Select'
 };
 
-export const SelectClassica = () => {
-  const [, setValue] = useState({ value: '', label: '' });
+type Value = {
+  label: string;
+  value: string;
+};
 
-  // @ts-ignore: ignore types for sake of brevity
+export const SelectClassica = () => {
+  const [, setValue] = useState({
+    value: '',
+    label: ''
+  });
+
   const handleChange = (selectedOption) => setValue(selectedOption);
+
   return (
     <div className='bootstrap-select-wrapper'>
       <label htmlFor='selectExampleClassic'>Etichetta di esempio</label>
@@ -64,11 +72,40 @@ export const SelectClassica = () => {
 
 SelectClassica.storyName = 'Select classica';
 
-export const SelectDisabilitata = () => {
-  const [, setValue] = useState({ value: '', label: '' });
+export const SelectClassicaTS = () => {
+  type MyCustomValueType = {
+    label: string;
+    value: string;
+  };
 
-  // @ts-ignore: ignore types for sake of brevity
+  const [, setValue] = useState<MyCustomValueType | null>({
+    value: '',
+    label: ''
+  });
+
+  return (
+    <div className='bootstrap-select-wrapper'>
+      <label htmlFor='selectExampleClassic'>Etichetta di esempio</label>
+      <Select<MyCustomValueType>
+        id='selectExampleClassic'
+        onChange={(selectedOption) => setValue(selectedOption)}
+        options={defaultOptions}
+        placeholder='Scegli una opzione'
+        aria-label='Scegli una opzione'
+      />
+    </div>
+  );
+};
+
+SelectClassicaTS.storyName = 'Select classica (Typescript)';
+
+export const SelectDisabilitata = () => {
+  const [, setValue] = useState<Value | null>({
+    value: '',
+    label: ''
+  });
   const handleChange = (selectedOption) => setValue(selectedOption);
+
   return (
     <div className='bootstrap-select-wrapper'>
       <label htmlFor='selectExampleDisabled'>Etichetta di esempio</label>
@@ -89,7 +126,6 @@ SelectDisabilitata.storyName = 'Select disabilitata';
 export const SelectConReset = () => {
   const [, setValue] = useState({ value: '', label: '' });
 
-  // @ts-ignore: ignore types for sake of brevity
   const handleChange = (selectedOption) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
@@ -111,7 +147,6 @@ SelectConReset.storyName = 'Select con reset';
 export const SelectConRicerca = () => {
   const [, setValue] = useState({ value: '', label: '' });
 
-  // @ts-ignore: ignore types for sake of brevity
   const handleChange = (selectedOption) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
@@ -133,7 +168,6 @@ SelectConRicerca.storyName = 'Select con ricerca';
 export const _SelectMultipla = () => {
   const [, setValue] = useState({ value: '', label: '' });
 
-  // @ts-ignore: ignore types for sake of brevity
   const handleChange = (selectedOption) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
@@ -153,7 +187,6 @@ export const _SelectMultipla = () => {
 export const SelectConGruppi = () => {
   const [, setValue] = useState({ value: '', label: '' });
 
-  // @ts-ignore: ignore types for sake of brevity
   const handleChange = (selectedOption) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
@@ -170,6 +203,32 @@ export const SelectConGruppi = () => {
 };
 
 SelectConGruppi.storyName = 'Select con gruppi';
+
+export const SelectConGruppiTS = () => {
+  type MyCustomValueType = {
+    label: string;
+    value: string;
+  };
+
+  const [, setValue] = useState<Value | readonly Value[] | null>([
+    { value: '', label: '' }
+  ]);
+
+  return (
+    <div className='bootstrap-select-wrapper'>
+      <label htmlFor='selectExampleGroups'>Etichetta di esempio</label>
+      <Select<MyCustomValueType, true, GroupTypeBase<MyCustomValueType>>
+        id='selectExampleGroups'
+        onChange={(selectedOption) => setValue(selectedOption)}
+        options={groupedOptions}
+        placeholder='Scegli una opzione'
+        aria-label='Scegli una opzione'
+      />
+    </div>
+  );
+};
+
+SelectConGruppiTS.storyName = 'Select con gruppi (Typescript)';
 
 type SelectInterattivoProps = {
   search: boolean;
@@ -193,7 +252,6 @@ export const SelectInterattivo: Story<SelectInterattivoProps> = ({
     // @ts-expect-error adding types makes the example harder to read
     options = groupedOptions;
   }
-  // @ts-ignore: ignore types for sake of brevity
   const handleChange = (selectedOption) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>

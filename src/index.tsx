@@ -276,7 +276,9 @@ export type {
   SelectProps,
   SelectOptionType,
   ValueType,
-  ActionMeta
+  ActionMeta,
+  GroupTypeBase,
+  OptionTypeBase
 } from './Select/Select';
 export type {
   NotificationId,
