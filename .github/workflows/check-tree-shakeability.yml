@@ -58,11 +58,11 @@ jobs:
           rm $STDERR_F
           exit 0
       - name: comment PR
-        uses: unsplash/comment-on-pr@v1.3.1
+        uses: thollander/actions-comment-pull-request@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          msg: |
+          message: |
             **Check tree-shakeability** for ${{ github.sha }}: ${{ steps.agadoo.outputs.status == 'tree-shakeable' && ':deciduous_tree:' || ':x:' }} ${{ steps.agadoo.outputs.status }}
             <details>
               <summary>Agadoo stdout</summary>
@@ -80,8 +80,7 @@ jobs:
               ```
 
             </details>
-          check_for_duplicate_msg: false
-          delete_prev_regex_msg: ^\*\*Check tree-shakeability\*\*
+          comment_includes: ^\*\*Check tree-shakeability\*\*
       - name: Fail if cannot tree-shake
         if: ${{ steps.agadoo.outputs.status == 'not tree-shakeable' }}
         run: exit 1
