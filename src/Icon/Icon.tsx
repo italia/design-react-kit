@@ -142,7 +142,7 @@ export const Icon: FC<IconProps> = ({
     <IconComponent
       className={classes}
       role='img'
-      title={title !== '' ? title : undefined}
+      title={title}
       data-testid={testId}
       {...attributes}
     />
