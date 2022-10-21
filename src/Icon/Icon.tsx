@@ -59,13 +59,16 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
   /**
    * Il nome dell'icona da mostrare. Per una lista completa vedi:
    * <a href="https://italia.github.io/design-react-kit/?path=/story/componenti-icon--lista-icone" target="_blank">Lista icone</a>
-   * */
+   * In caso di un'immagine esterna l'URL da utilizzare.
+   **/
   icon: string;
-  alt?: string;
+  /** Il titolo da dare all'icona. Quando si utilizza un'immagine esterna viene utilizzato come attributo "alt". */
+  title?: string;
   /** Quando abilitato riduce la dimensione dell'icona all'interno del contenitore.  */
   padding?: boolean;
   /** Funzione chiamata al caricamento dell'icona */
   onIconLoad?: () => void;
+  /** Id da utilizzare in caso di testing */
   testId?: string;
 }
 
@@ -78,7 +81,7 @@ export const Icon: FC<IconProps> = ({
   color = '',
   size = '',
   icon = '',
-  alt = '',
+  title,
   className,
   padding = false,
   onIconLoad,
@@ -117,7 +120,7 @@ export const Icon: FC<IconProps> = ({
       <img
         src={icon}
         className={classes}
-        alt={alt}
+        alt={title}
         data-testid={testId}
         {...(attributes as ImgHTMLAttributes<HTMLImageElement>)}
       />
@@ -139,7 +142,7 @@ export const Icon: FC<IconProps> = ({
     <IconComponent
       className={classes}
       role='img'
-      title={alt !== '' ? alt : undefined}
+      title={title !== '' ? title : undefined}
       data-testid={testId}
       {...attributes}
     />
