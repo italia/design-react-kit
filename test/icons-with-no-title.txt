@@ -1,4 +1,4 @@
-it-close-circle.svg
+it-rss-square.svg
 it-rss.svg
 it-software.svg
 it-open-source.svg

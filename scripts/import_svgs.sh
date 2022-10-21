@@ -11,4 +11,4 @@ npx eslint src/Icon/assets/*.ts* --fix
 
 echo 'Reconfigure tests for new icons...'
 # Find out what SVGs have no title tag and print them into a txt file used for testing
-find node_modules/bootstrap-italia/src/svg -iname "*.svg" -print0 -exec grep -Li "title" {} + | xargs -L 1 basename > ./test/icons-with-no-title.txt
+find node_modules/bootstrap-italia/src/svg -iname "*.svg" -exec grep -Li "title" {} + | xargs -L 1 basename > ./test/icons-with-no-title.txt
