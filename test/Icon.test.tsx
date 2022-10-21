@@ -126,3 +126,14 @@ test('should render a title when passed', async () => {
     expect(getIconTitle(container, 'MyCustomTitle')).toBeTruthy();
   }
 });
+
+test('should render no title when passed empty string', async () => {
+  await preloadIcons(icons);
+  const { container, rerender } = render(<Icon icon={''} title={''} />);
+  for (const icon of icons) {
+    rerender(<Icon icon={icon} title={''} />);
+    expect(
+      within(container).queryByTitle((content) => content != null)
+    ).toBeFalsy();
+  }
+});
