@@ -2,7 +2,22 @@ import React from 'react';
 import { render, waitFor, within } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
-import { clearIconCache, Icon, preloadIcons } from '../src';
+import { clearIconCache, Icon, preloadIcons, icons } from '../src';
+import { readFile } from 'fs/promises';
+import { join } from 'path';
+
+async function getExceptionList() {
+  const content = await readFile(
+    join(__dirname, './', 'icons-with-no-title.txt'),
+    'utf8'
+  );
+  return new Set(
+    content
+      .split('\n')
+      .map((s) => s.replace('.svg', ''))
+      .filter(Boolean)
+  );
+}
 
 function getIcon(container: Element) {
   return container.firstChild;
@@ -31,7 +46,7 @@ test('Should pass all the given props to the icon', async () => {
 });
 
 test('Should pass the alt text to the icon', async () => {
-  const { container } = render(<Icon icon='foo-bar.jpg' alt='Alt Text' />);
+  const { container } = render(<Icon icon='foo-bar.jpg' title='Alt Text' />);
   expect(getIcon(container)).toHaveAttribute('alt', 'Alt Text');
   await waitFor(() => !isEmptyIcon(container));
 });
@@ -85,4 +100,29 @@ test('should have a testId for resilient UI changes', async () => {
   );
 
   await waitFor(() => expect(getByTestId('test-id-icon')).toBeTruthy());
+});
+
+test(`should have default title when no title is passed`, async () => {
+  const [, exceptionList] = await Promise.all([
+    preloadIcons(icons),
+    getExceptionList()
+  ]);
+  const { container, rerender } = render(<Icon icon={''} title={undefined} />);
+  for (const icon of icons) {
+    rerender(<Icon icon={icon} title={undefined} />);
+    if (!exceptionList.has(icon)) {
+      expect(
+        within(container).getByTitle((content) => content != null)
+      ).toBeTruthy();
+    }
+  }
+});
+
+test('should render a title when passed', async () => {
+  await preloadIcons(icons);
+  const { container, rerender } = render(<Icon icon={''} title={undefined} />);
+  for (const icon of icons) {
+    rerender(<Icon icon={icon} title={'MyCustomTitle'} />);
+    expect(getIconTitle(container, 'MyCustomTitle')).toBeTruthy();
+  }
 });
