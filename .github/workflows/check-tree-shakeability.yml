@@ -57,30 +57,6 @@ jobs:
           rm $STDOUT_F
           rm $STDERR_F
           exit 0
-      - name: comment PR
-        uses: thollander/actions-comment-pull-request@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          message: |
-            **Check tree-shakeability** for ${{ github.sha }}: ${{ steps.agadoo.outputs.status == 'tree-shakeable' && ':deciduous_tree:' || ':x:' }} ${{ steps.agadoo.outputs.status }}
-            <details>
-              <summary>Agadoo stdout</summary>
-
-              ```javascript
-              ${{ steps.agadoo.outputs.stdout }}
-              ```
-
-            </details>
-            <details>
-              <summary>Agadoo stderr</summary>
-
-              ```javascript
-              ${{ steps.agadoo.outputs.stderr }}
-              ```
-
-            </details>
-          comment_includes: ^\*\*Check tree-shakeability\*\*
       - name: Fail if cannot tree-shake
         if: ${{ steps.agadoo.outputs.status == 'not tree-shakeable' }}
         run: exit 1
