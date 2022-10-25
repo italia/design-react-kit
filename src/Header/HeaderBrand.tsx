@@ -57,7 +57,7 @@ export const HeaderBrand = ({
   return (
     <div className='it-brand-wrapper' data-testid={testId}>
       <a href={href}>
-        {iconName && <Icon icon={iconName} alt={iconAlt} />}
+        {iconName && <Icon icon={iconName} title={iconAlt} />}
         <div className='it-brand-text'>
           {React.Children.map(children, (child, i) => {
             if (

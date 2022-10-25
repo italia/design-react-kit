@@ -1,11 +1,29 @@
 import React from 'react';
-import { render, waitFor, screen } from '@testing-library/react';
+import { render, waitFor, within } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
-import { clearIconCache, Icon, preloadIcons } from '../src';
+import { clearIconCache, Icon, preloadIcons, icons } from '../src';
+import { readFile } from 'fs/promises';
+import { join } from 'path';
+
+async function getExceptionList() {
+  const content = await readFile(
+    join(__dirname, './', 'icons-with-no-title.txt'),
+    'utf8'
+  );
+  return new Set(
+    content
+      .split('\n')
+      .map((s) => s.replace('.svg', ''))
+      .filter(Boolean)
+  );
+}
 
 function getIcon(container: Element) {
   return container.firstChild;
+}
+function getIconTitle(container: HTMLElement, title: string) {
+  return within(container).getByText(title);
 }
 function isEmptyIcon(container: Element) {
   return (
@@ -28,7 +46,7 @@ test('Should pass all the given props to the icon', async () => {
 });
 
 test('Should pass the alt text to the icon', async () => {
-  const { container } = render(<Icon icon='foo-bar.jpg' alt='Alt Text' />);
+  const { container } = render(<Icon icon='foo-bar.jpg' title='Alt Text' />);
   expect(getIcon(container)).toHaveAttribute('alt', 'Alt Text');
   await waitFor(() => !isEmptyIcon(container));
 });
@@ -65,8 +83,57 @@ test('should clear the icon cache correctly', async () => {
   expect(clearIconCache('it-tool')).toEqual({ 'it-tool': undefined });
 });
 
-test('should have a testId for resilient UI changes', async () => {
-  render(<Icon icon='it-search' testId='test-id-icon' />);
+test('should replace the existing icon with another (already loaded) when requested - see #855', async () => {
+  await preloadIcons(['it-tool', 'it-search']);
+  const onLoad = jest.fn();
+  const { container, rerender } = render(
+    <Icon icon='it-tool' onIconLoad={onLoad} />
+  );
+  expect(getIconTitle(container, 'Tool')).toBeTruthy();
+  rerender(<Icon icon='it-search' onIconLoad={onLoad} />);
+  expect(getIconTitle(container, 'Search')).toBeTruthy();
+});
 
-  await waitFor(() => expect(screen.getByTestId('test-id-icon')).toBeTruthy());
+test('should have a testId for resilient UI changes', async () => {
+  const { getByTestId } = render(
+    <Icon icon='it-search' testId='test-id-icon' />
+  );
+
+  await waitFor(() => expect(getByTestId('test-id-icon')).toBeTruthy());
+});
+
+test(`should have default title when no title is passed`, async () => {
+  const [, exceptionList] = await Promise.all([
+    preloadIcons(icons),
+    getExceptionList()
+  ]);
+  const { container, rerender } = render(<Icon icon={''} title={undefined} />);
+  for (const icon of icons) {
+    rerender(<Icon icon={icon} title={undefined} />);
+    if (!exceptionList.has(icon)) {
+      expect(
+        within(container).getByTitle((content) => content != null)
+      ).toBeTruthy();
+    }
+  }
+});
+
+test('should render a title when passed', async () => {
+  await preloadIcons(icons);
+  const { container, rerender } = render(<Icon icon={''} title={undefined} />);
+  for (const icon of icons) {
+    rerender(<Icon icon={icon} title={'MyCustomTitle'} />);
+    expect(getIconTitle(container, 'MyCustomTitle')).toBeTruthy();
+  }
+});
+
+test('should render no title when passed empty string', async () => {
+  await preloadIcons(icons);
+  const { container, rerender } = render(<Icon icon={''} title={''} />);
+  for (const icon of icons) {
+    rerender(<Icon icon={icon} title={''} />);
+    expect(
+      within(container).queryByTitle((content) => content != null)
+    ).toBeFalsy();
+  }
 });
