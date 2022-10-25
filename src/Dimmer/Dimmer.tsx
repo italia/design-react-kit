@@ -16,6 +16,7 @@ export interface DimmerProps extends HTMLAttributes<HTMLElement> {
    * passare `true`.
    * */
   wrapperClassName?: string | true;
+  testId?: string;
 }
 
 export const Dimmer: FC<DimmerProps> = ({
@@ -23,6 +24,7 @@ export const Dimmer: FC<DimmerProps> = ({
   color,
   className,
   wrapperClassName,
+  testId,
   ...attributes
 }) => {
   const { children, ...rest } = attributes;
@@ -41,7 +43,12 @@ export const Dimmer: FC<DimmerProps> = ({
   );
 
   return (
-    <div className={classes} {...rest} style={{ display: 'flex' }}>
+    <div
+      className={classes}
+      {...rest}
+      style={{ display: 'flex' }}
+      data-testid={testId}
+    >
       <div className={innerClasses} {...rest}>
         {dimmerIcon}
         {children}

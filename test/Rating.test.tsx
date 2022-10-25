@@ -228,3 +228,15 @@ describe('Rating', () => {
     });
   });
 });
+
+test('should have a testId for resilient UI changes', () => {
+  render(
+    <Rating
+      inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']}
+      name='rating'
+      testId='test-id-rating'
+    />
+  );
+
+  expect(screen.getByTestId('test-id-rating')).toBeTruthy();
+});

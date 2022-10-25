@@ -59,26 +59,38 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
   /**
    * Il nome dell'icona da mostrare. Per una lista completa vedi:
    * <a href="https://italia.github.io/design-react-kit/?path=/story/componenti-icon--lista-icone" target="_blank">Lista icone</a>
-   * */
+   * In caso di un'immagine esterna l'URL da utilizzare.
+   **/
   icon: string;
+  /** Il titolo da dare all'icona. Quando si utilizza un'immagine esterna viene utilizzato come attributo "alt". */
+  title?: string;
   /** Quando abilitato riduce la dimensione dell'icona all'interno del contenitore.  */
   padding?: boolean;
   /** Funzione chiamata al caricamento dell'icona */
   onIconLoad?: () => void;
+  /** Id da utilizzare in caso di testing */
+  testId?: string;
+}
+
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
 }
 
 export const Icon: FC<IconProps> = ({
   color = '',
   size = '',
   icon = '',
+  title,
   className,
   padding = false,
   onIconLoad,
+  testId,
   ...attributes
 }) => {
-  const [IconComponent, setCurrentIcon] = useState<FC<SVGProps<SVGSVGElement>>>(
-    iconsCache[icon]
-  );
+  const [IconComponent, setCurrentIcon] = useState<
+    FC<SVGProps<SVGSVGElement> & SVGRProps>
+  >(iconsCache[icon]);
   const classes = classNames('icon', className, {
     [`icon-${color}`]: color,
     [`icon-${size}`]: size,
@@ -89,31 +101,50 @@ export const Icon: FC<IconProps> = ({
     if (isBundledIcon(icon) && !iconsCache[icon]) {
       loadIcon(icon).then(({ component }) => {
         iconsCache[icon] = ((() => component) as unknown) as FC<
-          SVGProps<SVGSVGElement>
+          SVGProps<SVGSVGElement> & SVGRProps
         >;
         setCurrentIcon(iconsCache[icon]);
         onIconLoad?.();
       });
     } else {
+      if (IconComponent !== iconsCache[icon]) {
+        setCurrentIcon(iconsCache[icon]);
+      }
       onIconLoad?.();
     }
-  }, [icon, onIconLoad]);
+  }, [IconComponent, icon, onIconLoad]);
 
   if (!isBundledIcon(icon)) {
     // assume it's an image and let the browser do its job
     return (
-      // eslint-disable-next-line jsx-a11y/alt-text
       <img
         src={icon}
         className={classes}
+        alt={title}
+        data-testid={testId}
         {...(attributes as ImgHTMLAttributes<HTMLImageElement>)}
       />
     );
   }
 
   if (!IconComponent) {
-    return <EmptyIcon className={classes} role='img' {...attributes} />;
+    return (
+      <EmptyIcon
+        className={classes}
+        role='img'
+        {...attributes}
+        data-testid={testId}
+      />
+    );
   }
 
-  return <IconComponent className={classes} role='img' {...attributes} />;
+  return (
+    <IconComponent
+      className={classes}
+      role='img'
+      title={title}
+      data-testid={testId}
+      {...attributes}
+    />
+  );
 };

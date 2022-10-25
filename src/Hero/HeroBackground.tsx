@@ -7,14 +7,16 @@ export interface HeroBackgroundProps extends HTMLAttributes<HTMLImageElement> {
   src: string;
   /** Il titolo dell'immagine */
   title?: string;
+  testId?: string;
 }
 
 export const HeroBackground: FC<HeroBackgroundProps> = ({
   alt,
+  testId,
   ...attributes
 }) => {
   return (
-    <div className='img-responsive-wrapper'>
+    <div className='img-responsive-wrapper' data-testid={testId}>
       <div className='img-responsive'>
         <div className='img-wrapper'>
           <img {...attributes} alt={alt} />

@@ -9,6 +9,7 @@ export default {
 
 type EsempioInterattivoProps = {
   icon: string;
+  title: string;
   size: '' | 'xl' | 'lg' | 'sm' | 'xs';
   padding: boolean;
   color: string;
@@ -17,6 +18,7 @@ type EsempioInterattivoProps = {
 
 export const EsempioInterattivo: Story<EsempioInterattivoProps> = ({
   icon,
+  title,
   size,
   padding,
   background,
@@ -26,6 +28,7 @@ export const EsempioInterattivo: Story<EsempioInterattivoProps> = ({
     <Icon
       icon={icon}
       size={size}
+      title={title}
       padding={padding}
       color={color}
       className={background}
@@ -36,6 +39,7 @@ export const EsempioInterattivo: Story<EsempioInterattivoProps> = ({
 EsempioInterattivo.storyName = 'Esempio interattivo';
 EsempioInterattivo.args = {
   icon: 'it-tool',
+  title: 'Alt Text',
   size: '',
   padding: false,
   color: '',
@@ -46,6 +50,11 @@ EsempioInterattivo.argTypes = {
     control: {
       type: 'select',
       options: icons
+    }
+  },
+  title: {
+    control: {
+      type: 'text'
     }
   },
   size: {
@@ -173,14 +182,19 @@ ListaIcone.storyName = 'Lista icone';
 export const EsempioLoghiEsterni = () => {
   return (
     <div style={{ lineHeight: '4em' }}>
-      <Icon icon='https://upload.wikimedia.org/wikipedia/it/f/f5/Palermo-Stemma_uff.png' />
+      <Icon
+        icon='https://upload.wikimedia.org/wikipedia/it/f/f5/Palermo-Stemma_uff.png'
+        title='Stemma Palermo'
+      />
       <Icon
         icon='https://dati.comune.roma.it/catalog/img/Roma-Stemma.png'
         size='lg'
+        title='Stemma Roma'
       />
       <Icon
         icon='https://upload.wikimedia.org/wikipedia/commons/9/93/CoA_Citt%C3%A0_di_Milano.svg'
         size='xl'
+        title='Stemma Milano'
       />
     </div>
   );

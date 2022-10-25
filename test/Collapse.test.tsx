@@ -23,4 +23,11 @@ describe('Collapse component', () => {
 
     expect(container.getElementsByClassName('menu-wrapper').length).toBe(1);
   });
+
+  it('should have a testId for resilient UI changes', () => {
+    const collapse = render(
+      <Collapse testId={'test-id-collapse'}>Content</Collapse>
+    );
+    expect(collapse.getByTestId('test-id-collapse')).toBeTruthy();
+  });
 });

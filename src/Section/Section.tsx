@@ -30,11 +30,13 @@ export interface SectionProps extends HTMLAttributes<HTMLElement> {
    * @deprecated. Utilizzare `color="muted"`
    */
   muted?: boolean;
+  testId?: string;
 }
 
 export const Section: FC<SectionProps> = ({
   color,
   image,
+  testId,
   wrapperClassName,
   className,
   children,
@@ -78,6 +80,7 @@ export const Section: FC<SectionProps> = ({
     <div
       className={finalWrapperClassName}
       style={styleClass.backgroundImageClass}
+      data-testid={testId}
       {...rest}
     >
       <div className={innerClasses}>{children}</div>

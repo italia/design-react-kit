@@ -6,12 +6,14 @@ export interface ForwardProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   className?: string;
   /** Riferimento al nodo a cui scorrere quando premuto */
   scrollToRef: MutableRefObject<Element | null>;
+  testId?: string;
 }
 
 export const Forward: FC<ForwardProps> = ({
   className,
   scrollToRef,
   children,
+  testId,
   ...attributes
 }) => {
   const classes = classNames(className, 'forward');
@@ -24,6 +26,7 @@ export const Forward: FC<ForwardProps> = ({
           block: 'start'
         })
       }
+      data-testid={testId}
       {...attributes}
     >
       {children}

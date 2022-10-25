@@ -21,6 +21,7 @@ export interface LinkListProps extends HTMLAttributes<HTMLUListElement> {
   avatar?: boolean;
   /** Quando attivo rimuove il componente contenitore della ListList. Utile per alcuni tipi di liste annidate. */
   noWrapper?: boolean;
+  testId?: string;
 }
 
 export const LinkList: FC<LinkListProps> = ({
@@ -32,6 +33,7 @@ export const LinkList: FC<LinkListProps> = ({
   sublist,
   avatar,
   noWrapper,
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
@@ -45,7 +47,7 @@ export const LinkList: FC<LinkListProps> = ({
   });
 
   if (noWrapper) {
-    return <ul {...attributes} className={classes} />;
+    return <ul {...attributes} className={classes} data-testid={testId} />;
   }
 
   if (sublist) {
@@ -57,7 +59,7 @@ export const LinkList: FC<LinkListProps> = ({
     );
   }
   return (
-    <Tag className={wrapperClasses}>
+    <Tag className={wrapperClasses} data-testid={testId}>
       {header}
       <ul {...attributes} className={classes} />
     </Tag>

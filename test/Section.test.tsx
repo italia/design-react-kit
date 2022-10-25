@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
 import { Section } from '../src';
@@ -43,6 +43,12 @@ test('Should not set backgroundImage when the image prop is undefined', () => {
   expect(container.firstChild).not.toHaveStyle(
     'background-image: url("undefined")'
   );
+});
+
+test('should have a testId for resilient UI changes', () => {
+  render(<Section testId='test-id-section' />);
+
+  expect(screen.getByTestId('test-id-section')).toBeTruthy();
 });
 
 // Write more proper tests here

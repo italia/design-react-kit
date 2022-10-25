@@ -8,14 +8,16 @@ export interface StepperDotsProps extends HTMLAttributes<HTMLElement> {
   className?: string;
   /** Abilita il tema scuro per il componente StepperDots */
   dark?: boolean;
+  testId?: string;
 }
 
 export const StepperDots: FC<StepperDotsProps> = ({
   tag = 'ul',
   className,
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
   const wrapperClass = classNames('steppers-dots', className);
-  return <Tag {...attributes} className={wrapperClass} />;
+  return <Tag {...attributes} className={wrapperClass} data-testid={testId} />;
 };

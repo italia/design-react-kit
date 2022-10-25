@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { fireEvent, render } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { ToolbarItem, preloadIcons, Toolbar } from '../src';
 
@@ -63,6 +63,17 @@ describe('ToolbarItem component', () => {
     expect(queryByText('elemento disabilitato')).toBeInTheDocument();
   });
 
+  it('should have a testId for resilient UI changes', () => {
+    render(
+      <ToolbarItem
+        tag={'button'}
+        iconName={'it-comment'}
+        testId='test-id-toolbar-item'
+      />
+    );
+
+    expect(screen.getByTestId('test-id-toolbar-item')).toBeTruthy();
+  });
   it('should render a badge on the item', () => {
     const { container, queryByText } = renderWithSize(
       'large',

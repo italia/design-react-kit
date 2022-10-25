@@ -21,6 +21,7 @@ export interface TimelinePinProps extends HTMLAttributes<HTMLElement> {
   nowText?: string;
   /** Quando abilitato indica che l'evento TimelinePin è collocato nel passato (blu scuro) */
   past?: boolean;
+  testId?: string;
 }
 
 export const TimelinePin: FC<TimelinePinProps> = ({
@@ -30,6 +31,7 @@ export const TimelinePin: FC<TimelinePinProps> = ({
   past,
   now,
   nowText,
+  testId,
   className,
   ...attributes
 }) => {
@@ -55,7 +57,7 @@ export const TimelinePin: FC<TimelinePinProps> = ({
   );
 
   return (
-    <div className={classes}>
+    <div className={classes} data-testid={testId}>
       {pinTextNow}
       <div className={innerClasses} {...rest}>
         {pinIcon}

@@ -37,6 +37,7 @@ export interface RatingProps extends Omit<InputProps, UnusedProps> {
   readOnly?: boolean;
   /** Il valore corrente del componente: deve essere compreso tra 1 e 5 */
   value?: 1 | 2 | 3 | 4 | 5 | number;
+  testId?: string;
 }
 
 export const isCustomLegendObject = (
@@ -53,6 +54,7 @@ export const Rating: FC<RatingProps> = ({
   readOnly,
   value,
   wrapperClassName,
+  testId,
   labelTemplate = (value: 1 | 2 | 3 | 4 | 5) => `Valuta ${value} stelle su 5`,
   onChangeRating = noop,
   ...attributes
@@ -98,6 +100,7 @@ export const Rating: FC<RatingProps> = ({
       cssModule={{ 'form-group': 'rating' }}
       tag='fieldset'
       className={wrapperClasses}
+      data-testid={testId}
       {...attributes}
     >
       {legend && legendContent}

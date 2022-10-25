@@ -35,6 +35,7 @@ type TownLabels = {
   townName: string;
   townTagLine: string;
   logo: string;
+  logoAlt: string;
 };
 
 type State = { collapsed: boolean };
@@ -107,12 +108,13 @@ export const CenterHeader: FC<TownLabels & Theme> = ({
   townName,
   townTagLine,
   theme,
-  logo
+  logo,
+  logoAlt = ''
 }) => {
   return (
     <Header type='center' theme={theme}>
       <HeaderContent>
-        <HeaderBrand iconName={logo}>
+        <HeaderBrand iconName={logo} iconAlt={logoAlt}>
           <h2>{townName}</h2>
           <h3>{townTagLine}</h3>
         </HeaderBrand>

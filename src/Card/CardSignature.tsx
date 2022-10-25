@@ -6,14 +6,16 @@ export interface CardSignatureProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente CardSignature*/
   className?: string;
+  testId?: string;
 }
 
 export const CardSignature: FC<CardSignatureProps> = ({
   className,
   tag = 'span',
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
   const classes = classNames(className, 'card-signature');
-  return <Tag className={classes} {...attributes} />;
+  return <Tag className={classes} {...attributes} data-testid={testId} />;
 };

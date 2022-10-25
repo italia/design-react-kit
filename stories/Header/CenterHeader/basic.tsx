@@ -16,7 +16,7 @@ const CenterHeader = ({ type, theme, isSmall }: HeaderCenterProps) => {
   return (
     <Header type={type} theme={theme} small={isSmall}>
       <HeaderContent>
-        <HeaderBrand iconName='it-code-circle'>
+        <HeaderBrand iconName='it-code-circle' iconAlt='it code circle icon'>
           <h2>Lorem Ipsum Lorem Ipsum</h2>
           <h3>Inserire qui la tag line</h3>
         </HeaderBrand>

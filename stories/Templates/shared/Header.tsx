@@ -143,7 +143,7 @@ export const CenterHeader: FC<TownLabels & Theme> = ({
   return (
     <Header type='center' theme={theme}>
       <HeaderContent>
-        <HeaderBrand iconName='it-code-circle'>
+        <HeaderBrand iconName='it-code-circle' iconAlt='it code circle icon'>
           <h2>{townName}</h2>
           <h3>{townTagLine}</h3>
         </HeaderBrand>

@@ -14,6 +14,7 @@ export interface PagerProps extends HTMLAttributes<HTMLElement> {
   listClassName?: string;
   /** Utilizzare questo attributo per indicare il numero totale di pagine */
   total?: { ariaLabel: string; label: string };
+  testId?: string;
 }
 
 export const Pager: FC<PagerProps> = ({
@@ -23,6 +24,7 @@ export const Pager: FC<PagerProps> = ({
   listClassName,
   children,
   total,
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
@@ -35,7 +37,7 @@ export const Pager: FC<PagerProps> = ({
     <span className='sr-only'>{ariaLabel}</span>
   ) : null;
   return (
-    <Tag className={classes} {...attributes}>
+    <Tag className={classes} {...attributes} data-testid={testId}>
       <ListTag className={listClasses}>{children}</ListTag>
       {total ? (
         <p>

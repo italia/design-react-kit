@@ -70,3 +70,9 @@ describe('Hero component', () => {
     });
   });
 });
+
+it('should have a testId for resilient UI changes', () => {
+  render(<Hero testId='test-id-hero'>Content</Hero>);
+
+  expect(screen.getByTestId('test-id-hero')).toBeTruthy();
+});
