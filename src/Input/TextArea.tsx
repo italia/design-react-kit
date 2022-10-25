@@ -29,6 +29,7 @@ export interface TextAreaProps
   wrapperClassName?: string;
   /** Classi aggiuntive da usare per il componente TextArea */
   className?: string;
+  testId?: string;
 }
 
 export const TextArea = ({
@@ -44,6 +45,7 @@ export const TextArea = ({
   wrapperClassName: originalWrapperClass,
   valid,
   invalid,
+  testId,
   ...attributes
 }: TextAreaProps) => {
   const {
@@ -115,6 +117,7 @@ export const TextArea = ({
           {...sharedAttributes}
           className={inputClasses}
           placeholder={placeholder}
+          data-testid={testId}
         />
       </InputContainer>
     );
@@ -129,6 +132,7 @@ export const TextArea = ({
           {...sharedAttributes}
           className={inputClasses}
           readOnly
+          data-testid={testId}
         />
       </InputContainer>
     );
@@ -141,6 +145,7 @@ export const TextArea = ({
           {...extraAttributes}
           {...sharedAttributes}
           className={inputClasses}
+          data-testid={testId}
         />
       </InputContainer>
     );
@@ -153,6 +158,7 @@ export const TextArea = ({
       className={inputClasses}
       {...sharedAttributes}
       ref={innerRef}
+      data-testid={testId}
     />
   );
 };

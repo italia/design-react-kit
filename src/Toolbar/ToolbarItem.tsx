@@ -32,6 +32,7 @@ export interface ToolbarItemProps extends HTMLAttributes<HTMLElement> {
   label?: string;
   /** Il nome dell'icona da utilizzare */
   iconName: string;
+  testId?: string;
   /**
    * Un testo completo da mostrare per Toolbar di grandezza media e piccola con badge (ad esempio: "ci sono 42 nuovi documenti da esaminare")
    * @deprecated
@@ -119,6 +120,7 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
   label,
   tag = 'a',
   disabled,
+  testId,
   srText,
   dropdown,
   dropdownProps,
@@ -185,6 +187,7 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
       <Tag
         href={url || '#'}
         className={activeClass}
+        data-testid={testId}
         {...attributes}
         {...ariaAttributes}
         onClick={onClick}

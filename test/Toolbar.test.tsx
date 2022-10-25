@@ -74,4 +74,14 @@ describe('Toolbar component', () => {
     expect(container.querySelector('.toolbar-label')).not.toBeInTheDocument();
     expect(queryByText('some-label')).toBeInTheDocument();
   });
+
+  it('should have a testId for resilient UI changes', () => {
+    render(
+      <Toolbar className='toolbar-medium' testId='test-id-toolbar'>
+        Content
+      </Toolbar>
+    );
+
+    expect(screen.getByTestId('test-id-toolbar')).toBeTruthy();
+  });
 });

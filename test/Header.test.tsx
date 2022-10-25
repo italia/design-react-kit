@@ -19,3 +19,8 @@ test('Should respect the theme passed', () => {
   rerender(<Header type='center' theme='dark' />);
   expect(container.firstChild).toHaveClass('theme-dark');
 });
+
+it('should have a testId for resilient UI changes', () => {
+  const header = render(<Header type='center' testId={'test-id-header'} />);
+  expect(header.getByTestId('test-id-header')).toBeTruthy();
+});

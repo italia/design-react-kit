@@ -1,6 +1,6 @@
 const path = require('path');
 const url = require('@rollup/plugin-url');
-const svgr = require('@svgr/rollup').default;
+const svgr = require('@svgr/rollup');
 module.exports = {
   rollup(config, options) {
     const { output, plugins, ...restConfig } = config;

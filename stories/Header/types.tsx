@@ -20,6 +20,7 @@ export type HeaderCompleteProps = ThemeType & {
   slimHeaderType: string;
   sticky: boolean;
   iconName: string;
+  iconAlt: string;
 };
 
 export type HeaderSlimLightProps = HeaderSlimProps & {

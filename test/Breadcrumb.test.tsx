@@ -23,4 +23,10 @@ describe('Breadcrumb component', () => {
 
     expect(container.getElementsByClassName('dark').length).toBe(1);
   });
+
+  it('should have a testId for resilient UI changes', () => {
+    render(<Breadcrumb testId='breadcrumb-test-id'>Content</Breadcrumb>);
+
+    expect(screen.getByTestId('breadcrumb-test-id')).toBeTruthy();
+  });
 });

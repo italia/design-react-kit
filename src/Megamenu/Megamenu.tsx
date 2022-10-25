@@ -10,12 +10,14 @@ export interface MegamenuProps extends NavbarProps {
   brand?: NavbarBrand;
   /** Classi aggiuntive da usare per il componente Nav */
   className?: string;
+  testId?: string;
 }
 
 export const Megamenu: FC<MegamenuProps> = ({
   brand,
   className,
   children,
+  testId,
   ...attributes
 }) => {
   const [openNav, setOpenNav] = useState(false);
@@ -24,7 +26,7 @@ export const Megamenu: FC<MegamenuProps> = ({
   };
   const classes = classNames(className, 'has-megamenu');
   return (
-    <Navbar className={classes} {...attributes}>
+    <Navbar className={classes} {...attributes} data-testid={testId}>
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
         <Icon icon='it-list' size='sm' />
       </NavbarToggler>

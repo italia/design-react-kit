@@ -79,3 +79,9 @@ describe('MegamenuHighlightColumn component', () => {
     );
   });
 });
+
+test('should have a testId for resilient UI changes', () => {
+  render(<Megamenu testId='test-id-megamenu'>Content</Megamenu>);
+
+  expect(screen.getByTestId('test-id-megamenu')).toBeTruthy();
+});

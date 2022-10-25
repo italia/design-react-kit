@@ -8,17 +8,19 @@ export interface AvatarPresenceProps extends HTMLAttributes<HTMLElement> {
   className?: string;
   /** Utilizzare questo attributo per indicare il tipo di presenza dell'utente. */
   presence: 'active' | 'busy' | 'hidden' | string;
+  testId?: string;
 }
 
 export const AvatarPresence: FC<AvatarPresenceProps> = ({
   className,
   tag = 'div',
   presence,
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
   const typeClass = classNames('avatar-presence', {
     presence
   });
-  return <Tag {...attributes} className={typeClass} />;
+  return <Tag {...attributes} className={typeClass} data-testid={testId} />;
 };

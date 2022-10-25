@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
 import { TextArea } from '../src';
@@ -31,4 +31,10 @@ test('should make the textarea readOnly', () => {
   if (textarea) {
     expect(textarea).toHaveAttribute('readOnly');
   }
+});
+
+test('should have a testId for resilient UI changes', () => {
+  render(<TextArea testId='test-id-text-area' />);
+
+  expect(screen.getByTestId('test-id-text-area')).toBeTruthy();
 });

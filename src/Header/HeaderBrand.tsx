@@ -18,17 +18,22 @@ export interface HeaderBrandProps
   href?: string;
   /** Icona da utilizzare nel componente. Utilizzata unicamente quando l'Header è di tipo Center.  */
   iconName?: string;
+  /** Alt text da utilizzare nell'icona. Utilizzata unicamente quando l'Header è di tipo Center.  */
+  iconAlt?: string;
   /** Elementi React da renderizzare al proprio interno. */
   children: ReactChild | ReactChild[];
+  testId?: string;
 }
 
 export const HeaderBrand = ({
   className,
   href,
   iconName,
+  iconAlt,
   children,
   tag = 'a',
   responsive = false,
+  testId,
   ...attributes
 }: HeaderBrandProps) => {
   const type = useHeaderContext();
@@ -41,6 +46,7 @@ export const HeaderBrand = ({
       <NavbarBrand
         className={classes}
         href={href}
+        data-testid={testId}
         {...attributes}
         {...defaultAttributes}
       >
@@ -49,9 +55,9 @@ export const HeaderBrand = ({
     );
   }
   return (
-    <div className='it-brand-wrapper'>
+    <div className='it-brand-wrapper' data-testid={testId}>
       <a href={href}>
-        {iconName && <Icon icon={iconName} />}
+        {iconName && <Icon icon={iconName} title={iconAlt} />}
         <div className='it-brand-text'>
           {React.Children.map(children, (child, i) => {
             if (

@@ -12,6 +12,7 @@ export interface HeaderSearchProps extends HTMLAttributes<HTMLElement> {
   iconName: string;
   /** Indirizzo di indirizzamento al click dell'icona */
   href?: string;
+  testId?: string;
 }
 
 export const HeaderSearch: FC<HeaderSearchProps> = ({
@@ -19,11 +20,12 @@ export const HeaderSearch: FC<HeaderSearchProps> = ({
   label,
   href,
   iconName = 'it-search',
+  testId,
   ...attributes
 }) => {
   const classes = classNames('it-search-wrapper', className);
   return (
-    <div className={classes} {...attributes}>
+    <div className={classes} {...attributes} data-testid={testId}>
       {label && <span className='d-none d-md-block'>{label}</span>}
       <a className='search-link rounded-icon' aria-label={label} href={href}>
         <Icon icon={iconName} />

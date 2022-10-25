@@ -12,6 +12,7 @@ export interface HeroProps extends HTMLAttributes<HTMLElement> {
   overlay?: 'dark' | 'primary' | 'filter';
   /** Aggiunge margine negativo in fondo al componente Hero per creare una sovrapposizione con il contenuto seguente. */
   overlap?: boolean;
+  testId?: string;
 }
 
 export const Hero: FC<HeroProps> = ({
@@ -21,6 +22,7 @@ export const Hero: FC<HeroProps> = ({
   overlay,
   overlap,
   className,
+  testId,
   ...attributes
 }) => {
   const classes = classname('it-hero-wrapper', className, {
@@ -30,5 +32,5 @@ export const Hero: FC<HeroProps> = ({
     'it-text-centered': centered,
     'it-bottom-overlapping-content': overlap
   });
-  return <Tag className={classes} {...attributes} />;
+  return <Tag className={classes} {...attributes} data-testid={testId} />;
 };

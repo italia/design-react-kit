@@ -8,6 +8,7 @@ export interface CardTagsHeaderProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente CardTagsHeader */
   className?: string;
+  testId?: string;
 }
 
 export const CardTagsHeader: FC<CardTagsHeaderProps> = ({
@@ -15,12 +16,13 @@ export const CardTagsHeader: FC<CardTagsHeaderProps> = ({
   children,
   className,
   tag = 'div',
+  testId,
   ...attributes
 }) => {
   const Tag = tag;
   const classes = classNames('head-tags', className);
   return (
-    <Tag className={classes} {...attributes}>
+    <Tag className={classes} {...attributes} data-testid={testId}>
       {children}
       {date && <span className='data'>{date}</span>}
     </Tag>

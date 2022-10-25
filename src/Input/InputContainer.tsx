@@ -8,11 +8,13 @@ export interface InputContainerProps extends HTMLAttributes<HTMLElement> {
   infoText: string | undefined;
   id: string | undefined;
   infoId: string | undefined;
+  testId?: string;
 }
 
 export const InputContainer: FC<InputContainerProps> = ({
   id,
   infoId,
+  testId,
   activeClass,
   label,
   infoTextClass,
@@ -21,7 +23,7 @@ export const InputContainer: FC<InputContainerProps> = ({
   children
 }) => {
   return (
-    <div className={wrapperClass}>
+    <div className={wrapperClass} data-testid={testId}>
       {children}
       <label htmlFor={id} className={activeClass}>
         {label}

@@ -89,6 +89,7 @@ export interface TimeInputProps extends Omit<InputProps, UnusedProps> {
   decreaseHoursLabel?: string;
   /** Etichetta del bottone per diminuire i minuti -  non visibile a schermo */
   decreaseMinutesLabel?: string;
+  testId?: string;
 }
 
 export const TimeInput = ({
@@ -107,6 +108,7 @@ export const TimeInput = ({
   increaseMinutesLabel,
   decreaseHoursLabel,
   decreaseMinutesLabel,
+  testId,
   ...attributes
 }: TimeInputProps) => {
   const [initialHours, initialMinutes] = value.split(':');
@@ -120,6 +122,7 @@ export const TimeInput = ({
 
   const button = (
     <button
+      type='button'
       className='btn-time'
       onClick={() => {
         setIsOpen(!isOpen);
@@ -174,6 +177,7 @@ export const TimeInput = ({
       className={classNames('it-timepicker-wrapper', {
         'theme-dark': dark
       })}
+      data-testid={testId}
     >
       <section className='time-spinner'>
         <div className='error_container' role='alert' aria-atomic='true'></div>
@@ -242,6 +246,7 @@ export const TimeInput = ({
             />
             <div className='button-wrapper'>
               <button
+                type='button'
                 className='button-hour btnHourUp'
                 aria-label={increaseHoursLabel}
                 aria-hidden='true'
@@ -251,6 +256,7 @@ export const TimeInput = ({
                 <span className='icon-up'></span>
               </button>
               <button
+                type='button'
                 className='button-hour btnHourDown'
                 aria-label={decreaseHoursLabel}
                 aria-hidden='true'
@@ -278,6 +284,7 @@ export const TimeInput = ({
             />
             <div className='button-wrapper'>
               <button
+                type='button'
                 className='btnMinUp button-minute'
                 aria-label={increaseMinutesLabel}
                 aria-hidden='true'
@@ -287,6 +294,7 @@ export const TimeInput = ({
                 <span className='icon-up'></span>
               </button>
               <button
+                type='button'
                 className='btnMinDown button-minute'
                 aria-label={decreaseMinutesLabel}
                 aria-hidden='true'
