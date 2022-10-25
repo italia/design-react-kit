@@ -1,0 +1,6 @@
+it-rss-square.svg
+it-rss.svg
+it-software.svg
+it-open-source.svg
+it-piattaforme.svg
+it-telegram.svg

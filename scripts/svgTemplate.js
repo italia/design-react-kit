@@ -1,14 +1,8 @@
 function defaultTemplate(
-  { template },
-  opts,
-  { imports, componentName, props, jsx, interfaces }
+  { imports, componentName, props, jsx, interfaces },
+  { tpl }
 ) {
-  const plugins = ['jsx'];
-  if (opts.typescript) {
-    plugins.push('typescript');
-  }
-  const typeScriptTpl = template.smart({ plugins });
-  return typeScriptTpl.ast`${imports}
+  return tpl`${imports}
     ${interfaces}
   export const component = (${props}) => {
     return ${jsx};
