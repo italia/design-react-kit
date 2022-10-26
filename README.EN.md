@@ -6,6 +6,8 @@
 
 *Read this in other languages: [Italiano](README.md).*
 
+**Important**: this kit has been designed to work with Bootstrap Italia v.1. There's no kit currently available for Bootstrap Italia v.2.
+
 ## Intro
 
 **Design React kit** is a set of React components that implements [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) and [Design UI Kit](https://github.com/italia/design-ui-kit) styling, as [shown on InVision](https://invis.io/TWMUZS6VFP5).
