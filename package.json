@@ -108,8 +108,8 @@
     "browserslist-config-design-italia": "^1.0.0",
     "chromatic": "^6.3.4",
     "circular-dependency-plugin": "^5.2.2",
-    "eslint-plugin-mdx": "^1.13.0",
-    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-mdx": "1.17.1",
+    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26",
@@ -157,5 +157,11 @@
       "node",
       "mdx"
     ]
+  },
+  "resolutions": {
+    "**/tsdx/jest": "27.5.1",
+    "**/tsdx/ts-jest": "27.1.5",
+    "**/tsdx/eslint": "^7.32.0",
+    "**/tsdx/prettier": "^2.7.1"
   }
 }

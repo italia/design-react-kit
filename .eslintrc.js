@@ -5,12 +5,15 @@ module.exports = {
     "plugin:prettier/recommended",
   ],
   "overrides": [
-      {
-        "files": ['*.mdx'],
-        "extends": 'plugin:mdx/recommended',
-        "settings": {
-          "mdx/code-blocks": false,
-      }
+    {
+      "files": ['*.mdx'],
+      "extends": 'plugin:mdx/recommended',
+      "settings": {
+        "mdx/code-blocks": false,
+      },
+      "parserOptions": {
+        "ecmaVersion": 12,
+      },
     }
   ],
   "settings": {
