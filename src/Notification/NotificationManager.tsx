@@ -37,9 +37,8 @@ export const NotificationManager = (props: NotificationManagerProps) => {
     enableMultiContainer: props.containerId != null // enable multi container when an explicit id is passed
   };
 
-  const { getToastToRender, containerRef, isToastActive } = useToastContainer(
-    hookProps
-  );
+  const { getToastToRender, containerRef, isToastActive } =
+    useToastContainer(hookProps);
 
   const { containerId, style, fix } = props;
 

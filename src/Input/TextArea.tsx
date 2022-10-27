@@ -48,14 +48,11 @@ export const TextArea = ({
   testId,
   ...attributes
 }: TextAreaProps) => {
-  const {
-    toggleFocusLabel,
-    toggleBlurLabel,
-    isFocused
-  } = useFocus<HTMLTextAreaElement>({
-    onFocus: attributes.onFocus,
-    onBlur: attributes.onBlur
-  });
+  const { toggleFocusLabel, toggleBlurLabel, isFocused } =
+    useFocus<HTMLTextAreaElement>({
+      onFocus: attributes.onFocus,
+      onBlur: attributes.onBlur
+    });
 
   const infoTextControlClass = getInfoTextControlClass(
     { valid, invalid },

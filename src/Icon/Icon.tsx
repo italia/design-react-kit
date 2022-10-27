@@ -23,7 +23,7 @@ export function preloadIcons(icons: IconName[]) {
   return Promise.all(icons.map((icon) => loadIcon(icon))).then(
     (preloadedIcons) => {
       preloadedIcons.forEach(({ component }, i) => {
-        iconsCache[icons[i]] = ((() => component) as unknown) as FC<
+        iconsCache[icons[i]] = (() => component) as unknown as FC<
           SVGProps<SVGSVGElement>
         >;
       });
@@ -100,7 +100,7 @@ export const Icon: FC<IconProps> = ({
   useEffect(() => {
     if (isBundledIcon(icon) && !iconsCache[icon]) {
       loadIcon(icon).then(({ component }) => {
-        iconsCache[icon] = ((() => component) as unknown) as FC<
+        iconsCache[icon] = (() => component) as unknown as FC<
           SVGProps<SVGSVGElement> & SVGRProps
         >;
         setCurrentIcon(iconsCache[icon]);

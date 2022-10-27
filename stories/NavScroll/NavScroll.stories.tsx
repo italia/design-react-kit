@@ -495,9 +495,8 @@ const PosizionamentoFondoPagina = () => {
   );
 };
 
-export const PosizionamentoAFondoPaginaConLineaASinistra: Story = PosizionamentoFondoPagina.bind(
-  {}
-);
+export const PosizionamentoAFondoPaginaConLineaASinistra: Story =
+  PosizionamentoFondoPagina.bind({});
 
 PosizionamentoAFondoPaginaConLineaASinistra.storyName =
   'Posizionamento a fondo pagina con linea a sinistra';
@@ -975,9 +974,8 @@ const PosizionamentoTestaAlta = () => {
   );
 };
 
-export const PosizionamentoInTestaAllaPaginaConLineaADestra: Story = PosizionamentoTestaAlta.bind(
-  {}
-);
+export const PosizionamentoInTestaAllaPaginaConLineaADestra: Story =
+  PosizionamentoTestaAlta.bind({});
 
 PosizionamentoInTestaAllaPaginaConLineaADestra.storyName =
   'Posizionamento in testa alla pagina con linea a destra';
