@@ -40,7 +40,7 @@ export const StepperContent: FC<StepperContentProps> = ({
   ...attributes
 }) => {
   const Tag = tag;
-  const classes = classNames('steppers-content', classNames);
+  const classes = classNames('steppers-content', className);
   return (
     <Tag
       {...attributes}

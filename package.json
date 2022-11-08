@@ -1,6 +1,6 @@
 {
   "name": "design-react-kit",
-  "description": "Componenti React per Bootstrap 4",
+  "description": "Componenti React per Bootstrap 5",
   "keywords": [
     "react",
     "bootstrap",
@@ -43,7 +43,7 @@
   },
   "scripts": {
     "start": "npm run storybook:serve",
-    "svg:import": "svgr -d src/Icon/assets node_modules/bootstrap-italia/src/svg && echo \"\" >> src/Icon/assets/index.tsx && npx eslint src/Icon/assets/index.tsx --fix",
+    "svg:import": "./scripts/import_svgs.sh",
     "prebuild": "npm run svg:import",
     "build": "tsdx build --format cjs,esm",
     "test": "tsdx test ./src ./test --passWithNoTests --coverage",
@@ -62,7 +62,7 @@
   },
   "peerDependencies": {
     "bootstrap-italia": "^2.0.3",
-    "react": ">=16.8.0"
+    "react": ">=17.0.2"
   },
   "browserslist": [
     "extends browserslist-config-design-italia"
@@ -81,7 +81,8 @@
     "./{src,stories,test}/**/*.{js,ts,tsx,jsx,mdx}": "yarn lint:staged"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.13",
+    "@babel/core": "^7.20.2",
+    "@babel/helper-remap-async-to-generator": "^7.18.9",
     "@rollup/plugin-url": "^6.0.0",
     "@size-limit/preset-small-lib": "^8.0.1",
     "@skypack/package-check": "^0.2.2",
@@ -94,9 +95,9 @@
     "@storybook/builder-webpack5": "^6.5.10",
     "@storybook/manager-webpack5": "^6.5.10",
     "@storybook/react": "^6.5.10",
-    "@svgr/cli": "^5.5.0",
-    "@svgr/rollup": "^5.5.0",
-    "@svgr/webpack": "^5.5.0",
+    "@svgr/cli": "^6.4.0",
+    "@svgr/rollup": "^6.4.0",
+    "@svgr/webpack": "^6.4.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.2.6",
     "@types/is-number": "^7.0.3",
@@ -105,6 +106,7 @@
     "@types/react-select": "^4.0.15",
     "@types/react-transition-group": "^4.4.5",
     "autoprefixer": "^9.8.8",
+    "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.5",
     "bootstrap-italia": "^2.0.3",
     "browserslist-config-design-italia": "^1.0.0",
@@ -114,6 +116,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "husky": "^8.0.1",
     "identity-obj-proxy": "^3.0.0",
+    "jest": "^26",
     "jest-transform-stub": "^2.0.0",
     "lint-staged": "^13.0.3",
     "postcss": "^7.0.39",
@@ -131,7 +134,6 @@
     "webpack": "^5.74.0"
   },
   "dependencies": {
-    "design-react-kit": "^4.0.2",
     "classnames": "^2.3.1",
     "is-number": "^7.0.0",
     "react-select": "^4.3.0",
