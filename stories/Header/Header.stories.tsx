@@ -102,16 +102,14 @@ _HeaderNav.argTypes = {
   }
 };
 
-export const _HeaderNavSecondary: Story<HeaderNavProps> = NavHeaderSecondary.bind(
-  {}
-);
+export const _HeaderNavSecondary: Story<HeaderNavProps> =
+  NavHeaderSecondary.bind({});
 _HeaderNavSecondary.args = {
   theme: ''
 };
 
-export const _HeaderComplete: Story<HeaderCompleteProps> = CompleteHeaderBasic.bind(
-  {}
-);
+export const _HeaderComplete: Story<HeaderCompleteProps> =
+  CompleteHeaderBasic.bind({});
 _HeaderComplete.args = {
   theme: '',
   slimHeaderType: 'default',
@@ -134,26 +132,23 @@ _HeaderComplete.argTypes = {
   }
 };
 
-export const _HeaderSlimLight: Story<HeaderSlimLightProps> = SlimHeaderBasic.bind(
-  {}
-);
+export const _HeaderSlimLight: Story<HeaderSlimLightProps> =
+  SlimHeaderBasic.bind({});
 _HeaderSlimLight.args = {
   theme: 'light',
   brandText: 'Ente appartenenza/Owner'
 };
 
-export const _HeaderCenterNarrow: Story<CenterHeaderBasicProps> = CenterHeaderBasic.bind(
-  {}
-);
+export const _HeaderCenterNarrow: Story<CenterHeaderBasicProps> =
+  CenterHeaderBasic.bind({});
 _HeaderCenterNarrow.args = {
   theme: '',
   type: 'center',
   brandText: 'Ente appartenenza/Owner',
   isSmall: true
 };
-export const _HeaderCenterNarrowLight: Story<CenterHeaderBasicProps> = CenterHeaderBasic.bind(
-  {}
-);
+export const _HeaderCenterNarrowLight: Story<CenterHeaderBasicProps> =
+  CenterHeaderBasic.bind({});
 _HeaderCenterNarrowLight.args = {
   theme: 'light',
   type: 'center',
@@ -164,9 +159,8 @@ export const _HeaderNavLight: Story<HeaderNavProps> = NavHeaderBasic.bind({});
 _HeaderNavLight.args = {
   theme: 'light'
 };
-export const _HeaderCompleteLight: Story<HeaderCompleteProps> = CompleteHeaderBasic.bind(
-  {}
-);
+export const _HeaderCompleteLight: Story<HeaderCompleteProps> =
+  CompleteHeaderBasic.bind({});
 _HeaderCompleteLight.args = {
   theme: 'light',
   slimHeaderType: 'default',

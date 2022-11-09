@@ -350,8 +350,7 @@ _EsempiInterattivi.args = {
   disabled: false,
   placement: 'top',
   title: 'Titolo del popover',
-  text:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.'
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.'
 };
 _EsempiInterattivi.argTypes = {
   placement: {

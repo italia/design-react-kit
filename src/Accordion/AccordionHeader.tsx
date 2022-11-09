@@ -36,7 +36,8 @@ export const AccordionHeader: FC<AccordionHeaderProps> = ({
         aria-expanded={active ? 'true' : 'false'}
         className={toggleClasses}
         onClick={onToggle}
-        {...attributes}></Tag>
+        {...attributes}
+      ></Tag>
       {append}
     </div>
   );

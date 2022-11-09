@@ -107,7 +107,9 @@ function ToolbarItemLabel({
   ) : (
     <span className='toolbar-label'>
       {label}
-      {badge?.label ? <span className='visually-hidden'>{badge.label}</span> : null}
+      {badge?.label ? (
+        <span className='visually-hidden'>{badge.label}</span>
+      ) : null}
     </span>
   );
 }

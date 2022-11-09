@@ -2173,7 +2173,7 @@
     lodash "^4.17.21"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-docs@6.5.13":
+"@storybook/addon-docs@6.5.13", "@storybook/addon-docs@^6.5.13":
   version "6.5.13"
   resolved "https://registry.yarnpkg.com/@storybook/addon-docs/-/addon-docs-6.5.13.tgz#fd82893946b0fa6f0657f16bf6a94637ab4b7532"
   integrity sha512-RG/NjsheD9FixZ789RJlNyNccaR2Cuy7CtAwph4oUNi3aDFjtOI8Oe9L+FOT7qtVnZLw/YMjF+pZxoDqJNKLPw==
@@ -2553,7 +2553,7 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/components@6.5.13":
+"@storybook/components@6.5.13", "@storybook/components@^6.5.13":
   version "6.5.13"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.5.13.tgz#a05fc969458760b348d640f26c2cad310ab35030"
   integrity sha512-6Hhx70JK5pGfKCkqMU4yq/BBH+vRTmzj7tZKfPwba+f8VmTMoOr/2ysTQFRtXryiHB6Z15xBYgfq5x2pIwQzLQ==
@@ -4900,9 +4900,9 @@ boolbase@^1.0.0:
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
 
 bootstrap-italia@^2.0.3:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.0.8.tgz#f240301f3622d9dca3f92e0b7866503aeae8ff36"
-  integrity sha512-V7MM2Z7Rt48dist1Yl2MhHprnX8UVu8o4ln97H4iyFur9eHcixb8qn87jBFTjlwGjenxNFeHJ0PP3SbtB0YUXw==
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.0.9.tgz#9f0f196571346dbb8cb4c4c8e3bd9dd6ca15c7b5"
+  integrity sha512-Ji0uP+//VqllorJ/uTDWh01ImPSUuCL9dX9oEBjAgsvGEXW7W/v7TlQ0xWMijS0hztlhhCshC3jzsfyv2+tPQw==
   dependencies:
     "@popperjs/core" "^2.11.2"
     "@splidejs/splide" "^3.6.12"

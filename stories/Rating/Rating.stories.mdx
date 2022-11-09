@@ -22,7 +22,8 @@ Per visualizzare una label utilizzare l'attributo `legend` del componente `Ratin
   <Callout color='success'>
     <CalloutText>
       L'attributo <Code>&lt;legend&gt;</Code> contiene testo aggiuntivo per
-      Screen Reader all’interno di uno <Code>&lt;span class="visually-hidden"&gt;</Code>
+      Screen Reader all’interno di uno{' '}
+      <Code>&lt;span class="visually-hidden"&gt;</Code>
       .<br />
       La label con il numero di stelle dev’essere contenuta in uno{' '}
       <Code>&lt;span&gt;</Code> semplice.
@@ -61,7 +62,9 @@ oppure
 
 ```jsx
 <Rating
-  legend={<legend className='visually-hidden'>Valutazione 4 stelle su 5</legend>}
+  legend={
+    <legend className='visually-hidden'>Valutazione 4 stelle su 5</legend>
+  }
 />
 ```
 

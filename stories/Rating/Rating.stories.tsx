@@ -27,7 +27,8 @@ export const RatingConLabel = () => {
       legend={
         <>
           <span className='visually-hidden'>Valutazione</span>{' '}
-          <span>{rating} stelle</span> <span className='visually-hidden'>su 5</span>
+          <span>{rating} stelle</span>{' '}
+          <span className='visually-hidden'>su 5</span>
         </>
       }
       inputs={['star1b', 'star2b', 'star3b', 'star4b', 'star5b']}
