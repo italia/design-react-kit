@@ -11,21 +11,15 @@ export const component = ({
 }: SVGProps<SVGSVGElement> & SVGRProps) => {
   return (
     <svg
-      width={24}
-      height={24}
-      viewBox='0 0 24 24'
       xmlns='http://www.w3.org/2000/svg'
-      role='img'
+      viewBox='0 0 24 24'
+      xmlSpace='preserve'
+      enableBackground='new 0 0 24 24'
       aria-labelledby={titleId}
       {...props}
     >
-      {title === undefined ? (
-        <title id={titleId}>{'Logo Linkedin'}</title>
-      ) : title ? (
-        <title id={titleId}>{title}</title>
-      ) : null}
-      <path fill='none' d='M0 0h24v24H0z' />
-      <path d='M16.53 8.68A3.94 3.94 0 0 0 13 10.62V9H9.37v12h3.73v-5.95c0-1.57.29-3.09 2.24-3.09 1.95 0 1.93 1.8 1.93 3.19V21H21v-6.6c0-3.23-.69-5.72-4.47-5.72ZM5.16 3a2.17 2.17 0 1 0 2.16 2.18A2.16 2.16 0 0 0 5.16 3ZM3.29 9v12H7V9H3.29Zm13.24-.3A3.94 3.94 0 0 0 13 10.62V9H9.37v12h3.73v-5.95c0-1.57.29-3.09 2.24-3.09 1.95 0 1.93 1.8 1.93 3.19V21H21v-6.6c0-3.23-.69-5.72-4.47-5.72v.02ZM3.29 21H7V9H3.29v12ZM5.16 3a2.17 2.17 0 1 0 2.16 2.18A2.16 2.16 0 0 0 5.16 3Z' />
+      {title ? <title id={titleId}>{title}</title> : null}
+      <path d='M16.5 8.7c-1.4 0-2.8.7-3.5 1.9V9H9.4v12h3.7v-5.9c0-1.6.3-3.1 2.2-3.1s1.9 1.8 1.9 3.2V21H21v-6.6c0-3.2-.7-5.7-4.5-5.7zM5.2 3C4 3 3 4 3 5.2c0 1.2 1 2.2 2.2 2.2s2.2-1 2.2-2.2c0-.6-.2-1.1-.6-1.5-.5-.5-1.1-.7-1.6-.7zM3.3 9v12H7V9H3.3zm13.2-.3c-1.4-.1-2.8.7-3.5 1.9V9H9.4v12h3.7v-5.9c0-1.6.3-3.1 2.2-3.1s1.9 1.8 1.9 3.2V21H21v-6.6c0-3.2-.7-5.7-4.5-5.7zM3.3 21H7V9H3.3v12zM5.2 3C4 3 3 4 3 5.2c0 1.2 1 2.2 2.2 2.2s2.2-1 2.2-2.2c0-.6-.2-1.1-.6-1.5-.5-.5-1.1-.7-1.6-.7z' />
     </svg>
   );
 };

@@ -11,21 +11,15 @@ export const component = ({
 }: SVGProps<SVGSVGElement> & SVGRProps) => {
   return (
     <svg
-      width={24}
-      height={24}
-      viewBox='0 0 24 24'
       xmlns='http://www.w3.org/2000/svg'
-      role='img'
+      viewBox='0 0 24 24'
+      xmlSpace='preserve'
+      enableBackground='new 0 0 24 24'
       aria-labelledby={titleId}
       {...props}
     >
-      {title === undefined ? (
-        <title id={titleId}>{'Logo Youtube'}</title>
-      ) : title ? (
-        <title id={titleId}>{title}</title>
-      ) : null}
-      <path fill='none' d='M0 0h24v24H0z' />
-      <path d='M21.56 7.2a2.5 2.5 0 0 0-1.76-1.77C18.24 5 12 5 12 5s-6.24 0-7.8.42A2.5 2.5 0 0 0 2.44 7.2 25.72 25.72 0 0 0 2 12c-.01 1.61.13 3.217.42 4.8a2.5 2.5 0 0 0 1.78 1.77C5.76 19 12 19 12 19s6.24 0 7.8-.42a2.5 2.5 0 0 0 1.76-1.77A25.72 25.72 0 0 0 22 12a25.72 25.72 0 0 0-.44-4.8ZM10 15V9l5.19 3L10 15Z' />
+      {title ? <title id={titleId}>{title}</title> : null}
+      <path d='M21.6 7.2c-.2-.9-.9-1.5-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4c-.9.3-1.5.9-1.8 1.8C2.1 8.8 2 10.4 2 12c0 1.6.1 3.2.4 4.8.2.9.9 1.5 1.8 1.8 1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4c.9-.2 1.5-.9 1.8-1.8.3-1.6.4-3.2.4-4.8 0-1.6-.1-3.2-.4-4.8zM10 15V9l5.2 3-5.2 3z' />
     </svg>
   );
 };

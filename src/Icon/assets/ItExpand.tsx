@@ -12,18 +12,13 @@ export const component = ({
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width={24}
-      height={24}
       viewBox='0 0 24 24'
-      role='img'
+      xmlSpace='preserve'
+      enableBackground='new 0 0 24 24'
       aria-labelledby={titleId}
       {...props}
     >
-      {title === undefined ? (
-        <title id={titleId}>{'Expand'}</title>
-      ) : title ? (
-        <title id={titleId}>{title}</title>
-      ) : null}
+      {title ? <title id={titleId}>{title}</title> : null}
       <path d='M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z' />
     </svg>
   );

@@ -12,20 +12,14 @@ export const component = ({
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width={24}
-      height={24}
       viewBox='0 0 24 24'
-      role='img'
+      xmlSpace='preserve'
+      enableBackground='new 0 0 24 24'
       aria-labelledby={titleId}
       {...props}
     >
-      {title === undefined ? (
-        <title id={titleId}>{'More Items'}</title>
-      ) : title ? (
-        <title id={titleId}>{title}</title>
-      ) : null}
-      <path d='M12 18a1 1 0 1 1-1 1 .9.9 0 0 1 1-1m0-1a2 2 0 1 0 2 2 2 2 0 0 0-2-2Zm0-6a1 1 0 1 1-1 1 .9.9 0 0 1 1-1m0-1a2 2 0 1 0 2 2 2 2 0 0 0-2-2Zm0-6a.9.9 0 0 1 1 1 1 1 0 0 1-2 0 .9.9 0 0 1 1-1m0-1a2 2 0 1 0 2 2 2 2 0 0 0-2-2Z' />
-      <path fill='none' d='M0 0h24v24H0z' />
+      {title ? <title id={titleId}>{title}</title> : null}
+      <path d='M12 18c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1c-.1-.5.3-.9.8-1h.2m0-1c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1c-.1-.5.3-.9.8-1h.2m0-1c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c.5-.1.9.3 1 .8V5c0 .6-.4 1-1 1s-1-.4-1-1c-.1-.5.3-.9.8-1h.2m0-1c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z' />
     </svg>
   );
 };

@@ -12,20 +12,14 @@ export const component = ({
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width={24}
-      height={24}
       viewBox='0 0 24 24'
-      role='img'
+      xmlSpace='preserve'
+      enableBackground='new 0 0 24 24'
       aria-labelledby={titleId}
       {...props}
     >
-      {title === undefined ? (
-        <title id={titleId}>{'Copy'}</title>
-      ) : title ? (
-        <title id={titleId}>{title}</title>
-      ) : null}
-      <path d='M19.5 4H18v-.6A1.5 1.5 0 0 0 16.5 2h-11A1.5 1.5 0 0 0 4 3.4v15.2A1.5 1.5 0 0 0 5.5 20H7v.6A1.5 1.5 0 0 0 8.5 22h11a1.5 1.5 0 0 0 1.5-1.4V5.4A1.5 1.5 0 0 0 19.5 4ZM5 18.6V3.4a.5.5 0 0 1 .5-.4h11a.5.5 0 0 1 .5.4v15.2a.5.5 0 0 1-.5.4h-11a.5.5 0 0 1-.5-.4Zm15 2a.5.5 0 0 1-.5.4h-11a.5.5 0 0 1-.5-.4V20h8.5a1.5 1.5 0 0 0 1.5-1.4V5h1.5a.5.5 0 0 1 .5.4Z' />
-      <path fill='none' d='M0 0h24v24H0z' />
+      {title ? <title id={titleId}>{title}</title> : null}
+      <path d='M19.5 4H18v-.6c-.1-.8-.7-1.4-1.5-1.4h-11c-.8 0-1.4.6-1.5 1.4v15.2c.1.8.7 1.4 1.5 1.4H7v.6c.1.8.7 1.4 1.5 1.4h11c.8 0 1.4-.6 1.5-1.4V5.4c-.1-.8-.7-1.4-1.5-1.4zM5 18.6V3.4c0-.2.3-.4.5-.4h11c.2 0 .5.2.5.4v15.2c0 .2-.3.4-.5.4h-11c-.2 0-.5-.2-.5-.4zm15 2c0 .2-.3.4-.5.4h-11c-.2 0-.5-.2-.5-.4V20h8.5c.8 0 1.4-.6 1.5-1.4V5h1.5c.2 0 .5.2.5.4v15.2z' />
     </svg>
   );
 };
