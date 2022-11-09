@@ -54,7 +54,7 @@ export const SelectClassica = () => {
     label: ''
   });
 
-  const handleChange = (selectedOption) => setValue(selectedOption);
+  const handleChange = (selectedOption: any) => setValue(selectedOption);
 
   return (
     <div className='bootstrap-select-wrapper'>
@@ -104,7 +104,7 @@ export const SelectDisabilitata = () => {
     value: '',
     label: ''
   });
-  const handleChange = (selectedOption) => setValue(selectedOption);
+  const handleChange = (selectedOption: any) => setValue(selectedOption);
 
   return (
     <div className='bootstrap-select-wrapper'>
@@ -126,7 +126,7 @@ SelectDisabilitata.storyName = 'Select disabilitata';
 export const SelectConReset = () => {
   const [, setValue] = useState({ value: '', label: '' });
 
-  const handleChange = (selectedOption) => setValue(selectedOption);
+  const handleChange = (selectedOption: any) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
       <label htmlFor='selectExampleReset'>Etichetta di esempio</label>
@@ -147,7 +147,7 @@ SelectConReset.storyName = 'Select con reset';
 export const SelectConRicerca = () => {
   const [, setValue] = useState({ value: '', label: '' });
 
-  const handleChange = (selectedOption) => setValue(selectedOption);
+  const handleChange = (selectedOption: any) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
       <label htmlFor='selectExampleSearch'>Etichetta di esempio</label>
@@ -168,7 +168,7 @@ SelectConRicerca.storyName = 'Select con ricerca';
 export const _SelectMultipla = () => {
   const [, setValue] = useState({ value: '', label: '' });
 
-  const handleChange = (selectedOption) => setValue(selectedOption);
+  const handleChange = (selectedOption: any) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
       <label htmlFor='selectExampleMulti'>Etichetta di esempio</label>
@@ -187,7 +187,7 @@ export const _SelectMultipla = () => {
 export const SelectConGruppi = () => {
   const [, setValue] = useState({ value: '', label: '' });
 
-  const handleChange = (selectedOption) => setValue(selectedOption);
+  const handleChange = (selectedOption: any) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
       <label htmlFor='selectExampleGroups'>Etichetta di esempio</label>
@@ -252,7 +252,7 @@ export const SelectInterattivo: Story<SelectInterattivoProps> = ({
     // @ts-expect-error adding types makes the example harder to read
     options = groupedOptions;
   }
-  const handleChange = (selectedOption) => setValue(selectedOption);
+  const handleChange = (selectedOption: any) => setValue(selectedOption);
   return (
     <div className='bootstrap-select-wrapper'>
       <label htmlFor='selectExampleInteractive'>Etichetta di esempio</label>
