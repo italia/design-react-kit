@@ -9,6 +9,10 @@ export interface MegamenuItemProps extends HTMLAttributes<HTMLUListElement> {
   className?: string;
 }
 
+const styleDropdownToggle = {
+  clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)'
+};
+
 export const MegamenuItem: FC<MegamenuItemProps> = ({
   itemName,
   className,
@@ -18,7 +22,7 @@ export const MegamenuItem: FC<MegamenuItemProps> = ({
   const classes = classNames(className, 'megamenu');
   return (
     <UncontrolledDropdown nav tag='li' className={classes} {...attributes}>
-      <DropdownToggle caret nav>
+      <DropdownToggle caret nav style={styleDropdownToggle}>
         {itemName}
       </DropdownToggle>
       <DropdownMenu positionFixed>{children}</DropdownMenu>
