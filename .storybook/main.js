@@ -49,7 +49,6 @@ module.exports = {
     return config;
   },
   staticDirs: [
-    '../public',
     '../static',
     { from: '../assets', to: '/' },
   ],
