@@ -96,7 +96,7 @@ jobs:
           name: Bootstrap a Gatsby instance
           command: |
             cd ..
-            npx gatsby new testing-ssr https://github.com/italia/design-italia-gatsby-starterkit
+            npx gatsby@2.18.18 new testing-ssr https://github.com/italia/design-italia-gatsby-starterkit
             cd testing-ssr
             yarn link "design-react-kit"
             yarn build
