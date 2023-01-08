@@ -81,7 +81,7 @@ export const Icon: FC<IconProps> = ({
   color = '',
   size = '',
   icon = '',
-  title,
+  title = 'icon',
   className,
   padding = false,
   onIconLoad,
