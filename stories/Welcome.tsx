@@ -48,7 +48,7 @@ const Welcome = () => (
         <p className='text-center'>
           <code>npm install design-react-kit --save</code>
         </p>
-        <p className='font-weight-bold small text-center'>
+        <p className='fw-bold small text-center'>
           Attenzione: la libreria è ancora in fase di sviluppo e non contiene
           tutti i componenti disponibili nello UI Kit o in Bootstrap Italia.
         </p>

@@ -229,7 +229,7 @@ export class NavHeader extends Component<{ active?: string } & Theme, State> {
                   return (
                     <NavItem key={label}>
                       <NavLink href='#'>
-                        <span className={`${bold ? 'font-weight-bold' : ''}`}>
+                        <span className={`${bold ? 'fw-bold' : ''}`}>
                           {label}
                         </span>
                       </NavLink>

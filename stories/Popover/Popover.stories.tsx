@@ -95,7 +95,7 @@ const PopoverPositionExample = () => {
       <div className='mx-auto align-self-center p-2'>
         <span>
           <Button
-            className='mr-1'
+            className='me-1'
             color='secondary'
             innerRef={targetRef1}
             onClick={() => {
@@ -121,7 +121,7 @@ const PopoverPositionExample = () => {
       <div className='mx-auto align-self-center p-2'>
         <span>
           <Button
-            className='mr-1'
+            className='me-1'
             color='secondary'
             innerRef={targetRef2}
             onClick={() => {
@@ -147,7 +147,7 @@ const PopoverPositionExample = () => {
       <div className='mx-auto align-self-center p-2'>
         <span>
           <Button
-            className='mr-1'
+            className='me-1'
             color='secondary'
             innerRef={targetRef3}
             onClick={() => {
@@ -173,7 +173,7 @@ const PopoverPositionExample = () => {
       <div className='mx-auto align-self-center p-2'>
         <span>
           <Button
-            className='mr-1'
+            className='me-1'
             color='secondary'
             innerRef={targetRef4}
             onClick={() => {

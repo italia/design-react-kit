@@ -201,7 +201,7 @@ export class NavHeader extends React.Component<
                   return (
                     <NavItem key={label}>
                       <NavLink href='#'>
-                        <span className={`${bold ? 'font-weight-bold' : ''}`}>
+                        <span className={`${bold ? 'fw-bold' : ''}`}>
                           {label}
                         </span>
                       </NavLink>

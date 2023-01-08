@@ -240,15 +240,15 @@ export const EsempioConDropdownGrande = () => {
           <DropdownMenu>
             <LinkList>
               <LinkListItem className='left-icon'>
-                <Icon className='mr-2' icon='it-link'></Icon>
+                <Icon className='me-2' icon='it-link'></Icon>
                 <span>Azione 1</span>
               </LinkListItem>
               <LinkListItem className='left-icon'>
-                <Icon className='mr-2' icon='it-mail'></Icon>
+                <Icon className='me-2' icon='it-mail'></Icon>
                 <span>Azione 2</span>
               </LinkListItem>
               <LinkListItem className='left-icon'>
-                <Icon className='mr-2' icon='it-settings'></Icon>
+                <Icon className='me-2' icon='it-settings'></Icon>
                 <span>Azione 3</span>
               </LinkListItem>
             </LinkList>
@@ -367,15 +367,15 @@ export const EsempioConDropdownMedia = () => {
           <DropdownMenu>
             <LinkList>
               <LinkListItem className='left-icon'>
-                <Icon className='mr-2' icon='it-link'></Icon>
+                <Icon className='me-2' icon='it-link'></Icon>
                 <span>Azione 1</span>
               </LinkListItem>
               <LinkListItem className='left-icon'>
-                <Icon className='mr-2' icon='it-mail'></Icon>
+                <Icon className='me-2' icon='it-mail'></Icon>
                 <span>Azione 2</span>
               </LinkListItem>
               <LinkListItem className='left-icon'>
-                <Icon className='mr-2' icon='it-settings'></Icon>
+                <Icon className='me-2' icon='it-settings'></Icon>
                 <span>Azione 3</span>
               </LinkListItem>
             </LinkList>
@@ -494,15 +494,15 @@ export const EsempioConDropdownPiccola = () => {
           <DropdownMenu>
             <LinkList>
               <LinkListItem className='left-icon'>
-                <Icon className='mr-2' icon='it-link'></Icon>
+                <Icon className='me-2' icon='it-link'></Icon>
                 <span>Azione 1</span>
               </LinkListItem>
               <LinkListItem className='left-icon'>
-                <Icon className='mr-2' icon='it-mail'></Icon>
+                <Icon className='me-2' icon='it-mail'></Icon>
                 <span>Azione 2</span>
               </LinkListItem>
               <LinkListItem className='left-icon'>
-                <Icon className='mr-2' icon='it-settings'></Icon>
+                <Icon className='me-2' icon='it-settings'></Icon>
                 <span>Azione 3</span>
               </LinkListItem>
             </LinkList>
