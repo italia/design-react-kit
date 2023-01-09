@@ -135,6 +135,7 @@
     "webpack": "^5.74.0"
   },
   "dependencies": {
+    "bootstrap-italia": "2.2.0",
     "classnames": "^2.3.1",
     "is-number": "^7.0.0",
     "react-select": "^4.3.0",
