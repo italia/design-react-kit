@@ -177,7 +177,7 @@ export default ({ townName, townTagLine }) => (
               </h4>
               <Form action='#' className='form-newsletter' method='post'>
                 <Label
-                  className='text-white font-weight-semibold active'
+                  className='text-white fw-semibold active'
                   htmlFor='input-newsletter'
                   style={{ transition: 'none 0s ease 0s' }}
                 >
@@ -201,7 +201,7 @@ export default ({ townName, townTagLine }) => (
                   Seguici su
                 </a>
               </h4>
-              <ul className='list-inline text-left social'>
+              <ul className='list-inline text-start social'>
                 <li className='list-inline-item'>
                   <a className='p-2 text-white' href='#' target='_blank'>
                     <Icon

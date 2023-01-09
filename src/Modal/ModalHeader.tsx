@@ -49,7 +49,7 @@ export const ModalHeader: FC<ModalHeaderProps> = ({
       <button
         type='button'
         onClick={toggle}
-        className={mapToCssModules('close', cssModule)}
+        className={mapToCssModules('btn-close', cssModule)}
         aria-label={closeAriaLabel}
       >
         <span aria-hidden>{closeIcon}</span>

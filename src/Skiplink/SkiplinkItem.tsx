@@ -21,7 +21,7 @@ export const SkiplinkItem: FC<SkiplinkItemProps> = ({
 }) => {
   const Tag = tag;
   const classes = classNames(className, 'visually-hidden', {
-    'sr-only-focusable': focusable
+    'visually-hidden-focusable': focusable
   });
 
   // Add an extra href for focusable if the user passes an onClick rather than href prop

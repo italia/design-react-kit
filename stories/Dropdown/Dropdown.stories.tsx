@@ -65,7 +65,7 @@ export const _Esempi = () => {
 
   return (
     <section>
-      <Dropdown className='mr-3' isOpen={open} toggle={() => toggle(!open)}>
+      <Dropdown className='me-3' isOpen={open} toggle={() => toggle(!open)}>
         <DropdownToggle color='primary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -86,7 +86,7 @@ export const _Link = () => {
 
   return (
     <section>
-      <Dropdown className='mr-3' isOpen={open} toggle={() => toggle(!open)}>
+      <Dropdown className='me-3' isOpen={open} toggle={() => toggle(!open)}>
         <DropdownToggle color='primary' caret tag='a'>
           Apri dropdown
         </DropdownToggle>

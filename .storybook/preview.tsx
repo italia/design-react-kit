@@ -12,7 +12,7 @@ const order = {
   'componenti': 1000,
 };
 
-const prioritySections = ['welcome-page', 'organizzare', 'menu', 'componenti', 'form', 'utilities', 'domande-frequenti-page', 'changelog-page'];
+const prioritySections = ['welcome-page', 'organizzare', 'menu', 'componenti', 'form', 'utilities', 'domande-frequenti-page', 'changelog-page', 'migrazione-da-v1-page'];
 const priorityPages = ["introduzione"];
 
 const customStyle = {

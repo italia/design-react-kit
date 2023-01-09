@@ -235,14 +235,14 @@ export const ModalePopConfirm = () => {
       <Button
         color='primary'
         onClick={() => toggleBaseModal(!isOpenBase)}
-        className='mr-3'
+        className='me-3'
       >
         Lancia modale pop-confirm base
       </Button>
       <Button
         color='primary'
         onClick={() => toggleModalWithHeader(!isOpenWithHeader)}
-        className='mr-3'
+        className='me-3'
       >
         Lancia modale pop-confirm con titolo
       </Button>
@@ -758,7 +758,7 @@ export const _Dimensioni = () => {
             setSize('lg');
             toggleModal(true);
           }}
-          className='mr-3'
+          className='me-3'
         >
           Modale grande
         </Button>
@@ -813,21 +813,21 @@ export const ContenutoDellaModaleVariabile = () => {
         <Button
           color='primary'
           onClick={() => openModal('Mario')}
-          className='mr-3'
+          className='me-3'
         >
           Apri la modale per Mario
         </Button>
         <Button
           color='primary'
           onClick={() => openModal('Paola')}
-          className='mr-3'
+          className='me-3'
         >
           Apri la modale per Paola
         </Button>
         <Button
           color='primary'
           onClick={() => openModal('Luca')}
-          className='mr-3'
+          className='me-3'
         >
           Apri la modale per Luca
         </Button>
@@ -960,21 +960,21 @@ export const UsoDellaGriglia = () => {
           <Container fluid className='bd-example-row'>
             <Row>
               <Col md='4'>.col-md-4</Col>
-              <Col md='4' className='col-md-4 ml-auto'>
-                .col-md-4 .ml-auto
+              <Col md='4' className='col-md-4 ms-auto'>
+                .col-md-4 .ms-auto
               </Col>
             </Row>
             <Row>
-              <Col md='3' className='col-md-3 ml-auto'>
-                .col-md-3 .ml-auto
+              <Col md='3' className='col-md-3 ms-auto'>
+                .col-md-3 .ms-auto
               </Col>
-              <Col md='2' className='col-md-2 ml-auto'>
-                .col-md-2 .ml-auto
+              <Col md='2' className='col-md-2 ms-auto'>
+                .col-md-2 .ms-auto
               </Col>
             </Row>
             <Row>
-              <Col md='6' className='col-md-6 ml-auto'>
-                .col-md-6 .ml-auto
+              <Col md='6' className='col-md-6 ms-auto'>
+                .col-md-6 .ms-auto
               </Col>
             </Row>
             <Row>

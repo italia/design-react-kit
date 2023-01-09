@@ -4920,10 +4920,10 @@ boolbase@^1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
 
-bootstrap-italia@^2.0.3:
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.0.9.tgz#9f0f196571346dbb8cb4c4c8e3bd9dd6ca15c7b5"
-  integrity sha512-Ji0uP+//VqllorJ/uTDWh01ImPSUuCL9dX9oEBjAgsvGEXW7W/v7TlQ0xWMijS0hztlhhCshC3jzsfyv2+tPQw==
+bootstrap-italia@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.2.0.tgz#a575e9cb45ba259312fde53e685a9d828a5f8ec8"
+  integrity sha512-dlOpYPMm2m4aSLcdRVyKy2FiOXqcz8Iz5soSl27bY2XJvWNXwe/GC/HGz8M71BAixYRJoDOHYfTokGQEb6MGKw==
   dependencies:
     "@popperjs/core" "^2.11.2"
     "@splidejs/splide" "^3.6.12"
@@ -10088,9 +10088,9 @@ junk@^3.1.0:
   integrity sha512-pBxcB3LFc8QVgdggvZWyeys+hnrNWg4OcZIU/1X59k5jQdLBlCsYGRQaz234SqoRLTCgMH00fY0xRJH+F9METQ==
 
 just-validate@^3.5.1:
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/just-validate/-/just-validate-3.8.1.tgz#5d21423b304d5d652ba2cb93e3fbd9530c351e2f"
-  integrity sha512-nkrFDBmBe/NUwjGRZmV9SdKPA6Tmp4NQw7dMxQMJMr576BrQ+e5XpToxVHJpTri6dcXjPaKcXbYw9+3hJ3Wj9w==
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/just-validate/-/just-validate-3.10.0.tgz#6f4a219abcc5cbf39a1bcc2901f5cb4f9e897a1f"
+  integrity sha512-789+Y7yTwcyCReD+wWAnjGzbWTWth5yHMT9MvaM3RLDExQfmIDye/X8ziHOhI2UDa7ef7HMAb6cFifTaKJa5Yg==
 
 kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
   version "3.2.2"

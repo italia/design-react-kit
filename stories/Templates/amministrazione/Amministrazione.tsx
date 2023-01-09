@@ -87,7 +87,7 @@ const Amministrazione: Story<PageProps> = ({
                     <span className='visually-hidden'>Elimina label</span>
                   </button>
                 </div>
-                <div className='ml-2 d-inline'>
+                <div className='ms-2 d-inline'>
                   <button className='btn btn-icon btn-outline-primary btn-sm align-top'>
                     <Icon icon='it-plus' color='primary' />
                     <span>Aggiungi filtro</span>

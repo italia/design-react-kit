@@ -103,10 +103,8 @@ test('should have a testId for resilient UI changes', async () => {
 });
 
 test(`should have default title when no title is passed`, async () => {
-  const [, exceptionList] = await Promise.all([
-    preloadIcons(icons),
-    getExceptionList()
-  ]);
+  await preloadIcons(icons);
+  const exceptionList = await getExceptionList();
   const { container, rerender } = render(<Icon icon={''} title={undefined} />);
   for (const icon of icons) {
     rerender(<Icon icon={icon} title={undefined} />);

@@ -19,7 +19,7 @@ export const Abbrevazioni = () => (
 );
 
 export const AllineamentoADestra = () => (
-  <blockquote className='blockquote text-right'>
+  <blockquote className='blockquote text-end'>
     <p className='mb-0'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
       erat a ante.
@@ -147,7 +147,7 @@ export const Link = () => (
     </p>
     <p>
       Esempio di&nbsp;
-      <a href='#' className='text-decoration-none font-weight-bold'>
+      <a href='#' className='text-decoration-none fw-bold'>
         link in grassetto senza sottolineatura
       </a>
       .
@@ -283,9 +283,9 @@ export const ParagrafiPersonalizzati = () => (
 
 export const RobotoMono = () => (
   <>
-    <p className='text-monospace'>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-    <p className='text-monospace'>abcdefghijklmnopqrstuvwxyz</p>
-    <p className='text-monospace'>0123456789</p>
+    <p className='font-monospace'>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+    <p className='font-monospace'>abcdefghijklmnopqrstuvwxyz</p>
+    <p className='font-monospace'>0123456789</p>
   </>
 );
 
