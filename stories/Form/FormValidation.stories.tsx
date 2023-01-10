@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 
-import { Button, Input, Form, FormGroup, Label, FormText, Row } from '../../src';
+import {
+  Button,
+  Input,
+  Form,
+  FormGroup,
+  Label,
+  FormText,
+  Row
+} from '../../src';
 
 export default {
   title: 'Componenti/Form/Form Validation'
