@@ -97,6 +97,7 @@
     "@storybook/components": "^6.5.13",
     "@storybook/manager-webpack5": "^6.5.10",
     "@storybook/react": "^6.5.10",
+    "@storybook/react-docgen-typescript-plugin": "^1.0.1",
     "@svgr/cli": "^6.4.0",
     "@svgr/rollup": "^6.4.0",
     "@svgr/webpack": "^6.4.0",
@@ -168,6 +169,7 @@
   },
   "resolutions": {
     "@types/react": "17.0.2",
-    "@types/react-dom": "17.0.2"
+    "@types/react-dom": "17.0.2",
+    "@storybook/react-docgen-typescript-plugin": "npm:react-docgen-typescript-plugin@1.0.2"
   }
 }
