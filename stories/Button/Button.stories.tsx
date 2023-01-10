@@ -168,35 +168,38 @@ VariantiDiDimensione.storyName = 'Varianti di dimensione';
 
 export const BottoniConIcona = () => (
   <section>
-  <div>
-    <Button color='success' size='lg' icon>
-      <Icon color='white' icon='it-star-full' /> Icon Button Large
-    </Button>{' '}
-    <Button color='primary' icon>
-      <Icon color='white' icon='it-star-full' /> Icon Button
-    </Button>{' '}
-    <Button color='danger' size='sm' icon>
-      <Icon color='secondary' icon='it-star-full' /> Icon Button Small
-    </Button>{' '}
-    <Button color='info' size='xs' icon>
-      <Icon color='danger' icon='it-star-full' /> Icon Button Extra Small
-    </Button>
-  </div>
-<div className='mt-3'>
-  <Button color='success' size='lg' icon>
-    Icon Button Large <Icon color='white' icon='it-star-full' className='ms-1' />
-  </Button>{' '}
-  <Button color='primary' icon>
-    Icon Button <Icon color='white' icon='it-star-full' className='ms-1' />
-  </Button>{' '}
-  <Button color='danger' size='sm' icon>
-    Icon Button Small <Icon color='secondary' icon='it-star-full' className='ms-1' />
-  </Button>{' '}
-  <Button color='info' size='xs' icon>
-    Icon Button Extra Small <Icon color='danger' icon='it-star-full' className='ms-1' />
-  </Button>
-</div>
-    </section>
+    <div>
+      <Button color='success' size='lg' icon>
+        <Icon color='white' icon='it-star-full' /> Icon Button Large
+      </Button>{' '}
+      <Button color='primary' icon>
+        <Icon color='white' icon='it-star-full' /> Icon Button
+      </Button>{' '}
+      <Button color='danger' size='sm' icon>
+        <Icon color='secondary' icon='it-star-full' /> Icon Button Small
+      </Button>{' '}
+      <Button color='info' size='xs' icon>
+        <Icon color='danger' icon='it-star-full' /> Icon Button Extra Small
+      </Button>
+    </div>
+    <div className='mt-3'>
+      <Button color='success' size='lg' icon>
+        Icon Button Large{' '}
+        <Icon color='white' icon='it-star-full' className='ms-1' />
+      </Button>{' '}
+      <Button color='primary' icon>
+        Icon Button <Icon color='white' icon='it-star-full' className='ms-1' />
+      </Button>{' '}
+      <Button color='danger' size='sm' icon>
+        Icon Button Small{' '}
+        <Icon color='secondary' icon='it-star-full' className='ms-1' />
+      </Button>{' '}
+      <Button color='info' size='xs' icon>
+        Icon Button Extra Small{' '}
+        <Icon color='danger' icon='it-star-full' className='ms-1' />
+      </Button>
+    </div>
+  </section>
 );
 
 BottoniConIcona.storyName = 'Bottoni con icona';
