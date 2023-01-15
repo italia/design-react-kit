@@ -24,7 +24,12 @@ export const DimensionamentoColonneBase = () => (
       />
     </Row>
     <Row>
-      <Input type='text' label='Città' id='Citta' wrapperClassName='col col-7' />
+      <Input
+        type='text'
+        label='Città'
+        id='Citta'
+        wrapperClassName='col col-7'
+      />
       <Input type='text' label='Comune' id='Comune' wrapperClassName='col' />
       <Input type='text' label='CAP' id='CAP' wrapperClassName='col' />
     </Row>
@@ -103,12 +108,12 @@ export const DimensionamentoColonneComplesso = () => (
       </Col>
     </Row>
     <Row>
-      <Col sm="auto">
+      <Col sm='auto'>
         <Button color='primary' outline>
           Annulla
         </Button>
       </Col>
-      <Col sm="auto">
+      <Col sm='auto'>
         <Button type='submit' color='primary'>
           Conferma
         </Button>
