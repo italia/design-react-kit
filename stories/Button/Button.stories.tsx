@@ -1,4 +1,4 @@
-// @ts-ignore
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 import { Button, Icon } from '../../src';
@@ -130,7 +130,7 @@ export const SfondoScuro = () => (
 SfondoScuro.storyName = 'Sfondo scuro';
 
 export const VariantiDiDimensione = () => (
-  <section>
+  <div>
     <div>
       <Button color='primary' size='lg'>
         Primary Large
@@ -161,13 +161,13 @@ export const VariantiDiDimensione = () => (
         Secondary Block
       </Button>{' '}
     </div>
-  </section>
+  </div>
 );
 
 VariantiDiDimensione.storyName = 'Varianti di dimensione';
 
 export const BottoniConIcona = () => (
-  <section>
+  <div>
     <div>
       <Button color='success' size='lg' icon>
         <Icon color='white' icon='it-star-full' /> Icon Button Large
@@ -199,7 +199,7 @@ export const BottoniConIcona = () => (
         <Icon color='danger' icon='it-star-full' className='ms-1' />
       </Button>
     </div>
-  </section>
+  </div>
 );
 
 BottoniConIcona.storyName = 'Bottoni con icona';
