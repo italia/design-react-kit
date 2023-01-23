@@ -83,6 +83,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/helper-remap-async-to-generator": "^7.18.9",
+    "@rollup/plugin-replace": "^5.0.2",
     "@rollup/plugin-url": "^6.0.0",
     "@size-limit/preset-small-lib": "^8.0.1",
     "@skypack/package-check": "^0.2.2",

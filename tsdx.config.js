@@ -1,5 +1,6 @@
 const path = require('path');
 const url = require('@rollup/plugin-url');
+import replace from '@rollup/plugin-replace';
 const svgr = require('@svgr/rollup');
 module.exports = {
   rollup(config, options) {
@@ -23,6 +24,9 @@ module.exports = {
               { removeAttrs: { attrs: 'g:(stroke|fill):((?!^none$).)*' } }
             ]
           }
+        }),
+        replace({
+          preventAssignment: true
         }),
         ...plugins
       ],
