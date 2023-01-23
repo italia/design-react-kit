@@ -4,15 +4,15 @@ import {
   Accordion,
   AccordionHeader,
   AccordionBody,
+  AccordionItem,
   Callout,
   CalloutTitle,
-  CalloutText,
-  Collapse
+  CalloutText
 } from '../../src';
 
-<Meta title='Documentazione/Componenti/Collapse' of={Collapse} />
+<Meta title='Documentazione/Componenti/Accordion' of={Accordion} />
 
-# Accordion (o Collapse)
+# Accordion
 
 ## Attiva/disattiva la visibilità di contenuti
 
@@ -23,31 +23,27 @@ Per ottimizzare l’ingombro dei contenuti di una pagina si possono usare degli 
 Puoi usare un bottone per cambiare la visibilità dei contenuti:
 
 <Canvas>
-  <Story id='componenti-collapse--esempi' />
+  <Story id='componenti-accordion--esempi' />
 </Canvas>
 
 ### Gruppi di elementi richiudibili
 
 Gli elementi richiudibili sono molto spesso mostrati in gruppo, tipicamente usati per approfondire voci o argomenti mostrati nelle singole barre cliccabili.
 
-<Canvas>
-  <Story id='componenti-collapse--gruppi-di-elementi-richiudibili' />
-</Canvas>
-
-### Accordion
-
-Per ottenere un gruppo di elementi _mutualmente_ richiudibili (o _accordion_), è sufficiente utilizzare uno stato con singolo id da verificare per ciascun elemento come da esempio:
-
-<Canvas>
-  <Story id='componenti-collapse--accordion' />
-</Canvas>
-
-### Collapse e Accordion innestati
-
-Più gruppi di collapse possono essere annidati.
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>Accessibilità</CalloutTitle>
+    <CalloutText>
+      Nell’esempio di codice ogni elemento <Code>&lt;button&gt;</Code> è
+      inserito all’interno di un elemento &lt;h2&gt; (o altro livello h in
+      funzione del contesto) in quanto, frequentemente, i pulsanti di azione di
+      un accordion sono anche i titoli della sezione che segue.
+    </CalloutText>
+  </Callout>
+</div>
 
 <Canvas>
-  <Story id='componenti-collapse--collapse-e-accordion-innestati' />
+  <Story id='componenti-accordion--gruppi-di-elementi-richiudibili' />
 </Canvas>
 
 <div className='docs'>
@@ -72,6 +68,32 @@ Più gruppi di collapse possono essere annidati.
   </Callout>
 </div>
 
+### Accordion
+
+Per ottenere un gruppo di elementi _mutualmente_ richiudibili (o _accordion_), è sufficiente utilizzare uno stato con singolo id da verificare per ciascun elemento come da esempio:
+
+<Canvas>
+  <Story id='componenti-accordion--accordion' />
+</Canvas>
+
+### Accordion annidati
+
+Più gruppi di collapse possono essere annidati.
+
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>Accessibilità</CalloutTitle>
+    <CalloutText>
+      Utilizzare questo approccio solo quando strettamente necessario: dal punto
+      di vista dell’accessibilità non si tratta di una soluzione ottimale.
+    </CalloutText>
+  </Callout>
+</div>
+
+<Canvas>
+  <Story id='componenti-accordion--accordion-annidati' />
+</Canvas>
+
 ### Sfondo primario
 
 Applicando attributi aggiuntivi al componente `Accordion` è possibile utilizzare il colore primario come sfondo degli header.
@@ -81,7 +103,7 @@ Applicando attributi aggiuntivi al componente `Accordion` è possibile utilizzar
 Aggiungere l'attributo `background="active"` al componente `Accordion` per ottenere header con sfondo di colore primario quando questi sono attivi e il contenuto relativo è visibile.
 
 <Canvas>
-  <Story id='componenti-collapse--header-attivi' />
+  <Story id='componenti-accordion--header-attivi' />
 </Canvas>
 
 #### Hover degli Header
@@ -89,15 +111,15 @@ Aggiungere l'attributo `background="active"` al componente `Accordion` per otten
 Aggiungere l'attributo `background="hover"` al componente `Accordion` per ottenere header con sfondo di colore primario all’hover.
 
 <Canvas>
-  <Story id='componenti-collapse--header-hover' />
+  <Story id='componenti-accordion--header-hover' />
 </Canvas>
 
 ### Icona a sinistra
 
-Aggiungere l'attributo `iconLeft={true}` al componente `Accordion` per ottenere una variante in cui l’icona chevron che indica lo stato di apertura è sostituita da segni meno/più allineati a sinistra del titolo dell’header.
+Aggiungere l'attributo `iconLeft={true}` al 11componente `Accordion` per ottenere una variante in cui l’icona chevron che indica lo stato di apertura è sostituita da segni meno/più allineati a sinistra del titolo dell’header.
 
 <Canvas>
-  <Story id='componenti-collapse--icona-sinistra' />
+  <Story id='componenti-accordion--icona-sinistra' />
 </Canvas>
 
 ## Argomenti componente
@@ -105,6 +127,10 @@ Aggiungere l'attributo `iconLeft={true}` al componente `Accordion` per ottenere 
 ## Accordion
 
 <ArgsTable of={Accordion} />
+
+## Accordion Item
+
+<ArgsTable of={AccordionItem} />
 
 ### AccordionHeader
 

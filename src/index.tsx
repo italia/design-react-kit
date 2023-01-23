@@ -58,6 +58,7 @@ export { useNavScroll } from 'react-use-navscroll';
 
 export { Alert } from './Alert/Alert';
 export { Accordion } from './Accordion/Accordion';
+export { AccordionItem } from './Accordion/AccordionItem';
 export { AccordionHeader } from './Accordion/AccordionHeader';
 export { AccordionBody } from './Accordion/AccordionBody';
 export { AvatarContainer } from './Avatar/AvatarContainer';
