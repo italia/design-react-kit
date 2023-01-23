@@ -175,10 +175,10 @@ export const SectionConCard = () => {
             <CardBody>
               <CardText>
                 Platea dictumst vestibulum rhoncus est pellentesque elit
-                ullamcorper dignissim cras. Dictum sit amet justo donec enim diam
-                vulputate ut. Eu nisl nunc mi ipsum faucibus. Eget egestas purus
-                viverra accumsan. Diam maecenas ultricies mi eget mauris pharetra
-                et.{' '}
+                ullamcorper dignissim cras. Dictum sit amet justo donec enim
+                diam vulputate ut. Eu nisl nunc mi ipsum faucibus. Eget egestas
+                purus viverra accumsan. Diam maecenas ultricies mi eget mauris
+                pharetra et.{' '}
               </CardText>
             </CardBody>
           </Card>
