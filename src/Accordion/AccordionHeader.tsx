@@ -29,17 +29,15 @@ export const AccordionHeader: FC<AccordionHeaderProps> = ({
     collapsed: active
   });
   return (
-    <div className='accordion-item'>
-      <div className='accordion-header' data-testid={testId}>
-        <Tag
-          data-bs-toggle='collapse'
-          aria-expanded={active ? 'true' : 'false'}
-          className={toggleClasses}
-          onClick={onToggle}
-          {...attributes}
-        ></Tag>
-        {append}
-      </div>
+    <div className='accordion-header' data-testid={testId}>
+      <Tag
+        data-bs-toggle='collapse'
+        aria-expanded={active ? 'true' : 'false'}
+        className={toggleClasses}
+        onClick={onToggle}
+        {...attributes}
+      ></Tag>
+      {append}
     </div>
   );
 };

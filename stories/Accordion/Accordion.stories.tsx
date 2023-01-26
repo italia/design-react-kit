@@ -39,19 +39,19 @@ export const Esempi = () => {
 };
 
 export const GruppiDiElementiRichiudibili = () => {
-  const [collapseOpen1, setCollapseOpen1] = useState(true);
-  const [collapseOpen2, setCollapseOpen2] = useState(false);
-  const [collapseOpen3, setCollapseOpen3] = useState(false);
+  const [collapseElementOpen, setCollapseElement] = useState('');
   return (
     <Accordion>
       <AccordionItem>
         <AccordionHeader
-          active={collapseOpen1}
-          onToggle={() => setCollapseOpen1(!collapseOpen1)}
+          active={collapseElementOpen === '1'}
+          onToggle={() =>
+            setCollapseElement(collapseElementOpen !== '1' ? '1' : '')
+          }
         >
           Elemento Richiudibile #1
         </AccordionHeader>
-        <AccordionBody active={collapseOpen1}>
+        <AccordionBody active={collapseElementOpen === '1'}>
           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
           terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
           skateboard dolor brunch.
@@ -59,12 +59,14 @@ export const GruppiDiElementiRichiudibili = () => {
       </AccordionItem>
       <AccordionItem>
         <AccordionHeader
-          active={collapseOpen2}
-          onToggle={() => setCollapseOpen2(!collapseOpen2)}
+          active={collapseElementOpen === '2'}
+          onToggle={() =>
+            setCollapseElement(collapseElementOpen !== '2' ? '2' : '')
+          }
         >
           Elemento Richiudibile #2
         </AccordionHeader>
-        <AccordionBody active={collapseOpen2}>
+        <AccordionBody active={collapseElementOpen === '2'}>
           Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
           farm-to-table, raw denim aesthetic synth nesciunt you probably
           haven&apos;t heard of them accusamus labore sustainable VHS.
@@ -72,12 +74,14 @@ export const GruppiDiElementiRichiudibili = () => {
       </AccordionItem>
       <AccordionItem>
         <AccordionHeader
-          active={collapseOpen3}
-          onToggle={() => setCollapseOpen3(!collapseOpen3)}
+          active={collapseElementOpen === '3'}
+          onToggle={() =>
+            setCollapseElement(collapseElementOpen !== '3' ? '3' : '')
+          }
         >
           Elemento Richiudibile #3
         </AccordionHeader>
-        <AccordionBody active={collapseOpen3}>
+        <AccordionBody active={collapseElementOpen === '3'}>
           Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
           sunt aliqua put a bird on it squid single-origin coffee nulla
           assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
@@ -145,31 +149,31 @@ export const _Accordion = () => {
 };
 
 export const AccordionAnnidati = () => {
-  const [collapseOpen1, setCollapseOpen1] = useState(true);
-  const [collapseOpen2, setCollapseOpen2] = useState(false);
-  const [collapseOpen3, setCollapseOpen3] = useState(false);
-  const [nestedCollapseOpen1, setNestedCollapseOpen1] = useState(true);
-  const [nestedCollapseOpen2, setNestedCollapseOpen2] = useState(false);
-  const [nestedCollapseOpen3, setNestedCollapseOpen3] = useState(false);
+  const [collapseElementOpen, setCollapseElement] = useState('');
+  const [nestedCollapseOpen, setNestedCollapseOpen] = useState('');
   return (
     <Accordion>
       <AccordionItem>
         <AccordionHeader
-          active={collapseOpen1}
-          onToggle={() => setCollapseOpen1(!collapseOpen1)}
+          active={collapseElementOpen === '1'}
+          onToggle={() =>
+            setCollapseElement(collapseElementOpen !== '1' ? '1' : '')
+          }
         >
-          Collapse header #1
+          Elemento Accordion #1
         </AccordionHeader>
-        <AccordionBody active={collapseOpen1}>
+        <AccordionBody active={collapseElementOpen === '1'}>
           <Accordion>
             <AccordionItem>
               <AccordionHeader
-                active={nestedCollapseOpen1}
-                onToggle={() => setNestedCollapseOpen1(!nestedCollapseOpen1)}
+                active={nestedCollapseOpen === '1'}
+                onToggle={() =>
+                  setNestedCollapseOpen(nestedCollapseOpen !== '1' ? '1' : '')
+                }
               >
-                Nested panel header #1
+                Elemento Accordion annidato #1
               </AccordionHeader>
-              <AccordionBody active={nestedCollapseOpen1}>
+              <AccordionBody active={nestedCollapseOpen === '1'}>
                 Anim pariatur cliche reprehenderit, enim eiusmod high life
                 accusamus terry richardson ad squid. 3 wolf moon officia aute,
                 non cupidatat skateboard dolor brunch.
@@ -177,12 +181,14 @@ export const AccordionAnnidati = () => {
             </AccordionItem>
             <AccordionItem>
               <AccordionHeader
-                active={nestedCollapseOpen2}
-                onToggle={() => setNestedCollapseOpen2(!nestedCollapseOpen2)}
+                active={nestedCollapseOpen === '2'}
+                onToggle={() =>
+                  setNestedCollapseOpen(nestedCollapseOpen !== '2' ? '2' : '')
+                }
               >
-                Nested panel header #2
+                Elemento Accordion annidato #2
               </AccordionHeader>
-              <AccordionBody active={nestedCollapseOpen2}>
+              <AccordionBody active={nestedCollapseOpen === '2'}>
                 Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
                 beer farm-to-table, raw denim aesthetic synth nesciunt you
                 probably haven&apos;t heard of them accusamus labore sustainable
@@ -191,12 +197,14 @@ export const AccordionAnnidati = () => {
             </AccordionItem>
             <AccordionItem>
               <AccordionHeader
-                active={nestedCollapseOpen3}
-                onToggle={() => setNestedCollapseOpen3(!nestedCollapseOpen3)}
+                active={nestedCollapseOpen === '3'}
+                onToggle={() =>
+                  setNestedCollapseOpen(nestedCollapseOpen !== '3' ? '3' : '')
+                }
               >
-                Nested panel header #3
+                Elemento Accordion annidato #3
               </AccordionHeader>
-              <AccordionBody active={nestedCollapseOpen3}>
+              <AccordionBody active={nestedCollapseOpen === '3'}>
                 Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
                 tempor, sunt aliqua put a bird on it squid single-origin coffee
                 nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
@@ -208,24 +216,28 @@ export const AccordionAnnidati = () => {
         </AccordionBody>
       </AccordionItem>
       <AccordionHeader
-        active={collapseOpen2}
-        onToggle={() => setCollapseOpen2(!collapseOpen2)}
+        active={collapseElementOpen === '2'}
+        onToggle={() =>
+          setCollapseElement(collapseElementOpen !== '2' ? '2' : '')
+        }
       >
-        Collapse header #2
+        Elemento Accordion #2
       </AccordionHeader>
-      <AccordionBody active={collapseOpen2}>
+      <AccordionBody active={collapseElementOpen === '2'}>
         Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
         farm-to-table, raw denim aesthetic synth nesciunt you probably
         haven&apos;t heard of them accusamus labore sustainable VHS.
       </AccordionBody>
 
       <AccordionHeader
-        active={collapseOpen3}
-        onToggle={() => setCollapseOpen3(!collapseOpen3)}
+        active={collapseElementOpen === '3'}
+        onToggle={() =>
+          setCollapseElement(collapseElementOpen !== '3' ? '3' : '')
+        }
       >
-        Collapse header #3
+        Elemento Accordion #3
       </AccordionHeader>
-      <AccordionBody active={collapseOpen3}>
+      <AccordionBody active={collapseElementOpen === '3'}>
         Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
         sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
         shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
@@ -238,19 +250,19 @@ export const AccordionAnnidati = () => {
 AccordionAnnidati.storyName = 'Accordion annidati';
 
 export const HeaderAttivi = () => {
-  const [collapseOpen1, setCollapseOpen1] = useState(true);
-  const [collapseOpen2, setCollapseOpen2] = useState(false);
-  const [collapseOpen3, setCollapseOpen3] = useState(false);
+  const [collapseElementOpen, setCollapseElement] = useState('');
   return (
     <Accordion background='active'>
       <AccordionItem>
         <AccordionHeader
-          active={collapseOpen1}
-          onToggle={() => setCollapseOpen1(!collapseOpen1)}
+          active={collapseElementOpen === '1'}
+          onToggle={() =>
+            setCollapseElement(collapseElementOpen !== '1' ? '1' : '')
+          }
         >
           Elemento Accordion #1
         </AccordionHeader>
-        <AccordionBody active={collapseOpen1}>
+        <AccordionBody active={collapseElementOpen === '1'}>
           Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
           Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
           Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
@@ -258,12 +270,14 @@ export const HeaderAttivi = () => {
       </AccordionItem>
       <AccordionItem>
         <AccordionHeader
-          active={collapseOpen2}
-          onToggle={() => setCollapseOpen2(!collapseOpen2)}
+          active={collapseElementOpen === '2'}
+          onToggle={() =>
+            setCollapseElement(collapseElementOpen !== '2' ? '2' : '')
+          }
         >
           Elemento Accordion #2
         </AccordionHeader>
-        <AccordionBody active={collapseOpen2}>
+        <AccordionBody active={collapseElementOpen === '2'}>
           Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
           farm-to-table, raw denim aesthetic synth nesciunt you probably
           haven&apos;t heard of them accusamus labore sustainable VHS.
@@ -271,12 +285,14 @@ export const HeaderAttivi = () => {
       </AccordionItem>
       <AccordionItem>
         <AccordionHeader
-          active={collapseOpen3}
-          onToggle={() => setCollapseOpen3(!collapseOpen3)}
+          active={collapseElementOpen === '3'}
+          onToggle={() =>
+            setCollapseElement(collapseElementOpen !== '3' ? '3' : '')
+          }
         >
           Elemento Accordion #3
         </AccordionHeader>
-        <AccordionBody active={collapseOpen3}>
+        <AccordionBody active={collapseElementOpen === '3'}>
           Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
           sunt aliqua put a bird on it squid single-origin coffee nulla
           assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
@@ -290,47 +306,55 @@ export const HeaderAttivi = () => {
 HeaderAttivi.storyName = 'Header Attivi - sfondo primario';
 
 export const HeaderHover = () => {
-  const [collapseOpen1, setCollapseOpen1] = useState(true);
-  const [collapseOpen2, setCollapseOpen2] = useState(false);
-  const [collapseOpen3, setCollapseOpen3] = useState(false);
+  const [collapseElementOpen, setCollapseElement] = useState('');
   return (
     <Accordion background='hover'>
-      <AccordionHeader
-        active={collapseOpen1}
-        onToggle={() => setCollapseOpen1(!collapseOpen1)}
-      >
-        Elemento Accordion #1
-      </AccordionHeader>
-      <AccordionBody active={collapseOpen1}>
-        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
-        Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
-        Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
-      </AccordionBody>
-
-      <AccordionHeader
-        active={collapseOpen2}
-        onToggle={() => setCollapseOpen2(!collapseOpen2)}
-      >
-        Elemento Accordion #2
-      </AccordionHeader>
-      <AccordionBody active={collapseOpen2}>
-        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-        farm-to-table, raw denim aesthetic synth nesciunt you probably
-        haven&apos;t heard of them accusamus labore sustainable VHS.
-      </AccordionBody>
-
-      <AccordionHeader
-        active={collapseOpen3}
-        onToggle={() => setCollapseOpen3(!collapseOpen3)}
-      >
-        Elemento Accordion #3
-      </AccordionHeader>
-      <AccordionBody active={collapseOpen3}>
-        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-        anderson cred nesciunt sapiente ea proident.
-      </AccordionBody>
+      <AccordionItem>
+        <AccordionHeader
+          active={collapseElementOpen === '1'}
+          onToggle={() =>
+            setCollapseElement(collapseElementOpen !== '1' ? '1' : '')
+          }
+        >
+          Elemento Accordion #1
+        </AccordionHeader>
+        <AccordionBody active={collapseElementOpen === '1'}>
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
+          Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+          Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </AccordionBody>
+      </AccordionItem>
+      <AccordionItem>
+        <AccordionHeader
+          active={collapseElementOpen === '2'}
+          onToggle={() =>
+            setCollapseElement(collapseElementOpen !== '2' ? '2' : '')
+          }
+        >
+          Elemento Accordion #2
+        </AccordionHeader>
+        <AccordionBody active={collapseElementOpen === '2'}>
+          Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+          farm-to-table, raw denim aesthetic synth nesciunt you probably
+          haven&apos;t heard of them accusamus labore sustainable VHS.
+        </AccordionBody>
+      </AccordionItem>
+      <AccordionItem>
+        <AccordionHeader
+          active={collapseElementOpen === '3'}
+          onToggle={() =>
+            setCollapseElement(collapseElementOpen !== '3' ? '3' : '')
+          }
+        >
+          Elemento Accordion #3
+        </AccordionHeader>
+        <AccordionBody active={collapseElementOpen === '3'}>
+          Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+          sunt aliqua put a bird on it squid single-origin coffee nulla
+          assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+          labore wes anderson cred nesciunt sapiente ea proident.
+        </AccordionBody>
+      </AccordionItem>
     </Accordion>
   );
 };
@@ -338,46 +362,54 @@ export const HeaderHover = () => {
 HeaderHover.storyName = 'Header colorati on Hover - sfondo primario';
 
 export const IconaSinistra = () => {
-  const [collapseOpen1, setCollapseOpen1] = useState(true);
-  const [collapseOpen2, setCollapseOpen2] = useState(false);
-  const [collapseOpen3, setCollapseOpen3] = useState(false);
+  const [collapseElementOpen, setCollapseElement] = useState('');
   return (
     <Accordion iconLeft>
-      <AccordionHeader
-        active={collapseOpen1}
-        onToggle={() => setCollapseOpen1(!collapseOpen1)}
-      >
-        Elemento Accordion #1
-      </AccordionHeader>
-      <AccordionBody active={collapseOpen1}>
-        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
-        Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
-        Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
-      </AccordionBody>
-
-      <AccordionHeader
-        active={collapseOpen2}
-        onToggle={() => setCollapseOpen2(!collapseOpen2)}
-      >
-        Elemento Accordion #2
-      </AccordionHeader>
-      <AccordionBody active={collapseOpen2}>
-        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
-        Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
-        Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
-      </AccordionBody>
-
-      <AccordionHeader
-        active={collapseOpen3}
-        onToggle={() => setCollapseOpen3(!collapseOpen3)}
-      >
-        Elemento Accordion #3
-      </AccordionHeader>
-      <AccordionBody active={collapseOpen3}>
-        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
-        Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
-        Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
-      </AccordionBody>
+      <AccordionItem>
+        <AccordionHeader
+          active={collapseElementOpen === '1'}
+          onToggle={() =>
+            setCollapseElement(collapseElementOpen !== '1' ? '1' : '')
+          }
+        >
+          Elemento Accordion #1
+        </AccordionHeader>
+        <AccordionBody active={collapseElementOpen === '1'}>
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
+          Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+          Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </AccordionBody>
+      </AccordionItem>
+      <AccordionItem>
+        <AccordionHeader
+          active={collapseElementOpen === '2'}
+          onToggle={() =>
+            setCollapseElement(collapseElementOpen !== '2' ? '2' : '')
+          }
+        >
+          Elemento Accordion #2
+        </AccordionHeader>
+        <AccordionBody active={collapseElementOpen === '2'}>
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
+          Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+          Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </AccordionBody>
+      </AccordionItem>
+      <AccordionItem>
+        <AccordionHeader
+          active={collapseElementOpen === '3'}
+          onToggle={() =>
+            setCollapseElement(collapseElementOpen !== '3' ? '3' : '')
+          }
+        >
+          Elemento Accordion #3
+        </AccordionHeader>
+        <AccordionBody active={collapseElementOpen === '3'}>
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
+          Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+          Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </AccordionBody>
+      </AccordionItem>
     </Accordion>
   );
 };
