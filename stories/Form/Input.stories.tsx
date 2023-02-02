@@ -86,6 +86,7 @@ export const UtilizzoDiPlaceholderELabel = () => (
       placeholder='Testo di esempio'
       infoText='Ulteriore testo informativo'
       id='exampleinfoText'
+      invalid={true}
     />
   </div>
 );
