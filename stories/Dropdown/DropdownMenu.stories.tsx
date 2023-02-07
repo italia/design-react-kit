@@ -8,7 +8,7 @@ export const _MenuVociAttive = () => (
       <LinkList>
         <LinkListItem active>
           <span>
-            Azione 1<span className='sr-only'> attivo</span>
+            Azione 1<span className='visually-hidden'> attivo</span>
           </span>
         </LinkListItem>
         <LinkListItem>

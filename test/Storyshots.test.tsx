@@ -1,7 +1,7 @@
 import initStoryshots, { renderOnly } from '@storybook/addon-storyshots';
 import { icons, preloadIcons } from '../src';
 
-import './__mocks__/IntersectionObserverMock';
+import './__mocks__/IntersectionObserverMock.ts';
 
 // Preload all the icons
 beforeAll(() => preloadIcons(icons));

@@ -186,7 +186,7 @@ export class NavHeader extends React.Component<
                     <NavItem active={isActive} key={label}>
                       <NavLink href='#' active={isActive}>
                         <span>{label}</span>
-                        {isActive && <span className='sr-only'>current</span>}
+                        {isActive && <span className='visually-hidden'>current</span>}
                       </NavLink>
                     </NavItem>
                   );
@@ -201,7 +201,7 @@ export class NavHeader extends React.Component<
                   return (
                     <NavItem key={label}>
                       <NavLink href='#'>
-                        <span className={`${bold ? 'font-weight-bold' : ''}`}>
+                        <span className={`${bold ? 'fw-bold' : ''}`}>
                           {label}
                         </span>
                       </NavLink>

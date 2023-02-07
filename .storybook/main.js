@@ -1,6 +1,9 @@
 const CircularDependencyPlugin = require('circular-dependency-plugin')
 
 module.exports = {
+  core: {
+    builder: 'webpack5',
+  },
   stories: ['../stories/**/*.stories.@(ts|tsx|js|jsx|mdx)'],
   addons: [
     '@storybook/addon-postcss',
@@ -8,21 +11,17 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-a11y'
   ],
+  reactOptions: { legacyRootApi: true },
   // https://storybook.js.org/docs/react/configure/typescript#mainjs-configuration
   typescript: {
     check: true, // type-check stories during Storybook build
-    // allow react-select types to be imported for docgen
-    // allow also explicit types from other modules within the repo
+    reactDocgen: 'react-docgen-typescript',
     reactDocgenTypescriptOptions: {
-      shouldExtractLiteralValuesFromEnum: true,
-      propFilter: (prop) => {
-        if(prop.parent){
-          return /src/.test(prop.parent.fileName) || (/node_modules/.test(prop.parent.fileName) && /react-select/.test(prop.parent.fileName));
-        }
-        return true;
-      }
-    },
-    reactDocgen: "react-docgen-typescript",
+      compilerOptions: {
+        allowSyntheticDefaultImports: false,
+        esModuleInterop: false,
+      },
+    }
   },
   webpackFinal: async (config, { configType }) => {
     const assetRule = config.module.rules.find(({ test }) => test && test.test(".svg"));
@@ -44,4 +43,8 @@ module.exports = {
 
     return config;
   },
+  staticDirs: [
+    '../static',
+    { from: '../assets', to: '/' },
+  ],
 };

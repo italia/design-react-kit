@@ -19,7 +19,7 @@ Per raggruppare correttamente gli elementi di un modulo form è bene utilizzare 
 
 ### Dimensionamento delle colonne
 
-Strutture più complesse possono essere costruite usando il sistema a griglia, da utilizzare per layout che richiedono più colonne, larghezze diverse e opzioni di allineamento aggiuntive. La classe `.form-row` ne assicura una corretta spaziatura.
+Strutture più complesse possono essere costruite usando il sistema a griglia, da utilizzare per layout che richiedono più colonne, larghezze diverse e opzioni di allineamento aggiuntive.
 
 Puoi scegliere di dare una dimensione a una colonna, ad esempio dandogli un valore di `size={7}`, mentre le restanti `Col` si divideranno il resto dello spazio.
 
@@ -47,7 +47,8 @@ L’esempio seguente usa una delle utilità di flexbox per centrare verticalment
     <CalloutText>
       Le tecnologie assistive come gli screenreader avranno problemi con i tuoi
       moduli se non includi un’etichetta per ogni input. Per questi moduli in
-      linea, puoi nascondere le etichette usando la classe <Code>.sr-only</Code>
+      linea, puoi nascondere le etichette usando la classe{' '}
+      <Code>.visually-hidden</Code>
       .Esistono altri metodi alternativi per fornire un’etichetta per le tecnologie
       assistive, come l’attributo <Code>aria-label</Code>, <Code>
         aria-labelledby

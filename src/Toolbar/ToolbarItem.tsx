@@ -89,12 +89,12 @@ function ToolbarItemLabel({
   const showSrText = size && size !== 'large';
   if (disabled) {
     if (!label || showSrText) {
-      return <span className='sr-only'>{disabledMessage}</span>;
+      return <span className='visually-hidden'>{disabledMessage}</span>;
     }
     return (
       <>
         <span className='toolbar-label'>{label}</span>
-        <span className='sr-only'>{disabledMessage}</span>
+        <span className='visually-hidden'>{disabledMessage}</span>
       </>
     );
   }
@@ -103,11 +103,13 @@ function ToolbarItemLabel({
   }
 
   return showSrText ? (
-    <span className='sr-only'>{label}</span>
+    <span className='visually-hidden'>{label}</span>
   ) : (
     <span className='toolbar-label'>
       {label}
-      {badge?.label ? <span className='sr-only'>{badge.label}</span> : null}
+      {badge?.label ? (
+        <span className='visually-hidden'>{badge.label}</span>
+      ) : null}
     </span>
   );
 }
@@ -150,7 +152,7 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
             {size !== 'large' ? null : badgeObject.value}
           </span>
           {size !== 'large' && (
-            <span className='sr-only'>{badgeObject.srText}</span>
+            <span className='visually-hidden'>{badgeObject.srText}</span>
           )}
         </div>
       ) : null}

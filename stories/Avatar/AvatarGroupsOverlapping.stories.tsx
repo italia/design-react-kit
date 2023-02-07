@@ -37,31 +37,31 @@ export const SmallOverlappingAvatars = () => {
       <li>
         <AvatarIcon size='sm' color='primary' href='#'>
           <p aria-hidden='true'>A</p>
-          <span className='sr-only'>Andrea Gallo</span>
+          <span className='visually-hidden'>Andrea Gallo</span>
         </AvatarIcon>
       </li>
       <li>
         <AvatarIcon size='sm' color='secondary' href='#'>
           <p aria-hidden='true'>S</p>
-          <span className='sr-only'>Sara Ghioni</span>
+          <span className='visually-hidden'>Sara Ghioni</span>
         </AvatarIcon>
       </li>
       <li>
         <AvatarIcon size='sm' color='green' href='#'>
           <p aria-hidden='true'>T</p>
-          <span className='sr-only'>Tomasso Sordi</span>
+          <span className='visually-hidden'>Tomasso Sordi</span>
         </AvatarIcon>
       </li>
       <li>
         <AvatarIcon size='sm' color='orange' href='#'>
           <p aria-hidden='true'>B</p>
-          <span className='sr-only'>Barbera Tosi</span>
+          <span className='visually-hidden'>Barbera Tosi</span>
         </AvatarIcon>
       </li>
       <li>
         <AvatarIcon size='sm' color='red' href='#'>
           <p aria-hidden='true'>R</p>
-          <span className='sr-only'>Roberto Milano</span>
+          <span className='visually-hidden'>Roberto Milano</span>
         </AvatarIcon>
       </li>
       <li>
@@ -81,7 +81,7 @@ export const SmallOverlappingAvatars = () => {
               aria-haspopup
               aria-expanded='false'
             >
-              <span className='sr-only'>Visualizza altri 4 utenti</span>
+              <span className='visually-hidden'>Visualizza altri 4 utenti</span>
               <span aria-hidden='true'>+4</span>
             </DropdownToggle>
             <DropdownMenu>
@@ -144,13 +144,13 @@ export const MediumOverlaidAvatars = () => {
       <li>
         <AvatarIcon size='md' color='orange' href='#'>
           <p aria-hidden='true'>B</p>
-          <span className='sr-only'>Barbera Tosi</span>
+          <span className='visually-hidden'>Barbera Tosi</span>
         </AvatarIcon>
       </li>
       <li>
         <AvatarIcon size='md' color='red' href='#'>
           <p aria-hidden='true'>R</p>
-          <span className='sr-only'>Roberto Milano</span>
+          <span className='visually-hidden'>Roberto Milano</span>
         </AvatarIcon>
       </li>
       <li>
@@ -170,7 +170,7 @@ export const MediumOverlaidAvatars = () => {
               aria-haspopup
               aria-expanded='false'
             >
-              <span className='sr-only'>Visualizza altri 4 utenti</span>
+              <span className='visually-hidden'>Visualizza altri 4 utenti</span>
               <span aria-hidden='true'>+4</span>
             </DropdownToggle>
             <DropdownMenu>

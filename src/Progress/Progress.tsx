@@ -59,7 +59,7 @@ export const Progress: FC<ProgressProps> = ({
     return (
       <Tag className={wrapperClasses} data-testid={testId}>
         <div className='progress-bar-label'>
-          <span className='sr-only'>{label}</span>
+          <span className='visually-hidden'>{label}</span>
           {numericValue + '%'}
         </div>
         <Tag className={secondaryWrapperClasses}>
@@ -80,7 +80,7 @@ export const Progress: FC<ProgressProps> = ({
   return (
     <Tag className={secondaryWrapperClasses} data-testid={testId}>
       <div className='progress-bar-label'>
-        <span className='sr-only'>{label}</span>
+        <span className='visually-hidden'>{label}</span>
       </div>
       <div
         {...attributes}

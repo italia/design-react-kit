@@ -606,6 +606,5 @@ _EsempiInterattivi.args = {
   teaser: false,
   link: '#',
   title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit…',
-  text:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 };

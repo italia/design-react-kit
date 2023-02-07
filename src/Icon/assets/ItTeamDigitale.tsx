@@ -12,19 +12,14 @@ export const component = ({
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width={24}
-      height={24}
       viewBox='0 0 24 24'
-      role='img'
+      xmlSpace='preserve'
+      enableBackground='new 0 0 24 24'
       aria-labelledby={titleId}
       {...props}
     >
-      {title === undefined ? (
-        <title id={titleId}>{'Logo Team Digitale'}</title>
-      ) : title ? (
-        <title id={titleId}>{title}</title>
-      ) : null}
-      <path d='M23.648 24H.352A.353.353 0 0 1 0 23.648V.352C0 .158.158 0 .352 0h23.296c.194 0 .352.158.352.352v23.296a.353.353 0 0 1-.352.352ZM5.814 11.792a1.596 1.596 0 1 0 0-3.192 1.596 1.596 0 0 0 0 3.192ZM10 18.994V19h4.418C19.13 19 20 16.685 20 12.253 20 7.93 18.995 6 14.418 6H10v12.994Zm4.418-10.702c2.586 0 2.838 1.11 2.838 3.955 0 2.89-.252 4.455-2.838 4.455h-1.756v-8.41h1.756Z' />
+      {title ? <title id={titleId}>{title}</title> : null}
+      <path d='M23.6 24H.4c-.2 0-.4-.2-.4-.4V.4C0 .2.2 0 .4 0h23.3c.1 0 .3.2.3.4v23.3c0 .1-.2.3-.4.3zM5.8 11.8c.9 0 1.6-.7 1.6-1.6s-.7-1.6-1.6-1.6-1.6.7-1.6 1.6.7 1.6 1.6 1.6zM10 19h4.4c4.7 0 5.6-2.3 5.6-6.7S19 6 14.4 6H10v13zm4.4-10.7c2.6 0 2.8 1.1 2.8 4s-.3 4.5-2.8 4.5h-1.8V8.3h1.8z' />
     </svg>
   );
 };

@@ -12,20 +12,14 @@ export const component = ({
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width={24}
-      height={24}
       viewBox='0 0 24 24'
-      role='img'
+      xmlSpace='preserve'
+      enableBackground='new 0 0 24 24'
       aria-labelledby={titleId}
       {...props}
     >
-      {title === undefined ? (
-        <title id={titleId}>{'More Actions'}</title>
-      ) : title ? (
-        <title id={titleId}>{title}</title>
-      ) : null}
-      <path d='M6 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2Zm0 3a1 1 0 0 1 0-2 1 1 0 0 1 0 2Zm6-3a2 2 0 1 0 2 2 2 2 0 0 0-2-2Zm0 3a1 1 0 1 1 1-1 .9.9 0 0 1-1 1Zm6-3a2 2 0 1 0 2 2 2 2 0 0 0-2-2Zm0 3a1 1 0 1 1 1-1 .9.9 0 0 1-1 1Z' />
-      <path fill='none' d='M0 0h24v24H0z' />
+      {title ? <title id={titleId}>{title}</title> : null}
+      <path d='M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 3c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm6-3c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 3c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1c.1.5-.3.9-.8 1H12zm6-3c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 3c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1c.1.5-.3.9-.8 1H18z' />
     </svg>
   );
 };

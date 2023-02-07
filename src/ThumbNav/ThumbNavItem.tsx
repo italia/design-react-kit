@@ -1,8 +1,6 @@
 import React, { FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-import resizer from 'bootstrap-italia/dist/assets/resizer-3x2.svg';
-
 export interface ThumbNavItemProps extends HTMLAttributes<HTMLLIElement> {
   active?: boolean;
   targetUrl?: string;
@@ -19,12 +17,12 @@ export const ThumbNavItem: FC<ThumbNavItemProps> = ({
   testId,
   ...attributes
 }) => {
-  const classes = classNames({ active: active });
+  const classes = classNames({ active: active }, 'ratio', 'ratio-3x2');
 
   return (
     <li {...attributes} data-testid={testId}>
       <img
-        src={resizer}
+        src={'https://picsum.photos/240/160?image=1056'}
         className='thumb-nav-resizer'
         aria-hidden='true'
         alt=''

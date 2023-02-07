@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { useState, useCallback } from 'react';
-import type { CSSModule } from 'reactstrap';
+import type { CSSModule } from 'reactstrap/types/lib/utils';
 import { mapToCssModules } from '../utils';
 import type { InputProps } from './Input';
 

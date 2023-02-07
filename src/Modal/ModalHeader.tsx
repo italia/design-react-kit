@@ -1,5 +1,5 @@
 import React, { FC, HTMLAttributes } from 'react';
-import { CSSModule } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
 import { mapToCssModules } from '../utils';
@@ -49,7 +49,7 @@ export const ModalHeader: FC<ModalHeaderProps> = ({
       <button
         type='button'
         onClick={toggle}
-        className={mapToCssModules('close', cssModule)}
+        className={mapToCssModules('btn-close', cssModule)}
         aria-label={closeAriaLabel}
       >
         <span aria-hidden>{closeIcon}</span>

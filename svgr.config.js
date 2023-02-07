@@ -15,9 +15,11 @@ module.exports = {
           overrides: {
             removeTitle: false,
             removeViewBox: false
-          }
+          },
         }
-      }
+      },
+      'removeStyleElement',
+      'convertStyleToAttrs'
     ]
   }
 };

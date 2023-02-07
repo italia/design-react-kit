@@ -27,7 +27,7 @@ export const UserPresence = () => {
               alt='Mario Rossi'
             />
             <AvatarPresence presence='active'>
-              <span className='sr-only'>Presenza:attivo</span>
+              <span className='visually-hidden'>Presenza:attivo</span>
             </AvatarPresence>
           </AvatarIcon>
         </AvatarWrapper>
@@ -39,7 +39,7 @@ export const UserPresence = () => {
             />
             <AvatarPresence presence='busy'>
               <Icon color='white' icon='it-minus' />
-              <span className='sr-only'>Presenza: non disponibile</span>
+              <span className='visually-hidden'>Presenza: non disponibile</span>
             </AvatarPresence>
           </AvatarIcon>
         </AvatarWrapper>
@@ -50,7 +50,7 @@ export const UserPresence = () => {
               alt='Gioacchino Romani'
             />
             <AvatarPresence presence='hidden'>
-              <span className='sr-only'>Presenza: invisible</span>
+              <span className='visually-hidden'>Presenza: invisible</span>
             </AvatarPresence>
           </AvatarIcon>
         </AvatarWrapper>
@@ -64,7 +64,7 @@ export const UserPresence = () => {
             />
             <AvatarPresence presence='busy'>
               <Icon color='white' icon='it-minus' />
-              <span className='sr-only'>Presenza: non disponibile</span>
+              <span className='visually-hidden'>Presenza: non disponibile</span>
             </AvatarPresence>
           </AvatarIcon>
         </AvatarWrapper>
@@ -76,7 +76,7 @@ export const UserPresence = () => {
             />
             <AvatarPresence presence='busy'>
               <Icon color='white' icon='it-minus' />
-              <span className='sr-only'>Presenza: non disponibile</span>
+              <span className='visually-hidden'>Presenza: non disponibile</span>
             </AvatarPresence>
           </AvatarIcon>
         </AvatarWrapper>
@@ -88,7 +88,7 @@ export const UserPresence = () => {
             />
             <AvatarPresence presence='busy'>
               <Icon color='white' icon='it-minus' />
-              <span className='sr-only'>Presenza: non disponibile</span>
+              <span className='visually-hidden'>Presenza: non disponibile</span>
             </AvatarPresence>
           </AvatarIcon>
         </AvatarWrapper>
@@ -100,7 +100,7 @@ export const UserPresence = () => {
             />
             <AvatarPresence presence='busy'>
               <Icon color='white' icon='it-minus' />
-              <span className='sr-only'>Presenza: non disponibile</span>
+              <span className='visually-hidden'>Presenza: non disponibile</span>
             </AvatarPresence>
           </AvatarIcon>
         </AvatarWrapper>
@@ -121,7 +121,7 @@ export const UserStatus = () => {
             />
             <AvatarStatus status='approved'>
               <Icon color='white' icon='it-check' />
-              <span className='sr-only'>Stato: approvato</span>
+              <span className='visually-hidden'>Stato: approvato</span>
             </AvatarStatus>
           </AvatarIcon>
         </AvatarWrapper>
@@ -133,7 +133,7 @@ export const UserStatus = () => {
             />
             <AvatarStatus status='declined'>
               <Icon color='white' icon='it-close' />
-              <span className='sr-only'>Stato: respinto</span>
+              <span className='visually-hidden'>Stato: respinto</span>
             </AvatarStatus>
           </AvatarIcon>
         </AvatarWrapper>
@@ -144,7 +144,7 @@ export const UserStatus = () => {
               alt='Gioacchino Romani'
             />
             <AvatarStatus status='notify'>
-              <span className='sr-only'>Testa notifica</span>
+              <span className='visually-hidden'>Testa notifica</span>
             </AvatarStatus>
           </AvatarIcon>
         </AvatarWrapper>
@@ -158,7 +158,7 @@ export const UserStatus = () => {
             />
             <AvatarStatus status='approved'>
               <Icon color='white' icon='it-check' />
-              <span className='sr-only'>Stato: approvato</span>
+              <span className='visually-hidden'>Stato: approvato</span>
             </AvatarStatus>
           </AvatarIcon>
         </AvatarWrapper>
@@ -170,7 +170,7 @@ export const UserStatus = () => {
             />
             <AvatarStatus status='declined'>
               <Icon color='white' icon='it-close' />
-              <span className='sr-only'>Stato: respinto</span>
+              <span className='visually-hidden'>Stato: respinto</span>
             </AvatarStatus>
           </AvatarIcon>
         </AvatarWrapper>
@@ -182,7 +182,7 @@ export const UserStatus = () => {
             />
             <AvatarStatus status='approved'>
               <Icon color='white' icon='it-check' />
-              <span className='sr-only'>Stato: approvato</span>
+              <span className='visually-hidden'>Stato: approvato</span>
             </AvatarStatus>
           </AvatarIcon>
         </AvatarWrapper>
@@ -194,7 +194,7 @@ export const UserStatus = () => {
             />
             <AvatarStatus status='declined'>
               <Icon color='white' icon='it-close' />
-              <span className='sr-only'>Stato: approvato</span>
+              <span className='visually-hidden'>Stato: approvato</span>
             </AvatarStatus>
           </AvatarIcon>
         </AvatarWrapper>

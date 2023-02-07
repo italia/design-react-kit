@@ -126,9 +126,8 @@ EsempioDimensioni.args = {
   background: 'bg-grey'
 };
 
-export const EsempioPadding: Story<EsempioInterattivoProps> = EsempioDimensioni.bind(
-  {}
-);
+export const EsempioPadding: Story<EsempioInterattivoProps> =
+  EsempioDimensioni.bind({});
 EsempioPadding.storyName = 'Esempio dimensioni';
 EsempioPadding.args = {
   icon: 'it-check-circle',

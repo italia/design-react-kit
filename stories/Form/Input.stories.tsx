@@ -71,6 +71,56 @@ export const EsempiDiCampiDiInput = () => {
 
 EsempiDiCampiDiInput.storyName = 'Esempi di campi di input';
 
+export const EsempiDiInputOra = () => {
+  const [timeInputLabel1, setTimeInputLabel1] = useState('Campo di tipo ora');
+  const [timeInputLabel2, setTimeInputLabel2] = useState(
+    'Campo di tipo ora - dark'
+  );
+  const [isValidTime1, setIsValidTime1] = useState(true);
+  const [isValidTime2, setIsValidTime2] = useState(true);
+
+  const hhmmRegExp = /^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/;
+  const onBlurTimeInput1 = (value: string) => {
+    const isValid = hhmmRegExp.test(value);
+    setIsValidTime1(isValid);
+    setTimeInputLabel1(
+      isValid ? 'Campo di tipo ora' : 'Formato ora non valido (hh:mm)'
+    );
+  };
+  const onBlurTimeInput2 = (value: string) => {
+    const isValid = hhmmRegExp.test(value);
+    setIsValidTime2(isValid);
+    setTimeInputLabel2(
+      isValid ? 'Campo di tipo ora - dark' : 'Formato ora non valido (hh:mm)'
+    );
+  };
+  return (
+    <div>
+      <div style={{ paddingBottom: '6rem' }}>
+        <TimeInput
+          id='exampleInputTime'
+          placeholder='hh:mm'
+          label={timeInputLabel1}
+          invalid={!isValidTime1}
+          onBlur={onBlurTimeInput1}
+        />
+      </div>
+      <div style={{ paddingBottom: '3rem' }}>
+        <TimeInput
+          id='exampleInputTimeDark'
+          placeholder='hh:mm'
+          label={timeInputLabel2}
+          invalid={!isValidTime2}
+          onBlur={onBlurTimeInput2}
+          dark
+        />
+      </div>
+    </div>
+  );
+};
+
+EsempiDiInputOra.storyName = 'InputOra';
+
 export const UtilizzoDiPlaceholderELabel = () => (
   <div>
     <Input label='Etichetta di esempio' id='exampleLabel' />
@@ -274,7 +324,7 @@ export const _InputAutocompleteConDati = () => {
         classNamePrefix='react-autocomplete'
         placeholder='Testo da cercare'
       />
-      <label htmlFor='autocomplete-regioni' className='sr-only'>
+      <label htmlFor='autocomplete-regioni' className='visually-hidden'>
         Cerca nel sito
       </label>
     </FormGroup>

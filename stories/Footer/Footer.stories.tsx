@@ -182,7 +182,7 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
                 </h4>
                 <Form action='#' className='form-newsletter' method='post'>
                   <Label
-                    className='text-white font-weight-semibold active'
+                    className='text-white fw-semibold active'
                     htmlFor='input-newsletter'
                     style={{ transition: 'none 0s ease 0s' }}
                   >
@@ -206,7 +206,7 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
                     Seguici su
                   </a>
                 </h4>
-                <ul className='list-inline text-left social'>
+                <ul className='list-inline text-start social'>
                   <li className='list-inline-item'>
                     <a className='p-2 text-white' href='#' target='_blank'>
                       <Icon
@@ -215,7 +215,7 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
                         size='sm'
                         className='align-top'
                       />
-                      <span className='sr-only'>Designers Italia</span>
+                      <span className='visually-hidden'>Designers Italia</span>
                     </a>
                   </li>
                   <li className='list-inline-item'>
@@ -226,7 +226,7 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
                         size='sm'
                         className='align-top'
                       />
-                      <span className='sr-only'>Twitter</span>
+                      <span className='visually-hidden'>Twitter</span>
                     </a>
                   </li>
                   <li className='list-inline-item'>
@@ -237,7 +237,7 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
                         size='sm'
                         className='align-top'
                       />
-                      <span className='sr-only'>Medium</span>
+                      <span className='visually-hidden'>Medium</span>
                     </a>
                   </li>
                   <li className='list-inline-item'>
@@ -248,7 +248,7 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
                         size='sm'
                         className='align-top'
                       />
-                      <span className='sr-only'>Behance</span>
+                      <span className='visually-hidden'>Behance</span>
                     </a>
                   </li>
                 </ul>
@@ -259,7 +259,7 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
       </div>
       <div className='it-footer-small-prints clearfix'>
         <Container>
-          <h3 className='sr-only'>Sezione Link Utili</h3>
+          <h3 className='visually-hidden'>Sezione Link Utili</h3>
           <ul className='it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row'>
             <li className='list-inline-item'>
               <a href='#' title='Note Legali'>

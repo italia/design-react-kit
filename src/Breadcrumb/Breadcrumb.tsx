@@ -1,6 +1,7 @@
 import React, { ElementType, FC, HTMLAttributes } from 'react';
-import { Breadcrumb as BreadcrumbBase, CSSModule } from 'reactstrap';
+import { Breadcrumb as BreadcrumbBase } from 'reactstrap';
 import classNames from 'classnames';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 
 export interface BreadcrumbProps extends HTMLAttributes<HTMLDivElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */

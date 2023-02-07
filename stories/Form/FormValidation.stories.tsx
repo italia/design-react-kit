@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 
-import { Button, Input, Form, FormGroup, Label, FormText } from '../../src';
+import {
+  Button,
+  Input,
+  Form,
+  FormGroup,
+  Label,
+  FormText,
+  Row
+} from '../../src';
 
 export default {
   title: 'Componenti/Form/Form Validation'
@@ -26,7 +34,7 @@ export const ValidazioneCompleta = () => {
 
   return (
     <Form>
-      <div className='form-row'>
+      <Row>
         <FormGroup className='col-md-4 mb-3'>
           <Input
             id='completeValidation-name'
@@ -60,8 +68,8 @@ export const ValidazioneCompleta = () => {
             onChange={(e) => setUsername(e.target.value)}
           />
         </FormGroup>
-      </div>
-      <div className='form-row'>
+      </Row>
+      <Row>
         <FormGroup className='col-md-6 mb-3'>
           <Input
             id='completeValidation-city'
@@ -95,7 +103,7 @@ export const ValidazioneCompleta = () => {
             onChange={(e) => setCap(e.target.value)}
           />
         </FormGroup>
-      </div>
+      </Row>
       <FormGroup check>
         <Input
           id='termsAndConditions'

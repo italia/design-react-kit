@@ -1,7 +1,7 @@
 import React from 'react';
 import { actions } from '@storybook/addon-actions';
 
-import { Button, Input, Col, Toggle, Label, Select } from '../../src';
+import { Button, Input, Col, Toggle, Label, Select, Row } from '../../src';
 
 export default {
   title: 'Componenti/Form/Form Layout'
@@ -9,67 +9,72 @@ export default {
 
 export const DimensionamentoColonneBase = () => (
   <div>
-    <div className='form-row'>
+    <Row>
       <Input
         type='text'
         label='Nome'
         id='formNome'
-        wrapperClass='col col-md-6'
+        wrapperClassName='col col-md-6'
       />
       <Input
         type='text'
         label='Cognome'
         id='formCognome'
-        wrapperClass='col col-md-6'
+        wrapperClassName='col col-md-6'
       />
-    </div>
-    <div className='form-row'>
-      <Input type='text' label='Città' id='Citta' wrapperClass='col col-7' />
-      <Input type='text' label='Comune' id='Comune' wrapperClass='col' />
-      <Input type='text' label='CAP' id='CAP' wrapperClass='col' />
-    </div>
+    </Row>
+    <Row>
+      <Input
+        type='text'
+        label='Città'
+        id='Citta'
+        wrapperClassName='col col-7'
+      />
+      <Input type='text' label='Comune' id='Comune' wrapperClassName='col' />
+      <Input type='text' label='CAP' id='CAP' wrapperClassName='col' />
+    </Row>
   </div>
 );
 
 export const DimensionamentoColonneComplesso = () => (
   <div>
-    <div className='form-row'>
+    <Row>
       <Input
         type='email'
         label='Nome'
         id='inputEmail4'
         placeholder='inserisci il tuo indirizzo email'
-        wrapperClass='col col-md-6'
+        wrapperClassName='col col-md-6'
       />
       <Input
         type='password'
         label='Password'
         id='exampleInputPassword'
         placeholder='Inserisci la tua password'
-        wrapperClass='col col-md-6'
+        wrapperClassName='col col-md-6'
       />
-    </div>
-    <div className='form-row'>
+    </Row>
+    <Row>
       <Input
         type='text'
         label='Indirizzo'
         id='inputAddress'
         placeholder='Via Roma, 1'
-        wrapperClass='col'
+        wrapperClassName='col'
       />
-    </div>
-    <div className='form-row'>
+    </Row>
+    <Row>
       <Input
         type='text'
         label='Comune'
         id='inputCity'
-        wrapperClass='col col-md-6'
+        wrapperClassName='col col-md-6'
       />
       <Input
         type='text'
         label='CAP'
         id='inputCAP'
-        wrapperClass='col col-md-2'
+        wrapperClassName='col col-md-2'
       />
       <Col md='4'>
         <div className='bootstrap-select-wrapper'>
@@ -92,8 +97,8 @@ export const DimensionamentoColonneComplesso = () => (
           />
         </div>
       </Col>
-    </div>
-    <div className='form-row'>
+    </Row>
+    <Row>
       <Col md='6' className='form-group'>
         <Toggle
           label="Label dell'interruttore 1"
@@ -101,24 +106,26 @@ export const DimensionamentoColonneComplesso = () => (
           id='toggleEsempio1a'
         />
       </Col>
-    </div>
-    <div className='form-row'>
-      <Col className='form-group text-center'>
+    </Row>
+    <Row>
+      <Col sm='auto'>
         <Button color='primary' outline>
           Annulla
         </Button>
+      </Col>
+      <Col sm='auto'>
         <Button type='submit' color='primary'>
           Conferma
         </Button>
       </Col>
-    </div>
+    </Row>
   </div>
 );
 
 export const AutoDimensionamento = () => (
-  <div className='form-row align-items-center'>
+  <Row className='align-items-center'>
     <Col>
-      <label className='sr-only' htmlFor='inlineFormInput'>
+      <label className='visually-hidden' htmlFor='inlineFormInput'>
         Nome
       </label>
       <input
@@ -129,7 +136,7 @@ export const AutoDimensionamento = () => (
       />
     </Col>
     <Col>
-      <label className='sr-only' htmlFor='inlineFormInputGroup'>
+      <label className='visually-hidden' htmlFor='inlineFormInputGroup'>
         Username
       </label>
       <div className='input-group'>
@@ -161,7 +168,7 @@ export const AutoDimensionamento = () => (
         Invia
       </Button>
     </Col>
-  </div>
+  </Row>
 );
 
 export const FormDisabilitato = () => (
