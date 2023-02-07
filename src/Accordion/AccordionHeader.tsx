@@ -25,14 +25,13 @@ export const AccordionHeader: FC<AccordionHeaderProps> = ({
   ...attributes
 }) => {
   const Tag = tag;
-  const toggleClasses = classNames(className, {
+  const toggleClasses = classNames(className, 'accordion-button', {
     collapsed: active
   });
-
   return (
-    <div className='collapse-header' data-testid={testId}>
+    <div className='accordion-header' data-testid={testId}>
       <Tag
-        data-toggle='collapse'
+        data-bs-toggle='collapse'
         aria-expanded={active ? 'true' : 'false'}
         className={toggleClasses}
         onClick={onToggle}

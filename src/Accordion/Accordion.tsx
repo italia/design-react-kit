@@ -22,10 +22,10 @@ export const Accordion: FC<AccordionProps> = ({
   ...attributes
 }) => {
   const Tag = tag;
-  const classes = classNames('collapse-div', className, {
-    'collapse-background-active': background === 'active',
-    'collapse-background-hover': background === 'hover',
-    'collapse-left-icon': iconLeft
+  const classes = classNames('accordion', className, {
+    'accordion-background-active': background === 'active',
+    'accordion-background-hover': background === 'hover',
+    'accordion-left-icon': iconLeft
   });
 
   return <Tag {...attributes} className={classes} data-testid={testId} />;

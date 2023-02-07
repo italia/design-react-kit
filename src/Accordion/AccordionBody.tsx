@@ -107,7 +107,7 @@ export const AccordionBody = ({
             style={{ ...childProps.style, ...style }}
             {...childProps}
           >
-            <div className='collapse-body'>{children}</div>
+            <div className='accordion-body'>{children}</div>
           </Tag>
         );
       }}
