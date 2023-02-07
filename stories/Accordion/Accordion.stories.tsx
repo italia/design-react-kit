@@ -107,7 +107,10 @@ export const _Accordion = () => {
         >
           Accordion Group Item #1
         </AccordionHeader>
-        <AccordionBody active={collapseElementOpen === '1'}>
+        <AccordionBody
+          active={collapseElementOpen === '1'}
+          listClassName={'custom-class'}
+        >
           Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
           Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
           Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
@@ -122,7 +125,10 @@ export const _Accordion = () => {
         >
           Accordion Group Item #2
         </AccordionHeader>
-        <AccordionBody active={collapseElementOpen === '2'}>
+        <AccordionBody
+          active={collapseElementOpen === '2'}
+          listClassName={'custom-class'}
+        >
           Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
           farm-to-table, raw denim aesthetic synth nesciunt you probably
           haven&apos;t heard of them accusamus labore sustainable VHS.
@@ -137,7 +143,10 @@ export const _Accordion = () => {
         >
           Accordion Group Item #3
         </AccordionHeader>
-        <AccordionBody active={collapseElementOpen === '3'}>
+        <AccordionBody
+          active={collapseElementOpen === '3'}
+          listClassName={'custom-class'}
+        >
           Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
           sunt aliqua put a bird on it squid single-origin coffee nulla
           assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
