@@ -54,9 +54,9 @@ const TimeInputContainer = ({
         >
           {label}
         </label>
-        <small id={infoId} className={infoTextClass}>
+        <div id={infoId} className={infoTextClass}>
           {infoText}
-        </small>
+        </div>
         <div className='input-group-append'>{button}</div>
       </div>
     </div>

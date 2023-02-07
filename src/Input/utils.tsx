@@ -46,7 +46,7 @@ export function getInfoTextControlClass(
   return mapToCssModules(
     classNames({
       'form-text': valid || invalid,
-      'text-muted': !valid || invalid
+      'form-feedback just-validate-error-label': !valid || invalid
     }),
     cssModule
   );
@@ -78,7 +78,7 @@ type InputClassesParams = ValidationProps &
     isFocused: boolean;
     inputPassword?: boolean;
     formControlClass?: string;
-    infoTextControlClass: string;
+    infoTextControlClass?: string;
     originalWrapperClass: InputProps['wrapperClassName'];
   };
 
@@ -113,7 +113,7 @@ export function getClasses(
       className,
       {
         'is-invalid': invalid,
-        'is-valid': valid,
+        'just-validate-success-field': valid,
         [`form-control-${bsSize}`]: bsSize
       },
       formControlClass
@@ -128,7 +128,7 @@ export function getClasses(
     classNames(
       {
         'valid-feedback': valid,
-        'invalid-feedback': invalid
+        'invalid-feedback form-feedback just-validate-error-label': invalid
       },
       infoTextControlClass
     ),
