@@ -40,13 +40,13 @@ export function getFormControlClass(
 }
 
 export function getInfoTextControlClass(
-  { valid, invalid }: ValidationProps,
+  { invalid }: ValidationProps,
   cssModule?: CSSModule
 ) {
   return mapToCssModules(
     classNames({
-      'form-text': valid || invalid,
-      'form-feedback just-validate-error-label': !valid || invalid
+      'form-text': true,
+      'form-feedback just-validate-error-label': invalid
     }),
     cssModule
   );

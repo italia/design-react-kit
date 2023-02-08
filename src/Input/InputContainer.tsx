@@ -28,9 +28,9 @@ export const InputContainer: FC<InputContainerProps> = ({
       <label htmlFor={id} className={activeClass}>
         {label}
       </label>
-      <div id={infoId} className={infoTextClass}>
+      <small id={infoId} className={infoTextClass}>
         {infoText}
-      </div>
+      </small>
     </div>
   );
 };
