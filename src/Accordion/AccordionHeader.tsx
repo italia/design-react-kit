@@ -36,6 +36,7 @@ export const AccordionHeader: FC<AccordionHeaderProps> = ({
         className={toggleClasses}
         onClick={onToggle}
         {...attributes}
+        {...(tag === 'button' && { type: 'button' })}
       ></Tag>
       {append}
     </div>
