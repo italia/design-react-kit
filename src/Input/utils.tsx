@@ -45,8 +45,8 @@ export function getInfoTextControlClass(
 ) {
   return mapToCssModules(
     classNames({
-      'form-text': valid || invalid,
-      'form-feedback just-validate-error-label': !valid || invalid
+      'form-text': true,
+      'form-feedback just-validate-error-label': invalid
     }),
     cssModule
   );
