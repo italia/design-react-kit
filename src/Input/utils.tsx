@@ -40,7 +40,7 @@ export function getFormControlClass(
 }
 
 export function getInfoTextControlClass(
-  { valid, invalid }: ValidationProps,
+  { invalid }: ValidationProps,
   cssModule?: CSSModule
 ) {
   return mapToCssModules(
