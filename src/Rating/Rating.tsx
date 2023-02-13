@@ -68,9 +68,9 @@ export const Rating: FC<RatingProps> = ({
 
   const onChange = readOnly ? noop : onChangeRating;
 
-  const wrapperClasses = classNames(wrapperClassName, {
-    'rating rating-read-only': readOnly,
-    'rating rating-label': legend
+  const wrapperClasses = classNames(wrapperClassName, 'rating', {
+    'rating-read-only': readOnly,
+    'rating-label': legend
   });
 
   const fieldClasses = classNames(className);
