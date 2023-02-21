@@ -31,7 +31,6 @@ export const ModalHeader: FC<ModalHeaderProps> = ({
   wrapTag: WrapTag = 'div',
   closeAriaLabel = 'Close',
   close,
-  charCode = 215,
   cssModule,
   ...props
 }) => {
@@ -43,17 +42,13 @@ export const ModalHeader: FC<ModalHeaderProps> = ({
   let CloseButton;
 
   if (!close && toggle) {
-    var closeIcon =
-      typeof charCode === 'number' ? String.fromCharCode(charCode) : charCode;
     CloseButton = (
       <button
         type='button'
         onClick={toggle}
         className={mapToCssModules('btn-close', cssModule)}
         aria-label={closeAriaLabel}
-      >
-        <span aria-hidden>{closeIcon}</span>
-      </button>
+      ></button>
     );
   }
 
