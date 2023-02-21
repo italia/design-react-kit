@@ -1,4 +1,3 @@
-/* eslint jsx-a11y/anchor-is-valid: 0 */
 import React, { useState } from 'react';
 import {
   Button,
@@ -21,6 +20,7 @@ import {
   LinkList,
   Icon
 } from '../../src';
+import { Link } from '@storybook/components';
 
 export default {
   title: 'Componenti/Modal'
@@ -28,7 +28,7 @@ export default {
 
 export const _EsempioBase = () => (
   <div>
-    <div className='modal-content'>
+    <div className='modal-dialog' role='document'>
       <ModalHeader>Titolo della modale</ModalHeader>
       <ModalBody>Il testo del corpo della modale va qui.</ModalBody>
       <ModalFooter>
@@ -148,7 +148,9 @@ export const ModaleConFormInputs = () => {
         toggle={() => toggleModal(!isOpen)}
         labelledBy='esempio4'
       >
-        <ModalHeader id='esempio4'>Choose an item</ModalHeader>
+        <ModalHeader id='esempio4' toggle={() => toggleModal(!isOpen)}>
+          SCEGLI UNA OPZIONE
+        </ModalHeader>
         <ModalBody>
           <FormGroup check>
             <Input name='gruppo1' type='radio' id='radio1' defaultChecked />
@@ -170,8 +172,8 @@ export const ModaleConFormInputs = () => {
           </FormGroup>
         </ModalBody>
         <ModalFooter>
-          <Button outline color='primary'>
-            Cancel
+          <Button outline color='primary' onClick={() => toggleModal(!isOpen)}>
+            Chiudi
           </Button>
           <Button color='primary' onClick={() => toggleModal(!isOpen)} disabled>
             Ok
@@ -442,7 +444,7 @@ export const ModaleConContenutoScrollabile = () => {
         scrollable
         labelledBy='esempio8'
       >
-        <ModalHeader id='esempio8'>dialog header</ModalHeader>
+        <ModalHeader id='esempio8'>INTESTAZIONE MODALE</ModalHeader>
         <ModalBody>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -502,14 +504,14 @@ export const ModaleConContenutoScrollabile = () => {
             onClick={() => toggleModal(!isOpen)}
             size='sm'
           >
-            Cancel
+            Chiudi
           </Button>
           <Button
             color='primary'
             onClick={() => toggleModal(!isOpen)}
             size='sm'
           >
-            Action One
+            Azione Uno
           </Button>
         </ModalFooter>
       </Modal>
@@ -913,13 +915,13 @@ export const TooltipAndPopover = () => {
           <hr />
           <h5>Tooltip in una modal</h5>
           <p>
-            <a href='#' title='Tooltip' id='Example1'>
+            <Link href='#' title='Tooltip' id='Example1'>
               Questo link
-            </a>{' '}
+            </Link>{' '}
             e{' '}
-            <a href='#' title='Tooltip' id='Example2'>
+            <Link href='#' title='Tooltip' id='Example2'>
               questo link
-            </a>{' '}
+            </Link>{' '}
             attivano un tooltip al passaggio del mouse.
             <UncontrolledTooltip placement='top' target='Example1'>
               Tooltip
