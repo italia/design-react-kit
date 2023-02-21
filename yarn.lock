@@ -5089,6 +5089,13 @@ babel-plugin-dev-expression@^0.2.1:
   resolved "https://registry.yarnpkg.com/babel-plugin-dev-expression/-/babel-plugin-dev-expression-0.2.3.tgz#8aaf52155dfb063ed4ddec6280456fbc256fead4"
   integrity sha512-rP5LK9QQTzCW61nVVzw88En1oK8t8gTsIeC6E61oelxNsU842yMjF0G1MxhvUpCkxCEIj7sE8/e5ieTheT//uw==
 
+babel-plugin-dynamic-import-node@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-2.3.3.tgz#84fda19c976ec5c6defef57f9427b3def66e17a3"
+  integrity sha512-jZVI+s9Zg3IqA/kdi0i6UDCybUI3aSBLnglhYbSSjKlV7yF1F/5LWv8MakQmvYpnbJDS6fcBL2KzHSxNCMtWSQ==
+  dependencies:
+    object.assign "^4.1.0"
+
 babel-plugin-extract-import-names@1.6.22:
   version "1.6.22"
   resolved "https://registry.yarnpkg.com/babel-plugin-extract-import-names/-/babel-plugin-extract-import-names-1.6.22.tgz#de5f9a28eb12f3eb2578bf74472204e66d1a13dc"
