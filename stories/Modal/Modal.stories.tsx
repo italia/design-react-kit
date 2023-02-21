@@ -148,7 +148,9 @@ export const ModaleConFormInputs = () => {
         toggle={() => toggleModal(!isOpen)}
         labelledBy='esempio4'
       >
-        <ModalHeader id='esempio4'>Choose an item</ModalHeader>
+        <ModalHeader id='esempio4' toggle={() => toggleModal(!isOpen)}>
+          SCEGLI UNA OPZIONE
+        </ModalHeader>
         <ModalBody>
           <FormGroup check>
             <Input name='gruppo1' type='radio' id='radio1' defaultChecked />
@@ -171,7 +173,7 @@ export const ModaleConFormInputs = () => {
         </ModalBody>
         <ModalFooter>
           <Button outline color='primary'>
-            Cancel
+            Chiudi
           </Button>
           <Button color='primary' onClick={() => toggleModal(!isOpen)} disabled>
             Ok
@@ -442,7 +444,7 @@ export const ModaleConContenutoScrollabile = () => {
         scrollable
         labelledBy='esempio8'
       >
-        <ModalHeader id='esempio8'>dialog header</ModalHeader>
+        <ModalHeader id='esempio8'>INTESTAZIONE MODALE</ModalHeader>
         <ModalBody>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -502,14 +504,14 @@ export const ModaleConContenutoScrollabile = () => {
             onClick={() => toggleModal(!isOpen)}
             size='sm'
           >
-            Cancel
+            Chiudi
           </Button>
           <Button
             color='primary'
             onClick={() => toggleModal(!isOpen)}
             size='sm'
           >
-            Action One
+            Azione Uno
           </Button>
         </ModalFooter>
       </Modal>
