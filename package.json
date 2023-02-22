@@ -114,6 +114,7 @@
     "babel-plugin-dynamic-import-node": "^2.3.3",
     "bootstrap-italia": "^2.3.4",
     "browserslist-config-design-italia": "^1.0.0",
+    "bootstrap-italia": "^2.3.4",
     "chromatic": "^6.8.0",
     "circular-dependency-plugin": "^5.2.2",
     "eslint-plugin-mdx": "^1.13.0",
