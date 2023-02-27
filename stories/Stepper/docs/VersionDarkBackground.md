@@ -1,1 +1,0 @@
-To obtain a dark version of the Steppers, simply add the class `.bg-dark` to the main container.

@@ -10,12 +10,20 @@ export interface StepperHeaderProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const StepperHeader: FC<StepperHeaderProps> = ({
-  tag = 'ul',
+  tag = 'div',
   testId,
   className,
+  children,
   ...attributes
 }) => {
   const Tag = tag;
   const wrapperClass = classNames('steppers-header', className);
-  return <Tag {...attributes} className={wrapperClass} data-testid={testId} />;
+  // @ts-ignore not recognize children's props
+  const isMobile = children?.props?.variant === 'mobile';
+
+  return (
+    <Tag {...attributes} className={wrapperClass} data-testid={testId}>
+      {isMobile ? <span>{children}</span> : <ul>{children}</ul>}
+    </Tag>
+  );
 };
