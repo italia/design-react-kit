@@ -1,16 +1,124 @@
-import ProgressBarDark from './ProgressBarDark';
-import PalliniDark from './PalliniDark';
-import SaveButtonDark from './SaveButtonDark';
-import ConfirmButtonDark from './ConfirmButtonDark';
+import {
+  Button,
+  Icon,
+  Progress,
+  StepperContainer,
+  StepperContent,
+  StepperDots,
+  StepperNav
+} from '../../src';
+import React from 'react';
 
 export default {
-  title: 'Componenti/Stepper/Navigation variations for mobile - dark version'
+  title: 'Componenti/Steppers/Navigation variations for mobile - dark version'
 };
 
-export const _ProgressBar = ProgressBarDark;
+export const ProgressBarDark = () => {
+  return (
+    <StepperContainer mobile dark>
+      <StepperContent dark>
+        <p>Example content of the current step</p>
+      </StepperContent>
+      <StepperNav>
+        <Button outline color='primary' size='sm' className='steppers-btn-prev'>
+          <Icon icon='it-chevron-left' color='primary' />
+          Back
+        </Button>
+        <div className='steppers-progress'>
+          <Progress
+            indeterminate={false}
+            value='33'
+            tag='div'
+            style={{ width: '33%' }}
+          />
+        </div>
+        <Button outline color='primary' size='sm' className='steppers-btn-next'>
+          Next
+          <Icon icon='it-chevron-right' color='primary' />
+        </Button>
+      </StepperNav>
+    </StepperContainer>
+  );
+};
 
-export const _Pallini = PalliniDark;
+export const PalliniDark = () => {
+  return (
+    <StepperContainer mobile dark>
+      <StepperContent dark>
+        <p>Example content of the current step</p>
+      </StepperContent>
+      <StepperNav>
+        <Button outline color='primary' size='sm' className='steppers-btn-prev'>
+          <Icon icon='it-chevron-left' color='primary' />
+          Back
+        </Button>
+        <StepperDots>
+          <li className='done'>
+            <span className='visually-hidden'>Step 1 of 6 - Confirmed</span>
+          </li>
+          <li className='done'>
+            <span className='visually-hidden'>Step 2 of 6 - Confirmed</span>
+          </li>
+          <li className='done'>
+            <span className='visually-hidden'>Step 3 of 6 - Confirmed</span>
+          </li>
+          <li>
+            <span className='visually-hidden'>Step 4 of 6</span>
+          </li>
+          <li>
+            <span className='visually-hidden'>Step 5 of 6</span>
+          </li>
+          <li>
+            <span className='visually-hidden'>Step 6 of 6</span>
+          </li>
+        </StepperDots>
+        <Button outline color='primary' size='sm' className='steppers-btn-next'>
+          Next
+          <Icon icon='it-chevron-right' color='primary' />
+        </Button>
+      </StepperNav>
+    </StepperContainer>
+  );
+};
 
-export const __SaveButton = SaveButtonDark;
+export const SaveButtonDark = () => {
+  return (
+    <StepperContainer mobile dark>
+      <StepperContent dark>
+        <p>Example content of the current step</p>
+      </StepperContent>
+      <StepperNav>
+        <Button outline color='primary' size='sm' className='steppers-btn-prev'>
+          <Icon icon='it-chevron-left' />
+          Back
+        </Button>
+        <Button color='primary' size='sm' className='steppers-btn-save'>
+          Save
+        </Button>
+        <Button outline color='primary' size='sm' className='stepper-btn-next'>
+          Next
+          <Icon icon='it-chevron-right' />
+        </Button>
+      </StepperNav>
+    </StepperContainer>
+  );
+};
 
-export const __ConfirmButton = ConfirmButtonDark;
+export const ConfirmButtonDark = () => {
+  return (
+    <StepperContainer mobile dark>
+      <StepperContent dark>
+        <p>Example content of the current step</p>
+      </StepperContent>
+      <StepperNav>
+        <Button outline color='primary' size='sm' className='steppers-btn-prev'>
+          <Icon icon='it-chevron-left' />
+          Back
+        </Button>
+        <Button color='primary' size='sm' className='steppers-btn-confirm'>
+          Confirm
+        </Button>
+      </StepperNav>
+    </StepperContainer>
+  );
+};
