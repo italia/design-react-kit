@@ -20,6 +20,7 @@ import {
   LinkList,
   Icon
 } from '../../src';
+import { Link } from '@storybook/components';
 
 export default {
   title: 'Componenti/Modal'
@@ -914,13 +915,13 @@ export const TooltipAndPopover = () => {
           <hr />
           <h5>Tooltip in una modal</h5>
           <p>
-            <a href='#' title='Tooltip' id='Example1'>
+            <Link href='#' title='Tooltip' id='Example1'>
               Questo link
-            </a>{' '}
+            </Link>{' '}
             e{' '}
-            <a href='#' title='Tooltip' id='Example2'>
+            <Link href='#' title='Tooltip' id='Example2'>
               questo link
-            </a>{' '}
+            </Link>{' '}
             attivano un tooltip al passaggio del mouse.
             <UncontrolledTooltip placement='top' target='Example1'>
               Tooltip
