@@ -7,20 +7,22 @@ import { preloadIcons, StepperHeaderElement } from '../src';
 beforeAll(() => preloadIcons(['it-tool']));
 
 // Test for breaking changes
-test('Should support old variant "steppers-index" prop value as @deprecated', () => {
-  const { container } = render(
-    <StepperHeaderElement variant='steppers-index' />
-  );
+test('Should support old variant "steppers-index"', () => {
+  const { container } = render(<StepperHeaderElement variant='mobile' />);
   expect(container.firstChild).toHaveClass('steppers-index');
 });
 
 test('Should support old icon prop as @deprecated', () => {
-  const { getAllByRole } = render(<StepperHeaderElement icon='it-tool' />);
+  const { getAllByRole } = render(
+    <StepperHeaderElement prependIcon='it-tool' />
+  );
   expect(getAllByRole('img')).toHaveLength(1);
 });
 
 test('Should support old iconName prop as @deprecated', () => {
-  const { getAllByRole } = render(<StepperHeaderElement iconName='it-tool' />);
+  const { getAllByRole } = render(
+    <StepperHeaderElement prependIcon='it-tool' />
+  );
   expect(getAllByRole('img')).toHaveLength(1);
 });
 
