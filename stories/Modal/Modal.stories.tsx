@@ -1,4 +1,3 @@
-/* eslint jsx-a11y/anchor-is-valid: 0 */
 import React, { useState } from 'react';
 import {
   Button,
@@ -28,7 +27,7 @@ export default {
 
 export const _EsempioBase = () => (
   <div>
-    <div className='modal-content'>
+    <div className='modal-dialog' role='document'>
       <ModalHeader>Titolo della modale</ModalHeader>
       <ModalBody>Il testo del corpo della modale va qui.</ModalBody>
       <ModalFooter>
@@ -172,7 +171,7 @@ export const ModaleConFormInputs = () => {
           </FormGroup>
         </ModalBody>
         <ModalFooter>
-          <Button outline color='primary'>
+          <Button outline color='primary' onClick={() => toggleModal(!isOpen)}>
             Chiudi
           </Button>
           <Button color='primary' onClick={() => toggleModal(!isOpen)} disabled>
