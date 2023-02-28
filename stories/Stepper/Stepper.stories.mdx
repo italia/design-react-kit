@@ -1,0 +1,147 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
+import { StepperHeaderElement } from '../../src';
+
+<Meta title='Documentazione/Componenti/Steppers' of={StepperHeaderElement} />
+
+# Steppers
+
+The visible steps in the header can be accompanied by three additional classes:
+
+- `.confirmed` to locate an already confirmed step. It is a good idea to accompany these steps with an icon that identifies their completion (see below).
+- `.active` to identify the currently active step; on mobile it is the only one displayed.
+- `.steppers-index` to identify an index, visible only on mobile, which may contain the current state of progress indicated in text form
+
+It is necessary to reduce the browser window to appreciate the behavior of the Steppers on small devices.
+
+<Canvas>
+  <Story id='componenti-steppers--text-only' />
+</Canvas>
+
+### Text and Icons
+
+The labels present in the header steps can be anticipated by an icon.
+
+<Canvas>
+  <Story id='componenti-steppers--text-and-icons' />
+</Canvas>
+
+### Order of the Steps
+
+The labels present in the header steps can be anticipated by the ordinal number relating to the same.
+As shown in the example, in the case of a completed step instead of the number, a confirmation icon must be included with a text reserved for screen readers.
+
+You need to add the class `.no-line` to the `<li>` active to hide the blue bottom border, in this case redundant.
+
+<Canvas>
+  <Story id='componenti-steppers--order-of-the-steps' />
+</Canvas>
+
+### Navigation Of The Steps
+
+The passage from one step to the other through the buttons contained in `.steppers-nav` determines a change in the content present in `.steppers-content`. The container `.steppers-content` has an AIR attribute `aria-live="polite"` to notify screen reader users of the content change.
+
+The "Forward" and "Back" buttons must be used to implement the navigation logic of the Steppers in web apps and are equipped with classes `.steppers-btn-prevand` `.steppers-btn-next`.
+
+<Canvas>
+  <Story id='componenti-steppers--navigation-of-the-steps' />
+</Canvas>
+
+## Navigation variations for mobile
+
+The mobile version of the Steppers does not display the complete list of available steps, but only the current one. For this reason it is possible to add progress indicators to the `.steppers-nav`.
+
+These indicators will only be displayed on mobile, but in the following examples they have also been made available in desktop view. However, viewing in a reduced viewport is recommended to obtain a realistic example of the final appearance.
+
+### Progress bar
+
+The Progress bar is the native one of Bootstrap 4 and is contained in an element `.steppers-progress` located between the "Back" and "Forward" buttons.
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile--progress-bar' />
+</Canvas>
+
+### Dots
+
+The dots are elements `<li>` contained in a list `.steppers-dots` located between the "Back" and "Forward" buttons.
+
+For accessibility reasons, i `<li>`must contain one `<span>`with a class `.visually-hidden` reserved for screen readers with a text indicating the number of steps and the status.
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile--pallini' />
+</Canvas>
+
+### Save button
+
+On mobile devices it is possible to insert a third "Save" button of different appearance with class `.steppers-btn-save` between the "Back" and "Next" buttons.
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile--save-button' />
+</Canvas>
+
+### Confirm button
+
+On mobile devices it is possible to replace the "Next" button with a "Confirm" button of different style, with the class `.steppers-btn-confirm`.
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile--confirm-button' />
+</Canvas>
+
+## Navigation variations for mobile - dark version
+
+To obtain a dark version of the Steppers, simply add the class `.bg-dark` to the main container.
+
+<Canvas>
+  <Story id='componenti-steppers--version-on-a-dark-background' />
+</Canvas>
+
+### Header variants
+
+<Canvas>
+  <Story id='componenti-steppers--header-variants' />
+</Canvas>
+
+## Navigation variations for mobile - dark
+
+The mobile version of the Steppers does not display the complete list of available steps, but only the current one. For this reason it is possible to add progress indicators to the `.steppers-nav`.
+
+These indicators will only be displayed on mobile, but in the following examples they have also been made available in desktop view. However, viewing in a reduced viewport is recommended to obtain a realistic example of the final appearance.
+
+### Progress bar
+
+The Progress bar is the native one of Bootstrap 4 and is contained in an element `.steppers-progress` located between the "Back" and "Forward" buttons.
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile-dark-version--progress-bar-dark' />
+</Canvas>
+
+### Dots
+
+The dots are elements `<li>` contained in a list `.steppers-dots` located between the "Back" and "Forward" buttons.
+
+For accessibility reasons, i `<li>`must contain one `<span>`with a class `.visually-hidden` reserved for screen readers with a text indicating the number of steps and the status.
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile-dark-version--pallini-dark' />
+</Canvas>
+
+### Save button
+
+On mobile devices it is possible to insert a third "Save" button of different appearance with class `.steppers-btn-save` between the "Back" and "Next" buttons.
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile-dark-version--save-button-dark' />
+</Canvas>
+
+### Confirm button
+
+On mobile devices it is possible to replace the "Next" button with a "Confirm" button of different style, with the class `.steppers-btn-confirm`.
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile-dark-version--confirm-button-dark' />
+</Canvas>
+
+## Argomenti componente
+
+### Steppers
+
+<ArgsTable of={StepperHeaderElement} />

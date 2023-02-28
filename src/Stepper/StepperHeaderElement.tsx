@@ -67,10 +67,10 @@ export const StepperHeaderElement: FC<StepperHeaderElementProps> = ({
   const spanClass = classNames('steppers-number');
 
   const iconToAppend = appendIcon || icon;
-  const iconToPepend = prependIcon || iconName;
+  const iconToPrepend = prependIcon || iconName;
   return (
     <Tag {...attributes} className={wrapperClasses} data-testid={testId}>
-      {iconToPepend && <Icon icon={iconToPepend} />}
+      {iconToPrepend && <Icon icon={iconToPrepend} />}
       {stepperNumber && <span className={spanClass}>{stepperNumber}</span>}
       {children}
       {iconToAppend && <Icon icon={iconToAppend} className={iconClass} />}
