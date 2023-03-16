@@ -19,13 +19,14 @@ export const Callout: FC<CalloutProps> = ({
   children,
   color = '',
   highlight = false,
+  className,
   detailed,
   tag = 'div',
   testId,
   ...attributes
 }) => {
   const Tag = tag;
-  const classes = classNames('callout', color, {
+  const classes = classNames(className, color, 'callout', {
     'callout-highlight': highlight,
     'callout-more': detailed
   });
