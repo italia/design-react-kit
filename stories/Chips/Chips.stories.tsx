@@ -17,7 +17,7 @@ export const Esempi = () => (
       <p className='mt-4 mb-2'>Testo e chiusura</p>
       <Chip>
         <ChipLabel>Label</ChipLabel>
-        <Button close>
+        <Button>
           <Icon icon='it-close' />
         </Button>
       </Chip>
@@ -25,7 +25,7 @@ export const Esempi = () => (
       <Chip>
         <Icon icon='it-github' size='xs' />
         <ChipLabel>Label</ChipLabel>
-        <Button close>
+        <Button>
           <Icon icon='it-close' />
         </Button>
       </Chip>
@@ -38,7 +38,7 @@ export const Esempi = () => (
           />
         </div>
         <ChipLabel>Label</ChipLabel>
-        <Button close>
+        <Button>
           <Icon icon='it-close' />
         </Button>
       </Chip>
@@ -52,7 +52,7 @@ export const Esempi = () => (
       <p className='mt-4 mb-2'>Testo e chiusura</p>
       <Chip large>
         <ChipLabel>Label</ChipLabel>
-        <Button close>
+        <Button>
           <Icon icon='it-close' />
         </Button>
       </Chip>
@@ -60,7 +60,7 @@ export const Esempi = () => (
       <Chip large>
         <Icon icon='it-github' size='xs' />
         <ChipLabel>Label</ChipLabel>
-        <Button close>
+        <Button>
           <Icon icon='it-close' />
         </Button>
       </Chip>
@@ -73,7 +73,7 @@ export const Esempi = () => (
           />
         </div>
         <ChipLabel>Label</ChipLabel>
-        <Button close>
+        <Button>
           <Icon icon='it-close' />
         </Button>
       </Chip>
@@ -88,14 +88,14 @@ export const ChipDisabilitata = () => (
     </Chip>
     <Chip simple large disabled>
       <ChipLabel>Label Disabled</ChipLabel>
-      <Button close disabled>
+      <Button disabled>
         <Icon icon='it-close' />
       </Button>
     </Chip>
     <Chip large disabled>
       <Icon icon='it-github' size='xs' />
       <ChipLabel>Label Disabled</ChipLabel>
-      <Button close disabled>
+      <Button disabled>
         <Icon icon='it-close' />
       </Button>
     </Chip>
@@ -107,7 +107,7 @@ export const ChipDisabilitata = () => (
         />
       </div>
       <ChipLabel>Label</ChipLabel>
-      <Button close disabled>
+      <Button disabled>
         <Icon icon='it-close' />
       </Button>
     </Chip>
@@ -121,14 +121,14 @@ export const GruppiDiChip = () => (
     </Chip>
     <Chip>
       <ChipLabel>Label</ChipLabel>
-      <Button close>
+      <Button>
         <Icon icon='it-close' />
       </Button>
     </Chip>
     <Chip>
       <Icon icon='it-github' size='xs' />
       <ChipLabel>Label </ChipLabel>
-      <Button close>
+      <Button>
         <Icon icon='it-close' />
       </Button>
     </Chip>
@@ -140,7 +140,7 @@ export const GruppiDiChip = () => (
         />
       </div>
       <ChipLabel>Label</ChipLabel>
-      <Button close>
+      <Button>
         <Icon icon='it-close' />
       </Button>
     </Chip>
@@ -150,14 +150,14 @@ export const GruppiDiChip = () => (
     </Chip>
     <Chip large>
       <ChipLabel>Label</ChipLabel>
-      <Button close>
+      <Button>
         <Icon icon='it-close' />
       </Button>
     </Chip>
     <Chip large>
       <Icon icon='it-github' size='xs' />
       <ChipLabel>Label </ChipLabel>
-      <Button close>
+      <Button>
         <Icon icon='it-close' />
       </Button>
     </Chip>
@@ -169,7 +169,7 @@ export const GruppiDiChip = () => (
         />
       </div>
       <ChipLabel>Label</ChipLabel>
-      <Button close>
+      <Button>
         <Icon icon='it-close' />
       </Button>
     </Chip>
