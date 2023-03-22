@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/italia/design-react-kit/issues"
   },
-  "version": "4.0.2",
+  "version": "5.0.0-0",
   "license": "BSD-3",
   "module": "dist/esm/index.js",
   "main": "./src/index.tsx",
