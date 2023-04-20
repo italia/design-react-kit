@@ -26,7 +26,7 @@ export const AccordionHeader: FC<AccordionHeaderProps> = ({
 }) => {
   const Tag = tag;
   const toggleClasses = classNames(className, 'accordion-button', {
-    collapsed: active
+    collapsed: !active
   });
   return (
     <div className='accordion-header' data-testid={testId}>
