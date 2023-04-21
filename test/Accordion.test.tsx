@@ -31,6 +31,20 @@ describe('Accordion component', () => {
     expect(container.getElementsByClassName('accordion-button').length).toBe(1);
   });
 
+  it('should have the class collapsed when collapsed', () => {
+    const { container } = render(
+      <Accordion>
+        <AccordionItem>
+          <AccordionHeader>Content</AccordionHeader>
+        </AccordionItem>
+      </Accordion>
+    );
+
+    expect(
+      container.getElementsByClassName('accordion-button collapsed').length
+    ).toBe(1);
+  });
+
   it('should have a testId for resilient UI changes', () => {
     const collapse = render(
       <Accordion testId={'test-id-accordion'}>Content</Accordion>
