@@ -44,7 +44,7 @@ const SlimHeader = ({ theme }: ThemeType) => {
               </Row>
             </DropdownMenu>
           </UncontrolledDropdown>
-          <Button color='primary' block className='btn-icon' href='#'>
+          <Button color='primary' className='btn-icon btn-full' href='#'>
             <span className='rounded-icon'>
               <Icon color='primary' icon='it-user' />
             </span>
