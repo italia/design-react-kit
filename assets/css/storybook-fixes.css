@@ -152,7 +152,7 @@ div[id*='componenti-bottomnav'] .bottom-nav {
 // Display Back to top button inline in the docs
 // ======================================= */
 
-.back-to-top:not(#example) {
+.back-to-top:not(.example) {
   position: relative;
   bottom: unset;
   right: unset;

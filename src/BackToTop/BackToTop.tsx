@@ -12,10 +12,6 @@ export interface BackToTopProps {
    */
   className?: string;
   /**
-   * Optional id to pass to <a> element
-   */
-  id?: string;
-  /**
    * Render the dark variant of the back to top button
    */
   dark?: boolean;
@@ -31,7 +27,7 @@ function backToTop() {
   btt.dispose();
 }
 
-export const BackToTop = ({ className, id, dark = false }: BackToTopProps) => {
+export const BackToTop = ({ className, dark = false }: BackToTopProps) => {
   const [showBtn, setShowBtn] = useState(false);
 
   useLayoutEffect(() => {
@@ -54,7 +50,7 @@ export const BackToTop = ({ className, id, dark = false }: BackToTopProps) => {
         showBtn && 'back-to-top-show',
         dark && 'dark'
       )}
-      id={id}
+      id='back-to-top-btn'
       onClick={() => backToTop()}
       style={{ padding: 0 }}
     >
