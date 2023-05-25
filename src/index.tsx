@@ -68,6 +68,7 @@ export { AvatarIcon } from './Avatar/AvatarIcon';
 export { AvatarPresence } from './Avatar/AvatarPresence';
 export { AvatarStatus } from './Avatar/AvatarStatus';
 export { AvatarWrapper } from './Avatar/AvatarWrapper';
+export { BackToTop } from './BackToTop/BackToTop';
 export { Badge } from './Badge/Badge';
 export { Breadcrumb } from './Breadcrumb/Breadcrumb';
 export { Button } from './Button/Button';
