@@ -68,6 +68,7 @@ export const BackToTop = ({
       id='back-to-top-btn'
       onClick={() => backToTop()}
       style={{ padding: 0 }}
+      color={!dark ? 'primary' : ''}
     >
       <Icon
         color={dark ? 'secondary' : 'white'}
