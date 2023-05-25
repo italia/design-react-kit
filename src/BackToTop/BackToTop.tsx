@@ -4,6 +4,8 @@ import classNames from 'classnames';
 import { BackToTop as BTT } from 'bootstrap-italia';
 import { Button } from '../Button/Button';
 
+// TODO: fix the light variant becoming white when pressed
+
 export interface BackToTopProps {
   /**
    * Optional classnames to pass to <a> element

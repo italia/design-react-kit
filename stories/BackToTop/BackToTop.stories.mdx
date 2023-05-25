@@ -42,11 +42,23 @@ Aggiungendo la classe `.shadow` al componente si aggiunge un'ombra al pulsante.
 
 ### Versione per sfondo scuro
 
-Aggiungendo la classe `.dark` al componente si ottiene un pulsante utilizzabile su sfondo scuro.
+Aggiungendo la prop `dark` al componente si ottiene un pulsante utilizzabile su sfondo scuro.
 
 <Canvas>
   <div class='d-flex align-items-center p-4 neutral-1-bg-a8'>
     <BackToTop dark />
     <BackToTop dark className='back-to-top-small' />
+  </div>
+</Canvas>
+
+#### Ombra su sfondo scuro
+
+Aggiungendo la prop `dark` e la classe `.shadow` al componente si ottiente un pulsante con ombra utilizzabile su sfondo
+scuro.
+
+<Canvas>
+  <div class='d-flex align-items-center p-4 neutral-1-bg-a8'>
+    <BackToTop dark className='shadow' />
+    <BackToTop dark className='back-to-top-small shadow' />
   </div>
 </Canvas>
