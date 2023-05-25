@@ -23,20 +23,20 @@ visualizzati in linea.**
 
 ### Versione ridotta
 
-Aggiungendo la classe `.back-to-top-small` al componente si ottiene un pulsante di dimensioni ridotte.
+Aggiungendo la prop `small` al componente si ottiene un pulsante di dimensioni ridotte.
 
 <Canvas>
-  <BackToTop className='back-to-top-small' />
+  <BackToTop small />
 </Canvas>
 
 ### Versione con ombra
 
-Aggiungendo la classe `.shadow` al componente si aggiunge un'ombra al pulsante.
+Aggiungendo la prop `shadow` al componente si aggiunge un'ombra al pulsante.
 
 <Canvas>
   <div className='d-flex align-items-center'>
-    <BackToTop className='shadow' />
-    <BackToTop className='back-to-top-small shadow' />
+    <BackToTop shadow />
+    <BackToTop shadow small />
   </div>
 </Canvas>
 
@@ -47,18 +47,17 @@ Aggiungendo la prop `dark` al componente si ottiene un pulsante utilizzabile su 
 <Canvas>
   <div class='d-flex align-items-center p-4 neutral-1-bg-a8'>
     <BackToTop dark />
-    <BackToTop dark className='back-to-top-small' />
+    <BackToTop dark small />
   </div>
 </Canvas>
 
 #### Ombra su sfondo scuro
 
-Aggiungendo la prop `dark` e la classe `.shadow` al componente si ottiente un pulsante con ombra utilizzabile su sfondo
-scuro.
+Aggiungendo le prop `dark` e `shadow` al componente si ottiente un pulsante con ombra utilizzabile su sfondo scuro.
 
 <Canvas>
   <div class='d-flex align-items-center p-4 neutral-1-bg-a8'>
-    <BackToTop dark className='shadow' />
-    <BackToTop dark className='back-to-top-small shadow' />
+    <BackToTop dark shadow />
+    <BackToTop dark shadow small />
   </div>
 </Canvas>

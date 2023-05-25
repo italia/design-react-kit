@@ -15,6 +15,14 @@ export interface BackToTopProps {
    * Render the dark variant of the back to top button
    */
   dark?: boolean;
+  /**
+   * Render the small variant of the back to top button
+   */
+  small?: boolean;
+  /**
+   * Add a shadow to the button
+   */
+  shadow?: boolean;
 }
 
 function backToTop() {
@@ -27,7 +35,12 @@ function backToTop() {
   btt.dispose();
 }
 
-export const BackToTop = ({ className, dark = false }: BackToTopProps) => {
+export const BackToTop = ({
+  className,
+  dark = false,
+  small = false,
+  shadow = false
+}: BackToTopProps) => {
   const [showBtn, setShowBtn] = useState(false);
 
   useLayoutEffect(() => {
@@ -47,8 +60,10 @@ export const BackToTop = ({ className, dark = false }: BackToTopProps) => {
       className={classNames(
         className,
         'back-to-top',
+        small && 'back-to-top-small',
         showBtn && 'back-to-top-show',
-        dark && 'dark'
+        dark && 'dark',
+        shadow && 'shadow'
       )}
       id='back-to-top-btn'
       onClick={() => backToTop()}
