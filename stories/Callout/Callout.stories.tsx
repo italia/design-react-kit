@@ -20,7 +20,9 @@ export default {
 
 export const EsempioBasico: Story = () => (
   <Callout>
-    <CalloutTitle>Titolo Callout</CalloutTitle>
+    <CalloutTitle>
+      <span className='text'>Titolo Callout</span>
+    </CalloutTitle>
     <CalloutText>
       Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit
       amet, consectetur adipiscing elit. Aenean non augue non purus vestibulum
@@ -34,7 +36,7 @@ export const EsempioConIcona: Story = () => (
     <CalloutTitle>
       <Icon icon='it-info-circle' padding={false} aria-hidden />
       <span className='visually-hidden'>Confermato</span>
-      Titolo Callout
+      <span className='text'>Titolo Callout</span>
     </CalloutTitle>
     <CalloutText>
       Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit
@@ -51,7 +53,7 @@ export const EsempioAccessibilita: Story = () => (
     <CalloutTitle>
       <Icon icon='it-check-circle' padding={false} aria-hidden />
       <span className='visually-hidden'>Confermato</span>
-      Titolo Callout
+      <span className='text'>Titolo Callout</span>
     </CalloutTitle>
     <CalloutText>
       Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit
@@ -71,7 +73,7 @@ export const CalloutTemplate: Story<CalloutTemplateProps> = ({
   <Callout color={color}>
     <CalloutTitle>
       <Icon icon='it-check-circle' padding={false} aria-hidden />
-      {title}
+      <span className='text'>{title}</span>
     </CalloutTitle>
     <CalloutText>
       Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit
