@@ -8,7 +8,24 @@ import { Callout, CalloutTitle, CalloutText } from '../../src';
 
 ## Componente per evidenziare contenuti testuali
 
-I Callout posso essere utilizzati per evidenziare alcune parti del testo che richiedono particolare attenzione. Possono contenere messaggi di errore, avvertimento suggerimenti etc.
+I Callout posso essere utilizzati per evidenziare alcune parti del testo che richiedono particolare attenzione. Possono contenere messaggi di errore, avvertimento suggerimenti, ecc.
+
+<div className='docs'>
+  <Callout color='danger'>
+    <CalloutTitle>
+      <span className='text'>Breaking change</span>
+    </CalloutTitle>
+    <CalloutText>
+      Dalla versione 5 del kit, nel callout basico è necessario mettere il
+      titolo in un tag `span` con classe "text". Esempio:{' '}
+      <Code>
+        &lt;CalloutTitle&gt;&lt;span class="text"&gt;Titolo
+        callout&lt;/span&gt;&lt;/CalloutTitle&gt;
+      </Code>
+      .
+    </CalloutText>
+  </Callout>
+</div>
 
 ### Esempi
 
@@ -41,7 +58,7 @@ Al titolo può essere aggiunta un’icona a scelta fra quelle disponibili, avend
   <Story id='componenti-callout--esempio-con-icona' />
 </Canvas>
 
-Al Callout può essere aggiunta un attributo che determina il colore del bordo e del titolo. Le classi disponibili elencate qui di seguito.
+Al Callout può essere aggiunto un attributo che determina il colore del bordo e del titolo. I colori disponibili sono elencati di seguito.
 
 ### Callout Success
 
