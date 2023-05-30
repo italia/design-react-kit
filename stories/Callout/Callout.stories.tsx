@@ -1,17 +1,14 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
-import React, { useState } from 'react';
+import React from 'react';
 import type { Story } from '@storybook/react';
 
 import {
-  Accordion,
-  AccordionHeader,
-  AccordionBody,
-  Button,
   Callout,
   CalloutText,
   CalloutTitle,
   Icon,
-  CalloutProps
+  CalloutProps,
+  CalloutMoreFooter
 } from '../../src';
 
 export default {
@@ -205,10 +202,6 @@ export const CalloutHighlightsNote: Story<CalloutHighlightTemplateProps> =
 CalloutHighlightsNote.args = { title: 'Note', color: 'note', icon: 'info' };
 
 export const CalloutApprofondimento = () => {
-  const [isOpen, toggleOpen] = useState(false);
-  const toggle = () => {
-    toggleOpen(!isOpen);
-  };
   return (
     <Callout color='note' detailed>
       <CalloutTitle>
@@ -237,51 +230,35 @@ export const CalloutApprofondimento = () => {
           purus vestibulum varius. Maecenas ullamcorper tincidunt nulla quis
           laoreet.
         </p>
-        <Accordion>
-          <AccordionHeader
-            tag={Button}
-            active={isOpen}
-            onToggle={toggle}
-            className='callout-more-toggle'
-            append={
-              <a className='callout-more-download' href='#'>
-                <Icon icon='it-download' />
-                <span className='visually-hidden'>PDF</span> Download
-              </a>
-            }
-          >
-            Leggi tutto <span></span>
-          </AccordionHeader>
-          <AccordionBody active={isOpen}>
-            <p>
-              Aenean tortor enim, suscipit eget commodo at, imperdiet quis diam.
-              Vestibulum non accumsan felis, at ultrices lorem. Pellentesque ac
-              diam a ipsum cursus interdum id nec odio. Vestibulum nec congue
-              mauris. Aliquam et dui purus. Mauris in imperdiet risus, sed
-              blandit tellus. Donec posuere accumsan lacinia. Mauris dignissim,
-              sem vel volutpat rhoncus, neque mi ullamcorper ante, vitae
-              volutpat ipsum quam id purus. Duis tincidunt sodales nisl eget
-              ultricies. Sed condimentum mi eu ex venenatis, quis bibendum dui
-              ultrices. Quisque ex eros, pellentesque vitae enim sed, pharetra
-              tempus dolor. Donec eu nibh ac lacus luctus pellentesque. Duis
-              interdum scelerisque magna nec malesuada.
-            </p>
-            <p>
-              Maecenas at erat id{' '}
-              <strong>sem interdum efficitur eu sed nunc.</strong> Mauris sit
-              amet erat eget augue molestie malesuada ut sed ex. In sed
-              dignissim elit. Donec efficitur, sem eget vestibulum auctor, sem
-              erat interdum magna, eu commodo odio mauris semper dolor.
-            </p>
-            <p>
-              Maecenas vulputate ante dictum <a href='#'>vestibulum volutpat</a>
-              . Lorem ipsum dolor sit amet,{' '}
-              <strong>consectetur adipiscing elit.</strong> Aenean non augue non
-              purus vestibulum varius. Maecenas ullamcorper tincidunt nulla quis
-              laoreet.
-            </p>
-          </AccordionBody>
-        </Accordion>
+        <CalloutMoreFooter>
+          <p>
+            Aenean tortor enim, suscipit eget commodo at, imperdiet quis diam.
+            Vestibulum non accumsan felis, at ultrices lorem. Pellentesque ac
+            diam a ipsum cursus interdum id nec odio. Vestibulum nec congue
+            mauris. Aliquam et dui purus. Mauris in imperdiet risus, sed blandit
+            tellus. Donec posuere accumsan lacinia. Mauris dignissim, sem vel
+            volutpat rhoncus, neque mi ullamcorper ante, vitae volutpat ipsum
+            quam id purus. Duis tincidunt sodales nisl eget ultricies. Sed
+            condimentum mi eu ex venenatis, quis bibendum dui ultrices. Quisque
+            ex eros, pellentesque vitae enim sed, pharetra tempus dolor. Donec
+            eu nibh ac lacus luctus pellentesque. Duis interdum scelerisque
+            magna nec malesuada.
+          </p>
+          <p>
+            Maecenas at erat id{' '}
+            <strong>sem interdum efficitur eu sed nunc.</strong> Mauris sit amet
+            erat eget augue molestie malesuada ut sed ex. In sed dignissim elit.
+            Donec efficitur, sem eget vestibulum auctor, sem erat interdum
+            magna, eu commodo odio mauris semper dolor.
+          </p>
+          <p>
+            Maecenas vulputate ante dictum <a href='#'>vestibulum volutpat</a>.
+            Lorem ipsum dolor sit amet,{' '}
+            <strong>consectetur adipiscing elit.</strong> Aenean non augue non
+            purus vestibulum varius. Maecenas ullamcorper tincidunt nulla quis
+            laoreet.
+          </p>
+        </CalloutMoreFooter>
       </CalloutText>
     </Callout>
   );
