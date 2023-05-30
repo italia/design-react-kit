@@ -1,7 +1,6 @@
 import React, { useLayoutEffect, useState } from 'react';
 import { Icon } from '../Icon/Icon';
 import classNames from 'classnames';
-import { BackToTop as BTT } from 'bootstrap-italia';
 import { Button } from '../Button/Button';
 
 export interface BackToTopProps {
@@ -27,15 +26,9 @@ export interface BackToTopProps {
   showOffset?: number;
 }
 
-function backToTop() {
-  const btt = new BTT(
-    document.getElementById('back-to-top-btn') as HTMLButtonElement
-  );
-
-  btt.scrollToTop();
-
-  btt.dispose();
-}
+const backToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
 export const BackToTop = ({
   className,
@@ -69,7 +62,7 @@ export const BackToTop = ({
         shadow && 'shadow'
       )}
       id='back-to-top-btn'
-      onClick={() => backToTop()}
+      onClick={backToTop}
       style={{ padding: 0 }}
       color={!dark ? 'primary' : ''}
     >
