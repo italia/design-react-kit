@@ -21,6 +21,10 @@ export interface BackToTopProps {
    * Add a shadow to the button
    */
   shadow?: boolean;
+  /**
+   * Configure after how many scrolled pixels the button is shown
+   */
+  showOffset?: number;
 }
 
 function backToTop() {
@@ -37,19 +41,20 @@ export const BackToTop = ({
   className,
   dark = false,
   small = false,
-  shadow = false
+  shadow = false,
+  showOffset = 200
 }: BackToTopProps) => {
   const [showBtn, setShowBtn] = useState(false);
 
   useLayoutEffect(() => {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > showOffset) {
         setShowBtn(true);
       } else {
         setShowBtn(false);
       }
     });
-  }, []);
+  }, [showOffset]);
 
   return (
     <Button
