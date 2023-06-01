@@ -4,8 +4,7 @@ import { Button } from '../Button/Button';
 import { Icon } from '../Icon/Icon';
 
 export interface CalloutMoreFooterProps {
-  /** */
-  id: string;
+  id?: string;
   /** Utilizzarlo in caso si utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente */
@@ -14,7 +13,7 @@ export interface CalloutMoreFooterProps {
 }
 
 export const CalloutMoreFooter: FC<CalloutMoreFooterProps> = ({
-  id,
+  id = 'cm-footer',
   tag = 'div',
   className,
   fileUrl,
