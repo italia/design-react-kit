@@ -16,13 +16,13 @@ export const _Esempi: Story<AlertProps> = () => (
       Questo è un alert di tipo <b>info</b>!
     </Alert>
     <Alert color='success'>
-      Questo è un alert di <b>success</b>!
+      Questo è un alert di tipo <b>success</b>!
     </Alert>
     <Alert color='danger'>
-      Questo è un alert di <b>danger</b>!
+      Questo è un alert di tipo <b>danger</b>!
     </Alert>
     <Alert color='warning'>
-      Questo è un alert di <b>warning</b>!
+      Questo è un alert di tipo <b>warning</b>!
     </Alert>
   </div>
 );
