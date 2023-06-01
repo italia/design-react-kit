@@ -76,6 +76,7 @@ export { Forward } from './Forward/Forward';
 export { Callout } from './Callout/Callout';
 export { CalloutText } from './Callout/CalloutText';
 export { CalloutTitle } from './Callout/CalloutTitle';
+export { CalloutMoreFooter } from './Callout/CalloutMoreFooter';
 export { Card } from './Card/Card';
 export { CardBody } from './Card/CardBody';
 export { CardTitle } from './Card/CardTitle';

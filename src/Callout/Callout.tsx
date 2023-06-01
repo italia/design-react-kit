@@ -32,7 +32,11 @@ export const Callout: FC<CalloutProps> = ({
   });
   return (
     <Tag className={classes} {...attributes} data-testid={testId}>
-      {children}
+      {!highlight && !detailed ? (
+        <div className='callout-inner'>{children}</div>
+      ) : (
+        children
+      )}
     </Tag>
   );
 };
