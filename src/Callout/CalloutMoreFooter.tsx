@@ -4,6 +4,8 @@ import { Button } from '../Button/Button';
 import { Icon } from '../Icon/Icon';
 
 export interface CalloutMoreFooterProps {
+  /** */
+  id: string;
   /** Utilizzarlo in caso si utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente */
@@ -12,6 +14,7 @@ export interface CalloutMoreFooterProps {
 }
 
 export const CalloutMoreFooter: FC<CalloutMoreFooterProps> = ({
+  id,
   tag = 'div',
   className,
   fileUrl = '#',
@@ -25,12 +28,12 @@ export const CalloutMoreFooter: FC<CalloutMoreFooterProps> = ({
 
   return (
     <Tag {...attributes} className={classes}>
-      <div className='collapse-header' id='heading1'>
+      <div className='collapse-header' id={`${id}-heading`}>
         <Button
           color='primary'
           className='callout-more-toggle'
           onClick={() => setOpen(!isOpen)}
-          aria-controls='collapse1'
+          aria-controls={`${id}-collapse`}
           aria-expanded={isOpen}
           style={{ fontFamily: 'var(--bs-font-sans-serif)', fontSize: '1rem' }}
         >
@@ -48,8 +51,8 @@ export const CalloutMoreFooter: FC<CalloutMoreFooterProps> = ({
       <div
         className={`collapse ${isOpen ? 'show' : ''}`}
         role='tabpanel'
-        id='collapse1'
-        aria-labelledby='heading1'
+        id={`${id}-collapse`}
+        aria-labelledby={`${id}-heading`}
       >
         <div className='collapse-body'>{children}</div>
       </div>
