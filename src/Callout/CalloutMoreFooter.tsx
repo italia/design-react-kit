@@ -17,7 +17,7 @@ export const CalloutMoreFooter: FC<CalloutMoreFooterProps> = ({
   id,
   tag = 'div',
   className,
-  fileUrl = '#',
+  fileUrl,
   children,
   ...attributes
 }) => {
@@ -39,14 +39,19 @@ export const CalloutMoreFooter: FC<CalloutMoreFooterProps> = ({
         >
           Leggi tutto <span></span>
         </Button>
-        <a
-          className='callout-more-download'
-          href={fileUrl}
-          style={{ fontFamily: 'var(--bs-font-sans-serif)', fontSize: '1rem' }}
-        >
-          <Icon icon='it-download' />
-          <span className='visually-hidden'>PDF</span>Download
-        </a>
+        {fileUrl && (
+          <a
+            className='callout-more-download'
+            href={fileUrl}
+            style={{
+              fontFamily: 'var(--bs-font-sans-serif)',
+              fontSize: '1rem'
+            }}
+          >
+            <Icon icon='it-download' />
+            <span className='visually-hidden'>PDF</span>Download
+          </a>
+        )}
       </div>
       <div
         className={`collapse ${isOpen ? 'show' : ''}`}
