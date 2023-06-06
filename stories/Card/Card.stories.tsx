@@ -445,7 +445,7 @@ export const SpecialCard: Story = () => (
   <Row>
     <Col xs='12' lg='6'>
       {/* Start card */}
-      <Card className='card-img no-after special-card' tag='a'>
+      <Card className='card-img no-after special-card' tag='a' href='#'>
         <div className='img-responsive-wrapper'>
           <div className='img-responsive'>
             <figure className='img-wrapper'>
