@@ -138,3 +138,17 @@ export const CheckboxGruppi = () => (
     </Row>
   </section>
 );
+
+export const CheckboxMixed = () => (
+  <Form className='m-3'>
+    <fieldset>
+      <legend>Checkbox</legend>
+      <FormGroup check>
+        <Input id='mixed-checkbox1' type='checkbox' className='semi-checked' />
+        <Label for='mixed-checkbox1' check>
+          Checkbox di esempio
+        </Label>
+      </FormGroup>
+    </fieldset>
+  </Form>
+);
