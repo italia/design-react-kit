@@ -25,12 +25,13 @@ export const Megamenu: FC<MegamenuProps> = ({
     setOpenNav(!openNav);
   };
   const classes = classNames(className, 'has-megamenu');
+
   return (
     <Navbar className={classes} {...attributes} data-testid={testId}>
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
         <Icon icon='it-list' size='sm' />
       </NavbarToggler>
-      {brand}
+      <>{brand}</>
       <Collapse isOpen={openNav} megamenu>
         <Nav navbar>{children}</Nav>
       </Collapse>

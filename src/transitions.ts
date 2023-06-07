@@ -31,7 +31,8 @@ const transitionStatus = {
   entering: 1,
   entered: 1,
   exiting: 1,
-  exited: 1
+  exited: 1,
+  unmounted: 1
 };
 
 export type TransitionStates = keyof typeof transitionStatus;

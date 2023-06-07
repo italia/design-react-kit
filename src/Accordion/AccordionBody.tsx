@@ -20,7 +20,8 @@ const transitionStatusToClassHash: Record<TransitionStates, string> = {
   entering: 'collapsing',
   entered: 'collapse show',
   exiting: 'collapsing',
-  exited: 'collapse'
+  exited: 'collapse',
+  unmounted: 'collapse'
 };
 
 function getTransitionClass(status: TransitionStates) {
@@ -109,11 +110,12 @@ export const AccordionBody = ({
             style={{ ...childProps.style, ...style }}
             {...childProps}
           >
-            <div className={listClasses}>{children}</div>
+            <div className={listClasses}>
+              <>{children}</>
+            </div>
           </Tag>
         );
       }}
     </Transition>
   );
 };
-// }

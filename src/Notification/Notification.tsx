@@ -9,7 +9,9 @@ export type NotificationProps = Omit<ToastProps, 'transition'> &
 
 const dummyTransition = cssTransition({ enter: '', exit: '' });
 
-export const Notification: FC<NotificationProps> = (props) => {
+export const Notification: FC<React.PropsWithChildren<NotificationProps>> = (
+  props
+) => {
   const { toastRef, eventHandlers } = useToast({
     ...props,
     transition: dummyTransition

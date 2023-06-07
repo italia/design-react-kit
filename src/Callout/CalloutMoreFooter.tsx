@@ -12,7 +12,9 @@ export interface CalloutMoreFooterProps {
   fileUrl?: string;
 }
 
-export const CalloutMoreFooter: FC<CalloutMoreFooterProps> = ({
+export const CalloutMoreFooter: FC<
+  React.PropsWithChildren<CalloutMoreFooterProps>
+> = ({
   id = 'cm-footer',
   tag = 'div',
   className,

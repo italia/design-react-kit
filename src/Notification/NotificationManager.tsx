@@ -53,7 +53,7 @@ export const NotificationManager = (props: NotificationManagerProps) => {
                 isIn={isToastActive(toastProps.toastId)}
                 key={`notification-${toastProps.key}`}
               >
-                {content}
+                <>{content}</>
               </Notification>
             );
           });
