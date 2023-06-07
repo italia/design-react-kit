@@ -1,6 +1,6 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';
 import 'typeface-titillium-web';
 import 'typeface-roboto-mono';
@@ -22,4 +22,6 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const container = document.getElementById('root');
+const root = createRoot(container!);
+root.render(<App />);
