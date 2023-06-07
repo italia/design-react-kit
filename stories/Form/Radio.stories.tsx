@@ -34,14 +34,14 @@ export const RadioInline = () => (
       <legend>Radio</legend>
       <Form className='m-3'>
         <FormGroup check inline>
-          <Input name='gruppo1' type='radio' id='radio1' defaultChecked />
-          <Label check htmlFor='radio1'>
+          <Input name='gruppo1' type='radio' id='radio3' defaultChecked />
+          <Label check htmlFor='radio3'>
             Opzione 1
           </Label>
         </FormGroup>
         <FormGroup check inline>
-          <Input name='gruppo1' type='radio' id='radio2' />
-          <Label check htmlFor='radio2'>
+          <Input name='gruppo1' type='radio' id='radio4' />
+          <Label check htmlFor='radio4'>
             Opzione 2
           </Label>
         </FormGroup>
@@ -60,16 +60,16 @@ export const RadioDisabilitato = () => (
             disabled
             name='gruppo1'
             type='radio'
-            id='radio1'
+            id='radio5'
             defaultChecked
           />
-          <Label check htmlFor='radio1'>
+          <Label check htmlFor='radio5'>
             Opzione disabilitata selezionata
           </Label>
         </FormGroup>
         <FormGroup check>
-          <Input disabled name='gruppo1' type='radio' id='radio2' />
-          <Label check htmlFor='radio2'>
+          <Input disabled name='gruppo1' type='radio' id='radio6' />
+          <Label check htmlFor='radio6'>
             Opzione disabilitata non selezionata
           </Label>
         </FormGroup>
@@ -86,20 +86,20 @@ export const RadioGruppi = () => (
           <legend>Radio</legend>
           <Form>
             <FormGroup check className='form-check-group'>
-              <Input id='radio1' name='group1' type='radio' defaultChecked />
-              <Label htmlFor='radio1' check>
+              <Input id='radio7' name='group1' type='radio' defaultChecked />
+              <Label htmlFor='radio7' check>
                 Opzione 1
               </Label>
             </FormGroup>
             <FormGroup check className='form-check-group'>
-              <Input id='radio2' name='group1' type='radio' />
-              <Label htmlFor='radio2' check>
+              <Input id='radio8' name='group1' type='radio' />
+              <Label htmlFor='radio8' check>
                 Opzione 2
               </Label>
             </FormGroup>
             <FormGroup check className='form-check-group'>
-              <Input id='radio3' name='group1' type='radio' disabled />
-              <Label htmlFor='radio3' check>
+              <Input id='radio9' name='group1' type='radio' disabled />
+              <Label htmlFor='radio9' check>
                 Opzione 3
               </Label>
             </FormGroup>
@@ -112,8 +112,8 @@ export const RadioGruppi = () => (
           <legend>Radio</legend>
           <Form>
             <FormGroup check className='form-check-group'>
-              <Input id='radio4' name='group2' type='radio' defaultChecked />
-              <Label htmlFor='radio4' check>
+              <Input id='radio10' name='group2' type='radio' defaultChecked />
+              <Label htmlFor='radio10' check>
                 Opzione 1
               </Label>
               <FormText color=''>
@@ -122,8 +122,8 @@ export const RadioGruppi = () => (
               </FormText>
             </FormGroup>
             <FormGroup check className='form-check-group'>
-              <Input id='radio5' name='group2' type='radio' />
-              <Label htmlFor='radio5' check>
+              <Input id='radio11' name='group2' type='radio' />
+              <Label htmlFor='radio11' check>
                 Opzione 2
               </Label>
               <FormText color=''>
@@ -132,8 +132,8 @@ export const RadioGruppi = () => (
               </FormText>
             </FormGroup>
             <FormGroup check className='form-check-group'>
-              <Input id='radio6' name='group2' type='radio' disabled />
-              <Label htmlFor='radio6' check>
+              <Input id='radio12' name='group2' type='radio' disabled />
+              <Label htmlFor='radio12' check>
                 Opzione 3
               </Label>
               <FormText color=''>
