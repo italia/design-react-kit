@@ -197,7 +197,11 @@ export const CardWithShading: Story = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </CardText>
-          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
+          <CardReadMore
+            iconName='it-arrow-right'
+            text='Leggi di più'
+            href='#'
+          />
         </CardBody>
       </Card>
       {/* end card */}
@@ -224,7 +228,11 @@ export const BigCard: Story = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </CardText>
-          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
+          <CardReadMore
+            iconName='it-arrow-right'
+            text='Leggi di più'
+            href='#'
+          />
         </CardBody>
       </Card>
       {/* end card */}
@@ -256,7 +264,11 @@ export const BigCardExampleTwo: Story = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </CardText>
-          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
+          <CardReadMore
+            iconName='it-arrow-right'
+            text='Leggi di più'
+            href='#'
+          />
         </CardBody>
       </Card>
       {/* end card */}
@@ -323,7 +335,11 @@ export const CardWithImageAndDate: Story = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
-          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
+          <CardReadMore
+            iconName='it-arrow-right'
+            text='Leggi di più'
+            href='#'
+          />
         </CardBody>
       </Card>
       {/* end card */}
@@ -353,7 +369,11 @@ export const CardsWithImages: Story = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
-          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
+          <CardReadMore
+            iconName='it-arrow-right'
+            text='Leggi di più'
+            href='#'
+          />
         </CardBody>
       </Card>
       {/* end card */}
@@ -377,7 +397,11 @@ export const CardsWithImages: Story = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
-          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
+          <CardReadMore
+            iconName='it-arrow-right'
+            text='Leggi di più'
+            href='#'
+          />
         </CardBody>
       </Card>
       {/* end card */}
@@ -405,7 +429,11 @@ export const CardsWithImages: Story = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
-          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
+          <CardReadMore
+            iconName='it-arrow-right'
+            text='Leggi di più'
+            href='#'
+          />
         </CardBody>
       </Card>
       {/* end card */}
@@ -433,7 +461,11 @@ export const CardsWithImages: Story = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor…
           </CardTitle>
-          <CardReadMore iconName='it-arrow-right' text='Leggi di più' />
+          <CardReadMore
+            iconName='it-arrow-right'
+            text='Leggi di più'
+            href='#'
+          />
         </CardBody>
       </Card>
       {/* end card */}
