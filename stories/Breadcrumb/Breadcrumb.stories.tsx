@@ -18,9 +18,7 @@ export const Esempi = () => (
         <a href='#'>Subsection</a>
         <span className='separator'>/</span>
       </BreadcrumbItem>
-      <BreadcrumbItem active>
-        <a href='#'>Current section</a>
-      </BreadcrumbItem>
+      <BreadcrumbItem active>Current section</BreadcrumbItem>
     </Breadcrumb>
 
     <Breadcrumb>
@@ -32,9 +30,7 @@ export const Esempi = () => (
         <a href='#'>Subsection</a>
         <span className='separator'>&gt;</span>
       </BreadcrumbItem>
-      <BreadcrumbItem active>
-        <a href='#'>Current section</a>
-      </BreadcrumbItem>
+      <BreadcrumbItem active>Current section</BreadcrumbItem>
     </Breadcrumb>
   </section>
 );
@@ -72,7 +68,7 @@ export const ConIcone = () => (
           aria-hidden
           size='sm'
         />
-        <a href='#'>Current section</a>
+        Current section
       </BreadcrumbItem>
     </Breadcrumb>
   </section>
@@ -91,9 +87,7 @@ export const SuSfondoScuro = () => (
         <a href='#'>Subsection</a>
         <span className='separator'>/</span>
       </BreadcrumbItem>
-      <BreadcrumbItem active>
-        <a href='#'>Current section</a>
-      </BreadcrumbItem>
+      <BreadcrumbItem active>Current section</BreadcrumbItem>
     </Breadcrumb>
 
     <Breadcrumb dark>
@@ -127,7 +121,7 @@ export const SuSfondoScuro = () => (
           aria-hidden
           size='sm'
         />
-        <a href='#'>Current section</a>
+        Current section
       </BreadcrumbItem>
     </Breadcrumb>
   </section>
