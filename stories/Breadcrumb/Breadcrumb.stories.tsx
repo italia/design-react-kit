@@ -45,7 +45,7 @@ export const ConIcone = () => (
       <BreadcrumbItem>
         <Icon
           className='align-top me-1'
-          icon='it-star-outline'
+          icon='it-link'
           color='secondary'
           aria-hidden
           size='sm'
@@ -56,7 +56,7 @@ export const ConIcone = () => (
       <BreadcrumbItem>
         <Icon
           className='align-top me-1'
-          icon='it-star-outline'
+          icon='it-link'
           color='secondary'
           aria-hidden
           size='sm'
@@ -67,7 +67,7 @@ export const ConIcone = () => (
       <BreadcrumbItem active>
         <Icon
           className='align-top me-1'
-          icon='it-star-outline'
+          icon='it-link'
           color='secondary'
           aria-hidden
           size='sm'
@@ -100,7 +100,7 @@ export const SuSfondoScuro = () => (
       <BreadcrumbItem>
         <Icon
           className='align-top me-1'
-          icon='it-star-outline'
+          icon='it-link'
           color='white'
           aria-hidden
           size='sm'
@@ -111,7 +111,7 @@ export const SuSfondoScuro = () => (
       <BreadcrumbItem>
         <Icon
           className='align-top me-1'
-          icon='it-star-outline'
+          icon='it-link'
           color='white'
           aria-hidden
           size='sm'
@@ -122,7 +122,7 @@ export const SuSfondoScuro = () => (
       <BreadcrumbItem active>
         <Icon
           className='align-top me-1'
-          icon='it-star-outline'
+          icon='it-link'
           color='white'
           aria-hidden
           size='sm'
