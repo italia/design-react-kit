@@ -4,7 +4,7 @@ import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Icon } from '../../src';
 
 export default {
-  title: 'Componenti/Breadcrumb'
+  title: 'Componenti/Breadcrumbs'
 };
 
 export const Esempi = () => (
@@ -18,9 +18,7 @@ export const Esempi = () => (
         <a href='#'>Subsection</a>
         <span className='separator'>/</span>
       </BreadcrumbItem>
-      <BreadcrumbItem active>
-        <a href='#'>Current section</a>
-      </BreadcrumbItem>
+      <BreadcrumbItem active>Current section</BreadcrumbItem>
     </Breadcrumb>
 
     <Breadcrumb>
@@ -32,9 +30,7 @@ export const Esempi = () => (
         <a href='#'>Subsection</a>
         <span className='separator'>&gt;</span>
       </BreadcrumbItem>
-      <BreadcrumbItem active>
-        <a href='#'>Current section</a>
-      </BreadcrumbItem>
+      <BreadcrumbItem active>Current section</BreadcrumbItem>
     </Breadcrumb>
   </section>
 );
@@ -45,7 +41,7 @@ export const ConIcone = () => (
       <BreadcrumbItem>
         <Icon
           className='align-top me-1'
-          icon='it-star-outline'
+          icon='it-link'
           color='secondary'
           aria-hidden
           size='sm'
@@ -56,7 +52,7 @@ export const ConIcone = () => (
       <BreadcrumbItem>
         <Icon
           className='align-top me-1'
-          icon='it-star-outline'
+          icon='it-link'
           color='secondary'
           aria-hidden
           size='sm'
@@ -67,12 +63,12 @@ export const ConIcone = () => (
       <BreadcrumbItem active>
         <Icon
           className='align-top me-1'
-          icon='it-star-outline'
+          icon='it-link'
           color='secondary'
           aria-hidden
           size='sm'
         />
-        <a href='#'>Current section</a>
+        Current section
       </BreadcrumbItem>
     </Breadcrumb>
   </section>
@@ -91,16 +87,14 @@ export const SuSfondoScuro = () => (
         <a href='#'>Subsection</a>
         <span className='separator'>/</span>
       </BreadcrumbItem>
-      <BreadcrumbItem active>
-        <a href='#'>Current section</a>
-      </BreadcrumbItem>
+      <BreadcrumbItem active>Current section</BreadcrumbItem>
     </Breadcrumb>
 
     <Breadcrumb dark>
       <BreadcrumbItem>
         <Icon
           className='align-top me-1'
-          icon='it-star-outline'
+          icon='it-link'
           color='white'
           aria-hidden
           size='sm'
@@ -111,7 +105,7 @@ export const SuSfondoScuro = () => (
       <BreadcrumbItem>
         <Icon
           className='align-top me-1'
-          icon='it-star-outline'
+          icon='it-link'
           color='white'
           aria-hidden
           size='sm'
@@ -122,12 +116,12 @@ export const SuSfondoScuro = () => (
       <BreadcrumbItem active>
         <Icon
           className='align-top me-1'
-          icon='it-star-outline'
+          icon='it-link'
           color='white'
           aria-hidden
           size='sm'
         />
-        <a href='#'>Current section</a>
+        Current section
       </BreadcrumbItem>
     </Breadcrumb>
   </section>
