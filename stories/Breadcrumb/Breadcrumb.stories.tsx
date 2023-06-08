@@ -4,7 +4,7 @@ import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Icon } from '../../src';
 
 export default {
-  title: 'Componenti/Breadcrumb'
+  title: 'Componenti/Breadcrumbs'
 };
 
 export const Esempi = () => (
