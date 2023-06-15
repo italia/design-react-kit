@@ -14,12 +14,12 @@ export const TextOnly = () => {
     <StepperContainer>
       <StepperHeader>
         <StepperHeaderElement variant='confirmed' appendIcon='it-check'>
-          Label Step 1
+          Primo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement variant='active'>
-          Label Step 2
+          Secondo contenuto
         </StepperHeaderElement>
-        <StepperHeaderElement>Label Step 3</StepperHeaderElement>
+        <StepperHeaderElement>Terzo contenuto</StepperHeaderElement>
         <StepperHeaderElement variant='mobile' tag={'span'}>
           2/6
         </StepperHeaderElement>
@@ -37,13 +37,13 @@ export const TextAndIcons = () => {
           appendIcon='it-check'
           prependIcon='it-calendar'
         >
-          Label Step 1
+          Primo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement variant='active' prependIcon='it-lock'>
-          Label Step 2
+          Secondo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement prependIcon='it-settings'>
-          Label Step 3
+          Terzo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement variant='mobile' tag={'span'}>
           2/6
@@ -61,17 +61,17 @@ export const OrderOfTheSteps = () => {
           variant='confirmed'
           stepperNumber={<Icon icon='it-check' />}
         >
-          Label Step 1
+          Primo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement
           variant='active'
           noLine
           stepperNumber={<span>2</span>}
         >
-          Label Step 2
+          Secondo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement stepperNumber={<span>3</span>}>
-          Label Step 3
+          Terzo contenuto
         </StepperHeaderElement>
       </StepperHeader>
     </StepperContainer>
@@ -82,34 +82,34 @@ export const NavigationOfTheSteps = () => {
     <StepperContainer>
       <StepperHeader>
         <StepperHeaderElement variant='confirmed' prependIcon='it-check'>
-          Label Step 1
+          Primo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement variant='active'>
-          Label Step 2
+          Secondo contenuto
         </StepperHeaderElement>
-        <StepperHeaderElement>Label Step 3</StepperHeaderElement>
+        <StepperHeaderElement>Terzo contenuto</StepperHeaderElement>
         <StepperHeaderElement variant='mobile' tag={'span'}>
           2/6
         </StepperHeaderElement>
       </StepperHeader>
       <StepperContent>
-        <p>Example content of the current step</p>
+        <p>Contenuto di esempio dello step corrente</p>
       </StepperContent>
       <StepperNav>
         <Button outline color='primary' size='sm' className='steppers-btn-prev'>
           <Icon icon='it-chevron-left' color='primary' />
-          Back
+          Indietro
         </Button>
         <Button outline color='primary' size='sm' className='steppers-btn-next'>
-          Next
+          Avanti
           <Icon icon='it-chevron-right' color='primary' />
         </Button>
         <Button
           color='primary'
           size='sm'
-          className='stepper-btn-confirm d-none d-lg-block'
+          className='steppers-btn-confirm d-none d-lg-block'
         >
-          Confirmation
+          Conferma
         </Button>
       </StepperNav>
     </StepperContainer>
@@ -120,26 +120,26 @@ export const VersionOnADarkBackground = () => {
     <StepperContainer dark>
       <StepperHeader>
         <StepperHeaderElement variant='confirmed' prependIcon='it-check'>
-          Label Step 1
+          Primo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement variant='active'>
-          Label Step 2
+          Secondo contenuto
         </StepperHeaderElement>
-        <StepperHeaderElement>Label Step 3</StepperHeaderElement>
+        <StepperHeaderElement>Terzo contenuto</StepperHeaderElement>
         <StepperHeaderElement variant='mobile' tag={'span'}>
           2/6
         </StepperHeaderElement>
       </StepperHeader>
       <StepperContent dark>
-        <p>Example content of the current step</p>
+        <p>Contenuto di esempio dello step corrente</p>
       </StepperContent>
       <StepperNav>
         <Button outline color='primary' size='sm' className='steppers-btn-prev'>
           <Icon icon='it-chevron-left' color='primary' />
-          Back
+          Indietro
         </Button>
         <Button outline color='primary' size='sm' className='steppers-btn-next'>
-          Next
+          Avanti
           <Icon icon='it-chevron-right' color='primary' />
         </Button>
         <Button
@@ -147,7 +147,7 @@ export const VersionOnADarkBackground = () => {
           size='sm'
           className='stepper-btn-confirm d-none d-lg-block'
         >
-          Confirmation
+          Conferma
         </Button>
       </StepperNav>
     </StepperContainer>
@@ -159,12 +159,12 @@ export const HeaderVariants = () => {
     <StepperContainer dark>
       <StepperHeader>
         <StepperHeaderElement variant='confirmed' prependIcon='it-check'>
-          Label Step 1
+          Primo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement variant='active'>
-          Label Step 2
+          Secondo contenuto
         </StepperHeaderElement>
-        <StepperHeaderElement>Label Step 3</StepperHeaderElement>
+        <StepperHeaderElement>Terzo contnuto</StepperHeaderElement>
         <StepperHeaderElement variant='mobile' tag={'span'}>
           2/6
         </StepperHeaderElement>
@@ -175,13 +175,13 @@ export const HeaderVariants = () => {
           appendIcon='it-check'
           prependIcon='it-calendar'
         >
-          Label Step 1
+          Primo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement variant='active' prependIcon='it-lock'>
-          Label Step 2
+          Secondo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement prependIcon='it-settings'>
-          Label Step 3
+          Terzo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement variant='mobile' tag={'span'}>
           2/6
@@ -192,17 +192,17 @@ export const HeaderVariants = () => {
           variant='confirmed'
           stepperNumber={<Icon icon='it-check' />}
         >
-          Label Step 1
+          Primo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement
           variant='active'
           noLine
           stepperNumber={<span>2</span>}
         >
-          Label Step 2
+          Secondo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement stepperNumber={<span>3</span>}>
-          Label Step 3
+          Terzo contenuto
         </StepperHeaderElement>
       </StepperHeader>
     </StepperContainer>
