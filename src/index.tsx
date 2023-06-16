@@ -157,6 +157,7 @@ export { TimeInput } from './Input/TimeInput';
 export { Timeline } from './Timeline/TimelineWrapper';
 export { TimelinePin } from './Timeline/TimelinePin';
 export { Select } from './Select/Select';
+export { Select as SelectOld } from './Select/SelectOld';
 export { StepperHeader } from './Stepper/StepperHeader';
 export { StepperContainer } from './Stepper/StepperContainer';
 export { StepperHeaderElement } from './Stepper/StepperHeaderElement';
@@ -279,7 +280,7 @@ export type {
   ActionMeta,
   GroupTypeBase,
   OptionTypeBase
-} from './Select/Select';
+} from './Select/SelectOld';
 export type {
   NotificationId,
   NotificationProps,

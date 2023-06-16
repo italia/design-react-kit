@@ -1,7 +1,6 @@
-import { Story } from '@storybook/react';
 import React, { useState } from 'react';
 
-import { GroupTypeBase, Select } from '../../src';
+import { Select } from '../../src';
 
 const defaultOptions = [
   { value: 'Value 1', label: 'Lorem ipsum dolor sit amet' },
@@ -49,234 +48,70 @@ type Value = {
 };
 
 export const SelectClassica = () => {
-  const [, setValue] = useState({
-    value: '',
-    label: ''
-  });
+  const [, setValue] = useState<string>();
 
-  const handleChange = (selectedOption: any) => setValue(selectedOption);
+  const handleChange = (selectedOption: string) => setValue(selectedOption);
 
   return (
-    <div className='bootstrap-select-wrapper'>
-      <label htmlFor='selectExampleClassic'>Etichetta di esempio</label>
-      <Select
-        id='selectExampleClassic'
-        onChange={handleChange}
-        options={defaultOptions}
-        placeholder='Scegli una opzione'
-        aria-label='Scegli una opzione'
-      />
-    </div>
+    <Select
+      id='example-reactstrap'
+      label='Etichetta di esempio'
+      handleChange={handleChange}
+    >
+      {defaultOptions.map((opt, i) => (
+        <option label={opt.label} key={i}>
+          {opt.value}
+        </option>
+      ))}
+    </Select>
   );
 };
 
 SelectClassica.storyName = 'Select classica';
 
-export const SelectClassicaTS = () => {
-  type MyCustomValueType = {
-    label: string;
-    value: string;
-  };
-
-  const [, setValue] = useState<MyCustomValueType | null>({
-    value: '',
-    label: ''
-  });
-
-  return (
-    <div className='bootstrap-select-wrapper'>
-      <label htmlFor='selectExampleClassic'>Etichetta di esempio</label>
-      <Select<MyCustomValueType>
-        id='selectExampleClassic'
-        onChange={(selectedOption) => setValue(selectedOption)}
-        options={defaultOptions}
-        placeholder='Scegli una opzione'
-        aria-label='Scegli una opzione'
-      />
-    </div>
-  );
-};
-
-SelectClassicaTS.storyName = 'Select classica (Typescript)';
-
 export const SelectDisabilitata = () => {
-  const [, setValue] = useState<Value | null>({
-    value: '',
-    label: ''
-  });
-  const handleChange = (selectedOption: any) => setValue(selectedOption);
+  const [, setValue] = useState<string>();
+
+  const handleChange = (selectedOption: string) => setValue(selectedOption);
 
   return (
-    <div className='bootstrap-select-wrapper'>
-      <label htmlFor='selectExampleDisabled'>Etichetta di esempio</label>
-      <Select
-        id='selectExampleDisabled'
-        isDisabled={true}
-        onChange={handleChange}
-        options={defaultOptions}
-        placeholder='Scegli una opzione'
-        aria-label='Scegli una opzione'
-      />
-    </div>
+    <Select
+      id='example-reactstrap'
+      label='Etichetta di esempio'
+      handleChange={handleChange}
+      disabled
+    >
+      {defaultOptions.map((opt, i) => (
+        <option label={opt.label} key={i}>
+          {opt.value}
+        </option>
+      ))}
+    </Select>
   );
 };
 
 SelectDisabilitata.storyName = 'Select disabilitata';
 
-export const SelectConReset = () => {
-  const [, setValue] = useState({ value: '', label: '' });
-
-  const handleChange = (selectedOption: any) => setValue(selectedOption);
-  return (
-    <div className='bootstrap-select-wrapper'>
-      <label htmlFor='selectExampleReset'>Etichetta di esempio</label>
-      <Select
-        id='selectExampleReset'
-        isClearable={true}
-        onChange={handleChange}
-        options={defaultOptions}
-        placeholder='Scegli una opzione'
-        aria-label='Scegli una opzione'
-      />
-    </div>
-  );
-};
-
-SelectConReset.storyName = 'Select con reset';
-
-export const SelectConRicerca = () => {
-  const [, setValue] = useState({ value: '', label: '' });
-
-  const handleChange = (selectedOption: any) => setValue(selectedOption);
-  return (
-    <div className='bootstrap-select-wrapper'>
-      <label htmlFor='selectExampleSearch'>Etichetta di esempio</label>
-      <Select
-        id='selectExampleSearch'
-        isSearchable={true}
-        onChange={handleChange}
-        options={defaultOptions}
-        placeholder='Scegli una opzione'
-        aria-label='Scegli una opzione'
-      />
-    </div>
-  );
-};
-
-SelectConRicerca.storyName = 'Select con ricerca';
-
-export const _SelectMultipla = () => {
-  const [, setValue] = useState({ value: '', label: '' });
-
-  const handleChange = (selectedOption: any) => setValue(selectedOption);
-  return (
-    <div className='bootstrap-select-wrapper'>
-      <label htmlFor='selectExampleMulti'>Etichetta di esempio</label>
-      <Select
-        id='selectExampleMulti'
-        isMulti={true}
-        onChange={handleChange}
-        options={defaultOptions}
-        placeholder='Scegli una opzione'
-        aria-label='Scegli una opzione'
-      />
-    </div>
-  );
-};
-
 export const SelectConGruppi = () => {
-  const [, setValue] = useState({ value: '', label: '' });
+  const [, setValue] = useState<string>();
 
-  const handleChange = (selectedOption: any) => setValue(selectedOption);
+  const handleChange = (selectedOption: string) => setValue(selectedOption);
+
   return (
-    <div className='bootstrap-select-wrapper'>
-      <label htmlFor='selectExampleGroups'>Etichetta di esempio</label>
-      <Select
-        id='selectExampleGroups'
-        onChange={handleChange}
-        options={groupedOptions}
-        placeholder='Scegli una opzione'
-        aria-label='Scegli una opzione'
-      />
-    </div>
+    <Select
+      id='example-reactstrap'
+      label='Etichetta di esempio'
+      handleChange={handleChange}
+    >
+      {groupedOptions.map((grp, i) => (
+        <optgroup label={grp.label}>
+          {grp.options.map((opt, j) => (
+            <option value={opt.value}>{opt.label}</option>
+          ))}
+        </optgroup>
+      ))}
+    </Select>
   );
 };
 
 SelectConGruppi.storyName = 'Select con gruppi';
-
-export const SelectConGruppiTS = () => {
-  type MyCustomValueType = {
-    label: string;
-    value: string;
-  };
-
-  const [, setValue] = useState<Value | readonly Value[] | null>([
-    { value: '', label: '' }
-  ]);
-
-  return (
-    <div className='bootstrap-select-wrapper'>
-      <label htmlFor='selectExampleGroups'>Etichetta di esempio</label>
-      <Select<MyCustomValueType, true, GroupTypeBase<MyCustomValueType>>
-        id='selectExampleGroups'
-        onChange={(selectedOption) => setValue(selectedOption)}
-        options={groupedOptions}
-        placeholder='Scegli una opzione'
-        aria-label='Scegli una opzione'
-      />
-    </div>
-  );
-};
-
-SelectConGruppiTS.storyName = 'Select con gruppi (Typescript)';
-
-type SelectInterattivoProps = {
-  search: boolean;
-  multi: boolean;
-  group: boolean;
-  disabled: boolean;
-  reset: boolean;
-};
-export const SelectInterattivo: Story<SelectInterattivoProps> = ({
-  search,
-  multi,
-  group,
-  disabled,
-  reset
-}) => {
-  const [, setValue] = useState({ value: '', label: '' });
-
-  let options = defaultOptions;
-
-  if (group) {
-    // @ts-expect-error adding types makes the example harder to read
-    options = groupedOptions;
-  }
-  const handleChange = (selectedOption: any) => setValue(selectedOption);
-  return (
-    <div className='bootstrap-select-wrapper'>
-      <label htmlFor='selectExampleInteractive'>Etichetta di esempio</label>
-      <Select
-        id='selectExampleInteractive'
-        onChange={handleChange}
-        options={options}
-        placeholder='Scegli una opzione'
-        isDisabled={!!disabled}
-        isSearchable={!!search}
-        isMulti={!!multi}
-        isClearable={!!reset}
-        aria-label='Scegli una opzione'
-        classNamePrefix={'react-select'}
-      />
-    </div>
-  );
-};
-SelectInterattivo.storyName = 'Esempio interattivo';
-
-SelectInterattivo.args = {
-  search: false,
-  multi: false,
-  group: false,
-  disabled: false,
-  reset: false
-};
