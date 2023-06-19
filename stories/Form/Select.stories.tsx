@@ -42,11 +42,6 @@ export default {
   title: 'Componenti/Form/Select'
 };
 
-type Value = {
-  label: string;
-  value: string;
-};
-
 export const SelectClassica = () => {
   const [, setValue] = useState<string>();
 
