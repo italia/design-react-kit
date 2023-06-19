@@ -157,7 +157,6 @@ export { TimeInput } from './Input/TimeInput';
 export { Timeline } from './Timeline/TimelineWrapper';
 export { TimelinePin } from './Timeline/TimelinePin';
 export { Select } from './Select/Select';
-export { Select as SelectOld } from './Select/SelectOld';
 export { StepperHeader } from './Stepper/StepperHeader';
 export { StepperContainer } from './Stepper/StepperContainer';
 export { StepperHeaderElement } from './Stepper/StepperHeaderElement';
@@ -273,14 +272,6 @@ export type { StepperNavProps } from './Stepper/StepperNav';
 export type { StepperDotsProps } from './Stepper/StepperDots';
 export type { StepperContentProps } from './Stepper/StepperContent';
 export type { SectionProps } from './Section/Section';
-export type {
-  SelectProps,
-  SelectOptionType,
-  ValueType,
-  ActionMeta,
-  GroupTypeBase,
-  OptionTypeBase
-} from './Select/SelectOld';
 export type {
   NotificationId,
   NotificationProps,
