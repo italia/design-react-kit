@@ -46,7 +46,6 @@ export const Select = ({
         disabled={disabled}
         onChange={_handleChange}
       >
-        <option value=''>Scegli un'opzione</option>
         {children}
       </Input>
     </div>
