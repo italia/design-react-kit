@@ -14,6 +14,9 @@ export interface SelectProps {
    * L'etichetta del campo
    */
   label: string;
+  /**
+   * La lista di opzioni da visualizzare nella tendina del Select
+   */
   children: ReactElement<'option'>[];
   /**
    * Gestisce il cambio del valore selezionato
