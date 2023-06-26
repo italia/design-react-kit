@@ -34,7 +34,6 @@ export const Select = ({
   handleChange
 }: SelectProps) => {
   const _handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    console.log(e);
     handleChange(e.target.value);
   };
   return (
