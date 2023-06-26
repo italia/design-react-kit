@@ -17,7 +17,7 @@ export interface SelectProps {
   /**
    * La lista di opzioni da visualizzare nella tendina del Select
    */
-  children: ReactElement<'option'>[];
+  children: ReactElement<'option'> | ReactElement<'option'>[];
   /**
    * Gestisce il cambio del valore selezionato
    * @param selectedValue
