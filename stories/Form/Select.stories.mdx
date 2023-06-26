@@ -8,21 +8,6 @@ import { Select } from '../../src';
 
 ### Il classico “menu a tendina”, in nuove varianti.
 
-L'array di input usato per il componente `Select` in questo e per i successivi esempi è il seguente:
-
-```js
-const defaultOptions = [
-  { value: 'Value 1', label: 'Lorem ipsum dolor sit amet' },
-  { value: 'Value 2', label: 'Duis vestibulum eleifend libero' },
-  { value: 'Value 3', label: 'Phasellus pretium orci sed odio tempus' },
-  {
-    value: 'Value 4',
-    label: 'Vestibulum bibendum ex vel augue porttitor sodales'
-  },
-  { value: 'Value 5', label: 'Praesent quis elementum turpis' }
-];
-```
-
 ## Select classica
 
 La `Select` accetta come _children_ le opzioni selezionabili e ha una _prop_ `label`con cui si definisce l'etichetta del
@@ -41,35 +26,6 @@ Per disabilitare una select, aggiungere la _prop_ `disabled` al componente `Sele
 </Canvas>
 
 ## Select con gruppi
-
-Per le select con raggruppamenti il formato di input dei dati è leggermente diversa dal formato precedente:
-
-```js
-const groupOneOptions = [
-  { value: 'Value 1', label: 'Lorem ipsum dolor sit amet' },
-  { value: 'Value 2', label: 'Duis vestibulum eleifend libero' },
-  { value: 'Value 3', label: 'Phasellus pretium orci sed odio tempus' }
-];
-
-const groupTwoOptions = [
-  {
-    value: 'Value 4',
-    label: 'Vestibulum bibendum ex vel augue porttitor sodales'
-  },
-  { value: 'Value 5', label: 'Praesent quis elementum turpis' }
-];
-
-const groupedOptions = [
-  {
-    label: 'Gruppo 1',
-    options: groupOneOptions
-  },
-  {
-    label: 'Gruppo 2',
-    options: groupTwoOptions
-  }
-];
-```
 
 <Canvas>
   <Story id='componenti-form-select--select-con-gruppi' />
