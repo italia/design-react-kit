@@ -15,7 +15,7 @@ export const SelectClassica = () => {
     <Select
       id='example-reactstrap'
       label='Etichetta di esempio'
-      handleChange={handleChange}
+      onChange={handleChange}
     >
       <option value=''>Scegli un'opzione</option>
       <option value='Value 1'>Lorem ipsum dolor sit amet</option>
@@ -40,7 +40,7 @@ export const SelectDisabilitata = () => {
     <Select
       id='example-reactstrap'
       label='Etichetta di esempio'
-      handleChange={handleChange}
+      onChange={handleChange}
       disabled
     >
       <option value=''>Scegli un'opzione</option>
@@ -66,7 +66,7 @@ export const SelectConGruppi = () => {
     <Select
       id='example-reactstrap'
       label='Etichetta di esempio'
-      handleChange={handleChange}
+      onChange={handleChange}
     >
       <option value=''>Scegli un'opzione</option>
       <optgroup label='Gruppo 1'>

@@ -1,11 +1,9 @@
-import React, { ChangeEvent, ReactElement } from 'react';
+import React, { ChangeEvent, ReactElement, SelectHTMLAttributes } from 'react';
 import { Input } from 'reactstrap';
+import { InputType } from 'reactstrap/types/lib/Input';
 
-export interface SelectProps {
-  /**
-   * L'identificativo univoco del componente
-   */
-  id: string;
+export interface SelectProps
+  extends Omit<SelectHTMLAttributes<HTMLSelectElement>, 'onChange'> {
   /**
    * Se `true` determina la disabilitazione del campo
    */
@@ -23,7 +21,7 @@ export interface SelectProps {
    * @param selectedValue
    * @returns
    */
-  handleChange: (selectedValue: string) => void;
+  onChange: (selectedValue: string) => void;
 }
 
 export const Select = ({
@@ -31,10 +29,10 @@ export const Select = ({
   disabled = false,
   label,
   children,
-  handleChange
+  onChange
 }: SelectProps) => {
-  const _handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    handleChange(e.target.value);
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    onChange(e.target.value);
   };
   return (
     <div className='select-wrapper'>
