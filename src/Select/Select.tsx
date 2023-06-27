@@ -25,7 +25,7 @@ export interface SelectProps
 }
 
 export const Select = ({
-  id = 'select',
+  id,
   disabled = false,
   label,
   children,
@@ -34,18 +34,29 @@ export const Select = ({
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     onChange(e.target.value);
   };
+
+  const inputProps = {
+    name: 'select',
+    type: 'select' as InputType,
+    disabled: disabled,
+    handleChange: handleChange
+  };
+
   return (
     <div className='select-wrapper'>
-      <label htmlFor={id + '-select'}>{label}</label>
-      <Input
-        id={id + '-select'}
-        name='select'
-        type='select'
-        disabled={disabled}
-        onChange={_handleChange}
-      >
-        {children}
-      </Input>
+      {id ? (
+        <>
+          <label htmlFor={id}>{label}</label>
+          <Input id={id} {...inputProps}>
+            {children}
+          </Input>
+        </>
+      ) : (
+        <label>
+          {label}
+          <Input {...inputProps}>{children}</Input>
+        </label>
+      )}
     </div>
   );
 };
