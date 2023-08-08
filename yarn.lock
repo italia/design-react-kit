@@ -5556,24 +5556,24 @@ boolbase@^1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
 
-bootstrap-italia@^2.4.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.5.0.tgz#eb563100636be3281064bda9f4f885198fd4c6c2"
-  integrity sha512-DHSqUFGWkJjx5PV+C5gxHnntVufhu1bfqx5RUqb91n/xEsweVoYTEw3qte9LATdUc3JBixqmcJnWJGjkUB1cMQ==
+bootstrap-italia@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.6.1.tgz#df3685f514ad57c236c47af32fd6f9de6d168da4"
+  integrity sha512-cri6YKNUeqzXeyQmib9NamKXB4XRUCTtJN7tOgBS6j7a57toQDrSErqLilETwP/Q7fyKJVu6Ym2sUaXnIWPhwQ==
   dependencies:
     "@popperjs/core" "^2.11.2"
     "@splidejs/splide" "^3.6.12"
     "@types/bootstrap" "^5.2.6"
     accessible-autocomplete "^2.0.4"
     animejs "^3.2.1"
-    bootstrap "^5.2.3"
+    bootstrap "5.2.3"
     just-validate "^3.5.1"
     masonry-layout "^4.2.2"
     progressbar.js "^1.1.0"
     uuid "^8.3.2"
     video.js "^8.0.4"
 
-bootstrap@^5.2.3:
+bootstrap@5.2.3:
   version "5.2.3"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.2.3.tgz#54739f4414de121b9785c5da3c87b37ff008322b"
   integrity sha512-cEKPM+fwb3cT8NzQZYEu4HilJ3anCrWqh3CHAok1p9jXqMPsPTBhU25fBckEJHJ/p+tTxTFTsFQGM+gaHpi3QQ==
