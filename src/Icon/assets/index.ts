@@ -42,6 +42,23 @@ const iconList: Record<string, boolean> = {
   'it-external-link': true,
   'it-facebook-square': true,
   'it-facebook': true,
+  'it-figma-square': true,
+  'it-figma': true,
+  'it-file-audio': true,
+  'it-file-compressed': true,
+  'it-file-csv': true,
+  'it-file-json': true,
+  'it-file-odp': true,
+  'it-file-ods': true,
+  'it-file-odt': true,
+  'it-file-pdf-ext': true,
+  'it-file-pdf': true,
+  'it-file-ppt': true,
+  'it-file-sheet': true,
+  'it-file-slides': true,
+  'it-file-txt': true,
+  'it-file-video': true,
+  'it-file-xml': true,
   'it-file': true,
   'it-files': true,
   'it-flag': true,
@@ -67,11 +84,15 @@ const iconList: Record<string, boolean> = {
   'it-list': true,
   'it-lock': true,
   'it-locked': true,
+  'it-logout': true,
+  'it-mail-open': true,
   'it-mail': true,
   'it-map-marker-circle': true,
   'it-map-marker-minus': true,
   'it-map-marker-plus': true,
   'it-map-marker': true,
+  'it-mastodon-square': true,
+  'it-mastodon': true,
   'it-maximize-alt': true,
   'it-maximize': true,
   'it-medium-square': true,
@@ -79,6 +100,8 @@ const iconList: Record<string, boolean> = {
   'it-minimize': true,
   'it-minus-circle': true,
   'it-minus': true,
+  'it-moodle-square': true,
+  'it-moodle': true,
   'it-more-actions': true,
   'it-more-items': true,
   'it-note': true,
@@ -89,11 +112,17 @@ const iconList: Record<string, boolean> = {
   'it-pencil': true,
   'it-piattaforme': true,
   'it-pin': true,
+  'it-pinterest-square': true,
+  'it-pinterest': true,
   'it-plug': true,
   'it-plus-circle': true,
   'it-plus': true,
   'it-presentation': true,
   'it-print': true,
+  'it-quora-square': true,
+  'it-quora': true,
+  'it-reddit-square': true,
+  'it-reddit': true,
   'it-refresh': true,
   'it-restore': true,
   'it-rss-square': true,
@@ -101,12 +130,22 @@ const iconList: Record<string, boolean> = {
   'it-search': true,
   'it-settings': true,
   'it-share': true,
+  'it-slack-square': true,
+  'it-slack': true,
+  'it-snapchat-square': true,
+  'it-snapchat': true,
   'it-software': true,
+  'it-stackexchange-square': true,
+  'it-stackexchange': true,
+  'it-stackoverflow-square': true,
+  'it-stackoverflow': true,
   'it-star-full': true,
   'it-star-outline': true,
   'it-team-digitale': true,
   'it-telegram': true,
   'it-telephone': true,
+  'it-tiktok-square': true,
+  'it-tiktok': true,
   'it-tool': true,
   'it-twitter-square': true,
   'it-twitter': true,
@@ -114,6 +153,8 @@ const iconList: Record<string, boolean> = {
   'it-upload': true,
   'it-user': true,
   'it-video': true,
+  'it-vimeo-square': true,
+  'it-vimeo': true,
   'it-warning-circle': true,
   'it-warning': true,
   'it-whatsapp-square': true,
@@ -256,6 +297,57 @@ export const loadIcon = (name: IconName) => {
     case 'it-facebook': {
       return import('./ItFacebook');
     }
+    case 'it-figma-square': {
+      return import('./ItFigmaSquare');
+    }
+    case 'it-figma': {
+      return import('./ItFigma');
+    }
+    case 'it-file-audio': {
+      return import('./ItFileAudio');
+    }
+    case 'it-file-compressed': {
+      return import('./ItFileCompressed');
+    }
+    case 'it-file-csv': {
+      return import('./ItFileCsv');
+    }
+    case 'it-file-json': {
+      return import('./ItFileJson');
+    }
+    case 'it-file-odp': {
+      return import('./ItFileOdp');
+    }
+    case 'it-file-ods': {
+      return import('./ItFileOds');
+    }
+    case 'it-file-odt': {
+      return import('./ItFileOdt');
+    }
+    case 'it-file-pdf-ext': {
+      return import('./ItFilePdfExt');
+    }
+    case 'it-file-pdf': {
+      return import('./ItFilePdf');
+    }
+    case 'it-file-ppt': {
+      return import('./ItFilePpt');
+    }
+    case 'it-file-sheet': {
+      return import('./ItFileSheet');
+    }
+    case 'it-file-slides': {
+      return import('./ItFileSlides');
+    }
+    case 'it-file-txt': {
+      return import('./ItFileTxt');
+    }
+    case 'it-file-video': {
+      return import('./ItFileVideo');
+    }
+    case 'it-file-xml': {
+      return import('./ItFileXml');
+    }
     case 'it-file': {
       return import('./ItFile');
     }
@@ -331,6 +423,12 @@ export const loadIcon = (name: IconName) => {
     case 'it-locked': {
       return import('./ItLocked');
     }
+    case 'it-logout': {
+      return import('./ItLogout');
+    }
+    case 'it-mail-open': {
+      return import('./ItMailOpen');
+    }
     case 'it-mail': {
       return import('./ItMail');
     }
@@ -345,6 +443,12 @@ export const loadIcon = (name: IconName) => {
     }
     case 'it-map-marker': {
       return import('./ItMapMarker');
+    }
+    case 'it-mastodon-square': {
+      return import('./ItMastodonSquare');
+    }
+    case 'it-mastodon': {
+      return import('./ItMastodon');
     }
     case 'it-maximize-alt': {
       return import('./ItMaximizeAlt');
@@ -366,6 +470,12 @@ export const loadIcon = (name: IconName) => {
     }
     case 'it-minus': {
       return import('./ItMinus');
+    }
+    case 'it-moodle-square': {
+      return import('./ItMoodleSquare');
+    }
+    case 'it-moodle': {
+      return import('./ItMoodle');
     }
     case 'it-more-actions': {
       return import('./ItMoreActions');
@@ -397,6 +507,12 @@ export const loadIcon = (name: IconName) => {
     case 'it-pin': {
       return import('./ItPin');
     }
+    case 'it-pinterest-square': {
+      return import('./ItPinterestSquare');
+    }
+    case 'it-pinterest': {
+      return import('./ItPinterest');
+    }
     case 'it-plug': {
       return import('./ItPlug');
     }
@@ -411,6 +527,18 @@ export const loadIcon = (name: IconName) => {
     }
     case 'it-print': {
       return import('./ItPrint');
+    }
+    case 'it-quora-square': {
+      return import('./ItQuoraSquare');
+    }
+    case 'it-quora': {
+      return import('./ItQuora');
+    }
+    case 'it-reddit-square': {
+      return import('./ItRedditSquare');
+    }
+    case 'it-reddit': {
+      return import('./ItReddit');
     }
     case 'it-refresh': {
       return import('./ItRefresh');
@@ -433,8 +561,32 @@ export const loadIcon = (name: IconName) => {
     case 'it-share': {
       return import('./ItShare');
     }
+    case 'it-slack-square': {
+      return import('./ItSlackSquare');
+    }
+    case 'it-slack': {
+      return import('./ItSlack');
+    }
+    case 'it-snapchat-square': {
+      return import('./ItSnapchatSquare');
+    }
+    case 'it-snapchat': {
+      return import('./ItSnapchat');
+    }
     case 'it-software': {
       return import('./ItSoftware');
+    }
+    case 'it-stackexchange-square': {
+      return import('./ItStackexchangeSquare');
+    }
+    case 'it-stackexchange': {
+      return import('./ItStackexchange');
+    }
+    case 'it-stackoverflow-square': {
+      return import('./ItStackoverflowSquare');
+    }
+    case 'it-stackoverflow': {
+      return import('./ItStackoverflow');
     }
     case 'it-star-full': {
       return import('./ItStarFull');
@@ -450,6 +602,12 @@ export const loadIcon = (name: IconName) => {
     }
     case 'it-telephone': {
       return import('./ItTelephone');
+    }
+    case 'it-tiktok-square': {
+      return import('./ItTiktokSquare');
+    }
+    case 'it-tiktok': {
+      return import('./ItTiktok');
     }
     case 'it-tool': {
       return import('./ItTool');
@@ -471,6 +629,12 @@ export const loadIcon = (name: IconName) => {
     }
     case 'it-video': {
       return import('./ItVideo');
+    }
+    case 'it-vimeo-square': {
+      return import('./ItVimeoSquare');
+    }
+    case 'it-vimeo': {
+      return import('./ItVimeo');
     }
     case 'it-warning-circle': {
       return import('./ItWarningCircle');
