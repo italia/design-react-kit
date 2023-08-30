@@ -68,6 +68,9 @@ export const VariantiColore = () => {
         <Button color='primary' disabled>
           Primary disabled
         </Button>
+        <Button color='primary' outline disabled>
+          Primary out. disabled
+        </Button>
       </div>
       <div className='btn-example'>
         <Button color='secondary'>Secondary</Button>{' '}
@@ -76,6 +79,45 @@ export const VariantiColore = () => {
         </Button>{' '}
         <Button color='secondary' disabled>
           Secondary disabled
+        </Button>
+        <Button color='secondary' outline disabled>
+          Secondary out. disabled
+        </Button>
+      </div>
+      <div className='btn-example'>
+        <Button color='success'>success</Button>{' '}
+        <Button outline color='success'>
+          success Outline
+        </Button>{' '}
+        <Button color='success' disabled>
+          success disabled
+        </Button>
+        <Button color='success' outline disabled>
+          success out. disabled
+        </Button>
+      </div>
+      <div className='btn-example'>
+        <Button color='danger'>danger</Button>{' '}
+        <Button outline color='danger'>
+          danger Outline
+        </Button>{' '}
+        <Button color='danger' disabled>
+          danger disabled
+        </Button>
+        <Button color='danger' outline disabled>
+          danger out. disabled
+        </Button>
+      </div>
+      <div className='btn-example'>
+        <Button color='warning'>warning</Button>{' '}
+        <Button outline color='warning'>
+          warning Outline
+        </Button>{' '}
+        <Button color='warning' disabled>
+          warning disabled
+        </Button>
+        <Button color='warning' outline disabled>
+          warning out. disabled
         </Button>
       </div>
     </>
@@ -92,6 +134,9 @@ export const SfondoScuro = () => (
       <Button color='primary' disabled>
         Primary disabled
       </Button>
+      <Button color='primary' outline disabled>
+        Primary out. disabled
+      </Button>
     </div>
     <div className='btn-example'>
       <Button color='secondary'>Secondary</Button>{' '}
@@ -100,6 +145,9 @@ export const SfondoScuro = () => (
       </Button>{' '}
       <Button color='secondary' disabled>
         Secondary disabled
+      </Button>
+      <Button color='secondary' outline disabled>
+        Secondary out. disabled
       </Button>
     </div>
   </div>
