@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/italia/design-react-kit/issues"
   },
-  "version": "5.0.0-0",
+  "version": "5.0.0-1",
   "license": "BSD-3",
   "module": "dist/esm/index.js",
   "main": "./src/index.tsx",
@@ -113,6 +113,7 @@
     "babel-loader": "^8.2.5",
     "bootstrap-italia": "^2.5.0",
     "babel-plugin-dynamic-import-node": "^2.3.3",
+    "bootstrap-italia": "^2.6.1",
     "browserslist-config-design-italia": "^1.0.0",
     "chromatic": "^6.8.0",
     "circular-dependency-plugin": "^5.2.2",
