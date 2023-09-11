@@ -40,12 +40,6 @@ export const EsempiDiCampiDiInput = () => {
     );
   };
 
-  const a = () => {
-    accessibleAutocomplete.enhanceSelectElement({
-      defaultValue: '',
-      selectElement: document.querySelector('#location-picker')
-    });
-  };
   return (
     <div>
       <Input type='text' label='Campo di tipo testuale' id='exampleInputText' />
@@ -314,12 +308,6 @@ export const _InputAutocompleteConDati = () => {
 
   return (
     <FormGroup>
-      <select id='location-picker'>
-        <option value=''>Select a country</option>
-        <option value='fr'>France</option>
-        <option value='de'>Germany</option>
-        <option value='gb'>United Kingdom</option>
-      </select>
       <AsyncSelect
         components={{
           DropdownIndicator: AutocompleteDropdownIndicator,
