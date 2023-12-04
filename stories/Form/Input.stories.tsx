@@ -1,6 +1,5 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
 import React, { useState, useCallback } from 'react';
-import { actions } from '@storybook/addon-actions';
 
 import { components } from 'react-select';
 import AsyncSelect from 'react-select/async';
@@ -474,9 +473,10 @@ export const InputNumericoValuta = () => {
 
   return (
     <Input
+      addon='true'
       type='number'
       label='Currency'
-      value='50'
+      value={value}
       min={0}
       max={100}
       className={'input-number-currency'}
@@ -493,9 +493,10 @@ export const InputNumericoPercentuale = () => {
 
   return (
     <Input
+      addon='true'
       type='number'
       label='Percentage'
-      value='50'
+      value={value}
       min={0}
       max={100}
       className={'input-number-percentage'}
@@ -513,9 +514,9 @@ export const InputNumericoRidimensionamento = () => {
     <Input
       type='number'
       label='Ridimensionamento'
-      value='50'
+      value={value}
       min={0}
-      max={100}
+      max={9999}
       className={'input-number-adaptive'}
       onChange={(ev) => {
         setValue(ev.target.value);
