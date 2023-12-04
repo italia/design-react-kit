@@ -111,7 +111,6 @@
     "autoprefixer": "^9.8.8",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.5",
-    "bootstrap-italia": "^2.5.0",
     "babel-plugin-dynamic-import-node": "^2.3.3",
     "bootstrap-italia": "2.7.8",
     "browserslist-config-design-italia": "^1.0.0",

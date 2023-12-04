@@ -9,8 +9,10 @@ import { multiOptions } from './Autocomplete/AutocompleteExample';
 
 import { Input, TimeInput, Icon, TextArea, FormGroup } from '../../src';
 
-import Autocomplete from 'accessible-autocomplete/react';
+import Autocomplete from 'accessible-autocomplete/react'; // Reference to https://www.npmjs.com/package/accessible-autocomplete
 import 'accessible-autocomplete/dist/accessible-autocomplete.min.css';
+//Used for custom style overriding accessible-autocomplete.min.css
+import './assets/css/accessible-autocomplete-styles.css';
 
 export default {
   title: 'Componenti/Form/Input'
