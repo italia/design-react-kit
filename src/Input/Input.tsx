@@ -239,6 +239,25 @@ export const Input = ({
       />
     );
   }
+console.log('addon')
+  if(addon){
+    return (
+      <InputContainer {...containerProps}>
+        <div className='input-group'>
+        <div className='input-group-prepend'>
+          <div className='input-group-text'>@</div>
+        </div>
+        <Tag
+          {...rest}
+          {...extraAttributes}
+          {...sharedAttributes}
+          className={inputClasses}
+          data-testid={testId}
+        />
+        </div>
+      </InputContainer>
+    );
+  }
 
   if (placeholder) {
     return (
