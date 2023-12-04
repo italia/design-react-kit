@@ -410,9 +410,10 @@ export const InputNumericoValuta = () => {
 
   return (
     <Input
+      addon='true'
       type='number'
       label='Currency'
-      value='50'
+      value={value}
       min={0}
       max={100}
       className={'input-number-currency'}
@@ -429,9 +430,10 @@ export const InputNumericoPercentuale = () => {
 
   return (
     <Input
+      addon='true'
       type='number'
       label='Percentage'
-      value='50'
+      value={value}
       min={0}
       max={100}
       className={'input-number-percentage'}
@@ -449,9 +451,9 @@ export const InputNumericoRidimensionamento = () => {
     <Input
       type='number'
       label='Ridimensionamento'
-      value='50'
+      value={value}
       min={0}
-      max={100}
+      max={9999}
       className={'input-number-adaptive'}
       onChange={(ev) => {
         setValue(ev.target.value);
