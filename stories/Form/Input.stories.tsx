@@ -9,6 +9,9 @@ import { multiOptions } from './Autocomplete/AutocompleteExample';
 
 import { Input, TimeInput, Icon, TextArea, FormGroup } from '../../src';
 
+import Autocomplete from 'accessible-autocomplete/react';
+import 'accessible-autocomplete/dist/accessible-autocomplete.min.css';
+
 export default {
   title: 'Componenti/Form/Input'
 };
@@ -36,6 +39,7 @@ export const EsempiDiCampiDiInput = () => {
       isValid ? 'Campo di tipo ora - dark' : 'Formato ora non valido (hh:mm)'
     );
   };
+
   return (
     <div>
       <Input type='text' label='Campo di tipo testuale' id='exampleInputText' />
@@ -355,6 +359,38 @@ export const _InputAutocompleteConDati = () => {
 };
 
 _InputAutocompleteConDati.storyName = 'Input autocomplete';
+
+export const _InputAutocompleteConDatiAccessibile = () => {
+  // @ts-ignore
+  const suggest = (query, populateResults) => {
+    const filteredResults = multiOptions.filter((i) =>
+      i.label.toLowerCase().includes(query.toLowerCase())
+    );
+    let data = filteredResults.map((item) => {
+      return item.label;
+    });
+    populateResults(data);
+  };
+
+  return (
+    <FormGroup>
+      <label htmlFor='autocomplete'>Provincia</label>
+      <Autocomplete
+        id='autocomplete'
+        source={suggest}
+        autoselect
+        placeholder={'Testo da cercare'}
+        defaultValue={''}
+        className={''}
+        displayMenu={'overlay'}
+        tNoResults={() => 'Nessun risultato'}
+      />
+    </FormGroup>
+  );
+};
+
+_InputAutocompleteConDatiAccessibile.storyName =
+  'Input autocomplete accessibile';
 
 export const AreaDiTesto = () => (
   <TextArea label='Esempio di area di testo' rows={3} />
