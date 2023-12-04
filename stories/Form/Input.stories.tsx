@@ -281,26 +281,34 @@ export const AreaDiTestoConSegnaposto = () => (
 
 AreaDiTestoConSegnaposto.storyName = 'Area di testo con segnaposto';
 
-export const InputNumericoDimensionamento = () => (
-  <>
-    <div className='w-100'>
-      <Input
-        type='number'
-        label='Input Number inserito in una colonna a tutta larghezza'
-        value='100'
-        {...actions('onChange')}
-      />
-    </div>
-    <div className='w-50 mt-5'>
-      <Input
-        type='number'
-        label='Input Number inserito in una colonna di larghezza 50%'
-        value='100'
-        {...actions('onChange')}
-      />
-    </div>
-  </>
-);
+export const InputNumericoDimensionamento = () => {
+  const [value, setValue] = useState('100');
+  const [value50, setValue50] = useState('100');
+  return (
+    <>
+      <div className='w-100'>
+        <Input
+          type='number'
+          label='Input Number inserito in una colonna a tutta larghezza'
+          value={value}
+          onChange={(ev) => {
+            setValue(ev.target.value);
+          }}
+        />
+      </div>
+      <div className='w-50 mt-5'>
+        <Input
+          type='number'
+          label='Input Number inserito in una colonna di larghezza 50%'
+          value={value50}
+          onChange={(ev) => {
+            setValue50(ev.target.value);
+          }}
+        />
+      </div>
+    </>
+  );
+}
 
 export const InputNumericoSteps = () => {
   const [value, setValue] = useState('100');
@@ -321,4 +329,59 @@ export const InputNumericoSteps = () => {
 
 export const InputNumericoDisabilitato = () => {
   return <Input type='number' label='Disabled' value='50' min={0} max={100} disabled />;
+};
+
+export const InputNumericoValuta = () => {
+  const [value, setValue] = useState('100');
+
+  return (
+    <Input
+      type='number'
+      label='Currency'
+      value='50'
+      min={0}
+      max={100}
+      className={'input-number-currency'}
+      onChange={(ev) => {
+        setValue(ev.target.value);
+      }}
+    />
+  );
+};
+
+
+export const InputNumericoPercentuale = () => {
+  const [value, setValue] = useState('100');
+
+  return (
+    <Input
+      type='number'
+      label='Percentage'
+      value='50'
+      min={0}
+      max={100}
+      className={'input-number-percentage'}
+      onChange={(ev) => {
+        setValue(ev.target.value);
+      }}
+    />
+  );
+};
+
+export const InputNumericoRidimensionamento = () => {
+  const [value, setValue] = useState('100');
+
+  return (
+    <Input
+      type='number'
+      label='Ridimensionamento'
+      value='50'
+      min={0}
+      max={100}
+      className={'input-number-adaptive'}
+      onChange={(ev) => {
+        setValue(ev.target.value);
+      }}
+    />
+  );
 };
