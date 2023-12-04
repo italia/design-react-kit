@@ -204,6 +204,8 @@ export const Input = ({
 
   const inputPassword = extraAttributes.type === 'password';
 
+  const indeterminateCheckboxInput = type === 'checkbox' && className?.includes('semi-checked')
+
   // Styling
   const { activeClass, infoTextClass, inputClasses, wrapperClass } = getClasses(
     className,
@@ -268,6 +270,21 @@ export const Input = ({
           className={inputClasses}
           placeholder={placeholder}
           data-testid={testId}
+        />
+      </InputContainer>
+    );
+  }
+
+  if (indeterminateCheckboxInput) {
+    return (
+      <InputContainer {...containerProps}>
+        <Tag
+          {...rest}
+          {...extraAttributes}
+          {...sharedAttributes}
+          className={inputClasses}
+          data-testid={testId}
+          indeterminate={'true'}
         />
       </InputContainer>
     );
