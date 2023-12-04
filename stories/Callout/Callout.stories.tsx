@@ -1,17 +1,14 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
-import React, { useState } from 'react';
+import React from 'react';
 import type { Story } from '@storybook/react';
 
 import {
-  Accordion,
-  AccordionHeader,
-  AccordionBody,
-  Button,
   Callout,
   CalloutText,
   CalloutTitle,
   Icon,
-  CalloutProps
+  CalloutProps,
+  CalloutMoreFooter
 } from '../../src';
 
 export default {
@@ -20,7 +17,9 @@ export default {
 
 export const EsempioBasico: Story = () => (
   <Callout>
-    <CalloutTitle>Titolo Callout</CalloutTitle>
+    <CalloutTitle>
+      <span className='text'>Titolo Callout</span>
+    </CalloutTitle>
     <CalloutText>
       Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit
       amet, consectetur adipiscing elit. Aenean non augue non purus vestibulum
@@ -33,8 +32,8 @@ export const EsempioConIcona: Story = () => (
   <Callout>
     <CalloutTitle>
       <Icon icon='it-info-circle' padding={false} aria-hidden />
-      <span className='sr-only'>Confermato</span>
-      Titolo Callout
+      <span className='visually-hidden'>Confermato</span>
+      <span className='text'>Titolo Callout</span>
     </CalloutTitle>
     <CalloutText>
       Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit
@@ -50,8 +49,8 @@ export const EsempioAccessibilita: Story = () => (
   <Callout>
     <CalloutTitle>
       <Icon icon='it-check-circle' padding={false} aria-hidden />
-      <span className='sr-only'>Confermato</span>
-      Titolo Callout
+      <span className='visually-hidden'>Confermato</span>
+      <span className='text'>Titolo Callout</span>
     </CalloutTitle>
     <CalloutText>
       Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit
@@ -63,15 +62,20 @@ export const EsempioAccessibilita: Story = () => (
 
 EsempioAccessibilita.storyName = 'Esempio accessibilità';
 
-type CalloutTemplateProps = { color: CalloutProps['color']; title: string };
+type CalloutTemplateProps = {
+  color: CalloutProps['color'];
+  title: string;
+  icon: string;
+};
 export const CalloutTemplate: Story<CalloutTemplateProps> = ({
   title,
-  color
+  color,
+  icon
 }) => (
   <Callout color={color}>
     <CalloutTitle>
-      <Icon icon='it-check-circle' padding={false} aria-hidden />
-      {title}
+      <Icon icon={`it-${icon}-circle`} padding={false} aria-hidden />
+      <span className='text'>{title}</span>
     </CalloutTitle>
     <CalloutText>
       Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit
@@ -81,38 +85,47 @@ export const CalloutTemplate: Story<CalloutTemplateProps> = ({
   </Callout>
 );
 
-export const ProceduraAvvenutaConSuccesso: Story<CalloutTemplateProps> = CalloutTemplate.bind(
-  {}
-);
-ProceduraAvvenutaConSuccesso.args = { title: 'Usa', color: 'success' };
+export const ProceduraAvvenutaConSuccesso: Story<CalloutTemplateProps> =
+  CalloutTemplate.bind({});
+ProceduraAvvenutaConSuccesso.args = {
+  title: 'Usa',
+  color: 'success',
+  icon: 'check'
+};
 ProceduraAvvenutaConSuccesso.storyName = 'Procedura avvenuta con successo';
 
-export const ProceduraCheRichiedeAttenzione: Story<CalloutTemplateProps> = CalloutTemplate.bind(
-  {}
-);
-ProceduraCheRichiedeAttenzione.args = { title: 'Attenzione', color: 'warning' };
+export const ProceduraCheRichiedeAttenzione: Story<CalloutTemplateProps> =
+  CalloutTemplate.bind({});
+ProceduraCheRichiedeAttenzione.args = {
+  title: 'Attenzione',
+  color: 'warning',
+  icon: 'help'
+};
 ProceduraCheRichiedeAttenzione.storyName = 'Procedura che richiede attenzione';
 
-export const ProceduraPericolosaONonConsentita: Story<CalloutTemplateProps> = CalloutTemplate.bind(
-  {}
-);
+export const ProceduraPericolosaONonConsentita: Story<CalloutTemplateProps> =
+  CalloutTemplate.bind({});
 ProceduraPericolosaONonConsentita.args = {
   title: 'Non usare',
-  color: 'danger'
+  color: 'danger',
+  icon: 'close'
 };
 ProceduraPericolosaONonConsentita.storyName =
   'Procedura pericolosa o non consentita';
 
-export const ProceduraImportante: Story<CalloutTemplateProps> = CalloutTemplate.bind(
-  {}
-);
-ProceduraImportante.args = { title: 'Importante', color: 'important' };
+export const ProceduraImportante: Story<CalloutTemplateProps> =
+  CalloutTemplate.bind({});
+ProceduraImportante.args = {
+  title: 'Importante',
+  color: 'important',
+  icon: 'info'
+};
 ProceduraImportante.storyName = 'Procedura importante';
 
 export const CalloutNote: Story<CalloutTemplateProps> = CalloutTemplate.bind(
   {}
 );
-CalloutNote.args = { title: 'Note a riguardo', color: 'note' };
+CalloutNote.args = { title: 'Note a riguardo', color: 'note', icon: 'info' };
 
 export const CalloutHighlights: Story = () => (
   <Callout highlight>
@@ -132,14 +145,15 @@ export const CalloutHighlights: Story = () => (
 type CalloutHighlightTemplateProps = CalloutTemplateProps;
 const CalloutHighlightsTemplate: Story<CalloutHighlightTemplateProps> = ({
   title,
-  color
+  color,
+  icon
 }) => (
   <Callout highlight color={color}>
     <CalloutTitle>
-      <Icon icon='it-info-circle' padding={false} aria-hidden />
+      <Icon icon={`it-${icon}-circle`} padding={false} aria-hidden />
       {title}
     </CalloutTitle>
-    <CalloutText bigText>
+    <CalloutText>
       Maecenas at erat id sem interdum efficitur eu sed nunc. Mauris sit amet
       erat eget augue molestie malesuada ut sed ex. In sed dignissim elit.
     </CalloutText>
@@ -151,36 +165,43 @@ const CalloutHighlightsTemplate: Story<CalloutHighlightTemplateProps> = ({
   </Callout>
 );
 
-export const CalloutHighlightsSuccess: Story<CalloutHighlightTemplateProps> = CalloutHighlightsTemplate.bind(
-  {}
-);
-CalloutHighlightsSuccess.args = { title: 'Usa', color: 'success' };
+export const CalloutHighlightsSuccess: Story<CalloutHighlightTemplateProps> =
+  CalloutHighlightsTemplate.bind({});
+CalloutHighlightsSuccess.args = {
+  title: 'Usa',
+  color: 'success',
+  icon: 'check'
+};
 
-export const CalloutHighlightsWarning: Story<CalloutHighlightTemplateProps> = CalloutHighlightsTemplate.bind(
-  {}
-);
-CalloutHighlightsWarning.args = { title: 'Attenzione', color: 'warning' };
+export const CalloutHighlightsWarning: Story<CalloutHighlightTemplateProps> =
+  CalloutHighlightsTemplate.bind({});
+CalloutHighlightsWarning.args = {
+  title: 'Attenzione',
+  color: 'warning',
+  icon: 'help'
+};
 
-export const CalloutHighlightsDanger: Story<CalloutHighlightTemplateProps> = CalloutHighlightsTemplate.bind(
-  {}
-);
-CalloutHighlightsDanger.args = { title: 'Non usare', color: 'danger' };
+export const CalloutHighlightsDanger: Story<CalloutHighlightTemplateProps> =
+  CalloutHighlightsTemplate.bind({});
+CalloutHighlightsDanger.args = {
+  title: 'Non usare',
+  color: 'danger',
+  icon: 'close'
+};
 
-export const CalloutHighlightsImportant: Story<CalloutHighlightTemplateProps> = CalloutHighlightsTemplate.bind(
-  {}
-);
-CalloutHighlightsImportant.args = { title: 'Importante', color: 'important' };
+export const CalloutHighlightsImportant: Story<CalloutHighlightTemplateProps> =
+  CalloutHighlightsTemplate.bind({});
+CalloutHighlightsImportant.args = {
+  title: 'Importante',
+  color: 'important',
+  icon: 'info'
+};
 
-export const CalloutHighlightsNote: Story<CalloutHighlightTemplateProps> = CalloutHighlightsTemplate.bind(
-  {}
-);
-CalloutHighlightsNote.args = { title: 'Note', color: 'note' };
+export const CalloutHighlightsNote: Story<CalloutHighlightTemplateProps> =
+  CalloutHighlightsTemplate.bind({});
+CalloutHighlightsNote.args = { title: 'Note', color: 'note', icon: 'info' };
 
 export const CalloutApprofondimento = () => {
-  const [isOpen, toggleOpen] = useState(false);
-  const toggle = () => {
-    toggleOpen(!isOpen);
-  };
   return (
     <Callout color='note' detailed>
       <CalloutTitle>
@@ -209,51 +230,35 @@ export const CalloutApprofondimento = () => {
           purus vestibulum varius. Maecenas ullamcorper tincidunt nulla quis
           laoreet.
         </p>
-        <Accordion>
-          <AccordionHeader
-            tag={Button}
-            active={isOpen}
-            onToggle={toggle}
-            className='callout-more-toggle'
-            append={
-              <a className='callout-more-download' href='#'>
-                <Icon icon='it-download' />
-                <span className='sr-only'>PDF</span> Download
-              </a>
-            }
-          >
-            Leggi tutto <span></span>
-          </AccordionHeader>
-          <AccordionBody active={isOpen}>
-            <p>
-              Aenean tortor enim, suscipit eget commodo at, imperdiet quis diam.
-              Vestibulum non accumsan felis, at ultrices lorem. Pellentesque ac
-              diam a ipsum cursus interdum id nec odio. Vestibulum nec congue
-              mauris. Aliquam et dui purus. Mauris in imperdiet risus, sed
-              blandit tellus. Donec posuere accumsan lacinia. Mauris dignissim,
-              sem vel volutpat rhoncus, neque mi ullamcorper ante, vitae
-              volutpat ipsum quam id purus. Duis tincidunt sodales nisl eget
-              ultricies. Sed condimentum mi eu ex venenatis, quis bibendum dui
-              ultrices. Quisque ex eros, pellentesque vitae enim sed, pharetra
-              tempus dolor. Donec eu nibh ac lacus luctus pellentesque. Duis
-              interdum scelerisque magna nec malesuada.
-            </p>
-            <p>
-              Maecenas at erat id{' '}
-              <strong>sem interdum efficitur eu sed nunc.</strong> Mauris sit
-              amet erat eget augue molestie malesuada ut sed ex. In sed
-              dignissim elit. Donec efficitur, sem eget vestibulum auctor, sem
-              erat interdum magna, eu commodo odio mauris semper dolor.
-            </p>
-            <p>
-              Maecenas vulputate ante dictum <a href='#'>vestibulum volutpat</a>
-              . Lorem ipsum dolor sit amet,{' '}
-              <strong>consectetur adipiscing elit.</strong> Aenean non augue non
-              purus vestibulum varius. Maecenas ullamcorper tincidunt nulla quis
-              laoreet.
-            </p>
-          </AccordionBody>
-        </Accordion>
+        <CalloutMoreFooter id='example' fileUrl='#'>
+          <p>
+            Aenean tortor enim, suscipit eget commodo at, imperdiet quis diam.
+            Vestibulum non accumsan felis, at ultrices lorem. Pellentesque ac
+            diam a ipsum cursus interdum id nec odio. Vestibulum nec congue
+            mauris. Aliquam et dui purus. Mauris in imperdiet risus, sed blandit
+            tellus. Donec posuere accumsan lacinia. Mauris dignissim, sem vel
+            volutpat rhoncus, neque mi ullamcorper ante, vitae volutpat ipsum
+            quam id purus. Duis tincidunt sodales nisl eget ultricies. Sed
+            condimentum mi eu ex venenatis, quis bibendum dui ultrices. Quisque
+            ex eros, pellentesque vitae enim sed, pharetra tempus dolor. Donec
+            eu nibh ac lacus luctus pellentesque. Duis interdum scelerisque
+            magna nec malesuada.
+          </p>
+          <p>
+            Maecenas at erat id{' '}
+            <strong>sem interdum efficitur eu sed nunc.</strong> Mauris sit amet
+            erat eget augue molestie malesuada ut sed ex. In sed dignissim elit.
+            Donec efficitur, sem eget vestibulum auctor, sem erat interdum
+            magna, eu commodo odio mauris semper dolor.
+          </p>
+          <p>
+            Maecenas vulputate ante dictum <a href='#'>vestibulum volutpat</a>.
+            Lorem ipsum dolor sit amet,{' '}
+            <strong>consectetur adipiscing elit.</strong> Aenean non augue non
+            purus vestibulum varius. Maecenas ullamcorper tincidunt nulla quis
+            laoreet.
+          </p>
+        </CalloutMoreFooter>
       </CalloutText>
     </Callout>
   );

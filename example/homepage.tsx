@@ -90,7 +90,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
                         <Icon icon='it-pa' />
                         Giunta e consiglio
                       </CardCategory>
-                      <CardTitle className='font-weight-semibold'>
+                      <CardTitle className='fw-semibold'>
                         Mario Rossi
                       </CardTitle>
                       <CardText className='card-text'>
@@ -105,7 +105,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
                     </div>
                   </div>
                   <CardReadMore
-                    className='pl-4'
+                    className='ps-4'
                     iconName='it-arrow-right'
                     text="Tutta l'amministrazione"
                     href='/design-comuni-prototipi/esempi/bootstrap-italia/template-amministrazione.html'
@@ -117,7 +117,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
                       <Icon icon='it-pa' />
                       Pagamenti
                     </CardCategory>
-                    <CardTitle className='font-weight-semibold'>
+                    <CardTitle className='fw-semibold'>
                       TARI - Tassa dei rifiuti
                     </CardTitle>
                     <CardText>
@@ -138,7 +138,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
                       <Icon icon='it-pa' />
                       Bandi
                     </CardCategory>
-                    <CardTitle className='font-weight-semibold'>
+                    <CardTitle className='fw-semibold'>
                       Come partecipare ad un bando
                     </CardTitle>
                     <CardText>
@@ -522,7 +522,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
                         noWrapper
                         className='card-bg-primary no-after mt-0'
                       >
-                        <div className='avatar size-lg mr-3'>
+                        <div className='avatar size-lg me-3'>
                           <img
                             src='https://picsum.photos/200/200'
                             alt='Immagine'
@@ -690,7 +690,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
             <div className='py-4'>
               <div className='card-wrapper card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-3'>
                 <Card teaser noWrapper className='card-bg-primary rounded'>
-                  <div className='avatar size-lg mr-3'>
+                  <div className='avatar size-lg me-3'>
                     <img src='https://picsum.photos/200/200' alt='Immagine' />
                   </div>
                   <CardBody>
@@ -701,7 +701,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
                   </CardBody>
                 </Card>
                 <Card teaser noWrapper className='card-bg-warning rounded'>
-                  <div className='avatar size-lg mr-3'>
+                  <div className='avatar size-lg me-3'>
                     <img src='https://picsum.photos/200/200' alt='Immagine' />
                   </div>
                   <CardBody>
@@ -713,7 +713,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
                   </CardBody>
                 </Card>
                 <Card teaser noWrapper className='card-bg-dark rounded'>
-                  <div className='avatar size-lg mr-3'>
+                  <div className='avatar size-lg me-3'>
                     <img src='https://picsum.photos/200/200' alt='Immagine' />
                   </div>
                   <CardBody tag='h5'>

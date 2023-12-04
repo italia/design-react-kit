@@ -147,3 +147,17 @@ div[id*='componenti-bottomnav'] .bottom-nav {
   max-width: 400px;
   height: 400px;
 }
+
+/* =======================================
+// Display Back to top button inline in the docs
+// ======================================= */
+
+.back-to-top:not(.example) {
+  position: relative;
+  bottom: unset;
+  right: unset;
+  visibility: visible;
+  margin: 0 auto;
+  opacity: 1;
+  transform: scale(1);
+}

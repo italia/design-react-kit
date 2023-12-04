@@ -11,7 +11,9 @@ import { Callout, CalloutTitle, CalloutText } from '../../src';
 
 <div className='docs'>
   <Callout color='success'>
-    <CalloutTitle>Accessibilità</CalloutTitle>
+    <CalloutTitle>
+      <span className='text'>Accessibilità</span>
+    </CalloutTitle>
     <CalloutText>
       Il colore è uno degli strumenti principali per la trasmissione delle
       informazioni, ma non dimenticare mai di affiancare all’uso del colore
@@ -58,7 +60,9 @@ Si possono trovare maggiori informazioni a riguardo sul <a href="https://getboot
 <div className='docs'>
   <Callout color='success'>
     <CalloutTitle>
-      Trasmettere significato alle tecnologie assistive
+      <span className='text'>
+        Trasmettere significato alle tecnologie assistive
+      </span>
     </CalloutTitle>
     <CalloutText>
       L’uso del colore per aggiungere un significato fornisce solo
@@ -66,7 +70,8 @@ Si possono trovare maggiori informazioni a riguardo sul <a href="https://getboot
       assistive – come gli screen reader. Assicurati che le informazioni
       denotate dal colore siano rese disponibili anche dal contenuto stesso
       (es.: il testo visibile), o siano incluse attraverso mezzi alternativi,
-      come testo aggiuntivo nascosto con la classe <Code>.sr-only</Code>.
+      come testo aggiuntivo nascosto con la classe
+      <Code>.visually-hidden</Code>.
     </CalloutText>
   </Callout>
 </div>

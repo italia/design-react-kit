@@ -1,5 +1,6 @@
 import React, { FC, HTMLAttributes } from 'react';
-import { CSSModule, ModalFooter as InnerModalFooter } from 'reactstrap';
+import { ModalFooter as InnerModalFooter } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 
 export interface ModalFooterProps extends HTMLAttributes<HTMLElement> {
   tag?: React.ElementType;

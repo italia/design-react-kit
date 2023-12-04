@@ -11,21 +11,15 @@ export const component = ({
 }: SVGProps<SVGSVGElement> & SVGRProps) => {
   return (
     <svg
-      width={24}
-      height={24}
-      viewBox='0 0 24 24'
       xmlns='http://www.w3.org/2000/svg'
-      role='img'
+      viewBox='0 0 24 24'
+      xmlSpace='preserve'
+      enableBackground='new 0 0 24 24'
       aria-labelledby={titleId}
       {...props}
     >
-      {title === undefined ? (
-        <title id={titleId}>{'Logo Flickr Square'}</title>
-      ) : title ? (
-        <title id={titleId}>{title}</title>
-      ) : null}
-      <path fill='none' d='M0 0h24v24H0z' />
-      <path d='M20 4a3.26 3.26 0 0 0-2.38-1H6.38A3.26 3.26 0 0 0 4 4a3.26 3.26 0 0 0-1 2.37v11.25A3.26 3.26 0 0 0 4 20a3.26 3.26 0 0 0 2.39 1h11.24A3.38 3.38 0 0 0 21 17.62V6.37A3.26 3.26 0 0 0 20 4Zm-9.56 9.77a2.5 2.5 0 0 1-3.51 0 2.49 2.49 0 0 1 0-3.52 2.5 2.5 0 0 1 3.51 0 2.49 2.49 0 0 1 0 3.52Zm6.61 0A2.49 2.49 0 0 1 12.82 12a2.49 2.49 0 0 1 4.24-1.76 2.49 2.49 0 0 1 0 3.52l-.01.01Z' />
+      {title ? <title id={titleId}>{title}</title> : null}
+      <path d='M20 4c-.6-.6-1.5-1-2.4-1H6.4c-.9 0-1.8.4-2.4 1-.6.6-1 1.5-1 2.4v11.3c0 .9.4 1.8 1 2.4.6.6 1.5 1 2.4 1h11.2c1.9 0 3.4-1.5 3.4-3.4V6.4c0-.9-.4-1.8-1-2.4zm-9.6 9.8c-1 1-2.5 1-3.5 0s-1-2.5 0-3.5 2.5-1 3.5 0c1 .9 1 2.5 0 3.5zm6.6 0c-.7.7-1.8.9-2.7.5-.9-.4-1.5-1.3-1.5-2.3 0-1 .6-1.9 1.5-2.3.9-.4 2-.2 2.7.5 1 1 1 2.6 0 3.6z' />
     </svg>
   );
 };

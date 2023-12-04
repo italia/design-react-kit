@@ -11,21 +11,15 @@ export const component = ({
 }: SVGProps<SVGSVGElement> & SVGRProps) => {
   return (
     <svg
-      width={24}
-      height={24}
-      viewBox='0 0 24 24'
       xmlns='http://www.w3.org/2000/svg'
-      role='img'
+      viewBox='0 0 24 24'
+      xmlSpace='preserve'
+      enableBackground='new 0 0 24 24'
       aria-labelledby={titleId}
       {...props}
     >
-      {title === undefined ? (
-        <title id={titleId}>{'Logo Facebook'}</title>
-      ) : title ? (
-        <title id={titleId}>{title}</title>
-      ) : null}
-      <path fill='none' d='M0 0h24v24H0z' />
-      <path d='M13.55 22v-9.11h3.07l.46-3.56h-3.53V7.05c0-1 .29-1.73 1.77-1.73h1.87V2.14A25.14 25.14 0 0 0 14.45 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.81v3.57h3.06V22h3.68Z' />
+      {title ? <title id={titleId}>{title}</title> : null}
+      <path d='M13.6 22v-9.1h3.1l.5-3.6h-3.5V7.1c0-1 .3-1.7 1.8-1.7h1.9V2.1c-1.1-.1-2-.1-3-.1-2.7 0-4.6 1.7-4.6 4.7v2.6h-3v3.6h3.1V22h3.7z' />
     </svg>
   );
 };

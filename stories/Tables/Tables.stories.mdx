@@ -23,7 +23,7 @@ Puoi anche invertire i colori, con testo chiaro su sfondi scuri con l'attributo 
 
 ## Opzioni delle intestazioni di tabella
 
-Utilizzare le classi di modifica `.thead-light` o `.thead-dark` per far apparire `<thead/>`. chiaro o grigio scuro.
+Utilizzare le classi di modifica `.table-light` o `.table-dark` per far apparire `<thead>, <tbody>, <tfoot>, <tr>, <th> e <td>`. chiaro o grigio scuro.
 
 <Canvas>
   <Story id='componenti-tables--table-thead' />
@@ -80,7 +80,9 @@ Usa le classi contestuali per colorare le righe delle tabelle o le singole celle
 <div className='docs'>
   <Callout color='success'>
     <CalloutTitle>
-      Trasmettere significato alle tecnologie assistive
+      <span className='text'>
+        Trasmettere significato alle tecnologie assistive
+      </span>
     </CalloutTitle>
     <CalloutText>
       L'uso del colore per aggiungere un significato fornisce solo
@@ -88,7 +90,8 @@ Usa le classi contestuali per colorare le righe delle tabelle o le singole celle
       assistive – come gli screen reader. Assicurati che le informazioni
       denotate dal colore siano rese disponibili anche dal contenuto stesso
       (es.: il testo visibile), o siano incluse attraverso mezzi alternativi,
-      come testo aggiuntivo nascosto con la classe <code>.sr-only</code>.
+      come testo aggiuntivo nascosto con la classe
+      <code>.visually-hidden</code>.
     </CalloutText>
   </Callout>
 </div>
@@ -107,7 +110,9 @@ Le tabelle responsive consentono di scorrere le tabelle orizzontalmente con faci
 
 <div className='docs'>
   <Callout color='primary'>
-    <CalloutTitle>Ritaglio / troncamento verticale</CalloutTitle>
+    <CalloutTitle>
+      <span className='text'>Ritaglio / troncamento verticale</span>
+    </CalloutTitle>
     <CalloutText>
       Le tabelle responsive fanno uso di <code>overflow-y: hidden</code>, che
       rimuove qualsiasi contenuto che va oltre i bordi inferiore o superiore

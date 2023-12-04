@@ -12,20 +12,14 @@ export const component = ({
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width={24}
-      height={24}
       viewBox='0 0 24 24'
-      role='img'
+      xmlSpace='preserve'
+      enableBackground='new 0 0 24 24'
       aria-labelledby={titleId}
       {...props}
     >
-      {title === undefined ? (
-        <title id={titleId}>{'List'}</title>
-      ) : title ? (
-        <title id={titleId}>{title}</title>
-      ) : null}
-      <path d='M4 12a.9.9 0 0 1-1 1 1 1 0 0 1 0-2 .9.9 0 0 1 1 1ZM3 4.5a.9.9 0 0 0-1 1 .9.9 0 0 0 1 1 .9.9 0 0 0 1-1 .9.9 0 0 0-1-1Zm0 13a1 1 0 0 0 0 2 1 1 0 0 0 0-2ZM6 5v1h16V5Zm0 7.5h16v-1H6ZM6 19h16v-1H6Z' />
-      <path fill='none' d='M0 0h24v24H0z' />
+      {title ? <title id={titleId}>{title}</title> : null}
+      <path d='M4 12c.1.5-.3.9-.8 1H3c-.6 0-1-.4-1-1s.4-1 1-1c.5-.1.9.3 1 .8v.2zM3 4.5c-.5-.1-.9.3-1 .8v.2c-.1.5.3.9.8 1H3c.5.1.9-.3 1-.8v-.2c.1-.5-.3-.9-.8-1H3zm0 13c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1zM6 5v1h16V5H6zm0 7.5h16v-1H6v1zM6 19h16v-1H6v1z' />
     </svg>
   );
 };

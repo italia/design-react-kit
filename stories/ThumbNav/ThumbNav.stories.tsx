@@ -269,13 +269,11 @@ EsempioAutoWidth.argTypes = {
   }
 };
 
-export const EsempioAutoWidthThree: Story<EsempioAutoWidthProps> = EsempioAutoWidth.bind(
-  {}
-);
+export const EsempioAutoWidthThree: Story<EsempioAutoWidthProps> =
+  EsempioAutoWidth.bind({});
 EsempioAutoWidthThree.args = { rowItems: 3 };
-export const EsempioAutoWidthFive: Story<EsempioAutoWidthProps> = EsempioAutoWidth.bind(
-  {}
-);
+export const EsempioAutoWidthFive: Story<EsempioAutoWidthProps> =
+  EsempioAutoWidth.bind({});
 EsempioAutoWidthFive.args = { rowItems: 5 };
 
 export default {

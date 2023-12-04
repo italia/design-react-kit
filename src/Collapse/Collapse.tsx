@@ -1,7 +1,8 @@
 import React, { ElementType, FC, HTMLAttributes, Ref } from 'react';
 import classNames from 'classnames';
 
-import { Collapse as CollapseBase, CSSModule } from 'reactstrap';
+import { Collapse as CollapseBase } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 
 // Copy over from reactstrap and add new ones
 export interface CollapseProps extends HTMLAttributes<HTMLElement> {
@@ -72,7 +73,7 @@ export const Collapse: FC<CollapseProps> = ({
         {...attributes}
       >
         <div className='overlay' style={style} onClick={onOverlayClick}></div>
-        <div className='close-div sr-only'>
+        <div className='close-div visually-hidden'>
           <button className='btn close-menu' type='button'>
             <span className='it-close'></span>close
           </button>

@@ -87,10 +87,10 @@ test('should replace the existing icon with another (already loaded) when reques
   await preloadIcons(['it-tool', 'it-search']);
   const onLoad = jest.fn();
   const { container, rerender } = render(
-    <Icon icon='it-tool' onIconLoad={onLoad} />
+    <Icon icon='it-tool' title='Tool' onIconLoad={onLoad} />
   );
   expect(getIconTitle(container, 'Tool')).toBeTruthy();
-  rerender(<Icon icon='it-search' onIconLoad={onLoad} />);
+  rerender(<Icon icon='it-search' title='Search' onIconLoad={onLoad} />);
   expect(getIconTitle(container, 'Search')).toBeTruthy();
 });
 
@@ -103,10 +103,8 @@ test('should have a testId for resilient UI changes', async () => {
 });
 
 test(`should have default title when no title is passed`, async () => {
-  const [, exceptionList] = await Promise.all([
-    preloadIcons(icons),
-    getExceptionList()
-  ]);
+  await preloadIcons(icons);
+  const exceptionList = await getExceptionList();
   const { container, rerender } = render(<Icon icon={''} title={undefined} />);
   for (const icon of icons) {
     rerender(<Icon icon={icon} title={undefined} />);

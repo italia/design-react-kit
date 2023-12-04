@@ -10,6 +10,7 @@ import type { TransitionStates } from '../transitions';
 export type AccordionBodyProps = Partial<TransitionProps> & {
   tag?: ElementType;
   className?: string;
+  listClassName?: string;
   active?: boolean;
   onToggle?: () => void;
 };
@@ -32,6 +33,7 @@ function getHeight(node: HTMLElement) {
 
 export const AccordionBody = ({
   className,
+  listClassName,
   tag = 'div',
   active = false,
   children,
@@ -98,7 +100,7 @@ export const AccordionBody = ({
       {(status: TransitionStates) => {
         const transitionClass = getTransitionClass(status);
         const classes = classNames(className, transitionClass);
-
+        const listClasses = classNames(listClassName, 'accordion-body');
         const style = height == null ? null : { height };
 
         return (
@@ -107,7 +109,7 @@ export const AccordionBody = ({
             style={{ ...childProps.style, ...style }}
             {...childProps}
           >
-            <div className='collapse-body'>{children}</div>
+            <div className={listClasses}>{children}</div>
           </Tag>
         );
       }}

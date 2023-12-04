@@ -1,5 +1,5 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
-import React from 'react';
+import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Alert, AlertProps } from '../../src';
 
@@ -16,13 +16,13 @@ export const _Esempi: Story<AlertProps> = () => (
       Questo è un alert di tipo <b>info</b>!
     </Alert>
     <Alert color='success'>
-      Questo è un alert di <b>success</b>!
+      Questo è un alert di tipo <b>success</b>!
     </Alert>
     <Alert color='danger'>
-      Questo è un alert di <b>danger</b>!
+      Questo è un alert di tipo <b>danger</b>!
     </Alert>
     <Alert color='warning'>
-      Questo è un alert di <b>warning</b>!
+      Questo è un alert di tipo <b>warning</b>!
     </Alert>
   </div>
 );
@@ -74,20 +74,19 @@ export const _ContenutoAggiuntivo: Story<AlertProps> = () => (
 );
 _ContenutoAggiuntivo.args = {};
 
-// export const ChiusuraControllata: Story<AlertProps> = () => {
-//   const [open, toggleAlert] = useState(true)
-//   return (
-//     <div>
-//       <Button onClick={() => toggleAlert(!open)} disabled={open}>
-//         Mostra Alert
-//       </Button>
+export const ChiusuraControllata: Story<AlertProps> = () => {
+  const [open, setOpen] = useState(true);
 
-//       <Alert color="warning" isOpen={open} toggle={() => toggleAlert(!open)}>
-//         <strong>Attenzione</strong> Alcuni campi inseriti sono da controllare.
-//       </Alert>
-//     </div>
-//   )
-// }
-// ChiusuraControllata.story = {
-//   name: 'Chiusura Controllata'
-// }
+  const closeAlert = () => setOpen(false);
+
+  return (
+    <div>
+      <Alert color='warning' isOpen={open} toggle={closeAlert}>
+        <strong>Attenzione</strong> Alcuni campi inseriti sono da controllare.
+      </Alert>
+    </div>
+  );
+};
+ChiusuraControllata.story = {
+  name: 'Chiusura Controllata'
+};

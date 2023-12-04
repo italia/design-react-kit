@@ -17,7 +17,7 @@ import {
   getInfoTextControlClass,
   useFocus
 } from './utils';
-import type { CSSModule } from 'reactstrap';
+import type { CSSModule } from 'reactstrap/types/lib/utils';
 import { notifyDeprecation } from '../utils';
 // taken from reactstrap types
 type InputType =
@@ -106,7 +106,7 @@ export const Input = ({
   id,
   className,
   cssModule,
-  type,
+  type = 'text',
   state,
   tag,
   addon,
@@ -128,14 +128,11 @@ export const Input = ({
   const [isHidden, setHidden] = useState(true);
   const [hasIcon, toggleIcon] = useState(true);
 
-  const {
-    toggleFocusLabel,
-    toggleBlurLabel,
-    isFocused
-  } = useFocus<HTMLInputElement>({
-    onFocus: attributes.onFocus,
-    onBlur: attributes.onBlur
-  });
+  const { toggleFocusLabel, toggleBlurLabel, isFocused } =
+    useFocus<HTMLInputElement>({
+      onFocus: attributes.onFocus,
+      onBlur: attributes.onBlur
+    });
 
   const toggleShow = useCallback(() => {
     setHidden(!isHidden);
@@ -174,7 +171,7 @@ export const Input = ({
     notifyDeprecation(
       'Please use the prop "bsSize" instead of the "size" to bootstrap\'s input sizing.'
     );
-    bsSize = (size as unknown) as InputProps['bsSize'];
+    bsSize = size as unknown as InputProps['bsSize'];
   } else {
     extraAttributes.size = size;
   }

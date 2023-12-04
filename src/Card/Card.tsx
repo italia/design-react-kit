@@ -1,10 +1,13 @@
 import React, { FC, HTMLAttributes, ElementType, Ref } from 'react';
 import classNames from 'classnames';
-import { Card as CardBase, CSSModule } from 'reactstrap';
+import { Card as CardBase } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 
 export interface CardProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
+  /** Utilizzarlo quando si passa `a` a `tag` per ottenere una special card cliccabile */
+  href?: string;
   /** Classi aggiuntive da usare per il componente Card */
   className?: string;
   /** Da utilizzare per impostare un riferimento all'elemento DOM */
@@ -24,6 +27,7 @@ export interface CardProps extends HTMLAttributes<HTMLElement> {
 
 export const Card: FC<CardProps> = ({
   tag = 'div',
+  href = undefined,
   teaser,
   spacing,
   noWrapper = false,
@@ -45,6 +49,7 @@ export const Card: FC<CardProps> = ({
         {...attributes}
         className={cardClasses}
         tag={tag}
+        href={tag === 'a' ? href : undefined}
         data-testid={testId}
       />
     );
@@ -52,7 +57,12 @@ export const Card: FC<CardProps> = ({
 
   return (
     <div className={wrapperClasses} data-testid={testId}>
-      <CardBase {...attributes} className={cardClasses} tag={tag} />
+      <CardBase
+        {...attributes}
+        className={cardClasses}
+        tag={tag}
+        href={tag === 'a' ? href : undefined}
+      />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { useState, useCallback } from 'react';
-import type { CSSModule } from 'reactstrap';
+import type { CSSModule } from 'reactstrap/types/lib/utils';
 import { mapToCssModules } from '../utils';
 import type { InputProps } from './Input';
 
@@ -40,13 +40,13 @@ export function getFormControlClass(
 }
 
 export function getInfoTextControlClass(
-  { valid, invalid }: ValidationProps,
+  { invalid }: ValidationProps,
   cssModule?: CSSModule
 ) {
   return mapToCssModules(
     classNames({
-      'form-text': valid || invalid,
-      'text-muted': !valid || invalid
+      'form-text': true,
+      'form-feedback just-validate-error-label': invalid
     }),
     cssModule
   );
@@ -78,7 +78,7 @@ type InputClassesParams = ValidationProps &
     isFocused: boolean;
     inputPassword?: boolean;
     formControlClass?: string;
-    infoTextControlClass: string;
+    infoTextControlClass?: string;
     originalWrapperClass: InputProps['wrapperClassName'];
   };
 
@@ -113,7 +113,7 @@ export function getClasses(
       className,
       {
         'is-invalid': invalid,
-        'is-valid': valid,
+        'just-validate-success-field': valid,
         [`form-control-${bsSize}`]: bsSize
       },
       formControlClass
@@ -128,7 +128,7 @@ export function getClasses(
     classNames(
       {
         'valid-feedback': valid,
-        'invalid-feedback': invalid
+        'invalid-feedback form-feedback just-validate-error-label': invalid
       },
       infoTextControlClass
     ),

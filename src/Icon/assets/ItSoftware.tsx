@@ -11,18 +11,30 @@ export const component = ({
 }: SVGProps<SVGSVGElement> & SVGRProps) => {
   return (
     <svg
+      id='Livello_1'
       xmlns='http://www.w3.org/2000/svg'
-      width={24}
-      height={24}
+      x={0}
+      y={0}
       viewBox='0 0 24 24'
-      role='img'
+      xmlSpace='preserve'
+      enableBackground='new 0 0 24 24'
       aria-labelledby={titleId}
       {...props}
     >
       {title ? <title id={titleId}>{title}</title> : null}
-      <path fill='none' d='M0 0h24v24H0z' />
-      <path d='M20.5 3h-17A1.5 1.5 0 0 0 2 4.5v15A1.5 1.5 0 0 0 3.5 21h17a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 20.5 3Zm.5 16.5a.5.5 0 0 1-.5.5h-17a.5.5 0 0 1-.5-.5V8h18ZM21 7H3V4.5a.5.5 0 0 1 .5-.5h17a.5.5 0 0 1 .5.5Z' />
-      <path d='M12 16h5v1h-5zM12 14.06l-5.1 3.69v-1.24l3.39-2.45-3.39-2.45v-1.24l5.1 3.69zM10.29 14.06 6.9 16.51M10.29 14.06 6.9 11.61' />
+      <path
+        d='M18.5 0h-17C.7 0 0 .7 0 1.5v15c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-15c0-.8-.7-1.5-1.5-1.5zm.5 16.5c0 .3-.2.5-.5.5h-17c-.3 0-.5-.2-.5-.5V5h18v11.5zM19 4H1V1.5c0-.3.2-.5.5-.5h17c.3 0 .5.2.5.5V4z'
+        transform='translate(2 3)'
+      />
+      <path
+        d='M10 13h5v1h-5zM10 11.1l-5.1 3.7v-1.3l3.4-2.4-3.4-2.5V7.4z'
+        transform='translate(2 3)'
+      />
+      <path
+        className='st0'
+        d='m8.3 11.1-3.4 2.4M8.3 11.1 4.9 8.6'
+        transform='translate(2 3)'
+      />
     </svg>
   );
 };

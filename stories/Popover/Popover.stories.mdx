@@ -1,6 +1,5 @@
 import { Meta, Canvas, Story } from '@storybook/addon-docs';
-import { Code } from '@storybook/components';
-import LinkTo from '@storybook/addon-links/react';
+import { LinkTo } from '@storybook/addon-links';
 import {
   // Components to include
   Popover,
@@ -17,7 +16,9 @@ import {
 
 <div className='docs'>
   <Callout color='success'>
-    <CalloutTitle>Accessibilità</CalloutTitle>
+    <CalloutTitle>
+      <span className='text'>Accessibilità</span>
+    </CalloutTitle>
     <CalloutText>
       I popover funzionano sia con la tastiera che per gli utenti dotati di
       tecnologia assistiva. Allo stesso modo di quanto avviene per i{' '}
@@ -33,8 +34,8 @@ Cose da sapere quando si utilizza il plugin popover:
 
 - I title e i content con valori vuoti non mostreranno mai popover.
 - Attivare i popover su elementi nascosti non funzionerà.
-- I popover per gli elementi <Code>.disabled</Code> o <Code>disabled</Code> devono essere attivati da un elemento contenitore.
-- Quanto attivato da ancore che si estendono su più linee, i popover verranno centrati tra la larghezza complessiva delle ancore. Usa <Code>white-space: nowrap;</Code> sugli elementi `<a/>` per evitare questo comportamento.
+- I popover per gli elementi `.disabled` o `disabled` devono essere attivati da un elemento contenitore.
+- Quanto attivato da ancore che si estendono su più linee, i popover verranno centrati tra la larghezza complessiva delle ancore. Usa `white-space: nowrap;` sugli elementi `<a/>` per evitare questo comportamento.
 
 ### Esempi
 
@@ -76,9 +77,9 @@ Usa l'attributo `trigger="focus"` per ignorare i popover sul clic successivo del
 
 #### Elementi disabilitati
 
-Elementi con l’attributo <Code>disabled</Code> non sono interattivi, il che significa che gli utenti non possono attivare il popover (o un tooltip) con il passaggio del mouse o facendo click su di essi.
+Elementi con l’attributo `disabled` non sono interattivi, il che significa che gli utenti non possono attivare il popover (o un tooltip) con il passaggio del mouse o facendo click su di essi.
 
-Come soluzione, ti consigliamo di attivare il `Popover` da un elemento `<div/>` o `<span/>` contenitore e sovrascrivere il <Code>pointer-events</Code> su un elemento disabilitato.
+Come soluzione, ti consigliamo di attivare il `Popover` da un elemento `<div/>` o `<span/>` contenitore e sovrascrivere il `pointer-events` su un elemento disabilitato.
 
 <Canvas>
   <Story id='componenti-popover--elementi-disabilitati' />

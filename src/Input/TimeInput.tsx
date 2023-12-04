@@ -54,9 +54,9 @@ const TimeInputContainer = ({
         >
           {label}
         </label>
-        <small id={infoId} className={infoTextClass}>
+        <div id={infoId} className={infoTextClass}>
           {infoText}
-        </small>
+        </div>
         <div className='input-group-append'>{button}</div>
       </div>
     </div>
@@ -183,7 +183,7 @@ export const TimeInput = ({
         <div className='error_container' role='alert' aria-atomic='true'></div>
         <fieldset>
           <legend>
-            <span className='sr-only'>{srText}</span>
+            <span className='visually-hidden'>{srText}</span>
           </legend>
           <div>
             <div className='calendar-input-container'>

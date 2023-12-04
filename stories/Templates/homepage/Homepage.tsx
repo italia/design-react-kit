@@ -91,9 +91,7 @@ const Homepage: Story<PageProps> = ({ theme, townName, townTagLine }) => {
                         <Icon icon='it-pa' />
                         Giunta e consiglio
                       </CardCategory>
-                      <CardTitle className='font-weight-semibold'>
-                        Mario Rossi
-                      </CardTitle>
+                      <CardTitle className='fw-semibold'>Mario Rossi</CardTitle>
                       <CardText className='card-text'>
                         Sindaco della città
                       </CardText>
@@ -106,7 +104,7 @@ const Homepage: Story<PageProps> = ({ theme, townName, townTagLine }) => {
                     </div>
                   </div>
                   <CardReadMore
-                    className='pl-4'
+                    className='ps-4'
                     iconName='it-arrow-right'
                     text="Tutta l'amministrazione"
                     href='/design-comuni-prototipi/esempi/bootstrap-italia/template-amministrazione.html'
@@ -118,7 +116,7 @@ const Homepage: Story<PageProps> = ({ theme, townName, townTagLine }) => {
                       <Icon icon='it-pa' />
                       Pagamenti
                     </CardCategory>
-                    <CardTitle className='font-weight-semibold'>
+                    <CardTitle className='fw-semibold'>
                       TARI - Tassa dei rifiuti
                     </CardTitle>
                     <CardText>
@@ -139,7 +137,7 @@ const Homepage: Story<PageProps> = ({ theme, townName, townTagLine }) => {
                       <Icon icon='it-pa' />
                       Bandi
                     </CardCategory>
-                    <CardTitle className='font-weight-semibold'>
+                    <CardTitle className='fw-semibold'>
                       Come partecipare ad un bando
                     </CardTitle>
                     <CardText>
@@ -523,7 +521,7 @@ const Homepage: Story<PageProps> = ({ theme, townName, townTagLine }) => {
                         noWrapper
                         className='card-bg-primary no-after mt-0'
                       >
-                        <div className='avatar size-lg mr-3'>
+                        <div className='avatar size-lg me-3'>
                           <img
                             src='https://picsum.photos/200/200'
                             alt='Immagine'
@@ -691,7 +689,7 @@ const Homepage: Story<PageProps> = ({ theme, townName, townTagLine }) => {
             <div className='py-4'>
               <div className='card-wrapper card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-3'>
                 <Card teaser noWrapper className='card-bg-primary rounded'>
-                  <div className='avatar size-lg mr-3'>
+                  <div className='avatar size-lg me-3'>
                     <img src='https://picsum.photos/200/200' alt='Immagine' />
                   </div>
                   <CardBody>
@@ -702,7 +700,7 @@ const Homepage: Story<PageProps> = ({ theme, townName, townTagLine }) => {
                   </CardBody>
                 </Card>
                 <Card teaser noWrapper className='card-bg-warning rounded'>
-                  <div className='avatar size-lg mr-3'>
+                  <div className='avatar size-lg me-3'>
                     <img src='https://picsum.photos/200/200' alt='Immagine' />
                   </div>
                   <CardBody>
@@ -714,7 +712,7 @@ const Homepage: Story<PageProps> = ({ theme, townName, townTagLine }) => {
                   </CardBody>
                 </Card>
                 <Card teaser noWrapper className='card-bg-dark rounded'>
-                  <div className='avatar size-lg mr-3'>
+                  <div className='avatar size-lg me-3'>
                     <img src='https://picsum.photos/200/200' alt='Immagine' />
                   </div>
                   <CardBody tag='h5'>

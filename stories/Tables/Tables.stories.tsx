@@ -70,7 +70,7 @@ export const TableDark = () => (
 export const TableThead = () => (
   <>
     <Table>
-      <thead className='thead-dark'>
+      <thead className='table-dark'>
         <tr>
           <th scope='col'>#</th>
           <th scope='col'>Nome</th>
@@ -101,7 +101,7 @@ export const TableThead = () => (
     </Table>
 
     <Table>
-      <thead className='thead-light'>
+      <thead className='table-light'>
         <tr>
           <th scope='col'>#</th>
           <th scope='col'>Nome</th>

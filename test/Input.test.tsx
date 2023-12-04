@@ -66,7 +66,7 @@ test('should toggle password icon on click', () => {
       label='Password'
       id='exampleInputPassword'
       placeholder='Inserisci la tua password'
-      wrapperClass='col col-md-6'
+      wrapperClassName='col col-md-6'
     />
   );
   const icon = container.querySelector('[aria-hidden="true"] > svg');

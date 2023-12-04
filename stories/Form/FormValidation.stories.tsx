@@ -1,6 +1,16 @@
 import React, { useState } from 'react';
 
-import { Button, Input, Form, FormGroup, Label, FormText } from '../../src';
+import {
+  Button,
+  Input,
+  Form,
+  FormGroup,
+  Label,
+  FormText,
+  Row,
+  Alert,
+  Col
+} from '../../src';
 
 export default {
   title: 'Componenti/Form/Form Validation'
@@ -22,97 +32,132 @@ export const ValidazioneCompleta = () => {
   const [city, setCity] = useState('');
   const [province, setProvince] = useState('');
   const [cap, setCap] = useState('');
+  const [age, setAge] = useState(18);
   const [termsAndConditions, setTermsAndConditions] = useState(false);
 
   return (
-    <Form>
-      <div className='form-row'>
-        <FormGroup className='col-md-4 mb-3'>
-          <Input
-            id='completeValidation-name'
-            type='text'
-            value={name}
-            label='Nome'
-            infoText='Validato!'
-            valid
-            onChange={(e) => setName(e.target.value)}
-          />
-        </FormGroup>
-        <FormGroup className='col-md-4 mb-3'>
-          <Input
-            id='completeValidation-surname'
-            type='text'
-            value={surname}
-            label='Cognome'
-            infoText='Validato!'
-            valid
-            onChange={(e) => setSurname(e.target.value)}
-          />
-        </FormGroup>
-        <FormGroup className='col-md-4 mb-3'>
-          <Input
-            id='completeValidation-username'
-            type='text'
-            value={username}
-            label='Username'
-            infoText='Per favore scegli un username.'
-            invalid
-            onChange={(e) => setUsername(e.target.value)}
-          />
-        </FormGroup>
-      </div>
-      <div className='form-row'>
-        <FormGroup className='col-md-6 mb-3'>
-          <Input
-            id='completeValidation-city'
-            type='text'
-            value={city}
-            label='Città'
-            infoText='Per favore inserisci un nome di città valido.'
-            invalid
-            onChange={(e) => setCity(e.target.value)}
-          />
-        </FormGroup>
-        <FormGroup className='col-md-3 mb-3'>
-          <Input
-            id='completeValidation-province'
-            type='text'
-            value={province}
-            label='Provincia'
-            infoText='Per favore inserisci un nome di provincia valida.'
-            invalid
-            onChange={(e) => setProvince(e.target.value)}
-          />
-        </FormGroup>
-        <FormGroup className='col-md-3 mb-3'>
-          <Input
-            id='completeValidation-cap'
-            type='text'
-            value={cap}
-            label='CAP'
-            infoText='Per favore inserisci un CAP valido.'
-            invalid
-            onChange={(e) => setCap(e.target.value)}
-          />
-        </FormGroup>
-      </div>
-      <FormGroup check>
-        <Input
-          id='termsAndConditions'
-          type='checkbox'
-          checked={termsAndConditions}
-          onChange={() => setTermsAndConditions(!termsAndConditions)}
-        />
-        <Label for='termsAndConditions' check>
-          Accetto i termini e condizioni
-        </Label>
-        <FormText>
-          Devi accettare i termini e le condizioni prima di inviare il modulo.
-        </FormText>
-      </FormGroup>
-      <Button color='primary' type='submit'>
-        Invia
-      </Button>
-    </Form>
+    <>
+      <Form>
+        <Row>
+          <FormGroup className='col-md-3 mb-3'>
+            <Input
+              id='completeValidation-name'
+              type='text'
+              value={name}
+              label='Nome'
+              infoText='Validato!'
+              valid
+              onChange={(e) => setName(e.target.value)}
+            />
+          </FormGroup>
+          <FormGroup className='col-md-3 mb-3'>
+            <Input
+              id='completeValidation-surname'
+              type='text'
+              value={surname}
+              label='Cognome'
+              infoText='Validato!'
+              valid
+              onChange={(e) => setSurname(e.target.value)}
+            />
+          </FormGroup>
+          <FormGroup className='col-md-3 mb-3'>
+            <Input
+              id='completeValidation-username'
+              type='text'
+              value={username}
+              label='Username'
+              infoText='Questo campo è richiesto'
+              invalid
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </FormGroup>
+          <FormGroup className='col-md-3 mb-3'>
+            <Input
+              id='completeValidation-age'
+              type='number'
+              value={age}
+              label='Età (minimo 18 anni)'
+              infoText='Questo campo è richiesto'
+              valid={age >= 18}
+              onChange={(e) => setAge(parseInt(e.target.value))}
+            />
+          </FormGroup>
+        </Row>
+        <Row>
+          <FormGroup className='col-md-6 mb-3'>
+            <Input
+              id='completeValidation-city'
+              type='text'
+              value={city}
+              label='Città'
+              infoText='Questo campo è richiesto'
+              invalid
+              onChange={(e) => setCity(e.target.value)}
+            />
+          </FormGroup>
+          <FormGroup className='col-md-3 mb-3'>
+            <Input
+              id='completeValidation-province'
+              type='text'
+              value={province}
+              label='Provincia'
+              infoText='Per favore inserisci un nome di provincia valida.'
+              invalid
+              onChange={(e) => setProvince(e.target.value)}
+            />
+          </FormGroup>
+
+          <FormGroup className='col-md-3 mb-3'>
+            <Input
+              id='completeValidation-cap'
+              type='text'
+              value={cap}
+              label='CAP (5 cifre)'
+              infoText='Questo campo è richiesto'
+              invalid
+              onChange={(e) => setCap(e.target.value)}
+            />
+          </FormGroup>
+        </Row>
+        <Row className='align-items-center'>
+          <Col md='9' lg='6'>
+            <FormGroup check>
+              <Input
+                id='termsAndConditions'
+                type='checkbox'
+                checked={termsAndConditions}
+                onChange={() => setTermsAndConditions(!termsAndConditions)}
+                invalid={!termsAndConditions}
+              />
+              <Label for='termsAndConditions' check>
+                Accetto i termini e condizioni
+              </Label>
+              <FormText tag='div'>
+                Devi accettare i termini e le condizioni prima di inviare il
+                modulo.
+              </FormText>
+            </FormGroup>
+          </Col>
+          <Col
+            md='3'
+            lg='6'
+            className='mt-3 mt-md-0 d-flex justify-content-center justify-content-md-end justify-content-lg-start'
+          >
+            <Button color='primary' type='submit'>
+              Invia
+            </Button>
+          </Col>
+        </Row>
+      </Form>
+      <Row className='mt-4'>
+        <Col>
+          <Alert color='danger'>
+            <strong>Attenzione</strong> Alcuni campi inseriti sono da
+            controllare.
+          </Alert>
+        </Col>
+      </Row>
+    </>
   );
 };

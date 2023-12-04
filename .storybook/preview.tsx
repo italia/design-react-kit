@@ -12,7 +12,7 @@ const order = {
   'componenti': 1000,
 };
 
-const prioritySections = ['welcome-page', 'organizzare', 'menu', 'componenti', 'form', 'utilities', 'domande-frequenti-page', 'changelog-page'];
+const prioritySections = ['welcome-page', 'organizzare', 'menu', 'componenti', 'form', 'utilities', 'domande-frequenti-page', 'changelog-page', 'migrazione-da-v1-page'];
 const priorityPages = ["introduzione"];
 
 const customStyle = {
@@ -38,7 +38,7 @@ export const parameters = {
 
       const aFullStoryName = `${aSubSections.join('-')}-${aStory}`
       const bFullStoryName = `${bSubSections.join('-')}-${bStory}`
-      // Sort by Section 
+      // Sort by Section
       const groupScore = (order[aSection as MainSection] - order[bSection as MainSection]);
 
 

@@ -36,8 +36,6 @@ export {
   FormGroup,
   FormText,
   InputGroup,
-  InputGroupAddon,
-  InputGroupButtonDropdown,
   InputGroupText,
   Label,
   Media,
@@ -45,7 +43,6 @@ export {
   PaginationLink as PagerLink,
   TabContent,
   TabPane,
-  Jumbotron,
   ListGroupItem,
   ListGroupItemText,
   ListGroupItemHeading,
@@ -61,6 +58,7 @@ export { useNavScroll } from 'react-use-navscroll';
 
 export { Alert } from './Alert/Alert';
 export { Accordion } from './Accordion/Accordion';
+export { AccordionItem } from './Accordion/AccordionItem';
 export { AccordionHeader } from './Accordion/AccordionHeader';
 export { AccordionBody } from './Accordion/AccordionBody';
 export { AvatarContainer } from './Avatar/AvatarContainer';
@@ -70,6 +68,7 @@ export { AvatarIcon } from './Avatar/AvatarIcon';
 export { AvatarPresence } from './Avatar/AvatarPresence';
 export { AvatarStatus } from './Avatar/AvatarStatus';
 export { AvatarWrapper } from './Avatar/AvatarWrapper';
+export { BackToTop } from './BackToTop/BackToTop';
 export { Badge } from './Badge/Badge';
 export { Breadcrumb } from './Breadcrumb/Breadcrumb';
 export { Button } from './Button/Button';
@@ -77,6 +76,7 @@ export { Forward } from './Forward/Forward';
 export { Callout } from './Callout/Callout';
 export { CalloutText } from './Callout/CalloutText';
 export { CalloutTitle } from './Callout/CalloutTitle';
+export { CalloutMoreFooter } from './Callout/CalloutMoreFooter';
 export { Card } from './Card/Card';
 export { CardBody } from './Card/CardBody';
 export { CardTitle } from './Card/CardTitle';
@@ -272,14 +272,7 @@ export type { StepperNavProps } from './Stepper/StepperNav';
 export type { StepperDotsProps } from './Stepper/StepperDots';
 export type { StepperContentProps } from './Stepper/StepperContent';
 export type { SectionProps } from './Section/Section';
-export type {
-  SelectProps,
-  SelectOptionType,
-  ValueType,
-  ActionMeta,
-  GroupTypeBase,
-  OptionTypeBase
-} from './Select/Select';
+export type { SelectProps } from './Select/Select';
 export type {
   NotificationId,
   NotificationProps,
@@ -328,8 +321,6 @@ export type {
   FormGroupProps,
   FormTextProps,
   InputGroupProps,
-  InputGroupAddonProps,
-  InputGroupButtonDropdownProps,
   InputGroupTextProps,
   LabelProps,
   MediaProps,
@@ -337,7 +328,6 @@ export type {
   PaginationLink as PagerLinkProps,
   TabContentProps,
   TabPaneProps,
-  JumbotronProps,
   ListGroupItemProps,
   ListGroupItemTextProps,
   ListGroupItemHeadingProps,

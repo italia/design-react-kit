@@ -1,5 +1,5 @@
 import React, { FC, HTMLAttributes } from 'react';
-import { CSSModule } from 'reactstrap';
+import { CSSModule } from 'reactstrap/types/lib/utils';
 import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
 import { mapToCssModules } from '../utils';
@@ -31,7 +31,6 @@ export const ModalHeader: FC<ModalHeaderProps> = ({
   wrapTag: WrapTag = 'div',
   closeAriaLabel = 'Close',
   close,
-  charCode = 215,
   cssModule,
   ...props
 }) => {
@@ -43,17 +42,13 @@ export const ModalHeader: FC<ModalHeaderProps> = ({
   let CloseButton;
 
   if (!close && toggle) {
-    var closeIcon =
-      typeof charCode === 'number' ? String.fromCharCode(charCode) : charCode;
     CloseButton = (
       <button
         type='button'
         onClick={toggle}
-        className={mapToCssModules('close', cssModule)}
+        className={mapToCssModules('btn-close', cssModule)}
         aria-label={closeAriaLabel}
-      >
-        <span aria-hidden>{closeIcon}</span>
-      </button>
+      ></button>
     );
   }
 
