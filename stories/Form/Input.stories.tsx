@@ -9,6 +9,9 @@ import { multiOptions } from './Autocomplete/AutocompleteExample';
 
 import { Input, TimeInput, Icon, TextArea, FormGroup } from '../../src';
 
+import Autocomplete from 'accessible-autocomplete/react';
+import 'accessible-autocomplete/dist/accessible-autocomplete.min.css';
+
 export default {
   title: 'Componenti/Form/Input'
 };
@@ -36,6 +39,7 @@ export const EsempiDiCampiDiInput = () => {
       isValid ? 'Campo di tipo ora - dark' : 'Formato ora non valido (hh:mm)'
     );
   };
+
   return (
     <div>
       <Input type='text' label='Campo di tipo testuale' id='exampleInputText' />
@@ -144,13 +148,29 @@ export const UtilizzoDiPlaceholderELabel = () => (
 UtilizzoDiPlaceholderELabel.storyName = 'Utilizzo di placeholder e label';
 
 export const InputConIconaOBottoni = () => {
-  const [isFocused, toggleFocus] = useState(false);
+  const [isFocused1, toggleFocus1] = useState(false);
+  const [isFocused2, toggleFocus2] = useState(false);
+  const [isFocused3, toggleFocus3] = useState(false);
 
-  const toggleFocusLabel = () => toggleFocus(true);
+  const toggleFocusLabel1 = () => toggleFocus1(true);
   // @ts-ignore: ignore types for now
-  const toggleBlurLabel = (e) => {
+  const toggleBlurLabel1 = (e) => {
     if (e.target.value === '') {
-      toggleFocus(!isFocused);
+      toggleFocus1(!isFocused1);
+    }
+  };
+  const toggleFocusLabel2 = () => toggleFocus2(true);
+  // @ts-ignore: ignore types for now
+  const toggleBlurLabel2 = (e) => {
+    if (e.target.value === '') {
+      toggleFocus2(!isFocused2);
+    }
+  };
+  const toggleFocusLabel3 = () => toggleFocus3(true);
+  // @ts-ignore: ignore types for now
+  const toggleBlurLabel3 = (e) => {
+    if (e.target.value === '') {
+      toggleFocus3(!isFocused3);
     }
   };
   return (
@@ -162,14 +182,16 @@ export const InputConIconaOBottoni = () => {
               <Icon icon='it-pencil' aria-hidden size='sm' />
             </div>
           </div>
-          <label htmlFor='input-group-1' className={isFocused ? 'active' : ''}>
+          <label htmlFor='input-group-1' className={isFocused1 ? 'active' : ''}>
             Con Etichetta
           </label>
           <input
             type='text'
-            className={isFocused ? 'form-control focus--mouse' : 'form-control'}
-            onFocus={toggleFocusLabel}
-            onBlur={toggleBlurLabel}
+            className={
+              isFocused1 ? 'form-control focus--mouse' : 'form-control'
+            }
+            onFocus={toggleFocusLabel1}
+            onBlur={toggleBlurLabel1}
             id='input-group-1'
             name='input-group-1'
           />
@@ -192,9 +214,11 @@ export const InputConIconaOBottoni = () => {
           </label>
           <input
             type='text'
-            className={isFocused ? 'form-control focus--mouse' : 'form-control'}
-            onFocus={toggleFocusLabel}
-            onBlur={toggleBlurLabel}
+            className={
+              isFocused2 ? 'form-control focus--mouse' : 'form-control'
+            }
+            onFocus={toggleFocusLabel2}
+            onBlur={toggleBlurLabel2}
             id='input-group-2'
             name='input-group-2'
             placeholder='Lorem Ipsum'
@@ -213,14 +237,16 @@ export const InputConIconaOBottoni = () => {
               <Icon icon='it-pencil' color='primary' aria-hidden size='sm' />
             </div>
           </div>
-          <label htmlFor='input-group-3' className={isFocused ? 'active' : ''}>
+          <label htmlFor='input-group-3' className={isFocused3 ? 'active' : ''}>
             Con Etichetta e bottone di tipo primary
           </label>
           <input
             type='text'
-            className={isFocused ? 'form-control focus--mouse' : 'form-control'}
-            onFocus={toggleFocusLabel}
-            onBlur={toggleBlurLabel}
+            className={
+              isFocused3 ? 'form-control focus--mouse' : 'form-control'
+            }
+            onFocus={toggleFocusLabel3}
+            onBlur={toggleBlurLabel3}
             id='input-group-3'
             name='input-group-3'
           />
@@ -333,6 +359,38 @@ export const _InputAutocompleteConDati = () => {
 };
 
 _InputAutocompleteConDati.storyName = 'Input autocomplete';
+
+export const _InputAutocompleteConDatiAccessibile = () => {
+  // @ts-ignore
+  const suggest = (query, populateResults) => {
+    const filteredResults = multiOptions.filter((i) =>
+      i.label.toLowerCase().includes(query.toLowerCase())
+    );
+    let data = filteredResults.map((item) => {
+      return item.label;
+    });
+    populateResults(data);
+  };
+
+  return (
+    <FormGroup>
+      <label htmlFor='autocomplete'>Provincia</label>
+      <Autocomplete
+        id='autocomplete'
+        source={suggest}
+        autoselect
+        placeholder={'Testo da cercare'}
+        defaultValue={''}
+        className={''}
+        displayMenu={'overlay'}
+        tNoResults={() => 'Nessun risultato'}
+      />
+    </FormGroup>
+  );
+};
+
+_InputAutocompleteConDatiAccessibile.storyName =
+  'Input autocomplete accessibile';
 
 export const AreaDiTesto = () => (
   <TextArea label='Esempio di area di testo' rows={3} />

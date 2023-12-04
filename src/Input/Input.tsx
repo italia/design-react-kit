@@ -106,7 +106,7 @@ export const Input = ({
   id,
   className,
   cssModule,
-  type,
+  type = 'text',
   state,
   tag,
   addon,

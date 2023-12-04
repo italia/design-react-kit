@@ -272,14 +272,7 @@ export type { StepperNavProps } from './Stepper/StepperNav';
 export type { StepperDotsProps } from './Stepper/StepperDots';
 export type { StepperContentProps } from './Stepper/StepperContent';
 export type { SectionProps } from './Section/Section';
-export type {
-  SelectProps,
-  SelectOptionType,
-  ValueType,
-  ActionMeta,
-  GroupTypeBase,
-  OptionTypeBase
-} from './Select/Select';
+export type { SelectProps } from './Select/Select';
 export type {
   NotificationId,
   NotificationProps,
