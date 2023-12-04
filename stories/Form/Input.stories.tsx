@@ -404,3 +404,58 @@ export const InputNumericoRidimensionamento = () => {
     />
   );
 };
+
+export const InputNumericoValuta = () => {
+  const [value, setValue] = useState('100');
+
+  return (
+    <Input
+      type='number'
+      label='Currency'
+      value='50'
+      min={0}
+      max={100}
+      className={'input-number-currency'}
+      onChange={(ev) => {
+        setValue(ev.target.value);
+      }}
+    />
+  );
+};
+
+
+export const InputNumericoPercentuale = () => {
+  const [value, setValue] = useState('100');
+
+  return (
+    <Input
+      type='number'
+      label='Percentage'
+      value='50'
+      min={0}
+      max={100}
+      className={'input-number-percentage'}
+      onChange={(ev) => {
+        setValue(ev.target.value);
+      }}
+    />
+  );
+};
+
+export const InputNumericoRidimensionamento = () => {
+  const [value, setValue] = useState('100');
+
+  return (
+    <Input
+      type='number'
+      label='Ridimensionamento'
+      value='50'
+      min={0}
+      max={100}
+      className={'input-number-adaptive'}
+      onChange={(ev) => {
+        setValue(ev.target.value);
+      }}
+    />
+  );
+};
