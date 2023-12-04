@@ -74,6 +74,8 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   plaintext?: boolean;
   /** Utilizzare per mostrare un elemento addon a fianco (prima o dopo) il campo input all'interno del componente */
   addon?: boolean;
+  /** Utilizzare per mostrare un elemento un simbolo attivando la proprietà addon nel campo input all'interno del componente */
+  addonText?: string;
   /** Oggetto contenente la nuova mappatura per le classi CSS. */
   cssModule?: CSSModule;
   /** Classi aggiuntive da usare per il wrapper del componente Input */
@@ -110,6 +112,7 @@ export const Input = ({
   state,
   tag,
   addon,
+  addonText,
   static: staticInput,
   plaintext,
   innerRef,
@@ -260,13 +263,13 @@ export const Input = ({
       />
     );
   }
-console.log('addon')
-  if(addon){
+
+  if(addon && addonText){
     return (
       <InputContainer {...containerProps}>
         <div className='input-group'>
         <div className='input-group-prepend'>
-          <div className='input-group-text'>@</div>
+          <div className='input-group-text'>{addonText}</div>
         </div>
         <Tag
           {...rest}
