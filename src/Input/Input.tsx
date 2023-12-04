@@ -245,13 +245,13 @@ export const Input = ({
       />
     );
   }
-console.log('addon')
-  if(addon){
+
+  if(addon && addonText){
     return (
       <InputContainer {...containerProps}>
         <div className='input-group'>
         <div className='input-group-prepend'>
-          <div className='input-group-text'>@</div>
+          <div className='input-group-text'>{addonText}</div>
         </div>
         <Tag
           {...rest}
