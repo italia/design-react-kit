@@ -1,5 +1,5 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 
 import { components } from 'react-select';
 import AsyncSelect from 'react-select/async';
@@ -495,7 +495,7 @@ export const InputNumericoPercentuale = () => {
 
   return (
     <Input
-      addon='true'
+      addon={true}
       addonText='%'
       type='number'
       label='Percentage'
@@ -512,14 +512,29 @@ export const InputNumericoPercentuale = () => {
 
 export const InputNumericoRidimensionamento = () => {
   const [value, setValue] = useState('100');
+  const ref = useRef(null);
+  const [width, setWidth] = useState('100');
+
+  useEffect(() => {
+      if (ref.current.classList.contains('input-number-adaptive')) {
+        if(!value){
+          setWidth(`calc(10px)`)
+        }else{
+          setWidth(`calc(40px + ${value.length}ch)`)
+        }
+      }
+  }, [value]);
 
   return (
     <Input
+      innerRef={ref}
       type='number'
       label='Ridimensionamento'
+      style={{ width }}
       value={value}
+      placeholder={'0'}
       min={0}
-      max={9999}
+      max={99999999999}
       className={'input-number-adaptive'}
       onChange={(ev) => {
         setValue(ev.target.value);

@@ -8,6 +8,9 @@ import React, {
 } from 'react';
 import isNumber from 'is-number';
 
+//Custom styles
+import "./assets/css/custom.css";
+
 import { InputContainer } from './InputContainer';
 import { Icon } from '../Icon/Icon';
 import {
