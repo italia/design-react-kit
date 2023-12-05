@@ -1,6 +1,9 @@
 import React, { InputHTMLAttributes, ElementType, Ref, ReactNode, useCallback, useState } from 'react';
 import isNumber from 'is-number';
 
+//Custom styles
+import "./assets/css/custom.css";
+
 import { InputContainer } from './InputContainer';
 import { Icon } from '../Icon/Icon';
 import { getTag, getFormControlClass, getClasses, getValidationTextControlClass, useFocus } from './utils';
