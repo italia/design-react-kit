@@ -12,6 +12,8 @@ import Autocomplete from 'accessible-autocomplete/react'; // Reference to https:
 import 'accessible-autocomplete/dist/accessible-autocomplete.min.css';
 //Used for custom style overriding accessible-autocomplete.min.css
 import './assets/css/accessible-autocomplete-styles.css';
+//Custom styles
+import "./assets/css/custom.css";
 
 export default {
   title: 'Componenti/Form/Input'
