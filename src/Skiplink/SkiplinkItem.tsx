@@ -19,7 +19,7 @@ export const SkiplinkItem: FC<SkiplinkItemProps> = ({
   ...attributes
 }) => {
   const Tag = tag;
-  const classes = classNames(className, 'visually-hidden', {
+  const classes = classNames(className, {
     'visually-hidden-focusable': focusable
   });
 
