@@ -56,13 +56,7 @@ export const RadioDisabilitato = () => (
       <legend>Radio</legend>
       <Form className='m-3'>
         <FormGroup check>
-          <Input
-            disabled
-            name='gruppo1'
-            type='radio'
-            id='radio5'
-            defaultChecked
-          />
+          <Input disabled name='gruppo1' type='radio' id='radio5' defaultChecked />
           <Label check htmlFor='radio5'>
             Opzione disabilitata selezionata
           </Label>
@@ -117,8 +111,7 @@ export const RadioGruppi = () => (
                 Opzione 1
               </Label>
               <FormText color=''>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas molestie libero
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
               </FormText>
             </FormGroup>
             <FormGroup check className='form-check-group'>
@@ -127,8 +120,7 @@ export const RadioGruppi = () => (
                 Opzione 2
               </Label>
               <FormText color=''>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas molestie libero
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
               </FormText>
             </FormGroup>
             <FormGroup check className='form-check-group'>
@@ -137,8 +129,7 @@ export const RadioGruppi = () => (
                 Opzione 3
               </Label>
               <FormText color=''>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas molestie libero
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
               </FormText>
             </FormGroup>
           </Form>

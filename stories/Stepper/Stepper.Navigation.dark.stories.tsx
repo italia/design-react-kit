@@ -1,12 +1,4 @@
-import {
-  Button,
-  Icon,
-  Progress,
-  StepperContainer,
-  StepperContent,
-  StepperDots,
-  StepperNav
-} from '../../src';
+import { Button, Icon, Progress, StepperContainer, StepperContent, StepperDots, StepperNav } from '../../src';
 import React from 'react';
 
 export default {
@@ -25,12 +17,7 @@ export const ProgressBarDark = () => {
           Indietro
         </Button>
         <div className='steppers-progress'>
-          <Progress
-            indeterminate={false}
-            value='33'
-            tag='div'
-            style={{ width: '33%' }}
-          />
+          <Progress indeterminate={false} value='33' tag='div' style={{ width: '33%' }} />
         </div>
         <Button outline color='primary' size='sm' className='steppers-btn-next'>
           Avanti

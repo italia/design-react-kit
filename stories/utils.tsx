@@ -3,11 +3,7 @@ export const requireContextPolyfill = () => {
     const fs = require('fs');
     const path = require('path');
 
-    require.context = (
-      base = '.',
-      scanSubDirectories = false,
-      regularExpression = /\.js$/
-    ) => {
+    require.context = (base = '.', scanSubDirectories = false, regularExpression = /\.js$/) => {
       const files = {};
 
       function readDirectory(directory) {

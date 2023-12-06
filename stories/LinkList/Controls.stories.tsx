@@ -1,45 +1,22 @@
 import React from 'react';
 
-import {
-  LinkList,
-  LinkListItem,
-  Toggle,
-  Input,
-  Label,
-  FormGroup,
-  Icon
-} from '../../src';
+import { LinkList, LinkListItem, Toggle, Input, Label, FormGroup, Icon } from '../../src';
 
 const ControlliComponent = () => (
   <LinkList>
     <LinkListItem active className='left-icon'>
       <i className='it-chevron-right left' aria-hidden='true' />
-      <Icon
-        className='left'
-        color='primary'
-        icon='it-chevron-right'
-        aria-hidden
-      />
+      <Icon className='left' color='primary' icon='it-chevron-right' aria-hidden />
       <span>Link list 1 active</span>
     </LinkListItem>
     <LinkListItem className='left-icon'>
       <i className='it-chevron-right left' aria-hidden='true' />
-      <Icon
-        className='left'
-        color='primary'
-        icon='it-chevron-right'
-        aria-hidden
-      />
+      <Icon className='left' color='primary' icon='it-chevron-right' aria-hidden />
       <span>Link list 2</span>
     </LinkListItem>
     <LinkListItem disabled className='left-icon'>
       <i className='it-chevron-right left' aria-hidden='true' />
-      <Icon
-        className='left'
-        color='primary'
-        icon='it-chevron-right'
-        aria-hidden
-      />
+      <Icon className='left' color='primary' icon='it-chevron-right' aria-hidden />
       <span>Link list 3 disabled</span>
     </LinkListItem>
   </LinkList>
@@ -72,36 +49,21 @@ export const PrimaryESecondaryAction = () => (
       <Icon className='left' color='primary' icon='it-link' aria-hidden />
       <span>Link list 1 active</span>
       <i className='it-app right secondary' />
-      <Icon
-        className='right'
-        color='secondary'
-        icon='it-chevron-right'
-        aria-hidden
-      />
+      <Icon className='right' color='secondary' icon='it-chevron-right' aria-hidden />
     </LinkListItem>
     <LinkListItem className='left-icon right-icon'>
       <i className='it-favorite left' />
       <Icon className='left' color='primary' icon='it-link' aria-hidden />
       <span>Link list 2</span>
       <i className='it-app right secondary' />
-      <Icon
-        className='right'
-        color='secondary'
-        icon='it-chevron-right'
-        aria-hidden
-      />
+      <Icon className='right' color='secondary' icon='it-chevron-right' aria-hidden />
     </LinkListItem>
     <LinkListItem disabled className='left-icon right-icon'>
       <i className='it-favorite left' />
       <Icon className='left' color='primary' icon='it-link' aria-hidden />
       <span>Link list 3 disabled</span>
       <i className='it-app right secondary' />
-      <Icon
-        className='right'
-        color='secondary'
-        icon='it-chevron-right'
-        aria-hidden
-      />
+      <Icon className='right' color='secondary' icon='it-chevron-right' aria-hidden />
     </LinkListItem>
   </LinkList>
 );
@@ -109,30 +71,15 @@ export const PrimaryESecondaryAction = () => (
 export const ConAvatar = () => (
   <LinkList>
     <LinkListItem active>
-      <img
-        className='avatar lg-size'
-        src='http://via.placeholder.com/40x40'
-        title='avatartitle'
-        alt='avataralt'
-      />
+      <img className='avatar lg-size' src='http://via.placeholder.com/40x40' title='avatartitle' alt='avataralt' />
       <span>Link list 1 active </span>
     </LinkListItem>
     <LinkListItem>
-      <img
-        className='avatar lg-size'
-        src='http://via.placeholder.com/40x40'
-        title='avatartitle'
-        alt='avataralt'
-      />
+      <img className='avatar lg-size' src='http://via.placeholder.com/40x40' title='avatartitle' alt='avataralt' />
       <span>Link list 2 </span>
     </LinkListItem>
     <LinkListItem disabled>
-      <img
-        className='avatar lg-size'
-        src='http://via.placeholder.com/40x40'
-        title='avatartitle'
-        alt='avataralt'
-      />
+      <img className='avatar lg-size' src='http://via.placeholder.com/40x40' title='avatartitle' alt='avataralt' />
       <span>Link list 3 disabled </span>
     </LinkListItem>
   </LinkList>

@@ -20,9 +20,7 @@ export default {
 
 export const EsempiDiCampiDiInput = () => {
   const [timeInputLabel1, setTimeInputLabel1] = useState('Campo di tipo ora');
-  const [timeInputLabel2, setTimeInputLabel2] = useState(
-    'Campo di tipo ora - dark'
-  );
+  const [timeInputLabel2, setTimeInputLabel2] = useState('Campo di tipo ora - dark');
   const [isValidTime1, setIsValidTime1] = useState(true);
   const [isValidTime2, setIsValidTime2] = useState(true);
 
@@ -30,27 +28,19 @@ export const EsempiDiCampiDiInput = () => {
   const onBlurTimeInput1 = (value: string) => {
     const isValid = hhmmRegExp.test(value);
     setIsValidTime1(isValid);
-    setTimeInputLabel1(
-      isValid ? 'Campo di tipo ora' : 'Formato ora non valido (hh:mm)'
-    );
+    setTimeInputLabel1(isValid ? 'Campo di tipo ora' : 'Formato ora non valido (hh:mm)');
   };
   const onBlurTimeInput2 = (value: string) => {
     const isValid = hhmmRegExp.test(value);
     setIsValidTime2(isValid);
-    setTimeInputLabel2(
-      isValid ? 'Campo di tipo ora - dark' : 'Formato ora non valido (hh:mm)'
-    );
+    setTimeInputLabel2(isValid ? 'Campo di tipo ora - dark' : 'Formato ora non valido (hh:mm)');
   };
 
   return (
     <div>
       <Input type='text' label='Campo di tipo testuale' id='exampleInputText' />
       <Input type='email' label='Campo di tipo email' id='exampleInputEmail' />
-      <Input
-        type='number'
-        label='Campo di tipo numerico'
-        id='exampleInputNumber'
-      />
+      <Input type='number' label='Campo di tipo numerico' id='exampleInputNumber' />
       <Input type='tel' label='Campo di tipo telefono' id='exampleInputTel' />
       <div style={{ paddingBottom: '6rem' }}>
         <TimeInput
@@ -79,9 +69,7 @@ EsempiDiCampiDiInput.storyName = 'Esempi di campi di input';
 
 export const EsempiDiInputOra = () => {
   const [timeInputLabel1, setTimeInputLabel1] = useState('Campo di tipo ora');
-  const [timeInputLabel2, setTimeInputLabel2] = useState(
-    'Campo di tipo ora - dark'
-  );
+  const [timeInputLabel2, setTimeInputLabel2] = useState('Campo di tipo ora - dark');
   const [isValidTime1, setIsValidTime1] = useState(true);
   const [isValidTime2, setIsValidTime2] = useState(true);
 
@@ -89,16 +77,12 @@ export const EsempiDiInputOra = () => {
   const onBlurTimeInput1 = (value: string) => {
     const isValid = hhmmRegExp.test(value);
     setIsValidTime1(isValid);
-    setTimeInputLabel1(
-      isValid ? 'Campo di tipo ora' : 'Formato ora non valido (hh:mm)'
-    );
+    setTimeInputLabel1(isValid ? 'Campo di tipo ora' : 'Formato ora non valido (hh:mm)');
   };
   const onBlurTimeInput2 = (value: string) => {
     const isValid = hhmmRegExp.test(value);
     setIsValidTime2(isValid);
-    setTimeInputLabel2(
-      isValid ? 'Campo di tipo ora - dark' : 'Formato ora non valido (hh:mm)'
-    );
+    setTimeInputLabel2(isValid ? 'Campo di tipo ora - dark' : 'Formato ora non valido (hh:mm)');
   };
   return (
     <div>
@@ -130,18 +114,13 @@ EsempiDiInputOra.storyName = 'InputOra';
 export const UtilizzoDiPlaceholderELabel = () => (
   <div>
     <Input label='Etichetta di esempio' id='exampleLabel' />
+    <Input label='Etichetta di esempio' type='text' placeholder='Testo di esempio' id='examplePlaceholder' />
     <Input
       label='Etichetta di esempio'
       type='text'
       placeholder='Testo di esempio'
-      id='examplePlaceholder'
-    />
-    <Input
-      label='Etichetta di esempio'
-      type='text'
-      placeholder='Testo di esempio'
-      infoText='Ulteriore testo informativo'
-      id='exampleinfoText'
+      validationText='Ulteriore testo informativo'
+      id='examplevalidationText'
       invalid={true}
     />
   </div>
@@ -189,9 +168,7 @@ export const InputConIconaOBottoni = () => {
           </label>
           <input
             type='text'
-            className={
-              isFocused1 ? 'form-control focus--mouse' : 'form-control'
-            }
+            className={isFocused1 ? 'form-control focus--mouse' : 'form-control'}
             onFocus={toggleFocusLabel1}
             onBlur={toggleBlurLabel1}
             id='input-group-1'
@@ -216,9 +193,7 @@ export const InputConIconaOBottoni = () => {
           </label>
           <input
             type='text'
-            className={
-              isFocused2 ? 'form-control focus--mouse' : 'form-control'
-            }
+            className={isFocused2 ? 'form-control focus--mouse' : 'form-control'}
             onFocus={toggleFocusLabel2}
             onBlur={toggleBlurLabel2}
             id='input-group-2'
@@ -244,9 +219,7 @@ export const InputConIconaOBottoni = () => {
           </label>
           <input
             type='text'
-            className={
-              isFocused3 ? 'form-control focus--mouse' : 'form-control'
-            }
+            className={isFocused3 ? 'form-control focus--mouse' : 'form-control'}
             onFocus={toggleFocusLabel3}
             onBlur={toggleBlurLabel3}
             id='input-group-3'
@@ -270,27 +243,18 @@ export const InputPassword = () => (
     type='password'
     id='exampleInputPassword'
     label='Password con label, placeholder e testo di aiuto'
-    infoText='Inserisci almeno 8 caratteri e una lettera maiuscola'
+    validationText='Inserisci almeno 8 caratteri e una lettera maiuscola'
   />
 );
 
 InputPassword.storyName = 'Input password';
 
-export const _Disabilitato = () => (
-  <Input label='Contenuto disabilitato' id='exampleDisabled' disabled />
-);
+export const _Disabilitato = () => <Input label='Contenuto disabilitato' id='exampleDisabled' disabled />;
 
-export const _Readonly = () => (
-  <Input label='Contenuto in sola lettura' id='examplereadOnly' readOnly />
-);
+export const _Readonly = () => <Input label='Contenuto in sola lettura' id='examplereadOnly' readOnly />;
 
 export const ReadonlyNormalizzato = () => (
-  <Input
-    type='text'
-    label='Contenuto in sola lettura'
-    id='exampleNormalized'
-    normalized
-  />
+  <Input type='text' label='Contenuto in sola lettura' id='exampleNormalized' normalized />
 );
 
 ReadonlyNormalizzato.storyName = 'Readonly normalizzato';
@@ -340,11 +304,7 @@ export const _InputAutocompleteConDati = () => {
         }}
         loadOptions={(inputValue, callback) => {
           setTimeout(() => {
-            callback(
-              multiOptions.filter((i) =>
-                i.label.toLowerCase().includes(inputValue.toLowerCase())
-              )
-            );
+            callback(multiOptions.filter((i) => i.label.toLowerCase().includes(inputValue.toLowerCase())));
           }, 1000);
         }}
         cacheOptions
@@ -365,9 +325,7 @@ _InputAutocompleteConDati.storyName = 'Input autocomplete';
 export const _InputAutocompleteConDatiAccessibile = () => {
   // @ts-ignore
   const suggest = (query, populateResults) => {
-    const filteredResults = multiOptions.filter((i) =>
-      i.label.toLowerCase().includes(query.toLowerCase())
-    );
+    const filteredResults = multiOptions.filter((i) => i.label.toLowerCase().includes(query.toLowerCase()));
     let data = filteredResults.map((item) => {
       return item.label;
     });
@@ -391,21 +349,14 @@ export const _InputAutocompleteConDatiAccessibile = () => {
   );
 };
 
-_InputAutocompleteConDatiAccessibile.storyName =
-  'Input autocomplete accessibile';
+_InputAutocompleteConDatiAccessibile.storyName = 'Input autocomplete accessibile';
 
-export const AreaDiTesto = () => (
-  <TextArea label='Esempio di area di testo' rows={3} />
-);
+export const AreaDiTesto = () => <TextArea label='Esempio di area di testo' rows={3} />;
 
 AreaDiTesto.storyName = 'Area di testo';
 
 export const AreaDiTestoConSegnaposto = () => (
-  <TextArea
-    rows={3}
-    label='Esempio di area di testo'
-    placeholder='Testo di esempio'
-  />
+  <TextArea rows={3} label='Esempio di area di testo' placeholder='Testo di esempio' />
 );
 
 AreaDiTestoConSegnaposto.storyName = 'Area di testo con segnaposto';
@@ -449,14 +400,5 @@ export const InputNumericoSteps = () => {
 };
 
 export const InputNumericoDisabilitato = () => {
-  return (
-    <Input
-      type='number'
-      label='Disabled'
-      value='50'
-      min={0}
-      max={100}
-      disabled
-    />
-  );
+  return <Input type='number' label='Disabled' value='50' min={0} max={100} disabled />;
 };

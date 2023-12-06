@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-            fetch-depth: 0 
+          fetch-depth: 0
       - name: Setup Node.js with Yarn cache
         uses: actions/setup-node@v2
         with:
@@ -21,10 +21,10 @@ jobs:
 
       - name: Install dependencies
         run: yarn --frozen-lockfile
-        
+
       - name: Publish to Chromatic
         uses: chromaui/action@v1
-        
+
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}

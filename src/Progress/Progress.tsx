@@ -43,14 +43,10 @@ export const Progress: FC<ProgressProps> = ({
   }
   const numericValue = Number(value);
   const wrapperClasses = classNames('progress-bar-wrapper');
-  const secondaryWrapperClasses = classNames(
-    wrapperClassName === true ? className : wrapperClassName,
-    'progress',
-    {
-      'progress-indeterminate': indeterminate,
-      'progress-color': color
-    }
-  );
+  const secondaryWrapperClasses = classNames(wrapperClassName === true ? className : wrapperClassName, 'progress', {
+    'progress-indeterminate': indeterminate,
+    'progress-color': color
+  });
   const classes = classNames(className, 'progress-bar', {
     [`bg-${color}`]: color
   });

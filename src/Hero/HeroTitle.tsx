@@ -7,12 +7,7 @@ export interface HeroTitleProps extends HTMLAttributes<HTMLSpanElement> {
   testId?: string;
 }
 
-export const HeroTitle: FC<HeroTitleProps> = ({
-  tag: Tag = 'h1',
-  className,
-  testId,
-  ...attributes
-}) => {
+export const HeroTitle: FC<HeroTitleProps> = ({ tag: Tag = 'h1', className, testId, ...attributes }) => {
   const classes = classname(className);
   return <Tag {...attributes} className={classes} data-testid={testId} />;
 };

@@ -79,11 +79,7 @@ export const _Example: Story = () => (
         <p className='mb-4'>
           <strong>Notifica standard</strong>
         </p>
-        <NotificationDoc
-          id='notifica-base'
-          title='Titolo Notifica'
-          style={NotificationStyle}
-        ></NotificationDoc>
+        <NotificationDoc id='notifica-base' title='Titolo Notifica' style={NotificationStyle}></NotificationDoc>
       </div>
       <div className='col-12 col-md-6'>
         <p className='mb-4'>
@@ -109,13 +105,8 @@ export const _NotificationWithMessageStatic: Story = () => (
         <p className='mb-4'>
           <strong>Notifica standard</strong>
         </p>
-        <NotificationDoc
-          title='Titolo Notifica'
-          style={NotificationStyle}
-          id='notifica-con-messaggio'
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor…
+        <NotificationDoc title='Titolo Notifica' style={NotificationStyle} id='notifica-con-messaggio'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
         </NotificationDoc>
       </div>
       <div className='col-12 col-md-6'>
@@ -128,8 +119,7 @@ export const _NotificationWithMessageStatic: Story = () => (
           style={NotificationStyle}
           id='notifica-con-messaggio-e-icona'
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor…
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
         </NotificationDoc>
       </div>
     </div>
@@ -145,10 +135,7 @@ export const _NotificationWithMessage_story_hidden: Story = () => {
         onClick={() =>
           notify(
             'Titolo Notifica',
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor…
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</p>
           )
         }
       >
@@ -158,10 +145,7 @@ export const _NotificationWithMessage_story_hidden: Story = () => {
         onClick={() =>
           notify(
             'Titolo Notifica',
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor…
-            </p>,
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</p>,
             { state: 'success' }
           )
         }
@@ -186,12 +170,7 @@ export const Dismissable: Story = () => (
         <p className='mb-4'>
           <strong>Notifica standard</strong>
         </p>
-        <NotificationDoc
-          title='Titolo Notifica'
-          dismissable
-          style={NotificationStyle}
-          id='notifica-base'
-        />
+        <NotificationDoc title='Titolo Notifica' dismissable style={NotificationStyle} id='notifica-base' />
       </div>
       <div className='col-12 col-md-6'>
         <p className='mb-4'>
@@ -204,8 +183,7 @@ export const Dismissable: Story = () => (
           style={NotificationStyle}
           id='notifica-avvenuto-con-successo'
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor…
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
         </NotificationDoc>
       </div>
     </div>
@@ -273,10 +251,7 @@ export const _RoundingOfCorners: Story = () => {
   return (
     <div className='container test-docs'>
       <div className='row mb-5'>
-        <div
-          className='col-12 col-md-6 mb-4 mb-md-0'
-          style={{ position: 'absolute' }}
-        >
+        <div className='col-12 col-md-6 mb-4 mb-md-0' style={{ position: 'absolute' }}>
           <p>
             <strong>Base (4 angoli arrotondati)</strong>
           </p>
@@ -348,8 +323,7 @@ export const DefaultLocation: Story = () => {
   return (
     <div className='container test-desktop'>
       <NotificationDoc state='success' title='Titolo Notifica' id='notifica'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor…
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
       </NotificationDoc>
     </div>
   );
@@ -361,41 +335,19 @@ export const FixedPositions: Story = () => {
   return (
     <div className='container test-desktop'>
       <div>
-        <NotificationDoc
-          title='Top Fix'
-          fix='top'
-          state='success'
-          id='notifica-fixed-top'
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor…
+        <NotificationDoc title='Top Fix' fix='top' state='success' id='notifica-fixed-top'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
         </NotificationDoc>
       </div>
       <div>
-        <NotificationDoc
-          title='Left Fix'
-          fix='left'
-          state='success'
-          id='notifica-fixed-left'
-        />
+        <NotificationDoc title='Left Fix' fix='left' state='success' id='notifica-fixed-left' />
       </div>
       <div>
-        <NotificationDoc
-          title='Right Fix'
-          fix='right'
-          state='success'
-          id='notifica-fixed-right'
-        />
+        <NotificationDoc title='Right Fix' fix='right' state='success' id='notifica-fixed-right' />
       </div>
       <div>
-        <NotificationDoc
-          title='Bottom Fix'
-          fix='bottom'
-          state='success'
-          id='notifica-fixed-bottom'
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor…
+        <NotificationDoc title='Bottom Fix' fix='bottom' state='success' id='notifica-fixed-bottom'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
         </NotificationDoc>
       </div>
     </div>
@@ -426,16 +378,8 @@ export const EsempioInterattivo: Story<EsempioInterattivoProps> = ({
 }) => {
   return (
     <div>
-      <Button
-        onClick={() =>
-          notify(title, message, { duration, icon, state, dismissable })
-        }
-      >
-        Mostra Notifica
-      </Button>
-      <Button onClick={() => notify.dismiss()}>
-        Chiudi tutte le notifiche
-      </Button>
+      <Button onClick={() => notify(title, message, { duration, icon, state, dismissable })}>Mostra Notifica</Button>
+      <Button onClick={() => notify.dismiss()}>Chiudi tutte le notifiche</Button>
       <NotificationManager fix={fix} closeOnClick={closeOnClick} />
     </div>
   );
@@ -443,8 +387,7 @@ export const EsempioInterattivo: Story<EsempioInterattivoProps> = ({
 
 EsempioInterattivo.args = {
   title: 'Titolo',
-  message:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…',
+  message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…',
   fix: undefined,
   dismissable: false,
   closeOnClick: false,
@@ -484,10 +427,7 @@ export const EsempioInterattivo_story_hidden = () => {
       <Button
         outline
         onClick={() =>
-          notify(
-            'Titolo',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…'
-          )
+          notify('Titolo', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…')
         }
       >
         Mostra Notifica
@@ -510,8 +450,7 @@ export const EsempioInterattivoAdvanced_story_hidden = () => {
           notify(
             'Titolo',
             <p>
-              <strong>Lorem ipsum</strong> dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor…
+              <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
             </p>
           )
         }

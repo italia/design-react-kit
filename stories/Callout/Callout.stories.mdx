@@ -1,11 +1,6 @@
 import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
 import { Code } from '@storybook/components';
-import {
-  Callout,
-  CalloutTitle,
-  CalloutText,
-  CalloutMoreFooter
-} from '../../src';
+import { Callout, CalloutTitle, CalloutText, CalloutMoreFooter } from '../../src';
 
 <Meta title='Documentazione/Componenti/Callout' of={Callout} />
 
@@ -21,13 +16,9 @@ I Callout posso essere utilizzati per evidenziare alcune parti del testo che ric
       <span className='text'>Breaking change</span>
     </CalloutTitle>
     <CalloutText>
-      Dalla versione 5 del kit, nel callout basico è necessario mettere il
-      titolo in un tag `span` con classe "text". Esempio:{' '}
-      <Code>
-        &lt;CalloutTitle&gt;&lt;span class="text"&gt;Titolo
-        callout&lt;/span&gt;&lt;/CalloutTitle&gt;
-      </Code>
-      .
+      Dalla versione 5 del kit, nel callout basico è necessario mettere il titolo in un tag `span` con classe "text".
+      Esempio:{' '}
+      <Code>&lt;CalloutTitle&gt;&lt;span class="text"&gt;Titolo callout&lt;/span&gt;&lt;/CalloutTitle&gt;</Code>.
     </CalloutText>
   </Callout>
 </div>
@@ -48,13 +39,9 @@ Al titolo può essere aggiunta un’icona a scelta fra quelle disponibili, avend
       <span className='text'>Accessibilità</span>
     </CalloutTitle>
     <CalloutText>
-      Nel caso l’icona comunicasse visivamente contenuti non disponibili nel
-      testo (ad esempio un allarme o una conferma) questa andrà affiancata da un
-      testo riservato agli screen reader:{' '}
-      <Code>
-        &lt;span class="visually-hidden"&gt;Testo alternativo&lt;/span&gt;
-      </Code>
-      .
+      Nel caso l’icona comunicasse visivamente contenuti non disponibili nel testo (ad esempio un allarme o una
+      conferma) questa andrà affiancata da un testo riservato agli screen reader:{' '}
+      <Code>&lt;span class="visually-hidden"&gt;Testo alternativo&lt;/span&gt;</Code>.
     </CalloutText>
   </Callout>
 </div>

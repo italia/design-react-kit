@@ -9,9 +9,7 @@ beforeAll(() => preloadIcons(['it-password-visible', 'it-password-invisible']));
 
 // Test for breaking changes
 test('Should support old wrapperClass prop even as @deprecated', () => {
-  const { container } = render(
-    <Input wrapperClass='myClass' placeholder='write text here' />
-  );
+  const { container } = render(<Input wrapperClass='myClass' placeholder='write text here' />);
   expect(container.firstChild).toHaveClass('myClass');
 });
 
@@ -23,18 +21,16 @@ test('should display the label', () => {
   }
 });
 
-test('should display the infoText', () => {
-  const { container } = render(<Input infoText='SomeInfo' />);
-  const infoText = container.querySelector('small');
-  if (infoText) {
-    expect(infoText).toHaveTextContent('SomeInfo');
+test('should display the validationText', () => {
+  const { container } = render(<Input validationText='SomeInfo' />);
+  const validationText = container.querySelector('small');
+  if (validationText) {
+    expect(validationText).toHaveTextContent('SomeInfo');
   }
 });
 
 test('should display the placeholder', () => {
-  const { container } = render(
-    <Input placeholder='Esempio di area di testo' />
-  );
+  const { container } = render(<Input placeholder='Esempio di area di testo' />);
   const input = container.querySelector('input');
   if (input) {
     expect(input).toHaveAttribute('placeholder');
@@ -50,9 +46,7 @@ test('should make the input readOnly when requested', () => {
 });
 
 test('should not be normalized when it has a placeholder', () => {
-  const { container } = render(
-    <Input normalized placeholder='Esempio di area di testo' />
-  );
+  const { container } = render(<Input normalized placeholder='Esempio di area di testo' />);
   const input = container.querySelector('input');
   if (input) {
     expect(input).not.toHaveAttribute('readOnly');

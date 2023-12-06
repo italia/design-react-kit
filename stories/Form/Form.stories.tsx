@@ -9,26 +9,11 @@ export default {
 export const DimensionamentoColonneBase = () => (
   <div>
     <Row>
-      <Input
-        type='text'
-        label='Nome'
-        id='formNome'
-        wrapperClassName='col col-md-6'
-      />
-      <Input
-        type='text'
-        label='Cognome'
-        id='formCognome'
-        wrapperClassName='col col-md-6'
-      />
+      <Input type='text' label='Nome' id='formNome' wrapperClassName='col col-md-6' />
+      <Input type='text' label='Cognome' id='formCognome' wrapperClassName='col col-md-6' />
     </Row>
     <Row>
-      <Input
-        type='text'
-        label='Città'
-        id='Citta'
-        wrapperClassName='col col-7'
-      />
+      <Input type='text' label='Città' id='Citta' wrapperClassName='col col-7' />
       <Input type='text' label='Comune' id='Comune' wrapperClassName='col' />
       <Input type='text' label='CAP' id='CAP' wrapperClassName='col' />
     </Row>
@@ -66,33 +51,13 @@ export const DimensionamentoColonneComplesso = () => {
         />
       </Row>
       <Row>
-        <Input
-          type='text'
-          label='Indirizzo'
-          id='inputAddress'
-          placeholder='Via Roma, 1'
-          wrapperClassName='col'
-        />
+        <Input type='text' label='Indirizzo' id='inputAddress' placeholder='Via Roma, 1' wrapperClassName='col' />
       </Row>
       <Row>
-        <Input
-          type='text'
-          label='Comune'
-          id='inputCity'
-          wrapperClassName='col col-md-6'
-        />
-        <Input
-          type='text'
-          label='CAP'
-          id='inputCAP'
-          wrapperClassName='col col-md-2'
-        />
+        <Input type='text' label='Comune' id='inputCity' wrapperClassName='col col-md-6' />
+        <Input type='text' label='CAP' id='inputCAP' wrapperClassName='col col-md-2' />
         <Col md='4'>
-          <Select
-            id='selectExampleClassic'
-            label='Provincia'
-            handleChange={handleChange}
-          >
+          <Select id='selectExampleClassic' label='Provincia' handleChange={handleChange}>
             {options.map((opt, i) => (
               <option label={opt.label} key={i}>
                 {opt.value}
@@ -103,11 +68,7 @@ export const DimensionamentoColonneComplesso = () => {
       </Row>
       <Row>
         <Col md='6' className='form-group'>
-          <Toggle
-            label="Label dell'interruttore 1"
-            disabled={false}
-            id='toggleEsempio1a'
-          />
+          <Toggle label="Label dell'interruttore 1" disabled={false} id='toggleEsempio1a' />
         </Col>
       </Row>
       <Row>
@@ -132,12 +93,7 @@ export const AutoDimensionamento = () => (
       <label className='visually-hidden' htmlFor='inlineFormInput'>
         Nome
       </label>
-      <input
-        type='text'
-        className='form-control'
-        id='inlineFormInput'
-        placeholder='Mario Rossi'
-      />
+      <input type='text' className='form-control' id='inlineFormInput' placeholder='Mario Rossi' />
     </Col>
     <Col>
       <label className='visually-hidden' htmlFor='inlineFormInputGroup'>
@@ -147,21 +103,12 @@ export const AutoDimensionamento = () => (
         <div className='input-group-prepend'>
           <div className='input-group-text'>@</div>
         </div>
-        <input
-          type='text'
-          className='form-control'
-          id='inlineFormInputGroup'
-          placeholder='Username'
-        />
+        <input type='text' className='form-control' id='inlineFormInputGroup' placeholder='Username' />
       </div>
     </Col>
     <Col>
       <div className='form-check m-0'>
-        <input
-          className='form-check-input'
-          type='checkbox'
-          id='autoSizingCheck'
-        />
+        <input className='form-check-input' type='checkbox' id='autoSizingCheck' />
         <label className='form-check-label' htmlFor='autoSizingCheck'>
           Ricordami
         </label>
@@ -192,20 +139,10 @@ export const FormDisabilitato = () => {
       <fieldset disabled aria-label='Form disabilitato'>
         <legend>Esempio di form disabilitato</legend>
         <div className='form-group'>
-          <Input
-            type='text'
-            label='Input'
-            id='disabledTextInput'
-            placeholder='input disabilitato'
-            disabled
-          />
+          <Input type='text' label='Input' id='disabledTextInput' placeholder='input disabilitato' disabled />
         </div>
         <div className='form-group'>
-          <Select
-            id='selectExampleClassic'
-            label='Field Label'
-            handleChange={handleChange}
-          >
+          <Select id='selectExampleClassic' label='Field Label' handleChange={handleChange}>
             {options.map((opt, i) => (
               <option label={opt.label} key={i}>
                 {opt.value}

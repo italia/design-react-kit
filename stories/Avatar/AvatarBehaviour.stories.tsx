@@ -1,13 +1,6 @@
 import React from 'react';
 
-import {
-  AvatarIcon,
-  AvatarContainer,
-  AvatarPresence,
-  AvatarWrapper,
-  AvatarStatus,
-  Icon
-} from '../../src';
+import { AvatarIcon, AvatarContainer, AvatarPresence, AvatarWrapper, AvatarStatus, Icon } from '../../src';
 
 // import UserPresence from './UserPresence'
 // import UserStatus from './UserStatus'
@@ -22,10 +15,7 @@ export const UserPresence = () => {
       <AvatarContainer>
         <AvatarWrapper>
           <AvatarIcon size='xl'>
-            <img
-              src='https://randomuser.me/api/portraits/men/43.jpg'
-              alt='Mario Rossi'
-            />
+            <img src='https://randomuser.me/api/portraits/men/43.jpg' alt='Mario Rossi' />
             <AvatarPresence presence='active'>
               <span className='visually-hidden'>Presenza:attivo</span>
             </AvatarPresence>
@@ -33,10 +23,7 @@ export const UserPresence = () => {
         </AvatarWrapper>
         <AvatarWrapper>
           <AvatarIcon size='xl'>
-            <img
-              src='https://randomuser.me/api/portraits/women/41.jpg'
-              alt='Luisa Neri'
-            />
+            <img src='https://randomuser.me/api/portraits/women/41.jpg' alt='Luisa Neri' />
             <AvatarPresence presence='busy'>
               <Icon color='white' icon='it-minus' />
               <span className='visually-hidden'>Presenza: non disponibile</span>
@@ -45,10 +32,7 @@ export const UserPresence = () => {
         </AvatarWrapper>
         <AvatarWrapper>
           <AvatarIcon size='xl'>
-            <img
-              src='https://randomuser.me/api/portraits/men/33.jpg'
-              alt='Gioacchino Romani'
-            />
+            <img src='https://randomuser.me/api/portraits/men/33.jpg' alt='Gioacchino Romani' />
             <AvatarPresence presence='hidden'>
               <span className='visually-hidden'>Presenza: invisible</span>
             </AvatarPresence>
@@ -58,10 +42,7 @@ export const UserPresence = () => {
       <AvatarContainer>
         <AvatarWrapper>
           <AvatarIcon size='md'>
-            <img
-              src='https://randomuser.me/api/portraits/women/32.jpg'
-              alt='Ludovica Galli'
-            />
+            <img src='https://randomuser.me/api/portraits/women/32.jpg' alt='Ludovica Galli' />
             <AvatarPresence presence='busy'>
               <Icon color='white' icon='it-minus' />
               <span className='visually-hidden'>Presenza: non disponibile</span>
@@ -70,10 +51,7 @@ export const UserPresence = () => {
         </AvatarWrapper>
         <AvatarWrapper>
           <AvatarIcon size='lg'>
-            <img
-              src='https://randomuser.me/api/portraits/women/32.jpg'
-              alt='Ludovica Galli'
-            />
+            <img src='https://randomuser.me/api/portraits/women/32.jpg' alt='Ludovica Galli' />
             <AvatarPresence presence='busy'>
               <Icon color='white' icon='it-minus' />
               <span className='visually-hidden'>Presenza: non disponibile</span>
@@ -82,10 +60,7 @@ export const UserPresence = () => {
         </AvatarWrapper>
         <AvatarWrapper>
           <AvatarIcon size='xl'>
-            <img
-              src='https://randomuser.me/api/portraits/women/32.jpg'
-              alt='Ludovica Galli'
-            />
+            <img src='https://randomuser.me/api/portraits/women/32.jpg' alt='Ludovica Galli' />
             <AvatarPresence presence='busy'>
               <Icon color='white' icon='it-minus' />
               <span className='visually-hidden'>Presenza: non disponibile</span>
@@ -94,10 +69,7 @@ export const UserPresence = () => {
         </AvatarWrapper>
         <AvatarWrapper>
           <AvatarIcon size='xxl'>
-            <img
-              src='https://randomuser.me/api/portraits/women/32.jpg'
-              alt='Ludovica Galli'
-            />
+            <img src='https://randomuser.me/api/portraits/women/32.jpg' alt='Ludovica Galli' />
             <AvatarPresence presence='busy'>
               <Icon color='white' icon='it-minus' />
               <span className='visually-hidden'>Presenza: non disponibile</span>
@@ -115,10 +87,7 @@ export const UserStatus = () => {
       <AvatarContainer>
         <AvatarWrapper>
           <AvatarIcon size='xl'>
-            <img
-              src='https://randomuser.me/api/portraits/men/43.jpg'
-              alt='Mario Rossi'
-            />
+            <img src='https://randomuser.me/api/portraits/men/43.jpg' alt='Mario Rossi' />
             <AvatarStatus status='approved'>
               <Icon color='white' icon='it-check' />
               <span className='visually-hidden'>Stato: approvato</span>
@@ -127,10 +96,7 @@ export const UserStatus = () => {
         </AvatarWrapper>
         <AvatarWrapper>
           <AvatarIcon size='xl'>
-            <img
-              src='https://randomuser.me/api/portraits/women/41.jpg'
-              alt='Luisa Neri'
-            />
+            <img src='https://randomuser.me/api/portraits/women/41.jpg' alt='Luisa Neri' />
             <AvatarStatus status='declined'>
               <Icon color='white' icon='it-close' />
               <span className='visually-hidden'>Stato: respinto</span>
@@ -139,10 +105,7 @@ export const UserStatus = () => {
         </AvatarWrapper>
         <AvatarWrapper>
           <AvatarIcon size='xl'>
-            <img
-              src='https://randomuser.me/api/portraits/men/33.jpg'
-              alt='Gioacchino Romani'
-            />
+            <img src='https://randomuser.me/api/portraits/men/33.jpg' alt='Gioacchino Romani' />
             <AvatarStatus status='notify'>
               <span className='visually-hidden'>Testa notifica</span>
             </AvatarStatus>
@@ -152,10 +115,7 @@ export const UserStatus = () => {
       <AvatarContainer>
         <AvatarWrapper>
           <AvatarIcon size='md'>
-            <img
-              src='https://randomuser.me/api/portraits/women/32.jpg'
-              alt='Ludovica Galli'
-            />
+            <img src='https://randomuser.me/api/portraits/women/32.jpg' alt='Ludovica Galli' />
             <AvatarStatus status='approved'>
               <Icon color='white' icon='it-check' />
               <span className='visually-hidden'>Stato: approvato</span>
@@ -164,10 +124,7 @@ export const UserStatus = () => {
         </AvatarWrapper>
         <AvatarWrapper>
           <AvatarIcon size='lg'>
-            <img
-              src='https://randomuser.me/api/portraits/women/32.jpg'
-              alt='Ludovica Galli'
-            />
+            <img src='https://randomuser.me/api/portraits/women/32.jpg' alt='Ludovica Galli' />
             <AvatarStatus status='declined'>
               <Icon color='white' icon='it-close' />
               <span className='visually-hidden'>Stato: respinto</span>
@@ -176,10 +133,7 @@ export const UserStatus = () => {
         </AvatarWrapper>
         <AvatarWrapper>
           <AvatarIcon size='xl'>
-            <img
-              src='https://randomuser.me/api/portraits/women/32.jpg'
-              alt='Ludovica Galli'
-            />
+            <img src='https://randomuser.me/api/portraits/women/32.jpg' alt='Ludovica Galli' />
             <AvatarStatus status='approved'>
               <Icon color='white' icon='it-check' />
               <span className='visually-hidden'>Stato: approvato</span>
@@ -188,10 +142,7 @@ export const UserStatus = () => {
         </AvatarWrapper>
         <AvatarWrapper>
           <AvatarIcon size='xxl'>
-            <img
-              src='https://randomuser.me/api/portraits/women/32.jpg'
-              alt='Ludovica Galli'
-            />
+            <img src='https://randomuser.me/api/portraits/women/32.jpg' alt='Ludovica Galli' />
             <AvatarStatus status='declined'>
               <Icon color='white' icon='it-close' />
               <span className='visually-hidden'>Stato: approvato</span>

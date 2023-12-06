@@ -93,11 +93,7 @@ export const ConLink = () => (
   </div>
 );
 
-const EsempiInterattiviComponent = ({
-  color,
-  pill,
-  label
-}: BadgeProps & { label: string }) => {
+const EsempiInterattiviComponent = ({ color, pill, label }: BadgeProps & { label: string }) => {
   return (
     <p>
       Testo di esempio
@@ -120,15 +116,7 @@ EsempiInterattiviComponent.argTypes = {
   color: {
     control: {
       type: 'select',
-      options: [
-        'primary',
-        'secondary',
-        'tertiary',
-        'quaternary',
-        'success',
-        'danger',
-        'warning'
-      ]
+      options: ['primary', 'secondary', 'tertiary', 'quaternary', 'success', 'danger', 'warning']
     }
   }
 };

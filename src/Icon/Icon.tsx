@@ -1,10 +1,4 @@
-import React, {
-  FC,
-  ImgHTMLAttributes,
-  SVGProps,
-  useEffect,
-  useState
-} from 'react';
+import React, { FC, ImgHTMLAttributes, SVGProps, useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { isBundledIcon, loadIcon, allIcons, IconName } from './assets';
 import { EmptyIcon } from './EmptyIcon';
@@ -20,16 +14,12 @@ let iconsCache: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {};
  * @returns true if the icons have been preloaded
  */
 export function preloadIcons(icons: IconName[]) {
-  return Promise.all(icons.map((icon) => loadIcon(icon))).then(
-    (preloadedIcons) => {
-      preloadedIcons.forEach(({ component }, i) => {
-        iconsCache[icons[i]] = (() => component) as unknown as FC<
-          SVGProps<SVGSVGElement>
-        >;
-      });
-      return true;
-    }
-  );
+  return Promise.all(icons.map((icon) => loadIcon(icon))).then((preloadedIcons) => {
+    preloadedIcons.forEach(({ component }, i) => {
+      iconsCache[icons[i]] = (() => component) as unknown as FC<SVGProps<SVGSVGElement>>;
+    });
+    return true;
+  });
 }
 
 /**
@@ -88,9 +78,7 @@ export const Icon: FC<IconProps> = ({
   testId,
   ...attributes
 }) => {
-  const [IconComponent, setCurrentIcon] = useState<
-    FC<SVGProps<SVGSVGElement> & SVGRProps>
-  >(iconsCache[icon]);
+  const [IconComponent, setCurrentIcon] = useState<FC<SVGProps<SVGSVGElement> & SVGRProps>>(iconsCache[icon]);
   const classes = classNames('icon', className, {
     [`icon-${color}`]: color,
     [`icon-${size}`]: size,
@@ -100,9 +88,7 @@ export const Icon: FC<IconProps> = ({
   useEffect(() => {
     if (isBundledIcon(icon) && !iconsCache[icon]) {
       loadIcon(icon).then(({ component }) => {
-        iconsCache[icon] = (() => component) as unknown as FC<
-          SVGProps<SVGSVGElement> & SVGRProps
-        >;
+        iconsCache[icon] = (() => component) as unknown as FC<SVGProps<SVGSVGElement> & SVGRProps>;
         setCurrentIcon(iconsCache[icon]);
         onIconLoad?.();
       });
@@ -128,23 +114,8 @@ export const Icon: FC<IconProps> = ({
   }
 
   if (!IconComponent) {
-    return (
-      <EmptyIcon
-        className={classes}
-        role='img'
-        {...attributes}
-        data-testid={testId}
-      />
-    );
+    return <EmptyIcon className={classes} role='img' {...attributes} data-testid={testId} />;
   }
 
-  return (
-    <IconComponent
-      className={classes}
-      role='img'
-      title={title}
-      data-testid={testId}
-      {...attributes}
-    />
-  );
+  return <IconComponent className={classes} role='img' title={title} data-testid={testId} {...attributes} />;
 };

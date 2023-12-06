@@ -9,12 +9,7 @@ export interface MegamenuItemProps extends HTMLAttributes<HTMLUListElement> {
   className?: string;
 }
 
-export const MegamenuItem: FC<MegamenuItemProps> = ({
-  itemName,
-  className,
-  children,
-  ...attributes
-}) => {
+export const MegamenuItem: FC<MegamenuItemProps> = ({ itemName, className, children, ...attributes }) => {
   const classes = classNames(className, 'megamenu');
   return (
     <UncontrolledDropdown nav tag='li' className={classes} {...attributes}>

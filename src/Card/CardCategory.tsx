@@ -15,15 +15,7 @@ export interface CardCategoryProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const CardCategory: FC<CardCategoryProps> = ({
-  iconName,
-  date,
-  href,
-  onClick,
-  testId,
-  children,
-  ...rest
-}) => {
+export const CardCategory: FC<CardCategoryProps> = ({ iconName, date, href, onClick, testId, children, ...rest }) => {
   const classes = classNames({
     'category-top': date || ' ',
     'categoryicon-top': iconName

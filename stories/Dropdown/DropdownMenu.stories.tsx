@@ -111,33 +111,15 @@ export const MenuIconaADestra = () => (
       <LinkList>
         <LinkListItem className='right-icon'>
           <span>Azione 1</span>
-          <Icon
-            className='right'
-            color='primary'
-            icon='it-info-circle'
-            aria-hidden
-            size='sm'
-          />
+          <Icon className='right' color='primary' icon='it-info-circle' aria-hidden size='sm' />
         </LinkListItem>
         <LinkListItem className='right-icon'>
           <span>Azione 2</span>
-          <Icon
-            className='right'
-            color='primary'
-            icon='it-info-circle'
-            aria-hidden
-            size='sm'
-          />
+          <Icon className='right' color='primary' icon='it-info-circle' aria-hidden size='sm' />
         </LinkListItem>
         <LinkListItem className='right-icon'>
           <span>Azione 3</span>
-          <Icon
-            className='right'
-            color='primary'
-            icon='it-info-circle'
-            aria-hidden
-            size='sm'
-          />
+          <Icon className='right' color='primary' icon='it-info-circle' aria-hidden size='sm' />
         </LinkListItem>
       </LinkList>
     </DropdownMenu>
@@ -149,33 +131,15 @@ export const MenuIconaASinistra = () => (
     <DropdownMenu>
       <LinkList>
         <LinkListItem className='left-icon'>
-          <Icon
-            className='left'
-            color='primary'
-            icon='it-info-circle'
-            aria-hidden
-            size='sm'
-          />
+          <Icon className='left' color='primary' icon='it-info-circle' aria-hidden size='sm' />
           <span>Azione 1</span>
         </LinkListItem>
         <LinkListItem className='left-icon'>
-          <Icon
-            className='left'
-            color='primary'
-            icon='it-info-circle'
-            aria-hidden
-            size='sm'
-          />
+          <Icon className='left' color='primary' icon='it-info-circle' aria-hidden size='sm' />
           <span>Azione 2</span>
         </LinkListItem>
         <LinkListItem className='left-icon'>
-          <Icon
-            className='left'
-            color='primary'
-            icon='it-info-circle'
-            aria-hidden
-            size='sm'
-          />
+          <Icon className='left' color='primary' icon='it-info-circle' aria-hidden size='sm' />
           <span>Azione 3</span>
         </LinkListItem>
       </LinkList>
@@ -190,54 +154,24 @@ export const _MenuDark = () => (
         <LinkListItem header>Header</LinkListItem>
         <LinkListItem active className='right-icon'>
           <span>Azione 1 (attivo)</span>
-          <Icon
-            className='right'
-            color='light'
-            icon='it-info-circle'
-            aria-hidden
-            size='sm'
-          />
+          <Icon className='right' color='light' icon='it-info-circle' aria-hidden size='sm' />
         </LinkListItem>
         <LinkListItem className='right-icon'>
           <span>Azione 2</span>
-          <Icon
-            className='right'
-            color='light'
-            icon='it-info-circle'
-            aria-hidden
-            size='sm'
-          />
+          <Icon className='right' color='light' icon='it-info-circle' aria-hidden size='sm' />
         </LinkListItem>
         <LinkListItem className='right-icon'>
           <span>Azione 3</span>
-          <Icon
-            className='right'
-            color='light'
-            icon='it-info-circle'
-            aria-hidden
-            size='sm'
-          />
+          <Icon className='right' color='light' icon='it-info-circle' aria-hidden size='sm' />
         </LinkListItem>
         <LinkListItem divider />
         <LinkListItem className='right-icon'>
           <span>Azione 4</span>
-          <Icon
-            className='right'
-            color='light'
-            icon='it-info-circle'
-            aria-hidden
-            size='sm'
-          />
+          <Icon className='right' color='light' icon='it-info-circle' aria-hidden size='sm' />
         </LinkListItem>
         <LinkListItem disabled className='right-icon'>
           <span>Azione 5 (disabilitato)</span>
-          <Icon
-            className='right'
-            color='light'
-            icon='it-info-circle'
-            aria-hidden
-            size='sm'
-          />
+          <Icon className='right' color='light' icon='it-info-circle' aria-hidden size='sm' />
         </LinkListItem>
       </LinkList>
     </DropdownMenu>

@@ -18,10 +18,7 @@ export const flushMessageCache = () => {
 };
 
 const messages: Record<string, 1> = {};
-export const notifyDeprecation = (
-  message: string,
-  options: { once: boolean } = { once: true }
-) => {
+export const notifyDeprecation = (message: string, options: { once: boolean } = { once: true }) => {
   if (!options.once) {
     logError(message);
   } else {
@@ -32,10 +29,7 @@ export const notifyDeprecation = (
   }
 };
 
-export function mapToCssModules(
-  className: string | null,
-  cssModules?: Record<string, string>
-) {
+export function mapToCssModules(className: string | null, cssModules?: Record<string, string>) {
   let finalClassNames = className == null ? '' : className;
   if (!cssModules) {
     return finalClassNames;
@@ -48,10 +42,7 @@ export function mapToCssModules(
 
 type UnknownObject = Record<string, unknown>;
 
-export function pick<T extends UnknownObject>(
-  obj: T,
-  keys: keyof T | Array<keyof T>
-): Partial<T> {
+export function pick<T extends UnknownObject>(obj: T, keys: keyof T | Array<keyof T>): Partial<T> {
   const keysArray = Array.isArray(keys) ? keys : [keys];
   const newObj: Partial<T> = {};
   for (const key of keysArray) {
@@ -62,10 +53,7 @@ export function pick<T extends UnknownObject>(
   return newObj;
 }
 
-export function omit<T extends UnknownObject>(
-  obj: T,
-  keys: keyof T | Array<keyof T>
-): Partial<T> {
+export function omit<T extends UnknownObject>(obj: T, keys: keyof T | Array<keyof T>): Partial<T> {
   const keysLookup = new Set(Array.isArray(keys) ? keys : [keys]);
 
   const newObj: Partial<T> = {};

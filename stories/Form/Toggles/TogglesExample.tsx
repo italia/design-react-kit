@@ -12,11 +12,7 @@ export const TogglesExampleEnabled = () => {
       </Col>
       <Col sm='6'>
         <FormGroup check className='m-3'>
-          <Toggle
-            label={<span>Label dell&apos;interruttore 2</span>}
-            defaultChecked
-            disabled={false}
-          />
+          <Toggle label={<span>Label dell&apos;interruttore 2</span>} defaultChecked disabled={false} />
         </FormGroup>
       </Col>
     </Row>
@@ -33,11 +29,7 @@ export const TogglesExampleDisabled = () => {
       </Col>
       <Col sm='6'>
         <FormGroup check className='m-3'>
-          <Toggle
-            label={<span>Label dell&apos;interruttore 2</span>}
-            defaultChecked
-            disabled={true}
-          />
+          <Toggle label={<span>Label dell&apos;interruttore 2</span>} defaultChecked disabled={true} />
         </FormGroup>
       </Col>
     </Row>

@@ -44,20 +44,14 @@ export const Section: FC<SectionProps> = ({
   muted,
   ...rest
 }) => {
-  const classes = classNames(
-    'section',
-    wrapperClassName === true ? className : wrapperClassName,
-    {
-      [`section-${color}`]: color,
-      'section-image': image
-    }
-  );
+  const classes = classNames('section', wrapperClassName === true ? className : wrapperClassName, {
+    [`section-${color}`]: color,
+    'section-image': image
+  });
 
   if (neutral || muted) {
     notifyDeprecation(
-      `Please use the prop "color" instead of the "${
-        neutral ? 'neutral' : 'muted'
-      }" for the Section component.`
+      `Please use the prop "color" instead of the "${neutral ? 'neutral' : 'muted'}" for the Section component.`
     );
   }
 
@@ -77,12 +71,7 @@ export const Section: FC<SectionProps> = ({
   const finalWrapperClassName = classNames(classes, deprecatedClasses);
 
   return (
-    <div
-      className={finalWrapperClassName}
-      style={styleClass.backgroundImageClass}
-      data-testid={testId}
-      {...rest}
-    >
+    <div className={finalWrapperClassName} style={styleClass.backgroundImageClass} data-testid={testId} {...rest}>
       <div className={innerClasses}>{children}</div>
     </div>
   );

@@ -32,10 +32,7 @@ export const Esempi = () => (
       <p className='mt-4 mb-2'>Avatar, testo e chiusura</p>
       <Chip>
         <div className='avatar size-xs'>
-          <img
-            src='https://randomuser.me/api/portraits/men/46.jpg'
-            alt='Mario Rossi'
-          />
+          <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
         </div>
         <ChipLabel>Label</ChipLabel>
         <Button>
@@ -67,10 +64,7 @@ export const Esempi = () => (
       <p className='mt-4 mb-2'>Avatar, testo e chiusura</p>
       <Chip large>
         <div className='avatar size-xs'>
-          <img
-            src='https://randomuser.me/api/portraits/men/46.jpg'
-            alt='Mario Rossi'
-          />
+          <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
         </div>
         <ChipLabel>Label</ChipLabel>
         <Button>
@@ -101,10 +95,7 @@ export const ChipDisabilitata = () => (
     </Chip>
     <Chip large disabled>
       <div className='avatar size-xs'>
-        <img
-          src='https://randomuser.me/api/portraits/men/46.jpg'
-          alt='Mario Rossi'
-        />
+        <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
       </div>
       <ChipLabel>Label</ChipLabel>
       <Button disabled>
@@ -134,10 +125,7 @@ export const GruppiDiChip = () => (
     </Chip>
     <Chip>
       <div className='avatar size-xs'>
-        <img
-          src='https://randomuser.me/api/portraits/men/46.jpg'
-          alt='Mario Rossi'
-        />
+        <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
       </div>
       <ChipLabel>Label</ChipLabel>
       <Button>
@@ -163,10 +151,7 @@ export const GruppiDiChip = () => (
     </Chip>
     <Chip large>
       <div className='avatar size-xs'>
-        <img
-          src='https://randomuser.me/api/portraits/men/46.jpg'
-          alt='Mario Rossi'
-        />
+        <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
       </div>
       <ChipLabel>Label</ChipLabel>
       <Button>

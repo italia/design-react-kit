@@ -12,9 +12,7 @@ describe('Accordion component', () => {
   });
 
   it('should append the passed className to the container', () => {
-    const { container } = render(
-      <Accordion className='myclass'>Content</Accordion>
-    );
+    const { container } = render(<Accordion className='myclass'>Content</Accordion>);
 
     expect(container.firstChild).toHaveClass('myclass');
   });
@@ -40,15 +38,11 @@ describe('Accordion component', () => {
       </Accordion>
     );
 
-    expect(
-      container.getElementsByClassName('accordion-button collapsed').length
-    ).toBe(1);
+    expect(container.getElementsByClassName('accordion-button collapsed').length).toBe(1);
   });
 
   it('should have a testId for resilient UI changes', () => {
-    const collapse = render(
-      <Accordion testId={'test-id-accordion'}>Content</Accordion>
-    );
+    const collapse = render(<Accordion testId={'test-id-accordion'}>Content</Accordion>);
     expect(collapse.getByTestId('test-id-accordion')).toBeTruthy();
   });
 });

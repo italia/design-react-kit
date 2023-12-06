@@ -76,11 +76,7 @@ export const ConLinkMore = () => {
             <Col xs='12' lg='4' />
             <Col xs='12' lg='4'>
               <LinkList>
-                <LinkListItem
-                  wrapperClassName='it-more'
-                  className='medium'
-                  href='#'
-                >
+                <LinkListItem wrapperClassName='it-more' className='medium' href='#'>
                   Link list Item 5
                   <Icon color='primary' icon='it-arrow-right' size='sm' />
                 </LinkListItem>
@@ -137,11 +133,7 @@ export const ConIntestazioneELinkMore = () => {
               <LinkListItem href='#'>Link list Item 1</LinkListItem>
               <LinkListItem href='#'>Link list Item 2</LinkListItem>
               <LinkListItem href='#'>Link list Item 3</LinkListItem>
-              <LinkListItem
-                wrapperClassName='it-more'
-                className='medium'
-                href='#'
-              >
+              <LinkListItem wrapperClassName='it-more' className='medium' href='#'>
                 View More
                 <Icon color='primary' icon='it-arrow-right' size='sm' />
               </LinkListItem>
@@ -153,11 +145,7 @@ export const ConIntestazioneELinkMore = () => {
               <LinkListItem href='#'>Link list Item 1</LinkListItem>
               <LinkListItem href='#'>Link list Item 2</LinkListItem>
               <LinkListItem href='#'>Link list Item 3</LinkListItem>
-              <LinkListItem
-                wrapperClassName='it-more'
-                className='medium'
-                href='#'
-              >
+              <LinkListItem wrapperClassName='it-more' className='medium' href='#'>
                 View More
                 <Icon color='primary' icon='it-arrow-right' size='sm' />
               </LinkListItem>
@@ -169,11 +157,7 @@ export const ConIntestazioneELinkMore = () => {
               <LinkListItem href='#'>Link list Item 1</LinkListItem>
               <LinkListItem href='#'>Link list Item 2</LinkListItem>
               <LinkListItem href='#'>Link list Item 3</LinkListItem>
-              <LinkListItem
-                wrapperClassName='it-more'
-                className='medium'
-                href='#'
-              >
+              <LinkListItem wrapperClassName='it-more' className='medium' href='#'>
                 View More
                 <Icon color='primary' icon='it-arrow-right' size='sm' />
               </LinkListItem>
@@ -330,10 +314,7 @@ export const ConImmagineEDescrizione = () => {
               alt='placeholder'
               title='placeholder title'
             />
-            <p>
-              Omnis iste natus error sit voluptatem accusantium doloremque
-              laudantium, totam rem aperiam.
-            </p>
+            <p>Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
           </MegamenuHighlightColumn>
         </Row>
       </MegamenuItem>

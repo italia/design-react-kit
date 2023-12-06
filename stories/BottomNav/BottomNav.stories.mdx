@@ -1,12 +1,6 @@
 import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
 import { Code } from '@storybook/components';
-import {
-  BottomNav,
-  BottomNavItem,
-  Callout,
-  CalloutTitle,
-  CalloutText
-} from '../../src';
+import { BottomNav, BottomNavItem, Callout, CalloutTitle, CalloutText } from '../../src';
 
 <Meta title='Documentazione/Menu di navigazione/BottomNav' of={BottomNav} />
 
@@ -50,9 +44,8 @@ Aggiungere un attributo `alert` per identificare una sezione che richiede attenz
       <span className='text'>Accessibilità</span>
     </CalloutTitle>
     <CalloutText>
-      I badge e gli alert sono nascosti agli screen reader. Per garantire
-      l’accessibilità è necessario aggiungere un attributo <Code>srText</Code>{' '}
-      label che contenga un testo esplicativo.
+      I badge e gli alert sono nascosti agli screen reader. Per garantire l’accessibilità è necessario aggiungere un
+      attributo <Code>srText</Code> label che contenga un testo esplicativo.
     </CalloutText>
   </Callout>
 </div>

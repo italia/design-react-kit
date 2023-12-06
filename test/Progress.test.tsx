@@ -15,9 +15,7 @@ beforeEach(() => {
 
 // Tests for breaking changes here
 test('Should support old className behaviour with special flag', () => {
-  const { container } = render(
-    <Progress className='myClass' wrapperClassName={true} value={1} />
-  );
+  const { container } = render(<Progress className='myClass' wrapperClassName={true} value={1} />);
   expect(container.firstChild).toHaveClass('myClass');
 });
 
@@ -27,27 +25,19 @@ test('Should not apply className to the wrapper', () => {
 });
 
 test('Should apply wrapperClassName to the wrapper', () => {
-  const { container } = render(
-    <Progress wrapperClassName='myClass' value={1} />
-  );
+  const { container } = render(<Progress wrapperClassName='myClass' value={1} />);
   expect(container.firstChild).toHaveClass('myClass');
 });
 
 // Write more proper tests here
 test('Should log an error when value is not a number', () => {
-  const { container } = render(
-    <Progress wrapperClassName='myClass' value={'a'} />
-  );
+  const { container } = render(<Progress wrapperClassName='myClass' value={'a'} />);
   expect(container.firstChild).toHaveClass('myClass');
-  expect(logError).toHaveBeenCalledWith(
-    'The passed "value" is not a valid number. You passed "a"'
-  );
+  expect(logError).toHaveBeenCalledWith('The passed "value" is not a valid number. You passed "a"');
 });
 
 test('Should be ok with a numeric string as for value', () => {
-  const { container } = render(
-    <Progress wrapperClassName='myClass' value={'1'} />
-  );
+  const { container } = render(<Progress wrapperClassName='myClass' value={'1'} />);
   expect(container.firstChild).toHaveClass('myClass');
 });
 

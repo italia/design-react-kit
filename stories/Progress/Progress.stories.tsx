@@ -7,9 +7,7 @@ export const Esempio = () => <Progress value='50' />;
 
 export const Etichette = () => <Progress value='35' label='progresso' />;
 
-export const ProgressoIndeterminato = () => (
-  <Progress indeterminate label='In elaborazione...' />
-);
+export const ProgressoIndeterminato = () => <Progress indeterminate label='In elaborazione...' />;
 
 export const Colori = () => (
   <div>
@@ -54,11 +52,7 @@ type EsempiInterattiviProps = {
   label: string;
   color: string;
 };
-export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({
-  value,
-  color,
-  label
-}) => {
+export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({ value, color, label }) => {
   return (
     <div>
       <Progress value={value} label={label} color={color} />

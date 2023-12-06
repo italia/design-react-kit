@@ -21,12 +21,10 @@ Per visualizzare una label utilizzare l'attributo `legend` del componente `Ratin
 <div className='docs'>
   <Callout color='success'>
     <CalloutText>
-      L'attributo <Code>&lt;legend&gt;</Code> contiene testo aggiuntivo per
-      Screen Reader all’interno di uno{' '}
+      L'attributo <Code>&lt;legend&gt;</Code> contiene testo aggiuntivo per Screen Reader all’interno di uno{' '}
       <Code>&lt;span class="visually-hidden"&gt;</Code>
       .<br />
-      La label con il numero di stelle dev’essere contenuta in uno{' '}
-      <Code>&lt;span&gt;</Code> semplice.
+      La label con il numero di stelle dev’essere contenuta in uno <Code>&lt;span&gt;</Code> semplice.
     </CalloutText>
   </Callout>
 </div>
@@ -42,8 +40,8 @@ Aggiungendo l'attributo `readOnly` si ottiene un Rating non modificabile di sola
 <div className='docs'>
   <Callout color='success'>
     <CalloutText>
-      Per rendere accessibile il contenuto è necessario aggiungere l'attributo{' '}
-      <Code>&lt;legend&gt;</Code> con classe <code>.visually-hidden</code>.
+      Per rendere accessibile il contenuto è necessario aggiungere l'attributo <Code>&lt;legend&gt;</Code> con classe{' '}
+      <code>.visually-hidden</code>.
     </CalloutText>
   </Callout>
 </div>
@@ -61,11 +59,7 @@ I seguenti valori per l'attributo `legend` sono equivalenti:
 oppure
 
 ```jsx
-<Rating
-  legend={
-    <legend className='visually-hidden'>Valutazione 4 stelle su 5</legend>
-  }
-/>
+<Rating legend={<legend className='visually-hidden'>Valutazione 4 stelle su 5</legend>} />
 ```
 
 ## Argomenti componente

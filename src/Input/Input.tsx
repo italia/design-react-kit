@@ -1,22 +1,9 @@
-import React, {
-  InputHTMLAttributes,
-  ElementType,
-  Ref,
-  ReactNode,
-  useCallback,
-  useState
-} from 'react';
+import React, { InputHTMLAttributes, ElementType, Ref, ReactNode, useCallback, useState } from 'react';
 import isNumber from 'is-number';
 
 import { InputContainer } from './InputContainer';
 import { Icon } from '../Icon/Icon';
-import {
-  getTag,
-  getFormControlClass,
-  getClasses,
-  getInfoTextControlClass,
-  useFocus
-} from './utils';
+import { getTag, getFormControlClass, getClasses, getValidationTextControlClass, useFocus } from './utils';
 import type { CSSModule } from 'reactstrap/types/lib/utils';
 import { notifyDeprecation } from '../utils';
 // taken from reactstrap types
@@ -58,7 +45,7 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   /** Testo di esempio da utilizzare per il campo. */
   placeholder?: string;
   /** Testo di aiuto per l'elemento del moduleo form. Richiede che il componente `Input` abbia la prop `id` impostata. */
-  infoText?: string;
+  validationText?: string;
   /** Il valore nel campo Input. */
   value?: string | number;
   /** Da utilizzare per impedire la modifica del valore contenuto. */
@@ -114,7 +101,7 @@ export const Input = ({
   plaintext,
   innerRef,
   label,
-  infoText,
+  validationText,
   placeholder,
   normalized,
   value,
@@ -128,11 +115,10 @@ export const Input = ({
   const [isHidden, setHidden] = useState(true);
   const [hasIcon, toggleIcon] = useState(true);
 
-  const { toggleFocusLabel, toggleBlurLabel, isFocused } =
-    useFocus<HTMLInputElement>({
-      onFocus: attributes.onFocus,
-      onBlur: attributes.onBlur
-    });
+  const { toggleFocusLabel, toggleBlurLabel, isFocused } = useFocus<HTMLInputElement>({
+    onFocus: attributes.onFocus,
+    onBlur: attributes.onBlur
+  });
 
   const toggleShow = useCallback(() => {
     setHidden(!isHidden);
@@ -152,10 +138,7 @@ export const Input = ({
     },
     cssModule
   );
-  const infoTextControlClass = getInfoTextControlClass(
-    { valid, invalid },
-    cssModule
-  );
+  const validationTextControlClass = getValidationTextControlClass({ valid, invalid }, cssModule);
 
   if (state && valid == null && invalid == null) {
     invalid = state === 'danger';
@@ -168,9 +151,7 @@ export const Input = ({
     ['aria-describedby']?: string;
   } = {};
   if (size && !isNumber(size)) {
-    notifyDeprecation(
-      'Please use the prop "bsSize" instead of the "size" to bootstrap\'s input sizing.'
-    );
+    notifyDeprecation('Please use the prop "bsSize" instead of the "size" to bootstrap\'s input sizing.');
     bsSize = size as unknown as InputProps['bsSize'];
   } else {
     extraAttributes.size = size;
@@ -188,13 +169,7 @@ export const Input = ({
 
   if (
     attributes.children &&
-    !(
-      plaintext ||
-      staticInput ||
-      type === 'select' ||
-      typeof Tag !== 'string' ||
-      Tag === 'select'
-    )
+    !(plaintext || staticInput || type === 'select' || typeof Tag !== 'string' || Tag === 'select')
   ) {
     notifyDeprecation(
       `Input with a type of "${type}" cannot have children. Please use "value"/"defaultValue" instead.`
@@ -204,11 +179,10 @@ export const Input = ({
 
   const inputPassword = extraAttributes.type === 'password';
 
-  const indeterminateCheckboxInput =
-    type === 'checkbox' && className?.includes('semi-checked');
+  const indeterminateCheckboxInput = type === 'checkbox' && className?.includes('semi-checked');
 
   // Styling
-  const { activeClass, infoTextClass, inputClasses, wrapperClass } = getClasses(
+  const { activeClass, validationTextClass, inputClasses, wrapperClass } = getClasses(
     className,
     {
       valid,
@@ -217,11 +191,11 @@ export const Input = ({
       placeholder,
       value,
       label,
-      infoText,
+      validationText,
       normalized: Boolean(normalized),
       inputPassword,
       formControlClass,
-      infoTextControlClass,
+      validationTextControlClass,
       isFocused: isFocused,
       originalWrapperClass: originalWrapperClass || originalWrapperClassOld
     },
@@ -243,8 +217,8 @@ export const Input = ({
     infoId,
     activeClass,
     label,
-    infoTextClass,
-    infoText,
+    validationTextClass,
+    validationText,
     wrapperClass
   };
 
@@ -328,27 +302,13 @@ export const Input = ({
       </InputContainer>
     );
   }
-  if (label || infoText) {
+  if (label || validationText) {
     return (
       <InputContainer {...containerProps}>
-        <Tag
-          {...rest}
-          {...extraAttributes}
-          {...sharedAttributes}
-          className={inputClasses}
-          data-testid={testId}
-        />
+        <Tag {...rest} {...extraAttributes} {...sharedAttributes} className={inputClasses} data-testid={testId} />
       </InputContainer>
     );
   }
 
-  return (
-    <Tag
-      {...rest}
-      {...extraAttributes}
-      className={inputClasses}
-      {...sharedAttributes}
-      data-testid={testId}
-    />
-  );
+  return <Tag {...rest} {...extraAttributes} className={inputClasses} {...sharedAttributes} data-testid={testId} />;
 };

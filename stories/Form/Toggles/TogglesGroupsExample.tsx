@@ -24,22 +24,19 @@ const TogglesGroupsExample = () => {
           <FormGroup check className='form-check-group'>
             <Toggle defaultChecked label='Toggle acceso' />
             <FormText color='muted'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              molestie libero
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
             </FormText>
           </FormGroup>
           <FormGroup check className='form-check-group'>
             <Toggle label='Toggle spento' />
             <FormText color='muted'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              molestie libero
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
             </FormText>
           </FormGroup>
           <FormGroup check className='form-check-group'>
             <Toggle disabled label='Toggle disabilitato' />
             <FormText color='muted'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              molestie libero
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
             </FormText>
           </FormGroup>
         </Form>

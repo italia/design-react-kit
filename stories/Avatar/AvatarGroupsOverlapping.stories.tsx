@@ -20,18 +20,12 @@ export const SmallOverlappingAvatars = () => {
     <AvatarGroupContainer>
       <li>
         <AvatarIcon size='sm' href='#'>
-          <img
-            src='https://randomuser.me/api/portraits/women/12.jpg'
-            alt='Arianna Rossi'
-          />
+          <img src='https://randomuser.me/api/portraits/women/12.jpg' alt='Arianna Rossi' />
         </AvatarIcon>
       </li>
       <li>
         <AvatarIcon size='sm' href='#'>
-          <img
-            src='https://randomuser.me/api/portraits/men/13.jpg'
-            alt='Giulio Neri'
-          />
+          <img src='https://randomuser.me/api/portraits/men/13.jpg' alt='Giulio Neri' />
         </AvatarIcon>
       </li>
       <li>
@@ -88,10 +82,7 @@ export const SmallOverlappingAvatars = () => {
               <LinkList>
                 <LinkListItem>
                   <AvatarIcon size='sm'>
-                    <img
-                      src='https://randomuser.me/api/portraits/men/46.jpg'
-                      alt='Mario Rossi'
-                    />
+                    <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
                   </AvatarIcon>
                   <span>Mario Rossi</span>
                 </LinkListItem>
@@ -127,18 +118,12 @@ export const MediumOverlaidAvatars = () => {
     <AvatarGroupContainer>
       <li>
         <AvatarIcon size='md' href='#'>
-          <img
-            src='https://randomuser.me/api/portraits/women/12.jpg'
-            alt='Arianna Rossi'
-          />
+          <img src='https://randomuser.me/api/portraits/women/12.jpg' alt='Arianna Rossi' />
         </AvatarIcon>
       </li>
       <li>
         <AvatarIcon size='md' href='#'>
-          <img
-            src='https://randomuser.me/api/portraits/men/13.jpg'
-            alt='Giulio Neri'
-          />
+          <img src='https://randomuser.me/api/portraits/men/13.jpg' alt='Giulio Neri' />
         </AvatarIcon>
       </li>
       <li>
@@ -177,10 +162,7 @@ export const MediumOverlaidAvatars = () => {
               <LinkList>
                 <LinkListItem>
                   <AvatarIcon size='md'>
-                    <img
-                      src='https://randomuser.me/api/portraits/men/46.jpg'
-                      alt='Mario Rossi'
-                    />
+                    <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
                   </AvatarIcon>
                   <span>Mario Rossi</span>
                 </LinkListItem>

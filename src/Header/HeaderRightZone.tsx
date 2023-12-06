@@ -9,11 +9,7 @@ export interface HeaderRightZoneProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const HeaderRightZone = ({
-  className,
-  testId,
-  ...attributes
-}: HeaderRightZoneProps) => {
+export const HeaderRightZone = ({ className, testId, ...attributes }: HeaderRightZoneProps) => {
   const type = useHeaderContext();
   const classes = classNames(className, {
     // BI >= 1.3.6

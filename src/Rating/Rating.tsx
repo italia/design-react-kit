@@ -90,11 +90,7 @@ export const Rating: FC<RatingProps> = ({
   }
 
   const legendContent =
-    isCustomLegendObject(legend) || isLegendString ? (
-      <legend className={legendClass}>{legendText}</legend>
-    ) : (
-      legend
-    );
+    isCustomLegendObject(legend) || isLegendString ? <legend className={legendClass}>{legendText}</legend> : legend;
 
   return (
     <FormGroup

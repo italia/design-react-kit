@@ -1,25 +1,11 @@
 import React, { useState } from 'react';
-import {
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  LinkList,
-  LinkListItem
-} from '../../src';
+import { Dropdown, DropdownToggle, DropdownMenu, LinkList, LinkListItem } from '../../src';
 
 const PageChangerExample = () => {
   const [dropdownToggle, setDropdownToggle] = useState(false);
   return (
-    <Dropdown
-      isOpen={dropdownToggle}
-      toggle={() => setDropdownToggle(!dropdownToggle)}
-    >
-      <DropdownToggle
-        tag='a'
-        id='pagerChanger'
-        className='btn btn-dropdown'
-        caret
-      >
+    <Dropdown isOpen={dropdownToggle} toggle={() => setDropdownToggle(!dropdownToggle)}>
+      <DropdownToggle tag='a' id='pagerChanger' className='btn btn-dropdown' caret>
         pag.10
       </DropdownToggle>
       <DropdownMenu>

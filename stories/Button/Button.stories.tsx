@@ -263,37 +263,17 @@ export const StatoDisabilitato = () => (
   </div>
 );
 
-const colors = [
-  'Primary',
-  'Secondary',
-  'Success',
-  'Info',
-  'Danger',
-  'Warning',
-  'Link'
-];
+const colors = ['Primary', 'Secondary', 'Success', 'Info', 'Danger', 'Warning', 'Link'];
 
-type EsempiInterattiviProps = Pick<
-  Required<ButtonProps>,
-  'color' | 'disabled' | 'block'
-> & { dimension: ButtonProps['size']; label: string };
+type EsempiInterattiviProps = Pick<Required<ButtonProps>, 'color' | 'disabled' | 'block'> & {
+  dimension: ButtonProps['size'];
+  label: string;
+};
 
-export const EsempiInterattivi = ({
-  color,
-  dimension,
-  block,
-  disabled,
-  label
-}: EsempiInterattiviProps) => {
+export const EsempiInterattivi = ({ color, dimension, block, disabled, label }: EsempiInterattiviProps) => {
   return (
-    <Button
-      color={color.toLowerCase()}
-      disabled={disabled}
-      block={block}
-      size={dimension}
-    >
-      {label} {color} {dimension} {block ? 'block' : ''}{' '}
-      {disabled ? 'disabled' : ' '}
+    <Button color={color.toLowerCase()} disabled={disabled} block={block} size={dimension}>
+      {label} {color} {dimension} {block ? 'block' : ''} {disabled ? 'disabled' : ' '}
     </Button>
   );
 };

@@ -17,8 +17,6 @@ export interface CardBodyProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const CardBody: FC<CardBodyProps> = ({
-  tag = 'div',
-  testId,
-  ...props
-}) => <InnerCardBody {...props} tag={tag} data-testid={testId} />;
+export const CardBody: FC<CardBodyProps> = ({ tag = 'div', testId, ...props }) => (
+  <InnerCardBody {...props} tag={tag} data-testid={testId} />
+);

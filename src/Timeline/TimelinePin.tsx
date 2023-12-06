@@ -52,9 +52,7 @@ export const TimelinePin: FC<TimelinePinProps> = ({
     </div>
   );
 
-  const pinTextNow = now && (
-    <span className='it-now-label d-none d-lg-flex'>{nowText}</span>
-  );
+  const pinTextNow = now && <span className='it-now-label d-none d-lg-flex'>{nowText}</span>;
 
   return (
     <div className={classes} data-testid={testId}>

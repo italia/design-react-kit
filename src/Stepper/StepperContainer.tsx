@@ -22,11 +22,6 @@ export const StepperContainer: FC<StepperContainerProps> = ({
   ...attributes
 }) => {
   const Tag = tag;
-  const wrapperClass = classNames(
-    'steppers',
-    className,
-    { 'bg-dark': dark },
-    { 'mobile-examples': mobile }
-  );
+  const wrapperClass = classNames('steppers', className, { 'bg-dark': dark }, { 'mobile-examples': mobile });
   return <Tag {...attributes} className={wrapperClass} data-testid={testId} />;
 };

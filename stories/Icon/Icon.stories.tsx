@@ -24,16 +24,7 @@ export const EsempioInterattivo: Story<EsempioInterattivoProps> = ({
   background,
   color
 }) => {
-  return (
-    <Icon
-      icon={icon}
-      size={size}
-      title={title}
-      padding={padding}
-      color={color}
-      className={background}
-    />
-  );
+  return <Icon icon={icon} size={size} title={title} padding={padding} color={color} className={background} />;
 };
 
 EsempioInterattivo.storyName = 'Esempio interattivo';
@@ -82,37 +73,17 @@ EsempioInterattivo.argTypes = {
   color: {
     control: {
       type: 'select',
-      options: [
-        'primary',
-        'secondary',
-        'success',
-        'warning',
-        'danger',
-        'light',
-        'white'
-      ]
+      options: ['primary', 'secondary', 'success', 'warning', 'danger', 'light', 'white']
     }
   }
 };
 
-export const EsempioDimensioni: Story<EsempioInterattivoProps> = ({
-  icon,
-  padding,
-  background,
-  color
-}) => {
+export const EsempioDimensioni: Story<EsempioInterattivoProps> = ({ icon, padding, background, color }) => {
   const dimensions = ['xs', 'sm', '', 'lg', 'xl'] as const;
   return (
     <>
       {dimensions.map((size) => (
-        <Icon
-          key={size}
-          icon={icon}
-          size={size}
-          padding={padding}
-          color={color}
-          className={background}
-        />
+        <Icon key={size} icon={icon} size={size} padding={padding} color={color} className={background} />
       ))}
     </>
   );
@@ -126,8 +97,7 @@ EsempioDimensioni.args = {
   background: 'bg-grey'
 };
 
-export const EsempioPadding: Story<EsempioInterattivoProps> =
-  EsempioDimensioni.bind({});
+export const EsempioPadding: Story<EsempioInterattivoProps> = EsempioDimensioni.bind({});
 EsempioPadding.storyName = 'Esempio dimensioni';
 EsempioPadding.args = {
   icon: 'it-check-circle',
@@ -181,15 +151,8 @@ ListaIcone.storyName = 'Lista icone';
 export const EsempioLoghiEsterni = () => {
   return (
     <div style={{ lineHeight: '4em' }}>
-      <Icon
-        icon='https://upload.wikimedia.org/wikipedia/it/f/f5/Palermo-Stemma_uff.png'
-        title='Stemma Palermo'
-      />
-      <Icon
-        icon='https://dati.comune.roma.it/catalog/img/Roma-Stemma.png'
-        size='lg'
-        title='Stemma Roma'
-      />
+      <Icon icon='https://upload.wikimedia.org/wikipedia/it/f/f5/Palermo-Stemma_uff.png' title='Stemma Palermo' />
+      <Icon icon='https://dati.comune.roma.it/catalog/img/Roma-Stemma.png' size='lg' title='Stemma Roma' />
       <Icon
         icon='https://upload.wikimedia.org/wikipedia/commons/9/93/CoA_Citt%C3%A0_di_Milano.svg'
         size='xl'

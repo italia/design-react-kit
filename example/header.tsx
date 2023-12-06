@@ -54,11 +54,7 @@ export class SlimHeader extends React.Component<Theme, State> {
         <HeaderContent>
           <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
           <HeaderLinkZone>
-            <HeaderToggler
-              onClick={() =>
-                this.setState({ collapsed: !this.state.collapsed })
-              }
-            >
+            <HeaderToggler onClick={() => this.setState({ collapsed: !this.state.collapsed })}>
               <span>Ente appartenenza/Owner</span>
               <Icon icon='it-expand' />
             </HeaderToggler>
@@ -104,13 +100,7 @@ export class SlimHeader extends React.Component<Theme, State> {
   }
 }
 
-export const CenterHeader: FC<TownLabels & Theme> = ({
-  townName,
-  townTagLine,
-  theme,
-  logo,
-  logoAlt = ''
-}) => {
+export const CenterHeader: FC<TownLabels & Theme> = ({ townName, townTagLine, theme, logo, logoAlt = '' }) => {
   return (
     <Header type='center' theme={theme}>
       <HeaderContent>
@@ -145,10 +135,7 @@ export const CenterHeader: FC<TownLabels & Theme> = ({
   );
 };
 
-export class NavHeader extends React.Component<
-  { active: string } & Theme,
-  State
-> {
+export class NavHeader extends React.Component<{ active: string } & Theme, State> {
   state = {
     collapsed: true
   };
@@ -167,20 +154,10 @@ export class NavHeader extends React.Component<
           >
             <Icon icon='it-burger' />
           </HeaderToggler>
-          <Collapse
-            isOpen={isOpen}
-            navbar
-            header
-            onOverlayClick={() => this.setState({ collapsed: isOpen })}
-          >
+          <Collapse isOpen={isOpen} navbar header onOverlayClick={() => this.setState({ collapsed: isOpen })}>
             <div className='menu-wrapper'>
               <Nav navbar>
-                {[
-                  'Amministrazione',
-                  'Novità',
-                  'Servizi',
-                  'Documenti e Dati'
-                ].map((label) => {
+                {['Amministrazione', 'Novità', 'Servizi', 'Documenti e Dati'].map((label) => {
                   const isActive = label === active;
                   return (
                     <NavItem active={isActive} key={label}>
@@ -201,9 +178,7 @@ export class NavHeader extends React.Component<
                   return (
                     <NavItem key={label}>
                       <NavLink href='#'>
-                        <span className={`${bold ? 'fw-bold' : ''}`}>
-                          {label}
-                        </span>
+                        <span className={`${bold ? 'fw-bold' : ''}`}>{label}</span>
                       </NavLink>
                     </NavItem>
                   );
@@ -222,12 +197,7 @@ export default ({ page, sticky, theme, townName, townTagLine, logo }) => {
     <Headers sticky={sticky}>
       <SlimHeader theme={theme} />
       <div className='it-nav-wrapper'>
-        <CenterHeader
-          logo={logo}
-          theme={theme}
-          townName={townName}
-          townTagLine={townTagLine}
-        />
+        <CenterHeader logo={logo} theme={theme} townName={townName} townTagLine={townTagLine} />
         <NavHeader theme={theme} active={page} />
       </div>
     </Headers>

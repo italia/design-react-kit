@@ -28,8 +28,8 @@ export const Esempi = () => (
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
                 </CardText>
                 <CardSignature>di Federico De Paolis</CardSignature>
                 <CardReadMore text='Leggi di più' iconName='it-arrow-right' />
@@ -44,12 +44,11 @@ export const Esempi = () => (
             <Card>
               <CardBody>
                 <CardTitle tag='h5'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor…
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
                 </CardText>
               </CardBody>
             </Card>
@@ -66,8 +65,8 @@ export const Esempi = () => (
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
                 </CardText>
                 <CardSignature>di Federico De Paolis</CardSignature>
                 <CardReadMore text='Leggi di più' iconName='it-arrow-right' />
@@ -82,12 +81,11 @@ export const Esempi = () => (
             <Card>
               <CardBody>
                 <CardTitle tag='h5'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor…
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
                 </CardText>
               </CardBody>
             </Card>
@@ -104,8 +102,8 @@ export const Esempi = () => (
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
                 </CardText>
                 <CardSignature>di Federico De Paolis</CardSignature>
                 <CardReadMore text='Leggi di più' iconName='it-arrow-right' />
@@ -120,12 +118,11 @@ export const Esempi = () => (
             <Card>
               <CardBody>
                 <CardTitle tag='h5'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor…
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
                 </CardText>
               </CardBody>
             </Card>
@@ -142,8 +139,8 @@ export const Esempi = () => (
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
                 </CardText>
                 <CardSignature>di Federico De Paolis</CardSignature>
                 <CardReadMore text='Leggi di più' iconName='it-arrow-right' />
@@ -158,12 +155,11 @@ export const Esempi = () => (
             <Card>
               <CardBody>
                 <CardTitle tag='h5'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor…
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
                 </CardText>
               </CardBody>
             </Card>

@@ -14,12 +14,7 @@ export interface HeaderContentProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const HeaderContent = ({
-  className,
-  megamenu,
-  testId,
-  ...attributes
-}: HeaderContentProps) => {
+export const HeaderContent = ({ className, megamenu, testId, ...attributes }: HeaderContentProps) => {
   const type = useHeaderContext();
   const classes = classNames(className, {
     'it-header-slim-wrapper-content': type === SLIM,

@@ -1,14 +1,7 @@
-import React, {
-  FC,
-  AnchorHTMLAttributes,
-  ElementType,
-  MouseEvent,
-  MouseEventHandler
-} from 'react';
+import React, { FC, AnchorHTMLAttributes, ElementType, MouseEvent, MouseEventHandler } from 'react';
 import classNames from 'classnames';
 
-export interface LinkListItemProps
-  extends AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface LinkListItemProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   /** Indica se l'elemento è attivo o no */
   active?: boolean;
   /** Indica se l'elemento è disabilitato o no */
@@ -77,12 +70,7 @@ export const LinkListItem: FC<LinkListItemProps> = ({
     return (
       <li className={wrapperClassName} data-testid={testId}>
         <Tag>
-          <a
-            href={href || '#'}
-            {...attributes}
-            className={classes}
-            {...handlers}
-          >
+          <a href={href || '#'} {...attributes} className={classes} {...handlers}>
             {children}
           </a>
         </Tag>

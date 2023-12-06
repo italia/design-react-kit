@@ -18,21 +18,14 @@ module.exports = {
           ref: true,
           memo: true,
           svgoConfig: {
-            plugins: [
-              { removeViewBox: false },
-              { removeAttrs: { attrs: 'g:(stroke|fill):((?!^none$).)*' } }
-            ]
+            plugins: [{ removeViewBox: false }, { removeAttrs: { attrs: 'g:(stroke|fill):((?!^none$).)*' } }]
           }
         }),
         ...plugins
       ],
       output: {
         ...restOutput,
-        dir: path.join(
-          __dirname,
-          'dist',
-          `${isDev ? 'types' : restOutput.format}`
-        )
+        dir: path.join(__dirname, 'dist', `${isDev ? 'types' : restOutput.format}`)
       }
     };
   }

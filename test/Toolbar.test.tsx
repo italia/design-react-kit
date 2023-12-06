@@ -13,9 +13,7 @@ describe('Toolbar component', () => {
   });
 
   it('should append the passed className to the container', () => {
-    const { container } = render(
-      <Toolbar className='toolbar-medium'>Content</Toolbar>
-    );
+    const { container } = render(<Toolbar className='toolbar-medium'>Content</Toolbar>);
 
     expect(container.firstChild).toHaveClass('toolbar-medium');
   });

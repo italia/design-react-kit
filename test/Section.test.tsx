@@ -22,9 +22,7 @@ test('Should support new color prop', () => {
 });
 
 test('Should support old className behaviour with special flag', () => {
-  const { container } = render(
-    <Section className='myClass' wrapperClassName={true} />
-  );
+  const { container } = render(<Section className='myClass' wrapperClassName={true} />);
   expect(container.firstChild).toHaveClass('myClass');
 });
 
@@ -40,9 +38,7 @@ test('Should apply wrapperClassName to the wrapper', () => {
 
 test('Should not set backgroundImage when the image prop is undefined', () => {
   const { container } = render(<Section image={undefined} />);
-  expect(container.firstChild).not.toHaveStyle(
-    'background-image: url("undefined")'
-  );
+  expect(container.firstChild).not.toHaveStyle('background-image: url("undefined")');
 });
 
 test('should have a testId for resilient UI changes', () => {

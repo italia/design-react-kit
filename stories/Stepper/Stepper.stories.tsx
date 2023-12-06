@@ -16,9 +16,7 @@ export const TextOnly = () => {
         <StepperHeaderElement variant='confirmed' appendIcon='it-check'>
           Primo contenuto
         </StepperHeaderElement>
-        <StepperHeaderElement variant='active'>
-          Secondo contenuto
-        </StepperHeaderElement>
+        <StepperHeaderElement variant='active'>Secondo contenuto</StepperHeaderElement>
         <StepperHeaderElement>Terzo contenuto</StepperHeaderElement>
         <StepperHeaderElement variant='mobile' tag={'span'}>
           2/6
@@ -32,19 +30,13 @@ export const TextAndIcons = () => {
   return (
     <StepperContainer>
       <StepperHeader>
-        <StepperHeaderElement
-          variant='confirmed'
-          appendIcon='it-check'
-          prependIcon='it-calendar'
-        >
+        <StepperHeaderElement variant='confirmed' appendIcon='it-check' prependIcon='it-calendar'>
           Primo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement variant='active' prependIcon='it-lock'>
           Secondo contenuto
         </StepperHeaderElement>
-        <StepperHeaderElement prependIcon='it-settings'>
-          Terzo contenuto
-        </StepperHeaderElement>
+        <StepperHeaderElement prependIcon='it-settings'>Terzo contenuto</StepperHeaderElement>
         <StepperHeaderElement variant='mobile' tag={'span'}>
           2/6
         </StepperHeaderElement>
@@ -57,22 +49,13 @@ export const OrderOfTheSteps = () => {
   return (
     <StepperContainer>
       <StepperHeader>
-        <StepperHeaderElement
-          variant='confirmed'
-          stepperNumber={<Icon icon='it-check' />}
-        >
+        <StepperHeaderElement variant='confirmed' stepperNumber={<Icon icon='it-check' />}>
           Primo contenuto
         </StepperHeaderElement>
-        <StepperHeaderElement
-          variant='active'
-          noLine
-          stepperNumber={<span>2</span>}
-        >
+        <StepperHeaderElement variant='active' noLine stepperNumber={<span>2</span>}>
           Secondo contenuto
         </StepperHeaderElement>
-        <StepperHeaderElement stepperNumber={<span>3</span>}>
-          Terzo contenuto
-        </StepperHeaderElement>
+        <StepperHeaderElement stepperNumber={<span>3</span>}>Terzo contenuto</StepperHeaderElement>
       </StepperHeader>
     </StepperContainer>
   );
@@ -84,9 +67,7 @@ export const NavigationOfTheSteps = () => {
         <StepperHeaderElement variant='confirmed' prependIcon='it-check'>
           Primo contenuto
         </StepperHeaderElement>
-        <StepperHeaderElement variant='active'>
-          Secondo contenuto
-        </StepperHeaderElement>
+        <StepperHeaderElement variant='active'>Secondo contenuto</StepperHeaderElement>
         <StepperHeaderElement>Terzo contenuto</StepperHeaderElement>
         <StepperHeaderElement variant='mobile' tag={'span'}>
           2/6
@@ -104,11 +85,7 @@ export const NavigationOfTheSteps = () => {
           Avanti
           <Icon icon='it-chevron-right' color='primary' />
         </Button>
-        <Button
-          color='primary'
-          size='sm'
-          className='steppers-btn-confirm d-none d-lg-block'
-        >
+        <Button color='primary' size='sm' className='steppers-btn-confirm d-none d-lg-block'>
           Conferma
         </Button>
       </StepperNav>
@@ -122,9 +99,7 @@ export const VersionOnADarkBackground = () => {
         <StepperHeaderElement variant='confirmed' prependIcon='it-check'>
           Primo contenuto
         </StepperHeaderElement>
-        <StepperHeaderElement variant='active'>
-          Secondo contenuto
-        </StepperHeaderElement>
+        <StepperHeaderElement variant='active'>Secondo contenuto</StepperHeaderElement>
         <StepperHeaderElement>Terzo contenuto</StepperHeaderElement>
         <StepperHeaderElement variant='mobile' tag={'span'}>
           2/6
@@ -142,11 +117,7 @@ export const VersionOnADarkBackground = () => {
           Avanti
           <Icon icon='it-chevron-right' color='primary' />
         </Button>
-        <Button
-          color='primary'
-          size='sm'
-          className='stepper-btn-confirm d-none d-lg-block'
-        >
+        <Button color='primary' size='sm' className='stepper-btn-confirm d-none d-lg-block'>
           Conferma
         </Button>
       </StepperNav>
@@ -161,49 +132,32 @@ export const HeaderVariants = () => {
         <StepperHeaderElement variant='confirmed' prependIcon='it-check'>
           Primo contenuto
         </StepperHeaderElement>
-        <StepperHeaderElement variant='active'>
-          Secondo contenuto
-        </StepperHeaderElement>
+        <StepperHeaderElement variant='active'>Secondo contenuto</StepperHeaderElement>
         <StepperHeaderElement>Terzo contnuto</StepperHeaderElement>
         <StepperHeaderElement variant='mobile' tag={'span'}>
           2/6
         </StepperHeaderElement>
       </StepperHeader>
       <StepperHeader>
-        <StepperHeaderElement
-          variant='confirmed'
-          appendIcon='it-check'
-          prependIcon='it-calendar'
-        >
+        <StepperHeaderElement variant='confirmed' appendIcon='it-check' prependIcon='it-calendar'>
           Primo contenuto
         </StepperHeaderElement>
         <StepperHeaderElement variant='active' prependIcon='it-lock'>
           Secondo contenuto
         </StepperHeaderElement>
-        <StepperHeaderElement prependIcon='it-settings'>
-          Terzo contenuto
-        </StepperHeaderElement>
+        <StepperHeaderElement prependIcon='it-settings'>Terzo contenuto</StepperHeaderElement>
         <StepperHeaderElement variant='mobile' tag={'span'}>
           2/6
         </StepperHeaderElement>
       </StepperHeader>
       <StepperHeader>
-        <StepperHeaderElement
-          variant='confirmed'
-          stepperNumber={<Icon icon='it-check' />}
-        >
+        <StepperHeaderElement variant='confirmed' stepperNumber={<Icon icon='it-check' />}>
           Primo contenuto
         </StepperHeaderElement>
-        <StepperHeaderElement
-          variant='active'
-          noLine
-          stepperNumber={<span>2</span>}
-        >
+        <StepperHeaderElement variant='active' noLine stepperNumber={<span>2</span>}>
           Secondo contenuto
         </StepperHeaderElement>
-        <StepperHeaderElement stepperNumber={<span>3</span>}>
-          Terzo contenuto
-        </StepperHeaderElement>
+        <StepperHeaderElement stepperNumber={<span>3</span>}>Terzo contenuto</StepperHeaderElement>
       </StepperHeader>
     </StepperContainer>
   );

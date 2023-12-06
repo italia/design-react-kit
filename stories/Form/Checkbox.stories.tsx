@@ -54,12 +54,7 @@ export const CheckboxDisabilitato = () => (
           </Label>
         </FormGroup>
         <FormGroup check>
-          <Input
-            disabled
-            id='disabled-checkbox2'
-            type='checkbox'
-            defaultChecked
-          />
+          <Input disabled id='disabled-checkbox2' type='checkbox' defaultChecked />
           <Label for='disabled-checkbox2' check>
             Checkbox disabilitato selezionato
           </Label>
@@ -108,8 +103,7 @@ export const CheckboxGruppi = () => (
                 Checkbox selezionato
               </Label>
               <FormText color=''>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas molestie libero
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
               </FormText>
             </FormGroup>
             <FormGroup check className='form-check-group'>
@@ -118,8 +112,7 @@ export const CheckboxGruppi = () => (
                 Checkbox non selezionato
               </Label>
               <FormText color=''>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas molestie libero
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
               </FormText>
             </FormGroup>
             <FormGroup check className='form-check-group'>
@@ -128,8 +121,7 @@ export const CheckboxGruppi = () => (
                 Checkbox disabilitato non selezionato
               </Label>
               <FormText color=''>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas molestie libero
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
               </FormText>
             </FormGroup>
           </Form>

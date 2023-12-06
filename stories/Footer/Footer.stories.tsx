@@ -1,18 +1,7 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
 import React from 'react';
 import { Story } from '@storybook/react';
-import {
-  Container,
-  Row,
-  Col,
-  Form,
-  Label,
-  Input,
-  Button,
-  Icon,
-  LinkList,
-  LinkListItem
-} from '../../src';
+import { Container, Row, Col, Form, Label, Input, Button, Icon, LinkList, LinkListItem } from '../../src';
 
 type FooterProps = {
   townName: string;
@@ -54,11 +43,7 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
                     'Luoghi',
                     'Associazioni e società partecipate'
                   ].map((label) => (
-                    <LinkListItem
-                      key={label}
-                      href='#'
-                      title={`Vai alla pagina: ${label}`}
-                    >
+                    <LinkListItem key={label} href='#' title={`Vai alla pagina: ${label}`}>
                       {label}
                     </LinkListItem>
                   ))}
@@ -79,11 +64,7 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
                     'Autorizzazioni e concessioni',
                     'Certificati e dichiarazioni'
                   ].map((label) => (
-                    <LinkListItem
-                      key={label}
-                      href='#'
-                      title={`Vai alla pagina: ${label}`}
-                    >
+                    <LinkListItem key={label} href='#' title={`Vai alla pagina: ${label}`}>
                       {label}
                     </LinkListItem>
                   ))}
@@ -97,11 +78,7 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
                 </h4>
                 <LinkList className='footer-list clearfix'>
                   {['Notizie', 'Eventi', 'Comunicati Stampa'].map((label) => (
-                    <LinkListItem
-                      key={label}
-                      href='#'
-                      title={`Vai alla pagina: ${label}`}
-                    >
+                    <LinkListItem key={label} href='#' title={`Vai alla pagina: ${label}`}>
                       {label}
                     </LinkListItem>
                   ))}
@@ -114,21 +91,13 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
                   </a>
                 </h4>
                 <LinkList className='footer-list clearfix'>
-                  {[
-                    'Progetti e attività',
-                    'Delibere, determine e ordinanze',
-                    'Bandi',
-                    'Concorsi',
-                    'Albo pretorio'
-                  ].map((label) => (
-                    <LinkListItem
-                      key={label}
-                      href='#'
-                      title={`Vai alla pagina: ${label}`}
-                    >
-                      {label}
-                    </LinkListItem>
-                  ))}
+                  {['Progetti e attività', 'Delibere, determine e ordinanze', 'Bandi', 'Concorsi', 'Albo pretorio'].map(
+                    (label) => (
+                      <LinkListItem key={label} href='#' title={`Vai alla pagina: ${label}`}>
+                        {label}
+                      </LinkListItem>
+                    )
+                  )}
                 </LinkList>
               </Col>
             </Row>
@@ -142,9 +111,8 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
                   </a>
                 </h4>
                 <p>
-                  I dati personali pubblicati sono riutilizzabili solo alle
-                  condizioni previste dalla direttiva comunitaria 2003/98/CE e
-                  dal d.lgs. 36/2006
+                  I dati personali pubblicati sono riutilizzabili solo alle condizioni previste dalla direttiva
+                  comunitaria 2003/98/CE e dal d.lgs. 36/2006
                 </p>
               </Col>
               <Col lg={3} md={3} className='pb-2'>
@@ -156,19 +124,11 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
                 <p>
                   <strong>Nome del Comune</strong>
                   <br />
-                  Via Roma 0 - 00000 Lorem Ipsum Codice fiscale / P. IVA:
-                  000000000
+                  Via Roma 0 - 00000 Lorem Ipsum Codice fiscale / P. IVA: 000000000
                 </p>
                 <LinkList className='footer-list clearfix'>
-                  {[
-                    'Posta Elettronica Certificata',
-                    'URP - Ufficio Relazioni con il Pubblico'
-                  ].map((label) => (
-                    <LinkListItem
-                      key={label}
-                      href='#'
-                      title={`Vai alla pagina: ${label}`}
-                    >
+                  {['Posta Elettronica Certificata', 'URP - Ufficio Relazioni con il Pubblico'].map((label) => (
+                    <LinkListItem key={label} href='#' title={`Vai alla pagina: ${label}`}>
                       {label}
                     </LinkListItem>
                   ))}
@@ -188,12 +148,7 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
                   >
                     Iscriviti per riceverla
                   </Label>
-                  <Input
-                    id='input-newsletter'
-                    name='input-newsletter'
-                    placeholder='mail@example.com'
-                    type='email'
-                  />
+                  <Input id='input-newsletter' name='input-newsletter' placeholder='mail@example.com' type='email' />
                   <Button color='primary' className='btn-icon' type='submit'>
                     <Icon icon='it-mail' color='white' />
                     <span>Iscriviti</span>
@@ -209,45 +164,25 @@ export const Footer: Story<FooterProps> = ({ townName, townTagLine }) => {
                 <ul className='list-inline text-start social'>
                   <li className='list-inline-item'>
                     <a className='p-2 text-white' href='#' target='_blank'>
-                      <Icon
-                        icon='it-designers-italia'
-                        color='white'
-                        size='sm'
-                        className='align-top'
-                      />
+                      <Icon icon='it-designers-italia' color='white' size='sm' className='align-top' />
                       <span className='visually-hidden'>Designers Italia</span>
                     </a>
                   </li>
                   <li className='list-inline-item'>
                     <a className='p-2 text-white' href='#' target='_blank'>
-                      <Icon
-                        icon='it-twitter'
-                        color='white'
-                        size='sm'
-                        className='align-top'
-                      />
+                      <Icon icon='it-twitter' color='white' size='sm' className='align-top' />
                       <span className='visually-hidden'>Twitter</span>
                     </a>
                   </li>
                   <li className='list-inline-item'>
                     <a className='p-2 text-white' href='#' target='_blank'>
-                      <Icon
-                        icon='it-medium'
-                        color='white'
-                        size='sm'
-                        className='align-top'
-                      />
+                      <Icon icon='it-medium' color='white' size='sm' className='align-top' />
                       <span className='visually-hidden'>Medium</span>
                     </a>
                   </li>
                   <li className='list-inline-item'>
                     <a className='p-2 text-white' href='#' target='_blank'>
-                      <Icon
-                        icon='it-behance'
-                        color='white'
-                        size='sm'
-                        className='align-top'
-                      />
+                      <Icon icon='it-behance' color='white' size='sm' className='align-top' />
                       <span className='visually-hidden'>Behance</span>
                     </a>
                   </li>

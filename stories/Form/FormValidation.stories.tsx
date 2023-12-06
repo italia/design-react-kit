@@ -1,16 +1,6 @@
 import React, { useState } from 'react';
 
-import {
-  Button,
-  Input,
-  Form,
-  FormGroup,
-  Label,
-  FormText,
-  Row,
-  Alert,
-  Col
-} from '../../src';
+import { Button, Input, Form, FormGroup, Label, FormText, Row, Alert, Col } from '../../src';
 
 export default {
   title: 'Componenti/Form/Form Validation'
@@ -20,8 +10,8 @@ export const ValidazioneBase = () => (
   <div>
     <Input label='Valid Input' valid />
     <Input label='Invalid Input' invalid />
-    <Input value='Mario' label='First name' infoText='Validated!' valid />
-    <Input label='Username' infoText='Please choose a username.' invalid />
+    <Input value='Mario' label='First name' validationText='Validated!' valid />
+    <Input label='Username' validationText='Please choose a username.' invalid />
   </div>
 );
 
@@ -45,7 +35,7 @@ export const ValidazioneCompleta = () => {
               type='text'
               value={name}
               label='Nome'
-              infoText='Validato!'
+              validationText='Validato!'
               valid
               onChange={(e) => setName(e.target.value)}
             />
@@ -56,7 +46,7 @@ export const ValidazioneCompleta = () => {
               type='text'
               value={surname}
               label='Cognome'
-              infoText='Validato!'
+              validationText='Validato!'
               valid
               onChange={(e) => setSurname(e.target.value)}
             />
@@ -67,7 +57,7 @@ export const ValidazioneCompleta = () => {
               type='text'
               value={username}
               label='Username'
-              infoText='Questo campo è richiesto'
+              validationText='Questo campo è richiesto'
               invalid
               onChange={(e) => setUsername(e.target.value)}
             />
@@ -78,7 +68,7 @@ export const ValidazioneCompleta = () => {
               type='number'
               value={age}
               label='Età (minimo 18 anni)'
-              infoText='Questo campo è richiesto'
+              validationText='Questo campo è richiesto'
               valid={age >= 18}
               onChange={(e) => setAge(parseInt(e.target.value))}
             />
@@ -91,7 +81,7 @@ export const ValidazioneCompleta = () => {
               type='text'
               value={city}
               label='Città'
-              infoText='Questo campo è richiesto'
+              validationText='Questo campo è richiesto'
               invalid
               onChange={(e) => setCity(e.target.value)}
             />
@@ -102,7 +92,7 @@ export const ValidazioneCompleta = () => {
               type='text'
               value={province}
               label='Provincia'
-              infoText='Per favore inserisci un nome di provincia valida.'
+              validationText='Per favore inserisci un nome di provincia valida.'
               invalid
               onChange={(e) => setProvince(e.target.value)}
             />
@@ -114,7 +104,7 @@ export const ValidazioneCompleta = () => {
               type='text'
               value={cap}
               label='CAP (5 cifre)'
-              infoText='Questo campo è richiesto'
+              validationText='Questo campo è richiesto'
               invalid
               onChange={(e) => setCap(e.target.value)}
             />
@@ -133,10 +123,7 @@ export const ValidazioneCompleta = () => {
               <Label for='termsAndConditions' check>
                 Accetto i termini e condizioni
               </Label>
-              <FormText tag='div'>
-                Devi accettare i termini e le condizioni prima di inviare il
-                modulo.
-              </FormText>
+              <FormText tag='div'>Devi accettare i termini e le condizioni prima di inviare il modulo.</FormText>
             </FormGroup>
           </Col>
           <Col
@@ -153,8 +140,7 @@ export const ValidazioneCompleta = () => {
       <Row className='mt-4'>
         <Col>
           <Alert color='danger'>
-            <strong>Attenzione</strong> Alcuni campi inseriti sono da
-            controllare.
+            <strong>Attenzione</strong> Alcuni campi inseriti sono da controllare.
           </Alert>
         </Col>
       </Row>

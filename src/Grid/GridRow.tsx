@@ -7,12 +7,7 @@ export interface GridRowProps extends HTMLAttributes<HTMLSpanElement> {
   testId?: string;
 }
 
-export const GridRow: FC<GridRowProps> = ({
-  className,
-  children,
-  testId,
-  ...attributes
-}) => {
+export const GridRow: FC<GridRowProps> = ({ className, children, testId, ...attributes }) => {
   const classes = classname('grid-row', className);
   return (
     <div {...attributes} className={classes} data-testid={testId}>

@@ -5,14 +5,13 @@
 version: 2
 
 aliases:
-  - &working_directory
-    ~/repo
+  - &working_directory ~/repo
 
   - &restore_cache
     keys:
-    - npm-dependencies-v4-{{ checksum "package.json" }}
-    # fallback to using the latest cache if no exact match is found
-    - npm-dependencies-v4-
+      - npm-dependencies-v4-{{ checksum "package.json" }}
+      # fallback to using the latest cache if no exact match is found
+      - npm-dependencies-v4-
 
   - &npm_install
     name: Install Packages
@@ -68,7 +67,6 @@ jobs:
           paths:
             - dist
 
-            
   check-gatsby-ssr:
     <<: *defaults
 
@@ -87,8 +85,8 @@ jobs:
       - run:
           name: Bind global package folder to local user
           command: |
-              mkdir ~/.npm-packages
-              npm config set prefix ~/.npm-packages
+            mkdir ~/.npm-packages
+            npm config set prefix ~/.npm-packages
       - run:
           name: Link the toolkit
           command: yarn link
@@ -120,7 +118,6 @@ jobs:
             yarn storybook:build
             yarn storybook:deploy
 
-
   npm-publish:
     <<: *defaults
 
@@ -151,8 +148,8 @@ workflows:
           filters:
             branches:
               ignore:
-                  - gh-pages
-                  - next
+                - gh-pages
+                - next
             tags:
               only: /.*/
 

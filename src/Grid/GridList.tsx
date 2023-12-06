@@ -7,12 +7,7 @@ export interface GridListProps extends HTMLAttributes<HTMLSpanElement> {
   testId?: string;
 }
 
-export const GridList: FC<GridListProps> = ({
-  className,
-  children,
-  testId,
-  ...attributes
-}) => {
+export const GridList: FC<GridListProps> = ({ className, children, testId, ...attributes }) => {
   const classes = classname('it-grid-list-wrapper', className);
   return (
     <div {...attributes} className={classes} data-testid={testId}>

@@ -3,9 +3,7 @@ import { ToastProps, useToast, cssTransition } from 'react-toastify';
 import { NotificationToastProps } from './NotificationContent';
 import { NotificationCommonProps } from './types';
 
-export type NotificationProps = Omit<ToastProps, 'transition'> &
-  NotificationCommonProps &
-  NotificationToastProps;
+export type NotificationProps = Omit<ToastProps, 'transition'> & NotificationCommonProps & NotificationToastProps;
 
 const dummyTransition = cssTransition({ enter: '', exit: '' });
 
@@ -14,16 +12,7 @@ export const Notification: FC<NotificationProps> = (props) => {
     ...props,
     transition: dummyTransition
   });
-  const {
-    children,
-    autoClose,
-    onClick,
-    role,
-    toastId,
-    deleteToast,
-    closeToast,
-    isIn
-  } = props;
+  const { children, autoClose, onClick, role, toastId, deleteToast, closeToast, isIn } = props;
 
   const customStyle: CSSProperties = {
     display: isIn ? 'block' : 'none'

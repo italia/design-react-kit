@@ -1,17 +1,16 @@
 import React, { Ref, ReactNode, TextareaHTMLAttributes } from 'react';
 
 import { InputContainer } from './InputContainer';
-import { getClasses, getInfoTextControlClass, useFocus } from './utils';
+import { getClasses, getValidationTextControlClass, useFocus } from './utils';
 import type { CSSModule } from 'reactstrap/types/lib/utils';
 
-export interface TextAreaProps
-  extends TextareaHTMLAttributes<HTMLTextAreaElement> {
+export interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   /** Etichetta del campo TextArea. */
   label?: string | ReactNode;
   /** Testo di esempio da utilizzare per il campo. */
   placeholder?: string;
   /** Testo di aiuto per l'elemento del moduleo form. Richiede che il componente `TextArea` abbia la prop `id` impostata. */
-  infoText?: string;
+  validationText?: string;
   /** Il valore nel campo TextArea. */
   value?: string | number;
   /** Da utilizzare per impedire la modifica del valore contenuto. */
@@ -38,7 +37,7 @@ export const TextArea = ({
   cssModule,
   innerRef,
   label,
-  infoText,
+  validationText,
   placeholder,
   normalized,
   value,
@@ -48,16 +47,12 @@ export const TextArea = ({
   testId,
   ...attributes
 }: TextAreaProps) => {
-  const { toggleFocusLabel, toggleBlurLabel, isFocused } =
-    useFocus<HTMLTextAreaElement>({
-      onFocus: attributes.onFocus,
-      onBlur: attributes.onBlur
-    });
+  const { toggleFocusLabel, toggleBlurLabel, isFocused } = useFocus<HTMLTextAreaElement>({
+    onFocus: attributes.onFocus,
+    onBlur: attributes.onBlur
+  });
 
-  const infoTextControlClass = getInfoTextControlClass(
-    { valid, invalid },
-    cssModule
-  );
+  const validationTextControlClass = getValidationTextControlClass({ valid, invalid }, cssModule);
 
   const extraAttributes: { ['aria-describedby']?: string } = {};
 
@@ -68,7 +63,7 @@ export const TextArea = ({
   }
 
   // Styling
-  const { activeClass, infoTextClass, inputClasses, wrapperClass } = getClasses(
+  const { activeClass, validationTextClass, inputClasses, wrapperClass } = getClasses(
     className,
     {
       valid,
@@ -76,9 +71,9 @@ export const TextArea = ({
       placeholder,
       value,
       label,
-      infoText,
+      validationText,
       normalized: Boolean(normalized),
-      infoTextControlClass,
+      validationTextControlClass,
       isFocused,
       originalWrapperClass
     },
@@ -100,8 +95,8 @@ export const TextArea = ({
     infoId,
     activeClass,
     label,
-    infoTextClass,
-    infoText,
+    validationTextClass,
+    validationText,
     wrapperClass
   };
 
@@ -134,7 +129,7 @@ export const TextArea = ({
       </InputContainer>
     );
   }
-  if (label || infoText) {
+  if (label || validationText) {
     return (
       <InputContainer {...containerProps}>
         <textarea

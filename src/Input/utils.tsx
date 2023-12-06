@@ -10,13 +10,7 @@ type TypeProps = Pick<InputProps, 'plaintext' | 'type'> & {
 };
 type FormControlProps = Pick<InputProps, 'addon' | 'normalized'> & TypeProps;
 
-function getFormControlClassInternal({
-  plaintext,
-  staticInput,
-  type = 'text',
-  addon,
-  normalized
-}: FormControlProps) {
+function getFormControlClassInternal({ plaintext, staticInput, type = 'text', addon, normalized }: FormControlProps) {
   const formControlClass = 'form-control';
   if (plaintext || staticInput || normalized) {
     return `${formControlClass}-plaintext`;
@@ -32,17 +26,11 @@ function getFormControlClassInternal({
   return formControlClass;
 }
 
-export function getFormControlClass(
-  props: FormControlProps,
-  cssModule?: CSSModule
-) {
+export function getFormControlClass(props: FormControlProps, cssModule?: CSSModule) {
   return mapToCssModules(getFormControlClassInternal(props), cssModule);
 }
 
-export function getInfoTextControlClass(
-  { invalid }: ValidationProps,
-  cssModule?: CSSModule
-) {
+export function getValidationTextControlClass({ invalid }: ValidationProps, cssModule?: CSSModule) {
   return mapToCssModules(
     classNames({
       'form-text': true,
@@ -52,12 +40,7 @@ export function getInfoTextControlClass(
   );
 }
 
-export function getTag({
-  tag,
-  plaintext,
-  staticInput,
-  type = 'text'
-}: Pick<InputProps, 'tag'> & TypeProps) {
+export function getTag({ tag, plaintext, staticInput, type = 'text' }: Pick<InputProps, 'tag'> & TypeProps) {
   if (tag) {
     return tag;
   }
@@ -71,14 +54,11 @@ export function getTag({
 }
 
 type InputClassesParams = ValidationProps &
-  Pick<
-    InputProps,
-    'bsSize' | 'placeholder' | 'value' | 'label' | 'infoText' | 'normalized'
-  > & {
+  Pick<InputProps, 'bsSize' | 'placeholder' | 'value' | 'label' | 'validationText' | 'normalized'> & {
     isFocused: boolean;
     inputPassword?: boolean;
     formControlClass?: string;
-    infoTextControlClass?: string;
+    validationTextControlClass?: string;
     originalWrapperClass: InputProps['wrapperClassName'];
   };
 
@@ -92,21 +72,19 @@ export function getClasses(
     placeholder,
     value,
     label,
-    infoText,
+    validationText,
     normalized,
     inputPassword,
     formControlClass,
-    infoTextControlClass,
+    validationTextControlClass,
     originalWrapperClass
   }: InputClassesParams,
   cssModule?: CSSModule
 ) {
-  const hasPlainCondition = placeholder || label || infoText;
+  const hasPlainCondition = placeholder || label || validationText;
   const baseCondition = hasPlainCondition && !normalized && !inputPassword;
-  const passwordOnlyCondition =
-    inputPassword && !hasPlainCondition && !normalized;
-  const normalizedOnlyCondition =
-    normalized && !hasPlainCondition && !inputPassword;
+  const passwordOnlyCondition = inputPassword && !hasPlainCondition && !normalized;
+  const normalizedOnlyCondition = normalized && !hasPlainCondition && !inputPassword;
 
   const classes = mapToCssModules(
     classNames(
@@ -120,17 +98,14 @@ export function getClasses(
     ),
     cssModule
   );
-  const wrapperClass = mapToCssModules(
-    classNames(className, originalWrapperClass, 'form-group'),
-    cssModule
-  );
-  const infoTextClass = mapToCssModules(
+  const wrapperClass = mapToCssModules(classNames(className, originalWrapperClass, 'form-group'), cssModule);
+  const validationTextClass = mapToCssModules(
     classNames(
       {
         'valid-feedback': valid,
         'invalid-feedback form-feedback just-validate-error-label': invalid
       },
-      infoTextControlClass
+      validationTextControlClass
     ),
     cssModule
   );
@@ -160,7 +135,7 @@ export function getClasses(
     wrapperClass,
     inputClasses,
     activeClass,
-    infoTextClass
+    validationTextClass
   };
 }
 

@@ -20,26 +20,13 @@ const PopoverExample = () => {
 
   return (
     <div>
-      <Button
-        color='danger'
-        size='lg'
-        innerRef={targetRef}
-        onClick={togglePopover}
-      >
+      <Button color='danger' size='lg' innerRef={targetRef} onClick={togglePopover}>
         Clicca per attivare/disattivare il popover
       </Button>
 
-      <Popover
-        placement='right'
-        target={targetRef}
-        isOpen={popoverOpen}
-        toggle={togglePopover}
-      >
+      <Popover placement='right' target={targetRef} isOpen={popoverOpen} toggle={togglePopover}>
         <PopoverHeader>Titolo del popover</PopoverHeader>
-        <PopoverBody>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
-          finibus augue.
-        </PopoverBody>
+        <PopoverBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.</PopoverBody>
       </Popover>
     </div>
   );
@@ -66,17 +53,12 @@ const ElementiDisabilitatiComponent = () => {
         isOpen={popoverOpen}
       >
         <PopoverHeader>Titolo del popover</PopoverHeader>
-        <PopoverBody>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
-          finibus augue.
-        </PopoverBody>
+        <PopoverBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.</PopoverBody>
       </Popover>
     </>
   );
 };
-export const _ElementiDisabilitati: Story = ElementiDisabilitatiComponent.bind(
-  {}
-);
+export const _ElementiDisabilitati: Story = ElementiDisabilitatiComponent.bind({});
 _ElementiDisabilitati.storyName = 'Elementi disabilitati';
 
 const PopoverPositionExample = () => {
@@ -112,9 +94,7 @@ const PopoverPositionExample = () => {
               setPopoverOpen1(!popoverOpen1);
             }}
           >
-            <PopoverBody>
-              Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-            </PopoverBody>
+            <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus</PopoverBody>
           </Popover>
         </span>
       </div>
@@ -138,9 +118,7 @@ const PopoverPositionExample = () => {
               setPopoverOpen2(!popoverOpen2);
             }}
           >
-            <PopoverBody>
-              Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-            </PopoverBody>
+            <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus</PopoverBody>
           </Popover>
         </span>
       </div>
@@ -164,9 +142,7 @@ const PopoverPositionExample = () => {
               setPopoverOpen3(!popoverOpen3);
             }}
           >
-            <PopoverBody>
-              Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-            </PopoverBody>
+            <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus</PopoverBody>
           </Popover>
         </span>
       </div>
@@ -190,9 +166,7 @@ const PopoverPositionExample = () => {
               setPopoverOpen4(!popoverOpen4);
             }}
           >
-            <PopoverBody>
-              Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-            </PopoverBody>
+            <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus</PopoverBody>
           </Popover>
         </span>
       </div>
@@ -215,19 +189,13 @@ const PopoverIconLink = () => {
         Popover con icona e link
       </Button>
 
-      <Popover
-        placement='right'
-        target={targetRef}
-        isOpen={popoverOpen}
-        toggle={togglePopover}
-      >
+      <Popover placement='right' target={targetRef} isOpen={popoverOpen} toggle={togglePopover}>
         <PopoverHeader>
           <Icon icon='it-help-circle' aria-hidden />
           Titolo con icona
         </PopoverHeader>
         <PopoverBody>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
-          finibus augue.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.
           <a href='#' className='popover-inner-link'>
             More info
             <Icon icon='it-arrow-right' aria-hidden />
@@ -253,18 +221,9 @@ const PopoverHover = () => {
         Apertura in Hover
       </Button>
 
-      <Popover
-        placement='right'
-        trigger='hover'
-        target={targetRef}
-        isOpen={popoverOpen}
-        toggle={togglePopover}
-      >
+      <Popover placement='right' trigger='hover' target={targetRef} isOpen={popoverOpen} toggle={togglePopover}>
         <PopoverHeader>Popover in Hover</PopoverHeader>
-        <PopoverBody>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
-          finibus augue.
-        </PopoverBody>
+        <PopoverBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.</PopoverBody>
       </Popover>
     </div>
   );
@@ -285,18 +244,9 @@ const PopoverFocus = () => {
         Popover richiudibile
       </Button>
 
-      <Popover
-        placement='right'
-        trigger='focus'
-        target={targetRef}
-        isOpen={popoverOpen}
-        toggle={togglePopover}
-      >
+      <Popover placement='right' trigger='focus' target={targetRef} isOpen={popoverOpen} toggle={togglePopover}>
         <PopoverHeader>Dismissible popover</PopoverHeader>
-        <PopoverBody>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
-          finibus augue.
-        </PopoverBody>
+        <PopoverBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.</PopoverBody>
       </Popover>
     </div>
   );
@@ -312,31 +262,16 @@ type EsempiInterattiviProps = {
 };
 
 // using Story or adding types to props breaks storybook
-export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({
-  disabled,
-  placement,
-  title,
-  text
-}) => {
+export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({ disabled, placement, title, text }) => {
   const [isOpen, toggle] = useState(false);
   const ref = useRef(null);
 
   return (
     <div style={{ padding: 250, textAlign: 'center' }}>
-      <Button
-        innerRef={ref}
-        color='primary'
-        disabled={disabled}
-        onClick={() => toggle(!isOpen)}
-      >
+      <Button innerRef={ref} color='primary' disabled={disabled} onClick={() => toggle(!isOpen)}>
         Popover {disabled ? 'Disabilitato' : ''}
       </Button>
-      <Popover
-        placement={placement}
-        target={ref}
-        toggle={() => toggle(!isOpen)}
-        isOpen={isOpen}
-      >
+      <Popover placement={placement} target={ref} toggle={() => toggle(!isOpen)} isOpen={isOpen}>
         <PopoverHeader>{title}</PopoverHeader>
         <PopoverBody>{text}</PopoverBody>
       </Popover>

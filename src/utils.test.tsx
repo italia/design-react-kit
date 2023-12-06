@@ -1,14 +1,7 @@
 jest.spyOn(console, 'error').mockImplementation();
 
 // eslint-disable-next-line import/first
-import {
-  flushMessageCache,
-  logError,
-  mapToCssModules,
-  notifyDeprecation,
-  omit,
-  pick
-} from './utils';
+import { flushMessageCache, logError, mapToCssModules, notifyDeprecation, omit, pick } from './utils';
 
 describe('Kit utils', () => {
   describe('mapToCssModules', () => {
@@ -22,21 +15,13 @@ describe('Kit utils', () => {
 
     it('should return passed classes without cssModules or without any matching mapping', () => {
       expect(mapToCssModules('myClass')).toBe('myClass');
-      expect(mapToCssModules('myClass myOtherClass')).toBe(
-        'myClass myOtherClass'
-      );
-      expect(mapToCssModules('myClass', { otherClass: 'myOtherClass' })).toBe(
-        'myClass'
-      );
+      expect(mapToCssModules('myClass myOtherClass')).toBe('myClass myOtherClass');
+      expect(mapToCssModules('myClass', { otherClass: 'myOtherClass' })).toBe('myClass');
     });
 
     it('should map passed classes with cssModules', () => {
-      expect(mapToCssModules('myClass', { myClass: 'otherClass' })).toBe(
-        'otherClass'
-      );
-      expect(
-        mapToCssModules('myClass myOtherClass', { myClass: 'otherClass' })
-      ).toBe('otherClass myOtherClass');
+      expect(mapToCssModules('myClass', { myClass: 'otherClass' })).toBe('otherClass');
+      expect(mapToCssModules('myClass myOtherClass', { myClass: 'otherClass' })).toBe('otherClass myOtherClass');
     });
 
     it('should make work the mapping also for empty string', () => {

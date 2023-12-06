@@ -1,9 +1,4 @@
-import React, {
-  ElementType,
-  FC,
-  ButtonHTMLAttributes,
-  AnchorHTMLAttributes
-} from 'react';
+import React, { ElementType, FC, ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 export type CookieBarButtonProps = {
@@ -12,17 +7,9 @@ export type CookieBarButtonProps = {
   /** Classi aggiuntive da usare per il componente CookieBarButton */
   className?: string;
   testId?: string;
-} & (
-  | ButtonHTMLAttributes<HTMLButtonElement>
-  | AnchorHTMLAttributes<HTMLAnchorElement>
-);
+} & (ButtonHTMLAttributes<HTMLButtonElement> | AnchorHTMLAttributes<HTMLAnchorElement>);
 
-export const CookieBarButton: FC<CookieBarButtonProps> = ({
-  tag = 'button',
-  className,
-  testId,
-  ...attributes
-}) => {
+export const CookieBarButton: FC<CookieBarButtonProps> = ({ tag = 'button', className, testId, ...attributes }) => {
   const Tag = tag;
   const activeClass = classNames(className, 'cookiebar-btn');
   return <Tag className={activeClass} {...attributes} data-testid={testId} />;

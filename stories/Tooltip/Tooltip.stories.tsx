@@ -110,28 +110,13 @@ export const EsempiConControllo = () => {
         <em>La città nuova, Alda Merini</em>
       </p>
 
-      <Tooltip
-        placement='top'
-        target={ref1}
-        isOpen={openOne}
-        toggle={() => toggleOne(!openOne)}
-      >
+      <Tooltip placement='top' target={ref1} isOpen={openOne} toggle={() => toggleOne(!openOne)}>
         Primo tooltip
       </Tooltip>
-      <Tooltip
-        placement='top'
-        target={ref2}
-        isOpen={openTwo}
-        toggle={() => toggleTwo(!openTwo)}
-      >
+      <Tooltip placement='top' target={ref2} isOpen={openTwo} toggle={() => toggleTwo(!openTwo)}>
         Secondo tooltip
       </Tooltip>
-      <Tooltip
-        placement='top'
-        target={ref3}
-        isOpen={openThree}
-        toggle={() => toggleThree(!openThree)}
-      >
+      <Tooltip placement='top' target={ref3} isOpen={openThree} toggle={() => toggleThree(!openThree)}>
         Terzo tooltip
       </Tooltip>
     </div>
@@ -187,10 +172,7 @@ type EsempiInterattiviProps = {
   text: string;
 };
 
-export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({
-  placement,
-  text
-}) => {
+export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({ placement, text }) => {
   const ref = useRef(null);
   return (
     <div style={{ padding: 200 }}>

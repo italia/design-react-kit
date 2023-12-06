@@ -11,13 +11,7 @@ export interface AvatarWrapperProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const AvatarWrapper: FC<AvatarWrapperProps> = ({
-  className,
-  tag = 'div',
-  extra,
-  testId,
-  ...attributes
-}) => {
+export const AvatarWrapper: FC<AvatarWrapperProps> = ({ className, tag = 'div', extra, testId, ...attributes }) => {
   const Tag = tag;
   const wrapperClass = classNames('avatar-wrapper', className, {
     [`avatar-extra-${extra}`]: extra

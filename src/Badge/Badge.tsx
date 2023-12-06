@@ -1,11 +1,4 @@
-import React, {
-  FC,
-  HTMLAttributes,
-  ElementType,
-  Ref,
-  ReactChild,
-  AnchorHTMLAttributes
-} from 'react';
+import React, { FC, HTMLAttributes, ElementType, Ref, ReactChild, AnchorHTMLAttributes } from 'react';
 import { Badge as BadgeReact } from 'reactstrap';
 import { CSSModule } from 'reactstrap/types/lib/utils';
 
@@ -36,13 +29,7 @@ export const Badge: FC<BadgeProps> = ({
   ...attributes
 }) => {
   return (
-    <BadgeReact
-      color={color}
-      pill={pill}
-      tag={tag}
-      {...attributes}
-      data-testid={testId}
-    >
+    <BadgeReact color={color} pill={pill} tag={tag} {...attributes} data-testid={testId}>
       {children}
     </BadgeReact>
   );

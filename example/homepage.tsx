@@ -24,24 +24,12 @@ import Footer from './Footer';
 export default ({ theme, townName, townTagLine, logo }) => {
   return (
     <>
-      <CompleteHeader
-        sticky
-        theme={theme}
-        townName={townName}
-        townTagLine={townTagLine}
-        page='homepage'
-        logo={logo}
-      />
+      <CompleteHeader sticky theme={theme} townName={townName} townTagLine={townTagLine} page='homepage' logo={logo} />
       <section id='head-section'>
         <Container>
           <Row>
             <Col lg={{ size: 6, offset: 1, order: 2 }}>
-              <img
-                src='https://picsum.photos/800/600'
-                title='img title'
-                alt='imagealt'
-                className='img-fluid'
-              />
+              <img src='https://picsum.photos/800/600' title='img title' alt='imagealt' className='img-fluid' />
             </Col>
             <Col lg={{ size: 5, order: 1 }}>
               <Card>
@@ -50,24 +38,18 @@ export default ({ theme, townName, townTagLine, logo }) => {
                     Notizie
                   </CardCategory>
                   <CardTitle tag='h4'>
-                    Parte l&#39;estate con oltre 300 eventi in centro e nei
-                    quartieri, tutti gli eventi previsti
+                    Parte l&#39;estate con oltre 300 eventi in centro e nei quartieri, tutti gli eventi previsti
                   </CardTitle>
                   <CardText>
-                    Inaugurazione lunedì 2 luglio con il concerto gratuito in
-                    piazza XX Settembre degli Sweet Soul Revue. Sul palco 20
-                    musicisti da tutto il mondo.
+                    Inaugurazione lunedì 2 luglio con il concerto gratuito in piazza XX Settembre degli Sweet Soul
+                    Revue. Sul palco 20 musicisti da tutto il mondo.
                   </CardText>
                   <div className='chip chip-simple chip-primary'>
                     <a href='#' className='chip-label'>
                       Estate in città
                     </a>
                   </div>
-                  <CardReadMore
-                    text='Tutte le novità'
-                    className='pb-3'
-                    href='#'
-                  />
+                  <CardReadMore text='Tutte le novità' className='pb-3' href='#' />
                 </CardBody>
               </Card>
             </Col>
@@ -79,29 +61,18 @@ export default ({ theme, townName, townTagLine, logo }) => {
           <Container>
             <Row>
               <div className='card-wrapper card-teaser-wrapper card-overlapping card-teaser-wrapper-equal card-teaser-block-3'>
-                <Card
-                  teaser
-                  noWrapper
-                  className='card-teaser-image card-flex no-after rounded shadow'
-                >
+                <Card teaser noWrapper className='card-teaser-image card-flex no-after rounded shadow'>
                   <div className='card-image-wrapper with-read-more pb-5'>
                     <CardBody className='p-4'>
                       <CardCategory>
                         <Icon icon='it-pa' />
                         Giunta e consiglio
                       </CardCategory>
-                      <CardTitle className='fw-semibold'>
-                        Mario Rossi
-                      </CardTitle>
-                      <CardText className='card-text'>
-                        Sindaco della città
-                      </CardText>
+                      <CardTitle className='fw-semibold'>Mario Rossi</CardTitle>
+                      <CardText className='card-text'>Sindaco della città</CardText>
                     </CardBody>
                     <div className='card-image card-image-rounded pb-5'>
-                      <CardImg
-                        src='https://picsum.photos/150/200'
-                        alt='Immagine di esempio'
-                      />
+                      <CardImg src='https://picsum.photos/150/200' alt='Immagine di esempio' />
                     </div>
                   </div>
                   <CardReadMore
@@ -117,20 +88,11 @@ export default ({ theme, townName, townTagLine, logo }) => {
                       <Icon icon='it-pa' />
                       Pagamenti
                     </CardCategory>
-                    <CardTitle className='fw-semibold'>
-                      TARI - Tassa dei rifiuti
-                    </CardTitle>
-                    <CardText>
-                      La TARI è in scadenza, controlla il tuo pagamento nella
-                      tua area personale.
-                    </CardText>
+                    <CardTitle className='fw-semibold'>TARI - Tassa dei rifiuti</CardTitle>
+                    <CardText>La TARI è in scadenza, controlla il tuo pagamento nella tua area personale.</CardText>
                   </CardBody>
 
-                  <CardReadMore
-                    iconName='it-arrow-right'
-                    text='Tutti i servizi'
-                    href='#'
-                  />
+                  <CardReadMore iconName='it-arrow-right' text='Tutti i servizi' href='#' />
                 </Card>
                 <Card noWrapper teaser className='no-after rounded shadow'>
                   <CardBody className='pb-5'>
@@ -138,13 +100,8 @@ export default ({ theme, townName, townTagLine, logo }) => {
                       <Icon icon='it-pa' />
                       Bandi
                     </CardCategory>
-                    <CardTitle className='fw-semibold'>
-                      Come partecipare ad un bando
-                    </CardTitle>
-                    <CardText>
-                      Tutte le informazioni e i documenti necessari per
-                      partecipare.
-                    </CardText>
+                    <CardTitle className='fw-semibold'>Come partecipare ad un bando</CardTitle>
+                    <CardText>Tutte le informazioni e i documenti necessari per partecipare.</CardText>
                   </CardBody>
 
                   <CardReadMore
@@ -158,41 +115,18 @@ export default ({ theme, townName, townTagLine, logo }) => {
             <Row className='row-title pt-5 pb-3'>
               <h2>Calendario</h2>
               <div>
-                <Button
-                  color='secondary'
-                  size='sm'
-                  className='mt-1'
-                  type='button'
-                >
+                <Button color='secondary' size='sm' className='mt-1' type='button'>
                   Tutto
                 </Button>
-                <Button
-                  color='secondary'
-                  size='sm'
-                  className='mt-1 btn-icon'
-                  outline
-                  type='button'
-                >
+                <Button color='secondary' size='sm' className='mt-1 btn-icon' outline type='button'>
                   <Icon icon='it-pa' />
                   <span>Consigli comunali</span>
                 </Button>
-                <Button
-                  color='secondary'
-                  size='sm'
-                  className='mt-1 btn-icon'
-                  outline
-                  type='button'
-                >
+                <Button color='secondary' size='sm' className='mt-1 btn-icon' outline type='button'>
                   <Icon icon='it-calendar' />
                   <span>Eventi</span>
                 </Button>
-                <Button
-                  color='secondary'
-                  size='sm'
-                  className='mt-1 btn-icon'
-                  outline
-                  type='button'
-                >
+                <Button color='secondary' size='sm' className='mt-1 btn-icon' outline type='button'>
                   <Icon icon='it-settings' />
                   <span>Scadenze</span>
                 </Button>
@@ -215,10 +149,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
                         width: '2664px'
                       }}
                     >
-                      <div
-                        className='owl-item active'
-                        style={{ width: '296px' }}
-                      >
+                      <div className='owl-item active' style={{ width: '296px' }}>
                         <div className='it-single-slide-wrapper'>
                           <Card className='card-bg'>
                             <CardBody>
@@ -229,14 +160,10 @@ export default ({ theme, townName, townTagLine, logo }) => {
                                 <a href='#'>Saldo TASI</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Concerto gratuito piazza XX Settembre
-                                </a>
+                                <a href='#'>Concerto gratuito piazza XX Settembre</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Convocazione Consiglio Comunale - Prima seduta
-                                </a>
+                                <a href='#'>Convocazione Consiglio Comunale - Prima seduta</a>
                               </CardText>
                               <CardText>
                                 <a href='#'>Seconda rata TARI</a>
@@ -245,10 +172,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
                           </Card>
                         </div>
                       </div>
-                      <div
-                        className='owl-item active'
-                        style={{ width: '296px' }}
-                      >
+                      <div className='owl-item active' style={{ width: '296px' }}>
                         <div className='it-single-slide-wrapper'>
                           <Card className='card-bg'>
                             <CardBody>
@@ -259,14 +183,10 @@ export default ({ theme, townName, townTagLine, logo }) => {
                                 <a href='#'>Saldo TASI</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Concerto gratuito piazza XX Settembre
-                                </a>
+                                <a href='#'>Concerto gratuito piazza XX Settembre</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Convocazione Consiglio Comunale - Prima seduta
-                                </a>
+                                <a href='#'>Convocazione Consiglio Comunale - Prima seduta</a>
                               </CardText>
                               <CardText>
                                 <a href='#'>Seconda rata TARI</a>
@@ -275,10 +195,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
                           </Card>
                         </div>
                       </div>
-                      <div
-                        className='owl-item active'
-                        style={{ width: '296px' }}
-                      >
+                      <div className='owl-item active' style={{ width: '296px' }}>
                         <div className='it-single-slide-wrapper'>
                           <Card className='card-bg'>
                             <CardBody>
@@ -289,14 +206,10 @@ export default ({ theme, townName, townTagLine, logo }) => {
                                 <a href='#'>Saldo TASI</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Concerto gratuito piazza XX Settembre
-                                </a>
+                                <a href='#'>Concerto gratuito piazza XX Settembre</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Convocazione Consiglio Comunale - Prima seduta
-                                </a>
+                                <a href='#'>Convocazione Consiglio Comunale - Prima seduta</a>
                               </CardText>
                               <CardText>
                                 <a href='#'>Seconda rata TARI</a>
@@ -305,10 +218,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
                           </Card>
                         </div>
                       </div>
-                      <div
-                        className='owl-item active'
-                        style={{ width: '296px' }}
-                      >
+                      <div className='owl-item active' style={{ width: '296px' }}>
                         <div className='it-single-slide-wrapper'>
                           <Card className='card-bg'>
                             <CardBody>
@@ -319,14 +229,10 @@ export default ({ theme, townName, townTagLine, logo }) => {
                                 <a href='#'>Saldo TASI</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Concerto gratuito piazza XX Settembre
-                                </a>
+                                <a href='#'>Concerto gratuito piazza XX Settembre</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Convocazione Consiglio Comunale - Prima seduta
-                                </a>
+                                <a href='#'>Convocazione Consiglio Comunale - Prima seduta</a>
                               </CardText>
                               <CardText>
                                 <a href='#'>Seconda rata TARI</a>
@@ -346,14 +252,10 @@ export default ({ theme, townName, townTagLine, logo }) => {
                                 <a href='#'>Saldo TASI</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Concerto gratuito piazza XX Settembre
-                                </a>
+                                <a href='#'>Concerto gratuito piazza XX Settembre</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Convocazione Consiglio Comunale - Prima seduta
-                                </a>
+                                <a href='#'>Convocazione Consiglio Comunale - Prima seduta</a>
                               </CardText>
                               <CardText>
                                 <a href='#'>Seconda rata TARI</a>
@@ -373,14 +275,10 @@ export default ({ theme, townName, townTagLine, logo }) => {
                                 <a href='#'>Saldo TASI</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Concerto gratuito piazza XX Settembre
-                                </a>
+                                <a href='#'>Concerto gratuito piazza XX Settembre</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Convocazione Consiglio Comunale - Prima seduta
-                                </a>
+                                <a href='#'>Convocazione Consiglio Comunale - Prima seduta</a>
                               </CardText>
                               <CardText>
                                 <a href='#'>Seconda rata TARI</a>
@@ -400,14 +298,10 @@ export default ({ theme, townName, townTagLine, logo }) => {
                                 <a href='#'>Saldo TASI</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Concerto gratuito piazza XX Settembre
-                                </a>
+                                <a href='#'>Concerto gratuito piazza XX Settembre</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Convocazione Consiglio Comunale - Prima seduta
-                                </a>
+                                <a href='#'>Convocazione Consiglio Comunale - Prima seduta</a>
                               </CardText>
                               <CardText>
                                 <a href='#'>Seconda rata TARI</a>
@@ -427,14 +321,10 @@ export default ({ theme, townName, townTagLine, logo }) => {
                                 <a href='#'>Saldo TASI</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Concerto gratuito piazza XX Settembre
-                                </a>
+                                <a href='#'>Concerto gratuito piazza XX Settembre</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Convocazione Consiglio Comunale - Prima seduta
-                                </a>
+                                <a href='#'>Convocazione Consiglio Comunale - Prima seduta</a>
                               </CardText>
                               <CardText>
                                 <a href='#'>Seconda rata TARI</a>
@@ -454,14 +344,10 @@ export default ({ theme, townName, townTagLine, logo }) => {
                                 <a href='#'>Saldo TASI</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Concerto gratuito piazza XX Settembre
-                                </a>
+                                <a href='#'>Concerto gratuito piazza XX Settembre</a>
                               </CardText>
                               <CardText>
-                                <a href='#'>
-                                  Convocazione Consiglio Comunale - Prima seduta
-                                </a>
+                                <a href='#'>Convocazione Consiglio Comunale - Prima seduta</a>
                               </CardText>
                               <CardText>
                                 <a href='#'>Seconda rata TARI</a>
@@ -477,10 +363,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
                     <button className='owl-next'></button>
                   </div>
                   <div className='owl-dots'>
-                    <button
-                      className='owl-dot active'
-                      aria-labelledby='owl-dot-0'
-                    >
+                    <button className='owl-dot active' aria-labelledby='owl-dot-0'>
                       <span></span>
                     </button>
                     <button className='owl-dot' aria-labelledby='owl-dot-1'>
@@ -511,38 +394,25 @@ export default ({ theme, townName, townTagLine, logo }) => {
                     </CardCategory>
                     <CardTitle tag='h3'>Cantieri in città</CardTitle>
                     <CardText>
-                      Informazioni sui principali cantieri stradali aperti o in
-                      programmazione un città che comportano modifiche alla
-                      circolazione stradale.
+                      Informazioni sui principali cantieri stradali aperti o in programmazione un città che comportano
+                      modifiche alla circolazione stradale.
                     </CardText>
                     <CardText>Visita il sito:</CardText>
                     <a href='#'>
-                      <Card
-                        teaser
-                        noWrapper
-                        className='card-bg-primary no-after mt-0'
-                      >
+                      <Card teaser noWrapper className='card-bg-primary no-after mt-0'>
                         <div className='avatar size-lg me-3'>
-                          <img
-                            src='https://picsum.photos/200/200'
-                            alt='Immagine'
-                          />
+                          <img src='https://picsum.photos/200/200' alt='Immagine' />
                         </div>
                         <CardBody>
                           <CardTitle tag='h5'>Mobilità in Comune</CardTitle>
                           <CardText className='text-sans-serif'>
-                            Il sito del turismo del Comune e della Città
-                            Metropolitana.
+                            Il sito del turismo del Comune e della Città Metropolitana.
                           </CardText>
                         </CardBody>
                       </Card>
                     </a>
                   </CardBody>
-                  <CardReadMore
-                    iconName='it-arrow-right'
-                    text='Esplora argomento'
-                    href='#'
-                  />
+                  <CardReadMore iconName='it-arrow-right' text='Esplora argomento' href='#' />
                 </Card>
                 <Card teaser noWrapper className='no-after rounded shadow'>
                   <CardBody className='pb-5'>
@@ -551,9 +421,8 @@ export default ({ theme, townName, townTagLine, logo }) => {
                     </CardCategory>
                     <CardTitle tag='h3'>Estate in città</CardTitle>
                     <CardText>
-                      Un ricco programma di appuntamenti: eventi culturali,
-                      ricreativi, concerti, mostre, cinema, ed altro ancora in
-                      diversi luoghi della città.
+                      Un ricco programma di appuntamenti: eventi culturali, ricreativi, concerti, mostre, cinema, ed
+                      altro ancora in diversi luoghi della città.
                     </CardText>
 
                     <LinkList className='mt-4'>
@@ -571,17 +440,11 @@ export default ({ theme, townName, townTagLine, logo }) => {
                       </LinkListItem>
                       <LinkListItem className='icon-left'>
                         <Icon color='primary' icon='it-calendar' />
-                        <span>
-                          Orari estivi metro e bus in vigore dal 9 giugno
-                        </span>
+                        <span>Orari estivi metro e bus in vigore dal 9 giugno</span>
                       </LinkListItem>
                     </LinkList>
                   </CardBody>
-                  <CardReadMore
-                    iconName='it-arrow-right'
-                    text="Esplora l'argomento"
-                    href='#'
-                  />
+                  <CardReadMore iconName='it-arrow-right' text="Esplora l'argomento" href='#' />
                 </Card>
                 <Card teaser noWrapper className='no-after rounded shadow'>
                   <CardBody className='pb-5'>
@@ -590,10 +453,8 @@ export default ({ theme, townName, townTagLine, logo }) => {
                     </CardCategory>
                     <CardTitle>Sport</CardTitle>
                     <CardText>
-                      Tutto quello che c&#39;è da sapere sulle strutture
-                      sportive comunali a disposizione del pubblico e delle
-                      Associazioni, le iniziative a sostegno dello sport e gli
-                      eventi che coinvolgono la città.
+                      Tutto quello che c&#39;è da sapere sulle strutture sportive comunali a disposizione del pubblico e
+                      delle Associazioni, le iniziative a sostegno dello sport e gli eventi che coinvolgono la città.
                     </CardText>
                     <LinkList className='mt-4'>
                       <LinkListItem active className='icon-left'>
@@ -602,25 +463,15 @@ export default ({ theme, townName, townTagLine, logo }) => {
                       </LinkListItem>
                       <LinkListItem className='icon-left'>
                         <Icon color='primary' icon='it-calendar' />
-                        <span>
-                          Da lunedì 3 settembre chiudono le vasche della piscina
-                          comunale
-                        </span>
+                        <span>Da lunedì 3 settembre chiudono le vasche della piscina comunale</span>
                       </LinkListItem>
                       <LinkListItem className='icon-left'>
                         <Icon color='primary' icon='it-calendar' />
-                        <span>
-                          Concessione contributi ad enti, associazioni, società
-                          sportive
-                        </span>
+                        <span>Concessione contributi ad enti, associazioni, società sportive</span>
                       </LinkListItem>
                     </LinkList>
                   </CardBody>
-                  <CardReadMore
-                    iconName='it-arrow-right'
-                    text="Esplora l'argomento"
-                    href='#'
-                  />
+                  <CardReadMore iconName='it-arrow-right' text="Esplora l'argomento" href='#' />
                 </Card>
               </div>
             </div>
@@ -628,9 +479,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
               <Col lg={{ size: 10, offset: 1 }} xl={{ size: 8, offset: 2 }}>
                 <Row className='d-lg-inline-flex'>
                   <Col lg={3}>
-                    <h6 className='text-uppercase text-center'>
-                      Altri argomenti
-                    </h6>
+                    <h6 className='text-uppercase text-center'>Altri argomenti</h6>
                   </Col>
                   <Col lg={9}>
                     <div className='chip chip-simple chip-primary'>
@@ -707,8 +556,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
                   <CardBody>
                     <CardTitle tag='h5'>Turismo</CardTitle>
                     <CardText className='text-sans-serif'>
-                      Il sito che offre informazioni sulle attività turistiche
-                      attive in città
+                      Il sito che offre informazioni sulle attività turistiche attive in città
                     </CardText>
                   </CardBody>
                 </Card>
@@ -719,8 +567,7 @@ export default ({ theme, townName, townTagLine, logo }) => {
                   <CardBody tag='h5'>
                     <CardTitle>Musei Civici</CardTitle>
                     <CardText className='text-sans-serif'>
-                      Tutte le informazioni sui musei e gli eventi culturali
-                      della città
+                      Tutte le informazioni sui musei e gli eventi culturali della città
                     </CardText>
                   </CardBody>
                 </Card>
@@ -747,15 +594,8 @@ export default ({ theme, townName, townTagLine, logo }) => {
                           </button>
                         </div>
                       </div>
-                      <input
-                        type='text'
-                        className='form-control'
-                        id='exampleInputText'
-                      />
-                      <label
-                        htmlFor='exampleInputText'
-                        style={{ width: 'auto' }}
-                      >
+                      <input type='text' className='form-control' id='exampleInputText' />
+                      <label htmlFor='exampleInputText' style={{ width: 'auto' }}>
                         Cerca servizi, informazioni, persone
                       </label>
                     </div>

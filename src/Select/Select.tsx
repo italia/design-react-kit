@@ -2,8 +2,7 @@ import React, { ChangeEvent, ReactElement, SelectHTMLAttributes } from 'react';
 import { Input } from 'reactstrap';
 import { InputType } from 'reactstrap/types/lib/Input';
 
-export interface SelectProps
-  extends Omit<SelectHTMLAttributes<HTMLSelectElement>, 'onChange'> {
+export interface SelectProps extends Omit<SelectHTMLAttributes<HTMLSelectElement>, 'onChange'> {
   /**
    * Se `true` determina la disabilitazione del campo
    */
@@ -24,13 +23,7 @@ export interface SelectProps
   onChange: (selectedValue: string) => void;
 }
 
-export const Select = ({
-  id,
-  disabled = false,
-  label,
-  children,
-  onChange
-}: SelectProps) => {
+export const Select = ({ id, disabled = false, label, children, onChange }: SelectProps) => {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     onChange(e.target.value);
   };

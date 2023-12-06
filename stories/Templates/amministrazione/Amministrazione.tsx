@@ -23,20 +23,10 @@ import CompleteHeader from '../shared/Header';
 import Footer from '../shared/Footer';
 import { PageProps } from '../shared/types';
 
-const Amministrazione: Story<PageProps> = ({
-  theme,
-  townName,
-  townTagLine
-}) => {
+const Amministrazione: Story<PageProps> = ({ theme, townName, townTagLine }) => {
   return (
     <>
-      <CompleteHeader
-        sticky
-        theme={theme}
-        townName={townName}
-        townTagLine={townTagLine}
-        page='Amministrazione'
-      />
+      <CompleteHeader sticky theme={theme} townName={townName} townTagLine={townTagLine} page='Amministrazione' />
       <main>
         <Container tag='section' id='briciole' className='px-4 my-4'>
           <Row>
@@ -44,9 +34,7 @@ const Amministrazione: Story<PageProps> = ({
               <nav aria-label='breadcrumb' className='breadcrumb-container'>
                 <Breadcrumb>
                   <BreadcrumbItem>
-                    <a href='/design-comuni-prototipi/esempi/bootstrap-italia/template-homepage.html'>
-                      Home
-                    </a>
+                    <a href='/design-comuni-prototipi/esempi/bootstrap-italia/template-homepage.html'>Home</a>
                     <span className='separator'>/</span>
                   </BreadcrumbItem>
                   <BreadcrumbItem aria-current='page' active>
@@ -62,17 +50,12 @@ const Amministrazione: Story<PageProps> = ({
             <Col lg={7} className='px-lg-4 py-lg-2'>
               <h1>Amministrazione</h1>
               <p>
-                Donec in consequat nunc. Duis semper fermentum lacus, ac
-                condimentum justo auctor a. Nam erat erat, porta vel pharetra
-                in, ullamcorper vel turpis.
+                Donec in consequat nunc. Duis semper fermentum lacus, ac condimentum justo auctor a. Nam erat erat,
+                porta vel pharetra in, ullamcorper vel turpis.
               </p>
               <div className='form-group mt-5'>
                 <form>
-                  <Input
-                    id='ricerca-amministrazione'
-                    type='search'
-                    label='Cerca contenuti in "Amministrazione"'
-                  />
+                  <Input id='ricerca-amministrazione' type='search' label='Cerca contenuti in "Amministrazione"' />
                   <span aria-hidden='true' className='autocomplete-icon'>
                     <Icon icon='it-search' size='sm' />
                   </span>
@@ -143,13 +126,8 @@ const Amministrazione: Story<PageProps> = ({
                 ].map(({ title, icon, flagIcon }, i) => (
                   <Col size='12' sm={6} lg={4} key={`${title}-${i}`}>
                     <article className='card-wrapper card-space'>
-                      <Card
-                        noWrapper
-                        className='card-bg card-big rounded shadow'
-                      >
-                        <div
-                          className={`flag-icon ${flagIcon ? '' : 'invisible'}`}
-                        ></div>
+                      <Card noWrapper className='card-bg card-big rounded shadow'>
+                        <div className={`flag-icon ${flagIcon ? '' : 'invisible'}`}></div>
                         <div className='etichetta'>
                           <Icon icon={icon} />
                           <span>{title}</span>
@@ -169,11 +147,7 @@ const Amministrazione: Story<PageProps> = ({
                               : `Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit, sed.`}
                           </CardText>
-                          <CardReadMore
-                            iconName='it-arrow-right'
-                            text='Leggi di più'
-                            href='#'
-                          />
+                          <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
                         </CardBody>
                       </Card>
                     </article>
@@ -209,9 +183,8 @@ const Amministrazione: Story<PageProps> = ({
                             <CardTitle tag='h5'>{label}</CardTitle>
                           </a>
                           <CardText>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
                           </CardText>
                         </CardBody>
                       </Card>

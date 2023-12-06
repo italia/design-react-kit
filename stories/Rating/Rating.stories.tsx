@@ -10,12 +10,7 @@ interface RatingProps {
 
 export const RatingBase: Story<RatingProps> = ({ value, legend }) => {
   return (
-    <Rating
-      value={value}
-      legend={legend}
-      inputs={['star1a', 'star2a', 'star3a', 'star4a', 'star5a']}
-      name='ratingA'
-    />
+    <Rating value={value} legend={legend} inputs={['star1a', 'star2a', 'star3a', 'star4a', 'star5a']} name='ratingA' />
   );
 };
 
@@ -26,8 +21,7 @@ export const RatingConLabel = () => {
       value={rating}
       legend={
         <>
-          <span className='visually-hidden'>Valutazione</span>{' '}
-          <span>{rating} stelle</span>{' '}
+          <span className='visually-hidden'>Valutazione</span> <span>{rating} stelle</span>{' '}
           <span className='visually-hidden'>su 5</span>
         </>
       }
