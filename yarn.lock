@@ -3995,7 +3995,7 @@
     "@types/react-dom" "*"
     "@types/react-transition-group" "*"
 
-"@types/react-transition-group@*", "@types/react-transition-group@^4.4.5":
+"@types/react-transition-group@*":
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.5.tgz#aae20dcf773c5aa275d5b9f7cdbca638abc5e416"
   integrity sha512-juKD/eiSM3/xZYzjuzH6ZwpP+/lejltmiS3QEzV/vmb/Q8+HfDmxu+Baga8UEMGBqV88Nbg4l2hY/K2DkyaLLA==
@@ -5563,10 +5563,10 @@ boolbase@^1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
 
-bootstrap-italia@2.7.8:
-  version "2.7.8"
-  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.7.8.tgz#06e76d2d3209e1c6f48931028f834413e56de721"
-  integrity sha512-njhCvgL42Xej3JKmr3Pr5B9e0wBSc27l5vEBMLaBiRXdpn71AQQPsTljGwm2q53npAHvkkBv8ulr0GUceSj2Xw==
+bootstrap-italia@2.7.9:
+  version "2.7.9"
+  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.7.9.tgz#43df8325840ad40b79f63b06af4edbf6fcb35318"
+  integrity sha512-CdUmj4mxzoEfbdbQzLq7+mc1qaIwMLApGDzET59mQCpvcG+xdzNRUC2kwPxVHfZOC9O9zd7J0agy80R0DaUPLA==
   dependencies:
     "@popperjs/core" "^2.11.2"
     "@splidejs/splide" "^3.6.12"

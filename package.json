@@ -65,7 +65,7 @@
     "chromatic": "npx chromatic"
   },
   "peerDependencies": {
-    "bootstrap-italia": "2.7.8",
+    "bootstrap-italia": "2.7.9",
     "react": ">=17.0.2"
   },
   "browserslist": [
