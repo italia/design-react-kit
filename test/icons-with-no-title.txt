@@ -2,6 +2,7 @@ it-close-circle.svg
 it-chart-line.svg
 it-team-digitale.svg
 it-arrow-down.svg
+it-android-square.svg
 it-mail.svg
 it-key.svg
 it-instagram.svg
@@ -95,6 +96,7 @@ it-reddit-square.svg
 it-flickr-square.svg
 it-more-actions.svg
 it-arrow-up-triangle.svg
+it-android.svg
 it-minus-circle.svg
 it-stackexchange-square.svg
 it-minus.svg
@@ -103,6 +105,7 @@ it-settings.svg
 it-map-marker-plus.svg
 it-more-items.svg
 it-file-xml.svg
+it-apple.svg
 it-twitter-square.svg
 it-reddit.svg
 it-delete.svg
@@ -120,6 +123,7 @@ it-help-circle.svg
 it-locked.svg
 it-chevron-left.svg
 it-telegram.svg
+it-apple-square.svg
 it-file-json.svg
 it-arrow-down-triangle.svg
 it-video.svg

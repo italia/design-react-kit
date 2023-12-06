@@ -1,4 +1,8 @@
 const iconList: Record<string, boolean> = {
+  'it-android-square': true,
+  'it-android': true,
+  'it-apple-square': true,
+  'it-apple': true,
   'it-arrow-down-circle': true,
   'it-arrow-down-triangle': true,
   'it-arrow-down': true,
@@ -168,6 +172,18 @@ export type IconName = keyof typeof iconList;
 
 export const loadIcon = (name: IconName) => {
   switch (name) {
+    case 'it-android-square': {
+      return import('./ItAndroidSquare');
+    }
+    case 'it-android': {
+      return import('./ItAndroid');
+    }
+    case 'it-apple-square': {
+      return import('./ItAppleSquare');
+    }
+    case 'it-apple': {
+      return import('./ItApple');
+    }
     case 'it-arrow-down-circle': {
       return import('./ItArrowDownCircle');
     }
