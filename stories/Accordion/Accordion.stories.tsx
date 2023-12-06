@@ -1,31 +1,8 @@
 import React, { useState } from 'react';
-import { Accordion, AccordionHeader, AccordionItem, AccordionBody, Button, Collapse, Card, CardBody } from '../../src';
+import { Accordion, AccordionHeader, AccordionItem, AccordionBody, Button, Card, CardBody } from '../../src';
 
 export default {
   title: 'Componenti/Accordion'
-};
-
-export const Esempi = () => {
-  const [collapse, setCollapse] = useState(false);
-
-  const toggle = () => {
-    setCollapse(!collapse);
-  };
-  return (
-    <div>
-      <Button color='primary' onClick={toggle} aria-expanded={collapse}>
-        Button con onClick
-      </Button>
-      <Collapse isOpen={collapse}>
-        <Card>
-          <CardBody>
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
-            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-          </CardBody>
-        </Card>
-      </Collapse>
-    </div>
-  );
 };
 
 export const GruppiDiElementiRichiudibili = () => {
