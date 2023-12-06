@@ -80,7 +80,7 @@ export const ValidazioneCompleta = () => {
             <Input
               id='completeValidation-date'
               type='date'
-              label='Timepicker'
+              label='Date picker'
               validationText='Questo campo è richiesto'
               invalid
             />
@@ -89,7 +89,7 @@ export const ValidazioneCompleta = () => {
             <Input
               id='completeValidation-time'
               type='time'
-              label='Datepicker'
+              label='Time picker'
               validationText='Questo campo è richiesto'
               invalid
             />
