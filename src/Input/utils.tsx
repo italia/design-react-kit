@@ -64,6 +64,7 @@ type InputClassesParams = ValidationProps &
 
 export function getClasses(
   className: string | undefined,
+  type: string,
   {
     isFocused,
     valid,
@@ -126,7 +127,7 @@ export function getClasses(
 
   const activeClass = mapToCssModules(
     classNames({
-      active: isFocused || placeholder || value
+      active: isFocused || placeholder || value || ['date', 'time'].includes(type)
     }),
     cssModule
   );

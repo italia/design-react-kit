@@ -187,6 +187,7 @@ export const Input = ({
   // Styling
   const { activeClass, validationTextClass, inputClasses, wrapperClass } = getClasses(
     className,
+    type,
     {
       valid,
       invalid,
