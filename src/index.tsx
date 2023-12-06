@@ -128,7 +128,7 @@ export { ThumbNav } from './ThumbNav/ThumbNav';
 export { ThumbNavItem } from './ThumbNav/ThumbNavItem';
 export { Chip } from './Chips/Chip';
 export { ChipLabel } from './Chips/ChipLabel';
-export { FontLoader, useFontLoader } from './FontLoader/FontLoader';
+export { FontLoader } from './FontLoader/FontLoader';
 export { Dimmer } from './Dimmer/Dimmer';
 export { DimmerButtons } from './Dimmer/DimmerButtons';
 export { Timeline } from './Timeline/TimelineWrapper';

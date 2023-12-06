@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { loadFonts } from 'bootstrap-italia'
 
 export interface FontLoaderProps {
   /**
@@ -8,27 +8,9 @@ export interface FontLoaderProps {
   fonts?: string[];
 }
 
-const defaultFonts = [
-  'Titillium Web:300,400,600,700:latin-ext',
-  'Lora:400,700:latin-ext',
-  'Roboto Mono:400,700:latin-ext'
-];
 
-export function useFontLoader({ fonts }: FontLoaderProps) {
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const WebFont = require('webfontloader');
-      WebFont.load({
-        custom: {
-          families: [...defaultFonts, ...(fonts || [])]
-        }
-      });
-    }
-  }, [fonts]);
-}
 
-export const FontLoader = (props: FontLoaderProps) => {
-  useFontLoader(props);
-
+export const FontLoader = () => {
+  loadFonts('/bootstrap-italia/dist/fonts')
   return null;
 };
