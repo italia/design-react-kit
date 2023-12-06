@@ -9,8 +9,10 @@ export interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElemen
   label?: string | ReactNode;
   /** Testo di esempio da utilizzare per il campo. */
   placeholder?: string;
-  /** Testo di aiuto per l'elemento del moduleo form. Richiede che il componente `TextArea` abbia la prop `id` impostata. */
+  /** Testo di validazione per l'elemento del moduleo */
   validationText?: string;
+  /** Testo di aiuto per l'elemento del moduleo form. Richiede che il componente `TextArea` abbia la prop `id` impostata. */
+  infoText?: string;
   /** Il valore nel campo TextArea. */
   value?: string | number;
   /** Da utilizzare per impedire la modifica del valore contenuto. */
@@ -38,6 +40,7 @@ export const TextArea = ({
   innerRef,
   label,
   validationText,
+  infoText,
   placeholder,
   normalized,
   value,
@@ -93,6 +96,7 @@ export const TextArea = ({
   const containerProps = {
     id,
     infoId,
+    infoText,
     activeClass,
     label,
     validationTextClass,

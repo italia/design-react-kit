@@ -12,6 +12,7 @@ export const ValidazioneBase = () => (
     <Input label='Invalid Input' invalid />
     <Input value='Mario' label='First name' validationText='Validated!' valid />
     <Input label='Username' validationText='Please choose a username.' invalid />
+    <Input label='Username' infoText='Username of your account' validationText='Please choose a username.' invalid />
   </div>
 );
 

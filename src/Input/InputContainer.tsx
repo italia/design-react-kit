@@ -8,12 +8,14 @@ export interface InputContainerProps extends HTMLAttributes<HTMLElement> {
   validationText: string | undefined;
   id: string | undefined;
   infoId: string | undefined;
+  infoText: string | undefined;
   testId?: string;
 }
 
 export const InputContainer: FC<InputContainerProps> = ({
   id,
-  // infoId,
+  infoId,
+  infoText,
   testId,
   activeClass,
   label,
@@ -28,10 +30,12 @@ export const InputContainer: FC<InputContainerProps> = ({
       <label htmlFor={id} className={activeClass}>
         {label}
       </label>
+      {infoText && (
+        <small id={infoId} className='form-text'>
+          {infoText}
+        </small>
+      )}
       <div className={validationTextClass}>{validationText}</div>
-      {/* <small id={infoId} className={validationTextClass}>
-        {validationText}
-      </small> */}
     </div>
   );
 };
