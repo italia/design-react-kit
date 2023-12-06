@@ -76,6 +76,26 @@ export const ValidazioneCompleta = () => {
           </FormGroup>
         </Row>
         <Row>
+          <FormGroup className='col-md-6 mb-6'>
+            <Input
+              id='completeValidation-date'
+              type='date'
+              label='Timepicker'
+              validationText='Questo campo è richiesto'
+              invalid
+            />
+          </FormGroup>
+          <FormGroup className='col-md-6 mb-6'>
+            <Input
+              id='completeValidation-time'
+              type='time'
+              label='Datepicker'
+              validationText='Questo campo è richiesto'
+              invalid
+            />
+          </FormGroup>
+        </Row>
+        <Row>
           <FormGroup className='col-md-6 mb-3'>
             <Input
               id='completeValidation-city'

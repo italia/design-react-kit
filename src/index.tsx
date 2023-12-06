@@ -135,7 +135,6 @@ export { ChipLabel } from './Chips/ChipLabel';
 export { FontLoader, useFontLoader } from './FontLoader/FontLoader';
 export { Dimmer } from './Dimmer/Dimmer';
 export { DimmerButtons } from './Dimmer/DimmerButtons';
-export { TimeInput } from './Input/TimeInput';
 export { Timeline } from './Timeline/TimelineWrapper';
 export { TimelinePin } from './Timeline/TimelinePin';
 export { Select } from './Select/Select';
@@ -252,7 +251,6 @@ export type { StepperContentProps } from './Stepper/StepperContent';
 export type { SectionProps } from './Section/Section';
 export type { SelectProps } from './Select/Select';
 export type { NotificationId, NotificationProps, NotificationManagerProps, NotificationOptions } from './Notification';
-export type { TimeInputProps } from './Input/TimeInput';
 export type { ToolbarProps } from './Toolbar/Toolbar';
 export type { ToolbarItemProps, ToolbarItemBadge } from './Toolbar/ToolbarItem';
 
