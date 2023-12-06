@@ -32,19 +32,25 @@ export const Esempi = () => (
 
 export const Contatore = () => (
   <Button color='primary'>
-    Notifiche <Badge color='light'>4</Badge>
+    Notifiche{' '}
+    <Badge color='light' className='text-secondary'>
+      4
+    </Badge>
   </Button>
 );
 
 export const ContatoreTestoAggiuntivo = () => (
   <Button color='primary'>
-    Notifiche <Badge color='light'>9</Badge>
+    Notifiche{' '}
+    <Badge color='light' className='text-primary'>
+      9
+    </Badge>
     <span className='visually-hidden'>Messaggi non letti</span>
   </Button>
 );
 
 export const Variazioni = () => (
-  <div>
+  <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
     <Badge color='primary'>Primary</Badge>
     <Badge color='secondary'>Secondary</Badge>
     <Badge color='success'>Success</Badge>
@@ -54,7 +60,7 @@ export const Variazioni = () => (
 );
 
 export const BordiArrotondati = () => (
-  <div>
+  <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
     <Badge color='primary' pill>
       Primary
     </Badge>
@@ -74,7 +80,7 @@ export const BordiArrotondati = () => (
 );
 
 export const ConLink = () => (
-  <div>
+  <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
     <Badge href='#' color='primary' tag='a'>
       Primary
     </Badge>
