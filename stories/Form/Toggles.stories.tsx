@@ -16,11 +16,7 @@ export const _Toggles = () => {
       </Col>
       <Col sm='6'>
         <FormGroup check className='m-3'>
-          <Toggle
-            label={<span>Label dell&apos;interruttore 2</span>}
-            defaultChecked
-            disabled={false}
-          />
+          <Toggle label={<span>Label dell&apos;interruttore 2</span>} defaultChecked disabled={false} />
         </FormGroup>
       </Col>
     </Row>
@@ -37,11 +33,7 @@ export const _TogglesDisabilitate = () => {
       </Col>
       <Col sm='6'>
         <FormGroup check className='m-3'>
-          <Toggle
-            label={<span>Label dell&apos;interruttore 2</span>}
-            defaultChecked
-            disabled={true}
-          />
+          <Toggle label={<span>Label dell&apos;interruttore 2</span>} defaultChecked disabled={true} />
         </FormGroup>
       </Col>
     </Row>
@@ -69,22 +61,19 @@ export const GruppiDiToggles = () => {
           <FormGroup check className='form-check-group'>
             <Toggle defaultChecked label='Toggle acceso' />
             <FormText color='muted'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              molestie libero
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
             </FormText>
           </FormGroup>
           <FormGroup check className='form-check-group'>
             <Toggle label='Toggle spento' />
             <FormText color='muted'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              molestie libero
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
             </FormText>
           </FormGroup>
           <FormGroup check className='form-check-group'>
             <Toggle disabled label='Toggle disabilitato' />
             <FormText color='muted'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              molestie libero
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
             </FormText>
           </FormGroup>
         </Form>

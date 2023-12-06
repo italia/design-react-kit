@@ -20,10 +20,7 @@ export const Abbrevazioni = () => (
 
 export const AllineamentoADestra = () => (
   <blockquote className='blockquote text-end'>
-    <p className='mb-0'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-      erat a ante.
-    </p>
+    <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
     <footer className='blockquote-footer'>
       Someone famous in <cite title='Source Title'>Source Title</cite>
     </footer>
@@ -32,10 +29,7 @@ export const AllineamentoADestra = () => (
 
 export const AllineamentoCentrato = () => (
   <blockquote className='blockquote text-center'>
-    <p className='mb-0'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-      erat a ante.
-    </p>
+    <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
     <footer className='blockquote-footer'>
       Someone famous in <cite title='Source Title'>Source Title</cite>
     </footer>
@@ -44,19 +38,13 @@ export const AllineamentoCentrato = () => (
 
 export const Citazioni = () => (
   <blockquote className='blockquote'>
-    <p className='mb-0'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-      erat a ante.
-    </p>
+    <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
   </blockquote>
 );
 
 export const CitazioneFonte = () => (
   <blockquote className='blockquote'>
-    <p className='mb-0'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-      erat a ante.
-    </p>
+    <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
     <footer className='blockquote-footer'>
       Someone famous in <cite title='Source Title'>Source Title</cite>
     </footer>
@@ -130,9 +118,7 @@ export const Intestazioni = () => (
   </>
 );
 
-export const IntestazioneTipo = () => (
-  <h1 className='display-1'>Intestazione di tipo h1</h1>
-);
+export const IntestazioneTipo = () => <h1 className='display-1'>Intestazione di tipo h1</h1>;
 
 export const IntestazioneSecondario = () => (
   <h4>
@@ -179,37 +165,27 @@ export const Liste = () => (
 export const ListeAllineate = () => (
   <dl className='row'>
     <dt className='col-sm-3'>Description lists</dt>
-    <dd className='col-sm-9'>
-      A description list is perfect for defining terms.
-    </dd>
+    <dd className='col-sm-9'>A description list is perfect for defining terms.</dd>
 
     <dt className='col-sm-3'>Euismod</dt>
     <dd className='col-sm-9'>
-      <p>
-        Vestibulum id ligula porta felis euismod semper eget lacinia odio sem
-        nec elit.
-      </p>
+      <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
       <p>Donec id elit non mi porta gravida at eget metus.</p>
     </dd>
 
     <dt className='col-sm-3'>Malesuada porta</dt>
-    <dd className='col-sm-9'>
-      Etiam porta sem malesuada magna mollis euismod.
-    </dd>
+    <dd className='col-sm-9'>Etiam porta sem malesuada magna mollis euismod.</dd>
 
     <dt className='col-sm-3 text-truncate'>Truncated term is truncated</dt>
     <dd className='col-sm-9'>
-      Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-      ut fermentum massa justo sit amet risus.
+      Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
     </dd>
 
     <dt className='col-sm-3'>Nesting</dt>
     <dd className='col-sm-9'>
       <dl className='row'>
         <dt className='col-sm-4'>Nested definition list</dt>
-        <dd className='col-sm-8'>
-          Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.
-        </dd>
+        <dd className='col-sm-8'>Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
       </dl>
     </dd>
   </dl>
@@ -234,23 +210,19 @@ export const Lora = () => (
 export const Paragrafo = () => (
   <>
     <p>
-      Ullamco laboris nisi ut aliquid ex ea commodi consequat. Curabitur blandit
-      tempus ardua ridiculus sed magna. Curabitur est gravida et libero vitae
-      dictum. Phasellus laoreet lorem vel dolor tempus vehicula. Magna pars
+      Ullamco laboris nisi ut aliquid ex ea commodi consequat. Curabitur blandit tempus ardua ridiculus sed magna.
+      Curabitur est gravida et libero vitae dictum. Phasellus laoreet lorem vel dolor tempus vehicula. Magna pars
       studiorum, prodita quaerimus.
     </p>
     <p>
-      Ullamco laboris nisi ut aliquid ex ea commodi consequat. Curabitur blandit
-      tempus ardua ridiculus sed magna. Curabitur est gravida et libero vitae
-      dictum. Phasellus laoreet lorem vel dolor tempus vehicula. Magna pars
+      Ullamco laboris nisi ut aliquid ex ea commodi consequat. Curabitur blandit tempus ardua ridiculus sed magna.
+      Curabitur est gravida et libero vitae dictum. Phasellus laoreet lorem vel dolor tempus vehicula. Magna pars
       studiorum, prodita quaerimus.
     </p>
   </>
 );
 
-export const ParagrafoEvidenza = () => (
-  <p className='lead'>Paragrafo in evidenza</p>
-);
+export const ParagrafoEvidenza = () => <p className='lead'>Paragrafo in evidenza</p>;
 
 export const ParagrafiPersonalizzati = () => (
   <>

@@ -25,11 +25,7 @@ type EsempiInterattiviProps = {
   color: string;
   placement: string;
 };
-const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({
-  variation,
-  color,
-  placement
-}) => {
+const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({ variation, color, placement }) => {
   return (
     <Navbar
       light
@@ -179,11 +175,7 @@ export const ConMegamenu = () => {
                   <LinkListItem href='#'>Link list Item 1</LinkListItem>
                   <LinkListItem href='#'>Link list Item 2</LinkListItem>
                   <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                  <LinkListItem
-                    wrapperClassName='it-more'
-                    className='medium'
-                    href='#'
-                  >
+                  <LinkListItem wrapperClassName='it-more' className='medium' href='#'>
                     View More
                     <Icon color='primary' icon='it-arrow-right' size='sm' />
                   </LinkListItem>
@@ -195,11 +187,7 @@ export const ConMegamenu = () => {
                   <LinkListItem href='#'>Link list Item 1</LinkListItem>
                   <LinkListItem href='#'>Link list Item 2</LinkListItem>
                   <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                  <LinkListItem
-                    wrapperClassName='it-more'
-                    className='medium'
-                    href='#'
-                  >
+                  <LinkListItem wrapperClassName='it-more' className='medium' href='#'>
                     View More
                     <Icon color='primary' icon='it-arrow-right' size='sm' />
                   </LinkListItem>
@@ -211,11 +199,7 @@ export const ConMegamenu = () => {
                   <LinkListItem href='#'>Link list Item 1</LinkListItem>
                   <LinkListItem href='#'>Link list Item 2</LinkListItem>
                   <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                  <LinkListItem
-                    wrapperClassName='it-more'
-                    className='medium'
-                    href='#'
-                  >
+                  <LinkListItem wrapperClassName='it-more' className='medium' href='#'>
                     View More
                     <Icon color='primary' icon='it-arrow-right' size='sm' />
                   </LinkListItem>
@@ -343,10 +327,7 @@ export const InlineMenu = () => {
   const expanded = {
     'aria-expanded': true
   };
-  const toggle = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    id: string | number
-  ) => {
+  const toggle = (e: React.MouseEvent<HTMLAnchorElement>, id: string | number) => {
     e.preventDefault();
     switch (id) {
       case 1:

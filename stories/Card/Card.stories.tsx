@@ -30,12 +30,11 @@ export const SimpleCard: Story = () => (
       <Card>
         <CardBody>
           <CardTitle tag='h5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor…
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
           </CardTitle>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
         </CardBody>
       </Card>
@@ -53,12 +52,11 @@ export const SimpleCardMultipleColumns: Story = () => (
         <Card>
           <CardBody>
             <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor…
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
             </CardTitle>
             <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
             </CardText>
           </CardBody>
         </Card>
@@ -80,8 +78,8 @@ export const SimpleArticle: Story = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit…
           </CardTitle>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
           <CardSignature>di Federico De Paolis</CardSignature>
           <CardReadMore text='Leggi di più' iconName='it-arrow-right' />
@@ -107,8 +105,8 @@ export const SimpleArticleWithIcon: Story = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit…
           </CardTitle>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
           <CardSignature>di Federico De Paolis</CardSignature>
           <CardReadMore text='Leggi di più' iconName='it-arrow-right' />
@@ -135,13 +133,12 @@ export const CardIcon: Story = () => (
           </CardCategory>
           <a href='#'>
             <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor…
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
             </CardTitle>
           </a>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
         </CardBody>
       </Card>
@@ -163,13 +160,12 @@ export const CardIconAdvanced: Story = () => (
           </CardCategory>
           <a href='#'>
             <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor…
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
             </CardTitle>
           </a>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
           <a className='simple-link' href='#'>
             Link
@@ -190,18 +186,13 @@ export const CardWithShading: Story = () => (
       <Card spacing className='card-bg'>
         <CardBody>
           <CardTitle tag='h5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor…
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
           </CardTitle>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
-          <CardReadMore
-            iconName='it-arrow-right'
-            text='Leggi di più'
-            href='#'
-          />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
         </CardBody>
       </Card>
       {/* end card */}
@@ -221,18 +212,13 @@ export const BigCard: Story = () => (
             <Icon icon='it-card' />
           </div>
           <CardTitle tag='h5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor…
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
           </CardTitle>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
-          <CardReadMore
-            iconName='it-arrow-right'
-            text='Leggi di più'
-            href='#'
-          />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
         </CardBody>
       </Card>
       {/* end card */}
@@ -257,18 +243,13 @@ export const BigCardExampleTwo: Story = () => (
             <Icon icon='it-card' />
           </div>
           <CardTitle tag='h5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor…
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
           </CardTitle>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
-          <CardReadMore
-            iconName='it-arrow-right'
-            text='Leggi di più'
-            href='#'
-          />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
         </CardBody>
       </Card>
       {/* end card */}
@@ -288,12 +269,11 @@ export const BigCardWithTag: Story = () => (
             <CardTag href='#'>Tag</CardTag>
           </CardTagsHeader>
           <CardTitle tag='h5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor…
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
           </CardTitle>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
           <div className='it-card-footer'>
             <CardSignature>di Federico De Paolis</CardSignature>
@@ -332,14 +312,9 @@ export const CardWithImageAndDate: Story = () => (
         </div>
         <CardBody>
           <CardTitle tag='h5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor…
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
           </CardTitle>
-          <CardReadMore
-            iconName='it-arrow-right'
-            text='Leggi di più'
-            href='#'
-          />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
         </CardBody>
       </Card>
       {/* end card */}
@@ -366,14 +341,9 @@ export const CardsWithImages: Story = () => (
         </div>
         <CardBody>
           <CardTitle tag='h5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor…
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
           </CardTitle>
-          <CardReadMore
-            iconName='it-arrow-right'
-            text='Leggi di più'
-            href='#'
-          />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
         </CardBody>
       </Card>
       {/* end card */}
@@ -394,14 +364,9 @@ export const CardsWithImages: Story = () => (
         </div>
         <CardBody>
           <CardTitle tag='h5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor…
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
           </CardTitle>
-          <CardReadMore
-            iconName='it-arrow-right'
-            text='Leggi di più'
-            href='#'
-          />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
         </CardBody>
       </Card>
       {/* end card */}
@@ -426,14 +391,9 @@ export const CardsWithImages: Story = () => (
         </div>
         <CardBody>
           <CardTitle tag='h5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor…
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
           </CardTitle>
-          <CardReadMore
-            iconName='it-arrow-right'
-            text='Leggi di più'
-            href='#'
-          />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
         </CardBody>
       </Card>
       {/* end card */}
@@ -458,14 +418,9 @@ export const CardsWithImages: Story = () => (
         </div>
         <CardBody>
           <CardTitle tag='h5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor…
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
           </CardTitle>
-          <CardReadMore
-            iconName='it-arrow-right'
-            text='Leggi di più'
-            href='#'
-          />
+          <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
         </CardBody>
       </Card>
       {/* end card */}
@@ -492,8 +447,7 @@ export const SpecialCard: Story = () => (
         <CardBody>
           <CardTagsHeader date='10/10/2018' />
           <CardTitle tag='h5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor…
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
           </CardTitle>
         </CardBody>
       </Card>
@@ -506,13 +460,10 @@ SpecialCard.storyName = 'Card speciali';
 export const SimpleCardTeaser: Story = () => (
   <Card teaser>
     <CardBody>
-      <CardTitle tag='h5'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor…
-      </CardTitle>
+      <CardTitle tag='h5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</CardTitle>
       <CardText>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
       </CardText>
     </CardBody>
   </Card>
@@ -524,25 +475,19 @@ export const CardTeaserMultiple: Story = () => (
   <div className='card-wrapper card-teaser-wrapper'>
     <Card teaser noWrapper>
       <CardBody>
-        <CardTitle tag='h5'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor…
-        </CardTitle>
+        <CardTitle tag='h5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</CardTitle>
         <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
         </CardText>
       </CardBody>
     </Card>
     <Card teaser noWrapper className='rounded shadow'>
       <CardBody>
-        <CardTitle>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor…
-        </CardTitle>
+        <CardTitle>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</CardTitle>
         <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
         </CardText>
       </CardBody>
     </Card>
@@ -553,8 +498,8 @@ export const CardTeaserMultiple: Story = () => (
           <CardTitle tag='h5'>Lorem ipsum dolor sit amet</CardTitle>
         </a>
         <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
         </CardText>
       </CardBody>
     </Card>
@@ -576,12 +521,11 @@ export const CardWithFooterComponent: Story = () => (
             <span className='data'>10/10/2018</span>
           </div>
           <CardTitle tag='h5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor…
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
           </CardTitle>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
           <CardFooterCTA>
             <CardSignature>di Federico De Paolis</CardSignature>
@@ -603,13 +547,7 @@ type EsempiInterattiviProps = {
   link: string;
   text: string;
 };
-export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({
-  spacing,
-  teaser,
-  link,
-  title,
-  text
-}) => {
+export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({ spacing, teaser, link, title, text }) => {
   return (
     <Row>
       <Col size={12} lg={6}>
@@ -618,12 +556,7 @@ export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({
           <CardBody>
             <CardTitle tag='h5'>{title}</CardTitle>
             <CardText>{text}</CardText>
-            <CardReadMore
-              iconName='it-arrow-right'
-              text='Leggi di più'
-              tag={'a'}
-              href={link}
-            />
+            <CardReadMore iconName='it-arrow-right' text='Leggi di più' tag={'a'} href={link} />
           </CardBody>
         </Card>
         {/* end card */}

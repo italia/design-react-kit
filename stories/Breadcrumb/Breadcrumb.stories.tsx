@@ -39,35 +39,17 @@ export const ConIcone = () => (
   <section>
     <Breadcrumb>
       <BreadcrumbItem>
-        <Icon
-          className='align-top me-1'
-          icon='it-link'
-          color='secondary'
-          aria-hidden
-          size='sm'
-        />
+        <Icon className='align-top me-1' icon='it-link' color='secondary' aria-hidden size='sm' />
         <a href='#'>Home</a>
         <span className='separator'>/</span>
       </BreadcrumbItem>
       <BreadcrumbItem>
-        <Icon
-          className='align-top me-1'
-          icon='it-link'
-          color='secondary'
-          aria-hidden
-          size='sm'
-        />
+        <Icon className='align-top me-1' icon='it-link' color='secondary' aria-hidden size='sm' />
         <a href='#'>Subsection</a>
         <span className='separator'>/</span>
       </BreadcrumbItem>
       <BreadcrumbItem active>
-        <Icon
-          className='align-top me-1'
-          icon='it-link'
-          color='secondary'
-          aria-hidden
-          size='sm'
-        />
+        <Icon className='align-top me-1' icon='it-link' color='secondary' aria-hidden size='sm' />
         Current section
       </BreadcrumbItem>
     </Breadcrumb>
@@ -92,35 +74,17 @@ export const SuSfondoScuro = () => (
 
     <Breadcrumb dark>
       <BreadcrumbItem>
-        <Icon
-          className='align-top me-1'
-          icon='it-link'
-          color='white'
-          aria-hidden
-          size='sm'
-        />
+        <Icon className='align-top me-1' icon='it-link' color='white' aria-hidden size='sm' />
         <a href='#'>Home</a>
         <span className='separator'>/</span>
       </BreadcrumbItem>
       <BreadcrumbItem>
-        <Icon
-          className='align-top me-1'
-          icon='it-link'
-          color='white'
-          aria-hidden
-          size='sm'
-        />
+        <Icon className='align-top me-1' icon='it-link' color='white' aria-hidden size='sm' />
         <a href='#'>Subsection</a>
         <span className='separator'>/</span>
       </BreadcrumbItem>
       <BreadcrumbItem active>
-        <Icon
-          className='align-top me-1'
-          icon='it-link'
-          color='white'
-          aria-hidden
-          size='sm'
-        />
+        <Icon className='align-top me-1' icon='it-link' color='white' aria-hidden size='sm' />
         Current section
       </BreadcrumbItem>
     </Breadcrumb>

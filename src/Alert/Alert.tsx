@@ -1,10 +1,4 @@
-import React, {
-  FC,
-  HTMLAttributes,
-  MouseEventHandler,
-  ElementType,
-  Ref
-} from 'react';
+import React, { FC, HTMLAttributes, MouseEventHandler, ElementType, Ref } from 'react';
 import { Alert as InnerAlert, FadeProps } from 'reactstrap';
 import { CSSModule } from 'reactstrap/types/lib/utils';
 

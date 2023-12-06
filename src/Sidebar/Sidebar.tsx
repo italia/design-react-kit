@@ -38,13 +38,7 @@ export const Sidebar: FC<SidebarProps> = ({
     'linklist-secondary': secondary
   });
   if (secondary) {
-    return (
-      <Tag
-        {...attributes}
-        className={wrapperClassesLinkList}
-        data-testid={testId}
-      />
-    );
+    return <Tag {...attributes} className={wrapperClassesLinkList} data-testid={testId} />;
   }
   return (
     <Tag className={wrapperClasses} data-testid={testId}>

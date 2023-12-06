@@ -3,9 +3,9 @@ import React, { FC, HTMLAttributes, ReactNode } from 'react';
 export interface InputContainerProps extends HTMLAttributes<HTMLElement> {
   wrapperClass: string;
   activeClass: string;
-  infoTextClass: string;
+  validationTextClass: string;
   label: string | ReactNode | undefined;
-  infoText: string | undefined;
+  validationText: string | undefined;
   id: string | undefined;
   infoId: string | undefined;
   testId?: string;
@@ -13,12 +13,12 @@ export interface InputContainerProps extends HTMLAttributes<HTMLElement> {
 
 export const InputContainer: FC<InputContainerProps> = ({
   id,
-  infoId,
+  // infoId,
   testId,
   activeClass,
   label,
-  infoTextClass,
-  infoText,
+  validationTextClass,
+  validationText,
   wrapperClass,
   children
 }) => {
@@ -28,9 +28,10 @@ export const InputContainer: FC<InputContainerProps> = ({
       <label htmlFor={id} className={activeClass}>
         {label}
       </label>
-      <small id={infoId} className={infoTextClass}>
-        {infoText}
-      </small>
+      <div className={validationTextClass}>{validationText}</div>
+      {/* <small id={infoId} className={validationTextClass}>
+        {validationText}
+      </small> */}
     </div>
   );
 };

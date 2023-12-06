@@ -61,14 +61,12 @@ export const _ContenutoAggiuntivo: Story<AlertProps> = () => (
   <Alert>
     <h4 className='alert-heading'>Avviso di successo!</h4>
     <p>
-      Stai leggendo questo importante messaggio di avviso di successo. Questo
-      testo di esempio sarà più a lungo in modo da poter vedere come funzioni la
-      spaziatura all&#39;interno di un avviso con questo tipo di contenuto.
+      Stai leggendo questo importante messaggio di avviso di successo. Questo testo di esempio sarà più a lungo in modo
+      da poter vedere come funzioni la spaziatura all&#39;interno di un avviso con questo tipo di contenuto.
     </p>
     <hr />
     <p className='mb-0'>
-      Quando necessario, assicurarti di inserire le utilità di margine per
-      mantenere gli spazi equilibrati.
+      Quando necessario, assicurarti di inserire le utilità di margine per mantenere gli spazi equilibrati.
     </p>
   </Alert>
 );

@@ -11,9 +11,7 @@ describe('Collapse component', () => {
   });
 
   it('should append the passed className to the container', () => {
-    const { container } = render(
-      <Collapse className='myclass'>Content</Collapse>
-    );
+    const { container } = render(<Collapse className='myclass'>Content</Collapse>);
 
     expect(container.firstChild).toHaveClass('myclass');
   });
@@ -25,9 +23,7 @@ describe('Collapse component', () => {
   });
 
   it('should have a testId for resilient UI changes', () => {
-    const collapse = render(
-      <Collapse testId={'test-id-collapse'}>Content</Collapse>
-    );
+    const collapse = render(<Collapse testId={'test-id-collapse'}>Content</Collapse>);
     expect(collapse.getByTestId('test-id-collapse')).toBeTruthy();
   });
 });

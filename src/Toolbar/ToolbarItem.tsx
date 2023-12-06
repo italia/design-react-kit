@@ -1,10 +1,4 @@
-import React, {
-  ElementType,
-  FC,
-  HTMLAttributes,
-  MouseEvent,
-  useContext
-} from 'react';
+import React, { ElementType, FC, HTMLAttributes, MouseEvent, useContext } from 'react';
 import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
 import { SizeContext, ToolbarProps } from './Toolbar';
@@ -107,9 +101,7 @@ function ToolbarItemLabel({
   ) : (
     <span className='toolbar-label'>
       {label}
-      {badge?.label ? (
-        <span className='visually-hidden'>{badge.label}</span>
-      ) : null}
+      {badge?.label ? <span className='visually-hidden'>{badge.label}</span> : null}
     </span>
   );
 }
@@ -139,30 +131,18 @@ export const ToolbarItem: FC<ToolbarItemProps> = ({
   const ariaAttributes = {
     ...(disabled && { 'aria-disabled': true })
   };
-  const badgeObject =
-    typeof badge === 'number'
-      ? { value: badge, label: srText || '', srText: srText || '' }
-      : badge;
+  const badgeObject = typeof badge === 'number' ? { value: badge, label: srText || '', srText: srText || '' } : badge;
 
   const toolbarItemContent = (
     <>
       {badgeObject ? (
         <div className='badge-wrapper'>
-          <span className='toolbar-badge'>
-            {size !== 'large' ? null : badgeObject.value}
-          </span>
-          {size !== 'large' && (
-            <span className='visually-hidden'>{badgeObject.srText}</span>
-          )}
+          <span className='toolbar-badge'>{size !== 'large' ? null : badgeObject.value}</span>
+          {size !== 'large' && <span className='visually-hidden'>{badgeObject.srText}</span>}
         </div>
       ) : null}
       <Icon icon={iconName} size={size === 'small' ? 'sm' : ''} />
-      <ToolbarItemLabel
-        label={label}
-        size={size}
-        disabled={disabled}
-        badge={badgeObject}
-      />
+      <ToolbarItemLabel label={label} size={size} disabled={disabled} badge={badgeObject} />
     </>
   );
 

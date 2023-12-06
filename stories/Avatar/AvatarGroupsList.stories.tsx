@@ -10,10 +10,7 @@ export const AvatarSmallList = () => {
     <LinkList avatar>
       <LinkListItem href='#'>
         <AvatarIcon size='sm'>
-          <img
-            src='https://randomuser.me/api/portraits/men/43.jpg'
-            alt='Mario Rossi'
-          />
+          <img src='https://randomuser.me/api/portraits/men/43.jpg' alt='Mario Rossi' />
         </AvatarIcon>
         <span>Mario Rossi</span>
       </LinkListItem>
@@ -44,10 +41,7 @@ export const AvatarMediaList = () => {
     <LinkList avatar>
       <LinkListItem href='#'>
         <AvatarIcon size='md'>
-          <img
-            src='https://randomuser.me/api/portraits/men/43.jpg'
-            alt='Mario Rossi'
-          />
+          <img src='https://randomuser.me/api/portraits/men/43.jpg' alt='Mario Rossi' />
         </AvatarIcon>
         <span>Mario Rossi</span>
       </LinkListItem>

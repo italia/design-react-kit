@@ -2,7 +2,7 @@
 [![Partecipa sul canale #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--devel-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
 [![Ricevi un invito a Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
 
-*Read this in other languages: [English](README.EN.md).*
+_Read this in other languages: [English](README.EN.md)._
 
 **Importante**: questo kit è stato progettato per funzionare con la versione 1.x di Bootstrap Italia. Non esiste al momento un kit per la versione 2.x di Bootstrap Italia.
 
@@ -12,16 +12,16 @@
 
 Per navigare la libreria e visualizzare i componenti, è stato utilizzato [Storybook](https://storybook.js.org/).
 
-La versione pubblica dello Storybook è disponibile [qui](https://italia.github.io/design-react-kit) per l'ultima release stabile pubblicata, mentre [qui](https://design-react-kit.vercel.app/) per la versione  di sviluppo relativa al branch `master`.
+La versione pubblica dello Storybook è disponibile [qui](https://italia.github.io/design-react-kit) per l'ultima release stabile pubblicata, mentre [qui](https://design-react-kit.vercel.app/) per la versione di sviluppo relativa al branch `master`.
 
 ## Indice
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-  - [Requisiti](#requisiti)
+- [Requisiti](#requisiti)
 - [Come usare il kit](#come-usare-il-kit)
-    - [Peer dependencies](#peer-dependencies)
+  - [Peer dependencies](#peer-dependencies)
 - [Come iniziare](#come-iniziare)
 - [Come creare nuovi componenti](#come-creare-nuovi-componenti)
 - [Publishing](#publishing)
@@ -34,8 +34,8 @@ La versione pubblica dello Storybook è disponibile [qui](https://italia.github.
 
 ### Requisiti
 
-* NodeJS
-* Yarn
+- NodeJS
+- Yarn
 
 ## Come usare il kit
 
@@ -69,9 +69,7 @@ import 'typeface-roboto-mono';
 import 'typeface-lora';
 
 const App = () => {
-    return (
-        <Alert>This is an Alert</Alert>
-    );
+  return <Alert>This is an Alert</Alert>;
 };
 
 export default App;
@@ -85,16 +83,12 @@ Il tema Bootstrap Italia utilizza un set specifico di font typeface: `titillium-
 In alternativa è necessario gestire il caricamento dei font manualmente mediante il pacchetto `webfontloader`:
 
 ```js
-const WebFont = require('webfontloader')
+const WebFont = require('webfontloader');
 WebFont.load({
-    custom: {
-        families: [
-          'Titillium Web:300,400,600,700:latin-ext',
-          'Lora:400,700:latin-ext',
-          'Roboto Mono:400,700:latin-ext'
-        ]
-    }
-})
+  custom: {
+    families: ['Titillium Web:300,400,600,700:latin-ext', 'Lora:400,700:latin-ext', 'Roboto Mono:400,700:latin-ext']
+  }
+});
 ```
 
 #### Peer dependencies
@@ -103,10 +97,13 @@ La libreria non include `react` e `react-dom`, evitando clashing di versioni e a
 Per questo motivo per lo sviluppo in locale sarà necessario installare manualmente le dipendenze.
 
 Il comando da eseguire è
+
 ```sh
 $ yarn install --peers
 ```
+
 oppure in alternativa manualmente
+
 ```sh
 $ yarn install react react-dom
 ```
@@ -126,7 +123,7 @@ Storybook è stato arricchito con alcuni `addons` che lo rendono più parlante.
 
 Questa sezione guiderà alla creazione di nuovi componenti nel repository.
 Tutti i componenti risiedono nella cartella `src`: ogni componente possiede una sua cartella con tutto ciò che è necessario per farlo funzionare.
-Le storie `Storybook` invece sono sotto `stories`. 
+Le storie `Storybook` invece sono sotto `stories`.
 I test unitari risiedono nella cartella `test`.
 Il componente `Button` ad esempio è presente sotto il percorso `src/Button` e la sua struttura è la seguente:
 
@@ -144,12 +141,12 @@ test
 
 Alcune regole di base per strutturare i componenti:
 
-* I file TSX file del componente utilizza la sintassi JSX.
-* I file `.stories.tsx` dovrebbero contenere solo quanto relativo al componente stesso.
-* I file `.stories.mdx` dovrebbero contenere solo documentazione relativa al componente stesso
-* I file `.test.tsx` dovrebbero contenere solo test relativi al componente stesso.
+- I file TSX file del componente utilizza la sintassi JSX.
+- I file `.stories.tsx` dovrebbero contenere solo quanto relativo al componente stesso.
+- I file `.stories.mdx` dovrebbero contenere solo documentazione relativa al componente stesso
+- I file `.test.tsx` dovrebbero contenere solo test relativi al componente stesso.
 
-Una volta creato un nuovo componente, con la sua story, avviando Storybook sarà  possibile controllare che tutto funzioni come dovrebbe.
+Una volta creato un nuovo componente, con la sua story, avviando Storybook sarà possibile controllare che tutto funzioni come dovrebbe.
 
 ### Come contribuire
 
@@ -174,7 +171,7 @@ E' disponibile un comando per generare una versione statica del catalogo Storybo
 $ yarn storybook:build
 ```
 
-Le pagine statiche ottenute dal processo di build saranno generate sotto la folder  `storybook-static`.
+Le pagine statiche ottenute dal processo di build saranno generate sotto la folder `storybook-static`.
 
 ## Compilazione libreria
 
@@ -188,7 +185,7 @@ $ yarn build
 
 Il kit segue le indicazioni riportate nelle Linee Guida di Design per i servizi web della Pubblica Amministrazione, sezione [6.3.1.2.1. Supporto browser](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/2020.1/doc/user-interface/lo-sviluppo-di-un-interfaccia-e-i-web-kit.html#strumenti) mediante l'utilizzo del pacchetto `browserslist-config-design-italia`.
 
-## TypeScript typings 
+## TypeScript typings
 
 La libreria è stata portata a Typescript ed i tipi sono esportati con essa.
 

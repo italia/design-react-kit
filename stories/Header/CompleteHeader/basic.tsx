@@ -58,9 +58,7 @@ const SlimHeaderFullResponsive = ({ theme }: ThemeType) => {
             <span className='rounded-icon'>
               <Icon color='primary' icon='it-user' />
             </span>
-            <span className='d-none d-lg-block'>
-              Accedi all&#39;area personale
-            </span>
+            <span className='d-none d-lg-block'>Accedi all&#39;area personale</span>
           </Button>
         </HeaderRightZone>
       </HeaderContent>
@@ -70,10 +68,7 @@ const SlimHeaderFullResponsive = ({ theme }: ThemeType) => {
 
 // eslint rule has to be disable for few lines here as Storybook addons will go in error
 // if PropTypes are declared in these components
-export class SlimHeader extends Component<
-  { theme?: 'light' | 'dark' | '' },
-  { collapsed: boolean }
-> {
+export class SlimHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { collapsed: boolean }> {
   state = {
     collapsed: true
   };
@@ -84,11 +79,7 @@ export class SlimHeader extends Component<
         <HeaderContent>
           <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
           <HeaderLinkZone>
-            <HeaderToggler
-              onClick={() =>
-                this.setState({ collapsed: !this.state.collapsed })
-              }
-            >
+            <HeaderToggler onClick={() => this.setState({ collapsed: !this.state.collapsed })}>
               <span>Ente appartenenza/Owner</span>
               <Icon icon='it-expand' />
             </HeaderToggler>
@@ -142,10 +133,7 @@ export class CenterHeader extends Component<
     return (
       <Header type='center' theme={this.props.theme}>
         <HeaderContent>
-          <HeaderBrand
-            iconName={this.props.iconName}
-            iconAlt={this.props.iconAlt || ''}
-          >
+          <HeaderBrand iconName={this.props.iconName} iconAlt={this.props.iconAlt || ''}>
             <h2>Lorem Ipsum Lorem Ipsum</h2>
             <h3>Inserire qui la tag line</h3>
           </HeaderBrand>
@@ -177,10 +165,7 @@ export class CenterHeader extends Component<
   }
 }
 
-export class NavHeader extends Component<
-  { theme?: 'light' | 'dark' | '' },
-  { collapsed: boolean }
-> {
+export class NavHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { collapsed: boolean }> {
   state = {
     collapsed: true
   };
@@ -199,12 +184,7 @@ export class NavHeader extends Component<
           >
             <Icon icon='it-burger' />
           </HeaderToggler>
-          <Collapse
-            isOpen={isOpen}
-            navbar
-            header
-            onOverlayClick={() => this.setState({ collapsed: isOpen })}
-          >
+          <Collapse isOpen={isOpen} navbar header onOverlayClick={() => this.setState({ collapsed: isOpen })}>
             <div className='menu-wrapper'>
               <Nav navbar>
                 <NavItem active>
@@ -238,15 +218,8 @@ export class NavHeader extends Component<
   }
 }
 
-const CompleteHeader = ({
-  theme,
-  slimHeaderType,
-  sticky,
-  iconName,
-  iconAlt
-}: HeaderCompleteProps) => {
-  const SlimTag =
-    slimHeaderType === 'default' ? SlimHeader : SlimHeaderFullResponsive;
+const CompleteHeader = ({ theme, slimHeaderType, sticky, iconName, iconAlt }: HeaderCompleteProps) => {
+  const SlimTag = slimHeaderType === 'default' ? SlimHeader : SlimHeaderFullResponsive;
   return (
     <Headers sticky={sticky}>
       <SlimTag theme={theme} />

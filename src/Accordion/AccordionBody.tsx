@@ -104,11 +104,7 @@ export const AccordionBody = ({
         const style = height == null ? null : { height };
 
         return (
-          <Tag
-            className={classes}
-            style={{ ...childProps.style, ...style }}
-            {...childProps}
-          >
+          <Tag className={classes} style={{ ...childProps.style, ...style }} {...childProps}>
             <div className={listClasses}>{children}</div>
           </Tag>
         );

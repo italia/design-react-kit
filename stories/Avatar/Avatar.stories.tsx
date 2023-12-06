@@ -1,13 +1,6 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
 import React, { useRef } from 'react';
-import {
-  AvatarIcon,
-  AvatarContainer,
-  AvatarWrapper,
-  AvatarExtraText,
-  UncontrolledTooltip,
-  Icon
-} from '../../src';
+import { AvatarIcon, AvatarContainer, AvatarWrapper, AvatarExtraText, UncontrolledTooltip, Icon } from '../../src';
 
 export default {
   title: 'Componenti/Avatar'
@@ -16,40 +9,22 @@ export default {
 export const AvatarWithImage = () => (
   <AvatarContainer>
     <AvatarIcon size='xs'>
-      <img
-        src='https://randomuser.me/api/portraits/men/46.jpg'
-        alt='Mario Rossi'
-      />
+      <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
     </AvatarIcon>
     <AvatarIcon size='sm'>
-      <img
-        src='https://randomuser.me/api/portraits/women/44.jpg'
-        alt='Luisa Neri'
-      />
+      <img src='https://randomuser.me/api/portraits/women/44.jpg' alt='Luisa Neri' />
     </AvatarIcon>
     <AvatarIcon>
-      <img
-        src='https://randomuser.me/api/portraits/men/43.jpg'
-        alt='Gioacchino Romani'
-      ></img>
+      <img src='https://randomuser.me/api/portraits/men/43.jpg' alt='Gioacchino Romani'></img>
     </AvatarIcon>
     <AvatarIcon size='lg'>
-      <img
-        src='https://randomuser.me/api/portraits/women/41.jpg'
-        alt='Anna Barbieri'
-      />
+      <img src='https://randomuser.me/api/portraits/women/41.jpg' alt='Anna Barbieri' />
     </AvatarIcon>
     <AvatarIcon size='xl'>
-      <img
-        src='https://randomuser.me/api/portraits/men/33.jpg'
-        alt='Carlo Poli'
-      />
+      <img src='https://randomuser.me/api/portraits/men/33.jpg' alt='Carlo Poli' />
     </AvatarIcon>
     <AvatarIcon size='xxl'>
-      <img
-        src='https://randomuser.me/api/portraits/women/24.jpg'
-        alt='Giovanna Ferrero'
-      />
+      <img src='https://randomuser.me/api/portraits/women/24.jpg' alt='Giovanna Ferrero' />
     </AvatarIcon>
   </AvatarContainer>
 );
@@ -115,10 +90,7 @@ AvatarWithIcon.storyName = 'Avatar with icon';
 export const AvatarLink = () => (
   <AvatarContainer>
     <AvatarIcon size='xl' href='#'>
-      <img
-        src='https://randomuser.me/api/portraits/women/41.jpg'
-        alt='Anna Barbieri'
-      ></img>
+      <img src='https://randomuser.me/api/portraits/women/41.jpg' alt='Anna Barbieri'></img>
     </AvatarIcon>
     <AvatarIcon size='xl' color='red' href='#'>
       <p aria-hidden='true'>MR</p>
@@ -144,10 +116,7 @@ export const AvatarLinkWithTooltip = () => {
           <br />
           <i>Administrator</i>
         </UncontrolledTooltip>
-        <img
-          src='https://randomuser.me/api/portraits/women/41.jpg'
-          alt='Anna Barbieri'
-        ></img>
+        <img src='https://randomuser.me/api/portraits/women/41.jpg' alt='Anna Barbieri'></img>
       </AvatarIcon>
       <AvatarIcon size='xl' color='red' href='#' innerRef={withTextRef}>
         <UncontrolledTooltip placement='top' target={withTextRef}>
@@ -177,10 +146,7 @@ export const AvatarWithAdditionalText = () => {
     <AvatarContainer>
       <AvatarWrapper extra='text'>
         <AvatarIcon size='xl'>
-          <img
-            src='https://randomuser.me/api/portraits/men/33.jpg'
-            alt='Mario Rossi'
-          />
+          <img src='https://randomuser.me/api/portraits/men/33.jpg' alt='Mario Rossi' />
         </AvatarIcon>
         <AvatarExtraText>
           <h4>
@@ -191,10 +157,7 @@ export const AvatarWithAdditionalText = () => {
       </AvatarWrapper>
       <AvatarWrapper extra='text'>
         <AvatarIcon size='xl'>
-          <img
-            src='https://randomuser.me/api/portraits/women/33.jpg'
-            alt='Guilia Neri'
-          />
+          <img src='https://randomuser.me/api/portraits/women/33.jpg' alt='Guilia Neri' />
         </AvatarIcon>
         <AvatarExtraText>
           <h4>Guilia Neri</h4>
@@ -203,10 +166,7 @@ export const AvatarWithAdditionalText = () => {
       </AvatarWrapper>
       <AvatarWrapper extra='text'>
         <AvatarIcon size='xl'>
-          <img
-            src='https://randomuser.me/api/portraits/men/15.jpg'
-            alt='Michele Dotti'
-          />
+          <img src='https://randomuser.me/api/portraits/men/15.jpg' alt='Michele Dotti' />
         </AvatarIcon>
         <AvatarExtraText>
           <h4>

@@ -13,13 +13,7 @@ export interface MegamenuProps extends NavbarProps {
   testId?: string;
 }
 
-export const Megamenu: FC<MegamenuProps> = ({
-  brand,
-  className,
-  children,
-  testId,
-  ...attributes
-}) => {
+export const Megamenu: FC<MegamenuProps> = ({ brand, className, children, testId, ...attributes }) => {
   const [openNav, setOpenNav] = useState(false);
   const toggle = () => {
     setOpenNav(!openNav);

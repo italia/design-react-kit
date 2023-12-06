@@ -59,11 +59,7 @@ export const BottomNavItem: FC<BottomNavItemProps> = ({
   );
   return (
     <li {...attributes} data-testid={testId}>
-      <Tag
-        href={url || link || '#'}
-        className={activeClass}
-        onClick={onLinkClick}
-      >
+      <Tag href={url || link || '#'} className={activeClass} onClick={onLinkClick}>
         {badgeWrapper}
         {alertWrapper}
         <Icon icon={iconName} />

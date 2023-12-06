@@ -7,10 +7,7 @@ import { readFile } from 'fs/promises';
 import { join } from 'path';
 
 async function getExceptionList() {
-  const content = await readFile(
-    join(__dirname, './', 'icons-with-no-title.txt'),
-    'utf8'
-  );
+  const content = await readFile(join(__dirname, './', 'icons-with-no-title.txt'), 'utf8');
   return new Set(
     content
       .split('\n')
@@ -26,9 +23,7 @@ function getIconTitle(container: HTMLElement, title: string) {
   return within(container).getByText(title);
 }
 function isEmptyIcon(container: Element) {
-  return (
-    container.querySelector('svg > path:nth-child(1)[fill="none"]') != null
-  );
+  return container.querySelector('svg > path:nth-child(1)[fill="none"]') != null;
 }
 
 beforeEach(() => clearIconCache());
@@ -86,18 +81,14 @@ test('should clear the icon cache correctly', async () => {
 test('should replace the existing icon with another (already loaded) when requested - see #855', async () => {
   await preloadIcons(['it-tool', 'it-search']);
   const onLoad = jest.fn();
-  const { container, rerender } = render(
-    <Icon icon='it-tool' title='Tool' onIconLoad={onLoad} />
-  );
+  const { container, rerender } = render(<Icon icon='it-tool' title='Tool' onIconLoad={onLoad} />);
   expect(getIconTitle(container, 'Tool')).toBeTruthy();
   rerender(<Icon icon='it-search' title='Search' onIconLoad={onLoad} />);
   expect(getIconTitle(container, 'Search')).toBeTruthy();
 });
 
 test('should have a testId for resilient UI changes', async () => {
-  const { getByTestId } = render(
-    <Icon icon='it-search' testId='test-id-icon' />
-  );
+  const { getByTestId } = render(<Icon icon='it-search' testId='test-id-icon' />);
 
   await waitFor(() => expect(getByTestId('test-id-icon')).toBeTruthy());
 });
@@ -109,9 +100,7 @@ test(`should have default title when no title is passed`, async () => {
   for (const icon of icons) {
     rerender(<Icon icon={icon} title={undefined} />);
     if (!exceptionList.has(icon)) {
-      expect(
-        within(container).getByTitle((content) => content != null)
-      ).toBeTruthy();
+      expect(within(container).getByTitle((content) => content != null)).toBeTruthy();
     }
   }
 });
@@ -130,8 +119,6 @@ test('should render no title when passed empty string', async () => {
   const { container, rerender } = render(<Icon icon={''} title={''} />);
   for (const icon of icons) {
     rerender(<Icon icon={icon} title={''} />);
-    expect(
-      within(container).queryByTitle((content) => content != null)
-    ).toBeFalsy();
+    expect(within(container).queryByTitle((content) => content != null)).toBeFalsy();
   }
 });

@@ -66,11 +66,7 @@ export const BackToTop = ({
       style={{ padding: 0 }}
       color={!dark ? 'primary' : ''}
     >
-      <Icon
-        color={dark ? 'secondary' : 'white'}
-        icon='it-arrow-up'
-        style={{ top: 0 }}
-      />
+      <Icon color={dark ? 'secondary' : 'white'} icon='it-arrow-up' style={{ top: 0 }} />
     </Button>
   );
 };

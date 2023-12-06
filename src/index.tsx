@@ -88,13 +88,7 @@ export { CardSignature } from './Card/CardSignature';
 export { CardFooterCTA } from './Card/CardFooterCTA';
 export { CardReadMore } from './Card/CardReadMore';
 export { Collapse } from './Collapse/Collapse';
-export {
-  GridItem,
-  GridItemText,
-  GridItemTextWrapper,
-  GridList,
-  GridRow
-} from './Grid/index';
+export { GridItem, GridItemText, GridItemTextWrapper, GridList, GridRow } from './Grid/index';
 export { Header } from './Header/Header';
 export { Headers } from './Header/Headers';
 export { HeaderBrand } from './Header/HeaderBrand';
@@ -104,20 +98,8 @@ export { HeaderRightZone } from './Header/HeaderRightZone';
 export { HeaderSearch } from './Header/HeaderSearch';
 export { HeaderSocialsZone } from './Header/HeaderSocialsZone';
 export { HeaderToggler } from './Header/HeaderToggler';
-export {
-  Hero,
-  HeroBackground,
-  HeroBody,
-  HeroButton,
-  HeroCategory,
-  HeroTitle
-} from './Hero/index';
-export {
-  Icon,
-  iconsList as icons,
-  preloadIcons,
-  clearIconCache
-} from './Icon/Icon';
+export { Hero, HeroBackground, HeroBody, HeroButton, HeroCategory, HeroTitle } from './Hero/index';
+export { Icon, iconsList as icons, preloadIcons, clearIconCache } from './Icon/Icon';
 export { Input } from './Input/Input';
 export { InputContainer } from './Input/InputContainer';
 export { TextArea } from './Input/TextArea';
@@ -164,11 +146,7 @@ export { StepperNav } from './Stepper/StepperNav';
 export { StepperDots } from './Stepper/StepperDots';
 export { StepperContent } from './Stepper/StepperContent';
 export { Section } from './Section/Section';
-export {
-  NotificationManager,
-  notify,
-  createNotification
-} from './Notification';
+export { NotificationManager, notify, createNotification } from './Notification';
 export { Toolbar } from './Toolbar/Toolbar';
 export { ToolbarItem } from './Toolbar/ToolbarItem';
 export { ToolbarDividerItem } from './Toolbar/ToolbarDividerItem';
@@ -273,12 +251,7 @@ export type { StepperDotsProps } from './Stepper/StepperDots';
 export type { StepperContentProps } from './Stepper/StepperContent';
 export type { SectionProps } from './Section/Section';
 export type { SelectProps } from './Select/Select';
-export type {
-  NotificationId,
-  NotificationProps,
-  NotificationManagerProps,
-  NotificationOptions
-} from './Notification';
+export type { NotificationId, NotificationProps, NotificationManagerProps, NotificationOptions } from './Notification';
 export type { TimeInputProps } from './Input/TimeInput';
 export type { ToolbarProps } from './Toolbar/Toolbar';
 export type { ToolbarItemProps, ToolbarItemBadge } from './Toolbar/ToolbarItem';
@@ -337,9 +310,4 @@ export type {
   UncontrolledDropdownProps,
   UncontrolledTooltipProps
 } from 'reactstrap';
-export type {
-  useNavScrollArgs,
-  useNavScrollResult,
-  RegisterOptions,
-  ChangesType
-} from 'react-use-navscroll';
+export type { useNavScrollArgs, useNavScrollResult, RegisterOptions, ChangesType } from 'react-use-navscroll';

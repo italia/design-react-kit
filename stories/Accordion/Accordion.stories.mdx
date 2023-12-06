@@ -36,10 +36,9 @@ Gli elementi richiudibili sono molto spesso mostrati in gruppo, tipicamente usat
       <span className='text'>Accessibilità</span>
     </CalloutTitle>
     <CalloutText>
-      Nell’esempio di codice ogni elemento <Code>&lt;button&gt;</Code> è
-      inserito all’interno di un elemento &lt;h2&gt; (o altro livello h in
-      funzione del contesto) in quanto, frequentemente, i pulsanti di azione di
-      un accordion sono anche i titoli della sezione che segue.
+      Nell’esempio di codice ogni elemento <Code>&lt;button&gt;</Code> è inserito all’interno di un elemento &lt;h2&gt;
+      (o altro livello h in funzione del contesto) in quanto, frequentemente, i pulsanti di azione di un accordion sono
+      anche i titoli della sezione che segue.
     </CalloutText>
   </Callout>
 </div>
@@ -54,20 +53,15 @@ Gli elementi richiudibili sono molto spesso mostrati in gruppo, tipicamente usat
       <span className='text'>Accessibilità</span>
     </CalloutTitle>
     <CalloutText>
-      Assicurati di aggiungere <Code>aria-expanded</Code> all’elemento di
-      controllo. Questo attributo trasmette esplicitamente lo stato corrente
-      dell’elemento comprimibile legato al controllo a screen reader e
-      tecnologie assistive simili. Se l’elemento comprimibile è chiuso in modo
-      predefinito, l’attributo sull’elemento di controllo dovrebbe avere il
-      valore <Code>aria-expanded="false"</Code>. Se imposti l’elemento
-      comprimibile aperto in modo predefinito, sul controllo invece imposta{' '}
-      <Code>aria-expanded="true"</Code>. Il componente{' '}
-      <Code>AccordionHeader</Code> applica automaticamente questo attributo, ma
-      qualora venisse usato un componente di controllo esterno - come un
-      `Button` del primo esempio - sarà necessario aggiungerlo manualmente. Se
-      il componente HTML dell’elemento di controllo non è un bottone (ad esempio
-      un <Code>&lt;a&gt;</Code> o <Code>&lt;div&gt;</Code>), l’attributo{' '}
-      <Code>role="button"</Code> dovrebbe essere aggiunto al componente.
+      Assicurati di aggiungere <Code>aria-expanded</Code> all’elemento di controllo. Questo attributo trasmette
+      esplicitamente lo stato corrente dell’elemento comprimibile legato al controllo a screen reader e tecnologie
+      assistive simili. Se l’elemento comprimibile è chiuso in modo predefinito, l’attributo sull’elemento di controllo
+      dovrebbe avere il valore <Code>aria-expanded="false"</Code>. Se imposti l’elemento comprimibile aperto in modo
+      predefinito, sul controllo invece imposta <Code>aria-expanded="true"</Code>. Il componente{' '}
+      <Code>AccordionHeader</Code> applica automaticamente questo attributo, ma qualora venisse usato un componente di
+      controllo esterno - come un `Button` del primo esempio - sarà necessario aggiungerlo manualmente. Se il componente
+      HTML dell’elemento di controllo non è un bottone (ad esempio un <Code>&lt;a&gt;</Code> o <Code>&lt;div&gt;</Code>
+      ), l’attributo <Code>role="button"</Code> dovrebbe essere aggiunto al componente.
     </CalloutText>
   </Callout>
 </div>
@@ -90,8 +84,8 @@ Più gruppi di collapse possono essere annidati.
       <span className='text'>Accessibilità</span>
     </CalloutTitle>
     <CalloutText>
-      Utilizzare questo approccio solo quando strettamente necessario: dal punto
-      di vista dell’accessibilità non si tratta di una soluzione ottimale.
+      Utilizzare questo approccio solo quando strettamente necessario: dal punto di vista dell’accessibilità non si
+      tratta di una soluzione ottimale.
     </CalloutText>
   </Callout>
 </div>

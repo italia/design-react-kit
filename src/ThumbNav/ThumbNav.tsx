@@ -26,8 +26,7 @@ export const ThumbNav: FC<ThumbNavProps> = ({
   const classes = classNames('thumb-nav', {
     'thumb-nav-fixed': fixedWidth,
     'thumb-nav-small': isSmall,
-    'thumb-nav-vertical':
-      isVertical || position === 'left' || position === 'right',
+    'thumb-nav-vertical': isVertical || position === 'left' || position === 'right',
     'thumb-nav-nozoom': noZoomOnHover,
     [`thumb-nav-${overlayOnHover}`]: overlayOnHover,
     [`thumb-nav-${position}`]: position,

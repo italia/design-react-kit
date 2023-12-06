@@ -5,8 +5,7 @@ import { CSSModule } from 'reactstrap/types/lib/utils';
 import { CENTER, useHeaderContext } from './HeaderContext';
 import { Icon } from '../Icon/Icon';
 
-export interface HeaderBrandProps
-  extends AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface HeaderBrandProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente HeaderBrand */
@@ -44,13 +43,7 @@ export const HeaderBrand = ({
       'd-none': !responsive
     });
     return (
-      <NavbarBrand
-        className={classes}
-        href={href}
-        data-testid={testId}
-        {...attributes}
-        {...defaultAttributes}
-      >
+      <NavbarBrand className={classes} href={href} data-testid={testId} {...attributes} {...defaultAttributes}>
         {children}
       </NavbarBrand>
     );
@@ -61,11 +54,7 @@ export const HeaderBrand = ({
         {iconName && <Icon icon={iconName} title={iconAlt} />}
         <div className='it-brand-text'>
           {React.Children.map(children, (child, i) => {
-            if (
-              typeof child !== 'object' ||
-              child == null ||
-              !('props' in child)
-            ) {
+            if (typeof child !== 'object' || child == null || !('props' in child)) {
               return child;
             }
             // convention here: first item is the main title, while others subtext

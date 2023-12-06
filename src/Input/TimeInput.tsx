@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { noop } from '../utils';
 import { Input } from './Input';
 import { Icon } from '../Icon/Icon';
-import { getClasses, getInfoTextControlClass } from './utils';
+import { getClasses, getValidationTextControlClass } from './utils';
 import type { InputProps } from './Input';
 
 export const addTime = (value: string, maxValue: number): string => {
@@ -17,14 +17,13 @@ export const subtractTime = (value: string, minValue: number): string => {
   return currTime <= minValue ? value : (currTime - 1).toString();
 };
 
-export const formatTime = (value: number | string): string =>
-  `0${value}`.substr(-2);
+export const formatTime = (value: number | string): string => `0${value}`.substr(-2);
 
 interface TimeInputContainerProps extends HTMLAttributes<HTMLElement> {
   wrapperClass: string;
-  infoTextClass: string;
+  validationTextClass: string;
   label: string | ReactNode | undefined;
-  infoText: string | undefined;
+  validationText: string | undefined;
   invalid: boolean;
   id: string;
   button: ReactNode;
@@ -36,9 +35,9 @@ const TimeInputContainer = ({
   children,
   label,
   id,
-  infoText,
+  validationText,
   button,
-  infoTextClass,
+  validationTextClass,
   invalid
 }: TimeInputContainerProps) => {
   const infoId = id ? `${id}Description` : undefined;
@@ -48,14 +47,11 @@ const TimeInputContainer = ({
     <div className={classNames(wrapperClass)}>
       <div className='input-group'>
         {children}
-        <label
-          htmlFor={id}
-          className={classNames(activeClass, { 'error-label': invalid })}
-        >
+        <label htmlFor={id} className={classNames(activeClass, { 'error-label': invalid })}>
           {label}
         </label>
-        <div id={infoId} className={infoTextClass}>
-          {infoText}
+        <div id={infoId} className={validationTextClass}>
+          {validationText}
         </div>
         <div className='input-group-append'>{button}</div>
       </div>
@@ -115,9 +111,7 @@ export const TimeInput = ({
   const [isOpen, setIsOpen] = useState(false);
   const [hours, setHours] = useState(initialHours || '00');
   const [minutes, setMinutes] = useState(initialMinutes || '00');
-  const [time, setTime] = useState(
-    initialHours && initialMinutes ? `${initialHours}:${initialMinutes}` : ''
-  );
+  const [time, setTime] = useState(initialHours && initialMinutes ? `${initialHours}:${initialMinutes}` : '');
   const [isFocused, toggleFocus] = useState(false);
 
   const button = (
@@ -152,22 +146,18 @@ export const TimeInput = ({
     setTime(value);
   };
 
-  const infoTextControlClass = getInfoTextControlClass(
-    attributes,
-    attributes.cssModule
-  );
+  const validationTextControlClass = getValidationTextControlClass(attributes, attributes.cssModule);
 
-  const { infoTextClass, wrapperClass } = getClasses(
+  const { validationTextClass, wrapperClass } = getClasses(
     attributes.className,
     {
       ...attributes,
       normalized: Boolean(attributes.normalized),
       inputPassword: false,
       formControlClass: 'form-control',
-      infoTextControlClass,
+      validationTextControlClass,
       isFocused,
-      originalWrapperClass:
-        attributes.wrapperClassName || attributes.wrapperClass
+      originalWrapperClass: attributes.wrapperClassName || attributes.wrapperClass
     },
     attributes.cssModule
   );
@@ -189,9 +179,9 @@ export const TimeInput = ({
             <div className='calendar-input-container'>
               <TimeInputContainer
                 wrapperClass={wrapperClass}
-                infoTextClass={infoTextClass}
+                validationTextClass={validationTextClass}
                 label={label}
-                infoText={attributes.infoText}
+                validationText={attributes.validationText}
                 id={id}
                 button={button}
                 invalid={invalid}
@@ -207,9 +197,7 @@ export const TimeInput = ({
                     setIsOpen(false);
                     toggleFocus(true);
                   }}
-                  onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                    onTimeChange(e.target.value)
-                  }
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => onTimeChange(e.target.value)}
                   invalid={invalid}
                   onBlur={() => {
                     toggleFocus(false);
@@ -240,9 +228,7 @@ export const TimeInput = ({
               aria-valuenow={Number(hours)}
               aria-valuemax={23}
               aria-valuemin={0}
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                onHoursChange(e.target.value)
-              }
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => onHoursChange(e.target.value)}
             />
             <div className='button-wrapper'>
               <button
@@ -278,9 +264,7 @@ export const TimeInput = ({
               aria-valuenow={Number(minutes)}
               aria-valuemax={59}
               aria-valuemin={0}
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                onMinutesChange(e.target.value)
-              }
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => onMinutesChange(e.target.value)}
             />
             <div className='button-wrapper'>
               <button

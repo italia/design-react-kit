@@ -1,15 +1,6 @@
 import React from 'react';
 
-import {
-  Collapse,
-  Header,
-  HeaderContent,
-  Icon,
-  Nav,
-  NavItem,
-  NavLink,
-  HeaderToggler
-} from '../../../src';
+import { Collapse, Header, HeaderContent, Icon, Nav, NavItem, NavLink, HeaderToggler } from '../../../src';
 import type { HeaderNavProps } from '../types';
 
 const NavHeader = ({ theme, isOpen }: HeaderNavProps) => {

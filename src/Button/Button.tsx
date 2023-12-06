@@ -46,13 +46,5 @@ export const Button: FC<ButtonProps> = ({
 
   const baseProps = { color, tag };
 
-  return (
-    <ButtonBase
-      className={classes}
-      data-testid={testId}
-      {...baseProps}
-      {...attributes}
-      {...ariaAttributes}
-    />
-  );
+  return <ButtonBase className={classes} data-testid={testId} {...baseProps} {...attributes} {...ariaAttributes} />;
 };

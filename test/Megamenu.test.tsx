@@ -1,13 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import {
-  Megamenu,
-  MegamenuItem,
-  MegamenuFooter,
-  MegamenuHighlightColumn,
-  preloadIcons
-} from '../src';
+import { Megamenu, MegamenuItem, MegamenuFooter, MegamenuHighlightColumn, preloadIcons } from '../src';
 
 describe('Megamenu component', () => {
   // Icons are now async, so preload them to make it behave in an sync way
@@ -20,9 +14,7 @@ describe('Megamenu component', () => {
   });
 
   it('should append the passed className to the container', () => {
-    const { container } = render(
-      <Megamenu className='myclass'>Content</Megamenu>
-    );
+    const { container } = render(<Megamenu className='myclass'>Content</Megamenu>);
 
     expect(container.firstChild).toHaveClass('myclass');
   });
@@ -54,9 +46,7 @@ describe('MegamenuFooter component', () => {
   });
 
   it('should append the passed className to the container', () => {
-    const { container } = render(
-      <MegamenuFooter className='myclass'>Content</MegamenuFooter>
-    );
+    const { container } = render(<MegamenuFooter className='myclass'>Content</MegamenuFooter>);
 
     expect(container.firstChild).toHaveClass('myclass');
   });
@@ -70,13 +60,9 @@ describe('MegamenuHighlightColumn component', () => {
   });
 
   it('should wrapping content inside additional element when add description prop', () => {
-    const { container } = render(
-      <MegamenuHighlightColumn description>Content</MegamenuHighlightColumn>
-    );
+    const { container } = render(<MegamenuHighlightColumn description>Content</MegamenuHighlightColumn>);
 
-    expect(container.getElementsByClassName('description-content').length).toBe(
-      1
-    );
+    expect(container.getElementsByClassName('description-content').length).toBe(1);
   });
 });
 

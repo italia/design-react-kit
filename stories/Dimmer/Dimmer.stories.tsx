@@ -1,16 +1,7 @@
 import { Story } from '@storybook/react';
 import React from 'react';
 
-import {
-  Dimmer,
-  DimmerButtons,
-  Button,
-  Fade,
-  Card,
-  CardBody,
-  CardTitle,
-  CardText
-} from '../../src';
+import { Dimmer, DimmerButtons, Button, Fade, Card, CardBody, CardTitle, CardText } from '../../src';
 
 type EsempiProps = {
   fadeIn: boolean;
@@ -21,9 +12,8 @@ export const Esempi: Story<EsempiProps> = ({ fadeIn }) => {
       <Fade in={fadeIn} tag='div' className='mt-3'>
         <Dimmer icon='it-unlocked'>
           <p>
-            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
-            dignissim cras. Dictum sit amet justo donec enim diam vulputate ut.
-            Eu nisl nunc mi ipsum faucibus.
+            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo
+            donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
           </p>
         </Dimmer>
       </Fade>
@@ -33,12 +23,11 @@ export const Esempi: Story<EsempiProps> = ({ fadeIn }) => {
           <Card>
             <CardBody>
               <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -50,12 +39,11 @@ export const Esempi: Story<EsempiProps> = ({ fadeIn }) => {
           <Card>
             <CardBody>
               <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -66,12 +54,11 @@ export const Esempi: Story<EsempiProps> = ({ fadeIn }) => {
           <Card>
             <CardBody>
               <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -87,9 +74,8 @@ export const ColorePrimario: Story<EsempiProps> = ({ fadeIn }) => {
       <Fade in={fadeIn} tag='div' className='mt-3'>
         <Dimmer color='primary' icon='it-unlocked'>
           <p>
-            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
-            dignissim cras. Dictum sit amet justo donec enim diam vulputate ut.
-            Eu nisl nunc mi ipsum faucibus.
+            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo
+            donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
           </p>
         </Dimmer>
       </Fade>
@@ -99,12 +85,11 @@ export const ColorePrimario: Story<EsempiProps> = ({ fadeIn }) => {
           <Card>
             <CardBody>
               <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -116,12 +101,11 @@ export const ColorePrimario: Story<EsempiProps> = ({ fadeIn }) => {
           <Card>
             <CardBody>
               <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -132,12 +116,11 @@ export const ColorePrimario: Story<EsempiProps> = ({ fadeIn }) => {
           <Card>
             <CardBody>
               <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -167,12 +150,11 @@ export const DimmerConAzioni: Story<EsempiProps> = ({ fadeIn }) => {
           <Card>
             <CardBody>
               <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -183,12 +165,11 @@ export const DimmerConAzioni: Story<EsempiProps> = ({ fadeIn }) => {
           <Card>
             <CardBody>
               <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -199,9 +180,7 @@ export const DimmerConAzioni: Story<EsempiProps> = ({ fadeIn }) => {
   );
 };
 
-export const DimmerConAzioniColorePrimario: Story<EsempiProps> = ({
-  fadeIn
-}) => {
+export const DimmerConAzioniColorePrimario: Story<EsempiProps> = ({ fadeIn }) => {
   return (
     <div>
       <Fade in={fadeIn} tag='div' className='mt-3'>
@@ -218,12 +197,11 @@ export const DimmerConAzioniColorePrimario: Story<EsempiProps> = ({
           <Card>
             <CardBody>
               <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>
@@ -234,12 +212,11 @@ export const DimmerConAzioniColorePrimario: Story<EsempiProps> = ({
           <Card>
             <CardBody>
               <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor…
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
               </CardTitle>
               <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
               </CardText>
             </CardBody>
           </Card>

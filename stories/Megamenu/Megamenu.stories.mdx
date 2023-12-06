@@ -1,11 +1,6 @@
 import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
 
-import {
-  Megamenu,
-  MegamenuItem,
-  MegamenuFooter,
-  MegamenuHighlightColumn
-} from '../../src';
+import { Megamenu, MegamenuItem, MegamenuFooter, MegamenuHighlightColumn } from '../../src';
 
 <Meta title='Documentazione/Menu di navigazione/Megamenu' of={MegamenuItem} />
 
@@ -54,10 +49,7 @@ Si possono combinare header e link "more".
 Nell'esempio di seguito, il link "more" è relativo alla sola colonna in cui è inserito. Per aggiungere un link "more" è sufficiente aggiungere la classe `.it-more` all'elemento con tag `li` al fondo della lista relativa.
 
 <Canvas>
-  <Story
-    id='componenti-megamenu--con-intestazione-e-link-more'
-    height='450px'
-  />
+  <Story id='componenti-megamenu--con-intestazione-e-link-more' height='450px' />
 </Canvas>
 
 ### Megamenu con call to action

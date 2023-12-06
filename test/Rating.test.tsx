@@ -66,30 +66,17 @@ describe('Rating', () => {
 
     it('Should not apply set aria-hidden by default', () => {
       const { container } = render(
-        <Rating
-          value={4}
-          inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']}
-          name='rating'
-        />
+        <Rating value={4} inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']} name='rating' />
       );
-      const ariaHiddenInputs = container.querySelectorAll(
-        'input[aria-hidden="true"]'
-      );
+      const ariaHiddenInputs = container.querySelectorAll('input[aria-hidden="true"]');
       expect(ariaHiddenInputs).toHaveLength(0);
     });
 
     it('Should set aria-hidden when readOnly', () => {
       const { container } = render(
-        <Rating
-          value={4}
-          inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']}
-          name='rating'
-          readOnly
-        />
+        <Rating value={4} inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']} name='rating' readOnly />
       );
-      const ariaHiddenInputs = container.querySelectorAll(
-        'input[aria-hidden="true"]'
-      );
+      const ariaHiddenInputs = container.querySelectorAll('input[aria-hidden="true"]');
       expect(ariaHiddenInputs).toHaveLength(5);
     });
 
@@ -111,11 +98,7 @@ describe('Rating', () => {
 
     it('Should use noop props when readOnly', () => {
       const { container } = render(
-        <Rating
-          value={4}
-          inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']}
-          name='rating'
-        />
+        <Rating value={4} inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']} name='rating' />
       );
       const input = container.querySelectorAll('input')[0];
       fireEvent.click(input);
@@ -124,11 +107,7 @@ describe('Rating', () => {
 
     it('Should not make input disabled by default', () => {
       const { container } = render(
-        <Rating
-          value={4}
-          inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']}
-          name='rating'
-        />
+        <Rating value={4} inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']} name='rating' />
       );
       const inputs = container.querySelectorAll('input');
       inputs.forEach((input) => expect(input.disabled).toBeFalsy());
@@ -136,12 +115,7 @@ describe('Rating', () => {
 
     it('Should make input disabled when readOnly', () => {
       const { container } = render(
-        <Rating
-          value={4}
-          inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']}
-          name='rating'
-          readOnly
-        />
+        <Rating value={4} inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']} name='rating' readOnly />
       );
       const inputs = container.querySelectorAll('input');
       inputs.forEach((input) => expect(input.disabled).toBeTruthy());
@@ -203,13 +177,7 @@ describe('Rating', () => {
 
   describe('Label Template', () => {
     it('Should use default label template', () => {
-      render(
-        <Rating
-          value={4}
-          inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']}
-          name='rating'
-        />
-      );
+      render(<Rating value={4} inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']} name='rating' />);
       const legend = screen.getByText('Valuta 1 stelle su 5');
       expect(legend).not.toBe(null);
     });
@@ -230,13 +198,7 @@ describe('Rating', () => {
 });
 
 test('should have a testId for resilient UI changes', () => {
-  render(
-    <Rating
-      inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']}
-      name='rating'
-      testId='test-id-rating'
-    />
-  );
+  render(<Rating inputs={['star1c', 'star2c', 'star3c', 'star4c', 'star5c']} name='rating' testId='test-id-rating' />);
 
   expect(screen.getByTestId('test-id-rating')).toBeTruthy();
 });

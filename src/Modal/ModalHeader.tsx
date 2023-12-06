@@ -34,10 +34,7 @@ export const ModalHeader: FC<ModalHeaderProps> = ({
   cssModule,
   ...props
 }) => {
-  const classes = mapToCssModules(
-    classNames(className, 'modal-header'),
-    cssModule
-  );
+  const classes = mapToCssModules(classNames(className, 'modal-header'), cssModule);
 
   let CloseButton;
 
@@ -55,9 +52,7 @@ export const ModalHeader: FC<ModalHeaderProps> = ({
   return (
     <WrapTag {...props} className={classes}>
       {icon != null ? <Icon icon={icon} /> : null}
-      <Tag className={mapToCssModules('modal-title', cssModule)}>
-        {children}
-      </Tag>
+      <Tag className={mapToCssModules('modal-title', cssModule)}>{children}</Tag>
       {close || CloseButton}
     </WrapTag>
   );

@@ -11,9 +11,7 @@ test('Should not have a theme set by default', () => {
 });
 
 test('Should respect the theme passed', () => {
-  const { container, rerender } = render(
-    <Header type='center' theme='light' />
-  );
+  const { container, rerender } = render(<Header type='center' theme='light' />);
   expect(container.firstChild).toHaveClass('theme-light');
 
   rerender(<Header type='center' theme='dark' />);

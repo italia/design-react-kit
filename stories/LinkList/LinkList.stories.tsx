@@ -1,23 +1,13 @@
 import React from 'react';
 
-import {
-  LinkList,
-  LinkListItem,
-  Icon,
-  NavItem,
-  NavLink,
-  Navbar
-} from '../../src';
+import { LinkList, LinkListItem, Icon, NavItem, NavLink, Navbar } from '../../src';
 
 export const TitoloLista = () => {
   return (
     <div className='sticky-wrapper navbar-wrapper'>
       <Navbar expand='lg' className='it-navscroll-wrapper it-top-navscroll'>
         <div className='menu-wrapper'>
-          <LinkList
-            wrapperClassName='menu-link-list'
-            header={<h3>Indice della pagina</h3>}
-          >
+          <LinkList wrapperClassName='menu-link-list' header={<h3>Indice della pagina</h3>}>
             <NavItem>
               <NavLink href='#cos-e'>
                 <span>Cos&#39;è</span>
@@ -193,8 +183,7 @@ export const EsempioMultiline = () => (
     </LinkListItem>
     <LinkListItem divider />
     <LinkListItem disabled className='right-icon' href='#'>
-      <span>Link list 3 disabled</span>{' '}
-      <Icon color='primary' icon='it-chevron-right' aria-hidden />
+      <span>Link list 3 disabled</span> <Icon color='primary' icon='it-chevron-right' aria-hidden />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
     </LinkListItem>
   </LinkList>

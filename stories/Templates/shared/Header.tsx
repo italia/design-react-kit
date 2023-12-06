@@ -59,9 +59,7 @@ const SlimHeaderFullResponsive: FC<Theme> = ({ theme }) => {
             <span className='rounded-icon'>
               <Icon color='primary' icon='it-user' />
             </span>
-            <span className='d-none d-lg-block'>
-              Accedi all&#39;area personale
-            </span>
+            <span className='d-none d-lg-block'>Accedi all&#39;area personale</span>
           </Button>
         </HeaderRightZone>
       </HeaderContent>
@@ -83,11 +81,7 @@ export class SlimHeader extends Component<Theme, State> {
         <HeaderContent>
           <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
           <HeaderLinkZone>
-            <HeaderToggler
-              onClick={() =>
-                this.setState({ collapsed: !this.state.collapsed })
-              }
-            >
+            <HeaderToggler onClick={() => this.setState({ collapsed: !this.state.collapsed })}>
               <span>Ente appartenenza/Owner</span>
               <Icon icon='it-expand' />
             </HeaderToggler>
@@ -135,11 +129,7 @@ export class SlimHeader extends Component<Theme, State> {
   }
 }
 
-export const CenterHeader: FC<TownLabels & Theme> = ({
-  townName,
-  townTagLine,
-  theme
-}) => {
+export const CenterHeader: FC<TownLabels & Theme> = ({ townName, townTagLine, theme }) => {
   return (
     <Header type='center' theme={theme}>
       <HeaderContent>
@@ -193,28 +183,16 @@ export class NavHeader extends Component<{ active?: string } & Theme, State> {
           >
             <Icon icon='it-burger' />
           </HeaderToggler>
-          <Collapse
-            isOpen={isOpen}
-            navbar
-            header
-            onOverlayClick={() => this.setState({ collapsed: isOpen })}
-          >
+          <Collapse isOpen={isOpen} navbar header onOverlayClick={() => this.setState({ collapsed: isOpen })}>
             <div className='menu-wrapper'>
               <Nav navbar>
-                {[
-                  'Amministrazione',
-                  'Novità',
-                  'Servizi',
-                  'Documenti e Dati'
-                ].map((label) => {
+                {['Amministrazione', 'Novità', 'Servizi', 'Documenti e Dati'].map((label) => {
                   const isActive = label === active;
                   return (
                     <NavItem active={isActive} key={label}>
                       <NavLink href='#' active={isActive}>
                         <span>{label}</span>
-                        {isActive && (
-                          <span className='visually-hidden'>current</span>
-                        )}
+                        {isActive && <span className='visually-hidden'>current</span>}
                       </NavLink>
                     </NavItem>
                   );
@@ -229,9 +207,7 @@ export class NavHeader extends Component<{ active?: string } & Theme, State> {
                   return (
                     <NavItem key={label}>
                       <NavLink href='#'>
-                        <span className={`${bold ? 'fw-bold' : ''}`}>
-                          {label}
-                        </span>
+                        <span className={`${bold ? 'fw-bold' : ''}`}>{label}</span>
                       </NavLink>
                     </NavItem>
                   );
@@ -245,19 +221,20 @@ export class NavHeader extends Component<{ active?: string } & Theme, State> {
   }
 }
 
-const CompleteHeader: FC<
-  PageProps & { type?: 'default'; page?: string; sticky: boolean }
-> = ({ page, sticky, theme, type, townName, townTagLine }) => {
+const CompleteHeader: FC<PageProps & { type?: 'default'; page?: string; sticky: boolean }> = ({
+  page,
+  sticky,
+  theme,
+  type,
+  townName,
+  townTagLine
+}) => {
   const SlimTag = type === 'default' ? SlimHeader : SlimHeaderFullResponsive;
   return (
     <Headers sticky={sticky}>
       <SlimTag theme={theme} />
       <div className='it-nav-wrapper'>
-        <CenterHeader
-          theme={theme}
-          townName={townName}
-          townTagLine={townTagLine}
-        />
+        <CenterHeader theme={theme} townName={townName} townTagLine={townTagLine} />
         <NavHeader theme={theme} active={page} />
       </div>
     </Headers>

@@ -47,11 +47,7 @@ export const ModaleBaseConBottoneChiusura = () => {
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
         Mostra modale con bottone di chiusura
       </Button>
-      <Modal
-        isOpen={isOpen}
-        toggle={() => toggleModal(!isOpen)}
-        labelledBy='esempio2'
-      >
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} labelledBy='esempio2'>
         <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio2'>
           Titolo della modale
         </ModalHeader>
@@ -81,11 +77,7 @@ export const ModaleBase = () => {
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
         Lancia la demo della modale
       </Button>
-      <Modal
-        isOpen={isOpen}
-        toggle={() => toggleModal(!isOpen)}
-        labelledBy='esempio1'
-      >
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} labelledBy='esempio1'>
         <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio1'>
           Titolo della modale
         </ModalHeader>
@@ -110,20 +102,12 @@ export const ModaleConIcona = () => {
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
         Lancia modale con icona
       </Button>
-      <Modal
-        isOpen={isOpen}
-        toggle={() => toggleModal(!isOpen)}
-        withIcon
-        labelledBy='esempio3'
-      >
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} withIcon labelledBy='esempio3'>
         <ModalHeader icon='it-info-circle' id='esempio3'>
           This is a notification message more long than usual
         </ModalHeader>
         <ModalBody>
-          <p>
-            In the various types of information modal dialog, only one button to
-            close dialog is provided.
-          </p>
+          <p>In the various types of information modal dialog, only one button to close dialog is provided.</p>
         </ModalBody>
         <ModalFooter>
           <Button color='primary' onClick={() => toggleModal(!isOpen)}>
@@ -143,11 +127,7 @@ export const ModaleConFormInputs = () => {
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
         Lancia modale con form
       </Button>
-      <Modal
-        isOpen={isOpen}
-        toggle={() => toggleModal(!isOpen)}
-        labelledBy='esempio4'
-      >
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} labelledBy='esempio4'>
         <ModalHeader id='esempio4' toggle={() => toggleModal(!isOpen)}>
           SCEGLI UNA OPZIONE
         </ModalHeader>
@@ -192,15 +172,9 @@ export const ModaleConLinkList = () => {
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
         Lancia modale con LinkList
       </Button>
-      <Modal
-        isOpen={isOpen}
-        toggle={() => toggleModal(!isOpen)}
-        withLinkList
-        labelledBy='esempio5'
-      >
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} withLinkList labelledBy='esempio5'>
         <ModalHeader id='esempio5'>
-          <span>1.</span>Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt.
+          <span>1.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
         </ModalHeader>
         <ModalBody>
           <LinkList>
@@ -234,42 +208,21 @@ export const ModalePopConfirm = () => {
 
   return (
     <div>
-      <Button
-        color='primary'
-        onClick={() => toggleBaseModal(!isOpenBase)}
-        className='me-3'
-      >
+      <Button color='primary' onClick={() => toggleBaseModal(!isOpenBase)} className='me-3'>
         Lancia modale pop-confirm base
       </Button>
-      <Button
-        color='primary'
-        onClick={() => toggleModalWithHeader(!isOpenWithHeader)}
-        className='me-3'
-      >
+      <Button color='primary' onClick={() => toggleModalWithHeader(!isOpenWithHeader)} className='me-3'>
         Lancia modale pop-confirm con titolo
       </Button>
-      <Modal
-        isOpen={isOpenBase}
-        toggle={() => toggleBaseModal(!isOpenBase)}
-        popConfirm
-      >
+      <Modal isOpen={isOpenBase} toggle={() => toggleBaseModal(!isOpenBase)} popConfirm>
         <ModalBody>
           <p>Font Titillium 14px. Leading 21px.</p>
         </ModalBody>
         <ModalFooter>
-          <Button
-            color='primary'
-            onClick={() => toggleBaseModal(!isOpenBase)}
-            size='sm'
-          >
+          <Button color='primary' onClick={() => toggleBaseModal(!isOpenBase)} size='sm'>
             Action one
           </Button>
-          <Button
-            color='secondary'
-            onClick={() => toggleBaseModal(!isOpenBase)}
-            size='sm'
-            outline
-          >
+          <Button color='secondary' onClick={() => toggleBaseModal(!isOpenBase)} size='sm' outline>
             Action two
           </Button>
         </ModalFooter>
@@ -285,19 +238,10 @@ export const ModalePopConfirm = () => {
           <p>Font Titillium 14px. Leading 21px.</p>
         </ModalBody>
         <ModalFooter>
-          <Button
-            color='primary'
-            onClick={() => toggleModalWithHeader(!isOpenWithHeader)}
-            size='sm'
-          >
+          <Button color='primary' onClick={() => toggleModalWithHeader(!isOpenWithHeader)} size='sm'>
             Action one
           </Button>
-          <Button
-            color='secondary'
-            onClick={() => toggleModalWithHeader(!isOpenWithHeader)}
-            size='sm'
-            outline
-          >
+          <Button color='secondary' onClick={() => toggleModalWithHeader(!isOpenWithHeader)} size='sm' outline>
             Action two
           </Button>
         </ModalFooter>
@@ -314,105 +258,83 @@ export const ScrollDiContenutiLunghi = () => {
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
         Lancia la demo della modale scrollabile
       </Button>
-      <Modal
-        isOpen={isOpen}
-        toggle={() => toggleModal(!isOpen)}
-        labelledBy='esempio7'
-      >
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} labelledBy='esempio7'>
         <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio7'>
           Titolo della modale
         </ModalHeader>
         <ModalBody>
           <div>
             <p>
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-              ac consectetur ac, vestibulum at eros.
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+              quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
             </p>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur
-              et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-              auctor.
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+              laoreet rutrum faucibus dolor auctor.
             </p>
             <p>
-              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-              cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-              dui. Donec ullamcorper nulla non metus auctor fringilla.
+              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+              consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
             </p>
             <p>
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-              ac consectetur ac, vestibulum at eros.
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+              quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
             </p>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur
-              et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-              auctor.
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+              laoreet rutrum faucibus dolor auctor.
             </p>
             <p>
-              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-              cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-              dui. Donec ullamcorper nulla non metus auctor fringilla.
+              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+              consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
             </p>
             <p>
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-              ac consectetur ac, vestibulum at eros.
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+              quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
             </p>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur
-              et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-              auctor.
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+              laoreet rutrum faucibus dolor auctor.
             </p>
             <p>
-              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-              cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-              dui. Donec ullamcorper nulla non metus auctor fringilla.
+              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+              consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
             </p>
             <p>
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-              ac consectetur ac, vestibulum at eros.
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+              quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
             </p>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur
-              et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-              auctor.
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+              laoreet rutrum faucibus dolor auctor.
             </p>
             <p>
-              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-              cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-              dui. Donec ullamcorper nulla non metus auctor fringilla.
+              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+              consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
             </p>
             <p>
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-              ac consectetur ac, vestibulum at eros.
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+              quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
             </p>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur
-              et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-              auctor.
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+              laoreet rutrum faucibus dolor auctor.
             </p>
             <p>
-              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-              cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-              dui. Donec ullamcorper nulla non metus auctor fringilla.
+              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+              consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
             </p>
             <p>
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-              ac consectetur ac, vestibulum at eros.
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+              quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
             </p>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur
-              et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-              auctor.
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+              laoreet rutrum faucibus dolor auctor.
             </p>
             <p>
-              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-              cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-              dui. Donec ullamcorper nulla non metus auctor fringilla.
+              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+              consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
             </p>
           </div>
         </ModalBody>
@@ -438,79 +360,47 @@ export const ModaleConContenutoScrollabile = () => {
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
         Lancia modale con contenuto scrollabile
       </Button>
-      <Modal
-        isOpen={isOpen}
-        toggle={() => toggleModal(!isOpen)}
-        scrollable
-        labelledBy='esempio8'
-      >
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} scrollable labelledBy='esempio8'>
         <ModalHeader id='esempio8'>INTESTAZIONE MODALE</ModalHeader>
         <ModalBody>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.{' '}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.{' '}
           </p>
         </ModalBody>
         <ModalFooter>
-          <Button
-            color='primary'
-            outline
-            onClick={() => toggleModal(!isOpen)}
-            size='sm'
-          >
+          <Button color='primary' outline onClick={() => toggleModal(!isOpen)} size='sm'>
             Chiudi
           </Button>
-          <Button
-            color='primary'
-            onClick={() => toggleModal(!isOpen)}
-            size='sm'
-          >
+          <Button color='primary' onClick={() => toggleModal(!isOpen)} size='sm'>
             Azione Uno
           </Button>
         </ModalFooter>
@@ -527,12 +417,7 @@ export const _CentraturaVerticale = () => {
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
         Lancia la demo della modale
       </Button>
-      <Modal
-        isOpen={isOpen}
-        toggle={() => toggleModal(!isOpen)}
-        centered
-        labelledBy='esempio9'
-      >
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} centered labelledBy='esempio9'>
         <ModalHeader toggle={() => toggleModal(!isOpen)} id='essempio9'>
           Titolo della modale
         </ModalHeader>
@@ -561,66 +446,42 @@ export const AllineamentoASinistra = () => {
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
         Lancia la demo della modale a sinistra
       </Button>
-      <Modal
-        isOpen={isOpen}
-        toggle={() => toggleModal(!isOpen)}
-        align='left'
-        scrollable
-        labelledBy='esempio10'
-      >
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} align='left' scrollable labelledBy='esempio10'>
         <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio10'>
           This is a notification message
         </ModalHeader>
         <ModalBody>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.
           </p>
         </ModalBody>
         <ModalFooter>
@@ -641,66 +502,42 @@ export const AllineamentoADestra = () => {
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
         Lancia la demo della modale a destra
       </Button>
-      <Modal
-        isOpen={isOpen}
-        toggle={() => toggleModal(!isOpen)}
-        align='right'
-        scrollable
-        labelledBy='esempio11'
-      >
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} align='right' scrollable labelledBy='esempio11'>
         <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio11'>
           This is a notification message
         </ModalHeader>
         <ModalBody>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.
           </p>
         </ModalBody>
         <ModalFooter>
@@ -721,12 +558,7 @@ export const RimuovereLanimazione = () => {
       <Button color='primary' onClick={() => toggleModal(!isOpen)}>
         Lancia la demo della modale
       </Button>
-      <Modal
-        isOpen={isOpen}
-        toggle={() => toggleModal(!isOpen)}
-        fade={false}
-        labelledBy='esempio12'
-      >
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} fade={false} labelledBy='esempio12'>
         <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio12'>
           Titolo della modale
         </ModalHeader>
@@ -774,12 +606,7 @@ export const _Dimensioni = () => {
           Modale piccola
         </Button>
       </div>
-      <Modal
-        isOpen={isOpen}
-        toggle={() => toggleModal(!isOpen)}
-        size={size}
-        labelledBy='esempio13'
-      >
+      <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} size={size} labelledBy='esempio13'>
         <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio13'>
           Titolo della modale
         </ModalHeader>
@@ -812,25 +639,13 @@ export const ContenutoDellaModaleVariabile = () => {
   return (
     <div>
       <div>
-        <Button
-          color='primary'
-          onClick={() => openModal('Mario')}
-          className='me-3'
-        >
+        <Button color='primary' onClick={() => openModal('Mario')} className='me-3'>
           Apri la modale per Mario
         </Button>
-        <Button
-          color='primary'
-          onClick={() => openModal('Paola')}
-          className='me-3'
-        >
+        <Button color='primary' onClick={() => openModal('Paola')} className='me-3'>
           Apri la modale per Paola
         </Button>
-        <Button
-          color='primary'
-          onClick={() => openModal('Luca')}
-          className='me-3'
-        >
+        <Button color='primary' onClick={() => openModal('Luca')} className='me-3'>
           Apri la modale per Luca
         </Button>
       </div>
@@ -842,20 +657,10 @@ export const ContenutoDellaModaleVariabile = () => {
         <ModalBody>
           <form>
             <FormGroup>
-              <Input
-                type='text'
-                id='recipient-name'
-                value={username}
-                label='Destinatario:'
-              />
+              <Input type='text' id='recipient-name' value={username} label='Destinatario:' />
             </FormGroup>
             <FormGroup>
-              <TextArea
-                name='text'
-                id='message-text'
-                rows={3}
-                label='Messaggio:'
-              />
+              <TextArea name='text' id='message-text' rows={3} label='Messaggio:' />
             </FormGroup>
           </form>
         </ModalBody>
@@ -884,32 +689,18 @@ export const TooltipAndPopover = () => {
         Lancia la demo della modale
       </Button>
       <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)}>
-        <ModalHeader toggle={() => toggleModal(!isOpen)}>
-          Titolo della modale
-        </ModalHeader>
+        <ModalHeader toggle={() => toggleModal(!isOpen)}>Titolo della modale</ModalHeader>
         <ModalBody>
           <h5>Popover in una modale</h5>
           <p>
             Questo{' '}
-            <Button
-              color='secondary'
-              id='Example'
-              onClick={() => togglePopover(!popoverOpen)}
-            >
+            <Button color='secondary' id='Example' onClick={() => togglePopover(!popoverOpen)}>
               Pulsante
             </Button>{' '}
             attiva un popover al click.
-            <Popover
-              placement='right'
-              isOpen={popoverOpen}
-              target='Example'
-              toggle={() => togglePopover(!popoverOpen)}
-            >
+            <Popover placement='right' isOpen={popoverOpen} target='Example' toggle={() => togglePopover(!popoverOpen)}>
               <PopoverHeader>Titolo del popover</PopoverHeader>
-              <PopoverBody>
-                Il contenuto del corpo del popover è impostato in questo
-                elemento.
-              </PopoverBody>
+              <PopoverBody>Il contenuto del corpo del popover è impostato in questo elemento.</PopoverBody>
             </Popover>
           </p>
           <hr />
@@ -955,9 +746,7 @@ export const UsoDellaGriglia = () => {
         Lancia la demo della modale
       </Button>
       <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)}>
-        <ModalHeader toggle={() => toggleModal(!isOpen)}>
-          Le griglie nelle modali
-        </ModalHeader>
+        <ModalHeader toggle={() => toggleModal(!isOpen)}>Le griglie nelle modali</ModalHeader>
         <ModalBody>
           <Container fluid className='bd-example-row'>
             <Row>

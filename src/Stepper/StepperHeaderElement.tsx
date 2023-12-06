@@ -11,8 +11,7 @@ const variants = {
   'steppers-index': 'steppers-index'
 } as const;
 
-export interface StepperHeaderElementProps
-  extends HTMLAttributes<HTMLLIElement> {
+export interface StepperHeaderElementProps extends HTMLAttributes<HTMLLIElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente StepperHeader */
@@ -56,13 +55,9 @@ export const StepperHeaderElement: FC<StepperHeaderElementProps> = ({
   ...attributes
 }) => {
   const Tag = tag;
-  const wrapperClasses = classNames(
-    variant ? variants[variant] : '',
-    className,
-    {
-      'no-line': noLine
-    }
-  );
+  const wrapperClasses = classNames(variant ? variants[variant] : '', className, {
+    'no-line': noLine
+  });
   const iconClass = classNames('icon', 'steppers-success');
   const spanClass = classNames('steppers-number');
 

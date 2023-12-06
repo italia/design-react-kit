@@ -57,12 +57,7 @@ export const Card: FC<CardProps> = ({
 
   return (
     <div className={wrapperClasses} data-testid={testId}>
-      <CardBase
-        {...attributes}
-        className={cardClasses}
-        tag={tag}
-        href={tag === 'a' ? href : undefined}
-      />
+      <CardBase {...attributes} className={cardClasses} tag={tag} href={tag === 'a' ? href : undefined} />
     </div>
   );
 };

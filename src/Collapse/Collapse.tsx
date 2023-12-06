@@ -78,11 +78,7 @@ export const Collapse: FC<CollapseProps> = ({
             <span className='it-close'></span>close
           </button>
         </div>
-        {megamenu ? (
-          <div className='menu-wrapper'>{children}</div>
-        ) : (
-          <>{children}</>
-        )}
+        {megamenu ? <div className='menu-wrapper'>{children}</div> : <>{children}</>}
       </CollapseBase>
     );
   }

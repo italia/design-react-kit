@@ -1,45 +1,19 @@
 import React from 'react';
-import {
-  act,
-  fireEvent,
-  Matcher,
-  render,
-  screen,
-  waitFor,
-  waitForElementToBeRemoved
-} from '@testing-library/react';
+import { act, fireEvent, Matcher, render, screen, waitFor, waitForElementToBeRemoved } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
-import {
-  NotificationId,
-  NotificationManager,
-  notify,
-  preloadIcons
-} from '../src';
+import { NotificationId, NotificationManager, notify, preloadIcons } from '../src';
 
 type MatcherType = 'title' | 'message' | 'closeButton';
 
-function waitForNotificationToDisappear(
-  pattern: Matcher,
-  type: MatcherType = 'title'
-) {
+function waitForNotificationToDisappear(pattern: Matcher, type: MatcherType = 'title') {
   const selector = type === 'title' ? 'h5' : undefined;
-  return waitForElementToBeRemoved(() =>
-    screen.queryAllByText(pattern, { selector })
-  );
+  return waitForElementToBeRemoved(() => screen.queryAllByText(pattern, { selector }));
 }
 
 describe('Notifications', () => {
   // Icons are now async, so preload them to make it behave in an sync way
-  beforeAll(() =>
-    preloadIcons([
-      'it-tool',
-      'it-close-circle',
-      'it-info-circle',
-      'it-error',
-      'it-check-circle'
-    ])
-  );
+  beforeAll(() => preloadIcons(['it-tool', 'it-close-circle', 'it-info-circle', 'it-error', 'it-check-circle']));
 
   describe('NotificationManager', () => {
     it('should use the containerId as node id', () => {
@@ -91,9 +65,7 @@ describe('Notifications', () => {
       });
 
       await waitForNotificationToDisappear('coucou1');
-      expect(
-        screen.queryByText('coucou2', { selector: 'h5' })
-      ).toBeInTheDocument();
+      expect(screen.queryByText('coucou2', { selector: 'h5' })).toBeInTheDocument();
     });
 
     it('should auto close the notification by default after some time', async () => {
@@ -128,9 +100,7 @@ describe('Notifications', () => {
         fireEvent.click(screen.getByText('coucou'));
       });
 
-      await expect(
-        waitForNotificationToDisappear(/coucou/)
-      ).rejects.toThrowError();
+      await expect(waitForNotificationToDisappear(/coucou/)).rejects.toThrowError();
     });
 
     it('should show the close button and keep the auto close behaviour', async () => {

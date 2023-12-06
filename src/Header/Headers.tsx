@@ -12,13 +12,7 @@ export interface HeadersProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Headers: FC<HeadersProps> = ({
-  className,
-  shadow = false,
-  sticky = false,
-  testId,
-  ...attributes
-}) => {
+export const Headers: FC<HeadersProps> = ({ className, shadow = false, sticky = false, testId, ...attributes }) => {
   const classes = classNames(
     'it-header-wrapper',
     {

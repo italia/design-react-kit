@@ -9,13 +9,7 @@ export interface CalloutTitleProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const CalloutTitle: FC<CalloutTitleProps> = ({
-  children,
-  className,
-  tag = 'div',
-  testId,
-  ...attributes
-}) => {
+export const CalloutTitle: FC<CalloutTitleProps> = ({ children, className, tag = 'div', testId, ...attributes }) => {
   const Tag = tag;
   const classes = classNames(className, 'callout-title');
   return (

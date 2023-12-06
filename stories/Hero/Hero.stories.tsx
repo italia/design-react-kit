@@ -50,13 +50,10 @@ export const HeroConTesto = () => {
     <Hero>
       <HeroBody>
         <HeroCategory>Category</HeroCategory>
-        <HeroTitle>
-          Heading lorem ipsum dolor sit amet, consetetur sadipscing.
-        </HeroTitle>
+        <HeroTitle>Heading lorem ipsum dolor sit amet, consetetur sadipscing.</HeroTitle>
         <p className='d-none d-lg-block'>
-          Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
-          dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu
-          nisl nunc mi ipsum faucibus.
+          Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo
+          donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
         </p>
         <HeroButton outline color='primary'>
           Label button
@@ -71,13 +68,10 @@ export const HeroConTestoCentrato = () => {
     <Hero centered>
       <HeroBody>
         <HeroCategory>Category</HeroCategory>
-        <HeroTitle>
-          Heading lorem ipsum dolor sit amet, consetetur sadipscing.
-        </HeroTitle>
+        <HeroTitle>Heading lorem ipsum dolor sit amet, consetetur sadipscing.</HeroTitle>
         <p className='d-none d-lg-block'>
-          Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
-          dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu
-          nisl nunc mi ipsum faucibus.
+          Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo
+          donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
         </p>
         <HeroButton outline color='primary'>
           Label button
@@ -97,13 +91,10 @@ export const HeroConTestoSuSfondo = () => {
       />
       <HeroBody>
         <HeroCategory>Category</HeroCategory>
-        <HeroTitle>
-          Heading lorem ipsum dolor sit amet, consetetur sadipscing.
-        </HeroTitle>
+        <HeroTitle>Heading lorem ipsum dolor sit amet, consetetur sadipscing.</HeroTitle>
         <p className='d-none d-lg-block'>
-          Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
-          dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu
-          nisl nunc mi ipsum faucibus.
+          Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo
+          donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
         </p>
         <HeroButton color='secondary'>Label button</HeroButton>
       </HeroBody>
@@ -121,13 +112,10 @@ export const HeroConTestoSuSfondoOverlayPrimario = () => {
       />
       <HeroBody>
         <HeroCategory>Category</HeroCategory>
-        <HeroTitle>
-          Heading lorem ipsum dolor sit amet, consetetur sadipscing.
-        </HeroTitle>
+        <HeroTitle>Heading lorem ipsum dolor sit amet, consetetur sadipscing.</HeroTitle>
         <p className='d-none d-lg-block'>
-          Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
-          dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu
-          nisl nunc mi ipsum faucibus.
+          Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo
+          donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
         </p>
         <HeroButton outline color='primary'>
           Label button
@@ -160,13 +148,10 @@ export const HeroConSfondoMargineNegativo = () => {
         />
         <HeroBody>
           <HeroCategory>Category</HeroCategory>
-          <HeroTitle>
-            Heading lorem ipsum dolor sit amet, consetetur sadipscing.
-          </HeroTitle>
+          <HeroTitle>Heading lorem ipsum dolor sit amet, consetetur sadipscing.</HeroTitle>
           <p className='d-none d-lg-block'>
-            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
-            dignissim cras. Dictum sit amet justo donec enim diam vulputate ut.
-            Eu nisl nunc mi ipsum faucibus.
+            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo
+            donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
           </p>
           <HeroButton color='secondary'>Label button</HeroButton>
         </HeroBody>
@@ -180,8 +165,8 @@ export const HeroConSfondoMargineNegativo = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                 </CardTitle>
                 <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
                 </CardText>
                 <CardSignature>di Federico De Paolis</CardSignature>
                 <CardReadMore text='Leggi di più' iconName='it-arrow-right' />

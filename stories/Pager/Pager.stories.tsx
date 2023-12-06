@@ -58,10 +58,7 @@ export const StatoDisabilitatoEAttivo = () => (
 
 const AllineamentoComponent = () => (
   <section>
-    <Pager
-      className='justify-content-center'
-      aria-label='Esempio di navigazione'
-    >
+    <Pager className='justify-content-center' aria-label='Esempio di navigazione'>
       <ul className='pagination'>
         <PagerItem disabled>
           <PagerLink previous href='#'>

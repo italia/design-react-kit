@@ -19,22 +19,11 @@ export interface DimmerProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Dimmer: FC<DimmerProps> = ({
-  icon,
-  color,
-  className,
-  wrapperClassName,
-  testId,
-  ...attributes
-}) => {
+export const Dimmer: FC<DimmerProps> = ({ icon, color, className, wrapperClassName, testId, ...attributes }) => {
   const { children, ...rest } = attributes;
-  const classes = classNames(
-    'dimmer',
-    wrapperClassName === true ? className : wrapperClassName,
-    {
-      [`dimmer-${color}`]: color
-    }
-  );
+  const classes = classNames('dimmer', wrapperClassName === true ? className : wrapperClassName, {
+    [`dimmer-${color}`]: color
+  });
   const innerClasses = classNames('dimmer-inner', className);
   const dimmerIcon = icon && (
     <div className='dimmer-icon'>
@@ -43,12 +32,7 @@ export const Dimmer: FC<DimmerProps> = ({
   );
 
   return (
-    <div
-      className={classes}
-      {...rest}
-      style={{ display: 'flex' }}
-      data-testid={testId}
-    >
+    <div className={classes} {...rest} style={{ display: 'flex' }} data-testid={testId}>
       <div className={innerClasses} {...rest}>
         {dimmerIcon}
         {children}

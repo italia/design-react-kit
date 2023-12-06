@@ -8,12 +8,7 @@ export interface MegamenuHCProps extends ColProps {
   /** Classi aggiuntive da usare per il componente Megamenu Highlight Column */
   className?: string;
 }
-export const MegamenuHighlightColumn: FC<MegamenuHCProps> = ({
-  description,
-  className,
-  children,
-  ...attributes
-}) => {
+export const MegamenuHighlightColumn: FC<MegamenuHCProps> = ({ description, className, children, ...attributes }) => {
   const classes = classNames(className, 'it-vertical', {
     'it-description': description
   });
@@ -21,11 +16,7 @@ export const MegamenuHighlightColumn: FC<MegamenuHCProps> = ({
     <Col {...attributes}>
       <Row className='max-height-col'>
         <Col className={classes}>
-          {description ? (
-            <div className='description-content'>{children}</div>
-          ) : (
-            <>{children}</>
-          )}
+          {description ? <div className='description-content'>{children}</div> : <>{children}</>}
         </Col>
       </Row>
     </Col>

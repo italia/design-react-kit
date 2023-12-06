@@ -126,11 +126,7 @@ export const EsempioVerticale = () => (
 type OverlayProps = { position: 'top' | 'right' | 'bottom' | 'left' };
 export const Overlay: Story<OverlayProps> = ({ position }) => (
   <div className='position-relative'>
-    <img
-      src='https://picsum.photos/1280/720?image=1050'
-      className='test-image'
-      alt='Amazing landscape'
-    />
+    <img src='https://picsum.photos/1280/720?image=1050' className='test-image' alt='Amazing landscape' />
     <ThumbNav isSmall position={position}>
       <ThumbNavItem
         targetUrl='#'
@@ -220,9 +216,7 @@ export const EsempioFixed = () => (
 );
 
 type EsempioAutoWidthProps = { rowItems: 2 | 3 | 4 | 5 };
-export const EsempioAutoWidth: Story<EsempioAutoWidthProps> = ({
-  rowItems
-}) => (
+export const EsempioAutoWidth: Story<EsempioAutoWidthProps> = ({ rowItems }) => (
   <ThumbNav rowItems={rowItems}>
     <ThumbNavItem
       targetUrl='#'
@@ -269,11 +263,9 @@ EsempioAutoWidth.argTypes = {
   }
 };
 
-export const EsempioAutoWidthThree: Story<EsempioAutoWidthProps> =
-  EsempioAutoWidth.bind({});
+export const EsempioAutoWidthThree: Story<EsempioAutoWidthProps> = EsempioAutoWidth.bind({});
 EsempioAutoWidthThree.args = { rowItems: 3 };
-export const EsempioAutoWidthFive: Story<EsempioAutoWidthProps> =
-  EsempioAutoWidth.bind({});
+export const EsempioAutoWidthFive: Story<EsempioAutoWidthProps> = EsempioAutoWidth.bind({});
 EsempioAutoWidthFive.args = { rowItems: 5 };
 
 export default {

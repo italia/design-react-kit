@@ -13,16 +13,12 @@ test('Should support old variant "steppers-index"', () => {
 });
 
 test('Should support old icon prop as @deprecated', () => {
-  const { getAllByRole } = render(
-    <StepperHeaderElement prependIcon='it-tool' />
-  );
+  const { getAllByRole } = render(<StepperHeaderElement prependIcon='it-tool' />);
   expect(getAllByRole('img')).toHaveLength(1);
 });
 
 test('Should support old iconName prop as @deprecated', () => {
-  const { getAllByRole } = render(
-    <StepperHeaderElement prependIcon='it-tool' />
-  );
+  const { getAllByRole } = render(<StepperHeaderElement prependIcon='it-tool' />);
   expect(getAllByRole('img')).toHaveLength(1);
 });
 

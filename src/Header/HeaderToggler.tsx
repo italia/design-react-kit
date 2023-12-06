@@ -4,8 +4,7 @@ import { NavbarToggler } from 'reactstrap';
 
 import { SLIM, NAVBAR, useHeaderContext } from './HeaderContext';
 
-export interface HeaderTogglerProps
-  extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface HeaderTogglerProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /** Tipo di elemento DOM da utilizzare: di default "a" per Header Slim, "button" per altri tipi di Header.
    * Se fornito questo sovrascriverà il valore di default.
    */
@@ -21,13 +20,7 @@ export interface HeaderTogglerProps
 
 const BUTTON = 'button';
 
-export const HeaderToggler = ({
-  className,
-  tag,
-  type,
-  testId,
-  ...attributes
-}: HeaderTogglerProps) => {
+export const HeaderToggler = ({ className, tag, type, testId, ...attributes }: HeaderTogglerProps) => {
   const HeaderType = useHeaderContext();
   const defaultTag = HeaderType === SLIM ? 'a' : BUTTON;
   const defaultType = HeaderType === SLIM ? undefined : BUTTON;

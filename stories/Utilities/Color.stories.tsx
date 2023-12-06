@@ -31,14 +31,10 @@ export const ColoriSfondo_story_hidden = () => (
 export const ColoriCustom_story_hidden = () => (
   <>
     <div className='primary-bg p-3'>
-      <span className='white-color'>
-        Testo bianco su background colore primario
-      </span>
+      <span className='white-color'>Testo bianco su background colore primario</span>
     </div>
     <div className='primary-border-color border p-3'>
-      <span className='primary-color'>
-        Testo colore primario su background con bordo primario
-      </span>
+      <span className='primary-color'>Testo colore primario su background con bordo primario</span>
     </div>
   </>
 );
@@ -93,14 +89,10 @@ export const VariantiColore_story_hidden = () => (
 export const ColoriCustomSecondari_story_hidden = () => (
   <>
     <div className='analogue-1-bg p-3'>
-      <span className='white-color'>
-        Testo bianco su background colore analogo 1
-      </span>
+      <span className='white-color'>Testo bianco su background colore analogo 1</span>
     </div>
     <div className='analogue-2-bg p-3'>
-      <span className='analogue-1-color'>
-        Testo colore analogo 1 su background colore analogo 2
-      </span>
+      <span className='analogue-1-color'>Testo colore analogo 1 su background colore analogo 2</span>
     </div>
   </>
 );
@@ -254,9 +246,7 @@ export const ColoriSecondariCustomComplementariETriadici_story_hidden = () => (
 export const ColoriNeutraliCustom_story_hidden = () => (
   <>
     <div className='neutral-1-bg p-3'>
-      <span className='white-color'>
-        Testo bianco su background colore neutrale 1
-      </span>
+      <span className='white-color'>Testo bianco su background colore neutrale 1</span>
     </div>
     <div className='neutral-2-bg p-3'>
       <span>Testo su background colore neutrale 2</span>

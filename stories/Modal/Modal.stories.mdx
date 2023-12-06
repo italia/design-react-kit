@@ -1,14 +1,6 @@
 import { ArgsTable, Meta, Canvas, Story } from '@storybook/addon-docs';
 import { Code } from '@storybook/components';
-import {
-  Modal,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
-  Callout,
-  CalloutTitle,
-  CalloutText
-} from '../../src';
+import { Modal, ModalHeader, ModalBody, ModalFooter, Callout, CalloutTitle, CalloutText } from '../../src';
 
 <Meta title='Documentazione/Componenti/Modale' component={Modal} />
 
@@ -23,9 +15,8 @@ Cliccando sulla parte che oscura la pagina (il cosiddetto `backdrop` della modal
       <span className='text'>Accessibilità</span>
     </CalloutTitle>
     <CalloutText>
-      Per tutti i componenti Modale viene automaticamente aggiunto l'attributo{' '}
-      <Code>role="dialog"</Code> e <Code>role="document"</Code> all'elemento
-      contenitore. (
+      Per tutti i componenti Modale viene automaticamente aggiunto l'attributo <Code>role="dialog"</Code> e{' '}
+      <Code>role="document"</Code> all'elemento contenitore. (
       <a
         href='https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_dialog_role'
         target='_blank'
@@ -36,9 +27,8 @@ Cliccando sulla parte che oscura la pagina (il cosiddetto `backdrop` della modal
       ).
     </CalloutText>
     <CalloutText>
-      L’attributo <Code>labelledby="..."</Code> deve essere assegnato al
-      componente <Code>Modal</Code> ed usare come valore l'ID del componente{' '}
-      <Code>ModalHeader</Code>.(
+      L’attributo <Code>labelledby="..."</Code> deve essere assegnato al componente <Code>Modal</Code> ed usare come
+      valore l'ID del componente <Code>ModalHeader</Code>.(
       <a
         href='https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute'
         target='_blank'
@@ -49,11 +39,7 @@ Cliccando sulla parte che oscura la pagina (il cosiddetto `backdrop` della modal
     </CalloutText>
     <CalloutText>
       Approfondisci l’argomento sul sito delle{' '}
-      <a
-        href='https://www.w3.org/TR/wai-aria-practices/#dialog_modal'
-        target='_blank'
-        rel='noreferrer'
-      >
+      <a href='https://www.w3.org/TR/wai-aria-practices/#dialog_modal' target='_blank' rel='noreferrer'>
         WAI-ARIA Authoring Practices
       </a>
       .

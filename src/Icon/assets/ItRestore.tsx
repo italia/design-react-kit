@@ -4,11 +4,7 @@ interface SVGRProps {
   title?: string;
   titleId?: string;
 }
-export const component = ({
-  title,
-  titleId,
-  ...props
-}: SVGProps<SVGSVGElement> & SVGRProps) => {
+export const component = ({ title, titleId, ...props }: SVGProps<SVGSVGElement> & SVGRProps) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'

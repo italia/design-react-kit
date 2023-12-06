@@ -14,9 +14,7 @@ const App = () => {
         townName='Comune di Bugliano'
         townTagLine=''
         theme='default'
-        logo={
-          'https://comunedibuglianohome.files.wordpress.com/2020/05/cropped-stemma-comune-2.jpg?w=200'
-        }
+        logo={'https://comunedibuglianohome.files.wordpress.com/2020/05/cropped-stemma-comune-2.jpg?w=200'}
       />
     </div>
   );

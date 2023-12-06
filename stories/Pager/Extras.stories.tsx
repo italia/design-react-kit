@@ -1,15 +1,6 @@
 import React from 'react';
 
-import {
-  Pager,
-  PagerItem,
-  PagerLink,
-  Form,
-  FormGroup,
-  Icon,
-  Input,
-  Label
-} from '../../src';
+import { Pager, PagerItem, PagerLink, Form, FormGroup, Icon, Input, Label } from '../../src';
 import PageChangerExample from './PageChangerExample';
 
 const MoreComponent = () => (
@@ -108,12 +99,7 @@ export const PageChanger = () => (
 const PageJumper = () => (
   <Form>
     <FormGroup>
-      <Input
-        id='jumpToPage'
-        type='text'
-        className='form-control'
-        maxLength={2}
-      />
+      <Input id='jumpToPage' type='text' className='form-control' maxLength={2} />
       <Label for='jumpToPage'>Vai a ...</Label>
     </FormGroup>
   </Form>
@@ -239,10 +225,7 @@ export const LinkTestuali = () => (
 );
 
 export const TotalNumber = () => (
-  <Pager
-    total={{ ariaLabel: 'Pagina', label: ' 24 di 50' }}
-    aria-label='Esempio di paginazione'
-  >
+  <Pager total={{ ariaLabel: 'Pagina', label: ' 24 di 50' }} aria-label='Esempio di paginazione'>
     <ul className='pagination'>
       <PagerItem>
         <PagerLink previous href='#'>

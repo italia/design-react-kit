@@ -1,14 +1,6 @@
 import React, { useState } from 'react';
 
-import {
-  Toolbar,
-  ToolbarItem,
-  ToolbarDividerItem,
-  DropdownMenu,
-  LinkList,
-  LinkListItem,
-  Icon
-} from '../../src';
+import { Toolbar, ToolbarItem, ToolbarDividerItem, DropdownMenu, LinkList, LinkListItem, Icon } from '../../src';
 
 export const Esempio = () => (
   <div className='toolbar-docs-style'>

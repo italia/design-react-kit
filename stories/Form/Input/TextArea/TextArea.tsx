@@ -66,10 +66,7 @@ class TextArea extends React.Component {
           cols={this.props.cols}
           placeholder={this.props.placeholder}
         />
-        <label
-          htmlFor='exampleFormControlTextarea1'
-          className={this.state.isFocused ? 'active' : ''}
-        >
+        <label htmlFor='exampleFormControlTextarea1' className={this.state.isFocused ? 'active' : ''}>
           {this.props.label}
         </label>
       </div>

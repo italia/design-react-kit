@@ -24,14 +24,14 @@ type NotificationElementProps = {
 
 export const getBorderStyleFix = (fix: NotificationCommonProps['fix']) => {
   const borderReset = ['top', 'bottom', 'right', 'left']
-    .filter((curPosition) =>
-      fix === 'left' ? curPosition !== 'right' : curPosition !== 'left'
-    )
+    .filter((curPosition) => (fix === 'left' ? curPosition !== 'right' : curPosition !== 'left'))
     .map(
       (borderPosition) =>
-        `border${
-          borderPosition[0].toUpperCase() + borderPosition.substring(1)
-        }` as 'borderTop' | 'borderBottom' | 'borderLeft' | 'borderRight'
+        `border${borderPosition[0].toUpperCase() + borderPosition.substring(1)}` as
+          | 'borderTop'
+          | 'borderBottom'
+          | 'borderLeft'
+          | 'borderRight'
     );
 
   const customStyle: CSSProperties = {};
@@ -66,17 +66,10 @@ function pickIcon(state: NotificationToastProps['state']) {
   }
 }
 
-function NotificationElement({
-  closeToast,
-  toastProps,
-  title,
-  body,
-  options
-}: NotificationElementProps) {
+function NotificationElement({ closeToast, toastProps, title, body, options }: NotificationElementProps) {
   const globalFix = usePosition();
   const { icon: userIcon, state, fix: localFix, dismissable } = options;
-  const fixPosition =
-    localFix == null && globalFix ? globalFix : localFix || globalFix;
+  const fixPosition = localFix == null && globalFix ? globalFix : localFix || globalFix;
   const { autoClose, style } = toastProps;
   const content = typeof body === 'string' ? <p>{body}</p> : body;
   const icon = userIcon || pickIcon(state);
@@ -125,11 +118,5 @@ export const createNotification = (
   closeToast?: () => void,
   toastProps?: any
 ) => (
-  <NotificationElement
-    title={title}
-    body={body}
-    options={options}
-    closeToast={closeToast}
-    toastProps={toastProps}
-  />
+  <NotificationElement title={title} body={body} options={options} closeToast={closeToast} toastProps={toastProps} />
 );

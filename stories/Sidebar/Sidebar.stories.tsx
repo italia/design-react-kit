@@ -46,43 +46,19 @@ export const _ConIcona: Story = () => (
     <LinkList>
       <LinkListItem header>HEADER</LinkListItem>
       <LinkListItem size='medium' active className='left-icon'>
-        <Icon
-          className='left'
-          icon='it-chevron-right'
-          color=''
-          aria-hidden
-          size='sm'
-        />
+        <Icon className='left' icon='it-chevron-right' color='' aria-hidden size='sm' />
         <span>Link list active</span>
       </LinkListItem>
       <LinkListItem size='medium' disabled>
-        <Icon
-          className='left'
-          icon='it-chevron-right'
-          color=''
-          aria-hidden
-          size='sm'
-        />
+        <Icon className='left' icon='it-chevron-right' color='' aria-hidden size='sm' />
         <span>Link list disabled</span>
       </LinkListItem>
       <LinkListItem size='medium'>
-        <Icon
-          className='left'
-          icon='it-chevron-right'
-          color=''
-          aria-hidden
-          size='sm'
-        />
+        <Icon className='left' icon='it-chevron-right' color='' aria-hidden size='sm' />
         <span>Link list</span>
       </LinkListItem>
       <LinkListItem size='medium'>
-        <Icon
-          className='left'
-          icon='it-chevron-right'
-          color=''
-          aria-hidden
-          size='sm'
-        />
+        <Icon className='left' icon='it-chevron-right' color='' aria-hidden size='sm' />
         <span>Link list</span>
       </LinkListItem>
     </LinkList>

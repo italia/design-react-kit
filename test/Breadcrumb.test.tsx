@@ -11,9 +11,7 @@ describe('Breadcrumb component', () => {
   });
 
   it('should append the passed className to the container', () => {
-    const { container } = render(
-      <Breadcrumb className='myclass'>Content</Breadcrumb>
-    );
+    const { container } = render(<Breadcrumb className='myclass'>Content</Breadcrumb>);
 
     expect(container.firstChild).toHaveClass('myclass');
   });

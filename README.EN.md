@@ -4,7 +4,7 @@
 [![Join channel #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--devel-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
 [![Get an invitation for Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
 
-*Read this in other languages: [Italiano](README.md).*
+_Read this in other languages: [Italiano](README.md)._
 
 **Important**: this kit has been designed to work with Bootstrap Italia v.1. There's no kit currently available for Bootstrap Italia v.2.
 
@@ -36,8 +36,8 @@ Public version of Storybook is available [here](https://italia.github.io/design-
 
 ### Requirements
 
-* NodeJS
-* Yarn
+- NodeJS
+- Yarn
 
 ## Usage
 
@@ -71,9 +71,7 @@ import 'typeface-roboto-mono';
 import 'typeface-lora';
 
 const App = () => {
-    return (
-        <Alert>This is an Alert</Alert>
-    );
+  return <Alert>This is an Alert</Alert>;
 };
 
 export default App;
@@ -87,16 +85,12 @@ Declaring the `FontLoader` on top of the Application tree it is enough to trigge
 As alternative it is required to manually manage the loading via the `webfontloader` package:
 
 ```js
-const WebFont = require('webfontloader')
+const WebFont = require('webfontloader');
 WebFont.load({
-    custom: {
-        families: [
-          'Titillium Web:300,400,600,700:latin-ext',
-          'Lora:400,700:latin-ext',
-          'Roboto Mono:400,700:latin-ext'
-        ]
-    }
-})
+  custom: {
+    families: ['Titillium Web:300,400,600,700:latin-ext', 'Lora:400,700:latin-ext', 'Roboto Mono:400,700:latin-ext']
+  }
+});
 ```
 
 ### Peer dependencies
@@ -105,10 +99,13 @@ The library does not include `react` and `react-dom`, avoiding versions clashing
 For this reason, for local development it will be necessary to manually install dependencies.
 
 The command to be executed is
+
 ```sh
 $ yarn install --peers
 ```
+
 or alternatively manually
+
 ```sh
 $ yarn install react react-dom
 ```
@@ -129,8 +126,8 @@ Storybook has been enriched with some `addons` that make it more talented. Check
 ## How to create new components
 
 This section explains how to create new components in the repository.
-All components reside in the `src` directory: each component is a folder with all that is needed to make it work. 
-*Storybook* stories are instead under `stories`.  
+All components reside in the `src` directory: each component is a folder with all that is needed to make it work.
+_Storybook_ stories are instead under `stories`.  
 Unit tests are under the `test` folder.
 
 i.e. the `Button` component is shown below the `src/Button` path and its structure is as follows:
@@ -149,12 +146,12 @@ test
 
 Some basic rules for structuring the components:
 
-* TSX file component files use JSX syntax.
-* The `.stories.tsx` files only contains examples relative to component.
-* The `.stories.mdx` files only contains documentation relative to component.
-* The `.test.tsx` files only contains tests relative to component.
+- TSX file component files use JSX syntax.
+- The `.stories.tsx` files only contains examples relative to component.
+- The `.stories.mdx` files only contains documentation relative to component.
+- The `.test.tsx` files only contains tests relative to component.
 
-Once you have created a new component, with its history, starting *Storybook* will be able to check that everything works as it should.
+Once you have created a new component, with its history, starting _Storybook_ will be able to check that everything works as it should.
 
 ### How to contribute
 
@@ -193,7 +190,7 @@ $ yarn build
 
 The design kit follows the Guidelines for Public Services Design, within the Section [6.3.1.2.1. Supporto browser](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/2020.1/doc/user-interface/lo-sviluppo-di-un-interfaccia-e-i-web-kit.html#strumenti) via the package `browserslist-config-design-italia`.
 
-## TypeScript typing definitions 
+## TypeScript typing definitions
 
 The library has been rewritten in Typescript and types are exported in the bundle.
 
