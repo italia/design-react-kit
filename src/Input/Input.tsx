@@ -44,8 +44,10 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string | ReactNode;
   /** Testo di esempio da utilizzare per il campo. */
   placeholder?: string;
-  /** Testo di aiuto per l'elemento del moduleo form. Richiede che il componente `Input` abbia la prop `id` impostata. */
+  /** Testo di validazione per l'elemento del moduleo form. */
   validationText?: string;
+  /** Testo di aiuto per l'elemento del moduleo form. Richiede che il componente `Input` abbia la prop `id` impostata. */
+  infoText?: string;
   /** Il valore nel campo Input. */
   value?: string | number;
   /** Da utilizzare per impedire la modifica del valore contenuto. */
@@ -102,6 +104,7 @@ export const Input = ({
   innerRef,
   label,
   validationText,
+  infoText,
   placeholder,
   normalized,
   value,
@@ -215,6 +218,7 @@ export const Input = ({
   const containerProps = {
     id,
     infoId,
+    infoText,
     activeClass,
     label,
     validationTextClass,
