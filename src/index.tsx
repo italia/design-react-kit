@@ -87,6 +87,7 @@ export { CardTagsHeader } from './Card/CardTagsHeader';
 export { CardSignature } from './Card/CardSignature';
 export { CardFooterCTA } from './Card/CardFooterCTA';
 export { CardReadMore } from './Card/CardReadMore';
+export { Collapse } from './Collapse/Collapse';
 export { GridItem, GridItemText, GridItemTextWrapper, GridList, GridRow } from './Grid/index';
 export { Header } from './Header/Header';
 export { Headers } from './Header/Headers';
@@ -102,6 +103,7 @@ export { Icon, iconsList as icons, preloadIcons, clearIconCache } from './Icon/I
 export { Input } from './Input/Input';
 export { InputContainer } from './Input/InputContainer';
 export { TextArea } from './Input/TextArea';
+export { GoBack } from './GoBack/GoBack';
 export { LinkList } from './LinkList/LinkList';
 export { LinkListItem } from './LinkList/LinkListItem';
 export { Megamenu } from './Megamenu/Megamenu';
