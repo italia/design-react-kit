@@ -87,6 +87,7 @@ export { CardTagsHeader } from './Card/CardTagsHeader';
 export { CardSignature } from './Card/CardSignature';
 export { CardFooterCTA } from './Card/CardFooterCTA';
 export { CardReadMore } from './Card/CardReadMore';
+export { Collapse } from './Collapse/Collapse';
 export { GridItem, GridItemText, GridItemTextWrapper, GridList, GridRow } from './Grid/index';
 export { Header } from './Header/Header';
 export { Headers } from './Header/Headers';
