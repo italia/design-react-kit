@@ -28,7 +28,11 @@ export const GoBack = ({ className, link = false, up = false, children }: GoBack
 
   return (
     <Tag className={classNames(className, 'go-back')} color='primary' onClick={goBack}>
-      <Icon color={link ? 'primary' : 'white'} icon={up ? 'it-arrow-up' : 'it-arrow-left'} />
+      <Icon
+        className={children ? 'me-2' : ''}
+        color={link ? 'primary' : 'white'}
+        icon={up ? 'it-arrow-up' : 'it-arrow-left'}
+      />
       {children}
     </Tag>
   );
