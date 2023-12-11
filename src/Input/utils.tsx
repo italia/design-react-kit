@@ -134,7 +134,7 @@ export function getClasses(
 
   const extraLabelClass = mapToCssModules(
     classNames({
-      'input-number-label': ['number', 'currency', 'percentage'].includes(type)
+      'input-number-label': ['number', 'currency', 'adaptive', 'percentage'].includes(type)
     })
   );
 

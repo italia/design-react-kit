@@ -1,4 +1,13 @@
-import React, { InputHTMLAttributes, ElementType, Ref, ReactNode, useCallback, useState } from 'react';
+import React, {
+  InputHTMLAttributes,
+  ElementType,
+  Ref,
+  ReactNode,
+  useCallback,
+  useState,
+  useRef,
+  useEffect
+} from 'react';
 import isNumber from 'is-number';
 
 import { InputContainer } from './InputContainer';
@@ -136,6 +145,19 @@ export const Input = ({
     toggleIcon(!hasIcon);
   }, [hasIcon, isHidden]);
 
+  const divResizeRef = useRef<HTMLDivElement>(null);
+  const [width, setWidth] = useState('100');
+
+  useEffect(() => {
+    if (divResizeRef.current != null && divResizeRef.current.classList.contains('input-number-adaptive')) {
+      if (!value) {
+        setWidth(`calc(70px)`);
+      } else {
+        setWidth(`calc(70px + ${`${value}`.length}ch)`);
+      }
+    }
+  }, [value]);
+
   let { bsSize, valid, invalid, ...rest } = attributes;
 
   const Tag = getTag({ tag, plaintext, staticInput, type });
@@ -250,7 +272,7 @@ export const Input = ({
     );
   }
 
-  if (['currency', 'percentage'].includes(type)) {
+  if (['currency', 'percentage', 'adaptive'].includes(type)) {
     return (
       <InputContainer {...containerProps}>
         <div
@@ -258,10 +280,13 @@ export const Input = ({
             'input-group': true,
             'input-number': true,
             'input-number-percentage': type == 'percentage',
-            'input-number-currency': type == 'currency'
+            'input-number-currency': type == 'currency',
+            'input-number-adaptive': type == 'adaptive'
           })}
+          style={{ width }}
+          ref={divResizeRef}
         >
-          <span className='input-group-text fw-semibold'>{addonText}</span>
+          {type != 'adaptive' && <span className='input-group-text fw-semibold'>{addonText}</span>}
           <Tag
             {...rest}
             {...extraAttributes}
@@ -270,14 +295,6 @@ export const Input = ({
             data-testid={testId}
             type='number'
           />
-          <span className='input-group-text align-buttons flex-column'>
-            <button className='input-number-add'>
-              <span className='visually-hidden'>Aumenta valore Euro</span>
-            </button>
-            <button className='input-number-sub'>
-              <span className='visually-hidden'>Diminuisci valore Euro</span>
-            </button>
-          </span>
         </div>
       </InputContainer>
     );
