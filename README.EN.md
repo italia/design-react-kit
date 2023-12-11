@@ -38,7 +38,7 @@ _⚠️ Warning: This kit was designed to work with Bootstrap Italia version 2.x
 
 ## Intro
 
-**Design React kit** is a set of React components that implements [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) and [Design UI Kit](https://github.com/italia/design-ui-kit) styling, as [shown on InVision](https://invis.io/TWMUZS6VFP5).
+**Design React kit** is a set of React components that implements [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) and [Design UI Kit](https://github.com/italia/design-ui-kit) styling.
 
 Components are showcased with [Storybook](https://storybook.js.org/).
 
@@ -64,7 +64,7 @@ Public version of Storybook is available [here](https://italia.github.io/design-
 
 ### Requirements
 
-- NodeJS
+- NodeJS (>= 18)
 - Yarn
 
 ## Usage

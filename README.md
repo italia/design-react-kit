@@ -38,7 +38,7 @@ _⚠️ Attenzione: questo kit è stato progettato per funzionare con la version
 
 ## Intro
 
-**Design React kit** è un set di componenti React che implementa [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) e gli stili presenti su [Design UI Kit](https://github.com/italia/design-ui-kit), come [mostrato su InVision](https://invis.io/TWMUZS6VFP5).
+**Design React kit** è un set di componenti React che implementa [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) e gli stili presenti su [Design UI Kit](https://github.com/italia/design-ui-kit).
 
 Per navigare la libreria e visualizzare i componenti, è stato utilizzato [Storybook](https://storybook.js.org/).
 
@@ -64,7 +64,7 @@ La versione pubblica dello Storybook è disponibile [qui](https://italia.github.
 
 ### Requisiti
 
-- NodeJS
+- NodeJS (>= 18)
 - Yarn
 
 ## Come usare il kit
