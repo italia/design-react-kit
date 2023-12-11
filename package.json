@@ -88,6 +88,8 @@
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/helper-remap-async-to-generator": "^7.18.9",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "@rollup/plugin-url": "^6.0.0",
     "@size-limit/preset-small-lib": "^8.0.1",
     "@skypack/package-check": "^0.2.2",
