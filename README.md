@@ -1,7 +1,7 @@
 <h1 align="center">Design React Kit</h1>
 
 <p align="center">
-  <img src=".github/react-logo.png" alt="react-logo" width="120px" height="120px"/>
+  <img src=".github/react-logo.png" alt="react-logo" width="120px" height="auto"/>
   <br>
   <i>Design React Kit è un toolkit basato su Bootstrap Italia 
     <br> per la creazione di applicazioni web sviluppate con React.</i>
