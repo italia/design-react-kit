@@ -1,12 +1,40 @@
-# Design React Kit
+<h1 align="center">Design React Kit</h1>
 
-![CircleCI](https://img.shields.io/circleci/build/github/italia/design-react-kit)
-[![Join channel #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--devel-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
-[![Get an invitation for Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
+<p align="center">
+  <img src=".github/angular_design_kit.png" alt="react-logo" width="120px" height="120px"/>
+  <br>
+  <i>Design React Kit è un toolkit basato su Bootstrap Italia 
+    <br> per la creazione di applicazioni web sviluppate con React.</i>
+  <br>
+</p>
+
+<p align="center">
+  <a href="https://italia.github.io/design-react-kit"><strong>italia.github.io/design-react-kit</strong></a>
+  <br>
+</p>
+
+<p align="center">
+    <a href="https://www.npmjs.com/package/design-react-kit"><img src="https://img.shields.io/npm/v/design-react-kit/unstable.svg" alt="NPM"></a>
+    <a href="https://github.com/italia/design-react-kit/actions"><img src="https://github.com/italia/design-react-kit/actions/workflows/ci.yml/badge.svg" alt="Build"></a>
+    <a href="https://codecov.io/gh/italia/design-react-kit"><img src="https://codecov.io/gh/italia/design-react-kit/branch/main/graph/badge.svg?token=0Ud6YSFi0r" alt="codecov"></a>
+    <a href="https://github.com/italia/design-react-kit/blob/main/LICENSE"><img src="https://img.shields.io/github/license/italia/design-react-kit.svg" alt="License"></a>
+    <a href="https://github.com/italia/design-react-kit/issues"><img src="https://img.shields.io/github/issues/italia/design-react-kit.svg" alt="GitHub issues"></a>
+</p>
+
+<p align="center">
+  <a href="https://developersitalia.slack.com/messages/C04J92F9XM2/">
+    <img src="https://img.shields.io/badge/Slack%20channel-%23design--dev--react-blue.svg" alt="Join the #design-system-react channel" />
+  </a>
+  <a href="https://slack.developers.italia.it/">
+    <img src="https://slack.developers.italia.it/badge.svg" alt="Get invited" />
+  </a>
+</p>
 
 _Read this in other languages: [Italiano](README.md)._
 
-**Warning**: This kit was designed to work with Bootstrap Italia version 2.x. The kit for version 1.x of Bootstrap Italia has been deprecated and is located on the [4.x] branch (https://github.com/italia/design-react-kit/tree/4.x).
+_⚠️ Warning: this code is still under development and is not ready to be used! We are working on the update to bring the kit to version 5.0.0, comments and contributions from the entire community are more than welcome!_
+
+_⚠️ Warning: This kit was designed to work with Bootstrap Italia version 2.x. The kit for version 1.x of Bootstrap Italia has been deprecated and is located on the [4.x] branch (https://github.com/italia/design-react-kit/tree/4.x)._
 
 ## Intro
 
