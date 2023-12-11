@@ -9,7 +9,7 @@ Fixes #
 
 <!-- To Mark a Checklist box, put "x" inside the square brackets. For Example - [ ] becomes [x] -->
 
-- [ ] My branch is up-to-date with the Upstream `master` branch.
+- [ ] My branch is up-to-date with the Upstream `main` branch.
 - [ ] The unit tests pass locally with my changes (if applicable).
 - [ ] I have added tests that prove my fix is effective or that my feature works (if applicable).
 - [ ] I have added necessary documentation (if appropriate).

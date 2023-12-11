@@ -6,7 +6,7 @@
 
 _Read this in other languages: [Italiano](README.md)._
 
-**Important**: this kit has been designed to work with Bootstrap Italia v.1. There's no kit currently available for Bootstrap Italia v.2.
+**Warning**: This kit was designed to work with Bootstrap Italia version 2.x. The kit for version 1.x of Bootstrap Italia has been deprecated and is located on the [4.x] branch (https://github.com/italia/design-react-kit/tree/4.x).
 
 ## Intro
 
@@ -14,7 +14,7 @@ _Read this in other languages: [Italiano](README.md)._
 
 Components are showcased with [Storybook](https://storybook.js.org/).
 
-Public version of Storybook is available [here](https://italia.github.io/design-react-kit) for the latest stable release, while [here](https://design-react-kit.vercel.app/) for the current development version built from `master` branch.
+Public version of Storybook is available [here](https://italia.github.io/design-react-kit) for the latest stable release, while [here](https://design-react-kit.vercel.app/) for the current development version built from `main` branch.
 
 ## Table of contents
 
@@ -155,7 +155,7 @@ Once you have created a new component, with its history, starting _Storybook_ wi
 
 ### How to contribute
 
-To submit new content (feature or bug fixes) is required to fork the repository, starting from `master` create a new branch for the new feature: once completed the development (with tests when possible), create a PR to the original repository.
+To submit new content (feature or bug fixes) is required to fork the repository, starting from `main` create a new branch for the new feature: once completed the development (with tests when possible), create a PR to the original repository.
 
 #### Snapshot tests
 
