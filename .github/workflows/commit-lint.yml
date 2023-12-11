@@ -16,5 +16,5 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm install @commitlint/cli
+      - run: yarn add @commitlint/cli
       - run: npx commitlint --from HEAD~${{ github.event.pull_request.commits }} --to HEAD

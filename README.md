@@ -218,9 +218,3 @@ Il kit segue le indicazioni riportate nelle Linee Guida di Design per i servizi 
 ## TypeScript typings
 
 La libreria è stata portata a Typescript ed i tipi sono esportati con essa.
-
-## Ringraziamenti
-
-<a href="https://www.chromatic.com/"><img src="https://user-images.githubusercontent.com/321738/84662277-e3db4f80-af1b-11ea-88f5-91d67a5e59f6.png" width="153" height="30" alt="Chromatic" /></a>
-
-Grazie a [Chromatic](https://www.chromatic.com/) per aver fornito la piattaforma di visual testing che ci aiuta a revisionare cambiamenti UI e intercettare regressioni visuali.
