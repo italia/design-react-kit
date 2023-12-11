@@ -3,8 +3,8 @@
 <p align="center">
   <img src=".github/react-logo.png" alt="react-logo" width="120px" height="auto"/>
   <br>
-  <i>Design React Kit è un toolkit basato su Bootstrap Italia 
-    <br> per la creazione di applicazioni web sviluppate con React.</i>
+  <i>Design React Kit is a toolkit based on Bootstrap Italia 
+    <br> to build React web application.</i>
   <br>
 </p>
 
@@ -144,8 +144,6 @@ Clone the repo and run `yarn` to install the dependencies.
 Then run the `yarn storybook:serve` command to start the development server.
 
 Storybook will therefore be available at http://localhost:9001/
-
-![storybook](/assets/storybook-screenshot.jpg?raw=true)
 
 Public version of the Storybook is available [here](https://italia.github.io/design-react-kit).
 
