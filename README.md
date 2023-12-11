@@ -55,10 +55,6 @@ La versione pubblica dello Storybook è disponibile [qui](https://italia.github.
 - [Come iniziare](#come-iniziare)
 - [Come creare nuovi componenti](#come-creare-nuovi-componenti)
 - [Publishing](#publishing)
-- [Continuous Integration](#continuous-integration)
-  - [Job `build`](#job-build)
-  - [Job `deploy-github-pages`](#job-deploy-github-pages)
-  - [Job `npm-publish`](#job-npm-publish)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -74,7 +70,7 @@ Per utilizzare Design React come dipendenza in un'app è possibile installarla d
 ```sh
 $ create-react-app nome-app
 $ cd nome-app
-$ yarn add design-react-kit --save
+$ yarn add design-react-kit@unstable --save
 ```
 
 ## Aggiungere bootstrap-italia ed i font
