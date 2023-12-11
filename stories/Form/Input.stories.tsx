@@ -13,7 +13,7 @@ import 'accessible-autocomplete/dist/accessible-autocomplete.min.css';
 //Used for custom style overriding accessible-autocomplete.min.css
 import './assets/css/accessible-autocomplete-styles.css';
 //Custom styles
-import "./assets/css/custom.css";
+import './assets/css/custom.css';
 
 export default {
   title: 'Componenti/Form/Input'
@@ -309,7 +309,7 @@ export const InputNumericoDimensionamento = () => {
       </div>
     </>
   );
-}
+};
 
 export const InputNumericoSteps = () => {
   const [value, setValue] = useState('100');
@@ -343,7 +343,7 @@ export const InputNumericoValuta = () => {
       label='Currency'
       value={value}
       step='any'
-      min={3.50}
+      min={3.5}
       max={100}
       className={'input-number-currency'}
       onChange={(ev) => {
@@ -352,7 +352,6 @@ export const InputNumericoValuta = () => {
     />
   );
 };
-
 
 export const InputNumericoPercentuale = () => {
   const [value, setValue] = useState('100');
@@ -380,13 +379,13 @@ export const InputNumericoRidimensionamento = () => {
   const [width, setWidth] = useState('100');
 
   useEffect(() => {
-      if (ref.current.classList.contains('input-number-adaptive')) {
-        if(!value){
-          setWidth(`calc(10px)`)
-        }else{
-          setWidth(`calc(40px + ${value.length}ch)`)
-        }
+    if (ref.current.classList.contains('input-number-adaptive')) {
+      if (!value) {
+        setWidth(`calc(10px)`);
+      } else {
+        setWidth(`calc(40px + ${value.length}ch)`);
       }
+    }
   }, [value]);
 
   return (
