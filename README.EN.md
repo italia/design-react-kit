@@ -55,10 +55,6 @@ Public version of Storybook is available [here](https://italia.github.io/design-
 - [Compiling Storybook](#compiling-storybook)
 - [How to create new components](#how-to-create-new-components)
 - [Publishing](#publishing)
-- [Continuous integration](#continuous-integration)
-  - [`build` job](#build-job)
-  - [`deploy-github-pages` job](#deploy-github-pages-job)
-  - [`npm-publish` job](#npm-publish-job)
 
 <!-- END doctoc generated TOC please keep the comment here to allow automatic updating -->
 

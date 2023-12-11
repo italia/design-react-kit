@@ -55,10 +55,6 @@ La versione pubblica dello Storybook è disponibile [qui](https://italia.github.
 - [Come iniziare](#come-iniziare)
 - [Come creare nuovi componenti](#come-creare-nuovi-componenti)
 - [Publishing](#publishing)
-- [Continuous Integration](#continuous-integration)
-  - [Job `build`](#job-build)
-  - [Job `deploy-github-pages`](#job-deploy-github-pages)
-  - [Job `npm-publish`](#job-npm-publish)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
