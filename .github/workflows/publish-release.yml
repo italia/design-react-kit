@@ -24,3 +24,22 @@ jobs:
         run: yarn publish --tag unstable
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: yarn add extract-changelog-release
+      - name: Generate Release Body
+        run: yarn extract-changelog-release > RELEASE_BODY.md
+      - uses: ncipollo/release-action@v1
+        with:
+          bodyFile: 'RELEASE_BODY.md'
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish on gh-pages
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          yarn storybook:build
+          yarn storybook:deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - uses: italia/slack-notify-release-action@v0.4.0
+      #   with:
+      #     slack_token: ${{ secrets.SLACK_TOKEN }}
+      #     channel_id: ${{ secrets.SLACK_CHANNEL }}
+      #     project_name: React Angular Kit

@@ -38,7 +38,7 @@ const Welcome = () => (
         </p>
         <p className='small'>
           Il progetto è distribuito con licenza BSD-3 (consultabile nel file{' '}
-          <a href='https://github.com/italia/design-react-kit/blob/master/LICENSE'>LICENSE</a>
+          <a href='https://github.com/italia/design-react-kit/blob/main/LICENSE'>LICENSE</a>
           ), un modello ancora più permissivo della classica licenza GPL, in quanto consente di modificare e
           ridistribuire questo software secondo varie modalità, anche di tipo closed-source.
         </p>

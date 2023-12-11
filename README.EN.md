@@ -1,20 +1,48 @@
-# Design React Kit
+<h1 align="center">Design React Kit</h1>
 
-![CircleCI](https://img.shields.io/circleci/build/github/italia/design-react-kit)
-[![Join channel #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--devel-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
-[![Get an invitation for Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
+<p align="center">
+  <img src=".github/react-logo.png" alt="react-logo" width="120px" height="auto"/>
+  <br>
+  <i>Design React Kit è un toolkit basato su Bootstrap Italia 
+    <br> per la creazione di applicazioni web sviluppate con React.</i>
+  <br>
+</p>
+
+<p align="center">
+  <a href="https://italia.github.io/design-react-kit"><strong>italia.github.io/design-react-kit</strong></a>
+  <br>
+</p>
+
+<p align="center">
+    <a href="https://www.npmjs.com/package/design-react-kit"><img src="https://img.shields.io/npm/v/design-react-kit/unstable.svg" alt="NPM"></a>
+    <a href="https://github.com/italia/design-react-kit/actions"><img src="https://github.com/italia/design-react-kit/actions/workflows/ci.yml/badge.svg" alt="Build"></a>
+    <a href="https://codecov.io/gh/italia/design-react-kit"><img src="https://codecov.io/gh/italia/design-react-kit/branch/main/graph/badge.svg?token=0Ud6YSFi0r" alt="codecov"></a>
+    <a href="https://github.com/italia/design-react-kit/blob/main/LICENSE"><img src="https://img.shields.io/github/license/italia/design-react-kit.svg" alt="License"></a>
+    <a href="https://github.com/italia/design-react-kit/issues"><img src="https://img.shields.io/github/issues/italia/design-react-kit.svg" alt="GitHub issues"></a>
+</p>
+
+<p align="center">
+  <a href="https://developersitalia.slack.com/messages/C04J92F9XM2/">
+    <img src="https://img.shields.io/badge/Slack%20channel-%23design--dev--react-blue.svg" alt="Join the #design-system-react channel" />
+  </a>
+  <a href="https://slack.developers.italia.it/">
+    <img src="https://slack.developers.italia.it/badge.svg" alt="Get invited" />
+  </a>
+</p>
 
 _Read this in other languages: [Italiano](README.md)._
 
-**Important**: this kit has been designed to work with Bootstrap Italia v.1. There's no kit currently available for Bootstrap Italia v.2.
+_⚠️ Warning: this code is still under development and is not ready to be used! We are working on the update to bring the kit to version 5.0.0, comments and contributions from the entire community are more than welcome!_
+
+_⚠️ Warning: This kit was designed to work with Bootstrap Italia version 2.x. The kit for version 1.x of Bootstrap Italia has been deprecated and is located on the [4.x] branch (https://github.com/italia/design-react-kit/tree/4.x)._
 
 ## Intro
 
-**Design React kit** is a set of React components that implements [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) and [Design UI Kit](https://github.com/italia/design-ui-kit) styling, as [shown on InVision](https://invis.io/TWMUZS6VFP5).
+**Design React kit** is a set of React components that implements [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) and [Design UI Kit](https://github.com/italia/design-ui-kit) styling.
 
 Components are showcased with [Storybook](https://storybook.js.org/).
 
-Public version of Storybook is available [here](https://italia.github.io/design-react-kit) for the latest stable release, while [here](https://design-react-kit.vercel.app/) for the current development version built from `master` branch.
+Public version of Storybook is available [here](https://italia.github.io/design-react-kit) for the latest stable release, while [here](https://design-react-kit.vercel.app/) for the current development version built from `main` branch.
 
 ## Table of contents
 
@@ -36,7 +64,7 @@ Public version of Storybook is available [here](https://italia.github.io/design-
 
 ### Requirements
 
-- NodeJS
+- NodeJS (>= 18)
 - Yarn
 
 ## Usage
@@ -155,7 +183,7 @@ Once you have created a new component, with its history, starting _Storybook_ wi
 
 ### How to contribute
 
-To submit new content (feature or bug fixes) is required to fork the repository, starting from `master` create a new branch for the new feature: once completed the development (with tests when possible), create a PR to the original repository.
+To submit new content (feature or bug fixes) is required to fork the repository, starting from `main` create a new branch for the new feature: once completed the development (with tests when possible), create a PR to the original repository.
 
 #### Snapshot tests
 
@@ -193,11 +221,3 @@ The design kit follows the Guidelines for Public Services Design, within the Sec
 ## TypeScript typing definitions
 
 The library has been rewritten in Typescript and types are exported in the bundle.
-
-## Thanks
-
-<a href="https://www.chromatic.com/"><img src="https://user-images.githubusercontent.com/321738/84662277-e3db4f80-af1b-11ea-88f5-91d67a5e59f6.png" width="153" height="30" alt="Chromatic" /></a>
-
-Thanks to [Chromatic](https://www.chromatic.com/) for providing the visual testing platform that helps us review UI changes and catch visual regressions.
-
-Thanks to [Circle CI](https://www.circleci.com/) for providing the infrastructure for our Continuous Integration needs.
