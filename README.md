@@ -70,7 +70,7 @@ Per utilizzare Design React come dipendenza in un'app è possibile installarla d
 ```sh
 $ create-react-app nome-app
 $ cd nome-app
-$ yarn add design-react-kit --save
+$ yarn add design-react-kit@unstable --save
 ```
 
 ## Aggiungere bootstrap-italia ed i font
