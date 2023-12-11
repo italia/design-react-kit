@@ -6,6 +6,8 @@ import { Icon } from '../Icon/Icon';
 import { getTag, getFormControlClass, getClasses, getValidationTextControlClass, useFocus } from './utils';
 import type { CSSModule } from 'reactstrap/types/lib/utils';
 import { notifyDeprecation } from '../utils';
+import classNames from 'classnames';
+
 // taken from reactstrap types
 type InputType =
   | 'text'
@@ -33,6 +35,7 @@ type InputType =
   | 'datetime'
   | 'time'
   | 'color'
+  | 'adaptive'
   | 'currency'
   | 'percentage';
 
@@ -191,7 +194,7 @@ export const Input = ({
   const indeterminateCheckboxInput = type === 'checkbox' && className?.includes('semi-checked');
 
   // Styling
-  const { activeClass, validationTextClass, inputClasses, wrapperClass } = getClasses(
+  const { activeClass, extraLabelClass, validationTextClass, inputClasses, wrapperClass } = getClasses(
     className,
     type,
     {
@@ -227,6 +230,7 @@ export const Input = ({
     infoId,
     infoText,
     activeClass,
+    extraLabelClass,
     label,
     validationTextClass,
     validationText,
@@ -249,10 +253,15 @@ export const Input = ({
   if (['currency', 'percentage'].includes(type)) {
     return (
       <InputContainer {...containerProps}>
-        <div className='input-group'>
-          <div className='input-group-prepend'>
-            <div className='input-group-text'>{addonText}</div>
-          </div>
+        <div
+          className={classNames({
+            'input-group': true,
+            'input-number': true,
+            'input-number-percentage': type == 'percentage',
+            'input-number-currency': type == 'currency'
+          })}
+        >
+          <span className='input-group-text fw-semibold'>{addonText}</span>
           <Tag
             {...rest}
             {...extraAttributes}
@@ -261,6 +270,14 @@ export const Input = ({
             data-testid={testId}
             type='number'
           />
+          <span className='input-group-text align-buttons flex-column'>
+            <button className='input-number-add'>
+              <span className='visually-hidden'>Aumenta valore Euro</span>
+            </button>
+            <button className='input-number-sub'>
+              <span className='visually-hidden'>Diminuisci valore Euro</span>
+            </button>
+          </span>
         </div>
       </InputContainer>
     );

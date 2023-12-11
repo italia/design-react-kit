@@ -9,11 +9,9 @@ import { multiOptions } from './Autocomplete/AutocompleteExample';
 import { Input, Icon, TextArea, FormGroup } from '../../src';
 
 import Autocomplete from 'accessible-autocomplete/react'; // Reference to https://www.npmjs.com/package/accessible-autocomplete
-import 'accessible-autocomplete/dist/accessible-autocomplete.min.css';
+// import 'accessible-autocomplete/dist/accessible-autocomplete.min.css';
 //Used for custom style overriding accessible-autocomplete.min.css
-import './assets/css/accessible-autocomplete-styles.css';
-//Custom styles
-import './assets/css/custom.css';
+// import './assets/css/accessible-autocomplete-styles.css';
 
 export default {
   title: 'Componenti/Form/Input'
@@ -40,7 +38,14 @@ export const UtilizzoDiPlaceholderELabel = () => (
       label='Etichetta di esempio'
       type='text'
       placeholder='Testo di esempio'
-      validationText='Ulteriore testo informativo'
+      infoText='Ulteriore testo informativo'
+      id='exampleInfoText'
+    />
+    <Input
+      label='Etichetta di esempio'
+      type='text'
+      placeholder='Testo di esempio'
+      validationText='Campo non valido'
       id='examplevalidationText'
       invalid={true}
     />
@@ -277,7 +282,12 @@ export const AreaDiTesto = () => <TextArea label='Esempio di area di testo' rows
 AreaDiTesto.storyName = 'Area di testo';
 
 export const AreaDiTestoConSegnaposto = () => (
-  <TextArea rows={3} label='Esempio di area di testo' placeholder='Testo di esempio' />
+  <TextArea
+    rows={3}
+    label='Esempio di area di testo'
+    placeholder='Testo di esempio'
+    id='example-textarea-placeholder'
+  />
 );
 
 AreaDiTestoConSegnaposto.storyName = 'Area di testo con segnaposto';
@@ -289,6 +299,7 @@ export const InputNumericoDimensionamento = () => {
     <>
       <div className='w-100'>
         <Input
+          id='example-w100'
           type='number'
           label='Input Number inserito in una colonna a tutta larghezza'
           value={value}
@@ -299,6 +310,7 @@ export const InputNumericoDimensionamento = () => {
       </div>
       <div className='w-50 mt-5'>
         <Input
+          id='example-w50'
           type='number'
           label='Input Number inserito in una colonna di larghezza 50%'
           value={value50}
@@ -315,6 +327,7 @@ export const InputNumericoSteps = () => {
   const [value, setValue] = useState('100');
   return (
     <Input
+      id='example-steps'
       type='number'
       label='Min, Max & Step'
       value={value}
@@ -337,6 +350,7 @@ export const InputNumericoValuta = () => {
 
   return (
     <Input
+      id='example-currency'
       addonText='€'
       type='currency'
       label='Currency'
@@ -356,6 +370,7 @@ export const InputNumericoPercentuale = () => {
 
   return (
     <Input
+      id='example-percentage'
       addonText='%'
       type='percentage'
       label='Percentage'
@@ -386,6 +401,7 @@ export const InputNumericoRidimensionamento = () => {
 
   return (
     <Input
+      id='example-adaptive'
       innerRef={ref}
       type='number'
       label='Ridimensionamento'

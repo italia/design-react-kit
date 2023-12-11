@@ -99,18 +99,7 @@ export function getClasses(
     ),
     cssModule
   );
-  const wrapperClass = mapToCssModules(
-    classNames(
-      className,
-      {
-        'input-number-percentage': type == 'percentage',
-        'input-number-currency': type == 'currency'
-      },
-      originalWrapperClass,
-      'form-group'
-    ),
-    cssModule
-  );
+  const wrapperClass = mapToCssModules(classNames(className, originalWrapperClass, 'form-group'), cssModule);
   const validationTextClass = mapToCssModules(
     classNames(
       {
@@ -143,10 +132,17 @@ export function getClasses(
     cssModule
   );
 
+  const extraLabelClass = mapToCssModules(
+    classNames({
+      'input-number-label': ['number', 'currency', 'percentage'].includes(type)
+    })
+  );
+
   return {
     wrapperClass,
     inputClasses,
     activeClass,
+    extraLabelClass,
     validationTextClass
   };
 }

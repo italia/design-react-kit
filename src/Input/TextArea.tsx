@@ -66,7 +66,7 @@ export const TextArea = ({
   }
 
   // Styling
-  const { activeClass, validationTextClass, inputClasses, wrapperClass } = getClasses(
+  const { activeClass, extraLabelClass, validationTextClass, inputClasses, wrapperClass } = getClasses(
     className,
     'textarea',
     {
@@ -99,6 +99,7 @@ export const TextArea = ({
     infoId,
     infoText,
     activeClass,
+    extraLabelClass,
     label,
     validationTextClass,
     validationText,
