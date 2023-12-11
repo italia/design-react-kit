@@ -1,12 +1,8 @@
 # Design React Kit
 
-![CircleCI](https://img.shields.io/circleci/build/github/italia/design-react-kit)
-[![Join channel #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--devel-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
-[![Get an invitation for Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
-
 *Read this in other languages: [Italiano](README.md).*
 
-**Important**: this kit has been designed to work with Bootstrap Italia v.1. There's no kit currently available for Bootstrap Italia v.2.
+**Warning**: This kit was designed to work with Bootstrap Italia version 1.x and is currently deprecated. On the `main` branch you can find the project for version 2.x of Bootstrap Italia.
 
 ## Intro
 

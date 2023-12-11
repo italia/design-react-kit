@@ -1,16 +1,14 @@
-![CircleCI](https://img.shields.io/circleci/build/github/italia/design-react-kit)
-[![Partecipa sul canale #design-devel](https://img.shields.io/badge/Slack%20channel-%23design--devel-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
-[![Ricevi un invito a Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
+# Design React Kit
 
 *Read this in other languages: [English](README.EN.md).*
 
-**Importante**: questo kit è stato progettato per funzionare con la versione 1.x di Bootstrap Italia. Non esiste al momento un kit per la versione 2.x di Bootstrap Italia.
+**Importante**: questo kit è stato progettato per funzionare con la versione 1.x di Bootstrap Italia e al momento è deprecato. Sul branch `main` trovate il progetto per la versione 2.x di Bootstrap Italia.
 
 ## Intro
 
 **Design React kit** è un set di componenti React che implementa [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) e gli stili presenti su [Design UI Kit](https://github.com/italia/design-ui-kit), come [mostrato su InVision](https://invis.io/TWMUZS6VFP5).
 
-Per navigare la libreria e visualizzare i componenti, è stato utilizzato [Storybook](https://storybook.js.org/).
+Per navigare la libreria e visualizzare i componsenti, è stato utilizzato [Storybook](https://storybook.js.org/).
 
 La versione pubblica dello Storybook è disponibile [qui](https://italia.github.io/design-react-kit) per l'ultima release stabile pubblicata, mentre [qui](https://design-react-kit.vercel.app/) per la versione  di sviluppo relativa al branch `master`.
 
