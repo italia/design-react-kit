@@ -256,32 +256,6 @@ export const Input = ({
     );
   }
 
-  if (addon && addonText) {
-    return (
-      <InputContainer {...containerProps}>
-        <div className='input-group'>
-          <div className='input-group-prepend'>
-            <div className='input-group-text'>{addonText}</div>
-          </div>
-          <Tag {...rest} {...extraAttributes} {...sharedAttributes} className={inputClasses} data-testid={testId} />
-        </div>
-      </InputContainer>
-    );
-  }
-
-  if (addon && addonText) {
-    return (
-      <InputContainer {...containerProps}>
-        <div className='input-group'>
-          <div className='input-group-prepend'>
-            <div className='input-group-text'>{addonText}</div>
-          </div>
-          <Tag {...rest} {...extraAttributes} {...sharedAttributes} className={inputClasses} data-testid={testId} />
-        </div>
-      </InputContainer>
-    );
-  }
-
   if (placeholder) {
     return (
       <InputContainer {...containerProps}>
