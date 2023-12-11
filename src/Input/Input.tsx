@@ -32,7 +32,9 @@ type InputType =
   | 'password'
   | 'datetime'
   | 'time'
-  | 'color';
+  | 'color'
+  | 'currency'
+  | 'percentage';
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   /** Il tipo specifico di input da utilizzare. Il valore di default è `text`. */
@@ -134,6 +136,7 @@ export const Input = ({
   let { bsSize, valid, invalid, ...rest } = attributes;
 
   const Tag = getTag({ tag, plaintext, staticInput, type });
+  addon = addonText != null ? true : addon;
   const formControlClass = getFormControlClass(
     {
       plaintext,
@@ -243,14 +246,21 @@ export const Input = ({
     );
   }
 
-  if (addon && addonText) {
+  if (['currency', 'percentage'].includes(type)) {
     return (
       <InputContainer {...containerProps}>
         <div className='input-group'>
           <div className='input-group-prepend'>
             <div className='input-group-text'>{addonText}</div>
           </div>
-          <Tag {...rest} {...extraAttributes} {...sharedAttributes} className={inputClasses} data-testid={testId} />
+          <Tag
+            {...rest}
+            {...extraAttributes}
+            {...sharedAttributes}
+            className={inputClasses}
+            data-testid={testId}
+            type='number'
+          />
         </div>
       </InputContainer>
     );

@@ -337,15 +337,13 @@ export const InputNumericoValuta = () => {
 
   return (
     <Input
-      addon='true'
       addonText='€'
-      type='number'
+      type='currency'
       label='Currency'
       value={value}
       step='any'
       min={3.5}
       max={100}
-      className={'input-number-currency'}
       onChange={(ev) => {
         setValue(ev.target.value);
       }}
@@ -358,14 +356,12 @@ export const InputNumericoPercentuale = () => {
 
   return (
     <Input
-      addon={true}
       addonText='%'
-      type='number'
+      type='percentage'
       label='Percentage'
       value={value}
       min={0}
       max={100}
-      className={'input-number-percentage'}
       onChange={(ev) => {
         setValue(ev.target.value);
       }}

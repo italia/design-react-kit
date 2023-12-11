@@ -99,7 +99,18 @@ export function getClasses(
     ),
     cssModule
   );
-  const wrapperClass = mapToCssModules(classNames(className, originalWrapperClass, 'form-group'), cssModule);
+  const wrapperClass = mapToCssModules(
+    classNames(
+      className,
+      {
+        'input-number-percentage': type == 'percentage',
+        'input-number-currency': type == 'currency'
+      },
+      originalWrapperClass,
+      'form-group'
+    ),
+    cssModule
+  );
   const validationTextClass = mapToCssModules(
     classNames(
       {
