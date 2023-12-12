@@ -132,10 +132,17 @@ export function getClasses(
     cssModule
   );
 
+  const extraLabelClass = mapToCssModules(
+    classNames({
+      'input-number-label': ['number', 'currency', 'adaptive', 'percentage'].includes(type)
+    })
+  );
+
   return {
     wrapperClass,
     inputClasses,
     activeClass,
+    extraLabelClass,
     validationTextClass
   };
 }

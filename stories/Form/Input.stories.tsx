@@ -1,18 +1,11 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
-import React, { useState, useCallback } from 'react';
-import { actions } from '@storybook/addon-actions';
-
-import { components } from 'react-select';
-import AsyncSelect from 'react-select/async';
+import React, { useState } from 'react';
 
 import { multiOptions } from './Autocomplete/AutocompleteExample';
 
 import { Input, Icon, TextArea, FormGroup } from '../../src';
 
 import Autocomplete from 'accessible-autocomplete/react'; // Reference to https://www.npmjs.com/package/accessible-autocomplete
-import 'accessible-autocomplete/dist/accessible-autocomplete.min.css';
-//Used for custom style overriding accessible-autocomplete.min.css
-import './assets/css/accessible-autocomplete-styles.css';
 
 export default {
   title: 'Componenti/Form/Input'
@@ -39,7 +32,14 @@ export const UtilizzoDiPlaceholderELabel = () => (
       label='Etichetta di esempio'
       type='text'
       placeholder='Testo di esempio'
-      validationText='Ulteriore testo informativo'
+      infoText='Ulteriore testo informativo'
+      id='exampleInfoText'
+    />
+    <Input
+      label='Etichetta di esempio'
+      type='text'
+      placeholder='Testo di esempio'
+      validationText='Campo non valido'
       id='examplevalidationText'
       invalid={true}
     />
@@ -163,7 +163,7 @@ export const InputPassword = () => (
     type='password'
     id='exampleInputPassword'
     label='Password con label, placeholder e testo di aiuto'
-    validationText='Inserisci almeno 8 caratteri e una lettera maiuscola'
+    infoText='Inserisci almeno 8 caratteri e una lettera maiuscola'
   />
 );
 
@@ -179,69 +179,6 @@ export const ReadonlyNormalizzato = () => (
 
 ReadonlyNormalizzato.storyName = 'Readonly normalizzato';
 
-export const _InputAutocompleteConDati = () => {
-  // "_" is used to show or propagate it externally
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [_, setValue] = useState('');
-
-  // memoize the component
-  const AutocompleteDropdownIndicator = useCallback(
-    (props) => (
-      <components.DropdownIndicator {...props}>
-        <span style={{ padding: '0px 5px' }} aria-hidden='true'>
-          <Icon icon='it-search' aria-hidden size='sm' />
-        </span>
-      </components.DropdownIndicator>
-    ),
-    []
-  );
-
-  const AutocompleteInput = useCallback((props) => {
-    if (props.isHidden) {
-      return <components.Input {...props} />;
-    }
-    return (
-      <div style={{ border: `1px dotted blue}` }}>
-        <components.Input {...props} />
-      </div>
-    );
-  }, []);
-
-  // @ts-ignore: ignore the types for now
-  const handleInputChange = (newValue) => {
-    const inputValue = newValue.replace(/\W/g, '');
-    setValue(inputValue);
-    return inputValue;
-  };
-
-  return (
-    <FormGroup>
-      <AsyncSelect
-        components={{
-          DropdownIndicator: AutocompleteDropdownIndicator,
-          Input: AutocompleteInput,
-          IndicatorSeparator: null
-        }}
-        loadOptions={(inputValue, callback) => {
-          setTimeout(() => {
-            callback(multiOptions.filter((i) => i.label.toLowerCase().includes(inputValue.toLowerCase())));
-          }, 1000);
-        }}
-        cacheOptions
-        defaultOptions
-        onInputChange={handleInputChange}
-        classNamePrefix='react-autocomplete'
-        placeholder='Testo da cercare'
-      />
-      <label htmlFor='autocomplete-regioni' className='visually-hidden'>
-        Cerca nel sito
-      </label>
-    </FormGroup>
-  );
-};
-
-_InputAutocompleteConDati.storyName = 'Input autocomplete';
-
 export const _InputAutocompleteConDatiAccessibile = () => {
   // @ts-ignore
   const suggest = (query, populateResults) => {
@@ -253,16 +190,14 @@ export const _InputAutocompleteConDatiAccessibile = () => {
   };
 
   return (
-    <FormGroup>
+    <FormGroup className='select-wrapper'>
       <label htmlFor='autocomplete'>Provincia</label>
       <Autocomplete
         id='autocomplete'
         source={suggest}
-        autoselect
         placeholder={'Testo da cercare'}
         defaultValue={''}
-        className={''}
-        displayMenu={'overlay'}
+        displayMenu={'inline'}
         tNoResults={() => 'Nessun risultato'}
       />
     </FormGroup>
@@ -276,38 +211,60 @@ export const AreaDiTesto = () => <TextArea label='Esempio di area di testo' rows
 AreaDiTesto.storyName = 'Area di testo';
 
 export const AreaDiTestoConSegnaposto = () => (
-  <TextArea rows={3} label='Esempio di area di testo' placeholder='Testo di esempio' />
+  <TextArea
+    rows={3}
+    label='Esempio di area di testo'
+    placeholder='Testo di esempio'
+    id='example-textarea-placeholder'
+  />
 );
 
 AreaDiTestoConSegnaposto.storyName = 'Area di testo con segnaposto';
 
-export const InputNumericoDimensionamento = () => (
-  <>
-    <div className='w-100'>
-      <Input
-        type='number'
-        label='Input Number inserito in una colonna a tutta larghezza'
-        value='100'
-        {...actions('onChange')}
-      />
-    </div>
-    <div className='w-50 mt-5'>
-      <Input
-        type='number'
-        label='Input Number inserito in una colonna di larghezza 50%'
-        value='100'
-        {...actions('onChange')}
-      />
-    </div>
-  </>
-);
+export const InputNumericoDimensionamento = () => {
+  const [value, setValue] = useState('100');
+  const [value50, setValue50] = useState('100');
+  return (
+    <>
+      <div className='w-100'>
+        <Input
+          id='example-w100'
+          type='number'
+          label='Input Number inserito in una colonna a tutta larghezza'
+          incrementLabel='Aumenta il valore  di 1'
+          decrementLabel='Diminuisci il valore di 1'
+          value={value}
+          onChange={(ev) => {
+            setValue(ev.target.value);
+          }}
+        />
+      </div>
+      <div className='w-50 mt-5'>
+        <Input
+          id='example-w50'
+          type='number'
+          label='Input Number inserito in una colonna di larghezza 50%'
+          incrementLabel='Aumenta il valore  di 1'
+          decrementLabel='Diminuisci il valore di 1'
+          value={value50}
+          onChange={(ev) => {
+            setValue50(ev.target.value);
+          }}
+        />
+      </div>
+    </>
+  );
+};
 
 export const InputNumericoSteps = () => {
   const [value, setValue] = useState('100');
   return (
     <Input
+      id='example-steps'
       type='number'
       label='Min, Max & Step'
+      incrementLabel='Aumenta il valore  di 500'
+      decrementLabel='Diminuisci il valore di 500'
       value={value}
       min={-2000}
       max={15000}
@@ -321,4 +278,68 @@ export const InputNumericoSteps = () => {
 
 export const InputNumericoDisabilitato = () => {
   return <Input type='number' label='Disabled' value='50' min={0} max={100} disabled />;
+};
+
+export const InputNumericoValuta = () => {
+  const [value, setValue] = useState('100');
+
+  return (
+    <Input
+      id='example-currency'
+      addonText='€'
+      type='currency'
+      label='Currency'
+      incrementLabel='Aumenta il valore di 1 euro'
+      decrementLabel='Diminuisci il valore di 1 euro'
+      value={value}
+      step='any'
+      min={3.5}
+      max={100}
+      onChange={(ev) => {
+        setValue(ev.target.value);
+      }}
+    />
+  );
+};
+
+export const InputNumericoPercentuale = () => {
+  const [value, setValue] = useState('100');
+
+  return (
+    <Input
+      id='example-percentage'
+      addonText='%'
+      type='percentage'
+      label='Percentage'
+      incrementLabel='Aumenta il valore in percentuale di 1'
+      decrementLabel='Diminuisci il valore in percentuale di 1'
+      value={value}
+      min={0}
+      max={100}
+      onChange={(ev) => {
+        setValue(ev.target.value);
+      }}
+    />
+  );
+};
+
+export const InputNumericoRidimensionamento = () => {
+  const [value, setValue] = useState('100');
+
+  return (
+    <Input
+      id='example-adaptive'
+      type='adaptive'
+      label='Ridimensionamento'
+      incrementLabel='Aumenta il valore  di 1'
+      decrementLabel='Diminuisci il valore di 1'
+      value={value}
+      placeholder={'0'}
+      min={0}
+      max={99999999999}
+      onChange={(ev) => {
+        setValue(ev.target.value);
+      }}
+    />
+  );
 };

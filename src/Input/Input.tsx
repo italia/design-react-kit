@@ -1,4 +1,13 @@
-import React, { InputHTMLAttributes, ElementType, Ref, ReactNode, useCallback, useState } from 'react';
+import React, {
+  InputHTMLAttributes,
+  ElementType,
+  Ref,
+  ReactNode,
+  useCallback,
+  useState,
+  useRef,
+  useEffect
+} from 'react';
 import isNumber from 'is-number';
 
 import { InputContainer } from './InputContainer';
@@ -6,6 +15,8 @@ import { Icon } from '../Icon/Icon';
 import { getTag, getFormControlClass, getClasses, getValidationTextControlClass, useFocus } from './utils';
 import type { CSSModule } from 'reactstrap/types/lib/utils';
 import { notifyDeprecation } from '../utils';
+import classNames from 'classnames';
+
 // taken from reactstrap types
 type InputType =
   | 'text'
@@ -32,7 +43,10 @@ type InputType =
   | 'password'
   | 'datetime'
   | 'time'
-  | 'color';
+  | 'color'
+  | 'adaptive'
+  | 'currency'
+  | 'percentage';
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   /** Il tipo specifico di input da utilizzare. Il valore di default è `text`. */
@@ -42,6 +56,10 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   size?: number;
   /** Etichetta del campo Input. */
   label?: string | ReactNode;
+  /** Etichetta del pulsante incremento. */
+  incrementLabel?: string | ReactNode;
+  /** Etichetta del pulsante decremento. */
+  decrementLabel?: string | ReactNode;
   /** Testo di esempio da utilizzare per il campo. */
   placeholder?: string;
   /** Testo di validazione per l'elemento del moduleo form. */
@@ -63,6 +81,8 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   plaintext?: boolean;
   /** Utilizzare per mostrare un elemento addon a fianco (prima o dopo) il campo input all'interno del componente */
   addon?: boolean;
+  /** Utilizzare per mostrare un elemento un simbolo attivando la proprietà addon nel campo input all'interno del componente */
+  addonText?: string;
   /** Oggetto contenente la nuova mappatura per le classi CSS. */
   cssModule?: CSSModule;
   /** Classi aggiuntive da usare per il wrapper del componente Input */
@@ -99,10 +119,13 @@ export const Input = ({
   state,
   tag,
   addon,
+  addonText,
   static: staticInput,
   plaintext,
   innerRef,
   label,
+  incrementLabel,
+  decrementLabel,
   validationText,
   infoText,
   placeholder,
@@ -128,9 +151,24 @@ export const Input = ({
     toggleIcon(!hasIcon);
   }, [hasIcon, isHidden]);
 
+  const divResizeRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const [width, setWidth] = useState('100');
+
+  useEffect(() => {
+    if (divResizeRef.current != null && divResizeRef.current.classList.contains('input-number-adaptive')) {
+      if (!value) {
+        setWidth(`calc(70px)`);
+      } else {
+        setWidth(`calc(70px + ${`${value}`.length}ch)`);
+      }
+    }
+  }, [value]);
+
   let { bsSize, valid, invalid, ...rest } = attributes;
 
   const Tag = getTag({ tag, plaintext, staticInput, type });
+  addon = addonText != null ? true : addon;
   const formControlClass = getFormControlClass(
     {
       plaintext,
@@ -185,7 +223,7 @@ export const Input = ({
   const indeterminateCheckboxInput = type === 'checkbox' && className?.includes('semi-checked');
 
   // Styling
-  const { activeClass, validationTextClass, inputClasses, wrapperClass } = getClasses(
+  const { activeClass, extraLabelClass, validationTextClass, inputClasses, wrapperClass } = getClasses(
     className,
     type,
     {
@@ -221,6 +259,7 @@ export const Input = ({
     infoId,
     infoText,
     activeClass,
+    extraLabelClass,
     label,
     validationTextClass,
     validationText,
@@ -237,6 +276,64 @@ export const Input = ({
         placeholder={placeholder}
         data-testid={testId}
       />
+    );
+  }
+
+  const clickIncrDecr = (mode: number) => {
+    var step = parseFloat(inputRef.current?.step ? inputRef.current.step : '1');
+    const min = parseFloat(inputRef.current?.min ? inputRef.current.min : 'Nan');
+    const max = parseFloat(inputRef.current?.max ? inputRef.current.max : 'Nan');
+    step = isNaN(step) ? 1 : step;
+    const newValue = parseFloat(inputRef.current?.value ? inputRef.current.value : '0') + mode * step;
+    if (!isNaN(max) && newValue > max) {
+      return;
+    }
+    if (!isNaN(min) && newValue < min) {
+      return;
+    }
+    const nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value')?.set;
+    nativeInputValueSetter?.call(inputRef.current, `${newValue}`);
+    var ev2 = new Event('input', { bubbles: true });
+    inputRef.current?.dispatchEvent(ev2);
+  };
+
+  if (['currency', 'percentage', 'adaptive', 'number'].includes(type)) {
+    return (
+      <InputContainer {...containerProps}>
+        <div
+          className={classNames({
+            'input-group': true,
+            'input-number': true,
+            disabled: rest.disabled,
+            'input-number-percentage': type == 'percentage',
+            'input-number-currency': type == 'currency',
+            'input-number-adaptive': type == 'adaptive'
+          })}
+          style={{ width }}
+          ref={divResizeRef}
+        >
+          {['currency', 'percentage'].includes(type) && (
+            <span className='input-group-text fw-semibold'>{addonText}</span>
+          )}
+          <Tag
+            {...rest}
+            {...extraAttributes}
+            {...sharedAttributes}
+            className={inputClasses}
+            data-testid={testId}
+            type='number'
+            ref={inputRef}
+          />
+          <span className='input-group-text align-buttons flex-column'>
+            <button className='input-number-add' onClick={() => clickIncrDecr(1)}>
+              <span className='visually-hidden'>{incrementLabel || ''}</span>
+            </button>
+            <button className='input-number-sub' onClick={() => clickIncrDecr(-1)}>
+              <span className='visually-hidden'>{decrementLabel || ''}</span>
+            </button>
+          </span>
+        </div>
+      </InputContainer>
     );
   }
 
