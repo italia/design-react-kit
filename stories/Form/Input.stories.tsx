@@ -169,7 +169,7 @@ export const InputPassword = () => (
     type='password'
     id='exampleInputPassword'
     label='Password con label, placeholder e testo di aiuto'
-    validationText='Inserisci almeno 8 caratteri e una lettera maiuscola'
+    infoText='Inserisci almeno 8 caratteri e una lettera maiuscola'
   />
 );
 
