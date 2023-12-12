@@ -56,6 +56,10 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   size?: number;
   /** Etichetta del campo Input. */
   label?: string | ReactNode;
+  /** Etichetta del pulsante incremento. */
+  incrementLabel?: string | ReactNode;
+  /** Etichetta del pulsante decremento. */
+  decrementLabel?: string | ReactNode;
   /** Testo di esempio da utilizzare per il campo. */
   placeholder?: string;
   /** Testo di validazione per l'elemento del moduleo form. */
@@ -120,6 +124,8 @@ export const Input = ({
   plaintext,
   innerRef,
   label,
+  incrementLabel,
+  decrementLabel,
   validationText,
   infoText,
   placeholder,
@@ -291,13 +297,14 @@ export const Input = ({
     inputRef.current?.dispatchEvent(ev2);
   };
 
-  if (['currency', 'percentage', 'adaptive'].includes(type)) {
+  if (['currency', 'percentage', 'adaptive', 'number'].includes(type)) {
     return (
       <InputContainer {...containerProps}>
         <div
           className={classNames({
             'input-group': true,
             'input-number': true,
+            disabled: rest.disabled,
             'input-number-percentage': type == 'percentage',
             'input-number-currency': type == 'currency',
             'input-number-adaptive': type == 'adaptive'
@@ -305,7 +312,9 @@ export const Input = ({
           style={{ width }}
           ref={divResizeRef}
         >
-          {type != 'adaptive' && <span className='input-group-text fw-semibold'>{addonText}</span>}
+          {['currency', 'percentage'].includes(type) && (
+            <span className='input-group-text fw-semibold'>{addonText}</span>
+          )}
           <Tag
             {...rest}
             {...extraAttributes}
@@ -317,10 +326,10 @@ export const Input = ({
           />
           <span className='input-group-text align-buttons flex-column'>
             <button className='input-number-add' onClick={() => clickIncrDecr(1)}>
-              <span className='visually-hidden'>Aumenta valore Euro</span>
+              <span className='visually-hidden'>{incrementLabel || ''}</span>
             </button>
             <button className='input-number-sub' onClick={() => clickIncrDecr(-1)}>
-              <span className='visually-hidden'>Diminuisci valore Euro</span>
+              <span className='visually-hidden'>{decrementLabel || ''}</span>
             </button>
           </span>
         </div>
