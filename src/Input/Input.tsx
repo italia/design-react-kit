@@ -146,6 +146,7 @@ export const Input = ({
   }, [hasIcon, isHidden]);
 
   const divResizeRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const [width, setWidth] = useState('100');
 
   useEffect(() => {
@@ -272,6 +273,24 @@ export const Input = ({
     );
   }
 
+  const clickIncrDecr = (mode: number) => {
+    var step = parseFloat(inputRef.current?.step ? inputRef.current.step : '1');
+    const min = parseFloat(inputRef.current?.min ? inputRef.current.min : 'Nan');
+    const max = parseFloat(inputRef.current?.max ? inputRef.current.max : 'Nan');
+    step = isNaN(step) ? 1 : step;
+    const newValue = parseFloat(inputRef.current?.value ? inputRef.current.value : '0') + mode * step;
+    if (!isNaN(max) && newValue > max) {
+      return;
+    }
+    if (!isNaN(min) && newValue < min) {
+      return;
+    }
+    const nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value')?.set;
+    nativeInputValueSetter?.call(inputRef.current, `${newValue}`);
+    var ev2 = new Event('input', { bubbles: true });
+    inputRef.current?.dispatchEvent(ev2);
+  };
+
   if (['currency', 'percentage', 'adaptive'].includes(type)) {
     return (
       <InputContainer {...containerProps}>
@@ -294,7 +313,16 @@ export const Input = ({
             className={inputClasses}
             data-testid={testId}
             type='number'
+            ref={inputRef}
           />
+          <span className='input-group-text align-buttons flex-column'>
+            <button className='input-number-add' onClick={() => clickIncrDecr(1)}>
+              <span className='visually-hidden'>Aumenta valore Euro</span>
+            </button>
+            <button className='input-number-sub' onClick={() => clickIncrDecr(-1)}>
+              <span className='visually-hidden'>Diminuisci valore Euro</span>
+            </button>
+          </span>
         </div>
       </InputContainer>
     );
