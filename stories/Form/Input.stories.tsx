@@ -1,8 +1,5 @@
 /* eslint jsx-a11y/anchor-is-valid: 0 */
-import React, { useState, useCallback, useRef, useEffect } from 'react';
-
-import { components } from 'react-select';
-import AsyncSelect from 'react-select/async';
+import React, { useState } from 'react';
 
 import { multiOptions } from './Autocomplete/AutocompleteExample';
 
@@ -181,69 +178,6 @@ export const ReadonlyNormalizzato = () => (
 );
 
 ReadonlyNormalizzato.storyName = 'Readonly normalizzato';
-
-export const _InputAutocompleteConDati = () => {
-  // "_" is used to show or propagate it externally
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [_, setValue] = useState('');
-
-  // memoize the component
-  const AutocompleteDropdownIndicator = useCallback(
-    (props) => (
-      <components.DropdownIndicator {...props}>
-        <span style={{ padding: '0px 5px' }} aria-hidden='true'>
-          <Icon icon='it-search' aria-hidden size='sm' />
-        </span>
-      </components.DropdownIndicator>
-    ),
-    []
-  );
-
-  const AutocompleteInput = useCallback((props) => {
-    if (props.isHidden) {
-      return <components.Input {...props} />;
-    }
-    return (
-      <div style={{ border: `1px dotted blue}` }}>
-        <components.Input {...props} />
-      </div>
-    );
-  }, []);
-
-  // @ts-ignore: ignore the types for now
-  const handleInputChange = (newValue) => {
-    const inputValue = newValue.replace(/\W/g, '');
-    setValue(inputValue);
-    return inputValue;
-  };
-
-  return (
-    <FormGroup>
-      <AsyncSelect
-        components={{
-          DropdownIndicator: AutocompleteDropdownIndicator,
-          Input: AutocompleteInput,
-          IndicatorSeparator: null
-        }}
-        loadOptions={(inputValue, callback) => {
-          setTimeout(() => {
-            callback(multiOptions.filter((i) => i.label.toLowerCase().includes(inputValue.toLowerCase())));
-          }, 1000);
-        }}
-        cacheOptions
-        defaultOptions
-        onInputChange={handleInputChange}
-        classNamePrefix='react-autocomplete'
-        placeholder='Testo da cercare'
-      />
-      <label htmlFor='autocomplete-regioni' className='visually-hidden'>
-        Cerca nel sito
-      </label>
-    </FormGroup>
-  );
-};
-
-_InputAutocompleteConDati.storyName = 'Input autocomplete';
 
 export const _InputAutocompleteConDatiAccessibile = () => {
   // @ts-ignore
