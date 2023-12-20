@@ -1,17 +1,16 @@
 const CircularDependencyPlugin = require('circular-dependency-plugin');
 
 module.exports = {
-  core: {
-    builder: 'webpack5'
-  },
   stories: ['../stories/**/*.stories.@(ts|tsx|js|jsx|mdx)'],
+
   addons: [
     '@storybook/addon-postcss',
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@storybook/addon-a11y'
+    '@storybook/addon-a11y',
+    '@storybook/addon-mdx-gfm'
   ],
-  reactOptions: { legacyRootApi: true },
+
   // https://storybook.js.org/docs/react/configure/typescript#mainjs-configuration
   typescript: {
     check: true, // type-check stories during Storybook build
@@ -23,6 +22,7 @@ module.exports = {
       }
     }
   },
+
   webpackFinal: async (config, { configType }) => {
     const assetRule = config.module.rules.find(({ test }) => test && test.test('.svg'));
     // exclude svg from the default storybook file-loader
@@ -45,5 +45,18 @@ module.exports = {
 
     return config;
   },
-  staticDirs: ['../static', { from: '../assets', to: '/' }]
+
+  staticDirs: ['../static', { from: '../assets', to: '/' }],
+
+  framework: {
+    name: '@storybook/react-webpack5',
+
+    options: {
+      legacyRootApi: true
+    }
+  },
+
+  docs: {
+    autodocs: true
+  }
 };
