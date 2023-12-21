@@ -88,8 +88,8 @@
     "./{src,stories,test}/**/*.{js,ts,tsx,jsx,mdx}": "yarn lint:staged"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.0",
-    "@babel/helper-remap-async-to-generator": "^7.18.9",
+    "@babel/core": "7.22.20",
+    "@babel/helper-remap-async-to-generator": "^7.22.20",
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
     "@rollup/plugin-url": "^6.0.0",
