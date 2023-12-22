@@ -36,7 +36,6 @@ export const getBorderStyleFix = (fix: NotificationCommonProps['fix']) => {
 
   const customStyle: CSSProperties = {};
   for (const borderPos of borderReset) {
-    // @ts-ignore
     customStyle[borderPos] = 'none';
   }
   return customStyle;
