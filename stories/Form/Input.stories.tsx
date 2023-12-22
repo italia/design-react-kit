@@ -343,3 +343,20 @@ export const InputNumericoRidimensionamento = () => {
     />
   );
 };
+
+export const InputDatepicker = () => {
+  const [value, setValue] = useState('');
+
+  return (
+    <Input
+      type='date'
+      label='Datepicker'
+      className='active'
+      placeholder='22/12/2023'
+      value={value}
+      onChange={(ev) => {
+        setValue(ev.target.value);
+      }}
+    />
+  );
+};
