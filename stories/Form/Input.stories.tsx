@@ -360,3 +360,19 @@ export const InputDatepicker = () => {
     />
   );
 };
+
+export const InputHourpicker = () => {
+  const [value, setValue] = useState('');
+
+  return (
+    <Input
+      type='time'
+      label='Hourpicker'
+      className='active'
+      value={value}
+      onChange={(ev) => {
+        setValue(ev.target.value);
+      }}
+    />
+  );
+};
