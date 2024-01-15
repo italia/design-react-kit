@@ -100,9 +100,7 @@ export const AutoDimensionamento = () => (
         Username
       </label>
       <div className='input-group'>
-        <div className='input-group-prepend'>
-          <div className='input-group-text'>@</div>
-        </div>
+        <span className='input-group-text'>@</span>
         <input type='text' className='form-control' id='inlineFormInputGroup' placeholder='Username' />
       </div>
     </Col>

@@ -14,11 +14,9 @@ const InputIconButtonExample = () => {
     <div>
       <div className='form-group'>
         <div className='input-group'>
-          <div className='input-group-prepend'>
-            <div className='input-group-text'>
-              <Icon icon='it-pencil' aria-hidden size='sm' />
-            </div>
-          </div>
+          <span className='input-group-text'>
+            <Icon icon='it-pencil' aria-hidden size='sm' />
+          </span>
           <label htmlFor='input-group-1' className={isFocused ? 'active' : ''}>
             Con Etichetta
           </label>
@@ -30,20 +28,13 @@ const InputIconButtonExample = () => {
             id='input-group-1'
             name='input-group-1'
           />
-          <div className='input-group-append'>
-            <button className='btn' type='button' id='button-1'>
-              Invio
-            </button>
-          </div>
         </div>
       </div>
       <div className='form-group'>
         <div className='input-group'>
-          <div className='input-group-prepend'>
-            <div className='input-group-text'>
-              <Icon icon='it-pencil' color='danger' aria-hidden size='sm' />
-            </div>
-          </div>
+          <span className='input-group-text'>
+            <Icon icon='it-pencil' color='danger' aria-hidden size='sm' />
+          </span>
           <label htmlFor='input-group-2' className='active'>
             Con Etichetta e placeholder
           </label>
@@ -56,20 +47,13 @@ const InputIconButtonExample = () => {
             name='input-group-2'
             placeholder='Lorem Ipsum'
           />
-          <div className='input-group-append'>
-            <button className='btn' type='button' id='button-2'>
-              Invio
-            </button>
-          </div>
         </div>
       </div>
       <div className='form-group'>
         <div className='input-group'>
-          <div className='input-group-prepend'>
-            <div className='input-group-text'>
-              <Icon icon='it-pencil' color='primary' aria-hidden size='sm' />
-            </div>
-          </div>
+          <span className='input-group-text'>
+            <Icon icon='it-pencil' color='primary' aria-hidden size='sm' />
+          </span>
           <label htmlFor='input-group-3' className={isFocused ? 'active' : ''}>
             Con Etichetta e bottone di tipo primary
           </label>
