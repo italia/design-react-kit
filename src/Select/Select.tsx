@@ -1,6 +1,4 @@
 import React, { ChangeEvent, ReactElement, SelectHTMLAttributes } from 'react';
-import { Input } from 'reactstrap';
-import { InputType } from 'reactstrap/types/lib/Input';
 
 export interface SelectProps extends Omit<SelectHTMLAttributes<HTMLSelectElement>, 'onChange'> {
   /**
@@ -29,8 +27,6 @@ export const Select = ({ id, disabled = false, label, children, onChange }: Sele
   };
 
   const inputProps = {
-    name: 'select',
-    type: 'select' as InputType,
     disabled: disabled,
     handleChange: handleChange
   };
@@ -40,14 +36,14 @@ export const Select = ({ id, disabled = false, label, children, onChange }: Sele
       {id ? (
         <>
           <label htmlFor={id}>{label}</label>
-          <Input id={id} {...inputProps}>
+          <select id={id} {...inputProps}>
             {children}
-          </Input>
+          </select>
         </>
       ) : (
         <label>
           {label}
-          <Input {...inputProps}>{children}</Input>
+          <select {...inputProps}>{children}</select>
         </label>
       )}
     </div>
