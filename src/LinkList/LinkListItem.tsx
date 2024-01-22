@@ -81,7 +81,7 @@ export const LinkListItem: FC<LinkListItemProps> = ({
   return (
     <li className={wrapperClassName} data-testid={testId}>
       <Tag {...attributes} className={classes} href={href} {...handlers}>
-        {children}
+        <span className='list-item-title-icon-wrapper'>{children}</span>
       </Tag>
     </li>
   );
