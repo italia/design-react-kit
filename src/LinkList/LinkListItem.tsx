@@ -86,7 +86,13 @@ export const LinkListItem: FC<LinkListItemProps> & {
 
   return (
     <li className={wrapperClassName} data-testid={testId}>
-      <Tag {...attributes} className={classes} href={href} {...handlers}>
+      <Tag
+        role={attributes.onClick ? 'button' : undefined}
+        {...attributes}
+        className={classes}
+        href={href}
+        {...handlers}
+      >
         {children}
       </Tag>
     </li>
