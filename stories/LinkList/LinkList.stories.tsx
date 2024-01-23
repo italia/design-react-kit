@@ -150,17 +150,17 @@ export const Sizing = () => (
     <LinkListItem header href='#'>
       Heading
     </LinkListItem>
-    <LinkListItem size='large' href='#'>
+    <LinkListItem large href='#'>
       <span>Link list 1</span>
     </LinkListItem>
-    <LinkListItem size='large' href='#'>
+    <LinkListItem large href='#'>
       <span>Link list 2</span>
     </LinkListItem>
-    <LinkListItem size='large' href='#'>
+    <LinkListItem large href='#'>
       <span>Link list 3</span>
     </LinkListItem>
     <LinkListItem divider />
-    <LinkListItem size='large' href='#'>
+    <LinkListItem large href='#'>
       <span>Link list 4</span>
     </LinkListItem>
   </LinkList>
@@ -170,19 +170,19 @@ TitoloLista.storyName = 'Titolo lista';
 
 export const EsempioMultiline = () => (
   <LinkList multiline>
-    <LinkListItem active className='right-icon' href='#'>
+    <LinkListItem active className='icon-right' href='#'>
       <span>Link list 1 active</span>
       <Icon color='primary' icon='it-chevron-right' aria-hidden />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
     </LinkListItem>
     <LinkListItem divider />
-    <LinkListItem className='right-icon' href='#'>
+    <LinkListItem className='icon-right' href='#'>
       <span>Link list 2</span>
       <Icon color='primary' icon='it-chevron-right' aria-hidden />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
     </LinkListItem>
     <LinkListItem divider />
-    <LinkListItem disabled className='right-icon' href='#'>
+    <LinkListItem disabled className='icon-right' href='#'>
       <span>Link list 3 disabled</span> <Icon color='primary' icon='it-chevron-right' aria-hidden />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
     </LinkListItem>

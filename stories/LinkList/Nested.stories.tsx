@@ -6,14 +6,12 @@ import LinkListCollapsibleExample from './LinkListCollapsibleExample';
 
 const NavigationComponent = () => (
   <LinkList>
-    <LinkListItem size='medium' className='right-icon'>
+    <LinkListItem bold large className='icon-right'>
       <span>Link list 1 </span>
-      <i className='it-favorite right' />
       <Icon icon='it-link' color='primary' className='right' />
     </LinkListItem>
-    <LinkListItem size='medium' className='right-icon'>
+    <LinkListItem bold large className='icon-right'>
       <span>Link list 2 </span>
-      <i className='it-favorite right' />
       <Icon icon='it-link' color='primary' className='right' />
     </LinkListItem>
     <LinkList sublist>
@@ -27,9 +25,8 @@ const NavigationComponent = () => (
         <span>Link list 6 </span>
       </LinkListItem>
     </LinkList>
-    <LinkListItem size='medium' className='right-icon'>
+    <LinkListItem bold large className='icon-right'>
       <span>Link list 3 </span>
-      <i className='it-favorite right' />
       <Icon icon='it-link' color='primary' className='right' />
     </LinkListItem>
   </LinkList>

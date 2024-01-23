@@ -6,6 +6,10 @@ export interface LinkListItemProps extends AnchorHTMLAttributes<HTMLAnchorElemen
   active?: boolean;
   /** Indica se l'elemento è disabilitato o no */
   disabled?: boolean;
+  /** Indica se l'elemento ha dimensioni larghe o no */
+  large?: boolean;
+  /** Indica se l'elemento è bold o no */
+  bold?: boolean;
   /** Indica se l'elemento è un titolo. */
   header?: boolean;
   /** Indica se l'elemento è un divisore */
@@ -18,8 +22,6 @@ export interface LinkListItemProps extends AnchorHTMLAttributes<HTMLAnchorElemen
   wrapperClassName?: string;
   /** Indica il link a cui l'elemento deve puntare. */
   href?: string;
-  /** Utilizzato per aumentare taglia/grandezza dell'elemento: può essere "medium" o "large". */
-  size?: 'medium' | 'large';
   testId?: string;
 }
 
@@ -33,8 +35,9 @@ export const LinkListItem: FC<LinkListItemProps> = ({
   disabled,
   header,
   divider,
+  bold,
+  large,
   href,
-  size,
   tag = 'a',
   wrapperClassName,
   testId,
@@ -49,7 +52,8 @@ export const LinkListItem: FC<LinkListItemProps> = ({
       disabled,
       header,
       divider,
-      size
+      large: large,
+      medium: bold
     },
     'list-item'
   );
@@ -65,6 +69,8 @@ export const LinkListItem: FC<LinkListItemProps> = ({
   } else if (divider) {
     Tag = 'span';
   }
+
+  console.log(classes);
 
   if (header && href) {
     return (
