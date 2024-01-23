@@ -29,7 +29,9 @@ const handleDisabledOnClick = (e: MouseEvent<HTMLAnchorElement>) => {
   e.preventDefault();
 };
 
-export const LinkListItem: FC<LinkListItemProps> = ({
+export const LinkListItem: FC<LinkListItemProps> & {
+  TitleIconWrapper: typeof LinkListTitleIconWrapper; // add this
+} = ({
   className,
   active,
   disabled,
@@ -70,8 +72,6 @@ export const LinkListItem: FC<LinkListItemProps> = ({
     Tag = 'span';
   }
 
-  console.log(classes);
-
   if (header && href) {
     return (
       <li className={wrapperClassName} data-testid={testId}>
@@ -87,8 +87,14 @@ export const LinkListItem: FC<LinkListItemProps> = ({
   return (
     <li className={wrapperClassName} data-testid={testId}>
       <Tag {...attributes} className={classes} href={href} {...handlers}>
-        <span className='list-item-title-icon-wrapper'>{children}</span>
+        {children}
       </Tag>
     </li>
   );
 };
+
+const LinkListTitleIconWrapper: FC<LinkListItemProps> = ({ children }) => {
+  return <span className='list-item-title-icon-wrapper'>{children}</span>;
+};
+
+LinkListItem.TitleIconWrapper = LinkListTitleIconWrapper;

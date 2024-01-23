@@ -7,12 +7,16 @@ import LinkListCollapsibleExample from './LinkListCollapsibleExample';
 const NavigationComponent = () => (
   <LinkList>
     <LinkListItem bold large className='icon-right'>
-      <span>Link list 1 </span>
-      <Icon icon='it-link' color='primary' className='right' />
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 1 </span>
+        <Icon icon='it-link' color='primary' className='right' />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
     <LinkListItem bold large className='icon-right'>
-      <span>Link list 2 </span>
-      <Icon icon='it-link' color='primary' className='right' />
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 2 </span>
+        <Icon icon='it-link' color='primary' className='right' />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
     <LinkList sublist>
       <LinkListItem>
@@ -26,8 +30,10 @@ const NavigationComponent = () => (
       </LinkListItem>
     </LinkList>
     <LinkListItem bold large className='icon-right'>
-      <span>Link list 3 </span>
-      <Icon icon='it-link' color='primary' className='right' />
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 3 </span>
+        <Icon icon='it-link' color='primary' className='right' />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
   </LinkList>
 );

@@ -5,16 +5,22 @@ import { LinkList, LinkListItem, Toggle, Input, Label, FormGroup, Icon } from '.
 const ControlliComponent = () => (
   <LinkList>
     <LinkListItem active className='icon-left'>
-      <Icon color='primary' icon='it-chevron-right' aria-hidden />
-      <span>Link list 1 active</span>
+      <LinkListItem.TitleIconWrapper>
+        <Icon color='primary' icon='it-chevron-right' aria-hidden />
+        <span>Link list 1 active</span>
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
     <LinkListItem className='icon-left'>
-      <Icon color='primary' icon='it-chevron-right' aria-hidden />
-      <span>Link list 2</span>
+      <LinkListItem.TitleIconWrapper>
+        <Icon color='primary' icon='it-chevron-right' aria-hidden />
+        <span>Link list 2</span>
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
     <LinkListItem disabled className='icon-left'>
-      <Icon color='primary' icon='it-chevron-right' aria-hidden />
-      <span>Link list 3 disabled</span>
+      <LinkListItem.TitleIconWrapper>
+        <Icon color='primary' icon='it-chevron-right' aria-hidden />
+        <span>Link list 3 disabled</span>
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
   </LinkList>
 );
@@ -22,16 +28,22 @@ const ControlliComponent = () => (
 const ControlliSecondariComponent = () => (
   <LinkList>
     <LinkListItem active className='icon-right'>
-      <span>Link list 1 active</span>
-      <Icon color='primary' icon='it-link' aria-hidden />
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 1 active</span>
+        <Icon color='primary' icon='it-link' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
     <LinkListItem className='icon-right'>
-      <span>Link list 2</span>
-      <Icon color='primary' icon='it-link' aria-hidden />
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 2</span>
+        <Icon color='primary' icon='it-link' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
     <LinkListItem disabled className='icon-right'>
-      <span>Link list 3 disabled</span>
-      <Icon color='primary' icon='it-link' aria-hidden />
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 3 disabled</span>
+        <Icon color='primary' icon='it-link' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
   </LinkList>
 );
@@ -39,16 +51,22 @@ const ControlliSecondariComponent = () => (
 export const PrimaryESecondaryAction = () => (
   <LinkList>
     <LinkListItem active className='icon-right'>
-      <span>Link list 1 active</span>
-      <Icon color='primary' icon='it-link' aria-hidden />
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 1 active</span>
+        <Icon color='primary' icon='it-link' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
     <LinkListItem className='icon-right'>
-      <span>Link list 2</span>
-      <Icon color='primary' icon='it-link' aria-hidden />
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 2</span>
+        <Icon color='primary' icon='it-link' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
     <LinkListItem disabled className='icon-right'>
-      <span>Link list 3 disabled</span>
-      <Icon color='primary' icon='it-link' aria-hidden />
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 3 disabled</span>
+        <Icon color='primary' icon='it-link' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
   </LinkList>
 );

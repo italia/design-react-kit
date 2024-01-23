@@ -102,8 +102,7 @@ export const _StatoDisabilitato = () => (
 );
 
 export const HeaderEDividerNoLink = () => (
-  <LinkList>
-    <LinkListItem header>Heading senza link</LinkListItem>
+  <LinkList header={<div className='link-list-heading'>Intestazione senza link</div>}>
     <LinkListItem>
       <span>Link list 1</span>
     </LinkListItem>
@@ -123,10 +122,13 @@ export const HeaderEDividerNoLink = () => (
 HeaderEDividerNoLink.storyName = 'Header e Divider (senza link)';
 
 export const HeaderEDividerConLink = () => (
-  <LinkList>
-    <LinkListItem header href='#'>
-      Heading con link
-    </LinkListItem>
+  <LinkList
+    header={
+      <div className='link-list-heading'>
+        <a href='#'>Intestazione con link</a>
+      </div>
+    }
+  >
     <LinkListItem>
       <span>Link list 1</span>
     </LinkListItem>
@@ -146,10 +148,7 @@ export const HeaderEDividerConLink = () => (
 HeaderEDividerConLink.storyName = 'Header e Divider (con link)';
 
 export const Sizing = () => (
-  <LinkList>
-    <LinkListItem header href='#'>
-      Heading
-    </LinkListItem>
+  <LinkList header={<div className='link-list-heading'>Intestazione senza link</div>}>
     <LinkListItem large href='#'>
       <span>Link list 1</span>
     </LinkListItem>
@@ -171,19 +170,26 @@ TitoloLista.storyName = 'Titolo lista';
 export const EsempioMultiline = () => (
   <LinkList multiline>
     <LinkListItem active className='icon-right' href='#'>
-      <span>Link list 1 active</span>
-      <Icon color='primary' icon='it-chevron-right' aria-hidden />
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 1 active</span>
+        <Icon color='primary' icon='it-chevron-right' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
     </LinkListItem>
     <LinkListItem divider />
     <LinkListItem className='icon-right' href='#'>
-      <span>Link list 2</span>
-      <Icon color='primary' icon='it-chevron-right' aria-hidden />
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 2</span>
+        <Icon color='primary' icon='it-chevron-right' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
     </LinkListItem>
     <LinkListItem divider />
     <LinkListItem disabled className='icon-right' href='#'>
-      <span>Link list 3 disabled</span> <Icon color='primary' icon='it-chevron-right' aria-hidden />
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 3 disabled</span>
+        <Icon color='primary' icon='it-chevron-right' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
     </LinkListItem>
   </LinkList>
