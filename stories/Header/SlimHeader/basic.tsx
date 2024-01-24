@@ -46,7 +46,7 @@ const SlimHeader = ({ theme, isOpen, brandText }: HeaderSlimProps) => {
         </HeaderLinkZone>
         <HeaderRightZone>
           <UncontrolledDropdown nav tag='div'>
-            <DropdownToggle nav caret>
+            <DropdownToggle nav caret role='button'>
               ITA
               <Icon icon='it-expand' color='icon-white' className='d-none d-lg-block' />
             </DropdownToggle>

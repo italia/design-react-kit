@@ -35,7 +35,7 @@ const SlimHeaderFullResponsive = ({ theme }: ThemeType) => {
         <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
         <HeaderRightZone>
           <UncontrolledDropdown nav tag='div'>
-            <DropdownToggle nav caret>
+            <DropdownToggle nav caret role='button'>
               ITA
               <Icon icon='it-expand' />
             </DropdownToggle>
@@ -94,7 +94,7 @@ export class SlimHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { c
           </HeaderLinkZone>
           <HeaderRightZone>
             <UncontrolledDropdown nav tag='div'>
-              <DropdownToggle nav caret>
+              <DropdownToggle nav caret role='button'>
                 ITA
                 <Icon icon='it-expand' />
               </DropdownToggle>
