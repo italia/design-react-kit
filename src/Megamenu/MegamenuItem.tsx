@@ -18,7 +18,9 @@ export const MegamenuItem: FC<MegamenuItemProps> = ({ itemName, className, child
         <span>{itemName}</span>
         <Icon icon='it-expand' size='xs' className='ms-1' />
       </DropdownToggle>
-      <DropdownMenu>{children}</DropdownMenu>
+      <DropdownMenu>
+        <div className='megamenu pb-5 pt-3 py-lg-0'>{children}</div>
+      </DropdownMenu>
     </UncontrolledDropdown>
   );
 };
