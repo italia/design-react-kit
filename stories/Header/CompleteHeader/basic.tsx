@@ -24,7 +24,8 @@ import {
   NavItem,
   NavLink,
   HeaderBrand,
-  UncontrolledDropdown
+  UncontrolledDropdown,
+  MegamenuItem
 } from '../../../src';
 import type { HeaderCompleteProps, ThemeType } from '../types';
 
@@ -204,11 +205,31 @@ export class NavHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { co
                 <NavItem>
                   <NavLink href='#'>Link 4</NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink href='#' disabled>
-                    Megamenu label
-                  </NavLink>
-                </NavItem>
+                <MegamenuItem itemName='Megamenu Classico'>
+                  <Row>
+                    <Col xs='12' lg='4'>
+                      <LinkList>
+                        <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                        <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                        <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                      </LinkList>
+                    </Col>
+                    <Col xs='12' lg='4'>
+                      <LinkList>
+                        <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                        <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                        <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                      </LinkList>
+                    </Col>
+                    <Col xs='12' lg='4'>
+                      <LinkList>
+                        <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                        <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                        <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                      </LinkList>
+                    </Col>
+                  </Row>
+                </MegamenuItem>
               </Nav>
             </div>
           </Collapse>

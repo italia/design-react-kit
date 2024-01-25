@@ -14,7 +14,10 @@ import {
   DropdownMenu,
   DropdownItem,
   LinkList,
-  LinkListItem
+  LinkListItem,
+  MegamenuItem,
+  Row,
+  Col
 } from '../../../src';
 import type { HeaderNavProps } from '../types';
 
@@ -81,11 +84,31 @@ const NavHeader = ({ theme, isOpen }: HeaderNavProps) => {
                   </LinkList>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <NavItem>
-                <NavLink href='#' disabled>
-                  Megamenu label
-                </NavLink>
-              </NavItem>
+              <MegamenuItem itemName='Megamenu Classico'>
+                <Row>
+                  <Col xs='12' lg='4'>
+                    <LinkList>
+                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                    </LinkList>
+                  </Col>
+                  <Col xs='12' lg='4'>
+                    <LinkList>
+                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                    </LinkList>
+                  </Col>
+                  <Col xs='12' lg='4'>
+                    <LinkList>
+                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
+                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                    </LinkList>
+                  </Col>
+                </Row>
+              </MegamenuItem>
             </Nav>
           </div>
         </Collapse>
