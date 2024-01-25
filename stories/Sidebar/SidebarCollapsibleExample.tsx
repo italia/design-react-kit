@@ -10,7 +10,8 @@ const SidebarCollapseExample = () => {
     <Sidebar left>
       <LinkList>
         <LinkListItem
-          size='medium'
+          large
+          bold
           className='right-icon'
           onClick={(e) => {
             e.preventDefault();
@@ -18,8 +19,10 @@ const SidebarCollapseExample = () => {
           }}
           aria-expanded={collapseOpen1}
         >
-          <span>Link list 1 </span>
-          <Icon className='right' icon='it-expand' color='primary' aria-hidden />
+          <LinkListItem.TitleIconWrapper>
+            <span>Link list 1 </span>
+            <Icon className='right' icon='it-expand' color='primary' aria-hidden />
+          </LinkListItem.TitleIconWrapper>
         </LinkListItem>
         <Collapse isOpen={collapseOpen1}>
           <LinkList sublist>
@@ -35,7 +38,8 @@ const SidebarCollapseExample = () => {
           </LinkList>
         </Collapse>
         <LinkListItem
-          size='medium'
+          large
+          bold
           className='right-icon'
           onClick={(e) => {
             e.preventDefault();
@@ -43,8 +47,10 @@ const SidebarCollapseExample = () => {
           }}
           aria-expanded={collapseOpen2}
         >
-          <span>Link list 2 </span>
-          <Icon className='right' icon='it-expand' color='primary' aria-hidden />
+          <LinkListItem.TitleIconWrapper>
+            <span>Link list 2 </span>
+            <Icon className='right' icon='it-expand' color='primary' aria-hidden />
+          </LinkListItem.TitleIconWrapper>
         </LinkListItem>
         <Collapse isOpen={collapseOpen2}>
           <LinkList sublist>
@@ -60,7 +66,8 @@ const SidebarCollapseExample = () => {
           </LinkList>
         </Collapse>
         <LinkListItem
-          size='medium'
+          large
+          bold
           className='right-icon'
           onClick={(e) => {
             e.preventDefault();
@@ -68,8 +75,10 @@ const SidebarCollapseExample = () => {
           }}
           aria-expanded={collapseOpen3}
         >
-          <span>Link list 3 </span>
-          <Icon className='right' icon='it-expand' color='primary' aria-hidden />
+          <LinkListItem.TitleIconWrapper>
+            <span>Link list 3 </span>
+            <Icon className='right' icon='it-expand' color='primary' aria-hidden />
+          </LinkListItem.TitleIconWrapper>
         </LinkListItem>
         <Collapse isOpen={collapseOpen3}>
           <LinkList sublist>

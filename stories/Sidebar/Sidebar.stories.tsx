@@ -9,16 +9,16 @@ export const BasicSidebar: Story = () => (
   <Sidebar>
     <LinkList>
       <LinkListItem header>HEADER</LinkListItem>
-      <LinkListItem size='medium' active>
+      <LinkListItem bold active>
         <span>Link list active</span>
       </LinkListItem>
-      <LinkListItem size='medium' disabled>
+      <LinkListItem bold disabled>
         <span>Link list disabled</span>
       </LinkListItem>
-      <LinkListItem size='medium'>
+      <LinkListItem bold>
         <span>Link list</span>
       </LinkListItem>
-      <LinkListItem size='medium'>
+      <LinkListItem bold>
         <span>Link list</span>
       </LinkListItem>
     </LinkList>
@@ -45,21 +45,29 @@ export const _ConIcona: Story = () => (
   <Sidebar>
     <LinkList>
       <LinkListItem header>HEADER</LinkListItem>
-      <LinkListItem size='medium' active className='left-icon'>
-        <Icon className='left' icon='it-chevron-right' color='' aria-hidden size='sm' />
-        <span>Link list active</span>
+      <LinkListItem bold active className='left-icon'>
+        <LinkListItem.TitleIconWrapper>
+          <Icon icon='it-star-outline' color='primary' aria-hidden size='sm' />
+          <span>Link list active</span>
+        </LinkListItem.TitleIconWrapper>
       </LinkListItem>
-      <LinkListItem size='medium' disabled>
-        <Icon className='left' icon='it-chevron-right' color='' aria-hidden size='sm' />
-        <span>Link list disabled</span>
+      <LinkListItem bold disabled className='left-icon'>
+        <LinkListItem.TitleIconWrapper>
+          <Icon icon='it-star-outline' color='primary' aria-hidden size='sm' />
+          <span>Link list disabled</span>
+        </LinkListItem.TitleIconWrapper>
       </LinkListItem>
-      <LinkListItem size='medium'>
-        <Icon className='left' icon='it-chevron-right' color='' aria-hidden size='sm' />
-        <span>Link list</span>
+      <LinkListItem bold className='left-icon'>
+        <LinkListItem.TitleIconWrapper>
+          <Icon icon='it-star-outline' color='primary' aria-hidden size='sm' />
+          <span>Link list</span>
+        </LinkListItem.TitleIconWrapper>
       </LinkListItem>
-      <LinkListItem size='medium'>
-        <Icon className='left' icon='it-chevron-right' color='' aria-hidden size='sm' />
-        <span>Link list</span>
+      <LinkListItem bold className='left-icon'>
+        <LinkListItem.TitleIconWrapper>
+          <Icon icon='it-star-outline' color='primary' aria-hidden size='sm' />
+          <span>Link list</span>
+        </LinkListItem.TitleIconWrapper>
       </LinkListItem>
     </LinkList>
     <Sidebar secondary />
@@ -83,16 +91,16 @@ export const ConLineaADestra: Story = () => (
   <Sidebar right>
     <LinkList>
       <LinkListItem header>HEADER</LinkListItem>
-      <LinkListItem size='medium' active>
+      <LinkListItem bold active>
         <span>Link list active</span>
       </LinkListItem>
-      <LinkListItem size='medium' disabled>
+      <LinkListItem bold disabled>
         <span>Link list disabled</span>
       </LinkListItem>
-      <LinkListItem size='medium'>
+      <LinkListItem bold>
         <span>Link list</span>
       </LinkListItem>
-      <LinkListItem size='medium'>
+      <LinkListItem bold>
         <span>Link list</span>
       </LinkListItem>
     </LinkList>
@@ -117,16 +125,16 @@ export const ConLineaASinistra: Story = () => (
   <Sidebar left>
     <LinkList>
       <LinkListItem header>HEADER</LinkListItem>
-      <LinkListItem size='medium' active>
+      <LinkListItem bold active>
         <span>Link list active</span>
       </LinkListItem>
-      <LinkListItem size='medium' disabled>
+      <LinkListItem bold disabled>
         <span>Link list disabled</span>
       </LinkListItem>
-      <LinkListItem size='medium'>
+      <LinkListItem bold>
         <span>Link list</span>
       </LinkListItem>
-      <LinkListItem size='medium'>
+      <LinkListItem bold>
         <span>Link list</span>
       </LinkListItem>
     </LinkList>
@@ -153,16 +161,16 @@ export const SidebarVersioneScura: Story = () => (
   <Sidebar dark>
     <LinkList>
       <LinkListItem header>HEADER</LinkListItem>
-      <LinkListItem size='medium' active>
+      <LinkListItem bold active>
         <span>Link list active</span>
       </LinkListItem>
-      <LinkListItem size='medium' disabled>
+      <LinkListItem bold disabled>
         <span>Link list disabled</span>
       </LinkListItem>
-      <LinkListItem size='medium'>
+      <LinkListItem bold>
         <span>Link list</span>
       </LinkListItem>
-      <LinkListItem size='medium'>
+      <LinkListItem bold>
         <span>Link list</span>
       </LinkListItem>
     </LinkList>
