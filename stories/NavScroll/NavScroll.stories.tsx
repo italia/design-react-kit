@@ -47,15 +47,14 @@ const PosizionamentoFondoPagina = () => {
               {getActiveRef()?.current?.textContent}
             </NavbarToggler>
             <Collapse isOpen={isOpen} navbar id='navbarNavA'>
-              <a
-                className='it-back-button'
-                href='#'
+              <button
+                className='it-back-button btn w-100 text-start'
                 style={{ display: isOpen ? 'block' : 'none' }}
                 onClick={() => toggleNavScroll(!isOpen)}
               >
                 <Icon className='align-top' color='primary' icon='it-chevron-left' aria-hidden size='sm' />
                 <span>Back </span>
-              </a>
+              </button>
               <div className='menu-wrapper'>
                 <div className='link-list-wrapper'>
                   <h3>header</h3>
@@ -373,15 +372,14 @@ const PosizionamentoTestaAlta = () => {
               {getActiveRef()?.current?.textContent}
             </NavbarToggler>
             <Collapse isOpen={isOpen} navbar id='navbarNavB'>
-              <a
-                className='it-back-button'
-                href='#'
+              <button
+                className='it-back-button btn w-100 text-start'
                 style={{ display: isOpen ? 'block' : 'none' }}
                 onClick={() => toggleNavScroll(!isOpen)}
               >
                 <Icon className='align-top' color='primary' icon='it-chevron-left' aria-hidden size='sm' />
                 <span>Back </span>
-              </a>
+              </button>
               <div className='menu-wrapper'>
                 <div className='link-list-wrapper'>
                   <h3>header</h3>
@@ -708,8 +706,10 @@ const ComponenteMenuInline = () => {
                     toggleNavScrollOne(!isOpenOne);
                   }}
                 >
-                  <span>Link list 1</span>
-                  <Icon color='primary' icon='it-expand' aria-hidden size='sm' />
+                  <LinkListItem.TitleIconWrapper>
+                    <span>Link list 1</span>
+                    <Icon color='primary' icon='it-expand' aria-hidden size='sm' />
+                  </LinkListItem.TitleIconWrapper>
                 </a>
                 <LinkList sublist className={isFirstOpen ? 'collapse show' : 'collapse'} id='collapseOne'>
                   <LinkListItem className={getActiveClass('1_1')}>Link list 1.1</LinkListItem>
@@ -731,8 +731,10 @@ const ComponenteMenuInline = () => {
                     toggleNavScrollTwo(!isOpenTwo);
                   }}
                 >
-                  <span>Link list 2</span>
-                  <Icon color='primary' icon='it-expand' aria-hidden size='sm' />
+                  <LinkListItem.TitleIconWrapper>
+                    <span>Link list 2</span>
+                    <Icon color='primary' icon='it-expand' aria-hidden size='sm' />
+                  </LinkListItem.TitleIconWrapper>
                 </a>
                 <LinkList sublist className={isSecondOpen ? 'collapse show' : 'collapse'} id='collapseTwo'>
                   <LinkListItem className={getActiveClass('2_1')}>Link list 2.1</LinkListItem>
@@ -754,8 +756,10 @@ const ComponenteMenuInline = () => {
                     toggleNavScrollThree(!isOpenThree);
                   }}
                 >
-                  <span>Link list 3</span>
-                  <Icon color='primary' icon='it-expand' aria-hidden size='sm' />
+                  <LinkListItem.TitleIconWrapper>
+                    <span>Link list 3</span>
+                    <Icon color='primary' icon='it-expand' aria-hidden size='sm' />
+                  </LinkListItem.TitleIconWrapper>
                 </a>
                 <LinkList sublist className={isThirdOpen ? 'collapse show' : 'collapse'} id='collapseThree'>
                   <LinkListItem className={getActiveClass('3_1')}>Link list 3.1</LinkListItem>
@@ -970,15 +974,14 @@ const ComponenteVersioneScura = () => {
               {getActiveRef()?.current?.textContent}
             </NavbarToggler>
             <Collapse isOpen={isOpen} navbar id='navbarNavB'>
-              <a
-                className='it-back-button'
-                href='#'
+              <button
+                className='it-back-button btn w-100 text-start'
                 style={{ display: isOpen ? 'block' : 'none' }}
                 onClick={() => toggleNavScroll(!isOpen)}
               >
                 <Icon className='align-top' color='primary' icon='it-chevron-left' aria-hidden size='sm' />
                 <span>Back </span>
-              </a>
+              </button>
               <div className='menu-wrapper'>
                 <div className='link-list-wrapper'>
                   <h3>header</h3>
