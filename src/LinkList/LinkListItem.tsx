@@ -30,7 +30,7 @@ const handleDisabledOnClick = (e: MouseEvent<HTMLAnchorElement>) => {
 };
 
 export const LinkListItem: FC<LinkListItemProps> & {
-  TitleIconWrapper: typeof LinkListTitleIconWrapper; // add this
+  TitleIconWrapper: typeof LinkListTitleIconWrapper;
 } = ({
   className,
   active,

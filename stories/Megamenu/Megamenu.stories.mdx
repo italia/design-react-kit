@@ -11,15 +11,17 @@ import { Megamenu, MegamenuItem, MegamenuFooter, MegamenuHighlightColumn } from 
 Il megamenu all'interno del nav è una variazione del componente [Dropdown](/story/componenti-dropdown-dropdown-menu--menu-con-voci-large).
 Gli elementi megamenu contenuti nelle navbar sono gestiti come elementi di tipo **collapse** nella loro versione mobile.
 
-### Megamenu Classico
+### Megamenu con immagine e descrizione
 
-Il megamenu ha una struttura colonnare, ogni colonna richiama al suo interno il componente [Lista di link](/story/componenti-linklist--esempi) per comporre l'elenco di link desiderato
+Possiamo inserire a sinistra del megamenu un'immagine ed una descrizione riguardante la sezione.
+
+Esattamente come con le _call to action_, inseriremo il contenuto all'interno del componente `MegamenuHighlightColumn`, avendo cura di aggiungere la props `description`
 
 <Canvas>
-  <Story id='componenti-megamenu--classico' height='450px' />
+  <Story id='componenti-megamenu--con-immagine-e-descrizione' height='450px' />
 </Canvas>
 
-#### Classico con link "more"
+#### Con link "more"
 
 Il megamenu può contenere un link relativo agli elenchi in esso contenuti.
 
@@ -31,15 +33,6 @@ Per stilare correttamente il link è sufficiente aggiungere la classe `.it-more`
 
 <Canvas>
   <Story id='componenti-megamenu--con-link-more' height='450px' />
-</Canvas>
-
-#### Classico con Intestazione
-
-Se ci fosse necessità di categorizzare i contenuti del megamenu, possiamo inserire un header all'interno delle link list.
-Per inserire l'header è sufficiente inserire un elemento `LinkListItem` con props `header` all'inizio della lista relativa.
-
-<Canvas>
-  <Story id='componenti-megamenu--con-intestazione' height='450px' />
 </Canvas>
 
 #### Classico con Intestazione e link "more"
@@ -70,25 +63,6 @@ Per aggiungere un elenco di _call to action_ posizionato a destra, inseriremo ta
 
 <Canvas>
   <Story id='componenti-megamenu--con-call-to-action-a-destra' height='450px' />
-</Canvas>
-
-### Megamenu con immagine e descrizione
-
-Possiamo inserire a destra del megamenu un'immagine ed una descrizione riguardante la sezione.
-
-Esattamente come con le _call to action_, inseriremo il contenuto all'interno del componente `MegamenuHighlightColumn`, avendo cura di aggiungere la props `description`
-
-<Canvas>
-  <Story id='componenti-megamenu--con-immagine-e-descrizione' height='450px' />
-</Canvas>
-
-### Megamenu con struttura colonnare asimmetrica
-
-Possiamo creare strutture colonnari asimmetriche per dare spazio a sottosezioni più popolate.
-Nell'esempio seguente abbiamo una struttura composta da due colonne a sinistra ed una a destra.
-
-<Canvas>
-  <Story id='componenti-megamenu--con-colonne-asimmetriche' height='450px' />
 </Canvas>
 
 ## Argomenti componente
