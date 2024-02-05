@@ -4,12 +4,13 @@ import classNames from 'classnames';
 export interface MegamenuFooterProps extends HTMLAttributes<HTMLDivElement> {
   /** Classi aggiuntive da usare per il componente Megamenu Footer */
   className?: string;
+  vertical?: boolean;
 }
 
 export const MegamenuFooter: FC<MegamenuFooterProps> & {
   Item: typeof Item;
-} = ({ className, children, ...attributes }) => {
-  const classes = classNames(className, 'it-footer-link-wrapper');
+} = ({ className, children, vertical, ...attributes }) => {
+  const classes = classNames(className, `it-footer-link-wrapper${vertical ? '-vertical' : ''}`);
   return (
     <div className={classes} {...attributes}>
       {children}

@@ -8,7 +8,8 @@ import {
   MegamenuItem,
   MegamenuFooter,
   MegamenuHighlightColumn,
-  Row
+  Row,
+  DropdownItem
 } from '../../src';
 
 export const ConLinkMore = () => {
@@ -18,15 +19,15 @@ export const ConLinkMore = () => {
         <Row>
           <Col xs='12' lg='4'>
             <LinkList>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 1</span>
               </LinkListItem>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 2</span>
               </LinkListItem>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 3</span>
               </LinkListItem>
@@ -34,15 +35,15 @@ export const ConLinkMore = () => {
           </Col>
           <Col xs='12' lg='4'>
             <LinkList>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 4</span>
               </LinkListItem>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 5</span>
               </LinkListItem>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 6</span>
               </LinkListItem>
@@ -50,15 +51,15 @@ export const ConLinkMore = () => {
           </Col>
           <Col xs='12' lg='4'>
             <LinkList>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 7</span>
               </LinkListItem>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 8</span>
               </LinkListItem>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 9</span>
               </LinkListItem>
@@ -66,12 +67,12 @@ export const ConLinkMore = () => {
           </Col>
         </Row>
         <MegamenuFooter className='text-end'>
-          <a className='it-footer-link' href='#'>
+          <MegamenuFooter.Item href='#'>
             <span>
               Esplora tutti i contenuti del megamenu{' '}
               <Icon className='ms-2' color='primary' icon='it-arrow-right' size='sm' />
             </span>
-          </a>
+          </MegamenuFooter.Item>
         </MegamenuFooter>
       </MegamenuItem>
     </Megamenu>
@@ -92,15 +93,15 @@ export const ConIntestazioneELinkMore = () => {
             <Row>
               <Col xs='12' lg='4'>
                 <LinkList>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 1</span>
                   </LinkListItem>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 2</span>
                   </LinkListItem>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 3</span>
                   </LinkListItem>
@@ -108,15 +109,15 @@ export const ConIntestazioneELinkMore = () => {
               </Col>
               <Col xs='12' lg='4'>
                 <LinkList>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 4</span>
                   </LinkListItem>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 5</span>
                   </LinkListItem>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 6</span>
                   </LinkListItem>
@@ -124,15 +125,15 @@ export const ConIntestazioneELinkMore = () => {
               </Col>
               <Col xs='12' lg='4'>
                 <LinkList>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 7</span>
                   </LinkListItem>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 8</span>
                   </LinkListItem>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 9</span>
                   </LinkListItem>
@@ -152,15 +153,15 @@ export const ConCallToActionInBasso = () => {
         <Row>
           <Col xs='12' lg='4'>
             <LinkList>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 1</span>
               </LinkListItem>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 2</span>
               </LinkListItem>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 3</span>
               </LinkListItem>
@@ -168,15 +169,15 @@ export const ConCallToActionInBasso = () => {
           </Col>
           <Col xs='12' lg='4'>
             <LinkList>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 4</span>
               </LinkListItem>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 5</span>
               </LinkListItem>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 6</span>
               </LinkListItem>
@@ -184,15 +185,15 @@ export const ConCallToActionInBasso = () => {
           </Col>
           <Col xs='12' lg='4'>
             <LinkList>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 7</span>
               </LinkListItem>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 8</span>
               </LinkListItem>
-              <LinkListItem href='#'>
+              <LinkListItem tag={DropdownItem} href='#'>
                 <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                 <span>Link lista 9</span>
               </LinkListItem>
@@ -224,15 +225,15 @@ export const ConCallToActionADestra = () => {
             <Row>
               <Col xs='12' lg='6'>
                 <LinkList>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 1</span>
                   </LinkListItem>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 2</span>
                   </LinkListItem>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 3</span>
                   </LinkListItem>
@@ -240,15 +241,15 @@ export const ConCallToActionADestra = () => {
               </Col>
               <Col xs='12' lg='6'>
                 <LinkList>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 1</span>
                   </LinkListItem>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 2</span>
                   </LinkListItem>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 3</span>
                   </LinkListItem>
@@ -256,22 +257,20 @@ export const ConCallToActionADestra = () => {
               </Col>
             </Row>
           </Col>
-          <MegamenuHighlightColumn xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem href='#'>
-                <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
-                Link lista 1
-              </LinkListItem>
-              <LinkListItem href='#'>
-                <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
-                Link lista 2
-              </LinkListItem>
-              <LinkListItem href='#'>
-                <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
-                Link lista 3
-              </LinkListItem>
-            </LinkList>
-          </MegamenuHighlightColumn>
+          <Col xs='12' lg='4'>
+            <MegamenuFooter vertical>
+              <div className='d-flex flex-column justify-content-around'>
+                <MegamenuFooter.Item href='#'>
+                  <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
+                  <span>Call to action 1</span>
+                </MegamenuFooter.Item>
+                <MegamenuFooter.Item href='#'>
+                  <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
+                  <span>Call to action 2</span>
+                </MegamenuFooter.Item>
+              </div>
+            </MegamenuFooter>
+          </Col>
         </Row>
       </MegamenuItem>
     </Megamenu>
@@ -304,15 +303,15 @@ export const ConImmagineEDescrizione = () => {
             <Row>
               <Col xs='12' lg='6'>
                 <LinkList>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 1</span>
                   </LinkListItem>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 2</span>
                   </LinkListItem>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 3</span>
                   </LinkListItem>
@@ -320,15 +319,15 @@ export const ConImmagineEDescrizione = () => {
               </Col>
               <Col xs='12' lg='6'>
                 <LinkList>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 4</span>
                   </LinkListItem>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 5</span>
                   </LinkListItem>
-                  <LinkListItem href='#'>
+                  <LinkListItem tag={DropdownItem} href='#'>
                     <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                     <span>Link lista 6</span>
                   </LinkListItem>
