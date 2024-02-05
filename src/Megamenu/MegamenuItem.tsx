@@ -13,14 +13,14 @@ export interface MegamenuItemProps extends HTMLAttributes<HTMLUListElement> {
 export const MegamenuItem: FC<MegamenuItemProps> = ({ itemName, className, children, ...attributes }) => {
   const classes = classNames(className, 'megamenu');
   const [isOpen, setShowButton] = React.useState(false);
-  const toggleRef = useRef(null);
+  const toggleRef = useRef<DropdownToggle>(null);
   const toggleClasses = classNames('px-lg-2', 'px-xl-3', {
     show: isOpen
   });
   const setMegamenuButtonClass = () => {
     //setShowButton(contact);
     if (toggleRef && toggleRef.current) {
-      setShowButton((toggleRef.current as DropdownToggle).context.isOpen);
+      setShowButton(toggleRef.current.context.isOpen);
     }
   };
 
