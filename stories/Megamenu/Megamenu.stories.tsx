@@ -29,7 +29,7 @@ export const ConLinkMore = () => {
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar header megamenu>
         <Nav className='mt-0' navbar>
-          <MegamenuItem itemName='Megamenu con Call to Action in basso'>
+          <MegamenuItem itemName='Megamenu con link "Esplora tutti"'>
             <Row>
               <Col xs='12' lg='4'>
                 <LinkList>
@@ -107,7 +107,7 @@ export const ConIntestazioneELinkMore = () => {
       </NavbarToggler>
       <Collapse isOpen={openNav} navbar header megamenu>
         <Nav className='mt-0' navbar>
-          <MegamenuItem itemName='Megamenu con Call to Action in basso'>
+          <MegamenuItem itemName='Megamenu con intestazione e "esplora tutti"'>
             <Row>
               <Col xs='12'>
                 <div className='it-heading-link-wrapper'>

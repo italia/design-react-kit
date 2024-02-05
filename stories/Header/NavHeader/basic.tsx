@@ -16,6 +16,7 @@ import {
   LinkList,
   LinkListItem,
   MegamenuItem,
+  MegamenuHighlightColumn,
   Row,
   Col
 } from '../../../src';
@@ -84,28 +85,61 @@ const NavHeader = ({ theme, isOpen }: HeaderNavProps) => {
                   </LinkList>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <MegamenuItem itemName='Megamenu Classico'>
+              <MegamenuItem itemName='Megamenu con Immagine e Descrizione'>
                 <Row>
-                  <Col xs='12' lg='4'>
-                    <LinkList>
-                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                    </LinkList>
-                  </Col>
-                  <Col xs='12' lg='4'>
-                    <LinkList>
-                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                    </LinkList>
-                  </Col>
-                  <Col xs='12' lg='4'>
-                    <LinkList>
-                      <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                      <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                      <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                    </LinkList>
+                  <MegamenuHighlightColumn xs='12' lg='4' description>
+                    <div className='ratio ratio-21x9 lightgrey-bg-a1 mb-4 rounded'>
+                      <figure className='figure'>
+                        <img
+                          src='https://via.placeholder.com/560x240/ebebeb/808080/?text=Immagine'
+                          className='figure-img img-fluid rounded'
+                          alt='Segnaposto'
+                        />
+                      </figure>
+                    </div>
+                    <p>Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                  </MegamenuHighlightColumn>
+                  <Col xs='12' lg='8'>
+                    <div className='it-heading-link-wrapper'>
+                      <a className='it-heading-link' href='#'>
+                        <Icon className='icon icon-sm me-2 mb-1' icon='it-arrow-right-triangle'></Icon>
+                        <span>Esplora la sezione megamenu</span>
+                      </a>
+                    </div>
+                    <Row>
+                      <Col xs='12' lg='6'>
+                        <LinkList>
+                          <LinkListItem tag={DropdownItem} href='#'>
+                            <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                            <span>Link lista 1</span>
+                          </LinkListItem>
+                          <LinkListItem tag={DropdownItem} href='#'>
+                            <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                            <span>Link lista 2</span>
+                          </LinkListItem>
+                          <LinkListItem tag={DropdownItem} href='#'>
+                            <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                            <span>Link lista 3</span>
+                          </LinkListItem>
+                        </LinkList>
+                      </Col>
+                      <Col xs='12' lg='6'>
+                        <LinkList>
+                          <LinkListItem tag={DropdownItem} href='#'>
+                            <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                            <span>Link lista 4</span>
+                          </LinkListItem>
+                          <LinkListItem tag={DropdownItem} href='#'>
+                            <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                            <span>Link lista 5</span>
+                          </LinkListItem>
+                          <LinkListItem tag={DropdownItem} href='#'>
+                            <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                            <span>Link lista 6</span>
+                          </LinkListItem>
+                        </LinkList>
+                      </Col>
+                    </Row>
                   </Col>
                 </Row>
               </MegamenuItem>
