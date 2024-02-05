@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Dropdown, DropdownMenu, DropdownToggle, LinkList, LinkListItem, ButtonGroup } from '../../src';
+import { Dropdown, DropdownMenu, DropdownToggle, DropdownItem, LinkList, LinkListItem, ButtonGroup } from '../../src';
 
 export const _VarianteBottoni = () => {
   const [openFirst, toggleFirst] = useState(false);
@@ -15,9 +15,9 @@ export const _VarianteBottoni = () => {
         </DropdownToggle>
         <DropdownMenu>
           <LinkList>
-            <LinkListItem>Azione 1</LinkListItem>
-            <LinkListItem>Azione 2</LinkListItem>
-            <LinkListItem>Azione 3</LinkListItem>
+            <LinkListItem tag={DropdownItem}>Azione 1</LinkListItem>
+            <LinkListItem tag={DropdownItem}>Azione 2</LinkListItem>
+            <LinkListItem tag={DropdownItem}>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
       </Dropdown>
@@ -27,9 +27,9 @@ export const _VarianteBottoni = () => {
         </DropdownToggle>
         <DropdownMenu>
           <LinkList>
-            <LinkListItem>Azione 1</LinkListItem>
-            <LinkListItem>Azione 2</LinkListItem>
-            <LinkListItem>Azione 3</LinkListItem>
+            <LinkListItem tag={DropdownItem}>Azione 1</LinkListItem>
+            <LinkListItem tag={DropdownItem}>Azione 2</LinkListItem>
+            <LinkListItem tag={DropdownItem}>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
       </Dropdown>
@@ -64,9 +64,9 @@ export const _Esempi = () => {
         </DropdownToggle>
         <DropdownMenu>
           <LinkList>
-            <LinkListItem>Azione 1</LinkListItem>
-            <LinkListItem>Azione 2</LinkListItem>
-            <LinkListItem>Azione 3</LinkListItem>
+            <LinkListItem tag={DropdownItem}>Azione 1</LinkListItem>
+            <LinkListItem tag={DropdownItem}>Azione 2</LinkListItem>
+            <LinkListItem tag={DropdownItem}>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
       </Dropdown>
@@ -85,9 +85,9 @@ export const _Link = () => {
         </DropdownToggle>
         <DropdownMenu>
           <LinkList>
-            <LinkListItem>Azione 1</LinkListItem>
-            <LinkListItem>Azione 2</LinkListItem>
-            <LinkListItem>Azione 3</LinkListItem>
+            <LinkListItem tag={DropdownItem}>Azione 1</LinkListItem>
+            <LinkListItem tag={DropdownItem}>Azione 2</LinkListItem>
+            <LinkListItem tag={DropdownItem}>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
       </Dropdown>

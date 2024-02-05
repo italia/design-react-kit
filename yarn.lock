@@ -13781,7 +13781,11 @@ react@^17.0.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
+<<<<<<< HEAD
 reactstrap@^9.1.4:
+=======
+reactstrap@9.2.2:
+>>>>>>> b7ae454 (fix: megamenu and dropdown items)
   version "9.2.2"
   resolved "https://registry.yarnpkg.com/reactstrap/-/reactstrap-9.2.2.tgz#d3a062cb1492a9cf6ed4684698044fa1996350c9"
   integrity sha512-4KroiGOdqZLAnMGzHjpErW3G7bLB+QbKzzMLIDXydPIV0y74lpdL7WtXHkLWAGInd97WCPNx4+R0NQDPyzIfhw==

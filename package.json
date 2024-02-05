@@ -154,7 +154,7 @@
     "react-toastify": "^7.0.4",
     "react-transition-group": "^4.4.5",
     "react-use-navscroll": "0.2.0",
-    "reactstrap": "^9.1.4",
+    "reactstrap": "9.2.2",
     "webfontloader": "^1.6.28"
   },
   "jest": {

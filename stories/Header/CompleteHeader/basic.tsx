@@ -33,7 +33,7 @@ const SlimHeaderFullResponsive = ({ theme }: ThemeType) => {
   return (
     <Header type='slim' theme={theme}>
       <HeaderContent>
-        <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
+        <HeaderBrand>Ente appartenenza</HeaderBrand>
         <HeaderRightZone>
           <UncontrolledDropdown nav tag='div'>
             <DropdownToggle nav caret role='button'>
@@ -78,17 +78,17 @@ export class SlimHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { c
     return (
       <Header type='slim' theme={this.props.theme}>
         <HeaderContent>
-          <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
+          <HeaderBrand>Ente appartenenza</HeaderBrand>
           <HeaderLinkZone>
             <HeaderToggler onClick={() => this.setState({ collapsed: !this.state.collapsed })}>
-              <span>Ente appartenenza/Owner</span>
+              <span>Ente appartenenza</span>
               <Icon icon='it-expand' />
             </HeaderToggler>
-            <Collapse isOpen={!this.state.collapsed} header>
+            <Collapse isOpen={!this.state.collapsed}>
               <LinkList>
                 <LinkListItem href='#'>Link 1</LinkListItem>
                 <LinkListItem href='#' active>
-                  Link 2 Active
+                  Link 2 (Active)
                 </LinkListItem>
               </LinkList>
             </Collapse>
@@ -209,23 +209,41 @@ export class NavHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { co
                   <Row>
                     <Col xs='12' lg='4'>
                       <LinkList>
-                        <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                        <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                        <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                        <LinkListItem tag={DropdownItem} href='#'>
+                          Link list Item 1
+                        </LinkListItem>
+                        <LinkListItem tag={DropdownItem} href='#'>
+                          Link list Item 2
+                        </LinkListItem>
+                        <LinkListItem tag={DropdownItem} href='#'>
+                          Link list Item 3
+                        </LinkListItem>
                       </LinkList>
                     </Col>
                     <Col xs='12' lg='4'>
                       <LinkList>
-                        <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                        <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                        <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                        <LinkListItem tag={DropdownItem} href='#'>
+                          Link list Item 1
+                        </LinkListItem>
+                        <LinkListItem tag={DropdownItem} href='#'>
+                          Link list Item 2
+                        </LinkListItem>
+                        <LinkListItem tag={DropdownItem} href='#'>
+                          Link list Item 3
+                        </LinkListItem>
                       </LinkList>
                     </Col>
                     <Col xs='12' lg='4'>
                       <LinkList>
-                        <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                        <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                        <LinkListItem href='#'>Link list Item 3</LinkListItem>
+                        <LinkListItem tag={DropdownItem} href='#'>
+                          Link list Item 1
+                        </LinkListItem>
+                        <LinkListItem tag={DropdownItem} href='#'>
+                          Link list Item 2
+                        </LinkListItem>
+                        <LinkListItem tag={DropdownItem} href='#'>
+                          Link list Item 3
+                        </LinkListItem>
                       </LinkList>
                     </Col>
                   </Row>

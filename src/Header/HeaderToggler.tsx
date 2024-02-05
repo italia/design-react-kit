@@ -1,4 +1,4 @@
-import React, { ElementType, ButtonHTMLAttributes } from 'react';
+import React, { ElementType, ButtonHTMLAttributes, useEffect } from 'react';
 import classNames from 'classnames';
 import { NavbarToggler } from 'reactstrap';
 
@@ -31,6 +31,11 @@ export const HeaderToggler = ({ className, tag, type, testId, ...attributes }: H
     },
     className
   );
+  useEffect(() => {
+    document.querySelectorAll('.container-fluid').forEach((element) => {
+      element.classList.remove('container-fluid');
+    });
+  });
   return (
     <NavbarToggler
       className={classes}
