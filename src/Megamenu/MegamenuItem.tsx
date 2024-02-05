@@ -19,7 +19,7 @@ export const MegamenuItem: FC<MegamenuItemProps> = ({ itemName, className, child
   });
   const setMegamenuButtonClass = () => {
     //setShowButton(contact);
-    if (toggleRef.current) {
+    if (toggleRef && toggleRef.current) {
       setShowButton((toggleRef.current as DropdownToggle).context.isOpen);
     }
   };
