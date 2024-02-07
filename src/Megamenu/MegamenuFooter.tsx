@@ -18,7 +18,7 @@ export const MegamenuFooter: FC<MegamenuFooterProps> & {
   );
 };
 
-const Item: FC<HTMLAnchorElement> = ({ href, children }) => {
+const Item: FC<HTMLAnchorElement | any> = ({ href, children }) => {
   return (
     <a href={href || '#'} className='it-footer-link'>
       {children}
