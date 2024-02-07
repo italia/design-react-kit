@@ -200,12 +200,28 @@ export class NavHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { co
                     Link 2
                   </NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink href='#'>Link 3</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href='#'>Link 4</NavLink>
-                </NavItem>
+                <UncontrolledDropdown nav tag='li' inNavbar>
+                  <DropdownToggle nav caret role='button'>
+                    <span>Menu Dropdown</span>
+                    <Icon icon='it-expand' size='xs' />
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <LinkList>
+                      <LinkListItem tag={DropdownItem} href='#'>
+                        <span>Link list 1</span>
+                      </LinkListItem>
+                      <LinkListItem tag={DropdownItem} href='#'>
+                        <span>Link list 2</span>
+                      </LinkListItem>
+                      <LinkListItem tag={DropdownItem} href='#'>
+                        <span>Link list 3</span>
+                      </LinkListItem>
+                      <LinkListItem tag={DropdownItem} href='#'>
+                        <span>Link list 4</span>
+                      </LinkListItem>
+                    </LinkList>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
                 <MegamenuItem itemName='Megamenu con Immagine e Descrizione'>
                   <Row>
                     <MegamenuHighlightColumn xs='12' lg='4' description>
