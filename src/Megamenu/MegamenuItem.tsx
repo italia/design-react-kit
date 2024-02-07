@@ -20,6 +20,7 @@ export const MegamenuItem: FC<MegamenuItemProps> = ({ itemName, className, child
   const setMegamenuButtonClass = () => {
     //setShowButton(contact);
     if (toggleRef && toggleRef.current) {
+      // @ts-ignore
       setShowButton(toggleRef.current.context.isOpen);
     }
   };
