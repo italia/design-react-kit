@@ -70,16 +70,16 @@ const NavHeader = ({ theme, isOpen }: HeaderNavProps) => {
                 </DropdownToggle>
                 <DropdownMenu>
                   <LinkList>
-                    <LinkListItem tag={DropdownItem} href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <span>Link list 1</span>
                     </LinkListItem>
-                    <LinkListItem tag={DropdownItem} href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <span>Link list 2</span>
                     </LinkListItem>
-                    <LinkListItem tag={DropdownItem} href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <span>Link list 3</span>
                     </LinkListItem>
-                    <LinkListItem tag={DropdownItem} href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <span>Link list 4</span>
                     </LinkListItem>
                   </LinkList>
@@ -109,15 +109,15 @@ const NavHeader = ({ theme, isOpen }: HeaderNavProps) => {
                     <Row>
                       <Col xs='12' lg='6'>
                         <LinkList>
-                          <LinkListItem tag={DropdownItem} href='#'>
+                          <LinkListItem inDropdown href='#'>
                             <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                             <span>Link lista 1</span>
                           </LinkListItem>
-                          <LinkListItem tag={DropdownItem} href='#'>
+                          <LinkListItem inDropdown href='#'>
                             <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                             <span>Link lista 2</span>
                           </LinkListItem>
-                          <LinkListItem tag={DropdownItem} href='#'>
+                          <LinkListItem inDropdown href='#'>
                             <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                             <span>Link lista 3</span>
                           </LinkListItem>
@@ -125,15 +125,15 @@ const NavHeader = ({ theme, isOpen }: HeaderNavProps) => {
                       </Col>
                       <Col xs='12' lg='6'>
                         <LinkList>
-                          <LinkListItem tag={DropdownItem} href='#'>
+                          <LinkListItem inDropdown href='#'>
                             <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                             <span>Link lista 4</span>
                           </LinkListItem>
-                          <LinkListItem tag={DropdownItem} href='#'>
+                          <LinkListItem inDropdown href='#'>
                             <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                             <span>Link lista 5</span>
                           </LinkListItem>
-                          <LinkListItem tag={DropdownItem} href='#'>
+                          <LinkListItem inDropdown href='#'>
                             <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                             <span>Link lista 6</span>
                           </LinkListItem>

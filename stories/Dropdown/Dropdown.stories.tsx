@@ -15,9 +15,9 @@ export const _VarianteBottoni = () => {
         </DropdownToggle>
         <DropdownMenu>
           <LinkList>
-            <LinkListItem tag={DropdownItem}>Azione 1</LinkListItem>
-            <LinkListItem tag={DropdownItem}>Azione 2</LinkListItem>
-            <LinkListItem tag={DropdownItem}>Azione 3</LinkListItem>
+            <LinkListItem inDropdown>Azione 1</LinkListItem>
+            <LinkListItem inDropdown>Azione 2</LinkListItem>
+            <LinkListItem inDropdown>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
       </Dropdown>
@@ -27,9 +27,9 @@ export const _VarianteBottoni = () => {
         </DropdownToggle>
         <DropdownMenu>
           <LinkList>
-            <LinkListItem tag={DropdownItem}>Azione 1</LinkListItem>
-            <LinkListItem tag={DropdownItem}>Azione 2</LinkListItem>
-            <LinkListItem tag={DropdownItem}>Azione 3</LinkListItem>
+            <LinkListItem inDropdown>Azione 1</LinkListItem>
+            <LinkListItem inDropdown>Azione 2</LinkListItem>
+            <LinkListItem inDropdown>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
       </Dropdown>
@@ -64,9 +64,9 @@ export const _Esempi = () => {
         </DropdownToggle>
         <DropdownMenu>
           <LinkList>
-            <LinkListItem tag={DropdownItem}>Azione 1</LinkListItem>
-            <LinkListItem tag={DropdownItem}>Azione 2</LinkListItem>
-            <LinkListItem tag={DropdownItem}>Azione 3</LinkListItem>
+            <LinkListItem inDropdown>Azione 1</LinkListItem>
+            <LinkListItem inDropdown>Azione 2</LinkListItem>
+            <LinkListItem inDropdown>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
       </Dropdown>
@@ -85,9 +85,9 @@ export const _Link = () => {
         </DropdownToggle>
         <DropdownMenu>
           <LinkList>
-            <LinkListItem tag={DropdownItem}>Azione 1</LinkListItem>
-            <LinkListItem tag={DropdownItem}>Azione 2</LinkListItem>
-            <LinkListItem tag={DropdownItem}>Azione 3</LinkListItem>
+            <LinkListItem inDropdown>Azione 1</LinkListItem>
+            <LinkListItem inDropdown>Azione 2</LinkListItem>
+            <LinkListItem inDropdown>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
       </Dropdown>

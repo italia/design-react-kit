@@ -45,10 +45,10 @@ const SlimHeaderFullResponsive = ({ theme }: ThemeType) => {
               <Row>
                 <Col size='12'>
                   <LinkList>
-                    <LinkListItem tag={DropdownItem} href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <span>ITA</span>
                     </LinkListItem>
-                    <LinkListItem tag={DropdownItem} href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <span>ENG</span>
                     </LinkListItem>
                   </LinkList>
@@ -104,10 +104,10 @@ export class SlimHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { c
                 <Row>
                   <Col size='12'>
                     <LinkList>
-                      <LinkListItem tag={DropdownItem} href='#'>
+                      <LinkListItem inDropdown href='#'>
                         <span>ITA</span>
                       </LinkListItem>
-                      <LinkListItem tag={DropdownItem} href='#'>
+                      <LinkListItem inDropdown href='#'>
                         <span>ENG</span>
                       </LinkListItem>
                     </LinkList>
@@ -207,16 +207,16 @@ export class NavHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { co
                   </DropdownToggle>
                   <DropdownMenu>
                     <LinkList>
-                      <LinkListItem tag={DropdownItem} href='#'>
+                      <LinkListItem inDropdown href='#'>
                         <span>Link list 1</span>
                       </LinkListItem>
-                      <LinkListItem tag={DropdownItem} href='#'>
+                      <LinkListItem inDropdown href='#'>
                         <span>Link list 2</span>
                       </LinkListItem>
-                      <LinkListItem tag={DropdownItem} href='#'>
+                      <LinkListItem inDropdown href='#'>
                         <span>Link list 3</span>
                       </LinkListItem>
-                      <LinkListItem tag={DropdownItem} href='#'>
+                      <LinkListItem inDropdown href='#'>
                         <span>Link list 4</span>
                       </LinkListItem>
                     </LinkList>
@@ -246,15 +246,15 @@ export class NavHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { co
                       <Row>
                         <Col xs='12' lg='6'>
                           <LinkList>
-                            <LinkListItem tag={DropdownItem} href='#'>
+                            <LinkListItem inDropdown href='#'>
                               <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                               <span>Link lista 1</span>
                             </LinkListItem>
-                            <LinkListItem tag={DropdownItem} href='#'>
+                            <LinkListItem inDropdown href='#'>
                               <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                               <span>Link lista 2</span>
                             </LinkListItem>
-                            <LinkListItem tag={DropdownItem} href='#'>
+                            <LinkListItem inDropdown href='#'>
                               <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                               <span>Link lista 3</span>
                             </LinkListItem>
@@ -262,15 +262,15 @@ export class NavHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { co
                         </Col>
                         <Col xs='12' lg='6'>
                           <LinkList>
-                            <LinkListItem tag={DropdownItem} href='#'>
+                            <LinkListItem inDropdown href='#'>
                               <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                               <span>Link lista 4</span>
                             </LinkListItem>
-                            <LinkListItem tag={DropdownItem} href='#'>
+                            <LinkListItem inDropdown href='#'>
                               <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                               <span>Link lista 5</span>
                             </LinkListItem>
-                            <LinkListItem tag={DropdownItem} href='#'>
+                            <LinkListItem inDropdown href='#'>
                               <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                               <span>Link lista 6</span>
                             </LinkListItem>

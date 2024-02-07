@@ -14,6 +14,8 @@ export interface LinkListItemProps extends AnchorHTMLAttributes<HTMLAnchorElemen
   header?: boolean;
   /** Indica se l'elemento è un divisore */
   divider?: boolean;
+  /** Indica se l'elemento è in un dropdown */
+  inDropdown?: boolean;
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente LinkListItem */
@@ -22,6 +24,8 @@ export interface LinkListItemProps extends AnchorHTMLAttributes<HTMLAnchorElemen
   wrapperClassName?: string;
   /** Indica il link a cui l'elemento deve puntare. */
   href?: string;
+  /** Indica il link route a cui l'elemento deve puntare. */
+  to?: string;
   testId?: string;
 }
 
@@ -40,10 +44,12 @@ export const LinkListItem: FC<LinkListItemProps> & {
   bold,
   large,
   href,
+  to,
   tag = 'a',
   wrapperClassName,
   testId,
   children,
+  inDropdown,
   ...attributes
 }) => {
   let Tag = tag;
@@ -55,7 +61,8 @@ export const LinkListItem: FC<LinkListItemProps> & {
       header,
       divider,
       large: large,
-      medium: bold
+      medium: bold,
+      'dropdown-item': inDropdown
     },
     'list-item'
   );
@@ -70,6 +77,11 @@ export const LinkListItem: FC<LinkListItemProps> & {
     Tag = 'h3';
   } else if (divider) {
     Tag = 'span';
+  }
+
+  if (inDropdown) {
+    attributes['role'] = 'menuitem';
+    attributes['tabIndex'] = 0;
   }
 
   if (header && href) {
