@@ -24,7 +24,7 @@ export interface LinkListProps extends HTMLAttributes<HTMLUListElement> {
   testId?: string;
 }
 
-export const LinkList: FC<LinkListProps> = ({
+export const LinkList: FC<React.PropsWithChildren<React.PropsWithChildren<LinkListProps>>> = ({
   className,
   wrapperClassName,
   tag = 'div',

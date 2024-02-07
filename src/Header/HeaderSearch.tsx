@@ -15,7 +15,7 @@ export interface HeaderSearchProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const HeaderSearch: FC<HeaderSearchProps> = ({
+export const HeaderSearch: FC<React.PropsWithChildren<React.PropsWithChildren<HeaderSearchProps>>> = ({
   className,
   label,
   href,

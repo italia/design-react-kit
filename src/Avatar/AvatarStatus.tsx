@@ -11,7 +11,7 @@ export interface AvatarStatusProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const AvatarStatus: FC<AvatarStatusProps> = ({ className, tag = 'div', status, testId, ...attributes }) => {
+export const AvatarStatus: FC<React.PropsWithChildren<React.PropsWithChildren<AvatarStatusProps>>> = ({ className, tag = 'div', status, testId, ...attributes }) => {
   const Tag = tag;
   const typeClass = classNames('avatar-status', {
     status

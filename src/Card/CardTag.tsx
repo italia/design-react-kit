@@ -9,7 +9,7 @@ export interface CardTagProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   testId?: string;
 }
 
-export const CardTag: FC<CardTagProps> = ({ className, tag = 'a', testId, ...attributes }) => {
+export const CardTag: FC<React.PropsWithChildren<React.PropsWithChildren<CardTagProps>>> = ({ className, tag = 'a', testId, ...attributes }) => {
   const Tag = tag;
   const classes = classNames(className, 'card-tag');
   return <Tag className={classes} {...attributes} data-testid={testId} />;

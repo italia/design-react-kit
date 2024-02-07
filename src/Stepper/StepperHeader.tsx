@@ -9,7 +9,7 @@ export interface StepperHeaderProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const StepperHeader: FC<StepperHeaderProps> = ({ tag = 'div', testId, className, children, ...attributes }) => {
+export const StepperHeader: FC<React.PropsWithChildren<React.PropsWithChildren<StepperHeaderProps>>> = ({ tag = 'div', testId, className, children, ...attributes }) => {
   const Tag = tag;
   const wrapperClass = classNames('steppers-header', className);
   // @ts-ignore not recognize children's props

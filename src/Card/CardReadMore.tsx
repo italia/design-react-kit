@@ -17,7 +17,7 @@ export interface CardReadMoreProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const CardReadMore: FC<CardReadMoreProps> = ({
+export const CardReadMore: FC<React.PropsWithChildren<React.PropsWithChildren<CardReadMoreProps>>> = ({
   className,
   text,
   iconName = 'it-arrow-right',

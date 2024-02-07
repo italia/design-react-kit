@@ -11,7 +11,7 @@ export interface CardTagsHeaderProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const CardTagsHeader: FC<CardTagsHeaderProps> = ({
+export const CardTagsHeader: FC<React.PropsWithChildren<React.PropsWithChildren<CardTagsHeaderProps>>> = ({
   date,
   children,
   className,

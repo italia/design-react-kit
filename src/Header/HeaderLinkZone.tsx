@@ -7,7 +7,7 @@ export interface HeaderLinkZoneProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const HeaderLinkZone: FC<HeaderLinkZoneProps> = ({ className, testId, ...attributes }) => {
+export const HeaderLinkZone: FC<React.PropsWithChildren<React.PropsWithChildren<HeaderLinkZoneProps>>> = ({ className, testId, ...attributes }) => {
   const classes = classNames(className);
   return (
     <div className='nav-mobile' data-testid={testId}>

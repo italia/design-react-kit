@@ -15,7 +15,7 @@ export interface AccordionHeaderProps {
   testId?: string;
 }
 
-export const AccordionHeader: FC<AccordionHeaderProps> = ({
+export const AccordionHeader: FC<React.PropsWithChildren<React.PropsWithChildren<AccordionHeaderProps>>> = ({
   className,
   tag = 'button',
   active = false,

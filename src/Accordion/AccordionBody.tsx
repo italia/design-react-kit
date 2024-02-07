@@ -1,4 +1,4 @@
-import React, { ElementType, useCallback, useState } from 'react';
+import React, { ElementType, ReactNode, useCallback, useState } from 'react';
 import classNames from 'classnames';
 import { Transition } from 'react-transition-group';
 
@@ -13,6 +13,7 @@ export type AccordionBodyProps = Partial<TransitionProps> & {
   listClassName?: string;
   active?: boolean;
   onToggle?: () => void;
+  children?: ReactNode | undefined
 };
 
 // hardcode these entries to avoid leaks
@@ -97,7 +98,7 @@ export const AccordionBody = ({
       onExiting={onExiting}
       onExited={onExited}
     >
-      {(status: TransitionStates) => {
+      {(status : any) => {
         const transitionClass = getTransitionClass(status);
         const classes = classNames(className, transitionClass);
         const listClasses = classNames(listClassName, 'accordion-body');

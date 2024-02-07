@@ -9,7 +9,7 @@ export interface CardFooterCTAProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const CardFooterCTA: FC<CardFooterCTAProps> = ({ className, tag = 'div', testId, ...attributes }) => {
+export const CardFooterCTA: FC<React.PropsWithChildren<React.PropsWithChildren<CardFooterCTAProps>>> = ({ className, tag = 'div', testId, ...attributes }) => {
   const Tag = tag;
   const classes = classNames(className, 'it-card-footer');
   return <Tag className={classes} {...attributes} data-testid={testId} />;

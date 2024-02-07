@@ -42,7 +42,7 @@ export interface CollapseProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Collapse: FC<CollapseProps> = ({
+export const Collapse: FC<React.PropsWithChildren<React.PropsWithChildren<CollapseProps>>> = ({
   header = false,
   className,
   navbar,

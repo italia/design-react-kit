@@ -8,7 +8,7 @@ export interface AccordionItemProps {
   className?: string;
 }
 
-export const AccordionItem: FC<AccordionItemProps> = ({ tag = 'div', className, ...attributes }) => {
+export const AccordionItem: FC<React.PropsWithChildren<React.PropsWithChildren<AccordionItemProps>>> = ({ tag = 'div', className, ...attributes }) => {
   const Tag = tag;
   const classes = classNames('accordion-item', className);
 

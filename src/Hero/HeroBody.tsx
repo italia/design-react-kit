@@ -8,7 +8,7 @@ export interface HeroBodyProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const HeroBody: FC<HeroBodyProps> = ({ children, className, testId }) => {
+export const HeroBody: FC<React.PropsWithChildren<React.PropsWithChildren<HeroBodyProps>>> = ({ children, className, testId }) => {
   const classes = classname('it-hero-text-wrapper', 'bg-dark', className);
   return (
     <Container>

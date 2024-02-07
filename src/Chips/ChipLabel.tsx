@@ -9,7 +9,7 @@ export interface ChipLabelProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const ChipLabel: FC<ChipLabelProps> = ({ className, tag = 'span', testId, ...attributes }) => {
+export const ChipLabel: FC<React.PropsWithChildren<React.PropsWithChildren<ChipLabelProps>>> = ({ className, tag = 'span', testId, ...attributes }) => {
   const Tag = tag;
   const classes = classNames(className, 'chip-label');
   return <Tag {...attributes} className={classes} data-testid={testId} />;

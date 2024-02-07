@@ -13,7 +13,7 @@ export interface InputContainerProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const InputContainer: FC<InputContainerProps> = ({
+export const InputContainer: FC<React.PropsWithChildren<React.PropsWithChildren<InputContainerProps>>> = ({
   id,
   infoId,
   infoText,

@@ -19,7 +19,7 @@ export interface DimmerProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Dimmer: FC<DimmerProps> = ({ icon, color, className, wrapperClassName, testId, ...attributes }) => {
+export const Dimmer: FC<React.PropsWithChildren<React.PropsWithChildren<DimmerProps>>> = ({ icon, color, className, wrapperClassName, testId, ...attributes }) => {
   const { children, ...rest } = attributes;
   const classes = classNames('dimmer', wrapperClassName === true ? className : wrapperClassName, {
     [`dimmer-${color}`]: color

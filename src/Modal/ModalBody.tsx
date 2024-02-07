@@ -7,4 +7,4 @@ export interface ModalBodyProps extends HTMLAttributes<HTMLElement> {
   cssModule?: CSSModule;
 }
 
-export const ModalBody: FC<ModalBodyProps> = (props) => <InnerModalBody {...props} />;
+export const ModalBody: FC<React.PropsWithChildren<React.PropsWithChildren<ModalBodyProps>>> = (props) => <InnerModalBody {...props} />;

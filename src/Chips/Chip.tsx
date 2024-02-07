@@ -17,7 +17,7 @@ export interface ChipProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Chip: FC<ChipProps> = ({
+export const Chip: FC<React.PropsWithChildren<React.PropsWithChildren<ChipProps>>> = ({
   className,
   color = '',
   tag = 'div',

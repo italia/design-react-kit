@@ -7,7 +7,7 @@ export interface TimelineProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Timeline: FC<TimelineProps> = (props) => {
+export const Timeline: FC<React.PropsWithChildren<React.PropsWithChildren<TimelineProps>>> = (props) => {
   const { className, testId, ...attributes } = props;
   const { children, ...rest } = attributes;
   const timelineWrapper = classnames(className, 'it-timeline-wrapper');

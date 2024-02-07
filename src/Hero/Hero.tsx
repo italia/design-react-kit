@@ -15,7 +15,7 @@ export interface HeroProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Hero: FC<HeroProps> = ({
+export const Hero: FC<React.PropsWithChildren<React.PropsWithChildren<HeroProps>>> = ({
   tag: Tag = 'div',
   small,
   centered,

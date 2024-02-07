@@ -15,7 +15,7 @@ export interface CalloutProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Callout: FC<CalloutProps> = ({
+export const Callout: FC<React.PropsWithChildren<React.PropsWithChildren<CalloutProps>>> = ({
   children,
   color = '',
   highlight = false,

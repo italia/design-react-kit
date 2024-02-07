@@ -10,7 +10,7 @@ export interface HeroBackgroundProps extends HTMLAttributes<HTMLImageElement> {
   testId?: string;
 }
 
-export const HeroBackground: FC<HeroBackgroundProps> = ({ alt, testId, ...attributes }) => {
+export const HeroBackground: FC<React.PropsWithChildren<React.PropsWithChildren<HeroBackgroundProps>>> = ({ alt, testId, ...attributes }) => {
   return (
     <div className='img-responsive-wrapper' data-testid={testId}>
       <div className='img-responsive'>

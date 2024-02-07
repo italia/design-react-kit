@@ -46,7 +46,7 @@ export const isCustomLegendObject = (
   return legend != null && typeof legend === 'object' && 'content' in legend;
 };
 
-export const Rating: FC<RatingProps> = ({
+export const Rating: FC<React.PropsWithChildren<React.PropsWithChildren<RatingProps>>> = ({
   className,
   inputs,
   legend,

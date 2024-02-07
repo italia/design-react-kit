@@ -18,7 +18,7 @@ export interface HeaderProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Header: FC<HeaderProps> = ({ className, small = false, theme = '', type, testId, ...attributes }) => {
+export const Header: FC<React.PropsWithChildren<React.PropsWithChildren<HeaderProps>>> = ({ className, small = false, theme = '', type, testId, ...attributes }) => {
   // use context here as theme
   const classes = classNames(className, {
     [`it-header-${type}-wrapper`]: type,

@@ -31,7 +31,7 @@ export interface BottomNavItemProps extends HTMLAttributes<HTMLLIElement> {
   testId?: string;
 }
 
-export const BottomNavItem: FC<BottomNavItemProps> = ({
+export const BottomNavItem: FC<React.PropsWithChildren<React.PropsWithChildren<BottomNavItemProps>>> = ({
   active = false,
   badge,
   alert = false,

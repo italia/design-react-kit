@@ -17,7 +17,7 @@ export interface SidebarProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Sidebar: FC<SidebarProps> = ({
+export const Sidebar: FC<React.PropsWithChildren<React.PropsWithChildren<SidebarProps>>> = ({
   className,
   testId,
   tag = 'div',

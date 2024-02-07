@@ -48,7 +48,7 @@ export interface ModalProps extends HTMLAttributes<HTMLElement> {
   align?: 'left' | 'right';
 }
 
-export const Modal: FC<ModalProps> = ({
+export const Modal: FC<React.PropsWithChildren<React.PropsWithChildren<ModalProps>>> = ({
   withIcon,
   withLinkList,
   popConfirm,

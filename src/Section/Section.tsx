@@ -33,7 +33,7 @@ export interface SectionProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Section: FC<SectionProps> = ({
+export const Section: FC<React.PropsWithChildren<React.PropsWithChildren<SectionProps>>> = ({
   color,
   image,
   testId,

@@ -6,7 +6,7 @@ export type { IconName } from './assets';
 
 export const iconsList = allIcons;
 
-let iconsCache: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {};
+let iconsCache: Record<IconName, FC<React.PropsWithChildren<React.PropsWithChildren<SVGProps<SVGSVGElement>>>>> = {};
 
 /**
  * Preload a list of icons in cache
@@ -16,7 +16,7 @@ let iconsCache: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {};
 export function preloadIcons(icons: IconName[]) {
   return Promise.all(icons.map((icon) => loadIcon(icon))).then((preloadedIcons) => {
     preloadedIcons.forEach(({ component }, i) => {
-      iconsCache[icons[i]] = (() => component) as unknown as FC<SVGProps<SVGSVGElement>>;
+      iconsCache[icons[i]] = (() => component) as unknown as FC<React.PropsWithChildren<React.PropsWithChildren<SVGProps<SVGSVGElement>>>>;
     });
     return true;
   });
@@ -67,7 +67,7 @@ interface SVGRProps {
   titleId?: string;
 }
 
-export const Icon: FC<IconProps> = ({
+export const Icon: FC<React.PropsWithChildren<React.PropsWithChildren<IconProps>>> = ({
   color = '',
   size = '',
   icon = '',
@@ -88,7 +88,7 @@ export const Icon: FC<IconProps> = ({
   useEffect(() => {
     if (isBundledIcon(icon) && !iconsCache[icon]) {
       loadIcon(icon).then(({ component }) => {
-        iconsCache[icon] = (() => component) as unknown as FC<SVGProps<SVGSVGElement> & SVGRProps>;
+        iconsCache[icon] = (() => component) as unknown as FC<React.PropsWithChildren<React.PropsWithChildren<SVGProps<SVGSVGElement> & SVGRProps>>>;
         setCurrentIcon(iconsCache[icon]);
         onIconLoad?.();
       });

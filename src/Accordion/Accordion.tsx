@@ -13,7 +13,7 @@ export interface AccordionProps {
   testId?: string;
 }
 
-export const Accordion: FC<AccordionProps> = ({
+export const Accordion: FC<React.PropsWithChildren<React.PropsWithChildren<AccordionProps>>> = ({
   tag = 'div',
   className,
   background,

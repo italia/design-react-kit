@@ -33,7 +33,7 @@ const contentStyleDark = {
   opacity: 0.5
 };
 
-export const StepperContent: FC<StepperContentProps> = ({ tag = 'div', className, dark, ...attributes }) => {
+export const StepperContent: FC<React.PropsWithChildren<React.PropsWithChildren<StepperContentProps>>> = ({ tag = 'div', className, dark, ...attributes }) => {
   const Tag = tag;
   const classes = classNames('steppers-content', className);
   return (

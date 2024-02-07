@@ -40,7 +40,7 @@ export interface StepperHeaderElementProps extends HTMLAttributes<HTMLLIElement>
   testId?: string;
 }
 
-export const StepperHeaderElement: FC<StepperHeaderElementProps> = ({
+export const StepperHeaderElement: FC<React.PropsWithChildren<React.PropsWithChildren<StepperHeaderElementProps>>> = ({
   tag = 'li',
   variant,
   appendIcon,

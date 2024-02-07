@@ -15,6 +15,6 @@ export interface CardTextProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const CardText: FC<CardTextProps> = (props) => {
+export const CardText: FC<React.PropsWithChildren<React.PropsWithChildren<CardTextProps>>> = (props) => {
   return <InnerCardText {...props} data-testid={props.testId} />;
 };

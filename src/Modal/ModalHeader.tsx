@@ -21,7 +21,7 @@ export interface ModalHeaderProps extends HTMLAttributes<HTMLElement> {
   closeAriaLabel?: string;
 }
 
-export const ModalHeader: FC<ModalHeaderProps> = ({
+export const ModalHeader: FC<React.PropsWithChildren<React.PropsWithChildren<ModalHeaderProps>>> = ({
   icon,
   className,
   children,

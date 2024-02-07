@@ -7,4 +7,4 @@ export interface ModalFooterProps extends HTMLAttributes<HTMLElement> {
   cssModule?: CSSModule;
 }
 
-export const ModalFooter: FC<ModalFooterProps> = (props) => <InnerModalFooter {...props} />;
+export const ModalFooter: FC<React.PropsWithChildren<React.PropsWithChildren<ModalFooterProps>>> = (props) => <InnerModalFooter {...props} />;

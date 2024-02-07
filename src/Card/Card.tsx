@@ -25,7 +25,7 @@ export interface CardProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Card: FC<CardProps> = ({
+export const Card: FC<React.PropsWithChildren<React.PropsWithChildren<CardProps>>> = ({
   tag = 'div',
   href = undefined,
   teaser,

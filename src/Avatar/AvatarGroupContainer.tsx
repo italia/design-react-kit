@@ -11,7 +11,7 @@ export interface AvatarGroupContainerProps extends HTMLAttributes<HTMLUListEleme
   testId?: string;
 }
 
-export const AvatarGroupContainer: FC<AvatarGroupContainerProps> = ({
+export const AvatarGroupContainer: FC<React.PropsWithChildren<React.PropsWithChildren<AvatarGroupContainerProps>>> = ({
   className,
   tag = 'ul',
   wrapperClassName,

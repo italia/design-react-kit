@@ -22,7 +22,7 @@ export interface AvatarIconProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const AvatarIcon: FC<AvatarIconProps> = ({
+export const AvatarIcon: FC<React.PropsWithChildren<React.PropsWithChildren<AvatarIconProps>>> = ({
   className,
   tag = 'div',
   size = 'md',

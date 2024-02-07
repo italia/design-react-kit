@@ -9,7 +9,7 @@ export interface AvatarContainerProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const AvatarContainer: FC<AvatarContainerProps> = ({ className, tag = 'div', testId, ...attributes }) => {
+export const AvatarContainer: FC<React.PropsWithChildren<React.PropsWithChildren<AvatarContainerProps>>> = ({ className, tag = 'div', testId, ...attributes }) => {
   const Tag = tag;
   const wrapperClasses = classNames(
     'd-flex align-items-center justify-content-around flex-wrap flex-sm-nowrap',

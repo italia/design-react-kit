@@ -15,7 +15,7 @@ export interface DimmerButtonsProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const DimmerButtons: FC<DimmerButtonsProps> = ({
+export const DimmerButtons: FC<React.PropsWithChildren<React.PropsWithChildren<DimmerButtonsProps>>> = ({
   color,
   className,
   single = false,

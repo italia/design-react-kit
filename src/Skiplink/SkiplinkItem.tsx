@@ -11,7 +11,7 @@ export interface SkiplinkItemProps extends AnchorHTMLAttributes<HTMLAnchorElemen
   testId?: string;
 }
 
-export const SkiplinkItem: FC<SkiplinkItemProps> = ({
+export const SkiplinkItem: FC<React.PropsWithChildren<React.PropsWithChildren<SkiplinkItemProps>>> = ({
   className,
   tag = 'a',
   focusable = true,

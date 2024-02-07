@@ -13,7 +13,7 @@ export interface MegamenuProps extends NavbarProps {
   testId?: string;
 }
 
-export const Megamenu: FC<MegamenuProps> = ({ brand, className, children, testId, ...attributes }) => {
+export const Megamenu: FC<React.PropsWithChildren<React.PropsWithChildren<MegamenuProps>>> = ({ brand, className, children, testId, ...attributes }) => {
   const [openNav, setOpenNav] = useState(false);
   const toggle = () => {
     setOpenNav(!openNav);
@@ -24,7 +24,7 @@ export const Megamenu: FC<MegamenuProps> = ({ brand, className, children, testId
       <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
         <Icon icon='it-list' size='sm' />
       </NavbarToggler>
-      {brand}
+      <>{brand}</>
       <Collapse isOpen={openNav} megamenu>
         <Nav navbar>{children}</Nav>
       </Collapse>

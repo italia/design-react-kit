@@ -6,7 +6,7 @@ export interface MegamenuFooterProps extends HTMLAttributes<HTMLDivElement> {
   className?: string;
 }
 
-export const MegamenuFooter: FC<MegamenuFooterProps> = ({ className, children, ...attributes }) => {
+export const MegamenuFooter: FC<React.PropsWithChildren<React.PropsWithChildren<MegamenuFooterProps>>> = ({ className, children, ...attributes }) => {
   const classes = classNames(className, 'it-megamenu-footer');
   return (
     <div className={classes} {...attributes}>

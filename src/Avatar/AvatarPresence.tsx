@@ -11,7 +11,7 @@ export interface AvatarPresenceProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const AvatarPresence: FC<AvatarPresenceProps> = ({
+export const AvatarPresence: FC<React.PropsWithChildren<React.PropsWithChildren<AvatarPresenceProps>>> = ({
   className,
   tag = 'div',
   presence,

@@ -13,7 +13,7 @@ export interface StepperContainerProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const StepperContainer: FC<StepperContainerProps> = ({
+export const StepperContainer: FC<React.PropsWithChildren<React.PropsWithChildren<StepperContainerProps>>> = ({
   tag = 'div',
   mobile,
   dark,

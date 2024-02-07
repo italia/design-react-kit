@@ -17,7 +17,7 @@ export interface SpinnerProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Spinner: FC<SpinnerProps> = ({
+export const Spinner: FC<React.PropsWithChildren<React.PropsWithChildren<SpinnerProps>>> = ({
   className,
   tag = 'span',
   active = false,

@@ -45,7 +45,7 @@ export const NotificationManager = (props: NotificationManagerProps) => {
     <PositionContext.Provider value={fix}>
       <div ref={containerRef} id={containerId as string} style={style}>
         {getToastToRender((_, toastList) => {
-          return toastList.map(({ content, props: toastProps }) => {
+          return toastList.map(({ content, props: toastProps } : any) => {
             return (
               <Notification
                 {...toastProps}

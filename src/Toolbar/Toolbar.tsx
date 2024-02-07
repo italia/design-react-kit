@@ -10,7 +10,7 @@ export interface ToolbarProps extends HTMLAttributes<HTMLElement> {
   vertical?: boolean;
 }
 
-export const Toolbar: FC<ToolbarProps> = ({ tag = 'nav', size, testId, children, vertical, ...attributes }) => {
+export const Toolbar: FC<React.PropsWithChildren<React.PropsWithChildren<ToolbarProps>>> = ({ tag = 'nav', size, testId, children, vertical, ...attributes }) => {
   const Tag = tag;
   const classes = classnames('toolbar', {
     [`toolbar-${size}`]: size && size !== 'large',

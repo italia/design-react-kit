@@ -7,7 +7,7 @@ export interface HeroButtonProps extends ButtonProps {
   testId?: string;
 }
 
-export const HeroButton: FC<HeroButtonProps> = ({ wrapperClassName, testId, ...attributes }) => {
+export const HeroButton: FC<React.PropsWithChildren<React.PropsWithChildren<HeroButtonProps>>> = ({ wrapperClassName, testId, ...attributes }) => {
   const classes = classname('it-btn-container', wrapperClassName);
   return (
     <div className={classes} data-testid={testId}>

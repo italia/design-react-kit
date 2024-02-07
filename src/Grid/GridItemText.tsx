@@ -7,7 +7,7 @@ export interface GridItemTextProps extends HTMLAttributes<HTMLSpanElement> {
   testId?: string;
 }
 
-export const GridItemText: FC<GridItemTextProps> = ({ className, children, testId, ...attributes }) => {
+export const GridItemText: FC<React.PropsWithChildren<React.PropsWithChildren<GridItemTextProps>>> = ({ className, children, testId, ...attributes }) => {
   const classes = classname('it-griditem-text', className);
   return (
     <span {...attributes} className={classes} data-testid={testId}>

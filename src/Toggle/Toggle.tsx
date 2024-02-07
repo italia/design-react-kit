@@ -18,7 +18,7 @@ export interface ToggleProps extends InputProps {
   testId?: string;
 }
 
-export const Toggle: FC<ToggleProps> = ({ label, testId, ...rest }) => {
+export const Toggle: FC<React.PropsWithChildren<React.PropsWithChildren<ToggleProps>>> = ({ label, testId, ...rest }) => {
   return (
     <div className='toggles' data-testid={testId}>
       <Label check>

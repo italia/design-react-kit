@@ -12,7 +12,7 @@ export interface ThumbNavProps extends HTMLAttributes<HTMLUListElement> {
   testId?: string;
 }
 
-export const ThumbNav: FC<ThumbNavProps> = ({
+export const ThumbNav: FC<React.PropsWithChildren<React.PropsWithChildren<ThumbNavProps>>> = ({
   isSmall = false,
   fixedWidth = false,
   isVertical = false,

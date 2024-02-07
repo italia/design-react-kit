@@ -28,7 +28,7 @@ const defaultProps = {
   fade: true
 };
 
-export const Alert: FC<AlertProps> = ({ testId, ...props }) => {
+export const Alert: FC<React.PropsWithChildren<React.PropsWithChildren<AlertProps>>> = ({ testId, ...props }) => {
   return <InnerAlert data-testid={testId} {...props} />;
 };
 

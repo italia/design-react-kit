@@ -106,7 +106,7 @@ function ToolbarItemLabel({
   );
 }
 
-export const ToolbarItem: FC<ToolbarItemProps> = ({
+export const ToolbarItem: FC<React.PropsWithChildren<React.PropsWithChildren<ToolbarItemProps>>> = ({
   active = false,
   badge,
   url,

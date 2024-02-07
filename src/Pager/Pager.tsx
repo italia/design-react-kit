@@ -17,7 +17,7 @@ export interface PagerProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Pager: FC<PagerProps> = ({
+export const Pager: FC<React.PropsWithChildren<React.PropsWithChildren<PagerProps>>> = ({
   className,
   tag = 'nav',
   listTag: ListTag = 'ul',

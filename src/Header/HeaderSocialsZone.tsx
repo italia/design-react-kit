@@ -11,7 +11,7 @@ export interface HeaderSocialsZoneProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const HeaderSocialsZone: FC<HeaderSocialsZoneProps> = ({
+export const HeaderSocialsZone: FC<React.PropsWithChildren<React.PropsWithChildren<HeaderSocialsZoneProps>>> = ({
   className,
   children,
   label,

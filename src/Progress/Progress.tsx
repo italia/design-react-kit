@@ -25,7 +25,7 @@ export interface ProgressProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Progress: FC<ProgressProps> = ({
+export const Progress: FC<React.PropsWithChildren<React.PropsWithChildren<ProgressProps>>> = ({
   wrapperClassName,
   className,
   tag = 'div',

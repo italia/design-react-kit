@@ -13,6 +13,6 @@ export interface CardTitleProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const CardTitle: FC<CardTitleProps> = (props) => {
+export const CardTitle: FC<React.PropsWithChildren<React.PropsWithChildren<CardTitleProps>>> = (props) => {
   return <InnerCardTitle {...props} data-testid={props.testId} />;
 };

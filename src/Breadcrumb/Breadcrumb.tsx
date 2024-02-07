@@ -21,7 +21,7 @@ export interface BreadcrumbProps extends HTMLAttributes<HTMLDivElement> {
   testId?: string;
 }
 
-export const Breadcrumb: FC<BreadcrumbProps> = ({
+export const Breadcrumb: FC<React.PropsWithChildren<React.PropsWithChildren<BreadcrumbProps>>> = ({
   className,
   listClassName,
   dark,

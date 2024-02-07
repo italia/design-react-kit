@@ -24,7 +24,7 @@ export interface TimelinePinProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const TimelinePin: FC<TimelinePinProps> = ({
+export const TimelinePin: FC<React.PropsWithChildren<React.PropsWithChildren<TimelinePinProps>>> = ({
   iconName = 'it-code-circle',
   icon = 'it-code-circle',
   label = ' ',

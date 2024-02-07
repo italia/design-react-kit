@@ -10,7 +10,7 @@ export interface ResponsiveImageProps extends HTMLAttributes<HTMLImageElement> {
   testId?: string;
 }
 
-export const ResponsiveImage: FC<ResponsiveImageProps> = ({ alt, testId, ...attributes }) => {
+export const ResponsiveImage: FC<React.PropsWithChildren<React.PropsWithChildren<ResponsiveImageProps>>> = ({ alt, testId, ...attributes }) => {
   return (
     <div className='img-responsive-wrapper' data-testid={testId}>
       <div className='img-responsive'>

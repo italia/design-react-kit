@@ -27,7 +27,7 @@ const handleDisabledOnClick = (e: MouseEvent<HTMLAnchorElement>) => {
   e.preventDefault();
 };
 
-export const LinkListItem: FC<LinkListItemProps> = ({
+export const LinkListItem: FC<React.PropsWithChildren<React.PropsWithChildren<LinkListItemProps>>> = ({
   className,
   active,
   disabled,

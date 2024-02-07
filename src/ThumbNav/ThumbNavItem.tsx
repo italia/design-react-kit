@@ -9,7 +9,7 @@ export interface ThumbNavItemProps extends HTMLAttributes<HTMLLIElement> {
   testId?: string;
 }
 
-export const ThumbNavItem: FC<ThumbNavItemProps> = ({
+export const ThumbNavItem: FC<React.PropsWithChildren<React.PropsWithChildren<ThumbNavItemProps>>> = ({
   active = false,
   targetUrl,
   imageUrl,

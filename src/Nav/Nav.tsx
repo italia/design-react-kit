@@ -35,7 +35,7 @@ export interface NavProps extends HTMLAttributes<HTMLUListElement> {
   secondary?: boolean;
 }
 
-export const Nav: FC<NavProps> = ({ className, tag = 'ul', vertical = false, secondary, ...attributes }) => {
+export const Nav: FC<React.PropsWithChildren<React.PropsWithChildren<NavProps>>> = ({ className, tag = 'ul', vertical = false, secondary, ...attributes }) => {
   const classes = classNames(className, {
     'navbar-secondary': secondary
   });

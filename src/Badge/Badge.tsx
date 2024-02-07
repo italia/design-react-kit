@@ -20,7 +20,7 @@ export type BadgeProps = {
   testId?: string;
 } & (HTMLAttributes<HTMLElement> | AnchorHTMLAttributes<HTMLAnchorElement>);
 
-export const Badge: FC<BadgeProps> = ({
+export const Badge: FC<React.PropsWithChildren<React.PropsWithChildren<BadgeProps>>> = ({
   color = 'secondary',
   pill = false,
   tag = 'span',

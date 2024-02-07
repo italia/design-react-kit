@@ -11,7 +11,7 @@ export interface CalloutTextProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const CalloutText: FC<CalloutTextProps> = ({
+export const CalloutText: FC<React.PropsWithChildren<React.PropsWithChildren<CalloutTextProps>>> = ({
   bigText = false,
   children,
   className,

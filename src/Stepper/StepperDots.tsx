@@ -11,7 +11,7 @@ export interface StepperDotsProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const StepperDots: FC<StepperDotsProps> = ({ tag = 'ul', className, testId, ...attributes }) => {
+export const StepperDots: FC<React.PropsWithChildren<React.PropsWithChildren<StepperDotsProps>>> = ({ tag = 'ul', className, testId, ...attributes }) => {
   const Tag = tag;
   const wrapperClass = classNames('steppers-dots', className);
   return <Tag {...attributes} className={wrapperClass} data-testid={testId} />;
