@@ -54,8 +54,6 @@ export {
   Util
 } from 'reactstrap';
 
-export { useNavScroll } from 'react-use-navscroll';
-
 export { Alert } from './Alert/Alert';
 export { Accordion } from './Accordion/Accordion';
 export { AccordionItem } from './Accordion/AccordionItem';
@@ -300,4 +298,3 @@ export type {
   UncontrolledDropdownProps,
   UncontrolledTooltipProps
 } from 'reactstrap';
-export type { useNavScrollArgs, useNavScrollResult, RegisterOptions, ChangesType } from 'react-use-navscroll';
