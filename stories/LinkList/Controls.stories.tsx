@@ -4,66 +4,69 @@ import { LinkList, LinkListItem, Toggle, Input, Label, FormGroup, Icon } from '.
 
 const ControlliComponent = () => (
   <LinkList>
-    <LinkListItem active className='left-icon'>
-      <i className='it-chevron-right left' aria-hidden='true' />
-      <Icon className='left' color='primary' icon='it-chevron-right' aria-hidden />
-      <span>Link list 1 active</span>
+    <LinkListItem active className='icon-left'>
+      <LinkListItem.TitleIconWrapper>
+        <Icon color='primary' icon='it-chevron-right' aria-hidden />
+        <span>Link list 1 active</span>
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
-    <LinkListItem className='left-icon'>
-      <i className='it-chevron-right left' aria-hidden='true' />
-      <Icon className='left' color='primary' icon='it-chevron-right' aria-hidden />
-      <span>Link list 2</span>
+    <LinkListItem className='icon-left'>
+      <LinkListItem.TitleIconWrapper>
+        <Icon color='primary' icon='it-chevron-right' aria-hidden />
+        <span>Link list 2</span>
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
-    <LinkListItem disabled className='left-icon'>
-      <i className='it-chevron-right left' aria-hidden='true' />
-      <Icon className='left' color='primary' icon='it-chevron-right' aria-hidden />
-      <span>Link list 3 disabled</span>
+    <LinkListItem disabled className='icon-left'>
+      <LinkListItem.TitleIconWrapper>
+        <Icon color='primary' icon='it-chevron-right' aria-hidden />
+        <span>Link list 3 disabled</span>
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
   </LinkList>
 );
 
 const ControlliSecondariComponent = () => (
   <LinkList>
-    <LinkListItem active className='right-icon'>
-      <span>Link list 1 active</span>
-      <i className='it-app right secondary' />
-      <Icon className='icon-right' color='primary' icon='it-link' aria-hidden />
+    <LinkListItem active className='icon-right'>
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 1 active</span>
+        <Icon color='primary' icon='it-link' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
-    <LinkListItem className='right-icon'>
-      <span>Link list 2</span>
-      <i className='it-app right secondary' />
-      <Icon className='icon-right' color='primary' icon='it-link' aria-hidden />
+    <LinkListItem className='icon-right'>
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 2</span>
+        <Icon color='primary' icon='it-link' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
-    <LinkListItem disabled className='right-icon'>
-      <span>Link list 3 disabled</span>
-      <i className='it-app right secondary' />
-      <Icon className='icon-right' color='primary' icon='it-link' aria-hidden />
+    <LinkListItem disabled className='icon-right'>
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 3 disabled</span>
+        <Icon color='primary' icon='it-link' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
   </LinkList>
 );
 
 export const PrimaryESecondaryAction = () => (
   <LinkList>
-    <LinkListItem active className='left-icon right-icon'>
-      <i className='it-favorite left' />
-      <Icon className='left' color='primary' icon='it-link' aria-hidden />
-      <span>Link list 1 active</span>
-      <i className='it-app right secondary' />
-      <Icon className='right' color='secondary' icon='it-chevron-right' aria-hidden />
+    <LinkListItem active className='icon-right'>
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 1 active</span>
+        <Icon color='primary' icon='it-link' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
-    <LinkListItem className='left-icon right-icon'>
-      <i className='it-favorite left' />
-      <Icon className='left' color='primary' icon='it-link' aria-hidden />
-      <span>Link list 2</span>
-      <i className='it-app right secondary' />
-      <Icon className='right' color='secondary' icon='it-chevron-right' aria-hidden />
+    <LinkListItem className='icon-right'>
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 2</span>
+        <Icon color='primary' icon='it-link' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
-    <LinkListItem disabled className='left-icon right-icon'>
-      <i className='it-favorite left' />
-      <Icon className='left' color='primary' icon='it-link' aria-hidden />
-      <span>Link list 3 disabled</span>
-      <i className='it-app right secondary' />
-      <Icon className='right' color='secondary' icon='it-chevron-right' aria-hidden />
+    <LinkListItem disabled className='icon-right'>
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 3 disabled</span>
+        <Icon color='primary' icon='it-link' aria-hidden />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
   </LinkList>
 );

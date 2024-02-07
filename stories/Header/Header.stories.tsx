@@ -108,7 +108,7 @@ _HeaderComplete.args = {
   theme: '',
   slimHeaderType: 'default',
   sticky: false,
-  iconName: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Coat-elements.png'
+  iconName: 'it-pa'
 };
 _HeaderComplete.argTypes = {
   slimHeaderType: {
@@ -154,5 +154,5 @@ _HeaderCompleteLight.args = {
   theme: 'light',
   slimHeaderType: 'default',
   sticky: false,
-  iconName: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Coat-elements.png'
+  iconName: 'it-pa'
 };

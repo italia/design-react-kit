@@ -6,15 +6,17 @@ import LinkListCollapsibleExample from './LinkListCollapsibleExample';
 
 const NavigationComponent = () => (
   <LinkList>
-    <LinkListItem size='medium' className='right-icon'>
-      <span>Link list 1 </span>
-      <i className='it-favorite right' />
-      <Icon icon='it-link' color='primary' className='right' />
+    <LinkListItem bold large className='icon-right'>
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 1 </span>
+        <Icon icon='it-link' color='primary' className='right' />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
-    <LinkListItem size='medium' className='right-icon'>
-      <span>Link list 2 </span>
-      <i className='it-favorite right' />
-      <Icon icon='it-link' color='primary' className='right' />
+    <LinkListItem bold large className='icon-right'>
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 2 </span>
+        <Icon icon='it-link' color='primary' className='right' />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
     <LinkList sublist>
       <LinkListItem>
@@ -27,10 +29,11 @@ const NavigationComponent = () => (
         <span>Link list 6 </span>
       </LinkListItem>
     </LinkList>
-    <LinkListItem size='medium' className='right-icon'>
-      <span>Link list 3 </span>
-      <i className='it-favorite right' />
-      <Icon icon='it-link' color='primary' className='right' />
+    <LinkListItem bold large className='icon-right'>
+      <LinkListItem.TitleIconWrapper>
+        <span>Link list 3 </span>
+        <Icon icon='it-link' color='primary' className='right' />
+      </LinkListItem.TitleIconWrapper>
     </LinkListItem>
   </LinkList>
 );

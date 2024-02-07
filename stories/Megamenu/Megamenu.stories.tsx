@@ -1,373 +1,407 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Col,
   Icon,
   LinkList,
   LinkListItem,
-  Megamenu,
   MegamenuItem,
   MegamenuFooter,
   MegamenuHighlightColumn,
-  Row
+  Row,
+  DropdownItem,
+  Navbar,
+  NavbarBrand,
+  NavbarToggler,
+  Nav,
+  Collapse
 } from '../../src';
 
-export const Classico = () => {
-  return (
-    <Megamenu expand='lg'>
-      <MegamenuItem itemName='Megamenu Classico'>
-        <Row>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-            </LinkList>
-          </Col>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-            </LinkList>
-          </Col>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-            </LinkList>
-          </Col>
-        </Row>
-      </MegamenuItem>
-    </Megamenu>
-  );
-};
-
 export const ConLinkMore = () => {
+  const [openNav, setOpenNav] = useState(false);
+  const toggle = () => {
+    setOpenNav(!openNav);
+  };
   return (
-    <Megamenu expand='lg'>
-      <MegamenuItem itemName='Megamenu con Link More'>
-        <Row>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-            </LinkList>
-          </Col>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-            </LinkList>
-          </Col>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-            </LinkList>
-          </Col>
-        </Row>
-        <div className='it-external'>
-          <Row>
-            <Col xs='12' lg='4' />
-            <Col xs='12' lg='4' />
-            <Col xs='12' lg='4'>
-              <LinkList>
-                <LinkListItem wrapperClassName='it-more' className='medium' href='#'>
-                  Link list Item 5
-                  <Icon color='primary' icon='it-arrow-right' size='sm' />
-                </LinkListItem>
-              </LinkList>
-            </Col>
-          </Row>
-        </div>
-      </MegamenuItem>
-    </Megamenu>
-  );
-};
-export const ConIntestazione = () => {
-  return (
-    <Megamenu expand='lg'>
-      <MegamenuItem itemName='Megamenu con Intestazione'>
-        <Row>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem header>Heading 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-            </LinkList>
-          </Col>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem header>Heading 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-            </LinkList>
-          </Col>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem header>Heading 3</LinkListItem>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-            </LinkList>
-          </Col>
-        </Row>
-      </MegamenuItem>
-    </Megamenu>
+    <Navbar expand='lg' className='has-megamenu'>
+      <NavbarBrand />
+      <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
+        <Icon icon='it-list' size='sm' />
+      </NavbarToggler>
+      <Collapse isOpen={openNav} navbar header megamenu>
+        <Nav className='mt-0' navbar>
+          <MegamenuItem itemName='Megamenu con link "Esplora tutti"'>
+            <Row>
+              <Col xs='12' lg='4'>
+                <LinkList>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 1</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 2</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 3</span>
+                  </LinkListItem>
+                </LinkList>
+              </Col>
+              <Col xs='12' lg='4'>
+                <LinkList>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 4</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 5</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 6</span>
+                  </LinkListItem>
+                </LinkList>
+              </Col>
+              <Col xs='12' lg='4'>
+                <LinkList>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 7</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 8</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 9</span>
+                  </LinkListItem>
+                </LinkList>
+              </Col>
+            </Row>
+            <MegamenuFooter className='text-end'>
+              <MegamenuFooter.Item href='#'>
+                <span>
+                  Esplora tutti i contenuti del megamenu{' '}
+                  <Icon className='ms-2' color='primary' icon='it-arrow-right' size='sm' />
+                </span>
+              </MegamenuFooter.Item>
+            </MegamenuFooter>
+          </MegamenuItem>
+        </Nav>
+      </Collapse>
+    </Navbar>
   );
 };
 export const ConIntestazioneELinkMore = () => {
+  const [openNav, setOpenNav] = useState(false);
+  const toggle = () => {
+    setOpenNav(!openNav);
+  };
   return (
-    <Megamenu expand='lg'>
-      <MegamenuItem itemName='Megamenu con Intestazione e Link More'>
-        <Row>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem header>Heading 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-              <LinkListItem wrapperClassName='it-more' className='medium' href='#'>
-                View More
-                <Icon color='primary' icon='it-arrow-right' size='sm' />
-              </LinkListItem>
-            </LinkList>
-          </Col>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem header>Heading 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-              <LinkListItem wrapperClassName='it-more' className='medium' href='#'>
-                View More
-                <Icon color='primary' icon='it-arrow-right' size='sm' />
-              </LinkListItem>
-            </LinkList>
-          </Col>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem header>Heading 3</LinkListItem>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-              <LinkListItem wrapperClassName='it-more' className='medium' href='#'>
-                View More
-                <Icon color='primary' icon='it-arrow-right' size='sm' />
-              </LinkListItem>
-            </LinkList>
-          </Col>
-        </Row>
-      </MegamenuItem>
-    </Megamenu>
+    <Navbar expand='lg' className='has-megamenu'>
+      <NavbarBrand />
+      <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
+        <Icon icon='it-list' size='sm' />
+      </NavbarToggler>
+      <Collapse isOpen={openNav} navbar header megamenu>
+        <Nav className='mt-0' navbar>
+          <MegamenuItem itemName='Megamenu con intestazione e "esplora tutti"'>
+            <Row>
+              <Col xs='12'>
+                <div className='it-heading-link-wrapper'>
+                  <a className='it-heading-link' href='#'>
+                    <Icon className='me-2 mb-1' icon='it-arrow-right-triangle'></Icon>
+                    <span>Esplora la sezione megamenu</span>
+                  </a>
+                </div>
+                <Row>
+                  <Col xs='12' lg='4'>
+                    <LinkList>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 1</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 2</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 3</span>
+                      </LinkListItem>
+                    </LinkList>
+                  </Col>
+                  <Col xs='12' lg='4'>
+                    <LinkList>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 4</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 5</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 6</span>
+                      </LinkListItem>
+                    </LinkList>
+                  </Col>
+                  <Col xs='12' lg='4'>
+                    <LinkList>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 7</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 8</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 9</span>
+                      </LinkListItem>
+                    </LinkList>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </MegamenuItem>
+        </Nav>
+      </Collapse>
+    </Navbar>
   );
 };
 export const ConCallToActionInBasso = () => {
+  const [openNav, setOpenNav] = useState(false);
+  const toggle = () => {
+    setOpenNav(!openNav);
+  };
   return (
-    <Megamenu expand='lg'>
-      <MegamenuItem itemName='Megamenu con Call to Action in basso'>
-        <Row>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-            </LinkList>
-          </Col>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-            </LinkList>
-          </Col>
-          <Col xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem href='#'>Link list Item 1</LinkListItem>
-              <LinkListItem href='#'>Link list Item 2</LinkListItem>
-              <LinkListItem href='#'>Link list Item 3</LinkListItem>
-            </LinkList>
-          </Col>
-        </Row>
-        <MegamenuFooter>
-          <Row>
-            <Col xs='12' lg='4'>
-              <LinkList>
-                <LinkListItem href='#'>
-                  <Icon color='primary' icon='it-star-outline' size='sm' />
-                  Link list 1
-                </LinkListItem>
-              </LinkList>
-            </Col>
-            <Col xs='12' lg='4'>
-              <LinkList>
-                <LinkListItem href='#'>
-                  <Icon color='primary' icon='it-star-outline' size='sm' />
-                  Link list 2
-                </LinkListItem>
-              </LinkList>
-            </Col>
-            <Col xs='12' lg='4'>
-              <LinkList>
-                <LinkListItem href='#'>
-                  <Icon color='primary' icon='it-star-outline' size='sm' />
-                  Link list 3
-                </LinkListItem>
-              </LinkList>
-            </Col>
-          </Row>
-        </MegamenuFooter>
-      </MegamenuItem>
-    </Megamenu>
+    <Navbar expand='lg' className='has-megamenu'>
+      <NavbarBrand />
+      <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
+        <Icon icon='it-list' size='sm' />
+      </NavbarToggler>
+      <Collapse isOpen={openNav} navbar header megamenu>
+        <Nav className='mt-0' navbar>
+          <MegamenuItem itemName='Megamenu con Call to Action in basso'>
+            <Row>
+              <Col xs='12' lg='4'>
+                <LinkList>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 1</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 2</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 3</span>
+                  </LinkListItem>
+                </LinkList>
+              </Col>
+              <Col xs='12' lg='4'>
+                <LinkList>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 4</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 5</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 6</span>
+                  </LinkListItem>
+                </LinkList>
+              </Col>
+              <Col xs='12' lg='4'>
+                <LinkList>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 7</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 8</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 9</span>
+                  </LinkListItem>
+                </LinkList>
+              </Col>
+            </Row>
+            <MegamenuFooter>
+              <div className='d-flex flex-column flex-lg-row justify-content-around'>
+                <MegamenuFooter.Item href='#'>
+                  <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
+                  <span>Call to action 1</span>
+                </MegamenuFooter.Item>
+                <MegamenuFooter.Item href='#'>
+                  <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
+                  <span>Call to action 2</span>
+                </MegamenuFooter.Item>
+              </div>
+            </MegamenuFooter>
+          </MegamenuItem>
+        </Nav>
+      </Collapse>
+    </Navbar>
   );
 };
 export const ConCallToActionADestra = () => {
+  const [openNav, setOpenNav] = useState(false);
+  const toggle = () => {
+    setOpenNav(!openNav);
+  };
   return (
-    <Megamenu expand='lg'>
-      <MegamenuItem itemName='Megamenu con Call to Action a destra'>
-        <Row className='max-height-col'>
-          <Col xs='12' lg='8'>
-            <Row className='margin-right-col'>
-              <Col xs='12' lg='4'>
-                <LinkList>
-                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                </LinkList>
+    <Navbar expand='lg' className='has-megamenu'>
+      <NavbarBrand />
+      <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
+        <Icon icon='it-list' size='sm' />
+      </NavbarToggler>
+      <Collapse isOpen={openNav} navbar header megamenu>
+        <Nav className='mt-0' navbar>
+          <MegamenuItem itemName='Megamenu con Call to Action a destra'>
+            <Row>
+              <Col xs='12' lg='8'>
+                <Row>
+                  <Col xs='12' lg='6'>
+                    <LinkList>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 1</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 2</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 3</span>
+                      </LinkListItem>
+                    </LinkList>
+                  </Col>
+                  <Col xs='12' lg='6'>
+                    <LinkList>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 1</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 2</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 3</span>
+                      </LinkListItem>
+                    </LinkList>
+                  </Col>
+                </Row>
               </Col>
               <Col xs='12' lg='4'>
-                <LinkList>
-                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                </LinkList>
-              </Col>
-              <Col xs='12' lg='4'>
-                <LinkList>
-                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                </LinkList>
+                <MegamenuFooter vertical>
+                  <div className='d-flex flex-column justify-content-around'>
+                    <MegamenuFooter.Item href='#'>
+                      <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
+                      <span>Call to action 1</span>
+                    </MegamenuFooter.Item>
+                    <MegamenuFooter.Item href='#'>
+                      <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
+                      <span>Call to action 2</span>
+                    </MegamenuFooter.Item>
+                  </div>
+                </MegamenuFooter>
               </Col>
             </Row>
-          </Col>
-          <MegamenuHighlightColumn xs='12' lg='4'>
-            <LinkList>
-              <LinkListItem href='#'>
-                Link list 1
-                <Icon color='primary' icon='it-star-outline' size='sm' />
-              </LinkListItem>
-              <LinkListItem href='#'>
-                Link list 2
-                <Icon color='primary' icon='it-star-outline' size='sm' />
-              </LinkListItem>
-              <LinkListItem href='#'>
-                Link list 3
-                <Icon color='primary' icon='it-star-outline' size='sm' />
-              </LinkListItem>
-            </LinkList>
-          </MegamenuHighlightColumn>
-        </Row>
-      </MegamenuItem>
-    </Megamenu>
+          </MegamenuItem>
+        </Nav>
+      </Collapse>
+    </Navbar>
   );
 };
 export const ConImmagineEDescrizione = () => {
+  const [openNav, setOpenNav] = useState(false);
+  const toggle = () => {
+    setOpenNav(!openNav);
+  };
   return (
-    <Megamenu expand='lg'>
-      <MegamenuItem itemName='Megamenu con Immagine e Descrizione'>
-        <Row className='max-height-col'>
-          <Col xs='12' lg='8'>
-            <Row className='margin-right-col'>
-              <Col xs='12' lg='4'>
-                <LinkList>
-                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                </LinkList>
-              </Col>
-              <Col xs='12' lg='4'>
-                <LinkList>
-                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                </LinkList>
-              </Col>
-              <Col xs='12' lg='4'>
-                <LinkList>
-                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                </LinkList>
-              </Col>
-            </Row>
-          </Col>
-          <MegamenuHighlightColumn xs='12' lg='4' description>
-            <img
-              src='https://via.placeholder.com/225x110/ebebeb/808080/?text=Immagine'
-              alt='placeholder'
-              title='placeholder title'
-            />
-            <p>Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-          </MegamenuHighlightColumn>
-        </Row>
-      </MegamenuItem>
-    </Megamenu>
-  );
-};
-export const ConColonneAsimmetriche = () => {
-  return (
-    <Megamenu expand='lg'>
-      <MegamenuItem itemName='Megamenu con Colonne Asimmetriche'>
-        <Row>
-          <Col xs='12' lg='8'>
+    <Navbar expand='lg' className='has-megamenu'>
+      <NavbarBrand />
+      <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
+        <Icon icon='it-list' size='sm' />
+      </NavbarToggler>
+      <Collapse isOpen={openNav} navbar header megamenu>
+        <Nav className='mt-0' navbar>
+          <MegamenuItem itemName='Megamenu con Immagine e Descrizione'>
             <Row>
-              <Col xs='12'>
-                <h3 className='it-heading-megacolumn'>Heading title left</h3>
+              <MegamenuHighlightColumn xs='12' lg='4' description>
+                <div className='ratio ratio-21x9 lightgrey-bg-a1 mb-4 rounded'>
+                  <figure className='figure'>
+                    <img
+                      src='https://via.placeholder.com/560x240/ebebeb/808080/?text=Immagine'
+                      className='figure-img img-fluid rounded'
+                      alt='Segnaposto'
+                    />
+                  </figure>
+                </div>
+                <p>Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              </MegamenuHighlightColumn>
+              <Col xs='12' lg='8'>
+                <div className='it-heading-link-wrapper'>
+                  <a className='it-heading-link' href='#'>
+                    <Icon className='icon icon-sm me-2 mb-1' icon='it-arrow-right-triangle'></Icon>
+                    <span>Esplora la sezione megamenu</span>
+                  </a>
+                </div>
+                <Row>
+                  <Col xs='12' lg='6'>
+                    <LinkList>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 1</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 2</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 3</span>
+                      </LinkListItem>
+                    </LinkList>
+                  </Col>
+                  <Col xs='12' lg='6'>
+                    <LinkList>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 4</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 5</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                        <span>Link lista 6</span>
+                      </LinkListItem>
+                    </LinkList>
+                  </Col>
+                </Row>
               </Col>
             </Row>
-            <Row>
-              <Col xs='12' lg='6'>
-                <LinkList>
-                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                </LinkList>
-              </Col>
-              <Col xs='12' lg='6'>
-                <LinkList>
-                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                </LinkList>
-              </Col>
-            </Row>
-          </Col>
-          <Col xs='12' lg='4'>
-            <Row>
-              <Col xs='12'>
-                <h3 className='it-heading-megacolumn'>Heading title right</h3>
-              </Col>
-            </Row>
-            <Row>
-              <Col xs='12'>
-                <LinkList>
-                  <LinkListItem href='#'>Link list Item 1</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 2</LinkListItem>
-                  <LinkListItem href='#'>Link list Item 3</LinkListItem>
-                </LinkList>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </MegamenuItem>
-    </Megamenu>
+          </MegamenuItem>
+        </Nav>
+      </Collapse>
+    </Navbar>
   );
 };
 

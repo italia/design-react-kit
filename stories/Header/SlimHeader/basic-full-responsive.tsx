@@ -25,7 +25,7 @@ const SlimHeader = ({ theme }: ThemeType) => {
         <HeaderBrand responsive>Ente appartenenza/Owner</HeaderBrand>
         <HeaderRightZone>
           <UncontrolledDropdown nav tag='div'>
-            <DropdownToggle nav caret>
+            <DropdownToggle nav caret role='button'>
               ITA
               <Icon icon='it-expand' />
             </DropdownToggle>
@@ -33,10 +33,10 @@ const SlimHeader = ({ theme }: ThemeType) => {
               <Row>
                 <Col size='12'>
                   <LinkList>
-                    <LinkListItem tag={DropdownItem} href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <span>ITA</span>
                     </LinkListItem>
-                    <LinkListItem tag={DropdownItem} href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <span>ENG</span>
                     </LinkListItem>
                   </LinkList>

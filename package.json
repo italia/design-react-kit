@@ -46,7 +46,7 @@
     "node": ">=14"
   },
   "scripts": {
-    "start": "NODE_OPTIONS=--max_old_space_size=9126 npm run storybook:serve",
+    "start": "NODE_OPTIONS=--max_old_space_size=16384 npm run storybook:serve",
     "svg:import": "./scripts/import_svgs.sh",
     "prebuild": "npm run svg:import",
     "build": "tsdx build --format cjs,esm",
@@ -68,7 +68,7 @@
     "postversion": "echo \"You can now publish your version using 'git push --follow-tags'\""
   },
   "peerDependencies": {
-    "bootstrap-italia": "2.7.9",
+    "bootstrap-italia": "2.8.2",
     "react": ">=17.0.2"
   },
   "browserslist": [
@@ -121,7 +121,7 @@
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.5",
     "babel-plugin-dynamic-import-node": "^2.3.3",
-    "bootstrap-italia": "^2.7.10",
+    "bootstrap-italia": "^2.8.2",
     "browserslist-config-design-italia": "^1.0.0",
     "chromatic": "^6.8.0",
     "circular-dependency-plugin": "^5.2.2",
@@ -154,7 +154,7 @@
     "react-toastify": "^7.0.4",
     "react-transition-group": "^4.4.5",
     "react-use-navscroll": "0.2.0",
-    "reactstrap": "^9.1.4",
+    "reactstrap": "9.2.2",
     "webfontloader": "^1.6.28"
   },
   "jest": {

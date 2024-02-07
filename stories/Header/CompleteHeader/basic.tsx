@@ -24,7 +24,9 @@ import {
   NavItem,
   NavLink,
   HeaderBrand,
-  UncontrolledDropdown
+  UncontrolledDropdown,
+  MegamenuItem,
+  MegamenuHighlightColumn
 } from '../../../src';
 import type { HeaderCompleteProps, ThemeType } from '../types';
 
@@ -32,10 +34,10 @@ const SlimHeaderFullResponsive = ({ theme }: ThemeType) => {
   return (
     <Header type='slim' theme={theme}>
       <HeaderContent>
-        <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
+        <HeaderBrand>Ente appartenenza</HeaderBrand>
         <HeaderRightZone>
           <UncontrolledDropdown nav tag='div'>
-            <DropdownToggle nav caret>
+            <DropdownToggle nav caret role='button'>
               ITA
               <Icon icon='it-expand' />
             </DropdownToggle>
@@ -43,10 +45,10 @@ const SlimHeaderFullResponsive = ({ theme }: ThemeType) => {
               <Row>
                 <Col size='12'>
                   <LinkList>
-                    <LinkListItem tag={DropdownItem} href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <span>ITA</span>
                     </LinkListItem>
-                    <LinkListItem tag={DropdownItem} href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <span>ENG</span>
                     </LinkListItem>
                   </LinkList>
@@ -77,24 +79,24 @@ export class SlimHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { c
     return (
       <Header type='slim' theme={this.props.theme}>
         <HeaderContent>
-          <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
+          <HeaderBrand>Ente appartenenza</HeaderBrand>
           <HeaderLinkZone>
             <HeaderToggler onClick={() => this.setState({ collapsed: !this.state.collapsed })}>
-              <span>Ente appartenenza/Owner</span>
+              <span>Ente appartenenza</span>
               <Icon icon='it-expand' />
             </HeaderToggler>
-            <Collapse isOpen={!this.state.collapsed} header>
+            <Collapse isOpen={!this.state.collapsed}>
               <LinkList>
                 <LinkListItem href='#'>Link 1</LinkListItem>
                 <LinkListItem href='#' active>
-                  Link 2 Active
+                  Link 2 (Active)
                 </LinkListItem>
               </LinkList>
             </Collapse>
           </HeaderLinkZone>
           <HeaderRightZone>
             <UncontrolledDropdown nav tag='div'>
-              <DropdownToggle nav caret>
+              <DropdownToggle nav caret role='button'>
                 ITA
                 <Icon icon='it-expand' />
               </DropdownToggle>
@@ -102,10 +104,10 @@ export class SlimHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { c
                 <Row>
                   <Col size='12'>
                     <LinkList>
-                      <LinkListItem tag={DropdownItem} href='#'>
+                      <LinkListItem inDropdown href='#'>
                         <span>ITA</span>
                       </LinkListItem>
-                      <LinkListItem tag={DropdownItem} href='#'>
+                      <LinkListItem inDropdown href='#'>
                         <span>ENG</span>
                       </LinkListItem>
                     </LinkList>
@@ -198,17 +200,86 @@ export class NavHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { co
                     Link 2
                   </NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink href='#'>Link 3</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href='#'>Link 4</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href='#' disabled>
-                    Megamenu label
-                  </NavLink>
-                </NavItem>
+                <UncontrolledDropdown nav tag='li' inNavbar>
+                  <DropdownToggle nav caret role='button'>
+                    <span>Menu Dropdown</span>
+                    <Icon icon='it-expand' size='xs' />
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <LinkList>
+                      <LinkListItem inDropdown href='#'>
+                        <span>Link list 1</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <span>Link list 2</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <span>Link list 3</span>
+                      </LinkListItem>
+                      <LinkListItem inDropdown href='#'>
+                        <span>Link list 4</span>
+                      </LinkListItem>
+                    </LinkList>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+                <MegamenuItem itemName='Megamenu con Immagine e Descrizione'>
+                  <Row>
+                    <MegamenuHighlightColumn xs='12' lg='4' description>
+                      <div className='ratio ratio-21x9 lightgrey-bg-a1 mb-4 rounded'>
+                        <figure className='figure'>
+                          <img
+                            src='https://via.placeholder.com/560x240/ebebeb/808080/?text=Immagine'
+                            className='figure-img img-fluid rounded'
+                            alt='Segnaposto'
+                          />
+                        </figure>
+                      </div>
+                      <p>Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    </MegamenuHighlightColumn>
+                    <Col xs='12' lg='8'>
+                      <div className='it-heading-link-wrapper'>
+                        <a className='it-heading-link' href='#'>
+                          <Icon className='icon icon-sm me-2 mb-1' icon='it-arrow-right-triangle'></Icon>
+                          <span>Esplora la sezione megamenu</span>
+                        </a>
+                      </div>
+                      <Row>
+                        <Col xs='12' lg='6'>
+                          <LinkList>
+                            <LinkListItem inDropdown href='#'>
+                              <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                              <span>Link lista 1</span>
+                            </LinkListItem>
+                            <LinkListItem inDropdown href='#'>
+                              <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                              <span>Link lista 2</span>
+                            </LinkListItem>
+                            <LinkListItem inDropdown href='#'>
+                              <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                              <span>Link lista 3</span>
+                            </LinkListItem>
+                          </LinkList>
+                        </Col>
+                        <Col xs='12' lg='6'>
+                          <LinkList>
+                            <LinkListItem inDropdown href='#'>
+                              <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                              <span>Link lista 4</span>
+                            </LinkListItem>
+                            <LinkListItem inDropdown href='#'>
+                              <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                              <span>Link lista 5</span>
+                            </LinkListItem>
+                            <LinkListItem inDropdown href='#'>
+                              <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                              <span>Link lista 6</span>
+                            </LinkListItem>
+                          </LinkList>
+                        </Col>
+                      </Row>
+                    </Col>
+                  </Row>
+                </MegamenuItem>
               </Nav>
             </div>
           </Collapse>
