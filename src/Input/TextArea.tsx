@@ -21,8 +21,6 @@ export interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElemen
   normalized?: boolean;
   /** Utilizzare per mostrare il successo nella validazione del valore nel campo TextArea */
   valid?: boolean;
-  /** Utilizzare per mostrare il fallimento nella validazione del valore nel campo TextArea */
-  invalid?: boolean;
   innerRef?: Ref<HTMLTextAreaElement>;
   /** Oggetto contenente la nuova mappatura per le classi CSS. */
   cssModule?: CSSModule;
@@ -46,7 +44,6 @@ export const TextArea = ({
   value,
   wrapperClassName: originalWrapperClass,
   valid,
-  invalid,
   testId,
   ...attributes
 }: TextAreaProps) => {
@@ -55,7 +52,7 @@ export const TextArea = ({
     onBlur: attributes.onBlur
   });
 
-  const validationTextControlClass = getValidationTextControlClass({ valid, invalid }, cssModule);
+  const validationTextControlClass = getValidationTextControlClass({ valid }, cssModule);
 
   const extraAttributes: { ['aria-describedby']?: string } = {};
 
@@ -71,7 +68,6 @@ export const TextArea = ({
     'textarea',
     {
       valid,
-      invalid,
       placeholder,
       value,
       label,
