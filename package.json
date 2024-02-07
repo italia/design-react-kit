@@ -48,7 +48,6 @@
   "scripts": {
     "start": "NODE_OPTIONS=--max_old_space_size=16384 npm run storybook:serve",
     "svg:import": "./scripts/import_svgs.sh",
-    "prebuild": "npm run svg:import",
     "build": "tsdx build --format cjs,esm",
     "test": "tsdx test ./src ./test --passWithNoTests --coverage",
     "test:ci": "tsdx test ./src ./test --passWithNoTests --coverage --runInBand --ci",
@@ -58,7 +57,6 @@
     "format-code": "npx prettier . --write",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "prestorybook": "npm run svg:import",
     "storybook:serve": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "npm run storybook:build:base --docs",
     "storybook:build:base": "build-storybook -c .storybook",
