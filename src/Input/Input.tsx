@@ -74,8 +74,6 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   normalized?: boolean;
   /** Utilizzare per mostrare il successo nella validazione del valore nel campo Input */
   valid?: boolean;
-  /** Utilizzare per mostrare il fallimento nella validazione del valore nel campo Input */
-  invalid?: boolean;
   innerRef?: Ref<HTMLInputElement>;
   /** Utilizzare per mostrare testo statico non modificabile. */
   plaintext?: boolean;
@@ -97,11 +95,6 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   /** Classi aggiuntive da usare per il componente Input */
   className?: string;
   /**
-   * Usare "valid" o "invalid" per indicare lo stato del componente.
-   * @deprecated
-   */
-  state?: string;
-  /**
    * Usare "plaintext".
    * @deprecated
    */
@@ -116,7 +109,6 @@ export const Input = ({
   className,
   cssModule,
   type = 'text',
-  state,
   tag,
   addon,
   addonText,
@@ -165,7 +157,7 @@ export const Input = ({
     }
   }, [value]);
 
-  let { bsSize, valid, invalid, ...rest } = attributes;
+  let { bsSize, valid, ...rest } = attributes;
 
   const Tag = getTag({ tag, plaintext, staticInput, type });
   addon = addonText != null ? true : addon;
@@ -179,12 +171,7 @@ export const Input = ({
     },
     cssModule
   );
-  const validationTextControlClass = getValidationTextControlClass({ valid, invalid }, cssModule);
-
-  if (state && valid == null && invalid == null) {
-    invalid = state === 'danger';
-    valid = state === 'success';
-  }
+  const validationTextControlClass = getValidationTextControlClass({ valid }, cssModule);
 
   const extraAttributes: {
     type?: InputType;
@@ -228,7 +215,6 @@ export const Input = ({
     type,
     {
       valid,
-      invalid,
       bsSize,
       placeholder,
       value,

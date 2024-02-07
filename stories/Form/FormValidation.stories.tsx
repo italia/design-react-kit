@@ -9,10 +9,15 @@ export default {
 export const ValidazioneBase = () => (
   <div>
     <Input label='Valid Input' valid />
-    <Input label='Invalid Input' invalid />
+    <Input label='Invalid Input' valid={false} />
     <Input value='Mario' label='First name' validationText='Validated!' valid />
-    <Input label='Username' validationText='Please choose a username.' invalid />
-    <Input label='Username' infoText='Username of your account' validationText='Please choose a username.' invalid />
+    <Input label='Username' validationText='Please choose a username.' valid={false} />
+    <Input
+      label='Username'
+      infoText='Username of your account'
+      validationText='Please choose a username.'
+      valid={false}
+    />
   </div>
 );
 
@@ -59,7 +64,7 @@ export const ValidazioneCompleta = () => {
               value={username}
               label='Username'
               validationText='Questo campo è richiesto'
-              invalid
+              valid={false}
               onChange={(e) => setUsername(e.target.value)}
             />
           </FormGroup>
@@ -82,7 +87,7 @@ export const ValidazioneCompleta = () => {
               type='date'
               label='Date picker'
               validationText='Questo campo è richiesto'
-              invalid
+              valid={false}
             />
           </FormGroup>
           <FormGroup className='col-md-6 mb-6'>
@@ -91,7 +96,7 @@ export const ValidazioneCompleta = () => {
               type='time'
               label='Time picker'
               validationText='Questo campo è richiesto'
-              invalid
+              valid={false}
             />
           </FormGroup>
         </Row>
@@ -103,7 +108,7 @@ export const ValidazioneCompleta = () => {
               value={city}
               label='Città'
               validationText='Questo campo è richiesto'
-              invalid
+              valid={false}
               onChange={(e) => setCity(e.target.value)}
             />
           </FormGroup>
@@ -114,7 +119,7 @@ export const ValidazioneCompleta = () => {
               value={province}
               label='Provincia'
               validationText='Per favore inserisci un nome di provincia valida.'
-              invalid
+              valid={false}
               onChange={(e) => setProvince(e.target.value)}
             />
           </FormGroup>
@@ -126,7 +131,7 @@ export const ValidazioneCompleta = () => {
               value={cap}
               label='CAP (5 cifre)'
               validationText='Questo campo è richiesto'
-              invalid
+              valid={false}
               onChange={(e) => setCap(e.target.value)}
             />
           </FormGroup>
@@ -139,7 +144,7 @@ export const ValidazioneCompleta = () => {
                 type='checkbox'
                 checked={termsAndConditions}
                 onChange={() => setTermsAndConditions(!termsAndConditions)}
-                invalid={!termsAndConditions}
+                valid={termsAndConditions}
               />
               <Label for='termsAndConditions' check>
                 Accetto i termini e condizioni

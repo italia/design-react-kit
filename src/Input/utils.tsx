@@ -4,7 +4,7 @@ import type { CSSModule } from 'reactstrap/types/lib/utils';
 import { mapToCssModules } from '../utils';
 import type { InputProps } from './Input';
 
-type ValidationProps = Pick<InputProps, 'valid' | 'invalid'>;
+type ValidationProps = Pick<InputProps, 'valid'>;
 type TypeProps = Pick<InputProps, 'plaintext' | 'type'> & {
   staticInput?: boolean;
 };
@@ -30,11 +30,11 @@ export function getFormControlClass(props: FormControlProps, cssModule?: CSSModu
   return mapToCssModules(getFormControlClassInternal(props), cssModule);
 }
 
-export function getValidationTextControlClass({ invalid }: ValidationProps, cssModule?: CSSModule) {
+export function getValidationTextControlClass({ valid }: ValidationProps, cssModule?: CSSModule) {
   return mapToCssModules(
     classNames({
       'form-text': true,
-      'form-feedback just-validate-error-label': invalid
+      'form-feedback just-validate-error-label': valid == false
     }),
     cssModule
   );
@@ -68,7 +68,6 @@ export function getClasses(
   {
     isFocused,
     valid,
-    invalid,
     bsSize,
     placeholder,
     value,
@@ -91,7 +90,7 @@ export function getClasses(
     classNames(
       className,
       {
-        'is-invalid': invalid,
+        'is-invalid': valid == false,
         'just-validate-success-field': valid,
         [`form-control-${bsSize}`]: bsSize
       },
@@ -104,7 +103,7 @@ export function getClasses(
     classNames(
       {
         'valid-feedback': valid,
-        'invalid-feedback form-feedback just-validate-error-label': invalid
+        'invalid-feedback form-feedback just-validate-error-label': valid == false
       },
       validationTextControlClass
     ),
