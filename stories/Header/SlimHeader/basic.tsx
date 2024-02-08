@@ -12,7 +12,6 @@ import {
   LinkListItem,
   HeaderBrand,
   HeaderToggler,
-  DropdownItem,
   DropdownMenu,
   DropdownToggle,
   Row,

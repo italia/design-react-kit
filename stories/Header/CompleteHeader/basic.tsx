@@ -8,7 +8,6 @@ import {
   Col,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
   Header,
   Headers,
   HeaderContent,

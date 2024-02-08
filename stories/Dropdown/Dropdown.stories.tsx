@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Dropdown, DropdownMenu, DropdownToggle, DropdownItem, LinkList, LinkListItem, ButtonGroup } from '../../src';
+import { Dropdown, DropdownMenu, DropdownToggle, LinkList, LinkListItem, ButtonGroup } from '../../src';
 
 export const _VarianteBottoni = () => {
   const [openFirst, toggleFirst] = useState(false);

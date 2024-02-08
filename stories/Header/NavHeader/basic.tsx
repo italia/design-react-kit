@@ -12,7 +12,6 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
   LinkList,
   LinkListItem,
   MegamenuItem,
