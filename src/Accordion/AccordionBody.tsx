@@ -13,7 +13,7 @@ export type AccordionBodyProps = Partial<TransitionProps> & {
   listClassName?: string;
   active?: boolean;
   onToggle?: () => void;
-  children?: ReactNode | undefined
+  children?: ReactNode | undefined;
 };
 
 // hardcode these entries to avoid leaks
