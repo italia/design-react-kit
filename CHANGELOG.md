@@ -1,3 +1,12 @@
+# [5.0.0-10](https://github.com/italia/design-react-kit/compare/v5.0.0-9...v5.0.0-10) (2024-02-07)
+
+
+### Bug Fixes
+
+* svg import should be launched manually ([aa61aec](https://github.com/italia/design-react-kit/commit/aa61aecdb8a7ed72feb185c223b841f9512a253c))
+
+
+
 # [5.0.0-9](https://github.com/italia/design-react-kit/compare/v5.0.0-8...v5.0.0-9) (2024-02-07)
 
 
