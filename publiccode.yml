@@ -1,0 +1,69 @@
+# This repository adheres to the publiccode.yml standard by including this
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+categories:
+  - website-builder
+description:
+  it:
+    documentation: 'https://italia.github.io/design-react-kit'
+    features:
+      - responsive
+      - accessibility
+      - inclusion
+      - web development
+      - PNRR
+      - PNRR/Misura/1.4.1
+      - PNRR/Beneficiari/Comuni
+      - PNRR/Beneficiari/Scuole
+    genericName: Design React Kit
+    longDescription: |
+      La libreria **Design React Kit** è il modo più semplice e sicuro per
+      costruire interfacce web **moderne**, **inclusive** e **semplici da
+      mantenere** utilizzando il framework React.
+
+      Completamente **open-source**, costruita sulle fondamenta di 
+      [Bootstrap Italia 2.x](https://github.com/italia/bootstrap-italia "Repository GitHub di Bootstrap Italia") 
+      di cui eredita tutte le funzionalità, componenti, griglie e classi di utilità.
+    shortDescription: |-
+      La libreria Design React Kit è il modo più semplice e sicuro per costruire
+      interfacce web moderne, inclusive e semplici da mantenere utilizzando React.
+developmentStatus: stable
+isBasedOn:
+  - Bootstrap Italia
+it:
+  conforme:
+    gdpr: false
+    lineeGuidaDesign: false
+    misureMinimeSicurezza: false
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: false
+    pagopa: false
+    spid: false
+  riuso:
+    codiceIPA: pcm
+landingURL: 'https://italia.github.io/design-react-kit'
+legal:
+  authorsFile: 'https://github.com/italia/design-react-kit/blob/main/AUTHORS'
+  license: BSD-3-Clause
+  mainCopyrightOwner: Presidenza del Consiglio dei Ministri
+localisation:
+  availableLanguages:
+    - it
+  localisationReady: false
+maintenance:
+  contacts:
+    - name: Designers Italia
+  type: community
+name: Design React Kit
+platforms:
+  - web
+releaseDate: '2024-02-08'
+roadmap: 'https://github.com/italia/design-react-kit/issues'
+softwareType: library
+softwareVersion: v0.0.0
+url: 'https://github.com/italia/design-react-kit'
