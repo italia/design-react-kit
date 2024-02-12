@@ -39,38 +39,26 @@ _⚠️ Attenzione: questo kit è stato progettato per funzionare con la version
 ## Intro
 
 **Design React kit** è un set di componenti React che implementa [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) e gli stili presenti su [Design UI Kit](https://github.com/italia/design-ui-kit).
-
 Per navigare la libreria e visualizzare i componenti, è stato utilizzato [Storybook](https://storybook.js.org/).
-
 La versione pubblica dello Storybook è disponibile [qui](https://italia.github.io/design-react-kit) per l'ultima release stabile pubblicata, mentre [qui](https://design-react-kit.vercel.app/) per la versione di sviluppo relativa al branch `main`.
+Per giocare con la libreria è disponibile il [Playground React Kit](https://github.com/italia/design-react-kit-playground).
 
 ## Indice
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [Requisiti](#requisiti)
 - [Come usare il kit](#come-usare-il-kit)
-  - [Peer dependencies](#peer-dependencies)
-- [Come iniziare](#come-iniziare)
+- [Come contribuire](#come-contribuire-)
+- [Come contribuire con il codice](#come-contribuire-con-il-codice)
 - [Come creare nuovi componenti](#come-creare-nuovi-componenti)
-- [Publishing](#publishing)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-### Requisiti
-
-- NodeJS (>= 18)
-- Yarn
+- [Link utili](#link-utili)
 
 ## Come usare il kit
 
 Per utilizzare Design React come dipendenza in un'app è possibile installarla da [npm](https://www.npmjs.com/~italia). Suggeriamo di usare `create-react-app` per creare una nuova webapp React, come segue:
 
 ```sh
-$ create-react-app nome-app
-$ cd nome-app
-$ yarn add design-react-kit@unstable --save
+create-react-app nome-app
+cd nome-app
+yarn add design-react-kit@unstable --save
 ```
 
 ## Aggiungere bootstrap-italia ed i font
@@ -78,10 +66,10 @@ $ yarn add design-react-kit@unstable --save
 Il `design-react-kit` non include il CSS ed i file font, ed è quindi necessario installarli a parte:
 
 ```sh
-$ yarn add bootstrap-italia typeface-lora typeface-roboto-mono typeface-titillium-web --save
+yarn add bootstrap-italia typeface-lora typeface-roboto-mono typeface-titillium-web --save
 ```
 
-## App.js
+## Esempio di app
 
 A questo punto, è sufficiente importare esplicitamente nella app CSS e font se si è usato `create-react-app` all'interno del file `./src/App.js`:
 
@@ -125,19 +113,46 @@ Per questo motivo per lo sviluppo in locale sarà necessario installare manualme
 Il comando da eseguire è
 
 ```sh
-$ yarn install --peers
+yarn install --peers
 ```
 
 oppure in alternativa manualmente
 
 ```sh
-$ yarn install react react-dom
+yarn install react react-dom
 ```
 
-## Come iniziare
+## Come contribuire 💙
+
+👉🏻 È possibile contribuire alla libreria in vari modi:
+
+*   Con il proprio codice, prendendo in carico una issue tra quelle aperte e non già assegnate tra [le issue](https://github.com/italia/design-react-kit/issues) di React Kit (è sufficiente anche un commento sulla issue per notificare la volontà di presa in carico).
+*   Attraverso la segnalazione di bug o miglioramenti al [repository ufficiale](https://github.com/italia/design-react-kit/) di React Kit.
+*   Scrivendoci sul [canale dedicato](https://developersitalia.slack.com/messages/C04J92F9XM2/) di Slack.
+
+## Come contribuire con il codice
+
+Vorresti dare una mano su Design React Kit? **Sei nel posto giusto!**
+ 
+Se non l'hai già fatto, inizia spendendo qualche minuto per approfondire la tua conoscenza sulle
+[linee guida di design per i servizi web della PA](https://design-italia.readthedocs.io/it/stable/index.html),
+e fai riferimento alle [indicazioni su come contribuire a Design React Kit](https://github.com/italia/design-react-kit/blob/main/CONTRIBUTING.md).
+
+### Impostare l'ambiente locale
+
+I requisiti minimi del tuo ambiente locale devono essere:
+
+- NodeJS (>= 18)
+- Yarn
 
 Clona il repository ed esegui `yarn` per installare le dipendenze.
-Quindi esegui `yarn storybook:serve` per avviare il server di sviluppo.
+Quindi esegui 
+
+```sh
+yarn storybook:serve
+``` 
+
+per avviare il server di sviluppo.
 
 Storybook sarà quindi disponibile all'indirizzo http://localhost:9001/
 
@@ -172,38 +187,29 @@ Alcune regole di base per strutturare i componenti:
 
 Una volta creato un nuovo componente, con la sua story, avviando Storybook sarà possibile controllare che tutto funzioni come dovrebbe.
 
-### Come contribuire
-
-Per inviare nuovi contenuti o bug fix è necessario fare un fork del repository, quindi partire dal branch `main` per un nuovo branch contenente la funzionalità: una volta completa la funzionalità (con relativi test ove possibile), sarà necessario fare una PR sul repository principale.
-
 #### Snapshot tests
 
 Il sistema di testing prevede un controllo delle storie presenti, mediante una tecnica chiamata "snapshot" testing: il contenuto della storia Storybook verrà copiato in un file speciale e preservato per notificare eventuali cambiamenti in futuro. Questo fa si che l'aggiunta di nuove storie potrebbe risultare in un fallimento del task "test" in una PR.
 Qualora fosse stata aggiunta una nuova storia o modificata una già presente, sarà necessario aggiornare il file di snapshot come segue:
 
-```
+```sh
 yarn test -u
 ```
 
 A questo punto creare un nuovo commit ed aggiornare la PR con il file di snapshot aggiornato. Controllare che le modifiche apportate siano corrette prima di aggiornare la PR.
-
-## Publishing
-
-E' disponibile un comando per generare una versione statica del catalogo Storybook così che possa essere deployato senza utilizzo di un webserver.
-
-```sh
-$ yarn storybook:build
-```
-
-Le pagine statiche ottenute dal processo di build saranno generate sotto la folder `storybook-static`.
 
 ## Compilazione libreria
 
 Per compilare la libreria e generare i file nella cartella `dist`, è sufficiente lanciare il comando dedicato:
 
 ```sh
-$ yarn build
+yarn build
 ```
+
+## Link utili
+
+- [Playground React Kit](https://github.com/italia/design-react-kit-playground)
+- [Preview di Vercel (aggiornata ad ogni commit)](https://design-react-kit.vercel.app/)
 
 ## Supporto browsers
 
