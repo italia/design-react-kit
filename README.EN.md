@@ -126,9 +126,9 @@ yarn install react react-dom
 
 👉🏻 You can contribute to the library in various ways:
 
-* With your own code, taking charge of an issue among those open and not already assigned among [the issues](https://github.com/italia/design-react-kit/issues) of React Kit (even a comment on the issue to notify the desire to take charge).
-* By reporting bugs or improvements to the React Kit [official repository](https://github.com/italia/design-react-kit/).
-* By writing to us on the [dedicated channel](https://developersitalia.slack.com/messages/C04J92F9XM2/) of Slack.
+- With your own code, taking charge of an issue among those open and not already assigned among [the issues](https://github.com/italia/design-react-kit/issues) of React Kit (even a comment on the issue to notify the desire to take charge).
+- By reporting bugs or improvements to the React Kit [official repository](https://github.com/italia/design-react-kit/).
+- By writing to us on the [dedicated channel](https://developersitalia.slack.com/messages/C04J92F9XM2/) of Slack.
 
 ## How to contribute with your own code
 

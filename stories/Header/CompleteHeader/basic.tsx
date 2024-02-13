@@ -8,7 +8,6 @@ import {
   Col,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
   Header,
   Headers,
   HeaderContent,
@@ -36,10 +35,9 @@ const SlimHeaderFullResponsive = ({ theme }: ThemeType) => {
       <HeaderContent>
         <HeaderBrand>Ente appartenenza</HeaderBrand>
         <HeaderRightZone>
-          <UncontrolledDropdown nav tag='div'>
-            <DropdownToggle nav caret role='button'>
+          <UncontrolledDropdown inNavbar tag='div'>
+            <DropdownToggle inNavbar caret>
               ITA
-              <Icon icon='it-expand' />
             </DropdownToggle>
             <DropdownMenu>
               <Row>
@@ -95,10 +93,9 @@ export class SlimHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { c
             </Collapse>
           </HeaderLinkZone>
           <HeaderRightZone>
-            <UncontrolledDropdown nav tag='div'>
-              <DropdownToggle nav caret role='button'>
+            <UncontrolledDropdown inNavbar tag='div'>
+              <DropdownToggle inNavbar caret>
                 ITA
-                <Icon icon='it-expand' />
               </DropdownToggle>
               <DropdownMenu>
                 <Row>
@@ -200,10 +197,9 @@ export class NavHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { co
                     Link 2
                   </NavLink>
                 </NavItem>
-                <UncontrolledDropdown nav tag='li' inNavbar>
-                  <DropdownToggle nav caret role='button'>
+                <UncontrolledDropdown inNavbar tag='li'>
+                  <DropdownToggle inNavbar caret>
                     <span>Menu Dropdown</span>
-                    <Icon icon='it-expand' size='xs' />
                   </DropdownToggle>
                   <DropdownMenu>
                     <LinkList>
@@ -222,7 +218,7 @@ export class NavHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { co
                     </LinkList>
                   </DropdownMenu>
                 </UncontrolledDropdown>
-                <MegamenuItem itemName='Megamenu con Immagine e Descrizione'>
+                <MegamenuItem itemName='Megamenu completo'>
                   <Row>
                     <MegamenuHighlightColumn xs='12' lg='4' description>
                       <div className='ratio ratio-21x9 lightgrey-bg-a1 mb-4 rounded'>

@@ -126,14 +126,14 @@ yarn install react react-dom
 
 👉🏻 È possibile contribuire alla libreria in vari modi:
 
-*   Con il proprio codice, prendendo in carico una issue tra quelle aperte e non già assegnate tra [le issue](https://github.com/italia/design-react-kit/issues) di React Kit (è sufficiente anche un commento sulla issue per notificare la volontà di presa in carico).
-*   Attraverso la segnalazione di bug o miglioramenti al [repository ufficiale](https://github.com/italia/design-react-kit/) di React Kit.
-*   Scrivendoci sul [canale dedicato](https://developersitalia.slack.com/messages/C04J92F9XM2/) di Slack.
+- Con il proprio codice, prendendo in carico una issue tra quelle aperte e non già assegnate tra [le issue](https://github.com/italia/design-react-kit/issues) di React Kit (è sufficiente anche un commento sulla issue per notificare la volontà di presa in carico).
+- Attraverso la segnalazione di bug o miglioramenti al [repository ufficiale](https://github.com/italia/design-react-kit/) di React Kit.
+- Scrivendoci sul [canale dedicato](https://developersitalia.slack.com/messages/C04J92F9XM2/) di Slack.
 
 ## Come contribuire con il codice
 
 Vorresti dare una mano su Design React Kit? **Sei nel posto giusto!**
- 
+
 Se non l'hai già fatto, inizia spendendo qualche minuto per approfondire la tua conoscenza sulle
 [linee guida di design per i servizi web della PA](https://design-italia.readthedocs.io/it/stable/index.html),
 e fai riferimento alle [indicazioni su come contribuire a Design React Kit](https://github.com/italia/design-react-kit/blob/main/CONTRIBUTING.md).
@@ -146,11 +146,11 @@ I requisiti minimi del tuo ambiente locale devono essere:
 - Yarn
 
 Clona il repository ed esegui `yarn` per installare le dipendenze.
-Quindi esegui 
+Quindi esegui
 
 ```sh
 yarn storybook:serve
-``` 
+```
 
 per avviare il server di sviluppo.
 

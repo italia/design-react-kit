@@ -7,7 +7,6 @@ import {
   HeaderRightZone,
   Icon,
   HeaderBrand,
-  DropdownItem,
   DropdownMenu,
   DropdownToggle,
   UncontrolledDropdown,

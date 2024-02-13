@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 
-import { Dropdown, DropdownMenu, DropdownToggle, DropdownItem, LinkList, LinkListItem, ButtonGroup } from '../../src';
+import {
+  UncontrolledDropdown,
+  DropdownMenu,
+  DropdownToggle,
+  LinkList,
+  LinkListItem,
+  ButtonGroup,
+  Icon
+} from '../../src';
 
 export const _VarianteBottoni = () => {
   const [openFirst, toggleFirst] = useState(false);
@@ -9,7 +17,7 @@ export const _VarianteBottoni = () => {
 
   return (
     <ButtonGroup>
-      <Dropdown isOpen={openFirst} toggle={() => toggleFirst(!openFirst)}>
+      <UncontrolledDropdown isOpen={openFirst} toggle={() => toggleFirst(!openFirst)}>
         <DropdownToggle color='primary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -20,8 +28,8 @@ export const _VarianteBottoni = () => {
             <LinkListItem inDropdown>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </Dropdown>
-      <Dropdown isOpen={openSecond} toggle={() => toggleSecond(!openSecond)}>
+      </UncontrolledDropdown>
+      <UncontrolledDropdown isOpen={openSecond} toggle={() => toggleSecond(!openSecond)}>
         <DropdownToggle color='secondary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -32,8 +40,8 @@ export const _VarianteBottoni = () => {
             <LinkListItem inDropdown>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </Dropdown>
-      <Dropdown isOpen={openThird} toggle={() => toggleThird(!openThird)}>
+      </UncontrolledDropdown>
+      <UncontrolledDropdown isOpen={openThird} toggle={() => toggleThird(!openThird)}>
         <DropdownToggle color='danger' caret>
           Apri dropdown
         </DropdownToggle>
@@ -44,7 +52,7 @@ export const _VarianteBottoni = () => {
             <LinkListItem>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </Dropdown>
+      </UncontrolledDropdown>
     </ButtonGroup>
   );
 };
@@ -58,7 +66,7 @@ export const _Esempi = () => {
 
   return (
     <section>
-      <Dropdown className='me-3' isOpen={open} toggle={() => toggle(!open)}>
+      <UncontrolledDropdown className='me-3' isOpen={open} toggle={() => toggle(!open)}>
         <DropdownToggle color='primary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -69,7 +77,7 @@ export const _Esempi = () => {
             <LinkListItem inDropdown>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </Dropdown>
+      </UncontrolledDropdown>
     </section>
   );
 };
@@ -79,8 +87,8 @@ export const _Link = () => {
 
   return (
     <section>
-      <Dropdown className='me-3' isOpen={open} toggle={() => toggle(!open)}>
-        <DropdownToggle color='primary' caret tag='a'>
+      <UncontrolledDropdown className='me-3' isOpen={open} toggle={() => toggle(!open)}>
+        <DropdownToggle color='primary' tag='a' caret>
           Apri dropdown
         </DropdownToggle>
         <DropdownMenu>
@@ -90,7 +98,7 @@ export const _Link = () => {
             <LinkListItem inDropdown>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </Dropdown>
+      </UncontrolledDropdown>
     </section>
   );
 };
