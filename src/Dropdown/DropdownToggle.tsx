@@ -24,14 +24,14 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
   color,
   ...attributes
 }) => {
-  const toggleRef = useRef(null);
+  const toggleRef = useRef<HTMLAnchorElement & HTMLButtonElement>(null);
   //let dropdownRef = null;
 
   const Tag = tag == 'a' || inNavbar ? 'a' : Button;
 
   useEffect(() => {
     if (toggleRef.current) {
-      new Dropdown(toggleRef.current as HTMLElement);
+      new Dropdown(toggleRef.current as HTMLAnchorElement & HTMLButtonElement);
     }
   });
   const classes = classNames(className, {
