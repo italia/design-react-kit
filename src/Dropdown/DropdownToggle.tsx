@@ -27,7 +27,7 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
   const toggleRef = useRef<HTMLAnchorElement & HTMLButtonElement>(null);
   //let dropdownRef = null;
 
-  const Tag = tag == 'a' || inNavbar ? 'a' : Button;
+  const Tag = tag === 'a' || inNavbar ? 'a' : Button;
 
   useEffect(() => {
     if (toggleRef.current) {
@@ -35,7 +35,7 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
     }
   });
   const classes = classNames(className, {
-    'btn-dropdown': Tag == 'a' && !inNavbar,
+    'btn-dropdown': Tag === 'a' && !inNavbar,
     'dropdown-toggle': true,
     'nav-link': inNavbar
   });
@@ -44,11 +44,11 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
     'icon-sm': !inNavbar,
     'icon-xs': inNavbar,
     'ms-1': inNavbar,
-    'icon-light': Tag.valueOf() == 'button' ? true : false
+    'icon-light': Tag.valueOf() !== 'a' ? true : false
   });
   return (
     <Tag
-      role={Tag.valueOf() == 'a' ? 'button' : undefined}
+      role={Tag.valueOf() === 'a' ? 'button' : undefined}
       color={color}
       ref={toggleRef}
       className={classes}
@@ -58,7 +58,7 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
       {...attributes}
     >
       {children}
-      {caret == true ? <Icon icon='it-expand' className={iconClasses} /> : null}
+      {caret === true ? <Icon icon='it-expand' className={iconClasses} /> : null}
     </Tag>
   );
 };
