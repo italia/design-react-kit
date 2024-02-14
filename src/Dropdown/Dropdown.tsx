@@ -1,7 +1,7 @@
 import React, { ElementType, FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-export interface UncontrolledDropdownProps extends HTMLAttributes<HTMLElement> {
+export interface DropdownProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
   inNavbar?: boolean;
   textCenter?: boolean;
@@ -10,7 +10,7 @@ export interface UncontrolledDropdownProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const UncontrolledDropdown: FC<UncontrolledDropdownProps> = ({
+export const Dropdown: FC<DropdownProps> = ({
   className,
   testId,
   tag,

@@ -16,7 +16,7 @@ import {
   DropdownToggle,
   Row,
   Col,
-  UncontrolledDropdown
+  Dropdown
 } from '../../../src';
 import type { HeaderSlimProps } from '../types';
 
@@ -44,7 +44,7 @@ const SlimHeader = ({ theme, isOpen, brandText }: HeaderSlimProps) => {
           </Collapse>
         </HeaderLinkZone>
         <HeaderRightZone>
-          <UncontrolledDropdown inNavbar>
+          <Dropdown inNavbar>
             <DropdownToggle inNavbar caret>
               ITA
             </DropdownToggle>
@@ -62,7 +62,7 @@ const SlimHeader = ({ theme, isOpen, brandText }: HeaderSlimProps) => {
                 </Col>
               </Row>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </Dropdown>
           <div className='it-access-top-wrapper'>
             <Button color='primary' size='sm'>
               Accedi

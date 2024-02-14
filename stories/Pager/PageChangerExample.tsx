@@ -1,19 +1,10 @@
 import React from 'react';
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu, LinkList, LinkListItem, Icon } from '../../src';
+import { Dropdown, DropdownToggle, DropdownMenu, LinkList, LinkListItem, Icon } from '../../src';
 
 const PageChangerExample = () => {
   return (
-    <UncontrolledDropdown>
-      <DropdownToggle
-        id='pagerChanger'
-        className={`btn btn-dropdown dropdown-toggle`}
-        tag='button'
-        data-toggle='dropdown'
-        aria-haspopup
-        aria-expanded='false'
-        aria-label='Salta alla pagina'
-        caret
-      >
+    <Dropdown>
+      <DropdownToggle id='pagerChanger' aria-label='Salta alla pagina' caret>
         10/pagina
         <Icon className='icon icon-primary icon-sm' icon='it-expand' />
       </DropdownToggle>
@@ -26,7 +17,7 @@ const PageChangerExample = () => {
           <LinkListItem>pag. 50</LinkListItem>
         </LinkList>
       </DropdownMenu>
-    </UncontrolledDropdown>
+    </Dropdown>
   );
 };
 export default PageChangerExample;

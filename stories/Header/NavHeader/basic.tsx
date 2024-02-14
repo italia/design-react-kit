@@ -9,7 +9,7 @@ import {
   NavItem,
   NavLink,
   HeaderToggler,
-  UncontrolledDropdown,
+  Dropdown,
   DropdownToggle,
   DropdownMenu,
   LinkList,
@@ -62,7 +62,7 @@ const NavHeader = ({ theme, isOpen }: HeaderNavProps) => {
               <NavItem>
                 <NavLink href='#'>Link 4</NavLink>
               </NavItem>
-              <UncontrolledDropdown tag='li' inNavbar>
+              <Dropdown tag='li' inNavbar>
                 <DropdownToggle inNavbar caret>
                   <span>Menu Dropdown</span>
                 </DropdownToggle>
@@ -82,7 +82,7 @@ const NavHeader = ({ theme, isOpen }: HeaderNavProps) => {
                     </LinkListItem>
                   </LinkList>
                 </DropdownMenu>
-              </UncontrolledDropdown>
+              </Dropdown>
               <MegamenuItem itemName='Megamenu con Immagine e Descrizione'>
                 <Row>
                   <MegamenuHighlightColumn xs='12' lg='4' description>

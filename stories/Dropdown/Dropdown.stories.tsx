@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { UncontrolledDropdown, DropdownMenu, DropdownToggle, LinkList, LinkListItem, ButtonGroup } from '../../src';
+import { Dropdown, DropdownMenu, DropdownToggle, LinkList, LinkListItem, ButtonGroup } from '../../src';
 
 export const _VarianteBottoni = () => {
   return (
     <ButtonGroup>
-      <UncontrolledDropdown>
+      <Dropdown>
         <DropdownToggle color='primary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -16,8 +16,8 @@ export const _VarianteBottoni = () => {
             <LinkListItem inDropdown>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </UncontrolledDropdown>
-      <UncontrolledDropdown>
+      </Dropdown>
+      <Dropdown>
         <DropdownToggle color='secondary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -28,8 +28,8 @@ export const _VarianteBottoni = () => {
             <LinkListItem inDropdown>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </UncontrolledDropdown>
-      <UncontrolledDropdown>
+      </Dropdown>
+      <Dropdown>
         <DropdownToggle color='danger' caret>
           Apri dropdown
         </DropdownToggle>
@@ -40,7 +40,7 @@ export const _VarianteBottoni = () => {
             <LinkListItem>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </UncontrolledDropdown>
+      </Dropdown>
     </ButtonGroup>
   );
 };
@@ -52,7 +52,7 @@ export default {
 export const _Esempi = () => {
   return (
     <section>
-      <UncontrolledDropdown className='me-3'>
+      <Dropdown className='me-3'>
         <DropdownToggle color='primary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -63,7 +63,7 @@ export const _Esempi = () => {
             <LinkListItem inDropdown>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </UncontrolledDropdown>
+      </Dropdown>
     </section>
   );
 };
@@ -71,7 +71,7 @@ export const _Esempi = () => {
 export const _Link = () => {
   return (
     <section>
-      <UncontrolledDropdown className='me-3'>
+      <Dropdown className='me-3'>
         <DropdownToggle color='primary' tag='a' caret>
           Apri dropdown
         </DropdownToggle>
@@ -82,7 +82,7 @@ export const _Link = () => {
             <LinkListItem inDropdown>Azione 3</LinkListItem>
           </LinkList>
         </DropdownMenu>
-      </UncontrolledDropdown>
+      </Dropdown>
     </section>
   );
 };

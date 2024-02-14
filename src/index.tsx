@@ -83,7 +83,7 @@ export { CardReadMore } from './Card/CardReadMore';
 export { Collapse } from './Collapse/Collapse';
 export { DropdownMenu } from './Dropdown/DropdownMenu';
 export { DropdownToggle } from './Dropdown/DropdownToggle';
-export { UncontrolledDropdown } from './Dropdown/UncontrolledDropdown';
+export { Dropdown } from './Dropdown/Dropdown';
 export { GridItem, GridItemText, GridItemTextWrapper, GridList, GridRow } from './Grid/index';
 export { Header } from './Header/Header';
 export { Headers } from './Header/Headers';
@@ -174,7 +174,7 @@ export type { CardFooterCTAProps } from './Card/CardFooterCTA';
 export type { CardReadMoreProps } from './Card/CardReadMore';
 export { DropdownMenuProps } from './Dropdown/DropdownMenu';
 export { DropdownToggleProps } from './Dropdown/DropdownToggle';
-export { UncontrolledDropdownProps } from './Dropdown/UncontrolledDropdown';
+export { DropdownProps } from './Dropdown/Dropdown';
 export type {
   GridItemProps,
   GridItemTextProps,

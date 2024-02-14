@@ -5,7 +5,7 @@ import {
   AvatarGroupContainer,
   Icon,
   LinkListItem,
-  UncontrolledDropdown,
+  Dropdown,
   LinkList,
   DropdownMenu,
   DropdownToggle
@@ -65,7 +65,7 @@ export const SmallOverlappingAvatars = () => {
       </li>
       <li>
         <AvatarIcon size='sm' color='dropdown'>
-          <UncontrolledDropdown>
+          <Dropdown>
             <DropdownToggle id='dropdownMenuLink'>
               <span className='visually-hidden'>Visualizza altri 4 utenti</span>
               <span aria-hidden='true'>+4</span>
@@ -98,7 +98,7 @@ export const SmallOverlappingAvatars = () => {
                 </LinkListItem>
               </LinkList>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </Dropdown>
         </AvatarIcon>
       </li>
     </AvatarGroupContainer>
@@ -137,7 +137,7 @@ export const MediumOverlaidAvatars = () => {
       </li>
       <li>
         <AvatarIcon size='md' color='dropdown'>
-          <UncontrolledDropdown>
+          <Dropdown>
             <DropdownToggle id='dropdownMenuLink2'>
               <span className='visually-hidden'>Visualizza altri 4 utenti</span>
               <span aria-hidden='true'>+4</span>
@@ -170,7 +170,7 @@ export const MediumOverlaidAvatars = () => {
                 </LinkListItem>
               </LinkList>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </Dropdown>
         </AvatarIcon>
       </li>
     </AvatarGroupContainer>

@@ -23,7 +23,7 @@ import {
   NavItem,
   NavLink,
   HeaderBrand,
-  UncontrolledDropdown,
+  Dropdown,
   MegamenuItem,
   MegamenuHighlightColumn
 } from '../../../src';
@@ -35,7 +35,7 @@ const SlimHeaderFullResponsive = ({ theme }: ThemeType) => {
       <HeaderContent>
         <HeaderBrand>Ente appartenenza</HeaderBrand>
         <HeaderRightZone>
-          <UncontrolledDropdown inNavbar>
+          <Dropdown inNavbar>
             <DropdownToggle inNavbar caret>
               ITA
             </DropdownToggle>
@@ -53,7 +53,7 @@ const SlimHeaderFullResponsive = ({ theme }: ThemeType) => {
                 </Col>
               </Row>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </Dropdown>
           <Button color='primary' icon href='#'>
             <span className='rounded-icon'>
               <Icon color='primary' icon='it-user' />
@@ -93,7 +93,7 @@ export class SlimHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { c
             </Collapse>
           </HeaderLinkZone>
           <HeaderRightZone>
-            <UncontrolledDropdown inNavbar>
+            <Dropdown inNavbar>
               <DropdownToggle inNavbar caret>
                 ITA
               </DropdownToggle>
@@ -111,7 +111,7 @@ export class SlimHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { c
                   </Col>
                 </Row>
               </DropdownMenu>
-            </UncontrolledDropdown>
+            </Dropdown>
             <div className='it-access-top-wrapper'>
               <Button color='primary' size='sm'>
                 Accedi
@@ -197,7 +197,7 @@ export class NavHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { co
                     Link 2
                   </NavLink>
                 </NavItem>
-                <UncontrolledDropdown inNavbar tag='li'>
+                <Dropdown inNavbar tag='li'>
                   <DropdownToggle inNavbar caret>
                     <span>Menu Dropdown</span>
                   </DropdownToggle>
@@ -217,7 +217,7 @@ export class NavHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { co
                       </LinkListItem>
                     </LinkList>
                   </DropdownMenu>
-                </UncontrolledDropdown>
+                </Dropdown>
                 <MegamenuItem itemName='Megamenu completo'>
                   <Row>
                     <MegamenuHighlightColumn xs='12' lg='4' description>
