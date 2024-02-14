@@ -2,7 +2,7 @@ import React, { ElementType, FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 export interface UncontrolledDropdownProps extends HTMLAttributes<HTMLElement> {
-  tag: ElementType;
+  tag?: ElementType;
   inNavbar?: boolean;
   textCenter?: boolean;
   /** Classi aggiuntive da usare per il componente Button */

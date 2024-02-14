@@ -44,8 +44,8 @@ const SlimHeader = ({ theme, isOpen, brandText }: HeaderSlimProps) => {
           </Collapse>
         </HeaderLinkZone>
         <HeaderRightZone>
-          <UncontrolledDropdown nav tag='div'>
-            <DropdownToggle nav caret role='button'>
+          <UncontrolledDropdown inNavbar tag='div'>
+            <DropdownToggle inNavbar caret role='button'>
               ITA
               <Icon icon='it-expand' color='icon-white' className='d-none d-lg-block' />
             </DropdownToggle>

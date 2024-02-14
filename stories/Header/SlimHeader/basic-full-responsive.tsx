@@ -23,8 +23,8 @@ const SlimHeader = ({ theme }: ThemeType) => {
       <HeaderContent>
         <HeaderBrand responsive>Ente appartenenza/Owner</HeaderBrand>
         <HeaderRightZone>
-          <UncontrolledDropdown nav tag='div'>
-            <DropdownToggle nav caret role='button'>
+          <UncontrolledDropdown inNavbar>
+            <DropdownToggle inNavbar caret>
               ITA
               <Icon icon='it-expand' />
             </DropdownToggle>

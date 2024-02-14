@@ -25,7 +25,6 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
   ...attributes
 }) => {
   const toggleRef = useRef<HTMLAnchorElement & HTMLButtonElement>(null);
-  //let dropdownRef = null;
 
   const Tag = tag === 'a' || inNavbar ? 'a' : Button;
 
