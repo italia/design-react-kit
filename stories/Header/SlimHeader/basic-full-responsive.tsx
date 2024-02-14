@@ -26,7 +26,6 @@ const SlimHeader = ({ theme }: ThemeType) => {
           <UncontrolledDropdown inNavbar>
             <DropdownToggle inNavbar caret>
               ITA
-              <Icon icon='it-expand' />
             </DropdownToggle>
             <DropdownMenu>
               <Row>

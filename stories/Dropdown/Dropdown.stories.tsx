@@ -1,23 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import {
-  UncontrolledDropdown,
-  DropdownMenu,
-  DropdownToggle,
-  LinkList,
-  LinkListItem,
-  ButtonGroup,
-  Icon
-} from '../../src';
+import { UncontrolledDropdown, DropdownMenu, DropdownToggle, LinkList, LinkListItem, ButtonGroup } from '../../src';
 
 export const _VarianteBottoni = () => {
-  const [openFirst, toggleFirst] = useState(false);
-  const [openSecond, toggleSecond] = useState(false);
-  const [openThird, toggleThird] = useState(false);
-
   return (
     <ButtonGroup>
-      <UncontrolledDropdown isOpen={openFirst} toggle={() => toggleFirst(!openFirst)}>
+      <UncontrolledDropdown>
         <DropdownToggle color='primary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -29,7 +17,7 @@ export const _VarianteBottoni = () => {
           </LinkList>
         </DropdownMenu>
       </UncontrolledDropdown>
-      <UncontrolledDropdown isOpen={openSecond} toggle={() => toggleSecond(!openSecond)}>
+      <UncontrolledDropdown>
         <DropdownToggle color='secondary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -41,7 +29,7 @@ export const _VarianteBottoni = () => {
           </LinkList>
         </DropdownMenu>
       </UncontrolledDropdown>
-      <UncontrolledDropdown isOpen={openThird} toggle={() => toggleThird(!openThird)}>
+      <UncontrolledDropdown>
         <DropdownToggle color='danger' caret>
           Apri dropdown
         </DropdownToggle>
@@ -62,11 +50,9 @@ export default {
 };
 
 export const _Esempi = () => {
-  const [open, toggle] = useState(false);
-
   return (
     <section>
-      <UncontrolledDropdown className='me-3' isOpen={open} toggle={() => toggle(!open)}>
+      <UncontrolledDropdown className='me-3'>
         <DropdownToggle color='primary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -83,11 +69,9 @@ export const _Esempi = () => {
 };
 
 export const _Link = () => {
-  const [open, toggle] = useState(false);
-
   return (
     <section>
-      <UncontrolledDropdown className='me-3' isOpen={open} toggle={() => toggle(!open)}>
+      <UncontrolledDropdown className='me-3'>
         <DropdownToggle color='primary' tag='a' caret>
           Apri dropdown
         </DropdownToggle>

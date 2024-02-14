@@ -25,7 +25,7 @@ export const UncontrolledDropdown: FC<UncontrolledDropdownProps> = ({
     'nav-item': inNavbar
   });
 
-  const Tag = tag != undefined ? tag : 'div';
+  const Tag = tag !== undefined ? tag : 'div';
 
   return (
     <Tag className={classes} data-testid={testId} {...attributes}>

@@ -66,15 +66,7 @@ export const SmallOverlappingAvatars = () => {
       <li>
         <AvatarIcon size='sm' color='dropdown'>
           <UncontrolledDropdown>
-            <DropdownToggle
-              className={`btn btn-dropdown dropdown-toggle`}
-              href='#'
-              tag='button'
-              id='dropdownMenuLink'
-              data-toggle='dropdown'
-              aria-haspopup
-              aria-expanded='false'
-            >
+            <DropdownToggle id='dropdownMenuLink'>
               <span className='visually-hidden'>Visualizza altri 4 utenti</span>
               <span aria-hidden='true'>+4</span>
             </DropdownToggle>
@@ -146,15 +138,7 @@ export const MediumOverlaidAvatars = () => {
       <li>
         <AvatarIcon size='md' color='dropdown'>
           <UncontrolledDropdown>
-            <DropdownToggle
-              className={`btn btn-dropdown dropdown-toggle`}
-              href='#'
-              tag='button'
-              id='dropdownMenuLink2'
-              data-toggle='dropdown'
-              aria-haspopup
-              aria-expanded='false'
-            >
+            <DropdownToggle id='dropdownMenuLink2'>
               <span className='visually-hidden'>Visualizza altri 4 utenti</span>
               <span aria-hidden='true'>+4</span>
             </DropdownToggle>

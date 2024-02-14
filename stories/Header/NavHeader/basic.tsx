@@ -62,10 +62,9 @@ const NavHeader = ({ theme, isOpen }: HeaderNavProps) => {
               <NavItem>
                 <NavLink href='#'>Link 4</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav tag='li' inNavbar>
-                <DropdownToggle nav caret role='button'>
+              <UncontrolledDropdown tag='li' inNavbar>
+                <DropdownToggle inNavbar caret>
                   <span>Menu Dropdown</span>
-                  <Icon icon='it-expand' size='xs' />
                 </DropdownToggle>
                 <DropdownMenu>
                   <LinkList>

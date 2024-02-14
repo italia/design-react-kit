@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, LinkList, LinkListItem, Icon } from '../../src';
 
 const PageChangerExample = () => {
-  const [dropdownToggle, setDropdownToggle] = useState(false);
   return (
-    <UncontrolledDropdown isOpen={dropdownToggle} toggle={() => setDropdownToggle(!dropdownToggle)}>
+    <UncontrolledDropdown>
       <DropdownToggle
         id='pagerChanger'
         className={`btn btn-dropdown dropdown-toggle`}
