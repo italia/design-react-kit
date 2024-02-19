@@ -12,12 +12,11 @@ import {
   LinkListItem,
   HeaderBrand,
   HeaderToggler,
-  DropdownItem,
   DropdownMenu,
   DropdownToggle,
   Row,
   Col,
-  UncontrolledDropdown
+  Dropdown
 } from '../../../src';
 import type { HeaderSlimProps } from '../types';
 
@@ -45,10 +44,9 @@ const SlimHeader = ({ theme, isOpen, brandText }: HeaderSlimProps) => {
           </Collapse>
         </HeaderLinkZone>
         <HeaderRightZone>
-          <UncontrolledDropdown nav tag='div'>
-            <DropdownToggle nav caret role='button'>
+          <Dropdown inNavbar>
+            <DropdownToggle inNavbar caret>
               ITA
-              <Icon icon='it-expand' color='icon-white' className='d-none d-lg-block' />
             </DropdownToggle>
             <DropdownMenu>
               <Row>
@@ -64,7 +62,7 @@ const SlimHeader = ({ theme, isOpen, brandText }: HeaderSlimProps) => {
                 </Col>
               </Row>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </Dropdown>
           <div className='it-access-top-wrapper'>
             <Button color='primary' size='sm'>
               Accedi

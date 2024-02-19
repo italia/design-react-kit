@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import { Dropdown, DropdownMenu, DropdownToggle, DropdownItem, LinkList, LinkListItem, ButtonGroup } from '../../src';
+import { Dropdown, DropdownMenu, DropdownToggle, LinkList, LinkListItem, ButtonGroup } from '../../src';
 
 export const _VarianteBottoni = () => {
-  const [openFirst, toggleFirst] = useState(false);
-  const [openSecond, toggleSecond] = useState(false);
-  const [openThird, toggleThird] = useState(false);
-
   return (
     <ButtonGroup>
-      <Dropdown isOpen={openFirst} toggle={() => toggleFirst(!openFirst)}>
+      <Dropdown>
         <DropdownToggle color='primary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -21,7 +17,7 @@ export const _VarianteBottoni = () => {
           </LinkList>
         </DropdownMenu>
       </Dropdown>
-      <Dropdown isOpen={openSecond} toggle={() => toggleSecond(!openSecond)}>
+      <Dropdown>
         <DropdownToggle color='secondary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -33,7 +29,7 @@ export const _VarianteBottoni = () => {
           </LinkList>
         </DropdownMenu>
       </Dropdown>
-      <Dropdown isOpen={openThird} toggle={() => toggleThird(!openThird)}>
+      <Dropdown>
         <DropdownToggle color='danger' caret>
           Apri dropdown
         </DropdownToggle>
@@ -54,11 +50,9 @@ export default {
 };
 
 export const _Esempi = () => {
-  const [open, toggle] = useState(false);
-
   return (
     <section>
-      <Dropdown className='me-3' isOpen={open} toggle={() => toggle(!open)}>
+      <Dropdown className='me-3'>
         <DropdownToggle color='primary' caret>
           Apri dropdown
         </DropdownToggle>
@@ -75,12 +69,10 @@ export const _Esempi = () => {
 };
 
 export const _Link = () => {
-  const [open, toggle] = useState(false);
-
   return (
     <section>
-      <Dropdown className='me-3' isOpen={open} toggle={() => toggle(!open)}>
-        <DropdownToggle color='primary' caret tag='a'>
+      <Dropdown className='me-3'>
+        <DropdownToggle color='primary' tag='a' caret>
           Apri dropdown
         </DropdownToggle>
         <DropdownMenu>

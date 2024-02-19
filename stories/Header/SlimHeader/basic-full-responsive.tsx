@@ -7,10 +7,9 @@ import {
   HeaderRightZone,
   Icon,
   HeaderBrand,
-  DropdownItem,
   DropdownMenu,
   DropdownToggle,
-  UncontrolledDropdown,
+  Dropdown,
   Row,
   Col,
   LinkList,
@@ -24,10 +23,9 @@ const SlimHeader = ({ theme }: ThemeType) => {
       <HeaderContent>
         <HeaderBrand responsive>Ente appartenenza/Owner</HeaderBrand>
         <HeaderRightZone>
-          <UncontrolledDropdown nav tag='div'>
-            <DropdownToggle nav caret role='button'>
+          <Dropdown inNavbar>
+            <DropdownToggle inNavbar caret>
               ITA
-              <Icon icon='it-expand' />
             </DropdownToggle>
             <DropdownMenu>
               <Row>
@@ -43,7 +41,7 @@ const SlimHeader = ({ theme }: ThemeType) => {
                 </Col>
               </Row>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </Dropdown>
           <Button color='primary' className='btn-icon btn-full' href='#'>
             <span className='rounded-icon'>
               <Icon color='primary' icon='it-user' />

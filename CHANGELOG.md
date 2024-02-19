@@ -38,4 +38,3 @@
 * numeric input component ([d4a299c](https://github.com/italia/design-react-kit/commit/d4a299cb43ad138352deab45d552bd33a3be3b19))
 
 
-

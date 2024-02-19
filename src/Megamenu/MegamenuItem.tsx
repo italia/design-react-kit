@@ -1,38 +1,28 @@
-import React, { FC, HTMLAttributes, useRef } from 'react';
-import { DropdownMenu, DropdownToggle, UncontrolledDropdown } from 'reactstrap';
+import React, { FC, HTMLAttributes } from 'react';
+import { Dropdown } from '../Dropdown/Dropdown';
+import { DropdownMenu } from '../Dropdown/DropdownMenu';
+import { DropdownToggle } from '../Dropdown/DropdownToggle';
 import classNames from 'classnames';
-import { Icon } from '../Icon/Icon';
 
 export interface MegamenuItemProps extends HTMLAttributes<HTMLUListElement> {
   /** Etichetta del megamenu visibile all'interno della barra di navigazione */
   itemName: string;
-  /** Classi aggiuntive da usare per il componente UncontrolledDropdown */
+  /** Classi aggiuntive da usare per il componente Dropdown */
   className?: string;
 }
 
 export const MegamenuItem: FC<MegamenuItemProps> = ({ itemName, className, children, ...attributes }) => {
   const classes = classNames(className, 'megamenu');
-  const [isOpen, setShowButton] = React.useState(false);
-  const toggleRef = useRef<DropdownToggle>(null);
-  const toggleClasses = classNames('px-lg-2', 'px-xl-3', {
-    show: isOpen
-  });
-  const setMegamenuButtonClass = () => {
-    //setShowButton(contact);
-    if (toggleRef && toggleRef.current) {
-      setShowButton(toggleRef.current.context.isOpen);
-    }
-  };
+  const toggleClasses = classNames('px-lg-2', 'px-xl-3');
 
   return (
-    <UncontrolledDropdown nav tag='li' className={classes} {...attributes} inNavbar onToggle={setMegamenuButtonClass}>
-      <DropdownToggle caret nav tag='button' className={toggleClasses} ref={toggleRef}>
+    <Dropdown tag='li' className={classes} {...attributes} inNavbar>
+      <DropdownToggle caret className={toggleClasses} inNavbar>
         <span>{itemName}</span>
-        <Icon icon='it-expand' size='xs' className='ms-1' />
       </DropdownToggle>
       <DropdownMenu>
         <div className='megamenu pb-5 pt-3 py-lg-0'>{children}</div>
       </DropdownMenu>
-    </UncontrolledDropdown>
+    </Dropdown>
   );
 };

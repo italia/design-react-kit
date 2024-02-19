@@ -5,7 +5,7 @@ import {
   AvatarGroupContainer,
   Icon,
   LinkListItem,
-  UncontrolledDropdown,
+  Dropdown,
   LinkList,
   DropdownMenu,
   DropdownToggle
@@ -65,16 +65,8 @@ export const SmallOverlappingAvatars = () => {
       </li>
       <li>
         <AvatarIcon size='sm' color='dropdown'>
-          <UncontrolledDropdown>
-            <DropdownToggle
-              className={`btn btn-dropdown dropdown-toggle`}
-              href='#'
-              tag='button'
-              id='dropdownMenuLink'
-              data-toggle='dropdown'
-              aria-haspopup
-              aria-expanded='false'
-            >
+          <Dropdown>
+            <DropdownToggle id='dropdownMenuLink'>
               <span className='visually-hidden'>Visualizza altri 4 utenti</span>
               <span aria-hidden='true'>+4</span>
             </DropdownToggle>
@@ -106,7 +98,7 @@ export const SmallOverlappingAvatars = () => {
                 </LinkListItem>
               </LinkList>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </Dropdown>
         </AvatarIcon>
       </li>
     </AvatarGroupContainer>
@@ -145,16 +137,8 @@ export const MediumOverlaidAvatars = () => {
       </li>
       <li>
         <AvatarIcon size='md' color='dropdown'>
-          <UncontrolledDropdown>
-            <DropdownToggle
-              className={`btn btn-dropdown dropdown-toggle`}
-              href='#'
-              tag='button'
-              id='dropdownMenuLink2'
-              data-toggle='dropdown'
-              aria-haspopup
-              aria-expanded='false'
-            >
+          <Dropdown>
+            <DropdownToggle id='dropdownMenuLink2'>
               <span className='visually-hidden'>Visualizza altri 4 utenti</span>
               <span aria-hidden='true'>+4</span>
             </DropdownToggle>
@@ -186,7 +170,7 @@ export const MediumOverlaidAvatars = () => {
                 </LinkListItem>
               </LinkList>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </Dropdown>
         </AvatarIcon>
       </li>
     </AvatarGroupContainer>

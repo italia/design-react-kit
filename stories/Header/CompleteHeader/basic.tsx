@@ -8,7 +8,6 @@ import {
   Col,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
   Header,
   Headers,
   HeaderContent,
@@ -24,7 +23,7 @@ import {
   NavItem,
   NavLink,
   HeaderBrand,
-  UncontrolledDropdown,
+  Dropdown,
   MegamenuItem,
   MegamenuHighlightColumn
 } from '../../../src';
@@ -36,10 +35,9 @@ const SlimHeaderFullResponsive = ({ theme }: ThemeType) => {
       <HeaderContent>
         <HeaderBrand>Ente appartenenza</HeaderBrand>
         <HeaderRightZone>
-          <UncontrolledDropdown nav tag='div'>
-            <DropdownToggle nav caret role='button'>
+          <Dropdown inNavbar>
+            <DropdownToggle inNavbar caret>
               ITA
-              <Icon icon='it-expand' />
             </DropdownToggle>
             <DropdownMenu>
               <Row>
@@ -55,7 +53,7 @@ const SlimHeaderFullResponsive = ({ theme }: ThemeType) => {
                 </Col>
               </Row>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </Dropdown>
           <Button color='primary' icon href='#'>
             <span className='rounded-icon'>
               <Icon color='primary' icon='it-user' />
@@ -95,10 +93,9 @@ export class SlimHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { c
             </Collapse>
           </HeaderLinkZone>
           <HeaderRightZone>
-            <UncontrolledDropdown nav tag='div'>
-              <DropdownToggle nav caret role='button'>
+            <Dropdown inNavbar>
+              <DropdownToggle inNavbar caret>
                 ITA
-                <Icon icon='it-expand' />
               </DropdownToggle>
               <DropdownMenu>
                 <Row>
@@ -114,7 +111,7 @@ export class SlimHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { c
                   </Col>
                 </Row>
               </DropdownMenu>
-            </UncontrolledDropdown>
+            </Dropdown>
             <div className='it-access-top-wrapper'>
               <Button color='primary' size='sm'>
                 Accedi
@@ -200,10 +197,9 @@ export class NavHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { co
                     Link 2
                   </NavLink>
                 </NavItem>
-                <UncontrolledDropdown nav tag='li' inNavbar>
-                  <DropdownToggle nav caret role='button'>
+                <Dropdown inNavbar tag='li'>
+                  <DropdownToggle inNavbar caret>
                     <span>Menu Dropdown</span>
-                    <Icon icon='it-expand' size='xs' />
                   </DropdownToggle>
                   <DropdownMenu>
                     <LinkList>
@@ -221,8 +217,8 @@ export class NavHeader extends Component<{ theme?: 'light' | 'dark' | '' }, { co
                       </LinkListItem>
                     </LinkList>
                   </DropdownMenu>
-                </UncontrolledDropdown>
-                <MegamenuItem itemName='Megamenu con Immagine e Descrizione'>
+                </Dropdown>
+                <MegamenuItem itemName='Megamenu completo'>
                   <Row>
                     <MegamenuHighlightColumn xs='12' lg='4' description>
                       <div className='ratio ratio-21x9 lightgrey-bg-a1 mb-4 rounded'>

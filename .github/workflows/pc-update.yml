@@ -1,9 +1,8 @@
-
 name: Publiccode.yml update
 
 on:
   schedule:
-    - cron:  '30 17 * * *'
+    - cron: '30 17 * * *'
 
   workflow_dispatch:
 
@@ -21,5 +20,5 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         if: failure()
         with:
-          title: "chore: update software version ${{ steps.pva.outputs.version }} and date in publiccode.yml"
+          title: 'chore: update software version ${{ steps.pva.outputs.version }} and date in publiccode.yml'
           branch: feature/publiccode-${{ steps.pva.outputs.version }}

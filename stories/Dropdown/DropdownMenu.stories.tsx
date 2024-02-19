@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DropdownMenu, DropdownItem, Icon, LinkList, LinkListItem } from '../../src';
+import { DropdownMenu, Icon, LinkList, LinkListItem } from '../../src';
 
 export const _MenuVociAttive = () => (
   <div className='docs-show-dropdown-open'>

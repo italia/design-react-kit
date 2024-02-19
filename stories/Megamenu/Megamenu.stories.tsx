@@ -8,7 +8,6 @@ import {
   MegamenuFooter,
   MegamenuHighlightColumn,
   Row,
-  DropdownItem,
   Navbar,
   NavbarBrand,
   NavbarToggler,

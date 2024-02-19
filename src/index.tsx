@@ -8,13 +8,8 @@ export {
   NavItem,
   NavLink,
   BreadcrumbItem,
-  ButtonDropdown,
   ButtonGroup,
   ButtonToolbar,
-  Dropdown,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
   Fade,
   CardLink,
   CardGroup,
@@ -47,9 +42,7 @@ export {
   ListGroupItemText,
   ListGroupItemHeading,
   UncontrolledAlert,
-  UncontrolledButtonDropdown,
   UncontrolledCollapse,
-  UncontrolledDropdown,
   UncontrolledTooltip,
   Util
 } from 'reactstrap';
@@ -88,6 +81,9 @@ export { CardSignature } from './Card/CardSignature';
 export { CardFooterCTA } from './Card/CardFooterCTA';
 export { CardReadMore } from './Card/CardReadMore';
 export { Collapse } from './Collapse/Collapse';
+export { DropdownMenu } from './Dropdown/DropdownMenu';
+export { DropdownToggle } from './Dropdown/DropdownToggle';
+export { Dropdown } from './Dropdown/Dropdown';
 export { GridItem, GridItemText, GridItemTextWrapper, GridList, GridRow } from './Grid/index';
 export { Header } from './Header/Header';
 export { Headers } from './Header/Headers';
@@ -176,6 +172,9 @@ export type { CardTagsHeaderProps } from './Card/CardTagsHeader';
 export type { CardSignatureProps } from './Card/CardSignature';
 export type { CardFooterCTAProps } from './Card/CardFooterCTA';
 export type { CardReadMoreProps } from './Card/CardReadMore';
+export { DropdownMenuProps } from './Dropdown/DropdownMenu';
+export { DropdownToggleProps } from './Dropdown/DropdownToggle';
+export { DropdownProps } from './Dropdown/Dropdown';
 export type {
   GridItemProps,
   GridItemTextProps,
@@ -259,10 +258,6 @@ export type {
   ButtonDropdownProps,
   ButtonGroupProps,
   ButtonToolbarProps,
-  DropdownProps,
-  DropdownItemProps,
-  DropdownMenuProps,
-  DropdownToggleProps,
   FadeProps,
   CardLinkProps,
   CardGroupProps,
@@ -295,9 +290,7 @@ export type {
   ListGroupItemTextProps,
   ListGroupItemHeadingProps,
   UncontrolledAlertProps,
-  UncontrolledButtonDropdownProps,
   UncontrolledCollapseProps,
-  UncontrolledDropdownProps,
   UncontrolledTooltipProps
 } from 'reactstrap';
 export type { useNavScrollArgs, useNavScrollResult, RegisterOptions, ChangesType } from 'react-use-navscroll';
