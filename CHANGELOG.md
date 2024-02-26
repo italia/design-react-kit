@@ -1,3 +1,12 @@
+# [5.0.0-11](https://github.com/italia/design-react-kit/compare/v5.0.0-10...v5.0.0-11) (2024-02-26)
+
+
+### Features
+
+* new dropdown component ([6a02102](https://github.com/italia/design-react-kit/commit/6a021029e587d58ee0c1929f2dc6f06e902b49c2))
+
+
+
 # [5.0.0-10](https://github.com/italia/design-react-kit/compare/v5.0.0-9...v5.0.0-10) (2024-02-07)
 
 
