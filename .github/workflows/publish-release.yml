@@ -26,7 +26,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: yarn add extract-changelog-release
       - name: Generate Release Body
-        run: yarn extract-changelog-release > RELEASE_BODY.md
+        run: yarn --silent extract-changelog-release > RELEASE_BODY.md
       - uses: ncipollo/release-action@v1
         with:
           bodyFile: 'RELEASE_BODY.md'
