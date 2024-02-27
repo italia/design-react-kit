@@ -49,6 +49,8 @@ export {
 
 export { useNavScroll } from 'react-use-navscroll';
 
+export { Element as ScrollElement, Link as ScrollLink } from 'react-scroll';
+
 export { Alert } from './Alert/Alert';
 export { Accordion } from './Accordion/Accordion';
 export { AccordionItem } from './Accordion/AccordionItem';
