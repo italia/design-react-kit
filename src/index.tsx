@@ -47,9 +47,7 @@ export {
   Util
 } from 'reactstrap';
 
-export { useNavScroll } from 'react-use-navscroll';
-
-export { Element as ScrollElement, Link as ScrollLink } from 'react-scroll';
+export { Element as ScrollElement, Link as ScrollLink, scrollSpy } from 'react-scroll';
 
 export { Alert } from './Alert/Alert';
 export { Accordion } from './Accordion/Accordion';
