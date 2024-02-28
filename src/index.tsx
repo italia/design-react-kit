@@ -295,4 +295,3 @@ export type {
   UncontrolledCollapseProps,
   UncontrolledTooltipProps
 } from 'reactstrap';
-export type { useNavScrollArgs, useNavScrollResult, RegisterOptions, ChangesType } from 'react-use-navscroll';
