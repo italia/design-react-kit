@@ -3,8 +3,8 @@
     [
       "@babel/preset-env",
       {
-        "shippedProposals": true,
-        "loose": true
+        "useBuiltIns": "entry",
+        "corejs": "3.22"
       }
     ],
     "@babel/preset-typescript",
