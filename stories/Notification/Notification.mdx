@@ -1,0 +1,134 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/blocks';
+import { Code } from '@storybook/components';
+import { NotificationManager, Callout, CalloutTitle, CalloutText } from '../../src';
+import { NotifyFakeComponent_story_hidden, NotifyFakeOptionsComponent_story_hidden } from './Notification.stories';
+
+<Meta title='Documentazione/Componenti/Notifiche' />
+
+# Notifiche
+
+## Utilizzo
+
+Per utilizzare le notifiche all'interno della propria applicazione sono necessari due elementi del kit React: `NotificationManager` e la funzione `notify`.
+
+`NotificationManager` è il "contenitore" delle notifiche generate e gestisce l'intero ciclo di vita di ciascuna notifica. È necessario almeno un `NotificationManager` per poter mostrare le notifiche all'interno della vostra applicazione.
+
+Per lanciare una notifica invece necessario invocare la funzione `notify` che accetta due argomenti obbligatori: titolo e messaggio.
+
+L'implementazione più minimale è la seguente:
+
+<Canvas>
+  <Story id='componenti-notification--esempio-interattivo-story-hidden' />
+</Canvas>
+
+Il messaggio può essere anche un componente React, come nel seguente esempio:
+
+<Canvas>
+  <Story id='componenti-notification--esempio-interattivo-advanced-story-hidden' />
+</Canvas>
+
+La durata di default di una notifica è 6 secondi (`6000 ms`), ma questa può essere cambiata tramite il parametro `duration`. Per rimuovere la chiusura automatica della notifica impostare il valore `duration=0`: in questo modo la notifica potrà essere chiusa solamente da un'azione dell'utente o da una chiamata programmatica di `notify.dismiss()`.
+
+### NotificationManager
+
+È necessario almeno un `NotificationManager` per mostrare le notifiche: nella maggior parte dei casi avere un unico manager è sufficiente.
+Qualora fosse necessario avere più `NotificationManager`, ad esempio nel caso in cui si carichino più app ciascuna con il suo manager, sarà necessario specificare il parametro `containerId` nel componente `NotificationManager`, oltre che passare lo stesso parametro nelle opzioni della funzione `notify`.
+
+<ArgsTable of={NotificationManager} />
+
+### notify
+
+La funzione `notify` ha la seguente firma:
+
+```typescript
+notify(title, message?, options?)
+```
+
+<ArgsTable of={NotifyFakeComponent_story_hidden} />
+
+Il dettaglio del tipo `NotificationOptions` è riportato di seguito:
+
+<ArgsTable of={NotifyFakeOptionsComponent_story_hidden} />
+
+# Stile notifiche
+
+## Per attirare l’attenzione su brevi messaggi di stato
+
+<div className='docs'>
+  <Callout color='warning'>
+    <CalloutTitle>
+      <span className='text'>Componente statico per la documentazione</span>
+    </CalloutTitle>
+    <CalloutText>
+      Di seguito verrà utilizzato un componente <Code>NotificationDoc</Code>, di tipo statico, creato appositamente per
+      lo scopo di questa documentazione e <strong>che non deve essere utilizzato</strong> nel codice ai fini di
+      produzione.
+    </CalloutText>
+  </Callout>
+</div>
+
+La notifica viene utilizzata per portare l’attenzione dell’utente su un messaggio o un cambiamento di stato. Es: la ricezione di una nuova email.
+
+Lo stato naturale dell’elemento è invisibile. Gli esempi di questa pagina sono stati resi statici per facilitare un confronto fra le varie tipologie di design.
+
+<Canvas>
+  <Story id='componenti-notification--example' />
+</Canvas>
+
+### Notification con messaggio
+
+Si può aggiungere un breve testo al di sotto del titolo, questo verrà inserito in un tag `<p/>`.
+È possibile anche passare contenuti JSX come messaggio qualora necessario.
+
+<Canvas>
+  <Story id='componenti-notification--notification-with-message-static' />
+</Canvas>
+
+### Dismissable
+
+Le Notification Dismissable non vengono nascoste dopo un intervallo di tempo ma vengono chiuse solo quando si clicca sul rispettivo bottone di chiusura.
+
+<Canvas>
+  <Story id='componenti-notification--dismissable' />
+</Canvas>
+
+### Stati
+
+Alle Notification possono essere stilizzate in modo da determinare lo stato modificando il colore delle icone e del bordo, mediante l'attributo `state`:
+
+- `"success"` - per messaggi di procedure andate a buon fine
+- `"error"` - per messaggi di errore
+- `"info"` - per info generiche
+- `"warning"` - per messaggi di precauzione
+
+<Canvas>
+  <Story id='componenti-notification--states' />
+</Canvas>
+
+### Posizione e arrotondamento degli angoli
+
+La posizione predefinita della Notification è nella parte destra inferiore della finestra.
+
+Utilizzando l'attributo `fix` con i valori elencati di seguito la Notification verrà posizionata a filo di uno dei margini indicati, modificando l’arrotondamento degli angoli di conseguenza.
+
+_N.B. queste classi non influenzano il posizionamento su device mobile, in questo caso la Notification è sempre a piede della finestra e ne occupa tutta la larghezza_
+
+<Canvas>
+  <Story id='componenti-notification--rounding-of-corners' />
+</Canvas>
+
+### Posizione predefinita
+
+Posizionamento predefinito della Notification.
+
+<Canvas>
+  <Story id='componenti-notification--default-location' />
+</Canvas>
+
+### Posizione fissa
+
+Esempi delle quattro posizioni fisse possibili.
+
+<Canvas>
+  <Story id='componenti-notification--fixed-positions' />
+</Canvas>

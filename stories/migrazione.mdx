@@ -1,0 +1,135 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title='Documentazione/Migrazione da V1' />
+
+# Migrazione dalla versione 1
+
+### Un pratico elenco dei principali cambiamenti fra Bootstrap Italia 1.x e 2.0.
+
+I cambiamenti che richiedono una modifica del codice precedente sono contrassegnati come <span class="bg-danger text-white fw-semibold px-1 d-inline-block">Breaking</span>.
+
+## Browser supportati
+
+<span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> Bootstrap Italia 2.0, come Bootstrap 5
+sul quale è basato, abbandona il supporto delle seguenti versioni dei browser:
+
+- **_Internet Explorer 10 e 11_**. Per chi vuole far uso di IE11 rimane a disposizione la versione Legacy di Bootstrap Italia basata su BS4
+- **_Microsoft Edge < 16_** (Legacy Edge)
+- **_Firefox < 60_**
+- **_Safari < 12 / iOS Safari < 12_**
+- **_Chrome < 60_**
+
+## SASS
+
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> Rinominata la funzione <code>
+    color-yiq()
+  </code> e relative variabili a <code>color-contrast()</code>, dato che non è più legata allo spazio colore YIQ.
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> I mixins delle media query sono stati
+  modificati in favore di un approccio più logico. Ad es: <code>@include media-breakpoint-up(sm)</code>
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> Tutte le funzioni <code>
+    lighten()
+  </code> e<code>darken()</code> sono state sostituite da <code>tint-color()</code> e <code>shade-color()</code>. Queste
+  funzioni miscelano il colore con il bianco o il nero invece di modificarne il valore di luminosità.
+- I mixin <code>box-shadow</code> ora permettono valori <code>null</code> e non supportano più <code>none</code> per gli argomenti multipli.
+- Il mixin <code>border-radius()</code> ora ha un valore di default.
+
+## Organizzare gli spazi
+
+### Bordi
+
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> Rinominate le classi <code>
+    .border-left
+  </code> e <code>.border-right</code>, diventano <code>.border-start</code> e <code>.border-end</code>.
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> Rinominate le classi <code>
+    .rounded-left
+  </code> e <code>.rounded-right</code>, diventano <code>.rounded-start</code> e <code>.rounded-end</code>.
+
+### Display
+
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> Le classi “Screen reader” sono ora classi
+  “visually hidden”.
+- Le classi <code>.sr-only</code> e <code>.sr-only-focusable</code> diventano <code>.visually-hidden</code> e <code>.visually-hidden-focusable</code>.
+
+### Float
+
+- Rinominate <code>.float-left</code> e <code>.float-right</code>, diventano <code>.float-start</code> e <code>.float-end</code>.
+
+### Griglie
+
+- Nuovo breakpoint! Aggiunta di un nuovo breakpoint xxl per viewport da 1400px in su. Nessuna modifica agli altri breakpoint.
+- Gutter:
+- Ora sono più grandi rispetto alla versione 1.x (24px invece di 12px).
+- Implementati gutter variabili (responsive).
+- Aggiunta una nuova classe gutter (<code>.g-\*</code>, <code>.gx-\*</code>, and <code>.gy-\*</code>) per controllare le dimensioni dei gutter orizzontali e verticali.
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> Rinominata la classe <code>
+    .no-gutters
+  </code> a <code>.g-0</code> per allinearla alle altre classi dei gutter.
+- Alle colonne non è più applicata la proprietà <code>position: relative</code>, potrebbe essere necessario applicare la classe <code>.position-relative</code> ad alcuni elementi per ristabilire il comportamento originale.
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> Eliminate diverse classi <code>
+    .order-\*
+  </code>
+  , solitamente poco utilizzate. Ora vengono fornite solo le classi da <code>.order-1</code> a <code>.order-5</code>.
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> <code>bootstrap-grid.css</code> ora
+  applica <code>box-sizing: border-box</code> solo alla colonna invece di resettare il box-sizing globale. Questo per permettere
+  l’utilizzo dei nostri stili di di griglia in più contesti senza creare interferenze.
+
+### Proporzioni
+
+- L’elemento <code>.embed-responsive-item</code> e il selettore di gruppi di elementi sono stati eliminati in favore di un più semplice elemento Proporzioni, implementato con il selettore <code>.ratio > \*</code>. Non sono più necessarie ulteriori classi, Proporzioni funziona con qualsiasi elemento HTML.
+
+### Spaziature
+
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> Sono state rinominate diverse classi
+  utility per favorire un approccio slegato dalla direzione sinistra/destra, garantendo un miglior supporto alle lingue RTL.
+- Rinominate le classi <code>.ml-\*</code> e <code>.mr-\*</code>, diventano <code>.ms-\*</code> e <code>.me-\*</code>.
+- Rinominate le classi <code>.pl-\*</code> e <code>.pr-\*</code>, diventano <code>.ps-\*</code> e <code>.pe-\*</code>.
+
+## Organizzare i contenuti
+
+### Oggetti Media
+
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> Eliminato il componente <code>
+    .media
+  </code> dato che può essere replicato con le utilities di base.
+
+### Tabelle
+
+- Tabelle ridisegnate e ricostruite con variabili CSS per un maggior controllo sullo stile.
+
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> Eliminazione della classi <code>
+    .thead-light
+  </code> e <code>.thead-dark</code> in favore delle classi varianti <code>.table-*</code> che possono essere usate per tutti
+  gli elementi (<code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>, <code>
+    &lt;tr&gt;
+  </code>
+  ,<code>&lt;th&gt;</code> e <code>&lt;td&gt;</code>
+  ).
+
+### Codice
+
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> Eliminazione della classe <code>
+    .pre-scrollable
+  </code>
+  .
+
+### Testo
+
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> Eliminazione della classe <code>
+    .text-justify
+  </code>
+  .
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> Rinominate le classi <code>
+    .text-left
+  </code> e <code>.text-right</code>, diventano <code>.text-start</code> e <code>.text-end</code>.
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> La classe <code>
+    .text-monospace
+  </code> è stata rinominata <code>.font-monospace</code>.
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> La classe <code>.text-hide</code> è
+  stata eliminata, dato che faceva uso di un metodo antiquato per nascondere il testo.
+- <span class='bg-danger text-white fw-semibold px-1 d-inline-block'>Breaking</span> La classi utility <code>
+    .font-weight-*
+  </code> sono state rinominate <code>.fw-*</code> per brevità e coerenza.
+
+### Tipografia
+
+- Reset del <code>padding-left</code> di default degli elementi <code>&lt;ul&gt;</code> ed <code>&lt;ol&gt;</code> dal default del browser a 2rem.

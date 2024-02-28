@@ -1,0 +1,59 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/blocks';
+
+import { Input } from '../../src';
+
+<Meta title='Documentazione/Form/Input Numerico' of={Input} />
+
+# Input Numerico
+
+### Campi input con bottoni per incrementare/decrementare valori numerici
+
+## Esempi
+
+La larghezza del campo predefinita è quella del suo contenitore, per limitare la larghezza alle dimensioni del valore contenuto utilizzare il ridimensionamento adattivo.
+
+<Canvas>
+  <Story id='componenti-form-input--input-numerico-dimensionamento' />
+</Canvas>
+
+## Limiti e Step
+
+Aggiungendo le `props` `min`, `max` e `step` al componente `Input` è possibile limitare il valore minimo e massimo del campo e decidere di quanto varierà a ogni click sui bottoni.
+
+<Canvas>
+  <Story id='componenti-form-input--input-numerico-steps' />
+</Canvas>
+
+## Currency
+
+<Canvas>
+  <Story id='componenti-form-input--input-numerico-valuta' />
+</Canvas>
+
+## Percentuale
+
+Si consiglia di impostare gli attributi `min=0` e `max="100"`.
+
+<Canvas>
+  <Story id='componenti-form-input--input-numerico-percentuale' />
+</Canvas>
+
+## Disabilitato
+
+Per disabilitare un Input number, aggiungere la _prop_ `disabled `al componente `Input`.
+
+<Canvas>
+  <Story id='componenti-form-input--input-numerico-disabilitato' />
+</Canvas>
+
+## Ridimensionamento
+
+È possibile far sì che il campo numerico si ridimensioni automaticamente a seconda del valore contenuto in esso.
+
+<Canvas>
+  <Story id='componenti-form-input--input-numerico-ridimensionamento' />
+</Canvas>
+
+## Argomenti componente
+
+<ArgsTable of={Input} />

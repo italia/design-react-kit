@@ -1,0 +1,100 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/blocks';
+import { GridItem, GridItemText, GridItemTextWrapper, GridList, GridRow, ResponsiveImage } from '../../src';
+
+<Meta title='Documentazione/Organizzare i contenuti/Liste di Immagini' of={GridList} />
+
+# Liste di Immagini
+
+La lista di immagini è un componente flessibile per la visualizzazione di serie di immagini sottoforma di griglia
+
+## Elemento singolo
+
+Di seguito gli esempi di elemento singolo della grid list:
+
+- Immagine semplice
+- Immagine con didascalia in basso
+- Immagine con didascalia sovrapposta
+
+Per utilizzare la didascalia sovrapposta è sufficiente aggiungere la classe `.it-grid-system-overlay` al componente `GridList`.
+
+<Canvas>
+  <Story id='componenti-imagelist--elemento-singolo' />
+</Canvas>
+
+## Tipi di griglia
+
+### Standard
+
+La griglia utilizzata è una variante delle classi di Bootstrap, dove cambiano sostanzialmente i margini.
+Il contenitore della griglia è il componente `GridList`.
+Al posto del componente `Row` viene utilizzata il componente `GridRow`.
+
+Di seguito l’esempio
+
+<Canvas>
+  <Story id='componenti-imagelist--griglia-standard' />
+</Canvas>
+
+### Standard con didascalie
+
+Per la corretta formattazione degli spazi di questo tipo di griglia, occorre aggiungere la classe `.it-image-label-grid` al componente `GridList` se gli elementi al suo interno contengono una didascalia.
+
+Di seguito l’esempio
+
+<Canvas>
+  <Story id='componenti-imagelist--standard-didascalie' />
+</Canvas>
+
+### Proporzionale
+
+La griglia “proporzionale” contiene elementi griglia con immagine e testo in overlay.
+Per la corretta formattazione degli spazi di questo tipo di griglia, occorre aggiungere la classe `.it-quilted-grid` al componente `GridList`. La griglia utilizza componenti `Col` classici.
+
+I tipi di immagini utilizzabili sono sostanzialmente 2:
+
+- standard
+- orizzontale (come proporzione sono il doppio della larghezza rispetto all’immagine standard e di altezza uguale)
+
+Per utilizzare l’immagine orizzontale, occorre aggiungere la classe `.it-grid-item-double-w` al componente `GridItem` che contiene l’immagine.
+
+Di seguito l’esempio
+
+<Canvas>
+  <Story id='componenti-imagelist--proporzionale' />
+</Canvas>
+
+### Masonry
+
+Per realizzare l’elemento Masonry è stata usata la classe `.card-columns` che contiene al suo interno gli elementi distribuendoli su più colonne. Per la corretta formattazione degli spazi di questo tipo di griglia, occorre aggiungere la classe `.it-masonry` al componente `GridList`.
+
+Di seguito l’esempio
+
+<Canvas>
+  <Story id='componenti-imagelist--masonry' />
+</Canvas>
+
+## Argomenti componente
+
+### GridList
+
+<ArgsTable of={GridList} />
+
+### GridRow
+
+<ArgsTable of={GridRow} />
+
+### GridItem
+
+<ArgsTable of={GridItem} />
+
+### GridItemText
+
+<ArgsTable of={GridItemText} />
+
+### GridItemTextWrapper
+
+<ArgsTable of={GridItemTextWrapper} />
+
+### ResponsiveImage
+
+<ArgsTable of={ResponsiveImage} />

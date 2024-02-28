@@ -1,0 +1,106 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/blocks';
+import { Hero, HeroBackground, HeroBody, HeroButton, HeroCategory, HeroTitle } from '../../src';
+
+<Meta title='Documentazione/Componenti/Hero' of={Hero} />
+
+# Hero
+
+## Lo Hero (ciò che Bootstrap definisce “Jumbotron”) è un componente per la presentazione di contenuti in evidenza.
+
+Il cosiddetto `Hero` è un componente leggero e flessibile che può facoltativamente estendere l’intera finestra per mostrare i messaggi in evidenza sul tuo sito. Di seguito una serie di esempi con la descrizione degli elementi e delle classi applicabili.
+
+Il componente `Hero` può contenere
+
+- Sub head - `HeroCategory`
+- Heading (titolo) - `HeroTitle`
+- Paragrafo - `HeroBody`
+- Call to action - `HeroButton`
+- Immagine di background - `HeroBackground`
+
+### Con immagine
+
+<Canvas>
+  <Story id='componenti-hero--hero-con-sfondo' />
+</Canvas>
+
+### Versione small
+
+Per ottenere il componente `Hero` nella sua versione più piccola utilizzare l'attributo `small`.
+
+<Canvas>
+  <Story id='componenti-hero--hero-con-sfondo-small' />
+</Canvas>
+
+## Con contenuti testuali
+
+Esempio di Hero con tutti i componenti testuali
+
+<Canvas>
+  <Story id='componenti-hero--hero-con-testo' />
+</Canvas>
+
+### Con contenuti testuali centrati
+
+Per ottenere il componente `Hero` centrando i testi orizzontalmente aggiungere l'attributo `centered`.
+
+<Canvas>
+  <Story id='componenti-hero--hero-con-testo-centrato' />
+</Canvas>
+
+## Con testi ed immagine di sfondo
+
+Per visualizzare i testi in overlay sulle immagini, viene creato un div scuro in opacità per migliorare la leggibilità del testo in caso di immagini dai toni chiari. Aggiungere al componente `Hero` l'attributo `overlay` con il colore desiderato (tra `dark`, `primary` o `filter`). Di seguito l'esempio con `overlay='dark'`:
+
+<Canvas>
+  <Story id='componenti-hero--hero-con-testo-su-sfondo' />
+</Canvas>
+
+### Con overlay di colore primario
+
+Per un div opaco di colore primario utilizzare `overlay='primary'`:
+
+<Canvas>
+  <Story id='componenti-hero--hero-con-testo-su-sfondo-overlay-primario' />
+</Canvas>
+
+### Con overlay e filtro di colore primario
+
+Per aggiungere un filtro di tipo “screen” utilizzare `overlay="filter"`:
+
+<Canvas>
+  <Story id='componenti-hero--hero-con-sfondo-overlay-filtro' />
+</Canvas>
+
+## Con immagine e margine negativo per contenuti sovrapposti
+
+In alcuni casi, il contenuto che seguirà la card può sovrapporsi al componente `Hero`. Aggiungere l'attributo `overlap` per far si che il contenuto seguente si sovrapponga al componente `Hero` (in questo caso il componente seguente è una card):
+
+<Canvas>
+  <Story id='componenti-hero--hero-con-sfondo-margine-negativo' />
+</Canvas>
+
+## Argomenti componente
+
+### Hero
+
+<ArgsTable of={Hero} />
+
+### HeroBackground
+
+<ArgsTable of={HeroBackground} />
+
+### HeroBody
+
+<ArgsTable of={HeroBody} />
+
+### HeroButton
+
+<ArgsTable of={HeroButton} />
+
+### HeroCategory
+
+<ArgsTable of={HeroCategory} />
+
+### HeroTitle
+
+<ArgsTable of={HeroTitle} />

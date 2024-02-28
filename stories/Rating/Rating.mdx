@@ -1,0 +1,69 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/blocks';
+import { Code } from '@storybook/components';
+import { Rating, Callout, CalloutText } from '../../src';
+
+<Meta title='Documentazione/Componenti/Rating' of={Rating} />
+
+# Rating
+
+## Per esprimere una valutazione su un contenuto
+
+### Esempio
+
+<Canvas>
+  <Story id='componenti-rating--rating-base' />
+</Canvas>
+
+### Con label
+
+Per visualizzare una label utilizzare l'attributo `legend` del componente `Rating`. In questo caso viene passato un nodo JSX all'attributo, che però accetta anche una struttura JSON (vedi documentazione).
+
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutText>
+      L'attributo <Code>&lt;legend&gt;</Code> contiene testo aggiuntivo per Screen Reader all’interno di uno{' '}
+      <Code>&lt;span class="visually-hidden"&gt;</Code>
+      .<br />
+      La label con il numero di stelle dev’essere contenuta in uno <Code>&lt;span&gt;</Code> semplice.
+    </CalloutText>
+  </Callout>
+</div>
+
+<Canvas>
+  <Story id='componenti-rating--rating-con-label' />
+</Canvas>
+
+### Sola lettura
+
+Aggiungendo l'attributo `readOnly` si ottiene un Rating non modificabile di sola lettura.
+
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutText>
+      Per rendere accessibile il contenuto è necessario aggiungere l'attributo <Code>&lt;legend&gt;</Code> con classe{' '}
+      <code>.visually-hidden</code>.
+    </CalloutText>
+  </Callout>
+</div>
+
+<Canvas>
+  <Story id='componenti-rating--rating-read-only' />
+</Canvas>
+
+I seguenti valori per l'attributo `legend` sono equivalenti:
+
+```jsx
+<Rating legend={{ content: 'Valutazione 4 stelle su 5', srOnly: true }} />
+```
+
+oppure
+
+```jsx
+<Rating legend={<legend className='visually-hidden'>Valutazione 4 stelle su 5</legend>} />
+```
+
+## Argomenti componente
+
+### Rating
+
+<ArgsTable of={Rating} />

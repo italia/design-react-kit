@@ -1,0 +1,63 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import { BackToTop } from '../../src';
+
+<Meta title='Documentazione/Menu di navigazione/Torna Su' />
+
+# Torna su
+
+## Esempio
+
+Per visualizzare il Back to top nella posizione corretta è necessario scrollare questa pagina. L'esempio del codice
+sottostante sarà visibile solo a scroll avvenuto.
+
+<Canvas>
+  <BackToTop className='example' />
+</Canvas>
+
+**Per facilitare la visualizzazione delle varie versioni di Back to top disponibili i seguenti esempi saranno
+visualizzati in linea.**
+
+<Canvas>
+  <BackToTop />
+</Canvas>
+
+### Versione ridotta
+
+Aggiungendo la prop `small` al componente si ottiene un pulsante di dimensioni ridotte.
+
+<Canvas>
+  <BackToTop small />
+</Canvas>
+
+### Versione con ombra
+
+Aggiungendo la prop `shadow` al componente si aggiunge un'ombra al pulsante.
+
+<Canvas>
+  <div className='d-flex align-items-center'>
+    <BackToTop shadow />
+    <BackToTop shadow small />
+  </div>
+</Canvas>
+
+### Versione per sfondo scuro
+
+Aggiungendo la prop `dark` al componente si ottiene un pulsante utilizzabile su sfondo scuro.
+
+<Canvas>
+  <div className='d-flex align-items-center p-4 neutral-1-bg-a8'>
+    <BackToTop dark />
+    <BackToTop dark small />
+  </div>
+</Canvas>
+
+#### Ombra su sfondo scuro
+
+Aggiungendo le prop `dark` e `shadow` al componente si ottiente un pulsante con ombra utilizzabile su sfondo scuro.
+
+<Canvas>
+  <div className='d-flex align-items-center p-4 neutral-1-bg-a8'>
+    <BackToTop dark shadow />
+    <BackToTop dark shadow small />
+  </div>
+</Canvas>

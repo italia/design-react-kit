@@ -1,0 +1,201 @@
+import { Meta, Canvas, Story } from '@storybook/blocks';
+import { Callout, CalloutTitle, CalloutText } from '../../src';
+
+<Meta title='Documentazione/Organizzare i contenuti/Tipografia' />
+
+# Tipografia
+
+### Documentazione sulla gestione della tipografia, come intestazioni, paragrafi, citazioni, elenchi e altro.
+
+Bootstrap imposta alcune proprietà di base per la tipografia e gli stili dei link. Quando è necessario un maggiore controllo, fornisce delle [classi di utilità testuali](https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/testo/).
+
+## Famiglie di Caratteri
+
+Come descritto in dettaglio nel capitolo sullo UI Kit, le Linee Guida di Design suggeriscono di usare le seguenti famiglie di caratteri:
+
+- il font senza grazie, o _sans serif_, **Titillium Web**.
+- il font graziato, o _serif_, **Lora**.
+- il font _monospace_ con dimensioni di caratteri normalizzate **Roboto Mono**.
+
+### Titillium Web
+
+È la famiglia di caratteri utilizzata per i contenuti web, per cui di norma non è necessario applicarlo esplicitamente. In caso si renda necessario è possibile utilizzare la classe `text-sans-serif`.
+
+<Canvas>
+  <Story id='componenti-typography--titillium' />
+</Canvas>
+
+### Lora
+
+È un carattere più adatto a testi lunghi, introdotto per la sua leggibilità, nato espressamente per la lettura su display. Può essere utilizzato applicando la classe `text-serif`.
+
+<Canvas>
+  <Story id='componenti-typography--lora' />
+</Canvas>
+
+### Roboto Mono
+
+È una famiglia di caratteri adatta ad essere utilizzata per la rappresentazione di numeri, codici, calcoli matematici, esempi con linguaggi di programmazione. Per il suo utilizzo, è sufficiente usare la classe `font-monospace`.
+
+<Canvas>
+  <Story id='componenti-typography--roboto-mono' />
+</Canvas>
+
+### Tipografia responsive
+
+Bootstrap Italia ridimensiona testo e alcune propietà dei componenti modificando il `font-size` dell’elemento radice, con una media query che imposta dimensioni lievemente maggiori per schermi con dimensioni maggiori di `576px`. Questa impostazione, unita all’utilizzo di dimensioni in `rem` o in semplici valori numerici all’interno del CSS, fa sì che testo e altre proprietà occupino più spazio quando lo schermo lo permette:
+
+```css
+html {
+  font-size: 16px;
+  @include media-breakpoint-up(sm) {
+    font-size: 18px;
+  }
+}
+```
+
+### Intestazioni
+
+Tutte le intestazioni HTML, da `<h1>` fino a `<h6>`, sono disponibili, anche se è buona norma non utilizzare più di 4 livelli di intestazione.
+
+Nel caso in cui si voglia presentare il testo nello stesso stile delle intestazioni, ma non sia possibile utilizzare l’elemento HTML appropriato, sono disponibili anche classi di tipo `.h1`, `.h2`, ecc.
+
+<Canvas>
+  <Story id='componenti-typography--intestazioni' />
+</Canvas>
+
+Queste le dimensioni nel dettaglio:
+
+<Canvas>
+  <Story id='componenti-typography--dimensioni' />
+</Canvas>
+
+#### Intestazioni in evidenza
+
+Gli elementi di intestazione tradizionali sono progettati per funzionare al meglio nel contesto della pagina. Nel caso sia necessario mettere in ulteriore evidenza un’intestazione di tipo `<h1>`, si può prendere in considerazione l’uso della classe `.display-1`, che restituirà una dimensione sensibilmente più grande.
+
+# Intestazione di tipo h1
+
+<Canvas>
+  <Story id='componenti-typography--intestazione-tipo' />
+</Canvas>
+
+### Personalizzazione delle intestazioni
+
+È possibile utilizzare le classi di utilità incluse in Bootstrap per dare uno stile diverso per testi di intestazione secondaria.
+
+<Canvas>
+  <Story id='componenti-typography--intestazione-secondario' />
+</Canvas>
+
+### Paragrafi
+
+Il semplice paragrafo prevede una dimensione di testo e un’interlinea di `16px/24px` per dispositivi mobili, e di `18px/28px` per schermi con dimensioni maggiori di 576px.
+
+<Canvas>
+  <Story id='componenti-typography--paragrafo' />
+</Canvas>
+
+Per una lettura più confortevole, è buona norma mantenere la lunghezza di un paragrafo compresa tra 45 e 74 caratteri. Per testo su colonne multiple, si considera una lunghezza compresa tra 40 e 50 caratteri. Per i testi a margine la lunghezza minima è di 12-15 caratteri.
+
+#### Paragrafi in evidenza
+
+Per mettere in risalto un paragrafo è sufficiente aggiungere la classe `.lead.`
+
+<Canvas>
+  <Story id='componenti-typography--paragrafo-evidenza' />
+</Canvas>
+
+#### Personalizzazione dei paragrafi
+
+È possibile stilizzare correttamente lo stile anche nel caso vengano utilizzati semplicemente gli elementi HTML5 per il trattamento di testo.
+
+<Canvas>
+  <Story id='componenti-typography--paragrafi-personalizzati' />
+</Canvas>
+
+Le classi `.mark ` e `.small` sono disponibili anche per applicare gli stessi stili di `<mark>` e `<small>` evitando eventuali implicazioni semantiche indesiderate che i tag porterebbero con sé.
+
+È possibile sfruttare le classi di Bootstrap anche per modificare allineamento, stile, peso e colore del testo. Per questo, si può fare riferimento alla documentazione delle [utilità di testo](https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/testo/) e [utilità di colore](/story/documentazione-utilities-colori--page).
+
+### Link
+
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>
+      <span className='text'>Accessibilità</span>
+    </CalloutTitle>
+    <CalloutText>
+      È fondamentale evidenziare i link presenti in un paragrafo in modo adeguato, utilizzando la forma (grassetto,
+      sottolineato) oltre al colore per indicare la presenza di un collegamento ipertestuale.
+    </CalloutText>
+  </Callout>
+</div>
+
+Nel rispetto delle regole di accessibilità vigenti, Bootstrap Italia mantiene la sottolineatura ai link di tipo `<a>`. Nel caso di link già in evidenza (menu principali, liste di link, link in grassetto, ecc.), è possibile rimuovere la sottolineatura utilizzando la classe `.text-decoration-none`.
+
+<Canvas>
+  <Story id='componenti-typography--link' />
+</Canvas>
+
+### Abbreviazioni
+
+Implementazione stilizzata dell’elemento HTML `<abbr>` per abbreviazioni e acronimi per mostrare la versione espansa sull’ hover. Le abbreviazioni hanno una sottolineatura predefinita e ottengono un cursore di aiuto per fornire un contesto aggiuntivo al passaggio del mouse e agli utenti delle tecnologie assistive.
+
+Aggiungi `.initialism` a un’abbreviazione per una dimensione del font leggermente più piccola.
+
+<Canvas>
+  <Story id='componenti-typography--abbrevazioni' />
+</Canvas>
+
+### Citazioni
+
+Per citare blocchi di contenuti da un’altra fonte all’interno del documento. Racchiudi ogni HTML all’interno di un `<blockquote className='blockquote'>` come la citazione.
+
+<Canvas>
+  <Story id='componenti-typography--citazioni' />
+</Canvas>
+
+#### Citare una fonte
+
+Aggiungi un `<footer className='blockquote-footer'>` per identificare la fonte. Includi il nome delle fonte di origine in `<cite>`.
+
+<Canvas>
+  <Story id='componenti-typography--citazione-fonte' />
+</Canvas>
+
+### Allineamento
+
+Utilizza le utilità di testo necessarie per modificare l’allineamento del tuo blockquote.
+
+<Canvas>
+  <Story id='componenti-typography--allineamento-centrato' />
+</Canvas>
+
+<Canvas>
+  <Story id='componenti-typography--allineamento-a-destra' />
+</Canvas>
+
+### Liste
+
+Rimuovi il predefinito `list-style` e il margine sinistro sugli elementi elenco (solo per i figli diretti). **Questo si applica solo agli elementi della lista che sono figli diretti**, il che significa che dovrai aggiungere la classe per tutti gli elenchi annidati.
+
+<Canvas>
+  <Story id='componenti-typography--liste' />
+</Canvas>
+
+#### Inline
+
+Rimuovi i punti elenco di una lista e applica un leggero margin con una combinazione di due classi, `.list-inline` e `.list-inline-item`.
+
+<Canvas>
+  <Story id='componenti-typography--liste-inline' />
+</Canvas>
+
+#### Allineamento lista descrizione
+
+Allineare i termini e le descrizioni orizzontalmente utilizzando le classi predefinite del nostro sistema di griglia. Per termini più lunghi, puoi facoltativamente aggiungere la classe `.text-truncate` per troncare il testo con un `ellipsis`.
+
+<Canvas>
+  <Story id='componenti-typography--liste-allineate' />
+</Canvas>

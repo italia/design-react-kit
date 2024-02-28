@@ -1,0 +1,143 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/blocks';
+import { Toolbar, ToolbarItem } from '../../src';
+
+<Meta title='Documentazione/Menu di navigazione/Toolbar' of={Toolbar} />
+
+# Toolbar
+
+Elemento contenitore di link, bottoni o dropdown
+
+L’elemento Toolbar è un contenitore di link, bottoni o dropdown. Consiste in un elenco `Toolbar` con tanti elementi `ToolbarItem` quante sono le voci richieste.
+
+### Dimensioni
+
+La Toolbar si adatta automaticamente in larghezza al suo contenitore. È consigliabile utilizzare contenitori di dimensione orizzontale (o verticale, nel caso del Toolbar verticale) ridotta, per evitare che gli elementi si disperdano in uno spazio troppo ampio.
+
+Per ottimizzare lo spazio disponibile l’elemento è fornito in tre versioni: grande, media e piccola.
+
+## Componente Toolbar
+
+La versione predefinita dell’elemento è quella con icone grandi e label.
+
+<Canvas>
+  <Story id='componenti-toolbar--esempio' />
+</Canvas>
+
+### Versione media
+
+Applicando un attributo aggiuntivao `size="medium"` alla `Toolbar` si ottiene una versione di dimensioni medie.
+
+In questo caso le label, nascoste visivamente, saranno contenute in uno `<span>` con classe `.visually-hidden`, per rendere disponibile la descrizione agli screen reader.
+
+<Canvas>
+  <Story id='componenti-toolbar--esempio-medium' />
+</Canvas>
+
+### Versione piccola
+
+Applicando un attributo aggiuntivao `size="small"` alla `Toolbar` si ottiene una versione di dimensioni piccola.
+
+In questo caso le label, nascoste visivamente, saranno contenute in uno `<span>` con classe `.visually-hidden`, per rendere disponibile la descrizione agli screen reader.
+
+<Canvas>
+  <Story id='componenti-toolbar--esempio-small' />
+</Canvas>
+
+### Stato degli elementi
+
+Al componente `ToolbarItem` dell’elemento attivo va applicata l'attributo `active`.
+
+Gli elementi disabilitati avranno invece un attributo `disabled`. Il componente provvederà agli accorgimenti relativi all'accessibilità.
+
+## Divisori
+
+Per aggiungere degli elementi divisori fra gli elementi utilizzare il componente `ToolbarItemDivider`.
+
+<Canvas>
+  <Story id='componenti-toolbar--esempio-with-divider' />
+</Canvas>
+
+## Toolbar con Badge
+
+I Badge possono essere utilizzati per indicare contenuti non letti o alert di vario tipo.
+
+### Grande con Badge
+
+Nella versione grande i Badge possono contenere dei numeri. È possibile specificare una label che verrà mostrata agli screen reader.
+
+<Canvas>
+  <Story id='componenti-toolbar--esempio-con-badge-grande' />
+</Canvas>
+
+### Media con Badge
+
+Nella versione media i badge non contengono numeri ma possono essere usati come alert generici. Il numero dei contenuti non letti o nuovi va indicato all’interno della label che verrà mostrata agli screen reader.
+
+<Canvas>
+  <Story id='componenti-toolbar--esempio-con-badge-medio' />
+</Canvas>
+
+### Piccola con Badge
+
+Nella versione piccola i Badge non contengono numeri ma possono essere usati come alert generici. Il numero dei contenuti non letti o nuovi va indicato all’interno della label che verrà mostrata agli screen reader.
+
+<Canvas>
+  <Story id='componenti-toolbar--esempio-con-badge-piccolo' />
+</Canvas>
+
+## Toolbar con Dropdown
+
+All’interno della Toolbar è possibile implementare dei bottoni dropdown con relativo sottomenù.
+
+Per definire un comportamento con dropdown per il componente `ToolbarItem` è necessario aggiungere l'attributo `dropdown` al componente. Tramite l'attributo `dropdownProps` è possibile inoltrare degli attributi per il dropdown usato internamente.
+Infine definire il contenuto del dropdown come JSX all'interno del componente `ToolbarItem`.
+
+### Grande con Dropdown
+
+<Canvas>
+  <Story id='componenti-toolbar--esempio-con-dropdown-grande' />
+</Canvas>
+
+### Medio con Dropdown
+
+<Canvas>
+  <Story id='componenti-toolbar--esempio-con-dropdown-media' />
+</Canvas>
+
+### Piccolo con Dropdown
+
+<Canvas>
+  <Story id='componenti-toolbar--esempio-con-dropdown-piccola' />
+</Canvas>
+
+## Toolbar verticale
+
+Applicando un attributo `vertical` alla Toolbar gli elementi vengono visualizzati in colonna.
+
+### Grande verticale
+
+<Canvas>
+  <Story id='componenti-toolbar--esempio-verticale-grande' />
+</Canvas>
+
+### Medio verticale
+
+<Canvas>
+  <Story id='componenti-toolbar--esempio-verticale-media' />
+</Canvas>
+
+### Piccolo verticale
+
+<Canvas>
+  <Story id='componenti-toolbar--esempio-verticale-piccola' />
+</Canvas>
+
+## Argomenti componente
+
+### Toolbar
+
+<ArgsTable of={Toolbar} />
+
+### ToolbarItem
+
+<ArgsTable of={ToolbarItem} />

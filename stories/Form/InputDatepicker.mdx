@@ -1,0 +1,30 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/blocks';
+
+import { Callout, CalloutText, Input } from '../../src';
+
+<Meta title='Documentazione/Form/Input Calendario' of={Input} />
+
+# Input Calendario
+
+### Datepicker
+
+Campo di tipo calendario per la selezione di giorni dell’anno.
+
+Clicca sull’icona a destra per visualizzare il datepicker.
+
+<div className='docs'>
+  <Callout highlight>
+    <CalloutText>
+      <span className='text'>
+        Assicurarsi di aggiungere alla label la classe active per impedire la sovrapposizione della label al campo.
+      </span>
+    </CalloutText>
+  </Callout>
+</div>
+<Canvas>
+  <Story id='componenti-form-input--input-datepicker' />
+</Canvas>
+
+## Argomenti componente
+
+<ArgsTable of={Input} />

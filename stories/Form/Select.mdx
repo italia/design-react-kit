@@ -1,0 +1,36 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/blocks';
+
+import { Select } from '../../src';
+
+<Meta title='Documentazione/Form/Select' of={Select} />
+
+# Select
+
+### Il classico “menu a tendina”, in nuove varianti.
+
+## Select classica
+
+La `Select` accetta come _children_ le opzioni selezionabili e ha una _prop_ `label`con cui si definisce l'etichetta del
+campo.
+
+<Canvas>
+  <Story id='componenti-form-select--select-classica' />
+</Canvas>
+
+## Select disabilitata
+
+Per disabilitare una select, aggiungere la _prop_ `disabled` al componente `Select`.
+
+<Canvas>
+  <Story id='componenti-form-select--select-disabilitata' />
+</Canvas>
+
+## Select con gruppi
+
+<Canvas>
+  <Story id='componenti-form-select--select-con-gruppi' />
+</Canvas>
+
+## Argomenti componente
+
+<ArgsTable of={Select} />

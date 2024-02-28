@@ -1,0 +1,174 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/blocks';
+import { StepperHeaderElement, Callout, CalloutTitle, CalloutText, CalloutMoreFooter } from '../../src';
+
+<Meta title='Documentazione/Componenti/Steppers' of={StepperHeaderElement} />
+
+# Steppers
+
+## Gli "Stepper" mostrano l'avanzamento del progresso di una procedura a più passi attraverso la numerazione dei passi stessi.
+
+### Intestazione
+
+Il contenitore degli Stepper è sempre un componente `StepperContainer`. La sua intestazione è contenuta in una lista
+`StepperHeader`, all'interno della quali i singoli passi (o _step_) sono rappresentati da componenti
+`StepperHeaderElement`.
+
+<div className='docs'>
+  <Callout color='danger'>
+    <CalloutTitle>
+      <span className='text'>Mobile</span>
+    </CalloutTitle>
+    <CalloutText>
+      L’aspetto della modalità mobile degli Steppers è differente rispetto a quello desktop. Se si sta consultando
+      questa documentazione su un PC desktop, per visualizzare correttamente gli esempi seguenti in formato mobile sarà
+      necessario ridimensionare la finestra del browser al di sotto dei 992 pixel.
+    </CalloutText>
+  </Callout>
+</div>
+
+## Varianti intestazione
+
+### Solo testo
+
+I passi visibili nell'intestazione presentano tre varianti:
+
+- `confirmed` per individuare uno step già confermato. È bene corredare tali step con un’icona che ne identifichi il
+  completamento (vedi di seguito).
+- `active` per individuare lo step attualmente attivo; su dispositivi mobili è l’unico visualizzato.
+- `mobile` per individuare un indice, visibile solo su mobile, che può contenere lo stato attuale di progresso
+  indicato in forma testuale
+
+È necessario ridurre la finestra del browser per apprezzare il comportamente degli Stepper su dispositivi di dimensioni
+ridotte.
+
+<Canvas>
+  <Story id='componenti-steppers--text-only' />
+</Canvas>
+
+### Testo e icone
+
+Le label presenti negli step dell'intestazione possono essere anticipate da un'icona.
+
+<Canvas>
+  <Story id='componenti-steppers--text-and-icons' />
+</Canvas>
+
+### Ordine degli step
+
+Le label presenti negli steps dell’header possono essere anticipate dal numero ordinale relativo allo stesso. Come
+mostrato nell’esempio, nel caso di uno step completato al posto del numero va inclusa un’icona di conferma con un testo
+riservato agli screen reader.
+
+È necessario aggiungere la prop `noLine` allo `<StepperHeaderElement>` attivo per nascondere il bordo inferiore azzurro,
+in questo caso ridondante.
+
+<Canvas>
+  <Story id='componenti-steppers--order-of-the-steps' />
+</Canvas>
+
+### Navigazione degli step
+
+I pulsanti “Avanti” e “Indietro” dovranno essere utilizzati per implementare la logica di navigazione degli Steppers
+nelle web app e sono dotati di classi `.steppers-btn-prev` e `.steppers-btn-next`.
+
+Il passaggio da uno step all’altro attraverso i pulsanti contenuti in `StepperNav` determina un cambiamento del
+contenuto presente in `StepperContent`.
+
+<Canvas>
+  <Story id='componenti-steppers--navigation-of-the-steps' />
+</Canvas>
+
+## Varianti navigazione per mobile
+
+La versione mobile degli Steppers non visualizza l’elenco completo degli step disponibili, ma solo quello corrente. Per
+questa ragione è possibile aggiungere degli indicatori di progresso allo `StepperNav`.
+
+Questi indicatori saranno visualizzati solo su mobile, ma nei seguenti esempi sono stati resi disponibili anche nella
+visualizzazione desktop. Si raccomanda comunque la visualizzazione in un viewport ridotto per ottenere un esempio
+realistico dell’aspetto finale.
+
+### Progress bar
+
+La `Progress` è quella nativa di Bootstrap 5 ed è contenuta in un `<div>` con classe `.steppers-progress` situato fra i
+pulsanti “Indietro” e “Avanti”.
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile--progress-bar' />
+</Canvas>
+
+### Pallini
+
+I pallini sono elementi `<li>` contenuti in un componente `StepperDots` situato fra i pulsanti “Indietro” e “Avanti”.
+
+Per ragioni di accessibilità, i `<li>` devono contenere uno `<span>` con classe `.visually-hidden` riservato agli screen
+reader con un testo indicante il numero di step e lo stato.
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile--pallini' />
+</Canvas>
+
+### Pulsante salva
+
+Su dispositivi mobili è possibile inserire un terzo pulsante “Salva” di aspetto differente con classe
+`.steppers-btn-save` fra i pulsanti “Indietro” e “Avanti”.
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile--save-button' />
+</Canvas>
+
+### Pulsante conferma
+
+Su dispositivi mobili è possibile sostituire il pulsante “Avanti” con un pulsante “Conferma” di stile differente, con la
+classe `.steppers-btn-confirm`.
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile--confirm-button' />
+</Canvas>
+
+## Versione su sfondo scuro
+
+Per ottenere una versione scura degli Stepper è sufficiente passare la prop `dark` al componente `StepperContainer`.
+
+<Canvas>
+  <Story id='componenti-steppers--version-on-a-dark-background' />
+</Canvas>
+
+### Varianti intestazione
+
+<Canvas>
+  <Story id='componenti-steppers--header-variants' />
+</Canvas>
+
+## Varianti navigazione per mobile - dark
+
+Si raccomanda la visualizzazione in un viewport ridotto per ottenere un esempio realistico dell’aspetto finale.
+
+### Progress bar
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile-dark-version--progress-bar-dark' />
+</Canvas>
+
+### Pallini
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile-dark-version--pallini-dark' />
+</Canvas>
+
+### Pulsante salva
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile-dark-version--save-button-dark' />
+</Canvas>
+
+### Pulsante conferma
+
+<Canvas>
+  <Story id='componenti-steppers-navigation-variations-for-mobile-dark-version--confirm-button-dark' />
+</Canvas>
+
+## Argomenti componente
+
+### Steppers
+
+<ArgsTable of={StepperHeaderElement} />

@@ -1,0 +1,87 @@
+import { Meta, Canvas, Story } from '@storybook/blocks';
+import { Callout, CalloutText } from '../../src';
+
+<Meta title='Documentazione/Menu di navigazione/Navscroll' />
+
+# Navscroll
+
+## Layout della Navscroll
+
+La composizione delle componenti `Navbar` e `LinkList`, oltre all'utilizzo dell'hook React `useNavScroll`, rendono possibile la creazione di un componente `Navscroll`.
+Nella sua versione mobile, la navigazione viene collassata all'interno di un menù, posizionabile a inizio o fine pagina.
+
+<div className='docs'>
+  <Callout color='info'>
+    <CalloutText>
+      L'hook <code>useNavScroll</code> utilizza l'API native <code>IntersectionObserver</code> supportata da browser
+      moderni. Qualora il browser richiesto non lo supportasse (ad esempio Internet Explorer 11) è possibile utilizzare{' '}
+      <a
+        href='https://github.com/w3c/IntersectionObserver/tree/main/polyfill'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        una libreria polyfill
+      </a>
+      .
+    </CalloutText>
+  </Callout>
+</div>
+
+Per posizionare tale menù in alto, è sufficiente aggiungere al componente `Navbar` la classe `.it-top-navscroll`. Al contrario, per posizionare il menù in basso, è sufficiente aggiungere la classe `.it-bottom-navscroll`.
+
+La Navscroll può avere una linea-separatore a destra o a sinistra dell’elemento, semplicemente aggiungendo al componente `Navbar` la classe `.it-left-side` per aggiungere una linea a sinistra, e `.it-right-side` per aggiungerla a destra.
+
+<div className='docs'>
+  <Callout color='info'>
+    <CalloutText>
+      Ogni link all’interno della Navscroll contiene l’attributo <code>href</code> con il valore dell’id relativo
+      all’elemento correlato in pagina: <code>href="#idElemento"</code>.
+    </CalloutText>
+  </Callout>
+</div>
+
+### Posizionamento a fondo pagina con linea a sinistra
+
+In questo esempio, la linea che limita la barra di navigazione è posizionata a sinistra. Su dispositivi con schermi a dimensione inferiore a 992px, la barra che permette di aprire la navigazione si sposterà in basso nella pagina.
+
+<Canvas>
+  <Story id='componenti-navscroll--posizionamento-a-fondo-pagina-con-linea-a-sinistra' />
+</Canvas>
+
+### Posizionamento in testa alla pagina con linea a destra
+
+In questo esempio, la linea che limita la barra di navigazione è posizionata a destra. Su dispositivi con schermi a dimensione inferiore a 992px, la barra che permette di aprire la navigazione si sposterà in alto nella pagina.
+
+<Canvas>
+  <Story id='componenti-navscroll--posizionamento-in-testa-alla-pagina-con-linea-a-destra' />
+</Canvas>
+
+### Variante scura
+
+La Navscroll può avere due versioni, light e dark.
+
+Lo stile di default è di background bianco con testo di colore primario su desktop e mobile.
+
+#### Temi Navscroll
+
+Per cambiare il tema è sufficiente aggiungere le seguenti classi al componente `Navbar`:
+
+`.theme-dark-mobile`: background scuro, testi e links bianco. (modifica unicamente la versione mobile del Navscroll).
+
+`.theme-dark-desktop`: background scuro, testi e links di colore bianco. (modifica unicamente la versione desktop del Navscroll)
+
+<Canvas>
+  <Story id='componenti-navscroll--versione-scura' />
+</Canvas>
+
+### Menu Inline
+
+La classe distintiva del wrapper esterno è `.inline-menu`.
+
+Gli inline menù possono contenere liste di link di ogni tipo; nell’esempio che segue è stata inserita una link list collassabile.
+
+Per maggiori informazioni, si può fare riferimento alla documentazione dei Link List.
+
+<Canvas>
+  <Story id='componenti-navscroll--menu-inline' />
+</Canvas>

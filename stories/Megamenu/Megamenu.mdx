@@ -1,0 +1,82 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/blocks';
+
+import { MegamenuItem, MegamenuFooter, MegamenuHighlightColumn } from '../../src';
+
+<Meta title='Documentazione/Menu di navigazione/Megamenu' of={MegamenuItem} />
+
+# Megamenu
+
+## Presenta un sottomenu contenente elenchi di links relativo ad una voce della navbar.
+
+Il megamenu all'interno del nav è una variazione del componente [Dropdown](/story/componenti-dropdown-dropdown-menu--menu-con-voci-large).
+Gli elementi megamenu contenuti nelle navbar sono gestiti come elementi di tipo **collapse** nella loro versione mobile.
+
+### Megamenu con immagine e descrizione
+
+Possiamo inserire a sinistra del megamenu un'immagine ed una descrizione riguardante la sezione.
+
+Esattamente come con le _call to action_, inseriremo il contenuto all'interno del componente `MegamenuHighlightColumn`, avendo cura di aggiungere la props `description`
+
+<Canvas>
+  <Story id='componenti-megamenu--con-immagine-e-descrizione' height='450px' />
+</Canvas>
+
+#### Con link "more"
+
+Il megamenu può contenere un link relativo agli elenchi in esso contenuti.
+
+Qualora i link mostrati nel megamenu non siano tutti quelli relativi alla voce primaria (perché troppi numerosi), si può includere l'elemento con classe `.it-external` subito dopo l'elemento `Row` che contiene le liste di link.
+La struttura colonnare dell'elemento con classe `.it-external` dev'essere la stessa di quella contentente le liste di link.
+
+All'interno dell'ultima colonna andremo ad inserire la lista di link contenente il link che porterà ad un'eventuale pagine in cui sarà mostrato tutto il contenuto di sezione.
+Per stilare correttamente il link è sufficiente aggiungere la classe `.it-more` a un elemento con tag `li` che lo contiene.
+
+<Canvas>
+  <Story id='componenti-megamenu--con-link-more' height='450px' />
+</Canvas>
+
+#### Classico con Intestazione e link "more"
+
+Si possono combinare header e link "more".
+
+Nell'esempio di seguito, il link "more" è relativo alla sola colonna in cui è inserito. Per aggiungere un link "more" è sufficiente aggiungere la classe `.it-more` all'elemento con tag `li` al fondo della lista relativa.
+
+<Canvas>
+  <Story id='componenti-megamenu--con-intestazione-e-link-more' height='450px' />
+</Canvas>
+
+### Megamenu con call to action
+
+I megamenu possono contenere delle liste di call to action che possono essere posizionate in fondo o a sinistra del megamenu.
+
+#### Call to action in basso
+
+Per aggiungere un elenco di _call to cation_ è sufficiente inserirle all'interno del componente `MegamenuFooter`.
+
+<Canvas>
+  <Story id='componenti-megamenu--con-call-to-action-in-basso' height='450px' />
+</Canvas>
+
+#### Call to action a destra
+
+Per aggiungere un elenco di _call to action_ posizionato a destra, inseriremo tale lista di link particolare all'interno del componente `MegamenuHighlightColumn`.
+
+<Canvas>
+  <Story id='componenti-megamenu--con-call-to-action-a-destra' height='450px' />
+</Canvas>
+
+## Argomenti componente
+
+### MegamenuItem
+
+<ArgsTable of={MegamenuItem} />
+
+### MegamenuFooter
+
+<ArgsTable of={MegamenuFooter} />
+
+### MegamenuHighlightColumn
+
+È un wrapper che utilizza come elemento principale `Col`. Ne accetta quindi tutti gli attributi.
+
+<ArgsTable of={MegamenuHighlightColumn} />

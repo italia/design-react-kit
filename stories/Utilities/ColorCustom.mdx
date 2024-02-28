@@ -1,0 +1,191 @@
+import { Meta, Canvas, Story } from '@storybook/blocks';
+
+<Meta title='Documentazione/Utilities/Colori Custom' />
+
+# Colori Custom
+
+### Modifica colori di background, testo e bordi con colori custom.
+
+Definisci colori di background, bordi, colore di testo attraverso specifiche classi.
+
+## Colori Primari
+
+I colori primari sono il Blu Italia e il bianco.
+Il Blu Italia è il colore identificativo dell’intera brand identity e rappresenta la radice per creare altri colori della palette primaria.
+
+<div className='primary-color-container'>
+  <div className='square-color primary-bg'>
+    <span className='white-color'>#0066CC</span>
+  </div>
+  <div className='square-color white-bg shadow'>
+    <span>#FFFFFF</span>
+  </div>
+  <div className='clearfix'></div>
+</div>
+
+<Canvas>
+  <Story id='componenti-utility-story-hidden--colori-custom-story-hidden' />
+</Canvas>
+
+**Utilizzo delle classi:**
+
+`.primary-bg` : per background color  
+`.primary-color` : per text color  
+`.primary-border-color` : per border color
+
+## Varianti monocromatiche del colore base
+
+Il colore primario possiede tre tipologie di varianti cromatiche. Per utilizzarle è sufficiente utilizzare la relativa classe
+
+**Utilizzo delle classi:**
+
+`.primary-bg- + variante-colore` : per background color  
+`.primary-color- + variante-colore` : per text color  
+`.primary-border-color- + variante-colore` : per border color
+
+(es. `.primary-bg-a5` per utilizzare come background il colore primario con variante a5 )
+
+<Canvas>
+  <Story id='componenti-utility-story-hidden--varianti-colore-story-hidden' />
+</Canvas>
+
+## Colori secondari
+
+### Analoghi
+
+Ai colori monocromatici può essere affiancato un accent color, definito così perche si tratta di un colore molto luminoso, serve ad attirare l’attenzione.
+
+Devono essere usati in modo parsimonioso.
+
+<div className='primary-color-container'>
+  <div className='square-color analogue-1-bg'>
+    <span className='white-color'>#3126ff</span>
+  </div>
+  <div className='square-color analogue-2-bg'>
+    <span>#0bd9d2</span>
+  </div>
+  <div className='clearfix'></div>
+</div>
+
+**Utilizzo delle classi:**
+
+`.analogue-(+ 1/2 +)-bg` : per background color  
+`.analogue-(+ 1/2 +)-color` : per text color  
+`.analogue-(+ 1/2 +)-border-color` : per border color
+
+<Canvas>
+  <Story id='componenti-utility-story-hidden--colori-custom-secondari-story-hidden' />
+</Canvas>
+
+## Complementari e triadici
+
+<div className='primary-color-container'>
+  <div className='square-color complementary-1-bg'>
+    <span>#f73e5a</span>
+  </div>
+  <div className='square-color complementary-2-bg'>
+    <span>#ff9900</span>
+  </div>
+  <div className='square-color complementary-3-bg'>
+    <span>#00cf86</span>
+  </div>
+  <div className='clearfix'></div>
+</div>
+
+**Utilizzo delle classi:**
+
+`.complementary-(+ 1/2/3 +)-bg` : per background color  
+`.complementary-(+ 1/2/3 +)-color` : per text color  
+`.complementary-(+ 1/2/3 +)-border-color `: per border color
+
+<Canvas>
+  <Story id='componenti-utility-story-hidden--colori-custom-complementari-e-triadici-story-hidden' />
+</Canvas>
+
+## Varianti colori secondari
+
+### Analoghi
+
+I colori analoghi possiedono due tipologie di varianti cromatiche. Per utilizzarle è sufficiente utilizzare la relativa classe
+
+**Utilizzo delle classi:**
+
+`.analogue-(+ 1/2 )-bg- + variante-colore` : per background color
+`.analogue-(+ 1/2 )-color- + variante-colore` : per text color
+`.analogue-(+ 1/2 )-border-color- + variante-colore` : per border color
+
+(es. `.analogue-1-bg-a5` per utilizzare come background il colore analogo 1 con variante a5 )
+
+<Canvas>
+  <Story id='componenti-utility-story-hidden--colori-custom-secondari-analoghi-story-hidden' />
+</Canvas>
+
+### Complementari e triadici
+
+I colori Complementari possiedono due tipologie di varianti cromatiche. Per utilizzarle è sufficiente utilizzare la relativa classe
+
+**Utilizzo delle classi:**
+
+`.complementary-(+ 1/2/3 )-bg- + variante-colore` : per background color
+`.complementary-(+ 1/2/3 )-color- + variante-colore` : per text color
+`.complementary-(+ 1/2/3 )-border-color- + variante-colore` : per border color
+
+(es. `.complementary-1-bg-a5` per utilizzare come background il colore complementare 1 con variante a4 )
+
+<Canvas>
+  <Story id='componenti-utility-story-hidden--colori-secondari-custom-complementari-e-triadici-story-hidden' />
+</Canvas>
+
+## Colori neutrali
+
+<div className='primary-color-container'>
+  <div className='square-color neutral-1-bg'>
+    <span className='white-color'>#17324d</span>
+  </div>
+  <div className='square-color neutral-2-bg'>
+    <span>#e6ecf2</span>
+  </div>
+  <div className='clearfix'></div>
+</div>
+
+**Utilizzo delle classi:**
+
+`.neutral-(+ 1/2 +)-bg `: per background color  
+`.neutral-(+ 1/2 +)-color` : per text color  
+`.neutral-(+ 1/2 +)-border-color `: per border color
+
+<Canvas>
+  <Story id='componenti-utility-story-hidden--colori-neutrali-custom-story-hidden' />
+</Canvas>
+
+## Varianti colori neutrali
+
+I colori neutrali possiedono tre tipologie di varianti cromatiche. Per utilizzarle è sufficiente utilizzare la relativa classe
+
+**Utilizzo delle classi:**
+
+`.neutral-(+ 1/2 +)-bg- + variante-colore` : per background color  
+`.neutral-(+ 1/2 +)-color- + variante-colore` : per text color  
+`.neutral-(+ 1/2 +)-border-color- + variante-colore` : per border color
+
+(es. `.neutral-1-bg-a5` per utilizzare come background il colore neutrale 1 con variante a5 )
+
+<Canvas>
+  <Story id='componenti-utility-story-hidden--variante-colori-neutrali-custom-story-hidden' />
+</Canvas>
+
+## Grigi chiari
+
+I grigi chiari sono di tre tipologie. Per utilizzarle è sufficiente utilizzare la relativa classe
+
+**Utilizzo delle classi:**
+
+`.lightgrey-bg- + variante-colore` : per background color  
+`.lightgrey-color- + variante-colore` : per text color  
+`.lightgrey-border-color- + variante-colore` : per border color
+
+(es. .`lightgrey-1-bg-a4` per utilizzare come background il grigio chiaro 1 con variante a5 )
+
+<Canvas>
+  <Story id='componenti-utility-story-hidden--colori-grigi-chiari-custom-story-hidden' />
+</Canvas>

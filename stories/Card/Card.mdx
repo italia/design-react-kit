@@ -1,0 +1,201 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/blocks';
+import {
+  Card,
+  CardBody,
+  CardTitle,
+  CardText,
+  CardCategory,
+  CardSignature,
+  CardReadMore,
+  CardTag,
+  CardTagsHeader
+} from '../../src';
+
+<Meta title='Documentazione/Componenti/Card' of={Card} />
+
+# Card
+
+## Un contenitore di testi e immagini con molte opzioni e varianti.
+
+Le _card_ sono contenitori flessibili ed estendibili. Costruite con flexbox, offrono un facile posizionamento nella
+griglia e si combinano bene con altri componenti.
+
+Di default le card occupano l'intero spazio orizzontale del loro elemento contenitore.
+
+## Card semplice
+
+Negli esempi seguenti le card sono all’interno di una struttura colonnare di Bootstrap.
+
+Esempio di card semplice con titolo e testo:
+
+<Canvas>
+  <Story id='componenti-cards--simple-card' />
+</Canvas>
+
+### Card semplice su più colonne
+
+<Canvas>
+  <Story id='componenti-cards--simple-card-multiple-columns' />
+</Canvas>
+
+### Card Articolo semplice
+
+Esempio di card contenente categorizzazione e data, firma dell’articolo e link all’articolo.
+Per inserire la categorizzazione e/o la data di pubblicazione, usare il componente `CardCategory` ed inserire al suo
+interno gli elementi come da esempio.
+La categoria nell’esempio seguente è un link, ma potrebbe essere un testo semplice senza link, utilizzando il tag
+`<span/>` invece del tag di default (`<a/>`).
+
+<Canvas>
+  <Story id='componenti-cards--simple-article' />
+</Canvas>
+
+### Card con icona
+
+Esempio di card contenente categorizzazione e icona.
+Per inserire la categorizzazione con relativa icona, passare al componente `CardCategory` la proprietà `iconName` con
+l'identificativo dell'icona da utilizzare.
+
+<Canvas>
+  <Story id='componenti-cards--card-icon' />
+</Canvas>
+
+Un’altro esempio di card contenente intestazione (in questo caso numero di files presenti) e icona: la struttura è
+uguale alla card precedente, per l’intestazione è sufficiente usare l’elemento `.categoryicon-top` ed inserire al suo
+interno gli elementi come da esempio.
+
+Nell’esempio seguente sono stati inseriti un sottotitolo ed un link semplice che segue il paragrafo. Per i sottotitoli
+utilizzare il tag `<h6/>`, per i link semplici utilizzare la classe .simple-link.
+
+<Canvas>
+  <Story id='componenti-cards--card-icon-advanced' />
+</Canvas>
+
+## Card con ombreggiatura
+
+Le card con ombreggiatura sono caratterizzate dagli attributi:
+
+- `spacing`: utilizzata nel componente `Card` serve a distanziare le card nella loro versione mobile.
+- La classe `.card-bg`: utilizzata nel componente `Card` serve a creare background e ombra della card.
+
+<Canvas>
+  <Story id='componenti-cards--card-with-shading' />
+</Canvas>
+
+### Card grande
+
+Le card con ombreggiatura grandi sono caratterizzate dalle classi:
+
+- `.card-bg`: utilizzata nel componente `Card` serve a creare background e ombra della card.
+- `.card-big`: utilizzata nel componente `Card` serve a al dimensionamento dei suoi contenuti.
+
+Nell’esempio seguente è stata inserita un icona grande prima del titolo della card, il div contenente l’icona è di
+classe `.top-icon`.
+
+#### Esempio 1:
+
+<Canvas>
+  <Story id='componenti-cards--big-card' />
+</Canvas>
+
+L’esempio seguente contiene una icona custom (non SVG ma CSS) ed una categorizzazione con icona SVG.
+L’icona custom viene creata dal div `.flag-icon`.
+La categorizzazione dal div con classe `.etichetta`.
+Per creare un bordo di colore primario a chiusura card, potete utilizzare la classe `.border-bottom-card` applicata al
+componente `Card`.
+
+#### Esempio 2:
+
+<Canvas>
+  <Story id='componenti-cards--big-card-example-two' />
+</Canvas>
+
+## Card grande con tag, data e call to action
+
+Per inserire tags e/o data in testa alla card utilizzare l’elemento: `CardTagsHeader`.
+Per inserire il pulsante a fondo card, utilizzare l’elemento: `.it-card-footer`. Nell’esempio seguente sono state
+inserite firma e pulsante nel footer della card.
+Utilizzate la classe `.no-after` applicata al componente `Card` se volete ridurre lo spazio inferiore del componente.
+
+<Canvas>
+  <Story id='componenti-cards--big-card-with-tag' />
+</Canvas>
+
+## Card con immagine
+
+La card con immagine è contraddistinta dalla classe `.card-img` applicata al componente `Card`.
+
+L’elemento immagine è `.img-responsive-wrapper` per proporzioni dell’immagine pari a circa 31:19; se associato alla
+classe `.img-responsive-panoramic` l’ottimo è 62:19. Si consiglia in ogni caso un'immagine orizzontale.
+Qualora le proporzioni non fossero esatte, l’immagine occuperà il massimo dell’altezza o della larghezza disponibile
+escludendo il resto dell’immagine e centrandola nell’elemento.
+
+È anche possibile aggiungere un piccolo box con l’indicazione della data, per card di tipo evento.
+
+<Canvas>
+  <Story id='componenti-cards--cards-with-images' />
+</Canvas>
+
+## Card speciali
+
+La card speciale è contraddistinta dalla classe `.special-card` applicata al componente `Card`.
+Tutta la card è un link al relativo contenuto - notare il `tag="a"`. Le proporzioni ottimali dell’immagine per questa
+card sono 17:21.
+
+<Canvas>
+  <Story id='componenti-cards--special-card' />
+</Canvas>
+
+## Card teaser
+
+Per creare Card con contenuti brevi o di “anteprima” è sufficiente aggiungere l'attributo `teaser` al componente `Card`.
+
+Come per ogni elemento, è possibile aggiungere le classi `.rounded` o `.shadow` per aggiungere bordi, effetti di arrotondamento o ombreggiatura.
+
+<Canvas>
+  <Story id='componenti-cards--simple-card-teaser' />
+</Canvas>
+
+In alcuni casi può essere necessario raccogliere più card teasers all'interno dello stesso componente contenitore. Per questo motivo è disponibile l'attributo `noWrapper` per disabilitare il wrapper automatico del componente al fine di gestirne la composizione in modo più granulare:
+
+<Canvas>
+  <Story id='componenti-cards--card-teaser-multiple' />
+</Canvas>
+
+## Argomenti componente
+
+## Card
+
+<ArgsTable of={Card} />
+
+### CardBody
+
+<ArgsTable of={CardBody} />
+
+### CardTitle
+
+<ArgsTable of={CardTitle} />
+
+### CardText
+
+<ArgsTable of={CardText} />
+
+### CardCategory
+
+<ArgsTable of={CardCategory} />
+
+### CardSignature
+
+<ArgsTable of={CardSignature} />
+
+### CardReadMore
+
+<ArgsTable of={CardReadMore} />
+
+### CardTagsHeader
+
+<ArgsTable of={CardTagsHeader} />
+
+### CardTag
+
+<ArgsTable of={CardTag} />

@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import { theme } from './theme';
+import theme from './theme';
 import { FontLoader } from '../src';
 
 import 'bootstrap-italia/dist/css/bootstrap-italia.min.css';

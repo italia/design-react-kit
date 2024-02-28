@@ -1,0 +1,33 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import { GoBack } from '../../src';
+
+<Meta title='Documentazione/Menu di navigazione/Torna Indietro' />
+
+# Torna indietro
+
+## Esempio link
+
+Per visualizzare il Back to top nella posizione corretta è necessario scrollare questa pagina. L'esempio del codice
+sottostante sarà visibile solo a scroll avvenuto.
+
+<Canvas>
+  <GoBack link>Torna indietro</GoBack>
+</Canvas>
+
+### Pulsanti
+
+Aggiungendo la prop `up` si ottiene l'icona che punta in alto.
+
+<Canvas>
+  <GoBack>Torna indietro</GoBack>
+  <GoBack up>Livello superiore</GoBack>
+</Canvas>
+
+### Pulsanti con sola icona
+
+Non specificando il testo, il pulsante rimane con sola icona.
+
+<Canvas>
+  <GoBack />
+  <GoBack up />
+</Canvas>

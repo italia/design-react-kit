@@ -1,0 +1,141 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/blocks';
+import { Code } from '@storybook/components';
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+  AccordionItem,
+  Callout,
+  CalloutTitle,
+  CalloutText
+} from '../../src';
+
+<Meta title='Documentazione/Componenti/Accordion' of={Accordion} />
+
+# Accordion
+
+## Attiva/disattiva la visibilità di contenuti
+
+Per ottimizzare l’ingombro dei contenuti di una pagina si possono usare degli elementi richiudibili (in gergo definiti _collassabili_ o _collapse_), che possono essere attivati indipendentemente l’uno dall’altro oppure in modo esclusivo con l’attivazione di solo un blocco alla volta (in gergo definiti _fisarmoniche_ o _accordion_).
+
+### Come funziona
+
+Per ottimizzare l’ingombro dei contenuti di una pagina a volte è necessario usare degli elementi richiudibili (in gergo definiti collassabili o collapse), che possono essere attivati indipendentemente l’uno dall’altro oppure in modo esclusivo con l’attivazione di solo un blocco alla volta (in gergo definiti fisarmoniche o accordion).
+
+<Canvas>
+  <Story id='componenti-accordion--esempi' />
+</Canvas>
+
+### Gruppi di elementi richiudibili
+
+Gli elementi richiudibili sono molto spesso mostrati in gruppo, tipicamente usati per approfondire voci o argomenti mostrati nelle singole barre cliccabili.
+
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>
+      <span className='text'>Accessibilità</span>
+    </CalloutTitle>
+    <CalloutText>
+      Nell’esempio di codice ogni elemento <Code>&lt;button&gt;</Code> è inserito all’interno di un elemento &lt;h2&gt;
+      (o altro livello h in funzione del contesto) in quanto, frequentemente, i pulsanti di azione di un accordion sono
+      anche i titoli della sezione che segue.
+    </CalloutText>
+  </Callout>
+</div>
+
+<Canvas>
+  <Story id='componenti-accordion--gruppi-di-elementi-richiudibili' />
+</Canvas>
+
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>
+      <span className='text'>Accessibilità</span>
+    </CalloutTitle>
+    <CalloutText>
+      Assicurati di aggiungere <Code>aria-expanded</Code> all’elemento di controllo. Questo attributo trasmette
+      esplicitamente lo stato corrente dell’elemento comprimibile legato al controllo a screen reader e tecnologie
+      assistive simili. Se l’elemento comprimibile è chiuso in modo predefinito, l’attributo sull’elemento di controllo
+      dovrebbe avere il valore <Code>aria-expanded="false"</Code>. Se imposti l’elemento comprimibile aperto in modo
+      predefinito, sul controllo invece imposta <Code>aria-expanded="true"</Code>. Il componente{' '}
+      <Code>AccordionHeader</Code> applica automaticamente questo attributo, ma qualora venisse usato un componente di
+      controllo esterno - come un `Button` del primo esempio - sarà necessario aggiungerlo manualmente. Se il componente
+      HTML dell’elemento di controllo non è un bottone (ad esempio un <Code>&lt;a&gt;</Code> o <Code>&lt;div&gt;</Code>
+      ), l’attributo <Code>role="button"</Code> dovrebbe essere aggiunto al componente.
+    </CalloutText>
+  </Callout>
+</div>
+
+### Accordion
+
+Per ottenere un gruppo di elementi _mutualmente_ richiudibili (o _accordion_), è sufficiente utilizzare uno stato con singolo id da verificare per ciascun elemento come da esempio:
+
+<Canvas>
+  <Story id='componenti-accordion--accordion' />
+</Canvas>
+
+### Accordion annidati
+
+Più gruppi di collapse possono essere annidati.
+
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>
+      <span className='text'>Accessibilità</span>
+    </CalloutTitle>
+    <CalloutText>
+      Utilizzare questo approccio solo quando strettamente necessario: dal punto di vista dell’accessibilità non si
+      tratta di una soluzione ottimale.
+    </CalloutText>
+  </Callout>
+</div>
+
+<Canvas>
+  <Story id='componenti-accordion--accordion-annidati' />
+</Canvas>
+
+### Sfondo primario
+
+Applicando attributi aggiuntivi al componente `Accordion` è possibile utilizzare il colore primario come sfondo degli header.
+
+#### Header attivi
+
+Aggiungere l'attributo `background="active"` al componente `Accordion` per ottenere header con sfondo di colore primario quando questi sono attivi e il contenuto relativo è visibile.
+
+<Canvas>
+  <Story id='componenti-accordion--header-attivi' />
+</Canvas>
+
+#### Hover degli Header
+
+Aggiungere l'attributo `background="hover"` al componente `Accordion` per ottenere header con sfondo di colore primario all’hover.
+
+<Canvas>
+  <Story id='componenti-accordion--header-hover' />
+</Canvas>
+
+### Icona a sinistra
+
+Aggiungere l'attributo `iconLeft={true}` al 11componente `Accordion` per ottenere una variante in cui l’icona chevron che indica lo stato di apertura è sostituita da segni meno/più allineati a sinistra del titolo dell’header.
+
+<Canvas>
+  <Story id='componenti-accordion--icona-sinistra' />
+</Canvas>
+
+## Argomenti componente
+
+## Accordion
+
+<ArgsTable of={Accordion} />
+
+## Accordion Item
+
+<ArgsTable of={AccordionItem} />
+
+### AccordionHeader
+
+<ArgsTable of={AccordionHeader} />
+
+### AccordionBody
+
+<ArgsTable of={AccordionBody} />

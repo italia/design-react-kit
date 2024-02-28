@@ -1,0 +1,63 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/blocks';
+import { Code } from '@storybook/components';
+import { Breadcrumb, Callout, CalloutTitle, CalloutText } from '../../src';
+
+<Meta title='Documentazione/Menu di navigazione/Breadcrumbs' of={Breadcrumb} />
+
+# Breadcrumbs
+
+## Indica la posizione della pagina corrente all’interno di una gerarchia di navigazione.
+
+Le breadcrumb (in italiano: briciole di pane) mostrano la pagina corrente e danno la possibilità di risalire nella gerarchia delle pagine attraverso dei comodi link ai livelli superiori.
+
+Nelle breadcrumb c’è la possibilità di scegliere il carattere da usare come separatore inserendolo all’interno del tag `<span class="separator"/>`.
+
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>
+      <span className='text'>Accessibilità</span>
+    </CalloutTitle>
+    <CalloutText>
+      Dato che le breadcrumb sono uno strumento di navigazione del sito, è buona idea aggiungere un’etichetta
+      significativa come <Code>aria-label="Percorso di navigazione"</Code> per descrivere il tipo di navigazione fornito
+      nell’elemento <Code>&lt;nav&gt;</Code>. L'attributo <Code>aria-current="page"</Code> viene invece inserito in
+      automatico per l'elemento <Code>BreadcrumbItem</Code> segnato come `active` per indicare che rappresenta la pagina
+      corrente.
+    </CalloutText>
+    <CalloutText>
+      Per maggiori informazioni, guarda le{' '}
+      <a href='https://www.w3.org/TR/wai-aria-practices/#breadcrumb'>
+        linee guida WAI-ARIA per la creazione di breadcrumb
+      </a>
+      .
+    </CalloutText>
+  </Callout>
+</div>
+
+<Canvas>
+  <Story id='componenti-breadcrumbs--esempi' />
+</Canvas>
+
+### Con icona
+
+Per aggiungere un icona all’elemento `BreadcrumbItem` è sufficiente inserire un componente `Icon` corrispondente prima del tag `<a/>` con l’icona che si intende visualizzare.
+
+<Canvas>
+  <Story id='componenti-breadcrumbs--con-icone' />
+</Canvas>
+
+### Su sfondo scuro
+
+Per la versione su sfondo scuro delle breadcrumbs è sufficiente aggiungere l'attributo `dark` al componente `Breadcrumb`.
+
+<Canvas>
+  <Story id='componenti-breadcrumbs--su-sfondo-scuro' />
+</Canvas>
+
+## Argomenti componente
+
+### Breadcrumb
+
+<ArgsTable of={Breadcrumb} />
+
+Per ulteriori informazioni sui breadcrumbs si rimanda alla sezione `breadcrumbs` del sito [Reactstrap (v8)](https://deploy-preview-2356--reactstrap.netlify.app/components/breadcrumbs/).

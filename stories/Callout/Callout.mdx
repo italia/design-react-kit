@@ -1,0 +1,166 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/blocks';
+import { Code } from '@storybook/components';
+import { Callout, CalloutTitle, CalloutText, CalloutMoreFooter } from '../../src';
+
+<Meta title='Documentazione/Componenti/Callout' of={Callout} />
+
+# Callout
+
+## Componente per evidenziare contenuti testuali
+
+I Callout posso essere utilizzati per evidenziare alcune parti del testo che richiedono particolare attenzione. Possono contenere messaggi di errore, avvertimento suggerimenti, ecc.
+
+<div className='docs'>
+  <Callout color='danger'>
+    <CalloutTitle>
+      <span className='text'>Breaking change</span>
+    </CalloutTitle>
+    <CalloutText>
+      Dalla versione 5 del kit, nel callout basico è necessario mettere il titolo in un tag `span` con classe "text".
+      Esempio:{' '}
+      <Code>&lt;CalloutTitle&gt;&lt;span class="text"&gt;Titolo callout&lt;/span&gt;&lt;/CalloutTitle&gt;</Code>.
+    </CalloutText>
+  </Callout>
+</div>
+
+### Esempi
+
+Il Callout basico è costituito da un contenitore `Callout`, un titolo contenuto in un `CalloutTitle` e un testo contenuto in uno o più tag `CalloutText`.
+
+<Canvas>
+  <Story id='componenti-callout--esempio-basico' />
+</Canvas>
+
+Al titolo può essere aggiunta un’icona a scelta fra quelle disponibili, avendo cura di nasconderla agli screen reader con la proprietà `aria-hidden="true"`.
+
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>
+      <span className='text'>Accessibilità</span>
+    </CalloutTitle>
+    <CalloutText>
+      Nel caso l’icona comunicasse visivamente contenuti non disponibili nel testo (ad esempio un allarme o una
+      conferma) questa andrà affiancata da un testo riservato agli screen reader:{' '}
+      <Code>&lt;span class="visually-hidden"&gt;Testo alternativo&lt;/span&gt;</Code>.
+    </CalloutText>
+  </Callout>
+</div>
+
+<Canvas>
+  <Story id='componenti-callout--esempio-con-icona' />
+</Canvas>
+
+Al Callout può essere aggiunto un attributo che determina il colore del bordo e del titolo. I colori disponibili sono elencati di seguito.
+
+### Callout Success
+
+Aggiungere l'attributo `color="success"` per indicare una procedura andata a buon fine.
+
+<Canvas>
+  <Story id='componenti-callout--procedura-avvenuta-con-successo' />
+</Canvas>
+
+### Callout Warning
+
+Aggiungere l'attributo `color="warning"` per indicare una procedura o testo che richiede l’attenzione dell’utente.
+
+<Canvas>
+  <Story id='componenti-callout--procedura-che-richiede-attenzione' />
+</Canvas>
+
+### Callout Danger
+
+Aggiungere l'attributo `color="danger"` per indicare un errore o una procedura pericolosa o non consentita.
+
+<Canvas>
+  <Story id='componenti-callout--procedura-pericolosa-o-non-consentita' />
+</Canvas>
+
+### Callout Important
+
+Aggiungere l'attributo `color="important"` per attirare ulteriormente l’attenzione.
+
+<Canvas>
+  <Story id='componenti-callout--procedura-importante' />
+</Canvas>
+
+### Callout Note
+
+Aggiungere l'attributo `color="note"` per caratterizzare il Callout come una nota.
+
+<Canvas>
+  <Story id='componenti-callout--callout-note' />
+</Canvas>
+
+## Callout Highlights
+
+Aggiungere l'attributo `highlight` si ottiene una differente versione del Callout, con bordo solo sul lato sinistro.
+
+Per aumentare la dimensione di un paragrafo contenuto nel `CalloutText` aggiungere l'attributo `bigText` allo stesso.
+
+<Canvas>
+  <Story id='componenti-callout--callout-highlights' />
+</Canvas>
+
+### Highlights Success
+
+<Canvas>
+  <Story id='componenti-callout--callout-highlights-success' />
+</Canvas>
+
+### Highlights Warning
+
+<Canvas>
+  <Story id='componenti-callout--callout-highlights-warning' />
+</Canvas>
+
+### Highlights Danger
+
+<Canvas>
+  <Story id='componenti-callout--callout-highlights-danger' />
+</Canvas>
+
+### Highlights Important
+
+<Canvas>
+  <Story id='componenti-callout--callout-highlights-important' />
+</Canvas>
+
+### Highlights Note
+
+<Canvas>
+  <Story id='componenti-callout--callout-highlights-note' />
+</Canvas>
+
+## Callout Approfondimento
+
+Il Callout di tipo Approfondimento, ottenibile aggiungendo l'attributo `detailed` al componente `Callout`, ha un aspetto
+radicalmente differente dagli altri stili disponibili ed è indicato per testi più estesi.
+
+Come da esempio, è possibile aggiungere ulteriore testo all’interno di un componente `CalloutMoreFooter`, avendo cura di
+passargli anche un id univoco.
+
+Il bottone di controllo del `CalloutMoreFooter` può essere affiancato da un link per download di PDF o altri tipi di
+documento, con relativa icona.
+
+<Canvas>
+  <Story id='componenti-callout--callout-approfondimento' />
+</Canvas>
+
+## Argomenti componente
+
+### Callout
+
+<ArgsTable of={Callout} />
+
+### CalloutTitle
+
+<ArgsTable of={CalloutTitle} />
+
+### CalloutText
+
+<ArgsTable of={CalloutText} />
+
+### CalloutMoreFooter
+
+<ArgsTable of={CalloutMoreFooter} />

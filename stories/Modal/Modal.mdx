@@ -1,0 +1,179 @@
+import { ArgsTable, Meta, Canvas, Story } from '@storybook/blocks';
+import { Code } from '@storybook/components';
+import { Modal, ModalHeader, ModalBody, ModalFooter, Callout, CalloutTitle, CalloutText } from '../../src';
+
+<Meta title='Documentazione/Componenti/Modale' component={Modal} />
+
+# Modale
+
+Le finestre modali si possono usare per mostrare contenuti in evidenza, notifiche agli utenti, o contenuti personalizzati.
+Cliccando sulla parte che oscura la pagina (il cosiddetto `backdrop` della modale), questa verrà chiusa automativamente.
+
+<div className='docs'>
+  <Callout color='warning'>
+    <CalloutTitle>
+      <span className='text'>Accessibilità</span>
+    </CalloutTitle>
+    <CalloutText>
+      Per tutti i componenti Modale viene automaticamente aggiunto l'attributo <Code>role="dialog"</Code> e{' '}
+      <Code>role="document"</Code> all'elemento contenitore. (
+      <a
+        href='https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_dialog_role'
+        target='_blank'
+        rel='noreferrer'
+      >
+        maggiori info su MDN
+      </a>
+      ).
+    </CalloutText>
+    <CalloutText>
+      L’attributo <Code>labelledby="..."</Code> deve essere assegnato al componente <Code>Modal</Code> ed usare come
+      valore l'ID del componente <Code>ModalHeader</Code>.(
+      <a
+        href='https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute'
+        target='_blank'
+        rel='noreferrer'
+      >
+        maggiori info su MDN
+      </a>)
+    </CalloutText>
+    <CalloutText>
+      Approfondisci l’argomento sul sito delle{' '}
+      <a href='https://www.w3.org/TR/wai-aria-practices/#dialog_modal' target='_blank' rel='noreferrer'>
+        WAI-ARIA Authoring Practices
+      </a>
+      .
+    </CalloutText>
+  </Callout>
+</div>
+
+### Componenti della modale
+
+In basso un esempio di una modale statica, senza componente principale `Modal`. Sono inclusi l’intestazione, il corpo, e il footer della modale come mostrato di seguito.
+
+<Canvas>
+  <Story id='componenti-modal--esempio-base' />
+</Canvas>
+
+È richiesta l’inclusione di intestazioni o elementi con funzione di chiusura della modale stessa.
+
+<Canvas>
+  <Story id='componenti-modal--modale-base' />
+</Canvas>
+
+### Modale con bottone di chiusura
+
+Per chiudere la modale, si può utilizzare un bottone: il componente aggiungerà un testo apposito per gli screen reader.
+Per mostrare l'icona di chiusura, passare una funzione `toggle` al componente `ModalHeader` al fine di gestirne il comportamento quando l'utente cliccherà.
+
+<Canvas>
+  <Story id='componenti-modal--modale-base-con-bottone-chiusura' />
+</Canvas>
+
+### Modale con icona
+
+E’ possibie inserire un icona di alert (o altro tipo) affiancandola all’intestazione.
+
+<Canvas>
+  <Story id='componenti-modal--modale-con-icona' />
+</Canvas>
+
+### Modale con radiobuttons
+
+All’interno della modale è possibile inserire elementi form. Di seguito una modale con un elenco di radio button.
+
+<Canvas>
+  <Story id='componenti-modal--modale-con-form-inputs' />
+</Canvas>
+
+### Modale con Link List
+
+All’interno della modale è possibile inserire delle Liste di link. Per formattare correttamente il contenuto di questa modale, aggiungere l'attributo `withLinkList` al componente `Modal`.
+
+<Canvas>
+  <Story id='componenti-modal--modale-con-link-list' />
+</Canvas>
+
+### Modale Popconfirm
+
+La Modale di tipo Popconfirm può essere utilizzata per brevi messaggi di conferma. Questo particolare design si ottiene applicando l'attributo `popConfirm` al componente `Modal`.
+
+<Canvas>
+  <Story id='componenti-modal--modale-pop-confirm' />
+</Canvas>
+
+### Scroll di contenuti lunghi
+
+Quando le modali diventano troppo lunghe per il viewport o il dispositivo dell’utente, scorrono indipendentemente dalla pagina stessa.
+
+<Canvas>
+  <Story id='componenti-modal--scroll-di-contenuti-lunghi' />
+</Canvas>
+
+#### Scroll di contenuti all’interno della modale
+
+Si può scelgliere di utilizzare uno scroll interno alla madole, mantenendo sempre visibile l’intestazione ed il footer della modale stessa aggiungendo l'attributo `scrollable` al componente `Modal`.
+
+<Canvas>
+  <Story id='componenti-modal--modale-con-contenuto-scrollabile' />
+</Canvas>
+
+### Posizionamento
+
+#### Centratura verticale
+
+Aggiungi l'attributo `centered` al componente `Modal` per centrare verticalmente la modale.
+
+<Canvas>
+  <Story id='componenti-modal--centratura-verticale' />
+</Canvas>
+
+#### Allineamento a sinistra
+
+Per aprire la modale da sinistra a destra aggiungere l'attributo `align` con valore `"left"` al componente `Modal`.
+
+<Canvas>
+  <Story id='componenti-modal--allineamento-a-sinistra' />
+</Canvas>
+
+#### Allineamento a destra
+
+Per aprire la modale da sinistra a destra aggiungere l'attributo `align` con valore `"left"` al componente `Modal`.
+
+<Canvas>
+  <Story id='componenti-modal--allineamento-a-destra' />
+</Canvas>
+
+### Rimuovere l’animazione
+
+Per avere modali che appaiono semplicemente senza dissolvenza, imposta l'attributo `fade` a `false` nel componente `Modal`.
+
+<Canvas>
+  <Story id='componenti-modal--rimuovere-lanimazione' />
+</Canvas>
+
+### Dimensioni opzionali
+
+Le modali hanno due dimensioni opzionali, disponibili tramite l'attributo `size` del componente `Modal`. Queste dimensioni entrano in gioco in determinati breakpoint per evitare barre di scorrimento orizzontali su finestre più strette.
+
+<Canvas>
+  <Story id='componenti-modal--dimensioni' />
+</Canvas>
+
+## Argomenti componente
+
+### Modal
+
+<ArgsTable of={Modal} />
+
+### ModalHeader
+
+<ArgsTable of={ModalHeader} />
+
+### ModalBody
+
+<ArgsTable of={ModalBody} />
+
+### ModalFooter
+
+<ArgsTable of={ModalFooter} />
