@@ -3,8 +3,9 @@
     [
       "@babel/preset-env",
       {
-        "useBuiltIns": "entry",
-        "corejs": "3.22"
+        "targets": {
+          "chrome": "100"
+        }
       }
     ],
     "@babel/preset-typescript",
