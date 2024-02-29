@@ -100,9 +100,6 @@
     "@storybook/components": "^7.6.17",
     "@storybook/react": "^7.6.17",
     "@storybook/react-webpack5": "^7.6.17",
-    "@svgr/cli": "^6.4.0",
-    "@svgr/rollup": "^6.4.0",
-    "@svgr/webpack": "^6.4.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.2.6",
     "@types/is-number": "^7.0.3",
@@ -143,6 +140,7 @@
   },
   "dependencies": {
     "classnames": "^2.3.1",
+    "eslint-plugin-mdx": "^3.1.5",
     "is-number": "^7.0.0",
     "react-select": "^4.3.0",
     "react-stickup": "^1.12.1",
