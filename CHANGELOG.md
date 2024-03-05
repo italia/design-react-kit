@@ -1,3 +1,12 @@
+# [5.0.0-12](https://github.com/italia/design-react-kit/compare/v5.0.0-11...v5.0.0-12) (2024-03-05)
+
+
+### Bug Fixes
+
+* declaration file ([a93b3fd](https://github.com/italia/design-react-kit/commit/a93b3fd8ac665ff1614e4362f155bf44668adb11))
+
+
+
 # [5.0.0-11](https://github.com/italia/design-react-kit/compare/v5.0.0-10...v5.0.0-11) (2024-02-26)
 
 
