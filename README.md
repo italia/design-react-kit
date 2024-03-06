@@ -218,3 +218,24 @@ Il kit segue le indicazioni riportate nelle Linee Guida di Design per i servizi 
 ## TypeScript typings
 
 La libreria è stata portata a Typescript ed i tipi sono esportati con essa.
+
+## Contributor della libreria
+
+Un grazie speciale a chi ha reso possibile lo sviluppo di questa nuova versione!
+
+[![Sabatino Galasso](https://github.com/sabato-galasso.png?size=100)](https://github.com/sabato-galasso) | [![Marco Liberati](https://github.com/dej611.png?size=100)](https://github.com/dej611) | [![Matteo Avesani](https://github.com/Virtute90.png?size=100)](https://github.com/Virtute90) | [![Federico Turbino](https://github.com/federico-ntr.png?size=100)](https://github.com/federico-ntr) |
+--- | --- | --- | --- |
+Sabatino Galasso | Marco Liberati | Matteo Avesani | Federico Turbino |
+
+
+e al contributo di [OpenCity Labs](https://opencitylabs.it)
+
+<a href="https://opencitylabs.it"><img src="https://opencitylabs.it/wp-content/themes/opencity/assets/img/opencitylabs.png" alt="OpenCity Labs" width="300"></a>
+
+---
+
+Tutti i contributor (*made with [contributors-img](https://contrib.rocks)*)
+
+<a href = "https://github.com/italia/design-react-kit/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=italia/design-react-kit"/>
+</a>
