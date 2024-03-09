@@ -13761,11 +13761,6 @@ react-transition-group@^4.3.0, react-transition-group@^4.4.2, react-transition-g
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react-use-navscroll@0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/react-use-navscroll/-/react-use-navscroll-0.2.0.tgz#093037a32b949b70936bf954d6e6024cf742c338"
-  integrity sha512-8v0ErS+ibrtBlz7oPYyXJmYST4ghguM3uW95h3ATv58zEdcLBQVfrBG3ZKyeQuJmEYXMsd3W/kB/C3lFLreFcA==
-
 react-viewport-utils@^1.12.1:
   version "1.12.1"
   resolved "https://registry.yarnpkg.com/react-viewport-utils/-/react-viewport-utils-1.12.1.tgz#7e2cf3f4818f96132d9327c1142a67704cbc5f69"
