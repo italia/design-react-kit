@@ -207,3 +207,23 @@ The design kit follows the Guidelines for Public Services Design, within the Sec
 ## TypeScript typing definitions
 
 The library has been rewritten in Typescript and types are exported in the bundle.
+
+## Main contributors
+
+A special thank you to those who made the development of this new version possible!
+
+[![Sabatino Galasso](https://github.com/sabato-galasso.png?size=100)](https://github.com/sabato-galasso) | [![Marco Liberati](https://github.com/dej611.png?size=100)](https://github.com/dej611) | [![Matteo Avesani](https://github.com/Virtute90.png?size=100)](https://github.com/Virtute90) | [![Federico Turbino](https://github.com/federico-ntr.png?size=100)](https://github.com/federico-ntr) |
+--- | --- | --- | --- |
+Sabatino Galasso | Marco Liberati | Matteo Avesani | Federico Turbino |
+
+and thanks to [OpenCity Labs](https://opencitylabs.it) team
+
+<a href="https://opencitylabs.it"><img src="https://opencitylabs.it/wp-content/themes/opencity/assets/img/opencitylabs.png" alt="OpenCity Labs" width="300"></a>
+
+---
+
+All contributors (*made with [contributors-img](https://contrib.rocks)*)
+
+<a href = "https://github.com/italia/design-react-kit/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=italia/design-react-kit"/>
+</a>
