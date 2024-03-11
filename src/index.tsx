@@ -47,8 +47,6 @@ export {
   Util
 } from 'reactstrap';
 
-export { useNavScroll } from 'react-use-navscroll';
-
 export { Accordion } from './Accordion/Accordion';
 export { AccordionBody } from './Accordion/AccordionBody';
 export { AccordionHeader } from './Accordion/AccordionHeader';
@@ -117,6 +115,7 @@ export { ModalBody } from './Modal/ModalBody';
 export { ModalFooter } from './Modal/ModalFooter';
 export { ModalHeader } from './Modal/ModalHeader';
 export { Nav } from './Nav/Nav';
+export { useNavScroll } from './NavScroll';
 export { NotificationManager, createNotification, notify } from './Notification';
 export { Pager } from './Pager/Pager';
 export { Progress } from './Progress/Progress';
@@ -294,3 +293,4 @@ export type {
   UncontrolledCollapseProps,
   UncontrolledTooltipProps
 } from 'reactstrap';
+export type { ChangesType, RegisterOptions, useNavScrollArgs, useNavScrollResult } from './NavScroll';
