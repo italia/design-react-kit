@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Accordion, AccordionHeader, AccordionItem, AccordionBody, Button, Card, CardBody } from '../../src';
+import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from '../../src';
 
 export default {
   title: 'Componenti/Accordion'

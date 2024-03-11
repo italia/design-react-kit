@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, Input, Col, Toggle, Label, Select, Row } from '../../src';
+import { Button, Col, Input, Label, Row, Select, Toggle } from '../../src';
 
 export default {
   title: 'Componenti/Form/Form Layout'
@@ -31,7 +31,7 @@ export const DimensionamentoColonneComplesso = () => {
     },
     { value: 'Value 5', label: 'Opzione 5' }
   ];
-  const handleChange = (newVal: string) => {};
+  const handleChange = () => {};
   return (
     <div>
       <Row>
@@ -57,7 +57,7 @@ export const DimensionamentoColonneComplesso = () => {
         <Input type='text' label='Comune' id='inputCity' wrapperClassName='col col-md-6' />
         <Input type='text' label='CAP' id='inputCAP' wrapperClassName='col col-md-2' />
         <Col md='4'>
-          <Select id='selectExampleClassic' label='Provincia' handleChange={handleChange}>
+          <Select id='selectExampleClassic' label='Provincia' onChange={handleChange}>
             {options.map((opt, i) => (
               <option label={opt.label} key={i}>
                 {opt.value}
@@ -131,7 +131,7 @@ export const FormDisabilitato = () => {
     },
     { value: 'Value 5', label: 'Opzione 5' }
   ];
-  const handleChange = (newVal: string) => {};
+  const handleChange = () => {};
   return (
     <div>
       <fieldset disabled aria-label='Form disabilitato'>
@@ -140,7 +140,7 @@ export const FormDisabilitato = () => {
           <Input type='text' label='Input' id='disabledTextInput' placeholder='input disabilitato' disabled />
         </div>
         <div className='form-group'>
-          <Select id='selectExampleClassic' label='Field Label' handleChange={handleChange}>
+          <Select id='selectExampleClassic' label='Field Label' onChange={handleChange}>
             {options.map((opt, i) => (
               <option label={opt.label} key={i}>
                 {opt.value}
