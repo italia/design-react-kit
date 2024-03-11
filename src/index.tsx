@@ -244,7 +244,6 @@ export type { ToggleProps } from './Toggle/Toggle';
 export type { ToolbarProps } from './Toolbar/Toolbar';
 export type { ToolbarItemBadge, ToolbarItemProps } from './Toolbar/ToolbarItem';
 
-export type { ChangesType, RegisterOptions, useNavScrollArgs, useNavScrollResult } from 'react-use-navscroll';
 export type {
   BreadcrumbItemProps,
   ButtonDropdownProps,
