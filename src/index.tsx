@@ -176,9 +176,9 @@ export type { ChipProps } from './Chips/Chip';
 export type { ChipLabelProps } from './Chips/ChipLabel';
 export type { DimmerProps } from './Dimmer/Dimmer';
 export type { DimmerButtonsProps } from './Dimmer/DimmerButtons';
-export { DropdownProps } from './Dropdown/Dropdown';
-export { DropdownMenuProps } from './Dropdown/DropdownMenu';
-export { DropdownToggleProps } from './Dropdown/DropdownToggle';
+export type { DropdownProps } from './Dropdown/Dropdown';
+export type { DropdownMenuProps } from './Dropdown/DropdownMenu';
+export type { DropdownToggleProps } from './Dropdown/DropdownToggle';
 export type { FontLoaderProps } from './FontLoader/FontLoader';
 export type { ForwardProps } from './Forward/Forward';
 export type {
