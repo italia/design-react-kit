@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-    <a href="https://www.npmjs.com/package/design-react-kit"><img src="https://img.shields.io/npm/v/design-react-kit/unstable.svg" alt="NPM"></a>
+    <a href="https://www.npmjs.com/package/design-react-kit"><img src="https://img.shields.io/npm/v/design-react-kit.svg" alt="NPM"></a>
     <a href="https://github.com/italia/design-react-kit/actions"><img src="https://github.com/italia/design-react-kit/actions/workflows/ci.yml/badge.svg" alt="Build"></a>
     <a href="https://codecov.io/gh/italia/design-react-kit"><img src="https://codecov.io/gh/italia/design-react-kit/branch/main/graph/badge.svg?token=0Ud6YSFi0r" alt="codecov"></a>
     <a href="https://github.com/italia/design-react-kit/blob/main/LICENSE"><img src="https://img.shields.io/github/license/italia/design-react-kit.svg" alt="License"></a>
@@ -31,8 +31,6 @@
 </p>
 
 _Read this in other languages: [English](README.EN.md)._
-
-_⚠️ Attenzione: questo codice è ancora in fase di sviluppo e non è pronto per essere utilizzato! Stiamo lavorando all'aggiornamento per portare il kit alla versione 5.0.0, commenti e contributi di tutta la community sono più che benvenuti!_
 
 _⚠️ Attenzione: questo kit è stato progettato per funzionare con la versione 2.x di Bootstrap Italia. Il kit per la versione 1.x di Bootstrap Italia è stato deprecato e si trova sul branch [4.x](https://github.com/italia/design-react-kit/tree/4.x)._
 
@@ -58,7 +56,7 @@ Per utilizzare Design React come dipendenza in un'app è possibile installarla d
 ```sh
 create-react-app nome-app
 cd nome-app
-yarn add design-react-kit@unstable --save
+yarn add design-react-kit --save
 ```
 
 ## Aggiungere bootstrap-italia ed i font

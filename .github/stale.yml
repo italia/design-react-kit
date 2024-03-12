@@ -12,6 +12,6 @@ staleLabel: wontfix
 markComment: >
   This issue has been automatically marked as stale because it has not had
   recent activity. It will be closed if no further activity occurs. Thank you
-  for your contributions. Please read https://github.com/italia/design-react-kit/discussions/886.
+  for your contributions.
 # Comment to post when closing a stale issue. Set to `false` to disable
 closeComment: false
