@@ -210,9 +210,9 @@ The library has been rewritten in Typescript and types are exported in the bundl
 
 A special thank you to those who made the development of this new version possible!
 
-[![Sabatino Galasso](https://github.com/sabato-galasso.png?size=100)](https://github.com/sabato-galasso) | [![Marco Liberati](https://github.com/dej611.png?size=100)](https://github.com/dej611) | [![Matteo Avesani](https://github.com/Virtute90.png?size=100)](https://github.com/Virtute90) | [![Federico Turbino](https://github.com/federico-ntr.png?size=100)](https://github.com/federico-ntr) |
---- | --- | --- | --- |
-Sabatino Galasso | Marco Liberati | Matteo Avesani | Federico Turbino |
+| [![Sabatino Galasso](https://github.com/sabato-galasso.png?size=100)](https://github.com/sabato-galasso) | [![Marco Liberati](https://github.com/dej611.png?size=100)](https://github.com/dej611) | [![Matteo Avesani](https://github.com/Virtute90.png?size=100)](https://github.com/Virtute90) | [![Federico Turbino](https://github.com/federico-ntr.png?size=100)](https://github.com/federico-ntr) |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Sabatino Galasso                                                                                         | Marco Liberati                                                                         | Matteo Avesani                                                                               | Federico Turbino                                                                                     |
 
 and thanks to [OpenCity Labs](https://opencitylabs.it) team
 
@@ -220,7 +220,7 @@ and thanks to [OpenCity Labs](https://opencitylabs.it) team
 
 ---
 
-All contributors (*made with [contributors-img](https://contrib.rocks)*)
+All contributors (_made with [contributors-img](https://contrib.rocks)_)
 
 <a href = "https://github.com/italia/design-react-kit/graphs/contributors">
   <img src = "https://contrib.rocks/image?repo=italia/design-react-kit"/>
