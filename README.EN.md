@@ -208,7 +208,7 @@ The library has been rewritten in Typescript and types are exported in the bundl
 
 ## Main contributors
 
-A special thank you to those who made the development of this new version possible!
+A special thank you to those who made the development of this library possible!
 
 | [![Sabatino Galasso](https://github.com/sabato-galasso.png?size=100)](https://github.com/sabato-galasso) | [![Marco Liberati](https://github.com/dej611.png?size=100)](https://github.com/dej611) | [![Matteo Avesani](https://github.com/Virtute90.png?size=100)](https://github.com/Virtute90) | [![Federico Turbino](https://github.com/federico-ntr.png?size=100)](https://github.com/federico-ntr) |
 | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |

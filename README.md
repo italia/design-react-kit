@@ -219,7 +219,7 @@ La libreria è stata portata a Typescript ed i tipi sono esportati con essa.
 
 ## Contributor della libreria
 
-Un grazie speciale a chi ha reso possibile lo sviluppo di questa nuova versione!
+Un grazie speciale a chi ha reso possibile lo sviluppo di questa libreria!
 
 | [![Sabatino Galasso](https://github.com/sabato-galasso.png?size=100)](https://github.com/sabato-galasso) | [![Marco Liberati](https://github.com/dej611.png?size=100)](https://github.com/dej611) | [![Matteo Avesani](https://github.com/Virtute90.png?size=100)](https://github.com/Virtute90) | [![Federico Turbino](https://github.com/federico-ntr.png?size=100)](https://github.com/federico-ntr) |
 | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
