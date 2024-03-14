@@ -21,7 +21,7 @@ jobs:
       - run: yarn
       - run: yarn build
       - name: Publish package to NPM
-        run: yarn publish --tag unstable
+        run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: yarn add extract-changelog-release

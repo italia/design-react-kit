@@ -14,14 +14,12 @@ const order = {
 
 const prioritySections = [
   'welcome-page',
+  'domande-frequenti-page',
   'organizzare',
   'menu',
   'componenti',
   'form',
-  'utilities',
-  'domande-frequenti-page',
-  'changelog-page',
-  'migrazione-da-v1-page'
+  'utilities'
 ];
 const priorityPages = ['introduzione'];
 

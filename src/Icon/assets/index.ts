@@ -151,6 +151,8 @@ const iconList: Record<string, boolean> = {
   'it-tiktok-square': true,
   'it-tiktok': true,
   'it-tool': true,
+  'it-threads-square': true,
+  'it-threads': true,
   'it-twitter-square': true,
   'it-twitter': true,
   'it-unlocked': true,
@@ -627,6 +629,12 @@ export const loadIcon = (name: IconName) => {
     }
     case 'it-tool': {
       return import('./ItTool');
+    }
+    case 'it-threads-square': {
+      return import('./ItThreadsSquare');
+    }
+    case 'it-threads': {
+      return import('./ItThreads');
     }
     case 'it-twitter-square': {
       return import('./ItTwitterSquare');

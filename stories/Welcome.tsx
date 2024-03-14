@@ -30,11 +30,7 @@ const Welcome = () => (
           . Per iniziare, è sufficiente installare il pacchetto <code>npm</code> attraverso il seguente comando:
         </p>
         <p className='text-center'>
-          <code>npm install design-react-kit@unstable --save</code>
-        </p>
-        <p className='fw-bold small text-center'>
-          Attenzione: la libreria è ancora in fase di sviluppo e non contiene tutti i componenti disponibili nello UI
-          Kit o in Bootstrap Italia.
+          <code>npm install design-react-kit --save</code>
         </p>
         <p className='small'>
           Il progetto è distribuito con licenza BSD-3 (consultabile nel file{' '}
