@@ -1,3 +1,18 @@
+# [5.0.0](https://github.com/italia/design-react-kit/compare/v5.0.0-12...v5.0.0) (2024-03-14)
+
+
+### Bug Fixes
+
+* dropdown import type warning ([9e56cc0](https://github.com/italia/design-react-kit/commit/9e56cc03e10c431f77798a575fde6f374ecac8dc))
+
+
+### Features
+
+* integrate nav scroll ([5b773be](https://github.com/italia/design-react-kit/commit/5b773be51c5ba056e7912e78bf7288c356fd1e3d))
+* stable release ([b365007](https://github.com/italia/design-react-kit/commit/b3650072f964072b4fe9d67ebee9b60d85b6bbde))
+
+
+
 # [5.0.0-12](https://github.com/italia/design-react-kit/compare/v5.0.0-11...v5.0.0-12) (2024-03-05)
 
 
