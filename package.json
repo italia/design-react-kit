@@ -111,7 +111,7 @@
     "@types/is-number": "^7.0.3",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
-    "@types/react-select": "^4.0.15",
+    "@types/react-select": "^5.0.1",
     "@types/react-transition-group": "^4.4.10",
     "autoprefixer": "^9.8.8",
     "babel-jest": "^26.6.3",
@@ -144,7 +144,7 @@
   "dependencies": {
     "classnames": "^2.3.1",
     "is-number": "^7.0.0",
-    "react-select": "^4.3.0",
+    "react-select": "^5.8.0",
     "react-stickup": "^1.12.1",
     "react-toastify": "^7.0.4",
     "react-transition-group": "^4.4.5",
