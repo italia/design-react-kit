@@ -30,7 +30,7 @@
   </a>
 </p>
 
-_Read this in other languages: [Italiano](README.md)._
+_Read this in other languages: [Italiano 🇮🇹](README.md)._
 
 _⚠️ Warning: This kit was designed to work with Bootstrap Italia version 2.x. The kit for version 1.x of Bootstrap Italia has been deprecated and is located on the [4.x] branch (https://github.com/italia/design-react-kit/tree/4.x)._
 
