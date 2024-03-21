@@ -1,7 +1,7 @@
-import React, { FC, ReactNode, ElementType } from 'react';
 import classNames from 'classnames';
+import React, { ElementType, FC, HTMLAttributes, ReactNode } from 'react';
 
-export interface AccordionHeaderProps {
+export interface AccordionHeaderProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente AccordionHeader */
