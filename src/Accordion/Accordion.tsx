@@ -1,7 +1,7 @@
-import React, { ElementType, FC } from 'react';
+import React, { ElementType, FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-export interface AccordionProps {
+export interface AccordionProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente Badge */
