@@ -1,3 +1,12 @@
+## [5.0.1](https://github.com/italia/design-react-kit/compare/v5.0.0...v5.0.1) (2024-03-22)
+
+
+### Bug Fixes
+
+* accordion types error ([4e854e7](https://github.com/italia/design-react-kit/commit/4e854e7c792ad4b11adaf08b403a75b66609d672))
+
+
+
 # [5.0.0](https://github.com/italia/design-react-kit/compare/v5.0.0-12...v5.0.0) (2024-03-14)
 
 
