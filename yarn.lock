@@ -5991,10 +5991,10 @@ boolbase@^1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
 
-bootstrap-italia@2.8.3:
-  version "2.8.3"
-  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.8.3.tgz#530c95d7e1ce065ce022be364ef192ea475b3c5e"
-  integrity sha512-x/iO5T9fEwdq1TXrC3e1RaBJYgR+FSLJa2abwVXHrB6ci/J2rvcHfATWKmEcyvjYEcdnAmnggoyHH4bt4mOxIQ==
+bootstrap-italia@2.8.4:
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.8.4.tgz#b2d6640e5ef03a9cac8fef8064fa9ece33413a1f"
+  integrity sha512-z5eyFpWxFeoYKWKMcpXwk633m4HL8JzIuSi8ctlIHz7yK3Jo3xwpRXwhrptqXjAsniz2WP40bZFihoXEDK9hLg==
   dependencies:
     "@popperjs/core" "^2.11.2"
     "@splidejs/splide" "^3.6.12"
