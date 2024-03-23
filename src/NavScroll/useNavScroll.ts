@@ -1,3 +1,9 @@
+/*
+ * This work derives from the React Use Navscroll library
+ * Released under the MIT license by Marco Liberati
+ * Code: https://github.com/dej611/react-use-navscroll
+ */
+
 import { createRef, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { debounce } from './debounce';
 import type { TrackedElement, useNavScrollArgs, useNavScrollResult } from './types';
