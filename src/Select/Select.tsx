@@ -28,7 +28,7 @@ export const Select = ({ id, disabled = false, label, children, onChange }: Sele
 
   const inputProps = {
     disabled: disabled,
-    handleChange: handleChange
+    onChange: handleChange
   };
 
   return (
