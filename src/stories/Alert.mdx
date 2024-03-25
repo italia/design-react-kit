@@ -1,0 +1,70 @@
+import {  Meta, Canvas } from '@storybook/blocks';
+import { Code } from '@storybook/components';
+import { Callout, CalloutTitle, CalloutText } from '../../src';
+import * as AlertS from './Alert.stories';
+
+<Meta
+  title='Documentazione/Componenti/Alert'
+  of={AlertS}
+  argTypes={{
+    color: {
+      control: {
+        type: 'select',
+        options: ['info', 'success', 'danger', 'warning']
+      }
+    }
+  }}
+/>
+
+# Alert
+
+Gli avvisi sono disponibili in quattro tipologie diverse e per qualsiasi lunghezza di testo. Inoltre possono prevedere un pulsante di chiusura
+
+<Canvas of={AlertS._Esempi}>
+</Canvas>
+
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>
+      <span className='text'>Trasmettere significato alle tecnologie assistive</span>
+    </CalloutTitle>
+    <CalloutText>
+      L’uso del colore per aggiungere un significato fornisce solo un’indicazione visiva, che non sarà trasmesso agli
+      utenti di tecnologie assistive – come gli screen reader. Assicurati che le informazioni denotate dal colore siano
+      rese disponibili anche dal contenuto stesso (es.: il testo visibile), o siano incluse attraverso mezzi
+      alternativi, come testo aggiuntivo nascosto con la classe
+      <Code>.visually-hidden</Code>.
+    </CalloutText>
+  </Callout>
+</div>
+
+## Link evidenziato
+
+Usa la classe <Code>.alert-link</Code> per dare risalto ad un link all'interno dell'alert.
+
+<Canvas of={AlertS._LinkEvidenziato}>
+</Canvas>
+
+## Contenuto aggiuntivo
+
+I messaggi di avviso possono avere del contenuto HTML aggiuntivo come degli heading, paragrafi e divisori.
+
+<Canvas of={AlertS._ContenutoAggiuntivo}>
+</Canvas>
+
+## Esempio Interattivo
+
+<Canvas of={AlertS._EsempiInterattivi}>
+</Canvas>
+
+## Chiusura
+
+È possibile eliminare qualsiasi avviso mediante un pulsante di chiusura:
+
+- Definisci una funzione che chiuda l'alert controllando la sua prop <Code>isOpen</Code>
+- Passa la funzione alla prop <Code>toggle</Code> del componente
+
+Clicca sul pulsante di chiusura per vedere la funzionalità di rimozione alert in azione:
+
+<Canvas of={AlertS.ChiusuraControllata}>
+</Canvas>
