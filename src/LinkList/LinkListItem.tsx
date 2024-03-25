@@ -44,7 +44,6 @@ export const LinkListItem: FC<LinkListItemProps> & {
   bold,
   large,
   href,
-  to,
   tag = 'a',
   wrapperClassName,
   testId,
