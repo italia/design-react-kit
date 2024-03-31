@@ -13,3 +13,5 @@ coverage
 *.log
 
 *storybook.log
+
+*.snap

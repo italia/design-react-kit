@@ -1,9 +1,8 @@
 import { icons, preloadIcons } from '../src/index';
 
-import './__mocks__/IntersectionObserverMock.ts';
+//import './__mocks__/IntersectionObserverMock.ts';
 
 import * as glob from 'glob';
-import path from 'path';
 
 // Replace your-framework with one of the supported Storybook frameworks (react, vue3)
 import type { Meta, StoryFn } from '@storybook/react';
@@ -15,6 +14,7 @@ import { render } from '@testing-library/react';
 
 // Adjust the import based on the supported framework or Storybook's testing libraries (e.g., react, testing-vue3)
 import { composeStories } from '@storybook/react';
+import path from 'path';
 
 // Preload all the icons
 beforeAll(() => preloadIcons(icons));
@@ -36,7 +36,7 @@ const compose = (entry: StoryFile): ReturnType<typeof composeStories<StoryFile>>
 function getAllStoryFiles() {
   // Place the glob you want to match your stories files
   const storyFiles = glob.sync(
-    path.join(__dirname, 'stories/**/*.{stories,story}.{js,jsx,mjs,ts,tsx}'),
+    path.join(__dirname, '..', 'stories/**/*.{stories,story}.{js,jsx,mjs,ts,tsx}')
   );
 
   return storyFiles.map((filePath) => {
