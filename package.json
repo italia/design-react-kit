@@ -97,7 +97,7 @@
     "@storybook/react-vite": "^8.0.5",
     "@storybook/test": "^8.0.5",
     "@storybook/test-runner": "^0.17.0",
-    "@svgr/rollup": "^8.1.0",
+    "@svgr/rollup": "^6.4.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.2.6",
     "@testing-library/react-hooks": "^8.0.1",
