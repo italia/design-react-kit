@@ -1,0 +1,475 @@
+import { ArgTypes, Canvas, Meta, Story } from '@storybook/blocks';
+import { MegamenuFooter, MegamenuHighlightColumn, MegamenuItem } from '../../src';
+import * as MegamenuStories from '../Components/Megamenu.stories';
+
+<Meta of={MegamenuStories} />
+
+# Megamenu
+
+## Presenta un sottomenu contenente elenchi di links relativo ad una voce della navbar.
+
+Il megamenu all'interno del nav è una variazione del componente [Dropdown](?path=/docs/documentazione-componenti-dropdown--documentazione).
+Gli elementi megamenu contenuti nelle navbar sono gestiti come elementi di tipo **collapse** nella loro versione mobile.
+
+### Megamenu con immagine e descrizione
+
+Possiamo inserire a sinistra del megamenu un'immagine ed una descrizione riguardante la sezione.
+
+Esattamente come con le _call to action_, inseriremo il contenuto all'interno del componente `MegamenuHighlightColumn`, avendo cura di aggiungere la props `description`
+
+<Canvas of={MegamenuStories.ConImmagineEDescrizione} />
+
+#### Codice
+
+```tsx
+const [openNav, setOpenNav] = useState(false);
+const toggle = () => {
+  setOpenNav(!openNav);
+};
+return (
+  <Navbar expand='lg' className='has-megamenu'>
+    <NavbarBrand />
+    <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
+      <Icon icon='it-list' size='sm' />
+    </NavbarToggler>
+    <Collapse isOpen={openNav} navbar header megamenu>
+      <Nav className='mt-0' navbar>
+        <MegamenuItem itemName='Megamenu con Immagine e Descrizione'>
+          <Row>
+            <MegamenuHighlightColumn xs='12' lg='4' description>
+              <div className='ratio ratio-21x9 lightgrey-bg-a1 mb-4 rounded'>
+                <figure className='figure'>
+                  <img
+                    src='https://via.placeholder.com/560x240/ebebeb/808080/?text=Immagine'
+                    className='figure-img img-fluid rounded'
+                    alt='Segnaposto'
+                  />
+                </figure>
+              </div>
+              <p>Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </MegamenuHighlightColumn>
+            <Col xs='12' lg='8'>
+              <div className='it-heading-link-wrapper'>
+                <a className='it-heading-link' href='#'>
+                  <Icon className='icon icon-sm me-2 mb-1' icon='it-arrow-right-triangle'></Icon>
+                  <span>Esplora la sezione megamenu</span>
+                </a>
+              </div>
+              <Row>
+                <Col xs='12' lg='6'>
+                  <LinkList>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 1</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 2</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 3</span>
+                    </LinkListItem>
+                  </LinkList>
+                </Col>
+                <Col xs='12' lg='6'>
+                  <LinkList>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 4</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 5</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 6</span>
+                    </LinkListItem>
+                  </LinkList>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </MegamenuItem>
+      </Nav>
+    </Collapse>
+  </Navbar>
+);
+```
+
+#### Con link "more"
+
+Il megamenu può contenere un link relativo agli elenchi in esso contenuti.
+
+Qualora i link mostrati nel megamenu non siano tutti quelli relativi alla voce primaria (perché troppi numerosi), si può includere l'elemento con classe `.it-external` subito dopo l'elemento `Row` che contiene le liste di link.
+La struttura colonnare dell'elemento con classe `.it-external` dev'essere la stessa di quella contentente le liste di link.
+
+All'interno dell'ultima colonna andremo ad inserire la lista di link contenente il link che porterà ad un'eventuale pagine in cui sarà mostrato tutto il contenuto di sezione.
+Per stilare correttamente il link è sufficiente aggiungere la classe `.it-more` a un elemento con tag `li` che lo contiene.
+
+<Canvas of={MegamenuStories.ConLinkMore} />
+
+#### Codice
+
+```tsx
+const [openNav, setOpenNav] = useState(false);
+const toggle = () => {
+  setOpenNav(!openNav);
+};
+return (
+  <Navbar expand='lg' className='has-megamenu'>
+    <NavbarBrand />
+    <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
+      <Icon icon='it-list' size='sm' />
+    </NavbarToggler>
+    <Collapse isOpen={openNav} navbar header megamenu>
+      <Nav className='mt-0' navbar>
+        <MegamenuItem itemName='Megamenu con link "Esplora tutti"'>
+          <Row>
+            <Col xs='12' lg='4'>
+              <LinkList>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 1</span>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 2</span>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 3</span>
+                </LinkListItem>
+              </LinkList>
+            </Col>
+            <Col xs='12' lg='4'>
+              <LinkList>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 4</span>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 5</span>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 6</span>
+                </LinkListItem>
+              </LinkList>
+            </Col>
+            <Col xs='12' lg='4'>
+              <LinkList>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 7</span>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 8</span>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 9</span>
+                </LinkListItem>
+              </LinkList>
+            </Col>
+          </Row>
+          <MegamenuFooter className='text-end'>
+            <MegamenuFooter.Item href='#'>
+              <span>
+                Esplora tutti i contenuti del megamenu{' '}
+                <Icon className='ms-2' color='primary' icon='it-arrow-right' size='sm' />
+              </span>
+            </MegamenuFooter.Item>
+          </MegamenuFooter>
+        </MegamenuItem>
+      </Nav>
+    </Collapse>
+  </Navbar>
+);
+```
+
+#### Classico con Intestazione e link "more"
+
+Si possono combinare header e link "more".
+
+Nell'esempio di seguito, il link "more" è relativo alla sola colonna in cui è inserito. Per aggiungere un link "more" è sufficiente aggiungere la classe `.it-more` all'elemento con tag `li` al fondo della lista relativa.
+
+<Canvas of={MegamenuStories.ConIntestazioneELinkMore} />
+
+#### Codice
+
+```tsx
+const [openNav, setOpenNav] = useState(false);
+const toggle = () => {
+  setOpenNav(!openNav);
+};
+return (
+  <Navbar expand='lg' className='has-megamenu'>
+    <NavbarBrand />
+    <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
+      <Icon icon='it-list' size='sm' />
+    </NavbarToggler>
+    <Collapse isOpen={openNav} navbar header megamenu>
+      <Nav className='mt-0' navbar>
+        <MegamenuItem itemName='Megamenu con intestazione e "esplora tutti"'>
+          <Row>
+            <Col xs='12'>
+              <div className='it-heading-link-wrapper'>
+                <a className='it-heading-link' href='#'>
+                  <Icon className='me-2 mb-1' icon='it-arrow-right-triangle'></Icon>
+                  <span>Esplora la sezione megamenu</span>
+                </a>
+              </div>
+              <Row>
+                <Col xs='12' lg='4'>
+                  <LinkList>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 1</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 2</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 3</span>
+                    </LinkListItem>
+                  </LinkList>
+                </Col>
+                <Col xs='12' lg='4'>
+                  <LinkList>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 4</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 5</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 6</span>
+                    </LinkListItem>
+                  </LinkList>
+                </Col>
+                <Col xs='12' lg='4'>
+                  <LinkList>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 7</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 8</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 9</span>
+                    </LinkListItem>
+                  </LinkList>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </MegamenuItem>
+      </Nav>
+    </Collapse>
+  </Navbar>
+);
+```
+
+### Megamenu con call to action
+
+I megamenu possono contenere delle liste di call to action che possono essere posizionate in fondo o a sinistra del megamenu.
+
+#### Call to action in basso
+
+Per aggiungere un elenco di _call to cation_ è sufficiente inserirle all'interno del componente `MegamenuFooter`.
+
+<Canvas of={MegamenuStories.ConCallToActionInBasso} />
+
+#### Codice
+
+```tsx
+const [openNav, setOpenNav] = useState(false);
+const toggle = () => {
+  setOpenNav(!openNav);
+};
+return (
+  <Navbar expand='lg' className='has-megamenu'>
+    <NavbarBrand />
+    <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
+      <Icon icon='it-list' size='sm' />
+    </NavbarToggler>
+    <Collapse isOpen={openNav} navbar header megamenu>
+      <Nav className='mt-0' navbar>
+        <MegamenuItem itemName='Megamenu con Call to Action in basso'>
+          <Row>
+            <Col xs='12' lg='4'>
+              <LinkList>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 1</span>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 2</span>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 3</span>
+                </LinkListItem>
+              </LinkList>
+            </Col>
+            <Col xs='12' lg='4'>
+              <LinkList>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 4</span>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 5</span>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 6</span>
+                </LinkListItem>
+              </LinkList>
+            </Col>
+            <Col xs='12' lg='4'>
+              <LinkList>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 7</span>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 8</span>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
+                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                  <span>Link lista 9</span>
+                </LinkListItem>
+              </LinkList>
+            </Col>
+          </Row>
+          <MegamenuFooter>
+            <div className='d-flex flex-column flex-lg-row justify-content-around'>
+              <MegamenuFooter.Item href='#'>
+                <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
+                <span>Call to action 1</span>
+              </MegamenuFooter.Item>
+              <MegamenuFooter.Item href='#'>
+                <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
+                <span>Call to action 2</span>
+              </MegamenuFooter.Item>
+            </div>
+          </MegamenuFooter>
+        </MegamenuItem>
+      </Nav>
+    </Collapse>
+  </Navbar>
+);
+```
+
+#### Call to action a destra
+
+Per aggiungere un elenco di _call to action_ posizionato a destra, inseriremo tale lista di link particolare all'interno del componente `MegamenuHighlightColumn`.
+
+<Canvas of={MegamenuStories.ConCallToActionADestra} />
+
+#### Codice
+
+```tsx
+const [openNav, setOpenNav] = useState(false);
+const toggle = () => {
+  setOpenNav(!openNav);
+};
+return (
+  <Navbar expand='lg' className='has-megamenu'>
+    <NavbarBrand />
+    <NavbarToggler className='custom-navbar-toggler' onClick={toggle}>
+      <Icon icon='it-list' size='sm' />
+    </NavbarToggler>
+    <Collapse isOpen={openNav} navbar header megamenu>
+      <Nav className='mt-0' navbar>
+        <MegamenuItem itemName='Megamenu con Call to Action a destra'>
+          <Row>
+            <Col xs='12' lg='8'>
+              <Row>
+                <Col xs='12' lg='6'>
+                  <LinkList>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 1</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 2</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 3</span>
+                    </LinkListItem>
+                  </LinkList>
+                </Col>
+                <Col xs='12' lg='6'>
+                  <LinkList>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 1</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 2</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                      <span>Link lista 3</span>
+                    </LinkListItem>
+                  </LinkList>
+                </Col>
+              </Row>
+            </Col>
+            <Col xs='12' lg='4'>
+              <MegamenuFooter vertical>
+                <div className='d-flex flex-column justify-content-around'>
+                  <MegamenuFooter.Item href='#'>
+                    <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
+                    <span>Call to action 1</span>
+                  </MegamenuFooter.Item>
+                  <MegamenuFooter.Item href='#'>
+                    <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
+                    <span>Call to action 2</span>
+                  </MegamenuFooter.Item>
+                </div>
+              </MegamenuFooter>
+            </Col>
+          </Row>
+        </MegamenuItem>
+      </Nav>
+    </Collapse>
+  </Navbar>
+);
+```
+
+## Argomenti componente
+
+### MegamenuItem
+
+<ArgTypes of={MegamenuItem} />
+
+### MegamenuFooter
+
+<ArgTypes of={MegamenuFooter} />
+
+### MegamenuHighlightColumn
+
+È un wrapper che utilizza come elemento principale `Col`. Ne accetta quindi tutti gli attributi.
+
+<ArgTypes of={MegamenuHighlightColumn} />

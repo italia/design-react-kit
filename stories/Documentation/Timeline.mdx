@@ -1,0 +1,22 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as TimelineStories from '../Components/Timeline.stories';
+
+<Meta of={TimelineStories} />
+
+# Timeline
+
+## Componente per la visualizzazione cronologica di eventi.
+
+Esempio
+
+Il componente `Timeline` contiene un elenco di `TimelinePin`.
+
+Ogni `TimelinePin` contiene un icona, ed una label indicante la data dell’evento.
+
+Il `TimelinePin` ha tre varianti indicati da attributi:
+
+- `past` : per indicare nella timeline eventi del passato (colore blu scuro)
+- `now` : per indicare nella timeline eventi collocati nel presente (azzurro)
+- Nessun attributo aggiuntivo: per collocare gli eventi nel futuro. (azzurro chiaro)
+
+<Canvas of={TimelineStories.Esempi} />

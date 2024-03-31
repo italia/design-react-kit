@@ -1,0 +1,312 @@
+import { ArgTypes, Canvas, Meta, Story } from '@storybook/blocks';
+import { Callout, CalloutText, CalloutTitle, Popover } from '../../src';
+import * as PopoverStories from '../Components/Popover.stories';
+
+<Meta of={PopoverStories} />
+
+# Popover
+
+## Documentazione ed esempi per aggiungere popover (tooltip informativi) a qualsiasi elemento del tuo sito.
+
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>
+      <span className='text'>Accessibilità</span>
+    </CalloutTitle>
+    <CalloutText>
+      I popover funzionano sia con la tastiera che per gli utenti dotati di tecnologia assistiva. Allo stesso modo di
+      quanto avviene per i Tooltip, il codice generato per i Popover è accessibile.
+    </CalloutText>
+  </Callout>
+</div>
+
+Cose da sapere quando si utilizza il plugin popover:
+
+- I title e i content con valori vuoti non mostreranno mai popover.
+- Attivare i popover su elementi nascosti non funzionerà.
+- I popover per gli elementi `.disabled` o `disabled` devono essere attivati da un elemento contenitore.
+- Quanto attivato da ancore che si estendono su più linee, i popover verranno centrati tra la larghezza complessiva delle ancore. Usa `white-space: nowrap;` sugli elementi `<a/>` per evitare questo comportamento.
+
+### Esempi
+
+<Canvas of={PopoverStories.Example} />
+
+#### Codice
+
+```tsx
+const [popoverOpen, setPopoverOpen] = useState(false);
+const targetRef = useRef(null);
+
+const togglePopover = () => {
+  setPopoverOpen(!popoverOpen);
+};
+
+return (
+  <div>
+    <Button color='danger' size='lg' innerRef={targetRef} onClick={togglePopover}>
+      Clicca per attivare/disattivare il popover
+    </Button>
+
+    <Popover placement='right' target={targetRef} isOpen={popoverOpen} toggle={togglePopover}>
+      <PopoverHeader>Titolo del popover</PopoverHeader>
+      <PopoverBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.</PopoverBody>
+    </Popover>
+  </div>
+);
+```
+
+#### Direzioni
+
+Sono disponibili quattro opzioni: allineato in alto, a destra, in basso e a sinistra.
+
+<Canvas of={PopoverStories.Direzioni} />
+
+#### Codice
+
+```tsx
+const [popoverOpenSx, setPopoverOpenSx] = useState(false);
+const [popoverOpenDx, setPopoverOpenDx] = useState(false);
+const [popoverOpenAlto, setPopoverOpenAlto] = useState(false);
+const [popoverOpenBasso, setPopoverOpenBasso] = useState(false);
+
+const targetRefSx = useRef(null);
+const targetRefDx = useRef(null);
+const targetRefAlto = useRef(null);
+const targetRefBasso = useRef(null);
+
+return (
+  <div className='d-flex flex-column'>
+    <div className='mx-auto align-self-center p-2'>
+      <span>
+        <Button
+          className='me-1'
+          color='secondary'
+          innerRef={targetRefSx}
+          onClick={() => {
+            setPopoverOpenSx(!popoverOpenSx);
+          }}
+        >
+          Popover {'a sinistra'}
+        </Button>
+        <Popover
+          placement={'left'}
+          isOpen={popoverOpenSx}
+          target={targetRefSx}
+          toggle={() => {
+            setPopoverOpenSx(!popoverOpenSx);
+          }}
+        >
+          <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus</PopoverBody>
+        </Popover>
+      </span>
+    </div>
+    <div className='mx-auto align-self-center p-2'>
+      <span>
+        <Button
+          className='me-1'
+          color='secondary'
+          innerRef={targetRefDx}
+          onClick={() => {
+            setPopoverOpenDx(!popoverOpenDx);
+          }}
+        >
+          Popover {'a destra'}
+        </Button>
+        <Popover
+          placement={'right'}
+          isOpen={popoverOpenDx}
+          target={targetRefDx}
+          toggle={() => {
+            setPopoverOpenDx(!popoverOpenDx);
+          }}
+        >
+          <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus</PopoverBody>
+        </Popover>
+      </span>
+    </div>
+    <div className='mx-auto align-self-center p-2'>
+      <span>
+        <Button
+          className='me-1'
+          color='secondary'
+          innerRef={targetRefAlto}
+          onClick={() => {
+            setPopoverOpenAlto(!popoverOpenAlto);
+          }}
+        >
+          Popover {'in alto'}
+        </Button>
+        <Popover
+          placement={'top'}
+          isOpen={popoverOpenAlto}
+          target={targetRefAlto}
+          toggle={() => {
+            setPopoverOpenAlto(!popoverOpenAlto);
+          }}
+        >
+          <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus</PopoverBody>
+        </Popover>
+      </span>
+    </div>
+    <div className='mx-auto align-self-center p-2'>
+      <span>
+        <Button
+          className='me-1'
+          color='secondary'
+          innerRef={targetRefBasso}
+          onClick={() => {
+            setPopoverOpenBasso(!popoverOpenBasso);
+          }}
+        >
+          Popover {'in basso'}
+        </Button>
+        <Popover
+          placement={'bottom'}
+          isOpen={popoverOpenBasso}
+          target={targetRefBasso}
+          toggle={() => {
+            setPopoverOpenBasso(!popoverOpenBasso);
+          }}
+        >
+          <PopoverBody>Vivamus sagittis lacus vel augue laoreet rutrum faucibus</PopoverBody>
+        </Popover>
+      </span>
+    </div>
+  </div>
+);
+```
+
+#### Titolo con icona e link
+
+È possibile aggiungere un’icona in testa al titolo ed un link in coda al contenuto.
+
+<Canvas of={PopoverStories.TitoloIconaLink} />
+
+#### Codice
+
+```tsx
+const [popoverOpen, setPopoverOpen] = useState(false);
+const targetRef = useRef(null);
+
+const togglePopover = () => {
+  setPopoverOpen(!popoverOpen);
+};
+return (
+  <div>
+    <Button color='secondary' innerRef={targetRef} onClick={togglePopover}>
+      Popover con icona e link
+    </Button>
+
+    <Popover placement='right' target={targetRef} isOpen={popoverOpen} toggle={togglePopover}>
+      <PopoverHeader>
+        <Icon icon='it-help-circle' aria-hidden />
+        Titolo con icona
+      </PopoverHeader>
+      <PopoverBody>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.
+        <a href='#' className='popover-inner-link'>
+          More info
+          <Icon icon='it-arrow-right' aria-hidden />
+        </a>
+      </PopoverBody>
+    </Popover>
+  </div>
+);
+```
+
+#### Modalità Hover
+
+Per aprire il `Popover` all’hover del mouse sull’elemento è necessario impostare l'attributo `trigger` del componente su `"hover"`.
+
+<Canvas of={PopoverStories.ModalitàHover} />
+
+#### Codice
+
+```tsx
+const [popoverOpen, setPopoverOpen] = useState(false);
+const targetRef = useRef(null);
+
+const togglePopover = () => {
+  setPopoverOpen(!popoverOpen);
+};
+return (
+  <div>
+    <Button color='secondary' innerRef={targetRef}>
+      Apertura in Hover
+    </Button>
+
+    <Popover placement='right' trigger='hover' target={targetRef} isOpen={popoverOpen} toggle={togglePopover}>
+      <PopoverHeader>Popover in Hover</PopoverHeader>
+      <PopoverBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.</PopoverBody>
+    </Popover>
+  </div>
+);
+```
+
+#### Chiusura al click successivo
+
+Usa l'attributo `trigger="focus"` per ignorare i popover sul clic successivo dell’utente di un elemento diverso rispetto all’elemento di attivazione / disattivazione.
+
+<Canvas of={PopoverStories.ClickSuccessivo} />
+
+#### Codice
+
+```tsx
+const [popoverOpen, setPopoverOpen] = useState(false);
+const targetRef = useRef(null);
+
+const togglePopover = () => {
+  setPopoverOpen(!popoverOpen);
+};
+return (
+  <div>
+    <Button tabIndex={0} color='danger' innerRef={targetRef}>
+      Popover richiudibile
+    </Button>
+
+    <Popover placement='right' trigger='focus' target={targetRef} isOpen={popoverOpen} toggle={togglePopover}>
+      <PopoverHeader>Dismissible popover</PopoverHeader>
+      <PopoverBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.</PopoverBody>
+    </Popover>
+  </div>
+);
+```
+
+#### Elementi disabilitati
+
+Elementi con l’attributo `disabled` non sono interattivi, il che significa che gli utenti non possono attivare il popover (o un tooltip) con il passaggio del mouse o facendo click su di essi.
+
+Come soluzione, ti consigliamo di attivare il `Popover` da un elemento `<div/>` o `<span/>` contenitore e sovrascrivere il `pointer-events` su un elemento disabilitato.
+
+<Canvas of={PopoverStories.ElementiDisabilitati} />
+
+#### Codice
+
+```tsx
+const [popoverOpen, setPopoverOpen] = useState(false);
+const targetRef = useRef(null);
+
+return (
+  <>
+    <span ref={targetRef}>
+      <Button color='primary' disabled style={{ pointerEvents: 'none' }}>
+        Popover disabilitato
+      </Button>
+    </span>
+    <Popover
+      placement='right'
+      target={targetRef}
+      trigger='hover'
+      toggle={() => setPopoverOpen(!popoverOpen)}
+      isOpen={popoverOpen}
+    >
+      <PopoverHeader>Titolo del popover</PopoverHeader>
+      <PopoverBody>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.</PopoverBody>
+    </Popover>
+  </>
+);
+```
+
+## Argomenti componente
+
+Fare riferimento alla documentazione reactstrap (v9) per maggiori dettagli sui componenti `Popover: https://reactstrap.github.io/?path=/docs/components-popover--popover

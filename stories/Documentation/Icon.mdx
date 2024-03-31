@@ -1,0 +1,54 @@
+import { ArgTypes, Canvas, Controls, Meta } from '@storybook/blocks';
+import { Icon } from '../../src';
+import * as IconStories from '../Components/Icon.stories';
+
+<Meta of={IconStories} />
+
+# Icone
+
+### Informazioni e suggerimenti per l’utilizzo di icone con Bootstrap Italia.
+
+Le icone di Bootstrap Italia utilizzano sono state incapsulate in un componente `Icon`, e vengono caricate unicamente (in modalià asincrona) su richiesta quando si utilizza la nuova versione ESM.
+
+## Esempi
+
+Ogni icona può essere inclusa con il componente `Icon` con il riferimento desiderato:
+
+<Canvas of={IconStories.EsempioInterattivo} />
+<Controls of={IconStories.EsempioInterattivo} />
+
+## Dimensioni
+
+È possibile utilizzare il modificatore `size` con il valori `xs`, `sm`, `lg`, `xl`, per ottenere icone di diverse dimensioni.
+
+<Canvas of={IconStories.EsempioDimensioni} />
+
+È anche possibile applicare il modificatore `padding` all’icona per creare un padding proporzionale alla dimensione dell’icona attorno ad essa.
+
+<Canvas of={IconStories.EsempioPadding} />
+
+## Colori
+
+<Canvas of={IconStories.EsempioColori} />
+
+## Allineamenti
+
+È possibile usare le classi di allineamento per posizionare le icone all’interno di un elemento.
+
+<Canvas of={IconStories.EsempioAllineamento} />
+
+## Immagini esterne
+
+È possibile utilizzare un'immagine esterna come icona, utilizzando l'URL dell'immagine nell'attributo `icon` del componente.
+
+<Canvas of={IconStories.EsempioLoghiEsterni} />
+
+## Lista delle icone disponibili
+
+<Canvas of={IconStories.ListaIcone} />
+
+## Argomenti componente
+
+### Icon
+
+<ArgTypes of={Icon} />

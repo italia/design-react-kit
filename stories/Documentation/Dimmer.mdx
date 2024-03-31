@@ -1,0 +1,41 @@
+import { ArgTypes, Canvas, Meta } from '@storybook/blocks';
+import { Dimmer } from '../../src';
+import * as DimmerStories from '../Components/Dimmer.stories';
+
+<Meta of={DimmerStories} />
+
+# Dimmer
+
+## Un componente per focalizzare l’attenzione su un contenuto
+
+Un Dimmer occupa tutta l’altezza e la larghezza dell’elemento all’interno del quale è contenuto.
+
+### Esempio
+
+Il componente `Dimmer` può contenere del testo, che può essere preceduto da un'icona, come da esempio:
+
+<Canvas of={DimmerStories.Esempi} />
+
+#### Colore primario
+
+Impostando l'attributo `color="primary"` si ottiene una versione con sfondo di colore primario.
+
+<Canvas of={DimmerStories.ColorePrimario} />
+
+### Dimmer con Azioni
+
+Un Dimmer può contenere tasti collegati ad azioni ed un titolo descrittivo.
+
+<Canvas of={DimmerStories.DimmerConAzioni} />
+
+#### Colore primario
+
+Impostando l'attributo `color="primary"` si ottiene una versione con sfondo di colore primario.
+
+<Canvas of={DimmerStories.DimmerConAzioniColorePrimario} />
+
+## Argomenti componente
+
+## Dimmer
+
+<ArgTypes of={Dimmer} />
