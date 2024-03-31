@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta } from "@storybook/react";
 import { Card, CardBody, CardText, Col, Container, Row, Section } from '../../src';
 
 const meta: Meta<typeof Section> = {
@@ -10,7 +10,7 @@ const meta: Meta<typeof Section> = {
 
 export default meta;
 
-type Story = StoryObj<typeof Section>;
+//type Story = StoryObj<typeof Section>;
 
 export const Esempio = () => {
   return (

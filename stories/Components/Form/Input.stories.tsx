@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Autocomplete from "accessible-autocomplete/react"; // Reference to https://www.npmjs.com/package/accessible-autocomplete
+//import Autocomplete from "accessible-autocomplete/react"; // Reference to https://www.npmjs.com/package/accessible-autocomplete
 import React, { useState } from "react";
-import { FormGroup, Icon, Input, TextArea } from "../../../src";
+import { Icon, Input, TextArea } from "../../../src";
 
 const meta: Meta<typeof Input> = {
     title: "Documentazione/Form/Input",
@@ -12,28 +12,6 @@ export default meta;
 
 type Story = StoryObj<typeof Input>;
 
-const multiOptions: { value: string, label: string }[] = [
-    { value: "1", label: "Abruzzo" },
-    { value: "2", label: "Basilicata" },
-    { value: "3", label: "Calabria" },
-    { value: "4", label: "Campania" },
-    { value: "5", label: "Emilia Romagna" },
-    { value: "6", label: "Friuli Venezia Giulia" },
-    { value: "7", label: "Lazio" },
-    { value: "8", label: "Liguria" },
-    { value: "9", label: "Lombardia" },
-    { value: "10", label: "Marche" },
-    { value: "11", label: "Molise" },
-    { value: "12", label: "Piemonte" },
-    { value: "13", label: "Puglia" },
-    { value: "14", label: "Sardegna" },
-    { value: "15", label: "Sicilia" },
-    { value: "16", label: "Toscana" },
-    { value: "17", label: "Trentino Alto Adige" },
-    { value: "18", label: "Umbria" },
-    { value: "19", label: "Valle d'Aosta" },
-    { value: "20", label: "Veneto" },
-];
 
 export const EsempiDiCampiDiInput: Story = {
     render: () => {
@@ -199,8 +177,30 @@ export const ReadonlyNormalizzato: Story = {
     }
 }
 
-export const _InputAutocompleteConDatiAccessibile: Story = {
+/* export const _InputAutocompleteConDatiAccessibile: Story = {
     render: () => {
+        const multiOptions: { value: string, label: string }[] = [
+    { value: "1", label: "Abruzzo" },
+    { value: "2", label: "Basilicata" },
+    { value: "3", label: "Calabria" },
+    { value: "4", label: "Campania" },
+    { value: "5", label: "Emilia Romagna" },
+    { value: "6", label: "Friuli Venezia Giulia" },
+    { value: "7", label: "Lazio" },
+    { value: "8", label: "Liguria" },
+    { value: "9", label: "Lombardia" },
+    { value: "10", label: "Marche" },
+    { value: "11", label: "Molise" },
+    { value: "12", label: "Piemonte" },
+    { value: "13", label: "Puglia" },
+    { value: "14", label: "Sardegna" },
+    { value: "15", label: "Sicilia" },
+    { value: "16", label: "Toscana" },
+    { value: "17", label: "Trentino Alto Adige" },
+    { value: "18", label: "Umbria" },
+    { value: "19", label: "Valle d'Aosta" },
+    { value: "20", label: "Veneto" },
+];
         const suggest = (query: any, populateResults: any) => {
             const filteredResults = multiOptions.filter((i) => i.label.toLowerCase().includes(query.toLowerCase()));
             let data = filteredResults.map((item) => {
@@ -212,14 +212,14 @@ export const _InputAutocompleteConDatiAccessibile: Story = {
         return (
             <FormGroup className="select-wrapper">
                 <label htmlFor="autocomplete">Provincia</label>
-                <Autocomplete
+                {                 <Autocomplete
                     id="autocomplete"
                     source={suggest}
                     placeholder={"Testo da cercare"}
                     defaultValue={""}
                     displayMenu={"inline"}
                     tNoResults={() => "Nessun risultato"}
-                />
+                /> }
             </FormGroup>
         );
     },
@@ -228,7 +228,7 @@ export const _InputAutocompleteConDatiAccessibile: Story = {
             canvas: { sourceState: "none" },
         },
     },
-};
+}; */
 
 export const AreaDiTesto: Story = { render: () => <TextArea label="Esempio di area di testo" rows={3} /> }
 

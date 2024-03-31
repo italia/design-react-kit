@@ -3,7 +3,6 @@ import React, { CSSProperties, ReactChild } from 'react';
 import {
   Button,
   NotificationManager,
-  NotificationOptions,
   NotificationProps,
   createNotification,
   notify
@@ -37,7 +36,6 @@ interface NotificationDocProps {
 }
 
 const NotificationDoc = ({
-  id,
   title,
   state,
   fix,
@@ -349,7 +347,6 @@ export const FixedPositions: Story = {
 };
 
 export const NotificationOptionsComponent_Fake = (
-  props: NotificationOptions
 ) => {
   return null;
 };

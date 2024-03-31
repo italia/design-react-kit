@@ -1,18 +1,20 @@
-import {Meta, Story} from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 import { Button, Icon, Progress } from "../../src";
 
 const meta: Meta<typeof Progress> = {
-  title: "Documentazione/Componenti/Progress",
-  component: Progress,
-  parameters: {
-    docs: {
-      canvas: { sourceState: "none" },
+    title: "Documentazione/Componenti/Progress",
+    component: Progress,
+    parameters: {
+        docs: {
+            canvas: { sourceState: "none" },
+        },
     },
-  },
 };
 
 export default meta;
+
+type Story = StoryObj<typeof Progress>;
 
 export const Esempio = () => <Progress value="50" />;
 
@@ -58,33 +60,25 @@ export const BottoneConProgressBar = () => (
     </div>
 );
 
-type EsempiInterattiviProps = {
-    value: string | number;
-    label: string;
-    color: string;
-};
-export const _EsempiInterattivi: Story<EsempiInterattiviProps> = ({ value, color, label }) => {
-    return (
-        <div>
-            <Progress value={value} label={label} color={color} />
-        </div>
-    );
-};
-
-BottoneConProgressBar.storyName = "Bottone con Progress Bar";
-
-_EsempiInterattivi.storyName = "Esempi interattivi";
-
-_EsempiInterattivi.args = {
-    color: "",
-    value: 25,
-    label: "progresso",
-};
-_EsempiInterattivi.argTypes = {
-    color: {
-        control: {
-            type: "select",
-            options: ["", "success", "info", "warning", "danger"],
-        },
+export const _EsempiInterattivi: Story = {
+    render: ({ value, color, label }) => {
+        return (
+            <div>
+                <Progress value={value} label={label} color={color} />
+            </div>
+        )
     },
+    args: {
+        color: "",
+        value: 25,
+        label: "progresso",
+    },
+    argTypes: {
+        color: {
+            control: {
+                type: "select",
+                options: ["", "success", "info", "warning", "danger"],
+            },
+        },
+    }
 };

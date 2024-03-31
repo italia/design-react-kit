@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
+import { Meta } from "@storybook/react";
 import {
-  Toolbar,
-  ToolbarItem,
-  ToolbarDividerItem,
   DropdownMenu,
+  Icon,
   LinkList,
   LinkListItem,
-  Icon
+  Toolbar,
+  ToolbarDividerItem,
+  ToolbarItem
 } from '../../src';
-import {Meta, StoryObj} from "@storybook/react";
 
 
 const meta: Meta<typeof Toolbar> = {
@@ -19,8 +19,7 @@ const meta: Meta<typeof Toolbar> = {
 
 export default meta;
 
-type Story = StoryObj<typeof Toolbar>;
-
+//type Story = StoryObj<typeof Toolbar>;
 
 export const Esempio = () => (
   <div className='toolbar-docs-style'>

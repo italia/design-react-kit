@@ -1,19 +1,19 @@
 import React from 'react';
 
+import { Meta } from "@storybook/react";
 import {
-  Row,
-  Col,
-  Timeline,
   Card,
   CardBody,
-  CardTitle,
-  CardText,
   CardCategory,
-  CardSignature,
   CardReadMore,
+  CardSignature,
+  CardText,
+  CardTitle,
+  Col,
+  Row,
+  Timeline,
   TimelinePin
 } from '../../src';
-import {Meta, StoryObj} from "@storybook/react";
 
 
 const meta: Meta<typeof Timeline> = {
@@ -23,7 +23,7 @@ const meta: Meta<typeof Timeline> = {
 
 export default meta;
 
-type Story = StoryObj<typeof Timeline>;
+//type Story = StoryObj<typeof Timeline>;
 
 export const Esempi = () => (
   <div>

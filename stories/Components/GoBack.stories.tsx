@@ -1,6 +1,6 @@
-import {Meta, StoryObj} from '@storybook/react';
-import {Forward, GoBack} from '../../src';
+import { Meta, StoryObj } from '@storybook/react';
 import React from "react";
+import { Forward, GoBack } from '../../src';
 
 const meta: Meta<typeof GoBack> = {
   title: "Documentazione/Componenti/GoBack",
@@ -25,6 +25,6 @@ export const Pulsanti: Story = {
 
 export const PulsantiSoloIcona: Story = {
   render: () => (
-    <><GoBack></GoBack>{' '}<GoBack up></GoBack></>
+    <><GoBack />{' '}<GoBack up /></>
   )
 }

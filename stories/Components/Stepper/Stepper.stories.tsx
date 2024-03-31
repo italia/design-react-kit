@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta } from "@storybook/react";
 import React from "react";
 import {
     Button,
@@ -17,7 +17,7 @@ const meta: Meta<typeof StepperContainer> = {
 
 export default meta;
 
-type Story = StoryObj<typeof StepperContainer>;
+//type Story = StoryObj<typeof StepperContainer>;
 
 export const TextOnly = () => {
     return (

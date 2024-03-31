@@ -1,7 +1,7 @@
 // @ts-ignore
+import { Meta } from "@storybook/react";
 import React from 'react';
 import { Table } from '../../src';
-import {Meta, StoryObj} from "@storybook/react";
 
 const meta: Meta<typeof TableBase> = {
   title: "Documentazione/Componenti/Tables"
@@ -9,7 +9,7 @@ const meta: Meta<typeof TableBase> = {
 
 export default meta;
 
-type Story = StoryObj<typeof TableBase>;
+//type Story = StoryObj<typeof TableBase>;
 
 export const TableBase = () => (
   <Table>

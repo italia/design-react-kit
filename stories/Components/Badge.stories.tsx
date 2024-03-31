@@ -22,7 +22,7 @@ export default meta;
 type Story = StoryObj<typeof Badge>;
 
 export const EsempioInterattivo: Story = {
-    render: ({ ...args }) => <Badge {...args}>{args.color}</Badge>,
+    render: ({ ...args }) => <Badge {...args}>Badge</Badge>,
     parameters: {
         layout: "centered",
     },

@@ -29,7 +29,18 @@ import {
     NavLink,
     Row,
 } from "../../../src";
-import type { HeaderCompleteProps } from "./types";
+
+type ThemeType = {
+    theme: 'light' | 'dark' | '';
+};
+
+type HeaderCompleteProps = ThemeType & {
+    slimHeaderType: string;
+    sticky: boolean;
+    iconName: string;
+    iconAlt: string;
+};
+
 
 const CompleteHeader = ({ theme, sticky }: HeaderCompleteProps) => {
     return (
@@ -43,7 +54,7 @@ const CompleteHeader = ({ theme, sticky }: HeaderCompleteProps) => {
     );
 };
 
-const CenterHeader = ({ theme }) => {
+const CenterHeader = ({ theme }: ThemeType) => {
     return (
         <Header type="center" theme={theme} small={true}>
             <HeaderContent>
@@ -78,7 +89,7 @@ const CenterHeader = ({ theme }) => {
     );
 }
 
-const NavHeader = ({ theme }) => {
+const NavHeader = ({ theme }: ThemeType) => {
     return (
         <Header type="navbar" theme={theme}>
             <HeaderContent expand="lg" megamenu>
@@ -206,7 +217,7 @@ const NavHeader = ({ theme }) => {
 
 };
 
-const SlimHeader = ({ theme }) => {
+const SlimHeader = ({ theme }: ThemeType) => {
     return (
         <Header type="slim" theme={theme}>
             <HeaderContent>

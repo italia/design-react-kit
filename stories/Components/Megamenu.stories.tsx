@@ -99,12 +99,12 @@ export const ConLinkMore: Story = {
                 </Col>
               </Row>
               <MegamenuFooter className='text-end'>
-                <MegamenuFooter.Item href='#'>
+                <a href='#'>
                   <span>
                     Esplora tutti i contenuti del megamenu{' '}
                     <Icon className='ms-2' color='primary' icon='it-arrow-right' size='sm' />
                   </span>
-                </MegamenuFooter.Item>
+                </a>
               </MegamenuFooter>
             </MegamenuItem>
           </Nav>
@@ -262,14 +262,14 @@ export const ConCallToActionInBasso: Story = {
               </Row>
               <MegamenuFooter>
                 <div className='d-flex flex-column flex-lg-row justify-content-around'>
-                  <MegamenuFooter.Item href='#'>
+                  <a href='#'>
                     <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
                     <span>Call to action 1</span>
-                  </MegamenuFooter.Item>
-                  <MegamenuFooter.Item href='#'>
+                  </a>
+                  <a href='#'>
                     <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
                     <span>Call to action 2</span>
-                  </MegamenuFooter.Item>
+                  </a>
                 </div>
               </MegamenuFooter>
             </MegamenuItem>
@@ -334,14 +334,14 @@ export const ConCallToActionADestra: Story = {
                 <Col xs='12' lg='4'>
                   <MegamenuFooter vertical>
                     <div className='d-flex flex-column justify-content-around'>
-                      <MegamenuFooter.Item href='#'>
+                      <a href='#'>
                         <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
                         <span>Call to action 1</span>
-                      </MegamenuFooter.Item>
-                      <MegamenuFooter.Item href='#'>
+                      </a>
+                      <a href='#'>
                         <Icon className='me-2' color='primary' icon='it-bookmark' size='sm' />
                         <span>Call to action 2</span>
-                      </MegamenuFooter.Item>
+                      </a>
                     </div>
                   </MegamenuFooter>
                 </Col>
