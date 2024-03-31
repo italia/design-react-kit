@@ -12,7 +12,9 @@ const config: StorybookConfig = {
     name: '@storybook/react-vite',
     options: {}
   },
-  core: {},
+  core: {
+    builder: '@storybook/builder-vite' // 👈 The builder enabled here.
+  },
   staticDirs: ['../static', { from: '../assets', to: '/' }],
   docs: {
     autodocs: true,
