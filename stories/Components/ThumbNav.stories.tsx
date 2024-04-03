@@ -191,12 +191,14 @@ export const OverlayTop: Story = {
     position: 'top'
   }
 };
+
 export const OverlayLeft: Story = {
   args: {
     ...Overlay.args,
     position: 'left'
   }
 };
+
 export const OverlayRight: Story = {
   args: {
     ...Overlay.args,
