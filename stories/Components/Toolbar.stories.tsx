@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Meta } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import {
   DropdownMenu,
   Icon,
@@ -19,7 +19,7 @@ const meta: Meta<typeof Toolbar> = {
 
 export default meta;
 
-//type Story = StoryObj<typeof Toolbar>;
+type Story = StoryObj<typeof Toolbar>;
 
 export const Esempio = () => (
   <div className='toolbar-docs-style'>
@@ -159,7 +159,7 @@ export const EsempioConBadgePiccolo = () => (
   </div>
 );
 
-export const EsempioConDropdownGrande = () => {
+const EsempioConDropdownGrandeWithHooks = () => {
   const [openFirst, toggleFirst] = useState(false);
   const [openSecond, toggleSecond] = useState(false);
   const [openThird, toggleThird] = useState(false);
@@ -268,9 +268,13 @@ export const EsempioConDropdownGrande = () => {
       </Toolbar>
     </div>
   );
+}
+export const EsempioConDropdownGrande : Story = {
+  render: () => <EsempioConDropdownGrandeWithHooks/>
 };
 
-export const EsempioConDropdownMedia = () => {
+
+const EsempioConDropdownMediaWithHooks = () => {
   const [openFirst, toggleFirst] = useState(false);
   const [openSecond, toggleSecond] = useState(false);
   const [openThird, toggleThird] = useState(false);
@@ -395,9 +399,13 @@ export const EsempioConDropdownMedia = () => {
       </Toolbar>
     </div>
   );
+
+}
+export const EsempioConDropdownMedia : Story = {
+  render: () => <EsempioConDropdownMediaWithHooks/>
 };
 
-export const EsempioConDropdownPiccola = () => {
+const EsempioConDropdownPiccolaWithHooks = () => {
   const [openFirst, toggleFirst] = useState(false);
   const [openSecond, toggleSecond] = useState(false);
   const [openThird, toggleThird] = useState(false);
@@ -522,9 +530,13 @@ export const EsempioConDropdownPiccola = () => {
       </Toolbar>
     </div>
   );
+}
+export const EsempioConDropdownPiccola : Story = {
+  render: () => <EsempioConDropdownPiccolaWithHooks/>
 };
 
-export const EsempioVerticaleGrande = () => {
+
+const EsempioVerticaleGrandeWithHooks = () => {
   const [openFirst, toggleFirst] = useState(false);
   return (
     <div className='toolbar-docs-style'>
@@ -566,9 +578,13 @@ export const EsempioVerticaleGrande = () => {
       </Toolbar>
     </div>
   );
+}
+
+export const EsempioVerticaleGrande : Story = {
+  render: () => <EsempioVerticaleGrandeWithHooks/>
 };
 
-export const EsempioVerticaleMedia = () => {
+const EsempioVerticaleMediaWithHooks = () => {
   const [openFirst, toggleFirst] = useState(false);
   return (
     <div className='toolbar-docs-style'>
@@ -610,9 +626,13 @@ export const EsempioVerticaleMedia = () => {
       </Toolbar>
     </div>
   );
+}
+
+export const EsempioVerticaleMedia : Story = {
+  render: () => <EsempioVerticaleMediaWithHooks/>
 };
 
-export const EsempioVerticalePiccola = () => {
+const EsempioVerticalePiccolaWithHooks = () => {
   const [openFirst, toggleFirst] = useState(false);
   return (
     <div className='toolbar-docs-style'>
@@ -655,4 +675,8 @@ export const EsempioVerticalePiccola = () => {
       </Toolbar>
     </div>
   );
+}
+
+export const EsempioVerticalePiccola : Story = {
+  render: () => <EsempioVerticalePiccolaWithHooks/>
 };
