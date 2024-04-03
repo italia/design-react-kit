@@ -78,7 +78,7 @@ export const ModaleBaseConBottoneChiusura: Story = {
     }
 }
 
-export const ModaleBaseHooks = () => {
+const ModaleBaseHooks = () => {
     const [isOpen, toggleModal] = useState(false);
 
     return (
