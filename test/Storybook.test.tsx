@@ -1,6 +1,6 @@
 import { icons, preloadIcons } from '../src/index';
 
-//import './__mocks__/IntersectionObserverMock.ts';
+import './__mocks__/IntersectionObserverMock.ts';
 
 import * as glob from 'glob';
 
