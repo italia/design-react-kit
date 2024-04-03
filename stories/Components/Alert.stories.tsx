@@ -75,7 +75,7 @@ const ChiusuraControllataWithHooks = ({ ...args }) => {
 };
 
 export const ChiusuraControllata: Story = {
-    render: ({ ...args }) => <ChiusuraControllataWithHooks { ...args }/> ,
+    render: (args ) => <ChiusuraControllataWithHooks { ...args }/> ,
     parameters: {
         docs: {
             canvas: { sourceState: "none" },

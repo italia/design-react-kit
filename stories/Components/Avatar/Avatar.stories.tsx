@@ -26,7 +26,7 @@ const AvatarWithImageWithHooks = (args: any) => {
   return (
     <AvatarContainer>
       <AvatarIcon size={'lg'}>
-        {args.results.length ?  <img src={args.results.at(0).picture.large} alt={`${args.results.at(0).name.last} ${args.results.at(0).name.first}`} />
+        {args.results && args.results.length ?  <img src={args.results.at(0).picture.large} alt={`${args.results.at(0).name.last} ${args.results.at(0).name.first}`} />
 : null}
       </AvatarIcon>
     </AvatarContainer>
