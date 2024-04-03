@@ -1,37 +1,50 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import React, { useRef } from "react";
-import { AvatarContainer, AvatarExtraText, AvatarIcon, AvatarWrapper, Icon, UncontrolledTooltip } from "../../../src";
+import React, { useEffect, useRef, useState } from 'react';
+import { AvatarContainer, AvatarExtraText, AvatarIcon, AvatarIconProps,
+  AvatarWrapper,
+  Icon,
+  UncontrolledTooltip
+} from '../../../src';
 
 const meta: Meta<typeof AvatarContainer> = {
-    title: "Documentazione/Componenti/Avatar",
-    component: AvatarIcon,
-    argTypes: {
-        color: {
-            control: "select",
-            options: ["primary", "secondary", "green", "orange", "red"],
-        },
-    },
+  title: 'Documentazione/Componenti/Avatar',
+  component: AvatarIcon,
+  argTypes: {
+    color: {
+      control: 'select',
+      options: ['primary', 'secondary', 'green', 'orange', 'red']
+    }
+  }
 };
 
 export default meta;
 
 type Story = StoryObj<typeof AvatarIcon>;
 
+const AvatarWithImageWithHooks = (args: React.JSX.IntrinsicAttributes & AvatarIconProps & { children?: React.ReactNode; }) => {
+
+  const [fakeUser, setFakeUser] = useState([])
+
+  useEffect( () => {
+     fetch("https://randomuser.me/api")
+      .then(response => response.json())
+      .then(data => {
+        setFakeUser(data.results)
+      })
+
+  },[])
+
+  return (
+    <AvatarContainer>
+      <AvatarIcon {...args}>
+        {fakeUser.length ? <img src={fakeUser[0].picture.large} alt={`${fakeUser[0].name.last} ${fakeUser[0].name.first}`} /> : null}
+      </AvatarIcon>
+    </AvatarContainer>
+  );
+}
+
 export const AvatarWithImage: Story = {
-    loaders: [
-        async () => ({
-            fakeUser: await (await fetch("https://randomuser.me/api")).json(), //https://randomuser.me/documentation#howto
-        }),
-    ],
-    render: (args, { loaded: { fakeUser } }) => {
-        return (
-            <AvatarContainer>
-                <AvatarIcon {...args}>
-                    <img src={fakeUser.results.at(0).picture.large} alt={`${fakeUser.results.at(0).name.last} ${fakeUser.results.at(0).name.first}`} />
-                </AvatarIcon>
-            </AvatarContainer>
-        );
-    },
+    render: ({ ...args }) => <AvatarWithImageWithHooks { ...args }/>,
 };
 
 export const AvatarWithText: Story = {

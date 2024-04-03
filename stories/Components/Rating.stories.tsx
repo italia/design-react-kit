@@ -37,24 +37,26 @@ export const RatingBase: Story = {
   }
 };
 
+const RatingConLabelWithHooks = () => {
+  const [rating, setRating] = useState(4);
+  return (
+    <Rating
+      value={rating}
+      legend={
+        <>
+          <span className='visually-hidden'>Valutazione</span> <span>{rating} stelle</span>
+          <span className='visually-hidden'>su 5</span>
+        </>
+      }
+      inputs={['star1b', 'star2b', 'star3b', 'star4b', 'star5b']}
+      name='ratingB'
+      onChangeRating={setRating}
+    />
+  );
+};
+
 export const RatingConLabel: Story = {
-  render: () => {
-    const [rating, setRating] = useState(4);
-    return (
-      <Rating
-        value={rating}
-        legend={
-          <>
-            <span className='visually-hidden'>Valutazione</span> <span>{rating} stelle</span>
-            <span className='visually-hidden'>su 5</span>
-          </>
-        }
-        inputs={['star1b', 'star2b', 'star3b', 'star4b', 'star5b']}
-        name='ratingB'
-        onChangeRating={setRating}
-      />
-    );
-  },
+  render: () => <RatingConLabelWithHooks/>,
   parameters: {
     docs: {
       canvas: { sourceState: "none" },
