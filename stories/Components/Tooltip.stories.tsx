@@ -187,8 +187,7 @@ export const Posizioni: Story = {
   render: () => <PosizioniWithHooks/>
 };
 
-const _EsempiInterattiviWithHooks = ({text,placement}) => {
-  debugger
+const _EsempiInterattiviWithHooks = (x: any) => {
   const ref = useRef(null);
   return (
     <div>
@@ -196,8 +195,8 @@ const _EsempiInterattiviWithHooks = ({text,placement}) => {
         Tooltip
       </Button>
 
-      <UncontrolledTooltip placement={placement} target={ref}>
-        {text}
+      <UncontrolledTooltip placement={x.placement} target={ref}>
+        {x.text}
       </UncontrolledTooltip>
     </div>
   )
