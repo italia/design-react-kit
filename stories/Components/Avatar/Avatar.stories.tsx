@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import React, { useEffect, useRef, useState } from 'react';
-import { AvatarContainer, AvatarExtraText, AvatarIcon, AvatarIconProps,
+import React, { useRef } from 'react';
+import { AvatarContainer, AvatarExtraText, AvatarIcon,
   AvatarWrapper,
   Icon,
   UncontrolledTooltip
@@ -21,30 +21,25 @@ export default meta;
 
 type Story = StoryObj<typeof AvatarIcon>;
 
-const AvatarWithImageWithHooks = (args: React.JSX.IntrinsicAttributes & AvatarIconProps & { children?: React.ReactNode; }) => {
-
-  const [fakeUser, setFakeUser] = useState([])
-
-  useEffect( () => {
-     fetch("https://randomuser.me/api")
-      .then(response => response.json())
-      .then(data => {
-        setFakeUser(data.results)
-      })
-
-  },[])
+const AvatarWithImageWithHooks = (args: any) => {
 
   return (
     <AvatarContainer>
-      <AvatarIcon {...args}>
-        {fakeUser.length ? <img src={fakeUser[0].picture.large} alt={`${fakeUser[0].name.last} ${fakeUser[0].name.first}`} /> : null}
+      <AvatarIcon size={'lg'}>
+        {args.results.length ?  <img src={args.results.at(0).picture.large} alt={`${args.results.at(0).name.last} ${args.results.at(0).name.first}`} />
+: null}
       </AvatarIcon>
     </AvatarContainer>
   );
 }
 
 export const AvatarWithImage: Story = {
-    render: ({ ...args }) => <AvatarWithImageWithHooks { ...args }/>,
+    loaders: [
+        async () => ({
+            fakeUser: await (await fetch("https://randomuser.me/api")).json(), //https://randomuser.me/documentation#howto
+        }),
+    ],
+    render: (args,{ loaded: { fakeUser } } ) => <AvatarWithImageWithHooks { ...args } {...fakeUser}/>
 };
 
 export const AvatarWithText: Story = {
