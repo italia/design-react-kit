@@ -107,41 +107,45 @@ export const AvatarLink: Story = {
     ),
 };
 
+
+const AvatarLinkWithTooltipWithHooks = () => {
+  const withImageRef = useRef(null);
+  const withTextRef = useRef(null);
+  const withIconRef = useRef(null);
+
+  return (
+    <AvatarContainer>
+      <AvatarIcon size="xl" href="#" innerRef={withImageRef}>
+        <UncontrolledTooltip placement="left" target={withImageRef}>
+          Anna Barbieri
+          <br />
+          <i>Administrator</i>
+        </UncontrolledTooltip>
+        <img src="https://randomuser.me/api/portraits/women/41.jpg" alt="Anna Barbieri"></img>
+      </AvatarIcon>
+      <AvatarIcon size="xl" color="red" href="#" innerRef={withTextRef}>
+        <UncontrolledTooltip placement="top" target={withTextRef}>
+          Mario Rossi
+          <br />
+          <i>Editor</i>
+        </UncontrolledTooltip>
+        <p aria-hidden="true">MR</p>
+        <span className="visually-hidden">Mario Rossi</span>
+      </AvatarIcon>
+      <AvatarIcon size="xl" href="#" innerRef={withIconRef}>
+        <Icon icon="it-search" />
+        <UncontrolledTooltip placement="right" target={withIconRef}>
+          Search
+          <br />
+          <i>News Archive</i>
+        </UncontrolledTooltip>
+      </AvatarIcon>
+    </AvatarContainer>
+  );
+};
+
 export const AvatarLinkWithTooltip: Story = {
-    render: () => {
-        const withImageRef = useRef(null);
-        const withTextRef = useRef(null);
-        const withIconRef = useRef(null);
-        return (
-            <AvatarContainer>
-                <AvatarIcon size="xl" href="#" innerRef={withImageRef}>
-                    <UncontrolledTooltip placement="left" target={withImageRef}>
-                        Anna Barbieri
-                        <br />
-                        <i>Administrator</i>
-                    </UncontrolledTooltip>
-                    <img src="https://randomuser.me/api/portraits/women/41.jpg" alt="Anna Barbieri"></img>
-                </AvatarIcon>
-                <AvatarIcon size="xl" color="red" href="#" innerRef={withTextRef}>
-                    <UncontrolledTooltip placement="top" target={withTextRef}>
-                        Mario Rossi
-                        <br />
-                        <i>Editor</i>
-                    </UncontrolledTooltip>
-                    <p aria-hidden="true">MR</p>
-                    <span className="visually-hidden">Mario Rossi</span>
-                </AvatarIcon>
-                <AvatarIcon size="xl" href="#" innerRef={withIconRef}>
-                    <Icon icon="it-search" />
-                    <UncontrolledTooltip placement="right" target={withIconRef}>
-                        Search
-                        <br />
-                        <i>News Archive</i>
-                    </UncontrolledTooltip>
-                </AvatarIcon>
-            </AvatarContainer>
-        );
-    },
+    render: () => <AvatarLinkWithTooltipWithHooks></AvatarLinkWithTooltipWithHooks>,
     parameters: {
         docs: {
             canvas: { sourceState: "none" },

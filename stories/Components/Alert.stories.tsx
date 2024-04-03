@@ -59,20 +59,23 @@ export const _ContenutoAggiuntivo: Story = {
     ),
 };
 
+
+const ChiusuraControllataWithHooks = ({ ...args }) => {
+  const [open, setOpen] = useState(true);
+
+  const closeAlert = () => setOpen(false);
+
+  return (
+    <div>
+      <Alert {...args} isOpen={open} toggle={closeAlert}>
+        <strong>Attenzione</strong>Alcuni campi inseriti sono da controllare.
+      </Alert>
+    </div>
+  );
+};
+
 export const ChiusuraControllata: Story = {
-    render: ({ ...args }) => {
-        const [open, setOpen] = useState(true);
-
-        const closeAlert = () => setOpen(false);
-
-        return (
-            <div>
-                <Alert {...args} isOpen={open} toggle={closeAlert}>
-                    <strong>Attenzione</strong>Alcuni campi inseriti sono da controllare.
-                </Alert>
-            </div>
-        );
-    },
+    render: () => <ChiusuraControllataWithHooks/> ,
     parameters: {
         docs: {
             canvas: { sourceState: "none" },
