@@ -152,41 +152,52 @@ export const CalloutApprofondimento = {
                 <Icon icon="it-zoom-in" padding={false} aria-hidden />
                 <span>Approfondimento</span>
             </CalloutTitle>
+          <CalloutText>
+            Quisque suscipit interdum augue non volutpat. Cras tristique arcu tortor. Mauris eu magna nibh. Curabitur
+            malesuada neque in lectus sagittis
+            accumsan. In vitae justo eros. Maecenas pellentesque lacinia ipsum vitae rhoncus. Vestibulum pretium tempor
+            turpis, nec gravida eros viverra
+            in. Proin dictum nibh ut semper tristique.
+          </CalloutText>
+          <CalloutText>
+            Maecenas at erat id <strong>sem interdum efficitur eu sed nunc.</strong> Mauris sit amet erat eget augue
+            molestie malesuada ut sed ex. In
+            sed dignissim elit. Donec efficitur, sem eget vestibulum auctor, sem erat interdum magna, eu commodo odio
+            mauris semper dolor.
+          </CalloutText>
             <CalloutText>
-                <p>
-                    Quisque suscipit interdum augue non volutpat. Cras tristique arcu tortor. Mauris eu magna nibh. Curabitur malesuada neque in lectus sagittis
-                    accumsan. In vitae justo eros. Maecenas pellentesque lacinia ipsum vitae rhoncus. Vestibulum pretium tempor turpis, nec gravida eros viverra
-                    in. Proin dictum nibh ut semper tristique.
-                </p>
-                <p>
-                    Maecenas at erat id <strong>sem interdum efficitur eu sed nunc.</strong> Mauris sit amet erat eget augue molestie malesuada ut sed ex. In
-                    sed dignissim elit. Donec efficitur, sem eget vestibulum auctor, sem erat interdum magna, eu commodo odio mauris semper dolor.
-                </p>
-                <p>
-                    Maecenas vulputate ante dictum <a href="#">vestibulum volutpat</a>. Lorem ipsum dolor sit amet,{" "}
-                    <strong>consectetur adipiscing elit.</strong> Aenean non augue non purus vestibulum varius. Maecenas ullamcorper tincidunt nulla quis
-                    laoreet.
-                </p>
-                <CalloutMoreFooter id="example" fileUrl="#">
-                    <p>
-                        Aenean tortor enim, suscipit eget commodo at, imperdiet quis diam. Vestibulum non accumsan felis, at ultrices lorem. Pellentesque ac
-                        diam a ipsum cursus interdum id nec odio. Vestibulum nec congue mauris. Aliquam et dui purus. Mauris in imperdiet risus, sed blandit
-                        tellus. Donec posuere accumsan lacinia. Mauris dignissim, sem vel volutpat rhoncus, neque mi ullamcorper ante, vitae volutpat ipsum quam
-                        id purus. Duis tincidunt sodales nisl eget ultricies. Sed condimentum mi eu ex venenatis, quis bibendum dui ultrices. Quisque ex eros,
-                        pellentesque vitae enim sed, pharetra tempus dolor. Donec eu nibh ac lacus luctus pellentesque. Duis interdum scelerisque magna nec
-                        malesuada.
-                    </p>
-                    <p>
-                        Maecenas at erat id <strong>sem interdum efficitur eu sed nunc.</strong> Mauris sit amet erat eget augue molestie malesuada ut sed ex.
-                        In sed dignissim elit. Donec efficitur, sem eget vestibulum auctor, sem erat interdum magna, eu commodo odio mauris semper dolor.
-                    </p>
-                    <p>
-                        Maecenas vulputate ante dictum <a href="#">vestibulum volutpat</a>. Lorem ipsum dolor sit amet,{" "}
-                        <strong>consectetur adipiscing elit.</strong> Aenean non augue non purus vestibulum varius. Maecenas ullamcorper tincidunt nulla quis
-                        laoreet.
-                    </p>
-                </CalloutMoreFooter>
+            Maecenas vulputate ante dictum <a href="#">vestibulum volutpat</a>. Lorem ipsum dolor sit amet,{' '}
+            <strong>consectetur adipiscing elit.</strong> Aenean non augue non purus vestibulum varius. Maecenas
+            ullamcorper tincidunt nulla quis
+            laoreet.
             </CalloutText>
+            <CalloutMoreFooter id="example" fileUrl="#">
+              <p>
+                Aenean tortor enim, suscipit eget commodo at, imperdiet quis diam. Vestibulum non accumsan felis, at
+                ultrices lorem. Pellentesque ac
+                diam a ipsum cursus interdum id nec odio. Vestibulum nec congue mauris. Aliquam et dui purus. Mauris in
+                imperdiet risus, sed blandit
+                tellus. Donec posuere accumsan lacinia. Mauris dignissim, sem vel volutpat rhoncus, neque mi ullamcorper
+                ante, vitae volutpat ipsum quam
+                id purus. Duis tincidunt sodales nisl eget ultricies. Sed condimentum mi eu ex venenatis, quis bibendum
+                dui ultrices. Quisque ex eros,
+                pellentesque vitae enim sed, pharetra tempus dolor. Donec eu nibh ac lacus luctus pellentesque. Duis
+                interdum scelerisque magna nec
+                malesuada.
+              </p>
+              <p>
+                Maecenas at erat id <strong>sem interdum efficitur eu sed nunc.</strong> Mauris sit amet erat eget augue
+                molestie malesuada ut sed ex.
+                In sed dignissim elit. Donec efficitur, sem eget vestibulum auctor, sem erat interdum magna, eu commodo
+                odio mauris semper dolor.
+              </p>
+              <p>
+                Maecenas vulputate ante dictum <a href="#">vestibulum volutpat</a>. Lorem ipsum dolor sit amet,{' '}
+                <strong>consectetur adipiscing elit.</strong> Aenean non augue non purus vestibulum varius. Maecenas
+                ullamcorper tincidunt nulla quis
+                laoreet.
+              </p>
+            </CalloutMoreFooter>
         </Callout>
     ),
 };
