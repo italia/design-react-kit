@@ -3461,13 +3461,6 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest-specific-snapshot@^0.5.9":
-  version "0.5.9"
-  resolved "https://registry.yarnpkg.com/@types/jest-specific-snapshot/-/jest-specific-snapshot-0.5.9.tgz#dc49a10b789533a79dd0736006fc2e6110e58a8d"
-  integrity sha512-NPcItjVhJq3x6MWR6QNi92n5orOkcTvuQ0E8nqK2WZN18a7O93D2dcNL0x+eSNxmNSIbgfgCJ5eUScjACPCWsg==
-  dependencies:
-    "@types/jest" "*"
-
 "@types/jest@*":
   version "29.5.12"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.5.12.tgz#7f7dc6eb4cf246d2474ed78744b05d06ce025544"
@@ -9289,7 +9282,7 @@ jest-snapshot@^25.5.1:
     pretty-format "^25.5.0"
     semver "^6.3.0"
 
-jest-snapshot@^26.3.0, jest-snapshot@^26.6.2:
+jest-snapshot@^26.6.2:
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-26.6.2.tgz#f3b0af1acb223316850bd14e1beea9837fb39c84"
   integrity sha512-OLhxz05EzUtsAmOMzuupt1lHYXCNib0ECyuZ/PZOx9TrZcC8vL0x+DUG3TL+GLX3yHG45e6YGjIm0XwDc3q3og==
@@ -9310,13 +9303,6 @@ jest-snapshot@^26.3.0, jest-snapshot@^26.6.2:
     natural-compare "^1.4.0"
     pretty-format "^26.6.2"
     semver "^7.3.2"
-
-jest-specific-snapshot@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/jest-specific-snapshot/-/jest-specific-snapshot-4.0.0.tgz#a52a2e223e7576e610dbeaf341207c557ac20554"
-  integrity sha512-YdW5P/MVwOizWR0MJwURxdrjdXvdG2MMpXKVGr7dZ2YrBmE6E6Ab74UL3DOYmGmzaCnNAW1CL02pY5MTHE3ulQ==
-  dependencies:
-    jest-snapshot "^26.3.0"
 
 jest-transform-stub@^2.0.0:
   version "2.0.0"
