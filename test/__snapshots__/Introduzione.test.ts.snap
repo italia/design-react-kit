@@ -1,0 +1,514 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Form AutoDimensionamento 1`] = `
+<div>
+  <div
+    class="align-items-center row"
+  >
+    <div
+      class="col"
+    >
+      <label
+        class="visually-hidden"
+        for="inlineFormInput"
+      >
+        Nome
+      </label>
+      <input
+        class="form-control"
+        id="inlineFormInput"
+        placeholder="Mario Rossi"
+        type="text"
+      />
+    </div>
+    <div
+      class="col"
+    >
+      <label
+        class="visually-hidden"
+        for="inlineFormInputGroup"
+      >
+        Username
+      </label>
+      <div
+        class="input-group"
+      >
+        <span
+          class="input-group-text"
+        >
+          @
+        </span>
+        <input
+          class="form-control"
+          id="inlineFormInputGroup"
+          placeholder="Username"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      class="col"
+    >
+      <div
+        class="form-check m-0"
+      >
+        <input
+          class="form-check-input"
+          id="autoSizingCheck"
+          type="checkbox"
+        />
+        <label
+          class="form-check-label"
+          for="autoSizingCheck"
+        >
+          Ricordami
+        </label>
+      </div>
+    </div>
+    <div
+      class="col"
+    >
+      <button
+        class="btn btn-primary"
+        type="submit"
+      >
+        Invia
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form DimensionamentoColonneBase 1`] = `
+<div>
+  <div>
+    <div
+      class="row"
+    >
+      <div
+        class="col col-md-6 form-group"
+      >
+        <label
+          class=" "
+          for="formNome"
+        >
+          Nome
+        </label>
+        <input
+          aria-describedby="formNomeDescription"
+          class="form-control"
+          id="formNome"
+          type="text"
+          value=""
+        />
+        <div
+          class="form-text"
+        />
+      </div>
+      <div
+        class="col col-md-6 form-group"
+      >
+        <label
+          class=" "
+          for="formCognome"
+        >
+          Cognome
+        </label>
+        <input
+          aria-describedby="formCognomeDescription"
+          class="form-control"
+          id="formCognome"
+          type="text"
+          value=""
+        />
+        <div
+          class="form-text"
+        />
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="col col-7 form-group"
+      >
+        <label
+          class=" "
+          for="Citta"
+        >
+          Città
+        </label>
+        <input
+          aria-describedby="CittaDescription"
+          class="form-control"
+          id="Citta"
+          type="text"
+          value=""
+        />
+        <div
+          class="form-text"
+        />
+      </div>
+      <div
+        class="col form-group"
+      >
+        <label
+          class=" "
+          for="Comune"
+        >
+          Comune
+        </label>
+        <input
+          aria-describedby="ComuneDescription"
+          class="form-control"
+          id="Comune"
+          type="text"
+          value=""
+        />
+        <div
+          class="form-text"
+        />
+      </div>
+      <div
+        class="col form-group"
+      >
+        <label
+          class=" "
+          for="CAP"
+        >
+          CAP
+        </label>
+        <input
+          aria-describedby="CAPDescription"
+          class="form-control"
+          id="CAP"
+          type="text"
+          value=""
+        />
+        <div
+          class="form-text"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form DimensionamentoColonneComplesso 1`] = `
+<div>
+  <div>
+    <div
+      class="row"
+    >
+      <div
+        class="col col-md-6 form-group"
+      >
+        <label
+          class="active "
+          for="inputEmail4"
+        >
+          Nome
+        </label>
+        <input
+          aria-describedby="inputEmail4Description"
+          class="form-control"
+          id="inputEmail4"
+          placeholder="inserisci il tuo indirizzo email"
+          type="email"
+          value=""
+        />
+        <div
+          class="form-text"
+        />
+      </div>
+      <div
+        class="col col-md-6 form-group"
+      >
+        <label
+          class="active "
+          for="exampleInputPassword"
+        >
+          Password
+        </label>
+        <input
+          aria-describedby="exampleInputPasswordDescription"
+          class="form-control"
+          id="exampleInputPassword"
+          placeholder="Inserisci la tua password"
+          type="password"
+          value=""
+        />
+        <div
+          class="form-text"
+        />
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="col form-group"
+      >
+        <label
+          class="active "
+          for="inputAddress"
+        >
+          Indirizzo
+        </label>
+        <input
+          aria-describedby="inputAddressDescription"
+          class="form-control"
+          id="inputAddress"
+          placeholder="Via Roma, 1"
+          type="text"
+          value=""
+        />
+        <div
+          class="form-text"
+        />
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="col col-md-6 form-group"
+      >
+        <label
+          class=" "
+          for="inputCity"
+        >
+          Comune
+        </label>
+        <input
+          aria-describedby="inputCityDescription"
+          class="form-control"
+          id="inputCity"
+          type="text"
+          value=""
+        />
+        <div
+          class="form-text"
+        />
+      </div>
+      <div
+        class="col col-md-2 form-group"
+      >
+        <label
+          class=" "
+          for="inputCAP"
+        >
+          CAP
+        </label>
+        <input
+          aria-describedby="inputCAPDescription"
+          class="form-control"
+          id="inputCAP"
+          type="text"
+          value=""
+        />
+        <div
+          class="form-text"
+        />
+      </div>
+      <div
+        class="col-md-4"
+      >
+        <div
+          class="select-wrapper"
+        >
+          <label
+            for="selectExampleClassic"
+          >
+            Provincia
+          </label>
+          <select
+            id="selectExampleClassic"
+          >
+            <option
+              label="Opzione 1"
+            >
+              Value 1
+            </option>
+            <option
+              label="Opzione 2"
+            >
+              Value 2
+            </option>
+            <option
+              label="Opzione 3"
+            >
+              Value 3
+            </option>
+            <option
+              label="Opzione 4"
+            >
+              Value 4
+            </option>
+            <option
+              label="Opzione 5"
+            >
+              Value 5
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="form-group col-md-6"
+      >
+        <div
+          class="toggles"
+        >
+          <label
+            class="form-check-label"
+          >
+            Label dell'interruttore 1
+            <input
+              class="form-check-input"
+              id="toggleEsempio1a"
+              type="checkbox"
+            />
+            <span
+              class="lever"
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="col-sm-auto"
+      >
+        <button
+          class="btn btn-outline-primary"
+        >
+          Annulla
+        </button>
+      </div>
+      <div
+        class="col-sm-auto"
+      >
+        <button
+          class="btn btn-primary"
+          type="submit"
+        >
+          Conferma
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form FormDisabilitato 1`] = `
+<div>
+  <div>
+    <fieldset
+      aria-label="Form disabilitato"
+      disabled=""
+    >
+      <legend>
+        Esempio di form disabilitato
+      </legend>
+      <div
+        class="form-group"
+      >
+        <div
+          class="form-group"
+        >
+          <label
+            class="active "
+            for="disabledTextInput"
+          >
+            Input
+          </label>
+          <input
+            aria-describedby="disabledTextInputDescription"
+            class="form-control"
+            disabled=""
+            id="disabledTextInput"
+            placeholder="input disabilitato"
+            type="text"
+            value=""
+          />
+          <div
+            class="form-text"
+          />
+        </div>
+      </div>
+      <div
+        class="form-group"
+      >
+        <div
+          class="select-wrapper"
+        >
+          <label
+            for="selectExampleClassic"
+          >
+            Field Label
+          </label>
+          <select
+            id="selectExampleClassic"
+          >
+            <option
+              label="Opzione 1"
+            >
+              Value 1
+            </option>
+            <option
+              label="Opzione 2"
+            >
+              Value 2
+            </option>
+            <option
+              label="Opzione 3"
+            >
+              Value 3
+            </option>
+            <option
+              label="Opzione 4"
+            >
+              Value 4
+            </option>
+            <option
+              label="Opzione 5"
+            >
+              Value 5
+            </option>
+          </select>
+        </div>
+      </div>
+      <div
+        class="form-check"
+      >
+        <input
+          aria-describedby="checkbox1Description"
+          class="form-control"
+          disabled=""
+          id="checkbox1"
+          type="checkbox"
+          value=""
+        />
+        <label
+          class="form-check-label"
+          for="checkbox1"
+        >
+          Check disabilitato
+        </label>
+      </div>
+      <button
+        class="mt-3 btn btn-primary"
+        type="submit"
+      >
+        Submit
+      </button>
+    </fieldset>
+  </div>
+</div>
+`;

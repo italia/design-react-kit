@@ -1,0 +1,419 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Organizzare gli spazi/Griglie ContenutoLarghezzaVariabile 1`] = `
+<div>
+  <div
+    class="docs layout-example"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="justify-content-md-center row"
+      >
+        <div
+          class="col-lg-2"
+        >
+          1 di 3
+        </div>
+        <div
+          class="col-auto"
+        >
+          Contenuto a larghezza variabile
+        </div>
+        <div
+          class="col-lg-2"
+        >
+          3 di 3
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          1 di 3
+        </div>
+        <div
+          class="col-md-auto"
+        >
+          Contenuto a larghezza variabile
+        </div>
+        <div
+          class="col-lg-2"
+        >
+          3 di 3
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare gli spazi/Griglie EqualWidthMultiRow 1`] = `
+<div>
+  <div
+    class="docs layout-example"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          col
+        </div>
+        <div
+          class="col"
+        >
+          col
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          col
+        </div>
+        <div
+          class="col"
+        >
+          col
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare gli spazi/Griglie EsempioBase 1`] = `
+<div>
+  <div
+    class="docs layout-example"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          Una di tre colonne
+        </div>
+        <div
+          class="col"
+        >
+          Una di tre colonne
+        </div>
+        <div
+          class="col"
+        >
+          Una di tre colonne
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare gli spazi/Griglie ImpostaLarghezzaColonne 1`] = `
+<div>
+  <div
+    class="docs layout-example"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          1 di 3
+        </div>
+        <div
+          class="col-6"
+        >
+          2 di 3 (larga 6/12)
+        </div>
+        <div
+          class="col"
+        >
+          3 di 3
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          1 di 3
+        </div>
+        <div
+          class="col-5"
+        >
+          2 di 3 (larga 5/12)
+        </div>
+        <div
+          class="col"
+        >
+          3 di 3
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare gli spazi/Griglie LarghezzeStandard 1`] = `
+<div>
+  <div
+    class="docs layout-example"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          1 di 2
+        </div>
+        <div
+          class="col"
+        >
+          2 di 2
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          1 di 3
+        </div>
+        <div
+          class="col"
+        >
+          2 di 3
+        </div>
+        <div
+          class="col"
+        >
+          3 di 3
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare gli spazi/Griglie MischiareEAbbinare 1`] = `
+<div>
+  <div
+    class="docs layout-example"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-12 col-md-8"
+        >
+          .col-12 .col-md-8
+        </div>
+        <div
+          class="col-6 col-md-4"
+        >
+          .col-6 .col-md-4
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-6 col-md-4"
+        >
+          .col-6 .col-md-4
+        </div>
+        <div
+          class="col-6 col-md-4"
+        >
+          .col-6 .col-md-4
+        </div>
+        <div
+          class="col-6 col-md-4"
+        >
+          .col-6 .col-md-4
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-6"
+        >
+          .col-6
+        </div>
+        <div
+          class="col-6"
+        >
+          .col-6
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare gli spazi/Griglie RaccoltiInOrizzontale 1`] = `
+<div>
+  <div
+    class="docs layout-example"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-sm-8"
+        >
+          col-sm-8
+        </div>
+        <div
+          class="col-sm-4"
+        >
+          col-sm-4
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          col-sm
+        </div>
+        <div
+          class="col"
+        >
+          col-sm
+        </div>
+        <div
+          class="col"
+        >
+          col-sm
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare gli spazi/Griglie RigheMultipleBugSafari 1`] = `
+<div>
+  <div
+    class="docs layout-example"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          Colonna
+        </div>
+        <div
+          class="col"
+        >
+          Colonna
+        </div>
+        <div
+          class="w-100"
+        />
+        <div
+          class="col"
+        >
+          Colonna
+        </div>
+        <div
+          class="col"
+        >
+          Colonna
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare gli spazi/Griglie TuttiIBreakpoint 1`] = `
+<div>
+  <div
+    class="docs layout-example"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          col
+        </div>
+        <div
+          class="col"
+        >
+          col
+        </div>
+        <div
+          class="col"
+        >
+          col
+        </div>
+        <div
+          class="col"
+        >
+          col
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-8"
+        >
+          col-8
+        </div>
+        <div
+          class="col-4"
+        >
+          col-4
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,392 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDimensionamento 1`] = `
+<div>
+  <div
+    class="w-100"
+  >
+    <div
+      class="form-group"
+    >
+      <label
+        class="active input-number-label"
+        for="example-w100"
+      >
+        Input Number inserito in una colonna a tutta larghezza
+      </label>
+      <div
+        class="input-group input-number"
+      >
+        <input
+          aria-describedby="example-w100Description"
+          class="form-control"
+          id="example-w100"
+          type="number"
+          value="100"
+        />
+        <span
+          class="input-group-text align-buttons flex-column"
+        >
+          <button
+            class="input-number-add"
+            type="button"
+          >
+            <span
+              class="visually-hidden"
+            >
+              Aumenta il valore  di 1
+            </span>
+          </button>
+          <button
+            class="input-number-sub"
+            type="button"
+          >
+            <span
+              class="visually-hidden"
+            >
+              Diminuisci il valore di 1
+            </span>
+          </button>
+        </span>
+      </div>
+      <div
+        class="form-text"
+      />
+    </div>
+  </div>
+  <div
+    class="w-50 mt-5"
+  >
+    <div
+      class="form-group"
+    >
+      <label
+        class="active input-number-label"
+        for="example-w50"
+      >
+        Input Number inserito in una colonna di larghezza 50%
+      </label>
+      <div
+        class="input-group input-number"
+      >
+        <input
+          aria-describedby="example-w50Description"
+          class="form-control"
+          id="example-w50"
+          type="number"
+          value="100"
+        />
+        <span
+          class="input-group-text align-buttons flex-column"
+        >
+          <button
+            class="input-number-add"
+            type="button"
+          >
+            <span
+              class="visually-hidden"
+            >
+              Aumenta il valore  di 1
+            </span>
+          </button>
+          <button
+            class="input-number-sub"
+            type="button"
+          >
+            <span
+              class="visually-hidden"
+            >
+              Diminuisci il valore di 1
+            </span>
+          </button>
+        </span>
+      </div>
+      <div
+        class="form-text"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDisabilitato 1`] = `
+<div>
+  <div
+    class="form-group"
+  >
+    <label
+      class="active input-number-label"
+    >
+      Disabled
+    </label>
+    <div
+      class="input-group input-number disabled"
+    >
+      <input
+        class="form-control"
+        disabled=""
+        max="100"
+        min="0"
+        type="number"
+        value="50"
+      />
+      <span
+        class="input-group-text align-buttons flex-column"
+      >
+        <button
+          class="input-number-add"
+          type="button"
+        >
+          <span
+            class="visually-hidden"
+          />
+        </button>
+        <button
+          class="input-number-sub"
+          type="button"
+        >
+          <span
+            class="visually-hidden"
+          />
+        </button>
+      </span>
+    </div>
+    <div
+      class="form-text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoPercentuale 1`] = `
+<div>
+  <div
+    class="form-group"
+  >
+    <label
+      class="active input-number-label"
+      for="example-percentage"
+    >
+      Percentage
+    </label>
+    <div
+      class="input-group input-number input-number-percentage"
+    >
+      <span
+        class="input-group-text fw-semibold"
+      >
+        %
+      </span>
+      <input
+        aria-describedby="example-percentageDescription"
+        class="form-control"
+        id="example-percentage"
+        max="100"
+        min="0"
+        type="number"
+        value="100"
+      />
+      <span
+        class="input-group-text align-buttons flex-column"
+      >
+        <button
+          class="input-number-add"
+          type="button"
+        >
+          <span
+            class="visually-hidden"
+          >
+            Aumenta il valore in percentuale di 1
+          </span>
+        </button>
+        <button
+          class="input-number-sub"
+          type="button"
+        >
+          <span
+            class="visually-hidden"
+          >
+            Diminuisci il valore in percentuale di 1
+          </span>
+        </button>
+      </span>
+    </div>
+    <div
+      class="form-text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoRidimensionamento 1`] = `
+<div>
+  <div
+    class="form-group"
+  >
+    <label
+      class="active input-number-label"
+      for="example-adaptive"
+    >
+      Ridimensionamento
+    </label>
+    <div
+      class="input-group input-number input-number-adaptive"
+      style="width: calc(70px + 3ch);"
+    >
+      <input
+        aria-describedby="example-adaptiveDescription"
+        class="form-control"
+        id="example-adaptive"
+        max="99999999999"
+        min="0"
+        type="number"
+        value="100"
+      />
+      <span
+        class="input-group-text align-buttons flex-column"
+      >
+        <button
+          class="input-number-add"
+          type="button"
+        >
+          <span
+            class="visually-hidden"
+          >
+            Aumenta il valore  di 1
+          </span>
+        </button>
+        <button
+          class="input-number-sub"
+          type="button"
+        >
+          <span
+            class="visually-hidden"
+          >
+            Diminuisci il valore di 1
+          </span>
+        </button>
+      </span>
+    </div>
+    <div
+      class="form-text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoSteps 1`] = `
+<div>
+  <div
+    class="form-group"
+  >
+    <label
+      class="active input-number-label"
+      for="example-steps"
+    >
+      Min, Max & Step
+    </label>
+    <div
+      class="input-group input-number"
+    >
+      <input
+        aria-describedby="example-stepsDescription"
+        class="form-control"
+        id="example-steps"
+        max="15000"
+        min="-2000"
+        step="500"
+        type="number"
+        value="100"
+      />
+      <span
+        class="input-group-text align-buttons flex-column"
+      >
+        <button
+          class="input-number-add"
+          type="button"
+        >
+          <span
+            class="visually-hidden"
+          >
+            Aumenta il valore  di 500
+          </span>
+        </button>
+        <button
+          class="input-number-sub"
+          type="button"
+        >
+          <span
+            class="visually-hidden"
+          >
+            Diminuisci il valore di 500
+          </span>
+        </button>
+      </span>
+    </div>
+    <div
+      class="form-text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoValuta 1`] = `
+<div>
+  <div
+    class="form-group"
+  >
+    <label
+      class="active input-number-label"
+      for="example-currency"
+    >
+      Currency
+    </label>
+    <div
+      class="input-group input-number input-number-currency"
+    >
+      <span
+        class="input-group-text fw-semibold"
+      >
+        €
+      </span>
+      <input
+        aria-describedby="example-currencyDescription"
+        class="form-control"
+        id="example-currency"
+        max="100"
+        min="3.5"
+        step="any"
+        type="number"
+        value="100"
+      />
+      <span
+        class="input-group-text align-buttons flex-column"
+      >
+        <button
+          class="input-number-add"
+          type="button"
+        >
+          <span
+            class="visually-hidden"
+          >
+            Aumenta il valore di 1 euro
+          </span>
+        </button>
+        <button
+          class="input-number-sub"
+          type="button"
+        >
+          <span
+            class="visually-hidden"
+          >
+            Diminuisci il valore di 1 euro
+          </span>
+        </button>
+      </span>
+    </div>
+    <div
+      class="form-text"
+    />
+  </div>
+</div>
+`;

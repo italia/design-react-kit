@@ -1,0 +1,1027 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Menu di navigazione/Footer FooterCompatto 1`] = `
+<div>
+  <footer
+    class="it-footer"
+  >
+    <div
+      class="it-footer-main"
+    >
+      <div
+        class="container"
+      >
+        <section>
+          <div
+            class="clearfix row"
+          >
+            <div
+              class="col-sm-12"
+            >
+              <div
+                class="it-brand-wrapper"
+              >
+                <a
+                  class=""
+                  href="#"
+                >
+                  <svg
+                    class="icon"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      icon
+                    </title>
+                    <path
+                      d="M3 21h18v1H3v-1zm0-1h18v-1H3v1zM22 9H2l10-7 10 7zM5.2 8h13.6L12 3.2 5.2 8zM6 18v-8H5v8h1zm4 0v-8H9v8h1zm5 0v-8h-1v8h1zm4 0v-8h-1v8h1z"
+                    />
+                  </svg>
+                  <div
+                    class="it-brand-text"
+                  >
+                    <h2>
+                      Nome del Comune
+                    </h2>
+                    <h3
+                      class="d-none d-md-block"
+                    >
+                      Uno dei tanti Comuni d Italia
+                    </h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="py-4 border-white border-top"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="pb-2 col-md-4 col-lg-4"
+            >
+              <h4>
+                <a
+                  href="#"
+                  title="Vai alla pagina: Contatti"
+                >
+                  Contatti
+                </a>
+              </h4>
+              <p>
+                <strong>
+                  Nome del Comune
+                </strong>
+                <br />
+                Via Roma 0 - 00000 Lorem Ipsum Codice fiscale / P. IVA: 000000000
+              </p>
+              <div
+                class="link-list-wrapper"
+              >
+                <ul
+                  class="footer-list clearfix link-list"
+                >
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Posta Elettronica Certificata"
+                    >
+                      Posta Elettronica Certificata
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: URP - Ufficio Relazioni con il Pubblico"
+                    >
+                      URP - Ufficio Relazioni con il Pubblico
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="pb-2 col-md-4 col-lg-4"
+            >
+              <h4>
+                <a
+                  href="#"
+                  title="Vai alla pagina: Newsletter"
+                >
+                  Newsletter
+                </a>
+              </h4>
+              <form
+                action="#"
+                class="form-newsletter"
+                method="post"
+              >
+                <label
+                  class="text-white fw-semibold active form-label"
+                  for="input-newsletter"
+                  style="transition: none 0s ease 0s;"
+                >
+                  Iscriviti per riceverla
+                </label>
+                <div
+                  class="form-group"
+                >
+                  <label
+                    class="active "
+                    for="input-newsletter"
+                  />
+                  <input
+                    aria-describedby="input-newsletterDescription"
+                    class="form-control"
+                    id="input-newsletter"
+                    name="input-newsletter"
+                    placeholder="mail@example.com"
+                    type="email"
+                    value=""
+                  />
+                  <div
+                    class="form-text"
+                  />
+                </div>
+                <button
+                  class="btn-icon btn btn-primary"
+                  type="submit"
+                >
+                  <svg
+                    class="icon icon-white"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      icon
+                    </title>
+                    <path
+                      d="M20.5 5h-17C2.7 5 2 5.7 2 6.5v11c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-11c0-.8-.7-1.5-1.5-1.5zm-.3 1-7.1 7.2c-.6.6-1.6.6-2.2 0L3.8 6h16.4zM3 17.3V6.6L8.3 12 3 17.3zm.7.7L9 12.7l1.2 1.2c1 .9 2.6.9 3.6 0l1.2-1.2 5.3 5.3H3.7zm12-6L21 6.6v10.7L15.7 12z"
+                    />
+                  </svg>
+                  <span>
+                    Iscriviti
+                  </span>
+                </button>
+              </form>
+            </div>
+            <div
+              class="pb-2 col-md-4 col-lg-4"
+            >
+              <h4>
+                <a
+                  href="#"
+                  title="Vai alla pagina: Seguici su"
+                >
+                  Seguici su
+                </a>
+              </h4>
+              <ul
+                class="list-inline text-start social"
+              >
+                <li
+                  class="list-inline-item"
+                >
+                  <a
+                    class="p-2 text-white"
+                    href="#"
+                    target="_blank"
+                  >
+                    <svg
+                      class="icon align-top icon-white icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        icon
+                      </title>
+                      <path
+                        d="M8.7 20.2v-13h3.6v13.1l-3.6-.1zM23 10.1h-3.3v6.5c0 .2.1.4.3.6s.4.2.8.2h2.1l.2 2.8c-1.2.3-2.1.4-2.8.4-1.6 0-2.7-.3-3.3-1.1-.6-.7-.9-2-.9-3.9v-12h3.6v3.6H23v2.9zm-19.8 1c-.6 0-1.2-.2-1.6-.6-.4-.4-.6-.9-.6-1.5s.2-1.1.6-1.5c.4-.5.9-.7 1.6-.7s1.1.2 1.5.6c.4.5.6 1 .6 1.6s-.2 1.1-.6 1.5-.9.6-1.5.6z"
+                      />
+                    </svg>
+                    <span
+                      class="visually-hidden"
+                    >
+                      Designers Italia
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <a
+                    class="p-2 text-white"
+                    href="#"
+                    target="_blank"
+                  >
+                    <svg
+                      class="icon align-top icon-white icon-sm"
+                      height="24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        icon
+                      </title>
+                      <path
+                        d="M13.927 10.491 19.511 4h-1.323l-4.849 5.636L9.467 4H5l5.856 8.523L5 19.33h1.323l5.12-5.952 4.09 5.952H20l-6.073-8.839Zm-1.812 2.107-.594-.849-4.72-6.753h2.032l3.81 5.45.593.849 4.953 7.084h-2.033l-4.041-5.78v-.001Z"
+                      />
+                    </svg>
+                    <span
+                      class="visually-hidden"
+                    >
+                      Twitter
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <a
+                    class="p-2 text-white"
+                    href="#"
+                    target="_blank"
+                  >
+                    <svg
+                      class="icon align-top icon-white icon-sm"
+                      height="24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        icon
+                      </title>
+                      <path
+                        d="M13.281 12.625c0 3.107-2.525 5.625-5.64 5.625C4.524 18.25 2 15.732 2 12.625S4.525 7 7.64 7c3.116 0 5.641 2.518 5.641 5.625Zm6.188 0c0 2.924-1.263 5.295-2.82 5.295-1.558 0-2.82-2.371-2.82-5.295s1.262-5.295 2.82-5.295c1.557 0 2.82 2.371 2.82 5.295Zm2.531 0c0 2.62-.444 4.744-.992 4.744s-.992-2.125-.992-4.744c0-2.62.444-4.744.992-4.744S22 10.005 22 12.625Z"
+                      />
+                    </svg>
+                    <span
+                      class="visually-hidden"
+                    >
+                      Medium
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <a
+                    class="p-2 text-white"
+                    href="#"
+                    target="_blank"
+                  >
+                    <svg
+                      class="icon align-top icon-white icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        icon
+                      </title>
+                      <path
+                        d="M7.8 5.8c.5 0 1.1 0 1.6.2.4.1.9.3 1.2.5.4.1.7.5.9.8.2.5.3 1 .3 1.4 0 .5-.1 1.1-.4 1.5-.3.4-.8.8-1.3 1 .7.2 1.3.6 1.7 1.1.4.6.6 1.3.6 2 0 .5-.1 1.1-.3 1.6-.2.4-.6.8-1 1.1-.4.3-.9.5-1.4.6-.6.4-1.2.4-1.7.4H2V5.8h5.8zm-.3 5c.4 0 .8-.1 1.2-.4.3-.3.5-.7.4-1.1 0-.3 0-.5-.1-.8-.1-.1-.2-.3-.4-.4-.2-.1-.4-.2-.6-.2-.2 0-.5-.1-.7-.1H4.7v2.9l2.8.1zm.1 5.2c.3 0 .5 0 .8-.1l.6-.3c.2-.1.3-.3.4-.5.1-.3.2-.5.2-.8 0-.5-.2-1-.5-1.3-.4-.3-.9-.4-1.4-.4h-3V16h2.9zm8.6-.1c.4.4 1 .6 1.6.5.4 0 .9-.1 1.3-.4.3-.2.5-.5.6-.8h2.1c-.2.9-.8 1.7-1.6 2.3-.8.5-1.7.7-2.6.7-.6 0-1.3-.1-1.9-.3-1.1-.4-2-1.3-2.3-2.4-.2-.6-.3-1.2-.3-1.9 0-.6.1-1.3.3-1.9.2-.6.5-1.1.9-1.5.4-.4.9-.8 1.4-1 .7-.2 1.3-.3 1.9-.3.7 0 1.4.1 2 .4.5.3 1 .7 1.4 1.2.4.5.6 1.1.8 1.7.2.7.2 1.3.2 2h-6.4c0 .6.2 1.2.6 1.7zm2.8-4.7c-.4-.3-.9-.5-1.4-.5-.3 0-.7 0-1 .2-.2.1-.5.3-.6.5-.2.2-.3.4-.3.6-.1.2-.1.4-.1.6h4c-.1-.5-.3-1-.6-1.4zm-3.9-4.6h5v1.2h-5V6.6z"
+                      />
+                    </svg>
+                    <span
+                      class="visually-hidden"
+                    >
+                      Behance
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div
+      class="it-footer-small-prints clearfix"
+    >
+      <div
+        class="container"
+      >
+        <h3
+          class="visually-hidden"
+        >
+          Sezione Link Utili
+        </h3>
+        <ul
+          class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row"
+        >
+          <li
+            class="list-inline-item"
+          >
+            <a
+              href="#"
+              title="Note Legali"
+            >
+              Media policy
+            </a>
+          </li>
+          <li
+            class="list-inline-item"
+          >
+            <a
+              href="#"
+              title="Note Legali"
+            >
+              Note legali
+            </a>
+          </li>
+          <li
+            class="list-inline-item"
+          >
+            <a
+              href="#"
+              title="Privacy-Cookies"
+            >
+              Privacy policy
+            </a>
+          </li>
+          <li
+            class="list-inline-item"
+          >
+            <a
+              href="#"
+              title="Mappa del sito"
+            >
+              Mappa del sito
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Menu di navigazione/Footer FooterCompleto 1`] = `
+<div>
+  <footer
+    class="it-footer"
+  >
+    <div
+      class="it-footer-main"
+    >
+      <div
+        class="container"
+      >
+        <section>
+          <div
+            class="clearfix row"
+          >
+            <div
+              class="col-sm-12"
+            >
+              <div
+                class="it-brand-wrapper"
+              >
+                <a
+                  class=""
+                  href="#"
+                >
+                  <svg
+                    class="icon"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      icon
+                    </title>
+                    <path
+                      d="M3 21h18v1H3v-1zm0-1h18v-1H3v1zM22 9H2l10-7 10 7zM5.2 8h13.6L12 3.2 5.2 8zM6 18v-8H5v8h1zm4 0v-8H9v8h1zm5 0v-8h-1v8h1zm4 0v-8h-1v8h1z"
+                    />
+                  </svg>
+                  <div
+                    class="it-brand-text"
+                  >
+                    <h2>
+                      Nome del Comune
+                    </h2>
+                    <h3
+                      class="d-none d-md-block"
+                    >
+                      Uno dei tanti Comuni d Italia
+                    </h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div
+            class="row"
+          >
+            <div
+              class="pb-2 col-sm-6 col-md-3 col-lg-3"
+            >
+              <h4>
+                <a
+                  href="#"
+                  title="Vai alla pagina: Amministrazione"
+                >
+                  Amministrazione
+                </a>
+              </h4>
+              <div
+                class="link-list-wrapper"
+              >
+                <ul
+                  class="footer-list clearfix link-list"
+                >
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Giunta e consiglio"
+                    >
+                      Giunta e consiglio
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Aree di competenza"
+                    >
+                      Aree di competenza
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Dipendenti"
+                    >
+                      Dipendenti
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Luoghi"
+                    >
+                      Luoghi
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Associazioni e società partecipate"
+                    >
+                      Associazioni e società partecipate
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="pb-2 col-sm-6 col-md-3 col-lg-3"
+            >
+              <h4>
+                <a
+                  href="#"
+                  title="Vai alla pagina: Servizi"
+                >
+                  Servizi
+                </a>
+              </h4>
+              <div
+                class="link-list-wrapper"
+              >
+                <ul
+                  class="footer-list clearfix link-list"
+                >
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Pagamenti"
+                    >
+                      Pagamenti
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Sostegno"
+                    >
+                      Sostegno
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Domande e iscrizioni"
+                    >
+                      Domande e iscrizioni
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Segnalazioni"
+                    >
+                      Segnalazioni
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Autorizzazioni e concessioni"
+                    >
+                      Autorizzazioni e concessioni
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Certificati e dichiarazioni"
+                    >
+                      Certificati e dichiarazioni
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="pb-2 col-sm-6 col-md-3 col-lg-3"
+            >
+              <h4>
+                <a
+                  href="#"
+                  title="Vai alla pagina: Novità"
+                >
+                  Novità
+                </a>
+              </h4>
+              <div
+                class="link-list-wrapper"
+              >
+                <ul
+                  class="footer-list clearfix link-list"
+                >
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Notizie"
+                    >
+                      Notizie
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Eventi"
+                    >
+                      Eventi
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Comunicati Stampa"
+                    >
+                      Comunicati Stampa
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-3 col-lg-3"
+            >
+              <h4>
+                <a
+                  href="#"
+                  title="Vai alla pagina: Documenti"
+                >
+                  Documenti
+                </a>
+              </h4>
+              <div
+                class="link-list-wrapper"
+              >
+                <ul
+                  class="footer-list clearfix link-list"
+                >
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Progetti e attività"
+                    >
+                      Progetti e attività
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Delibere, determine e ordinanze"
+                    >
+                      Delibere, determine e ordinanze
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Bandi"
+                    >
+                      Bandi
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Concorsi"
+                    >
+                      Concorsi
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Albo pretorio"
+                    >
+                      Albo pretorio
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="py-4 border-white border-top"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="pb-2 col-md-3 col-lg-3"
+            >
+              <h4>
+                <a
+                  href="#"
+                  title="Vai alla pagina: Amministrazione"
+                >
+                  Amministrazione trasparente
+                </a>
+              </h4>
+              <p>
+                I dati personali pubblicati sono riutilizzabili solo alle condizioni previste dalla direttiva comunitaria 2003/98/CE e dal d.lgs. 36/2006
+              </p>
+            </div>
+            <div
+              class="pb-2 col-md-3 col-lg-3"
+            >
+              <h4>
+                <a
+                  href="#"
+                  title="Vai alla pagina: Contatti"
+                >
+                  Contatti
+                </a>
+              </h4>
+              <p>
+                <strong>
+                  Nome del Comune
+                </strong>
+                <br />
+                Via Roma 0 - 00000 Lorem Ipsum Codice fiscale / P. IVA: 000000000
+              </p>
+              <div
+                class="link-list-wrapper"
+              >
+                <ul
+                  class="footer-list clearfix link-list"
+                >
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: Posta Elettronica Certificata"
+                    >
+                      Posta Elettronica Certificata
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="list-item"
+                      href="#"
+                      title="Vai alla pagina: URP - Ufficio Relazioni con il Pubblico"
+                    >
+                      URP - Ufficio Relazioni con il Pubblico
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="pb-2 col-md-3 col-lg-3"
+            >
+              <h4>
+                <a
+                  href="#"
+                  title="Vai alla pagina: Newsletter"
+                >
+                  Newsletter
+                </a>
+              </h4>
+              <form
+                action="#"
+                class="form-newsletter"
+                method="post"
+              >
+                <label
+                  class="text-white fw-semibold active form-label"
+                  for="input-newsletter"
+                  style="transition: none 0s ease 0s;"
+                >
+                  Iscriviti per riceverla
+                </label>
+                <div
+                  class="form-group"
+                >
+                  <label
+                    class="active "
+                    for="input-newsletter"
+                  />
+                  <input
+                    aria-describedby="input-newsletterDescription"
+                    class="form-control"
+                    id="input-newsletter"
+                    name="input-newsletter"
+                    placeholder="mail@example.com"
+                    type="email"
+                    value=""
+                  />
+                  <div
+                    class="form-text"
+                  />
+                </div>
+                <button
+                  class="btn-icon btn btn-primary"
+                  type="submit"
+                >
+                  <svg
+                    class="icon icon-white"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      icon
+                    </title>
+                    <path
+                      d="M20.5 5h-17C2.7 5 2 5.7 2 6.5v11c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-11c0-.8-.7-1.5-1.5-1.5zm-.3 1-7.1 7.2c-.6.6-1.6.6-2.2 0L3.8 6h16.4zM3 17.3V6.6L8.3 12 3 17.3zm.7.7L9 12.7l1.2 1.2c1 .9 2.6.9 3.6 0l1.2-1.2 5.3 5.3H3.7zm12-6L21 6.6v10.7L15.7 12z"
+                    />
+                  </svg>
+                  <span>
+                    Iscriviti
+                  </span>
+                </button>
+              </form>
+            </div>
+            <div
+              class="pb-2 col-md-3 col-lg-3"
+            >
+              <h4>
+                <a
+                  href="#"
+                  title="Vai alla pagina: Seguici su"
+                >
+                  Seguici su
+                </a>
+              </h4>
+              <ul
+                class="list-inline text-start social"
+              >
+                <li
+                  class="list-inline-item"
+                >
+                  <a
+                    class="p-2 text-white"
+                    href="#"
+                    target="_blank"
+                  >
+                    <svg
+                      class="icon align-top icon-white icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        icon
+                      </title>
+                      <path
+                        d="M8.7 20.2v-13h3.6v13.1l-3.6-.1zM23 10.1h-3.3v6.5c0 .2.1.4.3.6s.4.2.8.2h2.1l.2 2.8c-1.2.3-2.1.4-2.8.4-1.6 0-2.7-.3-3.3-1.1-.6-.7-.9-2-.9-3.9v-12h3.6v3.6H23v2.9zm-19.8 1c-.6 0-1.2-.2-1.6-.6-.4-.4-.6-.9-.6-1.5s.2-1.1.6-1.5c.4-.5.9-.7 1.6-.7s1.1.2 1.5.6c.4.5.6 1 .6 1.6s-.2 1.1-.6 1.5-.9.6-1.5.6z"
+                      />
+                    </svg>
+                    <span
+                      class="visually-hidden"
+                    >
+                      Designers Italia
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <a
+                    class="p-2 text-white"
+                    href="#"
+                    target="_blank"
+                  >
+                    <svg
+                      class="icon align-top icon-white icon-sm"
+                      height="24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        icon
+                      </title>
+                      <path
+                        d="M13.927 10.491 19.511 4h-1.323l-4.849 5.636L9.467 4H5l5.856 8.523L5 19.33h1.323l5.12-5.952 4.09 5.952H20l-6.073-8.839Zm-1.812 2.107-.594-.849-4.72-6.753h2.032l3.81 5.45.593.849 4.953 7.084h-2.033l-4.041-5.78v-.001Z"
+                      />
+                    </svg>
+                    <span
+                      class="visually-hidden"
+                    >
+                      Twitter
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <a
+                    class="p-2 text-white"
+                    href="#"
+                    target="_blank"
+                  >
+                    <svg
+                      class="icon align-top icon-white icon-sm"
+                      height="24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        icon
+                      </title>
+                      <path
+                        d="M13.281 12.625c0 3.107-2.525 5.625-5.64 5.625C4.524 18.25 2 15.732 2 12.625S4.525 7 7.64 7c3.116 0 5.641 2.518 5.641 5.625Zm6.188 0c0 2.924-1.263 5.295-2.82 5.295-1.558 0-2.82-2.371-2.82-5.295s1.262-5.295 2.82-5.295c1.557 0 2.82 2.371 2.82 5.295Zm2.531 0c0 2.62-.444 4.744-.992 4.744s-.992-2.125-.992-4.744c0-2.62.444-4.744.992-4.744S22 10.005 22 12.625Z"
+                      />
+                    </svg>
+                    <span
+                      class="visually-hidden"
+                    >
+                      Medium
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="list-inline-item"
+                >
+                  <a
+                    class="p-2 text-white"
+                    href="#"
+                    target="_blank"
+                  >
+                    <svg
+                      class="icon align-top icon-white icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        icon
+                      </title>
+                      <path
+                        d="M7.8 5.8c.5 0 1.1 0 1.6.2.4.1.9.3 1.2.5.4.1.7.5.9.8.2.5.3 1 .3 1.4 0 .5-.1 1.1-.4 1.5-.3.4-.8.8-1.3 1 .7.2 1.3.6 1.7 1.1.4.6.6 1.3.6 2 0 .5-.1 1.1-.3 1.6-.2.4-.6.8-1 1.1-.4.3-.9.5-1.4.6-.6.4-1.2.4-1.7.4H2V5.8h5.8zm-.3 5c.4 0 .8-.1 1.2-.4.3-.3.5-.7.4-1.1 0-.3 0-.5-.1-.8-.1-.1-.2-.3-.4-.4-.2-.1-.4-.2-.6-.2-.2 0-.5-.1-.7-.1H4.7v2.9l2.8.1zm.1 5.2c.3 0 .5 0 .8-.1l.6-.3c.2-.1.3-.3.4-.5.1-.3.2-.5.2-.8 0-.5-.2-1-.5-1.3-.4-.3-.9-.4-1.4-.4h-3V16h2.9zm8.6-.1c.4.4 1 .6 1.6.5.4 0 .9-.1 1.3-.4.3-.2.5-.5.6-.8h2.1c-.2.9-.8 1.7-1.6 2.3-.8.5-1.7.7-2.6.7-.6 0-1.3-.1-1.9-.3-1.1-.4-2-1.3-2.3-2.4-.2-.6-.3-1.2-.3-1.9 0-.6.1-1.3.3-1.9.2-.6.5-1.1.9-1.5.4-.4.9-.8 1.4-1 .7-.2 1.3-.3 1.9-.3.7 0 1.4.1 2 .4.5.3 1 .7 1.4 1.2.4.5.6 1.1.8 1.7.2.7.2 1.3.2 2h-6.4c0 .6.2 1.2.6 1.7zm2.8-4.7c-.4-.3-.9-.5-1.4-.5-.3 0-.7 0-1 .2-.2.1-.5.3-.6.5-.2.2-.3.4-.3.6-.1.2-.1.4-.1.6h4c-.1-.5-.3-1-.6-1.4zm-3.9-4.6h5v1.2h-5V6.6z"
+                      />
+                    </svg>
+                    <span
+                      class="visually-hidden"
+                    >
+                      Behance
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div
+      class="it-footer-small-prints clearfix"
+    >
+      <div
+        class="container"
+      >
+        <h3
+          class="visually-hidden"
+        >
+          Sezione Link Utili
+        </h3>
+        <ul
+          class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row"
+        >
+          <li
+            class="list-inline-item"
+          >
+            <a
+              href="#"
+              title="Note Legali"
+            >
+              Media policy
+            </a>
+          </li>
+          <li
+            class="list-inline-item"
+          >
+            <a
+              href="#"
+              title="Note Legali"
+            >
+              Note legali
+            </a>
+          </li>
+          <li
+            class="list-inline-item"
+          >
+            <a
+              href="#"
+              title="Privacy-Cookies"
+            >
+              Privacy policy
+            </a>
+          </li>
+          <li
+            class="list-inline-item"
+          >
+            <a
+              href="#"
+              title="Mappa del sito"
+            >
+              Mappa del sito
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

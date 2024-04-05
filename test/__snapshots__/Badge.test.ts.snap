@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Componenti/Badge BordiArrotondati 1`] = `
+<div>
+  <div
+    class="d-flex justify-content-around"
+  >
+    <span
+      class="badge bg-primary rounded-pill"
+    >
+      Primary
+    </span>
+    <span
+      class="badge bg-secondary rounded-pill"
+    >
+      Secondary
+    </span>
+    <span
+      class="badge bg-success rounded-pill"
+    >
+      Success
+    </span>
+    <span
+      class="badge bg-danger rounded-pill"
+    >
+      Danger
+    </span>
+    <span
+      class="badge bg-warning rounded-pill"
+    >
+      Warning
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Badge ConLink 1`] = `
+<div>
+  <div
+    class="d-flex justify-content-around"
+  >
+    <a
+      class="badge bg-primary"
+      href="#"
+    >
+      Primary
+    </a>
+    <a
+      class="badge bg-secondary"
+      href="#"
+    >
+      Secondary
+    </a>
+    <a
+      class="badge bg-success"
+      href="#"
+    >
+      Success
+    </a>
+    <a
+      class="badge bg-danger"
+      href="#"
+    >
+      Danger
+    </a>
+    <a
+      class="badge bg-warning"
+      href="#"
+    >
+      Warning
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Badge Contatore 1`] = `
+<div>
+  <button
+    class="btn btn-primary"
+  >
+    Notifiche 
+    <span
+      class="text-secondary badge bg-light"
+    >
+      4
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Badge ContatoreTestoAggiuntivo 1`] = `
+<div>
+  <button
+    class="btn btn-primary"
+  >
+    Notifiche 
+    <span
+      class="text-primary badge bg-light"
+    >
+      9
+    </span>
+    <span
+      class="visually-hidden"
+    >
+      Messaggi non letti
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Badge DiffenteGrandezza 1`] = `
+<div>
+  <div>
+    <h1>
+      Titolo di esempio 
+      <span
+        class="badge bg-secondary"
+      >
+        New
+      </span>
+    </h1>
+    <h2>
+      Titolo di esempio 
+      <span
+        class="badge bg-secondary"
+      >
+        New
+      </span>
+    </h2>
+    <h3>
+      Titolo di esempio 
+      <span
+        class="badge bg-secondary"
+      >
+        New
+      </span>
+    </h3>
+    <h4>
+      Titolo di esempio 
+      <span
+        class="badge bg-secondary"
+      >
+        New
+      </span>
+    </h4>
+    <h5>
+      Titolo di esempio 
+      <span
+        class="badge bg-secondary"
+      >
+        New
+      </span>
+    </h5>
+    <h6>
+      Titolo di esempio 
+      <span
+        class="badge bg-secondary"
+      >
+        New
+      </span>
+    </h6>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Badge EsempioInterattivo 1`] = `
+<div>
+  <span
+    class="badge bg-secondary"
+  >
+    Badge
+  </span>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Badge Variazioni 1`] = `
+<div>
+  <div
+    class="d-flex justify-content-around"
+  >
+    <span
+      class="badge bg-primary"
+    >
+      Primary
+    </span>
+    <span
+      class="badge bg-secondary"
+    >
+      Secondary
+    </span>
+    <span
+      class="badge bg-success"
+    >
+      Success
+    </span>
+    <span
+      class="badge bg-danger"
+    >
+      Danger
+    </span>
+    <span
+      class="badge bg-warning"
+    >
+      Warning
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,1112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Componenti/Cards BigCard 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-12 col-lg-6"
+    >
+      <div
+        class="card-wrapper card-space"
+      >
+        <div
+          class="card-bg card-big card"
+        >
+          <div
+            class="card-body"
+          >
+            <div
+              class="top-icon"
+            >
+              <svg
+                class="icon"
+                enable-background="new 0 0 24 24"
+                role="img"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  icon
+                </title>
+                <path
+                  d="M20.5 5h-17C2.7 5 2 5.7 2 6.5v11c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-11c0-.8-.7-1.5-1.5-1.5zM3 9h18v3H3V9zm18 8.5c0 .3-.2.5-.5.5h-17c-.3 0-.5-.2-.5-.5V13h18v4.5zM3 8V6.5c0-.3.2-.5.5-.5h17c.3 0 .5.2.5.5V8H3zm5 7H4v-1h4v1z"
+                />
+              </svg>
+            </div>
+            <h5
+              class="card-title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </h5>
+            <p
+              class="card-text"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a
+              class="read-more"
+              href="#"
+            >
+              <span
+                class="text"
+              >
+                Leggi di più
+              </span>
+              <svg
+                class="icon"
+                enable-background="new 0 0 24 24"
+                role="img"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  icon
+                </title>
+                <path
+                  d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Cards BigCardExampleTwo 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-12 col-lg-6"
+    >
+      <div
+        class="card-wrapper card-space"
+      >
+        <div
+          class="card-bg card-big border-bottom-card card"
+        >
+          <div
+            class="flag-icon"
+          />
+          <div
+            class="etichetta"
+          >
+            <svg
+              class="icon"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="M12 7.5c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5zm0 8c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zm9.8-1.6c.1-.6.2-1.3.2-1.9 0-.6-.1-1.3-.2-1.9l-2.1-.3c-.2-.6-.4-1.2-.7-1.7l1.3-1.7c-.7-1.1-1.6-2-2.7-2.7L15.9 5l-1.7-.7-.3-2.1L12 2l-1.9.2-.3 2.1-1.7.7-1.7-1.3c-1.1.7-2 1.6-2.7 2.7L5 8.1c-.3.5-.5 1.1-.7 1.7l-2.1.3c-.1.6-.2 1.3-.2 1.9 0 .6.1 1.3.2 1.9l2.1.3c.2.6.4 1.2.7 1.7l-1.3 1.7c.7 1.1 1.6 2 2.7 2.7L8.1 19l1.7.7.3 2.1 1.9.2 1.9-.2.3-2.1 1.7-.7 1.7 1.3c1.1-.7 2-1.6 2.7-2.7L19 15.9c.3-.5.5-1.1.7-1.7l2.1-.3zm-2.9-.7-.2.7c-.1.5-.3 1-.6 1.5l-.3.6.4.5.8 1.1c-.4.5-.9 1-1.4 1.4l-1.1-.8-.5-.4-.6.3c-.5.3-1 .5-1.5.6l-.7.2v.7l-.2 1.3h-2l-.2-1.3v-.7l-.7-.2c-.5-.1-1-.3-1.5-.6l-.6-.3-.5.4-1.1.8c-.5-.4-1-.9-1.4-1.4l.8-1.1.4-.5-.3-.6c-.3-.5-.5-1-.6-1.5l-.2-.7h-.7L3.1 13c-.1-.3-.1-.7-.1-1 0-.3 0-.7.1-1l1.3-.2h.7l.2-.7c.1-.5.3-1 .6-1.5l.3-.6-.4-.5L5 6.4 6.4 5l1.1.8.5.4.6-.3c.5-.3 1-.5 1.5-.6l.7-.2v-.7l.2-1.3h2l.2 1.3v.7l.7.2c.5.1 1 .3 1.5.6l.6.3.5-.4 1.1-.8c.5.4 1 .9 1.4 1.4l-.8 1.1-.4.5.3.6c.3.5.5 1 .6 1.5l.2.7h.7l1.3.2c.1.3.1.7.1 1 0 .3 0 .7-.1 1l-1.3.2h-.7z"
+              />
+            </svg>
+            <span>
+              Sviluppo
+            </span>
+          </div>
+          <div
+            class="card-body"
+          >
+            <div
+              class="top-icon"
+            >
+              <svg
+                class="icon"
+                enable-background="new 0 0 24 24"
+                role="img"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  icon
+                </title>
+                <path
+                  d="M20.5 5h-17C2.7 5 2 5.7 2 6.5v11c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-11c0-.8-.7-1.5-1.5-1.5zM3 9h18v3H3V9zm18 8.5c0 .3-.2.5-.5.5h-17c-.3 0-.5-.2-.5-.5V13h18v4.5zM3 8V6.5c0-.3.2-.5.5-.5h17c.3 0 .5.2.5.5V8H3zm5 7H4v-1h4v1z"
+                />
+              </svg>
+            </div>
+            <h5
+              class="card-title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </h5>
+            <p
+              class="card-text"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a
+              class="read-more"
+              href="#"
+            >
+              <span
+                class="text"
+              >
+                Leggi di più
+              </span>
+              <svg
+                class="icon"
+                enable-background="new 0 0 24 24"
+                role="img"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  icon
+                </title>
+                <path
+                  d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Cards BigCardWithTag 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-12 col-lg-6"
+    >
+      <div
+        class="card-wrapper card-space"
+      >
+        <div
+          class="card-bg card-big no-after card"
+        >
+          <div
+            class="card-body"
+          >
+            <div
+              class="head-tags"
+            >
+              <a
+                class="card-tag"
+                href="#"
+              >
+                Tag
+              </a>
+              <span
+                class="data"
+              >
+                10/10/2018
+              </span>
+            </div>
+            <h5
+              class="card-title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </h5>
+            <p
+              class="card-text"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div
+              class="it-card-footer"
+            >
+              <span
+                class="card-signature"
+              >
+                di Federico De Paolis
+              </span>
+              <button
+                class="btn btn-outline-primary btn-sm"
+              >
+                Action
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Cards CardIcon 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-12 col-lg-6"
+    >
+      <div
+        class="card-wrapper"
+      >
+        <div
+          class="card"
+        >
+          <div
+            class="card-body"
+          >
+            <div
+              class="category-top categoryicon-top"
+            >
+              <svg
+                class="icon"
+                enable-background="new 0 0 24 24"
+                role="img"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  icon
+                </title>
+                <path
+                  d="M14.7 2H6.5C5.7 2 5 2.7 5 3.5v17c0 .8.7 1.5 1.5 1.5h11c.8 0 1.5-.7 1.5-1.5V6.3L14.7 2zm.3 1.7L17.3 6h-1.8c-.3 0-.5-.2-.5-.5V3.7zM17.5 21h-11c-.3 0-.5-.2-.5-.5v-17c0-.3.2-.5.5-.5H14v2.5c0 .8.7 1.5 1.5 1.5H18v13.5c0 .3-.2.5-.5.5zM8 9h8v1H8V9zm0 2h8v1H8v-1zm0 2h4v1H8v-1z"
+                />
+              </svg>
+              <span
+                class="text"
+              >
+                <span
+                  class="text"
+                >
+                  Category
+                  <br />
+                  Name
+                </span>
+              </span>
+            </div>
+            <a
+              href="#"
+            >
+              <h5
+                class="card-title"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+              </h5>
+            </a>
+            <p
+              class="card-text"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Cards CardIconAdvanced 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-12 col-lg-6"
+    >
+      <div
+        class="card-wrapper"
+      >
+        <div
+          class="card"
+        >
+          <div
+            class="card-body"
+          >
+            <div
+              class="category-top categoryicon-top"
+            >
+              <svg
+                class="icon"
+                enable-background="new 0 0 24 24"
+                role="img"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  icon
+                </title>
+                <path
+                  d="M14.7 2H6.5C5.7 2 5 2.7 5 3.5v17c0 .8.7 1.5 1.5 1.5h11c.8 0 1.5-.7 1.5-1.5V6.3L14.7 2zm.3 1.7L17.3 6h-1.8c-.3 0-.5-.2-.5-.5V3.7zM17.5 21h-11c-.3 0-.5-.2-.5-.5v-17c0-.3.2-.5.5-.5H14v2.5c0 .8.7 1.5 1.5 1.5H18v13.5c0 .3-.2.5-.5.5zM8 9h8v1H8V9zm0 2h8v1H8v-1zm0 2h4v1H8v-1z"
+                />
+              </svg>
+              <span
+                class="text"
+              >
+                <span
+                  class="text"
+                >
+                  (2) Files
+                </span>
+              </span>
+            </div>
+            <a
+              href="#"
+            >
+              <h5
+                class="card-title"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+              </h5>
+            </a>
+            <p
+              class="card-text"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a
+              class="simple-link"
+              href="#"
+            >
+              Link
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Cards CardTeaserMultiple 1`] = `
+<div>
+  <div
+    class="card-wrapper card-teaser-wrapper"
+  >
+    <div
+      class="card-teaser card"
+    >
+      <div
+        class="card-body"
+      >
+        <h5
+          class="card-title"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+        </h5>
+        <p
+          class="card-text"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+    <div
+      class="rounded shadow card-teaser card"
+    >
+      <div
+        class="card-body"
+      >
+        <div
+          class="card-title"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+        </div>
+        <p
+          class="card-text"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+    <div
+      class="rounded shadow card-teaser card"
+    >
+      <div
+        class="card-body"
+      >
+        <div
+          class="category-top categoryicon-top"
+        >
+          <svg
+            class="icon"
+            enable-background="new 0 0 24 24"
+            role="img"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              icon
+            </title>
+            <path
+              d="M11 22c-1.6.1-2.9-1.2-3-2.8V6c0-2.2 1.8-4 4-4s4 1.8 4 4v10h-1V6c0-1.7-1.3-3-3-3S9 4.3 9 6v13c0 1.1.9 2 2 2s2-.9 2-2V8c0-.6-.4-1-1-1s-1 .4-1 1v8h-1V8c0-1.1.9-2 2-2s2 .9 2 2v11c.1 1.6-1.2 2.9-2.8 3H11z"
+            />
+          </svg>
+          <span
+            class="text"
+          />
+        </div>
+        <a
+          href="#"
+        >
+          <h5
+            class="card-title"
+          >
+            Lorem ipsum dolor sit amet
+          </h5>
+        </a>
+        <p
+          class="card-text"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Cards CardWithShading 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-12 col-lg-6"
+    >
+      <div
+        class="card-wrapper card-space"
+      >
+        <div
+          class="card-bg card"
+        >
+          <div
+            class="card-body"
+          >
+            <h5
+              class="card-title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </h5>
+            <p
+              class="card-text"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a
+              class="read-more"
+              href="#"
+            >
+              <span
+                class="text"
+              >
+                Leggi di più
+              </span>
+              <svg
+                class="icon"
+                enable-background="new 0 0 24 24"
+                role="img"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  icon
+                </title>
+                <path
+                  d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Cards CardsWithImages 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-12 col-lg-6"
+    >
+      <div
+        class="card-wrapper"
+      >
+        <div
+          class="card-img no-after card"
+        >
+          <div
+            class="img-responsive-wrapper"
+          >
+            <div
+              class="img-responsive"
+            >
+              <figure
+                class="img-wrapper"
+              >
+                <img
+                  alt="imagealt"
+                  src="https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
+                  title="img title"
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            class="card-body"
+          >
+            <h5
+              class="card-title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </h5>
+            <a
+              class="read-more"
+              href="#"
+            >
+              <span
+                class="text"
+              >
+                Leggi di più
+              </span>
+              <svg
+                class="icon"
+                enable-background="new 0 0 24 24"
+                role="img"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  icon
+                </title>
+                <path
+                  d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-12 col-lg-6"
+    >
+      <div
+        class="card-wrapper"
+      >
+        <div
+          class="card-img no-after card"
+        >
+          <div
+            class="img-responsive-wrapper"
+          >
+            <div
+              class="img-responsive img-responsive-panoramic"
+            >
+              <figure
+                class="img-wrapper"
+              >
+                <img
+                  alt="imagealt"
+                  src="https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
+                  title="img title"
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            class="card-body"
+          >
+            <h5
+              class="card-title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </h5>
+            <a
+              class="read-more"
+              href="#"
+            >
+              <span
+                class="text"
+              >
+                Leggi di più
+              </span>
+              <svg
+                class="icon"
+                enable-background="new 0 0 24 24"
+                role="img"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  icon
+                </title>
+                <path
+                  d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-12 col-lg-6"
+    >
+      <div
+        class="card-wrapper"
+      >
+        <div
+          class="card-img no-after card"
+        >
+          <div
+            class="img-responsive-wrapper"
+          >
+            <div
+              class="img-responsive"
+            >
+              <figure
+                class="img-wrapper"
+              >
+                <img
+                  alt="imagealt"
+                  src="https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
+                  title="img title"
+                />
+              </figure>
+              <div
+                class="card-calendar d-flex flex-column justify-content-center"
+              >
+                <span
+                  class="card-date"
+                >
+                  31
+                </span>
+                <span
+                  class="card-day"
+                >
+                  novembre
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card-body"
+          >
+            <h5
+              class="card-title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </h5>
+            <a
+              class="read-more"
+              href="#"
+            >
+              <span
+                class="text"
+              >
+                Leggi di più
+              </span>
+              <svg
+                class="icon"
+                enable-background="new 0 0 24 24"
+                role="img"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  icon
+                </title>
+                <path
+                  d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-12 col-lg-6"
+    >
+      <div
+        class="card-wrapper"
+      >
+        <div
+          class="card-img no-after card"
+        >
+          <div
+            class="img-responsive-wrapper"
+          >
+            <div
+              class="img-responsive img-responsive-panoramic"
+            >
+              <figure
+                class="img-wrapper"
+              >
+                <img
+                  alt="imagealt"
+                  src="https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
+                  title="img title"
+                />
+              </figure>
+              <div
+                class="card-calendar d-flex flex-column justify-content-center"
+              >
+                <span
+                  class="card-date"
+                >
+                  31
+                </span>
+                <span
+                  class="card-day"
+                >
+                  novembre
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card-body"
+          >
+            <h5
+              class="card-title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </h5>
+            <a
+              class="read-more"
+              href="#"
+            >
+              <span
+                class="text"
+              >
+                Leggi di più
+              </span>
+              <svg
+                class="icon"
+                enable-background="new 0 0 24 24"
+                role="img"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  icon
+                </title>
+                <path
+                  d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Cards SimpleArticle 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-12 col-lg-6"
+    >
+      <div
+        class="card-wrapper"
+      >
+        <div
+          class="card"
+        >
+          <div
+            class="card-body"
+          >
+            <div
+              class="category-top"
+            >
+              <a
+                class="category"
+              >
+                Category
+              </a>
+              <span
+                class="data"
+              >
+                10/12/2018
+              </span>
+            </div>
+            <h5
+              class="big-heading card-title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+            </h5>
+            <p
+              class="card-text"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <span
+              class="card-signature"
+            >
+              di Federico De Paolis
+            </span>
+            <a
+              class="read-more"
+            >
+              <span
+                class="text"
+              >
+                Leggi di più
+              </span>
+              <svg
+                class="icon"
+                enable-background="new 0 0 24 24"
+                role="img"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  icon
+                </title>
+                <path
+                  d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Cards SimpleCard 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-12 col-lg-4"
+    >
+      <div
+        class="card-wrapper"
+      >
+        <div
+          class="card"
+        >
+          <div
+            class="card-body"
+          >
+            <h5
+              class="card-title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </h5>
+            <p
+              class="card-text"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Cards SimpleCardMultipleColumns 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-12 col-lg-4"
+    >
+      <div
+        class="card-wrapper"
+      >
+        <div
+          class="card"
+        >
+          <div
+            class="card-body"
+          >
+            <h5
+              class="card-title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </h5>
+            <p
+              class="card-text"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-12 col-lg-4"
+    >
+      <div
+        class="card-wrapper"
+      >
+        <div
+          class="card"
+        >
+          <div
+            class="card-body"
+          >
+            <h5
+              class="card-title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </h5>
+            <p
+              class="card-text"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-12 col-lg-4"
+    >
+      <div
+        class="card-wrapper"
+      >
+        <div
+          class="card"
+        >
+          <div
+            class="card-body"
+          >
+            <h5
+              class="card-title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </h5>
+            <p
+              class="card-text"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Cards SimpleCardTeaser 1`] = `
+<div>
+  <div
+    class="card-wrapper card-teaser-wrapper"
+  >
+    <div
+      class="card-teaser card"
+    >
+      <div
+        class="card-body"
+      >
+        <h5
+          class="card-title"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+        </h5>
+        <p
+          class="card-text"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Cards SpecialCard 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-12 col-lg-6"
+    >
+      <div
+        class="card-wrapper"
+      >
+        <a
+          class="card-img no-after special-card card"
+          href="#"
+        >
+          <div
+            class="img-responsive-wrapper"
+          >
+            <div
+              class="img-responsive"
+            >
+              <figure
+                class="img-wrapper"
+              >
+                <img
+                  alt="imagealt"
+                  src="https://via.placeholder.com/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO"
+                  title="img title"
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            class="card-body"
+          >
+            <div
+              class="head-tags"
+            >
+              <span
+                class="data"
+              >
+                10/10/2018
+              </span>
+            </div>
+            <h5
+              class="card-title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+            </h5>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

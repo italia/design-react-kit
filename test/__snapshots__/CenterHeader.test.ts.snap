@@ -1,0 +1,343 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Center CenterHeaderBasic 1`] = `
+<div>
+  <div
+    class="it-header-center-wrapper"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <div
+            class="it-header-center-content-wrapper"
+          >
+            <div
+              class="it-brand-wrapper"
+            >
+              <a>
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    it code circle icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+                <div
+                  class="it-brand-text"
+                >
+                  <h2
+                    class=""
+                  >
+                    Lorem Ipsum Lorem Ipsum
+                  </h2>
+                  <h3
+                    class="d-none d-md-block"
+                  >
+                    Inserire qui la tag line
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <div
+              class="it-right-zone"
+            >
+              <div
+                class="it-socials d-none d-md-flex"
+              >
+                <span>
+                  Seguici su
+                </span>
+                <ul>
+                  <li>
+                    <a
+                      aria-label="Facebook"
+                      href="#"
+                      target="_blank"
+                    >
+                      <svg
+                        class="icon"
+                        enable-background="new 0 0 24 24"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>
+                          icon
+                        </title>
+                        <path
+                          d="M13.6 22v-9.1h3.1l.5-3.6h-3.5V7.1c0-1 .3-1.7 1.8-1.7h1.9V2.1c-1.1-.1-2-.1-3-.1-2.7 0-4.6 1.7-4.6 4.7v2.6h-3v3.6h3.1V22h3.7z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      aria-label="Github"
+                      href="#"
+                      target="_blank"
+                    >
+                      <svg
+                        class="icon"
+                        enable-background="new 0 0 24 24"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>
+                          icon
+                        </title>
+                        <path
+                          d="M12 2c-4.9 0-9.1 3.6-9.9 8.4s2.1 9.5 6.7 11.1c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.1-.6-.6-1.2-1.1-1.5-.9-.6.1-.6.1-.6.6.1 1.2.5 1.5 1 .6 1 1.9 1.4 2.9.8 0-.5.3-1 .6-1.3-2.1-.2-4.5-1.1-4.5-4.9 0-1 .3-2 1-2.7-.3-.9-.2-1.8.1-2.6 0 0 .8-.3 2.8 1 1.6-.4 3.4-.4 5 0 1.9-1.3 2.7-1 2.7-1 .4.8.4 1.8.1 2.6.7.7 1 1.7 1 2.7 0 3.8-2.3 4.7-4.6 4.9.5.5.7 1.2.7 1.9v2.8c0 .4.2.6.7.5 4.7-1.5 7.5-6.2 6.7-11.1S16.9 2 12 2z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      aria-label="Twitter"
+                      href="#"
+                      target="_blank"
+                    >
+                      <svg
+                        class="icon"
+                        height="24"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>
+                          icon
+                        </title>
+                        <path
+                          d="M13.927 10.491 19.511 4h-1.323l-4.849 5.636L9.467 4H5l5.856 8.523L5 19.33h1.323l5.12-5.952 4.09 5.952H20l-6.073-8.839Zm-1.812 2.107-.594-.849-4.72-6.753h2.032l3.81 5.45.593.849 4.953 7.084h-2.033l-4.041-5.78v-.001Z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="it-search-wrapper"
+              >
+                <span
+                  class="d-none d-md-block"
+                >
+                  Cerca
+                </span>
+                <a
+                  aria-label="Cerca"
+                  class="search-link rounded-icon"
+                >
+                  <svg
+                    class="icon"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      icon
+                    </title>
+                    <path
+                      d="M21.9 21.1 16 15.3c1.3-1.5 2-3.4 2-5.3 0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8c1.9 0 3.8-.7 5.3-2l5.8 5.9.8-.8zM10 17c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Center HeaderCenterNarrow 1`] = `
+<div>
+  <div
+    class="it-header-center-wrapper it-small-header"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <div
+            class="it-header-center-content-wrapper"
+          >
+            <div
+              class="it-brand-wrapper"
+            >
+              <a>
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    it code circle icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+                <div
+                  class="it-brand-text"
+                >
+                  <h2
+                    class=""
+                  >
+                    Lorem Ipsum Lorem Ipsum
+                  </h2>
+                  <h3
+                    class="d-none d-md-block"
+                  >
+                    Inserire qui la tag line
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <div
+              class="it-right-zone"
+            >
+              <div
+                class="it-socials d-none d-md-flex"
+              >
+                <span>
+                  Seguici su
+                </span>
+                <ul>
+                  <li>
+                    <a
+                      aria-label="Facebook"
+                      href="#"
+                      target="_blank"
+                    >
+                      <svg
+                        class="icon"
+                        enable-background="new 0 0 24 24"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>
+                          icon
+                        </title>
+                        <path
+                          d="M13.6 22v-9.1h3.1l.5-3.6h-3.5V7.1c0-1 .3-1.7 1.8-1.7h1.9V2.1c-1.1-.1-2-.1-3-.1-2.7 0-4.6 1.7-4.6 4.7v2.6h-3v3.6h3.1V22h3.7z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      aria-label="Github"
+                      href="#"
+                      target="_blank"
+                    >
+                      <svg
+                        class="icon"
+                        enable-background="new 0 0 24 24"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>
+                          icon
+                        </title>
+                        <path
+                          d="M12 2c-4.9 0-9.1 3.6-9.9 8.4s2.1 9.5 6.7 11.1c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.1-.6-.6-1.2-1.1-1.5-.9-.6.1-.6.1-.6.6.1 1.2.5 1.5 1 .6 1 1.9 1.4 2.9.8 0-.5.3-1 .6-1.3-2.1-.2-4.5-1.1-4.5-4.9 0-1 .3-2 1-2.7-.3-.9-.2-1.8.1-2.6 0 0 .8-.3 2.8 1 1.6-.4 3.4-.4 5 0 1.9-1.3 2.7-1 2.7-1 .4.8.4 1.8.1 2.6.7.7 1 1.7 1 2.7 0 3.8-2.3 4.7-4.6 4.9.5.5.7 1.2.7 1.9v2.8c0 .4.2.6.7.5 4.7-1.5 7.5-6.2 6.7-11.1S16.9 2 12 2z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      aria-label="Twitter"
+                      href="#"
+                      target="_blank"
+                    >
+                      <svg
+                        class="icon"
+                        height="24"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>
+                          icon
+                        </title>
+                        <path
+                          d="M13.927 10.491 19.511 4h-1.323l-4.849 5.636L9.467 4H5l5.856 8.523L5 19.33h1.323l5.12-5.952 4.09 5.952H20l-6.073-8.839Zm-1.812 2.107-.594-.849-4.72-6.753h2.032l3.81 5.45.593.849 4.953 7.084h-2.033l-4.041-5.78v-.001Z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="it-search-wrapper"
+              >
+                <span
+                  class="d-none d-md-block"
+                >
+                  Cerca
+                </span>
+                <a
+                  aria-label="Cerca"
+                  class="search-link rounded-icon"
+                >
+                  <svg
+                    class="icon"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      icon
+                    </title>
+                    <path
+                      d="M21.9 21.1 16 15.3c1.3-1.5 2-3.4 2-5.3 0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8c1.9 0 3.8-.7 5.3-2l5.8 5.9.8-.8zM10 17c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,742 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Componenti/Chips ChipDisabilitata 1`] = `
+<div>
+  <div>
+    <div
+      class="chip chip-simple chip-lg chip-disabled"
+    >
+      <span
+        class="chip-label"
+      >
+        Label Disabled
+      </span>
+    </div>
+    <div
+      class="chip chip-simple chip-lg chip-disabled"
+    >
+      <span
+        class="chip-label"
+      >
+        Label Disabled
+      </span>
+      <button
+        aria-disabled="true"
+        class="btn btn- disabled"
+        disabled=""
+      >
+        <svg
+          class="icon"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="chip chip-lg chip-disabled"
+    >
+      <svg
+        class="icon icon-xs"
+        enable-background="new 0 0 24 24"
+        role="img"
+        viewBox="0 0 24 24"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          icon
+        </title>
+        <path
+          d="M12 2c-4.9 0-9.1 3.6-9.9 8.4s2.1 9.5 6.7 11.1c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.1-.6-.6-1.2-1.1-1.5-.9-.6.1-.6.1-.6.6.1 1.2.5 1.5 1 .6 1 1.9 1.4 2.9.8 0-.5.3-1 .6-1.3-2.1-.2-4.5-1.1-4.5-4.9 0-1 .3-2 1-2.7-.3-.9-.2-1.8.1-2.6 0 0 .8-.3 2.8 1 1.6-.4 3.4-.4 5 0 1.9-1.3 2.7-1 2.7-1 .4.8.4 1.8.1 2.6.7.7 1 1.7 1 2.7 0 3.8-2.3 4.7-4.6 4.9.5.5.7 1.2.7 1.9v2.8c0 .4.2.6.7.5 4.7-1.5 7.5-6.2 6.7-11.1S16.9 2 12 2z"
+        />
+      </svg>
+      <span
+        class="chip-label"
+      >
+        Label Disabled
+      </span>
+      <button
+        aria-disabled="true"
+        class="btn btn- disabled"
+        disabled=""
+      >
+        <svg
+          class="icon"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="chip chip-lg chip-disabled"
+    >
+      <div
+        class="avatar size-xs"
+      >
+        <img
+          alt="Mario Rossi"
+          src="https://randomuser.me/api/portraits/men/46.jpg"
+        />
+      </div>
+      <span
+        class="chip-label"
+      >
+        Label
+      </span>
+      <button
+        aria-disabled="true"
+        class="btn btn- disabled"
+        disabled=""
+      >
+        <svg
+          class="icon"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Chips Esempi 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-12 col-md-6"
+    >
+      <h4>
+        Versione Standard
+      </h4>
+      <p
+        class="mt-4 mb-2"
+      >
+        Solo testo
+      </p>
+      <div
+        class="chip chip-simple"
+      >
+        <span
+          class="chip-label"
+        >
+          Label
+        </span>
+      </div>
+      <p
+        class="mt-4 mb-2"
+      >
+        Testo e chiusura
+      </p>
+      <div
+        class="chip"
+      >
+        <span
+          class="chip-label"
+        >
+          Label
+        </span>
+        <button
+          class="btn btn-"
+        >
+          <svg
+            class="icon"
+            enable-background="new 0 0 24 24"
+            role="img"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              icon
+            </title>
+            <path
+              d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+            />
+          </svg>
+        </button>
+      </div>
+      <p
+        class="mt-4 mb-2"
+      >
+        Icona, testo e chiusura
+      </p>
+      <div
+        class="chip"
+      >
+        <svg
+          class="icon icon-xs"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="M12 2c-4.9 0-9.1 3.6-9.9 8.4s2.1 9.5 6.7 11.1c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.1-.6-.6-1.2-1.1-1.5-.9-.6.1-.6.1-.6.6.1 1.2.5 1.5 1 .6 1 1.9 1.4 2.9.8 0-.5.3-1 .6-1.3-2.1-.2-4.5-1.1-4.5-4.9 0-1 .3-2 1-2.7-.3-.9-.2-1.8.1-2.6 0 0 .8-.3 2.8 1 1.6-.4 3.4-.4 5 0 1.9-1.3 2.7-1 2.7-1 .4.8.4 1.8.1 2.6.7.7 1 1.7 1 2.7 0 3.8-2.3 4.7-4.6 4.9.5.5.7 1.2.7 1.9v2.8c0 .4.2.6.7.5 4.7-1.5 7.5-6.2 6.7-11.1S16.9 2 12 2z"
+          />
+        </svg>
+        <span
+          class="chip-label"
+        >
+          Label
+        </span>
+        <button
+          class="btn btn-"
+        >
+          <svg
+            class="icon"
+            enable-background="new 0 0 24 24"
+            role="img"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              icon
+            </title>
+            <path
+              d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+            />
+          </svg>
+        </button>
+      </div>
+      <p
+        class="mt-4 mb-2"
+      >
+        Avatar, testo e chiusura
+      </p>
+      <div
+        class="chip"
+      >
+        <div
+          class="avatar size-xs"
+        >
+          <img
+            alt="Mario Rossi"
+            src="https://randomuser.me/api/portraits/men/46.jpg"
+          />
+        </div>
+        <span
+          class="chip-label"
+        >
+          Label
+        </span>
+        <button
+          class="btn btn-"
+        >
+          <svg
+            class="icon"
+            enable-background="new 0 0 24 24"
+            role="img"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              icon
+            </title>
+            <path
+              d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      class="col-12 col-md-6"
+    >
+      <h4>
+        Versione Grande
+      </h4>
+      <p
+        class="mt-4 mb-2"
+      >
+        Solo testo
+      </p>
+      <div
+        class="chip chip-simple chip-lg"
+      >
+        <span
+          class="chip-label"
+        >
+          Label
+        </span>
+      </div>
+      <p
+        class="mt-4 mb-2"
+      >
+        Testo e chiusura
+      </p>
+      <div
+        class="chip chip-lg"
+      >
+        <span
+          class="chip-label"
+        >
+          Label
+        </span>
+        <button
+          class="btn btn-"
+        >
+          <svg
+            class="icon"
+            enable-background="new 0 0 24 24"
+            role="img"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              icon
+            </title>
+            <path
+              d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+            />
+          </svg>
+        </button>
+      </div>
+      <p
+        class="mt-4 mb-2"
+      >
+        Icona, testo e chiusura
+      </p>
+      <div
+        class="chip chip-lg"
+      >
+        <svg
+          class="icon icon-xs"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="M12 2c-4.9 0-9.1 3.6-9.9 8.4s2.1 9.5 6.7 11.1c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.1-.6-.6-1.2-1.1-1.5-.9-.6.1-.6.1-.6.6.1 1.2.5 1.5 1 .6 1 1.9 1.4 2.9.8 0-.5.3-1 .6-1.3-2.1-.2-4.5-1.1-4.5-4.9 0-1 .3-2 1-2.7-.3-.9-.2-1.8.1-2.6 0 0 .8-.3 2.8 1 1.6-.4 3.4-.4 5 0 1.9-1.3 2.7-1 2.7-1 .4.8.4 1.8.1 2.6.7.7 1 1.7 1 2.7 0 3.8-2.3 4.7-4.6 4.9.5.5.7 1.2.7 1.9v2.8c0 .4.2.6.7.5 4.7-1.5 7.5-6.2 6.7-11.1S16.9 2 12 2z"
+          />
+        </svg>
+        <span
+          class="chip-label"
+        >
+          Label
+        </span>
+        <button
+          class="btn btn-"
+        >
+          <svg
+            class="icon"
+            enable-background="new 0 0 24 24"
+            role="img"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              icon
+            </title>
+            <path
+              d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+            />
+          </svg>
+        </button>
+      </div>
+      <p
+        class="mt-4 mb-2"
+      >
+        Avatar, testo e chiusura
+      </p>
+      <div
+        class="chip chip-lg"
+      >
+        <div
+          class="avatar size-xs"
+        >
+          <img
+            alt="Mario Rossi"
+            src="https://randomuser.me/api/portraits/men/46.jpg"
+          />
+        </div>
+        <span
+          class="chip-label"
+        >
+          Label
+        </span>
+        <button
+          class="btn btn-"
+        >
+          <svg
+            class="icon"
+            enable-background="new 0 0 24 24"
+            role="img"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              icon
+            </title>
+            <path
+              d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Chips GruppiDiChip 1`] = `
+<div>
+  <div>
+    <div
+      class="chip chip-simple"
+    >
+      <span
+        class="chip-label"
+      >
+        Label
+      </span>
+    </div>
+    <div
+      class="chip"
+    >
+      <span
+        class="chip-label"
+      >
+        Label
+      </span>
+      <button
+        class="btn btn-"
+      >
+        <svg
+          class="icon"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="chip"
+    >
+      <svg
+        class="icon icon-xs"
+        enable-background="new 0 0 24 24"
+        role="img"
+        viewBox="0 0 24 24"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          icon
+        </title>
+        <path
+          d="M12 2c-4.9 0-9.1 3.6-9.9 8.4s2.1 9.5 6.7 11.1c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.1-.6-.6-1.2-1.1-1.5-.9-.6.1-.6.1-.6.6.1 1.2.5 1.5 1 .6 1 1.9 1.4 2.9.8 0-.5.3-1 .6-1.3-2.1-.2-4.5-1.1-4.5-4.9 0-1 .3-2 1-2.7-.3-.9-.2-1.8.1-2.6 0 0 .8-.3 2.8 1 1.6-.4 3.4-.4 5 0 1.9-1.3 2.7-1 2.7-1 .4.8.4 1.8.1 2.6.7.7 1 1.7 1 2.7 0 3.8-2.3 4.7-4.6 4.9.5.5.7 1.2.7 1.9v2.8c0 .4.2.6.7.5 4.7-1.5 7.5-6.2 6.7-11.1S16.9 2 12 2z"
+        />
+      </svg>
+      <span
+        class="chip-label"
+      >
+        Label 
+      </span>
+      <button
+        class="btn btn-"
+      >
+        <svg
+          class="icon"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="chip"
+    >
+      <div
+        class="avatar size-xs"
+      >
+        <img
+          alt="Mario Rossi"
+          src="https://randomuser.me/api/portraits/men/46.jpg"
+        />
+      </div>
+      <span
+        class="chip-label"
+      >
+        Label
+      </span>
+      <button
+        class="btn btn-"
+      >
+        <svg
+          class="icon"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+          />
+        </svg>
+      </button>
+    </div>
+    <hr />
+    <div
+      class="chip chip-simple chip-lg"
+    >
+      <span
+        class="chip-label"
+      >
+        Label
+      </span>
+    </div>
+    <div
+      class="chip chip-lg"
+    >
+      <span
+        class="chip-label"
+      >
+        Label
+      </span>
+      <button
+        class="btn btn-"
+      >
+        <svg
+          class="icon"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="chip chip-lg"
+    >
+      <svg
+        class="icon icon-xs"
+        enable-background="new 0 0 24 24"
+        role="img"
+        viewBox="0 0 24 24"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          icon
+        </title>
+        <path
+          d="M12 2c-4.9 0-9.1 3.6-9.9 8.4s2.1 9.5 6.7 11.1c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.1-.6-.6-1.2-1.1-1.5-.9-.6.1-.6.1-.6.6.1 1.2.5 1.5 1 .6 1 1.9 1.4 2.9.8 0-.5.3-1 .6-1.3-2.1-.2-4.5-1.1-4.5-4.9 0-1 .3-2 1-2.7-.3-.9-.2-1.8.1-2.6 0 0 .8-.3 2.8 1 1.6-.4 3.4-.4 5 0 1.9-1.3 2.7-1 2.7-1 .4.8.4 1.8.1 2.6.7.7 1 1.7 1 2.7 0 3.8-2.3 4.7-4.6 4.9.5.5.7 1.2.7 1.9v2.8c0 .4.2.6.7.5 4.7-1.5 7.5-6.2 6.7-11.1S16.9 2 12 2z"
+        />
+      </svg>
+      <span
+        class="chip-label"
+      >
+        Label 
+      </span>
+      <button
+        class="btn btn-"
+      >
+        <svg
+          class="icon"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="chip chip-lg"
+    >
+      <div
+        class="avatar size-xs"
+      >
+        <img
+          alt="Mario Rossi"
+          src="https://randomuser.me/api/portraits/men/46.jpg"
+        />
+      </div>
+      <span
+        class="chip-label"
+      >
+        Label
+      </span>
+      <button
+        class="btn btn-"
+      >
+        <svg
+          class="icon"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="m12.7 12 3.7 3.6-.8.8-3.6-3.7-3.6 3.7-.8-.8 3.7-3.6-3.7-3.6.8-.8 3.6 3.7 3.6-3.7.8.8-3.7 3.6z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Chips VariantiDiColore 1`] = `
+<div>
+  <div>
+    <p
+      class="mt-4 mb-2"
+    >
+      Primary color
+    </p>
+    <div
+      class="chip chip-simple chip-primary"
+    >
+      <span
+        class="chip-label"
+      >
+        Primary
+      </span>
+    </div>
+    <p
+      class="mt-4 mb-2"
+    >
+      Warning Color
+    </p>
+    <div
+      class="chip chip-simple chip-warning"
+    >
+      <span
+        class="chip-label"
+      >
+        Warning
+      </span>
+    </div>
+    <p
+      class="mt-4 mb-2"
+    >
+      Success Color
+    </p>
+    <div
+      class="chip chip-simple chip-success"
+    >
+      <span
+        class="chip-label"
+      >
+        Success
+      </span>
+    </div>
+    <p
+      class="mt-4 mb-2"
+    >
+      Danger Color
+    </p>
+    <div
+      class="chip chip-simple chip-danger"
+    >
+      <span
+        class="chip-label"
+      >
+        Danger
+      </span>
+    </div>
+    <p
+      class="mt-4 mb-2"
+    >
+      Info Color
+    </p>
+    <div
+      class="chip chip-simple chip-info"
+    >
+      <span
+        class="chip-label"
+      >
+        Information
+      </span>
+    </div>
+  </div>
+</div>
+`;

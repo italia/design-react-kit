@@ -1,0 +1,514 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Componenti/Button BottoniConIcona 1`] = `
+<div>
+  <div>
+    <button
+      class="me-2 btn-icon btn btn-success btn-lg"
+    >
+      <svg
+        class="icon icon-white"
+        enable-background="new 0 0 24 24"
+        role="img"
+        viewBox="0 0 24 24"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          icon
+        </title>
+        <path
+          d="M12 1.7 9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+      </svg>
+       Icon Button Large
+    </button>
+    <button
+      class="me-2 btn-icon btn btn-primary"
+    >
+      <svg
+        class="icon icon-white"
+        enable-background="new 0 0 24 24"
+        role="img"
+        viewBox="0 0 24 24"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          icon
+        </title>
+        <path
+          d="M12 1.7 9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+      </svg>
+       Icon Button
+    </button>
+    <button
+      class="me-2 btn-icon btn btn-danger btn-sm"
+    >
+      <svg
+        class="icon icon-white"
+        enable-background="new 0 0 24 24"
+        role="img"
+        viewBox="0 0 24 24"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          icon
+        </title>
+        <path
+          d="M12 1.7 9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+      </svg>
+       Icon Button Small
+    </button>
+    <button
+      class="btn-icon btn btn-info btn-xs"
+    >
+      <svg
+        class="icon icon-white"
+        enable-background="new 0 0 24 24"
+        role="img"
+        viewBox="0 0 24 24"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          icon
+        </title>
+        <path
+          d="M12 1.7 9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
+        />
+      </svg>
+       Icon Button Extra Small
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Button BottoniConIconaCerchiata 1`] = `
+<div>
+  <div>
+    <button
+      class="me-2 btn-icon btn btn-success btn-lg"
+    >
+      <span
+        class="rounded-icon"
+      >
+        <svg
+          class="icon icon-success"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="M12 13c2.2 0 4-1.8 4-4V6c0-2.2-1.8-4-4-4S8 3.8 8 6v3c0 2.2 1.8 4 4 4zM9 6c0-1.7 1.3-3 3-3s3 1.3 3 3v3c0 1.7-1.3 3-3 3s-3-1.3-3-3V6zm11 16h-1c0-3.9-3.1-7-7-7s-7 3.1-7 7H4c0-4.4 3.6-8 8-8s8 3.6 8 8z"
+          />
+        </svg>
+      </span>
+      <span>
+        Round Icon Large
+      </span>
+    </button>
+    <button
+      class="me-2 btn-icon btn btn-primary"
+    >
+      <span
+        class="rounded-icon"
+      >
+        <svg
+          class="icon icon-primary"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="M12 13c2.2 0 4-1.8 4-4V6c0-2.2-1.8-4-4-4S8 3.8 8 6v3c0 2.2 1.8 4 4 4zM9 6c0-1.7 1.3-3 3-3s3 1.3 3 3v3c0 1.7-1.3 3-3 3s-3-1.3-3-3V6zm11 16h-1c0-3.9-3.1-7-7-7s-7 3.1-7 7H4c0-4.4 3.6-8 8-8s8 3.6 8 8z"
+          />
+        </svg>
+      </span>
+      <span>
+        Round Icon
+      </span>
+    </button>
+    <button
+      class="me-2 btn-icon btn btn-danger btn-sm"
+    >
+      <span
+        class="rounded-icon"
+      >
+        <svg
+          class="icon icon-danger"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="M12 13c2.2 0 4-1.8 4-4V6c0-2.2-1.8-4-4-4S8 3.8 8 6v3c0 2.2 1.8 4 4 4zM9 6c0-1.7 1.3-3 3-3s3 1.3 3 3v3c0 1.7-1.3 3-3 3s-3-1.3-3-3V6zm11 16h-1c0-3.9-3.1-7-7-7s-7 3.1-7 7H4c0-4.4 3.6-8 8-8s8 3.6 8 8z"
+          />
+        </svg>
+      </span>
+      <span>
+        Round Icon Small
+      </span>
+    </button>
+    <button
+      class="btn-icon btn btn-info btn-xs"
+    >
+      <span
+        class="rounded-icon"
+      >
+        <svg
+          class="icon icon-secondary"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            icon
+          </title>
+          <path
+            d="M12 13c2.2 0 4-1.8 4-4V6c0-2.2-1.8-4-4-4S8 3.8 8 6v3c0 2.2 1.8 4 4 4zM9 6c0-1.7 1.3-3 3-3s3 1.3 3 3v3c0 1.7-1.3 3-3 3s-3-1.3-3-3V6zm11 16h-1c0-3.9-3.1-7-7-7s-7 3.1-7 7H4c0-4.4 3.6-8 8-8s8 3.6 8 8z"
+          />
+        </svg>
+      </span>
+      <span>
+        Round Icon Extra Small
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Button EsempioInterattivo 1`] = `
+<div>
+  <button
+    class="btn btn-primary"
+  >
+    Bottone
+  </button>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Button SfondoScuro 1`] = `
+<div>
+  <div
+    class="bg-dark py-1"
+  >
+    <div
+      class="btn-example"
+    >
+      <button
+        class="btn btn-primary"
+      >
+        Primary
+      </button>
+      <button
+        class="btn btn-outline-primary"
+      >
+        Primary Outline
+      </button>
+      <button
+        aria-disabled="true"
+        class="btn btn-primary disabled"
+        disabled=""
+      >
+        Primary disabled
+      </button>
+      <button
+        aria-disabled="true"
+        class="btn btn-outline-primary disabled"
+        disabled=""
+      >
+        Primary out. disabled
+      </button>
+    </div>
+    <div
+      class="btn-example"
+    >
+      <button
+        class="btn btn-secondary"
+      >
+        Secondary
+      </button>
+      <button
+        class="btn btn-outline-secondary"
+      >
+        Secondary Outline
+      </button>
+      <button
+        aria-disabled="true"
+        class="btn btn-secondary disabled"
+        disabled=""
+      >
+        Secondary disabled
+      </button>
+      <button
+        aria-disabled="true"
+        class="btn btn-outline-secondary disabled"
+        disabled=""
+      >
+        Secondary out. disabled
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Button Tipologie 1`] = `
+<div>
+  <div>
+    <a
+      class="btn btn-"
+      href="#"
+      role="button"
+    >
+      Link
+    </a>
+    <button
+      class="btn btn-"
+      type="submit"
+    >
+      Button
+    </button>
+    <input
+      class="btn btn-"
+      type="button"
+      value="Input"
+    />
+    <input
+      class="btn btn-"
+      type="submit"
+      value="Submit"
+    />
+    <input
+      class="btn btn-"
+      type="reset"
+      value="Reset"
+    />
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Button VariantiColore 1`] = `
+<div>
+  <div
+    class="btn-example"
+  >
+    <button
+      class="btn btn-primary"
+    >
+      Primary
+    </button>
+    <button
+      class="btn btn-outline-primary"
+    >
+      Primary Outline
+    </button>
+    <button
+      aria-disabled="true"
+      class="btn btn-primary disabled"
+      disabled=""
+    >
+      Primary disabled
+    </button>
+    <button
+      aria-disabled="true"
+      class="btn btn-outline-primary disabled"
+      disabled=""
+    >
+      Primary out. disabled
+    </button>
+  </div>
+  <div
+    class="btn-example"
+  >
+    <button
+      class="btn btn-secondary"
+    >
+      Secondary
+    </button>
+    <button
+      class="btn btn-outline-secondary"
+    >
+      Secondary Outline
+    </button>
+    <button
+      aria-disabled="true"
+      class="btn btn-secondary disabled"
+      disabled=""
+    >
+      Secondary disabled
+    </button>
+    <button
+      aria-disabled="true"
+      class="btn btn-outline-secondary disabled"
+      disabled=""
+    >
+      Secondary out. disabled
+    </button>
+  </div>
+  <div
+    class="btn-example"
+  >
+    <button
+      class="btn btn-success"
+    >
+      success
+    </button>
+    <button
+      class="btn btn-outline-success"
+    >
+      success Outline
+    </button>
+    <button
+      aria-disabled="true"
+      class="btn btn-success disabled"
+      disabled=""
+    >
+      success disabled
+    </button>
+    <button
+      aria-disabled="true"
+      class="btn btn-outline-success disabled"
+      disabled=""
+    >
+      success out. disabled
+    </button>
+  </div>
+  <div
+    class="btn-example"
+  >
+    <button
+      class="btn btn-danger"
+    >
+      danger
+    </button>
+    <button
+      class="btn btn-outline-danger"
+    >
+      danger Outline
+    </button>
+    <button
+      aria-disabled="true"
+      class="btn btn-danger disabled"
+      disabled=""
+    >
+      danger disabled
+    </button>
+    <button
+      aria-disabled="true"
+      class="btn btn-outline-danger disabled"
+      disabled=""
+    >
+      danger out. disabled
+    </button>
+  </div>
+  <div
+    class="btn-example"
+  >
+    <button
+      class="btn btn-warning"
+    >
+      warning
+    </button>
+    <button
+      class="btn btn-outline-warning"
+    >
+      warning Outline
+    </button>
+    <button
+      aria-disabled="true"
+      class="btn btn-warning disabled"
+      disabled=""
+    >
+      warning disabled
+    </button>
+    <button
+      aria-disabled="true"
+      class="btn btn-outline-warning disabled"
+      disabled=""
+    >
+      warning out. disabled
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Button VariantiDiDimensione 1`] = `
+<div>
+  <section
+    class="col-12"
+  >
+    <div>
+      <button
+        class="me-2 btn btn-primary btn-lg"
+      >
+        Primary Large
+      </button>
+      <button
+        class="btn btn-secondary btn-lg"
+      >
+        Secondary Large
+      </button>
+      <div
+        class="mt-3"
+      />
+      <button
+        class="me-2 btn btn-primary btn-sm"
+      >
+        Primary Small
+      </button>
+      <button
+        class="btn btn-secondary btn-sm"
+      >
+        Secondary Small
+      </button>
+      <div
+        class="mt-3"
+      />
+      <button
+        class="me-2 btn btn-primary btn-xs"
+      >
+        Primary Mini
+      </button>
+      <button
+        class="btn btn-secondary btn-xs"
+      >
+        Secondary Mini
+      </button>
+      <div
+        class="mt-3"
+      />
+      <button
+        class="btn btn-primary d-block w-100"
+      >
+        Primary Block
+      </button>
+      <button
+        class="btn btn-secondary d-block w-100"
+      >
+        Secondary Block
+      </button>
+    </div>
+  </section>
+</div>
+`;

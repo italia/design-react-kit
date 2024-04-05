@@ -1,0 +1,329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHeader 1`] = `
+<div>
+  <div
+    class="it-header-slim-wrapper"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <div
+            class="it-header-slim-wrapper-content"
+          >
+            <a
+              class="d-lg-block d-none navbar-brand"
+            >
+              Ente appartenenza/Owner
+            </a>
+            <div
+              class="nav-mobile"
+            >
+              <nav
+                class=""
+              >
+                <a
+                  aria-label="Toggle navigation"
+                  class="it-opener d-lg-none navbar-toggler"
+                  href="#"
+                >
+                  <span>
+                    Ente appartenenza/Owner
+                  </span>
+                  <svg
+                    class="icon"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      icon
+                    </title>
+                    <path
+                      d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
+                    />
+                  </svg>
+                </a>
+                <div
+                  class="navbar-collapsable collapse"
+                  style="display: none;"
+                >
+                  <div
+                    class="overlay"
+                    style="display: none;"
+                  />
+                  <div
+                    class="close-div visually-hidden"
+                  >
+                    <button
+                      class="btn close-menu"
+                      type="button"
+                    >
+                      <span
+                        class="it-close"
+                      />
+                      close
+                    </button>
+                  </div>
+                  <div
+                    class="link-list-wrapper"
+                  >
+                    <ul
+                      class="link-list"
+                    >
+                      <li>
+                        <a
+                          class="list-item"
+                          href="#"
+                        >
+                          Link 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="active list-item"
+                          href="#"
+                        >
+                          Link 2 Active
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div
+              class="it-header-slim-right-zone header-slim-right-zone"
+            >
+              <div
+                class="dropdown nav-item"
+              >
+                <a
+                  aria-haspopup="true"
+                  class="dropdown-toggle nav-link"
+                  data-bs-toggle="dropdown"
+                  role="button"
+                >
+                  ITA
+                  <svg
+                    class="icon icon-expand icon-xs ms-1"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      icon
+                    </title>
+                    <path
+                      d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
+                    />
+                  </svg>
+                </a>
+                <div
+                  class="dropdown-menu"
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col"
+                      size="12"
+                    >
+                      <div
+                        class="link-list-wrapper"
+                      >
+                        <ul
+                          class="link-list"
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <span>
+                                ITA
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <span>
+                                ENG
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="it-access-top-wrapper"
+              >
+                <button
+                  class="btn btn-primary btn-sm"
+                >
+                  Accedi
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHeaderFullResponse 1`] = `
+<div>
+  <div
+    class="it-header-slim-wrapper"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <div
+            class="it-header-slim-wrapper-content"
+          >
+            <a
+              class="d-lg-block navbar-brand"
+            >
+              Ente appartenenza/Owner
+            </a>
+            <div
+              class="it-header-slim-right-zone header-slim-right-zone"
+            >
+              <div
+                class="dropdown nav-item"
+              >
+                <a
+                  aria-haspopup="true"
+                  class="dropdown-toggle nav-link"
+                  data-bs-toggle="dropdown"
+                  role="button"
+                >
+                  ITA
+                  <svg
+                    class="icon icon-expand icon-xs ms-1"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      icon
+                    </title>
+                    <path
+                      d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
+                    />
+                  </svg>
+                </a>
+                <div
+                  class="dropdown-menu"
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col"
+                      size="12"
+                    >
+                      <div
+                        class="link-list-wrapper"
+                      >
+                        <ul
+                          class="link-list"
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <span>
+                                ITA
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <span>
+                                ENG
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="btn-icon btn-full btn btn-primary"
+                href="#"
+              >
+                <span
+                  class="rounded-icon"
+                >
+                  <svg
+                    class="icon icon-primary"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      icon
+                    </title>
+                    <path
+                      d="M12 13c2.2 0 4-1.8 4-4V6c0-2.2-1.8-4-4-4S8 3.8 8 6v3c0 2.2 1.8 4 4 4zM9 6c0-1.7 1.3-3 3-3s3 1.3 3 3v3c0 1.7-1.3 3-3 3s-3-1.3-3-3V6zm11 16h-1c0-3.9-3.1-7-7-7s-7 3.1-7 7H4c0-4.4 3.6-8 8-8s8 3.6 8 8z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="d-none d-lg-block"
+                >
+                  Accedi all'area personale
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,316 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Componenti/Progress _EsempiInterattivi 1`] = `
+<div>
+  <div>
+    <div
+      class="progress-bar-wrapper"
+    >
+      <div
+        class="progress-bar-label"
+      >
+        <span
+          class="visually-hidden"
+        >
+          progresso
+        </span>
+        25%
+      </div>
+      <div
+        class="progress"
+      >
+        <div
+          aria-valuemax="100"
+          aria-valuemin="0"
+          aria-valuenow="25"
+          class="progress-bar"
+          role="progressbar"
+          style="width: 25%;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Progress BottoneConProgressBar 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col-12 col-sm-6"
+      >
+        <p>
+          <strong>
+            Bottone primario
+          </strong>
+        </p>
+        <button
+          aria-disabled="true"
+          class="btn-progress btn btn-primary disabled"
+          disabled=""
+        >
+          Label bottone 
+          <svg
+            aria-hidden="true"
+            class="icon icon-light"
+            enable-background="new 0 0 24 24"
+            role="img"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              icon
+            </title>
+            <path
+              d="M12 2c-4.9 0-9.1 3.6-9.9 8.4s2.1 9.5 6.7 11.1c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.1-.6-.6-1.2-1.1-1.5-.9-.6.1-.6.1-.6.6.1 1.2.5 1.5 1 .6 1 1.9 1.4 2.9.8 0-.5.3-1 .6-1.3-2.1-.2-4.5-1.1-4.5-4.9 0-1 .3-2 1-2.7-.3-.9-.2-1.8.1-2.6 0 0 .8-.3 2.8 1 1.6-.4 3.4-.4 5 0 1.9-1.3 2.7-1 2.7-1 .4.8.4 1.8.1 2.6.7.7 1 1.7 1 2.7 0 3.8-2.3 4.7-4.6 4.9.5.5.7 1.2.7 1.9v2.8c0 .4.2.6.7.5 4.7-1.5 7.5-6.2 6.7-11.1S16.9 2 12 2z"
+            />
+          </svg>
+          <span>
+            <div
+              class="progress"
+            >
+              <div
+                class="progress-bar-label"
+              >
+                <span
+                  class="visually-hidden"
+                />
+              </div>
+              <div
+                aria-valuemax="100"
+                aria-valuemin="0"
+                aria-valuenow="50"
+                class="progress-bar"
+                role="progressbar"
+                style="width: 50%;"
+              />
+            </div>
+          </span>
+        </button>
+      </div>
+      <div
+        class="col-12 col-sm-6"
+      >
+        <p>
+          <strong>
+            Bottone secondario
+          </strong>
+        </p>
+        <button
+          aria-disabled="true"
+          class="btn-progress btn btn-secondary disabled"
+          disabled=""
+        >
+          Label bottone 
+          <svg
+            aria-hidden="true"
+            class="icon icon-light"
+            enable-background="new 0 0 24 24"
+            role="img"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              icon
+            </title>
+            <path
+              d="M12 2c-4.9 0-9.1 3.6-9.9 8.4s2.1 9.5 6.7 11.1c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.1-.6-.6-1.2-1.1-1.5-.9-.6.1-.6.1-.6.6.1 1.2.5 1.5 1 .6 1 1.9 1.4 2.9.8 0-.5.3-1 .6-1.3-2.1-.2-4.5-1.1-4.5-4.9 0-1 .3-2 1-2.7-.3-.9-.2-1.8.1-2.6 0 0 .8-.3 2.8 1 1.6-.4 3.4-.4 5 0 1.9-1.3 2.7-1 2.7-1 .4.8.4 1.8.1 2.6.7.7 1 1.7 1 2.7 0 3.8-2.3 4.7-4.6 4.9.5.5.7 1.2.7 1.9v2.8c0 .4.2.6.7.5 4.7-1.5 7.5-6.2 6.7-11.1S16.9 2 12 2z"
+            />
+          </svg>
+          <span>
+            <div
+              class="progress"
+            >
+              <div
+                class="progress-bar-label"
+              >
+                <span
+                  class="visually-hidden"
+                />
+              </div>
+              <div
+                aria-valuemax="100"
+                aria-valuemin="0"
+                aria-valuenow="50"
+                class="progress-bar"
+                role="progressbar"
+                style="width: 50%;"
+              />
+            </div>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Progress Colori 1`] = `
+<div>
+  <div>
+    <div
+      class="progress progress-color"
+    >
+      <div
+        class="progress-bar-label"
+      >
+        <span
+          class="visually-hidden"
+        />
+      </div>
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="25"
+        class="progress-bar bg-success"
+        role="progressbar"
+        style="width: 25%;"
+      />
+    </div>
+    <div
+      class="progress progress-color"
+    >
+      <div
+        class="progress-bar-label"
+      >
+        <span
+          class="visually-hidden"
+        />
+      </div>
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="33"
+        class="progress-bar bg-info"
+        role="progressbar"
+        style="width: 33%;"
+      />
+    </div>
+    <div
+      class="progress progress-color"
+    >
+      <div
+        class="progress-bar-label"
+      >
+        <span
+          class="visually-hidden"
+        />
+      </div>
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="50"
+        class="progress-bar bg-warning"
+        role="progressbar"
+        style="width: 50%;"
+      />
+    </div>
+    <div
+      class="progress progress-color"
+    >
+      <div
+        class="progress-bar-label"
+      >
+        <span
+          class="visually-hidden"
+        />
+      </div>
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="66"
+        class="progress-bar bg-danger"
+        role="progressbar"
+        style="width: 66%;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Progress Esempio 1`] = `
+<div>
+  <div
+    class="progress"
+  >
+    <div
+      class="progress-bar-label"
+    >
+      <span
+        class="visually-hidden"
+      />
+    </div>
+    <div
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="50"
+      class="progress-bar"
+      role="progressbar"
+      style="width: 50%;"
+    />
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Progress Etichette 1`] = `
+<div>
+  <div
+    class="progress-bar-wrapper"
+  >
+    <div
+      class="progress-bar-label"
+    >
+      <span
+        class="visually-hidden"
+      >
+        progresso
+      </span>
+      35%
+    </div>
+    <div
+      class="progress"
+    >
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="35"
+        class="progress-bar"
+        role="progressbar"
+        style="width: 35%;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Progress ProgressoIndeterminato 1`] = `
+<div>
+  <div
+    class="progress progress-indeterminate"
+  >
+    <div
+      class="progress-bar-label"
+    >
+      <span
+        class="visually-hidden"
+      >
+        In elaborazione...
+      </span>
+    </div>
+    <div
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="NaN"
+      class="progress-bar"
+      role="progressbar"
+    />
+  </div>
+</div>
+`;

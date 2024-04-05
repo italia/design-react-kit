@@ -1,0 +1,575 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Componenti/Accordion _Accordion 1`] = `
+<div>
+  <div
+    class="accordion"
+  >
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Accordion Group Item #1
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="custom-class accordion-body"
+        >
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </div>
+      </div>
+    </div>
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Accordion Group Item #2
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="custom-class accordion-body"
+        >
+          Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Accordion Group Item #3
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="custom-class accordion-body"
+        >
+          Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Accordion AccordionAnnidati 1`] = `
+<div>
+  <div
+    class="accordion"
+  >
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Elemento Accordion #1
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="accordion-body"
+        >
+          <div
+            class="accordion"
+          >
+            <div
+              class="accordion-item"
+            >
+              <div
+                class="accordion-header"
+              >
+                <button
+                  aria-expanded="false"
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  type="button"
+                >
+                  Elemento Accordion annidato #1
+                </button>
+              </div>
+              <div
+                class="collapse"
+              >
+                <div
+                  class="accordion-body"
+                >
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+            >
+              <div
+                class="accordion-header"
+              >
+                <button
+                  aria-expanded="false"
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  type="button"
+                >
+                  Elemento Accordion annidato #2
+                </button>
+              </div>
+              <div
+                class="collapse"
+              >
+                <div
+                  class="accordion-body"
+                >
+                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion-item"
+            >
+              <div
+                class="accordion-header"
+              >
+                <button
+                  aria-expanded="false"
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  type="button"
+                >
+                  Elemento Accordion annidato #3
+                </button>
+              </div>
+              <div
+                class="collapse"
+              >
+                <div
+                  class="accordion-body"
+                >
+                  Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="accordion-header"
+    >
+      <button
+        aria-expanded="false"
+        class="accordion-button collapsed"
+        data-bs-toggle="collapse"
+        type="button"
+      >
+        Elemento Accordion #2
+      </button>
+    </div>
+    <div
+      class="collapse"
+    >
+      <div
+        class="accordion-body"
+      >
+        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+    <div
+      class="accordion-header"
+    >
+      <button
+        aria-expanded="false"
+        class="accordion-button collapsed"
+        data-bs-toggle="collapse"
+        type="button"
+      >
+        Elemento Accordion #3
+      </button>
+    </div>
+    <div
+      class="collapse"
+    >
+      <div
+        class="accordion-body"
+      >
+        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Accordion GruppiDiElementiRichiudibili 1`] = `
+<div>
+  <div
+    class="accordion"
+  >
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Elemento Richiudibile #1
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="accordion-body"
+        >
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+        </div>
+      </div>
+    </div>
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Elemento Richiudibile #2
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="accordion-body"
+        >
+          Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Elemento Richiudibile #3
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="accordion-body"
+        >
+          Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Accordion HeaderAttivi 1`] = `
+<div>
+  <div
+    class="accordion accordion-background-active"
+  >
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Elemento Accordion #1
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="accordion-body"
+        >
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </div>
+      </div>
+    </div>
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Elemento Accordion #2
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="accordion-body"
+        >
+          Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Elemento Accordion #3
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="accordion-body"
+        >
+          Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Accordion HeaderHover 1`] = `
+<div>
+  <div
+    class="accordion accordion-background-hover"
+  >
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Elemento Accordion #1
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="accordion-body"
+        >
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </div>
+      </div>
+    </div>
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Elemento Accordion #2
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="accordion-body"
+        >
+          Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Elemento Accordion #3
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="accordion-body"
+        >
+          Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Accordion IconaSinistra 1`] = `
+<div>
+  <div
+    class="accordion accordion-left-icon"
+  >
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Elemento Accordion #1
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="accordion-body"
+        >
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </div>
+      </div>
+    </div>
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Elemento Accordion #2
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="accordion-body"
+        >
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </div>
+      </div>
+    </div>
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-header"
+      >
+        <button
+          aria-expanded="false"
+          class="accordion-button collapsed"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          Elemento Accordion #3
+        </button>
+      </div>
+      <div
+        class="collapse"
+      >
+        <div
+          class="accordion-body"
+        >
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

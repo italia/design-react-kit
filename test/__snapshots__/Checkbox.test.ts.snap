@@ -1,0 +1,347 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxBase 1`] = `
+<div>
+  <form
+    class="m-3"
+  >
+    <fieldset>
+      <legend>
+        Checkbox
+      </legend>
+      <div
+        class="form-check"
+      >
+        <input
+          aria-describedby="checkbox1Description"
+          class="form-control"
+          id="checkbox1"
+          type="checkbox"
+          value=""
+        />
+        <label
+          class="form-check-label"
+          for="checkbox1"
+        >
+          Checkbox di esempio
+        </label>
+      </div>
+    </fieldset>
+  </form>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxDisabilitato 1`] = `
+<div>
+  <section>
+    <fieldset>
+      <legend>
+        Checkbox
+      </legend>
+      <form
+        class="m-3"
+      >
+        <div
+          class="form-check"
+        >
+          <input
+            aria-describedby="disabled-checkbox1Description"
+            class="form-control"
+            disabled=""
+            id="disabled-checkbox1"
+            type="checkbox"
+            value=""
+          />
+          <label
+            class="form-check-label"
+            for="disabled-checkbox1"
+          >
+            Checkbox disabilitato non selezionato
+          </label>
+        </div>
+        <div
+          class="form-check"
+        >
+          <input
+            aria-describedby="disabled-checkbox2Description"
+            checked=""
+            class="form-control"
+            disabled=""
+            id="disabled-checkbox2"
+            type="checkbox"
+            value=""
+          />
+          <label
+            class="form-check-label"
+            for="disabled-checkbox2"
+          >
+            Checkbox disabilitato selezionato
+          </label>
+        </div>
+      </form>
+    </fieldset>
+  </section>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
+<div>
+  <section>
+    <div
+      class="m-5 row"
+    >
+      <div
+        class="col-md-5"
+      >
+        <fieldset>
+          <legend>
+            Checkbox
+          </legend>
+          <form
+            class=""
+          >
+            <div
+              class="form-check-group form-check"
+            >
+              <input
+                aria-describedby="group-checkbox1Description"
+                checked=""
+                class="form-control"
+                id="group-checkbox1"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="form-check-label"
+                for="group-checkbox1"
+              >
+                Checkbox selezionato
+              </label>
+            </div>
+            <div
+              class="form-check-group form-check"
+            >
+              <input
+                aria-describedby="group-checkbox2Description"
+                class="form-control"
+                id="group-checkbox2"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="form-check-label"
+                for="group-checkbox2"
+              >
+                Checkbox non selezionato
+              </label>
+            </div>
+            <div
+              class="form-check-group form-check"
+            >
+              <input
+                aria-describedby="group-checkbox3Description"
+                class="form-control"
+                disabled=""
+                id="group-checkbox3"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="form-check-label"
+                for="group-checkbox3"
+              >
+                Checkbox disabilitato non selezionato
+              </label>
+            </div>
+          </form>
+        </fieldset>
+      </div>
+      <div
+        class="col-md-2"
+      />
+      <div
+        class="col-md-5"
+      >
+        <fieldset>
+          <legend>
+            Checkbox
+          </legend>
+          <form
+            class=""
+          >
+            <div
+              class="form-check-group form-check"
+            >
+              <input
+                aria-describedby="group-checkbox4Description"
+                checked=""
+                class="form-control"
+                id="group-checkbox4"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="form-check-label"
+                for="group-checkbox4"
+              >
+                Checkbox selezionato
+              </label>
+              <small
+                class="form-text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+              </small>
+            </div>
+            <div
+              class="form-check-group form-check"
+            >
+              <input
+                aria-describedby="group-checkbox5Description"
+                class="form-control"
+                id="group-checkbox5"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="form-check-label"
+                for="group-checkbox5"
+              >
+                Checkbox non selezionato
+              </label>
+              <small
+                class="form-text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+              </small>
+            </div>
+            <div
+              class="form-check-group form-check"
+            >
+              <input
+                aria-describedby="group-checkbox6Description"
+                class="form-control"
+                disabled=""
+                id="group-checkbox6"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="form-check-label"
+                for="group-checkbox6"
+              >
+                Checkbox disabilitato non selezionato
+              </label>
+              <small
+                class="form-text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+              </small>
+            </div>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxInline 1`] = `
+<div>
+  <section>
+    <fieldset>
+      <legend>
+        Checkbox
+      </legend>
+      <form
+        class="m-3"
+      >
+        <div
+          class="form-check form-check-inline"
+        >
+          <input
+            aria-describedby="inline-checkbox1Description"
+            class="form-control"
+            id="inline-checkbox1"
+            type="checkbox"
+            value=""
+          />
+          <label
+            class="form-check-label"
+            for="inline-checkbox1"
+          >
+            Checkbox non selezionato
+          </label>
+        </div>
+        <div
+          class="form-check form-check-inline"
+        >
+          <input
+            aria-describedby="inline-checkbox2Description"
+            checked=""
+            class="form-control"
+            id="inline-checkbox2"
+            type="checkbox"
+            value=""
+          />
+          <label
+            class="form-check-label"
+            for="inline-checkbox2"
+          >
+            Checkbox selezionato
+          </label>
+        </div>
+      </form>
+    </fieldset>
+  </section>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxMixedButton 1`] = `
+<div>
+  <section>
+    <div
+      class="m-5 row"
+    >
+      <div
+        class="col-sm-12"
+      >
+        <fieldset>
+          <legend>
+            Checkbox
+          </legend>
+          <form
+            class="m-3"
+          >
+            <div
+              class="form-check form-check-inline"
+            >
+              <div
+                class="semi-checked form-group"
+              >
+                <label
+                  class=" "
+                  for="checkbox3"
+                >
+                  Mixed button attivo
+                </label>
+                <input
+                  aria-describedby="checkbox3Description"
+                  checked=""
+                  class="semi-checked form-control"
+                  id="checkbox3"
+                  indeterminate="true"
+                  type="checkbox"
+                  value=""
+                />
+                <div
+                  class="form-text"
+                />
+              </div>
+            </div>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+  </section>
+</div>
+`;

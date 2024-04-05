@@ -1,0 +1,290 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Form/Toggles GruppiDiToggles 1`] = `
+<div>
+  <div
+    class="m-5 row"
+  >
+    <div
+      class="col-md-5"
+    >
+      <form
+        class=""
+      >
+        <div
+          class="form-check-group form-check"
+        >
+          <div
+            class="toggles"
+          >
+            <label
+              class="form-check-label"
+            >
+              Toggle acceso
+              <input
+                checked=""
+                class="form-check-input"
+                type="checkbox"
+              />
+              <span
+                class="lever"
+              />
+            </label>
+          </div>
+        </div>
+        <div
+          class="form-check-group form-check"
+        >
+          <div
+            class="toggles"
+          >
+            <label
+              class="form-check-label"
+            >
+              Toggle spento
+              <input
+                class="form-check-input"
+                type="checkbox"
+              />
+              <span
+                class="lever"
+              />
+            </label>
+          </div>
+        </div>
+        <div
+          class="form-check-group form-check"
+        >
+          <div
+            class="toggles"
+          >
+            <label
+              class="form-check-label"
+            >
+              Toggle disabilitato
+              <input
+                class="form-check-input"
+                disabled=""
+                type="checkbox"
+              />
+              <span
+                class="lever"
+              />
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      class="col-md-2"
+    />
+    <div
+      class="col-md-5"
+    >
+      <form
+        class=""
+      >
+        <div
+          class="form-check-group form-check"
+        >
+          <div
+            class="toggles"
+          >
+            <label
+              class="form-check-label"
+            >
+              Toggle acceso
+              <input
+                checked=""
+                class="form-check-input"
+                type="checkbox"
+              />
+              <span
+                class="lever"
+              />
+            </label>
+          </div>
+          <small
+            class="form-text text-muted"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+          </small>
+        </div>
+        <div
+          class="form-check-group form-check"
+        >
+          <div
+            class="toggles"
+          >
+            <label
+              class="form-check-label"
+            >
+              Toggle spento
+              <input
+                class="form-check-input"
+                type="checkbox"
+              />
+              <span
+                class="lever"
+              />
+            </label>
+          </div>
+          <small
+            class="form-text text-muted"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+          </small>
+        </div>
+        <div
+          class="form-check-group form-check"
+        >
+          <div
+            class="toggles"
+          >
+            <label
+              class="form-check-label"
+            >
+              Toggle disabilitato
+              <input
+                class="form-check-input"
+                disabled=""
+                type="checkbox"
+              />
+              <span
+                class="lever"
+              />
+            </label>
+          </div>
+          <small
+            class="form-text text-muted"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+          </small>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form/Toggles Toggles 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-sm-6"
+    >
+      <div
+        class="m-3 form-check"
+      >
+        <div
+          class="toggles"
+        >
+          <label
+            class="form-check-label"
+          >
+            Label dell'interruttore 1
+            <input
+              class="form-check-input"
+              type="checkbox"
+            />
+            <span
+              class="lever"
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-sm-6"
+    >
+      <div
+        class="m-3 form-check"
+      >
+        <div
+          class="toggles"
+        >
+          <label
+            class="form-check-label"
+          >
+            <span>
+              Label dell'interruttore 2
+            </span>
+            <input
+              checked=""
+              class="form-check-input"
+              type="checkbox"
+            />
+            <span
+              class="lever"
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form/Toggles TogglesDisabilitate 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-sm-6"
+    >
+      <div
+        class="m-3 form-check"
+      >
+        <div
+          class="toggles"
+        >
+          <label
+            class="form-check-label"
+          >
+            Label dell'interruttore 1
+            <input
+              class="form-check-input"
+              disabled=""
+              type="checkbox"
+            />
+            <span
+              class="lever"
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-sm-6"
+    >
+      <div
+        class="m-3 form-check"
+      >
+        <div
+          class="toggles"
+        >
+          <label
+            class="form-check-label"
+          >
+            <span>
+              Label dell'interruttore 2
+            </span>
+            <input
+              checked=""
+              class="form-check-input"
+              disabled=""
+              type="checkbox"
+            />
+            <span
+              class="lever"
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

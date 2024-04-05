@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stories Snapshots Documentazione/Componenti/GoBack Esempi 1`] = `
+<div>
+  <a
+    class="go-back"
+    color="primary"
+  >
+    <svg
+      class="icon me-2 icon-primary"
+      enable-background="new 0 0 24 24"
+      role="img"
+      viewBox="0 0 24 24"
+      xml:space="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        icon
+      </title>
+      <path
+        d="M21 11.5H5.5l5.3-5.4-.7-.7L3.6 12l6.5 6.6.7-.7-5.3-5.4H21v-1z"
+      />
+    </svg>
+    Torna indietro
+  </a>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/GoBack Pulsanti 1`] = `
+<div>
+  <button
+    class="go-back btn btn-primary"
+    type="button"
+  >
+    <svg
+      class="icon me-2 icon-white"
+      enable-background="new 0 0 24 24"
+      role="img"
+      viewBox="0 0 24 24"
+      xml:space="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        icon
+      </title>
+      <path
+        d="M21 11.5H5.5l5.3-5.4-.7-.7L3.6 12l6.5 6.6.7-.7-5.3-5.4H21v-1z"
+      />
+    </svg>
+    Torna indietro
+  </button>
+   
+  <button
+    class="go-back btn btn-primary"
+    type="button"
+  >
+    <svg
+      class="icon me-2 icon-white"
+      enable-background="new 0 0 24 24"
+      role="img"
+      viewBox="0 0 24 24"
+      xml:space="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        icon
+      </title>
+      <path
+        d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
+      />
+    </svg>
+    Livello superiore
+  </button>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/GoBack PulsantiSoloIcona 1`] = `
+<div>
+  <button
+    class="go-back btn btn-primary"
+    type="button"
+  >
+    <svg
+      class="icon icon-white"
+      enable-background="new 0 0 24 24"
+      role="img"
+      viewBox="0 0 24 24"
+      xml:space="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        icon
+      </title>
+      <path
+        d="M21 11.5H5.5l5.3-5.4-.7-.7L3.6 12l6.5 6.6.7-.7-5.3-5.4H21v-1z"
+      />
+    </svg>
+  </button>
+   
+  <button
+    class="go-back btn btn-primary"
+    type="button"
+  >
+    <svg
+      class="icon icon-white"
+      enable-background="new 0 0 24 24"
+      role="img"
+      viewBox="0 0 24 24"
+      xml:space="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        icon
+      </title>
+      <path
+        d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
+      />
+    </svg>
+  </button>
+</div>
+`;
