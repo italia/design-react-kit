@@ -21,12 +21,13 @@ export interface SelectProps extends Omit<SelectHTMLAttributes<HTMLSelectElement
   onChange: (selectedValue: string) => void;
 }
 
-export const Select = ({ id, disabled = false, label, children, onChange }: SelectProps) => {
+export const Select = ({ id, disabled = false, label, children, onChange, ...rest }: SelectProps) => {
   const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
     onChange(e.target.value);
   };
 
   const inputProps = {
+    ...rest,
     disabled: disabled,
     onChange: handleChange
   };
