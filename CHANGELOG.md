@@ -1,3 +1,14 @@
+## [5.0.2](https://github.com/italia/design-react-kit/compare/v5.0.1...v5.0.2) (2024-04-08)
+
+
+### Bug Fixes
+
+* remove to from link list item ([788cf3f](https://github.com/italia/design-react-kit/commit/788cf3f700ca5a4137e114d1265beda26e8364d5))
+* select props on change ([61edd6e](https://github.com/italia/design-react-kit/commit/61edd6eab7922a0a59566ce9d73030d933a1f99f))
+* select should not ignore provided props ([571b334](https://github.com/italia/design-react-kit/commit/571b334bff225de4177556d98790fb87c608cfc2))
+
+
+
 ## [5.0.1](https://github.com/italia/design-react-kit/compare/v5.0.0...v5.0.1) (2024-03-22)
 
 
