@@ -1,0 +1,25 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as GoBackStories from '../Components/GoBack.stories';
+
+<Meta of={GoBackStories} />
+
+# Torna indietro
+
+## Esempio link
+
+Per visualizzare il Back to top nella posizione corretta è necessario scrollare questa pagina. L'esempio del codice
+sottostante sarà visibile solo a scroll avvenuto.
+
+<Canvas of={GoBackStories.Esempi}></Canvas>
+
+### Pulsanti
+
+Aggiungendo la prop `up` si ottiene l'icona che punta in alto.
+
+<Canvas of={GoBackStories.Pulsanti} />
+
+### Pulsanti con sola icona
+
+Non specificando il testo, il pulsante rimane con sola icona.
+
+<Canvas of={GoBackStories.PulsantiSoloIcona} />

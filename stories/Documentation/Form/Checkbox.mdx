@@ -1,0 +1,34 @@
+import { Canvas, Meta, Story } from '@storybook/blocks';
+import * as CheckboxStories from '../../Components/Form/Checkbox.stories';
+
+<Meta of={CheckboxStories} />
+
+# Checkbox
+
+### Elementi e stili per la creazione di checkbox accessibili.
+
+<Canvas of={CheckboxStories.CheckboxBase} />
+
+## Inline
+
+Per allineare orizzontalmente le checkbox basterà aggiungere la _prop_ `inline` al componente `FormGroup` padre.
+
+<Canvas of={CheckboxStories.CheckboxInline} />
+
+## Disabilitato
+
+Affinchè i campi checkbox risultino disabilitati occorrerà aggiungere la _prop_ `disabled` al componente `Input`.
+
+<Canvas of={CheckboxStories.CheckboxDisabilitato} />
+
+## Gruppi
+
+Per poter raggruppare gli elementi checkbox occorrerà aggiungere al componente `FormGroup` la classe `.form-check-group`. L’elemento grafico di spunta verrà allineato alla destra del contenuto testuale.
+
+<Canvas of={CheckboxStories.CheckboxGruppi} />
+
+## Mixed Button
+
+Per ottenere uno stato di tipo Mixed basterà aggiungere la classe `.semi-checked` al componente Input.
+
+<Canvas of={CheckboxStories.CheckboxMixedButton} />

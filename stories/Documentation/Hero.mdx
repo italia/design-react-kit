@@ -1,0 +1,91 @@
+import { ArgTypes, Canvas, Meta, Story } from '@storybook/blocks';
+import { Hero, HeroBackground, HeroBody, HeroButton, HeroCategory, HeroTitle } from '../../src';
+import * as HeroStories from '../Components/Hero.stories';
+
+<Meta of={HeroStories} />
+
+# Hero
+
+## Lo Hero (ciò che Bootstrap definisce “Jumbotron”) è un componente per la presentazione di contenuti in evidenza.
+
+Il cosiddetto `Hero` è un componente leggero e flessibile che può facoltativamente estendere l’intera finestra per mostrare i messaggi in evidenza sul tuo sito. Di seguito una serie di esempi con la descrizione degli elementi e delle classi applicabili.
+
+Il componente `Hero` può contenere
+
+- Sub head - `HeroCategory`
+- Heading (titolo) - `HeroTitle`
+- Paragrafo - `HeroBody`
+- Call to action - `HeroButton`
+- Immagine di background - `HeroBackground`
+
+### Con immagine
+
+<Canvas of={HeroStories.HeroConSfondo} />
+
+### Versione small
+
+Per ottenere il componente `Hero` nella sua versione più piccola utilizzare l'attributo `small`.
+
+<Canvas of={HeroStories.HeroConSfondoSmall} />
+
+## Con contenuti testuali
+
+Esempio di Hero con tutti i componenti testuali
+
+<Canvas of={HeroStories.HeroConTesto} />
+
+### Con contenuti testuali centrati
+
+Per ottenere il componente `Hero` centrando i testi orizzontalmente aggiungere l'attributo `centered`.
+
+<Canvas of={HeroStories.HeroConTestoCentrato} />
+
+## Con testi ed immagine di sfondo
+
+Per visualizzare i testi in overlay sulle immagini, viene creato un div scuro in opacità per migliorare la leggibilità del testo in caso di immagini dai toni chiari. Aggiungere al componente `Hero` l'attributo `overlay` con il colore desiderato (tra `dark`, `primary` o `filter`). Di seguito l'esempio con `overlay='dark'`:
+
+<Canvas of={HeroStories.HeroConTestoSuSfondo} />
+
+### Con overlay di colore primario
+
+Per un div opaco di colore primario utilizzare `overlay='primary'`:
+
+<Canvas of={HeroStories.HeroConTestoSuSfondoOverlayPrimario} />
+
+### Con overlay e filtro di colore primario
+
+Per aggiungere un filtro di tipo “screen” utilizzare `overlay="filter"`:
+
+<Canvas of={HeroStories.HeroConSfondoOverlayFiltro} />
+
+## Con immagine e margine negativo per contenuti sovrapposti
+
+In alcuni casi, il contenuto che seguirà la card può sovrapporsi al componente `Hero`. Aggiungere l'attributo `overlap` per far si che il contenuto seguente si sovrapponga al componente `Hero` (in questo caso il componente seguente è una card):
+
+<Canvas of={HeroStories.HeroConSfondoMargineNegativo} />
+
+## Argomenti componente
+
+### Hero
+
+<ArgTypes of={Hero} />
+
+### HeroBackground
+
+<ArgTypes of={HeroBackground} />
+
+### HeroBody
+
+<ArgTypes of={HeroBody} />
+
+### HeroButton
+
+<ArgTypes of={HeroButton} />
+
+### HeroCategory
+
+<ArgTypes of={HeroCategory} />
+
+### HeroTitle
+
+<ArgTypes of={HeroTitle} />

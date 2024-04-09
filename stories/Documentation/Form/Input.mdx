@@ -1,0 +1,310 @@
+import { ArgTypes, Canvas, Meta, Story } from '@storybook/blocks';
+import { Callout, CalloutText, CalloutTitle, Input } from '../../../src';
+import * as InputStories from '../../Components/Form/Input.stories';
+
+<Meta of={InputStories} />
+
+# Input
+
+### Elementi e stili per la creazione di input accessibili e responsivi.
+
+## Esempi di campi di input
+
+Per il corretto funzionamento degli elementi di tipo `<input>`, è di fondamentale importanza l’utilizzo uno degli appositi attributi type (ad esempio, `email` per l’inserimento di indirizzi email o `number` per informazioni numeriche), in modo da sfruttare i controlli di input più recenti come la verifica dell’email, l’utilizzo di metodo di input numerico e altro.
+
+Per l’inserimento guidato di campi di tipo numerico si può anche utilizzare l’elemento dedicato che fornisce migliorie per la validazione e per l’esperienza complessiva, descritto alla pagina dedicata all’input numerico.
+
+<Canvas of={InputStories.EsempiDiCampiDiInput} />
+
+## Utilizzo di placeholder e label
+
+Si può includere un’etichetta che si riposiziona automaticamente quando l’utente utilizza il campo di testo.
+
+Si può abbinare all’etichetta un placeholder (testo di esempio) per ulteriore chiarezza.
+
+In caso di necessità, è anche possibile utilizzare un ulteriore contenuto testuale sotto il campo di testo, aggiungendo il testo nel modificatore `validationText`.
+
+<div className='docs'>
+  <Callout color='warning'>
+    <CalloutTitle>
+      <span className='text'>Associazione del testo di aiuto con gli elementi del modulo form</span>
+    </CalloutTitle>
+    <CalloutText>
+      Il testo di aiuto deve essere esplicitamente associato agli elementi del mudulo form a cui si riferisce
+      utilizzando l’attributo aria-describedby. Ciò garantirà che le tecnologie assistive, come gli screenreader,
+      leggano questo testo di aiuto quando l’utente avrà il focus sull’elemento.
+    </CalloutText>
+  </Callout>
+</div>
+
+<Canvas of={InputStories.UtilizzoDiPlaceholderELabel} />
+
+## Input con icona o bottoni
+
+<Canvas of={InputStories.InputConIconaOBottoni} />
+
+#### Codice
+
+```tsx
+const [isFocused1, toggleFocus1] = useState(false);
+const [isFocused2, toggleFocus2] = useState(false);
+const [isFocused3, toggleFocus3] = useState(false);
+
+const toggleFocusLabel1 = () => toggleFocus1(true);
+// @ts-ignore: ignore types for now
+const toggleBlurLabel1 = (e) => {
+  if (e.target.value === '') {
+    toggleFocus1(!isFocused1);
+  }
+};
+const toggleFocusLabel2 = () => toggleFocus2(true);
+// @ts-ignore: ignore types for now
+const toggleBlurLabel2 = (e) => {
+  if (e.target.value === '') {
+    toggleFocus2(!isFocused2);
+  }
+};
+const toggleFocusLabel3 = () => toggleFocus3(true);
+// @ts-ignore: ignore types for no}w
+const toggleBlurLabel3 = (e) => {
+  if (e.target.value === '') {
+    toggleFocus3(!isFocused3);
+  }
+};
+return (
+  <div>
+    <div className='form-group'>
+      <div className='input-group'>
+        <span className='input-group-text'>
+          <Icon icon='it-pencil' aria-hidden size='sm' />
+        </span>
+        <label htmlFor='input-group-1' className={isFocused1 ? 'active' : ''}>
+          Con Etichetta
+        </label>
+        <input
+          type='text'
+          className={isFocused1 ? 'form-control focus--mouse' : 'form-control'}
+          onFocus={toggleFocusLabel1}
+          onBlur={toggleBlurLabel1}
+          id='input-group-1'
+          name='input-group-1'
+        />
+      </div>
+    </div>
+    <div className='form-group'>
+      <div className='input-group'>
+        <span className='input-group-text'>
+          <Icon icon='it-pencil' color='danger' aria-hidden size='sm' />
+        </span>
+        <label htmlFor='input-group-2' className='active'>
+          Con Etichetta e placeholder
+        </label>
+        <input
+          type='text'
+          className={isFocused2 ? 'form-control focus--mouse' : 'form-control'}
+          onFocus={toggleFocusLabel2}
+          onBlur={toggleBlurLabel2}
+          id='input-group-2'
+          name='input-group-2'
+          placeholder='Lorem Ipsum'
+        />
+      </div>
+    </div>
+    <div className='form-group'>
+      <div className='input-group'>
+        <span className='input-group-text'>
+          <Icon icon='it-pencil' color='primary' aria-hidden size='sm' />
+        </span>
+        <label htmlFor='input-group-3' className={isFocused3 ? 'active' : ''}>
+          Con Etichetta e bottone di tipo primary
+        </label>
+        <input
+          type='text'
+          className={isFocused3 ? 'form-control focus--mouse' : 'form-control'}
+          onFocus={toggleFocusLabel3}
+          onBlur={toggleBlurLabel3}
+          id='input-group-3'
+          name='input-group-3'
+        />
+        <div className='input-group-append'>
+          <button className='btn btn-primary' type='button' id='button-3'>
+            Invio
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+```
+
+## Input password
+
+Per rendere più semplice l’inserimento della password, l’elemento è stato dotato di un visualizzatore dei caratteri digitati.
+
+<div className='docs'>
+  <Callout color='important'>
+    <CalloutTitle>
+      <span className='text'>Componente PasswordInput rimosso</span>
+    </CalloutTitle>
+    <CalloutText>
+      Qualora si fosse usato in precedenza il componente <code>PasswordInput</code> è possibile migrare all'esempio di
+      seguito.
+    </CalloutText>
+  </Callout>
+</div>
+
+<Canvas of={InputStories.InputPassword} />
+
+<div className='docs'>
+  <Callout color='warning'>
+    <CalloutTitle>
+      <span className='text'>Nota</span>
+    </CalloutTitle>
+    <CalloutText>
+      Al momento non è ancora disponibili la funzionalità di "password strength" in questo Design React Kit.
+    </CalloutText>
+  </Callout>
+</div>
+
+## Disabilitato
+
+Aggiungi il modificatore `disabled` ad un componente Input per impedire la modifica del valore contenuto e non inviare i dati in esso contenuti.
+
+<Canvas of={InputStories.Disabilitato} />
+
+## Readonly
+
+Aggiungi il modificatore `readOnly` ad un input per impedire la modifica del valore contenuto.
+
+<Canvas of={InputStories.Readonly} />
+
+### Readonly normalizzato
+
+Se per qualche motivo vuoi avere i componenti `<Input readOnly/>` nella forma stilizzata come testo normale usa il modificatore `normalized`.
+
+<Canvas of={InputStories.ReadonlyNormalizzato} />
+
+## Input con risultato ricerca o autocompletamento
+
+### Autocompletamento Accessibile con dati
+
+Cerca una regione italiana per verificarne il comportamento.
+
+Il completamento automatico è un componente che aiuta gli utenti a scegliere le risposte da un elenco fornito.
+
+Per la creazione del componente, è stato utilizzato il plugin <a target="_blank" href="https://github.com/alphagov/accessible-autocomplete">Accessible autocomplete</a>.
+
+Per una corretta implementazione si consiglia di consultare la <a target="_blank" href="https://alphagov.github.io/accessible-autocomplete/">documentazione</a>.
+
+<Canvas of={InputStories._InputAutocompleteConDatiAccessibile} />
+
+#### Codice
+
+```tsx
+const suggest = (query: any, populateResults: any) => {
+  const filteredResults = multiOptions.filter((i) => i.label.toLowerCase().includes(query.toLowerCase()));
+  let data = filteredResults.map((item) => {
+    return item.label;
+  });
+  populateResults(data);
+};
+
+return (
+  <FormGroup className='select-wrapper'>
+    <label htmlFor='autocomplete'>Provincia</label>
+    <Autocomplete
+      id='autocomplete'
+      source={suggest}
+      placeholder={'Testo da cercare'}
+      defaultValue={''}
+      displayMenu={'inline'}
+      tNoResults={() => 'Nessun risultato'}
+    />
+  </FormGroup>
+);
+```
+
+## Input Ora
+
+### Campo per la selezione di un orario.
+
+Il componente input time, o timepicker, è un componente dedicato alla selezione di un orario.
+
+Clicca sull’icona a destra per visualizzare il timepicker.
+
+<Canvas of={InputStories.InputHourpicker} />
+
+#### Codice
+
+```tsx
+const [value, setValue] = useState('');
+
+return (
+  <Input
+    type='time'
+    label='Hourpicker'
+    className='active'
+    value={value}
+    onChange={(ev) => {
+      setValue(ev.target.value);
+    }}
+  />
+);
+```
+
+## Input Calendario
+
+### Datepicker
+
+Campo di tipo calendario per la selezione di giorni dell’anno.
+
+Clicca sull’icona a destra per visualizzare il datepicker.
+
+<div className='docs'>
+  <Callout highlight>
+    <CalloutText>
+      <span className='text'>
+        Assicurarsi di aggiungere alla label la classe active per impedire la sovrapposizione della label al campo.
+      </span>
+    </CalloutText>
+  </Callout>
+</div>
+
+<Canvas of={InputStories.InputDatepicker} />
+
+#### Codice
+
+```tsx
+const [value, setValue] = useState('');
+
+return (
+  <Input
+    type='date'
+    label='Datepicker'
+    className='active'
+    placeholder='22/12/2023'
+    value={value}
+    onChange={(ev) => {
+      setValue(ev.target.value);
+    }}
+  />
+);
+```
+
+## Area di testo
+
+Per permettere agli utenti di inserire del testo (ad esempio per lasciare commenti o informazioni), è bene utilizzare un elemento di tipo `<textarea>` ridimensionabile.
+
+Includendo l’elemento all’interno di un .form-group, la label assumerà lo stesso comportamento dinamico dei campi di input.
+
+<Canvas of={InputStories.AreaDiTesto} />
+
+### Con placeholder
+
+<Canvas of={InputStories.AreaDiTestoConSegnaposto} />
+
+## Argomenti componente
+
+### Input
+
+<ArgTypes of={Input} />

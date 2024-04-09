@@ -1,0 +1,85 @@
+import { ArgTypes, Canvas, Controls, Meta } from '@storybook/blocks';
+import { Code } from '@storybook/components';
+import { Callout, CalloutText, Rating } from '../../src';
+import * as RatingStories from '../Components/Rating.stories';
+
+<Meta of={RatingStories} />
+
+# Rating
+
+## Per esprimere una valutazione su un contenuto
+
+### Esempio
+
+<Canvas of={RatingStories.RatingBase} />
+<Controls of={RatingStories.RatingBase} />
+
+### Con label
+
+Per visualizzare una label utilizzare l'attributo `legend` del componente `Rating`. In questo caso viene passato un nodo tsx all'attributo, che però accetta anche una struttura JSON (vedi documentazione).
+
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutText>
+      L'attributo <Code>&lt;legend&gt;</Code> contiene testo aggiuntivo per Screen Reader all’interno di uno
+      <Code>&lt;span class="visually-hidden"&gt;</Code>
+      .<br />
+      La label con il numero di stelle dev’essere contenuta in uno <Code>&lt;span&gt;</Code> semplice.
+    </CalloutText>
+  </Callout>
+</div>
+
+<Canvas of={RatingStories.RatingConLabel} />
+
+#### Codice
+
+```tsx
+const [rating, setRating] = useState(4);
+return (
+  <Rating
+    value={rating}
+    legend={
+      <>
+        <span className='visually-hidden'>Valutazione</span> <span>{rating} stelle</span>
+        <span className='visually-hidden'>su 5</span>
+      </>
+    }
+    inputs={['star1b', 'star2b', 'star3b', 'star4b', 'star5b']}
+    name='ratingB'
+    onChangeRating={setRating}
+  />
+);
+```
+
+### Sola lettura
+
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutText>
+      Per rendere accessibile il contenuto è necessario aggiungere l'attributo <Code>&lt;legend&gt;</Code> con classe{' '}
+      <code>.visually-hidden</code>.
+    </CalloutText>
+  </Callout>
+</div>
+
+Aggiungendo l'attributo `readOnly` si ottiene un Rating non modificabile di sola lettura.
+
+<Canvas of={RatingStories.RatingReadOnly} />
+
+I seguenti valori per l'attributo `legend` sono equivalenti:
+
+```tsx
+<Rating legend={{ content: 'Valutazione 4 stelle su 5', srOnly: true }} />
+```
+
+oppure
+
+```tsx
+<Rating legend={<legend className='visually-hidden'>Valutazione 4 stelle su 5</legend>} />
+```
+
+## Argomenti componente
+
+### Rating
+
+<ArgTypes of={Rating} />

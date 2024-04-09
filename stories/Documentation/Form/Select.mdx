@@ -1,0 +1,91 @@
+import { ArgTypes, Canvas, Meta, Story } from '@storybook/blocks';
+import { Select } from '../../../src';
+import * as SelectStories from '../../Components/Form/Select.stories';
+
+<Meta of={SelectStories} />
+
+# Select
+
+### Il classico “menu a tendina”, in nuove varianti.
+
+## Select classica
+
+La `Select` accetta come _children_ le opzioni selezionabili e ha una _prop_ `label`con cui si definisce l'etichetta del
+campo.
+
+<Canvas of={SelectStories.SelectClassica} />
+
+#### Codice
+
+```tsx
+const [, setValue] = useState<string>();
+
+const handleChange = (selectedOption: string) => setValue(selectedOption);
+
+return (
+  <Select id='example-reactstrap' label='Etichetta di esempio' onChange={handleChange}>
+    <option value=''>Scegli un'opzione</option>
+    <option value='Value 1'>Lorem ipsum dolor sit amet</option>
+    <option value='Value 2'>Duis vestibulum eleifend libero</option>
+    <option value='Value 3'>Phasellus pretium orci sed odio tempus</option>
+    <option value='Value 4'>Vestibulum bibendum ex vel augue porttitor sodales</option>
+    <option value='Value 5'>Praesent quis elementum turpis</option>
+  </Select>
+);
+```
+
+## Select disabilitata
+
+Per disabilitare una select, aggiungere la _prop_ `disabled` al componente `Select`.
+
+<Canvas of={SelectStories.SelectDisabilitata} />
+
+#### Codice
+
+```tsx
+const [, setValue] = useState<string>();
+
+const handleChange = (selectedOption: string) => setValue(selectedOption);
+
+return (
+  <Select id='example-reactstrap' label='Etichetta di esempio' onChange={handleChange} disabled>
+    <option value=''>Scegli un'opzione</option>
+    <option value='Value 1'>Lorem ipsum dolor sit amet</option>
+    <option value='Value 2'>Duis vestibulum eleifend libero</option>
+    <option value='Value 3'>Phasellus pretium orci sed odio tempus</option>
+    <option value='Value 4'>Vestibulum bibendum ex vel augue porttitor sodales</option>
+    <option value='Value 5'>Praesent quis elementum turpis</option>
+  </Select>
+);
+```
+
+## Select con gruppi
+
+<Canvas of={SelectStories.SelectConGruppi} />
+
+#### Codice
+
+```tsx
+const [, setValue] = useState<string>();
+
+const handleChange = (selectedOption: string) => setValue(selectedOption);
+
+return (
+  <Select id='example-reactstrap' label='Etichetta di esempio' onChange={handleChange}>
+    <option value=''>Scegli un'opzione</option>
+    <optgroup label='Gruppo 1'>
+      <option value='Value 1'>Lorem ipsum dolor sit amet</option>
+      <option value='Value 2'>Duis vestibulum eleifend libero</option>
+      <option value='Value 3'>Phasellus pretium orci sed odio tempus</option>
+    </optgroup>
+    <optgroup label='Gruppo 2'>
+      <option value='Value 4'>Vestibulum bibendum ex vel augue porttitor sodales</option>
+      <option value='Value 5'>Praesent quis elementum turpis</option>
+    </optgroup>
+  </Select>
+);
+```
+
+## Argomenti componente
+
+<ArgTypes of={Select} />

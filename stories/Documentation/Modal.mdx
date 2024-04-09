@@ -1,0 +1,764 @@
+import { ArgTypes, Canvas, Meta, Story } from '@storybook/blocks';
+import { Code } from '@storybook/components';
+import { Callout, CalloutText, CalloutTitle, Modal, ModalBody, ModalFooter, ModalHeader } from '../../src';
+import * as ModalStories from '../Components/Modal.stories';
+
+<Meta of={ModalStories} />
+
+# Modale
+
+Le finestre modali si possono usare per mostrare contenuti in evidenza, notifiche agli utenti, o contenuti personalizzati.
+Cliccando sulla parte che oscura la pagina (il cosiddetto `backdrop` della modale), questa verrà chiusa automativamente.
+
+<div className='docs'>
+  <Callout color='warning'>
+    <CalloutTitle>
+      <span className='text'>Accessibilità</span>
+    </CalloutTitle>
+    <CalloutText>
+      Per tutti i componenti Modale viene automaticamente aggiunto l'attributo <Code>role="dialog"</Code> e{' '}
+      <Code>role="document"</Code> all'elemento contenitore. (
+      <a
+        href='https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_dialog_role'
+        target='_blank'
+        rel='noreferrer'
+      >
+        maggiori info su MDN
+      </a>
+      ).
+    </CalloutText>
+    <CalloutText>
+      L’attributo <Code>labelledby="..."</Code> deve essere assegnato al componente <Code>Modal</Code> ed usare come
+      valore l'ID del componente
+      <Code>ModalHeader</Code>.(
+      <a
+        href='https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute'
+        target='_blank'
+        rel='noreferrer'
+      >
+        maggiori info su MDN
+      </a>
+      ).
+    </CalloutText>
+    <CalloutText>
+      Approfondisci l’argomento sul sito delle
+      <a href='https://www.w3.org/TR/wai-aria-practices/#dialog_modal' target='_blank' rel='noreferrer'>
+        WAI-ARIA Authoring Practices.
+      </a>
+    </CalloutText>
+  </Callout>
+</div>
+
+### Componenti della modale
+
+In basso un esempio di una modale statica, senza componente principale `Modal`. Sono inclusi l’intestazione, il corpo, e il footer della modale come mostrato di seguito.
+
+<Canvas of={ModalStories._EsempioBase} />
+
+È richiesta l’inclusione di intestazioni o elementi con funzione di chiusura della modale stessa.
+
+<Canvas of={ModalStories.ModaleBase} />
+
+#### Codice
+
+```tsx
+const [isOpen, toggleModal] = useState(false);
+
+return (
+  <div>
+    <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+      Lancia la demo della modale
+    </Button>
+    <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} labelledBy='esempio1'>
+      <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio1'>
+        Titolo della modale
+      </ModalHeader>
+      <ModalBody>
+        <p>Woohoo, stai leggendo questo testo in una modale!</p>
+      </ModalBody>
+      <ModalFooter>
+        <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+          Salva modifiche
+        </Button>
+      </ModalFooter>
+    </Modal>
+  </div>
+);
+```
+
+### Modale con bottone di chiusura
+
+Per chiudere la modale, si può utilizzare un bottone: il componente aggiungerà un testo apposito per gli screen reader.
+Per mostrare l'icona di chiusura, passare una funzione `toggle` al componente `ModalHeader` al fine di gestirne il comportamento quando l'utente cliccherà.
+
+<Canvas of={ModalStories.ModaleBaseConBottoneChiusura} />
+
+#### Codice
+
+```tsx
+const [isOpen, toggleModal] = useState(false);
+
+return (
+  <div>
+    <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+      Mostra modale con bottone di chiusura
+    </Button>
+    <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} labelledBy='esempio2'>
+      <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio2'>
+        Titolo della modale
+      </ModalHeader>
+      <ModalBody>
+        <p>Woohoo, stai leggendo questo testo in una modale!</p>
+      </ModalBody>
+      <ModalFooter>
+        <Button color='secondary' onClick={() => toggleModal(!isOpen)}>
+          Chiudi
+        </Button>
+        <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+          Salva modifiche
+        </Button>
+      </ModalFooter>
+    </Modal>
+  </div>
+);
+```
+
+#### Codice
+
+```tsx
+
+```
+
+### Modale con icona
+
+E’ possibie inserire un icona di alert (o altro tipo) affiancandola all’intestazione.
+
+<Canvas of={ModalStories.ModaleConIcona} />
+
+#### Codice
+
+```tsx
+const [isOpen, toggleModal] = useState(false);
+
+return (
+  <div>
+    <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+      Lancia modale con icona
+    </Button>
+    <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} withIcon labelledBy='esempio3'>
+      <ModalHeader icon='it-info-circle' id='esempio3'>
+        This is a notification message more long than usual
+      </ModalHeader>
+      <ModalBody>
+        <p>In the various types of information modal dialog, only one button to close dialog is provided.</p>
+      </ModalBody>
+      <ModalFooter>
+        <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+          Ok
+        </Button>
+      </ModalFooter>
+    </Modal>
+  </div>
+);
+```
+
+### Modale con radiobuttons
+
+All’interno della modale è possibile inserire elementi form. Di seguito una modale con un elenco di radio button.
+
+<Canvas of={ModalStories.ModaleConFormInputs} />
+
+#### Codice
+
+```tsx
+const [isOpen, toggleModal] = useState(false);
+
+return (
+  <div>
+    <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+      Lancia modale con form
+    </Button>
+    <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} labelledBy='esempio4'>
+      <ModalHeader id='esempio4' toggle={() => toggleModal(!isOpen)}>
+        SCEGLI UNA OPZIONE
+      </ModalHeader>
+      <ModalBody>
+        <FormGroup check>
+          <Input name='gruppo1' type='radio' id='radio1' defaultChecked />
+          <Label check htmlFor='radio1'>
+            Opzione 1
+          </Label>
+        </FormGroup>
+        <FormGroup check>
+          <Input name='gruppo1' type='radio' id='radio2' />
+          <Label check htmlFor='radio2'>
+            Opzione 2
+          </Label>
+        </FormGroup>
+        <FormGroup check>
+          <Input name='gruppo1' type='radio' id='radio3' />
+          <Label check htmlFor='radio3'>
+            Opzione 3
+          </Label>
+        </FormGroup>
+      </ModalBody>
+      <ModalFooter>
+        <Button outline color='primary' onClick={() => toggleModal(!isOpen)}>
+          Chiudi
+        </Button>
+        <Button color='primary' onClick={() => toggleModal(!isOpen)} disabled>
+          Ok
+        </Button>
+      </ModalFooter>
+    </Modal>
+  </div>
+);
+```
+
+### Modale con Link List
+
+All’interno della modale è possibile inserire delle Liste di link. Per formattare correttamente il contenuto di questa modale, aggiungere l'attributo `withLinkList` al componente `Modal`.
+
+<Canvas of={ModalStories.ModaleConLinkList} />
+
+#### Codice
+
+```tsx
+const [isOpen, toggleModal] = useState(false);
+
+return (
+  <div>
+    <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+      Lancia modale con LinkList
+    </Button>
+    <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} withLinkList labelledBy='esempio5'>
+      <ModalHeader id='esempio5'>
+        <span>1.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+      </ModalHeader>
+      <ModalBody>
+        <LinkList>
+          <LinkListItem className='icon-left'>
+            <Icon color='primary' icon='it-chevron-right' aria-hidden />
+            <span>Link list 1</span>
+          </LinkListItem>
+          <LinkListItem className='icon-left'>
+            <Icon color='primary' icon='it-chevron-right' aria-hidden />
+            <span>Link list 2</span>
+          </LinkListItem>
+          <LinkListItem className='icon-left'>
+            <Icon color='primary' icon='it-chevron-right' aria-hidden />
+            <span>Link list 3</span>
+          </LinkListItem>
+        </LinkList>
+      </ModalBody>
+      <ModalFooter>
+        <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+          Ok
+        </Button>
+      </ModalFooter>
+    </Modal>
+  </div>
+);
+```
+
+### Modale Popconfirm
+
+La Modale di tipo Popconfirm può essere utilizzata per brevi messaggi di conferma. Questo particolare design si ottiene applicando l'attributo `popConfirm` al componente `Modal`.
+
+<Canvas of={ModalStories.ModalePopConfirm} />
+
+#### Codice
+
+```tsx
+const [isOpenBase, toggleBaseModal] = useState(false);
+const [isOpenWithHeader, toggleModalWithHeader] = useState(false);
+
+return (
+  <div>
+    <Button color='primary' onClick={() => toggleBaseModal(!isOpenBase)} className='me-3'>
+      Lancia modale pop-confirm base
+    </Button>
+    <Button color='primary' onClick={() => toggleModalWithHeader(!isOpenWithHeader)} className='me-3'>
+      Lancia modale pop-confirm con titolo
+    </Button>
+    <Modal isOpen={isOpenBase} toggle={() => toggleBaseModal(!isOpenBase)} popConfirm>
+      <ModalBody>
+        <p>Font Titillium 14px. Leading 21px.</p>
+      </ModalBody>
+      <ModalFooter>
+        <Button color='primary' onClick={() => toggleBaseModal(!isOpenBase)} size='sm'>
+          Action one
+        </Button>
+        <Button color='secondary' onClick={() => toggleBaseModal(!isOpenBase)} size='sm' outline>
+          Action two
+        </Button>
+      </ModalFooter>
+    </Modal>
+    <Modal
+      isOpen={isOpenWithHeader}
+      toggle={() => toggleModalWithHeader(!isOpenWithHeader)}
+      popConfirm
+      labelledBy='esempio6'
+    >
+      <ModalHeader labelledBy='esempio6'>Popconfirm header</ModalHeader>
+      <ModalBody>
+        <p>Font Titillium 14px. Leading 21px.</p>
+      </ModalBody>
+      <ModalFooter>
+        <Button color='primary' onClick={() => toggleModalWithHeader(!isOpenWithHeader)} size='sm'>
+          Action one
+        </Button>
+        <Button color='secondary' onClick={() => toggleModalWithHeader(!isOpenWithHeader)} size='sm' outline>
+          Action two
+        </Button>
+      </ModalFooter>
+    </Modal>
+  </div>
+);
+```
+
+### Scroll di contenuti lunghi
+
+Quando le modali diventano troppo lunghe per il viewport o il dispositivo dell’utente, scorrono indipendentemente dalla pagina stessa.
+
+<Canvas of={ModalStories.ScrollDiContenutiLunghi} />
+
+#### Codice
+
+```tsx
+const [isOpen, toggleModal] = useState(false);
+
+return (
+  <div>
+    <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+      Lancia la demo della modale scrollabile
+    </Button>
+    <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} labelledBy='esempio7'>
+      <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio7'>
+        Titolo della modale
+      </ModalHeader>
+      <ModalBody>
+        <div>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+            rutrum faucibus dolor auctor.
+          </p>
+          <p>
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+          </p>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+            rutrum faucibus dolor auctor.
+          </p>
+          <p>
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+          </p>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+            rutrum faucibus dolor auctor.
+          </p>
+          <p>
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+          </p>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+            rutrum faucibus dolor auctor.
+          </p>
+          <p>
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+          </p>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+            rutrum faucibus dolor auctor.
+          </p>
+          <p>
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+          </p>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
+            quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet
+            rutrum faucibus dolor auctor.
+          </p>
+          <p>
+            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+          </p>
+        </div>
+      </ModalBody>
+      <ModalFooter>
+        <Button color='secondary' onClick={() => toggleModal(!isOpen)}>
+          Chiudi
+        </Button>
+        <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+          Salva modifiche
+        </Button>
+      </ModalFooter>
+    </Modal>
+  </div>
+);
+```
+
+#### Scroll di contenuti all’interno della modale
+
+Si può scelgliere di utilizzare uno scroll interno alla madole, mantenendo sempre visibile l’intestazione ed il footer della modale stessa aggiungendo l'attributo `scrollable` al componente `Modal`.
+
+<Canvas of={ModalStories.ModaleConContenutoScrollabile} />
+
+#### Codice
+
+```tsx
+const [isOpen, toggleModal] = useState(false);
+
+return (
+  <div>
+    <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+      Lancia modale con contenuto scrollabile
+    </Button>
+    <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} scrollable labelledBy='esempio8'>
+      <ModalHeader id='esempio8'>INTESTAZIONE MODALE</ModalHeader>
+      <ModalBody>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </ModalBody>
+      <ModalFooter>
+        <Button color='primary' outline onClick={() => toggleModal(!isOpen)} size='sm'>
+          Chiudi
+        </Button>
+        <Button color='primary' onClick={() => toggleModal(!isOpen)} size='sm'>
+          Azione Uno
+        </Button>
+      </ModalFooter>
+    </Modal>
+  </div>
+);
+```
+
+### Posizionamento
+
+#### Centratura verticale
+
+Aggiungi l'attributo `centered` al componente `Modal` per centrare verticalmente la modale.
+
+<Canvas of={ModalStories._CentraturaVerticale} />
+
+#### Codice
+
+```tsx
+const [isOpen, toggleModal] = useState(false);
+
+return (
+  <div>
+    <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+      Lancia la demo della modale
+    </Button>
+    <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} centered labelledBy='esempio9'>
+      <ModalHeader toggle={() => toggleModal(!isOpen)} id='essempio9'>
+        Titolo della modale
+      </ModalHeader>
+      <ModalBody>
+        <p>Woohoo, stai leggendo questo testo in una modale!</p>
+      </ModalBody>
+      <ModalFooter>
+        <Button color='secondary' onClick={() => toggleModal(!isOpen)}>
+          Chiudi
+        </Button>
+        <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+          Salva modifiche
+        </Button>
+      </ModalFooter>
+    </Modal>
+  </div>
+);
+```
+
+#### Allineamento a sinistra
+
+Per aprire la modale da sinistra a destra aggiungere l'attributo `align` con valore `"left"` al componente `Modal`.
+
+<Canvas of={ModalStories.AllineamentoASinistra} />
+
+#### Codice
+
+```tsx
+const [isOpen, toggleModal] = useState(false);
+
+return (
+  <div>
+    <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+      Lancia la demo della modale a sinistra
+    </Button>
+    <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} align='left' scrollable labelledBy='esempio10'>
+      <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio10'>
+        This is a notification message
+      </ModalHeader>
+      <ModalBody>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </ModalBody>
+      <ModalFooter>
+        <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+          Ok
+        </Button>
+      </ModalFooter>
+    </Modal>
+  </div>
+);
+```
+
+#### Allineamento a destra
+
+Per aprire la modale da sinistra a destra aggiungere l'attributo `align` con valore `"left"` al componente `Modal`.
+
+<Canvas of={ModalStories.AllineamentoADestra} />
+
+#### Codice
+
+```tsx
+const [isOpen, toggleModal] = useState(false);
+
+return (
+  <div>
+    <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+      Lancia la demo della modale a destra
+    </Button>
+    <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} align='right' scrollable labelledBy='esempio11'>
+      <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio11'>
+        This is a notification message
+      </ModalHeader>
+      <ModalBody>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </ModalBody>
+      <ModalFooter>
+        <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+          Ok
+        </Button>
+      </ModalFooter>
+    </Modal>
+  </div>
+);
+```
+
+### Rimuovere l’animazione
+
+Per avere modali che appaiono semplicemente senza dissolvenza, imposta l'attributo `fade` a `false` nel componente `Modal`.
+
+<Canvas of={ModalStories.RimuovereLanimazione} />
+
+#### Codice
+
+```tsx
+const [isOpen, toggleModal] = useState(false);
+
+return (
+  <div>
+    <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+      Lancia la demo della modale
+    </Button>
+    <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} fade={false} labelledBy='esempio12'>
+      <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio12'>
+        Titolo della modale
+      </ModalHeader>
+      <ModalBody>
+        <p>Woohoo, stai leggendo questo testo in una modale!</p>
+      </ModalBody>
+      <ModalFooter>
+        <Button color='secondary' onClick={() => toggleModal(!isOpen)}>
+          Chiudi
+        </Button>
+        <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+          Salva modifiche
+        </Button>
+      </ModalFooter>
+    </Modal>
+  </div>
+);
+```
+
+### Dimensioni opzionali
+
+Le modali hanno due dimensioni opzionali, disponibili tramite l'attributo `size` del componente `Modal`. Queste dimensioni entrano in gioco in determinati breakpoint per evitare barre di scorrimento orizzontali su finestre più strette.
+
+<Canvas of={ModalStories._Dimensioni} />
+
+#### Codice
+
+```tsx
+const [isOpen, toggleModal] = useState(false);
+const [size, setSize] = useState('');
+
+return (
+  <div>
+    <div>
+      <Button
+        color='primary'
+        onClick={() => {
+          setSize('lg');
+          toggleModal(true);
+        }}
+        className='me-3'
+      >
+        Modale grande
+      </Button>
+      <Button
+        color='primary'
+        onClick={() => {
+          setSize('sm');
+          toggleModal(true);
+        }}
+      >
+        Modale piccola
+      </Button>
+    </div>
+    <Modal isOpen={isOpen} toggle={() => toggleModal(!isOpen)} size={size} labelledBy='esempio13'>
+      <ModalHeader toggle={() => toggleModal(!isOpen)} id='esempio13'>
+        Titolo della modale
+      </ModalHeader>
+      <ModalBody>
+        <p>Woohoo, stai leggendo questo testo in una modale!</p>
+      </ModalBody>
+      <ModalFooter>
+        <Button color='secondary' onClick={() => toggleModal(!isOpen)}>
+          Chiudi
+        </Button>
+        <Button color='primary' onClick={() => toggleModal(!isOpen)}>
+          Salva modifiche
+        </Button>
+      </ModalFooter>
+    </Modal>
+  </div>
+);
+```
+
+## Argomenti componente
+
+### Modal
+
+<ArgTypes of={Modal} />
+
+### ModalHeader
+
+<ArgTypes of={ModalHeader} />
+
+### ModalBody
+
+<ArgTypes of={ModalBody} />
+
+### ModalFooter
+
+<ArgTypes of={ModalFooter} />
