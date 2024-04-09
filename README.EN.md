@@ -171,7 +171,7 @@ Unit tests are under the `test` folder.
 
 i.e. the `Button` component is shown below the `src/Button` path and its structure is as follows:
 
-```bash
+```
 ├── src
 │    └── Button
 │        └── Button.tsx
@@ -181,7 +181,7 @@ i.e. the `Button` component is shown below the `src/Button` path and its structu
 │    └── Documentation
 │        └── Button.mdx
 └── test
-    └──  Button.test.tsx
+     └── Button.test.tsx
 ```
 
 Some basic rules for structuring the components:

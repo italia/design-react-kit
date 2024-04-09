@@ -183,7 +183,7 @@ Le storie `Storybook` invece sono sotto `stories`.
 I test unitari risiedono nella cartella `test`.
 Il componente `Button` ad esempio è presente sotto il percorso `src/Button` e la sua struttura è la seguente:
 
-```bash
+```
 ├── src
 │    └── Button
 │        └── Button.tsx
@@ -193,7 +193,7 @@ Il componente `Button` ad esempio è presente sotto il percorso `src/Button` e l
 │    └── Documentation
 │        └── Button.mdx
 └── test
-    └──  Button.test.tsx
+     └── Button.test.tsx
 ```
 
 Alcune regole di base per strutturare i componenti:
