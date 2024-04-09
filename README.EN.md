@@ -102,6 +102,9 @@ function App() {
 export default App;
 ```
 
+You can consult this web template with StackBlitz:
+[Web template](https://stackblitz.com/edit/vitejs-vite-yy8bnk?file=src%2FApp.tsx)
+
 ### Loading Fonts
 
 The Bootstrap Italia theme defines a specific set of font typefaces to work: `titillium-web`, `roboto-mono` and `lora`. The loading of this set of fonts can be left to the browser or controlled: in this last case it is necessary to use the `FontLoader` component exported by the library.

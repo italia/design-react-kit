@@ -103,6 +103,9 @@ function App() {
 export default App;
 ```
 
+Puoi consultare questo template web con StackBlitz:
+[Template web](https://stackblitz.com/edit/vitejs-vite-yy8bnk?file=src%2FApp.tsx)
+
 ### Caricamento Font
 
 Il tema Bootstrap Italia utilizza un set specifico di font typeface: `titillium-web`, `roboto-mono` e `lora`. Il caricamento di questi font è lasciato al browser ma, volendo può essere controllato tramite l'apposito componente `FontLoader`.
