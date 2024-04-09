@@ -130,16 +130,16 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
   );
 
   const register = useCallback(
-    (id, options = {}) => {
+    (id: string, options = {}) => {
       if (!hasWindow) {
         return { id, ref: null };
       }
       const alreadyRegistered = id in elsLookup;
-      const entry = alreadyRegistered ? els.current.find(({ id: existingId }) => existingId === id) : options;
+      const entry = (alreadyRegistered ? els.current.find(({ id: existingId }) => existingId === id) : options) as any;
       const ref = (entry && entry.ref) || createRef();
 
       if (!alreadyRegistered) {
-        els.current = [...els.current, { id, ref, parent: options.parent }];
+        els.current = [...els.current, { id, ref, parent: (options as any).parent }];
         refresh();
       }
       return { id, ref };

@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { FC, HTMLAttributes, PropsWithChildren } from 'react';
 import classNames from 'classnames';
 
 export interface MegamenuFooterProps extends HTMLAttributes<HTMLDivElement> {
@@ -18,7 +18,7 @@ export const MegamenuFooter: FC<MegamenuFooterProps> & {
   );
 };
 
-const Item: FC<HTMLAnchorElement> = ({ href, children }) => {
+const Item: FC<PropsWithChildren<HTMLAnchorElement>> = ({ href, children }) => {
   return (
     <a href={href || '#'} className='it-footer-link'>
       {children}

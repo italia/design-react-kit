@@ -124,13 +124,13 @@ describe('Rating', () => {
 
   describe('isCustomLegendObject', () => {
     it('Should return true', () => {
-      expect(isCustomLegendObject({ content: true })).toBeTruthy();
+      expect(isCustomLegendObject({ content: true, srOnly: true })).toBeTruthy();
     });
 
     it('Should return false', () => {
       expect(isCustomLegendObject(null)).toBeFalsy();
       expect(isCustomLegendObject('null')).toBeFalsy();
-      expect(isCustomLegendObject({ notContent: true })).toBeFalsy();
+      expect(isCustomLegendObject(<></>)).toBeFalsy();
     });
   });
 

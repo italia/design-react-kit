@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { ElementType, FC, useState } from 'react';
+import React, { ElementType, FC, PropsWithChildren, useState } from 'react';
 import { Button } from '../Button/Button';
 import { Icon } from '../Icon/Icon';
 
@@ -12,7 +12,7 @@ export interface CalloutMoreFooterProps {
   fileUrl?: string;
 }
 
-export const CalloutMoreFooter: FC<CalloutMoreFooterProps> = ({
+export const CalloutMoreFooter: FC<PropsWithChildren<CalloutMoreFooterProps>> = ({
   id = 'cm-footer',
   tag = 'div',
   className,

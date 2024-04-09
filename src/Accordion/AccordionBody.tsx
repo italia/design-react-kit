@@ -1,11 +1,9 @@
-import React, { ElementType, useCallback, useState } from 'react';
-import classNames from 'classnames';
+import React, { ElementType, PropsWithChildren, useCallback, useState } from 'react';
+import type { TransitionProps } from 'react-transition-group/Transition';
 import { Transition } from 'react-transition-group';
-
+import classNames from 'classnames';
 import { pick, omit } from '../utils';
 import { TransitionTimeouts, TransitionsKeys } from '../transitions';
-import type { TransitionProps } from 'react-transition-group/Transition';
-import type { TransitionStates } from '../transitions';
 
 export type AccordionBodyProps = Partial<TransitionProps> & {
   tag?: ElementType;
@@ -16,14 +14,14 @@ export type AccordionBodyProps = Partial<TransitionProps> & {
 };
 
 // hardcode these entries to avoid leaks
-const transitionStatusToClassHash: Record<TransitionStates, string> = {
+const transitionStatusToClassHash: Record<string, string> = {
   entering: 'collapsing',
   entered: 'collapse show',
   exiting: 'collapsing',
   exited: 'collapse'
 };
 
-function getTransitionClass(status: TransitionStates) {
+function getTransitionClass(status: string) {
   return transitionStatusToClassHash[status] || 'collapse';
 }
 
@@ -39,7 +37,7 @@ export const AccordionBody = ({
   children,
   timeout = TransitionTimeouts.Collapse,
   ...attributes
-}: AccordionBodyProps) => {
+}: PropsWithChildren<AccordionBodyProps>) => {
   const [height, setHeight] = useState<null | number>(null);
 
   const onEntering = useCallback(
@@ -97,7 +95,7 @@ export const AccordionBody = ({
       onExiting={onExiting}
       onExited={onExited}
     >
-      {(status: TransitionStates) => {
+      {(status) => {
         const transitionClass = getTransitionClass(status);
         const classes = classNames(className, transitionClass);
         const listClasses = classNames(listClassName, 'accordion-body');
