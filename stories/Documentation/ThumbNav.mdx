@@ -1,0 +1,107 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import { Code } from '@storybook/components';
+import { Callout, CalloutText, CalloutTitle } from '../../src';
+import * as ThumbNavStories from '../Components/ThumbNav.stories';
+
+<Meta of={ThumbNavStories} />
+
+# ThumbNav
+
+## Componente di navigazione con immagini thumbnail
+
+Il componente Thumbnav consiste in un contenitore `ThumbNav` contenente tanti elementi `ThumbNavItem` quante sono i link/thumbnail richiesti.
+
+Ogni elemento `ThumbNavItem` contiene un resizer per mantenere le corrette proporzioni di 3:2 a prescindere dalle dimensioni dell’immagine utilizzata per la thumbnail.
+
+Per indicare il link/thumbail attivo applicare l'attributo `active` al relativo `ThumbNavItem`.
+
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>
+      <span className='text'>Accessibilità</span>
+    </CalloutTitle>
+    <CalloutText>
+      Per ragioni di accessibilità è importante indicare all’interno dell’attributo <Code>alt=""</Code> dell’immagine
+      thumbnail l’azione associata al link relativo.
+    </CalloutText>
+  </Callout>
+</div>
+
+<Canvas of={ThumbNavStories.Esempio} />
+
+### Versione small
+
+Applicando l'attributo `isSmall` al contenitore `ThumbNav` si otterranno thumbnail di dimensione ridotta.
+
+<Canvas of={ThumbNavStories.EsempioSmall} />
+
+### Stati hover
+
+Applicando attributi specifici è possibile customizzare l’effetto di hover.
+
+#### Hover senza zoom
+
+Utilizzare l'attributo `noZoomOnHover` per disabilitare l’effetto di zoom sull’immagine.
+
+<Canvas of={ThumbNavStories.EsempioNoZoom} />
+
+#### Hover con layer nero
+
+Utilizzare l'attributo `overlayOnHover="black"` per ottenere un effetto di overlay nero trasparente sull’immagine.
+
+<Canvas of={ThumbNavStories.EsempioBlackLayer} />
+
+#### Hover con layer primary
+
+Utilizzare l'attributo `overlayOnHover="primary"` per ottenere un effetto di overlay di colore primary sull’immagine.
+
+<Canvas of={ThumbNavStories.EsempioPrimaryLayer} />
+
+### Thumbnav verticale
+
+Applicando l'attributo `isVertical` al contenitore `ThumbNav` si ottiene una versione verticale.
+
+<Canvas of={ThumbNavStories.EsempioVerticale} />
+
+### Posizione in overlay
+
+La `ThumbNav `può essere inserita in overlay all’interno di un contenitore come ad esempio una galleria immagini. Il contenitore dovrà utilizzare la classe di Bootstrap `.position-relative` per posizionare correttamente la `ThumbNav` al proprio interno. Alla `ThumbNav` dovrà essere applicato un attributo `position` con valore a scelta fra:
+
+- `bottom` per posizonarla nella parte inferiore
+- `top` per posizonarla nella parte superiore
+- `left` per posizonare una thumbnav vertical nella parte sinistra
+- `right` per posizonare una thumbnav vertical nella parte destra
+
+#### Overlay orizzontale inferiore
+
+<Canvas of={ThumbNavStories.Overlay}></Canvas>
+
+#### Overlay orizzontale top
+
+<Canvas of={ThumbNavStories.OverlayTop} />
+
+#### Overlay verticale sinistra
+
+<Canvas of={ThumbNavStories.OverlayLeft} />
+
+#### Overlay verticale destra
+
+<Canvas of={ThumbNavStories.OverlayRight} />
+
+### Griglia a larghezza fissa
+
+Applicando l'attributo `fixedWidth` alla `ThumbNav` le thumbnail avranno una larghezza fissa di 240px oppure di 120px se è stata utilizzata anche l'attributo `isSmall`.
+
+<Canvas of={ThumbNavStories.EsempioFixed} />
+
+#### Griglia a larghezza automatica
+
+Applicando la classe <Code>.thumb-nav-auto</Code> alla Thumbnav le thumbnail occuperanno automaticamente l’intera larghezza del contenitore. È necessario indicare il numero degli elementi presenti su ogni riga con una delle seguenti classi aggiuntive:
+
+##### Esempio: 3 thumbnail per riga
+
+<Canvas of={ThumbNavStories.EsempioAutoWidth} />
+
+##### Esempio: 5 thumbnail per riga
+
+<Canvas of={ThumbNavStories.EsempioAutoWidthFive} />

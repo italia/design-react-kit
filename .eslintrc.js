@@ -1,11 +1,15 @@
 module.exports = {
-  extends: ['react-app', 'prettier/@typescript-eslint', 'plugin:prettier/recommended'],
+  extends: ['react-app', 'plugin:storybook/recommended'],
+  ignorePatterns: ['stories/**/*.mdx'],
   overrides: [
     {
-      files: ['*.mdx'],
-      extends: 'plugin:mdx/recommended',
-      settings: {
-        'mdx/code-blocks': false
+      // or whatever matches stories specified in .storybook/main.js
+      files: ['*.stories.@(ts|tsx|js|jsx|mjs|cjs)'],
+      rules: {
+        // example of overriding a rule
+        'storybook/hierarchy-separator': 'error',
+        // example of disabling a rule
+        'storybook/default-exports': 'off'
       }
     }
   ],

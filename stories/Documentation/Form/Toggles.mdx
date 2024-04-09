@@ -1,0 +1,31 @@
+import { ArgTypes, Canvas, Meta, Story } from '@storybook/blocks';
+import { Toggle } from '../../../src';
+import * as TogglesStories from '../../Components/Form/Toggles.stories';
+
+<Meta of={TogglesStories} />
+
+# Toggles
+
+### Campi di tipo “interruttore”
+
+## Toggles
+
+Per ottenere un interruttore con levetta basterà usare il componente `Toggle`.
+
+<Canvas of={TogglesStories.Toggles} />
+
+## Disabilitato
+
+Affinchè l’interruttore risulti disabilitato occorrerà aggiungere la _prop_ `disabled` al checkbox.
+
+<Canvas of={TogglesStories.TogglesDisabilitate} />
+
+## Gruppi
+
+Per poter raggruppare gli elementi toggle occorrerà aggiungere al componente `FormGroup` la classe `.form-check-group`.
+
+<Canvas of={TogglesStories.GruppiDiToggles} />
+
+## Argomenti componente
+
+<ArgTypes of={Toggle} />

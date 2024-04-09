@@ -1,0 +1,58 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as ProgressStories from '../Components/Progress.stories';
+import * as SpinnerStories from '../Components/Spinner.stories';
+
+<Meta of={ProgressStories} />
+
+# Progress Indicators
+
+## Indicatori di stato attivo e di avanzamento di un’operazione
+
+### Progress Bar
+
+Le Progress Bar sono costruite con due elementi HTML, CSS in linea per impostare la larghezza e alcuni attributi. Non è previsto l’utilizzo dell’elemento `<progress/>` di HTML5.
+
+<Canvas of={ProgressStories.Esempio} />
+
+### Etichette
+
+Per aggiungere etichette con testo che indica il progresso utilizzare l'attributo `label`.
+
+<Canvas of={ProgressStories.Etichette} />
+
+### Progresso Indeterminato
+
+Quando non è possibile stabilire una percentuale di progressione utilizzare una Progress Bar di tipo indeterminato, aggiungendo un attributo `indeterminate` sul componente `Progress`.
+
+<Canvas of={ProgressStories.ProgressoIndeterminato} />
+
+### Colori
+
+Per variare il colore della barra è sufficiente utilzzare l'attributo `color` ed applicare uno dei colori contenuti nella pagina [Utility colori](?path=/docs/documentazione-utilities-colori--page#colore-di-sfondo).
+
+<Canvas of={ProgressStories.Colori} />
+
+### Bottone con Progress Bar
+
+La Progress Bar può essere integrata in un bottone Primario o Secondario con classe aggiuntiva `.btn-progress` utilizzando la struttura e le classi riportate nei seguenti esempi:
+
+<Canvas of={ProgressStories.BottoneConProgressBar} />
+
+## Spinner
+
+Il componente `Spinner` comunica lo stato attivo di un’operazione ma non il progresso percentuale della stessa. È utile quindi quando non è possibile determinare il tempo necessario a completare una procedura.
+
+Per ottenere una versione ridotta dello Spinner aggiungere allo stesso l'attributo `small`.
+L'attributo `label` è riservato al messaggio per gli screen reader.
+
+<Canvas of={SpinnerStories.Esempio} />
+
+### Spinner doppio
+
+Aggiungendo l'attributo `double` allo `Spinner` si ottiene un’animazione alternativa.
+
+<Canvas of={SpinnerStories.SpinnerDoppio} />
+
+## Argomenti componente
+
+Fare riferimento alla documentazione reactstrap (v9) per maggiori dettagli sui componenti Progress: https://reactstrap.github.io/?path=/docs/components-progress--progress

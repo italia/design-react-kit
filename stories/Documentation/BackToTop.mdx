@@ -1,0 +1,42 @@
+import { ArgTypes, Canvas, Meta } from "@storybook/blocks";
+import { BackToTop } from "../../src";
+import * as BackToTopStories from "../Components/BackToTop.stories";
+
+<Meta of={BackToTopStories} />
+
+# Torna su
+
+## Esempio
+
+Per visualizzare il Back to top nella posizione corretta è necessario scrollare questa pagina. L'esempio del codice
+sottostante sarà visibile solo a scroll avvenuto.
+
+<Canvas of={BackToTopStories.Esempio} />
+
+### Versione ridotta
+
+Aggiungendo la prop `small` al componente si ottiene un pulsante di dimensioni ridotte.
+
+<Canvas of={BackToTopStories.Small} />
+
+### Versione con ombra
+
+Aggiungendo la prop `shadow` al componente si aggiunge un'ombra al pulsante.
+
+<Canvas of={BackToTopStories.Shadow} />
+
+### Versione per sfondo scuro
+
+Aggiungendo la prop `dark` al componente si ottiene un pulsante utilizzabile su sfondo scuro.
+
+<Canvas of={BackToTopStories.Dark} />
+
+#### Ombra su sfondo scuro
+
+Aggiungendo le prop `dark` e `shadow` al componente si ottiente un pulsante con ombra utilizzabile su sfondo scuro.
+
+<Canvas of={BackToTopStories.DarkShadow} />
+
+## Argomenti componente
+
+<ArgTypes of={BackToTopStories.Esempio} />

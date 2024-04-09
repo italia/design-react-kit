@@ -1,0 +1,70 @@
+import { ArgTypes, Canvas, Meta, Story } from '@storybook/blocks';
+import * as PagerStories from '../Components/Pager.stories';
+
+<Meta of={PagerStories} />
+
+# Paginazione
+
+## Esempio
+
+A seguire il componente `Pager`, utile per indicare una serie di contenuti correlati tra più pagine.
+
+<Canvas of={PagerStories.Esempi} />
+
+## Stato disabilitato e attivo
+
+I link della paginazione assumonono uno stato disabilitato usando l'attributo `disabled` sul componente `<PagerItem>`.
+Per indicare la pagina attiva corrente utilizzare l’attributo `aria-current="page"` sul componente `<PagerLink>`, l’aspetto grafico cambierà di conseguenza.
+
+<Canvas of={PagerStories.StatoDisabilitatoEAttivo} />
+
+## Allineamento
+
+Per centrare la navigazione aggiungere la classe `justify-content-center` al `<Pager>`.
+
+<Canvas of={PagerStories.Allineamento} />
+
+## Responsive
+
+Con i dovuti accorgimenti precedentemente elencati e inserendo alcune classi delle utilità display si può trasformare la paginazione in base alla risoluzione del dispositivo in uso dell'utente.
+
+<Canvas of={PagerStories.Responsive} />
+
+## More
+
+Quando è presente un grande numero di pagine è consigliabile visualizzare unicamente le pagine più prossime a quella corrente, inserendo delle ellissi (…) fra queste e la prima ed ultima pagina.
+Non essendo collegate a nessuna pagina le ellissi vanno inserite in un tag `<span>`.
+
+<Canvas of={PagerStories.MoreComponent} />
+
+## Changer
+
+Per velocizzare la navigazione è possibile inserire un menu “Page changer”.
+
+<Canvas of={PagerStories.PageChanger} />
+
+## Jump To Page
+
+Con l’elemento aggiuntivo “Jump to page” l’utente può specificare un numero di pagina concreto.
+
+<Canvas of={PagerStories.JumpToPage} />
+
+## Simple Mode
+
+La paginazione in versione “Simple mode” è ottimizzata per i dispositivi mobile.
+Può essere utilizzata anche su tablet e desktop quando il numero di pagine è ridotto.
+
+<Canvas of={PagerStories.SimpleMode} />
+
+## Link Testuali
+
+Le icone chevron utilizzate come link di navigazione possono essere sostituite da link testuali come “precedente” e “successiva”.
+In tal caso al `<PagerLink>` contenente il testo dovrà essere aggiunta la classe `.text`. Es: `<PagerLink className="text">Precedente</PagerLink>`. Notare come sia stato inserito il testo “Pagina” in un elemento `<span class="visually-hidden">` invisibile su schermo ma enunciabile dagli screen reader per facilitare la comprensione agli utenti che utilizzano tecnologie assistive.
+
+<Canvas of={PagerStories.LinkTestuali} />
+
+## Total Number
+
+Aggiungendo la classe `.pagination-total` al componente `<Pager>` che contiene la paginazione è possibile indicare il numero totale di pagine all’interno di un componente `<p>` collocato prima della chiusura del `<ul className="pagination">`.
+
+<Canvas of={PagerStories.TotalNumber} />

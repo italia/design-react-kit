@@ -1,0 +1,359 @@
+import { ArgTypes, Canvas, Meta, Source, Story } from "@storybook/blocks";
+import { Code } from "@storybook/components";
+import { Accordion, AccordionBody, AccordionHeader, AccordionItem, Callout, CalloutText, CalloutTitle } from "../../src";
+import * as AccordionStories from "../Components/Accordion.stories";
+
+<Meta of={AccordionStories} />
+
+# Accordion
+
+## Attiva/disattiva la visibilità di contenuti
+
+Per ottimizzare l’ingombro dei contenuti di una pagina a volte è necessario usare degli elementi richiudibili (in gergo definiti collassabili o collapse), che possono essere attivati indipendentemente l’uno dall’altro oppure in modo esclusivo con l’attivazione di solo un blocco alla volta (in gergo definiti fisarmoniche o accordion).
+
+### Gruppi di elementi richiudibili
+
+Gli elementi richiudibili sono molto spesso mostrati in gruppo, tipicamente usati per approfondire voci o argomenti mostrati nelle singole barre cliccabili.
+
+<div className="docs">
+    <Callout color="success">
+        <CalloutTitle>
+            <span className="text">Accessibilità</span>
+        </CalloutTitle>
+        <CalloutText>
+            Nell’esempio di codice ogni elemento <Code>&lt;button&gt;</Code> è inserito all’interno di un elemento &lt;h2&gt; (o altro livello h in funzione del
+            contesto) in quanto, frequentemente, i pulsanti di azione di un accordion sono anche i titoli della sezione che segue.
+        </CalloutText>
+    </Callout>
+</div>
+
+<Canvas of={AccordionStories.GruppiDiElementiRichiudibili} />
+
+#### Codice
+
+```tsx
+const [collapseElementOpen, setCollapseElement] = useState("");
+return (
+    <Accordion>
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "1"} onToggle={() => setCollapseElement(collapseElementOpen !== "1" ? "1" : "")}>
+                Elemento Richiudibile #1
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "1"}>
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                skateboard dolor brunch.
+            </AccordionBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "2"} onToggle={() => setCollapseElement(collapseElementOpen !== "2" ? "2" : "")}>
+                Elemento Richiudibile #2
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "2"}>
+                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t
+                heard of them accusamus labore sustainable VHS.
+            </AccordionBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "3"} onToggle={() => setCollapseElement(collapseElementOpen !== "3" ? "3" : "")}>
+                Elemento Richiudibile #3
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "3"}>
+                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </AccordionBody>
+        </AccordionItem>
+    </Accordion>
+);
+```
+
+<div className="docs">
+    <Callout color="success">
+        <CalloutTitle>
+            <span className="text">Accessibilità</span>
+        </CalloutTitle>
+        <CalloutText>
+            Assicurati di aggiungere <Code>aria-expanded</Code> all’elemento di controllo. Questo attributo trasmette esplicitamente lo stato corrente
+            dell’elemento comprimibile legato al controllo a screen reader e tecnologie assistive simili. Se l’elemento comprimibile è chiuso in modo
+            predefinito, l’attributo sull’elemento di controllo dovrebbe avere il valore <Code>aria-expanded="false"</Code>. Se imposti l’elemento comprimibile
+            aperto in modo predefinito, sul controllo invece imposta
+            <Code>aria-expanded="true"</Code>. Il componente
+            <Code>AccordionHeader</Code> applica automaticamente questo attributo, ma qualora venisse usato un componente di controllo esterno - come un
+            `Button` del primo esempio - sarà necessario aggiungerlo manualmente. Se il componente HTML dell’elemento di controllo non è un bottone (ad esempio
+            un <Code>&lt;a&gt;</Code> o <Code>&lt;div&gt;</Code>
+            ), l’attributo <Code>role="button"</Code> dovrebbe essere aggiunto al componente.
+        </CalloutText>
+    </Callout>
+</div>
+
+## Accordion
+
+Per ottenere un gruppo di elementi _mutualmente_ richiudibili (o _accordion_), è sufficiente utilizzare uno stato con singolo id da verificare per ciascun elemento come da esempio:
+
+<Canvas of={AccordionStories._Accordion} />
+
+#### Codice
+
+```tsx
+const [collapseElementOpen, setCollapseElement] = useState("");
+return (
+    <Accordion>
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "1"} onToggle={() => setCollapseElement(collapseElementOpen !== "1" ? "1" : "")}>
+                Accordion Group Item #1
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "1"} listClassName={"custom-class"}>
+                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+                Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+            </AccordionBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "2"} onToggle={() => setCollapseElement(collapseElementOpen !== "2" ? "2" : "")}>
+                Accordion Group Item #2
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "2"} listClassName={"custom-class"}>
+                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t
+                heard of them accusamus labore sustainable VHS.
+            </AccordionBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "3"} onToggle={() => setCollapseElement(collapseElementOpen !== "3" ? "3" : "")}>
+                Accordion Group Item #3
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "3"} listClassName={"custom-class"}>
+                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </AccordionBody>
+        </AccordionItem>
+    </Accordion>
+);
+```
+
+## Accordion annidati
+
+Più gruppi di collapse possono essere annidati.
+
+<div className="docs">
+    <Callout color="success">
+        <CalloutTitle>
+            <span className="text">Accessibilità</span>
+        </CalloutTitle>
+        <CalloutText>
+            Utilizzare questo approccio solo quando strettamente necessario: dal punto di vista dell’accessibilità non si tratta di una soluzione ottimale.
+        </CalloutText>
+    </Callout>
+</div>
+
+<Canvas of={AccordionStories.AccordionAnnidati} />
+
+#### Codice
+
+```tsx
+const [collapseElementOpen, setCollapseElement] = useState("");
+const [nestedCollapseOpen, setNestedCollapseOpen] = useState("");
+return (
+    <Accordion>
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "1"} onToggle={() => setCollapseElement(collapseElementOpen !== "1" ? "1" : "")}>
+                Elemento Accordion #1
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "1"}>
+                <Accordion>
+                    <AccordionItem>
+                        <AccordionHeader active={nestedCollapseOpen === "1"} onToggle={() => setNestedCollapseOpen(nestedCollapseOpen !== "1" ? "1" : "")}>
+                            Elemento Accordion annidato #1
+                        </AccordionHeader>
+                        <AccordionBody active={nestedCollapseOpen === "1"}>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+                            cupidatat skateboard dolor brunch.
+                        </AccordionBody>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <AccordionHeader active={nestedCollapseOpen === "2"} onToggle={() => setNestedCollapseOpen(nestedCollapseOpen !== "2" ? "2" : "")}>
+                            Elemento Accordion annidato #2
+                        </AccordionHeader>
+                        <AccordionBody active={nestedCollapseOpen === "2"}>
+                            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                            haven&apos;t heard of them accusamus labore sustainable VHS.
+                        </AccordionBody>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <AccordionHeader active={nestedCollapseOpen === "3"} onToggle={() => setNestedCollapseOpen(nestedCollapseOpen !== "3" ? "3" : "")}>
+                            Elemento Accordion annidato #3
+                        </AccordionHeader>
+                        <AccordionBody active={nestedCollapseOpen === "3"}>
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                            assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </AccordionBody>
+                    </AccordionItem>
+                </Accordion>
+            </AccordionBody>
+        </AccordionItem>
+        <AccordionHeader active={collapseElementOpen === "2"} onToggle={() => setCollapseElement(collapseElementOpen !== "2" ? "2" : "")}>
+            Elemento Accordion #2
+        </AccordionHeader>
+        <AccordionBody active={collapseElementOpen === "2"}>
+            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard
+            of them accusamus labore sustainable VHS.
+        </AccordionBody>
+
+        <AccordionHeader active={collapseElementOpen === "3"} onToggle={() => setCollapseElement(collapseElementOpen !== "3" ? "3" : "")}>
+            Elemento Accordion #3
+        </AccordionHeader>
+        <AccordionBody active={collapseElementOpen === "3"}>
+            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </AccordionBody>
+    </Accordion>
+);
+```
+
+## Sfondo primario
+
+Applicando attributi aggiuntivi al componente `Accordion` è possibile utilizzare il colore primario come sfondo degli header.
+
+### Header attivi
+
+Aggiungere l'attributo `background="active"` al componente `Accordion` per ottenere header con sfondo di colore primario quando questi sono attivi e il contenuto relativo è visibile.
+
+<Canvas of={AccordionStories.HeaderAttivi} />
+
+#### Codice
+
+```tsx
+const [collapseElementOpen, setCollapseElement] = useState("");
+return (
+    <Accordion background="active">
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "1"} onToggle={() => setCollapseElement(collapseElementOpen !== "1" ? "1" : "")}>
+                Elemento Accordion #1
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "1"}>
+                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+                Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+            </AccordionBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "2"} onToggle={() => setCollapseElement(collapseElementOpen !== "2" ? "2" : "")}>
+                Elemento Accordion #2
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "2"}>
+                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t
+                heard of them accusamus labore sustainable VHS.
+            </AccordionBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "3"} onToggle={() => setCollapseElement(collapseElementOpen !== "3" ? "3" : "")}>
+                Elemento Accordion #3
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "3"}>
+                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </AccordionBody>
+        </AccordionItem>
+    </Accordion>
+);
+```
+
+### Hover degli Header
+
+Aggiungere l'attributo `background="hover"` al componente `Accordion` per ottenere header con sfondo di colore primario all’hover.
+
+<Canvas of={AccordionStories.HeaderHover} />
+
+#### Codice
+
+```tsx
+const [collapseElementOpen, setCollapseElement] = useState("");
+return (
+    <Accordion background="hover">
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "1"} onToggle={() => setCollapseElement(collapseElementOpen !== "1" ? "1" : "")}>
+                Elemento Accordion #1
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "1"}>
+                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+                Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+            </AccordionBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "2"} onToggle={() => setCollapseElement(collapseElementOpen !== "2" ? "2" : "")}>
+                Elemento Accordion #2
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "2"}>
+                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t
+                heard of them accusamus labore sustainable VHS.
+            </AccordionBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "3"} onToggle={() => setCollapseElement(collapseElementOpen !== "3" ? "3" : "")}>
+                Elemento Accordion #3
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "3"}>
+                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </AccordionBody>
+        </AccordionItem>
+    </Accordion>
+);
+```
+
+### Icona a sinistra
+
+Aggiungere l'attributo `iconLeft={true}` al 11componente `Accordion` per ottenere una variante in cui l’icona chevron che indica lo stato di apertura è sostituita da segni meno/più allineati a sinistra del titolo dell’header.
+
+<Canvas of={AccordionStories.IconaSinistra} />
+
+#### Codice
+
+```tsx
+const [collapseElementOpen, setCollapseElement] = useState("");
+return (
+    <Accordion iconLeft>
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "1"} onToggle={() => setCollapseElement(collapseElementOpen !== "1" ? "1" : "")}>
+                Elemento Accordion #1
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "1"}>
+                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+                Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+            </AccordionBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "2"} onToggle={() => setCollapseElement(collapseElementOpen !== "2" ? "2" : "")}>
+                Elemento Accordion #2
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "2"}>
+                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+                Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+            </AccordionBody>
+        </AccordionItem>
+        <AccordionItem>
+            <AccordionHeader active={collapseElementOpen === "3"} onToggle={() => setCollapseElement(collapseElementOpen !== "3" ? "3" : "")}>
+                Elemento Accordion #3
+            </AccordionHeader>
+            <AccordionBody active={collapseElementOpen === "3"}>
+                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+                Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+            </AccordionBody>
+        </AccordionItem>
+    </Accordion>
+);
+```
+
+## Argomenti componente
+
+## Accordion
+
+<ArgTypes of={AccordionStories.GruppiDiElementiRichiudibili} />
+
+## Accordion Item
+
+<ArgTypes of={AccordionItem} />
+
+### AccordionHeader
+
+<ArgTypes of={AccordionHeader} />
+
+### AccordionBody
+
+<ArgTypes of={AccordionBody} />

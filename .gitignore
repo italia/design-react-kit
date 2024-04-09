@@ -11,3 +11,5 @@ coverage
 
 # Logs
 *.log
+
+*storybook.log
