@@ -11,6 +11,8 @@ export interface BottomNavItemProps extends HTMLAttributes<HTMLLIElement> {
   active?: boolean;
   /** Indica l'URL a cui puntare (utilizzare o questo o onClick) */
   url?: string;
+  /** Indica il link route a cui l'elemento deve puntare. */
+  to?: string;
   /** Etichetta da associare all'elemento */
   label?: string;
   /** Testo esplicativo per dispositivi screen reader. */
@@ -36,6 +38,7 @@ export const BottomNavItem: FC<BottomNavItemProps> = ({
   badge,
   alert = false,
   url,
+  to,
   srText,
   iconName = 'it-comment',
   label,
@@ -59,7 +62,7 @@ export const BottomNavItem: FC<BottomNavItemProps> = ({
   );
   return (
     <li {...attributes} data-testid={testId}>
-      <Tag href={url || link || '#'} className={activeClass} onClick={onLinkClick}>
+      <Tag href={url || link || '#'} className={activeClass} to={to} onClick={onLinkClick}>
         {badgeWrapper}
         {alertWrapper}
         <Icon icon={iconName} />
