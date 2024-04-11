@@ -1,3 +1,12 @@
+## [5.0.3](https://github.com/italia/design-react-kit/compare/v5.0.2...v5.0.3) (2024-04-11)
+
+
+### Features
+
+* add to prop to bottomnavitem ([8126a98](https://github.com/italia/design-react-kit/commit/8126a98bf3758b4500d34499adf8d3784001c8ae))
+
+
+
 ## [5.0.2](https://github.com/italia/design-react-kit/compare/v5.0.1...v5.0.2) (2024-04-08)
 
 
