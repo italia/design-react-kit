@@ -38,28 +38,44 @@ _⚠️ Attenzione: questo kit è stato progettato per funzionare con la version
 
 **Design React kit** è un set di componenti React che implementa [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) e gli stili presenti su [Design UI Kit](https://github.com/italia/design-ui-kit).
 Per navigare la libreria e visualizzare i componenti, è stato utilizzato [Storybook](https://storybook.js.org/).
-La versione pubblica dello Storybook è disponibile [qui](https://italia.github.io/design-react-kit) per l'ultima release stabile pubblicata, mentre [qui](https://design-react-kit.vercel.app/) per la versione di sviluppo relativa al branch `main`.
+La versione pubblica dello Storybook è disponibile [qui](https://italia.github.io/design-react-kit) per l'ultima release stabile pubblicata.
 Per giocare con la libreria è disponibile il [Playground React Kit](https://github.com/italia/design-react-kit-playground).
 
-## Indice
+# Indice
 
-- [Come usare il kit](#come-usare-il-kit)
-- [Come contribuire](#come-contribuire-)
-- [Come contribuire con il codice](#come-contribuire-con-il-codice)
-- [Come creare nuovi componenti](#come-creare-nuovi-componenti)
-- [Link utili](#link-utili)
+- [Indice](#indice)
+  - [Come usare il kit](#come-usare-il-kit)
+    - [Aggiungere bootstrap-italia ed i font](#aggiungere-bootstrap-italia-ed-i-font)
+    - [Esempio](#esempio)
+    - [Caricamento Font](#caricamento-font)
+    - [Peer dependencies](#peer-dependencies)
+  - [Come contribuire 💙](#come-contribuire-)
+    - [Con il codice](#con-il-codice)
+    - [Impostare l'ambiente locale](#impostare-lambiente-locale)
+  - [Come creare nuovi componenti](#come-creare-nuovi-componenti)
+    - [Snapshot tests](#snapshot-tests)
+  - [Compilazione libreria](#compilazione-libreria)
+  - [Link utili](#link-utili)
+  - [Supporto browsers](#supporto-browsers)
+  - [TypeScript typings](#typescript-typings)
+  - [Contributor della libreria](#contributor-della-libreria)
 
 ## Come usare il kit
 
-Per utilizzare Design React come dipendenza in un'app è possibile installarla da [npm](https://www.npmjs.com/~italia). Suggeriamo di usare `create-react-app` per creare una nuova webapp React, come segue:
+Per utilizzare Design React come dipendenza in un'app è possibile installarla da [npm](https://www.npmjs.com/~italia). Suggeriamo di usare `create vite` per creare una nuova webapp React, come segue:
 
 ```sh
-create-react-app nome-app
+yarn create vite my-react-app --template react
 cd nome-app
 yarn add design-react-kit --save
 ```
 
-## Aggiungere bootstrap-italia ed i font
+Maggiori informazioni per crere una nuova app con React:
+
+- [Documentazione ufficiale](https://react.dev/learn/start-a-new-react-project)
+- [Vitejs](https://vitejs.dev/guide/#getting-started)
+
+### Aggiungere bootstrap-italia ed i font
 
 Il `design-react-kit` non include il CSS ed i file font, ed è quindi necessario installarli a parte:
 
@@ -67,11 +83,11 @@ Il `design-react-kit` non include il CSS ed i file font, ed è quindi necessario
 yarn add bootstrap-italia typeface-lora typeface-roboto-mono typeface-titillium-web --save
 ```
 
-## Esempio di app
+### Esempio
 
-A questo punto, è sufficiente importare esplicitamente nella app CSS e font se si è usato `create-react-app` all'interno del file `./src/App.js`:
+A questo punto, è sufficiente importare esplicitamente nella app CSS e font se si è usato `create vite` all'interno del file `./src/App.js`:
 
-```jsx
+```tsx
 import React from 'react';
 import './App.css';
 import { Alert } from 'design-react-kit';
@@ -80,14 +96,17 @@ import 'typeface-titillium-web';
 import 'typeface-roboto-mono';
 import 'typeface-lora';
 
-const App = () => {
+function App() {
   return <Alert>This is an Alert</Alert>;
-};
+}
 
 export default App;
 ```
 
-#### Caricamento Font
+Puoi consultare questo template web con StackBlitz:
+[Template web](https://stackblitz.com/edit/vitejs-vite-yy8bnk?file=src%2FApp.tsx)
+
+### Caricamento Font
 
 Il tema Bootstrap Italia utilizza un set specifico di font typeface: `titillium-web`, `roboto-mono` e `lora`. Il caricamento di questi font è lasciato al browser ma, volendo può essere controllato tramite l'apposito componente `FontLoader`.
 È sufficiente dichiarare il componente `FontLoader` in cima all'app react per permettere il caricamento.
@@ -103,7 +122,7 @@ WebFont.load({
 });
 ```
 
-#### Peer dependencies
+### Peer dependencies
 
 La libreria non include `react` e `react-dom`, evitando clashing di versioni e aumento inutile delle dimensioni del bundle.
 Per questo motivo per lo sviluppo in locale sarà necessario installare manualmente le dipendenze.
@@ -128,7 +147,7 @@ yarn install react react-dom
 - Attraverso la segnalazione di bug o miglioramenti al [repository ufficiale](https://github.com/italia/design-react-kit/) di React Kit.
 - Scrivendoci sul [canale dedicato](https://developersitalia.slack.com/messages/C04J92F9XM2/) di Slack.
 
-## Come contribuire con il codice
+### Con il codice
 
 Vorresti dare una mano su Design React Kit? **Sei nel posto giusto!**
 
@@ -165,27 +184,33 @@ I test unitari risiedono nella cartella `test`.
 Il componente `Button` ad esempio è presente sotto il percorso `src/Button` e la sua struttura è la seguente:
 
 ```
-src
-    └── Button
-        ├── Button.tsx
-stories
-    └── Button
-        ├── Button.stories.mdx
-        ├── Button.stories.tsx
-test
-    ├── Button.test.tsx
+├── src
+│    └── Button
+│        └── Button.tsx
+├── stories
+│    ├── Components
+│    │   └── Button.stories.tsx
+│    └── Documentation
+│        └── Button.mdx
+└── test
+     └── Button.test.tsx
 ```
 
 Alcune regole di base per strutturare i componenti:
 
 - I file TSX file del componente utilizza la sintassi JSX.
 - I file `.stories.tsx` dovrebbero contenere solo quanto relativo al componente stesso.
-- I file `.stories.mdx` dovrebbero contenere solo documentazione relativa al componente stesso
+- I file `.mdx` dovrebbero contenere solo documentazione relativa al componente stesso
 - I file `.test.tsx` dovrebbero contenere solo test relativi al componente stesso.
 
 Una volta creato un nuovo componente, con la sua story, avviando Storybook sarà possibile controllare che tutto funzioni come dovrebbe.
 
-#### Snapshot tests
+Documentazione:
+
+- [Storybook](https://storybook.js.org/docs/get-started)
+- [MDX](https://storybook.js.org/docs/writing-docs/mdx)
+
+### Snapshot tests
 
 Il sistema di testing prevede un controllo delle storie presenti, mediante una tecnica chiamata "snapshot" testing: il contenuto della storia Storybook verrà copiato in un file speciale e preservato per notificare eventuali cambiamenti in futuro. Questo fa si che l'aggiunta di nuove storie potrebbe risultare in un fallimento del task "test" in una PR.
 Qualora fosse stata aggiunta una nuova storia o modificata una già presente, sarà necessario aggiornare il file di snapshot come segue:
@@ -207,7 +232,6 @@ yarn build
 ## Link utili
 
 - [Playground React Kit](https://github.com/italia/design-react-kit-playground)
-- [Preview di Vercel (aggiornata ad ogni commit)](https://design-react-kit.vercel.app/)
 
 ## Supporto browsers
 
