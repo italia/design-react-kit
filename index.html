@@ -1,61 +1,205 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><title>Webpack App</title><meta name="viewport" content="width=device-width,initial-scale=1"/><style>html, body {
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-  * {
-    box-sizing: border-box;
-  }</style><script>/* globals window */
-  /* eslint-disable no-underscore-dangle */
-  try {
-    if (window.top !== window) {
-      window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.top.__REACT_DEVTOOLS_GLOBAL_HOOK__;
-    }
-  } catch (e) {
-    // eslint-disable-next-line no-console
-    console.warn('unable to connect to top frame for connecting dev tools');
-  }
+    <title>@storybook/cli - Storybook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  window.onerror = function onerror(message, source, line, column, err) {
-    if (window.CONFIG_TYPE !== 'DEVELOPMENT') return;
-    // eslint-disable-next-line no-var, vars-on-top
-    var xhr = new window.XMLHttpRequest();
-    xhr.open('POST', '/runtime-error');
-    xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
-    xhr.send(
-      JSON.stringify({
-        /* eslint-disable object-shorthand */
-        message: message,
-        source: source,
-        line: line,
-        column: column,
-        error: err && { message: err.message, name: err.name, stack: err.stack },
-        origin: 'manager',
-        /* eslint-enable object-shorthand */
-      })
-    );
-  };</script><title>Design React Kit</title><meta name="description" content="Design React Kit - A React toolkit that implements the Italia design system"/><meta property="og:site_name" content="Design React Kit"/><link rel="canonical" href="https://italia.github.io/design-react-kit/"/><link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png"/><link rel="icon" href="/favicons/favicon-32x32.png" sizes="32x32" type="image/png"/><link rel="icon" href="/favicons/favicon-16x16.png" sizes="16x16" type="image/png"/><link rel="manifest" href="/favicons/manifest.webmanifest"/><link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#0066CC"/><link rel="icon" href="/favicons/favicon.ico"/><meta name="msapplication-config" content="/favicons/browserconfig.xml"/><meta name="theme-color" content="#0066CC"/><meta name="twitter:card" content="summary"/><meta name="twitter:site" content="@teamdigitaleIT"/><meta name="twitter:creator" content="Team per la Trasformazione Digitale"/><meta name="twitter:title" content="React Kit"/><meta name="twitter:description" content="Il kit React per la Pubblica Amministrazione"/><meta name="twitter:image" content="/favicons/android-chrome-192x192.png"/><meta property="og:url" content="https://italia.github.io/bootstrap-italia/docs/come-iniziare/introduzione/"/><meta property="og:title" content="React Kit"/><meta property="og:description" content="Il kit React per la Pubblica Amministrazione"/><meta property="og:type" content="website"/><meta property="og:image" content="/favicons/social-card.png"/><meta property="og:image:secure_url" content="/favicons/social-card.png"/><meta property="og:image:type" content="image/png"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><style>.sidebar-item[id$='story-hidden'] {
+    
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    
+    <link
+      rel="prefetch"
+      href="./sb-common-assets/nunito-sans-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="prefetch"
+      href="./sb-common-assets/nunito-sans-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./sb-common-assets/fonts.css" />
+
+    <link href="./sb-manager/runtime.js" rel="modulepreload" />
+
+    
+    <link href="./sb-addons/storybook-core-server-presets-0/common-manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/links-1/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-controls-2/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-actions-3/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-backgrounds-4/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-viewport-5/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-toolbars-6/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-measure-7/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-outline-8/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/interactions-9/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/a11y-10/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/storybook-11/manager-bundle.js" rel="modulepreload" />
+      <title>Design React Kit</title>
+<meta name="description" content="Design React Kit - A React toolkit that implements the Italia design system" />
+<meta property="og:site_name" content="Design React Kit" />
+<link rel="canonical" href="https://italia.github.io/design-react-kit/" />
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
+<link rel="icon" href="/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="manifest" href="/favicons/manifest.webmanifest" />
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="icon" href="/favicons/favicon.ico" />
+<meta name="msapplication-config" content="/favicons/browserconfig.xml" />
+<meta name="theme-color" content="#0066CC" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@teamdigitaleIT" />
+<meta name="twitter:creator" content="Team per la Trasformazione Digitale" />
+<meta name="twitter:title" content="React Kit" />
+<meta name="twitter:description" content="Il kit React per la Pubblica Amministrazione" />
+<meta name="twitter:image" content="/favicons/android-chrome-192x192.png" />
+<!-- Facebook -->
+<meta property="og:url" content="https://italia.github.io/bootstrap-italia/docs/come-iniziare/introduzione/" />
+<meta property="og:title" content="React Kit" />
+<meta property="og:description" content="Il kit React per la Pubblica Amministrazione" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/favicons/social-card.png" />
+<meta property="og:image:secure_url" content="/favicons/social-card.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<style>
+  .sidebar-item[id$='story-hidden'] {
     display: none !important;
-  }</style><style>#root[hidden],
-      #docs-root[hidden] {
+  }
+</style>
+ 
+
+    <style>
+      #storybook-root[hidden] {
         display: none !important;
-      }</style></head><body><div id="root"></div><div id="docs-root"></div><script>window['CONFIG_TYPE'] = "PRODUCTION";
-          
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    <div id="root"></div>
+
+    
+    <script>
       
-          
-            window['LOGLEVEL'] = "info";
-          
+        
+          window['FEATURES'] = {
+  "argTypeTargetsV7": true,
+  "legacyDecoratorFileOrder": false,
+  "disallowImplicitActionsInRenderV8": true
+};
+        
       
-          
-            window['FEATURES'] = {"postcss":true,"emotionAlias":false,"warnOnLegacyHierarchySeparator":true,"buildStoriesJson":false,"storyStoreV7":false,"modernInlineRender":false,"breakingChangesV7":false,"interactionsDebugger":false,"babelModeV7":false,"argTypeTargetsV7":false,"previewMdx2":false};
-          
+        
+          window['REFS'] = {};
+        
       
-          
+        
+          window['LOGLEVEL'] = "info";
+        
       
-          
+        
+          window['DOCS_OPTIONS'] = {
+  "docsMode": false,
+  "defaultName": "Documentazione",
+  "autodocs": true
+};
+        
       
-          
-            window['DOCS_MODE'] = false;</script><script src="runtime~main.bace96de967c8cd14776.manager.bundle.js"></script><script src="983.eb703b3a0c451c819e3a.manager.bundle.js"></script><script src="main.871acadfc9b203ce6c5d.manager.bundle.js"></script></body></html>
+        
+          window['CONFIG_TYPE'] = "PRODUCTION";
+        
+      
+        
+      
+        
+      
+        
+          window['TAGS_OPTIONS'] = {
+  "dev-only": {
+    "excludeFromDocsStories": true
+  },
+  "docs-only": {
+    "excludeFromSidebar": true
+  },
+  "test-only": {
+    "excludeFromSidebar": true,
+    "excludeFromDocsStories": true
+  }
+};
+        
+      
+        
+          window['STORYBOOK_RENDERER'] = "@storybook/react";
+        
+      
+        
+          window['STORYBOOK_BUILDER'] = "@storybook/builder-vite";
+        
+      
+        
+          window['STORYBOOK_FRAMEWORK'] = "@storybook/react-vite";
+        
+      
+    </script>
+    
+
+    <script type="module">
+      import './sb-manager/globals-runtime.js';
+      
+      
+        import './sb-addons/storybook-core-server-presets-0/common-manager-bundle.js';
+      
+        import './sb-addons/links-1/manager-bundle.js';
+      
+        import './sb-addons/essentials-controls-2/manager-bundle.js';
+      
+        import './sb-addons/essentials-actions-3/manager-bundle.js';
+      
+        import './sb-addons/essentials-backgrounds-4/manager-bundle.js';
+      
+        import './sb-addons/essentials-viewport-5/manager-bundle.js';
+      
+        import './sb-addons/essentials-toolbars-6/manager-bundle.js';
+      
+        import './sb-addons/essentials-measure-7/manager-bundle.js';
+      
+        import './sb-addons/essentials-outline-8/manager-bundle.js';
+      
+        import './sb-addons/interactions-9/manager-bundle.js';
+      
+        import './sb-addons/a11y-10/manager-bundle.js';
+      
+        import './sb-addons/storybook-11/manager-bundle.js';
+      
+      
+      import './sb-manager/runtime.js';
+    </script>
+
+    
+    <link href="./sb-preview/runtime.js" rel="prefetch" as="script" />
+    
+  </body>
+</html>
