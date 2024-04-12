@@ -54,7 +54,7 @@
     "storybook:serve": "storybook dev -p 9001",
     "storybook:build": "storybook build --docs",
     "storybook:build:base": "storybook build",
-    "storybook:deploy": "npx gh-pages -d storybook-static -m 'Update GitHub Pages [ci skip]'",
+    "storybook:deploy": "touch storybook-static/.nojekyll && npx gh-pages -d storybook-static -m 'Update GitHub Pages [ci skip]'",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && node scripts/wait-confirm && git add CHANGELOG.md",
     "postversion": "echo \"You can now publish your version using 'git push --follow-tags'\""
   },
