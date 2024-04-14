@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes, ElementType, Ref, ReactChild, AnchorHTMLAttributes } from 'react';
+import React, { FC, HTMLAttributes, ElementType, Ref, ReactNode, AnchorHTMLAttributes } from 'react';
 import { Badge as BadgeReact } from 'reactstrap';
 import { CSSModule } from 'reactstrap/types/lib/utils';
 
@@ -16,7 +16,7 @@ export type BadgeProps = {
   /** Da utilizzare per impostare un riferimento all'elemento DOM */
   innerRef?: Ref<HTMLElement>;
   /** Il contenuto del badge */
-  children: ReactChild;
+  children: ReactNode;
   testId?: string;
 } & (HTMLAttributes<HTMLElement> | AnchorHTMLAttributes<HTMLAnchorElement>);
 

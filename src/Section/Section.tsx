@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes, ReactChild } from 'react';
+import React, { FC, HTMLAttributes, ReactNode } from 'react';
 import classNames from 'classnames';
 import { notifyDeprecation } from '../utils';
 
@@ -21,7 +21,7 @@ export interface SectionProps extends HTMLAttributes<HTMLElement> {
    */
   image?: string;
   /** Il contenuto della sezione */
-  children?: ReactChild | ReactChild[];
+  children?: ReactNode | ReactNode[];
   /** Quando abilitato applica lo sfondo di tipo "neutral" al componente.
    * @deprecated. Utilizzare `color="neutral"`
    */

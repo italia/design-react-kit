@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { ReactChild } from 'react';
+import React, { ReactNode } from 'react';
 import { Button } from '../Button/Button';
 import { Icon } from '../Icon/Icon';
 
@@ -16,7 +16,7 @@ export interface GoBackProps {
    * Render the up variant of the go back button
    */
   up?: boolean;
-  children?: ReactChild;
+  children?: ReactNode;
 }
 
 const goBack = () => {

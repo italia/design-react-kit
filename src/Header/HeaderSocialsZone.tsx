@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes, ReactChild } from 'react';
+import React, { FC, HTMLAttributes, ReactNode } from 'react';
 import classNames from 'classnames';
 
 export interface HeaderSocialsZoneProps extends HTMLAttributes<HTMLElement> {
@@ -7,7 +7,7 @@ export interface HeaderSocialsZoneProps extends HTMLAttributes<HTMLElement> {
   /** Etichetta utilizzata per presentare i social presenti. In caso di stringa vuota non verrà mostrata alcuna etichetta */
   label?: string;
   /** Utilizzato per elencare i social da mostrare */
-  children?: ReactChild;
+  children?: ReactNode;
   testId?: string;
 }
 
