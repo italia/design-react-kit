@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-
 import { Meta, StoryObj } from "@storybook/react";
+import React, { useState } from 'react';
 import {
   DropdownMenu,
   Icon,
@@ -11,7 +10,6 @@ import {
   ToolbarItem
 } from '../../src';
 
-
 const meta: Meta<typeof Toolbar> = {
   title: "Documentazione/Componenti/Toolbar",
   component: Toolbar
@@ -21,7 +19,8 @@ export default meta;
 
 type Story = StoryObj<typeof Toolbar>;
 
-export const Esempio = () => (
+export const Esempio: Story = {
+  render: () => (
   <div className='toolbar-docs-style'>
     <Toolbar>
       <ToolbarItem label='messaggi' iconName='it-comment' active />
@@ -31,9 +30,11 @@ export const Esempio = () => (
       <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
     </Toolbar>
   </div>
-);
+  )
+};
 
-export const EsempioMedium = () => (
+export const EsempioMedium: Story = {
+  render: () => (
   <div className='toolbar-docs-style'>
     <Toolbar size={'medium'}>
       <ToolbarItem label='messaggi' iconName='it-comment' active />
@@ -43,9 +44,11 @@ export const EsempioMedium = () => (
       <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
     </Toolbar>
   </div>
-);
+  )
+};
 
-export const EsempioSmall = () => (
+export const EsempioSmall: Story = {
+  render: () => (
   <div className='toolbar-docs-style'>
     <Toolbar size={'small'}>
       <ToolbarItem label='messaggi' iconName='it-comment' active />
@@ -56,9 +59,11 @@ export const EsempioSmall = () => (
       <ToolbarItem label='downloads' iconName='it-download' disabled />
     </Toolbar>
   </div>
-);
+  )
+};
 
-export const EsempioWithDivider = () => (
+export const EsempioWithDivider: Story = {
+  render: () => (
   <div className='toolbar-docs-style'>
     <Toolbar>
       <ToolbarItem label='messaggi' iconName='it-comment' active />
@@ -70,9 +75,11 @@ export const EsempioWithDivider = () => (
       <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
     </Toolbar>
   </div>
-);
+  )
+};
 
-export const EsempioConBadgeGrande = () => (
+export const EsempioConBadgeGrande: Story = {
+  render: () => (
   <div className='toolbar-docs-style'>
     <Toolbar>
       <ToolbarItem
@@ -99,9 +106,11 @@ export const EsempioConBadgeGrande = () => (
       <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
     </Toolbar>
   </div>
-);
+  )
+};
 
-export const EsempioConBadgeMedio = () => (
+export const EsempioConBadgeMedio: Story = {
+  render: () => (
   <div className='toolbar-docs-style'>
     <Toolbar size='medium'>
       <ToolbarItem
@@ -128,9 +137,11 @@ export const EsempioConBadgeMedio = () => (
       <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
     </Toolbar>
   </div>
-);
+  )
+};
 
-export const EsempioConBadgePiccolo = () => (
+export const EsempioConBadgePiccolo: Story = {
+  render: () => (
   <div className='toolbar-docs-style'>
     <Toolbar size='small'>
       <ToolbarItem
@@ -157,7 +168,8 @@ export const EsempioConBadgePiccolo = () => (
       <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
     </Toolbar>
   </div>
-);
+  )
+};
 
 const EsempioConDropdownGrandeWithHooks = () => {
   const [openFirst, toggleFirst] = useState(false);
