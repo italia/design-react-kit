@@ -1,4 +1,4 @@
-/* eslint jsx-a11y/anchor-is-valid: 0 */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 import { Meta, StoryObj } from "@storybook/react";
@@ -13,7 +13,6 @@ import {
     HeaderBrand,
     HeaderContent,
     HeaderLinkZone,
-    HeaderProps,
     HeaderRightZone,
     HeaderSearch,
     HeaderSocialsZone,
@@ -27,7 +26,7 @@ import {
     Nav,
     NavItem,
     NavLink,
-    Row,
+    Row
 } from "../../../src";
 
 type ThemeType = {
@@ -39,19 +38,6 @@ type HeaderCompleteProps = ThemeType & {
     sticky: boolean;
     iconName: string;
     iconAlt: string;
-};
-
-
-const CompleteHeader = ({ theme, sticky }: HeaderCompleteProps) => {
-    return (
-        <Headers sticky={sticky}>
-            <SlimHeader theme={theme} />
-            <div className="it-nav-wrapper">
-                <CenterHeader theme={theme} />
-                <NavHeader theme={theme} />
-            </div>
-        </Headers>
-    );
 };
 
 const CenterHeader = ({ theme }: ThemeType) => {
@@ -274,13 +260,29 @@ const SlimHeader = ({ theme }: ThemeType) => {
 
 const meta: Meta = {
     title: "Documentazione/Menu di navigazione/Header/Complete",
-    component: CompleteHeader,
+    component: Header,
+    parameters: {
+        docs: {
+            controls: {
+                exclude: ["isOpen", "className", "type", "small", "testId"],
+            },
+        },
+    },
 };
 export default meta;
 
-type Story = StoryObj<HeaderProps>;
+type Story = StoryObj<HeaderCompleteProps>;
 
 export const CompleteHeaderStory: Story = {
+    render: ({ theme, sticky }) => (
+        <Headers sticky={sticky}>
+            <SlimHeader theme={theme} />
+            <div className="it-nav-wrapper">
+                <CenterHeader theme={theme} />
+                <NavHeader theme={theme} />
+            </div>
+        </Headers>
+    ),
     args: {
         theme: 'dark'
     },

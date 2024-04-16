@@ -1,9 +1,25 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 import { Header, HeaderBrand, HeaderContent, HeaderProps, HeaderRightZone, HeaderSearch, HeaderSocialsZone, Icon } from "../../../src";
 
-const CenterHeader = ({ theme, small }: HeaderProps) => {
-    return (
+const meta: Meta = {
+    title: "Documentazione/Menu di navigazione/Header/Center",
+    component: Header,
+    parameters: {
+        docs: {
+            controls: {
+                exclude: ["isOpen", "className", "type", "small", "testId"],
+            },
+        },
+    },
+};
+export default meta;
+
+type Story = StoryObj<HeaderProps>;
+
+export const CenterHeaderBasic: Story = {
+    render: ({ theme, small }) => (
         <Header type="center" theme={theme} small={small}>
             <HeaderContent>
                 <HeaderBrand iconName="it-code-circle" iconAlt="it code circle icon">
@@ -34,19 +50,8 @@ const CenterHeader = ({ theme, small }: HeaderProps) => {
                 </HeaderRightZone>
             </HeaderContent>
         </Header>
-    );
-}
-
-const meta: Meta = {
-    title: "Documentazione/Menu di navigazione/Header/Center",
-    component: CenterHeader,
-};
-export default meta;
-
-type Story = StoryObj<HeaderProps>;
-
-//Passo i parametri al componente definito pià sopra così lo posso riutilizzare
-export const CenterHeaderBasic: Story = {
+    )
+    ,
     args: {
         theme: "",
         small: false,
@@ -59,7 +64,8 @@ export const CenterHeaderBasic: Story = {
     },
 }
 
-export const HeaderCenterNarrow: Story = {
+export const HeaderCenterNarrow = {
+    ...CenterHeaderBasic,
     args: {
         theme: "",
         small: true,
