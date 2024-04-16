@@ -138,21 +138,19 @@ export const CheckboxGruppi: Story = {
     )
 };
 
+//Da correggere il componente input nel caso in cui venga aggiunta la classe semi-checked perchè il render del componente è sbagliato
 export const CheckboxMixedButton: Story = {
     render: () => (
-        <section>
-            <Row className="m-5">
-                <Col sm="12">
-                    <fieldset>
-                        <legend>Checkbox</legend>
-                        <Form className="m-3">
-                            <FormGroup check inline>
-                                <Input id="checkbox3" type="checkbox" defaultChecked className="semi-checked" label="Mixed button attivo" />
-                            </FormGroup>
-                        </Form>
-                    </fieldset>
-                </Col>
-            </Row>
-        </section>
+        <Form className="m-3">
+            <fieldset>
+                <legend>Checkbox</legend>
+                <FormGroup check>
+                    <Input id="checkbox-semi-checked" type="checkbox" className="semi-checked" />
+                    <Label for="checkbox-semi-checked" check>
+                        Checkbox di esempio
+                    </Label>
+                </FormGroup>
+            </fieldset>
+        </Form>
     )
 };
