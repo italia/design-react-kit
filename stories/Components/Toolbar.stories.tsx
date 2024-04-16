@@ -21,153 +21,153 @@ type Story = StoryObj<typeof Toolbar>;
 
 export const Esempio: Story = {
   render: () => (
-  <div className='toolbar-docs-style'>
-    <Toolbar>
-      <ToolbarItem label='messaggi' iconName='it-comment' active />
-      <ToolbarItem label='immagini' iconName='it-camera' />
-      <ToolbarItem label='documenti' iconName='it-file' />
-      <ToolbarItem label='privacy' iconName='it-lock' />
-      <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
-    </Toolbar>
-  </div>
+    <div className='toolbar-docs-style'>
+      <Toolbar>
+        <ToolbarItem label='messaggi' iconName='it-comment' active />
+        <ToolbarItem label='immagini' iconName='it-camera' />
+        <ToolbarItem label='documenti' iconName='it-file' />
+        <ToolbarItem label='privacy' iconName='it-lock' />
+        <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
+      </Toolbar>
+    </div>
   )
 };
 
 export const EsempioMedium: Story = {
   render: () => (
-  <div className='toolbar-docs-style'>
-    <Toolbar size={'medium'}>
-      <ToolbarItem label='messaggi' iconName='it-comment' active />
-      <ToolbarItem label='immagini' iconName='it-camera' />
-      <ToolbarItem label='documenti' iconName='it-file' />
-      <ToolbarItem label='privacy' iconName='it-lock' />
-      <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
-    </Toolbar>
-  </div>
+    <div className='toolbar-docs-style'>
+      <Toolbar size={'medium'}>
+        <ToolbarItem label='messaggi' iconName='it-comment' active />
+        <ToolbarItem label='immagini' iconName='it-camera' />
+        <ToolbarItem label='documenti' iconName='it-file' />
+        <ToolbarItem label='privacy' iconName='it-lock' />
+        <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
+      </Toolbar>
+    </div>
   )
 };
 
 export const EsempioSmall: Story = {
   render: () => (
-  <div className='toolbar-docs-style'>
-    <Toolbar size={'small'}>
-      <ToolbarItem label='messaggi' iconName='it-comment' active />
-      <ToolbarItem label='immagini' iconName='it-camera' />
-      <ToolbarItem label='documenti' iconName='it-file' />
-      <ToolbarItem label='privacy' iconName='it-lock' />
-      <ToolbarItem label='preferiti' iconName='it-star-outline' />
-      <ToolbarItem label='downloads' iconName='it-download' disabled />
-    </Toolbar>
-  </div>
+    <div className='toolbar-docs-style'>
+      <Toolbar size={'small'}>
+        <ToolbarItem label='messaggi' iconName='it-comment' active />
+        <ToolbarItem label='immagini' iconName='it-camera' />
+        <ToolbarItem label='documenti' iconName='it-file' />
+        <ToolbarItem label='privacy' iconName='it-lock' />
+        <ToolbarItem label='preferiti' iconName='it-star-outline' />
+        <ToolbarItem label='downloads' iconName='it-download' disabled />
+      </Toolbar>
+    </div>
   )
 };
 
 export const EsempioWithDivider: Story = {
   render: () => (
-  <div className='toolbar-docs-style'>
-    <Toolbar>
-      <ToolbarItem label='messaggi' iconName='it-comment' active />
-      <ToolbarItem label='immagini' iconName='it-camera' />
-      <ToolbarDividerItem />
-      <ToolbarItem label='documenti' iconName='it-file' />
-      <ToolbarItem label='privacy' iconName='it-lock' />
-      <ToolbarDividerItem />
-      <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
-    </Toolbar>
-  </div>
+    <div className='toolbar-docs-style'>
+      <Toolbar>
+        <ToolbarItem label='messaggi' iconName='it-comment' active />
+        <ToolbarItem label='immagini' iconName='it-camera' />
+        <ToolbarDividerItem />
+        <ToolbarItem label='documenti' iconName='it-file' />
+        <ToolbarItem label='privacy' iconName='it-lock' />
+        <ToolbarDividerItem />
+        <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
+      </Toolbar>
+    </div>
   )
 };
 
 export const EsempioConBadgeGrande: Story = {
   render: () => (
-  <div className='toolbar-docs-style'>
-    <Toolbar>
-      <ToolbarItem
-        label='messaggi'
-        iconName='it-comment'
-        active
-        badge={{
-          value: 1,
-          label: 'da leggere',
-          srText: `c'è un messaggio da leggere`
-        }}
-      />
-      <ToolbarItem
-        label='documenti'
-        iconName='it-file'
-        badge={{
-          value: 42,
-          label: 'da esaminare',
-          srText: `ci sono 42 documenti da esaminare`
-        }}
-      />
-      <ToolbarItem label='immagini' iconName='it-camera' />
-      <ToolbarItem label='privacy' iconName='it-lock' />
-      <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
-    </Toolbar>
-  </div>
+    <div className='toolbar-docs-style'>
+      <Toolbar>
+        <ToolbarItem
+          label='messaggi'
+          iconName='it-comment'
+          active
+          badge={{
+            value: 1,
+            label: 'da leggere',
+            srText: `c'è un messaggio da leggere`
+          }}
+        />
+        <ToolbarItem
+          label='documenti'
+          iconName='it-file'
+          badge={{
+            value: 42,
+            label: 'da esaminare',
+            srText: `ci sono 42 documenti da esaminare`
+          }}
+        />
+        <ToolbarItem label='immagini' iconName='it-camera' />
+        <ToolbarItem label='privacy' iconName='it-lock' />
+        <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
+      </Toolbar>
+    </div>
   )
 };
 
 export const EsempioConBadgeMedio: Story = {
   render: () => (
-  <div className='toolbar-docs-style'>
-    <Toolbar size='medium'>
-      <ToolbarItem
-        label='messaggi'
-        iconName='it-comment'
-        active
-        badge={{
-          value: 1,
-          label: 'da leggere',
-          srText: `c'è un messaggio da leggere`
-        }}
-      />
-      <ToolbarItem
-        label='documenti'
-        iconName='it-file'
-        badge={{
-          value: 42,
-          label: 'da esaminare',
-          srText: `ci sono 42 documenti da esaminare`
-        }}
-      />
-      <ToolbarItem label='immagini' iconName='it-camera' />
-      <ToolbarItem label='privacy' iconName='it-lock' />
-      <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
-    </Toolbar>
-  </div>
+    <div className='toolbar-docs-style'>
+      <Toolbar size='medium'>
+        <ToolbarItem
+          label='messaggi'
+          iconName='it-comment'
+          active
+          badge={{
+            value: 1,
+            label: 'da leggere',
+            srText: `c'è un messaggio da leggere`
+          }}
+        />
+        <ToolbarItem
+          label='documenti'
+          iconName='it-file'
+          badge={{
+            value: 42,
+            label: 'da esaminare',
+            srText: `ci sono 42 documenti da esaminare`
+          }}
+        />
+        <ToolbarItem label='immagini' iconName='it-camera' />
+        <ToolbarItem label='privacy' iconName='it-lock' />
+        <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
+      </Toolbar>
+    </div>
   )
 };
 
 export const EsempioConBadgePiccolo: Story = {
   render: () => (
-  <div className='toolbar-docs-style'>
-    <Toolbar size='small'>
-      <ToolbarItem
-        label='messaggi'
-        iconName='it-comment'
-        active
-        badge={{
-          value: 1,
-          label: 'da leggere',
-          srText: `c'è un messaggio da leggere`
-        }}
-      />
-      <ToolbarItem
-        label='documenti'
-        iconName='it-file'
-        badge={{
-          value: 42,
-          label: 'da esaminare',
-          srText: `ci sono 42 documenti da esaminare`
-        }}
-      />
-      <ToolbarItem label='immagini' iconName='it-camera' />
-      <ToolbarItem label='privacy' iconName='it-lock' />
-      <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
-    </Toolbar>
-  </div>
+    <div className='toolbar-docs-style'>
+      <Toolbar size='small'>
+        <ToolbarItem
+          label='messaggi'
+          iconName='it-comment'
+          active
+          badge={{
+            value: 1,
+            label: 'da leggere',
+            srText: `c'è un messaggio da leggere`
+          }}
+        />
+        <ToolbarItem
+          label='documenti'
+          iconName='it-file'
+          badge={{
+            value: 42,
+            label: 'da esaminare',
+            srText: `ci sono 42 documenti da esaminare`
+          }}
+        />
+        <ToolbarItem label='immagini' iconName='it-camera' />
+        <ToolbarItem label='privacy' iconName='it-lock' />
+        <ToolbarItem label='preferiti' iconName='it-star-outline' disabled />
+      </Toolbar>
+    </div>
   )
 };
 
@@ -281,10 +281,15 @@ const EsempioConDropdownGrandeWithHooks = () => {
     </div>
   );
 }
-export const EsempioConDropdownGrande : Story = {
-  render: () => <EsempioConDropdownGrandeWithHooks/>
-};
 
+export const EsempioConDropdownGrande: Story = {
+  render: () => <EsempioConDropdownGrandeWithHooks />,
+  parameters: {
+    docs: {
+      canvas: { sourceState: "none" },
+    },
+  },
+};
 
 const EsempioConDropdownMediaWithHooks = () => {
   const [openFirst, toggleFirst] = useState(false);
@@ -411,10 +416,15 @@ const EsempioConDropdownMediaWithHooks = () => {
       </Toolbar>
     </div>
   );
-
 }
-export const EsempioConDropdownMedia : Story = {
-  render: () => <EsempioConDropdownMediaWithHooks/>
+
+export const EsempioConDropdownMedia: Story = {
+  render: () => <EsempioConDropdownMediaWithHooks />,
+  parameters: {
+    docs: {
+      canvas: { sourceState: "none" },
+    },
+  },
 };
 
 const EsempioConDropdownPiccolaWithHooks = () => {
@@ -543,10 +553,14 @@ const EsempioConDropdownPiccolaWithHooks = () => {
     </div>
   );
 }
-export const EsempioConDropdownPiccola : Story = {
-  render: () => <EsempioConDropdownPiccolaWithHooks/>
+export const EsempioConDropdownPiccola: Story = {
+  render: () => <EsempioConDropdownPiccolaWithHooks />,
+  parameters: {
+    docs: {
+      canvas: { sourceState: "none" },
+    },
+  },
 };
-
 
 const EsempioVerticaleGrandeWithHooks = () => {
   const [openFirst, toggleFirst] = useState(false);
@@ -592,8 +606,13 @@ const EsempioVerticaleGrandeWithHooks = () => {
   );
 }
 
-export const EsempioVerticaleGrande : Story = {
-  render: () => <EsempioVerticaleGrandeWithHooks/>
+export const EsempioVerticaleGrande: Story = {
+  render: () => <EsempioVerticaleGrandeWithHooks />,
+  parameters: {
+    docs: {
+      canvas: { sourceState: "none" },
+    },
+  },
 };
 
 const EsempioVerticaleMediaWithHooks = () => {
@@ -640,8 +659,13 @@ const EsempioVerticaleMediaWithHooks = () => {
   );
 }
 
-export const EsempioVerticaleMedia : Story = {
-  render: () => <EsempioVerticaleMediaWithHooks/>
+export const EsempioVerticaleMedia: Story = {
+  render: () => <EsempioVerticaleMediaWithHooks />,
+  parameters: {
+    docs: {
+      canvas: { sourceState: "none" },
+    },
+  },
 };
 
 const EsempioVerticalePiccolaWithHooks = () => {
@@ -689,6 +713,11 @@ const EsempioVerticalePiccolaWithHooks = () => {
   );
 }
 
-export const EsempioVerticalePiccola : Story = {
-  render: () => <EsempioVerticalePiccolaWithHooks/>
+export const EsempioVerticalePiccola: Story = {
+  render: () => <EsempioVerticalePiccolaWithHooks />,
+  parameters: {
+    docs: {
+      canvas: { sourceState: "none" },
+    },
+  },
 };
