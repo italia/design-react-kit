@@ -12307,7 +12307,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Sidebar SidebarVersioneScur
 </div>
 `;
 
-exports[`Stories Snapshots Documentazione/Componenti/Skiplink _Esempi 1`] = `
+exports[`Stories Snapshots Documentazione/Componenti/Skiplinks _Esempi 1`] = `
 <div>
   <section
     tabindex="-1"
@@ -16160,7 +16160,110 @@ exports[`Stories Snapshots Documentazione/Componenti/ThumbNav EsempioAutoWidthFi
 <div>
   <ul
     class="thumb-nav thumb-nav-auto thumb-nav-auto-5"
-  />
+  >
+    <li>
+      <img
+        alt=""
+        aria-hidden="true"
+        class="thumb-nav-resizer"
+        src="https://picsum.photos/240/160?image=1056"
+      />
+      <a
+        class="ratio ratio-3x2"
+        href="#"
+      >
+        <img
+          alt="Visualizza immagine 1"
+          src="https://picsum.photos/480/320?image=1044"
+        />
+      </a>
+    </li>
+    <li>
+      <img
+        alt=""
+        aria-hidden="true"
+        class="thumb-nav-resizer"
+        src="https://picsum.photos/240/160?image=1056"
+      />
+      <a
+        class="ratio ratio-3x2"
+        href="#"
+      >
+        <img
+          alt="Visualizza immagine 2"
+          src="https://picsum.photos/480/320?image=1050"
+        />
+      </a>
+    </li>
+    <li>
+      <img
+        alt=""
+        aria-hidden="true"
+        class="thumb-nav-resizer"
+        src="https://picsum.photos/240/160?image=1056"
+      />
+      <a
+        class="ratio ratio-3x2"
+        href="#"
+      >
+        <img
+          alt="Visualizza immagine 3"
+          src="https://picsum.photos/480/320?image=1037"
+        />
+      </a>
+    </li>
+    <li>
+      <img
+        alt=""
+        aria-hidden="true"
+        class="thumb-nav-resizer"
+        src="https://picsum.photos/240/160?image=1056"
+      />
+      <a
+        class="ratio ratio-3x2"
+        href="#"
+      >
+        <img
+          alt="Visualizza immagine 4"
+          src="https://picsum.photos/480/320?image=1040"
+        />
+      </a>
+    </li>
+    <li>
+      <img
+        alt=""
+        aria-hidden="true"
+        class="thumb-nav-resizer"
+        src="https://picsum.photos/240/160?image=1056"
+      />
+      <a
+        class="ratio ratio-3x2"
+        href="#"
+      >
+        <img
+          alt="Visualizza immagine 5"
+          src="https://picsum.photos/480/320?image=1055"
+        />
+      </a>
+    </li>
+    <li>
+      <img
+        alt=""
+        aria-hidden="true"
+        class="thumb-nav-resizer"
+        src="https://picsum.photos/240/160?image=1056"
+      />
+      <a
+        class="ratio ratio-3x2"
+        href="#"
+      >
+        <img
+          alt="Visualizza immagine 6"
+          src="https://picsum.photos/480/320?image=1057"
+        />
+      </a>
+    </li>
+  </ul>
 </div>
 `;
 
@@ -20907,18 +21010,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioWithDivider 
 </div>
 `;
 
-exports[`Stories Snapshots Documentazione/Componenti/Tooltip _EsempiInterattivi 1`] = `
-<div>
-  <div>
-    <button
-      class="m-3 btn btn-"
-    >
-      Tooltip
-    </button>
-  </div>
-</div>
-`;
-
 exports[`Stories Snapshots Documentazione/Componenti/Tooltip Esempi 1`] = `
 <div>
   <div
@@ -21035,6 +21126,18 @@ exports[`Stories Snapshots Documentazione/Componenti/Tooltip EsempiConControllo 
         La città nuova, Alda Merini
       </em>
     </p>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Tooltip EsempiInterattivi 1`] = `
+<div>
+  <div>
+    <button
+      class="m-3 btn btn-"
+    >
+      Tooltip
+    </button>
   </div>
 </div>
 `;
@@ -21884,51 +21987,44 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxInline 1`] = `
 
 exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxMixedButton 1`] = `
 <div>
-  <section>
-    <div
-      class="m-5 row"
-    >
+  <form
+    class="m-3"
+  >
+    <fieldset>
+      <legend>
+        Checkbox
+      </legend>
       <div
-        class="col-sm-12"
+        class="form-check"
       >
-        <fieldset>
-          <legend>
-            Checkbox
-          </legend>
-          <form
-            class="m-3"
-          >
-            <div
-              class="form-check form-check-inline"
-            >
-              <div
-                class="semi-checked form-group"
-              >
-                <label
-                  class=" "
-                  for="checkbox3"
-                >
-                  Mixed button attivo
-                </label>
-                <input
-                  aria-describedby="checkbox3Description"
-                  checked=""
-                  class="semi-checked form-control"
-                  id="checkbox3"
-                  indeterminate="true"
-                  type="checkbox"
-                  value=""
-                />
-                <div
-                  class="form-text"
-                />
-              </div>
-            </div>
-          </form>
-        </fieldset>
+        <div
+          class="semi-checked form-group"
+        >
+          <label
+            class=" "
+            for="checkbox-semi-checked"
+          />
+          <input
+            aria-describedby="checkbox-semi-checkedDescription"
+            class="semi-checked form-control"
+            id="checkbox-semi-checked"
+            indeterminate="true"
+            type="checkbox"
+            value=""
+          />
+          <div
+            class="form-text"
+          />
+        </div>
+        <label
+          class="form-check-label"
+          for="checkbox-semi-checked"
+        >
+          Checkbox di esempio
+        </label>
       </div>
-    </div>
-  </section>
+    </fieldset>
+  </form>
 </div>
 `;
 
