@@ -207,7 +207,6 @@ export const OverlayRight = {
   }
 };
 
-
 export const EsempioFixed: Story = {
   render: () => (
     <ThumbNav fixedWidth>
@@ -245,56 +244,58 @@ export const EsempioFixed: Story = {
   )
 };
 
-export const EsempioAutoWidth: Story = ({ rowItems }: ThumbNavProps) => (
-  <ThumbNav rowItems={rowItems}>
-    <ThumbNavItem
-      targetUrl='#'
-      imageUrl='https://picsum.photos/480/320?image=1044'
-      actionDescription='Visualizza immagine 1'
-    />
-    <ThumbNavItem
-      targetUrl='#'
-      imageUrl='https://picsum.photos/480/320?image=1050'
-      actionDescription='Visualizza immagine 2'
-    />
-    <ThumbNavItem
-      targetUrl='#'
-      imageUrl='https://picsum.photos/480/320?image=1037'
-      actionDescription='Visualizza immagine 3'
-    />
-    <ThumbNavItem
-      targetUrl='#'
-      imageUrl='https://picsum.photos/480/320?image=1040'
-      actionDescription='Visualizza immagine 4'
-    />
-    <ThumbNavItem
-      targetUrl='#'
-      imageUrl='https://picsum.photos/480/320?image=1055'
-      actionDescription='Visualizza immagine 5'
-    />
-    <ThumbNavItem
-      targetUrl='#'
-      imageUrl='https://picsum.photos/480/320?image=1057'
-      actionDescription='Visualizza immagine 6'
-    />
-  </ThumbNav>
-);
-
-EsempioAutoWidth.args = {
-  rowItems: 3
-};
-EsempioAutoWidth.argTypes = {
-  rowItems: {
-    control: {
-      type: 'select',
-      options: [2, 3, 4, 5]
+export const EsempioAutoWidth: Story = {
+  render: ({ rowItems }: ThumbNavProps) => (
+    <ThumbNav rowItems={rowItems}>
+      <ThumbNavItem
+        targetUrl='#'
+        imageUrl='https://picsum.photos/480/320?image=1044'
+        actionDescription='Visualizza immagine 1'
+      />
+      <ThumbNavItem
+        targetUrl='#'
+        imageUrl='https://picsum.photos/480/320?image=1050'
+        actionDescription='Visualizza immagine 2'
+      />
+      <ThumbNavItem
+        targetUrl='#'
+        imageUrl='https://picsum.photos/480/320?image=1037'
+        actionDescription='Visualizza immagine 3'
+      />
+      <ThumbNavItem
+        targetUrl='#'
+        imageUrl='https://picsum.photos/480/320?image=1040'
+        actionDescription='Visualizza immagine 4'
+      />
+      <ThumbNavItem
+        targetUrl='#'
+        imageUrl='https://picsum.photos/480/320?image=1055'
+        actionDescription='Visualizza immagine 5'
+      />
+      <ThumbNavItem
+        targetUrl='#'
+        imageUrl='https://picsum.photos/480/320?image=1057'
+        actionDescription='Visualizza immagine 6'
+      />
+    </ThumbNav>
+  ),
+  args: {
+    rowItems: 3
+  },
+  argTypes: {
+    rowItems: {
+      control: {
+        type: 'select',
+        options: [2, 3, 4, 5]
+      }
     }
   }
 };
 
-export const EsempioAutoWidthFive: Story = {
+
+export const EsempioAutoWidthFive = {
+  ...EsempioAutoWidth,
   args: {
-    ...EsempioAutoWidth.args,
     rowItems: 5
   }
 }
