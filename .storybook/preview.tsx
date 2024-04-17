@@ -1,6 +1,6 @@
 import { Preview } from "@storybook/react";
 import "bootstrap-italia/dist/css/bootstrap-italia.min.css";
-import "../assets/css/bi-fonts.css";
+import "../assets/css/bi-fonts.scss";
 import "../assets/css/storybook-fixes.css";
 import theme from "./theme";
 
