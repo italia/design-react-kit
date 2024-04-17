@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { Col, Container, Icon, Nav, NavItem, NavLink, Row, TabContent, TabPane } from "../../src";
 
 const meta: Meta<typeof Nav> = {
-    title: "Documentazione/Componenti/Tab",
-    component: Nav,
+  title: "Documentazione/Componenti/Tab",
+  component: Nav,
 };
 
 export default meta;
@@ -12,47 +12,47 @@ export default meta;
 type Story = StoryObj<typeof Nav>;
 
 export const Esempi: Story = {
-    render: () => (
-        <div>
-            <Nav tabs className="mb-3">
-                <NavItem>
-                    <NavLink href="#" active>
-                        Link Attivo
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#">Link</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#">Link</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#" disabled>
-                        Link disabilitato
-                    </NavLink>
-                </NavItem>
-            </Nav>
+  render: () => (
+    <div>
+      <Nav tabs className="mb-3">
+        <NavItem>
+          <NavLink href="#" active>
+            Link Attivo
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#">Link</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#">Link</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#" disabled>
+            Link disabilitato
+          </NavLink>
+        </NavItem>
+      </Nav>
 
-            <Nav tabs className="nav-dark">
-                <NavItem>
-                    <NavLink href="#" active>
-                        Link Attivo
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#">Link</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#">Link</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#" disabled>
-                        Link disabilitato
-                    </NavLink>
-                </NavItem>
-            </Nav>
-        </div>
-    )
+      <Nav tabs className="nav-dark">
+        <NavItem>
+          <NavLink href="#" active>
+            Link Attivo
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#">Link</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#">Link</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#" disabled>
+            Link disabilitato
+          </NavLink>
+        </NavItem>
+      </Nav>
+    </div>
+  )
 };
 
 const TestoWithHooks = () => {
@@ -126,7 +126,12 @@ const TestoWithHooks = () => {
 }
 
 export const Testo: Story = {
-    render: () => <TestoWithHooks/>
+  render: () => <TestoWithHooks />,
+  parameters: {
+    docs: {
+      canvas: { sourceState: "none" },
+    },
+  },
 };
 
 const IconaWithHooks = () => {
@@ -144,10 +149,10 @@ const IconaWithHooks = () => {
               }
             }}
           >
-                            <span>
-                                <Icon color="primary" icon="it-link" aria-hidden />
-                                <i className="it-ico-lg it-file d-block text-center" aria-label="Tab titolo 1" />
-                            </span>
+            <span>
+              <Icon color="primary" icon="it-link" aria-hidden />
+              <i className="it-ico-lg it-file d-block text-center" aria-label="Tab titolo 1" />
+            </span>
           </NavLink>
         </NavItem>
         <NavItem>
@@ -160,10 +165,10 @@ const IconaWithHooks = () => {
               }
             }}
           >
-                            <span>
-                                <Icon color="primary" icon="it-calendar" aria-hidden />
-                                <i className="it-ico-lg it-calendar d-block text-center" aria-label="Tab titolo 2" />
-                            </span>
+            <span>
+              <Icon color="primary" icon="it-calendar" aria-hidden />
+              <i className="it-ico-lg it-calendar d-block text-center" aria-label="Tab titolo 2" />
+            </span>
           </NavLink>
         </NavItem>
         <NavItem>
@@ -176,10 +181,10 @@ const IconaWithHooks = () => {
               }
             }}
           >
-                            <span>
-                                <Icon color="primary" icon="it-comment" aria-hidden />
-                                <i className="it-ico-lg it-comment d-block text-center" aria-label="Tab titolo 3" />
-                            </span>
+            <span>
+              <Icon color="primary" icon="it-comment" aria-hidden />
+              <i className="it-ico-lg it-comment d-block text-center" aria-label="Tab titolo 3" />
+            </span>
           </NavLink>
         </NavItem>
       </Nav>
@@ -208,7 +213,12 @@ const IconaWithHooks = () => {
   );
 }
 export const Icona: Story = {
-    render: () => <IconaWithHooks/>
+  render: () => <IconaWithHooks />,
+  parameters: {
+    docs: {
+      canvas: { sourceState: "none" },
+    },
+  },
 };
 
 const TestoIconaWithHooks = () => {
@@ -226,10 +236,10 @@ const TestoIconaWithHooks = () => {
               }
             }}
           >
-                            <span>
-                                <Icon color="primary" icon="it-link" aria-hidden />
-                                <i className="it-ico-lg it-file d-block text-center" aria-label="Tab titolo 1" />
-                            </span>
+            <span>
+              <Icon color="primary" icon="it-link" aria-hidden />
+              <i className="it-ico-lg it-file d-block text-center" aria-label="Tab titolo 1" />
+            </span>
             <span>Tab titolo 1</span>
           </NavLink>
         </NavItem>
@@ -243,10 +253,10 @@ const TestoIconaWithHooks = () => {
               }
             }}
           >
-                            <span>
-                                <Icon color="primary" icon="it-calendar" aria-hidden />
-                                <i className="it-ico-lg it-calendar d-block text-center" aria-label="Tab titolo 2" />
-                            </span>
+            <span>
+              <Icon color="primary" icon="it-calendar" aria-hidden />
+              <i className="it-ico-lg it-calendar d-block text-center" aria-label="Tab titolo 2" />
+            </span>
             <span>Tab titolo 2</span>
           </NavLink>
         </NavItem>
@@ -260,10 +270,10 @@ const TestoIconaWithHooks = () => {
               }
             }}
           >
-                            <span>
-                                <Icon color="primary" icon="it-comment" aria-hidden />
-                                <i className="it-ico-lg it-comment d-block text-center" aria-label="Tab titolo 3" />
-                            </span>
+            <span>
+              <Icon color="primary" icon="it-comment" aria-hidden />
+              <i className="it-ico-lg it-comment d-block text-center" aria-label="Tab titolo 3" />
+            </span>
             <span>Tab titolo 3</span>
           </NavLink>
         </NavItem>
@@ -294,7 +304,12 @@ const TestoIconaWithHooks = () => {
 }
 
 export const TestoIcona: Story = {
-  render: () => <TestoIconaWithHooks/>
+  render: () => <TestoIconaWithHooks />,
+  parameters: {
+    docs: {
+      canvas: { sourceState: "none" },
+    },
+  },
 };
 
 const BottoneWithHooks = () => {
@@ -370,7 +385,12 @@ const BottoneWithHooks = () => {
 }
 
 export const Bottone: Story = {
-  render: () => <BottoneWithHooks/>
+  render: () => <BottoneWithHooks />,
+  parameters: {
+    docs: {
+      canvas: { sourceState: "none" },
+    },
+  },
 };
 
 const VerticaleWithHooks = () => {
@@ -444,6 +464,12 @@ const VerticaleWithHooks = () => {
     </Container>
   );
 }
+
 export const Verticale: Story = {
-  render: () => <VerticaleWithHooks/>
+  render: () => <VerticaleWithHooks />,
+  parameters: {
+    docs: {
+      canvas: { sourceState: "none" },
+    },
+  },
 };

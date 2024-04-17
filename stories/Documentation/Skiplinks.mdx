@@ -1,7 +1,7 @@
 import { Canvas, Meta } from '@storybook/blocks';
-import * as SkiplinkStories from '../Components/Skiplink.stories';
+import * as SkiplinksStories from '../Components/Skiplinks.stories';
 
-<Meta of={SkiplinkStories} />
+<Meta of={SkiplinksStories} />
 
 # Skiplinks
 
@@ -16,16 +16,12 @@ Gli elementi `SkiplinkItem` sono contraddistinti dalle classi:
 
 Per attivare la funzionalità si digita da tastiera il tasto: TAB.
 
-<Canvas of={SkiplinkStories._Esempi} />
+<Canvas of={SkiplinksStories._Esempi} />
 
 #### Codice
 
 ```tsx
-import { Skiplink } from './Skiplink';
-import { SkiplinkItem } from './SkiplinkItem';
-import { useEffect, useRef } from 'react';
 const containerRef = useRef(null);
-
 const footerRef = useRef(null);
 
 useEffect(() => {

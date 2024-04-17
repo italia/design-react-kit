@@ -144,68 +144,68 @@ export const EsempioVerticale: Story = {
   )
 };
 
-export const Overlay: Story = ({ position }: ThumbNavProps) => (
-  <div className='position-relative'>
-    <img src='https://picsum.photos/1280/720?image=1050' className='test-image' alt='Amazing landscape' />
-    <ThumbNav isSmall position={position}>
-      <ThumbNavItem
-        targetUrl='#'
-        imageUrl='https://picsum.photos/480/320?image=1044'
-        actionDescription='Visualizza immagine 1'
-      />
-      <ThumbNavItem
-        active
-        targetUrl='#'
-        imageUrl='https://picsum.photos/480/320?image=1050'
-        actionDescription='Visualizza immagine 2'
-      />
-      <ThumbNavItem
-        targetUrl='#'
-        imageUrl='https://picsum.photos/480/320?image=1037'
-        actionDescription='Visualizza immagine 3'
-      />
-      <ThumbNavItem
-        targetUrl='#'
-        imageUrl='https://picsum.photos/480/320?image=1040'
-        actionDescription='Visualizza immagine 4'
-      />
-    </ThumbNav>
-  </div>
-);
-
-Overlay.args = {
-  position: 'bottom'
-};
-Overlay.argTypes = {
-  position: {
-    control: {
-      type: 'select',
-      options: ['left', 'bottom', 'right', 'top']
+export const Overlay: Story = {
+  render: ({ position }: ThumbNavProps) => (
+    <div className='position-relative'>
+      <img src='https://picsum.photos/1280/720?image=1050' className='test-image' alt='Amazing landscape' />
+      <ThumbNav isSmall position={position}>
+        <ThumbNavItem
+          targetUrl='#'
+          imageUrl='https://picsum.photos/480/320?image=1044'
+          actionDescription='Visualizza immagine 1'
+        />
+        <ThumbNavItem
+          active
+          targetUrl='#'
+          imageUrl='https://picsum.photos/480/320?image=1050'
+          actionDescription='Visualizza immagine 2'
+        />
+        <ThumbNavItem
+          targetUrl='#'
+          imageUrl='https://picsum.photos/480/320?image=1037'
+          actionDescription='Visualizza immagine 3'
+        />
+        <ThumbNavItem
+          targetUrl='#'
+          imageUrl='https://picsum.photos/480/320?image=1040'
+          actionDescription='Visualizza immagine 4'
+        />
+      </ThumbNav>
+    </div>
+  ),
+  args: {
+    position: 'bottom'
+  },
+  argTypes: {
+    position: {
+      control: {
+        type: 'select',
+        options: ['left', 'bottom', 'right', 'top']
+      }
     }
   }
-};
+}
 
-export const OverlayTop: Story = {
+export const OverlayTop = {
+  ...Overlay,
   args: {
-    ...Overlay.args,
     position: 'top'
   }
 };
 
-export const OverlayLeft: Story = {
+export const OverlayLeft = {
+  ...Overlay,
   args: {
-    ...Overlay.args,
     position: 'left'
   }
 };
 
-export const OverlayRight: Story = {
+export const OverlayRight = {
+  ...Overlay,
   args: {
-    ...Overlay.args,
     position: 'right'
   }
 };
-
 
 export const EsempioFixed: Story = {
   render: () => (
@@ -244,56 +244,58 @@ export const EsempioFixed: Story = {
   )
 };
 
-export const EsempioAutoWidth: Story = ({ rowItems }: ThumbNavProps) => (
-  <ThumbNav rowItems={rowItems}>
-    <ThumbNavItem
-      targetUrl='#'
-      imageUrl='https://picsum.photos/480/320?image=1044'
-      actionDescription='Visualizza immagine 1'
-    />
-    <ThumbNavItem
-      targetUrl='#'
-      imageUrl='https://picsum.photos/480/320?image=1050'
-      actionDescription='Visualizza immagine 2'
-    />
-    <ThumbNavItem
-      targetUrl='#'
-      imageUrl='https://picsum.photos/480/320?image=1037'
-      actionDescription='Visualizza immagine 3'
-    />
-    <ThumbNavItem
-      targetUrl='#'
-      imageUrl='https://picsum.photos/480/320?image=1040'
-      actionDescription='Visualizza immagine 4'
-    />
-    <ThumbNavItem
-      targetUrl='#'
-      imageUrl='https://picsum.photos/480/320?image=1055'
-      actionDescription='Visualizza immagine 5'
-    />
-    <ThumbNavItem
-      targetUrl='#'
-      imageUrl='https://picsum.photos/480/320?image=1057'
-      actionDescription='Visualizza immagine 6'
-    />
-  </ThumbNav>
-);
-
-EsempioAutoWidth.args = {
-  rowItems: 3
-};
-EsempioAutoWidth.argTypes = {
-  rowItems: {
-    control: {
-      type: 'select',
-      options: [2, 3, 4, 5]
+export const EsempioAutoWidth: Story = {
+  render: ({ rowItems }: ThumbNavProps) => (
+    <ThumbNav rowItems={rowItems}>
+      <ThumbNavItem
+        targetUrl='#'
+        imageUrl='https://picsum.photos/480/320?image=1044'
+        actionDescription='Visualizza immagine 1'
+      />
+      <ThumbNavItem
+        targetUrl='#'
+        imageUrl='https://picsum.photos/480/320?image=1050'
+        actionDescription='Visualizza immagine 2'
+      />
+      <ThumbNavItem
+        targetUrl='#'
+        imageUrl='https://picsum.photos/480/320?image=1037'
+        actionDescription='Visualizza immagine 3'
+      />
+      <ThumbNavItem
+        targetUrl='#'
+        imageUrl='https://picsum.photos/480/320?image=1040'
+        actionDescription='Visualizza immagine 4'
+      />
+      <ThumbNavItem
+        targetUrl='#'
+        imageUrl='https://picsum.photos/480/320?image=1055'
+        actionDescription='Visualizza immagine 5'
+      />
+      <ThumbNavItem
+        targetUrl='#'
+        imageUrl='https://picsum.photos/480/320?image=1057'
+        actionDescription='Visualizza immagine 6'
+      />
+    </ThumbNav>
+  ),
+  args: {
+    rowItems: 3
+  },
+  argTypes: {
+    rowItems: {
+      control: {
+        type: 'select',
+        options: [2, 3, 4, 5]
+      }
     }
   }
 };
 
-export const EsempioAutoWidthFive: Story = {
+
+export const EsempioAutoWidthFive = {
+  ...EsempioAutoWidth,
   args: {
-    ...EsempioAutoWidth.args,
     rowItems: 5
   }
 }
