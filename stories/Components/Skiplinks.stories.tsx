@@ -1,9 +1,9 @@
-import React, { useRef, useEffect } from 'react';
-import {Popover, Skiplink, SkiplinkItem} from '../../src';
-import {Meta, StoryObj} from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
+import React, { useEffect, useRef } from 'react';
+import { Skiplink, SkiplinkItem } from '../../src';
 
-const meta: Meta<typeof Skiplink> = {
-  title: "Documentazione/Componenti/Skiplink",
+const meta: Meta = {
+  title: "Documentazione/Componenti/Skiplinks",
   component: Skiplink,
   parameters: {
     docs: {
@@ -14,11 +14,10 @@ const meta: Meta<typeof Skiplink> = {
 
 export default meta;
 
-type Story = StoryObj<typeof Popover>;
+type Story = StoryObj<typeof Skiplink>;
 
-const _EsempiWithHooks = () => {
+const EsempiWithHooks = () => {
   const containerRef = useRef(null);
-
   const footerRef = useRef(null);
 
   useEffect(() => {
@@ -34,8 +33,8 @@ const _EsempiWithHooks = () => {
 
   return (
     <section tabIndex={-1} ref={containerRef}>
-      <div id='#main'/>
-      <div id='#footer' ref={footerRef}/>
+      <div id='#main' />
+      <div id='#footer' ref={footerRef} />
 
       <Skiplink>
         <SkiplinkItem href='#main'>Skip to main content</SkiplinkItem>
@@ -45,7 +44,7 @@ const _EsempiWithHooks = () => {
   );
 };
 
-export const _Esempi : Story = {
-  render: () => <_EsempiWithHooks/>
+export const _Esempi: Story = {
+  render: () => <EsempiWithHooks />
 };
 
