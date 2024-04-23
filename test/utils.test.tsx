@@ -1,7 +1,7 @@
 jest.spyOn(console, 'error').mockImplementation();
 
 // eslint-disable-next-line import/first
-import { flushMessageCache, logError, mapToCssModules, notifyDeprecation, omit, pick } from './utils';
+import { flushMessageCache, logError, mapToCssModules, notifyDeprecation, omit, pick } from '../src/utils';
 
 describe('Kit utils', () => {
   describe('mapToCssModules', () => {
@@ -9,7 +9,7 @@ describe('Kit utils', () => {
       expect(mapToCssModules(null)).toBe('');
       expect(mapToCssModules(null, {})).toBe('');
       expect(mapToCssModules(null, { null: 'nil' })).toBe('');
-      // @ts-expect-error
+      // @ts-expect-error descrizione
       expect(mapToCssModules(undefined)).toBe('');
     });
 
@@ -45,9 +45,9 @@ describe('Kit utils', () => {
     });
 
     it("should return an empty object if there's no key overlapping", () => {
-      // @ts-expect-error
+      // @ts-expect-error descrizione 
       expect(pick({ a: 'value', b: 'value', c: 'value' }, ['e'])).toEqual({});
-      // @ts-expect-error
+      // @ts-expect-error descrizione
       expect(pick({ a: 'value', b: 'value', c: 'value' }, 'e')).toEqual({});
     });
   });
@@ -72,13 +72,13 @@ describe('Kit utils', () => {
     });
 
     it("should return the same object if there's no key overlapping", () => {
-      // @ts-expect-error
+      // @ts-expect-error descrizione
       expect(omit({ a: 'value', b: 'value', c: 'value' }, ['e'])).toEqual({
         a: 'value',
         b: 'value',
         c: 'value'
       });
-      // @ts-expect-error
+      // @ts-expect-error descrizione
       expect(omit({ a: 'value', b: 'value', c: 'value' }, 'e')).toEqual({
         a: 'value',
         b: 'value',
@@ -90,7 +90,7 @@ describe('Kit utils', () => {
   describe('logError', () => {
     beforeEach(() => {
       flushMessageCache();
-      // @ts-expect-error
+      // @ts-expect-error descrizione
       console.error.mockClear();
     });
     it('should basically work', () => {
@@ -102,7 +102,7 @@ describe('Kit utils', () => {
   describe('notifyDeprecation', () => {
     beforeEach(() => {
       flushMessageCache();
-      // @ts-expect-error
+      // @ts-expect-error descrizione
       console.error.mockClear();
     });
     it('should propagate the error message', () => {
