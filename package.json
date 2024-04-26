@@ -145,26 +145,6 @@
     "reactstrap": "9.2.2",
     "webfontloader": "^1.6.28"
   },
-  "jest": {
-    "transform": {
-      ".(ts|tsx)$": "ts-jest",
-      ".(js|jsx)$": "./jest-transformer.js",
-      "^.+\\.mdx$": "@storybook/addon-docs"
-    },
-    "moduleNameMapper": {
-      "^.+.(svg|png|jpg)$": "jest-transform-stub",
-      "^.+\\.css$": "identity-obj-proxy"
-    },
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node",
-      "mdx"
-    ]
-  },
   "resolutions": {
     "@types/react": "17.0.2",
     "@types/react-dom": "17.0.2"
