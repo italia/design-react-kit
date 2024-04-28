@@ -141,6 +141,7 @@ export { Toggle } from './Toggle/Toggle';
 export { Toolbar } from './Toolbar/Toolbar';
 export { ToolbarDividerItem } from './Toolbar/ToolbarDividerItem';
 export { ToolbarItem } from './Toolbar/ToolbarItem';
+export { Upload } from './Upload/Upload';
 
 // Types
 export type { AccordionProps } from './Accordion/Accordion';
@@ -243,6 +244,7 @@ export type { TimelineProps } from './Timeline/TimelineWrapper';
 export type { ToggleProps } from './Toggle/Toggle';
 export type { ToolbarProps } from './Toolbar/Toolbar';
 export type { ToolbarItemBadge, ToolbarItemProps } from './Toolbar/ToolbarItem';
+export type { UploadProps } from './Upload/Upload';
 
 export type {
   BreadcrumbItemProps,
@@ -293,3 +295,4 @@ export type {
   UncontrolledTooltipProps
 } from 'reactstrap';
 export type { ChangesType, RegisterOptions, useNavScrollArgs, useNavScrollResult } from './NavScroll';
+
