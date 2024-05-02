@@ -1,9 +1,9 @@
-import React from 'react';
+import "@testing-library/jest-dom";
 import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
+import React from 'react';
 
-import { logError } from '../src/utils';
 import { Progress } from '../src';
+import { logError } from '../src/utils';
 
 jest.mock('../src/utils', () => ({
   logError: jest.fn()
