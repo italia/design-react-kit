@@ -25,9 +25,7 @@
   },
   "version": "5.0.4",
   "license": "BSD-3",
-  "module": "dist/index.js",
-  "main": "src/index.tsx",
-  "types": "dist/types/index.d.ts",
+  "type": "module",
   "sideEffects": false,
   "files": [
     "dist",
