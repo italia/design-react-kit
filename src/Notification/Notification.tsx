@@ -1,11 +1,11 @@
 import React, { CSSProperties, FC, useEffect } from 'react';
-import { ToastProps, useToast, cssTransition } from 'react-toastify';
+import { ToastProps, cssTransition, useToast } from 'react-toastify';
 import { NotificationToastProps } from './NotificationContent';
 import { NotificationCommonProps } from './types';
 
 export type NotificationProps = Omit<ToastProps, 'transition'> & NotificationCommonProps & NotificationToastProps;
 
-const dummyTransition = cssTransition({ enter: '', exit: '' });
+const dummyTransition = /* @__PURE__ */ cssTransition({ enter: '', exit: '' });
 
 export const Notification: FC<NotificationProps> = (props) => {
   const { toastRef, eventHandlers } = useToast({
