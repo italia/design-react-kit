@@ -1,7 +1,7 @@
-import React, { FC, ImgHTMLAttributes, SVGProps, useEffect, useState } from 'react';
 import classNames from 'classnames';
-import { isBundledIcon, loadIcon, allIcons, IconName } from './assets';
+import React, { FC, ImgHTMLAttributes, SVGProps, useEffect, useState } from 'react';
 import { EmptyIcon } from './EmptyIcon';
+import { IconName, allIcons, isBundledIcon, loadIcon } from './assets/index';
 export type { IconName } from './assets';
 
 export const iconsList = allIcons;
@@ -13,13 +13,12 @@ let iconsCache: Record<IconName, FC<SVGProps<SVGSVGElement>>> = {};
  * @param icons - the list of icons to preload
  * @returns true if the icons have been preloaded
  */
-export function preloadIcons(icons: IconName[]) {
-  return Promise.all(icons.map((icon) => loadIcon(icon))).then((preloadedIcons) => {
-    preloadedIcons.forEach(({ component }, i) => {
-      iconsCache[icons[i]] = (() => component) as unknown as FC<SVGProps<SVGSVGElement>>;
-    });
-    return true;
+export async function preloadIcons(icons: IconName[]) {
+  const preloadedIcons = await Promise.all(icons.map((icon) => loadIcon(icon)));
+  preloadedIcons.forEach(({ component }, i) => {
+    iconsCache[icons[i]] = (() => component) as unknown as FC<SVGProps<SVGSVGElement>>;
   });
+  return true;
 }
 
 /**
