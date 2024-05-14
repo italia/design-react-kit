@@ -115,8 +115,8 @@ export { ModalBody } from './Modal/ModalBody';
 export { ModalFooter } from './Modal/ModalFooter';
 export { ModalHeader } from './Modal/ModalHeader';
 export { Nav } from './Nav/Nav';
-export { useNavScroll } from './NavScroll';
-export { NotificationManager, createNotification, notify } from './Notification';
+export { useNavScroll } from './NavScroll/index';
+export { NotificationManager, createNotification, notify } from './Notification/index';
 export { Pager } from './Pager/Pager';
 export { Progress } from './Progress/Progress';
 export { Rating } from './Rating/Rating';
@@ -219,6 +219,7 @@ export type { ModalBodyProps } from './Modal/ModalBody';
 export type { ModalFooterProps } from './Modal/ModalFooter';
 export type { ModalHeaderProps } from './Modal/ModalHeader';
 export type { NavProps } from './Nav/Nav';
+export type { ChangesType, RegisterOptions, useNavScrollArgs, useNavScrollResult } from './NavScroll';
 export type { NotificationId, NotificationManagerProps, NotificationOptions, NotificationProps } from './Notification';
 export type { PagerProps } from './Pager/Pager';
 export type { ProgressProps } from './Progress/Progress';
@@ -292,4 +293,3 @@ export type {
   UncontrolledCollapseProps,
   UncontrolledTooltipProps
 } from 'reactstrap';
-export type { ChangesType, RegisterOptions, useNavScrollArgs, useNavScrollResult } from './NavScroll';
