@@ -14,6 +14,53 @@ type Story = StoryObj<typeof Dimmer>;
 export const Esempi: Story = {
   render: () => (
     <div>
+      <div className='row'>
+        <div className='col-12 col-lg-4'>
+          {/* start card */}
+          <Card>
+            <CardBody>
+              <CardTitle tag='h5'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+              </CardTitle>
+              <CardText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </CardText>
+            </CardBody>
+          </Card>
+          {/* end card */}
+        </div>
+
+        <div className='col-12 col-lg-4 d-none d-lg-block'>
+          {/* start card */}
+          <Card>
+            <CardBody>
+              <CardTitle tag='h5'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+              </CardTitle>
+              <CardText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </CardText>
+            </CardBody>
+          </Card>
+          {/* end card */}
+        </div>
+        <div className='col-12 col-lg-4 d-none d-lg-block'>
+          {/* start card */}
+          <Card>
+            <CardBody>
+              <CardTitle tag='h5'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+              </CardTitle>
+              <CardText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </CardText>
+            </CardBody>
+          </Card>
+        </div>
+      </div>
       <Fade in={true} tag='div' className='mt-3'>
         <Dimmer icon='it-unlocked'>
           <p>
@@ -22,6 +69,13 @@ export const Esempi: Story = {
           </p>
         </Dimmer>
       </Fade>
+    </div>
+  )
+};
+
+export const ColorePrimario: Story = {
+  render: () => (
+    <div>
       <div className='row'>
         <div className='col-12 col-lg-4'>
           {/* start card */}
@@ -69,13 +123,6 @@ export const Esempi: Story = {
           </Card>
         </div>
       </div>
-    </div>
-  )
-};
-
-export const ColorePrimario: Story = {
-  render: () => (
-    <div>
       <Fade in={true} tag='div' className='mt-3'>
         <Dimmer color='primary' icon='it-unlocked'>
           <p>
@@ -84,7 +131,14 @@ export const ColorePrimario: Story = {
           </p>
         </Dimmer>
       </Fade>
-      <div className='row'>
+    </div>
+  )
+};
+
+export const DimmerConAzioni: Story = {
+  render: () => (
+    <div>
+      <div className='col'>
         <div className='col-12 col-lg-4'>
           {/* start card */}
           <Card>
@@ -100,7 +154,6 @@ export const ColorePrimario: Story = {
           </Card>
           {/* end card */}
         </div>
-
         <div className='col-12 col-lg-4 d-none d-lg-block'>
           {/* start card */}
           <Card>
@@ -116,28 +169,7 @@ export const ColorePrimario: Story = {
           </Card>
           {/* end card */}
         </div>
-        <div className='col-12 col-lg-4 d-none d-lg-block'>
-          {/* start card */}
-          <Card>
-            <CardBody>
-              <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-              </CardTitle>
-              <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-              </CardText>
-            </CardBody>
-          </Card>
-        </div>
       </div>
-    </div>
-  )
-};
-
-export const DimmerConAzioni: Story = {
-  render: () => (
-    <div>
       <Fade in={true} tag='div' className='mt-3'>
         <Dimmer icon='it-unlocked'>
           <h4>Titolo Dimmer</h4>
@@ -149,6 +181,13 @@ export const DimmerConAzioni: Story = {
           </DimmerButtons>
         </Dimmer>
       </Fade>
+    </div>
+  )
+};
+
+export const DimmerConAzioniColorePrimario: Story = {
+  render: () => (
+    <div>
       <div className='col'>
         <div className='col-12 col-lg-4'>
           {/* start card */}
@@ -181,13 +220,6 @@ export const DimmerConAzioni: Story = {
           {/* end card */}
         </div>
       </div>
-    </div>
-  )
-};
-
-export const DimmerConAzioniColorePrimario: Story = {
-  render: () => (
-    <div>
       <Fade in={true} tag='div' className='mt-3'>
         <Dimmer color='primary' icon='it-unlocked'>
           <h4>Titolo Dimmer</h4>
@@ -196,38 +228,6 @@ export const DimmerConAzioniColorePrimario: Story = {
           </DimmerButtons>
         </Dimmer>
       </Fade>
-      <div className='col'>
-        <div className='col-12 col-lg-4'>
-          {/* start card */}
-          <Card>
-            <CardBody>
-              <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-              </CardTitle>
-              <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-              </CardText>
-            </CardBody>
-          </Card>
-          {/* end card */}
-        </div>
-        <div className='col-12 col-lg-4 d-none d-lg-block'>
-          {/* start card */}
-          <Card>
-            <CardBody>
-              <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-              </CardTitle>
-              <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-              </CardText>
-            </CardBody>
-          </Card>
-          {/* end card */}
-        </div>
-      </div>
     </div>
   )
 };
