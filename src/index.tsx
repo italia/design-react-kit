@@ -142,6 +142,8 @@ export { Toolbar } from './Toolbar/Toolbar';
 export { ToolbarDividerItem } from './Toolbar/ToolbarDividerItem';
 export { ToolbarItem } from './Toolbar/ToolbarItem';
 export { Upload } from './Upload/Upload';
+export { UploadList } from './Upload/UploadList';
+export { UploadListItem } from './Upload/UploadListItem';
 
 // Types
 export type { AccordionProps } from './Accordion/Accordion';
@@ -295,4 +297,3 @@ export type {
   UncontrolledTooltipProps
 } from 'reactstrap';
 export type { ChangesType, RegisterOptions, useNavScrollArgs, useNavScrollResult } from './NavScroll';
-
