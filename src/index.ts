@@ -44,7 +44,10 @@ export {
   UncontrolledAlert,
   UncontrolledCollapse,
   UncontrolledTooltip,
-  Util
+  Util,
+  Dropdown,
+  DropdownMenu,
+  DropdownToggle
 } from 'reactstrap';
 
 export { Accordion } from './Accordion/Accordion';
@@ -84,9 +87,9 @@ export { ChipLabel } from './Chips/ChipLabel';
 export { Collapse } from './Collapse/Collapse';
 export { Dimmer } from './Dimmer/Dimmer';
 export { DimmerButtons } from './Dimmer/DimmerButtons';
-export { Dropdown } from './Dropdown/Dropdown';
-export { DropdownMenu } from './Dropdown/DropdownMenu';
-export { DropdownToggle } from './Dropdown/DropdownToggle';
+// export { Dropdown } from './Dropdown/Dropdown';
+// export { DropdownMenu } from './Dropdown/DropdownMenu';
+// export { DropdownToggle } from './Dropdown/DropdownToggle';
 export { FontLoader, useFontLoader } from './FontLoader/FontLoader';
 export { Forward } from './Forward/Forward';
 export { GoBack } from './GoBack/GoBack';
