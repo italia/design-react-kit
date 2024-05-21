@@ -1,5 +1,5 @@
-import React, { ElementType, FC, HTMLAttributes, useRef /*, useEffect */ } from 'react';
-// import { Dropdown } from 'bootstrap-italia';
+import React, { ElementType, FC, HTMLAttributes, useEffect, useRef } from 'react';
+import { Dropdown } from 'bootstrap-italia';
 import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
 import { Button } from '../Button/Button';
@@ -28,12 +28,12 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
 
   const Tag = tag === 'a' || inNavbar ? 'a' : Button;
 
-  // useEffect(() => {
-  //   if (toggleRef.current) {
-  //     new Dropdown(toggleRef.current as HTMLAnchorElement & HTMLButtonElement);
-  //   }
-  // }, []);
-  
+  useEffect(() => {
+    if (toggleRef.current) {
+      new Dropdown(toggleRef.current as HTMLAnchorElement & HTMLButtonElement);
+    }
+  }, [toggleRef.current]);
+
   const classes = classNames(className, {
     'btn-dropdown': Tag === 'a' && !inNavbar,
     'dropdown-toggle': true,
