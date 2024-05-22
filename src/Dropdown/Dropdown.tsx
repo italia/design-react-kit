@@ -1,6 +1,6 @@
 import React, { ElementType, FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
-
+import { Dropdown as BSDRopdown } from 'reactstrap';
 export interface DropdownProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
   inNavbar?: boolean;
@@ -25,11 +25,12 @@ export const Dropdown: FC<DropdownProps> = ({
     'nav-item': inNavbar
   });
 
-  const Tag = tag !== undefined ? tag : 'div';
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Tag className={classes} data-testid={testId} {...attributes}>
+    <BSDRopdown  isOpen={isOpen} toggle={toggle} className={classes} data-testid={testId} {...attributes}>
       {children}
-    </Tag>
+    </BSDRopdown>
   );
 };
