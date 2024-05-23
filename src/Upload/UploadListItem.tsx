@@ -24,6 +24,8 @@ export interface UploadListItemProps extends HTMLAttributes<HTMLUListElement> {
   fileWeight?: string;
   /** Valore della barra progress in caso uploadStatus sia uploading */
   progressValue?: number;
+  /** Indica che gli item list hanno l'immagine come anteprima */
+  previewImage?: boolean;
   testId?: string;
 }
 
@@ -33,6 +35,7 @@ export const UploadListItem: FC<UploadListItemProps> = ({
   uploadStatus = 'success',
   buttonTag = 'button',
   progressValue,
+  previewImage,
   fileName,
   fileWeight,
 }) => {
@@ -63,7 +66,13 @@ export const UploadListItem: FC<UploadListItemProps> = ({
 
   return (
     <li className={classes}>
-      <Icon icon={icon} size='sm' />
+      {previewImage
+        ? <div className="upload-image">
+          <img src="https://picsum.photos/40/40?image=1055" alt="descrizione immagine" />
+        </div>
+        :
+        <Icon icon={icon} size='sm' />
+      }
       <p>
         <span className='visually-hidden'>{elementiListItem[uploadStatus].testoVHFile}</span>
         {fileName} {uploadStatus === 'success' && <span className='upload-file-weight'>{fileWeight}</span>}
