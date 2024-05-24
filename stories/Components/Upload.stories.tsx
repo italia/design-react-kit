@@ -61,24 +61,32 @@ export const ListaFiles = {
 const listaFilesImmagineArgs: listaFilesArgsI = {
   success: {
     previewImage: true,
+    previewImageSrc: 'https://picsum.photos/40/40?image=1055',
+    previewImageAlt: 'descrizione immagine',
     uploadStatus: 'success',
     fileName: 'nome-file-01.pdf',
     fileWeight: '10 MB'
   },
   successLong: {
     previewImage: true,
+    previewImageSrc: 'https://picsum.photos/40/40?image=1056',
+    previewImageAlt: 'descrizione immagine',
     uploadStatus: 'success',
     fileName: 'nome-file-02-nome-file-lungo-per-ellissi.doc',
     fileWeight: '10 MB'
   },
   uploading: {
     previewImage: true,
+    previewImageSrc: 'https://picsum.photos/40/40?image=1057',
+    previewImageAlt: 'descrizione immagine',
     uploadStatus: 'uploading',
     fileName: 'nome-file-02.pdf',
     progressValue: 30
   },
   error: {
     previewImage: true,
+    previewImageSrc: 'https://picsum.photos/40/40?image=1058',
+    previewImageAlt: 'descrizione immagine',
     uploadStatus: 'error',
     fileName: 'nome-file-03.pdf',
   }
@@ -86,13 +94,13 @@ const listaFilesImmagineArgs: listaFilesArgsI = {
 
 export const ListaFilesImmagine = {
   render: ({ ...listaFilesImmagineArgs }: listaFilesArgsI) => (
-    <UploadList>
+    <UploadList previewImage>
       {Object.values(listaFilesImmagineArgs).map(type => {
         return <UploadListItem key={type.fileName} {...type} />
       })}
     </UploadList>
   ),
   args: {
-    ...listaFilesImmagineArgs
+    ...listaFilesImmagineArgs,
   }
 };
