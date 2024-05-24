@@ -1,5 +1,5 @@
-import React, { ElementType, FC, HTMLAttributes, useEffect, useRef } from 'react';
-import { Dropdown } from 'bootstrap-italia';
+import React, { ElementType, FC, HTMLAttributes, Fragment } from 'react';
+import { DropdownToggle as BSDropdownToggle } from 'reactstrap';
 import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
 import { Button } from '../Button/Button';
@@ -19,26 +19,31 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
   testId,
   children,
   caret,
-  tag = 'button',
   inNavbar,
-  color,
-  ...attributes
+  color = 'primary',
+  tag = 'button'
 }) => {
-  const toggleRef = useRef<HTMLAnchorElement & HTMLButtonElement>(null);
-
+  // const toggleRef = useRef<HTMLAnchorElement & HTMLButtonElement>(null);
   const Tag = tag === 'a' || inNavbar ? 'a' : Button;
 
-  useEffect(() => {
-    if (toggleRef.current) {
-      new Dropdown(toggleRef.current as HTMLAnchorElement & HTMLButtonElement);
-    }
-  }, [toggleRef.current]);
+  // useEffect(() => {
+  //   if (toggleRef.current) {
+  //     new Dropdown(toggleRef.current as HTMLAnchorElement & HTMLButtonElement);
+  //   }
+  // }, [toggleRef.current]);
 
   const classes = classNames(className, {
     'btn-dropdown': Tag === 'a' && !inNavbar,
     'dropdown-toggle': true,
-    'nav-link': inNavbar
+    'nav-link-white': inNavbar,
+    btn: tag === 'button'
   });
+
+  let buttonColorClass = '';
+  if (tag === 'button' && color) {
+    buttonColorClass = `btn-${color}`;
+  }
+
   const iconClasses = classNames({
     'icon-expand': true,
     'icon-sm': !inNavbar,
@@ -47,18 +52,16 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
     'icon-light': Tag.valueOf() !== 'a' ? true : false
   });
   return (
-    <Tag
+    <BSDropdownToggle
+      tag={Tag}
+      testId={testId}
       role={Tag.valueOf() === 'a' ? 'button' : undefined}
-      color={color}
-      ref={toggleRef}
-      className={classes}
-      data-bs-toggle='dropdown'
-      aria-haspopup='true'
-      data-testid={testId}
-      {...attributes}
+      className={`${classes} ${buttonColorClass}`}
     >
-      {children}
-      {caret === true ? <Icon icon='it-expand' className={iconClasses} /> : null}
-    </Tag>
+      <Fragment>
+        {children as React.ReactNode}
+        {caret === true ? <Icon icon='it-expand' className={iconClasses} /> : null}
+      </Fragment>
+    </BSDropdownToggle>
   );
 };
