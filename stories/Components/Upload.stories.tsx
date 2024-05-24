@@ -104,3 +104,11 @@ export const ListaFilesImmagine = {
     ...listaFilesImmagineArgs,
   }
 };
+
+export const UploadAvatar: Story = {
+  render: (args) => <Upload {...args} />,
+  args: {
+    id: 'ExampleUpload',
+    isAvatar: true
+  }
+};
