@@ -26,6 +26,8 @@ export interface UploadListItemProps extends HTMLAttributes<HTMLUListElement> {
   progressValue?: number;
   /** Indica che gli item list hanno l'immagine come anteprima */
   previewImage?: boolean;
+  previewImageSrc?: string;
+  previewImageAlt?: string;
   testId?: string;
 }
 
@@ -36,6 +38,8 @@ export const UploadListItem: FC<UploadListItemProps> = ({
   buttonTag = 'button',
   progressValue,
   previewImage,
+  previewImageSrc,
+  previewImageAlt,
   fileName,
   fileWeight,
 }) => {
@@ -44,6 +48,7 @@ export const UploadListItem: FC<UploadListItemProps> = ({
     { success: uploadStatus === 'success', uploading: uploadStatus === 'uploading', error: uploadStatus === 'error' },
     className
   ),
+    classesProgress = classNames({ 'progress-image': previewImage }),
     ButtonTag = buttonTag;
 
   const elementiListItem = {
@@ -68,7 +73,7 @@ export const UploadListItem: FC<UploadListItemProps> = ({
     <li className={classes}>
       {previewImage
         ? <div className="upload-image">
-          <img src="https://picsum.photos/40/40?image=1055" alt="descrizione immagine" />
+          <img src={previewImageSrc} alt={previewImageAlt} />
         </div>
         :
         <Icon icon={icon} size='sm' />
@@ -81,7 +86,7 @@ export const UploadListItem: FC<UploadListItemProps> = ({
         <span className='visually-hidden'>{elementiListItem[uploadStatus].testoVHRightIcon}</span>
         <Icon icon={elementiListItem[uploadStatus].rightIcon} />
       </ButtonTag>
-      {uploadStatus === 'uploading' && <Progress value={progressValue} />}
+      {uploadStatus === 'uploading' && <Progress value={progressValue} wrapperClassName={classesProgress} />}
     </li>
   );
 };
