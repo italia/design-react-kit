@@ -5,6 +5,7 @@ export interface DropdownProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
   inNavbar?: boolean;
   textCenter?: boolean;
+  theme?: string;
   /** Classi aggiuntive da usare per il componente Button */
   className?: string;
   testId?: string;
@@ -17,6 +18,7 @@ export const Dropdown: FC<DropdownProps> = ({
   children,
   inNavbar,
   textCenter,
+  theme,
   ...attributes
 }) => {
   const classes = classNames(className, {
@@ -29,7 +31,15 @@ export const Dropdown: FC<DropdownProps> = ({
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <BSDRopdown  isOpen={isOpen} toggle={toggle} className={classes} data-testid={testId} {...attributes}>
+    <BSDRopdown
+      color={theme}
+      isOpen={isOpen}
+      toggle={toggle}
+      className={classes}
+      data-testid={testId}
+      {...attributes}
+      inNavbar={inNavbar}
+    >
       {children}
     </BSDRopdown>
   );

@@ -2,16 +2,16 @@ import React, { ElementType, FC, HTMLAttributes, Fragment } from 'react';
 import { DropdownToggle as BSDropdownToggle } from 'reactstrap';
 import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
-import { Button } from '../Button/Button';
 
 export interface DropdownToggleProps extends HTMLAttributes<HTMLElement> {
   caret?: boolean;
   tag?: ElementType;
-  color?: string;
   inNavbar?: boolean;
-  /** Classi aggiuntive da usare per il componente Button */
-  className?: string;
   testId?: string;
+  /** Classi aggiuntive da usare per il componente Button */
+  color?: string;
+  className?: string;
+  outline?: boolean;
 }
 
 export const DropdownToggle: FC<DropdownToggleProps> = ({
@@ -23,14 +23,7 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
   color = 'primary',
   tag = 'button'
 }) => {
-  // const toggleRef = useRef<HTMLAnchorElement & HTMLButtonElement>(null);
-  const Tag = tag === 'a' || inNavbar ? 'a' : Button;
-
-  // useEffect(() => {
-  //   if (toggleRef.current) {
-  //     new Dropdown(toggleRef.current as HTMLAnchorElement & HTMLButtonElement);
-  //   }
-  // }, [toggleRef.current]);
+  const Tag = tag === 'a' || inNavbar ? 'a' : 'button';
 
   const classes = classNames(className, {
     'btn-dropdown': Tag === 'a' && !inNavbar,
@@ -54,13 +47,15 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
   return (
     <BSDropdownToggle
       tag={Tag}
-      testId={testId}
+      data-testId={testId}
       role={Tag.valueOf() === 'a' ? 'button' : undefined}
       className={`${classes} ${buttonColorClass}`}
     >
       <Fragment>
         {children as React.ReactNode}
-        {caret === true ? <Icon icon='it-expand' className={iconClasses} /> : null}
+        {caret === true ? (
+          <Icon color={tag === 'button' ? 'white' : 'primary'} icon='it-expand' className={iconClasses} />
+        ) : null}
       </Fragment>
     </BSDropdownToggle>
   );

@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { FC, Fragment, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import { DropdownMenu as BSDRopdownMenu } from 'reactstrap';
 export interface DropdownMenuProps extends HTMLAttributes<HTMLElement> {
@@ -14,7 +14,7 @@ export const DropdownMenu: FC<DropdownMenuProps> = ({ className, testId, childre
 
   return (
     <BSDRopdownMenu className={classes} data-testid={testId} {...attributes}>
-      {children}
+      <div role='tablist'>{children}</div>
     </BSDRopdownMenu>
   );
 };
