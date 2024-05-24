@@ -51,12 +51,10 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
       role={Tag.valueOf() === 'a' ? 'button' : undefined}
       className={`${classes} ${buttonColorClass}`}
     >
-      <Fragment>
-        {children as React.ReactNode}
-        {caret === true ? (
-          <Icon color={tag === 'button' ? 'white' : 'primary'} icon='it-expand' className={iconClasses} />
-        ) : null}
-      </Fragment>
+      {children as React.ReactNode}
+      {caret === true ? (
+        <Icon color={tag === 'button' ? 'white' : 'primary'} icon='it-expand' className={iconClasses} />
+      ) : null}
     </BSDropdownToggle>
   );
 };
