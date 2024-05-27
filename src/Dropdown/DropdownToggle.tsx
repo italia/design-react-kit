@@ -1,4 +1,4 @@
-import React, { ElementType, FC, HTMLAttributes, Fragment } from 'react';
+import React, { ElementType, FC, HTMLAttributes } from 'react';
 import { DropdownToggle as BSDropdownToggle } from 'reactstrap';
 import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
