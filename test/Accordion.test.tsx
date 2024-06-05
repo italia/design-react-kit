@@ -1,8 +1,8 @@
-import React from 'react';
+import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
-import { Accordion, AccordionHeader } from '../src';
+import React from 'react';
 import { AccordionItem } from 'reactstrap';
+import { Accordion, AccordionHeader } from '../src';
 
 describe('Accordion component', () => {
   it('should work as container for children elements', () => {

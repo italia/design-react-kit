@@ -1,10 +1,10 @@
+import "@testing-library/jest-dom";
+import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
-import { render, fireEvent, screen } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
 
-import * as Utils from '../src/utils';
-import { isCustomLegendObject } from '../src/Rating/Rating';
 import { Rating, preloadIcons } from '../src';
+import { isCustomLegendObject } from '../src/Rating/Rating';
+import * as Utils from '../src/utils';
 
 jest.mock('./../src/utils', () => {
   const utilModule = jest.requireActual('./../src/utils');

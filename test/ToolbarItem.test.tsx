@@ -1,7 +1,7 @@
-import React, { ReactElement } from 'react';
+import "@testing-library/jest-dom";
 import { fireEvent, render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
-import { ToolbarItem, preloadIcons, Toolbar } from '../src';
+import React, { ReactElement } from 'react';
+import { Toolbar, ToolbarItem, preloadIcons } from '../src';
 
 function renderWithSize(size: 'small' | 'medium' | 'large', ui: ReactElement) {
   return render(<Toolbar size={size}>{ui}</Toolbar>);
