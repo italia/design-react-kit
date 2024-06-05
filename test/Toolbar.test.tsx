@@ -1,7 +1,7 @@
-import "@testing-library/jest-dom";
-import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { Toolbar, ToolbarItem, preloadIcons } from '../src';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
+import { preloadIcons, Toolbar, ToolbarItem } from '../src';
 
 describe('Toolbar component', () => {
   // Icons are now async, so preload them to make it behave in an sync way

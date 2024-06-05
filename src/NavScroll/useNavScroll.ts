@@ -122,11 +122,12 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
     forceRecompute
   ]);
 
-  const refresh = useCallback(() => {
+  const refresh = useCallback(
     debounce(() => {
       setCounter(counter + 1);
-    }, REGISTER_DELAY);
-  }, [counter]);
+    }, REGISTER_DELAY),
+    [counter]
+  );
 
   const register = useCallback(
     (id: string, options = {}) => {
