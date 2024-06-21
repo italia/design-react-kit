@@ -28,13 +28,15 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
   const classes = classNames(className, {
     'btn-dropdown': Tag === 'a' && !inNavbar,
     'dropdown-toggle': true,
-    'nav-link-white': inNavbar,
+    'nav-link': inNavbar,
     btn: tag === 'button'
   });
 
-  let buttonColorClass = '';
+  let colorClass = '';
   if (tag === 'button' && color) {
-    buttonColorClass = `btn-${color}`;
+    colorClass = `btn-${color}`;
+  } else if (color && inNavbar) {
+    colorClass = `${color} text-${color}`;
   }
 
   const iconClasses = classNames({
@@ -49,7 +51,8 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
       tag={Tag}
       data-testId={testId}
       role={Tag.valueOf() === 'a' ? 'button' : undefined}
-      className={`${classes} ${buttonColorClass}`}
+      className={`${classes} ${colorClass}`}
+      nav={inNavbar}
     >
       {children as React.ReactNode}
       {caret === true ? (

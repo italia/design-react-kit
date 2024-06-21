@@ -5,6 +5,7 @@ import {
   Col,
   Collapse,
   Dropdown,
+  DropdownItem,
   DropdownMenu,
   DropdownToggle,
   Header,
@@ -74,23 +75,21 @@ export const NavHeader: Story = {
                 </NavItem>
                 <Dropdown tag='li' inNavbar theme={theme}>
                   <DropdownToggle inNavbar caret>
-                    <span>Menu Dropdown</span>
+                    <span>my Menu Dropdown</span>
                   </DropdownToggle>
                   <DropdownMenu>
-                    <LinkList>
-                      <LinkListItem inDropdown href='#'>
-                        <span>Link list 1</span>
-                      </LinkListItem>
-                      <LinkListItem inDropdown href='#'>
-                        <span>Link list 2</span>
-                      </LinkListItem>
-                      <LinkListItem inDropdown href='#'>
-                        <span>Link list 3</span>
-                      </LinkListItem>
-                      <LinkListItem inDropdown href='#'>
-                        <span>Link list 4</span>
-                      </LinkListItem>
-                    </LinkList>
+                    <DropdownItem href='#'>
+                      <span>Link list 1</span>
+                    </DropdownItem>
+                    <DropdownItem href='#'>
+                      <span>Link list 2</span>
+                    </DropdownItem>
+                    <DropdownItem href='#'>
+                      <span>Link list 3</span>
+                    </DropdownItem>
+                    <DropdownItem href='#'>
+                      <span>Link list 4</span>
+                    </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
                 <MegamenuItem itemName='Megamenu con Immagine e Descrizione'>

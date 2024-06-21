@@ -44,7 +44,8 @@ export {
   UncontrolledAlert,
   UncontrolledCollapse,
   UncontrolledTooltip,
-  Util
+  Util,
+  DropdownItem
 } from 'reactstrap';
 
 export { Accordion } from './Accordion/Accordion';

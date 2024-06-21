@@ -32,6 +32,7 @@ export const Dropdown: FC<DropdownProps> = ({
 
   return (
     <BSDRopdown
+      menuRole='menu'
       color={theme}
       isOpen={isOpen}
       toggle={toggle}
@@ -39,6 +40,7 @@ export const Dropdown: FC<DropdownProps> = ({
       data-testid={testId}
       {...attributes}
       inNavbar={inNavbar}
+      nav={inNavbar}
     >
       {children}
     </BSDRopdown>
