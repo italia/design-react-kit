@@ -3,8 +3,9 @@ import React, { useState } from 'react';
 import {
   Col,
   Collapse,
-  DropdownItem,
   Icon,
+  LinkList,
+  LinkListItem,
   MegamenuFooter,
   MegamenuHighlightColumn,
   MegamenuItem,
@@ -48,46 +49,50 @@ const ConLinkMoreHooks = () => {
           <MegamenuItem itemName='Megamenu con link "Esplora tutti"'>
             <Row>
               <Col xs='12' lg='4'>
-                <DropdownItem href='#'>
-                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
-                  <span>Link lista 1</span>
-                </DropdownItem>
-                <DropdownItem href='#'>
-                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
-                  <span>Link lista 2</span>
-                </DropdownItem>
-                <DropdownItem href='#'>
-                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
-                  <span>Link lista 3</span>
-                </DropdownItem>
+                <LinkList>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 1</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 2</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 3</span>
+                  </LinkListItem>
+                </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <DropdownItem href='#'>
-                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
-                  <span>Link lista 4</span>
-                </DropdownItem>
-                <DropdownItem href='#'>
-                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
-                  <span>Link lista 5</span>
-                </DropdownItem>
-                <DropdownItem href='#'>
-                  <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
-                  <span>Link lista 6</span>
-                </DropdownItem>
+                <LinkList>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 4</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 5</span>
+                  </LinkListItem>
+                  <LinkListItem inDropdown href='#'>
+                    <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
+                    <span>Link lista 6</span>
+                  </LinkListItem>
+                </LinkList>
               </Col>
               <Col xs='12' lg='4'>
-                <DropdownItem href='#'>
+                <LinkListItem inDropdown href='#'>
                   <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                   <span>Link lista 7</span>
-                </DropdownItem>
-                <DropdownItem href='#'>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
                   <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                   <span>Link lista 8</span>
-                </DropdownItem>
-                <DropdownItem href='#'>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
                   <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                   <span>Link lista 9</span>
-                </DropdownItem>
+                </LinkListItem>
               </Col>
             </Row>
             <MegamenuFooter className='text-end'>
@@ -135,46 +140,46 @@ const ConIntestazioneELinkMoreHooks = () => {
                 </div>
                 <Row>
                   <Col xs='12' lg='4'>
-                    <DropdownItem href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 1</span>
-                    </DropdownItem>
-                    <DropdownItem href='#'>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 2</span>
-                    </DropdownItem>
-                    <DropdownItem href='#'>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 3</span>
-                    </DropdownItem>
+                    </LinkListItem>
                   </Col>
                   <Col xs='12' lg='4'>
-                    <DropdownItem href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 4</span>
-                    </DropdownItem>
-                    <DropdownItem href='#'>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 5</span>
-                    </DropdownItem>
-                    <DropdownItem href='#'>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 6</span>
-                    </DropdownItem>
+                    </LinkListItem>
                   </Col>
                   <Col xs='12' lg='4'>
-                    <DropdownItem href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 7</span>
-                    </DropdownItem>
-                    <DropdownItem href='#'>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 8</span>
-                    </DropdownItem>
-                    <DropdownItem href='#'>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 9</span>
-                    </DropdownItem>
+                    </LinkListItem>
                   </Col>
                 </Row>
               </Col>
@@ -208,46 +213,46 @@ const ConCallToActionInBassoHooks = () => {
           <MegamenuItem itemName='Megamenu con Call to Action in basso'>
             <Row>
               <Col xs='12' lg='4'>
-                <DropdownItem href='#'>
+                <LinkListItem inDropdown href='#'>
                   <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                   <span>Link lista 1</span>
-                </DropdownItem>
-                <DropdownItem href='#'>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
                   <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                   <span>Link lista 2</span>
-                </DropdownItem>
-                <DropdownItem href='#'>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
                   <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                   <span>Link lista 3</span>
-                </DropdownItem>
+                </LinkListItem>
               </Col>
               <Col xs='12' lg='4'>
-                <DropdownItem href='#'>
+                <LinkListItem inDropdown href='#'>
                   <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                   <span>Link lista 4</span>
-                </DropdownItem>
-                <DropdownItem href='#'>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
                   <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                   <span>Link lista 5</span>
-                </DropdownItem>
-                <DropdownItem href='#'>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
                   <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                   <span>Link lista 6</span>
-                </DropdownItem>
+                </LinkListItem>
               </Col>
               <Col xs='12' lg='4'>
-                <DropdownItem href='#'>
+                <LinkListItem inDropdown href='#'>
                   <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                   <span>Link lista 7</span>
-                </DropdownItem>
-                <DropdownItem href='#'>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
                   <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                   <span>Link lista 8</span>
-                </DropdownItem>
-                <DropdownItem href='#'>
+                </LinkListItem>
+                <LinkListItem inDropdown href='#'>
                   <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                   <span>Link lista 9</span>
-                </DropdownItem>
+                </LinkListItem>
               </Col>
             </Row>
             <MegamenuFooter>
@@ -293,32 +298,32 @@ const ConCallToActionADestraHooks = () => {
               <Col xs='12' lg='8'>
                 <Row>
                   <Col xs='12' lg='6'>
-                    <DropdownItem href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 1</span>
-                    </DropdownItem>
-                    <DropdownItem href='#'>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 2</span>
-                    </DropdownItem>
-                    <DropdownItem href='#'>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 3</span>
-                    </DropdownItem>
+                    </LinkListItem>
                   </Col>
                   <Col xs='12' lg='6'>
-                    <DropdownItem href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 1</span>
-                    </DropdownItem>
-                    <DropdownItem href='#'>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 2</span>
-                    </DropdownItem>
-                    <DropdownItem href='#'>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 3</span>
-                    </DropdownItem>
+                    </LinkListItem>
                   </Col>
                 </Row>
               </Col>
@@ -386,32 +391,32 @@ const ConImmagineEDescrizioneHooks = () => {
                 </div>
                 <Row>
                   <Col xs='12' lg='6'>
-                    <DropdownItem href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 1</span>
-                    </DropdownItem>
-                    <DropdownItem href='#'>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 2</span>
-                    </DropdownItem>
-                    <DropdownItem href='#'>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 3</span>
-                    </DropdownItem>
+                    </LinkListItem>
                   </Col>
                   <Col xs='12' lg='6'>
-                    <DropdownItem href='#'>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 4</span>
-                    </DropdownItem>
-                    <DropdownItem href='#'>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 5</span>
-                    </DropdownItem>
-                    <DropdownItem href='#'>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
                       <Icon className='me-2' color='primary' icon='it-arrow-right-triangle' size='xs' />
                       <span>Link lista 6</span>
-                    </DropdownItem>
+                    </LinkListItem>
                   </Col>
                 </Row>
               </Col>

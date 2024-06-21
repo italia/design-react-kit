@@ -7,7 +7,6 @@ import {
   Col,
   Collapse,
   Dropdown,
-  DropdownItem,
   DropdownMenu,
   DropdownToggle,
   Header,
@@ -121,18 +120,20 @@ const NavHeader = ({ theme }: ThemeType) => {
                   <span>Menu Dropdown</span>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem href='#'>
-                    <span>Link list 1</span>
-                  </DropdownItem>
-                  <DropdownItem href='#'>
-                    <span>Link list 2</span>
-                  </DropdownItem>
-                  <DropdownItem href='#'>
-                    <span>Link list 3</span>
-                  </DropdownItem>
-                  <DropdownItem href='#'>
-                    <span>Link list 4</span>
-                  </DropdownItem>
+                  <LinkList>
+                    <LinkListItem inDropdown href='#'>
+                      <span>Link list 1</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <span>Link list 2</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <span>Link list 3</span>
+                    </LinkListItem>
+                    <LinkListItem inDropdown href='#'>
+                      <span>Link list 4</span>
+                    </LinkListItem>
+                  </LinkList>
                 </DropdownMenu>
               </Dropdown>
               <MegamenuItem itemName='Megamenu con Immagine e Descrizione'>

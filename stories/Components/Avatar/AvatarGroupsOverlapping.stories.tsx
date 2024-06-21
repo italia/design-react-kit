@@ -4,7 +4,6 @@ import {
   AvatarGroupContainer,
   AvatarIcon,
   Dropdown,
-  DropdownItem,
   DropdownMenu,
   DropdownToggle,
   Icon,
@@ -75,30 +74,32 @@ export const SmallOverlappingAvatars = () => {
               <span aria-hidden='true'>+4</span>
             </DropdownToggle>
             <DropdownMenu>
-              <DropdownItem>
-                <AvatarIcon size='sm'>
-                  <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
-                </AvatarIcon>
-                <span>Mario Rossi</span>
-              </DropdownItem>
-              <DropdownItem>
-                <AvatarIcon size='sm' color='green'>
-                  <p aria-hidden='true'>A</p>
-                </AvatarIcon>
-                <span>Arianna Gello</span>
-              </DropdownItem>
-              <DropdownItem>
-                <AvatarIcon size='sm' color='primary'>
-                  <p aria-hidden='true'>S</p>
-                </AvatarIcon>
-                <span>Sara Ghioni</span>
-              </DropdownItem>
-              <DropdownItem>
-                <AvatarIcon size='sm'>
-                  <Icon icon='it-search' />
-                </AvatarIcon>
-                <span>Antonio Esposito</span>
-              </DropdownItem>
+              <LinkList>
+                <LinkListItem inDropdown>
+                  <AvatarIcon size='sm'>
+                    <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
+                  </AvatarIcon>
+                  <span>Mario Rossi</span>
+                </LinkListItem>
+                <LinkListItem inDropdown>
+                  <AvatarIcon size='sm' color='green'>
+                    <p aria-hidden='true'>A</p>
+                  </AvatarIcon>
+                  <span>Arianna Gello</span>
+                </LinkListItem>
+                <LinkListItem inDropdown>
+                  <AvatarIcon size='sm' color='primary'>
+                    <p aria-hidden='true'>S</p>
+                  </AvatarIcon>
+                  <span>Sara Ghioni</span>
+                </LinkListItem>
+                <LinkListItem inDropdown>
+                  <AvatarIcon size='sm'>
+                    <Icon icon='it-search' />
+                  </AvatarIcon>
+                  <span>Antonio Esposito</span>
+                </LinkListItem>
+              </LinkList>
             </DropdownMenu>
           </Dropdown>
         </AvatarIcon>
@@ -145,30 +146,30 @@ export const MediumOverlaidAvatars = () => {
               <span aria-hidden='true'>+4</span>
             </DropdownToggle>
             <DropdownMenu>
-              <DropdownItem>
+              <LinkListItem inDropdown>
                 <AvatarIcon size='md'>
                   <img src='https://randomuser.me/api/portraits/men/46.jpg' alt='Mario Rossi' />
                 </AvatarIcon>
                 <span>Mario Rossi</span>
-              </DropdownItem>
-              <DropdownItem>
+              </LinkListItem>
+              <LinkListItem inDropdown>
                 <AvatarIcon size='md' color='green'>
                   <p aria-hidden='true'>A</p>
                 </AvatarIcon>
                 <span>Arianna Gello</span>
-              </DropdownItem>
-              <DropdownItem>
+              </LinkListItem>
+              <LinkListItem inDropdown>
                 <AvatarIcon size='md' color='primary'>
                   <p aria-hidden='true'>S</p>
                 </AvatarIcon>
                 <span>Sara Ghioni</span>
-              </DropdownItem>
-              <DropdownItem>
+              </LinkListItem>
+              <LinkListItem inDropdown>
                 <AvatarIcon size='md'>
                   <Icon icon='it-search' />
                 </AvatarIcon>
                 <span>Antonio Esposito</span>
-              </DropdownItem>
+              </LinkListItem>
             </DropdownMenu>
           </Dropdown>
         </AvatarIcon>

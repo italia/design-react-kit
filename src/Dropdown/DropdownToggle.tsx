@@ -9,7 +9,7 @@ export interface DropdownToggleProps extends HTMLAttributes<HTMLElement> {
   inNavbar?: boolean;
   testId?: string;
   /** Classi aggiuntive da usare per il componente Button */
-  // color?: string;
+  color?: string;
   className?: string;
   outline?: boolean;
 }
