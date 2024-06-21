@@ -65,6 +65,7 @@ export const Collapse: FC<CollapseProps> = ({
     const style = { display: isOpen ? 'block' : 'none' };
     return (
       <CollapseBase
+        theme='dark'
         className={classes}
         cssModule={newCssModule}
         navbar={navbar}
@@ -78,7 +79,7 @@ export const Collapse: FC<CollapseProps> = ({
             <span className='it-close'></span>close
           </button>
         </div>
-        {megamenu ? <div className='menu-wrapper'>{children}</div> : <>{children}</>}
+        {megamenu ? <div className='menu-wrapper '>{children}</div> : <>{children}</>}
       </CollapseBase>
     );
   }

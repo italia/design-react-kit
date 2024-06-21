@@ -16,7 +16,7 @@ export const MegamenuItem: FC<MegamenuItemProps> = ({ itemName, className, child
   const toggleClasses = classNames('px-lg-2', 'px-xl-3');
 
   return (
-    <Dropdown className={classes} {...attributes} inNavbar>
+    <Dropdown className={classes} inNavbar {...attributes}>
       <DropdownToggle inNavbar caret className={toggleClasses}>
         <span>{itemName}</span>
       </DropdownToggle>

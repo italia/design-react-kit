@@ -9,7 +9,7 @@ export interface DropdownToggleProps extends HTMLAttributes<HTMLElement> {
   inNavbar?: boolean;
   testId?: string;
   /** Classi aggiuntive da usare per il componente Button */
-  color?: string;
+  // color?: string;
   className?: string;
   outline?: boolean;
 }
@@ -20,7 +20,7 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
   children,
   caret,
   inNavbar,
-  color = 'primary',
+  color = '',
   tag = 'button'
 }) => {
   const Tag = tag === 'a' || inNavbar ? 'a' : 'button';
@@ -35,8 +35,6 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
   let colorClass = '';
   if (tag === 'button' && color) {
     colorClass = `btn-${color}`;
-  } else if (color && inNavbar) {
-    colorClass = `${color} text-${color}`;
   }
 
   const iconClasses = classNames({
@@ -44,20 +42,19 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
     'icon-sm': !inNavbar,
     'icon-xs': inNavbar,
     'ms-1': inNavbar,
-    'icon-light': Tag.valueOf() !== 'a' ? true : false
+    'icon-light': Tag.valueOf() !== 'a' ? true : false,
+    color: color ? 'white' : 'primary'
   });
   return (
     <BSDropdownToggle
       tag={Tag}
       data-testId={testId}
-      role={Tag.valueOf() === 'a' ? 'button' : undefined}
+      role={Tag.valueOf() === 'a' ? 'button' : 'link'}
       className={`${classes} ${colorClass}`}
       nav={inNavbar}
     >
       {children as React.ReactNode}
-      {caret === true ? (
-        <Icon color={tag === 'button' ? 'white' : 'primary'} icon='it-expand' className={iconClasses} />
-      ) : null}
+      {caret === true ? <Icon icon='it-expand' className={iconClasses} /> : null}
     </BSDropdownToggle>
   );
 };
