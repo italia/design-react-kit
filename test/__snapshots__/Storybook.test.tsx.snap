@@ -1841,13 +1841,13 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping M
         class="avatar size-md avatar-dropdown"
       >
         <div
-          class="dropdown"
+          class="dropdown dropdown"
         >
           <button
-            aria-haspopup="true"
-            class="dropdown-toggle btn btn-"
-            data-bs-toggle="dropdown"
-            id="dropdownMenuLink2"
+            aria-expanded="false"
+            aria-haspopup="menu"
+            class="dropdown-toggle btn "
+            role="link"
           >
             <span
               class="visually-hidden"
@@ -1861,97 +1861,101 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping M
             </span>
           </button>
           <div
-            class="dropdown-menu"
+            aria-hidden="true"
+            class="dropdown-menu dropdown-menu"
+            data-bs-popper="static"
+            role="menu"
+            tabindex="-1"
           >
-            <div
-              class="link-list-wrapper"
-            >
-              <ul
-                class="link-list"
+            <li>
+              <a
+                class="dropdown-item list-item"
+                role="menuitem"
+                tabindex="0"
               >
-                <li>
-                  <a
-                    class="list-item"
+                <div
+                  class="avatar size-md"
+                >
+                  <img
+                    alt="Mario Rossi"
+                    src="https://randomuser.me/api/portraits/men/46.jpg"
+                  />
+                </div>
+                <span>
+                  Mario Rossi
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item list-item"
+                role="menuitem"
+                tabindex="0"
+              >
+                <div
+                  class="avatar size-md avatar-green"
+                >
+                  <p
+                    aria-hidden="true"
                   >
-                    <div
-                      class="avatar size-md"
-                    >
-                      <img
-                        alt="Mario Rossi"
-                        src="https://randomuser.me/api/portraits/men/46.jpg"
-                      />
-                    </div>
-                    <span>
-                      Mario Rossi
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="list-item"
+                    A
+                  </p>
+                </div>
+                <span>
+                  Arianna Gello
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item list-item"
+                role="menuitem"
+                tabindex="0"
+              >
+                <div
+                  class="avatar size-md avatar-primary"
+                >
+                  <p
+                    aria-hidden="true"
                   >
-                    <div
-                      class="avatar size-md avatar-green"
-                    >
-                      <p
-                        aria-hidden="true"
-                      >
-                        A
-                      </p>
-                    </div>
-                    <span>
-                      Arianna Gello
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="list-item"
+                    S
+                  </p>
+                </div>
+                <span>
+                  Sara Ghioni
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item list-item"
+                role="menuitem"
+                tabindex="0"
+              >
+                <div
+                  class="avatar size-md"
+                >
+                  <svg
+                    class="icon"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <div
-                      class="avatar size-md avatar-primary"
-                    >
-                      <p
-                        aria-hidden="true"
-                      >
-                        S
-                      </p>
-                    </div>
-                    <span>
-                      Sara Ghioni
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="list-item"
-                  >
-                    <div
-                      class="avatar size-md"
-                    >
-                      <svg
-                        class="icon"
-                        enable-background="new 0 0 24 24"
-                        role="img"
-                        viewBox="0 0 24 24"
-                        xml:space="preserve"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <title>
-                          icon
-                        </title>
-                        <path
-                          d="M21.9 21.1 16 15.3c1.3-1.5 2-3.4 2-5.3 0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8c1.9 0 3.8-.7 5.3-2l5.8 5.9.8-.8zM10 17c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7z"
-                        />
-                      </svg>
-                    </div>
-                    <span>
-                      Antonio Esposito
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+                    <title>
+                      icon
+                    </title>
+                    <path
+                      d="M21.9 21.1 16 15.3c1.3-1.5 2-3.4 2-5.3 0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8c1.9 0 3.8-.7 5.3-2l5.8 5.9.8-.8zM10 17c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7z"
+                    />
+                  </svg>
+                </div>
+                <span>
+                  Antonio Esposito
+                </span>
+              </a>
+            </li>
           </div>
         </div>
       </div>
@@ -2099,13 +2103,13 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping S
         class="avatar size-sm avatar-dropdown"
       >
         <div
-          class="dropdown"
+          class="dropdown dropdown"
         >
           <button
-            aria-haspopup="true"
-            class="dropdown-toggle btn btn-"
-            data-bs-toggle="dropdown"
-            id="dropdownMenuLink"
+            aria-expanded="false"
+            aria-haspopup="menu"
+            class="dropdown-toggle btn "
+            role="link"
           >
             <span
               class="visually-hidden"
@@ -2119,7 +2123,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping S
             </span>
           </button>
           <div
-            class="dropdown-menu"
+            aria-hidden="true"
+            class="dropdown-menu dropdown-menu"
+            data-bs-popper="static"
+            role="menu"
+            tabindex="-1"
           >
             <div
               class="link-list-wrapper"
@@ -2129,7 +2137,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping S
               >
                 <li>
                   <a
-                    class="list-item"
+                    class="dropdown-item list-item"
+                    role="menuitem"
+                    tabindex="0"
                   >
                     <div
                       class="avatar size-sm"
@@ -2146,7 +2156,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping S
                 </li>
                 <li>
                   <a
-                    class="list-item"
+                    class="dropdown-item list-item"
+                    role="menuitem"
+                    tabindex="0"
                   >
                     <div
                       class="avatar size-sm avatar-green"
@@ -2164,7 +2176,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping S
                 </li>
                 <li>
                   <a
-                    class="list-item"
+                    class="dropdown-item list-item"
+                    role="menuitem"
+                    tabindex="0"
                   >
                     <div
                       class="avatar size-sm avatar-primary"
@@ -2182,7 +2196,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping S
                 </li>
                 <li>
                   <a
-                    class="list-item"
+                    class="dropdown-item list-item"
+                    role="menuitem"
+                    tabindex="0"
                   >
                     <div
                       class="avatar size-sm"
@@ -5385,41 +5401,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Dimmer ColorePrimario 1`] =
 <div>
   <div>
     <div
-      class="mt-3 fade"
-    >
-      <div
-        class="dimmer dimmer-primary"
-        style="display: flex;"
-      >
-        <div
-          class="dimmer-inner"
-        >
-          <div
-            class="dimmer-icon"
-          >
-            <svg
-              class="icon"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="M16.5 12H16V6c0-2.2-1.8-4-4-4S8 3.8 8 6v3h1V6c0-1.7 1.3-3 3-3s3 1.3 3 3v6H7.5c-.6 0-1.1.5-1.1 1.1v6.8c0 .6.5 1.1 1.1 1.1h9c.6 0 1.1-.5 1.1-1.1v-6.8c0-.6-.5-1.1-1.1-1.1zm.1 7.9c0 .1 0 .1-.1.1h-9c-.1 0-.1 0-.1-.1v-6.8h9.2v6.8zM13 15.5c0 .3-.2.7-.5.8v1.5h-1v-1.5c-.3-.1-.5-.5-.5-.8 0-.6.4-1 1-1s1 .4 1 1z"
-              />
-            </svg>
-          </div>
-          <p>
-            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
       class="row"
     >
       <div
@@ -5501,6 +5482,41 @@ exports[`Stories Snapshots Documentazione/Componenti/Dimmer ColorePrimario 1`] =
         </div>
       </div>
     </div>
+    <div
+      class="mt-3 fade"
+    >
+      <div
+        class="dimmer dimmer-primary"
+        style="display: flex;"
+      >
+        <div
+          class="dimmer-inner"
+        >
+          <div
+            class="dimmer-icon"
+          >
+            <svg
+              class="icon"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="M16.5 12H16V6c0-2.2-1.8-4-4-4S8 3.8 8 6v3h1V6c0-1.7 1.3-3 3-3s3 1.3 3 3v6H7.5c-.6 0-1.1.5-1.1 1.1v6.8c0 .6.5 1.1 1.1 1.1h9c.6 0 1.1-.5 1.1-1.1v-6.8c0-.6-.5-1.1-1.1-1.1zm.1 7.9c0 .1 0 .1-.1.1h-9c-.1 0-.1 0-.1-.1v-6.8h9.2v6.8zM13 15.5c0 .3-.2.7-.5.8v1.5h-1v-1.5c-.3-.1-.5-.5-.5-.8 0-.6.4-1 1-1s1 .4 1 1z"
+              />
+            </svg>
+          </div>
+          <p>
+            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -5508,6 +5524,62 @@ exports[`Stories Snapshots Documentazione/Componenti/Dimmer ColorePrimario 1`] =
 exports[`Stories Snapshots Documentazione/Componenti/Dimmer DimmerConAzioni 1`] = `
 <div>
   <div>
+    <div
+      class="col"
+    >
+      <div
+        class="col-12 col-lg-4"
+      >
+        <div
+          class="card-wrapper"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card-body"
+            >
+              <h5
+                class="card-title"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+              </h5>
+              <p
+                class="card-text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-12 col-lg-4 d-none d-lg-block"
+      >
+        <div
+          class="card-wrapper"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card-body"
+            >
+              <h5
+                class="card-title"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+              </h5>
+              <p
+                class="card-text"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div
       class="mt-3 fade"
     >
@@ -5557,6 +5629,13 @@ exports[`Stories Snapshots Documentazione/Componenti/Dimmer DimmerConAzioni 1`] 
         </div>
       </div>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Dimmer DimmerConAzioniColorePrimario 1`] = `
+<div>
+  <div>
     <div
       class="col"
     >
@@ -5613,13 +5692,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Dimmer DimmerConAzioni 1`] 
         </div>
       </div>
     </div>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Componenti/Dimmer DimmerConAzioniColorePrimario 1`] = `
-<div>
-  <div>
     <div
       class="mt-3 fade"
     >
@@ -5664,62 +5736,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Dimmer DimmerConAzioniColor
         </div>
       </div>
     </div>
-    <div
-      class="col"
-    >
-      <div
-        class="col-12 col-lg-4"
-      >
-        <div
-          class="card-wrapper"
-        >
-          <div
-            class="card"
-          >
-            <div
-              class="card-body"
-            >
-              <h5
-                class="card-title"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-              </h5>
-              <p
-                class="card-text"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="col-12 col-lg-4 d-none d-lg-block"
-      >
-        <div
-          class="card-wrapper"
-        >
-          <div
-            class="card"
-          >
-            <div
-              class="card-body"
-            >
-              <h5
-                class="card-title"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-              </h5>
-              <p
-                class="card-text"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 `;
@@ -5727,41 +5743,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Dimmer DimmerConAzioniColor
 exports[`Stories Snapshots Documentazione/Componenti/Dimmer Esempi 1`] = `
 <div>
   <div>
-    <div
-      class="mt-3 fade"
-    >
-      <div
-        class="dimmer"
-        style="display: flex;"
-      >
-        <div
-          class="dimmer-inner"
-        >
-          <div
-            class="dimmer-icon"
-          >
-            <svg
-              class="icon"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="M16.5 12H16V6c0-2.2-1.8-4-4-4S8 3.8 8 6v3h1V6c0-1.7 1.3-3 3-3s3 1.3 3 3v6H7.5c-.6 0-1.1.5-1.1 1.1v6.8c0 .6.5 1.1 1.1 1.1h9c.6 0 1.1-.5 1.1-1.1v-6.8c0-.6-.5-1.1-1.1-1.1zm.1 7.9c0 .1 0 .1-.1.1h-9c-.1 0-.1 0-.1-.1v-6.8h9.2v6.8zM13 15.5c0 .3-.2.7-.5.8v1.5h-1v-1.5c-.3-.1-.5-.5-.5-.8 0-.6.4-1 1-1s1 .4 1 1z"
-              />
-            </svg>
-          </div>
-          <p>
-            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
-          </p>
-        </div>
-      </div>
-    </div>
     <div
       class="row"
     >
@@ -5844,6 +5825,41 @@ exports[`Stories Snapshots Documentazione/Componenti/Dimmer Esempi 1`] = `
         </div>
       </div>
     </div>
+    <div
+      class="mt-3 fade"
+    >
+      <div
+        class="dimmer"
+        style="display: flex;"
+      >
+        <div
+          class="dimmer-inner"
+        >
+          <div
+            class="dimmer-icon"
+          >
+            <svg
+              class="icon"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="M16.5 12H16V6c0-2.2-1.8-4-4-4S8 3.8 8 6v3h1V6c0-1.7 1.3-3 3-3s3 1.3 3 3v6H7.5c-.6 0-1.1.5-1.1 1.1v6.8c0 .6.5 1.1 1.1 1.1h9c.6 0 1.1-.5 1.1-1.1v-6.8c0-.6-.5-1.1-1.1-1.1zm.1 7.9c0 .1 0 .1-.1.1h-9c-.1 0-.1 0-.1-.1v-6.8h9.2v6.8zM13 15.5c0 .3-.2.7-.5.8v1.5h-1v-1.5c-.3-.1-.5-.5-.5-.8 0-.6.4-1 1-1s1 .4 1 1z"
+              />
+            </svg>
+          </div>
+          <p>
+            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -5855,16 +5871,17 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _Esempi 1`] = `
   >
     <section>
       <div
-        class="me-3 dropdown"
+        class="me-3 dropdown dropdown"
       >
         <button
-          aria-haspopup="true"
+          aria-expanded="false"
+          aria-haspopup="menu"
           class="dropdown-toggle btn btn-primary"
-          data-bs-toggle="dropdown"
+          role="link"
         >
           Apri dropdown
           <svg
-            class="icon icon-expand icon-sm icon-light"
+            class="icon icon-expand icon-sm icon-light color"
             enable-background="new 0 0 24 24"
             role="img"
             viewBox="0 0 24 24"
@@ -5880,7 +5897,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _Esempi 1`] = `
           </svg>
         </button>
         <div
-          class="dropdown-menu"
+          aria-hidden="true"
+          class="dropdown-menu dropdown-menu"
+          data-bs-popper="static"
+          role="menu"
+          tabindex="-1"
         >
           <div
             class="link-list-wrapper"
@@ -5928,18 +5949,17 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _Link 1`] = `
 <div>
   <section>
     <div
-      class="me-3 dropdown"
+      class="me-3 dropdown dropdown"
     >
       <a
-        aria-haspopup="true"
-        class="btn-dropdown dropdown-toggle"
-        color="primary"
-        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        aria-haspopup="menu"
+        class="btn-dropdown dropdown-toggle "
         role="button"
       >
         Apri dropdown
         <svg
-          class="icon icon-expand icon-sm"
+          class="icon icon-expand icon-sm color"
           enable-background="new 0 0 24 24"
           role="img"
           viewBox="0 0 24 24"
@@ -5955,7 +5975,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _Link 1`] = `
         </svg>
       </a>
       <div
-        class="dropdown-menu"
+        aria-hidden="true"
+        class="dropdown-menu dropdown-menu"
+        data-bs-popper="static"
+        role="menu"
+        tabindex="-1"
       >
         <div
           class="link-list-wrapper"
@@ -6004,7 +6028,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _MenuDark 1`] = `
     class="docs-show-dropdown-open"
   >
     <div
-      class="dark dropdown-menu"
+      aria-hidden="true"
+      class="dark dropdown-menu dropdown-menu"
+      data-bs-popper="static"
+      role="menu"
+      tabindex="-1"
     >
       <div
         class="link-list-wrapper"
@@ -6172,7 +6200,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _MenuVociAttive 1`
     class="docs-show-dropdown-open"
   >
     <div
-      class="dropdown-menu"
+      aria-hidden="true"
+      class="dropdown-menu dropdown-menu"
+      data-bs-popper="static"
+      role="menu"
+      tabindex="-1"
     >
       <div
         class="link-list-wrapper"
@@ -6231,7 +6263,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _MenuVociDisabilit
     class="docs-show-dropdown-open"
   >
     <div
-      class="dropdown-menu"
+      aria-hidden="true"
+      class="dropdown-menu dropdown-menu"
+      data-bs-popper="static"
+      role="menu"
+      tabindex="-1"
     >
       <div
         class="link-list-wrapper"
@@ -6290,16 +6326,17 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
       role="group"
     >
       <div
-        class="dropdown"
+        class="dropdown dropdown"
       >
         <button
-          aria-haspopup="true"
+          aria-expanded="false"
+          aria-haspopup="menu"
           class="dropdown-toggle btn btn-primary"
-          data-bs-toggle="dropdown"
+          role="link"
         >
           Apri dropdown
           <svg
-            class="icon icon-expand icon-sm icon-light"
+            class="icon icon-expand icon-sm icon-light color"
             enable-background="new 0 0 24 24"
             role="img"
             viewBox="0 0 24 24"
@@ -6315,7 +6352,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
           </svg>
         </button>
         <div
-          class="dropdown-menu"
+          aria-hidden="true"
+          class="dropdown-menu dropdown-menu"
+          data-bs-popper="static"
+          role="menu"
+          tabindex="-1"
         >
           <div
             class="link-list-wrapper"
@@ -6355,16 +6396,17 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
         </div>
       </div>
       <div
-        class="dropdown"
+        class="dropdown dropdown"
       >
         <button
-          aria-haspopup="true"
+          aria-expanded="false"
+          aria-haspopup="menu"
           class="dropdown-toggle btn btn-secondary"
-          data-bs-toggle="dropdown"
+          role="link"
         >
           Apri dropdown
           <svg
-            class="icon icon-expand icon-sm icon-light"
+            class="icon icon-expand icon-sm icon-light color"
             enable-background="new 0 0 24 24"
             role="img"
             viewBox="0 0 24 24"
@@ -6380,7 +6422,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
           </svg>
         </button>
         <div
-          class="dropdown-menu"
+          aria-hidden="true"
+          class="dropdown-menu dropdown-menu"
+          data-bs-popper="static"
+          role="menu"
+          tabindex="-1"
         >
           <div
             class="link-list-wrapper"
@@ -6420,16 +6466,17 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
         </div>
       </div>
       <div
-        class="dropdown"
+        class="dropdown dropdown"
       >
         <button
-          aria-haspopup="true"
+          aria-expanded="false"
+          aria-haspopup="menu"
           class="dropdown-toggle btn btn-danger"
-          data-bs-toggle="dropdown"
+          role="link"
         >
           Apri dropdown
           <svg
-            class="icon icon-expand icon-sm icon-light"
+            class="icon icon-expand icon-sm icon-light color"
             enable-background="new 0 0 24 24"
             role="img"
             viewBox="0 0 24 24"
@@ -6445,7 +6492,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
           </svg>
         </button>
         <div
-          class="dropdown-menu"
+          aria-hidden="true"
+          class="dropdown-menu dropdown-menu"
+          data-bs-popper="static"
+          role="menu"
+          tabindex="-1"
         >
           <div
             class="link-list-wrapper"
@@ -6489,7 +6540,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuConVociLarge 1
     class="docs-show-dropdown-open"
   >
     <div
-      class="dropdown-menu"
+      aria-hidden="true"
+      class="dropdown-menu dropdown-menu"
+      data-bs-popper="static"
+      role="menu"
+      tabindex="-1"
     >
       <div
         class="link-list-wrapper"
@@ -6543,7 +6598,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuFullWidth 1`] 
     class="docs-show-dropdown-open"
   >
     <div
-      class="full-width dropdown-menu"
+      aria-hidden="true"
+      class="full-width dropdown-menu dropdown-menu"
+      data-bs-popper="static"
+      role="menu"
+      tabindex="-1"
     >
       <div
         class="link-list-wrapper"
@@ -6619,7 +6678,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuHeadersESepara
     class="docs-show-dropdown-open"
   >
     <div
-      class="dropdown-menu"
+      aria-hidden="true"
+      class="dropdown-menu dropdown-menu"
+      data-bs-popper="static"
+      role="menu"
+      tabindex="-1"
     >
       <div
         class="link-list-wrapper"
@@ -6696,7 +6759,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuIconaADestra 1
     class="docs-show-dropdown-open"
   >
     <div
-      class="dropdown-menu"
+      aria-hidden="true"
+      class="dropdown-menu dropdown-menu"
+      data-bs-popper="static"
+      role="menu"
+      tabindex="-1"
     >
       <div
         class="link-list-wrapper"
@@ -6798,7 +6865,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuIconaASinistra
     class="docs-show-dropdown-open"
   >
     <div
-      class="dropdown-menu"
+      aria-hidden="true"
+      class="dropdown-menu dropdown-menu"
+      data-bs-popper="static"
+      role="menu"
+      tabindex="-1"
     >
       <div
         class="link-list-wrapper"
@@ -9519,14 +9590,13 @@ exports[`Stories Snapshots Documentazione/Componenti/Pager PageChanger 1`] = `
         </li>
       </ul>
       <div
-        class="dropdown"
+        class="dropdown dropdown"
       >
         <button
-          aria-haspopup="true"
-          aria-label="Salta alla pagina"
-          class="dropdown-toggle btn btn-"
-          data-bs-toggle="dropdown"
-          id="pagerChanger"
+          aria-expanded="false"
+          aria-haspopup="menu"
+          class="dropdown-toggle btn "
+          role="link"
         >
           10/pagina
           <svg
@@ -9545,7 +9615,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Pager PageChanger 1`] = `
             />
           </svg>
           <svg
-            class="icon icon-expand icon-sm icon-light"
+            class="icon icon-expand icon-sm icon-light color"
             enable-background="new 0 0 24 24"
             role="img"
             viewBox="0 0 24 24"
@@ -9561,7 +9631,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Pager PageChanger 1`] = `
           </svg>
         </button>
         <div
-          class="dropdown-menu"
+          aria-hidden="true"
+          class="dropdown-menu dropdown-menu"
+          data-bs-popper="static"
+          role="menu"
+          tabindex="-1"
         >
           <div
             class="link-list-wrapper"
@@ -18451,7 +18525,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -18531,7 +18609,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -18597,7 +18679,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -18672,7 +18758,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -18738,7 +18828,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -18882,7 +18976,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -18960,7 +19058,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -19026,7 +19128,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -19095,7 +19201,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -19162,7 +19272,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -19228,7 +19342,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -19372,7 +19490,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -19450,7 +19572,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -19516,7 +19642,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -19585,7 +19715,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -19652,7 +19786,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -19718,7 +19856,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -20240,7 +20382,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticaleGra
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -20466,7 +20612,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticaleMed
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -20687,7 +20837,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticalePic
               </span>
             </button>
             <div
-              class="dropdown-menu"
+              aria-hidden="true"
+              class="dropdown-menu dropdown-menu"
+              data-bs-popper="static"
+              role="menu"
+              tabindex="-1"
             >
               <div
                 class="link-list-wrapper"
@@ -26639,6 +26793,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                   <div
                     class="navbar-collapsable expanded collapse"
                     style="display: block;"
+                    theme="dark"
                   >
                     <div
                       class="overlay"
@@ -26687,18 +26842,18 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
               <div
                 class="it-header-slim-right-zone header-slim-right-zone"
               >
-                <div
-                  class="dropdown nav-item"
+                <li
+                  class="dropdown nav-item dropdown nav-item"
                 >
                   <a
-                    aria-haspopup="true"
-                    class="dropdown-toggle nav-link"
-                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    aria-haspopup="menu"
+                    class="dropdown-toggle nav-link btn  nav-link"
                     role="button"
                   >
                     ITA
                     <svg
-                      class="icon icon-expand icon-xs ms-1"
+                      class="icon icon-expand icon-xs ms-1 color"
                       enable-background="new 0 0 24 24"
                       role="img"
                       viewBox="0 0 24 24"
@@ -26714,7 +26869,11 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                     </svg>
                   </a>
                   <div
-                    class="dropdown-menu"
+                    aria-hidden="true"
+                    class="dropdown-menu dropdown-menu"
+                    data-bs-popper="static"
+                    role="menu"
+                    tabindex="-1"
                   >
                     <div
                       class="row"
@@ -26758,7 +26917,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                       </div>
                     </div>
                   </div>
-                </div>
+                </li>
                 <div
                   class="it-access-top-wrapper"
                 >
@@ -26988,6 +27147,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                   <div
                     class="navbar-collapsable collapse navbar-collapsable"
                     style="display: none;"
+                    theme="dark"
                   >
                     <div
                       class="overlay"
@@ -27061,19 +27221,19 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                           </a>
                         </li>
                         <li
-                          class="dropdown nav-item"
+                          class="dropdown nav-item dropdown nav-item"
                         >
                           <a
-                            aria-haspopup="true"
-                            class="dropdown-toggle nav-link"
-                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            aria-haspopup="menu"
+                            class="dropdown-toggle nav-link btn  nav-link"
                             role="button"
                           >
                             <span>
                               Menu Dropdown
                             </span>
                             <svg
-                              class="icon icon-expand icon-xs ms-1"
+                              class="icon icon-expand icon-xs ms-1 color"
                               enable-background="new 0 0 24 24"
                               role="img"
                               viewBox="0 0 24 24"
@@ -27089,7 +27249,11 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                             </svg>
                           </a>
                           <div
-                            class="dropdown-menu"
+                            aria-hidden="true"
+                            class="dropdown-menu dropdown-menu"
+                            data-bs-popper="static"
+                            role="menu"
+                            tabindex="-1"
                           >
                             <div
                               class="link-list-wrapper"
@@ -27150,19 +27314,19 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                           </div>
                         </li>
                         <li
-                          class="megamenu dropdown nav-item"
+                          class="megamenu dropdown nav-item dropdown nav-item"
                         >
                           <a
-                            aria-haspopup="true"
-                            class="px-lg-2 px-xl-3 dropdown-toggle nav-link"
-                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            aria-haspopup="menu"
+                            class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
                             role="button"
                           >
                             <span>
                               Megamenu con Immagine e Descrizione
                             </span>
                             <svg
-                              class="icon icon-expand icon-xs ms-1"
+                              class="icon icon-expand icon-xs ms-1 color"
                               enable-background="new 0 0 24 24"
                               role="img"
                               viewBox="0 0 24 24"
@@ -27178,7 +27342,11 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                             </svg>
                           </a>
                           <div
-                            class="dropdown-menu"
+                            aria-hidden="true"
+                            class="dropdown-menu dropdown-menu"
+                            data-bs-popper="static"
+                            role="menu"
+                            tabindex="-1"
                           >
                             <div
                               class="megamenu pb-5 pt-3 py-lg-0"
@@ -27504,6 +27672,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
               <div
                 class="navbar-collapsable collapse navbar-collapsable"
                 style="display: none;"
+                theme="dark"
               >
                 <div
                   class="overlay"
@@ -27577,19 +27746,20 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                       </a>
                     </li>
                     <li
-                      class="dropdown nav-item"
+                      class="dropdown nav-item dropdown nav-item"
+                      color=""
                     >
                       <a
-                        aria-haspopup="true"
-                        class="dropdown-toggle nav-link"
-                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        aria-haspopup="menu"
+                        class="dropdown-toggle nav-link btn  nav-link"
                         role="button"
                       >
                         <span>
-                          Menu Dropdown
+                          Dropdown Menu
                         </span>
                         <svg
-                          class="icon icon-expand icon-xs ms-1"
+                          class="icon icon-expand icon-xs ms-1 color"
                           enable-background="new 0 0 24 24"
                           role="img"
                           viewBox="0 0 24 24"
@@ -27605,7 +27775,11 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                         </svg>
                       </a>
                       <div
-                        class="dropdown-menu"
+                        aria-hidden="true"
+                        class="dropdown-menu dropdown-menu"
+                        data-bs-popper="static"
+                        role="menu"
+                        tabindex="-1"
                       >
                         <div
                           class="link-list-wrapper"
@@ -27666,19 +27840,19 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                       </div>
                     </li>
                     <li
-                      class="megamenu dropdown nav-item"
+                      class="megamenu dropdown nav-item dropdown nav-item"
                     >
                       <a
-                        aria-haspopup="true"
-                        class="px-lg-2 px-xl-3 dropdown-toggle nav-link"
-                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        aria-haspopup="menu"
+                        class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
                         role="button"
                       >
                         <span>
                           Megamenu con Immagine e Descrizione
                         </span>
                         <svg
-                          class="icon icon-expand icon-xs ms-1"
+                          class="icon icon-expand icon-xs ms-1 color"
                           enable-background="new 0 0 24 24"
                           role="img"
                           viewBox="0 0 24 24"
@@ -27694,7 +27868,11 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                         </svg>
                       </a>
                       <div
-                        class="dropdown-menu"
+                        aria-hidden="true"
+                        class="dropdown-menu dropdown-menu"
+                        data-bs-popper="static"
+                        role="menu"
+                        tabindex="-1"
                       >
                         <div
                           class="megamenu pb-5 pt-3 py-lg-0"
@@ -28018,6 +28196,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
               <div
                 class="navbar-collapsable collapse navbar-collapsable"
                 style="display: none;"
+                theme="dark"
               >
                 <div
                   class="overlay"
@@ -28200,6 +28379,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                 <div
                   class="navbar-collapsable collapse"
                   style="display: none;"
+                  theme="dark"
                 >
                   <div
                     class="overlay"
@@ -28248,18 +28428,18 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
             <div
               class="it-header-slim-right-zone header-slim-right-zone"
             >
-              <div
-                class="dropdown nav-item"
+              <li
+                class="dropdown nav-item dropdown nav-item"
               >
                 <a
-                  aria-haspopup="true"
-                  class="dropdown-toggle nav-link"
-                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  aria-haspopup="menu"
+                  class="dropdown-toggle nav-link btn  nav-link"
                   role="button"
                 >
                   ITA
                   <svg
-                    class="icon icon-expand icon-xs ms-1"
+                    class="icon icon-expand icon-xs ms-1 color"
                     enable-background="new 0 0 24 24"
                     role="img"
                     viewBox="0 0 24 24"
@@ -28275,7 +28455,11 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                   </svg>
                 </a>
                 <div
-                  class="dropdown-menu"
+                  aria-hidden="true"
+                  class="dropdown-menu dropdown-menu"
+                  data-bs-popper="static"
+                  role="menu"
+                  tabindex="-1"
                 >
                   <div
                     class="row"
@@ -28319,7 +28503,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                     </div>
                   </div>
                 </div>
-              </div>
+              </li>
               <div
                 class="it-access-top-wrapper"
               >
@@ -28363,18 +28547,18 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
             <div
               class="it-header-slim-right-zone header-slim-right-zone"
             >
-              <div
-                class="dropdown nav-item"
+              <li
+                class="dropdown nav-item dropdown nav-item"
               >
                 <a
-                  aria-haspopup="true"
-                  class="dropdown-toggle nav-link"
-                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  aria-haspopup="menu"
+                  class="dropdown-toggle nav-link btn  nav-link"
                   role="button"
                 >
                   ITA
                   <svg
-                    class="icon icon-expand icon-xs ms-1"
+                    class="icon icon-expand icon-xs ms-1 color"
                     enable-background="new 0 0 24 24"
                     role="img"
                     viewBox="0 0 24 24"
@@ -28390,7 +28574,11 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                   </svg>
                 </a>
                 <div
-                  class="dropdown-menu"
+                  aria-hidden="true"
+                  class="dropdown-menu dropdown-menu"
+                  data-bs-popper="static"
+                  role="menu"
+                  tabindex="-1"
                 >
                   <div
                     class="row"
@@ -28434,7 +28622,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                     </div>
                   </div>
                 </div>
-              </div>
+              </li>
               <a
                 class="btn-icon btn-full btn btn-primary"
                 href="#"
@@ -28945,6 +29133,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
+        theme="dark"
       >
         <div
           class="overlay"
@@ -28964,25 +29153,25 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
           </button>
         </div>
         <div
-          class="menu-wrapper"
+          class="menu-wrapper "
         >
           <ul
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item"
+              class="megamenu dropdown nav-item dropdown nav-item"
             >
               <a
-                aria-haspopup="true"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link"
-                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
                 role="button"
               >
                 <span>
                   Megamenu con Call to Action a destra
                 </span>
                 <svg
-                  class="icon icon-expand icon-xs ms-1"
+                  class="icon icon-expand icon-xs ms-1 color"
                   enable-background="new 0 0 24 24"
                   role="img"
                   viewBox="0 0 24 24"
@@ -28998,7 +29187,11 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
                 </svg>
               </a>
               <div
-                class="dropdown-menu"
+                aria-hidden="true"
+                class="dropdown-menu dropdown-menu"
+                data-bs-popper="static"
+                role="menu"
+                tabindex="-1"
               >
                 <div
                   class="megamenu pb-5 pt-3 py-lg-0"
@@ -29015,188 +29208,172 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
                         <div
                           class="col-12 col-lg-6"
                         >
-                          <div
-                            class="link-list-wrapper"
-                          >
-                            <ul
-                              class="link-list"
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
                             >
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 1
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 2
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 3
-                                  </span>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 1
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 2
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 3
+                              </span>
+                            </a>
+                          </li>
                         </div>
                         <div
                           class="col-12 col-lg-6"
                         >
-                          <div
-                            class="link-list-wrapper"
-                          >
-                            <ul
-                              class="link-list"
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
                             >
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 1
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 2
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 3
-                                  </span>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 1
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 2
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 3
+                              </span>
+                            </a>
+                          </li>
                         </div>
                       </div>
                     </div>
@@ -29303,6 +29480,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
+        theme="dark"
       >
         <div
           class="overlay"
@@ -29322,25 +29500,25 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
           </button>
         </div>
         <div
-          class="menu-wrapper"
+          class="menu-wrapper "
         >
           <ul
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item"
+              class="megamenu dropdown nav-item dropdown nav-item"
             >
               <a
-                aria-haspopup="true"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link"
-                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
                 role="button"
               >
                 <span>
                   Megamenu con Call to Action in basso
                 </span>
                 <svg
-                  class="icon icon-expand icon-xs ms-1"
+                  class="icon icon-expand icon-xs ms-1 color"
                   enable-background="new 0 0 24 24"
                   role="img"
                   viewBox="0 0 24 24"
@@ -29356,7 +29534,11 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
                 </svg>
               </a>
               <div
-                class="dropdown-menu"
+                aria-hidden="true"
+                class="dropdown-menu dropdown-menu"
+                data-bs-popper="static"
+                role="menu"
+                tabindex="-1"
               >
                 <div
                   class="megamenu pb-5 pt-3 py-lg-0"
@@ -29367,281 +29549,257 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
                     <div
                       class="col-12 col-lg-4"
                     >
-                      <div
-                        class="link-list-wrapper"
-                      >
-                        <ul
-                          class="link-list"
+                      <li>
+                        <a
+                          class="dropdown-item list-item"
+                          href="#"
+                          role="menuitem"
+                          tabindex="0"
                         >
-                          <li>
-                            <a
-                              class="dropdown-item list-item"
-                              href="#"
-                              role="menuitem"
-                              tabindex="0"
-                            >
-                              <svg
-                                class="icon me-2 icon-primary icon-xs"
-                                enable-background="new 0 0 24 24"
-                                role="img"
-                                viewBox="0 0 24 24"
-                                xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>
-                                  icon
-                                </title>
-                                <path
-                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                />
-                              </svg>
-                              <span>
-                                Link lista 1
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item list-item"
-                              href="#"
-                              role="menuitem"
-                              tabindex="0"
-                            >
-                              <svg
-                                class="icon me-2 icon-primary icon-xs"
-                                enable-background="new 0 0 24 24"
-                                role="img"
-                                viewBox="0 0 24 24"
-                                xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>
-                                  icon
-                                </title>
-                                <path
-                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                />
-                              </svg>
-                              <span>
-                                Link lista 2
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item list-item"
-                              href="#"
-                              role="menuitem"
-                              tabindex="0"
-                            >
-                              <svg
-                                class="icon me-2 icon-primary icon-xs"
-                                enable-background="new 0 0 24 24"
-                                role="img"
-                                viewBox="0 0 24 24"
-                                xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>
-                                  icon
-                                </title>
-                                <path
-                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                />
-                              </svg>
-                              <span>
-                                Link lista 3
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                          <svg
+                            class="icon me-2 icon-primary icon-xs"
+                            enable-background="new 0 0 24 24"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              icon
+                            </title>
+                            <path
+                              d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                            />
+                          </svg>
+                          <span>
+                            Link lista 1
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item list-item"
+                          href="#"
+                          role="menuitem"
+                          tabindex="0"
+                        >
+                          <svg
+                            class="icon me-2 icon-primary icon-xs"
+                            enable-background="new 0 0 24 24"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              icon
+                            </title>
+                            <path
+                              d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                            />
+                          </svg>
+                          <span>
+                            Link lista 2
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item list-item"
+                          href="#"
+                          role="menuitem"
+                          tabindex="0"
+                        >
+                          <svg
+                            class="icon me-2 icon-primary icon-xs"
+                            enable-background="new 0 0 24 24"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              icon
+                            </title>
+                            <path
+                              d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                            />
+                          </svg>
+                          <span>
+                            Link lista 3
+                          </span>
+                        </a>
+                      </li>
                     </div>
                     <div
                       class="col-12 col-lg-4"
                     >
-                      <div
-                        class="link-list-wrapper"
-                      >
-                        <ul
-                          class="link-list"
+                      <li>
+                        <a
+                          class="dropdown-item list-item"
+                          href="#"
+                          role="menuitem"
+                          tabindex="0"
                         >
-                          <li>
-                            <a
-                              class="dropdown-item list-item"
-                              href="#"
-                              role="menuitem"
-                              tabindex="0"
-                            >
-                              <svg
-                                class="icon me-2 icon-primary icon-xs"
-                                enable-background="new 0 0 24 24"
-                                role="img"
-                                viewBox="0 0 24 24"
-                                xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>
-                                  icon
-                                </title>
-                                <path
-                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                />
-                              </svg>
-                              <span>
-                                Link lista 4
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item list-item"
-                              href="#"
-                              role="menuitem"
-                              tabindex="0"
-                            >
-                              <svg
-                                class="icon me-2 icon-primary icon-xs"
-                                enable-background="new 0 0 24 24"
-                                role="img"
-                                viewBox="0 0 24 24"
-                                xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>
-                                  icon
-                                </title>
-                                <path
-                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                />
-                              </svg>
-                              <span>
-                                Link lista 5
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item list-item"
-                              href="#"
-                              role="menuitem"
-                              tabindex="0"
-                            >
-                              <svg
-                                class="icon me-2 icon-primary icon-xs"
-                                enable-background="new 0 0 24 24"
-                                role="img"
-                                viewBox="0 0 24 24"
-                                xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>
-                                  icon
-                                </title>
-                                <path
-                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                />
-                              </svg>
-                              <span>
-                                Link lista 6
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                          <svg
+                            class="icon me-2 icon-primary icon-xs"
+                            enable-background="new 0 0 24 24"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              icon
+                            </title>
+                            <path
+                              d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                            />
+                          </svg>
+                          <span>
+                            Link lista 4
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item list-item"
+                          href="#"
+                          role="menuitem"
+                          tabindex="0"
+                        >
+                          <svg
+                            class="icon me-2 icon-primary icon-xs"
+                            enable-background="new 0 0 24 24"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              icon
+                            </title>
+                            <path
+                              d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                            />
+                          </svg>
+                          <span>
+                            Link lista 5
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item list-item"
+                          href="#"
+                          role="menuitem"
+                          tabindex="0"
+                        >
+                          <svg
+                            class="icon me-2 icon-primary icon-xs"
+                            enable-background="new 0 0 24 24"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              icon
+                            </title>
+                            <path
+                              d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                            />
+                          </svg>
+                          <span>
+                            Link lista 6
+                          </span>
+                        </a>
+                      </li>
                     </div>
                     <div
                       class="col-12 col-lg-4"
                     >
-                      <div
-                        class="link-list-wrapper"
-                      >
-                        <ul
-                          class="link-list"
+                      <li>
+                        <a
+                          class="dropdown-item list-item"
+                          href="#"
+                          role="menuitem"
+                          tabindex="0"
                         >
-                          <li>
-                            <a
-                              class="dropdown-item list-item"
-                              href="#"
-                              role="menuitem"
-                              tabindex="0"
-                            >
-                              <svg
-                                class="icon me-2 icon-primary icon-xs"
-                                enable-background="new 0 0 24 24"
-                                role="img"
-                                viewBox="0 0 24 24"
-                                xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>
-                                  icon
-                                </title>
-                                <path
-                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                />
-                              </svg>
-                              <span>
-                                Link lista 7
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item list-item"
-                              href="#"
-                              role="menuitem"
-                              tabindex="0"
-                            >
-                              <svg
-                                class="icon me-2 icon-primary icon-xs"
-                                enable-background="new 0 0 24 24"
-                                role="img"
-                                viewBox="0 0 24 24"
-                                xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>
-                                  icon
-                                </title>
-                                <path
-                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                />
-                              </svg>
-                              <span>
-                                Link lista 8
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item list-item"
-                              href="#"
-                              role="menuitem"
-                              tabindex="0"
-                            >
-                              <svg
-                                class="icon me-2 icon-primary icon-xs"
-                                enable-background="new 0 0 24 24"
-                                role="img"
-                                viewBox="0 0 24 24"
-                                xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>
-                                  icon
-                                </title>
-                                <path
-                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                />
-                              </svg>
-                              <span>
-                                Link lista 9
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                          <svg
+                            class="icon me-2 icon-primary icon-xs"
+                            enable-background="new 0 0 24 24"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              icon
+                            </title>
+                            <path
+                              d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                            />
+                          </svg>
+                          <span>
+                            Link lista 7
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item list-item"
+                          href="#"
+                          role="menuitem"
+                          tabindex="0"
+                        >
+                          <svg
+                            class="icon me-2 icon-primary icon-xs"
+                            enable-background="new 0 0 24 24"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              icon
+                            </title>
+                            <path
+                              d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                            />
+                          </svg>
+                          <span>
+                            Link lista 8
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item list-item"
+                          href="#"
+                          role="menuitem"
+                          tabindex="0"
+                        >
+                          <svg
+                            class="icon me-2 icon-primary icon-xs"
+                            enable-background="new 0 0 24 24"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              icon
+                            </title>
+                            <path
+                              d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                            />
+                          </svg>
+                          <span>
+                            Link lista 9
+                          </span>
+                        </a>
+                      </li>
                     </div>
                   </div>
                   <div
@@ -29742,6 +29900,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
+        theme="dark"
       >
         <div
           class="overlay"
@@ -29761,25 +29920,25 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
           </button>
         </div>
         <div
-          class="menu-wrapper"
+          class="menu-wrapper "
         >
           <ul
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item"
+              class="megamenu dropdown nav-item dropdown nav-item"
             >
               <a
-                aria-haspopup="true"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link"
-                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
                 role="button"
               >
                 <span>
                   Megamenu con Immagine e Descrizione
                 </span>
                 <svg
-                  class="icon icon-expand icon-xs ms-1"
+                  class="icon icon-expand icon-xs ms-1 color"
                   enable-background="new 0 0 24 24"
                   role="img"
                   viewBox="0 0 24 24"
@@ -29795,7 +29954,11 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
                 </svg>
               </a>
               <div
-                class="dropdown-menu"
+                aria-hidden="true"
+                class="dropdown-menu dropdown-menu"
+                data-bs-popper="static"
+                role="menu"
+                tabindex="-1"
               >
                 <div
                   class="megamenu pb-5 pt-3 py-lg-0"
@@ -29871,188 +30034,172 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
                         <div
                           class="col-12 col-lg-6"
                         >
-                          <div
-                            class="link-list-wrapper"
-                          >
-                            <ul
-                              class="link-list"
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
                             >
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 1
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 2
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 3
-                                  </span>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 1
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 2
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 3
+                              </span>
+                            </a>
+                          </li>
                         </div>
                         <div
                           class="col-12 col-lg-6"
                         >
-                          <div
-                            class="link-list-wrapper"
-                          >
-                            <ul
-                              class="link-list"
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
                             >
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 4
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 5
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 6
-                                  </span>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 4
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 5
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 6
+                              </span>
+                            </a>
+                          </li>
                         </div>
                       </div>
                     </div>
@@ -30103,6 +30250,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConIntest
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
+        theme="dark"
       >
         <div
           class="overlay"
@@ -30122,25 +30270,25 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConIntest
           </button>
         </div>
         <div
-          class="menu-wrapper"
+          class="menu-wrapper "
         >
           <ul
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item"
+              class="megamenu dropdown nav-item dropdown nav-item"
             >
               <a
-                aria-haspopup="true"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link"
-                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
                 role="button"
               >
                 <span>
                   Megamenu con intestazione e "esplora tutti"
                 </span>
                 <svg
-                  class="icon icon-expand icon-xs ms-1"
+                  class="icon icon-expand icon-xs ms-1 color"
                   enable-background="new 0 0 24 24"
                   role="img"
                   viewBox="0 0 24 24"
@@ -30156,7 +30304,11 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConIntest
                 </svg>
               </a>
               <div
-                class="dropdown-menu"
+                aria-hidden="true"
+                class="dropdown-menu dropdown-menu"
+                data-bs-popper="static"
+                role="menu"
+                tabindex="-1"
               >
                 <div
                   class="megamenu pb-5 pt-3 py-lg-0"
@@ -30200,281 +30352,257 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConIntest
                         <div
                           class="col-12 col-lg-4"
                         >
-                          <div
-                            class="link-list-wrapper"
-                          >
-                            <ul
-                              class="link-list"
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
                             >
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 1
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 2
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 3
-                                  </span>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 1
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 2
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 3
+                              </span>
+                            </a>
+                          </li>
                         </div>
                         <div
                           class="col-12 col-lg-4"
                         >
-                          <div
-                            class="link-list-wrapper"
-                          >
-                            <ul
-                              class="link-list"
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
                             >
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 4
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 5
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 6
-                                  </span>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 4
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 5
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 6
+                              </span>
+                            </a>
+                          </li>
                         </div>
                         <div
                           class="col-12 col-lg-4"
                         >
-                          <div
-                            class="link-list-wrapper"
-                          >
-                            <ul
-                              class="link-list"
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
                             >
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 7
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 8
-                                  </span>
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item list-item"
-                                  href="#"
-                                  role="menuitem"
-                                  tabindex="0"
-                                >
-                                  <svg
-                                    class="icon me-2 icon-primary icon-xs"
-                                    enable-background="new 0 0 24 24"
-                                    role="img"
-                                    viewBox="0 0 24 24"
-                                    xml:space="preserve"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      icon
-                                    </title>
-                                    <path
-                                      d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                    />
-                                  </svg>
-                                  <span>
-                                    Link lista 9
-                                  </span>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 7
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 8
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item list-item"
+                              href="#"
+                              role="menuitem"
+                              tabindex="0"
+                            >
+                              <svg
+                                class="icon me-2 icon-primary icon-xs"
+                                enable-background="new 0 0 24 24"
+                                role="img"
+                                viewBox="0 0 24 24"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  icon
+                                </title>
+                                <path
+                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                                />
+                              </svg>
+                              <span>
+                                Link lista 9
+                              </span>
+                            </a>
+                          </li>
                         </div>
                       </div>
                     </div>
@@ -30525,6 +30653,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
+        theme="dark"
       >
         <div
           class="overlay"
@@ -30544,25 +30673,25 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
           </button>
         </div>
         <div
-          class="menu-wrapper"
+          class="menu-wrapper "
         >
           <ul
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item"
+              class="megamenu dropdown nav-item dropdown nav-item"
             >
               <a
-                aria-haspopup="true"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link"
-                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
                 role="button"
               >
                 <span>
                   Megamenu con link "Esplora tutti"
                 </span>
                 <svg
-                  class="icon icon-expand icon-xs ms-1"
+                  class="icon icon-expand icon-xs ms-1 color"
                   enable-background="new 0 0 24 24"
                   role="img"
                   viewBox="0 0 24 24"
@@ -30578,7 +30707,11 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
                 </svg>
               </a>
               <div
-                class="dropdown-menu"
+                aria-hidden="true"
+                class="dropdown-menu dropdown-menu"
+                data-bs-popper="static"
+                role="menu"
+                tabindex="-1"
               >
                 <div
                   class="megamenu pb-5 pt-3 py-lg-0"
@@ -30775,95 +30908,87 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
                     <div
                       class="col-12 col-lg-4"
                     >
-                      <div
-                        class="link-list-wrapper"
-                      >
-                        <ul
-                          class="link-list"
+                      <li>
+                        <a
+                          class="dropdown-item list-item"
+                          href="#"
+                          role="menuitem"
+                          tabindex="0"
                         >
-                          <li>
-                            <a
-                              class="dropdown-item list-item"
-                              href="#"
-                              role="menuitem"
-                              tabindex="0"
-                            >
-                              <svg
-                                class="icon me-2 icon-primary icon-xs"
-                                enable-background="new 0 0 24 24"
-                                role="img"
-                                viewBox="0 0 24 24"
-                                xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>
-                                  icon
-                                </title>
-                                <path
-                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                />
-                              </svg>
-                              <span>
-                                Link lista 7
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item list-item"
-                              href="#"
-                              role="menuitem"
-                              tabindex="0"
-                            >
-                              <svg
-                                class="icon me-2 icon-primary icon-xs"
-                                enable-background="new 0 0 24 24"
-                                role="img"
-                                viewBox="0 0 24 24"
-                                xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>
-                                  icon
-                                </title>
-                                <path
-                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                />
-                              </svg>
-                              <span>
-                                Link lista 8
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item list-item"
-                              href="#"
-                              role="menuitem"
-                              tabindex="0"
-                            >
-                              <svg
-                                class="icon me-2 icon-primary icon-xs"
-                                enable-background="new 0 0 24 24"
-                                role="img"
-                                viewBox="0 0 24 24"
-                                xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>
-                                  icon
-                                </title>
-                                <path
-                                  d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
-                                />
-                              </svg>
-                              <span>
-                                Link lista 9
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                          <svg
+                            class="icon me-2 icon-primary icon-xs"
+                            enable-background="new 0 0 24 24"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              icon
+                            </title>
+                            <path
+                              d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                            />
+                          </svg>
+                          <span>
+                            Link lista 7
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item list-item"
+                          href="#"
+                          role="menuitem"
+                          tabindex="0"
+                        >
+                          <svg
+                            class="icon me-2 icon-primary icon-xs"
+                            enable-background="new 0 0 24 24"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              icon
+                            </title>
+                            <path
+                              d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                            />
+                          </svg>
+                          <span>
+                            Link lista 8
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item list-item"
+                          href="#"
+                          role="menuitem"
+                          tabindex="0"
+                        >
+                          <svg
+                            class="icon me-2 icon-primary icon-xs"
+                            enable-background="new 0 0 24 24"
+                            role="img"
+                            viewBox="0 0 24 24"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              icon
+                            </title>
+                            <path
+                              d="M12 14.8V9.2c0-.6.5-1 1-1 .3 0 .5.1.7.3l3.5 3.5-3.5 3.5c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7z"
+                            />
+                          </svg>
+                          <span>
+                            Link lista 9
+                          </span>
+                        </a>
+                      </li>
                     </div>
                   </div>
                   <div
@@ -31260,6 +31385,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
               class="navbar-collapsable collapse navbar-collapsable"
               id="navbarNavB"
               style="display: none;"
+              theme="dark"
             >
               <div
                 class="overlay"
@@ -31674,6 +31800,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
               class="navbar-collapsable collapse navbar-collapsable"
               id="navbarNavA"
               style="display: none;"
+              theme="dark"
             >
               <div
                 class="overlay"
@@ -32088,6 +32215,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
               class="navbar-collapsable collapse navbar-collapsable"
               id="navbarNavB"
               style="display: none;"
+              theme="dark"
             >
               <div
                 class="overlay"
