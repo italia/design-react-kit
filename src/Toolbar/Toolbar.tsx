@@ -1,7 +1,7 @@
-import React, { ElementType, FC, HTMLAttributes, createContext } from 'react';
 import classnames from 'classnames';
+import React, { ElementType, FC, HTMLAttributes, createContext } from 'react';
 
-export const SizeContext = createContext<ToolbarProps['size']>(undefined);
+export const SizeContext = /* @__PURE__ */ createContext<ToolbarProps['size']>(undefined);
 
 export interface ToolbarProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;

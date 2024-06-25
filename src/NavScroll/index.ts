@@ -3,7 +3,7 @@
  * Released under the MIT license by Marco Liberati
  * Code: https://github.com/dej611/react-use-navscroll
  */
-
+/* @internal */
 export type { ChangesType, RegisterOptions, useNavScrollArgs, useNavScrollResult } from './types';
 
 export { useNavScroll } from './useNavScroll';

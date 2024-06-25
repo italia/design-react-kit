@@ -5,7 +5,7 @@ import { NotificationCommonProps } from './types';
 
 export type NotificationProps = Omit<ToastProps, 'transition'> & NotificationCommonProps & NotificationToastProps;
 
-const dummyTransition = cssTransition({ enter: '', exit: '' });
+const dummyTransition = /* @__PURE__ */ cssTransition({ enter: '', exit: '' });
 
 export const Notification: FC<PropsWithChildren<NotificationProps>> = (props) => {
   const { toastRef, eventHandlers } = useToast({

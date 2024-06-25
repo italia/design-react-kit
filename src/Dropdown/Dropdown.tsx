@@ -1,10 +1,11 @@
 import React, { ElementType, FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
-
+import { Dropdown as BSDRopdown } from 'reactstrap';
 export interface DropdownProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
   inNavbar?: boolean;
   textCenter?: boolean;
+  theme?: string;
   /** Classi aggiuntive da usare per il componente Button */
   className?: string;
   testId?: string;
@@ -17,6 +18,7 @@ export const Dropdown: FC<DropdownProps> = ({
   children,
   inNavbar,
   textCenter,
+  theme,
   ...attributes
 }) => {
   const classes = classNames(className, {
@@ -25,11 +27,22 @@ export const Dropdown: FC<DropdownProps> = ({
     'nav-item': inNavbar
   });
 
-  const Tag = tag !== undefined ? tag : 'div';
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Tag className={classes} data-testid={testId} {...attributes}>
+    <BSDRopdown
+      menuRole='menu'
+      color={theme}
+      isOpen={isOpen}
+      toggle={toggle}
+      className={classes}
+      data-testid={testId}
+      {...attributes}
+      inNavbar={inNavbar}
+      nav={inNavbar}
+    >
       {children}
-    </Tag>
+    </BSDRopdown>
   );
 };

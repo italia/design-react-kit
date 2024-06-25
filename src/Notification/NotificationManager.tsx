@@ -5,7 +5,7 @@ import { getBorderStyleFix } from './NotificationContent';
 import { NotificationCommonProps } from './types';
 import { PositionContext } from './usePosition';
 
-const KitTransition = cssTransition({
+const KitTransition = /* @__PURE__ */ cssTransition({
   enter: `d-block`,
   exit: `d-none`,
   appendPosition: false
