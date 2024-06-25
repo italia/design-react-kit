@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, waitFor, within } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 
 import { clearIconCache, Icon, preloadIcons, icons } from '../src';
 import { readFile } from 'fs/promises';
