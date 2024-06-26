@@ -1,3 +1,12 @@
+## [5.0.4](https://github.com/italia/design-react-kit/compare/v5.0.3...v5.0.4) (2024-05-02)
+
+
+### Bug Fixes
+
+* refresh callback declaration fix in useNavScroll ([6a9957e](https://github.com/italia/design-react-kit/commit/6a9957e84964018baf095baeee36558815a92de5))
+
+
+
 ## [5.0.3](https://github.com/italia/design-react-kit/compare/v5.0.2...v5.0.3) (2024-04-11)
 
 
@@ -98,5 +107,4 @@
 ### Features
 
 * numeric input component ([d4a299c](https://github.com/italia/design-react-kit/commit/d4a299cb43ad138352deab45d552bd33a3be3b19))
-
 
