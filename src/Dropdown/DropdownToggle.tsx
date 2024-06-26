@@ -48,7 +48,7 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
   return (
     <BSDropdownToggle
       tag={Tag}
-      data-testId={testId}
+      data-testid={testId}
       role={Tag.valueOf() === 'a' ? 'button' : 'link'}
       className={`${classes} ${colorClass}`}
       nav={inNavbar}

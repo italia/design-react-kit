@@ -97,7 +97,7 @@
     "@storybook/test": "^8.0.5",
     "@svgr/rollup": "^8.1.0",
     "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "12.1.5",
+    "@testing-library/react": "^16",
     "@testing-library/react-hooks": "^8.0.1",
     "@types/is-number": "^7.0.3",
     "@types/jest": "^29.5.12",

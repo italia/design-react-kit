@@ -3,10 +3,8 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { MegamenuItem, MegamenuFooter, MegamenuHighlightColumn, preloadIcons } from '../src';
 
-describe('Megamenu component', () => {
-  // Icons are now async, so preload them to make it behave in an sync way
-  beforeAll(() => preloadIcons(['it-list']));
-});
+// Icons are now async, so preload them to make it behave in an sync way
+beforeAll(() => preloadIcons(['it-list']));
 
 describe('MegamenuItem component', () => {
   it('should work as container for children elements', () => {
