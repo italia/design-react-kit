@@ -38,21 +38,12 @@ export const EsempioInterattivo: Story = {
     },
     size: {
       control: 'select',
-      options: {
-        'Extra small': 'xs',
-        Small: 'sm',
-        default: '',
-        Large: 'lg',
-        'Extra Large': 'xl'
-      }
+      options: ['xs', 'sm', '', 'lg', 'xl']
+
     },
     className: {
       control: 'select',
-      options: {
-        default: '',
-        Scuro: 'bg-dark',
-        Chiaro: 'bg-light'
-      }
+      options: ['', 'bg-dark', 'bg-light']
     },
     color: {
       control: 'select',
