@@ -1,4 +1,4 @@
-import React, { AnchorHTMLAttributes, ElementType, ReactChild } from 'react';
+import React, { AnchorHTMLAttributes, ElementType, ReactNode } from 'react';
 import classNames from 'classnames';
 import { NavbarBrand } from 'reactstrap';
 import { CSSModule } from 'reactstrap/types/lib/utils';
@@ -21,7 +21,7 @@ export interface HeaderBrandProps extends AnchorHTMLAttributes<HTMLAnchorElement
   /** Alt text da utilizzare nell'icona. Utilizzata unicamente quando l'Header è di tipo Center.  */
   iconAlt?: string;
   /** Elementi React da renderizzare al proprio interno. */
-  children: ReactChild | ReactChild[];
+  children: ReactNode | ReactNode[];
   testId?: string;
 }
 

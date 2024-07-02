@@ -1,12 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
-import React, { CSSProperties, ReactChild } from 'react';
-import {
-  Button,
-  NotificationManager,
-  NotificationProps,
-  createNotification,
-  notify
-} from '../../src';
+import React, { CSSProperties, ReactNode } from 'react';
+import { Button, NotificationManager, NotificationProps, createNotification, notify } from '../../src';
 
 const NotificationStyle = {
   right: 'auto',
@@ -16,8 +10,8 @@ const NotificationStyle = {
 };
 
 const meta: Meta<typeof NotificationManager> = {
-  title: "Documentazione/Componenti/Notification",
-  component: NotificationManager,
+  title: 'Documentazione/Componenti/Notification',
+  component: NotificationManager
 };
 
 export default meta;
@@ -32,18 +26,10 @@ interface NotificationDocProps {
   dismissable?: boolean;
   icon?: NotificationProps['icon'];
   style?: CSSProperties | undefined;
-  children?: ReactChild;
+  children?: ReactNode;
 }
 
-const NotificationDoc = ({
-  title,
-  state,
-  fix,
-  dismissable,
-  icon,
-  style,
-  children
-}: NotificationDocProps) => {
+const NotificationDoc = ({ title, state, fix, dismissable, icon, style, children }: NotificationDocProps) => {
   return createNotification(
     title,
     children,
@@ -53,7 +39,7 @@ const NotificationDoc = ({
       icon,
       dismissable
     },
-    () => { },
+    () => {},
     { autoClose: false, style }
   );
 };
@@ -262,12 +248,7 @@ export const _RoundingOfCorners: Story = {
               <strong>top-fix</strong>
             </p>
             <div>
-              <NotificationDoc
-                title='Titolo Notifica'
-                state='success'
-                fix='top'
-                id='notifica-round-corners-top'
-              />
+              <NotificationDoc title='Titolo Notifica' state='success' fix='top' id='notifica-round-corners-top' />
             </div>
             <p className='mt-4'>
               <strong>bottom-fix</strong>
@@ -284,23 +265,13 @@ export const _RoundingOfCorners: Story = {
               <strong>left-fix</strong>
             </p>
             <div>
-              <NotificationDoc
-                title='Titolo Notifica'
-                state='success'
-                fix='left'
-                id='notifica-round-corners-left'
-              />
+              <NotificationDoc title='Titolo Notifica' state='success' fix='left' id='notifica-round-corners-left' />
             </div>
             <p className='mt-4'>
               <strong>right-fix</strong>
             </p>
             <div>
-              <NotificationDoc
-                title='Titolo Notifica'
-                state='success'
-                fix='right'
-                id='notifica-round-corners-right'
-              />
+              <NotificationDoc title='Titolo Notifica' state='success' fix='right' id='notifica-round-corners-right' />
             </div>
           </div>
         </div>
@@ -346,8 +317,7 @@ export const FixedPositions: Story = {
   }
 };
 
-export const NotificationOptionsComponent_Fake = (
-) => {
+export const NotificationOptionsComponent_Fake = () => {
   return null;
 };
 

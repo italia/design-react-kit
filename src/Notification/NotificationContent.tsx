@@ -1,4 +1,4 @@
-import React, { CSSProperties, ReactChild } from 'react';
+import React, { CSSProperties, ReactNode } from 'react';
 import { Button } from '../Button/Button';
 import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
@@ -18,7 +18,7 @@ type NotificationElementProps = {
   closeToast?: () => void;
   toastProps?: any;
   title: string;
-  body?: ReactChild;
+  body?: ReactNode;
   options: NotificationOptions;
 };
 
@@ -113,7 +113,7 @@ function NotificationElement({ closeToast, toastProps, title, body, options }: N
  */
 export const createNotification = (
   title: string,
-  body: ReactChild | undefined,
+  body: ReactNode | undefined,
   options: NotificationOptions,
   closeToast?: () => void,
   toastProps?: any

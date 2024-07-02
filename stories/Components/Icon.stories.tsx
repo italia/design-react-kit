@@ -3,8 +3,8 @@ import React from 'react';
 import { Col, Icon, Row, icons } from '../../src';
 
 const meta: Meta<typeof Icon> = {
-  title: "Documentazione/Utilities/Icon",
-  component: Icon,
+  title: 'Documentazione/Utilities/Icon',
+  component: Icon
 };
 
 export default meta;
@@ -12,14 +12,9 @@ export default meta;
 type Story = StoryObj<typeof Icon>;
 
 export const EsempioInterattivo: Story = {
-  render: ({
-    icon,
-    title,
-    size,
-    padding,
-    className,
-    color
-  }) => (<Icon icon={icon} size={size} title={title} padding={padding} color={color} className={className} />),
+  render: ({ icon, title, size, padding, className, color }) => (
+    <Icon icon={icon} size={size} title={title} padding={padding} color={color} className={className} />
+  ),
   args: {
     icon: 'it-tool',
     title: 'Alt Text',
@@ -78,7 +73,7 @@ export const EsempioPadding: Story = {
     color: '',
     className: 'bg-grey'
   }
-}
+};
 
 export const EsempioColori: Story = {
   render: ({ icon }) => {
@@ -96,7 +91,7 @@ export const EsempioColori: Story = {
   args: {
     icon: 'it-check-circle'
   }
-}
+};
 
 export const EsempioAllineamento: Story = {
   render: () => {
@@ -108,7 +103,7 @@ export const EsempioAllineamento: Story = {
       </div>
     );
   }
-}
+};
 
 export const ListaIcone: Story = {
   render: () => {
@@ -116,13 +111,14 @@ export const ListaIcone: Story = {
       <Row>
         {icons.map((icon) => (
           <Col md={{ size: 6 }} lg={{ size: 4 }} key={icon}>
-            <Icon icon={icon} />&nbsp;{icon}
+            <Icon icon={icon} />
+            &nbsp;{icon}
           </Col>
         ))}
       </Row>
     );
   }
-}
+};
 
 export const EsempioLoghiEsterni = {
   render: () => {
@@ -138,4 +134,4 @@ export const EsempioLoghiEsterni = {
       </div>
     );
   }
-}
+};

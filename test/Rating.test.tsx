@@ -1,10 +1,10 @@
-import "@testing-library/jest-dom";
-import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
+import { render, fireEvent, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
-import { Rating, preloadIcons } from '../src';
-import { isCustomLegendObject } from '../src/Rating/Rating';
 import * as Utils from '../src/utils';
+import { isCustomLegendObject } from '../src/Rating/Rating';
+import { Rating, preloadIcons } from '../src';
 
 jest.mock('./../src/utils', () => {
   const utilModule = jest.requireActual('./../src/utils');
@@ -124,13 +124,13 @@ describe('Rating', () => {
 
   describe('isCustomLegendObject', () => {
     it('Should return true', () => {
-      expect(isCustomLegendObject({ content: true })).toBeTruthy();
+      expect(isCustomLegendObject({ content: true, srOnly: true })).toBeTruthy();
     });
 
     it('Should return false', () => {
       expect(isCustomLegendObject(null)).toBeFalsy();
       expect(isCustomLegendObject('null')).toBeFalsy();
-      expect(isCustomLegendObject({ notContent: true })).toBeFalsy();
+      expect(isCustomLegendObject(<></>)).toBeFalsy();
     });
   });
 

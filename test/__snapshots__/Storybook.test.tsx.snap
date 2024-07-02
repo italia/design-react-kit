@@ -22211,7 +22211,6 @@ exports[`Stories Snapshots Documentazione/Form/Input _InputAutocompleteConDatiAc
           role="status"
         />
       </div>
-      
       <input
         aria-activedescendant="false"
         aria-autocomplete="list"

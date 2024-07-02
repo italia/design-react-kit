@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import React, { CSSProperties, ReactNode } from 'react';
 import { cssTransition, useToastContainer } from 'react-toastify';
 import { Notification } from './Notification';
 import { getBorderStyleFix } from './NotificationContent';
@@ -52,7 +52,7 @@ export const NotificationManager = (props: NotificationManagerProps) => {
                 isIn={isToastActive(toastProps.toastId)}
                 key={`notification-${toastProps.key}`}
               >
-                {content}
+                {content as ReactNode}
               </Notification>
             );
           });

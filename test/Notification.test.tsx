@@ -1,6 +1,6 @@
-import "@testing-library/jest-dom";
-import { act, fireEvent, Matcher, render, screen, waitFor, waitForElementToBeRemoved } from '@testing-library/react';
 import React from 'react';
+import { act, fireEvent, Matcher, render, screen, waitFor, waitForElementToBeRemoved } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import { NotificationId, NotificationManager, notify, preloadIcons } from '../src';
 
@@ -170,7 +170,7 @@ describe('Notifications', () => {
       expect(onClose).toHaveBeenCalled();
     });
 
-    describe('local overrides', () => { });
+    describe('local overrides', () => {});
   });
 
   describe('Notification content', () => {
@@ -219,6 +219,6 @@ describe('Notifications', () => {
       await expect(screen.findAllByRole('img')).rejects.toThrowError();
     });
 
-    it('should apply a state styling and relative icon when set', () => { });
+    it('should apply a state styling and relative icon when set', () => {});
   });
 });
