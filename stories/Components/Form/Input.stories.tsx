@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 // @ts-ignore per il momento questo modulo non ha types
 import Autocomplete from "accessible-autocomplete/react"; // Reference to https://www.npmjs.com/package/accessible-autocomplete
 import React, { useState } from "react";
-import { FormGroup, Icon, Input, TextArea } from "../../../src";
+import { Button, FormGroup, Icon, Input, TextArea } from "../../../src";
 
 const meta: Meta<typeof Input> = {
     title: "Documentazione/Form/Input",
@@ -44,107 +44,37 @@ export const UtilizzoDiPlaceholderELabel: Story = {
     )
 };
 
-const InputConIconaOBottoniHooks = () => {
-    const [isFocused1, toggleFocus1] = useState(false);
-    const [isFocused2, toggleFocus2] = useState(false);
-    const [isFocused3, toggleFocus3] = useState(false);
-
-    const toggleFocusLabel1 = () => toggleFocus1(true);
-    // @ts-ignore: ignore types for now
-    const toggleBlurLabel1 = (e) => {
-        if (e.target.value === "") {
-            toggleFocus1(!isFocused1);
-        }
-    };
-    const toggleFocusLabel2 = () => toggleFocus2(true);
-    // @ts-ignore: ignore types for now
-    const toggleBlurLabel2 = (e) => {
-        if (e.target.value === "") {
-            toggleFocus2(!isFocused2);
-        }
-    };
-    const toggleFocusLabel3 = () => toggleFocus3(true);
-    // @ts-ignore: ignore types for no}w
-    const toggleBlurLabel3 = (e) => {
-        if (e.target.value === "") {
-            toggleFocus3(!isFocused3);
-        }
-    };
-    return (
-        <div>
-            <div className="form-group">
-                <div className="input-group">
-                    <span className="input-group-text">
-                        <Icon icon="it-pencil" aria-hidden size="sm" />
-                    </span>
-                    <label htmlFor="input-group-1" className={isFocused1 ? "active" : ""}>
-                        Con Etichetta
-                    </label>
-                    <input
-                        type="text"
-                        className={isFocused1 ? "form-control focus--mouse" : "form-control"}
-                        onFocus={toggleFocusLabel1}
-                        onBlur={toggleBlurLabel1}
-                        id="input-group-1"
-                        name="input-group-1"
-                    />
-                </div>
-            </div>
-            <div className="form-group">
-                <div className="input-group">
-                    <span className="input-group-text">
-                        <Icon icon="it-pencil" color="danger" aria-hidden size="sm" />
-                    </span>
-                    <label htmlFor="input-group-2" className="active">
-                        Con Etichetta e placeholder
-                    </label>
-                    <input
-                        type="text"
-                        className={isFocused2 ? "form-control focus--mouse" : "form-control"}
-                        onFocus={toggleFocusLabel2}
-                        onBlur={toggleBlurLabel2}
-                        id="input-group-2"
-                        name="input-group-2"
-                        placeholder="Lorem Ipsum"
-                    />
-                </div>
-            </div>
-            <div className="form-group">
-                <div className="input-group">
-                    <span className="input-group-text">
-                        <Icon icon="it-pencil" color="primary" aria-hidden size="sm" />
-                    </span>
-                    <label htmlFor="input-group-3" className={isFocused3 ? "active" : ""}>
-                        Con Etichetta e bottone di tipo primary
-                    </label>
-                    <input
-                        type="text"
-                        className={isFocused3 ? "form-control focus--mouse" : "form-control"}
-                        onFocus={toggleFocusLabel3}
-                        onBlur={toggleBlurLabel3}
-                        id="input-group-3"
-                        name="input-group-3"
-                    />
-                    <div className="input-group-append">
-                        <button className="btn btn-primary" type="button" id="button-3">
-                            Invio
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-};
-
 export const InputConIconaOBottoni: Story = {
     render: () => {
-        return <InputConIconaOBottoniHooks />
-    },
-    parameters: {
-        docs: {
-            canvas: { sourceState: "none" },
-        },
-    },
+        return (
+            <>
+                <Input
+                    id='exampleInputIcon'
+                    label='Campo di tipo testuale'
+                    type='text'
+                    hasIconLeft
+                    iconLeft={<Icon icon='it-pencil' aria-hidden size='sm' />}
+                />
+                <Input
+                    id='exampleInputIconDanger'
+                    label='Con etichetta e placeholder'
+                    placeholder='Lorem Ipsum'
+                    type='text'
+                    hasIconLeft
+                    iconLeft={<Icon icon='it-pencil' aria-hidden color='danger' size='sm' />}
+                />
+                <Input
+                    id='exampleInputButton'
+                    label='Con etichetta e bottone di tipo primary'
+                    type='text'
+                    hasIconLeft
+                    iconLeft={<Icon icon='it-pencil' color='primary' aria-hidden size='sm' />}
+                    hasButtonRight
+                    buttonRight={<Button color='primary'>Invio</Button>}
+                />
+            </>
+        )
+    }
 }
 
 

@@ -22428,137 +22428,145 @@ exports[`Stories Snapshots Documentazione/Form/Input EsempiDiCampiDiInput 1`] = 
 
 exports[`Stories Snapshots Documentazione/Form/Input InputConIconaOBottoni 1`] = `
 <div>
-  <div>
+  <div
+    class="form-group"
+  >
     <div
-      class="form-group"
+      class="input-group"
     >
-      <div
-        class="input-group"
+      <span
+        class="input-group-text"
       >
-        <span
-          class="input-group-text"
+        <svg
+          aria-hidden="true"
+          class="icon icon-sm"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="icon icon-sm"
-            enable-background="new 0 0 24 24"
-            role="img"
-            viewBox="0 0 24 24"
-            xml:space="preserve"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>
-              icon
-            </title>
-            <path
-              d="M20.5 3.5c-.5-.6-1.3-.9-2.1-.9s-1.6.3-2.2.9L4.6 15.2l-1 5.2 5.2-1L20.5 7.8c1.2-1.2 1.2-3.1 0-4.3zm-5.7 2.8.7-.7 2.9 2.9-.7.7-2.9-2.9zm-.7.8 1.1 1-8.4 8.4-1.1-1.1 8.4-8.3zM5.7 18.3c-.1-.2-.4-.3-.6-.3l.3-1.5 2.1 2.1-1.5.3c0-.2-.1-.5-.3-.6zm2.9 0-1.1-1.1 8.4-8.4 1 1.1-8.3 8.4zM19.8 7.1l-.7.7-2.9-2.9.7-.7c.4-.4.9-.6 1.5-.6.5 0 1 .2 1.4.6.8.8.8 2.1 0 2.9z"
-            />
-          </svg>
-        </span>
-        <label
-          class=""
-          for="input-group-1"
-        >
-          Con Etichetta
-        </label>
-        <input
-          class="form-control"
-          id="input-group-1"
-          name="input-group-1"
-          type="text"
-        />
-      </div>
+          <title>
+            icon
+          </title>
+          <path
+            d="M20.5 3.5c-.5-.6-1.3-.9-2.1-.9s-1.6.3-2.2.9L4.6 15.2l-1 5.2 5.2-1L20.5 7.8c1.2-1.2 1.2-3.1 0-4.3zm-5.7 2.8.7-.7 2.9 2.9-.7.7-2.9-2.9zm-.7.8 1.1 1-8.4 8.4-1.1-1.1 8.4-8.3zM5.7 18.3c-.1-.2-.4-.3-.6-.3l.3-1.5 2.1 2.1-1.5.3c0-.2-.1-.5-.3-.6zm2.9 0-1.1-1.1 8.4-8.4 1 1.1-8.3 8.4zM19.8 7.1l-.7.7-2.9-2.9.7-.7c.4-.4.9-.6 1.5-.6.5 0 1 .2 1.4.6.8.8.8 2.1 0 2.9z"
+          />
+        </svg>
+      </span>
+      <label
+        class=" "
+        for="exampleInputIcon"
+      >
+        Campo di tipo testuale
+      </label>
+      <input
+        aria-describedby="exampleInputIconDescription"
+        class="form-control"
+        id="exampleInputIcon"
+        type="text"
+        value=""
+      />
+      <div
+        class="form-text"
+      />
     </div>
+  </div>
+  <div
+    class="form-group"
+  >
     <div
-      class="form-group"
+      class="input-group"
     >
-      <div
-        class="input-group"
+      <span
+        class="input-group-text"
       >
-        <span
-          class="input-group-text"
+        <svg
+          aria-hidden="true"
+          class="icon icon-danger icon-sm"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="icon icon-danger icon-sm"
-            enable-background="new 0 0 24 24"
-            role="img"
-            viewBox="0 0 24 24"
-            xml:space="preserve"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>
-              icon
-            </title>
-            <path
-              d="M20.5 3.5c-.5-.6-1.3-.9-2.1-.9s-1.6.3-2.2.9L4.6 15.2l-1 5.2 5.2-1L20.5 7.8c1.2-1.2 1.2-3.1 0-4.3zm-5.7 2.8.7-.7 2.9 2.9-.7.7-2.9-2.9zm-.7.8 1.1 1-8.4 8.4-1.1-1.1 8.4-8.3zM5.7 18.3c-.1-.2-.4-.3-.6-.3l.3-1.5 2.1 2.1-1.5.3c0-.2-.1-.5-.3-.6zm2.9 0-1.1-1.1 8.4-8.4 1 1.1-8.3 8.4zM19.8 7.1l-.7.7-2.9-2.9.7-.7c.4-.4.9-.6 1.5-.6.5 0 1 .2 1.4.6.8.8.8 2.1 0 2.9z"
-            />
-          </svg>
-        </span>
-        <label
-          class="active"
-          for="input-group-2"
-        >
-          Con Etichetta e placeholder
-        </label>
-        <input
-          class="form-control"
-          id="input-group-2"
-          name="input-group-2"
-          placeholder="Lorem Ipsum"
-          type="text"
-        />
-      </div>
+          <title>
+            icon
+          </title>
+          <path
+            d="M20.5 3.5c-.5-.6-1.3-.9-2.1-.9s-1.6.3-2.2.9L4.6 15.2l-1 5.2 5.2-1L20.5 7.8c1.2-1.2 1.2-3.1 0-4.3zm-5.7 2.8.7-.7 2.9 2.9-.7.7-2.9-2.9zm-.7.8 1.1 1-8.4 8.4-1.1-1.1 8.4-8.3zM5.7 18.3c-.1-.2-.4-.3-.6-.3l.3-1.5 2.1 2.1-1.5.3c0-.2-.1-.5-.3-.6zm2.9 0-1.1-1.1 8.4-8.4 1 1.1-8.3 8.4zM19.8 7.1l-.7.7-2.9-2.9.7-.7c.4-.4.9-.6 1.5-.6.5 0 1 .2 1.4.6.8.8.8 2.1 0 2.9z"
+          />
+        </svg>
+      </span>
+      <label
+        class="active "
+        for="exampleInputIconDanger"
+      >
+        Con etichetta e placeholder
+      </label>
+      <input
+        aria-describedby="exampleInputIconDangerDescription"
+        class="form-control"
+        id="exampleInputIconDanger"
+        placeholder="Lorem Ipsum"
+        type="text"
+        value=""
+      />
+      <div
+        class="form-text"
+      />
     </div>
+  </div>
+  <div
+    class="form-group"
+  >
     <div
-      class="form-group"
+      class="input-group"
     >
-      <div
-        class="input-group"
+      <span
+        class="input-group-text"
       >
-        <span
-          class="input-group-text"
+        <svg
+          aria-hidden="true"
+          class="icon icon-primary icon-sm"
+          enable-background="new 0 0 24 24"
+          role="img"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="icon icon-primary icon-sm"
-            enable-background="new 0 0 24 24"
-            role="img"
-            viewBox="0 0 24 24"
-            xml:space="preserve"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>
-              icon
-            </title>
-            <path
-              d="M20.5 3.5c-.5-.6-1.3-.9-2.1-.9s-1.6.3-2.2.9L4.6 15.2l-1 5.2 5.2-1L20.5 7.8c1.2-1.2 1.2-3.1 0-4.3zm-5.7 2.8.7-.7 2.9 2.9-.7.7-2.9-2.9zm-.7.8 1.1 1-8.4 8.4-1.1-1.1 8.4-8.3zM5.7 18.3c-.1-.2-.4-.3-.6-.3l.3-1.5 2.1 2.1-1.5.3c0-.2-.1-.5-.3-.6zm2.9 0-1.1-1.1 8.4-8.4 1 1.1-8.3 8.4zM19.8 7.1l-.7.7-2.9-2.9.7-.7c.4-.4.9-.6 1.5-.6.5 0 1 .2 1.4.6.8.8.8 2.1 0 2.9z"
-            />
-          </svg>
-        </span>
-        <label
-          class=""
-          for="input-group-3"
+          <title>
+            icon
+          </title>
+          <path
+            d="M20.5 3.5c-.5-.6-1.3-.9-2.1-.9s-1.6.3-2.2.9L4.6 15.2l-1 5.2 5.2-1L20.5 7.8c1.2-1.2 1.2-3.1 0-4.3zm-5.7 2.8.7-.7 2.9 2.9-.7.7-2.9-2.9zm-.7.8 1.1 1-8.4 8.4-1.1-1.1 8.4-8.3zM5.7 18.3c-.1-.2-.4-.3-.6-.3l.3-1.5 2.1 2.1-1.5.3c0-.2-.1-.5-.3-.6zm2.9 0-1.1-1.1 8.4-8.4 1 1.1-8.3 8.4zM19.8 7.1l-.7.7-2.9-2.9.7-.7c.4-.4.9-.6 1.5-.6.5 0 1 .2 1.4.6.8.8.8 2.1 0 2.9z"
+          />
+        </svg>
+      </span>
+      <label
+        class=" "
+        for="exampleInputButton"
+      >
+        Con etichetta e bottone di tipo primary
+      </label>
+      <input
+        aria-describedby="exampleInputButtonDescription"
+        class="form-control"
+        id="exampleInputButton"
+        type="text"
+        value=""
+      />
+      <div
+        class="form-text"
+      />
+      <div
+        class="input-group-append"
+      >
+        <button
+          class="btn btn-primary"
         >
-          Con Etichetta e bottone di tipo primary
-        </label>
-        <input
-          class="form-control"
-          id="input-group-3"
-          name="input-group-3"
-          type="text"
-        />
-        <div
-          class="input-group-append"
-        >
-          <button
-            class="btn btn-primary"
-            id="button-3"
-            type="button"
-          >
-            Invio
-          </button>
-        </div>
+          Invio
+        </button>
       </div>
     </div>
   </div>
