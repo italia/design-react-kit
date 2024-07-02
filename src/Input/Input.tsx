@@ -307,9 +307,9 @@ export const Input = ({
             'input-group': true,
             'input-number': true,
             disabled: rest.disabled,
-            'input-number-percentage': type == 'percentage',
-            'input-number-currency': type == 'currency',
-            'input-number-adaptive': type == 'adaptive'
+            'input-number-percentage': type === 'percentage',
+            'input-number-currency': type === 'currency',
+            'input-number-adaptive': type === 'adaptive'
           })}
           style={{ width }}
           ref={divResizeRef}
