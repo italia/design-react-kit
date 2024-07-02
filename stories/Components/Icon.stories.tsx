@@ -39,7 +39,6 @@ export const EsempioInterattivo: Story = {
     size: {
       control: 'select',
       options: ['xs', 'sm', '', 'lg', 'xl']
-
     },
     className: {
       control: 'select',
