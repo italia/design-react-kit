@@ -1,21 +1,21 @@
-import React, {
-  InputHTMLAttributes,
-  ElementType,
-  Ref,
-  ReactNode,
-  useCallback,
-  useState,
-  useRef,
-  useEffect
-} from 'react';
 import isNumber from 'is-number';
+import React, {
+  ElementType,
+  InputHTMLAttributes,
+  ReactNode,
+  Ref,
+  useCallback,
+  useEffect,
+  useRef,
+  useState
+} from 'react';
 
-import { InputContainer } from './InputContainer';
-import { Icon } from '../Icon/Icon';
-import { getTag, getFormControlClass, getClasses, getValidationTextControlClass, useFocus } from './utils';
-import type { CSSModule } from 'reactstrap/types/lib/utils';
-import { notifyDeprecation } from '../utils';
 import classNames from 'classnames';
+import type { CSSModule } from 'reactstrap/types/lib/utils';
+import { Icon } from '../Icon/Icon';
+import { notifyDeprecation } from '../utils';
+import { InputContainer } from './InputContainer';
+import { getClasses, getFormControlClass, getTag, getValidationTextControlClass, useFocus } from './utils';
 
 // taken from reactstrap types
 type InputType =
@@ -101,6 +101,14 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   static?: boolean;
   /** Quando attivo rimuove il componente contenitore dell'Input. Utile per un controllo maggiore dello styling */
   noWrapper?: boolean;
+  /** Indica che il componente ha un bottone a destra rispetto all'input */
+  hasButtonRight?: boolean;
+  /** Componente per il bottone */
+  buttonRight?: ReactNode;
+  /** Indica che il componente ha una icona a sinistra rispetto all'input */
+  hasIconLeft?: boolean;
+  /** Componente per l'icona */
+  iconLeft?: ReactNode;
   testId?: string;
 }
 
@@ -128,6 +136,10 @@ export const Input = ({
   size,
   testId,
   noWrapper = false,
+  hasButtonRight,
+  buttonRight,
+  hasIconLeft,
+  iconLeft,
   ...attributes
 }: InputProps) => {
   const [isHidden, setHidden] = useState(true);
@@ -249,7 +261,11 @@ export const Input = ({
     label,
     validationTextClass,
     validationText,
-    wrapperClass
+    wrapperClass,
+    hasButtonRight,
+    buttonRight,
+    hasIconLeft,
+    iconLeft
   };
 
   if (noWrapper) {

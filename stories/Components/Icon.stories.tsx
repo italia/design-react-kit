@@ -37,7 +37,7 @@ export const EsempioInterattivo: Story = {
     },
     className: {
       control: 'select',
-      options: ['bg-grey', 'bg-dark', 'bg-light']
+      options: ['', 'bg-dark', 'bg-light']
     },
     color: {
       control: 'select',
