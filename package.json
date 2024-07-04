@@ -47,7 +47,7 @@
     "url": "git+https://github.com/italia/design-react-kit.git"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=20"
   },
   "scripts": {
     "start": "NODE_OPTIONS=--max_old_space_size=16384 npm run storybook:serve",
