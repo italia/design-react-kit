@@ -1,4 +1,5 @@
-import { Canvas, Meta } from '@storybook/blocks';
+import { ArgTypes, Canvas, Meta } from '@storybook/blocks';
+import { List, ListItem } from '../../src';
 import * as ListStories from '../Components/List.stories';
 
 <Meta of={ListStories} />
@@ -62,3 +63,13 @@ Ad ogni lista si può aggiungere un campo testuale metadata, come nell’esempio
 Per il testo aggiuntivo, utilizzare il tag `<em>` all’interno dell’elemento `.text`.
 
 <Canvas of={ListStories.ListaTestoAzioniMultipleMetadata} />
+
+## Argomenti componente
+
+### List
+
+<ArgTypes of={List} />
+
+### ListItem
+
+<ArgTypes of={ListItem} />
