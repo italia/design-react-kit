@@ -76,6 +76,7 @@ export const ListaFreccia: Story = {
     </List>
   )
 };
+
 export const ListaAzioniMultiple: Story = {
   render: () => (
     <List>
@@ -93,8 +94,8 @@ export const ListaAzioniMultiple: Story = {
           </a>
         </ListItem.MultipleAction>
       </ListItem>
-      <ListItem tag={'a'} >
-        <span className="text">Link</span>
+      <ListItem>
+        <a href="#"><span className="text">Link</span></a>
         <ListItem.MultipleAction>
           <a href="#" aria-label="Testo - Azione ">
             <Icon icon="it-code-circle" />
@@ -107,8 +108,8 @@ export const ListaAzioniMultiple: Story = {
           </a>
         </ListItem.MultipleAction>
       </ListItem>
-      <ListItem active tag={'a'}>
-        <span className="text">Link attivo</span>
+      <ListItem active>
+        <a href="#"><span className="text">Link attivo</span></a>
         <ListItem.MultipleAction>
           <a href="#" aria-label="Testo - Azione ">
             <Icon icon="it-code-circle" />
@@ -122,7 +123,16 @@ export const ListaAzioniMultiple: Story = {
         </ListItem.MultipleAction>
       </ListItem>
     </List>
-  )
+  ),
+  parameters: {
+    docs: {
+      /**
+       * Sostituisco nel sorgente MultipleAction con ListItem.MultipleAction
+       * altrimenti non si capisce da dove si importa
+       */
+      source: { transform: (code: string) => code.replaceAll('MultipleAction', 'ListItem.MultipleAction') },
+    },
+  },
 };
 
 export const ListaMetadata: Story = {
@@ -136,20 +146,20 @@ export const ListaMetadata: Story = {
         <span className="text">Testo 2</span>
         <span className="metadata"><a href="#">metadata link</a></span>
       </ListItem>
-      <ListItem tag={'a'} {...args}>
-        <span className="text">Link</span>
+      <ListItem {...args}>
+        <a href="#"><span className="text">Link</span></a>
         <span className="metadata">metadata testo</span>
       </ListItem>
-      <ListItem tag={'a'} {...args}>
-        <span className="text">Link 2</span>
+      <ListItem {...args}>
+        <a href="#"><span className="text">Link 2</span></a>
         <span className="metadata"><a href="#">metadata link</a></span>
       </ListItem>
       <ListItem active tag={'a'} {...args}>
         <span className="text">Link attivo</span>
         <span className="metadata">metadata testo</span>
       </ListItem>
-      <ListItem active tag={'a'} {...args}>
-        <span className="text">Link attivo</span>
+      <ListItem active {...args}>
+        <a href="#"><span className="text">Link attivo</span></a>
         <span className="metadata"><a href="#">metadata link</a></span>
       </ListItem>
     </List>
@@ -157,4 +167,80 @@ export const ListaMetadata: Story = {
   args: {
     avatar: <img src="https://randomuser.me/api/portraits/women/41.jpg" alt="Anna Barbieri" />
   }
+};
+
+export const ListaTestoAzioniMultipleMetadata: Story = {
+  render: () => (
+    <List>
+      <ListItem >
+        <span className="text">Testo<em>Lorem ipsum dolor sit amet.</em></span>
+        <ListItem.MultipleAction>
+          <span className="metadata">metadata testo</span>
+          <a href="#" aria-label="Testo - Azione ">
+            <Icon icon="it-code-circle" />
+          </a>
+          <a href="#" aria-label="Testo - Azione ">
+            <Icon icon="it-code-circle" />
+          </a>
+          <a href="#" aria-label="Testo - Azione ">
+            <Icon icon="it-code-circle" />
+          </a>
+        </ListItem.MultipleAction>
+      </ListItem>
+      <ListItem >
+        <span className="text">Testo 2<em>Lorem ipsum dolor sit amet.</em></span>
+        <ListItem.MultipleAction>
+          <span className="metadata"><a href="#">metadata link</a></span>
+          <a href="#" aria-label="Testo - Azione ">
+            <Icon icon="it-code-circle" />
+          </a>
+          <a href="#" aria-label="Testo - Azione ">
+            <Icon icon="it-code-circle" />
+          </a>
+          <a href="#" aria-label="Testo - Azione ">
+            <Icon icon="it-code-circle" />
+          </a>
+        </ListItem.MultipleAction>
+      </ListItem>
+      <ListItem >
+        <a href="#"><span className="text">Link<em>Lorem ipsum dolor sit amet.</em></span></a>
+        <ListItem.MultipleAction>
+          <span className="metadata"><a href="#">metadata link</a></span>
+          <a href="#" aria-label="Testo - Azione ">
+            <Icon icon="it-code-circle" />
+          </a>
+          <a href="#" aria-label="Testo - Azione ">
+            <Icon icon="it-code-circle" />
+          </a>
+          <a href="#" aria-label="Testo - Azione ">
+            <Icon icon="it-code-circle" />
+          </a>
+        </ListItem.MultipleAction>
+      </ListItem>
+      <ListItem active>
+        <a href="#"><span className="text">Link attivo<em>Lorem ipsum dolor sit amet.</em></span></a>
+        <ListItem.MultipleAction>
+          <span className="metadata">metadata testo</span>
+          <a href="#" aria-label="Testo - Azione ">
+            <Icon icon="it-code-circle" />
+          </a>
+          <a href="#" aria-label="Testo - Azione ">
+            <Icon icon="it-code-circle" />
+          </a>
+          <a href="#" aria-label="Testo - Azione ">
+            <Icon icon="it-code-circle" />
+          </a>
+        </ListItem.MultipleAction>
+      </ListItem>
+    </List>
+  ),
+  parameters: {
+    docs: {
+      /**
+       * Sostituisco nel sorgente MultipleAction con ListItem.MultipleAction
+       * altrimenti non si capisce da dove si importa
+       */
+      source: { transform: (code: string) => code.replaceAll('MultipleAction', 'ListItem.MultipleAction') },
+    },
+  },
 };
