@@ -1,21 +1,9 @@
 import classNames from 'classnames';
-import React, { AnchorHTMLAttributes, ElementType, FC, MouseEvent, MouseEventHandler, ReactNode } from 'react';
+import React, { AnchorHTMLAttributes, ElementType, FC, ReactNode } from 'react';
 
 export interface ListItemProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   /** Indica se l'elemento è attivo o no */
   active?: boolean;
-  /** Indica se l'elemento è disabilitato o no */
-  disabled?: boolean;
-  /** Indica se l'elemento ha dimensioni larghe o no */
-  large?: boolean;
-  /** Indica se l'elemento è bold o no */
-  bold?: boolean;
-  /** Indica se l'elemento è un titolo. */
-  header?: boolean;
-  /** Indica se l'elemento è un divisore */
-  divider?: boolean;
-  /** Indica se l'elemento è in un dropdown */
-  inDropdown?: boolean;
   /** Indica se l'elemento ha un avatar */
   avatar?: ReactNode;
   /** Indica se l'elemento ha una icona */
@@ -35,73 +23,40 @@ export interface ListItemProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   testId?: string;
 }
 
-const handleDisabledOnClick = (e: MouseEvent<HTMLAnchorElement>) => {
-  e.preventDefault();
-};
-
 export const ListItem: FC<ListItemProps> & {
   MultipleAction: typeof MultipleAction;
 } = ({
   className,
   active,
-  disabled,
-  header,
-  divider,
-  bold,
-  large,
   avatar,
   icon,
   img,
   href,
   tag = 'div',
+  to,
   wrapperClassName,
   testId,
   children,
-  inDropdown,
   ...attributes
 }) => {
     let Tag = tag;
     const classes = classNames(
       className,
-      {
-        active,
-        disabled,
-        header,
-        divider,
-        large: large,
-        medium: bold,
-        'dropdown-item': inDropdown
-      },
+      { active },
       'list-item'
     );
 
-    // Prevent click event when disabled.
-    const handlers: { onClick?: MouseEventHandler<HTMLAnchorElement> } = {},
-      classesItem = classNames(className, {
-        'it-rounded-icon': icon,
-        'avatar size-lg': avatar,
-        'it-thumb': img
-      });
-    if (disabled) {
-      handlers.onClick = handleDisabledOnClick;
-    }
+    const classesItem = classNames(className, {
+      'it-rounded-icon': icon,
+      'avatar size-lg': avatar,
+      'it-thumb': img
+    });
 
-    if (header) {
-      Tag = 'h3';
-    } else if (divider) {
-      Tag = 'span';
-    }
-
-    if (inDropdown) {
-      attributes['role'] = 'menuitem';
-      attributes['tabIndex'] = 0;
-    }
-
-    if (header && href) {
+    if (href) {
       return (
         <li className={wrapperClassName} data-testid={testId}>
           <Tag>
-            <a href={href || '#'} {...attributes} className={classes} {...handlers}>
+            <a href={href || '#'} {...attributes} className={classes}>
               {children}
             </a>
           </Tag>
@@ -112,11 +67,11 @@ export const ListItem: FC<ListItemProps> & {
     return (
       <li className={wrapperClassName} data-testid={testId}>
         <Tag
-          role={attributes.onClick ? 'button' : undefined}
+          role='button'
           {...attributes}
           className={classes}
           href={href}
-          {...handlers}
+          to={to}
         >
           {(icon || avatar || img) && <div className={classesItem}>{icon || avatar || img}</div>}
           <div className="it-right-zone">{children}</div>
