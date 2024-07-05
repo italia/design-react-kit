@@ -44,13 +44,13 @@ export const ListItem: FC<ListItemProps> & {
       className,
       { active },
       'list-item'
-    );
-
-    const classesItem = classNames(className, {
-      'it-rounded-icon': icon,
-      'avatar size-lg': avatar,
-      'it-thumb': img
-    });
+    ),
+      classesItem = classNames(className, {
+        'it-rounded-icon': icon,
+        'avatar size-lg': avatar,
+        'it-thumb': img
+      }),
+      leftItem = icon || avatar || img;
 
     if (href) {
       return (
@@ -73,7 +73,7 @@ export const ListItem: FC<ListItemProps> & {
           href={href}
           to={to}
         >
-          {(icon || avatar || img) && <div className={classesItem}>{icon || avatar || img}</div>}
+          {leftItem && <div className={classesItem}>{leftItem}</div>}
           <div className="it-right-zone">{children}</div>
         </Tag>
       </li>
