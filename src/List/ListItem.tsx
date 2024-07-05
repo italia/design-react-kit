@@ -67,7 +67,6 @@ export const ListItem: FC<ListItemProps> & {
     return (
       <li className={wrapperClassName} data-testid={testId}>
         <Tag
-          role='button'
           {...attributes}
           className={classes}
           href={href}
