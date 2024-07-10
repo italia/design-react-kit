@@ -16,7 +16,7 @@ import {
 } from "../../../src";
 
 const meta: Meta<typeof LinkList> = {
-  title: "Documentazione/Organizzare i contenuti/Liste",
+  title: "Documentazione/Organizzare i contenuti/Liste di link",
   component: LinkList
 };
 

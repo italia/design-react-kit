@@ -1,0 +1,75 @@
+import { ArgTypes, Canvas, Meta } from '@storybook/blocks';
+import { List, ListItem } from '../../src';
+import * as ListStories from '../Components/List.stories';
+
+<Meta of={ListStories} />
+
+# Liste
+
+#### La lista è un componente flessibile per la visualizzazione di liste con testo, link o elementi correlati.
+
+## Tipologie di lista
+
+Le liste, costituite da tag `<ul>` con classe `.it-list` all’interno di un wrapper con classe `.it-list-wrapper`, possono contenere testi, link, icone, avatar, immagini o una combinazione di questi elementi.
+
+### Lista semplice solo testo
+
+<Canvas of={ListStories.ListaSemplice} />
+
+### Lista con avatar
+
+L’elemento `.avatar` precede l’elemento `.it-right-zone` che contiene il testo.
+
+<Canvas of={ListStories.ListaAvatar} />
+
+### Lista con icona
+
+L’elemento `.it-rounded-icon` con all’interno la relativa icona, precede l’elemento `.it-right-zone` che contiene il testo.
+
+<Canvas of={ListStories.ListaIcona} />
+
+### Lista con immagine
+
+L’elemento `.it-thumb` con all’interno la relativa immagine, precede l’elemento `.it-right-zone` che contiene il testo.
+
+<Canvas of={ListStories.ListaImmagine} />
+
+## Lista con azioni
+
+Le liste con azioni hanno al loro interno icone o elementi interattivi da associare ad azioni specifiche decise in base alle esigenze.
+
+### Con freccia
+
+L’elemento `.icon` con all’interno la relativa icona segue l’elemento `.text` che contiene il testo.
+
+<Canvas of={ListStories.ListaFreccia} />
+
+### Con azioni multiple
+
+L’elemento `.it-multiple `con all’interno le relative icone, segue l’elemento `.text`.
+
+<Canvas of={ListStories.ListaAzioniMultiple} />
+
+## Altre variazioni
+
+### Con metadata
+
+Ad ogni lista si può aggiungere un campo testuale metadata, come nell’esempio seguente. L’elemento `.metadata`, segue l’elemento `.text`.
+
+<Canvas of={ListStories.ListaMetadata} />
+
+### Con testo aggiuntivo, azioni multiple e metadata
+
+Per il testo aggiuntivo, utilizzare il tag `<em>` all’interno dell’elemento `.text`.
+
+<Canvas of={ListStories.ListaTestoAzioniMultipleMetadata} />
+
+## Argomenti componente
+
+### List
+
+<ArgTypes of={List} />
+
+### ListItem
+
+<ArgTypes of={ListItem} />
