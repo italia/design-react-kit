@@ -33024,526 +33024,338 @@ exports[`Stories Snapshots Documentazione/Organizzare gli spazi/Griglie TuttiIBr
 </div>
 `;
 
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste _Esempi 1`] = `
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaAvatar 1`] = `
 <div>
   <div
-    class="link-list-wrapper"
+    class="it-list-wrapper"
   >
     <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 1
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 2
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 3
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste _StatoAttivo 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 1
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="active list-item"
-        >
-          <span>
-            Link list 2 active
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 3
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste _StatoDisabilitato 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 1
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="disabled list-item"
-        >
-          <span>
-            Link list 2 disabled
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 3
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste CollapseExample 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="icon-right large medium list-item"
-          role="button"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 1 
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon right icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <div
-        class="collapse"
-      >
-        <ul
-          class="link-sublist"
-        >
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 4 
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 5 
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 6 
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <li>
-        <a
-          class="icon-right large medium list-item"
-          role="button"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 2 
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon right icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <div
-        class="collapse"
-      >
-        <ul
-          class="link-sublist"
-        >
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 7 
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 8 
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 9 
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <li>
-        <a
-          class="icon-right large medium list-item"
-          role="button"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 3 
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon right icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <div
-        class="collapse"
-      >
-        <ul
-          class="link-sublist"
-        >
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 10 
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 11 
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 12 
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ConAvatar 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="active list-item"
-        >
-          <img
-            alt="avataralt"
-            class="avatar lg-size"
-            src="http://via.placeholder.com/40x40"
-            title="avatartitle"
-          />
-          <span>
-            Link list 1 active 
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <img
-            alt="avataralt"
-            class="avatar lg-size"
-            src="http://via.placeholder.com/40x40"
-            title="avatartitle"
-          />
-          <span>
-            Link list 2 
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="disabled list-item"
-        >
-          <img
-            alt="avataralt"
-            class="avatar lg-size"
-            src="http://via.placeholder.com/40x40"
-            title="avatartitle"
-          />
-          <span>
-            Link list 3 disabled 
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ConCheckbox 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
+      class="it-list"
     >
       <li>
         <div
+          class="list-item"
+        >
+          <div
+            class="avatar size-lg"
+          >
+            <img
+              alt="Anna Barbieri"
+              src="https://randomuser.me/api/portraits/women/41.jpg"
+            />
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Testo
+            </span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <div
+            class="avatar size-lg"
+          >
+            <img
+              alt="Anna Barbieri"
+              src="https://randomuser.me/api/portraits/women/41.jpg"
+            />
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Link
+            </span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
           class="active list-item"
         >
           <div
-            class="form-check-group form-check"
+            class="avatar size-lg"
           >
-            <input
-              aria-describedby="checkbox1Description"
-              checked=""
-              class="form-control"
-              id="checkbox1"
-              type="checkbox"
-              value=""
+            <img
+              alt="Anna Barbieri"
+              src="https://randomuser.me/api/portraits/women/41.jpg"
             />
-            <label
-              class="form-check-label"
-              for="checkbox1"
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
             >
-              Checkbox selezionato
-            </label>
+              Link attivo
+            </span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaAzioniMultiple 1`] = `
+<div>
+  <div
+    class="it-list-wrapper"
+  >
+    <ul
+      class="it-list"
+    >
+      <li>
+        <div
+          class="list-item"
+        >
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Testo
+            </span>
+            <span
+              class="it-multiple"
+            >
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+            </span>
           </div>
         </div>
       </li>
       <li>
         <div
-          class="active list-item"
+          class="list-item"
         >
           <div
-            class="form-check-group form-check"
+            class="it-right-zone"
           >
-            <input
-              aria-describedby="checkbox2Description"
-              class="form-control"
-              id="checkbox2"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="form-check-label"
-              for="checkbox2"
+            <a
+              href="#"
             >
-              Checkbox non selezionato
-            </label>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div
-          class="disabled list-item"
-        >
-          <div
-            class="form-check-group form-check"
-          >
-            <input
-              aria-describedby="checkbox3Description"
-              class="form-control"
-              disabled=""
-              id="checkbox3"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="form-check-label"
-              for="checkbox3"
-            >
-              Checkbox disabilitato non selezionato
-            </label>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ConSwitch 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <div
-          class="active list-item"
-        >
-          <div
-            class="toggles"
-          >
-            <label
-              class="form-check-label"
-            >
-              Label per toggle
-              <input
-                class="form-check-input"
-                type="checkbox"
-              />
               <span
-                class="lever"
-              />
-            </label>
+                class="text"
+              >
+                Link
+              </span>
+            </a>
+            <span
+              class="it-multiple"
+            >
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+            </span>
           </div>
         </div>
       </li>
       <li>
         <div
-          class="disabled list-item"
+          class="active list-item"
         >
           <div
-            class="toggles"
+            class="it-right-zone"
           >
-            <label
-              class="form-check-label"
+            <a
+              href="#"
             >
-              Label per disabled toggle
-              <input
-                class="form-check-input"
-                disabled=""
-                type="checkbox"
-              />
               <span
-                class="lever"
-              />
-            </label>
+                class="text"
+              >
+                Link attivo
+              </span>
+            </a>
+            <span
+              class="it-multiple"
+            >
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+            </span>
           </div>
         </div>
       </li>
@@ -33552,865 +33364,942 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ConSwitc
 </div>
 `;
 
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ControlliComponent 1`] = `
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaFreccia 1`] = `
 <div>
   <div
-    class="link-list-wrapper"
+    class="it-list-wrapper"
   >
     <ul
-      class="link-list"
+      class="it-list"
     >
       <li>
-        <a
-          class="icon-left active list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-            <span>
-              Link list 1 active
-            </span>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="icon-left list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-            <span>
-              Link list 2
-            </span>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="icon-left disabled list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-            <span>
-              Link list 3 disabled
-            </span>
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ControlliSecondariComponent 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="icon-right active list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 1 active
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="icon-right list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 2
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="icon-right disabled list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 3 disabled
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste EsempioMultiline 1`] = `
-<div>
-  <div
-    class="link-list-wrapper multiline"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="icon-right active list-item"
-          href="#"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 1 active
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-          </p>
-        </a>
-      </li>
-      <li>
-        <span
-          class="divider list-item"
-        />
-      </li>
-      <li>
-        <a
-          class="icon-right list-item"
-          href="#"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 2
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-          </p>
-        </a>
-      </li>
-      <li>
-        <span
-          class="divider list-item"
-        />
-      </li>
-      <li>
-        <a
-          class="icon-right disabled list-item"
-          href="#"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 3 disabled
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-          </p>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste HeaderEDividerConLink 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <div
-      class="link-list-heading"
-    >
-      <a
-        href="#"
-      >
-        Intestazione con link
-      </a>
-    </div>
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 1
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 2
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 3
-          </span>
-        </a>
-      </li>
-      <li>
-        <span
-          class="divider list-item"
-        />
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 4
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste HeaderEDividerNoLink 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <div
-      class="link-list-heading"
-    >
-      Intestazione senza link
-    </div>
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 1
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 2
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 3
-          </span>
-        </a>
-      </li>
-      <li>
-        <span
-          class="divider list-item"
-        />
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 4
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste NavigationComponentFixed 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="icon-right large medium list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 1 
-            </span>
-            <svg
-              class="icon right icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="icon-right large medium list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 2 
-            </span>
-            <svg
-              class="icon right icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <ul
-        class="link-sublist"
-      >
-        <li>
-          <a
-            class="list-item"
-          >
-            <span>
-              Link list 4 
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="list-item"
-          >
-            <span>
-              Link list 5 
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="list-item"
-          >
-            <span>
-              Link list 6 
-            </span>
-          </a>
-        </li>
-      </ul>
-      <li>
-        <a
-          class="icon-right large medium list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 3 
-            </span>
-            <svg
-              class="icon right icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste PrimaryESecondaryAction 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="icon-left active list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-            <span>
-              Link list 1 active
-            </span>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="icon-left list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-            <span>
-              Link list 2
-            </span>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="icon-left disabled list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>
-                icon
-              </title>
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-            <span>
-              Link list 3 disabled
-            </span>
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste Sizing 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <div
-      class="link-list-heading"
-    >
-      Intestazione senza link
-    </div>
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="large list-item"
-          href="#"
-        >
-          <span>
-            Link list 1
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="large list-item"
-          href="#"
-        >
-          <span>
-            Link list 2
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="large list-item"
-          href="#"
-        >
-          <span>
-            Link list 3
-          </span>
-        </a>
-      </li>
-      <li>
-        <span
-          class="divider list-item"
-        />
-      </li>
-      <li>
-        <a
-          class="large list-item"
-          href="#"
-        >
-          <span>
-            Link list 4
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste TitoloLista 1`] = `
-<div>
-  <div
-    class="sticky-wrapper navbar-wrapper"
-  >
-    <nav
-      class="it-navscroll-wrapper it-top-navscroll navbar navbar-expand-lg"
-    >
-      <div
-        class="container-fluid"
-      >
         <div
-          class="menu-wrapper"
+          class="list-item"
         >
           <div
-            class="link-list-wrapper menu-link-list"
+            class="it-right-zone"
           >
-            <h3>
-              Indice della pagina
-            </h3>
-            <ul
-              class="link-list"
+            <span
+              class="text"
             >
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#cos-e"
-                >
-                  <span>
-                    Cos'è
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#luogo"
-                >
-                  <span>
-                    Luogo
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#date-e-orari"
-                >
-                  <span>
-                    Date e orari
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#costi"
-                >
-                  <span>
-                    Costi
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#documenti"
-                >
-                  <span>
-                    Documenti
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#contatti"
-                >
-                  <span>
-                    Contatti
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#appuntamenti"
-                >
-                  <span>
-                    Appuntamenti
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#ulteriori-informazioni"
-                >
-                  <span>
-                    Ulteriori informazioni
-                  </span>
-                </a>
-              </li>
-            </ul>
+              Testo
+            </span>
+            <svg
+              class="icon"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
           </div>
         </div>
-      </div>
-    </nav>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Link
+            </span>
+            <svg
+              class="icon"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          class="active list-item"
+        >
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Link attivo
+            </span>
+            <svg
+              class="icon"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaIcona 1`] = `
+<div>
+  <div
+    class="it-list-wrapper"
+  >
+    <ul
+      class="it-list"
+    >
+      <li>
+        <div
+          class="list-item"
+        >
+          <div
+            class="it-rounded-icon"
+          >
+            <svg
+              class="icon"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="M20 6h-8l-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm1 12c.1.5-.3.9-.8 1H4c-.5.1-.9-.3-1-.8V6c-.1-.5.3-.9.8-1h5.8l1.7 1.7.3.3H20c.5-.1.9.3 1 .8V18zM4 8h16v1H4V8z"
+              />
+            </svg>
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Testo
+            </span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <div
+            class="it-rounded-icon"
+          >
+            <svg
+              class="icon"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="M20 6h-8l-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm1 12c.1.5-.3.9-.8 1H4c-.5.1-.9-.3-1-.8V6c-.1-.5.3-.9.8-1h5.8l1.7 1.7.3.3H20c.5-.1.9.3 1 .8V18zM4 8h16v1H4V8z"
+              />
+            </svg>
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Link
+            </span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          class="active list-item"
+        >
+          <div
+            class="it-rounded-icon"
+          >
+            <svg
+              class="icon"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="M20 6h-8l-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm1 12c.1.5-.3.9-.8 1H4c-.5.1-.9-.3-1-.8V6c-.1-.5.3-.9.8-1h5.8l1.7 1.7.3.3H20c.5-.1.9.3 1 .8V18zM4 8h16v1H4V8z"
+              />
+            </svg>
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Link attivo
+            </span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaImmagine 1`] = `
+<div>
+  <div
+    class="it-list-wrapper"
+  >
+    <ul
+      class="it-list"
+    >
+      <li>
+        <div
+          class="list-item"
+        >
+          <div
+            class="it-thumb"
+          >
+            <img
+              alt="descrizione immagine"
+              src="https://placehold.jp/40x40.png"
+            />
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Testo
+            </span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <div
+            class="it-thumb"
+          >
+            <img
+              alt="descrizione immagine"
+              src="https://placehold.jp/40x40.png"
+            />
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Link
+            </span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          class="active list-item"
+        >
+          <div
+            class="it-thumb"
+          >
+            <img
+              alt="descrizione immagine"
+              src="https://placehold.jp/40x40.png"
+            />
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Link attivo
+            </span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaMetadata 1`] = `
+<div>
+  <div
+    class="it-list-wrapper"
+  >
+    <ul
+      class="it-list"
+    >
+      <li>
+        <div
+          class="list-item"
+        >
+          <div
+            class="avatar size-lg"
+          >
+            <img
+              alt="Anna Barbieri"
+              src="https://randomuser.me/api/portraits/women/41.jpg"
+            />
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Testo
+            </span>
+            <span
+              class="metadata"
+            >
+              metadata testo
+            </span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="list-item"
+        >
+          <div
+            class="avatar size-lg"
+          >
+            <img
+              alt="Anna Barbieri"
+              src="https://randomuser.me/api/portraits/women/41.jpg"
+            />
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Testo 2
+            </span>
+            <span
+              class="metadata"
+            >
+              <a
+                href="#"
+              >
+                metadata link
+              </a>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="list-item"
+        >
+          <div
+            class="avatar size-lg"
+          >
+            <img
+              alt="Anna Barbieri"
+              src="https://randomuser.me/api/portraits/women/41.jpg"
+            />
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <a
+              href="#"
+            >
+              <span
+                class="text"
+              >
+                Link
+              </span>
+            </a>
+            <span
+              class="metadata"
+            >
+              metadata testo
+            </span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="list-item"
+        >
+          <div
+            class="avatar size-lg"
+          >
+            <img
+              alt="Anna Barbieri"
+              src="https://randomuser.me/api/portraits/women/41.jpg"
+            />
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <a
+              href="#"
+            >
+              <span
+                class="text"
+              >
+                Link 2
+              </span>
+            </a>
+            <span
+              class="metadata"
+            >
+              <a
+                href="#"
+              >
+                metadata link
+              </a>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a
+          class="active list-item"
+        >
+          <div
+            class="avatar size-lg"
+          >
+            <img
+              alt="Anna Barbieri"
+              src="https://randomuser.me/api/portraits/women/41.jpg"
+            />
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Link attivo
+            </span>
+            <span
+              class="metadata"
+            >
+              metadata testo
+            </span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <div
+          class="active list-item"
+        >
+          <div
+            class="avatar size-lg"
+          >
+            <img
+              alt="Anna Barbieri"
+              src="https://randomuser.me/api/portraits/women/41.jpg"
+            />
+          </div>
+          <div
+            class="it-right-zone"
+          >
+            <a
+              href="#"
+            >
+              <span
+                class="text"
+              >
+                Link attivo
+              </span>
+            </a>
+            <span
+              class="metadata"
+            >
+              <a
+                href="#"
+              >
+                metadata link
+              </a>
+            </span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaSemplice 1`] = `
+<div>
+  <div
+    class="it-list-wrapper"
+  >
+    <ul
+      class="it-list"
+    >
+      <li>
+        <div
+          class="list-item"
+        >
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Testo
+            </span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Link
+            </span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          class="active list-item"
+        >
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Link attivo
+            </span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTestoAzioniMultipleMetadata 1`] = `
+<div>
+  <div
+    class="it-list-wrapper"
+  >
+    <ul
+      class="it-list"
+    >
+      <li>
+        <div
+          class="list-item"
+        >
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Testo
+              <em>
+                Lorem ipsum dolor sit amet.
+              </em>
+            </span>
+            <span
+              class="it-multiple"
+            >
+              <span
+                class="metadata"
+              >
+                metadata testo
+              </span>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="list-item"
+        >
+          <div
+            class="it-right-zone"
+          >
+            <span
+              class="text"
+            >
+              Testo 2
+              <em>
+                Lorem ipsum dolor sit amet.
+              </em>
+            </span>
+            <span
+              class="it-multiple"
+            >
+              <span
+                class="metadata"
+              >
+                <a
+                  href="#"
+                >
+                  metadata link
+                </a>
+              </span>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="list-item"
+        >
+          <div
+            class="it-right-zone"
+          >
+            <a
+              href="#"
+            >
+              <span
+                class="text"
+              >
+                Link
+                <em>
+                  Lorem ipsum dolor sit amet.
+                </em>
+              </span>
+            </a>
+            <span
+              class="it-multiple"
+            >
+              <span
+                class="metadata"
+              >
+                <a
+                  href="#"
+                >
+                  metadata link
+                </a>
+              </span>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="active list-item"
+        >
+          <div
+            class="it-right-zone"
+          >
+            <a
+              href="#"
+            >
+              <span
+                class="text"
+              >
+                Link attivo
+                <em>
+                  Lorem ipsum dolor sit amet.
+                </em>
+              </span>
+            </a>
+            <span
+              class="it-multiple"
+            >
+              <span
+                class="metadata"
+              >
+                metadata testo
+              </span>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+              <a
+                aria-label="Testo - Azione "
+                href="#"
+              >
+                <svg
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    icon
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  />
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
 </div>
 `;
@@ -35956,6 +35845,1397 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
         </div>
       </div>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link _Esempi 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 1
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 2
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 3
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link _StatoAttivo 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 1
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="active list-item"
+        >
+          <span>
+            Link list 2 active
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 3
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link _StatoDisabilitato 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 1
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="disabled list-item"
+        >
+          <span>
+            Link list 2 disabled
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 3
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link CollapseExample 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="icon-right large medium list-item"
+          role="button"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 1 
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon right icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <div
+        class="collapse"
+      >
+        <ul
+          class="link-sublist"
+        >
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 4 
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 5 
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 6 
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <li>
+        <a
+          class="icon-right large medium list-item"
+          role="button"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 2 
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon right icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <div
+        class="collapse"
+      >
+        <ul
+          class="link-sublist"
+        >
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 7 
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 8 
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 9 
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <li>
+        <a
+          class="icon-right large medium list-item"
+          role="button"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 3 
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon right icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <div
+        class="collapse"
+      >
+        <ul
+          class="link-sublist"
+        >
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 10 
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 11 
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 12 
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link ConAvatar 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="active list-item"
+        >
+          <img
+            alt="avataralt"
+            class="avatar lg-size"
+            src="http://via.placeholder.com/40x40"
+            title="avatartitle"
+          />
+          <span>
+            Link list 1 active 
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <img
+            alt="avataralt"
+            class="avatar lg-size"
+            src="http://via.placeholder.com/40x40"
+            title="avatartitle"
+          />
+          <span>
+            Link list 2 
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="disabled list-item"
+        >
+          <img
+            alt="avataralt"
+            class="avatar lg-size"
+            src="http://via.placeholder.com/40x40"
+            title="avatartitle"
+          />
+          <span>
+            Link list 3 disabled 
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link ConCheckbox 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <div
+          class="active list-item"
+        >
+          <div
+            class="form-check-group form-check"
+          >
+            <input
+              aria-describedby="checkbox1Description"
+              checked=""
+              class="form-control"
+              id="checkbox1"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox1"
+            >
+              Checkbox selezionato
+            </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="active list-item"
+        >
+          <div
+            class="form-check-group form-check"
+          >
+            <input
+              aria-describedby="checkbox2Description"
+              class="form-control"
+              id="checkbox2"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox2"
+            >
+              Checkbox non selezionato
+            </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="disabled list-item"
+        >
+          <div
+            class="form-check-group form-check"
+          >
+            <input
+              aria-describedby="checkbox3Description"
+              class="form-control"
+              disabled=""
+              id="checkbox3"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox3"
+            >
+              Checkbox disabilitato non selezionato
+            </label>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link ConSwitch 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <div
+          class="active list-item"
+        >
+          <div
+            class="toggles"
+          >
+            <label
+              class="form-check-label"
+            >
+              Label per toggle
+              <input
+                class="form-check-input"
+                type="checkbox"
+              />
+              <span
+                class="lever"
+              />
+            </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="disabled list-item"
+        >
+          <div
+            class="toggles"
+          >
+            <label
+              class="form-check-label"
+            >
+              Label per disabled toggle
+              <input
+                class="form-check-input"
+                disabled=""
+                type="checkbox"
+              />
+              <span
+                class="lever"
+              />
+            </label>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link ControlliComponent 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="icon-left active list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
+            <span>
+              Link list 1 active
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="icon-left list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
+            <span>
+              Link list 2
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="icon-left disabled list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
+            <span>
+              Link list 3 disabled
+            </span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link ControlliSecondariComponent 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="icon-right active list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 1 active
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="icon-right list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 2
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="icon-right disabled list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 3 disabled
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link EsempioMultiline 1`] = `
+<div>
+  <div
+    class="link-list-wrapper multiline"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="icon-right active list-item"
+          href="#"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 1 active
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
+          </span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+          </p>
+        </a>
+      </li>
+      <li>
+        <span
+          class="divider list-item"
+        />
+      </li>
+      <li>
+        <a
+          class="icon-right list-item"
+          href="#"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 2
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
+          </span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+          </p>
+        </a>
+      </li>
+      <li>
+        <span
+          class="divider list-item"
+        />
+      </li>
+      <li>
+        <a
+          class="icon-right disabled list-item"
+          href="#"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 3 disabled
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
+          </span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+          </p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link HeaderEDividerConLink 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <div
+      class="link-list-heading"
+    >
+      <a
+        href="#"
+      >
+        Intestazione con link
+      </a>
+    </div>
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 1
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 2
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 3
+          </span>
+        </a>
+      </li>
+      <li>
+        <span
+          class="divider list-item"
+        />
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 4
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link HeaderEDividerNoLink 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <div
+      class="link-list-heading"
+    >
+      Intestazione senza link
+    </div>
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 1
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 2
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 3
+          </span>
+        </a>
+      </li>
+      <li>
+        <span
+          class="divider list-item"
+        />
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 4
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link NavigationComponentFixed 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="icon-right large medium list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 1 
+            </span>
+            <svg
+              class="icon right icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="icon-right large medium list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 2 
+            </span>
+            <svg
+              class="icon right icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <ul
+        class="link-sublist"
+      >
+        <li>
+          <a
+            class="list-item"
+          >
+            <span>
+              Link list 4 
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="list-item"
+          >
+            <span>
+              Link list 5 
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="list-item"
+          >
+            <span>
+              Link list 6 
+            </span>
+          </a>
+        </li>
+      </ul>
+      <li>
+        <a
+          class="icon-right large medium list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 3 
+            </span>
+            <svg
+              class="icon right icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link PrimaryESecondaryAction 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="icon-left active list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+            <span>
+              Link list 1 active
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="icon-left list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+            <span>
+              Link list 2
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="icon-left disabled list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                icon
+              </title>
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+            <span>
+              Link list 3 disabled
+            </span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link Sizing 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <div
+      class="link-list-heading"
+    >
+      Intestazione senza link
+    </div>
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="large list-item"
+          href="#"
+        >
+          <span>
+            Link list 1
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="large list-item"
+          href="#"
+        >
+          <span>
+            Link list 2
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="large list-item"
+          href="#"
+        >
+          <span>
+            Link list 3
+          </span>
+        </a>
+      </li>
+      <li>
+        <span
+          class="divider list-item"
+        />
+      </li>
+      <li>
+        <a
+          class="large list-item"
+          href="#"
+        >
+          <span>
+            Link list 4
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link TitoloLista 1`] = `
+<div>
+  <div
+    class="sticky-wrapper navbar-wrapper"
+  >
+    <nav
+      class="it-navscroll-wrapper it-top-navscroll navbar navbar-expand-lg"
+    >
+      <div
+        class="container-fluid"
+      >
+        <div
+          class="menu-wrapper"
+        >
+          <div
+            class="link-list-wrapper menu-link-list"
+          >
+            <h3>
+              Indice della pagina
+            </h3>
+            <ul
+              class="link-list"
+            >
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#cos-e"
+                >
+                  <span>
+                    Cos'è
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#luogo"
+                >
+                  <span>
+                    Luogo
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#date-e-orari"
+                >
+                  <span>
+                    Date e orari
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#costi"
+                >
+                  <span>
+                    Costi
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#documenti"
+                >
+                  <span>
+                    Documenti
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#contatti"
+                >
+                  <span>
+                    Contatti
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#appuntamenti"
+                >
+                  <span>
+                    Appuntamenti
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#ulteriori-informazioni"
+                >
+                  <span>
+                    Ulteriori informazioni
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
 </div>
 `;
