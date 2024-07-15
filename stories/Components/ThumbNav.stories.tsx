@@ -4,7 +4,7 @@ import React from 'react';
 import { ThumbNav, ThumbNavItem, ThumbNavProps } from '../../src';
 
 const meta: Meta<typeof ThumbNav> = {
-  title: "Documentazione/Componenti/ThumbNav",
+  title: "Documentazione/Menu di navigazione/ThumbNav",
   component: ThumbNav
 };
 
