@@ -5,6 +5,13 @@ import { BottomNav, BottomNavItem } from "../../src";
 const meta: Meta<typeof BottomNav> = {
     title: "Documentazione/Menu di navigazione/BottomNav",
     component: BottomNav,
+    parameters: {
+        docs: {
+            story: {
+                height: '150px'
+            },
+        }
+    }
 };
 
 export default meta;
