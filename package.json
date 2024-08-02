@@ -47,7 +47,7 @@
     "url": "git+https://github.com/italia/design-react-kit.git"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=20"
   },
   "scripts": {
     "start": "NODE_OPTIONS=--max_old_space_size=16384 npm run storybook:serve",
@@ -76,15 +76,8 @@
     "./{src,stories,test}/**/*.{js,ts,tsx,jsx,mdx}": "yarn lint:staged"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.20",
-    "@babel/helper-remap-async-to-generator": "^7.18.9",
-    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@babel/preset-react": "^7.24.1",
-    "@chromatic-com/storybook": "^1.2.25",
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
-    "@rollup/plugin-url": "^8.0.2",
     "@storybook/addon-a11y": "^8.0.5",
     "@storybook/addon-docs": "^8.0.5",
     "@storybook/addon-essentials": "^8.0.5",
@@ -95,18 +88,14 @@
     "@storybook/react": "^8.0.5",
     "@storybook/react-vite": "^8.0.5",
     "@storybook/test": "^8.0.5",
-    "@svgr/rollup": "^8.1.0",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^16",
-    "@testing-library/react-hooks": "^8.0.1",
     "@types/is-number": "^7.0.3",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.2",
     "@types/react": "^18.2.75",
     "@types/react-dom": "^18.2.24",
     "@types/react-transition-group": "^4.4.10",
-    "babel-plugin-dynamic-import-node": "^2.3.3",
-    "babel-plugin-polyfill-corejs3": "^0.10.4",
     "bootstrap-italia": "^2.8.8",
     "browserslist-config-design-italia": "^1.0.0",
     "eslint": "^8.57.0",
