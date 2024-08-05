@@ -1,3 +1,17 @@
+# [5.2.0](https://github.com/italia/design-react-kit/compare/v5.1.0...v5.2.0) (2024-08-05)
+
+
+### Bug Fixes
+
+* thumbnav is a navigation component ([501417e](https://github.com/italia/design-react-kit/commit/501417eda9006de9ea1931d7809aed33125fd90f))
+
+
+### Features
+
+* add list component ([e4c9e14](https://github.com/italia/design-react-kit/commit/e4c9e14f6295343bce7262665fa54ba4085cad30))
+
+
+
 # [5.1.0](https://github.com/italia/design-react-kit/compare/v5.0.4...v5.1.0) (2024-07-02)
 
 
