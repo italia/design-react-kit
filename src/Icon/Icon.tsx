@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React, { FC, ImgHTMLAttributes, SVGProps, useEffect, useState } from 'react';
 import { EmptyIcon } from './EmptyIcon';
-import { IconName, allIcons, isBundledIcon, loadIcon } from './assets/index';
+import { IconName, SVGRProps, allIcons, isBundledIcon, loadIcon } from './assets/index';
 export type { IconName } from './assets';
 
 export const iconsList = allIcons;
@@ -59,11 +59,6 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
   onIconLoad?: () => void;
   /** Id da utilizzare in caso di testing */
   testId?: string;
-}
-
-interface SVGRProps {
-  title?: string;
-  titleId?: string;
 }
 
 export const Icon: FC<IconProps> = ({
