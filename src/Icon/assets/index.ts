@@ -694,3 +694,8 @@ export function isBundledIcon(name: string): name is IconName {
 }
 
 export const allIcons = Object.keys(iconList);
+
+export interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}

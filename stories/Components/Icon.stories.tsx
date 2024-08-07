@@ -124,8 +124,8 @@ export const EsempioLoghiEsterni = {
   render: () => {
     return (
       <div style={{ lineHeight: '4em' }}>
-        <Icon icon='https://upload.wikimedia.org/wikipedia/it/f/f5/Palermo-Stemma_uff.png' title='Stemma Palermo' />
-        <Icon icon='https://dati.comune.roma.it/catalog/img/Roma-Stemma.png' size='lg' title='Stemma Roma' />
+        <Icon icon='https://upload.wikimedia.org/wikipedia/commons/1/12/Palermo-Stemma_%281999%29.svg' title='Stemma Palermo' />
+        <Icon icon='https://upload.wikimedia.org/wikipedia/commons/3/31/Roma-Stemma-2.svg' size='lg' title='Stemma Roma' />
         <Icon
           icon='https://upload.wikimedia.org/wikipedia/commons/9/93/CoA_Citt%C3%A0_di_Milano.svg'
           size='xl'
