@@ -1,5 +1,5 @@
-import { ArgTypes, Canvas, Meta } from '@storybook/blocks';
-import { Dimmer } from '../../src';
+import { ArgTypes, Canvas, Controls, Meta } from '@storybook/blocks';
+import { Dimmer, DimmerButtons } from '../../src';
 import * as DimmerStories from '../Components/Dimmer.stories';
 
 <Meta of={DimmerStories} />
@@ -8,19 +8,14 @@ import * as DimmerStories from '../Components/Dimmer.stories';
 
 ## Un componente per focalizzare l’attenzione su un contenuto
 
-Un Dimmer occupa tutta l’altezza e la larghezza dell’elemento all’interno del quale è contenuto.
+Un Dimmer occupa tutta l’altezza e la larghezza dell’elemento all’interno del quale è contenuto, l’elemento contenitore deve avere la classe `.dimmable`
 
-### Esempio
+### Esempio interattivo
 
-Il componente `Dimmer` può contenere del testo, che può essere preceduto da un'icona, come da esempio:
+Il componente `Dimmer` può contenere del testo, può essere preceduto da un'icona e può avere diversi colori; puoi eseguire delle prove con i controlli sotto al canvas.
 
 <Canvas of={DimmerStories.Esempi} />
-
-#### Colore primario
-
-Impostando l'attributo `color="primary"` si ottiene una versione con sfondo di colore primario.
-
-<Canvas of={DimmerStories.ColorePrimario} />
+<Controls of={DimmerStories.Esempi} />
 
 ### Dimmer con Azioni
 
@@ -28,7 +23,7 @@ Un Dimmer può contenere tasti collegati ad azioni ed un titolo descrittivo.
 
 <Canvas of={DimmerStories.DimmerConAzioni} />
 
-#### Colore primario
+#### Colore primario con azioni
 
 Impostando l'attributo `color="primary"` si ottiene una versione con sfondo di colore primario.
 
@@ -36,6 +31,10 @@ Impostando l'attributo `color="primary"` si ottiene una versione con sfondo di c
 
 ## Argomenti componente
 
-## Dimmer
+### Dimmer
 
 <ArgTypes of={Dimmer} />
+
+### DimmerButton
+
+<ArgTypes of={DimmerButtons} />
