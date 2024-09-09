@@ -1,11 +1,10 @@
-/* eslint jsx-a11y/anchor-is-valid: 0 */
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import { Button, Col, Container, Form, Icon, Input, Label, LinkList, LinkListItem, Row } from '../../src';
 
 //Non esiste un componente specifico per cui uso Container come riferimento per la storia
 const meta: Meta<typeof Container> = {
-  title: "Documentazione/Menu di navigazione/Footer",
+  title: 'Documentazione/Menu di navigazione/Footer',
   component: Container,
   args: {
     townName: 'Nome del Comune',

@@ -17,6 +17,7 @@ const defaultFonts = [
 export function useFontLoader({ fonts }: FontLoaderProps) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
       const WebFont = require('webfontloader');
       WebFont.load({
         custom: {

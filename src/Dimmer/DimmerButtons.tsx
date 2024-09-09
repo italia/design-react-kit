@@ -1,9 +1,7 @@
-import React, { FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
+import React, { FC, HTMLAttributes } from 'react';
 
 export interface DimmerButtonsProps extends HTMLAttributes<HTMLElement> {
-  /** Le varianti di colore definite in Bootstrap Italia per il componente Dimmer */
-  color?: 'primary' | string;
   /** Classi aggiuntive da usare per il componente Dimmer */
   className?: string;
   /** Da utilizzare in presenza di un singolo bottone: quando abilitato ne centra il contenuto. */
@@ -16,7 +14,6 @@ export interface DimmerButtonsProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const DimmerButtons: FC<DimmerButtonsProps> = ({
-  color,
   className,
   single = false,
   dark = true,
