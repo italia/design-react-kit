@@ -75,6 +75,7 @@
     "./{src,stories,test}/**/*.{js,ts,tsx,jsx,mdx}": "yarn lint"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.24.7",
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
     "@eslint/js": "^9.10.0",
