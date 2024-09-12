@@ -4,7 +4,6 @@
  * Code: https://github.com/dej611/react-use-navscroll
  */
 
-/* eslint-disable no-restricted-globals */
 import { useCallback, useEffect, useState } from 'react';
 import { debounce } from './debounce';
 import { useNavScrollArgs } from './types';

@@ -1,5 +1,5 @@
 import React, { CSSProperties, FC, PropsWithChildren, useEffect } from 'react';
-import { ToastProps, useToast, cssTransition } from 'react-toastify';
+import { cssTransition, ToastProps, useToast } from 'react-toastify';
 import { NotificationToastProps } from './NotificationContent';
 import { NotificationCommonProps } from './types';
 
@@ -20,7 +20,6 @@ export const Notification: FC<PropsWithChildren<NotificationProps>> = (props) =>
 
   useEffect(() => {
     if (!isIn) deleteToast();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isIn]);
 
   useEffect(() => {

@@ -39,7 +39,7 @@ export const ListItem: FC<ListItemProps> & {
   children,
   ...attributes
 }) => {
-    let Tag = tag;
+    const Tag = tag;
     const classes = classNames(
       className,
       { active },

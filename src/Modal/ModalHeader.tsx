@@ -1,10 +1,11 @@
+import classNames from 'classnames';
 import React, { FC, HTMLAttributes } from 'react';
 import { CSSModule } from 'reactstrap/types/lib/utils';
-import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
 import { mapToCssModules } from '../utils';
 
 export interface ModalHeaderProps extends HTMLAttributes<HTMLElement> {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
   cssModule?: CSSModule;
   /** Componente che conterrà il nodo titolo. Valore di default: h5 */
@@ -12,7 +13,7 @@ export interface ModalHeaderProps extends HTMLAttributes<HTMLElement> {
   /** Componente che contenitore per l'header. Valore di default: div. */
   wrapTag?: React.ElementType;
   /** Funzione da passare al tasto di chiusura nell'intestazione. Quando questa funzione non è presente il tasto di chiusura non viene mostrato. Valore di default: undefined */
-  toggle?: React.MouseEventHandler<any>;
+  toggle?: React.MouseEventHandler<unknown>;
   /** Indica il nome dell'icona da utilizzare nel titolo. */
   icon?: string;
   /** Classi da aggiungere al nodo contenitore. */
@@ -25,7 +26,6 @@ export const ModalHeader: FC<ModalHeaderProps> = ({
   icon,
   className,
   children,
-  Util,
   toggle,
   tag: Tag = 'h5',
   wrapTag: WrapTag = 'div',

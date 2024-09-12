@@ -1,16 +1,17 @@
+import classnames from 'classnames';
 import React, { FC, HTMLAttributes } from 'react';
 import { FadeProps, Modal as InnerModal } from 'reactstrap';
 import { CSSModule } from 'reactstrap/types/lib/utils';
-import classnames from 'classnames';
 
 export interface ModalProps extends HTMLAttributes<HTMLElement> {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
   /** Indica lo stato del modale. Valore di default: undefined. */
   isOpen?: boolean;
   autoFocus?: boolean;
   size?: string;
   /** Funzione da chiamare quando l'utente clicca sul backdrop. Valore di default: undefined. */
-  toggle?: React.KeyboardEventHandler<any> | React.MouseEventHandler<any>;
+  toggle?: React.KeyboardEventHandler<unknown> | React.MouseEventHandler<unknown>;
   keyboard?: boolean;
   backdrop?: boolean | 'static';
   /**

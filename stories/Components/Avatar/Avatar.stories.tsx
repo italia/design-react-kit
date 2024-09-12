@@ -17,6 +17,7 @@ export default meta;
 
 type Story = StoryObj<typeof AvatarIcon>;
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const AvatarWithImageWithHooks = (args: any) => {
   return (
     <AvatarContainer>

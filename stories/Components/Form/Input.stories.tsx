@@ -1,4 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore non ci sono i types
 import Autocomplete from 'accessible-autocomplete/react'; // Reference to https://www.npmjs.com/package/accessible-autocomplete
 import React, { useState } from 'react';
 import { Button, FormGroup, Icon, Input, TextArea } from '../../../src';
