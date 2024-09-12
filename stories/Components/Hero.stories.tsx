@@ -19,7 +19,7 @@ import {
 } from '../../src';
 
 const meta: Meta<typeof Hero> = {
-  title: "Documentazione/Menu di navigazione/Hero",
+  title: "Documentazione/Componenti/Hero",
   component: Hero,
 };
 
@@ -29,7 +29,7 @@ type Story = StoryObj<typeof Hero>;
 
 export const HeroConSfondo: Story = {
   render: () => (
-    <Hero>
+    <Hero aria-label='In evidenza'>
       <HeroBackground
         src='https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg'
         title='image title'
@@ -41,7 +41,7 @@ export const HeroConSfondo: Story = {
 
 export const HeroConSfondoSmall: Story = {
   render: () => (
-    <Hero small>
+    <Hero aria-label='In evidenza' small>
       <HeroBackground
         src='https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg'
         title='image title'
@@ -74,7 +74,7 @@ export const HeroConTestoCentrato: Story = {
     <Hero centered>
       <HeroBody>
         <HeroCategory>Category</HeroCategory>
-        <HeroTitle>Heading lorem ipsum dolor sit amet, consetetur sadipscing.</HeroTitle>
+        <HeroTitle tag={'h2'}>Heading lorem ipsum dolor sit amet, consetetur sadipscing.</HeroTitle>
         <p className='d-none d-lg-block'>
           Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo
           donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
@@ -97,7 +97,7 @@ export const HeroConTestoSuSfondo: Story = {
       />
       <HeroBody>
         <HeroCategory>Category</HeroCategory>
-        <HeroTitle>Heading lorem ipsum dolor sit amet, consetetur sadipscing.</HeroTitle>
+        <HeroTitle tag={'h2'}>Heading lorem ipsum dolor sit amet, consetetur sadipscing.</HeroTitle>
         <p className='d-none d-lg-block'>
           Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo
           donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
@@ -118,7 +118,7 @@ export const HeroConTestoSuSfondoOverlayPrimario: Story = {
       />
       <HeroBody>
         <HeroCategory>Category</HeroCategory>
-        <HeroTitle>Heading lorem ipsum dolor sit amet, consetetur sadipscing.</HeroTitle>
+        <HeroTitle tag={'h2'}>Heading lorem ipsum dolor sit amet, consetetur sadipscing.</HeroTitle>
         <p className='d-none d-lg-block'>
           Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo
           donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.
@@ -146,7 +146,7 @@ export const HeroConSfondoOverlayFiltro: Story = {
 export const HeroConSfondoMargineNegativo: Story = {
   render: () => (
     <>
-      <Hero overlap>
+      <Hero overlay='dark' overlap>
         <HeroBackground
           src='https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg'
           title='image title'
