@@ -6675,11 +6675,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Modale _EsempioBase 1`] = `
       <div
         class="modal-header"
       >
-        <h5
-          class="modal-title"
+        <h2
+          class="modal-title h5"
         >
           Titolo della modale
-        </h5>
+        </h2>
       </div>
       <div
         class="modal-body"
