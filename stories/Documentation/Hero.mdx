@@ -1,14 +1,15 @@
 import { ArgTypes, Canvas, Meta, Story } from '@storybook/blocks';
-import { Hero, HeroBackground, HeroBody, HeroButton, HeroCategory, HeroTitle } from '../../src';
+import { Code } from "@storybook/components";
+import { Callout, CalloutText, CalloutTitle, Hero, HeroBackground, HeroBody, HeroButton, HeroCategory, HeroTitle } from '../../src';
 import * as HeroStories from '../Components/Hero.stories';
 
 <Meta of={HeroStories} />
 
 # Hero
 
-## Lo Hero (ciò che Bootstrap definisce “Jumbotron”) è un componente per la presentazione di contenuti in evidenza.
+### Lo Hero (ciò che Bootstrap definisce “Jumbotron”) è un componente per la presentazione di contenuti in evidenza.
 
-Il cosiddetto `Hero` è un componente leggero e flessibile che può facoltativamente estendere l’intera finestra per mostrare i messaggi in evidenza sul tuo sito. Di seguito una serie di esempi con la descrizione degli elementi e delle classi applicabili.
+La `hero` è un componente leggero e flessibile che può facoltativamente estendere l’intera finestra per mostrare i messaggi in evidenza sul tuo sito. Di seguito una serie di esempi con la descrizione degli elementi e delle classi applicabili.
 
 Il componente `Hero` può contenere
 
@@ -18,7 +19,16 @@ Il componente `Hero` può contenere
 - Call to action - `HeroButton`
 - Immagine di background - `HeroBackground`
 
-### Con immagine
+## Con immagine
+
+<div className="docs">
+    <div className="bd-callout bd-callout-accessibility">
+            <h3 id='accessibilità'>Accessibilità sola immagine</h3>
+        <p>
+             Nel caso di un componente hero con sola immagine utilizzare il componente con attributo <Code>aria-label="In evidenza"</Code>.
+        </p>
+    </div>
+</div>
 
 <Canvas of={HeroStories.HeroConSfondo} />
 
@@ -29,6 +39,15 @@ Per ottenere il componente `Hero` nella sua versione più piccola utilizzare l'a
 <Canvas of={HeroStories.HeroConSfondoSmall} />
 
 ## Con contenuti testuali
+
+<div className="docs">
+    <div className="bd-callout bd-callout-accessibility">
+            <h3 id='accessibilità'>Accessibilità contenuti testuali</h3>
+        <p>
+            Nei casi in cui fossero presenti contenuti testuali utilizzare per il titolo il livello <Code>h</Code> corretto a seconda del contesto.
+        </p>
+    </div>
+</div>
 
 Esempio di Hero con tutti i componenti testuali
 
@@ -42,7 +61,16 @@ Per ottenere il componente `Hero` centrando i testi orizzontalmente aggiungere l
 
 ## Con testi ed immagine di sfondo
 
-Per visualizzare i testi in overlay sulle immagini, viene creato un div scuro in opacità per migliorare la leggibilità del testo in caso di immagini dai toni chiari. Aggiungere al componente `Hero` l'attributo `overlay` con il colore desiderato (tra `dark`, `primary` o `filter`). Di seguito l'esempio con `overlay='dark'`:
+Per visualizzare i testi in overlay sulle immagini, viene creato un div scuro in opacità per migliorare la leggibilità del testo in caso di immagini dai toni chiari. Aggiungere al componente `Hero` l'attributo `overlay` con il colore desiderato (tra `dark`, `primary` o `filter`). Di seguito l'esempio con `overlay='dark'`
+
+<div className="docs">
+    <div className="bd-callout bd-callout-accessibility">
+            <h3 id='accessibilità'>Accessibilità e contrasto</h3>
+        <p>
+            Verificare che l’immagine utilizzata assicuri sempre un adeguato contrasto rispetto al testo.
+        </p>
+    </div>
+</div>
 
 <Canvas of={HeroStories.HeroConTestoSuSfondo} />
 
@@ -60,7 +88,7 @@ Per aggiungere un filtro di tipo “screen” utilizzare `overlay="filter"`:
 
 ## Con immagine e margine negativo per contenuti sovrapposti
 
-In alcuni casi, il contenuto che seguirà la card può sovrapporsi al componente `Hero`. Aggiungere l'attributo `overlap` per far si che il contenuto seguente si sovrapponga al componente `Hero` (in questo caso il componente seguente è una card):
+In alcuni casi, il contenuto che seguirà la card può sovrapporsi al componente `Hero`. Aggiungere gli attributi `overlap` e `overlay="dark"` per far si che il contenuto seguente si sovrapponga al componente `Hero` (in questo caso il componente seguente è una card):
 
 <Canvas of={HeroStories.HeroConSfondoMargineNegativo} />
 
