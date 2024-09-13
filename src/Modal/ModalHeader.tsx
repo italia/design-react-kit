@@ -1,6 +1,6 @@
+import classNames from 'classnames';
 import React, { FC, HTMLAttributes } from 'react';
 import { CSSModule } from 'reactstrap/types/lib/utils';
-import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
 import { mapToCssModules } from '../utils';
 
@@ -27,7 +27,7 @@ export const ModalHeader: FC<ModalHeaderProps> = ({
   children,
   Util,
   toggle,
-  tag: Tag = 'h5',
+  tag: Tag = 'h2',
   wrapTag: WrapTag = 'div',
   closeAriaLabel = 'Close',
   close,
@@ -52,7 +52,7 @@ export const ModalHeader: FC<ModalHeaderProps> = ({
   return (
     <WrapTag {...props} className={classes}>
       {icon != null ? <Icon icon={icon} /> : null}
-      <Tag className={mapToCssModules('modal-title', cssModule)}>{children}</Tag>
+      <Tag className={mapToCssModules('modal-title h5', cssModule)}>{children}</Tag>
       {close || CloseButton}
     </WrapTag>
   );
