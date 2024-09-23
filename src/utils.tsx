@@ -30,7 +30,7 @@ export const notifyDeprecation = (message: string, options: { once: boolean } = 
 };
 
 export function mapToCssModules(className: string | null, cssModules?: Record<string, string>) {
-  let finalClassNames = className == null ? '' : className;
+  const finalClassNames = className == null ? '' : className;
   if (!cssModules) {
     return finalClassNames;
   }

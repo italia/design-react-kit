@@ -24,7 +24,7 @@ export interface AlertProps extends HTMLAttributes<HTMLElement> {
    * @default true
    */
   isOpen?: boolean;
-  toggle?: MouseEventHandler<any>;
+  toggle?: MouseEventHandler<unknown>;
   testId?: string;
 }
 

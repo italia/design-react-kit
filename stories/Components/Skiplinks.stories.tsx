@@ -1,15 +1,15 @@
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from '@storybook/react';
 import React, { useEffect, useRef } from 'react';
 import { Skiplink, SkiplinkItem } from '../../src';
 
 const meta: Meta = {
-  title: "Documentazione/Componenti/Skiplinks",
+  title: 'Documentazione/Componenti/Skiplinks',
   component: Skiplink,
   parameters: {
     docs: {
-      canvas: { sourceState: "none" },
-    },
-  },
+      canvas: { sourceState: 'none' }
+    }
+  }
 };
 
 export default meta;
@@ -22,12 +22,12 @@ const EsempiWithHooks = () => {
 
   useEffect(() => {
     // We focus the container here since it is hosted inside Storybook's iframe
-    // @ts-ignore: with no types annotated, never is inferred here
+    // @ts-expect-error: with no types annotated, never is inferred here
     containerRef.current?.focus();
   }, []);
 
   const onClick = () => {
-    // @ts-ignore: with no types annotated, never is inferred here
+    // @ts-expect-error: with no types annotated, never is inferred here
     footerRef.current?.scrollIntoView();
   };
 
@@ -47,4 +47,3 @@ const EsempiWithHooks = () => {
 export const _Esempi: Story = {
   render: () => <EsempiWithHooks />
 };
-

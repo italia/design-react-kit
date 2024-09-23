@@ -1,5 +1,5 @@
-import React, { FC, HTMLAttributes, ElementType } from 'react';
 import classNames from 'classnames';
+import React, { ElementType, FC, HTMLAttributes } from 'react';
 
 export interface StepperHeaderProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
@@ -12,7 +12,7 @@ export interface StepperHeaderProps extends HTMLAttributes<HTMLElement> {
 export const StepperHeader: FC<StepperHeaderProps> = ({ tag = 'div', testId, className, children, ...attributes }) => {
   const Tag = tag;
   const wrapperClass = classNames('steppers-header', className);
-  // @ts-ignore not recognize children's props
+  // @ts-expect-error not recognize children's props
   const isMobile = children?.props?.variant === 'mobile';
 
   return (

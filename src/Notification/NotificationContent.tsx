@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import classNames from 'classnames';
 import React, { CSSProperties, ReactNode } from 'react';
 import { Button } from '../Button/Button';
-import classNames from 'classnames';
 import { Icon } from '../Icon/Icon';
-import { usePosition } from './usePosition';
 import { NotificationCommonProps } from './types';
+import { usePosition } from './usePosition';
 
 export interface NotificationToastProps {
   /** Indica quale icona affiancare al titolo. */

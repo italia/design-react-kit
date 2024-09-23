@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /*
  * This work derives from the React Use Navscroll library
  * Released under the MIT license by Marco Liberati

@@ -1,5 +1,5 @@
-import React, { FC, HTMLAttributes, ElementType } from 'react';
 import classNames from 'classnames';
+import React, { ElementType, FC, HTMLAttributes } from 'react';
 
 export interface AvatarPresenceProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
@@ -19,8 +19,12 @@ export const AvatarPresence: FC<AvatarPresenceProps> = ({
   ...attributes
 }) => {
   const Tag = tag;
-  const typeClass = classNames('avatar-presence', {
-    presence
-  });
+  const typeClass = classNames(
+    'avatar-presence',
+    {
+      presence
+    },
+    className
+  );
   return <Tag {...attributes} className={typeClass} data-testid={testId} />;
 };

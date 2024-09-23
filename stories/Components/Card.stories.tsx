@@ -1,4 +1,3 @@
-/* eslint jsx-a11y/anchor-is-valid: 0 */
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 
@@ -19,8 +18,8 @@ import {
 } from '../../src';
 
 const meta: Meta<typeof Card> = {
-  title: "Documentazione/Componenti/Cards",
-  component: Card,
+  title: 'Documentazione/Componenti/Cards',
+  component: Card
 };
 
 export default meta;
@@ -486,10 +485,12 @@ export const CardTeaserMultiple: Story = {
     <div className='card-wrapper card-teaser-wrapper'>
       <Card teaser noWrapper>
         <CardBody>
-          <CardTitle tag='h5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</CardTitle>
+          <CardTitle tag='h5'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+          </CardTitle>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
         </CardBody>
       </Card>
@@ -497,8 +498,8 @@ export const CardTeaserMultiple: Story = {
         <CardBody>
           <CardTitle>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</CardTitle>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
         </CardBody>
       </Card>
@@ -509,8 +510,8 @@ export const CardTeaserMultiple: Story = {
             <CardTitle tag='h5'>Lorem ipsum dolor sit amet</CardTitle>
           </a>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
         </CardBody>
       </Card>

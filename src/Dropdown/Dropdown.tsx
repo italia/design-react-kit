@@ -1,5 +1,5 @@
-import React, { ElementType, FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
+import React, { ElementType, FC, HTMLAttributes } from 'react';
 import { Dropdown as BSDRopdown } from 'reactstrap';
 export interface DropdownProps extends HTMLAttributes<HTMLElement> {
   tag?: ElementType;
@@ -14,7 +14,6 @@ export interface DropdownProps extends HTMLAttributes<HTMLElement> {
 export const Dropdown: FC<DropdownProps> = ({
   className,
   testId,
-  tag,
   children,
   inNavbar,
   textCenter,

@@ -169,6 +169,7 @@ export const Input = ({
     }
   }, [value]);
 
+  // eslint-disable-next-line prefer-const
   let { bsSize, valid, ...rest } = attributes;
 
   const Tag = getTag({ tag, plaintext, staticInput, type });
@@ -282,7 +283,7 @@ export const Input = ({
   }
 
   const clickIncrDecr = (mode: number) => {
-    var step = parseFloat(inputRef.current?.step ? inputRef.current.step : '1');
+    let step = parseFloat(inputRef.current?.step ? inputRef.current.step : '1');
     const min = parseFloat(inputRef.current?.min ? inputRef.current.min : 'Nan');
     const max = parseFloat(inputRef.current?.max ? inputRef.current.max : 'Nan');
     step = isNaN(step) ? 1 : step;
@@ -295,7 +296,7 @@ export const Input = ({
     }
     const nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value')?.set;
     nativeInputValueSetter?.call(inputRef.current, `${newValue}`);
-    var ev2 = new Event('input', { bubbles: true });
+    const ev2 = new Event('input', { bubbles: true });
     inputRef.current?.dispatchEvent(ev2);
   };
 

@@ -1,9 +1,9 @@
-import React, { ElementType, PropsWithChildren, useCallback, useState } from 'react';
-import type { TransitionProps } from 'react-transition-group/Transition';
-import { Transition } from 'react-transition-group';
 import classNames from 'classnames';
-import { pick, omit } from '../utils';
+import React, { ElementType, PropsWithChildren, useCallback, useState } from 'react';
+import { Transition } from 'react-transition-group';
+import type { TransitionProps } from 'react-transition-group/Transition';
 import { TransitionTimeouts, TransitionsKeys } from '../transitions';
+import { omit, pick } from '../utils';
 
 export type AccordionBodyProps = Partial<TransitionProps> & {
   tag?: ElementType;
@@ -64,7 +64,7 @@ export const AccordionBody = ({
   const onExiting = useCallback(
     (node: HTMLElement) => {
       // getting this variable triggers a reflow
-      // @ts-expect-error
+      // @ts-expect-error variabile non usata
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const _unused = node.offsetHeight;
       setHeight(0);
