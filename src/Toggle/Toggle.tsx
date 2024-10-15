@@ -21,9 +21,9 @@ export interface ToggleProps extends InputProps {
 export const Toggle: FC<ToggleProps> = ({ label, testId, ...rest }) => {
   return (
     <div className='toggles' data-testid={testId}>
-      <Label check>
+      <Label check for={rest.id}>
         {label}
-        <Input {...rest} type='checkbox' />
+        <Input {...rest} type='checkbox' aria-describedby={rest.id ? rest.id + 'Description' : '' } />
         <span className='lever' />
       </Label>
     </div>
