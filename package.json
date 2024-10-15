@@ -97,7 +97,7 @@
     "@types/react": "^18.2.75",
     "@types/react-dom": "^18.2.24",
     "@types/react-transition-group": "^4.4.10",
-    "bootstrap-italia": "^2.9.0",
+    "bootstrap-italia": "^2.10.0",
     "browserslist-config-design-italia": "^1.0.0",
     "eslint": "^9.10.0",
     "eslint-plugin-mdx": "^3.1.5",
