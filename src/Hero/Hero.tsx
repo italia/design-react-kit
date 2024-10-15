@@ -1,5 +1,5 @@
-import React, { FC, HTMLAttributes, ElementType } from 'react';
 import classname from 'classnames';
+import React, { ElementType, FC, HTMLAttributes } from 'react';
 
 export interface HeroProps extends HTMLAttributes<HTMLElement> {
   /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
@@ -16,7 +16,7 @@ export interface HeroProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const Hero: FC<HeroProps> = ({
-  tag: Tag = 'div',
+  tag: Tag = 'section',
   small,
   centered,
   overlay,
