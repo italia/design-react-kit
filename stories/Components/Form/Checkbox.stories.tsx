@@ -114,21 +114,21 @@ export const CheckboxGruppi: Story = {
                                 <Label for="group-checkbox4" check>
                                     Checkbox selezionato
                                 </Label>
-                                <FormText color="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
+                                <FormText id="group-checkbox4Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
                             </FormGroup>
                             <FormGroup check className="form-check-group">
                                 <Input id="group-checkbox5" type="checkbox" />
                                 <Label for="group-checkbox5" check>
                                     Checkbox non selezionato
                                 </Label>
-                                <FormText color="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
+                                <FormText id="group-checkbox5Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
                             </FormGroup>
                             <FormGroup check className="form-check-group">
                                 <Input id="group-checkbox6" type="checkbox" disabled />
                                 <Label for="group-checkbox6" check>
                                     Checkbox disabilitato non selezionato
                                 </Label>
-                                <FormText color="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
+                                <FormText id="group-checkbox6Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
                             </FormGroup>
                         </Form>
                     </fieldset>
