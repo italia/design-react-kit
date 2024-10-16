@@ -122,21 +122,21 @@ export const RadioGruppi: Story = {
                                 <Label htmlFor="radio10" check>
                                     Opzione 1
                                 </Label>
-                                <FormText color="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
+                                <FormText id="radio10Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
                             </FormGroup>
                             <FormGroup check className="form-check-group">
                                 <Input id="radio11" name="group2" type="radio" />
                                 <Label htmlFor="radio11" check>
                                     Opzione 2
                                 </Label>
-                                <FormText color="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
+                                <FormText id="radio11Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
                             </FormGroup>
                             <FormGroup check className="form-check-group">
                                 <Input id="radio12" name="group2" type="radio" disabled />
                                 <Label htmlFor="radio12" check>
                                     Opzione 3
                                 </Label>
-                                <FormText color="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
+                                <FormText id="radio12Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
                             </FormGroup>
                         </Form>
                     </fieldset>
