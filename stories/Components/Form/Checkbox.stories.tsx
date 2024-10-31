@@ -13,7 +13,7 @@ type Story = StoryObj<typeof Input>;
 
 export const CheckboxBase: Story = {
     render: () => (
-        <Form className="m-3">
+        <Form>
             <fieldset>
                 <legend>Checkbox</legend>
                 <FormGroup check>
@@ -32,7 +32,7 @@ export const CheckboxInline: Story = {
         <section>
             <fieldset>
                 <legend>Checkbox</legend>
-                <Form className="m-3">
+                <Form>
                     <FormGroup check inline>
                         <Input id="inline-checkbox1" type="checkbox" />
                         <Label for="inline-checkbox1" check>
@@ -56,7 +56,7 @@ export const CheckboxDisabilitato: Story = {
         <section>
             <fieldset>
                 <legend>Checkbox</legend>
-                <Form className="m-3">
+                <Form>
                     <FormGroup check>
                         <Input disabled id="disabled-checkbox1" type="checkbox" />
                         <Label for="disabled-checkbox1" check>
@@ -141,7 +141,7 @@ export const CheckboxGruppi: Story = {
 //Da correggere il componente input nel caso in cui venga aggiunta la classe semi-checked perchè il render del componente è sbagliato
 export const CheckboxMixedButton: Story = {
     render: () => (
-        <Form className="m-3">
+        <Form>
             <fieldset>
                 <legend>Checkbox</legend>
                 <FormGroup check>
