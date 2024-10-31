@@ -99,7 +99,7 @@ export const NavHeader: Story = {
                       <div className='ratio ratio-21x9 lightgrey-bg-a1 mb-4 rounded'>
                         <figure className='figure'>
                           <img
-                            src='https://via.placeholder.com/560x240/ebebeb/808080/?text=Immagine'
+                            src='https://placehold.co/560x240/ebebeb/808080/?text=Immagine'
                             className='figure-img img-fluid rounded'
                             alt='Segnaposto'
                           />

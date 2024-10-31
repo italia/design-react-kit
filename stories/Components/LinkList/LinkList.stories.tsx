@@ -431,15 +431,15 @@ export const ConAvatar: Story = {
   render: () => (
     <LinkList>
       <LinkListItem active>
-        <img className="avatar lg-size" src="http://via.placeholder.com/40x40" title="avatartitle" alt="avataralt" />
+        <img className="avatar lg-size" src="http://placehold.co/40x40" title="avatartitle" alt="avataralt" />
         <span>Link list 1 active </span>
       </LinkListItem>
       <LinkListItem>
-        <img className="avatar lg-size" src="http://via.placeholder.com/40x40" title="avatartitle" alt="avataralt" />
+        <img className="avatar lg-size" src="http://placehold.co/40x40" title="avatartitle" alt="avataralt" />
         <span>Link list 2 </span>
       </LinkListItem>
       <LinkListItem disabled>
-        <img className="avatar lg-size" src="http://via.placeholder.com/40x40" title="avatartitle" alt="avataralt" />
+        <img className="avatar lg-size" src="http://placehold.co/40x40" title="avatartitle" alt="avataralt" />
         <span>Link list 3 disabled </span>
       </LinkListItem>
     </LinkList>

@@ -305,7 +305,7 @@ export const BigCardWithTag: Story = {
             <div className='img-responsive img-responsive-panoramic'>
               <figure className='img-wrapper'>
                 <img
-                  src='https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+                  src='https://placehold.co/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
                   title='img title'
                   alt='imagealt'
                 />
@@ -339,7 +339,7 @@ export const CardsWithImages: Story = {
             <div className='img-responsive'>
               <figure className='img-wrapper'>
                 <img
-                  src='https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+                  src='https://placehold.co/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
                   title='img title'
                   alt='imagealt'
                 />
@@ -362,7 +362,7 @@ export const CardsWithImages: Story = {
             <div className='img-responsive img-responsive-panoramic'>
               <figure className='img-wrapper'>
                 <img
-                  src='https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+                  src='https://placehold.co/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
                   title='img title'
                   alt='imagealt'
                 />
@@ -385,7 +385,7 @@ export const CardsWithImages: Story = {
             <div className='img-responsive'>
               <figure className='img-wrapper'>
                 <img
-                  src='https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+                  src='https://placehold.co/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
                   title='img title'
                   alt='imagealt'
                 />
@@ -412,7 +412,7 @@ export const CardsWithImages: Story = {
             <div className='img-responsive img-responsive-panoramic'>
               <figure className='img-wrapper'>
                 <img
-                  src='https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+                  src='https://placehold.co/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
                   title='img title'
                   alt='imagealt'
                 />
@@ -446,7 +446,7 @@ export const SpecialCard: Story = {
             <div className='img-responsive'>
               <figure className='img-wrapper'>
                 <img
-                  src='https://via.placeholder.com/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO'
+                  src='https://placehold.co/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO'
                   title='img title'
                   alt='imagealt'
                 />

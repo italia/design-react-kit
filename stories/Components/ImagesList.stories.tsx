@@ -29,7 +29,7 @@ export const ElementoSingolo: Story = {
         <GridItem>
           <a href='#'>
             <ResponsiveImage
-              src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+              src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
               alt='Alternative Text'
               title='Image Title'
             />
@@ -40,7 +40,7 @@ export const ElementoSingolo: Story = {
         <GridItem>
           <a href='#'>
             <ResponsiveImage
-              src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+              src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
               alt='Alternative Text'
               title='Image Title'
             />
@@ -55,7 +55,7 @@ export const ElementoSingolo: Story = {
         <GridItem className='it-grid-item-overlay'>
           <a href='#'>
             <ResponsiveImage
-              src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+              src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
               alt='Alternative Text'
               title='Image Title'
             />
@@ -78,7 +78,7 @@ export const GrigliaStandard: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -89,7 +89,7 @@ export const GrigliaStandard: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -100,7 +100,7 @@ export const GrigliaStandard: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -111,7 +111,7 @@ export const GrigliaStandard: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -122,7 +122,7 @@ export const GrigliaStandard: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -133,7 +133,7 @@ export const GrigliaStandard: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -153,7 +153,7 @@ export const StandardDidascalie: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -168,7 +168,7 @@ export const StandardDidascalie: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -183,7 +183,7 @@ export const StandardDidascalie: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -198,7 +198,7 @@ export const StandardDidascalie: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -213,7 +213,7 @@ export const StandardDidascalie: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -228,7 +228,7 @@ export const StandardDidascalie: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -252,7 +252,7 @@ export const Proporzionale: Story = {
           <GridItem className='it-grid-item-overlay'>
             <a href='#' className=''>
               <ResponsiveImage
-                src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -269,7 +269,7 @@ export const Proporzionale: Story = {
               <GridItem className='it-grid-item-overlay'>
                 <a href='#'>
                   <ResponsiveImage
-                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                     alt='Alternative Text'
                     title='Image Title'
                   />
@@ -284,7 +284,7 @@ export const Proporzionale: Story = {
               <GridItem className='it-grid-item-overlay'>
                 <a href='#'>
                   <ResponsiveImage
-                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                     alt='Alternative Text'
                     title='Image Title'
                   />
@@ -299,7 +299,7 @@ export const Proporzionale: Story = {
               <GridItem className='it-grid-item-overlay it-grid-item-double-w'>
                 <a href='#'>
                   <ResponsiveImage
-                    src='https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine'
+                    src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                     alt='Alternative Text'
                     title='Image Title'
                   />
@@ -325,7 +325,7 @@ export const Masonry: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/400x300/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/400x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -340,7 +340,7 @@ export const Masonry: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/400x500/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -355,7 +355,7 @@ export const Masonry: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/400x700/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/400x700/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -370,7 +370,7 @@ export const Masonry: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/400x600/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -385,7 +385,7 @@ export const Masonry: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/400x500/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -400,7 +400,7 @@ export const Masonry: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/400x400/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -415,7 +415,7 @@ export const Masonry: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/400x600/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -430,7 +430,7 @@ export const Masonry: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/400x500/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -445,7 +445,7 @@ export const Masonry: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/400x400/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -460,7 +460,7 @@ export const Masonry: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/400x600/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -475,7 +475,7 @@ export const Masonry: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/400x500/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
@@ -490,7 +490,7 @@ export const Masonry: Story = {
           <GridItem>
             <a href='#'>
               <ResponsiveImage
-                src='https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine'
+                src='https://placehold.co/400x400/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
               />
