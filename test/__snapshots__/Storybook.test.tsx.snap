@@ -3940,7 +3940,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Cards CardsWithImages 1`] =
               >
                 <img
                   alt="imagealt"
-                  src="https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
+                  src="https://placehold.co/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
                   title="img title"
                 />
               </figure>
@@ -4000,7 +4000,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Cards CardsWithImages 1`] =
               >
                 <img
                   alt="imagealt"
-                  src="https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
+                  src="https://placehold.co/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
                   title="img title"
                 />
               </figure>
@@ -4060,7 +4060,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Cards CardsWithImages 1`] =
               >
                 <img
                   alt="imagealt"
-                  src="https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
+                  src="https://placehold.co/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
                   title="img title"
                 />
               </figure>
@@ -4134,7 +4134,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Cards CardsWithImages 1`] =
               >
                 <img
                   alt="imagealt"
-                  src="https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
+                  src="https://placehold.co/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO"
                   title="img title"
                 />
               </figure>
@@ -4442,7 +4442,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Cards SpecialCard 1`] = `
               >
                 <img
                   alt="imagealt"
-                  src="https://via.placeholder.com/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO"
+                  src="https://placehold.co/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO"
                   title="img title"
                 />
               </figure>
@@ -25521,7 +25521,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                                             <img
                                               alt="Segnaposto"
                                               class="figure-img img-fluid rounded"
-                                              src="https://via.placeholder.com/560x240/ebebeb/808080/?text=Immagine"
+                                              src="https://placehold.co/560x240/ebebeb/808080/?text=Immagine"
                                             />
                                           </figure>
                                         </div>
@@ -26017,7 +26017,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                                         <img
                                           alt="Segnaposto"
                                           class="figure-img img-fluid rounded"
-                                          src="https://via.placeholder.com/560x240/ebebeb/808080/?text=Immagine"
+                                          src="https://placehold.co/560x240/ebebeb/808080/?text=Immagine"
                                         />
                                       </figure>
                                     </div>
@@ -27555,7 +27555,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
                                 <img
                                   alt="Segnaposto"
                                   class="figure-img img-fluid rounded"
-                                  src="https://via.placeholder.com/560x240/ebebeb/808080/?text=Immagine"
+                                  src="https://placehold.co/560x240/ebebeb/808080/?text=Immagine"
                                 />
                               </figure>
                             </div>
@@ -32735,7 +32735,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
               >
                 <img
                   alt="Alternative Text"
-                  src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                  src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                   title="Image Title"
                 />
               </div>
@@ -32764,7 +32764,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
               >
                 <img
                   alt="Alternative Text"
-                  src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                  src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                   title="Image Title"
                 />
               </div>
@@ -32814,7 +32814,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
               >
                 <img
                   alt="Alternative Text"
-                  src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                  src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                   title="Image Title"
                 />
               </div>
@@ -32876,7 +32876,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -32905,7 +32905,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -32934,7 +32934,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -32963,7 +32963,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -32992,7 +32992,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33021,7 +33021,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33063,7 +33063,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/400x300/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/400x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33113,7 +33113,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33163,7 +33163,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/400x700/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/400x700/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33213,7 +33213,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/400x600/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33263,7 +33263,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33313,7 +33313,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/400x400/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33363,7 +33363,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/400x600/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33413,7 +33413,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33463,7 +33463,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/400x400/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33513,7 +33513,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/400x600/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/400x600/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33563,7 +33563,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/400x500/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33613,7 +33613,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/400x400/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/400x400/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33677,7 +33677,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33733,7 +33733,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                     >
                       <img
                         alt="Alternative Text"
-                        src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                        src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                         title="Image Title"
                       />
                     </div>
@@ -33783,7 +33783,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                     >
                       <img
                         alt="Alternative Text"
-                        src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                        src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                         title="Image Title"
                       />
                     </div>
@@ -33833,7 +33833,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                     >
                       <img
                         alt="Alternative Text"
-                        src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                        src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                         title="Image Title"
                       />
                     </div>
@@ -33898,7 +33898,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33948,7 +33948,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -33998,7 +33998,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -34048,7 +34048,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -34098,7 +34098,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -34148,7 +34148,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine"
+                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
                 </div>
@@ -34517,7 +34517,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
           <img
             alt="avataralt"
             class="avatar lg-size"
-            src="http://via.placeholder.com/40x40"
+            src="http://placehold.co/40x40"
             title="avatartitle"
           />
           <span>
@@ -34532,7 +34532,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
           <img
             alt="avataralt"
             class="avatar lg-size"
-            src="http://via.placeholder.com/40x40"
+            src="http://placehold.co/40x40"
             title="avatartitle"
           />
           <span>
@@ -34547,7 +34547,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
           <img
             alt="avataralt"
             class="avatar lg-size"
-            src="http://via.placeholder.com/40x40"
+            src="http://placehold.co/40x40"
             title="avatartitle"
           />
           <span>
