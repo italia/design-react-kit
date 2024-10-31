@@ -11006,6 +11006,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingReadOnly 1`] =
 exports[`Stories Snapshots Documentazione/Componenti/Section Esempio 1`] = `
 <div>
   <div
+    aria-labelledby="titleEx1"
     class="section"
   >
     <div
@@ -11020,9 +11021,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Section Esempio 1`] = `
           <div
             class="col-12"
           >
-            <h4>
+            <h2
+              id="titleEx1"
+            >
               Morbi fermentum amet
-            </h4>
+            </h2>
           </div>
         </div>
         <div
@@ -11053,6 +11056,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Section Esempio 1`] = `
 exports[`Stories Snapshots Documentazione/Componenti/Section ImmagineDiSfondo 1`] = `
 <div>
   <div
+    aria-labelledby="titleEx5"
     class="section section-image"
     style="background-image: url(https://picsum.photos/1280/720?image=811);"
   >
@@ -11068,9 +11072,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Section ImmagineDiSfondo 1`
           <div
             class="col-12"
           >
-            <h4>
+            <h2
+              id="titleEx5"
+            >
               Morbi fermentum amet
-            </h4>
+            </h2>
           </div>
         </div>
         <div
@@ -11101,14 +11107,17 @@ exports[`Stories Snapshots Documentazione/Componenti/Section ImmagineDiSfondo 1`
 exports[`Stories Snapshots Documentazione/Componenti/Section SectionConCard 1`] = `
 <div>
   <div
+    aria-labelledby="titleEx6"
     class="section section-muted"
   >
     <div
       class="section-content"
     >
-      <h4>
+      <h2
+        id="titleEx6"
+      >
         Morbi fermentum amet
-      </h4>
+      </h2>
       <div
         class="row"
       >
@@ -11156,6 +11165,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Section SectionConCard 1`] 
 exports[`Stories Snapshots Documentazione/Componenti/Section SfondoNeutrale 1`] = `
 <div>
   <div
+    aria-labelledby="titleEx4"
     class="section section-neutral"
   >
     <div
@@ -11170,9 +11180,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Section SfondoNeutrale 1`] 
           <div
             class="col-12"
           >
-            <h4>
+            <h2
+              id="titleEx4"
+            >
               Morbi fermentum amet
-            </h4>
+            </h2>
           </div>
         </div>
         <div
@@ -11203,6 +11215,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Section SfondoNeutrale 1`] 
 exports[`Stories Snapshots Documentazione/Componenti/Section SfondoPrimario 1`] = `
 <div>
   <div
+    aria-labelledby="titleEx3"
     class="section section-primary"
   >
     <div
@@ -11217,9 +11230,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Section SfondoPrimario 1`] 
           <div
             class="col-12"
           >
-            <h4>
+            <h2
+              id="titleEx3"
+            >
               Morbi fermentum amet
-            </h4>
+            </h2>
           </div>
         </div>
         <div
@@ -11250,6 +11265,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Section SfondoPrimario 1`] 
 exports[`Stories Snapshots Documentazione/Componenti/Section SfondoTenue 1`] = `
 <div>
   <div
+    aria-labelledby="titleEx2"
     class="section section-muted"
   >
     <div
@@ -11264,9 +11280,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Section SfondoTenue 1`] = `
           <div
             class="col-12"
           >
-            <h4>
+            <h2
+              id="titleEx2"
+            >
               Morbi fermentum amet
-            </h4>
+            </h2>
           </div>
         </div>
         <div
@@ -20005,9 +20023,11 @@ exports[`Stories Snapshots Documentazione/Form DimensionamentoColonneComplesso 1
         >
           <label
             class="form-check-label"
+            for="toggleEsempio1a"
           >
             Label dell'interruttore 1
             <input
+              aria-describedby="toggleEsempio1aDescription"
               class="form-check-input"
               id="toggleEsempio1a"
               type="checkbox"
@@ -20156,7 +20176,7 @@ exports[`Stories Snapshots Documentazione/Form FormDisabilitato 1`] = `
 exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxBase 1`] = `
 <div>
   <form
-    class="m-3"
+    class=""
   >
     <fieldset>
       <legend>
@@ -20192,7 +20212,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxDisabilitato 1`]
         Checkbox
       </legend>
       <form
-        class="m-3"
+        class=""
       >
         <div
           class="form-check"
@@ -20340,7 +20360,8 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
                 Checkbox selezionato
               </label>
               <small
-                class="form-text"
+                class="form-text text-muted"
+                id="group-checkbox4Description"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
               </small>
@@ -20362,7 +20383,8 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
                 Checkbox non selezionato
               </label>
               <small
-                class="form-text"
+                class="form-text text-muted"
+                id="group-checkbox5Description"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
               </small>
@@ -20385,7 +20407,8 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
                 Checkbox disabilitato non selezionato
               </label>
               <small
-                class="form-text"
+                class="form-text text-muted"
+                id="group-checkbox6Description"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
               </small>
@@ -20406,7 +20429,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxInline 1`] = `
         Checkbox
       </legend>
       <form
-        class="m-3"
+        class=""
       >
         <div
           class="form-check form-check-inline"
@@ -20452,7 +20475,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxInline 1`] = `
 exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxMixedButton 1`] = `
 <div>
   <form
-    class="m-3"
+    class=""
   >
     <fieldset>
       <legend>
@@ -21510,7 +21533,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoValuta
 exports[`Stories Snapshots Documentazione/Form/Radio RadioBase 1`] = `
 <div>
   <form
-    class="m-3"
+    class=""
   >
     <fieldset>
       <legend>
@@ -21566,7 +21589,7 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioDisabilitato 1`] = `
         Radio
       </legend>
       <form
-        class="m-3"
+        class=""
       >
         <div
           class="form-check"
@@ -21720,7 +21743,8 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
                 Opzione 1
               </label>
               <small
-                class="form-text"
+                class="form-text text-muted"
+                id="radio10Description"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
               </small>
@@ -21743,7 +21767,8 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
                 Opzione 2
               </label>
               <small
-                class="form-text"
+                class="form-text text-muted"
+                id="radio11Description"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
               </small>
@@ -21767,7 +21792,8 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
                 Opzione 3
               </label>
               <small
-                class="form-text"
+                class="form-text text-muted"
+                id="radio12Description"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
               </small>
@@ -21788,7 +21814,7 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioInline 1`] = `
         Radio
       </legend>
       <form
-        class="m-3"
+        class=""
       >
         <div
           class="form-check form-check-inline"
@@ -21994,72 +22020,86 @@ exports[`Stories Snapshots Documentazione/Form/Toggles GruppiDiToggles 1`] = `
     <div
       class="col-md-5"
     >
-      <form
-        class=""
-      >
-        <div
-          class="form-check-group form-check"
+      <fieldset>
+        <legend>
+          Gruppo di toggle
+        </legend>
+        <form
+          class=""
         >
           <div
-            class="toggles"
+            class="form-check-group form-check"
           >
-            <label
-              class="form-check-label"
+            <div
+              class="toggles"
             >
-              Toggle acceso
-              <input
-                checked=""
-                class="form-check-input"
-                type="checkbox"
-              />
-              <span
-                class="lever"
-              />
-            </label>
+              <label
+                class="form-check-label"
+                for="toggleEsempio3a"
+              >
+                Toggle acceso
+                <input
+                  aria-describedby="toggleEsempio3aDescription"
+                  checked=""
+                  class="form-check-input"
+                  id="toggleEsempio3a"
+                  type="checkbox"
+                />
+                <span
+                  class="lever"
+                />
+              </label>
+            </div>
           </div>
-        </div>
-        <div
-          class="form-check-group form-check"
-        >
           <div
-            class="toggles"
+            class="form-check-group form-check"
           >
-            <label
-              class="form-check-label"
+            <div
+              class="toggles"
             >
-              Toggle spento
-              <input
-                class="form-check-input"
-                type="checkbox"
-              />
-              <span
-                class="lever"
-              />
-            </label>
+              <label
+                class="form-check-label"
+                for="toggleEsempio3b"
+              >
+                Toggle spento
+                <input
+                  aria-describedby="toggleEsempio3bDescription"
+                  class="form-check-input"
+                  id="toggleEsempio3b"
+                  type="checkbox"
+                />
+                <span
+                  class="lever"
+                />
+              </label>
+            </div>
           </div>
-        </div>
-        <div
-          class="form-check-group form-check"
-        >
           <div
-            class="toggles"
+            class="form-check-group form-check"
           >
-            <label
-              class="form-check-label"
+            <div
+              class="toggles"
             >
-              Toggle disabilitato
-              <input
-                class="form-check-input"
-                disabled=""
-                type="checkbox"
-              />
-              <span
-                class="lever"
-              />
-            </label>
+              <label
+                class="form-check-label"
+                for="toggleEsempio3c"
+              >
+                Toggle disabilitato
+                <input
+                  aria-describedby="toggleEsempio3cDescription"
+                  class="form-check-input"
+                  disabled=""
+                  id="toggleEsempio3c"
+                  type="checkbox"
+                />
+                <span
+                  class="lever"
+                />
+              </label>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </fieldset>
     </div>
     <div
       class="col-md-2"
@@ -22067,87 +22107,104 @@ exports[`Stories Snapshots Documentazione/Form/Toggles GruppiDiToggles 1`] = `
     <div
       class="col-md-5"
     >
-      <form
-        class=""
-      >
-        <div
-          class="form-check-group form-check"
+      <fieldset>
+        <legend>
+          Gruppo di toggle
+        </legend>
+        <form
+          class=""
         >
           <div
-            class="toggles"
+            class="form-check-group form-check"
           >
-            <label
-              class="form-check-label"
+            <div
+              class="toggles"
             >
-              Toggle acceso
-              <input
-                checked=""
-                class="form-check-input"
-                type="checkbox"
-              />
-              <span
-                class="lever"
-              />
-            </label>
+              <label
+                class="form-check-label"
+                for="toggleEsempio3d"
+              >
+                Toggle acceso
+                <input
+                  aria-describedby="toggleEsempio3dDescription"
+                  checked=""
+                  class="form-check-input"
+                  id="toggleEsempio3d"
+                  type="checkbox"
+                />
+                <span
+                  class="lever"
+                />
+              </label>
+            </div>
+            <small
+              class="form-text text-muted"
+              id="toggleEsempio3dDescription"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+            </small>
           </div>
-          <small
-            class="form-text text-muted"
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
-          </small>
-        </div>
-        <div
-          class="form-check-group form-check"
-        >
           <div
-            class="toggles"
+            class="form-check-group form-check"
           >
-            <label
-              class="form-check-label"
+            <div
+              class="toggles"
             >
-              Toggle spento
-              <input
-                class="form-check-input"
-                type="checkbox"
-              />
-              <span
-                class="lever"
-              />
-            </label>
+              <label
+                class="form-check-label"
+                for="toggleEsempio3e"
+              >
+                Toggle spento
+                <input
+                  aria-describedby="toggleEsempio3eDescription"
+                  class="form-check-input"
+                  id="toggleEsempio3e"
+                  type="checkbox"
+                />
+                <span
+                  class="lever"
+                />
+              </label>
+            </div>
+            <small
+              class="form-text text-muted"
+              id="toggleEsempio3eDescription"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+            </small>
           </div>
-          <small
-            class="form-text text-muted"
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
-          </small>
-        </div>
-        <div
-          class="form-check-group form-check"
-        >
           <div
-            class="toggles"
+            class="form-check-group form-check"
           >
-            <label
-              class="form-check-label"
+            <div
+              class="toggles"
             >
-              Toggle disabilitato
-              <input
-                class="form-check-input"
-                disabled=""
-                type="checkbox"
-              />
-              <span
-                class="lever"
-              />
-            </label>
+              <label
+                class="form-check-label"
+                for="toggleEsempio3f"
+              >
+                Toggle disabilitato
+                <input
+                  aria-describedby="toggleEsempio3fDescription"
+                  class="form-check-input"
+                  disabled=""
+                  id="toggleEsempio3f"
+                  type="checkbox"
+                />
+                <span
+                  class="lever"
+                />
+              </label>
+            </div>
+            <small
+              class="form-text text-muted"
+              id="toggleEsempio3fDescription"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
+            </small>
           </div>
-          <small
-            class="form-text text-muted"
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero
-          </small>
-        </div>
-      </form>
+        </form>
+      </fieldset>
     </div>
   </div>
 </div>
@@ -22162,7 +22219,7 @@ exports[`Stories Snapshots Documentazione/Form/Toggles Toggles 1`] = `
       class="col-sm-6"
     >
       <div
-        class="m-3 form-check"
+        class="form-check"
       >
         <div
           class="toggles"
@@ -22172,33 +22229,7 @@ exports[`Stories Snapshots Documentazione/Form/Toggles Toggles 1`] = `
           >
             Label dell'interruttore 1
             <input
-              class="form-check-input"
-              type="checkbox"
-            />
-            <span
-              class="lever"
-            />
-          </label>
-        </div>
-      </div>
-    </div>
-    <div
-      class="col-sm-6"
-    >
-      <div
-        class="m-3 form-check"
-      >
-        <div
-          class="toggles"
-        >
-          <label
-            class="form-check-label"
-          >
-            <span>
-              Label dell'interruttore 2
-            </span>
-            <input
-              checked=""
+              aria-describedby=""
               class="form-check-input"
               type="checkbox"
             />
@@ -22222,7 +22253,7 @@ exports[`Stories Snapshots Documentazione/Form/Toggles TogglesDisabilitate 1`] =
       class="col-sm-6"
     >
       <div
-        class="m-3 form-check"
+        class="form-check"
       >
         <div
           class="toggles"
@@ -22232,34 +22263,7 @@ exports[`Stories Snapshots Documentazione/Form/Toggles TogglesDisabilitate 1`] =
           >
             Label dell'interruttore 1
             <input
-              class="form-check-input"
-              disabled=""
-              type="checkbox"
-            />
-            <span
-              class="lever"
-            />
-          </label>
-        </div>
-      </div>
-    </div>
-    <div
-      class="col-sm-6"
-    >
-      <div
-        class="m-3 form-check"
-      >
-        <div
-          class="toggles"
-        >
-          <label
-            class="form-check-label"
-          >
-            <span>
-              Label dell'interruttore 2
-            </span>
-            <input
-              checked=""
+              aria-describedby=""
               class="form-check-input"
               disabled=""
               type="checkbox"
@@ -34664,6 +34668,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             >
               Label per toggle
               <input
+                aria-describedby=""
                 class="form-check-input"
                 type="checkbox"
               />
@@ -34686,6 +34691,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             >
               Label per disabled toggle
               <input
+                aria-describedby=""
                 class="form-check-input"
                 disabled=""
                 type="checkbox"
