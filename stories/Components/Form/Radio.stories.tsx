@@ -13,7 +13,7 @@ type Story = StoryObj<typeof Input>;
 
 export const RadioBase: Story = {
     render: () => (
-        <Form className="m-3">
+        <Form>
             <fieldset>
                 <legend>Radio</legend>
 
@@ -40,7 +40,7 @@ export const RadioInline: Story = {
         <section>
             <fieldset>
                 <legend>Radio</legend>
-                <Form className="m-3">
+                <Form>
                     <FormGroup check inline>
                         <Input name="gruppo1" type="radio" id="radio3" defaultChecked />
                         <Label check htmlFor="radio3">
@@ -64,7 +64,7 @@ export const RadioDisabilitato: Story = {
         <section>
             <fieldset>
                 <legend>Radio</legend>
-                <Form className="m-3">
+                <Form>
                     <FormGroup check>
                         <Input disabled name="gruppo1" type="radio" id="radio5" defaultChecked />
                         <Label check htmlFor="radio5">

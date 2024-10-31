@@ -16,7 +16,7 @@ export const Toggles: Story = {
         return (
             <Row>
                 <Col sm="6">
-                    <FormGroup check className="m-3">
+                    <FormGroup check>
                         <Toggle label="Label dell'interruttore 1" disabled={false} />
                     </FormGroup>
                 </Col>
@@ -30,7 +30,7 @@ export const TogglesDisabilitate: Story = {
         return (
             <Row>
                 <Col sm="6">
-                    <FormGroup check className="m-3">
+                    <FormGroup check>
                         <Toggle label="Label dell'interruttore 1" disabled={true} />
                     </FormGroup>
                 </Col>
