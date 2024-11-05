@@ -3913,10 +3913,10 @@ body-parser@1.20.3:
     type-is "~1.6.18"
     unpipe "1.0.0"
 
-bootstrap-italia@^2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.10.0.tgz#dd259b65517954f81c54283fb466e5a047565edf"
-  integrity sha512-ULYyv1/hC7/0t8jmfbzmCltC5c2ejnQKLhLQ2TirMW2VFOTklFifLB1mj64nr5TAe1kuIx1zRxcwoeNYC3fHdg==
+bootstrap-italia@^2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.11.0.tgz#388c4f648b0957f1e10bbd81979c6d33aa0fbe2f"
+  integrity sha512-4cUxPYovt4aUhKxhu5OvmUiJM1ZsM/4ouz3w5rKJnwyFLGJV5ao1K1D59caKbxkgejXBQLPmV92+ExD7rjepYw==
   dependencies:
     "@popperjs/core" "^2.11.2"
     "@splidejs/splide" "^3.6.12"
@@ -8414,6 +8414,7 @@ prelude-ls@^1.2.1:
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
 "prettier-fallback@npm:prettier@^3", prettier@^3.1.1, prettier@^3.2.5:
+  name prettier-fallback
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.3.2.tgz#03ff86dc7c835f2d2559ee76876a3914cec4a90a"
   integrity sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==
