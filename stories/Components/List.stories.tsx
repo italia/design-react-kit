@@ -58,15 +58,15 @@ export const ListaFreccia: Story = {
     <List>
       <ListItem>
         <span className='text'>Testo</span>
-        <Icon icon='it-chevron-right' />
+        <Icon icon='it-chevron-right' title='Freccia destra' />
       </ListItem>
-      <ListItem tag={'a'}>
+      <ListItem href="#">
         <span className='text'>Link</span>
-        <Icon icon='it-chevron-right' />
+        <Icon icon='it-chevron-right' title='Freccia destra' />
       </ListItem>
-      <ListItem active tag={'a'}>
+      <ListItem active href="#">
         <span className='text'>Link attivo</span>
-        <Icon icon='it-chevron-right' />
+        <Icon icon='it-chevron-right' title='Freccia destra' />
       </ListItem>
     </List>
   )
@@ -78,14 +78,14 @@ export const ListaAzioniMultiple: Story = {
       <ListItem>
         <span className='text'>Testo</span>
         <ListItem.MultipleAction>
-          <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+          <a href='#' aria-label='Testo - Azione 1'>
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
-          <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+          <a href='#' aria-label='Testo - Azione 2'>
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
-          <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+          <a href='#' aria-label='Testo - Azione 3'>
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
         </ListItem.MultipleAction>
       </ListItem>
@@ -95,13 +95,13 @@ export const ListaAzioniMultiple: Story = {
         </a>
         <ListItem.MultipleAction>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
         </ListItem.MultipleAction>
       </ListItem>
@@ -111,13 +111,13 @@ export const ListaAzioniMultiple: Story = {
         </a>
         <ListItem.MultipleAction>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
         </ListItem.MultipleAction>
       </ListItem>
@@ -184,78 +184,78 @@ export const ListaTestoAzioniMultipleMetadata: Story = {
   render: () => (
     <List>
       <ListItem>
-        <span className='text'>
-          Testo<em>Lorem ipsum dolor sit amet.</em>
-        </span>
+        <div className='text'>
+          <h4 className='text m-0'>Testo</h4>
+          <p className='small m-0'>Lorem ipsum dolor sit amet.</p>
+        </div>
         <ListItem.MultipleAction>
           <span className='metadata'>metadata testo</span>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
         </ListItem.MultipleAction>
       </ListItem>
       <ListItem>
-        <span className='text'>
-          Testo 2<em>Lorem ipsum dolor sit amet.</em>
-        </span>
+        <div className='text'>
+          <h4 className='text m-0'>Testo</h4>
+          <p className='small m-0'>Lorem ipsum dolor sit amet.</p>
+        </div>
         <ListItem.MultipleAction>
           <span className='metadata'>
             <a href='#'>metadata link</a>
           </span>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
         </ListItem.MultipleAction>
       </ListItem>
       <ListItem>
-        <a href='#'>
-          <span className='text'>
-            Link<em>Lorem ipsum dolor sit amet.</em>
-          </span>
-        </a>
+        <div>
+          <h4 className='text m-0'><a href='#'>Testo</a></h4>
+          <p className='small m-0'>Lorem ipsum dolor sit amet.</p>
+        </div>
         <ListItem.MultipleAction>
           <span className='metadata'>
             <a href='#'>metadata link</a>
           </span>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
         </ListItem.MultipleAction>
       </ListItem>
       <ListItem active>
-        <a href='#'>
-          <span className='text'>
-            Link attivo<em>Lorem ipsum dolor sit amet.</em>
-          </span>
-        </a>
+        <div>
+          <h4 className='text m-0'><a href='#'>Testo</a></h4>
+          <p className='small m-0'>Lorem ipsum dolor sit amet.</p>
+        </div>
         <ListItem.MultipleAction>
           <span className='metadata'>metadata testo</span>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
           <a href='#' aria-label='Testo - Azione '>
-            <Icon icon='it-code-circle' />
+            <Icon icon='it-code-circle' title='Codice' />
           </a>
         </ListItem.MultipleAction>
       </ListItem>

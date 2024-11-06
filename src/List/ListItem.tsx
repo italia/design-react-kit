@@ -55,11 +55,9 @@ export const ListItem: FC<ListItemProps> & {
     if (href) {
       return (
         <li className={wrapperClassName} data-testid={testId}>
-          <Tag>
-            <a href={href || '#'} {...attributes} className={classes}>
-              {children}
-            </a>
-          </Tag>
+          <a href={href || '#'} {...attributes} className={classes}>
+            <div className="it-right-zone">{children}</div>
+          </a>
         </li>
       );
     }
