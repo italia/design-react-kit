@@ -42,12 +42,12 @@ export const ElementoSingolo: Story = {
             <ResponsiveImage
               src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
               alt='Alternative Text'
-              title='Image Title'
-            />
-            <GridItemTextWrapper>
-              <GridItemText>Didascalia</GridItemText>
-              <Icon icon='it-code-circle' size='sm' />
-            </GridItemTextWrapper>
+              title='Image Title'>
+              <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                <GridItemText>Didascalia</GridItemText>
+                <Icon icon='it-code-circle' size='sm' />
+              </GridItemTextWrapper>
+            </ResponsiveImage>
           </a>
         </GridItem>
       </Col>
@@ -57,12 +57,12 @@ export const ElementoSingolo: Story = {
             <ResponsiveImage
               src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
               alt='Alternative Text'
-              title='Image Title'
-            />
-            <GridItemTextWrapper>
-              <GridItemText>Didascalia</GridItemText>
-              <Icon icon='it-code-circle' size='sm' />
-            </GridItemTextWrapper>
+              title='Image Title'>
+              <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                <GridItemText>Didascalia</GridItemText>
+                <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+              </GridItemTextWrapper>
+            </ResponsiveImage>
           </a>
         </GridItem>
       </Col>
@@ -155,12 +155,12 @@ export const StandardDidascalie: Story = {
               <ResponsiveImage
                 src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -170,12 +170,12 @@ export const StandardDidascalie: Story = {
               <ResponsiveImage
                 src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -185,12 +185,12 @@ export const StandardDidascalie: Story = {
               <ResponsiveImage
                 src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -200,12 +200,12 @@ export const StandardDidascalie: Story = {
               <ResponsiveImage
                 src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -215,12 +215,12 @@ export const StandardDidascalie: Story = {
               <ResponsiveImage
                 src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -230,12 +230,12 @@ export const StandardDidascalie: Story = {
               <ResponsiveImage
                 src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -255,11 +255,12 @@ export const Proporzionale: Story = {
                 src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
                 title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                proportioned>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -272,11 +273,12 @@ export const Proporzionale: Story = {
                     src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                     alt='Alternative Text'
                     title='Image Title'
-                  />
-                  <GridItemTextWrapper>
-                    <GridItemText>Didascalia</GridItemText>
-                    <Icon icon='it-code-circle' size='sm' />
-                  </GridItemTextWrapper>
+                    proportioned>
+                    <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                      <GridItemText>Didascalia</GridItemText>
+                      <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                    </GridItemTextWrapper>
+                  </ResponsiveImage>
                 </a>
               </GridItem>
             </Col>
@@ -287,11 +289,12 @@ export const Proporzionale: Story = {
                     src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                     alt='Alternative Text'
                     title='Image Title'
-                  />
-                  <GridItemTextWrapper>
-                    <GridItemText>Didascalia</GridItemText>
-                    <Icon icon='it-code-circle' size='sm' />
-                  </GridItemTextWrapper>
+                    proportioned>
+                    <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                      <GridItemText>Didascalia</GridItemText>
+                      <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                    </GridItemTextWrapper>
+                  </ResponsiveImage>
                 </a>
               </GridItem>
             </Col>
@@ -302,11 +305,12 @@ export const Proporzionale: Story = {
                     src='https://placehold.co/660x300/ebebeb/808080/?text=Immagine'
                     alt='Alternative Text'
                     title='Image Title'
-                  />
-                  <GridItemTextWrapper>
-                    <GridItemText>Didascalia</GridItemText>
-                    <Icon icon='it-code-circle' size='sm' />
-                  </GridItemTextWrapper>
+                    proportioned>
+                    <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                      <GridItemText>Didascalia</GridItemText>
+                      <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                    </GridItemTextWrapper>
+                  </ResponsiveImage>
                 </a>
               </GridItem>
             </Col>
@@ -327,12 +331,12 @@ export const Masonry: Story = {
               <ResponsiveImage
                 src='https://placehold.co/400x300/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -342,12 +346,12 @@ export const Masonry: Story = {
               <ResponsiveImage
                 src='https://placehold.co/400x500/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -357,12 +361,12 @@ export const Masonry: Story = {
               <ResponsiveImage
                 src='https://placehold.co/400x700/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -372,12 +376,12 @@ export const Masonry: Story = {
               <ResponsiveImage
                 src='https://placehold.co/400x600/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -387,12 +391,12 @@ export const Masonry: Story = {
               <ResponsiveImage
                 src='https://placehold.co/400x500/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -402,12 +406,12 @@ export const Masonry: Story = {
               <ResponsiveImage
                 src='https://placehold.co/400x400/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -417,12 +421,12 @@ export const Masonry: Story = {
               <ResponsiveImage
                 src='https://placehold.co/400x600/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -432,12 +436,12 @@ export const Masonry: Story = {
               <ResponsiveImage
                 src='https://placehold.co/400x500/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -447,12 +451,12 @@ export const Masonry: Story = {
               <ResponsiveImage
                 src='https://placehold.co/400x400/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -462,12 +466,12 @@ export const Masonry: Story = {
               <ResponsiveImage
                 src='https://placehold.co/400x600/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -477,12 +481,12 @@ export const Masonry: Story = {
               <ResponsiveImage
                 src='https://placehold.co/400x500/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
@@ -492,12 +496,12 @@ export const Masonry: Story = {
               <ResponsiveImage
                 src='https://placehold.co/400x400/ebebeb/808080/?text=Immagine'
                 alt='Alternative Text'
-                title='Image Title'
-              />
-              <GridItemTextWrapper>
-                <GridItemText>Didascalia</GridItemText>
-                <Icon icon='it-code-circle' size='sm' />
-              </GridItemTextWrapper>
+                title='Image Title'>
+                <GridItemTextWrapper tag='figcaption' className='figure-caption'>
+                  <GridItemText>Didascalia</GridItemText>
+                  <Icon icon='it-code-circle' size='sm' title='Significato icona' />
+                </GridItemTextWrapper>
+              </ResponsiveImage>
             </a>
           </GridItem>
         </Col>
