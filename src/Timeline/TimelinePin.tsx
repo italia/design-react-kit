@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { ElementType, FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 import { Icon } from '../Icon/Icon';
@@ -13,6 +13,10 @@ export interface TimelinePinProps extends HTMLAttributes<HTMLElement> {
    * @deprecated. Utilizzare `iconName`.
    * */
   icon?: string;
+  /**
+   * Titolo dell'icona all'interno del TimelinePin.
+   * */
+  iconTitle?: string;
   /** Etichetta da associare all'elemento */
   label: string;
   /** Quando abilitato indica che l'evento TimelinePin è collocato nel presente (azzurro) */
@@ -21,18 +25,22 @@ export interface TimelinePinProps extends HTMLAttributes<HTMLElement> {
   nowText?: string;
   /** Quando abilitato indica che l'evento TimelinePin è collocato nel passato (blu scuro) */
   past?: boolean;
+  /** Tag del pin da utilizzare a seconda della struttura */
+  tag?: ElementType;
   testId?: string;
 }
 
 export const TimelinePin: FC<TimelinePinProps> = ({
   iconName = 'it-code-circle',
   icon = 'it-code-circle',
+  iconTitle = '',
   label = ' ',
   past,
   now,
   nowText,
   testId,
   className,
+  tag='h3',
   ...attributes
 }) => {
   const { children, ...rest } = attributes;
@@ -43,7 +51,7 @@ export const TimelinePin: FC<TimelinePinProps> = ({
   });
   const pinIcon = (
     <div className='pin-icon'>
-      <Icon icon={iconName || icon} />
+      <Icon icon={iconName || icon} role="img" title={iconTitle} />
     </div>
   );
   const pinLabel = (
@@ -53,14 +61,15 @@ export const TimelinePin: FC<TimelinePinProps> = ({
   );
 
   const pinTextNow = now && <span className='it-now-label d-none d-lg-flex'>{nowText}</span>;
+  const Tag = tag;
 
   return (
     <div className={classes} data-testid={testId}>
       {pinTextNow}
-      <div className={innerClasses} {...rest}>
+      <Tag className={innerClasses} {...rest}>
         {pinIcon}
         {pinLabel}
-      </div>
+      </Tag>
       {children}
     </div>
   );
