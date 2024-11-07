@@ -1,3 +1,21 @@
+# [5.3.0](https://github.com/italia/design-react-kit/compare/v5.2.0...v5.3.0) (2024-10-31)
+
+
+### Bug Fixes
+
+* **a11y:** add aria labelled to sections ([eeca34d](https://github.com/italia/design-react-kit/commit/eeca34d39787fa09bf5a499a1e1ee0be15cf1465))
+* **a11y:** hero component ([4d17fe7](https://github.com/italia/design-react-kit/commit/4d17fe71e43cf19d7904cc678439bcffdc76b505))
+* **a11y:** title and doc link for modal ([c0a92be](https://github.com/italia/design-react-kit/commit/c0a92be35a076da3cc68b3531f2e7243777c9555))
+* group form in examples ([239904d](https://github.com/italia/design-react-kit/commit/239904d11c4d0958d634e670edd68cf45ae7a1aa))
+* icons with default title ([14e154b](https://github.com/italia/design-react-kit/commit/14e154b2ad495b18a20cc19774bb2ee3a4fcd722))
+
+
+### Features
+
+* improve dimmer component ([548608a](https://github.com/italia/design-react-kit/commit/548608a15b4a55061e9f2469ea3a5e79fefc4d3a))
+
+
+
 # [5.2.0](https://github.com/italia/design-react-kit/compare/v5.1.0...v5.2.0) (2024-08-05)
 
 

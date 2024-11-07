@@ -15709,7 +15709,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
           <div
             class="timeline-element"
           >
-            <div
+            <h3
               class="it-pin-wrapper it-evidence"
             >
               <div
@@ -15723,6 +15723,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Segnaposto
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -15735,7 +15738,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   maggio 2018
                 </span>
               </div>
-            </div>
+            </h3>
             <div
               class="card-wrapper"
             >
@@ -15745,25 +15748,25 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                 <div
                   class="card-body"
                 >
+                  <h4
+                    class="h5 big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h4>
                   <div
                     class="category-top"
                   >
+                    <span
+                      class="visually-hidden"
+                    >
+                      Categoria: 
+                    </span>
                     <a
                       class="category"
                     >
                       Category
                     </a>
-                    <span
-                      class="data"
-                    >
-                      10/12/2018
-                    </span>
                   </div>
-                  <h5
-                    class="big-heading card-title"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                  </h5>
                   <p
                     class="card-text"
                   >
@@ -15806,7 +15809,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
           <div
             class="timeline-element"
           >
-            <div
+            <h3
               class="it-pin-wrapper it-evidence"
             >
               <div
@@ -15820,6 +15823,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Segnaposto
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -15832,7 +15838,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   giugno 2018
                 </span>
               </div>
-            </div>
+            </h3>
             <div
               class="card-wrapper"
             >
@@ -15842,11 +15848,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                 <div
                   class="card-body"
                 >
-                  <h5
-                    class="card-title"
+                  <h4
+                    class="h5 card-title"
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                  </h5>
+                  </h4>
                   <p
                     class="card-text"
                   >
@@ -15863,7 +15869,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
           <div
             class="timeline-element"
           >
-            <div
+            <h3
               class="it-pin-wrapper it-evidence"
             >
               <div
@@ -15877,6 +15883,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Segnaposto
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -15889,7 +15898,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   luglio 2018
                 </span>
               </div>
-            </div>
+            </h3>
             <div
               class="card-wrapper"
             >
@@ -15899,25 +15908,35 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                 <div
                   class="card-body"
                 >
+                  <h4
+                    class="h5 big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h4>
                   <div
                     class="category-top"
                   >
+                    <span
+                      class="visually-hidden"
+                    >
+                      Categoria: 
+                    </span>
                     <a
                       class="category"
                     >
                       Category
                     </a>
                     <span
+                      class="visually-hidden"
+                    >
+                      Data evento: 
+                    </span>
+                    <span
                       class="data"
                     >
                       10/12/2018
                     </span>
                   </div>
-                  <h5
-                    class="big-heading card-title"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                  </h5>
                   <p
                     class="card-text"
                   >
@@ -15965,7 +15984,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
             >
               Oggi
             </span>
-            <div
+            <h3
               class="it-pin-wrapper it-now"
             >
               <div
@@ -15979,6 +15998,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Segnaposto
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -15991,7 +16013,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   agosto 2018
                 </span>
               </div>
-            </div>
+            </h3>
             <div
               class="card-wrapper"
             >
@@ -16001,11 +16023,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                 <div
                   class="card-body"
                 >
-                  <h5
-                    class="card-title"
+                  <h4
+                    class="h5 card-title"
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                  </h5>
+                  </h4>
                   <p
                     class="card-text"
                   >
@@ -16022,7 +16044,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
           <div
             class="timeline-element"
           >
-            <div
+            <h3
               class="it-pin-wrapper"
             >
               <div
@@ -16036,6 +16058,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Segnaposto
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -16048,7 +16073,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   settembre 2018
                 </span>
               </div>
-            </div>
+            </h3>
             <div
               class="card-wrapper"
             >
@@ -16058,25 +16083,35 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                 <div
                   class="card-body"
                 >
+                  <h4
+                    class="h5 big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h4>
                   <div
                     class="category-top"
                   >
+                    <span
+                      class="visually-hidden"
+                    >
+                      Categoria: 
+                    </span>
                     <a
                       class="category"
                     >
                       Category
                     </a>
                     <span
+                      class="visually-hidden"
+                    >
+                      Data evento: 
+                    </span>
+                    <span
                       class="data"
                     >
                       10/12/2018
                     </span>
                   </div>
-                  <h5
-                    class="big-heading card-title"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                  </h5>
                   <p
                     class="card-text"
                   >
@@ -16119,7 +16154,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
           <div
             class="timeline-element"
           >
-            <div
+            <h3
               class="it-pin-wrapper"
             >
               <div
@@ -16133,6 +16168,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Segnaposto
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -16145,7 +16183,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   ottobre 2018
                 </span>
               </div>
-            </div>
+            </h3>
             <div
               class="card-wrapper"
             >
@@ -16155,11 +16193,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                 <div
                   class="card-body"
                 >
-                  <h5
-                    class="card-title"
+                  <h4
+                    class="h5 card-title"
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                  </h5>
+                  </h4>
                   <p
                     class="card-text"
                   >
@@ -16176,7 +16214,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
           <div
             class="timeline-element"
           >
-            <div
+            <h3
               class="it-pin-wrapper"
             >
               <div
@@ -16190,6 +16228,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Segnaposto
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -16202,7 +16243,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   novembre 2018
                 </span>
               </div>
-            </div>
+            </h3>
             <div
               class="card-wrapper"
             >
@@ -16212,25 +16253,35 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                 <div
                   class="card-body"
                 >
+                  <h4
+                    class="h5 big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h4>
                   <div
                     class="category-top"
                   >
+                    <span
+                      class="visually-hidden"
+                    >
+                      Categoria: 
+                    </span>
                     <a
                       class="category"
                     >
                       Category
                     </a>
                     <span
+                      class="visually-hidden"
+                    >
+                      Data evento: 
+                    </span>
+                    <span
                       class="data"
                     >
                       10/12/2018
                     </span>
                   </div>
-                  <h5
-                    class="big-heading card-title"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                  </h5>
                   <p
                     class="card-text"
                   >
@@ -16273,7 +16324,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
           <div
             class="timeline-element"
           >
-            <div
+            <h3
               class="it-pin-wrapper"
             >
               <div
@@ -16287,6 +16338,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Segnaposto
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -16299,7 +16353,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                   dicembre 2018
                 </span>
               </div>
-            </div>
+            </h3>
             <div
               class="card-wrapper"
             >
@@ -16309,11 +16363,11 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                 <div
                   class="card-body"
                 >
-                  <h5
-                    class="card-title"
+                  <h4
+                    class="h5 card-title"
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                  </h5>
+                  </h4>
                   <p
                     class="card-text"
                   >
@@ -16460,11 +16514,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar Esempio 1`] = `
               class="toolbar-label"
             >
               preferiti
-            </span>
-            <span
-              class="visually-hidden"
-            >
-               elemento disabilitato
             </span>
           </a>
         </li>
@@ -16633,11 +16682,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConBadgeGran
             >
               preferiti
             </span>
-            <span
-              class="visually-hidden"
-            >
-               elemento disabilitato
-            </span>
           </a>
         </li>
       </ul>
@@ -16796,11 +16840,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConBadgeMedi
                 d="m12 4.9 1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
               />
             </svg>
-            <span
-              class="visually-hidden"
-            >
-               elemento disabilitato
-            </span>
+            <span />
           </a>
         </li>
       </ul>
@@ -16959,11 +16999,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConBadgePicc
                 d="m12 4.9 1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
               />
             </svg>
-            <span
-              class="visually-hidden"
-            >
-               elemento disabilitato
-            </span>
+            <span />
           </a>
         </li>
       </ul>
@@ -17240,11 +17276,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
                 class="toolbar-label"
               >
                 privacy
-              </span>
-              <span
-                class="visually-hidden"
-              >
-                 elemento disabilitato
               </span>
             </button>
             <div
@@ -17728,11 +17759,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
                   d="m12 4.9 1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
                 />
               </svg>
-              <span
-                class="visually-hidden"
-              >
-                 elemento disabilitato
-              </span>
+              <span />
             </button>
             <div
               aria-hidden="true"
@@ -18215,11 +18242,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
                   d="m12 4.9 1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
                 />
               </svg>
-              <span
-                class="visually-hidden"
-              >
-                 elemento disabilitato
-              </span>
+              <span />
             </button>
             <div
               aria-hidden="true"
@@ -18501,11 +18524,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioMedium 1`] =
                 d="m12 4.9 1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
               />
             </svg>
-            <span
-              class="visually-hidden"
-            >
-               elemento disabilitato
-            </span>
+            <span />
           </a>
         </li>
       </ul>
@@ -18664,11 +18683,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioSmall 1`] = 
                 d="M12 14.2 7.7 9.9l.7-.7 3.1 3.1V3h1v9.2l3.1-3 .7.7-4.3 4.3zm7-2.2v7.5c0 .3-.2.5-.5.5h-13c-.3 0-.5-.2-.5-.5V12H4v7.5c0 .8.7 1.5 1.5 1.5h13c.8 0 1.5-.7 1.5-1.5V12h-1z"
               />
             </svg>
-            <span
-              class="visually-hidden"
-            >
-               elemento disabilitato
-            </span>
+            <span />
           </a>
         </li>
       </ul>
@@ -18806,8 +18821,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticaleGra
           </div>
         </li>
         <li
-          aria-hidden="true"
+          aria-orientation="vertical"
           class="toolbar-divider"
+          role="separator"
         />
         <li>
           <a
@@ -18882,11 +18898,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticaleGra
               class="toolbar-label"
             >
               preferiti
-            </span>
-            <span
-              class="visually-hidden"
-            >
-               elemento disabilitato
             </span>
           </a>
         </li>
@@ -19021,8 +19032,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticaleMed
           </div>
         </li>
         <li
-          aria-hidden="true"
+          aria-orientation="vertical"
           class="toolbar-divider"
+          role="separator"
         />
         <li>
           <a
@@ -19093,11 +19105,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticaleMed
                 d="m12 4.9 1.5 4.6.2.7h5.7l-4 2.9-.6.4.2.7 1.5 4.7-3.9-2.9-.6-.4-.6.4-3.9 2.9L9 14.2l.2-.7-.6-.4-4-2.9h5.7l.2-.7L12 4.9m0-3.2L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"
               />
             </svg>
-            <span
-              class="visually-hidden"
-            >
-               elemento disabilitato
-            </span>
+            <span />
           </a>
         </li>
       </ul>
@@ -19231,8 +19239,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticalePic
           </div>
         </li>
         <li
-          aria-hidden="true"
+          aria-orientation="vertical"
           class="toolbar-divider"
+          role="separator"
         />
         <li>
           <a
@@ -19327,11 +19336,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticalePic
                 d="M12 14.2 7.7 9.9l.7-.7 3.1 3.1V3h1v9.2l3.1-3 .7.7-4.3 4.3zm7-2.2v7.5c0 .3-.2.5-.5.5h-13c-.3 0-.5-.2-.5-.5V12H4v7.5c0 .8.7 1.5 1.5 1.5h13c.8 0 1.5-.7 1.5-1.5V12h-1z"
               />
             </svg>
-            <span
-              class="visually-hidden"
-            >
-               elemento disabilitato
-            </span>
+            <span />
           </a>
         </li>
       </ul>
@@ -19398,8 +19403,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioWithDivider 
           </a>
         </li>
         <li
-          aria-hidden="true"
+          aria-orientation="vertical"
           class="toolbar-divider"
+          role="separator"
         />
         <li>
           <a
@@ -19453,8 +19459,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioWithDivider 
           </a>
         </li>
         <li
-          aria-hidden="true"
+          aria-orientation="vertical"
           class="toolbar-divider"
+          role="separator"
         />
         <li>
           <a
@@ -19478,11 +19485,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioWithDivider 
               class="toolbar-label"
             >
               preferiti
-            </span>
-            <span
-              class="visually-hidden"
-            >
-               elemento disabilitato
             </span>
           </a>
         </li>
@@ -30066,12 +30068,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav Esempio 1
     class="thumb-nav"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30083,12 +30079,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav Esempio 1
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30100,12 +30090,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav Esempio 1
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30126,12 +30110,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
     class="thumb-nav thumb-nav-auto thumb-nav-auto-3"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30143,12 +30121,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30160,12 +30132,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30177,12 +30143,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30194,12 +30154,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30211,12 +30165,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30237,12 +30185,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
     class="thumb-nav thumb-nav-auto thumb-nav-auto-5"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30254,12 +30196,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30271,12 +30207,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30288,12 +30218,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30305,12 +30229,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30322,12 +30240,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30348,12 +30260,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioBl
     class="thumb-nav thumb-nav-black"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30365,12 +30271,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioBl
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30382,12 +30282,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioBl
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30408,12 +30302,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioFi
     class="thumb-nav thumb-nav-fixed"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30425,12 +30313,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioFi
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30442,12 +30324,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioFi
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30459,12 +30335,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioFi
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30476,12 +30346,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioFi
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30493,12 +30357,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioFi
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30519,12 +30377,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioNo
     class="thumb-nav thumb-nav-nozoom"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30536,12 +30388,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioNo
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30553,12 +30399,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioNo
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30579,12 +30419,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioPr
     class="thumb-nav thumb-nav-primary"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30596,12 +30430,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioPr
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30613,12 +30441,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioPr
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30639,12 +30461,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioSm
     class="thumb-nav thumb-nav-small"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30656,12 +30472,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioSm
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30673,12 +30483,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioSm
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30699,12 +30503,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioVe
     class="thumb-nav thumb-nav-vertical"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30716,12 +30514,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioVe
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30733,12 +30525,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioVe
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30767,12 +30553,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav Overlay 1
       class="thumb-nav thumb-nav-small thumb-nav-bottom"
     >
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30784,12 +30564,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav Overlay 1
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="active ratio ratio-3x2"
           href="#"
@@ -30801,12 +30575,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav Overlay 1
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30818,12 +30586,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav Overlay 1
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30853,12 +30615,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayLe
       class="thumb-nav thumb-nav-small thumb-nav-vertical thumb-nav-left"
     >
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30870,12 +30626,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayLe
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="active ratio ratio-3x2"
           href="#"
@@ -30887,12 +30637,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayLe
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30904,12 +30648,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayLe
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30939,12 +30677,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayRi
       class="thumb-nav thumb-nav-small thumb-nav-vertical thumb-nav-right"
     >
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30956,12 +30688,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayRi
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="active ratio ratio-3x2"
           href="#"
@@ -30973,12 +30699,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayRi
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30990,12 +30710,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayRi
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -31025,12 +30739,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayTo
       class="thumb-nav thumb-nav-small thumb-nav-top"
     >
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -31042,12 +30750,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayTo
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="active ratio ratio-3x2"
           href="#"
@@ -31059,12 +30761,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayTo
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -31076,12 +30772,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayTo
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -31621,7 +31311,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaAzi
               class="it-multiple"
             >
               <a
-                aria-label="Testo - Azione "
+                aria-label="Testo - Azione 1"
                 href="#"
               >
                 <svg
@@ -31632,13 +31322,16 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaAzi
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
                 </svg>
               </a>
               <a
-                aria-label="Testo - Azione "
+                aria-label="Testo - Azione 2"
                 href="#"
               >
                 <svg
@@ -31649,13 +31342,16 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaAzi
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
                 </svg>
               </a>
               <a
-                aria-label="Testo - Azione "
+                aria-label="Testo - Azione 3"
                 href="#"
               >
                 <svg
@@ -31666,6 +31362,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaAzi
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -31706,6 +31405,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaAzi
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -31723,6 +31425,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaAzi
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -31740,6 +31445,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaAzi
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -31780,6 +31488,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaAzi
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -31797,6 +31508,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaAzi
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -31814,6 +31528,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaAzi
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -31856,6 +31573,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaFre
               xml:space="preserve"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <title>
+                Freccia destra
+              </title>
               <path
                 d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
               />
@@ -31866,6 +31586,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaFre
       <li>
         <a
           class="list-item"
+          href="#"
         >
           <div
             class="it-right-zone"
@@ -31883,6 +31604,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaFre
               xml:space="preserve"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <title>
+                Freccia destra
+              </title>
               <path
                 d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
               />
@@ -31893,6 +31617,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaFre
       <li>
         <a
           class="active list-item"
+          href="#"
         >
           <div
             class="it-right-zone"
@@ -31910,6 +31635,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaFre
               xml:space="preserve"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <title>
+                Freccia destra
+              </title>
               <path
                 d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
               />
@@ -32388,14 +32116,20 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
           <div
             class="it-right-zone"
           >
-            <span
+            <div
               class="text"
             >
-              Testo
-              <em>
+              <h4
+                class="text m-0"
+              >
+                Testo
+              </h4>
+              <p
+                class="small m-0"
+              >
                 Lorem ipsum dolor sit amet.
-              </em>
-            </span>
+              </p>
+            </div>
             <span
               class="it-multiple"
             >
@@ -32416,6 +32150,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -32433,6 +32170,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -32450,6 +32190,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -32466,14 +32209,20 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
           <div
             class="it-right-zone"
           >
-            <span
+            <div
               class="text"
             >
-              Testo 2
-              <em>
+              <h4
+                class="text m-0"
+              >
+                Testo
+              </h4>
+              <p
+                class="small m-0"
+              >
                 Lorem ipsum dolor sit amet.
-              </em>
-            </span>
+              </p>
+            </div>
             <span
               class="it-multiple"
             >
@@ -32498,6 +32247,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -32515,6 +32267,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -32532,6 +32287,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -32548,18 +32306,22 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
           <div
             class="it-right-zone"
           >
-            <a
-              href="#"
-            >
-              <span
-                class="text"
+            <div>
+              <h4
+                class="text m-0"
               >
-                Link
-                <em>
-                  Lorem ipsum dolor sit amet.
-                </em>
-              </span>
-            </a>
+                <a
+                  href="#"
+                >
+                  Testo
+                </a>
+              </h4>
+              <p
+                class="small m-0"
+              >
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
             <span
               class="it-multiple"
             >
@@ -32584,6 +32346,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -32601,6 +32366,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -32618,6 +32386,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -32634,18 +32405,22 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
           <div
             class="it-right-zone"
           >
-            <a
-              href="#"
-            >
-              <span
-                class="text"
+            <div>
+              <h4
+                class="text m-0"
               >
-                Link attivo
-                <em>
-                  Lorem ipsum dolor sit amet.
-                </em>
-              </span>
-            </a>
+                <a
+                  href="#"
+                >
+                  Testo
+                </a>
+              </h4>
+              <p
+                class="small m-0"
+              >
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
             <span
               class="it-multiple"
             >
@@ -32666,6 +32441,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -32683,6 +32461,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -32700,6 +32481,9 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
                   xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>
+                    Codice
+                  </title>
                   <path
                     d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
@@ -32757,44 +32541,37 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
         <a
           href="#"
         >
-          <div
-            class="img-responsive-wrapper"
+          <figure
+            class="figure img-full w-100 img-responsive-wrapper"
           >
-            <div
-              class="img-responsive"
+            <img
+              alt="Alternative Text"
+              class="figure-img img-fluid rounded"
+              src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
+              title="Image Title"
+            />
+            <figcaption
+              class="it-griditem-text-wrapper figure-caption"
             >
-              <div
-                class="img-wrapper"
+              <span
+                class="it-griditem-text"
               >
-                <img
-                  alt="Alternative Text"
-                  src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
-                  title="Image Title"
+                Didascalia
+              </span>
+              <svg
+                class="icon icon-sm"
+                enable-background="new 0 0 24 24"
+                role="img"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                 />
-              </div>
-            </div>
-          </div>
-          <span
-            class="it-griditem-text-wrapper"
-          >
-            <span
-              class="it-griditem-text"
-            >
-              Didascalia
-            </span>
-            <svg
-              class="icon icon-sm"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-              />
-            </svg>
-          </span>
+              </svg>
+            </figcaption>
+          </figure>
         </a>
       </div>
     </div>
@@ -32807,44 +32584,40 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
         <a
           href="#"
         >
-          <div
-            class="img-responsive-wrapper"
+          <figure
+            class="figure img-full w-100 img-responsive-wrapper"
           >
-            <div
-              class="img-responsive"
+            <img
+              alt="Alternative Text"
+              class="figure-img img-fluid rounded"
+              src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
+              title="Image Title"
+            />
+            <figcaption
+              class="it-griditem-text-wrapper figure-caption"
             >
-              <div
-                class="img-wrapper"
+              <span
+                class="it-griditem-text"
               >
-                <img
-                  alt="Alternative Text"
-                  src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
-                  title="Image Title"
+                Didascalia
+              </span>
+              <svg
+                class="icon icon-sm"
+                enable-background="new 0 0 24 24"
+                role="img"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  Significato icona
+                </title>
+                <path
+                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                 />
-              </div>
-            </div>
-          </div>
-          <span
-            class="it-griditem-text-wrapper"
-          >
-            <span
-              class="it-griditem-text"
-            >
-              Didascalia
-            </span>
-            <svg
-              class="icon icon-sm"
-              enable-background="new 0 0 24 24"
-              role="img"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-              />
-            </svg>
-          </span>
+              </svg>
+            </figcaption>
+          </figure>
         </a>
       </div>
     </div>
@@ -33039,7 +32812,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
 </div>
 `;
 
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immagini Masonry 1`] = `
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immagini MasonryExample 1`] = `
 <div>
   <div
     class="it-grid-list-wrapper it-image-label-grid it-masonry"
@@ -33048,603 +32821,570 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
       class="card-columns"
     >
       <div
-        class="col-12"
+        data-masonry-id="Masonry-:r0:"
+        style="display: flex;"
       >
         <div
-          class="it-grid-item-wrapper"
+          data-masonry-column="1"
+          style="display: flex; flex: 1; flex-direction: column;"
         >
-          <a
-            href="#"
+          <div
+            class="col-12"
           >
             <div
-              class="img-responsive-wrapper"
+              class="it-grid-item-wrapper"
             >
-              <div
-                class="img-responsive"
+              <a
+                href="#"
               >
-                <div
-                  class="img-wrapper"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
                 >
                   <img
                     alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
                     src="https://placehold.co/400x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
-                </div>
-              </div>
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
+          </div>
+          <div
+            class="col-12"
           >
             <div
-              class="img-responsive-wrapper"
+              class="it-grid-item-wrapper"
             >
-              <div
-                class="img-responsive"
+              <a
+                href="#"
               >
-                <div
-                  class="img-wrapper"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
-                    title="Image Title"
-                  />
-                </div>
-              </div>
-            </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
-          >
-            <div
-              class="img-responsive-wrapper"
-            >
-              <div
-                class="img-responsive"
-              >
-                <div
-                  class="img-wrapper"
-                >
-                  <img
-                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
                     src="https://placehold.co/400x700/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
-                </div>
-              </div>
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
+          </div>
+          <div
+            class="col-12"
           >
             <div
-              class="img-responsive-wrapper"
+              class="it-grid-item-wrapper"
             >
-              <div
-                class="img-responsive"
+              <a
+                href="#"
               >
-                <div
-                  class="img-wrapper"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://placehold.co/400x600/ebebeb/808080/?text=Immagine"
-                    title="Image Title"
-                  />
-                </div>
-              </div>
-            </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
-          >
-            <div
-              class="img-responsive-wrapper"
-            >
-              <div
-                class="img-responsive"
-              >
-                <div
-                  class="img-wrapper"
-                >
-                  <img
-                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
                     src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
-                </div>
-              </div>
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
+          </div>
+          <div
+            class="col-12"
           >
             <div
-              class="img-responsive-wrapper"
+              class="it-grid-item-wrapper"
             >
-              <div
-                class="img-responsive"
+              <a
+                href="#"
               >
-                <div
-                  class="img-wrapper"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://placehold.co/400x400/ebebeb/808080/?text=Immagine"
-                    title="Image Title"
-                  />
-                </div>
-              </div>
-            </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
-          >
-            <div
-              class="img-responsive-wrapper"
-            >
-              <div
-                class="img-responsive"
-              >
-                <div
-                  class="img-wrapper"
-                >
-                  <img
-                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
                     src="https://placehold.co/400x600/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
-                </div>
-              </div>
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
+          </div>
+          <div
+            class="col-12"
           >
             <div
-              class="img-responsive-wrapper"
+              class="it-grid-item-wrapper"
             >
-              <div
-                class="img-responsive"
+              <a
+                href="#"
               >
-                <div
-                  class="img-wrapper"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
-                    title="Image Title"
-                  />
-                </div>
-              </div>
-            </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
-          >
-            <div
-              class="img-responsive-wrapper"
-            >
-              <div
-                class="img-responsive"
-              >
-                <div
-                  class="img-wrapper"
-                >
-                  <img
-                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
                     src="https://placehold.co/400x400/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
-                </div>
-              </div>
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
+          </div>
+          <div
+            class="col-12"
           >
             <div
-              class="img-responsive-wrapper"
+              class="it-grid-item-wrapper"
             >
-              <div
-                class="img-responsive"
+              <a
+                href="#"
               >
-                <div
-                  class="img-wrapper"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
                 >
                   <img
                     alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          data-masonry-column="2"
+          style="display: flex; flex: 1; flex-direction: column;"
+        >
+          <div
+            class="col-12"
+          >
+            <div
+              class="it-grid-item-wrapper"
+            >
+              <a
+                href="#"
+              >
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12"
+          >
+            <div
+              class="it-grid-item-wrapper"
+            >
+              <a
+                href="#"
+              >
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
                     src="https://placehold.co/400x600/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
-                </div>
-              </div>
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
+          </div>
+          <div
+            class="col-12"
           >
             <div
-              class="img-responsive-wrapper"
+              class="it-grid-item-wrapper"
             >
-              <div
-                class="img-responsive"
+              <a
+                href="#"
               >
-                <div
-                  class="img-wrapper"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
                 >
                   <img
                     alt="Alternative Text"
-                    src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
-                    title="Image Title"
-                  />
-                </div>
-              </div>
-            </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
-          >
-            <div
-              class="img-responsive-wrapper"
-            >
-              <div
-                class="img-responsive"
-              >
-                <div
-                  class="img-wrapper"
-                >
-                  <img
-                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
                     src="https://placehold.co/400x400/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
-                </div>
-              </div>
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <span
-              class="it-griditem-text-wrapper"
+          </div>
+          <div
+            class="col-12"
+          >
+            <div
+              class="it-grid-item-wrapper"
             >
-              <span
-                class="it-griditem-text"
+              <a
+                href="#"
               >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12"
+          >
+            <div
+              class="it-grid-item-wrapper"
+            >
+              <a
+                href="#"
               >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
-          </a>
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x600/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12"
+          >
+            <div
+              class="it-grid-item-wrapper"
+            >
+              <a
+                href="#"
+              >
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x400/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -33676,38 +33416,42 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
               <div
                 class="img-responsive"
               >
-                <div
+                <figure
                   class="img-wrapper"
                 >
                   <img
                     alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
                     src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                     title="Image Title"
                   />
-                </div>
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
               </div>
             </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
           </a>
         </div>
       </div>
@@ -33732,38 +33476,42 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                   <div
                     class="img-responsive"
                   >
-                    <div
+                    <figure
                       class="img-wrapper"
                     >
                       <img
                         alt="Alternative Text"
+                        class="figure-img img-fluid rounded"
                         src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                         title="Image Title"
                       />
-                    </div>
+                      <figcaption
+                        class="it-griditem-text-wrapper figure-caption"
+                      >
+                        <span
+                          class="it-griditem-text"
+                        >
+                          Didascalia
+                        </span>
+                        <svg
+                          class="icon icon-sm"
+                          enable-background="new 0 0 24 24"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          xml:space="preserve"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>
+                            Significato icona
+                          </title>
+                          <path
+                            d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                          />
+                        </svg>
+                      </figcaption>
+                    </figure>
                   </div>
                 </div>
-                <span
-                  class="it-griditem-text-wrapper"
-                >
-                  <span
-                    class="it-griditem-text"
-                  >
-                    Didascalia
-                  </span>
-                  <svg
-                    class="icon icon-sm"
-                    enable-background="new 0 0 24 24"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                    />
-                  </svg>
-                </span>
               </a>
             </div>
           </div>
@@ -33782,38 +33530,42 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                   <div
                     class="img-responsive"
                   >
-                    <div
+                    <figure
                       class="img-wrapper"
                     >
                       <img
                         alt="Alternative Text"
+                        class="figure-img img-fluid rounded"
                         src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                         title="Image Title"
                       />
-                    </div>
+                      <figcaption
+                        class="it-griditem-text-wrapper figure-caption"
+                      >
+                        <span
+                          class="it-griditem-text"
+                        >
+                          Didascalia
+                        </span>
+                        <svg
+                          class="icon icon-sm"
+                          enable-background="new 0 0 24 24"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          xml:space="preserve"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>
+                            Significato icona
+                          </title>
+                          <path
+                            d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                          />
+                        </svg>
+                      </figcaption>
+                    </figure>
                   </div>
                 </div>
-                <span
-                  class="it-griditem-text-wrapper"
-                >
-                  <span
-                    class="it-griditem-text"
-                  >
-                    Didascalia
-                  </span>
-                  <svg
-                    class="icon icon-sm"
-                    enable-background="new 0 0 24 24"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                    />
-                  </svg>
-                </span>
               </a>
             </div>
           </div>
@@ -33832,38 +33584,42 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
                   <div
                     class="img-responsive"
                   >
-                    <div
+                    <figure
                       class="img-wrapper"
                     >
                       <img
                         alt="Alternative Text"
+                        class="figure-img img-fluid rounded"
                         src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
                         title="Image Title"
                       />
-                    </div>
+                      <figcaption
+                        class="it-griditem-text-wrapper figure-caption"
+                      >
+                        <span
+                          class="it-griditem-text"
+                        >
+                          Didascalia
+                        </span>
+                        <svg
+                          class="icon icon-sm"
+                          enable-background="new 0 0 24 24"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          xml:space="preserve"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>
+                            Significato icona
+                          </title>
+                          <path
+                            d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                          />
+                        </svg>
+                      </figcaption>
+                    </figure>
                   </div>
                 </div>
-                <span
-                  class="it-griditem-text-wrapper"
-                >
-                  <span
-                    class="it-griditem-text"
-                  >
-                    Didascalia
-                  </span>
-                  <svg
-                    class="icon icon-sm"
-                    enable-background="new 0 0 24 24"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                    />
-                  </svg>
-                </span>
               </a>
             </div>
           </div>
@@ -33891,44 +33647,40 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
           <a
             href="#"
           >
-            <div
-              class="img-responsive-wrapper"
+            <figure
+              class="figure img-full w-100 img-responsive-wrapper"
             >
-              <div
-                class="img-responsive"
+              <img
+                alt="Alternative Text"
+                class="figure-img img-fluid rounded"
+                src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
+                title="Image Title"
+              />
+              <figcaption
+                class="it-griditem-text-wrapper figure-caption"
               >
-                <div
-                  class="img-wrapper"
+                <span
+                  class="it-griditem-text"
                 >
-                  <img
-                    alt="Alternative Text"
-                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
-                    title="Image Title"
+                  Didascalia
+                </span>
+                <svg
+                  class="icon icon-sm"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    Significato icona
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
-                </div>
-              </div>
-            </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
+                </svg>
+              </figcaption>
+            </figure>
           </a>
         </div>
       </div>
@@ -33941,44 +33693,40 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
           <a
             href="#"
           >
-            <div
-              class="img-responsive-wrapper"
+            <figure
+              class="figure img-full w-100 img-responsive-wrapper"
             >
-              <div
-                class="img-responsive"
+              <img
+                alt="Alternative Text"
+                class="figure-img img-fluid rounded"
+                src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
+                title="Image Title"
+              />
+              <figcaption
+                class="it-griditem-text-wrapper figure-caption"
               >
-                <div
-                  class="img-wrapper"
+                <span
+                  class="it-griditem-text"
                 >
-                  <img
-                    alt="Alternative Text"
-                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
-                    title="Image Title"
+                  Didascalia
+                </span>
+                <svg
+                  class="icon icon-sm"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    Significato icona
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
-                </div>
-              </div>
-            </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
+                </svg>
+              </figcaption>
+            </figure>
           </a>
         </div>
       </div>
@@ -33991,44 +33739,40 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
           <a
             href="#"
           >
-            <div
-              class="img-responsive-wrapper"
+            <figure
+              class="figure img-full w-100 img-responsive-wrapper"
             >
-              <div
-                class="img-responsive"
+              <img
+                alt="Alternative Text"
+                class="figure-img img-fluid rounded"
+                src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
+                title="Image Title"
+              />
+              <figcaption
+                class="it-griditem-text-wrapper figure-caption"
               >
-                <div
-                  class="img-wrapper"
+                <span
+                  class="it-griditem-text"
                 >
-                  <img
-                    alt="Alternative Text"
-                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
-                    title="Image Title"
+                  Didascalia
+                </span>
+                <svg
+                  class="icon icon-sm"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    Significato icona
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
-                </div>
-              </div>
-            </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
+                </svg>
+              </figcaption>
+            </figure>
           </a>
         </div>
       </div>
@@ -34041,44 +33785,40 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
           <a
             href="#"
           >
-            <div
-              class="img-responsive-wrapper"
+            <figure
+              class="figure img-full w-100 img-responsive-wrapper"
             >
-              <div
-                class="img-responsive"
+              <img
+                alt="Alternative Text"
+                class="figure-img img-fluid rounded"
+                src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
+                title="Image Title"
+              />
+              <figcaption
+                class="it-griditem-text-wrapper figure-caption"
               >
-                <div
-                  class="img-wrapper"
+                <span
+                  class="it-griditem-text"
                 >
-                  <img
-                    alt="Alternative Text"
-                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
-                    title="Image Title"
+                  Didascalia
+                </span>
+                <svg
+                  class="icon icon-sm"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    Significato icona
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
-                </div>
-              </div>
-            </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
+                </svg>
+              </figcaption>
+            </figure>
           </a>
         </div>
       </div>
@@ -34091,44 +33831,40 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
           <a
             href="#"
           >
-            <div
-              class="img-responsive-wrapper"
+            <figure
+              class="figure img-full w-100 img-responsive-wrapper"
             >
-              <div
-                class="img-responsive"
+              <img
+                alt="Alternative Text"
+                class="figure-img img-fluid rounded"
+                src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
+                title="Image Title"
+              />
+              <figcaption
+                class="it-griditem-text-wrapper figure-caption"
               >
-                <div
-                  class="img-wrapper"
+                <span
+                  class="it-griditem-text"
                 >
-                  <img
-                    alt="Alternative Text"
-                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
-                    title="Image Title"
+                  Didascalia
+                </span>
+                <svg
+                  class="icon icon-sm"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    Significato icona
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
-                </div>
-              </div>
-            </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
+                </svg>
+              </figcaption>
+            </figure>
           </a>
         </div>
       </div>
@@ -34141,44 +33877,40 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
           <a
             href="#"
           >
-            <div
-              class="img-responsive-wrapper"
+            <figure
+              class="figure img-full w-100 img-responsive-wrapper"
             >
-              <div
-                class="img-responsive"
+              <img
+                alt="Alternative Text"
+                class="figure-img img-fluid rounded"
+                src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
+                title="Image Title"
+              />
+              <figcaption
+                class="it-griditem-text-wrapper figure-caption"
               >
-                <div
-                  class="img-wrapper"
+                <span
+                  class="it-griditem-text"
                 >
-                  <img
-                    alt="Alternative Text"
-                    src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine"
-                    title="Image Title"
+                  Didascalia
+                </span>
+                <svg
+                  class="icon icon-sm"
+                  enable-background="new 0 0 24 24"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    Significato icona
+                  </title>
+                  <path
+                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
                   />
-                </div>
-              </div>
-            </div>
-            <span
-              class="it-griditem-text-wrapper"
-            >
-              <span
-                class="it-griditem-text"
-              >
-                Didascalia
-              </span>
-              <svg
-                class="icon icon-sm"
-                enable-background="new 0 0 24 24"
-                role="img"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                />
-              </svg>
-            </span>
+                </svg>
+              </figcaption>
+            </figure>
           </a>
         </div>
       </div>

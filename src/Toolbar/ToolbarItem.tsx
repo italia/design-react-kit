@@ -67,8 +67,6 @@ export interface ToolbarItemProps extends HTMLAttributes<HTMLElement> {
   onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
 }
 
-const disabledMessage = ' elemento disabilitato';
-
 function ToolbarItemLabel({
   label,
   size,
@@ -83,12 +81,11 @@ function ToolbarItemLabel({
   const showSrText = size && size !== 'large';
   if (disabled) {
     if (!label || showSrText) {
-      return <span className='visually-hidden'>{disabledMessage}</span>;
+      return <span></span>;
     }
     return (
       <>
         <span className='toolbar-label'>{label}</span>
-        <span className='visually-hidden'>{disabledMessage}</span>
       </>
     );
   }

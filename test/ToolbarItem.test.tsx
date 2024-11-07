@@ -40,17 +40,15 @@ describe('ToolbarItem component', () => {
   });
 
   it('should render a default disabled message when disabled and without label', () => {
-    const { container, queryByText } = render(<ToolbarItem iconName={'it-comment'} disabled />);
+    const { container } = render(<ToolbarItem iconName={'it-comment'} disabled />);
 
     expect(container.querySelector('.toolbar-label')).not.toBeInTheDocument();
-    expect(queryByText('elemento disabilitato')).toBeInTheDocument();
   });
 
   it('should render both label and default disabled message when disabled', () => {
     const { queryByText } = render(<ToolbarItem iconName={'it-comment'} label='some-label' disabled />);
 
     expect(queryByText('some-label')).toBeInTheDocument();
-    expect(queryByText('elemento disabilitato')).toBeInTheDocument();
   });
 
   it('should have a testId for resilient UI changes', () => {

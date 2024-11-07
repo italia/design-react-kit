@@ -43,7 +43,8 @@ Di seguito l’esempio
 ### Proporzionale
 
 La griglia “proporzionale” contiene elementi griglia con immagine e testo in overlay.
-Per la corretta formattazione degli spazi di questo tipo di griglia, occorre aggiungere la classe `.it-quilted-grid` al componente `GridList`. La griglia utilizza componenti `Col` classici.
+Per la corretta formattazione degli spazi di questo tipo di griglia, occorre aggiungere la classe `.it-quilted-grid` al componente `GridList` e l'attributo `proportioned` al componente `ResponsiveImage`. 
+La griglia utilizza componenti `Col` classici.
 
 I tipi di immagini utilizzabili sono sostanzialmente 2:
 
@@ -60,9 +61,9 @@ Di seguito l’esempio
 
 Per realizzare l’elemento Masonry è stata usata la classe `.card-columns` che contiene al suo interno gli elementi distribuendoli su più colonne. Per la corretta formattazione degli spazi di questo tipo di griglia, occorre aggiungere la classe `.it-masonry` al componente `GridList`.
 
-Di seguito l’esempio
+Per avere il comportamento del Masonry nella propria applicazione, utilizzare una libreria esterna (nell'esempio seguente utilizziamo [React Layout Masonry](https://sibiraj-s.github.io/react-layout-masonry/)).
 
-<Canvas of={GridItemStories.Masonry} />
+<Canvas of={GridItemStories.MasonryExample} />
 
 ## Argomenti componente
 
