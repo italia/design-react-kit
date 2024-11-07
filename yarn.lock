@@ -8661,6 +8661,11 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.3.1.tgz#e83557dc12eae63a99e003a46388b1dcbb44db7e"
   integrity sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==
 
+react-layout-masonry@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-layout-masonry/-/react-layout-masonry-1.2.0.tgz#675e4032c11715a5b47da2de8e5c59ba0fd72a12"
+  integrity sha512-Nauk/lE+1boEDFonOea6zWXq4QduCS3p+bOsH2iYVSqs5RBtn6yyeeJnPN++EAZsrUNT3Blvlac1CcoHlJ98Vg==
+
 react-popper@^2.2.4:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-2.3.0.tgz#17891c620e1320dce318bad9fede46a5f71c70ba"
@@ -8687,11 +8692,6 @@ react-remove-scroll@2.5.7:
     tslib "^2.1.0"
     use-callback-ref "^1.3.0"
     use-sidecar "^1.1.2"
-
-react-responsive-masonry@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/react-responsive-masonry/-/react-responsive-masonry-2.4.1.tgz#0601089a463efb276624a442216862ff8ca4fce8"
-  integrity sha512-IK7SfU3hB2ZoyYNkRan4jo0gDUdUj1+X1n8INZux1otX1OtDEvL5JRolLlCXOEwVf9wmwJiOLc140UzBpNi9wA==
 
 react-stickup@^1.12.1:
   version "1.12.1"
