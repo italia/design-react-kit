@@ -18825,8 +18825,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticaleGra
           </div>
         </li>
         <li
-          aria-hidden="true"
+          aria-orientation="vertical"
           class="toolbar-divider"
+          role="separator"
         />
         <li>
           <a
@@ -19040,8 +19041,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticaleMed
           </div>
         </li>
         <li
-          aria-hidden="true"
+          aria-orientation="vertical"
           class="toolbar-divider"
+          role="separator"
         />
         <li>
           <a
@@ -19250,8 +19252,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticalePic
           </div>
         </li>
         <li
-          aria-hidden="true"
+          aria-orientation="vertical"
           class="toolbar-divider"
+          role="separator"
         />
         <li>
           <a
@@ -19417,8 +19420,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioWithDivider 
           </a>
         </li>
         <li
-          aria-hidden="true"
+          aria-orientation="vertical"
           class="toolbar-divider"
+          role="separator"
         />
         <li>
           <a
@@ -19472,8 +19476,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioWithDivider 
           </a>
         </li>
         <li
-          aria-hidden="true"
+          aria-orientation="vertical"
           class="toolbar-divider"
+          role="separator"
         />
         <li>
           <a
@@ -30085,12 +30090,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav Esempio 1
     class="thumb-nav"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30102,12 +30101,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav Esempio 1
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30119,12 +30112,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav Esempio 1
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30145,12 +30132,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
     class="thumb-nav thumb-nav-auto thumb-nav-auto-3"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30162,12 +30143,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30179,12 +30154,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30196,12 +30165,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30213,12 +30176,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30230,12 +30187,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30256,12 +30207,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
     class="thumb-nav thumb-nav-auto thumb-nav-auto-5"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30273,12 +30218,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30290,12 +30229,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30307,12 +30240,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30324,12 +30251,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30341,12 +30262,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioAu
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30367,12 +30282,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioBl
     class="thumb-nav thumb-nav-black"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30384,12 +30293,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioBl
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30401,12 +30304,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioBl
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30427,12 +30324,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioFi
     class="thumb-nav thumb-nav-fixed"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30444,12 +30335,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioFi
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30461,12 +30346,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioFi
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30478,12 +30357,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioFi
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30495,12 +30368,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioFi
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30512,12 +30379,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioFi
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30538,12 +30399,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioNo
     class="thumb-nav thumb-nav-nozoom"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30555,12 +30410,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioNo
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30572,12 +30421,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioNo
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30598,12 +30441,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioPr
     class="thumb-nav thumb-nav-primary"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30615,12 +30452,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioPr
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30632,12 +30463,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioPr
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30658,12 +30483,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioSm
     class="thumb-nav thumb-nav-small"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30675,12 +30494,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioSm
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30692,12 +30505,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioSm
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30718,12 +30525,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioVe
     class="thumb-nav thumb-nav-vertical"
   >
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30735,12 +30536,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioVe
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30752,12 +30547,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav EsempioVe
       </a>
     </li>
     <li>
-      <img
-        alt=""
-        aria-hidden="true"
-        class="thumb-nav-resizer"
-        src="https://picsum.photos/240/160?image=1056"
-      />
       <a
         class="ratio ratio-3x2"
         href="#"
@@ -30786,12 +30575,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav Overlay 1
       class="thumb-nav thumb-nav-small thumb-nav-bottom"
     >
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30803,12 +30586,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav Overlay 1
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="active ratio ratio-3x2"
           href="#"
@@ -30820,12 +30597,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav Overlay 1
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30837,12 +30608,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav Overlay 1
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30872,12 +30637,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayLe
       class="thumb-nav thumb-nav-small thumb-nav-vertical thumb-nav-left"
     >
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30889,12 +30648,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayLe
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="active ratio ratio-3x2"
           href="#"
@@ -30906,12 +30659,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayLe
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30923,12 +30670,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayLe
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30958,12 +30699,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayRi
       class="thumb-nav thumb-nav-small thumb-nav-vertical thumb-nav-right"
     >
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -30975,12 +30710,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayRi
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="active ratio ratio-3x2"
           href="#"
@@ -30992,12 +30721,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayRi
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -31009,12 +30732,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayRi
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -31044,12 +30761,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayTo
       class="thumb-nav thumb-nav-small thumb-nav-top"
     >
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -31061,12 +30772,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayTo
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="active ratio ratio-3x2"
           href="#"
@@ -31078,12 +30783,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayTo
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -31095,12 +30794,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/ThumbNav OverlayTo
         </a>
       </li>
       <li>
-        <img
-          alt=""
-          aria-hidden="true"
-          class="thumb-nav-resizer"
-          src="https://picsum.photos/240/160?image=1056"
-        />
         <a
           class="ratio ratio-3x2"
           href="#"
@@ -33141,7 +32834,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
 </div>
 `;
 
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immagini Masonry 1`] = `
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immagini MasonryExample 1`] = `
 <div>
   <div
     class="it-grid-list-wrapper it-image-label-grid it-masonry"
@@ -33150,555 +32843,570 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
       class="card-columns"
     >
       <div
-        class="col-12"
+        data-masonry-id="Masonry-:r0:"
+        style="display: flex;"
       >
         <div
-          class="it-grid-item-wrapper"
+          data-masonry-column="1"
+          style="display: flex; flex: 1; flex-direction: column;"
         >
-          <a
-            href="#"
+          <div
+            class="col-12"
           >
-            <figure
-              class="figure img-full w-100 img-responsive-wrapper"
+            <div
+              class="it-grid-item-wrapper"
             >
-              <img
-                alt="Alternative Text"
-                class="figure-img img-fluid rounded"
-                src="https://placehold.co/400x300/ebebeb/808080/?text=Immagine"
-                title="Image Title"
-              />
-              <figcaption
-                class="it-griditem-text-wrapper figure-caption"
+              <a
+                href="#"
               >
-                <span
-                  class="it-griditem-text"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
                 >
-                  Didascalia
-                </span>
-                <svg
-                  class="icon icon-sm"
-                  enable-background="new 0 0 24 24"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Significato icona
-                  </title>
-                  <path
-                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x300/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
                   />
-                </svg>
-              </figcaption>
-            </figure>
-          </a>
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12"
+          >
+            <div
+              class="it-grid-item-wrapper"
+            >
+              <a
+                href="#"
+              >
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x700/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12"
+          >
+            <div
+              class="it-grid-item-wrapper"
+            >
+              <a
+                href="#"
+              >
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12"
+          >
+            <div
+              class="it-grid-item-wrapper"
+            >
+              <a
+                href="#"
+              >
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x600/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12"
+          >
+            <div
+              class="it-grid-item-wrapper"
+            >
+              <a
+                href="#"
+              >
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x400/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12"
+          >
+            <div
+              class="it-grid-item-wrapper"
+            >
+              <a
+                href="#"
+              >
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
+                  />
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div
-        class="col-12"
-      >
         <div
-          class="it-grid-item-wrapper"
+          data-masonry-column="2"
+          style="display: flex; flex: 1; flex-direction: column;"
         >
-          <a
-            href="#"
+          <div
+            class="col-12"
           >
-            <figure
-              class="figure img-full w-100 img-responsive-wrapper"
+            <div
+              class="it-grid-item-wrapper"
             >
-              <img
-                alt="Alternative Text"
-                class="figure-img img-fluid rounded"
-                src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
-                title="Image Title"
-              />
-              <figcaption
-                class="it-griditem-text-wrapper figure-caption"
+              <a
+                href="#"
               >
-                <span
-                  class="it-griditem-text"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
                 >
-                  Didascalia
-                </span>
-                <svg
-                  class="icon icon-sm"
-                  enable-background="new 0 0 24 24"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Significato icona
-                  </title>
-                  <path
-                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
                   />
-                </svg>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12"
           >
-            <figure
-              class="figure img-full w-100 img-responsive-wrapper"
+            <div
+              class="it-grid-item-wrapper"
             >
-              <img
-                alt="Alternative Text"
-                class="figure-img img-fluid rounded"
-                src="https://placehold.co/400x700/ebebeb/808080/?text=Immagine"
-                title="Image Title"
-              />
-              <figcaption
-                class="it-griditem-text-wrapper figure-caption"
+              <a
+                href="#"
               >
-                <span
-                  class="it-griditem-text"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
                 >
-                  Didascalia
-                </span>
-                <svg
-                  class="icon icon-sm"
-                  enable-background="new 0 0 24 24"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Significato icona
-                  </title>
-                  <path
-                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x600/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
                   />
-                </svg>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12"
           >
-            <figure
-              class="figure img-full w-100 img-responsive-wrapper"
+            <div
+              class="it-grid-item-wrapper"
             >
-              <img
-                alt="Alternative Text"
-                class="figure-img img-fluid rounded"
-                src="https://placehold.co/400x600/ebebeb/808080/?text=Immagine"
-                title="Image Title"
-              />
-              <figcaption
-                class="it-griditem-text-wrapper figure-caption"
+              <a
+                href="#"
               >
-                <span
-                  class="it-griditem-text"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
                 >
-                  Didascalia
-                </span>
-                <svg
-                  class="icon icon-sm"
-                  enable-background="new 0 0 24 24"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Significato icona
-                  </title>
-                  <path
-                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x400/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
                   />
-                </svg>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12"
           >
-            <figure
-              class="figure img-full w-100 img-responsive-wrapper"
+            <div
+              class="it-grid-item-wrapper"
             >
-              <img
-                alt="Alternative Text"
-                class="figure-img img-fluid rounded"
-                src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
-                title="Image Title"
-              />
-              <figcaption
-                class="it-griditem-text-wrapper figure-caption"
+              <a
+                href="#"
               >
-                <span
-                  class="it-griditem-text"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
                 >
-                  Didascalia
-                </span>
-                <svg
-                  class="icon icon-sm"
-                  enable-background="new 0 0 24 24"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Significato icona
-                  </title>
-                  <path
-                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
                   />
-                </svg>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12"
           >
-            <figure
-              class="figure img-full w-100 img-responsive-wrapper"
+            <div
+              class="it-grid-item-wrapper"
             >
-              <img
-                alt="Alternative Text"
-                class="figure-img img-fluid rounded"
-                src="https://placehold.co/400x400/ebebeb/808080/?text=Immagine"
-                title="Image Title"
-              />
-              <figcaption
-                class="it-griditem-text-wrapper figure-caption"
+              <a
+                href="#"
               >
-                <span
-                  class="it-griditem-text"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
                 >
-                  Didascalia
-                </span>
-                <svg
-                  class="icon icon-sm"
-                  enable-background="new 0 0 24 24"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Significato icona
-                  </title>
-                  <path
-                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x600/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
                   />
-                </svg>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12"
           >
-            <figure
-              class="figure img-full w-100 img-responsive-wrapper"
+            <div
+              class="it-grid-item-wrapper"
             >
-              <img
-                alt="Alternative Text"
-                class="figure-img img-fluid rounded"
-                src="https://placehold.co/400x600/ebebeb/808080/?text=Immagine"
-                title="Image Title"
-              />
-              <figcaption
-                class="it-griditem-text-wrapper figure-caption"
+              <a
+                href="#"
               >
-                <span
-                  class="it-griditem-text"
+                <figure
+                  class="figure img-full w-100 img-responsive-wrapper"
                 >
-                  Didascalia
-                </span>
-                <svg
-                  class="icon icon-sm"
-                  enable-background="new 0 0 24 24"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Significato icona
-                  </title>
-                  <path
-                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                  <img
+                    alt="Alternative Text"
+                    class="figure-img img-fluid rounded"
+                    src="https://placehold.co/400x400/ebebeb/808080/?text=Immagine"
+                    title="Image Title"
                   />
-                </svg>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
-          >
-            <figure
-              class="figure img-full w-100 img-responsive-wrapper"
-            >
-              <img
-                alt="Alternative Text"
-                class="figure-img img-fluid rounded"
-                src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
-                title="Image Title"
-              />
-              <figcaption
-                class="it-griditem-text-wrapper figure-caption"
-              >
-                <span
-                  class="it-griditem-text"
-                >
-                  Didascalia
-                </span>
-                <svg
-                  class="icon icon-sm"
-                  enable-background="new 0 0 24 24"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Significato icona
-                  </title>
-                  <path
-                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                  />
-                </svg>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
-          >
-            <figure
-              class="figure img-full w-100 img-responsive-wrapper"
-            >
-              <img
-                alt="Alternative Text"
-                class="figure-img img-fluid rounded"
-                src="https://placehold.co/400x400/ebebeb/808080/?text=Immagine"
-                title="Image Title"
-              />
-              <figcaption
-                class="it-griditem-text-wrapper figure-caption"
-              >
-                <span
-                  class="it-griditem-text"
-                >
-                  Didascalia
-                </span>
-                <svg
-                  class="icon icon-sm"
-                  enable-background="new 0 0 24 24"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Significato icona
-                  </title>
-                  <path
-                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                  />
-                </svg>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
-          >
-            <figure
-              class="figure img-full w-100 img-responsive-wrapper"
-            >
-              <img
-                alt="Alternative Text"
-                class="figure-img img-fluid rounded"
-                src="https://placehold.co/400x600/ebebeb/808080/?text=Immagine"
-                title="Image Title"
-              />
-              <figcaption
-                class="it-griditem-text-wrapper figure-caption"
-              >
-                <span
-                  class="it-griditem-text"
-                >
-                  Didascalia
-                </span>
-                <svg
-                  class="icon icon-sm"
-                  enable-background="new 0 0 24 24"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Significato icona
-                  </title>
-                  <path
-                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                  />
-                </svg>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
-          >
-            <figure
-              class="figure img-full w-100 img-responsive-wrapper"
-            >
-              <img
-                alt="Alternative Text"
-                class="figure-img img-fluid rounded"
-                src="https://placehold.co/400x500/ebebeb/808080/?text=Immagine"
-                title="Image Title"
-              />
-              <figcaption
-                class="it-griditem-text-wrapper figure-caption"
-              >
-                <span
-                  class="it-griditem-text"
-                >
-                  Didascalia
-                </span>
-                <svg
-                  class="icon icon-sm"
-                  enable-background="new 0 0 24 24"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Significato icona
-                  </title>
-                  <path
-                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                  />
-                </svg>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
-      <div
-        class="col-12"
-      >
-        <div
-          class="it-grid-item-wrapper"
-        >
-          <a
-            href="#"
-          >
-            <figure
-              class="figure img-full w-100 img-responsive-wrapper"
-            >
-              <img
-                alt="Alternative Text"
-                class="figure-img img-fluid rounded"
-                src="https://placehold.co/400x400/ebebeb/808080/?text=Immagine"
-                title="Image Title"
-              />
-              <figcaption
-                class="it-griditem-text-wrapper figure-caption"
-              >
-                <span
-                  class="it-griditem-text"
-                >
-                  Didascalia
-                </span>
-                <svg
-                  class="icon icon-sm"
-                  enable-background="new 0 0 24 24"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    Significato icona
-                  </title>
-                  <path
-                    d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
-                  />
-                </svg>
-              </figcaption>
-            </figure>
-          </a>
+                  <figcaption
+                    class="it-griditem-text-wrapper figure-caption"
+                  >
+                    <span
+                      class="it-griditem-text"
+                    >
+                      Didascalia
+                    </span>
+                    <svg
+                      class="icon icon-sm"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        Significato icona
+                      </title>
+                      <path
+                        d="m19 12-2.9 2.9-.7-.8 2.1-2.1-2.1-2.1.7-.8L19 12zM7.9 9.1 5 12l2.9 2.9.7-.8L6.5 12l2.1-2.1-.7-.8zM22 12c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2s10 4.5 10 10zm-1 0c0-5-4-9-9-9s-9 4-9 9 4 9 9 9 9-4 9-9zM9.6 16.5l1 .3 3.7-9.3-.9-.3-3.8 9.3z"
+                      />
+                    </svg>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

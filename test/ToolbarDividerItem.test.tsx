@@ -10,9 +10,9 @@ describe('ToolbarDividerItem component', () => {
     expect(container.querySelector('li')).toHaveClass('toolbar-divider');
   });
 
-  it('should have aria-hidden attribute and it should be true', () => {
+  it('should have role=separator and aria-orientation=vertical', () => {
     const { container } = render(<ToolbarDividerItem />);
-
-    expect(container.firstChild).toHaveAttribute('aria-hidden', 'true');
+    expect(container.firstChild).toHaveAttribute('role', 'separator');
+    expect(container.firstChild).toHaveAttribute('aria-orientation', 'vertical');
   });
 });
