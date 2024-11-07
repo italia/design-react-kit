@@ -17,11 +17,11 @@ export default meta;
 type Story = StoryObj<typeof Forward>;
 
 const EsempiHooks = () => {
-  const ref = React.useRef(null);
+  // const ref = React.useRef(null);
   return (
     <div>
       <Card>
-        <Forward scrollToRef={ref}>
+        <Forward href='#hereSection' aria-label='Vai a: Sezione di esempio'>
           <Icon color='primary' icon='it-expand' />
         </Forward>
       </Card>
@@ -77,7 +77,7 @@ const EsempiHooks = () => {
           commodo ea sit eu.
         </p>
       </div>
-      <div ref={ref}>Scroll to Here</div>
+      <div id="hereSection">Scroll to Here</div>
     </div>
   )
 
