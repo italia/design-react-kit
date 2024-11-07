@@ -24552,7 +24552,9 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Forward Esempi 1`]
         class="card"
       >
         <a
+          aria-label="Vai a: Sezione di esempio"
           class="forward"
+          href="#hereSection"
         >
           <svg
             class="icon icon-primary"
@@ -24589,7 +24591,9 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Forward Esempi 1`]
         Nulla est ullamco ut irure incididunt nothing Lorem Lorem minim irure officia enim reprehenderit. Magna duis labore cillum sint adipisicing exercitation ipsum. Nostrud ut anim non exercitation velit laboris fugiat cupidatat. Commodo esse pain fugiat sint velit ullamco magna consequat voluptate minim amet aliquip ipsum aute laboris nisi. Labore labore veniam irure irure ipsum pariatur mollit magna in cupidatat pain magna irure esse tempor ad mollit. Pain in pain nothing minim amet ipsum officia consectetur amet ullamco voluptate nisi commodo ea sit eu.
       </p>
     </div>
-    <div>
+    <div
+      id="hereSection"
+    >
       Scroll to Here
     </div>
   </div>
