@@ -38,7 +38,7 @@ export const Esempi: Story = {
                   <CardTitle tag='h4' className='h5 big-heading'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                   </CardTitle>
-                  <CardCategory>Category</CardCategory>
+                  <CardCategory textDescription='Categoria: '>Category</CardCategory>
                   <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua.
@@ -75,7 +75,7 @@ export const Esempi: Story = {
                   <CardTitle tag='h4' className='h5 big-heading'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                   </CardTitle>
-                  <CardCategory date='10/12/2018'>Category</CardCategory>
+                  <CardCategory textDescription='Categoria: ' dateDescription='Data evento: ' date='10/12/2018'>Category</CardCategory>
                   <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua.
@@ -112,7 +112,7 @@ export const Esempi: Story = {
                   <CardTitle tag='h4' className='h5 big-heading'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                   </CardTitle>
-                  <CardCategory date='10/12/2018'>Category</CardCategory>
+                  <CardCategory textDescription='Categoria: ' dateDescription='Data evento: ' date='10/12/2018'>Category</CardCategory>
                   <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua.
@@ -149,7 +149,7 @@ export const Esempi: Story = {
                   <CardTitle tag='h4' className='h5 big-heading'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                   </CardTitle>
-                  <CardCategory date='10/12/2018'>Category</CardCategory>
+                  <CardCategory textDescription='Categoria: ' dateDescription='Data evento: ' date='10/12/2018'>Category</CardCategory>
                   <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua.

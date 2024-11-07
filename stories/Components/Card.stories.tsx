@@ -95,33 +95,6 @@ export const SimpleArticle: Story = {
   )
 };
 
-//Componente non usato
-/* export const SimpleArticleWithIcon: Story = {
-  render: () => (
-    <Row>
-      <Col xs='12' lg='6'>
-
-        <Card>
-          <CardBody>
-            <CardCategory date='10/12/2018' iconName='it-calendar'>
-              Category
-            </CardCategory>
-            <CardTitle tag='h5' className='big-heading'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-            </CardTitle>
-            <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </CardText>
-            <CardSignature>di Federico De Paolis</CardSignature>
-            <CardReadMore text='Leggi di più' iconName='it-arrow-right' />
-          </CardBody>
-        </Card>
-      </Col>
-    </Row>
-  )
-};
- */
 export const CardIcon: Story = {
   render: () => (
     <Row>
@@ -294,40 +267,6 @@ export const BigCardWithTag: Story = {
     </Row>
   )
 };
-
-//Componente non usato
-/* export const CardWithImageAndDate: Story = {
-  render: () => (
-    <Row>
-      <Col xs='12' lg='6'>
-        <Card className='card-bg card-img no-after'>
-          <div className='img-responsive-wrapper'>
-            <div className='img-responsive img-responsive-panoramic'>
-              <figure className='img-wrapper'>
-                <img
-                  src='https://placehold.co/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
-                  title='img title'
-                  alt='imagealt'
-                />
-              </figure>
-              <div className='card-calendar d-flex flex-column justify-content-center'>
-                <span className='card-date'>31</span>
-                <span className='card-day'>novembre</span>
-              </div>
-            </div>
-          </div>
-          <CardBody>
-            <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </CardTitle>
-            <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
-          </CardBody>
-        </Card>
-
-      </Col>
-    </Row>
-  )
-}; */
 
 export const CardsWithImages: Story = {
   render: () => (
