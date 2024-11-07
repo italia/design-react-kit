@@ -14,12 +14,18 @@ export const Forward: FC<ForwardProps> = ({ className, children, testId, ...attr
   return (
     <a
       className={classes}
-      // onClick={() =>
-      //   scrollToRef.current?.scrollIntoView({
-      //     behavior: 'smooth',
-      //     block: 'start'
-      //   })
-      // }
+      onClick={(e) => {
+        e.preventDefault()
+        if (attributes.href) {
+          const scrollToRef = document.querySelector(attributes.href)
+          if (scrollToRef) {
+            scrollToRef.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            })
+          }
+        }
+      }}
       data-testid={testId}
       {...attributes}
     >
