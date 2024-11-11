@@ -20588,7 +20588,7 @@ exports[`Stories Snapshots Documentazione/Form/Input AreaDiTesto 1`] = `
       Esempio di area di testo
     </label>
     <textarea
-      class=""
+      class="form-control"
       rows="3"
     />
     <div
@@ -20611,7 +20611,7 @@ exports[`Stories Snapshots Documentazione/Form/Input AreaDiTestoConSegnaposto 1`
     </label>
     <textarea
       aria-describedby="example-textarea-placeholderDescription"
-      class=""
+      class="form-control"
       id="example-textarea-placeholder"
       placeholder="Testo di esempio"
       rows="3"

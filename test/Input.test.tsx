@@ -1,6 +1,6 @@
-import React from 'react';
-import { act, fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import { act, fireEvent, render, screen } from '@testing-library/react';
+import React from 'react';
 
 import { Button, Icon, Input, preloadIcons } from '../src';
 
@@ -141,4 +141,12 @@ test('should have an left icon and right button', () => {
     const svg = span.querySelector('svg');
     if (svg) expect(svg.nodeName).toBe('svg');
   }
+});
+
+it('should have form-control as class', () => {
+  const { container } = render(
+    <Input />
+  );
+
+  expect(container.firstChild).toHaveClass('form-control');
 });

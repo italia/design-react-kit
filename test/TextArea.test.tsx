@@ -1,6 +1,6 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
+import React from 'react';
 
 import { TextArea } from '../src';
 
@@ -33,4 +33,12 @@ test('should have a testId for resilient UI changes', () => {
   render(<TextArea testId='test-id-text-area' />);
 
   expect(screen.getByTestId('test-id-text-area')).toBeTruthy();
+});
+
+it('should have form-control as class', () => {
+  const { container } = render(
+    <TextArea />
+  );
+
+  expect(container.firstChild).toHaveClass('form-control');
 });
