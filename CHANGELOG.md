@@ -1,3 +1,13 @@
+## [5.4.1](https://github.com/italia/design-react-kit/compare/v5.4.0...v5.4.1) (2024-11-11)
+
+
+### Bug Fixes
+
+* form control class missing for text area ([be15805](https://github.com/italia/design-react-kit/commit/be15805128978bb02a3ed537f52f5427c9a8e990))
+* remove classname from input wrapper ([5fe3186](https://github.com/italia/design-react-kit/commit/5fe3186574a5b33adf5d1085f01320dcc4b8abf5))
+
+
+
 # [5.4.0](https://github.com/italia/design-react-kit/compare/v5.3.0...v5.4.0) (2024-11-07)
 
 
