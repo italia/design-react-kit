@@ -20487,7 +20487,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxMixedButton 1`] 
         class="form-check"
       >
         <div
-          class="semi-checked form-group"
+          class="form-group"
         >
           <label
             class=" "
@@ -20901,7 +20901,7 @@ exports[`Stories Snapshots Documentazione/Form/Input InputConIconaOBottoni 1`] =
 exports[`Stories Snapshots Documentazione/Form/Input InputDatepicker 1`] = `
 <div>
   <div
-    class="active form-group"
+    class="form-group"
   >
     <label
       class="active "
@@ -20924,7 +20924,7 @@ exports[`Stories Snapshots Documentazione/Form/Input InputDatepicker 1`] = `
 exports[`Stories Snapshots Documentazione/Form/Input InputHourpicker 1`] = `
 <div>
   <div
-    class="active form-group"
+    class="form-group"
   >
     <label
       class="active "
