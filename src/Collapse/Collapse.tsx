@@ -1,5 +1,5 @@
-import React, { ElementType, FC, HTMLAttributes, Ref } from 'react';
 import classNames from 'classnames';
+import React, { ElementType, FC, HTMLAttributes, Ref } from 'react';
 
 import { Collapse as CollapseBase } from 'reactstrap';
 import { CSSModule } from 'reactstrap/types/lib/utils';
@@ -58,14 +58,13 @@ export const Collapse: FC<CollapseProps> = ({
     'navbar-collapse': 'navbar-collapsable',
     ...cssModule
   };
-  if (megamenu || navbar || header) {
+  if (megamenu || navbar) {
     const classes = classNames(className, 'navbar-collapse', {
       expanded: isOpen
     });
     const style = { display: isOpen ? 'block' : 'none' };
     return (
       <CollapseBase
-        theme='dark'
         className={classes}
         cssModule={newCssModule}
         navbar={navbar}

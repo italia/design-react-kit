@@ -24971,27 +24971,8 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                     </svg>
                   </a>
                   <div
-                    class="navbar-collapsable expanded collapse"
-                    style="display: block;"
-                    theme="dark"
+                    class="link-list-wrapper collapse show"
                   >
-                    <div
-                      class="overlay"
-                      style="display: block;"
-                    />
-                    <div
-                      class="close-div visually-hidden"
-                    >
-                      <button
-                        class="btn close-menu"
-                        type="button"
-                      >
-                        <span
-                          class="it-close"
-                        />
-                        close
-                      </button>
-                    </div>
                     <div
                       class="link-list-wrapper"
                     >
@@ -25309,7 +25290,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                   <div
                     class="navbar-collapsable collapse navbar-collapsable"
                     style="display: none;"
-                    theme="dark"
                   >
                     <div
                       class="overlay"
@@ -25804,7 +25784,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
               <div
                 class="navbar-collapsable collapse navbar-collapsable"
                 style="display: none;"
-                theme="dark"
               >
                 <div
                   class="overlay"
@@ -26298,7 +26277,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
               <div
                 class="navbar-collapsable collapse navbar-collapsable"
                 style="display: none;"
-                theme="dark"
               >
                 <div
                   class="overlay"
@@ -26446,12 +26424,13 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
             <a
               class="d-lg-block d-none navbar-brand"
             >
-              Ente appartenenza/Owner
+              Ente appartenenza
             </a>
             <div
               class="nav-mobile"
             >
               <nav
+                aria-label="Navigazione accessoria"
                 class=""
               >
                 <a
@@ -26460,7 +26439,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                   href="#"
                 >
                   <span>
-                    Ente appartenenza/Owner
+                    Ente appartenenza
                   </span>
                   <svg
                     class="icon"
@@ -26476,51 +26455,28 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                   </svg>
                 </a>
                 <div
-                  class="navbar-collapsable collapse"
-                  style="display: none;"
-                  theme="dark"
+                  class="link-list-wrapper collapse"
                 >
-                  <div
-                    class="overlay"
-                    style="display: none;"
-                  />
-                  <div
-                    class="close-div visually-hidden"
+                  <ul
+                    class="link-list"
                   >
-                    <button
-                      class="btn close-menu"
-                      type="button"
-                    >
-                      <span
-                        class="it-close"
-                      />
-                      close
-                    </button>
-                  </div>
-                  <div
-                    class="link-list-wrapper"
-                  >
-                    <ul
-                      class="link-list"
-                    >
-                      <li>
-                        <a
-                          class="list-item"
-                          href="#"
-                        >
-                          Link 1
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="active list-item"
-                          href="#"
-                        >
-                          Link 2 Active
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li>
+                      <a
+                        class="list-item"
+                        href="#"
+                      >
+                        Link 1
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="active list-item"
+                        href="#"
+                      >
+                        Link 2 Active
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </nav>
             </div>
@@ -26783,7 +26739,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
-        theme="dark"
       >
         <div
           class="overlay"
@@ -27100,7 +27055,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
-        theme="dark"
       >
         <div
           class="overlay"
@@ -27481,7 +27435,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
-        theme="dark"
       >
         <div
           class="overlay"
@@ -27804,7 +27757,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConIntest
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
-        theme="dark"
       >
         <div
           class="overlay"
@@ -28171,7 +28123,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
-        theme="dark"
       >
         <div
           class="overlay"
@@ -28861,7 +28812,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
               class="navbar-collapsable collapse navbar-collapsable"
               id="navbarNavB"
               style="display: none;"
-              theme="dark"
             >
               <div
                 class="overlay"
@@ -29273,7 +29223,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
               class="navbar-collapsable collapse navbar-collapsable"
               id="navbarNavA"
               style="display: none;"
-              theme="dark"
             >
               <div
                 class="overlay"
@@ -29685,7 +29634,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
               class="navbar-collapsable collapse navbar-collapsable"
               id="navbarNavB"
               style="display: none;"
-              theme="dark"
             >
               <div
                 class="overlay"
