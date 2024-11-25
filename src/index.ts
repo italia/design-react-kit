@@ -37,8 +37,6 @@ export {
   PopoverBody,
   PopoverHeader,
   Row,
-  TabContent,
-  TabPane,
   Table,
   Tooltip,
   UncontrolledAlert,
@@ -46,6 +44,8 @@ export {
   UncontrolledTooltip,
   Util
 } from 'reactstrap';
+
+export { TabContainer, TabContent, TabPane } from 'react-bootstrap';
 
 export { Accordion } from './Accordion/Accordion';
 export { AccordionBody } from './Accordion/AccordionBody';
@@ -135,6 +135,9 @@ export { StepperDots } from './Stepper/StepperDots';
 export { StepperHeader } from './Stepper/StepperHeader';
 export { StepperHeaderElement } from './Stepper/StepperHeaderElement';
 export { StepperNav } from './Stepper/StepperNav';
+export { TabNav } from './Tab/TabNav';
+export { TabNavItem } from './Tab/TabNavItem';
+export { TabNavLink } from './Tab/TabNavLink';
 export { ThumbNav } from './ThumbNav/ThumbNav';
 export { ThumbNavItem } from './ThumbNav/ThumbNavItem';
 export { TimelinePin } from './Timeline/TimelinePin';
@@ -241,6 +244,9 @@ export type { StepperDotsProps } from './Stepper/StepperDots';
 export type { StepperHeaderProps } from './Stepper/StepperHeader';
 export type { StepperHeaderElementProps } from './Stepper/StepperHeaderElement';
 export type { StepperNavProps } from './Stepper/StepperNav';
+export type { TabNavProps } from './Tab/TabNav';
+export type { TabNavItemProps } from './Tab/TabNavItem';
+export type { TabNavLinkProps } from './Tab/TabNavLink';
 export type { ThumbNavProps } from './ThumbNav/ThumbNav';
 export type { ThumbNavItemProps } from './ThumbNav/ThumbNavItem';
 export type { TimelinePinProps } from './Timeline/TimelinePin';
@@ -289,11 +295,11 @@ export type {
   PopoverHeaderProps,
   PopoverProps,
   RowProps,
-  TabContentProps,
-  TabPaneProps,
   TableProps,
   TooltipProps,
   UncontrolledAlertProps,
   UncontrolledCollapseProps,
   UncontrolledTooltipProps
 } from 'reactstrap';
+
+export type { TabContainerProps, TabContentProps, TabPaneProps } from 'react-bootstrap';
