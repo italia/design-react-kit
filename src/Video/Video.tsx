@@ -21,7 +21,10 @@ export interface VideoProps extends InputProps {
 
 export const Video: FC<VideoProps> = ({ label, testId }) => {
   useEffect(() => {
-    new VideoPlayer(document.querySelector('video'));
+    const el = document.querySelector('video');
+    if (el) {
+      new VideoPlayer(el);
+    }
   });
   return (
     <div className="row" data-testid={testId}>
