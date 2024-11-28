@@ -20,10 +20,14 @@ export interface VideoProps extends InputProps {
 }
 
 export const Video: FC<VideoProps> = ({ label, testId }) => {
+  let vpInstance:VideoPlayer;
   useEffect(() => {
     const el = document.querySelector('video');
     if (el) {
-      new VideoPlayer(el);
+      vpInstance = new VideoPlayer(el);
+      setTimeout(() => {
+        console.log(vpInstance.player.log) // Con .player puoi usare play(), stop() ecc ..
+      }, 3000);
     }
   });
   return (
