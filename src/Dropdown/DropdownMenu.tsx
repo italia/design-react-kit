@@ -1,6 +1,9 @@
 import React, { FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import { DropdownMenu as BSDRopdownMenu } from 'reactstrap';
+
+import './dropdown.css'
+
 export interface DropdownMenuProps extends HTMLAttributes<HTMLElement> {
   /** Classi aggiuntive da usare per il componente Button */
   className?: string;
