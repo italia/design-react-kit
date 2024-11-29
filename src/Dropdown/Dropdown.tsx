@@ -1,7 +1,7 @@
 import classNames from 'classnames';
-import React, { ElementType, FC, HTMLAttributes } from 'react';
-import { Dropdown as BSDRopdown } from 'reactstrap';
-export interface DropdownProps extends HTMLAttributes<HTMLElement> {
+import React, { ElementType, FC } from 'react';
+import { Dropdown as BSDRopdown, DropdownProps as  BSDRopdownProps} from 'reactstrap';
+export interface DropdownProps extends BSDRopdownProps {
   tag?: ElementType;
   inNavbar?: boolean;
   textCenter?: boolean;
