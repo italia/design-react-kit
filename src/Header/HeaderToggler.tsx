@@ -42,7 +42,6 @@ export const HeaderToggler = ({ className, tag, type, testId, ...attributes }: H
       {...attributes}
       tag={tag || defaultTag}
       type={type || defaultType}
-      href='#'
       data-testid={testId}
     />
   );
