@@ -42,6 +42,8 @@ export interface CollapseProps extends HTMLAttributes<HTMLElement> {
   onOverlayClick?: () => void;
   /** Da utilizzare per impostare un riferimento all'elemento DOM */
   innerRef?: Ref<HTMLElement>;
+  /** Testo pulsante di chiusura per screen reader */
+  closeSrText: string,
   testId?: string;
 }
 
@@ -55,6 +57,7 @@ export const Collapse: FC<CollapseProps> = ({
   onOverlayClick,
   cssModule,
   testId,
+  closeSrText='Nascondi la navigazione',
   ...attributes
 }) => {
   const newCssModule = {
@@ -85,7 +88,7 @@ export const Collapse: FC<CollapseProps> = ({
         <div className={overlayClasses} style={style} onClick={onOverlayClick}></div>
         <div className='close-div'>
           <button className='btn close-menu' type='button' onClick={onOverlayClick}>
-            <span className="visually-hidden">Nascondi la navigazione</span>
+            <span className="visually-hidden">{closeSrText}</span>
             <Icon color='white' icon='it-close-big'/>
           </button>
         </div>
