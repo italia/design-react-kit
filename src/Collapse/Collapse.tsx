@@ -4,6 +4,9 @@ import React, { ElementType, FC, HTMLAttributes, Ref } from 'react';
 import { Collapse as CollapseBase } from 'reactstrap';
 import { CSSModule } from 'reactstrap/types/lib/utils';
 
+import { Icon } from '../Icon/Icon';
+
+
 // Copy over from reactstrap and add new ones
 export interface CollapseProps extends HTMLAttributes<HTMLElement> {
   /** Indica se il menu HeaderNav sia aperto o meno. Usato unicamente nel caso della HeaderNav, ovvero con navbar e header entrambi true */
@@ -63,6 +66,13 @@ export const Collapse: FC<CollapseProps> = ({
       expanded: isOpen
     });
     const style = { display: isOpen ? 'block' : 'none' };
+    const overlayClasses = classNames(
+      'overlay',
+      {
+        'fade' : isOpen,
+        'show' : isOpen
+      }
+    )
     return (
       <CollapseBase
         className={classes}
@@ -72,10 +82,11 @@ export const Collapse: FC<CollapseProps> = ({
         data-testid={testId}
         {...attributes}
       >
-        <div className='overlay' style={style} onClick={onOverlayClick}></div>
-        <div className='close-div visually-hidden'>
-          <button className='btn close-menu' type='button'>
-            <span className='it-close'></span>close
+        <div className={overlayClasses} style={style} onClick={onOverlayClick}></div>
+        <div className='close-div'>
+          <button className='btn close-menu' type='button' onClick={onOverlayClick}>
+            <span className="visually-hidden">Nascondi la navigazione</span>
+            <Icon color='white' icon='it-close-big'/>
           </button>
         </div>
         {megamenu ? <div className='menu-wrapper '>{children}</div> : <>{children}</>}

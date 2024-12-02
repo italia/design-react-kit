@@ -76,12 +76,14 @@ const CenterHeader = ({ theme }: ThemeType) => {
 };
 
 const NavHeader = ({ theme }: ThemeType) => {
+  const [isOpenSide, setIsOpenSide] = useState(false);
   return (
     <Header type='navbar' theme={theme}>
       <HeaderContent expand='lg' megamenu>
         <HeaderToggler
           onClick={() => {
             /* set logic open state  */
+            setIsOpenSide(!isOpenSide);
           }}
           aria-controls='nav1'
           aria-expanded='false'
@@ -92,8 +94,10 @@ const NavHeader = ({ theme }: ThemeType) => {
         <Collapse
           navbar
           header
+          isOpen={isOpenSide}
           onOverlayClick={() => {
             /* set close logic here */
+            setIsOpenSide(!isOpenSide);
           }}
         >
           <div className='menu-wrapper'>
