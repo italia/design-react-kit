@@ -1,5 +1,4 @@
 import React, { FC, HTMLAttributes } from 'react';
-import classNames from 'classnames';
 import { DropdownMenu as BSDRopdownMenu } from 'reactstrap';
 
 // .it-header-slim-wrapper .it-header-slim-wrapper-content .dropdown-menu {
@@ -14,14 +13,11 @@ export interface DropdownMenuProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const DropdownMenu: FC<DropdownMenuProps> = ({ className, inNavbar, testId, children, ...attributes }) => {
-  const classes = classNames(className, {
-    'dropdown-menu': true
-  });
 
   const style = inNavbar ? {'top' : 'unset !important'} : {}
   
   return (
-    <BSDRopdownMenu style={style} className={classes} data-testid={testId} {...attributes}>
+    <BSDRopdownMenu style={style} data-testid={testId} {...attributes} className={className}>
       {children}
     </BSDRopdownMenu>
   );

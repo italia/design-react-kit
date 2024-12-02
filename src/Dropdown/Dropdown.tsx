@@ -21,9 +21,7 @@ export const Dropdown: FC<DropdownProps> = ({
   ...attributes
 }) => {
   const classes = classNames(className, {
-    dropdown: true,
     'text-center': textCenter,
-    'nav-item': inNavbar
   });
 
   const [isOpen, setIsOpen] = React.useState(false);

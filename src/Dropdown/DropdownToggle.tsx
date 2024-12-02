@@ -28,7 +28,6 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
   const classes = classNames(className, {
     'btn-dropdown': Tag === 'a' && !inNavbar,
     'dropdown-toggle': true,
-    'nav-link': inNavbar,
     btn: tag === 'button' && !inNavbar
   });
 
