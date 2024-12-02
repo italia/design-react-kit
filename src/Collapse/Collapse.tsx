@@ -43,7 +43,7 @@ export interface CollapseProps extends HTMLAttributes<HTMLElement> {
   /** Da utilizzare per impostare un riferimento all'elemento DOM */
   innerRef?: Ref<HTMLElement>;
   /** Testo pulsante di chiusura per screen reader */
-  closeSrText: string,
+  closeSrText?: string,
   testId?: string;
 }
 
