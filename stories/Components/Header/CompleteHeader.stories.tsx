@@ -120,7 +120,7 @@ const NavHeader = ({ theme }: ThemeType) => {
                 <NavLink href='#'>Link 4</NavLink>
               </NavItem>
               <Dropdown inNavbar>
-                <DropdownToggle inNavbar caret>
+                <DropdownToggle caret>
                   <span>Menu Dropdown</span>
                 </DropdownToggle>
                 <DropdownMenu>
@@ -233,10 +233,10 @@ const SlimHeader = ({ theme, brandText }: Pick<HeaderProps, 'theme'> & { brandTe
         </HeaderLinkZone>
         <HeaderRightZone>
           <Dropdown inNavbar>
-            <DropdownToggle inNavbar caret>
+            <DropdownToggle caret>
               ITA
             </DropdownToggle>
-            <DropdownMenu inNavbar>
+            <DropdownMenu>
               <Row>
                 <Col size='12'>
                   <LinkList>

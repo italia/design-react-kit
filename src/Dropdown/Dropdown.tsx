@@ -39,7 +39,12 @@ export const Dropdown: FC<DropdownProps> = ({
       inNavbar={inNavbar}
       nav={inNavbar}
     >
-      {children}
+      {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        React.Children.map(children, (child: any) =>
+          React.cloneElement(child, { inNavbar: inNavbar })
+        )
+      }    
     </BSDRopdown>
   );
 };

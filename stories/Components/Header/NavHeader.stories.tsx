@@ -73,7 +73,7 @@ export const NavHeader: Story = {
                   <NavLink href='#'>Link 4</NavLink>
                 </NavItem>
                 <Dropdown tag='li' inNavbar theme={theme}>
-                  <DropdownToggle inNavbar caret>
+                  <DropdownToggle caret>
                     <span>Dropdown Menu</span>
                   </DropdownToggle>
                   <DropdownMenu>

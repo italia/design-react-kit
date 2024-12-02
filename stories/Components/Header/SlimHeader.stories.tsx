@@ -55,7 +55,7 @@ const SlimHeaderHooks = ({ theme, brandText }: Pick<HeaderProps, 'theme'> & { br
         </HeaderLinkZone>
         <HeaderRightZone>
           <Dropdown inNavbar>
-            <DropdownToggle inNavbar caret>
+            <DropdownToggle caret>
               ITA
             </DropdownToggle>
             <DropdownMenu>
@@ -107,7 +107,7 @@ export const SlimHeaderFullResponse: Story = {
           <HeaderBrand responsive>Ente appartenenza/Owner</HeaderBrand>
           <HeaderRightZone>
             <Dropdown inNavbar>
-              <DropdownToggle inNavbar caret>
+              <DropdownToggle caret>
                 ITA
               </DropdownToggle>
               <DropdownMenu>
