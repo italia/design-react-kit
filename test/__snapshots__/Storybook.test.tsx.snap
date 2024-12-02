@@ -1775,7 +1775,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping M
         class="avatar size-md avatar-dropdown"
       >
         <div
-          class="dropdown dropdown"
+          class="dropdown"
         >
           <button
             aria-expanded="false"
@@ -1796,7 +1796,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping M
           </button>
           <div
             aria-hidden="true"
-            class="dropdown-menu dropdown-menu"
+            class="dropdown-menu"
             data-bs-popper="static"
             role="menu"
             tabindex="-1"
@@ -2031,7 +2031,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping S
         class="avatar size-sm avatar-dropdown"
       >
         <div
-          class="dropdown dropdown"
+          class="dropdown"
         >
           <button
             aria-expanded="false"
@@ -2052,7 +2052,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping S
           </button>
           <div
             aria-hidden="true"
-            class="dropdown-menu dropdown-menu"
+            class="dropdown-menu"
             data-bs-popper="static"
             role="menu"
             tabindex="-1"
@@ -5480,7 +5480,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _Esempi 1`] = `
   >
     <section>
       <div
-        class="me-3 dropdown dropdown"
+        class="me-3 dropdown"
       >
         <button
           aria-expanded="false"
@@ -5504,7 +5504,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _Esempi 1`] = `
         </button>
         <div
           aria-hidden="true"
-          class="dropdown-menu dropdown-menu"
+          class="dropdown-menu"
           data-bs-popper="static"
           role="menu"
           tabindex="-1"
@@ -5555,7 +5555,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _Link 1`] = `
 <div>
   <section>
     <div
-      class="me-3 dropdown dropdown"
+      class="me-3 dropdown"
     >
       <a
         aria-expanded="false"
@@ -5579,7 +5579,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _Link 1`] = `
       </a>
       <div
         aria-hidden="true"
-        class="dropdown-menu dropdown-menu"
+        class="dropdown-menu"
         data-bs-popper="static"
         role="menu"
         tabindex="-1"
@@ -5632,7 +5632,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _MenuDark 1`] = `
   >
     <div
       aria-hidden="true"
-      class="dark dropdown-menu dropdown-menu"
+      class="dark dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -5789,7 +5789,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _MenuVociAttive 1`
   >
     <div
       aria-hidden="true"
-      class="dropdown-menu dropdown-menu"
+      class="dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -5852,7 +5852,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _MenuVociDisabilit
   >
     <div
       aria-hidden="true"
-      class="dropdown-menu dropdown-menu"
+      class="dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -5914,7 +5914,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
       role="group"
     >
       <div
-        class="dropdown dropdown"
+        class="dropdown"
       >
         <button
           aria-expanded="false"
@@ -5938,7 +5938,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
         </button>
         <div
           aria-hidden="true"
-          class="dropdown-menu dropdown-menu"
+          class="dropdown-menu"
           data-bs-popper="static"
           role="menu"
           tabindex="-1"
@@ -5981,7 +5981,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
         </div>
       </div>
       <div
-        class="dropdown dropdown"
+        class="dropdown"
       >
         <button
           aria-expanded="false"
@@ -6005,7 +6005,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
         </button>
         <div
           aria-hidden="true"
-          class="dropdown-menu dropdown-menu"
+          class="dropdown-menu"
           data-bs-popper="static"
           role="menu"
           tabindex="-1"
@@ -6048,7 +6048,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
         </div>
       </div>
       <div
-        class="dropdown dropdown"
+        class="dropdown"
       >
         <button
           aria-expanded="false"
@@ -6072,7 +6072,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
         </button>
         <div
           aria-hidden="true"
-          class="dropdown-menu dropdown-menu"
+          class="dropdown-menu"
           data-bs-popper="static"
           role="menu"
           tabindex="-1"
@@ -6120,7 +6120,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuConVociLarge 1
   >
     <div
       aria-hidden="true"
-      class="dropdown-menu dropdown-menu"
+      class="dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -6178,7 +6178,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuFullWidth 1`] 
   >
     <div
       aria-hidden="true"
-      class="full-width dropdown-menu dropdown-menu"
+      class="full-width dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -6258,7 +6258,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuHeadersESepara
   >
     <div
       aria-hidden="true"
-      class="dropdown-menu dropdown-menu"
+      class="dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -6339,7 +6339,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuIconaADestra 1
   >
     <div
       aria-hidden="true"
-      class="dropdown-menu dropdown-menu"
+      class="dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -6436,7 +6436,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuIconaASinistra
   >
     <div
       aria-hidden="true"
-      class="dropdown-menu dropdown-menu"
+      class="dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -9423,7 +9423,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Pager PageChanger 1`] = `
         </li>
       </ul>
       <div
-        class="dropdown dropdown"
+        class="dropdown"
       >
         <button
           aria-expanded="false"
@@ -9459,7 +9459,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Pager PageChanger 1`] = `
         </button>
         <div
           aria-hidden="true"
-          class="dropdown-menu dropdown-menu"
+          class="dropdown-menu"
           data-bs-popper="static"
           role="menu"
           tabindex="-1"
@@ -17061,7 +17061,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17142,7 +17142,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17209,7 +17209,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17280,7 +17280,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17347,7 +17347,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17483,7 +17483,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17562,7 +17562,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17629,7 +17629,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17699,7 +17699,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17763,7 +17763,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17830,7 +17830,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17966,7 +17966,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -18045,7 +18045,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -18112,7 +18112,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -18182,7 +18182,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -18246,7 +18246,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -18313,7 +18313,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -18783,7 +18783,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticaleGra
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -18994,7 +18994,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticaleMed
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -19201,7 +19201,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticalePic
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -24606,7 +24606,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Center Cent
     class="it-header-center-wrapper"
   >
     <div
-      class="container"
+      class="container-xxl container-fluid"
     >
       <div
         class="row"
@@ -24765,7 +24765,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Center Head
     class="it-header-center-wrapper it-small-header"
   >
     <div
-      class="container"
+      class="container-xxl container-fluid"
     >
       <div
         class="row"
@@ -24927,7 +24927,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
       class="it-header-slim-wrapper theme-dark"
     >
       <div
-        class="container"
+        class="container-xxl"
       >
         <div
           class="row"
@@ -24941,21 +24941,22 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
               <a
                 class="d-lg-block d-none navbar-brand"
               >
-                Ente appartenenza/Owner
+                Ente di appartenenza
               </a>
               <div
                 class="nav-mobile"
               >
                 <nav
+                  aria-label="Navigazione accessoria"
                   class=""
                 >
                   <a
+                    aria-expanded="false"
                     aria-label="Toggle navigation"
                     class="it-opener d-lg-none navbar-toggler"
-                    href="#"
                   >
                     <span>
-                      Ente appartenenza/Owner
+                      Ente di appartenenza
                     </span>
                     <svg
                       class="icon"
@@ -24971,51 +24972,28 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                     </svg>
                   </a>
                   <div
-                    class="navbar-collapsable expanded collapse"
-                    style="display: block;"
-                    theme="dark"
+                    class="link-list-wrapper collapse"
                   >
-                    <div
-                      class="overlay"
-                      style="display: block;"
-                    />
-                    <div
-                      class="close-div visually-hidden"
+                    <ul
+                      class="link-list"
                     >
-                      <button
-                        class="btn close-menu"
-                        type="button"
-                      >
-                        <span
-                          class="it-close"
-                        />
-                        close
-                      </button>
-                    </div>
-                    <div
-                      class="link-list-wrapper"
-                    >
-                      <ul
-                        class="link-list"
-                      >
-                        <li>
-                          <a
-                            class="list-item"
-                            href="#"
-                          >
-                            Link 1
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            class="active list-item"
-                            href="#"
-                          >
-                            Link 2 Active
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                      <li>
+                        <a
+                          class="list-item"
+                          href="#"
+                        >
+                          Link 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="active list-item"
+                          href="#"
+                        >
+                          Link 2 Active
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </nav>
               </div>
@@ -25023,12 +25001,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                 class="it-header-slim-right-zone header-slim-right-zone"
               >
                 <li
-                  class="dropdown nav-item dropdown nav-item"
+                  class="dropdown nav-item"
                 >
                   <a
                     aria-expanded="false"
                     aria-haspopup="menu"
-                    class="dropdown-toggle nav-link btn  nav-link"
+                    class="dropdown-toggle  nav-link"
                     role="button"
                   >
                     ITA
@@ -25047,7 +25025,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                   </a>
                   <div
                     aria-hidden="true"
-                    class="dropdown-menu dropdown-menu"
+                    class="dropdown-menu"
                     data-bs-popper="static"
                     role="menu"
                     tabindex="-1"
@@ -25117,7 +25095,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
         class="it-header-center-wrapper it-small-header theme-dark"
       >
         <div
-          class="container"
+          class="container-xxl"
         >
           <div
             class="row"
@@ -25271,7 +25249,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
         class="it-header-navbar-wrapper theme-dark-mobile"
       >
         <div
-          class="container"
+          class="container-xxl"
         >
           <div
             class="row"
@@ -25290,7 +25268,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                     class="custom-navbar-toggler navbar-toggler"
-                    href="#"
                     type="button"
                   >
                     <svg
@@ -25309,23 +25286,35 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                   <div
                     class="navbar-collapsable collapse navbar-collapsable"
                     style="display: none;"
-                    theme="dark"
                   >
                     <div
                       class="overlay"
                       style="display: none;"
                     />
                     <div
-                      class="close-div visually-hidden"
+                      class="close-div"
                     >
                       <button
                         class="btn close-menu"
                         type="button"
                       >
                         <span
-                          class="it-close"
-                        />
-                        close
+                          class="visually-hidden"
+                        >
+                          Nascondi la navigazione
+                        </span>
+                        <svg
+                          class="icon icon-white"
+                          enable-background="new 0 0 24 24"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          xml:space="preserve"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+                          />
+                        </svg>
                       </button>
                     </div>
                     <div
@@ -25383,12 +25372,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                           </a>
                         </li>
                         <li
-                          class="dropdown nav-item dropdown nav-item"
+                          class="dropdown nav-item"
                         >
                           <a
                             aria-expanded="false"
                             aria-haspopup="menu"
-                            class="dropdown-toggle nav-link btn  nav-link"
+                            class="dropdown-toggle  nav-link"
                             role="button"
                           >
                             <span>
@@ -25409,7 +25398,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                           </a>
                           <div
                             aria-hidden="true"
-                            class="dropdown-menu dropdown-menu"
+                            class="dropdown-menu"
                             data-bs-popper="static"
                             role="menu"
                             tabindex="-1"
@@ -25473,12 +25462,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                           </div>
                         </li>
                         <li
-                          class="megamenu dropdown nav-item dropdown nav-item"
+                          class="megamenu dropdown nav-item"
                         >
                           <a
                             aria-expanded="false"
                             aria-haspopup="menu"
-                            class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
+                            class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
                             role="button"
                           >
                             <span>
@@ -25499,7 +25488,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                           </a>
                           <div
                             aria-hidden="true"
-                            class="dropdown-menu dropdown-menu"
+                            class="dropdown-menu"
                             data-bs-popper="static"
                             role="menu"
                             tabindex="-1"
@@ -25766,7 +25755,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
     class="it-header-navbar-wrapper"
   >
     <div
-      class="container"
+      class="container-xxl"
     >
       <div
         class="row"
@@ -25785,7 +25774,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                 aria-expanded="false"
                 aria-label="Toggle navigation"
                 class="custom-navbar-toggler navbar-toggler"
-                href="#"
                 type="button"
               >
                 <svg
@@ -25804,23 +25792,35 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
               <div
                 class="navbar-collapsable collapse navbar-collapsable"
                 style="display: none;"
-                theme="dark"
               >
                 <div
                   class="overlay"
                   style="display: none;"
                 />
                 <div
-                  class="close-div visually-hidden"
+                  class="close-div"
                 >
                   <button
                     class="btn close-menu"
                     type="button"
                   >
                     <span
-                      class="it-close"
-                    />
-                    close
+                      class="visually-hidden"
+                    >
+                      Nascondi la navigazione
+                    </span>
+                    <svg
+                      class="icon icon-white"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+                      />
+                    </svg>
                   </button>
                 </div>
                 <div
@@ -25878,13 +25878,13 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                       </a>
                     </li>
                     <li
-                      class="dropdown nav-item dropdown nav-item"
+                      class="dropdown nav-item"
                       color=""
                     >
                       <a
                         aria-expanded="false"
                         aria-haspopup="menu"
-                        class="dropdown-toggle nav-link btn  nav-link"
+                        class="dropdown-toggle  nav-link"
                         role="button"
                       >
                         <span>
@@ -25905,7 +25905,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                       </a>
                       <div
                         aria-hidden="true"
-                        class="dropdown-menu dropdown-menu"
+                        class="dropdown-menu"
                         data-bs-popper="static"
                         role="menu"
                         tabindex="-1"
@@ -25969,12 +25969,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                       </div>
                     </li>
                     <li
-                      class="megamenu dropdown nav-item dropdown nav-item"
+                      class="megamenu dropdown nav-item"
                     >
                       <a
                         aria-expanded="false"
                         aria-haspopup="menu"
-                        class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
+                        class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
                         role="button"
                       >
                         <span>
@@ -25995,7 +25995,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                       </a>
                       <div
                         aria-hidden="true"
-                        class="dropdown-menu dropdown-menu"
+                        class="dropdown-menu"
                         data-bs-popper="static"
                         role="menu"
                         tabindex="-1"
@@ -26260,7 +26260,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
     class="it-header-navbar-wrapper"
   >
     <div
-      class="container"
+      class="container-xxl"
     >
       <div
         class="row"
@@ -26279,7 +26279,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                 aria-expanded="false"
                 aria-label="Toggle navigation"
                 class="custom-navbar-toggler navbar-toggler"
-                href="#"
                 type="button"
               >
                 <svg
@@ -26298,23 +26297,35 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
               <div
                 class="navbar-collapsable collapse navbar-collapsable"
                 style="display: none;"
-                theme="dark"
               >
                 <div
                   class="overlay"
                   style="display: none;"
                 />
                 <div
-                  class="close-div visually-hidden"
+                  class="close-div"
                 >
                   <button
                     class="btn close-menu"
                     type="button"
                   >
                     <span
-                      class="it-close"
-                    />
-                    close
+                      class="visually-hidden"
+                    >
+                      Nascondi la navigazione
+                    </span>
+                    <svg
+                      class="icon icon-white"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+                      />
+                    </svg>
                   </button>
                 </div>
                 <div
@@ -26432,7 +26443,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
     class="it-header-slim-wrapper"
   >
     <div
-      class="container"
+      class="container-xxl"
     >
       <div
         class="row"
@@ -26446,21 +26457,22 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
             <a
               class="d-lg-block d-none navbar-brand"
             >
-              Ente appartenenza/Owner
+              Ente appartenenza
             </a>
             <div
               class="nav-mobile"
             >
               <nav
+                aria-label="Navigazione accessoria"
                 class=""
               >
                 <a
+                  aria-expanded="false"
                   aria-label="Toggle navigation"
                   class="it-opener d-lg-none navbar-toggler"
-                  href="#"
                 >
                   <span>
-                    Ente appartenenza/Owner
+                    Ente appartenenza
                   </span>
                   <svg
                     class="icon"
@@ -26476,51 +26488,28 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                   </svg>
                 </a>
                 <div
-                  class="navbar-collapsable collapse"
-                  style="display: none;"
-                  theme="dark"
+                  class="link-list-wrapper collapse"
                 >
-                  <div
-                    class="overlay"
-                    style="display: none;"
-                  />
-                  <div
-                    class="close-div visually-hidden"
+                  <ul
+                    class="link-list"
                   >
-                    <button
-                      class="btn close-menu"
-                      type="button"
-                    >
-                      <span
-                        class="it-close"
-                      />
-                      close
-                    </button>
-                  </div>
-                  <div
-                    class="link-list-wrapper"
-                  >
-                    <ul
-                      class="link-list"
-                    >
-                      <li>
-                        <a
-                          class="list-item"
-                          href="#"
-                        >
-                          Link 1
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="active list-item"
-                          href="#"
-                        >
-                          Link 2 Active
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                    <li>
+                      <a
+                        class="list-item"
+                        href="#"
+                      >
+                        Link 1
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="active list-item"
+                        href="#"
+                      >
+                        Link 2 Active
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </nav>
             </div>
@@ -26528,12 +26517,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
               class="it-header-slim-right-zone header-slim-right-zone"
             >
               <li
-                class="dropdown nav-item dropdown nav-item"
+                class="dropdown nav-item"
               >
                 <a
                   aria-expanded="false"
                   aria-haspopup="menu"
-                  class="dropdown-toggle nav-link btn  nav-link"
+                  class="dropdown-toggle  nav-link"
                   role="button"
                 >
                   ITA
@@ -26552,7 +26541,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                 </a>
                 <div
                   aria-hidden="true"
-                  class="dropdown-menu dropdown-menu"
+                  class="dropdown-menu"
                   data-bs-popper="static"
                   role="menu"
                   tabindex="-1"
@@ -26624,7 +26613,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
     class="it-header-slim-wrapper"
   >
     <div
-      class="container"
+      class="container-xxl container-fluid"
     >
       <div
         class="row"
@@ -26644,12 +26633,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
               class="it-header-slim-right-zone header-slim-right-zone"
             >
               <li
-                class="dropdown nav-item dropdown nav-item"
+                class="dropdown nav-item"
               >
                 <a
                   aria-expanded="false"
                   aria-haspopup="menu"
-                  class="dropdown-toggle nav-link btn  nav-link"
+                  class="dropdown-toggle  nav-link"
                   role="button"
                 >
                   ITA
@@ -26668,7 +26657,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                 </a>
                 <div
                   aria-hidden="true"
-                  class="dropdown-menu dropdown-menu"
+                  class="dropdown-menu"
                   data-bs-popper="static"
                   role="menu"
                   tabindex="-1"
@@ -26783,23 +26772,35 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
-        theme="dark"
       >
         <div
           class="overlay"
           style="display: none;"
         />
         <div
-          class="close-div visually-hidden"
+          class="close-div"
         >
           <button
             class="btn close-menu"
             type="button"
           >
             <span
-              class="it-close"
-            />
-            close
+              class="visually-hidden"
+            >
+              Nascondi la navigazione
+            </span>
+            <svg
+              class="icon icon-white"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+              />
+            </svg>
           </button>
         </div>
         <div
@@ -26809,12 +26810,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item dropdown nav-item"
+              class="megamenu dropdown nav-item"
             >
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
                 role="button"
               >
                 <span>
@@ -26835,7 +26836,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
               </a>
               <div
                 aria-hidden="true"
-                class="dropdown-menu dropdown-menu"
+                class="dropdown-menu"
                 data-bs-popper="static"
                 role="menu"
                 tabindex="-1"
@@ -27100,23 +27101,35 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
-        theme="dark"
       >
         <div
           class="overlay"
           style="display: none;"
         />
         <div
-          class="close-div visually-hidden"
+          class="close-div"
         >
           <button
             class="btn close-menu"
             type="button"
           >
             <span
-              class="it-close"
-            />
-            close
+              class="visually-hidden"
+            >
+              Nascondi la navigazione
+            </span>
+            <svg
+              class="icon icon-white"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+              />
+            </svg>
           </button>
         </div>
         <div
@@ -27126,12 +27139,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item dropdown nav-item"
+              class="megamenu dropdown nav-item"
             >
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
                 role="button"
               >
                 <span>
@@ -27152,7 +27165,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
               </a>
               <div
                 aria-hidden="true"
-                class="dropdown-menu dropdown-menu"
+                class="dropdown-menu"
                 data-bs-popper="static"
                 role="menu"
                 tabindex="-1"
@@ -27481,23 +27494,35 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
-        theme="dark"
       >
         <div
           class="overlay"
           style="display: none;"
         />
         <div
-          class="close-div visually-hidden"
+          class="close-div"
         >
           <button
             class="btn close-menu"
             type="button"
           >
             <span
-              class="it-close"
-            />
-            close
+              class="visually-hidden"
+            >
+              Nascondi la navigazione
+            </span>
+            <svg
+              class="icon icon-white"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+              />
+            </svg>
           </button>
         </div>
         <div
@@ -27507,12 +27532,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item dropdown nav-item"
+              class="megamenu dropdown nav-item"
             >
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
                 role="button"
               >
                 <span>
@@ -27533,7 +27558,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
               </a>
               <div
                 aria-hidden="true"
-                class="dropdown-menu dropdown-menu"
+                class="dropdown-menu"
                 data-bs-popper="static"
                 role="menu"
                 tabindex="-1"
@@ -27804,23 +27829,35 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConIntest
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
-        theme="dark"
       >
         <div
           class="overlay"
           style="display: none;"
         />
         <div
-          class="close-div visually-hidden"
+          class="close-div"
         >
           <button
             class="btn close-menu"
             type="button"
           >
             <span
-              class="it-close"
-            />
-            close
+              class="visually-hidden"
+            >
+              Nascondi la navigazione
+            </span>
+            <svg
+              class="icon icon-white"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+              />
+            </svg>
           </button>
         </div>
         <div
@@ -27830,12 +27867,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConIntest
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item dropdown nav-item"
+              class="megamenu dropdown nav-item"
             >
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
                 role="button"
               >
                 <span>
@@ -27856,7 +27893,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConIntest
               </a>
               <div
                 aria-hidden="true"
-                class="dropdown-menu dropdown-menu"
+                class="dropdown-menu"
                 data-bs-popper="static"
                 role="menu"
                 tabindex="-1"
@@ -28171,23 +28208,35 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
-        theme="dark"
       >
         <div
           class="overlay"
           style="display: none;"
         />
         <div
-          class="close-div visually-hidden"
+          class="close-div"
         >
           <button
             class="btn close-menu"
             type="button"
           >
             <span
-              class="it-close"
-            />
-            close
+              class="visually-hidden"
+            >
+              Nascondi la navigazione
+            </span>
+            <svg
+              class="icon icon-white"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+              />
+            </svg>
           </button>
         </div>
         <div
@@ -28197,12 +28246,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item dropdown nav-item"
+              class="megamenu dropdown nav-item"
             >
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
                 role="button"
               >
                 <span>
@@ -28223,7 +28272,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
               </a>
               <div
                 aria-hidden="true"
-                class="dropdown-menu dropdown-menu"
+                class="dropdown-menu"
                 data-bs-popper="static"
                 role="menu"
                 tabindex="-1"
@@ -28861,23 +28910,35 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
               class="navbar-collapsable collapse navbar-collapsable"
               id="navbarNavB"
               style="display: none;"
-              theme="dark"
             >
               <div
                 class="overlay"
                 style="display: none;"
               />
               <div
-                class="close-div visually-hidden"
+                class="close-div"
               >
                 <button
                   class="btn close-menu"
                   type="button"
                 >
                   <span
-                    class="it-close"
-                  />
-                  close
+                    class="visually-hidden"
+                  >
+                    Nascondi la navigazione
+                  </span>
+                  <svg
+                    class="icon icon-white"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+                    />
+                  </svg>
                 </button>
               </div>
               <button
@@ -29273,23 +29334,35 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
               class="navbar-collapsable collapse navbar-collapsable"
               id="navbarNavA"
               style="display: none;"
-              theme="dark"
             >
               <div
                 class="overlay"
                 style="display: none;"
               />
               <div
-                class="close-div visually-hidden"
+                class="close-div"
               >
                 <button
                   class="btn close-menu"
                   type="button"
                 >
                   <span
-                    class="it-close"
-                  />
-                  close
+                    class="visually-hidden"
+                  >
+                    Nascondi la navigazione
+                  </span>
+                  <svg
+                    class="icon icon-white"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+                    />
+                  </svg>
                 </button>
               </div>
               <button
@@ -29685,23 +29758,35 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
               class="navbar-collapsable collapse navbar-collapsable"
               id="navbarNavB"
               style="display: none;"
-              theme="dark"
             >
               <div
                 class="overlay"
                 style="display: none;"
               />
               <div
-                class="close-div visually-hidden"
+                class="close-div"
               >
                 <button
                   class="btn close-menu"
                   type="button"
                 >
                   <span
-                    class="it-close"
-                  />
-                  close
+                    class="visually-hidden"
+                  >
+                    Nascondi la navigazione
+                  </span>
+                  <svg
+                    class="icon icon-white"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+                    />
+                  </svg>
                 </button>
               </div>
               <button
