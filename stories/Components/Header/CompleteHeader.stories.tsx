@@ -236,7 +236,7 @@ const SlimHeader = ({ theme, brandText }: Pick<HeaderProps, 'theme'> & { brandTe
             <DropdownToggle inNavbar caret>
               ITA
             </DropdownToggle>
-            <DropdownMenu>
+            <DropdownMenu inNavbar>
               <Row>
                 <Col size='12'>
                   <LinkList>
