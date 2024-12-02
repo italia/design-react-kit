@@ -1775,7 +1775,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping M
         class="avatar size-md avatar-dropdown"
       >
         <div
-          class="dropdown dropdown"
+          class="dropdown"
         >
           <button
             aria-expanded="false"
@@ -1796,7 +1796,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping M
           </button>
           <div
             aria-hidden="true"
-            class="dropdown-menu dropdown-menu"
+            class="dropdown-menu"
             data-bs-popper="static"
             role="menu"
             tabindex="-1"
@@ -2031,7 +2031,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping S
         class="avatar size-sm avatar-dropdown"
       >
         <div
-          class="dropdown dropdown"
+          class="dropdown"
         >
           <button
             aria-expanded="false"
@@ -2052,7 +2052,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping S
           </button>
           <div
             aria-hidden="true"
-            class="dropdown-menu dropdown-menu"
+            class="dropdown-menu"
             data-bs-popper="static"
             role="menu"
             tabindex="-1"
@@ -5480,7 +5480,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _Esempi 1`] = `
   >
     <section>
       <div
-        class="me-3 dropdown dropdown"
+        class="me-3 dropdown"
       >
         <button
           aria-expanded="false"
@@ -5504,7 +5504,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _Esempi 1`] = `
         </button>
         <div
           aria-hidden="true"
-          class="dropdown-menu dropdown-menu"
+          class="dropdown-menu"
           data-bs-popper="static"
           role="menu"
           tabindex="-1"
@@ -5555,7 +5555,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _Link 1`] = `
 <div>
   <section>
     <div
-      class="me-3 dropdown dropdown"
+      class="me-3 dropdown"
     >
       <a
         aria-expanded="false"
@@ -5579,7 +5579,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _Link 1`] = `
       </a>
       <div
         aria-hidden="true"
-        class="dropdown-menu dropdown-menu"
+        class="dropdown-menu"
         data-bs-popper="static"
         role="menu"
         tabindex="-1"
@@ -5632,7 +5632,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _MenuDark 1`] = `
   >
     <div
       aria-hidden="true"
-      class="dark dropdown-menu dropdown-menu"
+      class="dark dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -5789,7 +5789,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _MenuVociAttive 1`
   >
     <div
       aria-hidden="true"
-      class="dropdown-menu dropdown-menu"
+      class="dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -5852,7 +5852,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _MenuVociDisabilit
   >
     <div
       aria-hidden="true"
-      class="dropdown-menu dropdown-menu"
+      class="dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -5914,7 +5914,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
       role="group"
     >
       <div
-        class="dropdown dropdown"
+        class="dropdown"
       >
         <button
           aria-expanded="false"
@@ -5938,7 +5938,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
         </button>
         <div
           aria-hidden="true"
-          class="dropdown-menu dropdown-menu"
+          class="dropdown-menu"
           data-bs-popper="static"
           role="menu"
           tabindex="-1"
@@ -5981,7 +5981,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
         </div>
       </div>
       <div
-        class="dropdown dropdown"
+        class="dropdown"
       >
         <button
           aria-expanded="false"
@@ -6005,7 +6005,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
         </button>
         <div
           aria-hidden="true"
-          class="dropdown-menu dropdown-menu"
+          class="dropdown-menu"
           data-bs-popper="static"
           role="menu"
           tabindex="-1"
@@ -6048,7 +6048,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
         </div>
       </div>
       <div
-        class="dropdown dropdown"
+        class="dropdown"
       >
         <button
           aria-expanded="false"
@@ -6072,7 +6072,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _VarianteBottoni 1
         </button>
         <div
           aria-hidden="true"
-          class="dropdown-menu dropdown-menu"
+          class="dropdown-menu"
           data-bs-popper="static"
           role="menu"
           tabindex="-1"
@@ -6120,7 +6120,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuConVociLarge 1
   >
     <div
       aria-hidden="true"
-      class="dropdown-menu dropdown-menu"
+      class="dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -6178,7 +6178,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuFullWidth 1`] 
   >
     <div
       aria-hidden="true"
-      class="full-width dropdown-menu dropdown-menu"
+      class="full-width dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -6258,7 +6258,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuHeadersESepara
   >
     <div
       aria-hidden="true"
-      class="dropdown-menu dropdown-menu"
+      class="dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -6339,7 +6339,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuIconaADestra 1
   >
     <div
       aria-hidden="true"
-      class="dropdown-menu dropdown-menu"
+      class="dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -6436,7 +6436,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown MenuIconaASinistra
   >
     <div
       aria-hidden="true"
-      class="dropdown-menu dropdown-menu"
+      class="dropdown-menu"
       data-bs-popper="static"
       role="menu"
       tabindex="-1"
@@ -9423,7 +9423,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Pager PageChanger 1`] = `
         </li>
       </ul>
       <div
-        class="dropdown dropdown"
+        class="dropdown"
       >
         <button
           aria-expanded="false"
@@ -9459,7 +9459,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Pager PageChanger 1`] = `
         </button>
         <div
           aria-hidden="true"
-          class="dropdown-menu dropdown-menu"
+          class="dropdown-menu"
           data-bs-popper="static"
           role="menu"
           tabindex="-1"
@@ -17061,7 +17061,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17142,7 +17142,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17209,7 +17209,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17280,7 +17280,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17347,7 +17347,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownG
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17483,7 +17483,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17562,7 +17562,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17629,7 +17629,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17699,7 +17699,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17763,7 +17763,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17830,7 +17830,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownM
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -17966,7 +17966,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -18045,7 +18045,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -18112,7 +18112,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -18182,7 +18182,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -18246,7 +18246,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -18313,7 +18313,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioConDropdownP
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -18783,7 +18783,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticaleGra
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -18994,7 +18994,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticaleMed
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -19201,7 +19201,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Toolbar EsempioVerticalePic
             </button>
             <div
               aria-hidden="true"
-              class="dropdown-menu dropdown-menu"
+              class="dropdown-menu"
               data-bs-popper="static"
               role="menu"
               tabindex="-1"
@@ -25001,12 +25001,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                 class="it-header-slim-right-zone header-slim-right-zone"
               >
                 <li
-                  class="dropdown nav-item dropdown nav-item"
+                  class="dropdown nav-item"
                 >
                   <a
                     aria-expanded="false"
                     aria-haspopup="menu"
-                    class="dropdown-toggle nav-link  nav-link"
+                    class="dropdown-toggle  nav-link"
                     role="button"
                   >
                     ITA
@@ -25025,7 +25025,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                   </a>
                   <div
                     aria-hidden="true"
-                    class="dropdown-menu dropdown-menu"
+                    class="dropdown-menu"
                     data-bs-popper="static"
                     role="menu"
                     tabindex="-1"
@@ -25372,12 +25372,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                           </a>
                         </li>
                         <li
-                          class="dropdown nav-item dropdown nav-item"
+                          class="dropdown nav-item"
                         >
                           <a
                             aria-expanded="false"
                             aria-haspopup="menu"
-                            class="dropdown-toggle nav-link  nav-link"
+                            class="dropdown-toggle  nav-link"
                             role="button"
                           >
                             <span>
@@ -25398,7 +25398,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                           </a>
                           <div
                             aria-hidden="true"
-                            class="dropdown-menu dropdown-menu"
+                            class="dropdown-menu"
                             data-bs-popper="static"
                             role="menu"
                             tabindex="-1"
@@ -25462,12 +25462,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                           </div>
                         </li>
                         <li
-                          class="megamenu dropdown nav-item dropdown nav-item"
+                          class="megamenu dropdown nav-item"
                         >
                           <a
                             aria-expanded="false"
                             aria-haspopup="menu"
-                            class="px-lg-2 px-xl-3 dropdown-toggle nav-link  nav-link"
+                            class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
                             role="button"
                           >
                             <span>
@@ -25488,7 +25488,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                           </a>
                           <div
                             aria-hidden="true"
-                            class="dropdown-menu dropdown-menu"
+                            class="dropdown-menu"
                             data-bs-popper="static"
                             role="menu"
                             tabindex="-1"
@@ -25878,13 +25878,13 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                       </a>
                     </li>
                     <li
-                      class="dropdown nav-item dropdown nav-item"
+                      class="dropdown nav-item"
                       color=""
                     >
                       <a
                         aria-expanded="false"
                         aria-haspopup="menu"
-                        class="dropdown-toggle nav-link  nav-link"
+                        class="dropdown-toggle  nav-link"
                         role="button"
                       >
                         <span>
@@ -25905,7 +25905,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                       </a>
                       <div
                         aria-hidden="true"
-                        class="dropdown-menu dropdown-menu"
+                        class="dropdown-menu"
                         data-bs-popper="static"
                         role="menu"
                         tabindex="-1"
@@ -25969,12 +25969,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                       </div>
                     </li>
                     <li
-                      class="megamenu dropdown nav-item dropdown nav-item"
+                      class="megamenu dropdown nav-item"
                     >
                       <a
                         aria-expanded="false"
                         aria-haspopup="menu"
-                        class="px-lg-2 px-xl-3 dropdown-toggle nav-link  nav-link"
+                        class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
                         role="button"
                       >
                         <span>
@@ -25995,7 +25995,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                       </a>
                       <div
                         aria-hidden="true"
-                        class="dropdown-menu dropdown-menu"
+                        class="dropdown-menu"
                         data-bs-popper="static"
                         role="menu"
                         tabindex="-1"
@@ -26517,12 +26517,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
               class="it-header-slim-right-zone header-slim-right-zone"
             >
               <li
-                class="dropdown nav-item dropdown nav-item"
+                class="dropdown nav-item"
               >
                 <a
                   aria-expanded="false"
                   aria-haspopup="menu"
-                  class="dropdown-toggle nav-link  nav-link"
+                  class="dropdown-toggle  nav-link"
                   role="button"
                 >
                   ITA
@@ -26541,7 +26541,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                 </a>
                 <div
                   aria-hidden="true"
-                  class="dropdown-menu dropdown-menu"
+                  class="dropdown-menu"
                   data-bs-popper="static"
                   role="menu"
                   tabindex="-1"
@@ -26633,12 +26633,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
               class="it-header-slim-right-zone header-slim-right-zone"
             >
               <li
-                class="dropdown nav-item dropdown nav-item"
+                class="dropdown nav-item"
               >
                 <a
                   aria-expanded="false"
                   aria-haspopup="menu"
-                  class="dropdown-toggle nav-link  nav-link"
+                  class="dropdown-toggle  nav-link"
                   role="button"
                 >
                   ITA
@@ -26657,7 +26657,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                 </a>
                 <div
                   aria-hidden="true"
-                  class="dropdown-menu dropdown-menu"
+                  class="dropdown-menu"
                   data-bs-popper="static"
                   role="menu"
                   tabindex="-1"
@@ -26810,12 +26810,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item dropdown nav-item"
+              class="megamenu dropdown nav-item"
             >
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
                 role="button"
               >
                 <span>
@@ -26836,7 +26836,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
               </a>
               <div
                 aria-hidden="true"
-                class="dropdown-menu dropdown-menu"
+                class="dropdown-menu"
                 data-bs-popper="static"
                 role="menu"
                 tabindex="-1"
@@ -27139,12 +27139,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item dropdown nav-item"
+              class="megamenu dropdown nav-item"
             >
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
                 role="button"
               >
                 <span>
@@ -27165,7 +27165,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
               </a>
               <div
                 aria-hidden="true"
-                class="dropdown-menu dropdown-menu"
+                class="dropdown-menu"
                 data-bs-popper="static"
                 role="menu"
                 tabindex="-1"
@@ -27532,12 +27532,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item dropdown nav-item"
+              class="megamenu dropdown nav-item"
             >
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
                 role="button"
               >
                 <span>
@@ -27558,7 +27558,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
               </a>
               <div
                 aria-hidden="true"
-                class="dropdown-menu dropdown-menu"
+                class="dropdown-menu"
                 data-bs-popper="static"
                 role="menu"
                 tabindex="-1"
@@ -27867,12 +27867,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConIntest
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item dropdown nav-item"
+              class="megamenu dropdown nav-item"
             >
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
                 role="button"
               >
                 <span>
@@ -27893,7 +27893,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConIntest
               </a>
               <div
                 aria-hidden="true"
-                class="dropdown-menu dropdown-menu"
+                class="dropdown-menu"
                 data-bs-popper="static"
                 role="menu"
                 tabindex="-1"
@@ -28246,12 +28246,12 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
             class="mt-0 navbar-nav"
           >
             <li
-              class="megamenu dropdown nav-item dropdown nav-item"
+              class="megamenu dropdown nav-item"
             >
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
                 role="button"
               >
                 <span>
@@ -28272,7 +28272,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
               </a>
               <div
                 aria-hidden="true"
-                class="dropdown-menu dropdown-menu"
+                class="dropdown-menu"
                 data-bs-popper="static"
                 role="menu"
                 tabindex="-1"
