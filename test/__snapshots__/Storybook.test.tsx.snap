@@ -24606,7 +24606,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Center Cent
     class="it-header-center-wrapper"
   >
     <div
-      class="container"
+      class="container-xxl container-fluid"
     >
       <div
         class="row"
@@ -24765,7 +24765,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Center Head
     class="it-header-center-wrapper it-small-header"
   >
     <div
-      class="container"
+      class="container-xxl container-fluid"
     >
       <div
         class="row"
@@ -24927,7 +24927,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
       class="it-header-slim-wrapper theme-dark"
     >
       <div
-        class="container"
+        class="container-xxl"
       >
         <div
           class="row"
@@ -24941,21 +24941,22 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
               <a
                 class="d-lg-block d-none navbar-brand"
               >
-                Ente appartenenza/Owner
+                Ente di appartenenza
               </a>
               <div
                 class="nav-mobile"
               >
                 <nav
+                  aria-label="Navigazione accessoria"
                   class=""
                 >
                   <a
+                    aria-expanded="false"
                     aria-label="Toggle navigation"
                     class="it-opener d-lg-none navbar-toggler"
-                    href="#"
                   >
                     <span>
-                      Ente appartenenza/Owner
+                      Ente di appartenenza
                     </span>
                     <svg
                       class="icon"
@@ -24971,32 +24972,28 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                     </svg>
                   </a>
                   <div
-                    class="link-list-wrapper collapse show"
+                    class="link-list-wrapper collapse"
                   >
-                    <div
-                      class="link-list-wrapper"
+                    <ul
+                      class="link-list"
                     >
-                      <ul
-                        class="link-list"
-                      >
-                        <li>
-                          <a
-                            class="list-item"
-                            href="#"
-                          >
-                            Link 1
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            class="active list-item"
-                            href="#"
-                          >
-                            Link 2 Active
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                      <li>
+                        <a
+                          class="list-item"
+                          href="#"
+                        >
+                          Link 1
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="active list-item"
+                          href="#"
+                        >
+                          Link 2 Active
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </nav>
               </div>
@@ -25009,7 +25006,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                   <a
                     aria-expanded="false"
                     aria-haspopup="menu"
-                    class="dropdown-toggle nav-link btn  nav-link"
+                    class="dropdown-toggle nav-link  nav-link"
                     role="button"
                   >
                     ITA
@@ -25098,7 +25095,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
         class="it-header-center-wrapper it-small-header theme-dark"
       >
         <div
-          class="container"
+          class="container-xxl"
         >
           <div
             class="row"
@@ -25252,7 +25249,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
         class="it-header-navbar-wrapper theme-dark-mobile"
       >
         <div
-          class="container"
+          class="container-xxl"
         >
           <div
             class="row"
@@ -25271,7 +25268,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                     class="custom-navbar-toggler navbar-toggler"
-                    href="#"
                     type="button"
                   >
                     <svg
@@ -25296,16 +25292,29 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                       style="display: none;"
                     />
                     <div
-                      class="close-div visually-hidden"
+                      class="close-div"
                     >
                       <button
                         class="btn close-menu"
                         type="button"
                       >
                         <span
-                          class="it-close"
-                        />
-                        close
+                          class="visually-hidden"
+                        >
+                          Nascondi la navigazione
+                        </span>
+                        <svg
+                          class="icon icon-white"
+                          enable-background="new 0 0 24 24"
+                          role="img"
+                          viewBox="0 0 24 24"
+                          xml:space="preserve"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+                          />
+                        </svg>
                       </button>
                     </div>
                     <div
@@ -25368,7 +25377,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                           <a
                             aria-expanded="false"
                             aria-haspopup="menu"
-                            class="dropdown-toggle nav-link btn  nav-link"
+                            class="dropdown-toggle nav-link  nav-link"
                             role="button"
                           >
                             <span>
@@ -25458,7 +25467,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                           <a
                             aria-expanded="false"
                             aria-haspopup="menu"
-                            class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
+                            class="px-lg-2 px-xl-3 dropdown-toggle nav-link  nav-link"
                             role="button"
                           >
                             <span>
@@ -25746,7 +25755,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
     class="it-header-navbar-wrapper"
   >
     <div
-      class="container"
+      class="container-xxl"
     >
       <div
         class="row"
@@ -25765,7 +25774,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                 aria-expanded="false"
                 aria-label="Toggle navigation"
                 class="custom-navbar-toggler navbar-toggler"
-                href="#"
                 type="button"
               >
                 <svg
@@ -25790,16 +25798,29 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                   style="display: none;"
                 />
                 <div
-                  class="close-div visually-hidden"
+                  class="close-div"
                 >
                   <button
                     class="btn close-menu"
                     type="button"
                   >
                     <span
-                      class="it-close"
-                    />
-                    close
+                      class="visually-hidden"
+                    >
+                      Nascondi la navigazione
+                    </span>
+                    <svg
+                      class="icon icon-white"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+                      />
+                    </svg>
                   </button>
                 </div>
                 <div
@@ -25863,7 +25884,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                       <a
                         aria-expanded="false"
                         aria-haspopup="menu"
-                        class="dropdown-toggle nav-link btn  nav-link"
+                        class="dropdown-toggle nav-link  nav-link"
                         role="button"
                       >
                         <span>
@@ -25953,7 +25974,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                       <a
                         aria-expanded="false"
                         aria-haspopup="menu"
-                        class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
+                        class="px-lg-2 px-xl-3 dropdown-toggle nav-link  nav-link"
                         role="button"
                       >
                         <span>
@@ -26239,7 +26260,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
     class="it-header-navbar-wrapper"
   >
     <div
-      class="container"
+      class="container-xxl"
     >
       <div
         class="row"
@@ -26258,7 +26279,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                 aria-expanded="false"
                 aria-label="Toggle navigation"
                 class="custom-navbar-toggler navbar-toggler"
-                href="#"
                 type="button"
               >
                 <svg
@@ -26283,16 +26303,29 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                   style="display: none;"
                 />
                 <div
-                  class="close-div visually-hidden"
+                  class="close-div"
                 >
                   <button
                     class="btn close-menu"
                     type="button"
                   >
                     <span
-                      class="it-close"
-                    />
-                    close
+                      class="visually-hidden"
+                    >
+                      Nascondi la navigazione
+                    </span>
+                    <svg
+                      class="icon icon-white"
+                      enable-background="new 0 0 24 24"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+                      />
+                    </svg>
                   </button>
                 </div>
                 <div
@@ -26410,7 +26443,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
     class="it-header-slim-wrapper"
   >
     <div
-      class="container"
+      class="container-xxl"
     >
       <div
         class="row"
@@ -26434,9 +26467,9 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                 class=""
               >
                 <a
+                  aria-expanded="false"
                   aria-label="Toggle navigation"
                   class="it-opener d-lg-none navbar-toggler"
-                  href="#"
                 >
                   <span>
                     Ente appartenenza
@@ -26489,7 +26522,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                 <a
                   aria-expanded="false"
                   aria-haspopup="menu"
-                  class="dropdown-toggle nav-link btn  nav-link"
+                  class="dropdown-toggle nav-link  nav-link"
                   role="button"
                 >
                   ITA
@@ -26580,7 +26613,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
     class="it-header-slim-wrapper"
   >
     <div
-      class="container"
+      class="container-xxl container-fluid"
     >
       <div
         class="row"
@@ -26605,7 +26638,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                 <a
                   aria-expanded="false"
                   aria-haspopup="menu"
-                  class="dropdown-toggle nav-link btn  nav-link"
+                  class="dropdown-toggle nav-link  nav-link"
                   role="button"
                 >
                   ITA
@@ -26745,16 +26778,29 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
           style="display: none;"
         />
         <div
-          class="close-div visually-hidden"
+          class="close-div"
         >
           <button
             class="btn close-menu"
             type="button"
           >
             <span
-              class="it-close"
-            />
-            close
+              class="visually-hidden"
+            >
+              Nascondi la navigazione
+            </span>
+            <svg
+              class="icon icon-white"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+              />
+            </svg>
           </button>
         </div>
         <div
@@ -26769,7 +26815,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle nav-link  nav-link"
                 role="button"
               >
                 <span>
@@ -27061,16 +27107,29 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
           style="display: none;"
         />
         <div
-          class="close-div visually-hidden"
+          class="close-div"
         >
           <button
             class="btn close-menu"
             type="button"
           >
             <span
-              class="it-close"
-            />
-            close
+              class="visually-hidden"
+            >
+              Nascondi la navigazione
+            </span>
+            <svg
+              class="icon icon-white"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+              />
+            </svg>
           </button>
         </div>
         <div
@@ -27085,7 +27144,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle nav-link  nav-link"
                 role="button"
               >
                 <span>
@@ -27441,16 +27500,29 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
           style="display: none;"
         />
         <div
-          class="close-div visually-hidden"
+          class="close-div"
         >
           <button
             class="btn close-menu"
             type="button"
           >
             <span
-              class="it-close"
-            />
-            close
+              class="visually-hidden"
+            >
+              Nascondi la navigazione
+            </span>
+            <svg
+              class="icon icon-white"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+              />
+            </svg>
           </button>
         </div>
         <div
@@ -27465,7 +27537,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle nav-link  nav-link"
                 role="button"
               >
                 <span>
@@ -27763,16 +27835,29 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConIntest
           style="display: none;"
         />
         <div
-          class="close-div visually-hidden"
+          class="close-div"
         >
           <button
             class="btn close-menu"
             type="button"
           >
             <span
-              class="it-close"
-            />
-            close
+              class="visually-hidden"
+            >
+              Nascondi la navigazione
+            </span>
+            <svg
+              class="icon icon-white"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+              />
+            </svg>
           </button>
         </div>
         <div
@@ -27787,7 +27872,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConIntest
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle nav-link  nav-link"
                 role="button"
               >
                 <span>
@@ -28129,16 +28214,29 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
           style="display: none;"
         />
         <div
-          class="close-div visually-hidden"
+          class="close-div"
         >
           <button
             class="btn close-menu"
             type="button"
           >
             <span
-              class="it-close"
-            />
-            close
+              class="visually-hidden"
+            >
+              Nascondi la navigazione
+            </span>
+            <svg
+              class="icon icon-white"
+              enable-background="new 0 0 24 24"
+              role="img"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+              />
+            </svg>
           </button>
         </div>
         <div
@@ -28153,7 +28251,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
               <a
                 aria-expanded="false"
                 aria-haspopup="menu"
-                class="px-lg-2 px-xl-3 dropdown-toggle nav-link btn  nav-link"
+                class="px-lg-2 px-xl-3 dropdown-toggle nav-link  nav-link"
                 role="button"
               >
                 <span>
@@ -28818,16 +28916,29 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                 style="display: none;"
               />
               <div
-                class="close-div visually-hidden"
+                class="close-div"
               >
                 <button
                   class="btn close-menu"
                   type="button"
                 >
                   <span
-                    class="it-close"
-                  />
-                  close
+                    class="visually-hidden"
+                  >
+                    Nascondi la navigazione
+                  </span>
+                  <svg
+                    class="icon icon-white"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+                    />
+                  </svg>
                 </button>
               </div>
               <button
@@ -29229,16 +29340,29 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
                 style="display: none;"
               />
               <div
-                class="close-div visually-hidden"
+                class="close-div"
               >
                 <button
                   class="btn close-menu"
                   type="button"
                 >
                   <span
-                    class="it-close"
-                  />
-                  close
+                    class="visually-hidden"
+                  >
+                    Nascondi la navigazione
+                  </span>
+                  <svg
+                    class="icon icon-white"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+                    />
+                  </svg>
                 </button>
               </div>
               <button
@@ -29640,16 +29764,29 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
                 style="display: none;"
               />
               <div
-                class="close-div visually-hidden"
+                class="close-div"
               >
                 <button
                   class="btn close-menu"
                   type="button"
                 >
                   <span
-                    class="it-close"
-                  />
-                  close
+                    class="visually-hidden"
+                  >
+                    Nascondi la navigazione
+                  </span>
+                  <svg
+                    class="icon icon-white"
+                    enable-background="new 0 0 24 24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m12.7 12 6.7 6.6-.8.8-6.6-6.7-6.6 6.7-.8-.8 6.7-6.6-6.7-6.6.8-.8 6.6 6.7 6.6-6.7.8.8-6.7 6.6z"
+                    />
+                  </svg>
                 </button>
               </div>
               <button
