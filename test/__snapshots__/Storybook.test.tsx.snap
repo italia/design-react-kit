@@ -28593,6 +28593,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                     class="list-item large medium right-icon collapsed undefined"
                     data-toggle="collapse"
                     href="#collapseOne"
+                    role="button"
                   >
                     <span
                       class="list-item-title-icon-wrapper"
@@ -28649,6 +28650,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                     class="list-item large medium right-icon collapsed undefined"
                     data-toggle="collapse"
                     href="#collapseTwo"
+                    role="button"
                   >
                     <span
                       class="list-item-title-icon-wrapper"
@@ -28705,6 +28707,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                     class="list-item large medium right-icon collapsed undefined"
                     data-toggle="collapse"
                     href="#collapseThree"
+                    role="button"
                   >
                     <span
                       class="list-item-title-icon-wrapper"
@@ -28891,7 +28894,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
         class="col-md-12 col-lg-4"
       >
         <nav
-          class="it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top theme-dark-desk theme-dark-mobile navbar navbar-expand-lg"
+          class="navbar it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top theme-dark-desk theme-dark-mobile navbar navbar-expand-lg"
         >
           <div
             class="container-fluid"
@@ -28942,7 +28945,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                 </button>
               </div>
               <button
-                class="it-back-button btn w-100 text-start"
+                class=" it-back-button btn w-100 text-start"
                 style="display: none;"
               >
                 <svg
@@ -28959,7 +28962,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                   />
                 </svg>
                 <span>
-                  Back 
+                  Indietro
                 </span>
               </button>
               <div
@@ -29315,7 +29318,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
         class="col-md-12 col-lg-4"
       >
         <nav
-          class="it-navscroll-wrapper it-bottom-navscroll it-left-side affix-top navbar navbar-expand-lg"
+          class="navbar it-navscroll-wrapper it-bottom-navscroll it-left-side affix-top navbar navbar-expand-lg"
         >
           <div
             class="container-fluid"
@@ -29366,7 +29369,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
                 </button>
               </div>
               <button
-                class="it-back-button btn w-100 text-start"
+                class=" it-back-button btn w-100 text-start"
                 style="display: none;"
               >
                 <svg
@@ -29383,7 +29386,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
                   />
                 </svg>
                 <span>
-                  Back 
+                  Indietro
                 </span>
               </button>
               <div
@@ -29739,7 +29742,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
         class="col-md-12 col-lg-4"
       >
         <nav
-          class="it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top navbar navbar-expand-lg"
+          class="navbar it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top navbar navbar-expand-lg"
         >
           <div
             class="container-fluid"
@@ -29790,7 +29793,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
                 </button>
               </div>
               <button
-                class="it-back-button btn w-100 text-start"
+                class=" it-back-button btn w-100 text-start"
                 style="display: none;"
               >
                 <svg
@@ -29807,7 +29810,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
                   />
                 </svg>
                 <span>
-                  Back 
+                  Indietro
                 </span>
               </button>
               <div
