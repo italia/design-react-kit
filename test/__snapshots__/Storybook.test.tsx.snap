@@ -20570,7 +20570,7 @@ exports[`Stories Snapshots Documentazione/Form/Input _InputAutocompleteConDatiAc
         id="autocomplete__assistiveHint"
         style="display: none;"
       >
-        When autocomplete results are available use up and down arrows to review and enter to select.  Touch device users, explore by touch or with swipe gestures.
+        Quando i risultati del completamento automatico sono disponibili, usa le frecce su e giù per rivedere e Invio per selezionare. Utenti di dispositivi touch, esplora tramite tocco o con gesti di scorrimento
       </span>
     </div>
   </div>
