@@ -37,7 +37,13 @@
       "main": "./dist/index.cjs"
     }
   },
-  "sideEffects": false,
+  "sideEffects": [
+    "dist/track-focus.js",
+    "src/track-focus.js",
+    "dist/index.ts",
+    "dist/index.js",
+    "src/index.ts"
+  ],
   "files": [
     "dist",
     "src"
