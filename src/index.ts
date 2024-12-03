@@ -47,6 +47,7 @@ export {
   Util
 } from 'reactstrap';
 
+export { Autocomplete } from './Autocomplete/Autocomplete';
 export { Accordion } from './Accordion/Accordion';
 export { AccordionBody } from './Accordion/AccordionBody';
 export { AccordionHeader } from './Accordion/AccordionHeader';
@@ -297,3 +298,5 @@ export type {
   UncontrolledCollapseProps,
   UncontrolledTooltipProps
 } from 'reactstrap';
+
+import "./track-focus.js"
