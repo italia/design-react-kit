@@ -298,3 +298,5 @@ export type {
   UncontrolledCollapseProps,
   UncontrolledTooltipProps
 } from 'reactstrap';
+
+import "./track-focus.js"
