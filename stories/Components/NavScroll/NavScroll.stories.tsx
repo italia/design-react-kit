@@ -710,6 +710,7 @@ const ComponenteMenuInlineHooks = () => {
                   data-toggle='collapse'
                   aria-expanded='false'
                   aria-controls='collapseOne'
+                  role="button"
                   onClick={(e) => {
                     e.preventDefault();
                     toggleNavScrollOne(!isOpenOne);
@@ -733,6 +734,7 @@ const ComponenteMenuInlineHooks = () => {
                   data-toggle='collapse'
                   aria-expanded='false'
                   aria-controls='collapseTwo'
+                  role="button"
                   onClick={(e) => {
                     e.preventDefault();
                     toggleNavScrollTwo(!isOpenTwo);
@@ -756,6 +758,7 @@ const ComponenteMenuInlineHooks = () => {
                   data-toggle='collapse'
                   aria-expanded='false'
                   aria-controls='collapseThree'
+                  role="button"
                   onClick={(e) => {
                     e.preventDefault();
                     toggleNavScrollThree(!isOpenThree);
