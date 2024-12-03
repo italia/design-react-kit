@@ -5,7 +5,7 @@
  * Code: https://github.com/dej611/react-use-navscroll
  */
 
-import { createRef, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { debounce } from './debounce';
 import type { TrackedElement, useNavScrollArgs, useNavScrollResult } from './types';
 import { useSizeDetector } from './useSizeDetector';
@@ -65,7 +65,6 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
     return lookup;
   }, []);
   const activeIds = useMemo(() => (activeId ? resolveHierarchyIds(activeId, elsLookup) : []), [activeId, elsLookup]);
-
   const activeLookups = useMemo(() => new Set(activeIds), [activeIds]);
   useEffect(() => {
     if (!hasWindow) {
@@ -137,8 +136,7 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
       }
       const alreadyRegistered = id in elsLookup;
       const entry = (alreadyRegistered ? els.current.find(({ id: existingId }) => existingId === id) : options) as any;
-      const ref = (entry && entry.ref) || createRef();
-
+      const ref = entry?.ref || useRef();
       if (!alreadyRegistered) {
         els.current = [...els.current, { id, ref, parent: (options as any).parent }];
         refresh();

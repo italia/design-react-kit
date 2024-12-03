@@ -40,13 +40,12 @@ const PosizionamentoFondoPaginaHooks = () => {
   const { register, isActive, getActiveRef } = useNavScroll({
     root: containerRef.current || undefined
   });
-
   const getActiveClass = (id: string) => (isActive(id) ? 'active' : undefined);
   return (
     <Container>
       <Row>
         <Col md={12} lg={4}>
-          <Navbar expand='lg' className='it-navscroll-wrapper it-bottom-navscroll it-left-side affix-top'>
+          <Navbar expand='lg' className='navbar it-navscroll-wrapper it-bottom-navscroll it-left-side affix-top'>
             <NavbarToggler
               className={isOpen ? 'custom-navbar-toggler focus--mouse' : 'custom-navbar-toggler'}
               data-target='#navbarNavA'
@@ -57,12 +56,12 @@ const PosizionamentoFondoPaginaHooks = () => {
             </NavbarToggler>
             <Collapse isOpen={isOpen} navbar id='navbarNavA'>
               <button
-                className='it-back-button btn w-100 text-start'
+                className={`${isOpen ? 'show' : ''} it-back-button btn w-100 text-start`}
                 style={{ display: isOpen ? 'block' : 'none' }}
                 onClick={() => toggleNavScroll(!isOpen)}
               >
                 <Icon className='align-top' color='primary' icon='it-chevron-left' aria-hidden size='sm' />
-                <span>Back </span>
+                <span>Indietro</span>
               </button>
               <div className='menu-wrapper'>
                 <div className='link-list-wrapper'>
@@ -364,7 +363,6 @@ const PosizionamentoTestaAltaHooks = () => {
   const { register, isActive, getActiveRef } = useNavScroll({
     root: containerRef.current || undefined
   });
-
   const getActiveClass = (id: string) => (isActive(id) ? 'active' : undefined);
   return (
     <Container>
@@ -372,7 +370,7 @@ const PosizionamentoTestaAltaHooks = () => {
         <Col md={12} lg={4}>
           <Navbar
             expand='lg'
-            className='it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top'
+            className='navbar it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top'
           >
             <NavbarToggler
               className={isOpen ? 'custom-navbar-toggler focus--mouse' : 'custom-navbar-toggler'}
@@ -384,12 +382,12 @@ const PosizionamentoTestaAltaHooks = () => {
             </NavbarToggler>
             <Collapse isOpen={isOpen} navbar id='navbarNavB'>
               <button
-                className='it-back-button btn w-100 text-start'
+                className={`${isOpen ? 'show' : ''} it-back-button btn w-100 text-start`}
                 style={{ display: isOpen ? 'block' : 'none' }}
                 onClick={() => toggleNavScroll(!isOpen)}
               >
                 <Icon className='align-top' color='primary' icon='it-chevron-left' aria-hidden size='sm' />
-                <span>Back </span>
+                <span>Indietro</span>
               </button>
               <div className='menu-wrapper'>
                 <div className='link-list-wrapper'>
@@ -973,7 +971,7 @@ const ComponenteVersioneScuraHooks = () => {
         <Col md={12} lg={4}>
           <Navbar
             expand='lg'
-            className='it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top theme-dark-desk theme-dark-mobile'
+            className='navbar it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top theme-dark-desk theme-dark-mobile'
           >
             <NavbarToggler
               className={isOpen ? 'custom-navbar-toggler focus--mouse' : 'custom-navbar-toggler'}
@@ -985,12 +983,12 @@ const ComponenteVersioneScuraHooks = () => {
             </NavbarToggler>
             <Collapse isOpen={isOpen} navbar id='navbarNavB'>
               <button
-                className='it-back-button btn w-100 text-start'
+                className={`${isOpen ? 'show' : ''} it-back-button btn w-100 text-start`}
                 style={{ display: isOpen ? 'block' : 'none' }}
                 onClick={() => toggleNavScroll(!isOpen)}
               >
                 <Icon className='align-top' color='primary' icon='it-chevron-left' aria-hidden size='sm' />
-                <span>Back </span>
+                <span>Indietro</span>
               </button>
               <div className='menu-wrapper'>
                 <div className='link-list-wrapper'>
