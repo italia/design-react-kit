@@ -38,7 +38,8 @@
     }
   },
   "sideEffects": [
-    "dist/track-focus.js"
+    "dist/track-focus.js",
+    "src/track-focus.js"
   ],
   "files": [
     "dist",
