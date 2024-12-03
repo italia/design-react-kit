@@ -1,7 +1,7 @@
 import classNames from 'classnames';
-import React, { ElementType, FC, HTMLAttributes } from 'react';
-import { Dropdown as BSDRopdown } from 'reactstrap';
-export interface DropdownProps extends HTMLAttributes<HTMLElement> {
+import React, { ElementType, FC } from 'react';
+import { Dropdown as BSDRopdown, DropdownProps as  BSDRopdownProps} from 'reactstrap';
+export interface DropdownProps extends BSDRopdownProps {
   tag?: ElementType;
   inNavbar?: boolean;
   textCenter?: boolean;
@@ -21,9 +21,7 @@ export const Dropdown: FC<DropdownProps> = ({
   ...attributes
 }) => {
   const classes = classNames(className, {
-    dropdown: true,
     'text-center': textCenter,
-    'nav-item': inNavbar
   });
 
   const [isOpen, setIsOpen] = React.useState(false);
@@ -41,7 +39,12 @@ export const Dropdown: FC<DropdownProps> = ({
       inNavbar={inNavbar}
       nav={inNavbar}
     >
-      {children}
+      {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        React.Children.map(children, (child: any) =>
+          React.cloneElement(child, { inNavbar: inNavbar })
+        )
+      }    
     </BSDRopdown>
   );
 };

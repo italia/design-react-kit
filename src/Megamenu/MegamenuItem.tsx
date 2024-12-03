@@ -13,10 +13,12 @@ export interface MegamenuItemProps extends HTMLAttributes<HTMLUListElement> {
 
 export const MegamenuItem: FC<MegamenuItemProps> = ({ itemName, className, children, ...attributes }) => {
   const classes = classNames(className, 'megamenu');
-  const toggleClasses = classNames('px-lg-2', 'px-xl-3');
+  const [dropdownOpen, setDropdownOpen] = React.useState(false);
+  const toggle = () => setDropdownOpen((prevState) => !prevState);
+  const toggleClasses = classNames('px-lg-2', 'px-xl-3', dropdownOpen ? 'show' : '');
 
   return (
-    <Dropdown className={classes} inNavbar {...attributes}>
+    <Dropdown className={classes} inNavbar {...attributes} isOpen={dropdownOpen} toggle={toggle}>
       <DropdownToggle inNavbar caret className={toggleClasses}>
         <span>{itemName}</span>
       </DropdownToggle>

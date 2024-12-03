@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Meta, StoryObj } from '@storybook/react';
 import {
@@ -12,6 +12,7 @@ import {
   HeaderBrand,
   HeaderContent,
   HeaderLinkZone,
+  HeaderProps,
   HeaderRightZone,
   HeaderSearch,
   HeaderSocialsZone,
@@ -75,12 +76,14 @@ const CenterHeader = ({ theme }: ThemeType) => {
 };
 
 const NavHeader = ({ theme }: ThemeType) => {
+  const [isOpenSide, setIsOpenSide] = useState(false);
   return (
     <Header type='navbar' theme={theme}>
       <HeaderContent expand='lg' megamenu>
         <HeaderToggler
           onClick={() => {
             /* set logic open state  */
+            setIsOpenSide(!isOpenSide);
           }}
           aria-controls='nav1'
           aria-expanded='false'
@@ -91,8 +94,10 @@ const NavHeader = ({ theme }: ThemeType) => {
         <Collapse
           navbar
           header
+          isOpen={isOpenSide}
           onOverlayClick={() => {
             /* set close logic here */
+            setIsOpenSide(!isOpenSide);
           }}
         >
           <div className='menu-wrapper'>
@@ -115,7 +120,7 @@ const NavHeader = ({ theme }: ThemeType) => {
                 <NavLink href='#'>Link 4</NavLink>
               </NavItem>
               <Dropdown inNavbar>
-                <DropdownToggle inNavbar caret>
+                <DropdownToggle caret>
                   <span>Menu Dropdown</span>
                 </DropdownToggle>
                 <DropdownMenu>
@@ -201,22 +206,24 @@ const NavHeader = ({ theme }: ThemeType) => {
   );
 };
 
-const SlimHeader = ({ theme }: ThemeType) => {
+const SlimHeader = ({ theme, brandText }: Pick<HeaderProps, 'theme'> & { brandText: string }) => {
+  const [isOpenCollapse, setIsOpenCollapse] = useState(false);
   return (
     <Header type='slim' theme={theme}>
       <HeaderContent>
-        <HeaderBrand>Ente appartenenza/Owner</HeaderBrand>
-        <HeaderLinkZone>
+        <HeaderBrand>{brandText}</HeaderBrand>
+        <HeaderLinkZone aria-label='Navigazione accessoria'>
           <HeaderToggler
+            isOpen={isOpenCollapse}
             onClick={() => {
-              /* open logic state here */
+              setIsOpenCollapse(!isOpenCollapse);
             }}
           >
-            <span>Ente appartenenza/Owner</span>
+            <span>{brandText}</span>
             <Icon icon='it-expand' />
           </HeaderToggler>
-          <Collapse isOpen={true} header>
-            <LinkList>
+          <Collapse isOpen={isOpenCollapse} header>
+            <LinkList noWrapper>
               <LinkListItem href='#'>Link 1</LinkListItem>
               <LinkListItem href='#' active>
                 Link 2 Active
@@ -226,7 +233,7 @@ const SlimHeader = ({ theme }: ThemeType) => {
         </HeaderLinkZone>
         <HeaderRightZone>
           <Dropdown inNavbar>
-            <DropdownToggle inNavbar caret>
+            <DropdownToggle caret>
               ITA
             </DropdownToggle>
             <DropdownMenu>
@@ -273,7 +280,7 @@ type Story = StoryObj<HeaderCompleteProps>;
 export const CompleteHeaderStory: Story = {
   render: ({ theme, sticky }) => (
     <Headers sticky={sticky}>
-      <SlimHeader theme={theme} />
+      <SlimHeader theme={theme} brandText='Ente di appartenenza'/>
       <div className='it-nav-wrapper'>
         <CenterHeader theme={theme} />
         <NavHeader theme={theme} />

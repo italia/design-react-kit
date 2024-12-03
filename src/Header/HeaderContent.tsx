@@ -30,7 +30,7 @@ export const HeaderContent = ({ className, megamenu, testId, ...attributes }: He
       <div className={classes} {...attributes} data-testid={testId} />
     );
   return (
-    <Container>
+    <Container className='container-xxl' fluid>
       <Row>
         <Col>{Content}</Col>
       </Row>

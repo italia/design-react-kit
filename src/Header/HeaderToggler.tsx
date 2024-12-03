@@ -15,12 +15,13 @@ export interface HeaderTogglerProps extends ButtonHTMLAttributes<HTMLButtonEleme
    * Se fornito questo sovrascriverà il valore di default.
    */
   type?: 'button' | 'submit' | 'reset';
+  isOpen?: boolean;
   testId?: string;
 }
 
 const BUTTON = 'button';
 
-export const HeaderToggler = ({ className, tag, type, testId, ...attributes }: HeaderTogglerProps) => {
+export const HeaderToggler = ({ className, tag, type, isOpen=false, testId, ...attributes }: HeaderTogglerProps) => {
   const HeaderType = useHeaderContext();
   const defaultTag = HeaderType === SLIM ? 'a' : BUTTON;
   const defaultType = HeaderType === SLIM ? undefined : BUTTON;
@@ -31,6 +32,7 @@ export const HeaderToggler = ({ className, tag, type, testId, ...attributes }: H
     },
     className
   );
+  const expanded = isOpen ? "true" : "false"
   useEffect(() => {
     document.querySelectorAll('.container-fluid').forEach((element) => {
       element.classList.remove('container-fluid');
@@ -42,8 +44,8 @@ export const HeaderToggler = ({ className, tag, type, testId, ...attributes }: H
       {...attributes}
       tag={tag || defaultTag}
       type={type || defaultType}
-      href='#'
       data-testid={testId}
+      aria-expanded={expanded}
     />
   );
 };
