@@ -2164,19 +2164,18 @@ exports[`Stories Snapshots Documentazione/Componenti/BackToTop Dark 1`] = `
   <div
     class="d-flex align-items-center"
   >
-    <button
-      aria-hidden="true"
-      class="back-to-top dark btn btn-"
+    <a
+      aria-label="Torna su"
+      class="back-to-top dark"
+      color=""
       id="back-to-top-btn"
       style="padding: 0px;"
-      tabindex="-1"
-      type="button"
     >
       <svg
         class="icon icon-secondary"
         enable-background="new 0 0 24 24"
         role="img"
-        style="top: 0px;"
+        style="cursor: pointer;"
         viewBox="0 0 24 24"
         xml:space="preserve"
         xmlns="http://www.w3.org/2000/svg"
@@ -2185,20 +2184,19 @@ exports[`Stories Snapshots Documentazione/Componenti/BackToTop Dark 1`] = `
           d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
         />
       </svg>
-    </button>
-    <button
-      aria-hidden="true"
-      class="back-to-top back-to-top-small dark btn btn-"
+    </a>
+    <a
+      aria-label="Torna su"
+      class="back-to-top back-to-top-small dark"
+      color=""
       id="back-to-top-btn"
       style="padding: 0px;"
-      tabindex="-1"
-      type="button"
     >
       <svg
         class="icon icon-secondary"
         enable-background="new 0 0 24 24"
         role="img"
-        style="top: 0px;"
+        style="cursor: pointer;"
         viewBox="0 0 24 24"
         xml:space="preserve"
         xmlns="http://www.w3.org/2000/svg"
@@ -2207,7 +2205,7 @@ exports[`Stories Snapshots Documentazione/Componenti/BackToTop Dark 1`] = `
           d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
         />
       </svg>
-    </button>
+    </a>
   </div>
 </div>
 `;
@@ -2217,19 +2215,18 @@ exports[`Stories Snapshots Documentazione/Componenti/BackToTop DarkShadow 1`] = 
   <div
     class="d-flex align-items-center"
   >
-    <button
-      aria-hidden="true"
-      class="back-to-top dark shadow btn btn-"
+    <a
+      aria-label="Torna su"
+      class="back-to-top dark shadow"
+      color=""
       id="back-to-top-btn"
       style="padding: 0px;"
-      tabindex="-1"
-      type="button"
     >
       <svg
         class="icon icon-secondary"
         enable-background="new 0 0 24 24"
         role="img"
-        style="top: 0px;"
+        style="cursor: pointer;"
         viewBox="0 0 24 24"
         xml:space="preserve"
         xmlns="http://www.w3.org/2000/svg"
@@ -2238,20 +2235,19 @@ exports[`Stories Snapshots Documentazione/Componenti/BackToTop DarkShadow 1`] = 
           d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
         />
       </svg>
-    </button>
-    <button
-      aria-hidden="true"
-      class="back-to-top back-to-top-small dark shadow btn btn-"
+    </a>
+    <a
+      aria-label="Torna su"
+      class="back-to-top back-to-top-small dark shadow"
+      color=""
       id="back-to-top-btn"
       style="padding: 0px;"
-      tabindex="-1"
-      type="button"
     >
       <svg
         class="icon icon-secondary"
         enable-background="new 0 0 24 24"
         role="img"
-        style="top: 0px;"
+        style="cursor: pointer;"
         viewBox="0 0 24 24"
         xml:space="preserve"
         xmlns="http://www.w3.org/2000/svg"
@@ -2260,26 +2256,25 @@ exports[`Stories Snapshots Documentazione/Componenti/BackToTop DarkShadow 1`] = 
           d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
         />
       </svg>
-    </button>
+    </a>
   </div>
 </div>
 `;
 
 exports[`Stories Snapshots Documentazione/Componenti/BackToTop Esempio 1`] = `
 <div>
-  <button
-    aria-hidden="true"
-    class="back-to-top btn btn-primary"
+  <a
+    aria-label="Torna su"
+    class="back-to-top"
+    color="primary"
     id="back-to-top-btn"
     style="padding: 0px;"
-    tabindex="-1"
-    type="button"
   >
     <svg
-      class="icon icon-white"
+      class="icon icon-light"
       enable-background="new 0 0 24 24"
       role="img"
-      style="top: 0px;"
+      style="cursor: pointer;"
       viewBox="0 0 24 24"
       xml:space="preserve"
       xmlns="http://www.w3.org/2000/svg"
@@ -2288,7 +2283,7 @@ exports[`Stories Snapshots Documentazione/Componenti/BackToTop Esempio 1`] = `
         d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
       />
     </svg>
-  </button>
+  </a>
 </div>
 `;
 
@@ -2297,19 +2292,18 @@ exports[`Stories Snapshots Documentazione/Componenti/BackToTop Shadow 1`] = `
   <div
     class="d-flex align-items-center"
   >
-    <button
-      aria-hidden="true"
-      class="back-to-top shadow btn btn-primary"
+    <a
+      aria-label="Torna su"
+      class="back-to-top shadow"
+      color="primary"
       id="back-to-top-btn"
       style="padding: 0px;"
-      tabindex="-1"
-      type="button"
     >
       <svg
-        class="icon icon-white"
+        class="icon icon-light"
         enable-background="new 0 0 24 24"
         role="img"
-        style="top: 0px;"
+        style="cursor: pointer;"
         viewBox="0 0 24 24"
         xml:space="preserve"
         xmlns="http://www.w3.org/2000/svg"
@@ -2318,20 +2312,19 @@ exports[`Stories Snapshots Documentazione/Componenti/BackToTop Shadow 1`] = `
           d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
         />
       </svg>
-    </button>
-    <button
-      aria-hidden="true"
-      class="back-to-top back-to-top-small shadow btn btn-primary"
+    </a>
+    <a
+      aria-label="Torna su"
+      class="back-to-top back-to-top-small shadow"
+      color="primary"
       id="back-to-top-btn"
       style="padding: 0px;"
-      tabindex="-1"
-      type="button"
     >
       <svg
-        class="icon icon-white"
+        class="icon icon-light"
         enable-background="new 0 0 24 24"
         role="img"
-        style="top: 0px;"
+        style="cursor: pointer;"
         viewBox="0 0 24 24"
         xml:space="preserve"
         xmlns="http://www.w3.org/2000/svg"
@@ -2340,26 +2333,25 @@ exports[`Stories Snapshots Documentazione/Componenti/BackToTop Shadow 1`] = `
           d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
         />
       </svg>
-    </button>
+    </a>
   </div>
 </div>
 `;
 
 exports[`Stories Snapshots Documentazione/Componenti/BackToTop Small 1`] = `
 <div>
-  <button
-    aria-hidden="true"
-    class="back-to-top back-to-top-small btn btn-primary"
+  <a
+    aria-label="Torna su"
+    class="back-to-top back-to-top-small"
+    color="primary"
     id="back-to-top-btn"
     style="padding: 0px;"
-    tabindex="-1"
-    type="button"
   >
     <svg
-      class="icon icon-white"
+      class="icon icon-light"
       enable-background="new 0 0 24 24"
       role="img"
-      style="top: 0px;"
+      style="cursor: pointer;"
       viewBox="0 0 24 24"
       xml:space="preserve"
       xmlns="http://www.w3.org/2000/svg"
@@ -2368,7 +2360,7 @@ exports[`Stories Snapshots Documentazione/Componenti/BackToTop Small 1`] = `
         d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
       />
     </svg>
-  </button>
+  </a>
 </div>
 `;
 
@@ -10512,6 +10504,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingBase 1`] = `
       for="star5a"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
@@ -10542,6 +10535,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingBase 1`] = `
       for="star4a"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
@@ -10572,6 +10566,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingBase 1`] = `
       for="star3a"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
@@ -10602,6 +10597,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingBase 1`] = `
       for="star2a"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
@@ -10632,6 +10628,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingBase 1`] = `
       for="star1a"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
@@ -10686,6 +10683,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingConLabel 1`] =
       for="star5b"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
@@ -10717,6 +10715,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingConLabel 1`] =
       for="star4b"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
@@ -10747,6 +10746,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingConLabel 1`] =
       for="star3b"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
@@ -10777,6 +10777,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingConLabel 1`] =
       for="star2b"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
@@ -10807,6 +10808,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingConLabel 1`] =
       for="star1b"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
@@ -10853,6 +10855,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingReadOnly 1`] =
       for="star5c"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
@@ -10886,6 +10889,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingReadOnly 1`] =
       for="star4c"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
@@ -10918,6 +10922,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingReadOnly 1`] =
       for="star3c"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
@@ -10950,6 +10955,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingReadOnly 1`] =
       for="star2c"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
@@ -10982,6 +10988,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingReadOnly 1`] =
       for="star1c"
     >
       <svg
+        aria-hidden="true"
         class="icon icon-sm"
         enable-background="new 0 0 24 24"
         role="img"
