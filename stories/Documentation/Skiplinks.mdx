@@ -5,7 +5,7 @@ import * as SkiplinksStories from '../Components/Skiplinks.stories';
 
 # Skiplinks
 
-## Gli Skiplink sono collegamento interno alla pagina che consentono agli utenti di accedere direttamente al contenuto principale della pagina saltando il menu di navigazione.
+Gli Skiplink sono collegamento interno alla pagina che consentono agli utenti di accedere direttamente al contenuto principale della pagina saltando il menu di navigazione.
 
 È un componente particolarmente utile per coloro che accedono con screen reader e/o da tastiera.
 
@@ -47,3 +47,16 @@ return (
   </section>
 );
 ```
+
+
+## Elenco
+Se la pagina è particolarmente complessa si possono inserire più collegamenti che permettano di saltare direttamente ai blocchi principali. 
+
+Nell'esempio che segue, implementato per il sito [Designers Italia](https://designers.italia.it), sono inseriti due collegamenti che è utile approfondire: 
+
+- un salto ad un **modulo per chiedere alle persone come stanno valutando l'esperienza d'uso** della pagina. Il testo dello skiplink anticipa già la domanda;
+- un **collegamento diretto alla Dichiarazione di accessibilità disponibile sul form AgID**, che accompagnerà il necessario link presente anche nel piede di pagina, per permettere a chi naviga con strumenti assistivi di trovarla facilmente senza dover scansionare tutti i contennuti. 
+
+Consigliamo di non eccedere con il numero di elementi scorciatoia, altrimenti emergerebbe il bisogno di poter saltare le stesse scorciatoie.  
+
+<Canvas of={SkiplinksStories._EsempiWithNav} />
