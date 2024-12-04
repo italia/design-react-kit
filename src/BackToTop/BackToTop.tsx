@@ -1,27 +1,30 @@
 import React, { useLayoutEffect, useState } from 'react';
 import { Icon } from '../Icon/Icon';
 import classNames from 'classnames';
-import { Button } from '../Button/Button';
 
 export interface BackToTopProps {
   /**
-   * Optional classnames to pass to <a> element
+   * Aria label che definisce lo scopo del componente (default: `Torna su`)
+   */
+  ariaLabel?: string;
+  /**
+   * Classi aggiuntive da usare per il componente
    */
   className?: string;
   /**
-   * Render the dark variant of the back to top button
+   * Renderizza la variante `dark` del componente
    */
   dark?: boolean;
   /**
-   * Render the small variant of the back to top button
+   * Renderizza la variante `small` del componente
    */
   small?: boolean;
   /**
-   * Add a shadow to the button
+   * Aggiunge l'ombra al componente
    */
   shadow?: boolean;
   /**
-   * Configure after how many scrolled pixels the button is shown
+   * Configurazione riguardante dopo quanti pixel di scroll il bottone viene mostrato
    */
   showOffset?: number;
 }
@@ -31,6 +34,7 @@ const backToTop = () => {
 };
 
 export const BackToTop = ({
+  ariaLabel='Torna su',
   className,
   dark = false,
   small = false,
@@ -50,9 +54,8 @@ export const BackToTop = ({
   }, [showOffset]);
 
   return (
-    <Button
-      aria-hidden='true'
-      tabIndex={-1}
+    <a
+      aria-label={ariaLabel}
       className={classNames(
         className,
         'back-to-top',
@@ -66,7 +69,7 @@ export const BackToTop = ({
       style={{ padding: 0 }}
       color={!dark ? 'primary' : ''}
     >
-      <Icon color={dark ? 'secondary' : 'white'} icon='it-arrow-up' style={{ top: 0 }} />
-    </Button>
+      <Icon color={dark ? 'secondary' : 'light'} icon='it-arrow-up' style={{ cursor: 'pointer' }} />
+    </a>
   );
 };
