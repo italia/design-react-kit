@@ -45,9 +45,9 @@ const PosizionamentoFondoPaginaHooks = () => {
     <Container>
       <Row>
         <Col md={12} lg={4}>
-          <Navbar expand='lg' className='navbar it-navscroll-wrapper it-bottom-navscroll it-left-side affix-top'>
+          <Navbar expand='lg' className='it-navscroll-wrapper it-bottom-navscroll it-left-side affix-top'>
             <NavbarToggler
-              className={isOpen ? 'custom-navbar-toggler focus--mouse' : 'custom-navbar-toggler'}
+              className='custom-navbar-toggler'
               data-target='#navbarNavA'
               onClick={() => toggleNavScroll(!isOpen)}
             >
@@ -370,10 +370,10 @@ const PosizionamentoTestaAltaHooks = () => {
         <Col md={12} lg={4}>
           <Navbar
             expand='lg'
-            className='navbar it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top'
+            className='it-navscroll-wrapper it-top-navscroll it-right-side affix-top'
           >
             <NavbarToggler
-              className={isOpen ? 'custom-navbar-toggler focus--mouse' : 'custom-navbar-toggler'}
+              className='custom-navbar-toggler'
               data-target='#navbarNavB'
               onClick={() => toggleNavScroll(!isOpen)}
             >
@@ -962,10 +962,10 @@ const ComponenteVersioneScuraHooks = () => {
         <Col md={12} lg={4}>
           <Navbar
             expand='lg'
-            className='navbar it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top theme-dark-desk theme-dark-mobile'
+            className='it-navscroll-wrapper it-top-navscroll it-right-side affix-top theme-dark-desk theme-dark-mobile'
           >
             <NavbarToggler
-              className={isOpen ? 'custom-navbar-toggler focus--mouse' : 'custom-navbar-toggler'}
+              className='custom-navbar-toggler'
               data-target='#navbarNavB'
               onClick={() => toggleNavScroll(!isOpen)}
             >
