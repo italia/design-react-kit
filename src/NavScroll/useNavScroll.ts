@@ -5,15 +5,29 @@
  * Code: https://github.com/dej611/react-use-navscroll
  */
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import {
+  createRef,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState
+} from 'react';
 import { debounce } from './debounce';
-import type { TrackedElement, useNavScrollArgs, useNavScrollResult } from './types';
+import type {
+  useNavScrollArgs,
+  useNavScrollResult,
+  TrackedElement
+} from './types';
 import { useSizeDetector } from './useSizeDetector';
 
 const hasWindow = typeof window !== 'undefined';
 const REGISTER_DELAY = 50;
 
-function resolveHierarchyIds(id: string, lookup: Record<string, string | undefined>) {
+function resolveHierarchyIds(
+  id: string,
+  lookup: Record<string, string | undefined>
+) {
   const newActiveIds = [id];
   let lastId: string | undefined = newActiveIds[0];
   while (lastId != null && lookup[lastId] != null) {
@@ -47,7 +61,8 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
 
   const observerMargin = Math.floor((targetSize * offset) / 100) || 1;
   const observerOptions = useMemo(() => {
-    const topMargin = observerMargin % 2 === 1 ? observerMargin - 1 : observerMargin;
+    const topMargin =
+      observerMargin % 2 === 1 ? observerMargin - 1 : observerMargin;
     const bottomMargin = targetSize - observerMargin;
     return {
       root: useViewport ? null : root,
@@ -63,8 +78,12 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
       lookup[id] = parent;
     }
     return lookup;
-  }, []);
-  const activeIds = useMemo(() => (activeId ? resolveHierarchyIds(activeId, elsLookup) : []), [activeId, elsLookup]);
+  }, [counter]);
+  const activeIds = useMemo(
+    () => (activeId ? resolveHierarchyIds(activeId, elsLookup) : []),
+    [activeId, elsLookup]
+  );
+
   const activeLookups = useMemo(() => new Set(activeIds), [activeIds]);
   useEffect(() => {
     if (!hasWindow) {
@@ -93,7 +112,10 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
       }
     };
 
-    const observer = new IntersectionObserver(handleIntersection, observerOptions);
+    const observer = new IntersectionObserver(
+      handleIntersection,
+      observerOptions
+    );
 
     els.current.forEach(({ ref }) => {
       if (ref && ref.current) {
@@ -130,27 +152,36 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
   );
 
   const register = useCallback(
-    (id: string, options = {}) => {
+    (id: string, options: any = {}) => {
       if (!hasWindow) {
         return { id, ref: null };
       }
       const alreadyRegistered = id in elsLookup;
-      const entry = (alreadyRegistered ? els.current.find(({ id: existingId }) => existingId === id) : options) as any;
-      const ref = entry?.ref || useRef();
+      const entry = alreadyRegistered
+        ? els.current.find(({ id: existingId }) => existingId === id)
+        : options;
+      const ref = (entry && entry.ref) || createRef();
+
       if (!alreadyRegistered) {
-        els.current = [...els.current, { id, ref, parent: (options as any).parent }];
+        els.current = [...els.current, { id, ref, parent: options.parent }];
         refresh();
       }
       return { id, ref };
     },
-    [elsLookup, refresh]
+    [counter]
   );
 
-  const unregister = useCallback((idToUnregister: string) => {
-    els.current = els.current.filter(({ id }) => id !== idToUnregister);
-  }, []);
+  const unregister = useCallback(
+    (idToUnregister: string) => {
+      els.current = els.current.filter(({ id }) => id !== idToUnregister);
+    },
+    [counter]
+  );
 
-  const isActive = useCallback((id: string) => activeLookups.has(id), [activeLookups]);
+  const isActive = useCallback(
+    (id: string) => activeLookups.has(id),
+    [activeLookups]
+  );
 
   const getActiveRef = useCallback(() => {
     const entry = els.current.find(({ id }) => id === activeId);
