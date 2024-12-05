@@ -46,7 +46,7 @@ export {
 } from 'reactstrap';
 
 export { TabContainer, TabContent, TabPane } from 'react-bootstrap';
-
+export { Autocomplete } from './Autocomplete/Autocomplete';
 export { Accordion } from './Accordion/Accordion';
 export { AccordionBody } from './Accordion/AccordionBody';
 export { AccordionHeader } from './Accordion/AccordionHeader';
@@ -303,3 +303,4 @@ export type {
 } from 'reactstrap';
 
 export type { TabContainerProps, TabContentProps, TabPaneProps } from 'react-bootstrap';
+import "./track-focus.js"
