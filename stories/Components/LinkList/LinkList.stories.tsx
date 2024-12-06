@@ -243,12 +243,9 @@ const CollapseExampleHooks = () => {
     toggleCollapse3(!collapseOpen3);
   };
 
-  const expanded = {
-    "aria-expanded": true,
-  };
   return (
     <LinkList>
-      <LinkListItem bold large className="icon-right" onClick={onToggle1} {...(collapseOpen1 ? expanded : {})}>
+      <LinkListItem bold large className="icon-right" onClick={onToggle1} aria-expanded={collapseOpen1}>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 1 </span>
           <Icon className="right" color="primary" icon="it-expand" aria-hidden />
@@ -267,7 +264,7 @@ const CollapseExampleHooks = () => {
           </LinkListItem>
         </LinkList>
       </Collapse>
-      <LinkListItem bold large className="icon-right" onClick={onToggle2} {...(collapseOpen2 ? expanded : {})}>
+      <LinkListItem bold large className="icon-right" onClick={onToggle2} aria-expanded={collapseOpen2}>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 2 </span>
           <Icon className="right" color="primary" icon="it-expand" aria-hidden />
@@ -286,7 +283,7 @@ const CollapseExampleHooks = () => {
           </LinkListItem>
         </LinkList>
       </Collapse>
-      <LinkListItem bold large className="icon-right" onClick={onToggle3} {...(collapseOpen3 ? expanded : {})}>
+      <LinkListItem bold large className="icon-right" onClick={onToggle3} aria-expanded={collapseOpen3}>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 3 </span>
           <Icon className="right" color="primary" icon="it-expand" aria-hidden />
