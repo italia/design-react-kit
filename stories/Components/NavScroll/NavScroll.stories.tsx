@@ -45,7 +45,7 @@ const PosizionamentoFondoPaginaHooks = () => {
     <Container>
       <Row>
         <Col md={12} lg={4}>
-          <Navbar expand='lg' className='it-navscroll-wrapper it-bottom-navscroll it-left-side affix-top'>
+          <Navbar expand='lg' className='it-navscroll-wrapper it-bottom-navscroll it-right-side affix-top'>
             <NavbarToggler
               className='custom-navbar-toggler'
               data-target='#navbarNavA'
