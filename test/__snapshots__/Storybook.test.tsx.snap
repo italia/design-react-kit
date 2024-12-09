@@ -29361,7 +29361,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
         class="col-md-12 col-lg-4"
       >
         <nav
-          class="it-navscroll-wrapper it-bottom-navscroll it-left-side affix-top navbar navbar-expand-lg"
+          class="it-navscroll-wrapper it-bottom-navscroll it-right-side affix-top navbar navbar-expand-lg"
         >
           <div
             class="container-fluid"
@@ -29799,6 +29799,25 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
               <span
                 class="it-list"
               />
+              <div
+                class="custom-navbar-progressbar progress"
+              >
+                <div
+                  class="progress-bar-label"
+                >
+                  <span
+                    class="visually-hidden"
+                  />
+                </div>
+                <div
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="0"
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 0%;"
+                />
+              </div>
             </button>
             <div
               class="navbar-collapsable collapse navbar-collapsable"
@@ -29865,6 +29884,25 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
                   <h3>
                     header
                   </h3>
+                  <div
+                    class="progress"
+                  >
+                    <div
+                      class="progress-bar-label"
+                    >
+                      <span
+                        class="visually-hidden"
+                      />
+                    </div>
+                    <div
+                      aria-valuemax="100"
+                      aria-valuemin="0"
+                      aria-valuenow="0"
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 0%;"
+                    />
+                  </div>
                   <ul
                     class="link-list"
                   >
