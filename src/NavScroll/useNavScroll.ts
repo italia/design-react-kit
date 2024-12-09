@@ -1,33 +1,85 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-/*
+/*--------------------------------------------------------------------------
  * This work derives from the React Use Navscroll library
- * Released under the MIT license by Marco Liberati
+ * Released under the MIT license by Marco Liberati (@dej611)
  * Code: https://github.com/dej611/react-use-navscroll
+ * --------------------------------------------------------------------------
+ * Parts of this code has been modified using Bootstrap Italia source code
+ * --------------------------------------------------------------------------
+ * Bootstrap Italia (https://italia.github.io/bootstrap-italia/)
+ * Authors: https://github.com/italia/bootstrap-italia/blob/main/AUTHORS
+ * License: BSD-3-Clause (https://github.com/italia/bootstrap-italia/blob/main/LICENSE)
+ * --------------------------------------------------------------------------
  */
 
-import {
-  createRef,
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState
-} from 'react';
+import { createRef, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { debounce } from './debounce';
-import type {
-  useNavScrollArgs,
-  useNavScrollResult,
-  TrackedElement
-} from './types';
+import type { useNavScrollArgs, useNavScrollResult, TrackedElement } from './types';
 import { useSizeDetector } from './useSizeDetector';
+
+import { v4 as uuidv4 } from 'uuid';
+
+let ticking: boolean = false;
+let callbacks: any[] = [];
+
+class ScrollCallback {
+  private _callback: any;
+  id: string;
+  constructor(id: string, callback: any) {
+    this.id = id;
+    this._callback = callback;
+  }
+
+  //Public
+  dispose() {
+    removeCallBack(this.id);
+  }
+
+  //Private
+  _execute(data: any) {
+    this._callback(data);
+  }
+}
+
+const removeCallBack = (id: string) => {
+  callbacks = callbacks.filter((cb) => cb.id !== id);
+};
+
+const onDocumentScroll = (callback: any) => {
+  if (typeof document === 'undefined') {
+    return;
+  }
+  if (!callbacks.length) {
+    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+      document.addEventListener('scroll', (evt) => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            callbacks.forEach((cbObj) => cbObj.cb._execute(evt));
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    }
+  }
+
+  if (typeof callback === 'function') {
+    const newCb = new ScrollCallback(uuidv4(), callback);
+    callbacks.push({
+      id: newCb.id,
+      cb: newCb
+    });
+    return newCb;
+  }
+
+  console.error('[onDocumentScroll] the provided data has to be of type function');
+  return null;
+};
 
 const hasWindow = typeof window !== 'undefined';
 const REGISTER_DELAY = 50;
 
-function resolveHierarchyIds(
-  id: string,
-  lookup: Record<string, string | undefined>
-) {
+function resolveHierarchyIds(id: string, lookup: Record<string, string | undefined>) {
   const newActiveIds = [id];
   let lastId: string | undefined = newActiveIds[0];
   while (lastId != null && lookup[lastId] != null) {
@@ -61,8 +113,7 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
 
   const observerMargin = Math.floor((targetSize * offset) / 100) || 1;
   const observerOptions = useMemo(() => {
-    const topMargin =
-      observerMargin % 2 === 1 ? observerMargin - 1 : observerMargin;
+    const topMargin = observerMargin % 2 === 1 ? observerMargin - 1 : observerMargin;
     const bottomMargin = targetSize - observerMargin;
     return {
       root: useViewport ? null : root,
@@ -79,27 +130,29 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
     }
     return lookup;
   }, [counter]);
-  const activeIds = useMemo(
-    () => (activeId ? resolveHierarchyIds(activeId, elsLookup) : []),
-    [activeId, elsLookup]
-  );
+  const activeIds = useMemo(() => (activeId ? resolveHierarchyIds(activeId, elsLookup) : []), [activeId, elsLookup]);
 
   const activeLookups = useMemo(() => new Set(activeIds), [activeIds]);
   useEffect(() => {
     if (!hasWindow) {
       return;
     }
-    const handleIntersection: IntersectionObserverCallback = (entries) => {
+    const _onScroll = () => {
       let intersectionId = null;
-      let topMin = Infinity;
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (topMin > entry.boundingClientRect.top) {
-            topMin = entry.boundingClientRect.top;
-            intersectionId = entry.target.id;
-          }
+      for (let k = 0; k < els.current.length; k++) {
+        const entry = els.current[k].ref.current;
+        const min = entry?.getBoundingClientRect().top ? entry?.getBoundingClientRect().top : 0;
+        if (!min) {
+          break;
         }
-      });
+        console.log(`Window ${document.scrollingElement?.scrollTop}`);
+        console.log(`RECORD ${entry?.id} TOP ${entry?.getBoundingClientRect().top}`);
+        if (min > 0 && k > 0) {
+          intersectionId = els.current[k-1].ref.current?.id;
+          console.log('FOUND');
+          break;
+        }
+      }
       if (intersectionId != null) {
         updateActiveId(intersectionId);
         if (onChange) {
@@ -112,24 +165,11 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
       }
     };
 
-    const observer = new IntersectionObserver(
-      handleIntersection,
-      observerOptions
-    );
+    onDocumentScroll(_onScroll);
 
-    els.current.forEach(({ ref }) => {
-      if (ref && ref.current) {
-        observer.observe(ref.current);
-      }
-    });
-
-    if (forceRecompute) {
-      handleIntersection(observer.takeRecords(), observer);
-      setForceRecompute(false);
-    }
-    return () => {
-      observer.disconnect();
-    };
+    setTimeout(() => {
+      _onScroll();
+    }, 300);
   }, [
     activeIds,
     updateActiveId,
@@ -157,9 +197,7 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
         return { id, ref: null };
       }
       const alreadyRegistered = id in elsLookup;
-      const entry = alreadyRegistered
-        ? els.current.find(({ id: existingId }) => existingId === id)
-        : options;
+      const entry = alreadyRegistered ? els.current.find(({ id: existingId }) => existingId === id) : options;
       const ref = (entry && entry.ref) || createRef();
 
       if (!alreadyRegistered) {
@@ -178,10 +216,7 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
     [counter]
   );
 
-  const isActive = useCallback(
-    (id: string) => activeLookups.has(id),
-    [activeLookups]
-  );
+  const isActive = useCallback((id: string) => activeLookups.has(id), [activeLookups]);
 
   const getActiveRef = useCallback(() => {
     const entry = els.current.find(({ id }) => id === activeId);
