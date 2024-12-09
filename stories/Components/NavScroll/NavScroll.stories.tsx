@@ -11,6 +11,7 @@ import {
   NavLink,
   Navbar,
   NavbarToggler,
+  Progress,
   Row,
   useNavScroll
 } from '../../../src';
@@ -379,9 +380,7 @@ const PosizionamentoTestaAltaHooks = () => {
             >
               <span className='it-list'></span>
               {getActiveRef()?.current?.textContent}
-              <div className="progress custom-navbar-progressbar">
-                <div className="progress-bar it-navscroll-progressbar" role="progressbar" style={{width : `${percentage}%`}}></div>
-              </div>
+              <Progress wrapperClassName='custom-navbar-progressbar' value={percentage} />
             </NavbarToggler>
             <Collapse isOpen={isOpen} navbar id='navbarNavB'>
               <button
@@ -395,9 +394,7 @@ const PosizionamentoTestaAltaHooks = () => {
               <div className='menu-wrapper'>
                 <div className='link-list-wrapper'>
                   <h3>header</h3>
-                  <div className="progress">
-                    <div className="progress-bar it-navscroll-progressbar" role="progressbar" style={{width : `${percentage}%`}}></div>
-                  </div>
+                  <Progress value={percentage} />
                   <LinkList noWrapper>
                     <NavItem>
                       <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1' className={getActiveClass('1')}>
