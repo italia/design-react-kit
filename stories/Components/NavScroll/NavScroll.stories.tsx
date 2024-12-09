@@ -379,6 +379,9 @@ const PosizionamentoTestaAltaHooks = () => {
             >
               <span className='it-list'></span>
               {getActiveRef()?.current?.textContent}
+              <div className="progress custom-navbar-progressbar">
+                <div className="progress-bar it-navscroll-progressbar" role="progressbar" style={{width : `${percentage}%`}}></div>
+              </div>
             </NavbarToggler>
             <Collapse isOpen={isOpen} navbar id='navbarNavB'>
               <button

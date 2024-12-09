@@ -151,7 +151,6 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
             root?.previousSibling?.firstChild?.parentNode?.querySelectorAll('.it-navscroll-wrapper .nav-link').length ||
             1;
           setPercentageValue((k / (totEls / 2)) * 100);
-          console.log(`PERCENTAGE: ${percentageValue} %`);
           intersectionId = els.current[k - 1].ref.current?.id;
           break;
         }
