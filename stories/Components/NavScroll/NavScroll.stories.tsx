@@ -360,7 +360,7 @@ const PosizionamentoTestaAltaHooks = () => {
   /* Nota che i componenti Col e Row non inoltrano le ref, 
   /* usare quindi tag div con classi css come nell'esempio */
   const containerRef = useRef(null);
-  const { register, isActive, getActiveRef } = useNavScroll({
+  const { register, isActive, getActiveRef, percentage } = useNavScroll({
     root: containerRef.current || undefined
   });
   const getActiveClass = (id: string) => (isActive(id) ? 'active' : undefined);
@@ -392,6 +392,9 @@ const PosizionamentoTestaAltaHooks = () => {
               <div className='menu-wrapper'>
                 <div className='link-list-wrapper'>
                   <h3>header</h3>
+                  <div className="progress">
+                    <div className="progress-bar it-navscroll-progressbar" role="progressbar" style={{width : `${percentage}%`}}></div>
+                  </div>
                   <LinkList noWrapper>
                     <NavItem>
                       <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1' className={getActiveClass('1')}>

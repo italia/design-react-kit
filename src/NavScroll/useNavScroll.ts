@@ -100,6 +100,7 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
   const [counter, setCounter] = useState(0);
   const [forceRecompute, setForceRecompute] = useState(false);
   const [activeId, updateActiveId] = useState<string | null>(null);
+  const [percentageValue, setPercentageValue] = useState(0);
 
   const { targetSize, useViewport } = useSizeDetector({
     root,
@@ -145,11 +146,13 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
         if (!min) {
           break;
         }
-        console.log(`Window ${document.scrollingElement?.scrollTop}`);
-        console.log(`RECORD ${entry?.id} TOP ${entry?.getBoundingClientRect().top}`);
         if (min > 0 && k > 0) {
-          intersectionId = els.current[k-1].ref.current?.id;
-          console.log('FOUND');
+          const totEls =
+            root?.previousSibling?.firstChild?.parentNode?.querySelectorAll('.it-navscroll-wrapper .nav-link').length ||
+            1;
+          setPercentageValue((k / (totEls / 2)) * 100);
+          console.log(`PERCENTAGE: ${percentageValue} %`);
+          intersectionId = els.current[k - 1].ref.current?.id;
           break;
         }
       }
@@ -217,6 +220,7 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
   );
 
   const isActive = useCallback((id: string) => activeLookups.has(id), [activeLookups]);
+  const percentage = useMemo(() => percentageValue, [percentageValue]);
 
   const getActiveRef = useCallback(() => {
     const entry = els.current.find(({ id }) => id === activeId);
@@ -224,6 +228,7 @@ export function useNavScroll(args: useNavScrollArgs = {}): useNavScrollResult {
   }, [activeId]);
 
   return {
+    percentage,
     register,
     unregister,
     activeIds,
