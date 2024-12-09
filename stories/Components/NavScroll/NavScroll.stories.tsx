@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import React, { useRef, useState } from 'react';
+import React, { MouseEventHandler, useRef, useState } from 'react';
 import {
   Col,
   Collapse,
@@ -11,6 +11,7 @@ import {
   NavLink,
   Navbar,
   NavbarToggler,
+  Progress,
   Row,
   useNavScroll
 } from '../../../src';
@@ -40,15 +41,14 @@ const PosizionamentoFondoPaginaHooks = () => {
   const { register, isActive, getActiveRef } = useNavScroll({
     root: containerRef.current || undefined
   });
-
   const getActiveClass = (id: string) => (isActive(id) ? 'active' : undefined);
   return (
     <Container>
       <Row>
         <Col md={12} lg={4}>
-          <Navbar expand='lg' className='it-navscroll-wrapper it-bottom-navscroll it-left-side affix-top'>
+          <Navbar expand='lg' className='it-navscroll-wrapper it-bottom-navscroll it-right-side affix-top'>
             <NavbarToggler
-              className={isOpen ? 'custom-navbar-toggler focus--mouse' : 'custom-navbar-toggler'}
+              className='custom-navbar-toggler'
               data-target='#navbarNavA'
               onClick={() => toggleNavScroll(!isOpen)}
             >
@@ -57,90 +57,90 @@ const PosizionamentoFondoPaginaHooks = () => {
             </NavbarToggler>
             <Collapse isOpen={isOpen} navbar id='navbarNavA'>
               <button
-                className='it-back-button btn w-100 text-start'
+                className={`${isOpen ? 'show' : ''} it-back-button btn w-100 text-start`}
                 style={{ display: isOpen ? 'block' : 'none' }}
                 onClick={() => toggleNavScroll(!isOpen)}
               >
                 <Icon className='align-top' color='primary' icon='it-chevron-left' aria-hidden size='sm' />
-                <span>Back </span>
+                <span>Indietro</span>
               </button>
               <div className='menu-wrapper'>
                 <div className='link-list-wrapper'>
                   <h3>header</h3>
                   <LinkList noWrapper>
                     <NavItem>
-                      <NavLink href='#1' className={getActiveClass('1')}>
+                      <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1' className={getActiveClass('1')}>
                         <span>1. Introduzione</span>
                       </NavLink>
                       <LinkList noWrapper>
                         <NavLink tag='li' className={getActiveClass('1_1')}>
-                          <NavLink href='#1_1' className={getActiveClass('1_1')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_1' className={getActiveClass('1_1')}>
                             <span>1.1 Nested Item</span>
                           </NavLink>
                           <LinkList className='tertiary' noWrapper>
                             <NavLink tag='li' className={getActiveClass('1_1_1')}>
-                              <NavLink href='#1_1_1' className={getActiveClass('1_1_1')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_1_1' className={getActiveClass('1_1_1')}>
                                 <span>1.1.1 Nested Item</span>
                               </NavLink>
                             </NavLink>
                             <NavLink tag='li' className={getActiveClass('1_1_2')}>
-                              <NavLink href='#1_1_2' className={getActiveClass('1_1_2')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_1_2' className={getActiveClass('1_1_2')}>
                                 <span>1.1.2 Nested Item</span>
                               </NavLink>
                             </NavLink>
                             <NavLink tag='li' className={getActiveClass('1_1_3')}>
-                              <NavLink href='#1_1_3' className={getActiveClass('1_1_3')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_1_3' className={getActiveClass('1_1_3')}>
                                 <span>1.1.3 Nested Item</span>
                               </NavLink>
                             </NavLink>
                           </LinkList>
                         </NavLink>
                         <NavLink tag='li' className={getActiveClass('1_2')}>
-                          <NavLink href='#1_2' className={getActiveClass('1_2')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_2' className={getActiveClass('1_2')}>
                             <span>1.2 Nested Item</span>
                           </NavLink>
                         </NavLink>
                         <NavLink tag='li' className={getActiveClass('1_3')}>
-                          <NavLink href='#1_3' className={getActiveClass('1_3')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_3' className={getActiveClass('1_3')}>
                             <span>1.3 Nested Item</span>
                           </NavLink>
                         </NavLink>
                       </LinkList>
                     </NavItem>
                     <NavItem>
-                      <NavLink href='#2' className={getActiveClass('2')}>
+                      <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2' className={getActiveClass('2')}>
                         <span>2. List item</span>
                       </NavLink>
                       <LinkList noWrapper>
                         <NavLink active tag='li' className={getActiveClass('2_1')}>
-                          <NavLink href='#2_1' className={getActiveClass('2_1')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_1' className={getActiveClass('2_1')}>
                             <span>2.1 Nested Item</span>
                           </NavLink>
                           <LinkList className='tertiary' noWrapper>
                             <NavLink tag='li' className={getActiveClass('2_1_1')}>
-                              <NavLink href='#2_1_1' className={getActiveClass('2_1_1')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_1_1' className={getActiveClass('2_1_1')}>
                                 <span>2.1.1 Nested Item</span>
                               </NavLink>
                             </NavLink>
                             <NavLink tag='li' className={getActiveClass('2_1_2')}>
-                              <NavLink href='#2_1_2' className={getActiveClass('2_1_2')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_1_2' className={getActiveClass('2_1_2')}>
                                 <span>2.1.2 Nested Item</span>
                               </NavLink>
                             </NavLink>
                             <NavLink tag='li' className={getActiveClass('2_1_3')}>
-                              <NavLink href='#2_1_3' className={getActiveClass('2_1_3')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_1_3' className={getActiveClass('2_1_3')}>
                                 <span>2.1.3 Nested Item</span>
                               </NavLink>
                             </NavLink>
                           </LinkList>
                         </NavLink>
                         <NavLink tag='li' className={getActiveClass('2_2')}>
-                          <NavLink href='#2_2' className={getActiveClass('2_2')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_2' className={getActiveClass('2_2')}>
                             <span>2.2 Nested Item</span>
                           </NavLink>
                         </NavLink>
                         <NavLink tag='li' className={getActiveClass('2_3')}>
-                          <NavLink href='#2_3' className={getActiveClass('2_3')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_3' className={getActiveClass('2_3')}>
                             <span>2.3 Nested Item</span>
                           </NavLink>
                         </NavLink>
@@ -361,10 +361,9 @@ const PosizionamentoTestaAltaHooks = () => {
   /* Nota che i componenti Col e Row non inoltrano le ref, 
   /* usare quindi tag div con classi css come nell'esempio */
   const containerRef = useRef(null);
-  const { register, isActive, getActiveRef } = useNavScroll({
+  const { register, isActive, getActiveRef, percentage } = useNavScroll({
     root: containerRef.current || undefined
   });
-
   const getActiveClass = (id: string) => (isActive(id) ? 'active' : undefined);
   return (
     <Container>
@@ -372,102 +371,104 @@ const PosizionamentoTestaAltaHooks = () => {
         <Col md={12} lg={4}>
           <Navbar
             expand='lg'
-            className='it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top'
+            className='it-navscroll-wrapper it-top-navscroll it-right-side affix-top'
           >
             <NavbarToggler
-              className={isOpen ? 'custom-navbar-toggler focus--mouse' : 'custom-navbar-toggler'}
+              className='custom-navbar-toggler'
               data-target='#navbarNavB'
               onClick={() => toggleNavScroll(!isOpen)}
             >
               <span className='it-list'></span>
               {getActiveRef()?.current?.textContent}
+              <Progress wrapperClassName='custom-navbar-progressbar' value={percentage} />
             </NavbarToggler>
             <Collapse isOpen={isOpen} navbar id='navbarNavB'>
               <button
-                className='it-back-button btn w-100 text-start'
+                className={`${isOpen ? 'show' : ''} it-back-button btn w-100 text-start`}
                 style={{ display: isOpen ? 'block' : 'none' }}
                 onClick={() => toggleNavScroll(!isOpen)}
               >
                 <Icon className='align-top' color='primary' icon='it-chevron-left' aria-hidden size='sm' />
-                <span>Back </span>
+                <span>Indietro</span>
               </button>
               <div className='menu-wrapper'>
                 <div className='link-list-wrapper'>
                   <h3>header</h3>
+                  <Progress value={percentage} />
                   <LinkList noWrapper>
                     <NavItem>
-                      <NavLink href='#1' className={getActiveClass('1')}>
+                      <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1' className={getActiveClass('1')}>
                         <span>1. Introduzione</span>
                       </NavLink>
                       <LinkList noWrapper>
                         <NavLink tag='li' className={getActiveClass('1_1')}>
-                          <NavLink href='#1_1' className={getActiveClass('1_1')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_1' className={getActiveClass('1_1')}>
                             <span>1.1 Nested Item</span>
                           </NavLink>
                           <LinkList className='tertiary' noWrapper>
                             <NavLink tag='li' className={getActiveClass('1_1_1')}>
-                              <NavLink href='#1_1_1' className={getActiveClass('1_1_1')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_1_1' className={getActiveClass('1_1_1')}>
                                 <span>1.1.1 Nested Item</span>
                               </NavLink>
                             </NavLink>
                             <NavLink tag='li' className={getActiveClass('1_1_2')}>
-                              <NavLink href='#1_1_2' className={getActiveClass('1_1_2')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_1_2' className={getActiveClass('1_1_2')}>
                                 <span>1.1.2 Nested Item</span>
                               </NavLink>
                             </NavLink>
                             <NavLink tag='li' className={getActiveClass('1_1_3')}>
-                              <NavLink href='#1_1_3' className={getActiveClass('1_1_3')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_1_3' className={getActiveClass('1_1_3')}>
                                 <span>1.1.3 Nested Item</span>
                               </NavLink>
                             </NavLink>
                           </LinkList>
                         </NavLink>
                         <NavLink tag='li' className={getActiveClass('1_2')}>
-                          <NavLink href='#1_2' className={getActiveClass('1_2')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_2' className={getActiveClass('1_2')}>
                             <span>1.2 Nested Item</span>
                           </NavLink>
                         </NavLink>
                         <NavLink tag='li' className={getActiveClass('1_3')}>
-                          <NavLink href='#1_3' className={getActiveClass('1_3')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_3' className={getActiveClass('1_3')}>
                             <span>1.3 Nested Item</span>
                           </NavLink>
                         </NavLink>
                       </LinkList>
                     </NavItem>
                     <NavItem>
-                      <NavLink href='#2' className={getActiveClass('2')}>
+                      <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2' className={getActiveClass('2')}>
                         <span>2. List item</span>
                       </NavLink>
                       <LinkList noWrapper>
                         <NavLink active tag='li' className={getActiveClass('2_1')}>
-                          <NavLink href='#2_1' className={getActiveClass('2_1')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_1' className={getActiveClass('2_1')}>
                             <span>2.1 Nested Item</span>
                           </NavLink>
                           <LinkList className='tertiary' noWrapper>
                             <NavLink tag='li' className={getActiveClass('2_1_1')}>
-                              <NavLink href='#2_1_1' className={getActiveClass('2_1_1')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_1_1' className={getActiveClass('2_1_1')}>
                                 <span>2.1.1 Nested Item</span>
                               </NavLink>
                             </NavLink>
                             <NavLink tag='li' className={getActiveClass('2_1_2')}>
-                              <NavLink href='#2_1_2' className={getActiveClass('2_1_2')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_1_2' className={getActiveClass('2_1_2')}>
                                 <span>2.1.2 Nested Item</span>
                               </NavLink>
                             </NavLink>
                             <NavLink tag='li' className={getActiveClass('2_1_3')}>
-                              <NavLink href='#2_1_3' className={getActiveClass('2_1_3')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_1_3' className={getActiveClass('2_1_3')}>
                                 <span>2.1.3 Nested Item</span>
                               </NavLink>
                             </NavLink>
                           </LinkList>
                         </NavLink>
                         <NavLink tag='li' className={getActiveClass('2_2')}>
-                          <NavLink href='#2_2' className={getActiveClass('2_2')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_2' className={getActiveClass('2_2')}>
                             <span>2.2 Nested Item</span>
                           </NavLink>
                         </NavLink>
                         <NavLink tag='li' className={getActiveClass('2_3')}>
-                          <NavLink href='#2_3' className={getActiveClass('2_3')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_3' className={getActiveClass('2_3')}>
                             <span>2.3 Nested Item</span>
                           </NavLink>
                         </NavLink>
@@ -683,97 +684,88 @@ export const PosizionamentoTestaAlta: Story = {
 };
 
 const ComponenteMenuInlineHooks = () => {
-  const [isOpenOne, toggleNavScrollOne] = useState(false);
-  const [isOpenTwo, toggleNavScrollTwo] = useState(false);
-  const [isOpenThree, toggleNavScrollThree] = useState(false);
   /* Richiesto per contenuto confinato */
   /* Nota che i componenti Col e Row non inoltrano le ref, 
   /* usare quindi tag div con classi css come nell'esempio */
   const containerRef = useRef(null);
-  const { register, isActive } = useNavScroll({
+  const { register, isActive, activeIds} = useNavScroll({
     root: containerRef.current || undefined
   });
 
-  const getActiveClass = (id: string) => (isActive(id) ? 'active' : undefined);
+  const [collapseOpen1, toggleCollapse1] = useState(false);
+  const [collapseOpen2, toggleCollapse2] = useState(false);
+  const [collapseOpen3, toggleCollapse3] = useState(false);
 
-  const isFirstOpen = isOpenOne || isActive('1');
-  const isSecondOpen = isOpenTwo || isActive('2');
-  const isThirdOpen = isOpenThree || isActive('3');
+  const isFirstOpen = collapseOpen1 || isActive('1');
+  const isSecondOpen = collapseOpen2 || isActive('2');
+  const isThirdOpen = collapseOpen3 || isActive('3');
+
+  const onToggle1: MouseEventHandler<HTMLAnchorElement> = (e) => {
+    e.preventDefault();
+    toggleCollapse1(!collapseOpen1);
+  };
+
+  const onToggle2: MouseEventHandler<HTMLAnchorElement> = (e) => {
+    e.preventDefault();
+    toggleCollapse2(!collapseOpen2);
+  };
+
+  const onToggle3: MouseEventHandler<HTMLAnchorElement> = (e) => {
+    e.preventDefault();
+    toggleCollapse3(!collapseOpen3);
+  };
+
+  const getActiveClass = (id: string) => (isActive(id) ? 'nav-link active' : undefined);
+
+  const isInLinksGroup = (group: string, activeIds: string[]): boolean => {
+    return activeIds.length > 0 && activeIds[0][0] == group
+  }
+
   return (
     <Container>
       <Row>
         <Col md={12} lg={4}>
           <Navbar className='inline-menu affix-top' cssModule={{ navbar: ' ' }}>
             <LinkList>
-              <li>
-                <a
-                  className={`list-item large medium right-icon ${isFirstOpen ? '' : 'collapsed'} ${getActiveClass('1')}`}
-                  href={`#collapseOne`}
-                  data-toggle='collapse'
-                  aria-expanded='false'
-                  aria-controls='collapseOne'
-                  onClick={(e) => {
-                    e.preventDefault();
-                    toggleNavScrollOne(!isOpenOne);
-                  }}
-                >
-                  <LinkListItem.TitleIconWrapper>
-                    <span>Link list 1</span>
-                    <Icon color='primary' icon='it-expand' aria-hidden size='sm' />
-                  </LinkListItem.TitleIconWrapper>
-                </a>
-                <LinkList sublist className={isFirstOpen ? 'collapse show' : 'collapse'} id='collapseOne'>
-                  <LinkListItem className={getActiveClass('1_1')}>Link list 1.1</LinkListItem>
-                  <LinkListItem className={getActiveClass('1_2')}>Link list 1.2</LinkListItem>
-                  <LinkListItem className={getActiveClass('1_3')}>Link list 1.3</LinkListItem>
+              <LinkListItem bold large className={`right-icon ${getActiveClass('1')}`} onClick={onToggle1} aria-expanded={isFirstOpen || isInLinksGroup('1', activeIds)}>
+                <LinkListItem.TitleIconWrapper>
+                  <span>Link list 1 </span>
+                  <Icon className="right" size='xs' color="primary" icon="it-expand" aria-hidden />
+                </LinkListItem.TitleIconWrapper>
+              </LinkListItem>
+              <Collapse isOpen={isFirstOpen || isInLinksGroup('1', activeIds)}>
+                <LinkList sublist>
+                  <LinkListItem href='#1_1' className={getActiveClass('1_1')}>Link list 1.1</LinkListItem>
+                  <LinkListItem href='#1_2' className={getActiveClass('1_2')}>Link list 1.2</LinkListItem>
+                  <LinkListItem href='#1_3' className={getActiveClass('1_3')}>Link list 1.3</LinkListItem>
                 </LinkList>
-              </li>
-              <li>
-                <a
-                  className={`list-item large medium right-icon ${isSecondOpen ? '' : 'collapsed'} ${getActiveClass('2')}`}
-                  href={`#collapseTwo`}
-                  data-toggle='collapse'
-                  aria-expanded='false'
-                  aria-controls='collapseTwo'
-                  onClick={(e) => {
-                    e.preventDefault();
-                    toggleNavScrollTwo(!isOpenTwo);
-                  }}
-                >
-                  <LinkListItem.TitleIconWrapper>
-                    <span>Link list 2</span>
-                    <Icon color='primary' icon='it-expand' aria-hidden size='sm' />
-                  </LinkListItem.TitleIconWrapper>
-                </a>
-                <LinkList sublist className={isSecondOpen ? 'collapse show' : 'collapse'} id='collapseTwo'>
-                  <LinkListItem className={getActiveClass('2_1')}>Link list 2.1</LinkListItem>
-                  <LinkListItem className={getActiveClass('2_2')}>Link list 2.2</LinkListItem>
-                  <LinkListItem className={getActiveClass('2_3')}>Link list 2.3</LinkListItem>
+              </Collapse>
+              <LinkListItem bold large className={`right-icon ${getActiveClass('2')}`} onClick={onToggle2} aria-expanded={isSecondOpen || isInLinksGroup('2', activeIds)} >
+                <LinkListItem.TitleIconWrapper>
+                  <span>Link list 2 </span>
+                  <Icon className="right" size='xs' color="primary" icon="it-expand" aria-hidden />
+                </LinkListItem.TitleIconWrapper>
+              </LinkListItem>
+              <Collapse isOpen={isSecondOpen || isInLinksGroup('2', activeIds)}>
+                <LinkList sublist>
+                  <LinkListItem href='#2_1' className={getActiveClass('2_1')}>Link list 2.1</LinkListItem>
+                  <LinkListItem href='#2_2' className={getActiveClass('2_2')}>Link list 2.2</LinkListItem>
+                  <LinkListItem href='#2_3' className={getActiveClass('2_3')}>Link list 2.3</LinkListItem>
                 </LinkList>
-              </li>
-              <li>
-                <a
-                  className={`list-item large medium right-icon ${isThirdOpen ? '' : 'collapsed'} ${getActiveClass('3')}`}
-                  href={`#collapseThree`}
-                  data-toggle='collapse'
-                  aria-expanded='false'
-                  aria-controls='collapseThree'
-                  onClick={(e) => {
-                    e.preventDefault();
-                    toggleNavScrollThree(!isOpenThree);
-                  }}
-                >
-                  <LinkListItem.TitleIconWrapper>
-                    <span>Link list 3</span>
-                    <Icon color='primary' icon='it-expand' aria-hidden size='sm' />
-                  </LinkListItem.TitleIconWrapper>
-                </a>
-                <LinkList sublist className={isThirdOpen ? 'collapse show' : 'collapse'} id='collapseThree'>
-                  <LinkListItem className={getActiveClass('3_1')}>Link list 3.1</LinkListItem>
-                  <LinkListItem className={getActiveClass('3_2')}>Link list 3.2</LinkListItem>
-                  <LinkListItem className={getActiveClass('3_3')}>Link list 3.3</LinkListItem>
+              </Collapse>
+              <LinkListItem bold large className={`right-icon ${getActiveClass('3')}`} onClick={onToggle3} aria-expanded={isThirdOpen || isInLinksGroup('3', activeIds)} >
+                <LinkListItem.TitleIconWrapper>
+                  <span>Link list 3 </span>
+                  <Icon className="right" size='xs' color="primary" icon="it-expand" aria-hidden />
+                </LinkListItem.TitleIconWrapper>
+              </LinkListItem>
+              <Collapse isOpen={isThirdOpen || isInLinksGroup('3', activeIds)}>
+                <LinkList sublist>
+                  <LinkListItem href='#3_1' className={getActiveClass('3_1')}>Link list 3.1</LinkListItem>
+                  <LinkListItem href='#3_2' className={getActiveClass('3_2')}>Link list 3.2</LinkListItem>
+                  <LinkListItem href='#3_3' className={getActiveClass('3_3')}>Link list 3.3</LinkListItem>
                 </LinkList>
-              </li>
+              </Collapse>
             </LinkList>
           </Navbar>
         </Col>
@@ -973,10 +965,10 @@ const ComponenteVersioneScuraHooks = () => {
         <Col md={12} lg={4}>
           <Navbar
             expand='lg'
-            className='it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top theme-dark-desk theme-dark-mobile'
+            className='it-navscroll-wrapper it-top-navscroll it-right-side affix-top theme-dark-desk theme-dark-mobile'
           >
             <NavbarToggler
-              className={isOpen ? 'custom-navbar-toggler focus--mouse' : 'custom-navbar-toggler'}
+              className='custom-navbar-toggler'
               data-target='#navbarNavB'
               onClick={() => toggleNavScroll(!isOpen)}
             >
@@ -985,90 +977,90 @@ const ComponenteVersioneScuraHooks = () => {
             </NavbarToggler>
             <Collapse isOpen={isOpen} navbar id='navbarNavB'>
               <button
-                className='it-back-button btn w-100 text-start'
+                className={`${isOpen ? 'show' : ''} it-back-button btn w-100 text-start`}
                 style={{ display: isOpen ? 'block' : 'none' }}
                 onClick={() => toggleNavScroll(!isOpen)}
               >
                 <Icon className='align-top' color='primary' icon='it-chevron-left' aria-hidden size='sm' />
-                <span>Back </span>
+                <span>Indietro</span>
               </button>
               <div className='menu-wrapper'>
                 <div className='link-list-wrapper'>
                   <h3>header</h3>
                   <LinkList noWrapper>
                     <NavItem>
-                      <NavLink href='#1' className={getActiveClass('1')}>
+                      <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1' className={getActiveClass('1')}>
                         <span>1. Introduzione</span>
                       </NavLink>
                       <LinkList noWrapper>
                         <NavLink tag='li' className={getActiveClass('1_1')}>
-                          <NavLink href='#1_1' className={getActiveClass('1_1')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_1' className={getActiveClass('1_1')}>
                             <span>1.1 Nested Item</span>
                           </NavLink>
                           <LinkList className='tertiary' noWrapper>
                             <NavLink tag='li' className={getActiveClass('1_1_1')}>
-                              <NavLink href='#1_1_1' className={getActiveClass('1_1_1')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_1_1' className={getActiveClass('1_1_1')}>
                                 <span>1.1.1 Nested Item</span>
                               </NavLink>
                             </NavLink>
                             <NavLink tag='li' className={getActiveClass('1_1_2')}>
-                              <NavLink href='#1_1_2' className={getActiveClass('1_1_2')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_1_2' className={getActiveClass('1_1_2')}>
                                 <span>1.1.2 Nested Item</span>
                               </NavLink>
                             </NavLink>
                             <NavLink tag='li' className={getActiveClass('1_1_3')}>
-                              <NavLink href='#1_1_3' className={getActiveClass('1_1_3')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_1_3' className={getActiveClass('1_1_3')}>
                                 <span>1.1.3 Nested Item</span>
                               </NavLink>
                             </NavLink>
                           </LinkList>
                         </NavLink>
                         <NavLink tag='li' className={getActiveClass('1_2')}>
-                          <NavLink href='#1_2' className={getActiveClass('1_2')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_2' className={getActiveClass('1_2')}>
                             <span>1.2 Nested Item</span>
                           </NavLink>
                         </NavLink>
                         <NavLink tag='li' className={getActiveClass('1_3')}>
-                          <NavLink href='#1_3' className={getActiveClass('1_3')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#1_3' className={getActiveClass('1_3')}>
                             <span>1.3 Nested Item</span>
                           </NavLink>
                         </NavLink>
                       </LinkList>
                     </NavItem>
                     <NavItem>
-                      <NavLink href='#2' className={getActiveClass('2')}>
+                      <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2' className={getActiveClass('2')}>
                         <span>2. List item</span>
                       </NavLink>
                       <LinkList noWrapper>
                         <NavLink active tag='li' className={getActiveClass('2_1')}>
-                          <NavLink href='#2_1' className={getActiveClass('2_1')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_1' className={getActiveClass('2_1')}>
                             <span>2.1 Nested Item</span>
                           </NavLink>
                           <LinkList className='tertiary' noWrapper>
                             <NavLink tag='li' className={getActiveClass('2_1_1')}>
-                              <NavLink href='#2_1_1' className={getActiveClass('2_1_1')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_1_1' className={getActiveClass('2_1_1')}>
                                 <span>2.1.1 Nested Item</span>
                               </NavLink>
                             </NavLink>
                             <NavLink tag='li' className={getActiveClass('2_1_2')}>
-                              <NavLink href='#2_1_2' className={getActiveClass('2_1_2')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_1_2' className={getActiveClass('2_1_2')}>
                                 <span>2.1.2 Nested Item</span>
                               </NavLink>
                             </NavLink>
                             <NavLink tag='li' className={getActiveClass('2_1_3')}>
-                              <NavLink href='#2_1_3' className={getActiveClass('2_1_3')}>
+                              <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_1_3' className={getActiveClass('2_1_3')}>
                                 <span>2.1.3 Nested Item</span>
                               </NavLink>
                             </NavLink>
                           </LinkList>
                         </NavLink>
                         <NavLink tag='li' className={getActiveClass('2_2')}>
-                          <NavLink href='#2_2' className={getActiveClass('2_2')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_2' className={getActiveClass('2_2')}>
                             <span>2.2 Nested Item</span>
                           </NavLink>
                         </NavLink>
                         <NavLink tag='li' className={getActiveClass('2_3')}>
-                          <NavLink href='#2_3' className={getActiveClass('2_3')}>
+                          <NavLink onClick={() => toggleNavScroll(!isOpen)} href='#2_3' className={getActiveClass('2_3')}>
                             <span>2.3 Nested Item</span>
                           </NavLink>
                         </NavLink>
