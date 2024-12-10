@@ -29904,21 +29904,19 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
               >
                 <li>
                   <a
-                    aria-controls="collapseOne"
                     aria-expanded="false"
-                    class="list-item large medium right-icon collapsed undefined"
-                    data-toggle="collapse"
-                    href="#collapseOne"
+                    class="right-icon undefined large medium list-item"
+                    role="button"
                   >
                     <span
                       class="list-item-title-icon-wrapper"
                     >
                       <span>
-                        Link list 1
+                        Link list 1 
                       </span>
                       <svg
                         aria-hidden="true"
-                        class="icon icon-primary icon-sm"
+                        class="icon right icon-primary icon-xs"
                         enable-background="new 0 0 24 24"
                         role="img"
                         viewBox="0 0 24 24"
@@ -29931,13 +29929,17 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                       </svg>
                     </span>
                   </a>
+                </li>
+                <div
+                  class="collapse"
+                >
                   <ul
-                    class="collapse link-sublist"
-                    id="collapseOne"
+                    class="link-sublist"
                   >
                     <li>
                       <a
                         class="list-item"
+                        href="#1_1"
                       >
                         Link list 1.1
                       </a>
@@ -29945,6 +29947,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                     <li>
                       <a
                         class="list-item"
+                        href="#1_2"
                       >
                         Link list 1.2
                       </a>
@@ -29952,29 +29955,28 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                     <li>
                       <a
                         class="list-item"
+                        href="#1_3"
                       >
                         Link list 1.3
                       </a>
                     </li>
                   </ul>
-                </li>
+                </div>
                 <li>
                   <a
-                    aria-controls="collapseTwo"
                     aria-expanded="false"
-                    class="list-item large medium right-icon collapsed undefined"
-                    data-toggle="collapse"
-                    href="#collapseTwo"
+                    class="right-icon undefined large medium list-item"
+                    role="button"
                   >
                     <span
                       class="list-item-title-icon-wrapper"
                     >
                       <span>
-                        Link list 2
+                        Link list 2 
                       </span>
                       <svg
                         aria-hidden="true"
-                        class="icon icon-primary icon-sm"
+                        class="icon right icon-primary icon-xs"
                         enable-background="new 0 0 24 24"
                         role="img"
                         viewBox="0 0 24 24"
@@ -29987,13 +29989,17 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                       </svg>
                     </span>
                   </a>
+                </li>
+                <div
+                  class="collapse"
+                >
                   <ul
-                    class="collapse link-sublist"
-                    id="collapseTwo"
+                    class="link-sublist"
                   >
                     <li>
                       <a
                         class="list-item"
+                        href="#2_1"
                       >
                         Link list 2.1
                       </a>
@@ -30001,6 +30007,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                     <li>
                       <a
                         class="list-item"
+                        href="#2_2"
                       >
                         Link list 2.2
                       </a>
@@ -30008,29 +30015,28 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                     <li>
                       <a
                         class="list-item"
+                        href="#2_3"
                       >
                         Link list 2.3
                       </a>
                     </li>
                   </ul>
-                </li>
+                </div>
                 <li>
                   <a
-                    aria-controls="collapseThree"
                     aria-expanded="false"
-                    class="list-item large medium right-icon collapsed undefined"
-                    data-toggle="collapse"
-                    href="#collapseThree"
+                    class="right-icon undefined large medium list-item"
+                    role="button"
                   >
                     <span
                       class="list-item-title-icon-wrapper"
                     >
                       <span>
-                        Link list 3
+                        Link list 3 
                       </span>
                       <svg
                         aria-hidden="true"
-                        class="icon icon-primary icon-sm"
+                        class="icon right icon-primary icon-xs"
                         enable-background="new 0 0 24 24"
                         role="img"
                         viewBox="0 0 24 24"
@@ -30043,13 +30049,17 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                       </svg>
                     </span>
                   </a>
+                </li>
+                <div
+                  class="collapse"
+                >
                   <ul
-                    class="collapse link-sublist"
-                    id="collapseThree"
+                    class="link-sublist"
                   >
                     <li>
                       <a
                         class="list-item"
+                        href="#3_1"
                       >
                         Link list 3.1
                       </a>
@@ -30057,6 +30067,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                     <li>
                       <a
                         class="list-item"
+                        href="#3_2"
                       >
                         Link list 3.2
                       </a>
@@ -30064,12 +30075,13 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                     <li>
                       <a
                         class="list-item"
+                        href="#3_3"
                       >
                         Link list 3.3
                       </a>
                     </li>
                   </ul>
-                </li>
+                </div>
               </ul>
             </div>
           </div>
@@ -30207,7 +30219,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
         class="col-md-12 col-lg-4"
       >
         <nav
-          class="it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top theme-dark-desk theme-dark-mobile navbar navbar-expand-lg"
+          class="it-navscroll-wrapper it-top-navscroll it-right-side affix-top theme-dark-desk theme-dark-mobile navbar navbar-expand-lg"
         >
           <div
             class="container-fluid"
@@ -30258,7 +30270,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                 </button>
               </div>
               <button
-                class="it-back-button btn w-100 text-start"
+                class=" it-back-button btn w-100 text-start"
                 style="display: none;"
               >
                 <svg
@@ -30275,7 +30287,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                   />
                 </svg>
                 <span>
-                  Back 
+                  Indietro
                 </span>
               </button>
               <div
@@ -30631,7 +30643,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
         class="col-md-12 col-lg-4"
       >
         <nav
-          class="it-navscroll-wrapper it-bottom-navscroll it-left-side affix-top navbar navbar-expand-lg"
+          class="it-navscroll-wrapper it-bottom-navscroll it-right-side affix-top navbar navbar-expand-lg"
         >
           <div
             class="container-fluid"
@@ -30682,7 +30694,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
                 </button>
               </div>
               <button
-                class="it-back-button btn w-100 text-start"
+                class=" it-back-button btn w-100 text-start"
                 style="display: none;"
               >
                 <svg
@@ -30699,7 +30711,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
                   />
                 </svg>
                 <span>
-                  Back 
+                  Indietro
                 </span>
               </button>
               <div
@@ -31055,7 +31067,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
         class="col-md-12 col-lg-4"
       >
         <nav
-          class="it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side affix-top navbar navbar-expand-lg"
+          class="it-navscroll-wrapper it-top-navscroll it-right-side affix-top navbar navbar-expand-lg"
         >
           <div
             class="container-fluid"
@@ -31069,6 +31081,25 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
               <span
                 class="it-list"
               />
+              <div
+                class="custom-navbar-progressbar progress"
+              >
+                <div
+                  class="progress-bar-label"
+                >
+                  <span
+                    class="visually-hidden"
+                  />
+                </div>
+                <div
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="0"
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 0%;"
+                />
+              </div>
             </button>
             <div
               class="navbar-collapsable collapse navbar-collapsable"
@@ -31106,7 +31137,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
                 </button>
               </div>
               <button
-                class="it-back-button btn w-100 text-start"
+                class=" it-back-button btn w-100 text-start"
                 style="display: none;"
               >
                 <svg
@@ -31123,7 +31154,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
                   />
                 </svg>
                 <span>
-                  Back 
+                  Indietro
                 </span>
               </button>
               <div
@@ -31135,6 +31166,25 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
                   <h3>
                     header
                   </h3>
+                  <div
+                    class="progress"
+                  >
+                    <div
+                      class="progress-bar-label"
+                    >
+                      <span
+                        class="visually-hidden"
+                      />
+                    </div>
+                    <div
+                      aria-valuemax="100"
+                      aria-valuemin="0"
+                      aria-valuenow="0"
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 0%;"
+                    />
+                  </div>
                   <ul
                     class="link-list"
                   >
@@ -35454,6 +35504,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
     >
       <li>
         <a
+          aria-expanded="false"
           class="icon-right large medium list-item"
           role="button"
         >
@@ -35516,6 +35567,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
       </div>
       <li>
         <a
+          aria-expanded="false"
           class="icon-right large medium list-item"
           role="button"
         >
@@ -35578,6 +35630,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
       </div>
       <li>
         <a
+          aria-expanded="false"
           class="icon-right large medium list-item"
           role="button"
         >
