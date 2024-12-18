@@ -1,3 +1,23 @@
+# [5.5.0](https://github.com/italia/design-react-kit/compare/v5.4.1...v5.5.0) (2024-12-18)
+
+
+### Bug Fixes
+
+* add aria hidden to rating icons ([7d62963](https://github.com/italia/design-react-kit/commit/7d62963443023350799438a6d3e948d1c7ed0b0d))
+* focus tracking ([27d3714](https://github.com/italia/design-react-kit/commit/27d37148f4493e1231a4f671101f118c3b10fdbb))
+* improvements on back to top component ([08fb4c7](https://github.com/italia/design-react-kit/commit/08fb4c750f76b5db5ca9a10005a532804d141957))
+* keyboard rating ([bd9ddba](https://github.com/italia/design-react-kit/commit/bd9ddbabc1a997ba8fdd08461172cd6a860623b2))
+
+
+### Features
+
+* header improvements ([f7e2a76](https://github.com/italia/design-react-kit/commit/f7e2a76164e900d7a61dbe0aec7f56eebccf647d))
+* nav mode for skiplinks ([2dc384e](https://github.com/italia/design-react-kit/commit/2dc384eea89caaad426ff46613429226b9eba21b))
+* navscroll refactoring with progressbar ([d0cfd5b](https://github.com/italia/design-react-kit/commit/d0cfd5bc90daed5616ced16b767a94bb5abeba59))
+* new autocomplete component with italian default messages ([b076b91](https://github.com/italia/design-react-kit/commit/b076b912d888682b497f356e69b9a73f6ed98f52))
+
+
+
 ## [5.4.1](https://github.com/italia/design-react-kit/compare/v5.4.0...v5.4.1) (2024-11-11)
 
 
