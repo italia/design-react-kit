@@ -24,7 +24,7 @@ type Story = StoryObj<typeof Alert>;
 export const _EsempiInterattivi: Story = {
   render: ({ ...args }) => (
     <Alert {...args}>
-      Questo è un alert di<b>{args.color}</b>!
+      Questo è un alert di <b>{args.color}</b>!
     </Alert>
   )
 };
