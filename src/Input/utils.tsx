@@ -117,8 +117,7 @@ export function getClasses(
         // we can model here only if stylings
         'form-control-plaintext': normalizedOnlyCondition,
         'form-control': passwordOnlyCondition,
-        'input-password': passwordOnlyCondition,
-        'focus--mouse': passwordOnlyCondition || normalizedOnlyCondition
+        'input-password': passwordOnlyCondition
       }
     ),
     cssModule
