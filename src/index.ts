@@ -303,4 +303,4 @@ export type {
 } from 'reactstrap';
 
 export type { TabContainerProps, TabContentProps, TabPaneProps } from 'react-bootstrap';
-import "./track-focus.js"
+import './track-focus.js';

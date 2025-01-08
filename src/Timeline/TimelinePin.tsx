@@ -40,7 +40,7 @@ export const TimelinePin: FC<TimelinePinProps> = ({
   nowText,
   testId,
   className,
-  tag='h3',
+  tag = 'h3',
   ...attributes
 }) => {
   const { children, ...rest } = attributes;
@@ -51,7 +51,7 @@ export const TimelinePin: FC<TimelinePinProps> = ({
   });
   const pinIcon = (
     <div className='pin-icon'>
-      <Icon icon={iconName || icon} role="img" title={iconTitle} />
+      <Icon icon={iconName || icon} role='img' title={iconTitle} />
     </div>
   );
   const pinLabel = (

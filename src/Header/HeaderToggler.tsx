@@ -21,7 +21,7 @@ export interface HeaderTogglerProps extends ButtonHTMLAttributes<HTMLButtonEleme
 
 const BUTTON = 'button';
 
-export const HeaderToggler = ({ className, tag, type, isOpen=false, testId, ...attributes }: HeaderTogglerProps) => {
+export const HeaderToggler = ({ className, tag, type, isOpen = false, testId, ...attributes }: HeaderTogglerProps) => {
   const HeaderType = useHeaderContext();
   const defaultTag = HeaderType === SLIM ? 'a' : BUTTON;
   const defaultType = HeaderType === SLIM ? undefined : BUTTON;
@@ -32,7 +32,7 @@ export const HeaderToggler = ({ className, tag, type, isOpen=false, testId, ...a
     },
     className
   );
-  const expanded = isOpen ? "true" : "false"
+  const expanded = isOpen ? 'true' : 'false';
   useEffect(() => {
     document.querySelectorAll('.container-fluid').forEach((element) => {
       element.classList.remove('container-fluid');

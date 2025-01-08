@@ -13,9 +13,8 @@ export interface DropdownMenuProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const DropdownMenu: FC<DropdownMenuProps> = ({ className, inNavbar, testId, children, ...attributes }) => {
+  const style = inNavbar ? { top: 'unset !important' } : {};
 
-  const style = inNavbar ? {'top' : 'unset !important'} : {}
-  
   return (
     <BSDRopdownMenu style={style} data-testid={testId} {...attributes} className={className}>
       {children}

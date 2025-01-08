@@ -31,7 +31,7 @@ export const SkiplinkItem: FC<SkiplinkItemProps> = ({
 
   if (navItem) {
     return (
-      <li className={classes} >
+      <li className={classes}>
         <Tag {...attributes} {...extraHref} data-testid={testId} />
       </li>
     );

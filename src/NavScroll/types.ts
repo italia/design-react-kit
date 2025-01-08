@@ -87,8 +87,8 @@ export type useNavScrollResult = {
    */
   getActiveRef: () => RefObject<Element> | null;
   /**
-  * A list of active ids (the full hierarchy).
-  */
+   * A list of active ids (the full hierarchy).
+   */
   percentage: number;
 };
 

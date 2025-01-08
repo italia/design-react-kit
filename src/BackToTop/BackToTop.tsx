@@ -34,7 +34,7 @@ const backToTop = () => {
 };
 
 export const BackToTop = ({
-  ariaLabel='Torna su',
+  ariaLabel = 'Torna su',
   className,
   dark = false,
   small = false,
