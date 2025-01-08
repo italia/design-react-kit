@@ -38,8 +38,8 @@ jobs:
           yarn storybook:deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # - uses: italia/slack-notify-release-action@v0.4.0
-      #   with:
-      #     slack_token: ${{ secrets.SLACK_TOKEN }}
-      #     channel_id: ${{ secrets.SLACK_CHANNEL }}
-      #     project_name: React Angular Kit
+      - uses: italia/slack-notify-release-action@v0.4.0
+        with:
+          slack_token: ${{ secrets.SLACK_TOKEN }}
+          channel_id: ${{ secrets.SLACK_CHANNEL }}
+          project_name: React Angular Kit
