@@ -42,4 +42,4 @@ jobs:
         with:
           slack_token: ${{ secrets.SLACK_TOKEN }}
           channel_id: ${{ secrets.SLACK_CHANNEL }}
-          project_name: React Angular Kit
+          project_name: Design React Kit
