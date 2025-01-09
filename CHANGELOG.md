@@ -1,3 +1,12 @@
+## [5.5.1](https://github.com/italia/design-react-kit/compare/v5.5.0...v5.5.1) (2025-01-09)
+
+
+### Bug Fixes
+
+* remove dropdown menu offset in slim headers ([52a1149](https://github.com/italia/design-react-kit/commit/52a1149c48303d8e9389000441badf9394c0c674))
+
+
+
 # [5.5.0](https://github.com/italia/design-react-kit/compare/v5.4.1...v5.5.0) (2024-12-18)
 
 
