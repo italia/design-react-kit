@@ -15,38 +15,44 @@ export const TabNav: FC<TabNavProps> = ({ className, tag = 'ul', testId, ...attr
 
   const classes = classNames(className, 'nav-tabs');
   let currentTabIndex = 0;
-  const elements: HTMLElement[] = [];
+  let activeTabIndex = -1;
 
   // Ugly workaround to keep Bootstrap Italia behaviour
 
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLElement>) => {
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLElement>, disabled: boolean = false) => {
     const queriedElements = document.querySelectorAll('.nav-link');
     for (let i = 0; i < queriedElements.length; i++) {
       if (queriedElements[i].ariaSelected === 'true') {
+        activeTabIndex = i;
+      }
+      // Disabled elements ignore current focused tab
+      if (!disabled && document.activeElement === queriedElements[i]) {
         currentTabIndex = i;
       }
       queriedElements[i].ariaSelected = 'false';
-      elements.push(queriedElements[i] as HTMLElement);
     }
     switch (event.key) {
       case 'ArrowLeft':
       case 'ArrowUp':
         if (currentTabIndex - 1 < 0) {
-          currentTabIndex = elements.length;
+          currentTabIndex = queriedElements.length;
         }
-        currentTabIndex = (currentTabIndex - 1) % elements.length;
+        currentTabIndex = (currentTabIndex - 1) % queriedElements.length;
         break;
       case 'ArrowRight':
       case 'ArrowDown':
-        currentTabIndex = (currentTabIndex + 1) % elements.length;
+        currentTabIndex = (currentTabIndex + 1) % queriedElements.length;
         break;
       default:
         return;
     }
-    if (elements[currentTabIndex].ariaDisabled === 'true') {
-      handleKeyDown(event);
+    if (queriedElements[currentTabIndex].ariaDisabled === 'true') {
+      handleKeyDown(event, true);
     } else {
-      elements[currentTabIndex].focus();
+      (queriedElements[currentTabIndex] as HTMLElement).focus();
+      setTimeout(() => {
+        queriedElements[activeTabIndex].ariaSelected = 'true';
+      }, 300);
     }
   };
 
