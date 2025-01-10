@@ -3,17 +3,45 @@ import React, { ElementType, FC } from 'react';
 import { Nav, NavProps } from 'react-bootstrap';
 
 export interface TabNavProps extends NavProps {
-  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
+  /** Utilizzarlo in caso di utilizzo di componenti personalizzati
+   * @default ul
+   */
   tag?: ElementType;
   /** Classi aggiuntive da usare per il componente Tab */
   className?: string;
+  /** Imposta l'orientameno delle tab in verticale
+   * @default false
+   */
+  vertical?: boolean;
+  /** Imposta la tab con sfondo scuro
+   * @default false
+   */
+  dark?: boolean;
+  /** Imposta la tab con design tipo card
+   * @default false
+   */
+  card?: boolean;
   testId?: string;
 }
 
-export const TabNav: FC<TabNavProps> = ({ className, tag = 'ul', testId, ...attributes }) => {
+export const TabNav: FC<TabNavProps> = ({
+  className,
+  vertical = false,
+  dark = false,
+  card = false,
+  tag = 'ul',
+  testId,
+  ...attributes
+}) => {
   const Tag = tag;
 
-  const classes = classNames(className, 'nav-tabs');
+  const classes = classNames(
+    className,
+    'nav-tabs',
+    { 'nav-tabs-vertical': vertical },
+    { 'nav-dark': dark },
+    { 'nav-tabs-cards': card }
+  );
   let currentTabIndex = 0;
   let activeTabIndex = -1;
 
