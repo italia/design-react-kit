@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { ElementType, FC } from 'react';
+import React, { ElementType, FC, useRef } from 'react';
 import { Nav, NavProps } from 'react-bootstrap';
 
 export interface TabNavProps extends NavProps {
@@ -34,6 +34,7 @@ export const TabNav: FC<TabNavProps> = ({
   ...attributes
 }) => {
   const Tag = tag;
+  const rootRef = useRef<HTMLInputElement>();
 
   const classes = classNames(
     className,
@@ -48,41 +49,52 @@ export const TabNav: FC<TabNavProps> = ({
   // Ugly workaround to keep Bootstrap Italia behaviour
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLElement>, disabled: boolean = false) => {
-    const queriedElements = document.querySelectorAll('.nav-link');
-    for (let i = 0; i < queriedElements.length; i++) {
-      if (queriedElements[i].ariaSelected === 'true') {
-        activeTabIndex = i;
-      }
-      // Disabled elements ignore current focused tab
-      if (!disabled && document.activeElement === queriedElements[i]) {
-        currentTabIndex = i;
-      }
-      queriedElements[i].ariaSelected = 'false';
-    }
-    switch (event.key) {
-      case 'ArrowLeft':
-      case 'ArrowUp':
-        if (currentTabIndex - 1 < 0) {
-          currentTabIndex = queriedElements.length;
+    const queriedElements = rootRef.current?.querySelectorAll('.nav-link');
+    if (queriedElements) {
+      for (let i = 0; i < queriedElements.length; i++) {
+        if (queriedElements[i].ariaSelected === 'true') {
+          activeTabIndex = i;
         }
-        currentTabIndex = (currentTabIndex - 1) % queriedElements.length;
-        break;
-      case 'ArrowRight':
-      case 'ArrowDown':
-        currentTabIndex = (currentTabIndex + 1) % queriedElements.length;
-        break;
-      default:
-        return;
-    }
-    if (queriedElements[currentTabIndex].ariaDisabled === 'true') {
-      handleKeyDown(event, true);
-    } else {
-      (queriedElements[currentTabIndex] as HTMLElement).focus();
-      setTimeout(() => {
-        queriedElements[activeTabIndex].ariaSelected = 'true';
-      }, 300);
+        // Disabled elements ignore current focused tab
+        if (!disabled && document.activeElement === queriedElements[i]) {
+          currentTabIndex = i;
+        }
+        queriedElements[i].ariaSelected = 'false';
+      }
+      switch (event.key) {
+        case 'ArrowLeft':
+        case 'ArrowUp':
+          if (currentTabIndex - 1 < 0) {
+            currentTabIndex = queriedElements.length;
+          }
+          currentTabIndex = (currentTabIndex - 1) % queriedElements.length;
+          break;
+        case 'ArrowRight':
+        case 'ArrowDown':
+          currentTabIndex = (currentTabIndex + 1) % queriedElements.length;
+          break;
+        default:
+          return;
+      }
+      if (queriedElements[currentTabIndex].ariaDisabled === 'true') {
+        handleKeyDown(event, true);
+      } else {
+        (queriedElements[currentTabIndex] as HTMLElement).focus({ preventScroll: true });
+        setTimeout(() => {
+          queriedElements[activeTabIndex].ariaSelected = 'true';
+        }, 300);
+      }
     }
   };
 
-  return <Nav as={Tag} className={classes} data-testid={testId} {...attributes} onKeyDown={handleKeyDown}></Nav>;
+  return (
+    <Nav
+      ref={rootRef}
+      as={Tag}
+      className={classes}
+      data-testid={testId}
+      {...attributes}
+      onKeyDown={handleKeyDown}
+    ></Nav>
+  );
 };
