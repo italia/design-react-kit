@@ -125,3 +125,71 @@ Gli esempi sopra riportati non hanno molto senso senza un contenuto che cambi al
 ### Tab con testo e icona
 
 <Canvas of={TabStories.TestoIconaPannel} />
+
+## Tab verticali
+
+Impostando il parametro `vertical` al componente `TabNav` e aggiungendo i dovuti componenti per la spaziatura verticale, è possibile realizzare tab a orientamento verticale.
+
+### Tab testuale
+
+<Canvas of={TabStories.TestualePannelVertical} />
+
+### Tab testuale con colore di sfondo
+
+Aggiungendo la classe `.nav-tabs-vertical-background` al componente `TabNav` contenitore dei link i tab selezionati avranno un colore di sfondo.
+
+<Canvas of={TabStories.TestualePannelVerticalBackground} />
+
+### Tab con testo e icona
+
+<Canvas of={TabStories.TestoIconaPannelVertical} />
+
+### Tab con icona
+
+Le label dei Tab possono essere sostituite da icone, avendo cura di includere all’interno del link un elemento `<span>` contenente la descrizione per non gli screen reader del tab con classe `.visually-hidden` per nascondere la descrizione agli altri browser. Al componente `TabNavLink` contenente l’icona va aggiunta la classe `.justify-content-end` per allineare l’icona a destra.
+
+<Canvas of={TabStories.TestoPannelVertical} />
+
+## Posizione dei Tab
+
+Per questioni di accessibilità è preferibile utilizzare le proprietà Flex di CSS a un cambio di posizione dei Tab nell’HTML. Per garantire un flusso di lettura naturale della pagina i tab di navigazione devono precedere il contenuto a loro associato.
+
+### Orizzontale in fondo
+
+Per posizionare i tab al di sotto del contenuto è necessario utilizzare un elemento contenitore (ad esempio un `<div>`) con classi `.d-flex .flex-column-reverse`.
+
+<Canvas of={TabStories.TestualePannelReverseBottom} />
+
+### Verticale a destra
+
+Per posizionare i tab verticali a destra contenuto è necessario applicare la classe `.flex-row-reverse` all’elemento con classe `.row` che li contiene.
+
+<Canvas of={TabStories.TestualePannelReverseRight} />
+
+## Tab con sfondo scuro
+
+### Tab orizzontali a tutta larghezza
+
+<Canvas of={TabStories.TestualeFullDark} />
+
+### Tab con testo e icona
+
+<Canvas of={TabStories.TestoIconaFullDark} />
+
+### Tab verticali
+
+<Canvas of={TabStories.TestoIconaPannelVerticalDark} />
+
+### Tab verticali destra
+
+<Canvas of={TabStories.TestualePannelReverseRightDark} />
+
+## Tab tipo Card
+
+Aggiungere la proprietà `card` al componente `TabNav` per ottenere un design tipo card.
+
+<Canvas of={TabStories.TestualePannelCard} />
+
+### Tab tipo Card con pulsanti aggiungi/elimina
+
+<Canvas of={TabStories.TestualePannelCardEditable} />
