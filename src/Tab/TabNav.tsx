@@ -49,8 +49,6 @@ export const TabNav: FC<TabNavProps> = ({
   // Ugly workaround to keep Bootstrap Italia behaviour
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLElement>, disabled: boolean = false) => {
-    event.stopPropagation();
-    event.preventDefault();
     const queriedElements = rootRef.current?.querySelectorAll('.nav-link');
     if (queriedElements) {
       for (let i = 0; i < queriedElements.length; i++) {
@@ -66,6 +64,8 @@ export const TabNav: FC<TabNavProps> = ({
       switch (event.key) {
         case 'ArrowLeft':
         case 'ArrowUp':
+          event.stopPropagation();
+          event.preventDefault();
           if (currentTabIndex - 1 < 0) {
             currentTabIndex = queriedElements.length;
           }
@@ -73,11 +73,17 @@ export const TabNav: FC<TabNavProps> = ({
           break;
         case 'ArrowRight':
         case 'ArrowDown':
+          event.stopPropagation();
+          event.preventDefault();
           currentTabIndex = (currentTabIndex + 1) % queriedElements.length;
           break;
         case 'Enter':
+          event.stopPropagation();
+          event.preventDefault();
           (queriedElements[currentTabIndex] as HTMLElement).click();
           break;
+        case 'Tab':
+          return;
         default:
           return;
       }
