@@ -83,7 +83,7 @@ export const TabNav: FC<TabNavProps> = ({
           (queriedElements[currentTabIndex] as HTMLElement).click();
           break;
         case 'Tab':
-          return;
+          break;
         default:
           return;
       }
