@@ -1,475 +1,1051 @@
-import { Meta, StoryObj } from "@storybook/react";
-import React, { useState } from "react";
-import { Col, Container, Icon, Nav, NavItem, NavLink, Row, TabContent, TabPane } from "../../src";
+import { Meta, StoryObj } from '@storybook/react';
+import React from 'react';
+import { Col, Icon, Row, TabContainer, TabContent, TabNav, TabNavItem, TabNavLink, TabPane } from '../../src';
 
-const meta: Meta<typeof Nav> = {
-  title: "Documentazione/Componenti/Tab",
-  component: Nav,
+const meta: Meta<typeof TabNav> = {
+  title: 'Documentazione/Componenti/Tab',
+  component: TabNav
 };
 
 export default meta;
 
-type Story = StoryObj<typeof Nav>;
+type Story = StoryObj<typeof TabNav>;
 
-export const Esempi: Story = {
+export const TestualeFull: Story = {
   render: () => (
-    <div>
-      <Nav tabs className="mb-3">
-        <NavItem>
-          <NavLink href="#" active>
-            Link Attivo
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">Link</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">Link</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#" disabled>
-            Link disabilitato
-          </NavLink>
-        </NavItem>
-      </Nav>
+    <TabContainer defaultActiveKey='1'>
+      <TabNav className='auto'>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>Attivo</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>Link</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>Link</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            Disattivo
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+    </TabContainer>
+  )
+};
 
-      <Nav tabs className="nav-dark">
-        <NavItem>
-          <NavLink href="#" active>
-            Link Attivo
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">Link</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">Link</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#" disabled>
-            Link disabilitato
-          </NavLink>
-        </NavItem>
-      </Nav>
+export const IconaFull: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <TabNav className='auto'>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>
+            <span>
+              <Icon icon='it-link' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>
+            <span>
+              <Icon icon='it-calendar' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>
+            <span>
+              <Icon icon='it-comment' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            <span>
+              <Icon icon='it-close' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+    </TabContainer>
+  )
+};
+
+export const IconaGrandeFull: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <TabNav className='nav-tabs-icon-lg auto'>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>
+            <span>
+              <Icon className='icon-lg' icon='it-link' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>
+            <span>
+              <Icon className='icon-lg' icon='it-calendar' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>
+            <span>
+              <Icon className='icon-lg' icon='it-comment' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            <span>
+              <Icon className='icon-lg' icon='it-close' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+    </TabContainer>
+  )
+};
+
+export const TestoIconaFull: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <TabNav className='auto'>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>
+            <Icon icon='it-link' aria-hidden />
+            Tab 1
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>
+            <Icon icon='it-calendar' aria-hidden />
+            Tab 2
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>
+            <Icon icon='it-comment' aria-hidden />
+            Tab 3
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            <Icon icon='it-close' aria-hidden />
+            Tab 4
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+    </TabContainer>
+  )
+};
+
+export const Testuale: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <TabNav>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>Attivo</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>Link</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>Link</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            Disattivo
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+    </TabContainer>
+  )
+};
+
+export const Icona: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <TabNav>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>
+            <span>
+              <Icon icon='it-link' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>
+            <span>
+              <Icon icon='it-calendar' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>
+            <span>
+              <Icon icon='it-comment' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            <span>
+              <Icon icon='it-close' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+    </TabContainer>
+  )
+};
+
+export const IconaGrande: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <TabNav className='nav-tabs-icon-lg'>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>
+            <span>
+              <Icon className='icon-lg' icon='it-link' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>
+            <span>
+              <Icon className='icon-lg' icon='it-calendar' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>
+            <span>
+              <Icon className='icon-lg' icon='it-comment' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            <span>
+              <Icon className='icon-lg' icon='it-close' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+    </TabContainer>
+  )
+};
+
+export const TestoIcona: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <TabNav>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>
+            <Icon icon='it-link' aria-hidden />
+            Tab 1
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>
+            <Icon icon='it-calendar' aria-hidden />
+            Tab 2
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>
+            <Icon icon='it-comment' aria-hidden />
+            Tab 3
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            <Icon icon='it-close' aria-hidden />
+            Tab 4
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+    </TabContainer>
+  )
+};
+
+export const Hidescroll: Story = {
+  render: () => (
+    <div className='nav-tabs-hidescroll hidescroll-ico'>
+      <TabContainer defaultActiveKey='1'>
+        <TabNav className='auto'>
+          <TabNavItem>
+            <TabNavLink eventKey='1'>Attivo</TabNavLink>
+          </TabNavItem>
+          <TabNavItem>
+            <TabNavLink eventKey='2'>Link</TabNavLink>
+          </TabNavItem>
+          <TabNavItem>
+            <TabNavLink eventKey='3'>Link</TabNavLink>
+          </TabNavItem>
+          <TabNavItem>
+            <TabNavLink eventKey='4'>Link</TabNavLink>
+          </TabNavItem>
+          <TabNavItem>
+            <TabNavLink eventKey='5'>Link</TabNavLink>
+          </TabNavItem>
+          <TabNavItem>
+            <TabNavLink eventKey='6'>Link</TabNavLink>
+          </TabNavItem>
+          <TabNavItem>
+            <TabNavLink eventKey='7'>Link</TabNavLink>
+          </TabNavItem>
+          <TabNavItem>
+            <TabNavLink eventKey='8'>Link</TabNavLink>
+          </TabNavItem>
+        </TabNav>
+      </TabContainer>
     </div>
   )
 };
 
-const TestoWithHooks = () => {
-  const [activeTab, toggleTab] = useState("1");
-  return (
-    <div>
-      <Nav tabs className="mb-3">
-        <NavItem>
-          <NavLink
-            href="#"
-            active={activeTab === "1"}
-            onClick={() => {
-              if (activeTab !== "1") {
-                toggleTab("1");
-              }
-            }}
-          >
-            <span>Tab titolo 1</span>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            href="#"
-            active={activeTab === "2"}
-            onClick={() => {
-              if (activeTab !== "2") {
-                toggleTab("2");
-              }
-            }}
-          >
-            <span>Tab titolo 2</span>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            href="#"
-            active={activeTab === "3"}
-            onClick={() => {
-              if (activeTab !== "3") {
-                toggleTab("3");
-              }
-            }}
-          >
-            <span>Tab titolo 3</span>
-          </NavLink>
-        </NavItem>
-      </Nav>
-
-      <TabContent activeTab={activeTab}>
-        <TabPane tabId="1" className="p-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
+export const TestualePannel: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <TabNav>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>Attivo</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>Link</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>Link</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            Disattivo
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+      <TabContent>
+        <TabPane eventKey='1' className='p-4'>
+          Contenuto 1
         </TabPane>
-        <TabPane tabId="2" className="p-3">
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.
+        <TabPane eventKey='2' className='p-4'>
+          Contenuto 2
         </TabPane>
-        <TabPane tabId="3" className="p-3">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-          qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua.
+        <TabPane eventKey='3' className='p-4'>
+          Contenuto 3
+        </TabPane>
+        <TabPane eventKey='4' className='p-4'>
+          Contenuto 4
         </TabPane>
       </TabContent>
-    </div>
-  );
-}
-
-export const Testo: Story = {
-  render: () => <TestoWithHooks />,
-  parameters: {
-    docs: {
-      canvas: { sourceState: "none" },
-    },
-  },
+    </TabContainer>
+  )
 };
 
-const IconaWithHooks = () => {
-  const [activeTab, toggleTab] = useState("1");
-  return (
-    <div>
-      <Nav tabs className="mb-3">
-        <NavItem>
-          <NavLink
-            href="#"
-            active={activeTab === "1"}
-            onClick={() => {
-              if (activeTab !== "1") {
-                toggleTab("1");
-              }
-            }}
-          >
+export const IconaPannel: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <TabNav>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>
             <span>
-              <Icon color="primary" icon="it-link" aria-hidden />
-              <i className="it-ico-lg it-file d-block text-center" aria-label="Tab titolo 1" />
+              <Icon icon='it-link' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
             </span>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            href="#"
-            active={activeTab === "2"}
-            onClick={() => {
-              if (activeTab !== "2") {
-                toggleTab("2");
-              }
-            }}
-          >
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>
             <span>
-              <Icon color="primary" icon="it-calendar" aria-hidden />
-              <i className="it-ico-lg it-calendar d-block text-center" aria-label="Tab titolo 2" />
+              <Icon icon='it-calendar' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
             </span>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            href="#"
-            active={activeTab === "3"}
-            onClick={() => {
-              if (activeTab !== "3") {
-                toggleTab("3");
-              }
-            }}
-          >
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>
             <span>
-              <Icon color="primary" icon="it-comment" aria-hidden />
-              <i className="it-ico-lg it-comment d-block text-center" aria-label="Tab titolo 3" />
+              <Icon icon='it-comment' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
             </span>
-          </NavLink>
-        </NavItem>
-      </Nav>
-
-      <TabContent activeTab={activeTab}>
-        <TabPane tabId="1" className="p-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            <span>
+              <Icon icon='it-close' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+      <TabContent>
+        <TabPane eventKey='1' className='p-4'>
+          Contenuto 1
         </TabPane>
-        <TabPane tabId="2" className="p-3">
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.
+        <TabPane eventKey='2' className='p-4'>
+          Contenuto 2
         </TabPane>
-        <TabPane tabId="3" className="p-3">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-          qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua.
+        <TabPane eventKey='3' className='p-4'>
+          Contenuto 3
+        </TabPane>
+        <TabPane eventKey='4' className='p-4'>
+          Contenuto 4
         </TabPane>
       </TabContent>
-    </div>
-  );
-}
-export const Icona: Story = {
-  render: () => <IconaWithHooks />,
-  parameters: {
-    docs: {
-      canvas: { sourceState: "none" },
-    },
-  },
+    </TabContainer>
+  )
 };
 
-const TestoIconaWithHooks = () => {
-  const [activeTab, toggleTab] = useState("1");
-  return (
-    <div>
-      <Nav tabs className="mb-3">
-        <NavItem>
-          <NavLink
-            href="#"
-            active={activeTab === "1"}
-            onClick={() => {
-              if (activeTab !== "1") {
-                toggleTab("1");
-              }
-            }}
-          >
+export const IconaGrandePannel: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <TabNav className='nav-tabs-icon-lg'>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>
             <span>
-              <Icon color="primary" icon="it-link" aria-hidden />
-              <i className="it-ico-lg it-file d-block text-center" aria-label="Tab titolo 1" />
+              <Icon className='icon-lg' icon='it-link' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
             </span>
-            <span>Tab titolo 1</span>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            href="#"
-            active={activeTab === "2"}
-            onClick={() => {
-              if (activeTab !== "2") {
-                toggleTab("2");
-              }
-            }}
-          >
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>
             <span>
-              <Icon color="primary" icon="it-calendar" aria-hidden />
-              <i className="it-ico-lg it-calendar d-block text-center" aria-label="Tab titolo 2" />
+              <Icon className='icon-lg' icon='it-calendar' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
             </span>
-            <span>Tab titolo 2</span>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            href="#"
-            active={activeTab === "3"}
-            onClick={() => {
-              if (activeTab !== "3") {
-                toggleTab("3");
-              }
-            }}
-          >
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>
             <span>
-              <Icon color="primary" icon="it-comment" aria-hidden />
-              <i className="it-ico-lg it-comment d-block text-center" aria-label="Tab titolo 3" />
+              <Icon className='icon-lg' icon='it-comment' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
             </span>
-            <span>Tab titolo 3</span>
-          </NavLink>
-        </NavItem>
-      </Nav>
-
-      <TabContent activeTab={activeTab}>
-        <TabPane tabId="1" className="p-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            <span>
+              <Icon className='icon-lg' icon='it-close' aria-hidden />
+              <span className='visually-hidden'>Tab titolo 1</span>
+            </span>
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+      <TabContent>
+        <TabPane eventKey='1' className='p-4'>
+          Contenuto 1
         </TabPane>
-        <TabPane tabId="2" className="p-3">
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.
+        <TabPane eventKey='2' className='p-4'>
+          Contenuto 2
         </TabPane>
-        <TabPane tabId="3" className="p-3">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-          qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua.
+        <TabPane eventKey='3' className='p-4'>
+          Contenuto 3
+        </TabPane>
+        <TabPane eventKey='4' className='p-4'>
+          Contenuto 4
         </TabPane>
       </TabContent>
-    </div>
-  );
-}
-
-export const TestoIcona: Story = {
-  render: () => <TestoIconaWithHooks />,
-  parameters: {
-    docs: {
-      canvas: { sourceState: "none" },
-    },
-  },
+    </TabContainer>
+  )
 };
 
-const BottoneWithHooks = () => {
-  const [activeTab, toggleTab] = useState("1");
-  return (
-    <Container className="m-3">
+export const TestoIconaPannel: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <TabNav>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>
+            <Icon icon='it-link' aria-hidden />
+            Tab 1
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>
+            <Icon icon='it-calendar' aria-hidden />
+            Tab 2
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>
+            <Icon icon='it-comment' aria-hidden />
+            Tab 3
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            <Icon icon='it-close' aria-hidden />
+            Tab 4
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+      <TabContent>
+        <TabPane eventKey='1' className='p-4'>
+          Contenuto 1
+        </TabPane>
+        <TabPane eventKey='2' className='p-4'>
+          Contenuto 2
+        </TabPane>
+        <TabPane eventKey='3' className='p-4'>
+          Contenuto 3
+        </TabPane>
+        <TabPane eventKey='4' className='p-4'>
+          Contenuto 4
+        </TabPane>
+      </TabContent>
+    </TabContainer>
+  )
+};
+
+export const TestualePannelVertical: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
       <Row>
-        <Col sm={"12"}>
-          <Nav pills className="mb-3">
-            <NavItem>
-              <NavLink
-                href="#"
-                active={activeTab === "1"}
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleTab("1");
-                }}
-              >
-                Tab 1
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                href="#"
-                active={activeTab === "2"}
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleTab("2");
-                }}
-              >
-                Tab 2
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                href="#"
-                active={activeTab === "3"}
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleTab("3");
-                }}
-              >
-                Tab 3
-              </NavLink>
-            </NavItem>
-          </Nav>
+        <Col sm={3}>
+          <TabNav vertical>
+            <TabNavItem>
+              <TabNavLink eventKey='1'>Attivo</TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='2'>Link</TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='3'>Link</TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='4' disabled>
+                Disattivo
+              </TabNavLink>
+            </TabNavItem>
+          </TabNav>
         </Col>
-        <Col sm={"12"}>
-          <TabContent activeTab={activeTab}>
-            <TabPane tabId="1" className="p-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-              in culpa qui officia deserunt mollit anim id est laborum.
+        <Col sm={9}>
+          <TabContent>
+            <TabPane eventKey='1' className='p-4'>
+              Contenuto 1
             </TabPane>
-            <TabPane tabId="2" className="p-3">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur.
+            <TabPane eventKey='2' className='p-4'>
+              Contenuto 2
             </TabPane>
-            <TabPane tabId="3" className="p-3">
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-              in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
+            <TabPane eventKey='3' className='p-4'>
+              Contenuto 3
+            </TabPane>
+            <TabPane eventKey='4' className='p-4'>
+              Contenuto 4
             </TabPane>
           </TabContent>
         </Col>
       </Row>
-    </Container>
-  );
-}
-
-export const Bottone: Story = {
-  render: () => <BottoneWithHooks />,
-  parameters: {
-    docs: {
-      canvas: { sourceState: "none" },
-    },
-  },
+    </TabContainer>
+  )
 };
 
-const VerticaleWithHooks = () => {
-  const [activeTab, toggleTab] = useState("1");
-  return (
-    <Container className="m-3">
+export const TestualePannelVerticalBackground: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
       <Row>
-        <Col sm={"3"}>
-          <Nav pills className="mb-3" vertical>
-            <NavItem>
-              <NavLink
-                href="#"
-                active={activeTab === "1"}
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleTab("1");
-                }}
-              >
-                Tab 1
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                href="#"
-                active={activeTab === "2"}
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleTab("2");
-                }}
-              >
-                Tab 2
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                href="#"
-                active={activeTab === "3"}
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleTab("3");
-                }}
-              >
-                Tab 3
-              </NavLink>
-            </NavItem>
-          </Nav>
+        <Col sm={3}>
+          <TabNav vertical className='nav-tabs-vertical-background'>
+            <TabNavItem>
+              <TabNavLink eventKey='1'>Attivo</TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='2'>Link</TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='3'>Link</TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='4' disabled>
+                Disattivo
+              </TabNavLink>
+            </TabNavItem>
+          </TabNav>
         </Col>
-        <Col sm={"9"}>
-          <TabContent activeTab={activeTab}>
-            <TabPane tabId="1" className="p-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-              in culpa qui officia deserunt mollit anim id est laborum.
+        <Col sm={9}>
+          <TabContent>
+            <TabPane eventKey='1' className='p-4'>
+              Contenuto 1
             </TabPane>
-            <TabPane tabId="2" className="p-3">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur.
+            <TabPane eventKey='2' className='p-4'>
+              Contenuto 2
             </TabPane>
-            <TabPane tabId="3" className="p-3">
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-              in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
+            <TabPane eventKey='3' className='p-4'>
+              Contenuto 3
+            </TabPane>
+            <TabPane eventKey='4' className='p-4'>
+              Contenuto 4
             </TabPane>
           </TabContent>
         </Col>
       </Row>
-    </Container>
-  );
-}
+    </TabContainer>
+  )
+};
 
-export const Verticale: Story = {
-  render: () => <VerticaleWithHooks />,
-  parameters: {
-    docs: {
-      canvas: { sourceState: "none" },
-    },
-  },
+export const TestoIconaPannelVertical: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <Row>
+        <Col sm={3}>
+          <TabNav vertical>
+            <TabNavItem>
+              <TabNavLink eventKey='1'>
+                Tab 1
+                <Icon icon='it-link' aria-hidden />
+              </TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='2'>
+                Tab 2
+                <Icon icon='it-calendar' aria-hidden />
+              </TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='3'>
+                Tab 3
+                <Icon icon='it-comment' aria-hidden />
+              </TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='4' disabled>
+                Tab 4
+                <Icon icon='it-close' aria-hidden />
+              </TabNavLink>
+            </TabNavItem>
+          </TabNav>
+        </Col>
+        <Col sm={9}>
+          <TabContent>
+            <TabPane eventKey='1' className='p-4'>
+              Contenuto 1
+            </TabPane>
+            <TabPane eventKey='2' className='p-4'>
+              Contenuto 2
+            </TabPane>
+            <TabPane eventKey='3' className='p-4'>
+              Contenuto 3
+            </TabPane>
+            <TabPane eventKey='4' className='p-4'>
+              Contenuto 4
+            </TabPane>
+          </TabContent>
+        </Col>
+      </Row>
+    </TabContainer>
+  )
+};
+
+export const TestoPannelVertical: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <Row>
+        <Col sm={3}>
+          <TabNav vertical>
+            <TabNavItem>
+              <TabNavLink eventKey='1' className='justify-content-end'>
+                <span className='visually-hidden'>Tab 1</span>
+                <Icon icon='it-link' aria-hidden />
+              </TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='2' className='justify-content-end'>
+                <span className='visually-hidden'>Tab 2</span>
+                <Icon icon='it-calendar' aria-hidden />
+              </TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='3' className='justify-content-end'>
+                <span className='visually-hidden'>Tab 3</span>
+                <Icon icon='it-comment' aria-hidden />
+              </TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='4' className='justify-content-end' disabled>
+                <span className='visually-hidden'>Tab 4</span>
+                <Icon icon='it-close' aria-hidden />
+              </TabNavLink>
+            </TabNavItem>
+          </TabNav>
+        </Col>
+        <Col sm={9}>
+          <TabContent>
+            <TabPane eventKey='1' className='p-4'>
+              Contenuto 1
+            </TabPane>
+            <TabPane eventKey='2' className='p-4'>
+              Contenuto 2
+            </TabPane>
+            <TabPane eventKey='3' className='p-4'>
+              Contenuto 3
+            </TabPane>
+            <TabPane eventKey='4' className='p-4'>
+              Contenuto 4
+            </TabPane>
+          </TabContent>
+        </Col>
+      </Row>
+    </TabContainer>
+  )
+};
+
+export const TestualePannelReverseBottom: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <div className='d-flex flex-column-reverse'>
+        <TabNav>
+          <TabNavItem>
+            <TabNavLink eventKey='1'>Attivo</TabNavLink>
+          </TabNavItem>
+          <TabNavItem>
+            <TabNavLink eventKey='2'>Link</TabNavLink>
+          </TabNavItem>
+          <TabNavItem>
+            <TabNavLink eventKey='3'>Link</TabNavLink>
+          </TabNavItem>
+          <TabNavItem>
+            <TabNavLink eventKey='4' disabled>
+              Disattivo
+            </TabNavLink>
+          </TabNavItem>
+        </TabNav>
+        <TabContent>
+          <TabPane eventKey='1' className='p-4'>
+            Contenuto 1
+          </TabPane>
+          <TabPane eventKey='2' className='p-4'>
+            Contenuto 2
+          </TabPane>
+          <TabPane eventKey='3' className='p-4'>
+            Contenuto 3
+          </TabPane>
+          <TabPane eventKey='4' className='p-4'>
+            Contenuto 4
+          </TabPane>
+        </TabContent>
+      </div>
+    </TabContainer>
+  )
+};
+
+export const TestualePannelReverseRight: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <Row className='flex-row-reverse'>
+        <Col xs='6' md='4' lg='3'>
+          <TabNav vertical>
+            <TabNavItem>
+              <TabNavLink eventKey='1'>Attivo</TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='2'>Link</TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='3'>Link</TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='4' disabled>
+                Disattivo
+              </TabNavLink>
+            </TabNavItem>
+          </TabNav>
+        </Col>
+        <Col xs='6' md='8' lg='9'>
+          <TabContent>
+            <TabPane eventKey='1' className='p-4'>
+              Contenuto 1
+            </TabPane>
+            <TabPane eventKey='2' className='p-4'>
+              Contenuto 2
+            </TabPane>
+            <TabPane eventKey='3' className='p-4'>
+              Contenuto 3
+            </TabPane>
+            <TabPane eventKey='4' className='p-4'>
+              Contenuto 4
+            </TabPane>
+          </TabContent>
+        </Col>
+      </Row>
+    </TabContainer>
+  )
+};
+
+export const TestualeFullDark: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <TabNav dark className='auto'>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>Attivo</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>Link</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>Link</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            Disattivo
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+    </TabContainer>
+  )
+};
+
+export const TestoIconaFullDark: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <TabNav dark className='auto'>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>
+            <Icon icon='it-link' aria-hidden />
+            Tab 1
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>
+            <Icon icon='it-calendar' aria-hidden />
+            Tab 2
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>
+            <Icon icon='it-comment' aria-hidden />
+            Tab 3
+          </TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            <Icon icon='it-close' aria-hidden />
+            Tab 4
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+    </TabContainer>
+  )
+};
+
+export const TestoIconaPannelVerticalDark: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <Row>
+        <Col sm={3}>
+          <TabNav vertical dark>
+            <TabNavItem>
+              <TabNavLink eventKey='1'>
+                Tab 1
+                <Icon icon='it-link' aria-hidden />
+              </TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='2'>
+                Tab 2
+                <Icon icon='it-calendar' aria-hidden />
+              </TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='3'>
+                Tab 3
+                <Icon icon='it-comment' aria-hidden />
+              </TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='4' disabled>
+                Tab 4
+                <Icon icon='it-close' aria-hidden />
+              </TabNavLink>
+            </TabNavItem>
+          </TabNav>
+        </Col>
+        <Col sm={9}>
+          <TabContent>
+            <TabPane eventKey='1' className='p-4'>
+              Contenuto 1
+            </TabPane>
+            <TabPane eventKey='2' className='p-4'>
+              Contenuto 2
+            </TabPane>
+            <TabPane eventKey='3' className='p-4'>
+              Contenuto 3
+            </TabPane>
+            <TabPane eventKey='4' className='p-4'>
+              Contenuto 4
+            </TabPane>
+          </TabContent>
+        </Col>
+      </Row>
+    </TabContainer>
+  )
+};
+
+export const TestualePannelReverseRightDark: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <Row className='flex-row-reverse'>
+        <Col xs='6' md='4' lg='3'>
+          <TabNav vertical dark>
+            <TabNavItem>
+              <TabNavLink eventKey='1'>
+                <Icon icon='it-link' aria-hidden />
+                Tab 1
+              </TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='2'>
+                <Icon icon='it-calendar' aria-hidden />
+                Tab 2
+              </TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='3'>
+                <Icon icon='it-comment' aria-hidden />
+                Tab 3
+              </TabNavLink>
+            </TabNavItem>
+            <TabNavItem>
+              <TabNavLink eventKey='4' disabled>
+                <Icon icon='it-close' aria-hidden />
+                Tab 4
+              </TabNavLink>
+            </TabNavItem>
+          </TabNav>
+        </Col>
+        <Col xs='6' md='8' lg='9'>
+          <TabContent>
+            <TabPane eventKey='1' className='p-4'>
+              Contenuto 1
+            </TabPane>
+            <TabPane eventKey='2' className='p-4'>
+              Contenuto 2
+            </TabPane>
+            <TabPane eventKey='3' className='p-4'>
+              Contenuto 3
+            </TabPane>
+            <TabPane eventKey='4' className='p-4'>
+              Contenuto 4
+            </TabPane>
+          </TabContent>
+        </Col>
+      </Row>
+    </TabContainer>
+  )
+};
+
+export const TestualePannelCard: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <TabNav card>
+        <TabNavItem>
+          <TabNavLink eventKey='1'>Attivo</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='2'>Link</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='3'>Link</TabNavLink>
+        </TabNavItem>
+        <TabNavItem>
+          <TabNavLink eventKey='4' disabled>
+            Disattivo
+          </TabNavLink>
+        </TabNavItem>
+      </TabNav>
+      <TabContent>
+        <TabPane eventKey='1' className='p-4'>
+          Contenuto 1
+        </TabPane>
+        <TabPane eventKey='2' className='p-4'>
+          Contenuto 2
+        </TabPane>
+        <TabPane eventKey='3' className='p-4'>
+          Contenuto 3
+        </TabPane>
+        <TabPane eventKey='4' className='p-4'>
+          Contenuto 4
+        </TabPane>
+      </TabContent>
+    </TabContainer>
+  )
+};
+
+export const TestualePannelCardEditable: Story = {
+  render: () => (
+    <TabContainer defaultActiveKey='1'>
+      <div className='nav-tabs-wrapper'>
+        <TabNav card className='nav-tabs-editable'>
+          <TabNavItem>
+            <TabNavLink eventKey='1'>Tab 1</TabNavLink>
+            <div className='nav-link-close'>
+              <Icon icon='it-close' aria-hidden />
+              <span className='visually-hidden'> Chiudi tab 1</span>
+            </div>
+          </TabNavItem>
+          <TabNavItem>
+            <TabNavLink eventKey='2'>Tab 2</TabNavLink>
+            <div className='nav-link-close'>
+              <Icon icon='it-close' aria-hidden />
+              <span className='visually-hidden'> Chiudi tab 2</span>
+            </div>
+          </TabNavItem>
+          <TabNavItem>
+            <TabNavLink eventKey='3'>Tab 3</TabNavLink>
+            <div className='nav-link-close'>
+              <Icon icon='it-close' aria-hidden />
+              <span className='visually-hidden'> Chiudi tab 3</span>
+            </div>
+          </TabNavItem>
+          <TabNavItem>
+            <TabNavLink eventKey='4' disabled>
+              Disattivo
+            </TabNavLink>
+            <div className='nav-link-close disabled'>
+              <Icon icon='it-close' aria-hidden />
+              <span className='visually-hidden'> Chiudi tab 4</span>
+            </div>
+          </TabNavItem>
+          <li className='nav-item-filler'></li>
+          <TabNavItem>
+            <a className='nav-tab-add'>
+              <span className='visually-hidden'> Aggiungi un tab</span>
+            </a>
+          </TabNavItem>
+        </TabNav>
+      </div>
+      <TabContent>
+        <TabPane eventKey='1' className='p-4'>
+          Contenuto 1
+        </TabPane>
+        <TabPane eventKey='2' className='p-4'>
+          Contenuto 2
+        </TabPane>
+        <TabPane eventKey='3' className='p-4'>
+          Contenuto 3
+        </TabPane>
+        <TabPane eventKey='4' className='p-4'>
+          Contenuto 4
+        </TabPane>
+      </TabContent>
+    </TabContainer>
+  )
 };

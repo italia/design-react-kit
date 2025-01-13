@@ -1,5 +1,4 @@
 import { ArgTypes, Canvas, Controls, Meta, Story } from '@storybook/blocks';
-import { Code } from '@storybook/components';
 import { Alert, Callout, CalloutText, CalloutTitle } from '../../src';
 import * as TabStories from '../Components/Tab.stories';
 
@@ -7,433 +6,190 @@ import * as TabStories from '../Components/Tab.stories';
 
 # Tab
 
-### Esempi
-
 L'interfaccia a tab (o schede) di Bootstrap si basa sull'utilizzo del layout di navigazione `Nav`, con l'aggiunta della proprietà `tabs`. Per ottenere una versione con sfondo scuro e testo chiaro bisognerà aggiungere un'ulteriore classe: `.nav-dark`.
 
-<Canvas of={TabStories.Esempi} />
+<div className='docs'>
+  <Callout color='warning'>
+    <CalloutTitle>
+      <span className='text'>Info documentazione</span>
+    </CalloutTitle>
+    <CalloutText>
+      La maggior parte degli esempi riguardanti il componente Tab non hanno pannelli di contenuto associati, pertanto la
+      funzionalità per selezionare il pannello risulterà disattivata. Per vedere il componente Tab in azione fare
+      riferimento alla sezione [Controllo dei pannelli associati](#controllo-dei-pannelli-associati).
+    </CalloutText>
+  </Callout>
+</div>
 
-## Con Testo
+<div className="docs">
+    <Callout color="success">
+        <CalloutTitle>
+            <span className="text">Accessibilità</span>
+        </CalloutTitle>
+        <CalloutText>
+            Le interfacce a tab, come descritto nelle [pratiche di implementazione WAI ARIA](https://www.w3.org/TR/wai-aria-practices/#tabpanel), richiedono l’utilizzo di attributi `role="tablist"`, `role="tab"`, `role="tabpanel"`, e ulteriori attributi `aria-`, al fine di trasmettere la loro struttura, funzionalità e stato attuale agli utenti delle tecnologie assistive (come i lettori di schermo).
 
-Gli esempi sopra riportati non hanno molto senso senza un contenuto che cambi al di sotto di essi; per rendere tali interfacce navigabili è necessario collegare Tab e Pannelli collegando il tag `<a>` dei primi all’attributo id dei secondi, come mostrato di seguito:
+            Nota che le interfacce dinamiche a tab **non devono** contenere menu a discesa, poiché ciò causa problemi di usabilità e accessibilità. Dal punto di vista dell’usabilità, il fatto che l’elemento trigger del tab attualmente visualizzato non sia immediatamente visibile (dato che si trova all’interno del menu a discesa chiuso) può causare confusione.
+        </CalloutText>
+    </Callout>
 
-<Canvas of={TabStories.Testo} />
+</div>
 
-#### Source
+<div className='docs'>
+  <Callout color='danger'>
+    <CalloutTitle>
+      <span className='text'>Breaking change</span>
+    </CalloutTitle>
+    <CalloutText>
+      Dalla versione 5.x.x il componente `Tab` è stato completamente ridisegnato per una migliore implementazione dei
+      pattern ARIA.
+    </CalloutText>
+  </Callout>
+</div>
 
-```tsx
-const [activeTab, toggleTab] = useState('1');
-return (
-  <div>
-    <Nav tabs className='mb-3'>
-      <NavItem>
-        <NavLink
-          href='#'
-          active={activeTab === '1'}
-          onClick={() => {
-            if (activeTab !== '1') {
-              toggleTab('1');
-            }
-          }}
-        >
-          <span>Tab titolo 1</span>
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          href='#'
-          active={activeTab === '2'}
-          onClick={() => {
-            if (activeTab !== '2') {
-              toggleTab('2');
-            }
-          }}
-        >
-          <span>Tab titolo 2</span>
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          href='#'
-          active={activeTab === '3'}
-          onClick={() => {
-            if (activeTab !== '3') {
-              toggleTab('3');
-            }
-          }}
-        >
-          <span>Tab titolo 3</span>
-        </NavLink>
-      </NavItem>
-    </Nav>
+## Tab orizzontali a tutta larghezza
 
-    <TabContent activeTab={activeTab}>
-      <TabPane tabId='1' className='p-3'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-      </TabPane>
-      <TabPane tabId='2' className='p-3'>
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur.
-      </TabPane>
-      <TabPane tabId='3' className='p-3'>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </TabPane>
-    </TabContent>
-  </div>
-);
-```
+Aggiungendo la classe `.auto` al contenitore `TabContainer` i tab occupano automaticamente l’intera larghezza disponibile. Se su schermi particolarme piccoli (es: smartphone) le dimensioni dei tab dovessero superare quelle dello schermo, verrà attivato lo scrolling orizzontale dei tab stessi.
 
-## Icona
+### Tab testuale
 
-Oppure al posto della label usare una icona.
+Lo stato dei tab può essere attivo, non attivo e disabilitato. Utilizzare la proprietà `disabled` sul link dei tab da disabilitare.
+
+<Canvas of={TabStories.TestualeFull} />
+
+### Tab con icona
+
+Le label dei tab possono essere sostituite da icone con classi che ne indicano il tipo, avendo cura di includere all’interno del link un elemento `<span>` con classe `.visually-hidden` contenente la descrizione dedicata agli screen reader. La classe .visually-hidden impedisce la visualizzazione del testo sui browser visuali.
+
+<Canvas of={TabStories.IconaFull} />
+
+### Tab con icona grande
+
+Per ottenere icone più grandi utilizzare la classe `.icon-lg` alle icone. Aggiungere la classe `.nav-tabs-icon-lg` al contenitore `TabContainer` per ottimizzare i margini fra tab.
+
+<Canvas of={TabStories.IconaGrandeFull} />
+
+### Tab con testo e icona
+
+Icone e testi possono convivere all’interno dei tab, l’allineamento verticale dei due elementi è automatico. Per ottenere il corretto margine fra testo e icona nei tab a sviluppo orizzontale è necessario aggiungere la classe `.nav-tabs-icon-text` al contenitore `TabContainer`.
+
+<Canvas of={TabStories.TestoIconaFull} />
+
+## Tab orizzontali
+
+In assenza della classe `.auto` i tab vengono dimensionati in base al contenuto.
+
+### Tab testuale
+
+<Canvas of={TabStories.Testuale} />
+
+### Tab con icona
 
 <Canvas of={TabStories.Icona} />
 
-#### Source
+### Tab con icona grande
 
-```tsx
-const [activeTab, toggleTab] = useState('1');
-return (
-  <div>
-    <Nav tabs className='mb-3'>
-      <NavItem>
-        <NavLink
-          href='#'
-          active={activeTab === '1'}
-          onClick={() => {
-            if (activeTab !== '1') {
-              toggleTab('1');
-            }
-          }}
-        >
-          <span>
-            <Icon color='primary' icon='it-link' aria-hidden />
-            <i className='it-ico-lg it-file d-block text-center' aria-label='Tab titolo 1' />
-          </span>
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          href='#'
-          active={activeTab === '2'}
-          onClick={() => {
-            if (activeTab !== '2') {
-              toggleTab('2');
-            }
-          }}
-        >
-          <span>
-            <Icon color='primary' icon='it-calendar' aria-hidden />
-            <i className='it-ico-lg it-calendar d-block text-center' aria-label='Tab titolo 2' />
-          </span>
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          href='#'
-          active={activeTab === '3'}
-          onClick={() => {
-            if (activeTab !== '3') {
-              toggleTab('3');
-            }
-          }}
-        >
-          <span>
-            <Icon color='primary' icon='it-comment' aria-hidden />
-            <i className='it-ico-lg it-comment d-block text-center' aria-label='Tab titolo 3' />
-          </span>
-        </NavLink>
-      </NavItem>
-    </Nav>
+<Canvas of={TabStories.IconaGrande} />
 
-    <TabContent activeTab={activeTab}>
-      <TabPane tabId='1' className='p-3'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-      </TabPane>
-      <TabPane tabId='2' className='p-3'>
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur.
-      </TabPane>
-      <TabPane tabId='3' className='p-3'>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </TabPane>
-    </TabContent>
-  </div>
-);
-```
-
-### Testo e icona
-
-Oppure con label e icona insieme.
+### Tab con testo e icona
 
 <Canvas of={TabStories.TestoIcona} />
 
-#### Source
+## Rimozione delle scrollbar su dispositivi touch
 
-```tsx
-const [activeTab, toggleTab] = useState('1');
-return (
-  <div>
-    <Nav tabs className='mb-3'>
-      <NavItem>
-        <NavLink
-          href='#'
-          active={activeTab === '1'}
-          onClick={() => {
-            if (activeTab !== '1') {
-              toggleTab('1');
-            }
-          }}
-        >
-          <span>
-            <Icon color='primary' icon='it-link' aria-hidden />
-            <i className='it-ico-lg it-file d-block text-center' aria-label='Tab titolo 1' />
-          </span>
-          <span>Tab titolo 1</span>
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          href='#'
-          active={activeTab === '2'}
-          onClick={() => {
-            if (activeTab !== '2') {
-              toggleTab('2');
-            }
-          }}
-        >
-          <span>
-            <Icon color='primary' icon='it-calendar' aria-hidden />
-            <i className='it-ico-lg it-calendar d-block text-center' aria-label='Tab titolo 2' />
-          </span>
-          <span>Tab titolo 2</span>
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          href='#'
-          active={activeTab === '3'}
-          onClick={() => {
-            if (activeTab !== '3') {
-              toggleTab('3');
-            }
-          }}
-        >
-          <span>
-            <Icon color='primary' icon='it-comment' aria-hidden />
-            <i className='it-ico-lg it-comment d-block text-center' aria-label='Tab titolo 3' />
-          </span>
-          <span>Tab titolo 3</span>
-        </NavLink>
-      </NavItem>
-    </Nav>
+Se per motivi estetici si volessero nascondere le scrollbar che appaiono sui dispositivi touch quando vengono scrollati orizzontalmente i tab sarà necessario inserire l’html dei tab all’interno di un wrapper con classe `.nav-tabs-hidescroll`.
 
-    <TabContent activeTab={activeTab}>
-      <TabPane tabId='1' className='p-3'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.
-      </TabPane>
-      <TabPane tabId='2' className='p-3'>
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur.
-      </TabPane>
-      <TabPane tabId='3' className='p-3'>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </TabPane>
-    </TabContent>
-  </div>
-);
-```
+Se i tab contengono icone è necessario aggiungere un’ulteriore classe al wrapper:
 
-## Bottone
+- `.hidescroll-ico` nel caso di icone normali
+- `.hidescroll-ico-lg` nel caso di icone piccole
 
-I tab possono ereditare dalla navigazione l'utilizzo della proprietà `pills` per generare tab a bottoni.
+<Canvas of={TabStories.Hidescroll} />
 
-<Canvas of={TabStories.Bottone} />
+## Controllo dei pannelli associati
 
-#### Source
+Gli esempi sopra riportati non hanno molto senso senza un contenuto che cambi al di sotto di essi; per rendere tali interfacce navigabili è necessario inserire i componenti `TabContent` e `TabPane`.
 
-```tsx
-const [activeTab, toggleTab] = useState('1');
-return (
-  <Container className='m-3'>
-    <Row>
-      <Col sm={'12'}>
-        <Nav pills className='mb-3'>
-          <NavItem>
-            <NavLink
-              href='#'
-              active={activeTab === '1'}
-              onClick={(e) => {
-                e.preventDefault();
-                toggleTab('1');
-              }}
-            >
-              Tab 1
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              href='#'
-              active={activeTab === '2'}
-              onClick={(e) => {
-                e.preventDefault();
-                toggleTab('2');
-              }}
-            >
-              Tab 2
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              href='#'
-              active={activeTab === '3'}
-              onClick={(e) => {
-                e.preventDefault();
-                toggleTab('3');
-              }}
-            >
-              Tab 3
-            </NavLink>
-          </NavItem>
-        </Nav>
-      </Col>
-      <Col sm={'12'}>
-        <TabContent activeTab={activeTab}>
-          <TabPane tabId='1' className='p-3'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-          </TabPane>
-          <TabPane tabId='2' className='p-3'>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur.
-          </TabPane>
-          <TabPane tabId='3' className='p-3'>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua.
-          </TabPane>
-        </TabContent>
-      </Col>
-    </Row>
-  </Container>
-);
-```
+## Tab testuale
 
-## Allineamento verticale
+<Canvas of={TabStories.TestualePannel} />
 
-<Canvas of={TabStories.Verticale} />
+### Tab con icona
 
-#### Source
+<Canvas of={TabStories.IconaPannel} />
 
-```tsx
-const [activeTab, toggleTab] = useState('1');
-return (
-  <Container className='m-3'>
-    <Row>
-      <Col sm={'3'}>
-        <Nav pills className='mb-3' vertical>
-          <NavItem>
-            <NavLink
-              href='#'
-              active={activeTab === '1'}
-              onClick={(e) => {
-                e.preventDefault();
-                toggleTab('1');
-              }}
-            >
-              Tab 1
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              href='#'
-              active={activeTab === '2'}
-              onClick={(e) => {
-                e.preventDefault();
-                toggleTab('2');
-              }}
-            >
-              Tab 2
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              href='#'
-              active={activeTab === '3'}
-              onClick={(e) => {
-                e.preventDefault();
-                toggleTab('3');
-              }}
-            >
-              Tab 3
-            </NavLink>
-          </NavItem>
-        </Nav>
-      </Col>
-      <Col sm={'9'}>
-        <TabContent activeTab={activeTab}>
-          <TabPane tabId='1' className='p-3'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-          </TabPane>
-          <TabPane tabId='2' className='p-3'>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur.
-          </TabPane>
-          <TabPane tabId='3' className='p-3'>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua.
-          </TabPane>
-        </TabContent>
-      </Col>
-    </Row>
-  </Container>
-);
-```
+### Tab con icona grande
+
+<Canvas of={TabStories.IconaGrandePannel} />
+
+### Tab con testo e icona
+
+<Canvas of={TabStories.TestoIconaPannel} />
+
+## Tab verticali
+
+Impostando il parametro `vertical` al componente `TabNav` e aggiungendo i dovuti componenti per la spaziatura verticale, è possibile realizzare tab a orientamento verticale.
+
+### Tab testuale
+
+<Canvas of={TabStories.TestualePannelVertical} />
+
+### Tab testuale con colore di sfondo
+
+Aggiungendo la classe `.nav-tabs-vertical-background` al componente `TabNav` contenitore dei link i tab selezionati avranno un colore di sfondo.
+
+<Canvas of={TabStories.TestualePannelVerticalBackground} />
+
+### Tab con testo e icona
+
+<Canvas of={TabStories.TestoIconaPannelVertical} />
+
+### Tab con icona
+
+Le label dei Tab possono essere sostituite da icone, avendo cura di includere all’interno del link un elemento `<span>` contenente la descrizione per non gli screen reader del tab con classe `.visually-hidden` per nascondere la descrizione agli altri browser. Al componente `TabNavLink` contenente l’icona va aggiunta la classe `.justify-content-end` per allineare l’icona a destra.
+
+<Canvas of={TabStories.TestoPannelVertical} />
+
+## Posizione dei Tab
+
+Per questioni di accessibilità è preferibile utilizzare le proprietà Flex di CSS a un cambio di posizione dei Tab nell’HTML. Per garantire un flusso di lettura naturale della pagina i tab di navigazione devono precedere il contenuto a loro associato.
+
+### Orizzontale in fondo
+
+Per posizionare i tab al di sotto del contenuto è necessario utilizzare un elemento contenitore (ad esempio un `<div>`) con classi `.d-flex .flex-column-reverse`.
+
+<Canvas of={TabStories.TestualePannelReverseBottom} />
+
+### Verticale a destra
+
+Per posizionare i tab verticali a destra contenuto è necessario applicare la classe `.flex-row-reverse` all’elemento con classe `.row` che li contiene.
+
+<Canvas of={TabStories.TestualePannelReverseRight} />
+
+## Tab con sfondo scuro
+
+### Tab orizzontali a tutta larghezza
+
+<Canvas of={TabStories.TestualeFullDark} />
+
+### Tab con testo e icona
+
+<Canvas of={TabStories.TestoIconaFullDark} />
+
+### Tab verticali
+
+<Canvas of={TabStories.TestoIconaPannelVerticalDark} />
+
+### Tab verticali destra
+
+<Canvas of={TabStories.TestualePannelReverseRightDark} />
+
+## Tab tipo Card
+
+Aggiungere la proprietà `card` al componente `TabNav` per ottenere un design tipo card.
+
+<Canvas of={TabStories.TestualePannelCard} />
+
+### Tab tipo Card con pulsanti aggiungi/elimina
+
+<Canvas of={TabStories.TestualePannelCardEditable} />

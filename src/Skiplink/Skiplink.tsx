@@ -12,18 +12,23 @@ export interface SkiplinkProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const Skiplink: FC<SkiplinkProps> = ({ ariaLabel=null, className, tag = 'div', nav=false, testId, children, ...attributes }) => {
+export const Skiplink: FC<SkiplinkProps> = ({
+  ariaLabel = null,
+  className,
+  tag = 'div',
+  nav = false,
+  testId,
+  children,
+  ...attributes
+}) => {
   const Tag = nav ? 'nav' : tag;
   const classes = classNames(className, 'skiplinks');
   if (nav) {
     return (
-      <Tag aria-label={ariaLabel} className={classes} {...attributes} data-testid={testId} >
-        <ul>
-          {children}
-        </ul>
+      <Tag aria-label={ariaLabel} className={classes} {...attributes} data-testid={testId}>
+        <ul>{children}</ul>
       </Tag>
-    )
-
+    );
   } else {
     return <Tag aria-label={ariaLabel} className={classes} {...attributes} data-testid={testId} />;
   }

@@ -15,14 +15,14 @@ export const Forward: FC<ForwardProps> = ({ className, children, testId, ...attr
     <a
       className={classes}
       onClick={(e) => {
-        e.preventDefault()
+        e.preventDefault();
         if (attributes.href) {
-          const scrollToRef = document.querySelector(attributes.href)
+          const scrollToRef = document.querySelector(attributes.href);
           if (scrollToRef) {
             scrollToRef.scrollIntoView({
               behavior: 'smooth',
               block: 'start'
-            })
+            });
           }
         }
       }}

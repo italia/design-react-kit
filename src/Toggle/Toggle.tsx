@@ -23,7 +23,7 @@ export const Toggle: FC<ToggleProps> = ({ label, testId, ...rest }) => {
     <div className='toggles' data-testid={testId}>
       <Label check for={rest.id}>
         {label}
-        <Input {...rest} type='checkbox' aria-describedby={rest.id ? rest.id + 'Description' : '' } />
+        <Input {...rest} type='checkbox' aria-describedby={rest.id ? rest.id + 'Description' : ''} />
         <span className='lever' />
       </Label>
     </div>

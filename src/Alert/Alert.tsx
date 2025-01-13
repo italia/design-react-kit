@@ -28,7 +28,6 @@ export interface AlertProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-
 export const Alert: FC<AlertProps> = ({ color = 'success', isOpen = true, fade = true, testId, ...props }) => {
   const baseProps = {
     color,

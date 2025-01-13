@@ -16,14 +16,7 @@ export interface ListProps extends HTMLAttributes<HTMLUListElement> {
   testId?: string;
 }
 
-export const List: FC<ListProps> = ({
-  className,
-  wrapperClassName,
-  tag = 'div',
-  noWrapper,
-  testId,
-  ...attributes
-}) => {
+export const List: FC<ListProps> = ({ className, wrapperClassName, tag = 'div', noWrapper, testId, ...attributes }) => {
   const Tag = tag;
   const wrapperClasses = classNames('it-list-wrapper', wrapperClassName);
   const classes = classNames(className, 'it-list');

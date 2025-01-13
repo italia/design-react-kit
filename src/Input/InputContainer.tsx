@@ -38,7 +38,6 @@ export const InputContainer: FC<InputContainerProps> = ({
   iconLeft,
   children
 }) => {
-
   if (hasButtonRight || hasIconLeft) {
     return (
       <div className={wrapperClass} data-testid={testId}>

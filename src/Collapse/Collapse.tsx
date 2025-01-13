@@ -6,7 +6,6 @@ import { CSSModule } from 'reactstrap/types/lib/utils';
 
 import { Icon } from '../Icon/Icon';
 
-
 // Copy over from reactstrap and add new ones
 export interface CollapseProps extends HTMLAttributes<HTMLElement> {
   /** Indica se il menu HeaderNav sia aperto o meno. Usato unicamente nel caso della HeaderNav, ovvero con navbar e header entrambi true */
@@ -43,7 +42,7 @@ export interface CollapseProps extends HTMLAttributes<HTMLElement> {
   /** Da utilizzare per impostare un riferimento all'elemento DOM */
   innerRef?: Ref<HTMLElement>;
   /** Testo pulsante di chiusura per screen reader */
-  closeSrText?: string,
+  closeSrText?: string;
   testId?: string;
 }
 
@@ -57,7 +56,7 @@ export const Collapse: FC<CollapseProps> = ({
   onOverlayClick,
   cssModule,
   testId,
-  closeSrText='Nascondi la navigazione',
+  closeSrText = 'Nascondi la navigazione',
   ...attributes
 }) => {
   const newCssModule = {
@@ -69,13 +68,10 @@ export const Collapse: FC<CollapseProps> = ({
       expanded: isOpen
     });
     const style = { display: isOpen ? 'block' : 'none' };
-    const overlayClasses = classNames(
-      'overlay',
-      {
-        'fade' : isOpen,
-        'show' : isOpen
-      }
-    )
+    const overlayClasses = classNames('overlay', {
+      fade: isOpen,
+      show: isOpen
+    });
     return (
       <CollapseBase
         className={classes}
@@ -88,8 +84,8 @@ export const Collapse: FC<CollapseProps> = ({
         <div className={overlayClasses} style={style} onClick={onOverlayClick}></div>
         <div className='close-div'>
           <button className='btn close-menu' type='button' onClick={onOverlayClick}>
-            <span className="visually-hidden">{closeSrText}</span>
-            <Icon color='white' icon='it-close-big'/>
+            <span className='visually-hidden'>{closeSrText}</span>
+            <Icon color='white' icon='it-close-big' />
           </button>
         </div>
         {megamenu ? <div className='menu-wrapper '>{children}</div> : <>{children}</>}
