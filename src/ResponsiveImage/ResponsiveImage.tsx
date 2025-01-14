@@ -12,26 +12,32 @@ export interface ResponsiveImageProps extends HTMLAttributes<HTMLImageElement> {
   proportioned?: boolean;
 }
 
-export const ResponsiveImage: FC<ResponsiveImageProps> = ({ alt, testId, proportioned=false, children, ...attributes }) => {
+export const ResponsiveImage: FC<ResponsiveImageProps> = ({
+  alt,
+  testId,
+  proportioned = false,
+  children,
+  ...attributes
+}) => {
   if (children) {
     if (proportioned) {
-      return(
+      return (
         <div className='img-responsive-wrapper'>
           <div className='img-responsive'>
             <figure className='img-wrapper'>
-              <img {...attributes} alt={alt}  className='figure-img img-fluid rounded' />
+              <img {...attributes} alt={alt} className='figure-img img-fluid rounded' />
               {children}
             </figure>
           </div>
         </div>
-      )
+      );
     } else {
-      return(
+      return (
         <figure className='figure img-full w-100 img-responsive-wrapper'>
-          <img {...attributes} alt={alt}  className='figure-img img-fluid rounded' />
+          <img {...attributes} alt={alt} className='figure-img img-fluid rounded' />
           {children}
         </figure>
-      )
+      );
     }
   } else {
     return (

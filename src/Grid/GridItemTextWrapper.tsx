@@ -9,7 +9,13 @@ export interface GridItemTextWrapperProps extends HTMLAttributes<HTMLSpanElement
   tag?: ElementType;
 }
 
-export const GridItemTextWrapper: FC<GridItemTextWrapperProps> = ({ className, children, testId, tag='span', ...attributes }) => {
+export const GridItemTextWrapper: FC<GridItemTextWrapperProps> = ({
+  className,
+  children,
+  testId,
+  tag = 'span',
+  ...attributes
+}) => {
   const classes = classname('it-griditem-text-wrapper', className);
   const Tag = tag;
   return (

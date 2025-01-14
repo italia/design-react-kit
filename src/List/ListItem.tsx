@@ -39,46 +39,37 @@ export const ListItem: FC<ListItemProps> & {
   children,
   ...attributes
 }) => {
-    const Tag = tag;
-    const classes = classNames(
-      className,
-      { active },
-      'list-item'
-    ),
-      classesItem = classNames(className, {
-        'it-rounded-icon': icon,
-        'avatar size-lg': avatar,
-        'it-thumb': img
-      }),
-      leftItem = icon || avatar || img;
+  const Tag = tag;
+  const classes = classNames(className, { active }, 'list-item'),
+    classesItem = classNames(className, {
+      'it-rounded-icon': icon,
+      'avatar size-lg': avatar,
+      'it-thumb': img
+    }),
+    leftItem = icon || avatar || img;
 
-    if (href) {
-      return (
-        <li className={wrapperClassName} data-testid={testId}>
-          <a href={href || '#'} {...attributes} className={classes}>
-            <div className="it-right-zone">{children}</div>
-          </a>
-        </li>
-      );
-    }
-
+  if (href) {
     return (
       <li className={wrapperClassName} data-testid={testId}>
-        <Tag
-          {...attributes}
-          className={classes}
-          href={href}
-          to={to}
-        >
-          {leftItem && <div className={classesItem}>{leftItem}</div>}
-          <div className="it-right-zone">{children}</div>
-        </Tag>
+        <a href={href || '#'} {...attributes} className={classes}>
+          <div className='it-right-zone'>{children}</div>
+        </a>
       </li>
     );
-  };
+  }
+
+  return (
+    <li className={wrapperClassName} data-testid={testId}>
+      <Tag {...attributes} className={classes} href={href} to={to}>
+        {leftItem && <div className={classesItem}>{leftItem}</div>}
+        <div className='it-right-zone'>{children}</div>
+      </Tag>
+    </li>
+  );
+};
 
 const MultipleAction: FC<ListItemProps> = ({ children }) => {
-  return <span className='it-multiple'>{children}</span>
+  return <span className='it-multiple'>{children}</span>;
 };
 
 ListItem.MultipleAction = MultipleAction;

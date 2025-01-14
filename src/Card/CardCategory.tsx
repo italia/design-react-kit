@@ -21,7 +21,18 @@ export interface CardCategoryProps extends HTMLAttributes<HTMLElement> {
   testId?: string;
 }
 
-export const CardCategory: FC<CardCategoryProps> = ({ iconName, iconTitle, date, href, onClick, testId, children, textDescription, dateDescription, ...rest }) => {
+export const CardCategory: FC<CardCategoryProps> = ({
+  iconName,
+  iconTitle,
+  date,
+  href,
+  onClick,
+  testId,
+  children,
+  textDescription,
+  dateDescription,
+  ...rest
+}) => {
   const classes = classNames({
     'category-top': date || ' ',
     'categoryicon-top': iconName
@@ -29,7 +40,7 @@ export const CardCategory: FC<CardCategoryProps> = ({ iconName, iconTitle, date,
   // Simple category link
   const categoryLink = !iconName && (
     <>
-      {textDescription && <span className="visually-hidden">{textDescription}</span>}
+      {textDescription && <span className='visually-hidden'>{textDescription}</span>}
       <a href={href} className='category' onClick={onClick}>
         {children}
       </a>
@@ -44,8 +55,10 @@ export const CardCategory: FC<CardCategoryProps> = ({ iconName, iconTitle, date,
     <div className={classes} {...rest} data-testid={testId}>
       {categoryLink}
       {categoryIcon}
-      {categoryText && textDescription && <span className="visually-hidden">{textDescription}</span>}{categoryText}
-      {dateDescription && <span className="visually-hidden">{dateDescription}</span>}{categoryDate}
+      {categoryText && textDescription && <span className='visually-hidden'>{textDescription}</span>}
+      {categoryText}
+      {dateDescription && <span className='visually-hidden'>{dateDescription}</span>}
+      {categoryDate}
     </div>
   );
 };
