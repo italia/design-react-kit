@@ -2159,211 +2159,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Avatar/Groups Overlapping S
 </div>
 `;
 
-exports[`Stories Snapshots Documentazione/Componenti/BackToTop Dark 1`] = `
-<div>
-  <div
-    class="d-flex align-items-center"
-  >
-    <a
-      aria-label="Torna su"
-      class="back-to-top dark"
-      color=""
-      id="back-to-top-btn"
-      style="padding: 0px;"
-    >
-      <svg
-        class="icon icon-secondary"
-        enable-background="new 0 0 24 24"
-        role="img"
-        style="cursor: pointer;"
-        viewBox="0 0 24 24"
-        xml:space="preserve"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
-        />
-      </svg>
-    </a>
-    <a
-      aria-label="Torna su"
-      class="back-to-top back-to-top-small dark"
-      color=""
-      id="back-to-top-btn"
-      style="padding: 0px;"
-    >
-      <svg
-        class="icon icon-secondary"
-        enable-background="new 0 0 24 24"
-        role="img"
-        style="cursor: pointer;"
-        viewBox="0 0 24 24"
-        xml:space="preserve"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
-        />
-      </svg>
-    </a>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Componenti/BackToTop DarkShadow 1`] = `
-<div>
-  <div
-    class="d-flex align-items-center"
-  >
-    <a
-      aria-label="Torna su"
-      class="back-to-top dark shadow"
-      color=""
-      id="back-to-top-btn"
-      style="padding: 0px;"
-    >
-      <svg
-        class="icon icon-secondary"
-        enable-background="new 0 0 24 24"
-        role="img"
-        style="cursor: pointer;"
-        viewBox="0 0 24 24"
-        xml:space="preserve"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
-        />
-      </svg>
-    </a>
-    <a
-      aria-label="Torna su"
-      class="back-to-top back-to-top-small dark shadow"
-      color=""
-      id="back-to-top-btn"
-      style="padding: 0px;"
-    >
-      <svg
-        class="icon icon-secondary"
-        enable-background="new 0 0 24 24"
-        role="img"
-        style="cursor: pointer;"
-        viewBox="0 0 24 24"
-        xml:space="preserve"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
-        />
-      </svg>
-    </a>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Componenti/BackToTop Esempio 1`] = `
-<div>
-  <a
-    aria-label="Torna su"
-    class="back-to-top"
-    color="primary"
-    id="back-to-top-btn"
-    style="padding: 0px;"
-  >
-    <svg
-      class="icon icon-light"
-      enable-background="new 0 0 24 24"
-      role="img"
-      style="cursor: pointer;"
-      viewBox="0 0 24 24"
-      xml:space="preserve"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
-      />
-    </svg>
-  </a>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Componenti/BackToTop Shadow 1`] = `
-<div>
-  <div
-    class="d-flex align-items-center"
-  >
-    <a
-      aria-label="Torna su"
-      class="back-to-top shadow"
-      color="primary"
-      id="back-to-top-btn"
-      style="padding: 0px;"
-    >
-      <svg
-        class="icon icon-light"
-        enable-background="new 0 0 24 24"
-        role="img"
-        style="cursor: pointer;"
-        viewBox="0 0 24 24"
-        xml:space="preserve"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
-        />
-      </svg>
-    </a>
-    <a
-      aria-label="Torna su"
-      class="back-to-top back-to-top-small shadow"
-      color="primary"
-      id="back-to-top-btn"
-      style="padding: 0px;"
-    >
-      <svg
-        class="icon icon-light"
-        enable-background="new 0 0 24 24"
-        role="img"
-        style="cursor: pointer;"
-        viewBox="0 0 24 24"
-        xml:space="preserve"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
-        />
-      </svg>
-    </a>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Componenti/BackToTop Small 1`] = `
-<div>
-  <a
-    aria-label="Torna su"
-    class="back-to-top back-to-top-small"
-    color="primary"
-    id="back-to-top-btn"
-    style="padding: 0px;"
-  >
-    <svg
-      class="icon icon-light"
-      enable-background="new 0 0 24 24"
-      role="img"
-      style="cursor: pointer;"
-      viewBox="0 0 24 24"
-      xml:space="preserve"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
-      />
-    </svg>
-  </a>
-</div>
-`;
-
 exports[`Stories Snapshots Documentazione/Componenti/Badge BordiArrotondati 1`] = `
 <div>
   <div
@@ -25790,6 +25585,219 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
       </div>
     </div>
   </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Menu di navigazione/BackToTop Dark 1`] = `
+<div>
+  <div
+    class="d-flex align-items-center"
+  >
+    <a
+      aria-label="Torna su"
+      class="back-to-top dark"
+      color=""
+      href="#"
+      id="back-to-top-btn"
+      style="padding: 0px;"
+    >
+      <svg
+        class="icon icon-secondary"
+        enable-background="new 0 0 24 24"
+        role="img"
+        style="cursor: pointer;"
+        viewBox="0 0 24 24"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
+        />
+      </svg>
+    </a>
+    <a
+      aria-label="Torna su"
+      class="back-to-top back-to-top-small dark"
+      color=""
+      href="#"
+      id="back-to-top-btn"
+      style="padding: 0px;"
+    >
+      <svg
+        class="icon icon-secondary"
+        enable-background="new 0 0 24 24"
+        role="img"
+        style="cursor: pointer;"
+        viewBox="0 0 24 24"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Menu di navigazione/BackToTop DarkShadow 1`] = `
+<div>
+  <div
+    class="d-flex align-items-center"
+  >
+    <a
+      aria-label="Torna su"
+      class="back-to-top dark shadow"
+      color=""
+      href="#"
+      id="back-to-top-btn"
+      style="padding: 0px;"
+    >
+      <svg
+        class="icon icon-secondary"
+        enable-background="new 0 0 24 24"
+        role="img"
+        style="cursor: pointer;"
+        viewBox="0 0 24 24"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
+        />
+      </svg>
+    </a>
+    <a
+      aria-label="Torna su"
+      class="back-to-top back-to-top-small dark shadow"
+      color=""
+      href="#"
+      id="back-to-top-btn"
+      style="padding: 0px;"
+    >
+      <svg
+        class="icon icon-secondary"
+        enable-background="new 0 0 24 24"
+        role="img"
+        style="cursor: pointer;"
+        viewBox="0 0 24 24"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Menu di navigazione/BackToTop Esempio 1`] = `
+<div>
+  <a
+    aria-label="Torna su"
+    class="back-to-top"
+    color="primary"
+    href="#"
+    id="back-to-top-btn"
+    style="padding: 0px;"
+  >
+    <svg
+      class="icon icon-light"
+      enable-background="new 0 0 24 24"
+      role="img"
+      style="cursor: pointer;"
+      viewBox="0 0 24 24"
+      xml:space="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
+      />
+    </svg>
+  </a>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Menu di navigazione/BackToTop Shadow 1`] = `
+<div>
+  <div
+    class="d-flex align-items-center"
+  >
+    <a
+      aria-label="Torna su"
+      class="back-to-top shadow"
+      color="primary"
+      href="#"
+      id="back-to-top-btn"
+      style="padding: 0px;"
+    >
+      <svg
+        class="icon icon-light"
+        enable-background="new 0 0 24 24"
+        role="img"
+        style="cursor: pointer;"
+        viewBox="0 0 24 24"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
+        />
+      </svg>
+    </a>
+    <a
+      aria-label="Torna su"
+      class="back-to-top back-to-top-small shadow"
+      color="primary"
+      href="#"
+      id="back-to-top-btn"
+      style="padding: 0px;"
+    >
+      <svg
+        class="icon icon-light"
+        enable-background="new 0 0 24 24"
+        role="img"
+        style="cursor: pointer;"
+        viewBox="0 0 24 24"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Menu di navigazione/BackToTop Small 1`] = `
+<div>
+  <a
+    aria-label="Torna su"
+    class="back-to-top back-to-top-small"
+    color="primary"
+    href="#"
+    id="back-to-top-btn"
+    style="padding: 0px;"
+  >
+    <svg
+      class="icon icon-light"
+      enable-background="new 0 0 24 24"
+      role="img"
+      style="cursor: pointer;"
+      viewBox="0 0 24 24"
+      xml:space="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M18.6 10.1 12 3.5l-6.6 6.6.7.7 5.4-5.3V21h1V5.5l5.4 5.3.7-.7z"
+      />
+    </svg>
+  </a>
 </div>
 `;
 

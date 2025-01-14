@@ -56,6 +56,7 @@ export const BackToTop = ({
   return (
     <a
       aria-label={ariaLabel}
+      href="#"
       className={classNames(
         className,
         'back-to-top',

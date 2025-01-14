@@ -3,7 +3,7 @@ import React from 'react';
 import { BackToTop } from '../../src';
 
 const meta: Meta<typeof BackToTop> = {
-  title: 'Documentazione/Componenti/BackToTop',
+  title: 'Documentazione/Menu di navigazione/BackToTop',
   component: BackToTop
 };
 
