@@ -23399,6 +23399,7 @@ exports[`Stories Snapshots Documentazione/Form/Input _InputAutocompleteConDatiAc
       class="autocomplete__wrapper"
     >
       <div
+        class="autocomplete__status"
         style="border: 0px; height: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 1px;"
       >
         <div
@@ -23415,11 +23416,10 @@ exports[`Stories Snapshots Documentazione/Form/Input _InputAutocompleteConDatiAc
         />
       </div>
       <input
-        aria-activedescendant="false"
         aria-autocomplete="list"
+        aria-controls="autocomplete__listbox"
         aria-describedby="autocomplete__assistiveHint"
         aria-expanded="false"
-        aria-owns="autocomplete__listbox"
         autocomplete="off"
         class="autocomplete__input autocomplete__input--default"
         id="autocomplete"
@@ -23430,6 +23430,7 @@ exports[`Stories Snapshots Documentazione/Form/Input _InputAutocompleteConDatiAc
         value=""
       />
       <ul
+        aria-labelledby="autocomplete"
         class="autocomplete__menu autocomplete__menu--inline autocomplete__menu--hidden"
         id="autocomplete__listbox"
         role="listbox"
