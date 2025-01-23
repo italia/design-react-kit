@@ -71,7 +71,7 @@
     "postversion": "echo \"You can now publish your version using 'git push --follow-tags'\""
   },
   "peerDependencies": {
-    "bootstrap-italia": "^2.12.1",
+    "bootstrap-italia": "^2.13.0",
     "react": ">=18.2.0"
   },
   "browserslist": [
