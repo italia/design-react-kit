@@ -301,6 +301,11 @@ export const Input = ({
   };
 
   if (['currency', 'percentage', 'adaptive', 'number'].includes(type)) {
+    if (containerProps.extraLabelClass) {
+      containerProps.extraLabelClass = containerProps.extraLabelClass + ' input-symbol-label';
+    } else {
+      containerProps.extraLabelClass = 'input-symbol-label';
+    }
     return (
       <InputContainer {...containerProps}>
         <div
@@ -308,8 +313,6 @@ export const Input = ({
             'input-group': true,
             'input-number': true,
             disabled: rest.disabled,
-            'input-number-percentage': type === 'percentage',
-            'input-number-currency': type === 'currency',
             'input-number-adaptive': type === 'adaptive'
           })}
           style={{ width }}
