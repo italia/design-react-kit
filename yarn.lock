@@ -3191,10 +3191,10 @@ better-opn@^3.0.2:
   dependencies:
     open "^8.0.4"
 
-bootstrap-italia@^2.13.0:
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.13.0.tgz#bec0521f2e3f8aaa56d998e012b39f788f850133"
-  integrity sha512-9hSUDPHwGJzoCDoq1q4GydiNTIJCV87NRBwIsa22jPczJINCUVdwQBDX1ZpU8+8yvVFRB0o+jWcWAQaJJgJKUw==
+bootstrap-italia@^2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.13.2.tgz#31a1242aff5675c9020c7bb19e5493c37fdf35e5"
+  integrity sha512-xp/fFmo4M6O3HF9A4TSmdAkmxUIz78R9bxqxR/5gAT87cYpCRMk9SWt4N3TiIA0sMuoEDX1+3wlX2wGAWpKhwg==
   dependencies:
     "@popperjs/core" "^2.11.6"
     "@splidejs/splide" "^3.6.12"
