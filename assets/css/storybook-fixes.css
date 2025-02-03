@@ -165,3 +165,7 @@ div[id*='componenti-bottomnav'] .bottom-nav {
   opacity: 1;
   transform: scale(1);
 }
+
+.callout-inner p {
+  margin-top: 0;
+}
