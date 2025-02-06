@@ -204,7 +204,7 @@ export const Input = ({
 
   // associate the input field with the help text
   const infoId = id ? `${id}Description` : undefined;
-  if (id) {
+  if (infoId) {
     extraAttributes['aria-describedby'] = infoId;
   }
 
