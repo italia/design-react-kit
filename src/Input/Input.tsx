@@ -203,8 +203,8 @@ export const Input = ({
   }
 
   // associate the input field with the help text
-  const infoId = id ? `${id}Description` : undefined;
-  if (id) {
+  const infoId = id && infoText ? `${id}Description` : undefined;
+  if (infoId) {
     extraAttributes['aria-describedby'] = infoId;
   }
 
@@ -296,8 +296,11 @@ export const Input = ({
     }
     const nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value')?.set;
     nativeInputValueSetter?.call(inputRef.current, `${newValue}`);
+    const ev1 = new Event('change', { bubbles: true });
     const ev2 = new Event('input', { bubbles: true });
+    inputRef.current?.dispatchEvent(ev1);
     inputRef.current?.dispatchEvent(ev2);
+    inputRef.current?.focus();
   };
 
   if (['currency', 'percentage', 'adaptive', 'number'].includes(type)) {
@@ -331,10 +334,10 @@ export const Input = ({
             ref={inputRef}
           />
           <span className='input-group-text align-buttons flex-column'>
-            <button className='input-number-add' onClick={() => clickIncrDecr(1)} type='button'>
+            <button className='input-number-add' onClick={() => clickIncrDecr(1)}>
               <span className='visually-hidden'>{incrementLabel || ''}</span>
             </button>
-            <button className='input-number-sub' onClick={() => clickIncrDecr(-1)} type='button'>
+            <button className='input-number-sub' onClick={() => clickIncrDecr(-1)}>
               <span className='visually-hidden'>{decrementLabel || ''}</span>
             </button>
           </span>
