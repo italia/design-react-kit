@@ -29,14 +29,14 @@ export interface StepperHeaderElementProps extends HTMLAttributes<HTMLLIElement>
   appendIcon?: string;
   /** Icona da mostrare alla sinistra dell'etichetta dello step */
   prependIcon?: string;
+  /** Titolo dell'icona da mostrare alla destra dell'etichetta dello step */
+  appendIconTitle?: string;
+  /** Titolo dell'icona da mostrare alla sinistra dell'etichetta dello step */
+  prependIconTitle?: string;
   /** Utilizzare questo attributo per elementi aggiuntivi da mostrare su dispositivi mobile per lo step attivo */
   stepperNumber?: ReactNode;
   /** Nasconde il bordo inferiore azzurro per lo step */
   noLine?: boolean;
-  /** @deprecated Usare `appendIcon` */
-  icon?: string;
-  /** @deprecated Usare `prependIcon` */
-  iconName?: string;
   testId?: string;
 }
 
@@ -45,8 +45,8 @@ export const StepperHeaderElement: FC<StepperHeaderElementProps> = ({
   variant,
   appendIcon,
   prependIcon,
-  icon,
-  iconName,
+  appendIconTitle,
+  prependIconTitle,
   noLine,
   stepperNumber,
   testId,
@@ -61,14 +61,12 @@ export const StepperHeaderElement: FC<StepperHeaderElementProps> = ({
   const iconClass = classNames('icon', 'steppers-success');
   const spanClass = classNames('steppers-number');
 
-  const iconToAppend = appendIcon || icon;
-  const iconToPrepend = prependIcon || iconName;
   return (
     <Tag {...attributes} className={wrapperClasses} data-testid={testId}>
-      {iconToPrepend && <Icon icon={iconToPrepend} />}
+      {prependIcon && <Icon icon={prependIcon} title={prependIconTitle} />}
       {stepperNumber && <span className={spanClass}>{stepperNumber}</span>}
       {children}
-      {iconToAppend && <Icon icon={iconToAppend} className={iconClass} />}
+      {appendIcon && <Icon icon={appendIcon} title={appendIconTitle} className={iconClass} />}
     </Tag>
   );
 };
