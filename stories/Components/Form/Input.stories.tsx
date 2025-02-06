@@ -18,7 +18,7 @@ export const EsempiDiCampiDiInput: Story = {
         <Input type='text' label='Campo di tipo testuale' id='exampleInputText' />
         <Input type='text' label='Campo di tipo testuale con descrizione' infoText='Questo campo contiene anche una descrizione' id='exampleInputTextInfo' />
         <Input type='email' label='Campo di tipo email' id='exampleInputEmail' />
-        <Input type='number' label='Campo di tipo numerico' id='exampleInputNumber' />
+        <Input type='number' label='Campo di tipo numerico' id='exampleInputNumber' incrementLabel="Aumenta il valore di 1" decrementLabel="Diminuisci il valore di 1"/>
         <Input type='tel' label='Campo di tipo telefono' id='exampleInputTel' />
       </div>
     );
