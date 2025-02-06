@@ -8705,7 +8705,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Pager JumpToPage 1`] = `
           class="mb-3"
         >
           <input
-            aria-describedby="jumpToPageDescription"
             class="form-control form-control"
             id="jumpToPage"
             maxlength="2"
@@ -10287,7 +10286,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingBase 1`] = `
       Rating
     </legend>
     <input
-      aria-describedby="star5aDescription"
       class=""
       id="star5a"
       name="ratingA"
@@ -10318,7 +10316,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingBase 1`] = `
       </span>
     </label>
     <input
-      aria-describedby="star4aDescription"
       class=""
       id="star4a"
       name="ratingA"
@@ -10349,7 +10346,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingBase 1`] = `
       </span>
     </label>
     <input
-      aria-describedby="star3aDescription"
       class=""
       id="star3a"
       name="ratingA"
@@ -10380,7 +10376,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingBase 1`] = `
       </span>
     </label>
     <input
-      aria-describedby="star2aDescription"
       class=""
       id="star2a"
       name="ratingA"
@@ -10411,7 +10406,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingBase 1`] = `
       </span>
     </label>
     <input
-      aria-describedby="star1aDescription"
       class=""
       id="star1a"
       name="ratingA"
@@ -10466,7 +10460,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingConLabel 1`] =
       su 5
     </span>
     <input
-      aria-describedby="star5bDescription"
       class=""
       id="star5b"
       name="ratingB"
@@ -10497,7 +10490,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingConLabel 1`] =
       </span>
     </label>
     <input
-      aria-describedby="star4bDescription"
       checked=""
       class=""
       id="star4b"
@@ -10529,7 +10521,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingConLabel 1`] =
       </span>
     </label>
     <input
-      aria-describedby="star3bDescription"
       class=""
       id="star3b"
       name="ratingB"
@@ -10560,7 +10551,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingConLabel 1`] =
       </span>
     </label>
     <input
-      aria-describedby="star2bDescription"
       class=""
       id="star2b"
       name="ratingB"
@@ -10591,7 +10581,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingConLabel 1`] =
       </span>
     </label>
     <input
-      aria-describedby="star1bDescription"
       class=""
       id="star1b"
       name="ratingB"
@@ -10636,7 +10625,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingReadOnly 1`] =
       Valutazione 4 stelle su 5
     </legend>
     <input
-      aria-describedby="star5cDescription"
       aria-hidden="true"
       class=""
       disabled=""
@@ -10669,7 +10657,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingReadOnly 1`] =
       </span>
     </label>
     <input
-      aria-describedby="star4cDescription"
       aria-hidden="true"
       checked=""
       class=""
@@ -10703,7 +10690,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingReadOnly 1`] =
       </span>
     </label>
     <input
-      aria-describedby="star3cDescription"
       aria-hidden="true"
       class=""
       disabled=""
@@ -10736,7 +10722,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingReadOnly 1`] =
       </span>
     </label>
     <input
-      aria-describedby="star2cDescription"
       aria-hidden="true"
       class=""
       disabled=""
@@ -10769,7 +10754,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingReadOnly 1`] =
       </span>
     </label>
     <input
-      aria-describedby="star1cDescription"
       aria-hidden="true"
       class=""
       disabled=""
@@ -22623,7 +22607,6 @@ exports[`Stories Snapshots Documentazione/Form DimensionamentoColonneBase 1`] = 
           Nome
         </label>
         <input
-          aria-describedby="formNomeDescription"
           class="form-control"
           id="formNome"
           type="text"
@@ -22643,7 +22626,6 @@ exports[`Stories Snapshots Documentazione/Form DimensionamentoColonneBase 1`] = 
           Cognome
         </label>
         <input
-          aria-describedby="formCognomeDescription"
           class="form-control"
           id="formCognome"
           type="text"
@@ -22667,7 +22649,6 @@ exports[`Stories Snapshots Documentazione/Form DimensionamentoColonneBase 1`] = 
           Città
         </label>
         <input
-          aria-describedby="CittaDescription"
           class="form-control"
           id="Citta"
           type="text"
@@ -22687,7 +22668,6 @@ exports[`Stories Snapshots Documentazione/Form DimensionamentoColonneBase 1`] = 
           Comune
         </label>
         <input
-          aria-describedby="ComuneDescription"
           class="form-control"
           id="Comune"
           type="text"
@@ -22707,7 +22687,6 @@ exports[`Stories Snapshots Documentazione/Form DimensionamentoColonneBase 1`] = 
           CAP
         </label>
         <input
-          aria-describedby="CAPDescription"
           class="form-control"
           id="CAP"
           type="text"
@@ -22738,7 +22717,6 @@ exports[`Stories Snapshots Documentazione/Form DimensionamentoColonneComplesso 1
           Nome
         </label>
         <input
-          aria-describedby="inputEmail4Description"
           class="form-control"
           id="inputEmail4"
           placeholder="inserisci il tuo indirizzo email"
@@ -22759,7 +22737,6 @@ exports[`Stories Snapshots Documentazione/Form DimensionamentoColonneComplesso 1
           Password
         </label>
         <input
-          aria-describedby="exampleInputPasswordDescription"
           class="form-control"
           id="exampleInputPassword"
           placeholder="Inserisci la tua password"
@@ -22784,7 +22761,6 @@ exports[`Stories Snapshots Documentazione/Form DimensionamentoColonneComplesso 1
           Indirizzo
         </label>
         <input
-          aria-describedby="inputAddressDescription"
           class="form-control"
           id="inputAddress"
           placeholder="Via Roma, 1"
@@ -22809,7 +22785,6 @@ exports[`Stories Snapshots Documentazione/Form DimensionamentoColonneComplesso 1
           Comune
         </label>
         <input
-          aria-describedby="inputCityDescription"
           class="form-control"
           id="inputCity"
           type="text"
@@ -22829,7 +22804,6 @@ exports[`Stories Snapshots Documentazione/Form DimensionamentoColonneComplesso 1
           CAP
         </label>
         <input
-          aria-describedby="inputCAPDescription"
           class="form-control"
           id="inputCAP"
           type="text"
@@ -22959,7 +22933,6 @@ exports[`Stories Snapshots Documentazione/Form FormDisabilitato 1`] = `
             Input
           </label>
           <input
-            aria-describedby="disabledTextInputDescription"
             class="form-control"
             disabled=""
             id="disabledTextInput"
@@ -23018,7 +22991,6 @@ exports[`Stories Snapshots Documentazione/Form FormDisabilitato 1`] = `
         class="form-check"
       >
         <input
-          aria-describedby="checkbox1Description"
           class="form-control"
           disabled=""
           id="checkbox1"
@@ -23056,7 +23028,6 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxBase 1`] = `
         class="form-check"
       >
         <input
-          aria-describedby="checkbox1Description"
           class="form-control"
           id="checkbox1"
           type="checkbox"
@@ -23088,7 +23059,6 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxDisabilitato 1`]
           class="form-check"
         >
           <input
-            aria-describedby="disabled-checkbox1Description"
             class="form-control"
             disabled=""
             id="disabled-checkbox1"
@@ -23106,7 +23076,6 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxDisabilitato 1`]
           class="form-check"
         >
           <input
-            aria-describedby="disabled-checkbox2Description"
             checked=""
             class="form-control"
             disabled=""
@@ -23147,7 +23116,6 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                aria-describedby="group-checkbox1Description"
                 checked=""
                 class="form-control"
                 id="group-checkbox1"
@@ -23165,7 +23133,6 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                aria-describedby="group-checkbox2Description"
                 class="form-control"
                 id="group-checkbox2"
                 type="checkbox"
@@ -23182,7 +23149,6 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                aria-describedby="group-checkbox3Description"
                 class="form-control"
                 disabled=""
                 id="group-checkbox3"
@@ -23216,7 +23182,6 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                aria-describedby="group-checkbox4Description"
                 checked=""
                 class="form-control"
                 id="group-checkbox4"
@@ -23240,7 +23205,6 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                aria-describedby="group-checkbox5Description"
                 class="form-control"
                 id="group-checkbox5"
                 type="checkbox"
@@ -23263,7 +23227,6 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                aria-describedby="group-checkbox6Description"
                 class="form-control"
                 disabled=""
                 id="group-checkbox6"
@@ -23305,7 +23268,6 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxInline 1`] = `
           class="form-check form-check-inline"
         >
           <input
-            aria-describedby="inline-checkbox1Description"
             class="form-control"
             id="inline-checkbox1"
             type="checkbox"
@@ -23322,7 +23284,6 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxInline 1`] = `
           class="form-check form-check-inline"
         >
           <input
-            aria-describedby="inline-checkbox2Description"
             checked=""
             class="form-control"
             id="inline-checkbox2"
@@ -23362,7 +23323,6 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxMixedButton 1`] 
             for="checkbox-semi-checked"
           />
           <input
-            aria-describedby="checkbox-semi-checkedDescription"
             class="semi-checked form-control"
             id="checkbox-semi-checked"
             indeterminate="true"
@@ -23504,7 +23464,6 @@ exports[`Stories Snapshots Documentazione/Form/Input Disabilitato 1`] = `
       Contenuto disabilitato
     </label>
     <input
-      aria-describedby="exampleDisabledDescription"
       class="form-control"
       disabled=""
       id="exampleDisabled"
@@ -23531,7 +23490,6 @@ exports[`Stories Snapshots Documentazione/Form/Input EsempiDiCampiDiInput 1`] = 
         Campo di tipo testuale
       </label>
       <input
-        aria-describedby="exampleInputTextDescription"
         class="form-control"
         id="exampleInputText"
         type="text"
@@ -23546,12 +23504,37 @@ exports[`Stories Snapshots Documentazione/Form/Input EsempiDiCampiDiInput 1`] = 
     >
       <label
         class=" "
+        for="exampleInputTextInfo"
+      >
+        Campo di tipo testuale con descrizione
+      </label>
+      <input
+        aria-describedby="exampleInputTextInfoDescription"
+        class="form-control"
+        id="exampleInputTextInfo"
+        type="text"
+        value=""
+      />
+      <small
+        class="form-text"
+        id="exampleInputTextInfoDescription"
+      >
+        Questo campo contiene anche una descrizione
+      </small>
+      <div
+        class="form-text"
+      />
+    </div>
+    <div
+      class="form-group"
+    >
+      <label
+        class=" "
         for="exampleInputEmail"
       >
         Campo di tipo email
       </label>
       <input
-        aria-describedby="exampleInputEmailDescription"
         class="form-control"
         id="exampleInputEmail"
         type="email"
@@ -23574,7 +23557,6 @@ exports[`Stories Snapshots Documentazione/Form/Input EsempiDiCampiDiInput 1`] = 
         class="input-group input-number"
       >
         <input
-          aria-describedby="exampleInputNumberDescription"
           class="form-control"
           id="exampleInputNumber"
           type="number"
@@ -23585,19 +23567,21 @@ exports[`Stories Snapshots Documentazione/Form/Input EsempiDiCampiDiInput 1`] = 
         >
           <button
             class="input-number-add"
-            type="button"
           >
             <span
               class="visually-hidden"
-            />
+            >
+              Aumenta il valore di 1
+            </span>
           </button>
           <button
             class="input-number-sub"
-            type="button"
           >
             <span
               class="visually-hidden"
-            />
+            >
+              Diminuisci il valore di 1
+            </span>
           </button>
         </span>
       </div>
@@ -23615,7 +23599,6 @@ exports[`Stories Snapshots Documentazione/Form/Input EsempiDiCampiDiInput 1`] = 
         Campo di tipo telefono
       </label>
       <input
-        aria-describedby="exampleInputTelDescription"
         class="form-control"
         id="exampleInputTel"
         type="tel"
@@ -23661,7 +23644,6 @@ exports[`Stories Snapshots Documentazione/Form/Input InputConIconaOBottoni 1`] =
         Campo di tipo testuale
       </label>
       <input
-        aria-describedby="exampleInputIconDescription"
         class="form-control"
         id="exampleInputIcon"
         type="text"
@@ -23702,7 +23684,6 @@ exports[`Stories Snapshots Documentazione/Form/Input InputConIconaOBottoni 1`] =
         Con etichetta e placeholder
       </label>
       <input
-        aria-describedby="exampleInputIconDangerDescription"
         class="form-control"
         id="exampleInputIconDanger"
         placeholder="Lorem Ipsum"
@@ -23744,7 +23725,6 @@ exports[`Stories Snapshots Documentazione/Form/Input InputConIconaOBottoni 1`] =
         Con etichetta e bottone di tipo primary
       </label>
       <input
-        aria-describedby="exampleInputButtonDescription"
         class="form-control"
         id="exampleInputButton"
         type="text"
@@ -23872,7 +23852,6 @@ exports[`Stories Snapshots Documentazione/Form/Input Readonly 1`] = `
       Contenuto in sola lettura
     </label>
     <input
-      aria-describedby="examplereadOnlyDescription"
       class="form-control"
       id="examplereadOnly"
       readonly=""
@@ -23898,7 +23877,6 @@ exports[`Stories Snapshots Documentazione/Form/Input ReadonlyNormalizzato 1`] = 
       Contenuto in sola lettura
     </label>
     <input
-      aria-describedby="exampleNormalizedDescription"
       class="form-control-plaintext"
       id="exampleNormalized"
       readonly=""
@@ -23925,7 +23903,6 @@ exports[`Stories Snapshots Documentazione/Form/Input UtilizzoDiPlaceholderELabel
         Etichetta di esempio
       </label>
       <input
-        aria-describedby="exampleLabelDescription"
         class="form-control"
         id="exampleLabel"
         type="text"
@@ -23945,7 +23922,6 @@ exports[`Stories Snapshots Documentazione/Form/Input UtilizzoDiPlaceholderELabel
         Etichetta di esempio
       </label>
       <input
-        aria-describedby="examplePlaceholderDescription"
         class="form-control"
         id="examplePlaceholder"
         placeholder="Testo di esempio"
@@ -23993,7 +23969,6 @@ exports[`Stories Snapshots Documentazione/Form/Input UtilizzoDiPlaceholderELabel
         Etichetta di esempio
       </label>
       <input
-        aria-describedby="examplevalidationTextDescription"
         class="is-invalid form-control"
         id="examplevalidationText"
         placeholder="Testo di esempio"
@@ -24028,7 +24003,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDimens
         class="input-group input-number"
       >
         <input
-          aria-describedby="example-w100Description"
           class="form-control"
           id="example-w100"
           type="number"
@@ -24039,7 +24013,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDimens
         >
           <button
             class="input-number-add"
-            type="button"
           >
             <span
               class="visually-hidden"
@@ -24049,7 +24022,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDimens
           </button>
           <button
             class="input-number-sub"
-            type="button"
           >
             <span
               class="visually-hidden"
@@ -24080,7 +24052,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDimens
         class="input-group input-number"
       >
         <input
-          aria-describedby="example-w50Description"
           class="form-control"
           id="example-w50"
           type="number"
@@ -24091,7 +24062,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDimens
         >
           <button
             class="input-number-add"
-            type="button"
           >
             <span
               class="visually-hidden"
@@ -24101,7 +24071,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDimens
           </button>
           <button
             class="input-number-sub"
-            type="button"
           >
             <span
               class="visually-hidden"
@@ -24145,7 +24114,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDisabi
       >
         <button
           class="input-number-add"
-          type="button"
         >
           <span
             class="visually-hidden"
@@ -24153,7 +24121,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDisabi
         </button>
         <button
           class="input-number-sub"
-          type="button"
         >
           <span
             class="visually-hidden"
@@ -24188,7 +24155,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoPercen
         %
       </span>
       <input
-        aria-describedby="example-percentageDescription"
         class="form-control"
         id="example-percentage"
         max="100"
@@ -24201,7 +24167,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoPercen
       >
         <button
           class="input-number-add"
-          type="button"
         >
           <span
             class="visually-hidden"
@@ -24211,7 +24176,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoPercen
         </button>
         <button
           class="input-number-sub"
-          type="button"
         >
           <span
             class="visually-hidden"
@@ -24244,7 +24208,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoRidime
       style="width: calc(70px + 3ch);"
     >
       <input
-        aria-describedby="example-adaptiveDescription"
         class="form-control"
         id="example-adaptive"
         max="99999999999"
@@ -24257,7 +24220,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoRidime
       >
         <button
           class="input-number-add"
-          type="button"
         >
           <span
             class="visually-hidden"
@@ -24267,7 +24229,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoRidime
         </button>
         <button
           class="input-number-sub"
-          type="button"
         >
           <span
             class="visually-hidden"
@@ -24299,7 +24260,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoSteps 
       class="input-group input-number"
     >
       <input
-        aria-describedby="example-stepsDescription"
         class="form-control"
         id="example-steps"
         max="15000"
@@ -24313,7 +24273,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoSteps 
       >
         <button
           class="input-number-add"
-          type="button"
         >
           <span
             class="visually-hidden"
@@ -24323,7 +24282,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoSteps 
         </button>
         <button
           class="input-number-sub"
-          type="button"
         >
           <span
             class="visually-hidden"
@@ -24360,7 +24318,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoValuta
         €
       </span>
       <input
-        aria-describedby="example-currencyDescription"
         class="form-control"
         id="example-currency"
         max="100"
@@ -24374,7 +24331,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoValuta
       >
         <button
           class="input-number-add"
-          type="button"
         >
           <span
             class="visually-hidden"
@@ -24384,7 +24340,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoValuta
         </button>
         <button
           class="input-number-sub"
-          type="button"
         >
           <span
             class="visually-hidden"
@@ -24414,7 +24369,6 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioBase 1`] = `
         class="form-check"
       >
         <input
-          aria-describedby="radio1Description"
           checked=""
           class="form-control"
           id="radio1"
@@ -24433,7 +24387,6 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioBase 1`] = `
         class="form-check"
       >
         <input
-          aria-describedby="radio2Description"
           class="form-control"
           id="radio2"
           name="gruppo1"
@@ -24466,7 +24419,6 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioDisabilitato 1`] = `
           class="form-check"
         >
           <input
-            aria-describedby="radio5Description"
             checked=""
             class="form-control"
             disabled=""
@@ -24486,7 +24438,6 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioDisabilitato 1`] = `
           class="form-check"
         >
           <input
-            aria-describedby="radio6Description"
             class="form-control"
             disabled=""
             id="radio6"
@@ -24527,7 +24478,6 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                aria-describedby="radio7Description"
                 checked=""
                 class="form-control"
                 id="radio7"
@@ -24546,7 +24496,6 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                aria-describedby="radio8Description"
                 class="form-control"
                 id="radio8"
                 name="group1"
@@ -24564,7 +24513,6 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                aria-describedby="radio9Description"
                 class="form-control"
                 disabled=""
                 id="radio9"
@@ -24599,7 +24547,6 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                aria-describedby="radio10Description"
                 checked=""
                 class="form-control"
                 id="radio10"
@@ -24624,7 +24571,6 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                aria-describedby="radio11Description"
                 class="form-control"
                 id="radio11"
                 name="group2"
@@ -24648,7 +24594,6 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                aria-describedby="radio12Description"
                 class="form-control"
                 disabled=""
                 id="radio12"
@@ -24691,7 +24636,6 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioInline 1`] = `
           class="form-check form-check-inline"
         >
           <input
-            aria-describedby="radio3Description"
             checked=""
             class="form-control"
             id="radio3"
@@ -24710,7 +24654,6 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioInline 1`] = `
           class="form-check form-check-inline"
         >
           <input
-            aria-describedby="radio4Description"
             class="form-control"
             id="radio4"
             name="gruppo1"
@@ -25274,7 +25217,6 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             Nome
           </label>
           <input
-            aria-describedby="completeValidation-nameDescription"
             class="just-validate-success-field form-control"
             id="completeValidation-name"
             type="text"
@@ -25300,7 +25242,6 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             Cognome
           </label>
           <input
-            aria-describedby="completeValidation-surnameDescription"
             class="just-validate-success-field form-control"
             id="completeValidation-surname"
             type="text"
@@ -25326,7 +25267,6 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             Username
           </label>
           <input
-            aria-describedby="completeValidation-usernameDescription"
             class="is-invalid form-control"
             id="completeValidation-username"
             type="text"
@@ -25355,7 +25295,6 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             class="input-group input-number"
           >
             <input
-              aria-describedby="completeValidation-ageDescription"
               class="just-validate-success-field form-control"
               id="completeValidation-age"
               type="number"
@@ -25366,7 +25305,6 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             >
               <button
                 class="input-number-add"
-                type="button"
               >
                 <span
                   class="visually-hidden"
@@ -25374,7 +25312,6 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
               </button>
               <button
                 class="input-number-sub"
-                type="button"
               >
                 <span
                   class="visually-hidden"
@@ -25406,7 +25343,6 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             Date picker
           </label>
           <input
-            aria-describedby="completeValidation-dateDescription"
             class="is-invalid form-control"
             id="completeValidation-date"
             type="date"
@@ -25432,7 +25368,6 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             Time picker
           </label>
           <input
-            aria-describedby="completeValidation-timeDescription"
             class="is-invalid form-control"
             id="completeValidation-time"
             type="time"
@@ -25462,7 +25397,6 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             Città
           </label>
           <input
-            aria-describedby="completeValidation-cityDescription"
             class="is-invalid form-control"
             id="completeValidation-city"
             type="text"
@@ -25488,7 +25422,6 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             Provincia
           </label>
           <input
-            aria-describedby="completeValidation-provinceDescription"
             class="is-invalid form-control"
             id="completeValidation-province"
             type="text"
@@ -25514,7 +25447,6 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             CAP (5 cifre)
           </label>
           <input
-            aria-describedby="completeValidation-capDescription"
             class="is-invalid form-control"
             id="completeValidation-cap"
             type="text"
@@ -25538,7 +25470,6 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
           class="form-check"
         >
           <input
-            aria-describedby="termsAndConditionsDescription"
             class="is-invalid form-control"
             id="termsAndConditions"
             type="checkbox"
@@ -26770,7 +26701,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Footer FooterCompa
                     for="input-newsletter"
                   />
                   <input
-                    aria-describedby="input-newsletterDescription"
                     class="form-control"
                     id="input-newsletter"
                     name="input-newsletter"
@@ -27401,7 +27331,6 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Footer FooterCompl
                     for="input-newsletter"
                   />
                   <input
-                    aria-describedby="input-newsletterDescription"
                     class="form-control"
                     id="input-newsletter"
                     name="input-newsletter"
@@ -37536,7 +37465,6 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             class="form-check-group form-check"
           >
             <input
-              aria-describedby="checkbox1Description"
               checked=""
               class="form-control"
               id="checkbox1"
@@ -37560,7 +37488,6 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             class="form-check-group form-check"
           >
             <input
-              aria-describedby="checkbox2Description"
               class="form-control"
               id="checkbox2"
               type="checkbox"
@@ -37583,7 +37510,6 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             class="form-check-group form-check"
           >
             <input
-              aria-describedby="checkbox3Description"
               class="form-control"
               disabled=""
               id="checkbox3"
