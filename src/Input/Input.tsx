@@ -296,8 +296,11 @@ export const Input = ({
     }
     const nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value')?.set;
     nativeInputValueSetter?.call(inputRef.current, `${newValue}`);
+    const ev1 = new Event('change', { bubbles: true });
     const ev2 = new Event('input', { bubbles: true });
+    inputRef.current?.dispatchEvent(ev1);
     inputRef.current?.dispatchEvent(ev2);
+    inputRef.current?.focus();
   };
 
   if (['currency', 'percentage', 'adaptive', 'number'].includes(type)) {
