@@ -16,6 +16,7 @@ export const EsempiDiCampiDiInput: Story = {
     return (
       <div>
         <Input type='text' label='Campo di tipo testuale' id='exampleInputText' />
+        <Input type='text' label='Campo di tipo testuale con descrizione' infoText='Questo campo contiene anche una descrizione' id='exampleInputTextInfo' />
         <Input type='email' label='Campo di tipo email' id='exampleInputEmail' />
         <Input type='number' label='Campo di tipo numerico' id='exampleInputNumber' />
         <Input type='tel' label='Campo di tipo telefono' id='exampleInputTel' />

@@ -203,7 +203,7 @@ export const Input = ({
   }
 
   // associate the input field with the help text
-  const infoId = id ? `${id}Description` : undefined;
+  const infoId = id && infoText ? `${id}Description` : undefined;
   if (infoId) {
     extraAttributes['aria-describedby'] = infoId;
   }
