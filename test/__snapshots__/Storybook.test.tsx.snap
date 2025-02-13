@@ -22817,9 +22817,6 @@ exports[`Stories Snapshots Documentazione/Form FormDisabilitato 1`] = `
       aria-label="Form disabilitato"
       disabled=""
     >
-      <legend>
-        Esempio di form disabilitato
-      </legend>
       <div
         class="form-group"
       >
@@ -23448,7 +23445,7 @@ exports[`Stories Snapshots Documentazione/Form/Input EsempiDiCampiDiInput 1`] = 
       class="form-group"
     >
       <label
-        class=" input-number-label input-symbol-label"
+        class=" input-number-label"
         for="exampleInputNumber"
       >
         Campo di tipo numerico
@@ -23891,7 +23888,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDimens
       class="form-group"
     >
       <label
-        class="active input-number-label input-symbol-label"
+        class="active input-number-label"
         for="example-w100"
       >
         Input Number inserito in una colonna a tutta larghezza
@@ -23940,7 +23937,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDimens
       class="form-group"
     >
       <label
-        class="active input-number-label input-symbol-label"
+        class="active input-number-label"
         for="example-w50"
       >
         Input Number inserito in una colonna di larghezza 50%
@@ -23991,7 +23988,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDisabi
     class="form-group"
   >
     <label
-      class="active input-number-label input-symbol-label"
+      class="active input-number-label"
     >
       Disabled
     </label>
@@ -24095,7 +24092,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoRidime
     class="form-group"
   >
     <label
-      class="active input-number-label input-symbol-label"
+      class="active input-number-label"
       for="example-adaptive"
     >
       Ridimensionamento
@@ -24148,7 +24145,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoSteps 
     class="form-group"
   >
     <label
-      class="active input-number-label input-symbol-label"
+      class="active input-number-label"
       for="example-steps"
     >
       Min, Max & Step
@@ -25183,7 +25180,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
           class="form-group"
         >
           <label
-            class="active input-number-label input-symbol-label"
+            class="active input-number-label"
             for="completeValidation-age"
           >
             Età (minimo 18 anni)
