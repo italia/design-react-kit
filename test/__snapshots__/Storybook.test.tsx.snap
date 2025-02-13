@@ -22891,7 +22891,7 @@ exports[`Stories Snapshots Documentazione/Form FormDisabilitato 1`] = `
         class="form-check"
       >
         <input
-          class="form-control"
+          class=""
           disabled=""
           id="checkbox1"
           type="checkbox"
@@ -22928,7 +22928,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxBase 1`] = `
         class="form-check"
       >
         <input
-          class="form-control"
+          class=""
           id="checkbox1"
           type="checkbox"
           value=""
@@ -22959,7 +22959,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxDisabilitato 1`]
           class="form-check"
         >
           <input
-            class="form-control"
+            class=""
             disabled=""
             id="disabled-checkbox1"
             type="checkbox"
@@ -22977,7 +22977,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxDisabilitato 1`]
         >
           <input
             checked=""
-            class="form-control"
+            class=""
             disabled=""
             id="disabled-checkbox2"
             type="checkbox"
@@ -23017,7 +23017,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
             >
               <input
                 checked=""
-                class="form-control"
+                class=""
                 id="group-checkbox1"
                 type="checkbox"
                 value=""
@@ -23033,7 +23033,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                class="form-control"
+                class=""
                 id="group-checkbox2"
                 type="checkbox"
                 value=""
@@ -23049,7 +23049,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                class="form-control"
+                class=""
                 disabled=""
                 id="group-checkbox3"
                 type="checkbox"
@@ -23083,7 +23083,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
             >
               <input
                 checked=""
-                class="form-control"
+                class=""
                 id="group-checkbox4"
                 type="checkbox"
                 value=""
@@ -23105,7 +23105,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                class="form-control"
+                class=""
                 id="group-checkbox5"
                 type="checkbox"
                 value=""
@@ -23127,7 +23127,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                class="form-control"
+                class=""
                 disabled=""
                 id="group-checkbox6"
                 type="checkbox"
@@ -23168,7 +23168,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxInline 1`] = `
           class="form-check form-check-inline"
         >
           <input
-            class="form-control"
+            class=""
             id="inline-checkbox1"
             type="checkbox"
             value=""
@@ -23185,7 +23185,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxInline 1`] = `
         >
           <input
             checked=""
-            class="form-control"
+            class=""
             id="inline-checkbox2"
             type="checkbox"
             value=""
@@ -23223,7 +23223,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxMixedButton 1`] 
             for="checkbox-semi-checked"
           />
           <input
-            class="semi-checked form-control"
+            class="semi-checked"
             id="checkbox-semi-checked"
             indeterminate="true"
             type="checkbox"
@@ -24267,7 +24267,7 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioBase 1`] = `
       >
         <input
           checked=""
-          class="form-control"
+          class=""
           id="radio1"
           name="gruppo1"
           type="radio"
@@ -24284,7 +24284,7 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioBase 1`] = `
         class="form-check"
       >
         <input
-          class="form-control"
+          class=""
           id="radio2"
           name="gruppo1"
           type="radio"
@@ -24317,7 +24317,7 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioDisabilitato 1`] = `
         >
           <input
             checked=""
-            class="form-control"
+            class=""
             disabled=""
             id="radio5"
             name="gruppo1"
@@ -24335,7 +24335,7 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioDisabilitato 1`] = `
           class="form-check"
         >
           <input
-            class="form-control"
+            class=""
             disabled=""
             id="radio6"
             name="gruppo1"
@@ -24376,7 +24376,7 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
             >
               <input
                 checked=""
-                class="form-control"
+                class=""
                 id="radio7"
                 name="group1"
                 type="radio"
@@ -24393,7 +24393,7 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                class="form-control"
+                class=""
                 id="radio8"
                 name="group1"
                 type="radio"
@@ -24410,7 +24410,7 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                class="form-control"
+                class=""
                 disabled=""
                 id="radio9"
                 name="group1"
@@ -24445,7 +24445,7 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
             >
               <input
                 checked=""
-                class="form-control"
+                class=""
                 id="radio10"
                 name="group2"
                 type="radio"
@@ -24468,7 +24468,7 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                class="form-control"
+                class=""
                 id="radio11"
                 name="group2"
                 type="radio"
@@ -24491,7 +24491,7 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioGruppi 1`] = `
               class="form-check-group form-check"
             >
               <input
-                class="form-control"
+                class=""
                 disabled=""
                 id="radio12"
                 name="group2"
@@ -24534,7 +24534,7 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioInline 1`] = `
         >
           <input
             checked=""
-            class="form-control"
+            class=""
             id="radio3"
             name="gruppo1"
             type="radio"
@@ -24551,7 +24551,7 @@ exports[`Stories Snapshots Documentazione/Form/Radio RadioInline 1`] = `
           class="form-check form-check-inline"
         >
           <input
-            class="form-control"
+            class=""
             id="radio4"
             name="gruppo1"
             type="radio"
@@ -25367,7 +25367,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
           class="form-check"
         >
           <input
-            class="is-invalid form-control"
+            class="is-invalid"
             id="termsAndConditions"
             type="checkbox"
             value=""
@@ -37398,7 +37398,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
           >
             <input
               checked=""
-              class="form-control"
+              class=""
               id="checkbox1"
               type="checkbox"
               value=""
@@ -37420,7 +37420,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             class="form-check-group form-check"
           >
             <input
-              class="form-control"
+              class=""
               id="checkbox2"
               type="checkbox"
               value=""
@@ -37442,7 +37442,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             class="form-check-group form-check"
           >
             <input
-              class="form-control"
+              class=""
               disabled=""
               id="checkbox3"
               type="checkbox"
