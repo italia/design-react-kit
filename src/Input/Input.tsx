@@ -299,10 +299,8 @@ export const Input = ({
   };
 
   if (['currency', 'percentage', 'adaptive', 'number'].includes(type)) {
-    if (containerProps.extraLabelClass) {
+    if (containerProps.extraLabelClass && ['currency', 'percentage'].includes(type)) {
       containerProps.extraLabelClass = containerProps.extraLabelClass + ' input-symbol-label';
-    } else {
-      containerProps.extraLabelClass = 'input-symbol-label';
     }
     return (
       <InputContainer {...containerProps}>
