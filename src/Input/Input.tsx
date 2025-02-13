@@ -77,8 +77,6 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   innerRef?: Ref<HTMLInputElement>;
   /** Utilizzare per mostrare testo statico non modificabile. */
   plaintext?: boolean;
-  /** Utilizzare per mostrare un elemento addon a fianco (prima o dopo) il campo input all'interno del componente */
-  addon?: boolean;
   /** Utilizzare per mostrare un elemento un simbolo attivando la proprietà addon nel campo input all'interno del componente */
   addonText?: string;
   /** Oggetto contenente la nuova mappatura per le classi CSS. */
@@ -118,7 +116,6 @@ export const Input = ({
   cssModule,
   type = 'text',
   tag,
-  addon,
   addonText,
   static: staticInput,
   plaintext,
@@ -173,13 +170,11 @@ export const Input = ({
   let { bsSize, valid, ...rest } = attributes;
 
   const Tag = getTag({ tag, plaintext, staticInput, type });
-  addon = addonText != null ? true : addon;
   const formControlClass = getFormControlClass(
     {
       plaintext,
       staticInput,
       type,
-      addon,
       normalized
     },
     cssModule
