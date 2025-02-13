@@ -1,3 +1,13 @@
+## [5.6.1](https://github.com/italia/design-react-kit/compare/v5.6.0...v5.6.1) (2025-02-13)
+
+
+### Bug Fixes
+
+* disabled checkbox and radio ([aae38ea](https://github.com/italia/design-react-kit/commit/aae38eac8c1f2388a7e1dcf6d12920ebc6f71dcb))
+* symbol label class ([86d01d8](https://github.com/italia/design-react-kit/commit/86d01d809a8c72b9f7e5eaf7071a9116f9f7eb35))
+
+
+
 # [5.6.0](https://github.com/italia/design-react-kit/compare/v5.5.1...v5.6.0) (2025-02-11)
 
 
