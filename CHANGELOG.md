@@ -1,3 +1,31 @@
+## [5.6.1](https://github.com/italia/design-react-kit/compare/v5.6.0...v5.6.1) (2025-02-13)
+
+
+### Bug Fixes
+
+* disabled checkbox and radio ([aae38ea](https://github.com/italia/design-react-kit/commit/aae38eac8c1f2388a7e1dcf6d12920ebc6f71dcb))
+* symbol label class ([86d01d8](https://github.com/italia/design-react-kit/commit/86d01d809a8c72b9f7e5eaf7071a9116f9f7eb35))
+
+
+
+# [5.6.0](https://github.com/italia/design-react-kit/compare/v5.5.1...v5.6.0) (2025-02-11)
+
+
+### Bug Fixes
+
+* **a11y:** icons ([0408075](https://github.com/italia/design-react-kit/commit/0408075afbdb5a2a93a0e7ca7eae89bd97ac9255))
+* **a11y:** input aria describedby ([396c752](https://github.com/italia/design-react-kit/commit/396c7527560cc0a08c3741cdd2b398b2a8ef8293))
+* back to top is now focusable ([b87db3f](https://github.com/italia/design-react-kit/commit/b87db3f05b45add57f269f198523efcf13652eb3))
+* new label for percentage and currency inputs ([61a8b34](https://github.com/italia/design-react-kit/commit/61a8b340264791575b5683509d62c22ef74a2c32))
+
+
+### Features
+
+* add icons title for steppers ([fff4263](https://github.com/italia/design-react-kit/commit/fff426363197a52b9eba22141cff05a4e65b5b46))
+* new tab component ([b5b9c85](https://github.com/italia/design-react-kit/commit/b5b9c85eda6c3c0ee5ee39a5392dd0f57bca4a6e))
+
+
+
 ## [5.5.1](https://github.com/italia/design-react-kit/compare/v5.5.0...v5.5.1) (2025-01-09)
 
 

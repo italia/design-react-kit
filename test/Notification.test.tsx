@@ -186,25 +186,31 @@ describe('Notifications', () => {
     });
 
     it('should render a custom icon when passed via options', async () => {
-      render(<NotificationManager duration={500} />);
+      const {container} = render(<NotificationManager duration={500} />);
 
       act(() => {
         notify('coucou1', 'Notification body', { icon: 'it-tool' });
       });
 
-      // will throw if no matches exist
-      await screen.findAllByRole('img');
+      await screen.findAllByText(/coucou1/, {
+        selector: 'h5'
+      });
+
+      await expect(container.querySelectorAll('.icon').length).toBe(1);
     });
 
     it('should render a custom icon when passed via options', async () => {
-      render(<NotificationManager duration={500} />);
+      const {container} = render(<NotificationManager duration={500} />);
 
       act(() => {
         notify('coucou1', 'Notification body', { state: 'success' });
       });
 
-      // together with the state an icon should be assigned
-      await screen.findAllByRole('img');
+      await screen.findAllByText(/coucou1/, {
+        selector: 'h5'
+      });
+
+      await expect(container.querySelectorAll('.icon').length).toBe(1);
     });
 
     it('should ignore an invalid state', async () => {
