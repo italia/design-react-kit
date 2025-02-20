@@ -5,6 +5,8 @@ import * as glob from 'glob';
 import path from 'path';
 import './__mocks__/IntersectionObserverMock';
 
+console.log(document.scrollingElement);
+
 type StoryFile = {
   default: Meta;
   [name: string]: StoryFn | Meta;

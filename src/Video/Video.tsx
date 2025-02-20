@@ -23,7 +23,7 @@ export const Video: FC<VideoProps> = ({ label, testId }) => {
   let vpInstance: VideoPlayer;
   useEffect(() => {
     const el = document.querySelector('video');
-    if (el && VideoPlayer) {
+    if (el) {
       vpInstance = new VideoPlayer(el);
       setTimeout(() => {
         console.log(vpInstance.player.log); // Con .player puoi usare play(), stop() ecc ..
@@ -42,7 +42,6 @@ export const Video: FC<VideoProps> = ({ label, testId }) => {
             <button
               className='accordion-button collapsed'
               type='button'
-              data-bs-toggle='collapse'
               data-bs-target='#transcription1'
               aria-expanded='true'
               aria-controls='transcription'

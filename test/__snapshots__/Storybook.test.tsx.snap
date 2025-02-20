@@ -14,7 +14,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion _Accordion 1`] = 
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Accordion Group Item #1
@@ -39,7 +38,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion _Accordion 1`] = 
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Accordion Group Item #2
@@ -64,7 +62,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion _Accordion 1`] = 
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Accordion Group Item #3
@@ -98,7 +95,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion AccordionAnnidati
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #1
@@ -122,7 +118,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion AccordionAnnidati
                 <button
                   aria-expanded="false"
                   class="accordion-button collapsed"
-                  data-bs-toggle="collapse"
                   type="button"
                 >
                   Elemento Accordion annidato #1
@@ -147,7 +142,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion AccordionAnnidati
                 <button
                   aria-expanded="false"
                   class="accordion-button collapsed"
-                  data-bs-toggle="collapse"
                   type="button"
                 >
                   Elemento Accordion annidato #2
@@ -172,7 +166,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion AccordionAnnidati
                 <button
                   aria-expanded="false"
                   class="accordion-button collapsed"
-                  data-bs-toggle="collapse"
                   type="button"
                 >
                   Elemento Accordion annidato #3
@@ -198,7 +191,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion AccordionAnnidati
       <button
         aria-expanded="false"
         class="accordion-button collapsed"
-        data-bs-toggle="collapse"
         type="button"
       >
         Elemento Accordion #2
@@ -219,7 +211,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion AccordionAnnidati
       <button
         aria-expanded="false"
         class="accordion-button collapsed"
-        data-bs-toggle="collapse"
         type="button"
       >
         Elemento Accordion #3
@@ -252,7 +243,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion GruppiDiElementiR
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Richiudibile #1
@@ -277,7 +267,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion GruppiDiElementiR
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Richiudibile #2
@@ -302,7 +291,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion GruppiDiElementiR
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Richiudibile #3
@@ -336,7 +324,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion HeaderAttivi 1`] 
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #1
@@ -361,7 +348,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion HeaderAttivi 1`] 
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #2
@@ -386,7 +372,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion HeaderAttivi 1`] 
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #3
@@ -420,7 +405,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion HeaderHover 1`] =
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #1
@@ -445,7 +429,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion HeaderHover 1`] =
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #2
@@ -470,7 +453,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion HeaderHover 1`] =
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #3
@@ -504,7 +486,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion IconaSinistra 1`]
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #1
@@ -529,7 +510,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion IconaSinistra 1`]
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #2
@@ -554,7 +534,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion IconaSinistra 1`]
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #3
@@ -22408,6 +22387,66 @@ exports[`Stories Snapshots Documentazione/Componenti/Tooltip Posizioni 1`] = `
     >
       Tooltip con HTML
     </button>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Video Esempi 1`] = `
+<div>
+  <div
+    class="bd-example tooltip-demo"
+  >
+    <div
+      class="row"
+    >
+      <video
+        controls=""
+        data-bs-video="true"
+      >
+        <source
+          src="//vjs.zencdn.net/v/oceans.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="//vjs.zencdn.net/v/oceans.webm"
+          type="video/webm"
+        />
+      </video>
+      <div
+        class="vjs-transcription accordion"
+      >
+        <div
+          class="accordion-item"
+        >
+          <h2
+            class="accordion-header "
+            id="transcription-head1"
+          >
+            <button
+              aria-controls="transcription"
+              aria-expanded="true"
+              class="accordion-button collapsed"
+              data-bs-target="#transcription1"
+              type="button"
+            >
+              boh
+            </button>
+          </h2>
+          <div
+            aria-labelledby="transcription-head1"
+            class="accordion-collapse collapse"
+            id="transcription1"
+            role="region"
+          >
+            <div
+              class="accordion-body"
+            >
+              boh
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
