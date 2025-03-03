@@ -1,6 +1,6 @@
 import React from 'react';
 import { act, fireEvent, Matcher, render, screen, waitFor, waitForElementToBeRemoved } from '@testing-library/react';
-import '@testing-library/jest-dom';
+
 
 import { NotificationId, NotificationManager, notify, preloadIcons } from '../src';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
+
 import { MegamenuItem, MegamenuFooter, MegamenuHighlightColumn, preloadIcons } from '../src';
 
 // Icons are now async, so preload them to make it behave in an sync way
