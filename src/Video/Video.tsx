@@ -23,7 +23,7 @@ export const Video: FC<VideoProps> = ({ label, testId }) => {
   let vpInstance: VideoPlayer;
   useEffect(() => {
     const el = document.querySelector('video');
-    if (el) {
+    if (el && VideoPlayer) {
       vpInstance = new VideoPlayer(el);
       setTimeout(() => {
         console.log(vpInstance.player.log); // Con .player puoi usare play(), stop() ecc ..

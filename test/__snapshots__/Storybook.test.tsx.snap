@@ -2866,7 +2866,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Callout CalloutApprofondime
     <p
       class=""
     >
-      Maecenas at erat id 
+      Maecenas at erat id
       <strong>
         sem interdum efficitur eu sed nunc.
       </strong>
@@ -2875,14 +2875,14 @@ exports[`Stories Snapshots Documentazione/Componenti/Callout CalloutApprofondime
     <p
       class=""
     >
-      Maecenas vulputate ante dictum 
+      Maecenas vulputate ante dictum
       <a
         href="#"
       >
         vestibulum volutpat
       </a>
       . Lorem ipsum dolor sit amet,
-       
+
       <strong>
         consectetur adipiscing elit.
       </strong>
@@ -2902,7 +2902,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Callout CalloutApprofondime
           style="font-family: var(--bs-font-sans-serif); font-size: 1rem;"
           type="button"
         >
-          Leggi tutto 
+          Leggi tutto
           <span />
         </button>
         <a
@@ -2943,21 +2943,21 @@ exports[`Stories Snapshots Documentazione/Componenti/Callout CalloutApprofondime
             Aenean tortor enim, suscipit eget commodo at, imperdiet quis diam. Vestibulum non accumsan felis, at ultrices lorem. Pellentesque ac diam a ipsum cursus interdum id nec odio. Vestibulum nec congue mauris. Aliquam et dui purus. Mauris in imperdiet risus, sed blandit tellus. Donec posuere accumsan lacinia. Mauris dignissim, sem vel volutpat rhoncus, neque mi ullamcorper ante, vitae volutpat ipsum quam id purus. Duis tincidunt sodales nisl eget ultricies. Sed condimentum mi eu ex venenatis, quis bibendum dui ultrices. Quisque ex eros, pellentesque vitae enim sed, pharetra tempus dolor. Donec eu nibh ac lacus luctus pellentesque. Duis interdum scelerisque magna nec malesuada.
           </p>
           <p>
-            Maecenas at erat id 
+            Maecenas at erat id
             <strong>
               sem interdum efficitur eu sed nunc.
             </strong>
              Mauris sit amet erat eget augue molestie malesuada ut sed ex. In sed dignissim elit. Donec efficitur, sem eget vestibulum auctor, sem erat interdum magna, eu commodo odio mauris semper dolor.
           </p>
           <p>
-            Maecenas vulputate ante dictum 
+            Maecenas vulputate ante dictum
             <a
               href="#"
             >
               vestibulum volutpat
             </a>
             . Lorem ipsum dolor sit amet,
-             
+
             <strong>
               consectetur adipiscing elit.
             </strong>
@@ -3000,7 +3000,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Callout CalloutHighlights 1
     <p
       class=""
     >
-      Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non augue non purus vestibulum varius. Maecenas ullamcorper 
+      Maecenas vulputate ante dictum vestibulum volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non augue non purus vestibulum varius. Maecenas ullamcorper
       <a
         href="#"
       >
@@ -4677,7 +4677,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Chips GruppiDiChip 1`] = `
       <span
         class="chip-label"
       >
-        Label 
+        Label
       </span>
       <button
         class="btn btn-"
@@ -4782,7 +4782,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Chips GruppiDiChip 1`] = `
       <span
         class="chip-label"
       >
-        Label 
+        Label
       </span>
       <button
         class="btn btn-"
@@ -6319,7 +6319,7 @@ exports[`Stories Snapshots Documentazione/Componenti/GoBack Pulsanti 1`] = `
     </svg>
     Torna indietro
   </button>
-   
+
   <button
     class="go-back btn btn-primary"
     type="button"
@@ -6360,7 +6360,7 @@ exports[`Stories Snapshots Documentazione/Componenti/GoBack PulsantiSoloIcona 1`
       />
     </svg>
   </button>
-   
+
   <button
     class="go-back btn btn-primary"
     type="button"
@@ -7084,7 +7084,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification _Example 1`] =
             <span
               class="visually-hidden"
             >
-              Chiudi notifica: 
+              Chiudi notifica:
               Titolo Notifica
             </span>
           </button>
@@ -7138,7 +7138,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification _Example 1`] =
             <span
               class="visually-hidden"
             >
-              Chiudi notifica: 
+              Chiudi notifica:
               Titolo Notifica
             </span>
           </button>
@@ -7196,7 +7196,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification _NotificationW
             <span
               class="visually-hidden"
             >
-              Chiudi notifica: 
+              Chiudi notifica:
               Titolo Notifica
             </span>
           </button>
@@ -7253,7 +7253,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification _NotificationW
             <span
               class="visually-hidden"
             >
-              Chiudi notifica: 
+              Chiudi notifica:
               Titolo Notifica
             </span>
           </button>
@@ -7318,7 +7318,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification _RoundingOfCor
             <span
               class="visually-hidden"
             >
-              Chiudi notifica: 
+              Chiudi notifica:
               Titolo Notifica
             </span>
           </button>
@@ -7371,7 +7371,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification _RoundingOfCor
               <span
                 class="visually-hidden"
               >
-                Chiudi notifica: 
+                Chiudi notifica:
                 Titolo Notifica
               </span>
             </button>
@@ -7423,7 +7423,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification _RoundingOfCor
               <span
                 class="visually-hidden"
               >
-                Chiudi notifica: 
+                Chiudi notifica:
                 Titolo Notifica
               </span>
             </button>
@@ -7475,7 +7475,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification _RoundingOfCor
               <span
                 class="visually-hidden"
               >
-                Chiudi notifica: 
+                Chiudi notifica:
                 Titolo Notifica
               </span>
             </button>
@@ -7527,7 +7527,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification _RoundingOfCor
               <span
                 class="visually-hidden"
               >
-                Chiudi notifica: 
+                Chiudi notifica:
                 Titolo Notifica
               </span>
             </button>
@@ -7585,7 +7585,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification DefaultLocatio
         <span
           class="visually-hidden"
         >
-          Chiudi notifica: 
+          Chiudi notifica:
           Titolo Notifica
         </span>
       </button>
@@ -7638,7 +7638,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification Dismissable 1`
             <span
               class="visually-hidden"
             >
-              Chiudi notifica: 
+              Chiudi notifica:
               Titolo Notifica
             </span>
           </button>
@@ -7695,7 +7695,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification Dismissable 1`
             <span
               class="visually-hidden"
             >
-              Chiudi notifica: 
+              Chiudi notifica:
               Titolo Notifica
             </span>
           </button>
@@ -7785,7 +7785,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification FixedPositions
           <span
             class="visually-hidden"
           >
-            Chiudi notifica: 
+            Chiudi notifica:
             Top Fix
           </span>
         </button>
@@ -7830,7 +7830,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification FixedPositions
           <span
             class="visually-hidden"
           >
-            Chiudi notifica: 
+            Chiudi notifica:
             Left Fix
           </span>
         </button>
@@ -7875,7 +7875,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification FixedPositions
           <span
             class="visually-hidden"
           >
-            Chiudi notifica: 
+            Chiudi notifica:
             Right Fix
           </span>
         </button>
@@ -7923,7 +7923,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification FixedPositions
           <span
             class="visually-hidden"
           >
-            Chiudi notifica: 
+            Chiudi notifica:
             Bottom Fix
           </span>
         </button>
@@ -7987,7 +7987,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification States 1`] = `
             <span
               class="visually-hidden"
             >
-              Chiudi notifica: 
+              Chiudi notifica:
               Titolo Notifica
             </span>
           </button>
@@ -8039,7 +8039,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification States 1`] = `
             <span
               class="visually-hidden"
             >
-              Chiudi notifica: 
+              Chiudi notifica:
               Titolo Notifica
             </span>
           </button>
@@ -8096,7 +8096,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification States 1`] = `
             <span
               class="visually-hidden"
             >
-              Chiudi notifica: 
+              Chiudi notifica:
               Titolo Notifica
             </span>
           </button>
@@ -8149,7 +8149,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Notification States 1`] = `
             <span
               class="visually-hidden"
             >
-              Chiudi notifica: 
+              Chiudi notifica:
               Titolo Notifica
             </span>
           </button>
@@ -9808,7 +9808,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Popover Direzioni 1`] = `
           class="me-1 btn btn-secondary"
           type="button"
         >
-          Popover 
+          Popover
           a sinistra
         </button>
       </span>
@@ -9821,7 +9821,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Popover Direzioni 1`] = `
           class="me-1 btn btn-secondary"
           type="button"
         >
-          Popover 
+          Popover
           a destra
         </button>
       </span>
@@ -9834,7 +9834,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Popover Direzioni 1`] = `
           class="me-1 btn btn-secondary"
           type="button"
         >
-          Popover 
+          Popover
           in alto
         </button>
       </span>
@@ -9847,7 +9847,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Popover Direzioni 1`] = `
           class="me-1 btn btn-secondary"
           type="button"
         >
-          Popover 
+          Popover
           in basso
         </button>
       </span>
@@ -9963,7 +9963,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Progress BottoneConProgress
           class="btn-progress btn btn-primary disabled"
           disabled=""
         >
-          Label bottone 
+          Label bottone
           <svg
             aria-hidden="true"
             class="icon icon-light"
@@ -10012,7 +10012,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Progress BottoneConProgress
           class="btn-progress btn btn-secondary disabled"
           disabled=""
         >
-          Label bottone 
+          Label bottone
           <svg
             aria-hidden="true"
             class="icon icon-light"
@@ -10385,7 +10385,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingConLabel 1`] =
     >
       Valutazione
     </span>
-     
+
     <span>
       4
        stelle
@@ -10846,7 +10846,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Section SectionConCard 1`] 
                 class="card-text"
               >
                 Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus. Eget egestas purus viverra accumsan. Diam maecenas ultricies mi eget mauris pharetra et.
-                 
+
               </p>
             </div>
           </div>
@@ -11048,7 +11048,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Sidebar _Annidata 1`] = `
                 class="list-item-title-icon-wrapper"
               >
                 <span>
-                  Link list 1 
+                  Link list 1
                 </span>
                 <svg
                   aria-hidden="true"
@@ -11076,7 +11076,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Sidebar _Annidata 1`] = `
                   class="list-item"
                 >
                   <span>
-                    Link list 4 
+                    Link list 4
                   </span>
                 </a>
               </li>
@@ -11085,7 +11085,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Sidebar _Annidata 1`] = `
                   class="list-item"
                 >
                   <span>
-                    Link list 5 
+                    Link list 5
                   </span>
                 </a>
               </li>
@@ -11094,7 +11094,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Sidebar _Annidata 1`] = `
                   class="list-item"
                 >
                   <span>
-                    Link list 6 
+                    Link list 6
                   </span>
                 </a>
               </li>
@@ -11110,7 +11110,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Sidebar _Annidata 1`] = `
                 class="list-item-title-icon-wrapper"
               >
                 <span>
-                  Link list 2 
+                  Link list 2
                 </span>
                 <svg
                   aria-hidden="true"
@@ -11138,7 +11138,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Sidebar _Annidata 1`] = `
                   class="list-item"
                 >
                   <span>
-                    Link list 7 
+                    Link list 7
                   </span>
                 </a>
               </li>
@@ -11147,7 +11147,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Sidebar _Annidata 1`] = `
                   class="list-item"
                 >
                   <span>
-                    Link list 8 
+                    Link list 8
                   </span>
                 </a>
               </li>
@@ -11156,7 +11156,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Sidebar _Annidata 1`] = `
                   class="list-item"
                 >
                   <span>
-                    Link list 9 
+                    Link list 9
                   </span>
                 </a>
               </li>
@@ -11172,7 +11172,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Sidebar _Annidata 1`] = `
                 class="list-item-title-icon-wrapper"
               >
                 <span>
-                  Link list 3 
+                  Link list 3
                 </span>
                 <svg
                   aria-hidden="true"
@@ -11200,7 +11200,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Sidebar _Annidata 1`] = `
                   class="list-item"
                 >
                   <span>
-                    Link list 10 
+                    Link list 10
                   </span>
                 </a>
               </li>
@@ -11209,7 +11209,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Sidebar _Annidata 1`] = `
                   class="list-item"
                 >
                   <span>
-                    Link list 11 
+                    Link list 11
                   </span>
                 </a>
               </li>
@@ -11218,7 +11218,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Sidebar _Annidata 1`] = `
                   class="list-item"
                 >
                   <span>
-                    Link list 12 
+                    Link list 12
                   </span>
                 </a>
               </li>
@@ -18483,7 +18483,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                     <span
                       class="visually-hidden"
                     >
-                      Categoria: 
+                      Categoria:
                     </span>
                     <a
                       class="category"
@@ -18645,7 +18645,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                     <span
                       class="visually-hidden"
                     >
-                      Categoria: 
+                      Categoria:
                     </span>
                     <a
                       class="category"
@@ -18655,7 +18655,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                     <span
                       class="visually-hidden"
                     >
-                      Data evento: 
+                      Data evento:
                     </span>
                     <span
                       class="data"
@@ -18822,7 +18822,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                     <span
                       class="visually-hidden"
                     >
-                      Categoria: 
+                      Categoria:
                     </span>
                     <a
                       class="category"
@@ -18832,7 +18832,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                     <span
                       class="visually-hidden"
                     >
-                      Data evento: 
+                      Data evento:
                     </span>
                     <span
                       class="data"
@@ -18994,7 +18994,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                     <span
                       class="visually-hidden"
                     >
-                      Categoria: 
+                      Categoria:
                     </span>
                     <a
                       class="category"
@@ -19004,7 +19004,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
                     <span
                       class="visually-hidden"
                     >
-                      Data evento: 
+                      Data evento:
                     </span>
                     <span
                       class="data"
@@ -22234,7 +22234,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Tooltip Esempi 1`] = `
       class="muted"
     >
       Ecco un
-       
+
       <a
         href="#"
       >
@@ -22246,13 +22246,13 @@ exports[`Stories Snapshots Documentazione/Componenti/Tooltip Esempi 1`] = `
       degli oggetti di sfondo che pur vivono.
       <br />
       Non ne sarò
-       
+
       <a
         href="#"
       >
         l’artefice
       </a>
-       
+
       impaziente.
       <br />
       Berrò alle coppe della nostalgia,
@@ -22294,7 +22294,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Tooltip EsempiConControllo 
       class="muted"
     >
       Ecco un
-       
+
       <a
         href="#"
       >
@@ -22306,13 +22306,13 @@ exports[`Stories Snapshots Documentazione/Componenti/Tooltip EsempiConControllo 
       degli oggetti di sfondo che pur vivono.
       <br />
       Non ne sarò
-       
+
       <a
         href="#"
       >
         l’artefice
       </a>
-       
+
       impaziente.
       <br />
       Berrò alle coppe della nostalgia,
@@ -28272,7 +28272,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                             href="#"
                           >
                             <span>
-                              link 1 active 
+                              link 1 active
                             </span>
                             <span
                               class="visually-hidden"
@@ -28778,7 +28778,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                         href="#"
                       >
                         <span>
-                          link 1 active 
+                          link 1 active
                         </span>
                         <span
                           class="visually-hidden"
@@ -29283,7 +29283,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                         href="#"
                       >
                         <span>
-                          link 1 active 
+                          link 1 active
                         </span>
                         <span
                           class="visually-hidden"
@@ -31477,7 +31477,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
                     >
                       <span>
                         Esplora tutti i contenuti del megamenu
-                         
+
                         <svg
                           aria-hidden="true"
                           class="icon ms-2 icon-primary icon-sm"
@@ -31537,7 +31537,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                       class="list-item-title-icon-wrapper"
                     >
                       <span>
-                        Link list 1 
+                        Link list 1
                       </span>
                       <svg
                         aria-hidden="true"
@@ -31596,7 +31596,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                       class="list-item-title-icon-wrapper"
                     >
                       <span>
-                        Link list 2 
+                        Link list 2
                       </span>
                       <svg
                         aria-hidden="true"
@@ -31655,7 +31655,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
                       class="list-item-title-icon-wrapper"
                     >
                       <span>
-                        Link list 3 
+                        Link list 3
                       </span>
                       <svg
                         aria-hidden="true"
@@ -37178,7 +37178,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             class="list-item-title-icon-wrapper"
           >
             <span>
-              Link list 1 
+              Link list 1
             </span>
             <svg
               aria-hidden="true"
@@ -37206,7 +37206,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
               class="list-item"
             >
               <span>
-                Link list 4 
+                Link list 4
               </span>
             </a>
           </li>
@@ -37215,7 +37215,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
               class="list-item"
             >
               <span>
-                Link list 5 
+                Link list 5
               </span>
             </a>
           </li>
@@ -37224,7 +37224,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
               class="list-item"
             >
               <span>
-                Link list 6 
+                Link list 6
               </span>
             </a>
           </li>
@@ -37240,7 +37240,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             class="list-item-title-icon-wrapper"
           >
             <span>
-              Link list 2 
+              Link list 2
             </span>
             <svg
               aria-hidden="true"
@@ -37268,7 +37268,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
               class="list-item"
             >
               <span>
-                Link list 7 
+                Link list 7
               </span>
             </a>
           </li>
@@ -37277,7 +37277,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
               class="list-item"
             >
               <span>
-                Link list 8 
+                Link list 8
               </span>
             </a>
           </li>
@@ -37286,7 +37286,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
               class="list-item"
             >
               <span>
-                Link list 9 
+                Link list 9
               </span>
             </a>
           </li>
@@ -37302,7 +37302,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             class="list-item-title-icon-wrapper"
           >
             <span>
-              Link list 3 
+              Link list 3
             </span>
             <svg
               aria-hidden="true"
@@ -37330,7 +37330,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
               class="list-item"
             >
               <span>
-                Link list 10 
+                Link list 10
               </span>
             </a>
           </li>
@@ -37339,7 +37339,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
               class="list-item"
             >
               <span>
-                Link list 11 
+                Link list 11
               </span>
             </a>
           </li>
@@ -37348,7 +37348,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
               class="list-item"
             >
               <span>
-                Link list 12 
+                Link list 12
               </span>
             </a>
           </li>
@@ -37378,7 +37378,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             title="avatartitle"
           />
           <span>
-            Link list 1 active 
+            Link list 1 active
           </span>
         </a>
       </li>
@@ -37393,7 +37393,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             title="avatartitle"
           />
           <span>
-            Link list 2 
+            Link list 2
           </span>
         </a>
       </li>
@@ -37408,7 +37408,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             title="avatartitle"
           />
           <span>
-            Link list 3 disabled 
+            Link list 3 disabled
           </span>
         </a>
       </li>
@@ -37982,7 +37982,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             class="list-item-title-icon-wrapper"
           >
             <span>
-              Link list 1 
+              Link list 1
             </span>
             <svg
               aria-hidden="true"
@@ -38007,7 +38007,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             class="list-item-title-icon-wrapper"
           >
             <span>
-              Link list 2 
+              Link list 2
             </span>
             <svg
               aria-hidden="true"
@@ -38032,7 +38032,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             class="list-item"
           >
             <span>
-              Link list 4 
+              Link list 4
             </span>
           </a>
         </li>
@@ -38041,7 +38041,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             class="list-item"
           >
             <span>
-              Link list 5 
+              Link list 5
             </span>
           </a>
         </li>
@@ -38050,7 +38050,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             class="list-item"
           >
             <span>
-              Link list 6 
+              Link list 6
             </span>
           </a>
         </li>
@@ -38063,7 +38063,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link 
             class="list-item-title-icon-wrapper"
           >
             <span>
-              Link list 3 
+              Link list 3
             </span>
             <svg
               aria-hidden="true"
@@ -38397,7 +38397,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Tipografia All
     <footer
       class="blockquote-footer"
     >
-      Someone famous in 
+      Someone famous in
       <cite
         title="Source Title"
       >
@@ -38421,7 +38421,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Tipografia All
     <footer
       class="blockquote-footer"
     >
-      Someone famous in 
+      Someone famous in
       <cite
         title="Source Title"
       >
@@ -38445,7 +38445,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Tipografia Cit
     <footer
       class="blockquote-footer"
     >
-      Someone famous in 
+      Someone famous in
       <cite
         title="Source Title"
       >
@@ -38573,7 +38573,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Tipografia Dim
 exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Tipografia IntestazioneSecondario 1`] = `
 <div>
   <h4>
-    Intestazione 
+    Intestazione
     <small
       class="text-muted"
     >
@@ -38619,7 +38619,7 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Tipografia Int
 exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Tipografia Link 1`] = `
 <div>
   <p>
-    Esempio di 
+    Esempio di
     <a
       href="#"
     >
@@ -38811,60 +38811,60 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Tipografia Lor
 exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Tipografia ParagrafiPersonalizzati 1`] = `
 <div>
   <p>
-    Esempio di testo 
+    Esempio di testo
     <u>
       sottolineato
     </u>
     .
   </p>
   <p>
-    Esempio di testo 
+    Esempio di testo
     <mark>
       evidenziato
     </mark>
     .
   </p>
   <p>
-    Esempio di testo 
+    Esempio di testo
     <em>
       corsivo
     </em>
     .
   </p>
   <p>
-    Esempio di testo 
+    Esempio di testo
     <strong>
       in grassetto
     </strong>
     .
   </p>
   <p>
-    Esempio di testo 
+    Esempio di testo
     <small>
       rimpicciolito
     </small>
     .
   </p>
   <p>
-    Esempio di testo 
+    Esempio di testo
     <ins>
       aggiuntivo
     </ins>
     .
   </p>
   <p>
-    Esempio di testo 
+    Esempio di testo
     <del>
       cancellato
     </del>
-     o 
+     o
     <s>
       invalido
     </s>
     .
   </p>
   <p>
-    Esempio di testo 
+    Esempio di testo
     <code>
       monospace
     </code>
@@ -39092,62 +39092,62 @@ exports[`Stories Snapshots Documentazione/Utilities/Colori Custom ColoriCustomSe
       <div
         class="c-line analogue-1-bg-a1"
       >
-        a1 
+        a1
       </div>
       <div
         class="c-line analogue-1-bg-a2"
       >
-        a2 
+        a2
       </div>
       <div
         class="c-line analogue-1-bg-a3"
       >
-        a3 
+        a3
       </div>
       <div
         class="c-line white-color analogue-1-bg-a4"
       >
-        a4 
+        a4
       </div>
       <div
         class="c-line white-color analogue-1-bg-a5"
       >
-        a5 
+        a5
       </div>
       <div
         class="c-line white-color analogue-1-bg-a6"
       >
-        a6 
+        a6
       </div>
       <div
         class="c-line white-color analogue-1-bg-a7"
       >
-        a7 
+        a7
       </div>
       <div
         class="c-line white-color analogue-1-bg-a8"
       >
-        a8 
+        a8
       </div>
       <div
         class="c-line white-color analogue-1-bg-a9"
       >
-        a9 
+        a9
       </div>
       <div
         class="c-line white-color analogue-1-bg-a10"
       >
-        a10 
+        a10
       </div>
       <div
         class="c-line white-color analogue-1-bg-a11"
       >
-        a11 
+        a11
       </div>
       <div
         class="c-line white-color analogue-1-bg-a12"
       >
-        a12 
+        a12
       </div>
     </div>
     <div
