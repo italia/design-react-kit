@@ -1,4 +1,4 @@
-import React, { ElementType, FC, useEffect } from 'react';
+import React, { FC, useEffect } from 'react';
 
 import { VideoPlayer } from 'bootstrap-italia';
 import { CSSModule } from 'reactstrap/types/lib/utils';
@@ -27,32 +27,36 @@ export interface transcription {
   src: string;
   type: 'video/mp4' | 'video/webm' | 'video/ogg';
 }
+
+export interface YouTubeVideo {
+  url: string;
+  hasDisclaimer?: boolean;
+  disclaimerText?: string;
+  disclaimerKey?: string;
+}
 export interface VideoProps extends InputProps {
-  /** Dimensioni ammissibili per il componente */
-  bsSize?: 'lg' | 'sm';
-  /** Utilizzarlo in caso di utilizzo di componenti personalizzati */
-  tag?: ElementType;
-  /** Da utilizzare per impostare un riferimento all'elemento DOM */
   innerRef?: React.Ref<HTMLInputElement>;
-  /** Oggetto contenente la nuova mappatura per le classi CSS. */
   cssModule?: CSSModule;
   sources?: Array<VideoSource>;
   transcription?: string;
   transcriptionLabel?: string;
   tracks?: Array<TrackSource>;
-
   poster?: string;
   controls?: boolean;
-  autoplay?: boolean;
+  autoPlay?: boolean;
   loop?: boolean;
   fluid?: boolean;
-
-  showDisclaimer?: boolean;
-  youtubeUrl?: string;
+  youtube?: YouTubeVideo;
 }
 
 export const Video: FC<VideoProps> = (props) => {
   let vpInstance: VideoPlayer;
+  const [showTranscript, setShowTranscript] = React.useState(false);
+  const [showDisclaimer, setShowDisclaimer] = React.useState(false);
+  const [rememberFlag, setRememberFlag] = React.useState(false);
+  const [disclaimerText, setDisclaimerText] = React.useState(
+    `Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.`
+  );
 
   useEffect(() => {
     const el = document.querySelector('video');
@@ -61,11 +65,24 @@ export const Video: FC<VideoProps> = (props) => {
       // setTimeout(() => {
       //   console.log(vpInstance.player.log); // Con .player puoi usare play(), stop() ecc ..
       // }, 3000);
-      if (props.youtubeUrl) {
-        loadYouTubeVideo(props.youtubeUrl, vpInstance);
+      if (props.youtube?.url) {
+        loadYouTubeVideo(props.youtube.url, vpInstance);
+        if (props.youtube.hasDisclaimer) {
+          const serviceName = props.youtube.disclaimerKey || 'youtube';
+          const rememberFlag = localStorage.getItem(serviceName);
+          if (props.youtube.disclaimerText) {
+            setDisclaimerText(props.youtube.disclaimerText);
+          }
+          setRememberFlag(rememberFlag == 'true');
+          if (rememberFlag == 'true') {
+            setShowDisclaimer(false);
+          } else {
+            setShowDisclaimer(true);
+          }
+        }
       }
 
-      if (props.autoplay) {
+      if (props.autoPlay) {
         setTimeout(() => {
           vpInstance?.player?.play();
         }, 1000);
@@ -78,16 +95,29 @@ export const Video: FC<VideoProps> = (props) => {
     };
   }, []);
 
+  useEffect(() => {
+    if (props.youtube?.url) {
+      if (props.youtube.hasDisclaimer) {
+        const serviceName = props.youtube.disclaimerKey || 'youtube';
+        if (rememberFlag) {
+          // set cookie
+          localStorage.setItem(serviceName, 'true');
+        } else {
+          // reset cookie
+          localStorage.removeItem(serviceName);
+        }
+      }
+    }
+  }, [rememberFlag]);
+
   function loadYouTubeVideo(url: string, vpInstance: VideoPlayer) {
     if (vpInstance) {
       vpInstance.setYouTubeVideo(url);
     }
   }
 
-  const { controls = true, autoplay = false, loop = false, fluid = true, poster = undefined } = props;
-  const videoProps = { controls, autoplay, loop, fluid, poster };
-
-  const [show, setShow] = React.useState(false);
+  const { controls = true, autoPlay = false, loop = false, fluid = true, poster = undefined } = props;
+  const videoProps = { controls, autoPlay, loop, fluid, poster };
 
   return (
     <>
@@ -111,31 +141,39 @@ export const Video: FC<VideoProps> = (props) => {
         {props.transcription && (
           <Accordion className='vjs-transcription'>
             <AccordionItem>
-              <AccordionHeader active={show} onToggle={() => setShow((p) => !p)}>
+              <AccordionHeader active={showTranscript} onToggle={() => setShowTranscript((p) => !p)}>
                 {props.transcriptionLabel || 'Trascrizione'}
               </AccordionHeader>
-              <AccordionBody active={show}>{props.transcription}</AccordionBody>
+              <AccordionBody active={showTranscript}>{props.transcription}</AccordionBody>
             </AccordionItem>
           </Accordion>
         )}
       </div>
-      <Dimmer icon='it-unlocked'>
-        <p>Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.</p>
-        <DimmerButtons>
+      <Dimmer icon='it-video' show={showDisclaimer} color='primary'>
+        <p dangerouslySetInnerHTML={{ __html: disclaimerText }}></p>
+        <DimmerButtons className='bg-primary'>
           <Button
             onClick={() => {
               console.log('click');
+              setShowDisclaimer(false);
             }}
             color='primary'
           >
             Accetta
           </Button>
-          <FormGroup check inline>
-            <Input id='inline-checkbox' type='checkbox' />
-            <Label check for='inline-checkbox' defaultChecked={false}>
-              Ricorda per tutti i video
-            </Label>
-          </FormGroup>
+          <div className='d-flex align-items-center ml-2'>
+            <FormGroup check inline>
+              <Input
+                id='inline-checkbox'
+                type='checkbox'
+                checked={rememberFlag}
+                onChange={() => setRememberFlag((p) => !p)}
+              />
+              <Label check for='inline-checkbox' defaultChecked={false} className='text-white'>
+                Ricorda per tutti i video
+              </Label>
+            </FormGroup>
+          </div>
         </DimmerButtons>
       </Dimmer>
     </>

@@ -24,14 +24,17 @@ export const Trascription: Story = {
       { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' }
     ];
     const transcription = 'Questa è la trascrizione testuale del video';
+
     return (
       <div>
         <div>Video</div>
-        <Video
-          sources={sources}
-          transcriptionLabel={'Mostra la trascrizione del video'}
-          transcription={transcription}
-        />
+        <div className='bg-secondary container'>
+          <Video
+            sources={sources}
+            transcriptionLabel={'Mostra la trascrizione del video'}
+            transcription={transcription}
+          />
+        </div>
         <p>In questo esempio viene passato del testo relativo alla trascrizione video</p>
       </div>
     );
@@ -94,11 +97,11 @@ export const AutoplayAndControls: Story = {
     return (
       <div>
         <div>Video</div>
-        <Video sources={sources} autoplay={true} fluid={true} controls={true} loop={true} />
+        <Video sources={sources} autoPlay={true} fluid={true} controls={true} loop={true} />
         <p>
           In questo esempio vengono impostati seguenti parametri:
           <ul>
-            <li>autoplay: true</li>
+            <li>autoPlay: true</li>
             <li>fluid: true</li>
             <li>controls: true</li>
             <li>loop: true</li>
@@ -111,10 +114,16 @@ export const AutoplayAndControls: Story = {
 
 export const YouTubeVideo: Story = {
   render: () => {
+    const ytVideo = {
+      url: 'https://youtu.be/_0j7ZQ67KtY',
+      hasDisclaimer: true,
+      disclaimerKey: 'youtube',
+      disclaimerText: `Vai alla pagina privacy <a href='/privacy_policy'>policy</a>`
+    };
     return (
       <div>
         <div>Video</div>
-        <Video youtubeUrl={'https://youtu.be/_0j7ZQ67KtY'} />
+        <Video youtube={ytVideo} />
         <p>In questo esempio viene passato nella prorietà 'youtubeUrl' un url di un video di YouTube</p>
       </div>
     );
