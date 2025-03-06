@@ -31,7 +31,6 @@ export const AccordionHeader: FC<AccordionHeaderProps> = ({
   return (
     <div className='accordion-header' data-testid={testId}>
       <Tag
-        data-bs-toggle='collapse'
         aria-expanded={active ? 'true' : 'false'}
         className={toggleClasses}
         onClick={onToggle}
