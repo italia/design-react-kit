@@ -1,47 +1,24 @@
 import React from 'react';
+import { BacktransferButton } from './BacktransferButton';
+import { Item } from './Item';
+import { ResetButton } from './ResetButton';
+import { Source } from './Source';
+import { Target } from './Target';
+import { TransferButton } from './TranferButton';
 
 const Transfer = ({ children }: { children: React.ReactNode }) => {
   return <>Transfer {children}</>;
 };
 
-const Source = ({ children }: { children: React.ReactNode }) => {
-  return <>Source {children}</>;
-};
-
-Source.Header = () => {
-  return <>Source.Header</>;
-};
-
 Transfer.Source = Source;
-
-const Target = ({ children }: { children: React.ReactNode }) => {
-  return <>Target {children}</>;
-};
-
-Target.Header = () => {
-  return <>Target.Header</>;
-};
-
 Transfer.Target = Target;
 
-Transfer.Item = ({ id, children }: { id: string; children: React.ReactNode }) => {
-  return (
-    <>
-      Item {id} {children}
-    </>
-  );
-};
+Transfer.Item = Item;
 
-Transfer.TransferButton = () => {
-  return <>TransferButton</>;
-};
+Transfer.TransferButton = TransferButton;
 
-Transfer.BacktransferButton = () => {
-  return <>BacktransferButton</>;
-};
+Transfer.BacktransferButton = BacktransferButton;
 
-Transfer.ResetButton = () => {
-  return <>ResetButton</>;
-};
+Transfer.ResetButton = ResetButton;
 
 export { Transfer };
