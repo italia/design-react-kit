@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { InternalItem, Item } from './Item';
+import { SelectAllCheckbox } from './SelectAllCheckbox';
 import { useTransferContext } from './useTransferContext';
 
 const SourceItem = ({ id, children }: { id: string; children: React.ReactNode }) => {
@@ -52,8 +53,35 @@ const Source: React.FC<{ children?: React.ReactNode }> & {
     </div>
   );
 };
+
 Source.Header = () => {
-  return <>Source.Header</>;
+  const { sourceItems, sourceCandidates, setSourceCandidates } = useTransferContext();
+
+  const getStatus = () => {
+    if (sourceCandidates.length === 0) {
+      return { checked: false };
+    }
+    if (sourceItems.every((item) => sourceCandidates.includes(item.id))) {
+      return { checked: true };
+    }
+    return { checked: false, className: 'semi-checked' };
+  };
+
+  return (
+    <SelectAllCheckbox
+      {...getStatus()}
+      onChange={(e) => {
+        if (e.target.checked) {
+          setSourceCandidates([...new Set(sourceItems.map((item) => item.id))]);
+        } else {
+          setSourceCandidates([]);
+        }
+      }}
+      id='transfer-source-header'
+    >
+      Source
+    </SelectAllCheckbox>
+  );
 };
 
 export { Source };
