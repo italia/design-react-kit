@@ -4,7 +4,7 @@ import { Item } from './Item';
 import { ResetButton } from './ResetButton';
 import { Source } from './Source';
 import { Target } from './Target';
-import { TransferButton } from './TranferButton';
+import { TransferButton } from './TransferButton';
 import { TransferContextProvider } from './useTransferContext';
 
 const Transfer = ({ children }: { children: React.ReactNode }) => {
