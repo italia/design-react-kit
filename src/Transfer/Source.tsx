@@ -23,7 +23,7 @@ const SourceItem = ({ id, children }: { id: string; children: React.ReactNode })
 const Source: React.FC<{ children?: React.ReactNode }> & {
   Header: React.FC;
 } = ({ children }) => {
-  const { sourceItems, setSourceItems, setOriginalSourceItems } = useTransferContext();
+  const { sourceItems, setSourceItems } = useTransferContext();
   const otherComponents: React.ReactNode[] = [];
   const childrenSource = React.Children.map(children, (child) => {
     if (React.isValidElement(child) && child.type === Item) {
@@ -36,8 +36,7 @@ const Source: React.FC<{ children?: React.ReactNode }> & {
 
   useEffect(() => {
     if (!childrenSource) return;
-    setSourceItems(childrenSource);
-    setOriginalSourceItems(childrenSource);
+    setSourceItems({ items: childrenSource, setOriginals: true });
   }, []);
 
   return (

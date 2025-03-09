@@ -7,8 +7,8 @@ const BacktransferButton = () => {
   const handleTransfer = () => {
     const newTargetItems = targetItems.filter((item) => !targetCandidates.includes(item.id));
     const newSourceItems = sourceItems.concat(targetItems.filter((item) => targetCandidates.includes(item.id)));
-    setSourceItems(newSourceItems);
-    setTargetItems(newTargetItems);
+    setSourceItems({ items: newSourceItems });
+    setTargetItems({ items: newTargetItems });
     setTargetCandidates([]);
   };
   return <button onClick={handleTransfer}>backtransfer </button>;

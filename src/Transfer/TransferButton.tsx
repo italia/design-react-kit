@@ -7,8 +7,8 @@ const TransferButton = () => {
   const handleTransfer = () => {
     const newSourceItems = sourceItems.filter((item) => !sourceCandidates.includes(item.id));
     const newTargetItems = targetItems.concat(sourceItems.filter((item) => sourceCandidates.includes(item.id)));
-    setSourceItems(newSourceItems);
-    setTargetItems(newTargetItems);
+    setSourceItems({ items: newSourceItems });
+    setTargetItems({ items: newTargetItems });
     setSourceCandidates([]);
   };
   return <button onClick={handleTransfer}>transfer </button>;
