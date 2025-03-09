@@ -5,9 +5,10 @@ import { ResetButton } from './ResetButton';
 import { Source } from './Source';
 import { Target } from './Target';
 import { TransferButton } from './TranferButton';
+import { TransferContextProvider } from './useTransferContext';
 
 const Transfer = ({ children }: { children: React.ReactNode }) => {
-  return <>Transfer {children}</>;
+  return <TransferContextProvider>{children}</TransferContextProvider>;
 };
 
 Transfer.Source = Source;
