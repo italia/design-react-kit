@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from '../Icon/Icon';
 import { useTransferContext } from './useTransferContext';
 
 const TransferButton = () => {
@@ -11,7 +12,20 @@ const TransferButton = () => {
     setTargetItems({ items: newTargetItems });
     setSourceCandidates([]);
   };
-  return <button onClick={handleTransfer}>transfer </button>;
+  return (
+    <>
+      <a
+        className={`transfer ${sourceCandidates.length > 0 ? 'active' : ''}`}
+        href='#'
+        role='button'
+        aria-label='Sposta avanti'
+        onClick={handleTransfer}
+      >
+        <Icon icon='it-arrow-right' />
+      </a>
+      <span className='visually-hidden'>Etichetta per freccia destra</span>
+    </>
+  );
 };
 
 export { TransferButton };

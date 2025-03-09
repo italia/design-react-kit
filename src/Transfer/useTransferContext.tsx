@@ -21,6 +21,7 @@ interface TransferContextType {
   }) => void;
   setSourceCandidates: (items: string[]) => void;
   setTargetCandidates: (items: string[]) => void;
+  isChanged: boolean;
   reset: () => void;
 }
 
@@ -33,6 +34,7 @@ export const TransferContext = createContext<TransferContextType>({
   setTargetItems: () => {},
   setSourceCandidates: () => {},
   setTargetCandidates: () => {},
+  isChanged: false,
   reset: () => {}
 });
 
@@ -83,7 +85,10 @@ export const TransferContextProvider = ({ children }: { children: React.ReactNod
         setTargetItems(originalTargetItems);
         setSourceCandidates([]);
         setTargetCandidates([]);
-      }
+      },
+      isChanged:
+        JSON.stringify(sourceItems) !== JSON.stringify(originalSourceItems) ||
+        JSON.stringify(targetItems) !== JSON.stringify(originalTargetItems)
     }),
     [sourceItems, targetItems, sourceCandidates, targetCandidates, originalSourceItems, originalTargetItems]
   );

@@ -27,21 +27,23 @@ export const Base: Story = {
           </Transfer.Source>
         </Col>
         <Col>
-          <Row>
-            <Col>
-              <Transfer.TransferButton />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Transfer.BacktransferButton />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Transfer.ResetButton />
-            </Col>
-          </Row>
+          <div className='it-transfer-buttons'>
+            <Row>
+              <Col>
+                <Transfer.TransferButton />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Transfer.BacktransferButton />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Transfer.ResetButton />
+              </Col>
+            </Row>
+          </div>
         </Col>
         <Col>
           <Transfer.Target>
