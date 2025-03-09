@@ -21,7 +21,7 @@ const SourceItem = ({ id, children }: { id: string; children: React.ReactNode })
 };
 
 const Source: React.FC<{ children?: React.ReactNode }> & {
-  Header: React.FC;
+  Header: React.FC<{ children?: React.ReactNode }>;
 } = ({ children }) => {
   const { sourceItems, setSourceItems } = useTransferContext();
   const otherComponents: React.ReactNode[] = [];
@@ -40,7 +40,7 @@ const Source: React.FC<{ children?: React.ReactNode }> & {
   }, []);
 
   return (
-    <div>
+    <div className='it-transfer-wrapper source'>
       {otherComponents}
       {sourceItems.map(({ id, content }) => (
         <SourceItem key={id} id={id}>
@@ -53,7 +53,7 @@ const Source: React.FC<{ children?: React.ReactNode }> & {
   );
 };
 
-Source.Header = () => {
+Source.Header = ({ children }: { children?: React.ReactNode }) => {
   const { sourceItems, sourceCandidates, setSourceCandidates } = useTransferContext();
 
   const getStatus = () => {
@@ -67,19 +67,22 @@ Source.Header = () => {
   };
 
   return (
-    <SelectAllCheckbox
-      {...getStatus()}
-      onChange={(e) => {
-        if (e.target.checked) {
-          setSourceCandidates([...new Set(sourceItems.map((item) => item.id))]);
-        } else {
-          setSourceCandidates([]);
-        }
-      }}
-      id='transfer-source-header'
-    >
-      Source
-    </SelectAllCheckbox>
+    <div className='transfer-header'>
+      <SelectAllCheckbox
+        {...getStatus()}
+        onChange={(e) => {
+          if (e.target.checked) {
+            setSourceCandidates([...new Set(sourceItems.map((item) => item.id))]);
+          } else {
+            setSourceCandidates([]);
+          }
+        }}
+        id='transfer-source-header'
+        description={children ? 'Source' : undefined}
+      >
+        {children ? children : 'Source'}
+      </SelectAllCheckbox>
+    </div>
   );
 };
 

@@ -5,7 +5,7 @@ import { ResetButton } from './ResetButton';
 import { Source } from './Source';
 import { Target } from './Target';
 import { TransferButton } from './TransferButton';
-import { TransferContextProvider } from './useTransferContext';
+import { TransferContextProvider, useTransfer } from './useTransferContext';
 
 const Transfer = ({ children }: { children: React.ReactNode }) => {
   return <TransferContextProvider>{children}</TransferContextProvider>;
@@ -21,5 +21,7 @@ Transfer.TransferButton = TransferButton;
 Transfer.BacktransferButton = BacktransferButton;
 
 Transfer.ResetButton = ResetButton;
+
+Transfer.useTransfer = useTransfer;
 
 export { Transfer };
