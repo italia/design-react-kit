@@ -92,7 +92,14 @@ export const TransferContextProvider = ({ children }: { children: React.ReactNod
 };
 
 export const useTransfer = () => {
-  const { sourceItems, targetItems } = useTransferContext();
+  const { sourceItems, targetItems, sourceCandidates, targetCandidates } = useTransferContext();
 
-  return { source: sourceItems, target: targetItems };
+  return {
+    source: sourceItems.map((item) => {
+      return { ...item, checked: sourceCandidates.includes(item.id) };
+    }),
+    target: targetItems.map((item) => {
+      return { ...item, checked: targetCandidates.includes(item.id) };
+    })
+  };
 };
