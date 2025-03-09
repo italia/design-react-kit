@@ -40,7 +40,7 @@ const Source: React.FC<{ children?: React.ReactNode }> & {
   }, []);
 
   return (
-    <div className='it-transfer-wrapper source'>
+    <div className='it-transfer-wrapper source' data-testid='transfer-source'>
       {otherComponents}
       {sourceItems.map(({ id, content }) => (
         <SourceItem key={id} id={id}>
@@ -67,7 +67,7 @@ Source.Header = ({ children }: { children?: React.ReactNode }) => {
   };
 
   return (
-    <div className='transfer-header'>
+    <div className='transfer-header' data-testid='transfer-source-header'>
       <SelectAllCheckbox
         {...getStatus()}
         onChange={(e) => {

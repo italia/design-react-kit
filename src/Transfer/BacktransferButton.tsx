@@ -20,6 +20,7 @@ const BacktransferButton = () => {
         role='button'
         aria-label='Sposta indietro'
         onClick={handleTransfer}
+        data-testid='backtransfer-button'
       >
         <Icon icon='it-arrow-left' />
       </a>

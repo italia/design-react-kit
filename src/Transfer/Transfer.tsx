@@ -8,7 +8,11 @@ import { TransferButton } from './TransferButton';
 import { TransferContextProvider, useTransfer } from './useTransferContext';
 
 const Transfer = ({ children }: { children: React.ReactNode }) => {
-  return <TransferContextProvider>{children}</TransferContextProvider>;
+  return (
+    <TransferContextProvider>
+      <div data-testid='test-id-transfer'>{children}</div>
+    </TransferContextProvider>
+  );
 };
 
 Transfer.Source = Source;

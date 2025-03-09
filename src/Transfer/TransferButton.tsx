@@ -15,6 +15,7 @@ const TransferButton = () => {
   return (
     <>
       <a
+        data-testid='transfer-button'
         className={`transfer ${sourceCandidates.length > 0 ? 'active' : ''}`}
         href='#'
         role='button'

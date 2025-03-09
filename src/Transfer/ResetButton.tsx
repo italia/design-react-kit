@@ -15,6 +15,7 @@ const ResetButton = () => {
         role='button'
         aria-label='Reset'
         onClick={handleReset}
+        data-testid='reset-button'
       >
         <Icon icon='it-restore' />
       </a>

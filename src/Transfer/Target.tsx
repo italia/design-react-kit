@@ -40,7 +40,7 @@ const Target: React.FC<{ children?: React.ReactNode }> & {
   }, []);
 
   return (
-    <div className='it-transfer-wrapper target'>
+    <div className='it-transfer-wrapper target' data-testid='transfer-target'>
       {otherComponents}
       {targetItems.map(({ id, content }) => (
         <TargetItem key={id} id={id}>
@@ -65,7 +65,7 @@ Target.Header = ({ children }: { children?: React.ReactNode }) => {
   };
 
   return (
-    <div className='transfer-header'>
+    <div className='transfer-header' data-testid='transfer-target-header'>
       <SelectAllCheckbox
         {...getStatus()}
         onChange={(e) => {
