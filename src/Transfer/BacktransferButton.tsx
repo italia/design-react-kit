@@ -5,7 +5,8 @@ import { useTransferContext } from './useTransferContext';
 const BacktransferButton = () => {
   const { targetCandidates, sourceItems, targetItems, setSourceItems, setTargetItems, setTargetCandidates } =
     useTransferContext();
-  const handleTransfer = () => {
+  const handleTransfer: React.MouseEventHandler<HTMLAnchorElement> = (e) => {
+    e.preventDefault();
     const newTargetItems = targetItems.filter((item) => !targetCandidates.includes(item.id));
     const newSourceItems = sourceItems.concat(targetItems.filter((item) => targetCandidates.includes(item.id)));
     setSourceItems({ items: newSourceItems });

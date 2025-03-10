@@ -4,7 +4,8 @@ import { useTransferContext } from './useTransferContext';
 
 const ResetButton = () => {
   const { reset, isChanged } = useTransferContext();
-  const handleReset = () => {
+  const handleReset: React.MouseEventHandler<HTMLAnchorElement> = (e) => {
+    e.preventDefault();
     reset();
   };
   return (
