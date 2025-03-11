@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import '@testing-library/jest-dom';
+
 import { ToolbarDividerItem } from '../src';
 
 describe('ToolbarDividerItem component', () => {

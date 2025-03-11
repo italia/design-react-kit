@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
+
 import { ToolbarItem, preloadIcons, Toolbar } from '../src';
 
 function renderWithSize(size: 'small' | 'medium' | 'large', ui: ReactElement) {
