@@ -1,11 +1,11 @@
-import React, { FC, InputHTMLAttributes, useEffect } from 'react';
+import React, { FC, useEffect } from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore non ci sono i types
 import BaseAutocomplete from 'accessible-autocomplete/react';
 // Reference to https://www.npmjs.com/package/accessible-autocomplete
 // Implementation example: https://github.com/alphagov/accessible-autocomplete/blob/main/examples/react/index.html
 
-export interface AutocompleteAttributes extends InputHTMLAttributes<HTMLInputElement> {
+export interface AutocompleteAttributes {
   /** Identificativo */
   id: string;
   /** Label */
@@ -100,6 +100,15 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
         tStatusNoResults={tStatusNoResults}
         tStatusSelectedOption={tStatusSelectedOption}
         tStatusResults={tStatusResults}
+        inputClasses='form-control'
+        showNoOptionsFound={true}
+        hintClasses='app-hint'
+        autoselect={false}
+        showAllValues={false}
+        templates={undefined}
+        confirmOnBlur={false}
+        menuAttributes={null}
+        menuClasses={null}
         {...attributes}
       />
     </>
