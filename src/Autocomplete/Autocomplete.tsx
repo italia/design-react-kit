@@ -2,6 +2,7 @@ import React, { FC, useEffect } from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore non ci sono i types
 import BaseAutocomplete from 'accessible-autocomplete/react';
+import { FormGroup } from 'reactstrap';
 // Reference to https://www.npmjs.com/package/accessible-autocomplete
 // Implementation example: https://github.com/alphagov/accessible-autocomplete/blob/main/examples/react/index.html
 
@@ -87,7 +88,7 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
   }, [id]);
 
   return (
-    <>
+    <FormGroup class='form-group'>
       <label htmlFor={attributes.id}>{attributes.label}</label>
       <BaseAutocomplete
         source={source}
@@ -111,6 +112,6 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
         menuClasses={null}
         {...attributes}
       />
-    </>
+    </FormGroup>
   );
 };
