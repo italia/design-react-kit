@@ -107,7 +107,7 @@
     "@types/react-bootstrap": "^0.32.37",
     "@types/react-dom": "^18.2.24",
     "@types/react-transition-group": "^4.4.10",
-    "bootstrap-italia": "^2.13.4",
+    "bootstrap-italia": "^2.14.0",
     "browserslist-config-design-italia": "^1.0.0",
     "eslint": "^9.10.0",
     "eslint-plugin-mdx": "^3.1.5",
@@ -134,6 +134,7 @@
     "vite": "^5.2.7"
   },
   "dependencies": {
+    "accessible-autocomplete": "^3.0.1",
     "classnames": "^2.3.1",
     "is-number": "^7.0.0",
     "react-bootstrap": "^2.10.6",
