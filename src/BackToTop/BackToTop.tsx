@@ -34,7 +34,7 @@ const backToTop = () => {
 };
 
 export const BackToTop = ({
-  ariaLabel='Torna su',
+  ariaLabel = 'Torna su',
   className,
   dark = false,
   small = false,
@@ -56,6 +56,7 @@ export const BackToTop = ({
   return (
     <a
       aria-label={ariaLabel}
+      href="#"
       className={classNames(
         className,
         'back-to-top',

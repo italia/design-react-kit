@@ -1,3 +1,60 @@
+## [5.6.1](https://github.com/italia/design-react-kit/compare/v5.6.0...v5.6.1) (2025-02-13)
+
+
+### Bug Fixes
+
+* disabled checkbox and radio ([aae38ea](https://github.com/italia/design-react-kit/commit/aae38eac8c1f2388a7e1dcf6d12920ebc6f71dcb))
+* symbol label class ([86d01d8](https://github.com/italia/design-react-kit/commit/86d01d809a8c72b9f7e5eaf7071a9116f9f7eb35))
+
+
+
+# [5.6.0](https://github.com/italia/design-react-kit/compare/v5.5.1...v5.6.0) (2025-02-11)
+
+
+### Bug Fixes
+
+* **a11y:** icons ([0408075](https://github.com/italia/design-react-kit/commit/0408075afbdb5a2a93a0e7ca7eae89bd97ac9255))
+* **a11y:** input aria describedby ([396c752](https://github.com/italia/design-react-kit/commit/396c7527560cc0a08c3741cdd2b398b2a8ef8293))
+* back to top is now focusable ([b87db3f](https://github.com/italia/design-react-kit/commit/b87db3f05b45add57f269f198523efcf13652eb3))
+* new label for percentage and currency inputs ([61a8b34](https://github.com/italia/design-react-kit/commit/61a8b340264791575b5683509d62c22ef74a2c32))
+
+
+### Features
+
+* add icons title for steppers ([fff4263](https://github.com/italia/design-react-kit/commit/fff426363197a52b9eba22141cff05a4e65b5b46))
+* new tab component ([b5b9c85](https://github.com/italia/design-react-kit/commit/b5b9c85eda6c3c0ee5ee39a5392dd0f57bca4a6e))
+
+
+
+## [5.5.1](https://github.com/italia/design-react-kit/compare/v5.5.0...v5.5.1) (2025-01-09)
+
+
+### Bug Fixes
+
+* remove dropdown menu offset in slim headers ([52a1149](https://github.com/italia/design-react-kit/commit/52a1149c48303d8e9389000441badf9394c0c674))
+
+
+
+# [5.5.0](https://github.com/italia/design-react-kit/compare/v5.4.1...v5.5.0) (2024-12-18)
+
+
+### Bug Fixes
+
+* add aria hidden to rating icons ([7d62963](https://github.com/italia/design-react-kit/commit/7d62963443023350799438a6d3e948d1c7ed0b0d))
+* focus tracking ([27d3714](https://github.com/italia/design-react-kit/commit/27d37148f4493e1231a4f671101f118c3b10fdbb))
+* improvements on back to top component ([08fb4c7](https://github.com/italia/design-react-kit/commit/08fb4c750f76b5db5ca9a10005a532804d141957))
+* keyboard rating ([bd9ddba](https://github.com/italia/design-react-kit/commit/bd9ddbabc1a997ba8fdd08461172cd6a860623b2))
+
+
+### Features
+
+* header improvements ([f7e2a76](https://github.com/italia/design-react-kit/commit/f7e2a76164e900d7a61dbe0aec7f56eebccf647d))
+* nav mode for skiplinks ([2dc384e](https://github.com/italia/design-react-kit/commit/2dc384eea89caaad426ff46613429226b9eba21b))
+* navscroll refactoring with progressbar ([d0cfd5b](https://github.com/italia/design-react-kit/commit/d0cfd5bc90daed5616ced16b767a94bb5abeba59))
+* new autocomplete component with italian default messages ([b076b91](https://github.com/italia/design-react-kit/commit/b076b912d888682b497f356e69b9a73f6ed98f52))
+
+
+
 ## [5.4.1](https://github.com/italia/design-react-kit/compare/v5.4.0...v5.4.1) (2024-11-11)
 
 
