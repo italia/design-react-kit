@@ -1,13 +1,17 @@
-import React, { FC } from 'react';
+import React, { FC, InputHTMLAttributes, useEffect } from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore non ci sono i types
-import BaseAutocomplete from 'accessible-autocomplete/react'; // Reference to https://www.npmjs.com/package/accessible-autocomplete
+import BaseAutocomplete from 'accessible-autocomplete/react';
+// Reference to https://www.npmjs.com/package/accessible-autocomplete
+// Implementation example: https://github.com/alphagov/accessible-autocomplete/blob/main/examples/react/index.html
 
-export interface AutocompleteAttributes {
+export interface AutocompleteAttributes extends InputHTMLAttributes<HTMLInputElement> {
   /** Identificativo */
-  id?: string;
+  id: string;
+  /** Label */
+  label: string;
   /** Valori chiave - valore all'interno della select */
-  source: { value: string; label: string }[];
+  source: (query: string, syncResults: () => void) => void;
   /** Placeholder (default: ``) */
   placeholder?: string;
   /** Valore di default (default: ``) */
@@ -62,20 +66,42 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
   source,
   ...attributes
 }) => {
+  const id = attributes.id;
+
+  useEffect(() => {
+    const inputElement: HTMLInputElement = document.getElementById(id) as HTMLInputElement;
+    const labelElement = inputElement?.parentElement?.parentElement?.getElementsByTagName('label')[0];
+
+    if (inputElement.value !== '') {
+      labelElement?.classList.add('active');
+    }
+
+    inputElement?.addEventListener('focus', () => {
+      labelElement?.classList.add('active');
+    });
+    inputElement?.addEventListener('blur', () => {
+      if (inputElement.value === '') {
+        labelElement?.classList.remove('active');
+      }
+    });
+  }, [id]);
+
   return (
-    <BaseAutocomplete
-      id='autocomplete'
-      source={source}
-      placeholder={placeholder}
-      defaultValue={defaultValue}
-      displayMenu={displayMenu}
-      tAssistiveHint={tAssistiveHint}
-      tNoResults={tNoResults}
-      tStatusQueryTooShort={tStatusQueryTooShort}
-      tStatusNoResults={tStatusNoResults}
-      tStatusSelectedOption={tStatusSelectedOption}
-      tStatusResults={tStatusResults}
-      {...attributes}
-    />
+    <>
+      <label htmlFor={attributes.id}>{attributes.label}</label>
+      <BaseAutocomplete
+        source={source}
+        placeholder={placeholder}
+        defaultValue={defaultValue}
+        displayMenu={displayMenu}
+        tAssistiveHint={tAssistiveHint}
+        tNoResults={tNoResults}
+        tStatusQueryTooShort={tStatusQueryTooShort}
+        tStatusNoResults={tStatusNoResults}
+        tStatusSelectedOption={tStatusSelectedOption}
+        tStatusResults={tStatusResults}
+        {...attributes}
+      />
+    </>
   );
 };
