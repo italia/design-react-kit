@@ -146,6 +146,7 @@ export { Toggle } from './Toggle/Toggle';
 export { Toolbar } from './Toolbar/Toolbar';
 export { ToolbarDividerItem } from './Toolbar/ToolbarDividerItem';
 export { ToolbarItem } from './Toolbar/ToolbarItem';
+export { Transfer } from './Transfer/Transfer';
 
 // Types
 export type { AccordionProps } from './Accordion/Accordion';

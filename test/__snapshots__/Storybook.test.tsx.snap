@@ -23212,24 +23212,13 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxMixedButton 1`] 
       <div
         class="form-check"
       >
-        <div
-          class="form-group"
-        >
-          <label
-            class=" "
-            for="checkbox-semi-checked"
-          />
-          <input
-            class="semi-checked"
-            id="checkbox-semi-checked"
-            indeterminate="true"
-            type="checkbox"
-            value=""
-          />
-          <div
-            class="form-text"
-          />
-        </div>
+        <input
+          class="semi-checked"
+          id="checkbox-semi-checked"
+          indeterminate="true"
+          type="checkbox"
+          value=""
+        />
         <label
           class="form-check-label"
           for="checkbox-semi-checked"
@@ -24980,6 +24969,391 @@ exports[`Stories Snapshots Documentazione/Form/Toggles TogglesDisabilitate 1`] =
               class="lever"
             />
           </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form/Transfer Base 1`] = `
+<div>
+  <div
+    data-testid="test-id-transfer"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col"
+      >
+        <div
+          class="it-transfer-wrapper source"
+          data-testid="transfer-source"
+        >
+          <div
+            class="transfer-header"
+            data-testid="transfer-source-header"
+          >
+            <div
+              class="form-check"
+            >
+              <input
+                class=""
+                id="transfer-source-header"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="form-check-label"
+                for="transfer-source-header"
+              >
+                0
+                 ITEMS
+                <span
+                  class="descr"
+                >
+                  Source
+                </span>
+              </label>
+            </div>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox1"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox1"
+            >
+              List item 1
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox2"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox2"
+            >
+              List item 2
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox3"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox3"
+            >
+              List item 3
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox4"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox4"
+            >
+              List item 4
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox5"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox5"
+            >
+              List item 5
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox6"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox6"
+            >
+              List item 6
+            </label>
+          </div>
+          <br />
+        </div>
+      </div>
+      <div
+        class="col"
+      >
+        <div
+          class="it-transfer-buttons"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col"
+            >
+              <a
+                aria-label="Sposta avanti"
+                class="transfer "
+                data-testid="transfer-button"
+                href="#"
+                role="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                  />
+                </svg>
+              </a>
+              <span
+                class="visually-hidden"
+              >
+                Etichetta per freccia destra
+              </span>
+            </div>
+          </div>
+          <div
+            class="row"
+          >
+            <div
+              class="col"
+            >
+              <a
+                aria-label="Sposta indietro"
+                class="backtransfer "
+                data-testid="backtransfer-button"
+                href="#"
+                role="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 11.5H5.5l5.3-5.4-.7-.7L3.6 12l6.5 6.6.7-.7-5.3-5.4H21v-1z"
+                  />
+                </svg>
+              </a>
+              <span
+                class="visually-hidden"
+              >
+                Etichetta per freccia sinistra
+              </span>
+            </div>
+          </div>
+          <div
+            class="row"
+          >
+            <div
+              class="col"
+            >
+              <a
+                aria-label="Reset"
+                class="reset "
+                data-testid="reset-button"
+                href="#"
+                role="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2C9.3 2 6.8 3 4.9 4.9c-.3.4-.6.7-.9 1.1V2.5H3V8h5.5V7h-4c.3-.5.7-.9 1.1-1.4 3.5-3.5 9.2-3.6 12.7-.1s3.6 9.2.1 12.7-9.2 3.6-12.7.1C4 16.7 3 14.4 3 12H2c0 5.5 4.5 10 10 10s10-4.5 10-10S17.5 2 12 2z"
+                  />
+                </svg>
+              </a>
+              <span
+                class="visually-hidden"
+              >
+                Etichetta per icona di reset
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col"
+      >
+        <div
+          class="it-transfer-wrapper target"
+          data-testid="transfer-target"
+        >
+          <div
+            class="transfer-header"
+            data-testid="transfer-target-header"
+          >
+            <div
+              class="form-check"
+            >
+              <input
+                class=""
+                id="transfer-target-header"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="form-check-label"
+                for="transfer-target-header"
+              >
+                0
+                 ITEMS
+                <span
+                  class="descr"
+                >
+                  Target
+                </span>
+              </label>
+            </div>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox7"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox7"
+            >
+              List item 7
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox8"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox8"
+            >
+              List item 8
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox9"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox9"
+            >
+              List item 9
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox10"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox10"
+            >
+              List item 10
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox11"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox11"
+            >
+              List item 11
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox12"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox12"
+            >
+              List item 12
+            </label>
+          </div>
         </div>
       </div>
     </div>
