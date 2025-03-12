@@ -2,7 +2,6 @@ import React, { FC, useEffect } from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore non ci sono i types
 import BaseAutocomplete from 'accessible-autocomplete/react';
-import { FormGroup } from 'reactstrap';
 // Reference to https://www.npmjs.com/package/accessible-autocomplete
 // Implementation example: https://github.com/alphagov/accessible-autocomplete/blob/main/examples/react/index.html
 
@@ -11,14 +10,20 @@ export interface AutocompleteAttributes {
   id: string;
   /** Label */
   label: string;
-  /** Valori chiave - valore all'interno della select */
+  /** Valori all'interno della select */
   source: (query: string, syncResults: () => void) => void;
+  /** Valori chiave - valore all'interno della select */
+  onConfirm?: (value: string) => void;
   /** Placeholder (default: ``) */
   placeholder?: string;
   /** Valore di default (default: ``) */
   defaultValue?: string;
   /** Modalità display menu (default: `inline`) */
   displayMenu?: string;
+  /** Utilizzare per mostrare il successo nella validazione del valore nel campo Input */
+  valid?: boolean;
+  /** Testo di validazione per l'elemento del moduleo form. */
+  validationText?: string;
   /** Funzione ritornante stringa in caso di nessun risultato */
   tNoResults?: () => string;
   /** Funzione ritornante stringa di suggerimento */
@@ -65,9 +70,12 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
   defaultValue = '',
   displayMenu = 'inline',
   source,
+  validationText,
+  onConfirm,
   ...attributes
 }) => {
-  const id = attributes.id;
+  const { id, valid } = attributes;
+  const validityCheck = valid === true || valid === false;
 
   useEffect(() => {
     const inputElement: HTMLInputElement = document.getElementById(id) as HTMLInputElement;
@@ -84,11 +92,14 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
       if (inputElement.value === '') {
         labelElement?.classList.remove('active');
       }
+      if (onConfirm) {
+        onConfirm(inputElement.value);
+      }
     });
   }, [id]);
 
   return (
-    <FormGroup class='form-group'>
+    <>
       <label htmlFor={attributes.id}>{attributes.label}</label>
       <BaseAutocomplete
         source={source}
@@ -101,7 +112,8 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
         tStatusNoResults={tStatusNoResults}
         tStatusSelectedOption={tStatusSelectedOption}
         tStatusResults={tStatusResults}
-        inputClasses='form-control'
+        onConfirm={onConfirm}
+        inputClasses={`form-control ${validityCheck && (valid === false ? 'is-invalid' : 'just-validate-success-field')}`}
         showNoOptionsFound={true}
         hintClasses='app-hint'
         autoselect={false}
@@ -112,6 +124,9 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
         menuClasses={null}
         {...attributes}
       />
-    </FormGroup>
+      <div className='form-feedback just-validate-error-label form-text form-feedback just-validate-error-label'>
+        {!valid && validationText}
+      </div>
+    </>
   );
 };
