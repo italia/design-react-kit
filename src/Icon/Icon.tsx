@@ -47,7 +47,7 @@ export interface IconProps extends SVGProps<SVGSVGElement> {
   size?: 'xl' | 'lg' | '' | 'sm' | 'xs';
   /**
    * Il nome dell'icona da mostrare. Per una lista completa vedi:
-   * <a href="https://italia.github.io/design-react-kit/?path=/story/componenti-icon--lista-icone" target="_blank">Lista icone</a>
+   * <a href="https://italia.github.io/design-react-kit/?path=/story/documentazione-utilities-icon--lista-icone" target="_blank">Lista icone</a>.
    * In caso di un'immagine esterna l'URL da utilizzare.
    **/
   icon: string;
@@ -65,7 +65,7 @@ export const Icon: FC<IconProps> = ({
   color = '',
   size = '',
   icon = '',
-  title,
+  title = '',
   className,
   padding = false,
   onIconLoad,
@@ -108,8 +108,26 @@ export const Icon: FC<IconProps> = ({
   }
 
   if (!IconComponent) {
-    return <EmptyIcon className={classes} role='img' {...attributes} data-testid={testId} />;
+    return (
+      <EmptyIcon
+        className={classes}
+        role={title === '' ? undefined : 'img'}
+        aria-hidden={title === '' ? true : false}
+        title={title}
+        {...attributes}
+        data-testid={testId}
+      />
+    );
   }
 
-  return <IconComponent className={classes} role='img' title={title} data-testid={testId} {...attributes} />;
+  return (
+    <IconComponent
+      className={classes}
+      role={title === '' ? undefined : 'img'}
+      aria-hidden={title === '' ? true : false}
+      title={title}
+      data-testid={testId}
+      {...attributes}
+    />
+  );
 };

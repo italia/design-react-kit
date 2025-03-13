@@ -37,9 +37,7 @@ export {
   PopoverBody,
   PopoverHeader,
   Row,
-  TabContent,
   Table,
-  TabPane,
   Tooltip,
   UncontrolledAlert,
   UncontrolledCollapse,
@@ -47,12 +45,13 @@ export {
   Util
 } from 'reactstrap';
 
+export { TabContainer, TabContent, TabPane } from 'react-bootstrap';
 export { Accordion } from './Accordion/Accordion';
 export { AccordionBody } from './Accordion/AccordionBody';
 export { AccordionHeader } from './Accordion/AccordionHeader';
 export { AccordionItem } from './Accordion/AccordionItem';
 export { Alert } from './Alert/Alert';
-export { Autocomplete } from './Autocomplete/Autocomplete';
+export { Autocomplete, Autocomplete } from './Autocomplete/Autocomplete';
 export { AvatarContainer } from './Avatar/AvatarContainer';
 export { AvatarExtraText } from './Avatar/AvatarExtraText';
 export { AvatarGroupContainer } from './Avatar/AvatarGroupContainer';
@@ -136,6 +135,9 @@ export { StepperDots } from './Stepper/StepperDots';
 export { StepperHeader } from './Stepper/StepperHeader';
 export { StepperHeaderElement } from './Stepper/StepperHeaderElement';
 export { StepperNav } from './Stepper/StepperNav';
+export { TabNav } from './Tab/TabNav';
+export { TabNavItem } from './Tab/TabNavItem';
+export { TabNavLink } from './Tab/TabNavLink';
 export { ThumbNav } from './ThumbNav/ThumbNav';
 export { ThumbNavItem } from './ThumbNav/ThumbNavItem';
 export { TimelinePin } from './Timeline/TimelinePin';
@@ -144,9 +146,7 @@ export { Toggle } from './Toggle/Toggle';
 export { Toolbar } from './Toolbar/Toolbar';
 export { ToolbarDividerItem } from './Toolbar/ToolbarDividerItem';
 export { ToolbarItem } from './Toolbar/ToolbarItem';
-export { Upload } from './Upload/Upload';
-export { UploadList } from './Upload/UploadList';
-export { UploadListItem } from './Upload/UploadListItem';
+export { Transfer } from './Transfer/Transfer';
 
 // Types
 export type { AccordionProps } from './Accordion/Accordion';
@@ -245,6 +245,9 @@ export type { StepperDotsProps } from './Stepper/StepperDots';
 export type { StepperHeaderProps } from './Stepper/StepperHeader';
 export type { StepperHeaderElementProps } from './Stepper/StepperHeaderElement';
 export type { StepperNavProps } from './Stepper/StepperNav';
+export type { TabNavProps } from './Tab/TabNav';
+export type { TabNavItemProps } from './Tab/TabNavItem';
+export type { TabNavLinkProps } from './Tab/TabNavLink';
 export type { ThumbNavProps } from './ThumbNav/ThumbNav';
 export type { ThumbNavItemProps } from './ThumbNav/ThumbNavItem';
 export type { TimelinePinProps } from './Timeline/TimelinePin';
@@ -294,13 +297,12 @@ export type {
   PopoverHeaderProps,
   PopoverProps,
   RowProps,
-  TabContentProps,
   TableProps,
-  TabPaneProps,
   TooltipProps,
   UncontrolledAlertProps,
   UncontrolledCollapseProps,
   UncontrolledTooltipProps
 } from 'reactstrap';
 
+export type { TabContainerProps, TabContentProps, TabPaneProps } from 'react-bootstrap';
 import './track-focus.js';

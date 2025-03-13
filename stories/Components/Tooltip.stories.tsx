@@ -207,7 +207,7 @@ const EsempiInterattiviWithHooks = ({ placement, text }: TooltipProps) => {
 };
 
 export const EsempiInterattivi: Story = {
-  render: (placement, text) => <EsempiInterattiviWithHooks {...placement} {...text} />,
+  render: (args) => <EsempiInterattiviWithHooks {...args} />,
   parameters: {
     layout: 'centered'
   },
@@ -219,6 +219,9 @@ export const EsempiInterattivi: Story = {
     placement: {
       control: 'select',
       options: ['top', 'bottom', 'left', 'right']
+    },
+    text: {
+      control: 'text'
     }
   }
 };
