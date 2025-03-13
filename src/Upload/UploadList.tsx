@@ -9,15 +9,8 @@ export interface UploadListProps extends HTMLAttributes<HTMLUListElement> {
   testId?: string;
 }
 
-export const UploadList: FC<UploadListProps> = ({
-  className,
-  previewImage,
-  testId,
-  ...attributes
-}) => {
+export const UploadList: FC<UploadListProps> = ({ className, previewImage, ...attributes }) => {
   const classes = classNames('upload-file-list', { 'upload-file-list-image': previewImage }, className);
 
-  return (
-    <ul {...attributes} className={classes}></ul>
-  );
+  return <ul {...attributes} className={classes}></ul>;
 };
