@@ -2072,10 +2072,17 @@
   dependencies:
     "@sinonjs/commons" "^3.0.0"
 
-"@splidejs/splide@^3.6.12":
-  version "3.6.12"
-  resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-3.6.12.tgz#9b6bede5c99140fd06754990c91e474374566c30"
-  integrity sha512-ggOUAuSxjWuxxL0IQEZcux26KByfKWfYM2HYmvDBdxkXc5evVW+xuECO+3iuciyrJpgcbYTr4hn0cHfbNlYIeA==
+"@splidejs/react-splide@^0.7.12":
+  version "0.7.12"
+  resolved "https://registry.yarnpkg.com/@splidejs/react-splide/-/react-splide-0.7.12.tgz#c7efe231bbbb6812da64689178b6c871269baff5"
+  integrity sha512-UfXH+j47jsMc4x5HA/aOwuuHPqn6y9+ZTNYPWDRD8iLKvIVMZlzq2unjUEvyDAU+TTVPZOXkG2Ojeoz0P4AkZw==
+  dependencies:
+    "@splidejs/splide" "^4.1.3"
+
+"@splidejs/splide@^4.1.3", "@splidejs/splide@^4.1.4":
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-4.1.4.tgz#02d029360569e7d75d28357a9727fc48322015a3"
+  integrity sha512-5I30evTJcAJQXt6vJ26g2xEkG+l1nXcpEw4xpKh0/FWQ8ozmAeTbtniVtVmz2sH1Es3vgfC4SS8B2X4o5JMptA==
 
 "@storybook/addon-a11y@^8.4.0":
   version "8.4.6"
@@ -3205,15 +3212,14 @@ better-opn@^3.0.2:
   dependencies:
     open "^8.0.4"
 
-bootstrap-italia@^2.13.4:
-  version "2.13.4"
-  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.13.4.tgz#f5415febd609b9fc798e98eb4bdbd3fe6653e637"
-  integrity sha512-+56DXmLkgeKGetEqcTWGoOGmVa25NBGPDM3hwD5HCc40MY6yFa4rZnXFT6SBcMDeROJQ+JEadQ7Cy+xqwbZB8Q==
+bootstrap-italia@^2.14.0:
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.14.0.tgz#d64b118414aaa1fd991f22becd62e9df38613eef"
+  integrity sha512-df8zE55x6FIViPxVXjfggaJVoR/9DMKR37dpvgs/Y6pwc8kKU8ShPEusnr2kyy4w5pQvBeuKmsBT+dltkXy9rA==
   dependencies:
     "@popperjs/core" "^2.11.6"
-    "@splidejs/splide" "^3.6.12"
+    "@splidejs/splide" "^4.1.4"
     "@types/bootstrap" "^5.2.6"
-    accessible-autocomplete "^3.0.1"
     animejs "^3.2.1"
     design-tokens-italia "^1.1.1"
     just-validate "^4.3.0"
