@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Meta, StoryObj } from '@storybook/react';
-import { Icon, List, ListItem } from '../../src';
+import { Icon, List, ListItem } from '../../../src';
 
 const meta: Meta<typeof List> = {
   title: 'Documentazione/Organizzare i contenuti/Liste',
@@ -60,11 +60,11 @@ export const ListaFreccia: Story = {
         <span className='text'>Testo</span>
         <Icon icon='it-chevron-right' title='Freccia destra' />
       </ListItem>
-      <ListItem href="#">
+      <ListItem href='#'>
         <span className='text'>Link</span>
         <Icon icon='it-chevron-right' title='Freccia destra' />
       </ListItem>
-      <ListItem active href="#">
+      <ListItem active href='#'>
         <span className='text'>Link attivo</span>
         <Icon icon='it-chevron-right' title='Freccia destra' />
       </ListItem>
@@ -223,7 +223,9 @@ export const ListaTestoAzioniMultipleMetadata: Story = {
       </ListItem>
       <ListItem>
         <div>
-          <h4 className='text m-0'><a href='#'>Testo</a></h4>
+          <h4 className='text m-0'>
+            <a href='#'>Testo</a>
+          </h4>
           <p className='small m-0'>Lorem ipsum dolor sit amet.</p>
         </div>
         <ListItem.MultipleAction>
@@ -243,7 +245,9 @@ export const ListaTestoAzioniMultipleMetadata: Story = {
       </ListItem>
       <ListItem active>
         <div>
-          <h4 className='text m-0'><a href='#'>Testo</a></h4>
+          <h4 className='text m-0'>
+            <a href='#'>Testo</a>
+          </h4>
           <p className='small m-0'>Lorem ipsum dolor sit amet.</p>
         </div>
         <ListItem.MultipleAction>

@@ -1,6 +1,6 @@
-import React, { MouseEventHandler, useState } from "react";
+import React, { MouseEventHandler, useState } from 'react';
 
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from '@storybook/react';
 import {
   Collapse,
   FormGroup,
@@ -13,10 +13,10 @@ import {
   NavLink,
   Navbar,
   Toggle
-} from "../../../src";
+} from '../../../src';
 
 const meta: Meta<typeof LinkList> = {
-  title: "Documentazione/Organizzare i contenuti/Liste di link",
+  title: 'Documentazione/Organizzare i contenuti/Liste',
   component: LinkList
 };
 
@@ -27,47 +27,47 @@ type Story = StoryObj<typeof LinkList>;
 export const TitoloLista: Story = {
   render: () => {
     return (
-      <div className="sticky-wrapper navbar-wrapper">
-        <Navbar expand="lg" className="it-navscroll-wrapper it-top-navscroll">
-          <div className="menu-wrapper">
-            <LinkList wrapperClassName="menu-link-list" header={<h3>Indice della pagina</h3>}>
+      <div className='sticky-wrapper navbar-wrapper'>
+        <Navbar expand='lg' className='it-navscroll-wrapper it-top-navscroll'>
+          <div className='menu-wrapper'>
+            <LinkList wrapperClassName='menu-link-list' header={<h3>Indice della pagina</h3>}>
               <NavItem>
-                <NavLink href="#cos-e">
+                <NavLink href='#cos-e'>
                   <span>Cos&#39;è</span>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#luogo">
+                <NavLink href='#luogo'>
                   <span>Luogo</span>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#date-e-orari">
+                <NavLink href='#date-e-orari'>
                   <span>Date e orari</span>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#costi">
+                <NavLink href='#costi'>
                   <span>Costi</span>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#documenti">
+                <NavLink href='#documenti'>
                   <span>Documenti</span>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#contatti">
+                <NavLink href='#contatti'>
                   <span>Contatti</span>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#appuntamenti">
+                <NavLink href='#appuntamenti'>
                   <span>Appuntamenti</span>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#ulteriori-informazioni">
+                <NavLink href='#ulteriori-informazioni'>
                   <span>Ulteriori informazioni</span>
                 </NavLink>
               </NavItem>
@@ -129,7 +129,7 @@ export const _StatoDisabilitato: Story = {
 
 export const HeaderEDividerNoLink: Story = {
   render: () => (
-    <LinkList header={<div className="link-list-heading">Intestazione senza link</div>}>
+    <LinkList header={<div className='link-list-heading'>Intestazione senza link</div>}>
       <LinkListItem>
         <span>Link list 1</span>
       </LinkListItem>
@@ -151,8 +151,8 @@ export const HeaderEDividerConLink: Story = {
   render: () => (
     <LinkList
       header={
-        <div className="link-list-heading">
-          <a href="#">Intestazione con link</a>
+        <div className='link-list-heading'>
+          <a href='#'>Intestazione con link</a>
         </div>
       }
     >
@@ -175,18 +175,18 @@ export const HeaderEDividerConLink: Story = {
 
 export const Sizing: Story = {
   render: () => (
-    <LinkList header={<div className="link-list-heading">Intestazione senza link</div>}>
-      <LinkListItem large href="#">
+    <LinkList header={<div className='link-list-heading'>Intestazione senza link</div>}>
+      <LinkListItem large href='#'>
         <span>Link list 1</span>
       </LinkListItem>
-      <LinkListItem large href="#">
+      <LinkListItem large href='#'>
         <span>Link list 2</span>
       </LinkListItem>
-      <LinkListItem large href="#">
+      <LinkListItem large href='#'>
         <span>Link list 3</span>
       </LinkListItem>
       <LinkListItem divider />
-      <LinkListItem large href="#">
+      <LinkListItem large href='#'>
         <span>Link list 4</span>
       </LinkListItem>
     </LinkList>
@@ -196,26 +196,26 @@ export const Sizing: Story = {
 export const EsempioMultiline: Story = {
   render: () => (
     <LinkList multiline>
-      <LinkListItem active className="icon-right" href="#">
+      <LinkListItem active className='icon-right' href='#'>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 1 active</span>
-          <Icon color="primary" icon="it-chevron-right" aria-hidden />
+          <Icon color='primary' icon='it-chevron-right' aria-hidden />
         </LinkListItem.TitleIconWrapper>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
       </LinkListItem>
       <LinkListItem divider />
-      <LinkListItem className="icon-right" href="#">
+      <LinkListItem className='icon-right' href='#'>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 2</span>
-          <Icon color="primary" icon="it-chevron-right" aria-hidden />
+          <Icon color='primary' icon='it-chevron-right' aria-hidden />
         </LinkListItem.TitleIconWrapper>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
       </LinkListItem>
       <LinkListItem divider />
-      <LinkListItem disabled className="icon-right" href="#">
+      <LinkListItem disabled className='icon-right' href='#'>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 3 disabled</span>
-          <Icon color="primary" icon="it-chevron-right" aria-hidden />
+          <Icon color='primary' icon='it-chevron-right' aria-hidden />
         </LinkListItem.TitleIconWrapper>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit…</p>
       </LinkListItem>
@@ -245,10 +245,10 @@ const CollapseExampleHooks = () => {
 
   return (
     <LinkList>
-      <LinkListItem bold large className="icon-right" onClick={onToggle1} aria-expanded={collapseOpen1}>
+      <LinkListItem bold large className='icon-right' onClick={onToggle1} aria-expanded={collapseOpen1}>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 1 </span>
-          <Icon className="right" color="primary" icon="it-expand" aria-hidden />
+          <Icon className='right' color='primary' icon='it-expand' aria-hidden />
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
       <Collapse isOpen={collapseOpen1}>
@@ -264,10 +264,10 @@ const CollapseExampleHooks = () => {
           </LinkListItem>
         </LinkList>
       </Collapse>
-      <LinkListItem bold large className="icon-right" onClick={onToggle2} aria-expanded={collapseOpen2}>
+      <LinkListItem bold large className='icon-right' onClick={onToggle2} aria-expanded={collapseOpen2}>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 2 </span>
-          <Icon className="right" color="primary" icon="it-expand" aria-hidden />
+          <Icon className='right' color='primary' icon='it-expand' aria-hidden />
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
       <Collapse isOpen={collapseOpen2}>
@@ -283,10 +283,10 @@ const CollapseExampleHooks = () => {
           </LinkListItem>
         </LinkList>
       </Collapse>
-      <LinkListItem bold large className="icon-right" onClick={onToggle3} aria-expanded={collapseOpen3}>
+      <LinkListItem bold large className='icon-right' onClick={onToggle3} aria-expanded={collapseOpen3}>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 3 </span>
-          <Icon className="right" color="primary" icon="it-expand" aria-hidden />
+          <Icon className='right' color='primary' icon='it-expand' aria-hidden />
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
       <Collapse isOpen={collapseOpen3}>
@@ -304,28 +304,27 @@ const CollapseExampleHooks = () => {
       </Collapse>
     </LinkList>
   );
-
 };
 
 export const CollapseExample: Story = {
   render: () => {
-    return <CollapseExampleHooks />
+    return <CollapseExampleHooks />;
   }
-}
+};
 
 export const NavigationComponentFixed: Story = {
   render: () => (
     <LinkList>
-      <LinkListItem bold large className="icon-right">
+      <LinkListItem bold large className='icon-right'>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 1 </span>
-          <Icon icon="it-link" color="primary" className="right" />
+          <Icon icon='it-link' color='primary' className='right' />
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
-      <LinkListItem bold large className="icon-right">
+      <LinkListItem bold large className='icon-right'>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 2 </span>
-          <Icon icon="it-link" color="primary" className="right" />
+          <Icon icon='it-link' color='primary' className='right' />
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
       <LinkList sublist>
@@ -339,10 +338,10 @@ export const NavigationComponentFixed: Story = {
           <span>Link list 6 </span>
         </LinkListItem>
       </LinkList>
-      <LinkListItem bold large className="icon-right">
+      <LinkListItem bold large className='icon-right'>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 3 </span>
-          <Icon icon="it-link" color="primary" className="right" />
+          <Icon icon='it-link' color='primary' className='right' />
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
     </LinkList>
@@ -352,21 +351,21 @@ export const NavigationComponentFixed: Story = {
 export const ControlliComponent: Story = {
   render: () => (
     <LinkList>
-      <LinkListItem active className="icon-left">
+      <LinkListItem active className='icon-left'>
         <LinkListItem.TitleIconWrapper>
-          <Icon color="primary" icon="it-chevron-right" aria-hidden />
+          <Icon color='primary' icon='it-chevron-right' aria-hidden />
           <span>Link list 1 active</span>
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
-      <LinkListItem className="icon-left">
+      <LinkListItem className='icon-left'>
         <LinkListItem.TitleIconWrapper>
-          <Icon color="primary" icon="it-chevron-right" aria-hidden />
+          <Icon color='primary' icon='it-chevron-right' aria-hidden />
           <span>Link list 2</span>
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
-      <LinkListItem disabled className="icon-left">
+      <LinkListItem disabled className='icon-left'>
         <LinkListItem.TitleIconWrapper>
-          <Icon color="primary" icon="it-chevron-right" aria-hidden />
+          <Icon color='primary' icon='it-chevron-right' aria-hidden />
           <span>Link list 3 disabled</span>
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
@@ -377,22 +376,22 @@ export const ControlliComponent: Story = {
 export const ControlliSecondariComponent: Story = {
   render: () => (
     <LinkList>
-      <LinkListItem active className="icon-right">
+      <LinkListItem active className='icon-right'>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 1 active</span>
-          <Icon color="primary" icon="it-link" aria-hidden />
+          <Icon color='primary' icon='it-link' aria-hidden />
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
-      <LinkListItem className="icon-right">
+      <LinkListItem className='icon-right'>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 2</span>
-          <Icon color="primary" icon="it-link" aria-hidden />
+          <Icon color='primary' icon='it-link' aria-hidden />
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
-      <LinkListItem disabled className="icon-right">
+      <LinkListItem disabled className='icon-right'>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 3 disabled</span>
-          <Icon color="primary" icon="it-link" aria-hidden />
+          <Icon color='primary' icon='it-link' aria-hidden />
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
     </LinkList>
@@ -402,21 +401,21 @@ export const ControlliSecondariComponent: Story = {
 export const PrimaryESecondaryAction: Story = {
   render: () => (
     <LinkList>
-      <LinkListItem active className="icon-left">
+      <LinkListItem active className='icon-left'>
         <LinkListItem.TitleIconWrapper>
-          <Icon color="primary" icon="it-link" aria-hidden />
+          <Icon color='primary' icon='it-link' aria-hidden />
           <span>Link list 1 active</span>
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
-      <LinkListItem className="icon-left">
+      <LinkListItem className='icon-left'>
         <LinkListItem.TitleIconWrapper>
-          <Icon color="primary" icon="it-link" aria-hidden />
+          <Icon color='primary' icon='it-link' aria-hidden />
           <span>Link list 2</span>
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
-      <LinkListItem disabled className="icon-left">
+      <LinkListItem disabled className='icon-left'>
         <LinkListItem.TitleIconWrapper>
-          <Icon color="primary" icon="it-link" aria-hidden />
+          <Icon color='primary' icon='it-link' aria-hidden />
           <span>Link list 3 disabled</span>
         </LinkListItem.TitleIconWrapper>
       </LinkListItem>
@@ -428,15 +427,15 @@ export const ConAvatar: Story = {
   render: () => (
     <LinkList>
       <LinkListItem active>
-        <img className="avatar lg-size" src="http://placehold.co/40x40" title="avatartitle" alt="avataralt" />
+        <img className='avatar lg-size' src='http://placehold.co/40x40' title='avatartitle' alt='avataralt' />
         <span>Link list 1 active </span>
       </LinkListItem>
       <LinkListItem>
-        <img className="avatar lg-size" src="http://placehold.co/40x40" title="avatartitle" alt="avataralt" />
+        <img className='avatar lg-size' src='http://placehold.co/40x40' title='avatartitle' alt='avataralt' />
         <span>Link list 2 </span>
       </LinkListItem>
       <LinkListItem disabled>
-        <img className="avatar lg-size" src="http://placehold.co/40x40" title="avatartitle" alt="avataralt" />
+        <img className='avatar lg-size' src='http://placehold.co/40x40' title='avatartitle' alt='avataralt' />
         <span>Link list 3 disabled </span>
       </LinkListItem>
     </LinkList>
@@ -446,11 +445,11 @@ export const ConAvatar: Story = {
 export const ConSwitch: Story = {
   render: () => (
     <LinkList>
-      <LinkListItem tag="div" active>
-        <Toggle label="Label per toggle" />
+      <LinkListItem tag='div' active>
+        <Toggle label='Label per toggle' />
       </LinkListItem>
-      <LinkListItem tag="div" disabled>
-        <Toggle disabled label="Label per disabled toggle" />
+      <LinkListItem tag='div' disabled>
+        <Toggle disabled label='Label per disabled toggle' />
       </LinkListItem>
     </LinkList>
   )
@@ -459,26 +458,26 @@ export const ConSwitch: Story = {
 export const ConCheckbox: Story = {
   render: () => (
     <LinkList>
-      <LinkListItem tag="div" active>
-        <FormGroup check className="form-check-group">
-          <Input id="checkbox1" type="checkbox" defaultChecked />
-          <Label for="checkbox1" check>
+      <LinkListItem tag='div' active>
+        <FormGroup check className='form-check-group'>
+          <Input id='checkbox1' type='checkbox' defaultChecked />
+          <Label for='checkbox1' check>
             Checkbox selezionato
           </Label>
         </FormGroup>
       </LinkListItem>
-      <LinkListItem tag="div" active>
-        <FormGroup check className="form-check-group">
-          <Input id="checkbox2" type="checkbox" />
-          <Label for="checkbox2" check>
+      <LinkListItem tag='div' active>
+        <FormGroup check className='form-check-group'>
+          <Input id='checkbox2' type='checkbox' />
+          <Label for='checkbox2' check>
             Checkbox non selezionato
           </Label>
         </FormGroup>
       </LinkListItem>
-      <LinkListItem tag="div" disabled>
-        <FormGroup check className="form-check-group">
-          <Input id="checkbox3" type="checkbox" disabled />
-          <Label for="checkbox3" check>
+      <LinkListItem tag='div' disabled>
+        <FormGroup check className='form-check-group'>
+          <Input id='checkbox3' type='checkbox' disabled />
+          <Label for='checkbox3' check>
             Checkbox disabilitato non selezionato
           </Label>
         </FormGroup>
