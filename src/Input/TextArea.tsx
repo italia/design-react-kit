@@ -1,8 +1,8 @@
-import React, { Ref, ReactNode, TextareaHTMLAttributes } from 'react';
+import React, { ReactNode, Ref, TextareaHTMLAttributes } from 'react';
 
-import { InputContainer } from './InputContainer';
-import { getClasses, getValidationTextControlClass, useFocus } from './utils';
 import type { CSSModule } from 'reactstrap/types/lib/utils';
+import { InputContainer } from './InputContainer';
+import { getClasses, getFormControlClass, getValidationTextControlClass, useFocus } from './utils';
 
 export interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   /** Etichetta del campo TextArea. */
@@ -56,6 +56,11 @@ export const TextArea = ({
 
   const extraAttributes: { ['aria-describedby']?: string } = {};
 
+  //Chiamo questa funzione per impostare classNames a 'form-control'
+  const formControlClass = getFormControlClass(
+    {},
+    cssModule
+  );
   // associate the input field with the help text
   const infoId = id ? `${id}Description` : undefined;
   if (id) {
@@ -73,6 +78,7 @@ export const TextArea = ({
       label,
       validationText,
       normalized: Boolean(normalized),
+      formControlClass,
       validationTextControlClass,
       isFocused,
       originalWrapperClass

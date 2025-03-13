@@ -1,9 +1,9 @@
-import "@testing-library/jest-dom";
-import { render, screen } from '@testing-library/react';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
-import { Progress } from '../src';
 import { logError } from '../src/utils';
+import { Progress } from '../src';
 
 jest.mock('../src/utils', () => ({
   logError: jest.fn()

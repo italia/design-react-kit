@@ -1,9 +1,10 @@
-import React, { CSSProperties, ReactChild } from 'react';
-import { Button } from '../Button/Button';
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import classNames from 'classnames';
+import React, { CSSProperties, ReactNode } from 'react';
+import { Button } from '../Button/Button';
 import { Icon } from '../Icon/Icon';
-import { usePosition } from './usePosition';
 import { NotificationCommonProps } from './types';
+import { usePosition } from './usePosition';
 
 export interface NotificationToastProps {
   /** Indica quale icona affiancare al titolo. */
@@ -18,7 +19,7 @@ type NotificationElementProps = {
   closeToast?: () => void;
   toastProps?: any;
   title: string;
-  body?: ReactChild;
+  body?: ReactNode;
   options: NotificationOptions;
 };
 
@@ -113,7 +114,7 @@ function NotificationElement({ closeToast, toastProps, title, body, options }: N
  */
 export const createNotification = (
   title: string,
-  body: ReactChild | undefined,
+  body: ReactNode | undefined,
   options: NotificationOptions,
   closeToast?: () => void,
   toastProps?: any

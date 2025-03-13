@@ -1,8 +1,8 @@
-import "@testing-library/jest-dom";
+import '@testing-library/jest-dom';
 import { act, fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
 
-import { Input, preloadIcons } from '../src';
+import { Button, Icon, Input, preloadIcons } from '../src';
 
 // Icons are now async, so preload them to make it behave in an sync way
 beforeAll(() => preloadIcons(['it-password-visible', 'it-password-invisible']));
@@ -86,4 +86,67 @@ test('should have a testId for resilient UI changes', () => {
   render(<Input testId='test-id-input' />);
 
   expect(screen.getByTestId('test-id-input')).toBeTruthy();
+});
+
+test('should have an left icon', () => {
+  const { container } = render(<Input
+    hasIconLeft
+    iconLeft={<Icon aria-hidden icon="it-pencil" size="sm" />}
+    id="exampleInputIcon"
+    label="Campo di tipo testuale"
+    type="text"
+  />);
+  const span = container.querySelector('span');
+  if (span) {
+    expect(span.nodeName).toBe('SPAN');
+    const svg = span.querySelector('svg');
+    if (svg) expect(svg.nodeName).toBe('svg');
+  }
+});
+
+test('should have an left icon and placeholder', () => {
+  const { container } = render(<Input
+    hasIconLeft
+    iconLeft={<Icon aria-hidden color="danger" icon="it-pencil" size="sm" />}
+    id="exampleInputIconDanger"
+    label="Con etichetta e placeholder"
+    placeholder="Lorem Ipsum"
+    type="text"
+  />);
+  const span = container.querySelector('span'),
+    input = container.querySelector('input');
+  if (span) {
+    expect(span.nodeName).toBe('SPAN');
+    const svg = span.querySelector('svg');
+    if (svg) expect(svg.nodeName).toBe('svg');
+  }
+  expect(input).toHaveAttribute('placeholder');
+});
+
+test('should have an left icon and right button', () => {
+  const { container } = render(<Input
+    buttonRight={<Button color="primary">Invio</Button>}
+    hasButtonRight
+    hasIconLeft
+    iconLeft={<Icon aria-hidden color="primary" icon="it-pencil" size="sm" />}
+    id="exampleInputButton"
+    label="Con etichetta e bottone di tipo primary"
+    type="text"
+  />);
+  const span = container.querySelector('span'),
+    button = container.querySelector('button');
+  if (span && button) {
+    expect(span.nodeName).toBe('SPAN');
+    expect(button.nodeName).toBe('BUTTON');
+    const svg = span.querySelector('svg');
+    if (svg) expect(svg.nodeName).toBe('svg');
+  }
+});
+
+it('should have form-control as class', () => {
+  const { container } = render(
+    <Input />
+  );
+
+  expect(container.firstChild).toHaveClass('form-control');
 });

@@ -1,4 +1,3 @@
-/* eslint jsx-a11y/anchor-is-valid: 0 */
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 
@@ -19,8 +18,8 @@ import {
 } from '../../src';
 
 const meta: Meta<typeof Card> = {
-  title: "Documentazione/Componenti/Cards",
-  component: Card,
+  title: 'Documentazione/Componenti/Cards',
+  component: Card
 };
 
 export default meta;
@@ -96,33 +95,6 @@ export const SimpleArticle: Story = {
   )
 };
 
-//Componente non usato
-/* export const SimpleArticleWithIcon: Story = {
-  render: () => (
-    <Row>
-      <Col xs='12' lg='6'>
-
-        <Card>
-          <CardBody>
-            <CardCategory date='10/12/2018' iconName='it-calendar'>
-              Category
-            </CardCategory>
-            <CardTitle tag='h5' className='big-heading'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-            </CardTitle>
-            <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </CardText>
-            <CardSignature>di Federico De Paolis</CardSignature>
-            <CardReadMore text='Leggi di più' iconName='it-arrow-right' />
-          </CardBody>
-        </Card>
-      </Col>
-    </Row>
-  )
-};
- */
 export const CardIcon: Story = {
   render: () => (
     <Row>
@@ -296,40 +268,6 @@ export const BigCardWithTag: Story = {
   )
 };
 
-//Componente non usato
-/* export const CardWithImageAndDate: Story = {
-  render: () => (
-    <Row>
-      <Col xs='12' lg='6'>
-        <Card className='card-bg card-img no-after'>
-          <div className='img-responsive-wrapper'>
-            <div className='img-responsive img-responsive-panoramic'>
-              <figure className='img-wrapper'>
-                <img
-                  src='https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
-                  title='img title'
-                  alt='imagealt'
-                />
-              </figure>
-              <div className='card-calendar d-flex flex-column justify-content-center'>
-                <span className='card-date'>31</span>
-                <span className='card-day'>novembre</span>
-              </div>
-            </div>
-          </div>
-          <CardBody>
-            <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </CardTitle>
-            <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
-          </CardBody>
-        </Card>
-
-      </Col>
-    </Row>
-  )
-}; */
-
 export const CardsWithImages: Story = {
   render: () => (
     <Row>
@@ -340,7 +278,7 @@ export const CardsWithImages: Story = {
             <div className='img-responsive'>
               <figure className='img-wrapper'>
                 <img
-                  src='https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+                  src='https://placehold.co/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
                   title='img title'
                   alt='imagealt'
                 />
@@ -363,7 +301,7 @@ export const CardsWithImages: Story = {
             <div className='img-responsive img-responsive-panoramic'>
               <figure className='img-wrapper'>
                 <img
-                  src='https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+                  src='https://placehold.co/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
                   title='img title'
                   alt='imagealt'
                 />
@@ -386,7 +324,7 @@ export const CardsWithImages: Story = {
             <div className='img-responsive'>
               <figure className='img-wrapper'>
                 <img
-                  src='https://via.placeholder.com/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+                  src='https://placehold.co/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
                   title='img title'
                   alt='imagealt'
                 />
@@ -413,7 +351,7 @@ export const CardsWithImages: Story = {
             <div className='img-responsive img-responsive-panoramic'>
               <figure className='img-wrapper'>
                 <img
-                  src='https://via.placeholder.com/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
+                  src='https://placehold.co/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
                   title='img title'
                   alt='imagealt'
                 />
@@ -447,7 +385,7 @@ export const SpecialCard: Story = {
             <div className='img-responsive'>
               <figure className='img-wrapper'>
                 <img
-                  src='https://via.placeholder.com/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO'
+                  src='https://placehold.co/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO'
                   title='img title'
                   alt='imagealt'
                 />
@@ -486,10 +424,12 @@ export const CardTeaserMultiple: Story = {
     <div className='card-wrapper card-teaser-wrapper'>
       <Card teaser noWrapper>
         <CardBody>
-          <CardTitle tag='h5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</CardTitle>
+          <CardTitle tag='h5'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
+          </CardTitle>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
         </CardBody>
       </Card>
@@ -497,8 +437,8 @@ export const CardTeaserMultiple: Story = {
         <CardBody>
           <CardTitle>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</CardTitle>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
         </CardBody>
       </Card>
@@ -509,8 +449,8 @@ export const CardTeaserMultiple: Story = {
             <CardTitle tag='h5'>Lorem ipsum dolor sit amet</CardTitle>
           </a>
           <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
           </CardText>
         </CardBody>
       </Card>

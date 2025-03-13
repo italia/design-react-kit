@@ -1,17 +1,17 @@
-import React, { ElementType, FC, HTMLAttributes, useEffect, useRef } from 'react';
+import React, { ElementType, FC, HTMLAttributes } from 'react';
+import { DropdownToggle as BSDropdownToggle } from 'reactstrap';
 import classNames from 'classnames';
-import { Dropdown } from 'bootstrap-italia';
 import { Icon } from '../Icon/Icon';
-import { Button } from '../Button/Button';
 
 export interface DropdownToggleProps extends HTMLAttributes<HTMLElement> {
   caret?: boolean;
   tag?: ElementType;
-  color?: string;
   inNavbar?: boolean;
-  /** Classi aggiuntive da usare per il componente Button */
-  className?: string;
   testId?: string;
+  /** Classi aggiuntive da usare per il componente Button */
+  color?: string;
+  className?: string;
+  outline?: boolean;
 }
 
 export const DropdownToggle: FC<DropdownToggleProps> = ({
@@ -19,45 +19,41 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
   testId,
   children,
   caret,
-  tag = 'button',
   inNavbar,
-  color,
-  ...attributes
+  color = '',
+  tag = 'button'
 }) => {
-  const toggleRef = useRef<HTMLAnchorElement & HTMLButtonElement>(null);
+  const Tag = tag === 'a' || inNavbar ? 'a' : 'button';
 
-  const Tag = tag === 'a' || inNavbar ? 'a' : Button;
-
-  useEffect(() => {
-    if (toggleRef.current) {
-      new Dropdown(toggleRef.current as HTMLAnchorElement & HTMLButtonElement);
-    }
-  });
   const classes = classNames(className, {
     'btn-dropdown': Tag === 'a' && !inNavbar,
     'dropdown-toggle': true,
-    'nav-link': inNavbar
+    btn: tag === 'button' && !inNavbar
   });
+
+  let colorClass = '';
+  if (tag === 'button' && color) {
+    colorClass = `btn-${color}`;
+  }
+
   const iconClasses = classNames({
     'icon-expand': true,
     'icon-sm': !inNavbar,
     'icon-xs': inNavbar,
     'ms-1': inNavbar,
-    'icon-light': Tag.valueOf() !== 'a' ? true : false
+    'icon-light': Tag.valueOf() !== 'a' ? true : false,
+    color: color ? 'white' : 'primary'
   });
   return (
-    <Tag
-      role={Tag.valueOf() === 'a' ? 'button' : undefined}
-      color={color}
-      ref={toggleRef}
-      className={classes}
-      data-bs-toggle='dropdown'
-      aria-haspopup='true'
+    <BSDropdownToggle
+      tag={Tag}
       data-testid={testId}
-      {...attributes}
+      role={Tag.valueOf() === 'a' ? 'button' : 'link'}
+      className={`${classes} ${colorClass}`}
+      nav={inNavbar}
     >
-      {children}
+      {children as React.ReactNode}
       {caret === true ? <Icon icon='it-expand' className={iconClasses} /> : null}
-    </Tag>
+    </BSDropdownToggle>
   );
 };

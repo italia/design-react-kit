@@ -3,8 +3,8 @@ import React from 'react';
 import { Col, Icon, Row, icons } from '../../src';
 
 const meta: Meta<typeof Icon> = {
-  title: "Documentazione/Utilities/Icon",
-  component: Icon,
+  title: 'Documentazione/Utilities/Icon',
+  component: Icon
 };
 
 export default meta;
@@ -12,14 +12,9 @@ export default meta;
 type Story = StoryObj<typeof Icon>;
 
 export const EsempioInterattivo: Story = {
-  render: ({
-    icon,
-    title,
-    size,
-    padding,
-    className,
-    color
-  }) => (<Icon icon={icon} size={size} title={title} padding={padding} color={color} className={className} />),
+  render: ({ icon, title, size, padding, className, color }) => (
+    <Icon icon={icon} size={size} title={title} padding={padding} color={color} className={className} />
+  ),
   args: {
     icon: 'it-tool',
     title: 'Alt Text',
@@ -38,21 +33,11 @@ export const EsempioInterattivo: Story = {
     },
     size: {
       control: 'select',
-      options: {
-        'Extra small': 'xs',
-        Small: 'sm',
-        default: '',
-        Large: 'lg',
-        'Extra Large': 'xl'
-      }
+      options: ['xs', 'sm', '', 'lg', 'xl']
     },
     className: {
       control: 'select',
-      options: {
-        default: '',
-        Scuro: 'bg-dark',
-        Chiaro: 'bg-light'
-      }
+      options: ['', 'bg-dark', 'bg-light']
     },
     color: {
       control: 'select',
@@ -88,7 +73,7 @@ export const EsempioPadding: Story = {
     color: '',
     className: 'bg-grey'
   }
-}
+};
 
 export const EsempioColori: Story = {
   render: ({ icon }) => {
@@ -106,7 +91,7 @@ export const EsempioColori: Story = {
   args: {
     icon: 'it-check-circle'
   }
-}
+};
 
 export const EsempioAllineamento: Story = {
   render: () => {
@@ -118,7 +103,7 @@ export const EsempioAllineamento: Story = {
       </div>
     );
   }
-}
+};
 
 export const ListaIcone: Story = {
   render: () => {
@@ -126,20 +111,21 @@ export const ListaIcone: Story = {
       <Row>
         {icons.map((icon) => (
           <Col md={{ size: 6 }} lg={{ size: 4 }} key={icon}>
-            <Icon icon={icon} />&nbsp;{icon}
+            <Icon icon={icon} />
+            &nbsp;{icon}
           </Col>
         ))}
       </Row>
     );
   }
-}
+};
 
 export const EsempioLoghiEsterni = {
   render: () => {
     return (
       <div style={{ lineHeight: '4em' }}>
-        <Icon icon='https://upload.wikimedia.org/wikipedia/it/f/f5/Palermo-Stemma_uff.png' title='Stemma Palermo' />
-        <Icon icon='https://dati.comune.roma.it/catalog/img/Roma-Stemma.png' size='lg' title='Stemma Roma' />
+        <Icon icon='https://upload.wikimedia.org/wikipedia/commons/1/12/Palermo-Stemma_%281999%29.svg' title='Stemma Palermo' />
+        <Icon icon='https://upload.wikimedia.org/wikipedia/commons/3/31/Roma-Stemma-2.svg' size='lg' title='Stemma Roma' />
         <Icon
           icon='https://upload.wikimedia.org/wikipedia/commons/9/93/CoA_Citt%C3%A0_di_Milano.svg'
           size='xl'
@@ -148,4 +134,4 @@ export const EsempioLoghiEsterni = {
       </div>
     );
   }
-}
+};

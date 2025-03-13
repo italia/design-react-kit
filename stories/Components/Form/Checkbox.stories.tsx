@@ -13,7 +13,7 @@ type Story = StoryObj<typeof Input>;
 
 export const CheckboxBase: Story = {
     render: () => (
-        <Form className="m-3">
+        <Form>
             <fieldset>
                 <legend>Checkbox</legend>
                 <FormGroup check>
@@ -32,7 +32,7 @@ export const CheckboxInline: Story = {
         <section>
             <fieldset>
                 <legend>Checkbox</legend>
-                <Form className="m-3">
+                <Form>
                     <FormGroup check inline>
                         <Input id="inline-checkbox1" type="checkbox" />
                         <Label for="inline-checkbox1" check>
@@ -56,7 +56,7 @@ export const CheckboxDisabilitato: Story = {
         <section>
             <fieldset>
                 <legend>Checkbox</legend>
-                <Form className="m-3">
+                <Form>
                     <FormGroup check>
                         <Input disabled id="disabled-checkbox1" type="checkbox" />
                         <Label for="disabled-checkbox1" check>
@@ -114,21 +114,21 @@ export const CheckboxGruppi: Story = {
                                 <Label for="group-checkbox4" check>
                                     Checkbox selezionato
                                 </Label>
-                                <FormText color="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
+                                <FormText id="group-checkbox4Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
                             </FormGroup>
                             <FormGroup check className="form-check-group">
                                 <Input id="group-checkbox5" type="checkbox" />
                                 <Label for="group-checkbox5" check>
                                     Checkbox non selezionato
                                 </Label>
-                                <FormText color="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
+                                <FormText id="group-checkbox5Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
                             </FormGroup>
                             <FormGroup check className="form-check-group">
                                 <Input id="group-checkbox6" type="checkbox" disabled />
                                 <Label for="group-checkbox6" check>
                                     Checkbox disabilitato non selezionato
                                 </Label>
-                                <FormText color="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
+                                <FormText id="group-checkbox6Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
                             </FormGroup>
                         </Form>
                     </fieldset>
@@ -141,7 +141,7 @@ export const CheckboxGruppi: Story = {
 //Da correggere il componente input nel caso in cui venga aggiunta la classe semi-checked perchè il render del componente è sbagliato
 export const CheckboxMixedButton: Story = {
     render: () => (
-        <Form className="m-3">
+        <Form>
             <fieldset>
                 <legend>Checkbox</legend>
                 <FormGroup check>

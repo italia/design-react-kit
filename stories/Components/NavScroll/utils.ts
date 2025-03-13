@@ -15,6 +15,7 @@ function insideIframe() {
   try {
     return window.self !== window.top;
   } catch (e) {
+    console.log(e);
     return true;
   }
 }

@@ -1,6 +1,6 @@
-import React, { FC, HTMLAttributes, ElementType } from 'react';
 import classNames from 'classnames';
 import isNumber from 'is-number';
+import React, { ElementType, FC, HTMLAttributes } from 'react';
 import { logError } from '../utils';
 
 export interface ProgressProps extends HTMLAttributes<HTMLElement> {
@@ -34,7 +34,6 @@ export const Progress: FC<ProgressProps> = ({
   indeterminate = false,
   color,
   testId,
-  role = 'progressbar',
   ...attributes
 }) => {
   const Tag = tag;

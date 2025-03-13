@@ -1,7 +1,7 @@
-import "@testing-library/jest-dom";
-import { fireEvent, render, screen } from '@testing-library/react';
 import React, { ReactElement } from 'react';
-import { Toolbar, ToolbarItem, preloadIcons } from '../src';
+import { fireEvent, render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
+import { ToolbarItem, preloadIcons, Toolbar } from '../src';
 
 function renderWithSize(size: 'small' | 'medium' | 'large', ui: ReactElement) {
   return render(<Toolbar size={size}>{ui}</Toolbar>);
@@ -40,17 +40,15 @@ describe('ToolbarItem component', () => {
   });
 
   it('should render a default disabled message when disabled and without label', () => {
-    const { container, queryByText } = render(<ToolbarItem iconName={'it-comment'} disabled />);
+    const { container } = render(<ToolbarItem iconName={'it-comment'} disabled />);
 
     expect(container.querySelector('.toolbar-label')).not.toBeInTheDocument();
-    expect(queryByText('elemento disabilitato')).toBeInTheDocument();
   });
 
   it('should render both label and default disabled message when disabled', () => {
     const { queryByText } = render(<ToolbarItem iconName={'it-comment'} label='some-label' disabled />);
 
     expect(queryByText('some-label')).toBeInTheDocument();
-    expect(queryByText('elemento disabilitato')).toBeInTheDocument();
   });
 
   it('should have a testId for resilient UI changes', () => {

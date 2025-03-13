@@ -119,7 +119,7 @@ export const Rating: FC<RatingProps> = ({
               {...extraFieldAttrs}
             />
             <Label className='full' for={id}>
-              <Icon icon='it-star-full' size='sm' />
+              <Icon icon='it-star-full' size='sm' aria-hidden='true' />
               <span className='visually-hidden'>{labelFn(currentValue)}</span>
             </Label>
           </Fragment>

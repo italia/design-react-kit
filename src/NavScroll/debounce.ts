@@ -4,12 +4,12 @@
  * Code: https://github.com/dej611/react-use-navscroll
  */
 
-export const debounce = (callback: Function, wait: number) => {
+export const debounce = (callback: CallableFunction, wait: number) => {
   let timeoutId: NodeJS.Timeout;
   return (...args: unknown[]) => {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => {
-      callback.apply(null, args);
+      callback(...args);
     }, wait);
   };
 };

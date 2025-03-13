@@ -1,4 +1,4 @@
-import { renderHook } from '@testing-library/react-hooks'; //react 18 -> https://github.com/testing-library/react-hooks-testing-library?tab=readme-ov-file#a-note-about-react-18-support
+import { renderHook } from '@testing-library/react'; //react 18 -> https://github.com/testing-library/react-hooks-testing-library?tab=readme-ov-file#a-note-about-react-18-support
 import { useSizeDetector, useSizeDetectorArgs } from '../src/NavScroll/useSizeDetector';
 
 function getDefaultProps(): useSizeDetectorArgs {

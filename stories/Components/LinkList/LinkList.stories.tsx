@@ -16,7 +16,7 @@ import {
 } from "../../../src";
 
 const meta: Meta<typeof LinkList> = {
-  title: "Documentazione/Organizzare i contenuti/Liste",
+  title: "Documentazione/Organizzare i contenuti/Liste di link",
   component: LinkList
 };
 
@@ -243,12 +243,9 @@ const CollapseExampleHooks = () => {
     toggleCollapse3(!collapseOpen3);
   };
 
-  const expanded = {
-    "aria-expanded": true,
-  };
   return (
     <LinkList>
-      <LinkListItem bold large className="icon-right" onClick={onToggle1} {...(collapseOpen1 ? expanded : {})}>
+      <LinkListItem bold large className="icon-right" onClick={onToggle1} aria-expanded={collapseOpen1}>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 1 </span>
           <Icon className="right" color="primary" icon="it-expand" aria-hidden />
@@ -267,7 +264,7 @@ const CollapseExampleHooks = () => {
           </LinkListItem>
         </LinkList>
       </Collapse>
-      <LinkListItem bold large className="icon-right" onClick={onToggle2} {...(collapseOpen2 ? expanded : {})}>
+      <LinkListItem bold large className="icon-right" onClick={onToggle2} aria-expanded={collapseOpen2}>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 2 </span>
           <Icon className="right" color="primary" icon="it-expand" aria-hidden />
@@ -286,7 +283,7 @@ const CollapseExampleHooks = () => {
           </LinkListItem>
         </LinkList>
       </Collapse>
-      <LinkListItem bold large className="icon-right" onClick={onToggle3} {...(collapseOpen3 ? expanded : {})}>
+      <LinkListItem bold large className="icon-right" onClick={onToggle3} aria-expanded={collapseOpen3}>
         <LinkListItem.TitleIconWrapper>
           <span>Link list 3 </span>
           <Icon className="right" color="primary" icon="it-expand" aria-hidden />
@@ -431,15 +428,15 @@ export const ConAvatar: Story = {
   render: () => (
     <LinkList>
       <LinkListItem active>
-        <img className="avatar lg-size" src="http://via.placeholder.com/40x40" title="avatartitle" alt="avataralt" />
+        <img className="avatar lg-size" src="http://placehold.co/40x40" title="avatartitle" alt="avataralt" />
         <span>Link list 1 active </span>
       </LinkListItem>
       <LinkListItem>
-        <img className="avatar lg-size" src="http://via.placeholder.com/40x40" title="avatartitle" alt="avataralt" />
+        <img className="avatar lg-size" src="http://placehold.co/40x40" title="avatartitle" alt="avataralt" />
         <span>Link list 2 </span>
       </LinkListItem>
       <LinkListItem disabled>
-        <img className="avatar lg-size" src="http://via.placeholder.com/40x40" title="avatartitle" alt="avataralt" />
+        <img className="avatar lg-size" src="http://placehold.co/40x40" title="avatartitle" alt="avataralt" />
         <span>Link list 3 disabled </span>
       </LinkListItem>
     </LinkList>

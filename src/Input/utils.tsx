@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { useState, useCallback } from 'react';
+import { useCallback, useState } from 'react';
 import type { CSSModule } from 'reactstrap/types/lib/utils';
 import { mapToCssModules } from '../utils';
 import type { InputProps } from './Input';
@@ -98,7 +98,7 @@ export function getClasses(
     ),
     cssModule
   );
-  const wrapperClass = mapToCssModules(classNames(className, originalWrapperClass, 'form-group'), cssModule);
+  const wrapperClass = mapToCssModules(classNames(originalWrapperClass, 'form-group'), cssModule);
   const validationTextClass = mapToCssModules(
     classNames(
       {

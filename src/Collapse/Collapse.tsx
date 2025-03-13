@@ -1,8 +1,11 @@
-import React, { ElementType, FC, HTMLAttributes, Ref } from 'react';
 import classNames from 'classnames';
+import React, { ElementType, FC, HTMLAttributes, Ref } from 'react';
 
 import { Collapse as CollapseBase } from 'reactstrap';
 import { CSSModule } from 'reactstrap/types/lib/utils';
+
+import { Icon } from '../Icon/Icon';
+
 
 // Copy over from reactstrap and add new ones
 export interface CollapseProps extends HTMLAttributes<HTMLElement> {
@@ -39,6 +42,8 @@ export interface CollapseProps extends HTMLAttributes<HTMLElement> {
   onOverlayClick?: () => void;
   /** Da utilizzare per impostare un riferimento all'elemento DOM */
   innerRef?: Ref<HTMLElement>;
+  /** Testo pulsante di chiusura per screen reader */
+  closeSrText?: string,
   testId?: string;
 }
 
@@ -52,17 +57,25 @@ export const Collapse: FC<CollapseProps> = ({
   onOverlayClick,
   cssModule,
   testId,
+  closeSrText='Nascondi la navigazione',
   ...attributes
 }) => {
   const newCssModule = {
     'navbar-collapse': 'navbar-collapsable',
     ...cssModule
   };
-  if (megamenu || navbar || header) {
+  if (megamenu || navbar) {
     const classes = classNames(className, 'navbar-collapse', {
       expanded: isOpen
     });
     const style = { display: isOpen ? 'block' : 'none' };
+    const overlayClasses = classNames(
+      'overlay',
+      {
+        'fade' : isOpen,
+        'show' : isOpen
+      }
+    )
     return (
       <CollapseBase
         className={classes}
@@ -72,13 +85,14 @@ export const Collapse: FC<CollapseProps> = ({
         data-testid={testId}
         {...attributes}
       >
-        <div className='overlay' style={style} onClick={onOverlayClick}></div>
-        <div className='close-div visually-hidden'>
-          <button className='btn close-menu' type='button'>
-            <span className='it-close'></span>close
+        <div className={overlayClasses} style={style} onClick={onOverlayClick}></div>
+        <div className='close-div'>
+          <button className='btn close-menu' type='button' onClick={onOverlayClick}>
+            <span className="visually-hidden">{closeSrText}</span>
+            <Icon color='white' icon='it-close-big'/>
           </button>
         </div>
-        {megamenu ? <div className='menu-wrapper'>{children}</div> : <>{children}</>}
+        {megamenu ? <div className='menu-wrapper '>{children}</div> : <>{children}</>}
       </CollapseBase>
     );
   }

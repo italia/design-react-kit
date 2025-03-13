@@ -1,5 +1,5 @@
-import React, { FC, HTMLAttributes, ElementType, Ref } from 'react';
 import classNames from 'classnames';
+import React, { ElementType, FC, HTMLAttributes, Ref } from 'react';
 
 export interface AvatarIconProps extends HTMLAttributes<HTMLElement> {
   /**
@@ -36,7 +36,8 @@ export const AvatarIcon: FC<AvatarIconProps> = ({
   const Tag = tag;
   const typeClass = classNames('avatar', {
     [`size-${size}`]: size,
-    [`avatar-${color}`]: color
+    [`avatar-${color}`]: color,
+    className
   });
   if (href) {
     return (

@@ -13,9 +13,16 @@ export default meta;
 type Story = StoryObj<typeof Rating>;
 
 export const RatingBase: Story = {
-  render: ({ value, legend }) => {
+  render: ({ legend }) => {
+    const [rating, setRating] = useState(0);
     return (
-      <Rating value={value} legend={legend} inputs={['star1a', 'star2a', 'star3a', 'star4a', 'star5a']} name='ratingA' />
+      <Rating 
+        value={rating} 
+        legend={legend} 
+        inputs={['star1a', 'star2a', 'star3a', 'star4a', 'star5a']} 
+        name='ratingA' 
+        onChangeRating={setRating}
+      />
     );
   },
   args: {

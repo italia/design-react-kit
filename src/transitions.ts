@@ -27,6 +27,7 @@ export const TransitionsKeys = [
   'onExited'
 ];
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const transitionStatus = {
   entering: 1,
   entered: 1,

@@ -1,10 +1,11 @@
-import React, { ElementType, FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
-
-export interface DropdownProps extends HTMLAttributes<HTMLElement> {
+import React, { ElementType, FC } from 'react';
+import { Dropdown as BSDRopdown, DropdownProps as  BSDRopdownProps} from 'reactstrap';
+export interface DropdownProps extends BSDRopdownProps {
   tag?: ElementType;
   inNavbar?: boolean;
   textCenter?: boolean;
+  theme?: string;
   /** Classi aggiuntive da usare per il componente Button */
   className?: string;
   testId?: string;
@@ -13,23 +14,37 @@ export interface DropdownProps extends HTMLAttributes<HTMLElement> {
 export const Dropdown: FC<DropdownProps> = ({
   className,
   testId,
-  tag,
   children,
   inNavbar,
   textCenter,
+  theme,
   ...attributes
 }) => {
   const classes = classNames(className, {
-    dropdown: true,
     'text-center': textCenter,
-    'nav-item': inNavbar
   });
 
-  const Tag = tag !== undefined ? tag : 'div';
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Tag className={classes} data-testid={testId} {...attributes}>
-      {children}
-    </Tag>
+    <BSDRopdown
+      menuRole='menu'
+      color={theme}
+      isOpen={isOpen}
+      toggle={toggle}
+      className={classes}
+      data-testid={testId}
+      {...attributes}
+      inNavbar={inNavbar}
+      nav={inNavbar}
+    >
+      {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        React.Children.map(children, (child: any) =>
+          React.cloneElement(child, { inNavbar: inNavbar })
+        )
+      }    
+    </BSDRopdown>
   );
 };

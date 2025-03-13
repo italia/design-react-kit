@@ -16,13 +16,8 @@ export const Toggles: Story = {
         return (
             <Row>
                 <Col sm="6">
-                    <FormGroup check className="m-3">
+                    <FormGroup check>
                         <Toggle label="Label dell'interruttore 1" disabled={false} />
-                    </FormGroup>
-                </Col>
-                <Col sm="6">
-                    <FormGroup check className="m-3">
-                        <Toggle label={<span>Label dell&apos;interruttore 2</span>} defaultChecked disabled={false} />
                     </FormGroup>
                 </Col>
             </Row>
@@ -35,13 +30,8 @@ export const TogglesDisabilitate: Story = {
         return (
             <Row>
                 <Col sm="6">
-                    <FormGroup check className="m-3">
+                    <FormGroup check>
                         <Toggle label="Label dell'interruttore 1" disabled={true} />
-                    </FormGroup>
-                </Col>
-                <Col sm="6">
-                    <FormGroup check className="m-3">
-                        <Toggle label={<span>Label dell&apos;interruttore 2</span>} defaultChecked disabled={true} />
                     </FormGroup>
                 </Col>
             </Row>
@@ -54,34 +44,40 @@ export const GruppiDiToggles: Story = {
         return (
             <Row className="m-5">
                 <Col md={5}>
-                    <Form>
-                        <FormGroup check className="form-check-group">
-                            <Toggle defaultChecked label="Toggle acceso" />
-                        </FormGroup>
-                        <FormGroup check className="form-check-group">
-                            <Toggle label="Toggle spento" />
-                        </FormGroup>
-                        <FormGroup check className="form-check-group">
-                            <Toggle disabled label="Toggle disabilitato" />
-                        </FormGroup>
-                    </Form>
+                    <fieldset>
+                        <legend>Gruppo di toggle</legend>
+                        <Form>
+                            <FormGroup check className="form-check-group">
+                                <Toggle defaultChecked label="Toggle acceso" id="toggleEsempio3a" />
+                            </FormGroup>
+                            <FormGroup check className="form-check-group">
+                                <Toggle label="Toggle spento" id="toggleEsempio3b" />
+                            </FormGroup>
+                            <FormGroup check className="form-check-group">
+                                <Toggle disabled label="Toggle disabilitato" id="toggleEsempio3c" />
+                            </FormGroup>
+                        </Form>
+                    </fieldset>
                 </Col>
                 <Col md={2} />
                 <Col md={5}>
-                    <Form>
-                        <FormGroup check className="form-check-group">
-                            <Toggle defaultChecked label="Toggle acceso" />
-                            <FormText color="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
-                        </FormGroup>
-                        <FormGroup check className="form-check-group">
-                            <Toggle label="Toggle spento" />
-                            <FormText color="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
-                        </FormGroup>
-                        <FormGroup check className="form-check-group">
-                            <Toggle disabled label="Toggle disabilitato" />
-                            <FormText color="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
-                        </FormGroup>
-                    </Form>
+                    <fieldset>
+                        <legend>Gruppo di toggle</legend>
+                        <Form>
+                            <FormGroup check className="form-check-group">
+                                <Toggle defaultChecked label="Toggle acceso" id="toggleEsempio3d"/>
+                                <FormText id="toggleEsempio3dDescription" color="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
+                            </FormGroup>
+                            <FormGroup check className="form-check-group">
+                                <Toggle label="Toggle spento" id="toggleEsempio3e"/>
+                                <FormText id="toggleEsempio3eDescription" color="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
+                            </FormGroup>
+                            <FormGroup check className="form-check-group">
+                                <Toggle disabled label="Toggle disabilitato" id="toggleEsempio3f" />
+                                <FormText id="toggleEsempio3fDescription" color="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</FormText>
+                            </FormGroup>
+                        </Form>
+                    </fieldset>
                 </Col>
             </Row>
         );

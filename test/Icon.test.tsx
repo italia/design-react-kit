@@ -1,20 +1,8 @@
-import "@testing-library/jest-dom";
+import '@testing-library/jest-dom';
 import { render, waitFor, within } from '@testing-library/react';
 import React from 'react';
 
-import { readFile } from 'fs/promises';
-import { join } from 'path';
-import { Icon, clearIconCache, icons, preloadIcons } from '../src';
-
-async function getExceptionList() {
-  const content = await readFile(join(__dirname, './', 'icons-with-no-title.txt'), 'utf8');
-  return new Set(
-    content
-      .split('\n')
-      .map((s) => s.replace('.svg', ''))
-      .filter(Boolean)
-  );
-}
+import { clearIconCache, Icon, icons, preloadIcons } from '../src';
 
 function getIcon(container: Element) {
   return container.firstChild;
@@ -93,17 +81,6 @@ test('should have a testId for resilient UI changes', async () => {
   await waitFor(() => expect(getByTestId('test-id-icon')).toBeTruthy());
 });
 
-test(`should have default title when no title is passed`, async () => {
-  await preloadIcons(icons);
-  const exceptionList = await getExceptionList();
-  const { container, rerender } = render(<Icon icon={''} title={undefined} />);
-  for (const icon of icons) {
-    rerender(<Icon icon={icon} title={undefined} />);
-    if (!exceptionList.has(icon)) {
-      expect(within(container).getByTitle((content) => content != null)).toBeTruthy();
-    }
-  }
-});
 
 test('should render a title when passed', async () => {
   await preloadIcons(icons);

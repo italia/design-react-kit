@@ -31,14 +31,14 @@ export const Esempi: Story = {
       <Timeline>
         <Row>
           <Col xs='12'>
-            <TimelinePin label='maggio 2018' past>
+            <TimelinePin label='maggio 2018' past iconTitle='Segnaposto'>
               {/* start card */}
               <Card>
                 <CardBody>
-                  <CardCategory date='10/12/2018'>Category</CardCategory>
-                  <CardTitle tag='h5' className='big-heading'>
+                  <CardTitle tag='h4' className='h5 big-heading'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                   </CardTitle>
+                  <CardCategory textDescription='Categoria: '>Category</CardCategory>
                   <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua.
@@ -51,11 +51,11 @@ export const Esempi: Story = {
             </TimelinePin>
           </Col>
           <Col xs='12'>
-            <TimelinePin label='giugno 2018' past>
+            <TimelinePin label='giugno 2018' past iconTitle='Segnaposto'>
               {/* start card */}
               <Card>
                 <CardBody>
-                  <CardTitle tag='h5'>
+                  <CardTitle tag='h4' className='h5'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
                   </CardTitle>
                   <CardText>
@@ -68,14 +68,14 @@ export const Esempi: Story = {
             </TimelinePin>
           </Col>
           <Col xs='12'>
-            <TimelinePin label='luglio 2018' past>
+            <TimelinePin label='luglio 2018' past iconTitle='Segnaposto'>
               {/* start card */}
               <Card>
                 <CardBody>
-                  <CardCategory date='10/12/2018'>Category</CardCategory>
-                  <CardTitle tag='h5' className='big-heading'>
+                  <CardTitle tag='h4' className='h5 big-heading'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                   </CardTitle>
+                  <CardCategory textDescription='Categoria: ' dateDescription='Data evento: ' date='10/12/2018'>Category</CardCategory>
                   <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua.
@@ -88,11 +88,11 @@ export const Esempi: Story = {
             </TimelinePin>
           </Col>
           <Col xs='12'>
-            <TimelinePin label='agosto 2018' now nowText='Oggi'>
+            <TimelinePin label='agosto 2018' now nowText='Oggi' iconTitle='Segnaposto'>
               {/* start card */}
               <Card>
                 <CardBody>
-                  <CardTitle tag='h5'>
+                  <CardTitle tag='h4' className='h5'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
                   </CardTitle>
                   <CardText>
@@ -105,14 +105,14 @@ export const Esempi: Story = {
             </TimelinePin>
           </Col>
           <Col xs='12'>
-            <TimelinePin label='settembre 2018'>
+            <TimelinePin label='settembre 2018' iconTitle='Segnaposto'>
               {/* start card */}
               <Card>
                 <CardBody>
-                  <CardCategory date='10/12/2018'>Category</CardCategory>
-                  <CardTitle tag='h5' className='big-heading'>
+                  <CardTitle tag='h4' className='h5 big-heading'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                   </CardTitle>
+                  <CardCategory textDescription='Categoria: ' dateDescription='Data evento: ' date='10/12/2018'>Category</CardCategory>
                   <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua.
@@ -125,11 +125,11 @@ export const Esempi: Story = {
             </TimelinePin>
           </Col>
           <Col xs='12'>
-            <TimelinePin label='ottobre 2018'>
+            <TimelinePin label='ottobre 2018' iconTitle='Segnaposto'>
               {/* start card */}
               <Card>
                 <CardBody>
-                  <CardTitle tag='h5'>
+                  <CardTitle tag='h4' className='h5'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
                   </CardTitle>
                   <CardText>
@@ -142,14 +142,14 @@ export const Esempi: Story = {
             </TimelinePin>
           </Col>
           <Col xs='12'>
-            <TimelinePin label='novembre 2018'>
+            <TimelinePin label='novembre 2018' iconTitle='Segnaposto'>
               {/* start card */}
               <Card>
                 <CardBody>
-                  <CardCategory date='10/12/2018'>Category</CardCategory>
-                  <CardTitle tag='h5' className='big-heading'>
+                  <CardTitle tag='h4' className='h5 big-heading'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit…
                   </CardTitle>
+                  <CardCategory textDescription='Categoria: ' dateDescription='Data evento: ' date='10/12/2018'>Category</CardCategory>
                   <CardText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua.
@@ -162,11 +162,11 @@ export const Esempi: Story = {
             </TimelinePin>
           </Col>
           <Col xs='12'>
-            <TimelinePin label='dicembre 2018'>
+            <TimelinePin label='dicembre 2018' iconTitle='Segnaposto'>
               {/* start card */}
               <Card>
                 <CardBody>
-                  <CardTitle tag='h5'>
+                  <CardTitle tag='h4' className='h5'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
                   </CardTitle>
                   <CardText>

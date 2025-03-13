@@ -21,7 +21,6 @@ export const ThumbNavItem: FC<ThumbNavItemProps> = ({
 
   return (
     <li {...attributes} data-testid={testId}>
-      <img src={'https://picsum.photos/240/160?image=1056'} className='thumb-nav-resizer' aria-hidden='true' alt='' />
       <a href={targetUrl} className={classes}>
         <img src={imageUrl} alt={actionDescription} />
       </a>

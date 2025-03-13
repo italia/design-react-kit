@@ -1,11 +1,9 @@
-import React, { ElementType, useCallback, useState } from 'react';
 import classNames from 'classnames';
+import React, { ElementType, PropsWithChildren, useCallback, useState } from 'react';
 import { Transition } from 'react-transition-group';
-
-import { pick, omit } from '../utils';
-import { TransitionTimeouts, TransitionsKeys } from '../transitions';
 import type { TransitionProps } from 'react-transition-group/Transition';
-import type { TransitionStates } from '../transitions';
+import { TransitionTimeouts, TransitionsKeys } from '../transitions';
+import { omit, pick } from '../utils';
 
 export type AccordionBodyProps = Partial<TransitionProps> & {
   tag?: ElementType;
@@ -16,14 +14,14 @@ export type AccordionBodyProps = Partial<TransitionProps> & {
 };
 
 // hardcode these entries to avoid leaks
-const transitionStatusToClassHash: Record<TransitionStates, string> = {
+const transitionStatusToClassHash: Record<string, string> = {
   entering: 'collapsing',
   entered: 'collapse show',
   exiting: 'collapsing',
   exited: 'collapse'
 };
 
-function getTransitionClass(status: TransitionStates) {
+function getTransitionClass(status: string) {
   return transitionStatusToClassHash[status] || 'collapse';
 }
 
@@ -39,7 +37,7 @@ export const AccordionBody = ({
   children,
   timeout = TransitionTimeouts.Collapse,
   ...attributes
-}: AccordionBodyProps) => {
+}: PropsWithChildren<AccordionBodyProps>) => {
   const [height, setHeight] = useState<null | number>(null);
 
   const onEntering = useCallback(
@@ -66,7 +64,7 @@ export const AccordionBody = ({
   const onExiting = useCallback(
     (node: HTMLElement) => {
       // getting this variable triggers a reflow
-      // @ts-expect-error
+      // @ts-expect-error variabile non usata
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const _unused = node.offsetHeight;
       setHeight(0);
@@ -97,7 +95,7 @@ export const AccordionBody = ({
       onExiting={onExiting}
       onExited={onExited}
     >
-      {(status: TransitionStates) => {
+      {(status) => {
         const transitionClass = getTransitionClass(status);
         const classes = classNames(className, transitionClass);
         const listClasses = classNames(listClassName, 'accordion-body');

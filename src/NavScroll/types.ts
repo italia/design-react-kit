@@ -86,6 +86,10 @@ export type useNavScrollResult = {
    * A function to retrieve the reference of the current active element (only the last element, not the elements hierarchy).
    */
   getActiveRef: () => RefObject<Element> | null;
+  /**
+  * A list of active ids (the full hierarchy).
+  */
+  percentage: number;
 };
 
 // @private

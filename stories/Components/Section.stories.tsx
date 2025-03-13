@@ -14,11 +14,11 @@ export default meta;
 
 export const Esempio = () => {
   return (
-    <Section>
+    <Section aria-labelledby="titleEx1">
       <Container>
         <Row className='mb-3'>
           <Col xs={'12'}>
-            <h4>Morbi fermentum amet</h4>
+            <h2 id="titleEx1">Morbi fermentum amet</h2>
           </Col>
         </Row>
         <Row>
@@ -42,11 +42,11 @@ export const Esempio = () => {
 
 export const SfondoTenue = () => {
   return (
-    <Section color='muted'>
+    <Section color='muted' aria-labelledby="titleEx2">
       <Container>
         <Row className='mb-3'>
           <Col xs={'12'}>
-            <h4>Morbi fermentum amet</h4>
+            <h2 id="titleEx2">Morbi fermentum amet</h2>
           </Col>
         </Row>
         <Row>
@@ -70,11 +70,11 @@ export const SfondoTenue = () => {
 
 export const SfondoPrimario = () => {
   return (
-    <Section color='primary'>
+    <Section color='primary' aria-labelledby="titleEx3">
       <Container className='white-color'>
         <Row>
           <Col xs={'12'}>
-            <h4>Morbi fermentum amet</h4>
+            <h2 id="titleEx3">Morbi fermentum amet</h2>
           </Col>
         </Row>
         <Row>
@@ -98,11 +98,11 @@ export const SfondoPrimario = () => {
 
 export const SfondoNeutrale = () => {
   return (
-    <Section color='neutral'>
+    <Section color='neutral' aria-labelledby="titleEx4">
       <Container className='white-color'>
         <Row>
           <Col xs={'12'}>
-            <h4>Morbi fermentum amet</h4>
+            <h2 id="titleEx4">Morbi fermentum amet</h2>
           </Col>
         </Row>
         <Row>
@@ -126,11 +126,11 @@ export const SfondoNeutrale = () => {
 
 export const ImmagineDiSfondo = () => {
   return (
-    <Section image='https://picsum.photos/1280/720?image=811'>
+    <Section image='https://picsum.photos/1280/720?image=811' aria-labelledby="titleEx5">
       <Container className='white-color'>
         <Row>
           <Col xs={'12'}>
-            <h4>Morbi fermentum amet</h4>
+            <h2 id="titleEx5">Morbi fermentum amet</h2>
           </Col>
         </Row>
         <Row>
@@ -154,8 +154,8 @@ export const ImmagineDiSfondo = () => {
 
 export const SectionConCard = () => {
   return (
-    <Section color='muted'>
-      <h4>Morbi fermentum amet</h4>
+    <Section color='muted' aria-labelledby="titleEx6">
+      <h2 id="titleEx6">Morbi fermentum amet</h2>
       <Row>
         <Col sm={6}>
           <Card className='shadow h-100' noWrapper>

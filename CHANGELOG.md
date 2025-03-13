@@ -1,3 +1,82 @@
+## [5.4.1](https://github.com/italia/design-react-kit/compare/v5.4.0...v5.4.1) (2024-11-11)
+
+
+### Bug Fixes
+
+* form control class missing for text area ([be15805](https://github.com/italia/design-react-kit/commit/be15805128978bb02a3ed537f52f5427c9a8e990))
+* remove classname from input wrapper ([5fe3186](https://github.com/italia/design-react-kit/commit/5fe3186574a5b33adf5d1085f01320dcc4b8abf5))
+
+
+
+# [5.4.0](https://github.com/italia/design-react-kit/compare/v5.3.0...v5.4.0) (2024-11-07)
+
+
+### Bug Fixes
+
+* **a11y:** toolbar divider ([5785c9c](https://github.com/italia/design-react-kit/commit/5785c9c288743186eca4ad36294caba86c044f7f))
+* thumbnail extra space ([7c06f04](https://github.com/italia/design-react-kit/commit/7c06f0492b0c78f3c96ed99398748fd20df66995))
+* timeline headers ([6e24aae](https://github.com/italia/design-react-kit/commit/6e24aae08d3a8e5df8483f761d77f0a7dac1c83e))
+* visually hidden in toolbar ([ad00131](https://github.com/italia/design-react-kit/commit/ad00131ded6a8dfbb291f60f11dc77e28bd841ae))
+
+
+### Features
+
+* add text and date description to card category component ([39925bd](https://github.com/italia/design-react-kit/commit/39925bdb4b11cd2c7f2e2515ba8d6a57f5de2833))
+* new lists ([5021fd1](https://github.com/italia/design-react-kit/commit/5021fd120a629f7fb12e818f4e2dcc53a0fda064))
+* new responsive images ([99cf472](https://github.com/italia/design-react-kit/commit/99cf4721822a20f9f69eebfdc84f472fa4131b3b))
+* use href in forward component ([9e20c53](https://github.com/italia/design-react-kit/commit/9e20c5359b7aa68af083984fe3c554cd7c0c0241))
+
+
+
+# [5.3.0](https://github.com/italia/design-react-kit/compare/v5.2.0...v5.3.0) (2024-10-31)
+
+
+### Bug Fixes
+
+* **a11y:** add aria labelled to sections ([eeca34d](https://github.com/italia/design-react-kit/commit/eeca34d39787fa09bf5a499a1e1ee0be15cf1465))
+* **a11y:** hero component ([4d17fe7](https://github.com/italia/design-react-kit/commit/4d17fe71e43cf19d7904cc678439bcffdc76b505))
+* **a11y:** title and doc link for modal ([c0a92be](https://github.com/italia/design-react-kit/commit/c0a92be35a076da3cc68b3531f2e7243777c9555))
+* group form in examples ([239904d](https://github.com/italia/design-react-kit/commit/239904d11c4d0958d634e670edd68cf45ae7a1aa))
+* icons with default title ([14e154b](https://github.com/italia/design-react-kit/commit/14e154b2ad495b18a20cc19774bb2ee3a4fcd722))
+
+
+### Features
+
+* improve dimmer component ([548608a](https://github.com/italia/design-react-kit/commit/548608a15b4a55061e9f2469ea3a5e79fefc4d3a))
+
+
+
+# [5.2.0](https://github.com/italia/design-react-kit/compare/v5.1.0...v5.2.0) (2024-08-05)
+
+
+### Bug Fixes
+
+* thumbnav is a navigation component ([501417e](https://github.com/italia/design-react-kit/commit/501417eda9006de9ea1931d7809aed33125fd90f))
+
+
+### Features
+
+* add list component ([e4c9e14](https://github.com/italia/design-react-kit/commit/e4c9e14f6295343bce7262665fa54ba4085cad30))
+
+
+
+# [5.1.0](https://github.com/italia/design-react-kit/compare/v5.0.4...v5.1.0) (2024-07-02)
+
+
+### Bug Fixes
+
+* alert default props ([39821d9](https://github.com/italia/design-react-kit/commit/39821d93a4b68bf0edd60953e940ebed2c1d5775))
+* dimmer ios bug ([315760a](https://github.com/italia/design-react-kit/commit/315760a217541f9a5b73dc9ea92b8c559f4be362))
+
+
+### Features
+
+* add icon and button to input ([7ad4ca9](https://github.com/italia/design-react-kit/commit/7ad4ca948ee52f35835b6efc19fc424976cd818c))
+* **deps:** update to react 18 ([ac0b4d5](https://github.com/italia/design-react-kit/commit/ac0b4d597442e6045d771be55a1437131b90b305))
+* new dropdown based on reactstrap ([3e4eda6](https://github.com/italia/design-react-kit/commit/3e4eda671f89436587fc315ade8dff0deb2919f2))
+
+
+
 ## [5.0.4](https://github.com/italia/design-react-kit/compare/v5.0.3...v5.0.4) (2024-05-02)
 
 
@@ -107,5 +186,4 @@
 ### Features
 
 * numeric input component ([d4a299c](https://github.com/italia/design-react-kit/commit/d4a299cb43ad138352deab45d552bd33a3be3b19))
-
 

@@ -65,7 +65,7 @@ Per giocare con la libreria è disponibile il [Playground React Kit](https://git
 Per utilizzare Design React come dipendenza in un'app è possibile installarla da [npm](https://www.npmjs.com/~italia). Suggeriamo di usare `create vite` per creare una nuova webapp React, come segue:
 
 ```sh
-yarn create vite my-react-app --template react
+yarn create vite nome-app --template react
 cd nome-app
 yarn add design-react-kit --save
 ```
