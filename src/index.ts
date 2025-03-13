@@ -51,7 +51,7 @@ export { AccordionBody } from './Accordion/AccordionBody';
 export { AccordionHeader } from './Accordion/AccordionHeader';
 export { AccordionItem } from './Accordion/AccordionItem';
 export { Alert } from './Alert/Alert';
-export { Autocomplete, Autocomplete } from './Autocomplete/Autocomplete';
+export { Autocomplete } from './Autocomplete/Autocomplete';
 export { AvatarContainer } from './Avatar/AvatarContainer';
 export { AvatarExtraText } from './Avatar/AvatarExtraText';
 export { AvatarGroupContainer } from './Avatar/AvatarGroupContainer';
