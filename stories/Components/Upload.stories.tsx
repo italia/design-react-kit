@@ -47,7 +47,7 @@ const listaFilesArgs: listaFilesArgsI = {
 
 export const ListaFiles = {
   render: ({ ...listaFilesArgs }: listaFilesArgsI) => (
-    <UploadList>
+    <UploadList tipologia='file'>
       {Object.values(listaFilesArgs).map((type) => {
         return <UploadListItem key={type.fileName} {...type} />;
       })}
@@ -94,7 +94,7 @@ const listaFilesImmagineArgs: listaFilesArgsI = {
 
 export const ListaFilesImmagine = {
   render: ({ ...listaFilesImmagineArgs }: listaFilesArgsI) => (
-    <UploadList previewImage>
+    <UploadList tipologia='file' previewImage>
       {Object.values(listaFilesImmagineArgs).map((type) => {
         return <UploadListItem key={type.fileName} {...type} />;
       })}
@@ -132,4 +132,34 @@ export const UploadAvatar: Story = {
     icon: 'it-camera',
     isAvatar: true
   }
+};
+
+export const Gallery = {
+  render: () => (
+    <>
+      <UploadList tipologia='gallery'>
+        <UploadListItem>
+          <UploadListItem.UploadButton id='upload'>Carica foto</UploadListItem.UploadButton>
+        </UploadListItem>
+      </UploadList>
+      <p className='mt-5'>
+        <strong>Esempio Immagini Caricate</strong>
+      </p>
+      <UploadList tipologia='gallery'>
+        <UploadListItem
+          previewImage={true}
+          previewImageSrc='https://picsum.photos/128/128?image=1020'
+          previewImageAlt='descrizione immagine'
+        />
+        <UploadListItem
+          previewImage={true}
+          previewImageSrc='https://picsum.photos/128/128?image=1038'
+          previewImageAlt='descrizione immagine'
+        />
+        <UploadListItem>
+          <UploadListItem.UploadButton id='upload'>Carica foto</UploadListItem.UploadButton>
+        </UploadListItem>
+      </UploadList>
+    </>
+  )
 };
