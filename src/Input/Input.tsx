@@ -62,7 +62,7 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   decrementLabel?: string | ReactNode;
   /** Testo di esempio da utilizzare per il campo. */
   placeholder?: string;
-  /** Testo di validazione per l'elemento del moduleo form. */
+  /** Testo di validazione per l'elemento del modulo form. */
   validationText?: string;
   /** Testo di aiuto per l'elemento del moduleo form. Richiede che il componente `Input` abbia la prop `id` impostata. */
   infoText?: string;
