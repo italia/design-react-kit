@@ -79,6 +79,8 @@ export { CardTag } from './Card/CardTag';
 export { CardTagsHeader } from './Card/CardTagsHeader';
 export { CardText } from './Card/CardText';
 export { CardTitle } from './Card/CardTitle';
+export { Carousel } from './Carousel/Carousel';
+export { CarouselSlide } from './Carousel/CarouselSlide';
 export { Chip } from './Chips/Chip';
 export { ChipLabel } from './Chips/ChipLabel';
 export { Collapse } from './Collapse/Collapse';
