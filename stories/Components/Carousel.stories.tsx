@@ -8,7 +8,7 @@ import {
 
 //Non esiste un componente specifico per cui uso Container come riferimento per la storia
 const meta: Meta<typeof Container> = {
-  title: 'Documentazione Carousel',
+  title: 'Documentazione/Componenti/Carousel',
   component: Container,
 };
 
@@ -139,7 +139,7 @@ for (let i = 0 ; i < 10 ; i++) {
 
 export const Base: Story = {
   render: () => (
-    <Carousel type="landscape-three-cols-arrows">
+    <Carousel type="landscape-three-cols-arrows" tag='nav'>
       {carouselSlides}
     </Carousel>
   )
