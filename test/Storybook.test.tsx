@@ -4,6 +4,7 @@ import { act, render } from '@testing-library/react';
 import * as glob from 'glob';
 import path from 'path';
 import './__mocks__/IntersectionObserverMock';
+import './__mocks__/matchMedia';
 
 type StoryFile = {
   default: Meta;
