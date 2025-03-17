@@ -180,6 +180,7 @@ export type { CardTagProps } from './Card/CardTag';
 export type { CardTagsHeaderProps } from './Card/CardTagsHeader';
 export type { CardTextProps } from './Card/CardText';
 export type { CardTitleProps } from './Card/CardTitle';
+export type { CarouselProps } from './Carousel/Carousel';
 export type { ChipProps } from './Chips/Chip';
 export type { ChipLabelProps } from './Chips/ChipLabel';
 export type { DimmerProps } from './Dimmer/Dimmer';
