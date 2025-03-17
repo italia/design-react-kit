@@ -79,6 +79,8 @@ export { CardTag } from './Card/CardTag';
 export { CardTagsHeader } from './Card/CardTagsHeader';
 export { CardText } from './Card/CardText';
 export { CardTitle } from './Card/CardTitle';
+export { Carousel } from './Carousel/Carousel';
+export { CarouselSlide } from './Carousel/CarouselSlide';
 export { Chip } from './Chips/Chip';
 export { ChipLabel } from './Chips/ChipLabel';
 export { Collapse } from './Collapse/Collapse';
@@ -146,6 +148,7 @@ export { Toggle } from './Toggle/Toggle';
 export { Toolbar } from './Toolbar/Toolbar';
 export { ToolbarDividerItem } from './Toolbar/ToolbarDividerItem';
 export { ToolbarItem } from './Toolbar/ToolbarItem';
+export { Transfer } from './Transfer/Transfer';
 
 // Types
 export type { AccordionProps } from './Accordion/Accordion';
@@ -177,6 +180,7 @@ export type { CardTagProps } from './Card/CardTag';
 export type { CardTagsHeaderProps } from './Card/CardTagsHeader';
 export type { CardTextProps } from './Card/CardText';
 export type { CardTitleProps } from './Card/CardTitle';
+export type { CarouselProps } from './Carousel/Carousel';
 export type { ChipProps } from './Chips/Chip';
 export type { ChipLabelProps } from './Chips/ChipLabel';
 export type { DimmerProps } from './Dimmer/Dimmer';

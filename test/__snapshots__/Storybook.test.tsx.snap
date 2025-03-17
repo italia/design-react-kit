@@ -4255,6 +4255,3737 @@ exports[`Stories Snapshots Documentazione/Componenti/Cards SpecialCard 1`] = `
 </div>
 `;
 
+exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
+<div>
+  <div
+    aria-roledescription="Carosello"
+    class="splide it-carousel-wrapper it-carousel-landscape-abstract-three-cols-arrow-visible splide--slide splide--ltr splide--draggable is-active is-initialized"
+    id="splide01"
+    role="region"
+  >
+    <div
+      class="splide__arrows splide__arrows--ltr"
+    >
+      <button
+        aria-controls="splide01-track"
+        aria-label="Vai all’ultima slide"
+        class="splide__arrow splide__arrow--prev"
+        type="button"
+      >
+        <svg
+          focusable="false"
+          height="40"
+          viewBox="0 0 40 40"
+          width="40"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+          />
+        </svg>
+      </button>
+      <button
+        aria-controls="splide01-track"
+        aria-label="Slide successiva"
+        class="splide__arrow splide__arrow--next"
+        type="button"
+      >
+        <svg
+          focusable="false"
+          height="40"
+          viewBox="0 0 40 40"
+          width="40"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      aria-atomic="true"
+      aria-live="polite"
+      class="splide__track splide__track--slide splide__track--ltr splide__track--draggable"
+      id="splide01-track"
+      style="padding-left: 0px; padding-right: 0px;"
+    >
+      <ul
+        class="splide__list"
+        id="splide01-list"
+        role="presentation"
+        style="transform: translateX(0px);"
+      >
+        <li
+          aria-label="1 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-active is-visible"
+          id="splide01-slide01"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <p
+                    class="card-text"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <span
+                    class="card-signature"
+                  >
+                    di Federico De Paolis
+                  </span>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="2 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible is-next"
+          id="splide01-slide02"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <p
+                    class="card-text"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <span
+                    class="card-signature"
+                  >
+                    di Federico De Paolis
+                  </span>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="3 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide01-slide03"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <p
+                    class="card-text"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <span
+                    class="card-signature"
+                  >
+                    di Federico De Paolis
+                  </span>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="4 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide01-slide04"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <p
+                    class="card-text"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <span
+                    class="card-signature"
+                  >
+                    di Federico De Paolis
+                  </span>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="5 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide01-slide05"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <p
+                    class="card-text"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <span
+                    class="card-signature"
+                  >
+                    di Federico De Paolis
+                  </span>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="6 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide01-slide06"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <p
+                    class="card-text"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <span
+                    class="card-signature"
+                  >
+                    di Federico De Paolis
+                  </span>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="7 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide01-slide07"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <p
+                    class="card-text"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <span
+                    class="card-signature"
+                  >
+                    di Federico De Paolis
+                  </span>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="8 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide01-slide08"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <p
+                    class="card-text"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <span
+                    class="card-signature"
+                  >
+                    di Federico De Paolis
+                  </span>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="9 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide01-slide09"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <p
+                    class="card-text"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <span
+                    class="card-signature"
+                  >
+                    di Federico De Paolis
+                  </span>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="10 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide01-slide10"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <p
+                    class="card-text"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <span
+                    class="card-signature"
+                  >
+                    di Federico De Paolis
+                  </span>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul
+      aria-label="Seleziona una slide da mostrare"
+      class="splide__pagination splide__pagination--ltr"
+      role="tablist"
+    >
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide01-slide01 splide01-slide02 splide01-slide03"
+          aria-label="Vai a pagina 1"
+          aria-selected="true"
+          class="splide__pagination__page is-active"
+          role="tab"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide01-slide04 splide01-slide05 splide01-slide06"
+          aria-label="Vai a pagina 2"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide01-slide07 splide01-slide08 splide01-slide09"
+          aria-label="Vai a pagina 3"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide01-slide08 splide01-slide09 splide01-slide10"
+          aria-label="Vai a pagina 4"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Carousel EvidenceImage 1`] = `
+<div>
+  <div
+    aria-roledescription="Carosello"
+    class="splide it-carousel-wrapper it-carousel-landscape-abstract splide--slide splide--ltr splide--draggable is-active is-initialized"
+    id="splide02"
+    role="region"
+  >
+    <div
+      aria-atomic="true"
+      aria-live="polite"
+      class="splide__track splide__track--slide splide__track--ltr splide__track--draggable"
+      id="splide02-track"
+      style="padding-left: 0px; padding-right: 0px;"
+    >
+      <ul
+        class="splide__list"
+        id="splide02-list"
+        role="presentation"
+        style="transform: translateX(0px);"
+      >
+        <li
+          aria-label="1 di 3"
+          aria-roledescription="slide"
+          class="splide__slide is-active is-visible"
+          id="splide02-slide01"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="img-responsive-wrapper"
+            >
+              <div
+                class="img-responsive"
+              >
+                <div
+                  class="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="it-text-slider-wrapper-outside"
+            >
+              <div
+                class="card-wrapper"
+              >
+                <div
+                  class="card"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    <div
+                      class="category-top"
+                    >
+                      <a
+                        class="category"
+                      >
+                        Category
+                      </a>
+                      <span
+                        class="data"
+                      >
+                        10/12/2018
+                      </span>
+                    </div>
+                    <h5
+                      class="big-heading card-title"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                    </h5>
+                    <p
+                      class="card-text"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <span
+                      class="card-signature"
+                    >
+                      di Federico De Paolis
+                    </span>
+                    <a
+                      class="read-more"
+                    >
+                      <span
+                        class="text"
+                      >
+                        Leggi di più
+                      </span>
+                      <svg
+                        aria-hidden="true"
+                        class="icon"
+                        enable-background="new 0 0 24 24"
+                        viewBox="0 0 24 24"
+                        xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="2 di 3"
+          aria-roledescription="slide"
+          class="splide__slide is-visible is-next"
+          id="splide02-slide02"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="img-responsive-wrapper"
+            >
+              <div
+                class="img-responsive"
+              >
+                <div
+                  class="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="it-text-slider-wrapper-outside"
+            >
+              <div
+                class="card-wrapper"
+              >
+                <div
+                  class="card"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    <div
+                      class="category-top"
+                    >
+                      <a
+                        class="category"
+                      >
+                        Category
+                      </a>
+                      <span
+                        class="data"
+                      >
+                        10/12/2018
+                      </span>
+                    </div>
+                    <h5
+                      class="big-heading card-title"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                    </h5>
+                    <p
+                      class="card-text"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <span
+                      class="card-signature"
+                    >
+                      di Federico De Paolis
+                    </span>
+                    <a
+                      class="read-more"
+                    >
+                      <span
+                        class="text"
+                      >
+                        Leggi di più
+                      </span>
+                      <svg
+                        aria-hidden="true"
+                        class="icon"
+                        enable-background="new 0 0 24 24"
+                        viewBox="0 0 24 24"
+                        xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="3 di 3"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide02-slide03"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="img-responsive-wrapper"
+            >
+              <div
+                class="img-responsive"
+              >
+                <div
+                  class="img-wrapper"
+                >
+                  <img
+                    alt="Alternative Text"
+                    src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                    title="Image Title"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="it-text-slider-wrapper-outside"
+            >
+              <div
+                class="card-wrapper"
+              >
+                <div
+                  class="card"
+                >
+                  <div
+                    class="card-body"
+                  >
+                    <div
+                      class="category-top"
+                    >
+                      <a
+                        class="category"
+                      >
+                        Category
+                      </a>
+                      <span
+                        class="data"
+                      >
+                        10/12/2018
+                      </span>
+                    </div>
+                    <h5
+                      class="big-heading card-title"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                    </h5>
+                    <p
+                      class="card-text"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <span
+                      class="card-signature"
+                    >
+                      di Federico De Paolis
+                    </span>
+                    <a
+                      class="read-more"
+                    >
+                      <span
+                        class="text"
+                      >
+                        Leggi di più
+                      </span>
+                      <svg
+                        aria-hidden="true"
+                        class="icon"
+                        enable-background="new 0 0 24 24"
+                        viewBox="0 0 24 24"
+                        xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul
+      aria-label="Seleziona una slide da mostrare"
+      class="splide__pagination splide__pagination--ltr"
+      role="tablist"
+    >
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide02-slide01"
+          aria-label="Vai alla slide 1"
+          aria-selected="true"
+          class="splide__pagination__page is-active"
+          role="tab"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide02-slide02"
+          aria-label="Vai alla slide 2"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide02-slide03"
+          aria-label="Vai alla slide 3"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Carousel FullscreenImage 1`] = `
+<div>
+  <div
+    aria-roledescription="Carosello"
+    class="splide it-carousel-wrapper it-carousel-landscape-abstract-three-cols it-full-carousel it-big-img splide--loop splide--ltr splide--draggable is-active is-initialized"
+    id="splide04"
+    role="region"
+  >
+    <div
+      aria-atomic="true"
+      aria-live="polite"
+      class="splide__track splide__track--loop splide__track--ltr splide__track--draggable"
+      id="splide04-track"
+      style="padding-left: 320px; padding-right: 320px;"
+    >
+      <ul
+        class="splide__list"
+        id="splide04-list"
+        role="presentation"
+        style="transform: translateX(0px);"
+      >
+        <li
+          aria-label="9 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-visible"
+          id="splide04-clone01"
+          role="tabpanel"
+          style="margin-right: 48px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="10 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-visible is-prev"
+          id="splide04-clone02"
+          role="tabpanel"
+          style="margin-right: 48px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="1 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-active is-visible"
+          id="splide04-slide01"
+          role="tabpanel"
+          style="margin-right: 48px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="2 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible is-next"
+          id="splide04-slide02"
+          role="tabpanel"
+          style="margin-right: 48px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="3 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide04-slide03"
+          role="tabpanel"
+          style="margin-right: 48px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="4 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide04-slide04"
+          role="tabpanel"
+          style="margin-right: 48px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="5 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide04-slide05"
+          role="tabpanel"
+          style="margin-right: 48px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="6 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide04-slide06"
+          role="tabpanel"
+          style="margin-right: 48px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="7 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide04-slide07"
+          role="tabpanel"
+          style="margin-right: 48px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="8 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide04-slide08"
+          role="tabpanel"
+          style="margin-right: 48px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="9 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide04-slide09"
+          role="tabpanel"
+          style="margin-right: 48px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="10 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide04-slide10"
+          role="tabpanel"
+          style="margin-right: 48px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="1 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-active is-visible"
+          id="splide04-clone03"
+          role="tabpanel"
+          style="margin-right: 48px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="2 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-visible"
+          id="splide04-clone04"
+          role="tabpanel"
+          style="margin-right: 48px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul
+      aria-label="Seleziona una slide da mostrare"
+      class="splide__pagination splide__pagination--ltr"
+      role="tablist"
+    >
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide04-slide01"
+          aria-label="Vai alla slide 1"
+          aria-selected="true"
+          class="splide__pagination__page is-active"
+          role="tab"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide04-slide02"
+          aria-label="Vai alla slide 2"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide04-slide03"
+          aria-label="Vai alla slide 3"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide04-slide04"
+          aria-label="Vai alla slide 4"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide04-slide05"
+          aria-label="Vai alla slide 5"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide04-slide06"
+          aria-label="Vai alla slide 6"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide04-slide07"
+          aria-label="Vai alla slide 7"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide04-slide08"
+          aria-label="Vai alla slide 8"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide04-slide09"
+          aria-label="Vai alla slide 9"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide04-slide10"
+          aria-label="Vai alla slide 10"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Carousel FullscreenStandardImage 1`] = `
+<div>
+  <div
+    aria-roledescription="Carosello"
+    class="splide it-carousel-wrapper it-carousel-landscape-abstract-three-cols it-full-carousel it-standard-image splide--loop splide--ltr splide--draggable is-active is-initialized"
+    id="splide05"
+    role="region"
+  >
+    <div
+      aria-atomic="true"
+      aria-live="polite"
+      class="splide__track splide__track--loop splide__track--ltr splide__track--draggable"
+      id="splide05-track"
+      style="padding-left: 48px; padding-right: 48px;"
+    >
+      <ul
+        class="splide__list"
+        id="splide05-list"
+        role="presentation"
+        style="transform: translateX(0px);"
+      >
+        <li
+          aria-label="5 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-visible"
+          id="splide05-clone01"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="6 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-visible"
+          id="splide05-clone02"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="7 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-visible"
+          id="splide05-clone03"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="8 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-visible"
+          id="splide05-clone04"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="9 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-visible"
+          id="splide05-clone05"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="10 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-visible is-prev"
+          id="splide05-clone06"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="1 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-active is-visible"
+          id="splide05-slide01"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="2 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible is-next"
+          id="splide05-slide02"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="3 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide05-slide03"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="4 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide05-slide04"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="5 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide05-slide05"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="6 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide05-slide06"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="7 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide05-slide07"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="8 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide05-slide08"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="9 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide05-slide09"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="10 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide05-slide10"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="1 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-active is-visible"
+          id="splide05-clone07"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="2 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-visible"
+          id="splide05-clone08"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="3 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-visible"
+          id="splide05-clone09"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="4 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-visible"
+          id="splide05-clone10"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="5 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-visible"
+          id="splide05-clone11"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="6 di 10"
+          aria-roledescription="slide"
+          class="splide__slide splide__slide--clone is-visible"
+          id="splide05-clone12"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul
+      aria-label="Seleziona una slide da mostrare"
+      class="splide__pagination splide__pagination--ltr"
+      role="tablist"
+    >
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide05-slide01 splide05-slide02 splide05-slide03"
+          aria-label="Vai a pagina 1"
+          aria-selected="true"
+          class="splide__pagination__page is-active"
+          role="tab"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide05-slide04 splide05-slide05 splide05-slide06"
+          aria-label="Vai a pagina 2"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide05-slide07 splide05-slide08 splide05-slide09"
+          aria-label="Vai a pagina 3"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide05-slide10 splide05-clone07 splide05-clone08"
+          aria-label="Vai a pagina 4"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
+<div>
+  <div
+    aria-roledescription="Carosello"
+    class="splide it-carousel-wrapper it-carousel-landscape-abstract-three-cols splide--slide splide--ltr splide--draggable is-active is-initialized"
+    id="splide03"
+    role="region"
+  >
+    <div
+      aria-atomic="true"
+      aria-live="polite"
+      class="splide__track splide__track--slide splide__track--ltr splide__track--draggable"
+      id="splide03-track"
+      style="padding-left: 0px; padding-right: 0px;"
+    >
+      <ul
+        class="splide__list"
+        id="splide03-list"
+        role="presentation"
+        style="transform: translateX(0px);"
+      >
+        <li
+          aria-label="1 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-active is-visible"
+          id="splide03-slide01"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="2 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible is-next"
+          id="splide03-slide02"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="3 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide03-slide03"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="4 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide03-slide04"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="5 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide03-slide05"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="6 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide03-slide06"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="7 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide03-slide07"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="8 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide03-slide08"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="9 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide03-slide09"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          aria-label="10 di 10"
+          aria-roledescription="slide"
+          class="splide__slide is-visible"
+          id="splide03-slide10"
+          role="tabpanel"
+          style="margin-right: 24px;"
+        >
+          <div
+            class="it-single-slide-wrapper"
+          >
+            <div
+              class="card-wrapper"
+            >
+              <div
+                class="card-img no-after card"
+              >
+                <div
+                  class="img-responsive-wrapper"
+                >
+                  <div
+                    class="img-responsive"
+                  >
+                    <div
+                      class="img-wrapper"
+                    >
+                      <img
+                        alt="Alternative Text"
+                        src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
+                        title="Image Title"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="category-top"
+                  >
+                    <a
+                      class="category"
+                    >
+                      Category
+                    </a>
+                    <span
+                      class="data"
+                    >
+                      10/12/2018
+                    </span>
+                  </div>
+                  <h5
+                    class="big-heading card-title"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+                  </h5>
+                  <a
+                    class="read-more"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Leggi di più
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="icon"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul
+      aria-label="Seleziona una slide da mostrare"
+      class="splide__pagination splide__pagination--ltr"
+      role="tablist"
+    >
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide03-slide01 splide03-slide02 splide03-slide03"
+          aria-label="Vai a pagina 1"
+          aria-selected="true"
+          class="splide__pagination__page is-active"
+          role="tab"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide03-slide04 splide03-slide05 splide03-slide06"
+          aria-label="Vai a pagina 2"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide03-slide07 splide03-slide08 splide03-slide09"
+          aria-label="Vai a pagina 3"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+      <li
+        role="presentation"
+      >
+        <button
+          aria-controls="splide03-slide08 splide03-slide09 splide03-slide10"
+          aria-label="Vai a pagina 4"
+          class="splide__pagination__page"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        />
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
 exports[`Stories Snapshots Documentazione/Componenti/Chips ChipDisabilitata 1`] = `
 <div>
   <div>
@@ -23212,24 +26943,13 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxMixedButton 1`] 
       <div
         class="form-check"
       >
-        <div
-          class="form-group"
-        >
-          <label
-            class=" "
-            for="checkbox-semi-checked"
-          />
-          <input
-            class="semi-checked"
-            id="checkbox-semi-checked"
-            indeterminate="true"
-            type="checkbox"
-            value=""
-          />
-          <div
-            class="form-text"
-          />
-        </div>
+        <input
+          class="semi-checked"
+          id="checkbox-semi-checked"
+          indeterminate="true"
+          type="checkbox"
+          value=""
+        />
         <label
           class="form-check-label"
           for="checkbox-semi-checked"
@@ -24980,6 +28700,391 @@ exports[`Stories Snapshots Documentazione/Form/Toggles TogglesDisabilitate 1`] =
               class="lever"
             />
           </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Form/Transfer Base 1`] = `
+<div>
+  <div
+    data-testid="test-id-transfer"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col"
+      >
+        <div
+          class="it-transfer-wrapper source"
+          data-testid="transfer-source"
+        >
+          <div
+            class="transfer-header"
+            data-testid="transfer-source-header"
+          >
+            <div
+              class="form-check"
+            >
+              <input
+                class=""
+                id="transfer-source-header"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="form-check-label"
+                for="transfer-source-header"
+              >
+                0
+                 ITEMS
+                <span
+                  class="descr"
+                >
+                  Source
+                </span>
+              </label>
+            </div>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox1"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox1"
+            >
+              List item 1
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox2"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox2"
+            >
+              List item 2
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox3"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox3"
+            >
+              List item 3
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox4"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox4"
+            >
+              List item 4
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox5"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox5"
+            >
+              List item 5
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox6"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox6"
+            >
+              List item 6
+            </label>
+          </div>
+          <br />
+        </div>
+      </div>
+      <div
+        class="col"
+      >
+        <div
+          class="it-transfer-buttons"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col"
+            >
+              <a
+                aria-label="Sposta avanti"
+                class="transfer "
+                data-testid="transfer-button"
+                href="#"
+                role="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                  />
+                </svg>
+              </a>
+              <span
+                class="visually-hidden"
+              >
+                Etichetta per freccia destra
+              </span>
+            </div>
+          </div>
+          <div
+            class="row"
+          >
+            <div
+              class="col"
+            >
+              <a
+                aria-label="Sposta indietro"
+                class="backtransfer "
+                data-testid="backtransfer-button"
+                href="#"
+                role="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 11.5H5.5l5.3-5.4-.7-.7L3.6 12l6.5 6.6.7-.7-5.3-5.4H21v-1z"
+                  />
+                </svg>
+              </a>
+              <span
+                class="visually-hidden"
+              >
+                Etichetta per freccia sinistra
+              </span>
+            </div>
+          </div>
+          <div
+            class="row"
+          >
+            <div
+              class="col"
+            >
+              <a
+                aria-label="Reset"
+                class="reset "
+                data-testid="reset-button"
+                href="#"
+                role="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  enable-background="new 0 0 24 24"
+                  viewBox="0 0 24 24"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2C9.3 2 6.8 3 4.9 4.9c-.3.4-.6.7-.9 1.1V2.5H3V8h5.5V7h-4c.3-.5.7-.9 1.1-1.4 3.5-3.5 9.2-3.6 12.7-.1s3.6 9.2.1 12.7-9.2 3.6-12.7.1C4 16.7 3 14.4 3 12H2c0 5.5 4.5 10 10 10s10-4.5 10-10S17.5 2 12 2z"
+                  />
+                </svg>
+              </a>
+              <span
+                class="visually-hidden"
+              >
+                Etichetta per icona di reset
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col"
+      >
+        <div
+          class="it-transfer-wrapper target"
+          data-testid="transfer-target"
+        >
+          <div
+            class="transfer-header"
+            data-testid="transfer-target-header"
+          >
+            <div
+              class="form-check"
+            >
+              <input
+                class=""
+                id="transfer-target-header"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="form-check-label"
+                for="transfer-target-header"
+              >
+                0
+                 ITEMS
+                <span
+                  class="descr"
+                >
+                  Target
+                </span>
+              </label>
+            </div>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox7"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox7"
+            >
+              List item 7
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox8"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox8"
+            >
+              List item 8
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox9"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox9"
+            >
+              List item 9
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox10"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox10"
+            >
+              List item 10
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox11"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox11"
+            >
+              List item 11
+            </label>
+          </div>
+          <div
+            class="form-check"
+          >
+            <input
+              class=""
+              id="checkbox12"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox12"
+            >
+              List item 12
+            </label>
+          </div>
         </div>
       </div>
     </div>
@@ -34240,6 +38345,932 @@ exports[`Stories Snapshots Documentazione/Organizzare gli spazi/Griglie TuttiIBr
 </div>
 `;
 
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste _Esempi 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 1
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 2
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 3
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste _StatoAttivo 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 1
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="active list-item"
+        >
+          <span>
+            Link list 2 active
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 3
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste _StatoDisabilitato 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 1
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="disabled list-item"
+        >
+          <span>
+            Link list 2 disabled
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 3
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste CollapseExample 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          aria-expanded="false"
+          class="icon-right large medium list-item"
+          role="button"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 1 
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon right icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <div
+        class="collapse"
+      >
+        <ul
+          class="link-sublist"
+        >
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 4 
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 5 
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 6 
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <li>
+        <a
+          aria-expanded="false"
+          class="icon-right large medium list-item"
+          role="button"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 2 
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon right icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <div
+        class="collapse"
+      >
+        <ul
+          class="link-sublist"
+        >
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 7 
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 8 
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 9 
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <li>
+        <a
+          aria-expanded="false"
+          class="icon-right large medium list-item"
+          role="button"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 3 
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon right icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <div
+        class="collapse"
+      >
+        <ul
+          class="link-sublist"
+        >
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 10 
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 11 
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="list-item"
+            >
+              <span>
+                Link list 12 
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ConAvatar 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="active list-item"
+        >
+          <img
+            alt="avataralt"
+            class="avatar lg-size"
+            src="http://placehold.co/40x40"
+            title="avatartitle"
+          />
+          <span>
+            Link list 1 active 
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <img
+            alt="avataralt"
+            class="avatar lg-size"
+            src="http://placehold.co/40x40"
+            title="avatartitle"
+          />
+          <span>
+            Link list 2 
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="disabled list-item"
+        >
+          <img
+            alt="avataralt"
+            class="avatar lg-size"
+            src="http://placehold.co/40x40"
+            title="avatartitle"
+          />
+          <span>
+            Link list 3 disabled 
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ConCheckbox 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <div
+          class="active list-item"
+        >
+          <div
+            class="form-check-group form-check"
+          >
+            <input
+              checked=""
+              class=""
+              id="checkbox1"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox1"
+            >
+              Checkbox selezionato
+            </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="active list-item"
+        >
+          <div
+            class="form-check-group form-check"
+          >
+            <input
+              class=""
+              id="checkbox2"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox2"
+            >
+              Checkbox non selezionato
+            </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="disabled list-item"
+        >
+          <div
+            class="form-check-group form-check"
+          >
+            <input
+              class=""
+              disabled=""
+              id="checkbox3"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="form-check-label"
+              for="checkbox3"
+            >
+              Checkbox disabilitato non selezionato
+            </label>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ConSwitch 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <div
+          class="active list-item"
+        >
+          <div
+            class="toggles"
+          >
+            <label
+              class="form-check-label"
+            >
+              Label per toggle
+              <input
+                aria-describedby=""
+                class="form-check-input"
+                type="checkbox"
+              />
+              <span
+                class="lever"
+              />
+            </label>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="disabled list-item"
+        >
+          <div
+            class="toggles"
+          >
+            <label
+              class="form-check-label"
+            >
+              Label per disabled toggle
+              <input
+                aria-describedby=""
+                class="form-check-input"
+                disabled=""
+                type="checkbox"
+              />
+              <span
+                class="lever"
+              />
+            </label>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ControlliComponent 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="icon-left active list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
+            <span>
+              Link list 1 active
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="icon-left list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
+            <span>
+              Link list 2
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="icon-left disabled list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
+            <span>
+              Link list 3 disabled
+            </span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ControlliSecondariComponent 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="icon-right active list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 1 active
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="icon-right list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 2
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="icon-right disabled list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 3 disabled
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste EsempioMultiline 1`] = `
+<div>
+  <div
+    class="link-list-wrapper multiline"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="icon-right active list-item"
+          href="#"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 1 active
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
+          </span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+          </p>
+        </a>
+      </li>
+      <li>
+        <span
+          class="divider list-item"
+        />
+      </li>
+      <li>
+        <a
+          class="icon-right list-item"
+          href="#"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 2
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
+          </span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+          </p>
+        </a>
+      </li>
+      <li>
+        <span
+          class="divider list-item"
+        />
+      </li>
+      <li>
+        <a
+          class="icon-right disabled list-item"
+          href="#"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 3 disabled
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
+              />
+            </svg>
+          </span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit…
+          </p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste HeaderEDividerConLink 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <div
+      class="link-list-heading"
+    >
+      <a
+        href="#"
+      >
+        Intestazione con link
+      </a>
+    </div>
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 1
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 2
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 3
+          </span>
+        </a>
+      </li>
+      <li>
+        <span
+          class="divider list-item"
+        />
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 4
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste HeaderEDividerNoLink 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <div
+      class="link-list-heading"
+    >
+      Intestazione senza link
+    </div>
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 1
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 2
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 3
+          </span>
+        </a>
+      </li>
+      <li>
+        <span
+          class="divider list-item"
+        />
+      </li>
+      <li>
+        <a
+          class="list-item"
+        >
+          <span>
+            Link list 4
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
 exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaAvatar 1`] = `
 <div>
   <div
@@ -35553,6 +40584,404 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste ListaTes
         </div>
       </li>
     </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste NavigationComponentFixed 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="icon-right large medium list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 1 
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon right icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="icon-right large medium list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 2 
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon right icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <ul
+        class="link-sublist"
+      >
+        <li>
+          <a
+            class="list-item"
+          >
+            <span>
+              Link list 4 
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="list-item"
+          >
+            <span>
+              Link list 5 
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="list-item"
+          >
+            <span>
+              Link list 6 
+            </span>
+          </a>
+        </li>
+      </ul>
+      <li>
+        <a
+          class="icon-right large medium list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <span>
+              Link list 3 
+            </span>
+            <svg
+              aria-hidden="true"
+              class="icon right icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste PrimaryESecondaryAction 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="icon-left active list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+            <span>
+              Link list 1 active
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="icon-left list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+            <span>
+              Link list 2
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="icon-left disabled list-item"
+        >
+          <span
+            class="list-item-title-icon-wrapper"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon icon-primary"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
+              />
+            </svg>
+            <span>
+              Link list 3 disabled
+            </span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste Sizing 1`] = `
+<div>
+  <div
+    class="link-list-wrapper"
+  >
+    <div
+      class="link-list-heading"
+    >
+      Intestazione senza link
+    </div>
+    <ul
+      class="link-list"
+    >
+      <li>
+        <a
+          class="large list-item"
+          href="#"
+        >
+          <span>
+            Link list 1
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="large list-item"
+          href="#"
+        >
+          <span>
+            Link list 2
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="large list-item"
+          href="#"
+        >
+          <span>
+            Link list 3
+          </span>
+        </a>
+      </li>
+      <li>
+        <span
+          class="divider list-item"
+        />
+      </li>
+      <li>
+        <a
+          class="large list-item"
+          href="#"
+        >
+          <span>
+            Link list 4
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste TitoloLista 1`] = `
+<div>
+  <div
+    class="sticky-wrapper navbar-wrapper"
+  >
+    <nav
+      class="it-navscroll-wrapper it-top-navscroll navbar navbar-expand-lg"
+    >
+      <div
+        class="container-fluid"
+      >
+        <div
+          class="menu-wrapper"
+        >
+          <div
+            class="link-list-wrapper menu-link-list"
+          >
+            <h3>
+              Indice della pagina
+            </h3>
+            <ul
+              class="link-list"
+            >
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#cos-e"
+                >
+                  <span>
+                    Cos'è
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#luogo"
+                >
+                  <span>
+                    Luogo
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#date-e-orari"
+                >
+                  <span>
+                    Date e orari
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#costi"
+                >
+                  <span>
+                    Costi
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#documenti"
+                >
+                  <span>
+                    Documenti
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#contatti"
+                >
+                  <span>
+                    Contatti
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#appuntamenti"
+                >
+                  <span>
+                    Appuntamenti
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  class="nav-link"
+                  href="#ulteriori-informazioni"
+                >
+                  <span>
+                    Ulteriori informazioni
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
 </div>
 `;
@@ -36997,1330 +42426,6 @@ exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di Immag
         </div>
       </div>
     </div>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link _Esempi 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 1
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 2
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 3
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link _StatoAttivo 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 1
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="active list-item"
-        >
-          <span>
-            Link list 2 active
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 3
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link _StatoDisabilitato 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 1
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="disabled list-item"
-        >
-          <span>
-            Link list 2 disabled
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 3
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link CollapseExample 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          aria-expanded="false"
-          class="icon-right large medium list-item"
-          role="button"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 1 
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon right icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <div
-        class="collapse"
-      >
-        <ul
-          class="link-sublist"
-        >
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 4 
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 5 
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 6 
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <li>
-        <a
-          aria-expanded="false"
-          class="icon-right large medium list-item"
-          role="button"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 2 
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon right icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <div
-        class="collapse"
-      >
-        <ul
-          class="link-sublist"
-        >
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 7 
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 8 
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 9 
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <li>
-        <a
-          aria-expanded="false"
-          class="icon-right large medium list-item"
-          role="button"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 3 
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon right icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.6 15.4 6 9.8l.7-.8 4.9 4.9L16.5 9l.7.8z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <div
-        class="collapse"
-      >
-        <ul
-          class="link-sublist"
-        >
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 10 
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 11 
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              class="list-item"
-            >
-              <span>
-                Link list 12 
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link ConAvatar 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="active list-item"
-        >
-          <img
-            alt="avataralt"
-            class="avatar lg-size"
-            src="http://placehold.co/40x40"
-            title="avatartitle"
-          />
-          <span>
-            Link list 1 active 
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <img
-            alt="avataralt"
-            class="avatar lg-size"
-            src="http://placehold.co/40x40"
-            title="avatartitle"
-          />
-          <span>
-            Link list 2 
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="disabled list-item"
-        >
-          <img
-            alt="avataralt"
-            class="avatar lg-size"
-            src="http://placehold.co/40x40"
-            title="avatartitle"
-          />
-          <span>
-            Link list 3 disabled 
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link ConCheckbox 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <div
-          class="active list-item"
-        >
-          <div
-            class="form-check-group form-check"
-          >
-            <input
-              checked=""
-              class=""
-              id="checkbox1"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="form-check-label"
-              for="checkbox1"
-            >
-              Checkbox selezionato
-            </label>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div
-          class="active list-item"
-        >
-          <div
-            class="form-check-group form-check"
-          >
-            <input
-              class=""
-              id="checkbox2"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="form-check-label"
-              for="checkbox2"
-            >
-              Checkbox non selezionato
-            </label>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div
-          class="disabled list-item"
-        >
-          <div
-            class="form-check-group form-check"
-          >
-            <input
-              class=""
-              disabled=""
-              id="checkbox3"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="form-check-label"
-              for="checkbox3"
-            >
-              Checkbox disabilitato non selezionato
-            </label>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link ConSwitch 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <div
-          class="active list-item"
-        >
-          <div
-            class="toggles"
-          >
-            <label
-              class="form-check-label"
-            >
-              Label per toggle
-              <input
-                aria-describedby=""
-                class="form-check-input"
-                type="checkbox"
-              />
-              <span
-                class="lever"
-              />
-            </label>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div
-          class="disabled list-item"
-        >
-          <div
-            class="toggles"
-          >
-            <label
-              class="form-check-label"
-            >
-              Label per disabled toggle
-              <input
-                aria-describedby=""
-                class="form-check-input"
-                disabled=""
-                type="checkbox"
-              />
-              <span
-                class="lever"
-              />
-            </label>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link ControlliComponent 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="icon-left active list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-            <span>
-              Link list 1 active
-            </span>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="icon-left list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-            <span>
-              Link list 2
-            </span>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="icon-left disabled list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-            <span>
-              Link list 3 disabled
-            </span>
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link ControlliSecondariComponent 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="icon-right active list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 1 active
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="icon-right list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 2
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="icon-right disabled list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 3 disabled
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link EsempioMultiline 1`] = `
-<div>
-  <div
-    class="link-list-wrapper multiline"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="icon-right active list-item"
-          href="#"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 1 active
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-          </p>
-        </a>
-      </li>
-      <li>
-        <span
-          class="divider list-item"
-        />
-      </li>
-      <li>
-        <a
-          class="icon-right list-item"
-          href="#"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 2
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-          </p>
-        </a>
-      </li>
-      <li>
-        <span
-          class="divider list-item"
-        />
-      </li>
-      <li>
-        <a
-          class="icon-right disabled list-item"
-          href="#"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 3 disabled
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m9.8 17.2-.8-.7 4.9-4.9L9 6.7l.8-.7 5.6 5.6z"
-              />
-            </svg>
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-          </p>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link HeaderEDividerConLink 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <div
-      class="link-list-heading"
-    >
-      <a
-        href="#"
-      >
-        Intestazione con link
-      </a>
-    </div>
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 1
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 2
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 3
-          </span>
-        </a>
-      </li>
-      <li>
-        <span
-          class="divider list-item"
-        />
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 4
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link HeaderEDividerNoLink 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <div
-      class="link-list-heading"
-    >
-      Intestazione senza link
-    </div>
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 1
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 2
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 3
-          </span>
-        </a>
-      </li>
-      <li>
-        <span
-          class="divider list-item"
-        />
-      </li>
-      <li>
-        <a
-          class="list-item"
-        >
-          <span>
-            Link list 4
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link NavigationComponentFixed 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="icon-right large medium list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 1 
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon right icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="icon-right large medium list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 2 
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon right icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <ul
-        class="link-sublist"
-      >
-        <li>
-          <a
-            class="list-item"
-          >
-            <span>
-              Link list 4 
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="list-item"
-          >
-            <span>
-              Link list 5 
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="list-item"
-          >
-            <span>
-              Link list 6 
-            </span>
-          </a>
-        </li>
-      </ul>
-      <li>
-        <a
-          class="icon-right large medium list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <span>
-              Link list 3 
-            </span>
-            <svg
-              aria-hidden="true"
-              class="icon right icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link PrimaryESecondaryAction 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="icon-left active list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-            <span>
-              Link list 1 active
-            </span>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="icon-left list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-            <span>
-              Link list 2
-            </span>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="icon-left disabled list-item"
-        >
-          <span
-            class="list-item-title-icon-wrapper"
-          >
-            <svg
-              aria-hidden="true"
-              class="icon icon-primary"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m13.4 13.4-.7-.7c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.1L9.2 4.9C8 3.8 6.1 3.8 4.9 4.9 3.8 6.1 3.8 8 4.9 9.2L7.8 12l-.7.7-2.9-2.8c-1.5-1.6-1.5-4.1 0-5.7 1.6-1.5 4.1-1.5 5.7 0l3.5 3.6c.8.7 1.2 1.7 1.2 2.8 0 1.1-.4 2.1-1.2 2.8zm6.4 6.4c1.5-1.6 1.5-4.1 0-5.7l-2.9-2.8-.7.7 2.9 2.8c1.1 1.2 1.1 3.1 0 4.3-1.2 1.1-3.1 1.1-4.3 0l-3.5-3.6c-.6-.5-.9-1.3-.9-2.1s.3-1.6.9-2.1l-.7-.7c-.8.7-1.2 1.7-1.2 2.8 0 1.1.4 2.1 1.2 2.8l3.5 3.6c.7.7 1.8 1.1 2.8 1.1 1.1.1 2.1-.3 2.9-1.1z"
-              />
-            </svg>
-            <span>
-              Link list 3 disabled
-            </span>
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link Sizing 1`] = `
-<div>
-  <div
-    class="link-list-wrapper"
-  >
-    <div
-      class="link-list-heading"
-    >
-      Intestazione senza link
-    </div>
-    <ul
-      class="link-list"
-    >
-      <li>
-        <a
-          class="large list-item"
-          href="#"
-        >
-          <span>
-            Link list 1
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="large list-item"
-          href="#"
-        >
-          <span>
-            Link list 2
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          class="large list-item"
-          href="#"
-        >
-          <span>
-            Link list 3
-          </span>
-        </a>
-      </li>
-      <li>
-        <span
-          class="divider list-item"
-        />
-      </li>
-      <li>
-        <a
-          class="large list-item"
-          href="#"
-        >
-          <span>
-            Link list 4
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Organizzare i contenuti/Liste di link TitoloLista 1`] = `
-<div>
-  <div
-    class="sticky-wrapper navbar-wrapper"
-  >
-    <nav
-      class="it-navscroll-wrapper it-top-navscroll navbar navbar-expand-lg"
-    >
-      <div
-        class="container-fluid"
-      >
-        <div
-          class="menu-wrapper"
-        >
-          <div
-            class="link-list-wrapper menu-link-list"
-          >
-            <h3>
-              Indice della pagina
-            </h3>
-            <ul
-              class="link-list"
-            >
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#cos-e"
-                >
-                  <span>
-                    Cos'è
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#luogo"
-                >
-                  <span>
-                    Luogo
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#date-e-orari"
-                >
-                  <span>
-                    Date e orari
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#costi"
-                >
-                  <span>
-                    Costi
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#documenti"
-                >
-                  <span>
-                    Documenti
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#contatti"
-                >
-                  <span>
-                    Contatti
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#appuntamenti"
-                >
-                  <span>
-                    Appuntamenti
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nav-item"
-              >
-                <a
-                  class="nav-link"
-                  href="#ulteriori-informazioni"
-                >
-                  <span>
-                    Ulteriori informazioni
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
   </div>
 </div>
 `;

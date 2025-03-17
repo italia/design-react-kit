@@ -356,16 +356,14 @@ export const Input = ({
 
   if (indeterminateCheckboxInput) {
     return (
-      <InputContainer {...containerProps}>
-        <Tag
-          {...rest}
-          {...extraAttributes}
-          {...sharedAttributes}
-          className={inputClasses}
-          data-testid={testId}
-          indeterminate={'true'}
-        />
-      </InputContainer>
+      <Tag
+        {...rest}
+        {...extraAttributes}
+        {...sharedAttributes}
+        className={inputClasses}
+        data-testid={testId}
+        indeterminate={'true'}
+      />
     );
   }
 

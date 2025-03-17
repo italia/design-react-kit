@@ -19,7 +19,8 @@
     "Sabatino Galasso",
     "Andrea Stagi",
     "Federico Turbino",
-    "Nicola Squartini"
+    "Nicola Squartini",
+    "Davide Bizzi"
   ],
   "bugs": {
     "url": "https://github.com/italia/design-react-kit/issues"
@@ -134,6 +135,7 @@
     "vite": "^5.2.7"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
     "accessible-autocomplete": "^3.0.1",
     "classnames": "^2.3.1",
     "is-number": "^7.0.0",
