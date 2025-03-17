@@ -62,7 +62,7 @@ const ValidazioneCompletaHooks = () => {
     'Veneto'
   ];
 
-  const suggest = (query, syncResults) => {
+  const suggest = (query: string, syncResults: (p: string[]) => void) => {
     syncResults(
       query
         ? regions.filter(function (result) {

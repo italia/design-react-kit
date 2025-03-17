@@ -118,7 +118,7 @@ export const ReadonlyNormalizzato: Story = {
 
 export const _InputAutocompleteConDatiAccessibile: Story = {
   render: () => {
-    const suggest = (query, syncResults)  => {
+    const suggest = (query: string, syncResults: (p: string[]) => void)  => {
       const results = [
         'Abruzzo',
         'Basilicata',
