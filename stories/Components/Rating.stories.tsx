@@ -14,30 +14,19 @@ type Story = StoryObj<typeof Rating>;
 
 export const RatingBase: Story = {
   render: ({ legend }) => {
-    const [rating, setRating] = useState(0);
     return (
-      <Rating 
-        value={rating} 
-        legend={legend} 
-        inputs={['star1a', 'star2a', 'star3a', 'star4a', 'star5a']} 
-        name='ratingA' 
-        onChangeRating={setRating}
+      <Rating
+        value={2}
+        legend={legend}
+        inputs={['star1a', 'star2a', 'star3a', 'star4a', 'star5a']}
+        name='ratingA'
       />
     );
   },
   args: {
-    value: 0,
     legend: 'Rating'
   },
   argTypes: {
-    value: {
-      control: {
-        type: 'range',
-        min: 0,
-        max: 5,
-        step: 1
-      }
-    },
     legend: {
       control: { type: 'text' }
     }
