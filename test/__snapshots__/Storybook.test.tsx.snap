@@ -14066,6 +14066,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingBase 1`] = `
       </span>
     </label>
     <input
+      checked=""
       class=""
       id="star2a"
       name="ratingA"
