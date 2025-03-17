@@ -14066,6 +14066,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Rating RatingBase 1`] = `
       </span>
     </label>
     <input
+      checked=""
       class=""
       id="star2a"
       name="ratingA"
@@ -26965,7 +26966,7 @@ exports[`Stories Snapshots Documentazione/Form/Checkbox CheckboxMixedButton 1`] 
 exports[`Stories Snapshots Documentazione/Form/Input _InputAutocompleteConDatiAccessibile 1`] = `
 <div>
   <div
-    class="select-wrapper mb-3"
+    class="form-group mb-3"
   >
     <label
       for="autocomplete"
@@ -26998,10 +26999,10 @@ exports[`Stories Snapshots Documentazione/Form/Input _InputAutocompleteConDatiAc
         aria-describedby="autocomplete__assistiveHint"
         aria-expanded="false"
         autocomplete="off"
-        class="autocomplete__input autocomplete__input--default"
+        class="autocomplete__input autocomplete__input--default form-control false"
         id="autocomplete"
         name="input-autocomplete"
-        placeholder="Testo da cercare"
+        placeholder=""
         role="combobox"
         type="text"
         value=""
@@ -27019,6 +27020,9 @@ exports[`Stories Snapshots Documentazione/Form/Input _InputAutocompleteConDatiAc
         Quando i risultati del completamento automatico sono disponibili, usa le frecce su e giù per rivedere e Invio per selezionare. Utenti di dispositivi touch, esplora tramite tocco o con gesti di scorrimento
       </span>
     </div>
+    <div
+      class="form-feedback just-validate-error-label form-text form-feedback just-validate-error-label"
+    />
   </div>
 </div>
 `;
@@ -29384,32 +29388,68 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
       class="row"
     >
       <div
-        class="col-md-6 mb-3 mb-3"
+        class="form-group col-md-4 mb-3 mb-3"
       >
-        <div
-          class="form-group"
+        <label
+          for="completeValidation-region""
         >
-          <label
-            class=" "
-            for="completeValidation-city"
+          Regione
+        </label>
+        <div
+          class="autocomplete__wrapper"
+        >
+          <div
+            class="autocomplete__status"
+            style="border: 0px; height: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 1px;"
           >
-            Città
-          </label>
+            <div
+              aria-atomic="true"
+              aria-live="polite"
+              id="completeValidation-region"__status--A"
+              role="status"
+            />
+            <div
+              aria-atomic="true"
+              aria-live="polite"
+              id="completeValidation-region"__status--B"
+              role="status"
+            />
+          </div>
           <input
-            class="is-invalid form-control"
-            id="completeValidation-city"
+            aria-autocomplete="list"
+            aria-controls="completeValidation-region"__listbox"
+            aria-describedby="completeValidation-region"__assistiveHint"
+            aria-expanded="false"
+            autocomplete="off"
+            class="autocomplete__input autocomplete__input--default form-control is-invalid"
+            id="completeValidation-region""
+            name="input-autocomplete"
+            placeholder=""
+            role="combobox"
             type="text"
             value=""
           />
-          <div
-            class="invalid-feedback form-feedback just-validate-error-label form-text form-feedback just-validate-error-label"
+          <ul
+            aria-labelledby="completeValidation-region""
+            class="autocomplete__menu autocomplete__menu--inline autocomplete__menu--hidden"
+            id="completeValidation-region"__listbox"
+            role="listbox"
+          />
+          <span
+            id="completeValidation-region"__assistiveHint"
+            style="display: none;"
           >
-            Questo campo è richiesto
-          </div>
+            Quando i risultati del completamento automatico sono disponibili, usa le frecce su e giù per rivedere e Invio per selezionare. Utenti di dispositivi touch, esplora tramite tocco o con gesti di scorrimento
+          </span>
+        </div>
+        <div
+          class="form-feedback just-validate-error-label form-text form-feedback just-validate-error-label"
+        >
+          Per favore inserisci una regione valida.
         </div>
       </div>
       <div
-        class="col-md-3 mb-3 mb-3"
+        class="col-md-4 mb-3 mb-3"
       >
         <div
           class="form-group"
@@ -29434,7 +29474,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
         </div>
       </div>
       <div
-        class="col-md-3 mb-3 mb-3"
+        class="col-md-4 mb-3 mb-3"
       >
         <div
           class="form-group"
