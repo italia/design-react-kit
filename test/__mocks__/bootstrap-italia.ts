@@ -1,7 +1,8 @@
 const bsi: any = {};
 
 const player = Object.create({
-    'log': 'Log'
+    'log': 'Log',
+    'play': () => {}
 });
 
 class VP {
@@ -9,6 +10,14 @@ class VP {
 
     constructor(el: Element) {
         console.log(el);
+    }
+
+    setYouTubeVideo(video: string) {
+        console.log(video);
+    }
+
+    dispose() {
+
     }
 }
 
