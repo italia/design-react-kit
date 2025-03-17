@@ -139,7 +139,7 @@ for (let i = 0 ; i < 10 ; i++) {
 
 export const Base: Story = {
   render: () => (
-    <Carousel type="landscape-three-cols-arrows" tag='nav'>
+    <Carousel type="landscape-three-cols-arrows">
       {carouselSlides}
     </Carousel>
   )
@@ -169,7 +169,7 @@ export const FullscreenImage: Story = {
   )
 };
 
-export const StandardImage: Story = {
+export const FullscreenStandardImage: Story = {
   render: () => (
     <Carousel type="standard-image">
       {carouselFullscreenImages}

@@ -195,7 +195,8 @@ export interface CarouselProps extends SplideProps {
 export const Carousel: FC<CarouselProps> = ({
   className = '',
   type,
-  children
+  children,
+  ...attributes
 }) => {
   let conf = Object.assign({}, CONFIG_DEFAULT)
   if (['big-image', 'standard-image'].includes(type)){
@@ -203,6 +204,7 @@ export const Carousel: FC<CarouselProps> = ({
   }
   conf = Object.assign({}, conf, CONFIGS[type])
   return <Splide
+    {...attributes}
     className={classNames('it-carousel-wrapper', className, ...EXTRA_CLASSES[type])}
     options={conf}>{children}</Splide>;
 };
