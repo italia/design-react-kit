@@ -26,16 +26,12 @@ export const Trascription: Story = {
     const transcription = 'Questa è la trascrizione testuale del video';
 
     return (
-      <div>
-        <div>Video</div>
-        <div className='bg-secondary container'>
-          <Video
-            sources={sources}
-            transcriptionLabel={'Mostra la trascrizione del video'}
-            transcription={transcription}
-          />
-        </div>
-        <p>In questo esempio viene passato del testo relativo alla trascrizione video</p>
+      <div className='bg-secondary container'>
+        <Video
+          sources={sources}
+          transcriptionLabel={'Mostra la trascrizione del video'}
+          transcription={transcription}
+        />
       </div>
     );
   }
@@ -75,14 +71,7 @@ export const Tracks: Story = {
 
     const poster = 'https://italia.github.io/bootstrap-italia/docs/assets/video/ElephantsDream.mp4-poster21.jpg';
     return (
-      <div>
-        <div>Video</div>
-        <Video sources={sources} tracks={tracks} poster={poster} />
-        <p>
-          In questo esempio vengono passate diverse tracce per i sottotitoli: in italiano (predefinito) , inglese e
-          spagnolo
-        </p>
-      </div>
+      <Video sources={sources} tracks={tracks} poster={poster} />
     );
   }
 };
@@ -95,19 +84,7 @@ export const AutoplayAndControls: Story = {
     ];
 
     return (
-      <div>
-        <div>Video</div>
-        <Video sources={sources} autoPlay={true} fluid={true} controls={true} loop={true} />
-        <p>
-          In questo esempio vengono impostati seguenti parametri:
-          <ul>
-            <li>autoPlay: true</li>
-            <li>fluid: true</li>
-            <li>controls: true</li>
-            <li>loop: true</li>
-          </ul>
-        </p>
-      </div>
+      <Video sources={sources} autoPlay={true} fluid={true} controls={true} loop={true} />
     );
   }
 };
@@ -121,16 +98,10 @@ export const YouTubeVideo: Story = {
       disclaimerText: `Vai alla pagina privacy <a href='/privacy_policy'>policy</a>`
     };
     return (
-      <div>
-        <div>Video</div>
-        <Video youtube={ytVideo} />
-        <p>In questo esempio viene passato nella prorietà 'youtubeUrl' un url di un video di YouTube</p>
-      </div>
+      <Video youtube={ytVideo} />
     );
   }
 };
-
-//https://youtu.be/_0j7ZQ67KtY
 
 export const Esempi: Story = {
   render: () => {
@@ -140,14 +111,7 @@ export const Esempi: Story = {
     ];
 
     return (
-      <div>
-        <div>Video</div>
-        <Video sources={sources} />
-        <p>
-          In questo esempio vengono passati al compomente solamente la prorietà relativa all'array delle sorgenti,
-          contente per ogni sorgente l'url della sorgente e sua tipologia
-        </p>
-      </div>
+      <Video sources={sources} />
     );
   }
 };
