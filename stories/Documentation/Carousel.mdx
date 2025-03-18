@@ -1,0 +1,46 @@
+import { ArgTypes, Canvas, Controls, Meta, Story } from '@storybook/blocks';
+import { Code } from '@storybook/components';
+import * as CarouselStories from '../Components/Carousel.stories';
+
+<Meta of={CarouselStories} />
+
+# Carousel
+
+Il componente Carousel permette di scorrere una serie di contenuti ed è
+realizzato attraverso il componente [Splide](https://splidejs.com/integration/react-splide/).
+
+Può essere utilizzato con una serie di immagini, testo o codice personalizzato.
+Include anche il supporto per i controlli e gli indicatori precedente/successivo
+ed i dots di indicazione posizione.
+
+Il carousel può contenere vari tipi di componenti, solitamente cards o immagini.
+
+L'implementazione corrente riprende le varie tipologie di Carousel che possono
+essere trovate in [Bootstrap Italia](https://italia.github.io/bootstrap-italia/docs/componenti/carousel/).
+
+È possibile utilizzare le stesse proprietà del componente Splide nel Carousel
+di questo kit.
+
+## Base
+
+Esempio di carousel con card articolo.
+
+<Canvas of={CarouselStories.Base} />
+
+## Con immagine in evidenza
+
+Esempio di carousel contenente un’immagine associata ad una card “articolo”.
+
+<Canvas of={CarouselStories.EvidenceImage} />
+
+## Con immagine in alto
+
+<Canvas of={CarouselStories.HighImage} />
+
+## Fullscreen di immagini
+
+<Canvas of={CarouselStories.FullscreenImage} />
+
+## Fullscreen di immagini (dimensione tandard)
+
+<Canvas of={CarouselStories.FullscreenStandardImage} />
