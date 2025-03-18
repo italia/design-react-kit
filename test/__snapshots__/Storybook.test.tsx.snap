@@ -26125,206 +26125,272 @@ exports[`Stories Snapshots Documentazione/Componenti/Tooltip Posizioni 1`] = `
 
 exports[`Stories Snapshots Documentazione/Componenti/Video AutoplayAndControls 1`] = `
 <div>
-  <div>
-    <div>
-      Video
-    </div>
-    <div
-      class="row dimmable"
+  <div
+    class="row dimmable"
+  >
+    <video
+      class="video-js"
+      controls=""
+      data-bs-video="true"
+      loop=""
+      preload="auto"
     >
-      <video
-        autoplay=""
-        class="video-js"
-        controls=""
-        data-bs-video="true"
-        loop=""
-        preload="auto"
-      >
-        <source
-          src="//vjs.zencdn.net/v/oceans.mp4"
-          type="video/mp4"
-        />
-        <source
-          src="//vjs.zencdn.net/v/oceans.webm"
-          type="video/webm"
-        />
-      </video>
-    </div>
+      <source
+        src="//vjs.zencdn.net/v/oceans.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="//vjs.zencdn.net/v/oceans.webm"
+        type="video/webm"
+      />
+    </video>
+  </div>
+  <div
+    aria-hidden="true"
+    class="dimmer fade dimmer-primary"
+  >
     <div
-      aria-hidden="true"
-      class="dimmer fade dimmer-primary"
+      class="dimmer-inner"
     >
       <div
-        class="dimmer-inner"
+        class="dimmer-icon"
       >
-        <div
-          class="dimmer-icon"
+        <svg
+          aria-hidden="true"
+          class="icon"
+          enable-background="new 0 0 24 24"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="icon"
-            enable-background="new 0 0 24 24"
-            viewBox="0 0 24 24"
-            xml:space="preserve"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
-            />
-          </svg>
-        </div>
-        <p>
-          Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
-        </p>
-        <div
-          class="dimmer-buttons bg-primary bg-dark"
+          <path
+            d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
+          />
+        </svg>
+      </div>
+      <p>
+        Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
+      </p>
+      <div
+        class="dimmer-buttons bg-primary bg-dark"
+      >
+        <button
+          class="btn btn-primary"
+          type="button"
         >
-          <button
-            class="btn btn-primary"
-            type="button"
-          >
-            Accetta
-          </button>
+          Accetta
+        </button>
+        <div
+          class="d-flex align-items-center ml-2"
+        >
           <div
-            class="d-flex align-items-center ml-2"
+            class="form-check form-check-inline"
           >
-            <div
-              class="form-check form-check-inline"
+            <input
+              class=""
+              id="inline-checkbox"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="text-white form-check-label"
+              for="inline-checkbox"
             >
-              <input
-                class=""
-                id="inline-checkbox"
-                type="checkbox"
-                value=""
-              />
-              <label
-                class="text-white form-check-label"
-                for="inline-checkbox"
-              >
-                Ricorda per tutti i video
-              </label>
-            </div>
+              Ricorda per tutti i video
+            </label>
           </div>
         </div>
       </div>
     </div>
-    <p>
-      In questo esempio vengono impostati seguenti parametri:
-      <ul>
-        <li>
-          autoPlay: true
-        </li>
-        <li>
-          fluid: true
-        </li>
-        <li>
-          controls: true
-        </li>
-        <li>
-          loop: true
-        </li>
-      </ul>
-    </p>
   </div>
 </div>
 `;
 
-exports[`Stories Snapshots Documentazione/Componenti/Video Esempi 1`] = `
+exports[`Stories Snapshots Documentazione/Componenti/Video Base 1`] = `
 <div>
-  <div>
-    <div>
-      Video
-    </div>
-    <div
-      class="row dimmable"
+  <div
+    class="row dimmable"
+  >
+    <video
+      class="video-js"
+      controls=""
+      data-bs-video="true"
+      preload="auto"
     >
-      <video
-        class="video-js"
-        controls=""
-        data-bs-video="true"
-        preload="auto"
-      >
-        <source
-          src="//vjs.zencdn.net/v/oceans.mp4"
-          type="video/mp4"
-        />
-        <source
-          src="//vjs.zencdn.net/v/oceans.webm"
-          type="video/webm"
-        />
-      </video>
-    </div>
+      <source
+        src="//vjs.zencdn.net/v/oceans.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="//vjs.zencdn.net/v/oceans.webm"
+        type="video/webm"
+      />
+    </video>
+  </div>
+  <div
+    aria-hidden="true"
+    class="dimmer fade dimmer-primary"
+  >
     <div
-      aria-hidden="true"
-      class="dimmer fade dimmer-primary"
+      class="dimmer-inner"
     >
       <div
-        class="dimmer-inner"
+        class="dimmer-icon"
       >
-        <div
-          class="dimmer-icon"
+        <svg
+          aria-hidden="true"
+          class="icon"
+          enable-background="new 0 0 24 24"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="icon"
-            enable-background="new 0 0 24 24"
-            viewBox="0 0 24 24"
-            xml:space="preserve"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
-            />
-          </svg>
-        </div>
-        <p>
-          Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
-        </p>
-        <div
-          class="dimmer-buttons bg-primary bg-dark"
+          <path
+            d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
+          />
+        </svg>
+      </div>
+      <p>
+        Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
+      </p>
+      <div
+        class="dimmer-buttons bg-primary bg-dark"
+      >
+        <button
+          class="btn btn-primary"
+          type="button"
         >
-          <button
-            class="btn btn-primary"
-            type="button"
-          >
-            Accetta
-          </button>
+          Accetta
+        </button>
+        <div
+          class="d-flex align-items-center ml-2"
+        >
           <div
-            class="d-flex align-items-center ml-2"
+            class="form-check form-check-inline"
           >
-            <div
-              class="form-check form-check-inline"
+            <input
+              class=""
+              id="inline-checkbox"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="text-white form-check-label"
+              for="inline-checkbox"
             >
-              <input
-                class=""
-                id="inline-checkbox"
-                type="checkbox"
-                value=""
-              />
-              <label
-                class="text-white form-check-label"
-                for="inline-checkbox"
-              >
-                Ricorda per tutti i video
-              </label>
-            </div>
+              Ricorda per tutti i video
+            </label>
           </div>
         </div>
       </div>
     </div>
-    <p>
-      In questo esempio vengono passati al compomente solamente la prorietà relativa all'array delle sorgenti, contente per ogni sorgente l'url della sorgente e sua tipologia
-    </p>
   </div>
 </div>
 `;
 
 exports[`Stories Snapshots Documentazione/Componenti/Video Tracks 1`] = `
 <div>
-  <div>
-    <div>
-      Video
+  <div
+    class="row dimmable"
+  >
+    <video
+      class="video-js"
+      controls=""
+      data-bs-video="true"
+      poster="https://italia.github.io/bootstrap-italia/docs/assets/video/ElephantsDream.mp4-poster21.jpg"
+      preload="auto"
+    >
+      <source
+        src="https://italia.github.io/bootstrap-italia/docs/assets/video/ElephantsDreamDASH/ElephantsDream.mp4.mpd"
+        type="application/dash+xml"
+      />
+      <track
+        default=""
+        kind="subtitles"
+        label="Italiano"
+        src="https://italia.github.io/bootstrap-italia/docs/assets/video/subtitles-it.vtt"
+        srclang="it"
+      />
+      <track
+        kind="subtitles"
+        label="English"
+        src="https://italia.github.io/bootstrap-italia/docs/assets/video/subtitles-en.vtt"
+        srclang="en"
+      />
+      <track
+        kind="captions"
+        label="Español"
+        src="https://italia.github.io/bootstrap-italia/docs/assets/video/subtitles-es.vtt"
+        srclang="es"
+      />
+    </video>
+  </div>
+  <div
+    aria-hidden="true"
+    class="dimmer fade dimmer-primary"
+  >
+    <div
+      class="dimmer-inner"
+    >
+      <div
+        class="dimmer-icon"
+      >
+        <svg
+          aria-hidden="true"
+          class="icon"
+          enable-background="new 0 0 24 24"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
+          />
+        </svg>
+      </div>
+      <p>
+        Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
+      </p>
+      <div
+        class="dimmer-buttons bg-primary bg-dark"
+      >
+        <button
+          class="btn btn-primary"
+          type="button"
+        >
+          Accetta
+        </button>
+        <div
+          class="d-flex align-items-center ml-2"
+        >
+          <div
+            class="form-check form-check-inline"
+          >
+            <input
+              class=""
+              id="inline-checkbox"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="text-white form-check-label"
+              for="inline-checkbox"
+            >
+              Ricorda per tutti i video
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Video Trascription 1`] = `
+<div>
+  <div
+    class="bg-secondary container"
+  >
     <div
       class="row dimmable"
     >
@@ -26332,33 +26398,45 @@ exports[`Stories Snapshots Documentazione/Componenti/Video Tracks 1`] = `
         class="video-js"
         controls=""
         data-bs-video="true"
-        poster="https://italia.github.io/bootstrap-italia/docs/assets/video/ElephantsDream.mp4-poster21.jpg"
         preload="auto"
       >
         <source
-          src="https://italia.github.io/bootstrap-italia/docs/assets/video/ElephantsDreamDASH/ElephantsDream.mp4.mpd"
-          type="application/dash+xml"
+          src="//vjs.zencdn.net/v/oceans.mp4"
+          type="video/mp4"
         />
-        <track
-          default=""
-          kind="subtitles"
-          label="Italiano"
-          src="https://italia.github.io/bootstrap-italia/docs/assets/video/subtitles-it.vtt"
-          srclang="it"
-        />
-        <track
-          kind="subtitles"
-          label="English"
-          src="https://italia.github.io/bootstrap-italia/docs/assets/video/subtitles-en.vtt"
-          srclang="en"
-        />
-        <track
-          kind="captions"
-          label="Español"
-          src="https://italia.github.io/bootstrap-italia/docs/assets/video/subtitles-es.vtt"
-          srclang="es"
+        <source
+          src="//vjs.zencdn.net/v/oceans.webm"
+          type="video/webm"
         />
       </video>
+      <div
+        class="accordion vjs-transcription"
+      >
+        <div
+          class="accordion-item"
+        >
+          <div
+            class="accordion-header"
+          >
+            <button
+              aria-expanded="false"
+              class="accordion-button collapsed"
+              type="button"
+            >
+              Mostra la trascrizione del video
+            </button>
+          </div>
+          <div
+            class="collapse"
+          >
+            <div
+              class="accordion-body"
+            >
+              Questa è la trascrizione testuale del video
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div
       aria-hidden="true"
@@ -26418,216 +26496,83 @@ exports[`Stories Snapshots Documentazione/Componenti/Video Tracks 1`] = `
         </div>
       </div>
     </div>
-    <p>
-      In questo esempio vengono passate diverse tracce per i sottotitoli: in italiano (predefinito) , inglese e spagnolo
-    </p>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Componenti/Video Trascription 1`] = `
-<div>
-  <div>
-    <div>
-      Video
-    </div>
-    <div
-      class="bg-secondary container"
-    >
-      <div
-        class="row dimmable"
-      >
-        <video
-          class="video-js"
-          controls=""
-          data-bs-video="true"
-          preload="auto"
-        >
-          <source
-            src="//vjs.zencdn.net/v/oceans.mp4"
-            type="video/mp4"
-          />
-          <source
-            src="//vjs.zencdn.net/v/oceans.webm"
-            type="video/webm"
-          />
-        </video>
-        <div
-          class="accordion vjs-transcription"
-        >
-          <div
-            class="accordion-item"
-          >
-            <div
-              class="accordion-header"
-            >
-              <button
-                aria-expanded="false"
-                class="accordion-button collapsed"
-                type="button"
-              >
-                Mostra la trascrizione del video
-              </button>
-            </div>
-            <div
-              class="collapse"
-            >
-              <div
-                class="accordion-body"
-              >
-                Questa è la trascrizione testuale del video
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        aria-hidden="true"
-        class="dimmer fade dimmer-primary"
-      >
-        <div
-          class="dimmer-inner"
-        >
-          <div
-            class="dimmer-icon"
-          >
-            <svg
-              aria-hidden="true"
-              class="icon"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
-              />
-            </svg>
-          </div>
-          <p>
-            Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
-          </p>
-          <div
-            class="dimmer-buttons bg-primary bg-dark"
-          >
-            <button
-              class="btn btn-primary"
-              type="button"
-            >
-              Accetta
-            </button>
-            <div
-              class="d-flex align-items-center ml-2"
-            >
-              <div
-                class="form-check form-check-inline"
-              >
-                <input
-                  class=""
-                  id="inline-checkbox"
-                  type="checkbox"
-                  value=""
-                />
-                <label
-                  class="text-white form-check-label"
-                  for="inline-checkbox"
-                >
-                  Ricorda per tutti i video
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p>
-      In questo esempio viene passato del testo relativo alla trascrizione video
-    </p>
   </div>
 </div>
 `;
 
 exports[`Stories Snapshots Documentazione/Componenti/Video YouTubeVideo 1`] = `
 <div>
-  <div>
-    <div>
-      Video
-    </div>
+  <div
+    class="row dimmable"
+  >
+    <video
+      class="video-js"
+      controls=""
+      data-bs-video="true"
+      preload="auto"
+    />
+  </div>
+  <div
+    class="dimmer fade show dimmer-primary"
+  >
     <div
-      class="row dimmable"
-    >
-      <video
-        class="video-js"
-        controls=""
-        data-bs-video="true"
-        preload="auto"
-      />
-    </div>
-    <div
-      class="dimmer fade show dimmer-primary"
+      class="dimmer-inner"
     >
       <div
-        class="dimmer-inner"
+        class="dimmer-icon"
       >
-        <div
-          class="dimmer-icon"
+        <svg
+          aria-hidden="true"
+          class="icon"
+          enable-background="new 0 0 24 24"
+          viewBox="0 0 24 24"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="icon"
-            enable-background="new 0 0 24 24"
-            viewBox="0 0 24 24"
-            xml:space="preserve"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
-            />
-          </svg>
-        </div>
-        <p>
-          Vai alla pagina privacy 
-          <a
-            href="/privacy_policy"
-          >
-            policy
-          </a>
-        </p>
-        <div
-          class="dimmer-buttons bg-primary bg-dark"
+          <path
+            d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
+          />
+        </svg>
+      </div>
+      <p>
+        Vai alla pagina privacy 
+        <a
+          href="/privacy_policy"
         >
-          <button
-            class="btn btn-primary"
-            type="button"
-          >
-            Accetta
-          </button>
+          policy
+        </a>
+      </p>
+      <div
+        class="dimmer-buttons bg-primary bg-dark"
+      >
+        <button
+          class="btn btn-primary"
+          type="button"
+        >
+          Accetta
+        </button>
+        <div
+          class="d-flex align-items-center ml-2"
+        >
           <div
-            class="d-flex align-items-center ml-2"
+            class="form-check form-check-inline"
           >
-            <div
-              class="form-check form-check-inline"
+            <input
+              class=""
+              id="inline-checkbox"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="text-white form-check-label"
+              for="inline-checkbox"
             >
-              <input
-                class=""
-                id="inline-checkbox"
-                type="checkbox"
-                value=""
-              />
-              <label
-                class="text-white form-check-label"
-                for="inline-checkbox"
-              >
-                Ricorda per tutti i video
-              </label>
-            </div>
+              Ricorda per tutti i video
+            </label>
           </div>
         </div>
       </div>
     </div>
-    <p>
-      In questo esempio viene passato nella prorietà 'youtubeUrl' un url di un video di YouTube
-    </p>
   </div>
 </div>
 `;
