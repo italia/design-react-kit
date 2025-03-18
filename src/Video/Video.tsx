@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC, useEffect, useRef } from 'react';
 
 import { VideoPlayer } from 'bootstrap-italia';
 import { CSSModule } from 'reactstrap/types/lib/utils';
@@ -57,14 +57,12 @@ export const Video: FC<VideoProps> = (props) => {
   const [disclaimerText, setDisclaimerText] = React.useState(
     `Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.`
   );
+  const ref = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    const el = document.querySelector('video');
+    const el = ref.current;
     if (el && VideoPlayer) {
       vpInstance = new VideoPlayer(el);
-      // setTimeout(() => {
-      //   console.log(vpInstance.player.log); // Con .player puoi usare play(), stop() ecc ..
-      // }, 3000);
       if (props.youtube?.url) {
         loadYouTubeVideo(props.youtube.url, vpInstance);
         if (props.youtube.hasDisclaimer) {
@@ -122,7 +120,7 @@ export const Video: FC<VideoProps> = (props) => {
   return (
     <>
       <div className='row dimmable'>
-        <video {...videoProps} preload='auto' className='video-js' data-bs-video={true}>
+        <video {...videoProps} ref={ref} preload='auto' className='video-js' data-bs-video={true}>
           {props.sources?.map((source) => <source key={source.src} src={source.src} type={source.type} />)}
           {props.tracks?.map((track) => {
             const { src, kind, label, srcLang, isDefault } = track;

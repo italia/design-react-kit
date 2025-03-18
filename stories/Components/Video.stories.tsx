@@ -70,9 +70,7 @@ export const Tracks: Story = {
     ];
 
     const poster = 'https://italia.github.io/bootstrap-italia/docs/assets/video/ElephantsDream.mp4-poster21.jpg';
-    return (
-      <Video sources={sources} tracks={tracks} poster={poster} />
-    );
+    return <Video sources={sources} tracks={tracks} poster={poster} />;
   }
 };
 
@@ -83,9 +81,7 @@ export const AutoplayAndControls: Story = {
       { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' }
     ];
 
-    return (
-      <Video sources={sources} autoPlay={true} fluid={true} controls={true} loop={true} />
-    );
+    return <Video sources={sources} autoPlay={false} fluid={true} controls={true} loop={true} />;
   }
 };
 
@@ -97,21 +93,17 @@ export const YouTubeVideo: Story = {
       disclaimerKey: 'youtube',
       disclaimerText: `Vai alla pagina privacy <a href='/privacy_policy'>policy</a>`
     };
-    return (
-      <Video youtube={ytVideo} />
-    );
+    return <Video youtube={ytVideo} />;
   }
 };
 
-export const Esempi: Story = {
+export const Base: Story = {
   render: () => {
     const sources = [
       { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' },
       { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' }
     ];
 
-    return (
-      <Video sources={sources} />
-    );
+    return <Video sources={sources} />;
   }
 };
