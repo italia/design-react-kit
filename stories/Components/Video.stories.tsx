@@ -94,7 +94,7 @@ export const AutoplayAndControls: Story = {
     return (
       <Video
         sources={sources}
-        autoPlay={false}
+        autoPlay={true}
         fluid={true}
         controls={true}
         loop={true}
