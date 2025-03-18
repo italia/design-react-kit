@@ -39,6 +39,7 @@ export const Trascription: Story = {
 
 export const Tracks: Story = {
   render: () => {
+    const transcription = 'Questa è la trascrizione testuale del video';
     const tracks: TrackSource[] = [
       {
         src: 'https://italia.github.io/bootstrap-italia/docs/assets/video/subtitles-it.vtt',
@@ -70,40 +71,65 @@ export const Tracks: Story = {
     ];
 
     const poster = 'https://italia.github.io/bootstrap-italia/docs/assets/video/ElephantsDream.mp4-poster21.jpg';
-    return <Video sources={sources} tracks={tracks} poster={poster} />;
+    return (
+      <Video
+        sources={sources}
+        tracks={tracks}
+        poster={poster}
+        transcriptionLabel={'Mostra la trascrizione del video'}
+        transcription={transcription}
+      />
+    );
   }
 };
 
 export const AutoplayAndControls: Story = {
   render: () => {
+    const transcription = 'Questa è la trascrizione testuale del video';
     const sources = [
       { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' },
       { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' }
     ];
 
-    return <Video sources={sources} autoPlay={false} fluid={true} controls={true} loop={true} />;
+    return (
+      <Video
+        sources={sources}
+        autoPlay={false}
+        fluid={true}
+        controls={true}
+        loop={true}
+        transcriptionLabel={'Mostra la trascrizione del video'}
+        transcription={transcription}
+      />
+    );
   }
 };
 
 export const YouTubeVideo: Story = {
   render: () => {
+    const transcription = 'Questa è la trascrizione testuale del video';
     const ytVideo = {
       url: 'https://youtu.be/_0j7ZQ67KtY',
       hasDisclaimer: true,
       disclaimerKey: 'youtube',
-      disclaimerText: `Vai alla pagina privacy <a href='/privacy_policy'>policy</a>`
+      disclaimerText: `Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella <a class="text-white" href='/privacy_policy'>cookie policy</a>`
     };
-    return <Video youtube={ytVideo} />;
+    return (
+      <Video youtube={ytVideo} transcriptionLabel={'Mostra la trascrizione del video'} transcription={transcription} />
+    );
   }
 };
 
 export const Base: Story = {
   render: () => {
+    const transcription = 'Questa è la trascrizione testuale del video';
     const sources = [
       { src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' },
       { src: '//vjs.zencdn.net/v/oceans.webm', type: 'video/webm' }
     ];
 
-    return <Video sources={sources} />;
+    return (
+      <Video sources={sources} transcriptionLabel={'Mostra la trascrizione del video'} transcription={transcription} />
+    );
   }
 };

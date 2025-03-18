@@ -11,6 +11,7 @@ import { Dimmer } from '../Dimmer/Dimmer';
 import { DimmerButtons } from '../Dimmer/DimmerButtons';
 import { Button } from '../Button/Button';
 import { FormGroup, Label } from 'reactstrap';
+import { Icon } from '../Icon/Icon';
 
 export interface VideoSource {
   src: string;
@@ -146,34 +147,41 @@ export const Video: FC<VideoProps> = (props) => {
             </AccordionItem>
           </Accordion>
         )}
-      </div>
-      <Dimmer icon='it-video' show={showDisclaimer} color='primary'>
-        <p dangerouslySetInnerHTML={{ __html: disclaimerText }}></p>
-        <DimmerButtons className='bg-primary'>
-          <Button
-            onClick={() => {
-              console.log('click');
-              setShowDisclaimer(false);
-            }}
-            color='primary'
-          >
-            Accetta
-          </Button>
-          <div className='d-flex align-items-center ml-2'>
-            <FormGroup check inline>
-              <Input
-                id='inline-checkbox'
-                type='checkbox'
-                checked={rememberFlag}
-                onChange={() => setRememberFlag((p) => !p)}
-              />
-              <Label check for='inline-checkbox' defaultChecked={false} className='text-white'>
-                Ricorda per tutti i video
-              </Label>
-            </FormGroup>
+        <Dimmer
+          show={showDisclaimer}
+          className='acceptoverlay-inner'
+          wrapperClassName='acceptoverlay acceptoverlay-primary '
+        >
+          <div className='acceptoverlay-icon'>
+            <Icon icon='it-video' size='xl' className=''></Icon>
           </div>
-        </DimmerButtons>
-      </Dimmer>
+          <p dangerouslySetInnerHTML={{ __html: disclaimerText }}></p>
+          <DimmerButtons className='bg-primary'>
+            <Button
+              onClick={() => {
+                console.log('click');
+                setShowDisclaimer(false);
+              }}
+              color='primary'
+            >
+              Accetta
+            </Button>
+            <div className='d-flex align-items-center ml-2'>
+              <FormGroup check inline>
+                <Input
+                  id='inline-checkbox'
+                  type='checkbox'
+                  checked={rememberFlag}
+                  onChange={() => setRememberFlag((p) => !p)}
+                />
+                <Label check for='inline-checkbox' defaultChecked={false} className='text-white'>
+                  Ricorda per tutti i video
+                </Label>
+              </FormGroup>
+            </div>
+          </DimmerButtons>
+        </Dimmer>
+      </div>
     </>
   );
 };
