@@ -149,6 +149,7 @@ export { Toolbar } from './Toolbar/Toolbar';
 export { ToolbarDividerItem } from './Toolbar/ToolbarDividerItem';
 export { ToolbarItem } from './Toolbar/ToolbarItem';
 export { Transfer } from './Transfer/Transfer';
+export { Video } from './Video/Video'
 
 // Types
 export type { AccordionProps } from './Accordion/Accordion';
@@ -258,6 +259,7 @@ export type { TimelineProps } from './Timeline/TimelineWrapper';
 export type { ToggleProps } from './Toggle/Toggle';
 export type { ToolbarProps } from './Toolbar/Toolbar';
 export type { ToolbarItemBadge, ToolbarItemProps } from './Toolbar/ToolbarItem';
+export type { VideoProps, VideoYouTube, VideoSource, VideoTrackSource } from "./Video/Video"
 
 export type {
   BreadcrumbItemProps,

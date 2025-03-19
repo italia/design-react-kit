@@ -1,0 +1,56 @@
+import { ArgTypes, Canvas, Controls, Meta, Story } from '@storybook/blocks';
+import { Code } from '@storybook/components';
+import { Callout, CalloutText, CalloutTitle } from '../../src';
+import { Video } from '../../src';
+import * as VideoStories from '../Components/Video.stories';
+
+<Meta of={VideoStories} />
+
+# VIDEO
+
+Il componente Video utilizza la libreria video.js per implementare funzionalità
+avanzate come il supporto a diversi formati video, la personalizzazione
+dell’interfaccia utente e l’integrazione con API esterne.
+
+Fare riferimento alla [documentazione Bootstrap per il video](https://italia.github.io/bootstrap-italia/docs/componenti/video-player/)
+
+## Esempio base
+
+In questo esempio vengono passati al compomente solamente la prorietà relativa
+all'array delle sorgenti, contente per ogni sorgente l'url della sorgente
+e sua tipologia.
+
+<Canvas of={VideoStories.Base} />
+
+## Trascrizioni
+
+In questo esempio viene passato del testo relativo alla trascrizione video
+
+<Canvas of={VideoStories.Trascription} />
+
+## Tracce
+
+In questo esempio vengono passate diverse tracce per i sottotitoli:
+in italiano (predefinito) , inglese e spagnolo
+
+<Canvas of={VideoStories.Tracks} />
+
+## Autoplay e controlli
+
+In questo esempio vengono impostati seguenti parametri:
+
+- autoPlay: true
+- fluid: true
+- controls: true
+- loop: true
+
+<Canvas of={VideoStories.AutoplayAndControls} />
+
+## Video YouTube con accettazione
+
+In questo esempio viene passato nella prorietà `youtubeUrl` un url di un video
+di YouTube.
+
+<Canvas of={VideoStories.YouTubeVideo} />
+
+<ArgTypes of={Video} />
