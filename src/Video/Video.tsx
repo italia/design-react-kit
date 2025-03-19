@@ -36,6 +36,7 @@ export interface YouTubeVideo {
   disclaimerKey?: string;
 }
 export interface VideoProps extends InputProps {
+  id: string;
   innerRef?: React.Ref<HTMLInputElement>;
   cssModule?: CSSModule;
   sources?: Array<VideoSource>;
@@ -48,6 +49,8 @@ export interface VideoProps extends InputProps {
   loop?: boolean;
   fluid?: boolean;
   youtube?: YouTubeVideo;
+  acceptLabel?: string;
+  rememberLabel?: string;
 }
 
 export const Video: FC<VideoProps> = (props) => {
@@ -64,8 +67,8 @@ export const Video: FC<VideoProps> = (props) => {
     const el = ref.current;
     if (el && VideoPlayer) {
       vpInstance = new VideoPlayer(el);
+      console.log(vpInstance)
       if (props.youtube?.url) {
-        loadYouTubeVideo(props.youtube.url, vpInstance);
         if (props.youtube.hasDisclaimer) {
           const serviceName = props.youtube.disclaimerKey || 'youtube';
           const rememberFlag = localStorage.getItem(serviceName);
@@ -75,6 +78,7 @@ export const Video: FC<VideoProps> = (props) => {
           setRememberFlag(rememberFlag == 'true');
           if (rememberFlag == 'true') {
             setShowDisclaimer(false);
+            loadYouTubeVideo(props.youtube.url);
           } else {
             setShowDisclaimer(true);
           }
@@ -89,27 +93,15 @@ export const Video: FC<VideoProps> = (props) => {
     }
     return () => {
       if (vpInstance) {
+        console.log('dispose')
         vpInstance.dispose();
       }
     };
   }, []);
 
-  useEffect(() => {
-    if (props.youtube?.url) {
-      if (props.youtube.hasDisclaimer) {
-        const serviceName = props.youtube.disclaimerKey || 'youtube';
-        if (rememberFlag) {
-          // set cookie
-          localStorage.setItem(serviceName, 'true');
-        } else {
-          // reset cookie
-          localStorage.removeItem(serviceName);
-        }
-      }
-    }
-  }, [rememberFlag]);
+  const loadYouTubeVideo = (url: string) => {
+    console.log(vpInstance)
 
-  function loadYouTubeVideo(url: string, vpInstance: VideoPlayer) {
     if (vpInstance) {
       vpInstance.setYouTubeVideo(url);
     }
@@ -159,23 +151,35 @@ export const Video: FC<VideoProps> = (props) => {
           <DimmerButtons className='bg-primary'>
             <Button
               onClick={() => {
-                console.log('click');
-                setShowDisclaimer(false);
+                if (props.youtube?.url) {
+                  if (props.youtube.hasDisclaimer) {
+                    const serviceName = props.youtube.disclaimerKey || 'youtube';
+                    if (rememberFlag) {
+                      // set cookie
+                      localStorage.setItem(serviceName, 'true');
+                    } else {
+                      // reset cookie
+                      localStorage.removeItem(serviceName);
+                    }
+                    loadYouTubeVideo(props.youtube.url);
+                  }
+                  setShowDisclaimer(false);
+                }
               }}
               color='primary'
             >
-              Accetta
+              {props.acceptLabel || 'Accetta'}
             </Button>
             <div className='d-flex align-items-center ml-2'>
               <FormGroup check inline>
                 <Input
-                  id='inline-checkbox'
+                  id={`inline-checkbox_${props.id}`}
                   type='checkbox'
                   checked={rememberFlag}
                   onChange={() => setRememberFlag((p) => !p)}
                 />
-                <Label check for='inline-checkbox' defaultChecked={false} className='text-white'>
-                  Ricorda per tutti i video
+                <Label check for={`inline-checkbox_${props.id}`} defaultChecked={false} className='text-white'>
+                  {props.rememberLabel || 'Ricorda per tutti i video'}
                 </Label>
               </FormGroup>
             </div>

@@ -28,6 +28,7 @@ export const Trascription: Story = {
     return (
       <div className='bg-secondary container'>
         <Video
+          id='video-trascription'
           sources={sources}
           transcriptionLabel={'Mostra la trascrizione del video'}
           transcription={transcription}
@@ -73,6 +74,7 @@ export const Tracks: Story = {
     const poster = 'https://italia.github.io/bootstrap-italia/docs/assets/video/ElephantsDream.mp4-poster21.jpg';
     return (
       <Video
+        id='video-tracks'
         sources={sources}
         tracks={tracks}
         poster={poster}
@@ -93,6 +95,7 @@ export const AutoplayAndControls: Story = {
 
     return (
       <Video
+        id='video-autoplay-controls'
         sources={sources}
         autoPlay={true}
         fluid={true}
@@ -115,7 +118,12 @@ export const YouTubeVideo: Story = {
       disclaimerText: `Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella <a class="text-white" href='/privacy_policy'>cookie policy</a>`
     };
     return (
-      <Video youtube={ytVideo} transcriptionLabel={'Mostra la trascrizione del video'} transcription={transcription} />
+      <Video
+        id='video-youtube'
+        youtube={ytVideo}
+        transcriptionLabel={'Mostra la trascrizione del video'}
+        transcription={transcription}
+      />
     );
   }
 };
@@ -129,7 +137,12 @@ export const Base: Story = {
     ];
 
     return (
-      <Video sources={sources} transcriptionLabel={'Mostra la trascrizione del video'} transcription={transcription} />
+      <Video
+        id="video-simple"
+        sources={sources}
+        transcriptionLabel={'Mostra la trascrizione del video'}
+        transcription={transcription}
+      />
     );
   }
 };
