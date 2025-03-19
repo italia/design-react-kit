@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
+
 
 import * as Utils from '../src/utils';
 import { isCustomLegendObject } from '../src/Rating/Rating';

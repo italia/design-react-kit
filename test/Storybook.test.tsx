@@ -6,6 +6,8 @@ import path from 'path';
 import './__mocks__/IntersectionObserverMock';
 import './__mocks__/matchMedia';
 
+console.log(document.scrollingElement);
+
 type StoryFile = {
   default: Meta;
   [name: string]: StoryFn | Meta;

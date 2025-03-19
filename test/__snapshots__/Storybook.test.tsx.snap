@@ -14,7 +14,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion _Accordion 1`] = 
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Accordion Group Item #1
@@ -39,7 +38,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion _Accordion 1`] = 
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Accordion Group Item #2
@@ -64,7 +62,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion _Accordion 1`] = 
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Accordion Group Item #3
@@ -98,7 +95,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion AccordionAnnidati
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #1
@@ -122,7 +118,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion AccordionAnnidati
                 <button
                   aria-expanded="false"
                   class="accordion-button collapsed"
-                  data-bs-toggle="collapse"
                   type="button"
                 >
                   Elemento Accordion annidato #1
@@ -147,7 +142,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion AccordionAnnidati
                 <button
                   aria-expanded="false"
                   class="accordion-button collapsed"
-                  data-bs-toggle="collapse"
                   type="button"
                 >
                   Elemento Accordion annidato #2
@@ -172,7 +166,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion AccordionAnnidati
                 <button
                   aria-expanded="false"
                   class="accordion-button collapsed"
-                  data-bs-toggle="collapse"
                   type="button"
                 >
                   Elemento Accordion annidato #3
@@ -198,7 +191,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion AccordionAnnidati
       <button
         aria-expanded="false"
         class="accordion-button collapsed"
-        data-bs-toggle="collapse"
         type="button"
       >
         Elemento Accordion #2
@@ -219,7 +211,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion AccordionAnnidati
       <button
         aria-expanded="false"
         class="accordion-button collapsed"
-        data-bs-toggle="collapse"
         type="button"
       >
         Elemento Accordion #3
@@ -252,7 +243,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion GruppiDiElementiR
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Richiudibile #1
@@ -277,7 +267,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion GruppiDiElementiR
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Richiudibile #2
@@ -302,7 +291,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion GruppiDiElementiR
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Richiudibile #3
@@ -336,7 +324,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion HeaderAttivi 1`] 
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #1
@@ -361,7 +348,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion HeaderAttivi 1`] 
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #2
@@ -386,7 +372,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion HeaderAttivi 1`] 
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #3
@@ -420,7 +405,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion HeaderHover 1`] =
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #1
@@ -445,7 +429,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion HeaderHover 1`] =
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #2
@@ -470,7 +453,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion HeaderHover 1`] =
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #3
@@ -504,7 +486,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion IconaSinistra 1`]
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #1
@@ -529,7 +510,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion IconaSinistra 1`]
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #2
@@ -554,7 +534,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Accordion IconaSinistra 1`]
         <button
           aria-expanded="false"
           class="accordion-button collapsed"
-          data-bs-toggle="collapse"
           type="button"
         >
           Elemento Accordion #3
@@ -26140,6 +26119,570 @@ exports[`Stories Snapshots Documentazione/Componenti/Tooltip Posizioni 1`] = `
     >
       Tooltip con HTML
     </button>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Video AutoplayAndControls 1`] = `
+<div>
+  <div
+    class="row dimmable"
+  >
+    <video
+      autoplay=""
+      class="video-js"
+      controls=""
+      data-bs-video="true"
+      loop=""
+      preload="auto"
+    >
+      <source
+        src="//vjs.zencdn.net/v/oceans.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="//vjs.zencdn.net/v/oceans.webm"
+        type="video/webm"
+      />
+    </video>
+    <div
+      class="accordion vjs-transcription"
+    >
+      <div
+        class="accordion-item"
+      >
+        <div
+          class="accordion-header"
+        >
+          <button
+            aria-expanded="false"
+            class="accordion-button collapsed"
+            type="button"
+          >
+            Mostra la trascrizione del video
+          </button>
+        </div>
+        <div
+          class="collapse"
+        >
+          <div
+            class="accordion-body"
+          >
+            Questa è la trascrizione testuale del video
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="dimmer fade acceptoverlay acceptoverlay-primary "
+    >
+      <div
+        class="dimmer-inner acceptoverlay-inner"
+      >
+        <div
+          class="acceptoverlay-icon"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon icon-xl"
+            enable-background="new 0 0 24 24"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
+            />
+          </svg>
+        </div>
+        <p>
+          Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
+        </p>
+        <div
+          class="dimmer-buttons bg-primary bg-dark"
+        >
+          <button
+            class="btn btn-primary"
+            type="button"
+          >
+            Accetta
+          </button>
+          <div
+            class="d-flex align-items-center ml-2"
+          >
+            <div
+              class="form-check form-check-inline"
+            >
+              <input
+                class=""
+                id="inline-checkbox_video-autoplay-controls"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="text-white form-check-label"
+                for="inline-checkbox_video-autoplay-controls"
+              >
+                Ricorda per tutti i video
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Video Base 1`] = `
+<div>
+  <div
+    class="row dimmable"
+  >
+    <video
+      class="video-js"
+      controls=""
+      data-bs-video="true"
+      preload="auto"
+    >
+      <source
+        src="//vjs.zencdn.net/v/oceans.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="//vjs.zencdn.net/v/oceans.webm"
+        type="video/webm"
+      />
+    </video>
+    <div
+      class="accordion vjs-transcription"
+    >
+      <div
+        class="accordion-item"
+      >
+        <div
+          class="accordion-header"
+        >
+          <button
+            aria-expanded="false"
+            class="accordion-button collapsed"
+            type="button"
+          >
+            Mostra la trascrizione del video
+          </button>
+        </div>
+        <div
+          class="collapse"
+        >
+          <div
+            class="accordion-body"
+          >
+            Questa è la trascrizione testuale del video
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="dimmer fade acceptoverlay acceptoverlay-primary "
+    >
+      <div
+        class="dimmer-inner acceptoverlay-inner"
+      >
+        <div
+          class="acceptoverlay-icon"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon icon-xl"
+            enable-background="new 0 0 24 24"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
+            />
+          </svg>
+        </div>
+        <p>
+          Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
+        </p>
+        <div
+          class="dimmer-buttons bg-primary bg-dark"
+        >
+          <button
+            class="btn btn-primary"
+            type="button"
+          >
+            Accetta
+          </button>
+          <div
+            class="d-flex align-items-center ml-2"
+          >
+            <div
+              class="form-check form-check-inline"
+            >
+              <input
+                class=""
+                id="inline-checkbox_video-simple"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="text-white form-check-label"
+                for="inline-checkbox_video-simple"
+              >
+                Ricorda per tutti i video
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Video Tracks 1`] = `
+<div>
+  <div
+    class="row dimmable"
+  >
+    <video
+      class="video-js"
+      controls=""
+      data-bs-video="true"
+      poster="https://italia.github.io/bootstrap-italia/docs/assets/video/ElephantsDream.mp4-poster21.jpg"
+      preload="auto"
+    >
+      <source
+        src="https://italia.github.io/bootstrap-italia/docs/assets/video/ElephantsDreamDASH/ElephantsDream.mp4.mpd"
+        type="application/dash+xml"
+      />
+      <track
+        default=""
+        kind="subtitles"
+        label="Italiano"
+        src="https://italia.github.io/bootstrap-italia/docs/assets/video/subtitles-it.vtt"
+        srclang="it"
+      />
+      <track
+        kind="subtitles"
+        label="English"
+        src="https://italia.github.io/bootstrap-italia/docs/assets/video/subtitles-en.vtt"
+        srclang="en"
+      />
+      <track
+        kind="captions"
+        label="Español"
+        src="https://italia.github.io/bootstrap-italia/docs/assets/video/subtitles-es.vtt"
+        srclang="es"
+      />
+    </video>
+    <div
+      class="accordion vjs-transcription"
+    >
+      <div
+        class="accordion-item"
+      >
+        <div
+          class="accordion-header"
+        >
+          <button
+            aria-expanded="false"
+            class="accordion-button collapsed"
+            type="button"
+          >
+            Mostra la trascrizione del video
+          </button>
+        </div>
+        <div
+          class="collapse"
+        >
+          <div
+            class="accordion-body"
+          >
+            Questa è la trascrizione testuale del video
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="dimmer fade acceptoverlay acceptoverlay-primary "
+    >
+      <div
+        class="dimmer-inner acceptoverlay-inner"
+      >
+        <div
+          class="acceptoverlay-icon"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon icon-xl"
+            enable-background="new 0 0 24 24"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
+            />
+          </svg>
+        </div>
+        <p>
+          Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
+        </p>
+        <div
+          class="dimmer-buttons bg-primary bg-dark"
+        >
+          <button
+            class="btn btn-primary"
+            type="button"
+          >
+            Accetta
+          </button>
+          <div
+            class="d-flex align-items-center ml-2"
+          >
+            <div
+              class="form-check form-check-inline"
+            >
+              <input
+                class=""
+                id="inline-checkbox_video-tracks"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="text-white form-check-label"
+                for="inline-checkbox_video-tracks"
+              >
+                Ricorda per tutti i video
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Video Trascription 1`] = `
+<div>
+  <div
+    class="row dimmable"
+  >
+    <video
+      class="video-js"
+      controls=""
+      data-bs-video="true"
+      preload="auto"
+    >
+      <source
+        src="//vjs.zencdn.net/v/oceans.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="//vjs.zencdn.net/v/oceans.webm"
+        type="video/webm"
+      />
+    </video>
+    <div
+      class="accordion vjs-transcription"
+    >
+      <div
+        class="accordion-item"
+      >
+        <div
+          class="accordion-header"
+        >
+          <button
+            aria-expanded="false"
+            class="accordion-button collapsed"
+            type="button"
+          >
+            Mostra la trascrizione del video
+          </button>
+        </div>
+        <div
+          class="collapse"
+        >
+          <div
+            class="accordion-body"
+          >
+            Questa è la trascrizione testuale del video
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="dimmer fade acceptoverlay acceptoverlay-primary "
+    >
+      <div
+        class="dimmer-inner acceptoverlay-inner"
+      >
+        <div
+          class="acceptoverlay-icon"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon icon-xl"
+            enable-background="new 0 0 24 24"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
+            />
+          </svg>
+        </div>
+        <p>
+          Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
+        </p>
+        <div
+          class="dimmer-buttons bg-primary bg-dark"
+        >
+          <button
+            class="btn btn-primary"
+            type="button"
+          >
+            Accetta
+          </button>
+          <div
+            class="d-flex align-items-center ml-2"
+          >
+            <div
+              class="form-check form-check-inline"
+            >
+              <input
+                class=""
+                id="inline-checkbox_video-trascription"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="text-white form-check-label"
+                for="inline-checkbox_video-trascription"
+              >
+                Ricorda per tutti i video
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Video YouTubeVideo 1`] = `
+<div>
+  <div
+    class="row dimmable"
+  >
+    <video
+      class="video-js"
+      controls=""
+      data-bs-video="true"
+      preload="auto"
+    />
+    <div
+      class="accordion vjs-transcription"
+    >
+      <div
+        class="accordion-item"
+      >
+        <div
+          class="accordion-header"
+        >
+          <button
+            aria-expanded="false"
+            class="accordion-button collapsed"
+            type="button"
+          >
+            Mostra la trascrizione del video
+          </button>
+        </div>
+        <div
+          class="collapse"
+        >
+          <div
+            class="accordion-body"
+          >
+            Questa è la trascrizione testuale del video
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="dimmer fade show acceptoverlay acceptoverlay-primary "
+    >
+      <div
+        class="dimmer-inner acceptoverlay-inner"
+      >
+        <div
+          class="acceptoverlay-icon"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon icon-xl"
+            enable-background="new 0 0 24 24"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
+            />
+          </svg>
+        </div>
+        <p>
+          Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella 
+          <a
+            class="text-white"
+            href="/privacy_policy"
+          >
+            cookie policy
+          </a>
+        </p>
+        <div
+          class="dimmer-buttons bg-primary bg-dark"
+        >
+          <button
+            class="btn btn-primary"
+            type="button"
+          >
+            Accetta
+          </button>
+          <div
+            class="d-flex align-items-center ml-2"
+          >
+            <div
+              class="form-check form-check-inline"
+            >
+              <input
+                class=""
+                id="inline-checkbox_video-youtube"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="text-white form-check-label"
+                for="inline-checkbox_video-youtube"
+              >
+                Ricorda per tutti i video
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;

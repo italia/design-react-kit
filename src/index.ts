@@ -152,6 +152,7 @@ export { Transfer } from './Transfer/Transfer';
 export { Upload } from './Upload/Upload';
 export { UploadList } from './Upload/UploadList';
 export { UploadListItem } from './Upload/UploadListItem';
+export { Video } from './Video/Video'
 
 // Types
 export type { AccordionProps } from './Accordion/Accordion';
@@ -262,6 +263,7 @@ export type { ToggleProps } from './Toggle/Toggle';
 export type { ToolbarProps } from './Toolbar/Toolbar';
 export type { ToolbarItemBadge, ToolbarItemProps } from './Toolbar/ToolbarItem';
 export type { UploadProps } from './Upload/Upload';
+export type { VideoProps, VideoYouTube, VideoSource, VideoTrackSource } from "./Video/Video"
 
 export type {
   BreadcrumbItemProps,
