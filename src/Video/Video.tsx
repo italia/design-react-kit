@@ -1,8 +1,7 @@
 import React, { FC, useEffect, useRef } from 'react';
 
 import { VideoPlayer } from 'bootstrap-italia';
-import { CSSModule } from 'reactstrap/types/lib/utils';
-import { Input, InputProps } from '../Input/Input';
+import { Input } from '../Input/Input';
 import { Accordion } from '../Accordion/Accordion';
 import { AccordionItem } from '../Accordion/AccordionItem';
 import { AccordionHeader } from '../Accordion/AccordionHeader';
@@ -14,42 +13,60 @@ import { FormGroup, Label } from 'reactstrap';
 import { Icon } from '../Icon/Icon';
 
 export interface VideoSource {
+  /** Sorgente del video */
   src: string;
+  /** Tipo della sorgente video */
   type: string;
 }
-export interface TrackSource {
+export interface VideoTrackSource {
+  /** Tipologia di traccia audio */
   kind: string;
+  /** Sorgente della traccia audio */
   src: string;
+  /** Lingua della traccia audio */
   srcLang: string;
+  /** Label della traccia audio */
   label: string;
+  /** Setta la traccia audio come default */
   isDefault?: boolean;
 }
-export interface transcription {
-  src: string;
-  type: 'video/mp4' | 'video/webm' | 'video/ogg';
-}
 
-export interface YouTubeVideo {
+export interface VideoYouTube {
+  /** Url del video YouTube */
   url: string;
+  /** Attiva o meno il disclaimer */
   hasDisclaimer?: boolean;
+  /** Testo del disclaimer */
   disclaimerText?: string;
+  /** Chiave del disclaimer come preferenza */
   disclaimerKey?: string;
 }
-export interface VideoProps extends InputProps {
+export interface VideoProps {
+  /** Id del componente Video */
   id: string;
-  innerRef?: React.Ref<HTMLInputElement>;
-  cssModule?: CSSModule;
+  /** Sorgenti del video */
   sources?: Array<VideoSource>;
+  /** Testo della trascrizione */
   transcription?: string;
+  /** Label dell'accordion della trascrizione */
   transcriptionLabel?: string;
-  tracks?: Array<TrackSource>;
+  /** Array delle tracce */
+  tracks?: Array<VideoTrackSource>;
+  /** Url del poster */
   poster?: string;
+  /** Attiva o meno i controlli */
   controls?: boolean;
+  /** Attiva o meno l'autoplay */
   autoPlay?: boolean;
+  /** Attiva o meno il loop del video */
   loop?: boolean;
+  /** Modalità visualizzazione fluida */
   fluid?: boolean;
-  youtube?: YouTubeVideo;
+  /** Video YouTube */
+  youtube?: VideoYouTube;
+  /** Label del pulsante di accettazione */
   acceptLabel?: string;
+  /** Label della checkbox per ricordare la scelta di accettazione */
   rememberLabel?: string;
 }
 

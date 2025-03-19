@@ -259,7 +259,7 @@ export type { TimelineProps } from './Timeline/TimelineWrapper';
 export type { ToggleProps } from './Toggle/Toggle';
 export type { ToolbarProps } from './Toolbar/Toolbar';
 export type { ToolbarItemBadge, ToolbarItemProps } from './Toolbar/ToolbarItem';
-export type { VideoProps } from "./Video/Video"
+export type { VideoProps, VideoYouTube, VideoSource, VideoTrackSource } from "./Video/Video"
 
 export type {
   BreadcrumbItemProps,

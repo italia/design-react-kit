@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import { Video } from '../../src';
-import type { TrackSource } from '../../src/Video/Video';
+import type { VideoTrackSource } from '../../src/Video/Video';
 
 const meta: Meta<typeof Video> = {
   title: 'Documentazione/Componenti/Video',
@@ -39,7 +39,7 @@ export const Trascription: Story = {
 export const Tracks: Story = {
   render: () => {
     const transcription = 'Questa è la trascrizione testuale del video';
-    const tracks: TrackSource[] = [
+    const tracks: VideoTrackSource[] = [
       {
         src: 'https://italia.github.io/bootstrap-italia/docs/assets/video/subtitles-it.vtt',
         kind: 'subtitles',

@@ -1,6 +1,7 @@
-import { Canvas, Controls, Meta, Story } from '@storybook/blocks';
+import { ArgTypes, Canvas, Controls, Meta, Story } from '@storybook/blocks';
 import { Code } from '@storybook/components';
 import { Callout, CalloutText, CalloutTitle } from '../../src';
+import { Video } from '../../src';
 import * as VideoStories from '../Components/Video.stories';
 
 <Meta of={VideoStories} />
@@ -52,3 +53,4 @@ di YouTube.
 
 <Canvas of={VideoStories.YouTubeVideo} />
 
+<ArgTypes of={Video} />
