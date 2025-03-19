@@ -26,14 +26,12 @@ export const Trascription: Story = {
     const transcription = 'Questa è la trascrizione testuale del video';
 
     return (
-      <div className='bg-secondary container'>
-        <Video
-          id='video-trascription'
-          sources={sources}
-          transcriptionLabel={'Mostra la trascrizione del video'}
-          transcription={transcription}
-        />
-      </div>
+      <Video
+        id='video-trascription'
+        sources={sources}
+        transcriptionLabel={'Mostra la trascrizione del video'}
+        transcription={transcription}
+      />
     );
   }
 };

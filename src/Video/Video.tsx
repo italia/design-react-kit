@@ -54,9 +54,9 @@ export interface VideoProps extends InputProps {
 }
 
 export const Video: FC<VideoProps> = (props) => {
-  let vpInstance: VideoPlayer;
   const [showTranscript, setShowTranscript] = React.useState(false);
   const [showDisclaimer, setShowDisclaimer] = React.useState(false);
+  const [instance, setInstance] = React.useState<VideoPlayer>();
   const [rememberFlag, setRememberFlag] = React.useState(false);
   const [disclaimerText, setDisclaimerText] = React.useState(
     `Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.`
@@ -65,45 +65,42 @@ export const Video: FC<VideoProps> = (props) => {
 
   useEffect(() => {
     const el = ref.current;
-    if (el && VideoPlayer) {
-      vpInstance = new VideoPlayer(el);
-      console.log(vpInstance)
-      if (props.youtube?.url) {
-        if (props.youtube.hasDisclaimer) {
-          const serviceName = props.youtube.disclaimerKey || 'youtube';
-          const rememberFlag = localStorage.getItem(serviceName);
-          if (props.youtube.disclaimerText) {
-            setDisclaimerText(props.youtube.disclaimerText);
-          }
-          setRememberFlag(rememberFlag == 'true');
-          if (rememberFlag == 'true') {
-            setShowDisclaimer(false);
-            loadYouTubeVideo(props.youtube.url);
-          } else {
-            setShowDisclaimer(true);
-          }
+    if (el && VideoPlayer && !instance) {
+      setInstance(new VideoPlayer(el))
+    }
+    if (props.youtube?.url) {
+      if (props.youtube.hasDisclaimer) {
+        const serviceName = props.youtube.disclaimerKey || 'youtube';
+        const rememberFlag = localStorage.getItem(serviceName);
+        if (props.youtube.disclaimerText) {
+          setDisclaimerText(props.youtube.disclaimerText);
+        }
+        setRememberFlag(rememberFlag == 'true');
+        if (rememberFlag == 'true') {
+          setShowDisclaimer(false);
+          loadYouTubeVideo(props.youtube.url);
+        } else {
+          setShowDisclaimer(true);
         }
       }
-
-      if (props.autoPlay) {
-        setTimeout(() => {
-          vpInstance?.player?.play();
-        }, 1000);
-      }
     }
+
+    if (props.autoPlay) {
+      setTimeout(() => {
+        instance?.player?.play();
+      }, 1000);
+    }
+
     return () => {
-      if (vpInstance) {
-        console.log('dispose')
-        vpInstance.dispose();
+      if (instance) {
+        instance.dispose();
       }
     };
-  }, []);
+  }, [instance]);
 
   const loadYouTubeVideo = (url: string) => {
-    console.log(vpInstance)
-
-    if (vpInstance) {
-      vpInstance.setYouTubeVideo(url);
+    if (instance) {
+      instance.setYouTubeVideo(url);
     }
   }
 
