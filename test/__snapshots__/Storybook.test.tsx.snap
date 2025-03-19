@@ -26216,13 +26216,13 @@ exports[`Stories Snapshots Documentazione/Componenti/Video AutoplayAndControls 1
             >
               <input
                 class=""
-                id="inline-checkbox"
+                id="inline-checkbox_video-autoplay-controls"
                 type="checkbox"
                 value=""
               />
               <label
                 class="text-white form-check-label"
-                for="inline-checkbox"
+                for="inline-checkbox_video-autoplay-controls"
               >
                 Ricorda per tutti i video
               </label>
@@ -26326,13 +26326,13 @@ exports[`Stories Snapshots Documentazione/Componenti/Video Base 1`] = `
             >
               <input
                 class=""
-                id="inline-checkbox"
+                id="inline-checkbox_video-simple"
                 type="checkbox"
                 value=""
               />
               <label
                 class="text-white form-check-label"
-                for="inline-checkbox"
+                for="inline-checkbox_video-simple"
               >
                 Ricorda per tutti i video
               </label>
@@ -26452,13 +26452,13 @@ exports[`Stories Snapshots Documentazione/Componenti/Video Tracks 1`] = `
             >
               <input
                 class=""
-                id="inline-checkbox"
+                id="inline-checkbox_video-tracks"
                 type="checkbox"
                 value=""
               />
               <label
                 class="text-white form-check-label"
-                for="inline-checkbox"
+                for="inline-checkbox_video-tracks"
               >
                 Ricorda per tutti i video
               </label>
@@ -26474,108 +26474,104 @@ exports[`Stories Snapshots Documentazione/Componenti/Video Tracks 1`] = `
 exports[`Stories Snapshots Documentazione/Componenti/Video Trascription 1`] = `
 <div>
   <div
-    class="bg-secondary container"
+    class="row dimmable"
   >
-    <div
-      class="row dimmable"
+    <video
+      class="video-js"
+      controls=""
+      data-bs-video="true"
+      preload="auto"
     >
-      <video
-        class="video-js"
-        controls=""
-        data-bs-video="true"
-        preload="auto"
-      >
-        <source
-          src="//vjs.zencdn.net/v/oceans.mp4"
-          type="video/mp4"
-        />
-        <source
-          src="//vjs.zencdn.net/v/oceans.webm"
-          type="video/webm"
-        />
-      </video>
+      <source
+        src="//vjs.zencdn.net/v/oceans.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="//vjs.zencdn.net/v/oceans.webm"
+        type="video/webm"
+      />
+    </video>
+    <div
+      class="accordion vjs-transcription"
+    >
       <div
-        class="accordion vjs-transcription"
+        class="accordion-item"
       >
         <div
-          class="accordion-item"
+          class="accordion-header"
+        >
+          <button
+            aria-expanded="false"
+            class="accordion-button collapsed"
+            type="button"
+          >
+            Mostra la trascrizione del video
+          </button>
+        </div>
+        <div
+          class="collapse"
         >
           <div
-            class="accordion-header"
+            class="accordion-body"
           >
-            <button
-              aria-expanded="false"
-              class="accordion-button collapsed"
-              type="button"
-            >
-              Mostra la trascrizione del video
-            </button>
-          </div>
-          <div
-            class="collapse"
-          >
-            <div
-              class="accordion-body"
-            >
-              Questa è la trascrizione testuale del video
-            </div>
+            Questa è la trascrizione testuale del video
           </div>
         </div>
       </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="dimmer fade acceptoverlay acceptoverlay-primary "
+    >
       <div
-        aria-hidden="true"
-        class="dimmer fade acceptoverlay acceptoverlay-primary "
+        class="dimmer-inner acceptoverlay-inner"
       >
         <div
-          class="dimmer-inner acceptoverlay-inner"
+          class="acceptoverlay-icon"
         >
-          <div
-            class="acceptoverlay-icon"
+          <svg
+            aria-hidden="true"
+            class="icon icon-xl"
+            enable-background="new 0 0 24 24"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              aria-hidden="true"
-              class="icon icon-xl"
-              enable-background="new 0 0 24 24"
-              viewBox="0 0 24 24"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
-              />
-            </svg>
-          </div>
-          <p>
-            Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
-          </p>
-          <div
-            class="dimmer-buttons bg-primary bg-dark"
+            <path
+              d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
+            />
+          </svg>
+        </div>
+        <p>
+          Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
+        </p>
+        <div
+          class="dimmer-buttons bg-primary bg-dark"
+        >
+          <button
+            class="btn btn-primary"
+            type="button"
           >
-            <button
-              class="btn btn-primary"
-              type="button"
-            >
-              Accetta
-            </button>
+            Accetta
+          </button>
+          <div
+            class="d-flex align-items-center ml-2"
+          >
             <div
-              class="d-flex align-items-center ml-2"
+              class="form-check form-check-inline"
             >
-              <div
-                class="form-check form-check-inline"
+              <input
+                class=""
+                id="inline-checkbox_video-trascription"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="text-white form-check-label"
+                for="inline-checkbox_video-trascription"
               >
-                <input
-                  class=""
-                  id="inline-checkbox"
-                  type="checkbox"
-                  value=""
-                />
-                <label
-                  class="text-white form-check-label"
-                  for="inline-checkbox"
-                >
-                  Ricorda per tutti i video
-                </label>
-              </div>
+                Ricorda per tutti i video
+              </label>
             </div>
           </div>
         </div>
@@ -26672,13 +26668,13 @@ exports[`Stories Snapshots Documentazione/Componenti/Video YouTubeVideo 1`] = `
             >
               <input
                 class=""
-                id="inline-checkbox"
+                id="inline-checkbox_video-youtube"
                 type="checkbox"
                 value=""
               />
               <label
                 class="text-white form-check-label"
-                for="inline-checkbox"
+                for="inline-checkbox_video-youtube"
               >
                 Ricorda per tutti i video
               </label>
