@@ -26129,6 +26129,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Video AutoplayAndControls 1
     class="row dimmable"
   >
     <video
+      autoplay=""
       class="video-js"
       controls=""
       data-bs-video="true"
@@ -26144,60 +26145,88 @@ exports[`Stories Snapshots Documentazione/Componenti/Video AutoplayAndControls 1
         type="video/webm"
       />
     </video>
-  </div>
-  <div
-    aria-hidden="true"
-    class="dimmer fade dimmer-primary"
-  >
     <div
-      class="dimmer-inner"
+      class="accordion vjs-transcription"
     >
       <div
-        class="dimmer-icon"
+        class="accordion-item"
       >
-        <svg
-          aria-hidden="true"
-          class="icon"
-          enable-background="new 0 0 24 24"
-          viewBox="0 0 24 24"
-          xml:space="preserve"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
-          />
-        </svg>
-      </div>
-      <p>
-        Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
-      </p>
-      <div
-        class="dimmer-buttons bg-primary bg-dark"
-      >
-        <button
-          class="btn btn-primary"
-          type="button"
-        >
-          Accetta
-        </button>
         <div
-          class="d-flex align-items-center ml-2"
+          class="accordion-header"
+        >
+          <button
+            aria-expanded="false"
+            class="accordion-button collapsed"
+            type="button"
+          >
+            Mostra la trascrizione del video
+          </button>
+        </div>
+        <div
+          class="collapse"
         >
           <div
-            class="form-check form-check-inline"
+            class="accordion-body"
           >
-            <input
-              class=""
-              id="inline-checkbox"
-              type="checkbox"
-              value=""
+            Questa è la trascrizione testuale del video
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="dimmer fade acceptoverlay acceptoverlay-primary "
+    >
+      <div
+        class="dimmer-inner acceptoverlay-inner"
+      >
+        <div
+          class="acceptoverlay-icon"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon icon-xl"
+            enable-background="new 0 0 24 24"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
             />
-            <label
-              class="text-white form-check-label"
-              for="inline-checkbox"
+          </svg>
+        </div>
+        <p>
+          Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
+        </p>
+        <div
+          class="dimmer-buttons bg-primary bg-dark"
+        >
+          <button
+            class="btn btn-primary"
+            type="button"
+          >
+            Accetta
+          </button>
+          <div
+            class="d-flex align-items-center ml-2"
+          >
+            <div
+              class="form-check form-check-inline"
             >
-              Ricorda per tutti i video
-            </label>
+              <input
+                class=""
+                id="inline-checkbox"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="text-white form-check-label"
+                for="inline-checkbox"
+              >
+                Ricorda per tutti i video
+              </label>
+            </div>
           </div>
         </div>
       </div>
@@ -26226,60 +26255,88 @@ exports[`Stories Snapshots Documentazione/Componenti/Video Base 1`] = `
         type="video/webm"
       />
     </video>
-  </div>
-  <div
-    aria-hidden="true"
-    class="dimmer fade dimmer-primary"
-  >
     <div
-      class="dimmer-inner"
+      class="accordion vjs-transcription"
     >
       <div
-        class="dimmer-icon"
+        class="accordion-item"
       >
-        <svg
-          aria-hidden="true"
-          class="icon"
-          enable-background="new 0 0 24 24"
-          viewBox="0 0 24 24"
-          xml:space="preserve"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
-          />
-        </svg>
-      </div>
-      <p>
-        Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
-      </p>
-      <div
-        class="dimmer-buttons bg-primary bg-dark"
-      >
-        <button
-          class="btn btn-primary"
-          type="button"
-        >
-          Accetta
-        </button>
         <div
-          class="d-flex align-items-center ml-2"
+          class="accordion-header"
+        >
+          <button
+            aria-expanded="false"
+            class="accordion-button collapsed"
+            type="button"
+          >
+            Mostra la trascrizione del video
+          </button>
+        </div>
+        <div
+          class="collapse"
         >
           <div
-            class="form-check form-check-inline"
+            class="accordion-body"
           >
-            <input
-              class=""
-              id="inline-checkbox"
-              type="checkbox"
-              value=""
+            Questa è la trascrizione testuale del video
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="dimmer fade acceptoverlay acceptoverlay-primary "
+    >
+      <div
+        class="dimmer-inner acceptoverlay-inner"
+      >
+        <div
+          class="acceptoverlay-icon"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon icon-xl"
+            enable-background="new 0 0 24 24"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
             />
-            <label
-              class="text-white form-check-label"
-              for="inline-checkbox"
+          </svg>
+        </div>
+        <p>
+          Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
+        </p>
+        <div
+          class="dimmer-buttons bg-primary bg-dark"
+        >
+          <button
+            class="btn btn-primary"
+            type="button"
+          >
+            Accetta
+          </button>
+          <div
+            class="d-flex align-items-center ml-2"
+          >
+            <div
+              class="form-check form-check-inline"
             >
-              Ricorda per tutti i video
-            </label>
+              <input
+                class=""
+                id="inline-checkbox"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="text-white form-check-label"
+                for="inline-checkbox"
+              >
+                Ricorda per tutti i video
+              </label>
+            </div>
           </div>
         </div>
       </div>
@@ -26324,60 +26381,88 @@ exports[`Stories Snapshots Documentazione/Componenti/Video Tracks 1`] = `
         srclang="es"
       />
     </video>
-  </div>
-  <div
-    aria-hidden="true"
-    class="dimmer fade dimmer-primary"
-  >
     <div
-      class="dimmer-inner"
+      class="accordion vjs-transcription"
     >
       <div
-        class="dimmer-icon"
+        class="accordion-item"
       >
-        <svg
-          aria-hidden="true"
-          class="icon"
-          enable-background="new 0 0 24 24"
-          viewBox="0 0 24 24"
-          xml:space="preserve"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
-          />
-        </svg>
-      </div>
-      <p>
-        Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
-      </p>
-      <div
-        class="dimmer-buttons bg-primary bg-dark"
-      >
-        <button
-          class="btn btn-primary"
-          type="button"
-        >
-          Accetta
-        </button>
         <div
-          class="d-flex align-items-center ml-2"
+          class="accordion-header"
+        >
+          <button
+            aria-expanded="false"
+            class="accordion-button collapsed"
+            type="button"
+          >
+            Mostra la trascrizione del video
+          </button>
+        </div>
+        <div
+          class="collapse"
         >
           <div
-            class="form-check form-check-inline"
+            class="accordion-body"
           >
-            <input
-              class=""
-              id="inline-checkbox"
-              type="checkbox"
-              value=""
+            Questa è la trascrizione testuale del video
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      class="dimmer fade acceptoverlay acceptoverlay-primary "
+    >
+      <div
+        class="dimmer-inner acceptoverlay-inner"
+      >
+        <div
+          class="acceptoverlay-icon"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon icon-xl"
+            enable-background="new 0 0 24 24"
+            viewBox="0 0 24 24"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
             />
-            <label
-              class="text-white form-check-label"
-              for="inline-checkbox"
+          </svg>
+        </div>
+        <p>
+          Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
+        </p>
+        <div
+          class="dimmer-buttons bg-primary bg-dark"
+        >
+          <button
+            class="btn btn-primary"
+            type="button"
+          >
+            Accetta
+          </button>
+          <div
+            class="d-flex align-items-center ml-2"
+          >
+            <div
+              class="form-check form-check-inline"
             >
-              Ricorda per tutti i video
-            </label>
+              <input
+                class=""
+                id="inline-checkbox"
+                type="checkbox"
+                value=""
+              />
+              <label
+                class="text-white form-check-label"
+                for="inline-checkbox"
+              >
+                Ricorda per tutti i video
+              </label>
+            </div>
           </div>
         </div>
       </div>
@@ -26437,20 +26522,120 @@ exports[`Stories Snapshots Documentazione/Componenti/Video Trascription 1`] = `
           </div>
         </div>
       </div>
-    </div>
-    <div
-      aria-hidden="true"
-      class="dimmer fade dimmer-primary"
-    >
       <div
-        class="dimmer-inner"
+        aria-hidden="true"
+        class="dimmer fade acceptoverlay acceptoverlay-primary "
       >
         <div
-          class="dimmer-icon"
+          class="dimmer-inner acceptoverlay-inner"
+        >
+          <div
+            class="acceptoverlay-icon"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon icon-xl"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
+              />
+            </svg>
+          </div>
+          <p>
+            Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
+          </p>
+          <div
+            class="dimmer-buttons bg-primary bg-dark"
+          >
+            <button
+              class="btn btn-primary"
+              type="button"
+            >
+              Accetta
+            </button>
+            <div
+              class="d-flex align-items-center ml-2"
+            >
+              <div
+                class="form-check form-check-inline"
+              >
+                <input
+                  class=""
+                  id="inline-checkbox"
+                  type="checkbox"
+                  value=""
+                />
+                <label
+                  class="text-white form-check-label"
+                  for="inline-checkbox"
+                >
+                  Ricorda per tutti i video
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stories Snapshots Documentazione/Componenti/Video YouTubeVideo 1`] = `
+<div>
+  <div
+    class="row dimmable"
+  >
+    <video
+      class="video-js"
+      controls=""
+      data-bs-video="true"
+      preload="auto"
+    />
+    <div
+      class="accordion vjs-transcription"
+    >
+      <div
+        class="accordion-item"
+      >
+        <div
+          class="accordion-header"
+        >
+          <button
+            aria-expanded="false"
+            class="accordion-button collapsed"
+            type="button"
+          >
+            Mostra la trascrizione del video
+          </button>
+        </div>
+        <div
+          class="collapse"
+        >
+          <div
+            class="accordion-body"
+          >
+            Questa è la trascrizione testuale del video
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="dimmer fade show acceptoverlay acceptoverlay-primary "
+    >
+      <div
+        class="dimmer-inner acceptoverlay-inner"
+      >
+        <div
+          class="acceptoverlay-icon"
         >
           <svg
             aria-hidden="true"
-            class="icon"
+            class="icon icon-xl"
             enable-background="new 0 0 24 24"
             viewBox="0 0 24 24"
             xml:space="preserve"
@@ -26462,7 +26647,13 @@ exports[`Stories Snapshots Documentazione/Componenti/Video Trascription 1`] = `
           </svg>
         </div>
         <p>
-          Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella cookie policy.
+          Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella 
+          <a
+            class="text-white"
+            href="/privacy_policy"
+          >
+            cookie policy
+          </a>
         </p>
         <div
           class="dimmer-buttons bg-primary bg-dark"
@@ -26492,83 +26683,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Video Trascription 1`] = `
                 Ricorda per tutti i video
               </label>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Componenti/Video YouTubeVideo 1`] = `
-<div>
-  <div
-    class="row dimmable"
-  >
-    <video
-      class="video-js"
-      controls=""
-      data-bs-video="true"
-      preload="auto"
-    />
-  </div>
-  <div
-    class="dimmer fade show dimmer-primary"
-  >
-    <div
-      class="dimmer-inner"
-    >
-      <div
-        class="dimmer-icon"
-      >
-        <svg
-          aria-hidden="true"
-          class="icon"
-          enable-background="new 0 0 24 24"
-          viewBox="0 0 24 24"
-          xml:space="preserve"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M17.5 7.3V6c0-.8-.7-1.5-1.5-1.5H5.5C4.7 4.5 4 5.2 4 6v8c0 .8.7 1.5 1.5 1.5h3.4L7.4 21h1l1.6-5.5h1.8l1.6 5.5h1l-1.6-5.5H16c.8 0 1.5-.7 1.5-1.5v-1.3l4 1.5V5.8l-4 1.5zm3 5.5-4-1.5V14c0 .3-.2.5-.5.5H5.5c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5H16c.3 0 .5.2.5.5v2.7l4-1.5v5.6zM2 8h1v4H2V8z"
-          />
-        </svg>
-      </div>
-      <p>
-        Vai alla pagina privacy 
-        <a
-          href="/privacy_policy"
-        >
-          policy
-        </a>
-      </p>
-      <div
-        class="dimmer-buttons bg-primary bg-dark"
-      >
-        <button
-          class="btn btn-primary"
-          type="button"
-        >
-          Accetta
-        </button>
-        <div
-          class="d-flex align-items-center ml-2"
-        >
-          <div
-            class="form-check form-check-inline"
-          >
-            <input
-              class=""
-              id="inline-checkbox"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="text-white form-check-label"
-              for="inline-checkbox"
-            >
-              Ricorda per tutti i video
-            </label>
           </div>
         </div>
       </div>
