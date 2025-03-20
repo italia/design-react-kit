@@ -107,23 +107,43 @@ Per una corretta implementazione si consiglia di consultare la <a target="_blank
 #### Codice
 
 ```tsx
-const suggest = (query: any, populateResults: any) => {
-  const filteredResults = multiOptions.filter((i) => i.label.toLowerCase().includes(query.toLowerCase()));
-  let data = filteredResults.map((item) => {
-    return item.label;
-  });
-  populateResults(data);
-};
+const suggest = (query: string, syncResults: (p: string[]) => void)  => {
+  const results = [
+    'Abruzzo',
+    'Basilicata',
+    'Calabria',
+    'Campania',
+    'Emilia Romagna',
+    'Friuli Venezia Giulia',
+    'Lazio',
+    'Liguria',
+    'Lombardia',
+    'Marche',
+    'Molise',
+    'Piemonte',
+    'Puglia',
+    'Sardegna',
+    'Sicilia',
+    'Toscana',
+    'Trentino Alto Adige',
+    'Umbria',
+    'Valle d\'Aosta',
+    'Veneto'
+  ];
+  syncResults(query
+    ? results.filter(function (result) {
+        return result.toLowerCase().indexOf(query.toLowerCase()) !== -1
+      })
+    : []
+  )
+}
 
 return (
-  <FormGroup className='select-wrapper'>
-    <label htmlFor='autocomplete'>Provincia</label>
+  <FormGroup className='form-group'>
     <Autocomplete
       id='autocomplete'
+      label='Regione'
       source={suggest}
-      placeholder={'Testo da cercare'}
-      defaultValue={''}
-      displayMenu={'inline'}
       tNoResults={() => 'Nessun risultato'}
     />
   </FormGroup>
