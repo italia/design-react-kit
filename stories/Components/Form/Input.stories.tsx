@@ -159,11 +159,6 @@ export const _InputAutocompleteConDatiAccessibile: Story = {
         />
       </FormGroup>
     );
-  },
-  parameters: {
-    docs: {
-      canvas: { sourceState: 'none' }
-    }
   }
 };
 
