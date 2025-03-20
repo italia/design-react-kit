@@ -5,12 +5,7 @@ import type { VideoTrackSource } from '../../src/Video/Video';
 
 const meta: Meta<typeof Video> = {
   title: 'Documentazione/Componenti/Video',
-  component: Video,
-  parameters: {
-    docs: {
-      canvas: { sourceState: 'none' }
-    }
-  }
+  component: Video
 };
 
 export default meta;
