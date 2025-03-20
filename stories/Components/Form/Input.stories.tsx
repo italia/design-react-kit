@@ -153,7 +153,7 @@ export const _InputAutocompleteConDatiAccessibile: Story = {
       <FormGroup className='form-group'>
         <Autocomplete
           id='autocomplete'
-          label='Provincia'
+          label='Regione'
           source={suggest}
           tNoResults={() => 'Nessun risultato'}
         />
