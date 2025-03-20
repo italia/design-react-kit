@@ -27514,7 +27514,7 @@ exports[`Stories Snapshots Documentazione/Form/Input _InputAutocompleteConDatiAc
     <label
       for="autocomplete"
     >
-      Provincia
+      Regione
     </label>
     <div
       class="autocomplete__wrapper"
