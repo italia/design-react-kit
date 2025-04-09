@@ -5836,11 +5836,6 @@ mdast-util-to-string@^4.0.0:
   dependencies:
     "@types/mdast" "^4.0.0"
 
-memoize-one@^5.1.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.2.1.tgz#8337aa3c4335581839ec01c3d594090cebe8f00e"
-  integrity sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==
-
 memoizerific@^1.11.3:
   version "1.11.3"
   resolved "https://registry.yarnpkg.com/memoizerific/-/memoizerific-1.11.3.tgz#7c87a4646444c32d75438570905f2dbd1b1a805a"
@@ -6882,13 +6877,6 @@ react-popper@^2.2.4:
     react-fast-compare "^3.0.1"
     warning "^4.0.2"
 
-react-stickup@^1.12.1:
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/react-stickup/-/react-stickup-1.12.1.tgz#35eed24c21fe9be52b4f56cb9b9830e134eb693f"
-  integrity sha512-YVLPzj/QlxuRLi4IMzCqU0OY9bol8TwPVCoXKpe4uQzOTazqa9s7TiELlBIjEUk+8sxc+cnZQd+7M09l8RrhHw==
-  dependencies:
-    react-viewport-utils "^1.12.1"
-
 react-toastify@^7.0.4:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-7.0.4.tgz#7d0b743f2b96f65754264ca6eae31911a82378db"
@@ -6905,13 +6893,6 @@ react-transition-group@^4.4.2, react-transition-group@^4.4.5:
     dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
-
-react-viewport-utils@^1.12.1:
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/react-viewport-utils/-/react-viewport-utils-1.12.1.tgz#7e2cf3f4818f96132d9327c1142a67704cbc5f69"
-  integrity sha512-sjj8rNIKSlzwhVf3mJJJl3Z+34ILFrMxCdP2jmzkAGtwXjdvKm2my9lZMV54oh837bUGx3k6XZlF/988Up3GZg==
-  dependencies:
-    memoize-one "^5.1.1"
 
 "react@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0":
   version "19.0.0"
