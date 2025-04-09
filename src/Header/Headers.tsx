@@ -1,7 +1,5 @@
 import React, { FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
-import { Sticky, StickyProvider } from 'react-stickup';
-
 export interface HeadersProps extends HTMLAttributes<HTMLElement> {
   /** Aggiunge un ombra per enfatizzare il componente rispetto alla pagina in cui è contenuto */
   shadow?: boolean;
@@ -17,18 +15,11 @@ export const Headers: FC<HeadersProps> = ({ className, shadow = false, sticky = 
     'it-header-wrapper',
     {
       'it-shadow': shadow,
-      'it-header-sticky': sticky
+      'it-header-sticky': sticky,
+      'sticky-top': sticky
+
     },
     className
   );
-  if (!sticky) {
-    return <div className={classes} {...attributes} data-testid={testId}></div>;
-  }
-  return (
-    <StickyProvider>
-      <Sticky style={{ position: 'sticky', zIndex: 2 }} data-testid={testId}>
-        <div className={classes} {...attributes}></div>
-      </Sticky>
-    </StickyProvider>
-  );
+  return <div className={classes} {...attributes} data-testid={testId}></div>;
 };

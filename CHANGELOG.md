@@ -1,3 +1,20 @@
+# [5.7.0](https://github.com/italia/design-react-kit/compare/v5.6.1...v5.7.0) (2025-03-27)
+
+
+### Bug Fixes
+
+* find dom node method deprecation ([f738af8](https://github.com/italia/design-react-kit/commit/f738af83535fd84aa6b84f8893c867c7349595e7))
+
+
+### Features
+
+* new carousel component ([a8405ce](https://github.com/italia/design-react-kit/commit/a8405ce6d9987f203e74858f7155a7070ffb858f))
+* new transfer component ([0db606d](https://github.com/italia/design-react-kit/commit/0db606d959a03e15c081c61a3fbf3c5eca62de5e))
+* new video component ([f63ad5a](https://github.com/italia/design-react-kit/commit/f63ad5adbac080854b9cba1a9a13912a14344861))
+* upgrade bootstrap italia ([c3c0efb](https://github.com/italia/design-react-kit/commit/c3c0efbe8e4efe5ee8aa7cb4137d0c389a956de3))
+
+
+
 ## [5.6.1](https://github.com/italia/design-react-kit/compare/v5.6.0...v5.6.1) (2025-02-13)
 
 

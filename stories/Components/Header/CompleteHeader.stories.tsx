@@ -294,6 +294,9 @@ export const CompleteHeaderStory: Story = {
     theme: {
       control: 'radio',
       options: ['', 'light', 'dark']
+    },
+    sticky: {
+      control: 'boolean'
     }
   }
 };
