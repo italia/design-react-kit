@@ -16,7 +16,7 @@ export const Headers: FC<HeadersProps> = ({ className, shadow = false, sticky = 
     {
       'it-shadow': shadow,
       'it-header-sticky': sticky,
-      ...(sticky ? { 'sticky-top': true } : {})
+      'sticky-top': sticky
 
     },
     className
