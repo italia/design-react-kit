@@ -1,3 +1,12 @@
+## [5.7.1](https://github.com/italia/design-react-kit/compare/v5.7.0...v5.7.1) (2025-04-10)
+
+
+### Features
+
+* use class sticky-top instead of react-stickup ([da3c86d](https://github.com/italia/design-react-kit/commit/da3c86de49deaf10007a36ef53e50ab39f37ac28))
+
+
+
 # [5.7.0](https://github.com/italia/design-react-kit/compare/v5.6.1...v5.7.0) (2025-03-27)
 
 
