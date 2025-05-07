@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import React from 'react';
-import { Col, Container, Row, Upload, UploadList, UploadListItem } from '../../src';
+import React, { useState } from 'react';
+import { Col, Container, Row, Upload, UploadDragNdrop, UploadList, UploadListItem } from '../../src';
 import { UploadListItemProps } from '../../src/Upload/UploadListItem';
 
 const meta: Meta<typeof Upload> = {
@@ -15,13 +15,6 @@ type Story = StoryObj<typeof Upload>;
 interface listaFilesArgsI {
   [type: string]: UploadListItemProps;
 }
-
-export const EsempioInput: Story = {
-  render: (args) => <Upload {...args} />,
-  args: {
-    id: 'ExampleUpload'
-  }
-};
 
 const listaFilesArgs: listaFilesArgsI = {
   success: {
@@ -47,11 +40,14 @@ const listaFilesArgs: listaFilesArgsI = {
 
 export const ListaFiles = {
   render: ({ ...listaFilesArgs }: listaFilesArgsI) => (
-    <UploadList tipologia='file'>
-      {Object.values(listaFilesArgs).map((type) => {
-        return <UploadListItem key={type.fileName} {...type} />;
-      })}
-    </UploadList>
+    <section>
+      <Upload id='esempio' label='Carica' />
+      <UploadList tipologia='file'>
+        {Object.values(listaFilesArgs).map((type) => {
+          return <UploadListItem key={type.fileName} {...type} />;
+        })}
+      </UploadList>
+    </section>
   ),
   args: {
     ...listaFilesArgs
@@ -94,11 +90,14 @@ const listaFilesImmagineArgs: listaFilesArgsI = {
 
 export const ListaFilesImmagine = {
   render: ({ ...listaFilesImmagineArgs }: listaFilesArgsI) => (
-    <UploadList tipologia='file' previewImage>
-      {Object.values(listaFilesImmagineArgs).map((type) => {
-        return <UploadListItem key={type.fileName} {...type} />;
-      })}
-    </UploadList>
+    <section>
+      <Upload id='esempio' label='Carica' />
+      <UploadList tipologia='file' previewImage>
+        {Object.values(listaFilesImmagineArgs).map((type) => {
+          return <UploadListItem key={type.fileName} {...type} />;
+        })}
+      </UploadList>
+    </section>
   ),
   args: {
     ...listaFilesImmagineArgs
@@ -136,7 +135,7 @@ export const UploadAvatar: Story = {
 
 export const Gallery = {
   render: () => (
-    <>
+    <section>
       <UploadList tipologia='gallery'>
         <UploadListItem>
           <UploadListItem.UploadButton id='upload'>Carica foto</UploadListItem.UploadButton>
@@ -160,6 +159,24 @@ export const Gallery = {
           <UploadListItem.UploadButton id='upload'>Carica foto</UploadListItem.UploadButton>
         </UploadListItem>
       </UploadList>
-    </>
+    </section>
   )
+};
+
+const DragNdropHooks = () => {
+  const [files, setFiles] = useState<File[]>([]);
+  return (
+    <div className='section'>
+      <UploadDragNdrop files={files} setFiles={setFiles} />
+    </div>
+  );
+};
+
+export const DragNdrop = {
+  render: () => <DragNdropHooks />,
+  parameters: {
+    docs: {
+      canvas: { sourceState: 'none' }
+    }
+  }
 };
