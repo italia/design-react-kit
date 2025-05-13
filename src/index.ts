@@ -26,11 +26,11 @@ export {
   ListGroupItemHeading,
   ListGroupItemText,
   Media,
-  NavItem,
-  NavLink,
   Navbar,
   NavbarBrand,
   NavbarToggler,
+  NavItem,
+  NavLink,
   PaginationItem as PagerItem,
   PaginationLink as PagerLink,
   Popover,
@@ -46,12 +46,12 @@ export {
 } from 'reactstrap';
 
 export { TabContainer, TabContent, TabPane } from 'react-bootstrap';
-export { Autocomplete } from './Autocomplete/Autocomplete';
 export { Accordion } from './Accordion/Accordion';
 export { AccordionBody } from './Accordion/AccordionBody';
 export { AccordionHeader } from './Accordion/AccordionHeader';
 export { AccordionItem } from './Accordion/AccordionItem';
 export { Alert } from './Alert/Alert';
+export { Autocomplete } from './Autocomplete/Autocomplete';
 export { AvatarContainer } from './Avatar/AvatarContainer';
 export { AvatarExtraText } from './Avatar/AvatarExtraText';
 export { AvatarGroupContainer } from './Avatar/AvatarGroupContainer';
@@ -103,7 +103,7 @@ export { HeaderSearch } from './Header/HeaderSearch';
 export { HeaderSocialsZone } from './Header/HeaderSocialsZone';
 export { HeaderToggler } from './Header/HeaderToggler';
 export { Hero, HeroBackground, HeroBody, HeroButton, HeroCategory, HeroTitle } from './Hero/index';
-export { Icon, clearIconCache, iconsList as icons, preloadIcons } from './Icon/Icon';
+export { clearIconCache, Icon, iconsList as icons, preloadIcons } from './Icon/Icon';
 export { Input } from './Input/Input';
 export { InputContainer } from './Input/InputContainer';
 export { TextArea } from './Input/TextArea';
@@ -120,7 +120,7 @@ export { ModalFooter } from './Modal/ModalFooter';
 export { ModalHeader } from './Modal/ModalHeader';
 export { Nav } from './Nav/Nav';
 export { useNavScroll } from './NavScroll/index';
-export { NotificationManager, createNotification, notify } from './Notification/index';
+export { createNotification, NotificationManager, notify } from './Notification/index';
 export { Pager } from './Pager/Pager';
 export { Progress } from './Progress/Progress';
 export { Rating } from './Rating/Rating';
@@ -149,7 +149,7 @@ export { Toolbar } from './Toolbar/Toolbar';
 export { ToolbarDividerItem } from './Toolbar/ToolbarDividerItem';
 export { ToolbarItem } from './Toolbar/ToolbarItem';
 export { Transfer } from './Transfer/Transfer';
-export { Video } from './Video/Video'
+export { Video } from './Video/Video';
 
 // Types
 export type { AccordionProps } from './Accordion/Accordion';
@@ -259,7 +259,7 @@ export type { TimelineProps } from './Timeline/TimelineWrapper';
 export type { ToggleProps } from './Toggle/Toggle';
 export type { ToolbarProps } from './Toolbar/Toolbar';
 export type { ToolbarItemBadge, ToolbarItemProps } from './Toolbar/ToolbarItem';
-export type { VideoProps, VideoYouTube, VideoSource, VideoTrackSource } from "./Video/Video"
+export type { VideoProps, VideoSource, VideoTrackSource, VideoYouTube } from './Video/Video';
 
 export type {
   BreadcrumbItemProps,
@@ -290,11 +290,11 @@ export type {
   ListGroupItemTextProps,
   ListGroupProps,
   MediaProps,
-  NavItemProps,
-  NavLinkProps,
   NavbarBrandProps,
   NavbarProps,
   NavbarTogglerProps,
+  NavItemProps,
+  NavLinkProps,
   PaginationItem as PagerItemProps,
   PaginationLink as PagerLinkProps,
   PopoverBodyProps,
@@ -308,5 +308,6 @@ export type {
   UncontrolledTooltipProps
 } from 'reactstrap';
 
+export type { SplideProps } from '@splidejs/react-splide';
 export type { TabContainerProps, TabContentProps, TabPaneProps } from 'react-bootstrap';
 import './track-focus.js';
