@@ -1,3 +1,12 @@
+## [5.7.2](https://github.com/italia/design-react-kit/compare/v5.7.1...v5.7.2) (2025-05-13)
+
+
+### Bug Fixes
+
+* splidejs types ([890df5d](https://github.com/italia/design-react-kit/commit/890df5d440fbac7e9a38e1a9656da44510b3cb86))
+
+
+
 ## [5.7.1](https://github.com/italia/design-react-kit/compare/v5.7.0...v5.7.1) (2025-04-10)
 
 
