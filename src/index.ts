@@ -313,5 +313,6 @@ export type {
   UncontrolledTooltipProps
 } from 'reactstrap';
 
+export type { SplideProps } from '@splidejs/react-splide';
 export type { TabContainerProps, TabContentProps, TabPaneProps } from 'react-bootstrap';
 import './track-focus.js';

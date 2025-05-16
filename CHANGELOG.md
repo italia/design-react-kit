@@ -1,3 +1,21 @@
+## [5.7.3](https://github.com/italia/design-react-kit/compare/v5.7.2...v5.7.3) (2025-05-16)
+
+
+### Bug Fixes
+
+* add missing icons ([c62621a](https://github.com/italia/design-react-kit/commit/c62621a01e9e5a0e972c3b0039139a5fd8457501))
+
+
+
+## [5.7.2](https://github.com/italia/design-react-kit/compare/v5.7.1...v5.7.2) (2025-05-13)
+
+
+### Bug Fixes
+
+* splidejs types ([890df5d](https://github.com/italia/design-react-kit/commit/890df5d440fbac7e9a38e1a9656da44510b3cb86))
+
+
+
 ## [5.7.1](https://github.com/italia/design-react-kit/compare/v5.7.0...v5.7.1) (2025-04-10)
 
 
