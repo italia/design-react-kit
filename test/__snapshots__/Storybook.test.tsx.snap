@@ -29692,13 +29692,13 @@ exports[`Stories Snapshots Documentazione/Form/Upload Gallery 1`] = `
         class=""
       >
         <input
-          class="upload picture-wall"
-          id="upload"
+          class="upload pictures-wall"
+          id="upload_gallery"
           multiple=""
           type="file"
         />
         <label
-          for="upload"
+          for="upload_gallery"
         >
           <svg
             aria-hidden="true"
@@ -29756,13 +29756,13 @@ exports[`Stories Snapshots Documentazione/Form/Upload Gallery 1`] = `
         class=""
       >
         <input
-          class="upload picture-wall"
-          id="upload"
+          class="upload pictures-wall"
+          id="upload_gallery"
           multiple=""
           type="file"
         />
         <label
-          for="upload"
+          for="upload_gallery"
         >
           <svg
             aria-hidden="true"
@@ -30035,13 +30035,13 @@ exports[`Stories Snapshots Documentazione/Form/Upload ListaFilesImmagine 1`] = `
 <div>
   <section>
     <input
-      aria-describedby="esempioDescription"
+      aria-describedby="esempio_immagineDescription"
       class="upload"
-      id="esempio"
+      id="esempio_immagine"
       type="file"
     />
     <label
-      for="esempio"
+      for="esempio_immagine"
     >
       <svg
         aria-hidden="true"
