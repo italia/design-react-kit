@@ -91,7 +91,7 @@ const listaFilesImmagineArgs: listaFilesArgsI = {
 export const ListaFilesImmagine = {
   render: ({ ...listaFilesImmagineArgs }: listaFilesArgsI) => (
     <section>
-      <Upload id='esempio' label='Carica' />
+      <Upload id='esempio_immagine' label='Carica' />
       <UploadList tipologia='file' previewImage>
         {Object.values(listaFilesImmagineArgs).map((type) => {
           return <UploadListItem key={type.fileName} {...type} />;
@@ -138,7 +138,7 @@ export const Gallery = {
     <section>
       <UploadList tipologia='gallery'>
         <UploadListItem>
-          <UploadListItem.UploadButton id='upload'>Carica foto</UploadListItem.UploadButton>
+          <UploadListItem.UploadButton id='upload_gallery'>Carica foto</UploadListItem.UploadButton>
         </UploadListItem>
       </UploadList>
       <p className='mt-5'>
@@ -156,7 +156,7 @@ export const Gallery = {
           previewImageAlt='descrizione immagine'
         />
         <UploadListItem>
-          <UploadListItem.UploadButton id='upload'>Carica foto</UploadListItem.UploadButton>
+          <UploadListItem.UploadButton id='upload_gallery'>Carica foto</UploadListItem.UploadButton>
         </UploadListItem>
       </UploadList>
     </section>

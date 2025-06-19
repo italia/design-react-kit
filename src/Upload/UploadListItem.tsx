@@ -108,7 +108,7 @@ export const UploadListItem: FC<UploadListItemProps> & {
 const UploadButton: FC<InputHTMLAttributes<HTMLInputElement>> = ({ id, children, ...props }) => {
   return (
     <>
-      <input type='file' id={id} className='upload picture-wall' multiple={true} {...props} />
+      <input type='file' id={id} className='upload pictures-wall' multiple={true} {...props} />
       <label htmlFor={id}>
         <Icon icon='it-plus' />
         <span>{children}</span>
