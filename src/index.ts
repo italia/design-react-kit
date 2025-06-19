@@ -149,6 +149,10 @@ export { Toolbar } from './Toolbar/Toolbar';
 export { ToolbarDividerItem } from './Toolbar/ToolbarDividerItem';
 export { ToolbarItem } from './Toolbar/ToolbarItem';
 export { Transfer } from './Transfer/Transfer';
+export { Upload } from './Upload/Upload';
+export { UploadDragNdrop } from './Upload/UploadDragNdrop';
+export { UploadList } from './Upload/UploadList';
+export { UploadListItem } from './Upload/UploadListItem';
 export { Video } from './Video/Video';
 
 // Types
@@ -259,6 +263,7 @@ export type { TimelineProps } from './Timeline/TimelineWrapper';
 export type { ToggleProps } from './Toggle/Toggle';
 export type { ToolbarProps } from './Toolbar/Toolbar';
 export type { ToolbarItemBadge, ToolbarItemProps } from './Toolbar/ToolbarItem';
+export type { UploadProps } from './Upload/Upload';
 export type { VideoProps, VideoSource, VideoTrackSource, VideoYouTube } from './Video/Video';
 
 export type {
