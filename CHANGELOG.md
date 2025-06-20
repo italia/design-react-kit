@@ -1,3 +1,18 @@
+# [5.8.0](https://github.com/italia/design-react-kit/compare/v5.7.3...v5.8.0) (2025-06-20)
+
+
+### Bug Fixes
+
+* put pagination form controls outside list ([419cded](https://github.com/italia/design-react-kit/commit/419cded94a8d13d6e7cdc48052c95f58ded98fb8))
+* remove useless pagination ul element ([66eeceb](https://github.com/italia/design-react-kit/commit/66eeceb4d2165739d522c7a846c23267af72b063))
+
+
+### Features
+
+* add upload component ([2798b78](https://github.com/italia/design-react-kit/commit/2798b7834ba44f54e0b82f0500e4a6ef598122b8))
+
+
+
 ## [5.7.3](https://github.com/italia/design-react-kit/compare/v5.7.2...v5.7.3) (2025-05-16)
 
 
