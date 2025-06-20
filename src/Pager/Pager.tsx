@@ -34,8 +34,10 @@ export const Pager: FC<PagerProps> = ({
   const listClasses = classNames(listClassName, 'pagination');
   const { ariaLabel, label } = total || {};
   const totalAriaLabel = ariaLabel ? <span className='visually-hidden'>{ariaLabel}</span> : null;
-  const listChildren = React.Children.toArray(children).filter(child => child.type.name === 'PaginationItem');
-  const extraChildren = React.Children.toArray(children).filter(child => child.type.name !== 'PaginationItem');
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const listChildren = React.Children.toArray(children).filter((child: any) => child.type.name === 'PaginationItem');
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const extraChildren = React.Children.toArray(children).filter((child: any)=> child.type.name !== 'PaginationItem');
 
   // listChildren?.forEach(child => {
   //   console.log(child)
