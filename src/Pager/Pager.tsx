@@ -34,9 +34,17 @@ export const Pager: FC<PagerProps> = ({
   const listClasses = classNames(listClassName, 'pagination');
   const { ariaLabel, label } = total || {};
   const totalAriaLabel = ariaLabel ? <span className='visually-hidden'>{ariaLabel}</span> : null;
+  const listChildren = React.Children.toArray(children).filter(child => child.type.name === 'PaginationItem');
+  const extraChildren = React.Children.toArray(children).filter(child => child.type.name !== 'PaginationItem');
+
+  // listChildren?.forEach(child => {
+  //   console.log(child)
+  // })
+
   return (
     <Tag className={classes} {...attributes} data-testid={testId}>
-      <ListTag className={listClasses}>{children}</ListTag>
+      <ListTag className={listClasses}>{listChildren}</ListTag>
+      {extraChildren}
       {total ? (
         <p>
           {totalAriaLabel}
