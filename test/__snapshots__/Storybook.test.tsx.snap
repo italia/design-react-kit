@@ -583,7 +583,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Alert _EsempiInterattivi 1`
     class="alert alert-success fade"
     role="alert"
   >
-    Questo è un alert di
+    Questo è un alert di 
     <b>
       success
     </b>
@@ -599,13 +599,13 @@ exports[`Stories Snapshots Documentazione/Componenti/Alert _LinkEvidenziato 1`] 
     role="alert"
   >
     Questo è un alert con un esempio di
+     
     <a
       class="alert-link"
       href="#"
     >
       link
     </a>
-    evidenziato.
   </div>
 </div>
 `;
@@ -623,9 +623,9 @@ exports[`Stories Snapshots Documentazione/Componenti/Alert ChiusuraControllata 1
         type="button"
       />
       <strong>
-        Attenzione
+        Attenzione:
       </strong>
-      Alcuni campi inseriti sono da controllare.
+       Alcuni campi inseriti sono da controllare.
     </div>
   </div>
 </div>
