@@ -8,9 +8,9 @@ type ValidationProps = Pick<InputProps, 'valid'>;
 type TypeProps = Pick<InputProps, 'plaintext' | 'type'> & {
   staticInput?: boolean;
 };
-type FormControlProps = Pick<InputProps, 'addon' | 'normalized'> & TypeProps;
+type FormControlProps = Pick<InputProps, 'normalized'> & TypeProps;
 
-function getFormControlClassInternal({ plaintext, staticInput, type = 'text', addon, normalized }: FormControlProps) {
+function getFormControlClassInternal({ plaintext, staticInput, type = 'text', normalized }: FormControlProps) {
   const formControlClass = 'form-control';
   if (plaintext || staticInput || normalized) {
     return `${formControlClass}-plaintext`;
@@ -19,9 +19,7 @@ function getFormControlClassInternal({ plaintext, staticInput, type = 'text', ad
     return `${formControlClass}-file`;
   }
   if (['radio', 'checkbox'].indexOf(type) > -1) {
-    if (addon) {
-      return null;
-    }
+    return null;
   }
   return formControlClass;
 }
@@ -117,8 +115,7 @@ export function getClasses(
         // we can model here only if stylings
         'form-control-plaintext': normalizedOnlyCondition,
         'form-control': passwordOnlyCondition,
-        'input-password': passwordOnlyCondition,
-        'focus--mouse': passwordOnlyCondition || normalizedOnlyCondition
+        'input-password': passwordOnlyCondition
       }
     ),
     cssModule

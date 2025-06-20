@@ -62,7 +62,7 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   decrementLabel?: string | ReactNode;
   /** Testo di esempio da utilizzare per il campo. */
   placeholder?: string;
-  /** Testo di validazione per l'elemento del moduleo form. */
+  /** Testo di validazione per l'elemento del modulo form. */
   validationText?: string;
   /** Testo di aiuto per l'elemento del moduleo form. Richiede che il componente `Input` abbia la prop `id` impostata. */
   infoText?: string;
@@ -77,8 +77,6 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   innerRef?: Ref<HTMLInputElement>;
   /** Utilizzare per mostrare testo statico non modificabile. */
   plaintext?: boolean;
-  /** Utilizzare per mostrare un elemento addon a fianco (prima o dopo) il campo input all'interno del componente */
-  addon?: boolean;
   /** Utilizzare per mostrare un elemento un simbolo attivando la proprietà addon nel campo input all'interno del componente */
   addonText?: string;
   /** Oggetto contenente la nuova mappatura per le classi CSS. */
@@ -118,7 +116,6 @@ export const Input = ({
   cssModule,
   type = 'text',
   tag,
-  addon,
   addonText,
   static: staticInput,
   plaintext,
@@ -173,13 +170,11 @@ export const Input = ({
   let { bsSize, valid, ...rest } = attributes;
 
   const Tag = getTag({ tag, plaintext, staticInput, type });
-  addon = addonText != null ? true : addon;
   const formControlClass = getFormControlClass(
     {
       plaintext,
       staticInput,
       type,
-      addon,
       normalized
     },
     cssModule
@@ -203,8 +198,8 @@ export const Input = ({
   }
 
   // associate the input field with the help text
-  const infoId = id ? `${id}Description` : undefined;
-  if (id) {
+  const infoId = id && infoText ? `${id}Description` : undefined;
+  if (infoId) {
     extraAttributes['aria-describedby'] = infoId;
   }
 
@@ -296,11 +291,17 @@ export const Input = ({
     }
     const nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value')?.set;
     nativeInputValueSetter?.call(inputRef.current, `${newValue}`);
+    const ev1 = new Event('change', { bubbles: true });
     const ev2 = new Event('input', { bubbles: true });
+    inputRef.current?.dispatchEvent(ev1);
     inputRef.current?.dispatchEvent(ev2);
+    inputRef.current?.focus();
   };
 
   if (['currency', 'percentage', 'adaptive', 'number'].includes(type)) {
+    if (containerProps.extraLabelClass && ['currency', 'percentage'].includes(type)) {
+      containerProps.extraLabelClass = containerProps.extraLabelClass + ' input-symbol-label';
+    }
     return (
       <InputContainer {...containerProps}>
         <div
@@ -308,8 +309,6 @@ export const Input = ({
             'input-group': true,
             'input-number': true,
             disabled: rest.disabled,
-            'input-number-percentage': type === 'percentage',
-            'input-number-currency': type === 'currency',
             'input-number-adaptive': type === 'adaptive'
           })}
           style={{ width }}
@@ -328,10 +327,10 @@ export const Input = ({
             ref={inputRef}
           />
           <span className='input-group-text align-buttons flex-column'>
-            <button className='input-number-add' onClick={() => clickIncrDecr(1)} type='button'>
+            <button className='input-number-add' onClick={() => clickIncrDecr(1)}>
               <span className='visually-hidden'>{incrementLabel || ''}</span>
             </button>
-            <button className='input-number-sub' onClick={() => clickIncrDecr(-1)} type='button'>
+            <button className='input-number-sub' onClick={() => clickIncrDecr(-1)}>
               <span className='visually-hidden'>{decrementLabel || ''}</span>
             </button>
           </span>
@@ -357,16 +356,14 @@ export const Input = ({
 
   if (indeterminateCheckboxInput) {
     return (
-      <InputContainer {...containerProps}>
-        <Tag
-          {...rest}
-          {...extraAttributes}
-          {...sharedAttributes}
-          className={inputClasses}
-          data-testid={testId}
-          indeterminate={'true'}
-        />
-      </InputContainer>
+      <Tag
+        {...rest}
+        {...extraAttributes}
+        {...sharedAttributes}
+        className={inputClasses}
+        data-testid={testId}
+        indeterminate={'true'}
+      />
     );
   }
 

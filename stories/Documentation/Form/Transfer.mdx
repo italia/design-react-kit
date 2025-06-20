@@ -1,0 +1,25 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as TransferStories from '../../Components/Transfer.stories';
+
+<Meta of={TransferStories} />
+
+# Transfer
+
+## Un componente che consente la creazione di liste di checkbox.
+
+Il componente Transfer consente di trasferire gli elementi di una lista di checkbox ad un’altra lista di checkbox.
+
+Il componente Transfer contiene
+
+- Lista checkbox di sinistra
+- Pulsanti per il trasferimento dei contenuti da lista a lista
+- Lista checkbox di destra
+
+Le liste di checkbox, sono composte da:
+
+- Header: contiene un checkbox per la selezione / deselezione di tutti i campi sottostanti e la label che contiene il numero di elementi della lista
+- Lista checkbox
+
+All'interno del componente Transfer è possibile utilizzare l'hook `Transfer.useTransfer()` per accedere agli elementi selezionati.
+
+<Canvas of={TransferStories.Base} />

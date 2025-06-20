@@ -135,7 +135,6 @@ export const FormDisabilitato: Story = {
         return (
             <div>
                 <fieldset disabled aria-label="Form disabilitato">
-                    <legend>Esempio di form disabilitato</legend>
                     <div className="form-group">
                         <Input type="text" label="Input" id="disabledTextInput" placeholder="input disabilitato" disabled />
                     </div>

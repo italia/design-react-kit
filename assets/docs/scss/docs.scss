@@ -21,9 +21,9 @@
 //   and layout of the Bootstrap docs. They are not included in our builds.
 //
 // Happy Bootstrapping!
-@import '../../../node_modules/bootstrap/scss/functions';
-@import '../../../node_modules/bootstrap/scss/mixins';
-@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap-italia/src/scss/base/functions';
+@import '../../../node_modules/bootstrap-italia/src/scss/base/mixins';
+@import '../../../node_modules/bootstrap-italia/src/scss/base/variables';
 // Load docs components
 @import 'colors';
 @import 'callouts';

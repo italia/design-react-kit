@@ -35,7 +35,8 @@
     //"typeRoots": ["./node_modules/@types"] /* Specify multiple folders that act like './node_modules/@types'. */,
     "types": [
       "@testing-library/jest-dom",
-      "node"
+      "node",
+      "@splidejs/splide/dist/types"
     ] /* Specify type package names to be included without being referenced in a source file. */,
     // "allowUmdGlobalAccess": true,                     /* Allow accessing UMD globals from modules. */
     // "moduleSuffixes": [],                             /* List of file name suffixes to search when resolving a module. */

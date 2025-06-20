@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
+
 
 import { preloadIcons, StepperHeaderElement } from '../src';
 
@@ -13,12 +13,12 @@ test('Should support old variant "steppers-index"', () => {
 });
 
 test('Should support old icon prop as @deprecated', () => {
-  const { getAllByRole } = render(<StepperHeaderElement prependIcon='it-tool' />);
+  const { getAllByRole } = render(<StepperHeaderElement prependIcon='it-tool' prependIconTitle="Tools" />);
   expect(getAllByRole('img')).toHaveLength(1);
 });
 
 test('Should support old iconName prop as @deprecated', () => {
-  const { getAllByRole } = render(<StepperHeaderElement prependIcon='it-tool' />);
+  const { getAllByRole } = render(<StepperHeaderElement prependIcon='it-tool' prependIconTitle="Tools" />);
   expect(getAllByRole('img')).toHaveLength(1);
 });
 

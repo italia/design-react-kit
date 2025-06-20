@@ -39,6 +39,22 @@ pre > code[class] {
 // Specific tweak for the Storybook documentation
 // ======================================= */
 
+/* Fix docs wrapper alignment and padding */
+.sbdocs.css-qunf3a {
+  justify-content: left;
+  padding: 3rem;
+}
+
+/* Fix TOC size */
+.css-zpcrvf {
+  width: 15rem;
+}
+
+/* Fix TOC item font-size */
+.toc-list-item .toc-link {
+  font-size: 1rem;
+}
+
 .docs .callout {
   max-width: none;
 }
@@ -164,4 +180,8 @@ div[id*='componenti-bottomnav'] .bottom-nav {
   margin: 0 auto;
   opacity: 1;
   transform: scale(1);
+}
+
+.callout-inner p {
+  margin-top: 0;
 }

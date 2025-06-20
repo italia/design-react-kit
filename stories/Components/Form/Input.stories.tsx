@@ -16,8 +16,9 @@ export const EsempiDiCampiDiInput: Story = {
     return (
       <div>
         <Input type='text' label='Campo di tipo testuale' id='exampleInputText' />
+        <Input type='text' label='Campo di tipo testuale con descrizione' infoText='Questo campo contiene anche una descrizione' id='exampleInputTextInfo' />
         <Input type='email' label='Campo di tipo email' id='exampleInputEmail' />
-        <Input type='number' label='Campo di tipo numerico' id='exampleInputNumber' />
+        <Input type='number' label='Campo di tipo numerico' id='exampleInputNumber' incrementLabel="Aumenta il valore di 1" decrementLabel="Diminuisci il valore di 1"/>
         <Input type='tel' label='Campo di tipo telefono' id='exampleInputTel' />
       </div>
     );
@@ -117,47 +118,47 @@ export const ReadonlyNormalizzato: Story = {
 
 export const _InputAutocompleteConDatiAccessibile: Story = {
   render: () => {
-    const multiOptions: { value: string; label: string }[] = [
-      { value: '1', label: 'Abruzzo' },
-      { value: '2', label: 'Basilicata' },
-      { value: '3', label: 'Calabria' },
-      { value: '4', label: 'Campania' },
-      { value: '5', label: 'Emilia Romagna' },
-      { value: '6', label: 'Friuli Venezia Giulia' },
-      { value: '7', label: 'Lazio' },
-      { value: '8', label: 'Liguria' },
-      { value: '9', label: 'Lombardia' },
-      { value: '10', label: 'Marche' },
-      { value: '11', label: 'Molise' },
-      { value: '12', label: 'Piemonte' },
-      { value: '13', label: 'Puglia' },
-      { value: '14', label: 'Sardegna' },
-      { value: '15', label: 'Sicilia' },
-      { value: '16', label: 'Toscana' },
-      { value: '17', label: 'Trentino Alto Adige' },
-      { value: '18', label: 'Umbria' },
-      { value: '19', label: "Valle d'Aosta" },
-      { value: '20', label: 'Veneto' }
-    ];
+    const suggest = (query: string, syncResults: (p: string[]) => void)  => {
+      const results = [
+        'Abruzzo',
+        'Basilicata',
+        'Calabria',
+        'Campania',
+        'Emilia Romagna',
+        'Friuli Venezia Giulia',
+        'Lazio',
+        'Liguria',
+        'Lombardia',
+        'Marche',
+        'Molise',
+        'Piemonte',
+        'Puglia',
+        'Sardegna',
+        'Sicilia',
+        'Toscana',
+        'Trentino Alto Adige',
+        'Umbria',
+        'Valle d\'Aosta',
+        'Veneto'
+      ];
+      syncResults(query
+        ? results.filter(function (result) {
+            return result.toLowerCase().indexOf(query.toLowerCase()) !== -1
+          })
+        : []
+      )
+    }
 
     return (
-      <FormGroup className='select-wrapper'>
-        <label htmlFor='autocomplete'>Provincia</label>
+      <FormGroup className='form-group'>
         <Autocomplete
           id='autocomplete'
-          source={multiOptions}
-          placeholder={'Testo da cercare'}
-          defaultValue={''}
-          displayMenu={'inline'}
+          label='Regione'
+          source={suggest}
           tNoResults={() => 'Nessun risultato'}
         />
       </FormGroup>
     );
-  },
-  parameters: {
-    docs: {
-      canvas: { sourceState: 'none' }
-    }
   }
 };
 

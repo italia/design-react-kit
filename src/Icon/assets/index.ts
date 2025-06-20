@@ -17,12 +17,15 @@ const iconList: Record<string, boolean> = {
   'it-arrow-up': true,
   'it-ban': true,
   'it-behance': true,
+  'it-bluesky': true,
   'it-bookmark': true,
   'it-box': true,
   'it-burger': true,
   'it-calendar': true,
   'it-camera': true,
+  'it-car': true,
   'it-card': true,
+  'it-cart': true,
   'it-chart-line': true,
   'it-check-circle': true,
   'it-check': true,
@@ -49,9 +52,11 @@ const iconList: Record<string, boolean> = {
   'it-figma-square': true,
   'it-figma': true,
   'it-file-audio': true,
+  'it-file-docx': true,
   'it-file-compressed': true,
   'it-file-csv': true,
   'it-file-json': true,
+  'it-file-image': true,
   'it-file-odp': true,
   'it-file-ods': true,
   'it-file-odt': true,
@@ -59,9 +64,11 @@ const iconList: Record<string, boolean> = {
   'it-file-pdf': true,
   'it-file-ppt': true,
   'it-file-sheet': true,
+  'it-file-signed': true,
   'it-file-slides': true,
   'it-file-txt': true,
   'it-file-video': true,
+  'it-file-xlsx': true,
   'it-file-xml': true,
   'it-file': true,
   'it-files': true,
@@ -134,11 +141,13 @@ const iconList: Record<string, boolean> = {
   'it-search': true,
   'it-settings': true,
   'it-share': true,
+  'it-sign': true,
   'it-slack-square': true,
   'it-slack': true,
   'it-snapchat-square': true,
   'it-snapchat': true,
   'it-software': true,
+  'it-spotify': true,
   'it-stackexchange-square': true,
   'it-stackexchange': true,
   'it-stackoverflow-square': true,
@@ -228,6 +237,9 @@ export const loadIcon = (name: IconName) => {
     case 'it-behance': {
       return import('./ItBehance');
     }
+    case 'it-bluesky': {
+      return import('./ItBluesky');
+    }
     case 'it-bookmark': {
       return import('./ItBookmark');
     }
@@ -242,6 +254,12 @@ export const loadIcon = (name: IconName) => {
     }
     case 'it-camera': {
       return import('./ItCamera');
+    }
+    case 'it-car': {
+      return import('./ItCar');
+    }
+    case 'it-cart': {
+      return import('./ItCart');
     }
     case 'it-card': {
       return import('./ItCard');
@@ -365,6 +383,18 @@ export const loadIcon = (name: IconName) => {
     }
     case 'it-file-xml': {
       return import('./ItFileXml');
+    }
+    case 'it-file-docx': {
+      return import('./ItFileDocx');
+    }
+    case 'it-file-image': {
+      return import('./ItFileImage');
+    }
+    case 'it-file-signed': {
+      return import('./ItFileSigned');
+    }
+    case 'it-file-xlsx': {
+      return import('./ItFileXlsx');
     }
     case 'it-file': {
       return import('./ItFile');
@@ -579,6 +609,9 @@ export const loadIcon = (name: IconName) => {
     case 'it-share': {
       return import('./ItShare');
     }
+    case 'it-sign': {
+      return import('./ItSign');
+    }
     case 'it-slack-square': {
       return import('./ItSlackSquare');
     }
@@ -593,6 +626,9 @@ export const loadIcon = (name: IconName) => {
     }
     case 'it-software': {
       return import('./ItSoftware');
+    }
+    case 'it-spotify': {
+      return import('./ItSpotify');
     }
     case 'it-stackexchange-square': {
       return import('./ItStackexchangeSquare');

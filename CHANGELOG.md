@@ -1,3 +1,84 @@
+## [5.7.3](https://github.com/italia/design-react-kit/compare/v5.7.2...v5.7.3) (2025-05-16)
+
+
+### Bug Fixes
+
+* add missing icons ([c62621a](https://github.com/italia/design-react-kit/commit/c62621a01e9e5a0e972c3b0039139a5fd8457501))
+
+
+
+## [5.7.2](https://github.com/italia/design-react-kit/compare/v5.7.1...v5.7.2) (2025-05-13)
+
+
+### Bug Fixes
+
+* splidejs types ([890df5d](https://github.com/italia/design-react-kit/commit/890df5d440fbac7e9a38e1a9656da44510b3cb86))
+
+
+
+## [5.7.1](https://github.com/italia/design-react-kit/compare/v5.7.0...v5.7.1) (2025-04-10)
+
+
+### Features
+
+* use class sticky-top instead of react-stickup ([da3c86d](https://github.com/italia/design-react-kit/commit/da3c86de49deaf10007a36ef53e50ab39f37ac28))
+
+
+
+# [5.7.0](https://github.com/italia/design-react-kit/compare/v5.6.1...v5.7.0) (2025-03-27)
+
+
+### Bug Fixes
+
+* find dom node method deprecation ([f738af8](https://github.com/italia/design-react-kit/commit/f738af83535fd84aa6b84f8893c867c7349595e7))
+
+
+### Features
+
+* new carousel component ([a8405ce](https://github.com/italia/design-react-kit/commit/a8405ce6d9987f203e74858f7155a7070ffb858f))
+* new transfer component ([0db606d](https://github.com/italia/design-react-kit/commit/0db606d959a03e15c081c61a3fbf3c5eca62de5e))
+* new video component ([f63ad5a](https://github.com/italia/design-react-kit/commit/f63ad5adbac080854b9cba1a9a13912a14344861))
+* upgrade bootstrap italia ([c3c0efb](https://github.com/italia/design-react-kit/commit/c3c0efbe8e4efe5ee8aa7cb4137d0c389a956de3))
+
+
+
+## [5.6.1](https://github.com/italia/design-react-kit/compare/v5.6.0...v5.6.1) (2025-02-13)
+
+
+### Bug Fixes
+
+* disabled checkbox and radio ([aae38ea](https://github.com/italia/design-react-kit/commit/aae38eac8c1f2388a7e1dcf6d12920ebc6f71dcb))
+* symbol label class ([86d01d8](https://github.com/italia/design-react-kit/commit/86d01d809a8c72b9f7e5eaf7071a9116f9f7eb35))
+
+
+
+# [5.6.0](https://github.com/italia/design-react-kit/compare/v5.5.1...v5.6.0) (2025-02-11)
+
+
+### Bug Fixes
+
+* **a11y:** icons ([0408075](https://github.com/italia/design-react-kit/commit/0408075afbdb5a2a93a0e7ca7eae89bd97ac9255))
+* **a11y:** input aria describedby ([396c752](https://github.com/italia/design-react-kit/commit/396c7527560cc0a08c3741cdd2b398b2a8ef8293))
+* back to top is now focusable ([b87db3f](https://github.com/italia/design-react-kit/commit/b87db3f05b45add57f269f198523efcf13652eb3))
+* new label for percentage and currency inputs ([61a8b34](https://github.com/italia/design-react-kit/commit/61a8b340264791575b5683509d62c22ef74a2c32))
+
+
+### Features
+
+* add icons title for steppers ([fff4263](https://github.com/italia/design-react-kit/commit/fff426363197a52b9eba22141cff05a4e65b5b46))
+* new tab component ([b5b9c85](https://github.com/italia/design-react-kit/commit/b5b9c85eda6c3c0ee5ee39a5392dd0f57bca4a6e))
+
+
+
+## [5.5.1](https://github.com/italia/design-react-kit/compare/v5.5.0...v5.5.1) (2025-01-09)
+
+
+### Bug Fixes
+
+* remove dropdown menu offset in slim headers ([52a1149](https://github.com/italia/design-react-kit/commit/52a1149c48303d8e9389000441badf9394c0c674))
+
+
+
 # [5.5.0](https://github.com/italia/design-react-kit/compare/v5.4.1...v5.5.0) (2024-12-18)
 
 

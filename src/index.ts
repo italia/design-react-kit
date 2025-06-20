@@ -26,19 +26,17 @@ export {
   ListGroupItemHeading,
   ListGroupItemText,
   Media,
-  NavItem,
-  NavLink,
   Navbar,
   NavbarBrand,
   NavbarToggler,
+  NavItem,
+  NavLink,
   PaginationItem as PagerItem,
   PaginationLink as PagerLink,
   Popover,
   PopoverBody,
   PopoverHeader,
   Row,
-  TabContent,
-  TabPane,
   Table,
   Tooltip,
   UncontrolledAlert,
@@ -47,12 +45,13 @@ export {
   Util
 } from 'reactstrap';
 
-export { Autocomplete } from './Autocomplete/Autocomplete';
+export { TabContainer, TabContent, TabPane } from 'react-bootstrap';
 export { Accordion } from './Accordion/Accordion';
 export { AccordionBody } from './Accordion/AccordionBody';
 export { AccordionHeader } from './Accordion/AccordionHeader';
 export { AccordionItem } from './Accordion/AccordionItem';
 export { Alert } from './Alert/Alert';
+export { Autocomplete } from './Autocomplete/Autocomplete';
 export { AvatarContainer } from './Avatar/AvatarContainer';
 export { AvatarExtraText } from './Avatar/AvatarExtraText';
 export { AvatarGroupContainer } from './Avatar/AvatarGroupContainer';
@@ -80,6 +79,8 @@ export { CardTag } from './Card/CardTag';
 export { CardTagsHeader } from './Card/CardTagsHeader';
 export { CardText } from './Card/CardText';
 export { CardTitle } from './Card/CardTitle';
+export { Carousel } from './Carousel/Carousel';
+export { CarouselSlide } from './Carousel/CarouselSlide';
 export { Chip } from './Chips/Chip';
 export { ChipLabel } from './Chips/ChipLabel';
 export { Collapse } from './Collapse/Collapse';
@@ -102,7 +103,7 @@ export { HeaderSearch } from './Header/HeaderSearch';
 export { HeaderSocialsZone } from './Header/HeaderSocialsZone';
 export { HeaderToggler } from './Header/HeaderToggler';
 export { Hero, HeroBackground, HeroBody, HeroButton, HeroCategory, HeroTitle } from './Hero/index';
-export { Icon, clearIconCache, iconsList as icons, preloadIcons } from './Icon/Icon';
+export { clearIconCache, Icon, iconsList as icons, preloadIcons } from './Icon/Icon';
 export { Input } from './Input/Input';
 export { InputContainer } from './Input/InputContainer';
 export { TextArea } from './Input/TextArea';
@@ -119,7 +120,7 @@ export { ModalFooter } from './Modal/ModalFooter';
 export { ModalHeader } from './Modal/ModalHeader';
 export { Nav } from './Nav/Nav';
 export { useNavScroll } from './NavScroll/index';
-export { NotificationManager, createNotification, notify } from './Notification/index';
+export { createNotification, NotificationManager, notify } from './Notification/index';
 export { Pager } from './Pager/Pager';
 export { Progress } from './Progress/Progress';
 export { Rating } from './Rating/Rating';
@@ -136,6 +137,9 @@ export { StepperDots } from './Stepper/StepperDots';
 export { StepperHeader } from './Stepper/StepperHeader';
 export { StepperHeaderElement } from './Stepper/StepperHeaderElement';
 export { StepperNav } from './Stepper/StepperNav';
+export { TabNav } from './Tab/TabNav';
+export { TabNavItem } from './Tab/TabNavItem';
+export { TabNavLink } from './Tab/TabNavLink';
 export { ThumbNav } from './ThumbNav/ThumbNav';
 export { ThumbNavItem } from './ThumbNav/ThumbNavItem';
 export { TimelinePin } from './Timeline/TimelinePin';
@@ -144,6 +148,12 @@ export { Toggle } from './Toggle/Toggle';
 export { Toolbar } from './Toolbar/Toolbar';
 export { ToolbarDividerItem } from './Toolbar/ToolbarDividerItem';
 export { ToolbarItem } from './Toolbar/ToolbarItem';
+export { Transfer } from './Transfer/Transfer';
+export { Upload } from './Upload/Upload';
+export { UploadDragNdrop } from './Upload/UploadDragNdrop';
+export { UploadList } from './Upload/UploadList';
+export { UploadListItem } from './Upload/UploadListItem';
+export { Video } from './Video/Video';
 
 // Types
 export type { AccordionProps } from './Accordion/Accordion';
@@ -175,6 +185,7 @@ export type { CardTagProps } from './Card/CardTag';
 export type { CardTagsHeaderProps } from './Card/CardTagsHeader';
 export type { CardTextProps } from './Card/CardText';
 export type { CardTitleProps } from './Card/CardTitle';
+export type { CarouselProps } from './Carousel/Carousel';
 export type { ChipProps } from './Chips/Chip';
 export type { ChipLabelProps } from './Chips/ChipLabel';
 export type { DimmerProps } from './Dimmer/Dimmer';
@@ -242,6 +253,9 @@ export type { StepperDotsProps } from './Stepper/StepperDots';
 export type { StepperHeaderProps } from './Stepper/StepperHeader';
 export type { StepperHeaderElementProps } from './Stepper/StepperHeaderElement';
 export type { StepperNavProps } from './Stepper/StepperNav';
+export type { TabNavProps } from './Tab/TabNav';
+export type { TabNavItemProps } from './Tab/TabNavItem';
+export type { TabNavLinkProps } from './Tab/TabNavLink';
 export type { ThumbNavProps } from './ThumbNav/ThumbNav';
 export type { ThumbNavItemProps } from './ThumbNav/ThumbNavItem';
 export type { TimelinePinProps } from './Timeline/TimelinePin';
@@ -249,6 +263,8 @@ export type { TimelineProps } from './Timeline/TimelineWrapper';
 export type { ToggleProps } from './Toggle/Toggle';
 export type { ToolbarProps } from './Toolbar/Toolbar';
 export type { ToolbarItemBadge, ToolbarItemProps } from './Toolbar/ToolbarItem';
+export type { UploadProps } from './Upload/Upload';
+export type { VideoProps, VideoSource, VideoTrackSource, VideoYouTube } from './Video/Video';
 
 export type {
   BreadcrumbItemProps,
@@ -279,19 +295,17 @@ export type {
   ListGroupItemTextProps,
   ListGroupProps,
   MediaProps,
-  NavItemProps,
-  NavLinkProps,
   NavbarBrandProps,
   NavbarProps,
   NavbarTogglerProps,
+  NavItemProps,
+  NavLinkProps,
   PaginationItem as PagerItemProps,
   PaginationLink as PagerLinkProps,
   PopoverBodyProps,
   PopoverHeaderProps,
   PopoverProps,
   RowProps,
-  TabContentProps,
-  TabPaneProps,
   TableProps,
   TooltipProps,
   UncontrolledAlertProps,
@@ -299,4 +313,6 @@ export type {
   UncontrolledTooltipProps
 } from 'reactstrap';
 
-import "./track-focus.js"
+export type { SplideProps } from '@splidejs/react-splide';
+export type { TabContainerProps, TabContentProps, TabPaneProps } from 'react-bootstrap';
+import './track-focus.js';
