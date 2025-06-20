@@ -24,7 +24,7 @@ type Story = StoryObj<typeof Alert>;
 export const _EsempiInterattivi: Story = {
   render: ({ ...args }) => (
     <Alert {...args}>
-      Questo è un alert di{" "}<b>{args.color}</b>!
+      Questo è un alert di <b>{args.color}</b>!
     </Alert>
   )
 };
@@ -32,10 +32,10 @@ export const _EsempiInterattivi: Story = {
 export const _LinkEvidenziato: Story = {
   render: ({ ...args }) => (
     <Alert {...args}>
-      Questo è un alert con un esempio di{" "}
-      <a href="#" className="alert-link">
+      Questo è un alert con un esempio di{' '}
+      <a href='#' className='alert-link'>
         link
-      </a>{" "}
+      </a>
     </Alert>
   ),
   args: {
