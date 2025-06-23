@@ -49,6 +49,7 @@ export const DropdownToggle: FC<DropdownToggleProps> = ({
       tag={Tag}
       data-testid={testId}
       role={Tag.valueOf() === 'a' ? 'button' : 'link'}
+      href={Tag.valueOf() === 'a' ? '#' : undefined}
       className={`${classes} ${colorClass}`}
       nav={inNavbar}
     >
