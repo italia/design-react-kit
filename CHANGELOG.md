@@ -1,3 +1,13 @@
+## [5.8.1](https://github.com/italia/design-react-kit/compare/v5.8.0...v5.8.1) (2025-06-24)
+
+
+### Bug Fixes
+
+* **build:** asset drag n drop icon ([b5b0fd8](https://github.com/italia/design-react-kit/commit/b5b0fd8a26e8ef7d13bd235c7171e1d649c89bf1))
+* dropdown menu in header ([2d6588b](https://github.com/italia/design-react-kit/commit/2d6588b09d4f4c8d45dda2cecc416b00eeee12cf))
+
+
+
 # [5.8.0](https://github.com/italia/design-react-kit/compare/v5.7.3...v5.8.0) (2025-06-20)
 
 
