@@ -9053,6 +9053,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Dropdown _Link 1`] = `
         aria-expanded="false"
         aria-haspopup="menu"
         class="btn-dropdown dropdown-toggle "
+        href="#"
         role="button"
       >
         Apri dropdown
@@ -33308,6 +33309,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                     aria-expanded="false"
                     aria-haspopup="menu"
                     class="dropdown-toggle  nav-link"
+                    href="#"
                     role="button"
                   >
                     ITA
@@ -33680,6 +33682,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                             aria-expanded="false"
                             aria-haspopup="menu"
                             class="dropdown-toggle  nav-link"
+                            href="#"
                             role="button"
                           >
                             <span>
@@ -33770,6 +33773,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                             aria-expanded="false"
                             aria-haspopup="menu"
                             class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
+                            href="#"
                             role="button"
                           >
                             <span>
@@ -34187,6 +34191,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                         aria-expanded="false"
                         aria-haspopup="menu"
                         class="dropdown-toggle  nav-link"
+                        href="#"
                         role="button"
                       >
                         <span>
@@ -34277,6 +34282,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
                         aria-expanded="false"
                         aria-haspopup="menu"
                         class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
+                        href="#"
                         role="button"
                       >
                         <span>
@@ -34825,6 +34831,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                   aria-expanded="false"
                   aria-haspopup="menu"
                   class="dropdown-toggle  nav-link"
+                  href="#"
                   role="button"
                 >
                   ITA
@@ -34941,6 +34948,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Slim SlimHe
                   aria-expanded="false"
                   aria-haspopup="menu"
                   class="dropdown-toggle  nav-link"
+                  href="#"
                   role="button"
                 >
                   ITA
@@ -35118,6 +35126,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
                 aria-expanded="false"
                 aria-haspopup="menu"
                 class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
+                href="#"
                 role="button"
               >
                 <span>
@@ -35447,6 +35456,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
                 aria-expanded="false"
                 aria-haspopup="menu"
                 class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
+                href="#"
                 role="button"
               >
                 <span>
@@ -35840,6 +35850,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
                 aria-expanded="false"
                 aria-haspopup="menu"
                 class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
+                href="#"
                 role="button"
               >
                 <span>
@@ -36175,6 +36186,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConIntest
                 aria-expanded="false"
                 aria-haspopup="menu"
                 class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
+                href="#"
                 role="button"
               >
                 <span>
@@ -36554,6 +36566,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
                 aria-expanded="false"
                 aria-haspopup="menu"
                 class="px-lg-2 px-xl-3 dropdown-toggle  nav-link"
+                href="#"
                 role="button"
               >
                 <span>
