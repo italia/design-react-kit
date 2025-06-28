@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React, { DragEventHandler, FC, useState } from 'react';
+import DragandDropIcon from '../assets/upload-drag-drop-icon.svg';
 import { Icon } from '../Icon/Icon';
-import DragandDropIcon from '../../assets/images/upload-drag-drop-icon.svg';
 
 interface UploadDragNdropProps {
   /**
