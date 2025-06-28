@@ -1,3 +1,10 @@
+## 5.8.2 (2025-06-28)
+
+* fix: upload image svg not found ([877db17](https://github.com/italia/design-react-kit/commit/877db17))
+* chore: update software version in publiccode ([a91398e](https://github.com/italia/design-react-kit/commit/a91398e))
+
+
+
 ## [5.8.1](https://github.com/italia/design-react-kit/compare/v5.8.0...v5.8.1) (2025-06-24)
 
 
