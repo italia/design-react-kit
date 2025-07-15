@@ -1,3 +1,10 @@
+## <small>5.8.3 (2025-07-15)</small>
+
+* fix: initialize video player component only once ([1d95757](https://github.com/italia/design-react-kit/commit/1d95757))
+* chore: update public code ([f2229d3](https://github.com/italia/design-react-kit/commit/f2229d3))
+
+
+
 ## 5.8.2 (2025-06-28)
 
 * fix: upload image svg not found ([877db17](https://github.com/italia/design-react-kit/commit/877db17))
