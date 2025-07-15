@@ -113,7 +113,7 @@ export const Video: FC<VideoProps> = (props) => {
         instance.dispose();
       }
     };
-  }, [instance]);
+  }, []);
 
   const loadYouTubeVideo = (url: string) => {
     if (instance) {
