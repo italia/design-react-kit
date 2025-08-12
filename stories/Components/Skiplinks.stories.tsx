@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import React, { useEffect, useRef } from 'react';
 import { Skiplink, SkiplinkItem } from '../../src';
 

@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react-vite";
 import React from "react";
 import { AvatarContainer, AvatarIcon, AvatarPresence, AvatarStatus, AvatarWrapper, Icon } from "../../../src";
 
