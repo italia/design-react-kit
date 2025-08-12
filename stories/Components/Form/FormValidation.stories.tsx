@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import React, { useState } from 'react';
 import { Alert, Autocomplete, Button, Col, Form, FormGroup, FormText, Input, Label, Row } from '../../../src';
 

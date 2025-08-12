@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react-vite";
 import React from "react";
 import { Button, Col, Input, Label, Row, Select, Toggle } from "../../../src";
 

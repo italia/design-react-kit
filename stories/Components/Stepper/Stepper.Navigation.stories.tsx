@@ -1,4 +1,4 @@
-import type { Meta } from '@storybook/react';
+import type { Meta } from '@storybook/react-vite';
 import React from 'react';
 import { Button, Icon, Progress, StepperContainer, StepperContent, StepperDots, StepperNav } from '../../../src';
 

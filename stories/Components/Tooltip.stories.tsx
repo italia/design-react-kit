@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import React, { useRef, useState } from 'react';
 import { Button, Tooltip, TooltipProps, UncontrolledTooltip } from '../../src';
 

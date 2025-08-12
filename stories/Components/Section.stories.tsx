@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Meta } from "@storybook/react";
+import { Meta } from "@storybook/react-vite";
 import { Card, CardBody, CardText, Col, Container, Row, Section } from '../../src';
 
 const meta: Meta<typeof Section> = {

@@ -1,4 +1,4 @@
-import { type Meta, type StoryObj } from "@storybook/react";
+import { type Meta, type StoryObj } from "@storybook/react-vite";
 import React, { useState } from "react";
 
 import { Collapse, Icon, LinkList, LinkListItem, Sidebar } from "../../src";

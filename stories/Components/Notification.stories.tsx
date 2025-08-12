@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import React, { CSSProperties, ReactNode } from 'react';
 import { Button, NotificationManager, NotificationProps, createNotification, notify } from '../../src';
 
