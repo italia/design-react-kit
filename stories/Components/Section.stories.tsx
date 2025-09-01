@@ -158,7 +158,7 @@ export const SectionConCard = () => {
       <h2 id="titleEx6">Morbi fermentum amet</h2>
       <Row>
         <Col sm={6}>
-          <Card className='shadow h-100' noWrapper>
+          <Card className='shadow h-100'>
             <CardBody>
               <CardText>
                 Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet
@@ -169,7 +169,7 @@ export const SectionConCard = () => {
           </Card>
         </Col>
         <Col sm={6}>
-          <Card className='shadow h-100' noWrapper>
+          <Card className='shadow h-100'>
             <CardBody>
               <CardText>
                 Etiam dignissim diam quis enim. Eu nisl nunc mi ipsum faucibus. Euismod lacinia at quis risus sed
