@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import React from 'react';
 import { Video } from '../../src';
 import type { VideoTrackSource } from '../../src/Video/Video';

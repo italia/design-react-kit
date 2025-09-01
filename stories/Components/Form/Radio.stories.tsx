@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react-vite";
 import React from "react";
 import { Col, Form, FormGroup, FormText, Input, Label, Row } from "../../../src";
 
