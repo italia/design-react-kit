@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import React from 'react';
 import { Dropdown, DropdownMenu, DropdownToggle, Form, FormGroup, Icon, Input, Label, LinkList, LinkListItem, Pager, PagerItem, PagerLink } from '../../src';
 

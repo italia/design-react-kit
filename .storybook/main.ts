@@ -2,22 +2,13 @@ import { StorybookConfig } from '@storybook/react-vite';
 
 const config: StorybookConfig = {
   stories: ['../stories/**/*.@(mdx|stories.@(ts|tsx|js|jsx))'],
-  addons: [
-    '@storybook/addon-links',
-    '@storybook/addon-essentials',
-    '@storybook/addon-interactions',
-    '@storybook/addon-a11y'
-  ],
-  framework: {
-    name: '@storybook/react-vite',
-    options: {}
-  },
+  addons: ['@storybook/addon-links', '@storybook/addon-a11y', '@storybook/addon-docs'],
+  framework: '@storybook/react-vite',
   core: {
     builder: '@storybook/builder-vite' // 👈 The builder enabled here.
   },
   staticDirs: ['../static', { from: '../assets', to: '/' }],
   docs: {
-    autodocs: true,
     defaultName: 'Documentazione',
     docsMode: false
   },

@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import React, { useState } from 'react';
 import { Col, Container, Row, Upload, UploadDragNdrop, UploadList, UploadListItem } from '../../src';
 import { UploadListItemProps } from '../../src/Upload/UploadListItem';
