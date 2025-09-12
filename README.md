@@ -83,26 +83,6 @@ Il `design-react-kit` non include il CSS ed i file font, ed è quindi necessario
 yarn add bootstrap-italia typeface-lora typeface-roboto-mono typeface-titillium-web --save
 ```
 
-#### Per chi utilizza `vite`
-
-Se si utilizza `vite` come bundler e si vuole personalizzare l'aspetto standard di Bootstrap Italia, è necessario
-aggiungere un alias nel file `vite.config.js`:
-
-```js
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-export default defineConfig({
-  plugins: [react()],
-  resolve: {
-    alias: {
-      "@splidejs/splide/src/css/core/index":
-        "node_modules/@splidejs/splide/src/css/core/index.scss",
-    }
-  }
-});
-```
-
 ### Esempio
 
 A questo punto, è sufficiente importare esplicitamente nella app CSS e font se si è usato `create vite` all'interno del file `./src/App.js`:
@@ -125,6 +105,26 @@ export default App;
 
 Puoi consultare questo template web con StackBlitz:
 [Template web](https://stackblitz.com/edit/vitejs-vite-yy8bnk?file=src%2FApp.tsx)
+
+#### Nota per chi utilizza `vite`
+
+Se si utilizza `vite` come bundler e si vuole personalizzare l'aspetto standard di Bootstrap Italia, è necessario
+aggiungere un alias nel file `vite.config.js`:
+
+```js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@splidejs/splide/src/css/core/index":
+        "node_modules/@splidejs/splide/src/css/core/index.scss",
+    }
+  }
+});
+```
 
 ### Caricamento Font
 
