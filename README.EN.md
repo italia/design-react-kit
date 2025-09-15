@@ -82,6 +82,26 @@ The `design-react-kit` module does not include the CSS and font files in the bun
 yarn add bootstrap-italia typeface-lora typeface-roboto-mono typeface-titillium-web --save
 ```
 
+#### Note for `vite` users
+
+If you are using `vite` as a bundler and want to customize the standard appearance of Bootstrap Italia, you need to
+add an alias in the `vite.config.js` file:
+
+```js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@splidejs/splide/src/css/core/index":
+        "node_modules/@splidejs/splide/src/css/core/index.scss",
+    }
+  }
+});
+```
+
 ### Example
 
 Then, you just need to import CSS e font editing `./src/App.js` as shown:

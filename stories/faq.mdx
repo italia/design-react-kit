@@ -25,6 +25,26 @@ Si. Ti invitiamo ad aprire un ticket [sul repository Github](https://github.com/
 
 Una guida completa su come personalizzare lo stile è possibile reperirla sul sito Bootstrap Italia nell'apposita pagina: [Personalizzazione della libreria](https://italia.github.io/bootstrap-italia/docs/come-iniziare/personalizzazione-della-libreria/). Poichè il kit ha una dipendenza unicamente sul css di Bootstrap Italia, è possibile importare il nuovo stile personalizzato come mostrato nell'esempio finale nella pagina.
 
+#### Nota per chi utilizza `vite`
+
+Se si utilizza `vite` come bundler e si vuole personalizzare l'aspetto standard di Bootstrap Italia, è necessario
+aggiungere un alias nel file `vite.config.js`:
+
+```js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@splidejs/splide/src/css/core/index":
+        "node_modules/@splidejs/splide/src/css/core/index.scss",
+    }
+  }
+});
+```
+
 ### I tipi Typescript del componente X non sono corretti. È un bug?
 
 Si. Ti invitiamo ad aprire un ticket [sul repository Github](https://github.com/italia/design-react-kit/issues).
