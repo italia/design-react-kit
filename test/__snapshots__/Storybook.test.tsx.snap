@@ -3512,60 +3512,34 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             <article
               class="it-card border"
             >
-              <div
-                class="card-body"
+              <h3
+                class="it-card-title "
               >
-                <div
-                  class="category-top"
-                >
-                  <a
-                    class="category"
-                  >
-                    Category
-                  </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
-                </div>
-                <h5
-                  class="big-heading card-title"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <p
-                  class="card-text"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <span
-                  class="card-signature"
-                >
-                  di Federico De Paolis
-                </span>
                 <a
-                  class="read-more"
+                  href="#"
                 >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
+                  Titolo del contenuto
                 </a>
+              </h3>
+              <div
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                </p>
               </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -3583,60 +3557,34 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             <article
               class="it-card border"
             >
-              <div
-                class="card-body"
+              <h3
+                class="it-card-title "
               >
-                <div
-                  class="category-top"
-                >
-                  <a
-                    class="category"
-                  >
-                    Category
-                  </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
-                </div>
-                <h5
-                  class="big-heading card-title"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <p
-                  class="card-text"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <span
-                  class="card-signature"
-                >
-                  di Federico De Paolis
-                </span>
                 <a
-                  class="read-more"
+                  href="#"
                 >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
+                  Titolo del contenuto
                 </a>
+              </h3>
+              <div
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                </p>
               </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -3654,60 +3602,34 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             <article
               class="it-card border"
             >
-              <div
-                class="card-body"
+              <h3
+                class="it-card-title "
               >
-                <div
-                  class="category-top"
-                >
-                  <a
-                    class="category"
-                  >
-                    Category
-                  </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
-                </div>
-                <h5
-                  class="big-heading card-title"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <p
-                  class="card-text"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <span
-                  class="card-signature"
-                >
-                  di Federico De Paolis
-                </span>
                 <a
-                  class="read-more"
+                  href="#"
                 >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
+                  Titolo del contenuto
                 </a>
+              </h3>
+              <div
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                </p>
               </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -3725,60 +3647,34 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             <article
               class="it-card border"
             >
-              <div
-                class="card-body"
+              <h3
+                class="it-card-title "
               >
-                <div
-                  class="category-top"
-                >
-                  <a
-                    class="category"
-                  >
-                    Category
-                  </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
-                </div>
-                <h5
-                  class="big-heading card-title"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <p
-                  class="card-text"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <span
-                  class="card-signature"
-                >
-                  di Federico De Paolis
-                </span>
                 <a
-                  class="read-more"
+                  href="#"
                 >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
+                  Titolo del contenuto
                 </a>
+              </h3>
+              <div
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                </p>
               </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -3796,60 +3692,34 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             <article
               class="it-card border"
             >
-              <div
-                class="card-body"
+              <h3
+                class="it-card-title "
               >
-                <div
-                  class="category-top"
-                >
-                  <a
-                    class="category"
-                  >
-                    Category
-                  </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
-                </div>
-                <h5
-                  class="big-heading card-title"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <p
-                  class="card-text"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <span
-                  class="card-signature"
-                >
-                  di Federico De Paolis
-                </span>
                 <a
-                  class="read-more"
+                  href="#"
                 >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
+                  Titolo del contenuto
                 </a>
+              </h3>
+              <div
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                </p>
               </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -3867,60 +3737,34 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             <article
               class="it-card border"
             >
-              <div
-                class="card-body"
+              <h3
+                class="it-card-title "
               >
-                <div
-                  class="category-top"
-                >
-                  <a
-                    class="category"
-                  >
-                    Category
-                  </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
-                </div>
-                <h5
-                  class="big-heading card-title"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <p
-                  class="card-text"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <span
-                  class="card-signature"
-                >
-                  di Federico De Paolis
-                </span>
                 <a
-                  class="read-more"
+                  href="#"
                 >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
+                  Titolo del contenuto
                 </a>
+              </h3>
+              <div
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                </p>
               </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -3938,60 +3782,34 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             <article
               class="it-card border"
             >
-              <div
-                class="card-body"
+              <h3
+                class="it-card-title "
               >
-                <div
-                  class="category-top"
-                >
-                  <a
-                    class="category"
-                  >
-                    Category
-                  </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
-                </div>
-                <h5
-                  class="big-heading card-title"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <p
-                  class="card-text"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <span
-                  class="card-signature"
-                >
-                  di Federico De Paolis
-                </span>
                 <a
-                  class="read-more"
+                  href="#"
                 >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
+                  Titolo del contenuto
                 </a>
+              </h3>
+              <div
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                </p>
               </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -4009,60 +3827,34 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             <article
               class="it-card border"
             >
-              <div
-                class="card-body"
+              <h3
+                class="it-card-title "
               >
-                <div
-                  class="category-top"
-                >
-                  <a
-                    class="category"
-                  >
-                    Category
-                  </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
-                </div>
-                <h5
-                  class="big-heading card-title"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <p
-                  class="card-text"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <span
-                  class="card-signature"
-                >
-                  di Federico De Paolis
-                </span>
                 <a
-                  class="read-more"
+                  href="#"
                 >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
+                  Titolo del contenuto
                 </a>
+              </h3>
+              <div
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                </p>
               </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -4080,60 +3872,34 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             <article
               class="it-card border"
             >
-              <div
-                class="card-body"
+              <h3
+                class="it-card-title "
               >
-                <div
-                  class="category-top"
-                >
-                  <a
-                    class="category"
-                  >
-                    Category
-                  </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
-                </div>
-                <h5
-                  class="big-heading card-title"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <p
-                  class="card-text"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <span
-                  class="card-signature"
-                >
-                  di Federico De Paolis
-                </span>
                 <a
-                  class="read-more"
+                  href="#"
                 >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
+                  Titolo del contenuto
                 </a>
+              </h3>
+              <div
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                </p>
               </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -4151,60 +3917,34 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             <article
               class="it-card border"
             >
-              <div
-                class="card-body"
+              <h3
+                class="it-card-title "
               >
-                <div
-                  class="category-top"
-                >
-                  <a
-                    class="category"
-                  >
-                    Category
-                  </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
-                </div>
-                <h5
-                  class="big-heading card-title"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <p
-                  class="card-text"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <span
-                  class="card-signature"
-                >
-                  di Federico De Paolis
-                </span>
                 <a
-                  class="read-more"
+                  href="#"
                 >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
+                  Titolo del contenuto
                 </a>
+              </h3>
+              <div
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                </p>
               </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -4301,81 +4041,78 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel EvidenceImage 1`] 
             class="it-single-slide-wrapper"
           >
             <div
-              class="img-responsive-wrapper"
-            >
-              <div
-                class="img-responsive"
-              >
-                <div
-                  class="img-wrapper"
-                >
-                  <img
-                    alt="Alternative Text"
-                    src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                    title="Image Title"
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              class="it-text-slider-wrapper-outside"
+              class="it-single-slide-wrapper p-2e"
             >
               <article
-                class="it-card border"
+                class="it-card it-card-image border it-card-inline rounded"
               >
                 <div
-                  class="card-body"
+                  class="it-card-inline-content"
                 >
-                  <div
-                    class="category-top"
+                  <h3
+                    class="it-card-title "
                   >
                     <a
-                      class="category"
+                      href="#"
                     >
-                      Category
+                      Titolo contenuto editoriale
                     </a>
-                    <span
-                      class="data"
+                  </h3>
+                  <div
+                    class="it-card-body"
+                  >
+                    <address
+                      class="it-card-signature"
                     >
-                      10/12/2018
-                    </span>
+                      di Maria Verde
+                    </address>
+                    <p
+                      class="it-card-text"
+                    >
+                      Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                    </p>
                   </div>
-                  <h5
-                    class="big-heading card-title"
+                  <footer
+                    class="it-card-related it-card-footer"
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                  </h5>
-                  <p
-                    class="card-text"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <span
-                    class="card-signature"
-                  >
-                    di Federico De Paolis
-                  </span>
-                  <a
-                    class="read-more"
-                  >
-                    <span
-                      class="text"
+                    <div
+                      class="it-card-taxonomy"
                     >
-                      Leggi di più
-                    </span>
-                    <svg
-                      aria-hidden="true"
-                      class="icon"
-                      enable-background="new 0 0 24 24"
-                      viewBox="0 0 24 24"
-                      xml:space="preserve"
-                      xmlns="http://www.w3.org/2000/svg"
+                      <a
+                        class="it-card-category it-card-link link-secondary"
+                        href="#"
+                      >
+                        <span
+                          class="visually-hidden"
+                        >
+                          Categoria correlata: 
+                        </span>
+                        Categoria
+                      </a>
+                    </div>
+                    <time
+                      class="it-card-date"
+                      datetime="2025-04-22"
                     >
-                      <path
-                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      22 aprile 2025
+                    </time>
+                  </footer>
+                </div>
+                <div
+                  class="it-card-image-wrapper"
+                >
+                  <div
+                    class="ratio ratio-16x9"
+                  >
+                    <figure
+                      class="figure img-full"
+                    >
+                      <img
+                        alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                        src="https://placeholderimage.eu/api/city/800/600"
                       />
-                    </svg>
-                  </a>
+                    </figure>
+                  </div>
                 </div>
               </article>
             </div>
@@ -4393,81 +4130,78 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel EvidenceImage 1`] 
             class="it-single-slide-wrapper"
           >
             <div
-              class="img-responsive-wrapper"
-            >
-              <div
-                class="img-responsive"
-              >
-                <div
-                  class="img-wrapper"
-                >
-                  <img
-                    alt="Alternative Text"
-                    src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                    title="Image Title"
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              class="it-text-slider-wrapper-outside"
+              class="it-single-slide-wrapper p-2e"
             >
               <article
-                class="it-card border"
+                class="it-card it-card-image border it-card-inline rounded"
               >
                 <div
-                  class="card-body"
+                  class="it-card-inline-content"
                 >
-                  <div
-                    class="category-top"
+                  <h3
+                    class="it-card-title "
                   >
                     <a
-                      class="category"
+                      href="#"
                     >
-                      Category
+                      Titolo contenuto editoriale
                     </a>
-                    <span
-                      class="data"
+                  </h3>
+                  <div
+                    class="it-card-body"
+                  >
+                    <address
+                      class="it-card-signature"
                     >
-                      10/12/2018
-                    </span>
+                      di Maria Verde
+                    </address>
+                    <p
+                      class="it-card-text"
+                    >
+                      Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                    </p>
                   </div>
-                  <h5
-                    class="big-heading card-title"
+                  <footer
+                    class="it-card-related it-card-footer"
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                  </h5>
-                  <p
-                    class="card-text"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <span
-                    class="card-signature"
-                  >
-                    di Federico De Paolis
-                  </span>
-                  <a
-                    class="read-more"
-                  >
-                    <span
-                      class="text"
+                    <div
+                      class="it-card-taxonomy"
                     >
-                      Leggi di più
-                    </span>
-                    <svg
-                      aria-hidden="true"
-                      class="icon"
-                      enable-background="new 0 0 24 24"
-                      viewBox="0 0 24 24"
-                      xml:space="preserve"
-                      xmlns="http://www.w3.org/2000/svg"
+                      <a
+                        class="it-card-category it-card-link link-secondary"
+                        href="#"
+                      >
+                        <span
+                          class="visually-hidden"
+                        >
+                          Categoria correlata: 
+                        </span>
+                        Categoria
+                      </a>
+                    </div>
+                    <time
+                      class="it-card-date"
+                      datetime="2025-04-22"
                     >
-                      <path
-                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      22 aprile 2025
+                    </time>
+                  </footer>
+                </div>
+                <div
+                  class="it-card-image-wrapper"
+                >
+                  <div
+                    class="ratio ratio-16x9"
+                  >
+                    <figure
+                      class="figure img-full"
+                    >
+                      <img
+                        alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                        src="https://placeholderimage.eu/api/city/800/600"
                       />
-                    </svg>
-                  </a>
+                    </figure>
+                  </div>
                 </div>
               </article>
             </div>
@@ -4485,81 +4219,78 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel EvidenceImage 1`] 
             class="it-single-slide-wrapper"
           >
             <div
-              class="img-responsive-wrapper"
-            >
-              <div
-                class="img-responsive"
-              >
-                <div
-                  class="img-wrapper"
-                >
-                  <img
-                    alt="Alternative Text"
-                    src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                    title="Image Title"
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              class="it-text-slider-wrapper-outside"
+              class="it-single-slide-wrapper p-2e"
             >
               <article
-                class="it-card border"
+                class="it-card it-card-image border it-card-inline rounded"
               >
                 <div
-                  class="card-body"
+                  class="it-card-inline-content"
                 >
-                  <div
-                    class="category-top"
+                  <h3
+                    class="it-card-title "
                   >
                     <a
-                      class="category"
+                      href="#"
                     >
-                      Category
+                      Titolo contenuto editoriale
                     </a>
-                    <span
-                      class="data"
+                  </h3>
+                  <div
+                    class="it-card-body"
+                  >
+                    <address
+                      class="it-card-signature"
                     >
-                      10/12/2018
-                    </span>
+                      di Maria Verde
+                    </address>
+                    <p
+                      class="it-card-text"
+                    >
+                      Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                    </p>
                   </div>
-                  <h5
-                    class="big-heading card-title"
+                  <footer
+                    class="it-card-related it-card-footer"
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                  </h5>
-                  <p
-                    class="card-text"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <span
-                    class="card-signature"
-                  >
-                    di Federico De Paolis
-                  </span>
-                  <a
-                    class="read-more"
-                  >
-                    <span
-                      class="text"
+                    <div
+                      class="it-card-taxonomy"
                     >
-                      Leggi di più
-                    </span>
-                    <svg
-                      aria-hidden="true"
-                      class="icon"
-                      enable-background="new 0 0 24 24"
-                      viewBox="0 0 24 24"
-                      xml:space="preserve"
-                      xmlns="http://www.w3.org/2000/svg"
+                      <a
+                        class="it-card-category it-card-link link-secondary"
+                        href="#"
+                      >
+                        <span
+                          class="visually-hidden"
+                        >
+                          Categoria correlata: 
+                        </span>
+                        Categoria
+                      </a>
+                    </div>
+                    <time
+                      class="it-card-date"
+                      datetime="2025-04-22"
                     >
-                      <path
-                        d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
+                      22 aprile 2025
+                    </time>
+                  </footer>
+                </div>
+                <div
+                  class="it-card-image-wrapper"
+                >
+                  <div
+                    class="ratio ratio-16x9"
+                  >
+                    <figure
+                      class="figure img-full"
+                    >
+                      <img
+                        alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                        src="https://placeholderimage.eu/api/city/800/600"
                       />
-                    </svg>
-                  </a>
+                    </figure>
+                  </div>
                 </div>
               </article>
             </div>
@@ -4613,1464 +4344,6 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel EvidenceImage 1`] 
 </div>
 `;
 
-exports[`Stories Snapshots Documentazione/Componenti/Carousel FullscreenImage 1`] = `
-<div>
-  <div
-    aria-roledescription="Carosello"
-    class="splide it-carousel-wrapper it-carousel-landscape-abstract-three-cols it-full-carousel it-big-img splide--loop splide--ltr splide--draggable is-active is-initialized"
-    id="splide04"
-    role="region"
-  >
-    <div
-      aria-atomic="true"
-      aria-live="polite"
-      class="splide__track splide__track--loop splide__track--ltr splide__track--draggable"
-      id="splide04-track"
-      style="padding-left: 320px; padding-right: 320px;"
-    >
-      <ul
-        class="splide__list"
-        id="splide04-list"
-        role="presentation"
-        style="transform: translateX(0px);"
-      >
-        <li
-          aria-label="9 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-visible"
-          id="splide04-clone01"
-          role="tabpanel"
-          style="margin-right: 48px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="10 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-visible is-prev"
-          id="splide04-clone02"
-          role="tabpanel"
-          style="margin-right: 48px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="1 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-active is-visible"
-          id="splide04-slide01"
-          role="tabpanel"
-          style="margin-right: 48px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="2 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible is-next"
-          id="splide04-slide02"
-          role="tabpanel"
-          style="margin-right: 48px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="3 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide04-slide03"
-          role="tabpanel"
-          style="margin-right: 48px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="4 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide04-slide04"
-          role="tabpanel"
-          style="margin-right: 48px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="5 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide04-slide05"
-          role="tabpanel"
-          style="margin-right: 48px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="6 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide04-slide06"
-          role="tabpanel"
-          style="margin-right: 48px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="7 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide04-slide07"
-          role="tabpanel"
-          style="margin-right: 48px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="8 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide04-slide08"
-          role="tabpanel"
-          style="margin-right: 48px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="9 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide04-slide09"
-          role="tabpanel"
-          style="margin-right: 48px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="10 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide04-slide10"
-          role="tabpanel"
-          style="margin-right: 48px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="1 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-active is-visible"
-          id="splide04-clone03"
-          role="tabpanel"
-          style="margin-right: 48px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="2 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-visible"
-          id="splide04-clone04"
-          role="tabpanel"
-          style="margin-right: 48px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <ul
-      aria-label="Seleziona una slide da mostrare"
-      class="splide__pagination splide__pagination--ltr"
-      role="tablist"
-    >
-      <li
-        role="presentation"
-      >
-        <button
-          aria-controls="splide04-slide01"
-          aria-label="Vai alla slide 1"
-          aria-selected="true"
-          class="splide__pagination__page is-active"
-          role="tab"
-          type="button"
-        />
-      </li>
-      <li
-        role="presentation"
-      >
-        <button
-          aria-controls="splide04-slide02"
-          aria-label="Vai alla slide 2"
-          class="splide__pagination__page"
-          role="tab"
-          tabindex="-1"
-          type="button"
-        />
-      </li>
-      <li
-        role="presentation"
-      >
-        <button
-          aria-controls="splide04-slide03"
-          aria-label="Vai alla slide 3"
-          class="splide__pagination__page"
-          role="tab"
-          tabindex="-1"
-          type="button"
-        />
-      </li>
-      <li
-        role="presentation"
-      >
-        <button
-          aria-controls="splide04-slide04"
-          aria-label="Vai alla slide 4"
-          class="splide__pagination__page"
-          role="tab"
-          tabindex="-1"
-          type="button"
-        />
-      </li>
-      <li
-        role="presentation"
-      >
-        <button
-          aria-controls="splide04-slide05"
-          aria-label="Vai alla slide 5"
-          class="splide__pagination__page"
-          role="tab"
-          tabindex="-1"
-          type="button"
-        />
-      </li>
-      <li
-        role="presentation"
-      >
-        <button
-          aria-controls="splide04-slide06"
-          aria-label="Vai alla slide 6"
-          class="splide__pagination__page"
-          role="tab"
-          tabindex="-1"
-          type="button"
-        />
-      </li>
-      <li
-        role="presentation"
-      >
-        <button
-          aria-controls="splide04-slide07"
-          aria-label="Vai alla slide 7"
-          class="splide__pagination__page"
-          role="tab"
-          tabindex="-1"
-          type="button"
-        />
-      </li>
-      <li
-        role="presentation"
-      >
-        <button
-          aria-controls="splide04-slide08"
-          aria-label="Vai alla slide 8"
-          class="splide__pagination__page"
-          role="tab"
-          tabindex="-1"
-          type="button"
-        />
-      </li>
-      <li
-        role="presentation"
-      >
-        <button
-          aria-controls="splide04-slide09"
-          aria-label="Vai alla slide 9"
-          class="splide__pagination__page"
-          role="tab"
-          tabindex="-1"
-          type="button"
-        />
-      </li>
-      <li
-        role="presentation"
-      >
-        <button
-          aria-controls="splide04-slide10"
-          aria-label="Vai alla slide 10"
-          class="splide__pagination__page"
-          role="tab"
-          tabindex="-1"
-          type="button"
-        />
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`Stories Snapshots Documentazione/Componenti/Carousel FullscreenStandardImage 1`] = `
-<div>
-  <div
-    aria-roledescription="Carosello"
-    class="splide it-carousel-wrapper it-carousel-landscape-abstract-three-cols it-full-carousel it-standard-image splide--loop splide--ltr splide--draggable is-active is-initialized"
-    id="splide05"
-    role="region"
-  >
-    <div
-      aria-atomic="true"
-      aria-live="polite"
-      class="splide__track splide__track--loop splide__track--ltr splide__track--draggable"
-      id="splide05-track"
-      style="padding-left: 48px; padding-right: 48px;"
-    >
-      <ul
-        class="splide__list"
-        id="splide05-list"
-        role="presentation"
-        style="transform: translateX(0px);"
-      >
-        <li
-          aria-label="5 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-visible"
-          id="splide05-clone01"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="6 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-visible"
-          id="splide05-clone02"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="7 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-visible"
-          id="splide05-clone03"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="8 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-visible"
-          id="splide05-clone04"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="9 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-visible"
-          id="splide05-clone05"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="10 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-visible is-prev"
-          id="splide05-clone06"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="1 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-active is-visible"
-          id="splide05-slide01"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="2 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible is-next"
-          id="splide05-slide02"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="3 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide05-slide03"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="4 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide05-slide04"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="5 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide05-slide05"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="6 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide05-slide06"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="7 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide05-slide07"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="8 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide05-slide08"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="9 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide05-slide09"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="10 di 10"
-          aria-roledescription="slide"
-          class="splide__slide is-visible"
-          id="splide05-slide10"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="1 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-active is-visible"
-          id="splide05-clone07"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="2 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-visible"
-          id="splide05-clone08"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="3 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-visible"
-          id="splide05-clone09"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="4 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-visible"
-          id="splide05-clone10"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="5 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-visible"
-          id="splide05-clone11"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-        <li
-          aria-label="6 di 10"
-          aria-roledescription="slide"
-          class="splide__slide splide__slide--clone is-visible"
-          id="splide05-clone12"
-          role="tabpanel"
-          style="margin-right: 24px;"
-        >
-          <div
-            class="it-single-slide-wrapper"
-          >
-            <article
-              class="it-card card-img no-after border"
-            >
-              <div
-                class="img-responsive-wrapper"
-              >
-                <div
-                  class="img-responsive"
-                >
-                  <div
-                    class="img-wrapper"
-                  >
-                    <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
-                    />
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <ul
-      aria-label="Seleziona una slide da mostrare"
-      class="splide__pagination splide__pagination--ltr"
-      role="tablist"
-    >
-      <li
-        role="presentation"
-      >
-        <button
-          aria-controls="splide05-slide01 splide05-slide02 splide05-slide03"
-          aria-label="Vai a pagina 1"
-          aria-selected="true"
-          class="splide__pagination__page is-active"
-          role="tab"
-          type="button"
-        />
-      </li>
-      <li
-        role="presentation"
-      >
-        <button
-          aria-controls="splide05-slide04 splide05-slide05 splide05-slide06"
-          aria-label="Vai a pagina 2"
-          class="splide__pagination__page"
-          role="tab"
-          tabindex="-1"
-          type="button"
-        />
-      </li>
-      <li
-        role="presentation"
-      >
-        <button
-          aria-controls="splide05-slide07 splide05-slide08 splide05-slide09"
-          aria-label="Vai a pagina 3"
-          class="splide__pagination__page"
-          role="tab"
-          tabindex="-1"
-          type="button"
-        />
-      </li>
-      <li
-        role="presentation"
-      >
-        <button
-          aria-controls="splide05-slide10 splide05-clone07 splide05-clone08"
-          aria-label="Vai a pagina 4"
-          class="splide__pagination__page"
-          role="tab"
-          tabindex="-1"
-          type="button"
-        />
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
 exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
 <div>
   <div
@@ -6104,69 +4377,67 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card card-img no-after border"
+              class="it-card it-card-image border it-card-height-full rounded"
             >
+              <h3
+                class="it-card-title"
+              >
+                <a
+                  href="#"
+                >
+                  Titolo del contenuto
+                </a>
+              </h3>
               <div
-                class="img-responsive-wrapper"
+                class="it-card-image-wrapper"
               >
                 <div
-                  class="img-responsive"
+                  class="ratio ratio-16x9"
                 >
-                  <div
-                    class="img-wrapper"
+                  <figure
+                    class="figure img-full"
                   >
                     <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
                     />
-                  </div>
+                  </figure>
                 </div>
               </div>
               <div
-                class="card-body"
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve.
+                </p>
+              </div>
+              <footer
+                class="it-card-related it-card-footer"
               >
                 <div
-                  class="category-top"
+                  class="it-card-taxonomy"
                 >
                   <a
-                    class="category"
+                    class="it-card-category it-card-link link-secondary"
+                    href="#"
                   >
-                    Category
+                    <span
+                      class="visually-hidden"
+                    >
+                      Categoria correlata: 
+                    </span>
+                    Categoria
                   </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
                 </div>
-                <h5
-                  class="big-heading card-title"
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <a
-                  class="read-more"
-                >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
-                </a>
-              </div>
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -6182,69 +4453,67 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card card-img no-after border"
+              class="it-card it-card-image border it-card-height-full rounded"
             >
+              <h3
+                class="it-card-title"
+              >
+                <a
+                  href="#"
+                >
+                  Titolo del contenuto
+                </a>
+              </h3>
               <div
-                class="img-responsive-wrapper"
+                class="it-card-image-wrapper"
               >
                 <div
-                  class="img-responsive"
+                  class="ratio ratio-16x9"
                 >
-                  <div
-                    class="img-wrapper"
+                  <figure
+                    class="figure img-full"
                   >
                     <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
                     />
-                  </div>
+                  </figure>
                 </div>
               </div>
               <div
-                class="card-body"
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve.
+                </p>
+              </div>
+              <footer
+                class="it-card-related it-card-footer"
               >
                 <div
-                  class="category-top"
+                  class="it-card-taxonomy"
                 >
                   <a
-                    class="category"
+                    class="it-card-category it-card-link link-secondary"
+                    href="#"
                   >
-                    Category
+                    <span
+                      class="visually-hidden"
+                    >
+                      Categoria correlata: 
+                    </span>
+                    Categoria
                   </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
                 </div>
-                <h5
-                  class="big-heading card-title"
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <a
-                  class="read-more"
-                >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
-                </a>
-              </div>
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -6260,69 +4529,67 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card card-img no-after border"
+              class="it-card it-card-image border it-card-height-full rounded"
             >
+              <h3
+                class="it-card-title"
+              >
+                <a
+                  href="#"
+                >
+                  Titolo del contenuto
+                </a>
+              </h3>
               <div
-                class="img-responsive-wrapper"
+                class="it-card-image-wrapper"
               >
                 <div
-                  class="img-responsive"
+                  class="ratio ratio-16x9"
                 >
-                  <div
-                    class="img-wrapper"
+                  <figure
+                    class="figure img-full"
                   >
                     <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
                     />
-                  </div>
+                  </figure>
                 </div>
               </div>
               <div
-                class="card-body"
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve.
+                </p>
+              </div>
+              <footer
+                class="it-card-related it-card-footer"
               >
                 <div
-                  class="category-top"
+                  class="it-card-taxonomy"
                 >
                   <a
-                    class="category"
+                    class="it-card-category it-card-link link-secondary"
+                    href="#"
                   >
-                    Category
+                    <span
+                      class="visually-hidden"
+                    >
+                      Categoria correlata: 
+                    </span>
+                    Categoria
                   </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
                 </div>
-                <h5
-                  class="big-heading card-title"
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <a
-                  class="read-more"
-                >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
-                </a>
-              </div>
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -6338,69 +4605,67 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card card-img no-after border"
+              class="it-card it-card-image border it-card-height-full rounded"
             >
+              <h3
+                class="it-card-title"
+              >
+                <a
+                  href="#"
+                >
+                  Titolo del contenuto
+                </a>
+              </h3>
               <div
-                class="img-responsive-wrapper"
+                class="it-card-image-wrapper"
               >
                 <div
-                  class="img-responsive"
+                  class="ratio ratio-16x9"
                 >
-                  <div
-                    class="img-wrapper"
+                  <figure
+                    class="figure img-full"
                   >
                     <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
                     />
-                  </div>
+                  </figure>
                 </div>
               </div>
               <div
-                class="card-body"
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve.
+                </p>
+              </div>
+              <footer
+                class="it-card-related it-card-footer"
               >
                 <div
-                  class="category-top"
+                  class="it-card-taxonomy"
                 >
                   <a
-                    class="category"
+                    class="it-card-category it-card-link link-secondary"
+                    href="#"
                   >
-                    Category
+                    <span
+                      class="visually-hidden"
+                    >
+                      Categoria correlata: 
+                    </span>
+                    Categoria
                   </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
                 </div>
-                <h5
-                  class="big-heading card-title"
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <a
-                  class="read-more"
-                >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
-                </a>
-              </div>
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -6416,69 +4681,67 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card card-img no-after border"
+              class="it-card it-card-image border it-card-height-full rounded"
             >
+              <h3
+                class="it-card-title"
+              >
+                <a
+                  href="#"
+                >
+                  Titolo del contenuto
+                </a>
+              </h3>
               <div
-                class="img-responsive-wrapper"
+                class="it-card-image-wrapper"
               >
                 <div
-                  class="img-responsive"
+                  class="ratio ratio-16x9"
                 >
-                  <div
-                    class="img-wrapper"
+                  <figure
+                    class="figure img-full"
                   >
                     <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
                     />
-                  </div>
+                  </figure>
                 </div>
               </div>
               <div
-                class="card-body"
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve.
+                </p>
+              </div>
+              <footer
+                class="it-card-related it-card-footer"
               >
                 <div
-                  class="category-top"
+                  class="it-card-taxonomy"
                 >
                   <a
-                    class="category"
+                    class="it-card-category it-card-link link-secondary"
+                    href="#"
                   >
-                    Category
+                    <span
+                      class="visually-hidden"
+                    >
+                      Categoria correlata: 
+                    </span>
+                    Categoria
                   </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
                 </div>
-                <h5
-                  class="big-heading card-title"
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <a
-                  class="read-more"
-                >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
-                </a>
-              </div>
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -6494,69 +4757,67 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card card-img no-after border"
+              class="it-card it-card-image border it-card-height-full rounded"
             >
+              <h3
+                class="it-card-title"
+              >
+                <a
+                  href="#"
+                >
+                  Titolo del contenuto
+                </a>
+              </h3>
               <div
-                class="img-responsive-wrapper"
+                class="it-card-image-wrapper"
               >
                 <div
-                  class="img-responsive"
+                  class="ratio ratio-16x9"
                 >
-                  <div
-                    class="img-wrapper"
+                  <figure
+                    class="figure img-full"
                   >
                     <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
                     />
-                  </div>
+                  </figure>
                 </div>
               </div>
               <div
-                class="card-body"
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve.
+                </p>
+              </div>
+              <footer
+                class="it-card-related it-card-footer"
               >
                 <div
-                  class="category-top"
+                  class="it-card-taxonomy"
                 >
                   <a
-                    class="category"
+                    class="it-card-category it-card-link link-secondary"
+                    href="#"
                   >
-                    Category
+                    <span
+                      class="visually-hidden"
+                    >
+                      Categoria correlata: 
+                    </span>
+                    Categoria
                   </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
                 </div>
-                <h5
-                  class="big-heading card-title"
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <a
-                  class="read-more"
-                >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
-                </a>
-              </div>
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -6572,69 +4833,67 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card card-img no-after border"
+              class="it-card it-card-image border it-card-height-full rounded"
             >
+              <h3
+                class="it-card-title"
+              >
+                <a
+                  href="#"
+                >
+                  Titolo del contenuto
+                </a>
+              </h3>
               <div
-                class="img-responsive-wrapper"
+                class="it-card-image-wrapper"
               >
                 <div
-                  class="img-responsive"
+                  class="ratio ratio-16x9"
                 >
-                  <div
-                    class="img-wrapper"
+                  <figure
+                    class="figure img-full"
                   >
                     <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
                     />
-                  </div>
+                  </figure>
                 </div>
               </div>
               <div
-                class="card-body"
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve.
+                </p>
+              </div>
+              <footer
+                class="it-card-related it-card-footer"
               >
                 <div
-                  class="category-top"
+                  class="it-card-taxonomy"
                 >
                   <a
-                    class="category"
+                    class="it-card-category it-card-link link-secondary"
+                    href="#"
                   >
-                    Category
+                    <span
+                      class="visually-hidden"
+                    >
+                      Categoria correlata: 
+                    </span>
+                    Categoria
                   </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
                 </div>
-                <h5
-                  class="big-heading card-title"
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <a
-                  class="read-more"
-                >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
-                </a>
-              </div>
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -6650,69 +4909,67 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card card-img no-after border"
+              class="it-card it-card-image border it-card-height-full rounded"
             >
+              <h3
+                class="it-card-title"
+              >
+                <a
+                  href="#"
+                >
+                  Titolo del contenuto
+                </a>
+              </h3>
               <div
-                class="img-responsive-wrapper"
+                class="it-card-image-wrapper"
               >
                 <div
-                  class="img-responsive"
+                  class="ratio ratio-16x9"
                 >
-                  <div
-                    class="img-wrapper"
+                  <figure
+                    class="figure img-full"
                   >
                     <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
                     />
-                  </div>
+                  </figure>
                 </div>
               </div>
               <div
-                class="card-body"
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve.
+                </p>
+              </div>
+              <footer
+                class="it-card-related it-card-footer"
               >
                 <div
-                  class="category-top"
+                  class="it-card-taxonomy"
                 >
                   <a
-                    class="category"
+                    class="it-card-category it-card-link link-secondary"
+                    href="#"
                   >
-                    Category
+                    <span
+                      class="visually-hidden"
+                    >
+                      Categoria correlata: 
+                    </span>
+                    Categoria
                   </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
                 </div>
-                <h5
-                  class="big-heading card-title"
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <a
-                  class="read-more"
-                >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
-                </a>
-              </div>
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -6728,69 +4985,67 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card card-img no-after border"
+              class="it-card it-card-image border it-card-height-full rounded"
             >
+              <h3
+                class="it-card-title"
+              >
+                <a
+                  href="#"
+                >
+                  Titolo del contenuto
+                </a>
+              </h3>
               <div
-                class="img-responsive-wrapper"
+                class="it-card-image-wrapper"
               >
                 <div
-                  class="img-responsive"
+                  class="ratio ratio-16x9"
                 >
-                  <div
-                    class="img-wrapper"
+                  <figure
+                    class="figure img-full"
                   >
                     <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
                     />
-                  </div>
+                  </figure>
                 </div>
               </div>
               <div
-                class="card-body"
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve.
+                </p>
+              </div>
+              <footer
+                class="it-card-related it-card-footer"
               >
                 <div
-                  class="category-top"
+                  class="it-card-taxonomy"
                 >
                   <a
-                    class="category"
+                    class="it-card-category it-card-link link-secondary"
+                    href="#"
                   >
-                    Category
+                    <span
+                      class="visually-hidden"
+                    >
+                      Categoria correlata: 
+                    </span>
+                    Categoria
                   </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
                 </div>
-                <h5
-                  class="big-heading card-title"
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <a
-                  class="read-more"
-                >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
-                </a>
-              </div>
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -6806,69 +5061,67 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card card-img no-after border"
+              class="it-card it-card-image border it-card-height-full rounded"
             >
+              <h3
+                class="it-card-title"
+              >
+                <a
+                  href="#"
+                >
+                  Titolo del contenuto
+                </a>
+              </h3>
               <div
-                class="img-responsive-wrapper"
+                class="it-card-image-wrapper"
               >
                 <div
-                  class="img-responsive"
+                  class="ratio ratio-16x9"
                 >
-                  <div
-                    class="img-wrapper"
+                  <figure
+                    class="figure img-full"
                   >
                     <img
-                      alt="Alternative Text"
-                      src="https://placehold.co/480x360/ebebeb/808080/?text=Immagine1"
-                      title="Image Title"
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
                     />
-                  </div>
+                  </figure>
                 </div>
               </div>
               <div
-                class="card-body"
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve.
+                </p>
+              </div>
+              <footer
+                class="it-card-related it-card-footer"
               >
                 <div
-                  class="category-top"
+                  class="it-card-taxonomy"
                 >
                   <a
-                    class="category"
+                    class="it-card-category it-card-link link-secondary"
+                    href="#"
                   >
-                    Category
+                    <span
+                      class="visually-hidden"
+                    >
+                      Categoria correlata: 
+                    </span>
+                    Categoria
                   </a>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
                 </div>
-                <h5
-                  class="big-heading card-title"
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h5>
-                <a
-                  class="read-more"
-                >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
-                </a>
-              </div>
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </li>
@@ -7617,50 +5870,110 @@ exports[`Stories Snapshots Documentazione/Componenti/Dimmer DimmerConAzioni 1`] 
 <div>
   <div>
     <div
-      class="col dimmable"
+      class="row dimmable"
     >
       <div
-        class="col-12 col-lg-4"
+        class="col-12 col-md-6 col-lg-6 my-3 my-md-4"
       >
         <article
-          class="it-card border"
+          class="it-card it-card-image border rounded"
         >
-          <div
-            class="card-body"
+          <h3
+            class="it-card-title "
           >
-            <h5
-              class="card-title"
+            <a
+              href="#"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </h5>
+              Titolo del contenuto
+            </a>
+          </h3>
+          <div
+            class="it-card-image-wrapper"
+          >
+            <div
+              class="ratio ratio-16x9"
+            >
+              <figure
+                class="figure img-full"
+              >
+                <img
+                  alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                  src="https://placeholderimage.eu/api/city/800/600"
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            class="it-card-body"
+          >
             <p
-              class="card-text"
+              class="it-card-text"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
             </p>
           </div>
+          <footer
+            class="it-card-related it-card-footer"
+          >
+            <time
+              class="it-card-date"
+              datetime="2025-04-22"
+            >
+              22 aprile 2025
+            </time>
+          </footer>
         </article>
       </div>
       <div
-        class="col-12 col-lg-4 d-none d-lg-block"
+        class="col-12 col-md-6 col-lg-6 my-3 my-md-4"
       >
         <article
-          class="it-card border"
+          class="it-card it-card-image border rounded"
         >
-          <div
-            class="card-body"
+          <h3
+            class="it-card-title "
           >
-            <h5
-              class="card-title"
+            <a
+              href="#"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </h5>
+              Titolo del contenuto
+            </a>
+          </h3>
+          <div
+            class="it-card-image-wrapper"
+          >
+            <div
+              class="ratio ratio-16x9"
+            >
+              <figure
+                class="figure img-full"
+              >
+                <img
+                  alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                  src="https://placeholderimage.eu/api/city/800/600"
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            class="it-card-body"
+          >
             <p
-              class="card-text"
+              class="it-card-text"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
             </p>
           </div>
+          <footer
+            class="it-card-related it-card-footer"
+          >
+            <time
+              class="it-card-date"
+              datetime="2025-04-22"
+            >
+              22 aprile 2025
+            </time>
+          </footer>
         </article>
       </div>
     </div>
@@ -7713,50 +6026,110 @@ exports[`Stories Snapshots Documentazione/Componenti/Dimmer DimmerConAzioniColor
 <div>
   <div>
     <div
-      class="col dimmable"
+      class="row dimmable"
     >
       <div
-        class="col-12 col-lg-4"
+        class="col-12 col-md-6 col-lg-6 my-3 my-md-4"
       >
         <article
-          class="it-card border"
+          class="it-card it-card-image border rounded"
         >
-          <div
-            class="card-body"
+          <h3
+            class="it-card-title "
           >
-            <h5
-              class="card-title"
+            <a
+              href="#"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </h5>
+              Titolo del contenuto
+            </a>
+          </h3>
+          <div
+            class="it-card-image-wrapper"
+          >
+            <div
+              class="ratio ratio-16x9"
+            >
+              <figure
+                class="figure img-full"
+              >
+                <img
+                  alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                  src="https://placeholderimage.eu/api/city/800/600"
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            class="it-card-body"
+          >
             <p
-              class="card-text"
+              class="it-card-text"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
             </p>
           </div>
+          <footer
+            class="it-card-related it-card-footer"
+          >
+            <time
+              class="it-card-date"
+              datetime="2025-04-22"
+            >
+              22 aprile 2025
+            </time>
+          </footer>
         </article>
       </div>
       <div
-        class="col-12 col-lg-4 d-none d-lg-block"
+        class="col-12 col-md-6 col-lg-6 my-3 my-md-4"
       >
         <article
-          class="it-card border"
+          class="it-card it-card-image border rounded"
         >
-          <div
-            class="card-body"
+          <h3
+            class="it-card-title "
           >
-            <h5
-              class="card-title"
+            <a
+              href="#"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </h5>
+              Titolo del contenuto
+            </a>
+          </h3>
+          <div
+            class="it-card-image-wrapper"
+          >
+            <div
+              class="ratio ratio-16x9"
+            >
+              <figure
+                class="figure img-full"
+              >
+                <img
+                  alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                  src="https://placeholderimage.eu/api/city/800/600"
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            class="it-card-body"
+          >
             <p
-              class="card-text"
+              class="it-card-text"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
             </p>
           </div>
+          <footer
+            class="it-card-related it-card-footer"
+          >
+            <time
+              class="it-card-date"
+              datetime="2025-04-22"
+            >
+              22 aprile 2025
+            </time>
+          </footer>
         </article>
       </div>
     </div>
@@ -7810,66 +6183,156 @@ exports[`Stories Snapshots Documentazione/Componenti/Dimmer Esempi 1`] = `
         class="col-12 col-lg-4"
       >
         <article
-          class="it-card border"
+          class="it-card it-card-image border rounded"
         >
-          <div
-            class="card-body"
+          <h3
+            class="it-card-title "
           >
-            <h5
-              class="card-title"
+            <a
+              href="#"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </h5>
+              Titolo del contenuto
+            </a>
+          </h3>
+          <div
+            class="it-card-image-wrapper"
+          >
+            <div
+              class="ratio ratio-16x9"
+            >
+              <figure
+                class="figure img-full"
+              >
+                <img
+                  alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                  src="https://placeholderimage.eu/api/city/800/600"
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            class="it-card-body"
+          >
             <p
-              class="card-text"
+              class="it-card-text"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
             </p>
           </div>
+          <footer
+            class="it-card-related it-card-footer"
+          >
+            <time
+              class="it-card-date"
+              datetime="2025-04-22"
+            >
+              22 aprile 2025
+            </time>
+          </footer>
         </article>
       </div>
       <div
         class="col-12 col-lg-4 d-none d-lg-block"
       >
         <article
-          class="it-card border"
+          class="it-card it-card-image border rounded"
         >
-          <div
-            class="card-body"
+          <h3
+            class="it-card-title "
           >
-            <h5
-              class="card-title"
+            <a
+              href="#"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </h5>
+              Titolo del contenuto
+            </a>
+          </h3>
+          <div
+            class="it-card-image-wrapper"
+          >
+            <div
+              class="ratio ratio-16x9"
+            >
+              <figure
+                class="figure img-full"
+              >
+                <img
+                  alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                  src="https://placeholderimage.eu/api/city/800/600"
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            class="it-card-body"
+          >
             <p
-              class="card-text"
+              class="it-card-text"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
             </p>
           </div>
+          <footer
+            class="it-card-related it-card-footer"
+          >
+            <time
+              class="it-card-date"
+              datetime="2025-04-22"
+            >
+              22 aprile 2025
+            </time>
+          </footer>
         </article>
       </div>
       <div
         class="col-12 col-lg-4 d-none d-lg-block"
       >
         <article
-          class="it-card border"
+          class="it-card it-card-image border rounded"
         >
-          <div
-            class="card-body"
+          <h3
+            class="it-card-title "
           >
-            <h5
-              class="card-title"
+            <a
+              href="#"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </h5>
+              Titolo del contenuto
+            </a>
+          </h3>
+          <div
+            class="it-card-image-wrapper"
+          >
+            <div
+              class="ratio ratio-16x9"
+            >
+              <figure
+                class="figure img-full"
+              >
+                <img
+                  alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                  src="https://placeholderimage.eu/api/city/800/600"
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            class="it-card-body"
+          >
             <p
-              class="card-text"
+              class="it-card-text"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
             </p>
           </div>
+          <footer
+            class="it-card-related it-card-footer"
+          >
+            <time
+              class="it-card-date"
+              datetime="2025-04-22"
+            >
+              22 aprile 2025
+            </time>
+          </footer>
         </article>
       </div>
     </div>
@@ -9152,46 +7615,36 @@ exports[`Stories Snapshots Documentazione/Componenti/Hero HeroConSfondoMargineNe
         class="col"
       >
         <article
-          class="it-card card-bg border"
+          class="it-card px-5 py-4 border rounded"
         >
-          <div
-            class="card-body"
+          <h3
+            class="it-card-title h4"
           >
-            <h5
-              class="big-heading card-title"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-            </h5>
+            Titolo del contenuto
+          </h3>
+          <div
+            class="it-card-body"
+          >
             <p
-              class="card-text"
+              class="it-card-text"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <span
-              class="card-signature"
-            >
-              di Federico De Paolis
-            </span>
+          </div>
+          <div
+            aria-label="Link correlati:"
+            class="it-card-footer border-0"
+          >
             <a
-              class="read-more"
+              class="it-card-link"
+              href="#"
             >
+              Scopri di più 
               <span
-                class="text"
+                class="visually-hidden"
               >
-                Leggi di più
+                su Titolo del contenuto
               </span>
-              <svg
-                aria-hidden="true"
-                class="icon"
-                enable-background="new 0 0 24 24"
-                viewBox="0 0 24 24"
-                xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                />
-              </svg>
             </a>
           </div>
         </article>
@@ -13461,35 +11914,104 @@ exports[`Stories Snapshots Documentazione/Componenti/Section SectionConCard 1`] 
           class="col-sm-6"
         >
           <article
-            class="it-card shadow h-100 border"
+            class="it-card it-card-image border rounded"
           >
+            <h3
+              class="it-card-title "
+            >
+              <a
+                href="#"
+              >
+                Titolo del contenuto
+              </a>
+            </h3>
             <div
-              class="card-body"
+              class="it-card-image-wrapper"
+            >
+              <div
+                class="ratio ratio-16x9"
+              >
+                <figure
+                  class="figure img-full"
+                >
+                  <img
+                    alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                    src="https://placeholderimage.eu/api/city/800/600"
+                  />
+                </figure>
+              </div>
+            </div>
+            <div
+              class="it-card-body"
             >
               <p
-                class="card-text"
+                class="it-card-text"
               >
-                Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus. Eget egestas purus viverra accumsan. Diam maecenas ultricies mi eget mauris pharetra et.
-                 
+                Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
               </p>
             </div>
+            <footer
+              class="it-card-related it-card-footer"
+            >
+              <time
+                class="it-card-date"
+                datetime="2025-04-22"
+              >
+                22 aprile 2025
+              </time>
+            </footer>
           </article>
         </div>
         <div
           class="col-sm-6"
         >
           <article
-            class="it-card shadow h-100 border"
+            class="it-card it-card-image border rounded"
           >
+            <h3
+              class="it-card-title "
+            >
+              <a
+                href="#"
+              >
+                Titolo del contenuto
+              </a>
+            </h3>
             <div
-              class="card-body"
+              class="it-card-image-wrapper"
+            >
+              <div
+                class="ratio ratio-16x9"
+              >
+                <figure
+                  class="figure img-full"
+                >
+                  <img
+                    alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                    src="https://placeholderimage.eu/api/city/800/600"
+                  />
+                </figure>
+              </div>
+            </div>
+            <div
+              class="it-card-body"
             >
               <p
-                class="card-text"
+                class="it-card-text"
               >
-                Etiam dignissim diam quis enim. Eu nisl nunc mi ipsum faucibus. Euismod lacinia at quis risus sed vulputate. Scelerisque purus semper eget duis at tellus at urna condimentum. Mattis enim ut tellus elementum sagittis.
+                Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
               </p>
             </div>
+            <footer
+              class="it-card-related it-card-footer"
+            >
+              <time
+                class="it-card-date"
+                datetime="2025-04-22"
+              >
+                22 aprile 2025
+              </time>
+            </footer>
           </article>
         </div>
       </div>
@@ -21088,62 +19610,52 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
               </div>
             </h3>
             <article
-              class="it-card border"
+              class="it-card it-card-image border rounded"
             >
-              <div
-                class="card-body"
+              <h4
+                class="it-card-title "
               >
-                <h4
-                  class="h5 big-heading card-title"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h4>
-                <div
-                  class="category-top"
-                >
-                  <span
-                    class="visually-hidden"
-                  >
-                    Categoria: 
-                  </span>
-                  <a
-                    class="category"
-                  >
-                    Category
-                  </a>
-                </div>
-                <p
-                  class="card-text"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <span
-                  class="card-signature"
-                >
-                  di Federico De Paolis
-                </span>
                 <a
-                  class="read-more"
+                  href="#"
                 >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
+                  Titolo del contenuto
                 </a>
+              </h4>
+              <div
+                class="it-card-image-wrapper"
+              >
+                <div
+                  class="ratio ratio-21x9"
+                >
+                  <figure
+                    class="figure img-full"
+                  >
+                    <img
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
+                    />
+                  </figure>
+                </div>
               </div>
+              <div
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                </p>
+              </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </div>
@@ -21185,22 +19697,52 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
               </div>
             </h3>
             <article
-              class="it-card border"
+              class="it-card it-card-image border rounded"
             >
-              <div
-                class="card-body"
+              <h4
+                class="it-card-title "
               >
-                <h4
-                  class="h5 card-title"
+                <a
+                  href="#"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                </h4>
+                  Titolo del contenuto
+                </a>
+              </h4>
+              <div
+                class="it-card-image-wrapper"
+              >
+                <div
+                  class="ratio ratio-21x9"
+                >
+                  <figure
+                    class="figure img-full"
+                  >
+                    <img
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="it-card-body"
+              >
                 <p
-                  class="card-text"
+                  class="it-card-text"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
                 </p>
               </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </div>
@@ -21242,72 +19784,52 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
               </div>
             </h3>
             <article
-              class="it-card border"
+              class="it-card it-card-image border rounded"
             >
-              <div
-                class="card-body"
+              <h4
+                class="it-card-title "
               >
-                <h4
-                  class="h5 big-heading card-title"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h4>
-                <div
-                  class="category-top"
-                >
-                  <span
-                    class="visually-hidden"
-                  >
-                    Categoria: 
-                  </span>
-                  <a
-                    class="category"
-                  >
-                    Category
-                  </a>
-                  <span
-                    class="visually-hidden"
-                  >
-                    Data evento: 
-                  </span>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
-                </div>
-                <p
-                  class="card-text"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <span
-                  class="card-signature"
-                >
-                  di Federico De Paolis
-                </span>
                 <a
-                  class="read-more"
+                  href="#"
                 >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
+                  Titolo del contenuto
                 </a>
+              </h4>
+              <div
+                class="it-card-image-wrapper"
+              >
+                <div
+                  class="ratio ratio-21x9"
+                >
+                  <figure
+                    class="figure img-full"
+                  >
+                    <img
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
+                    />
+                  </figure>
+                </div>
               </div>
+              <div
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                </p>
+              </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </div>
@@ -21354,22 +19876,52 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
               </div>
             </h3>
             <article
-              class="it-card border"
+              class="it-card it-card-image border rounded"
             >
-              <div
-                class="card-body"
+              <h4
+                class="it-card-title "
               >
-                <h4
-                  class="h5 card-title"
+                <a
+                  href="#"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                </h4>
+                  Titolo del contenuto
+                </a>
+              </h4>
+              <div
+                class="it-card-image-wrapper"
+              >
+                <div
+                  class="ratio ratio-21x9"
+                >
+                  <figure
+                    class="figure img-full"
+                  >
+                    <img
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="it-card-body"
+              >
                 <p
-                  class="card-text"
+                  class="it-card-text"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
                 </p>
               </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </div>
@@ -21411,72 +19963,52 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
               </div>
             </h3>
             <article
-              class="it-card border"
+              class="it-card it-card-image border rounded"
             >
-              <div
-                class="card-body"
+              <h4
+                class="it-card-title "
               >
-                <h4
-                  class="h5 big-heading card-title"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h4>
-                <div
-                  class="category-top"
-                >
-                  <span
-                    class="visually-hidden"
-                  >
-                    Categoria: 
-                  </span>
-                  <a
-                    class="category"
-                  >
-                    Category
-                  </a>
-                  <span
-                    class="visually-hidden"
-                  >
-                    Data evento: 
-                  </span>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
-                </div>
-                <p
-                  class="card-text"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <span
-                  class="card-signature"
-                >
-                  di Federico De Paolis
-                </span>
                 <a
-                  class="read-more"
+                  href="#"
                 >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
+                  Titolo del contenuto
                 </a>
+              </h4>
+              <div
+                class="it-card-image-wrapper"
+              >
+                <div
+                  class="ratio ratio-21x9"
+                >
+                  <figure
+                    class="figure img-full"
+                  >
+                    <img
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
+                    />
+                  </figure>
+                </div>
               </div>
+              <div
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                </p>
+              </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </div>
@@ -21518,22 +20050,52 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
               </div>
             </h3>
             <article
-              class="it-card border"
+              class="it-card it-card-image border rounded"
             >
-              <div
-                class="card-body"
+              <h4
+                class="it-card-title "
               >
-                <h4
-                  class="h5 card-title"
+                <a
+                  href="#"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                </h4>
+                  Titolo del contenuto
+                </a>
+              </h4>
+              <div
+                class="it-card-image-wrapper"
+              >
+                <div
+                  class="ratio ratio-21x9"
+                >
+                  <figure
+                    class="figure img-full"
+                  >
+                    <img
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="it-card-body"
+              >
                 <p
-                  class="card-text"
+                  class="it-card-text"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
                 </p>
               </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </div>
@@ -21575,72 +20137,52 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
               </div>
             </h3>
             <article
-              class="it-card border"
+              class="it-card it-card-image border rounded"
             >
-              <div
-                class="card-body"
+              <h4
+                class="it-card-title "
               >
-                <h4
-                  class="h5 big-heading card-title"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </h4>
-                <div
-                  class="category-top"
-                >
-                  <span
-                    class="visually-hidden"
-                  >
-                    Categoria: 
-                  </span>
-                  <a
-                    class="category"
-                  >
-                    Category
-                  </a>
-                  <span
-                    class="visually-hidden"
-                  >
-                    Data evento: 
-                  </span>
-                  <span
-                    class="data"
-                  >
-                    10/12/2018
-                  </span>
-                </div>
-                <p
-                  class="card-text"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <span
-                  class="card-signature"
-                >
-                  di Federico De Paolis
-                </span>
                 <a
-                  class="read-more"
+                  href="#"
                 >
-                  <span
-                    class="text"
-                  >
-                    Leggi di più
-                  </span>
-                  <svg
-                    aria-hidden="true"
-                    class="icon"
-                    enable-background="new 0 0 24 24"
-                    viewBox="0 0 24 24"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m13.9 5.4-.7.7 5.3 5.4H3v1h15.5l-5.3 5.4.7.7 6.6-6.6-6.6-6.6z"
-                    />
-                  </svg>
+                  Titolo del contenuto
                 </a>
+              </h4>
+              <div
+                class="it-card-image-wrapper"
+              >
+                <div
+                  class="ratio ratio-21x9"
+                >
+                  <figure
+                    class="figure img-full"
+                  >
+                    <img
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
+                    />
+                  </figure>
+                </div>
               </div>
+              <div
+                class="it-card-body"
+              >
+                <p
+                  class="it-card-text"
+                >
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
+                </p>
+              </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </div>
@@ -21682,22 +20224,52 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
               </div>
             </h3>
             <article
-              class="it-card border"
+              class="it-card it-card-image border rounded"
             >
-              <div
-                class="card-body"
+              <h4
+                class="it-card-title "
               >
-                <h4
-                  class="h5 card-title"
+                <a
+                  href="#"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-                </h4>
+                  Titolo del contenuto
+                </a>
+              </h4>
+              <div
+                class="it-card-image-wrapper"
+              >
+                <div
+                  class="ratio ratio-21x9"
+                >
+                  <figure
+                    class="figure img-full"
+                  >
+                    <img
+                      alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                      src="https://placeholderimage.eu/api/city/800/600"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div
+                class="it-card-body"
+              >
                 <p
-                  class="card-text"
+                  class="it-card-text"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.
                 </p>
               </div>
+              <footer
+                class="it-card-related it-card-footer"
+              >
+                <time
+                  class="it-card-date"
+                  datetime="2025-04-22"
+                >
+                  22 aprile 2025
+                </time>
+              </footer>
             </article>
           </div>
         </div>
