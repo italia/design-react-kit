@@ -15,6 +15,12 @@ export interface CardProps extends HTMLAttributes<HTMLElement> {
   teaser?: boolean;
   /** La card contiene un'immagine */
   image?: boolean;
+  /** La card è inline */
+  inline?: boolean;
+  /** La card è arrotondata */
+  rounded?: boolean;
+  /** La card è full height */
+  fullHeight?: boolean;
   /** La card ha un bordo */
   border?: boolean;
   testId?: string;
@@ -25,6 +31,9 @@ export const Card: FC<CardProps> = ({
   teaser,
   image,
   border=true,
+  inline,
+  rounded,
+  fullHeight,
   testId,
   ...attributes
 }) => {
@@ -32,6 +41,9 @@ export const Card: FC<CardProps> = ({
     'card-teaser': teaser,
     'it-card-image': image,
     'border': border,
+    'it-card-inline': inline,
+    'it-card-height-full': fullHeight,
+    'rounded': rounded,
     'card-teaser-wrapper': teaser
   });
 
