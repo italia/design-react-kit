@@ -15,14 +15,26 @@ export interface CardProps extends HTMLAttributes<HTMLElement> {
   teaser?: boolean;
   /** La card contiene un'immagine */
   image?: boolean;
+  /** La card è di tipo banner */
+  banner?: boolean;
+  /** La card è di tipo profile */
+  profile?: boolean;
   /** La card è inline */
   inline?: boolean;
+  /** La card è inline-reverse */
+  inlineReverse?: boolean;
+  /** La card è inline-mini */
+  inlineMini?: boolean;
   /** La card è arrotondata */
   rounded?: boolean;
   /** La card è full height */
   fullHeight?: boolean;
   /** La card ha un bordo */
   border?: boolean;
+  /** La card ha un bordo di estremità */
+  borderTop?: boolean;
+  /** La card ha un bordo */
+  shadow?: 'sm' | 'lg' | 'normal' | null;
   testId?: string;
 }
 
@@ -31,9 +43,15 @@ export const Card: FC<CardProps> = ({
   teaser,
   image,
   border=true,
+  borderTop,
   inline,
+  inlineReverse,
+  inlineMini,
   rounded,
   fullHeight,
+  banner,
+  profile,
+  shadow=null,
   testId,
   ...attributes
 }) => {
@@ -42,9 +60,19 @@ export const Card: FC<CardProps> = ({
     'it-card-image': image,
     'border': border,
     'it-card-inline': inline,
+    'it-card-inline-reverse': inlineReverse,
+    'it-card-inline-mini': inlineMini,
     'it-card-height-full': fullHeight,
     'rounded': rounded,
-    'card-teaser-wrapper': teaser
+    'card-teaser-wrapper': teaser,
+    'shadow': shadow === 'normal',
+    'shadow-lg': shadow === 'lg',
+    'shadow-sm': shadow === 'sm',
+    'it-card-banner': banner,
+    'it-card-profile': profile,
+    'it-border-top': borderTop,
+    'it-border-top-secondary': borderTop,
+
   });
 
   const T = tag;
