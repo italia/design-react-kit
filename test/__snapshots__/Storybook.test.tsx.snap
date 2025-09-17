@@ -3174,7 +3174,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Cards EditorialStandard 1`]
       class="col-12 col-md-6"
     >
       <article
-        class="it-card it-card-image border"
+        class="it-card it-card-image border it-card-height-full rounded shadow-sm"
       >
         <h3
           class="it-card-title "
@@ -3241,7 +3241,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Cards EditorialStandard 1`]
       class="col-12 col-md-6"
     >
       <article
-        class="it-card it-card-image border"
+        class="it-card it-card-image border it-card-height-full rounded shadow-sm"
       >
         <h3
           class="it-card-title "
@@ -3340,7 +3340,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Cards EditorialStandard 1`]
       class="col-12 col-md-6"
     >
       <article
-        class="it-card it-card-image border"
+        class="it-card it-card-image border rounded shadow-sm"
       >
         <h3
           class="it-card-title "
@@ -3382,10 +3382,10 @@ exports[`Stories Snapshots Documentazione/Componenti/Cards SimpleCard 1`] = `
     class="row"
   >
     <div
-      class="col-12 col-lg-4"
+      class="col-12 col-lg-12"
     >
       <article
-        class="it-card it-card-image border"
+        class="it-card it-card-image border rounded shadow-sm"
       >
         <h3
           class="it-card-title "
@@ -3510,7 +3510,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card border"
+              class="it-card border rounded shadow-sm"
             >
               <h3
                 class="it-card-title "
@@ -3555,7 +3555,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card border"
+              class="it-card border rounded shadow-sm"
             >
               <h3
                 class="it-card-title "
@@ -3600,7 +3600,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card border"
+              class="it-card border rounded shadow-sm"
             >
               <h3
                 class="it-card-title "
@@ -3645,7 +3645,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card border"
+              class="it-card border rounded shadow-sm"
             >
               <h3
                 class="it-card-title "
@@ -3690,7 +3690,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card border"
+              class="it-card border rounded shadow-sm"
             >
               <h3
                 class="it-card-title "
@@ -3735,7 +3735,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card border"
+              class="it-card border rounded shadow-sm"
             >
               <h3
                 class="it-card-title "
@@ -3780,7 +3780,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card border"
+              class="it-card border rounded shadow-sm"
             >
               <h3
                 class="it-card-title "
@@ -3825,7 +3825,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card border"
+              class="it-card border rounded shadow-sm"
             >
               <h3
                 class="it-card-title "
@@ -3870,7 +3870,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card border"
+              class="it-card border rounded shadow-sm"
             >
               <h3
                 class="it-card-title "
@@ -3915,7 +3915,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel Base 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card border"
+              class="it-card border rounded shadow-sm"
             >
               <h3
                 class="it-card-title "
@@ -4044,7 +4044,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel EvidenceImage 1`] 
               class="it-single-slide-wrapper p-2e"
             >
               <article
-                class="it-card it-card-image border it-card-inline rounded"
+                class="it-card it-card-image border it-card-inline rounded shadow-sm"
               >
                 <div
                   class="it-card-inline-content"
@@ -4133,7 +4133,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel EvidenceImage 1`] 
               class="it-single-slide-wrapper p-2e"
             >
               <article
-                class="it-card it-card-image border it-card-inline rounded"
+                class="it-card it-card-image border it-card-inline rounded shadow-sm"
               >
                 <div
                   class="it-card-inline-content"
@@ -4222,7 +4222,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel EvidenceImage 1`] 
               class="it-single-slide-wrapper p-2e"
             >
               <article
-                class="it-card it-card-image border it-card-inline rounded"
+                class="it-card it-card-image border it-card-inline rounded shadow-sm"
               >
                 <div
                   class="it-card-inline-content"
@@ -4377,7 +4377,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card it-card-image border it-card-height-full rounded"
+              class="it-card it-card-image border it-card-height-full rounded shadow-sm"
             >
               <h3
                 class="it-card-title"
@@ -4453,7 +4453,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card it-card-image border it-card-height-full rounded"
+              class="it-card it-card-image border it-card-height-full rounded shadow-sm"
             >
               <h3
                 class="it-card-title"
@@ -4529,7 +4529,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card it-card-image border it-card-height-full rounded"
+              class="it-card it-card-image border it-card-height-full rounded shadow-sm"
             >
               <h3
                 class="it-card-title"
@@ -4605,7 +4605,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card it-card-image border it-card-height-full rounded"
+              class="it-card it-card-image border it-card-height-full rounded shadow-sm"
             >
               <h3
                 class="it-card-title"
@@ -4681,7 +4681,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card it-card-image border it-card-height-full rounded"
+              class="it-card it-card-image border it-card-height-full rounded shadow-sm"
             >
               <h3
                 class="it-card-title"
@@ -4757,7 +4757,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card it-card-image border it-card-height-full rounded"
+              class="it-card it-card-image border it-card-height-full rounded shadow-sm"
             >
               <h3
                 class="it-card-title"
@@ -4833,7 +4833,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card it-card-image border it-card-height-full rounded"
+              class="it-card it-card-image border it-card-height-full rounded shadow-sm"
             >
               <h3
                 class="it-card-title"
@@ -4909,7 +4909,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card it-card-image border it-card-height-full rounded"
+              class="it-card it-card-image border it-card-height-full rounded shadow-sm"
             >
               <h3
                 class="it-card-title"
@@ -4985,7 +4985,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card it-card-image border it-card-height-full rounded"
+              class="it-card it-card-image border it-card-height-full rounded shadow-sm"
             >
               <h3
                 class="it-card-title"
@@ -5061,7 +5061,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Carousel HighImage 1`] = `
             class="it-single-slide-wrapper"
           >
             <article
-              class="it-card it-card-image border it-card-height-full rounded"
+              class="it-card it-card-image border it-card-height-full rounded shadow-sm"
             >
               <h3
                 class="it-card-title"
@@ -19610,7 +19610,7 @@ exports[`Stories Snapshots Documentazione/Componenti/Timeline Esempi 1`] = `
               </div>
             </h3>
             <article
-              class="it-card it-card-image border rounded"
+              class="it-card it-card-image border rounded shadow-sm"
             >
               <h4
                 class="it-card-title "
