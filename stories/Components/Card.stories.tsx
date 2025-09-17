@@ -2,18 +2,8 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import React from 'react';
 
 import {
-  Button,
   Card,
-  CardBody,
-  CardCategory,
-  CardReadMore,
-  CardSignature,
-  CardTag,
-  CardTagsHeader,
-  CardText,
-  CardTitle,
   Col,
-  Icon,
   Row
 } from '../../src';
 
@@ -29,18 +19,25 @@ type Story = StoryObj<typeof Card>;
 export const SimpleCard: Story = {
   render: () => (
     <Row>
-      <Col xs='12' lg='4'>
+      <Col xs='12' lg='12'>
         {/* start card */}
-        <Card>
-          <CardBody>
-            <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </CardTitle>
-            <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </CardText>
-          </CardBody>
+        <Card image shadow={'sm'} rounded>
+          <h3 className="it-card-title ">
+            <a href="#">Titolo del contenuto</a>
+          </h3>
+          <div className="it-card-image-wrapper">
+            <div className="ratio ratio-16x9">
+              <figure className="figure img-full">
+                <img src="https://placeholderimage.eu/api/city/800/600" alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."></img>
+              </figure>
+            </div>
+          </div>
+          <div className="it-card-body">
+            <p className="it-card-text">Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.</p>
+          </div>
+          <footer className="it-card-related it-card-footer">
+            <time className="it-card-date" dateTime="2025-04-22">22 aprile 2025</time>
+          </footer>
         </Card>
         {/* end card */}
       </Col>
@@ -48,412 +45,81 @@ export const SimpleCard: Story = {
   )
 };
 
-export const SimpleCardMultipleColumns: Story = {
+export const EditorialStandard: Story = {
   render: () => (
     <Row>
-      {[1, 2, 3].map((i) => (
-        <Col xs='12' lg='4' key={i}>
-          <Card>
-            <CardBody>
-              <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-              </CardTitle>
-              <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-              </CardText>
-            </CardBody>
-          </Card>
-        </Col>
-      ))}
-    </Row>
-  )
-};
-
-export const SimpleArticle: Story = {
-  render: () => (
-    <Row>
-      <Col xs='12' lg='6'>
+      <Col xs='12' md='6'>
         {/* start card */}
-        <Card>
-          <CardBody>
-            <CardCategory date='10/12/2018'>Category</CardCategory>
-            <CardTitle tag='h5' className='big-heading'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-            </CardTitle>
-            <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </CardText>
-            <CardSignature>di Federico De Paolis</CardSignature>
-            <CardReadMore text='Leggi di più' iconName='it-arrow-right' />
-          </CardBody>
-        </Card>
-        {/* end card */}
-      </Col>
-    </Row>
-  )
-};
-
-export const CardIcon: Story = {
-  render: () => (
-    <Row>
-      <Col xs='12' lg='6'>
-        {/* Start card */}
-        <Card>
-          <CardBody>
-            <CardCategory iconName='it-file'>
-              <span className='text'>
-                Category
-                <br />
-                Name
-              </span>
-            </CardCategory>
-            <a href='#'>
-              <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-              </CardTitle>
-            </a>
-            <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </CardText>
-          </CardBody>
-        </Card>
-        {/* end card */}
-      </Col>
-    </Row>
-  )
-};
-
-export const CardIconAdvanced: Story = {
-  render: () => (
-    <Row>
-      <Col xs='12' lg='6'>
-        {/* Start card */}
-        <Card>
-          <CardBody>
-            <CardCategory iconName='it-file'>
-              <span className='text'>(2) Files</span>
-            </CardCategory>
-            <a href='#'>
-              <CardTitle tag='h5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-              </CardTitle>
-            </a>
-            <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </CardText>
-            <a className='simple-link' href='#'>
-              Link
-            </a>
-          </CardBody>
-        </Card>
-
-        {/* end card */}
-      </Col>
-    </Row>
-  )
-};
-
-export const CardWithShading: Story = {
-  render: () => (
-    <Row>
-      <Col xs='12' lg='6'>
-        {/* Start card */}
-        <Card spacing className='card-bg'>
-          <CardBody>
-            <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </CardTitle>
-            <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </CardText>
-            <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
-          </CardBody>
-        </Card>
-        {/* end card */}
-      </Col>
-    </Row>
-  )
-};
-
-export const BigCard: Story = {
-  render: () => (
-    <Row>
-      <Col xs='12' lg='6'>
-        {/* Start card */}
-        <Card spacing className='card-bg card-big'>
-          <CardBody>
-            <div className='top-icon'>
-              <Icon icon='it-card' />
-            </div>
-            <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </CardTitle>
-            <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </CardText>
-            <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
-          </CardBody>
-        </Card>
-        {/* end card */}
-      </Col>
-    </Row>
-  )
-};
-
-export const BigCardExampleTwo: Story = {
-  render: () => (
-    <Row>
-      <Col xs='12' lg='6'>
-        {/* Start card */}
-        <Card spacing className='card-bg card-big border-bottom-card'>
-          <div className='flag-icon'></div>
-          <div className='etichetta'>
-            <Icon icon='it-settings' />
-            <span>Sviluppo</span>
-          </div>
-          <CardBody>
-            <div className='top-icon'>
-              <Icon icon='it-card' />
-            </div>
-            <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </CardTitle>
-            <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </CardText>
-            <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
-          </CardBody>
-        </Card>
-        {/* end card */}
-      </Col>
-    </Row>
-  )
-};
-
-export const BigCardWithTag: Story = {
-  render: () => (
-    <Row>
-      <Col xs='12' lg='6'>
-        {/* Start card */}
-        <Card spacing className='card-bg card-big no-after'>
-          <CardBody>
-            <CardTagsHeader date='10/10/2018'>
-              <CardTag href='#'>Tag</CardTag>
-            </CardTagsHeader>
-            <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </CardTitle>
-            <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </CardText>
-            <div className='it-card-footer'>
-              <CardSignature>di Federico De Paolis</CardSignature>
-              <Button outline color='primary' size='sm'>
-                Action
-              </Button>
-            </div>
-          </CardBody>
-        </Card>
-        {/* end card */}
-      </Col>
-    </Row>
-  )
-};
-
-export const CardsWithImages: Story = {
-  render: () => (
-    <Row>
-      <Col xs='12' lg='6'>
-        {/* Start card */}
-        <Card className='card-img no-after'>
-          <div className='img-responsive-wrapper'>
-            <div className='img-responsive'>
-              <figure className='img-wrapper'>
-                <img
-                  src='https://placehold.co/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
-                  title='img title'
-                  alt='imagealt'
-                />
+        <Card image fullHeight rounded shadow={'sm'}>
+          <h3 className="it-card-title ">
+            <a href="#">Titolo del contenuto</a>
+          </h3>
+          <div className="it-card-image-wrapper">
+            <div className="ratio ratio-16x9">
+              <figure className="figure img-full">
+                <img src="https://placeholderimage.eu/api/city/800/600" alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."></img>
               </figure>
             </div>
           </div>
-          <CardBody>
-            <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </CardTitle>
-            <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
-          </CardBody>
+          <div className="it-card-body">
+            <p className="it-card-text">Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.</p>
+          </div>
+          <footer className="it-card-related it-card-footer">
+            <div className="it-card-taxonomy">
+              <a href="#" className="it-card-category it-card-link link-secondary"><span className="visually-hidden">Categoria correlata: </span>Categoria</a>
+            </div>
+            <time className="it-card-date" dateTime="2025-04-22">22 aprile 2025</time>
+          </footer>
         </Card>
         {/* end card */}
       </Col>
-      <Col xs='12' lg='6'>
-        {/* Start card */}
-        <Card className='card-img no-after'>
-          <div className='img-responsive-wrapper'>
-            <div className='img-responsive img-responsive-panoramic'>
-              <figure className='img-wrapper'>
-                <img
-                  src='https://placehold.co/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
-                  title='img title'
-                  alt='imagealt'
-                />
+      <Col xs='12' md='6'>
+        {/* start card */}
+        <Card image fullHeight rounded shadow={'sm'}>
+          <h3 className="it-card-title ">
+            <a href="#">Titolo del contenuto</a>
+          </h3>
+          <div className="it-card-image-wrapper">
+            <div className="ratio ratio-16x9">
+              <figure className="figure img-full">
+                <img src="https://placeholderimage.eu/api/nature/800/600" alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."></img>
               </figure>
             </div>
           </div>
-          <CardBody>
-            <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </CardTitle>
-            <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
-          </CardBody>
+          <div className="it-card-body">
+            <p className="it-card-text">Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.</p>
+          </div>
+          <footer className="it-card-related it-card-footer">
+            <div className="it-card-taxonomy">
+              <ul className="it-card-chips chips-list" aria-label="Argomenti correlati: ">
+                <li className="list-item"><a className="chip chip-simple chip-sm" href="#">
+                  <span className="chip-label"><span className="visually-hidden">Argomento: </span>Argomento 1</span>
+                </a></li>
+                <li className="list-item"><a className="chip chip-simple chip-sm" href="#">
+                  <span className="chip-label"><span className="visually-hidden">Argomento: </span>Argomento 2</span>
+                </a></li>
+              </ul>
+            </div>
+            <time className="it-card-date" dateTime="2025-04-22">22 aprile 2025</time>
+          </footer>
         </Card>
         {/* end card */}
       </Col>
-      <Col xs='12' lg='6'>
-        {/* Start card */}
-        <Card className='card-img no-after'>
-          <div className='img-responsive-wrapper'>
-            <div className='img-responsive'>
-              <figure className='img-wrapper'>
-                <img
-                  src='https://placehold.co/310x190/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
-                  title='img title'
-                  alt='imagealt'
-                />
-              </figure>
-              <div className='card-calendar d-flex flex-column justify-content-center'>
-                <span className='card-date'>31</span>
-                <span className='card-day'>novembre</span>
-              </div>
-            </div>
+      <Col xs='12' md='6'>
+        {/* start card */}
+        <Card image rounded shadow={'sm'}>
+          <h3 className="it-card-title ">
+            <a href="#">Titolo del contenuto</a>
+          </h3>
+          <div className="it-card-body">
+            <p className="it-card-text">Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.</p>
           </div>
-          <CardBody>
-            <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </CardTitle>
-            <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
-          </CardBody>
-        </Card>
-        {/* end card */}
-      </Col>
-      <Col xs='12' lg='6'>
-        {/* Start card */}
-        <Card className='card-img no-after'>
-          <div className='img-responsive-wrapper'>
-            <div className='img-responsive img-responsive-panoramic'>
-              <figure className='img-wrapper'>
-                <img
-                  src='https://placehold.co/310x94/0066cc/FFFFFF/?text=IMMAGINE%20DI%20ESEMPIO'
-                  title='img title'
-                  alt='imagealt'
-                />
-              </figure>
-              <div className='card-calendar d-flex flex-column justify-content-center'>
-                <span className='card-date'>31</span>
-                <span className='card-day'>novembre</span>
-              </div>
-            </div>
-          </div>
-          <CardBody>
-            <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </CardTitle>
-            <CardReadMore iconName='it-arrow-right' text='Leggi di più' href='#' />
-          </CardBody>
+          <footer className="it-card-related it-card-footer">
+            <time className="it-card-date" dateTime="2025-04-22">22 aprile 2025</time>
+          </footer>
         </Card>
         {/* end card */}
       </Col>
     </Row>
-  )
-};
-
-export const SpecialCard: Story = {
-  render: () => (
-    <Row>
-      <Col xs='12' lg='6'>
-        {/* Start card */}
-        <Card className='card-img no-after special-card' tag='a' href='#'>
-          <div className='img-responsive-wrapper'>
-            <div className='img-responsive'>
-              <figure className='img-wrapper'>
-                <img
-                  src='https://placehold.co/174x214/F9F9FE/0066CC/?text=IMMAGINE%20DI%20ESEMPIO'
-                  title='img title'
-                  alt='imagealt'
-                />
-              </figure>
-            </div>
-          </div>
-          <CardBody>
-            <CardTagsHeader date='10/10/2018' />
-            <CardTitle tag='h5'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-            </CardTitle>
-          </CardBody>
-        </Card>
-        {/* end card */}
-      </Col>
-    </Row>
-  )
-};
-
-export const SimpleCardTeaser: Story = {
-  render: () => (
-    <Card teaser>
-      <CardBody>
-        <CardTitle tag='h5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</CardTitle>
-        <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </CardText>
-      </CardBody>
-    </Card>
-  )
-};
-
-export const CardTeaserMultiple: Story = {
-  render: () => (
-    <div className='card-wrapper card-teaser-wrapper'>
-      <Card teaser noWrapper>
-        <CardBody>
-          <CardTitle tag='h5'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…
-          </CardTitle>
-          <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </CardText>
-        </CardBody>
-      </Card>
-      <Card teaser noWrapper className='rounded shadow'>
-        <CardBody>
-          <CardTitle>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</CardTitle>
-          <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </CardText>
-        </CardBody>
-      </Card>
-      <Card teaser noWrapper className='rounded shadow'>
-        <CardBody>
-          <CardCategory iconName='it-clip'></CardCategory>
-          <a href='#'>
-            <CardTitle tag='h5'>Lorem ipsum dolor sit amet</CardTitle>
-          </a>
-          <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </CardText>
-        </CardBody>
-      </Card>
-    </div>
   )
 };

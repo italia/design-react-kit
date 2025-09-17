@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Meta } from "@storybook/react-vite";
-import { Card, CardBody, CardText, Col, Container, Row, Section } from '../../src';
+import { Card, Col, Container, Row, Section } from '../../src';
 
 const meta: Meta<typeof Section> = {
   title: "Documentazione/Componenti/Section",
@@ -158,25 +158,43 @@ export const SectionConCard = () => {
       <h2 id="titleEx6">Morbi fermentum amet</h2>
       <Row>
         <Col sm={6}>
-          <Card className='shadow h-100' noWrapper>
-            <CardBody>
-              <CardText>
-                Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet
-                justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus. Eget egestas purus viverra accumsan.
-                Diam maecenas ultricies mi eget mauris pharetra et.{' '}
-              </CardText>
-            </CardBody>
+          <Card image rounded border>
+            <h3 className="it-card-title ">
+              <a href="#">Titolo del contenuto</a>
+            </h3>
+            <div className="it-card-image-wrapper">
+              <div className="ratio ratio-16x9">
+                <figure className="figure img-full">
+                  <img src="https://placeholderimage.eu/api/city/800/600" alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."></img>
+                </figure>
+              </div>
+            </div>
+            <div className="it-card-body">
+              <p className="it-card-text">Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.</p>
+            </div>
+            <footer className="it-card-related it-card-footer">
+              <time className="it-card-date" dateTime="2025-04-22">22 aprile 2025</time>
+            </footer>
           </Card>
         </Col>
         <Col sm={6}>
-          <Card className='shadow h-100' noWrapper>
-            <CardBody>
-              <CardText>
-                Etiam dignissim diam quis enim. Eu nisl nunc mi ipsum faucibus. Euismod lacinia at quis risus sed
-                vulputate. Scelerisque purus semper eget duis at tellus at urna condimentum. Mattis enim ut tellus
-                elementum sagittis.
-              </CardText>
-            </CardBody>
+          <Card image rounded border>
+            <h3 className="it-card-title ">
+              <a href="#">Titolo del contenuto</a>
+            </h3>
+            <div className="it-card-image-wrapper">
+              <div className="ratio ratio-16x9">
+                <figure className="figure img-full">
+                  <img src="https://placeholderimage.eu/api/city/800/600" alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."></img>
+                </figure>
+              </div>
+            </div>
+            <div className="it-card-body">
+              <p className="it-card-text">Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.</p>
+            </div>
+            <footer className="it-card-related it-card-footer">
+              <time className="it-card-date" dateTime="2025-04-22">22 aprile 2025</time>
+            </footer>
           </Card>
         </Col>
       </Row>

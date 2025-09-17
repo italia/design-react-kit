@@ -1,14 +1,6 @@
 import { ArgTypes, Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
 import {
-  Card,
-  CardBody,
-  CardCategory,
-  CardReadMore,
-  CardSignature,
-  CardTag,
-  CardTagsHeader,
-  CardText,
-  CardTitle
+  Card
 } from '../../src';
 import * as CardStories from '../Components/Card.stories';
 
@@ -18,10 +10,10 @@ import * as CardStories from '../Components/Card.stories';
 
 ## Un contenitore di testi e immagini con molte opzioni e varianti.
 
-Le _card_ sono contenitori flessibili ed estendibili. Costruite con flexbox, offrono un facile posizionamento nella
-griglia e si combinano bene con altri componenti.
-
-Di default le card occupano l'intero spazio orizzontale del loro elemento contenitore.
+Le _card_ sono contenitori flessibili ed estendibili. Rispetto alla precedente versione
+le nuove Card del Design Kit di React sono costituite dal solo componente `Card`
+in modo tale da lasciare l'utente libero nelle personalizzazioni all'interno del
+componente.
 
 ## Card semplice
 
@@ -31,111 +23,15 @@ Esempio di card semplice con titolo e testo:
 
 <Canvas of={CardStories.SimpleCard} />
 
-### Card semplice su più colonne
+### Card editoriale EditorialStandard
 
-<Canvas of={CardStories.SimpleCardMultipleColumns} />
+Esempi con descrizione e data di pubblicazione della scheda, con categoria oppure con argomenti (tag) di appartenenza, con e senza immagine.
 
-### Card Articolo semplice
+<Canvas of={CardStories.EditorialStandard} />
 
-Esempio di card contenente categorizzazione e data, firma dell’articolo e link all’articolo.
-Per inserire la categorizzazione e/o la data di pubblicazione, usare il componente `CardCategory` ed inserire al suo
-interno gli elementi come da esempio.
-La categoria nell’esempio seguente è un link, ma potrebbe essere un testo semplice senza link, utilizzando il tag
-`<span/>` invece del tag di default (`<a/>`).
+## Altre varianti di Card
 
-<Canvas of={CardStories.SimpleArticle} />
-
-### Card con icona
-
-Esempio di card contenente categorizzazione e icona.
-Per inserire la categorizzazione con relativa icona, passare al componente `CardCategory` la proprietà `iconName` con
-l'identificativo dell'icona da utilizzare.
-
-<Canvas of={CardStories.CardIcon} />
-
-Un’altro esempio di card contenente intestazione (in questo caso numero di files presenti) e icona: la struttura è
-uguale alla card precedente, per l’intestazione è sufficiente usare l’elemento `.categoryicon-top` ed inserire al suo
-interno gli elementi come da esempio.
-
-Nell’esempio seguente sono stati inseriti un sottotitolo ed un link semplice che segue il paragrafo. Per i sottotitoli
-utilizzare il tag `<h6/>`, per i link semplici utilizzare la classe .simple-link.
-
-<Canvas of={CardStories.CardIconAdvanced} />
-
-## Card con ombreggiatura
-
-Le card con ombreggiatura sono caratterizzate dagli attributi:
-
-- `spacing`: utilizzata nel componente `Card` serve a distanziare le card nella loro versione mobile.
-- La classe `.card-bg`: utilizzata nel componente `Card` serve a creare background e ombra della card.
-
-<Canvas of={CardStories.CardWithShading} />
-
-### Card grande
-
-Le card con ombreggiatura grandi sono caratterizzate dalle classi:
-
-- `.card-bg`: utilizzata nel componente `Card` serve a creare background e ombra della card.
-- `.card-big`: utilizzata nel componente `Card` serve a al dimensionamento dei suoi contenuti.
-
-Nell’esempio seguente è stata inserita un icona grande prima del titolo della card, il div contenente l’icona è di
-classe `.top-icon`.
-
-#### Esempio 1:
-
-<Canvas of={CardStories.BigCard} />
-
-L’esempio seguente contiene una icona custom (non SVG ma CSS) ed una categorizzazione con icona SVG.
-L’icona custom viene creata dal div `.flag-icon`.
-La categorizzazione dal div con classe `.etichetta`.
-Per creare un bordo di colore primario a chiusura card, potete utilizzare la classe `.border-bottom-card` applicata al
-componente `Card`.
-
-#### Esempio 2:
-
-<Canvas of={CardStories.BigCardExampleTwo} />
-
-## Card grande con tag, data e call to action
-
-Per inserire tags e/o data in testa alla card utilizzare l’elemento: `CardTagsHeader`.
-Per inserire il pulsante a fondo card, utilizzare l’elemento: `.it-card-footer`. Nell’esempio seguente sono state
-inserite firma e pulsante nel footer della card.
-Utilizzate la classe `.no-after` applicata al componente `Card` se volete ridurre lo spazio inferiore del componente.
-
-<Canvas of={CardStories.BigCardWithTag} />
-
-## Card con immagine
-
-La card con immagine è contraddistinta dalla classe `.card-img` applicata al componente `Card`.
-
-L’elemento immagine è `.img-responsive-wrapper` per proporzioni dell’immagine pari a circa 31:19; se associato alla
-classe `.img-responsive-panoramic` l’ottimo è 62:19. Si consiglia in ogni caso un'immagine orizzontale.
-Qualora le proporzioni non fossero esatte, l’immagine occuperà il massimo dell’altezza o della larghezza disponibile
-escludendo il resto dell’immagine e centrandola nell’elemento.
-
-È anche possibile aggiungere un piccolo box con l’indicazione della data, per card di tipo evento.
-
-<Canvas of={CardStories.CardsWithImages} />
-
-## Card speciali
-
-La card speciale è contraddistinta dalla classe `.special-card` applicata al componente `Card`.
-Tutta la card è un link al relativo contenuto - notare il `tag="a"`. Le proporzioni ottimali dell’immagine per questa
-card sono 17:21.
-
-<Canvas of={CardStories.SpecialCard} />
-
-## Card teaser
-
-Per creare Card con contenuti brevi o di “anteprima” è sufficiente aggiungere l'attributo `teaser` al componente `Card`.
-
-Come per ogni elemento, è possibile aggiungere le classi `.rounded` o `.shadow` per aggiungere bordi, effetti di arrotondamento o ombreggiatura.
-
-<Canvas of={CardStories.SimpleCardTeaser} />
-
-In alcuni casi può essere necessario raccogliere più card teasers all'interno dello stesso componente contenitore. Per questo motivo è disponibile l'attributo `noWrapper` per disabilitare il wrapper automatico del componente al fine di gestirne la composizione in modo più granulare:
-
-<Canvas of={CardStories.CardTeaserMultiple} />
+Per tutti gli altri esempi seguire la documentazione ufficiale di [Bootstrap Italia](https://italia.github.io/bootstrap-italia/docs/componenti/card/).
 
 ## Argomenti componente
 
@@ -143,34 +39,4 @@ In alcuni casi può essere necessario raccogliere più card teasers all'interno 
 
 <ArgTypes of={Card} />
 
-### CardBody
 
-<ArgTypes of={CardBody} />
-
-### CardTitle
-
-<ArgTypes of={CardTitle} />
-
-### CardText
-
-<ArgTypes of={CardText} />
-
-### CardCategory
-
-<ArgTypes of={CardCategory} />
-
-### CardSignature
-
-<ArgTypes of={CardSignature} />
-
-### CardReadMore
-
-<ArgTypes of={CardReadMore} />
-
-### CardTagsHeader
-
-<ArgTypes of={CardTagsHeader} />
-
-### CardTag
-
-<ArgTypes of={CardTag} />

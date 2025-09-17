@@ -2,11 +2,6 @@ import { Meta, StoryObj } from '@storybook/react-vite';
 import React from 'react';
 import {
   Card,
-  CardBody,
-  CardReadMore,
-  CardSignature,
-  CardText,
-  CardTitle,
   Col,
   Container,
   Hero,
@@ -165,18 +160,16 @@ export const HeroConSfondoMargineNegativo: Story = {
       <Container>
         <Row>
           <Col>
-            <Card spacing className='card-bg'>
-              <CardBody>
-                <CardTitle tag='h5' className='big-heading'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit…
-                </CardTitle>
-                <CardText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-                </CardText>
-                <CardSignature>di Federico De Paolis</CardSignature>
-                <CardReadMore text='Leggi di più' iconName='it-arrow-right' />
-              </CardBody>
+            <Card className='px-5 py-4' rounded border>
+              <h3 className="it-card-title h4">
+                Titolo del contenuto
+              </h3>
+              <div className="it-card-body">
+                <p className="it-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div className="it-card-footer border-0" aria-label="Link correlati:">
+                <a href="#" className="it-card-link">Scopri di più <span className="visually-hidden">su Titolo del contenuto</span></a>
+              </div>
             </Card>
           </Col>
         </Row>
