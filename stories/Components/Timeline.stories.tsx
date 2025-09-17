@@ -27,7 +27,7 @@ export const Esempi: Story = {
           <Col xs='12'>
             <TimelinePin label='maggio 2018' past iconTitle='Segnaposto'>
               {/* start card */}
-              <Card rounded border image>
+              <Card rounded image shadow={'sm'}>
                 <h4 className="it-card-title ">
                   <a href="#">Titolo del contenuto</a>
                 </h4>

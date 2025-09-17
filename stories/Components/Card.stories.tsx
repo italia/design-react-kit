@@ -19,9 +19,9 @@ type Story = StoryObj<typeof Card>;
 export const SimpleCard: Story = {
   render: () => (
     <Row>
-      <Col xs='12' lg='4'>
+      <Col xs='12' lg='12'>
         {/* start card */}
-        <Card image>
+        <Card image shadow={'sm'} rounded>
           <h3 className="it-card-title ">
             <a href="#">Titolo del contenuto</a>
           </h3>
@@ -50,7 +50,7 @@ export const EditorialStandard: Story = {
     <Row>
       <Col xs='12' md='6'>
         {/* start card */}
-        <Card image>
+        <Card image fullHeight rounded shadow={'sm'}>
           <h3 className="it-card-title ">
             <a href="#">Titolo del contenuto</a>
           </h3>
@@ -75,7 +75,7 @@ export const EditorialStandard: Story = {
       </Col>
       <Col xs='12' md='6'>
         {/* start card */}
-        <Card image>
+        <Card image fullHeight rounded shadow={'sm'}>
           <h3 className="it-card-title ">
             <a href="#">Titolo del contenuto</a>
           </h3>
@@ -107,7 +107,7 @@ export const EditorialStandard: Story = {
       </Col>
       <Col xs='12' md='6'>
         {/* start card */}
-        <Card image>
+        <Card image rounded shadow={'sm'}>
           <h3 className="it-card-title ">
             <a href="#">Titolo del contenuto</a>
           </h3>

@@ -18,7 +18,7 @@ type Story = StoryObj<typeof Container>;
 
 const carouselSlide =
   <CarouselSlide>
-    <Card>
+    <Card rounded shadow={'sm'}>
       <h3 className="it-card-title ">
         <a href="#">Titolo del contenuto</a>
       </h3>
@@ -39,7 +39,7 @@ for (let i = 0; i < 10; i++) {
 
 const carouselSlideLandscapeImage = <CarouselSlide>
   <div className="it-single-slide-wrapper p-2e">
-    <Card image inline rounded border>
+    <Card image inline rounded shadow={'sm'}>
       <div className="it-card-inline-content">
         <h3 className="it-card-title ">
           <a href="#">Titolo contenuto editoriale</a>
@@ -74,7 +74,7 @@ for (let i = 0; i < 3; i++) {
 
 
 const carouselHighImage = <CarouselSlide>
-  <Card image fullHeight border rounded>
+  <Card image fullHeight rounded shadow={'sm'}>
     <h3 className="it-card-title">
       <a href="#">Titolo del contenuto</a>
     </h3>
