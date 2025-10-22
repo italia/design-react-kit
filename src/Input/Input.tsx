@@ -327,10 +327,10 @@ export const Input = ({
             ref={inputRef}
           />
           <span className='input-group-text align-buttons flex-column'>
-            <button className='input-number-add' onClick={() => clickIncrDecr(1)}>
+            <button type='button' className='input-number-add' onClick={() => clickIncrDecr(1)}>
               <span className='visually-hidden'>{incrementLabel || ''}</span>
             </button>
-            <button className='input-number-sub' onClick={() => clickIncrDecr(-1)}>
+            <button type='button' className='input-number-sub' onClick={() => clickIncrDecr(-1)}>
               <span className='visually-hidden'>{decrementLabel || ''}</span>
             </button>
           </span>
