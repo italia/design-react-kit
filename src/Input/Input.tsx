@@ -308,6 +308,7 @@ export const Input = ({
           className={classNames({
             'input-group': true,
             'input-number': true,
+            'is-invalid': valid == false,
             disabled: rest.disabled,
             'input-number-adaptive': type === 'adaptive'
           })}
