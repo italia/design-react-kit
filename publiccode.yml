@@ -2,7 +2,7 @@
 # metadata file that makes public software easily discoverable.
 # More info at https://github.com/italia/publiccode.yml
 
-publiccodeYmlVersion: '0.2'
+publiccodeYmlVersion: 0.4.0
 categories:
   - website-builder
 description:
@@ -27,11 +27,9 @@ description:
       [Bootstrap Italia 2.x](https://github.com/italia/bootstrap-italia "Repository GitHub di Bootstrap Italia") 
       di cui eredita tutte le funzionalità, componenti, griglie e classi di utilità.
     shortDescription: |-
-      La libreria Design React Kit è il modo più semplice e sicuro per costruire
-      interfacce web moderne, inclusive e semplici da mantenere utilizzando React.
+      Il toolkit React conforme alle linee guida di design per i siti internet e i servizi digitali della PA.
 developmentStatus: stable
-isBasedOn:
-  - Bootstrap Italia
+isBasedOn: https://github.com/italia/bootstrap-italia
 it:
   conforme:
     gdpr: false
