@@ -1,5 +1,6 @@
 import React, { FC, HTMLAttributes, ElementType } from 'react';
 import classNames from 'classnames';
+import { PagerItem } from '..';
 
 export interface PagerProps extends HTMLAttributes<HTMLElement> {
   /** Etichetta di descrizione del contenuto del componente Pager */
@@ -35,9 +36,9 @@ export const Pager: FC<PagerProps> = ({
   const { ariaLabel, label } = total || {};
   const totalAriaLabel = ariaLabel ? <span className='visually-hidden'>{ariaLabel}</span> : null;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const listChildren = React.Children.toArray(children).filter((child: any) => child.type.name === 'PaginationItem');
+  const listChildren = React.Children.toArray(children).filter((child: any) => child.type === PagerItem);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extraChildren = React.Children.toArray(children).filter((child: any)=> child.type.name !== 'PaginationItem');
+  const extraChildren = React.Children.toArray(children).filter((child: any)=> child.type !== PagerItem);
 
   // listChildren?.forEach(child => {
   //   console.log(child)
