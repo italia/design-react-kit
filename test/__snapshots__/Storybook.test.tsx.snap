@@ -25163,6 +25163,7 @@ exports[`Stories Snapshots Documentazione/Form/Input EsempiDiCampiDiInput 1`] = 
         >
           <button
             class="input-number-add"
+            type="button"
           >
             <span
               class="visually-hidden"
@@ -25172,6 +25173,7 @@ exports[`Stories Snapshots Documentazione/Form/Input EsempiDiCampiDiInput 1`] = 
           </button>
           <button
             class="input-number-sub"
+            type="button"
           >
             <span
               class="visually-hidden"
@@ -25606,6 +25608,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDimens
         >
           <button
             class="input-number-add"
+            type="button"
           >
             <span
               class="visually-hidden"
@@ -25615,6 +25618,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDimens
           </button>
           <button
             class="input-number-sub"
+            type="button"
           >
             <span
               class="visually-hidden"
@@ -25655,6 +25659,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDimens
         >
           <button
             class="input-number-add"
+            type="button"
           >
             <span
               class="visually-hidden"
@@ -25664,6 +25669,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDimens
           </button>
           <button
             class="input-number-sub"
+            type="button"
           >
             <span
               class="visually-hidden"
@@ -25707,6 +25713,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDisabi
       >
         <button
           class="input-number-add"
+          type="button"
         >
           <span
             class="visually-hidden"
@@ -25714,6 +25721,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoDisabi
         </button>
         <button
           class="input-number-sub"
+          type="button"
         >
           <span
             class="visually-hidden"
@@ -25760,6 +25768,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoPercen
       >
         <button
           class="input-number-add"
+          type="button"
         >
           <span
             class="visually-hidden"
@@ -25769,6 +25778,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoPercen
         </button>
         <button
           class="input-number-sub"
+          type="button"
         >
           <span
             class="visually-hidden"
@@ -25813,6 +25823,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoRidime
       >
         <button
           class="input-number-add"
+          type="button"
         >
           <span
             class="visually-hidden"
@@ -25822,6 +25833,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoRidime
         </button>
         <button
           class="input-number-sub"
+          type="button"
         >
           <span
             class="visually-hidden"
@@ -25866,6 +25878,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoSteps 
       >
         <button
           class="input-number-add"
+          type="button"
         >
           <span
             class="visually-hidden"
@@ -25875,6 +25888,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoSteps 
         </button>
         <button
           class="input-number-sub"
+          type="button"
         >
           <span
             class="visually-hidden"
@@ -25924,6 +25938,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoValuta
       >
         <button
           class="input-number-add"
+          type="button"
         >
           <span
             class="visually-hidden"
@@ -25933,6 +25948,7 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoValuta
         </button>
         <button
           class="input-number-sub"
+          type="button"
         >
           <span
             class="visually-hidden"
@@ -28039,6 +28055,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             >
               <button
                 class="input-number-add"
+                type="button"
               >
                 <span
                   class="visually-hidden"
@@ -28046,6 +28063,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
               </button>
               <button
                 class="input-number-sub"
+                type="button"
               >
                 <span
                   class="visually-hidden"
