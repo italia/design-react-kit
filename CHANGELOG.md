@@ -1,3 +1,14 @@
+## [5.9.1](https://github.com/italia/design-react-kit/compare/v5.9.0...v5.9.1) (2025-11-10)
+
+
+### Bug Fixes
+
+* add is-invalid class to input-group based on validation ([762d627](https://github.com/italia/design-react-kit/commit/762d62755ec05c16b57e85bbc961a94af97d9c06))
+* prevent numeric input from submitting forms ([c6b3bb8](https://github.com/italia/design-react-kit/commit/c6b3bb8d02e2201dde6839db6f04d427c8bd723d))
+* render pager properly after minimization ([a616a48](https://github.com/italia/design-react-kit/commit/a616a480ae8f1490a287c991a2bf5acb4f4085fb))
+
+
+
 # [5.9.0](https://github.com/italia/design-react-kit/compare/v5.8.3...v5.9.0) (2025-09-17)
 
 
