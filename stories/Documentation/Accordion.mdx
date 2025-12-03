@@ -1,7 +1,15 @@
-import { ArgTypes, Canvas, Meta, Source, Story } from "@storybook/addon-docs/blocks";
-import { Code } from "storybook/internal/components";
-import { Accordion, AccordionBody, AccordionHeader, AccordionItem, Callout, CalloutText, CalloutTitle } from "../../src";
-import * as AccordionStories from "../Components/Accordion.stories";
+import { ArgTypes, Canvas, Meta, Source, Story } from '@storybook/addon-docs/blocks';
+import { Code } from 'storybook/internal/components';
+import {
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
+  AccordionItem,
+  Callout,
+  CalloutText,
+  CalloutTitle
+} from '../../src';
+import * as AccordionStories from '../Components/Accordion.stories';
 
 <Meta of={AccordionStories} />
 
@@ -15,16 +23,17 @@ Per ottimizzare l’ingombro dei contenuti di una pagina a volte è necessario u
 
 Gli elementi richiudibili sono molto spesso mostrati in gruppo, tipicamente usati per approfondire voci o argomenti mostrati nelle singole barre cliccabili.
 
-<div className="docs">
-    <Callout color="success">
-        <CalloutTitle>
-            <span className="text">Accessibilità</span>
-        </CalloutTitle>
-        <CalloutText>
-            Nell’esempio di codice ogni elemento <Code>&lt;button&gt;</Code> è inserito all’interno di un elemento &lt;h2&gt; (o altro livello h in funzione del
-            contesto) in quanto, frequentemente, i pulsanti di azione di un accordion sono anche i titoli della sezione che segue.
-        </CalloutText>
-    </Callout>
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>
+      <span className='text'>Accessibilità</span>
+    </CalloutTitle>
+    <CalloutText>
+      Nell’esempio di codice ogni elemento <Code>&lt;button&gt;</Code> è inserito all’interno di un elemento &lt;h2&gt;
+      (o altro livello h in funzione del contesto) in quanto, frequentemente, i pulsanti di azione di un accordion sono
+      anche i titoli della sezione che segue.
+    </CalloutText>
+  </Callout>
 </div>
 
 <Canvas of={AccordionStories.GruppiDiElementiRichiudibili} />
@@ -32,37 +41,47 @@ Gli elementi richiudibili sono molto spesso mostrati in gruppo, tipicamente usat
 #### Codice
 
 ```tsx
-const [collapseElementOpen, setCollapseElement] = useState("");
+const [collapseElementOpen, setCollapseElement] = useState('');
 return (
-    <Accordion>
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "1"} onToggle={() => setCollapseElement(collapseElementOpen !== "1" ? "1" : "")}>
-                Elemento Richiudibile #1
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "1"}>
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                skateboard dolor brunch.
-            </AccordionBody>
-        </AccordionItem>
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "2"} onToggle={() => setCollapseElement(collapseElementOpen !== "2" ? "2" : "")}>
-                Elemento Richiudibile #2
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "2"}>
-                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t
-                heard of them accusamus labore sustainable VHS.
-            </AccordionBody>
-        </AccordionItem>
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "3"} onToggle={() => setCollapseElement(collapseElementOpen !== "3" ? "3" : "")}>
-                Elemento Richiudibile #3
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "3"}>
-                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </AccordionBody>
-        </AccordionItem>
-    </Accordion>
+  <Accordion>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '1'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '1' ? '1' : '')}
+      >
+        Elemento Richiudibile #1
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '1'}>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+        officia aute, non cupidatat skateboard dolor brunch.
+      </AccordionBody>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '2'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '2' ? '2' : '')}
+      >
+        Elemento Richiudibile #2
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '2'}>
+        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+        nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+      </AccordionBody>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '3'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '3' ? '3' : '')}
+      >
+        Elemento Richiudibile #3
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '3'}>
+        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+        anderson cred nesciunt sapiente ea proident.
+      </AccordionBody>
+    </AccordionItem>
+  </Accordion>
 );
 ```
 
@@ -77,12 +96,16 @@ return (
             predefinito, l’attributo sull’elemento di controllo dovrebbe avere il valore <Code>aria-expanded="false"</Code>. Se imposti l’elemento comprimibile
             aperto in modo predefinito, sul controllo invece imposta
             <Code>aria-expanded="true"</Code>. Il componente
-            <Code>AccordionHeader</Code> applica automaticamente questo attributo, ma qualora venisse usato un componente di controllo esterno - come un
-            `Button` del primo esempio - sarà necessario aggiungerlo manualmente. Se il componente HTML dell’elemento di controllo non è un bottone (ad esempio
-            un <Code>&lt;a&gt;</Code> o <Code>&lt;div&gt;</Code>
-            ), l’attributo <Code>role="button"</Code> dovrebbe essere aggiunto al componente.
-        </CalloutText>
-    </Callout>
+            <Code>AccordionHeader</Code> applica automaticamente questo attributo, ma qualora venisse usato un componente di controllo esterno sarà necessario aggiungerlo manualmente. Se utilizzi un elemento non-button come controllo:
+        Se utilizzi un elemento non-button come controllo (ad esempio un <Code>&lt;div&gt;</Code> o un <Code>&lt;a&gt;</Code>):
+
+    • Per link (<Code>&lt;a&gt;</Code>): generalmente non assegnare <Code>role="button"</Code>. Mantieni il ruolo nativo link e assicurati che abbia una funzione di navigazione. Se la sua funzione è esclusivamente controllare l'espansione, preferisci l'uso di un <Code>&lt;button&gt;</Code>.
+
+    • Per elementi generici (<Code>&lt;div&gt;</Code>, <Code>&lt;span&gt;</Code>): aggiungi <Code>role="button"</Code>, rendilo focusabile con <Code>tabindex="0"</Code>, gestisci il click tramite <Code>onClick</Code>, gestisci l'attivazione da tastiera (tasti Enter e Spazio tramite <Code>onKeyDown</Code>) e rendi visibile il focus (ad esempio con outline CSS).
+
+</CalloutText>
+</Callout>
+
 </div>
 
 ## Accordion
@@ -94,37 +117,47 @@ Per ottenere un gruppo di elementi _mutualmente_ richiudibili (o _accordion_), �
 #### Codice
 
 ```tsx
-const [collapseElementOpen, setCollapseElement] = useState("");
+const [collapseElementOpen, setCollapseElement] = useState('');
 return (
-    <Accordion>
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "1"} onToggle={() => setCollapseElement(collapseElementOpen !== "1" ? "1" : "")}>
-                Accordion Group Item #1
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "1"} listClassName={"custom-class"}>
-                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
-                Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
-            </AccordionBody>
-        </AccordionItem>
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "2"} onToggle={() => setCollapseElement(collapseElementOpen !== "2" ? "2" : "")}>
-                Accordion Group Item #2
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "2"} listClassName={"custom-class"}>
-                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t
-                heard of them accusamus labore sustainable VHS.
-            </AccordionBody>
-        </AccordionItem>
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "3"} onToggle={() => setCollapseElement(collapseElementOpen !== "3" ? "3" : "")}>
-                Accordion Group Item #3
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "3"} listClassName={"custom-class"}>
-                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </AccordionBody>
-        </AccordionItem>
-    </Accordion>
+  <Accordion>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '1'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '1' ? '1' : '')}
+      >
+        Accordion Group Item #1
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '1'} listClassName={'custom-class'}>
+        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus
+        facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+      </AccordionBody>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '2'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '2' ? '2' : '')}
+      >
+        Accordion Group Item #2
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '2'} listClassName={'custom-class'}>
+        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+        nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+      </AccordionBody>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '3'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '3' ? '3' : '')}
+      >
+        Accordion Group Item #3
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '3'} listClassName={'custom-class'}>
+        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+        anderson cred nesciunt sapiente ea proident.
+      </AccordionBody>
+    </AccordionItem>
+  </Accordion>
 );
 ```
 
@@ -132,15 +165,16 @@ return (
 
 Più gruppi di collapse possono essere annidati.
 
-<div className="docs">
-    <Callout color="success">
-        <CalloutTitle>
-            <span className="text">Accessibilità</span>
-        </CalloutTitle>
-        <CalloutText>
-            Utilizzare questo approccio solo quando strettamente necessario: dal punto di vista dell’accessibilità non si tratta di una soluzione ottimale.
-        </CalloutText>
-    </Callout>
+<div className='docs'>
+  <Callout color='success'>
+    <CalloutTitle>
+      <span className='text'>Accessibilità</span>
+    </CalloutTitle>
+    <CalloutText>
+      Utilizzare questo approccio solo quando strettamente necessario: dal punto di vista dell’accessibilità non si
+      tratta di una soluzione ottimale.
+    </CalloutText>
+  </Callout>
 </div>
 
 <Canvas of={AccordionStories.AccordionAnnidati} />
@@ -148,62 +182,82 @@ Più gruppi di collapse possono essere annidati.
 #### Codice
 
 ```tsx
-const [collapseElementOpen, setCollapseElement] = useState("");
-const [nestedCollapseOpen, setNestedCollapseOpen] = useState("");
+const [collapseElementOpen, setCollapseElement] = useState('');
+const [nestedCollapseOpen, setNestedCollapseOpen] = useState('');
 return (
-    <Accordion>
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "1"} onToggle={() => setCollapseElement(collapseElementOpen !== "1" ? "1" : "")}>
-                Elemento Accordion #1
+  <Accordion>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '1'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '1' ? '1' : '')}
+      >
+        Elemento Accordion #1
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '1'}>
+        <Accordion>
+          <AccordionItem>
+            <AccordionHeader
+              active={nestedCollapseOpen === '1'}
+              onToggle={() => setNestedCollapseOpen(nestedCollapseOpen !== '1' ? '1' : '')}
+            >
+              Elemento Accordion annidato #1
             </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "1"}>
-                <Accordion>
-                    <AccordionItem>
-                        <AccordionHeader active={nestedCollapseOpen === "1"} onToggle={() => setNestedCollapseOpen(nestedCollapseOpen !== "1" ? "1" : "")}>
-                            Elemento Accordion annidato #1
-                        </AccordionHeader>
-                        <AccordionBody active={nestedCollapseOpen === "1"}>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-                            cupidatat skateboard dolor brunch.
-                        </AccordionBody>
-                    </AccordionItem>
-                    <AccordionItem>
-                        <AccordionHeader active={nestedCollapseOpen === "2"} onToggle={() => setNestedCollapseOpen(nestedCollapseOpen !== "2" ? "2" : "")}>
-                            Elemento Accordion annidato #2
-                        </AccordionHeader>
-                        <AccordionBody active={nestedCollapseOpen === "2"}>
-                            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                            haven&apos;t heard of them accusamus labore sustainable VHS.
-                        </AccordionBody>
-                    </AccordionItem>
-                    <AccordionItem>
-                        <AccordionHeader active={nestedCollapseOpen === "3"} onToggle={() => setNestedCollapseOpen(nestedCollapseOpen !== "3" ? "3" : "")}>
-                            Elemento Accordion annidato #3
-                        </AccordionHeader>
-                        <AccordionBody active={nestedCollapseOpen === "3"}>
-                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                            assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                        </AccordionBody>
-                    </AccordionItem>
-                </Accordion>
+            <AccordionBody active={nestedCollapseOpen === '1'}>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch.
             </AccordionBody>
-        </AccordionItem>
-        <AccordionHeader active={collapseElementOpen === "2"} onToggle={() => setCollapseElement(collapseElementOpen !== "2" ? "2" : "")}>
-            Elemento Accordion #2
-        </AccordionHeader>
-        <AccordionBody active={collapseElementOpen === "2"}>
-            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard
-            of them accusamus labore sustainable VHS.
-        </AccordionBody>
+          </AccordionItem>
+          <AccordionItem>
+            <AccordionHeader
+              active={nestedCollapseOpen === '2'}
+              onToggle={() => setNestedCollapseOpen(nestedCollapseOpen !== '2' ? '2' : '')}
+            >
+              Elemento Accordion annidato #2
+            </AccordionHeader>
+            <AccordionBody active={nestedCollapseOpen === '2'}>
+              Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+              synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+            </AccordionBody>
+          </AccordionItem>
+          <AccordionItem>
+            <AccordionHeader
+              active={nestedCollapseOpen === '3'}
+              onToggle={() => setNestedCollapseOpen(nestedCollapseOpen !== '3' ? '3' : '')}
+            >
+              Elemento Accordion annidato #3
+            </AccordionHeader>
+            <AccordionBody active={nestedCollapseOpen === '3'}>
+              Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+              single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+              anderson cred nesciunt sapiente ea proident.
+            </AccordionBody>
+          </AccordionItem>
+        </Accordion>
+      </AccordionBody>
+    </AccordionItem>
+    <AccordionHeader
+      active={collapseElementOpen === '2'}
+      onToggle={() => setCollapseElement(collapseElementOpen !== '2' ? '2' : '')}
+    >
+      Elemento Accordion #2
+    </AccordionHeader>
+    <AccordionBody active={collapseElementOpen === '2'}>
+      Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+      nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+    </AccordionBody>
 
-        <AccordionHeader active={collapseElementOpen === "3"} onToggle={() => setCollapseElement(collapseElementOpen !== "3" ? "3" : "")}>
-            Elemento Accordion #3
-        </AccordionHeader>
-        <AccordionBody active={collapseElementOpen === "3"}>
-            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-            shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-        </AccordionBody>
-    </Accordion>
+    <AccordionHeader
+      active={collapseElementOpen === '3'}
+      onToggle={() => setCollapseElement(collapseElementOpen !== '3' ? '3' : '')}
+    >
+      Elemento Accordion #3
+    </AccordionHeader>
+    <AccordionBody active={collapseElementOpen === '3'}>
+      Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+      single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+      cred nesciunt sapiente ea proident.
+    </AccordionBody>
+  </Accordion>
 );
 ```
 
@@ -220,37 +274,47 @@ Aggiungere l'attributo `background="active"` al componente `Accordion` per otten
 #### Codice
 
 ```tsx
-const [collapseElementOpen, setCollapseElement] = useState("");
+const [collapseElementOpen, setCollapseElement] = useState('');
 return (
-    <Accordion background="active">
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "1"} onToggle={() => setCollapseElement(collapseElementOpen !== "1" ? "1" : "")}>
-                Elemento Accordion #1
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "1"}>
-                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
-                Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
-            </AccordionBody>
-        </AccordionItem>
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "2"} onToggle={() => setCollapseElement(collapseElementOpen !== "2" ? "2" : "")}>
-                Elemento Accordion #2
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "2"}>
-                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t
-                heard of them accusamus labore sustainable VHS.
-            </AccordionBody>
-        </AccordionItem>
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "3"} onToggle={() => setCollapseElement(collapseElementOpen !== "3" ? "3" : "")}>
-                Elemento Accordion #3
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "3"}>
-                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </AccordionBody>
-        </AccordionItem>
-    </Accordion>
+  <Accordion background='active'>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '1'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '1' ? '1' : '')}
+      >
+        Elemento Accordion #1
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '1'}>
+        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus
+        facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+      </AccordionBody>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '2'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '2' ? '2' : '')}
+      >
+        Elemento Accordion #2
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '2'}>
+        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+        nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+      </AccordionBody>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '3'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '3' ? '3' : '')}
+      >
+        Elemento Accordion #3
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '3'}>
+        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+        anderson cred nesciunt sapiente ea proident.
+      </AccordionBody>
+    </AccordionItem>
+  </Accordion>
 );
 ```
 
@@ -263,37 +327,47 @@ Aggiungere l'attributo `background="hover"` al componente `Accordion` per ottene
 #### Codice
 
 ```tsx
-const [collapseElementOpen, setCollapseElement] = useState("");
+const [collapseElementOpen, setCollapseElement] = useState('');
 return (
-    <Accordion background="hover">
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "1"} onToggle={() => setCollapseElement(collapseElementOpen !== "1" ? "1" : "")}>
-                Elemento Accordion #1
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "1"}>
-                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
-                Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
-            </AccordionBody>
-        </AccordionItem>
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "2"} onToggle={() => setCollapseElement(collapseElementOpen !== "2" ? "2" : "")}>
-                Elemento Accordion #2
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "2"}>
-                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t
-                heard of them accusamus labore sustainable VHS.
-            </AccordionBody>
-        </AccordionItem>
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "3"} onToggle={() => setCollapseElement(collapseElementOpen !== "3" ? "3" : "")}>
-                Elemento Accordion #3
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "3"}>
-                Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </AccordionBody>
-        </AccordionItem>
-    </Accordion>
+  <Accordion background='hover'>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '1'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '1' ? '1' : '')}
+      >
+        Elemento Accordion #1
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '1'}>
+        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus
+        facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+      </AccordionBody>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '2'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '2' ? '2' : '')}
+      >
+        Elemento Accordion #2
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '2'}>
+        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+        nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+      </AccordionBody>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '3'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '3' ? '3' : '')}
+      >
+        Elemento Accordion #3
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '3'}>
+        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+        anderson cred nesciunt sapiente ea proident.
+      </AccordionBody>
+    </AccordionItem>
+  </Accordion>
 );
 ```
 
@@ -306,37 +380,46 @@ Aggiungere l'attributo `iconLeft={true}` al 11componente `Accordion` per ottener
 #### Codice
 
 ```tsx
-const [collapseElementOpen, setCollapseElement] = useState("");
+const [collapseElementOpen, setCollapseElement] = useState('');
 return (
-    <Accordion iconLeft>
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "1"} onToggle={() => setCollapseElement(collapseElementOpen !== "1" ? "1" : "")}>
-                Elemento Accordion #1
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "1"}>
-                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
-                Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
-            </AccordionBody>
-        </AccordionItem>
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "2"} onToggle={() => setCollapseElement(collapseElementOpen !== "2" ? "2" : "")}>
-                Elemento Accordion #2
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "2"}>
-                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
-                Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
-            </AccordionBody>
-        </AccordionItem>
-        <AccordionItem>
-            <AccordionHeader active={collapseElementOpen === "3"} onToggle={() => setCollapseElement(collapseElementOpen !== "3" ? "3" : "")}>
-                Elemento Accordion #3
-            </AccordionHeader>
-            <AccordionBody active={collapseElementOpen === "3"}>
-                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
-                Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
-            </AccordionBody>
-        </AccordionItem>
-    </Accordion>
+  <Accordion iconLeft>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '1'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '1' ? '1' : '')}
+      >
+        Elemento Accordion #1
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '1'}>
+        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus
+        facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+      </AccordionBody>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '2'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '2' ? '2' : '')}
+      >
+        Elemento Accordion #2
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '2'}>
+        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus
+        facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+      </AccordionBody>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionHeader
+        active={collapseElementOpen === '3'}
+        onToggle={() => setCollapseElement(collapseElementOpen !== '3' ? '3' : '')}
+      >
+        Elemento Accordion #3
+      </AccordionHeader>
+      <AccordionBody active={collapseElementOpen === '3'}>
+        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus
+        facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+      </AccordionBody>
+    </AccordionItem>
+  </Accordion>
 );
 ```
 
