@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/italia/design-react-kit/issues"
   },
-  "version": "5.9.1",
+  "version": "5.9.2",
   "license": "BSD-3",
   "type": "module",
   "module": "./dist/index.js",
