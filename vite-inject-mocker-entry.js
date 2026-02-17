@@ -159,18 +159,18 @@ class ManualMockedModule {
     if (this.cache) {
       return this.cache;
     }
-    let exports;
+    let exports$1;
     try {
-      exports = await this.factory();
+      exports$1 = await this.factory();
     } catch (err) {
       const vitestError = new Error('[vitest] There was an error when mocking a module. If you are using "vi.mock" factory, make sure there are no top level variables inside, since this call is hoisted to top of the file. Read more: https://vitest.dev/api/vi.html#vi-mock');
       vitestError.cause = err;
       throw vitestError;
     }
-    if (exports === null || typeof exports !== "object" || Array.isArray(exports)) {
+    if (exports$1 === null || typeof exports$1 !== "object" || Array.isArray(exports$1)) {
       throw new TypeError(`[vitest] vi.mock("${this.raw}", factory?: () => unknown) is not returning an object. Did you mean to return an object with a "default" key?`);
     }
-    return this.cache = exports;
+    return this.cache = exports$1;
   }
   static fromJSON(data, factory) {
     return new ManualMockedModule(data.raw, data.id, data.url, factory);
@@ -548,7 +548,7 @@ function p(n = false) {
   return u;
 }
 p();
-function _mergeNamespaces(n, m) {
+function _mergeNamespaces$1(n, m) {
   m.forEach(function(e) {
     e && typeof e !== "string" && !Array.isArray(e) && Object.keys(e).forEach(function(k) {
       if (k !== "default" && !(k in n)) {
@@ -680,7 +680,7 @@ function requireReactIs$1() {
 }
 var reactIsExports$1 = requireReactIs$1();
 var index$1 = /* @__PURE__ */ getDefaultExportFromCjs(reactIsExports$1);
-var ReactIs19 = /* @__PURE__ */ _mergeNamespaces({
+var ReactIs19 = /* @__PURE__ */ _mergeNamespaces$1({
   __proto__: null,
   default: index$1
 }, [reactIsExports$1]);
@@ -802,7 +802,7 @@ function requireReactIs() {
 }
 var reactIsExports = requireReactIs();
 var index = /* @__PURE__ */ getDefaultExportFromCjs(reactIsExports);
-var ReactIs18 = /* @__PURE__ */ _mergeNamespaces({
+var ReactIs18 = /* @__PURE__ */ _mergeNamespaces$1({
   __proto__: null,
   default: index
 }, [reactIsExports]);
