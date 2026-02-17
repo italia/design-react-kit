@@ -1,3 +1,16 @@
+## <small>5.9.3 (2026-02-17)</small>
+
+* chore: update publiccode ([dc904f7](https://github.com/italia/design-react-kit/commit/dc904f7))
+* chore(deps-dev): bump storybook from 9.1.2 to 9.1.17 ([ceba080](https://github.com/italia/design-react-kit/commit/ceba080))
+* chore(deps): add conventional commits ([4c2eb90](https://github.com/italia/design-react-kit/commit/4c2eb90))
+* chore(deps): bump @modelcontextprotocol/sdk from 1.24.0 to 1.26.0 ([4569daa](https://github.com/italia/design-react-kit/commit/4569daa))
+* chore(deps): bump lodash ([3561daf](https://github.com/italia/design-react-kit/commit/3561daf))
+* chore(deps): bump qs from 6.14.0 to 6.14.1 ([149e22d](https://github.com/italia/design-react-kit/commit/149e22d))
+* chore(deps): bump qs from 6.14.1 to 6.14.2 ([3f1a0ae](https://github.com/italia/design-react-kit/commit/3f1a0ae))
+* fix(deps): upgrade bootstrap italia ([1035525](https://github.com/italia/design-react-kit/commit/1035525))
+
+
+
 ## [5.9.2](https://github.com/italia/design-react-kit/compare/v5.9.1...v5.9.2) (2025-12-10)
 
 
