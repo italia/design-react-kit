@@ -5,7 +5,6 @@ import React, {
   ReactNode,
   Ref,
   useCallback,
-  useEffect,
   useRef,
   useState
 } from 'react';
@@ -152,19 +151,7 @@ export const Input = ({
     toggleIcon(!hasIcon);
   }, [hasIcon, isHidden]);
 
-  const divResizeRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  const [width, setWidth] = useState('100');
-
-  useEffect(() => {
-    if (divResizeRef.current != null && divResizeRef.current.classList.contains('input-number-adaptive')) {
-      if (!value) {
-        setWidth(`calc(70px)`);
-      } else {
-        setWidth(`calc(70px + ${`${value}`.length}ch)`);
-      }
-    }
-  }, [value]);
 
   // eslint-disable-next-line prefer-const
   let { bsSize, valid, ...rest } = attributes;
@@ -312,8 +299,7 @@ export const Input = ({
             disabled: rest.disabled,
             'input-number-adaptive': type === 'adaptive'
           })}
-          style={{ width }}
-          ref={divResizeRef}
+          style={type === 'adaptive' ? { width: !value ? '70px' : `min(calc(70px + ${`${value}`.length}ch), 100%)` } : undefined}
         >
           {['currency', 'percentage'].includes(type) && (
             <span className='input-group-text fw-semibold'>{addonText}</span>
