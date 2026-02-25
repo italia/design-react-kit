@@ -25808,7 +25808,6 @@ exports[`Stories Snapshots Documentazione/Form/InputNumerico InputNumericoRidime
     </label>
     <div
       class="input-group input-number input-number-adaptive"
-      style="width: calc(70px + 3ch);"
     >
       <input
         class="form-control"
