@@ -81,6 +81,19 @@ export const LinkListItem: FC<LinkListItemProps> & {
   if (inDropdown) {
     attributes['role'] = 'menuitem';
     attributes['tabIndex'] = 0;
+    return (
+      <li className={wrapperClassName} data-testid={testId}>
+        <Tag
+          role={attributes.onClick ? 'button' : undefined}
+          {...attributes}
+          className={classes}
+          href={href}
+          {...handlers}
+        >
+          <span>{children}</span>
+        </Tag>
+      </li>
+    );
   }
 
   if (header && href) {
