@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 
 import { Collapse } from '../src';
 
@@ -45,6 +45,20 @@ describe('Collapse component', () => {
       expect(main).not.toHaveAttribute('inert');
 
       document.body.removeChild(main);
+    });
+
+    it('should call onOverlayClick when Escape key is pressed and panel is open', () => {
+      const onOverlayClick = jest.fn();
+      render(<Collapse navbar isOpen onOverlayClick={onOverlayClick}>Content</Collapse>);
+      fireEvent.keyDown(document, { key: 'Escape' });
+      expect(onOverlayClick).toHaveBeenCalledTimes(1);
+    });
+
+    it('should not call onOverlayClick when Escape key is pressed and panel is closed', () => {
+      const onOverlayClick = jest.fn();
+      render(<Collapse navbar isOpen={false} onOverlayClick={onOverlayClick}>Content</Collapse>);
+      fireEvent.keyDown(document, { key: 'Escape' });
+      expect(onOverlayClick).not.toHaveBeenCalled();
     });
   });
 

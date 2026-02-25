@@ -98,6 +98,17 @@ export const Collapse: FC<CollapseProps> = ({
     return () => main.removeAttribute('inert');
   }, [isOpen, megamenu, navbar]);
 
+  useEffect(() => {
+    if (!(megamenu || navbar)) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isOpen) {
+        onOverlayClick?.();
+      }
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, megamenu, navbar, onOverlayClick]);
+
   if (megamenu || navbar) {
     const classes = classNames(className, 'navbar-collapse', {
       expanded: isExpanded
