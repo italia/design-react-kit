@@ -101,6 +101,7 @@ export const Collapse: FC<CollapseProps> = ({
         cssModule={newCssModule}
         navbar={navbar}
         style={displayStyle}
+        tabIndex={-1}
         data-testid={testId}
         {...attributes}
       >

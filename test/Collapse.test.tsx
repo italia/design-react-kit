@@ -10,6 +10,14 @@ describe('Collapse component', () => {
     expect(screen.getByText('Content')).not.toBe(null);
   });
 
+  describe('navbar mode', () => {
+    it('should have tabindex="-1" on the panel', () => {
+      const { container } = render(<Collapse navbar>Content</Collapse>);
+      const panel = container.querySelector('.navbar-collapsable');
+      expect(panel).toHaveAttribute('tabindex', '-1');
+    });
+  });
+
   it('should append the passed className to the container', () => {
     const { container } = render(<Collapse className='myclass'>Content</Collapse>);
 
