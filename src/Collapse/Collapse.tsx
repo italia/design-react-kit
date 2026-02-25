@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { ElementType, FC, HTMLAttributes, Ref } from 'react';
+import React, { ElementType, FC, HTMLAttributes, Ref, useEffect, useState } from 'react';
 
 import { Collapse as CollapseBase } from 'reactstrap';
 import { CSSModule } from 'reactstrap/types/lib/utils';
@@ -63,25 +63,48 @@ export const Collapse: FC<CollapseProps> = ({
     'navbar-collapse': 'navbar-collapsable',
     ...cssModule
   };
+
+  // Two-phase state to allow CSS transitions to play.
+  // isVisible controls display:block/none; isExpanded controls the animation class.
+  const [isVisible, setIsVisible] = useState(isOpen);
+  const [isExpanded, setIsExpanded] = useState(isOpen);
+
+  useEffect(() => {
+    if (!(megamenu || navbar)) return;
+    if (isOpen) {
+      setIsVisible(true);
+      // Double rAF ensures the browser has painted display:block before adding
+      // the expanded class, so the CSS transform transition can fire.
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => setIsExpanded(true));
+      });
+      return;
+    }
+    setIsExpanded(false);
+    // Wait for the CSS transition to complete (longest is 0.3s) before hiding.
+    const timer = setTimeout(() => setIsVisible(false), 350);
+    return () => clearTimeout(timer);
+  }, [isOpen, megamenu, navbar]);
+
   if (megamenu || navbar) {
     const classes = classNames(className, 'navbar-collapse', {
-      expanded: isOpen
+      expanded: isExpanded
     });
-    const style = { display: isOpen ? 'block' : 'none' };
     const overlayClasses = classNames('overlay', {
-      fade: isOpen,
-      show: isOpen
+      fade: isVisible,
+      show: isExpanded
     });
+    const displayStyle = { display: isVisible ? 'block' : 'none' };
     return (
       <CollapseBase
         className={classes}
         cssModule={newCssModule}
         navbar={navbar}
-        style={style}
+        style={displayStyle}
         data-testid={testId}
         {...attributes}
       >
-        <div className={overlayClasses} style={style} onClick={onOverlayClick}></div>
+        <div className={overlayClasses} style={displayStyle} onClick={onOverlayClick}></div>
         <div className='close-div'>
           <button className='btn close-menu' type='button' onClick={onOverlayClick}>
             <span className='visually-hidden'>{closeSrText}</span>
