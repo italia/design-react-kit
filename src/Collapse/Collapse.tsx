@@ -86,6 +86,18 @@ export const Collapse: FC<CollapseProps> = ({
     return () => clearTimeout(timer);
   }, [isOpen, megamenu, navbar]);
 
+  useEffect(() => {
+    if (!(megamenu || navbar)) return;
+    const main = document.querySelector('main');
+    if (!main) return;
+    if (isOpen) {
+      main.setAttribute('inert', '');
+    } else {
+      main.removeAttribute('inert');
+    }
+    return () => main.removeAttribute('inert');
+  }, [isOpen, megamenu, navbar]);
+
   if (megamenu || navbar) {
     const classes = classNames(className, 'navbar-collapse', {
       expanded: isExpanded

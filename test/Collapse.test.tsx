@@ -30,6 +30,22 @@ describe('Collapse component', () => {
       expect(panel).not.toHaveAttribute('role', 'dialog');
       expect(panel).not.toHaveAttribute('aria-modal');
     });
+
+    it('should set inert on <main> when open and remove it when closed', () => {
+      const main = document.createElement('main');
+      document.body.appendChild(main);
+
+      const { rerender } = render(<Collapse navbar isOpen={false}>Content</Collapse>);
+      expect(main).not.toHaveAttribute('inert');
+
+      rerender(<Collapse navbar isOpen>Content</Collapse>);
+      expect(main).toHaveAttribute('inert');
+
+      rerender(<Collapse navbar isOpen={false}>Content</Collapse>);
+      expect(main).not.toHaveAttribute('inert');
+
+      document.body.removeChild(main);
+    });
   });
 
   it('should append the passed className to the container', () => {
