@@ -16,6 +16,20 @@ describe('Collapse component', () => {
       const panel = container.querySelector('.navbar-collapsable');
       expect(panel).toHaveAttribute('tabindex', '-1');
     });
+
+    it('should have role="dialog" and aria-modal="true" when open', () => {
+      const { container } = render(<Collapse navbar isOpen>Content</Collapse>);
+      const panel = container.querySelector('.navbar-collapsable');
+      expect(panel).toHaveAttribute('role', 'dialog');
+      expect(panel).toHaveAttribute('aria-modal', 'true');
+    });
+
+    it('should not have role="dialog" or aria-modal when closed', () => {
+      const { container } = render(<Collapse navbar isOpen={false}>Content</Collapse>);
+      const panel = container.querySelector('.navbar-collapsable');
+      expect(panel).not.toHaveAttribute('role', 'dialog');
+      expect(panel).not.toHaveAttribute('aria-modal');
+    });
   });
 
   it('should append the passed className to the container', () => {

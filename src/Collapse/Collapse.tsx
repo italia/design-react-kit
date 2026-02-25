@@ -102,6 +102,8 @@ export const Collapse: FC<CollapseProps> = ({
         navbar={navbar}
         style={displayStyle}
         tabIndex={-1}
+        role={isOpen ? 'dialog' : undefined}
+        aria-modal={isOpen ? true : undefined}
         data-testid={testId}
         {...attributes}
       >
