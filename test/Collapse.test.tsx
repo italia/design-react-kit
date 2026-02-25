@@ -60,6 +60,17 @@ describe('Collapse component', () => {
       fireEvent.keyDown(document, { key: 'Escape' });
       expect(onOverlayClick).not.toHaveBeenCalled();
     });
+
+    it('should lock body scroll when open and restore it when closed', () => {
+      const { rerender } = render(<Collapse navbar isOpen={false}>Content</Collapse>);
+      expect(document.body.style.overflow).not.toBe('hidden');
+
+      rerender(<Collapse navbar isOpen>Content</Collapse>);
+      expect(document.body.style.overflow).toBe('hidden');
+
+      rerender(<Collapse navbar isOpen={false}>Content</Collapse>);
+      expect(document.body.style.overflow).toBe('');
+    });
   });
 
   it('should append the passed className to the container', () => {

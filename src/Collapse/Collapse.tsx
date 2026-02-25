@@ -88,6 +88,16 @@ export const Collapse: FC<CollapseProps> = ({
 
   useEffect(() => {
     if (!(megamenu || navbar)) return;
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [isOpen, megamenu, navbar]);
+
+  useEffect(() => {
+    if (!(megamenu || navbar)) return;
     const main = document.querySelector('main');
     if (!main) return;
     if (isOpen) {
