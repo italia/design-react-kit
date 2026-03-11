@@ -20,18 +20,26 @@ describe('Collapse component', () => {
       expect(panel).toHaveAttribute('tabindex', '-1');
     });
 
-    it('should have role="dialog" and aria-modal="true" when open', () => {
+    it('should have role="dialog", aria-modal="true" and aria-label when open', () => {
       const { container } = render(<Collapse navbar isOpen>Content</Collapse>);
       const panel = container.querySelector('.navbar-collapsable');
       expect(panel).toHaveAttribute('role', 'dialog');
       expect(panel).toHaveAttribute('aria-modal', 'true');
+      expect(panel).toHaveAttribute('aria-label', 'Menu di navigazione');
     });
 
-    it('should not have role="dialog" or aria-modal when closed', () => {
+    it('should allow overriding aria-label via props', () => {
+      const { container } = render(<Collapse navbar isOpen aria-label='Navigazione principale'>Content</Collapse>);
+      const panel = container.querySelector('.navbar-collapsable');
+      expect(panel).toHaveAttribute('aria-label', 'Navigazione principale');
+    });
+
+    it('should not have role="dialog", aria-modal or aria-label when closed', () => {
       const { container } = render(<Collapse navbar isOpen={false}>Content</Collapse>);
       const panel = container.querySelector('.navbar-collapsable');
       expect(panel).not.toHaveAttribute('role', 'dialog');
       expect(panel).not.toHaveAttribute('aria-modal');
+      expect(panel).not.toHaveAttribute('aria-label');
     });
 
     it('should set inert on <main> when open and remove it when closed', () => {
@@ -115,6 +123,54 @@ describe('Collapse component', () => {
       document.body.removeChild(trigger);
       raf.mockRestore();
       jest.useRealTimers();
+    });
+  });
+
+  describe('megamenu mode', () => {
+    it('should have tabindex="-1" on the panel', () => {
+      const { container } = render(<Collapse megamenu>Content</Collapse>);
+      const panel = container.querySelector('.navbar-collapsable');
+      expect(panel).toHaveAttribute('tabindex', '-1');
+    });
+
+    it('should have role="dialog", aria-modal="true" and aria-label when open', () => {
+      const { container } = render(<Collapse megamenu isOpen>Content</Collapse>);
+      const panel = container.querySelector('.navbar-collapsable');
+      expect(panel).toHaveAttribute('role', 'dialog');
+      expect(panel).toHaveAttribute('aria-modal', 'true');
+      expect(panel).toHaveAttribute('aria-label', 'Menu di navigazione');
+    });
+
+    it('should set inert on <main> when open and remove it when closed', () => {
+      const main = document.createElement('main');
+      document.body.appendChild(main);
+
+      const { rerender } = render(<Collapse megamenu isOpen={false}>Content</Collapse>);
+      expect(main).not.toHaveAttribute('inert');
+
+      rerender(<Collapse megamenu isOpen>Content</Collapse>);
+      expect(main).toHaveAttribute('inert');
+
+      rerender(<Collapse megamenu isOpen={false}>Content</Collapse>);
+      expect(main).not.toHaveAttribute('inert');
+
+      document.body.removeChild(main);
+    });
+
+    it('should call onOverlayClick when Escape key is pressed and panel is open', () => {
+      const onOverlayClick = jest.fn();
+      render(<Collapse megamenu isOpen onOverlayClick={onOverlayClick}>Content</Collapse>);
+      fireEvent.keyDown(document, { key: 'Escape' });
+      expect(onOverlayClick).toHaveBeenCalledTimes(1);
+    });
+
+    it('should lock body scroll when open and restore it when closed', () => {
+      const { rerender } = render(<Collapse megamenu isOpen={false}>Content</Collapse>);
+      rerender(<Collapse megamenu isOpen>Content</Collapse>);
+      expect(document.body.style.overflow).toBe('hidden');
+
+      rerender(<Collapse megamenu isOpen={false}>Content</Collapse>);
+      expect(document.body.style.overflow).toBe('');
     });
   });
 
