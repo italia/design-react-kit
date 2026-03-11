@@ -87,11 +87,11 @@ export const Collapse: FC<CollapseProps> = ({
       return;
     }
     setIsExpanded(false);
-    // Wait for the CSS transition to complete (longest is 0.3s) before hiding.
+    // Wait for the CSS transition to complete before hiding.
     const timer = setTimeout(() => {
       setIsVisible(false);
       (triggerRef.current as HTMLElement | null)?.focus();
-    }, 350);
+    }, PANEL_TRANSITION_MS);
     return () => clearTimeout(timer);
   }, [isOpen, megamenu, navbar]);
 
@@ -128,6 +128,9 @@ export const Collapse: FC<CollapseProps> = ({
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [isOpen, megamenu, navbar, onOverlayClick]);
 
+  // Must match the longest CSS transition on .navbar-collapsable (currently 0.3s + buffer).
+  const PANEL_TRANSITION_MS = 350;
+
   if (megamenu || navbar) {
     const classes = classNames(className, 'navbar-collapse', {
       expanded: isExpanded
@@ -147,6 +150,7 @@ export const Collapse: FC<CollapseProps> = ({
         innerRef={panelRef}
         role={isOpen ? 'dialog' : undefined}
         aria-modal={isOpen ? true : undefined}
+        aria-label={isOpen ? 'Menu di navigazione' : undefined}
         data-testid={testId}
         {...attributes}
       >
