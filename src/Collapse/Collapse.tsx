@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { ElementType, FC, HTMLAttributes, Ref, useEffect, useState } from 'react';
+import React, { ElementType, FC, HTMLAttributes, Ref, useEffect, useRef, useState } from 'react';
 
 import { Collapse as CollapseBase } from 'reactstrap';
 import { CSSModule } from 'reactstrap/types/lib/utils';
@@ -68,21 +68,30 @@ export const Collapse: FC<CollapseProps> = ({
   // isVisible controls display:block/none; isExpanded controls the animation class.
   const [isVisible, setIsVisible] = useState(isOpen);
   const [isExpanded, setIsExpanded] = useState(isOpen);
+  const panelRef = useRef<HTMLElement>(null);
+  const triggerRef = useRef<Element | null>(null);
 
   useEffect(() => {
     if (!(megamenu || navbar)) return;
     if (isOpen) {
+      triggerRef.current = document.activeElement;
       setIsVisible(true);
       // Double rAF ensures the browser has painted display:block before adding
       // the expanded class, so the CSS transform transition can fire.
       requestAnimationFrame(() => {
-        requestAnimationFrame(() => setIsExpanded(true));
+        requestAnimationFrame(() => {
+          setIsExpanded(true);
+          panelRef.current?.focus();
+        });
       });
       return;
     }
     setIsExpanded(false);
     // Wait for the CSS transition to complete (longest is 0.3s) before hiding.
-    const timer = setTimeout(() => setIsVisible(false), 350);
+    const timer = setTimeout(() => {
+      setIsVisible(false);
+      (triggerRef.current as HTMLElement | null)?.focus();
+    }, 350);
     return () => clearTimeout(timer);
   }, [isOpen, megamenu, navbar]);
 
@@ -135,6 +144,7 @@ export const Collapse: FC<CollapseProps> = ({
         navbar={navbar}
         style={displayStyle}
         tabIndex={-1}
+        innerRef={panelRef}
         role={isOpen ? 'dialog' : undefined}
         aria-modal={isOpen ? true : undefined}
         data-testid={testId}
