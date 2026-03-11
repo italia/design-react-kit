@@ -1,5 +1,8 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, act } from '@testing-library/react';
+
+const mockRaf = () =>
+  jest.spyOn(window, 'requestAnimationFrame').mockImplementation((cb) => { cb(0); return 0; });
 
 import { Collapse } from '../src';
 
@@ -70,6 +73,48 @@ describe('Collapse component', () => {
 
       rerender(<Collapse navbar isOpen={false}>Content</Collapse>);
       expect(document.body.style.overflow).toBe('');
+    });
+
+    it('should move focus to the panel when opened', () => {
+      const raf = mockRaf();
+      const { container, rerender } = render(<Collapse navbar isOpen={false}>Content</Collapse>);
+      const panel = container.querySelector('.navbar-collapsable') as HTMLElement;
+
+      act(() => {
+        rerender(<Collapse navbar isOpen>Content</Collapse>);
+      });
+
+      expect(document.activeElement).toBe(panel);
+      raf.mockRestore();
+    });
+
+    it('should restore focus to the trigger when closed', () => {
+      jest.useFakeTimers();
+      const raf = mockRaf();
+
+      const trigger = document.createElement('button');
+      document.body.appendChild(trigger);
+      trigger.focus();
+
+      const { rerender } = render(<Collapse navbar isOpen={false}>Content</Collapse>);
+      // flush the initial mount timer (isOpen=false fires a setTimeout too)
+      act(() => { jest.runAllTimers(); });
+
+      // open: saves activeElement as trigger, then focuses panel
+      act(() => {
+        rerender(<Collapse navbar isOpen>Content</Collapse>);
+      });
+
+      // close: fires the restore-focus timer
+      act(() => {
+        rerender(<Collapse navbar isOpen={false}>Content</Collapse>);
+      });
+      act(() => { jest.runAllTimers(); });
+
+      expect(document.activeElement).toBe(trigger);
+      document.body.removeChild(trigger);
+      raf.mockRestore();
+      jest.useRealTimers();
     });
   });
 
