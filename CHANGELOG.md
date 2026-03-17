@@ -1,3 +1,14 @@
+## 5.10.0 (2026-03-17)
+
+* chore: update publiccode ([dd7364e](https://github.com/italia/design-react-kit/commit/dd7364e))
+* chore(deps-dev): bump storybook from 9.1.18 to 9.1.19 ([ae57adf](https://github.com/italia/design-react-kit/commit/ae57adf))
+* chore(deps): bump immutable from 5.1.4 to 5.1.5 ([db555e2](https://github.com/italia/design-react-kit/commit/db555e2))
+* chore(deps): bump rollup from 4.57.1 to 4.59.0 ([1f80f56](https://github.com/italia/design-react-kit/commit/1f80f56))
+* chore(deps): upgrade bootstrap italia ([f8cc596](https://github.com/italia/design-react-kit/commit/f8cc596))
+* fix(Collapse): add CSS transition for navbar collapsable open/close ([3daf27d](https://github.com/italia/design-react-kit/commit/3daf27d)), closes [#1132](https://github.com/italia/design-react-kit/issues/1132)
+* fix(collapse): improve navbar collapsable accessibility ([2c78c88](https://github.com/italia/design-react-kit/commit/2c78c88))
+* fix(Input): make adaptive type responsive on small screens ([ce854bd](https://github.com/italia/design-react-kit/commit/ce854bd))
+
 ## <small>5.9.3 (2026-02-17)</small>
 
 * chore: update publiccode ([dc904f7](https://github.com/italia/design-react-kit/commit/dc904f7))
