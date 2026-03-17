@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { ElementType, FC, HTMLAttributes, Ref, useEffect, useState } from 'react';
+import React, { ElementType, FC, HTMLAttributes, Ref, useEffect, useRef, useState } from 'react';
 
 import { Collapse as CollapseBase } from 'reactstrap';
 import { CSSModule } from 'reactstrap/types/lib/utils';
@@ -68,23 +68,68 @@ export const Collapse: FC<CollapseProps> = ({
   // isVisible controls display:block/none; isExpanded controls the animation class.
   const [isVisible, setIsVisible] = useState(isOpen);
   const [isExpanded, setIsExpanded] = useState(isOpen);
+  const panelRef = useRef<HTMLElement>(null);
+  const triggerRef = useRef<Element | null>(null);
 
   useEffect(() => {
     if (!(megamenu || navbar)) return;
     if (isOpen) {
+      triggerRef.current = document.activeElement;
       setIsVisible(true);
       // Double rAF ensures the browser has painted display:block before adding
       // the expanded class, so the CSS transform transition can fire.
       requestAnimationFrame(() => {
-        requestAnimationFrame(() => setIsExpanded(true));
+        requestAnimationFrame(() => {
+          setIsExpanded(true);
+          panelRef.current?.focus();
+        });
       });
       return;
     }
     setIsExpanded(false);
-    // Wait for the CSS transition to complete (longest is 0.3s) before hiding.
-    const timer = setTimeout(() => setIsVisible(false), 350);
+    // Wait for the CSS transition to complete before hiding.
+    const timer = setTimeout(() => {
+      setIsVisible(false);
+      (triggerRef.current as HTMLElement | null)?.focus();
+    }, PANEL_TRANSITION_MS);
     return () => clearTimeout(timer);
   }, [isOpen, megamenu, navbar]);
+
+  useEffect(() => {
+    if (!(megamenu || navbar)) return;
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [isOpen, megamenu, navbar]);
+
+  useEffect(() => {
+    if (!(megamenu || navbar)) return;
+    const main = document.querySelector('main');
+    if (!main) return;
+    if (isOpen) {
+      main.setAttribute('inert', '');
+    } else {
+      main.removeAttribute('inert');
+    }
+    return () => main.removeAttribute('inert');
+  }, [isOpen, megamenu, navbar]);
+
+  useEffect(() => {
+    if (!(megamenu || navbar)) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isOpen) {
+        onOverlayClick?.();
+      }
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, megamenu, navbar, onOverlayClick]);
+
+  // Must match the longest CSS transition on .navbar-collapsable (currently 0.3s + buffer).
+  const PANEL_TRANSITION_MS = 350;
 
   if (megamenu || navbar) {
     const classes = classNames(className, 'navbar-collapse', {
@@ -101,6 +146,11 @@ export const Collapse: FC<CollapseProps> = ({
         cssModule={newCssModule}
         navbar={navbar}
         style={displayStyle}
+        tabIndex={-1}
+        innerRef={panelRef}
+        role={isOpen ? 'dialog' : undefined}
+        aria-modal={isOpen ? true : undefined}
+        aria-label={isOpen ? 'Menu di navigazione' : undefined}
         data-testid={testId}
         {...attributes}
       >

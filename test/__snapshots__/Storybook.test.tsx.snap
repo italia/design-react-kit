@@ -31078,6 +31078,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Complete Co
                   <div
                     class="navbar-collapsable collapse navbar-collapsable"
                     style="display: none;"
+                    tabindex="-1"
                   >
                     <div
                       class="overlay"
@@ -31586,6 +31587,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
               <div
                 class="navbar-collapsable collapse navbar-collapsable"
                 style="display: none;"
+                tabindex="-1"
               >
                 <div
                   class="overlay"
@@ -32093,6 +32095,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Header/Nav NavHead
               <div
                 class="navbar-collapsable collapse navbar-collapsable"
                 style="display: none;"
+                tabindex="-1"
               >
                 <div
                   class="overlay"
@@ -32570,6 +32573,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
+        tabindex="-1"
       >
         <div
           class="overlay"
@@ -32900,6 +32904,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConCallTo
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
+        tabindex="-1"
       >
         <div
           class="overlay"
@@ -33294,6 +33299,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConImmagi
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
+        tabindex="-1"
       >
         <div
           class="overlay"
@@ -33630,6 +33636,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConIntest
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
+        tabindex="-1"
       >
         <div
           class="overlay"
@@ -34010,6 +34017,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Megamenu ConLinkMo
       <div
         class="navbar-collapsable collapse navbar-collapsable"
         style="display: none;"
+        tabindex="-1"
       >
         <div
           class="overlay"
@@ -34722,6 +34730,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Componen
               class="navbar-collapsable collapse navbar-collapsable"
               id="navbarNavB"
               style="display: none;"
+              tabindex="-1"
             >
               <div
                 class="overlay"
@@ -35145,6 +35154,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
               class="navbar-collapsable collapse navbar-collapsable"
               id="navbarNavA"
               style="display: none;"
+              tabindex="-1"
             >
               <div
                 class="overlay"
@@ -35587,6 +35597,7 @@ exports[`Stories Snapshots Documentazione/Menu di navigazione/Navscroll Posizion
               class="navbar-collapsable collapse navbar-collapsable"
               id="navbarNavB"
               style="display: none;"
+              tabindex="-1"
             >
               <div
                 class="overlay"
