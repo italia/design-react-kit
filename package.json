@@ -72,7 +72,7 @@
     "postversion": "echo \"You can now publish your version using 'git push --follow-tags'\""
   },
   "peerDependencies": {
-    "bootstrap-italia": "^2.17.4",
+    "bootstrap-italia": "^2.18.0",
     "react": ">=18.2.0"
   },
   "browserslist": [
@@ -105,7 +105,7 @@
     "@types/react-dom": "^18.2.24",
     "@types/react-transition-group": "^4.4.10",
     "@types/uuid": "^10.0.0",
-    "bootstrap-italia": "^2.17.4",
+    "bootstrap-italia": "^2.18.0",
     "browserslist-config-design-italia": "^1.0.0",
     "conventional-changelog": "^7.1.1",
     "eslint": "^9.10.0",
