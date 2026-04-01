@@ -32,13 +32,46 @@ jobs:
         with:
           bodyFile: 'RELEASE_BODY.md'
           token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Publish on gh-pages
+      - name: Build Storybook
+        run: yarn storybook:build
+      - name: Extract version from tag
+        run: echo "VERSION=${GITHUB_REF_NAME}" >> $GITHUB_ENV
+      - name: Deploy docs for this version
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./storybook-static
+          destination_dir: ${{ env.VERSION }}
+          keep_files: true
+      - name: Deploy docs as latest
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./storybook-static
+          destination_dir: latest
+          keep_files: true
+      - name: Create root redirect to latest
         run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          yarn storybook:build
-          yarn storybook:deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          mkdir -p /tmp/root
+          cat > /tmp/root/index.html << 'REDIRECT'
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <meta charset="utf-8">
+              <meta http-equiv="refresh" content="0;url=latest/">
+              <link rel="canonical" href="latest/">
+            </head>
+            <body>
+              <p>Redirecting to <a href="latest/">latest documentation</a>...</p>
+            </body>
+          </html>
+          REDIRECT
+      - name: Deploy root redirect
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: /tmp/root
+          keep_files: true
       - uses: italia/slack-notify-release-action@v0.4.0
         with:
           slack_token: ${{ secrets.SLACK_TOKEN }}
