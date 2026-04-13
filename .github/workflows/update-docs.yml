@@ -2,36 +2,62 @@ name: Update documentation
 
 on:
   workflow_dispatch:
+  push:
+    tags:
+      - "v5*"
+
+permissions: {}
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           fetch-depth: 0
+          persist-credentials: false
+
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
         with:
-          node-version: '20.x'
+          node-version: 20
+          package-manager-cache: false
+
       - name: Git config
         run: |
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+
       - name: Install dependencies
         run: yarn
-      - name: Build
+
+      - name: Build docs
+        run: yarn storybook:build
+
+      - name: Extract destination folder name
         run: |
-          yarn build
-          yarn storybook:build
-      - name: Deploy docs as latest
-        uses: peaceiris/actions-gh-pages@v4
+          if [[ "${GITHUB_REF_TYPE}" == "tag" ]]; then
+            if [[ "${GITHUB_REF_NAME}" =~ ^v5\.[0-9]+\.[0-9]+$ ]]; then
+              echo "DEST_FOLDER=${GITHUB_REF_NAME}" >> $GITHUB_ENV
+            else
+              echo "Invalid tag format: ${GITHUB_REF_NAME}. Expected v5.<minor>.<patch>" >&2
+              exit 1
+            fi
+          else
+            echo "DEST_FOLDER=latest" >> $GITHUB_ENV
+          fi
+
+      - name: Deploy docs
+        uses: peaceiris/actions-gh-pages@47f197a2200bb9de68ba5f48fad1c088eb1c4a32 # v4.0.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./storybook-static
-          destination_dir: latest
-          keep_files: true
+          destination_dir: ${{ env.DEST_FOLDER }} # Subfolder name to deploy docs into
+          keep_files: false # Clear previous docs in destination subfolder to avoid orphaned files
+
       - name: Create root redirect to latest
         run: |
           mkdir -p /tmp/root
@@ -48,8 +74,9 @@ jobs:
             </body>
           </html>
           REDIRECT
+
       - name: Deploy root redirect
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@47f197a2200bb9de68ba5f48fad1c088eb1c4a32 # v4.0.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: /tmp/root
