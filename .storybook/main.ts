@@ -18,6 +18,7 @@ const config: StorybookConfig = {
 
     return mergeConfig(config, {
       // Add dependencies to pre-optimization
+      base: './',
       build: {
         chunkSizeWarningLimit: 1000,
         minify: false
