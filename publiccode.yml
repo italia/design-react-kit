@@ -1,67 +1,56 @@
-# This repository adheres to the publiccode.yml standard by including this
-# metadata file that makes public software easily discoverable.
-# More info at https://github.com/italia/publiccode.yml
-
-publiccodeYmlVersion: 0.4.0
-categories:
-  - website-builder
-description:
-  it:
-    documentation: 'https://italia.github.io/design-react-kit'
-    features:
-      - responsive
-      - accessibility
-      - inclusion
-      - web development
-      - PNRR
-      - PNRR/Misura/1.4.1
-      - PNRR/Beneficiari/Comuni
-      - PNRR/Beneficiari/Scuole
-    genericName: Design React Kit
-    longDescription: |
-      La libreria **Design React Kit** è il modo più semplice e sicuro per
-      costruire interfacce web **moderne**, **inclusive** e **semplici da
-      mantenere** utilizzando il framework React.
-
-      Completamente **open-source**, costruita sulle fondamenta di 
-      [Bootstrap Italia 2.x](https://github.com/italia/bootstrap-italia "Repository GitHub di Bootstrap Italia") 
-      di cui eredita tutte le funzionalità, componenti, griglie e classi di utilità.
-    shortDescription: |-
-      Il toolkit React conforme alle linee guida di design per i siti internet e i servizi digitali della PA.
-developmentStatus: stable
-isBasedOn: https://github.com/italia/bootstrap-italia
-it:
-  conforme:
-    gdpr: false
-    lineeGuidaDesign: false
-    misureMinimeSicurezza: false
-    modelloInteroperabilita: false
-  countryExtensionVersion: '0.2'
-  piattaforme:
-    anpr: false
-    cie: false
-    pagopa: false
-    spid: false
-  riuso:
-    codiceIPA: pcm
-landingURL: 'https://italia.github.io/design-react-kit'
-legal:
-  authorsFile: 'https://github.com/italia/design-react-kit/blob/main/AUTHORS'
-  license: BSD-3-Clause
-  mainCopyrightOwner: Presidenza del Consiglio dei Ministri
-localisation:
-  availableLanguages:
-    - it
-  localisationReady: false
-maintenance:
-  contacts:
-    - name: Designers Italia
-  type: community
+publiccodeYmlVersion: 0.5.0
 name: Design React Kit
+applicationSuite: Design system Italia
+url: https://github.com/italia/design-react-kit
+softwareVersion: "v5.10.0 "
+releaseDate: 2026-03-17
 platforms:
   - web
-releaseDate: '2026-03-17'
-roadmap: 'https://github.com/italia/design-react-kit/issues'
+categories:
+  - website-builder
+  - integrated-library-system
+  - it-development
+  - design
+organisation:
+  uri: https://github.com/italia
+  name: Dipartimento per la trasformazione digitale
+roadmap: https://github.com/orgs/italia/projects/17/views/5?filterQuery=repo%3Aitalia%2Fdesign-react-kit
+developmentStatus: stable
 softwareType: library
-softwareVersion: v5.10.0
-url: 'https://github.com/italia/design-react-kit'
+intendedAudience:
+  countries:
+    - IT
+description:
+  it-IT:
+    shortDescription: Libreria di componenti React per sviluppare interfacce web
+      accessibili e coerenti per i siti e i servizi digitali della PA.
+    longDescription: Il Design React Kit, risorsa ufficiale del Design system
+      Italia, è una libreria di componenti sviluppati con React, pensata per
+      supportare la realizzazione di interfacce web per siti e servizi digitali
+      della Pubblica Amministrazione. Costruito sulle fondamenta di Bootstrap
+      Italia, ne eredita funzionalità, componenti, griglia e classi di utilità,
+      rendendoli disponibili in forma riutilizzabile all'interno di applicazioni
+      React. Il kit consente di sviluppare interfacce accessibili, inclusive e
+      semplici da mantenere, supportando la creazione di applicazioni web
+      dinamiche.
+    documentation: https://italia.github.io/design-react-kit/
+    features:
+      - Componenti React pronti all'uso
+      - Basato su Bootstrap Italia
+      - Implementa lo UI Kit Italia
+      - Realizzazione di interfacce responsive e accessibili
+      - Integrazione in applicazioni React
+      - Riutilizzo dei componenti
+      - Conformità alle Linee guida di design per i siti internet e servizi
+        digitali della PA
+legal:
+  license: BSD-3-Clause-Clear
+maintenance:
+  type: community
+  contacts:
+    - name: Designers Italia
+      email: contatti@designers.italia.it
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - it
