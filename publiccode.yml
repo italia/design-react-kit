@@ -2,8 +2,8 @@ publiccodeYmlVersion: 0.5.0
 name: Design React Kit
 applicationSuite: Design system Italia
 url: https://github.com/italia/design-react-kit
-softwareVersion: "v5.10.0 "
-releaseDate: 2026-03-17
+softwareVersion: v5.10.0
+releaseDate: '2026-03-17'
 platforms:
   - web
 categories:
