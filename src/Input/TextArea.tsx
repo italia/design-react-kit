@@ -59,8 +59,8 @@ export const TextArea = ({
   //Chiamo questa funzione per impostare classNames a 'form-control'
   const formControlClass = getFormControlClass({}, cssModule);
   // associate the input field with the help text
-  const infoId = id ? `${id}Description` : undefined;
-  if (id) {
+  const infoId = id && infoText ? `${id}Description` : undefined;
+  if (infoId) {
     extraAttributes['aria-describedby'] = infoId;
   }
 
