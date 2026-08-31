@@ -10,6 +10,8 @@ export interface AutocompleteAttributes {
   id: string;
   /** Label */
   label: string;
+  /** Minimo di caratteri per attivare l'autocomplete */
+  minLength?: number;
   /** Valori all'interno della select */
   source: (query: string, syncResults: () => void) => void;
   /** Valori chiave - valore all'interno della select */
@@ -68,6 +70,7 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
   tStatusResults = tStatusResultsDefault,
   placeholder = '',
   defaultValue = '',
+  minLength = 0,
   displayMenu = 'inline',
   source,
   validationText,
@@ -105,10 +108,11 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
         source={source}
         placeholder={placeholder}
         defaultValue={defaultValue}
+        minLength={minLength}
         displayMenu={displayMenu}
         tAssistiveHint={tAssistiveHint}
         tNoResults={tNoResults}
-        tStatusQueryTooShort={tStatusQueryTooShort}
+        tStatusQueryTooShort={() => tStatusQueryTooShort(minLength)}
         tStatusNoResults={tStatusNoResults}
         tStatusSelectedOption={tStatusSelectedOption}
         tStatusResults={tStatusResults}
