@@ -2,6 +2,7 @@ import React, { FC, useEffect } from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore non ci sono i types
 import BaseAutocomplete from 'accessible-autocomplete/react';
+import { mergeAriaDescribedBy } from '../utils';
 // Reference to https://www.npmjs.com/package/accessible-autocomplete
 // Implementation example: https://github.com/alphagov/accessible-autocomplete/blob/main/examples/react/index.html
 
@@ -38,6 +39,10 @@ export interface AutocompleteAttributes {
   tStatusResults?: () => string;
   /** Classi aggiuntive da usare per il componente Button */
   className?: string;
+  /** ID dei contenuti che descrivono il campo. */
+  'aria-describedby'?: string;
+  /** Stato di non validità fornito dal consumer. */
+  'aria-invalid'?: React.AriaAttributes['aria-invalid'];
   testId?: string;
 }
 
@@ -72,10 +77,14 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
   source,
   validationText,
   onConfirm,
+  valid,
+  'aria-describedby': ariaDescribedBy,
+  'aria-invalid': ariaInvalid,
   ...attributes
 }) => {
-  const { id, valid } = attributes;
+  const { id } = attributes;
   const validityCheck = valid === true || valid === false;
+  const errorId = valid === false ? `${id}-error` : undefined;
 
   useEffect(() => {
     const inputElement: HTMLInputElement = document.getElementById(id) as HTMLInputElement;
@@ -97,6 +106,44 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
       }
     });
   }, [id]);
+
+  useEffect(() => {
+    const inputElement: HTMLInputElement = document.getElementById(id) as HTMLInputElement;
+    if (!inputElement) {
+      return;
+    }
+
+    const updateAccessibilityAttributes = () => {
+      const existingDescription = inputElement.getAttribute('aria-describedby');
+      const descriptionsWithoutError = existingDescription
+        ?.split(/\s+/)
+        .filter((description) => description !== `${id}-error`)
+        .join(' ');
+      const describedBy = mergeAriaDescribedBy(ariaDescribedBy, descriptionsWithoutError, errorId);
+
+      if (describedBy && existingDescription !== describedBy) {
+        inputElement.setAttribute('aria-describedby', describedBy);
+      }
+      if (!describedBy && existingDescription) {
+        inputElement.removeAttribute('aria-describedby');
+      }
+      if (valid === false) {
+        inputElement.setAttribute('aria-invalid', 'true');
+      } else if (ariaInvalid !== undefined) {
+        inputElement.setAttribute('aria-invalid', String(ariaInvalid));
+      } else {
+        inputElement.removeAttribute('aria-invalid');
+      }
+    };
+
+    updateAccessibilityAttributes();
+    const observer = new MutationObserver(updateAccessibilityAttributes);
+    observer.observe(inputElement, { attributes: true, attributeFilter: ['aria-describedby'] });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [ariaDescribedBy, ariaInvalid, errorId, id, valid]);
 
   return (
     <>
@@ -124,7 +171,7 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
         menuClasses={null}
         {...attributes}
       />
-      <div className='form-feedback just-validate-error-label form-text form-feedback just-validate-error-label'>
+      <div id={errorId} className='form-feedback just-validate-error-label form-text form-feedback just-validate-error-label'>
         {!valid && validationText}
       </div>
     </>

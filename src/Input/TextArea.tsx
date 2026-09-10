@@ -1,6 +1,7 @@
 import React, { ReactNode, Ref, TextareaHTMLAttributes } from 'react';
 
 import type { CSSModule } from 'reactstrap/types/lib/utils';
+import { mergeAriaDescribedBy } from '../utils';
 import { InputContainer } from './InputContainer';
 import { getClasses, getFormControlClass, getValidationTextControlClass, useFocus } from './utils';
 
@@ -54,14 +55,20 @@ export const TextArea = ({
 
   const validationTextControlClass = getValidationTextControlClass({ valid }, cssModule);
 
-  const extraAttributes: { ['aria-describedby']?: string } = {};
+  const extraAttributes: { ['aria-describedby']?: string; ['aria-invalid']?: true } = {};
 
   //Chiamo questa funzione per impostare classNames a 'form-control'
   const formControlClass = getFormControlClass({}, cssModule);
-  // associate the input field with the help text
+  const rendersContainer = Boolean(placeholder || normalized || label || validationText);
+  // Associate the input field with the help text and, when present, the error message.
   const infoId = id ? `${id}Description` : undefined;
-  if (id) {
-    extraAttributes['aria-describedby'] = infoId;
+  const errorId = id && valid === false && rendersContainer ? `${id}-error` : undefined;
+  const describedBy = mergeAriaDescribedBy(attributes['aria-describedby'], infoId, errorId);
+  if (describedBy) {
+    extraAttributes['aria-describedby'] = describedBy;
+  }
+  if (valid === false) {
+    extraAttributes['aria-invalid'] = true;
   }
 
   // Styling
@@ -102,6 +109,7 @@ export const TextArea = ({
     label,
     validationTextClass,
     validationText,
+    errorId,
     wrapperClass
   };
 

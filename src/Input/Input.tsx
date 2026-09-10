@@ -12,7 +12,7 @@ import React, {
 import classNames from 'classnames';
 import type { CSSModule } from 'reactstrap/types/lib/utils';
 import { Icon } from '../Icon/Icon';
-import { notifyDeprecation } from '../utils';
+import { mergeAriaDescribedBy, notifyDeprecation } from '../utils';
 import { InputContainer } from './InputContainer';
 import { getClasses, getFormControlClass, getTag, getValidationTextControlClass, useFocus } from './utils';
 
@@ -172,6 +172,7 @@ export const Input = ({
     type?: InputType;
     size?: number;
     ['aria-describedby']?: string;
+    ['aria-invalid']?: true;
   } = {};
   if (size && !isNumber(size)) {
     notifyDeprecation('Please use the prop "bsSize" instead of the "size" to bootstrap\'s input sizing.');
@@ -184,11 +185,8 @@ export const Input = ({
     extraAttributes.type = type;
   }
 
-  // associate the input field with the help text
+  // Associate the input field with the help text and, when present, the error message.
   const infoId = id && infoText ? `${id}Description` : undefined;
-  if (infoId) {
-    extraAttributes['aria-describedby'] = infoId;
-  }
 
   if (
     attributes.children &&
@@ -203,6 +201,20 @@ export const Input = ({
   const inputPassword = extraAttributes.type === 'password';
 
   const indeterminateCheckboxInput = type === 'checkbox' && className?.includes('semi-checked');
+  const rendersContainer =
+    !noWrapper &&
+    !indeterminateCheckboxInput &&
+    (['currency', 'percentage', 'adaptive', 'number'].includes(type) ||
+      Boolean(placeholder || inputPassword || normalized || label || validationText));
+  const errorId = id && valid === false && rendersContainer ? `${id}-error` : undefined;
+  const describedBy = mergeAriaDescribedBy(rest['aria-describedby'], infoId, errorId);
+
+  if (describedBy) {
+    extraAttributes['aria-describedby'] = describedBy;
+  }
+  if (valid === false) {
+    extraAttributes['aria-invalid'] = true;
+  }
 
   // Styling
   const { activeClass, extraLabelClass, validationTextClass, inputClasses, wrapperClass } = getClasses(
@@ -244,6 +256,7 @@ export const Input = ({
     label,
     validationTextClass,
     validationText,
+    errorId,
     wrapperClass,
     hasButtonRight,
     buttonRight,

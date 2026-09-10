@@ -25564,6 +25564,8 @@ exports[`Stories Snapshots Documentazione/Form/Input UtilizzoDiPlaceholderELabel
         Etichetta di esempio
       </label>
       <input
+        aria-describedby="examplevalidationText-error"
+        aria-invalid="true"
         class="is-invalid form-control"
         id="examplevalidationText"
         placeholder="Testo di esempio"
@@ -25572,6 +25574,7 @@ exports[`Stories Snapshots Documentazione/Form/Input UtilizzoDiPlaceholderELabel
       />
       <div
         class="invalid-feedback form-feedback just-validate-error-label form-text form-feedback just-validate-error-label"
+        id="examplevalidationText-error"
       >
         Campo non valido
       </div>
@@ -27871,6 +27874,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneBase 1`] =
         Invalid Input
       </label>
       <input
+        aria-invalid="true"
         class="is-invalid form-control"
         type="text"
         value=""
@@ -27907,6 +27911,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneBase 1`] =
         Username
       </label>
       <input
+        aria-invalid="true"
         class="is-invalid form-control"
         type="text"
         value=""
@@ -27926,6 +27931,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneBase 1`] =
         Username
       </label>
       <input
+        aria-invalid="true"
         class="is-invalid form-control"
         type="text"
         value=""
@@ -28016,6 +28022,8 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             Username
           </label>
           <input
+            aria-describedby="completeValidation-username-error"
+            aria-invalid="true"
             class="is-invalid form-control"
             id="completeValidation-username"
             type="text"
@@ -28023,6 +28031,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
           />
           <div
             class="invalid-feedback form-feedback just-validate-error-label form-text form-feedback just-validate-error-label"
+            id="completeValidation-username-error"
           >
             Questo campo è richiesto
           </div>
@@ -28094,6 +28103,8 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             Date picker
           </label>
           <input
+            aria-describedby="completeValidation-date-error"
+            aria-invalid="true"
             class="is-invalid form-control"
             id="completeValidation-date"
             type="date"
@@ -28101,6 +28112,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
           />
           <div
             class="invalid-feedback form-feedback just-validate-error-label form-text form-feedback just-validate-error-label"
+            id="completeValidation-date-error"
           >
             Questo campo è richiesto
           </div>
@@ -28119,6 +28131,8 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             Time picker
           </label>
           <input
+            aria-describedby="completeValidation-time-error"
+            aria-invalid="true"
             class="is-invalid form-control"
             id="completeValidation-time"
             type="time"
@@ -28126,6 +28140,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
           />
           <div
             class="invalid-feedback form-feedback just-validate-error-label form-text form-feedback just-validate-error-label"
+            id="completeValidation-time-error"
           >
             Questo campo è richiesto
           </div>
@@ -28166,8 +28181,9 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
           <input
             aria-autocomplete="list"
             aria-controls="completeValidation-region"__listbox"
-            aria-describedby="completeValidation-region"__assistiveHint"
+            aria-describedby="completeValidation-region"__assistiveHint completeValidation-region"-error"
             aria-expanded="false"
+            aria-invalid="true"
             autocomplete="off"
             class="autocomplete__input autocomplete__input--default form-control is-invalid"
             id="completeValidation-region""
@@ -28192,6 +28208,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
         </div>
         <div
           class="form-feedback just-validate-error-label form-text form-feedback just-validate-error-label"
+          id="completeValidation-region"-error"
         >
           Per favore inserisci una regione valida.
         </div>
@@ -28209,6 +28226,8 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             Provincia
           </label>
           <input
+            aria-describedby="completeValidation-province-error"
+            aria-invalid="true"
             class="is-invalid form-control"
             id="completeValidation-province"
             type="text"
@@ -28216,6 +28235,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
           />
           <div
             class="invalid-feedback form-feedback just-validate-error-label form-text form-feedback just-validate-error-label"
+            id="completeValidation-province-error"
           >
             Per favore inserisci un nome di provincia valida.
           </div>
@@ -28234,6 +28254,8 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
             CAP (5 cifre)
           </label>
           <input
+            aria-describedby="completeValidation-cap-error"
+            aria-invalid="true"
             class="is-invalid form-control"
             id="completeValidation-cap"
             type="text"
@@ -28241,6 +28263,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
           />
           <div
             class="invalid-feedback form-feedback just-validate-error-label form-text form-feedback just-validate-error-label"
+            id="completeValidation-cap-error"
           >
             Questo campo è richiesto
           </div>
@@ -28257,6 +28280,7 @@ exports[`Stories Snapshots Documentazione/Form/Validazione ValidazioneCompleta 1
           class="form-check"
         >
           <input
+            aria-invalid="true"
             class="is-invalid"
             id="termsAndConditions"
             type="checkbox"

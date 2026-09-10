@@ -40,6 +40,17 @@ export function mapToCssModules(className: string | null, cssModules?: Record<st
     .join(' ');
 }
 
+/**
+ * Combines ID reference lists for `aria-describedby` without losing a
+ * description that was already supplied by the consumer.
+ */
+export function mergeAriaDescribedBy(...descriptions: Array<string | undefined | null>) {
+  const ids = descriptions.flatMap((description) => description?.trim().split(/\s+/) ?? []);
+  const uniqueIds = [...new Set(ids.filter(Boolean))];
+
+  return uniqueIds.length > 0 ? uniqueIds.join(' ') : undefined;
+}
+
 type UnknownObject = Record<string, unknown>;
 
 export function pick<T extends UnknownObject>(obj: T, keys: keyof T | Array<keyof T>): Partial<T> {
