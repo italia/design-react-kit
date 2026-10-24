@@ -1,7 +1,11 @@
 import React, { FC, useEffect } from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore non ci sono i types
-import BaseAutocomplete from 'accessible-autocomplete/react';
+import AccessibleAutocomplete from 'accessible-autocomplete/react';
+
+// accessible-autocomplete/react è un bundle UMD: alcuni bundler (es. Vite 8 con Rolldown) restituiscono
+// l'oggetto del modulo invece del componente, quindi si prende `default` quando c'è
+const BaseAutocomplete = AccessibleAutocomplete.default ?? AccessibleAutocomplete;
 // Reference to https://www.npmjs.com/package/accessible-autocomplete
 // Implementation example: https://github.com/alphagov/accessible-autocomplete/blob/main/examples/react/index.html
 
