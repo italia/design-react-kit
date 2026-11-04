@@ -25035,7 +25035,6 @@ exports[`Stories Snapshots Documentazione/Form/Input AreaDiTestoConSegnaposto 1`
       Esempio di area di testo
     </label>
     <textarea
-      aria-describedby="example-textarea-placeholderDescription"
       class="form-control"
       id="example-textarea-placeholder"
       placeholder="Testo di esempio"
