@@ -61,7 +61,7 @@ export const TextArea = ({
   const formControlClass = getFormControlClass({}, cssModule);
   const rendersContainer = Boolean(placeholder || normalized || label || validationText);
   // Associate the input field with the help text and, when present, the error message.
-  const infoId = id ? `${id}Description` : undefined;
+  const infoId = id && infoText ? `${id}Description` : undefined;
   const errorId = id && valid === false && rendersContainer ? `${id}-error` : undefined;
   const describedBy = mergeAriaDescribedBy(attributes['aria-describedby'], infoId, errorId);
   if (describedBy) {

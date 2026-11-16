@@ -40,11 +40,33 @@ describe('form error accessibility', () => {
         infoText='Massimo 500 caratteri'
         validationText='Le note sono obbligatorie'
         valid={false}
+        aria-describedby='notesDescription form-help'
       />
     );
 
-    expectErrorAssociation(screen.getByLabelText('Note'), 'notes-error', 'notesDescription');
+    const textarea = screen.getByLabelText('Note');
+    expectErrorAssociation(textarea, 'notes-error', 'notesDescription');
+    expect(textarea.getAttribute('aria-describedby')?.split(' ')).toEqual([
+      'notesDescription',
+      'form-help',
+      'notes-error'
+    ]);
     expect(screen.getByText('Le note sono obbligatorie')).toHaveAttribute('id', 'notes-error');
+  });
+
+  it('does not reference missing textarea help text when adding an error message', () => {
+    const { rerender } = render(
+      <TextArea id='notes' label='Note' validationText='Le note sono obbligatorie' valid={false} />
+    );
+
+    const textarea = screen.getByLabelText('Note');
+    expect(textarea).toHaveAttribute('aria-describedby', 'notes-error');
+    expect(screen.getByText('Le note sono obbligatorie')).toHaveAttribute('id', 'notes-error');
+    expect(document.getElementById('notesDescription')).toBeNull();
+
+    rerender(<TextArea id='notes' label='Note' valid={true} />);
+    expect(textarea).not.toHaveAttribute('aria-describedby');
+    expect(textarea).not.toHaveAttribute('aria-invalid');
   });
 
   it('keeps the autocomplete assistive hint while adding the error message', async () => {
