@@ -155,6 +155,7 @@ export const _InputAutocompleteConDatiAccessibile: Story = {
           id='autocomplete'
           label='Regione'
           source={suggest}
+          minLength={3}
           tNoResults={() => 'Nessun risultato'}
         />
       </FormGroup>
