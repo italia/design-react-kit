@@ -3146,7 +3146,7 @@ better-opn@^3.0.2:
   dependencies:
     open "^8.0.4"
 
-bootstrap-italia@^2.18.0:
+bootstrap-italia@^2.18.3:
   version "2.18.3"
   resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-2.18.3.tgz#61c328753ae4560872b57cb426990a5fc0c846ea"
   integrity sha512-dz4kNtcAYJF4OsWABT9m3CAT3NH5y6OzGG+v/VUGH1LjumIUmlP3GaQ+aHgtv5Vw3B5dS0jbHZiHGSfdu+DffA==
