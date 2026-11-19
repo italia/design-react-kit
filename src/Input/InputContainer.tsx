@@ -7,6 +7,7 @@ export interface InputContainerProps extends HTMLAttributes<HTMLElement> {
   validationTextClass: string;
   label: string | ReactNode | undefined;
   validationText: string | undefined;
+  errorId?: string;
   id: string | undefined;
   infoId: string | undefined;
   infoText: string | undefined;
@@ -31,6 +32,7 @@ export const InputContainer: FC<InputContainerProps> = ({
   label,
   validationTextClass,
   validationText,
+  errorId,
   wrapperClass,
   hasButtonRight,
   buttonRight,
@@ -52,7 +54,9 @@ export const InputContainer: FC<InputContainerProps> = ({
               {infoText}
             </small>
           )}
-          <div className={validationTextClass}>{validationText}</div>
+          <div id={errorId} className={validationTextClass}>
+            {validationText}
+          </div>
           {hasButtonRight && <div className='input-group-append'>{buttonRight}</div>}
         </div>
       </div>
@@ -69,7 +73,9 @@ export const InputContainer: FC<InputContainerProps> = ({
           {infoText}
         </small>
       )}
-      <div className={validationTextClass}>{validationText}</div>
+      <div id={errorId} className={validationTextClass}>
+        {validationText}
+      </div>
     </div>
   );
 };
