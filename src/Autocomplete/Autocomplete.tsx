@@ -71,6 +71,8 @@ const tStatusResultsDefault = (length: number, contentSelectedOption: number) =>
 };
 
 export const Autocomplete: FC<AutocompleteAttributes> = ({
+  id,
+  label,
   tAssistiveHint = tAssistiveHintDefault,
   tNoResults = tNoResultsDefault,
   tStatusQueryTooShort = tStatusQueryTooShortDefault,
@@ -86,10 +88,8 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
   onConfirm,
   valid,
   'aria-describedby': ariaDescribedBy,
-  'aria-invalid': ariaInvalid,
-  ...attributes
+  'aria-invalid': ariaInvalid
 }) => {
-  const { id } = attributes;
   const validityCheck = valid === true || valid === false;
   const errorId = valid === false ? `${id}-error` : undefined;
 
@@ -154,8 +154,9 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
 
   return (
     <>
-      <label htmlFor={attributes.id}>{attributes.label}</label>
+      <label htmlFor={id}>{label}</label>
       <BaseAutocomplete
+        id={id}
         source={source}
         placeholder={placeholder}
         defaultValue={defaultValue}
@@ -177,7 +178,6 @@ export const Autocomplete: FC<AutocompleteAttributes> = ({
         confirmOnBlur={false}
         menuAttributes={null}
         menuClasses={null}
-        {...attributes}
       />
       <div id={errorId} className='form-feedback just-validate-error-label form-text form-feedback just-validate-error-label'>
         {!valid && validationText}
