@@ -1,3 +1,11 @@
+## 5.11.0 (2026-11-23)
+
+* fix(a11y): textarea aria describedby ([d6529b9](https://github.com/italia/design-react-kit/commit/d6529b9))
+* fix(autocomplete): add minLength prop to interface and component ([4a829d5](https://github.com/italia/design-react-kit/commit/4a829d5))
+* fix(autocomplete): pass only supported props to accessible-autocomplete ([9d48e20](https://github.com/italia/design-react-kit/commit/9d48e20))
+* fix(autocomplete): support the default import of accessible-autocomplete with vite 8 ([9fa6143](https://github.com/italia/design-react-kit/commit/9fa6143))
+* fix(input): add aria-describeby and aria-invalid on error messages ([5699118](https://github.com/italia/design-react-kit/commit/5699118))
+
 ## 5.10.0 (2026-03-17)
 
 * chore: update publiccode ([dd7364e](https://github.com/italia/design-react-kit/commit/dd7364e))
